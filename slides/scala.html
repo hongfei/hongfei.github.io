@@ -457,16 +457,95 @@
                     </code>
                 </div>
             </div> 
-            
-                         
+                                  
             <div id="not-basic-5" class="step" data-x="-1000" data-y="-4000" data-z="-3100" data-rotate-y="180" data-rotate-x="-90">
                 <div>Lazy</div>
+                <br />
+                <div class="lazy-code">
+                    <code>
+                        <pre>
+            class Test {
+                val nonLazy = {
+                    println("not lazy")
+                    10
+                }
+                
+                lazy val lazyMember = {
+                    println("lazy value")
+                    10
+                }
+            }
+            
+            val test = new Test     // will print "not lazy"
+            test.lazyMember        // will print "lazy value"
+                        </pre>
+                    </code>
+                </div>
+            </div>
+            
+            <div id="not-basic-6" class="step" data-x="-2000" data-y="-4000" data-z="-3100" data-rotate-y="180" data-rotate-x="-90">
+                <div>Implicit</div>
                 <br />
                 <div class="oo-trait-code">
                     <code>
                         <pre>
-            TBD
-                        </pre>
+            def p(implicit number: Int) = println(number)
+            
+            p(2)   // prints 2
+            p(3)   // prints 3
+            p      // error
+            
+            implicit val v = 10
+            
+            p(2)    // prints 2
+            p(3)    // prints 3
+            p       // prints 10
+                    </pre>
+                    </code>
+                </div>
+            </div>
+            
+            <div id="not-basic-7" class="step" data-x="-2500" data-y="-3500" data-z="-3100" data-rotate-y="90" data-rotate-x="-90">
+                <div>Implicit Conversion</div>
+                <br />
+                <div class="lazy-code">
+                    <code>
+                        <pre>
+            class Dollar(val value: Int)
+            class Euro(val value: Int)
+            
+            val e: Euro = new Dollar(3)  // error
+            
+            implicit def dollarToEuro(d: Dollar): Euro = new Euro(d.value + 10)
+            
+            val e: Euro = new Dollar(3)  // Euro(13)
+            
+                    </pre>
+                    </code>
+                </div>
+            </div>
+            
+            <div id="not-basic-8" class="step" data-x="-2500" data-y="-2500" data-z="-3100" data-rotate-y="90" data-rotate-x="-90">
+                <div>Import</div>
+                <br />
+                <div class="lazy-code">
+                    <code>
+                        <pre>
+            import renames
+            
+                import java.net.URLEncoder.{encode ⇒ encodeURL}
+                import java.net.URLDecoder.{decode ⇒ decodeURL}
+                
+                encodeURL(...)
+                decodeURL(...)
+                
+            import anywhere
+            
+                def showFruit(fruit: Fruit) {
+                    import fruit._
+                    println(name +"s are "+ color)
+                }
+                    </pre>
                     </code>
                 </div>
             </div>
