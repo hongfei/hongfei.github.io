@@ -4,7 +4,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
         <link href="css/scala.css" rel="stylesheet" />
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+<!--        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />-->
     </head>
 
     <body class="impress-not-supported">
@@ -20,9 +20,9 @@
             
             <div id="about-scala" class="step" data-x="-1700" data-y="-1200" data-rotate="-30">
                 <div>Object Oriented</div>
-                <div>Funtional Programming</div>
+                <div>Functional Programming</div>
                 <div>Run on JVM</div>
-                <div>Java libraries</div>
+                <div>Java Libraries</div>
                 <div>REPL</div>
             </div>
             
@@ -35,7 +35,6 @@
                         <div>OO</div>
                         <div>FP</div>
                         <div>Not Basic</div>
-                        <div>AKKA</div>
                     </div>
                 </div>
             </div>
@@ -66,7 +65,7 @@
                     </code>
                     <br />
                     <code>
-                        res0: Int = 2024
+                        res0: Int = 2014
                     </code>
                 </div>
             </div>
@@ -310,7 +309,7 @@
                         <pre>
     def addX(x: Int) = {
         def add(y: Int): Int = x + y
-        return add
+        add
     }  
                         </pre>
                     </code>
@@ -392,8 +391,8 @@
                     <code>
                         <pre>
     def auth(usr: String, pwd: String): Privileges = 
-        if (usr == null || usr.isEmpty || 
-            pwd == null || pwd.isEmpty ||
+        if (usr == null || usr.isEmptyString || 
+            pwd == null || pwd.isEmptyString ||
             !validCredentials(usr, pwd)) 
             
             withPrivileges(Anonymous)
@@ -412,10 +411,10 @@
                         <pre>
     def auth(usr: Option[String], pwd: Option[String])
             :Privileges = {
-        val privileges: Option[Privileges] = {
+        val privileges: Option[Privileges] = for {
             u &lt;- usr 
             p &lt;- pwd
-            if (!u.isEmpty &amp;&amp; !p.isEmpty)
+            if (!u.isEmptyString &amp;&amp; !p.isEmptyString)
                 if canAuthenticate(u, p)
         } yield privilegesFor(u)
         privileges getOrElse withPrivileges(Anonymous)
@@ -554,10 +553,16 @@
                 <q class="end-scala">Scala</q>
             </div>
             
-            
-            
-            
         </div>
+        <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div>
+        <script>
+            if ("ontouchstart" in document.documentElement) { 
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+        </script>
+        
         <script src="js/impress.js"></script>
         <script>impress().init();</script>
     </body>
