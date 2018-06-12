@@ -7,3 +7,8 @@ Long version: TBD.
 #### Social Account
 
 LinkedIn: [Here](https://www.linkedin.com/in/hongfei/)
+
+
+#### Presentations
+
+Scala: [Slides](/slides/scala/scala.html)
