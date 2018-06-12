@@ -1,8 +1,5 @@
 ### Hongfei Zhou
 **Email**: mich.zhou1989@gmail.com
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-**Mobile**: 628-999-6852  
-**Address**: 151 B St, South San Francisco, CA, 94080
 
 ### Key Skills
 * **Programming Language**: Java, Python, Scala, Javascript.
