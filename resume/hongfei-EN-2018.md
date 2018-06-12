@@ -14,15 +14,12 @@
 * **Automation**: Selenium for frontend. Customized libraries for backend.
 
 ### Experience
-##### Senior Software Engineer @ StubHub, eBay Inc (San Francisco), *from 2016.6 to present*
+##### Senior Software Engineer @ StubHub, eBay Inc (San Francisco), *from 2012.6 to present*
 
 * Designed the architecture of **Test Data Service** and Implemented the backend of the system. 
 * Designed and implemented the frontend and backend for **User Traffic Diagram**. 
-* Designed the framework for Native APP automation based on selenium.
+* Designed the framework for **Native APP automation** based on selenium.
 * **Skills**: Java, Spring MVC, MongoDB, Jenkins, Web Service, Quantum Metrics API.  
-
-##### Software Engineer @ StubHub, eBay Inc (Shanghai), *from 2012.7 to 2016.5*
-
 * Designed the structure of both frontend and backend **Test Execution System**. Implemented frontend code and major backend code.
 * Designed the structure of **API automation framework** and implemented both **API framework** and **responsive web page framework**.
 * Designed the structure of **Test Coverage System** and implemented code for frontend and integrated the system with JIRA.
