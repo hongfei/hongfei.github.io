@@ -24,7 +24,6 @@
 * Lead developer of **Test Coverage System**. Designed the structure and implemented code for frontend and integrated the system with JIRA.
 * Designed and implenmented a **new report with video replay** for automation testing.
 * Participated in defining the **version process** for all QE artifacts which aligned with our production version and provided multiple utilites and support for adoption.
-* **Skills**: Java, Spring, MongoDB, HTML5, CSS, Javascript, AngularJS, Jenkins API, JIRA API, OO, HTTP, RESTful, SOAP, Responsive Web Page, Selenium Grid.
 
 ### Education
 * **Bachelor of Engineering, Computer Science**, Shanghai Jiaotong University, 2008 - 2012.
