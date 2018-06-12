@@ -1,12 +1,12 @@
 
 #### Personal Resume
 
-Online: [html](/resume/hongfei)
-Download: [pdf](/resume/hongfei.pdf).  
+Online: [html](/resume/hongfei)  
+Download: [pdf](/resume/hongfei.pdf)  
 
 #### Social Account
 
-LinkedIn: [hongfei](https://www.linkedin.com/in/hongfei/)
+LinkedIn: [hongfei](https://www.linkedin.com/in/hongfei/)  
 Instagram: [hongfei.zhou](https://www.instagram.com/hongfei.zhou/)
 
 #### Presentations
