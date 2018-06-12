@@ -6,8 +6,8 @@ Download: [pdf](/resume/hongfei.pdf).
 
 #### Social Account
 
-LinkedIn: [Here](https://www.linkedin.com/in/hongfei/)
-
+LinkedIn: [hongfei](https://www.linkedin.com/in/hongfei/)
+Instagram: [hongfei.zhou](https://www.instagram.com/hongfei.zhou/)
 
 #### Presentations
 
