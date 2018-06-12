@@ -2,7 +2,6 @@
 #### Personal Resume
 
 Short version: [html](/resume/hongfei), [pdf](/resume/hongfei.pdf).  
-Long version: TBD.  
 
 #### Social Account
 
