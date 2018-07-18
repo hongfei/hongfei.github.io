@@ -42,3 +42,6 @@
 
 ### Education
 * **Bachelor of Engineering, Computer Science**, Shanghai Jiaotong University, 2008 - 2012.
+
+### Download
+Click [Here](hongfei.pdf) to download pdf version  of this resume.
