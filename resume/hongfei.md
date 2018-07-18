@@ -19,7 +19,7 @@
 	> Using Java with Spring MVC to build a web service for serving test data. System is built with MongoDB for data storage and Jenkins for data generation.
 	
 * Designed and implemented the frontend and backend for **User Traffic Diagram**. 
-	> Using Jenkins to periodically fetching data from QM and build a diagram that indicates the real user traffic of the site. Diagram is served with Java/Spring.
+	> Using Jenkins to periodically fetch data from QM and build a diagram that indicates the real user traffic of the site. Diagram is served with Java/Spring.
 	
 * Designed the framework for **Native APP automation** based on selenium.
 	> Using Java and Selenium to build a base framework for supporting Native APP automation, including local run and remote grid run.
@@ -42,6 +42,3 @@
 
 ### Education
 * **Bachelor of Engineering, Computer Science**, Shanghai Jiaotong University, 2008 - 2012.
-
-### Download
-Click [Here](hongfei.pdf) to download pdf version  of this resume.
