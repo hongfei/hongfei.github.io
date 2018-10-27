@@ -15,7 +15,7 @@
 ### Experience
 ##### Senior Software Engineer @ StubHub, eBay Inc, *from 2012.6 to present*
 
-* Lead developer for **Price Markdown**. Design the structure an d implemented the feature for marking down prices.
+* Lead developer for **Price Markdown**. Design the structure and implemented the feature for marking down prices.
 	> Leverage Java 8 & multi-threading & Couchbase to perform high performance price markdown. Giving the business team the ability to adjust the price throughout the entire site.
 
 * Lead developer for **Test Data Service**. Designed the architecture of sysmtem and implemented the backend of the system.
