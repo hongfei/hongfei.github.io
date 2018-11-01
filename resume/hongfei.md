@@ -16,6 +16,8 @@
 ### Experience
 ##### Senior Software Engineer @ StubHub, eBay Inc, *from 2012.6 to present*
 
+* Lead developer for **Optimizely AB Testing**. Integrate the AB Testing with Optimizely.
+
 * Lead developer for **Price Markdown**. Design the structure and implemented the feature for marking down prices.
 	> Leverage Java 8 & multi-threading & Couchbase to perform high performance price markdown. Giving the business team the ability to adjust the price throughout the entire site.
 
