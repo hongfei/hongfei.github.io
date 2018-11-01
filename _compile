@@ -3,20 +3,30 @@ import locale
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 from shutil import copyfile
+from os.path import expanduser
 from md2pdf.core import md2pdf
+
+ICLOUD = expanduser('~') + '/Library/Mobile Documents/com~apple~CloudDocs'
+RESUME = '/Documents/Resume/Resume(EN, 2018).md'
 
 
 def compile_resume():
 	# Generate web page md file
-	copyfile('_resource/resume/hongfei.md', 'resume/hongfei.md')
+	with open(ICLOUD + RESUME, 'r') as original_resume, open('resume/hongfei.md', 'w') as dst_resume:
+		lines = original_resume.readlines()
+		for line in lines:
+			if '**Mobile**' not in line and '**Address**' not in line:
+				dst_resume.write(line)	
+
+	# Generate the downloadable pdf file
+	md2pdf('resume/hongfei.pdf', md_file_path='resume/hongfei.md', css_file_path='_resource/markdown/GitHub2.css')
+	print("PDF resume generated")
+
 	with open('resume/hongfei.md', 'a') as resume:
 		resume.write('\n')
 		resume.write('### Download  \n')
 		resume.write('[PDF Version](hongfei.pdf)')
+		resume.write('\n')
 		print("Markdown resume generated")
-
-	# Generate the downloadable pdf file
-	md2pdf('resume/hongfei.pdf', md_file_path='_resource/resume/hongfei.md', css_file_path='_resource/markdown/GitHub2.css')
-	print("PDF resume generated")
 
 compile_resume()
