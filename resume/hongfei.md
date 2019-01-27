@@ -16,6 +16,10 @@
 ### Experience
 ##### Senior Software Engineer @ StubHub, eBay Inc, *from 2012.6 to present*
 
+* Lead developer for **Discount Cofund**. Implemented the feature and update iLog integration.
+
+	> Add extra price item to the system and update integration with iLog to take extra parameters for new price item.
+
 * Lead developer for **Optimizely AB Testing**. Integrate the AB Testing with Optimizely.
 
 * Lead developer for **Price Markdown**. Design the structure and implemented the feature for marking down prices.
