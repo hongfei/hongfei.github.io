@@ -5,11 +5,11 @@
 > I have 6+ years technical experiences in website development, testing and deployment. Building global site with different tech stacks and various main stream utilities. Have worked on developing frontend, backend, CI/CD, automation platform.
 
 ### Key Skills
-* **Programming Language**: Java, Python, Scala, Javascript.
+* **Programming Language**: Java, Python, Scala, Javascript, Swift.
 * **Backend**: Spring MVC, Django, Playframework, RESTful Service.
-* **Frontend**: HTML, CSS, AngularJS.
+* **Frontend**: HTML, CSS, AngularJS, iOS.
 * **Database**: Oracle, MongoDB.
-* **Tools**: Linux, Maven, Jenkins, TestNG, Git.
+* **Tools**: Linux, Maven, Jenkins, TestNG, Git, Optimizely.
 * **Machine Learning**: Logistic Regression, SVM, NN, CNN, RNN, etc.
 * **Automation**: Selenium for frontend. Customized libraries for backend.
 
