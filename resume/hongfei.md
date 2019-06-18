@@ -2,19 +2,32 @@
 ### Hongfei Zhou
 **Email**: mich.zhou1989@gmail.com  
 
-> I have 6+ years technical experiences in website development, testing and deployment. Building global site with different tech stacks and various main stream utilities. Have worked on developing frontend, backend, CI/CD, automation platform.
+> I have 7+ years technical experiences in website development, testing and deployment. Building global site with different tech stacks and various main stream utilities. Have worked on developing frontend, backend, CI/CD, automation platform.
 
 ### Key Skills
-* **Programming Language**: Java, Python, Scala, Javascript, Swift.
-* **Backend**: Spring MVC, Django, Playframework, RESTful Service.
-* **Frontend**: HTML, CSS, AngularJS, iOS.
-* **Database**: Oracle, MongoDB.
-* **Tools**: Linux, Maven, Jenkins, TestNG, Git, Optimizely.
+* **Programming Language**: Kotlin , Java, Python, Scala, Javascript, Swift.
+* **Backend**: Spring Boot, Spring MVC, Django, Playframework, RESTful Service.
+* **Cloud**: Dataflow, Apache Beam, Cloud Function, Cloud Scheduler.
+* **Frontend**: GraphQL, HTML, CSS, AngularJS, iOS.
+* **Database**: Big Query, Big Table, PosgresQL, OpenTSDB, Oracle, MongoDB.
+* **Tools**: , Gradle, Maven, Jenkins, TestNG, Git, Optimizely, Linux.
 * **Machine Learning**: Logistic Regression, SVM, NN, CNN, RNN, etc.
 * **Automation**: Selenium for frontend. Customized libraries for backend.
 
 ### Experience
-##### Senior Software Engineer @ StubHub, eBay Inc, *from 2012.6 to present*
+
+##### Software Engineer @ Motiion, Inc, *from 2019.04 to present*
+
+* Developer for **time series** building with OpenTSDB and BigTable.
+
+	> Create Dataflow pipleline with Apache Beam to extract data from BigQuery, and save aggregated data to OpenTSDB backed by BigTable.
+
+* Developer for backend, serving **geo data with GraphQL**.
+
+	> Add GraphQL interface for serving geo data to FE. Created Cron Jobs for syncing geo data between PostgresQL and Big Query.
+
+
+##### Senior Software Engineer @ StubHub, eBay Inc, *from 2012.6 to 2019.04*
 
 * Lead developer for **Discount Cofund**. Implemented the feature and update iLog integration.
 
