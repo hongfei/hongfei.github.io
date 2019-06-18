@@ -8,6 +8,7 @@ from md2pdf.core import md2pdf
 
 ICLOUD = expanduser('~') + '/Library/Mobile Documents/com~apple~CloudDocs'
 RESUME = '/Documents/Resume/Resume(EN, 2018).md'
+RESUME_PDF = '/Documents/Resume/Resume(EN, 2018).pdf'
 
 
 def compile_resume():
@@ -29,4 +30,9 @@ def compile_resume():
 		resume.write('\n')
 		print("Markdown resume generated")
 
+def generate_local_pdf():
+	md2pdf(ICLOUD + RESUME_PDF, md_file_path=ICLOUD + RESUME, css_file_path='_resource/markdown/GitHub2.css')
+	print("Local PDF resume generated")
+
+generate_local_pdf()
 compile_resume()
