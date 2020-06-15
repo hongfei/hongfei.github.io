@@ -2,17 +2,16 @@
 ### Hongfei Zhou
 **Email**: mich.zhou1989@gmail.com  
 
-> I have 7+ years technical experiences in website development, testing and deployment. Building global site with different tech stacks and various main stream utilities. Have worked on developing frontend, backend, CI/CD, automation platform.
+> I have 8+ years technical experiences in website development, testing and deployment. Building global site with different tech stacks and various main stream utilities. Have worked on developing frontend, backend, CI/CD, automation platform.
 
 ### Key Skills
-* **Programming Language**: Kotlin , Java, Python, Scala, Javascript, Swift.
-* **Backend**: Spring Boot, Spring MVC, Django, Playframework, RESTful Service.
-* **Cloud**: Dataflow, Apache Beam, Cloud Function, Cloud Scheduler.
+* **Programming Language**: Kotlin, Java, Python, Javascript, Swift, Scala.
+* **Backend**: Spring Boot, JPA, Spring MVC, Django, RESTful Service.
+* **Cloud**: Gogole Cloud Stack, Kubernetes, Docker.
 * **Frontend**: GraphQL, HTML, CSS, AngularJS, iOS.
-* **Database**: Big Query, Big Table, PosgresQL, OpenTSDB, Oracle, MongoDB.
-* **Tools**: , Gradle, Maven, Jenkins, TestNG, Git, Optimizely, Linux.
+* **Database**: PosgresQL, OpenTSDB, Big Query, Big Table, Oracle, MongoDB.
+* **Tools**: , Gradle, Maven, Jenkins, Spinnaker, JUnit, TestNG, Git, Linux.
 * **Machine Learning**: Logistic Regression, SVM, NN, CNN, RNN, etc.
-* **Automation**: Selenium for frontend. Customized libraries for backend.
 
 ### Experience
 
@@ -22,10 +21,17 @@
 
 	> Create Dataflow pipleline with Apache Beam to extract data from BigQuery, and save aggregated data to OpenTSDB backed by BigTable.
 
-* Developer for backend, serving **geo data with GraphQL**.
+* Developer for backend with **GraphQL** and **Kotlin**.
 
-	> Add GraphQL interface for serving geo data to FE. Created Cron Jobs for syncing geo data between PostgresQL and Big Query.
+	> GraphQL based backend API for various features include serving and processing data, integrating with third-party services.
 
+* Developer for frontend with **Typescript** and **React**.
+
+   > Create simple react component for working with backend.
+    
+* Developer for infrastructure management with **GCP** and **Kubernetes**.
+
+	> Manage backend deployments, monitoring, logging and networks.
 
 ##### Senior Software Engineer @ StubHub, eBay Inc, *from 2012.6 to 2019.04*
 
