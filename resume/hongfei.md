@@ -15,23 +15,22 @@
 
 ### Experience
 
-##### Software Engineer @ Motiion, Inc, *from 2019.04 to present*
+##### Software Engineer @ Crisp Inc. (Motiion Inc.), *from 2019.04 to present*
 
 * Developer for **time series** building with OpenTSDB and BigTable.
-
 	> Create Dataflow pipleline with Apache Beam to extract data from BigQuery, and save aggregated data to OpenTSDB backed by BigTable.
 
 * Developer for backend with **GraphQL** and **Kotlin**.
-
 	> GraphQL based backend API for various features include serving and processing data, integrating with third-party services.
 
 * Developer for frontend with **Typescript** and **React**.
-
    > Create simple react component for working with backend.
     
 * Developer for infrastructure management with **GCP** and **Kubernetes**.
-
 	> Manage backend deployments, monitoring, logging and networks.
+	
+* Developer for data transformation with **DBT** and **BigQuery**
+	> Using DBT to create data transformation views in GCP BigQuery for supporting data visualization.
 
 ##### Senior Software Engineer @ StubHub, eBay Inc, *from 2012.6 to 2019.04*
 
