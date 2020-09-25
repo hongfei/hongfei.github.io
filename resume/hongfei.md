@@ -8,7 +8,7 @@
 * **Programming Language**: Kotlin, Java, Python, Javascript, Swift, Scala.
 * **Backend**: Spring Boot, JPA, Spring MVC, Django, RESTful Service.
 * **Cloud**: Gogole Cloud Stack, Kubernetes, Docker.
-* **Frontend**: GraphQL, HTML, CSS, AngularJS, iOS.
+* **Frontend**: GraphQL, HTML, CSS, ReactJS, iOS.
 * **Database**: PosgresQL, OpenTSDB, DBT, Big Query, Big Table, Oracle, MongoDB.
 * **Tools**: , Gradle, Maven, Jenkins, Spinnaker, JUnit, TestNG, Git, Linux.
 * **Machine Learning**: Logistic Regression, SVM, NN, CNN, RNN, etc.
