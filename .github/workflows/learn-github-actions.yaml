@@ -22,17 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pre-Job environment setup
-        uses: actions/checkout@v3
-        env:
-          ENV1: t1
+        run: export ENV1=v1
       - name: Check Env 1
         run: echo $ENV1
       - name: Check Env 2
         run: echo $ENV2
       - name: Middle-Job environment setup
-        env:
-          ENV2: t2
-        run: echo "Middle setup"
+        run: export ENV2=v2
       - name: Check Env 1
         run: echo $ENV1
       - name: Check Env 2
