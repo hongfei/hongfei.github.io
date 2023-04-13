@@ -18,3 +18,20 @@ jobs:
 #  convert-markdown-to-pdf:
 #    steps:
 #      - uses: valtyr/pandoc-action@v0.1-alpha
+  check-env-var-propagates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pre-Job environment setup
+        env:
+          ENV1: t1
+      - name: Check Env 1
+        run: echo $ENV1
+      - name: Check Env 2
+        run: echo $ENV2
+      - name: Middle-Job environment setup
+        env:
+          ENV2: t2
+      - name: Check Env 1
+        run: echo $ENV1
+      - name: Check Env 2
+        run: echo $ENV2
