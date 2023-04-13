@@ -32,6 +32,7 @@ jobs:
       - name: Middle-Job environment setup
         env:
           ENV2: t2
+        run: echo "Middle setup"
       - name: Check Env 1
         run: echo $ENV1
       - name: Check Env 2
