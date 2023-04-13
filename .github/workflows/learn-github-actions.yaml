@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pre-Job environment setup
+        uses: actions/checkout@v3
         env:
           ENV1: t1
       - name: Check Env 1
