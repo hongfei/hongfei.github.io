@@ -16,13 +16,13 @@
 ##### Senior Software Engineer @ Crisp Inc. (Motiion Inc.), *from 2019.04 to present*
 
 - Developer for backend with **GraphQL** and **Kotlin**.
-  > GraphQL-based backend API for various features including serving and processing data, and integrating with third-party services.
+  > GraphQL-based backend API for various features including serving and processing data, and using federated GraphQL to service request from multiple services.
 	
   > Developing backend services with Spring Boot, GRPC, Hibernates and PostgreSQL.
 	
   > Integrating with third-party services like Gmail and Twilio.
   
-  > Monitoring with GCP Stackdriver
+  > Collecting metrics with Prometheus and GCP Stackdriver. Creating alert policies based on metrics. Alert with Pager Duty.
 
 - Developer for report download from various sources including Web Portal and API using **WebDriver** and **WebClient**.
   >  Leveraging Selenium WebDriver to automate the downloads for vendor reports from various sources.  
@@ -36,9 +36,11 @@
 
   > Using scaffold and kustomize to ease the difficulty of composing k8s manifest
 	
-  > Familiar with various concepts of Kubernetes, including deployments and auto-scaling.  
+  > Familiar with various concepts of Kubernetes, including deployments, services and auto-scaling.  
 	
   > Using Google Cloud DNS and Load Balancer to enable network access for internal services.
+
+  > Maintaining Jenkins pipeline with Jenkinsfile.
 
 - Developer for **time series** building with **OpenTSDB** and **BigTable**.
   > Create Dataflow pipelines with Apache Beam to extract data from BigQuery, and save aggregated data to OpenTSDB backed by BigTable.
