@@ -34,7 +34,7 @@
 - Developer for infrastructure management with **GCP** and **Kubernetes**.
   > Manage backend deployments, monitoring, logging and networks.    
 
-  > Using scaffold and kustomize to ease the difficulty of composing k8s manifest
+  > Using scaffold and kustomize to ease the difficulty of composing k8s manifest.
 	
   > Familiar with various concepts of Kubernetes, including deployments, services and auto-scaling.  
 	
