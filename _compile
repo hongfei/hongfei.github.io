@@ -7,8 +7,8 @@ from os.path import expanduser
 from md2pdf.core import md2pdf
 
 ICLOUD = expanduser('~') + '/Library/Mobile Documents/com~apple~CloudDocs'
-RESUME = '/Jobs/Resume/Resume(EN, 2018).md'
-RESUME_PDF = '/Jobs/Resume/Resume(EN, 2018).pdf'
+RESUME = '/Jobs/Resume/Resume(2023).md'
+RESUME_PDF = '/Jobs/Resume/Resume(2023).pdf'
 
 
 def compile_resume():
