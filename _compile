@@ -20,7 +20,7 @@ def compile_resume():
 				dst_resume.write(line)	
 
 	# Generate the downloadable pdf file
-	md2pdf('resume/hongfei.pdf', md_file_path='resume/hongfei.md', css_file_path='_resource/markdown/GitHub2.css')
+	md2pdf('resume/hongfei.pdf', md_file_path='resume/hongfei.md', css_file_path='_resource/markdown/github-markdown-light.css')
 	print("PDF resume generated")
 
 	with open('resume/hongfei.md', 'a') as resume:
@@ -31,7 +31,7 @@ def compile_resume():
 		print("Markdown resume generated")
 
 def generate_local_pdf():
-	md2pdf(ICLOUD + RESUME_PDF, md_file_path=ICLOUD + RESUME, css_file_path='_resource/markdown/GitHub2.css')
+	md2pdf(ICLOUD + RESUME_PDF, md_file_path=ICLOUD + RESUME, css_file_path='_resource/markdown/github-markdown-light.css')
 	print("Local PDF resume generated")
 
 generate_local_pdf()
