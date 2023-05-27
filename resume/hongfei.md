@@ -77,16 +77,16 @@
 
 	- Maintain backend service deployment with Kubernetes manifests
 		> * Write composable manifest for Kubernetes **Deployments**, **Services**, **Ingresses**.
-		> * Use **Kustomize** to combine the manifests and use **Skaffold** to automate the build and deploy process.
- 	 
- 	- Set up PGAdmin instance to enable production database query
-		
+		> * Use **Kustomize** to combine the manifests and use **Skaffold** to automate the build and deploy process.   
+
+ 	- Set up PGAdmin instance to enable production database query	
 		> * Set up Kubernetes Deployment to run PGAdmin.
 		> * Make the PGAdmin configuration version controlled on GitHub.
-	 	> * Expose the instance behind **Google IAP** with proper **LoadBalancer** and **SSL Termination**.  	
-	- Set up a staging environment for penetration testing
+	 	> * Expose the instance behind **Google IAP** with proper **LoadBalancer** and **SSL Termination**.  
 
-		> * Set up an isolated environment similar to the production.
+ 	- Set up a staging environment for penetration testing.
+ 	 
+ 		> * Set up an isolated environment similar to the production.
 		> * Enable public network access with **Ingress** and **Cloud DNS**.
 
 - Developer for various OPS tasks
