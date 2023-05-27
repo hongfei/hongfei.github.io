@@ -27,43 +27,42 @@
 
 	- Add Credential Verification API to support triggering and getting the status of verification running status
 	
-	 > * Set up **GRPC** to enable communication between different backend services. 
-	 > * Support GraphQL **DataLoader** to boost the API performance.  
+		> * Set up **GRPC** to enable communication between different backend services. 
+		> * Support GraphQL **DataLoader** to boost the API performance.  
 	 
 	- Develop DSL to support WebDriver downloading
 	
-	 > * Use **Selenium WebDriver** to support writing code to automatically operate Chrome to download reports.
-	 > * Wrapped with a self-developed **DSL** to lower the effort of writing browser automation code with better logging and debugging.
+		> * Use **Selenium WebDriver** to support writing code to automatically operate Chrome to download reports.
+		> * Wrapped with a self-developed **DSL** to lower the effort of writing browser automation code with better logging and debugging.
 	
 	- Develop a new task-running framework for executing daily tasks with autoscaling
 	
-	 > * New framework uses kotlin **Reflection** to reduce the complexity of runner code.
-	 > * Provided better **object-oriented** programming capabilities.
-	 > * Eliminates all callback style coding and improves code cleanness for easier maintenance.
-	 > * Set up metrics to enable **Horizontal Auto Scalar** to control the runner replicas.
+		> * New framework uses kotlin **Reflection** to reduce the complexity of runner code.
+		> * Provided better **object-oriented** programming capabilities.
+		> * Eliminates all callback style coding and improves code cleanness for easier maintenance.
+		> * Set up metrics to enable **Horizontal Auto Scalar** to control the runner replicas.
 	
 	- Add support to download various vendor reports from different portals
 	
-	 > * Download the reports from various sources like Amazon (API), Walmart (Browser), Loblows (GCS), etc.
-	 > * Parse the report files and save data to **Google Big Query**.
-	 > * Using **Pub/Sub** to connect report downloading and parsing services.
-	 > * Write **DBT** to provide a cleaned version of the **Big Query** table for downstream teams.
+		> * Download the reports from various sources like Amazon (API), Walmart (Browser), Loblows (GCS), etc.
+		> * Parse the report files and save data to **Google Big Query**.
+		> * Using **Pub/Sub** to connect report downloading and parsing services.
+		> * Write **DBT** to provide a cleaned version of the **Big Query** table for downstream teams.
 	
 	- Support Multi-Factor Authentication to access portals with MFA enabled
 	
-	 > * Integrate with **Twilio** to automatically generate phone numbers and receive text messages.
-	 > * Integrate with Gmail to receive verification emails.
-	 > * Modify the WebDriver DSL to support extracting **OTP** code from text messages and emails.
+		> * Integrate with Gmail to receive verification emails.
+		> * Modify the WebDriver DSL to support extracting **OTP** code from text messages and emails.
 	
 	- Support Task/Resource Reservation with heartbeat check
 	
-	 > * Add reservation service to support locking a resource for exclusive use.
-	 > * Integrate the service with the heartbeat service to ensure no lock starvation.
+		> * Add reservation service to support locking a resource for exclusive use.
+		> * Integrate the service with the heartbeat service to ensure no lock starvation.
 	 
 	- Support Looker Embedded URL generation
 	 
-	 > * Integrate with **Looker** to generate an embeddable URL with auth signature.
-	 > * Embed the URL to the front end to display Looker's dashboard.  
+		> * Integrate with **Looker** to generate an embeddable URL with auth signature.
+		> * Embed the URL to the front end to display Looker's dashboard.  
 	 
    - Switch from **Quartz** scheduling to **Spring** Scheduling
 
@@ -71,37 +70,36 @@
 
 	- Set up metrics collection, monitoring, and alerting
 	
-	 > * Add support in backend services to expose metrics.
-	 > * Set up **Prometheus** to collect metrics and forward metrics to **Stackdriver**.
-	 > * Set up **Grafana** to new metrics in Prometheus.
-	 > * Create Alert Policies on Stractdriver and alert with PagerDuty and Slack.
+		> * Add support in backend services to expose metrics.
+		> * Set up **Prometheus** to collect metrics and forward metrics to **Stackdriver**.
+		> * Set up **Grafana** to new metrics in Prometheus.
+		> * Create Alert Policies on Stractdriver and alert with PagerDuty and Slack.
 
 	- Maintain backend service deployment with Kubernetes manifests
-	
- 	 > * Write composable manifest for Kubernetes **Deployments**, **Services**, **Ingresses**.
- 	 > * Use **Kustomize** to combine the manifests and use **Skaffold** to automate the build and deploy process.
+		> * Write composable manifest for Kubernetes **Deployments**, **Services**, **Ingresses**.
+		> * Use **Kustomize** to combine the manifests and use **Skaffold** to automate the build and deploy process.
  	 
  	- Set up PGAdmin instance to enable production database query
-
- 	 > * Set up Kubernetes Deployment to run PGAdmin.
- 	 > * Make the PGAdmin configuration version controlled on GitHub.
-	 > * Expose the instance behind **Google IAP** with proper **LoadBalancer** and **SSL Termination**.  	
+		
+		> * Set up Kubernetes Deployment to run PGAdmin.
+		> * Make the PGAdmin configuration version controlled on GitHub.
+	 	> * Expose the instance behind **Google IAP** with proper **LoadBalancer** and **SSL Termination**.  	
 	- Set up a staging environment for penetration testing
 
-	 > * Set up an isolated environment similar to the production.
-	 > * Enable public network access with **Ingress** and **Cloud DNS**.
+		> * Set up an isolated environment similar to the production.
+		> * Enable public network access with **Ingress** and **Cloud DNS**.
 
 - Developer for various OPS tasks
 
 	- Enable the Jenkins pipeline to build modules with the code change.
 	
-	 > * Support code change detection.
-	 > * support dependency check to allow the module to build if a depending module has code change.
+		> * Support code change detection.
+		> * support dependency check to allow the module to build if a depending module has code change.
 	
 	- Migrating from Jenkins pipeline to GitHub Action Workflow for CICD
 	
-	 > * Write GitHub Action to perform CICD steps for individual modules.
-	 > * Enable various external system support with GitHub Action such as Firebase and Slack.
+		> * Write GitHub Action to perform CICD steps for individual modules.
+		> * Enable various external system support with GitHub Action such as Firebase and Slack.
 	
 	- Add key rotation to the developer environment to ensure short-lived keys.
 	- Upgrade the Kotlin version.
