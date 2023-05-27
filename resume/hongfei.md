@@ -79,10 +79,12 @@
       > * Create Alert Policies on Stractdriver and alert with PagerDuty and Slack.
 
     - Maintain backend service deployment with Kubernetes manifests
+    
       > * Write composable manifest for Kubernetes **Deployments**, **Services**, **Ingresses**.
       > * Use **Kustomize** to combine the manifests and use **Skaffold** to automate the build and deploy process.
 
     - Set up PGAdmin instance to enable production database query
+    
       > * Set up Kubernetes Deployment to run PGAdmin.
       > * Make the PGAdmin configuration version controlled on GitHub.
       > * Expose the instance behind **Google IAP** with proper **LoadBalancer** and **SSL Termination**.
