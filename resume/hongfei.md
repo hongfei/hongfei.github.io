@@ -23,6 +23,7 @@
 > Responsible for various projects and tasks covering the backend, infrastructure, monitoring, and CICD.
 
 - Backend Developer for adding new features and maintaining existing features of the system
+
     - Add new APIs like Location, Tag, Annotation
 
       > * Set up GraphQL support with **kotlin-graphql** for new services.
