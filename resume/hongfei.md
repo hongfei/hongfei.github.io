@@ -3,9 +3,10 @@
 **Email**: mich.zhou1989@gmail.com  
 
 
-> I have 11+ years of technical experience in backend development, testing, and deployment. Familiar with Google Cloud
-> Platform and Kubernetes. Strong problem-solving and analytical skills, combined with a passion for staying up-to-date
-> with emerging technologies. Have worked on developing backend, frontend, CI/CD, and automation platforms.
+> Experienced backend developer with over 11 years of technical expertise in development, testing, and deployment. Proficient in developing robust backend, frontend, CI/CD, and automation platforms.
+> Highly skilled in leveraging Google Cloud Platform and Kubernetes to deliver efficient solutions. 
+> Demonstrates exceptional problem-solving abilities and analytical acumen, consistently delivering innovative solutions. 
+> Committed to staying at the forefront of emerging technologies, continuously expanding knowledge and expertise.
 
 ## Key Skills
 
@@ -52,10 +53,11 @@
       > * Using **Pub/Sub** to connect report downloading and parsing services.
       > * Write **DBT** to provide a cleaned version of the **Big Query** table for downstream teams.
 
-    - Support Multi-Factor Authentication to access portals with MFA enabled
+    - Support Multi-Factor Authentication to access portals with MFA 
 
-      > * Integrate with Gmail to receive verification emails.
-      > * Modify the WebDriver DSL to support extracting **OTP** code from text messages and emails.
+      > * Integrate with **Twilio** to receive verification text messages.
+      > * Integrate with **Gmail** to receive verification emails.
+      > * Provide the framework to extract **OTP** code from text messages and emails and integrate with the WebDriver DSL.
 
     - Support Task/Resource Reservation with heartbeat check
 
