@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>如何准确观察小胶质细胞在三维脑组织中的动态？DeepCellMap给出答案 - 机器之心</title><link>https://news.google.com/rss/articles/CBMiXEFVX3lxTE83ZVVncG1TY1Jud3NpY0RCdGFjbnBZNnFoZGQ3MG9rci0yRFFjSkhqRFN5Y3Z6NnVweEZZTGpCMUdLb2xiNmFwamVhejBWMUdYbm5IVVlHa3lRRmls?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" id="js-article-content"&gt;&lt;p&gt;编辑 | 2049&lt;/p&gt;&lt;p&gt;在人类大脑发育过程中，数万亿神经元与胶质细胞形成复杂网络，而小胶质细胞作为中枢神经系统的免疫哨兵，其空间分布与功能动态直接影响神经回路的形成与重塑。&lt;/p&gt;&lt;p&gt;传统组织学分析方法受限于手动标注的低效性和二维图像的局限性，难以揭示细胞在三维组织中的动态互作规律。尤其在病理条件下，如母体感染 SARS-CoV-2 引发的胎儿脑出血，小胶质细胞如何响应血管损伤仍需深入解析。&lt;/p&gt;&lt;p&gt;针对这一挑战，来自巴黎高等师范学院生物研究所 Institut de Biologique de l’École Normale Supérieure ，IBENS)的研究团队开发了 DeepCellMap——一个融合深度学习与空间统计的开源分析平台。该工具通过自动化细胞分类与多尺度空间关联分析，首次实现了人类发育脑组织中小胶质细胞形态多样性及其空间网络的系统解析。&lt;/p&gt;&lt;p&gt;该研究以「&lt;em&gt;Unraveling microglial spatial organization in the developing human brain with DeepCellMap, a deep learning approach coupled with spatial statistics&lt;/em&gt;」为题，发表于 2025 年 2 月 13 日的《&lt;em&gt;Nature Communications&lt;/em&gt;》。&lt;/p&gt;&lt;p&gt;论文链接：&lt;em&gt;https://www.nature.com/articles/s41467-025-56560-z&lt;/em&gt;&lt;/p&gt;&lt;p&gt;代码地址：&lt;em&gt;https://github.com/holcman-lab/DeepCellMap&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;研究背景&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;小胶质细胞起源于卵黄囊前体细胞，在胚胎发育第 4 周迁入人脑，通过增殖、迁移和凋亡动态塑造神经发育微环境。&lt;/p&gt;&lt;p&gt;其形态从阿米巴状（amoeboid）到高度分枝的稳态型（ramified），直接反映功能状态的转变：吞噬凋亡细胞、修剪冗余突触或响应病理信号。&lt;/p&gt;&lt;p&gt;尽管啮齿类模型已揭示小胶质细胞的发育规律，但人类脑组织的复杂性与伦理限制导致相关研究长期滞后。&lt;/p&gt;&lt;p&gt;现有技术瓶颈集中在三方面：其一，传统形态分类依赖人工标注，难以处理全脑切片的海量数据；其二，荧光与明场成像的细胞分割算法在人类组织中的应用尚不成熟；其三，空间统计方法多局限于肿瘤等局部病变分析，缺乏针对发育动态的定量框架。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;核心理念与算法架构&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;DeepCellMap 将 U-Net 驱动的细胞分类与广义空间统计方法有机结合。&lt;/p&gt;&lt;p&gt;其流程分为三阶段：&lt;/p&gt;&lt;p&gt;首先，通过自适应阈值分割与形态学操作提取细胞轮廓；&lt;/p&gt;&lt;p&gt;其次，基于 5.5 万张标注图像训练深度网络，将小胶质细胞分为增殖型（proliferative）、吞噬型（phagocytic）、聚集型（aggregated）、阿米巴型（amoeboid）与分枝型（ramified）五类，分类 F1 分数达 81%；&lt;/p&gt;&lt;p&gt;最后，通过改进的 Ripley's K 函数与 DBSCAN 聚类算法，量化细胞-细胞及细胞-脑区边界的空间关联。&lt;/p&gt;&lt;section&gt;图示：DeepCellMap 原理。（来源：论文）&lt;/section&gt;&lt;p&gt;为克服分类误差对统计结果的干扰，研究团队提出概率加权校正模型。通过构建混淆矩阵，系统评估形态分类的不确定性，并在空间关联分析中引入概率权重。&lt;/p&gt;&lt;p&gt;合成数据验证显示，未校正时关联距离误差可达 400 像素，而校正后误差降至 5% 以内。&lt;/p&gt;&lt;p&gt;这种统计鲁棒性使其能够精准识别如增殖型与吞噬型细胞的紧密耦合（平均距离 68 μm），以及聚集型细胞对脑区边界的特异性趋近（202 μm）。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;发育脑中的空间动态图谱&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;应用 DeepCellMap 分析 17-20 孕周人脑组织发现，不同脑区的小胶质细胞呈现显著异质性。&lt;/p&gt;&lt;p&gt;在神经节隆起中，阿米巴型细胞占比从 17 孕周的 32% 升至 20 孕周的 51%，提示其作为迁移前体的功能；而纹状体与皮层则以分枝型细胞为主（&amp;gt;65%），符合区域成熟度差异。&lt;/p&gt;&lt;p&gt;空间关联分析进一步揭示，吞噬型、增殖型与聚集型形成紧密的功能单元，其互作频率是其他类型的 2-3 倍，提示其可能在凋亡清除与组织重塑中发挥协同作用。&lt;/p&gt;&lt;p&gt;图示：追踪不同脑区的小胶质细胞定植情况。（来源：论文）&lt;/p&gt;&lt;p&gt;DBSCAN 聚类分析显示，吞噬型与分枝型细胞更倾向形成稳定集群（65% 细胞聚集成簇），而阿米巴型仅 46% 形成松散集群。&lt;/p&gt;&lt;p&gt;随着发育推进，不同形态细胞的领地重叠度逐渐降低，至 20 孕周时分枝型集群内其他类型细胞占比不足 10%。&lt;/p&gt;&lt;p&gt;这种空间分离可能由增殖依赖性空间占据机制驱动，与小鼠研究中观察到的微胶质细胞通过增殖实现空间分布的规律形成跨物种呼应。&lt;/p&gt;&lt;p&gt;图示：神经节突起中的细胞群重叠。（来源：论文）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;病理条件下的功能重塑&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在母体感染 SARS-CoV-2 的胎儿脑样本中，DeepCellMap 揭示了小胶质细胞与血管的异常互作。与对照组相比，感染组中 50% 的小胶质细胞呈现 CD68+ 溶酶体活性标记（IBA1+CD68+），且其与血管的最近邻距离缩短 23%。&lt;/p&gt;&lt;p&gt;空间聚类分析显示，溶酶体活化的小胶质细胞在出血区域形成紧密聚集，而血管完整性标记 claudin-5 的丢失提示其可能参与血脑屏障修复或损伤加剧的双向调控。这一发现为理解病毒垂直传播的神经病理机制提供了新视角。&lt;/p&gt;&lt;p&gt;图示：DeepCellMap 应用于 SARS-CoV-2 (COVID19) 胎儿人脑共聚焦数据。（来源：论文）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;未来展望&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;DeepCellMap 建立了首个针对人类发育脑的多尺度空间分析框架，其开源特性将推动神经发育与疾病研究的范式转变。&lt;/p&gt;&lt;p&gt;当前局限主要集中于三维重建能力不足，未来整合光片显微与空间转录组技术有望突破此瓶颈，揭示小胶质细胞的迁移轨迹与分子调控网络。&lt;/p&gt;&lt;p&gt;研究团队特别指出，算法在低密度脑区的分类精度仍需提升，且需扩展至更多病理模型验证其普适性。&lt;/p&gt;&lt;p&gt;随着空间组学技术的爆发式发展，DeepCellMap 或将成为解析脑细胞互作网络的关键工具，为神经免疫研究开辟新的探索维度。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>机器之心</author><pubDate>Fri, 28 Feb 2025 04:34:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE83ZVVncG1TY1Jud3NpY0RCdGFjbnBZNnFoZGQ3MG9rci0yRFFjSkhqRFN5Y3Z6NnVweEZZTGpCMUdLb2xiNmFwamVhejBWMUdYbm5IVVlHa3lRRmls</guid></item><item><title>这种癌死亡率10年暴增44%-中国瞭望 - 焦点新闻</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE1UWlByMVlQVTZJOS0zWmxLZG9peTFkSF9mSGVESnI5Y3U2c0ZOUFVOWUZTYmNQcEJ4bTZCT09ENFVrVTN0Z2FETUJRelNEODhNbTF6YWxSVDNQVXktV2Fwb2ZYekhLZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="newsContent"&gt;&lt;p&gt;摄护腺癌（又称前列腺癌）堪称年长男性健康的隐形杀手，不少患者出现症状并就医时，已经进入病程晚期。 &lt;/p&gt;&lt;p&gt;医生建议，50岁以上男性每年进行“PSA筛检”，具有摄护腺癌家族病史者，则提前至45岁开始，及早掌握自己的摄护腺癌风险，平时则要留意自己是否出现排尿习惯变化，并在发现异常时及时就医。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;据统计，摄护腺癌个案年龄中位数为72岁，其死亡率在过去十年间增加44%，现已成为全国癌症死亡率第五名。 而根据最新癌症登记报告，摄护腺癌的发生率持续攀升，已经成为男性癌症发生率第三名，2022年确诊个案数达9062例，年增长率高达21%，为所有癌症之冠。&lt;/p&gt;&lt;p&gt;台湾泌尿科医学会理事长查岱龙表示，早期摄护腺癌通常没有明显症状，因此患者多半在出现排尿异常、夜间频尿或背部疼痛时才就医，因此台湾有约33%患者在确诊时是已经出现远端转移的第四期，相较于美国的8%高出甚多，推估与台湾摄护腺癌筛检不够普及有关。&lt;/p&gt;&lt;p&gt;他说，摄护腺癌的风险因素包括年龄、家族病史、肥胖与饮食习惯，男性50岁后罹患摄护腺癌的风险会大幅提升，此外，国内研究也发现，若家族中有父亲或兄弟曾罹患摄护腺癌，个人罹癌风险将提高3.9倍。&lt;/p&gt;&lt;p&gt;台湾泌尿科医学会泌尿肿瘤委员会主任委员吴俊德表示，早期摄护腺癌患者若医生评估风险较低，可能采取积极追踪、手术或放射线治疗，若病程已发展至末期，则需要全身性的治疗，目前以荷尔蒙疗法为主，但部分患者会在2到3年后出现“转移性去势性摄护腺癌（mCRPC）”。 mCRPC患者过去只能寻求第2线的标靶、化疗等，但近年来已有新型抑制剂，配合新一代荷尔蒙疗法，可提升转移性去势性摄护腺癌患者整体存活期近9个月，延长患者寿命。&lt;/p&gt;&lt;p&gt;查岱龙提醒，摄护腺癌可通过抽血进行PSA筛检早期发现，建议年满50岁以上男性应每年1次，有家族史者则建议45岁就养成每年筛检的习惯，相关数值务必经过泌尿科专科医生说明，以及早评估罹病风险。&lt;/p&gt;&lt;/div&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>连闯五道“生死关” 毓璜顶医院成功救治肾移植术后重症肺炎患者 - 胶东在线</title><link>https://news.google.com/rss/articles/CBMib0FVX3lxTFBCSkZYZEtfY3VqMl8tUzZVZmlWMDVUcXBpZ3QyN3Q0RThfZ2l1YS02TS1DTHE1TUItY1J6QUtsU1hLVmdTM1ZTeldsR0MtT3I4bF9hdjYwSlZ0S2J3YWZ4OVNqVVRaOGp2ek9kMEtzTQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="content" class="f18 lh36"&gt;
+&lt;p&gt;　　移植成功并不是终点，给予患者全生命周期的守护才是关键。&lt;/p&gt;
+
+&lt;p&gt;　　近日，烟台毓璜顶医院上演了一场“生死大营救”，器官移植科与感染性疾病科、药学部、重症医学科、血液内科、眼科、消化内科等多学科联动，历时130余天，连闯五道“生死关”，成功为一名肾移植术后重症肺炎患者保住了生命。这不仅彰显了该院强大的综合医疗实力和团队协作精神，也将医者仁心的内涵做了淋漓尽致的诠释。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;　　病情凶险，花季女孩遭遇“治疗悖论”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;　　前有尿毒症的“围攻”，后又遭遇重症肺炎的“阻击”，对花季女孩小高而言，活着更像是场“逆旅”。&lt;/p&gt;
+
+&lt;p&gt;　　受尿毒症困扰多年，经多方打听，前年年底，小高慕名找到烟台毓璜顶医院器官移植科。在医护人员的共同努力下，顺利为她进行了同种异体肾移植术，术后恢复情况良好，小高成功逃过一劫。然而好景不长，日前，她再次面临“生死危局”。因呕吐、腹泻伴有连续发烧，并相继出现胸闷、气短等症状，小高再次回到烟台毓璜顶医院器官移植科接受治疗。&lt;/p&gt;
+
+&lt;p&gt;　　入院后，烟台毓璜顶医院器官移植科主任于胜强及团队经检查发现，小高存在双肺炎性病变，并发双侧胸腔积液，更严重的是她的血氧饱和度持续在70%-80%间波动。考虑到小高的生命安全，于胜强团队将其转入重症监护室，行气管插管辅助治疗的同时，并为其进行对症的抗感染治疗。&lt;/p&gt;
+
+
+
+&lt;p&gt;　　于胜强（右）团队讨论患者病情&lt;/p&gt;
+
+&lt;p&gt;　　因多种炎症并存，小高很快遭遇了“治疗悖论”。移植术后需要规律口服抗排异药物，但这样会导致免疫抑制，从而增加感染的风险；此时小高感染严重，需要强力抗感染治疗的同时提高免疫力，可一旦采用这种治疗方案又可能对移植肾脏带来伤害，到底是保人还是保肾，如何找到一个免疫平衡点将人和肾都保住？成了横在于胜强和团队面前最大的难题。&lt;/p&gt;
+
+&lt;p&gt;　　“每一个移植病人对我们来说都是非常珍贵的，不论多难，我们都希望能为他们保住生命的火种。”考虑到小高正值花季，于胜强和团队决定迎难而上，尽力做到“鱼和熊掌兼得”。&lt;/p&gt;
+
+&lt;p&gt;　　&lt;strong&gt;合作共赢，多学科协作连跨五重生死关&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;　　由于病情危重，治疗途中，小高历经呼吸衰竭、严重药物不良反应、重度骨髓抑制、急性胰腺炎、视网膜脱落等难关，所幸在烟台毓璜顶医院多学科的共同协作下，医护人员陪她连闯四五道“生死关”，最终转危为安。&lt;/p&gt;
+
+
+
+&lt;p&gt;　　多学科会诊团队&lt;/p&gt;
+
+&lt;p&gt;　　入院后，小高被确诊为耶氏肺孢子菌感染。随后，痰培养中发现耐碳青霉烯类鲍曼不动杆菌，呼吸道检查中发现肺炎克雷伯菌和鲍曼不动杆菌，多重感染并发，情况危急。为保障患者的生命安全，于胜强带领器官移植科副主任医师张成钧、主治医师付晓华迅速开展抗感染治疗，由于患者身体虚弱且感染太重，但小高的病情却没有如预期般好转，而此时随着病情的恶化，小高一度出现呼吸衰竭，生命垂危，多次紧急转至重症医学科进行抢救，所幸在重症医学科李小丽主任团队医护人员的共同努力下，她顺利熬过“呼吸关”。&lt;/p&gt;
+
+&lt;p&gt;　　但这只是开始。很快，小高又出现胸腹部及颜面部红肿，考虑存在药物过敏的可能性，感染性疾病科蒲增惠主任团队和药学部赵泉主任团队多次到器官移植科会诊讨论，调整优化药物治疗方案，在达到治疗效果的前提下降低了药物不良反应。这期间，小高再次出现高热，并相继出现急性胰腺炎、重度骨髓抑制和视网膜脱落等情况，几度命悬一线。&lt;/p&gt;
+
+&lt;p&gt;　　“患者免疫力低下，同时合并多种耐药菌感染，治疗难度大、风险高，随时都可能病情恶化、危及生命。”回忆起小高的整个治疗过程，于胜强主任仍心有余悸。面对如此复杂且棘手的病情，器官移植科联动感染性疾病科、重症医学科、药学部、血液内科、眼科、消化内科等多个科室展开多学科会诊。各科室专家凭借丰富经验与专业知识，为患者制定并不断调整个性化治疗方案。感染科和药学部精准把控抗感染药物的使用，在避免不良反应的同时确保有效治疗效果；器官移植科全力维持患者肾功能稳定，为全身治疗提供坚实基础；眼科专家密切关注视网膜情况，评估并适时采取干预措施；消化内科针对重症胰腺炎制定科学的治疗与护理方案，缓解炎症反应。这期间，主管医生张成钧副主任医师和付晓华主治医师全心投入、日夜坚守，全程密切监测病情的点滴变化，无私奉献了节假日和夜间休息时间；护理团队也专门为小高制定了个性化护理方案，全体护理人员齐努力，共同为小高的生命安全护航。&lt;/p&gt;
+
+&lt;p&gt;　　历时130天，小高的病情终于逐渐稳定，各项指标趋于好转，最终脱离生命危险，顺利出院。在长达130天的漫长日子里，我们经历了多少次惊心动魄的瞬间，目睹了病情一次次恶化又奇迹般好转，经历了十余次多学科团队的紧急会诊，更见证了医护人员夜以继日的守护与陪伴。这130天，是医护团队与小高父母共同倾注无数心血与爱的日子，是他们用坚守和希望，为生命书写了最动人的篇章。&lt;/p&gt;
+
+&lt;p&gt;　　日前，小高身体状态良好，肾脏功能稳定，恢复了花季少女的生动与活泼，她已经重回大学校园，追逐自己的梦想。“小高回来复查时，从来不喊我们‘医生’或‘主任’，而是亲切地喊我们‘叔叔’，一声叔叔足以让我的心儿融化，患者把我们当作亲人了，有什么理由不全力以赴”，于胜强主任深情地说。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;　　用心守护，多次创造生命奇迹&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;　　像小高一样，肾移植术后合并肺部感染入院的患者并不少见。但烟台毓璜顶医院器官移植科联合多学科精心守护，屡次创造生命的奇迹，助力患者转危为安。&lt;/p&gt;
+
+&lt;p&gt;　　陈先生肾移植术后已超过17年，身体状况相对稳定。但由于长期口服免疫抑制药物带来的免疫抑制，日前因移植肾功能不全合并肺部感染入院。入院检查显示，陈先生存在双侧重症肺炎合并心功能不全、下肢静脉血栓，营养状态极差。因病情极为复杂，住院期间，陈先生曾5次被转入重症医学科抢救。&lt;/p&gt;
+
+
+
+&lt;p&gt;　　患者为器官移植科送来感谢锦旗&lt;/p&gt;
+
+
+
+&lt;p&gt;　　患者为器官移植科送来自己制作的文创作品&lt;/p&gt;
+
+&lt;p&gt;　　为保障患者的生命安全，器官移植科联合重症医学科、心血管内科、呼吸内科、血管外科、营养科等多学科团队迅速投入“战斗”。呼吸内科针对陈先生的重症肺炎制定了精准的抗感染与呼吸支持方案，改善患者的呼吸功能；心内科积极调控心功能，保障其心脏泵血功能稳定；血管外科密切监测下肢静脉血栓情况，预防其因血栓脱落引发的严重并发症；营养科则根据患者身体状况，制定了全面的营养支持计划，逐步改善其营养状态。尽管治疗期间几经波折，但多学科团队始终坚守不放弃，他们凭借着丰富的临床经验和顽强的毅力，一次次将患者从死亡边缘拉回，最终陈先生顺利康复出院。&lt;/p&gt;
+
+&lt;p&gt;　　一次次生命接力的背后，凝结着太多医护人员的心血与付出。在这一场场与死神的赛跑中，烟台毓璜顶医院器官移植科勇于担当，与各科室紧密配合，凭借过硬的技术和高度的责任感，突破了重重医学难关，尽心竭力守护患者的生命健康。2024年，毓璜顶医院器官移植科治疗肾移植术后重症肺炎的成功率达到100%，不仅彰显了烟台毓璜顶医院多学科协作的雄厚实力，也为今后同类疾病的治疗积累了宝贵经验。&lt;/p&gt;
+
+&lt;p&gt;　　&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>胶东在线</author><pubDate>Fri, 28 Feb 2025 06:51:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTFBCSkZYZEtfY3VqMl8tUzZVZmlWMDVUcXBpZ3QyN3Q0RThfZ2l1YS02TS1DTHE1TUItY1J6QUtsU1hLVmdTM1ZTeldsR0MtT3I4bF9hdjYwSlZ0S2J3YWZ4OVNqVVRaOGp2ek9kMEtzTQ</guid></item><item><title>MicroRNA-379-5p：卵巢癌治疗新希望，靶向调控打破化疗困境 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1NRFU1aFpZSmdLMVd0bXltUnNUOXR3elc5WTBETmFINGNoZXc1WW41aDlKUFNUeG1tZ1k4UDEwY2Nyc0J3M09RTVBnczdmLVhYcDVUUHVDUENFSWR2WG43MjYySmNjREpyRGwzWA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决卵巢癌化疗耐药难题，CSIR - 印度化学生物学研究所研究人员开展 miR-379-5p 对卵巢癌作用研究，发现其可抑制癌干细胞、降低顺铂耐药，为治疗提供新策略。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　卵巢癌（Ovarian cancer，OC）作为女性生殖器官中极具侵袭性的恶性肿瘤，严重威胁着女性的生命健康。其 5 年生存率一直处于较低水平，这主要是因为肿瘤容易复发，且癌细胞对化疗药物产生耐药性。癌症干细胞（Cancer stem cells，CSCs）在其中扮演着关键角色，它们不仅具有强大的肿瘤形成能力、自我更新能力，还对常规化疗药物有很强的抗性，就像一群 “顽固分子”，在化疗后存活下来并促使肿瘤复发。&lt;/p&gt;
+&lt;p&gt;目前针对卵巢癌的治疗面临诸多挑战，传统化疗药物虽然能杀死大部分癌细胞，但对 CSCs 却效果不佳。因此，寻找新的治疗靶点和策略成为攻克卵巢癌的关键。&lt;/p&gt;
+&lt;p&gt;在这样的背景下，CSIR - 印度化学生物学研究所（CSIR-Indian Institute of Chemical Biology）的研究人员展开了深入研究。他们将目光聚焦在微小 RNA（MicroRNAs，miRNAs）上，这类小分子 RNA 在生物过程中发挥着重要的调控作用。研究发现，miR-379-5p 在多种癌症中表现出抑制肿瘤的能力，然而其在卵巢癌中的具体作用机制尚不清楚。于是，研究人员针对 miR-379-5p 对卵巢癌 CSCs 的影响及相关机制展开研究。&lt;/p&gt;
+&lt;p&gt;研究人员通过一系列实验，取得了重要成果。相关论文发表在&lt;em&gt;Cell Death and Disease&lt;/em&gt;期刊上。&lt;/p&gt;
+&lt;p&gt;在研究方法上，研究人员主要运用了以下关键技术：首先是细胞实验技术，包括多种卵巢癌细胞系（如 OVCAR3、SKOV3 等）的培养，通过不同的培养条件富集 CSCs。同时，从卵巢癌患者新鲜切除的肿瘤组织中分离和培养肿瘤细胞，这为研究提供了临床样本支持。其次，运用分子生物学技术，如转染 miR-379-5p 模拟物、siRNA 等，改变细胞内相关基因的表达水平；进行实时荧光定量 PCR（qRT-PCR）分析，检测基因和 miRNA 的表达量。此外，还利用了动物实验技术，构建裸鼠异种移植模型，在体内研究 miR-379-5p 对肿瘤生长的影响。最后，通过免疫组化、蛋白质免疫印迹（Western blotting）等技术检测蛋白表达和相关信号通路的变化。&lt;/p&gt;
+&lt;p&gt;下面来看具体的研究结果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;miR-379-5p 在卵巢癌 CSCs 中表达下调&lt;/strong&gt;：通过生物信息学分析多个卵巢癌相关数据集，研究人员发现 miR-379-5p 在卵巢癌组织和 CSCs 富集的球体培养物中显著下调。进一步通过 qRT-PCR 验证，在多种卵巢癌细胞系和患者肿瘤样本来源的球体中，miR-379-5p 的表达量均较低。这表明 miR-379-5p 的下调可能与卵巢癌 CSCs 的维持和增殖有关。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;miR-379-5p 抑制顺铂诱导的 CSC 扩张&lt;/strong&gt;：在体外实验中，过表达 miR-379-5p 可有效减少顺铂处理后卵巢癌细胞系（SKOV3 和 OVCAR3）中 CSCs（CD44&lt;sup&gt;+&lt;/sup&gt;CD117&lt;sup&gt;+&lt;/sup&gt;细胞）的比例。在体内异种移植模型中，过表达 miR-379-5p 的肿瘤异种移植物在顺铂治疗后，肿瘤体积明显缩小，生长受到抑制，且肿瘤组织中 CD44&lt;sup&gt;+&lt;/sup&gt;CD117&lt;sup&gt;+&lt;/sup&gt;细胞数量显著减少。这说明 miR-379-5p 能够抑制顺铂诱导的 CSC 扩张，从而抑制肿瘤生长。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;miR-379-5p 降低卵巢癌 CSCs 的干性并增加其对顺铂的敏感性&lt;/strong&gt;：富集 CSC 群体后发现，过表达 miR-379-5p 可增强卵巢癌 CSCs 对顺铂的敏感性，通过 PI 活死检测和 CFDA/PI 活死成像分析均证实了这一点。同时，miR-379-5p 过表达还降低了 CSC 标记基因（Sox2、Oct4 和 Nanog）的表达。这表明 miR-379-5p 能够促进顺铂对 CSCs 的杀伤作用，降低其干性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAD18 是 miR-379-5p 的直接靶点且在卵巢癌 CSCs 中高表达&lt;/strong&gt;：通过生物信息学预测和双荧光素酶报告基因实验，研究人员证实 RAD18 是 miR-379-5p 的直接靶点。在卵巢癌 CSCs 中，尤其是在 SKOV3、OVCAR3 和 OV2008 CD44&lt;sup&gt;+&lt;/sup&gt;CD117&lt;sup&gt;+&lt;/sup&gt;细胞的球体培养物中，RAD18 表达水平较高。这为后续研究 miR-379-5p 通过调控 RAD18 发挥作用奠定了基础。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;沉默 RAD18 抑制 CSCs 并增强顺铂疗效&lt;/strong&gt;：使用 siRNA 沉默 RAD18 表达后，顺铂诱导的 CSC 富集明显减少，在多种卵巢癌细胞系来源的 CSCs 中，RAD18 缺陷型细胞对顺铂的细胞毒性增加。在体内实验中，RAD18 缺陷型细胞形成的异种移植肿瘤在顺铂治疗后，肿瘤再生较慢，肿瘤负担较低。这说明 RAD18 在调节顺铂诱导的 CSC 富集方面起着重要作用，沉默 RAD18 可增强顺铂对 CSCs 的疗效。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;miR-379-5p 通过调节 RAD18 影响 DNA 修复和突变&lt;/strong&gt;：CSCs 具有较强的 DNA 修复能力，这是其耐药的重要原因之一。研究发现，过表达 miR-379-5p 的细胞在顺铂处理后，γH2AX（DNA 损伤标记物）积累增加，DNA 修复能力受损，且顺铂诱导的突变减少。这表明 miR-379-5p 通过抑制 RAD18 表达，增加 DNA 损伤积累，抑制 DNA 修复和突变。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;miR-379-5p 抑制肿瘤细胞增殖并诱导 DNA 损伤&lt;/strong&gt;：在体内异种移植模型中，过表达 miR-379-5p 的卵巢肿瘤异种移植物在顺铂处理后，肿瘤细胞增殖受到抑制，DNA 损伤积累增加。免疫组化分析显示，肿瘤组织中 γH2AX 积累增多，ki-67（细胞增殖标记物）水平降低。这进一步证明了 miR-379-5p 在体内能够限制卵巢癌的生长。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;miR-379-5p 调节 TLS 通路并诱导 CSCs 凋亡&lt;/strong&gt;：研究表明，miR-379-5p 通过抑制 RAD18，减少了增殖细胞核抗原（PCNA）的单泛素化，从而阻止了跨损伤合成（TLS）聚合酶 Polη 招募到 DNA 损伤位点，抑制了损伤旁路修复。这导致 DNA 损伤持续存在，激活了 p53 介导的细胞周期停滞和凋亡途径。通过蛋白质免疫印迹、免疫荧光染色等实验均证实了这一机制。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;研究结论和讨论部分指出，本研究首次揭示了 miR-379-5p 通过靶向 RAD18/Polη 轴抑制卵巢癌 CSCs 并降低顺铂耐药的新机制。miR-379-5p 的过表达能够抑制 CSCs 的生长和自我更新，增强卵巢癌 CSCs 对顺铂的敏感性，为卵巢癌的治疗提供了新的潜在靶点和策略。这一研究成果有望为克服卵巢癌化疗耐药问题带来新的突破，为开发更有效的卵巢癌治疗方法提供理论依据，在卵巢癌治疗领域具有重要的意义。&lt;/p&gt;
+&lt;p&gt;不过，目前该研究仍存在一些局限性。虽然在细胞实验和动物模型中取得了有意义的结果，但距离临床应用还有一定距离。未来需要进一步开展临床试验，验证 miR-379-5p 在人体中的治疗效果和安全性。同时，还需要深入研究 miR-379-5p 与其他分子之间的相互作用，以及如何更好地将这一研究成果转化为实际的治疗手段，以造福广大卵巢癌患者。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 28 Feb 2025 06:50:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1NRFU1aFpZSmdLMVd0bXltUnNUOXR3elc5WTBETmFINGNoZXc1WW41aDlKUFNUeG1tZ1k4UDEwY2Nyc0J3M09RTVBnczdmLVhYcDVUUHVDUENFSWR2WG43MjYySmNjREpyRGwzWA</guid></item><item><title>如何准确观察小胶质细胞在三维脑组织中的动态？DeepCellMap给出答案 - 机器之心</title><link>https://news.google.com/rss/articles/CBMiXEFVX3lxTE83ZVVncG1TY1Jud3NpY0RCdGFjbnBZNnFoZGQ3MG9rci0yRFFjSkhqRFN5Y3Z6NnVweEZZTGpCMUdLb2xiNmFwamVhejBWMUdYbm5IVVlHa3lRRmls?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" id="js-article-content"&gt;&lt;p&gt;编辑 | 2049&lt;/p&gt;&lt;p&gt;在人类大脑发育过程中，数万亿神经元与胶质细胞形成复杂网络，而小胶质细胞作为中枢神经系统的免疫哨兵，其空间分布与功能动态直接影响神经回路的形成与重塑。&lt;/p&gt;&lt;p&gt;传统组织学分析方法受限于手动标注的低效性和二维图像的局限性，难以揭示细胞在三维组织中的动态互作规律。尤其在病理条件下，如母体感染 SARS-CoV-2 引发的胎儿脑出血，小胶质细胞如何响应血管损伤仍需深入解析。&lt;/p&gt;&lt;p&gt;针对这一挑战，来自巴黎高等师范学院生物研究所 Institut de Biologique de l’École Normale Supérieure ，IBENS)的研究团队开发了 DeepCellMap——一个融合深度学习与空间统计的开源分析平台。该工具通过自动化细胞分类与多尺度空间关联分析，首次实现了人类发育脑组织中小胶质细胞形态多样性及其空间网络的系统解析。&lt;/p&gt;&lt;p&gt;该研究以「&lt;em&gt;Unraveling microglial spatial organization in the developing human brain with DeepCellMap, a deep learning approach coupled with spatial statistics&lt;/em&gt;」为题，发表于 2025 年 2 月 13 日的《&lt;em&gt;Nature Communications&lt;/em&gt;》。&lt;/p&gt;&lt;p&gt;论文链接：&lt;em&gt;https://www.nature.com/articles/s41467-025-56560-z&lt;/em&gt;&lt;/p&gt;&lt;p&gt;代码地址：&lt;em&gt;https://github.com/holcman-lab/DeepCellMap&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;研究背景&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;小胶质细胞起源于卵黄囊前体细胞，在胚胎发育第 4 周迁入人脑，通过增殖、迁移和凋亡动态塑造神经发育微环境。&lt;/p&gt;&lt;p&gt;其形态从阿米巴状（amoeboid）到高度分枝的稳态型（ramified），直接反映功能状态的转变：吞噬凋亡细胞、修剪冗余突触或响应病理信号。&lt;/p&gt;&lt;p&gt;尽管啮齿类模型已揭示小胶质细胞的发育规律，但人类脑组织的复杂性与伦理限制导致相关研究长期滞后。&lt;/p&gt;&lt;p&gt;现有技术瓶颈集中在三方面：其一，传统形态分类依赖人工标注，难以处理全脑切片的海量数据；其二，荧光与明场成像的细胞分割算法在人类组织中的应用尚不成熟；其三，空间统计方法多局限于肿瘤等局部病变分析，缺乏针对发育动态的定量框架。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;核心理念与算法架构&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;DeepCellMap 将 U-Net 驱动的细胞分类与广义空间统计方法有机结合。&lt;/p&gt;&lt;p&gt;其流程分为三阶段：&lt;/p&gt;&lt;p&gt;首先，通过自适应阈值分割与形态学操作提取细胞轮廓；&lt;/p&gt;&lt;p&gt;其次，基于 5.5 万张标注图像训练深度网络，将小胶质细胞分为增殖型（proliferative）、吞噬型（phagocytic）、聚集型（aggregated）、阿米巴型（amoeboid）与分枝型（ramified）五类，分类 F1 分数达 81%；&lt;/p&gt;&lt;p&gt;最后，通过改进的 Ripley's K 函数与 DBSCAN 聚类算法，量化细胞-细胞及细胞-脑区边界的空间关联。&lt;/p&gt;&lt;section&gt;图示：DeepCellMap 原理。（来源：论文）&lt;/section&gt;&lt;p&gt;为克服分类误差对统计结果的干扰，研究团队提出概率加权校正模型。通过构建混淆矩阵，系统评估形态分类的不确定性，并在空间关联分析中引入概率权重。&lt;/p&gt;&lt;p&gt;合成数据验证显示，未校正时关联距离误差可达 400 像素，而校正后误差降至 5% 以内。&lt;/p&gt;&lt;p&gt;这种统计鲁棒性使其能够精准识别如增殖型与吞噬型细胞的紧密耦合（平均距离 68 μm），以及聚集型细胞对脑区边界的特异性趋近（202 μm）。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;发育脑中的空间动态图谱&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;应用 DeepCellMap 分析 17-20 孕周人脑组织发现，不同脑区的小胶质细胞呈现显著异质性。&lt;/p&gt;&lt;p&gt;在神经节隆起中，阿米巴型细胞占比从 17 孕周的 32% 升至 20 孕周的 51%，提示其作为迁移前体的功能；而纹状体与皮层则以分枝型细胞为主（&amp;gt;65%），符合区域成熟度差异。&lt;/p&gt;&lt;p&gt;空间关联分析进一步揭示，吞噬型、增殖型与聚集型形成紧密的功能单元，其互作频率是其他类型的 2-3 倍，提示其可能在凋亡清除与组织重塑中发挥协同作用。&lt;/p&gt;&lt;p&gt;图示：追踪不同脑区的小胶质细胞定植情况。（来源：论文）&lt;/p&gt;&lt;p&gt;DBSCAN 聚类分析显示，吞噬型与分枝型细胞更倾向形成稳定集群（65% 细胞聚集成簇），而阿米巴型仅 46% 形成松散集群。&lt;/p&gt;&lt;p&gt;随着发育推进，不同形态细胞的领地重叠度逐渐降低，至 20 孕周时分枝型集群内其他类型细胞占比不足 10%。&lt;/p&gt;&lt;p&gt;这种空间分离可能由增殖依赖性空间占据机制驱动，与小鼠研究中观察到的微胶质细胞通过增殖实现空间分布的规律形成跨物种呼应。&lt;/p&gt;&lt;p&gt;图示：神经节突起中的细胞群重叠。（来源：论文）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;病理条件下的功能重塑&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在母体感染 SARS-CoV-2 的胎儿脑样本中，DeepCellMap 揭示了小胶质细胞与血管的异常互作。与对照组相比，感染组中 50% 的小胶质细胞呈现 CD68+ 溶酶体活性标记（IBA1+CD68+），且其与血管的最近邻距离缩短 23%。&lt;/p&gt;&lt;p&gt;空间聚类分析显示，溶酶体活化的小胶质细胞在出血区域形成紧密聚集，而血管完整性标记 claudin-5 的丢失提示其可能参与血脑屏障修复或损伤加剧的双向调控。这一发现为理解病毒垂直传播的神经病理机制提供了新视角。&lt;/p&gt;&lt;p&gt;图示：DeepCellMap 应用于 SARS-CoV-2 (COVID19) 胎儿人脑共聚焦数据。（来源：论文）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;未来展望&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;DeepCellMap 建立了首个针对人类发育脑的多尺度空间分析框架，其开源特性将推动神经发育与疾病研究的范式转变。&lt;/p&gt;&lt;p&gt;当前局限主要集中于三维重建能力不足，未来整合光片显微与空间转录组技术有望突破此瓶颈，揭示小胶质细胞的迁移轨迹与分子调控网络。&lt;/p&gt;&lt;p&gt;研究团队特别指出，算法在低密度脑区的分类精度仍需提升，且需扩展至更多病理模型验证其普适性。&lt;/p&gt;&lt;p&gt;随着空间组学技术的爆发式发展，DeepCellMap 或将成为解析脑细胞互作网络的关键工具，为神经免疫研究开辟新的探索维度。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>机器之心</author><pubDate>Fri, 28 Feb 2025 04:34:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE83ZVVncG1TY1Jud3NpY0RCdGFjbnBZNnFoZGQ3MG9rci0yRFFjSkhqRFN5Y3Z6NnVweEZZTGpCMUdLb2xiNmFwamVhejBWMUdYbm5IVVlHa3lRRmls</guid></item><item><title>这种癌死亡率10年暴增44%-中国瞭望 - 焦点新闻</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE1UWlByMVlQVTZJOS0zWmxLZG9peTFkSF9mSGVESnI5Y3U2c0ZOUFVOWUZTYmNQcEJ4bTZCT09ENFVrVTN0Z2FETUJRelNEODhNbTF6YWxSVDNQVXktV2Fwb2ZYekhLZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="newsContent"&gt;&lt;p&gt;摄护腺癌（又称前列腺癌）堪称年长男性健康的隐形杀手，不少患者出现症状并就医时，已经进入病程晚期。 &lt;/p&gt;&lt;p&gt;医生建议，50岁以上男性每年进行“PSA筛检”，具有摄护腺癌家族病史者，则提前至45岁开始，及早掌握自己的摄护腺癌风险，平时则要留意自己是否出现排尿习惯变化，并在发现异常时及时就医。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;据统计，摄护腺癌个案年龄中位数为72岁，其死亡率在过去十年间增加44%，现已成为全国癌症死亡率第五名。 而根据最新癌症登记报告，摄护腺癌的发生率持续攀升，已经成为男性癌症发生率第三名，2022年确诊个案数达9062例，年增长率高达21%，为所有癌症之冠。&lt;/p&gt;&lt;p&gt;台湾泌尿科医学会理事长查岱龙表示，早期摄护腺癌通常没有明显症状，因此患者多半在出现排尿异常、夜间频尿或背部疼痛时才就医，因此台湾有约33%患者在确诊时是已经出现远端转移的第四期，相较于美国的8%高出甚多，推估与台湾摄护腺癌筛检不够普及有关。&lt;/p&gt;&lt;p&gt;他说，摄护腺癌的风险因素包括年龄、家族病史、肥胖与饮食习惯，男性50岁后罹患摄护腺癌的风险会大幅提升，此外，国内研究也发现，若家族中有父亲或兄弟曾罹患摄护腺癌，个人罹癌风险将提高3.9倍。&lt;/p&gt;&lt;p&gt;台湾泌尿科医学会泌尿肿瘤委员会主任委员吴俊德表示，早期摄护腺癌患者若医生评估风险较低，可能采取积极追踪、手术或放射线治疗，若病程已发展至末期，则需要全身性的治疗，目前以荷尔蒙疗法为主，但部分患者会在2到3年后出现“转移性去势性摄护腺癌（mCRPC）”。 mCRPC患者过去只能寻求第2线的标靶、化疗等，但近年来已有新型抑制剂，配合新一代荷尔蒙疗法，可提升转移性去势性摄护腺癌患者整体存活期近9个月，延长患者寿命。&lt;/p&gt;&lt;p&gt;查岱龙提醒，摄护腺癌可通过抽血进行PSA筛检早期发现，建议年满50岁以上男性应每年1次，有家族史者则建议45岁就养成每年筛检的习惯，相关数值务必经过泌尿科专科医生说明，以及早评估罹病风险。&lt;/p&gt;&lt;/div&gt;
 
       &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>焦点新闻</author><pubDate>Fri, 28 Feb 2025 02:43:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE1UWlByMVlQVTZJOS0zWmxLZG9peTFkSF9mSGVESnI5Y3U2c0ZOUFVOWUZTYmNQcEJ4bTZCT09ENFVrVTN0Z2FETUJRelNEODhNbTF6YWxSVDNQVXktV2Fwb2ZYekhLZw</guid></item><item><title>鼻内给予抗 CD3 单克隆抗体：创伤性脑损伤治疗的新希望 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9NRm5JelZGcWlYOGRyT0pRSmxHVERTYjZnQTRmT2F0WWR6N1ZYRXctbno5d3U4aUdrMmZaRTc4V2tDYUljUFA3MktpTG5tV0UtcU12Y2VSY1dKVXVRRzNzNmgzeWZkQ3dqeGtldg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
@@ -837,29 +930,4 @@
 
         &lt;p class="gd"&gt;点击加载更多&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东南网</author><pubDate>Thu, 27 Feb 2025 08:55:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiY0FVX3lxTE14dmhDUnRNd3lVN3FnT1NSaWF1UHZ5XzRDVlFVYmFPVmh2Y0JVcE9xR1lwQmFIRVM3bFFRQ0lzRzFNdWw1TGtkajVOcVF1dHlIcVVJM21YVk13akIyY1ZiTEZXcw</guid></item><item><title>美国得州麻疹疫情蔓延 一名儿童死亡 - China Daily</title><link>https://news.google.com/rss/articles/CBMifEFVX3lxTE5MM1otdjFva2V0aHI1dm52SVNlRGFDN0F0LXZnR19zaFFucVBNZ2hISi04a3o2WFAtOWJBTDYtemJTZmxvSUpQamFaTUo4cmUwWnJUNGoxbFdrcE5QTlp2eE1pbGFjaGpTTG9YR0NkZnFGaVJEa3F4cWRHdUI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Content"&gt;
-              
-              
-              &lt;p&gt;新华社洛杉矶2月26日电（记者谭晶晶）美国得克萨斯州卫生服务部26日发布公报说，该州近期暴发麻疹疫情，确诊病例已超过百例，其中一名儿童死亡。据多家美国媒体报道，这是美国2015年以来首次报告麻疹死亡病例。&lt;/p&gt;
-&lt;p&gt;公报说，自今年1月下旬以来，得州共报告124例麻疹确诊病例，18人因病住院。本轮疫情中的首例死亡病例是一名未接种过麻疹疫苗的学龄儿童，这名儿童数天前在该州拉伯克市因病住院，麻疹病毒检测结果呈阳性。&lt;/p&gt;
-&lt;p&gt;得州卫生服务部说，该州所有确诊病例中有5人曾接种过麻疹疫苗，其余人未接种过麻疹疫苗或疫苗接种情况不明。由于麻疹传染性很强，预计疫情暴发地区及周边社区会出现更多感染病例。&lt;/p&gt;
-&lt;p&gt;麻疹是一种由麻疹病毒引起的急性出疹性呼吸道传染病，主要经呼吸道飞沫传播和气溶胶传播。感染者在接触病毒后一到两周内会出现症状。早期症状包括高烧、咳嗽、流涕、眼睛发红、流泪等，数天后头面部会出现皮疹，并向下蔓延至身体其他部位。麻疹病情严重时可引发肺炎等并发症，甚至导致死亡。&lt;/p&gt;
-&lt;p&gt;得州卫生服务部表示，预防麻疹的最佳方法是接种两剂麻疹疫苗，该疫苗主要以麻疹、腮腺炎、风疹三联疫苗的形式接种。接种麻疹疫苗可显著降低感染风险，并减轻感染症状。&lt;/p&gt;
-               
-              
- &lt;p id="prope"&gt;
-          
-        &lt;/p&gt;
-              
-      
-    
-              &lt;p class="selectpage"&gt;
-                
-                
-              &lt;/p&gt;
-              &lt;p class="Artical_ZB"&gt;
-                【责任编辑：徐子茗】
-              &lt;/p&gt;
-
-            &lt;/div&gt;
-            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>China Daily</author><pubDate>Thu, 27 Feb 2025 07:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE5MM1otdjFva2V0aHI1dm52SVNlRGFDN0F0LXZnR19zaFFucVBNZ2hISi04a3o2WFAtOWJBTDYtemJTZmxvSUpQamFaTUo4cmUwWnJUNGoxbFdrcE5QTlp2eE1pbGFjaGpTTG9YR0NkZnFGaVJEa3F4cWRHdUI</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东南网</author><pubDate>Thu, 27 Feb 2025 08:55:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiY0FVX3lxTE14dmhDUnRNd3lVN3FnT1NSaWF1UHZ5XzRDVlFVYmFPVmh2Y0JVcE9xR1lwQmFIRVM3bFFRQ0lzRzFNdWw1TGtkajVOcVF1dHlIcVVJM21YVk13akIyY1ZiTEZXcw</guid></item></channel></rss>
