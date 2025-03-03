@@ -2,7 +2,35 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>一文看透：人形机器人电机驱动产业链 - 风闻</title><link>https://news.google.com/rss/articles/CBMiW0FVX3lxTE41bFlVR3NOZjB6VFVWYnFoOWVyLWZjZnhTaW41NmpkMUlqNks0dkRobzhlMlNiTkNWakRKOXhTYWZUVXB4MGVKY3E5NUpWS0plak8wRU1JVTZvVnM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
 							&lt;p&gt;电子发烧友网报道（文 / 吴子鹏）根据国家市场监管总局数据，2024 年全国新注册智能机器人相关企业 124,839 家，连续两年超过 10 万家。截至 2024 年年底，全国共有 45.17 万家相关企业。自 2024 年下半年起，国内人形机器人产业热潮开启，越来越多机器人公司将业务聚焦于人形机器人领域。数据显示，截至 2024 年 11 月底，全国人形机器人相关企业数量达 6.7 万家，其中整机企业超 80 家。较具代表性的企业有优必选、宇树科技（Unitree）、智元机器人、傅利叶智能和众擎机器人等，这几家代表公司的情况如下表所示。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073648178.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;从时间线来看，国内人形机器人起步相对较晚，部分标志性成果的实现也晚于美国波士顿动力和特斯拉等公司。不过，从近期发展速度来看，国产人形机器人大有迎头赶上之势，这离不开背后产业链生态的支持。具体而言，人形机器人产品链主要涵盖以下几部分：上游的基础组件和软件，中游的整机制造，以及下游的应用。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649357.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;图源：赛迪顾问《先进制造 2024》&lt;/p&gt;&lt;p&gt;目前，人形机器人已有众多成熟应用案例。例如，优必选 Walker 系列人形机器人已在众多工厂 “实习”，包括代工厂和汽车制造厂。另外，优必选 Walker X 机器人能够陪伴老人，辅助老人上厕所、协助吃饭，还可打扫房间、做饭等；乐聚 “夸父” 机器人能根据衣物种类材质选择洗涤程序、自动投放洗衣液柔顺剂来洗衣，能智能感应植物需求进行浇花插花，并且能自动识别衣物类型大小完成晾衣任务。&lt;/p&gt;&lt;p&gt;整机和应用成果不断涌现，离不开上游硬件和软件的持续进步。人形机器人上游的硬件可进一步细化为：精密减速器、伺服电机、丝杠、传感器、电池、电子元器件，具体如下图所示。&lt;/p&gt;&lt;p&gt;能够看出，丝杠（19%）、伺服电机（16%）、减速器（13%）、传感器（11%）是人形机器人中价值量占比较高的环节，合计占比近 60%。此前我们在文章中梳理了人形机器人的 IMU 芯片供应，此次我们重点关注电机驱动环节。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649786.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;人形机器人里的电机驱动系统&lt;/p&gt;&lt;p&gt;伺服电机是运动控制的核心部件，能将电信号转化为精确的机械运动，为人形机器人的关节提供动力，使其实现各种灵活动作，具有高精度、高速度、高扭矩等特点。从电机类型来看，人形机器人所用到的电机包括传统伺服电机（如直流伺服电机和交流伺服电机），以及特种伺服电机（如无框力矩电机和空心杯电机）。&lt;/p&gt;&lt;p&gt;其中，传统直流伺服电机包括永磁直流伺服电机、换流式伺服电机、永磁无刷直流伺服电机等，以精准控制和高响应速度见长，适用于机器人关节驱动；交流伺服电机分为永磁型（高转矩、高响应）和感应型（高负载能力），支持高速、高精度控制，适配人形机器人四肢及躯干驱动，满足机器人复杂运动需求；无框力矩电机结构紧凑、功率密度高，适合用于人形机器人的关节部位，可直接集成到关节模块中，减少空间占用，提高机器人的灵活性；空心杯电机具有体积小、重量轻、响应速度快、效率高等优点，常用于对空间和重量要求较高的小型人形机器人或机器人的小型关节。&lt;/p&gt;&lt;p&gt;如下图所示，人形机器人电机驱动系统的基本构成大致分为三部分，包括电机本体、驱动系统和编码器。其中，驱动系统主要包括控制芯片、电源模块、信号采集模块、功率放大器、过热保护电路和控制面板等。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649484.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;人形机器人的电机控制&lt;/p&gt;&lt;p&gt;作为控制系统核心，控制芯片负责数据采集、信号处理及指令下发，，用于协调多关节协同运动。目前，专用于人形机器人电机控制的芯片并不多，大部分还是采用通用的 MCU 作为驱动芯片的主控芯片，区别在于集成度的高低。据统计，单台机器人需 30 - 40 颗高端 32 位 MCU。在此，我们不再汇总通用 MCU，而是关注实时控制 MCU 以及人形机器人电机驱动专用芯片。&lt;/p&gt;&lt;p&gt;国际厂商的实时控制 MCU 主要有以下几款，分别是 TI C2000、ST STM32G4、瑞萨 RA8系列和英飞凌 PSOC 系列，它们的具体情况如下：&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649486.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;能够看到，TI 公司的 C2000 系列和 ST 公司的 ST STM32G4 系列都直接面向伺服驱动和电机控制。&lt;/p&gt;&lt;p&gt;在这方面，国内公司也取得了一些具体进展。例如，极海的 G32R501 系列 MCU，基于 Arm® Cortex® - M52 双核架构，集成 Helium 技术，具备高实时算力与灵活控制外设，支持复杂算法的高速运算，适用于人形机器人关节控制器与灵巧手控制。&lt;/p&gt;&lt;p&gt;先楫半导体的HPM6E00系列‌、HPM6E8Y系列‌等，其中HPM6E8Y系列是该公司在2025年CES展会上发布的‌最新一代机器人专用MCU‌，专为关节控制与伺服电机优化。HPM6E8Y系列内置 RISC-V 双核，主频高达 600MHz，性能达到 3390CoreMark™的基准测试分数，具备 1710DMIPS 的处理能力。同时，HPM6E8Y系列集成 2 个以太网 PHY 收发器，支持 EtherCAT 从控制器，集成3个TSN千兆以太网端口和32通道高分辨率PWM输出，支持毫秒级实时通信与精准运动控制，适用于紧凑型伺服驱动系统。‌&lt;/p&gt;&lt;p&gt;兆易创新 GD32F4 系列 MCU 和 GD32E5 系列 MCU，前者采用 Cortex - M4 内核，主频达 240MHz，集成硬件 DSP 指令集和浮点运算单元（FPU），支持高精度电机控制算法（如 PID、FOC），适配工业机器人伺服电机驱动；后者搭载 Cortex - M33 内核（180MHz），配备硬件三角函数加速器和高精度定时器，优化电机控制闭环运算效率，有助于降低系统延迟。&lt;/p&gt;&lt;p&gt;除了这三家，纳芯微的 NS800RT 系列实时控制 MCU 也值得关注，包括 NS800RT5039、NS800RT5049 和 NS800RT3025，分别采用单颗主频为 260MHz 和 200MHz 的 Arm Cortex - M7 内核，支持分支预测、DSP 指令集和 FPU。该系列产品可用于光伏 / 储能逆变器、不间断电源、工业自动化、协作机器人、新能源汽车大 / 小三电、空调压缩机等系统，纳芯微工作人员此前也透露，人形机器人是该公司实时控制 MCU 重要的目标市场。&lt;/p&gt;&lt;p&gt;当然，也有公司专门推出针对人形机器人电机驱动的芯片，比如芯朋微。该公司针对驱动无刷直流电机（BLDC）和微步进电机都推出了相关的专用芯片。其中，用于 BLDC 的专用芯片，能实现对电机的高效控制，具有高集成度、低功耗等特点，可精确控制电机的转速、转向和扭矩；用于微步进的专用芯片能够实现电机的微步细分控制，提高电机的定位精度和运行平稳性。&lt;/p&gt;&lt;p&gt;人形机器人电机驱动里的功率器件&lt;/p&gt;&lt;p&gt;在电机驱动系统里，功率器件也至关重要。例如，相关统计数据显示，在人形机器人中，每个机电执行器一般需 1 - 2 颗 IGBT 芯片来驱动，能快速开关，控制电机的功率输出，实现电机的高效驱动。&lt;/p&gt;&lt;p&gt;当然，由于人形机器人最终用途的差异，厂商在选择 IGBT 芯片时可能会在品质上有所区分，比如工规级或者消费级，下面我们来看一些代表性的产品。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649192.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;除了 IGBT，MOSFET 在人形机器人中的应用范围更为广泛。MOSFET 高频特性好、驱动功率小、导通电阻低，在小型关节电机和步进电机控制中有关键作用。例如，在小型关节电机里，MOSFET 可以组成 H 桥电路或半桥电路，通过控制电机的正反转和转速，实现这些小型关节的精细动作，如抓取物体、进行精细操作等。比较有代表性的产品包括：&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649712.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;人形机器人电机驱动里的编码器&lt;/p&gt;&lt;p&gt;最后看一下编码器，在人形机器人电机驱动中，编码器能够为电机控制提供关键的反馈信息，从而实现精确的运动控制。具体而言，编码器主要实现三大类功能：&lt;/p&gt;&lt;p&gt;其一是位置反馈，编码器可以实时监测电机轴的位置，将位置信息反馈给电机控制器。控制器根据反馈的位置信息，调整电机的驱动信号，使电机准确地运行到目标位置，从而实现人形机器人各关节的精确定位和运动控制。&lt;/p&gt;&lt;p&gt;其二是速度反馈，通过测量编码器输出脉冲的频率，可以计算出电机的转速，电机控制器根据速度反馈信息，调节电机的驱动电流，使电机保持稳定的转速，确保人形机器人的运动平稳、流畅。&lt;/p&gt;&lt;p&gt;其三是闭环控制，编码器为人形机器人电机驱动系统提供了闭环控制所需的反馈信息，使系统能够实时调整控制策略，补偿外界干扰和系统误差，提高系统的控制精度和稳定性。&lt;/p&gt;&lt;p&gt;目前，人形机器人领域一些常用的编码器如下图所示：&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649287.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;人形机器人电机驱动系统后续的发展趋势&lt;/p&gt;&lt;p&gt;目前，人形机器人市场还处于发展早期，电机驱动的用量也无法与传统汽车、工业市场相比。统计数据显示，2024 年中国人形机器人电机驱动市场规模 0.54 亿元，其中无框力矩电机规模 0.28 亿元，空心杯电机规模 0.26 亿元；预计 2025 年中国人形机器人电机驱动市场规模 1.18 亿元，其中无框力矩电机规模 0.61 亿元，空心杯电机规模 0.56 亿元。&lt;/p&gt;&lt;p&gt;不过，后续随着人形机器人量产数量指数级提升，电机驱动产品也将从中受益。那么，后续应用于人形机器人的电机驱动系统会有哪些发展趋势呢？我们总结了以下几点。&lt;/p&gt;&lt;p&gt;首先是更高的精度和响应速度，随着应用场景对人形机器人动作精度要求的提高，电机控制需要达到更高的精度。如在一些需要精细操作的任务中，如抓取易碎物品、进行微创手术辅助等，要求电机能精确控制扭矩和位置。同时，为了使机器人能够更自然流畅地运动，快速躲避障碍物或对外部刺激做出快速反应，电机的响应速度也将不断提升，比如从接收到指令到开始动作的时间将缩短至毫秒级甚至更短。&lt;/p&gt;&lt;p&gt;其次是集成化与小型化，为了满足人形机器人对空间和重量的严格要求，电机控制硬件将越来越集成化和小型化。将电机、驱动器、传感器和控制器等集成在一起，形成高度集成的关节模块，减少布线和连接部件，提高系统的可靠性和紧凑性。&lt;/p&gt;&lt;p&gt;第三是与 AI 深度融合，将人工智能算法，如深度学习、强化学习等融入电机控制中，使机器人能够根据环境和任务的变化自主学习和优化运动控制策略。例如，机器人在不同的地形行走或执行不同的任务时，能通过学习不断调整电机的控制参数，以实现最佳的运动效果。&lt;/p&gt;&lt;p&gt;最后是多模态感知融合控制，结合视觉、力觉、触觉等多种传感器的信息，实现多模态感知融合控制。比如机器人在抓取物体时，不仅依靠视觉确定物体的位置和形状，还通过力觉反馈精确控制电机施加的力，避免用力过度或不足。&lt;/p&gt;&lt;p&gt;下期我们将系统性地为大家盘点一些人形机器人在传感器方面的应用、产品和厂商情况。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/03/03/20250303073649115.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;声明&lt;/strong&gt;：本文由电子发烧友原创&lt;/p&gt;													&lt;/div&gt;
 						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Mon, 03 Mar 2025 04:13:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE41bFlVR3NOZjB6VFVWYnFoOWVyLWZjZnhTaW41NmpkMUlqNks0dkRobzhlMlNiTkNWakRKOXhTYWZUVXB4MGVKY3E5NUpWS0plak8wRU1JVTZvVnM</guid></item><item><title>联想大秀实力！展示全球首款外折屏PC：13英寸秒变18.1英寸 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DYmEyNnBwYTR0Y2t0TXpUTXRFWEpWdTFIaWZEVEpNTW1fcHVlMDVGb1Q2RHMxcHFVem5CVmVPaEZpM1l0Zy12b3k3WXBDN0MzQlU0QmZBT3Q?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Mon, 03 Mar 2025 04:13:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE41bFlVR3NOZjB6VFVWYnFoOWVyLWZjZnhTaW41NmpkMUlqNks0dkRobzhlMlNiTkNWakRKOXhTYWZUVXB4MGVKY3E5NUpWS0plak8wRU1JVTZvVnM</guid></item><item><title>亲手毁了台湾的核计划，台学者张宪义：都是中国人，不应使用核武器 - 凤凰网</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE9iYThSNWkzemhfOGtXblQwMGg3TmxfdGpxRUhyc2lnRmpKUWZ4N2hDT254cFdmMmk5dlVjaEZIcGZJTVQ0VFctdlJfeHY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;海峡导报综合报道 台“中科院”核研所前副所长张宪义上校1984年被美国中情局（CIA）吸收为线人，向美国泄露台湾核武发展细节，导致计划在美国施压下被迫中止。美国有线电视新闻网（CNN）3月1日刊出对他的专访，张宪义说“我问心无愧”，当年的抉择绝非背叛，因为他认为两岸同属中国人，使用任何致命武器都不合理。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/100D75805FD48AEBFE25E69AF249F028C483F657_size93_w960_h1178.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;台当局于1966年启动核计划，由隶属于台军方的“中科院”进行核能相关研究。张宪义毕业于台陆军理工学院物理系，1969年赴美国田纳西大学攻读核工程硕博士。尽管台当局对外宣称发展核能仅限于民用，张宪义受访时说，赴美的台湾学生都心知肚明，真正的任务是学习开发武器。&lt;/p&gt;&lt;p&gt;张宪义在1969或1970年接获神秘来电，对方自称有意投入核能产业，邀请张共进午餐。然而，张宪义并未察觉来电与中情局的关联，直到多年后才明白其真实身份。1977年张宪义取得博士学位，返台加入“中科院”第一所（核能研究所），负责开发核爆模拟程式。&lt;/p&gt;&lt;p&gt;他坦言两岸之间确实存在政治纷争，但是“我认为我们都是中国人，使用任何致命化学武器或核武都不合理”。&lt;/p&gt;&lt;p&gt;1986年，俄罗斯发生切尔诺贝利核灾，数十万人遭受辐射污染，这项意外再度强化张宪义的信念，“必须停止台湾核武计划”。张氏夫妇与子女1988年1月在中情局安排下秘密离台、前往美国。美国政府利用蒋经国去世后的变局，施压李登辉终止核计划。数月后，美方派员拆除台湾的钚分离厂，并移除重水及使用后燃料，确保台湾无法继续推动核武器研发。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Mon, 03 Mar 2025 04:07:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9iYThSNWkzemhfOGtXblQwMGg3TmxfdGpxRUhyc2lnRmpKUWZ4N2hDT254cFdmMmk5dlVjaEZIcGZJTVQ0VFctdlJfeHY</guid></item><item><title>中国首个AI原生IDE！字节跳动发布AI编程工具Trae：深度理解中文 支持一句话开发应用 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9GQ2dicDJLbUNVaE4xU1NFQmlpTm1Hb0VtMTF0TkJYUEVrd25pbDNnUGNhQ0JicUdOR0NTYUZhWXgydFFWdXZfc054QXJZbDBKZUMzUk5HR3c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月3日消息，今日，&lt;span&gt;&lt;strong&gt;字节跳动正式发布中国首个AI原生集成开发环境工具（AI IDE）——AI编程工具Trae国内版。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据悉，&lt;strong&gt;该工具模型搭载doubao-1.5-pro，支持切换满血版DeepSeek R1&amp;amp;V3。&lt;/strong&gt;能充分释放AI的潜力，帮助各阶段开发者与AI流畅协作，更快、更高质量地完成编程工作，提升开发效率。&lt;/p&gt;
+&lt;p&gt;从官方介绍来看，&lt;span&gt;&lt;strong&gt;Trae可深度理解中文开发场景。AI高度集成于IDE环境之中，可带来比AI插件更加流畅、准确、优质的开发体验。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;功能方面，Trae支持实时续写代码、智能排查Bug、自动构建项目、一键预览效果、解答技术难题等等。&lt;/p&gt;
+&lt;p&gt;比如可以对Trae说，“&lt;strong&gt;帮我开发一款天气预报应用” “修复Python脚本中的内存泄漏问题” “优化SQL查询语句，需要提升性能” “帮我搭建一个新闻应用”等等。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;官方表示，通过强大的上下文分析，&lt;strong&gt;Trae可以实时预测和续写你的代码片段，&lt;/strong&gt;快速无缝扩展你未完成的代码，数倍提升你的编码效率。&lt;/p&gt;
+&lt;p&gt;在Builder模式下，Trae会自主拆解需求并自动完成多轮编码任务。从想法描述到功能实现，一气呵成。&lt;/p&gt;
+&lt;p&gt;此外，T&lt;strong&gt;rae可以深入理解你的代码仓库，并深度结合IDE内信息，更准确识别你的需求，为你提供更优质的解决方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你还可以将AI生成的代码一键应用到多个模块&lt;/strong&gt;，还可以随时调整指令，实时预览AI生成代码的前端效果。&lt;/p&gt;
+&lt;p&gt;Gartner曾预测，2028年AI辅助编程渗透率将突破75%，软件开发正进入AI全面赋能时代。&lt;/p&gt;
+&lt;p&gt;Trae国内版发布，意味着字节跳动Trae完成全球AI编程工具市场的覆盖。此前，Trae海外版于今年1月发布，由字节跳动旗下公司SPRING PTE提供服务。&lt;/p&gt;
+&lt;p&gt;目前，Trae已提供Mac、Windows版本下载，Linux版本已开启预约。&lt;a class="f14_link" href="https://www.trae.com.cn/download" target="_blank"&gt;用户可通过Trae中国官网下载体验&lt;/a&gt;。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/008c53cc95844f52a1b77f262da44320.jpg" target="_blank"&gt;&lt;img alt="中国首个AI原生IDE！字节跳动发布AI编程工具Trae：深度理解中文 支持一句话开发应用" h="272" src="//img1.mydrivers.com/img/20250303/s_008c53cc95844f52a1b77f262da44320.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/49c5812481a34934b5566f981febf662.jpg" target="_blank"&gt;&lt;img alt="中国首个AI原生IDE！字节跳动发布AI编程工具Trae：深度理解中文 支持一句话开发应用" h="419" src="//img1.mydrivers.com/img/20250303/s_49c5812481a34934b5566f981febf662.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/224057c0abdb42a781a7b90418e30ee1.jpg" target="_blank"&gt;&lt;img alt="中国首个AI原生IDE！字节跳动发布AI编程工具Trae：深度理解中文 支持一句话开发应用" h="411" src="//img1.mydrivers.com/img/20250303/s_224057c0abdb42a781a7b90418e30ee1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/d5a0c187df7f41f99c4fcc0f96c84120.jpg" target="_blank"&gt;&lt;img alt="中国首个AI原生IDE！字节跳动发布AI编程工具Trae：深度理解中文 支持一句话开发应用" h="343" src="//img1.mydrivers.com/img/20250303/s_d5a0c187df7f41f99c4fcc0f96c84120.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/092c4e896c284f9fb642e9a9f241d351.jpg" target="_blank"&gt;&lt;img alt="中国首个AI原生IDE！字节跳动发布AI编程工具Trae：深度理解中文 支持一句话开发应用" h="338" src="//img1.mydrivers.com/img/20250303/s_092c4e896c284f9fb642e9a9f241d351.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 03 Mar 2025 04:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9GQ2dicDJLbUNVaE4xU1NFQmlpTm1Hb0VtMTF0TkJYUEVrd25pbDNnUGNhQ0JicUdOR0NTYUZhWXgydFFWdXZfc054QXJZbDBKZUMzUk5HR3c</guid></item><item><title>联想大秀实力！展示全球首款外折屏PC：13英寸秒变18.1英寸 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DYmEyNnBwYTR0Y2t0TXpUTXRFWEpWdTFIaWZEVEpNTW1fcHVlMDVGb1Q2RHMxcHFVem5CVmVPaEZpM1l0Zy12b3k3WXBDN0MzQlU0QmZBT3Q?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技3月3日消息，&lt;span&gt;&lt;strong&gt;在2025年世界移动通信大会（MWC 2025）上，联想展示了一系列搭载人工智能技术的最新设备，其中ThinkBook Flip AI PC概念机成为最受关注的产品之一。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;这也是全球首款OLED外折屏笔记本电脑，可以实现智能化办公、多屏协同和智能工作空间适配。&lt;/p&gt;
@@ -437,7 +465,68 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 03 Mar 2025 01:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBicExBRm5Nai1yLXRkUkdPSm1DbkRDVWtxMUljME8weDh4WXpYeGVPc1RoRmFRNTVJcWdXMWt5d3ZFTng2OWpCRkVlaFVRaS0yTTdBOUFxRGE</guid></item><item><title>小米新旗舰欧洲起售价过万，高端市场能否撼动苹果三星？ - 观察者</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE03aEtMZ2RyVndiT1FndExLaE5VMGRyMkZPeXZ0dUF4R2NzYzhnbUxJT0NEU083V3haTFo0bGljVmFiVEp6Z0NpYUxPblEyUEdDbW1rNThKZXo2WGxCZ2pnN2xObUg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 03 Mar 2025 01:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBicExBRm5Nai1yLXRkUkdPSm1DbkRDVWtxMUljME8weDh4WXpYeGVPc1RoRmFRNTVJcWdXMWt5d3ZFTng2OWpCRkVlaFVRaS0yTTdBOUFxRGE</guid></item><item><title>SU7 Ultra为何突然便宜30万！雷军：对标特斯拉 低于60万有惊喜 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBOaXJ2SkZmamhjbnB2ZDlBNDRoYWVpYnRHQmVPeGNFQVUtV200UXlLZHJhaGdyX3BOSGNPNjJVWXZOcXN0cFBHWmJ6QmVXTElaVU90SER4ck4?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;SU7 Ultra为何突然便宜30万！雷军：对标特斯拉 低于60万有惊喜&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-03-03 09:02:14  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1033392-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月3日消息，对于SU7 Ultra突然便宜30万的事情，小米创办人，董事长兼CEO雷军在直播中也是深入谈到这个问题。&lt;/p&gt;
+&lt;p&gt;雷军表示，SU7 Ultra的定价是要对标特斯拉的，最接近的就是 Model S Plaid版，但SU7 Ultra的性能强很多，配置高很多。&lt;/p&gt;
+&lt;p&gt;雷军称，当时自己提出能不能和特斯拉卖一样的价钱，卖81.49万元行不行，后来测试了一下，在10分钟时间，就有3680人交了订金，当时很激动。&lt;/p&gt;
+&lt;p&gt;他得出结论，81.49万元是消费者能接受的价钱，但销售量可能就是几千台一万台。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;雷军谈到，后来又经过调研，发现消费者预期价格是60-70万元，但如果在60万元之内就有惊喜，后来考虑后，决定SU7 Ultra定50万出头的价钱。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，雷军还在直播中谈到，下周将提供一次开放选配的机会，让锁单用户都改到自己心仪的配置，可以仔细看看是否真的是自己想要的。他表示，大家可以花点时间，仔细在选配单里再看看。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/643a323cb7aa487fa5365bbfdaa5c065.jpg" target="_blank"&gt;&lt;img alt="SU7 Ultra为何突然便宜30万！雷军：对标特斯拉 低于60万有惊喜" h="399" src="//img1.mydrivers.com/img/20250303/s_643a323cb7aa487fa5365bbfdaa5c065.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 03 Mar 2025 01:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBOaXJ2SkZmamhjbnB2ZDlBNDRoYWVpYnRHQmVPeGNFQVUtV200UXlLZHJhaGdyX3BOSGNPNjJVWXZOcXN0cFBHWmJ6QmVXTElaVU90SER4ck4</guid></item><item><title>小米新旗舰欧洲起售价过万，高端市场能否撼动苹果三星？ - 观察者</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE03aEtMZ2RyVndiT1FndExLaE5VMGRyMkZPeXZ0dUF4R2NzYzhnbUxJT0NEU083V3haTFo0bGljVmFiVEp6Z0NpYUxPblEyUEdDbW1rNThKZXo2WGxCZ2pnN2xObUg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	&lt;img src="https://i.guancha.cn/news/mainland/2025/03/03/20250303082126807.png" title="点击查看大图" class="bigimg"&gt; 
 &lt;/p&gt;
@@ -664,7 +753,71 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 23:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9PQWpmNVUzZjdmUHAteGRETnNnbVBJb0RRM1lKR2hnaWVCNUpic2c0Ti00bTk4S3JudUxJUW8wYk1HbzV1M3lnRmtBOTViTWs0aU1WUWloQ3k</guid></item><item><title>特朗普宣布加密货币战储标的，比特币直线拉升1万美元 - 凤凰网</title><link>https://news.google.com/rss/articles/CBMiUEFVX3lxTE9raDdHZzJJdHF6SFYwR3N1bHFrb1ZxS214V2dZQXFHUEJwQnFYbDB0UzZ0b2hIV1Z5c2N4Mmd4VENHLWg2VUNXU1RGb3IxSFpa?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;特朗普周日在社交媒体上发文称，美国将创建一项加密货币战略储备，其中将包括比特币、以太坊，以及瑞波币、Solana和艾达币。&lt;/p&gt;&lt;p&gt;受此消息影响，加密货币在周日纷纷上涨。这条帖子写道："多年来，拜登政府对加密货币行业进行了不正当的打压，而美国加密货币储备将使这个至关重要的行业得到提升。我将确保美国成为世界加密货币之都。”&lt;/p&gt;&lt;p&gt;他在随后发布的一条帖子中还表示：“显然，比特币和以太坊将成为该储备的核心。”消息公布后，瑞波币周日飙升了33%，Solana则跃升了22%，艾达币的涨幅超过了60%，比特币拉升1万美元，最高至近9.5万美元。&lt;/p&gt;&lt;p&gt;这是特朗普首次明确表示支持建立加密货币 “储备”，而非 “储备库存”。“储备” 意味着定期有计划地主动购买加密货币，而 “储备库存” 则仅仅是指美国政府不会出售目前持有的任何加密货币。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sun, 02 Mar 2025 22:36:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE9raDdHZzJJdHF6SFYwR3N1bHFrb1ZxS214V2dZQXFHUEJwQnFYbDB0UzZ0b2hIV1Z5c2N4Mmd4VENHLWg2VUNXU1RGb3IxSFpa</guid></item><item><title>比亚迪+大疆，大动作-中国瞭望 - 焦点新闻</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE1jaFVUa0FQalRXNl9xSXhJZkJVN3kyRWo0LWwybFZzVXNydWszOWlBekQwZFdra0pRS3g5b3JBcWxtSk5QNnp0M3lLQWZYOERyVFhpUzJyQkRJaklPMndwMThXVTRKZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="newsContent"&gt;&lt;p&gt;3月2日晚间，比亚迪(361.820, -13.68, -3.64%)召开发布会，携手大疆发布车载无人机系统——灵鸢。发布会上，比亚迪董事长兼总裁王传福表示，公司旗下全品牌都将搭载灵鸢系统，包括王朝、海洋、方程豹、腾势、仰望等。比亚迪正持续加速智能化布局。&lt;/p&gt;&lt;p&gt;据介绍，比亚迪大部分SUV将陆续推出相关功能，首批将适配方程豹8、豹5、钛3、腾势N9、唐L、海狮07-DMi共6款车型。&lt;/p&gt;&lt;p&gt;价格方面，方程豹汽车总经理熊甜波介绍，灵鸢快充版选装价格为16000元，搭载灵鸢的方程豹豹8售价为39.58万元—42.38万元。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;strong&gt;车载无人机系统实现量产&lt;/strong&gt;&lt;p&gt;“汽车百年迭代史也是一部科技圈的跨越史，人类的听觉、视觉、触觉在一次次技术上的融合不断被延伸，汽车也渐渐从具备单一功能价值演化为兼具情绪价值，特别是在电动化和智能化的变革之后，出行变得不再无聊。”王传福表示，现在人们买车想买的不只是一个出行工具，而是一个集出行、娱乐、社交等功能于一体的个性化的移动空间。&lt;/p&gt;&lt;p&gt;为此，比亚迪探索开发车载无人机系统。王传福透露，比亚迪从2016年就开始做内部的探索和尝试。去年比亚迪首次联合大疆亮相了车载无人机系统，并搭载在仰望U8上。&lt;/p&gt;&lt;p&gt;“经过一年的用户反馈和技术融合，站在2025年的新起点，比亚迪此次带来的不仅是产品层面的深入合作，更旨在构建新的出行生态。”王传福说，经过比亚迪和大疆双重的技术测试和一系列的安全认证后，灵鸢实现了量产，这也使得比亚迪成为全球首家量产车载无人机的车企。&lt;/p&gt;&lt;p&gt;据介绍，灵鸢系统配有专门的保险，由无人机、车载无人机舱及一套软件系统组成，支持动态起降、一键返舱、智能跟飞等功能，同时灵鸢系统还设计了30套拍摄的模板，用户不用过多的操作就能完成“一键成片”。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://n.sinaimg.cn/spider20250302/368/w699h469/20250302/cd5e-e752cb49ed686bbd5ac48fdab3c0aeb0.png" alt="来源：比亚迪" id="0"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;实现动态跟拍&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;“大疆自2007年发布第一代飞控系统，经过十多年来的技术创新和产品迭代，到今天已经有着上千万台无人机、数亿飞行次数的真实场景验证。这一套可靠的飞行控制系统也将配置在灵鸢系统上，为车载无人机用户提供稳定安全的飞行保障。”大疆相关负责人表示。&lt;/p&gt;&lt;p&gt;经过技术创新和产品迭代，大疆无人机上配置的多功能复合相机，除了一开始使用的光学广角镜头，还陆续整合了光学变焦镜头、激光雷达、红外及多光谱等传感器，让无人机在各个场景下都可以“看见”。&lt;/p&gt;&lt;p&gt;“今天发布的车载无人机在相机部分配置了高像素的广角镜头和中长焦镜头，不管是风光还是人像都会有较好的呈现。此外，车载无人机还配置了激光雷达和红外线传感等，让车载无人机可以在不同的环境下飞行。”前述大疆负责人表示。&lt;/p&gt;&lt;p&gt;在发布会现场，比亚迪集团高级副总裁、汽车新技术研究院院长杨冬生表示，灵鸢将分为换电版和快充版。其中，换电版主要搭载在仰望品牌；快充版主要搭载在腾势、方程豹、海洋网、王朝网上。&lt;/p&gt;&lt;p&gt;灵鸢智能车载无人机系统有机库、无人机主机、车载定位模块手柄等，构成了强大的硬件支撑。软件方面，比亚迪定制了灵鸢App、AI识别互动软件、图像音乐编辑软件等。&lt;/p&gt;&lt;p&gt;灵鸢无人机舱内置图传天线、定位模块与风速仪，支持25km/h车速下的无人机动态起降、54km/h车速下的动态跟拍以及2km内的自动返航。此外，灵鸢支持100瓦高功率快充，无人机仅需30分钟电量便可从20%升至80%。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://n.sinaimg.cn/spider20250302/592/w876h516/20250302/dfe7-84c010f8eff1533547ccf76cf1e73d33.png" alt="来源：比亚迪" id="1"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2月销量超32万辆&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;同日，比亚迪还公告了2月销量快报。公司2月新能源汽车销量为32.28万辆，1—2月累计销量达62.34万辆，同比增长92.52%。2月公司乘用车海外销量为67025辆。&lt;/p&gt;&lt;p&gt;分品牌看，2月王朝网与海洋网销量达304673辆，同比增长167.1%。各子品牌亦有不错表现，腾势汽车销量为8513辆，同比增长 85.1%；方程豹汽车销量为4942辆，同比增长 113.9%；仰望销量为105辆。&lt;/p&gt;&lt;p&gt;方正证券(7.900, -0.28, -3.42%)分析称，此前，比亚迪宣布全系车型将搭载天神之眼高阶智驾功能，在行业内首次将高阶智驾功能带入7万元级别市场，公司产品竞争力提升有望助力全年销量超预期。此外，公司在智能化领域的快速发展助力公司高端品牌产品竞争力提升，有望带动公司在高端市场的份额提升。&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 23:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9PQWpmNVUzZjdmUHAteGRETnNnbVBJb0RRM1lKR2hnaWVCNUpic2c0Ti00bTk4S3JudUxJUW8wYk1HbzV1M3lnRmtBOTViTWs0aU1WUWloQ3k</guid></item><item><title>小米15 Ultra海外发布！定价大涨：11358元起 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1OM1hYTEpabG1iLVdaVWtGejhXSzNhS21VRVdadEZWREZWcVRhVjZwT0k4TTRmc3h1R2lnUVZOOVhxaDIxdUFFOTdfX2FpdTBRR3AxUmladGI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;小米15 Ultra海外发布！定价大涨：11358元起&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-03-03 06:49:09  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1299472.html" title="建嘉的主页" class="newstiao4"&gt;建嘉&lt;/a&gt;&lt;p&gt;  编辑：建嘉 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1033366-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月3日消息，小米在MWC上召开新品发布会，正式面向全球推出了旗舰机型——小米15 Ultra。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;先看价格，小米15 Ultra海外起步价为1299英镑（约合11906元人民币）、1499欧元（约合11358元人民币），&lt;/strong&gt;&lt;/span&gt;起步价均已过万，相比国内价格高了很多。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/afb49fcaa81c4112ac1c7ee9f2eec034.jpg" target="_blank"&gt;&lt;img alt="小米15 Ultra海外发布！定价大涨：11358元起" h="337" src="//img1.mydrivers.com/img/20250303/s_afb49fcaa81c4112ac1c7ee9f2eec034.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;配置方面和国内基本保持同步，主打强大的影像，配备后置徕卡四摄，包括14mm超广镜头、23mm主摄镜头、70mm中长焦镜头、100mm超长焦镜头，其中主摄是索尼LYT900，拥有1英寸超大底，支持双原生ISO Fusion Max技术，动态范围达到单帧15EV，是小米史上进光量最大的主摄镜头。&lt;/p&gt;
+&lt;p&gt;100mm超长焦镜头是三星HP9，采用1/1.4英寸的主摄级传感器，搭配ƒ/2.6超大光圈，结合传感器原生的高像素能力，可实现高达400mm的无损变焦，等效28倍无损变焦范围。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/ff33608c0d1a4346ada35b61c76e57be.jpg" target="_blank"&gt;&lt;img alt="小米15 Ultra海外发布！定价大涨：11358元起" h="399" src="//img1.mydrivers.com/img/20250303/s_ff33608c0d1a4346ada35b61c76e57be.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，小米15 Ultra升级徕卡超低反镜头玻璃，让光线反射率低至1.5%，全焦段减弱点光源“鬼影”现象，带来纯净画质。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心配置上，小米15 Ultra采用2K全等深四微曲屏幕，搭载高通骁龙8至尊版移动平台。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250303/90b60e11ed9546daad5af06f5bc5b608.jpg" target="_blank"&gt;&lt;img alt="小米15 Ultra海外发布！定价大涨：11358元起" h="399" src="//img1.mydrivers.com/img/20250303/s_90b60e11ed9546daad5af06f5bc5b608.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;需要注意的是，小米15 Ultra国行版内置6000mAh超大电池，海外版本改为5410mAh，&lt;/strong&gt;&lt;/span&gt;依然支持90W有线闪充和80W无线闪充。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 22:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1OM1hYTEpabG1iLVdaVWtGejhXSzNhS21VRVdadEZWREZWcVRhVjZwT0k4TTRmc3h1R2lnUVZOOVhxaDIxdUFFOTdfX2FpdTBRR3AxUmladGI</guid></item><item><title>特朗普宣布加密货币战储标的，比特币直线拉升1万美元 - 凤凰网</title><link>https://news.google.com/rss/articles/CBMiUEFVX3lxTE9raDdHZzJJdHF6SFYwR3N1bHFrb1ZxS214V2dZQXFHUEJwQnFYbDB0UzZ0b2hIV1Z5c2N4Mmd4VENHLWg2VUNXU1RGb3IxSFpa?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;特朗普周日在社交媒体上发文称，美国将创建一项加密货币战略储备，其中将包括比特币、以太坊，以及瑞波币、Solana和艾达币。&lt;/p&gt;&lt;p&gt;受此消息影响，加密货币在周日纷纷上涨。这条帖子写道："多年来，拜登政府对加密货币行业进行了不正当的打压，而美国加密货币储备将使这个至关重要的行业得到提升。我将确保美国成为世界加密货币之都。”&lt;/p&gt;&lt;p&gt;他在随后发布的一条帖子中还表示：“显然，比特币和以太坊将成为该储备的核心。”消息公布后，瑞波币周日飙升了33%，Solana则跃升了22%，艾达币的涨幅超过了60%，比特币拉升1万美元，最高至近9.5万美元。&lt;/p&gt;&lt;p&gt;这是特朗普首次明确表示支持建立加密货币 “储备”，而非 “储备库存”。“储备” 意味着定期有计划地主动购买加密货币，而 “储备库存” 则仅仅是指美国政府不会出售目前持有的任何加密货币。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sun, 02 Mar 2025 22:36:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE9raDdHZzJJdHF6SFYwR3N1bHFrb1ZxS214V2dZQXFHUEJwQnFYbDB0UzZ0b2hIV1Z5c2N4Mmd4VENHLWg2VUNXU1RGb3IxSFpa</guid></item><item><title>比亚迪+大疆，大动作-中国瞭望 - 焦点新闻</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE1jaFVUa0FQalRXNl9xSXhJZkJVN3kyRWo0LWwybFZzVXNydWszOWlBekQwZFdra0pRS3g5b3JBcWxtSk5QNnp0M3lLQWZYOERyVFhpUzJyQkRJaklPMndwMThXVTRKZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="newsContent"&gt;&lt;p&gt;3月2日晚间，比亚迪(361.820, -13.68, -3.64%)召开发布会，携手大疆发布车载无人机系统——灵鸢。发布会上，比亚迪董事长兼总裁王传福表示，公司旗下全品牌都将搭载灵鸢系统，包括王朝、海洋、方程豹、腾势、仰望等。比亚迪正持续加速智能化布局。&lt;/p&gt;&lt;p&gt;据介绍，比亚迪大部分SUV将陆续推出相关功能，首批将适配方程豹8、豹5、钛3、腾势N9、唐L、海狮07-DMi共6款车型。&lt;/p&gt;&lt;p&gt;价格方面，方程豹汽车总经理熊甜波介绍，灵鸢快充版选装价格为16000元，搭载灵鸢的方程豹豹8售价为39.58万元—42.38万元。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;strong&gt;车载无人机系统实现量产&lt;/strong&gt;&lt;p&gt;“汽车百年迭代史也是一部科技圈的跨越史，人类的听觉、视觉、触觉在一次次技术上的融合不断被延伸，汽车也渐渐从具备单一功能价值演化为兼具情绪价值，特别是在电动化和智能化的变革之后，出行变得不再无聊。”王传福表示，现在人们买车想买的不只是一个出行工具，而是一个集出行、娱乐、社交等功能于一体的个性化的移动空间。&lt;/p&gt;&lt;p&gt;为此，比亚迪探索开发车载无人机系统。王传福透露，比亚迪从2016年就开始做内部的探索和尝试。去年比亚迪首次联合大疆亮相了车载无人机系统，并搭载在仰望U8上。&lt;/p&gt;&lt;p&gt;“经过一年的用户反馈和技术融合，站在2025年的新起点，比亚迪此次带来的不仅是产品层面的深入合作，更旨在构建新的出行生态。”王传福说，经过比亚迪和大疆双重的技术测试和一系列的安全认证后，灵鸢实现了量产，这也使得比亚迪成为全球首家量产车载无人机的车企。&lt;/p&gt;&lt;p&gt;据介绍，灵鸢系统配有专门的保险，由无人机、车载无人机舱及一套软件系统组成，支持动态起降、一键返舱、智能跟飞等功能，同时灵鸢系统还设计了30套拍摄的模板，用户不用过多的操作就能完成“一键成片”。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://n.sinaimg.cn/spider20250302/368/w699h469/20250302/cd5e-e752cb49ed686bbd5ac48fdab3c0aeb0.png" alt="来源：比亚迪" id="0"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;实现动态跟拍&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;“大疆自2007年发布第一代飞控系统，经过十多年来的技术创新和产品迭代，到今天已经有着上千万台无人机、数亿飞行次数的真实场景验证。这一套可靠的飞行控制系统也将配置在灵鸢系统上，为车载无人机用户提供稳定安全的飞行保障。”大疆相关负责人表示。&lt;/p&gt;&lt;p&gt;经过技术创新和产品迭代，大疆无人机上配置的多功能复合相机，除了一开始使用的光学广角镜头，还陆续整合了光学变焦镜头、激光雷达、红外及多光谱等传感器，让无人机在各个场景下都可以“看见”。&lt;/p&gt;&lt;p&gt;“今天发布的车载无人机在相机部分配置了高像素的广角镜头和中长焦镜头，不管是风光还是人像都会有较好的呈现。此外，车载无人机还配置了激光雷达和红外线传感等，让车载无人机可以在不同的环境下飞行。”前述大疆负责人表示。&lt;/p&gt;&lt;p&gt;在发布会现场，比亚迪集团高级副总裁、汽车新技术研究院院长杨冬生表示，灵鸢将分为换电版和快充版。其中，换电版主要搭载在仰望品牌；快充版主要搭载在腾势、方程豹、海洋网、王朝网上。&lt;/p&gt;&lt;p&gt;灵鸢智能车载无人机系统有机库、无人机主机、车载定位模块手柄等，构成了强大的硬件支撑。软件方面，比亚迪定制了灵鸢App、AI识别互动软件、图像音乐编辑软件等。&lt;/p&gt;&lt;p&gt;灵鸢无人机舱内置图传天线、定位模块与风速仪，支持25km/h车速下的无人机动态起降、54km/h车速下的动态跟拍以及2km内的自动返航。此外，灵鸢支持100瓦高功率快充，无人机仅需30分钟电量便可从20%升至80%。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://n.sinaimg.cn/spider20250302/592/w876h516/20250302/dfe7-84c010f8eff1533547ccf76cf1e73d33.png" alt="来源：比亚迪" id="1"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2月销量超32万辆&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;同日，比亚迪还公告了2月销量快报。公司2月新能源汽车销量为32.28万辆，1—2月累计销量达62.34万辆，同比增长92.52%。2月公司乘用车海外销量为67025辆。&lt;/p&gt;&lt;p&gt;分品牌看，2月王朝网与海洋网销量达304673辆，同比增长167.1%。各子品牌亦有不错表现，腾势汽车销量为8513辆，同比增长 85.1%；方程豹汽车销量为4942辆，同比增长 113.9%；仰望销量为105辆。&lt;/p&gt;&lt;p&gt;方正证券(7.900, -0.28, -3.42%)分析称，此前，比亚迪宣布全系车型将搭载天神之眼高阶智驾功能，在行业内首次将高阶智驾功能带入7万元级别市场，公司产品竞争力提升有望助力全年销量超预期。此外，公司在智能化领域的快速发展助力公司高端品牌产品竞争力提升，有望带动公司在高端市场的份额提升。&lt;/p&gt;&lt;/div&gt;
 
       &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>焦点新闻</author><pubDate>Sun, 02 Mar 2025 21:35:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE1jaFVUa0FQalRXNl9xSXhJZkJVN3kyRWo0LWwybFZzVXNydWszOWlBekQwZFdra0pRS3g5b3JBcWxtSk5QNnp0M3lLQWZYOERyVFhpUzJyQkRJaklPMndwMThXVTRKZw</guid></item><item><title>中国手机荣耀发布“阿尔法战略及AI技术发布会” - RFI - 法国国际广播电台</title><link>https://news.google.com/rss/articles/CBMixwJBVV95cUxOdVFxRUZDY0tRVTZEdHhrRXkwVHJwM0RsTF8xTXVMSnAzTm45OEpjVVV0eUJmX0xQcGQwWGtDMmV6amNDVlBIX0swV01DSV9haGppNHFfdkhZOU93Mlc2aHJnc2JkMnRUMnZBQWFYM25ZUmVkeEFnenhNT0pDSlJFZTZZRzI1alNjVWIwcjlralF1YjhkTF9QY1hRcllkZFg4ckpsZjFuNldwbk5JSDh2aDBNQUg4bFU4LWpmYnRTUktLZTdhSEllckk0WE1VMkZZTElQdnhWRXFJejlfTWxQTU5jMEdCMmpFREEtM0M3WFlaT1VhdFhzNGNHcTU4bHAyY1Z3SzRNTjdCc1l2ODdQRVN2Q3NLR2lfWG5URW5TdUhrQ3FVMEdIQ1AtZmtsVHpWUmRoRnc1S1dneTJLZjVYbktwOC1OdW8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="t-content__body u-clearfix"&gt;
                                             
@@ -998,7 +1151,99 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 14:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5KNEphSlVuaEh4WjJUQTdIY3phc3QyQkRRUktJaGgxR2U1b2dLekF1LVZQSURkYlZvZ3lxdVFiYW1zM05FQ2U0Q2FPZVNxMHVOWjNHc1VEZU0</guid></item><item><title>苹果美国官网贴警告标签 十款产品含致癌成分 - 8world News, Lifestyle and Entertainment</title><link>https://news.google.com/rss/articles/CBMitAFBVV95cUxQaXBqNWlDN0Mtb09rVHdXOFVRcHZNMDM4VDZHMWdZQTBKcDVKTFZfZ2lZM093SDlPemtvdEtVZDd5NDFvbjhKWkVSdWpybHdZQkZTSllwQzJNZVlkaDljMHh2cF9YcmxLbTV1V0JpODFBX09xTjF0a1FBR2pEQnpRWVc1SXpRR05tVXVIQjhCeUpPcjA2YTdyNE9DajRtZURNOUppM3FsUEthVG5DaEVTM29VWDY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;苹果公司按美国加州监管机构要求，在官方网站对十款产品包括充电器、苹果手表充电座等列出可能致癌成分。专家说，这些致癌成分可能对孕妇和患癌高风险群等有危险。&lt;/p&gt;&lt;p&gt;据《每日邮报》报道，警告标签提醒消费者，这些产品可能会让用户接触到包括双酚 A (BPA) 在内的化学物质。  &lt;/p&gt;&lt;p&gt;研究表明，常用于帮助塑料硬化的化学物质BPA，会扰乱人体的荷尔蒙功能，可致生育问题、性发育紊乱，并导致癌症和其他健康问题。&lt;/p&gt;&lt;p&gt;警告标签没有具体说明产品中这些危险物质的含量，学者对此表示，其成分不一定会对大多数人产生影响。&lt;/p&gt;&lt;p&gt;虽然如此，普渡大学（Purdue University）公共卫生教授艾伦威尔斯说：“如果一个人特别容易受到生殖伤害、出生缺陷或癌症的影响，他们可能想要避免（使用产品）。”&lt;/p&gt;&lt;p&gt;专家也建议，孕妇和患癌高风险群，可能要避免使用贴上警告标签的产品。&lt;/p&gt;&lt;p&gt;十款贴上警告标签的商品如下：&lt;/p&gt;&lt;p&gt;1.    Belkin BoostCharge Pro 磁吸式移动电源 5K – 蛇年限定版&lt;br&gt;2.    Belkin BoostCharge Pro 磁吸式移动电源 10K + 充电线&lt;br&gt;3.    Nimble Podium 三合一无线充电器&lt;br&gt;4.    Nimble Valet 三合一无线充电器 &lt;br&gt;5.    Nimble Champ 10k 便携式充电器 &lt;br&gt;6.    Nimble 三合一折叠无线充电器&lt;br&gt;7.    Nimble Watch Stand苹果手表充电座&lt;br&gt;8.    mophie powerstation pro 移动电源&lt;br&gt;9.    mophie powerstation mini 迷你移动电源&lt;br&gt;10.    mophie 磁吸式车用无线充电器（MagSafe兼容）&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 14:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5KNEphSlVuaEh4WjJUQTdIY3phc3QyQkRRUktJaGgxR2U1b2dLekF1LVZQSURkYlZvZ3lxdVFiYW1zM05FQ2U0Q2FPZVNxMHVOWjNHc1VEZU0</guid></item><item><title>金十数据全球财经早餐| 2025年3月3日-市场参考 - 金十数据</title><link>https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ndVpRRktpSEw5ZUJGVHdHRkFiLThDb2lXeHJxTmljdzktR0ZUVE9UWFhCeDJkUUhqbnR0aTBqaF9jUEV4eXpfSFpGTnFHOTQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;figure class="image"&gt;&lt;img src="https://img.jin10.com/news/25/03/Y4jKSGDqnq65xEIRsUdhU.jpg"&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;男生普通话版&lt;/strong&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://media.jin10.com/audio/25/03/72TiCjjt93k3J5S1nHoTam.mp3" target="_blank" rel="noopener"&gt;下载mp3&lt;/a&gt;&lt;/span&gt;&lt;span class="fr-video fr-dvb fr-draggable" contenteditable="false"&gt; &lt;video controls="controls" class="fr-draggable fr-fvc fr-dvi" src="https://media.jin10.com/audio/25/03/72TiCjjt93k3J5S1nHoTam.mp3" data-mce-fragment="1" preload="none"&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;女声普通话版&lt;/strong&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://media.jin10.com/audio/25/03/kcPUCrPF3KiXVN7eSDTe5P.mp3" target="_blank" rel="noopener"&gt;下载mp3&lt;/a&gt;&lt;/span&gt;&lt;span class="fr-video fr-dvb fr-draggable" contenteditable="false"&gt; &lt;video controls="controls" class="fr-draggable fr-fvc fr-dvi" src="https://media.jin10.com/audio/25/03/kcPUCrPF3KiXVN7eSDTe5P.mp3" data-mce-fragment="1" preload="none"&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;粤语版&lt;/strong&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://media.jin10.com/audio/25/03/qnqCDT8eSRk3g35FEwcXcj.mp3" target="_blank" rel="noopener"&gt;下载mp3&lt;/a&gt;&lt;/span&gt;&lt;span class="fr-video fr-dvb fr-draggable" contenteditable="false"&gt; &lt;video controls="controls" class="fr-draggable fr-fvc fr-dvi" src="https://media.jin10.com/audio/25/03/qnqCDT8eSRk3g35FEwcXcj.mp3" data-mce-fragment="1" preload="none"&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;西南方言版&lt;/strong&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://media.jin10.com/audio/25/03/4cqTEo9co98um5grJQgvwC.mp3" target="_blank" rel="noopener"&gt;下载mp3&lt;/a&gt;&lt;/span&gt;&lt;span class="fr-video fr-dvb fr-draggable" contenteditable="false"&gt; &lt;video controls="controls" class="fr-draggable fr-fvc fr-dvi" src="https://media.jin10.com/audio/25/03/4cqTEo9co98um5grJQgvwC.mp3" data-mce-fragment="1" preload="none"&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;东北话版&lt;/strong&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://media.jin10.com/audio/25/03/waMsE7taNheg6VDoPy2t3b.mp3" target="_blank" rel="noopener"&gt;下载mp3&lt;/a&gt;&lt;/span&gt;&lt;span class="fr-video fr-dvb fr-draggable" contenteditable="false"&gt; &lt;video controls="controls" class="fr-draggable fr-fvc fr-dvi" src="https://media.jin10.com/audio/25/03/waMsE7taNheg6VDoPy2t3b.mp3" data-mce-fragment="1" preload="none"&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;上海话版&lt;/strong&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://media.jin10.com/audio/25/03/9MSyR11PGqPt2ASA4JF9Jq.mp3" target="_blank" rel="noopener"&gt;下载mp3&lt;/a&gt;&lt;/span&gt;&lt;span class="fr-video fr-dvb fr-draggable" contenteditable="false"&gt; &lt;video controls="controls" class="fr-draggable fr-fvc fr-dvi" src="https://media.jin10.com/audio/25/03/9MSyR11PGqPt2ASA4JF9Jq.mp3" data-mce-fragment="1" preload="none"&gt;&lt;/video&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;今日优选&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;特朗普与泽连斯基白宫会晤“不欢而散”&lt;/strong&gt;，&lt;strong&gt;美国官员称乌克兰或需要新领导人&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;乌克兰与英国签署贷款协议，据悉英法乌将向美国共提一份乌克兰和平计划&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;美商务部长：3月4日将对加墨加征关税，关税水平待特朗普决定&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;美民主党称共和党退出拨款谈判，政府“关门”风险上升&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;美国1月PCE基本符合预期，亚特兰大联储模型预计美国第一季度GDP增速转负&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;马克龙：如果美国确定对欧洲征收25%关税，欧洲将作出“对等”回应&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特朗普宣布加密货币战储标的&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;国家主席习近平：防范化解各类风险是平安中国建设的一项重要任务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证监会：目前暂不具备条件设立重庆证券交易所；现阶段推出基于REITs的ETF条件尚不完全具备&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DeepSeek披露：理论成本利润率545%，V3/R1推理系统理论日利润高达346万元人民币&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;市场盘点&lt;/h2&gt;
+&lt;p&gt;上周五，&lt;strong&gt;美元指数&lt;/strong&gt;先持续震荡，然后在尾盘突发大涨，一度逼近两周高点，最终收涨0.25%，报107.55，但2月下跌0.89%，创下去年9月以来的最大月线跌幅。美债收益率延续下跌势头，基准的&lt;strong&gt;10年期美债收益率&lt;/strong&gt;继续下行，报4.22%；对货币政策更敏感的&lt;strong&gt;两年期美债收益率&lt;/strong&gt;收报4.007%。&lt;/p&gt;
+&lt;p&gt;特朗普的关税威胁也引发上周五的新兴市场波动，印尼盾跌至五年来低点，泰国与印尼股市步入熊市，全球基金疯狂逃离印度股市，2月28日单日净卖出1164亿卢比的印度股票。&lt;/p&gt;
+&lt;p&gt;因美国通胀数据符合预期，表明美联储可能会对进一步降息采取谨慎立场，&lt;strong&gt;现货黄金&lt;/strong&gt;日内一度跌超1%，较日高大跌超50美元，最低跌至2832.64美元，最终收跌0.66%，报2858.13美元/盎司，上周累跌2.65%，为三个月以来最差周线表现。&lt;strong&gt;现货白银&lt;/strong&gt;收跌0.35%，报31.14美元/盎司。&lt;/p&gt;
+&lt;p&gt;因市场关注美国和乌克兰总统在椭圆形办公室的争执，同时为华盛顿的新关税和伊拉克恢复库尔德斯坦地区石油出口做准备，两油总体下行，并为三个月以来首次月线收跌。&lt;strong&gt;WTI原油&lt;/strong&gt;尾盘一度拉升并短暂站上70美元上方，但未能站稳此处，最终收跌0.29%，报69.74美元/桶；&lt;strong&gt;布伦特原油&lt;/strong&gt;收跌0.45%，报72.96美元/桶。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;美股&lt;/strong&gt;三大指数有所反弹，道指收涨1.39%、标普500指数涨1.59%、纳指涨1.63%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;欧股&lt;/strong&gt;主要股指总体收涨，德国DAX30指数平收；英国富时100指数涨0.61%；欧洲斯托克50指数收跌0.16%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;港股&lt;/strong&gt;走势羸弱，尾盘大跌。恒指早盘低开102点报23616点，随即跌幅快速扩大，最多跌547点低见23170点。午后持续大跌，恒指尾盘一度大跌902点报22815点，连破数道关口失守十日线，创去年10月以来最大单日跌幅，科指尾盘一度大跌6%险守5000点大关。截至收盘，恒指收跌3.28%，上周累跌2.29%，上月累涨13.43%；科指收跌5.32%，上周累跌4.97%，上月累涨17.88%，恒指大市成交额再度放大至4064.6亿元。盘面上，化妆品、煤炭、水泥股走强；苹果概念、锂电池、半导体股走低，SaaS概念、药品、互联网医疗股再度回调，汽车股大跌。个股方面，比亚迪电子(00285.HK)跌近10%，小鹏汽车(09868.HK)、理想汽车(02015.HK)、信义光能(00968.HK)、龙湖集团(00960.HK)均跌超8%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A股&lt;/strong&gt;三大指数低开低走。截至收盘，沪指跌1.98%，深证成指跌2.89%，创业板指跌3.82%。盘面上，板块普跌，油气开采板块逆市走强，潜能恒信、东华科技、准油股份涨停；人形机器人概念、算力概念、半导体、汽车、证券、传媒等板块跌幅居前。两市逾4600只个股下跌，总成交额逾1.8万亿元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加密货币&lt;/strong&gt;方面，因特朗普宣布加密货币战储标的，比特币、以太坊直线拉升，比特币一度大涨近1万美元，以太坊爆拉超10%。&lt;/p&gt;
+&lt;figure class="image"&gt;&lt;img src="https://img.jin10.com/news/25/03/D8h94dvTfSrktFPy8kUBp.jpg"&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt;国际要闻&lt;/h2&gt;
+&lt;p&gt;1、&lt;strong&gt;特朗普与泽连斯基白宫会晤“不欢而散”&lt;/strong&gt;，泽连斯基提前离场，矿产协议签署取消。美财长：&lt;strong&gt;目前没有与乌克兰就矿产协议进行讨论&lt;/strong&gt;；&lt;strong&gt;美国官员称乌克兰或需要新领导人&lt;/strong&gt;，拟通过欧洲主导安全保障结束冲突。&lt;/p&gt;
+&lt;p&gt;2、&lt;strong&gt;乌克兰与英国签署贷款协议&lt;/strong&gt;。&lt;strong&gt;据悉英法乌将向美国共提一份乌克兰和平计划，提议停火一个月。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;3、&lt;strong&gt;美商务部长：3月4日将对加墨加征关税，关税水平待特朗普决定。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;4、美民主党称&lt;strong&gt;共和党退出拨款谈判&lt;/strong&gt;，政府“关门”风险上升。&lt;/p&gt;
+&lt;p&gt;5、美国1月PCE录得&lt;strong&gt;-0.2%&lt;/strong&gt;，&lt;strong&gt;为2021年2月以来最大降幅&lt;/strong&gt;，结束2023年3月以来增长趋势。&lt;strong&gt;核心PCE物价指数月率录得0.3%&lt;/strong&gt;，符合预期，创2024年10月以来新高。&lt;strong&gt;核心PCE物价指数年率录得2.6%&lt;/strong&gt;，创2024年6月以来新低，符合预期。&lt;strong&gt;亚特兰大联储GDPNow模型预计2025年美国第一季度GDP增速为-1.5%，此前预计为2.3%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;6、美联储哈玛克：当前展望中&lt;strong&gt;不考虑加息&lt;/strong&gt;，通胀预期依然稳定。&lt;/p&gt;
+&lt;p&gt;7、埃及安全消息人士：以色列代表团正在开罗努力达成协议，将加沙停火第一阶段延长额外42天，但遭到哈马斯拒绝。以代表团将离开开罗，&lt;strong&gt;以色列决定在斋月期间继续执行加沙停火协议。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;8、伊朗媒体称伊朗海军在霍尔木兹海峡扣押了以色列的船只。&lt;/p&gt;
+&lt;p&gt;9、英媒：&lt;strong&gt;俄罗斯寻求在美国支持下重启北溪2号。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;10、美防长：如果墨西哥不能满足特朗普的边境要求，美国将采取军事行动。&lt;/p&gt;
+&lt;p&gt;11、法国总统马克龙：如果美国确定对欧洲征收25%关税，欧洲将作出“对等”回应。&lt;/p&gt;
+&lt;p&gt;12、美国白宫将于3月7日举办首次加密货币峰会，特朗普主持。&lt;/p&gt;
+&lt;p&gt;13、&lt;strong&gt;特朗普宣布加密货币战储标的，其中将包括比特币、以太坊，以及瑞波币（XRP）、Solana和艾达币（ADA），其在随后发布的一条帖子中还表示比特币和以太坊将成为该储备的核心。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;14、俄罗斯外交部：俄罗斯获得美国同意任命亚历山大·达尔奇耶夫为驻美大使。&lt;/p&gt;
+&lt;p&gt;&lt;span data-v-2f123dee&gt;15、有网友称美国应该退出北约和联合国，马斯克发帖表示：我同意。&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;国内要闻&lt;/h2&gt;
+&lt;p&gt;1、中共中央政治局召开会议，讨论政府工作报告。&lt;/p&gt;
+&lt;p&gt;2、《求是》杂志发表习近平总书记重要文章《经济工作必须统筹好几对重要关系》。&lt;/p&gt;
+&lt;p&gt;3、国家主席习近平会见俄罗斯联邦安全会议秘书绍伊古。&lt;/p&gt;
+&lt;p&gt;4、国家主席习近平：&lt;strong&gt;防范化解各类风险是平安中国建设的一项重要任务。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;5、十四届全国人大三次会议新闻发布会将于3月4日12时举行。&lt;/p&gt;
+&lt;p&gt;6、发改委等八部门印发《促进普惠养老服务高质量发展的若干措施》&lt;/p&gt;
+&lt;p&gt;7、中国2月制造业采购经理指数录得50.2，重回扩张区间。&lt;/p&gt;
+&lt;p&gt;8、美威胁对华再加征关税，商务部回应：如果美方一意孤行，中方将采取一切必要反制措施。&lt;/p&gt;
+&lt;p&gt;9、外交部回应美威胁对华再加征关税：敦促美方纠正错误做法，中方将采取一切必要措施。&lt;/p&gt;
+&lt;p&gt;10、央行2月开展了14000亿元买断式逆回购操作。&lt;/p&gt;
+&lt;p&gt;11、潘功胜：确保民企融资成本在今后比较长的时间中保持在较低水平。&lt;/p&gt;
+&lt;p&gt;12、央行等五部门：抓好“科创板八条”“服务现代化产业体系十六条”“并购六条”等政策落实落地，&lt;strong&gt;支持民营企业通过资本市场发展壮大&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;13、市场监管总局召开2025年价格监督检查和反不正当竞争工作座谈会。&lt;/p&gt;
+&lt;p&gt;14、工业和信息化部、市场监管总局发布进一步加强智能网联汽车产品准入、召回及软件在线升级管理的通知。&lt;/p&gt;
+&lt;p&gt;15、证监会：&lt;strong&gt;目前暂不具备条件设立重庆证券交易所&lt;/strong&gt;；&lt;strong&gt;现阶段推出基于REITs的ETF条件尚不完全具备&lt;/strong&gt;；将有序开展数字人民币在香港试点；&lt;strong&gt;支持符合条件的中医药等生物医药企业在沪深交易所发行上市&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;16、证监会：初步查明东方集团涉嫌重大财务造假，可能触及重大违法强制退市情形。&lt;/p&gt;
+&lt;p&gt;17、上交所：&lt;strong&gt;下一步将推动更多优质民营科技型企业在科创板发行上市&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;18、两协会发布倡议书：有序推动煤炭产量控制，维护生产供需平衡。&lt;/p&gt;
+&lt;p&gt;19、中指研究院：2月百城新建住宅均价同比上涨2.73%。&lt;/p&gt;
+&lt;p&gt;20、据雷军微博消息：小米su7 ultra大定突破15000台。小米汽车：&lt;strong&gt;小米SU7 Ultra锁单量已突破10000台，提前完成全年任务&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;21、DeepSeek首次披露：&lt;strong&gt;理论成本利润率545%&lt;/strong&gt;，&lt;strong&gt;V3/R1推理系统理论日利润高达346万元人民币（47.5万美元）。&lt;/strong&gt;官方称理论收益并非实际。&lt;/p&gt;
+&lt;p&gt;22、《哪吒2》成为全球影史票房榜第7名。&lt;/p&gt;
+&lt;p&gt;23、首批13家外资企业获增值电信业务经营试点批复。&lt;/p&gt;
+&lt;p&gt;24、比亚迪发布车载无人机系统“灵鸢”，选配价16000元起。&lt;/p&gt;
+&lt;h2&gt;风险预警&lt;/h2&gt;
+&lt;p&gt;☆9点45分，中国将公布2月财新制造业PMI；&lt;/p&gt;
+&lt;p&gt;☆16点50分，法国将公布2月制造业PMI终值；&lt;/p&gt;
+&lt;p&gt;☆16点55分，德国将公布2月制造业PMI终值；&lt;/p&gt;
+&lt;p&gt;☆17点，欧元区将公布2月制造业PMI终值；&lt;/p&gt;
+&lt;p&gt;☆17点30分，英国将公布2月制造业PMI终值以及1月央行抵押贷款许可；&lt;/p&gt;
+&lt;p&gt;☆18点，欧元区将公布2月CPI数据；&lt;/p&gt;
+&lt;p&gt;☆22点45分，美国将公布2月标普全球制造业PMI终值；&lt;/p&gt;
+&lt;p&gt;☆23点，美国将公布2月ISM制造业PMI以及1月营建支出月率；&lt;/p&gt;
+&lt;p&gt;☆次日0点35分，美联储穆萨莱姆发表讲话。&lt;/p&gt;
+&lt;figure class="image"&gt;&lt;img src="https://img.jin10.com/news/25/03/ZPB_PMDkWCaiL76HAGaJZ.png"&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure class="image"&gt;&lt;img src="https://img.jin10.com/news/24/09/cAOnpJnK2uIKTNE1KRbXf.jpg"&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/div&gt;  &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>金十数据</author><pubDate>Sun, 02 Mar 2025 14:05:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiT0FVX3lxTE5ndVpRRktpSEw5ZUJGVHdHRkFiLThDb2lXeHJxTmljdzktR0ZUVE9UWFhCeDJkUUhqbnR0aTBqaF9jUEV4eXpfSFpGTnFHOTQ</guid></item><item><title>苹果美国官网贴警告标签 十款产品含致癌成分 - 8world News, Lifestyle and Entertainment</title><link>https://news.google.com/rss/articles/CBMitAFBVV95cUxQaXBqNWlDN0Mtb09rVHdXOFVRcHZNMDM4VDZHMWdZQTBKcDVKTFZfZ2lZM093SDlPemtvdEtVZDd5NDFvbjhKWkVSdWpybHdZQkZTSllwQzJNZVlkaDljMHh2cF9YcmxLbTV1V0JpODFBX09xTjF0a1FBR2pEQnpRWVc1SXpRR05tVXVIQjhCeUpPcjA2YTdyNE9DajRtZURNOUppM3FsUEthVG5DaEVTM29VWDY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;苹果公司按美国加州监管机构要求，在官方网站对十款产品包括充电器、苹果手表充电座等列出可能致癌成分。专家说，这些致癌成分可能对孕妇和患癌高风险群等有危险。&lt;/p&gt;&lt;p&gt;据《每日邮报》报道，警告标签提醒消费者，这些产品可能会让用户接触到包括双酚 A (BPA) 在内的化学物质。  &lt;/p&gt;&lt;p&gt;研究表明，常用于帮助塑料硬化的化学物质BPA，会扰乱人体的荷尔蒙功能，可致生育问题、性发育紊乱，并导致癌症和其他健康问题。&lt;/p&gt;&lt;p&gt;警告标签没有具体说明产品中这些危险物质的含量，学者对此表示，其成分不一定会对大多数人产生影响。&lt;/p&gt;&lt;p&gt;虽然如此，普渡大学（Purdue University）公共卫生教授艾伦威尔斯说：“如果一个人特别容易受到生殖伤害、出生缺陷或癌症的影响，他们可能想要避免（使用产品）。”&lt;/p&gt;&lt;p&gt;专家也建议，孕妇和患癌高风险群，可能要避免使用贴上警告标签的产品。&lt;/p&gt;&lt;p&gt;十款贴上警告标签的商品如下：&lt;/p&gt;&lt;p&gt;1.    Belkin BoostCharge Pro 磁吸式移动电源 5K – 蛇年限定版&lt;br&gt;2.    Belkin BoostCharge Pro 磁吸式移动电源 10K + 充电线&lt;br&gt;3.    Nimble Podium 三合一无线充电器&lt;br&gt;4.    Nimble Valet 三合一无线充电器 &lt;br&gt;5.    Nimble Champ 10k 便携式充电器 &lt;br&gt;6.    Nimble 三合一折叠无线充电器&lt;br&gt;7.    Nimble Watch Stand苹果手表充电座&lt;br&gt;8.    mophie powerstation pro 移动电源&lt;br&gt;9.    mophie powerstation mini 迷你移动电源&lt;br&gt;10.    mophie 磁吸式车用无线充电器（MagSafe兼容）&lt;/p&gt;&lt;/div&gt;
       
 &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world News, Lifestyle and Entertainment</author><pubDate>Sun, 02 Mar 2025 13:36:13 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMitAFBVV95cUxQaXBqNWlDN0Mtb09rVHdXOFVRcHZNMDM4VDZHMWdZQTBKcDVKTFZfZ2lZM093SDlPemtvdEtVZDd5NDFvbjhKWkVSdWpybHdZQkZTSllwQzJNZVlkaDljMHh2cF9YcmxLbTV1V0JpODFBX09xTjF0a1FBR2pEQnpRWVc1SXpRR05tVXVIQjhCeUpPcjA2YTdyNE9DajRtZURNOUppM3FsUEthVG5DaEVTM29VWDY</guid></item><item><title>首搭灵鸢无人机系统！豹8无人机版上市：选配价16000元 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rNldRMFJiLXEwZS10dFdXNmV3azNBUEZxOHgzdEQ2aTFjUVhTNElKVXgxTEdzT2FuTjNSYTNEaFVVdFo5SG1LcEJBempLT3RPN1Fla09uVlg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
@@ -1168,7 +1413,12 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 09:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5QUW83MzEwTlBpd3NJTTJTQU5ab2pVZEw3VFpiWDFJdlBtb0xCY3JRc0N5dHcwOVdGaVMyOEczcXR1YmtRcmlTNWJwTTVDOVY4TVZJS01SbG4</guid></item><item><title>清晰超乎想象！中国分辨率最高的商业遥感卫星全球开放 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE81bTVMNS1XcnUtUHVKUS12Q3FnYllTN29LNGZJNVo3M1N4enRWX01KVnlHMWJqcjdkRU9hS1cwZlluUXJPUTB3WXZQWGQySUJYd0p4TEFoQUo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 09:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5QUW83MzEwTlBpd3NJTTJTQU5ab2pVZEw3VFpiWDFJdlBtb0xCY3JRc0N5dHcwOVdGaVMyOEczcXR1YmtRcmlTNWJwTTVDOVY4TVZJS01SbG4</guid></item><item><title>预计四成产能外迁印度，苹果离心中国供应链 - 36kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFBZaEZPdkh2d3o1Uy16R1NXMl9POVZzZjdQdFdBOHJyUjhLRHZpRXJwSkNIVzZYUkRBNzhtUWpCcFlaNjRHdnliWndYUDlxQQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
+
+
+&lt;/body&gt;
+</description><author>36kr</author><pubDate>Sun, 02 Mar 2025 09:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBZaEZPdkh2d3o1Uy16R1NXMl9POVZzZjdQdFdBOHJyUjhLRHZpRXJwSkNIVzZYUkRBNzhtUWpCcFlaNjRHdnliWndYUDlxQQ</guid></item><item><title>清晰超乎想象！中国分辨率最高的商业遥感卫星全球开放 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE81bTVMNS1XcnUtUHVKUS12Q3FnYllTN29LNGZJNVo3M1N4enRWX01KVnlHMWJqcjdkRU9hS1cwZlluUXJPUTB3WXZQWGQySUJYd0p4TEFoQUo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;2月27日，中国航天科技集团的“中国四维新一代商业遥感卫星系统”迎来两位新成员，四维高景一号03、04星成功入轨，状态良好，各项遥测数据正常，各分系统陆续正常开机工作。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3月1日1时30分，位于临高和铜川的卫星地面接收站，成功接收到了四维高景一号03、04星回传的首幅卫星数据。&lt;/strong&gt;&lt;/p&gt;
@@ -1579,70 +1829,4 @@
 &lt;center&gt;&lt;h1&gt;504 Gateway Time-out&lt;/h1&gt;&lt;/center&gt;
 &lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;
 &lt;/body&gt;
-</description><author>虎嗅</author><pubDate>Sun, 02 Mar 2025 05:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9IekFEVE40S2g5bEthYTZ3dmNIdDZNenZGak1lbkdOel9uYkIwUWU5cmFlMlliLTRJdnF2NkViVDVVQ2pBc0tHZXZtTVk0c1RDNlp6LQ</guid></item><item><title>潞晨科技CEO发文向DeepSeek致歉：已删除不当表述- AI 人工智能 - cnBeta</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jSUZuNFBqRjM5TEhHZHBLdUgyeG1BVW83TVBQdXY0WnZZNFVZSzF1ZF9rY1U1emZ1SVNfNzFYaW1MRTY5NG1IbzZhU2N4SmV0OFdobHVYYi1zbHZoT2lWaQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="artibody"&gt;
-                        &lt;p class="article-global"&gt;&lt;/p&gt;                            &lt;p&gt;据了解，潞晨科技于3月1日宣布，&lt;strong&gt;潞晨云将在一周后停止提供DeepSeek API服务，&lt;/strong&gt;官方提醒用户尽快用完余额，如果没用完，将全额退款。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0302/9e6b1f6caadf957.jpg"&gt;&lt;/p&gt;&lt;p&gt;3月1日，DeepSeek在知乎上发表题为《DeepSeek-V3/R1 推理系统概览》的文章，全面揭晓V3/R1 推理系统背后的关键秘密。&lt;/p&gt;&lt;p&gt;文章首次披露了DeepSeek的理论成本和利润率等关键信息。&lt;/p&gt;&lt;p&gt;据介绍，假定GPU租赁成本为2美元/小时，总成本为87072美元/天；如果所有tokens全部按照DeepSeek R1的定价计算，&lt;strong&gt;理论上一天的总收入为562027美元/天，成本利润率为545%。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;据媒体报道，尤洋随后发文谈及DeepSeek MaaS成本。&lt;/p&gt;&lt;p&gt;尤洋称，“DeepSeek的MaaS要想有一个这么高满负荷的状态，必须要让自己的APP和网页始终超负荷运转。春节期间DeepSeek掉线了多少次？能像ChatGPT那样正常使用吗？我春节期间用过几次，问一个问题，然后说繁忙，让我稍后尝试，我等了15分钟或者一小时。这根本就不是一个合格的MaaS产品。”&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0302/5ef58def550ca3c.png"&gt;&lt;/p&gt;                        &lt;/div&gt;
-                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta</author><pubDate>Sun, 02 Mar 2025 05:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1jSUZuNFBqRjM5TEhHZHBLdUgyeG1BVW83TVBQdXY0WnZZNFVZSzF1ZF9rY1U1emZ1SVNfNzFYaW1MRTY5NG1IbzZhU2N4SmV0OFdobHVYYi1zbHZoT2lWaQ</guid></item><item><title>真正的甜点卡来了！AMD RX 9060系列确认：可能是3000元以内最香显卡 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE91Mk1iemp3b244aE96aEsxd25nT2pBRGNyZXdTVDlYczctZHhCNExMakZBOHRKY1hPcVFzREhwYTVtVENUa282R21rY3ppZWZCVDJoaVpnaTQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;真正的甜点卡来了！AMD RX 9060系列确认：可能是3000元以内最香显卡&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-03-02 12:56:01  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/801442.html" title="朝晖的主页" class="newstiao4"&gt;朝晖&lt;/a&gt;&lt;p&gt;  编辑：朝晖 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1033313-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月2日消息，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1033/1033296.htm" target="_blank"&gt;4499元的AMD RX 9070系列发布后相当炸裂&lt;/a&gt;，但A粉们认为它还不够甜点。&lt;strong&gt;这不，真正的甜点卡要来了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;AMD官方已经确认，RX 9060系列将于第二季度正式发布。&lt;/strong&gt;&lt;/span&gt;据悉，该系列同样包括两款型号，RX 9070系列将PKRTX 5070系列，RX 9060系列则直接对标RTX 5060系列，预计后者将于4月份推出。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250302/62fa7d682e1b452f94caafc009a5d0bf.jpg" target="_blank"&gt;&lt;img alt="真正的甜点卡来了！AMD RX 9060系列确认：可能是3000元以内最香显卡" h="312" src="//img1.mydrivers.com/img/20250302/s_62fa7d682e1b452f94caafc009a5d0bf.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;据悉，&lt;span&gt;&lt;strong&gt;RX 9060系列将搭载Navi 44 GPU，功耗预计不高于200W，售价低于400美元（约合2,913元）&lt;/strong&gt;。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;考虑到RX 9070系列采取田忌赛马策略，可以预见，&lt;strong&gt;RX 9060系列同样会后发制人——在RTX 5070 Ti、5070公布售价之后，再定一个“惊喜”的价格。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;AMD之前说过，&lt;strong&gt;数据显示超过88％的玩家购买显卡的价格都在5999元之下。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;所以，&lt;strong&gt;AMD就专注于满足绝大多数玩家的期待，让玩家以更亲民的价格，享受更高的分辨率、更高的性能，以及更好的升级性，比如继续采用标准的8针供电接口。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对于大多数游戏玩家来说，预算并没有那么足，RX 9060系列这样的甜点卡才是真正的消费主力。&lt;/p&gt;
-&lt;p&gt;毕竟，不是谁都能买得起RTX 5090。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250302/6daffbfd3ff6496ca228c1694c39424d.jpg" target="_blank"&gt;&lt;img alt="真正的甜点卡来了！AMD RX 9060系列确认：可能是3000元以内最香显卡" h="275" src="//img1.mydrivers.com/img/20250302/s_6daffbfd3ff6496ca228c1694c39424d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 02 Mar 2025 04:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE91Mk1iemp3b244aE96aEsxd25nT2pBRGNyZXdTVDlYczctZHhCNExMakZBOHRKY1hPcVFzREhwYTVtVENUa282R21rY3ppZWZCVDJoaVpnaTQ</guid></item></channel></rss>
+</description><author>虎嗅</author><pubDate>Sun, 02 Mar 2025 05:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9IekFEVE40S2g5bEthYTZ3dmNIdDZNenZGak1lbkdOel9uYkIwUWU5cmFlMlliLTRJdnF2NkViVDVVQ2pBc0tHZXZtTVk0c1RDNlp6LQ</guid></item></channel></rss>
