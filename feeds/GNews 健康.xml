@@ -1,5 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>霍乱弧菌的实验室诊断新进展：多技术揭示病菌特性与诊疗策略优化 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9oMnNtYlZ4MkxCVjlhT3diekJNQjczS2pIZ2FkNnlmOVNXLTRvQWhRUlJqM2RtcVdMQWNkZ20tRkJlVm82d2JCTWM1ZFFVOUc4bEFBbERKWlFueTZSTmJjOXJDSEJldjZiY0xtQw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>深度学习框架助力骨盆和骶骨肿瘤精准分割：多序列 MRI 的突破 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBTcVFlX0R0aFFXU0ZlSkZCYl9iVFRmejQ2Z2ktTWhwZ0dPenhjdW8xeGtuRUR4blBpRFdwQXJqZEktQi16WGpvMlpwQ0V4Z1d2cy1NbEJLeTkxam0zaER3bWVnSkkwV3p3UmoySQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　研究人员为解决骨盆和骶骨肿瘤（PSTs）分割难题，开发 DL 框架，结果良好，具临床应用潜力。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在人体的骨盆和骶骨区域，肿瘤就像隐藏在复杂地形中的 “暗堡”，因其特殊的解剖位置和多样的组织特性，诊断和治疗面临着巨大挑战。骨盆和骶骨肿瘤（Pelvic and sacral tumors，PSTs）无论是原发性还是继发性，往往表现为较大的软组织肿块，容易侵犯周围的血管、神经和盆腔器官。在诊断过程中，磁共振成像（Magnetic resonance imaging，MRI）虽能提供详细的组织结构信息，但要从多序列 MRI 中精准地分割出 PSTs，对于放射科医生来说困难重重，不仅耗时，还需要丰富的临床经验，这也严重阻碍了有效的治疗规划和手术干预。&lt;/p&gt;
+&lt;p&gt;为了攻克这一难题，北京大学人民医院和 InferVision 研究所的研究人员开展了一项具有突破性的研究。他们致力于开发一种基于深度学习（Deep learning，DL）的框架，旨在实现从多序列 MRI 中高效分割 PSTs。相关研究成果发表在《Cancer Imaging》上。&lt;/p&gt;
+&lt;p&gt;研究人员在开展研究时，运用了多种关键技术方法。首先，他们从医院的病例库中选取了 2011 年 4 月至 2022 年 5 月期间 921 例经病理证实的 PSTs 患者，经过严格的纳入和排除标准筛选，最终 616 例患者纳入研究，并分为训练集、验证集和测试集。其次，采用不同场强的 GE 医疗设备进行骨盆 MRI 扫描，获取 T1 加权（T1-w）、T2 加权（T2-w）、扩散加权成像（Diffusion weighted imaging，DWI）和对比增强 T1 加权（Contrast-enhanced T1-weighted，CET1-w）序列图像。手动标注时，训练集进行粗标注，测试集进行细标注。在模型构建方面，提出了一种融合 2.5D U-net 和 MobileNetV2 的 DL 框架，采用快速注释策略，开发了 All-sequence 分割模型和 T2-fusion 分割模型，并使用 Dice 评分和交并比（Intersection over union，IoU）评估模型性能。&lt;/p&gt;
+&lt;p&gt;研究结果如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;患者特征&lt;/strong&gt;：616 例患者中男性 331 人、女性 285 人，平均年龄 41.74±17.63 岁。训练集、验证集和测试集在年龄、性别、肿瘤大小、位置和恶性程度等方面无显著差异。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不同维度分割比较&lt;/strong&gt;：2.5D MobileNetV2 + Unet 模型表现最佳，Dice 评分为 0.741，IoU 为 0.615，优于 2D 和 3D 模型。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;All-sequence 模型性能&lt;/strong&gt;：该模型用不同序列训练时，T2-w 输入的 Dice 评分最高，为 0.819；多序列融合训练时，T1-w、T2-w 和 DWI 输入表现最佳。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;T2-fusion 模型性能&lt;/strong&gt;：以 T2-w 和 CET1-w 序列构建模型，T2-w 的 Dice 评分达 0.833 ，IoU 为 0.719，优于 All-sequence 模型。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究结论和讨论部分指出，研究开发的两个模型具有重要意义。All-sequence 模型适用于单序列图像，T2-fusion 模型对 T2-w 图像分割性能更优，二者都有潜力提高临床效率，减轻医生工作量。同时，研究首次将 2.5D U-Net 应用于基于多序列 MRI 的 PSTs 分割，验证了其在诊断、手术规划和治疗方面的巨大潜力。不过，研究也存在局限性，如 MRI 数据仅来自一家机构，样本排除了图像不完整或质量差的患者，且只纳入了单个 PSTs 病例。未来的研究将聚焦于优化融合策略、纳入多中心数据、扩展模型处理多个肿瘤病例，进一步评估模型在实际临床中的效用。这项研究为 PSTs 的临床诊断和治疗开辟了新的道路，有望推动医学领域在该疾病研究上取得更大的进展。&amp;lt;这项研究成果为医学领域带来了新的希望。在未来，随着技术的不断优化和完善，基于该深度学习框架的应用可能会更加广泛。它或许能成为医生诊断 psts&amp;gt;这项研究成果为医学领域带来了新的希望。在未来，随着技术的不断优化和完善，基于该深度学习框架的应用可能会更加广泛。它或许能成为医生诊断&amp;gt;&lt;/p&gt;
+&lt;p&gt;从更宏观的角度看，此研究也为其他医学影像领域的肿瘤分割研究提供了宝贵的借鉴经验。其采用的 2.5D 技术、多序列融合策略以及快速注释方法等，都有可能被应用到其他部位肿瘤的诊断和治疗中，推动整个医学影像学的发展。&lt;/p&gt;
+&lt;p&gt;然而，要将这些研究成果真正转化为临床实践中的常规应用，还需要克服诸多挑战。一方面，需要进一步验证模型在不同人群、不同设备和不同临床环境下的稳定性和可靠性；另一方面，如何将这些复杂的技术整合到现有的医疗系统中，实现与临床工作流程的无缝对接，也是亟待解决的问题。&lt;/p&gt;
+&lt;p&gt;但无论如何，这项发表于《Cancer Imaging》的研究已经迈出了重要的一步。它让人们看到了深度学习技术在医学领域的巨大潜力，也为后续的研究指明了方向。相信在科研人员的不断努力下，这些技术将更快地造福患者，为人类健康事业做出更大的贡献。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 13 Mar 2025 22:24:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBTcVFlX0R0aFFXU0ZlSkZCYl9iVFRmejQ2Z2ktTWhwZ0dPenhjdW8xeGtuRUR4blBpRFdwQXJqZEktQi16WGpvMlpwQ0V4Z1d2cy1NbEJLeTkxam0zaER3bWVnSkkwV3p3UmoySQ</guid></item><item><title>利用未成熟合子胚实现荠蓝基因工程新突破，为作物改良开辟新路径 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1JampZLVVzYzNxOUZiaTBoVFBEODcySEktam14WjI2a1hUcVNaTzAwMTR4WFd3RFk3Y0lzY3BLUnRGWnh3VkhfVi1hQllqbzVhVWFUY05XOXpiU3dMc1h5bEpyZUFwenFXeS1aRA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决荠蓝遗传转化难题，研究人员开展相关研究，建立新转化方法并验证其效率，为作物改良提供平台。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　荠蓝（&lt;/p&gt;&lt;em&gt;Camelina sativa&lt;/em&gt;&lt;p&gt; (L.) Crantz），一种极具潜力的油籽作物，它就像植物界的 “多面手”。在面对低温、干旱和土壤贫瘠等恶劣环境时，荠蓝展现出了顽强的生命力，比常见的油籽油菜更能适应这些挑战。而且，它的生长周期短，从种植到成熟只需 85 - 100 天，这一特性不仅使其适合用于间作，还让它成为农业油籽作物研究的 “宠儿”，被当作实验模型植物。荠蓝种子更是蕴含着独特的宝藏 —— 极高含量的 α - 亚麻酸，这让它成为人体必需的 ω - 3 脂肪酸的优质来源，在人类营养和化学工业领域都有着重要价值。同时，其种子榨油后的饼粕富含蛋白质，可作为动物饲料，进一步提升了它的经济价值。
+&lt;/p&gt;&lt;p&gt;然而，在荠蓝的研究和应用之路上，遗传转化却成了一块难啃的 “硬骨头”。农杆菌介导的转化方法，因其获得的转基因拷贝数相对较低，能降低转基因沉默的风险，备受研究者青睐。过去二十年，基于农杆菌的蘸花法在荠蓝转基因植物培育中广泛应用，但它就像一个 “挑剔的孩子”，对环境条件要求苛刻，且转化效率较低，还存在明显的基因型依赖性。除此之外，对于许多植物来说，遗传转化通常借助细胞和组织培养来完成，可在荠蓝身上，基于此的可行方法却一直未被成功建立。此前的研究，有的用幼苗的子叶、叶柄和下胚轴片段接种农杆菌，有的使用叶片外植体或微繁殖的茎尖分生组织，但这些研究都没能提供 T - DNA 基因组整合和遗传的分子证据，也未在后续应用中发挥作用。&lt;/p&gt;
+&lt;p&gt;为了攻克这些难题，来自莱布尼茨植物遗传学和作物植物研究所以及海因里希?海涅大学杜塞尔多夫分校等机构的研究人员展开了深入研究。他们的研究成果发表在《Plant Methods》杂志上，为荠蓝的遗传转化带来了新的曙光。&lt;/p&gt;
+&lt;p&gt;在研究过程中，研究人员运用了多种关键技术方法。首先，他们精心挑选了合适的植物材料，包括实验荠蓝品系 Cam139 以及 Calena 和 Ligena 两个品种。在构建载体时，通过一系列操作将含有报告基因的表达盒导入农杆菌菌株 AGL1 和 LBA4404/pSB1 中。对于未成熟合子胚的处理，研究人员严格按照特定方法进行解剖和培养，之后利用真空辅助的方式让农杆菌与胚外植体进行接种和共培养。在筛选转基因植株时，采用 PCR、GFP 荧光检测和 DNA 凝胶印迹分析（Southern blot）等技术，从多个层面验证转基因的稳定性和遗传性。&lt;/p&gt;
+&lt;p&gt;下面来看看具体的研究结果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;建立农杆菌介导的转化方案&lt;/strong&gt;：研究人员制定了一套完整的转化流程。从授粉两周后采集供体植物的花序开始，小心地从未成熟的角果中取出未成熟合子胚进行预培养。在真空辅助农杆菌接种前，用针刺破胚外植体，就像为农杆菌打开了一扇进入的 “门”，同时促进伤口诱导的可再生结构形成。接种后，让外植体与农杆菌共培养，随后在选择性条件下，经过三个月左右，不定芽和小植株逐渐形成，最后通过分子水平检测确认转基因植株。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;针刺和农杆菌接种刺激不定芽形成&lt;/strong&gt;：研究发现，针刺和农杆菌接种相结合，能让不定芽的形成数量比未处理的对照组增加约五倍，单独针刺也能使不定芽数量翻倍，而只进行农杆菌接种却没有明显效果。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;预培养时间和针刺时间点的影响&lt;/strong&gt;：实验表明，在农杆菌接种前预培养 3 天，且在接种前立即针刺，能获得更多的转基因植株，不过不同处理间的转化效率差异并不显著。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;农杆菌密度、乙酰丁香酮浓度和共培养时间的影响&lt;/strong&gt;：研究显示，使用较低的农杆菌密度（OD&lt;sub&gt;600&lt;/sub&gt;为 0.3）时，共培养 3 天产生的转基因植株数量比共培养 2 天的多。而当农杆菌密度 OD&lt;sub&gt;600&lt;/sub&gt;为 0.6、共培养 2 天且乙酰丁香酮浓度为 150μM 时，获得的转基因植株数量最多，但与其他处理相比，只有这一组合与效果最差的处理之间存在显著差异。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;比较两种农杆菌菌株&lt;/strong&gt;：实验对比了超毒农杆菌菌株 LBA4404/pSB1 和 AGL1，结果发现 AGL1 的转化效率明显更高，这不仅体现在植物再生效率上，还体现在再生植株中转基因的比例更高。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;优化转基因植株形成过程中的选择条件&lt;/strong&gt;：在优化选择条件的实验中，当共培养后用 25mg/L 的潮霉素处理 4 周时，转化效率最高，同时产生非转基因再生体的外植体比例最低。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;转化方法对不同基因型的适用性&lt;/strong&gt;：研究人员用 Cam139 品系以及 Ligena 和 Calena 两个品种进行实验，发现在两种选择方案下，所有测试基因型的转化效率基本相当，其中 Ligena 品种获得的转基因植株数量最多，但非转基因幸存者的比例也较高，超过 70%。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;转基因植株分析&lt;/strong&gt;：研究人员确定了种子萌发的选择性条件，发现 40mg/L 的潮霉素可用于后续 T&lt;sub&gt;1&lt;/sub&gt;代家族的分离分析。通过潮霉素抗性、GFP 特异性 PCR、GFP 荧光检测和 DNA 凝胶印迹分析等多种方法，证实了转基因的世代传递和在后代中的分离，还明确了转基因的基因组整合位点和 T - DNA 拷贝数。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在讨论部分，研究人员指出，他们建立的基于未成熟合子胚农杆菌接种的遗传转化新方法，为荠蓝的遗传改良提供了有力工具。与传统的蘸花法相比，新方法基因型依赖性低、稳定性好且效率高。同时，该方法还为 DNA 或其他生物分子直接转移到可再生细胞的进一步方法开发提供了可能，有望推动荠蓝基因组编辑技术的发展，为这种具有重要农业价值的作物改良开辟新的道路。&lt;/p&gt;
+&lt;p&gt;综上所述，这项研究成功建立了荠蓝的遗传转化新方法，为基因功能验证和植物性能及品质特征的生物技术改良搭建了一个实用平台，对荠蓝的研究和应用发展具有重要意义。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 13 Mar 2025 22:14:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1JampZLVVzYzNxOUZiaTBoVFBEODcySEktam14WjI2a1hUcVNaTzAwMTR4WFd3RFk3Y0lzY3BLUnRGWnh3VkhfVi1hQllqbzVhVWFUY05XOXpiU3dMc1h5bEpyZUFwenFXeS1aRA</guid></item><item><title>多药联用与英国成年人痴呆、帕金森病及死亡风险的关联研究：多状态建模新发现 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE42Q1NPTGF4V1RHak1JU2o1UE96U1BKeUNkamw0QkxoS3FNMTBiX3ZaTzBBZVczWThUaVFBMFZxY0QtOGNGaU9NWVZmRWtnRGJLd20yX1gwSlRIZWNYc1pqZUZmVkhOTTQxZHM1MQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究多药联用（POLYPH）对健康状态转变的影响，研究人员分析英国生物银行数据，发现其与痴呆、死亡风险增加有关，特定药物组合有不同影响。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在人口老龄化加剧的当下，老年人的健康问题愈发受到关注。多药联用（Polypharmacy，POLYPH）现象在老年人群中日益普遍，即一位患者同时使用多种药物。这一现象不仅与多种不良健康结局相关，还可能对疾病进展和治疗产生负面影响。过往研究多聚焦于 POLYPH 对特定健康结局的影响，却鲜少关注其对健康状态转变（包括死亡）的作用。而且，诸如社会经济地位、心血管健康风险因素等常见特征可能会干扰研究结果，使得 POLYPH 对这些转变的真实影响尚不明确。&lt;/p&gt;
+&lt;p&gt;为填补这一研究空白，来自纽约大学格罗斯曼医学院、美国国立衰老研究所等机构的研究人员，利用英国生物银行（UK Biobank）的大量数据开展了相关研究。该研究成果发表在《GeroScience》杂志上。&lt;/p&gt;
+&lt;p&gt;研究人员运用了多种技术方法。首先，以 UK Biobank 中 361,970 名 50 岁及以上的参与者为样本，这些参与者提供了丰富的信息，包括自我调查问卷、面对面访谈、生物样本和广泛的表型数据等。研究人员通过死亡登记、医院登记联动算法生成的数据，确定痴呆、帕金森病（Parkinson’s disease，PD）病例。同时，将 POLYPH 定义为使用 5 种及以上药物，并对参与者的多种特征进行分类和记录。在统计分析方面，研究人员使用了时间事件分析、Cox 比例风险模型、多状态模型等方法，还进行了潜在类别分析（Latent Class Analysis，LCA），以探究不同药物组合与健康结局之间的关系。&lt;/p&gt;
+&lt;p&gt;研究结果显示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;样本特征差异&lt;/strong&gt;：性别差异在多个特征上有所体现。女性在心血管健康相关的 LE8 总分、生活方式和生物学子分数上表现更优，但在社会经济地位相关指标上低于男性，且女性多药联用的比例更高。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;疾病与死亡风险关联&lt;/strong&gt;：通过 Kaplan-Meier 曲线和 Cox 比例风险模型分析发现，POLYPH（2 + 定义）与全因痴呆、PD 和全因死亡率的增加显著相关。在全因痴呆和全因死亡率方面，男性的关联更为明显。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;健康状态转变分析&lt;/strong&gt;：多状态分析确定了 6 种健康状态转变。在完全调整的 Weibull 多状态模型中，POLYPH&lt;sup&gt;+&lt;/sup&gt;显著降低了从健康到痴呆和从健康到死亡的生存概率。提高药物使用阈值至 5 种及以上，会进一步增加从健康到 PD 和从痴呆到死亡的风险。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特定药物组合影响&lt;/strong&gt;：利用 LCA 和广义结构方程模型（Generalized Structural Equation Models，GSEM），研究发现某些药物组合，如 omega-3 脂肪酸和多种维生素，与痴呆和死亡风险呈负相关；而另一些组合，如 LC9 反映的药物组合（增加阿托伐他汀和胰岛素产品的使用，减少软骨素产品的使用），则与这些结局呈正相关。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;综上所述，该研究表明多药联用与痴呆、全因死亡率的增加有关，即使在调整共病因素后依然如此。这一结果强调了谨慎处方和定期药物审查的重要性，特别是对于患有多种慢性疾病的老年弱势群体。同时，研究还发现了一些可能对痴呆和死亡风险有保护作用或有害作用的药物组合，为后续进一步开展大规模随机对照试验提供了方向。未来还需在类似人群中进行更多研究，以验证和拓展这些发现，从而更好地指导临床实践，保障老年人的健康。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 13 Mar 2025 21:48:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE42Q1NPTGF4V1RHak1JU2o1UE96U1BKeUNkamw0QkxoS3FNMTBiX3ZaTzBBZVczWThUaVFBMFZxY0QtOGNGaU9NWVZmRWtnRGJLd20yX1gwSlRIZWNYc1pqZUZmVkhOTTQxZHM1MQ</guid></item><item><title>利用神经中胚层祖细胞（NMPs）培育脊髓神经元的突破性成果 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9ueVZWaTN6XzRGVzBJbl9ybDNvZ29FSVZYVGZLalpmdmdWZEt0WkVtU2Q2QldEUGFud0MwdzF4Y3g1a3VVVDRGRHdncF81Y2ZDdnk2cm1FQTlkd1FIU3pjdDBoWmZnNWtrbTVlSg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;利用神经中胚层祖细胞（NMPs）培育脊髓神经元的突破性成果&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年03月14日&lt;/i&gt;
+            &lt;i&gt;来源：Human Cell 3.4&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为再生及人类发育研究，研究人员开展用诱导多能干细胞衍生 NMPs 培育脊髓神经元研究，成果具临床潜力。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　从多能干细胞通过神经中胚层祖细胞（NMPs）生成脊髓神经元，不仅是再生医学的重要环节，也是人类发育研究的必要步骤。本研究阐述了一种利用诱导多能干细胞衍生的 NMPs 在培养中获取脊髓神经元的方法。该方法先对 NMPs 进行 3D 培养，然后将 3D 培养的 NMPs 转移至单层培养，并依次激活视黄酸（Retinoic acid）和音猬因子（sonic hedgehog）通路。通过该方法培育出的脊髓神经元具有活跃的钙信号传导、电生理活性、轴突伸长能力和突触小泡运输功能。研究检测了包括 β - 微管蛋白（β -Tubulin）、神经分化因子 1（NeuroD1）、配对盒基因 6（Pax6）、神经元核抗原（NeuN）、运动神经元和胰腺同源盒蛋白 1（Mnx-1）、胰岛 1 蛋白（Isl1）、胰岛 2 蛋白（Isl2）、微管相关蛋白 2（Map2）、神经丝蛋白（NF）、性别决定区 Y 框蛋白 2（Sox2）等标记蛋白的表达谱，以时间依赖的方式探究发育调控转录因子和终末分化标记物的产生情况。在分化过程中，细胞获得了完全的神经表型，这在分子水平上通过 RNA 测序得以证实。基于液相色谱 - 串联质谱（LS-MS/MS）分析的蛋白质表达谱显示了神经分化诱导通路。由于 NMPs 在发育阶段可分化为脊髓神经元细胞，本研究结果凸显了 NMP 衍生的脊髓神经元在疾病建模和临床治疗方面的进一步潜力。
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://alicdn.ebioweb.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 13 Mar 2025 21:48:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9ueVZWaTN6XzRGVzBJbl9ybDNvZ29FSVZYVGZLalpmdmdWZEt0WkVtU2Q2QldEUGFud0MwdzF4Y3g1a3VVVDRGRHdncF81Y2ZDdnk2cm1FQTlkd1FIU3pjdDBoWmZnNWtrbTVlSg</guid></item><item><title>茶树精油与曲酸组合对鼠伤寒沙门氏菌的抗菌研究：潜在的治疗新策略 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFA1R0JWR1FqZ0ZmUFF2SVVWU2Z6RGdRT3lwRTg3T0VsY0o1QV9mYktLQXc2VjM1Y204VjZucnN1NnY4UC1icXVGaXRuSGpnMXBWbXp1cXV0U18xMVE2MFhoWkZNMU4yc1NNQnRUWg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;茶树精油与曲酸组合对鼠伤寒沙门氏菌的抗菌研究：潜在的治疗新策略&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年03月14日&lt;/i&gt;
+            &lt;i&gt;来源：Current Microbiology 2.3&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究抗菌潜力，研究人员开展茶树精油（TTO）与曲酸组合研究，发现二者有协同抗菌效果。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　茶树精油（Melaleuca alternifolia (tea tree) essential oil，TTO）因其抗炎和抗菌特性而被广泛认可，这主要归因于其主要成分萜品 - 4 - 醇（terpinen-4-ol）。曲酸（Kojic acid）是一种常用于化妆品配方的化合物，具有强大的抗氧化和广谱抗菌活性。在这项研究中，研究人员评估了商业药典级茶树精油（TTO）与曲酸以及萜品 - 4 - 醇组合的抗菌潜力。通过气相色谱 - 火焰离子化检测（GC-FID）和气相色谱 - 质谱（GC/MS）分析确认了茶树精油（TTO）的质量，其中萜品 - 4 - 醇是主要成分（44.4%）。研究人员对包括产朊假丝酵母（Candida utilis）、白色念珠菌（Candida albicans）、克柔念珠菌（Candida krusei）、热带念珠菌（Candida tropicalis）、近平滑念珠菌（Candida parapsilosis）、大肠杆菌（Escherichia coli）和鼠伤寒沙门氏菌（Salmonella Typhimurium）在内的人类病原体进行了体外抗菌试验。值得注意的是，所有测试样品对鼠伤寒沙门氏菌（S. Typhimurium ）均表现出活性。曲酸与茶树精油（TTO）组合显示出协同效应，部分抑菌浓度指数（fractional inhibitory concentration index，FICI）为 0.266，而曲酸与萜品 - 4 - 醇的组合则显示出更强的协同效应（FICI：0.039）。茶树精油（TTO）和萜品 - 4 - 醇的组合产生了相加效应（FICI：0.508）。据研究人员所知，这项研究首次证明了茶树精油（TTO）和曲酸对鼠伤寒沙门氏菌（S. Typhimurium ）的联合有效性。萜品 - 4 - 醇和曲酸组合所观察到的协同活性，凸显了其在安全性评估后作为抗菌治疗策略的潜力。
+
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://alicdn.ebioweb.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 13 Mar 2025 21:39:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFA1R0JWR1FqZ0ZmUFF2SVVWU2Z6RGdRT3lwRTg3T0VsY0o1QV9mYktLQXc2VjM1Y204VjZucnN1NnY4UC1icXVGaXRuSGpnMXBWbXp1cXV0U18xMVE2MFhoWkZNMU4yc1NNQnRUWg</guid></item><item><title>重组 α 毒素 BmK-M9：乳腺癌治疗的新希望 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5zRU04a040bEt5X1czWlE2MlFqa0NLU1k4WmlvY2p2WE1OOWYzeWtURkNxdDJDM1c2VzZQZkI4TWVtVE90bTZocTZZUHhvMzA3WTRkb1BSSWNnNG1fQWVid3o3d3dWUGFDUnYtWA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究 BmK-M9 对乳腺癌的作用及机制，研究发现其能抑制肿瘤进展，有望成治疗新策略。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;h3&gt;一、研究背景：探寻乳腺癌治疗新曙光&lt;/h3&gt;
+&lt;p&gt;乳腺癌，这个全球女性健康的 “头号杀手”，每年都在制造着惊人的数据。2022 年，全球有 229.7 万新发病例，66.6 万人因此失去生命 。传统的放疗和化疗在对抗乳腺癌时，就像一把 “双刃剑”，在杀死癌细胞的同时，也给患者带来了诸多副作用。&lt;/p&gt;
+&lt;p&gt;从天然产物中寻找抗癌 “奇兵”，成为了科研人员的重要方向。蝎毒，这种听起来让人胆寒的物质，却蕴含着巨大的潜力。其中的 α 毒素 BmK-M9，此前却鲜有人关注它在乳腺癌治疗方面的可能性。&lt;/p&gt;
+&lt;p&gt;乳腺癌的发生和发展，与众多信号通路密切相关，Wnt/β-catenin 通路就是其中关键的一条。异常激活的 Wnt/β-catenin 通路，就像给癌细胞开了 “加速键”，推动着肿瘤的生长、转移。然而，目前针对这条通路的乳腺癌治疗药物还未获批。在这样的背景下，研究 BmK-M9 对乳腺癌的作用及机制，显得尤为重要。&lt;/p&gt;
+&lt;h3&gt;二、研究团队与研究概况&lt;/h3&gt;
+&lt;p&gt;昆明医科大学第三附属医院等机构的研究人员开展了这项研究，相关成果发表在《Cell Biochemistry and Biophysics》上。&lt;/p&gt;
+&lt;p&gt;为了揭开 BmK-M9 的抗癌 “秘密”，研究人员运用了多种关键技术方法。在细胞实验中，通过细胞培养技术培养多种乳腺癌细胞系（如 MDA-MB-231、SUM149PT 和 MCF7 等），为后续实验提供研究对象。利用侵袭实验、MTT 法、细胞迁移实验和流式细胞术等，分别检测 BmK-M9 对乳腺癌细胞侵袭、增殖、迁移和凋亡的影响。在动物实验方面，以裸鼠为模型，构建乳腺癌移植瘤，观察 BmK-M9 在体内对肿瘤生长的抑制作用。同时，采用 mRNA 测序技术，分析 BmK-M9 处理后乳腺癌细胞的基因表达变化，探寻其潜在的作用机制；运用蛋白质免疫印迹（Western blot）和免疫组化（IHC）技术，检测相关蛋白的表达水平，进一步验证机制。&lt;/p&gt;
+&lt;h3&gt;三、研究结果：BmK-M9 的抗癌 “力量”&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;BmK-M9 的生物活性及对乳腺癌细胞侵袭的抑制&lt;/strong&gt;：研究人员成功构建表达载体，获得具有生物活性的 BmK-M9 蛋白。通过电生理实验发现，BmK-M9 能显著抑制 HEK293T 细胞过表达的 Na&lt;sub&gt;V&lt;/sub&gt;1.5 通道的快速复极化，证明其具有与类似物相似的生物活性。细胞侵袭实验表明，在 MDA-MB-231、SUM149PT 和 MCF7 这三种乳腺癌细胞系中，BmK-M9 处理组的癌细胞侵袭能力明显低于对照组，展现出对乳腺癌细胞侵袭的强大抑制作用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;对乳腺癌细胞迁移和活力的影响&lt;/strong&gt;：划痕愈合实验显示，用 1μM BmK-M9 处理乳腺癌细胞 48 小时后，细胞划痕宽度比对照组更宽，愈合速度明显减慢，这表明 BmK-M9 能显著抑制乳腺癌细胞的迁移能力。MTT 实验结果则表明，BmK-M9 对不同乳腺癌细胞系的活力影响各异，在一定浓度下能抑制 SUM149PT 和 MCF7 细胞的活力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;促进乳腺癌细胞凋亡&lt;/strong&gt;：通过流式细胞术分析，研究人员发现 BmK-M9 能促进 MDA-MB-231 细胞的凋亡，且呈剂量依赖性趋势，同时使细胞周期阻滞在 G1 期。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;抑制裸鼠体内乳腺肿瘤生长&lt;/strong&gt;：在裸鼠乳腺癌移植瘤模型实验中，BmK-M9 显著抑制了肿瘤的生长，效果甚至优于阳性对照组药物雷诺嗪（Ranolazine）。免疫荧光分析显示，BmK-M9 处理组肿瘤组织中 Ki67 阳性细胞的比例明显降低，说明其能有效抑制肿瘤细胞的增殖。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作用机制探究&lt;/strong&gt;：mRNA 测序分析发现，BmK-M9 处理后的乳腺癌细胞，其差异表达基因主要富集在细胞生长、死亡、运动、通讯以及运输和代谢等细胞过程相关的通路中。进一步研究表明，BmK-M9 可能通过抑制 Wnt/β-catenin 信号通路发挥抗癌作用。蛋白质免疫印迹和免疫组化结果显示，BmK-M9 处理后，乳腺癌细胞中 β-catenin 信号通路相关关键蛋白（如 DVL3、NAKED2 和 β-catenin）的表达均呈时间依赖性下降，肿瘤组织中 β-catenin 的表达也显著降低。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;四、研究结论与意义：开启乳腺癌治疗新方向&lt;/h3&gt;
+&lt;p&gt;研究表明，BmK-M9 在体外和体内均展现出显著的抗乳腺癌效果。其作用机制主要是通过抑制 β-catenin 的表达，进而抑制 Wnt/β-catenin 信号通路，最终实现对肿瘤发展的抑制。&lt;/p&gt;
+&lt;p&gt;这一研究成果意义重大。首先，为乳腺癌治疗提供了新的潜在药物选择，BmK-M9 有望成为一种新型的抗癌药物。其次，深入揭示了 Wnt/β-catenin 信号通路在乳腺癌发展中的关键作用，为后续针对该通路的药物研发提供了重要理论依据。此外，研究中发现的 BmK-M9 与其他相关基因和蛋白的相互作用关系，也为进一步探究乳腺癌的发病机制和治疗策略开辟了新的方向。但目前研究仍处于初步阶段，未来还需要更多的研究来验证 BmK-M9 的安全性和有效性，推动其从实验室走向临床应用，为广大乳腺癌患者带来新的希望。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 13 Mar 2025 21:29:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5zRU04a040bEt5X1czWlE2MlFqa0NLU1k4WmlvY2p2WE1OOWYzeWtURkNxdDJDM1c2VzZQZkI4TWVtVE90bTZocTZZUHhvMzA3WTRkb1BSSWNnNG1fQWVid3o3d3dWUGFDUnYtWA</guid></item><item><title>霍乱弧菌的实验室诊断新进展：多技术揭示病菌特性与诊疗策略优化 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9oMnNtYlZ4MkxCVjlhT3diekJNQjczS2pIZ2FkNnlmOVNXLTRvQWhRUlJqM2RtcVdMQWNkZ20tRkJlVm82d2JCTWM1ZFFVOUc4bEFBbERKWlFueTZSTmJjOXJDSEJldjZiY0xtQw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
 	&lt;div class="p1_b1Left fl"&gt;
     	&lt;p class="p1Title"&gt;霍乱弧菌的实验室诊断新进展：多技术揭示病菌特性与诊疗策略优化&lt;/p&gt;
 		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
@@ -674,408 +988,4 @@ Saaiman）的幼童被母亲发现，左眼先是出现肿胀且流泪不止的�
 &lt;p&gt;本研究开发的基于肽的免疫分析在艰难梭菌感染诊断方面取得显著进展，尤其适用于粪便样本检测不切实际或存在文化敏感性的情况。该方法能够快速、灵敏且方便患者地检测抗毒素抗体，在改善 CDI 管理和控制其传播方面具有潜力。然而，还需要进一步优化和验证，以确认其独立诊断的实用性。研究结果也凸显了细菌毒力、宿主免疫和临床结果之间的复杂关系，为个性化治疗开辟了道路。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 22:30:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBjaGhpZDdMaG43aVV2cUVMQ3l2S1ZRdFplUUpQTl9nQU9KLWNIM2RqVjYwYmZRejZ5eUl3Z1VlaENKT0MwUWpfOVdiQVdLekF1Z2I2T0hLOXVncl94QVJwZmxtN0xwdWtBTXN5VQ</guid></item><item><title>MAZ 通过 LAMA5/STAT3 轴促进胃癌进展：潜在治疗新靶点 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE0xQ29NZjliRFA5cUU0eGZzWlk2cUJYSGx6Q212MjV0NGRxZXBZV1BMa0RrR3hIeVV1bmxHUEtLVHc0TS1BYWpoVTZUVi0zRjYwUXE1UzloQlZCUVY4UUtGVTJMbks4aU9WZ2tJag?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为探究 LAMA5 在胃癌中的作用机制，研究人员发现 MAZ 通过 LAMA5/STAT3 轴促进胃癌进展，为治疗提供新靶点。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　《MAZ-mediated LAMA5 transcription activation promotes gastric cancer progression through the STAT3 signaling》这篇论文发表在《Functional &amp;amp; Integrative Genomics》杂志上。&lt;/p&gt;
-&lt;p&gt;在全球范围内，胃癌（Gastric cancer，GC）是一种严重威胁人类健康的恶性肿瘤。它在癌症相关死亡率中位居第四，发病率位列第五。尽管化疗、靶向治疗和免疫治疗等系统性疗法不断发展，但胃癌患者的预后仍然很差，预计到 2040 年，其全球负担将增加 62% 。因此，深入了解胃癌发展的机制并开发更有效的治疗策略迫在眉睫。&lt;/p&gt;
-&lt;p&gt;在此背景下，山东第一医科大学附属山东省立医院的研究人员开展了相关研究。他们聚焦于层粘连蛋白亚基 α-5（Laminin subunit alpha-5，LAMA5）和 Myc 相关锌指蛋白（Myc-associated zinc finger protein，MAZ）在胃癌中的作用机制，旨在寻找新的治疗靶点，为改善胃癌患者的预后提供理论依据。&lt;/p&gt;
-&lt;p&gt;研究人员采用了多种关键技术方法来开展研究。细胞实验方面，通过细胞转染技术，用 sh - NC、sh - LAMA5 等多种慢病毒载体感染胃癌细胞，构建稳定细胞系；运用 CCK - 8、克隆形成、EdU、流式细胞术、划痕实验和 Transwell 实验，分别检测细胞的增殖、克隆形成、活力、凋亡、迁移和侵袭能力。动物实验上，将感染后的细胞接种到 BALB/c 小鼠皮下，建立小鼠异种移植瘤模型，定期测量肿瘤体积，实验结束后获取肿瘤组织并称重。此外，还利用 RNA 提取、逆转录（RT）和定量聚合酶链反应（RT - qPCR）检测基因表达水平；采用蛋白质免疫印迹（Western blot）分析蛋白表达；运用染色质免疫沉淀（ChIP）和双荧光素酶报告基因分析，探究转录因子与基因启动子的结合及对启动子活性的影响。&lt;/p&gt;
-&lt;p&gt;研究结果如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;LAMA5 在胃癌中的表达及预后意义&lt;/strong&gt;：通过对多个胃癌相关数据集分析发现，LAMA5 在胃癌组织中高表达。生存分析显示，高表达 LAMA5 的患者五年生存率显著低于低表达患者。在人胃癌细胞系 AGS 和 HGC27 中，LAMA5 的表达水平也明显高于人胃上皮细胞 GES1。这表明 LAMA5 的高表达与胃癌患者的不良预后密切相关。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LAMA5 对胃癌细胞恶性行为的影响及机制&lt;/strong&gt;：敲低 LAMA5 后，胃癌细胞的增殖、迁移和侵袭能力显著下降，同时细胞凋亡增加。进一步研究发现，LAMA5 可激活信号转导和转录激活因子 3（signal transducer and activator of transcription 3，STAT3）信号通路，沉默 LAMA5 会抑制 STAT3 的磷酸化以及 Bcl - x&lt;sub&gt;L&lt;/sub&gt;和 c - Myc 的蛋白表达，而 STAT3 激活剂 Colivelin 可逆转这些抑制作用。这说明 LAMA5 通过激活 STAT3 信号通路促进胃癌进展。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MAZ 对 LAMA5 的转录调控作用&lt;/strong&gt;：预测并筛选出 MAZ 可能是 LAMA5 的转录因子。实验证实，MAZ 在胃癌细胞中高表达，敲低 MAZ 可显著降低 LAMA5 的 mRNA 和蛋白表达。ChIP 实验表明 MAZ 能与 LAMA5 启动子结合，双荧光素酶报告基因分析显示敲低 MAZ 会抑制 LAMA5 启动子活性，且突变结合位点后该抑制作用消失。这表明 MAZ 可转录激活 LAMA5。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MAZ 对胃癌细胞生长的影响及体内验证&lt;/strong&gt;：体内实验显示，敲低 MAZ 可抑制胃癌细胞在小鼠体内的生长，使肿瘤体积减小、重量减轻，同时 Ki - 67 蛋白表达降低，细胞凋亡率增加。这表明 MAZ 在体内也对胃癌细胞的生长起到促进作用。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LAMA5 对 MAZ 抑制胃癌细胞作用的影响&lt;/strong&gt;：过表达 LAMA5 可逆转敲低 MAZ 对胃癌细胞增殖、迁移、侵袭和凋亡的抑制作用，在体内也能增强肿瘤的生长，增加 STAT3 的磷酸化以及 Bcl - x&lt;sub&gt;L&lt;/sub&gt;和 c - Myc 的蛋白表达。这进一步证实了 MAZ 通过诱导 LAMA5 表达和激活 STAT3 信号通路在胃癌中发挥致癌作用。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;研究结论和讨论部分指出，该研究揭示了 LAMA5 在胃癌进展中的重要作用，确定了 MAZ/LAMA5/STAT3 轴的存在。这一发现为胃癌的治疗提供了新的潜在靶点，基于抑制该轴的治疗策略有望成为治疗胃癌的有效方法。然而，研究也存在一些局限性，如未深入探讨该轴在胃癌发生发展过程中的其他调控机制，以及在不同临床病理特征患者中的差异等。未来需要进一步的研究来深入了解这些问题，为胃癌的精准治疗提供更坚实的理论基础。 &lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 22:26:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE0xQ29NZjliRFA5cUU0eGZzWlk2cUJYSGx6Q212MjV0NGRxZXBZV1BMa0RrR3hIeVV1bmxHUEtLVHc0TS1BYWpoVTZUVi0zRjYwUXE1UzloQlZCUVY4UUtGVTJMbks4aU9WZ2tJag</guid></item><item><title>化学诱变增强卡杜艾咖啡抗锈病潜力研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1PdjBhRE00SEVzcUpaWWtEU2FLeHBxV2hMcGM3TlJGYW05bjVfSjhxTzZQa1VPajladzQ3TzNCLWlIX2VCamJMTkNYbVVOZjhHS3NDa1lQQk94d2pVNHc1X3VwZXZ6WGdJQkEtTg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;化学诱变增强卡杜艾咖啡抗锈病潜力研究&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年03月13日&lt;/i&gt;
-            &lt;i&gt;来源：Plant Cell, Tissue and Organ Culture (PCTOC) 2.3&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为提升卡杜艾咖啡（Coffea arabica L. var. Catuaí）对咖啡锈病（Hemileia vastatrix）抗性，研究发现化学诱变可行，意义重大。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;p class="p1Textcen font14" id="Zoom"&gt;
-        　　本研究探索了化学诱变增强卡杜艾（Coffea arabica L. var. Catuaí）咖啡对咖啡锈病（Hemileia vastatrix）抗性的潜力。研究人员用叠氮化钠和甲磺酸乙酯对 163 株咖啡植株进行诱变处理，之后用咖啡锈病菌（H. vastatrix）夏孢子进行侵染试验。结果显示，有 11 株诱变植株的侵染严重程度与抗性对照 CR95 相同。对植株进行基因表达分析发现，防御相关基因如 CaRLK、CaGT 和 CaPR10 表达上调，在侵染严重程度降低的植株中尤为明显。这些结果表明，诱导突变可能提高咖啡的锈病抗性，为培育抗锈病的阿拉比卡咖啡品种提供了一种可行的方法。
-        &lt;/p&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://alicdn.ebioweb.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:50:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1PdjBhRE00SEVzcUpaWWtEU2FLeHBxV2hMcGM3TlJGYW05bjVfSjhxTzZQa1VPajladzQ3TzNCLWlIX2VCamJMTkNYbVVOZjhHS3NDa1lQQk94d2pVNHc1X3VwZXZ6WGdJQkEtTg</guid></item><item><title>探寻有机液肥组合助力印度东部高原芥菜可持续种植的最优解 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE84QTlSWkpMZUlxRnlqWktVcVpPeDBleHFpeHJHdTAwVlJ0VXdjV0JIMW1jbzVQT3o2SHNBQl8yMkJMbmhDdko1LTFuY0hUbGtZaF9vT2MyVHZ4dFF4c2NuOVcyRUktSnQzdEcwRQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为探究液肥对土壤及芥菜的影响，研究人员开展实验，发现 33.3% Jeevamrit+33.3% Kunapajala+33.3% Sasyagavya 组合最佳，利于芥菜种植。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　随着人们对农业生态系统中有毒化学物质影响的关注度日益提高，有机养分管理展现出良好的前景。具体而言，液体粪肥有望成为无机肥料的潜在替代品。然而，关于它们（单独使用或组合使用）对土壤养分循环、微生物动态的精确影响，以及对芥菜等油料作物的后续影响，相关研究却极为匮乏。本研究旨在评估液体粪肥对土壤肥力、微生物动态的功效，进而探究其对芥菜生长表现的影响。&lt;/p&gt;
-&lt;p&gt;研究人员在印度东部高原（EIP）的淋溶土（Alfisol）上进行了为期两年的田间试验，评估了 8 种土壤处理对印度芥菜养分有效性、微生物活性及生长表现的影响。这些处理包括单独或组合施用 Jeevamrit、Kunapajala 和 Sasyagavya，以及一个对照组（不施液体粪肥）。所有处理均添加了基础蚯蚓粪（vermicompost）以提高土壤肥力。&lt;/p&gt;
-&lt;p&gt;在测试的处理中，33.3% Jeevamrit+33.3% Kunapajala+33.3% Sasyagavya 的组合被证明对土壤 pH 值、养分和微生物动态具有最为积极的影响。此外，该处理在促进芥菜生长、产量特性方面表现卓越，种子产量和秸秆产量分别比其他处理高出 147% 和 89%，经济效益也最高。同时，芥菜的品质也得到显著提升，种子中氮、磷、钾含量分别增加 13%、73% 和 74%，秸秆中氮、磷、钾含量分别增加 81%、86% 和 36%；芥菜种子的总可溶性固形物、总糖、蛋白质和油含量分别增加 23%、23%、13% 和 10% 。&lt;/p&gt;
-&lt;p&gt;该研究表明，在印度东部高原研究区域，使用 33.3% Jeevamrit、33.3% Kunapajala 和 33.3% Sasyagavya 的组合，有助于实现芥菜的可持续种植。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:45:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE84QTlSWkpMZUlxRnlqWktVcVpPeDBleHFpeHJHdTAwVlJ0VXdjV0JIMW1jbzVQT3o2SHNBQl8yMkJMbmhDdko1LTFuY0hUbGtZaF9vT2MyVHZ4dFF4c2NuOVcyRUktSnQzdEcwRQ</guid></item><item><title>综述：探索香罗勒增强认知的作用：民族药理学和植物化学综述 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1JTzJ6NzlTZVdFeTNVSHRxdER1RDN6OVVPcnJDOGd1REVDM3pLRGFfelNiSVVIVUNqcUtFY1pQVEFaNGFvWHR4OExMd25pVXI3Wk4xRW1aVW1WUWlvV0w2WkM2dlUyVF9PVWRLSA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　香罗勒（Ocimum gratissimum）具认知增强潜力，本综述从多方面深入探究其作用与机制。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　### 香罗勒增强认知作用的研究进展&lt;/p&gt;&lt;p&gt;认知障碍已成为日益严峻的公共健康问题，尤其在老龄化加剧以及生活方式相关风险因素增多的背景下。其病理过程涉及神经元细胞死亡、突触功能障碍、神经毒性蛋白积累，以及神经炎症、氧化应激和血管因素等，这些因素相互作用，影响神经递质系统，进而导致认知功能下降。
-&lt;/p&gt;&lt;p&gt;当前针对认知下降的治疗手段多样，包括药物干预和抗氧化补充剂。药物干预方面，胆碱酯酶抑制剂如多奈哌齐（Donepezil）、卡巴拉汀（Rivastigmine）和加兰他敏（Galantamine），通过抑制乙酰胆碱酯酶，增加脑内乙酰胆碱水平，改善认知症状，但无法阻止疾病进展；NMDA 受体拮抗剂美金刚（Memantine），能减轻谷氨酸兴奋性毒性，保护神经元，用于治疗中重度阿尔茨海默病（AD）。抗氧化补充剂方面，牛磺酸（Taurine）、辅酶 Q10 等通过清除活性氧（ROS）、改善线粒体功能发挥神经保护作用，其他如槲皮素（Quercetin）、N - 乙酰半胱氨酸（N - acetylcysteine）等也展现出潜在的神经保护能力。&lt;/p&gt;
-&lt;p&gt;香罗勒（Ocimum gratissimum），又称丁香罗勒或非洲罗勒，在非洲和亚洲传统医学中应用广泛，具有丰富的民族药理学历史。它不仅用于治疗炎症、感染和消化问题，还被认为可增强认知功能。其富含多种生物活性化合物，如黄酮类、萜类、酚酸类等，这些成分赋予其抗氧化、抗炎和神经保护等特性。&lt;/p&gt;
-&lt;p&gt;从植物学特征来看，香罗勒是唇形科草本芳香灌木，原产于非洲热带和亚热带地区，现已在东南亚、南美洲和加勒比地区归化。在分类学上，它属于罗勒属，与其他罗勒属植物关系密切。&lt;/p&gt;
-&lt;p&gt;香罗勒的民族药理学意义重大。研究表明，它在传统医学中用于治疗记忆障碍、焦虑和抑郁。相关研究发现，香罗勒叶提取物能改善小鼠的行为障碍和抑郁样行为，减轻脑缺血损伤，还具有抗焦虑作用，其挥发化合物如丁香酚（eugenol）、百里酚（thymol）和芳樟醇（linalool）对中枢神经系统有抑制作用，可缓解焦虑和抑郁症状。此外，香罗勒还具有抗菌、抗炎、镇痛等多种功效。&lt;/p&gt;
-&lt;p&gt;香罗勒的植物化学组成丰富。其精油中丁香酚含量较高，具有抗氧化活性；黄酮类化合物如芹菜素（apigenin）、木犀草素（luteolin）和槲皮素等，具有抗炎和神经保护作用；单宁类物质具有抗氧化和抗炎特性；迷迭香酸（rosmarinic acid）是一种咖啡酸衍生物，能穿过血脑屏障（BBB），保护神经元，改善记忆功能。&lt;/p&gt;
-&lt;p&gt;多项研究为香罗勒的认知增强作用提供了流行病学证据。研究发现，香罗勒叶提取物能减少小鼠被动回避测试中的转移潜伏期和增加步下潜伏期，改善学习和记忆能力；在链脲佐菌素诱导的失忆模型中，香罗勒提取物也能显著提高学习和记忆参数。这些认知增强作用主要归因于其丰富的植物化学成分，如咖啡酸（caffeic acid）和槲皮素等。&lt;/p&gt;
-&lt;p&gt;在药理学方面，香罗勒叶提取物在不同剂量下对小鼠行为和认知功能有显著影响。较低剂量（25、50、100mg/kg）可治疗小鼠行为障碍和抑郁样症状，较高剂量（200、300mg/kg）能进一步增强认知表现，但 400mg/kg 时可能出现神经毒性。香罗勒的作用机制包括抗氧化、抗炎、调节神经递质（如增强乙酰胆碱水平）、调节神经营养因子（如脑源性神经营养因子 BDNF 和神经生长因子 NGF）、增强突触可塑性、调节线粒体功能、增强血脑屏障完整性、抗凋亡和调节基因表达等。&lt;/p&gt;
-&lt;p&gt;香罗勒在神经系统疾病治疗方面具有潜在应用前景。研究显示，其提取物可改善 AD 动物模型的记忆和认知功能，对痴呆等疾病也可能有改善作用；同时，它还能减轻焦虑和抑郁症状，影响情绪和认知表现。此外，香罗勒在抗菌、抗癌、抗糖尿病和保护肝脏等方面也展现出一定的潜力。&lt;/p&gt;
-&lt;p&gt;然而，香罗勒的安全性和毒性问题不容忽视。尽管多数研究表明其在适当使用时通常安全，但仍有部分人可能出现胃肠道不适、皮肤刺激和过敏反应等轻微不良反应。而且，香罗勒中的化合物可能与某些药物相互作用，孕妇和哺乳期妇女使用时也需谨慎。目前，对于其长期安全性，尤其是高剂量和长期使用的安全性，以及与其他药物的相互作用，还有待进一步研究。&lt;/p&gt;
-&lt;p&gt;综合来看，香罗勒在认知增强和神经保护方面展现出了令人期待的潜力。其丰富的植物化学成分和多样的生物学活性，为开发治疗认知障碍和神经退行性疾病的新型疗法提供了宝贵资源。但目前的研究仍处于初步阶段，未来需要开展更多设计严谨的临床试验，确定其在人体中的安全性和有效性，明确最佳剂量和治疗方案。同时，深入研究其作用机制，将有助于更好地发挥香罗勒的药用价值，为改善人类认知健康做出贡献。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:41:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1JTzJ6NzlTZVdFeTNVSHRxdER1RDN6OVVPcnJDOGd1REVDM3pLRGFfelNiSVVIVUNqcUtFY1pQVEFaNGFvWHR4OExMd25pVXI3Wk4xRW1aVW1WUWlvV0w2WkM2dlUyVF9PVWRLSA</guid></item><item><title>揭秘四种柿（Diospyros kaki L.）品种的营养与药用价值：为食品产业提供新方向 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1PdEV4czZqNktLNTBJa2JEWXFHOW5jNzJOcy11cE4tdGxBWGFrWHhXSVBURzdsQkFaSi1ud2xKQ012eGVrYTZoa0JnN3QyQ2dNUmZNakVtMXBGU29YUVVLV2dhaFpHcmRNWWVNcw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;揭秘四种柿（Diospyros kaki L.）品种的营养与药用价值：为食品产业提供新方向&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年03月13日&lt;/i&gt;
-            &lt;i&gt;来源：Genetic Resources and Crop Evolution 1.6&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　研究人员对四种柿（Diospyros kaki L.）品种展开营养和植物化学分析，发现其营养丰富、具多种生物活性，利于食品产业。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;p class="p1Textcen font14" id="Zoom"&gt;
-        　　几个世纪以来，水果植物对人类健康至关重要，它们能提供具有药理特性的生物活性化合物。在这种情况下，摄入水果作为维护人类健康的一种保护措施，正变得越来越重要。本研究采用近似分析和液相色谱质谱法（Liquid Chromatography Mass Spectrometry，LC-MS），对四种柿（Diospyros kaki L.）品种：富有（Fuyu）、蜂屋（Hachiya）、巧克力（Chocolate）和沙龙（Sharon）的营养成分和植物化学组成进行了研究。富有柿的干物质含量为 89.4%，灰分和蛋白质含量显著，对消化系统健康有益。蜂屋柿的干物质含量略低，为 88%，但纤维含量高达 37.43%。巧克力柿的干物质含量较高，为 89.9%。沙龙柿的成分独特，干物质含量为 87.8%，灰分含量为 13.5%，纤维含量为 21.23%。液相色谱 - 质谱分析在不同品种中鉴定出了多种醇类、醛类、酯类、脂肪酸、酮类和萜类物质，这些物质有助于形成柿子的风味和香气。不同品种的柿（Diospyros kaki L.）表现出显著的生物活性，包括抗氧化、抗炎和抗菌特性，有助于促进消化健康、对心血管有益，还可能在疾病预防方面具有潜在的治疗应用。这些结果为柿子在饮食和功能性食品行业的营养价值及潜在应用提供了有价值的见解。
-        &lt;/p&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://alicdn.ebioweb.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:41:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1PdEV4czZqNktLNTBJa2JEWXFHOW5jNzJOcy11cE4tdGxBWGFrWHhXSVBURzdsQkFaSi1ud2xKQ012eGVrYTZoa0JnN3QyQ2dNUmZNakVtMXBGU29YUVVLV2dhaFpHcmRNWWVNcw</guid></item><item><title>GBP5 在传染性单核细胞增多症相关肝损伤中的关键作用及机制探索 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1YSVVVMDQ0dk1vY2ZVNUlrSUJ1U201R0FMMnd4bHIyc18wVVFFR0RFam1HMEJQRS0tSnBLajRYWm9YRTEzWkxOMVRsbUpaZFFON0hoNWdYbTRPWmJaY01GRnNwdXB6VkFQM0ZESA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　研究人员为探究 IM 相关肝损伤机制，研究 GBP5 作用，发现 GBP5 通过 NLRP3 途径致肝损伤，意义重大。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　传染性单核细胞增多症（Infectious Mononucleosis，IM）是儿童常见疾病，由爱泼斯坦 - 巴尔病毒（Epstein-Barr virus，EBV）感染引起。EBV 就像一个隐藏在身体里的 “小恶魔”，大部分人感染后没有症状，但它却能引发多种疾病，IM 就是其中之一。临床上，IM 表现为发热、咽痛、颈部淋巴结肿大等，还会导致多器官功能损伤，其中肝损伤最为常见。据统计，60 - 70% 的 IM 患儿会出现肝损伤，可表现为转氨酶升高，少数甚至会进展为急性肝衰竭，严重影响患儿健康。然而，目前 IM 并发肝损伤的发病机制却模糊不清，就像一团迷雾，亟待科学家们去揭开。&lt;/p&gt;
-&lt;p&gt;为了弄清楚这团迷雾背后的真相，苏州大学附属儿童医院的研究人员展开了深入研究。他们的研究成果发表在《Italian Journal of Pediatrics》上，为我们了解 IM 相关肝损伤提供了重要线索。&lt;/p&gt;
-&lt;p&gt;研究人员采用了多种技术方法来开展研究。首先，他们收集了 70 例住院 IM 患儿的外周血，根据是否出现肝损伤将患儿分为肝损伤组（Liver Injury Group，LIG）和非肝损伤组（Non-liver Injury Group，NLIG） 。接着，从血液中分离出外周血单个核细胞（Peripheral Blood Mononuclear Cells，PBMCs）和血浆。然后，对两组中的部分样本（每组 5 例）进行 PBMCs 转录组测序，筛选出差异表达基因（Differentially Expressed Genes，DEGs） ，并进行 GO 功能富集、KEGG 富集和基因集富集分析（Gene Set Enrichment Analysis，GSEA）。同时，运用定量实时 PCR 技术检测两组中更多样本（每组 30 例）的 GBP5、NOD 样受体蛋白 3（NOD-like receptor protein 3，NLRP3）和半胱天冬酶 - 1（caspase-1）的相对表达量，利用 ELISA 技术测定两组血浆中 caspase-1、白细胞介素 - 1β（IL-1β）和白细胞介素 - 18（IL-18）的水平。&lt;/p&gt;
-&lt;p&gt;研究结果如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;转录组测序结果&lt;/strong&gt;：与 LIG 相比，NLIG 组筛选出 171 个 DEGs，其中 154 个上调，17 个下调。KEGG 和 GSEA 分析表明，IM 相关肝损伤与 NOD 样受体信号通路有关。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;患者特征&lt;/strong&gt;：LIG 和 NLIG 患儿在平均年龄、性别、发热患儿数量、发热持续时间和住院时间等方面无显著差异。但 LIG 患儿的白细胞（White Blood Cell，WBC）、淋巴细胞（Lymphocyte，L）计数、CD3&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt;T 细胞百分比、丙氨酸氨基转移酶（Alanine Aminotransferase，ALT）、天冬氨酸转氨酶（Aspartate Transaminase，AST）和乳酸脱氢酶（Lactate Dehydrogenase，LDH）显著高于 NLIG 患儿，而 CD3&lt;sup&gt;+&lt;/sup&gt;CD4&lt;sup&gt;+&lt;/sup&gt;T 细胞百分比则较低。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GBP5 表达情况&lt;/strong&gt;：与 NLIG 患儿相比，LIG 患儿 PBMCs 中 GBP5 的相对表达显著更高。GBP5 表达与血清 ALT、AST、LDH 和 CD3&lt;sup&gt;+&lt;/sup&gt;CD8&lt;sup&gt;+&lt;/sup&gt;T 细胞百分比呈正相关。并且，GBP5 在区分 IM 伴肝损伤方面具有较高的诊断准确性，其截断值为 1.60，敏感性为 76.7%，特异性为 90.0%，曲线下面积为 0.853。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;NLRP3 炎性小体的激活&lt;/strong&gt;：LIG 患儿 PBMCs 中 NLRP3 的相对表达显著高于 NLIG 患儿，GBP5 与 NLRP3 表达呈正相关。LIG 患儿 PBMCs 中 caspase-1 表达也显著高于 NLIG 患儿，NLRP3 与 caspase-1 表达呈正相关。同时，LIG 患儿血浆中 caspase-1、IL-1β 和 IL-18 水平显著高于 NLIG 患儿。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;研究结论和讨论部分指出，GBP5 在 IM 相关肝损伤中发挥着重要作用。GBP5 可能通过激活 NLRP3 炎性小体，促进 caspase-1 激活，释放 IL-1β 和 IL-18 等炎症因子，从而导致肝损伤。EBV 感染后，CD8&lt;sup&gt;+&lt;/sup&gt;T 细胞增殖并浸润到肝脏，GBP5 在 CD8&lt;sup&gt;+&lt;/sup&gt;T 细胞中的表达增强，进一步推动了 NLRP3 炎性小体的组装和激活。此外，GBP5 在区分 IM 患儿是否存在肝损伤方面具有较高的诊断准确性，有望成为评估肝损伤预后的生物标志物。不过，该研究也存在一些局限性，如未对 CD8&lt;sup&gt;+&lt;/sup&gt;T 细胞进行分离验证 GBP5 表达，未获取肝组织检测 GBP5 在肝细胞中的表达差异，且样本量较小等。后续研究可针对这些不足展开，进一步深入探索 GBP5 在 IM 相关肝损伤中的作用机制。&lt;/p&gt;
-&lt;p&gt;总的来说，这项研究为 IM 相关肝损伤的发病机制提供了新的见解，让我们对这个疾病有了更深入的认识，为未来的临床诊断和治疗提供了重要的理论依据，就像在黑暗中为医生们点亮了一盏明灯，指引着他们更好地治疗 IM 相关肝损伤的患儿。 &lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:35:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1YSVVVMDQ0dk1vY2ZVNUlrSUJ1U201R0FMMnd4bHIyc18wVVFFR0RFam1HMEJQRS0tSnBLajRYWm9YRTEzWkxOMVRsbUpaZFFON0hoNWdYbTRPWmJaY01GRnNwdXB6VkFQM0ZESA</guid></item><item><title>连续质量改进提升院前 STEMI 分诊率，缩短 “黄金标准” E2B 时间 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1OcHpRb0xCR3J5ZVZkTFE4VWhkcWZad2dneTc3clZIRWZqRTF0b3B1aVpjN3NfUkU2WldrUHR6Tk03a0ZzVzlwb0V1d181ZDVPNzNhYm50eDR5Yl9IMlFQa3NiWlhIMTZQSGhYOA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　研究人员针对院前 STEMI 开展研究，发现相关改进措施提升分诊率，缩短 E2B 时间，意义重大。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　
-&lt;h3&gt;研究背景：STEMI 救治的挑战与机遇&lt;/h3&gt;
-&lt;p&gt;在心血管疾病的世界里，ST 段抬高型心肌梗死（STEMI）犹如一颗 “定时炸弹”，每年在美国约有 750,000 例发病。这是由于冠状动脉内的斑块或血栓堆积，导致心肌供血急剧减少，进而引发心肌梗死。时间对于 STEMI 患者来说就是生命，每延迟 30 分钟进行再灌注治疗，1 年死亡率就会增加 7.5% 。&lt;/p&gt;
-&lt;p&gt;目前，对于 STEMI 患者，经皮冠状动脉介入治疗（PCI）血管成形术是重要的治疗手段，但要求在患者进入急诊室 90 分钟内完成，即 “黄金标准” 的 EMS-to-balloon（E2B）时间。然而，现实中却面临诸多难题，比如很多患者无法在规定时间内接受治疗，导致病情恶化。为了改善这一状况，美国心脏协会推出了使命生命线（Mission Lifeline）倡议，旨在优化院前急救医疗服务，提高 STEMI 分诊率，让患者能及时得到救治。Polk County Fire Rescue（PCFR）积极响应这一倡议，开展了相关研究，希望找到提升救治水平的有效方法。&lt;/p&gt;
-&lt;h3&gt;研究方法：数据背后的 “秘密武器”&lt;/h3&gt;
-&lt;p&gt;PCFR 作为佛罗里达州第四大 EMS 系统，覆盖 17 个城市，每年处理超 85,000 起患者呼叫。从 2015 年 1 月到 2023 年 12 月，PCFR 每季度收集数据，研究对象为 35 岁以上出现胸痛症状或疑似心肌梗死的患者。PCFR 应用使命生命线的技术，致力于缩短 E2B 时间，提高分诊率。&lt;/p&gt;
-&lt;h3&gt;研究结果：数字见证的 “奇迹”&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;E2B 时间的改善&lt;/strong&gt;：自 2015 年实施使命生命线协议以来，在 2,585 名患者中，能在 90 分钟内完成 E2B 时间的患者比例稳步上升。2015 年为 74%，到 2019 年提高至 84%。尽管受到 COVID-19 疫情的影响，2019 - 2021 年期间，E2B 时间达标率有所波动，但整体仍呈现改善趋势。这表明使命生命线的实施有效缩短了患者从进入急诊室到接受 PCI 治疗的时间，为患者争取了宝贵的救治时机。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分诊率的提升&lt;/strong&gt;：在分诊率方面，STEMI 的平均年漏诊率（undertriage rate）从 2015 - 2017 年的 2% - 4% ，下降到 2020 年后的低于 1%，2021 年和 2023 年甚至低至 0%。同时，误诊率（overtriage rate）最初有所波动，2017 年高达 12%，但随着使命生命线协议的进一步实践，到 2022 年降至低于 3%，2024 年更是低至 0.6% 。这说明通过实施使命生命线协议，PCFR 在院前对 STEMI 的识别更加准确，减少了漏诊和误诊情况。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;研究结论与讨论：生命救治的 “新方向”&lt;/h3&gt;
-&lt;p&gt;PCFR 实施使命生命线程序，包括获取院前 12 导联心电图和医院预激活等措施，显著提升了 STEMI 的救治水平。这些干预措施不仅改善了 E2B 时间，还提高了院前 STEMI 的识别准确性。&lt;/p&gt;
-&lt;p&gt;在实施过程中，12 导联心电图发挥了重要作用。它不仅有助于提高分诊率，减少漏诊和误诊，还能让医院提前做好准备，缩短 E2B 时间。同时，医院预激活和与医院的沟通协作也至关重要。通过每月的问答会议，PCFR 能及时了解医院的情况，选择最合适的医院转运患者，避免因转运时间过长或医院能力不足而影响救治效果。&lt;/p&gt;
-&lt;p&gt;尽管 COVID-19 疫情给 STEMI 的救治带来了挑战，如 E2B 时间延长等，但 PCFR 在困难情况下仍取得了一定的成果，分诊率持续改善。这表明使命生命线的策略在应对突发公共卫生事件时也具有一定的有效性。&lt;/p&gt;
-&lt;p&gt;总的来说，这项研究强调了协调、规范的院前 STEMI 救治的重要性。通过优化院前急救流程、提高识别准确性和加强医院协作，能显著改善患者的治疗效果，降低死亡率，为未来 STEMI 的救治提供了重要的参考和方向。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:31:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1OcHpRb0xCR3J5ZVZkTFE4VWhkcWZad2dneTc3clZIRWZqRTF0b3B1aVpjN3NfUkU2WldrUHR6Tk03a0ZzVzlwb0V1d181ZDVPNzNhYm50eDR5Yl9IMlFQa3NiWlhIMTZQSGhYOA</guid></item><item><title>Four Scales Measuring Mental Well-being in the Nordic Countries: Do They Tell the Same Story?—— 解开青少年心理健康测量的谜题 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9FRVo4cVVlWkVQT2VEdzViZEVjbzBocDVkdWVxWEluZVBfT1pPdzRjQVQ1U3JHOGNleTIwdl93NThwb3NaR1g1VEZlaGt5d1RNaE1jWXREQ2ZiM3RuQl9zalFJeFBnM2ljeHE3Uw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Title"&gt;Four Scales Measuring Mental Well-being in the Nordic Countries: Do They Tell the Same Story?—— 解开青少年心理健康测量的谜题&lt;/p&gt;
-		&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为探究北欧国家青少年心理健康测量尺度的差异，研究人员分析 HBSC 数据，发现四量表基本反映同一维度。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　在青少年心理健康备受关注的当下，人们对 “健康” 和 “心理健康” 的定义常以幸福感概念为核心。然而，健康与幸福感之间的关系复杂模糊，主观幸福感更是众说纷纭。在心理健康研究领域，双极模型和双因素模型的争论不休，前者认为精神疾病和心理健康处于同一连续体的两端，后者则主张二者是相互独立的因素 。&lt;/p&gt;
-&lt;p&gt;同时，在青少年心理健康调查中，问卷的合理性和量表的有效性至关重要。但目前存在量表冗余、测量重叠等问题，不仅影响问卷质量和参与率，还难以准确衡量心理健康的不同方面。为了解决这些问题，挪威公共卫生研究所（Department of Health Promotion, Norwegian Institute of Public Health）等机构的研究人员 Leif Edvard Aar?、Otto Robert Smith 等人开展了一项研究，相关成果发表在《Health and Quality of Life Outcomes》上。&lt;/p&gt;
-&lt;p&gt;研究人员使用了 2022 年健康行为在学龄儿童（HBSC）研究的北欧部分数据（&lt;span data-custom-copy-text="\(n=28189\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;n&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;28189&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;），该数据涵盖了丹麦、芬兰、冰岛、挪威和瑞典五个国家，涉及 11 岁、13 岁和 15 岁的学生。研究中使用了四个测量心理健康的量表：坎特里尔阶梯量表（Cantril’s Ladder）、世界卫生组织 5 项幸福感指数（WHO-5 Wellbeing Index）、7 项短版华威 - 爱丁堡心理健康量表（SWEMWBS）和 HBSC 健康抱怨量表（HBSC Health Complaints Scale）。&lt;/p&gt;
-&lt;p&gt;研究采用了多种统计分析方法，包括因子分析（探索性因子分析和验证性因子分析）、一般线性建模、潜变量分析（包括分层因子模型和双因子模型）以及信息曲线分析。&lt;/p&gt;
-&lt;p&gt;在初始因子分析中，探索性因子分析发现三个因子，分别与三个多项目量表对应，坎特里尔阶梯量表的单个项目加载在由 WHO-5 幸福感指数定义的因子上。验证性因子分析表明，一个由三个正向表述量表组成一个因子、健康抱怨量表构成另一个因子的两因子模型拟合良好，但两个因子之间存在高度负相关。&lt;/p&gt;
-&lt;p&gt;在与年龄和性别的关联分析中，研究发现女孩在 HBSC 健康抱怨量表上的平均得分明显高于男孩，而男孩在坎特里尔阶梯量表、WHO-5 幸福感指数和 SWEMWBS 上的平均得分高于女孩。同时，年龄与性别之间存在显著的交互作用，女孩在这些量表上的得分随年龄变化的幅度更大。&lt;/p&gt;
-&lt;p&gt;在与选定协变量的关联分析中，研究发现所有量表与协变量的关联模式相似，只是健康抱怨量表与其他三个正向量表的相关性方向相反。&lt;/p&gt;
-&lt;p&gt;分层二阶因子模型分析显示，四个一阶因子在二阶 “心理健康” 因子上的加载较高，调整二阶因子后，一阶因子与协变量的关联大多减弱。&lt;/p&gt;
-&lt;p&gt;双因子模型分析得出，一般因子的 Omega Hierarchical 较高（&lt;span data-custom-copy-text="\(Omega H=0.834\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;O&lt;/span&gt;&lt;span&gt;m&lt;/span&gt;&lt;span&gt;e&lt;/span&gt;&lt;span&gt;g&lt;/span&gt;&lt;span&gt;a&lt;/span&gt;&lt;span&gt;H&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;0.834&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;），特定因子的 Omega HS 值较低（0.106 - 0.369），PUC 为 0.719，ECV 为 0.689，表明 21 个项目在很大程度上反映了一个潜在维度。&lt;/p&gt;
-&lt;p&gt;信息曲线分析表明，所有量表组合的总信息函数在低于总体均值 1 - 2 个标准差处达到峰值，SWEMWBS 和 WHO-5 幸福感指数的部分信息曲线相似，且 SWEMWBS 提供的信息更多，HBSC 健康抱怨量表的信息曲线较窄较低，坎特里尔阶梯量表提供的信息最少。&lt;/p&gt;
-&lt;p&gt;综合来看，该研究表明这四个量表在很大程度上反映了一个潜在维度，存在有限的判别效度。这一发现对北欧国家以及计划使用多个量表测量青少年心理健康的研究项目具有重要意义，为后续研究中量表的选择和改进提供了参考依据。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:31:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9FRVo4cVVlWkVQT2VEdzViZEVjbzBocDVkdWVxWEluZVBfT1pPdzRjQVQ1U3JHOGNleTIwdl93NThwb3NaR1g1VEZlaGt5d1RNaE1jWXREQ2ZiM3RuQl9zalFJeFBnM2ljeHE3Uw</guid></item><item><title>佛罗里达州注射器服务项目中匿名退出式 HIV 和丙型肝炎筛查：公共卫生新突破 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5GRWM1clRLMkdVM1diSThyUFRlVVRZTmhUV2tQM040a1paYXliVFo5MHhraU1IZm00UDI1LTlSTWtCY1A1WGt4bEFIaHRibEtJMjBIWHpucHBsLXhtQ1JscEF0TDVvNFJhTUkxZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为降低 HIV 和 HCV 传播风险，研究人员在佛罗里达州注射器服务项目（SSP）开展退出式筛查研究，成果显著。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　在全球范围内，传染病的防控始终是公共卫生领域的关键议题。注射吸毒这一行为，如同打开了潘多拉魔盒，为 HIV 和丙型肝炎病毒（HCV）的传播提供了温床。在美国，注射吸毒不仅是 HCV 新感染的主要诱因，每年还导致约 10% 的新增 HIV 病例。共用针头、注射设备被血液传播病原体污染，以及不安全的性行为等因素相互交织，让注射吸毒人群（PWID）深陷感染风险之中。&lt;/p&gt;
-&lt;p&gt;以往，许多注射器服务项目（SSP）采用的 “选择参与（opt - in）” 检测模式，就像是设置了一道高高的门槛。参与者需要主动选择检测，这使得参与率常常不尽如人意，导致大量潜在感染者无法被及时发现，传染病的传播风险也因此居高不下。在这样的背景下，为了打破困局，满足佛罗里达州《传染病消除法案》的监管要求，提升公共卫生水平，来自美国南佛罗里达大学莫萨尼医学院急诊科、坦帕综合医院等机构的研究人员 Heather Henderson、Jason Wilson 等人，在佛罗里达州的 SSP 项目中，开展了匿名退出式 HIV 和 HCV 筛查的研究，相关成果发表在《Harm Reduction Journal》上。&lt;/p&gt;
-&lt;p&gt;研究人员采用的主要关键技术方法为在 SSP 项目中实施匿名退出式检测模式，即把常规、匿名、自愿的检测融入标准医疗服务。研究覆盖了大量参与者，通过对他们进行 HIV 和 HCV 检测，并对检测数据进行分析，来探究该模式的效果。&lt;/p&gt;
-&lt;p&gt;研究结果主要如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;检测模式转变及参与率&lt;/strong&gt;：研究初期，为符合佛罗里达州卫生部门的要求，政策将检测与获取特定服务（如注射器交换）挂钩。但在收集参与者、工作人员和社区成员的反馈后，研究人员调整政策，允许所有参与者无论是否参与检测，都能获取所有服务。令人惊喜的是，这一改变并未降低检测率，自实施退出式筛查以来，226 名新登记参与者中仅有 6 人（3%）选择退出检测。这表明营造信任、非强制的环境，将检测作为常规医疗的一部分，能在保障参与者自主权的同时，获得较高的参与率。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;检测数据及感染情况&lt;/strong&gt;：从 2021 年 4 月至 2025 年 1 月，研究人员进行了近 3000 次 HIV 和 HCV 检测。其中，HIV 检测的血清阳性率为 3.8%，HCV 检测的血清阳性率高达 54%。在接受检测的 1313 名个体中，多数人（64%）仅接受了一次检测，部分人（24%）接受了 2 - 4 次检测，还有 11% 的人接受了 5 次及以上检测。目前，该 SSP 项目服务约 2000 名参与者，其中 96% 长期参与项目。这一系列数据为了解该人群的感染状况提供了有力依据。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;重复筛查的作用&lt;/strong&gt;：对高风险人群进行定期重复筛查意义重大。一方面，它使常规筛查常态化、去 stigmatize（消除污名化）；另一方面，有助于早期发现疾病，及时对新感染病例进行干预。此外，即使参与者选择退出 HIV/HCV 检测，提供无菌注射设备也能降低传染病在社区的传播风险。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;研究结论和讨论部分指出，传统的选择参与检测模式因参与率低，难以满足公共卫生需求。而本次研究中实施的退出式筛查模式，成功克服了这些障碍。它将 HIV 和 HCV 检测常态化，营造了低门槛、无歧视的环境，获得了参与者的广泛认可。通过持续筛查，实现了对 HIV 和 HCV 感染的早期检测、快速治疗，有效降低了传播风险。这一模式不仅符合监管要求，更对公共卫生事业有着显著的推动作用。同时，研究人员根据反馈及时调整政策，平衡了监管合规与以社区为中心的关怀，强调了各方反馈在完善危害降低实践中的关键作用。&lt;/p&gt;
-&lt;p&gt;综上所述，该研究成果为 SSP 项目在全国的推广提供了有力支撑。将常规、匿名、自愿的退出式传染病筛查融入 SSP 项目，是一种切实可行的公共卫生策略，有助于推动实现消除 HIV 和 HCV 传播的目标，也进一步巩固了 SSP 项目在公共卫生领域的重要地位。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:29:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5GRWM1clRLMkdVM1diSThyUFRlVVRZTmhUV2tQM040a1paYXliVFo5MHhraU1IZm00UDI1LTlSTWtCY1A1WGt4bEFIaHRibEtJMjBIWHpucHBsLXhtQ1JscEF0TDVvNFJhTUkxZw</guid></item><item><title>免疫检查点抑制剂治疗转移性阴茎鳞状细胞癌：一项意义重大的回顾性多中心研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBVWEcwczBUS090OE1UcTBrSGY1eUw4MXZad2djVmJRUG1PWlp5OXZwckgta3ZwZ1Y5bDJkMjFCOE1PcWRhWkM2TFJfQTBPVXl3WXZEQllueTV3VWM1bjJaWG5JaFg5Z2ZMWTNxWQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为解决转移性阴茎鳞状细胞癌（PSCC）治疗难题，研究人员评估免疫检查点抑制剂（ICI）疗效与安全性，成果显著。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　# 免疫检查点抑制剂治疗转移性阴茎鳞状细胞癌的研究解读&lt;/p&gt;&lt;p&gt;阴茎鳞状细胞癌（Penile Squamous Cell Carcinoma，PSCC）是一种较为罕见的恶性肿瘤。在过去，转移性 PSCC 的治疗面临诸多困境。传统的一线治疗方案主要是基于顺铂的化疗，像紫杉醇、异环磷酰胺联合顺铂（TIP），或者顺铂加氟尿嘧啶（5-FU）。然而，这些化疗方案毒性较大，对于身体状况较差、年龄较大的患者来说，往往难以耐受，使得他们在治疗选择上非常受限。而且，由于 PSCC 发病率低，相关的治疗研究多基于小型、单臂、非随机试验，缺乏足够可靠的依据。免疫疗法的出现，似乎为这些患者带来了新希望，但之前全球最大队列研究显示，在经过大量预处理的异质性人群中，免疫疗法单药治疗的客观缓解率（Objective Response Rate，ORR）仅为 13%，疗效并不理想。因此，探寻更有效的治疗方法迫在眉睫，这也是本次研究开展的重要原因。
-&lt;/p&gt;&lt;p&gt;为了攻克转移性 PSCC 的治疗难题，来自美国多家机构的研究人员，包括堪萨斯大学癌症中心（The University of Kansas Cancer Center）等，进行了一项回顾性多中心研究。他们聚焦于免疫检查点抑制剂（Immune Checkpoint Inhibitor，ICI）治疗转移性 PSCC 的疗效和安全性，相关成果发表在《Experimental Hematology &amp;amp; Oncology》杂志上。&lt;/p&gt;
-&lt;p&gt;在本次研究中，研究人员收集了 2017 年至 2024 年间接受 ICI 治疗的转移性 PSCC 患者的数据。他们主要采用回顾性分析的方法，对患者的病历资料进行详细梳理。研究涉及多个医疗中心的患者，这些患者构成了研究的样本队列。&lt;/p&gt;
-&lt;h3&gt;研究结果&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;患者基本特征&lt;/strong&gt;：研究共纳入 10 例患者，患者的中位年龄为 75 岁，年龄跨度从 50 岁到 92 岁。其中，50% 的患者东部肿瘤协作组体能状态评分（ECOG Performance Status，ECOG PS）为 2 或更高，意味着这些患者身体状况较差，无法耐受传统的顺铂化疗。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;治疗效果评估&lt;/strong&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;缓解率和疾病控制率&lt;/strong&gt;：整体的客观缓解率（ORR）达到 30%，有 1 例患者完全缓解。疾病控制率（Disease Control Rate，DCR）为 40%，有 1 例患者病情稳定，无进展生存期（Progression-Free Survival，PFS）长达 8.3 个月。在所有有缓解的患者中，缓解持续时间超过 12 个月，截至数据截止时，还有 2 例患者仍在持续缓解。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;生存期&lt;/strong&gt;：中位无进展生存期为 2.82 个月，中位总生存期（Overall Survival，OS）为 4.32 个月 。12 个月无进展生存率为 30%，12 个月总生存率为 40%。&lt;/li&gt;
-&lt;/ul&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;不同特征患者的治疗差异&lt;/strong&gt;：在 4 例病情得到控制的患者中，50%（2/4）的患者 ECOG PS 为 2，无法接受顺铂化疗，他们将帕博利珠单抗（Pembrolizumab）作为一线治疗药物；另外 2 例患者则是在顺铂化疗进展后，使用帕博利珠单抗作为二线治疗。在 3 例 p16 和 PD-L1 阳性的患者中，ORR 高达 67%。单独使用帕博利珠单抗治疗时，ORR 为 50%，DCR 为 67%。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安全性&lt;/strong&gt;：值得注意的是，在整个研究队列中，没有患者出现 3 级及以上的免疫相关不良事件（immune-related adverse events，irAEs），仅有一些如疲劳（40%）、关节痛（20%）、皮疹（20%）、甲状腺功能减退（10%）等不良反应，但均未导致治疗中断。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;研究结论与意义&lt;/h3&gt;
-&lt;p&gt;本次多中心回顾性分析表明，ICI 单药治疗对于那些无法接受一线铂类化疗，或者在铂类化疗后病情进展的晚期 PSCC 患者，可能是一种有前景的治疗选择。尤其对于身体状况较差、无法耐受传统化疗的患者，免疫疗法提供了一种相对安全有效的替代方案。而且，研究发现 PD-L1 和 HPV 阳性的 PSCC 肿瘤患者对免疫治疗的反应率较高，这为未来精准选择免疫治疗的适用患者提供了重要参考。不过，目前的研究样本量较小，还需要进一步开展大规模研究来确认这些发现，并明确哪些基线患者特征可以优化免疫治疗的选择标准，从而让更多转移性 PSCC 患者受益于免疫疗法。&lt;/p&gt;
-&lt;p&gt;总之，这项研究为转移性 PSCC 的治疗开辟了新的方向，免疫检查点抑制剂有望成为改善患者预后的重要手段。未来，随着研究的深入，或许能为这类罕见癌症患者带来更多希望，找到更精准、更有效的治疗策略。 &lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 21:29:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBVWEcwczBUS090OE1UcTBrSGY1eUw4MXZad2djVmJRUG1PWlp5OXZwckgta3ZwZ1Y5bDJkMjFCOE1PcWRhWkM2TFJfQTBPVXl3WXZEQllueTV3VWM1bjJaWG5JaFg5Z2ZMWTNxWQ</guid></item></channel></rss>
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 12 Mar 2025 22:30:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBjaGhpZDdMaG43aVV2cUVMQ3l2S1ZRdFplUUpQTl9nQU9KLWNIM2RqVjYwYmZRejZ5eUl3Z1VlaENKT0MwUWpfOVdiQVdLekF1Z2I2T0hLOXVncl94QVJwZmxtN0xwdWtBTXN5VQ</guid></item></channel></rss>
