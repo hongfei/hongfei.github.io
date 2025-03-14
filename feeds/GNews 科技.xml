@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>虚报英伟达芯片服务器去向 3男子新加坡受审涉案金额28亿元 - 财新网金融频道</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTE12OVh2WThPUjRBNGVWd1pZTXJKd3ZHNng2dFlta0FTU2JOTTBUMDhrRkMxdHc5Zk5ZSlhxSUNjdWhJMkpBakdRNnAwa2ltVWVGalcwN2x4RHZxWERUcFV5Unln?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>中国团队连获国际大奖，“有助于对抗美国禁令” - 观察者</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTE9HcTF0OWRoZVF6VlY5LXhMMU1yMXZiWDM5Qk9PT2tyOFN6ekE0TlltNGM2ZWlvM1FYTnNONVAyYmhMRUxxNm1mYWRYeDUyRzlsU00wNGtTSHhIX2VGbXhJZ1BKUlNYYklyNWc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	【文/观察者网 熊超然】上个月，全球计算机存储领域的顶级学术会议——第23届USENIX文件与存储技术会议（USENIX Conference on File and Storage Technologies，简称FAST），在美国加利福尼亚州圣克拉拉举行。
+&lt;/p&gt;
+&lt;p&gt;
+	本届大会上，来自中国的人工智能（AI）初创公司月之暗面（Moonshot AI）和清华大学团队合作发表论文并在其中提出一个名为Mooncake的系统，因而获得埃里克·里德尔最佳论文奖（Erik Riedel Best Paper Award）。
+&lt;/p&gt;
+&lt;p&gt;
+	香港《南华早报》3月14日报道认为，Mooncake这一款大语言模型系统的效率比之前的基准提高了五倍，从而帮助降低了对计算资源的需求。在美国长期就中国获取先进AI芯片进行围堵打压的背景下，这一成果还有助于对抗美国芯片禁令、减少对英伟达等企业出产的图形处理单元（GPU）的依赖。
+&lt;/p&gt;
+&lt;p&gt;
+	而在本月，无问芯穹（Infinigence AI）和上海交通大学、清华大学共同提出的视频生成大模型推理IP工作——FlightVGM，也在国际顶级会议上获奖。他们首次在可重构逻辑集成电路（FPGA）上实现了视频生成模型（VGMs）的高效推理，在美国半导体公司AMD广泛可用的V80 FPGA芯片上，该系统在性能上提升了30%，能效比英伟达旗舰产品RTX 3090 GPU高出4.5倍。
+&lt;/p&gt;
+&lt;p&gt;
+	《南华早报》称，中国AI科研团队用工业芯片取代英伟达高端GPU而获全球大奖，这预示着全球优化AI硬件的竞赛也出现了重大转变。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/03/14/20250314220325693.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	埃里克·里德尔最佳论文奖&lt;span&gt; 清华大学网站新闻图&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	据报道，这篇获奖论文由清华大学计算机系教师章明星、武永卫、郑纬民团队和月之暗面公司合作发表，名为“以键值缓存为中心的以存换算大语言模型推理架构”（Mooncake: Trading More Storage for Less Computation-A KVCache-centric Architecture for Serving LLM Chatbot）。论文的第一作者为计算机系博士生秦若愚，导师为助理教授章明星。
+&lt;/p&gt;
+&lt;p&gt;
+	根据清华大学方面的介绍，该论文提出的系统Mooncake，是月之暗面推出的大语言模型服务Kimi的底层推理服务平台。Mooncake采用了一种以键值缓存（KVCache）为中心的分离架构，不仅将预填充和解码集群分离，还高效利用了推理集群中未充分利用的CPU、DRAM、SSD和NIC资源，构建了一个独立的KVCache缓存池。其核心创新在于以KVCache为中心的全局缓存和调度器，旨在严格延迟相关服务级别目标（SLOs）下最大化吞吐量。
+&lt;/p&gt;
+&lt;p&gt;
+	实验结果显示，Mooncake在处理长上下文输入的场景中表现出色。在使用真实数据进行的测试中，与基线方法相比，Mooncake在符合SLOs的情况下，将有效请求处理能力提升了59%至498%。目前，Mooncake已在数千个节点上运行，每日处理超过1000亿个token。在实际部署中，Mooncake的创新架构使Kimi在NVIDIA A800和H800集群上分别比以前的系统多处理115%和107%的请求。
+&lt;/p&gt;
+&lt;p&gt;
+	《南华早报》指出，一段时间以来，美国政府已对向中国出口先进AI芯片实施了一系列限制措施，包括对英伟达高端芯片的多项禁令。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/hmt/2025/03/14/20250314220543734.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	英伟达的AI芯片在全球范围内广泛部署。&lt;span&gt; 《华尔街日报》&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	早在2022年10月，美国政府就已实施了一系列AI芯片出口限制措施，英伟达由于无法向中国市场提供A100和H100这两款AI处理器，专门为中国市场特供符合美方规定的A800和H800芯片，以绕开美国政府的管制。
+&lt;/p&gt;
+&lt;p&gt;
+	2023年10月，美国商务部又发布了一系列新的芯片出口限制，扩大了对高级AI芯片的定义，并对运往40多个国家的芯片产品提出额外的许可要求，以避免转售给中国。这一新的限制措施出台，意味着A800和H800芯片也被列入禁售名单。
+&lt;/p&gt;
+&lt;p&gt;
+	美方想方设法围堵打压，就是意图限制中国在AI领域的计算能力，进而压制AI模型的训练和开发。然而，这些限制反而促使中方研究人员和企业寻求通过软件优化和创新数据结构来挖掘现有芯片潜力的方法。
+&lt;/p&gt;
+&lt;p&gt;
+	据报道，清华大学MADSys实验室已在软件源代码托管服务平台GitHub上启动了Mooncake项目，旨在加速该技术的采用和传播。与此同时，该项目已被包括阿里巴巴和蚂蚁集团在内的多家公司内部采用，并已融入开源社区。
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Fri, 14 Mar 2025 14:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9HcTF0OWRoZVF6VlY5LXhMMU1yMXZiWDM5Qk9PT2tyOFN6ekE0TlltNGM2ZWlvM1FYTnNONVAyYmhMRUxxNm1mYWRYeDUyRzlsU00wNGtTSHhIX2VGbXhJZ1BKUlNYYklyNWc</guid></item><item><title>虚报英伟达芯片服务器去向 3男子新加坡受审涉案金额28亿元 - 财新网金融频道</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTE12OVh2WThPUjRBNGVWd1pZTXJKd3ZHNng2dFlta0FTU2JOTTBUMDhrRkMxdHc5Zk5ZSlhxSUNjdWhJMkpBakdRNnAwa2ltVWVGalcwN2x4RHZxWERUcFV5Unln?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
        &lt;p&gt;　　&lt;b&gt;【财新网】&lt;/b&gt;三名男子因涉嫌向服务器供应商虚假申报可能装有英伟达芯片的服务器去向，3月13日在新加坡国家法院出庭受审。控方指出，案件涉案金额高达3.9亿美元（约合人民币28.23亿元）。&lt;/p&gt;
 &lt;p&gt;　　三名被告分别为51岁的中国籍男子李明，以及两名新加坡籍男子韦兆伦和温国杰（音译）。根据初步调查，韦兆伦和温国杰涉及金额高达2.5亿美元（约合人民币18亿元），李明则涉案1.4亿美元（约合人民币10亿元）。控方表示，韦兆伦曾获得八位数股息，而温国杰亦从涉案公司获取七位数分红。&lt;/p&gt;
       &lt;/div&gt;
@@ -514,7 +568,53 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Fri, 14 Mar 2025 06:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9reldWZTdSX1gxS1J1Y2x5TnBqb2J2NnZaeGlzQmZiUzRGdDloT1VlUmhQQ1RrRVoxR25kTjI0VVhpcEJHdE02NmtOYzJuRzl4LWxaNFhQWjMxbUNYS0kzQUQza0M</guid></item><item><title>不装了！OpenAI上书特朗普：要对中国AI下死手 - 观察者</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTE9nZ3ZUeUxMTURpbXE1UkphM0h0NFY3NC0weHhiS0VvR3cwRG5yTnFlX1JFMUhvZXNRWlN5djRRYXp3dUFOSlZjVkx4TlJIamJOT2NBdHZZaGlCN25Db0JTdjd3OGtzU3Fqc3c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Fri, 14 Mar 2025 06:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9reldWZTdSX1gxS1J1Y2x5TnBqb2J2NnZaeGlzQmZiUzRGdDloT1VlUmhQQ1RrRVoxR25kTjI0VVhpcEJHdE02NmtOYzJuRzl4LWxaNFhQWjMxbUNYS0kzQUQza0M</guid></item><item><title>网友灵魂问题问懵雷军：雷总你在小米是做什么的 怎么进的小米 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBhMTFPa3ZWeGkxcVU0VDV5NWkwTnBGR0JtZ1MtLWZMWm5aTThqNkJOUWZJU0x1SHBJWGZpYTRlUGJOVDhORVR0QUhDOUZ1TE1qQVhHLXM5NXA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月14日消息，雷军作为科技圈第一网红，在网络上十分活跃，尤其抖音上经常发布作品、与网友互动。&lt;/p&gt;
+&lt;p&gt;不过，近期有不少评论直接把雷军问懵，直接整不会了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="网友灵魂问题问懵雷军：雷总你在小米是做什么的 怎么进的小米" h="400" src="//img1.mydrivers.com/img/20250314/6b280602-1af5-485f-bb02-13faa3302570.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;有网友在雷军视频下方灵魂发问：&lt;span&gt;&lt;strong&gt;雷总，你在小米是做什么的？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;还有网友问到：&lt;span&gt;&lt;strong&gt;雷总，你怎么进的小米，校招吗？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这两个问题直接让雷军满脸问号，缓缓回复一个发呆表情。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250314/52e699d797574daeadbb8f2dd8fed2d1.jpg" target="_blank"&gt;&lt;img alt="网友灵魂问题问懵雷军：雷总你在小米是做什么的 怎么进的小米" h="259" src="//img1.mydrivers.com/img/20250314/s_52e699d797574daeadbb8f2dd8fed2d1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250314/1559f19e1f854fcc87ccd74db0ed2ca0.jpg" target="_blank"&gt;&lt;img alt="网友灵魂问题问懵雷军：雷总你在小米是做什么的 怎么进的小米" h="268" src="//img1.mydrivers.com/img/20250314/s_1559f19e1f854fcc87ccd74db0ed2ca0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;其实类似的幽默互动在雷军的评论区还有很多，&lt;strong&gt;还有网友调侃：雷军每个视频发的都是关于小米的，小米肯定给他钱了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;前不久雷军在代表通道接受采访，还有人评论：&lt;strong&gt;这个up真强，居然是全国人大代表，不过怎么老是接小米的商单。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;很多网友表示，在雷军评论区一刷就出不来，大家脑洞都很大，非常幽默。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250314/6ae4cf4f7f0f487b98fb0bfe165edc01.jpg" target="_blank"&gt;&lt;img alt="网友灵魂问题问懵雷军：雷总你在小米是做什么的 怎么进的小米" h="456" src="//img1.mydrivers.com/img/20250314/s_6ae4cf4f7f0f487b98fb0bfe165edc01.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;不过这背后也体现了雷军非常平易近人，作为万亿市值的老板，可以冲击首富的成功人士，也经常会与网友进行互动，丝毫没有架子。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;而这方面的典型反面例子就是当初东方甄选的东方小孙了，在直播时对待粉丝像训下属一样，导致遭到大量吐槽，最终被迫退居幕后。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;另外，玩笑归玩笑，雷军这种与用户交流的方式，也是小米成功的秘诀之一，始终以用户为中心，把用户的需求放到首位。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250314/6ff43a6aeddb4be59778bfd5a2e39d49.jpg" target="_blank"&gt;&lt;img alt="网友灵魂问题问懵雷军：雷总你在小米是做什么的 怎么进的小米" h="715" src="//img1.mydrivers.com/img/20250314/s_6ff43a6aeddb4be59778bfd5a2e39d49.jpg" w="513"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当年小米的MIUI被吐槽臃肿，其实也是为了满足不同用户的各种需求，最后发展的太过庞大。&lt;/p&gt;
+&lt;p&gt;最近两年，小米家电业务也风生水起，尤其是空调方面已经到中国第四，原因就是小米空调考虑到了用户的实际需求，解决了用户的痛点，比如独家首发的上出风空调备受好评，这是传统厂商完全不具备的能力。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 14 Mar 2025 06:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBhMTFPa3ZWeGkxcVU0VDV5NWkwTnBGR0JtZ1MtLWZMWm5aTThqNkJOUWZJU0x1SHBJWGZpYTRlUGJOVDhORVR0QUhDOUZ1TE1qQVhHLXM5NXA</guid></item><item><title>币安，从不是项目方的“好好先生”-web3资讯 - odaily.news</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE9SOVIxSTFidEpTWUU5WnpyQ2JGeUs0MFFqS05LU0JyWnJmck9aUjBGdTV5cFVzSklRdmgxSDRWVGpvaFUzTFZTU3R2NHc?oc=5</link><description>&lt;body itemscope itemtype="http://schema.org/WebPage" id="readabilityBody"&gt;
+        &lt;p id="root"&gt;&lt;/p&gt;
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+      &lt;/body&gt;
+    </description><author>odaily.news</author><pubDate>Fri, 14 Mar 2025 06:25:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9SOVIxSTFidEpTWUU5WnpyQ2JGeUs0MFFqS05LU0JyWnJmck9aUjBGdTV5cFVzSklRdmgxSDRWVGpvaFUzTFZTU3R2NHc</guid></item><item><title>不装了！OpenAI上书特朗普：要对中国AI下死手 - 观察者</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTE9nZ3ZUeUxMTURpbXE1UkphM0h0NFY3NC0weHhiS0VvR3cwRG5yTnFlX1JFMUhvZXNRWlN5djRRYXp3dUFOSlZjVkx4TlJIamJOT2NBdHZZaGlCN25Db0JTdjd3OGtzU3Fqc3c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	【文/观察者网 全球】年初，DeepSeek横空出世，震撼世界。最开始，美国开放人工智能研究中心（OpenAI）强装镇定，其CEO奥特曼&lt;a href="https://www.guancha.cn/internation/2025_02_11_764728.shtml" target="_blank"&gt;还赞扬&lt;/a&gt;DeepSeek“干得不错”“工作出色”。
 &lt;/p&gt;
@@ -1762,90 +1862,4 @@ Karder 继续表示：“这不仅仅是 AI 会出现帮助您，而是 AI 能�
 
         &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富网</author><pubDate>Thu, 13 Mar 2025 21:01:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9JMjRMQXdValE5OUNaOWdVTFRvX21wYTBoTTRXUTE0TjJ1WHF2WVdLOGdRaHlyMUxIUW9Pdl9uSnpnZy1sOTk4c29wZUFaSWpmOHR6WHZ2SkRLZHNDaGFiQQ</guid></item><item><title>年轻人买爆“电子茅台”，让这家百年老厂年入1400亿 - 36kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE9PSXBXVU5xNmhwdjhCcnBzQkpEZy1pM2NKYlFzaU9MTlFYWkpmMG9xVExZb19YWDJDX2xlUHNTUG9XU1FTdzNOa0V6Q1pmdw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36kr</author><pubDate>Thu, 13 Mar 2025 18:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9PSXBXVU5xNmhwdjhCcnBzQkpEZy1pM2NKYlFzaU9MTlFYWkpmMG9xVExZb19YWDJDX2xlUHNTUG9XU1FTdzNOa0V6Q1pmdw</guid></item><item><title>苏妈击溃英特尔再战英伟达，十年逆袭市值飙至1600亿，AMD怪兽完爆4090 7.3倍 - 36kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE5kRXBJTkcyQ1JYblNRTmFocjByMHVqa0VGU3poRGk4MjJraHI1b2F1dm02dVpreGV3cHUxS3JJV2s4U01ZLWRxSWNRXzEwQQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36kr</author><pubDate>Thu, 13 Mar 2025 18:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5kRXBJTkcyQ1JYblNRTmFocjByMHVqa0VGU3poRGk4MjJraHI1b2F1dm02dVpreGV3cHUxS3JJV2s4U01ZLWRxSWNRXzEwQQ</guid></item><item><title>全系标配图灵AI智驾＋5C超充AI电池，2025款小鹏G6 17.68万起 - 小鹏汽车</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFSXRWZER5YmJIY3JEOERwUkVjU3pKWjJxVGVMZ2ZUei1CM08xYzg2clNNWHgzb09XYkNKUVFDTHhNNVVyNDdIby1Xa3IwbExURHNOeDdhblF0dE9uX2FWSWd3?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="art-content"&gt;&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;【&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span&gt;2025年3月13日，广州】&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;今日，小鹏汽车开启了春天里的第一场发布会，站在新十年的起点，小鹏汽车&lt;/span&gt;&lt;span&gt;AI汽车全球化的进程进一步加速，全球车2025款小鹏G6、2025款小鹏G9正式上市发售。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-00-560573722642724.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;六项全能纯电轿跑&lt;/span&gt;&lt;span&gt;SUV 2025款小鹏G6发布三个版本，包括长续航 Max 科技版、长续航 Max 旗舰版和超长续航 Max 旗舰版，官方指导价分别为17.68万元、18.68万元和19.88万元。巅峰科技AI旗舰SUV 2025款小鹏G9发布三个版本，包括长续航 Max、超长续航 Max和超长续航四驱 Max，官方指导价分别为24.88万元、25.88万元和27.88万元。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;除了极具诚意的价格，小鹏汽车还带来了多项专属权益。即日起至&lt;/span&gt;&lt;span&gt;2025年5月5日24点前支付5000元定金用户，除8大基础权益外，全系车型可享低至0首付长至5年期的限时优惠金融礼；黑武士升级套装限时五折购买的专属礼；6年每年1500度电卡、至高10000元的置换复购礼等五项购车权益。用户可通过小鹏汽车官方APP、官网、微信小程序以及全国销售网点进行车辆订购。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-01-120687-222986482.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-01-360832-1948558041.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025款小鹏G6与2025款小鹏G9以换代思路改款，全系标配5C超充AI电池+图灵AI智驾。发布会上，小鹏汽车董事长、CEO何小鹏表示：“从2025款小鹏G6和G9开始，小鹏将引领行业进入全系5C超快充的时代，正式把过去40万、50万级才使用的5C，带入到20万、30万这个价格里。我相信这是一个全新的时代。”&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-02-050464-1635695896.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;两大顶尖技术全系标配&lt;/span&gt; &lt;span&gt;AI汽车从此5C&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025款小鹏G6与2025款小鹏G9全系标配5C超充AI电池，充电1秒不止1公里，10分钟补能450公里，一杯咖啡的时间即可满电出发，-30℃极寒环境下充电效率也可比肩常温环境。2025款小鹏G6具备725km的超长续航和12.5kWh/100km的超低能耗，每公里费用不到4分钱；2025款小鹏G9最长续航达725km，低至13.9kWh/100km的能耗表现同级领先，让用户放心追逐诗和远方。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-02-2002551183719074.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;此外，&lt;/span&gt;&lt;span&gt;5C超充AI电池还具备卓越的安全性能，自带“防弹装甲”，顶部可以承受1000℃的高温，侧碰可以承受80吨的压力，底部可以承受2000J的冲击，以环绕式保护为电池乃至整车保驾护航，最大程度保证乘员舱安全。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025款小鹏G6与2025款小鹏G9全系标配图灵AI智驾，全面应用端到端大模型，上车自己开，下车自己停，带来堪比老司机的智驾体验，且不选装、不订阅、不付费，交付即享“车位到车位”，一套软件打通园区、城市、高速、停车场，全程体验无断点，真正实现0接管，让驾驶更加简单高效，提升出行效率。图灵AI智驾代表着小鹏汽车最高水准的智驾能力，也是全球范围内最领先的智驾能力之一，未来还将首发搭载园区漫游功能，无需学习记忆、无需导航、任意园区可用。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-02-3302571146528655.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;2025款小鹏G6   颠覆改款全面换代&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;作为被行业追赶的科技标杆产品，小鹏&lt;/span&gt;&lt;span&gt;G6凭借全场景智能驾驶辅助系统、全域800V高压SiC碳化硅平台等技术，开创了新能源的智能平权。即使是发布两年后，它所开创和引领的技术水准，依旧保持在行业顶尖水平。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-02-480830-673334588.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;基于全面领先的实力，小鹏汽车积极响应用户需求，&lt;/span&gt;&lt;span&gt;2025款小鹏G6带来了多达81项的体验更新升级，高达34%的一级总成件焕新，集续航长、里程实、充电快、超安全、智能强、空间大六大实力于一身，“六边形战士”全面焕新。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;外观内饰全面焕新&lt;/span&gt;  &lt;span&gt;美学与质感进化&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025款小鹏G6有多达19项外观升级，前脸采用1942mm无断点星河光翼贯穿灯，并集成转向灯指示功能，兼具美感与实用双重价值。新增AI智驾小蓝灯，更具科技感。灵动车尾线条舒展，雕刻出更流畅的轿跑SUV。外观提供星暮紫、云贝米、暗夜黑等六种颜色，还有酷感十足的黑武士涂装，彰显独特品味与个性态度。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-03-050493-970552880.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;颜值全面提升的同时，&lt;/span&gt;&lt;span&gt;2025款小鹏G6对内饰也进行了33项焕新。采用超级星环内饰设计，全新仪表台星河律动阵列氛围灯与四门漫反射氛围灯，增添灵动与优雅。全新升级流媒体内后视镜，雨雾天气也能看清后方道路。10.25英寸超大视野仪表＋15.6英寸悬浮式方形中控屏的组合，让驾驶信息一目了然。此外，Microfiber超纤绒顶棚和遮阳板、无线快充区域升级软包等高质感的细节设计，搭配深空灰、扶摇绿、气宇灰三款内饰配色，营造出极致愉悦的座舱氛围。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-03-270805-374178584.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;空间之王&lt;/span&gt;  &lt;span&gt;舒适满配&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025款小鹏G6堪称空间之王，拥有同级最大得房率、同级最优后备厢、同级最大后排座椅调节角度与同级最大扶手箱容积。同级最大85.6%得房率让头腿肩臀处处宽绰，即使是一家五口乘坐也宽适自如。后备厢容积最大可扩展至1752L，高尔夫球杆、行李箱、露营装备等物品随心装，堪称家庭与商务出行的最优选。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-03-4604921288428212.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;空间同级最大，舒适体验更是满配。&lt;/span&gt;&lt;span&gt;2025款小鹏G6采用全新云感舒适座椅，前排座椅支持加热、通风、按摩功能，后排座椅具备同级最大调节角度，支持12档调节，让不同身形的用户都能找到合适角度；通过36处声学包、20处声学空腔阻断设计，2025款小鹏G6的NVH静谧性媲美40万级豪华车水平，打造图书馆级新“静界”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-04-0407311626478459.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;耗资超&lt;/span&gt;&lt;span&gt;2亿 底盘跨越式革新&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;小鹏汽车聚焦用户的关注点，花费超&lt;/span&gt;&lt;span&gt;2亿人民币打造全新底盘。超2万次精细化调教提升驾控体验，针对用户痛点精准优化，各项专业指标优于50万级豪华车，带来了过减速带不颠簸、起伏路段不抛跳、过坑洼路更从容的驾乘体验。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-04-230277-2008210757.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;2025款小鹏G9  技术领先一个时代&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;小鹏&lt;/span&gt;&lt;span&gt;G9自上市以来，创造了三个“行业第一”和一个“业界首创”，是行业首发搭载全场景智能辅助驾驶、行业首个车桩量产800V超快充、行业首个50万以内搭载智能双腔空悬的车型，与大众集团的合作开创了中国汽车产业全新合作模式，让用户享受到了“超越一个时代”的领先技术。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-04-400372-1112006706.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025款小鹏G9作为承载小鹏最新智能科技和最强整车电子电气架构的旗舰车型，全系标配百万级豪华配置——行业最强图灵AI智驾、行业最强5C超充AI电池、百万级豪华底盘配置、百万级豪华舒适满配座椅，再次拉高了豪华旗舰车型的天花板。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;德系豪车姿态&lt;/span&gt;  &lt;span&gt;百万级舒适满配&lt;/span&gt; &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025款小鹏G9拥有迄今为止小鹏汽车最优雅的SUV外形设计，经典的德系豪华车姿态动静皆宜。极简风格的前进气格栅，无缝融入3D毫米波雷达，更显高级感。此外，还有20寸大轮毂、四门电吸门、感应式尾门等配置，尽显优雅便捷。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-05-100855-1111932578.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;值得一提的是，&lt;/span&gt;&lt;span&gt;2025款小鹏G9也标配AI智驾小蓝灯，并提供了星辰蓝、星际绿、星云白、暗夜黑四种外观颜色，还进化出“黑武士形态”，暗夜黑车色搭配黑色车身套件、20英寸熏黑运动轮毂以及熏黑卡钳，动静皆瞩目。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-05-230582-1897623138.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;内饰层面，&lt;/span&gt;&lt;span&gt;2025款小鹏G9全新定制百万级豪华舒适满配座椅，采用Nappa真皮材质、26mm同级最厚慢回弹座椅海绵，以及12层结构设计，长途久坐也不累。同时，座椅全系标配前后排座椅通风、加热、按摩，全系标配后排座椅靠背电动调节，并联合骨科专家联合研发了行业最大按摩力度的顶级十点指压式按摩，有行业首创的主动抗疲劳功能可以精准触达用户每一处疲劳。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-05-350020-580336682.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;此外，&lt;/span&gt;&lt;span&gt;2025款小鹏G9全车内饰柔软材质包覆高达95%，拥有超舒适女王专属副驾以及同级首搭的三层镀银隔热防晒天幕，配合月影咖、气宇灰、星辉棕、星夜黑的内饰配色，目之所及皆是豪华质感。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-05-490400-902753186.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;全系标配双腔空气悬架&lt;/span&gt;  &lt;span&gt;百万级豪华底盘&lt;/span&gt; &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;为给用户带来极致驾控体验，&lt;/span&gt;&lt;span&gt;2025款小鹏G9搭载百万级豪华底盘，是同级唯一全系标配德国威巴克双腔空气悬架、全系标配倍适登智能可变阻尼减振器的车型。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在顶配的硬件之外，&lt;/span&gt;&lt;span&gt;2025款小鹏G9还有AI技术加持，AI底盘每秒1000次的路况扫描，每秒调节200次悬架，在大起伏路面和颠簸路段也能如履平地；对颠簸路段智能标记上传云端，实现精准预瞄快速调节，越用越懂路。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-06-010672592868733.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;顶级驾控要跑得快，更要无惧任何路况。&lt;/span&gt;&lt;span&gt;2025款小鹏G9有同级最大的车身高度调节范围100mm，可城可野。搭载前双球节双叉臂与后五连杆悬架的黄金组合，稳定性全面提升，33.9米的制动距离更是同级领先，媲美百万级豪车，为出行提供满满的安全感。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;快速进化&lt;/span&gt; &lt;span&gt;开启&lt;/span&gt;&lt;span&gt;AI人工智能时代的春天&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;2025年是AI智能体爆发的元年，2025年小鹏图灵AI智驾将在全球开启研发和测试，已成为第一个在香港开启适配、首批在香港申请遥控泊车许可的车企。随着海外政策的放开，小鹏汽车将在2026-2027年把图灵AI智驾带给全球用户。 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt;&lt;span&gt;&lt;img src="https://xps01.xiaopeng.com/cms/content/pic/2025/03-13/23-06-120889128454728.png" alt=""&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;值得一提的是，凭借更强的体系化能力、技术实力以及产品定义能力。小鹏汽车在国内和海外市场均收获了亮眼成绩&lt;/span&gt;&lt;span&gt;——2025年1月-2月，小鹏汽车连续两个月蝉联中国新势力品牌交付量第一；2024年，小鹏汽车夺得中国新势力品牌出口量第一；2025年，小鹏汽车将进入60个国家和地区，让更多全球用户感受到中国AI汽车的科技领先和乐趣。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;面向未来，小鹏汽车将持续加大在&lt;/span&gt;&lt;span&gt;AI领域的投入，继续深化在人工智能算法、芯片等核心技术领域的研发，特别是在具身智能、大模型等前沿技术上取得突破，致力于将小鹏汽车打造成为面向全球的AI汽车公司。小鹏汽车愿携手全球用户、科技爱好者共同探索智能出行的无限可能，创造美好出行生活。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt; &lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;关于小鹏汽车&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;&lt;span&gt;小鹏汽车致力于通过探索科技，引领未来出行变革，做&lt;/span&gt;&lt;span&gt;“未来出行探索者”。公司总部位于广州，在北京、上海、深圳、肇庆、扬州等地设有研发中心，并在肇庆和广州布局智能制造基地。同时，小鹏汽车面向全球进行研发和销售布局，已在美国设立研发中心、在欧洲多地设立分公司。小鹏汽车坚持全栈自主研发智能辅助驾驶软件和开发核心硬件，为用户带来卓越的智能驾乘体验。2020年8月27日，小鹏汽车正式登陆纽交所，募资规模打破当时全球新能源汽车行业IPO纪录，股票代码为“NYSE:XPEV”；2021年7月7日，小鹏汽车挂牌香港联交所，股票代码“9868.HK”，成为首个在中国香港和美国纽约两地双重主要上市的中国造车新势力。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt; &lt;/p&gt;
-&lt;p class="MsoNormal"&gt; &lt;/p&gt;
-&lt;p class="MsoNormal"&gt; &lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt;更多信息，欢迎登陆小鹏汽车官方网站&lt;span&gt;www.&lt;/span&gt;&lt;span&gt;x&lt;/span&gt;&lt;span&gt;i&lt;/span&gt;&lt;span&gt;aopeng.com&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt; &lt;/p&gt;
-&lt;p class="MsoNormal"&gt; &lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal" align="center"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;p class="MsoNormal"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>小鹏汽车</author><pubDate>Thu, 13 Mar 2025 17:47:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFBFSXRWZER5YmJIY3JEOERwUkVjU3pKWjJxVGVMZ2ZUei1CM08xYzg2clNNWHgzb09XYkNKUVFDTHhNNVVyNDdIby1Xa3IwbExURHNOeDdhblF0dE9uX2FWSWd3</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富网</author><pubDate>Thu, 13 Mar 2025 21:01:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9JMjRMQXdValE5OUNaOWdVTFRvX21wYTBoTTRXUTE0TjJ1WHF2WVdLOGdRaHlyMUxIUW9Pdl9uSnpnZy1sOTk4c29wZUFaSWpmOHR6WHZ2SkRLZHNDaGFiQQ</guid></item></channel></rss>
