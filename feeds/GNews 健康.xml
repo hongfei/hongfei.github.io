@@ -1,5 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>廉江市人民医院创新疗法论文荣登国际顶尖期刊 - gd.chinanews.com.cn</title><link>https://news.google.com/rss/articles/CBMia0FVX3lxTE5IZVZJMWFYVWxVRTc0Tnk3TVQ4eHRlSTVFT3k0Y0tDX0xOWGJvUjJUc3hEalV4cDAxekotcjNLN0ZGcDd1NnB5NU9POTJ5RjVyTnBidGtxVzdHNW1RUkQwYnlfMVpDUGNOU3NB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article_content"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>《AMOGEL：多组学与先验知识融合，精准解析癌症亚型的新突破》 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE43MmRPcFlGa3VjWW9HZFYtZkRhZFlTWTR1alBuSWROM1VkYnFRYzRjajQ5X0tXWXN6VDY1Yk1YeFdwX3VSa1lVM3g2amhXdXV0SDhqejQxMldES3pXYm9NUEZCSlZrdFM1VTRBSA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Bioinformatics》：Amogel: a multi-omics classification framework using associative graph neural networks with prior knowledge for biomarker identification&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　&lt;strong&gt;在癌症研究中，现有研究对图神经网络（GNN）非线性学习潜力利用不足，且整合高通量多组学数据与先验知识的能力欠缺。研究人员开展了基于关联图神经网络和关联规则挖掘（ARM）的多组学分类框架研究。结果显示，AMOGEL 在分类准确性等指标上优于现有模型，为癌症亚型分类提供了新方法&lt;/strong&gt;
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　** 在现代社会，癌症是导致死亡的主要原因之一。癌症的异质性使得准确识别癌症亚型成为开发有效治疗方案的关键。随着高通量技术的发展，多组学数据的产生为癌症研究带来了新机遇，但也面临着诸多挑战。例如，组学数据的高维性易导致模型过拟合，传统的融合方法无法充分考虑各数据类型对分类结果的不同贡献，且现有基于先验知识的基因图模型依赖于知识的完整性，在生物标志物发现方面也存在不足。&lt;/p&gt;
+&lt;p&gt;为解决这些问题，莫纳什大学马来西亚分校（School of Information Technology, Monash University Malaysia）的研究人员开展了一项关于多组学分类框架的研究。他们提出了一种名为关联多组学图嵌入学习（AMOGEL）的模型，通过将 GNN 与 ARM 相结合，有效整合多组学数据集和先验知识。研究结果表明，AMOGEL 在乳腺癌浸润性癌（BRCA）和泛肾癌（KIPAN）数据集的分类准确性、F1 评分和 AUC 评分等方面均优于当前的先进模型。这一研究成果发表在《BMC Bioinformatics》上，为癌症亚型分类和生物标志物识别提供了新的有力工具，有助于推动个性化癌症治疗的发展。&lt;/p&gt;
+&lt;p&gt;研究人员在开展研究时，用到了以下几个主要关键技术方法：首先，从 TCGAbiolink 和 Broad GDAC Firehouse 获取 BRCA 和 KIPAN 数据集，包括 miRNA 表达、mRNA 表达和 DNA 甲基化数据，并从相关数据库获取蛋白质 - 蛋白质相互作用（PPI）、KEGG 通路和基因本体（GO）等先验知识数据；其次，运用关联规则挖掘（ARM）技术挖掘组学数据间关系，构建信息图；然后，采用图神经网络（GNN）进行图特征学习；最后，结合全局特征学习和分类算法实现癌症亚型分类和基因排名。&lt;/p&gt;
+&lt;p&gt;研究结果如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;实验设置&lt;/strong&gt;：将数据集按 7:3 比例划分为训练集和测试集，重复五次随机分割采样，使用 Python 3.9.18 和 PyTorch 框架，在特定配置的本地机器上进行实验，以准确性、宏观 F1 评分和宏观 AUROC 为评估指标。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;性能比较和分析&lt;/strong&gt;：将 AMOGEL 与传统模型（如 k - 最近邻分类器（KNN）、支持向量机（SVM）、朴素贝叶斯（NB））、前馈深度神经网络模型（DNN）以及前沿的 GNN 模型（MOGONET、MOGLAM）进行比较。结果显示，AMOGEL 在 BRCA 和 KIPAN 数据集上的各项指标均优于其他模型，尤其在 BRCA 数据集上准确性和 F1 评分提升显著。与 MPK - GNN 模型相比，AMOGEL 在 BRCA 数据集上的准确性提高了 10.4%。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;消融研究&lt;/strong&gt;：对 AMOGEL 的 ARM 特征选择、图特征学习和全局特征学习模块进行消融研究。结果表明，ARM 技术作为早期融合策略有效，能挖掘组学间关系并提取相关特征；整合先验知识可提高模型性能；不同模块的组合对模型性能有显著影响，AMOGEL 的整体架构设计优势明显。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生物标志物发现和解释&lt;/strong&gt;：通过两层 GAT 卷积学习边的注意力分数，筛选出候选基因生物标志物。对 BRCA 和 KIPAN 数据集的前 10 名基因分析发现，部分已知基因与癌症密切相关，如 BRCA 中的 FOXC1、ESR1 等，KIPAN 中的 miR - 126、VEGFA 等；部分基因虽研究较少但排名靠前，有进一步研究价值。通过与 DAVID 数据库比较及外部数据集验证，证实了 AMOGEL 筛选生物标志物的可靠性和有效性。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;研究结论和讨论部分指出，AMOGEL 模型有效整合了多组学数据和先验生物学知识，通过 ARM 进行早期融合构建综合多组学图，引入多维边增强复杂生物相互作用的表示，利用基因排名技术提高模型可解释性并发现生物标志物。该模型在癌症亚型分类准确性、F1 评分和 AUROC 方面表现优异，且筛选出的生物标志物在相关癌症中具有显著富集。尽管模型性能受超参数调整影响，部分生物标志物因数据集限制无法测试，但 AMOGEL 仍为癌症研究提供了一个强大的框架，有助于推动更有效的个性化治疗策略的发展。未来研究可聚焦于自动超参数调整方法和优化 ARM 算法，同时探索其在其他癌症亚型中的应用 **&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 28 Mar 2025 21:34:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE43MmRPcFlGa3VjWW9HZFYtZkRhZFlTWTR1alBuSWROM1VkYnFRYzRjajQ5X0tXWXN6VDY1Yk1YeFdwX3VSa1lVM3g2amhXdXV0SDhqejQxMldES3pXYm9NUEZCSlZrdFM1VTRBSA</guid></item><item><title>靶向猴痘病毒 DNA 聚合酶的抗病毒肽相互作用的计算研究：新型抗病毒疗法的潜在突破 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5BTUVkSkNpc1k5WEFFT1dJYU5xajRUZENFVGg5TDc2WFFMcDlLbDYteU5VSllScjg3R3BUd2twb3FBTXBNcHJDYmVhalNkd1BXQlJoSEhqMG1YYkpGX2FuWG5qYU5kajhDUlZveA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;靶向猴痘病毒 DNA 聚合酶的抗病毒肽相互作用的计算研究：新型抗病毒疗法的潜在突破&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;《In Silico Pharmacology》：Computational investigation of antiviral peptide interactions with Mpox DNA polymerase&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年03月29日&lt;/i&gt;
+            &lt;i&gt;来源：In Silico Pharmacology&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决猴痘病毒（Mpox）治疗难题，研究人员开展了抗病毒肽与 Mpox DNA 聚合酶（DNA pol）相互作用的研究。经筛选数据库、分子对接、MD 模拟等，确定 DRAVPe01393 和 DRAVPe01399 有潜力，或助力开发抗猴痘创新疗法。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　猴痘病毒 DNA 聚合酶（Mpox DNA pol）在病毒复制过程中起着至关重要的作用，它推动着病毒 DNA 的合成，这是病毒生命周期中不可或缺的阶段。抑制 Mpox DNA pol 的运作能够干扰病毒的繁殖，有助于控制疾病，因此它成为了抗病毒疗法的理想靶点。肽类物质凭借其独特的特性，作为对抗病毒的潜在治疗选择崭露头角，它们具有广谱抗病毒活性，能有效对抗多种病毒。在这项研究中，研究人员利用计算技术探索抗病毒肽与 Mpox DNA pol 相互作用的分子细节，对两个抗病毒肽数据库进行了筛选。研究采用了分子对接技术，随后进行分子动力学（MD）模拟以及模拟后的结合能预测。从 19 种对 DNA 聚合酶有活性的选定肽中，鉴定出 DRAVPe01393 和 DRAVPe01399 这两种肽作为极具潜力的候选物质。MD 模拟研究表明，这些肽与 Mpox DNA pol 表现出稳定的相互作用，并且展现出良好的细胞穿透潜力。值得注意的是，与对照配体西多福韦二磷酸（?10.79 kcal/mol）相比，DRAVPe01399 和 DRAVPe01393 的结合亲和力分别达到?60.86 kcal/mol 和?47.92 kcal/mol ，表现更为出色。这些研究结果可能会推动创新抗病毒疗法的开发，用于预防猴痘，助力全球对抗这一新兴传染病的行动。 
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://alicdn.ebioweb.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 28 Mar 2025 20:54:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5BTUVkSkNpc1k5WEFFT1dJYU5xajRUZENFVGg5TDc2WFFMcDlLbDYteU5VSllScjg3R3BUd2twb3FBTXBNcHJDYmVhalNkd1BXQlJoSEhqMG1YYkpGX2FuWG5qYU5kajhDUlZveA</guid></item><item><title>廉江市人民医院创新疗法论文荣登国际顶尖期刊 - gd.chinanews.com.cn</title><link>https://news.google.com/rss/articles/CBMia0FVX3lxTE5IZVZJMWFYVWxVRTc0Tnk3TVQ4eHRlSTVFT3k0Y0tDX0xOWGJvUjJUc3hEalV4cDAxekotcjNLN0ZGcDd1NnB5NU9POTJ5RjVyTnBidGtxVzdHNW1RUkQwYnlfMVpDUGNOU3NB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article_content"&gt;
 &lt;p&gt;　　日前，廉江市人民医院乳腺科主任黄恒作为第一作者的研究论文登上国际顶尖期刊《Nature Communications》(影响因子17.6)，论文提出非哺乳期肉芽肿性乳腺炎治疗局部优先的理念，证明了局部冲洗后观察与口服激素具有同等的治疗效果，但是具有更好的安全性，更低的副作用。&lt;/p&gt;
 
 &lt;p&gt;　　据黄恒主任介绍，非哺乳期肉芽肿性乳腺炎(Idiopathic Granulomatous mastitis, IGM)是一类乳腺炎症性疾病，因其具有治疗难度大、易复发、对生活质量影响大等特点，给患者身心带来极大痛苦，常常被称作是“不死的癌症”。尽管这种疾病本身并不致命，但其发病率逐年增高，且容易反复发作，导致皮肤溃烂，部分患者甚至因为痛苦不堪，无奈的选择切除乳房的手术，接受类似乳腺癌的根治性的手术。&lt;/p&gt;
@@ -1179,338 +1303,4 @@ P301S显示典型mTOR过度激活：AKT（Ser&lt;sup&gt;473&lt;/sup&gt;）和mTO
 &lt;p&gt;综合研究结果和讨论部分，该研究意义重大。研究表明，在疟疾流行地区接受 SMC 的儿童中，无症状疟疾感染较为普遍，且这类感染儿童在疟疾传播季节发展为临床疟疾的风险更高。这一发现提示，在 SMC 活动第一轮之前，实施高效抗疟药的大规模药物给药（Mass Drug Administration，MDA）以清除寄生虫储存库，有望显著降低疾病负担，增强 SMC 在季节性传播期间控制疟疾的效果。同时，研究也指出了当前研究存在的局限性，如依赖显微镜检查可能低估无症状感染的流行率、研究结果可能无法推广到其他疟疾传播动态不同的地区、缺乏对药物在无症状携带者体内行为的了解等，为后续研究指明了方向。 &lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 22:31:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE4zR29mWW5xWnR1UDdMbWtrbEM1TVNaMWJFUXhYell6R2wxRFhoemtzZjFLZjI3X2RMSHBKRWJHUlRtWG1jQ0hxZ0hDa05RMlduS3Q4VTZKSVMwSW9TT01xb3VWOFBmaVo5OE90YQ</guid></item><item><title>2 型糖尿病与胰腺癌的复杂关联：观测与孟德尔随机化分析的新洞察 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFAzc3JBY3JHbndhM2o2dWV6U3pldUN2UUtURW95Q09tRFNkWXU5LWFWUXl1TUo1cnZ3VlBNNVFEdG1LYkd0MjZ0RzRkT25Gak4tYUFaUnpteEowNTRaUjQwUkdWMnpLVGp5ZWRTbA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Cancer》：Complex interplay between type 2 diabetes mellitus and pancreatic cancer: insights from observational and mendelian randomization analyses&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为探究 2 型糖尿病（T2DM）与胰腺癌（PC）的因果关系及相关风险因素的中介作用，研究人员开展了回顾性研究、孟德尔随机化（MR）研究和因果中介分析（CMA）。结果表明 T2DM 与 PC 风险增加有关，胰岛素治疗、FGF4 和巯基氧化酶 2 起中介作用，为疾病防治提供参考。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　在健康医学领域，胰腺癌（PC）堪称 “癌中之王”，其恶性程度极高，患者的中位生存期仅 5 - 8 个月，5 年生存率更是低于 10%，给全球健康带来沉重负担。而 2 型糖尿病（T2DM）作为一种常见的慢性非传染性疾病，与胰腺癌之间存在着复杂的双向关联。目前，关于 T2DM 治疗对 PC 风险的影响尚不明确，T2DM 与 PC 之间潜在的中介因素也有待挖掘。为了深入剖析这些问题，浙江中医药大学第四临床医学院、西湖大学医学院附属杭州市第一人民医院等单位的研究人员开展了一项研究，相关成果发表在《BMC Cancer》上。&lt;/p&gt;
-&lt;p&gt;研究人员采用了多种关键技术方法。首先，进行单中心回顾性研究，纳入 2013 年 1 月至 2023 年 12 月期间在杭州市第一人民医院就诊的 581 例 PC 患者和 582 例健康对照者，收集其临床资料。其次，利用全基因组关联研究（GWAS）获取 T2DM、PC 及相关中介因素的基因数据。最后，运用多变量逻辑回归、孟德尔随机化（MR）分析和因果中介分析（CMA）等统计学方法对数据进行处理与分析 。&lt;/p&gt;
-&lt;p&gt;研究结果主要包括以下几个方面：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;基线特征&lt;/strong&gt;：PC 组和对照组在年龄、性别、教育水平、吸烟、高血压及超重等方面存在显著差异&lt;span&gt;&lt;span tabindex="0" aria-describedby="0017guy" data-popupid="0017guy"&gt;1&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;T2DM 对 PC 的影响&lt;/strong&gt;：多变量逻辑回归分析显示，T2DM 患者患 PC 的风险显著高于非 T2DM 患者。且 PC 风险随着 T2DM 病程的增加而呈下降趋势，新诊断糖尿病（NODM）患者的 PC 风险高于长期糖尿病（LSDM）患者，T2DM 诊断年龄越大，PC 风险越高，胰岛素治疗的 T2DM 患者 PC 风险更高&lt;span&gt;&lt;span tabindex="0" aria-describedby="pougp8g" data-popupid="pougp8g"&gt;2&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;双向两样本 MR 分析&lt;/strong&gt;：通过精心选择 306 个单核苷酸多态性（SNPs）代表 T2DM 的遗传易感性，运用标准逆方差加权（IVW）法发现，T2DM 的遗传易感性与 PC 发病风险增加相关（OR = 1.11；95% CI = 1.034 - 1.193），但未发现 PC 与 T2DM 之间存在统计学显著的因果关系，同时 MR-Egger 截距表明无定向多效性，分析也未显示出显著的异质性&lt;span&gt;&lt;span tabindex="0" aria-describedby="gywepip" data-popupid="gywepip"&gt;3&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;因果中介分析&lt;/strong&gt;：CMA 表明，T2DM、胰岛素治疗、FGF4 和巯基氧化酶 2 可能独立与 PC 的发生相关。胰岛素治疗在 T2DM 导致 PC 的因果路径中的中介作用为 0.061（95% CI = 0.043 - 0.076），占总效应的 56.8%；FGF4 的中介作用为 0.058（95% CI = 0.023 - 0.095），占总效应的 55.8%；巯基氧化酶 2 的中介作用为 0.006（95% CI = 0.002 - 0.009），占总效应的 5.9%&lt;span&gt;&lt;span tabindex="0" aria-describedby="2zb6hrq" data-popupid="2zb6hrq"&gt;4&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;研究结论与讨论部分指出，该研究首次通过两步 MR 分析确定了胰岛素治疗、FGF4 和巯基氧化酶 2 是 T2DM 与 PC 之间的三个中介因素。T2DM 与 PC 之间存在时间依赖性，为老年 T2DM 患者的血糖控制和癌症筛查提供了指导。从公共卫生角度看，T2DM 患者应优先采用饮食、运动和口服药物控制血糖，谨慎使用胰岛素治疗。FGF4 在调节血糖稳态和促进胰腺癌进展中发挥双重作用，巯基氧化酶 2 也可能是 PC 治疗的潜在靶点。不过，研究也存在一定局限性，如回顾性研究存在多种偏倚，MR 研究仅在欧洲人群中进行，缺乏东亚人群数据，且两步 MR 分析可能无法充分控制潜在混杂因素。尽管如此，该研究为深入理解 T2DM 与 PC 之间的关联提供了新视角，为未来的治疗策略开发提供了潜在靶点，对推动相关疾病的研究和防治具有重要意义。 &lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 22:20:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFAzc3JBY3JHbndhM2o2dWV6U3pldUN2UUtURW95Q09tRFNkWXU5LWFWUXl1TUo1cnZ3VlBNNVFEdG1LYkd0MjZ0RzRkT25Gak4tYUFaUnpteEowNTRaUjQwUkdWMnpLVGp5ZWRTbA</guid></item><item><title>综述：直肠脱垂作为结直肠癌的初始表现：一项系统综述 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1zSFdGSWFOZzZjVnMyZkdtdDZYTEZVZ2VqaDFEdGhQdEk3SDBjRUh2dlZBN0VGRFFRY1FoVEp3X1VWT1BCaFJvR0tiNFZTbFBBNHdGUUgwUG9UWnktalZBM0ZYRm02Vjk3cUE4bg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Cancer》：Rectal prolapse as an initial presentation of colorectal cancer: a systematic review&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　这篇综述聚焦结直肠癌（CRC）与直肠脱垂的关联。通过系统回顾文献，发现直肠脱垂可能是 CRC 的初始症状，在 65 岁以上女性中更常见，常伴直肠出血、便秘。建议对无肿瘤易患因素的直肠脱垂患者进一步检查。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　### 引言&lt;/p&gt;&lt;p&gt;结直肠癌（Colorectal cancer，CRC）在全球癌症发病率中占比 10%，癌症死亡病例中占 9.4% 。尽管 CRC 治疗前景总体乐观，但病例数不断增加和发病率上升，依旧给公共卫生带来挑战。早期诊断 CRC，能让临床医生选择合适治疗方案，降低疾病负担（包括并发症和成本），提高患者生存率。所以，识别 CRC 的体征和症状，以便及时安排患者进行筛查或检查至关重要。早期诊断症状，有助于预防并发症、提高生存率并减少生活质量的下降。
-&lt;/p&gt;&lt;p&gt;良性结直肠疾病，像直肠脱垂、痔疮等，应被视为 CRC 的警示信号。直肠脱垂，也叫 procidentia，是指直肠突出于肛门外，发病率为 0.25%。虽然直肠脱垂合并 CRC 并不常见，但已有多项研究报告了以直肠脱垂为主要症状，后续检测出结直肠恶性肿瘤的病例，不过目前相关文献综述较少。因此，系统总结不同研究中这些罕见病例的综述存在空白。本研究旨在系统回顾诊断为 CRC 的直肠脱垂病例及其特征。&lt;/p&gt;
-&lt;h3&gt;方法&lt;/h3&gt;
-&lt;p&gt;本研究依据系统评价和荟萃分析的首选报告项目（Preferred Reporting Items for Systematic Reviews and Meta - Analysis，PRISMA）指南进行系统综述 。研究方案已在国际系统评价前瞻性注册库（PROSPERO）注册，编号为 CRD42024533327。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;数据来源和检索策略&lt;/strong&gt;：2024 年 6 月，研究人员检索了 Web of Science、PubMed 和 Scopus 等电子数据库，以确定以直肠脱垂为 CRC 初始表现的病例报告。检索词采用 “直肠脱垂” 与 “结直肠癌” 的组合（完整检索策略见补充文件 1）。同时，对上述选定研究中提取的所有参考文献进行了全面的手动检索，以识别其他可能符合条件的研究。使用 Endnote 20 版本管理文献（组织、分类和去除重复项）。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;研究选择&lt;/strong&gt;：本综述纳入所有无语言和时间限制，报告患者最初主诉为直肠脱垂，随后在进一步诊断过程中被确诊为 CRC 的病例报告。本研究中 CRC 的定义为所有源于结肠或直肠的病理恶性肿瘤。排除标准包括：无可用摘要、肿瘤从肛门突出的病例以及先前已诊断为 CRC 的患者。去除重复文章后，由两名独立的评审人员对所有检索到的文章进行初步标题和摘要筛选。如有分歧，通过达成共识或咨询第三位评审人员解决。对于同一作者的相似文章，纳入最新发表的文章。由两名评审人员进行数据列表和提取，如有差异，通过进一步讨论和与其他作者重新核对解决。对所有纳入系统综述的文章（即符合纳入标准的文章），使用乔安娜布里格斯研究所（The Joanna Briggs Institute，JBI）的病例报告批判性评价工具，评估研究的方法学质量，确定研究在设计、实施和分析中对偏差可能性的处理程度 。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;数据提取&lt;/strong&gt;：定量正态变量以均值 ± 标准差（SD）报告，非正态变量以中位数（四分位数间距：IQR）描述。分类特征也以频率（百分比）表示。结果按照 PRISMA 建议呈现。流程图总结了每个筛选阶段剩余的文章数量，并说明了排除原因（图 1）。提取的变量包括：第一作者姓名、出版年份、年龄、性别、肿瘤位置、肿瘤类型、病理结果、伴随症状和既往病史。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;结果&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;研究筛选流程&lt;/strong&gt;：在三个数据库中共检索到 834 条记录。去除重复文章后，最初纳入 722 项研究进行标题和摘要筛选；其中 688 项被排除，34 项研究进入全文筛选。6 项研究的全文未找到，且其摘要信息不足以纳入本研究。最终，31 项研究被纳入系统综述（28 项来自数据库，3 项来自其他方法）（图 1）。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;病例的人口统计学和临床特征&lt;/strong&gt;：符合条件病例的人口统计学和临床特征总结在表 1 中。从描述性特征来看，超过一半的患者年龄在 65 岁以上，病例的平均年龄 ± SD 为 64 ± 17.9 岁，17 例（56%）病例报告中提及女性。根据确诊癌症的起源，患者分为三组，其中 14 例（45%）癌症起源于直肠，11 例（36%）起源于乙状结肠，6 例（19%）起源于直肠乙状结肠。患者既往病史无明显趋势，但分别有 3 例（9.7%）贫血、2 例（6.4%）高血压、1 例（3.2%）痴呆、1 例（3.2%）憩室炎、1 例（3.2%）胃溃疡、2 例（6.4%）心血管疾病、3 例（9.7%）慢性呼吸道疾病。在病例的既往病史中，直肠脱垂伴随症状的发生频率如图 2 所示。可以看出，直肠出血和便秘是 CRC 患者以直肠脱垂为初始表现时最常报告的伴随症状。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;肿瘤类型&lt;/strong&gt;：在本系统综述中，经检查发现，87.1% 的病例肿瘤类型为腺癌。胃肠道间质瘤、非霍奇金淋巴瘤和间质平滑肌肉瘤分别占病例肿瘤类型的 6.4%、3.2% 和 3.2%。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;时间趋势&lt;/strong&gt;：根据提取的病例观察发现，近年来以直肠脱垂为初始表现的 CRC 病例数量呈上升趋势。本综述中 67.7% 的病例是在 2015 年及以后确诊的。所有病例报告的出版年份趋势如图 3 所示。这些报告还按文章出版地区进行了展示（图 4）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;讨论&lt;/h3&gt;
-&lt;p&gt;自 1986 年以来，直肠脱垂与腹腔内病理之间的关系就备受关注，也提出了不同假设。比如，结肠病理可能导致慢性便秘，进而引发部分肠梗阻，致使患者用力排便，腹内压升高，最终导致直肠脱垂。在此，研究人员描述了 31 例与 CRC 相关的罕见直肠脱垂病例的特征。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;儿童中继发于结直肠癌的直肠脱垂&lt;/strong&gt;：在本系统综述中，与成人相比，儿童继发于 CRC 的直肠脱垂发生率约为 3%。尽管儿童直肠脱垂并不常见，但自 1988 年起，已有多篇文章探讨了儿童直肠脱垂的危险因素、疾病管理和临床特征 。最近，Cares 等人对 158 名诊断为直肠脱垂的儿童进行回顾性研究，发现便秘是主要病因，用力排便则是这些儿童最常见的症状。该研究还揭示了近几十年来儿童直肠脱垂特征的变化。2009 年，有病例报告一名 12 岁男孩，以直肠脱垂为初始表现，伴有直肠出血症状，最终确诊为直肠下段非霍奇金淋巴瘤，该病例符合本综述的纳入标准。2014 年，有研究报告了两名儿童同时患有直肠脱垂和结直肠腺癌（杜克分期 A 期） 。由此可见，即使在儿童中，也有直肠脱垂作为恶性肿瘤初始表现的情况。基于这些报告，虽然罕见，但儿童直肠脱垂患者发生恶性肿瘤的可能性不容忽视。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;性别问题在继发于结直肠癌的直肠脱垂关联中&lt;/strong&gt;：女性在直肠脱垂病例中占大多数。长期以来，盆底肌肉松弛或无力被认为是直肠脱垂的病因之一，女性盆底松弛可能由生育引起。然而，50% 的直肠脱垂女性从未生育，而且该假设无法解释男性直肠脱垂的发生。也有观点认为精神疾病与直肠脱垂的发生有关 。还有假设称前列腺对盆腔器官起到重要的支撑作用。但迄今为止，性别在直肠脱垂发生率上的差异尚无明确原因 。在本系统综述中，56% 的病例为女性。尽管其他研究显示女性直肠脱垂的患病率高于男性，但本研究关注的是与结直肠恶性肿瘤相关的直肠脱垂病例，而一般情况下男性患 CRC 的风险高于女性 ，这可能是本研究中男性直肠脱垂伴恶性肿瘤比例相对较高的原因。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;伴随症状&lt;/strong&gt;：本研究表明，直肠脱垂最重要的伴随症状是直肠出血和便秘。直肠脱垂常伴有大便失禁（患病率 50 - 75%）、直肠出血（患病率 75 - 100%）、便秘（患病率 25 - 50%）等下消化道症状 ，这些症状与 CRC 症状存在重叠。多项研究评估了症状对 CRC 诊断的作用，发现单一症状对 CRC 诊断的敏感性和特异性较低。但在临床实践中，根据指南，有单个或多个肠道症状的患者通常会被安排进行结肠镜检查。部分研究还指出，多种症状同时出现可能提高 CRC 诊断的敏感性和特异性 。本综述中的患者虽以直肠脱垂为主要诉求，但他们的病史中也存在其他症状，因此详细询问患者病史很有必要。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;肠套叠，一种不常见的直肠脱垂表现&lt;/strong&gt;：肠套叠是指一段肠管套入另一段肠管内。虽然肠套叠在儿童中较为常见，但在成人中并不多见，占所有肠套叠病例的比例不到 5%。以肠套叠经肛管突出为初始表现的结直肠恶性肿瘤非常罕见，若误诊为良性直肠脱垂，可能危及生命 。与儿童不同，成人肠套叠常与病理起始点有关，约 57% 的病例由恶性肿瘤引起 。因此，外科医生应注意，将长期存在的直肠脱垂误诊为乙状结肠 - 直肠经肛管肠套叠会引发严重并发症。在本综述中，19.3% 的报告病例为乙状结肠 - 直肠经肛管肠套叠。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;肿瘤位置&lt;/strong&gt;：文献表明，位于直肠的肿瘤，因其位置靠近肛管，可能更容易导致直肠脱垂 。而直肠以上部位的肿瘤，可能通过引发肠套叠进而导致直肠脱垂 。在本系统综述中，直肠和直肠乙状结肠肿瘤占所有病例的 64.5%。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;直肠脱垂与结直肠癌关联的体内研究&lt;/strong&gt;：2016 年，Tommelein 等人通过在免疫缺陷小鼠的盲肠原位移植 CRC 细胞，建立了用于研究 CRC 表现为直肠脱垂的小鼠模型 。此前虽有多种人类 CRC 细胞系（如 HCT - 116、SW - 620、DLD - 1、HCT - 8/E11 和 HT29）被注入免疫缺陷小鼠体内，但均未观察到直肠脱垂现象。Tommelein 等人发现，与成年小鼠不同，幼鼠在接种 COLO320DM 细胞（一种非侵袭性肿瘤细胞系）后易发生直肠脱垂。这一结果与儿童直肠脱垂通常在 3 岁前被诊断出的报道相符 。总体而言，他们认为小鼠 CRC 模型中直肠脱垂的发生，可能是幼鼠解剖结构、肿瘤的非侵袭性类型以及幼年环境等多种因素共同作用的结果。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;优势与局限性&lt;/strong&gt;：本研究是首次系统综述直肠脱垂作为 CRC 初始表现的相关文献，但存在一定局限性。例如，缺乏对肿瘤类型、肿瘤分期、诊断年龄、性别等因素对 CRC 初始表现影响的研究，因此无法明确直肠脱垂作为 CRC 表现的相关危险因素。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;结论&lt;/h3&gt;
-&lt;p&gt;本综述强调，直肠脱垂有可能是 CRC 的初始症状，也可能提示存在未被识别的腹腔内病理情况。因此，对于没有伴随肿瘤易患因素的直肠脱垂患者，建议进一步检查，如进行结肠镜检查，以便及时发现潜在的 CRC，提高患者的治疗效果和生存率。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 22:20:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1zSFdGSWFOZzZjVnMyZkdtdDZYTEZVZ2VqaDFEdGhQdEk3SDBjRUh2dlZBN0VGRFFRY1FoVEp3X1VWT1BCaFJvR0tiNFZTbFBBNHdGUUgwUG9UWnktalZBM0ZYRm02Vjk3cUE4bg</guid></item><item><title>巴基斯坦拉合尔地区HIV-1亚型pol基因的分子特征及耐药模式解析 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9JRC1ydWEzbjBRR3lHNFFqeTFBT3RKMnBGMlJKYVFWVjVXZTA0S1B6cUw1Zy1jbDBrbFktTXZOd2psUm1nNzJlTXZWNkdHNTlIbklMY2NlVFVMek1vdHV6ajZfSVNId3dwMVFhOQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;巴基斯坦拉合尔地区HIV-1亚型pol基因的分子特征及耐药模式解析&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;《Virus Genes》：Molecular characterization and drug resistance pattern in pol gene of HIV-1 sub-subtypes circulating in Lahore, Pakistan&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年03月28日&lt;/i&gt;
-            &lt;i&gt;来源：Virus Genes 1.9&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　来自巴基斯坦的研究人员通过分析50份HIV阳性样本，聚焦pol基因进行亚型鉴定和耐药性评估。研究成功获得14条序列，发现CRF43_02G等重组流行株占主导，并在RTp66区域检测到QAU-AZ2分离株对NVP、ETR等5种NNRTIs耐药的关键突变，为巴基斯坦HIV精准治疗提供重要分子流行病学依据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;p class="p1Textcen font14" id="Zoom"&gt;
-        　　这项开创性研究揭示了巴基斯坦拉合尔地区HIV-1病毒的分子特征。科研团队采用实时荧光定量PCR（Real Time-PCR）确认50份阳性样本后，通过桑格测序法（Sanger method）成功获取14条pol基因序列。系统发育分析显示8株病毒属于CRF43_02G重组型，3株为CRF02_AG相关亚型。在逆转录酶p66亚基（RTp66）区域，发现编号QAU-AZ2（GenBank登录号OR086936）的毒株对奈韦拉平（NVP）、依曲韦林（ETR）等非核苷类逆转录酶抑制剂（NNRTIs）呈现多药耐药性，而核苷类逆转录酶抑制剂（NRTIs）仍保持敏感。有趣的是，虽然检测到多个氨基酸替换，但蛋白质结构预测显示这些突变未引起显著构象改变。研究者建议后续需通过分子对接技术深入解析突变功能，并强调对巴基斯坦HIV毒株完整pol基因测序的重要性，这对制定区域性抗病毒治疗策略具有关键指导意义。
-        &lt;/p&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://alicdn.ebioweb.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 22:00:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9JRC1ydWEzbjBRR3lHNFFqeTFBT3RKMnBGMlJKYVFWVjVXZTA0S1B6cUw1Zy1jbDBrbFktTXZOd2psUm1nNzJlTXZWNkdHNTlIbklMY2NlVFVMek1vdHV6ajZfSVNId3dwMVFhOQ</guid></item><item><title>血清和脑脊液中突触素（SYP）和神经颗粒素（NRGN）水平升高及其在创伤性脑损伤早期的脑表达改变 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1oRWJCaFBUQjJzWnVPYjgwSWJiSHNwM0RSUnNRWDRITDh1amdabzNVbkt6SDBabTZzYUZHeGpLUXdOZjZjQ2tJNVVDWFkwUjE5UTcxemI0VmZLN2JzNzgwMmRvVExjenlmUXc4YQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;血清和脑脊液中突触素（SYP）和神经颗粒素（NRGN）水平升高及其在创伤性脑损伤早期的脑表达改变：潜在的突触损伤标志物研究&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;《International Journal of Legal Medicine》：Elevated serum and cerebrospinal fluid levels of the synaptophysin and neurogranin with its altered brain expression in the early phase of traumatic brain injury as a potential marker of synaptic injury&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年03月28日&lt;/i&gt;
-            &lt;i&gt;来源：International Journal of Legal Medicine 2.2&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　创伤性脑损伤（TBI）死亡率高且常涉及法医和犯罪学调查。研究人员开展以 SYP 和 NRGN 为潜在生物标志物诊断 TBI 的研究，发现 TBI 案例血清和脑脊液中 SYP、NRGN 浓度升高，脑内表达改变。该研究为 TBI 诊断等提供新工具。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;p class="p1Textcen font14" id="Zoom"&gt;
-        　　创伤性脑损伤（TBI）是导致死亡的重要原因，常与法医和犯罪学调查相关。随着科学和临床的发展，持续需要探索用于 TBI 生前和死后诊断的新生物检测方法和数据分析手段。此前，主要是对突触内和突触外的蛋白质，如突触素（SYP）和神经颗粒素（NRGN），作为 TBI 的潜在标志物进行研究，以判断它们能否成为可靠的生物标志物组合。本研究旨在通过基于人群的尸检筛查，明确在 TBI 案例中，血清和脑脊液等生物流体中 SYP 和 NRGN 浓度是否升高，并通过免疫组化染色对比分析获取的脑组织中 SYP 和 NRGN 的蛋白质表达情况。研究选取了 20 例疑似因严重头部损伤致死的案例，以及 20 例心肺功能衰竭导致猝死的对照案例。在死亡后约 24 小时内收集血清和脑脊液（CSF）等生物流体，并使用酶联免疫吸附试验（ELISA）进行对比。法医尸检时也收集了脑组织样本。研究观察到，TBI 案例血清和脑脊液中 SYP 和 NRGN 浓度升高。在对额叶皮质进行抗 SYP 染色时，发现头部损伤组神经元和神经毡内的反应显著普遍减弱；对额叶皮质进行抗 NRGN 染色时，神经元胞体和轴突内的反应显著普遍均一化。突触生物标志物检测的应用，为 TBI 诊断和发病机制的研究提供了一种有趣且新颖的工具。这种替代性的突触检测方法，对于评估 TBI 非致死案例的临床预后，以及计算患者发生神经退行性疾病的风险具有重要意义。 
-        &lt;/p&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://alicdn.ebioweb.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://alicdn.ebioweb.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 21:50:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1oRWJCaFBUQjJzWnVPYjgwSWJiSHNwM0RSUnNRWDRITDh1amdabzNVbkt6SDBabTZzYUZHeGpLUXdOZjZjQ2tJNVVDWFkwUjE5UTcxemI0VmZLN2JzNzgwMmRvVExjenlmUXc4YQ</guid></item><item><title>犬特发性癫痫与粪便微生物群失调的关联：肠道微生物在癫痫发病机制中的新探索 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1EQmk1MVF6UFQ0REZDUXNPOGpFUVZlV28zZXJ2RTVFdlhNdlFxOHVlS0NWQmNoZUFfbW10VVhBM3kyYWdfT2FrXzdsU2VlVEFJSTZRT0ZXSHdoWHFmbmdjUmZZOHY3R2JVRVp2Wg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Animal Microbiome》：Idiopathic epilepsy in dogs is associated with dysbiotic faecal microbiota&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为探究犬特发性癫痫（idiopathic epilepsy，IE）与肠道微生物群的关系，研究人员对比了未接受抗癫痫药物治疗的 IE 犬和健康对照犬的粪便微生物群。结果发现 IE 犬存在微生物群失调，该研究为 IE 治疗提供新思路，有助于探索针对肠道微生物群的干预措施。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　在动物的健康领域，肠道微生物群就像一个神秘的 “小宇宙”，对动物的生理和病理过程有着至关重要的影响。它能通过产生短链脂肪酸（SCFA）等代谢产物，经肠 - 脑轴（gut-brain axis）影响免疫系统发育、胃肠道健康以及大脑功能 。在癫痫这个复杂的神经系统疾病研究中，肠道微生物群的角色备受关注。癫痫是大脑神经元异常同步放电导致的突然、短暂的症状，严重影响患者生活。在犬类中，特发性癫痫（IE）十分常见，其发病原因尚不明确 。以往研究表明，肠道微生物群可能参与癫痫的发病过程，但相关研究较少且结果不一致。为了进一步探索其中的奥秘，来自意大利巴里大学兽医学院、丹麦哥本哈根大学兽医学院以及意大利普利亚和巴西利卡塔动物卫生实验所的研究人员开展了此次研究，其成果发表在《Animal Microbiome》上。研究人员为了深入了解犬特发性癫痫与肠道微生物群之间的联系，进行了一项对比研究。他们从 2021 年 6 月至 2023 年 5 月，在意大利巴里大学兽医学院的兽医教学医院招募了符合严格标准的 19 只特发性癫痫犬和 17 只健康对照犬。研究中，他们运用了 16S rRNA 测序技术对犬的粪便微生物群进行分析。这一技术可以帮助研究人员确定微生物群的种类和数量，从而了解其组成和多样性。此外，还通过各种临床检查和实验室检测，排除了其他可能影响结果的疾病因素。研究结果主要分为以下几个方面：
-&lt;/p&gt;&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;研究群体&lt;/strong&gt;：最初有 26 只疑似 IE 犬和 24 只假定健康对照犬符合招募条件，但经过严格筛选，排除了部分不符合标准的犬只，最终确定了 19 只 IE 犬和 17 只健康对照犬进行研究。两组在品种、年龄、身体状况评分（BCS）、饮食和生殖状态上没有显著差异，但 IE 组中雄性犬的比例显著高于健康对照组。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;粪便微生物群组成和多样性&lt;/strong&gt;：在所有犬的粪便微生物群中，厚壁菌门（Firmicutes）、梭杆菌门（Fusobacteria）和拟杆菌门（Bacteroidetes）占主导地位 。与健康对照犬相比，IE 犬的有益菌如粪杆菌属（Faecalibacterium）、普雷沃氏菌属（Prevotella）等减少，而大肠杆菌（Escherichia coli）、产气荚膜梭菌（Clostridium perfringens）等机会致病菌增多 。同时，IE 犬的细菌丰富度显著降低，均匀度也呈下降趋势，这表明 IE 犬的粪便微生物群多样性减少。然而，两组之间的群落组成（β- 多样性）没有显著差异。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;差异分析&lt;/strong&gt;：通过 DESeq2 分析，发现了许多在 IE 犬和健康对照犬之间差异显著的扩增子序列变体（ASV）。健康对照犬中 Prevotella spp.、Blautia spp. 等 ASV 显著丰富，而 IE 犬中 Bacteroides spp.、Alloprevotella spp. 等 ASV 显著丰富 。在研究结论和讨论部分，研究表明特发性癫痫犬存在粪便微生物群失调的现象，表现为细菌多样性降低、有益菌减少以及机会致病菌过度生长。这些变化可能通过肠 - 脑轴影响癫痫的发生发展 。SCFA 产生菌的减少可能导致其对大脑的保护作用减弱，而机会致病菌的增加可能引发肠道炎症，进而影响大脑的正常功能。此外，研究还发现一些与癫痫相关的细菌，如 Escherichia-Shigella 和 Fusobacterium mortiferum 等，在 IE 犬中富集 。这项研究的意义重大。一方面，它为犬特发性癫痫的发病机制提供了新的见解，揭示了肠道微生物群在其中的重要作用，有助于进一步理解癫痫的发生发展过程。另一方面，为开发针对犬特发性癫痫的新治疗方法提供了方向，例如通过调节肠道微生物群来改善癫痫症状，未来或许可以通过饮食干预或益生菌治疗来调节肠道微生物群，为犬特发性癫痫的治疗提供新的策略。同时，由于犬和人类在肠道微生物群和癫痫方面存在相似性，该研究也为人类癫痫的研究提供了参考，有望将犬作为研究人类癫痫治疗的实验模型。&lt;/li&gt;
-&lt;/ol&gt;
-
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 21:41:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1EQmk1MVF6UFQ0REZDUXNPOGpFUVZlV28zZXJ2RTVFdlhNdlFxOHVlS0NWQmNoZUFfbW10VVhBM3kyYWdfT2FrXzdsU2VlVEFJSTZRT0ZXSHdoWHFmbmdjUmZZOHY3R2JVRVp2Wg</guid></item><item><title>全球传播的卡波西肉瘤相关疱疹病毒（KSHV）：ORF K1 基因的进化分析与种群动态研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBSTkY1RXR6dHc2aFg5Q0w5QkMtbkVLYm8tdjc5ai1ZeDBfUHJpb0l6ckthdkhIVG5jdUJma1pCdWdUdFRKWWVsVmcxV2JGQnh2VFJOaldOVkVDbjlJX1Q5bEktWHJnYVRqUmV1Ug?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Archives of Virology》：Evolutionary analysis and population dynamics in the global transmission of Kaposi’s sarcoma-associated herpesvirus&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为探究卡波西肉瘤相关疱疹病毒（KSHV）的进化历史，研究人员分析了 K1 基因。研究发现 K1 基因重组频繁，主要发生在 A、C 亚型间，B 亚型参与少。KSHV 近期起源且进化迅速，该研究为相关流行病学和临床研究提供参考。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　卡波西肉瘤相关疱疹病毒（Kaposi’s sarcoma-associated herpesvirus，KSHV），这个隐匿在人体中的 “小恶魔”，主要分布在撒哈拉以南非洲和地中海地区。它通常悄无声息地潜伏在人体内，多数时候不会让健康人出现症状，但一旦遇上免疫力低下的人群，比如感染人类免疫缺陷病毒（HIV）的患者或老年人，它就会露出狰狞面目，引发卡波西肉瘤（Kaposi’s sarcoma，KS） 、原发性渗出性淋巴瘤和多中心性 Castleman 病等严重疾病。&lt;/p&gt;
-&lt;p&gt;KSHV 的基因组中有个关键角色 —— 开放阅读框（open reading frame，ORF）K1 基因，它就像病毒的 “身份证”，常被用来区分 KSHV 的不同亚型。可一直以来，人们对它的进化速率和模式了解甚少，基因重组和选择历史也有待揭开神秘面纱。在这样的背景下，来自复旦大学公共卫生学院等机构的研究人员决心深入探索，他们的研究成果发表在《Archives of Virology》上，为我们认识 KSHV 打开了新的大门。&lt;/p&gt;
-&lt;p&gt;研究人员为了深入探究 KSHV 的进化历程，开展了一系列研究。他们从 GenBank 数据库下载了 2157 条 ORF-K1 序列，经过多轮筛选，最终确定了 1304 条长度超过 400nt 的序列用于后续分析。在研究过程中，运用了多种技术方法。首先，通过系统发育分析构建最大似然树，来确定 KSHV 的亚型；接着，使用中位数连接网络分析，研究核苷酸序列单倍型之间的关系；利用 RDP4 软件等多种方法检测 K1 基因的重组情况；借助 TreeMix 软件推断基因流的方向；运用 BEAST 软件估算 KSHV 的进化时间和种群动态变化 。&lt;/p&gt;
-&lt;p&gt;下面来看具体的研究结果。在 KSHV 亚型的全球分布方面，研究人员发现，收集的序列覆盖了 KSHV 的所有主要亚型（A - F）。其中，亚型 A 在全球最为普遍，占比 38.4% ，紧随其后的是亚型 B（27.4%）和亚型 C（26.7%），而亚型 D、E、F 的流行率较低。从地域上看，非洲的序列数量最多，占 41.4% ，这也和 KSHV 在全球的流行病学现状相吻合。&lt;/p&gt;
-&lt;p&gt;关于 K1 基因的重组历史，研究人员通过计算单倍型数量和分离位点数量的差异，发现 K1 基因的平均重组率至少为 0.41 次 / 位点，这表明重组在 ORF-K1 中频繁发生。进一步用 RDP4 软件检测，确定了 11 个主要的重组事件，这些事件的断点几乎均匀分布，没有明显的重组热点。值得注意的是，亚型 A 和 C 参与了几乎所有的重组事件，而亚型 B 参与度很低，这说明 A、C 亚型之间的关系更为紧密，B 亚型在进化上相对独立。&lt;/p&gt;
-&lt;p&gt;在基因流方向上，研究显示大多数基因流事件发生在各大洲内部。亚型 A 和 C 的漂移参数较小，意味着它们之间的基因流和混合程度较高；亚型 B 的漂移参数较大，遗传分化程度更高。&lt;/p&gt;
-&lt;p&gt;研究人员还估算了 KSHV 各亚型的最近共同祖先时间（tMRCA）。结果显示，A - F 亚型的最近共同祖先大约出现在 1186 年，而目前全球流行的亚型则是在过去 300 年内出现的。与其他双链 DNA 病毒相比，KSHV 的进化速率高达 1.55×10&lt;sup&gt;-4&lt;/sup&gt;（95%CI：8.44×10&lt;sup&gt;-5&lt;/sup&gt; - 2.33×10&lt;sup&gt;-4&lt;/sup&gt;）/ 位点 / 年 ，这表明它正承受着强大的选择压力。同时，研究发现 ORF-K1 的有效种群规模在 20 世纪 60 年代有所增加，这可能与二战后全球人口增长有关；1996 年，随着强效 HIV 蛋白酶抑制剂的广泛使用，艾滋病相关机会性感染减少，KSHV 的有效种群规模也受到了一定影响。&lt;/p&gt;
-&lt;p&gt;综合研究结果和讨论部分，这项研究意义重大。它通过分析大量来自不同地理区域的 KSHV K1 基因序列，清晰地展示了 KSHV 亚型的全球分布情况，深入揭示了 ORF-K1 基因复杂的重组和选择动态。这些发现极大地增进了我们对 KSHV 适应和进化机制的理解，为后续的流行病学研究提供了关键信息，有助于追踪病毒的传播路径和规律；在临床研究方面，为开发针对性的治疗策略和疫苗奠定了坚实基础，有望帮助人们更好地预防和控制由 KSHV 引发的相关疾病，守护人类健康。虽然研究存在一定局限性，比如不确定 K1 序列结果能否外推到整个 KSHV 基因组，但它依然为该领域的未来研究指明了方向，激励着科研人员继续深入探索 KSHV 的奥秘。 &lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 21:37:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBSTkY1RXR6dHc2aFg5Q0w5QkMtbkVLYm8tdjc5ai1ZeDBfUHJpb0l6ckthdkhIVG5jdUJma1pCdWdUdFRKWWVsVmcxV2JGQnh2VFJOaldOVkVDbjlJX1Q5bEktWHJnYVRqUmV1Ug</guid></item><item><title>预测 CIN2消退风险列线图的开发与验证：为宫颈癌前病变精准诊疗点亮新灯塔 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBNZFIydHN6WmMwRkFTWjNTOV93TmdxNnVzMS1DblYzRVNleUM1bWhMSXQtdFdDdlBqVUFpOVNJR3pPZnI3TnZ0cFdiQ2g4YkRRSW1mMGlJdWJEUFprbC0wTVprSk9LcmRZbmJvdQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Discover Oncology》：The development and validation of a column chart for predicting the regression risk of CIN2&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为解决宫颈上皮内瘤变 2 级（CIN&lt;sup&gt;2&lt;/sup&gt;）保守治疗缺乏综合预测模型及过度治疗的问题，山西医科大学第二医院研究人员开展了 CIN&lt;sup&gt;2&lt;/sup&gt;预后预测模型的研究。结果成功建立预测模型，该模型可精准评估 CIN&lt;sup&gt;2&lt;/sup&gt;消退风险，有助于制定个性化治疗方案。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
-        　　宫颈癌，这个威胁女性健康的 “隐形杀手”，让无数家庭陷入痛苦之中。而宫颈上皮内瘤变（CIN）作为宫颈癌的重要前驱病变，根据进展为恶性肿瘤的风险分为 CIN 1（低级别）和 CIN 2/3（高级别）。其中，CIN&lt;/p&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;p&gt;的管理一直是临床难题。一方面，约半数 CIN&lt;/p&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;p&gt;病例未经治疗可自发消退；另一方面，部分患者却存在进展风险。目前的处理方式在避免过度治疗和预防癌症进展之间难以平衡。传统治疗方法，如宫颈切除术，不仅会给患者带来心理和生理创伤，还可能引发产科并发症，如早产和胎膜早破。而且，现有研究对 CIN&lt;/p&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;p&gt;保守治疗的相关研究多聚焦于传统风险因素，缺乏全面的预测模型。在这样的背景下，山西医科大学第二医院的研究人员开展了一项极具意义的研究，旨在建立一个预测 CIN&lt;/p&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;p&gt;消退风险的模型，该研究成果发表在《Discover Oncology》上。
-&lt;/p&gt;&lt;p&gt;研究人员为了实现这一目标，采用了多种关键技术方法。他们基于 2019 - 2022 年山西 CIN 队列研究的相关数据，对 512 名 CIN&lt;sup&gt;2&lt;/sup&gt;女性患者进行了横断面分析。通过问卷调查、体格检查、实验室检测和生物标本采集收集临床数据。运用单因素逻辑回归分析筛选影响 CIN&lt;sup&gt;2&lt;/sup&gt;患者 LEEP 或锥切病理结果的因素，再利用最小绝对收缩和选择算子（LASSO）回归进一步筛选，最后进行多因素逻辑回归构建预测模型。采用受试者工作特征（ROC）曲线、重采样方法和决策曲线分析（DCA）评估模型的准确性、校准度和临床应用价值。&lt;/p&gt;
-&lt;p&gt;研究结果如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;人口统计学特征&lt;/strong&gt;：研究收集了 521 名年龄在 19 - 65 岁女性的数据，其中 185 例病变消退，336 例病变持续或进展。病变消退组和病变持续 / 进展组在年龄、初潮年龄、首次怀孕年龄、怀孕次数、分娩次数、绝经女性比例等方面无统计学差异，但首次性交年龄存在显著差异。此外，病变持续 / 进展组的 LBC 结果为 ASC - US 或更高级别、HPV 16、18 和 58 型感染、阴道镜检查时病变面积更大、醋酸白变化更薄的发生率均高于病变消退组。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;影响 CIN&lt;sup&gt;2&lt;/sup&gt;消退预测模型的因素选择&lt;/strong&gt;：单因素逻辑回归分析确定了多个与 CIN&lt;sup&gt;2&lt;/sup&gt;消退相关的因素，如首次性交年龄较晚是保护因素，而多个性伴侣、TCT 分析异常结果（ACS - US 或以上）、HPV 16/18/58 感染、病变面积较大和醋酸白增厚是风险因素。经过 LASSO 回归和逐步多因素逻辑回归，最终确定了预测 CIN&lt;sup&gt;2&lt;/sup&gt;消退的因素包括首次性交年龄、TCT 结果、HPV 感染类型、阴道镜检测的病变面积和醋酸白增厚程度，并构建了预测模型，为每个预测因素分配了特定分数，通过累加分数计算 CIN&lt;sup&gt;2&lt;/sup&gt;消退的概率。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;模型的判别力和准确性&lt;/strong&gt;：ROC 分析显示该模型的敏感性为 0.827，特异性为 0.708，曲线下面积（AUC）为 0.832，表明模型具有良好的判别能力。内部重复采样显示模型校准良好。与 HPV 和 TCT 联合预测模型相比，五因素 CIN&lt;sup&gt;2&lt;/sup&gt;消退预测模型的预测价值显著更高，其净重新分类改善（NRI）为 0.348，综合判别改善（IDI）为 0.348，差异具有统计学意义。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;研究结论和讨论部分指出，该研究成功建立并验证了预测 CIN&lt;sup&gt;2&lt;/sup&gt;消退风险的列线图模型，该模型综合了首次性生活年龄、TCT 结果、HPV 感染状态、阴道镜观察的病变面积和醋酸染色厚度等因素，具有较高的准确性和可靠性。这为临床医生评估 CIN&lt;sup&gt;2&lt;/sup&gt;消退风险提供了客观工具，有助于制定个性化治疗方案。然而，研究也存在一定局限性，如样本排除了部分患有其他疾病的患者，样本量和随访时间有待增加，还需进一步多中心外部验证。尽管如此，该研究成果依然为 CIN&lt;sup&gt;2&lt;/sup&gt;的诊疗提供了重要参考，有望在未来进一步完善和应用，为降低宫颈癌的发病率和死亡率做出贡献。 &lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 21:33:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBNZFIydHN6WmMwRkFTWjNTOV93TmdxNnVzMS1DblYzRVNleUM1bWhMSXQtdFdDdlBqVUFpOVNJR3pPZnI3TnZ0cFdiQ2g4YkRRSW1mMGlJdWJEUFprbC0wTVprSk9LcmRZbmJvdQ</guid></item></channel></rss>
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 27 Mar 2025 22:31:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE4zR29mWW5xWnR1UDdMbWtrbEM1TVNaMWJFUXhYell6R2wxRFhoemtzZjFLZjI3X2RMSHBKRWJHUlRtWG1jQ0hxZ0hDa05RMlduS3Q4VTZKSVMwSW9TT01xb3VWOFBmaVo5OE90YQ</guid></item></channel></rss>
