@@ -1,5 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>综述：认知疲劳的起源与后果 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5pZ2RBNHA2ZmpqakhIZEpsNTZwWnFUbEstNlBETnVtXzRCZnhWVUNGcWpYTFljdEw3TUlJd3BzVGxObVRuRmxmcE5Rc3loOHdrUFlaVFFxM2FDNWFhM29aRloyengzVVV3R2k2TA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>巧用图形模型解析多病共存现象：洞察疾病关联与网络结构 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFB6Mmp0NmNfekc0UklRd0F1bmdNSTNYRjlKcV92SE8xSlFVZGJaWjQ2OGpiSWxxYTFBb0lBbTFpWUFKN29GVVV4eVhNbTEzNEdYWmpPNTRLemlTOGcxWjlObDdLVnNTRzc3ZUtuMw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Medical Research Methodology》：Understanding multimorbidity: insights with graphical models&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　在老龄化加剧、多病共存（multimorbidity）问题凸显的背景下，研究人员开展了利用图形模型理解多病共存的研究。通过分析 214,401 人的数据，发现心血管疾病在疾病网络中占据中心地位，且疾病关联存在性别和年龄差异。这有助于深入理解疾病关系，为医疗决策提供依据。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　随着全球人口老龄化进程的加速，多病共存现象日益普遍，这给医疗系统、护理人员以及整个社会都带来了巨大挑战。多病共存指的是个体同时患有多种慢性疾病，这使得疾病之间的关联和相互作用变得复杂。传统研究方法在分析这种复杂的疾病关系时，往往难以准确把握变量间的真实联系，容易产生虚假关联结果。因此，为了更深入地理解多病共存现象，探究疾病之间的内在联系，来自意大利帕多瓦大学（University of Padova）等机构的研究人员开展了一项关于利用图形模型理解多病共存的研究，相关成果发表在《BMC Medical Research Methodology》上。&lt;/p&gt;
+&lt;p&gt;该研究主要运用了以下关键技术方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;数据收集&lt;/strong&gt;：研究数据来自意大利帕多瓦省当地卫生单位（Local Health Unit，LHU）“ULSS6 Euganea” 的 214,401 名居民，这些居民自 2016 年 1 月 1 日起居住在该地区，且在 2018 年 1 月 1 日时年龄在 65 岁及以上。数据通过医院出院表格收集，涵盖了主要诊断和最多五种伴随疾病信息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型构建与分析&lt;/strong&gt;：采用无向图形模型（undirected graphical models）中的伊辛模型（Ising model）进行分析。首先通过节点式逻辑回归和逐步向后消除法学习模型结构，再用最大似然估计法估计模型参数。同时，计算接近中心性（closeness centrality）和中介中心性（betweenness centrality）等指标来分析网络结构，并进行分层分析研究不同亚组的疾病关联差异。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;研究结果如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;疾病患病率&lt;/strong&gt;：研究发现心血管疾病（Cardio - circulatory diseases，CCD）患病率最高，为 9.66% ，精神疾病（Psychiatric diseases，PSY）患病率最低，仅为 0.66%。不同性别和年龄组的疾病患病率存在差异，76 岁及以上人群患病率较高，多数疾病男性患病率高于女性，但肌肉骨骼疾病（Musculoskeletal diseases，MUS）在女性中更为常见。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;边际与条件独立性&lt;/strong&gt;：边际优势比显示所有疾病类别之间似乎都存在关联，但这可能受到系统中其他变量的影响。而条件优势比能反映控制其他变量后的净两两关联。例如，感觉器官疾病（Sensory diseases，SEN）和泌尿生殖系统疾病（Genitourinary diseases，GEN）边际上显著关联，但条件下二者并非直接关联，而是通过其他变量间接相连。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型参数解读&lt;/strong&gt;：伊辛模型通过单一优势比（odds ratio，OR）来表示两个变量之间的条件独立关系。通过将优势比转换为尤尔 Q 系数（Yule’s Q coefficient），可以更直观地展示变量间的关联强度和方向。在构建的网络中，红色表示正相关，蓝色表示负相关，线条粗细和颜色深浅与关联强度成正比。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;图的拓扑分析&lt;/strong&gt;：计算图的密度发现，尽管整体图密度较高（69.7%），但许多边的关联强度较弱。心血管疾病在网络中处于中心枢纽位置，与几乎所有其他节点都有强关联，而感觉器官疾病处于边缘位置。中心性指标也证实了心血管疾病的核心地位和感觉器官疾病的边缘地位。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;亚组分析&lt;/strong&gt;：对比不同亚组（65 - 75 岁男性、65 - 75 岁女性、76 岁及以上男性、76 岁及以上女性）的网络发现，各亚组网络密度均低于总体网络，且 76 岁及以上人群网络密度更高，65 - 75 岁男性组网络密度高于女性组。同时，在不同亚组中，疾病之间的关联存在差异。如肿瘤（Neoplasms，NEO）和内分泌疾病（Endocrine diseases，END）在 65 - 75 岁男性组中条件独立，而在同年龄段女性组中存在显著关联。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;研究结论与讨论：&lt;br&gt;该研究表明图形模型是分析多病共存的有效工具，能够在控制其他变量影响的同时，深入洞察疾病之间的关联。通过研究疾病网络结构和亚组差异，有助于了解疾病的发生发展机制，为早期疾病检测、精准风险分层、个性化治疗方案制定以及医疗资源合理分配提供科学依据。例如，认识到心血管疾病在疾病网络中的核心地位，提示在临床治疗中应重视心血管疾病对其他疾病的潜在影响；了解到不同性别和年龄组疾病关联的差异，有助于制定更具针对性的预防和治疗策略，实现更精准的医疗干预，从而提高患者的健康水平和医疗服务质量。此外，研究结果还为临床指南的制定和完善提供了参考，推动了对复杂健康问题管理的研究进展，对改善公共卫生状况具有重要意义。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 06:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFB6Mmp0NmNfekc0UklRd0F1bmdNSTNYRjlKcV92SE8xSlFVZGJaWjQ2OGpiSWxxYTFBb0lBbTFpWUFKN29GVVV4eVhNbTEzNEdYWmpPNTRLemlTOGcxWjlObDdLVnNTRzc3ZUtuMw</guid></item><item><title>超加工食品摄入与前列腺癌风险的关联：伊朗男性人群的重要发现 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1tTkJjWGNqZ3VfSDRKbEFLUEpRSGN0aWhHdUMybmR3UkJ6M2I0Zi04QUlteGU2TC03emZCNGdTQktRYl9maHpxa2RTSHFaYkZ5Nm5EM19IRjN5cnBuejNYeWxfX2g0aGNaVVZYSw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Journal of Health, Population and Nutrition》：The association between ultra-processed foods intake and the odds of prostate cancer: a case–control study&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究超加工食品（UPFs）与前列腺癌（PC）的关联，研究人员开展病例对照研究，招募伊朗设拉子医院 60 例 PC 患者和 60 例对照。结果显示，调整混杂因素后，高 UPFs 摄入使 PC 患病几率增加 2.81 倍，这对预防 PC 有重要意义。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在全球范围内，前列腺癌（Prostate Cancer，PC）严重威胁男性健康，是全球癌症相关死亡的第五大原因 ，在伊朗男性中，它也是第二常见的癌症。随着生活方式的改变，超加工食品（Ultra-Processed Foods，UPFs）在人们饮食中的占比逐渐增加。这些食品通常热量、钠、添加糖和饱和脂肪含量高，膳食纤维和全食物成分少，还可能含有包装化学物和高温烹饪产生的致癌物，与多种疾病相关。然而，关于 UPFs 摄入与 PC 之间的关系，目前的研究结果并不一致，且针对伊朗或其他亚洲人群的研究较少。&lt;/p&gt;
+&lt;p&gt;为了深入了解这一关系，来自伊朗设拉子医科大学、德黑兰医科大学等机构的研究人员开展了一项病例对照研究。该研究成果发表在《Journal of Health, Population and Nutrition》上。&lt;/p&gt;
+&lt;p&gt;研究人员采用了多种关键技术方法。首先，从伊朗设拉子的 Namazi 和 Shahid Faghihi 这两所主要的泌尿科转诊医院选取研究对象，病例为组织学确诊的新诊断 PC 患者，对照则从同期因非肿瘤、非糖尿病疾病住院的患者中随机选取。其次，通过医院癌症登记数据库获取患者病历，并由经过培训的研究人员进行面对面访谈，收集人口统计学信息、饮食摄入情况，同时进行人体测量。饮食摄入评估使用有效可靠的半定量食物频率问卷（Food Frequency Questionnaire，FFQ）。最后，运用 NOVA 分类系统对食物进行分类，确定 UPFs，并使用 SPSS 22 软件进行统计分析。&lt;/p&gt;
+&lt;p&gt;研究结果如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;参与者特征&lt;/strong&gt;：最终纳入 60 例病例和 60 例对照，病例组年龄显著大于对照组，身体活动水平显著低于对照组。病例组 UPFs 摄入量中位数占每日总能量摄入（Total Daily Energy Intake，TDEI）的 8.3%，对照组为 6.4%，差异无统计学意义；但病例组总脂肪和饱和脂肪酸（Saturated Fatty Acid，SFA）摄入量显著高于对照组。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不同 UPFs 摄入量人群特征&lt;/strong&gt;：在病例组中，UPFs 摄入量高于均值者，能量、UPFs、总脂肪、SFA 和单不饱和脂肪酸（Monounsaturated Fatty Acid，MUFA）摄入量更高；在对照组中，UPFs 摄入量高的人群，能量、UPFs、纤维、总脂肪、SFA、MUFA 和多不饱和脂肪酸（Polyunsaturated Fatty Acid，PUFA）摄入量均更高。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UPFs 摄入与 PC 风险的关联&lt;/strong&gt;：粗分析时，UPFs 摄入与 PC 患病几率（Odds Ratio，OR）无显著关联（OR=1.96，95% 置信区间（Confidence Interval，CI）：0.94 - 4.05，P=0.069） 。调整 BMI、教育程度、身体活动、年龄和纤维摄入量等潜在混杂因素后，高 UPFs 摄入成为 PC 的显著风险因素，与低 UPFs 摄入相比，高 UPFs 摄入者患 PC 的几率高 2.81 倍（OR=2.81，CI 95%：1.18 - 6.65，P=0.019） 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究结论表明，在伊朗男性人群中，高 UPFs 饮食是 PC 的重要风险因素。尽管该研究存在样本量小、可能存在选择和回忆偏倚、缺乏统一诊断标准等局限性，但仍具有重要意义。它为公共卫生干预提供了依据，提示可以通过政策干预，如产品重新配方、限制营销、食品包装标识 UPFs 信息以及提高公众对 UPFs 健康危害的认识等措施，来降低 PC 等癌症的发生风险。同时，也为后续研究指明方向，未来需进一步关注食品加工水平与各类癌症的关系，引导人们选择新鲜、健康的食物，以促进公众健康。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 06:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1tTkJjWGNqZ3VfSDRKbEFLUEpRSGN0aWhHdUMybmR3UkJ6M2I0Zi04QUlteGU2TC03emZCNGdTQktRYl9maHpxa2RTSHFaYkZ5Nm5EM19IRjN5cnBuejNYeWxfX2g0aGNaVVZYSw</guid></item><item><title>儿童及青少年肾动脉狭窄血管成形术后的中长期疗效：揭示诊断与治疗新方向 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBXMjBQRWNqeTR4c3hEcGVmSFI0S3J0MnBQTUxBM0pCV2JPZHdhblJjdWFqRThfUlg5SEt4LWZjMEdFNGpzN0VIU3hEYk9meXFVVWtiY0FBWlVmZzdnZ181UUh5R01XZU5kUGpoQg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Pediatric Nephrology》：Mid-to-long term outcomes following renal artery angioplasty in children and young adults with renal artery stenosis: a retrospective review&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究肾动脉血管成形术治疗儿童肾血管性高血压（RVH）的疗效及术前诊断成像的作用，研究人员回顾性分析 74 例患者数据。结果显示血管成形术有效，但常需多次操作，且术前成像与血管造影结果多不一致。该研究为儿科 RVH 治疗提供重要参考。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　儿童高血压，这个看似离我们有些遥远的健康问题，实则正悄然影响着不少孩子的成长。肾血管性高血压（RVH），作为儿童高血压中的特殊类型，由肾动脉异常导致肾脏血流不足，激活肾素 - 血管紧张素系统，进而引发血压升高。它在儿童高血压病例中占比 3 - 10% ，而且由于儿童血压测量并不普遍，这种疾病还可能成为成年后患高血压的重要风险因素。&lt;/p&gt;
+&lt;p&gt;目前，针对 RVH 的治疗手段中，血管内介入治疗在成人和儿童中应用越来越广泛。自 1980 年首例肾血管成形术成功实施后，不少研究对其治疗 RVH 的效果进行了评估。然而，这些研究普遍存在随访时间短，治疗效果、血压反应和并发症差异大等问题。同时，关于儿童 RVH 血管成形术疗效的公开数据，无论是治疗的患者数量，还是报告结果的机构数量都十分有限。在这样的背景下，为了更深入地了解儿童 RVH 的诊断和治疗，来自美国埃默里大学医学院等机构的研究人员开展了一项回顾性研究。他们对 2014 年 7 月至 2023 年 5 月期间在一家三级儿童医院接受血管成形术治疗 RVH 的患者临床数据进行分析，相关研究成果发表在《Pediatric Nephrology》杂志上。&lt;/p&gt;
+&lt;p&gt;研究人员在机构伦理审查委员会批准后，回顾性查阅了连续儿科患者的病历。这些患者均患有 2 期 RVH，且排除了肾移植患者。研究中，他们从病历中提取了患者的人口统计学数据、潜在病因、临床表现、血压和抗高血压药物使用情况等信息。评估患者治疗效果的标准分为三类：“治愈” 指血管成形术后血压正常且无需抗高血压治疗；“改善” 表示抗高血压药物的数量和 / 或剂量减少；“失败” 则是指血压无明显变化或恶化，和 / 或抗高血压药物和剂量增加。此外，复发被定义为血管成形术后一年以上，已治愈（停用所有抗高血压药物）的患者再次出现 RVH。研究主要采用方差分析（ANOVA test）和卡方检验分析数据，以 P 值小于 0.05 为有统计学意义，并遵循 STROBE 队列报告指南。&lt;/p&gt;
+&lt;p&gt;在研究结果方面，74 名疑似 RVH 的儿童接受了肾血管造影，其中 36 例血管造影结果正常，38 例异常。在术前成像与血管造影的一致性上，差异较大。31 例有术前成像且血管造影正常的患者中，17 例成像与造影一致，14 例不一致；36 例血管造影异常且有术前成像的患者中，17 例成像与造影一致，19 例不一致 。28 例患者接受了血管成形术，首次血管成形术后，11 例（39.3%）患者被治愈，10 例（35.7%）改善，7 例（25%）失败。在首次治疗效果不佳的 17 例患者中，12 例接受了第二次血管成形术，其中 2 例（16.7%）治愈，8 例（66.7%）改善，2 例（16.7%）失败；5 例接受了第三次血管成形术，3 例（60%）治愈，2 例（40%）改善。总体而言，28 例患者中 16 例（57.1%）被治愈，12 例（42.9%）改善。接受栓塞治疗的 7 例患者中，5 例血压改善，2 例无效。血管成形术组的主要并发症发生率为 8.9%（4/45），包括肾动脉支架残留狭窄、切割球囊血管成形术后动脉外渗、动脉夹层和血管痉挛等。&lt;/p&gt;
+&lt;p&gt;研究结论表明，血管成形术是治疗儿童 RVH 的有效方法，但通常需要多次操作才能取得成功的临床效果。由于其他成像方式与血管造影结果常不一致，当怀疑 RVH 时，应进行血管造影检查。这项研究为儿童 RVH 的治疗提供了重要的参考依据，强调了血管造影在诊断中的重要性，同时也为临床医生在选择治疗方案和评估预后时提供了更可靠的数据支持，有助于推动儿科肾血管性高血压治疗领域的发展。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 05:26:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBXMjBQRWNqeTR4c3hEcGVmSFI0S3J0MnBQTUxBM0pCV2JPZHdhblJjdWFqRThfUlg5SEt4LWZjMEdFNGpzN0VIU3hEYk9meXFVVWtiY0FBWlVmZzdnZ181UUh5R01XZU5kUGpoQg</guid></item><item><title>“阳性时间” 用于预测铜绿假单胞菌导管相关血流感染预后的深度剖析及临床意义 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5rOFRrZE5TUm5OV1VNc3hCbExvVVk4SThQY1UxX09hQXNxdkFuaXZ2RHNNU0dwaDZQdjNrT1gtdFR3LWhBcVhBaWRYZi0wOHJQM1BFYUxfMjdSNGc0YmkxUko1UHpzNzNlUllmdg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Critical Care》：Further considerations on the clinical applicability of time to positivity as a prognostic tool for catheter-related Pseudomonas aeruginosa bloodstream infections&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究影响阳性时间（TTP）的因素及 TTP 对铜绿假单胞菌血流感染（PAE-BSI）的预后价值，研究人员开展相关研究。结果发现耐药性、感染源等因素影响 TTP，且 TTP 可预测相关情况。这为临床评估 PAE-BSI 患者预后提供参考。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在医疗领域，血流感染是一个不容忽视的严重问题。铜绿假单胞菌（Pseudomonas aeruginosa，PAE）引发的血流感染更是棘手，它不仅致病性强，而且耐药情况日益严重，给临床治疗带来了极大挑战。在诊断和评估这类感染时，传统的诊断方法往往存在一定滞后性，难以及时准确地判断病情严重程度和预后。阳性时间（Time to positivity，TTP）作为一个潜在的评估指标，逐渐进入了研究人员的视野。但目前对于 TTP 在铜绿假单胞菌导管相关血流感染（catheter-related Pseudomonas aeruginosa bloodstream infections）中的临床适用性，还存在诸多争议和未知。比如，哪些因素会影响 TTP，TTP 能否准确预测患者的预后等问题都亟待解决。为了深入探究这些问题，来自西班牙巴塞罗那医院临床部传染病科、巴塞罗那大学医学院等多个机构的研究人员 Daniel N. Marco、àlex Soriano、Sabina Herrera 等人开展了相关研究，研究成果发表在《Critical Care》杂志上。&lt;/p&gt;
+&lt;p&gt;研究人员在开展此项研究时，主要采用回顾性分析的方法，对大量临床病例数据进行整理和分析。样本队列来源于医院临床确诊的铜绿假单胞菌血流感染患者，通过收集这些患者的临床资料、微生物学数据等，进行综合研究。&lt;/p&gt;
+&lt;p&gt;在研究结果部分，首先是影响 TTP 的因素分析。研究发现，耐药性对 TTP 存在潜在影响。敏感的铜绿假单胞菌菌株 TTP 显著更短，且这一特性在所有抗生素类别中都较为一致 。虽然没有确定预测耐药性的临床相关 TTP 临界值，但这一结果表明耐药菌株可能因耐药机制影响细菌复制代谢途径，从而减缓复制速率。在共病和免疫抑制方面，单变量分析显示，血液透析的慢性肾脏病（CKD）、中性粒细胞减少症和皮质类固醇治疗与较短的 TTP 显著相关。然而在多变量分析中，血液透析的 CKD 因多数病例为导管相关菌血症（这是导致 TTP 较短的重要因素）而被排除；中性粒细胞减少症会降低宿主清除感染组织细菌的能力，导致血液中细菌载量增加，皮质类固醇治疗会损害肝脏和脾脏的网状内皮系统（负责快速清除血液中的细菌），但最终这些因素在多变量分析中未被纳入，说明在综合考虑多种因素后，其他因素对 TTP 的影响更为关键。同时，研究还发现诸如血管内导管、PAE 在有氧两瓶中均被分离出来、对多种抗生素敏感、导管相关感染等因素与较短的 TTP 相关；而多药耐药（MDR）PAE、使用活性抗生素、尿路感染源等与较长的 TTP 相关。&lt;/p&gt;
+&lt;p&gt;其次是 TTP 对临床预后的预测价值。研究表明，TTP 可以作为预测导管相关菌血症和死亡率的一个指标。较短的 TTP 与导管相关菌血症密切相关，通过分析不同 TTP 分组下患者的感染源等数据，可以看出 TTP 在判断感染类型方面有一定的价值，这对于临床医生及时采取针对性治疗措施具有重要意义。&lt;/p&gt;
+&lt;p&gt;研究结论和讨论部分，该研究明确了影响铜绿假单胞菌血流感染 TTP 的多种因素，包括细菌耐药性、感染源、患者共病情况等。并且证实了 TTP 在预测导管相关菌血症和死亡率方面具有一定的临床适用性，为临床医生评估患者病情、制定治疗方案提供了新的参考依据。然而，研究也存在一定局限性，如未对长期死亡率和感染后并发症进行评估，这为后续研究指明了方向。总体而言，这项研究在铜绿假单胞菌血流感染的临床评估领域具有重要意义，为进一步优化临床治疗策略、改善患者预后奠定了基础。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 05:18:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5rOFRrZE5TUm5OV1VNc3hCbExvVVk4SThQY1UxX09hQXNxdkFuaXZ2RHNNU0dwaDZQdjNrT1gtdFR3LWhBcVhBaWRYZi0wOHJQM1BFYUxfMjdSNGc0YmkxUko1UHpzNzNlUllmdg</guid></item><item><title>穿透迷雾：认识 “脑雾” 作为重大公共卫生问题的意义 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5XblNweXpnOFBOYUNDSGFhQzZYeERZUmMwUlJSMFBHRGdGXzhKa1pJYXlSdjhiQlNFeXl0czl6QzR5ZkFsM0NtZ253TGZuekpmZDhyNWFwU3A5a0xHOG9UZ0RlODY1MjZNMnFkdg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Public Health》：Cutting through the fog: recognising brain fog as a significant public health concern&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决脑雾（Brain fog）的认知、预防、管理和治疗问题，研究人员开展了关于脑雾的研究。结果发现脑雾影响广泛，现有干预手段效果不一。该研究呼吁重视脑雾，对全球健康、社会和经济意义重大。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在日常生活中，不少人都有过这样的经历：突然感觉脑子变得迟钝，注意力难以集中，思维好像被一层 “迷雾” 笼罩，这种现象就是人们常说的 “脑雾”。“脑雾” 并非罕见，超过四分之一的成年人都曾有过类似体验。对于部分人而言，它可能只是偶尔出现，持续几个小时或几天，比如前一晚饮酒、睡眠不足后产生的 “脑雾”，很快就能恢复正常。但对于另一部分人，脑雾却可能是长期且严重的困扰，会持续数年甚至数十年，极大地影响生活质量。例如，癌症幸存者、长期感染新冠（COVID-19）的患者、肾脏功能障碍者、感染 HIV 的人群等，他们所经历的脑雾往往更为严重，还可能伴随工作能力下降、人际关系紧张、心理状态变差等问题，甚至影响自我认知，导致焦虑和抑郁。&lt;/p&gt;
+&lt;p&gt;然而，目前科学界对脑雾的了解还十分有限。虽然知道它可能由多种因素引起，像神经元活动变化、炎症、激素失衡以及营养缺乏等，但脑雾究竟是什么，是否在不同病因下本质相同，如何预防以及治疗，这些关键问题都尚无明确答案。在这种背景下，来自澳大利亚多所高校和研究机构（如 University of Technology Sydney、St. Vincent’s Hospital Melbourne 等）的研究人员 Darren Haywood、Susan L. Rossell、Nicolas H. Hart 等人开展了相关研究，研究成果发表在《BMC Public Health》杂志上。该研究聚焦脑雾，旨在深入剖析这一现象，为全球公共卫生领域对脑雾的认知、预防、管理和治疗提供有力支持，对改善受脑雾困扰人群的生活质量、减轻社会和经济负担具有重要意义。&lt;/p&gt;
+&lt;p&gt;研究人员在研究过程中，主要通过对现有文献的综合分析以及对不同人群（如癌症患者、长期新冠患者等）的观察研究来开展工作。在研究过程中，涉及对这些特定人群的认知功能评估，运用了自我报告测量和神经心理学测试等方法，还参考了不同疾病领域的研究成果，从而全面了解脑雾在不同情况下的表现和影响。&lt;/p&gt;
+&lt;h3&gt;脑雾相关研究的已知信息&lt;/h3&gt;
+&lt;p&gt;脑雾表现为思维和处理速度减慢、记忆力减退、反应迟缓以及沟通困难 ，在各类人群中都有发生。在特定亚人群，如长期 COVID-19 患者、癌症患者、肾脏功能障碍者、HIV 感染者、肝炎患者、纤维肌痛患者、孕妇或有心理问题的人群中，脑雾更为严重且持久。近二十多年来，脑雾在这些病症中被视为严重问题，研究发现其可能与患者体内神经元活动、炎症、激素和营养缺乏等因素的变化有关。脑雾严重影响人们的生活，包括职业功能、人际关系、心理健康和日常活动能力，导致无法正常工作、照顾家人，还会影响自我认知，引发焦虑和抑郁。目前针对改善认知功能障碍（脑雾）的干预措施不断被研究和开发，非药物干预如体育活动、饮食调整、认知康复（“大脑训练”）、心理治疗，以及药物干预，在特定亚人群中取得了一定效果，但这些治疗和支持护理策略效果并不稳定，在临床实践中也未得到广泛应用。&lt;/p&gt;
+&lt;h3&gt;脑雾相关研究的未知信息&lt;/h3&gt;
+&lt;p&gt;脑雾的准确定义尚不明确。目前主要通过自我报告的认知功能测量和神经心理学测试来评估脑雾，但自我报告与客观测量结果的相关性不强，例如部分癌症幸存者在自我报告中有认知障碍，但客观测试却未显示异常，反之亦然。因此，脑雾究竟是客观的认知功能障碍，还是其他不同的情况，仍有待确定。目前也不清楚不同病因导致的脑雾是否本质相同。虽然不同亚人群报告的脑雾体验相似，但还不确定脑雾在不同病因下是否是同一现象，这对制定通用或特定的预防、治疗和支持护理方法至关重要。对于如何预防脑雾，目前的认识也较为有限。在癌症等特定人群的治疗前干预方面有一定进展，如药物、认知训练和生活方式改变等，但对于普通人群，基于实证的预防方法还很少。对于已经出现脑雾的人群，现有的干预策略效果有限。即使在特定亚人群中，干预措施的效果也存在差异，对实际生活功能的长期影响也存在疑问。&lt;/p&gt;
+&lt;h3&gt;脑雾作为重大全球公共卫生问题的原因&lt;/h3&gt;
+&lt;p&gt;脑雾对全球公共卫生构成重大威胁。部分人脑雾持续时间较短，但也有人会持续数十年。近年来，COVID-19 感染引发的脑雾受到广泛关注，它是急性和长期 COVID 的常见症状之一，且可能持续多年。全球大量人口感染 COVID-19，约 62% 的感染者会出现长期 COVID，这使得脑雾成为全球性问题。此外，随着医疗技术进步，与脑雾相关疾病（如癌症、肾脏疾病）的治疗效果提升，患者生存期延长，更多脑雾患者需要支持。以澳大利亚为例，癌症患者 5 年生存率从 20 世纪 90 年代中期的 53% 提升到二十年后的 71%，这意味着更多癌症幸存者可能经历长期脑雾，其他相关疾病情况类似。&lt;/p&gt;
+&lt;h3&gt;研究结论和意义&lt;/h3&gt;
+&lt;p&gt;研究表明，脑雾对个人生活和周围人影响严重，涉及多个领域。认知功能的变化（包括脑雾）还与心理障碍的发展相关。随着全球脑雾患者数量增加，脑雾对全球经济（因缺勤和医疗费用）、医疗负担（因共病、治疗和护理需求增加）以及患者及其家人的生活质量都产生了重大影响。因此，研究人员呼吁采取紧急行动，加大对脑雾研究的投入，明确其定义，提高对脑雾的认知，制定有效的预防、治疗和支持护理方法，以减轻脑雾对全球健康、社会和经济的影响。这项研究为后续深入研究脑雾指明了方向，有助于推动全球公共卫生领域对脑雾的研究和应对，对改善脑雾患者的生活状况、减轻社会负担具有重要意义，促使各界更加重视脑雾问题，积极开展相关研究和干预措施的开发，以提升对这一复杂健康问题的应对能力。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 04:22:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5XblNweXpnOFBOYUNDSGFhQzZYeERZUmMwUlJSMFBHRGdGXzhKa1pJYXlSdjhiQlNFeXl0czl6QzR5ZkFsM0NtZ253TGZuekpmZDhyNWFwU3A5a0xHOG9UZ0RlODY1MjZNMnFkdg</guid></item><item><title>奥地利萨尔茨堡州乳腺癌筛查项目对乳腺癌发病率和分期的影响研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5rTkNZRVZIcDFrMkxNYWFMUWlvMU1LZjZJQVBiaTBqWjN5OWRJTERBMjJtSk1oTENEdFBINFNuUkRDYTl3em9KOWZybzh2N3VZbmFZVGZnYmtPQ2xNQU9RTHhUa0FSbC1ONTZfMg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Wiener klinische Wochenschrift》：A comparison of breast cancer incidence and cancer stages before and after the introduction of the Austrian national breast cancer screening program in the federal state of Salzburg&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究奥地利国家乳腺癌筛查项目是否降低了晚期乳腺癌的发病率，研究人员分析萨尔茨堡肿瘤登记处数据。结果显示，该项目实施后，乳腺癌分期分布无显著差异，这为评估奥地利乳腺癌筛查项目提供了重要依据。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在当今社会，乳腺癌已成为严重威胁女性健康的一大杀手。多年来，乳腺癌的防治工作备受关注，其中乳腺癌筛查被视为早期发现和干预的重要手段。然而，现有的乳腺癌筛查项目效果却存在诸多争议。部分研究表明，虽然乳腺癌筛查在一定程度上能发现早期病变，但也伴随着过度诊断和假阳性结果等问题，给患者带来不必要的焦虑和干预。而且，在筛查是否能真正降低晚期乳腺癌发病率以及对乳腺癌死亡率的影响方面，也没有确凿统一的结论。在此背景下，开展一项深入研究以明确乳腺癌筛查项目的真实效果显得尤为重要。&lt;/p&gt;
+&lt;p&gt;来自奥地利的研究人员针对这一问题展开了研究。他们依托萨尔茨堡肿瘤登记处（Tumor Registry Salzburg，TRS）的数据进行分析，该登记处记录了奥地利萨尔茨堡州所有确诊的癌症病例，数据全面且完整。此项研究成果发表在《Wiener klinische Wochenschrift》上。&lt;/p&gt;
+&lt;p&gt;研究人员运用了多种技术方法来确保研究的准确性和科学性。首先，在数据处理方面，对萨尔茨堡州 2010 - 2022 年诊断为乳腺癌的女性患者数据进行筛选，仅纳入年龄在 45 - 69 岁且肿瘤分期明确的患者进行主要分析。其次，在数据分析阶段，计算每年每 10 万人的发病率，并根据 2013 年欧洲标准人口进行年龄标准化处理；采用 Poisson 模型的正态近似法以及有序逻辑回归分析，探究不同时间段、年龄、居住地和乳腺癌亚型对肿瘤分期和淋巴结状态的影响 。&lt;/p&gt;
+&lt;p&gt;研究结果如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;发病率变化&lt;/strong&gt;：自国家乳腺癌筛查项目实施后，45 - 69 岁潜在筛查队列的平均年龄标准化发病率从 2010 - 2013 年的 245.7（95% CI 213.8 - 280.4）每 10 万人 / 年，持续下降至 2020 - 2022 年的 205.3（95% CI 177.5 - 235.6）每 10 万人 / 年，但 2010 - 2013 年与 2016 - 2019 年之间的差异无统计学意义（&lt;span data-custom-copy-text="\(P = 0.483\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;P&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;0.483&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;肿瘤分期分布&lt;/strong&gt;：2010 - 2013 年与 2016 - 2019 年相比，0 - IV 期肿瘤的分布无显著差异（&lt;span data-custom-copy-text="\(P = 0.380\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;P&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;0.380&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）。其中，IV 期乳腺癌的比例从 9.4% 降至 4.5% ，但差异在统计学上不显著（&lt;span data-custom-copy-text="\(P = 0.141\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;P&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;0.141&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）；早期阶段（0 - I 期）与晚期阶段（II - IV 期）合并分析时，也未发现显著差异（&lt;span data-custom-copy-text="\(P = 0.524\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;P&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;0.524&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;淋巴结状态&lt;/strong&gt;：比较淋巴结阴性和阳性阶段，2010 - 2013 年至 2016 - 2019 年，淋巴结阳性肿瘤的比例数值上有所下降（28.5% vs. 23.2%），但差异同样无统计学意义（&lt;span data-custom-copy-text="\(P = 0.538\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;P&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;0.538&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;年龄和居住地的影响&lt;/strong&gt;：年龄和城乡居住地对肿瘤分期或淋巴结状态均无明显影响。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究结论和讨论部分指出，本研究未观察到奥地利国家乳腺癌筛查项目实施后，萨尔茨堡州局部晚期乳腺癌（II 期和 III 期）的诊断率有所降低。这一结果与其他一些研究不同，可能是由于萨尔茨堡州有组织的国家筛查项目期间的乳腺 X 线摄影供给率（约 51%）与 2014 年前的机会性筛查（估计约 55%）相似。该研究结果为评估奥地利乳腺癌筛查项目的有效性提供了重要参考，鼓励对整个奥地利乳腺癌筛查项目进行批判性评估，也为后续进一步优化乳腺癌筛查策略、提高筛查效果提供了宝贵的依据。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 04:22:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5rTkNZRVZIcDFrMkxNYWFMUWlvMU1LZjZJQVBiaTBqWjN5OWRJTERBMjJtSk1oTENEdFBINFNuUkRDYTl3em9KOWZybzh2N3VZbmFZVGZnYmtPQ2xNQU9RTHhUa0FSbC1ONTZfMg</guid></item><item><title>多面挑战：四肢瘫痪与溃疡性结肠炎并发深静脉血栓的案例解析及启示 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9QN1pITzVpZS1waWdNcWR3VUsxQ3NQQTNSd1JBVDd6WHhIN0IzS3dKMDhHenNscTRnMHRsOFlfdkdCQVo3UDYtQnNuSzh2MTRuS282N3lWbWFrNy1Ta2RwZkJiMWUtZjAteGpkcA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Spinal Cord Series and Cases》：Multifaceted challenges of deep venous thrombosis in the setting tetraplegia and ulcerative colitis: case report&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决四肢瘫痪和溃疡性结肠炎（UC）患者深静脉血栓（DVT）治疗难题，研究人员开展相关案例研究。结果发现二者会增加血栓风险，治疗中面临出血等挑战。该研究强调综合管理重要性，为临床治疗提供参考。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在医学的复杂迷宫里，深静脉血栓（DVT）一直是个棘手的难题，尤其是当它与其他病症 “联手” 时，情况更是雪上加霜。对于创伤性脊髓损伤导致的四肢瘫痪患者来说，由于身体活动受限、止血功能改变，他们患上 DVT 的风险显著增加。而像溃疡性结肠炎（UC）这类炎症性肠病患者，也因慢性炎症、腹泻以及胃肠道出血等问题，被 DVT “盯上”。以往，针对单独病症的研究较多，但当四肢瘫痪与 UC 同时出现，该如何应对 DVT，却缺乏足够的研究和临床经验，这给医生们的治疗带来了极大的挑战。为了填补这一空白，来自美国康涅狄格大学医学院（University of Connecticut School of Medicine）、盖洛德专科医疗中心（Gaylord Specialty Healthcare）等机构的研究人员 Priscilla Mapelli、Mitchel Wright 等人开展了一项研究，相关成果发表在《Spinal Cord Series and Cases》杂志上。这一研究对于提升此类复杂病症的治疗水平、改善患者预后意义重大。
+&lt;/p&gt;&lt;p&gt;研究人员主要采用了临床案例分析的方法，对一位患有 UC 和创伤性四肢瘫痪的 53 岁男性患者进行了详细的观察和记录。在患者住院康复期间，密切监测其病情变化，通过下肢超声检查来确定 DVT 的发生和发展情况。&lt;/p&gt;
+&lt;h3&gt;病例介绍&lt;/h3&gt;
+&lt;p&gt;2023 年 8 月，一位有慢性 UC 病史的 53 岁男性，因机械性跌倒导致创伤性脊髓损伤，入住盖洛德医院进行康复治疗。入院检查显示，他存在四肢瘫痪情况 。住院康复一周后，尽管患者接受了 DVT 预防措施，但还是出现了右下肢肿胀，经超声检查发现右胫后静脉和右腓静脉血栓形成。由于手术时间和出血风险等因素，抗凝治疗困难重重。在治疗过程中，患者出现了直肠周围出血、DVT 进展至双下肢且向上延伸至膝盖以上，还感染了艰难梭菌（Clostridium difficile），这使得 UC 病情进一步恶化。&lt;/p&gt;
+&lt;h3&gt;讨论&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DVT 的发病风险&lt;/strong&gt;：急性创伤和慢性炎症共同作用，使患者处于高凝状态，大大增加了静脉血栓栓塞（VTE）事件的发生风险。在脊髓损伤（SCI）患者中，DVT 的发生率因是否预防而差异较大。此外，SCI 患者发生 DVT 的风险因素众多，如瘫痪程度、年龄、受伤时间、损伤水平等 。同时，IBD 患者发生 VTE 的风险比普通人群高 2 - 3 倍，UC 与 SCI 并存时，更需特殊考虑治疗方案&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="oo7m4q2" data-popupid="oo7m4q2"&gt;1&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="ceab1gg" data-popupid="ceab1gg"&gt;2&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="yl48jpn" data-popupid="yl48jpn"&gt;3&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;治疗面临的挑战&lt;/strong&gt;：D - dimer 检测在近期手术患者中存在局限性，该患者在术后四周内发生 DVT，且因出血并发症，抗凝治疗多次中断，这凸显了在这类患者中抗凝治疗的复杂性。而且，患者有反复尿路感染和抗生素使用史，增加了艰难梭菌感染风险，使得肠道管理难度加大，需要根据 UC 病情进行调整&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="fktv52v" data-popupid="fktv52v"&gt;4&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="0q2wmhd" data-popupid="0q2wmhd"&gt;5&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;综合管理的要点&lt;/strong&gt;：对于同时患有 IBD 和急性创伤的患者，治疗需多方面考虑。要重视 VTE 的预防，在 UC 发作期间，应密切监测出血情况，谨慎使用抗凝药物；合理调整肠道管理方案；加强感染控制。研究还指出，未来需要探索在创伤性 SCI 急性期继续使用生物制剂等 UC 缓解维持疗法的利弊&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="dts4dza" data-popupid="dts4dza"&gt;6&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;该研究通过对这一复杂病例的深入分析，揭示了四肢瘫痪合并 UC 患者发生 DVT 的治疗挑战与管理要点。强调了早期治疗和加强监测的重要性，为临床医生在面对这类复杂病例时提供了宝贵的参考，有助于优化治疗方案，提高患者的治疗效果和生活质量。同时，也为后续相关研究指明了方向，期待未来能有更多研究探索在此类复杂病症下更有效的治疗策略和预防措施。&lt;/p&gt;
+
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 04:22:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9QN1pITzVpZS1waWdNcWR3VUsxQ3NQQTNSd1JBVDd6WHhIN0IzS3dKMDhHenNscTRnMHRsOFlfdkdCQVo3UDYtQnNuSzh2MTRuS282N3lWbWFrNy1Ta2RwZkJiMWUtZjAteGpkcA</guid></item><item><title>评估基层医疗环境中Bioline™ HCV 即时检测的用户体验：一项混合方法研究—— 助力丙型肝炎防控新突破 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBNZ3hVd2N1QzNGaDhfOHZjWEYwSG93dnZnLUpjeEJhcE01N1NNWUtyQk0ydFlrNnpvOTVuaC1kaGYwQi1TeFQ0UHN2dGdqd1RpdHNteTgwZWdsMlh5OVNNbVN1SmZlYzFSLXd0aA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Health Services Research》：Assessing user experience with the Bioline? HCV point-of-care test in primary healthcare settings: a mixed-methods study&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决丙型肝炎病毒（HCV）诊断难题，尤其是资源有限地区的诊断服务不足问题，研究人员开展了对 Bioline? HCV 即时检测（POC）在加纳基层医疗（PHC）环境中可用性、可接受性和可交付性的研究。结果显示该检测可用性高，但存在一些问题。这有助于推动 HCV 诊断，助力实现可持续发展目标 3。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在全球范围内，丙型肝炎病毒（Hepatitis C Virus，HCV）感染如同隐匿在人群中的 “沉默杀手”，悄无声息地威胁着大众健康。据统计，全球超 130 million 人受 HCV 影响，其中 58 million 人处于慢性感染状态，且超半数感染者对自身状况浑然不知 。在撒哈拉以南非洲地区，HCV 负担沉重，每年有超 200,000 人因病毒性肝炎相关疾病离世。加纳也深受其扰，虽有研究报道其 HCV 血清阳性率在 1 - 3%，但全国病毒血症流行率却尚不明确。&lt;/p&gt;
+&lt;p&gt;早期检测对于 HCV 感染者的治疗和护理至关重要，直接作用抗病毒药物（Direct-Acting Antivirals，DAAs）能有效治疗 HCV 感染，但前提是尽早发现。即时检测（Point-of-Care，POC）技术为偏远、资源有限地区的 HCV 诊断带来了希望，Bioline? HCV POC 检测就是其中一种被寄予厚望的工具。它经世界卫生组织（World Health Organization，WHO）预认证、市场授权且获得 CE 标志，适用于多个地区。然而，在撒哈拉以南非洲地区的基层医疗（Primary Healthcare，PHC）环境中，医护人员（Healthcare Workers，HCWs）对 HCV POC 检测的用户体验相关研究却极为匮乏。&lt;/p&gt;
+&lt;p&gt;为填补这一空白，来自南非比勒陀利亚大学卫生科学学院卫生系统与公共卫生学院等机构的研究人员，开展了一项旨在评估 Bioline? HCV POC 检测在加纳 PHC 环境中用户体验的研究 。该研究成果发表在《BMC Health Services Research》杂志上，为 HCV 防控提供了重要依据。&lt;/p&gt;
+&lt;p&gt;研究人员采用了收敛平行混合方法设计。在定量研究方面，通过直接观察 81 名非实验室 HCWs 使用 Bioline? HCV POC 检测的过程，利用审计清单收集数据，并运用 Stata 16 进行分析，包括描述性统计、评估评分者间一致性以及使用系统可用性量表（System Usability Scale，SUS）评估检测的可用性 。在定性研究方面，通过对 22 名 HCWs 进行深入访谈，利用 Atlas.ti 24.2.0 软件对访谈数据进行主题分析，探究用户体验、信心、存储基础设施以及对检测设计改进的建议。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;研究结果&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;参与者特征&lt;/strong&gt;：参与研究的 81 名非实验室 HCWs，中位年龄 34 岁，女性占 91.4%，多数拥有证书或文凭，护士占比 76.6% 。研究涉及的 42 个 PHC 诊所中，多数诊所所在地区道路状况不佳，95.2% 的诊所缺乏空调存储设施。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可用性审计结果&lt;/strong&gt;：约 83% 的参与者在至少一个检测步骤中出现错误，主要集中在预检测阶段，如未洗手（64.2%）、未使用检测信息表（62.9%）、未戴检查手套（60.5%）等 。18.5% 的参与者在至少一个步骤中遇到困难，主要是取出检测装置（13.6%）和使用标本滴管（8.6%）。尽管如此，81.5% 的参与者能独立完成所有步骤并报告正确结果，且自我检测者成功率更高。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用户体验反馈&lt;/strong&gt;：88% 的 HCWs 认为该检测使用简单或非常简单，其整体可用性得分为 88.7（95% CI：86.40 - 90.88），属于优秀水平 。参与者还提出了诸多改进建议，如改进包装、增加额外耗材、优化标本滴管和简化检测说明书等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用意愿&lt;/strong&gt;：HCWs 对该检测的接受度很高，愿意在 PHC 诊所使用并推荐给其他诊所，认为这有助于为社区成员提供更便捷的 HCV 诊断服务。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;研究结论与讨论&lt;/strong&gt;&lt;br&gt;研究表明，Bioline? HCV POC 检测在资源有限的 PHC 环境中展现出了较高的可用性和可接受性，即使存在一些操作失误和基础设施挑战，仍适合在这些地区推广应用。然而，为进一步优化检测，研究人员建议改进包装设计，使检测组件整合更方便；优化检测说明书，采用图文并茂且适合当地语言的版本；改进标本滴管，提高采样便利性；同时提供手套等补充组件，加强安全保障。此外，开展针对性培训，提高 HCWs 对 HCV 快速诊断检测（Rapid Diagnostic Test，RDT）的熟悉程度，也有助于提升早期检测和疾病管理水平。&lt;/p&gt;
+&lt;p&gt;该研究对于在资源有限地区推广 Bioline? HCV POC 检测具有重要意义，为政策制定者将用户友好的 POC 工具纳入国家健康计划提供了有力参考，也为未来持续监测检测在实际应用中的可用性、优化交付机制以及对比其他诊断方法的性能奠定了基础，推动了全球 HCV 防控工作的发展，助力实现可持续发展目标 3，即确保健康的生活方式，促进各年龄段人群的福祉 。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 04:22:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBNZ3hVd2N1QzNGaDhfOHZjWEYwSG93dnZnLUpjeEJhcE01N1NNWUtyQk0ydFlrNnpvOTVuaC1kaGYwQi1TeFQ0UHN2dGdqd1RpdHNteTgwZWdsMlh5OVNNbVN1SmZlYzFSLXd0aA</guid></item><item><title>探秘肺转移瘤：胸外肿瘤肺转移影像诊断新洞察与临床决策指引 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1pR0l2cUdWUG8zeDREZzZ6MHhVSlJPM0FGRGVDLWtVaElxYUdSVVIyQmJITjhMT3R5X3JCOEtXcnpnMktrRnQ4NDZJSDRDT3ZlR1Q5eUdSNm0yWGdMQkVtUVljcmI3a0dzcmlZVg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《La radiologia medica》：New insights into imaging of pulmonary metastases from extra-thoracic neoplasms&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决胸外肿瘤（ETN）患者肺部结节的诊断和管理难题，研究人员开展了关于胸外肿瘤肺转移影像学特征及管理的研究。结果表明，肺转移在影像上表现多样，多种因素影响肺部结节的良恶性判断。这为临床诊断和治疗提供了重要依据&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="nw2n7wt" data-popupid="nw2n7wt"&gt;1&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="99v81c0" data-popupid="99v81c0"&gt;19&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="tkm8thu" data-popupid="tkm8thu"&gt;24&lt;/span&gt;&lt;/span&gt;。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在癌症的世界里，肺部就像一个 “多事之地”，常常成为胸外肿瘤转移的目标。随着癌症患者数量的增加，以及 CT 在癌症分期和监测中的广泛应用，越来越多的肺部结节被发现。然而，这些结节究竟是良性的，还是恶性的转移瘤，亦或是原发性肺癌？这个问题就像一团迷雾，困扰着医生和患者。一方面，错误地将良性结节当作转移瘤，可能会让患者承受不必要的检查和治疗，徒增身心负担；另一方面，若把转移瘤误诊为良性病变，又可能延误病情，错失最佳治疗时机。为了驱散这团迷雾，来自意大利 Fondazione Policlinico Universitario A. Gemelli IRCCS 的诊断成像与放射肿瘤学系高级放射学中心，以及 Università Cattolica del Sacro Cuore 的放射学系的研究人员，对胸外肿瘤肺转移展开了深入研究。该研究成果发表在《La radiologia medica》杂志上，为肺部结节的诊断和管理带来了新的曙光。&lt;/p&gt;
+&lt;p&gt;研究人员主要运用了文献综述和数据分析的方法。他们广泛收集相关临床研究数据，涵盖不同类型胸外肿瘤患者肺部结节的特征、转归等信息，还分析了影像组学在肺结节评估中的应用情况。通过对多中心、大量患者的临床数据进行系统分析，得出了一系列重要结论。&lt;/p&gt;
+&lt;h3&gt;流行病学&lt;/h3&gt;
+&lt;p&gt;肺是胸外肿瘤常见的远处转移部位。在因恶性肿瘤死亡患者的尸检中，高达 54% 的病例发现有肺转移。不同类型肿瘤发生肺转移的概率差异较大，肉瘤、肾细胞癌、黑色素瘤和肾上腺皮质癌等更易转移至肺部，而乳腺癌、甲状腺癌等相对较低&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="a23e8mr" data-popupid="a23e8mr"&gt;2&lt;/span&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;h3&gt;肺转移的扩散模式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;血行转移&lt;/strong&gt;：这是胸外肿瘤转移至肺部最常见的方式，癌细胞从原发肿瘤脱落，经血管播散至肺毛细血管床。这种转移方式导致的结节多位于肺下部和外周，常见于头颈部、甲状腺、肾上腺、肾脏等器官的恶性肿瘤&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="n69zqa0" data-popupid="n69zqa0"&gt;3&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="362x315" data-popupid="362x315"&gt;4&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;淋巴道转移&lt;/strong&gt;：癌细胞先经血行转移至肺小动脉和毛细血管，再侵入淋巴管。在 CT 上表现为肺间质的增厚，常见于胃癌、乳腺癌、胰腺癌等&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="uxjqrnq" data-popupid="uxjqrnq"&gt;5&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="ofnyt05" data-popupid="ofnyt05"&gt;6&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;支气管内转移&lt;/strong&gt;：多由淋巴道或血行转移至支气管壁引起，CT 上可看到支气管腔内结节，可导致肺不张，常见于结直肠癌和肾癌&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="tb7ii6n" data-popupid="tb7ii6n"&gt;7&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;影像 CT 特征及鉴别诊断&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;结节&lt;/strong&gt;：肺转移瘤最常见的表现为多发实性结节。但要与多种疾病鉴别，如机化性肺炎（OP），它在癌症患者治疗过程中较易出现，结节边缘可不清，还可能伴有支气管充气征；结节病，常伴有纵隔和肺门淋巴结肿大；弥漫性特发性肺神经内分泌细胞增生（DIPNECH），多见于中老年女性，有特定的 CT 表现&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="q7btt3i" data-popupid="q7btt3i"&gt;8&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="wz8b49i" data-popupid="wz8b49i"&gt;9&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="mjldw6y" data-popupid="mjldw6y"&gt;10&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;粟粒样模式&lt;/strong&gt;：表现为多发微小（3 - 5mm）结节，随机分布于全肺，常见于高血管化的原发肿瘤。需与粟粒性肺结核鉴别，后者结节大小更均匀，还可能伴有钙化等特征&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="844aiq7" data-popupid="844aiq7"&gt;11&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="wejj2q9" data-popupid="wejj2q9"&gt;12&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空洞和囊肿&lt;/strong&gt;：囊性和空洞性肺转移常见于头颈部鳞状细胞癌等。要与肺朗格汉斯细胞组织细胞增多症（PLCH）鉴别，PLCH 多与吸烟有关，囊肿多位于肺上中部&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="jnt3ac6" data-popupid="jnt3ac6"&gt;13&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="wza3259" data-popupid="wza3259"&gt;14&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;钙化&lt;/strong&gt;：肺转移瘤可出现钙化，与原发肿瘤的特性或化疗有关。还需与肺错构瘤、尘肺、感染后钙化等非肿瘤性钙化鉴别&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="pbclb9v" data-popupid="pbclb9v"&gt;15&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="oddvvln" data-popupid="oddvvln"&gt;16&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;少见形态特征&lt;/strong&gt;：部分肺转移瘤有晕征、磨玻璃密度、脂肪密度结节和肿瘤动脉栓塞等少见表现，各自有对应的鉴别诊断要点&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="tqd0ae4" data-popupid="tqd0ae4"&gt;17&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="9r2ddi7" data-popupid="9r2ddi7"&gt;18&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;影像组学&lt;/h3&gt;
+&lt;p&gt;影像组学在肺转移瘤的评估中展现出一定潜力，但目前缺乏标准化和大样本外部验证。已有研究通过提取 PET 和 CT 图像的纹理特征，构建模型来区分原发性肺癌和肺转移瘤，或预测肺肿瘤的组织学类型，取得了较好的准确性&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="zuj9ymr" data-popupid="zuj9ymr"&gt;20&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="1kvgdou" data-popupid="1kvgdou"&gt;21&lt;/span&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;h3&gt;胸外肿瘤患者肺部结节的管理&lt;/h3&gt;
+&lt;p&gt;目前缺乏针对胸外肿瘤患者肺部结节管理的指南。现有研究表明，结节直径、生长速度、患者吸烟史和原发肿瘤组织学等因素与结节恶性可能性相关。不同研究提出了不同的随访策略，但由于研究的异质性，仍需根据患者具体情况，在多学科协作下制定个性化方案&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="zkhpgkd" data-popupid="zkhpgkd"&gt;19&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="850gv61" data-popupid="850gv61"&gt;22&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="225bt20" data-popupid="225bt20"&gt;23&lt;/span&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;这项研究系统地阐述了胸外肿瘤肺转移的影像学特征、鉴别诊断及管理策略。其重要意义在于，帮助放射科医生更准确地识别肺转移瘤，避免误诊和漏诊，为临床医生制定合理的治疗方案提供有力支持。同时，影像组学的应用探索为未来肺部结节的精准诊断开辟了新方向。不过，目前影像组学研究存在局限性，后续还需要更多大样本、前瞻性研究来进一步完善肺部结节的诊断和管理体系，为癌症患者带来更好的诊疗体验和预后&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="k8ga7s8" data-popupid="k8ga7s8"&gt;24&lt;/span&gt;&lt;/span&gt;。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 04:21:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1pR0l2cUdWUG8zeDREZzZ6MHhVSlJPM0FGRGVDLWtVaElxYUdSVVIyQmJITjhMT3R5X3JCOEtXcnpnMktrRnQ4NDZJSDRDT3ZlR1Q5eUdSNm0yWGdMQkVtUVljcmI3a0dzcmlZVg</guid></item><item><title>CDH1 基因变异与异常表达：结直肠癌转移风险的关键新发现 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9JOW81VXNxSXpyRERxSm1XZjVyTDNJVVhIQ0djUGdQR01NbGhlSFJTMGNoak1UbTlLZlIteUpiQ1AzamdGeHk3OFVMcnY4ZHhLVzZ3LTU4YTJhaHdJOVBTRG85MFNwbV9pWkxKcA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Gastroenterology》：CDH1 genetic variants and its aberrant expression are the risk factors for colorectal cancer metastasis&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究 CDH1 基因多态性、转录及 E-cadherin 蛋白表达对结直肠癌（CRC）的影响，广州中医药大学研究人员开展相关研究。结果显示 CDH1-160 的 A 等位基因可能是保护基因，相关变化可促进肠癌发生和转移。该研究为 CRC 防治提供新方向。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在癌症的众多类型中，结直肠癌（Colorectal Cancer，CRC）是 “狠角色” 一般的存在。它在全球范围内，发病率约为 10.0%，死亡率达 9.4%，是第三大常见癌症，也是癌症相关死亡的第二大主因 。早期诊断困难和肿瘤转移，像两座大山，严重阻碍着结直肠癌患者的生存希望。&lt;/p&gt;
+&lt;p&gt;结直肠癌的发病原因很复杂，性别、环境、遗传等因素都有 “掺和” 其中。尤其是低外显率的遗传多态性，在结直肠癌的易感性上起着重要作用，而单核苷酸多态性（Single Nucleotide Polymorphisms，SNPs）更是当前研究的热点。E-cadherin 是一种由 CDH1 基因编码的跨膜糖蛋白，在维持上皮细胞间的黏附、保证正常组织形态方面有着关键作用。很多研究发现，E-cadherin 缺失与肿瘤的进展和转移紧密相关。CDH1 基因启动子区域的一些 SNPs 会影响其转录调控，进而与癌症的发生、发展有关。其中，CDH1-160 C&amp;gt;A（rs16260）和 CDH1-347 G&amp;gt;GA（rs5030625）这两个位点备受关注。不过，CDH1-160 C&amp;gt;A 多态性与结直肠癌易感性之间的关系，研究还比较少，结论也不一致。&lt;/p&gt;
+&lt;p&gt;为了深入了解这一复杂的关系，广州中医药大学的研究人员踏上了探索之旅。他们开展了一系列研究，旨在搞清楚 CDH1-160 SNP 与结直肠癌之间的联系，以及它对 mRNA 转录水平和 E-cadherin 蛋白表达的影响，期望能揭示肠道黏膜癌变和转移的分子机制，找到早期诊断结直肠癌的生物标志物。该研究成果发表在《BMC Gastroenterology》杂志上，为结直肠癌的研究和防治带来了新的曙光。&lt;/p&gt;
+&lt;p&gt;研究人员从 2016 年 8 月 1 日至 2020 年 5 月 1 日，在广州中医药大学第一附属医院胃肠外科招募了 99 例结直肠癌患者。从患者的癌灶、癌旁组织和远端正常组织采集样本，这为后续的研究提供了宝贵的 “素材”。&lt;/p&gt;
+&lt;p&gt;研究采用了多种关键技术方法。通过苏木精 - 伊红染色（Hematoxylin-eosin staining）来观察结直肠黏膜的组织病理学变化，以此对样本进行分类。用直接测序法检测 CDH1 基因型，定量实时聚合酶链反应（Quantitative Real-Time PCR，Q-PCR）测定 CDH1 mRNA 表达水平，免疫组化（Immunochemistry）的 ElivisionTM plus 方法检测 E-cadherin 的表达情况。利用这些技术，研究人员从不同角度 “剖析” 样本，获取关键信息。&lt;/p&gt;
+&lt;p&gt;下面来看看具体的研究结果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;研究人群特征&lt;/strong&gt;：99 例患者中，男性 57 例（57.6%），女性 42 例（42.4%），平均年龄 62.14±12.92 岁 。肿瘤主要位于左侧结肠（68.7%），腺癌居多（84.8%），大多为中分化（80.8%） ，多数患者处于 II 期（44.4%）和 III 期（38.4%）。这些数据为后续研究提供了患者群体的基本情况。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CDH1 基因多态性与结直肠癌的关系&lt;/strong&gt;：基因多态性分析发现，CDH1-160 基因多态性与肿瘤位置和临床 TNM 分期有关 。携带 A/A 基因型的患者患右侧结直肠癌的可能性更高；C/C 基因型患者更易处于晚期 TNM 分期。回归分析显示，C/A 或 A/A 基因型患者进展到 III、IV 期和发生淋巴结转移的风险更低 ，A 等位基因也与较低的进展和转移风险相关 。此外，携带 C/A 或 A/A 基因型的患者更易患黏液腺癌或惰性细胞癌。这表明 CDH1-160 C&amp;gt;A 多态性可能是结直肠癌的保护因素。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CDH1 mRNA 表达与结直肠癌的关系&lt;/strong&gt;：与远端正常组织相比，癌组织中 CDH1 mRNA 水平显著降低 。炎症组（INF）的 CDH1 mRNA 表达高于结直肠癌组，无发育异常的肠黏膜组织表达高于严重发育异常组织 。而且，CDH1 mRNA 表达与肠黏膜恶性程度和发育异常程度呈负相关，离癌灶越近，表达越低 。这说明 CDH1 mRNA 表达可能是评估肿瘤进展的分子标志物。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E-cadherin 表达与结直肠癌的关系&lt;/strong&gt;：在结直肠癌组，上皮和隐窝细胞的细胞膜上 E-cadherin 明显缺失 ，癌组织中细胞质 E-cadherin 表达比例更高 。半定量评估显示，结直肠癌组 E-cadherin 表达低于正常对照组（NOR）、炎症组（INF）和发育异常组（DYS） 。E-cadherin 表达与肠黏膜恶性程度和发育异常程度呈负相关。由此推测，细胞膜 E-cadherin 的缺失可能是促进癌细胞转移的关键因素。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CDH1 SNP 对转录和翻译的影响&lt;/strong&gt;：C/A 基因型患者癌组织中 CDH1 mRNA 表达高于 A/A 基因型患者，但 CDH1-160 基因型改变与 mRNA 转录水平无线性关系 。C/A 或 A/A 基因型患者肠癌组织中上皮 E-cadherin 蛋白异位表达，但该位点多态性对 E-cadherin 整体表达无显著影响 。这表明 CDH1 C&amp;gt;A 多态性可能通过影响转录活性调节 E-cadherin 表达，进而影响结直肠癌发展。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;统计功效分析&lt;/strong&gt;：事后功效分析显示，多数研究结果（92%，23/25）具有足够的统计功效，能检测出有临床意义的效应 。这为研究结果的可靠性提供了有力支持。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;综合上述研究结果，研究人员得出结论：CDH1-160 的 A 等位基因可能是抵抗结直肠癌的保护基因，C&amp;gt;A 多态性可能调节其转录活性和 E-cadherin 表达 。CDH1 mRNA 转录水平降低和细胞膜 E-cadherin 缺失，可能促进肠黏膜癌变和癌细胞转移 。细胞膜 E-cadherin 蛋白表达缺失，或许可以作为肠道黏膜恶性病变的早期预警信号。&lt;/p&gt;
+&lt;p&gt;不过，该研究也存在一些不足。研究对象仅为结直肠癌患者，没有健康对照，可能存在选择偏倚；而且这是单中心试验，样本量较小，部分结果的解释需要谨慎。但这并不影响该研究的重要意义。它为结直肠癌的研究开辟了新的方向，让人们对结直肠癌的发病机制有了更深入的认识，为未来开发更有效的诊断方法和治疗策略提供了重要依据，有望为结直肠癌患者带来新的希望。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 03:33:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9JOW81VXNxSXpyRERxSm1XZjVyTDNJVVhIQ0djUGdQR01NbGhlSFJTMGNoak1UbTlLZlIteUpiQ1AzamdGeHk3OFVMcnY4ZHhLVzZ3LTU4YTJhaHdJOVBTRG85MFNwbV9pWkxKcA</guid></item><item><title>Application of type-2 heptagonal fuzzy sets with multiple operators in Zika virus risk factor identification: A novel MCDM approach - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE8tOEZkQXJ4SmxUTmlTTDAwZU91NWRCVUhfV2QyUENmNU1qaFhMVHVyM3ZuU0ZUYUR5WFVYRWhBcDhGNzlVNzdMZWE1eTlVUUY1SG5rUEJUT1VvazJvejBKSFd6T1JwNE9xYWJITQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Title"&gt;Application of type-2 heptagonal fuzzy sets with multiple operators in Zika virus risk factor identification: A novel MCDM approach&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;《BMC Infectious Diseases》：Application of type-2 heptagonal fuzzy sets with multiple operators in multi-criteria decision-making for identifying risk factors of Zika virus&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　在 Zika 病毒风险因素复杂且传统研究方法存在局限的背景下，研究人员开展了基于 2 型七角模糊集（T2HFS）与多准则决策（MCDM）方法识别 Zika 病毒风险因素的研究。结果识别出关键风险因素并验证了模型可靠性，为公共卫生干预提供依据。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　Zika 病毒，这个听起来有些陌生却暗藏危险的家伙，近年来频繁出现在人们的视野中。它主要通过伊蚊传播，属于黄病毒属，和登革热、西尼罗河病毒等是 “亲戚” 。自 1947 年在乌干达的恒河猴身上首次被发现后，Zika 病毒就开始了它在全球的 “旅程” 。2007 年在太平洋岛屿的爆发，以及 2015 - 2016 年在美洲地区引发的新生儿小头畸形等严重问题，让世界卫生组织（WHO）都为之警觉，将其列为国际关注的突发公共卫生事件（PHEIC） 。在印度，Zika 病毒也时有出现，从 2016 年首次确诊病例，到后续在多个邦的爆发，它的身影不断浮现，给公共卫生带来了极大挑战。&lt;/p&gt;
+&lt;p&gt;面对 Zika 病毒的威胁，准确识别和评估其风险因素至关重要。然而，传统的研究方法在处理这类复杂问题时却有些 “力不从心” 。Zika 病毒的风险因素众多且复杂，存在大量不确定性，比如专家评估的主观性、流行病学数据的不完整等，传统方法难以精确处理这些问题。为了解决这些难题，来自印度韦洛尔理工学院（Vellore Institute of Technology）的 M. Sheela Rani 和 S. Dhanasekar 开展了一项极具意义的研究。他们运用 2 型七角模糊集（T2HFS）与多准则决策（MCDM）方法，对 Zika 病毒的风险因素进行了深入分析，相关研究成果发表在《BMC Infectious Diseases》上。&lt;/p&gt;
+&lt;p&gt;在研究方法上，研究人员采用了多种关键技术。首先是 2 型七角模糊集（T2HFS），它能比传统模糊模型更细致地表达不确定性，通过七个顶点来描述元素的隶属度，更精准地处理专家判断中的模糊、不精确信息。其次，运用了多种 MCDM 方法，如 TOPSIS（逼近理想解排序法）、VIKOR（多准则妥协解排序法）和 WASPAS（加权聚合和积评估法） 。这些方法相互结合，从不同角度对风险因素进行评估和排序。同时，还使用了算术和几何聚合算子来处理模糊数据，并通过敏感性分析来验证模型的稳定性。&lt;/p&gt;
+&lt;p&gt;在研究结果部分，研究人员首先明确了 Zika 病毒的传播途径和风险因素。传播途径包括蚊媒传播、性传播、血液传播等，而风险因素涵盖了旅行到疫区、居住在疫区、无保护性行为、缺乏防蚊措施等多个方面。接着，通过计算和分析，得出了各风险因素的排名。其中，无保护性行为（&lt;span data-custom-copy-text="\(z_{3}\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;z&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;?&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）以 0.6717 的得分位居榜首，成为最关键的风险因素；血液输血（&lt;span data-custom-copy-text="\(Z_{8}\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;Z&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;8&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;?&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）、怀孕（&lt;span data-custom-copy-text="\(Z_{10}\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;Z&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;10&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;?&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）、蚊虫叮咬（&lt;span data-custom-copy-text="\(Z_{9}\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;Z&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;9&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;?&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）和前往疫区旅行（&lt;span data-custom-copy-text="\(z_{7}\)"&gt;&lt;span&gt;&lt;span aria-hidden="true"&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;z&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;7&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;?&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）也都在高风险因素之列。此外，研究人员还进行了敏感性分析，结果显示在不同条件下，风险因素的排名保持稳定，这表明研究结果具有较高的可靠性。&lt;/p&gt;
+&lt;p&gt;在结论与讨论部分，这项研究有着重要意义。它为公共卫生专业人员提供了一个先进的决策支持系统，能够系统地识别和优先处理 Zika 病毒的风险因素。通过使用 T2HFS，有效捕捉和处理了因流行病学数据不完整、专家评估不精确以及主观语言评价带来的不确定性。多种 MCDM 方法的一致性以及敏感性分析验证了模型的可靠性，为改善风险分析和制定战略公共卫生干预措施提供了科学依据。不过，该研究也存在一定局限性，如对其他传染病的适用性可能需要调整，数据质量对结果准确性影响较大等。未来的研究可以朝着拓展 T2HFS 框架应用领域、结合深度学习技术、开发智能决策支持系统等方向展开。总的来说，这项研究为抗击 Zika 病毒提供了新的思路和方法，在公共卫生领域有着重要的应用价值，为后续的研究和防控工作奠定了坚实基础。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 03:22:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE8tOEZkQXJ4SmxUTmlTTDAwZU91NWRCVUhfV2QyUENmNU1qaFhMVHVyM3ZuU0ZUYUR5WFVYRWhBcDhGNzlVNzdMZWE1eTlVUUY1SG5rUEJUT1VvazJvejBKSFd6T1JwNE9xYWJITQ</guid></item><item><title>综述：肺动脉高压与癌症：探索其作为离子通道病的相似之处 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBKQlIxUjg3RFR1VjBWTXdoV0VuSHQ2b09UQlFrc0k4TW9JejdfVkhNcWJPSHU5bmZtUVk2YVJxcmhiY3hMMDBFS0lVZUFWZ1V1Z2tIV0xOdEFibmlNbWswcHZVUVpjdU1WRXNCbA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《TRENDS IN Molecular Medicine》：Pulmonary arterial hypertension and cancer: exploring their resemblance as channelopathies&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　这篇综述聚焦肺动脉高压（PAH）与癌症，指出 K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道在二者发展中起关键作用。PAH 的肺血管细胞和癌细胞有诸多相似特征，剖析相关分子机制或为两种疾病治疗带来新思路，值得关注。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;h3&gt;肺动脉高压与癌症：探索其作为离子通道病的相似之处&lt;/h3&gt;
+&lt;p&gt;在医学领域，肺动脉高压（Pulmonary Arterial Hypertension，PAH）和癌症看似风马牛不相及，但随着研究的深入，二者之间千丝万缕的联系逐渐浮出水面。越来越多的证据表明，它们在许多方面存在着惊人的相似之处，尤其在离子通道相关的特征上，宛如一对隐藏在疾病迷雾中的 “孪生兄弟”，这一发现为医学研究和临床治疗开辟了全新的方向。&lt;/p&gt;
+&lt;h3&gt;离子通道在 PAH 和癌症进展中的核心地位&lt;/h3&gt;
+&lt;p&gt;离子通道，作为细胞的 “微型阀门”，在维持细胞正常生理功能中扮演着至关重要的角色。其中，K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道更是重中之重，它们在 PAH 和癌症的发展进程中发挥着核心作用。在 PAH 的病理过程中，K&lt;sup&gt;+&lt;/sup&gt;通道功能的异常改变会导致细胞膜电位的不稳定，进而影响细胞的兴奋性和离子平衡。正常情况下，K&lt;sup&gt;+&lt;/sup&gt;通道能够精准地调控细胞内 K&lt;sup&gt;+&lt;/sup&gt;离子的外流，维持细胞膜的静息电位。然而，在 PAH 状态下，K&lt;sup&gt;+&lt;/sup&gt;通道的活性可能会出现异常降低或增高，使得 K&lt;sup&gt;+&lt;/sup&gt;离子外流受阻或过度，细胞膜电位发生紊乱。这种紊乱就像多米诺骨牌的第一张，引发一系列后续反应，导致肺血管平滑肌细胞异常增殖和收缩，使得肺动脉压力不断攀升。&lt;/p&gt;
+&lt;p&gt;Ca&lt;sup&gt;2+&lt;/sup&gt;通道同样不甘示弱，它在细胞内 Ca&lt;sup&gt;2+&lt;/sup&gt;离子浓度的调控中起着关键作用。Ca&lt;sup&gt;2+&lt;/sup&gt;离子作为细胞内重要的第二信使，参与了众多细胞活动的信号传导过程。在 PAH 中，Ca&lt;sup&gt;2+&lt;/sup&gt;通道的异常开放或关闭，会打破细胞内 Ca&lt;sup&gt;2+&lt;/sup&gt;离子的稳态平衡。当 Ca&lt;sup&gt;2+&lt;/sup&gt;通道过度开放时，大量 Ca&lt;sup&gt;2+&lt;/sup&gt;离子涌入细胞内，激活一系列与细胞增殖、收缩相关的信号通路，进一步加重肺血管的病变。&lt;/p&gt;
+&lt;p&gt;在癌症领域，K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道也有着举足轻重的地位。癌细胞的疯狂增殖、侵袭和转移能力与离子通道的异常密切相关。以 K&lt;sup&gt;+&lt;/sup&gt;通道为例，某些肿瘤细胞中特定 K&lt;sup&gt;+&lt;/sup&gt;通道亚型的高表达，能够为癌细胞提供适宜的微环境，促进癌细胞的迁移。癌细胞就像一群 “狡猾的侵略者”，利用 K&lt;sup&gt;+&lt;/sup&gt;通道的异常表达来突破基底膜的屏障，向周围组织扩散。而 Ca&lt;sup&gt;2+&lt;/sup&gt;通道则参与了癌细胞的增殖信号转导，它就像癌细胞内部的 “指挥官”，通过调节 Ca&lt;sup&gt;2+&lt;/sup&gt;离子浓度，激活相关的蛋白激酶和转录因子，促进癌细胞的分裂和生长。&lt;/p&gt;
+&lt;h3&gt;疾病间分子机制的相互借鉴意义&lt;/h3&gt;
+&lt;p&gt;PAH 和癌症在 K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道相关分子机制上的相似性，为科研人员提供了一个全新的视角。研究其中一种疾病的分子机制，就像是打开了一扇通往另一种疾病奥秘的大门，能够极大地增进我们对另一种疾病的理解。在 PAH 研究中，我们发现肺血管平滑肌细胞的异常增殖与 K&lt;sup&gt;+&lt;/sup&gt;通道功能障碍导致的细胞内信号通路激活有关。这一机制与某些癌症中癌细胞的增殖机制存在相似之处。通过深入剖析癌症中 K&lt;sup&gt;+&lt;/sup&gt;通道调控细胞增殖的详细分子机制，科研人员可以从中获得灵感，反哺 PAH 的研究。例如，在癌症研究中，已经明确了一些针对 K&lt;sup&gt;+&lt;/sup&gt;通道的靶向药物，这些药物能够有效抑制癌细胞的生长。那么，这些药物是否也能应用于 PAH 的治疗呢？这就为 PAH 的治疗研究提供了新的方向。&lt;/p&gt;
+&lt;p&gt;反之亦然，对 PAH 分子机制的研究也能为癌症研究提供帮助。PAH 中肺血管细胞代谢变化与离子通道异常的关系研究，或许能为癌症代谢重编程的研究提供新的线索。癌细胞在生长过程中会发生代谢重编程，以满足其快速增殖的能量需求。而 PAH 中肺血管细胞同样出现了代谢异常，如糖代谢和脂肪酸代谢的改变。研究 PAH 中离子通道如何影响肺血管细胞代谢，可能会揭示出与癌症代谢重编程相似的调控机制，从而为癌症的治疗提供新的靶点。&lt;/p&gt;
+&lt;h3&gt;靶向离子通道的治疗前景&lt;/h3&gt;
+&lt;p&gt;基于 PAH 和癌症在离子通道方面的相似性，靶向 K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道为两种疾病的治疗带来了新的曙光。针对 PAH，研发特异性作用于 K&lt;sup&gt;+&lt;/sup&gt;或 Ca&lt;sup&gt;2+&lt;/sup&gt;通道的药物，有望纠正肺血管细胞的异常功能。一种能够精准调节 K&lt;sup&gt;+&lt;/sup&gt;通道活性的小分子化合物，可能通过恢复细胞膜电位的稳定性，抑制肺血管平滑肌细胞的过度增殖和收缩，从而降低肺动脉压力。这种药物就像是给异常的肺血管细胞 “拨乱反正”，让它们恢复到正常的生理状态。&lt;/p&gt;
+&lt;p&gt;对于癌症治疗而言，靶向 K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道的策略也具有巨大的潜力。通过抑制肿瘤细胞中异常活跃的 K&lt;sup&gt;+&lt;/sup&gt;或 Ca&lt;sup&gt;2+&lt;/sup&gt;通道，能够切断癌细胞生长和转移的 “动力源”。比如，针对某些高表达特定 Ca&lt;sup&gt;2+&lt;/sup&gt;通道亚型的癌细胞，开发专门的通道阻滞剂，阻止 Ca&lt;sup&gt;2+&lt;/sup&gt;离子的异常内流，进而抑制癌细胞的增殖和侵袭能力。这就好比是给癌细胞的 “疯狂生长” 踩下了刹车，限制它们在体内的肆虐。&lt;/p&gt;
+&lt;p&gt;在未来的研究中，还需要进一步深入探索 K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道的亚型特异性以及它们在不同疾病阶段的动态变化。因为不同的 K&lt;sup&gt;+&lt;/sup&gt;和 Ca&lt;sup&gt;2+&lt;/sup&gt;通道亚型在 PAH 和癌症中的作用可能存在差异，而且在疾病的发展过程中，这些通道的功能也可能会发生变化。只有精准地把握这些细节，才能开发出更加安全、有效的靶向药物，为 PAH 和癌症患者带来更多的希望。&lt;/p&gt;
+&lt;p&gt;肺动脉高压和癌症之间的相似性，尤其是在离子通道相关方面的发现，为医学研究和临床治疗提供了广阔的探索空间。通过深入研究二者的联系，有望在不久的将来，为这两种严重威胁人类健康的疾病带来全新的治疗策略和突破。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 03:19:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBKQlIxUjg3RFR1VjBWTXdoV0VuSHQ2b09UQlFrc0k4TW9JejdfVkhNcWJPSHU5bmZtUVk2YVJxcmhiY3hMMDBFS0lVZUFWZ1V1Z2tIV0xOdEFibmlNbWswcHZVUVpjdU1WRXNCbA</guid></item><item><title>综述：认知疲劳的起源与后果 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5pZ2RBNHA2ZmpqakhIZEpsNTZwWnFUbEstNlBETnVtXzRCZnhWVUNGcWpYTFljdEw3TUlJd3BzVGxObVRuRmxmcE5Rc3loOHdrUFlaVFFxM2FDNWFhM29aRloyengzVVV3R2k2TA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
                 &lt;p class="fk_text"&gt;
@@ -31,7 +353,141 @@
 关键遗留问题包括：个体差异的分子基础（如COMT基因Val&lt;sup&gt;158&lt;/sup&gt;Met多态性如何影响疲劳阈值）？疲劳感（Feeling of Fatigue）与客观疲劳的神经表征分离机制？这些问题的解答将推动疲劳从模糊症状转化为可精确调控的生理状态。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 03:01:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5pZ2RBNHA2ZmpqakhIZEpsNTZwWnFUbEstNlBETnVtXzRCZnhWVUNGcWpYTFljdEw3TUlJd3BzVGxObVRuRmxmcE5Rc3loOHdrUFlaVFFxM2FDNWFhM29aRloyengzVVV3R2k2TA</guid></item><item><title>重视风湿免疫病患者的结核病风险 - 健康报</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTE1DY2FCYnE0d0V4WlhlRnh3U2p0NXJkTmwwRnBtTU1KMzBGa0NadGFBaDlpSWFzX1ZvTFRlZjV5emdaUFNfTnpuX1FNMTZ6QjFkczNoV0tITG5vWkxObDFfcGpB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 03:01:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5pZ2RBNHA2ZmpqakhIZEpsNTZwWnFUbEstNlBETnVtXzRCZnhWVUNGcWpYTFljdEw3TUlJd3BzVGxObVRuRmxmcE5Rc3loOHdrUFlaVFFxM2FDNWFhM29aRloyengzVVV3R2k2TA</guid></item><item><title>印度东北部地区蒿甲醚 - 本芴醇治疗疟疾的疗效及耐药分子标记物研究：现状与挑战 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBwanJlWTdWX2RFZzBmZ3BZdURCc2RGeTB4MGU5VHZ5cXVLLTBHR2hCRjZvOWV0cXNuTWtxc1pfa3RUNER2UGhiNi1ydzMxTFVzeFpkMDcxMDdTV0Vpb1lzV1JoY1NQdmhaTmF6Vw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Malaria Journal》：Therapeutic efficacy of artemether–lumefantrine in North-Eastern states of India and prevalence of drug resistance-associated molecular markers&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为评估蒿甲醚 - 本芴醇（AL）治疗印度东北部地区恶性疟原虫（P. falciparum）的疗效及循环寄生虫分子标记物状态，研究人员依 WHO 指南开展研究。结果显示 AL 总体有效，但相关基因存在突变，这对疟疾防控意义重大。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　疟疾，这一由疟原虫（Plasmodium）引发的蚊媒寄生虫病，长期以来威胁着全球人类的健康。2023 年，全球约有 2.63 亿疟疾病例，其中 94% 来自非洲地区，1.5% 来自东南亚地区。印度在东南亚地区的疟疾负担中占比高达 50% ，该国东北部（NE）地区与奥里萨邦、恰蒂斯加尔邦和贾坎德邦等地，是恶性疟原虫疟疾的高发区域。
+&lt;/p&gt;&lt;p&gt;此前，由于氯喹（CQ）和磺胺多辛 - 乙胺嘧啶（SP）耐药性在印度东北部地区相继出现，2013 年起，蒿甲醚 - 本芴醇（AL）作为新的青蒿素联合疗法（ACT）被引入，用于治疗非复杂性恶性疟原虫感染病例。然而，印度东北部地区特殊的地理位置，使其成为耐药疟原虫传播的重要走廊。并且该地区地形复杂、交通不便，给疟疾的干预研究和监测工作带来了极大挑战。为了及时掌控 AL 的治疗效果，监测疟原虫耐药性的发展趋势，来自印度医学研究理事会部落健康国家研究所（ICMR - National Institute of Research in Tribal Health）和印度医学研究理事会疟疾国家研究所（ICMR - National Institute of Malaria Research）的研究人员开展了此项研究，相关成果发表在《Malaria Journal》上。&lt;/p&gt;
+&lt;p&gt;研究人员采用了多种关键技术方法：一是样本采集与筛选，在 2019 年 4 月至 12 月，从印度东北部的米佐拉姆邦（Mizoram）隆格莱区、阿萨姆邦（Assam）科克拉杰尔区、梅加拉亚邦（Meghalaya）南加罗山地区、西孟加拉邦（West Bengal）马尔达区和曼尼普尔邦（Manipur）丘尔钱德布尔区，筛选 1 - 60 岁的发热患者，确定符合条件的非复杂性恶性疟原虫感染患者并采集血样；二是药物治疗与监测，按照体重给予患者 AL 片剂口服，持续 3 天，并在 28 天的随访期内监测临床和寄生虫学参数；三是基因分析技术，提取基因组 DNA，通过巢式 PCR 扩增和测序分析 pfmdr&lt;sup&gt;1&lt;/sup&gt;、pfdhfr、pfdhps 和 pfk&lt;sup&gt;13&lt;/sup&gt;基因的突变情况。&lt;/p&gt;
+&lt;p&gt;研究结果如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;研究参与者与临床反应&lt;/strong&gt;：共筛查 14931 名患者，疟疾阳性率为 2.9%，其中恶性疟原虫单一感染占 87.4%。231 例符合条件的患者入组，215 例完成 28 天随访。总体临床和寄生虫学有效反应（ACPR）达 98.6% ，仅 3 例（1.4%）出现晚期寄生虫学失败（LPF），且均在米佐拉姆邦研究点。多数患者（78.6%）寄生虫血症在≥24 小时内清除，米佐拉姆邦和梅加拉亚邦的寄生虫清除时间长于阿萨姆邦和西孟加拉邦。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LPF 样本的分子分析&lt;/strong&gt;：对 3 例 LPF 样本分析发现，1 例为复发（recrudescence），2 例为再感染（reinfection）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;抗疟药耐药相关基因的分子分析&lt;/strong&gt;：pfmdr&lt;sup&gt;1&lt;/sup&gt;基因分析显示，15.8% 的样本为突变型，存在 Y184F、N86Y 等突变；pfdhfr 基因中，100% 的样本存在突变，常见突变类型有双突变和三突变等；pfdhps 基因中，90.5% 的样本为突变型，常见突变包括 S436F/A、G437A 等；pfk&lt;sup&gt;13&lt;/sup&gt;基因分析发现，米佐拉姆邦有 2 个双突变和 1 个三突变，阿萨姆邦有 1 个双突变，梅加拉亚邦有 1 个双突变 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究结论与讨论：从临床结果看，AL 作为印度东北部地区治疗非复杂性恶性疟原虫疟疾的一线药物，治愈率达 99%，显示出良好疗效。但 pfmdr&lt;sup&gt;1&lt;/sup&gt;、pfdhfr、pfdhps 和 pfk&lt;sup&gt;13&lt;/sup&gt;基因中与抗疟耐药相关的分子标记物突变率较高，尽管目前未影响药物临床疗效，但这是耐药性出现的早期迹象。印度要实现 2030 年消除疟疾的目标，必须重视抗疟药耐药问题，持续监测这些分子标记物，深入研究疟原虫从药物敏感到耐药的分子机制，以便及时调整治疗方案和防控策略，为疟疾防控提供有力支持。&lt;/p&gt;
+
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 02:23:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBwanJlWTdWX2RFZzBmZ3BZdURCc2RGeTB4MGU5VHZ5cXVLLTBHR2hCRjZvOWV0cXNuTWtxc1pfa3RUNER2UGhiNi1ydzMxTFVzeFpkMDcxMDdTV0Vpb1lzV1JoY1NQdmhaTmF6Vw</guid></item><item><title>乌干达青年 HIV 感染者向性伴侣披露感染状况的研究：现状、影响因素及意义 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1OcFk1eG9TNUdpU2xaa3RzWWhsSF9xLUFBUmRKbE91YVFqWlNjcjdITGJUckFUTlk0YWFiTlExbU5uRDFiWHRsZmY3cWxFaEVHU3FNWXU5dnNwVWJfSkhQaHJRVzNyZXNFdzhMVg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《AIDS Research and Therapy》：Disclosure of positive HIV status to sexual partners among young people receiving treatment at an urban clinic, Kampala, Uganda&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决青年 HIV 感染者（YPLHIV）向性伴侣披露 HIV 阳性状态率低的问题，研究人员开展了关于 YPLHIV 向性伴侣披露 HIV 感染状况的研究。结果显示披露率为 45.2%，并明确了相关影响因素。该研究为提高披露率提供依据，对防控 HIV 传播意义重大。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在全球范围内，HIV/AIDS 依然是严重威胁公众健康的重大难题。尽管多年来各方不断努力，HIV 的传播态势却依旧严峻，新感染人数居高不下。其中，青年群体在新增感染中占比不容小觑，他们大多处于性活跃的生殖早期，性传播成为 HIV 扩散的主要途径。在这样的背景下，让 HIV 感染者向性伴侣如实披露自身感染状况显得尤为关键，这不仅有助于感染者获得社会和治疗支持，提升对抗逆转录病毒疗法（ART）的依从性，实现病毒载量（VL）的抑制，还能显著降低 HIV 的性传播风险。然而现实令人担忧，在撒哈拉以南非洲地区，青年 HIV 感染者（YPLHIV）向性伴侣披露感染状况的比例差异极大，部分地区低至 31% ，在乌干达，这一数据同样不容乐观。这种低披露率带来诸多隐患，比如感染者可能偷偷服用 ART 药物，心理压力增大，应对能力变差，ART 治疗依从性降低，最终导致 VL 无法抑制，健康状况恶化，还会增加向性伴侣传播 HIV 的风险。为了深入了解这一现象，填补相关研究空白，来自乌干达多个机构的研究人员展开了一项全面的研究，该研究成果发表在《AIDS Research and Therapy》上。&lt;/p&gt;
+&lt;p&gt;研究人员来自贝勒基金会（Baylor Foundation）、 Makerere 大学等多个乌干达的机构 。他们采用了混合方法平行收敛研究设计，同时开展定量和定性研究。在定量研究方面，研究人员以 18 - 24 岁、在 HIV 诊所接受治疗且有过性行为的 YPLHIV 为研究对象，利用 Leslie Kish 公式估算出 281 人的样本量，通过简单随机抽样，使用预测试的半结构化电子问卷进行面对面访谈来收集数据。之后，运用 STATA 14 软件对数据进行分析，采用修正的 Poisson 回归模型确定与 HIV 感染状况披露相关的因素。定性研究则从参与定量研究的人员中，根据婚姻状况、年龄和性别进行最大变异抽样，选取部分人员进行深入访谈（IDIs），访谈内容经逐字转录和翻译后，运用 NVIVO 12 软件进行主题分析。&lt;/p&gt;
+&lt;p&gt;研究结果如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;参与者的社会人口学特征&lt;/strong&gt;：参与者平均年龄 21 岁，标准差 1.9，多数为女性（61.2%），居住在城市（74.4%），来自乌干达中部（68.7%），单身但性活跃（73.7%），约 76.1% 达到中等及以上教育水平，43.8% 从事临时工作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HIV 感染状况披露的流行率&lt;/strong&gt;：总体披露率仅为 45.2%（95% CI：39.2 - 50.9） 。披露者中多数为女性（76.4%），病毒载量得到抑制（90.4%），近三分之二只有一个性伴侣（64.6%）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;与披露相关的因素&lt;/strong&gt;：调整其他变量后发现，若 YPLHIV 知道伴侣未感染 HIV（aPR = 0.6，95% CI：0.5 - 0.7） 、知道自己感染 HIV 超过 1 年（aPR = 0.2，95% CI：0.1 - 0.4） 、不清楚自己的病毒载量抑制状态（aPR = 0.4，95% CI：0.1 - 0.9） 、不了解病毒载量检测不到就不会传播 HIV（U = U）（aPR = 0.7，95% CI：0.5 - 0.9），则不太可能向性伴侣披露感染状况。相反，若为单亲或双亲缺失（aPR = 1.4，95% CI：1.1 - 1.7） 、有两个性伴侣（aPR = 1.7 95% CI：1.1 - 2.6） 、来自乌干达北部（aPR = 1.9，95% CI：1.1 - 3.3） 、是天主教徒或穆斯林（aPR = 1.6，95% CI：1.2 - 2.1；aPR = 1.6，95% CI：1.1 - 2.3），则更可能披露。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;披露的障碍和促进因素&lt;/strong&gt;：从健康信念模型角度分析，障碍包括担心伴侣反应（如关系破裂、遭受暴力等）、认为病毒载量检测不到就无需披露、担心伴侣泄露隐私、不确定社会的反应、性关系不稳定等；促进因素有保护伴侣免受 HIV 感染、获得同伴和医疗保健提供者的鼓励、获得社会支持、建立信任关系、结束不良关系等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究结论与讨论部分指出，YPLHIV 向性伴侣披露 HIV 感染状况的比例较低。性别、关系稳定性、孤儿身份、知晓感染时间、对 U = U 的认知等因素均会影响披露情况。为提高披露率，需要开展全面的健康教育，让 YPLHIV 了解病毒载量抑制在减少 HIV 传播中的作用，同时营造支持性环境，增强他们的信心。这将有助于提升 YPLHIV 对 ART 的依从性，实现更好的 VL 抑制，减少 HIV 在这一群体中的传播。该研究为后续制定针对性的干预措施提供了重要依据，对改善 YPLHIV 的健康状况和防控 HIV 传播具有重要的现实意义。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 02:21:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1OcFk1eG9TNUdpU2xaa3RzWWhsSF9xLUFBUmRKbE91YVFqWlNjcjdITGJUckFUTlk0YWFiTlExbU5uRDFiWHRsZmY3cWxFaEVHU3FNWXU5dnNwVWJfSkhQaHJRVzNyZXNFdzhMVg</guid></item><item><title>CRISPR-Cas9 介导的原代人背根神经节神经元基因编辑：开启感觉疾病治疗新征程 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBwaXZzRUVpRHFldDVDN2s5cU9ZcnoxSHRkNG51cF9UUDduRVlwRUE4d0psYWV3elFJdTl2anZ2UndqbmNwazh4bFlZb2xYYmdGeXNrVklvZ1lRdFk5elVrbW8tVE5PekxfM3Y1Ng?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Scientific Reports》：Genetic editing of primary human dorsal root ganglion neurons using CRISPR-Cas9&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决传统病毒载体递送 CRISPR-Cas9 治疗神经系统疾病时存在的神经毒性及转染效率低等问题，研究人员开展了原代人背根神经节（hDRG）神经元非病毒转染 CRISPR-Cas9 编辑的研究。结果显示成功实现基因编辑，该成果为感觉疾病治疗提供新方法。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在生物医学的广阔领域中，基因编辑技术一直是探索生命奥秘、攻克疑难病症的关键利器。CRISPR-Cas9 技术自问世以来，凭借其高效精准的基因编辑能力，在多个研究领域大放异彩，尤其在人类疾病治疗方面展现出巨大潜力，为攻克诸如镰刀状细胞病、β- 地中海贫血等顽疾带来了新希望。然而，当这一技术应用于神经系统疾病治疗时，却遭遇了重重阻碍。神经元结构和功能的特殊性，使得传统的病毒载体递送方式难以施展拳脚。病毒载体虽能将特定基因序列带入细胞，但却伴随着神经毒性，不仅影响神经元的正常功能，还在临床试验和非人类灵长类动物的临床前研究中引发了诸多问题，严重限制了 CRISPR-Cas9 技术在神经系统疾病治疗中的应用。&lt;/p&gt;
+&lt;p&gt;为了突破这一瓶颈，来自美国德克萨斯大学西南医学中心（University of Texas Southwestern Medical Center）、德克萨斯大学达拉斯分校（University of Texas at Dallas）等机构的研究人员勇挑重担，开展了一项极具创新性的研究。他们将目光聚焦于原代人背根神经节（hDRG）神经元，旨在开发一种非病毒载体的 CRISPR-Cas9 编辑方法，为神经系统疾病的治疗开辟新途径。最终，他们成功建立了一种可靠的、靶向特异性的非病毒 CRISPR-Cas9 介导的原代人神经元基因编辑方法，这一成果发表在《Scientific Reports》上，为感觉疾病的治疗带来了新的曙光。&lt;/p&gt;
+&lt;p&gt;研究人员在这项研究中主要运用了以下几种关键技术方法：首先，从器官捐赠者获取 hDRG 样本，精心制备原代神经元培养物；接着，采用阳离子脂质体转染法，利用 Lipofectamine 3000 将携带报告标签（GFP 或 mCherry）的 CRISPR-Cas9 质粒导入 hDRG 神经元；然后，借助 T7 核酸内切酶 I 检测、免疫细胞化学、蛋白质免疫印迹以及荧光成像板读数器（FLIPR）系统等技术，分别在基因组、蛋白质和功能水平对基因编辑效果进行验证 。&lt;/p&gt;
+&lt;p&gt;下面来看具体的研究结果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CRISPR-Cas9 转染方案及在人 DRG 培养物中的可行性&lt;/strong&gt;：研究人员从 13 名器官捐赠者获取腰椎和胸部 DRG，制备 hDRG 培养物。选择瞬时受体电位香草酸 1 通道（TRPV1）作为首个研究靶点，使用 Lipofectamine 3000 进行阳离子脂质转染，将 CRISPR 质粒导入细胞。通过调整质粒 DNA 和 Lipofectamine 3000 的用量，优化转染条件，并发现年长捐赠者的神经元产量较低，因此设定 50 岁为年龄上限以保证培养神经元的产量和存活率。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用报告标签和 T7 核酸内切酶 I 检测验证 CRISPR-Cas9 转染&lt;/strong&gt;：通过细胞活力 MTS 检测发现，细胞暴露于质粒 / 脂质复合物的时间不宜超过 24 小时。荧光活细胞成像显示，转染 TRPV1 gRNA 的细胞中 mCherry 报告标签的表达效率超过 60%，神经元转染效率为 77%，整个培养物转染效率为 63%，证明脂质转染法可成功将 DNA 质粒导入原代 hDRG 培养细胞。T7 核酸内切酶 I 检测结果表明，成功对 TRPV1 基因进行了 DNA 编辑，基因修饰率达 44%。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRISPR-Cas9 处理的 hDRG 神经元蛋白质表达的变化&lt;/strong&gt;：免疫细胞化学和蛋白质免疫印迹结果显示，与阴性对照细胞相比，转染 5 天后，hDRG 培养物中 TRPV1 蛋白表达显著降低，神经元中 TRPV1 蛋白荧光强度降低 70%，整体裂解物中 TRPV1 表达降低 50%，证明成功编辑并降低了 hDRG 培养物中 TRPV1 蛋白的表达。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hDRG 神经元中 TRPV1 基因敲除后功能表达降低&lt;/strong&gt;：利用荧光成像板读数器检测细胞内 Ca&lt;sup&gt;2+&lt;/sup&gt;水平变化，结果显示，与阴性对照孔相比，TRPV1 编辑孔对 800nM 辣椒素的反应显著降低，表明 CRISPR-Cas9 编辑 TRPV1 基因导致转染 3 天后功能性受体活性降低 。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hDRG 培养物中 NTSR2 和 CACNA1E 的 CRISPR-Cas9 基因编辑&lt;/strong&gt;：选择 G 蛋白偶联受体神经降压素受体 2（NTSR2）和 R 型电压门控钙通道 Cav2.3（CACNA1E）作为另外两个编辑靶点，转染含 GFP 报告标签的质粒后，二者的转染效率分别约为 60% 和 50%。通过 T7 核酸内切酶法验证了基因编辑，基因编辑率分别为 47% 和 46.3%。蛋白质免疫印迹和免疫细胞化学结果表明，NTSR2 和 Cav2.3 的蛋白表达显著降低。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究结论和讨论部分意义重大。研究人员成功建立了原代人 DRG 培养物中基于非病毒脂质的 CRISPR-Cas9 基因组编辑方法，这一方法为直接在人感觉神经元中评估基因和相关蛋白功能提供了有力工具，有助于筛选作用于人感觉神经元的药物，为治疗顽固性疼痛等感觉疾病奠定了基础。同时，该研究也为未来 CRISPR-Cas9 技术在神经系统疾病治疗中的应用提供了重要参考，有望推动相关领域的进一步发展。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 02:21:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBwaXZzRUVpRHFldDVDN2s5cU9ZcnoxSHRkNG51cF9UUDduRVlwRUE4d0psYWV3elFJdTl2anZ2UndqbmNwazh4bFlZb2xYYmdGeXNrVklvZ1lRdFk5elVrbW8tVE5PekxfM3Y1Ng</guid></item><item><title>轻度肾功能不全、入院时炎症状态与ST 段抬高型心肌梗死（STEMI）后 1 年死亡率的关联研究：探寻高风险患者管理新方向 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBOR0U0YktXSUlZM0Y1N2kxTlBzbjZBd0R0anhyNlRPbWZweExJcExheS05OEJWZnJlaTMzYmZ5VEFtVHFCeS1jRzdwRG44cWtleDBsNDdYRHdPZm5weFA5djdfVjdiV1VpZ0pvQw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Scientific Reports》：Association between mild renal insufficiency, inflammatory status on initial admission, and 1-year mortality following ST-segment elevation myocardial infarction&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为探究轻度肾功能不全对 ST 段抬高型心肌梗死（STEMI）患者入院时炎症反应及临床结局的影响，研究人员对 5594 例 STEMI 患者展开研究。结果显示，轻度 eGFR 降低与高 NLR 及 1 年死亡率相关，炎症状态起部分介导作用。这有助于识别高风险患者，指导临床干预。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　在医学领域，心血管疾病一直是威胁人类健康的重要因素，尤其是 ST 段抬高型心肌梗死（STEMI），发病急、致死率高。而慢性肾脏病（CKD）患者中，心血管疾病更是主要死因。以往研究多聚焦于中重度 CKD 与心血管疾病的关联，对于轻度肾功能不全在 STEMI 患者中的影响，以及其与炎症状态的关系，还有诸多未知。比如，轻度肾功能不全是否会影响 STEMI 患者入院时的炎症反应？又会对患者的长期预后产生怎样的影响？这些问题亟待解决。&lt;/p&gt;
+&lt;p&gt;为了回答这些问题，武汉大学人民医院心内科等七个研究机构的研究人员开展了一项回顾性队列研究。研究成果发表在《Scientific Reports》上。&lt;/p&gt;
+&lt;p&gt;此次研究的样本来源于 2015 - 2021 年中国七个高容量经皮冠状动脉介入治疗（PCI）中心的连续 STEMI 患者，这些患者均接受了原发性 PCI 治疗。研究人员通过收集患者的临床资料，包括人口统计学特征、实验室检查结果、病史和 PCI 手术细节等进行分析。&lt;/p&gt;
+&lt;p&gt;在研究中，肾功能通过估计肾小球滤过率（eGFR）来评估，eGFR 根据住院期间血清肌酐测量值，使用种族无关的慢性肾脏病流行病学协作组（CKD - EPI）2021 方程计算得出，并分为正常或高（eGFR≥90 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;）、轻度降低（eGFR 60 - 89 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;）、中重度降低（eGFR&amp;lt;60 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;）三类。炎症状态则通过中性粒细胞淋巴细胞比值（NLR）衡量，NLR 为血浆中性粒细胞计数（×10&lt;sup&gt;9&lt;/sup&gt;/L）除以血浆淋巴细胞计数（×10&lt;sup&gt;9&lt;/sup&gt;/L），并根据中位数分为低（NLR&amp;lt;7）和高（NLR≥7）两组 。研究的主要结局是 1 年全因死亡，即入院后任何心脏或非心脏原因导致的死亡。&lt;/p&gt;
+&lt;p&gt;研究人员运用了多种关键技术方法。首先，通过回顾性收集多中心的患者临床数据建立样本队列。然后，利用多变量 Cox 比例风险模型评估 eGFR 和 NLR 与 1 年死亡率的关联；运用 Kaplan - Meier 生存分析评估不同 eGFR 和 NLR 患者的累积死亡风险；采用两步回归分析评估炎症状态的中介作用；绘制受试者工作特征（ROC）曲线等评估预测模型的判别能力。&lt;/p&gt;
+&lt;p&gt;下面来看看具体的研究结果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;基线特征&lt;/strong&gt;：共纳入 4778 例患者，平均年龄 61±12 岁，女性占 19.9%。1 年随访期间，266 例（5.6%）死亡。患者 eGFR 中位数为 96.6（81.4，106.1）mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;，NLR 中位数为 7（4，11）。26% 的患者有轻度肾功能不全，9.8% 有中重度肾功能不全。不同 eGFR 和 NLR 分组的患者在年龄、性别、高血压、糖尿病等多方面存在差异。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;eGFR 和 NLR 与 1 年死亡率的关联&lt;/strong&gt;：经多变量调整后，与 eGFR 正常或高的患者相比，轻度 eGFR 降低（60 - 89 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;）患者 1 年死亡率的风险比（HR）为 2.18（95% CI 1.55 - 3.08），中重度 eGFR 降低（&amp;lt;60 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;）患者 HR 为 8.54（95% CI 6.09 - 11.98）。高 NLR（≥7）患者较 NLR&amp;lt;7 患者 1 年死亡率风险显著增加（调整后 HR 1.44，95% CI 1.12 - 1.86） 。eGFR 与 1 年死亡率呈非线性关系，NLR 与 1 年死亡事件呈单调递增线性关系，且 eGFR 与 NLR 存在显著线性关联。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;eGFR 和 NLR 与死亡率的联合和交互分析&lt;/strong&gt;：联合分析显示，无论 NLR 高低，肾功能降低均显著加重 STEMI 后 1 年死亡率。即使是低 NLR 患者，轻度 eGFR 降低也与死亡风险增加相关（调整后 HR 2.23，95% CI 1.30 - 3.84）。eGFR 和 NLR 在 1 年死亡率上无相加交互作用，但存在显著相乘交互作用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NLR 对 eGFR 与死亡率关联的中介分析&lt;/strong&gt;：NLR 在 eGFR 与 1 年死亡率关联中起中介作用，eGFR 60 - 89 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;组通过 NLR 的中介效应为 1.7%（95% CI 0.1 - 4.5），eGFR&amp;lt;60 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;组为 4.5%（95% CI 0.7 - 8.6）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;eGFR 和 NLR 在 1 年死亡率中的增量预测价值&lt;/strong&gt;：纳入 eGFR 和 NLR 的模型较仅含临床风险因素的模型，在预测 1 年死亡率的判别和重分类指数上显著提高（C 指数 0.799 vs. 0.730，P&amp;lt;0.001；IDI 0.062，P&amp;lt;0.001；NRI 0.334，P&amp;lt;0.001）。但 eGFR + NLR 联合指标相比 eGFR 单独预测 1 年死亡率，性能无显著提升。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;研究结论表明，轻度肾功能不全（eGFR 60 - 89 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;）与 STEMI 患者入院时更高的炎症反应和 1 年死亡率相关，入院时的炎症状态在 eGFR 与死亡率关联中起部分中介作用。将 eGFR 和 NLR 纳入预测模型可显著改善对 STEMI 患者 1 年死亡风险的预测。&lt;/p&gt;
+&lt;p&gt;这一研究具有重要意义。它强调了即使 eGFR 高于 60 mL/min/1.73m&lt;sup&gt;2&lt;/sup&gt;的 STEMI 患者，也需早期识别和密切监测肾功能。同时，为开发针对肾功能不全的 STEMI 患者的抗炎治疗提供了理论依据，有助于临床医生更好地识别高风险患者，制定更精准的干预策略，改善患者的预后。不过，该研究也存在一些局限性，如回顾性研究可能存在偏倚、研究结果的普适性有限、未进行外部验证等，未来还需要更多前瞻性研究来进一步验证和完善相关结论。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 01:49:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBOR0U0YktXSUlZM0Y1N2kxTlBzbjZBd0R0anhyNlRPbWZweExJcExheS05OEJWZnJlaTMzYmZ5VEFtVHFCeS1jRzdwRG44cWtleDBsNDdYRHdPZm5weFA5djdfVjdiV1VpZ0pvQw</guid></item><item><title>基于混合并行卷积脉冲神经网络的皮肤癌检测研究：精准诊断新突破 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBFTXJLUzZYa0RIc0JVSF9wb0JTZmhQSzBqbEo4STZaVjZBU2JYY2ZJZmp5eng2dFdSV19QeUhYXzE3WUhXcVpYMnRoV29OanRNV0RqYVpMamZpT2xJMmI2UnV1cE1rNVFNcjlEQQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Scientific Reports》：A hybrid parallel convolutional spiking neural network for enhanced skin cancer detection&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　皮肤癌严重威胁人类健康，早期检测困难。研究人员开展 “Parallel Convolutional Spiking Neural Network（PCSN-Net）用于皮肤癌检测” 的研究，构建 PCSN-Net 模型。结果显示其检测准确率达 95.7% ，该模型为皮肤癌诊断提供了新途径&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="07uk7tv" data-popupid="07uk7tv"&gt;1&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="0njug6e" data-popupid="0njug6e"&gt;11&lt;/span&gt;&lt;/span&gt;。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;&lt;p&gt;
+        　　皮肤癌，这个全球范围内广泛肆虐的 “健康杀手”，正严重威胁着人类的生命健康。据世界卫生组织（WHO）数据，约三分之一的癌症病例是皮肤癌。其中，恶性黑色素瘤更是凶险，每 54 - 60 分钟就有一人因它失去生命。早期发现并治疗皮肤癌，患者生存率能大幅提高，如原位诊断时黑色素瘤生存率可达 95%，但到了初级阶段就骤降至 15% 。然而，当前皮肤癌早期检测面临诸多难题。一方面，皮肤病变种类繁多，增加了诊断难度；另一方面，传统检测方法依赖医生专业技能和经验，准确性难以保证。因此，开发高效准确的皮肤癌早期检测方法迫在眉睫。&lt;/p&gt;
+&lt;p&gt;为攻克这一难题，来自韦洛尔理工大学（Vellore Institute of Technology）的研究人员展开了深入研究。他们致力于构建一种全新的模型，用于皮肤癌的精准检测。最终，研究人员成功提出了 Parallel Convolutional Spiking Neural Network（PCSN-Net）模型。这一模型在皮肤癌检测上表现卓越，具有极高的准确性和可靠性，为皮肤癌的早期诊断带来了新的曙光，相关研究成果发表在《Scientific Reports》上。&lt;/p&gt;
+&lt;p&gt;在研究过程中，研究人员运用了多种关键技术方法。首先，利用 Medav 滤波器对输入的皮肤癌图像进行预处理，去除噪声，提升图像质量；接着，采用集成 SegNet 和深度联合分割的 DeepSegNet，并借助 RV 系数融合结果，对癌症区域进行精准分割；之后，通过几何变换、颜色空间变换、mixup 和 CutMix 等方式进行图像增强；最后，提取纹理、统计、基于离散小波变换（DWT）的局部方向模式（LDP）与熵、局部正态导数模式（LNDP）等特征，输入 PCSN-Net 模型进行检测，该模型由并行卷积神经网络（PCNN）和深度脉冲神经网络（DSNN）融合而成&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="rt1p7ua" data-popupid="rt1p7ua"&gt;2&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="c6yl4qg" data-popupid="c6yl4qg"&gt;3&lt;/span&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;下面来看具体的研究结果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;实验设置与数据集&lt;/strong&gt;：使用 Python 工具，基于 “Skin Cancer: Malignant vs. Benign” 数据集开展研究。该数据集包含约 1800 张 244×244 大小的皮肤图像，涵盖两种类型的痣，且为开源非商业使用，为模型训练和测试提供了丰富的数据支持&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="snj8utx" data-popupid="snj8utx"&gt;4&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="dhjmfba" data-popupid="dhjmfba"&gt;5&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;性能评估指标&lt;/strong&gt;：采用准确率（Accuracy）、特异性（Specificity）、敏感性（Sensitivity）、阴性预测值（NPV）、阳性预测值（PPV）和假阳性率（FPR）等指标评估 PCSN-Net 的性能。这些指标从不同角度反映了模型的检测能力，有助于全面了解模型的性能表现&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="dc5k1sk" data-popupid="dc5k1sk"&gt;6&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实验结果&lt;/strong&gt;：PCSN-Net 在不同层数和 90% 学习集下，各项性能指标表现出色。例如，当层数为 8 时，准确率达到 0.957，敏感性为 0.947，特异性为 0.926 ，FPR 为 0.107 ，PPV 为 0.908 ，NPV 为 0.897。这表明 PCSN-Net 能有效区分恶性和良性皮肤病变，在皮肤癌检测方面具有较高的准确性和可靠性&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="86ko1xc" data-popupid="86ko1xc"&gt;7&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="cyltkn0" data-popupid="cyltkn0"&gt;8&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;对比分析&lt;/strong&gt;：将 PCSN-Net 与 Aquila Whale Optimization-SqueezeNet（AWO-SqueezeNet）、深度学习、Ensemble lightweight deep learning、Optimized CNN、transfer learning、DeepSegNet + Fuzzy cognitive map（FCM）等现有检测模型对比，PCSN-Net 在多个指标上均优于这些模型。同时，与 EfficientNet、DenseNet 等标准模型相比，PCSN-Net 在准确率、敏感性、特异性以及训练和推理时间的平衡上更具优势，凸显了其在皮肤癌诊断中的优越性&lt;span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="zun6yy6" data-popupid="zun6yy6"&gt;9&lt;/span&gt;&lt;span tabindex="0" data-testid="ref_content_circle" aria-describedby="20uc7fy" data-popupid="20uc7fy"&gt;10&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;研究结论和讨论部分指出，PCSN-Net 通过独特的设计，融合 PCNN 和 DSNN，有效解决了当前皮肤癌检测技术中的关键问题。数据增强技术减少了过拟合现象，多种特征提取方法提高了模型对皮肤病变细微差异的识别能力，DSNN 的应用提升了能源效率，使其更适用于资源受限的医疗场景。总体而言，PCSN-Net 为早期皮肤癌检测提供了可靠且可行的新策略，具有较高的准确性和实用性，有望在临床实践中广泛应用，为皮肤癌患者的早期诊断和治疗带来新希望。未来，研究人员计划进一步开发特征选择方法，并引入人工智能（AI）技术，加速癌症治疗和诊断进程，不断推动皮肤癌检测领域的发展。 &lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 02 Apr 2025 01:36:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBFTXJLUzZYa0RIc0JVSF9wb0JTZmhQSzBqbEo4STZaVjZBU2JYY2ZJZmp5eng2dFdSV19QeUhYXzE3WUhXcVpYMnRoV29OanRNV0RqYVpMamZpT2xJMmI2UnV1cE1rNVFNcjlEQQ</guid></item><item><title>重视风湿免疫病患者的结核病风险 - 健康报</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTE1DY2FCYnE0d0V4WlhlRnh3U2p0NXJkTmwwRnBtTU1KMzBGa0NadGFBaDlpSWFzX1ZvTFRlZjV5emdaUFNfTnpuX1FNMTZ6QjFkczNoV0tITG5vWkxObDFfcGpB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;
 
 
 &lt;div id="ttde_info"&gt;&lt;p&gt;
