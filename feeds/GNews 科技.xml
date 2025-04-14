@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>小米游戏神器来了！REDMI 8.8英寸电竞小平板6月底发布 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE45Nm9LTHhwSDF1aXdvQ1hTb1FMTV9vTFhFNFBnYjlYQmFxVWxPd3JwTUpVeWtiVktjNG9tOXdyb1lrSnc2aXVoSUZpd3AwWWJsR1JETngxb3M?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>GitHub限制中国用户登陆？ - guancha.cn</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTFBoSnFERUlmZUdJbGo3Y29ST0V1bVNDR1pqajZxckMyVFBoRFhUbjh0aVNVU0xxYTg0TTVxa3ZLSUZURWFZcF9yUkg3bzlLdXltRFMzTllXR1MxOXRnY3hRQ2N1LVc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/04/14/20250414140556919.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	4月13日，有消息指出，隶属于微软旗下的代码托管平台GitHub近日疑似出于未知原因，全面屏蔽来自中国IP地址的访问。根据用户反馈，当前已登录账号的用户仍可正常使用平台服务，但未登录用户访问时会收到“该IP访问网站权限受限”的提示。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/internet/2025/04/14/20250414133616126.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	4月13日晚间，GitHub在官网回应表示，中国用户无法登陆是由于一项配置更改造成的意外影响导致，现已恢复。
+&lt;/p&gt;
+&lt;p&gt;
+	GitHub官方在状态页回应道：“由于一项配置更改造成了意外影响，中国境内未登录的用户在尝试访问GitHub.com时出现暂时无法访问的情况，而已登录的用户仍能正常访问。影响于2025年4月12日20:01 UTC（北京时间4月13日凌晨4:01）开始，并于2025年4月13日14:55 UTC（北京时间4月13日22:55）缓解。目前导致此影响的配置更改已被撤销，用户在尝试访问GitHub.com时不会再遇到问题。”
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/internet/2025/04/14/20250414133742298.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	GitHub是全球最大的代码托管平台，用于公开程序或软件的代码，总部位于美国。包括LLVM Project等国内使用的重要的基础设施都位于 GitHub平台上，开源项目的代码管理权限、CI基础设施、代码评审、二进制发布等，都在这一个平台上可以完成。RISC-V国际基金会的所有ISA技术规范、参考开源项目实现，目前也都托管于GitHub平台。
+&lt;/p&gt;
+&lt;p&gt;
+	据了解，从状态码可以看到返回的是HTTP 403也就是禁止访问，测试显示只要归属地为中国大陆的IP地址都是被禁止访问的，数据库来源可能是GeoIP地址库，因此部分非中国IP地址例如新加坡IP可能因为数据库显示问题也遭到屏蔽。由于中国境内本就无法直连GitHub服务器，此前一直处于单向无法访问状态，如今则演变为了双向无法访问。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/social/2025/04/14/20250414134258693.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	该问题登上了GitHub讨论榜榜首，有网友猜测此事与美国于4月8日生效的数据安全计划相关，数据安全计划制定了出口管制措施，旨在防止外国对手及受其控制、管辖、拥有和指使的人员获取美国政府相关数据，以及大量基因组、地理位置、生物识别、健康、财务和其他敏感个人数据。
+&lt;/p&gt;
+&lt;p&gt;
+	但是从文本来看，该计划主要是保护美国政府相关数据等，而与FCC（联邦通信委员会）等政府网站不同，GitHub并不托管此类数据，至少不公开托管，因此与数据安全计划无关。
+&lt;/p&gt;
+&lt;p&gt;
+	也有网友猜测表示，从登录状态看来，GitHub可能是为了阻止爬虫才会封禁中国IP地址。
+&lt;/p&gt;
+&lt;p&gt;
+	但这种猜测可能不太符合实际情况，因为GitHub登录页面也同样返回HTTP 403，如果只是为了反爬则应该允许登录界面访问才对，否则岂不是正常用户和爬虫都会被禁止访问。
+&lt;/p&gt;
+&lt;p&gt;
+	不过这起事件最终被证实仅仅只是GitHub的操作失误。
+&lt;/p&gt;
+&lt;p&gt;
+	去年10月，Linux Kernel核心维护者Greg K-H突然清洗掉了所有使用俄罗斯国家域名后缀的邮箱的内核维护者，该事件让“开源无国界”这句被很多人提及了多年的Slogao蒙上了沉重的阴影。Linux之父Linus Torvalds在之后的回应中表示，该决定是为遵守对俄制裁做出的。
+&lt;/p&gt;
+&lt;p&gt;
+	“甲辰计划”公众号主理人在其最新发布的文章中分析道：“鉴于过去一段时间地缘政治对全球开源社区的影响，无论GitHub接下来如何回复，都应将本次屏蔽行为视为美国政府试图干预全球开源合作、重新建立技术铁幕的“切香肠”战术行动。”
+&lt;/p&gt;
+&lt;p&gt;
+	甲辰计划表示，如果目前一个公司或地区，被彻底从GitHub剥离、账号封禁，那么将会失去相当比例的开源基础软件项目的参与能力。开源项目的源代码依然可以被访问，但是只能在下游进行维护，将会消耗巨大的资源和人力成本。
+&lt;/p&gt;
+&lt;p&gt;
+	为此，“甲辰计划”建议：
+&lt;/p&gt;
+&lt;p&gt;
+	第一，所有开源社区的开发者都应该积极的向自己所贡献的开源社区同步“GitHub屏蔽中国大陆IP”这个消息，尤其是目前已经将GitHub作为主要代码托管和协作平台的开源项目，需要开始讨论应对的预案。
+&lt;/p&gt;
+&lt;p&gt;
+	第二，所有开源项目的赞助商，都应该开始立即联系所赞助项目的董事会或治理委员会，询问进一步可能性和应对预案。
+&lt;/p&gt;
+&lt;p&gt;
+	第三，所有开源项目技术委员会、董事会的成员，都应该立即开始在董事会或技术委员会发起此次事件的后续危机讨论。
+&lt;/p&gt;
+&lt;p&gt;
+	“甲辰计划”同时表示，我们也应该对此事保持克制和理性，因为开源这件事的核心是开发者社群，这不会因为国内建立另一个“GitHub”而自动得到迁移。只有在开发者社群中来自中国大陆的贡献占比超过足够的量（例如30%），才会形成足够的抗撕裂能力。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Mon, 14 Apr 2025 06:18:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTFBoSnFERUlmZUdJbGo3Y29ST0V1bVNDR1pqajZxckMyVFBoRFhUbjh0aVNVU0xxYTg0TTVxa3ZLSUZURWFZcF9yUkg3bzlLdXltRFMzTllXR1MxOXRnY3hRQ2N1LVc</guid></item><item><title>小米游戏神器来了！REDMI 8.8英寸电竞小平板6月底发布 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE45Nm9LTHhwSDF1aXdvQ1hTb1FMTV9vTFhFNFBnYjlYQmFxVWxPd3JwTUpVeWtiVktjNG9tOXdyb1lrSnc2aXVoSUZpd3AwWWJsR1JETngxb3M?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;小米游戏神器来了！REDMI 8.8英寸电竞小平板6月底发布&lt;/p&gt;
           
@@ -169,7 +240,59 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 14 Apr 2025 04:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5TQUVyLVE2SHhwOEVJY0wzc2xXRmpHUW83bkl4R21IU011U2RRa05EaUluRjl5QkVZcnJqSUZSNUhWT01iTDd6NlpNb3N3U1N4X3ZfbUl6bE8</guid></item><item><title>曝技嘉多款显卡在中国涨价！RTX 4060也没逃过 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SbTFHNWJRQVhaVjk1TFpzeVluTjIzbk9Nd2llWXRFUlBVUG9oT2IwRjZ4UjNhV2xtczZHRzNRLWtFU0tScHlNQlBVeUJyUHBJOHgya25CaEQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 14 Apr 2025 04:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5TQUVyLVE2SHhwOEVJY0wzc2xXRmpHUW83bkl4R21IU011U2RRa05EaUluRjl5QkVZcnJqSUZSNUhWT01iTDd6NlpNb3N3U1N4X3ZfbUl6bE8</guid></item><item><title>库克：苹果死守中国绝不是因为廉价 美国拿什么比拼 - 3DM</title><link>https://news.google.com/rss/articles/CBMiXEFVX3lxTE12TzEtU1UxYzBDbGxfU0pLekVXcUFfWkJDMEprMmJtS2IzTTF0QlFIeWhVb2hONEhwcHEzVnEyZ1pfUzJaTTJFb1lmQm9uejhWbVpscEIyQnpHY3N6?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;库克：苹果死守中国绝不是因为廉价 美国拿什么比拼&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2025-04-14 12:06:16&lt;/span&gt;&lt;/p&gt;
+            
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/0414/1744599801559.jpg" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	4月14日消息，对于苹果来说，想让iPhone回流美国制造，这简直就是在开玩笑。
+&lt;/p&gt;
+&lt;p&gt;
+	为什么这么说？苹果CEO库克在一次采访中解释苹果为啥死守中国制造，不是因为便宜，而是因为没人能替代。
+&lt;/p&gt;
+&lt;p&gt;
+	“&lt;strong&gt;很多人以为，苹果来中国是为了低成本劳动力。这个说法，早就过时了。中国早已不是低价工厂，真正吸引苹果的，是技能密度。&lt;/strong&gt; ”
+&lt;/p&gt;
+&lt;p&gt;
+	在库克看来，苹果之所以选择在中国制造，其产品对精密制造的要求极高，尤其是模具技术。不是那种拧螺丝的低端活，而是毫米以下的微米级精度，这是别的国家不具备的。
+&lt;/p&gt;
+&lt;p&gt;
+	库克甚至直言：“在美国，想开个模具工程师的会，可能凑不够人。 在中国，一个省能给你填满几个足球场。”
+&lt;/p&gt;
+&lt;p&gt;
+	“&lt;strong&gt;&lt;span&gt;这不是人多，而是这种深度技能，在中国是系统化、规模化、产业化的存在。 
+所以关键问题不是劳动力便宜，而是有没有足够多、足够专业、协同高效的产业工人。&lt;/span&gt;&lt;/strong&gt;”
+&lt;/p&gt;
+&lt;p&gt;
+	看到库克说的原因，反观特朗普的口号，只能一笑了之了。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250414/1744599794_245815_jpg_r.jpg" alt="库克：苹果死守中国绝不是因为廉价 美国拿什么比拼"&gt;
+&lt;/p&gt;        &lt;/div&gt;
+                                                &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href="https://h5.3dmgame.com/activities/signinPc" target="_blank"&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20241126/1732585083_533486.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Mon, 14 Apr 2025 04:06:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE12TzEtU1UxYzBDbGxfU0pLekVXcUFfWkJDMEprMmJtS2IzTTF0QlFIeWhVb2hONEhwcHEzVnEyZ1pfUzJaTTJFb1lmQm9uejhWbVpscEIyQnpHY3N6</guid></item><item><title>曝技嘉多款显卡在中国涨价！RTX 4060也没逃过 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SbTFHNWJRQVhaVjk1TFpzeVluTjIzbk9Nd2llWXRFUlBVUG9oT2IwRjZ4UjNhV2xtczZHRzNRLWtFU0tScHlNQlBVeUJyUHBJOHgya25CaEQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;曝技嘉多款显卡在中国涨价！RTX 4060也没逃过&lt;/p&gt;
           
@@ -234,7 +357,7 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 14 Apr 2025 04:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5SbTFHNWJRQVhaVjk1TFpzeVluTjIzbk9Nd2llWXRFUlBVUG9oT2IwRjZ4UjNhV2xtczZHRzNRLWtFU0tScHlNQlBVeUJyUHBJOHgya25CaEQ</guid></item><item><title>拒绝12Pin！索泰准备6款RTX 5060 Ti：全部8Pin供电 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBd2ZiQi01XzlEOG5fekNFZUxOQkxTMHU5U3dHLWJNN0tSOHhBa0hUUE5Ob3VRcjdVTzZMc0w4Nll2NHREUDRORW5EY0pzTFkxRHg1U2NHY1A?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 14 Apr 2025 04:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5SbTFHNWJRQVhaVjk1TFpzeVluTjIzbk9Nd2llWXRFUlBVUG9oT2IwRjZ4UjNhV2xtczZHRzNRLWtFU0tScHlNQlBVeUJyUHBJOHgya25CaEQ</guid></item><item><title>特朗普关税：iPhone橄榄枝标志着贸易战的重大退让——观察 - BBC</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTFAzTmlMNkZITlVHWUZLQmpDVEl5MjRhZ3BUclk0eDhOTk90R24xdXF6T1JKcXlndzRfY016TFNVdGI2bWJlRkt6V0Q4R05kRTVobFJiSE1TNjlVdFVqeU1JRVYtR1ZGQdIBa0FVX3lxTFBHTDhrSjA0Q2xRVzRSNmFDMEE5UjBnVHdoMXhSUXZBQ19LaWhXbDhudVRmMkF1b0V6TXg0Q0NiSFl0NERHbndoRHFuS3NLX3lwN1dhekdaaE5YRTAyNnExVkZZMFZqcVRRSzJJ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="bbc-fa0wmp"&gt;&lt;p dir="ltr" class="bbc-1151pbn ebmt73l0"&gt;&lt;h1 id="content" tabindex="-1" class="article-heading bbc-1tk77pb e1p3vdyi0"&gt;观察：特朗普的iPhone橄榄枝标志着贸易战的重大退让&lt;/h1&gt;&lt;/p&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/7785/live/d1331660-184d-11f0-aab6-2bb36eb32e30.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7785/live/d1331660-184d-11f0-aab6-2bb36eb32e30.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/7785/live/d1331660-184d-11f0-aab6-2bb36eb32e30.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/7785/live/d1331660-184d-11f0-aab6-2bb36eb32e30.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/7785/live/d1331660-184d-11f0-aab6-2bb36eb32e30.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7785/live/d1331660-184d-11f0-aab6-2bb36eb32e30.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="美国总统唐纳德·特朗普在椭圆形办公室的一次会议中发言。他伸出双手，正在讲话。他穿着蓝色西装和红色领带。" loading="eager" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" class="bbc-1vjaf6b"&gt;&lt;strong id="article-byline" aria-hidden="true" class="bbc-m04vo2"&gt;Article information&lt;/strong&gt;&lt;ul role="list" class="bbc-1rvtlej"&gt;&lt;li&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;Author, &lt;/span&gt;&lt;span class="bbc-1o0gmgs"&gt;费萨尔·伊斯兰（Faisal Islam）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;Role,  &lt;/span&gt;&lt;span class="bbc-15gut0e"&gt;BBC经济事务编辑&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="focusIndicatorReducedWidth bbc-1aa3nrb" href="https://twitter.com/faisalislam" aria-labelledby="byline-twitter-link"&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class="bbc-v8pmqw"&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;time datetime="2025-04-14" class="bbc-xvuncs e1mklfmt0"&gt;2 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;上周六（4月12日）凌晨悄悄发布的一份美国海关通知中，一系列商品被列为免除125%关税的范围。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;代码“8517.13.00.00”对大多数人来说意义不大，但在美国海关清单中，它代表着智能手机。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这意味着去年中国对美国出口价值最高的商品被免除了进口税，与此同时，其他电子设备和元件，包括半导体、太阳能电池和记忆卡也被豁免。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在美国商务部长霍华德·卢特尼克（Howard Lutnick）几天前宣布提高对中国关税以将iPhone生产带回美国的背景下，这是一个令人震惊的转变。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;美国现在已经将中国最大的出口商品，并且无疑是最引人注目的成品，从关税中排除，并且最初没有公开宣布这一消息。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;125%关税对苹果在中国郑州的制造设施的影响，将在几周内在大多数美国苹果商店显现。这会是白宫动荡的关税战中的一个象征性“价格震撼”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;根据全球技术市场研究公司“对位研究”（Counterpoint）的数据，苹果公司为美国市场生产的iPhone中有多达80%是在中国制造的。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这家科技巨头的制造利润率估计在40-60%之间。典型的iPhone价格可能会接近2000美元（1528英镑）而不是1000美元。苹果的另一个选择可能是将成本分摊到其全球价格上，但世界其他地方会接受支付特朗普的关税税吗？&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;iPhone的公开重新定价已被避免，但如果白宫之前所说的因强效阿片类药物芬太尼对中国征收的20%关税仍然存在，这种情况仍可能发生。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;苹果公司首席执行官蒂姆·库克（Tim Cook）在这里扮演了关键角色。他可以与美国总统唐纳德·特朗普（Donald Trump，川普）和中国国家主席习近平会面。如果美中贸易战迎来和平曙光，库克可能会成为中间人，这并不是一个荒唐的预测。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这基于他在连接两国经济方面的深厚的基础性作用。他是苹果公司联合创始人史蒂夫·乔布斯（Steve Jobs）亲自挑选的，因为他在即时供应物流方面拥有无与伦比的专业知识。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="撤销的艺术" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;“撤销的艺术”&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;现在一切都在迅速变化。美国媒体周末报导称，白宫贸易鹰派彼得·纳瓦罗（（Pete Navarro）也正在被边缘化，取而代之的是美国财政部长斯科特·贝森特（Scott Bessent）。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;纳瓦罗是臭名昭著的方程式的创作者，该方程式根据一个国家与美国的贸易顺差大小设定所谓的对等税率，并将贸易顺差称为“所有欺骗的总和”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;贝森特现在正在领导与贸易伙伴的谈判，寻求在90天暂停期后避免重新应用这些关税。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在10天的混乱之后，有一个大问题。其他国家作出退让的诱因是什么？特朗普政府显然被债券市场对总统贸易计划的反应以及投资者对美国债券避风港地位的质疑吓到了。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;为了避免债券有效利率上升到5%，美国需要的不仅仅是那些顺差国的交易。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;事实上，发生在这个周末的广泛豁免，本身就是对特朗普在玫瑰园举起的臭名昭著的关税图表所体现的原则的惊人逆转。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;根据凯投宏观（Capital Economics）的数据，中国对美总出口量的近四分之一现在被免除了125%的关税。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;该咨询公司表示，豁免的最大受益者还包括，台湾对美64%的出口、马来西亚对美44%的出口，以及越南和泰国对美近30%的出口。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;10%的普遍关税现在充满了豁免，最大的豁免是对许多拥有大量电子制造贸易顺差的国家。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;新的关税方程式是通过豁免，对拥有最大顺差的经济体提供10%基础关税之外的有效折扣。例如，台湾对美国有740亿美元的顺差，越南有1240亿美元的顺差。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这与上周臭名昭著的纳瓦罗方程式完全相反。在10天内，从“掠夺者和劫掠者”将受到最严重打击，发展到（除了中国）拥有大顺差的国家和地区获得了最大的豁免。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;同时，根据美国数据，英国作为美国盟友有120亿美元的逆差——即美国对英国的销售额超过英国对美国的销售额——其最大的出口商品汽车被收25%的关税，第二大商品药品也面临类似的收费。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;白宫已经从明确表示不会就基线10%关税进行谈判，到不会为导致逆差的产品提供豁免，而这是整个政策期待解决的问题。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这远不止是“退步”。有些人称之为“撤销的艺术”。四维棋局已被一维跳棋所取代，而且无法分辨对面棋子的差异。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;美国现在正根据债券市场和自身状况进行谈判。世界各地则将观察这一切如何发展。&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Mon, 14 Apr 2025 03:39:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTFAzTmlMNkZITlVHWUZLQmpDVEl5MjRhZ3BUclk0eDhOTk90R24xdXF6T1JKcXlndzRfY016TFNVdGI2bWJlRkt6V0Q4R05kRTVobFJiSE1TNjlVdFVqeU1JRVYtR1ZGQdIBa0FVX3lxTFBHTDhrSjA0Q2xRVzRSNmFDMEE5UjBnVHdoMXhSUXZBQ19LaWhXbDhudVRmMkF1b0V6TXg0Q0NiSFl0NERHbndoRHFuS3NLX3lwN1dhekdaaE5YRTAyNnExVkZZMFZqcVRRSzJJ</guid></item><item><title>拒绝12Pin！索泰准备6款RTX 5060 Ti：全部8Pin供电 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBd2ZiQi01XzlEOG5fekNFZUxOQkxTMHU5U3dHLWJNN0tSOHhBa0hUUE5Ob3VRcjdVTzZMc0w4Nll2NHREUDRORW5EY0pzTFkxRHg1U2NHY1A?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月14日消息，&lt;strong&gt;RTX 5060 Ti 16/8GB已经定于4月15日晚21点发布，根据最新消息，索泰首批准备了6款RTX 5060 Ti显卡。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span&gt;其中包括AMP和TWIN EDGE（OC）两大系列，均将采用采用更稳定、更安全的8Pin接口，&lt;/span&gt;&lt;/strong&gt;其中AMP系列主打高性能，而TWIN EDGE系列则更注重性价比，双槽设计，并支持小型化（SFF）标准。&lt;/p&gt;
@@ -1515,7 +1638,12 @@ Foundry称，《马里奥赛车：世界》的60fps模式能够完美地保持�
         
                 
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 13 Apr 2025 09:01:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE0yYXlmTGlEUF9kd01QQi1LZzZoV2x0aEQzZjRfYVdFNUd4Mk5sQWtlRFNuZmNkLVZKTWV5Vjk4eEZfQ3R1MUhPenp0dC1qcnloSHNzZWNtUDBESnVM</guid></item><item><title>中国独享！Intel酷睿Ultra 200S处理器新增IPO优化 游戏性能再＋10％ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1sQjU5MDRhVHhVdGNzMlpXeXE4Zk1CNUdtWHVqcF90Y2diTmNWSXJzZW5WRHpwVHlhM2pzTlpOVXQ0aE9HZ29lalp1MG9jdGdyT21QdEgyRkQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 13 Apr 2025 09:01:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE0yYXlmTGlEUF9kd01QQi1LZzZoV2x0aEQzZjRfYVdFNUd4Mk5sQWtlRFNuZmNkLVZKTWV5Vjk4eEZfQ3R1MUhPenp0dC1qcnloSHNzZWNtUDBESnVM</guid></item><item><title>AI也要“模拟人生”？或许游戏NPC比你更懂人性 | 玩点好的 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE9QVXR5SDNmeDhlTWNzWVk1LVY2cGtnRTl5dTlxZGcwRkVxRE5UenV3Z255TUFaVGxjRTBjSDY2YzVObmpzM0hrYkQtdEE1QQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
+
+
+&lt;/body&gt;
+</description><author>36Kr</author><pubDate>Sun, 13 Apr 2025 09:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9QVXR5SDNmeDhlTWNzWVk1LVY2cGtnRTl5dTlxZGcwRkVxRE5UenV3Z255TUFaVGxjRTBjSDY2YzVObmpzM0hrYkQtdEE1QQ</guid></item><item><title>中国独享！Intel酷睿Ultra 200S处理器新增IPO优化 游戏性能再＋10％ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1sQjU5MDRhVHhVdGNzMlpXeXE4Zk1CNUdtWHVqcF90Y2diTmNWSXJzZW5WRHpwVHlhM2pzTlpOVXQ0aE9HZ29lalp1MG9jdGdyT21QdEgyRkQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;中国独享！Intel酷睿Ultra 200S处理器新增IPO优化 游戏性能再＋10％&lt;/p&gt;
           
@@ -1716,144 +1844,4 @@ Foundry称，《马里奥赛车：世界》的60fps模式能够完美地保持�
 
         &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Sun, 13 Apr 2025 07:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5oVDMyeHJfWlZzTjJJMDNiOTc3aEkyenhIM0JPSGc1MUE0VlJhZ0lhazdITEJUdWxUUlhuU2xpY1plZjRJRkRwanlpVWxvU3VNbDlNZ1N6dFlIVTk4RzZJeA</guid></item><item><title>ROG NUC 2025迷你机正式发布：酷睿Ultra 9 275HX＋RTX 5080 2.5万元- ASUS 华硕 - cnBeta.COM</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE9nV203TF9NZVBZdHZiQU1ZWi1TNlFTVHNlZGhnbktyZkxKcnZ4d0JpejBXZF93V0JvQnN3aEk5eUwyUGdzN0xhXzRTSmJRNXBwdDFrX05SbU1BQjhJU3VlZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="artibody"&gt;
-                        &lt;p class="article-global"&gt;&lt;/p&gt;                            &lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0413/2fff9a02d9b3e73.jpg" title="" alt="5e1a0f4cece04f9bace410815cf2ff11.jpg"&gt;&lt;/p&gt;&lt;p&gt;这次发布的升级版ROG NUC 2025，&lt;strong&gt;采用了最新的酷睿Ultra 9 275HX处理器&lt;/strong&gt;(官方图错误地放了个Lunar Lake示意图)，&lt;strong&gt;搭档最新的RTX 5080 Laptop移动显卡，可以说是目前能塞进迷你机的第二强组合了。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;散热设计包括&lt;strong&gt;三个风扇、双均热板&lt;/strong&gt;，但未透露性能释放情况，只说支持智能、手动超频。&lt;/p&gt;&lt;p&gt;内存支持两条DDR5-6400，最大可升级容量96GB。&lt;/p&gt;&lt;p&gt;M.2 SSD接口只有一个，不过支持&lt;strong&gt;PCIe 5.0&lt;/strong&gt;，而且可以免工具拆装升级。&lt;/p&gt;&lt;p&gt;网络提供Intel 2.5G有线网卡、Intel Wi-Fi 7无线网卡、蓝牙5.4，声卡为Realtek ALC3251。&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250413/304b4d1c5da8464386d2fda69f351edf.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0413/629f30e6dc16364.jpg"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;整机为ROG经典的黑红配色，&lt;strong&gt;尺寸282.4x187.7×56.5毫米(底部146毫米)，重量3.12公斤，体积控制在3升。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;接口异常丰富，前置一个USB-C、两个USB-A 3.2、一个3.5mm耳机插孔，&lt;strong&gt;后置雷电4、两个DP2.1、两个HDMI 2.1、四个USB-A 3.2，可以输出四屏4K。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;价格自然不菲，&lt;strong&gt;32GB+1TB 24399元，32GB+2TB 24999元，本月底开卖。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250413/6560c217ce7b4d0fb0e3a2324aa067f5.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0413/a21befb250a1fb7.jpg"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250413/26e41e322e1f4ad0b12f9e648d315425.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0413/2887f7b39a95480.jpg" title="" alt="26e41e322e1f4ad0b12f9e648d315425.jpg"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250413/2d2c041a962842c19a8889efbbec0401.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0413/2970fa580055d96.jpg"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250413/5b97d5c533ef4136a399171fa663563a.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0413/15687fc707a230c.jpg"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250413/cd36956f2211421bbf1c4c2cadcbf843.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0413/c5d4916d3f74f9a.jpg"&gt;&lt;/a&gt;&lt;/p&gt;                        &lt;/div&gt;
-                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta.COM</author><pubDate>Sun, 13 Apr 2025 07:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9nV203TF9NZVBZdHZiQU1ZWi1TNlFTVHNlZGhnbktyZkxKcnZ4d0JpejBXZF93V0JvQnN3aEk5eUwyUGdzN0xhXzRTSmJRNXBwdDFrX05SbU1BQjhJU3VlZw</guid></item><item><title>GPU-Z 2.65.1版发布：首次支持摩尔线程MTT S3000 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBkN094UkhHbWxQYVNocWMtNTBIMnMzdGFXZmxMZHk2NmNYMkJPbUhzWklKN3dPZTA1S2NoNS10ZnRHRnZQOE10MlMxYU1oaUZtMnNCSm5aOGo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;GPU-Z 2.65.1版发布：首次支持摩尔线程MTT S3000&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-04-13 15:06:55  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/278470.html" title="上方文Q的主页" class="newstiao4"&gt;上方文Q&lt;/a&gt;&lt;p&gt;  编辑：上方文Q &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1041441-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月13日消息，显卡识别工具GPU-Z今天迎来了最新的2.65.1版本，增加了对多款新显卡的支持。&lt;/p&gt;
-&lt;p&gt;NVIDIA显卡新增：RTX 5060 Ti 16GB、RTX 5090 Laptop、RTX 5080 Laptop、RTX 5070 Ti Laptop、RTX PRO 4000 Blackwell、RTX PRO 3000 Blackwell、H200。&lt;/p&gt;
-&lt;p&gt;AMD显卡新增：RX 9070 GRE、锐龙AI 300(Krackan) iGPU、锐龙AI Max 300(Strix Halo) iGPU。&lt;/p&gt;
-&lt;p&gt;Intel显卡新增：锐炫A750E、锐炫A580E(嵌入式)。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250413/2961bf52f3a14ba59464586ea2b852c1.png" target="_blank"&gt;&lt;img alt="GPU-Z 2.65.1版发布：首次支持摩尔线程MTT S3000" h="361" src="//img1.mydrivers.com/img/20250413/s_2961bf52f3a14ba59464586ea2b852c1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;另外有趣的是，&lt;strong&gt;GPU-Z 2.56.1还首次支持摩尔线程MTT S3000。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这是摩尔线程第一款基于“春晓”新架构的全功能服务器GPU显卡，主要面向云端环境，配备4096个核心、256-bit 32GB GDDR6显存，核心频率1.9GHz，支持PCIe 5.0 x16，提供两个DP 1.4a接口，热设计功耗250W。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250413/a6f6705831874fba9cf72a7f5f659845.jpg" target="_blank"&gt;&lt;img alt="GPU-Z 2.65.1版发布：首次支持摩尔线程MTT S3000" h="556" src="//img1.mydrivers.com/img/20250413/s_a6f6705831874fba9cf72a7f5f659845.jpg" w="410"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 13 Apr 2025 07:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBkN094UkhHbWxQYVNocWMtNTBIMnMzdGFXZmxMZHk2NmNYMkJPbUhzWklKN3dPZTA1S2NoNS10ZnRHRnZQOE10MlMxYU1oaUZtMnNCSm5aOGo</guid></item><item><title>当中国已大量使用AI时，日本还在努力淘汰软盘和传真......-月咏幻-观察者网 - 观察</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTE9XempLZy1BQ2hmMFpOSHMxcF9VTHZzUFhlZ0VpNG9jcW5vS0k3ckE2LVgwUEFuSVk1eTl1ekEzTVRudWkzRV9ac0plWUZIMUx1blBkMHZWdnd0czZCXzFaSHQ2QXVPRTlsN0E?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	【文/观察者网专栏作者 月咏幻】
-&lt;/p&gt;
-&lt;p&gt;
-	从2023年ChatGPT引发全球AI热潮到2025年初DeepSeek爆火，短短两年半时间里，中国完成了从追赶到并跑，再到某些领域领跑的转变。这种全方位的进步，折射出中国在AI领域的整体实力。
-&lt;/p&gt;
-&lt;p&gt;
-	反观同为亚洲科技大国的日本，却在这场AI革命中显得异常低调。作为全球第三大经济体，日本既没有诞生可与DeepSeek比肩的大语言模型，在AI应用的普及程度上也远逊于中国。
-&lt;/p&gt;
-&lt;p&gt;
-	根据日本经济新闻的报道，日本正在使用生成式AI的人数，仅有9%，而中国已经接近60%大关，美国也超过了40%。
-&lt;/p&gt;
-&lt;p&gt;
-	AI在中美已经疯狂普及，但为何日本到如今都还是反响平平？为什么以“科技创新”闻名的日本，会在AI时代的关键技术领域落后？
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2025/03/17/20250317131940969.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;在谈AI之前，连技术革新都有问题&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	在讨论日本AI发展现状前，我们必须先提到日本目前面临的几个科技难题：一是发展慢，二是研究少，三是缺人才。这三个问题会互相影响，互为因果，最终体现在当下这两年的人工智能热潮中，很难见到日本的身影。
-&lt;/p&gt;
-&lt;p&gt;
-	先说发展慢的问题。作为对比，当中国的移动支付已经普及多年，智能机器人正在春晚上表演时，日本政府部门仍在为淘汰3.5寸软盘和传真机而努力：2024年6月28日，日本政府终于宣布在所有的政府流程中淘汰了软盘。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/03/17/20250317131919195.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	出处：日本ReseEd&lt;span&gt;&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	另一项技术古董——传真，现在也仅仅只在日本教育系统里被废止，医疗和警务暂时还没有办法抛弃传真。2023年年底的资料显示，有95%的小初高学校老师仍在使用传真。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/03/17/20250317132137348.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	出处：日本ReseEd&lt;span&gt;&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	因此，我们可以说，日本数字化转型的迟滞并非偶然，而是反映了日本在面对新技术变革时的深层次困境。
-&lt;/p&gt;
-&lt;p&gt;
-	这和笔者之前提到过很多次的日本科技后进国的定位有关：毕竟，一个现在还在用传真，正在逐渐把3.5寸软盘从政府事务中淘汰的国家，你指望它能在最新的高科技领域里搅动起多大的水花呢？
-&lt;/p&gt;
-&lt;p&gt;
-	政府部门如此，民间企业也没有好到哪里去。目前日本并没有本土公司做的著名大模型，也没有那么多人在普遍使用AI。
-&lt;/p&gt;
-&lt;p&gt;
-	日本民间企业对AI的理解，可以从JetB的这项调查里看到：有51%的企业完全没有想到今后要用AI提升什么事务的效率。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2025/03/17/20250317132154628.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	这个调查结果明确说明了日本多数企业对AI根本不关心。究其原因，是因为日本许多企业仍然依赖封闭且高度定制化的遗留系统（Legacy System），这些系统由于长年累积的复杂性和供应商锁定效应，导致企业难以灵活利用数据，也无法顺利对接AI等新技术。
-&lt;/p&gt;
-&lt;p&gt;
-	日本经产省的报告数据显示，有很多企业将90%以上的IT预算用于系统维护，而不是新技术的研发和导入。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/03/17/20250317132218749.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	日本制造业、金融业和政府机构的大量核心系统，仍然运行在这些上世纪开发的老旧架构上，部分企业甚至还在使用Windows 7或COBOL语言开发的程序，而这些系统的维护成本极高，更新难度大，使得日本在技术迭代上长期落后于欧美和中国。
-&lt;/p&gt;
-&lt;p&gt;
-	当中国科技公司秉持“快速迭代、持续优化”的理念时，日本企业仍在追求维护过往熟悉的所谓完美方案，乃至于将宝贵的工程师资源大量投入在维护老旧系统上，真正用于技术创新的资金极为有限。
-&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察</author><pubDate>Sun, 13 Apr 2025 06:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9XempLZy1BQ2hmMFpOSHMxcF9VTHZzUFhlZ0VpNG9jcW5vS0k3ckE2LVgwUEFuSVk1eTl1ekEzTVRudWkzRV9ac0plWUZIMUx1blBkMHZWdnd0czZCXzFaSHQ2QXVPRTlsN0E</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Sun, 13 Apr 2025 07:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5oVDMyeHJfWlZzTjJJMDNiOTc3aEkyenhIM0JPSGc1MUE0VlJhZ0lhazdITEJUdWxUUlhuU2xpY1plZjRJRkRwanlpVWxvU3VNbDlNZ1N6dFlIVTk4RzZJeA</guid></item></channel></rss>
