@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>前十占九！“中国机构正在主导全球芯片研究” - 观察者</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTFBlQU14NXdXTnY0MVFYcEJvOF9aNHdKbnRuWUxGMWpvQTd6ZXVTTVdqQXpFRlFGU3VEb2k2X0p5UGZSN1JSaUNnek5ZY1B2T3dNRm1sa2hZMW9nR2J6TkRuN05EMS13dmdmeVE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>NVIDIA 576.02驱动一堆新Bug 显卡温度异常：官方紧急修复 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1MSEhPajd3TDJLMGZNODhKVWhRU1J4enpHd3JRSDYyTEhMc214UHE3TjVhajA2cVVJT3BXUDEtV0dXLUE1Q08wM2pZQjhaRHhyOWNEME0tVmk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月22日消息，NVIDIA日前放出了重量级的GeForce 576.02版驱动，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1042/1042351.htm" target="_blank"&gt;一口气修复了多达41个不同Bug&lt;/a&gt;，包括困扰已久的各种黑屏，以及大范围的日常和游戏异常、崩溃问题，但没想到又惹出一个让人崩溃的新Bug。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;不少玩家反馈，升级576.02版驱动后，会出现GPU核心温度识别错误，进而导致核心频率、电压无法调节，尤其是在睡眠、休眠之后几乎100％会出现。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从目前的情况看，应该是&lt;strong&gt;一个名为“NvAPI_GPU_GetThermalSettings”的API接口出了问题，无法获取温度变化，因而错误地显示固定值。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;唯一的临时解决方法，就是完全重启一次，或者退回旧版驱动。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250422/148f375ddbf446cfa94e0c597a43d1b0.jpg" target="_blank"&gt;&lt;img alt="NVIDIA 576.02驱动一堆新Bug 显卡温度异常：官方紧急修复" h="312" src="//img1.mydrivers.com/img/20250422/s_148f375ddbf446cfa94e0c597a43d1b0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Guru3D论坛中，有玩家建议认为是MSI Afterburner、Riva Statistic Server这两款监控软件的问题，卸载它们再重装即可恢复。&lt;/p&gt;
+&lt;p&gt;但是，软件作者立即回复称，与监控软件没有任何关系，而是来自驱动本身。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250422/54ae3cf77ce84153a2fed025548cc126.png" target="_blank"&gt;&lt;img alt="NVIDIA 576.02驱动一堆新Bug 显卡温度异常：官方紧急修复" h="300" src="//img1.mydrivers.com/img/20250422/s_54ae3cf77ce84153a2fed025548cc126.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reddit论坛上也有很多玩家反馈此问题，而且除了RTX 50系列，RTX 40、RTX 30系列同样受到了影响。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250422/8fb3b26364a5419e876cba49db1414f2.png" target="_blank"&gt;&lt;img alt="NVIDIA 576.02驱动一堆新Bug 显卡温度异常：官方紧急修复" h="322" src="//img1.mydrivers.com/img/20250422/s_8fb3b26364a5419e876cba49db1414f2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250422/921c08395c6742829eb9882946b417e1.png" target="_blank"&gt;&lt;img alt="NVIDIA 576.02驱动一堆新Bug 显卡温度异常：官方紧急修复" h="328" src="//img1.mydrivers.com/img/20250422/s_921c08395c6742829eb9882946b417e1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;幸运的是，&lt;strong&gt;&lt;span&gt;这一次NVIDIA动作很迅速，马上就发布了576.15版热修复驱动，不但解决了这个温度Bug(最近三代显卡都适用)，还顺带修复了RTX 50系列的其他六个Bug，其中三个是576.02版带出来的：&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;－ &lt;strong&gt;修复系统休眠恢复后，GPU监控工具无法汇报GPU温度的问题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;－ 修复RTX 50系列上升级576.02版驱动后&lt;strong&gt;部分游戏阴影闪烁、显示错误&lt;/strong&gt;的问题&lt;/p&gt;
+&lt;p&gt;－ 修复RTX 50系列上升级576.02版驱动后&lt;strong&gt;部分游戏在编译器着色阶段崩溃&lt;/strong&gt;的问题&lt;/p&gt;
+&lt;p&gt;－ 修复RTX 50系列上升级576.02版驱动后&lt;strong&gt;GPU待机频率偏低&lt;/strong&gt;的问题&lt;/p&gt;
+&lt;p&gt;－ 修复RTX 50系列上使用多屏时SteamVR轻微卡顿的问题&lt;/p&gt;
+&lt;p&gt;－ 修复RTX 50系列上Lumion 2024进入渲染模式后崩溃的问题&lt;/p&gt;
+&lt;p&gt;－ 修复RTX 50系列笔记本上Modern Standy待机恢复后黑屏的问题&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GeForce 576.15版热修复驱动下载：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="f14_link" href="https://nvidia.custhelp.com/app/answers/detail/a_id/5650" target="_blank"&gt;https://nvidia.custhelp.com/app/answers/detail/a_id/5650&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250422/8fc641a26fda4ab88ac942f752d59dba.png" target="_blank"&gt;&lt;img alt="NVIDIA 576.02驱动一堆新Bug 显卡温度异常：官方紧急修复" h="294" src="//img1.mydrivers.com/img/20250422/s_8fc641a26fda4ab88ac942f752d59dba.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 22 Apr 2025 01:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1MSEhPajd3TDJLMGZNODhKVWhRU1J4enpHd3JRSDYyTEhMc214UHE3TjVhajA2cVVJT3BXUDEtV0dXLUE1Q08wM2pZQjhaRHhyOWNEME0tVmk</guid></item><item><title>AI叙事能否延续？微软之后 亚马逊也传出放缓数据中心扩张消息 - 财联社</title><link>https://news.google.com/rss/articles/CBMiSEFVX3lxTFBNdGRNN0RGeFVJU0dTN19Kck9YU2lIaS1tWlFrSHNPR3ZlQzUwekl4ZVIyZWx2dDEtWXhXaS1UNmluWUZlMFdscA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社4月22日讯（编辑 史正丞）&lt;/strong&gt;美国富国银行的分析师周一表示，根据他们打探到的行业消息，&lt;strong&gt;云计算巨头亚马逊也开始推迟部分租赁数据中心的承诺&lt;/strong&gt;，这也被视为经济不确定性影响科技公司支出的最新征兆。&lt;/p&gt;
+&lt;p&gt;对于美股AI叙事而言，这也是新的压力来源——今年早些时候微软也被多次传出取消数据中心租约。&lt;/p&gt;
+&lt;p&gt;在云计算领域，&lt;strong&gt;亚马逊AWS与微软Azure是全球市场份额排名第一和第二的巨头&lt;/strong&gt;。考虑到微软的战略收缩还有不再独占OpenAI算力供应商的缘由，亚马逊的调整原因更加值得关注。&lt;/p&gt;
+&lt;p&gt;富国银行的通信基建板块Eric Luebchow在周一发布的报告中写道：“&lt;strong&gt;上周末，我们从多个行业消息源获悉，AWS已经暂停部分托管租赁（尤其是国际业务）的洽谈。这一状态也与近期从微软获悉的情况类似——即两家公司都在收缩新项目，但并未取消已经签署的协议。&lt;/strong&gt;”&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://img.cls.cn/images/20250422/p7GdOy7fCP.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;Luebchow也补充称，尽管微软和亚马逊可能正在收缩业务，但&lt;strong&gt;谷歌、Meta、甲骨文等超大规模云服务商仍保持“活跃”&lt;/strong&gt;，而英伟达的活动依然“高涨”。&lt;/p&gt;
+&lt;p&gt;他指出，亚马逊在北美的数据中心活跃电力容量可能超过9吉瓦，其中约70%为自建。假设当前处于潜在的“消化”期，可能需要间隔6至12个月（或更短时间）才会继续寻求更多容量。&lt;/p&gt;
+&lt;p&gt;Luebchow表示，目前尚不清楚AWS放缓部分租赁业务是值得担忧的信号，还是超大规模云服务机构活动的自然起伏。但很显然，超大规模服务商对租赁大型集群更为审慎，并且在2026年底之前交付容量的预租赁窗口也在收紧。&lt;/p&gt;
+&lt;p&gt;当然对于美国大型科技公司而言，眼下除了产业投资的考量外，&lt;strong&gt;特朗普滥施的关税不仅可能造成进口设备的成本上升，还有将经济拖入衰退的危险&lt;/strong&gt;。从这个角度来看，相较于行业投资周期，难以预料的特朗普政策恐怕才是美股“AI叙事”的最大不利因素。&lt;/p&gt;
+&lt;p&gt;亚马逊尚未对这一消息予以回应。本月早些时候，亚马逊CEO安迪·贾西曾公开表示，他认为公司不会削减数据中心建设规模。&lt;/p&gt;
+&lt;p&gt;对于全球投资者而言，正在进行的财报季本身就将验证这一传言。本周四盘后，谷歌将发布财报，而亚马逊和微软也将在下周公布业绩。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 22 Apr 2025 01:58:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBNdGRNN0RGeFVJU0dTN19Kck9YU2lIaS1tWlFrSHNPR3ZlQzUwekl4ZVIyZWx2dDEtWXhXaS1UNmluWUZlMFdscA</guid></item><item><title>9天涨价500元，被关税推到风口浪尖的iPhone - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFBVU3dFbjZ0am1CcmVkM0xsbHYtalJMbHFER19kOWpiejBVeU5jaU9YODlJNHRUVWdXNTdmZTBOU3ZpNjNhcm1OdnVlMTF4Zw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
+
+
+&lt;/body&gt;
+</description><author>36Kr</author><pubDate>Tue, 22 Apr 2025 01:22:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBVU3dFbjZ0am1CcmVkM0xsbHYtalJMbHFER19kOWpiejBVeU5jaU9YODlJNHRUVWdXNTdmZTBOU3ZpNjNhcm1OdnVlMTF4Zw</guid></item><item><title>为避免被拆分，谷歌拿中国说事 - 凤凰网</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE12NndZLVNaUmNobnNxV3VFeVQ0MmFPS1ExZ0JBVGpQWVRsc2ZGZGxwSHRXSjlNbUx5TXdfeEV3Zkt2TXFoa2RKVXlUeW8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;【文/观察者网 刘程辉】当地时间4月21日，针对谷歌反垄断案的法院听证会在美国华盛顿特区举行。美国联邦法院将审议司法部提出的反垄断补救方案——拆分谷歌Chrome浏览器与安卓操作系统，而谷歌正以“维护美国技术创新领导力与国家安全”“保持对华竞争优势”为由进行抗辩。&lt;/p&gt;&lt;p&gt;据美国消费者新闻与商业频道（CNBC）21日报道，谷歌负责监管事务的副总裁李安妮·马尔霍兰（Lee-Anne Mulholland）当天在一篇博客文章中表示，随着全球人工智能领域的霸主之争迅速加剧，拆分措施不符合美国最大利益。&lt;/p&gt;&lt;p&gt;行文伊始，马尔霍兰便点名中国的深度求索（DeepSeek）为新兴人工智能竞争对手。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/BC3DE86A3A78F4680375371462EEEA617095D29D_size106_w556_h368.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="谷歌可能成为数十年来美国首家根据法院命令被拆分的公司。 《华尔街日报》"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;谷歌可能成为数十年来美国首家根据法院命令被拆分的公司。 《华尔街日报》&lt;/p&gt;&lt;p&gt;她在文中称，司法部的提议将“严重制约我们开发人工智能的方式，更允许一个由政府任命的委员会来监管我们产品的设计和开发。这将在一个关键时刻阻碍美国的创新”。&lt;/p&gt;&lt;p&gt;她称，“我们正处于与中国在下一代技术领导力方面的激烈全球竞争中，而谷歌处于美国公司取得科学技术突破的前沿”。&lt;/p&gt;&lt;p&gt;“在听证会中，我们将展示美国司法部前所未有的提议远远超出了法院的判决范围，并且会损害美国的消费者、经济以及技术领先地位。”马尔霍兰表示，司法部关于谷歌向其他公司开放数据的提议，不仅会带来网络安全甚至国家安全风险，还会增加设备的成本。&lt;/p&gt;&lt;p&gt;美国司法部则称，在搜索领域，“谷歌的协议继续使其垄断地位免受冲击”。司法部计划让ChatGPT的产品负责人尼克・特利（Nick Turley）以及人工智能公司Perplexity的首席商务官德米特里・舍韦连科（Dmitry Shevelenko）出席听证会。&lt;/p&gt;&lt;p&gt;舍韦连科21日在一篇博客文章中表示，“补救措施不应是拆分”，相反，消费者应该有更多的选择。&lt;/p&gt;&lt;p&gt;该公司表示，手机制造商应该能够为他们的客户提供各种搜索选项，“而无需担心受到经济处罚或访问限制”。&lt;/p&gt;&lt;p&gt;他补充道：“消费者应该得到最好的产品，而不仅仅是那些植入费用最多的产品。这是唯一能确保消费者选择权决定优胜者的解决方案。”&lt;/p&gt;&lt;p&gt;为期三周的听证会将于5月9日结束，预计地区法官阿米特・梅塔（Amit Mehta）将在8月作出裁决，届时谷歌可能提出上诉。&lt;/p&gt;&lt;p&gt;对于谷歌来说，此次拆分案的审判将左右整个反垄断案的结果。&lt;/p&gt;&lt;p&gt;去年8月，美国法院裁定谷歌非法垄断了在线搜索和搜索文字广告市场。这一裁定被视为美国当局在挑战大型科技公司市场主导地位方面的首个重大胜利。&lt;/p&gt;&lt;p&gt;梅塔在当时的裁定中指出，谷歌仅在2021年就支付了263亿美元，以确保其成为智能手机和浏览器的默认搜索引擎，并保持其市场主导地位。&lt;/p&gt;&lt;p&gt;彭博社早前援引消息人士的话称，在美国司法部看来，谷歌的垄断对搜索引擎市场格局产生了重大影响，特别是不公平地伤害了竞争对手。在谷歌确立垄断地位之前，有很多初创型企业都在尝试做出更好的搜索产品来挑战谷歌，但这些小企业根本不可能付得起高昂的市场营销费用去和谷歌争夺渠道。&lt;/p&gt;&lt;p&gt;去年10月8日，司法部在一份法庭文件中表示，正在考虑分拆谷歌作为反垄断案的补救措施，以减轻谷歌垄断在线搜索市场造成的伤害。根据司法部提交的32页的法庭文件，该机构正在“正在考虑采取行为和结构性补救措施”，以防止谷歌利用Chrome浏览器、Play应用商店和安卓操作系统等产品，在谷歌搜索及其相关产品和功能方面，对竞争对手或新进入者形成优势。&lt;/p&gt;&lt;p&gt;一旦该措施最终落地，这将是美国反垄断机构40年来执行的又一重大拆分案。&lt;/p&gt;&lt;p&gt;美国大多数著名的拆分案都发生在20世纪初的反垄断时代，当时标准石油、美国烟草公司和名为北方证券（Northern Securities）的铁路托拉斯被拆分。&lt;/p&gt;&lt;p&gt;最后一桩重大拆分案发生在1984年，当时控制着长途和本地电话服务、垄断电话设备市场的美国电话电报公司（ATamp;T）被拆分。这家电信公司当时并没有坐等法官作出裁决，而是与美国司法部谈判达成了拆分协议。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 22 Apr 2025 01:21:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE12NndZLVNaUmNobnNxV3VFeVQ0MmFPS1ExZ0JBVGpQWVRsc2ZGZGxwSHRXSjlNbUx5TXdfeEV3Zkt2TXFoa2RKVXlUeW8</guid></item><item><title>前十占九！“中国机构正在主导全球芯片研究” - 观察者</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTFBlQU14NXdXTnY0MVFYcEJvOF9aNHdKbnRuWUxGMWpvQTd6ZXVTTVdqQXpFRlFGU3VEb2k2X0p5UGZSN1JSaUNnek5ZY1B2T3dNRm1sa2hZMW9nR2J6TkRuN05EMS13dmdmeVE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	【文/观察者网 齐倩】美国不断加强对华芯片出口限制，试图遏制中国获取先进半导体。但美国最新研究显示，中国研究人员已加紧努力，进行大量的基础研究，目前在芯片设计和制造研究领域处于世界领先地位。
 &lt;/p&gt;
@@ -464,7 +512,30 @@
             
                     
                     
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Mon, 21 Apr 2025 21:30:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMitANBVV95cUxPVlA5SEFKWWJwNFFLNzNxYkdTMWg5eDlJdUs1clhtNW1hbmhJUnE1QkJoR0hram9penM0UjRJR21wUXk3RlJBcjdrMDZLMGFQMG9Kb1UyVFNyODVMblp1bDBzWjFhcmVSSWJCZDk0eG1OSE5mRmRiNFBHODRldGpWMG1QTWRGWVZNVWxwM3U0ME9kbGNBU2g5MW51bE9QVVNhVHdsUV90VzhKT2hBUXdfNnJqczNMMWpsUkNEbzBpZXcxbGdNdnBrN0tub2hWV0hSMUsxTG9ZTTQ2TlVZOGFFUF9Mdm1Zb0hmMlM3azg5blJhZUYxOXJtX3BHMVRLR1B1dHNtLVNCVXI3ZlM5cFJqcFgtOXNYcGg2cUhTRFhNcHd4b3N6Wl9DMF9qazBEWU1OeUhSUnM1SzRTYlRaZWMwZS1uaVNOZUZfMnNMNnluWkxiRU1UVHBpV3ZMb1dSRVZSN3JVMGpjb2tyWUZ0WU1lTzd3em56Ykl1QkZGVEVMNXpVejJ2V2hHMzM1ZDZUaWxCTUMxaFpfM2lma2RPNU1FbFV3bWlqLWMyOWhJWmthaldGelpo</guid></item><item><title>富国银行分析师：微软之后，亚马逊也已暂停部分数据中心的租赁承诺 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTFBJRWJvT3ZSRFJXNV9NNUR3ZjFHZi1JQktNYk1tZnZRS1g3d2wtdmNzeG1zYldqYjRkVXBYdWV0QW9HZ1dQY3JQRmppSllTcm5DVjZR?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 21 Apr 2025 19:16:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBJRWJvT3ZSRFJXNV9NNUR3ZjFHZi1JQktNYk1tZnZRS1g3d2wtdmNzeG1zYldqYjRkVXBYdWV0QW9HZ1dQY3JQRmppSllTcm5DVjZR</guid></item><item><title>苹果Vision Pro最强劲敌！vivo Vision头显下半年发布 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5qTTRZN3o1RkdtZTdZb3htRW9uYVlESkl0QVo4bHFDTmRmRjlfQnM0WWZCVUhQaHJ5S19OZWxnN04xcFNrRTUwUWhQQk4zb3NGZnY5TEx1Uy0?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Mon, 21 Apr 2025 21:30:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMitANBVV95cUxPVlA5SEFKWWJwNFFLNzNxYkdTMWg5eDlJdUs1clhtNW1hbmhJUnE1QkJoR0hram9penM0UjRJR21wUXk3RlJBcjdrMDZLMGFQMG9Kb1UyVFNyODVMblp1bDBzWjFhcmVSSWJCZDk0eG1OSE5mRmRiNFBHODRldGpWMG1QTWRGWVZNVWxwM3U0ME9kbGNBU2g5MW51bE9QVVNhVHdsUV90VzhKT2hBUXdfNnJqczNMMWpsUkNEbzBpZXcxbGdNdnBrN0tub2hWV0hSMUsxTG9ZTTQ2TlVZOGFFUF9Mdm1Zb0hmMlM3azg5blJhZUYxOXJtX3BHMVRLR1B1dHNtLVNCVXI3ZlM5cFJqcFgtOXNYcGg2cUhTRFhNcHd4b3N6Wl9DMF9qazBEWU1OeUhSUnM1SzRTYlRaZWMwZS1uaVNOZUZfMnNMNnluWkxiRU1UVHBpV3ZMb1dSRVZSN3JVMGpjb2tyWUZ0WU1lTzd3em56Ykl1QkZGVEVMNXpVejJ2V2hHMzM1ZDZUaWxCTUMxaFpfM2lma2RPNU1FbFV3bWlqLWMyOWhJWmthaldGelpo</guid></item><item><title>中国举办全球首次人形机器人半程马拉松 法媒指象征新技术雄心 - RFI</title><link>https://news.google.com/rss/articles/CBMisANBVV95cUxQM2c3b1AxZkNIZ2M5Wk55S19VWEZhYWJRVU5nRWpkb1NjY042amw1dThucVRHSXZOSHVxT1YyZ1RobzdyTUVVVkdxSV9qRDZlZnp5ZG01NGJTZU5pOFE3S1ZyV3A2ZnItdGlFWF9IaTBIeDRlOWRfbThOYnZxczhJSE5hMG4yeFhhZVI4bWdVSU5jb0IxeTg1WVVZcHZNdWxVLXBrWVpxUmdnSU9TQk5ZZmVIb2lQMVNmX1FTZlJMa0VpbXRkNTJVQ1ByMWlyeWFfdVp4RDBZb25PMFYyRHU5eVh3VXRGak5COG5rSFptQTVnUXVwOHMxazVnZFBQWFJhWU5keFY3QzJBZFZ3WDNFbV9oai1pdmYzVkZOMkdScE9aTWRXM2FnM0tUYzg0VFNISmNHZXNrNHpOX0h3emlPRWt3bkRlZTNHRWNKSXp6eWNVaXpsNDVheUpGdnJnWHZ4UEVlRkhLVmM5NEcxUFhkZHZpOTVvWjhwdm85Umc4aVVpcFVLcFdSYWFQQlBHa1lKZUJRc3F6akd6bW1adWI3UHZuUmtETGtjTzdjSUVVejI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
+                        中国举办全球首次人形机器人半程马拉松赛。2025 年 4 月 19 日星期六，数十个人形机器人在北京，跨着大步，一步接一步地跑完了世界上第一个以机器人为主题的半程马拉松比赛。法媒指出，这是中国在新技术方面的雄心壮志的象征。         &lt;/p&gt;
+    
+    
+                        &lt;div class="t-content__dates t-content__dates--reading-time"&gt;
+                &lt;p class="m-pub-dates"&gt;&lt;span class="m-pub-dates__date"&gt;发表时间： &lt;time datetime="2025-04-21T21:25:23+00:00" pubdate="pubdate"&gt;21/04/2025 - 23:25&lt;/time&gt;&lt;/span&gt;&lt;span class="m-pub-dates__date"&gt;更改时间： &lt;time datetime="2025-04-21T21:27:28+00:00"&gt;21/04/2025 - 23:27&lt;/time&gt;&lt;/span&gt;&lt;/p&gt;
+
+    &lt;p class="a-reading-time"&gt;
+        &lt;span class="a-svg a-svg--picto-clock" title="浏览时间"&gt;&lt;/span&gt; 9 分钟&lt;/p&gt;
+            &lt;/div&gt;
+            
+    
+                                                                            
+                    &lt;div class="t-content__body u-clearfix"&gt;
+                                            
+                                                                &lt;p&gt;本次半程马拉松活动在中国首都北京技术开发区亦庄镇举行，现场同时还开辟给那些有血、有骨、有肉的人类运动员同时进行比赛活动的跑道。本次半马拉松活动，旨在为这些双足机器提供一个突破极限的机会，期有朝一日“它们可以融入人类社会”，这是法国电视第五台报道指出的。 &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;北京人形机器人创新中心自研的全尺寸人形机器人“天工Ultra”参与此次比赛。 &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;另一个参赛者是看起来像变形金刚的机器人，它在赛跑时，偏离了航线并撞上了障碍物。 &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;在另一个轨道上，参赛的人类赛跑者也都热情地用他们的智能手机记录下了这些参赛机器人跑步的场景。 &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;第一个越过终点线的机器人就是这个被命名为“天工Ultra”的机器人，比赛成绩：2 小时 40 分 42 秒。这个超级天工机器人身高1.80米，体重52公斤；它最终成为比赛中最高大的机器人。 &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;相比之下，据官方媒体报道，参赛的人类组的冠军成绩为 1 小时 2 分 36 秒。 &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;负责设计 “天工Ultra”机器人的《北京人形机器人创新中心》首席技术官唐剑告诉记者，“他非常满意”。他强调说：“我们有三个目标：赢得第一名、用一个机器人完成整个半程马拉松（...），并且能在不到三个小时的时间内完成比赛。” &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;他还说，“我们收集了专业跑步者的数据，并训练机器人调整步幅、节奏、步长和姿势，使其尽可能接近人类运动员。” &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;&lt;strong class="BCX2 SCXW3592813 TextRun"&gt;令人惊叹&lt;/strong&gt; &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;《北京人形机器人创新中心》由中央政府和首都北京有关部门共同设立。根据中国企业信息数据库天眼查显示，两家民营科技公司（小米机器人和优必选机器人）和两家国有企业参与其中。 &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;周六，马拉松赛跑道的沿途聚集了许多观众。 一位38岁的母亲黄小玉向法新社记者解释道：“我女儿(...)特意早起来看比赛。”她还说：“真是太厉害了，我们见识了中国最优秀的机器人！” &lt;/p&gt;&lt;p class="Paragraph SCXW3592813 BCX2"&gt;来自中国各地的约有20支机器人队伍参加了本次比赛，一些机器人的重量甚至达88公斤。 &lt;/p&gt;&lt;p&gt;这场比赛中，某些机器人可以自主运行，而另一些则是利用远程操控。 &lt;/p&gt;&lt;p class="Paragraph SCXW73328869 BCX2"&gt;亦庄镇北京经开区管委会主任梁靓周四四告诉法新社：“在跑道上奔跑对于人类来说可能只是一小步。但对于人形机器人来说，这确实是一个巨大的飞跃。” 他说：“这次马拉松比赛是人形机器人向产业化迈出的又一步。” &lt;/p&gt;&lt;p&gt;&lt;strong class="BCX2 SCXW15765334 TextRun"&gt;与美国竞争&lt;/strong&gt; &lt;/p&gt;&lt;p class="Paragraph SCXW15765334 BCX2"&gt;一些工程师告诉法新社，此次比赛的目的是测试机器人的性能和可靠性。他们表示，抵达赛程终点站是当务之急。 &lt;/p&gt;&lt;p class="Paragraph SCXW15765334 BCX2"&gt;中国松延动力机器人公司Noetix Robotics. 28岁的工程师崔文浩(音译)说道：“机器人产业领域很少有机会能够在这么远的距离，持续这么长时间让他们这样满载负荷地操作机器人全速地运行。这对电池、电机、结构甚至算法都是一次严峻的考验。”他还强调说，这场半程马拉松“对整个机器人领域来说是一个非常棒的推动”。 &lt;/p&gt;&lt;p class="Paragraph SCXW15765334 BCX2"&gt;上海卓益得机器人（DroidUp）有限&lt;em class="BCX2 SCXW15765334 TextRun"&gt;公司&lt;/em&gt;的另一位工程师、25 岁的&lt;em class="BCX2 SCXW15765334 TextRun"&gt;孔逸昌(音译)&lt;/em&gt; 说“（这场比赛背后）的理念是，人形机器人可以真正融入人类社会，开始做人类能做的事情，”。 &lt;/p&gt;&lt;p class="Paragraph SCXW15765334 BCX2"&gt;报道并指出，中国是世界第二大经济体，正在寻求成为人工智能和机器人领域的全球领导者。因此，它将自己定位为美国的直接挑战者。如今中国企业越来越擅长这些新科技。 &lt;/p&gt;&lt;p class="Paragraph SCXW15765334 BCX2"&gt;今年 1 月，私营初创公司深度求索 (DeepSeek) 凭借一款由人工智能驱动的对话机器人登上全球新闻头条，该公司声称其开发成本仅为 &lt;em class="BCX2 SCXW15765334 TextRun"&gt;美国&lt;/em&gt;人工智能聊天机器人ChatGPT等美国竞争对手的一小部分。 &lt;/p&gt;&lt;p class="Paragraph SCXW15765334 BCX2"&gt; &lt;/p&gt;
+                                                                
+    
+                &lt;/div&gt;
+            
+            
+                    
+                    
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Mon, 21 Apr 2025 21:25:23 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMisANBVV95cUxQM2c3b1AxZkNIZ2M5Wk55S19VWEZhYWJRVU5nRWpkb1NjY042amw1dThucVRHSXZOSHVxT1YyZ1RobzdyTUVVVkdxSV9qRDZlZnp5ZG01NGJTZU5pOFE3S1ZyV3A2ZnItdGlFWF9IaTBIeDRlOWRfbThOYnZxczhJSE5hMG4yeFhhZVI4bWdVSU5jb0IxeTg1WVVZcHZNdWxVLXBrWVpxUmdnSU9TQk5ZZmVIb2lQMVNmX1FTZlJMa0VpbXRkNTJVQ1ByMWlyeWFfdVp4RDBZb25PMFYyRHU5eVh3VXRGak5COG5rSFptQTVnUXVwOHMxazVnZFBQWFJhWU5keFY3QzJBZFZ3WDNFbV9oai1pdmYzVkZOMkdScE9aTWRXM2FnM0tUYzg0VFNISmNHZXNrNHpOX0h3emlPRWt3bkRlZTNHRWNKSXp6eWNVaXpsNDVheUpGdnJnWHZ4UEVlRkhLVmM5NEcxUFhkZHZpOTVvWjhwdm85Umc4aVVpcFVLcFdSYWFQQlBHa1lKZUJRc3F6akd6bW1adWI3UHZuUmtETGtjTzdjSUVVejI</guid></item><item><title>富国银行分析师：微软之后，亚马逊也已暂停部分数据中心的租赁承诺 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTFBJRWJvT3ZSRFJXNV9NNUR3ZjFHZi1JQktNYk1tZnZRS1g3d2wtdmNzeG1zYldqYjRkVXBYdWV0QW9HZ1dQY3JQRmppSllTcm5DVjZR?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 21 Apr 2025 19:16:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBJRWJvT3ZSRFJXNV9NNUR3ZjFHZi1JQktNYk1tZnZRS1g3d2wtdmNzeG1zYldqYjRkVXBYdWV0QW9HZ1dQY3JQRmppSllTcm5DVjZR</guid></item><item><title>苹果Vision Pro最强劲敌！vivo Vision头显下半年发布 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5qTTRZN3o1RkdtZTdZb3htRW9uYVlESkl0QVo4bHFDTmRmRjlfQnM0WWZCVUhQaHJ5S19OZWxnN04xcFNrRTUwUWhQQk4zb3NGZnY5TEx1Uy0?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;苹果Vision Pro最强劲敌！vivo Vision头显下半年发布&lt;/p&gt;
           
@@ -526,7 +597,70 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 15:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5qTTRZN3o1RkdtZTdZb3htRW9uYVlESkl0QVo4bHFDTmRmRjlfQnM0WWZCVUhQaHJ5S19OZWxnN04xcFNrRTUwUWhQQk4zb3NGZnY5TEx1Uy0</guid></item><item><title>笔记本电脑的寿命究竟是多少年：看完恍然大悟 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9NOXVNVWl1X2xlRWp6RFZCY0k1YmU5V3FaNmtlVlg0bkZPa1RtZWZuOG8wQUpzZUp5c2Jtd0hVSE10Y1hRM1VYOTJyX3FuZjIxWDl0SGVfNkg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 15:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5qTTRZN3o1RkdtZTdZb3htRW9uYVlESkl0QVo4bHFDTmRmRjlfQnM0WWZCVUhQaHJ5S19OZWxnN04xcFNrRTUwUWhQQk4zb3NGZnY5TEx1Uy0</guid></item><item><title>X系列最后一次卖4199元！vivo X300系列要涨价 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SSUZJSml6WjczMHBFZ0lPUDdlVjA2c3ZxZkFXWEppRWZDaEowNUZxbmNCb0lzc0gyVnNqVWd1R3g5Z2lGbDhvaEZvRWZnNUhReEpad1BZRkk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;X系列最后一次卖4199元！vivo X300系列要涨价&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-04-21 23:32:38  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1043196-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月21日消息，vivo X200s正式发布，&lt;strong&gt;起售价4199元，国补后的价格是3699元起。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该机堪称是iPhone最强平替，这次vivo200s打破了安卓系统与iOS的生态之墙，为双持用户带来了“双机流转”功能，基于该功能，用户可以通过vivo互传实现两台手机之间的来电通知流转、短信流转、通知流转、设备双向查找，再也不用担心错过重要信息,让用户丢掉双持的“麻烦”，尽享愉悦。&lt;/p&gt;
+&lt;p&gt;同时，vivoX200s还支持与iPhone之间进行照片、视频、文件、日程等信息的隔空传和一碰传，帮助用户突破壁垒，分享愉悦生活。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250421/390ac19297744968828830201a1036d1.jpg" target="_blank"&gt;&lt;img alt="X系列最后一次卖4199元！vivo X300系列要涨价" h="400" src="//img1.mydrivers.com/img/20250421/s_390ac19297744968828830201a1036d1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;影像方面，vivo X200s带来更强的长焦望远能力，并支持高达20倍的长焦微距。其关键突破来源于蓝图影像算法矩阵赋能的大模型画质增强技术，通过十亿级参数视觉模型对高倍率变焦场景进行画质修复，解决伪影、模糊等问题,搭配全像素对焦系统与OIS防抖，实现演唱会特写、夜景人像等高难度场景稳定捕捉。&lt;/p&gt;
+&lt;p&gt;值得注意的是，vivo李翔在vivo X200s发布后强调，&lt;span&gt;&lt;strong&gt;vivo X系列4199元起一定是最后一次了，暗示X300系列将要涨价。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;按照vivo的产品节奏，X300系列会在今年10月份前后登场，搭载联发科天玑9500移动平台&lt;/strong&gt;，影像、性能和屏幕表现都值得期待。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/8a9887306ba640eea0a667dc1cc66a95.jpg" target="_blank"&gt;&lt;img alt="X系列最后一次卖4199元！vivo X300系列要涨价" h="336" src="//img1.mydrivers.com/img/20250421/s_8a9887306ba640eea0a667dc1cc66a95.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 15:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5SSUZJSml6WjczMHBFZ0lPUDdlVjA2c3ZxZkFXWEppRWZDaEowNUZxbmNCb0lzc0gyVnNqVWd1R3g5Z2lGbDhvaEZvRWZnNUhReEpad1BZRkk</guid></item><item><title>笔记本电脑的寿命究竟是多少年：看完恍然大悟 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9NOXVNVWl1X2xlRWp6RFZCY0k1YmU5V3FaNmtlVlg0bkZPa1RtZWZuOG8wQUpzZUp5c2Jtd0hVSE10Y1hRM1VYOTJyX3FuZjIxWDl0SGVfNkg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;从去年延续至今的国补，带来了真金白银的实惠，也让很多人产生了焕新的想法。一些朋友也会问笔者，到底需不需要趁机换台笔记本电脑？&lt;/p&gt;
 &lt;p&gt;其实，当你有这种想法的时候，那么答案就是否定的。如果你真的需要换，那么就不会问这个问题，而是让笔者推荐适合的产品了。&lt;/p&gt;
@@ -912,7 +1046,7 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 11:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0xQjJCQW44U3hsYjdHblVncmd5V3VpOE8tU2E5VFBwbm9xZW4tNmhmN1UweFVodXBUX1ROakJSczdmRXU0RC1fN3BnYU1nanV3b3ljWTBvRmk</guid></item><item><title>iPhone最强平替！vivo X200s发布：3699元起 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9tN2dMdTYwYlhKYVdPTDNpX2dXTGJTUW5NYTdkdFYtWlBVVldYdTdkUjVnbFFPdVBrRlBvUzZ1MEdvMTV6c2ZsUG03bkJ4dVNiNUhnUXFrLVM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 11:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0xQjJCQW44U3hsYjdHblVncmd5V3VpOE8tU2E5VFBwbm9xZW4tNmhmN1UweFVodXBUX1ROakJSczdmRXU0RC1fN3BnYU1nanV3b3ljWTBvRmk</guid></item><item><title>机器人领域，跑出个“华为系” - 虎嗅网</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zZTNhRTVzLUlwcENIV0ExVFQ1MzhpNW40SXB6SGJxYk1neWhLSVlVWmE1UkVNam52TUNyVkkwRVF0d2hHUWYzSFN1eTRZc1V1QlNmdQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="875368"&gt;“任正非的‘造反系’员工备忘录里，可能藏着一支机器人军团。”&lt;/p&gt;&lt;p data-check-id="503508"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="617065"&gt;某头部创投基金联创告诉直面AI，继稚晖君用智元给华为系在机器人领域开了个头，出走华为再进军机器人领域的后继者越来越多了。&lt;/p&gt;&lt;p data-check-id="541860"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="538511"&gt;如果说创办智元的稚晖君是把“华为式量产”带入机器人领域的第一人，那么陈亦伦和丁文超，这对华为车BU双子星则是最新的闯入者。从智驾到具身智能，两人参与创办的它石智航近期完成了天使轮1.2亿美元融资，创下了中国具身智能行业天使轮的最大融资额纪录。&lt;/p&gt;&lt;p data-check-id="657021"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="433837"&gt;有趣的是，它石智航的首席科学家丁文超，和稚晖君一样，都在2020年通过了华为“天才少年计划”的面试，被任正非以百万年薪招入华为。&lt;/p&gt;&lt;p data-check-id="403341"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="365879"&gt;对比稚晖君、丁文超、陈亦伦们的网红体质，胡鲁辉更像传统意义上的理工男。作为原华为美国研究院的高管，胡鲁辉早在2024年年初创建了智澄AI，坐标江浙沪产业带的他，希望首批研发的机器人能够应用在工厂流水线上。&lt;/p&gt;&lt;p data-check-id="241766"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="349897"&gt;如果再算上乐聚机器人，其与华为云合作开发了“盘古具身智能大模型+夸父人形机器人”，以及极目机器，作为华为的全资子公司，专注工业机器人研发，2025年近半，在火得发紫的具身智能赛道，华为系初具雏形。&lt;/p&gt;&lt;p data-check-id="695500"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="304859" label="大标题" class="text-big-title"&gt;一、华为系机器人，车BU开始入场了&lt;/p&gt;&lt;p data-check-id="957989"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="294313"&gt;半年前，面对“晚点LatePost”关于“竞争对手会是谁”的问题时，稚晖君曾表示，“有一些潜在的竞争对手还没下场。比如新能源车厂。”&lt;/p&gt;&lt;p data-check-id="913670"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="134458"&gt;在稚晖君看来，新能源车企有能力做这件事，机器人本体上用到的各种核心零部件，电机、电控、电池等技术，都是新能源汽车擅长的那一套。&lt;/p&gt;&lt;p data-check-id="297112"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="947342"&gt;而新能源车企进军机器人方兴未艾，前东家华为车BU的双子星就在今年闪亮登场了。&lt;/p&gt;&lt;p data-check-id="635218"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="313679"&gt;如果回顾稚晖君以野生钢铁侠身份加入华为的2020年，会发现丁文超和稚晖君同样在2020年加入了“华为天才少年计划”。只是，稚晖君从事的是昇腾芯片和AI算法的研究工作，丁文超则进入了华为车BU。&lt;/p&gt;&lt;p data-check-id="597688"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="207724"&gt;在华为工作期间，稚晖君还用一条名为《我把自行车做成了自动驾驶！！》的视频引发关注，用自制的机械臂给葡萄做手术，在工作之余沉浸在自己B站UP主的副业里。&lt;/p&gt;&lt;p data-check-id="857374"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="939315"&gt;同在华为工作，在华为智驾系统卷动新能源汽车的那3年，丁文超作为彼时陈亦伦的下属，从0到1主导了华为ADS智驾端到端决策网络。&lt;/p&gt;&lt;p data-check-id="738704"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="989787"&gt;彼时，胡鲁辉已经在美国亚马逊、微软总部工作十余年，长期从事云计算和大数据智能研发，后在美国华为研究院任高管，那时，ChatGPT还未引发AI狂潮，华为系创业者们都还在自己的舒适区内刷经验。&lt;/p&gt;&lt;p data-check-id="659768"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="484190"&gt;而2022年底ChatGPT的发布，让这些华为系创业者们有了离开华为的决心。&lt;/p&gt;&lt;p data-check-id="815936"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="802424"&gt;就在2022年12月27号，彭志辉在微博发文回应称已经离开华为，将开始创业。次年2023年2月，稚晖君联合创办的智元Agibot成立。&lt;/p&gt;&lt;p data-check-id="695512"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="251572"&gt;“这两年具身智能跟人形机器人这么火，并不是本体有了什么黑科技，最主要的还是 AI、大模型的出现让机器人可能在本体之外有更多应用价值。我在华为昇腾就做 AI 计算，这个趋势看得比较清楚。这是我出来创业的一个原因。”在“晚点LatePost”的采访中，稚晖君解释了自己的创业缘起。&lt;/p&gt;&lt;p data-check-id="460445"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="221780"&gt;在华为时，稚晖君主要负责昇腾芯片相关业务，而无法留在华为内部创业，则是因为“风格问题”。&lt;/p&gt;&lt;p data-check-id="754439"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="117031"&gt;在华为，稚晖君的技术探索需要按照公司的需求搞基建，比如操作系统、芯片、数据库等非常底层的技术。而AI机器人的新赛道，快速迭代成为基本要求，“创业不仅要有一个好点子或好技术，更重要的是在正确的时间点做正确的事。”&lt;/p&gt;&lt;p data-check-id="694250"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="385175"&gt;正如稚晖君所说，在正确的节点跳出，用小团队迅速迭代的方法才能在具身智能赛道站稳脚跟。&lt;/p&gt;&lt;p data-check-id="787496"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="580131"&gt;丁文超的表述也惊人的相似。&lt;/p&gt;&lt;p data-check-id="519837"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="647553"&gt;在稚晖君创办智元机器人的2023年，丁文超也离开了华为，回到复旦大学，搭建了复旦机器人系统实验室，打造了复旦首个人形机器人。随后，他在2025年2月加入它石智航担任首席科学家。&lt;/p&gt;&lt;p data-check-id="730202"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="258480"&gt;在“量子位”的专访里，提到决定入局具身智能的原因，丁文超的回答是“感知到了时代的召唤。时代在呼唤一支技术创新、工程化经验、软硬件一体具身团队。”&lt;/p&gt;&lt;p data-check-id="790608"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="780284"&gt;一个主攻算法，一个早早就埋头研究智能驾驶，丁文超和稚晖君最终相逢在了机器人赛道。&lt;/p&gt;&lt;p data-check-id="354937"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="582056"&gt;就在2022年底ChatGPT发布之时，胡鲁辉也写了一篇关于生成式人工智能的文章，那篇文章被广泛引用。自那时起，胡鲁辉便坚定了“下一个时代是机器人时代”，而想改变机器人现状，推动机器人时代的到来，核心技术正是人工智能。&lt;/p&gt;&lt;p data-check-id="311022"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="433417"&gt;无论是天才少年如丁文超、稚晖君，还是前高管如胡鲁辉、陈亦伦，都无疑感受到了时代的召唤。&lt;/p&gt;&lt;p data-check-id="262434"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="775146" label="大标题" class="text-big-title"&gt;二、顶着华为光环开道&lt;/p&gt;&lt;p data-check-id="924189"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="246835"&gt;事实上，华为系创业者们并不讳言华为对自己创业的影响。&lt;/p&gt;&lt;p data-check-id="265220"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="945158"&gt;稚晖君在“晚点LatePost”的专访里回答了投资人为什么会选智元的问题，在稚晖君看来，“硬核的创始团队背景”显然要划重点。&lt;/p&gt;&lt;p data-check-id="594332"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="879008"&gt;其实，智元成立半年就做出了第一代人形机器人，拼搏奋斗的文化也疑似带了华为基因。对此，稚晖君则表述“首先是靠人才，大家的战斗力都很强。”&lt;/p&gt;&lt;p data-check-id="973783"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="448333"&gt;无论是华为算法背景的稚晖君能够迅速搭起智元机器人的全栈技术布局，还是智元联合创始人邓泰华，能为智元引入腾讯、比亚迪等战略投资者，技术骨干+大厂高管的创业组合，让智元在融资阶段就格外吸引眼球。&lt;/p&gt;&lt;p data-check-id="432418"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="992645"&gt;甚至在谈到对团队成员的激励方式时，稚晖君表示“我们未来的目标是跟华为一样，优秀的同事都配股。”团队激励方式的看齐，这或许可以算是智元对老东家的另一种致敬。&lt;/p&gt;&lt;p data-check-id="429956"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="325195"&gt;而在对老东家华为的隔空示爱上，它石智航也不遑多让。&lt;/p&gt;&lt;p data-check-id="942959"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="160599"&gt;作为一家2025年2月才低调创建的公司，技术和产品都刚刚立项，它石智航就引来了投资机构的竞购，最后罕见在春节前后完成超募。&lt;/p&gt;&lt;p data-check-id="681804"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="964519"&gt;显然，对于投资人来说，从智能驾驶赛道转向具身智能可以复用以往的研发和落地经验，在智能驾驶领域已经拿出成绩的创业团队吸引力十足。&lt;/p&gt;&lt;p data-check-id="273384"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="640240"&gt;“我相信投我们不仅仅是因为一些名头光环，核心还是大家相信具身智能的工程化我们能搞定。我们这个团队的构成，之前交付了中国最好的Robotaxi产品。”&lt;/p&gt;&lt;p data-check-id="208301"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="597277"&gt;丁文超的自信不仅来自华为系的背景，更是在华为工作履历带来的经验迁移的自信，即“我们打造过，可以被相信。”&lt;/p&gt;&lt;p data-check-id="663956"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="844503"&gt;在采访中，丁文超不止一次提到了在华为做自动驾驶产品落地时候的场景，在谈到“团队核心技术能力之一”时，丁文超表示，由于之前在华为每天接触最多的就是数据闭环的问题，如何在数据雪球开始后，根据信号迭代模型和网络，再进一步迭代数据。因此它石智航的团队能够更好地完成具身智能的数据采集，也能让它石智航的具身模型具备更好的空间感知能力。&lt;/p&gt;&lt;p data-check-id="760669"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="866184"&gt;事实上，正如丁文超们所说，现在正是华为系创业者们出走创业的最佳时期之一，而过去经验的积累恰恰能够让他们获取更高的融资额，更多的技术背书。不过，上桌容易，上了桌还能够持续有牌出，才是真正的难题。&lt;/p&gt;&lt;p data-check-id="451471"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="687855" label="大标题" class="text-big-title"&gt;三、机器人创业下半程，人均六边形战士？&lt;/p&gt;&lt;p data-check-id="672528"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="220576"&gt;随着机器人创业潮起，机器人领域除了跑出一个华为系之外，别的派系也在成型中，包括字节、百度等前高管出身的大厂系，还有清华、浙大等高校系，都在争夺着投资人的注意力。&lt;/p&gt;&lt;p data-check-id="756589"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="199872"&gt;在具身智能赛道，今年上半年传来融资好消息的星海图，两位联创赵行和许华哲，以及边塞科技创始人吴翼，都曾是“清华叉院”的助理教授；而清华 AIR 副教授周谷越则创立了机器人公司求之科技。&lt;/p&gt;&lt;p data-check-id="814469"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="510908"&gt;如果说以清华、浙大等高校系代表的是前端技术上的探索和突破，稚晖君、丁文超，抑或者陈亦伦、胡鲁辉，都是将AI科研成果产业化的新尝试。&lt;/p&gt;&lt;p data-check-id="284140"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="494378"&gt;只是，正如蓝驰创投合伙人曹巍在采访中提到的，“未来三到五年，通用机器人、人形机器人市场的竞争，也就是六边形战士之间的竞争。”&lt;/p&gt;&lt;p data-check-id="679831"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="418725"&gt;无论是高校出身自带技术光环，还是大厂出走内置产业化基因，对于智元们来说，团队配置只是第一关，要想进入决赛圈，就要将团队规模和能力体系快速搭建起来，就像六边形战士一样，在各个维度都要敢于投入。&lt;/p&gt;&lt;p data-check-id="695795"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="803305"&gt;对华为系创业者们来说，他们还有不少的短板要补。&lt;/p&gt;&lt;p data-check-id="103114"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="413468"&gt;尽管华为系创业者已崭露头角，但机器人商业化仍面临现实拷问。智元要将成本压至20万元，需突破核心零部件国产化的难题。它石智航仍在招兵买马阶段，其具身大模型尚未经历真实场景的考验。&lt;/p&gt;&lt;p data-check-id="126527"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="840288"&gt;现在热衷于教会机器人跳女团舞、翻跟头、扭秧歌的创业者们需要意识到，教会机器人不洒咖啡比让它跳女团舞难得多。无论是华为系还是大厂系，正如中国的一句俗语，“是骡子是马拉出来溜溜”，他们都还需要经过市场的更多检验。&lt;/p&gt;&lt;p data-check-id="895036"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="650018"&gt;&lt;/p&gt;&lt;p data-check-id="229115"&gt;&lt;/p&gt;&lt;p data-check-id="671739"&gt;&lt;/p&gt;&lt;p data-check-id="191475"&gt;&lt;/p&gt;&lt;p data-check-id="484744"&gt;&lt;/p&gt;&lt;p data-check-id="563135"&gt;&lt;/p&gt;&lt;p data-check-id="966655"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="212779"&gt;&lt;a href="https://mp.weixin.qq.com/s/nKefY3zHqQtYfOKEdvLGmA" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅网</author><pubDate>Mon, 21 Apr 2025 11:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE8zZTNhRTVzLUlwcENIV0ExVFQ1MzhpNW40SXB6SGJxYk1neWhLSVlVWmE1UkVNam52TUNyVkkwRVF0d2hHUWYzSFN1eTRZc1V1QlNmdQ</guid></item><item><title>iPhone最强平替！vivo X200s发布：3699元起 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9tN2dMdTYwYlhKYVdPTDNpX2dXTGJTUW5NYTdkdFYtWlBVVldYdTdkUjVnbFFPdVBrRlBvUzZ1MEdvMTV6c2ZsUG03bkJ4dVNiNUhnUXFrLVM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月21日消息，今日晚间，vivo X200s正式发布。&lt;/p&gt;
 &lt;p&gt;售价方面，&lt;strong&gt;12GB+256GB售价3699元，16GB+256GB售价3899元，12GB+512GB售价4199元，16GB+512GB售价4499元，16GB+1TB售价4999元，以上都是国补后的定价。&lt;/strong&gt;&lt;/p&gt;
@@ -1811,7 +1945,9 @@
          
     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 06:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBLeFZOZ1o3UmpKUlF1WTEyY21LeHRka0xHSUg5TloxNnNzc2kxV3VKb0pWemctam40eGlKNHJXaDVybk5CT2F2a01fRV91eGVIUkFSX245TnA</guid></item><item><title>最新：中共公布何卫东因病去世，美国发行美元稳定币重创比特币，男研究生举报男导师强暴。《老灯开讲第875期》 - 禁闻网</title><link>https://news.google.com/rss/articles/CBMib0FVX3lxTE92WTB4WGJWNFNvbi1fNTNzNFc4bWdOUjE2SVBBRnRfWEw1TnJGemZLalpvTXd1VHV3UzVmQ0JIY3Z2QXk4RS15anhIeWpLdVlobkJEeTlJVTBEdnhHWXVELXdmNkU1anNQTV96YWFHNNIBdEFVX3lxTFBoLV9tVnFBRGVHWmw3UC15VlQzTzg0X1lDaXZIYTBfZGhnMC14UXBjWEc2NXk0RUNBNklWeHdYSGwydm9nSGVLX3BDUlZoSlZIWEJQOEdtLTR0Wk5VX2YyWDdOUElyaGZjczZSVmVTUHZOOVFn?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>禁闻网</author><pubDate>Mon, 21 Apr 2025 06:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTE92WTB4WGJWNFNvbi1fNTNzNFc4bWdOUjE2SVBBRnRfWEw1TnJGemZLalpvTXd1VHV3UzVmQ0JIY3Z2QXk4RS15anhIeWpLdVlobkJEeTlJVTBEdnhHWXVELXdmNkU1anNQTV96YWFHNNIBdEFVX3lxTFBoLV9tVnFBRGVHWmw3UC15VlQzTzg0X1lDaXZIYTBfZGhnMC14UXBjWEc2NXk0RUNBNklWeHdYSGwydm9nSGVLX3BDUlZoSlZIWEJQOEdtLTR0Wk5VX2YyWDdOUElyaGZjczZSVmVTUHZOOVFn</guid></item><item><title>NASA警告：国际空间站已经进入了最危险时期- 科学探索 - cnBeta.COM</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE1sclNjVjJQNS10UUNUR2ExWS1jOWdOQUVMYkdnWDFiLXZ1R0V3T3ZERkh3ZUNhVGdPZGJUOHdOOEhnbE4tWEdIYUJTSkdQb0RRaW1iTXVqZ1dtNU5HQWdKUURScEQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="artibody"&gt;
                         &lt;p class="article-global"&gt;&lt;/p&gt;                            &lt;p&gt;&lt;strong&gt;据悉，国际空间站长期存在的裂缝、空气泄漏问题，其中一次空气泄漏的源头是通过漂浮的茶叶才被发现的。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;去年11月NASA报告称，国际空间站目前存在4处裂缝，以及多达50处令人担忧的隐患，每天泄露的空气超过正常标准大约0.9-1.1千克，一度多达每天约1.7千克。&lt;/p&gt;&lt;p&gt;俄罗斯宇航员使用密封剂和打补丁，盖住了所有已知裂缝，每天泄露的空气减少了约三分之一，但仍然没有完全停止。&lt;/p&gt;&lt;p&gt;多年来，美国和俄罗斯的专家一直在调查这些泄漏原因，但仍未找到源头。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;而随着特朗普政府计划削减美国国家航空航天局（NASA）20% 的预算，进一步加剧了人们对国际空间站未来的担忧。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;据悉，NASA计划在2030年前让国际空间站脱离轨道，为此，NASA与SpaceX签订合同，开发美国脱轨飞行器（US Deorbit Vehicle，USDV），以确保在该时间框架内安全地将空间站移出轨道。&lt;/p&gt;&lt;p&gt;然而，SpaceX首席执行官埃隆·马斯克最近建议NASA提前让空间站脱离轨道，他声称该空间站“已经完成了它的使命”。&lt;/p&gt;&lt;p&gt;而对于特朗普政府计划削减NASA预算一事，马斯克表示，由于利益冲突，他无法参与相关讨论。&lt;/p&gt;&lt;p&gt;有报道称，&lt;strong&gt;NASA去年在国际空间站的运营和维护上花费了9.93亿美元（约合72.46亿元人民币），在机组人员和货物运输上花费了16.3亿美元（约合118.94亿元人民币）&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0421/1891651b7bcdc35.png"&gt;&lt;/p&gt;                        &lt;/div&gt;
-                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta.COM</author><pubDate>Mon, 21 Apr 2025 06:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1sclNjVjJQNS10UUNUR2ExWS1jOWdOQUVMYkdnWDFiLXZ1R0V3T3ZERkh3ZUNhVGdPZGJUOHdOOEhnbE4tWEdIYUJTSkdQb0RRaW1iTXVqZ1dtNU5HQWdKUURScEQ</guid></item><item><title>iPhone用户定好闹钟！这周要上六天班 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE8tdkZySERBNEowSWNXQlZKNGc5dmhKY0piaVRwbjgyV1B1SG1VaF9lVzVHZkQyWlhEUGhsSDM0TldPQ2lqQkotZDRLbERZTXVhOG9MX2QzQmM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta.COM</author><pubDate>Mon, 21 Apr 2025 06:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1sclNjVjJQNS10UUNUR2ExWS1jOWdOQUVMYkdnWDFiLXZ1R0V3T3ZERkh3ZUNhVGdPZGJUOHdOOEhnbE4tWEdIYUJTSkdQb0RRaW1iTXVqZ1dtNU5HQWdKUURScEQ</guid></item><item><title>国网武汉供电公司启用新型“猫头鹰”警长守护电网- 硬件 - cnBeta.COM</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6UFJsY2Y4RTlYTUtndHllT05QZ2VoajhZR2JGRWdHQUx6SHB3UTltMzRGcVFrUnhvR1NjeWFER0N3R1dNdUQ0bFhSaTVnS2FhWUotXzMzdHNCT0JmVEZJeQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="artibody"&gt;
+                        &lt;p class="article-global"&gt;&lt;/p&gt;                            &lt;p&gt;据了解，武汉经开区随处可见水塘，农渔业发达，是鸟类繁衍理想家园，鸟巢成为影响供电安全的最大隐患之一。&lt;/p&gt;&lt;p&gt;国网武汉供电公司经开供电公司负责人介绍，鸟儿的粪便坠落在绝缘子和导线上，鸟儿筑巢时也会叼来铁栅栏，这会让线路形成导电回路，既威胁供电安全，也让鸟类容易触电致死。&lt;/p&gt;&lt;p&gt;近几年公司将鸟害工作转化为“驱鸟+护鸟”综合治理模式，摈弃以往常用的防鸟刺、防鸟网避免直接伤害鸟。&lt;/p&gt;&lt;p&gt;新型驱鸟器使用强磁可以牢牢吸附在电塔上，利用猫头鹰的外观，对鸟类起到驱逐作用。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;其内置距离传感器，在鸟类靠近筑巢时，会发出红外线和模拟猛兽的声波。同时后台可以记录驱逐频次，记录效果不断优化设备位置。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;使用该新型驱鸟器后，班组针对鸟巢的巡视周期，延长了一倍，&lt;strong&gt;节省了50%的人力物力&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;目前，国网武汉供电公司经开供电公司已根据鸟类分布情况，&lt;strong&gt;在重点区域装设了50余个新型驱鸟器，&lt;/strong&gt;下一步将根据鸟巢隐患情况加强覆盖。&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250421/00bdb1305a2e4610a53039f74219ccb5.png" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0421/66caf545f8e5ec4.png"&gt;&lt;/a&gt;&lt;/p&gt;                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta.COM</author><pubDate>Mon, 21 Apr 2025 06:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFB6UFJsY2Y4RTlYTUtndHllT05QZ2VoajhZR2JGRWdHQUx6SHB3UTltMzRGcVFrUnhvR1NjeWFER0N3R1dNdUQ0bFhSaTVnS2FhWUotXzMzdHNCT0JmVEZJeQ</guid></item><item><title>iPhone用户定好闹钟！这周要上六天班 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE8tdkZySERBNEowSWNXQlZKNGc5dmhKY0piaVRwbjgyV1B1SG1VaF9lVzVHZkQyWlhEUGhsSDM0TldPQ2lqQkotZDRLbERZTXVhOG9MX2QzQmM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月21日消息，据媒体报道，根据放假安排，2025年劳动节将放假调休共5天，&lt;strong&gt;从5月1日(周四)持续到5日(周一)，4月27日(周日)则调整为工作日，在此提醒，&lt;span&gt;本周日需要正常上班，iPhone用户需要单独设定好闹钟。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;据了解，由于苹果手机系统缺乏节假日设置功能，只能单独设置每周的周一至周日闹钟，对于固定的周一至周五上班时间，设置起来相对简单，只需固定设定闹钟响铃时间即可。&lt;/p&gt;
@@ -2445,258 +2581,4 @@ https://cdn.openai.com/pdf/2221c875-02dc-4789-&lt;/p&gt;
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 03:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5hRWotY3VpX1l3UzVtX19STjVfcWg0S0I3SEFXWUV0WmhKR0dGQnB1LXRLcVdXLXhITVNRaU9YRzF1OWpJNG1RcFdEQkNkRC1IaW52VkRCaHg</guid></item><item><title>首个支持NVIDIA DLSS的Switch 2游戏确认：《赛博朋克2077》 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5uTzg1elpTZjBmUzU5ZnBJM3diNXdVRG1jWkZjX3dUTDV0QWhDLURnMC1XdXRhZkREXzNHU253Zm9ZTUR4a2x5bUU3ejRXWDluR2h4WDB6VGc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;首个支持NVIDIA DLSS的Switch 2游戏确认：《赛博朋克2077》&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-04-21 11:10:43  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1043012-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月21日消息，根据Digital Foundry的最新播客，《赛博朋克2077》是首款确认在Nintendo Switch上使用NVIDIA DLSS的游戏。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;其表示从CD Projekt RED那里获得了官方确认，Switch 2上的《赛博朋克2077》使用的是为搭载Tensor Core硬件提供的 NVIDIA DLSS版本。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;目前发布的《赛博朋克2077》Switch 2版演示视频中并未明显显示出DLSS的使用迹象，但DLSS在所有四种显示模式中都被使用，包括底座模式下的质量模式和性能模式，以及便携模式下的质量模式和性能模式。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;CD Projekt Red还确认在底座模式下，玩家可以选择30fps的质量模式或40fps的性能模式（可能为120Hz），输出分辨率为1080p。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;作为便携设备时，玩家在质量模式下仍可期待30fps的1080p体验，而性能模式则将分辨率降低至720p以实现40fps。&lt;/p&gt;
-&lt;p&gt;此外，VGC近日在任天堂举办的上手试玩活动中体验到了Switch 2版的《赛博朋克2077》，VGC表示，《赛博朋克2077》在Switch 2上以30FPS运行，运行没有太大问题，而且图像表现也很不错。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250421/f9d18b1e-d9a4-4aaf-bc7b-65e99991026a.jpg" target="_blank"&gt;&lt;img alt="首个支持NVIDIA DLSS的Switch 2游戏确认：《赛博朋克2077》" h="337" src="//img1.mydrivers.com/img/20250421/Sf9d18b1e-d9a4-4aaf-bc7b-65e99991026a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 03:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5uTzg1elpTZjBmUzU5ZnBJM3diNXdVRG1jWkZjX3dUTDV0QWhDLURnMC1XdXRhZkREXzNHU253Zm9ZTUR4a2x5bUU3ejRXWDluR2h4WDB6VGc</guid></item><item><title>LeCun被痛批：你把Meta搞砸了，烧掉千亿算力，自曝折腾20年彻底失败 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFBsazRZa2xDVy1sWHVmTkhSaVBzQy1WMU1FNjdBc21scHJGTk9JY2NPTjR6a3dyd0FSQ1pYalREbmY3Q1BHRkJzVlRaQWJyQQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36Kr</author><pubDate>Mon, 21 Apr 2025 02:55:13 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBsazRZa2xDVy1sWHVmTkhSaVBzQy1WMU1FNjdBc21scHJGTk9JY2NPTjR6a3dyd0FSQ1pYalREbmY3Q1BHRkJzVlRaQWJyQQ</guid></item><item><title>AI版本宝可梦冲榜上全球前10%，一次性「吃掉」10年47.5万场人类对战数据 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE5vUG1TaEh4bUp2dV9SeklBeUZ4ZGlTRmxobU9aZks4aGpYaDZGeWxqYXZmSmNRWUVoQkhhTnBaQ1FXYUJoZjVYWWpRN21ZZw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36Kr</author><pubDate>Mon, 21 Apr 2025 02:55:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5vUG1TaEh4bUp2dV9SeklBeUZ4ZGlTRmxobU9aZks4aGpYaDZGeWxqYXZmSmNRWUVoQkhhTnBaQ1FXYUJoZjVYWWpRN21ZZw</guid></item><item><title>要做最强国产拍照机！消息称华为推迟发布Pura、Mate 80系列 都有直屏版 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LcDVLbGVQXzhiR2s2RTBuUFlJNG5SZWozdTd3Ql9tYTZiZV9veFFPcTlWdlBRY3lDMm9RcTBlb094U0VjQ09qRUFaQWZQc1cxdk40ZjZpSzk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;要做最强国产拍照机！消息称华为推迟发布Pura、Mate 80系列 都有直屏版&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-04-21 10:51:03  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1043006-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月21日消息，据国内媒体报道称，华为可能要推迟Pura、Mate 80系列，这或许跟新技术有关。&lt;/p&gt;
-&lt;p&gt;此前有消息称，华为Pura 80系列可能会在5月22日发布，不过最新消息显示，新机的发布时间可能会有所推迟（可能要推迟到6-8月发布了）。&lt;/p&gt;
-&lt;p&gt;消息人士提到，nova 14系列依旧定档下个月，但下半年的Mate 80系列发布时间可能也会推迟。&lt;/p&gt;
-&lt;p&gt;按照之前的说法，这次Pura 80系列也将搭载升级版麒麟9020芯片，同时影像会有大幅升级，该系列的Ultra版将首发国产1英寸超大底主摄，长焦采用5000万像素1/1.3英寸超大底方案，还有全新的RYYB阵列加持，进光量会有大幅升级。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;除了Ultra，Pura 80 Pro+也升级到了1英寸大底主摄，采用索尼5000万像素IMX989，同样是定制的RYYB阵列，这是今年Pro系列机型少有的1英寸影像旗舰。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;至于Mate 80系列，为了将其打造成最强国产拍照手机，华为会采用多种全新技术，但到底是什么目前还不得而知。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此外，两个系列也都有可能会加入直屏版本。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/e4e2a71a80494aae8671ee1718f07fd4.jpg" target="_blank"&gt;&lt;img alt="要做最强国产拍照机！消息称华为推迟发布Pura、Mate 80系列 都有直屏版" h="400" src="//img1.mydrivers.com/img/20250421/s_e4e2a71a80494aae8671ee1718f07fd4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 02:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1LcDVLbGVQXzhiR2s2RTBuUFlJNG5SZWozdTd3Ql9tYTZiZV9veFFPcTlWdlBRY3lDMm9RcTBlb094U0VjQ09qRUFaQWZQc1cxdk40ZjZpSzk</guid></item><item><title>全球首款3A原画显示器海信大圣G9上市：4K 160Hz双模 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE45TjYxUDU4SWJENG9CcU56YmN5bjJvYU4ySGJSSWx6S0lTQkFSbUZNSFpMemJOUzVHNzlmT1c2NDJJVE94Rmt3bU1iR2tLWHFvNG8zWEZreVQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;全球首款3A原画显示器海信大圣G9上市：4K 160Hz双模&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-04-21 10:47:55  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1043004-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月21日消息，&lt;strong&gt;海信新款27英寸的IPS显示器——大圣G9已经上市，采用万元电视同款黑曜屏，号称全球首款3A原画显示器，售价3999元，叠加国补后3199元。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/8e8cd78bf7b4421e8b89fcdc5b7af6df.png" target="_blank"&gt;&lt;img alt="全球首款3A原画显示器海信大圣G9上市：4K 160Hz双模" h="431" src="//img1.mydrivers.com/img/20250421/s_8e8cd78bf7b4421e8b89fcdc5b7af6df.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该显示器全球首发电竞专用黑曜屏，&lt;strong&gt;2304分区U+Mini LED，具备XDR 2000nits峰值亮度，通过HDR1400认证，支持FHD 320Hz或UHD 160Hz双模切换。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/b20f5fda7efe48d3af9745c7f9e15ee4.png" target="_blank"&gt;&lt;img alt="全球首款3A原画显示器海信大圣G9上市：4K 160Hz双模" h="496" src="//img1.mydrivers.com/img/20250421/s_b20f5fda7efe48d3af9745c7f9e15ee4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这款显示器具备1ms GTG响应时间，Delta E小于1，支持VRR OD\VRR Gamma，还支持FreeSync Premum认证低帧率补偿，通过莱茵护眼认证。&lt;/p&gt;
-&lt;p&gt;接口包括2个HDMI 2.1，2个USB-A，USB-B，USB-C，DP 1.4以及耳机接口。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="3999元" goods_title="海信大圣G9 27英寸3A原画 黑曜屏 2304分区 U+MiniLED 4K160Hz双模 冰川白色 电竞显示器 国家补贴" href="https://dt.mydrivers.com/mv.ashx?txt=oOGJP" img="https://img14.360buyimg.com/pop/jfs/t1/270737/13/23854/170107/68020320F41897757/77f583b1535f21f6.jpg" target="_blank"&gt;京东(3999元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/4566e860af5a4b62a2283034bd3b1fee.png" target="_blank"&gt;&lt;img alt="全球首款3A原画显示器海信大圣G9上市：4K 160Hz双模" h="391" src="//img1.mydrivers.com/img/20250421/s_4566e860af5a4b62a2283034bd3b1fee.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 02:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE45TjYxUDU4SWJENG9CcU56YmN5bjJvYU4ySGJSSWx6S0lTQkFSbUZNSFpMemJOUzVHNzlmT1c2NDJJVE94Rmt3bU1iR2tLWHFvNG8zWEZreVQ</guid></item><item><title>您的幸运已被撤回 《丝之歌》Steam页面删除预告片 - 3DM</title><link>https://news.google.com/rss/articles/CBMiXEFVX3lxTE8xYmpsek5WT2RjSGRXbzdvaVhQM3h4MkRoVmdXNVl1QUVXMTczdEt2NzVRdXYxV3o2d05CNzFmeV84Rm9RT0xLZVJRNkhxMXJzLWo4bGtHbGdPdGo1?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
-        &lt;div class=" news_warp_top"&gt;
-            &lt;h1 class="bt"&gt;您的幸运已被撤回 《丝之歌》Steam页面删除预告片&lt;/h1&gt;
-            &lt;p class="time"&gt;时间：&lt;span&gt;2025-04-21 10:34:48&lt;/span&gt;&lt;/p&gt;
-            &lt;ul class="intem"&gt;
-                                &lt;li&gt;来源：&lt;span class="weibo"&gt;thegamer&lt;/span&gt;&lt;/li&gt;
-                                                &lt;li&gt;作者：&lt;span class="name"&gt;thegamer&lt;/span&gt;&lt;/li&gt;
-                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;文木川&lt;/span&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-                        &lt;p class="clear"&gt;&lt;/p&gt;
-        &lt;/div&gt;
-                    
-&lt;p class="Tonglan_785"&gt;
-    
-    &lt;i&gt;&lt;/i&gt;
-&lt;/p&gt;
-                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/0421/1745202865989.jpg" id="coverUrl"&gt;
-                &lt;div class="news_warp_center"&gt;
-            &lt;p&gt;
-	《空洞骑士：丝之歌》又有新消息了，但这次依然不是“游戏已开发完成，五分钟前突然发售”这类好消息。相反，这次Steam页面更新...是为了删除预告片。现在Steam页面上的信息比之前更少了，这操作着实让人摸不着头脑。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;&lt;span&gt;Steam商店页面：&lt;/span&gt;&lt;a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/" target="_blank"&gt;《空洞骑士：丝之歌》&lt;/a&gt;&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250421/1745202820_901403_jpg_r.jpg" alt="您的幸运已被撤回 《丝之歌》Steam页面删除预告片"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	这一变动最早由Dexerto发现，目前Steam页面上的预告片确实仍未恢复。Team Cherry既没有替换新内容，也没有必须删除旧预告片才能添加新片的理由，整件事显得格外蹊跷。
-&lt;/p&gt;
-&lt;p&gt;
-	这已是今年《丝之歌》第二次出现诡异状况。早前游戏的任天堂eShop页面曾突然消失数小时，虽然玩家猜测可能是发售日公布的先兆，但最终期待落空。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250421/1745202828_266911_jpg_r.jpg" alt="您的幸运已被撤回 《丝之歌》Steam页面删除预告片"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	好消息是仍有迹象表明游戏将在今年发售。在任天堂Switch2直面会上，本作明确标注为2025年发售。尽管经历过延期，但内部人士透露《丝之歌》将于今年6月登陆Xbox Game Pass，我们很可能很快就能玩到这款游戏。
-&lt;/p&gt;        &lt;/div&gt;
-                                                &lt;a class="zan_box"&gt;
-                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
-                &lt;span class="znums"&gt;0&lt;/span&gt;
-            &lt;/a&gt;
-                &lt;a href="https://h5.3dmgame.com/activities/signinPc" target="_blank"&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20241126/1732585083_533486.png" alt=""&gt;&lt;/a&gt;
-
-                                        
-                        
-                                
-
-
-        
-                
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Mon, 21 Apr 2025 02:34:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE8xYmpsek5WT2RjSGRXbzdvaVhQM3h4MkRoVmdXNVl1QUVXMTczdEt2NzVRdXYxV3o2d05CNzFmeV84Rm9RT0xLZVJRNkhxMXJzLWo4bGtHbGdPdGo1</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 03:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5hRWotY3VpX1l3UzVtX19STjVfcWg0S0I3SEFXWUV0WmhKR0dGQnB1LXRLcVdXLXhITVNRaU9YRzF1OWpJNG1RcFdEQkNkRC1IaW52VkRCaHg</guid></item></channel></rss>
