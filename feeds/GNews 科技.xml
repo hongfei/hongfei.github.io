@@ -1,10 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>130亿，孙正义独角兽破产 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ORVlGeTJYRF9tWTNER2sxTENReGFDSFZGN0tYUnhZbzlJcWIzaVFrQklFbHY1TzdlY3BWN09lRTVfQ254N1I4bWdQX1ZOZw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>聚焦具身智能商业化进程 业内称：量产部署加快，但“今年出货量不会很大”|行业观察 - 财联社</title><link>https://news.google.com/rss/articles/CBMiSEFVX3lxTFBVcXRKZS03aWtPVExzLW45dzVpUHJXeE9sUENVWmx1akFTUUREQ055TmgyY1NmZ01FNGZpZjdMcllwT3JWZklwUw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社4月22日讯（记者 付静）&lt;/strong&gt;“具身智能、空间智能以及人形机器人都处于起步阶段，相当于从原来的实验室研究进入了产业阶段，但距离落地应用还需要经历技术快速发展的高峰期，因为产业的力量远大于高校的研究力量。落地涉及诸多因素，无论是人形机器人还是具身智能，都需要打造一个生态系统，也需要资本的耐心投入。”近日，浙江人形机器人创新中心首席科学家兼浙江大学求是特聘教授熊蓉在接受财联社等媒体采访时表示。&lt;/p&gt;
+&lt;p&gt;全球首个人形机器人半程马拉松赛使得今年以来话题度颇高的具身智能机器人再次成市场关注的焦点。财联社记者从业内获悉，全球45%的人形机器人来自中国，目前国内多家人形机器人本体厂商均已开启量产计划，产业发展前景广阔。但系统架构的非一致性、解决方案的泛化能力不足、场景适配的复杂性等挑战，正在制约以人形机器人为代表的具身智能行业大规模商业化的进程，为此，产业链多个环节纷纷“出招”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;产业链瞄准商业化加速&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据财联社记者观察，包括上游核心零部件（芯片、传感器、灵巧手、关节模块等）、机器人本体、终端（汽车、3C电子等）在内的产业链各环节已聚集了众多企业。&lt;/p&gt;
+&lt;p&gt;芯片环节，财联社记者最新从英特尔方面获悉，以人形机器人为代表的具身智能，当下普遍采取大小脑双系统的主流算力方案，即负责AI计算的“大脑”和控制运动的“小脑”（注：以X86为主，包括英特尔12、13代酷睿及凌动N97、N305）分属不同主板，但长远来看大小脑融合将是趋势。&lt;/p&gt;
+&lt;p&gt;据了解，英特尔的具身智能大小脑融合方案，涵盖了异构计算平台（包括酷睿Ultra处理器、锐炫显卡等）、英特尔具身智能软件开发套件以及与工控主板供应商信步科技打造的具身智能硬件开发平台。信步具身智能开发平台HB03将CPU（运动控制）与GPU/NPU（感知计算）集成于一块主板，搭载英特尔酷睿Ultra 200系列处理器和英特尔锐炫B570显卡，峰值算力达96TOPS。&lt;/p&gt;
+&lt;p&gt;财联社记者注意到，CPU适合运行复杂的运动控制、运动规划、传感器数据处理、SLAM导航避障运算等，GPU、NPU则分别适合运行大型和小型AI模型的推理。“我们发现，在训练阶段，系统对GPU的性能有一定要求；但在实际的探索和推理过程中，对CPU的性能要求更为关键。因此，目前我们采用的是CPU+GPU的方案。”熊蓉表示。&lt;/p&gt;
+&lt;p&gt;不过，双系统方案存在硬件成本较高、功耗与尺寸优化空间有限、网络通信不可控延迟等挑战，机器人的算力提升因此受限。&lt;/p&gt;
+&lt;p&gt;谈及成本，英特尔技术专家告诉财联社记者，“单系统会使软件研发、测试、优化与部署的整个开发成本显著降低。如果是双系统，要为两个不同CPU架构去维护两套不同的代码，控制代码有可能是跑在ARM的CPU上面，也有可能跑在X86的CPU上面，AI算法又是跑在GPU或其他模块上，整个软件的架构和代码的维护是不一样的。”&lt;/p&gt;
+&lt;p&gt;此外，谈及上述方案能否满足算力需求，信步科技副总经理叶志辉称，“算力需求取决于具体的应用场景。如果仅用于行走，目前的算力可能够了，但如果应用于工业场景或复杂的开放环境，那可能远远不够，（针对算力）我们还在研发，关键是匹配的问题。”&lt;/p&gt;
+&lt;p&gt;而在更受大众关注的本体环节，目前多家人形机器人本体厂商均已开启量产计划。财联社记者近日从智平方获悉，该公司发布了新一代通用智能机器人AlphaBot 2，并正式启动自有产线建设，同时宣布阶段性商业化目标：2028年实现万台场景应用，2033年拓展至百万台规模，覆盖工业、物流、家庭服务等场景。&lt;/p&gt;
+&lt;p&gt;早在今年1月，马斯克扬言特斯拉年内将生产数千台Optimus人形机器人。另据集邦咨询数据，中国市场已有11家主流本体厂商在去年开启量产计划，其中宇树科技、优必选、智元机器人、银河通用、众擎机器人、乐聚机器人等6家厂商对今年量产规划超过千台。&lt;/p&gt;
+&lt;p&gt;针对与本体厂商合作，英特尔中国客户端事业部技术支持总监王景佳在接受财联社记者采访时表示，“整个行业量产部署的节奏在明显加快，所以我们资源的投入也在加强。无论是传统工业机器人向智能化转型，还是与新兴机器人企业合作，我们都在共同探讨大小脑融合方案。我们正在与头部机器人公司进行合作开发，预计最早在下半年会有更多成果展示。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;大规模落地仍存诸多挑战&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;财联社记者获悉，受益于政策推动、供应链完善、市场需求蓬勃，全球45%的人形机器人产品来自中国。集邦咨询预计，今年中国市场人形机器人本体产值将超过45亿元，头部本体厂商的量产计划将拉动中国市场人形机器人零部件供应链生态布局与完整性。&lt;/p&gt;
+&lt;p&gt;从当前A股产业链布局看，据财联社记者近期获得的数据，截至目前沪市科创板在新一代信息技术、高端装备制造、新材料、动力电池等领域分别有225家、128家、51家和19家上市公司，有望合力为人形机器人的产业化发展提供机器人本体、减速器等核心部件、动力电池的硬件支撑，以及控制系统、算法模型等软件协助；深市则共有具身智能产业链上市公司102家，总市值5.5万亿元，已形成“核心零部件-本体制造及系统集成-场景开发应用”全产业链布局。&lt;/p&gt;
+&lt;p&gt;高工机器人产业研究所（GGII）本月发布的《2025中国人形机器人产业发展蓝皮书》预计，2031年人形机器人进入快速起量期，2035年中国人形机器人市场规模有望接近1400亿元。&lt;/p&gt;
+&lt;p&gt;值得注意的是，今年具身智能被首次写入《政府工作报告》。不过在接受财联社记者采访时，叶志辉坦言，“单纯的人形机器人产品今年出货量可能不会很大。”他认为，随着资本和技术不断投入到人形机器人等相关产品中，将会涌现出更多应用，类似于早期工业机器人和服务机器人在疫情后迎来爆发式增长的态势。&lt;/p&gt;
+&lt;p&gt;“据我们对客户的访谈，去年售出的人形机器人主要应用于院校、科研机构以及接待表演等场景。真正进入具体场景解决实际问题，各方仍在探索中。”英特尔方面称。&lt;/p&gt;
+&lt;p&gt;熊蓉还提出，人形机器人通常被认为是具身智能的最佳载体，但实际上也是具身智能的最大需求者和最大挑战，“虽然现在的机器人已经能跑能跳，但是能够实际作业的仍然很少。”&lt;/p&gt;
+&lt;p&gt;谈及产业发展，她提到多处挑战，如：人形机器人运动学习偏复现/遥控尚需提升作业臂（有精度和负载）下的上肢大幅运动、负载作业、智能移动作业，并满足作业精度要求；交互行为学习训练数据匮乏，合成数据和仿真训练面临Sim2Real问题，遥操作采集涉及设备、人员、标注等，成本高且异构迁移难等等。&lt;/p&gt;
+&lt;p&gt; “大规模落地主要取决于功能是否足够完善、成本是否能够得到市场广泛接受两方面。”王景佳表示。&lt;/p&gt;
+&lt;p&gt;不仅如此，在人形机器人的标准制定方面，据熊蓉介绍，“现在发起团体标准的机构有很多，国家标准方面也有多个提案，主要集中在技术要求方面，更多偏向于软件层面，已经有几个项目立项，但我认为尚未触及大家真正关注的核心问题。在当前阶段，制定人形机器人的安全标准可能更为重要。安全标准将直接涉及到各个部件，并对安全性提出各种要求。”&lt;/p&gt;
+&lt;p&gt;叶志辉也以信步科技的HB03举例说明，“因为目前尚无适用的标准，其连接器都是非标准的。我们这个行业有特殊要求，例如USB接口就无法使用，但目前许多客户仍然不得不使用USB或Type-C接口，但这只是一种过渡状态。”在他看来，具身智能本身是一种较新的形态，不像工业控制那样拥有数十年成熟的应用场景，因此其形态尚未统一。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 22 Apr 2025 10:35:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBVcXRKZS03aWtPVExzLW45dzVpUHJXeE9sUENVWmx1akFTUUREQ055TmgyY1NmZ01FNGZpZjdMcllwT3JWZklwUw</guid></item><item><title>感谢欧盟！iPad Air M2通过虚拟机成功运行Win11 ARM：效果比想象好 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5JRVdLbFVwcUUzODR5djVObF9Na0ZOTDBEWFNCVEFhUEFsZmh1VmFHQ3N6NnJvTmdoajNrWGZvci1MNzhjV1AzRlFlYVVVWWEzNHhHbUh2WWk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月22日消息，近日，&lt;strong&gt;开发者NTDev展示了iPad Air M2成功运行Windows 11 ARM的成果。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows 11 ARM版本专为ARM架构的处理器设计，能够在iPad Air M2的M2芯片上运行，通过UTM应用的JIT（即时编译）技术，Windows 11的代码可以被转换为ARM指令，从而实现运行。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250422/09c13c37-7003-48b6-b99e-7bc5fa69efb7.jpg" target="_blank"&gt;&lt;img alt="感谢欧盟！iPad Air M2通过虚拟机成功运行Win11 ARM：效果比想象好" h="417" src="//img1.mydrivers.com/img/20250422/S09c13c37-7003-48b6-b99e-7bc5fa69efb7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不过iPad的安全策略限制了虚拟化的使用，这意味着用户无法通过常规方式直接运行Windows 11。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;但借助欧盟数字市场法案的推动，用户现在可以通过“AltStore Classic”第三方应用商店来侧载UTM应用，该应用集成了JIT支持，从而绕开了苹果的限制。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250422/428a0ec4-f553-4f2f-8eb6-7393b73d4775.jpg" target="_blank"&gt;&lt;img alt="感谢欧盟！iPad Air M2通过虚拟机成功运行Win11 ARM：效果比想象好" h="337" src="//img1.mydrivers.com/img/20250422/S428a0ec4-f553-4f2f-8eb6-7393b73d4775.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NTDev表示，使用Tiny11的精简版Windows 11镜像，进一步提升了运行效果，Tiny11去除了Windows 11中不必要的应用程序和服务，降低了对内存和存储的需求，使其更适合在iPad上运行。&lt;/p&gt;
+&lt;p&gt;具体操作步骤包括：使用PC通过tiny11builder构建tiny11 ARM64 ISO文件；在欧盟地区安装AltStore Classic及其配套的AltServer；通过AltStore Classic侧载UTM，并使用StikDebug启用JIT功能；最后在UTM中创建ARM64虚拟机，加载tiny11 ISO并启动。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250422/e85123a5-e921-4dcc-828a-4757d84709e5.jpg" target="_blank"&gt;&lt;img alt="感谢欧盟！iPad Air M2通过虚拟机成功运行Win11 ARM：效果比想象好" h="337" src="//img1.mydrivers.com/img/20250422/Se85123a5-e921-4dcc-828a-4757d84709e5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;由于目前仍处于模拟运行状态，存在一定的性能限制，但从演示视频来看，Windows 11 ARM64在iPad上的表现已经相当不错。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows Latest表示，如果苹果允许第三方应用的虚拟化，Windows 11 ARM在iPad Air M2上的性能有望接近M2芯片的原生性能。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 22 Apr 2025 10:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5JRVdLbFVwcUUzODR5djVObF9Na0ZOTDBEWFNCVEFhUEFsZmh1VmFHQ3N6NnJvTmdoajNrWGZvci1MNzhjV1AzRlFlYVVVWWEzNHhHbUh2WWk</guid></item><item><title>130亿，孙正义独角兽破产 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ORVlGeTJYRF9tWTNER2sxTENReGFDSFZGN0tYUnhZbzlJcWIzaVFrQklFbHY1TzdlY3BWN09lRTVfQ254N1I4bWdQX1ZOZw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
 &lt;p id="app"&gt;&lt;/p&gt;
 
 
 &lt;/body&gt;
-</description><author>36Kr</author><pubDate>Tue, 22 Apr 2025 09:02:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9ORVlGeTJYRF9tWTNER2sxTENReGFDSFZGN0tYUnhZbzlJcWIzaVFrQklFbHY1TzdlY3BWN09lRTVfQ254N1I4bWdQX1ZOZw</guid></item><item><title>120W释放逼近RTX 4070！国产锐龙AI Max+ 395迷你机上新：128GB统一内存 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9IbFEzU0lnRy10d3RvQXVNeVNIc0JlZkJnd3RkblM1SENWRFp5QTZfdjlvSHo3eVViay0tRWZXcWNVV18wR0toQnFJZExpVXE3c0RTb3VsbzA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+</description><author>36Kr</author><pubDate>Tue, 22 Apr 2025 09:02:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9ORVlGeTJYRF9tWTNER2sxTENReGFDSFZGN0tYUnhZbzlJcWIzaVFrQklFbHY1TzdlY3BWN09lRTVfQ254N1I4bWdQX1ZOZw</guid></item><item><title>130亿， 孙正义重仓的独角兽破产 - 虎嗅网</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE1qVnRBQy1KaUhjR1pGUVl3Ylg0VkNIQ2tld1FOU09iUmZpNW10Vjk2RmgzcjBqZ2VFNnNwMjRIS2hBdGpJVlBTU1lmX0Y5Q05TTFE5TQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="358016"&gt;&lt;a href="http://mp.weixin.qq.com/s?__biz=MzI5ODk1NjY1MA==&amp;amp;mid=2247683317&amp;amp;idx=1&amp;amp;sn=5aa8c908d13a12dc48723ad84ec24639&amp;amp;chksm=edba0b3458cbb8b5ce239beb81b9c817c51d3ffc37cac32ed04d7d6c725129fb954b26e5cf70#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-check-id="186781"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="612060"&gt;一声叹息。&lt;/p&gt;&lt;p data-check-id="316204"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="634870"&gt;近日，知名农业独角兽Plenty向德克萨斯州法院申请破产保护。至此，这个曾要掀起全球农业革命的创业公司走到绝境。&lt;/p&gt;&lt;p data-check-id="591107"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="158874"&gt;曾几何时，Plenty风光无限：成立于2014年，凭借着独特农业种植技术，Plenty目标是把室内农场开遍全球主要城市，宏大的愿景赢得了一众风险投资人，身后集结着杰夫·贝索斯、软银和沃尔玛等大鳄，估值达19亿美元。&lt;/p&gt;&lt;p data-check-id="990356"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="236501"&gt;其中，孙正义的愿景基金多轮重金领投。曾有中间人回忆，起初孙正义也是抱着怀疑的态度，但Plenty近乎疯狂的idea还是打动了这位“投资狂人”。如今宣布破产，这一笔投资大概率要打水漂了。&lt;/p&gt;&lt;p data-check-id="717774"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="386110" label="大标题"&gt;一、孙正义重仓一个百亿农业独角兽陨落&lt;/p&gt;&lt;p data-check-id="605392"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="243613"&gt;Plenty的故事始于一位来自农民家庭的投资经理。&lt;/p&gt;&lt;p data-check-id="999915"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="601375"&gt;Matt Barnard在美国中北部的一个农场长大，一出生就与樱桃、苹果打交道。但他打算永远不从事农业，从西北大学获得经济学和音乐学位后，先在电信行业工作十多年，又在硅谷一家私募股权公司，负责水技术领域投资。&lt;/p&gt;&lt;p data-check-id="322105"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="238080"&gt;到了2014年，Matt意识到可以将水技术和农业结合到一起，于是与农业专家Nate Storey共同创立了垂直农业公司Plenty。&lt;/p&gt;&lt;p data-check-id="183408"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="775186"&gt;这不是传统的农业。Plenty的第一个农场建在硅谷的大楼里，而非户外。蔬菜在20英尺高的塔楼里水培生长，并配备LED灯等气候控制设施。不使用杀虫剂、除草剂，也不需要自然阳光和土壤。&lt;/p&gt;&lt;p data-check-id="932864"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="742783"&gt;当时室内农业还算是新鲜事物，横空出世的Plenty宣称自身技术实现了比传统农业高出350倍的产量，同时仅消耗1%的水资源。可以全年种植多达300种作物，不受季节限制，从而提高生产效率。&lt;/p&gt;&lt;p data-check-id="436810"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="130135"&gt;Matt有着自己的雄心壮志，多次公开表达要解决数十亿人的吃饭问题，在全球大城市落地开花，距离人们的餐桌“一踩油门就能到”。保证大多数人，无论贫富都能吃得起远离农药、化肥和土壤污染的蔬果。&lt;/p&gt;&lt;p data-check-id="586481"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="703406"&gt;很快，风投机构来了。成立前两年，Plenty完成了种子轮和A轮融资，Innovation Endeavors、DCM、DCVC、Finistere Ventures等机构投资了约2600万美元。&lt;/p&gt;&lt;p data-check-id="918565"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="208404"&gt;高光时刻出现在2017年，Plenty完成2亿美元B轮融资，由孙正义旗下的软银愿景基金领投，贝索斯家办等跟投。这笔融资创下了历史，成为彼时最大一笔农业科技投资，一时间风头无两。&lt;/p&gt;&lt;p data-check-id="885810"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="873035"&gt;当中有一段插曲——在一位早期投资人的牵线搭桥下，孙正义同意留出15分钟的会面时间。Matt将一座种植塔塞进了轿车，前往孙正义的加州豪宅。起初孙正义看着他卸下种植塔切掉生菜时，还有些茫然，却聊了45分钟。两周后，他们飞往东京，拿到了软银的投资。&lt;/p&gt;&lt;p data-check-id="432045"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="421141"&gt;孙正义真金白银的支持还在继续。2019年，Plenty完成1.75亿美元的C轮融资，同样是软银领投。&lt;/p&gt;&lt;p data-check-id="607083"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="313571"&gt;2020年，公司又完成一笔1.4亿美元的D轮融资，由软银领投，JS Capital、One Madison Group、DLD Ventures跟投。2022年，Plenty宣布完成由One Madison Group和JS Capital领投的4亿美元E轮融资，沃尔玛和软银跟投。彼时，软银多次称Plenty有潜力彻底改变农产品供应链。&lt;/p&gt;&lt;p data-check-id="193032"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="705656"&gt;势不可挡的Plenty再次刷新历史，E轮创下全球农业公司规模最大的一轮融资。此时，公司融资额已近10亿美元。据PitchBook数据显示，Plenty估值达到了19亿美元。&lt;/p&gt;&lt;p data-check-id="541569"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="868325"&gt;眼见他起高楼，眼见他楼塌了。多次刷新融资历史的Plenty，终于还是走到破产境地。&lt;/p&gt;&lt;p data-check-id="503236"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="437454" label="大标题" class="text-big-title"&gt;二、为何破产？&lt;/p&gt;&lt;p data-check-id="387866"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="645203"&gt;Plenty走到这一步，其实业内人士并不惊讶。&lt;/p&gt;&lt;p data-check-id="649501"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="845100"&gt;危机浮现是在E轮融资后，尽管与沃尔玛达成战略合作，Plenty进军零售业的速度仍慢于预期，几乎没有进展。&lt;/p&gt;&lt;p data-check-id="703204"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="726154"&gt;真实的市场说明了一切，消费者愿意为蔬菜支付的价格与成本之间存在巨大差距。雪上加霜的是，创始人Matt将重心转向其他创业项目，唯一的农业专家高管Nate也无限期休假。&lt;/p&gt;&lt;p data-check-id="293689"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="751824"&gt;事实上，Plenty成立十多年来一直亏损，从未盈利。据破产文件披露显示，Plenty负债总额在1亿至5亿美元之间。&lt;/p&gt;&lt;p data-check-id="635780"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="161576"&gt;Plenty临时首席执行官将破产原因归咎于融资环境变差，表示尽管该公司曾不止一次成功，但自2022年以来，Plenty多次试图融资以及寻求卖身却以失败告终。去年，甚至一度传出融资估值暴跌99%的消息。&lt;/p&gt;&lt;p data-check-id="730163"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="273856"&gt;此前披露的计划里，公司将在纽约、洛杉矶、北京、上海、中东等地的全球大城市建立500个农场。然而这一切没有实现。Plenty最初开设的三家农场中，目前只有一个草莓农场还在运营，而且产量刚刚开始扩大。&lt;/p&gt;&lt;p data-check-id="232898"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="224151"&gt;尽管Plenty从未公开透露成本，却一心想要规模化。在创始人的理念中，依靠技术跃升，投入越来越少，作物产出越来越多。就像电视、半导体或电脑一样，农业领域的成本曲线正在变成现实。而上一个提出成本曲线说法的公司，是早已失败的WeWork。&lt;/p&gt;&lt;p data-check-id="339490"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="780474"&gt;与其说Plenty是个农场，倒不如说是名副其实的硅谷公司——从总部位置到软银、贝索斯的支持，再到创始人的讲话方式，无不体现了这一点。&lt;/p&gt;&lt;p data-check-id="268054"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="381878"&gt;“他们用了很多大胆的措辞来宣扬食品革命。这种说法对投资人来说很管用，但在农业领域却毫无用处。”一位硅谷投资人称，为了吸引投资机构，不少农业科技公司不惜制定了事后看来无法实现的商业计划和财务模型，大多数过分依赖资本输血来进行业务开拓。&lt;/p&gt;&lt;p data-check-id="212340"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="482050"&gt;不止Plenty，农业科技独角兽公司近年来接连遭受破产重创。2024年11月，同为垂直农业公司Bowery Farming筹集了超过7亿美元的资金后宣布倒闭，该公司在四年前的估值为20亿美元。更早前，AppHarvest也申请了破产保护，此前曾融资超过7亿美元。&lt;/p&gt;&lt;p data-check-id="203515"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="550030"&gt;诚然，洗牌的机会谁都不想错过，FOMO情绪渲染下，投资人总是害怕错过下一个时代。&lt;/p&gt;&lt;p data-check-id="625145"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="437127"&gt;如今回头看，Plenty当初宣称的愿景成了一个个牛皮。然而当企业面临着运营成本不断上升、供应链挑战以及资本获取渠道逐渐受限，不去关注如何盈利，倒下只是时间问题。&lt;/p&gt;&lt;p data-check-id="463917"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="682647" label="大标题"&gt;三、潮水退去，独角兽融不到下一轮&lt;/p&gt;&lt;p data-check-id="599594"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="200220"&gt;那些充满遗憾的故事里，似乎总是离不开孙正义的身影。&lt;/p&gt;&lt;p data-check-id="608985"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="708101"&gt;不久前，孙正义还被牵扯进更为荒诞的“融资骗局”里。农业科技曾是孙正义极其看好的蓝海市场之一。正因如此，他还投出了另一个暴雷的独角兽项目——印尼水产养殖创业公司eFishery。&lt;/p&gt;&lt;p data-check-id="292693"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="443884"&gt;通过智能手机操控投喂鱼食，eFishery的故事曾吸引一批全球知名风投机构，其中孙正义的软银愿景基金多轮押注，最终持股比例超过8%，捧出了全球水产养殖行业的首家独角兽企业。但结果却令人意想不到——根据内部调查，该公司宣称2024年前九个月营收达7.52亿美元，实际数字仅为1.57亿美元。&lt;/p&gt;&lt;p data-check-id="802904"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="185785"&gt;直至今年初东窗事发，一众投资人损失惨重。放在今天的投资视角看，这种漏洞百出的错误并不难发现，但很长一段时间内其融资依旧顺利，令人难以置信。&lt;/p&gt;&lt;p data-check-id="739707"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="115716"&gt;如今再复盘，孙正义以往豪赌的投资风格被摆上桌面。“要赌就赌大的”——细数他流传甚广的投资项目，往往是不出手则已，一出手便是大手笔。很长一段时间内，这样孤注一掷的打法缔造了硅谷诸多投资神话。但同样的方法论复制在其他独角兽身上，却成了软银一个个窟窿。&lt;/p&gt;&lt;p data-check-id="751393"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="554826"&gt;江湖已经不是过去的江湖，眼下全球独角兽正在集体面临融资难，被资金堆起来的泡沫终究要散去。&lt;/p&gt;&lt;p data-check-id="530740"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="635617"&gt;一个残酷的事实是——当估值泡沫退去，投资人集体反思投资逻辑，变得愈加谨慎务实。那些曾无限风光却没有盈利能力、一味依靠输血的企业，率先被摆上遗弃的桌面。&lt;/p&gt;&lt;p data-check-id="618664"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="517855"&gt;这是全球独角兽共同面临的困境：如何融到下一轮。实际上，更多初创公司正在默默挣扎——降低估值、出售资产或不声不响地关门。PitchBook数据显示，2024年持平或折价融资比例接近25%，创十年来新高。&lt;/p&gt;&lt;p data-check-id="576395"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="335613"&gt;敬畏风险，认清现实。这是眼下所有创业者都要直面的现实。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅网</author><pubDate>Tue, 22 Apr 2025 08:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1qVnRBQy1KaUhjR1pGUVl3Ylg0VkNIQ2tld1FOU09iUmZpNW10Vjk2RmgzcjBqZ2VFNnNwMjRIS2hBdGpJVlBTU1lmX0Y5Q05TTFE5TQ</guid></item><item><title>120W释放逼近RTX 4070！国产锐龙AI Max+ 395迷你机上新：128GB统一内存 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9IbFEzU0lnRy10d3RvQXVNeVNIc0JlZkJnd3RkblM1SENWRFp5QTZfdjlvSHo3eVViay0tRWZXcWNVV18wR0toQnFJZExpVXE3c0RTb3VsbzA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月22日消息，随着ROG独占期的结束，配备AMD锐龙AI Max+ 395旗舰处理器的产品越来越多，迷你机厂商FEVM就宣布即将推出迷你主机新品“&lt;strong&gt;FA-EX9&lt;/strong&gt;”。&lt;/p&gt;
 &lt;p&gt;这款迷你机体积只有&lt;strong&gt;大约2升(192x190×55毫米)&lt;/strong&gt;，但是&lt;strong&gt;通过金属机身、双涡轮风扇、相变导热材料，可以保证锐龙AI Max+ 395 120W的满血性能释放&lt;/strong&gt;，还能保持静音。&lt;/p&gt;
@@ -260,7 +305,70 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 22 Apr 2025 06:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5yRGx4ZUFYdlV4T083dGlZS09jYjlXTW5xUlBvN1YtRHBfMDlvVnNsU3R2NXVFcEF4SHFwYW5qME9zeG1HZDRRQVFlcXNubmZHREpUenVBQTc</guid></item><item><title>美国对东南亚太阳能进口产品征收高额关税 - 华尔街日报中文网</title><link>https://news.google.com/rss/articles/CBMimAFBVV95cUxQZllOQXNTeTRteHJDUTBzd2VIeXlsMXhyVWZSRzRDTV9reDVqb25NcXE1WnFjNEp2MUd5c0g1MkVSY2RvaHRMT0NQSkNaNnN0YXFFNklQSG1IMHcySXJMa3hieVkzQUpjU2hKYjd2OXhidWxGSnRfbDFOMzh2ZzBvUk9wTkJhNHZWT2g2dzR0OE5oakNRRTdTZQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Tue, 22 Apr 2025 05:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMimAFBVV95cUxQZllOQXNTeTRteHJDUTBzd2VIeXlsMXhyVWZSRzRDTV9reDVqb25NcXE1WnFjNEp2MUd5c0g1MkVSY2RvaHRMT0NQSkNaNnN0YXFFNklQSG1IMHcySXJMa3hieVkzQUpjU2hKYjd2OXhidWxGSnRfbDFOMzh2ZzBvUk9wTkJhNHZWT2g2dzR0OE5oakNRRTdTZQ</guid></item><item><title>最高竟达3500%！剑指中企，美国又动手了 - 观察者</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTFBJaXBZU3BZZEVKeHBxb0JBZWdzcnBFVWlnWWlsZXd2cHNqTzB0UWwwcVBtUXlGSmt1NE0wUUdrSFRsVzFfVXVrNUtlTFRzZ1NKM1JiQnNhX2MxNFdqV1BtV0JRODRzWEo3a0E?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 22 Apr 2025 06:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5yRGx4ZUFYdlV4T083dGlZS09jYjlXTW5xUlBvN1YtRHBfMDlvVnNsU3R2NXVFcEF4SHFwYW5qME9zeG1HZDRRQVFlcXNubmZHREpUenVBQTc</guid></item><item><title>索尼官方拆解PS5 Pro 展示新科技以及细节 - 3DM</title><link>https://news.google.com/rss/articles/CBMiXEFVX3lxTFBOTDdYSzUtR2NGbklnTFdLcUFnOGhrU21kRnFBUzA3dTFtZmc0SU5OX3Z1bklpNVJZbk52bDYyMFR4THNLeWhjRTI4NDBnZmMtMEsyZmFQaW1kLW5w?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;索尼官方拆解PS5 Pro 展示新科技以及细节&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2025-04-22 13:34:34&lt;/span&gt;&lt;/p&gt;
+            
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/0422/1745300071934.png" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	任天堂新主机即将上市，暂时没有换代的索尼互娱则忙着如何应对，日前索尼官方发布拆解PS5 Pro报告，展示新科技以及细节。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745299995_131469.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	·索尼互娱指派了参与PS5 Pro电路设计部的领导廣光信也以及机械设计部的领导土田真也参与拆解并解说，包括对比原型机的多处细节雕琢，比如多出的三条“缝隙”背后的扇叶空气流动设计、经过优化后最合适形状的冷却风扇、可以发挥最稳定冷却效果的改进的扇叶等等。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300019_155568.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300019_474559.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300019_818120.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	·对更多细节感兴趣的玩家可以关注：&lt;strong&gt;&lt;a href="https://blog.ja.playstation.com/2025/04/21/20250421-ps5pro/" target="_blank"&gt;官方发布页&lt;/a&gt;&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300040_409531.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300040_548037.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300040_172019.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300040_779482.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250422/1745300040_934411.png" alt="索尼官方拆解PS5 Pro 展示新科技以及细节"&gt; 
+&lt;/p&gt;        &lt;/div&gt;
+                                                &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href="https://h5.3dmgame.com/activities/signinPc" target="_blank"&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20241126/1732585083_533486.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Tue, 22 Apr 2025 05:34:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFBOTDdYSzUtR2NGbklnTFdLcUFnOGhrU21kRnFBUzA3dTFtZmc0SU5OX3Z1bklpNVJZbk52bDYyMFR4THNLeWhjRTI4NDBnZmMtMEsyZmFQaW1kLW5w</guid></item><item><title>美国对东南亚太阳能进口产品征收高额关税 - 华尔街日报中文网</title><link>https://news.google.com/rss/articles/CBMimAFBVV95cUxQZllOQXNTeTRteHJDUTBzd2VIeXlsMXhyVWZSRzRDTV9reDVqb25NcXE1WnFjNEp2MUd5c0g1MkVSY2RvaHRMT0NQSkNaNnN0YXFFNklQSG1IMHcySXJMa3hieVkzQUpjU2hKYjd2OXhidWxGSnRfbDFOMzh2ZzBvUk9wTkJhNHZWT2g2dzR0OE5oakNRRTdTZQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Tue, 22 Apr 2025 05:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMimAFBVV95cUxQZllOQXNTeTRteHJDUTBzd2VIeXlsMXhyVWZSRzRDTV9reDVqb25NcXE1WnFjNEp2MUd5c0g1MkVSY2RvaHRMT0NQSkNaNnN0YXFFNklQSG1IMHcySXJMa3hieVkzQUpjU2hKYjd2OXhidWxGSnRfbDFOMzh2ZzBvUk9wTkJhNHZWT2g2dzR0OE5oakNRRTdTZQ</guid></item><item><title>最高竟达3500%！剑指中企，美国又动手了 - 观察者</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTFBJaXBZU3BZZEVKeHBxb0JBZWdzcnBFVWlnWWlsZXd2cHNqTzB0UWwwcVBtUXlGSmt1NE0wUUdrSFRsVzFfVXVrNUtlTFRzZ1NKM1JiQnNhX2MxNFdqV1BtV0JRODRzWEo3a0E?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	【文/观察者网 齐倩】据路透社4月21日报道，美国特朗普政府执意挥舞关税大棒，在结束长达一年的调查后，当天决定对来自东南亚国家的太阳能制造商征收高额关税。此前，多家在美国经营的制造商指责中国公司通过东南亚国家，向美国市场“大量投放不公平的廉价商品”。
 &lt;/p&gt;
@@ -1947,98 +2055,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 11:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9tN2dMdTYwYlhKYVdPTDNpX2dXTGJTUW5NYTdkdFYtWlBVVldYdTdkUjVnbFFPdVBrRlBvUzZ1MEdvMTV6c2ZsUG03bkJ4dVNiNUhnUXFrLVM</guid></item><item><title>“沉默”的智驾：余承东不喊“遥遥领先”，何小鹏连夜改口 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE12R1o2d2MzRU5DRlA4SW83bFJaanNybUk4TGVveEJfd2NHLUFZX0hDMmd6VmItNGZIVzJIblkzcEt6Tm13Z2F1bVd3SVhSdw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36Kr</author><pubDate>Mon, 21 Apr 2025 11:08:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE12R1o2d2MzRU5DRlA4SW83bFJaanNybUk4TGVveEJfd2NHLUFZX0hDMmd6VmItNGZIVzJIblkzcEt6Tm13Z2F1bVd3SVhSdw</guid></item><item><title>全球第一套！芝奇发布DDR5-6000 256GB超大容量内存 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE4ydTJTZ1Q1NEgydGE4bzgxNmZ0Qmk2bUdUS2VxaS1hZTdod3lNN1F5R2d3Z0lhQ2xVR2dwdXRiTTdsamFjdnN5MkhpcEJOb0NDMW56M1N2T0w?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月21日消息，芝奇宣布，推出全球第一款DDR5-6000 256GB内存套装，兼具超大容量、高频率，适合重度生产力、AI深度学习、4K/8K内容创作、数据科学仿真、多任务并行等场景。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span&gt;它基于最新的高能效SK海力士DDR5 IC，首次将四条64GB DDR5 U-DIMM内存组成套装，稳定运行于6000MHz的超频速度。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;同时，&lt;strong&gt;时序控制在CL32-45-45-96或者CL32-44-44-126&lt;/strong&gt;，非常不错了。&lt;/p&gt;
-&lt;p&gt;该内存已经在AMD X870平台上完成验证，并支持AMD EXPO超频技术，可一键达成预设频率。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250421/125fbf521436467d81811792a0ebbdcd.jpg" target="_blank"&gt;&lt;img alt="全球第一套！芝奇发布DDR5-6000 256GB超大容量内存" h="424" src="//img1.mydrivers.com/img/20250421/s_125fbf521436467d81811792a0ebbdcd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;以下是锐龙7 9800X3D处理器搭配ROG CROSSHAIR X870E HERO主板、锐龙9 9900X处理器搭配微星MPG X870E CARBON WIFI主板，完成验证的烧机测试图：&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/14f40917cc934d74953516955dab24b4.png" target="_blank"&gt;&lt;img alt="全球第一套！芝奇发布DDR5-6000 256GB超大容量内存" h="337" src="//img1.mydrivers.com/img/20250421/s_14f40917cc934d74953516955dab24b4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/0e1ee5f3f8684dc096953cb6bca57006.png" target="_blank"&gt;&lt;img alt="全球第一套！芝奇发布DDR5-6000 256GB超大容量内存" h="337" src="//img1.mydrivers.com/img/20250421/s_0e1ee5f3f8684dc096953cb6bca57006.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此外，芝奇还同步推出了该内存套装的两款超频版，&lt;strong&gt;其一速度高达惊人的7000MHz，而时序放宽到CL38-50-50-126。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;以下是锐龙7 9800X3D处理器搭配微星MEG X870E GODLIKE主板的烤机测试图：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250421/a7cd621a04e549a6ba7d33957e43ea2a.png" target="_blank"&gt;&lt;img alt="全球第一套！芝奇发布DDR5-6000 256GB超大容量内存" h="375" src="//img1.mydrivers.com/img/20250421/s_a7cd621a04e549a6ba7d33957e43ea2a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;其二速度为6400MHz，时序仍然维持在CL32-45-45-102或者CL32-44-44-102。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;以下是锐龙9 9900X3D处理器搭配ROG CROSSHAIR X870E HERO主板、锐龙7 9800X3D处理器搭配微星MAG B850M MORTAR WIFI主板的烤机测试图：&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/1fd1f4d86ec94e45a832f2fdf2a27c36.png" target="_blank"&gt;&lt;img alt="全球第一套！芝奇发布DDR5-6000 256GB超大容量内存" h="337" src="//img1.mydrivers.com/img/20250421/s_1fd1f4d86ec94e45a832f2fdf2a27c36.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/278259a01d4440509fbaebe94d32bbc9.png" target="_blank"&gt;&lt;img alt="全球第一套！芝奇发布DDR5-6000 256GB超大容量内存" h="337" src="//img1.mydrivers.com/img/20250421/s_278259a01d4440509fbaebe94d32bbc9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 10:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4ydTJTZ1Q1NEgydGE4bzgxNmZ0Qmk2bUdUS2VxaS1hZTdod3lNN1F5R2d3Z0lhQ2xVR2dwdXRiTTdsamFjdnN5MkhpcEJOb0NDMW56M1N2T0w</guid></item><item><title>宁德时代曾毓群：我们研发投入比所有友商加起来还多 近十年已投入超700亿元 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjMG0yWUdFVTNOeGh0M3RoSE1KZFUtWW9aU1VKLVdQS01OZ0lPVEhmZXJ5dkdCLTFCUlVVSWprOU5wM29hV0VFaG52Ym1ZTV9HR0hBeFA1UEY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;宁德时代曾毓群：我们研发投入比所有友商加起来还多 近十年已投入超700亿元&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-04-21 18:44:59  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1043157-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月21日消息，今日下午，宁德时代举行了“边界觉醒”超级科技日活动。&lt;/p&gt;
-&lt;p&gt;本次发布会宁德时代带来了包括第二代神行超充电池、骁遥双核电池、钠新电池等在内的多款产品。&lt;/p&gt;
-&lt;p&gt;宁德时代董事长兼CEO曾毓群，在最后环节进行了总结。&lt;/p&gt;
-&lt;p&gt;曾毓群透露，&lt;strong&gt;宁德时代近十年累计研发投入超过700亿元，2024年全年研发投入达186亿元，创历史新高。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;曾毓群称，&lt;span&gt;&lt;strong&gt;“据不完全统计，我们连续五年的研发费用比所有其他友商加起来还要多。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;同时，他也指出，宁德时代作为电池领域的开拓者，用持续创新的理念不断推动着行业，这次钠电体系的突破意义重大。钠电的成熟，加速了“多核时代”的到来。&lt;/p&gt;
-&lt;p&gt;对此，曾毓群指出&lt;strong&gt;“宁德时代从来没有把自己定义为电池制造者，我们更愿意把自己称作是新能源行业的开拓者。”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250421/7a962171091c4415931223f53c983031.jpg" target="_blank"&gt;&lt;img alt="宁德时代曾毓群：我们研发投入比所有友商加起来还多 近十年已投入超700亿元" h="412" src="//img1.mydrivers.com/img/20250421/s_7a962171091c4415931223f53c983031.jpg" w="550"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 10:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBjMG0yWUdFVTNOeGh0M3RoSE1KZFUtWW9aU1VKLVdQS01OZ0lPVEhmZXJ5dkdCLTFCUlVVSWprOU5wM29hV0VFaG52Ym1ZTV9HR0hBeFA1UEY</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 21 Apr 2025 11:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9tN2dMdTYwYlhKYVdPTDNpX2dXTGJTUW5NYTdkdFYtWlBVVldYdTdkUjVnbFFPdVBrRlBvUzZ1MEdvMTV6c2ZsUG03bkJ4dVNiNUhnUXFrLVM</guid></item></channel></rss>
