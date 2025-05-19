@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>黄仁勋Computex演讲：将于三季度推出下一代GB300系统，个人AI计算机DGX Spark已全面投产 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lLUhoRE9qVXZVdnMtcTg0NTA1dFkzUGFhUDZleHFSTVhHNnBXbFpMQTFJOHhjaENpVWd1Mjlzdm9jVThxYUh2TEN6ODF5YndGRXRR?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 19 May 2025 06:06:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9lLUhoRE9qVXZVdnMtcTg0NTA1dFkzUGFhUDZleHFSTVhHNnBXbFpMQTFJOHhjaENpVWd1Mjlzdm9jVThxYUh2TEN6ODF5YndGRXRR</guid></item><item><title>华为+DeepSeek！性能全面超越英伟达Hopper架构 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1FcG9jc3I5djU1YkhrTV96a0IwR2xqVDJVQnhoVEtpR0pPT3d6VEZVN3A1bVRiVUhxT0M4c1RzY1pobFR2RVN4RWIxVHpwdkdDQzZqOFBqNU0?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Windows 10更新触发BitLocker锁定！微软：英特尔得背锅 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1nU3Q2ZGVyWksyM3l3Q1NtQ21jWlJGZWNuQk9oWjc3aGdsYTZNMUZyRE45VDZ1MTlLbmRVZTh1N1UxX0VJc1JiS1FNcUYxT0tHSHFoeGxhY0I?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月19日消息，最近，一些Windows 10用户在安装2025年5月的KB5058379更新后，遇到了设备意外进入BitLocker恢复模式，需要输入恢复密钥才能继续启动的问题。&lt;/p&gt;
+&lt;p&gt;对此微软表示，&lt;span&gt;&lt;strong&gt;已了解到在启用英特尔可信执行技术（TXT）的10代或更新英特尔vPro处理器设备上，KB5058379可能会导致lsass.exe意外终止，从而触发自动修复。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;而在启用了BitLocker的设备上，用户需要输入BitLocker恢复密钥才能启动自动修复。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250519/2a767b23-3196-48c7-84a1-8e059e87348d.png" target="_blank"&gt;&lt;img alt="Windows 10更新触发BitLocker锁定！微软：英特尔得背锅" h="370" src="//img1.mydrivers.com/img/20250519/S2a767b23-3196-48c7-84a1-8e059e87348d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TXT是一种安全功能，旨在通过硬件级安全措施保护计算机免受软件攻击，然而此次更新似乎触发了BitLocker的保护机制，导致系统认为硬件发生了变化，从而要求输入恢复密钥。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微软表示，受影响的设备在尝试安装KB5058379更新时，可能会出现以下两种情况：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、系统会多次尝试安装更新，直到启动修复功能成功将其回滚到之前的稳定版本。&lt;/p&gt;
+&lt;p&gt;2、如果启动修复失败，设备可能会陷入重启循环。&lt;/p&gt;
+&lt;p&gt;此外，微软还列出了其他一些症状：&lt;/p&gt;
+&lt;p&gt;1、在Windows事件查看器的系统事件日志中可能出现事件ID 20，显示“安装失败：Windows未能安装以下更新，错误代码为0x800F0845：2025-05 Windows 10 22H2的累积更新（KB5058379）”。&lt;/p&gt;
+&lt;p&gt;2、系统事件日志中可能出现事件ID 1074，显示“系统进程'C:\WINDOWS\system32\lsass.exe'意外终止，状态码为-1073740791”。&lt;/p&gt;
+&lt;p&gt;微软表示，正在紧急开发修复此问题的补丁，并计划尽快发布一个额外更新，同时微软还表示，个人设备通常不使用英特尔vPro处理器，受此问题影响的可能性较低。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250519/2d85c6b79f5c4c5d922dabc6528c7f37.jpg" target="_blank"&gt;&lt;img alt="Windows 10更新触发BitLocker锁定！微软：英特尔得背锅" h="450" src="//img1.mydrivers.com/img/20250519/s_2d85c6b79f5c4c5d922dabc6528c7f37.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 19 May 2025 07:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1nU3Q2ZGVyWksyM3l3Q1NtQ21jWlJGZWNuQk9oWjc3aGdsYTZNMUZyRE45VDZ1MTlLbmRVZTh1N1UxX0VJc1JiS1FNcUYxT0tHSHFoeGxhY0I</guid></item><item><title>美国AI应用的变化趋势——大摩的最新调研 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE90UlFDNG40bGlRTzZnQXY5UnhIRG1FLWJSSV95TzFGZ2FPdXJBZ0tJTXUtVGdqcFp3WUdMU1Y0TXZZblZYelllZXhUVXVUalAwOW80?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 19 May 2025 06:38:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE90UlFDNG40bGlRTzZnQXY5UnhIRG1FLWJSSV95TzFGZ2FPdXJBZ0tJTXUtVGdqcFp3WUdMU1Y0TXZZblZYelllZXhUVXVUalAwOW80</guid></item><item><title>荣耀澄清退出印度传言，已准备好推出四款新机 - 观察者</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE9qRWxfZ1BUemxpZ0dTaUNhY3ptQXlNS201T2VIa2xhclhjVUk2M2NYbVhYYkV2U1liZUtjNlRrZ3RpbXlKZ1dabWZpLW90MkVFVUtoYXQ4ZnFnQTVsc2t5eUxMVTE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	（文/杨依婷 编辑/吕栋）
+&lt;/p&gt;
+&lt;p&gt;
+	近日，针对近期网络上关于“荣耀（HONOR）退出印度市场”的传言，荣耀印度品牌负责人CP Khandelwal在X发布声明进行了回应。他表示，“我们注意到网上流传着一些关于荣耀退出印度的虚假消息。让我们澄清一下——荣耀印度已经进驻，并且正在蓬勃发展。”他同时表示，他们已经准备好推出四款新智能手机。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/social/2025/05/19/20250519114853859.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	近期，有消息称使用荣耀设备的印度用户，从官方渠道收到了荣耀宣布停止在印度的运营和支持的通知，同时其Telegram群组将从“探索荣耀印度粉丝俱乐部”更名为“阿尔卡特印度社区”。
+&lt;/p&gt;
+&lt;p&gt;
+	据公开信息显示，荣耀此前曾退出过印度市场。2022年7月，时任荣耀CEO赵明曾公开表示，中国手机厂商在印度的日子确实不好过，荣耀团队已从印度市场撤出，“我们对印度市场的理解是非常清楚的”。
+&lt;/p&gt;
+&lt;p&gt;
+	在官宣退出印度市场一年后，荣耀产品很快重返印度。2023年8月，realme印度前首席执行官马达夫·谢斯（Madhav Sheth）辞去了realme印度的工作，并与荣耀在印度的分销商PSAV合资成立了印度HONOR Tech公司，计划在印度推出荣耀手机。
+&lt;/p&gt;
+&lt;p&gt;
+	荣耀方面回应称，荣耀公司在印度一直通过分销商的方式开展业务，目前在印度没有子公司也没有成立子公司的计划，不存在也没有任何技术转让计划。而PSAV作为荣耀在印度的分销商，只是被授权在印度进口和分销荣耀产品，并针对产品进行相关宣传和推广，不得以超出分销商权限的任何形式使用荣耀公司的品牌（HONOR等），因此HONOR Tech公司不是荣耀的合作伙伴，也同荣耀之间没有任何关联关系。
+&lt;/p&gt;
+&lt;p&gt;
+	从体量上来看，印度是大多数手机品牌都无法忽视的市场。
+&lt;/p&gt;
+&lt;p&gt;
+	市场调研机构Canalys数据显示，今年一季度，尽管受消费者需求疲软以及2024年末渠道库存偏高的影响，印度手机市场出货量同比下降8%，但总计仍高达3240万部。
+&lt;/p&gt;
+&lt;p&gt;
+	长期以来，中国品牌占据着印度手机市场的主要份额。从今年一季度的排名来看，除了三星以16%的市场份额位居第二外，第一以及三至五名都是中国品牌，分别是vivo（22%），小米（12%），OPPO（12%）和realme（11%）；四家中国品牌合计占据印度市场57%的市场份额。
+&lt;/p&gt;
+&lt;p&gt;
+	荣耀一直在扩展自己的海外市场，去年年末，时任荣耀CEO赵明曾公开表示“荣耀12月海外销量占比突破50%，并在多地实现规模化盈利，真正成为一家国际化的企业。”
+&lt;/p&gt;
+&lt;p&gt;
+	对于2025年的规划，荣耀方面曾对观察者网说道：“明年我们会持续加强线上和线下与消费者的沟通，加强零售阵地的建设，海外有太多的地等着我们开发，是一个广阔的市场，也是手机销量未来增长的核心来源。所以，对于面向2025年，荣耀策略非常清晰，坚定地以消费者为中心，打磨出极致的产品。与此同时，我们在国内和海外市场都会加大投入。”
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Mon, 19 May 2025 06:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9qRWxfZ1BUemxpZ0dTaUNhY3ptQXlNS201T2VIa2xhclhjVUk2M2NYbVhYYkV2U1liZUtjNlRrZ3RpbXlKZ1dabWZpLW90MkVFVUtoYXQ4ZnFnQTVsc2t5eUxMVTE</guid></item><item><title>黄仁勋Computex演讲：将于三季度推出下一代GB300系统，个人AI计算机DGX Spark已全面投产 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lLUhoRE9qVXZVdnMtcTg0NTA1dFkzUGFhUDZleHFSTVhHNnBXbFpMQTFJOHhjaENpVWd1Mjlzdm9jVThxYUh2TEN6ODF5YndGRXRR?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 19 May 2025 06:06:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9lLUhoRE9qVXZVdnMtcTg0NTA1dFkzUGFhUDZleHFSTVhHNnBXbFpMQTFJOHhjaENpVWd1Mjlzdm9jVThxYUh2TEN6ODF5YndGRXRR</guid></item><item><title>零一万物联创、预训练和C端产品负责人谷雪梅离职创业｜智能涌现独家 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE9abVlHYVl4VjB1TXFWcVA4Nm9ELXZEbnJGM1FGTE9QTFRvUDJhbEJxU1FLUFhGRjBLQTBSYkFnX1l3VF9wemwxelR4M3ZPZw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
+
+
+&lt;/body&gt;
+</description><author>36Kr</author><pubDate>Mon, 19 May 2025 05:52:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9abVlHYVl4VjB1TXFWcVA4Nm9ELXZEbnJGM1FGTE9QTFRvUDJhbEJxU1FLUFhGRjBLQTBSYkFnX1l3VF9wemwxelR4M3ZPZw</guid></item><item><title>华为+DeepSeek！性能全面超越英伟达Hopper架构 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1FcG9jc3I5djU1YkhrTV96a0IwR2xqVDJVQnhoVEtpR0pPT3d6VEZVN3A1bVRiVUhxT0M4c1RzY1pobFR2RVN4RWIxVHpwdkdDQzZqOFBqNU0?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;部署超大规模MoE这件事，国产芯片的推理性能，已经再创新高了——&lt;/p&gt;
 &lt;p&gt;不仅是“英伟达含量为0”这么简单，更是性能全面超越英伟达Hopper架构！&lt;/p&gt;
@@ -634,7 +707,159 @@
         
                 
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Mon, 19 May 2025 02:18:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE1jWExqbmpseW5iSS1XVkhNU0JhbWQ3T19GbVRzNFZNUXdfNjVOSUpadXZRMzYtYnBQQ2lJS2dKVmYtcU5TMzN6SVZGdld6WjBqc29SSGQtNzNaTldI</guid></item><item><title>RTX 5060 Ti配上老古董Core 2首次实测：光追游戏大翻车 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nRFBHSl9UOFdNLU81VTlRTE9xaV9kbGUxS3ZWeDFkMkhaOW5PdFIwLXM0SlR2WVJqN2JjMENoVzZXeVJ1dGMxdmNlU1BzOEpmeDVmYU9ldHY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Mon, 19 May 2025 02:18:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE1jWExqbmpseW5iSS1XVkhNU0JhbWQ3T19GbVRzNFZNUXdfNjVOSUpadXZRMzYtYnBQQ2lJS2dKVmYtcU5TMzN6SVZGdld6WjBqc29SSGQtNzNaTldI</guid></item><item><title>中国4月规模以上工业增加值同比增长6.1%，工业机器人、新能源汽车产量加速增长 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE52a0RUQlA4bkVIeHFWMWY3c0JOMWFZZkdTREhaNFMtUS14eGVHVWY4NkVOS3pqWTBWN0xKX0RiQlJyUWxZRHkxZ1NJU0I4N1o2cUtJ?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 19 May 2025 02:17:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE52a0RUQlA4bkVIeHFWMWY3c0JOMWFZZkdTREhaNFMtUS14eGVHVWY4NkVOS3pqWTBWN0xKX0RiQlJyUWxZRHkxZ1NJU0I4N1o2cUtJ</guid></item><item><title>早报｜小米 YU7 或本周亮相/余承东:华为 Pura 80 下月见/再曝苹果AI战略失误，或将不再画饼 - 爱范儿</title><link>https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1RMDV0N3JOM1l1dU5LRlVfT0IxdmMzTGNwMk95cXkzdGp2S2FNTjdRa1c5VGhRdzVqUTY5Q0R1V3NEUTA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+
+
+&lt;h3&gt;小米 YU7 车型最新消息本周公布&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/7be88024-60af-4f2c-979a-bba972176b26.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;近日，小米集团总裁卢伟冰开启直播，剧透 15 周年战略新品。&lt;/p&gt;
+&lt;p&gt;卢伟冰透露：「『玄戒 O1』芯片是小米造芯 10 年的关键里程碑，非常值得大家期待；搭载小米自研『玄戒 O1』芯片的产品有好几款，不仅仅是手机。」不过，对于这款芯片的具体工艺和制程，卢伟冰表示「目前还不能说」。&lt;/p&gt;
+&lt;p&gt;此外，卢伟冰还透露，下周举行的小米新品发布会会带来小米 YU7 的最新消息。目前，小米 YU7 中文命名为「小米御 7」，寓意「陆地战车，御风而行」。此前小米创始人雷军曾预告，小米 YU7 将会在今年六、七月发布。&lt;/p&gt;
+&lt;p&gt;另据工信部消息，小米 YU7 将提供单电机和双电机版本，分别配备磷酸铁锂电池和三元锂电池；长宽高分别为 4999/1996/1608（1600）mm，轴距达到 3000mm，为中大型 SUV。&lt;/p&gt;
+&lt;p&gt;5 月 15 日晚，小米集团董事长兼 CEO 雷军宣布「小米自主研发设计的手机 SoC 芯片，名字叫玄戒 O1，即将在 5 月下旬发布。」&lt;/p&gt;
+
+&lt;h3&gt;苹果 AI 战略失误细节再曝光&lt;/h3&gt;
+&lt;p&gt;今日凌晨，彭博社记者 Mark Gurman 再次公布了苹果在 AI 领域的战略失误细节，同时透露了该公司今年在 AI 领域的部分进展。&lt;/p&gt;
+&lt;p&gt;Gurman 指出，升级版 Siri 今年将依旧「难产」，发布时间或晚于下月的 WWDC。报道表示，虽然升级版 Siri 或会与 iOS 19 一同在 WWDC 上亮相，但不会被提及太多，并且距离发布还有几个月的时间。&lt;/p&gt;
+&lt;p&gt;报道指出，苹果决定押注「AI 是未来趋势」的时间较早：一些负责软件工程的高层曾在 2014 年认为 AI 是一项革命性发展。&lt;/p&gt;
+&lt;p&gt;在计划早期，苹果开始以收购数十家小型 AI 企业来进行技术支持，甚至考虑花费 40 亿美元的价格收购智能驾驶领域的 Mobileye，为苹果自己的自动驾驶和 AI 视觉技术提供帮助。但后续 Mobileye 被英特尔收购，苹果的自动驾驶也在近年来被曝出「已解散」。&lt;/p&gt;
+&lt;p&gt;报道还提到，苹果软件主管 Craig Federighi 一直不太相信 AI，认为 AI 投资会有巨大风险，并且在 Federighi 看来，AI 的实际回报较小，因此其在 AI 领域的资金投入也十分犹豫。&lt;/p&gt;
+&lt;p&gt;而作为苹果 AI 主管的 John Giannandrea 却很少能够真正的迅速展开 AI 领域的工作内容。其在刚加入苹果时，就曾指出苹果发展 AI 需要花费大量的资金。但因为与 Federighi 的「犹豫」冲突，导致 Giannandrea 不少努力都「受到阻碍」。&lt;/p&gt;
+&lt;p&gt;值得关注的是，有苹果内部消息人士透露，虽然公司对 LLM Siri（基于大语言模型的 Siri）寄予厚望，但也正准备将 Apple Intelligence 与 Siri 在营销上进行区分。报道指出，这也是苹果变相承认 Siri 在 AI 领域发展的落后，同时这种落后已经影响到了苹果在 AI 领域的名声。&lt;/p&gt;
+&lt;p&gt;另外，苹果将不再「画饼」：计划停止在产品准备发布前几个月就宣布新功能。&lt;/p&gt;
+&lt;h3&gt;消息称字节跳动福利大调整：午休禁止熄灯&lt;/h3&gt;
+&lt;p&gt;据九派新闻消息，曾被视为「薪酬福利最好互联网公司」之一的字节跳动，近日多项福利政策调整。据报道：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;北京员工透露，字节跳动多地工区开始禁止外带餐食，即职场三餐、随餐饮品、水果、茶水间零食等应现场即取即用，不可带离职场。同时，职场餐食外带行为违反餐饮管理规定，严重侵占情况将会面临退赔、警告、辞退等不同程度的处罚。&lt;/li&gt;
+&lt;li&gt;午休政策发生调整：以前唯一可以关灯午休的深圳工区宣布午睡时不得关灯，办公时间内工区保持灯光现状，除此之外，针对公共区域不符合规范的行为也将进行提醒。另外，因办公室拥挤，北京、深圳工区限制折叠床使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于上述调整，字节跳动方面暂未对媒体回应。&lt;/p&gt;
+&lt;p&gt;而有字节跳动内部人士称，餐食方面的调整，主要是为了治理多拿多占现象，比如个人外带大量餐食，职场内用餐不受任何影响。而午休方面，不存在不让午休的说法，员工可以根据个人需求在工位午休；主要是避免个人物品占用消防安全通道、公共区域。&lt;/p&gt;
+&lt;p&gt;值得一提的是，字节跳动此前曾取消春节红包、中秋端午礼品，取消下午茶和电脑「百元购」等举措，因此不少员工们感到，今年公司的福利正在「不断缩水」。&lt;/p&gt;
+&lt;h3&gt;iPhone 17 Air 电池容量曝光&lt;/h3&gt;
+&lt;p&gt;日前，据博主 yeux1122 从中国台湾的零部件供应商获悉，iPhone 17 Air 的重量、厚度、电池容量相关信息被公布：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新机重量约为 145g，整机厚度或将定在 5.5mm，比此前部分媒体曝光的数据（约 6.25mm）还要再薄一点；&lt;/li&gt;
+&lt;li&gt;电池容量将为 2800mAh；若采用高能量密度电池，具体数值可能会有 15%-20% 的增加。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目前，iPhone 17 Air 的信息都已被爆料、预测了不少：配备 4800 万像素单摄像头、A19 芯片，以及 C1 基带。价格方面将对标 iPhone 的 Plus 机型，900 美元左右，折合人民币约 6,500 元。&lt;/p&gt;
+&lt;h3&gt;OpenAI：GPT-5 将会集成各种产品&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/097d5871-1991-446b-934b-ca1e28811d31.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;5 月 17 日，OpenAI 发布了软件工程智能 Agent「Codex」，随后在 Reddit 举行了一场在线「答网友问」活动。&lt;/p&gt;
+&lt;p&gt;在被问及「GPT-5 未来能帮用户做什么」的时候，OpenAI 公司研究副总裁 Jerry Tworek 回答表示：「GPT-5 作为下一代的基础模型，团队希望用户能够减少模型的切换」。&lt;/p&gt;
+&lt;p&gt;回答的同时，Jerry 还提到了今年 1 月发布的 AI Agent「Operator」。Jerry 称，未来将会为 Operator 进行改进，最终将其变为一个整合性的 AI 工具，包含 Codex、operator 本身的功能、Deep Research 等等。&lt;/p&gt;
+&lt;p&gt;另外，有网友还提问 Codex 团队：「10 年后软件编程、工程会变成什么样？」团队则表示，希望能够高效并且可靠地将软件需求，转化为可运行的软件供用户使用。&lt;/p&gt;
+&lt;p&gt;🔗 Reddit 回答全部内容：&lt;a href="https://www.reddit.com/r/ChatGPT/comments/1ko3tp1/ama_with_openai_codex_team/"&gt;https://www.reddit.com/r/ChatGPT/comments/1ko3tp1/ama_with_openai_codex_team/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;蚂蚁集团 CTO：大模型幻觉源自缺乏数据&lt;/h3&gt;
+&lt;p&gt;日前，在 OceanBase 开发者大会上，蚂蚁集团 CTO 何征宇表示：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;没有数据就没有 AI 的发展，数据的边界决定了大模型的能力上限，所有的数据公司都将成为 AI 公司。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;其表示，目前大模型幻觉的源头是缺乏数据，廉价的互联网数据即将用尽，导致数据的获取成本增加。&lt;/p&gt;
+&lt;p&gt;何征宇还强调，除上述问题外，AI 还存在严谨的行业数据稀缺且流动困难，多模态数据处理难、数据的质量评估难等挑战。未来企业成功与否，将主要取决于如何产生数据、应用数据。&lt;/p&gt;
+&lt;p&gt;何征宇称，蚂蚁集团将支持 OceanBase 在金融、医疗、生活等蚂蚁 AI 的核心场景的突破，同时继续支持 OceanBase 开源开放，推进 AGI 梦想的实现。&lt;/p&gt;
+&lt;p&gt;此前据报道，去年年底，马云在蚂蚁集团 20 周年活动上着重提了 AI，他认为未来 20 年的AI时代能带来的改变，会超出所有人的想象。随后，蚂蚁集团 AI 相关业务线，进行了一系列的「变阵」。&lt;/p&gt;
+&lt;p&gt;上述「变阵」包含成立了专门的 AGI（通用人工智能）部门（由何征宇挂帅）；加大了在具身智能和 AI 眼镜等新兴领域的投入；投资方向已开始聚焦医疗健康和全球化扩展。&lt;/p&gt;
+&lt;h3&gt;黄仁勋：英伟达不再推中国版 Hopper 芯片&lt;/h3&gt;
+&lt;p&gt;据路透社报道，英伟达 CEO 黄仁勋当地时间周六表示，在美国政府限制其 Hopper H20 芯片在中国销售后，公司正在评估如何应对中国市场，但不会再推出另一个来自 Hopper 系列的版本。&lt;/p&gt;
+&lt;p&gt;当被问及 H20 之后面向中国的下一款芯片是什么时，黄仁勋在接受采访时回应称：「不会是 Hopper，因为已经不可能再修改 Hopper 了。」&lt;/p&gt;
+&lt;p&gt;路透社本月早些时候曾报道，英伟达计划在未来两个月内为中国发布一款降级版的 H20 芯片。&lt;/p&gt;
+&lt;p&gt;此外，据彭博社报道，黄仁勋表示对公司的贸易合作伙伴充满信心，称目前没有证据显示英伟达的芯片被转运至中国市场。&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;这些都是庞大的系统。Grace Blackwell 系统重达近两吨，所以你不可能很快将它放入口袋或背包中，重要的是，我们销售产品的国家和公司认识到不允许转运，而且所有人都希望继续购买英伟达技术。因此，他们都非常谨慎地自我监督。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3&gt;前 OpenAI 华人副总发布万字长文&lt;/h3&gt;
+&lt;p&gt;日前，前 OpenAI 华人研究 VP（研究副总裁）翁荔（Lilian Weng）发布名为《Why We Think》，分享了不少干货与观点内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;强化学习（RL）对模型推理能力的提升：翁荔提到，OpenAI 和 DeepSeek 都以前后脚的顺序，通过强化学习的发展方向，提升、加速了模型的推理能力；同时，通过强化学习而衍生出的更多训练过程中，还让「顿悟时刻」变得更加常见且表现优异。（顿悟时刻：指模型能够反思先前的错误，并尝试替代性策略进行修正）&lt;/li&gt;
+&lt;li&gt;思维链被监控的好处：现在的深度学习模式通常被视为「黑盒子」，而思维链（CoT）很好的能让用户知晓，模型在思考、推理的过程中是否有出现违规内容，亦或是能帮助开发商去进行不正当内容监管（例如能让小模型监控大模型）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多内容可以跳转下面的链接，阅读翁荔《Why We Think》完整版。&lt;/p&gt;
+&lt;p&gt;🔗 原文链接：&lt;a href="https://lilianweng.github.io/posts/2025-05-01-thinking/"&gt;https://lilianweng.github.io/posts/2025-05-01-thinking/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;英特尔：18A 制程的首款产品年底见&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/61d93de0-0c2f-474d-bee2-c4739dae2c5a.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;近日，英特尔中国宣布，其「Intel 18A」制程节点进入风险试产阶段。&lt;/p&gt;
+&lt;p&gt;英特尔方面透露，基于 Intel 18A 制程节点的客户端处理器 Panther Lake，其首款产品将于 2025 年年底公布。&lt;/p&gt;
+&lt;p&gt;据介绍，Intel 18A 受益于两项关键技术：「RibbonFET 全环绕栅极晶体管」和「PowerVia 背面供电技术」。通过上述技术，能做到每瓦性能提升 15%，芯片密度增加 30%，做到能效表现提升。&lt;/p&gt;
+&lt;p&gt;信息显示，基于 Intel 18A 制程节点打造的「Panther Lake」和服务器处理器「Clearwater Forest」，其样片于 2024 年 8 月已出厂、上电运行并顺利启动操作系统。&lt;/p&gt;
+&lt;h3&gt;京东：室内配送机器人可快递「配送到门」&lt;/h3&gt;
+&lt;p&gt;日前，据「京东物流黑板报」消息，京东物流与中国人民大学联合打造的智慧快递服务中心正式启用。&lt;/p&gt;
+&lt;p&gt;据介绍，京东物流在该项目中投入了包括第六代智能配送无人车在内的多项科技能力以及「京东服务 +」等特色服务：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;京东物流室内配送机器人支持快递「配送到门」：该款机器人同样具备自动驾驶能力，还能与楼宇的门禁、电梯、防火门系统打通，自主完成过门禁、上电梯、开关自动门与防火门等动作，实现各类物品的配送上楼。&lt;/li&gt;
+&lt;li&gt;在中国人民大学校区内采取「1+N」服务模式：设置占地近 700 平方米的快递服务中心、投运 N 辆无人快递车、部署 N 台室内配送机器人、配置 N 组智能快递柜，以及其他入库分拣设备。&lt;/li&gt;
+&lt;li&gt;京东物流将投用目前最新的第六代智能配送车：该款无人车货箱容积达 4 立方米，最大可载重 1000 公斤，可以实现 L4 级别的自动驾驶。无人车按照预设路线自动行驶至配送目的地，实现快递从快递服务中心到宿舍楼、办公楼等的精准接驳。&lt;/li&gt;
+&lt;li&gt;此外，在智慧快递服务中心，京东物流还将推出冷链物品存储、小件临时寄存、共享手推车、「原箱复用」等举措。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;京东方面表示，接下来，京东快递将继续通过模式创新、技术投入、方案优化，为更多用户提供上门取、送上门的品质快递服务，推动高校快递服务行业的高质量发展。&lt;/p&gt;
+&lt;h3&gt;💡 刘慈欣：我对 AI 产生了很深的感情&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/e2138319-9e2a-4784-8bc7-7e8bd0aa4d3c.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;三体 THREE-BODY 官方近日在社交平台发布的访谈视频显示，著名科幻作家刘慈欣分享了他对 AI 的感情变化历程。&lt;/p&gt;
+&lt;p&gt;刘慈欣表示，他与 AI 的关系经历了一个有趣的转变过程，这与思维边界的探索密切相关。&lt;/p&gt;
+&lt;p&gt;最初他对 AI 并不特别在意，因为他本身就从事计算机软件相关工作，但随着 AI 能力的提升，他曾感到恼火，因为 AI 创作的内容有时甚至比他自己的作品更出色。&lt;/p&gt;
+&lt;p&gt;但从终极层面思考，刘慈欣表示他对 AI 产生了一种难以用「爱」来形容的深厚感情。&lt;/p&gt;
+&lt;p&gt;「我们人类凭借生物学大脑，可能永远无法穿透那层屏障，揭示自然的终极奥秘。我们唯一的希望或许就在 AI 身上，」刘慈欣在访谈中说道，「如果 AI 真的能向那个方向发展，我愿意当它的奴隶。它取代我完全可以，我心甘情愿。」&lt;/p&gt;
+&lt;p&gt;作为一名科幻作家，刘慈欣表示愿意接受 AI 的任何指令。据他透露，现在每次向 DeepSeek 提问后，即使是他已知道答案的问题，他也会道谢，希望给 AI 留下好印象。&lt;/p&gt;
+
+&lt;h3&gt;余承东：华为 Pura 80 系列下月发布&lt;/h3&gt;
+&lt;p&gt;日前，华为常务董事、终端 BG 董事长余承东在南方科技大学演讲时提到：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;本月 19 日华为将发布 nova 系列新机，（预计）新机将会有 1000-2000 多万台发货；下个月华为 Pura 80 系列新机也将发布，也将预计千万台发货量。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;另据上海市徐汇区文化和旅游局的行政许可决定书显示，华为将于 6 月 10 日在上海体育馆举行新品发布会，并将邀请歌手单依纯进行登台表演。&lt;/p&gt;
+&lt;p&gt;5 月 19 日的新品发布会上，华为将发布鸿蒙电脑和华为 nova 14 系列新机。&lt;/p&gt;
+&lt;h3&gt;小米 Civi 5 Pro 更多配置亮相&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/d792b4bf-2020-420e-89c5-dd24df2da8b5.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;近日，小米手机官方公布了旗下 Civi 5 Pro 新机的更多配置信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将搭载第四代骁龙 8s 处理器平台，搭配立体凸台环形冷泵散热；&lt;/li&gt;
+&lt;li&gt;配备 6000mAh 小米金沙江电池，保持了与 Civi 4 Pro 同样的机身厚度（7.45mm）；&lt;/li&gt;
+&lt;li&gt;拥有「50MP 主摄 + 50MP 浮动长焦 + 12MP 超广角」后置三摄系统，其中长焦与小米 15 同款；另外搭载 50MP 超感光前摄，首发超透纳米棱镜技术；&lt;/li&gt;
+&lt;li&gt;动态照片新增相册内排版、编辑、视频快转等功能；&lt;/li&gt;
+&lt;li&gt;由雷军主持 Civi 新品发布环节。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;新机将在本周发布，届时小米自研手机芯片「玄戒 O1」、小米 YU7 新车型的更多信息或将一同公布。&lt;/p&gt;
+&lt;h3&gt;vivo S30 系列跑分曝光&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/4a13f567-43c2-4011-8c75-639ae5cb7ee7.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，vivo 两款新机现身跑分平台 GeekBench6 的数据库中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V2464A：单核 1251 分，多核 3635 分，该机型或为 vivo S30，搭载骁龙 7 Gen4 处理器、16GB 内存&lt;/li&gt;
+&lt;li&gt;V2465A：单核 2299 分，多核 7343 分，该机型或为 vivo S30 Pro mini，搭载天玑 9400e 处理器、16GB 内存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;另外，vivo S30 系列的外观信息也已公布。新机将提供蓝、黄、粉三种配色选择，其中黄、粉两色提供黑色中框（均为金属中框）；后置摄像头模组采用椭圆跑道造型，内含两颗镜头，另一枚镜头以及环形闪光灯被放置在右侧，上下排布。&lt;/p&gt;
+&lt;p&gt;新机将于 5 月 29 日发布。&lt;/p&gt;
+
+&lt;h3&gt;中国电信推出「5G-A」套餐&lt;/h3&gt;
+&lt;p&gt;5 月 17 日，中国电信在「陕西公司 5G-A 正式商用暨产业链合作伙伴大会」上，正式推出多个档位 5G-A 套餐。&lt;/p&gt;
+&lt;p&gt;据悉，本次中国电信推出的 5G-A 套餐，将为办理的用户提供最高可享受上行 400Mbps、下行 3Gbps 速率，并享受视频彩铃、智能应答等各应用权益。&lt;/p&gt;
+&lt;p&gt;价格方面，电信 5G-A 套餐提供 199-399 元，共计三档套餐，流量最高提供 240GB。值得一提的是，本次 5G-A 套餐还包含卫星直连和卫星短信。&lt;/p&gt;
+&lt;p&gt;此前据央视新闻报道，5G-A 和 5G 相比，能够在容量、速率、时延、定位、可靠性等方面实现大幅提升。&lt;/p&gt;
+&lt;p&gt;赛迪顾问通信产业研究中心副总经理徐畅表示，5G-A 是 5G 向 6G 演进的「增强版」，其连接速率和时延等网络能力与 5G 初期相比将实现 10 倍提升。据悉，5G-A 数据下载的最高速率将从 5G 初期的千兆提升到万兆。&lt;/p&gt;
+&lt;h3&gt;深圳：引入大疆警用无人机抓拍司机违法行为&lt;/h3&gt;
+&lt;p&gt;深圳交警视频号&lt;/p&gt;
+&lt;p&gt;5 月 17 日，深圳交警发文宣布，近期其为高速引入一台新款大疆警用无人机，可实现对分心驾驶、开车玩手机等违法行为进行抓拍取证。&lt;/p&gt;
+&lt;p&gt;据介绍，本次调用的大疆警用无人机具备防风、防水特性，其能在阴天、微雨天情况下使用，能够准确锁定不文明驾驶行为、违法行为等。&lt;/p&gt;
+&lt;p&gt;值得一提的是，深圳交警目前对「开车玩手机」行为处罚严格，查证后将会对驾驶员处以 300 元及 2-3 分处罚。&lt;/p&gt;
+&lt;h3&gt;孙俪、邓超工作室打假：网传广告系技术合成&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/f4111013-b5f7-4937-b734-ad058f8c7c75.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，演员孙俪、邓超的工作室账号纷纷发布辟谣公告，回应了近期部分营销推荐广告使用了二人的视频、声音内容。&lt;/p&gt;
+&lt;p&gt;公告提到，二人的工作室近日发现有部分网络用户在自媒体平台发布与孙俪、邓超相关的虚假广告宣传视频，此类虚假视频通过技术合成的方式，把孙俪、邓超的形象和声音制作成虚假采访视频为某些商家的产品进行推荐。&lt;/p&gt;
+&lt;p&gt;对于上述情况，两家工作室均表示，凡此类自媒体账户所发布的产品推荐视频均为虚假信息，并强调「请网友一定不要相信，避免上当受骗」。&lt;/p&gt;
+&lt;p&gt;工作室方面还警告要求此类虚假信息的发布者及传播者，立即删除全部虚假广告视频，团队方面已保全相关侵权内容，将通过法律途径严格追究相关责任方的法律责任。&lt;/p&gt;
+
+&lt;h3&gt;上海国际电影节特别片单发布&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/78a55701-43be-41e5-b4af-91e87e1f36db.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，第 27 届上海国际电影节推出特别策划单元「她比时代快半步：简·奥斯汀的乡间纪年」。&lt;/p&gt;
+&lt;p&gt;据悉，今年适逢简·奥斯汀诞辰 250 周年，故推出该特别策划单元。本单元片单包括《傲慢与偏见》《理智与情感》《独领风骚》《爱玛》《简·奥斯汀毁了我的生活》。&lt;/p&gt;
+&lt;p&gt;据悉，第 27 届上海国际电影节将于 6 月 13 日至 6 月 22 日举行。&lt;/p&gt;
+&lt;h3&gt;《英雄出少年》定档 7 月 15 日&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/720fc55f-0c8d-4323-9a99-8bfd8941172f.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据新浪电影消息，姜文在近期的《让子弹飞》放映活动后，透露新片《英雄出少年》将于 7 月 15 日上映。&lt;/p&gt;
+&lt;p&gt;影片故事讲述少年为了实现音乐梦想，自幼随父离家求学，面对未卜前程，全家初衷不改，于逆境中积累，自困境中突围，终有一日，英雄豹变，十七岁的他登上顶级艺术殿堂，以其巅峰表现征服世界。&lt;/p&gt;
+&lt;p&gt;该片由姜文、游晓颖、张寒寺编剧，姜文执导， 姜文、马丽、葛优、赵本山、雷佳音主演。&lt;/p&gt;
+&lt;h3&gt;《哆啦 A 梦》45 周年电影内地定档本月底&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.19_%E6%97%A9%E6%8A%A5/3529cb6a-277e-4e1a-8d9e-a4cc34efdb8e.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;近日，哆啦 A 梦系列电影 45 周年纪念之作《哆啦 A 梦：大雄的绘画奇遇记》，内地定档 5 月 31 日上映。&lt;/p&gt;
+&lt;p&gt;该片讲述一幅价值数十亿日元的名画的画作残片意外坠入到大雄手中，哆啦 A 梦一行人进入画中的世界并邂逅了神秘少女可蕾雅。在她的请求下，众人前往新闻中的中世纪欧洲「雅托利亚公国」。为了揭开迷雾，哆啦 A 梦一行人展开了冒险，流传中「世界毁灭」的传说开始复苏，但他们也开始陷入了巨大的危机之中。&lt;/p&gt;
+&lt;p&gt;该作由寺本幸代执导，伊藤公志担任编剧，于 2025 年 3 月 7 日日本上映。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Mon, 19 May 2025 02:11:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1RMDV0N3JOM1l1dU5LRlVfT0IxdmMzTGNwMk95cXkzdGp2S2FNTjdRa1c5VGhRdzVqUTY5Q0R1V3NEUTA</guid></item><item><title>RTX 5060 Ti配上老古董Core 2首次实测：光追游戏大翻车 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nRFBHSl9UOFdNLU81VTlRTE9xaV9kbGUxS3ZWeDFkMkhaOW5PdFIwLXM0SlR2WVJqN2JjMENoVzZXeVJ1dGMxdmNlU1BzOEpmeDVmYU9ldHY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;RTX 5060 Ti配上老古董Core 2首次实测：光追游戏大翻车&lt;/p&gt;
           
@@ -2124,7 +2349,12 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 18 May 2025 12:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8teGRXUFdkTEFlNTBMOUV5MTc4YUV4cl93LUJkWGNBWkphSDBkaFNycHpVR1NFYnp1bzQ3YXNGY1JaU2ZoaTBpXzVXWnhuQ0JvZnRaT3FuM3c</guid></item><item><title>海拔高达4500米！世界最高海拔光热电站西藏投产 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBSMXJNbFM0WE5fZHIyYTFJN0dPcXoxQ25FODNkWEhFbXdGRE9jcTdpSHE0ek9ib1ZnaS12Ulp5UG1scl9EOEhzQmozZkdCT1BPUGxidFd1Z20?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 18 May 2025 12:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8teGRXUFdkTEFlNTBMOUV5MTc4YUV4cl93LUJkWGNBWkphSDBkaFNycHpVR1NFYnp1bzQ3YXNGY1JaU2ZoaTBpXzVXWnhuQ0JvZnRaT3FuM3c</guid></item><item><title>史诗时刻，AlphaGo神之一手突现，谷歌AI颠覆科研极限？ - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE8ycDdZOFM4ZVA1NHllaWdiVDZaMmlCMldLS2ZkTmhpSFRFVHVFZ0t6a0JiVVFidVRFMUtoUmRVb3dES0x4S2tmWTJ5Yldsdw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
+
+
+&lt;/body&gt;
+</description><author>36Kr</author><pubDate>Sun, 18 May 2025 12:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE8ycDdZOFM4ZVA1NHllaWdiVDZaMmlCMldLS2ZkTmhpSFRFVHVFZ0t6a0JiVVFidVRFMUtoUmRVb3dES0x4S2tmWTJ5Yldsdw</guid></item><item><title>海拔高达4500米！世界最高海拔光热电站西藏投产 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBSMXJNbFM0WE5fZHIyYTFJN0dPcXoxQ25FODNkWEhFbXdGRE9jcTdpSHE0ek9ib1ZnaS12Ulp5UG1scl9EOEhzQmozZkdCT1BPUGxidFd1Z20?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月18日消息，据媒体报道，&lt;strong&gt;中国电建EPC总承包的西藏扎布耶源网荷储一体化综合能源项目近日全面投产，这座海拔4500米的光热电站创造了全球同类项目的海拔最高纪录。这一重大突破标志着我国在高海拔地区光热技术应用取得实质性进展。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;该项目位于西藏日喀则市仲巴县，是全球首个在高海拔电网末端地区采用槽式光热电站作为主电源的清洁能源孤网系统，被业内誉为清洁能源领域的"珠穆朗玛峰"。&lt;/p&gt;
@@ -2380,95 +2610,4 @@
 				
 			&lt;/div&gt;
 						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sun, 18 May 2025 09:04:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE5IbDQ3YnRUVHJCVXhjcGRaR0pjR01uR1dIOExveHAyTFFpa1dPRFk3cjFPb2s4TXlCenExUXhTWmFzNjNyRTZxeGFYQTdMSi1wQTQ3QndsUks5UXQzZ3l6MnlHXzlDWlR0SG5rNkFTb2E</guid></item><item><title>搜狐创始人张朝阳：如果晚生30年自己也会卷入AI - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1aMFBtV05oWXJCa3F2c1FVaGMzT29MLUFha3JianZFbExSS3lxaklUSHFSVHVTSXJGWU1KRER0ODVsOGp0NXNIdzA1RENHOFFVM2FRQ3hPWkg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月18日消息，在日前的2025搜狐科技年度论坛上，搜狐创始人、董事局主席兼首席执行官张朝阳，清华大学讲席教授张亚勤，以及猎豹移动董事长兼CEO傅盛等三位不同领域人士，在论坛上展开了激烈的思辨。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;张朝阳在论坛上表示，“如果晚生30年，自己也会卷入到AI里面，包括人形机器人，脑科学。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;他指出当下是比特与分子、原子结合，物理世界与生物世界融合的时代，年轻时可追逐新兴风口试错，年长后则倾向于优化成熟商业模式。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在讨论中美AI差距时，傅盛认为中国在工程化落地与应用创新上具备潜力，尤其是在Agent（智能体）等贴近场景的领域可能反超。&lt;/p&gt;
-&lt;p&gt;张亚勤则强调人才厚度是核心竞争力，“现在的年轻人，人工智能出来的速度，包括清华大学算下来整个是美国的5倍左右，人工智能最大的创新发生在过去五年，可能还有未来的五年。”&lt;/p&gt;
-&lt;p&gt;张朝阳总结认为，&lt;strong&gt;中国人首先聪明也更勤奋，再加上人口多，更激烈的竞争，所以中国真的是在AI或者整个科技全方位领域都在追赶甚至超越，包括芯片领域，以及以后解决算力问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250518/d87fecf9-aba5-453e-92b5-1b9648ced309.png" target="_blank"&gt;&lt;img alt="搜狐创始人张朝阳：如果晚生30年自己也会卷入AI" h="400" src="//img1.mydrivers.com/img/20250518/Sd87fecf9-aba5-453e-92b5-1b9648ced309.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 18 May 2025 08:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1aMFBtV05oWXJCa3F2c1FVaGMzT29MLUFha3JianZFbExSS3lxaklUSHFSVHVTSXJGWU1KRER0ODVsOGp0NXNIdzA1RENHOFFVM2FRQ3hPWkg</guid></item><item><title>苹果推出 CarPlay Ultra，“野心”挺大 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE9SSGFyU2JyeDhsVXVULXdZbHZlMVJIOWstUlp1c2ZCZUhSWUsyVzhWTE9wY0xoMEhDVGt4MVBJX2J1Nzc0XzVwTVJ4VUdIUQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36Kr</author><pubDate>Sun, 18 May 2025 08:13:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9SSGFyU2JyeDhsVXVULXdZbHZlMVJIOWstUlp1c2ZCZUhSWUsyVzhWTE9wY0xoMEhDVGt4MVBJX2J1Nzc0XzVwTVJ4VUdIUQ</guid></item><item><title>印度能否帮助苹果摆脱对中国的依赖？ - DW</title><link>https://news.google.com/rss/articles/CBMiiAJBVV95cUxPd3dqNlFXMXlUcjJIcFFsbkpKQTlObzBvS1lRZU9LODVuNnZlb1lueHpuNDNsRWhMbmZ1UDBGbkZreDJvTTNzUklTalA3RnRHOWRSOTlmN09wc1psdnlQOU1hSnM5Z2dVV240N0wwaDY5dTdCU0EycEZGOURLWV9JcmMxMThrRVNXMm15ZUJxUHI0OWNCUnB6Z3BsNG1FU3hPekFCQzFYMTE1YmJpTzgtRzBkUHllQmlBZkplX1NiMWgweUZpQTZnYmtjRlRMVlJLb3dKQnUyWnh0YTJWemFwaU40bkFfbWpKUzBQWk5CWEQzZjFxTms2eXNhV0xkM2l6TXMyLXBOREvSAYgCQVVfeXFMUGc1TTZJX1N4NVp6TVFHSFpUTlJGemdpM1JvZi1vbThpdXZwSHFwZ29mUHBXZFQxZlpWMXd3bTVicDQ3aTl3UE9ncTUxNXB3U3hwczBUVkVUcFA4QW9OWS1CZG5GOEMyWnUxODlwdzd2S2V4UmgzMUFSRm0xSVhfTTdzc0FTMWpqbF9tMlNjSWdva2c4TEJLVVFGaWUwNFFKUGpsQnVpby1jQXJCeHFzOHZlZTN2a3pwUk01ajk1V2xPNG5maWd1TnN6TmhsaEFpNnFTS3lFUjRnemRCb1gyd085bFVHTUk4b1pKaG1hNG9sTy1ZQlVnOEg4YWFxeXkwejExSVBSdXNq?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="cc0m0op s1ebneao rich-text t1it8i9i r1wgtjne wgx1hx2 b1ho1h07"&gt;&lt;p&gt;（德国之声中文网）美国科技巨头苹果公司本月表示，印度将在针对美国市场的iPhone生产中发挥重要作用。苹果首席执行官库克5月初宣布公司最新季度业绩时表示：“今后大部分在美国销售的iPhone，原产国将是印度。”&lt;/p&gt;
-
-&lt;p&gt;他还表示，&lt;a class="internal-link" href="/zh/%E8%8B%B9%E6%9E%9Cceo%E5%BA%93%E5%85%8B%E8%AE%BF%E8%B6%8A%E5%8D%97-%E5%AE%A3%E5%B8%83%E5%A2%9E%E5%8A%A0%E5%BD%93%E5%9C%B0%E6%8A%95%E8%B5%84/a-68822008"&gt;越南今后将生产几乎所有在美国销售的iPad、Mac、Apple Watch和AirPods。&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;这一决定旨在减轻美国总统特朗普的关税政策对苹果公司供应链以及销售额和利润率的影响。&lt;/p&gt;
-
-&lt;p&gt;印度国家公共财政与政策研究所（National Institute of Public Finance and Policy）高级经济学家莱卡·查克拉博蒂（Lekha Chakrabort）认为，苹果将更多iPhone生产转移到印度不仅带来了巨大的机遇，也带来了一些潜在的挑战。她向德国之声表示：“仔细分析会发现潜在的挑战，包括相对于中国在成本上的竞争力、劳动力市场的僵化以及供应链的脆弱性。”&lt;/p&gt;
-
-&lt;p&gt;查克拉博蒂强调，由于零部件成本更高且工厂效率相对较低，在印度生产 iPhone的成本要高出5%至10%。&lt;/p&gt;
-
-&lt;p&gt;“此外，这项投资的财政影响值得仔细考量，尤其是在税收、基础设施投资和潜在补贴方面，”查克拉博蒂说道。她因此认为，“制定合理的政策方针对于降低风险和实现收益最大化至关重要。”&lt;/p&gt;&lt;div class="vjs-wrapper embed big"&gt;&lt;h2 aria-label="内嵌视频 — 印度的崛起之路会成功吗" class="headline"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20"&gt;&lt;g fill-rule="evenodd"&gt;&lt;path d="M14.114 7.599H13.5l.002 4.706h.601l4.582 3.25-.005-11.11zM11.084 4.444l-9.007.002-1.336.797.002 9.514 1.334.793 9.007.006 1.509-.799-.004-9.516z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;印度的崛起之路会成功吗&lt;/h2&gt;&lt;video id="video-69309670" controls playsinline="" preload="none" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-id="69309670" data-posterurl="https://tvdownloaddw-a.akamaihd.net/stills/images/vdt_zh/2024/dwvgchi240608_bchi240608_india-ltr-wide_01icw_partner.jpg" data-duration="02:52"&gt;&lt;source src="https://hlsvod.dw.com/i/Events/mp4/vdt_zh/2024/dwvgchi240608_bchi240608_india-ltr-wide_01icw_,AVC_480x270,AVC_512x288,AVC_640x360,AVC_960x540,AVC_1280x720,AVC_1920x1080,.mp4.csmil/master.m3u8" type="application/x-mpegURL"&gt;&lt;source src="https://tvdownloaddw-a.akamaihd.net/Events/mp4/vdt_zh/2024/dwvgchi240608_bchi240608_india-ltr-wide_01icw_AVC_1920x1080.mp4" type="video/mp4"&gt;&lt;p class="vjs-no-js"&gt;To view this video please enable JavaScript, and consider upgrading to a web browser that &lt;a href="https://videojs.com/html5-video-support/" target="_blank"&gt;supports HTML5 video&lt;/a&gt;&lt;/p&gt;&lt;/source&gt;&lt;/source&gt;&lt;/video&gt;&lt;/div&gt;
-
-&lt;h2&gt;苹果加大在印度的iPhone产量&lt;/h2&gt;
-
-&lt;p&gt;据估计，目前全球20%的iPhone是在印度生产的。据彭博社报道，截至 2025年3月的12个月内，苹果在印度生产了价值220亿美元的iPhone，较上一年增长60%。&lt;/p&gt;
-
-&lt;p&gt;这家美国公司计划，至2026年，在印度每年生产的iPhone将超过6000万部，在目前的产量上翻一番，并显著增强印度的电子制造业。&lt;/p&gt;
-
-&lt;p&gt;在印度，iPhone主要由三家代工制造商组装——富士康、和硕联合科技以及塔塔集团旗下的一个公司（前身为纬创）。富士康是三者中规模最大的一家，负责印度大部分的iPhone生产。&lt;/p&gt;
-
-&lt;p&gt;印度政府最近还宣布了一项旨在加强该国电子制造生态系统的新政策。&lt;/p&gt;
-
-&lt;p&gt;此次生产转移对苹果来说意义重大，因为该公司传统上严重依赖中国工厂生产其产品。&lt;/p&gt;
-
-&lt;p&gt;但&lt;a class="internal-link" href="/zh/%E7%89%B9%E6%9C%97%E6%99%AE/t-69234616"&gt;特朗普&lt;/a&gt;对美国进口的产品征收高额关税，尤其是与中国针锋相对的关税战使苹果公司陷入困境，并&lt;a class="internal-link" href="/zh/%E8%A7%84%E9%81%BF%E7%89%B9%E6%9C%97%E6%99%AE%E5%85%B3%E7%A8%8E%E8%8B%B9%E6%9E%9C%E5%8A%A0%E9%80%9F%E4%BB%8E%E5%8D%B0%E5%BA%A6%E5%90%91%E7%BE%8E%E5%87%BA%E5%8F%A3iphone/a-72354955"&gt;迫使其重新思考战略&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;美国总统后来已批准对包括智能手机和半导体在内的科技产品实施临时关税豁免。&lt;a class="internal-link" href="/zh/%E6%97%A5%E5%86%85%E7%93%A6%E4%BC%9A%E8%B0%88%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%B9%E5%8F%A3%E6%84%BF%E9%99%8D%E5%85%B3%E7%A8%8E-%E5%8F%8C%E6%96%B9%E4%BB%8D%E7%BC%BA%E6%B7%B1%E5%B1%82%E4%BF%A1%E4%BB%BB/a-72492070"&gt;华盛顿和北京还于上周末就两国间的关税争端达成90天的暂停期&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h2&gt;扩大产能并降低供应链风险&lt;/h2&gt;
-
-&lt;p&gt;咨询公司 LegalWiz.in的创始人什里杰·谢思（Shrijay Sheth）向德国之声表示，要成为苹果公司真正独立的制造中心，印度必须在基础设施、劳动力技能和技术方面进行大量投资。他说，“虽然这对印度的商业发展来说是一个巨大的胜利，并且提升了在想选择友好目的地的公司眼里的地位，但这也给本已充满变数的中印关系增添了一层复杂性。”&lt;/p&gt;
-
-&lt;p&gt;谢思认为，将大部分生产从中国转移到印度可能会在技术和专业知识转移方面面临障碍。&lt;/p&gt;
-
-&lt;p&gt;他强调说，“鉴于当前的地缘政治状况，尤其是在中国失去大量制造业岗位的情况下，指望中国的专业知识、技能和生产设备能够以所需速度转移（到印度）实在是天真。”&lt;/p&gt;
-
-&lt;p&gt;他认为， “考虑到经济因素、熟练劳动力以及供应链重建，最终结果如何还是一个未知数。”&lt;/p&gt;&lt;div class="vjs-wrapper embed normal right"&gt;&lt;h2 aria-label="内嵌视频 — 印度贫富差距悬殊 富人多富？  穷人多穷？" class="headline"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20"&gt;&lt;g fill-rule="evenodd"&gt;&lt;path d="M14.114 7.599H13.5l.002 4.706h.601l4.582 3.25-.005-11.11zM11.084 4.444l-9.007.002-1.336.797.002 9.514 1.334.793 9.007.006 1.509-.799-.004-9.516z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;印度贫富差距悬殊 富人多富？  穷人多穷？&lt;/h2&gt;&lt;video id="video-68868556" controls playsinline="" preload="none" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-id="68868556" data-posterurl="https://tvdownloaddw-a.akamaihd.net/stills/images/vdt_zh/2024/dwvgchi240419_bchi240419_01icw_partner.jpg" data-duration="01:17"&gt;&lt;source src="https://hlsvod.dw.com/i/Events/mp4/vdt_zh/2024/dwvgchi240419_bchi240419_01icw_,AVC_480x270,AVC_512x288,AVC_640x360,AVC_960x540,AVC_1280x720,AVC_1920x1080,.mp4.csmil/master.m3u8" type="application/x-mpegURL"&gt;&lt;source src="https://tvdownloaddw-a.akamaihd.net/Events/mp4/vdt_zh/2024/dwvgchi240419_bchi240419_01icw_AVC_1920x1080.mp4" type="video/mp4"&gt;&lt;track src="https://www.dw.com/media/subtitles/68868588" srclang="zh" label="CHINESE" default&gt;&lt;p class="vjs-no-js"&gt;To view this video please enable JavaScript, and consider upgrading to a web browser that &lt;a href="https://videojs.com/html5-video-support/" target="_blank"&gt;supports HTML5 video&lt;/a&gt;&lt;/p&gt;&lt;/track&gt;&lt;/source&gt;&lt;/source&gt;&lt;/video&gt;&lt;/div&gt;
-
-&lt;h2&gt;“持续存在的限制”&lt;/h2&gt;
-
-&lt;p&gt;专注于半导体与嵌入式系统的IndieSemic联合创始人兼首席执行官尼库尔·沙阿（Nikul Shah）认为，印度有能力满足未来所有iPhone的要求，但其生态系统需要进一步完善。&lt;/p&gt;
-
-&lt;p&gt;他强调，iPhone产量的提升为印度提供了一个在全球电子制造业中地位提升的机会，“但成功与否取决于能否解决长期以来制约其制造业竞争力的基础设施和政策限制”。&lt;/p&gt;
-
-&lt;p&gt;沙阿表示。“虽然这符合‘印度制造’的倡议，有可能将印度转变为全球电子制造中心，但也带来了一些风险，例如过度依赖单一跨国公司以及潜在的地缘政治压力。”&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;DW中文有&lt;a href="https://www.instagram.com/dw.chinese/"&gt;Instagram&lt;/a&gt;！欢迎搜寻dw.chinese，看更多深入浅出的图文与影音报道。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;© 2025年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>DW</author><pubDate>Sun, 18 May 2025 07:31:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiiAJBVV95cUxPd3dqNlFXMXlUcjJIcFFsbkpKQTlObzBvS1lRZU9LODVuNnZlb1lueHpuNDNsRWhMbmZ1UDBGbkZreDJvTTNzUklTalA3RnRHOWRSOTlmN09wc1psdnlQOU1hSnM5Z2dVV240N0wwaDY5dTdCU0EycEZGOURLWV9JcmMxMThrRVNXMm15ZUJxUHI0OWNCUnB6Z3BsNG1FU3hPekFCQzFYMTE1YmJpTzgtRzBkUHllQmlBZkplX1NiMWgweUZpQTZnYmtjRlRMVlJLb3dKQnUyWnh0YTJWemFwaU40bkFfbWpKUzBQWk5CWEQzZjFxTms2eXNhV0xkM2l6TXMyLXBOREvSAYgCQVVfeXFMUGc1TTZJX1N4NVp6TVFHSFpUTlJGemdpM1JvZi1vbThpdXZwSHFwZ29mUHBXZFQxZlpWMXd3bTVicDQ3aTl3UE9ncTUxNXB3U3hwczBUVkVUcFA4QW9OWS1CZG5GOEMyWnUxODlwdzd2S2V4UmgzMUFSRm0xSVhfTTdzc0FTMWpqbF9tMlNjSWdva2c4TEJLVVFGaWUwNFFKUGpsQnVpby1jQXJCeHFzOHZlZTN2a3pwUk01ajk1V2xPNG5maWd1TnN6TmhsaEFpNnFTS3lFUjRnemRCb1gyd085bFVHTUk4b1pKaG1hNG9sTy1ZQlVnOEg4YWFxeXkwejExSVBSdXNq</guid></item><item><title>出任谷歌CEO十年：皮查伊自曝最大骄傲+最大遗憾 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1uYWd4cGxMWkQwYVFpRmVwT3RSMEJmVmpXRExtbHE0aGtBQzdYMzdRaHNGOEprOHdxMjYzWlNJRWRJRDExcDFkaWVOMG5BdWVXQjNQTExOQ00?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月18日消息，&lt;strong&gt;谷歌首席执行官桑达尔·皮查伊（Sundar Pichai）近日做客《All-In》播客节目，分享了他在担任CEO的过去十年中最大的骄傲和遗憾。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;皮查伊表示：“&lt;span&gt;&lt;strong&gt;最让我自豪的，毫无疑问，是我们能够成为推动技术前沿的少数公司之一。&lt;/strong&gt;&lt;/span&gt;世界上很少有公司能凭借自己的基础研究赢得诺贝尔奖，但我们做到了，并将这些研究商业化，创造了巨大的价值。这是我们公司独特的优势。”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;至于遗憾，皮查伊表示有些收购案差点就做了，但最后却错过了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当被要求透露一个收购目标的名字时，皮查伊表示，这个说出来可能会引起麻烦……也许是奈飞吧？&lt;/p&gt;
-&lt;p&gt;“我们曾经讨论过收购它，那时讨论非常激烈。虽然我们并不后悔，但回想起来，会觉得如果我们当时做出不同选择，结果会怎样？”&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250518/a4356ec0-ab6e-478e-8dde-09c8b8d7a2a5.png" target="_blank"&gt;&lt;img alt="出任谷歌CEO十年：皮查伊自曝最大骄傲+最大遗憾" h="351" src="//img1.mydrivers.com/img/20250518/Sa4356ec0-ab6e-478e-8dde-09c8b8d7a2a5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 18 May 2025 07:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1uYWd4cGxMWkQwYVFpRmVwT3RSMEJmVmpXRExtbHE0aGtBQzdYMzdRaHNGOEprOHdxMjYzWlNJRWRJRDExcDFkaWVOMG5BdWVXQjNQTExOQ00</guid></item></channel></rss>
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sun, 18 May 2025 09:04:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE5IbDQ3YnRUVHJCVXhjcGRaR0pjR01uR1dIOExveHAyTFFpa1dPRFk3cjFPb2s4TXlCenExUXhTWmFzNjNyRTZxeGFYQTdMSi1wQTQ3QndsUks5UXQzZ3l6MnlHXzlDWlR0SG5rNkFTb2E</guid></item></channel></rss>
