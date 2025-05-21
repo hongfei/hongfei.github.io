@@ -1,5 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>AMD官宣FSR重大更新！带来机器学习光线追踪、帧生成等 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LSEE4VlVMcGlpaWxlSG96VEdiTFNaNzZ5WGVXWGhVVmlHNTFqek11NlM4ODN6bVEwWDZCUC0yT0JILVVWNU1PUThGNmpocmdkZDBLTDZocjI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>微软工程师揭秘：Windows其实并不知道你的CPU有多快 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwZk1CWGUyLTZxOHppY0pNbVFnQmQ4cVN3NnRkZXhRNXdNX0h4dFRGU0ZEWi1tV3lMb01iQkNqUG9UdWJkLTF4U3BIUUlMbGVBU1FkbW5qQ0c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;微软工程师揭秘：Windows其实并不知道你的CPU有多快&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-21 18:37:54  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1049060-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月21日消息，微软资深工程师雷蒙德·陈（Raymond Chen）在其博客《The Old New Thing》中解释了Windows系统中一个有趣的现象：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么Windows偶尔会在“设置”的“系统”“关于”页面中显示两次处理器速度，且数值略有不同，就比如下图这样。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250521/5b44a959-4932-48f3-8f50-abebc3bb5657.png" target="_blank"&gt;&lt;img alt="微软工程师揭秘：Windows其实并不知道你的CPU有多快" h="79" src="//img1.mydrivers.com/img/20250521/S5b44a959-4932-48f3-8f50-abebc3bb5657.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;雷蒙德·陈指出，上图实际上显示的是两段信息，其中处理器品牌字符串来自“不可靠”的CPUID函数代码0x80000002至0x80000004。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;其中包含处理器厂商设定的固定显示内容，例如“Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz”，这个字符串中的速度值是厂商设定的基准速度或加速速度，是一个静态值，不会改变。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而Windows系统显示的第二个速度值（如3.71GHz）则是系统对处理器当前运行速度的估算值。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其表示，Windows系统并不实时监测CPU的真实速度，而是通过估算来显示一个大致的频率值，这可能就是为什么有些硬件在任务管理器中显示的规格与实际不符的原因。&lt;/p&gt;
+&lt;p&gt;他提到，如果系统显示的速度高于处理器的基准速度，可能是因为该设备进行了超频，例如，文中提到的3.71GHz比3.60GHz高出约3%，这表明该系统可能进行了超频。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250521/a18c0355ef634cc5963c2a8e01cf85bf.jpg" target="_blank"&gt;&lt;img alt="微软工程师揭秘：Windows其实并不知道你的CPU有多快" h="400" src="//img1.mydrivers.com/img/20250521/s_a18c0355ef634cc5963c2a8e01cf85bf.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 21 May 2025 10:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAwZk1CWGUyLTZxOHppY0pNbVFnQmQ4cVN3NnRkZXhRNXdNX0h4dFRGU0ZEWi1tV3lMb01iQkNqUG9UdWJkLTF4U3BIUUlMbGVBU1FkbW5qQ0c</guid></item><item><title>聚焦台海 - 台湾进入「无核时代」 但未来能源稳定度真的够吗？ - RFI</title><link>https://news.google.com/rss/articles/CBMimwNBVV95cUxPOHl3SWJfRk5nbDlJelBnbjdoMzZLQ2JFa084MHBGdGJLZVRhX3hhaUF1LU1scThoVE93eDlaNC10QlhJVnNXSU5nTTRrajE0TmUtNGxOOTB4OTZVZ2drZWZBZHJrY1VHZFdYOGdTYndwR0NrcHZyZzVGY2RNczFuODhlUjlQVE4tNGJPVFZldU51NjBCYmt5UHVMNlBjSXNrSEM1c1d2TnVIZEpmcmRKRWttVzhMWGY0eVFSNHg1NFNVQlg3aW13M3NBVEliQ3MxLTRYTGtGSXJEbmgtNHZYOTB3bDE1WG5kNjFtRTg1N0xTb3FrdU9CVERHZ3U1R1F2aHN1dG9EQUpURjJuYkxILVk1UHBQa3htYzJBWURxUXUxVzI1TlJqcndiRmg3YTRlbFpqMUViR0JHd0xRZ0RFemJtX3gwWl9lNk94Q1Y0NENHclNsTXNKRGxDYUJ4V2diLVFhd082VDlfQklKU0NoMWtxYm1YX3NDYnBzWUZ1cmNGQUNtSm5pdGl2cGU1WlpNaFVQRk1BaWRVNm8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
+                                                台湾核三2号机在17日午夜停止运转，正式除役，台湾正式进入无核时代。不过许多民众仍担心是否有缺电危机，非核家园又能维持多久？台湾社会对于续用核能争议也持续不断。                    &lt;/p&gt;
+                            
+                                                                        
+                    &lt;div class="t-content__body u-clearfix"&gt;
+                                            
+                                                                &lt;p&gt;台电核三厂2号机自1985年5月18日商转，40年运转执照17日到期，于晚间安全停机。这也代表台湾最后一座运转中的核电厂反应炉正式除役。逐步迈向目前执政党民进党自创党以来即坚持的「非核家园」理念。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;台湾核能发电发展趋势&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;台湾从1960年代开始发展核电，1971年盖第一座核电厂，兴建期间发生1973年石油危机，为确保能源供应，将核电厂列入十大建设。&lt;/p&gt;&lt;p&gt;目前全台湾共有四座核电厂，其中三座营运了数十年，核一、核二位在台湾北部，核三位在台湾南部。而核四则在兴建期间因引起巨大争议目前被封存。&lt;/p&gt;&lt;p&gt;2011年日本发生福岛核事故，引发台湾20万人上街反核，当时政府宣布核一、核二、核三不延役，核四封存。不过在2016年轮到民进党执政时，则提出「2025非核家园」政策，让现有三座核电厂在法定运转时限到期后直接除役。&lt;/p&gt;&lt;p&gt;台湾的核一、核二分别于2019年及2023年除役。核三厂的1号机于2024年七月除役，2号机也在日前停机。&lt;/p&gt;&lt;p&gt;1980年代是核能发电的高峰期，1985年台湾核能的发电占比曾一度供应超过一半电力。随着大型火力发电厂兴建、完工，1990年代之后，火力一直是发电主力，核电占比降至30%左右，2001年起核电占比已降到20%以下。&lt;/p&gt;&lt;p&gt;综观数十年来，台湾核能发电量占比数大幅下降到目前核三2号机时仅剩3%。 2024年台湾电量结构燃气和燃煤发电就占了将近80%，再生能源则占近12%。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;台湾民众的缺电焦虑&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;台电发言人在2号机停机后表示，供电情况正常稳定，跟有核电时没有什么差别。电力来源有太阳能供电、燃气燃煤、水力风力发电等，大家不用担心。&lt;/p&gt;&lt;p&gt;然而，外界开始质疑，无核首夜，火力发电全开，脏空气将成为常态。台电则回应，晚间没有太阳能发电，燃煤燃气的比重会提高，原本就是如此。&lt;/p&gt;&lt;p&gt;不过，随着减碳趋势及半导体产业发展，未来能源稳定度变得更加关键。有民调指出台湾民众现有六至七成支持使用核能，甚至民进党支持者也不再坚定反核。&lt;/p&gt;&lt;p&gt;更有许多民众担忧，夏季将来临，家家户户开冷气，电力可能不够用。面对这样的担忧，行政院长卓荣泰表示，无核家园用电无虞，未来将有系统性的向国人解释各种能源措施。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;台湾社会对于续用核能争议&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;面对全岛迈入「无核状态」，台湾社会对于续用核能展开激烈讨论。国民党首先批评批，无核将导致用电成本飙升、供电不稳，全民将因此多缴上千亿元电费。并称若能延役核电，每年最多可省下1600亿元，这笔钱可用于国防、健保与劳保。&lt;/p&gt;&lt;p&gt;同时国民党也抨击民进党政府坚持废核，却没有完整替代方案，导致发电结构更加仰赖天然气与燃煤，碳排增加、空污风险升高，也将损害AI产业用电稳定性与台湾竞争力。&lt;/p&gt;&lt;p&gt;立法院会也在20日通过民众党团于4月所提出的重启核三公投案。民众党表示，这是基于3个核心原则，第一是尊重专业评估，第二是保障能源稳定，第三是落实民主参与。&lt;/p&gt;&lt;p&gt;另外，随着台湾用电需求持续成长，产业界对核能的倡议也更为频繁。根据BBC报导，和硕联合科技董事长童子贤于立法院发言，指AI晶片制造发展让台湾用电量大增，核电不排碳、发电成本比天然气便宜。全国工业总会也曾向赖清德总统呼吁，核能是可考量选择。&lt;/p&gt;&lt;p&gt;报导也提到，美国在台协会处长谷立言今年两度受访谈论核能议题。他表示，因应台湾AI伺服器资料中心及半导体晶圆厂的能源需求，美国能提供台湾各种能源解决方案，包含核能。&lt;/p&gt;&lt;p&gt;且美国可协助引进既有技术与新兴技术，例如小型模组化反应炉，帮助台湾解决核废料储存问题。&lt;/p&gt;&lt;p&gt;报导分析美国期待台湾拥有核电，以避免战争时能源遭封锁的风险，强化自我防卫韧性。美国在台协会的公开言论，是对民进党政府软性施压的极致。&lt;/p&gt;&lt;p&gt;至于核三究竟会不会重启，赖清德总统在就职周年演说提到，重启程序有2个必须，包括核安会必须订定子法，即安全审查程序办法，以及台电必须依照核安会的办法，进行自主安全检查，评出有无重启的安全条件、期程，及成本效益。&lt;/p&gt;&lt;p&gt;他进一步提到，政府会基于核安无虞、核废有解、社会共识3个原则，面对全球气候变迁、地缘政治威胁，及国际经贸体系等，负责任地审慎以对。针对新式核能的技术问题则尚待研究，政府将视未来情况再做决定。&lt;/p&gt;
+                                                                
+    
+                &lt;/div&gt;
+            
+            
+                    
+                                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Wed, 21 May 2025 10:29:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMimwNBVV95cUxPOHl3SWJfRk5nbDlJelBnbjdoMzZLQ2JFa084MHBGdGJLZVRhX3hhaUF1LU1scThoVE93eDlaNC10QlhJVnNXSU5nTTRrajE0TmUtNGxOOTB4OTZVZ2drZWZBZHJrY1VHZFdYOGdTYndwR0NrcHZyZzVGY2RNczFuODhlUjlQVE4tNGJPVFZldU51NjBCYmt5UHVMNlBjSXNrSEM1c1d2TnVIZEpmcmRKRWttVzhMWGY0eVFSNHg1NFNVQlg3aW13M3NBVEliQ3MxLTRYTGtGSXJEbmgtNHZYOTB3bDE1WG5kNjFtRTg1N0xTb3FrdU9CVERHZ3U1R1F2aHN1dG9EQUpURjJuYkxILVk1UHBQa3htYzJBWURxUXUxVzI1TlJqcndiRmg3YTRlbFpqMUViR0JHd0xRZ0RFemJtX3gwWl9lNk94Q1Y0NENHclNsTXNKRGxDYUJ4V2diLVFhd082VDlfQklKU0NoMWtxYm1YX3NDYnBzWUZ1cmNGQUNtSm5pdGl2cGU1WlpNaFVQRk1BaWRVNm8</guid></item><item><title>小鹏智驾系统高速异常致翻车 客服回应：偶发软件控制异常 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBJN3ZuOW9qVlQycVFjYkFnQ09MdlpPc3FLSnJObmhGWUVLQ1U5MXdpSi1jU0t4NVNxLVQ1MWFRa0IxemRIdjllQWtzcUtySUpuaUxmV1pfamo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月21日消息，据媒体报道，在今年“五一”期间，一男子驾驶小鹏汽车从云南昭通开往昆明的路途中，&lt;strong&gt;智能驾驶突然从导航辅助模式（NGP）异常跳转为了自动应巡航模式（ACC），导致车辆撞上高速护栏&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;当事人表示：“我的智驾里程已经有3000多公里了，我就是因为很相信小鹏的智驾才买这个车的”。&lt;/p&gt;
+&lt;p&gt;据了解，该男子与其他小鹏车主还有一个车友群，里面有许多人也出现了类似的情况。事发后，男子称不再敢使用智驾模式了。&lt;/p&gt;
+&lt;p&gt;事发后，小鹏方面回应男子称：&lt;strong&gt;初步判断是因为偶发软件控制异常降级至ACC，车辆是正常的，不用担心，后续会持续优化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;近日，小鹏汽车回应媒体称，从NGP降到ACC会提示驾驶员的，&lt;strong&gt;具体为什么会出现这个情况需要到店检查，以门店的检查为准&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;值得一提的是，在今年4月举办的“小鹏全球热爱之夜”活动上，小鹏汽车创始人何小鹏曾表示：&lt;strong&gt;小鹏非常有信心能够在今年年底实现L3级别的自动驾驶能力在中国量产落地。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250521/53324af2e17f433e825435d3ddc10537.png" target="_blank"&gt;&lt;img alt="小鹏智驾系统高速异常致翻车 客服回应：偶发软件控制异常" h="285" src="//img1.mydrivers.com/img/20250521/s_53324af2e17f433e825435d3ddc10537.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250521/26aed932dd98455198f13ae64078a871.png" target="_blank"&gt;&lt;img alt="小鹏智驾系统高速异常致翻车 客服回应：偶发软件控制异常" h="333" src="//img1.mydrivers.com/img/20250521/s_26aed932dd98455198f13ae64078a871.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，小鹏将不断加码以智驾为核心的AI技术投入，&lt;strong&gt;致力成为中国首家将顶级智驾能力在全球落地的车企。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;何小鹏强调，中国和美国都会在今年的年底进入到有部分车实现L3级智能辅助驾驶能力。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 21 May 2025 09:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBJN3ZuOW9qVlQycVFjYkFnQ09MdlpPc3FLSnJObmhGWUVLQ1U5MXdpSi1jU0t4NVNxLVQ1MWFRa0IxemRIdjllQWtzcUtySUpuaUxmV1pfamo</guid></item><item><title>AMD官宣FSR重大更新！带来机器学习光线追踪、帧生成等 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LSEE4VlVMcGlpaWxlSG96VEdiTFNaNzZ5WGVXWGhVVmlHNTFqek11NlM4ODN6bVEwWDZCUC0yT0JILVVWNU1PUThGNmpocmdkZDBLTDZocjI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;AMD官宣FSR重大更新！带来机器学习光线追踪、帧生成等&lt;/p&gt;
           
@@ -279,7 +377,68 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 21 May 2025 05:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5rMnAxYzd6T0g4NjIyVUZtTm1vMXNXR2VPNmdSREFJOFlGVEYtcjgtX0czZ3JDaHBNRm1CQ29LWVlUbVhMcXo1S09NeXJxRUtrOFUxMEtiT3o</guid></item><item><title>谷歌携中企，推出全球首款安卓XR眼镜 - 观察者</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Tc1RZRHBNZWZkQjkxZ0xmX25RVzNkMnpYd1JQbHRob1FQM0x1V0VHY1ZBblFOcVE1SnFBMFBjMnUwNktLUG1wX1B1Yi1ydVkya25IOVpXdDQzaUZMY2RUbV95NHI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 21 May 2025 05:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5rMnAxYzd6T0g4NjIyVUZtTm1vMXNXR2VPNmdSREFJOFlGVEYtcjgtX0czZ3JDaHBNRm1CQ29LWVlUbVhMcXo1S09NeXJxRUtrOFUxMEtiT3o</guid></item><item><title>《人民日报》点赞华为鸿蒙PC、小米自研3nm芯片：科技兴国 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9mZWlxZXk0dmdxZndzblY2R0ljd0poYkpMdW1uaGxpX3ZfQl9ReVBuQkJ6UWpqWFd0cU1zcFloempDWEg2NmoyOVdsQ0U4amNuYkJvUW1ybFM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;《人民日报》点赞华为鸿蒙PC、小米自研3nm芯片：科技兴国&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-21 13:04:38  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1048955-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月21日消息，《人民日报》今日发文称，新的时代条件下，如何“继续把制造业搞好”？离不开科技赋能！&lt;/p&gt;
+&lt;p&gt;文章中指出：现代制造业离不开科技赋能，要大力加强技术攻关，走自主创新的发展路子。 科技赋能，首先要打赢关键核心技术攻坚战，实现产业升级。&lt;/p&gt;
+&lt;p&gt;《人民日报》还点评了，华为鸿蒙PC、小米自研3nm芯片，认为这都是加强技术攻关，走自主创新的发展路的代表。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;从华为发布首次应用鸿蒙操作系统的个人电脑，到小米宣布自主研发设计的3纳米制程手机处理器芯片玄戒O1大规模量产，正是因为瞄准前沿关键技术加大攻关，填补了行业空白，产业实现了向高端跃升。 &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;我国已建成近万家数字化车间和智能工厂，人工智能等技术广泛应用。面向未来，加快新技术推广应用，以数智化改造提高全要素生产率，必将驱动制造业质量变革、效率变革、动力变革。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250521/5b39dc197dfb4a1bac84d993c10bd2ca.jpg" target="_blank"&gt;&lt;img alt="《人民日报》点赞华为鸿蒙PC、小米自研3nm芯片：科技兴国" h="450" src="//img1.mydrivers.com/img/20250521/s_5b39dc197dfb4a1bac84d993c10bd2ca.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 21 May 2025 05:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9mZWlxZXk0dmdxZndzblY2R0ljd0poYkpMdW1uaGxpX3ZfQl9ReVBuQkJ6UWpqWFd0cU1zcFloempDWEg2NmoyOVdsQ0U4amNuYkJvUW1ybFM</guid></item><item><title>谷歌携中企，推出全球首款安卓XR眼镜 - 观察者</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Tc1RZRHBNZWZkQjkxZ0xmX25RVzNkMnpYd1JQbHRob1FQM0x1V0VHY1ZBblFOcVE1SnFBMFBjMnUwNktLUG1wX1B1Yi1ydVkya25IOVpXdDQzaUZMY2RUbV95NHI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
 &lt;/p&gt;
@@ -811,7 +970,34 @@
   &lt;/article&gt;
 &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 21 May 2025 02:46:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTFBGZHBXY0Ixd0haTVpsR0lkWFBkdmw0VW9hMXU4VmZicHlTMFNsVTRnNlR2bWRneWtJblEtRDZqMHUyc1E</guid></item><item><title>黄仁勋称美国对华AI晶片出口管制“是一次失败” - 联合早报</title><link>https://news.google.com/rss/articles/CBMib0FVX3lxTE1DVDFwVndPb3lyT1FwbmltVmZMemY2REtQT0ZDd25UWTYwbmhJeFJDbVNBNW41TnVpM0lxcS1YSXR1ZEdnZnBvTWVmVUo2bU5TZHc1T0FzRE4xRzdzNmgzVkdJNXRDYmZESzlVMHMwNA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;p&gt;中美就晶片问题交锋，英伟达首席执行官黄仁勋星期三（5月21日）表示，美国对人工智能晶片出口至中国的管制“是一次失败”。&lt;/p&gt;&lt;p&gt;据路透社报道，黄仁勋在台北国际电脑展（COMPUTEX）上说，自美国总统拜登上任初期以来，英伟达在中国的市场份额已从95%降至50%。&lt;/p&gt;&lt;p&gt;黄仁勋的发言正值中美最新一轮就晶片问题交锋。美国商务部上周发布指引，警告企业使用中国晶片可能违反美国出口管制规定。&lt;/p&gt;&lt;p&gt;中国商务部星期三则表示，美国措施是单边霸凌和保护主义做法，并警告任何个人或组织执行或协助执行美国的相关措施，将涉嫌违反中国的反外国制裁法。&lt;/p&gt;&lt;p&gt;据中时新闻网报道，黄仁勋星期三还在媒体交流会上说，出口管制政策会让中国企业更加速发展自己的人工智能（AI）晶片技术。&lt;/p&gt;
     
-  &lt;p&gt;对于英伟达需要在允许的情况下才能将H20晶片出口中国，黄仁勋表示，这让英伟达的亏损认列达数十亿美元，这个数字可能跟很多半导体设计公司的季营收相当。&lt;/p&gt;&lt;p&gt;黄仁勋说，中国的市场非常重要，因为全球有50％的AI研究人员在大陆，希望AI研究人员是基于英伟达的架构下进行开发。&lt;/p&gt;&lt;p&gt;他说，深度求索（DeepSeek）就是建立在英伟达的架构中，也是很优秀的AI模型。他指出，中国公司“很有才华，出口管制让他们加速发展自己的AI技术，其中也有当地政府的支持，事实已经表明了这样的情况”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Wed, 21 May 2025 02:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTE1DVDFwVndPb3lyT1FwbmltVmZMemY2REtQT0ZDd25UWTYwbmhJeFJDbVNBNW41TnVpM0lxcS1YSXR1ZEdnZnBvTWVmVUo2bU5TZHc1T0FzRE4xRzdzNmgzVkdJNXRDYmZESzlVMHMwNA</guid></item><item><title>华硕发布顶级3000瓦电源：4块RTX 5090也能轻松喂饱！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE05ZEhhMXNQRlNNY05WZkprU01kaDVuSFUyb0E5NlFIWERua0Z6eU1zeE5FZUNkSzg3OUZIcUxnTkpzcWZydl82M2Z1LTljeVFWSUV2OGxYcTA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+  &lt;p&gt;对于英伟达需要在允许的情况下才能将H20晶片出口中国，黄仁勋表示，这让英伟达的亏损认列达数十亿美元，这个数字可能跟很多半导体设计公司的季营收相当。&lt;/p&gt;&lt;p&gt;黄仁勋说，中国的市场非常重要，因为全球有50％的AI研究人员在大陆，希望AI研究人员是基于英伟达的架构下进行开发。&lt;/p&gt;&lt;p&gt;他说，深度求索（DeepSeek）就是建立在英伟达的架构中，也是很优秀的AI模型。他指出，中国公司“很有才华，出口管制让他们加速发展自己的AI技术，其中也有当地政府的支持，事实已经表明了这样的情况”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Wed, 21 May 2025 02:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTE1DVDFwVndPb3lyT1FwbmltVmZMemY2REtQT0ZDd25UWTYwbmhJeFJDbVNBNW41TnVpM0lxcS1YSXR1ZEdnZnBvTWVmVUo2bU5TZHc1T0FzRE4xRzdzNmgzVkdJNXRDYmZESzlVMHMwNA</guid></item><item><title>官宣！小米将同时采用高通/玄戒处理器：小米16首批搭载下一代骁龙8 Elite - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE96NEVWN0VfMXIzYWdZYnBrUTZCdFktYkVRaWRPLTZlYW9USlZKQnNkbkNkbGY1VW9NSXg1NWhYWXJ2MnA3dERGZHloYl9remxHOHF4TGpzdjY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月21日消息，很多人在问，&lt;span&gt;玄戒来了，高通怎么办，下一代小米16还会用骁龙处理器吗？&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;刚刚，&lt;a class="f14_link" href="https://www.qualcomm.cn/news/releases/2025/05/releases-2025-05-201" target="_blank"&gt;官方答案来了&lt;/a&gt;，回应了一切猜疑。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250521/3ceefb37c3274cd6af71a22869283fa7.jpg" target="_blank"&gt;&lt;img alt="官宣！小米将同时采用高通/玄戒处理器：小米16首批搭载下一代骁龙8 Elite" h="390" src="//img1.mydrivers.com/img/20250521/s_3ceefb37c3274cd6af71a22869283fa7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今日，&lt;span&gt;&lt;strong&gt;高通宣布与小米签署多年协议，拓展合作关系，在15年的合作基础上，伙伴关系持续深化。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;言外之意，&lt;strong&gt;双方的合作不仅将继续，还会持续加深，并没有外界传闻的小米与高通“脱钩”之说&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;其次，双方还确认，&lt;strong&gt;小米旗舰智能手机将在多个产品代际中继续搭载骁龙8系移动平台&lt;/strong&gt;，在协议期内出货量预计将逐年增长。&lt;/p&gt;
+&lt;p&gt;第三，&lt;strong&gt;&lt;span&gt;小米将会是在中国及全球范围首批采用即将于今年晚些时候发布的下一代骁龙8系旗舰移动平台的厂商之一。&lt;/span&gt;等于提前宣告小米16首批搭载下一代骁龙8 Elite&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250521/e3435fc2c347427e9ab3d8e23ad517b5.png" target="_blank"&gt;&lt;img alt="官宣！小米将同时采用高通/玄戒处理器：小米16首批搭载下一代骁龙8 Elite" h="400" src="//img1.mydrivers.com/img/20250521/s_e3435fc2c347427e9ab3d8e23ad517b5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小米集团CEO雷军表示：“小米一路从初创公司发展成为全球科技领军企业，高通技术公司始终是我们最值得信赖、最重要的合作伙伴之一。我们期待下一个15年继续携手合作，利用高通技术公司先进的骁龙平台和技术，为全球用户提供更具创新性的高品质产品。”&lt;/p&gt;
+&lt;p&gt;这也印证了我们此前的猜测。&lt;span&gt;&lt;strong&gt;在未来很长一段时间内，小米绝大多数手机的主要芯片，仍然会出自高通，包括每一代旗舰机也会首发骁龙旗舰平台。而玄戒主要会在一些S级旗舰机和Ultra系列产品上采用，与高通芯片并行。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;事实上，如果稍微仔细想想，也会明白，小米做玄戒，并不是为了替代高通。&lt;/p&gt;
+&lt;p&gt;因为没有自研SoC芯片，小米就进入不了全球顶级科技公司行列。手机行业已经进入下半场的淘汰赛，必须在核心技术上突破，才能更好的“软硬结合”，才能做出更有特色更有竞争力的产品。只有做高端旗舰SoC，才能真正掌握先进的芯片技术，才能更好支持小米的高端化战略。&lt;/p&gt;
+&lt;p&gt;另外，&lt;strong&gt;小米手机年出货量上亿，现阶段玄戒芯片的产能根本无法完全覆盖旗舰产品线。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;哪怕之前的三星和华为，有自研处理器的情况下，也用高通和联发科的芯片&lt;/strong&gt;，大家都采用这样的策略。包括苹果的基带，之前也一直用的是高通的，只做了AP。&lt;/p&gt;
+&lt;p&gt;所以，对于小米来说，最终目的是自研芯片解决核心问题，然后内外兼修把产品做得更好，不是说小米要成为一家独立的芯片供应商，更多的还是掌握核心技术，把手机做得更有特色。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250521/57a837209c934f258c29ebc6e1b9baac.jpg" target="_blank"&gt;&lt;img alt="官宣！小米将同时采用高通/玄戒处理器：小米16首批搭载下一代骁龙8 Elite" h="800" src="//img1.mydrivers.com/img/20250521/s_57a837209c934f258c29ebc6e1b9baac.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 21 May 2025 02:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE96NEVWN0VfMXIzYWdZYnBrUTZCdFktYkVRaWRPLTZlYW9USlZKQnNkbkNkbGY1VW9NSXg1NWhYWXJ2MnA3dERGZHloYl9remxHOHF4TGpzdjY</guid></item><item><title>华硕发布顶级3000瓦电源：4块RTX 5090也能轻松喂饱！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE05ZEhhMXNQRlNNY05WZkprU01kaDVuSFUyb0E5NlFIWERua0Z6eU1zeE5FZUNkSzg3OUZIcUxnTkpzcWZydl82M2Z1LTljeVFWSUV2OGxYcTA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;华硕发布顶级3000瓦电源：4块RTX 5090也能轻松喂饱！&lt;/p&gt;
           
@@ -1452,7 +1638,7 @@
 
         &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 20 May 2025 23:42:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5CU01kUFJBQkJOTndNamJOUVlYYlNhZ3RFY2xma3B3dmtSTXAyY0lOWlY2MmxGZHhUMlJaQUlzZHB0dW4wc3NVV2oyU3NZcmQ2bVVjWndxMVBENGRZVzc2SQ</guid></item><item><title>阿里相对低估 - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE9IMWpMV1hSY2ZKcWZzczlEb09lVVU3aGVvcWtHYS1sZkpmWXpnRldzbWI2S1NsSWgyaGp1eWdCOGdpZVNTNW9ybUtFX0JESGxVXzFYMw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="454914"&gt;2025年5月15日，阿里巴巴（）发布了2025财年财报。报告期内，阿里巴巴营收9963亿、同比增长5.9%；经营利润1409亿、同比增长24.3%；净利润1260亿、同比增长76.6%。&lt;/p&gt;&lt;p data-check-id="504134"&gt; &lt;/p&gt;&lt;p data-check-id="593840"&gt;截至5月15日收盘，阿里巴巴港股、美股年内分别上涨43.8%、45.6%。除业绩超预期、核心业务展现韧性之外，一个非常重要的原因是投资人对阿里AI能力、AI路线的认可。在中国大型科技企业中，阿里最早布局，市场份额居首；在AI相关领域持续投入重金，保持领先地位。&lt;/p&gt;&lt;p data-check-id="861902"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="281578"&gt;2025年1月，阿里云公布通义千问旗舰版模型Qwen2.5-Max；2月13日，阿里官宣将与苹果合作、为中国市场iphone开发人工智能功能。&lt;/p&gt;&lt;p data-check-id="976751"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="219953"&gt;2025年2月24日，阿里发布公告称：“未来3年将投入至少3800亿（）用于建设AI和云计算基础设施”、“突显本公司对AI驱动增长的聚焦及作为全球领先云计算供应商的定位 ”。&lt;/p&gt;&lt;p data-check-id="403529"&gt; &lt;/p&gt;&lt;p data-check-id="616183"&gt;DeepSeek的横空出世，让全世界从整体上对中国人工智能有了全新的认识。&lt;/p&gt;&lt;p data-check-id="914285"&gt; &lt;/p&gt;&lt;p data-check-id="177361"&gt;截至5月15日收盘，阿里市值约3000亿美元，动态市盈率16.3倍。亚马逊市值2.2万亿美元，动态市盈率36.8倍。&lt;/p&gt;&lt;p data-check-id="757850"&gt; &lt;/p&gt;&lt;p data-check-id="166506" label="大标题" class="text-big-title"&gt;两张图看懂阿里营收结构&lt;/p&gt;&lt;p data-check-id="595654"&gt; &lt;/p&gt;&lt;p data-check-id="588659" label="小标题" class="text-sm-title"&gt;1）六大集团座次微调&lt;/p&gt;&lt;p data-check-id="359369"&gt; &lt;/p&gt;&lt;p data-check-id="867212"&gt;2023年，阿里完成了“1+6+N”组织架构调整。其中“6”代表六大集团。&lt;/p&gt;&lt;p data-check-id="481469"&gt; &lt;/p&gt;&lt;p data-check-id="586945"&gt;2025财年，六大集团按营收排序如下：&lt;/p&gt;&lt;p data-check-id="644472"&gt; &lt;/p&gt;&lt;p data-check-id="730060"&gt;老大淘天集团（），老二国际数字商业集团（），老三云智能集团（），老四菜鸟集团（），老五本地生活集团（），老六大文娱集团（）。&lt;/p&gt;&lt;p data-check-id="323770"&gt; &lt;/p&gt;&lt;p data-check-id="136741" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/100346524873.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="675"&gt;&lt;/p&gt;&lt;p data-check-id="583358"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="735702"&gt;2025财年，在阿里集团合并收入中：淘天占45.1%，一家独大；国际数字商业占13.3%、云智能占11.8%、菜鸟占10.2%，为第二梯队；本地生活占6.7%、大文娱占2.2%，为第三梯队。&lt;/p&gt;&lt;p data-check-id="719803"&gt; &lt;/p&gt;&lt;p data-check-id="772049"&gt;与上个财年相比，六大集团营收排序仅有微小变化：排第二的云智能退居第三，国际数字商业跃居第二。&lt;/p&gt;&lt;p data-check-id="665969"&gt; &lt;/p&gt;&lt;p data-check-id="633954" label="小标题" class="text-sm-title"&gt;2）“出海”拉动营收增长&lt;/p&gt;&lt;p data-check-id="276908"&gt; &lt;/p&gt;&lt;p data-check-id="741282"&gt;在不抵消分部间收入的情况下，2025财年营收同比增长815亿，六大集团均有贡献：&lt;/p&gt;&lt;p data-check-id="845211"&gt; &lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="901369"&gt;第一名国际数字商业集团，营收增长294亿、贡献率36.1%；&lt;/p&gt;&lt;p data-check-id="807361"&gt; &lt;/p&gt;&lt;p data-check-id="664759"&gt;第二名淘天集团，营收增长149亿、贡献率18.3%;&lt;/p&gt;&lt;p data-check-id="330362"&gt; &lt;/p&gt;&lt;p data-check-id="798154"&gt;第三名云智能，营收增长17亿、贡献率14.3%；&lt;/p&gt;&lt;p data-check-id="824238"&gt; &lt;/p&gt;&lt;p data-check-id="336466"&gt;第四名本地生活，营收增长73亿、贡献率8.9%；&lt;/p&gt;&lt;p data-check-id="816440"&gt; &lt;/p&gt;&lt;p data-check-id="803809"&gt;菜鸟、大文娱贡献率分别只有2.8%、1.4%。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="520715" class="img-center-box"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="233697" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/100628525634.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="651"&gt;&lt;/p&gt;&lt;p data-check-id="720223"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="835222" class="text-normal" label="正文"&gt;六大集团合计贡献2025财年营收增长（）的81.8%。六大集团之外的“所有其他”（）营收增长约100亿。&lt;/p&gt;&lt;p data-check-id="596471"&gt; &lt;/p&gt;&lt;p data-check-id="195537"&gt;若剔除分部间收入，数字商业国际、淘天、云智能、本地生活贡献率分别为53.3%、27.1%、21.1%、13.2%。&lt;/p&gt;&lt;p data-check-id="805399"&gt; &lt;/p&gt;&lt;p data-check-id="658138" label="大标题" class="text-big-title"&gt;淘天集团——瘦身成功的现金牛&lt;/p&gt;&lt;p data-check-id="858298"&gt; &lt;/p&gt;&lt;p data-check-id="827475" label="小标题" class="text-sm-title"&gt;1）淘天集团营收结构&lt;/p&gt;&lt;p data-check-id="249910"&gt; &lt;/p&gt;&lt;p data-check-id="186457"&gt;淘天集团营收分为“中国零售”、“中国批发”两部分，前者占比超过90%。&lt;/p&gt;&lt;p data-check-id="768785"&gt; &lt;/p&gt;&lt;p data-check-id="418034"&gt;例如2025财年，淘天集团营收4498亿。其中“零售”、“批发”收入分别为3323.5亿、1031.8亿，零售占比 94.6%。&lt;/p&gt;&lt;p data-check-id="436827"&gt; &lt;/p&gt;&lt;p data-check-id="634386"&gt;“中国零售”营收又分为两类——客户管理及直营。由于业务调整，直营业务收入呈现下滑趋势。&lt;/p&gt;&lt;p data-check-id="589596"&gt; &lt;/p&gt;&lt;p data-check-id="495865"&gt;2024年Q4，客户管理收入1008亿、同比增长9.4%；直营收入287亿、同比下降9.2%。&lt;/p&gt;&lt;p data-check-id="531583"&gt; &lt;/p&gt;&lt;p data-check-id="482341"&gt;刚刚过去的2025年Q1，客户管理收入710.8亿、同比增长11.8%，远高于2024年Q1（）；直营收入245亿、同比下降0.8%。&lt;/p&gt;&lt;p data-check-id="689980"&gt; &lt;/p&gt;&lt;p data-check-id="722224" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/101356066256.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="651"&gt;&lt;/p&gt;&lt;p data-check-id="662670"&gt; &lt;/p&gt;&lt;p data-check-id="260526"&gt;从上图还可以看到电商平台业绩的季节性波动：自然年的第一个季度出现波谷、第四个季度出现波峰。&lt;/p&gt;&lt;p data-check-id="518901"&gt; &lt;/p&gt;&lt;p data-check-id="587346"&gt;批发业务中阿里的传统强项，居然老树发新芽：2024财年营收205亿、同比增长14.7%；2025财年营收243亿、再增18.7%。但由于占比仅为5%，对淘天集团业绩影响不大。&lt;/p&gt;&lt;p data-check-id="789756"&gt; &lt;/p&gt;&lt;p data-check-id="265213" label="小标题" class="text-sm-title"&gt;2）架构调整的效果&lt;/p&gt;&lt;p data-check-id="614958"&gt; &lt;/p&gt;&lt;p data-check-id="425695"&gt;“淘天集团”是原“中国商业”的瘦身版，保留“中国零售”、“中国批发”两大核心业务，将高鑫零售、盒马、阿里健康等业务剥离、归入“所有其他”（）。&lt;/p&gt;&lt;p data-check-id="927435"&gt; &lt;/p&gt;&lt;p data-check-id="715140"&gt;2022财年，中国商业营收达5915.8亿、同比增长18%。其中，直营收入增长781亿（）。但是，中国商业EBIT却下降了14.6%，少赚312亿，利润率从2021财年的42.6%降至2022财年的30.8%。根本原因是直营业务贡献了营收、伤害了利润。&lt;/p&gt;&lt;p data-check-id="661075"&gt; &lt;/p&gt;&lt;p data-check-id="338473"&gt;2023财年，中国商业“瘦身”为“淘天集团”。对比发现，淘天口径计入的营收“断崖式”减少1695亿，EBIT反而增加了42.8亿，利润率提高14.1个百分点（）。&lt;/p&gt;&lt;p data-check-id="936151"&gt; &lt;/p&gt;&lt;p data-check-id="292670"&gt;2024财年，淘天集团EBIT达1948亿、利润率44.8%；2025财年，淘天集团EBIT达1962亿、利润率43.5%。&lt;/p&gt;&lt;p data-check-id="748168"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="618048" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/101444197899.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="617"&gt;&lt;/p&gt;&lt;p data-check-id="565472"&gt; &lt;/p&gt;&lt;p data-check-id="226580"&gt;“瘦身”后的淘天集团，盈利能力显著提高，现金牛更为“精壮”。&lt;/p&gt;&lt;p data-check-id="510942"&gt; &lt;/p&gt;&lt;p data-check-id="273889"&gt;淘天集团以外的五大集团，既然被保留而不是装入“所有其他”的筐，说明阿里对相应五大战略方向的认可——出海、云智能、物流、娱乐、本地生活。目前，前三个已经有了“大模样”。&lt;/p&gt;&lt;p data-check-id="130760"&gt; &lt;/p&gt;&lt;p data-check-id="473438" label="大标题" class="text-big-title"&gt;国际数字商业&lt;/p&gt;&lt;p data-check-id="727250"&gt; &lt;/p&gt;&lt;p data-check-id="113121"&gt;阿里国际商业分部也包含零售、批发两部分。零售业务包括Lazada、速卖通、Trendyol和Daraz。批发业务主要通过Alibaba.com平台完成交易。&lt;/p&gt;&lt;p data-check-id="490710"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="143430"&gt;2023财年，国际零售、国际批发收入509.3亿分别为195.7亿，零售占比72.2%；&lt;/p&gt;&lt;p data-check-id="749029"&gt; &lt;/p&gt;&lt;p data-check-id="252249"&gt;2024财年，国际零售收入达816.5亿、同比增长60%，占比提高到79.6%；&lt;/p&gt;&lt;p data-check-id="221117"&gt; &lt;/p&gt;&lt;p data-check-id="757081"&gt;2025财年，国际零售收入1084.7亿、占比达82%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="589951"&gt; &lt;/p&gt;&lt;p data-check-id="236175"&gt;过往四个自然季（），零售营收增速高于批发，2025年Q1占比提高到82.2%：&lt;/p&gt;&lt;p data-check-id="709344"&gt; &lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="158958"&gt;2024年Q2，零售、批发营收分别为237亿、56亿；同比增幅分别为38.2%、12.4%；&lt;/p&gt;&lt;p data-check-id="492601"&gt; &lt;/p&gt;&lt;p data-check-id="299870"&gt;2024年Q3，零售、批发营收分别为256亿、61亿；同比增幅分别为35%、9.4%；&lt;/p&gt;&lt;p data-check-id="910102"&gt; &lt;/p&gt;&lt;p data-check-id="251433"&gt;2024年Q4，零售、批发营收分别为316亿、62亿；同比增幅分别为35.7%、18%；&lt;/p&gt;&lt;p data-check-id="877354"&gt; &lt;/p&gt;&lt;p data-check-id="611223"&gt;2025年Q1，零售、批发营收分别276亿、60亿；同比增幅分别为23.9%、15.6%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="623407"&gt; &lt;/p&gt;&lt;p data-check-id="833716" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/144943322750.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="596"&gt;&lt;/p&gt;&lt;p data-check-id="357505"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="692313"&gt;自2025年5月2日起，美国对每件包裹缴纳其价值90%或每件75美元的关税。&lt;/p&gt;&lt;p data-check-id="703169"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="867203"&gt;2025年5月12日，美中双方互降关税；5月14日对来自中国包裹的关税税率下调至54%。几个回合打下来，证明了世界各国（）对中国价廉物美商品的需求有很大刚性，高额关税不得民心。&lt;/p&gt;&lt;p data-check-id="159903"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="778096"&gt;尽管存在不确定性，国际数字商业仍将是推动营收增长的主要动力。&lt;/p&gt;&lt;p data-check-id="554814"&gt; &lt;/p&gt;&lt;p data-check-id="757685" label="大标题" class="text-big-title"&gt;云智能远未到该赚钱的时候&lt;/p&gt;&lt;p data-check-id="403050"&gt; &lt;/p&gt;&lt;p data-check-id="244663"&gt;云业务包括阿里云和钉钉，目前是世界第三、亚洲第一的IaaS提供商。阿里云也是中国最大的公有云服务提供商（）。2023财年，阿里云营收772亿、同比增长4%。&lt;/p&gt;&lt;p data-check-id="641336"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="177012"&gt;2023年4月，阿里云发布大语言模型（）——通义千问，已开始融入阿里生态体系中各业务。而且，智能云集团已向外部客户开放通义千问服务。&lt;/p&gt;&lt;p data-check-id="423732"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="423441"&gt;2024年大幅降价后，客户几乎可以免费获得AI赋能，提高用户体验。&lt;/p&gt;&lt;p data-check-id="870882"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="109121"&gt;新增的AI功能几乎免费，却有力地推动收费服务增长，AI相关收入连续7个季度实现三位数增长，云智能板块财年收入增速达11%。其中，2025年Q1增速接近18%：&lt;/p&gt;&lt;p data-check-id="819610"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="465787"&gt;2024年Q2，收入265亿、同比增长5.7%；&lt;/p&gt;&lt;p data-check-id="521650"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="907652"&gt;2024年Q3，收入296亿、同比增长7.1%；&lt;/p&gt;&lt;p data-check-id="873684"&gt; &lt;/p&gt;&lt;p data-check-id="878937"&gt;2024年Q4，收入317亿、同比增长13.1%；&lt;/p&gt;&lt;p data-check-id="232924"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="747663"&gt;2025年Q1，收入301亿、同比增长17.7%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="166553" class="img-center-box"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="266994" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/144526946073.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="574"&gt;&lt;/p&gt;&lt;p data-check-id="530098"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="845347"&gt;2022财年，云智能首次盈利。最近三年盈利能力稳步提高：&lt;/p&gt;&lt;p data-check-id="156858"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="292033"&gt;2023财年，EBIT为41亿、利润率4%；&lt;/p&gt;&lt;p data-check-id="213879"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="790492"&gt;2024财年，EBIT提高到61亿、利润率5.8%；&lt;/p&gt;&lt;p data-check-id="699274"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="277455"&gt;2025财年，EBIT达106亿、利润率8.9%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="230295"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="635998" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/104735424242.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="618"&gt;&lt;/p&gt;&lt;p data-check-id="469614"&gt; &lt;/p&gt;&lt;p data-check-id="629148"&gt;扭亏为盈曾是云业务的奋斗目标。现在看来，赚钱不该是首要目标，好比AI专业在读的博士，还没到赚大钱的时候。&lt;/p&gt;&lt;p data-check-id="311245"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="275537" label="大标题" class="text-big-title"&gt;重估阿里的三重逻辑&lt;/p&gt;&lt;p data-check-id="947332"&gt; &lt;/p&gt;&lt;p data-check-id="515504"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="867473"&gt;跨境业务是“第二增长曲线”，底层逻辑是做加法。假设市销率保持2.0不变，营收增长50%，估值也提高50%。&lt;/p&gt;&lt;p data-check-id="498756"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="965628"&gt;与传统贸易相比，跨境电商可以提供更多丰富的商品、更加快捷的服务，而且减少了中间环节，降低了流通成本，给买卖双方带来实惠。跨境电商有极大的增长空间。&lt;/p&gt;&lt;p data-check-id="771855"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="710469"&gt;假以时日，出海业务有可能在境外再造一个阿里。&lt;/p&gt;&lt;p data-check-id="180384"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="529056"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="354522"&gt;云智能+AI对业务、对估值都是乘法。&lt;/p&gt;&lt;p data-check-id="450732"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="730757"&gt;依托“AI基建”，阿里内部、外部用户在AI应用方面“先行一步”：淘天AI驱动“全站推广”，显著提高商家营销效率；面向海外卖家的Accio企业用户超过百万；高德、飞猪、饿了么、菜鸟……均已上线各自的AI工具/服务。&lt;/p&gt;&lt;p data-check-id="928223"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="596995"&gt;估值方面，目前阿里市盈率是16倍。当AI能力得到充分认可，估值有望大幅提升。&lt;/p&gt;&lt;p data-check-id="251612"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="233070"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="407264"&gt;国际资本流动大势是“东升西降”——美元及美元资产走弱、人民币及人民币资产走强。香港资本市场成为热土，优质中国公司将受到追捧。&lt;/p&gt;&lt;p data-check-id="360299"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="162850"&gt;阿里在恒生科技指数（）的权重为8%（），且阿里估值最低，仅为16倍（）。投资圈有“不熟不投”的戒律，欧美资本对阿里的熟知和认可显然高于另外四家。&lt;/p&gt;&lt;p data-check-id="423604"&gt;&lt;span disable-audio="true" disable-copy="true"&gt;&lt;span rl-type="stop"&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;         &lt;/p&gt;&lt;p data-check-id="949166"&gt;  &lt;/p&gt;&lt;p data-check-id="961130" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/20/223905767431.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="800" data-h="304"&gt;&lt;/p&gt;&lt;p data-check-id="306448"&gt;&lt;/p&gt;&lt;p data-check-id="204337"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="161480"&gt;&lt;/p&gt;&lt;p data-check-id="949166"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="318202" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/20/223932395472.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="800" data-h="450"&gt;&lt;/p&gt;&lt;p data-check-id="447420"&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;                &lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 20 May 2025 23:42:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5CU01kUFJBQkJOTndNamJOUVlYYlNhZ3RFY2xma3B3dmtSTXAyY0lOWlY2MmxGZHhUMlJaQUlzZHB0dW4wc3NVV2oyU3NZcmQ2bVVjWndxMVBENGRZVzc2SQ</guid></item><item><title>“俄罗斯人认为中国的产品不好”，这说法误解了一个现实-袁保忠 - 观察者</title><link>https://news.google.com/rss/articles/CBMia0FVX3lxTE5wWVRHYVJrU2Rwa01BS3gySEQ3MGY1enhjY21lb1VueHkyQU9Peko5bXZRRHd2U0ZuTzVPWkxxcWthTGNiVkl4NlZKbXV2Q0VzQjNlWGRDUWxRWnJNWFRBX0p1SzJoeXZHTjNZ?oc=5</link><description>&lt;a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5wWVRHYVJrU2Rwa01BS3gySEQ3MGY1enhjY21lb1VueHkyQU9Peko5bXZRRHd2U0ZuTzVPWkxxcWthTGNiVkl4NlZKbXV2Q0VzQjNlWGRDUWxRWnJNWFRBX0p1SzJoeXZHTjNZ?oc=5" target="_blank"&gt;“俄罗斯人认为中国的产品不好”，这说法误解了一个现实-袁保忠&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;观察者&lt;/font&gt;</description><author>观察者</author><pubDate>Tue, 20 May 2025 23:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMia0FVX3lxTE5wWVRHYVJrU2Rwa01BS3gySEQ3MGY1enhjY21lb1VueHkyQU9Peko5bXZRRHd2U0ZuTzVPWkxxcWthTGNiVkl4NlZKbXV2Q0VzQjNlWGRDUWxRWnJNWFRBX0p1SzJoeXZHTjNZ</guid></item><item><title>阿里相对低估 - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE9IMWpMV1hSY2ZKcWZzczlEb09lVVU3aGVvcWtHYS1sZkpmWXpnRldzbWI2S1NsSWgyaGp1eWdCOGdpZVNTNW9ybUtFX0JESGxVXzFYMw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="454914"&gt;2025年5月15日，阿里巴巴（）发布了2025财年财报。报告期内，阿里巴巴营收9963亿、同比增长5.9%；经营利润1409亿、同比增长24.3%；净利润1260亿、同比增长76.6%。&lt;/p&gt;&lt;p data-check-id="504134"&gt; &lt;/p&gt;&lt;p data-check-id="593840"&gt;截至5月15日收盘，阿里巴巴港股、美股年内分别上涨43.8%、45.6%。除业绩超预期、核心业务展现韧性之外，一个非常重要的原因是投资人对阿里AI能力、AI路线的认可。在中国大型科技企业中，阿里最早布局，市场份额居首；在AI相关领域持续投入重金，保持领先地位。&lt;/p&gt;&lt;p data-check-id="861902"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="281578"&gt;2025年1月，阿里云公布通义千问旗舰版模型Qwen2.5-Max；2月13日，阿里官宣将与苹果合作、为中国市场iphone开发人工智能功能。&lt;/p&gt;&lt;p data-check-id="976751"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="219953"&gt;2025年2月24日，阿里发布公告称：“未来3年将投入至少3800亿（）用于建设AI和云计算基础设施”、“突显本公司对AI驱动增长的聚焦及作为全球领先云计算供应商的定位 ”。&lt;/p&gt;&lt;p data-check-id="403529"&gt; &lt;/p&gt;&lt;p data-check-id="616183"&gt;DeepSeek的横空出世，让全世界从整体上对中国人工智能有了全新的认识。&lt;/p&gt;&lt;p data-check-id="914285"&gt; &lt;/p&gt;&lt;p data-check-id="177361"&gt;截至5月15日收盘，阿里市值约3000亿美元，动态市盈率16.3倍。亚马逊市值2.2万亿美元，动态市盈率36.8倍。&lt;/p&gt;&lt;p data-check-id="757850"&gt; &lt;/p&gt;&lt;p data-check-id="166506" label="大标题" class="text-big-title"&gt;两张图看懂阿里营收结构&lt;/p&gt;&lt;p data-check-id="595654"&gt; &lt;/p&gt;&lt;p data-check-id="588659" label="小标题" class="text-sm-title"&gt;1）六大集团座次微调&lt;/p&gt;&lt;p data-check-id="359369"&gt; &lt;/p&gt;&lt;p data-check-id="867212"&gt;2023年，阿里完成了“1+6+N”组织架构调整。其中“6”代表六大集团。&lt;/p&gt;&lt;p data-check-id="481469"&gt; &lt;/p&gt;&lt;p data-check-id="586945"&gt;2025财年，六大集团按营收排序如下：&lt;/p&gt;&lt;p data-check-id="644472"&gt; &lt;/p&gt;&lt;p data-check-id="730060"&gt;老大淘天集团（），老二国际数字商业集团（），老三云智能集团（），老四菜鸟集团（），老五本地生活集团（），老六大文娱集团（）。&lt;/p&gt;&lt;p data-check-id="323770"&gt; &lt;/p&gt;&lt;p data-check-id="136741" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/100346524873.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="675"&gt;&lt;/p&gt;&lt;p data-check-id="583358"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="735702"&gt;2025财年，在阿里集团合并收入中：淘天占45.1%，一家独大；国际数字商业占13.3%、云智能占11.8%、菜鸟占10.2%，为第二梯队；本地生活占6.7%、大文娱占2.2%，为第三梯队。&lt;/p&gt;&lt;p data-check-id="719803"&gt; &lt;/p&gt;&lt;p data-check-id="772049"&gt;与上个财年相比，六大集团营收排序仅有微小变化：排第二的云智能退居第三，国际数字商业跃居第二。&lt;/p&gt;&lt;p data-check-id="665969"&gt; &lt;/p&gt;&lt;p data-check-id="633954" label="小标题" class="text-sm-title"&gt;2）“出海”拉动营收增长&lt;/p&gt;&lt;p data-check-id="276908"&gt; &lt;/p&gt;&lt;p data-check-id="741282"&gt;在不抵消分部间收入的情况下，2025财年营收同比增长815亿，六大集团均有贡献：&lt;/p&gt;&lt;p data-check-id="845211"&gt; &lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="901369"&gt;第一名国际数字商业集团，营收增长294亿、贡献率36.1%；&lt;/p&gt;&lt;p data-check-id="807361"&gt; &lt;/p&gt;&lt;p data-check-id="664759"&gt;第二名淘天集团，营收增长149亿、贡献率18.3%;&lt;/p&gt;&lt;p data-check-id="330362"&gt; &lt;/p&gt;&lt;p data-check-id="798154"&gt;第三名云智能，营收增长17亿、贡献率14.3%；&lt;/p&gt;&lt;p data-check-id="824238"&gt; &lt;/p&gt;&lt;p data-check-id="336466"&gt;第四名本地生活，营收增长73亿、贡献率8.9%；&lt;/p&gt;&lt;p data-check-id="816440"&gt; &lt;/p&gt;&lt;p data-check-id="803809"&gt;菜鸟、大文娱贡献率分别只有2.8%、1.4%。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="520715" class="img-center-box"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="233697" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/100628525634.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="651"&gt;&lt;/p&gt;&lt;p data-check-id="720223"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="835222" class="text-normal" label="正文"&gt;六大集团合计贡献2025财年营收增长（）的81.8%。六大集团之外的“所有其他”（）营收增长约100亿。&lt;/p&gt;&lt;p data-check-id="596471"&gt; &lt;/p&gt;&lt;p data-check-id="195537"&gt;若剔除分部间收入，数字商业国际、淘天、云智能、本地生活贡献率分别为53.3%、27.1%、21.1%、13.2%。&lt;/p&gt;&lt;p data-check-id="805399"&gt; &lt;/p&gt;&lt;p data-check-id="658138" label="大标题" class="text-big-title"&gt;淘天集团——瘦身成功的现金牛&lt;/p&gt;&lt;p data-check-id="858298"&gt; &lt;/p&gt;&lt;p data-check-id="827475" label="小标题" class="text-sm-title"&gt;1）淘天集团营收结构&lt;/p&gt;&lt;p data-check-id="249910"&gt; &lt;/p&gt;&lt;p data-check-id="186457"&gt;淘天集团营收分为“中国零售”、“中国批发”两部分，前者占比超过90%。&lt;/p&gt;&lt;p data-check-id="768785"&gt; &lt;/p&gt;&lt;p data-check-id="418034"&gt;例如2025财年，淘天集团营收4498亿。其中“零售”、“批发”收入分别为3323.5亿、1031.8亿，零售占比 94.6%。&lt;/p&gt;&lt;p data-check-id="436827"&gt; &lt;/p&gt;&lt;p data-check-id="634386"&gt;“中国零售”营收又分为两类——客户管理及直营。由于业务调整，直营业务收入呈现下滑趋势。&lt;/p&gt;&lt;p data-check-id="589596"&gt; &lt;/p&gt;&lt;p data-check-id="495865"&gt;2024年Q4，客户管理收入1008亿、同比增长9.4%；直营收入287亿、同比下降9.2%。&lt;/p&gt;&lt;p data-check-id="531583"&gt; &lt;/p&gt;&lt;p data-check-id="482341"&gt;刚刚过去的2025年Q1，客户管理收入710.8亿、同比增长11.8%，远高于2024年Q1（）；直营收入245亿、同比下降0.8%。&lt;/p&gt;&lt;p data-check-id="689980"&gt; &lt;/p&gt;&lt;p data-check-id="722224" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/101356066256.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="651"&gt;&lt;/p&gt;&lt;p data-check-id="662670"&gt; &lt;/p&gt;&lt;p data-check-id="260526"&gt;从上图还可以看到电商平台业绩的季节性波动：自然年的第一个季度出现波谷、第四个季度出现波峰。&lt;/p&gt;&lt;p data-check-id="518901"&gt; &lt;/p&gt;&lt;p data-check-id="587346"&gt;批发业务中阿里的传统强项，居然老树发新芽：2024财年营收205亿、同比增长14.7%；2025财年营收243亿、再增18.7%。但由于占比仅为5%，对淘天集团业绩影响不大。&lt;/p&gt;&lt;p data-check-id="789756"&gt; &lt;/p&gt;&lt;p data-check-id="265213" label="小标题" class="text-sm-title"&gt;2）架构调整的效果&lt;/p&gt;&lt;p data-check-id="614958"&gt; &lt;/p&gt;&lt;p data-check-id="425695"&gt;“淘天集团”是原“中国商业”的瘦身版，保留“中国零售”、“中国批发”两大核心业务，将高鑫零售、盒马、阿里健康等业务剥离、归入“所有其他”（）。&lt;/p&gt;&lt;p data-check-id="927435"&gt; &lt;/p&gt;&lt;p data-check-id="715140"&gt;2022财年，中国商业营收达5915.8亿、同比增长18%。其中，直营收入增长781亿（）。但是，中国商业EBIT却下降了14.6%，少赚312亿，利润率从2021财年的42.6%降至2022财年的30.8%。根本原因是直营业务贡献了营收、伤害了利润。&lt;/p&gt;&lt;p data-check-id="661075"&gt; &lt;/p&gt;&lt;p data-check-id="338473"&gt;2023财年，中国商业“瘦身”为“淘天集团”。对比发现，淘天口径计入的营收“断崖式”减少1695亿，EBIT反而增加了42.8亿，利润率提高14.1个百分点（）。&lt;/p&gt;&lt;p data-check-id="936151"&gt; &lt;/p&gt;&lt;p data-check-id="292670"&gt;2024财年，淘天集团EBIT达1948亿、利润率44.8%；2025财年，淘天集团EBIT达1962亿、利润率43.5%。&lt;/p&gt;&lt;p data-check-id="748168"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="618048" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/101444197899.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="617"&gt;&lt;/p&gt;&lt;p data-check-id="565472"&gt; &lt;/p&gt;&lt;p data-check-id="226580"&gt;“瘦身”后的淘天集团，盈利能力显著提高，现金牛更为“精壮”。&lt;/p&gt;&lt;p data-check-id="510942"&gt; &lt;/p&gt;&lt;p data-check-id="273889"&gt;淘天集团以外的五大集团，既然被保留而不是装入“所有其他”的筐，说明阿里对相应五大战略方向的认可——出海、云智能、物流、娱乐、本地生活。目前，前三个已经有了“大模样”。&lt;/p&gt;&lt;p data-check-id="130760"&gt; &lt;/p&gt;&lt;p data-check-id="473438" label="大标题" class="text-big-title"&gt;国际数字商业&lt;/p&gt;&lt;p data-check-id="727250"&gt; &lt;/p&gt;&lt;p data-check-id="113121"&gt;阿里国际商业分部也包含零售、批发两部分。零售业务包括Lazada、速卖通、Trendyol和Daraz。批发业务主要通过Alibaba.com平台完成交易。&lt;/p&gt;&lt;p data-check-id="490710"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="143430"&gt;2023财年，国际零售、国际批发收入509.3亿分别为195.7亿，零售占比72.2%；&lt;/p&gt;&lt;p data-check-id="749029"&gt; &lt;/p&gt;&lt;p data-check-id="252249"&gt;2024财年，国际零售收入达816.5亿、同比增长60%，占比提高到79.6%；&lt;/p&gt;&lt;p data-check-id="221117"&gt; &lt;/p&gt;&lt;p data-check-id="757081"&gt;2025财年，国际零售收入1084.7亿、占比达82%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="589951"&gt; &lt;/p&gt;&lt;p data-check-id="236175"&gt;过往四个自然季（），零售营收增速高于批发，2025年Q1占比提高到82.2%：&lt;/p&gt;&lt;p data-check-id="709344"&gt; &lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="158958"&gt;2024年Q2，零售、批发营收分别为237亿、56亿；同比增幅分别为38.2%、12.4%；&lt;/p&gt;&lt;p data-check-id="492601"&gt; &lt;/p&gt;&lt;p data-check-id="299870"&gt;2024年Q3，零售、批发营收分别为256亿、61亿；同比增幅分别为35%、9.4%；&lt;/p&gt;&lt;p data-check-id="910102"&gt; &lt;/p&gt;&lt;p data-check-id="251433"&gt;2024年Q4，零售、批发营收分别为316亿、62亿；同比增幅分别为35.7%、18%；&lt;/p&gt;&lt;p data-check-id="877354"&gt; &lt;/p&gt;&lt;p data-check-id="611223"&gt;2025年Q1，零售、批发营收分别276亿、60亿；同比增幅分别为23.9%、15.6%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="623407"&gt; &lt;/p&gt;&lt;p data-check-id="833716" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/144943322750.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="596"&gt;&lt;/p&gt;&lt;p data-check-id="357505"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="692313"&gt;自2025年5月2日起，美国对每件包裹缴纳其价值90%或每件75美元的关税。&lt;/p&gt;&lt;p data-check-id="703169"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="867203"&gt;2025年5月12日，美中双方互降关税；5月14日对来自中国包裹的关税税率下调至54%。几个回合打下来，证明了世界各国（）对中国价廉物美商品的需求有很大刚性，高额关税不得民心。&lt;/p&gt;&lt;p data-check-id="159903"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="778096"&gt;尽管存在不确定性，国际数字商业仍将是推动营收增长的主要动力。&lt;/p&gt;&lt;p data-check-id="554814"&gt; &lt;/p&gt;&lt;p data-check-id="757685" label="大标题" class="text-big-title"&gt;云智能远未到该赚钱的时候&lt;/p&gt;&lt;p data-check-id="403050"&gt; &lt;/p&gt;&lt;p data-check-id="244663"&gt;云业务包括阿里云和钉钉，目前是世界第三、亚洲第一的IaaS提供商。阿里云也是中国最大的公有云服务提供商（）。2023财年，阿里云营收772亿、同比增长4%。&lt;/p&gt;&lt;p data-check-id="641336"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="177012"&gt;2023年4月，阿里云发布大语言模型（）——通义千问，已开始融入阿里生态体系中各业务。而且，智能云集团已向外部客户开放通义千问服务。&lt;/p&gt;&lt;p data-check-id="423732"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="423441"&gt;2024年大幅降价后，客户几乎可以免费获得AI赋能，提高用户体验。&lt;/p&gt;&lt;p data-check-id="870882"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="109121"&gt;新增的AI功能几乎免费，却有力地推动收费服务增长，AI相关收入连续7个季度实现三位数增长，云智能板块财年收入增速达11%。其中，2025年Q1增速接近18%：&lt;/p&gt;&lt;p data-check-id="819610"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="465787"&gt;2024年Q2，收入265亿、同比增长5.7%；&lt;/p&gt;&lt;p data-check-id="521650"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="907652"&gt;2024年Q3，收入296亿、同比增长7.1%；&lt;/p&gt;&lt;p data-check-id="873684"&gt; &lt;/p&gt;&lt;p data-check-id="878937"&gt;2024年Q4，收入317亿、同比增长13.1%；&lt;/p&gt;&lt;p data-check-id="232924"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="747663"&gt;2025年Q1，收入301亿、同比增长17.7%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="166553" class="img-center-box"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="266994" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/144526946073.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="574"&gt;&lt;/p&gt;&lt;p data-check-id="530098"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="845347"&gt;2022财年，云智能首次盈利。最近三年盈利能力稳步提高：&lt;/p&gt;&lt;p data-check-id="156858"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="292033"&gt;2023财年，EBIT为41亿、利润率4%；&lt;/p&gt;&lt;p data-check-id="213879"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="790492"&gt;2024财年，EBIT提高到61亿、利润率5.8%；&lt;/p&gt;&lt;p data-check-id="699274"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="277455"&gt;2025财年，EBIT达106亿、利润率8.9%；&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="230295"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="635998" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/19/104735424242.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="618"&gt;&lt;/p&gt;&lt;p data-check-id="469614"&gt; &lt;/p&gt;&lt;p data-check-id="629148"&gt;扭亏为盈曾是云业务的奋斗目标。现在看来，赚钱不该是首要目标，好比AI专业在读的博士，还没到赚大钱的时候。&lt;/p&gt;&lt;p data-check-id="311245"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="275537" label="大标题" class="text-big-title"&gt;重估阿里的三重逻辑&lt;/p&gt;&lt;p data-check-id="947332"&gt; &lt;/p&gt;&lt;p data-check-id="515504"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="867473"&gt;跨境业务是“第二增长曲线”，底层逻辑是做加法。假设市销率保持2.0不变，营收增长50%，估值也提高50%。&lt;/p&gt;&lt;p data-check-id="498756"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="965628"&gt;与传统贸易相比，跨境电商可以提供更多丰富的商品、更加快捷的服务，而且减少了中间环节，降低了流通成本，给买卖双方带来实惠。跨境电商有极大的增长空间。&lt;/p&gt;&lt;p data-check-id="771855"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="710469"&gt;假以时日，出海业务有可能在境外再造一个阿里。&lt;/p&gt;&lt;p data-check-id="180384"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="529056"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="354522"&gt;云智能+AI对业务、对估值都是乘法。&lt;/p&gt;&lt;p data-check-id="450732"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="730757"&gt;依托“AI基建”，阿里内部、外部用户在AI应用方面“先行一步”：淘天AI驱动“全站推广”，显著提高商家营销效率；面向海外卖家的Accio企业用户超过百万；高德、飞猪、饿了么、菜鸟……均已上线各自的AI工具/服务。&lt;/p&gt;&lt;p data-check-id="928223"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="596995"&gt;估值方面，目前阿里市盈率是16倍。当AI能力得到充分认可，估值有望大幅提升。&lt;/p&gt;&lt;p data-check-id="251612"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="233070"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="407264"&gt;国际资本流动大势是“东升西降”——美元及美元资产走弱、人民币及人民币资产走强。香港资本市场成为热土，优质中国公司将受到追捧。&lt;/p&gt;&lt;p data-check-id="360299"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="162850"&gt;阿里在恒生科技指数（）的权重为8%（），且阿里估值最低，仅为16倍（）。投资圈有“不熟不投”的戒律，欧美资本对阿里的熟知和认可显然高于另外四家。&lt;/p&gt;&lt;p data-check-id="423604"&gt;&lt;span disable-audio="true" disable-copy="true"&gt;&lt;span rl-type="stop"&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;         &lt;/p&gt;&lt;p data-check-id="949166"&gt;  &lt;/p&gt;&lt;p data-check-id="961130" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/20/223905767431.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="800" data-h="304"&gt;&lt;/p&gt;&lt;p data-check-id="306448"&gt;&lt;/p&gt;&lt;p data-check-id="204337"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="161480"&gt;&lt;/p&gt;&lt;p data-check-id="949166"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="318202" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/20/223932395472.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="800" data-h="450"&gt;&lt;/p&gt;&lt;p data-check-id="447420"&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;                &lt;/p&gt;
           &lt;div class="article__canonical"&gt;
             &lt;p&gt;文章标题：阿里相对低估&lt;/p&gt;
             &lt;p&gt;文章链接：https://www.huxiu.com/article/4365741.html&lt;/p&gt;
@@ -2516,7 +2702,29 @@ ILRS被普遍视为美国主导的“阿耳忒弥斯计划”（Artemis）的竞
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 20 May 2025 14:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE5ZSUVmbi1UcVNnMktoY2d6QkRYeHlpLWFYYkZNOFdJLXZPVFlmUHloMm1Naldmc2hieHpPR2lNcDZHdzlHbnF2eElsUHptZjZwWjJQQVNKT0tveVNOaGdsSDRCVHg</guid></item><item><title>马斯克：将大幅减少政治开支 未来五年继续担任特斯拉CEO - 新浪财经</title><link>https://news.google.com/rss/articles/CBMihwFBVV95cUxNbXh3emlOSkRxQ1p2eE41MHdXU29vckoxT3Z6ZklkUmgtejktNFU1NmZzUndzblFuQTNOQmZOMDJMVGEwbHRsblBEVnhEaUZKRmJYMjQtRDJGcDMwX05uVk1GMnhhclF6UVkwSlNEZ2xXbjM3bjI3TklmM1hBcl96SWpIbHI1azQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 20 May 2025 14:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE5ZSUVmbi1UcVNnMktoY2d6QkRYeHlpLWFYYkZNOFdJLXZPVFlmUHloMm1Naldmc2hieHpPR2lNcDZHdzlHbnF2eElsUHptZjZwWjJQQVNKT0tveVNOaGdsSDRCVHg</guid></item><item><title>鸿蒙电脑横空出世：PC行业要变天了 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMif0FVX3lxTFB4aHVubG9TT2pTQ3Z5YXhYYXVPU2JQMWJ5ZnNVS3V1VnN0UGJSTlQ4ZEJ0NGVlRV9FV0NCbF9hQlp0NDJmRExUSzJadzI2S1FteXRQVHRPcWNOdXBLMHVHU1lpb2d0VzRpRjJXZlV1Sks3NFU1cElqX294aTJqS00?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody" data-sudaclick="blk_content"&gt;
+				
+
+
+
+
+
+&lt;p cms-style="font-L"&gt;数智化时代，笔记本该如何进化？&lt;/p&gt;&lt;p cms-style="font-L"&gt;过去数年，笔记本电脑从厚重笨拙，进化为小巧便携、功能多元且性能强劲的设备，成为人们工作、生活的得力伙伴。但在数智化时代，传统PC电脑在多设备协同、智能交互体验及安全可靠性上遭遇挑战。基于此，用户对高效设备协同的需求日益迫切，期待笔记本电脑突破现状，提供更具革新性的方案。&lt;/p&gt;&lt;p cms-style="font-L"&gt;5月19日，华为于nova 14系列及鸿蒙电脑新品发布会上，正式推出HUAWEI  MateBook Fold非凡大师、华为MateBook Pro两款鸿蒙电脑。&lt;/p&gt;&lt;p cms-style="font-L"&gt;此次发布不仅是华为鸿蒙办公的新起点，为国产电脑生态带来全新机遇，更标志着华为“1+8+N”全场景生态的持续完善。作为面向数智化时代的创新突破，鸿蒙电脑通过更智能、更流畅、更交互、更安全、更精致的操作方式，为笔记本电脑的未来演进提供新范式。&lt;/p&gt;&lt;p cms-style="font-L"&gt;在本次发布会上，华为同步推出了首款鸿蒙商用笔记本电脑——华为擎云 HM940。该产品不仅延续了鸿蒙电脑流畅易用的特性，更聚焦于安全性等企业级场景下的定制化需求。&lt;/p&gt;&lt;p cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;重塑生产力，鸿蒙电脑做到了什么？&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;作为此次发布会的重磅新品，HUAWEI MateBook Fold 非凡大师既是华为首款鸿蒙折叠电脑，也是18英寸全球最大的商用折叠屏电脑。&lt;/p&gt;&lt;p cms-style="font-L"&gt;该电脑搭载前沿折叠屏与轻量化工艺，展开时仅7.3mm厚、1.16kg重，折叠后小于13英寸，可轻松放入商务提包，便携性出众。此外，它&lt;font cms-style="font-L color0"&gt;&lt;font cms-style="font-L strong-Bold color0"&gt;配备18英寸沉浸式大屏，拥有3.3K分辨率与1600nits峰值亮度，带来清晰、真实且舒适的视觉体验。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;这一轻薄与大屏兼得的全新形态体验，源于华为对笔记本发展趋势的深刻洞察。自笔记本电脑诞生，轻薄化与大屏化的发展趋势不断持续，行业也未能找到兼顾用户轻薄便携和大屏体验双重需求的解决方案。&lt;/p&gt;&lt;p cms-style="font-L"&gt;华为电脑持续创新，洞悉“未来折叠屏电脑是一种趋势”，凭借华为PC在轻薄、全面屏等方面的积累，结合华为多年折叠屏终端的材料工艺积淀，攻克了设备在转轴铰链、超大屏幕、散热效率、续航平衡的世界级难题，带来轻薄与大屏兼得的全新形态体验。&lt;/p&gt;&lt;p cms-style="font-L"&gt;与此同时，鸿蒙电脑的交互底层逻辑也实现了重构，不仅能智能识别触屏、键鼠、触控板等不同输入方式，还能自动匹配最符合直觉的响应模式，在HUAWEI MateBook Fold非凡大师上触控不再是鼠标的简单替代，而是针对每种交互方式独立优化，确保操作自然流畅。&lt;/p&gt;&lt;p cms-style="font-L"&gt;无论是打开应用、拖动元素，还是缩放内容，鸿蒙都能精准适配用户习惯，结合折叠形态，带来打破电脑传统使用边界的体验。&lt;/p&gt;&lt;p cms-style="font-L"&gt;以往，手机与电脑分属不同设备领域，二者办公互通困难重重，犹如隔着一道难以跨越的鸿沟。现在，在HarmonyOS 5系统加持下，鸿蒙办公重塑生产力体验：首先，不同设备间更加无缝地协同，统一账号实现多端同步，真正做到数据随人流转。&lt;/p&gt;&lt;p cms-style="font-L"&gt;其次，鸿蒙AI和智慧交互融入操作系统底层，带来与系统共生的智慧体验。同时，把移动生态带到电脑，进一步打破设备边界，拓宽使用场景，从此，鸿蒙办公实现生产力体验的跃升。&lt;/p&gt;&lt;p cms-style="font-L"&gt;可以说，HUAWEI MateBook Fold 非凡大师“新系统+新形态”，不仅拓宽折叠屏赛道，更定义未来电脑形态，展开电脑未来想象。&lt;/p&gt;&lt;p cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;鸿蒙电脑频频亮相，重塑PC市场格局&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;除了备受关注的HUAWEI MateBook Fold非凡大师，全新华为MateBook Pro同样成为全场焦点。这款笔记本搭载HarmonyOS 5、配备3.1K柔性OLED云晰柔光屏，拥有砚黑、宣白两款配色，重量仅970g，轻盈便携。&lt;/p&gt;&lt;p cms-style="font-L"&gt;它还采用全新一代的华为“云隼”架构，并搭载全新泡沫铜VC散热系统，可实现40W性能释放，支持连续使用10.2小时、140W超级快充+66W反向超级快充，为用户带来焕然一新的笔记本体验。&lt;/p&gt;&lt;p cms-style="font-L"&gt;值得一提的是，全新HUAWEI MateBook Pro是业界首款搭载OLED护眼云晰柔光屏的笔记本，其能为用户呈现流畅清晰、色彩准确、明暗真实、舒适护眼的视觉体验。此外，它融合了多重创新科技，例如小艺智慧键一键AI模式，让用户操作更加畅快。&lt;/p&gt;&lt;p cms-style="font-L"&gt;前文提及，在商用电脑领域，华为还发布了首款鸿蒙商用笔记本电脑——华为擎云HM940。&lt;/p&gt;&lt;p cms-style="font-L"&gt;华为擎云HM940作为首款鸿蒙商用笔记本电脑搭载HarmonyOS 5，承袭华为擎云商用电脑的智慧、安全、品质的设计基因，内置系统级AI助手“小艺”、采用轻薄至简机身、OLED原色屏，搭配企业级安全能力解决方案，引领行业迈向商用生产力新纪元。&lt;/p&gt;&lt;p cms-style="font-L"&gt;此外，面向商用领域，华为常务董事、终端BG董事长余承东宣布正式启动“擎云星河计划”，旨在激励政企用户共建鸿蒙产业与生态发展，围绕企业管理，企业安全和组织生产力三大方向，与行业先锋客户开展鸿蒙的联合创新和应用，共同探索行业的数字化转型和创新发展，为千行百业创新创造更多可能。&lt;/p&gt;&lt;p cms-style="font-L"&gt;硬软件双管齐下，华为如何协同创新？&lt;/p&gt;&lt;p cms-style="font-L"&gt;在当今数字化与智能化浪潮汹涌澎湃的时代背景下，企业若想在时代洪流中稳立潮头，保持技术前瞻性以及敏锐的市场洞察力，创新无疑是破局的关键答案。&lt;/p&gt;&lt;p cms-style="font-L"&gt;在电脑市场中，华为始终以创新为驱动力，以前瞻视野引领行业发展，不断推陈出新。2018年，华为推出全球首款全面屏电脑，为行业带来新设计思路。&lt;/p&gt;&lt;p cms-style="font-L"&gt;2020年，其轻薄本首次进入中国市场出货量Top3，展现出强大竞争力。2024年，华为发布AI电脑战略，轻薄本出货量跃居中国市场榜首。2025年，华为智慧办公升级为鸿蒙办公，鸿蒙电脑惊艳亮相。&lt;/p&gt;&lt;p cms-style="font-L"&gt;鸿蒙电脑也历经研发投入及产品创新，从2021年开始部署鸿蒙电脑的原型机，历经工程机，再到商用机，历时5年走到了消费者面前。&lt;/p&gt;&lt;p cms-style="font-L"&gt;华为投入上万名研发人员，集结全球20多家华为研发所的科研力量，布局2700多个专利，最终打造了今天所见的鸿蒙电脑。目前，鸿蒙电脑应用目前已覆盖了通用办公、金融理财、影音娱乐、设计创作、教育学习、实用工具等多个领域，满足基础办公及核心场景使用。&lt;/p&gt;&lt;p cms-style="font-L"&gt;值得一提的是，自5月8日鸿蒙电脑技术沟通会以来，鸿蒙电脑应用适配呈现加速态势。目前已有150+专属电脑生态应用加速适配，上架融合应用数量从300余款快速攀升至1000余款，数量翻了两倍多。未来还会有更加丰富的应用陆续上架，预计年底将支持超过2000个融合生态应用，生态体系持续扩容。&lt;/p&gt;&lt;p cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;写在最后&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;在数智化浪潮席卷的当下，鸿蒙电脑的重磅登场，不仅是鸿蒙办公的新起点，为国产电脑生态带来全新机遇，还给世界多一个选择。&lt;/p&gt;&lt;p cms-style="font-L"&gt;可以预见的是，随着智能终端技术的持续演进，智能终端市场正迎来新一轮发展契机。未来，华为将持续联合生态伙伴与开发者，共同推动鸿蒙电脑生态的繁荣兴盛。&lt;/p&gt;
+
+
+
+
+                
+
+&lt;p id="left_hzh_ad"&gt;
+	                    
+                    
+                    
+	                &lt;/p&gt;
+         
+                
+            &lt;/div&gt;
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 20 May 2025 14:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMif0FVX3lxTFB4aHVubG9TT2pTQ3Z5YXhYYXVPU2JQMWJ5ZnNVS3V1VnN0UGJSTlQ4ZEJ0NGVlRV9FV0NCbF9hQlp0NDJmRExUSzJadzI2S1FteXRQVHRPcWNOdXBLMHVHU1lpb2d0VzRpRjJXZlV1Sks3NFU1cElqX294aTJqS00</guid></item><item><title>马斯克：将大幅减少政治开支 未来五年继续担任特斯拉CEO - 新浪财经</title><link>https://news.google.com/rss/articles/CBMihwFBVV95cUxNbXh3emlOSkRxQ1p2eE41MHdXU29vckoxT3Z6ZklkUmgtejktNFU1NmZzUndzblFuQTNOQmZOMDJMVGEwbHRsblBEVnhEaUZKRmJYMjQtRDJGcDMwX05uVk1GMnhhclF6UVkwSlNEZ2xXbjM3bjI3TklmM1hBcl96SWpIbHI1azQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -2857,206 +3065,4 @@ ILRS被普遍视为美国主导的“阿耳忒弥斯计划”（Artemis）的竞
 
 
 &lt;/body&gt;
-</description><author>36Kr</author><pubDate>Tue, 20 May 2025 13:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9iVktfeWE0WGl3SEJ1bWxISGo2ZmhkRmdoVWxpRGJlalFmWklrYm5lLVJDcnpqdEIyMjREb2lVTzllTDFUTmtndFNuc1BlZw</guid></item><item><title>13亿，阿里巴巴投过的上海独角兽要IPO了 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE92UDFhNW0tMDl5c3pLUE5DMk5sMnFBczNyMHhSZkpmUEFnOGVWQzZwSERNZk5SLVVtT1lha1V6SXFFUUNBYW82bnV4OVFVdw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36Kr</author><pubDate>Tue, 20 May 2025 12:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE92UDFhNW0tMDl5c3pLUE5DMk5sMnFBczNyMHhSZkpmUEFnOGVWQzZwSERNZk5SLVVtT1lha1V6SXFFUUNBYW82bnV4OVFVdw</guid></item><item><title>夸克与文库，AI的另类战场 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFBzUE4wY05rQllCNzdUZk9UcjhZSldWazhBVHVMRkVtSnc0SVhoWUMxeDdhd05mbS1TdWU5RF9rVXNxMlIyUzFQRDdaWmNSQQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36Kr</author><pubDate>Tue, 20 May 2025 12:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBzUE4wY05rQllCNzdUZk9UcjhZSldWazhBVHVMRkVtSnc0SVhoWUMxeDdhd05mbS1TdWU5RF9rVXNxMlIyUzFQRDdaWmNSQQ</guid></item><item><title>100％自主可控！得力发布全系龙芯2P0500 CPU打印机 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9pcFM0eGhFcGVaVG94NmR1VUR6UTIwRDdIemZ5RU1tWTBHSnc2UG1BSEJ1WkQtQUZJUHRNZWVMQmc2Z1VYYXNLSHRPa3hncG5ENS1heFNLSlY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;100％自主可控！得力发布全系龙芯2P0500 CPU打印机&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-20 19:49:26  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/278470.html" title="上方文Q的主页" class="newstiao4"&gt;上方文Q&lt;/a&gt;&lt;p&gt;  编辑：上方文Q &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1048818-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月20日消息，近日，&lt;strong&gt;得力正式发布了基于龙芯2P0500处理器开发的31系列自主安全打印机、善印系列打印机，包括黑白激光打印机、黑白激光多功能一体机等全系机型。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250520/8acc95b892894c209783be1ea5955fb4.jpg" target="_blank"&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="414" src="//img1.mydrivers.com/img/20250520/s_8acc95b892894c209783be1ea5955fb4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;同时，&lt;strong&gt;龙芯、得力、京东三方共同签署了战略合作协议&lt;/strong&gt;，共同完善得力-龙芯系列国产打印的生态体系、渠道建设。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250520/6077f1e2e08c40869382fe1859e216ed.png" target="_blank"&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="403" src="//img1.mydrivers.com/img/20250520/s_6077f1e2e08c40869382fe1859e216ed.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;目前，得力集团已在国内建立了150余家分公司，全球建立了32家海外分公司，并在140多个国家和地区建立营销网络。&lt;/p&gt;
-&lt;p&gt;龙芯中科指出，打印机已经不只是简单的输出设备，也是信息流转的重要枢纽，更是政企数据安全的屏障，&lt;strong&gt;得力新品通过采用100％自主的“中国芯”，打造出兼具高效能、高安全的产品。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250520/4a8ab5da25e04b8a9202e6c145304b81.jpg" target="_blank"&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="399" src="//img1.mydrivers.com/img/20250520/s_4a8ab5da25e04b8a9202e6c145304b81.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250520/d5850f06415b4eb38adfc0f9b5e56ace.jpg" target="_blank"&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="399" src="//img1.mydrivers.com/img/20250520/s_d5850f06415b4eb38adfc0f9b5e56ace.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250520/5eceda458f4249d7a79770a4070ee71c.jpg" target="_blank"&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="399" src="//img1.mydrivers.com/img/20250520/s_5eceda458f4249d7a79770a4070ee71c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250520/9352bc7afe824181b82d3cf920cdc5fc.jpg" target="_blank"&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="399" src="//img1.mydrivers.com/img/20250520/s_9352bc7afe824181b82d3cf920cdc5fc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;龙芯2P0500是一款适用于单/多功能打印机的主控SoC芯片，是打印/扫描整机中的核心控制部件。&lt;/p&gt;
-&lt;p&gt;该芯片采用异构大小核结构，包括一个龙芯LA364核心、两个龙芯LA132核心，三个核心共享512KB二级缓存，同时集成DDR3内存、GMAC、OTG、USB、打印接口、扫描接口、图像单元、PMIO、AD/DA、eMMC、SDIO、SPI、PWM等多种功能模块，还实现了功耗管理控制模块，单芯片即可满足打印、扫描、复印等多种典型应用需求。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="462" src="//img1.mydrivers.com/img/20250520/d7ee7225-b331-43ee-ab0f-ea39807bd52b.jpg" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;去年9月，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1005/1005750.htm" target="_blank"&gt;汉图推出了首批基于龙芯2P0500的极印高速激光打印机&lt;/a&gt;，A4打印速度达35页/分钟，双面打印速度提升了80％。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="100％自主可控！得力发布全系龙芯2P0500 CPU打印机" h="647" src="//img1.mydrivers.com/img/20250520/d6257300-5d8b-4419-80cc-50885ce65dfc.png" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 20 May 2025 11:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9pcFM0eGhFcGVaVG94NmR1VUR6UTIwRDdIemZ5RU1tWTBHSnc2UG1BSEJ1WkQtQUZJUHRNZWVMQmc2Z1VYYXNLSHRPa3hncG5ENS1heFNLSlY</guid></item><item><title>索尼看了都点赞！大神将PS5爆改成PS2样式：细节超还原 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBSVTN3Tk1XZWpNcldMS1lMcUhZbThfQ2JHVEs4YXN1bk5wNlZ1Z0V6V3VUcjUzdDVYWXA1MGo3dUduWFpTVGFDUHRKZy1mSk1SY0JkZVRlQ2c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;索尼看了都点赞！大神将PS5爆改成PS2样式：细节超还原&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-20 19:29:40  出处：&lt;/p&gt;&lt;a href="https://www.gamersky.com/news/202505/1930120.shtml" rel="nofollow"&gt;游民星空&lt;/a&gt;&lt;p&gt;  作者：元素黄狗  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1048815-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;相信很多玩家都喜欢对自己的游戏设备进行DIY，Reddit玩家“Gokeez”日前发帖，展示了自制的PS2主题PS5主机，表示：&lt;span&gt;&lt;strong&gt;“未在图片中展示的还有灯光，灯光会切换成绿色和蓝色。面板来自Dbrand，PS标志是经过打磨的复古DualSense按键套装里的按钮，其余配件均购自Etsy。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;图片欣赏：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="索尼看了都点赞！大神将PS5爆改成PS2样式：细节超还原" h="733" src="//img1.mydrivers.com/img/20250520/bc63e4a1-c799-4b36-ba5a-f989772eb978.jpg" w="550"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="索尼看了都点赞！大神将PS5爆改成PS2样式：细节超还原" h="426" src="//img1.mydrivers.com/img/20250520/15ef67fe-f4ed-486a-8d46-efa40ee38cf5.jpg" w="550"&gt;&lt;/p&gt;
-&lt;p&gt;不少玩家在评论区纷纷称赞这台经过爆改之后的PS5主机，认为它非常酷炫，甚至认为帖主应该被索尼录用，但也有玩家认为，PS5主机面板上的大洞影响了美感。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="索尼看了都点赞！大神将PS5爆改成PS2样式：细节超还原" h="509" src="//img1.mydrivers.com/img/20250520/39e77efc-7985-401c-baa3-73e0d11195a9.jpg" w="445"&gt;&lt;/p&gt;
-&lt;p&gt;你认为这台PS5主机的观感如何？不妨在评论区里说出你的看法，也欢迎晒出自己DIY后的游戏设备。&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 20 May 2025 11:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBSVTN3Tk1XZWpNcldMS1lMcUhZbThfQ2JHVEs4YXN1bk5wNlZ1Z0V6V3VUcjUzdDVYWXA1MGo3dUduWFpTVGFDUHRKZy1mSk1SY0JkZVRlQ2c</guid></item><item><title>iQOO Neo10 Pro+搭载7K超大单层VC：让骁龙8至尊版温度骤降 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6MmtUOVBaTW9RZEFMTUpGd29KWlNfaFIxdDdUVFQwZVJiWEtlMXpHU3B0bzQ2YkFubVdJSFFxTFlXM0dIaF9jYUZoT0F3a2ptZUNNa1pkYWw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;iQOO Neo10 Pro+搭载7K超大单层VC：让骁龙8至尊版温度骤降&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-20 19:27:03  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1048814-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月20日消息，今日晚间，iQOO Neo10 Pro+正式亮相，该机拥有超越同档位的散热系统。&lt;/p&gt;
-&lt;p&gt;官方介绍，&lt;span&gt;&lt;strong&gt;iQOO Neo10 Pro+搭载iQOO 7K超大单层VC，散热能力提升15%；&lt;/strong&gt;&lt;/span&gt;采用超导毛细通道设计，创新“南水北调”式导热方案，将CPU热量快速导至全机身，导热效率大幅提升。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250520/7a9e00f6ccfb44fc8c8d7c31b99b894a.jpg" target="_blank"&gt;&lt;img alt="iQOO Neo10 Pro+搭载7K超大单层VC：让骁龙8至尊版温度骤降" h="1608" src="//img1.mydrivers.com/img/20250520/s_7a9e00f6ccfb44fc8c8d7c31b99b894a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;并且iQOO Neo10 Pro+配备纳米级氧化石墨烯，航天级黑科技，采用2亿颗氧化石墨烯组成"纳米吸热军团"，让热量瞬间气化跑路。&lt;/p&gt;
-&lt;p&gt;经官方实测，&lt;strong&gt;iQOO Neo10 Pro+的这套散热系统能让CPU热源温度在10秒时间骤降14.5℃。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250520/e877e528104b47e788aab9d3f252ea8d.jpg" target="_blank"&gt;&lt;img alt="iQOO Neo10 Pro+搭载7K超大单层VC：让骁龙8至尊版温度骤降" h="1403" src="//img1.mydrivers.com/img/20250520/s_e877e528104b47e788aab9d3f252ea8d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;核心配置上，iQOO Neo10 Pro+搭载高通骁龙8至尊版平台，这颗芯片由iQOO和高通深度调校，彻底优化1% Low帧和高温稳帧，带来真正不卡顿、无惧高温的游戏体验。&lt;/p&gt;
-&lt;p&gt;不止于此，iQOO Neo10 Pro+内置iQOO自研算法，结合自研电竞芯片Q2，实现超越游戏原生画质的超清视觉体验，效果远超普通2K超分。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250520/362e19f9f8c7483cb05ca3f1520aa828.jpg" target="_blank"&gt;&lt;img alt="iQOO Neo10 Pro+搭载7K超大单层VC：让骁龙8至尊版温度骤降" h="400" src="//img1.mydrivers.com/img/20250520/s_362e19f9f8c7483cb05ca3f1520aa828.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 20 May 2025 11:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB6MmtUOVBaTW9RZEFMTUpGd29KWlNfaFIxdDdUVFQwZVJiWEtlMXpHU3B0bzQ2YkFubVdJSFFxTFlXM0dIaF9jYUZoT0F3a2ptZUNNa1pkYWw</guid></item></channel></rss>
+</description><author>36Kr</author><pubDate>Tue, 20 May 2025 13:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9iVktfeWE0WGl3SEJ1bWxISGo2ZmhkRmdoVWxpRGJlalFmWklrYm5lLVJDcnpqdEIyMjREb2lVTzllTDFUTmtndFNuc1BlZw</guid></item></channel></rss>
