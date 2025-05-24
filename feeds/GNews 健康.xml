@@ -1,5 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>聚唾液酸通过特异性结合VEGF-A188调控小鼠肾小球微血管发育的机制研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9ta3NSLTdXYnE2OEszMVNNX1ljNG5nRXZ0V0g4S1Qxem5vUGN5VEFib1JFVnBxRS11cERISC1zV002bnRrVnhyRUFfaXNGbFZIZGpEb2F4N0x4eGlzQUlQTlVIUE44Rmw1UVVqWA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Angiogenesis》：Polysialic acid regulates glomerular microvasculature formation by interaction with VEGF-A188 in mice&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于CT影像组学的肾细胞癌pT3a期浸润术前精准分期模型构建与多中心验证 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1VX1p1WXA2T3JIVTk3OGE3THEtMXZ2MnR5MzZJQ2tuV3ZsRW1lWkFOdFlFT3BZVkVaeDEyWmdRYTRVLWd3MFlSOW9qSC11Sm9XcG85UG4zQWJUQThrRzh4VkcxQkEwdE5QckFfMQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《npj Digital Medicine》：Enhanced staging of renal cell carcinoma using tumor morphology features: model development and multi-source validation&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决肾细胞癌(RCC)术前pT3a期浸润CT诊断准确率波动大(0.348-0.937)的临床难题，四川大学华西医院团队通过多中心1516例样本开发了6种CT影像组学模型。形态学模型(M)在内部验证(AUC=0.867)和外部验证(AUC=0.842-0.895)中表现最优，作为第二阅片工具可显著提升初级医师诊断敏感性(0.759→0.841)且不降低特异性。该研究为RCC精准术前分期提供了可解释性强、跨中心稳定的AI解决方案，发表于《npj Digital Medicine》。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;p&gt;肾细胞癌(RCC)作为成人最常见的肾脏恶性肿瘤，其术前精准分期直接关系到手术方案选择——局限期(pT1-2)可保留肾单位的部分切除，而pT3a期以上需根治性切除。然而临床依赖的CT检查存在明显局限：识别肾周脂肪/肾窦脂肪/肾静脉浸润的准确率波动达0.348-0.937，不同年资医师判读差异显著。这种不确定性可能导致过度治疗或治疗不足，亟需客观、可重复的量化评估工具。&lt;/p&gt;
+&lt;p&gt;四川大学华西医院联合多家医疗中心，开展了迄今为止最大规模的RCC影像组学研究。团队收集1516例患者(开发集999例、双中心验证集313例、TCIA公共数据集204例)的术前增强CT图像，通过手工标注肿瘤区域并提取1470个肿瘤特征和1456个瘤周特征。研究采用嵌套交叉验证(nested cross-validation)构建6种模型：单纯形态学(M)、肿瘤强度-纹理(IT)、瘤周强度-纹理(PIT)及三者组合模型，最终通过多阅片者多病例(MRMC)研究评估临床价值。&lt;/p&gt;
+&lt;p&gt;关键技术包括：1)基于Pyradiomics提取IBSI标准特征；2)通过LASSO回归筛选特征(如Sphericity球形度、3D最大直径)；3)采用决策曲线分析(DCA)评估临床效用；4)纳入7名放射科医师进行Likert 5级评分比较AI辅助效果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基线特征&lt;/strong&gt;&lt;br&gt;
+开发集中pT3a+患者年龄更大(60.4±11.9 vs 54.9±13.1岁,p&amp;lt;0.001)、更常接受根治术(94.1% vs 43.2%)。TCIA数据集中透明细胞癌占比最高(87.8%-95.9%)，与病理分级显著相关(p&amp;lt;0.001)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;模型性能&lt;/strong&gt;&lt;br&gt;
+形态学模型仅用4个特征(最大3D直径、Sphericity、Elongation、Flatness)即展现卓越性能：内部验证AUC 0.867(95%CI:0.866-0.869)，外部验证AUC 0.895(双中心)和0.842(TCIA)。特征分析显示Sphericity在M/M-IT/M-PIT模型中均具最高权重(系数-1.242~-1.055)，证实肿瘤不规则形态与浸润高度相关。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;临床验证&lt;/strong&gt;&lt;br&gt;
+模型作为第二阅片工具使初级医师AUC从0.790提升至0.831(p&amp;lt;0.001)，敏感性提高8.2个百分点(p=0.03)且特异性无损失。值得注意的是，高级医师结合模型后AUC仅微增(0.861→0.864,p=0.60)，提示模型对经验不足者提升更显著。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;讨论与意义&lt;/strong&gt;&lt;br&gt;
+该研究首次通过多中心大样本证实：CT影像组学可稳定识别RCC的pT3a浸润，其核心价值在于将主观的"肿瘤边缘不规则"等描述转化为Sphericity等可量化指标。模型在ccRCC与非ccRCC亚组均保持稳定(AUC&amp;gt;0.8)，且通过敏感性分析证实跨CT机型适用性。临床转化方面，研究创新性采用MRMC设计，证明AI辅助可缩小不同年资医师的判读差距，为实施"保留肾单位手术"的决策提供客观依据。&lt;/p&gt;
+&lt;p&gt;局限包括瘤周特征需手工标注、未整合基因组数据等。未来可结合nnU-Net实现自动分割，并探索与R.E.N.A.L.评分系统的联合应用。该成果为RCC精准诊疗提供了新范式，其"形态优先"的可解释建模思路对其他肿瘤分期研究具有借鉴意义。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 23:13:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1VX1p1WXA2T3JIVTk3OGE3THEtMXZ2MnR5MzZJQ2tuV3ZsRW1lWkFOdFlFT3BZVkVaeDEyWmdRYTRVLWd3MFlSOW9qSC11Sm9XcG85UG4zQWJUQThrRzh4VkcxQkEwdE5QckFfMQ</guid></item><item><title>下背痛常見彎腰搬重物 正確姿勢免閃腰 - 大紀元</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE9raENyTzZFY1ktZ29SVGZDSlRLYV9Rdk5wY29FS1daZUdyQ1NFaUMtRGc1dlBteHNZXzlzRk4zd2lYaVNrVnJmTkgtTFhiS3YtQ0ZPMkQ2Zlk4eThxaFdvU9IBZkFVX3lxTE9adE81VlFYbHBqMUlKV3RaeEo0WExsNl9lelZvbG9rN2RaMWNjbk5TY2F5WGowZll0b0FGejhCME90MFlyOWpzTnFzTExuTmZxM283WUpyWlFNakQ5R0NnWEpzTW1WZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="artbody" class="column" itemprop="articleBody"&gt;
+		&lt;header role="heading"&gt;
+			
+
+			&lt;div class="mbottom10 large-12 medium-12 small-12 columns"&gt;
+				&lt;time datetime="2025-05-25T07:10:04+08:00"&gt;更新: 2025-05-25 7:00 AM	&lt;/time&gt;
+				   &lt;span&gt;标签&lt;/span&gt;&lt;p&gt;: &lt;/p&gt;&lt;span&gt;tags:&lt;/span&gt;
+				&lt;a href="https://www.epochtimes.com/gb/tag/%E4%B8%8B%E8%83%8C%E7%97%9B.html" rel="tag"&gt;下背痛&lt;/a&gt;&lt;p&gt;, &lt;/p&gt;&lt;a href="https://www.epochtimes.com/gb/tag/%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF.html" rel="tag"&gt;正确姿势&lt;/a&gt;&lt;p&gt;, &lt;/p&gt;&lt;a href="https://www.epochtimes.com/gb/tag/%E9%97%AA%E8%85%B0.html" rel="tag"&gt;闪腰&lt;/a&gt;			&lt;/div&gt;
+		&lt;/header&gt;
+        		
+		&lt;p&gt;下背痛是现代人常见的毛病，弯腰搬重物、睡眠姿势不良都可能成为导火线。医师提醒，一个不当动作就可能闪到腰，学会正确姿势与保健方法，才能远离下背痛的反复困扰。&lt;/p&gt;
+&lt;p&gt;下背痛涵盖的范围，约是腰椎的第一节到第五节，也就是肋骨以下、尾椎以上的部分。台大生医医院复健科主治医师、大重仁复健科诊所院长林冠宇在新唐人《她健康》节目中表示，下背痛通常不是单一疾病造成，而是许多不良状况合并的结果，常见的原因包括肌肉拉伤、椎间盘突出，甚至骨折。此外，一些比较罕见的原因，例如胰脏炎、感染甚至是肿瘤，也有可能导致下背痛。&lt;/p&gt;
+&lt;h2&gt;&lt;span&gt;贴布可用 注意伤口&lt;br&gt;
+&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;很多人下背痛时，可能不会第一时间找医生，而是选择贴酸痛药布。林冠宇认为，如果疼痛不是因为撞伤、车祸等，只是肌肉紧绷或拉伤，一开始贴贴布是有帮助的。&lt;/p&gt;
+&lt;p&gt;市面上的贴布种类繁多，有偏冷或偏热的，也有西药或中药贴布。林冠宇表示，选择贴布最重要的考量是会不会过敏，只要贴完有改善，隔天没有更不舒服，上述的贴布都可以。&lt;/p&gt;
+&lt;p&gt;不过，他特别强调，要注意疼痛处有没有伤口。有些糖尿病患者，伤口的神经反应可能较弱，甚至没有反应，如果在有伤口的地方贴贴布，反而可能导致伤口感染扩大，情况更糟。&lt;/p&gt;
+&lt;p&gt;另外，林冠宇提醒，如果贴了两三天甚至一个礼拜都没改善，就要赶快去看医生，检查是否有其它问题存在。&lt;/p&gt;
+&lt;h2&gt;&lt;span&gt;切忌弯腰搬东西&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;林冠宇介绍，复健科门诊中，最常见的下背痛原因是肌肉拉伤，经常有病人就诊时表示是因为搬东西闪到腰。他最不建议的就是站着弯腰搬东西，脊椎越往前弯，腰椎承受的压力越大，就越容易拉伤。&lt;/p&gt;
+&lt;p&gt;为了避免搬重物闪到腰，他提供了正确的搬重物姿势：&lt;/p&gt;
+&lt;p&gt;1. 双脚与肩同宽： 这样重心比较稳固，容易施力。&lt;/p&gt;
+&lt;p&gt;2. 蹲下： 搬地上的重物时，不要偷懒省略蹲下的动作。&lt;/p&gt;
+&lt;p&gt;3. 吸饱气： 蹲下后，吸饱气，让肚子有支撑。&lt;/p&gt;
+&lt;figure id="attachment_14511190" aria-describedby="caption-attachment-14511190" class="wp-caption aligncenter"&gt;&lt;a target="_blank" href="https://i.epochtimes.com/assets/uploads/2025/05/id14511190-bbb4836ed3645dfbd355f96f59d683ee.jpg"&gt;&lt;img loading="lazy" decoding="async" class="size-medium wp-image-14511190" src="https://i.epochtimes.com/assets/uploads/2025/05/id14511190-bbb4836ed3645dfbd355f96f59d683ee-450x247.jpg" alt=""&gt;&lt;/a&gt;&lt;figcaption id="caption-attachment-14511190" class="wp-caption-text"&gt;搬重物时要先蹲下，吸饱气，让肚子有支撑。（她健康提供）&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;4. 抱起来： 将重物抱起来。&lt;/p&gt;
+&lt;p&gt;5. 放下： 放下时也要轻轻地蹲下去放，不要直接“砰”地丢下去。&lt;/p&gt;
+&lt;figure id="attachment_14511192" aria-describedby="caption-attachment-14511192" class="wp-caption aligncenter"&gt;&lt;a target="_blank" href="https://i.epochtimes.com/assets/uploads/2025/05/id14511192-1daf8f0835d1939bf7f2b7a469362ebe.jpg"&gt;&lt;img loading="lazy" decoding="async" class="size-medium wp-image-14511192" src="https://i.epochtimes.com/assets/uploads/2025/05/id14511192-1daf8f0835d1939bf7f2b7a469362ebe-450x246.jpg" alt=""&gt;&lt;/a&gt;&lt;figcaption id="caption-attachment-14511192" class="wp-caption-text"&gt;放重物时也要先蹲下，再放下。（她健康提供）&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2&gt;&lt;span&gt;护腰要够支撑&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;如果是工作原因需要经常搬重物，林冠宇建议戴护腰。护腰需要有一定的紧度，往后靠时需有支撑住的感觉。建议购买时试戴，搬动一下重物，感受它是否协助支撑，比没戴护腰时轻松就对了。如果有下背痛，坐飞机要搬行李时，建议戴上护膝或护腰。他强调，从传送带上拎起行李箱的动作，最容易闪到腰，长者一定要小心。&lt;/p&gt;
+&lt;h2&gt;&lt;span&gt;选择令自己放松的枕头床垫&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;除了白天活动拉伤导致下背痛，不少患者也抱怨睡醒后感到更加疼痛，林冠宇强调“睡得好比吃药还重要”。要想睡个好觉，选择枕头与床垫有以下注意事项。&lt;/p&gt;
+&lt;p&gt;枕头：平躺时，脖子应处于不出力的状态。枕头应填补头部与床垫之间的缝隙，尽量不要有空隙。可以试躺，请家人摸摸脖子是否紧绷。平躺时，枕头的高度建议男生约5&lt;strong&gt;～&lt;/strong&gt;6公分，女生约3&lt;strong&gt;～&lt;/strong&gt;4公分。&lt;/p&gt;
+&lt;p&gt;床垫：同样要遵守放松原则，躺下去时整个背部和脖子应该是放松的。软床垫通常适合身材娇小、脊椎曲度较凸的人。身材高大或背部有旧伤、疾病的人，则适合比较硬的床垫。&lt;/p&gt;
+&lt;p&gt;侧躺和正躺所需的枕头高度不同。林冠宇建议，选枕头时还是以平躺为主，尽量多平躺，因为这样整个背部的张力分散会比较平均，除非背部有疾病导致正躺很痛，不得不侧睡。&lt;/p&gt;
+&lt;h2&gt;&lt;span&gt;下背痛的治疗&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;如果下背痛持续一段时间仍没有改善，建议求医治疗。初阶会藉由口服放松肌肉及消炎止痛的药物来帮助改善，对于急性的下背痛有立即效果。常见的仪器治疗包括热敷、电疗，针对比较深层的肌肉可搭配微波治疗。&lt;/p&gt;
+&lt;p&gt;如果疼痛原因更深层，例如脊椎旁边有小骨刺、错位或小面关节发炎，可以考虑第二线治疗，通过超音波导引，将药剂直接注射到腰椎部位。如果涉及骨折或严重滑脱，需要转介给骨科或外科医师手术处理。&lt;/p&gt;
+&lt;h2&gt;&lt;span&gt;做运动强化肌肉 改善下背痛&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;有人可能会觉得打针治疗可以快速解决疼痛，就不需要做复健或运动来强化肌肉。林冠宇解释，如果把人分成受伤的人、普通的人和强壮的人，那么受伤的人需要通过休息、复健、电疗、口服药等治疗，回归正常状态，而正常的人藉由运动训练变成强壮的人，这样才不容易跳回受伤的状态。&lt;/p&gt;
+&lt;p&gt;今年4月&lt;a href="https://www.sciencedirect.com/science/article/pii/S1836955325000165#bib34"&gt;刊登&lt;/a&gt;于《物理治疗杂志》（Journal of Physiotherapy）、由英、澳、加学者综合多项研究的数据分析显示，在42项涉及慢性非特异性下背痛患者的试验中，做运动的人比起没有运动的人，在满分100分的疼痛程度评分表中，平均减少约9.65分，其中做运动更规律的人效果更明显。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.acpjournals.org/doi/10.7326/M16-2367"&gt;美国内科医师学会&lt;/a&gt;（American College of Physicians）和&lt;a href="https://pubmed.ncbi.nlm.nih.gov/27929617/"&gt;英国国家健康与照护卓越研究所&lt;/a&gt;（UK National Institute for Health and Care Excellence）等权威机构，已经将运动治疗纳入治疗下背痛的指引。&lt;/p&gt;
+&lt;h2&gt;&lt;span&gt;产后建议核心肌群训练&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;另外，对于女性生产后出现的下背痛症状，林冠宇解释，这是因为女性荷尔蒙在产前让肌肉和韧带变得比较松弛，建议产后腰酸背痛者进行核心肌群训练。如果产后有肌肉沾黏或疼痛，也可以藉由按摩、伸展，或热敷、电疗等仪器治疗来帮助改善。对于已经疼痛半年以上的严重个案，“一些超音波的注射治疗效果蛮好”。@&lt;/p&gt;
+&lt;p&gt;身处纷乱之世，心存健康之道，就看&lt;span&gt;健康1+1&lt;/span&gt;！&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;span&gt;观赏视频&lt;/span&gt;&lt;/em&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p class="video_fit_container"&gt;		
+		&lt;/p&gt;
+&lt;p&gt;责任编辑：张晓慧&lt;/p&gt;
+&lt;span id="epoch_socail_span"&gt;&lt;/span&gt;		
+
+		&lt;p id="below_article_ad"&gt;&lt;/p&gt;
+
+				
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>大紀元</author><pubDate>Sat, 24 May 2025 23:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9raENyTzZFY1ktZ29SVGZDSlRLYV9Rdk5wY29FS1daZUdyQ1NFaUMtRGc1dlBteHNZXzlzRk4zd2lYaVNrVnJmTkgtTFhiS3YtQ0ZPMkQ2Zlk4eThxaFdvU9IBZkFVX3lxTE9adE81VlFYbHBqMUlKV3RaeEo0WExsNl9lelZvbG9rN2RaMWNjbk5TY2F5WGowZll0b0FGejhCME90MFlyOWpzTnFzTExuTmZxM283WUpyWlFNakQ5R0NnWEpzTW1WZw</guid></item><item><title>综述：青少年和年轻成人癌症患者及幸存者的饮食：范围综述 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5DbFZ2MjJsX3MwTzdla2xoV1N2bzB2R0RYSGotblNwUXBxNlpydUNCdUlVbzlQdE5QSzRuWEc4VHp6TlN1MlRkVmVOdDA0V1ZLRjFNUGhPWkhlbTdtMUZKVVQxamhRNlVTeDNJMw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Supportive Care in Cancer》：Diet in adolescent and young adult patients with cancer and cancer survivors: a scoping review&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　这篇范围综述聚焦青少年和年轻成人（AYAs）癌症患者及幸存者的营养问题，揭示其面临独特饮食障碍（如经济毒性financial toxicities）及二次肿瘤（second neoplasms）风险。现有研究多关注儿童期癌症幸存者，而针对AYAs诊断群体的饮食干预（如个体化营养咨询individualized nutrition counseling）和数字技术（telehealth）应用仍需更大样本验证。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;h3&gt;独特的营养挑战&lt;/h3&gt;
+&lt;p&gt;青少年和年轻成人（Adolescents and Young Adults, AYAs）癌症群体面临双重营养危机：治疗期间易出现营养不良，而幸存期则因不良饮食行为增加二次肿瘤（second neoplasms）和远期健康风险。现有数据表明，AYAs普遍偏离膳食指南，尤其缺乏水果、蔬菜和膳食纤维（dietary fiber），且糖分、脂肪及加工肉类摄入超标。&lt;/p&gt;
+&lt;h3&gt;研究空白与人群差异&lt;/h3&gt;
+&lt;p&gt;当前多数研究集中于儿童期癌症幸存者（childhood cancer survivors）进入AYA年龄段的群体，而非原发AYAs患者。这种差异导致针对AYAs诊断群体的营养干预证据不足，尤其在新型癌症疗法（novel cancer therapies）与饮食交互作用方面亟待探索。&lt;/p&gt;
+&lt;h3&gt;干预技术的曙光&lt;/h3&gt;
+&lt;p&gt;个体化营养咨询（individualized nutrition counseling）初步显示可改善AYAs饮食质量，而远程医疗（telehealth）和数字工具通过降低参与门槛，有望促进健康行为。但经济毒性（financial toxicities）等社会因素仍是实现理想饮食的主要障碍。&lt;/p&gt;
+&lt;h3&gt;未来方向&lt;/h3&gt;
+&lt;p&gt;需扩大样本量验证饮食干预效果，并明确AYAs特定膳食模式对治疗安全性（safety）和疗效（efficacy）的影响。跨学科合作或能突破现有研究局限，为这一脆弱群体构建精准营养支持体系。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 22:58:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5DbFZ2MjJsX3MwTzdla2xoV1N2bzB2R0RYSGotblNwUXBxNlpydUNCdUlVbzlQdE5QSzRuWEc4VHp6TlN1MlRkVmVOdDA0V1ZLRjFNUGhPWkhlbTdtMUZKVVQxamhRNlVTeDNJMw</guid></item><item><title>聚唾液酸通过特异性结合VEGF-A188调控小鼠肾小球微血管发育的机制研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9ta3NSLTdXYnE2OEszMVNNX1ljNG5nRXZ0V0g4S1Qxem5vUGN5VEFib1JFVnBxRS11cERISC1zV002bnRrVnhyRUFfaXNGbFZIZGpEb2F4N0x4eGlzQUlQTlVIUE44Rmw1UVVqWA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Angiogenesis》：Polysialic acid regulates glomerular microvasculature formation by interaction with VEGF-A188 in mice&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -277,7 +384,30 @@ LTED细胞中CD44和SLC1A2的mRNA及蛋白水平均显著升高（Western blot�
 该研究首次系统排除了CD44-SLC1A2融合在乳腺癌中的存在，但阐明了二者通过“代谢物依赖的CD44蛋白稳定”机制共同驱动ET耐药。双高表达患者的不良预后（经多变量校正HR=2.78）提示其作为生物标志物的潜力，而SLC1A2-CD44-天冬氨酸代谢轴为逆转耐药提供了新靶点。研究发表于《Molecular and Cellular Biochemistry》，为理解非遗传性耐药开辟了代谢-表型调控的新视角。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 21:40:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5ZOWY0dGJkV240Q1hTenFPZlVoRmlraWx1bkQ4bHdqeV9qZzctRWJEb3ZTcEo1d0pQLWQ2Wng4SUpWRGY0eXlzd0ZWeHFQakN1RFBYakxVSUdVZk9MdHJmWXljcjFGSXVnZjRLTg</guid></item><item><title>病毒介导的Atxn2基因敲减可减轻PFN1C71G ALS小鼠模型的TDP-43病理及肌肉功能障碍 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1mLWk4NE9rcEtTZUhoejZVUmd1RWlNX1pPS1ZtZnJfRDhUeTlIZU14cWZGNERxWFNRNGs4VW1LelhSSVVNWFJiSDBZd0pzYTZDRVNWOU9PbE01dzVPRjRFamQ4YWgtV0NTc0FRXw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Acta Neuropathologica Communications》：Viral-mediated knockdown of Atxn2 attenuates TDP-43 pathology and muscle dysfunction in the PFN1C71G ALS mouse model&lt;/p&gt;
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 21:40:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5ZOWY0dGJkV240Q1hTenFPZlVoRmlraWx1bkQ4bHdqeV9qZzctRWJEb3ZTcEo1d0pQLWQ2Wng4SUpWRGY0eXlzd0ZWeHFQakN1RFBYakxVSUdVZk9MdHJmWXljcjFGSXVnZjRLTg</guid></item><item><title>TACE联合TKIs/ICIs诱导的甲状腺功能减退与肝细胞癌患者生存改善的临床关联研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5LajNfdUJqVS05OVRDUkVjTlltSDRHWnl6QllRalQ4RzRvNjNiSFJvdnRtcmkyODlJekRnaTJLNkJMZlJDbVVvRmJ0Qkxud3JuemNxVVo1R0NLWE1CSndPTE1KSVlONV9HM0FHbQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Cancer Immunology, Immunotherapy》：Transarterial chemoembolization combined with tyrosine kinase inhibitors and/or immune checkpoint inhibitors induced hypothyroidism is associated with improved overall survival in hepatocellular carcinoma&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对肝细胞癌(HCC)治疗中TACE联合TKIs/ICIs引发的甲状腺功能减退现象，通过130例真实世界队列分析，首次证实治疗相关甲状腺功能减退与患者总生存期延长显著相关（HR:0.30，P=0.04），尤其在TACE+TKIs+ICIs组更显著（HR:0.14，P=0.009），为免疫治疗疗效预测提供新生物标志物。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;p&gt;肝细胞癌(HCC)作为最常见的原发性肝癌，长期困扰着全球患者。尽管治疗手段不断进步，从手术切除、经动脉化疗栓塞(TACE)到酪氨酸激酶抑制剂(TKIs)和免疫检查点抑制剂(ICIs)等系统疗法，但疗效预测和副作用管理仍是临床难题。尤其值得注意的是，这些治疗手段常引发甲状腺功能异常，其中甲状腺功能减退的发生率在不同研究中差异显著，其与患者预后的关系更是众说纷纭——有的研究认为甲状腺功能减退可能减缓肿瘤生长，有的则将其归因于自身免疫毒性导致不良结局。这种认知混乱主要源于治疗方案差异和甲状腺功能障碍发生时间的异质性，亟需在真实世界临床环境中进行系统评估。&lt;/p&gt;
+&lt;p&gt;针对这一关键问题，吉林大学第一医院的研究团队开展了一项创新性研究，成果发表在《Cancer Immunology, Immunotherapy》。该研究聚焦TACE联合TKIs/ICIs治疗HCC时诱发的甲状腺功能减退现象，通过多维度分析揭示了其与患者生存改善的显著关联。&lt;/p&gt;
+&lt;p&gt;研究采用回顾性队列设计，纳入130例接受TACE单药或联合治疗的HCC患者，通过甲状腺功能检测（包括TSH、FT&lt;sub&gt;4&lt;/sub&gt;、TPOAb、TgAb）、&lt;sup&gt;131&lt;/sup&gt;I摄取试验等技术手段，结合长期随访数据，系统评估了甲状腺功能减退的发生率及其临床意义。采用Kaplan-Meier生存分析和多因素Cox比例风险模型等统计方法，严格控制了饮酒、Child-Pugh评分等混杂因素的影响。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;研究人群&lt;/strong&gt;显示，联合治疗组甲状腺功能减退发生率显著高于TACE单药组（51.3% vs 22.0%），提示TKIs/ICIs的叠加效应。&lt;strong&gt;甲状腺抗体检测&lt;/strong&gt;发现基线TPOAb/TgAb正常患者中，仅少数治疗后转为阳性，且与甲状腺功能减退无明确关联。&lt;sup&gt;131&lt;/sup&gt;I摄取试验则显示治疗后普遍降低，提示其可能比血清TSH更敏感。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总体生存分析&lt;/strong&gt;得出突破性结论：全队列中甲状腺功能减退患者死亡率显著降低（25% vs 48.7%，P=0.007），中位生存期延长至37.5个月（vs 23.33个月，P=0.015）。这种优势在TACE+TKIs+ICIs亚组尤为突出——甲状腺功能减退患者死亡率仅16%（vs 50%），中位生存期未达到（vs 22.54个月，P=0.005）。&lt;strong&gt;多因素分析&lt;/strong&gt;进一步证实，甲状腺功能减退是生存保护的独立因素（HR:0.30，P=0.04），在TACE+TKIs+ICIs组保护效应更强（HR:0.14，P=0.009）。&lt;/p&gt;
+&lt;p&gt;讨论部分深入阐释了潜在机制：ICIs可能通过激活CD4&lt;sup&gt;+&lt;/sup&gt; T细胞攻击甲状腺滤泡细胞，同时TKIs干扰甲状腺激素合成通路，双重作用导致甲状腺功能减退。这种"免疫激活"状态可能反映机体抗肿瘤免疫应答增强，从而带来生存获益。研究创新性地提出甲状腺功能监测可作为ICIs疗效预测指标，为临床决策提供新依据。&lt;/p&gt;
+&lt;p&gt;该研究的临床价值在于：首次在真实世界队列中证实TACE联合治疗诱发的甲状腺功能减退与生存改善相关，为个体化治疗提供重要参考；建立甲状腺功能评估体系，推动治疗监测标准化；揭示免疫治疗与内分泌系统的复杂互作，为后续机制研究奠定基础。局限性包括样本量较小、种族单一等，作者建议开展多中心前瞻性研究验证结论，并探索激素替代治疗对预后的影响。这项研究为HCC精准治疗开辟了新视角，其发现可能拓展至其他癌种的免疫治疗评估中。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 21:37:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5LajNfdUJqVS05OVRDUkVjTlltSDRHWnl6QllRalQ4RzRvNjNiSFJvdnRtcmkyODlJekRnaTJLNkJMZlJDbVVvRmJ0Qkxud3JuemNxVVo1R0NLWE1CSndPTE1KSVlONV9HM0FHbQ</guid></item><item><title>病毒介导的Atxn2基因敲减可减轻PFN1C71G ALS小鼠模型的TDP-43病理及肌肉功能障碍 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1mLWk4NE9rcEtTZUhoejZVUmd1RWlNX1pPS1ZtZnJfRDhUeTlIZU14cWZGNERxWFNRNGs4VW1LelhSSVVNWFJiSDBZd0pzYTZDRVNWOU9PbE01dzVPRjRFamQ4YWgtV0NTc0FRXw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Acta Neuropathologica Communications》：Viral-mediated knockdown of Atxn2 attenuates TDP-43 pathology and muscle dysfunction in the PFN1C71G ALS mouse model&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -459,7 +589,19 @@ HPV通过下调主要组织相容性复合体（MHC）I类分子表达、抑制�
 &lt;/div&gt;				 
 				
 
-			&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>亚洲电视新闻</author><pubDate>Sat, 24 May 2025 02:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi6gFBVV95cUxOU0lPaFFlYTRySk94NWVNQ2thS2RGbjltanRvX09VcHdqUzJLZVB0MFpxLVBrV3FPSlhmNVY5akdlUVFXY2JJaUdmX0RWUF9QUTJERXJLZTVEck1TWi1UUHE5Xzh3SVhkdGJoakoxUmdydE1fd2tIT0hPZU9FZjJZd2xNUExLb0EwdkV3Zm4wdGJLRHpYVllxN0FuSUFiSlF6T3dSbTF6WmJJSTdyY1QzYWllbW1vUW5HUW91REt2dWFaR1ZmQVdscEwzTjhzZXdaU0VzQ01iOTlHcTBZR2xncUptRTI5WUlWeVE</guid></item><item><title>新冠后癌症井喷式爆发，有的人同时患多种癌症！ - 亿忆网</title><link>https://news.google.com/rss/articles/CBMiVkFVX3lxTFAyMHBHeEdDSDdadEFYRXU4NzhKWEhUZFpLMWtmdUQtZVNUQ0ptNC04Sk9qclB5TVhWbnVhSENDWHpfcFc4UHg5U0ZrWmFpNmlSeFJoU09n?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="__next"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>亿忆网</author><pubDate>Sat, 24 May 2025 01:05:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTFAyMHBHeEdDSDdadEFYRXU4NzhKWEhUZFpLMWtmdUQtZVNUQ0ptNC04Sk9qclB5TVhWbnVhSENDWHpfcFc4UHg5U0ZrWmFpNmlSeFJoU09n</guid></item><item><title>综述：窥探主观性：意识隐蔽测量方法综述 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFB3YUhMbmxxWHlHdGxzTTNKMHd6OHdoM2FPSFJmbi1qbFc5XzZZTU5sTXROb1NnVkRKWVAtczU4anFTQkhGYzREdmx2VmJjMXFBX3pwSXBQbjZZdWJZdElDY2RIQzc1NUs2ckpuRg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Nature Reviews Neuroscience》：Sleuthing subjectivity: a review of covert measures of consciousness&lt;/p&gt;
+			&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>亚洲电视新闻</author><pubDate>Sat, 24 May 2025 02:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi6gFBVV95cUxOU0lPaFFlYTRySk94NWVNQ2thS2RGbjltanRvX09VcHdqUzJLZVB0MFpxLVBrV3FPSlhmNVY5akdlUVFXY2JJaUdmX0RWUF9QUTJERXJLZTVEck1TWi1UUHE5Xzh3SVhkdGJoakoxUmdydE1fd2tIT0hPZU9FZjJZd2xNUExLb0EwdkV3Zm4wdGJLRHpYVllxN0FuSUFiSlF6T3dSbTF6WmJJSTdyY1QzYWllbW1vUW5HUW91REt2dWFaR1ZmQVdscEwzTjhzZXdaU0VzQ01iOTlHcTBZR2xncUptRTI5WUlWeVE</guid></item><item><title>24岁女生出现噎食、打嗝等症状后确诊胃癌，医生表示等到有症状或许已经晚了 - 羊城晚报</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE85N0JUbHRuM1pIaFBVa3hmU3J6OG05aDNhdFRWb0JMV0szc3ZGQUVqajlnaC16TVg2VFZTaHgwbG5rNE53N3RndmJPNEw1YXk2bFhHRlNiOEZia3lVdUo1QWYyMmJadw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main_article img" id="imgshow" data-pswp-uid="1"&gt;
+						
+					    
+							&lt;p&gt;21日，24岁的视频博主“嘻嘻徐宝”发布视频讲述自己确诊胃癌的经历。她自述确诊前的症状表现有吃饭容易噎着、会不停地打嗝，肚子很鼓，感觉有很多气体，很容易饱，饭量也变小等。&lt;/p&gt;&lt;p&gt;俗话说“十人九胃”，很多人都有过胃痛、胃胀、打嗝、嗳气等不适，但这些看似危害不大的症状，竟然都是胃癌的报警信号？专家在接受记者采访时表示，其实胃癌的癌前病变很隐蔽，早期胃癌也可能无明显症状，生活中应提高对胃部健康的重视程度，定期进行胃镜检查等体检项目，以便及时发现并处理胃部的异常情况。&lt;/p&gt;&lt;p&gt;&lt;img src="https://health.ycwb.com/pic/2025-05/24/53429007_434fd0e1-eda2-47d2-b8ca-4f185493213acopy.jpg" class="picture-illustrating" data-toggle="tooltip" placement="bottom" trigger="hover focus" html="true" data-original-title="网络截图" data-original-comment="网络截图"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;胃癌早期可无症状&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;随着年龄的增长，胃黏膜在不停地损伤修复过程当中会出现一定的病变，这是一个正常的过程。但如果在日常生活中不注重健康饮食，再加上不良的生活习惯，会加速胃黏膜的萎缩，甚至在肠化、萎缩性胃炎的基础上出现癌前病变，如不典型增生、异型增生、腺瘤样息肉等，这些情况下一步再发展的话，就会出现早期癌变。“有患者可能表现为上腹疼痛、食欲减退、恶心反酸、呕吐等，这些都是不典型症状，也有很多时候它会‘悄无声息’地进展，直至中晚期才被发现。”南京同仁医院消化内科内镜中心副主任医师吴万桂说。&lt;/p&gt;&lt;p&gt;胃癌的早期症状和慢性胃炎、胃溃疡等存在诸多相似之处，所以很容易让人混淆和忽视。“对于已经有症状的患者，应该及时就医，结合症状表现进行胃镜检查、病理组织学检查、肿瘤标志物检测等，准确诊断并制定科学治疗方案。”吴万桂坦言，胃由正常黏膜细胞转变为癌肿是一个多步骤癌变的进程，即便只是胃炎、胃溃疡，也应该引起重视，积极治疗，从生活方式开始干预保护胃部健康，避免小毛病拖成大问题。&lt;/p&gt;&lt;p&gt;在饮食习惯方面，首先要减少腌制品的摄入，高盐食品会导致胃粘膜屏障的慢性损伤，增加对致癌物质的易感性。“烧烤、加工肉制品等都是含有致癌原或已经是致癌物。建议三餐需规律进食，每天适当进食蔬菜、水果、优质蛋白，少吃辛辣易刺激食道胃黏膜的食物。”吴万桂表示，在作息习惯方面也要保证足够的睡眠，不熬夜，保持适量体力活动、控制体重，都对胃部健康有益。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;发现幽门螺杆菌应尽早根除&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;此前，吴万桂还接诊过一位22岁的胃癌患者，因为上腹疼痛3天到医院就诊，胃镜活检确诊了胃癌。“这个小伙子没有基础疾病，也没有家族史，唯一相关联的病因就是他有幽门螺杆菌感染。”吴万桂回忆，当时患者初检考虑胃溃疡，但病理结果显示存在异型增生细胞，一个月后再次复查，最终确诊肠型胃癌。因为早发现早治疗，在后续回访中得知，该病人没有出现癌细胞转移，也没有放化疗，健康状况良好。&lt;/p&gt;&lt;p&gt;幽门螺杆菌的传播途径主要包括口口传播、胃口传播、粪口传播。只要感染了幽门螺杆菌，内镜下就可以看到胃黏膜发生了炎性改变。“一般我们会建议45岁以上的人群将胃镜检查纳入常规体检项目之中，以便在出现症状之前，提前发现胃内微妙的变化，早期防治。但对于有家族史、长期不良生活习惯者、有消化道症状者等，胃镜检查的时间要大大提前，复查间隔时间也要遵医嘱缩短。”吴万桂说。&lt;/p&gt;&lt;p&gt;专家表示，幽门螺杆菌经过口到达胃黏膜后定居感染，数周或数月后引发慢性、浅表性胃炎，数年或数十年后可发展成为十二指肠溃疡、胃溃疡、慢性萎缩性胃炎等，而慢性萎缩性胃炎是导致胃癌的最常见危险因素。&lt;/p&gt;&lt;p&gt;“降低胃癌发生风险，首先就要根除幽门螺杆菌。”吴万桂提醒，对于无症状感染者以及老年患者，应进行个体化评估和处理，有些无需处理，遵医嘱定期复查即可。但已经有消化道溃疡等相关症状，则需要进行规范根除治疗，不建议擅自用药或中途停药，以防增加幽门螺杆菌的耐药性，加大治疗难度。对于幽门螺杆菌的预防，一定要定期消毒餐具，在外尽量使用公勺公筷，饭前便后及时洗手，注意口腔卫生。&lt;/p&gt;&lt;p&gt;题图 | 羊城晚报资料图&lt;/p&gt;
+							&lt;p class="space10"&gt;&lt;/p&gt;
+							&lt;p class="author"&gt;&lt;span id="editor_baidu"&gt;编辑：朱嘉乐&lt;/span&gt;
+							&lt;/p&gt;
+							&lt;p class="ddf"&gt;&lt;/p&gt;
+
+					&lt;/div&gt;
+					 
+					
+					&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>羊城晚报</author><pubDate>Sat, 24 May 2025 01:13:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE85N0JUbHRuM1pIaFBVa3hmU3J6OG05aDNhdFRWb0JMV0szc3ZGQUVqajlnaC16TVg2VFZTaHgwbG5rNE53N3RndmJPNEw1YXk2bFhHRlNiOEZia3lVdUo1QWYyMmJadw</guid></item><item><title>新冠后癌症井喷式爆发，有的人同时患多种癌症！ - 亿忆网</title><link>https://news.google.com/rss/articles/CBMiVkFVX3lxTFAyMHBHeEdDSDdadEFYRXU4NzhKWEhUZFpLMWtmdUQtZVNUQ0ptNC04Sk9qclB5TVhWbnVhSENDWHpfcFc4UHg5U0ZrWmFpNmlSeFJoU09n?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="__next"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>亿忆网</author><pubDate>Sat, 24 May 2025 01:05:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTFAyMHBHeEdDSDdadEFYRXU4NzhKWEhUZFpLMWtmdUQtZVNUQ0ptNC04Sk9qclB5TVhWbnVhSENDWHpfcFc4UHg5U0ZrWmFpNmlSeFJoU09n</guid></item><item><title>综述：窥探主观性：意识隐蔽测量方法综述 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFB3YUhMbmxxWHlHdGxzTTNKMHd6OHdoM2FPSFJmbi1qbFc5XzZZTU5sTXROb1NnVkRKWVAtczU4anFTQkhGYzREdmx2VmJjMXFBX3pwSXBQbjZZdWJZdElDY2RIQzc1NUs2ckpuRg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Nature Reviews Neuroscience》：Sleuthing subjectivity: a review of covert measures of consciousness&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -622,7 +764,38 @@ Pg显著增强巨噬细胞通过清道夫受体MSR1介导的ox-LDL摄取，形�
 &lt;p&gt;该研究具有重要临床意义：一方面为牙周炎与心血管疾病的关联提供了分子解释，提示控制牙周感染可能有助于预防急性心血管事件；另一方面，针对FOXO3-MSRI信号轴的干预策略（如抗氧化治疗、MSR1抑制剂等）或成为稳定动脉粥样硬化斑块的新途径。研究也存在一定局限性，如小鼠模型难以完全模拟人类斑块破裂过程，未来需要开发更接近人类疾病的高级动物模型进行验证。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 00:11:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1MMGhUa0tMNkVzQmk5cGRsdVU0T2dhNUozN2g3bWV6RkVlbG5Wb1FxTXFlMWJHSVBRYU9oUllKaDNoN0VnU3NWUXpkQkZUVXNnZFprTTZmaGxhd3RiWE9jVWF0dHFMR2lUSlpINA</guid></item><item><title>高剂量三代EGFR-TKIs联合鞘内培美曲塞治疗EGFR突变型NSCLC软脑膜转移的疗效与安全性研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE12b25iczRLWWlRcC1tUUhKaGFNa3hfUzlTT0tBa1hkSFZpMUhzdElZSWotaFN1WlAzU3BvYU1FZGlPZnoyTG5xN3c3QkVGV1JoNGlCZ2dmMG45azlnblpvanlZX3hrM0tLWlRqcA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Cancer》：High-dose third-generation EGFR-TKIs combined with intrathecal pemetrexed in advanced EGFR-mutant NSCLC with leptomeningeal metastases following EGFR-TKI therapy&lt;/p&gt;
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 00:11:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1MMGhUa0tMNkVzQmk5cGRsdVU0T2dhNUozN2g3bWV6RkVlbG5Wb1FxTXFlMWJHSVBRYU9oUllKaDNoN0VnU3NWUXpkQkZUVXNnZFprTTZmaGxhd3RiWE9jVWF0dHFMR2lUSlpINA</guid></item><item><title>内镜辅助低温等离子经口手术治疗口咽部恶性肿瘤的临床疗效及安全性分析 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE9XSEpDNEozdjVzOWFJUV9NUGpvZ3JVZmhOczBmT0pqejdKYWVlTFVRRVcyVjJiQkJxbWNpQ25LVEZ3bF9JSnRhSWtzRjRQcUhvMWprWWJiQzRpRDgtV3F5Ml9QZVZvVzJZV3dVeQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《World Journal of Surgical Oncology》：Transoral endoscopy-assisted low-temperature plasma for the treatment of oropharyngeal malignant tumours: Preliminary Reports from a Single-Centre Retrospective Analysis&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对口咽部恶性肿瘤治疗中开放手术创伤大、传统微创技术视野受限等问题，由西南医科大学附属医院团队开展了一项回顾性研究。通过分析14例接受内镜辅助低温等离子(LTP)手术患者的临床数据，证实该技术具有术中出血少(66±55 ml)、肿瘤切除精准(53±15 min)及术后功能恢复良好等优势，为口咽癌(OPSCC)的微创治疗提供了新选择。研究发表于《World Journal of Surgical Oncology》，对优化HPV(+)与HPV(-)患者的个体化治疗策略具有重要参考价值。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;p&gt;口咽部恶性肿瘤作为头颈部常见肿瘤，其治疗始终面临两难抉择：传统开放手术虽能彻底切除病灶，但伴随下颌骨切开等操作会导致严重功能损伤；而放疗(RT)虽可保留器官结构，却可能引发远期放射性骨坏死等并发症。尤其在中国，约80-90%的口咽鳞癌(OPSCC)与HPV感染无关，这类患者对放疗敏感性较低，亟需更安全有效的手术方案。&lt;/p&gt;
+&lt;p&gt;西南医科大学附属医院耳鼻咽喉头颈外科团队在Gang Qin教授带领下，创新性地将内镜技术与低温等离子(LTP)系统结合，对2017至2024年间14例口咽恶性肿瘤患者实施经口微创手术。这项发表于《World Journal of Surgical Oncology》的研究显示，该技术不仅实现平均53分钟的精准肿瘤切除，更将术中失血量控制在66ml以下，术后吞咽功能恢复时间仅需6天，为平衡肿瘤根治与功能保留提供了新范式。&lt;/p&gt;
+&lt;p&gt;研究采用四大关键技术：1) 全身麻醉下经鼻气管插管，使用Boyle-Davis开口器最大化暴露术野；2) 4mm直径0°内镜联合高清摄像系统(Karl Storz)实时监测；3) MC401等离子系统在肿瘤边界1cm外实施低温(&amp;lt;40°C)切割，避免热损伤；4) 对T1-T2期肿瘤浸润深度&amp;gt;3mm或T3-T4期患者同期行颈部淋巴结清扫(11例)。所有病例均通过术中冰冻切片确认切缘阴性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;临床患者特征&lt;/strong&gt;&lt;br&gt;
+队列以中老年男性为主(13/14)，平均年龄60岁，吸烟饮酒史占比71%。肿瘤部位分布显示：扁桃体6例、软腭3例、舌根3例、悬雍垂2例。值得注意的是，4例p16(+)患者提示HPV感染相关性，这类患者预后显著优于HPV(-)组。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;手术效果&lt;/strong&gt;&lt;br&gt;
+联合手术(含皮瓣修复、淋巴结清扫)总时长231分钟，但单纯肿瘤切除仅需53分钟。3例采用皮瓣修复(前臂皮瓣、颈阔肌皮瓣、颏下皮瓣各1例)，1例预防性气管切开。术后病理证实13例为鳞癌(SCC)，1例为粘液表皮样癌(MEC)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;随访数据&lt;/strong&gt;&lt;br&gt;
+中位随访16个月显示：12例无复发，1例悬雍垂癌患者33个月后多发转移死亡，1例拒绝辅助治疗的扁桃体癌患者30个月复发。9例接受术后放疗(60Gy/33次)，其中1例联合化疗，3例拒绝辅助治疗。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;典型案例&lt;/strong&gt;&lt;br&gt;
+71岁男性患者通过该技术完整切除左软腭-扁桃体-舌根病灶，术后13个月MRI复查无复发。该案例典型呈现了LTP技术对复杂解剖区域肿瘤的清除能力，其p16(+)状态也印证了HPV相关OPSCC的预后优势。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;讨论与意义&lt;/strong&gt;&lt;br&gt;
+相较于传统经口激光手术(TLM)的视野局限和机器人手术(TORS)的高成本，内镜-LTP联合方案展现出独特优势：1) 利用等离子体的电离粒子实现精准切割，避免激光分块切除的边际误差；2) 较TORS节省80%设备成本，且无需专门培训；3) 低温特性(较电刀低30-40°C)显著减少周围组织热损伤。&lt;/p&gt;
+&lt;p&gt;该研究为口咽癌微创手术提供了等级证据：对于T1-T2期病灶，内镜-LTP可实现与开放手术相当的5年生存率，同时将并发症风险从50%降至7.1%(本研究仅1例感染)；对HPV(+)患者，该技术可作为根治性放疗的替代方案，避免放射性吞咽功能障碍。未来需扩大样本量验证其对T3-T4期肿瘤的适用性，并探索与免疫治疗的协同效应。&lt;/p&gt;
+&lt;p&gt;这项技术的普及将重塑口咽癌治疗格局：在医疗资源欠发达地区，仅需常规内镜与等离子设备即可开展，使微创手术真正实现"技术下沉"。正如研究者所言，这种"小而美"的创新，或许正是解决中国高发HPV(-)口咽癌临床困境的关键钥匙。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 24 May 2025 00:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9XSEpDNEozdjVzOWFJUV9NUGpvZ3JVZmhOczBmT0pqejdKYWVlTFVRRVcyVjJiQkJxbWNpQ25LVEZ3bF9JSnRhSWtzRjRQcUhvMWprWWJiQzRpRDgtV3F5Ml9QZVZvVzJZV3dVeQ</guid></item><item><title>高剂量三代EGFR-TKIs联合鞘内培美曲塞治疗EGFR突变型NSCLC软脑膜转移的疗效与安全性研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE12b25iczRLWWlRcC1tUUhKaGFNa3hfUzlTT0tBa1hkSFZpMUhzdElZSWotaFN1WlAzU3BvYU1FZGlPZnoyTG5xN3c3QkVGV1JoNGlCZ2dmMG45azlnblpvanlZX3hrM0tLWlRqcA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Cancer》：High-dose third-generation EGFR-TKIs combined with intrathecal pemetrexed in advanced EGFR-mutant NSCLC with leptomeningeal metastases following EGFR-TKI therapy&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -755,105 +928,4 @@ Pg显著增强巨噬细胞通过清道夫受体MSR1介导的ox-LDL摄取，形�
 &lt;p&gt;该成果不仅为AD治疗提供新思路，其揭示的"伴侣蛋白-底物稳定化"机制可能普遍存在于神经退行性疾病中。未来研究可进一步优化肽段给药方式，并探索BAG3在其他病理性蛋白（如tau、α-突触核蛋白）稳态调控中的作用。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 23 May 2025 23:56:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBSZ2xwY3pCdHp5eUVTMnN4a05xb3JBb0tjMXBvQVdaWnpxakxHMGFSd1p2MHA1d2liUjJKX0Fyay10aWpudnByX3JfWFdfdmMtWUFtZVhYTWVJZ1BQU09tZFBvOFZpaUJ1ZU9kbQ</guid></item><item><title>深度学习模型融合领域特征提升青光眼诊断准确性的创新研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE0zUTIteC1xcERoQlRGaXE0MUNvXy1NTDc3TDVxV2FJekdKazZjRmFuclRJUXFIMm5nQ0dfcEg1R2hWMjRWMFY0T0E3S1JyeElWOXVIbFhlVmtoZGhBN1lhTG5jN0FnLS16VWJ4ZQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《BMC Medical Informatics and Decision Making》：A deep learning model integrating domain-specific features for enhanced glaucoma diagnosis&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究针对青光眼与生理性大杯难以区分的临床难题，开发了融合深度学习特征与医学领域知识（DLMDF）的新型诊断模型。通过结合VGG16提取的非结构化特征和基于"ISNT"规则的象限化杯盘比（CDR）等15项结构化特征，实现了98.5%以上的视盘/视杯分割精度（AP），最终分类准确率达87.7%，显著优于传统方法。该研究为青光眼早期筛查提供了高特异性解决方案，发表于《BMC Medical Informatics and Decision Making》。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　
-&lt;p&gt;青光眼作为不可逆性致盲的首要病因，全球患者预计将从2011年的6050万激增至2040年的1.118亿，但超过60%的病例尚未确诊。传统诊断依赖眼科医生对视网膜图像中视杯与视盘比例（cup-to-disc ratio, CDR）的评估，但生理性大杯人群的CDR可达0.6（与青光眼患者相当），导致现有自动化诊断模型假阳性率居高不下。北京同仁医院的研究团队在《BMC Medical Informatics and Decision Making》发表的研究，首次将深度学习特征与临床解剖学规则深度融合，破解了这一诊断困局。&lt;/p&gt;
-&lt;p&gt;研究团队开发了"带领域特征的深度学习模型"（DLMDF），其创新性体现在三方面：首先采用全卷积网络（fully convolutional network, FCN）实现视盘/视杯的像素级分割（AP值分别达98.52%和98.57%）；其次将视盘划分为上、鼻、下、颞四个象限，计算各象限的杯面积、盘面积及CDR等15项结构化特征；最后通过VGG16网络提取深层图像特征。这种"白盒+黑盒"的双轨策略，既保留了临床可解释的"ISNT规则"（正常视盘神经视网膜缘厚度应满足：下缘最厚&amp;gt;上缘&amp;gt;鼻缘&amp;gt;颞缘最薄），又通过深度学习捕捉了难以量化的病理特征。&lt;/p&gt;
-&lt;p&gt;关键技术包括：1) 使用迁移学习策略，基于自然图像预训练的VGG16模型进行参数初始化；2) 采用Adam优化器（β&lt;sub&gt;1&lt;/sub&gt;=0.9，β&lt;sub&gt;2&lt;/sub&gt;=0.999）训练FCN分割网络；3) 对来自北京同仁医院的126张图像（79青光眼/47生理性大杯）进行十折交叉验证。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;实验结果&lt;/strong&gt;显示：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;分割性能&lt;/em&gt;：FCN在视盘/视杯分割中AP值均超98.5%，为后续特征计算奠定基础；&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;分类对比&lt;/em&gt;：DLMDF的准确率（87.7%）、精确度（88.5%）和召回率（86.7%）全面超越AlexNet等6种主流模型，较单纯使用结构化特征的随机森林（RF）提升12.2%；&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;特征重要性&lt;/em&gt;：仅使用VGG16非结构化特征时准确率降至83.1%，证实医学先验知识的增强作用。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;讨论&lt;/strong&gt;部分指出，该研究突破了传统CDR诊断的局限性：生理性大杯虽CDR增高但符合ISNT规则，而青光眼患者的象限厚度比例紊乱。这种多维度特征融合策略，将误诊率降低了约40%。局限性在于数据均来自单中心（北京同仁医院），未来需通过多中心研究验证泛化能力。&lt;/p&gt;
-&lt;p&gt;这项研究的意义在于：首次实现了青光眼诊断模型从"黑箱预测"到"可解释智能"的跨越，其分象限特征计算方法重现了临床医生的诊断逻辑，为AI在眼科的应用提供了新范式。研究团队计划进一步扩大数据集，并探索动态随访数据对疾病进展的预测价值。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 23 May 2025 23:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE0zUTIteC1xcERoQlRGaXE0MUNvXy1NTDc3TDVxV2FJekdKazZjRmFuclRJUXFIMm5nQ0dfcEg1R2hWMjRWMFY0T0E3S1JyeElWOXVIbFhlVmtoZGhBN1lhTG5jN0FnLS16VWJ4ZQ</guid></item><item><title>circ_0000043/miR-590-5p轴调控宫颈癌进展的预后价值及分子机制研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1DeWRLYUljOE1adi1yU3NIOU5zaUN0cVVETWtRUEJtT3AxdFBRcm14bFhLZVZjaEJIVFdFMGV1WjB0anM4Z3VCa2pfekVmTUt1cWNCX3JlUHZubDdoWml4ellnbkxZSVJRMU9YQg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Discover Oncology》：Prognostic value of circ_0000043/miR-590-5p in cervical cancer and regulation of tumor progression&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究针对宫颈癌（CC）患者预后评估难题，通过分析136例患者临床数据及细胞实验，揭示了circ_0000043低表达通过靶向miR-590-5p促进癌细胞增殖、迁移和侵袭的分子机制。研究发现circ_0000043可作为独立预后因子，其过表达显著抑制肿瘤恶性行为，为CC的精准治疗提供了新靶点。成果发表于《Discover Oncology》，为临床预后预测及靶向治疗策略开发奠定理论基础。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　
-&lt;p&gt;宫颈癌是全球女性健康的重要威胁，尽管筛查和疫苗普及使早期诊断率提升，但晚期患者预后仍不理想。近年来，环状RNA（circRNA）作为竞争性内源RNA（ceRNA）在肿瘤中的作用备受关注，但其在宫颈癌中的调控网络尚不明确。杭州市临平区第一人民医院的研究团队发现，circ_0000043在宫颈癌组织中异常低表达，与患者不良预后显著相关，但其通过何种机制影响疾病进展仍是未解之谜。&lt;/p&gt;
-&lt;p&gt;研究团队通过GEO数据库筛选差异表达circRNA，收集136例宫颈癌患者的术后组织及临床数据，采用RT-qPCR检测基因表达，Kaplan-Meier和Cox回归分析预后因素。细胞实验中通过CCK-8、Transwell评估增殖和转移能力，结合双荧光素酶报告实验（DLR）和RNA免疫共沉淀（RIP）验证分子互作。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;circ_0000043在宫颈癌中的表达特征&lt;/strong&gt;&lt;br&gt;
-分析GSE113696数据库发现circ_0000043在宫颈癌细胞系中普遍低表达。临床样本验证显示，癌组织中circ_0000043水平显著低于癌旁组织（P&amp;lt;0.01），且低表达患者更易发生淋巴结转移（P=0.014）和晚期FIGO分期（P=0.009）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;circ_0000043的预后价值&lt;/strong&gt;&lt;br&gt;
-5年随访数据显示，circ_0000043低表达患者总生存率更差（HR=0.277，P&amp;lt;0.01）。多因素分析确认其与淋巴结转移、FIGO分期同为独立风险因素，提示其可作为临床预后标志物。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;circ_0000043的功能机制&lt;/strong&gt;&lt;br&gt;
-在HeLa和SiHa细胞中过表达circ_0000043后，CCK-8显示增殖抑制率达50%（P&amp;lt;0.001），Transwell实验表明迁移和侵袭细胞数减少60%（P&amp;lt;0.001）。生物信息学预测结合DLR实验证实，circ_0000043直接结合miR-590-5p（荧光活性降低70%，P&amp;lt;0.001），RIP实验显示二者共同富集于Ago2蛋白（P&amp;lt;0.01）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;miR-590-5p的调控作用&lt;/strong&gt;&lt;br&gt;
-宫颈癌组织中miR-590-5p表达升高（P&amp;lt;0.01），与circ_0000043呈强负相关（r=-0.7081）。共转染实验表明，miR-590-5p模拟物可逆转circ_0000043对癌细胞恶性行为的抑制作用，证实该轴通过ceRNA机制调控CC进展。&lt;/p&gt;
-&lt;p&gt;该研究首次阐明circ_0000043/miR-590-5p轴在宫颈癌中的双重作用：circ_0000043低表达失去对miR-590-5p的抑制作用，导致后者促癌效应增强。从临床角度看，circ_0000043表达水平可辅助现有FIGO分期系统提升预后预测精度；从治疗角度，该通路的发现为开发RNA靶向药物提供了新思路，例如设计circ_0000043类似物或miR-590-5p抑制剂。值得注意的是，研究存在样本量有限和缺乏体内实验的局限性，未来需扩大队列并探索该机制与HPV感染、肿瘤微环境的交互作用。论文发表于《Discover Oncology》，为circRNA在妇科肿瘤领域的研究提供了重要范式。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 23 May 2025 23:08:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1DeWRLYUljOE1adi1yU3NIOU5zaUN0cVVETWtRUEJtT3AxdFBRcm14bFhLZVZjaEJIVFdFMGV1WjB0anM4Z3VCa2pfekVmTUt1cWNCX3JlUHZubDdoWml4ellnbkxZSVJRMU9YQg</guid></item><item><title>中国神经纤维瘤病1型家系基因分析及扩展队列的基因型-表型关联研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE11ZFJUdHZTT09hb0pTTEMyRUJzd2FoVXZjNEwtYURjeUVscmgtUlNwZVg4bnpRRGhvajlKYWU5X19VYlRlQUdCZVBJdTlTeXZkTERkRjlhZTlwamk3NGxDaDIzbU5CaFFHVU5HRw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Orphanet Journal of Rare Diseases》：Genetic analysis of 25 Chinese pedigrees with neurofibromatosis type 1 and genotype-phenotype study from an extended cohort&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究针对神经纤维瘤病1型(NF1)的基因变异谱和临床异质性，通过全外显子测序(WES)和功能分析，鉴定了25个中国NF1家系的24种变异（含10个新发变异），揭示了NF1剪接变体的功能复杂性。通过扩展队列分析（263例患者），首次量化了神经纤维瘤（79.8%）和骨病变（73.8%）的年龄依赖性风险阈值（23.5岁和20.5岁），为NF1精准监测提供了关键依据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　
-&lt;p&gt;神经纤维瘤病1型(NF1)是一种发病率达1/2500-3500的常染色体显性遗传病，以皮肤咖啡牛奶斑(CALMs)、神经纤维瘤和学习障碍为特征，但临床表现高度异质，给诊断和预后评估带来巨大挑战。尤其对于儿童患者，典型症状可能延迟至成年才显现，而现有诊断标准（如NIH指南）对此类病例敏感性不足。更棘手的是，NF1基因作为大型抑癌基因，其变异类型复杂，约50%为新生突变，且剪接变体占25%，但现有数据库对东亚人群变异谱覆盖不足。此外，尽管已知NF1并发症（如神经纤维瘤和骨病变）具有进展性，但其发生率与年龄的量化关系尚未明确，这直接影响了临床监测策略的制定。&lt;/p&gt;
-&lt;p&gt;为解决这些问题，国际和平妇幼保健院等机构的研究团队开展了中国NF1家系的系统性基因分析，结合扩展队列的基因型-表型研究。论文发表于《Orphanet Journal of Rare Diseases》，首次建立了中国人群NF1变异的年龄风险模型。&lt;/p&gt;
-&lt;p&gt;研究采用三大关键技术：1) 全外显子测序(WES)结合多重连接探针扩增(MLPA)检测27个家系的NF1变异；2) 对剪接变体c.3497-2 A&amp;gt;G进行RNA功能验证；3) 整合文献中235例NF1患者数据构建263人扩展队列，通过ROC曲线分析表型-年龄关联。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;遗传分析结果&lt;/strong&gt;&lt;br&gt;
-在25个确诊家系中鉴定出24种NF1变异，包括9种移码、6种剪接位点和4种无义突变，其中10个为新发变异。值得注意的是，剪接变体c.3497-2 A&amp;gt;G虽位于经典剪接位点，但RNA分析显示其仅导致6bp框内缺失，未引发蛋白功能丧失，因此被归类为意义未明变异(VUS)。这一发现强调了功能验证对剪接变体解读的必要性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;临床特征分析&lt;/strong&gt;&lt;br&gt;
-28例患者数据显示，CALMs发生率高达96.4%，神经纤维瘤和骨病变分别为64.3%和39.3%。值得注意的是，50%患者伴有近视，但仅17.9%存在脑部异常信号，提示眼科评估应纳入NF1常规监测。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;扩展队列基因型-表型关联&lt;/strong&gt;&lt;br&gt;
-对263例患者的综合分析揭示：1) 神经纤维瘤和骨病变呈现显著年龄依赖性，ROC曲线确定其风险年龄阈值分别为23.5岁(AUC=0.798)和20.5岁(AUC=0.738)；2) 变异类型（如移码与错义）或功能域位置（如GTP酶激活蛋白域）与特定表型无显著关联，支持NF1表型主要由单倍剂量不足而非变异类型驱动。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;讨论与意义&lt;/strong&gt;&lt;br&gt;
-本研究首次量化了中国NF1患者的并发症年龄风险，为个体化监测提供了循证依据。例如，对20岁以上患者应加强骨密度筛查，而25岁以上需重点关注神经纤维瘤进展。此外，发现剪接变体c.3497-2 A&amp;gt;G的异常剪切机制，提示ACMG指南中PVS1证据强度需结合功能数据调整。&lt;/p&gt;
-&lt;p&gt;局限性在于回顾性研究可能低估表型发生率，且东亚人群特异性变异的功能影响仍需深入探索。未来研究可结合长读长测序解析NF1大片段重排的分子机制。这些发现不仅完善了NF1变异数据库，更推动了从基因诊断到风险预测的临床转化。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 23 May 2025 23:08:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE11ZFJUdHZTT09hb0pTTEMyRUJzd2FoVXZjNEwtYURjeUVscmgtUlNwZVg4bnpRRGhvajlKYWU5X19VYlRlQUdCZVBJdTlTeXZkTERkRjlhZTlwamk3NGxDaDIzbU5CaFFHVU5HRw</guid></item><item><title>视神经脊髓炎患者脑功能的渐进性改变：基于静息态功能磁共振成像的纵向研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5Oc1RRaUI5NFNlSFhOT3pVS0VQNEFMd2dkdnhNZ0t6cjdjeHNfSllTbGVDd0FNZzdTYnozUjRmb2ZhNnN2LWpMRjhaNkU2bjZuMXZRakpoanBHeXJab0ppWFlPQlZFWVZOdHhzVw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Brain Imaging and Behavior》：Progressive brain function changes in patients with neuromyelitis optica: insights from resting-state fMRI&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　为解决视神经脊髓炎(NMO)患者脑功能动态变化机制不明的问题，研究人员通过纵向设计，采用静息态功能磁共振成像(rs-fMRI)技术监测31例非复发型NMO患者低频振幅(ALFF)指标。研究发现患者感觉运动区ALFF持续降低，小脑等区域出现代偿性升高，且ALFF变化与扩展残疾状态量表(EDSS)评分及视力改善显著相关，为NMO疾病进展监测提供了新型生物标志物。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　
-&lt;p&gt;视神经脊髓炎(NMO)是一种以视神经和脊髓严重炎症为特征的神经系统疾病。尽管已知该疾病会影响脑功能，但其随时间演变的详细模式仍不清楚。这项开创性研究通过静息态功能磁共振成像(rs-fMRI)技术，追踪了31名非复发型NMO患者和20名健康对照者(HCs)的脑功能变化。&lt;/p&gt;
-&lt;p&gt;研究人员采用低频振幅(ALFF)这一精准量化指标来捕捉神经活动特征。基线数据显示，NMO患者双侧旁中央小叶、中央后回、颞下回等关键区域ALFF显著降低，而小脑、丘脑等部位却出现代偿性升高。随着时间推移，患者枕叶和颞叶的异常范围不断扩大，甚至累及初期未受影响的颞上回和距状裂区域。&lt;/p&gt;
-&lt;p&gt;特别值得注意的是，患者右侧舌回、梭状回等区域的ALFF呈现进行性下降趋势。更令人振奋的是，研究发现EDSS评分改善与中央前后回ALFF升高显著相关，而视力提升则与内侧额上回ALFF增加存在明确关联。这些发现不仅揭示了NMO患者脑功能渐进性衰退的神经机制，更确立了ALFF作为监测疾病进展和评估治疗效果的新型生物标志物的临床价值。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 23 May 2025 22:41:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5Oc1RRaUI5NFNlSFhOT3pVS0VQNEFMd2dkdnhNZ0t6cjdjeHNfSllTbGVDd0FNZzdTYnozUjRmb2ZhNnN2LWpMRjhaNkU2bjZuMXZRakpoanBHeXJab0ppWFlPQlZFWVZOdHhzVw</guid></item></channel></rss>
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 23 May 2025 23:56:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBSZ2xwY3pCdHp5eUVTMnN4a05xb3JBb0tjMXBvQVdaWnpxakxHMGFSd1p2MHA1d2liUjJKX0Fyay10aWpudnByX3JfWFdfdmMtWUFtZVhYTWVJZ1BQU09tZFBvOFZpaUJ1ZU9kbQ</guid></item></channel></rss>
