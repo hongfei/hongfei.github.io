@@ -1500,7 +1500,65 @@ Interactive及核心开发者大卫·西蒙斯基表示：“孩子，你干得�
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 02:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10d1lxWGR0RWtIRTdVb19uLW5WYjN0cTJCM3NkZDdJOUFTdTNwX3BNNHhfQ0pOUkFyR3NLeVBIaDVXemJXRmd3WTRnVDhDYVZRQ0R4bVZRYmk</guid></item><item><title>小米回应何时才能下订小米YU7：7月份正式上市 可先买1:18合金车模 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MNHFMVnBYSEtVMjYxNTZfMlc1V3BWTEF1U1NQM3l5bjJpUnl0aWdGM1ZuU3BIV0JEZ2tUc0xxWGVxUl9SS3RqRzdQa1c4c3RnbUZnazVuNkE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 02:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10d1lxWGR0RWtIRTdVb19uLW5WYjN0cTJCM3NkZDdJOUFTdTNwX3BNNHhfQ0pOUkFyR3NLeVBIaDVXemJXRmd3WTRnVDhDYVZRQ0R4bVZRYmk</guid></item><item><title>华为昇腾推出高性能保精度量化方案，更好适配DeepSeek - 观察者</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WMHY5SExsM2xmdTNRLWU0S0JpaW1vRlpTeTJTNVU4ZlpfMnhQQUNnNWxwclFFeTVjbmVpc0NoUDZJcTZla2dqSmJMS182bUVaVWVpYUtCRWZDeTJuenpRbWMyUmU?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	（文/万肇生 编辑/张广凯）
+&lt;/p&gt;
+&lt;p&gt;
+	近日，华为公开了昇腾服务器上部署DeepSeek V3/R1推理的最佳实践，并介绍了一系列创新技术。
+&lt;/p&gt;
+&lt;p&gt;
+	其中，华为在降低计算资源需求方面，创新提出了昇腾亲和的低比特量化解决方案OptiQuant，最终实现了INT8量化模式与FP8的模型推理精度持平。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/05/22/20250522155636898.png" title="点击查看大图" alt="点击查看大图"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	由于DeepSeek V3/R1模型是基于英伟达生态训练，并推荐使用FP8精度推理，而国产芯片普遍没有原生支持FP8精度，导致国产芯片对DeepSeek的适配不佳。华为昇腾的上述研究应该就是为了解决这一问题。
+&lt;/p&gt;
+&lt;p&gt;
+	通常情况下，在模型推理阶段，进行量化（如FP8量化为INT8）可以显著降低模型对硬件的存储需求和计算复杂度，但也会造成模型推理精度的损失以及逻辑错误等问题。因此如何保持推理精度，是低比特量化满足不同平台部署需求时的前提。
+&lt;/p&gt;
+&lt;p&gt;
+	据华为介绍，基于BF16的DeepSeek需要1.3TB的显存空间，同时导致极大的算力和跨机通信开销。而校准集的泛化性缺失导致了在很多任务上难以达到与原有模型相近的精度水平，甚至在某些场景下精度下降十分严重。同时，还要考虑如何设计昇腾亲和的量化算法，以发挥硬件性能。
+&lt;/p&gt;
+&lt;p&gt;
+	针对上述问题，华为提出了OptiQuant量化框架，一种高性能保精度量化方案，设计了层间自动混精、自动混合校准、离群值抑制、可学习的截断和SSZW参数量化算法。除了支持业界主流量化算法功能之外，它还新增支持三个功能：接入自定义量化算法和数值类型，可以将多种量化算法的自由组合搭配使用；支持业内主流评测数据集和用户自定义的数据校准集；支持数据并行和流水并行，针对不同大小的大语言模型实现精度验证性能加速。
+&lt;/p&gt;
+&lt;p&gt;
+	OptiQuant框架主要由以下几个模块组成：
+&lt;/p&gt;
+&lt;blockquote class="content-quote"&gt;
+	&lt;p&gt;
+		&lt;strong&gt;量化类型和数值类型&lt;/strong&gt;：OptiQuant支持了Int2/4/8和FP8/HiFloat8等数据类型，支持业界的Qserve，HQQ，LUT等量化方法，在此基础上提出了可学习截断和量化参数优化等算法，进一步减少了量化误差。
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;strong&gt;多样化测试数据集和用户自定义校准集：&lt;/strong&gt;多样化测试数据集和用户自定义校准集：OptiQuant支持了判断题，问答题，代码题和数学题等多种测试类别，语种上支持了十种常见语言。此外，OptiQuant支持用户自定义校准集，提升模型量化过程中的泛化性。
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;strong&gt;量化权重生成&lt;/strong&gt;：OptiQuant提出了自适应层间混精算法，并且根据对应的量化配置生成对应的权重参数，通过去冗余技术减少参数保存的参数量；OptiQuant进一步提出了FlexSQ等算法，在数据校准过程中，对大模型激活异常值进行了平滑处理，有助于对激活做低比特量化。
+	&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+	最终，基于Atlas 800I A2服务器的精度测试实验结果显示，对于DeepSeek-V3-0324模型，W8A8C16和W4A8C16均采用Per-channel量化，实现了推理精度与FP8-GPU持平。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/05/22/20250522155131459.png" title="点击查看大图" alt="点击查看大图"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/05/22/20250522155905422.png" title="点击查看大图" alt="点击查看大图"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	华为表示，在DeepSeek R1/V3大模型推理场景中，实现了INT8量化模式与FP8的模型推理精度持平，而且进一步发挥了华为Atlas 800I A2和CloudMatrix384集群推理硬件性能。而相关代码也将逐步开源。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Sun, 25 May 2025 02:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE5WMHY5SExsM2xmdTNRLWU0S0JpaW1vRlpTeTJTNVU4ZlpfMnhQQUNnNWxwclFFeTVjbmVpc0NoUDZJcTZla2dqSmJMS182bUVaVWVpYUtCRWZDeTJuenpRbWMyUmU</guid></item><item><title>小米回应何时才能下订小米YU7：7月份正式上市 可先买1:18合金车模 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MNHFMVnBYSEtVMjYxNTZfMlc1V3BWTEF1U1NQM3l5bjJpUnl0aWdGM1ZuU3BIV0JEZ2tUc0xxWGVxUl9SS3RqRzdQa1c4c3RnbUZnazVuNkE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月25日消息，针对小米YU7何时才能下订的问题，小米汽车官方回应称&lt;span&gt;&lt;strong&gt;：“小米YU7将在7月份正式上市，敬请期待”。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;“&lt;strong&gt;我们建议感兴趣的朋友们可以先下载小米汽车APP&lt;/strong&gt;，以了解更多详情。您也可以通过扫描下方二维码进行咨询预约。”&lt;/p&gt;
