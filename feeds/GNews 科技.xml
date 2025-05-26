@@ -1,5 +1,898 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>机器人摔倒、KO、站起再战，格斗大赛打出了宇树的技术底牌？ - 凤凰网</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE8zUWdfOUIweG1kQnhNbUl4MGUxSHdkSEZlMHA2d3FveVhHV3JZaWhzd3UyOEk2UUp0RmIwd0hIam1SXzYxQ3pJN3VvNDI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;5月25日晚上八点半，由央视主办的“CMG世界机器人大赛•系列赛——机甲格斗擂台赛”正式打响。四位来自不同领域的非专业选手操控了四台宇树G1机器人登上擂台，展开三轮、共十二回合的格斗比拼。最终，一位人工智能博主操控的“AI策算师”击败了所有对手，赢得冠军。&lt;/p&gt;&lt;p&gt;这场直播被主持人多次强调是“科普展示赛”。但在这场看似以展示为主的机器人格斗赛背后，是一场公开的技术验证秀。在冲撞、失衡、被“KO”的场景中，机器人暴露了当前动态控制、感知延迟等问题，也展现出抗冲击性、多模态感知与快速恢复能力。也许比赛是娱乐赛，尽管比赛是“表演赛”，但它也成为了检验机器人真实表现的测试场。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;选手遥控机器人对战，十二回合决胜&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;5月25日下午两点半，在杭州的一场机器人产业与资本对接会上，头戴拳击头罩，手戴红色拳套的宇树G1成为了不折不扣的“明星迎宾”。手持遥控器的操作者不断让G1摆出拳击的准备姿势，与来往的投资人、产业创业者合影。&lt;/p&gt;&lt;p&gt;“为了看晚上的直播，我推了一个饭局。”一位从上海赶来的投资者告诉第一财经记者，自己已经定好了闹钟，准时收看今晚格斗比赛。&lt;/p&gt;&lt;p&gt;六个小时以后，“CMG世界机器人大赛•系列赛——机甲格斗擂台赛”在杭州正式开始。由古风博主、机器人博主等“圈外素人”操作的四个G1机器人在擂台中分成两组进行对抗。G1是宇树在2024年推出的人形机器人，身高1.3米左右，体重35公斤，有23个自由度，膝关节最大扭矩90N.m。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/29C9421A93E818EEE51099FBEFDAD1784B5A0927_size1413_w2556_h1179.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="选手正在场外控制G1。图片来源：央视直播截图"&gt;&lt;/p&gt;&lt;p&gt;尽管在正式比赛前，主持人展示了机器人的语音控制、跟随能力，但第一财经记者注意到，在实际比赛当中，仍然由四位选手遥控操作G1机器人。在人类拳击比赛的规则之上，本次机器人格斗比赛的规则更为简洁：机器人击中头部和躯干为有效击打。手部动作有效击打计1分，腿部动作有效击打计3分，击中四肢不计分。&lt;/p&gt;&lt;p&gt;正式的比赛分为三轮，每轮分为三个回合。根据三回合累计总积分，积分最高的机器人最终获胜。在经过十二回合的比赛之后，机甲格斗擂台赛终于有了胜出者——由一位人工智能博主控制的“AI策算师”最终获得了冠军。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;数次被“KO”，机器人有“皮外伤”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在十二回合的比赛中，第一财经的记者观察到，在人类遥控操作之下的机器人也会遇到“意外情况”。比如主动攻击的机器人反而扑空、失去稳定性倒地，被对手“KO”；机器人退后寻找角度，却意外被擂台围绳缠住；两个机器人在缠斗当中意外卡住，最终裁判出手将其分开…….&lt;/p&gt;&lt;p&gt;“这其实暴露了机器人动态运动控制与实时感知的不足。”科技部国家科技专家、中国计算机学会智能机器人专业委员会委员周迪教授告诉第一财经记者，尽管本次比赛采用了遥操，但这跟传统遥控玩具的控制系统还是有一定的差别。&lt;/p&gt;&lt;p&gt;他表示，本次宇树的遥操作方式融合了动作控制、智能决策等多种算法模型。当操作人员发出“勾拳”“踢腿”等指示的时候，机器人的感知系统会迅速定位对手并构建地图数据，决策系统根据学习训练评估环境、目标和指令，生成可执行策略路径，最后由控制执行系统完成动作。&lt;/p&gt;&lt;p&gt;而扑空、踉跄等状态背后，则有动作规划、传感器等模块的原因。周迪判断，尽管G1能够通过强化学习掌握一些格斗招式，但在动态对抗中，从传感器捕捉对手位置到关节执行动作存在毫秒级延迟，导致挥拳时机偏差。“G1的视觉和激光雷达数据在复杂对抗中可能出现噪声。”他认为，这也可能影响对手位置的实时定位，尤其是在快速移动或遮挡场景下。&lt;/p&gt;&lt;p&gt;和此前展示的跑步、跳舞、后空翻等所处的环境不同，G1在本次格斗比赛中，需要面临的是随时会给自己施加干扰的动态互动环境。高度的对抗性给整个系统的稳定性带来更多的挑战。第一财经记者注意到，上场的机器人不少都有“皮外伤”。部分G1的金属外壳在训练中遭到了外界的击打和剐蹭，留下了深浅不一的划痕。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/C0459A6F244CF7A021250F86CDFFCA9C1F4315AA_size1610_w2556_h1179.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="G1的皮外伤。图片来源：央视直播截图。"&gt;&lt;/p&gt;&lt;p&gt;“G1的运动性能之所以不太受到这些‘皮外伤’的影响，除了是因为内部关节模组、电机等核心零部件的稳定之外，还与其算法的抗冲击性、多模态感知协同等有关。”周迪表示，格斗中的碰撞和冲击测试能暴露电机、传感器等硬件的薄弱环节，推动抗干扰设计和材料升级，“只有在软硬件的协调之下，G1才能顺利地打完这场比赛”。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;拳击赛成技术验证“秀场”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在本次比赛当中，央视的主持人和解说员多次强调，这场格斗赛仅仅是一个“科普展示赛”。一位宇树的投资人告诉第一财经记者，尽管本次比赛也能够为宇树带来一定的C端流量和品牌效应，但更重要的是向观众传播机器人文化，并展示宇树在软硬件上的能力。&lt;/p&gt;&lt;p&gt;周迪表示，格斗场景因其实时互动、击打等特性，是一次暴露在公众面前的压力测试。“其实整体来看，这次的压力测试还不算‘上强度’。”记者注意到，尽管打了十二个回合，但每个回合只有两分钟。&lt;/p&gt;&lt;p&gt;格斗要求机器人在快速变化的环境中实时调整姿态、预判对手意图，周迪说，这种能力可迁移至工业中的协作机器人避障、救援机器人应对突发障碍等场景。“格斗场景能全面检验机器人的机械结构、运动控制、传感器融合和智能决策能力，例如动态平衡、抗冲击性、多模态感知协同等。”他认为，这些技术指标能够在未来直接关联工业、救援等实际应用的可靠性。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/2A0959BD6966D24392102FABE2F318689B24AD4D_size1666_w2556_h1179.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="有机器人被围绳绊倒。图片来源：央视直播截图。"&gt;&lt;/p&gt;&lt;p&gt;此外，本次宇树没有选择在春晚出现的H1全尺寸人形机器人。H1身高超过一米七，重量超过45公斤。机器人算法工程师Jean告诉第一财经记者，G1的轻量化构型让其在算法调优的效率上更有优势，更适合快速迭代强化学习策略。“G1因为它的构型原因，运动更加灵活，H1的高负载能力在工业上会更有优势，不适合拳击的场景。”&lt;/p&gt;&lt;p&gt;“宇树这次应该也会针对拳击中特定的场景进行专门的算法优化。”Jean推测，宇树应该针对格斗场景进行了特定的动态平衡补偿算法和抗干扰传感器融合方案，提升机器人在对抗中的容错率。第一财经记者观察到，除了在“KO”场景倒地不起外，大部分时间，G1机器人倒地后，都能在5秒钟之内迅速站立并稳定。&lt;/p&gt;&lt;p&gt;比赛虽为“秀场”，却不仅是表演。Jean认为，这场比赛是一次全面检验机器人智能硬件和软件协同能力的窗口。“现实地来说这种‘人机共战’的方式，也大概率会成为未来5-10年的机器人主流操作形态。”&lt;/p&gt;&lt;p&gt;乔心怡&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sun, 25 May 2025 16:34:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE8zUWdfOUIweG1kQnhNbUl4MGUxSHdkSEZlMHA2d3FveVhHV3JZaWhzd3UyOEk2UUp0RmIwd0hIam1SXzYxQ3pJN3VvNDI</guid></item><item><title>北斗和GPS竞争？专家解析北斗短板及风险 | “北斗”系统 | 精确定位 | 全球卫星导航系统 | 大纪元 - 大紀元</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlWS1naTQ5YXUtRkJ2Y1RqcjN6OHhLWXBKWVoyakVkWDhIclBxUmVtOFhyazVael85UUI4eUFmQXZLNHlHMFdtVURCZi1LX28yZTVRMVZEMC11MzJXUUk4SQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="artbody" class="post_content" itemprop="articleBody"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>空战无人机：美国空军改主意了 - 风闻</title><link>https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WTTU4V0RseDFXRXhna3pWakVHeGxTbXVVVVN0aDZTSWo4bW5RajdBTXRMZnpNY1k2ejgxVDJTY2ROQThKemhwcTJ2cURQR2hlX05pUkVONlVzX2c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+							&lt;p&gt;美国空军在研究空战无人机，称为“协同作战飞机”（CCA），第一阶段在通用原子YFQ-42和安杜里尔YFQ-44之间竞争。第二阶段即将启动，但具体什么时候启动还不知道。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/04/27/20250427123731376.jpeg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不过在YFQ-42和YFQ-44之前，美国空军已经启动了XQ-58计划，这本来是准备水到渠成后直接导入量产，成为第一代CCA的。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/04/27/20250427123731898.jpeg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不光美国空军，美国海军陆战队也在评估XQ-58，但现在看来，这飞机在思路上就跑偏了，现在只能作为研究机和技术验证机使用。使用思想变了，XQ-58的基本思路过时了。&lt;/p&gt;&lt;p&gt;其实比较XQ-58和YFQ-42、YFQ-44和XQ-58，气动设计上思路变化不大，大小、飞行性能、隐身能力都差不多。变的是对反复出动和可消耗性的理解。&lt;/p&gt;&lt;p&gt;长期以来，美国空军对自己的优势很有信心，但也认识到空战无人机的重要，认识到有人机时不时需要无人机帮一把。从一开始，美国海军因为航母载量有限，对无人作战飞机定位在需要长期反复出动，对可消耗性不过于纠结。美国空军则高度重视可消耗性，但在出动性方面，更加强调需要时大批增援式出动（surge operation），而不是日常使用。&lt;/p&gt;&lt;p&gt;换句话说，在日常运作中，有人战斗机为主。有人战斗机性能可靠，也适合应对各种复杂情况，包括非战时非平时的擦边球情况。无人机要求这样的适用性的话，需要的AI层次太高，不仅成本受不了，出错的风险也受不了，无人机擅长的避免飞行员受到危险的特点反而不一定用得上。&lt;/p&gt;&lt;p&gt;但大批增援出动反而情况简单明了：敌我分明，任务明确，损失的风险高，正好让无人机冲锋陷阵。&lt;/p&gt;&lt;p&gt;问题是大批出动的话，需要避免无人机和有人机争抢跑道和机场运作。有人机运作已经够忙碌，还要和无人机混合运作，挑战太大。而且有人机的基地需要防空保护和地面警卫，无人机基地的防空保护和地面警卫要求大大降低，混合运作有浪费的嫌疑。&lt;/p&gt;&lt;p&gt;因此，Kratos成为首先入选的厂家，XQ-58就是从靶机发展过来的。&lt;/p&gt;&lt;p&gt;靶机天然就是“可回收、一次性使用”的。也就是说，被打下来不心疼，能回收更好。靶机大多是用火箭助推、滑轨发射的，不需要机场和跑道。回收用降落伞（捕捉网、回收臂之类只能小型固定翼无人机用）。效率较低，但在战时预计损失率较高，不大会有同时需要回收大量靶机的情况，问题不大。&lt;/p&gt;&lt;p&gt;Kratos作为新秀，也符合美国空军拓宽航空工业基础的思路，不能老是挤在波音、洛克希德、诺斯罗普的老圈子里，他们思维太老，动作太慢，成本太高，最好有些新秀。&lt;/p&gt;&lt;p&gt;XQ-58采用增援出动，火箭助推、滑轨起飞，不占跑道，容易“神出鬼没”地到处部署。以靶机为基础，可消耗性的底子好。降落伞回收麻烦一点，但反正是浪潮式出动，不需要担心再出动时间，所以问题也不大。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/04/27/20250427123731283.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/04/27/20250427123731996.jpeg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/04/27/20250427123731639.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;XQ-58不愧是靶机出身。不过这样一来，出动和回收都挺麻烦，再次出动更加麻烦，日常使用是别想了。&lt;/p&gt;&lt;p&gt;在库存状态时，其实不带火箭助推器，要使用的时候再装上。也必须这样。火箭助推器里的固体推进剂和炸药相差没那么多，平时都分开保管，用的时候才装上去。降落伞即使落在机场范围，也需要专用车辆去回收，然后要检修后重新装上，才可能再出动。&lt;/p&gt;&lt;p&gt;这样的弄法对弱小对手很好用，增加了碾压的压力。但对于强悍对手就很不好用，反复密集出动根本不可能。强悍对手之所以强悍，就是因为不可能一击夺命，必须有反复密集出动的能力。&lt;/p&gt;&lt;p&gt;Kratos看到通用原子和安杜里尔入局很着急，煮熟的鸭子要飞了。既然不肯坐以待毙，那就要做点什么，那就用起飞滑车。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/04/27/20250427123839312.jpeg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这不是在拖车上，而是在起飞用的滑车上。拖到跑道上后，XQ-58乘在滑车上，靠自身动力推动滑跑，到达起飞速度后，脱离滑车升空，滑车自己刹车，等待回收。这比滑轨发射要快捷多了，库房里拉上跑道就可以起飞。不过回收的问题还是没有解决，还是要到野地里去追降落伞。&lt;/p&gt;&lt;p&gt;Kratos再接再厉，推出带起落架的XQ-58，这样一来，连着陆问题也解决了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/04/27/20250427123850620.jpeg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;思路很简单，但实施很不简单。靶机在设计上就没有起落架的空间，结构上也没有相应的受力点，现在要找地方不容易。起落架的安装点是飞机受力最大的地方，在原始设计的时候没有考虑这问题，现在需要大动干戈的重新设计，才可能安装起落架。&lt;/p&gt;&lt;p&gt;Kratos为什么现在才做这事？估计是不想看到通用原子和安杜里尔把本来属于自己的鸭子吃掉。XQ-58在气动、性能、载荷方面与YFQ-42、YFQ-44没有原则差别，甚至使用同门的威廉姆斯FJ33/44小涡扇（33是44的缩比、减推型），如果能把跑道起落问题解决了，Kratos其实是有先机的。&lt;/p&gt;&lt;p&gt;这事不能怪Kratos，美国空军自己一开始没想好，设计要求提错了。但要是一开始就是要求跑道起落，或许也没有靶机出身的Kratos什么事，一开始就是通用原子的鸭子，毕竟他家的MQ-1/9无人机早就是跑道起落了。&lt;/p&gt;&lt;p&gt;重要的是，XQ-58装上起落架意味着美国空军对无人机的思路改变了：注重反复、密集出动和回收，降低可消耗性要求。也是，要真能打一打，机载系统简单不了，成本必定飙升，损失必定不可接受，还是老老实实琢磨耐用性和可回收性吧。这也意味着成本大大提高。XQ-58原来的要求是裸机成本200多万美元，全规格成本2000-3000万美元。可重复出动后，怎么也得跳一跳，跳多高就可以发挥想象力了。&lt;/p&gt;&lt;p&gt;即使如此，XQ-58、YFQ-42、YFQ-44都是亚音速、中等机动性、适度隐身的，不期望打硬仗。要么欺负软柿子，要么给有人战斗机打边鼓，离人们想象的“忠诚僚机”或者“敢死先锋”有一段距离。作为“忠诚僚机”，性能跟不上有人的战斗机，不是不想忠诚，是“臣妾不能”；作为“敢死先锋”，飞机敢死，美国空军不敢让它们死，太烧钱了，但性能只够“敢死”，而不够“先锋”，在空战中不比米格-17强多少。当然带上空空导弹了，但要是这就足够，有人战斗机用教练机带上空空导弹岂不多快好省？&lt;/p&gt;&lt;p&gt;第一代CCA是“敢死哨兵”，撒出去侦察、警戒、干扰对手用的；或者“敢死火箭筒手”，在有人机的引导下，发射空空导弹，能偷袭就偷袭，不能偷袭就扰乱对方。至于空空导弹的必杀区，这事就和空空导弹的射程一样，是玄学，不是科学，不可不信，不可全信。&lt;/p&gt;													&lt;/div&gt;
+						
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Mon, 26 May 2025 03:13:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE9WTTU4V0RseDFXRXhna3pWakVHeGxTbXVVVVN0aDZTSWo4bW5RajdBTXRMZnpNY1k2ejgxVDJTY2ROQThKemhwcTJ2cURQR2hlX05pUkVONlVzX2c</guid></item><item><title>毕业级桌充！酷态科30号超级电能站Ultra发布：国补价551.65元 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VNkNoX1FUeDZ0SjMzS3hSVGNkY0REZThGazNsZF95a0VhYU5vUkJZcm9aNHA2czh0by1BbW5nd183TF9UVnk0d21rTk8zWEFrYTRQNi1VVG8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技5月26日消息，酷态科今日发布了一款毕业级桌面快充装备——酷态科30号超级电能站Ultra。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;新品将于5月30日20:00开启预售，&lt;strong&gt;日常到手价649元，国补后551.65元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/cd59195f-cf8a-4806-a428-491df5eb9d6d.jpg" target="_blank"&gt;&lt;img alt="毕业级桌充！酷态科30号超级电能站Ultra发布：国补价551.65元" h="1066" src="//img1.mydrivers.com/img/20250526/Scd59195f-cf8a-4806-a428-491df5eb9d6d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;官方号称新品是开创式300W MAX DC桌面充电站，配备1.83英寸IPS万象屏，&lt;/strong&gt;&lt;/span&gt;拥有850nits峰值亮度与170°可视角度，能实时显示充电数据，方便用户随时掌握充电状态。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;支持5台设备同时快充，极大提高桌面充电效率，AI智能动态功率调节，按需分配，充分调用整机剩余功率。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;支持ADC 2.0多协议快充，能兼容13种主流充电协议，适配市面上大多数电子设备。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/eb7ef1f3-7bc1-43f3-80ad-2a4be6499075.jpg" target="_blank"&gt;&lt;img alt="毕业级桌充！酷态科30号超级电能站Ultra发布：国补价551.65元" h="1107" src="//img1.mydrivers.com/img/20250526/Seb7ef1f3-7bc1-43f3-80ad-2a4be6499075.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;产品适配方面，惠普暗夜精灵10在狂暴模式下，可实现296W MAX功率输出；联想拯救者R9000P野兽模式下，最高功率达284W；机械革命蛟龙16 Pro狂飙模式能有284W MAX的功率表现；华硕ROG幻16增强模式下，功率达269W；MacBook Pro也能实现140W MAX的充电功率。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/fe25b760-c8cc-4cdf-a149-36dcc8e7fea9.jpg" target="_blank"&gt;&lt;img alt="毕业级桌充！酷态科30号超级电能站Ultra发布：国补价551.65元" h="1107" src="//img1.mydrivers.com/img/20250526/Sfe25b760-c8cc-4cdf-a149-36dcc8e7fea9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;手机充电方面同样出色，适配众多主流机型，支持小米120W MAX澎湃秒充。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;REDMI K80 Pro可实现120W MAX功率，30分钟就能充电约100%；小米15 Pro可达90W MAX，30分钟充电约80%。&lt;/p&gt;
+&lt;p&gt;此外，荣耀200、vivo X100s Pro、iQOO 13、OPPO Find X8 Ultra、三星S25 Ultra、华为Mate 70 Pro等机型也都能实现快充。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 26 May 2025 02:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9VNkNoX1FUeDZ0SjMzS3hSVGNkY0REZThGazNsZF95a0VhYU5vUkJZcm9aNHA2czh0by1BbW5nd183TF9UVnk0d21rTk8zWEFrYTRQNi1VVG8</guid></item><item><title>美女机器人击倒对手后拍屁股挑衅 团队回应：预设胜利动作 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ILW1nVXUzRWo5a0ExaXgzNm5OTTc0RnpnTDkyWDBtOWZXemEzeDljMUdaZjVZUkhTenJoYmZkS0V1VHNhSVNCUFdLVUxURVRhcWlkVzdkd2Q?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，近日，在日本东京举办的全球机器人格斗&lt;a class="f14_link" href="http://t.cn/A6gm01BE" target="_blank"&gt;大赛上&lt;/a&gt;，&lt;strong&gt;代表韩国参赛的女性拟人机器人AURA-X因拟人化动作意外成为焦点。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;比赛中，AURA-X与对手“美洲钢甲”展开激烈对决，AURA-X凭借精准肘击将对手击倒在地获得胜利。&lt;/p&gt;
+&lt;p&gt;按照常规，机器人胜利后通常会直接回原点待命，但AURA-X却做出一个令人意想不到的动作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;只见它轻轻拍了拍自己臀部的金属外壳，还回头瞥了一眼对手，同时搭载的表情模块呈现出微笑加眨眼的表情，传递出“小样，不服再来”的信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这一动作迅速引爆现场气氛，随后相关视频出现在社交平台上，播放量迅速飙升过百万。&lt;/p&gt;
+&lt;p&gt;评论区里，网友们争执不下，有人认为这个动作十分有趣，“这动作太有挑衅意味了，看得我都想下场揍它”、“好玩，真的是太有意思了，机器人还能进行精神层面的攻击。”&lt;/p&gt;
+&lt;p&gt;但也有另一部分网友表示担忧，质疑“这样的人格化动作，AI真的能控制好吗”、“未来机器人会不会越来越不受控”。&lt;/p&gt;
+&lt;p&gt;针对此事，AURA-X所属技术团队回应称，&lt;strong&gt;&lt;span&gt;这并非AI“自我演化”的结果，而是程序中预先植入的“胜利姿态模块”，旨在增强观看娱乐性，无需担心“机器觉醒。”&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/f6e62405-de45-4a53-a347-cf5320c0f4cc.png" target="_blank"&gt;&lt;img alt="美女机器人击倒对手后拍屁股挑衅 团队回应：预设胜利动作" h="418" src="//img1.mydrivers.com/img/20250526/Sf6e62405-de45-4a53-a347-cf5320c0f4cc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 26 May 2025 02:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ILW1nVXUzRWo5a0ExaXgzNm5OTTc0RnpnTDkyWDBtOWZXemEzeDljMUdaZjVZUkhTenJoYmZkS0V1VHNhSVNCUFdLVUxURVRhcWlkVzdkd2Q</guid></item><item><title>暴涨50%！LABUBU代币市值突破3000万美元，创历史新高 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tOXh6MmF4VkRKamxhMXZGdEl1TnRQVHBKM0ZCaXg4OWJwMjhfejhWODlZRS1RS05MOVNPUTZkbS1ZdWtfa0F0ZnJwVWNVQXFsZGc?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 26 May 2025 02:17:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUkFVX3lxTE1tOXh6MmF4VkRKamxhMXZGdEl1TnRQVHBKM0ZCaXg4OWJwMjhfejhWODlZRS1RS05MOVNPUTZkbS1ZdWtfa0F0ZnJwVWNVQXFsZGc</guid></item><item><title>中国快充产业协作深化：华为、OPPO、vivo、荣耀互相授权 - 观察者</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE0zZjFXVk5PNEZJSi0wYl9vdlNsLXVwWG1OaDFXUjZCeXJteWZRMXFJcDRBeXd6d200UGYxVTFDNEh1NWFHejhxU1pqZmJhN3FNMlhzQk0tbnYwdEJITmZkS0VJalk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	近日，2025融合快充（UFCS）产业发展大会在深圳举行。华为、OPPO、vivo、荣耀共同签署UFCS互授权意向，标志着国内快充产业协作的进一步深化。与此同时，UFCS 2.0标准的正式发布及40W融合快充互通的启动，预示着中国统一快充生态建设已迈入全新阶段。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/05/26/20250526095759791.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	大会现场&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	大会发布了融合快充UFCS 2.0标准。新标准在技术层面进行了多项优化，不仅实现了40W无鉴权功率互通，引入了“反向充电”特性，还将Power Change（适配器功率主动调节）升级为必选项，这些关键增强充分展现了统一快充技术在提升用户体验方面的巨大潜力。
+&lt;/p&gt;
+&lt;p&gt;
+	长久以来，由于缺乏统一标准，不同品牌手机之间充电协议及线缆互不兼容的问题普遍存在，这在一定程度上制约了行业的健康发展。而UFCS 2.0的发布以及产业链的进一步协同，正是推动这一问题解决的关键步骤。
+&lt;/p&gt;
+&lt;p&gt;
+	会上，来自中国通信标准化协会、电信终端产业协会及广东省终端快充行业协会的领导，在讲话中都高度肯定了融合快充UFCS在提升用户体验、推动绿色发展及构建产业协同方面的积极进展。
+&lt;/p&gt;
+&lt;p&gt;
+	中国信息通信研究院总工程师魏然在致辞中指出，“UFCS标准通过统一快充协议这个‘小接口’，构建起覆盖数亿设备的绿色生态体系“，他进一步阐述道，UFCS不仅有效降低电子垃圾的产生，服务国家“双碳”战略全局，更在全球技术博弈中走出了一条独具特色的自主创新之路。随着2.0版本标准的落地，UFCS在实现不同品牌终端产品更高功率互通的同时，其“协议层自主+物理层兼容”的创新架构，为全球快充标准演进贡献了中国方案与智慧。
+&lt;/p&gt;
+&lt;p&gt;
+	大会期间，OPPO闪充首席科学家、广东省终端快充行业协会技术委员会主任委员张加亮发表了题为《终端快充技术生态演进及展望》的专家演讲。
+&lt;/p&gt;
+&lt;p&gt;
+	张加亮在演讲中，强调了UFCS对于构建健康快充生态的重要性。他指出：“快充技术，从充电器、线缆、连接器直至电芯，是一个涉及多点、影响全面的系统性技术迭代。它既是一条紧密的产业链，也是一个共荣的市场生态圈。”展望未来，张加亮认为，快充技术将朝着更大功率、元器件革新带来更便携小巧的充电器以及多重技术保障下的更极致安全等方向持续演进。广东省终端快充行业协会也将致力于推动融合快充产业生态建设，协同产业链上下游，共同壮大终端融合快充生态圈。
+&lt;/p&gt;
+&lt;p&gt;
+	根据IDC发布的数据，2024年华为、OPPO、vivo、荣耀四家品牌，共占据中国手机市场份额的63.6%。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Mon, 26 May 2025 01:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE0zZjFXVk5PNEZJSi0wYl9vdlNsLXVwWG1OaDFXUjZCeXJteWZRMXFJcDRBeXd6d200UGYxVTFDNEh1NWFHejhxU1pqZmJhN3FNMlhzQk0tbnYwdEJITmZkS0VJalk</guid></item><item><title>苹果将调整发布策略：一年发布两次iPhone新机 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5HcVgwZ044Y0ZEb1EtbVhYcjZOU3NWLVdnVWtTTnJTckFnd0x1azJiV3ctQmNsMHRrWGFxWVY5Zm5XOWlIemVTd3J3ZjdESG9QQUNma2ZqeTk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，前不久苹果发布了iPhone 16e机型，改变了过去几年只有秋季才有新品的局面。&lt;/p&gt;
+&lt;p&gt;苹果此举主要是为了缓解淡季对经营的影响，能在上半年强行拉升数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据多方爆料，苹果从今年开始将保持一年发布两次iPhone的策略，弥补上半年新机空窗期，与国产手机贴身肉搏。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="苹果将调整发布策略：一年发布两次iPhone新机" h="316" src="//img1.mydrivers.com/img/20250526/438fe529-e5d8-498b-8f76-5e9d03fd16a8.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;根据IDC数据显示，2025年第一季度苹果在中国的市场份额缩减至13.7%，已连续下滑7个季度。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在此背景下，苹果通过增加新品发布频率，能够更好地吸引消费者注意力，保持市场关注度。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="苹果将调整发布策略：一年发布两次iPhone新机" h="335" src="//img1.mydrivers.com/img/20250526/945a0fe5-b3fc-4f89-8cdf-9f26011d158e.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;根据苹果爆料一哥郭明錤的预测：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2025年下半年发布iPhone 17、iPhone 17 Air、iPhone 17 Pro和iPhone 17 Pro Max四款机型。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2026年上半年发布iPhone 17e。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2026年下半年将发布iPhone 18 Pro Max、iPhone 18 Pro和iPhone 18 Air，此外还有苹果首款折叠屏iPhone。&lt;/p&gt;
+&lt;p&gt;2027年将发布iPhone 18和iPhone 18e机型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此后，iPhone标准版将常年维持在上半年发布。&lt;/strong&gt;&lt;/p&gt;
+
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 26 May 2025 01:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5HcVgwZ044Y0ZEb1EtbVhYcjZOU3NWLVdnVWtTTnJTckFnd0x1azJiV3ctQmNsMHRrWGFxWVY5Zm5XOWlIemVTd3J3ZjdESG9QQUNma2ZqeTk</guid></item><item><title>早报｜iOS 19 设计语言曝光/华为小米并列中国手机出货量第一/马斯克：恢复 7×24 工作状态 - 爱范儿</title><link>https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9wNFhrY3hNRWttNWt6b3FoYkRVanM0bnphUUkxUlpMZExESDFiRjdvUVk3aUMyZGtZYkhXbnI1c3dHeWs?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;div&gt;
+
+
+
+
+
+
+&lt;div&gt;
+&lt;p&gt;💰&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;甲骨文斥资 400 亿美元，为「星际之门」采购英伟达芯片&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;
+
+&lt;h3&gt;昨晚，全球首个机器人拳王出炉&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/44b559ee-2145-4a3b-a152-496d27472423.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨晚，中央广播电视总台主办的《CMG 世界机器人大赛·系列赛》机甲格斗擂台赛正式举行。&lt;/p&gt;
+&lt;p&gt;据了解，整场格斗赛分两部分：表演赛和竞技赛。前者主要秀动作，热热身；而真正的重头戏，还得看后面的竞技赛——各种单打、缠斗动作轮番上演。&lt;/p&gt;
+&lt;p&gt;本次参赛的机器人均为宇树科技的 G1 人形机器人，由不同团队进行操作。比赛中，机器人们连续施展了直拳、勾拳、扫腿、侧踢等各种动作。&lt;/p&gt;
+&lt;p&gt;经过三轮淘汰赛，最终由名为「AI 策算师」的机器人夺冠。直播镜头拉近后，可以观察到夺冠机器人的机身布满擦痕和撞击痕迹。&lt;/p&gt;
+&lt;p&gt;值得一提的是，一场像样的机器人格斗，要过「机体设计」「动作控制」「感知系统」「实时操控与延迟控制」四道关。&lt;/p&gt;
+&lt;p&gt;宇树科技在接受媒体采访时透露，他们为机器人格斗动作采集了大量专业选手的数据，训练素材直接来自职业搏击选手的实战演练。「它的老师就是一些职业的搏击选手。」&lt;/p&gt;
+
+&lt;h3&gt;苹果或调整 iPhone 发布策略&lt;/h3&gt;
+&lt;p&gt;据分析师郭明錤消息，苹果或将调整 iPhone 的发布策略——自 2025 年起，后续每年将会发布两次新机。具体来看：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;iPhone 17 系列将在 2025 年下半年发布，拥有 iPhone 17、17 Slim（Air）、17 Pro、17 Pro Max 四款机型；&lt;/li&gt;
+&lt;li&gt;2026 年上半年将发布 iPhone 17e，下半年则是备受期待的 iPhone 折叠屏以及 iPhone 18 Pro 系列和 18 Slim（Air）；&lt;/li&gt;
+&lt;li&gt;iPhone 18 则会被推迟到 2027 年上半年，与 iPhone 18e 一同登场；&lt;/li&gt;
+&lt;li&gt;iPhone 折叠屏二代、iPhone 19 Pro 系列和 19 Slim（Air）将会在 2027 年登场。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;郭明錤指出，苹果这一调整是为了面对市场的激烈竞争。其强调，中国市场尤为激烈，因此也迫使苹果调整 iPhone 的营销策略。&lt;/p&gt;
+&lt;p&gt;另外，苹果本次调整也是为了弥补上半年新机空窗期，使用标准版 iPhone 进行市场填补，同时为标准版机器争取更多销售空间。值得一提的是，iPhone 17 或会成为最后一款带「高端」标签的标准版。&lt;/p&gt;
+&lt;h3&gt;苹果新系统引入「阳光房」设计语言&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/92c6eb47-eb18-4508-8441-e530d65ddd5e.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据彭博社记者 Mark Gurman 消息，苹果为 iPhone 打造的新系统——iOS 19 将迎来新的设计语言，名为「Solarium」，意为「阳光房」。&lt;/p&gt;
+&lt;p&gt;报道指出，「阳光房」总体将会更光滑、现代，借鉴了 visionOS 的大量元素，也就是会使用更多三维立体毛玻璃的设计。&lt;/p&gt;
+&lt;p&gt;另据博主 lukosois 公布的一组 iOS 19 遐想图显示，新系统的整体 UI 设计将发生巨大改变，无论是从按键布局，还是显示方式——都会引入 visionOS 类似的毛玻璃、半透明、高亮边框等设计元素。&lt;/p&gt;
+&lt;p&gt;其中，短信和相机的 UI 设计变化较大，都运用到了更加通透、明亮的背景布局。据 lukosois 介绍，这次的软件背景层还会加入「壁纸互动」功能，即在每个拥有该功能的软件中，通过毛玻璃模糊处理，桌面壁纸将作为最底层背景显示。&lt;/p&gt;
+&lt;p&gt;此前的消息只指出 iOS、iPadOS 和 macOS 会采用上述新设计（阳光房），而实际上它将拓展到所有苹果的操作系统上，包括 tvOS 和 watchOS 都将全部进行重新设计。与此同时，visionOS 3 也会有一些界面上的调整。&lt;/p&gt;
+&lt;p&gt;不仅 iPad 和 Mac 的界面将进一步实现统一，有消息称，iPadOS 19 将会进一步引入 macOS 的特性，改善多任务处理能力以及优化应用窗口管理，进一步提升生产力。&lt;/p&gt;
+&lt;h3&gt;机构：华为小米并列 Q1 中国智能手机出货量第一&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/4b81697c-5013-4f25-85ea-98c17c6af564.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据分析机构 Counterpoint 最新数据显示，2025 年第一季度的中国智能手机市场出货量同比增长了 5%，其中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;华为、小米均以 19% 的出货量占比，并列第一；华为同比增长 18%，小米同比增长 40%；&lt;/li&gt;
+&lt;li&gt;苹果和 OPPO 均以 15% 的占比并列第三。值得一提的是，苹果出货量同比下降 3%；&lt;/li&gt;
+&lt;li&gt;vivo 以 14% 的占比排名第五。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;机构指出，在国补政策推动下，该季度中国智能手机出货量出现同比增长，但春节过后的需求有所疲软，导致整体季度表现低于预期。&lt;/p&gt;
+&lt;h3&gt;马斯克：恢复 7×24 工作时间&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/2a3a8a94-287f-4c18-a8e4-bbbe3e599e57.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，马斯克发文称，由于 xAI、特斯拉和 SpaceX 正处于关键技术发布期，所以自己已经回归 7×24 小时工作状态，并且还宣布要在工厂「打地铺」。&lt;/p&gt;
+&lt;p&gt;马斯克表示，鉴于上周 X 出现的稳定性问题，团队在运营方面还有不少改进空间，其还吐槽「本该启动的故障切换机制并没有如预期那样发挥作用。」&lt;/p&gt;
+&lt;p&gt;值得一提的是，马斯克旗下的社交平台 X（前身为 Twitter）于周六出现大规模宕机事件，并且此前在周四也曾出现短时间宕机，目前服务已基本恢复。&lt;/p&gt;
+&lt;p&gt;据悉，该事故可能与公司租用的俄勒冈州数据中心发生火灾有关。&lt;/p&gt;
+&lt;h3&gt;OpenAI Operator 更新 o3 模型&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/f0a57e51-e6de-4c5c-8e71-667a8ada4eec.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，OpenAI 宣布更新其 AI Agent（智能体）Operator 所采用的 AI 模型：将从定制版 GPT-4o 更新为新的 o3 驱动。&lt;/p&gt;
+&lt;p&gt;据 OpenAI 介绍，在新模型的支持下，Operator 在与浏览器交互时更加持久且准确，提高了整体任务成功率。它还提供了更清晰、更全面且结构更优的响应。&lt;/p&gt;
+&lt;p&gt;据了解，o3 曾在编程、数学、科学和视觉感知领域创下新纪录，并且其在编程、商业咨询和创意构思的重大错误率比前代模型 o1 低 20%；另外，o3 在在 AIME、Codeforces、GPQA 和 MMMU 等测试中全面超越前代。&lt;/p&gt;
+&lt;p&gt;值得一提的是，OpenAI 公司研究副总裁 Jerry Tworek 曾在本月的一次线上问答中透露，未来将会为 Operator 进行改进，最终将其变为一个整合性的 AI 工具，包含 Codex、operator 本身的功能、Deep Research 等等。&lt;/p&gt;
+&lt;h3&gt;小米回应 YU7 门把手「是否会冻住」&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/3df26742-0f90-492b-82c3-ea205c93c521.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，小米汽车发布「答网友问（第 140 集）」，其中回答了大家对于小米 YU7 车型「门把手是否会冻住」这一热门问题。&lt;/p&gt;
+&lt;p&gt;小米汽车方面表示，YU7 的电动内翻门把手经过了严谨的设计，在符合美学的同时，可靠性和人体工程学都得到了充分验证，功能体验也非常优秀。&lt;/p&gt;
+&lt;p&gt;据悉，在极寒天气如遇到门把手表面结冰的情况，小米 YU7 车门把手的翻盖可向车内运动，用户可以通过按压、敲击等方式破冰；若碎冰落在门把手窝内，用户可以自己清除碎冰；如果碎冰较少，也可以待翻盖复位时推出碎冰。&lt;/p&gt;
+&lt;p&gt;小米 YU7 于 5 月 22 日正式亮相，整体设计上保持了小米 SU7 家族的外观主题，车门把手采用了全新的翻盖式设计——用户携带数字钥匙靠近车辆，门把手即可自动内翻。&lt;/p&gt;
+&lt;h3&gt;甲骨文斥资 400 亿美元，为「星际之门」采购英伟达芯片&lt;/h3&gt;
+&lt;p&gt;据《金融时报》消息，全球最大的信息管理软件及服务供应商甲骨文（Oracle）正计划斥资 400 亿美元，用于采购英伟达高性能芯片，而该批芯片将提供给 OpenAI 千亿 AI 项目——「星际之门」所使用。&lt;/p&gt;
+&lt;p&gt;知情人士透露，甲骨文将采购约 40 万片英伟达目前算力最强的 GB200 芯片，并通过签署长达 15 年的租赁协议，将该批芯片所带来的计算能力租赁给 OpenAI。&lt;/p&gt;
+&lt;p&gt;据此前报道，甲骨文正在为 OpenAI 的「星际之门」项目建设数据中心。该数据中心位于美国德克萨斯州阿比林，面积约有 17 个足球场大小。&lt;/p&gt;
+&lt;p&gt;上述数据中心为 OpenAI 在「星际之门」首期计划中，所规划的首个数据中心综合体。据彭博社此前报道，该数据中心可容纳多达 40 万个英伟达的 AI 芯片。如果该数据中心装满全部芯片，其将成为已知的最大 AI 算力集群之一。&lt;/p&gt;
+&lt;h3&gt;💡 Google 联合创始人：AI 的未来难以预判&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/4d5bcdbb-192e-4c12-a4f9-ab12e7e5cff3.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，Google 联合创始人 Sergey Brin 接受了公司的专访，其中他提到了不少关于 AI 现状和未来的情况。&lt;/p&gt;
+&lt;p&gt;在讨论「当前 AI 发展与过去预期的对比」这一话题时，Brin 表示，AI 从「游戏式想象」到如今的显示，AI 的突进令人惊讶。他表示，当年人们对未来的预测，如同一次具备理论性的「聊天」，没人能预判到，如今的 AI 突破已经让一切「真实得令人吃惊」。&lt;/p&gt;
+&lt;p&gt;随着像 Gemini 2.0 这样的多模态 AI 系统发布，Brin 认为人类已经进入了「模型即系统」的新阶段：它不再是一个仅仅输入输出的模型，而是一个原生支持搜索、代码执行和工具调用的完整生态体。这种系统思维将彻底改变大众对 AI 能力的定义。&lt;/p&gt;
+&lt;p&gt;Brin 预测，AI 将从「快速出答案」转向「长期深度思考」——通过延长模型的运行时间，比如让模型推理一小时、一天甚至一个月，从而在复杂任务中获得更可靠、更有深度的结果。这一点，被他形容为「AI 的一种超能力」。&lt;/p&gt;
+&lt;p&gt;🔗 原视频链接：&lt;a href="https://www.youtube.com/watch?v=o7U4DV9Fkc0"&gt;https://www.youtube.com/watch?v=o7U4DV9Fkc0&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;29.8 万元起，蔚来新 ET5/5T 正式发布&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/31413066-706d-4770-a72c-2ccd0588e1e5.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨晚，蔚来正式公布了旗下新款 ET5/5T 车型，售价为 29.8 万元起。&lt;/p&gt;
+&lt;p&gt;外观方面，新车风格变得更加锐利，配备 ADB 智能多光束大灯，新增「远空紫」和「月辉银」两款配色。&lt;/p&gt;
+&lt;p&gt;内饰方面，新款 ET5/5T 均采用了横向布局的中控显示屏，另外还标配了 18.8 英寸 W-HUD 抬头显示系统。座椅方面，新车优化了座垫长度、柔软度等各方面，并新增 ANC 主动降噪功能。&lt;/p&gt;
+&lt;p&gt;驾控方面，新车提供 75/100/150kw 三个版本电池，ET5 最大 CLTC 续航 1055km，ET5T 为 1010km。新款 ET5 系列还对底盘进行了多达 29 项的精细化升级，并且全系标配 CDC 连续可变阻尼悬架。&lt;/p&gt;
+&lt;p&gt;值得一提的是，新车提供了「EP Mode」赛道模式。该模式下，新车支持「弹射模式」「跑山模式」。&lt;/p&gt;
+&lt;p&gt;安全性方面，新 ET5 系列依然能在新版 Euro NCAP 中获得 96% 的得分率。主动安全方面，新 ET5 搭载蔚来全栈自研的 AQUILA 超感系统，全车配备多达 29 个高精度感知硬件。&lt;/p&gt;
+&lt;p&gt;另外，辅助驾驶芯片由英伟达 Orin X 切换为蔚来自研的「神玑 NX9031」高性能智驾芯片。&lt;/p&gt;
+&lt;h3&gt;一加 Ace 5 至尊版公布多项配置信息&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/f93416e9-9fee-43f4-b021-694f5e77938a.jpeg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;近日，一加手机公布了一加 Ace 5 至尊版多项配置信息，我们为你一一汇总：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;后置摄像头竖向排列，Deco 形状为椭圆跑道形。配色上，一加 Ace5 至尊版提供燃力钛、 幻影黑、清风蓝；&lt;/li&gt;
+&lt;li&gt;机身采用黄金 R 角，配备丝绸质感后盖，机身配重为 50:50；&lt;/li&gt;
+&lt;li&gt;性能上，一加 Ace5 至尊版将配备联发科天玑 9400+ 处理器、灵犀触控芯、G1 电竞 Wi-Fi 芯片；搭载全新「冰河散热系统」，拥有「冰河 VC」「冰河石墨」「冰河后盖」多项功能；&lt;/li&gt;
+&lt;li&gt;搭载索尼 IMX906 旗舰主摄与旗舰影像算法，支持「无影抓拍」「实况照片」；&lt;/li&gt;
+&lt;li&gt;配备全新「快捷键」。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;新机将在 5 月 27 日正式发布，届时还将发布一加 Ace 5 竞速版、一加 Buds 4 耳机。&lt;/p&gt;
+&lt;h3&gt;Marshall 回音壁产品亮相&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/81439b75-3841-48b1-8d4f-f0a5633de0fd.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，传奇品牌 Marshall 破局创新，正式进军回音壁领域，推出首款产品——Heston 120。&lt;/p&gt;
+&lt;p&gt;据介绍，Heston 120 内置 11 个不同朝向的驱动单元，通过空间音频处理技术，打造多向声效，营造出动态环绕声场。调音方面，Heston 120 具备强劲、深沉且饱满的低音表现，带来更具冲击力的特效音。&lt;/p&gt;
+&lt;p&gt;Heston 120 支持最新的连接技术：可通过 HDMI eARC 与电视机实现高效连接，也可借助 HDMI 信号直通端口轻松接入外部设备；支持 Wi-Fi 连接音乐流媒体平台。值得一提的是，Heston 120 可支持 Auracast™ 等新一代蓝牙低功耗音频技术（LE Audio）。&lt;/p&gt;
+&lt;p&gt;Heston 120 售价 7999 人民币，于 6 月 3 日起在 Marshall 全球官网（除中国市场外）开售，预计 9 月于中国官方渠道正式发售。&lt;/p&gt;
+
+&lt;h3&gt;广州将大力扶持游戏电竞产业发展&lt;/h3&gt;
+&lt;p&gt;据广州日报消息，日前，广东省即将出台多项措施，涉及影视、演艺市场、动漫影视、网络游戏、电子竞技、网络视听六大领域。&lt;/p&gt;
+&lt;p&gt;其中，《关于推动广东电子竞技产业高质量发展的若干政策措施》提出：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;将打造广州、深圳「电竞双核」作为广东电竞产业发展核心战略，支持两地通过差异化定位、资源互补和政策协同，共同完善区域内电竞产业生态。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;力争实现 2030 年广州、深圳进入全球电竞行业最具影响力城市行列的发展目标。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;值得一提的是，据统计，广州游戏产业营业收入约占全国游戏产业 43%，占全市文化产业五分之一。2024 年，广州游戏市场规模达 1406.67 亿元，同比增长 10.5%。&lt;/p&gt;
+&lt;h3&gt;《山脊赛车》将重新发行&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/fce9be1c-2bd7-4cdf-a8ec-42e91ea84a75.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，Hamster 公司宣布将于今年 6 月 5 日重新发行，并同步登陆 Switch/Switch 2/PS5/PS5/Xbox Series X/S 多个主机平台。&lt;/p&gt;
+&lt;p&gt;据悉，《山脊赛车》由万代南梦宫，于 1993 年正式发行。同时，《山脊赛车》也是「经典游戏复活计划」——「Arcade Archives 2」的首部作品。值得注意的是，重新发行的《山脊赛车》依然为单人模式，不具备网络功能。&lt;/p&gt;
+&lt;p&gt;价格方面，Switch 和 PS4 版本为 14.99 美元，Switch 2、PS5 和 Xbox Series X/S 版本为 16.99 美元。&lt;/p&gt;
+&lt;h3&gt;微博回应「黑粉」标识：假的&lt;/h3&gt;
+&lt;p&gt;近日，微博官方账号「微博管理员」发布了关于文娱生态治理相关公告，而公告中提到了「完善明星‘黑粉’专项治理措施」的相关机制。&lt;/p&gt;
+&lt;p&gt;而据微博社区观察员「围脖侠」发文称，经其发现，部分账号对此恶意解读，造谣平台将在前台公示黑粉标识。&lt;/p&gt;
+&lt;p&gt;围脖侠表示，经核实，该信息为不实信息，微博对「黑粉」的标记并不会在前台进行公示，相关图片系人为 P 图伪造，请大家切勿轻信传言。&lt;/p&gt;
+
+&lt;h3&gt;《义勇军进行曲》AI 彩色修复版公布&lt;/h3&gt;
+&lt;p&gt;5 月 24 日，人民日报公布了《义勇军进行曲》AI 彩色修复版。&lt;/p&gt;
+&lt;p&gt;90 年前的今天，《义勇军进行曲》首次在电影《风云儿女》中唱响。从战歌到国歌，每一次响起都是前进号角，激励一代代中国人奋勇向前，激励中华儿女挺起脊梁。&lt;/p&gt;
+&lt;p&gt;《义勇军进行曲》由田汉作词，聂耳作曲，诞生于 1935 年。&lt;/p&gt;
+&lt;h3&gt;2025 戛纳电影节获奖名单颁出&lt;/h3&gt;
+&lt;p&gt;日前，第 78 届戛纳国际电影节正式公布主竞赛单元奖项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;金棕榈最佳影片由贾法·帕纳西导演的《普通事故》获得；&lt;/li&gt;
+&lt;li&gt;约阿希姆·提尔导演的《情感价值》获得评委会大奖；&lt;/li&gt;
+&lt;li&gt;最佳女/男演员分别由《最小的女儿》 的 Nadia Melliti 和《密探》的瓦格纳·马拉获得；&lt;/li&gt;
+&lt;li&gt;最佳导演奖由小克莱伯·门多萨凭借《密探》夺得。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;《F1：狂飙飞车》发布正片片段&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/5.26_%E6%97%A9%E6%8A%A5/778b0b05-3889-49e8-a853-6b2d16244fa5.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;日前，赛车题材新片《F1：狂飙飞车》发布正片片段。&lt;/p&gt;
+&lt;p&gt;片中，布拉德·皮特与哈维尔·巴登边洗澡边谈心——处境艰难的 F1 车队的领头人努力说服「老骥伏枥」的车手。&lt;/p&gt;
+&lt;p&gt;影片讲述了 F1 车手 Sonny Hayes 遭遇一场可怕的车祸，因而从 F1 比赛退役并开始其他比赛。后来在 F1 车队老板兼朋友联系下，Sonny Hayes 复出，并作为导师辅助年轻车手Joshua Pearce，与他组队最后一次在赛道上争取荣誉。&lt;/p&gt;
+&lt;p&gt;该片由约瑟夫·科辛斯基执导，布拉德·皮特、戴姆森·伊德瑞斯等主演，将于 6 月 27 日北美上映；中国内地确认引进，档期待定。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Mon, 26 May 2025 01:17:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE9wNFhrY3hNRWttNWt6b3FoYkRVanM0bnphUUkxUlpMZExESDFiRjdvUVk3aUMyZGtZYkhXbnI1c3dHeWs</guid></item><item><title>特朗普要求iPhone“美国制造”，这现实吗？ - 纽约时报中文网</title><link>https://news.google.com/rss/articles/CBMif0FVX3lxTFA0OHpuT3E3M3BJNFVZZmttd1RfS1RvR3VseHdqWmd3T205MTdxVDV6WnozbkRiaFd6WE9NdVRNd1MwaUQwUjNjWEg4a0t3QzNpNTJ5SWQyMVgwekEtQVhGUXg3bmlOeEYxVGlGNjBRXzQ0Z1I4WncwZW1FOG45N2s?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;可以。苹果是可以在美国生产iPhone。但市场调研公司TechInsights的分析师韦恩·蓝姆表示，这样做的代价高昂，而且难度很大，将迫使公司将iPhone的价格提高一倍以上，达到2000美元或更高。蓝姆说，苹果将不得不购买新设备，并且提高自动化程度，因为美国的人口远少于中国。&lt;/p&gt;&lt;p class="article-paragraph"&gt;“这太荒谬了，”他说。“短期内，这在经济上不具有可行性。”&lt;/p&gt;&lt;p class="article-paragraph"&gt;曾在苹果公司担任九年制造设计经理职位的马修·摩尔表示，转移供应链会有一些好处，包括减少从海外运输产品的环境成本。但与必须克服的挑战相比，这些好处微不足道。&lt;/p&gt;&lt;p class="article-paragraph"&gt;&lt;b&gt;苹果为什么还没有开始在美国开始呢？&lt;/b&gt;&lt;/p&gt;&lt;p class="article-paragraph"&gt;供应链专家表示，在2025年将iPhone生产转移到美国是愚蠢之举。iPhone面世已近20年了。苹果高管曾表示，10年后人们可能不再需要iPhone，因为它可能会被一种为人工智能打造的新设备取代。蓝姆表示，在这样的背景下，苹果的巨额投资恐怕无法回本。&lt;/p&gt;&lt;p class="article-paragraph"&gt;“如果还有iPhone 29的话，我会很惊讶，”他说，并指出苹果正试图通过开发Vision Pro这类增强现实产品来逐步取代iPhone的核心地位。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;2013年，当苹果开始在美国组装Mac台式电脑时曾遭遇困境。由于员工交接班出现空档，公司不得不&lt;/p&gt;&lt;a rel="noopener noreferrer" target="_blank" href="https://www.wsj.com/articles/trump-comments-on-u-s-factoriesmakes-it-awkward-for-apple-1501187622" title="Link: https://www.wsj.com/articles/trump-comments-on-u-s-factoriesmakes-it-awkward-for-apple-1501187622"&gt;暂停生产&lt;/a&gt;&lt;p&gt;。此外，苹果公司还难以找到一家能够足量供应&lt;/p&gt;&lt;a href="https://cn.nytimes.com/technology/20190130/iphones-apple-china-made/"&gt;微型定制螺丝的供应商&lt;/a&gt;&lt;p&gt;。&lt;/p&gt;&lt;/div&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;2019年，苹果首席执行官蒂姆·库克曾带特朗普&lt;/p&gt;&lt;a href="https://www.nytimes.com/2019/11/20/us/politics/trump-texas-apple-factory.html"&gt;参观&lt;/a&gt;&lt;p&gt;位于得州的工厂。但最近一批电脑上的标签显示，在得州组装的Mac Pro是泰国制造。&lt;/p&gt;&lt;/div&gt;&lt;div class="article-paragraph"&gt;&lt;figure class="article-inline-photo large"&gt;&lt;figcaption&gt;&lt;span&gt;苹果可以在美国生产iPhone，但这样做既昂贵又困难，将迫使公司将iPhone的价格提高一倍以上。&lt;/span&gt; &lt;cite&gt;Juan Arredondo for The New York Times&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;&lt;b&gt;中国究竟具备哪些美国无法提供的优势？&lt;/b&gt;&lt;/p&gt;&lt;p class="article-paragraph"&gt;小巧的双手、庞大的季节性劳动力，以及数百万的工程师队伍。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Mon, 26 May 2025 00:57:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMif0FVX3lxTFA0OHpuT3E3M3BJNFVZZmttd1RfS1RvR3VseHdqWmd3T205MTdxVDV6WnozbkRiaFd6WE9NdVRNd1MwaUQwUjNjWEg4a0t3QzNpNTJ5SWQyMVgwekEtQVhGUXg3bmlOeEYxVGlGNjBRXzQ0Z1I4WncwZW1FOG45N2s</guid></item><item><title>OpenAI会革掉苹果的命吗 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qZFl6S3I0U3o1c19yU0s3NmtRU0RnN0dRWTJUbEJxdEdTQThCRlAzbnoxRmJpQnIxaHdVbXJidWljWm94a3h6QzJ2OVk2cWtqNFpBZENUalM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;当地时间5月21日，在传闻出现一个多月后，OpenAI官宣成功收购了苹果前首席设计官Jony Ive等人创立的初创公司io。&lt;strong&gt;这也意味着OpenAI将在硬件领域继续发力，甚至似乎有要与苹果一较高下的意思。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/b614dcd2-1e98-4aa7-872d-ea6a9d5047eb.png" target="_blank"&gt;&lt;img alt="OpenAI会革掉苹果的命吗" h="302" src="//img1.mydrivers.com/img/20250526/Sb614dcd2-1e98-4aa7-872d-ea6a9d5047eb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据OpenAI官网介绍，早在两年前，Jony Ive的创意团体LoveFrom便已与OpenAI展开合作。&lt;/p&gt;
+&lt;p&gt;随着合作深入，他们意识到这些开发、设计和制造一系列新产品的雄心需要一个全新的公司。因此，在一年前，Jony与Scott Cannon、Evans Hankey和Tang Tan共同创立了io。&lt;/p&gt;
+&lt;p&gt;在官网上，OpenAI并没有提及此次收购的具体细节。然而，据外媒报道，OpenAI此次收购价格高达65亿美元，堪称OpenAI成立至今规模最大的收购。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;苹果叛徒 or AI革命者？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI首席执行官萨姆·奥特曼在社交平台X表示“很高兴能与Jony合作，在我看来，他是世界上最伟大的设计师，很兴奋地尝试创造新一代人工智能驱动的计算机。”&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/b5a4f893-e40b-47c0-a2ef-4720c9ac476b.png" target="_blank"&gt;&lt;img alt="OpenAI会革掉苹果的命吗" h="433" src="//img1.mydrivers.com/img/20250526/Sb5a4f893-e40b-47c0-a2ef-4720c9ac476b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作为此次收购的重要一方，Jony Ive的正式加盟无疑是OpenAI的重要助力。他在OpenAI发布的视频中说道：“我越来越感觉到，过去30年来我所学的，一切都将我引向了这个地方和这个时刻。”尽管视频中二人基本是在相互吹捧，但是Jony Ive的兴奋和期待溢于言表。&lt;/p&gt;
+&lt;p&gt;作为曾经任职苹果的传奇设计师，乔布斯的“灵魂伙伴”，Jony Ive曾主导iMac、iPhone、Apple Watch等划时代产品的设计，定义了如今智能手机外观与体验。&lt;/p&gt;
+&lt;p&gt;2019年，Jony Ive离开苹果，创立LoveFrom工作室。&lt;/p&gt;
+&lt;p&gt;2024年，Jony与Scott Cannon、Evans Hankey和Tang Tan共同创立了AI硬件初创公司io。据了解，io的团队专业能力非常过硬，成员有顶尖的软件和硬件工程师、技术人员、物理学家以及在产品开发和制造领域的专家。&lt;/p&gt;
+&lt;p&gt;在io的创立者中，Scott Cannon是热门邮箱应用Mailbox的设计人员之一；Evans Hankey曾是Jony Ive离开苹果后的接班人；Tang则曾领导iPhone和Apple Watch的设计。&lt;/p&gt;
+&lt;p&gt;而据外媒报道，OpenAI收购io后，这支有着苹果色彩的55人团体将加入OpenAI，而Jony Ive不会成为OpenAI的正式员工，但会以顾问身份参与OpenAI和io的创意与设计工作。&lt;/p&gt;
+&lt;p&gt;这种合并行为令Jony Ive一度被“叛徒论”裹挟。&lt;/p&gt;
+&lt;p&gt;事实上，在库克对苹果进行了大量的结构性改革之后，苹果从“设计驱动”转向“成本优先”，财务部门拥有更多发言权，这让Jony Ive非常失望，他曾告诉他的团队“艺术需要适当的空间和支持才能成长。”&lt;/p&gt;
+&lt;p&gt;此次加盟OpenAI，Jony Ive或许发现了其设计灵感得以实现的途径，正如其所言：“尽管对于前方艰巨的任务，我既感到焦虑又满怀期待，但我无比感激能有机会参与如此重要的合作。萨姆以及OpenAI和io团队所秉持的价值观和愿景，是极为难得的灵感源泉。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而在此次并购中，脸色最难看的应该就是苹果了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;就在并购信息放出后，苹果美股下跌超过2%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更关键的是，作为AI行业的龙头，OpenAI瞄准硬件领域，其产品很有可能影响到苹果现有的产品结构。当AI产品绕过iOS入口，苹果所依赖的“硬件+操作系统+服务”生态护城河很有可能被击溃。&lt;/p&gt;
+&lt;p&gt;另一方面，苹果在AI方面的缺位一直是其当前发展的隐痛，尽管其一直在加强自身产品的AI功能，但是和OpenAI等人工智能行业的前沿企业相比仍有不少差距。当AI企业通过硬件产品直接触达用户群体时，苹果的市场优势将受到极大压迫。&lt;/p&gt;
+&lt;p&gt;尽管这款产品的具体信息还很模糊，但在OpenAI官网发布的视频中，奥特曼提到自己已经体验了Jony Ive提供的新产品的原型机，并认为“这是世界上将会出现的最酷的科技产品”。&lt;/p&gt;
+&lt;p&gt;此外，视频最后提到OpenAI和io将在明年展示其工作成果，这意味着这款新的硬件产品最早将在2026年面世。&lt;/p&gt;
+&lt;p&gt;有知名分析师根据产业调查透露，OpenAI的这款全新AI硬件设备预计将于2027年开始量产，并可能在越南组装。&lt;/p&gt;
+&lt;p&gt;分析师还指出，OpenAI在这个时候公布与Jony Ive的合作，可能是为了分散市场对Google I/O大会的关注。&lt;/p&gt;
+&lt;p&gt;然而，在I/O大会上，Google发布了支持Android XR的智能眼镜。另外，还有报道称Meta计划年底推出更高端AI眼镜，尽管OpenAI与他们存在着竞争关系，但是当大家都涌入硬件领域，苹果反而可能会是“四面楚歌”的那个。&lt;/p&gt;
+&lt;p&gt;如今，苹果曾经的顶尖设计师Jony Ive与OpenAI合作，并为其带来了有着苹果设计基因的超强团队。当新的硬件产品问世的时候，OpenAI或许将会以苹果的方式给予苹果重击。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 26 May 2025 00:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1qZFl6S3I0U3o1c19yU0s3NmtRU0RnN0dRWTJUbEJxdEdTQThCRlAzbnoxRmJpQnIxaHdVbXJidWljWm94a3h6QzJ2OVk2cWtqNFpBZENUalM</guid></item><item><title>自研5nm芯片、营收暴增等！联想越来越强了：杨元庆给答案 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBHLV9PVWRFZkw1UWN6STNhUVRlODBqdGUzRkxpc2xoWWdhaGVrZlJfUWM1ZEFYZXprcGkxajE3M0hjSXluXy0zbjZNUm5iMVdrQ29MQmlsOVA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，全年收入4985亿元人民币，同比增长21.5%，创历史第二高位，不可否认的是，联想越来越强了。&lt;/p&gt;
+&lt;p&gt;具体到业务方面，2024/25财年联想PC之外业务在总营收中占比提升近5个百分点，达到47%，其全球所有大区营收全部实现双位数增长。&lt;/p&gt;
+&lt;p&gt;研发方面，联想集团持续加大对创新的中长期投入，全年研发投入同比增长13%，研发人员占比达27.8%，同比提升1.6个百分点。&lt;/p&gt;
+&lt;p&gt;“即使面对未来挑战，我们依然承诺：市场份额不掉，利润不掉。”联想集团董事长兼CEO杨元庆表示。 &lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;对于联想的快速增长，杨元庆给出了答案，主要是根据两个核心竞争力，一是创新，联想在创新上面加大了投入，尤其是围绕着混合式人工智能加大了投入。针对个人智能和企业智能，我们都做出了很多的创新，也发布了很多的创新的产品以及解决方案。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;另外一点是卓越的运营，尤其是当下的环境，企业的增长不是抱抱佛脚能够抱来的，而是联想通过几十年的努力建立起来的。&lt;/p&gt;
+&lt;p&gt;他表示，联想已经建立起了一个端到端整合的业务模式，不像有些竞争对手把制造外包，甚至开发设计也都依赖于外包厂商。联想尽管也外包一部分，但是更多是在做自主制造，从而建立起了端到端的业务模式。从产品开发到市场预测，从采购到制造，从销售到服务，我们都能够完全的掌控。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;值得一提的是，联想还在布局自研芯片，比如他们的5nm芯片也已经跑出来了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250526/145a600500d042b19f1fc896b537227c.jpg" target="_blank"&gt;&lt;img alt="自研5nm芯片、营收暴增等！联想越来越强了：杨元庆给答案" h="337" src="//img1.mydrivers.com/img/20250526/s_145a600500d042b19f1fc896b537227c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 26 May 2025 00:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBHLV9PVWRFZkw1UWN6STNhUVRlODBqdGUzRkxpc2xoWWdhaGVrZlJfUWM1ZEFYZXprcGkxajE3M0hjSXluXy0zbjZNUm5iMVdrQ29MQmlsOVA</guid></item><item><title>完整版｜谷歌创始人最新访谈，揭秘Gemini为什么突然变得这么强大？ - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE0yaWRndm1iTHdFN3I0WHBkSXQ4UU1pdFBpYWttN2UxUjFrWTNNdGVZYkhJMllmOENCV1pjamRWVVZvWU13bnIyMjF1dVlydw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
+
+
+&lt;/body&gt;
+</description><author>36Kr</author><pubDate>Mon, 26 May 2025 00:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE0yaWRndm1iTHdFN3I0WHBkSXQ4UU1pdFBpYWttN2UxUjFrWTNNdGVZYkhJMllmOENCV1pjamRWVVZvWU13bnIyMjF1dVlydw</guid></item><item><title>一男子身穿手机“铠甲”入境被查：全身裹满52部旧iPhone - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9RN3Z0aTVhMGV5V0Q4SFZMYUVrLTRETThMaHgyTWxqNGRHVENxTkVPSXYxN1pRN2JfLXlYMEJWYzQxQTU1TUNnWUxPX1lDRkRoRnlocmxCWlE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;一男子身穿手机“铠甲”入境被查：全身裹满52部旧iPhone&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-26 08:13:01  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1299472.html" title="建嘉的主页" class="newstiao4"&gt;建嘉&lt;/a&gt;&lt;p&gt;  编辑：建嘉 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1049833-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，据海关发布官微通报，&lt;span&gt;&lt;strong&gt;近日拱北海关所属青茂海关查获一名旅客绑藏旧手机52台进境。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据介绍，当日凌晨4时许，一名身穿浅蓝色衬衫的旅客自青茂口岸旅检现场的海关“绿色通道”进境，现场关员察觉其步伐异常，遂将其拦截查验。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/050c9d96-dbce-45f8-a473-65361e9c06f4.jpg" target="_blank"&gt;&lt;img alt="一男子身穿手机“铠甲”入境被查：全身裹满52部旧iPhone" h="451" src="//img1.mydrivers.com/img/20250526/S050c9d96-dbce-45f8-a473-65361e9c06f4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;经进一步检查，关员在该名旅客肋部、腰腹部及大腿两侧发现用塑料膜捆绑的旧手机共计52台。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;从现场查获公布的图片来看，该男子携带的手机均为旧款iPhone，包括iPhone XR、iPhone 12、iPhone 13等。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;整体都是两年以上的老款机型，大概率会是回收的二手机，&lt;strong&gt;入境后不排除会进行翻新处理，甚至进行后封装成库存全新机流入市场，对消费者权益造成极大侵害。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/d5b21dd6-784e-496f-9f0a-7335c7fb66a0.jpg" target="_blank"&gt;&lt;img alt="一男子身穿手机“铠甲”入境被查：全身裹满52部旧iPhone" h="399" src="//img1.mydrivers.com/img/20250526/Sd5b21dd6-784e-496f-9f0a-7335c7fb66a0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;海关提醒：根据相关法规，以藏匿、伪装方式逃避海关监管，携带依法应当缴纳税款的物品进出境的属走私行为，情节严重构成犯罪的，将被依法追究刑事责任。&lt;/p&gt;
+&lt;p&gt;另根据《中华人民共和国海关行政处罚实施条例》第五十三条规定，因走私被海关行政处罚后在2年内又实施走私行为的应当从重处罚。&lt;br&gt;
+ &lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 26 May 2025 00:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9RN3Z0aTVhMGV5V0Q4SFZMYUVrLTRETThMaHgyTWxqNGRHVENxTkVPSXYxN1pRN2JfLXlYMEJWYzQxQTU1TUNnWUxPX1lDRkRoRnlocmxCWlE</guid></item><item><title>卢伟冰：小米电视放弃对规模数量的过度追求 专注做深技术 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE91ajBGRm9hSjRRSmxadXd4UkpMY25jTHIweEZhcTFjNEttY2ZhUzc3bmRkY3NKNHhlMjM1WXQydWo0N1RYZWc4OFhHTWd4dHFadXZ3ZTRDeF8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;卢伟冰：小米电视放弃对规模数量的过度追求 专注做深技术&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-26 07:50:39  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1049829-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，在近期的小米发布会上，备受瞩目的小米电视S Mini LED 2025系列正式亮相。&lt;/p&gt;
+&lt;p&gt;发布会后，小米集团合伙人、总裁兼手机部总裁卢伟冰分享了小米电视的发展策略，强调&lt;span&gt;&lt;strong&gt;品牌已从规模扩张转向技术深耕，尤其聚焦画质提升与Mini LED技术创新。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/8258113fbadd4cc88ea5d82a48fd19cd.png" target="_blank"&gt;&lt;img alt="卢伟冰：小米电视放弃对规模数量的过度追求 专注做深技术" h="409" src="//img1.mydrivers.com/img/20250526/s_8258113fbadd4cc88ea5d82a48fd19cd.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;他提到，近几年，小米电视放弃了对规模数量的过度追求，专注做深技术，尤其是画质。&lt;/p&gt;
+&lt;p&gt;与此同时，&lt;strong&gt;小米还大力推进MiniLED技术创新的普及，“最近几代产品都受到用户好评，销量也非常不错。” &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作为中高端电视市场的核心驱动力，Mini LED技术正迎来爆发式增长。据TrendForce集邦咨询数据，预计2025年将突破1156万台，同比增长50%。&lt;/p&gt;
+&lt;p&gt;在这一趋势下，小米通过技术普惠策略，加速推动Mini LED技术的普及与迭代。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250526/dd4f06dfbd4349ee86b9fadea02216d4.jpg" target="_blank"&gt;&lt;img alt="卢伟冰：小米电视放弃对规模数量的过度追求 专注做深技术" h="1166" src="//img1.mydrivers.com/img/20250526/s_dd4f06dfbd4349ee86b9fadea02216d4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 23:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE91ajBGRm9hSjRRSmxadXd4UkpMY25jTHIweEZhcTFjNEttY2ZhUzc3bmRkY3NKNHhlMjM1WXQydWo0N1RYZWc4OFhHTWd4dHFadXZ3ZTRDeF8</guid></item><item><title>王健林再卖48座万达广场，腾讯等“熟人团”接盘 - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE1vSWNVYlVqX2lpZWZibXRBOWQxOGhrWllmT05LQURwWXlMSGtnOFlCMG1KdE1fMWFiVzNFVlhyQ2lvV2tZMS1MVDFpU1NlZ2RSend3VQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="358245"&gt;时隔一年，太盟投资集团再次出手。&lt;/p&gt;&lt;p data-check-id="860853"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="671208"&gt;据国家市场监管总局近日披露的信息，太盟管理咨询合伙企业、高和丰德企业管理服务有限公司、腾讯控股有限公司、北京市潘达商业管理有限公司、阳光人寿保险股份有限公司直接或通过其各自关联方共同设立合营企业，并通过合营企业收购大连万达商业管理集团股份有限公司直接或间接持有的48家目标公司的100%股权。&lt;/p&gt;&lt;p data-check-id="593750"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="118807"&gt;根据列表，这48家目标公司分别涉及北京、广州、成都、杭州、南京、武汉等多个一二线城市的万达广场项目。根据国家市场监管总局5月21日发布的最新信息，该笔交易已被无条件批准。对于这一交易的具体金额等情况，公告信息中并未透露。&lt;/p&gt;&lt;p data-check-id="155414"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="128538"&gt;5月25日晚间，《每日经济新闻》记者就上述交易分别联系了万达集团以及太盟投资集团方面，但截至发稿，双方均未给予回复。&lt;/p&gt;&lt;p data-check-id="829858"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="800437" label="大标题"&gt;一、一场“熟人局”&lt;/p&gt;&lt;p data-check-id="330573"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="783600"&gt;这更像是一场“熟人”之间的再合作。&lt;/p&gt;&lt;p data-check-id="333354"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="102416"&gt;根据国家市场监管总局发布的经营者集中简易案件公示表显示，此次联合收购大连万达48家目标公司股权的企业包括了太盟珠海、高和丰德、京东潘达、腾讯控股、阳光人寿等多家公司。而这些企业几乎都曾与万达有过合作。&lt;/p&gt;&lt;p data-check-id="504149"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="971641" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/26/073121964849.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="1019"&gt;&lt;/p&gt;&lt;p data-check-id="135583" label="图片备注" class="text-img-note"&gt;来源：国家市场监管总局官网&lt;/p&gt;&lt;p data-check-id="413370"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="784388"&gt;如腾讯控股和京东，2018年1月29日，腾讯控股、苏宁、融创、京东与大连万达集团签署战略投资协议，以340亿元入股万达商业，收购大连万达商管在香港退市时引入的投资人持有的约14%股份。其中，腾讯控股投资100亿元，持股比例为4.12%；京东投资50亿元，持股比例为2.06%。&lt;/p&gt;&lt;p data-check-id="182350"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="324386"&gt;而苏宁和融创均于2024年向万达集团和万达商管发起仲裁，要求分别支付50.41亿元、95亿元的股份回购款。截至目前，上述两笔仲裁尚未有结果披露。但腾讯控股和京东则一直未明确表态。&lt;/p&gt;&lt;p data-check-id="607506"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="333415"&gt;除此之外，在万达遭遇流动性危机以来，腾讯控股也一直扮演着“关键先生”的角色。2023年7月，上海儒意影视制作有限公司就曾以22.62亿元的价格收购了北京万达投资49%股权，而上海儒意背后的控股大股东正是腾讯控股。&lt;/p&gt;&lt;p data-check-id="173550"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="345430"&gt;阳光人寿同样也是“老朋友”。为缓解债务压力，万达集团转型轻资产模式，近两年已先后出售多个万达广场项目，包括新华保险、阳光人寿、大家人寿等险资均出现在万达广场的买家名单中，先后累计出手接盘近20个万达广场项目。其中，仅阳光人寿就入手了至少6家万达广场。&lt;/p&gt;&lt;p data-check-id="466796"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="306464"&gt;根据国家市场监管总局披露的此次被收购的48家目标公司信息，这些目标公司分别位于北京、上海、广州、成都、杭州、南京、武汉等一二线城市，以及榆林、乐山、泉州、上饶等三四线城市，共计39个城市的48座万达广场。&lt;/p&gt;&lt;p data-check-id="437800"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="320000"&gt;而这些投资人将直接或通过其各自关联方共同设立并100%控制合营企业，主要业务为商业广场投资、自有房屋租赁经营业务，并通过万达集团从事业务，包括投资集团、文旅集团、商管集团。&lt;/p&gt;&lt;p data-check-id="419319"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="366454"&gt;关于此次交易涉及的金额，相关文件并未披露。不过有市场消息称，此次交易金额将达到500亿元。每经记者就此分别联系了万达集团及太盟集团，但截至发稿，双方均未给予回应。&lt;/p&gt;&lt;p data-check-id="877611"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="505800"&gt;每经记者从知情人士处获悉，在此次交易中，太盟投资集团仍然扮演中间人的角色，主要负责牵头与协商工作。&lt;/p&gt;&lt;p data-check-id="244940"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="748990" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/26/073445059795.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="491"&gt;&lt;/p&gt;&lt;p class="text-img-note" data-check-id="530185" label="图片备注"&gt;来源：国家市场监管总局官网&lt;/p&gt;&lt;p data-check-id="190383"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="304367" label="大标题"&gt;二、多次股权冻结&lt;/p&gt;&lt;p data-check-id="343915"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="477833"&gt;值得注意的是，这已是太盟投资集团第二次牵头对万达的投资合作。&lt;/p&gt;&lt;p data-check-id="722633"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="204427"&gt;上一次可追溯至2024年3月30日。彼时，大连万达与太盟投资集团、中信资本、Ares Management旗下基金、阿布扎比投资局旗下全资子公司Platinum Peony和穆巴达拉投资公司等在大连签署投资协议。根据协议内容，投资人将联合向大连新达盟商业管理有限公司投资约600亿元，一举成为近5年来国内单笔最大规模的私募股权投资。&lt;/p&gt;&lt;p data-check-id="863906"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="125022"&gt;在签约5个月后，2024年9月2日，大连新达盟发生工商信息变更，公司注册资本由162.10亿元增至405.17亿元，投资总额变更为513.15亿元。国家企业信用公示系统显示，股东及出资方面，大连万达商管及旗下大连万裕合计认缴金额162.10亿元，持股40%，依然为单一最大股东；剩下10家机构合计持股60%。&lt;/p&gt;&lt;p data-check-id="602072"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="878342"&gt;11名董事会成员中，5人来自万达，分别是韩旭、黄国斌、何其聪、肖广瑞、张春远；另外6人代表各方投资者，如黄德炜代表太盟投资集团，叶鑫则是中信资本代表。&lt;/p&gt;&lt;p data-check-id="342531"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="458130"&gt;但需要注意的是，尽管工商信息变更了，但据每经记者了解，由于融创以及苏宁的仲裁申请，万达的股权重组并不顺利。此前万达相关人士就曾透露，在仲裁案件审理期间，融创申请冻结了万达及相关公司的股权，这一举措对万达正在进行的600亿元股权重组产生了影响。万达方面表示，希望能够尽快获得仲裁结果，以解除相关股权冻结措施。&lt;/p&gt;&lt;p data-check-id="512009"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="881876"&gt;每经记者从相关人士处了解到，此次仲裁尚未有结果。这也意味着，原计划于2024年第二季度完成的600亿元股权交割重组，时至今日仍在进行中。&lt;/p&gt;&lt;p data-check-id="970849"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="643864"&gt;与此同时，据天眼查风险信息，王健林于2025年5月8日新增一起股权冻结，涉及大连万达商业管理集团股份有限公司约3亿元股权，冻结期限至2027年5月7日，执行法院为大连市西岗区人民法院。此前的3月18日，北京万达文化产业集团新增1条股权冻结信息，被执行人为大连万达集团，冻结股权数额为80亿元，冻结期限为2025年3月18日至2028年3月17日，执行法院为河南省郑州市中级人民法院。&lt;/p&gt;&lt;p data-check-id="375470"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="346640"&gt;如若此次交易成功，王健林或将再缓一口气。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Sun, 25 May 2025 23:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1vSWNVYlVqX2lpZWZibXRBOWQxOGhrWllmT05LQURwWXlMSGtnOFlCMG1KdE1fMWFiVzNFVlhyQ2lvV2tZMS1MVDFpU1NlZ2RSend3VQ</guid></item><item><title>中国电竞显示器4月销量大增超40% 小米超华硕、灵蛇 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5YMkxPck50ckk4anRaNXA5eWItWDlwdjBGMlZRS0xkM3RqRUxWUDZhUTR1S0U1dElMV3VIYXJkR2VrSldmNDRrMnBneTV3NEJuZVhzSGgwTkc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;中国电竞显示器4月销量大增超40% 小米超华硕、灵蛇&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-26 07:33:28  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1049827-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，根据洛图科技（RUNTO）最新发布的报告显示，2025年4月中国大陆电竞显示器线上公开零售市场表现强劲。&lt;/p&gt;
+&lt;p&gt;具体来说，4月线上销量达到54万台，同比增长40.7%；销额为6.5亿元，同比增长53.9%；均价为1204元，同比上涨9.4%。&lt;/p&gt;
+&lt;p&gt;其中，&lt;span&gt;&lt;strong&gt;HKC以超200%的零售量同比增长率强势领跑，市场占有率提升至20%&lt;/strong&gt;&lt;/span&gt;，进一步扩大其在电竞领域的领先优势。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="中国电竞显示器4月销量大增超40% 小米超华硕、灵蛇" h="296" src="//img1.mydrivers.com/img/20250526/Seed47dc8-2577-46a7-b396-336f625a11bd.png" w="600"&gt;&lt;br&gt;
+&lt;span&gt;2025年4月 中国大陆电竞显示器线上市场TOP品牌销量份额及同比变化&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;AOC以16%的市占率位居当月线上销量第二名，尽管在电竞领域受到中国大陆工厂品牌扩张的影响，但AOC在显示器整体线上市场仍牢牢占据第一。&lt;/p&gt;
+&lt;p&gt;SANC位居当月线上市场销量第三名，当月市占率近10%，销量同比增长41%。&lt;/p&gt;
+&lt;p&gt;进入前五名的品牌还包括泰坦军团和KTC，而&lt;span&gt;&lt;strong&gt;小米以第六名的成绩领先于ROG、华硕、灵蛇和优派等品牌。&lt;/strong&gt;&lt;/span&gt;小米凭借其高性价比策略和广泛的用户基础，在电竞市场中占据了一席之地。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250526/9d77e18f205941619e2d6ef00dff278f.jpg" target="_blank"&gt;&lt;img alt="中国电竞显示器4月销量大增超40% 小米超华硕、灵蛇" h="437" src="//img1.mydrivers.com/img/20250526/s_9d77e18f205941619e2d6ef00dff278f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 23:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5YMkxPck50ckk4anRaNXA5eWItWDlwdjBGMlZRS0xkM3RqRUxWUDZhUTR1S0U1dElMV3VIYXJkR2VrSldmNDRrMnBneTV3NEJuZVhzSGgwTkc</guid></item><item><title>小米YU7辅助驾驶标配25颗传感器：激光雷达最远探测200米 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5mU01QajhpMEdXOEs0dTVpSEN1SHlzQUFGWTRBTVBjQnBwMVJwR1dXTHFSUWwtSVloZzU3RDBzQ1ZJS1R2QWg3WTJTQXZyVC1zVkFTSm5oM0Q?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;小米YU7辅助驾驶标配25颗传感器：激光雷达最远探测200米&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-26 07:21:19  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297417.html" title="若风的主页" class="newstiao4"&gt;若风&lt;/a&gt;&lt;p&gt;  编辑：若风 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1049825-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，在小米汽车发布的第142集小米汽车答网友问中，小米汽车介绍了小米YU7配备的辅助驾驶传感器情况。&lt;/p&gt;
+&lt;p&gt;小米汽车表示，&lt;span&gt;&lt;strong&gt;小米YU7全系标配了1颗激光雷达、1颗4D毫米波雷达、11颗高清摄像头和12颗超声波雷达，&lt;/strong&gt;&lt;/span&gt;为小米辅助驾驶功能带来了更好的表现。&lt;/p&gt;
+&lt;p&gt;小米YU7全系搭载激光雷达，在暗光环境和异形障碍物识别方面看得更准，&lt;strong&gt;最远有效点云距离达到200米，功耗降低 55%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;同时小米YU7全系搭载4D毫米波雷达，相比3D毫米波增加了高度信息，分辨率与识别距离大幅强化，最远有效点云距离为车：200米，人：100米。&lt;/p&gt;
+&lt;p&gt;比如跟车行驶，当前车发生急刹时，辅助驾驶系统可以增强预警提示能力；遇到雨雾等恶劣天气时4D毫米波雷达也能更好感知肉眼看不清的交通状况。&lt;/p&gt;
+&lt;p&gt;小米YU7全车搭载了11颗高清摄像头，其中7颗为超透防眩摄像头，其镜头应用ALD镀膜技术，模组采用COB封装工艺，减少光在镜头内部的反射，增加透光率，实现更清晰通透的画质，有效抑制逆光、眩光产生的视觉干扰。&lt;/p&gt;
+&lt;p&gt;此外，小米YU7在辅助驾驶计算芯片上也进行了重磅升级，搭载了NVIDIA DRIVE AGX Thor?车载计算平台，具有700TOPS超强算力，可以更好的支持大模型上车，带来更好的辅助驾驶体验。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="小米YU7辅助驾驶标配25颗传感器：激光雷达最远探测200米" h="337" src="//img1.mydrivers.com/img/20250526/53fc1801-ed36-4170-be92-03f031560a8e.jpg" w="600"&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 23:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5mU01QajhpMEdXOEs0dTVpSEN1SHlzQUFGWTRBTVBjQnBwMVJwR1dXTHFSUWwtSVloZzU3RDBzQ1ZJS1R2QWg3WTJTQXZyVC1zVkFTSm5oM0Q</guid></item><item><title>无信号也能上网！我国低轨卫星互联网下半年实现消费级组网 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBRQmtXaVBtQlBlRVRjS0pac2RXZmUyUU1wQjgtVHhKZXpnVktBcTRnb090S1o5NlVKZXJOSWFqdmRYS3MyQmxEbnFpQVdMblJLRDQyQWx6WUI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，如今旗舰手机已经普及卫星通信技术，甚至开始下放到中端机，但目前还是以电话和短信为主。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;据博主数码闲聊站爆料，低轨卫星通信系统进入公测阶段，顺利的话，下半年有望实现消费级卫星组网。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这属于是新一阶段的卫星通信技术，可以在无信号的情况下，通过直连卫星来连接互联网。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250526/36c5441b427b44c69cd7f96c10c705b7.jpg" target="_blank"&gt;&lt;img alt="无信号也能上网！我国低轨卫星互联网下半年实现消费级组网" h="153" src="//img1.mydrivers.com/img/20250526/s_36c5441b427b44c69cd7f96c10c705b7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其实去年底发布的华为Mate X6典藏版就已经率先全球首发三网卫星通信，加入了低轨卫星互联网。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当时，余承东在发布会上透露，低轨卫星互联网系统还在测试中，预计将于2025年下半年开启众测。&lt;/p&gt;
+&lt;p&gt;目前看来，余承东当时的预测还是非常准确的。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="无信号也能上网！我国低轨卫星互联网下半年实现消费级组网" h="203" src="//img1.mydrivers.com/img/20250526/42d1476e-dcb0-4905-ade1-68f16ecab6a0.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据悉，目前我国建设的“千帆星座”就是低轨卫星互联网系统，也被称为“G60星链”卫星是由上海松江区牵头打造，目前已经发射了五批。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;按照规划，到2030年底，“千帆星座”最终将打造超过1万颗的低轨宽频多媒体卫星组网。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="无信号也能上网！我国低轨卫星互联网下半年实现消费级组网" h="203" src="//img1.mydrivers.com/img/20250526/f84f3869-5529-4857-9475-6ed684d3f35d.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;将平板式高通量宽带通信卫星布局在低轨，具有离地较近、成本低、功耗低、覆盖广、时延低等优势，&lt;span&gt;&lt;strong&gt;能够提供大带宽、低时延、高质量、高安全性、全球覆盖的卫星互联网服务。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据专家介绍，1.4万颗卫星差不多就能够覆盖我们大部分人类生活区域所需的情况。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="无信号也能上网！我国低轨卫星互联网下半年实现消费级组网" h="323" src="//img1.mydrivers.com/img/20250526/72b148f4-805f-46c8-b452-99922f583c2c.png" w="600"&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 22:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBRQmtXaVBtQlBlRVRjS0pac2RXZmUyUU1wQjgtVHhKZXpnVktBcTRnb090S1o5NlVKZXJOSWFqdmRYS3MyQmxEbnFpQVdMblJLRDQyQWx6WUI</guid></item><item><title>英媒：符合美国监管要求背景下，英伟达拟再推“中国特供”芯片 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMieEFVX3lxTFBXSm1zLUhxaUJPR3BfTzFfc3VQU2hsbXlHZHF3SHBZT0tkZnI0U0hxaXJfbFJGX3NhaXV1c0s0ZEZGUE4yRnFXWUtfX1ZRWHpQa29Ha1pyc0h2aEZwRDVjYUhGVWZIUUQ4QXJOOFoxWTRGT3o5Y0pKdw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　【环球时报特约记者 甄翔】路透社25日报道称，美国人工智能（AI）巨头英伟达拟新推出一款专门面向中国市场的人工智能芯片，且最早将于今年6月开始量产。这款芯片属于英伟达最新一代基于Blackwell架构的人工智能处理器，但其定价将在6500至8000美元之间，远低于此前H20的10000至12000美元区间。较低售价通常意味着芯片参数较弱，同时制造要求也相应降低。消息人士称，这款芯片将采用英伟达RTX Pro 6000D架构，属服务器级图形处理器（GPU），搭载GDDR7内存。这款芯片的最终命名尚不得而知。&lt;/p&gt;
+
+&lt;p&gt;　　报道称，这是英伟达第三次为中国市场推出符合美国监管要求的降级版芯片。英伟达首席执行官黄仁勋上周表示，在当前的美国出口限制下，该公司较旧的霍珀架构（H20所采用）已无法再进行进一步修改。英伟达一位发言人表示，公司仍在评估“有限”的选项。“在我们确定新的产品设计并获得美国政府批准之前，我们实际上被排除在中国价值500亿美元的数据中心市场之外。”&lt;/p&gt;
+&lt;p&gt;　　据两位消息人士透露，英伟达还在为中国开发另一款采用Blackwell架构的芯片，最早可能于9月开始生产。&lt;/p&gt;
+&lt;p&gt;　　路透社报道提到，中国仍是英伟达的重要市场。上一财年中国市场销售额占到英伟达总销售额的13%。但是，美国政府的出口限制导致英伟达在华业务遭遇重创。黄仁勋本月早些时候在出席公开活动时表示，英伟达在华市场份额已从2022年美国出口限制措施生效前的95%暴跌至目前的50%。&lt;/p&gt;
+&lt;p&gt;　　黄仁勋直言，美国政府的出口限制措施已“失败”，非但没能遏制中国科技的崛起，反而促进中国加速推进研发。他表示，如果美国继续实施出口管制措施，将有更多中国客户购买中国本土厂商的芯片。&lt;/p&gt;
+&lt;p&gt;　　H20禁令迫使英伟达核销了55亿美元库存。黄仁勋上周一在播客节目中透露，公司因此放弃了约150亿美元的潜在销售额。&lt;/p&gt;
+&lt;p&gt;　　近期还有消息称，英伟达将扩大其在华研发业务。英国《金融时报》此前披露，英伟达计划在中国上海设立研发中心。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：杨赐 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 25 May 2025 22:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTFBXSm1zLUhxaUJPR3BfTzFfc3VQU2hsbXlHZHF3SHBZT0tkZnI0U0hxaXJfbFJGX3NhaXV1c0s0ZEZGUE4yRnFXWUtfX1ZRWHpQa29Ha1pyc0h2aEZwRDVjYUhGVWZIUUQ4QXJOOFoxWTRGT3o5Y0pKdw</guid></item><item><title>DDR5内存出很久了 可我仍然不建议你插满4根 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ndXlZc2VQdDFwbnhrTFB1UVI2eFltOXo4QnZ4RVEySnB4RW5MUzNHUUdMVXhHVTFMYXBiRWtBenEwb1duaG1oamR1b2RLUDY2RXV2ajhOMEY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;前几天，有朋友找到托尼我，说是最近给电脑升级了更大容量的 DDR5 内存，但是现在很容易卡在开机。。。&lt;/p&gt;
+&lt;p&gt;托尼寻思这不很明显是内存问题么，直接返厂就是了。可是朋友说售后表示内存没问题。&lt;/p&gt;
+&lt;p&gt;直到我亲自去看了眼朋友的电脑，才发现原来他的"升级"，不仅是换了更大容量的单根内存，而且把内存加到了 4 根。&lt;/p&gt;
+&lt;p&gt;售后说的确实也没错，这内存插两根时能正常开机。但是呢插四根就要降速，不降速的话干脆直接罢工了！&lt;/p&gt;
+&lt;p&gt; 不是，以前我装机的时候，4 根 DDR4 内存随便插满开机的呀，怎么到了 DDR5 就这么多毛病？&lt;/p&gt;
+&lt;p&gt;就你们应该也知道，虽说 DDR5 是市面上最新的内存规格，但是现在距离首款 DDR5 发布也有 4 年之久了，按理说 DDR5 的很多技术问题应该都被解决了才对。&lt;/p&gt;
+&lt;p&gt;可你网上搜索” 4 根 DDR5 “相关内容的时候，很多网友都在吐槽插满 4 根 DDR5 内存后的各种问题。&lt;/p&gt;
+&lt;p&gt;比如这位网友，插了 4 根内存就很难进系统，偶尔进一次也马上黑屏。。。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/ec10e27d-8c07-4747-9127-b5d808d89ba5.jpg" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="459" src="//img1.mydrivers.com/img/20250526/Sec10e27d-8c07-4747-9127-b5d808d89ba5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;还有这位网友，插满 4 根后玩游戏玩着玩着，直接重启了。。。可真够糟心的！&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/5d3507a1-9f92-47cf-bf02-f0be1a3fe79b.jpg" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="655" src="//img1.mydrivers.com/img/20250526/S5d3507a1-9f92-47cf-bf02-f0be1a3fe79b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 所以为啥 DDR5 内存插 4 根有这么多问题呢？要回答这个事情，我们得先知道为啥之前 DDR4 没这个问题。。。&lt;/p&gt;
+&lt;p&gt;实际上 DDR4 平台也会受到影响，只是没有 DDR5 这么严重。&lt;/p&gt;
+&lt;p&gt;比如一块双槽能跑到 4200Mhz 的主板，插满 4 根时，可能需要降到 3600 或者 3200 来使用。&lt;/p&gt;
+&lt;p&gt;而现在的 DDR5 内存，5200、5600Mhz 都算低的了。有一些高频 DDR5 内存已经到 8000Mhz 以上，这可比 DDR4 时期高太多了！&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/25d1d8bb-0c28-4a00-af81-b2a1575d3fec.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="600" src="//img1.mydrivers.com/img/20250526/S25d1d8bb-0c28-4a00-af81-b2a1575d3fec.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而 DDR5 的高频率，则给到电脑的每个部件很大的压力。&lt;/p&gt;
+&lt;p&gt;我们都知道，内存把数据传递给 CPU ，是从内存开始，经过主板的电路，最终到达 CPU 的内存控制器。&lt;/p&gt;
+&lt;p&gt;这听起来像是一条高速公路，可是，如果高速公路的某一个位置出现故障，轻则堵车缓慢通行，重则完全堵死。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;# 内存&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;就拿内存本身来说吧。&lt;/p&gt;
+&lt;p&gt;DDR5 如此高的频率，对内存散热就是一个很大的考验。&lt;/p&gt;
+&lt;p&gt;以前频率不高时可以忽略内存的温度，但现在不得不重视起来。&lt;/p&gt;
+&lt;p&gt;甚至从 DDR5 开始，厂家在内存上放置了温度传感器，来让玩家了解到目前内存的温度状态。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/5c044143-8d88-4810-87c1-281f5ac3c8e0.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="547" src="//img1.mydrivers.com/img/20250526/S5c044143-8d88-4810-87c1-281f5ac3c8e0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 与 CPU 不同，内存在上升到 60-70℃ 后，便开始不稳定了。&lt;/p&gt;
+&lt;p&gt;而如今的 DDR5 ，因为频率高，发热自然也高，导致其很容易冲上高温。这也是市场上绝大多数的内存条都安装了散热马甲的原因之一。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="466" src="//img1.mydrivers.com/img/20250526/99bbaa16-8a6f-4b9e-8e63-0a12c850b297.png" w="425"&gt;&lt;/p&gt;
+&lt;p&gt;而插满 4 根后，发热量也理所当然翻了个倍。尤其是 4 根内存的紧密排列导致中间两根内存的散热条件显著恶化。&lt;/p&gt;
+&lt;p&gt;这也进一步加剧了 DDR5 很难 4 根跑高频率的问题。&lt;/p&gt;
+&lt;p&gt;也难怪最近 B 站能见到一些"内存散热改装教程"，甚至有厂家开始专门做"内存散热模块"了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/431bd656-6715-4212-9656-5dd18fdbc34f.jpg" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="536" src="//img1.mydrivers.com/img/20250526/S431bd656-6715-4212-9656-5dd18fdbc34f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果差友们真的要插满 4 根内存的话，最好也给内存区域放一个风扇来辅助降温！&lt;/p&gt;
+&lt;p&gt;除了温度，高频也会带来信号强度问题。简单来说，频率越高信号越弱。&lt;/p&gt;
+&lt;p&gt;如果信号强度不够，轻则软件报错，重则直接蓝屏。&lt;/p&gt;
+&lt;p&gt; 为了解决高频下的信号问题，工程师在新发布的 CUDIMM 内存上增加了一个新的组件：CKD 时钟驱动器芯片。&lt;/p&gt;
+&lt;p&gt;这个芯片有点像高速路上的服务区，信号在"服务区"放松整备一会。&lt;/p&gt;
+&lt;p&gt;而芯片则对信号进行幅度和保真度的恢复。就可以满血再出发了。这样就达到了增强高频信号的目的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/509bdc54-8716-485d-8f59-80f53b5d94e0.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="234" src="//img1.mydrivers.com/img/20250526/S509bdc54-8716-485d-8f59-80f53b5d94e0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这一设计不仅大幅提升了内存的极限频率，还提高了信号的稳定性。&lt;/p&gt;
+&lt;p&gt;但是由于增加了新的组件，导致想要完全发挥 CUDIMM 内存的性能，就只能更换支持 CUDIMM 的新处理器和主板。&lt;/p&gt;
+&lt;p&gt; 托尼看着自己的老家伙，默默流下了泪水。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;# 主板&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;然后就是主板了。大家都知道，CPU 和内存之间是通过导线连接来进行通信的，作为“高速公路”中最长的部分，主板布线直接决定了高频信号的传输质量。&lt;/p&gt;
+&lt;p&gt;而 DDR5 内存，由于其高频的特性对主板布线提出了更高的要求。&lt;/p&gt;
+&lt;p&gt;在插满 4 根内存时，这条“高速公路”的负载和复杂度会急剧上升，最终迫使内存降频以维持稳定。&lt;/p&gt;
+&lt;p&gt; 目前多数主板的内存走线设计以 Daisy Chain（菊花链）为主。&lt;/p&gt;
+&lt;p&gt;它的设计逻辑类似于“串联电路”，信号从 CPU 出发依次经过每一根内存插槽，形成链式连接。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/6a4a800b-3bb7-4581-a14f-973ccd91f80d.jpg" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="337" src="//img1.mydrivers.com/img/20250526/S6a4a800b-3bb7-4581-a14f-973ccd91f80d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;菊花链设计在只插两根内存时，可以看作这根内存独享这条链路。这样能得到更纯净和完整的内存高频信号。&lt;/p&gt;
+&lt;p&gt;不过具体是插在 A1 和 B1，还是插在 A2 和 B2 呢？这个还是有讲究的。&lt;/p&gt;
+&lt;p&gt;从下图我们可以看到，当内存插在 A1 时，信号会被 A1 到 A2 这段"残线"所影响。&lt;/p&gt;
+&lt;p&gt;对于高频信号来说，这些残线就像天线一样，对其他部分进行干扰。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/7378cdf7-a539-49e2-aede-65bed76c9041.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="333" src="//img1.mydrivers.com/img/20250526/S7378cdf7-a539-49e2-aede-65bed76c9041.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而内存插在 A2 / B2 时，内存到控制器之间是一条完整的线路，此时没有残线干扰。这也是厂商推荐内存优先插在 2 / 4 内存槽的原因。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/47af652d-91f5-4cd8-bfd7-a5e2dd4b087f.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="333" src="//img1.mydrivers.com/img/20250526/S47af652d-91f5-4cd8-bfd7-a5e2dd4b087f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="32" src="//img1.mydrivers.com/img/20250526/aceb4fd4-3bf5-4075-aa3e-4f7789a675ed.png" w="35"&gt;&lt;/p&gt;
+&lt;p&gt; 但是，当插满 4 根时，每条菊花链所共享的这一段线路，信号干扰会更加严重，这样内存也就很难达到厂商宣传的频率。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/465afb25-fcec-4736-9b94-4f5330af0633.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="333" src="//img1.mydrivers.com/img/20250526/S465afb25-fcec-4736-9b94-4f5330af0633.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不过，主板厂商也尝试通过更多层数的 PCB（印制电路板）来解决信号干扰问题。&lt;/p&gt;
+&lt;p&gt;简单来说，PCB 的层数越多，就可以给高速信号提供专用的层进行布线，从而保证更好的信号完整性。&lt;/p&gt;
+&lt;p&gt;就相当于给内存到 CPU 之间专门修了一条 "高架桥"，内存信号就不用在 "地面" 和其他信号抢占车道了。&lt;/p&gt;
+&lt;p&gt; 但这并不意味着层数越多越好：随着层数的增加，其成本、设计复杂度和维修难度也大大增加。&lt;/p&gt;
+&lt;p&gt;在主流价位段，我们能买到的主板基本是 4 层、6 层的 PCB 层数；8 层已经是越级的程度了。而 10 层PCB，基本只有各家的旗舰主板才会用到。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/6c8a797b-eab1-4ea6-accf-235c7cebd2d1.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="331" src="//img1.mydrivers.com/img/20250526/S6c8a797b-eab1-4ea6-accf-235c7cebd2d1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;# 处理器&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt; 通过主板线路，信号在"高速公路"上飞速行进，终于到达了终点：内存控制器。&lt;/p&gt;
+&lt;p&gt;内存控制器是负责 CPU 与内存进行沟通的模块。为了保持正常通讯，内存控制器的频率需要和内存一致，才能正常运行。&lt;/p&gt;
+&lt;p&gt;差友可简单理解为跳绳：大家一起跳一起落才能不被绳子绊倒。&lt;/p&gt;
+&lt;p&gt;但是，如今内存控制器的速度拖后腿了，它远远跟不上内存的提升速度。&lt;/p&gt;
+&lt;p&gt;但凡内存"跳快一点"，内存控制器就要"扑街"了。&lt;/p&gt;
+&lt;p&gt; 于是人们想了一个办法：一个跳绳的周期里，内存自己多跳几次，只要保证控制器跳的时候，内存也刚好跳就行。&lt;/p&gt;
+&lt;p&gt;这就需要保持内存频率是内存控制器的整数倍。&lt;/p&gt;
+&lt;p&gt;比如托尼现在用的这台电脑，点开 CPU-Z，可以看到内存频率刚好是控制器频率的 2 倍，这就是所谓的"内存分频"。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="402" src="//img1.mydrivers.com/img/20250526/8c884e58-98e9-40b4-a84c-7ff5ec0514ab.png" w="403"&gt;&lt;/p&gt;
+&lt;p&gt;而进入到进入主板 BIOS 设置，我们能够看到这里的 Gear 模式。而 Gear2 代表了分频的倍数-- 2 倍就是 1 : 2 了嘛！&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250526/20bf0cb0-e381-4a14-b605-a354b5bb9c19.png" target="_blank"&gt;&lt;img alt="DDR5内存出很久了 可我仍然不建议你插满4根" h="283" src="//img1.mydrivers.com/img/20250526/S20bf0cb0-e381-4a14-b605-a354b5bb9c19.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但是，内存分频并没有完全解决问题。拿木桶原理来解释，就很好理解了：你内存再快，我内存控制器还是慢的，那么整体的速度也不会快到哪儿去了。&lt;/p&gt;
+&lt;p&gt;而且消费级处理器的内存控制器通常只支持双通道模式。简单来说，这相当于给 CPU 配备了两条独立的高速通道来连接内存条。&lt;/p&gt;
+&lt;p&gt; 理想情况下，每个通道对应一条内存是最优配置，对于内存控制器来说负载也刚刚好。&lt;/p&gt;
+&lt;p&gt;而如果插满四条内存，相当于一个内存控制器要同时伺候两条内存，其负载就大大提升了。&lt;/p&gt;
+&lt;p&gt;为了不让内存控制器"累趴下"，就只能选择让内存速度也降下来了。&lt;/p&gt;
+&lt;p&gt;说了这么多，托尼算是明白了，虽然厂商在主板和内存上都非常努力地进行优化，但恐怕短期内让 4 根 DDR5 内存都发挥厂商宣传的性能还是不太现实的。&lt;/p&gt;
+&lt;p&gt; 托尼在这里可要提醒各位差友了，现阶段，如果对内存容量有需求的话，最好先买两根大容量的。毕竟以后还要加内存的话，糟心事恐怕不会少！&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 22:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ndXlZc2VQdDFwbnhrTFB1UVI2eFltOXo4QnZ4RVEySnB4RW5MUzNHUUdMVXhHVTFMYXBiRWtBenEwb1duaG1oamR1b2RLUDY2RXV2ajhOMEY</guid></item><item><title>华为正式推出昇腾超节点技术：384颗自研芯片AI算力方案领先英伟达AMD一代！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE8zQWM3RElyc2dLUjBGT0RSQ3lzaFRBUkd3Vm5GVWxKMjhLdWhRRk9nd0t1VEwtaU1ZZ1J2aFhPcWhtREgyNmtQX1VpMno1OWx1YW5sM3dPLXo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;华为正式推出昇腾超节点技术：384颗自研芯片AI算力方案领先英伟达AMD一代！&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-26 06:52:36  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1049819-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月26日消息，在昇腾AI开发者峰会上，华为正式推出昇腾超节点技术。&lt;/p&gt;
+&lt;p&gt;据官方公告，&lt;strong&gt;华为的AI算力集群解决方案CloudMatrix 384，基于384颗昇腾芯片构建，通过全互连拓扑架构实现芯片间高效协同，可提供高达300 PFLOPs的密集BF16算力，接近达到英伟达GB200 NVL72系统的两倍。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，CM384在内存容量和带宽方面同样占据优势，总内存容量超出英伟达方案3.6倍，内存带宽也达到2.1倍，为大规模AI训练和推理提供了更高效的硬件支持。&lt;/p&gt;
+&lt;p&gt;尽管单颗昇腾芯片性能约为英伟达Blackwell架构GPU的三分之一，但华为通过规模化系统设计，成功实现整体算力跃升，并在超大规模模型训练、实时推理等场景中展现更强竞争力。&lt;/p&gt;
+&lt;p&gt;按照国外投行的说法，&lt;span&gt;&lt;strong&gt;华为的规模化解决方案“领先于英伟达和AMD目前市场上的产品一代”，并认为中国在AI基础设施上的突破将对全球AI产业格局产生深远影响。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;有趣的是，之前美国商务部出台了新规，其中就包含封锁华为昇腾AI芯片，如果违反了上述细则，最高可以面临20年的监禁，这也引来了外界的热议，不过在专家看来，这也算是变相对华为技术实力的认可。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250526/37c45c58347b4e43ab5a857823ae4c07.jpg" target="_blank"&gt;&lt;img alt="华为正式推出昇腾超节点技术：384颗自研芯片AI算力方案领先英伟达AMD一代！" h="450" src="//img1.mydrivers.com/img/20250526/s_37c45c58347b4e43ab5a857823ae4c07.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 22:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8zQWM3RElyc2dLUjBGT0RSQ3lzaFRBUkd3Vm5GVWxKMjhLdWhRRk9nd0t1VEwtaU1ZZ1J2aFhPcWhtREgyNmtQX1VpMno1OWx1YW5sM3dPLXo</guid></item><item><title>北斗和GPS競爭？專家解析北斗短板及風險 - 大紀元</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlWS1naTQ5YXUtRkJ2Y1RqcjN6OHhLWXBKWVoyakVkWDhIclBxUmVtOFhyazVael85UUI4eUFmQXZLNHlHMFdtVURCZi1LX28yZTVRMVZEMC11MzJXUUk4SdIBZkFVX3lxTFBHM1ZFeXBUY19zRzJaaE5LYWZycUdLRjl0YXZoSk5GbXppeXVSY0NFM0tiTlNlazhIc0JzTjdsTXhYZUtVV3RBdjdoVEV2UlNKeV9ob0kyalFfeUNOa1RBVHhFR0dIQQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="artbody" class="post_content" itemprop="articleBody"&gt;
+					
+					&lt;p&gt;【大纪元2025年05月25日讯】（大纪元记者宋唐、易如采访报导）最近，中共的北斗导航系统又成为热点。5月20日，针对两天前中共发布《2025中国卫星导航与位置服务产业发展白皮书》，中共外交部发言人毛宁辩称，中共的科技创新和产业发展从不针对谁，更无意挑战谁。&lt;/p&gt;
+&lt;p&gt;不过，众多的事实表明，中共自上世纪末启动北斗研发及今天向全球推广该系统，挑战美国的目标非常明显，并为此开发双向信息传递功能，这些也正是北斗的短板及风险所在。&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;北斗vs GPS   &lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;目前全球卫星导航系统（GNSS）有四大供应商。&lt;/p&gt;
+&lt;p&gt;始于1978年、1995年实现全球覆盖的美国GPS，一直是世界最可靠、最精准、最值得信赖的定位与导航系统。2018 年美国发射最新的GPS III卫星，将精度提高了3倍，抗干扰能力提高8倍，并且航天器使用寿命更长。&lt;/p&gt;
+&lt;p&gt;目前，GPS民用免费全球定位服务提供小于2.2米的定位精度，精确定位服务仅限于美军、美国联邦机构以及部分盟军和政府。&lt;/p&gt;
+&lt;p&gt;诞生于前苏联时代的格洛纳斯（GLONASS）系统，研发仅比美国GPS 晚3年，第二代 2011 年 12 月 日投入使用，拥有24颗卫星的星座。&lt;/p&gt;
+&lt;p&gt;欧洲的伽利略系统主要用于民用，提供开放的、免费的公共服务，2023年推出高精度服务（HAS），目标定位精度为水平20厘米、垂直40厘米。欧盟宣称该服务是世界上最精确的服务。&lt;/p&gt;
+&lt;p&gt;相较而言，中共的北斗系统2000 年北斗一号卫星为中国大陆提供服务，2012 年北斗二号卫星为亚太地区提供服务，2020年7月第三代北斗三号才全面启动全球服务。&lt;/p&gt;
+&lt;figure id="attachment_14393576" aria-describedby="caption-attachment-14393576" class="wp-caption alignnone"&gt;&lt;a target="_blank" href="https://i.epochtimes.com/assets/uploads/2024/12/id14393576-732257.jpg"&gt;&lt;img decoding="async" class="size-medium_vertical wp-image-14393576" src="https://i.epochtimes.com/assets/uploads/2024/12/id14393576-732257-600x400.jpg" alt=""&gt;&lt;/a&gt;&lt;figcaption id="caption-attachment-14393576" class="wp-caption-text"&gt;全球卫星定位系统（GPS）示意图。（大纪元制图）&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;而且与西方国家不同，北斗计划更是共产中国的面子工程，中共举国之力发展北斗系统，目的是要挑战美国的GPS。&lt;/p&gt;
+&lt;p&gt;目前，中共北斗系统由 56 颗卫星组成，并由 120 个地面站提供支持，在卫星及地面站数量上超过GPS。&lt;/p&gt;
+&lt;p&gt;哈佛大学贝尔弗科学与国际事务中心的2023年一份报告称，北斗覆盖全球的卫星定位系统已经足够精确，在世界多个地区的表现甚至超过 GPS。&lt;/p&gt;
+&lt;p&gt;据中共卫星导航系统管理办公室（CSNO）报告，北斗定位精度2023年10月份达到了2.5米的水平，定位精度仅排在第三。&lt;/p&gt;
+&lt;p&gt;这些实时定位数据仅涉及到民用，军用方面的数据尚不清楚，不过可以从各国导弹命中目标的精确度看出一二。&lt;/p&gt;
+&lt;figure id="attachment_14276207" aria-describedby="caption-attachment-14276207" class="wp-caption alignleft"&gt;&lt;a href="https://i.epochtimes.com/assets/uploads/2024/06/id14276207-690566-300x200.jpg" target="_blank" rel="noreferrer noopener"&gt; &lt;img decoding="async" class="size-small wp-image-14276207" src="https://i.epochtimes.com/assets/uploads/2024/06/id14276207-690566-300x200.jpg" alt=""&gt;&lt;/a&gt;&lt;figcaption id="caption-attachment-14276207" class="wp-caption-text"&gt;国防安全研究院战略安全与资源研究所长苏紫云资料照。（吴旻洲／大纪元）&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;台湾国防安全研究院战略与资源所所长苏紫云对大纪元表示，目前看起来在数量上北斗居于优势。GPS大概是24枚到28枚之间，但美国因为军事机密的需求、有些刻意隐瞒数量，没有公布细部的资料。&lt;/p&gt;
+&lt;p&gt;“俄罗斯跟欧洲的卫星系统一样，卡在数量跟价格问题。在技术方面稍微领先中共的北斗，在性能上面如果欧洲打80分、 北斗只有70分。”&lt;/p&gt;
+&lt;p&gt;苏紫云表示，无论如何，定位卫星数量越多，定位精度会更稳定、抗损的能力会更好。主要还是因为技术比较落后，用数量来弥补技术上的代差。就跟它的军队一样采用人海战术，现在在太空中用星海战术了。&lt;/p&gt;
+&lt;p&gt;他指出，北斗最核心的问题还是芯片，如果美国GPS或欧洲系统，可以用先进晶片的话，就会取代数量上的差异了。&lt;/p&gt;
+&lt;p&gt;国防安全研究院中共政军与作战概念研究所助理研究员王绣雯对大纪元表示，虽然卫星也不需要用到最先进芯片，中国“北斗星通”等公司也可以生产北斗芯片和终端设备，但是随着科技快速进展及美国对中共偷取技术的防范，北斗芯片可能无法配合用户最新需求，包括大量资料传输、储存等。&lt;/p&gt;
+&lt;p&gt;“以定位精度而言GPS仍然宝刀未老，实时性也以GPS较佳，用户数量则是GPS遥遥领先。”她说。&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;北斗不可能取代GPS&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;对于2020年完成的第三代北斗系统，中共将其描述为“改革开放40年来取得的重要成就之一”，陆媒也鼓吹北斗系统“亮剑”GPS。&lt;/p&gt;
+&lt;p&gt;但事实上，尽管中共向国际机构大力宣传北斗系统，并通过一系列投资、补贴和捐赠来鼓励发展中国家采用北斗系统，但众多国际用户会考虑地缘政治因素，仍然会坚持使用美国的GPS 。&lt;/p&gt;
+&lt;p&gt;美国国防大学2022年报告指出，北斗系统很可能只是大多数导航定位应用套件中的一种工具，但不太可能取代GPS成为全球军用或民用GNSS的首选。&lt;/p&gt;
+&lt;figure id="attachment_14365226" aria-describedby="caption-attachment-14365226" class="wp-caption alignnone"&gt;&lt;a target="_blank" href="https://i.epochtimes.com/assets/uploads/2024/11/id14365226-2024_Subaru_Forester_Touring_24-e1730850470965.jpg"&gt;&lt;img decoding="async" class="size-medium_vertical wp-image-14365226" src="https://i.epochtimes.com/assets/uploads/2024/11/id14365226-2024_Subaru_Forester_Touring_24-600x400.jpg" alt=""&gt;&lt;/a&gt;&lt;figcaption id="caption-attachment-14365226" class="wp-caption-text"&gt;车内GPS。（李奥／大纪元）&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;众多专家也得出了相似的结论。&lt;/p&gt;
+&lt;p&gt;加州大学洛杉矶分校（UCLA）地理空间技术教授Michael Shin对《南华早报》表示：北斗系统“不太可能”在很大程度上取代主流导航系统，“美国的服务在全球范围内得到广泛应用，并深度融入众多行业，且以可靠性著称。”&lt;/p&gt;
+&lt;p&gt;新加坡国立大学地理学副教授Godfrey Yeung也认为，中国网络对于国际用户来说只是“次要选择”，“北京不应将其定位于挑战现状，欧洲和俄罗斯未能挑战GPS，因为后者自20世纪80年代以来一直可以自由使用。”&lt;/p&gt;
+&lt;p&gt;BBC报导，北斗存在一个缺陷——双向传输过程，这可能会影响精度，并占用更多频谱带宽。相比之下，GPS 设备不必将信号传回卫星。&lt;/p&gt;
+&lt;p&gt;“让它运转起来是一回事，让它持续运转并在用户中赢得信任又是另一回事。”安全世界基金会主任布莱恩‧威登（Brian Weeden）说，GPS 最大的优势在于其过去几十年来的一致性和可靠性。“它不仅能发出准确的信号；而且几十年来几乎没有间断过。”&lt;/p&gt;
+&lt;figure id="attachment_14141744" aria-describedby="caption-attachment-14141744" class="wp-caption alignright"&gt;&lt;a href="https://i.epochtimes.com/assets/uploads/2023/12/id14141744-2312220327502378.jpg" target="_blank" rel="noreferrer noopener"&gt; &lt;img decoding="async" class=" wp-image-14141744" src="https://i.epochtimes.com/assets/uploads/2023/12/id14141744-2312220327502378.jpg" alt=""&gt;&lt;/a&gt;&lt;figcaption id="caption-attachment-14141744" class="wp-caption-text"&gt;台湾国防院中共政军与作战概念研究所助理研究员王绣雯。（王绣雯提供）&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;王绣雯表示，北斗做为全球导航系统的新品牌，目前只看到部分发展中国家使用，论用户广度远远不及GPS。“我觉得，以一般民生用途而言，北斗顶多只能做为GPS辅助系统，就像苹果手机可以选择卫星定位系统一样，在救难救急时派上用场。”&lt;/p&gt;
+&lt;p&gt;苏紫云表示，整个势头来看，西方还是居于领先的地位。中共它会在几个明星项目上面去抢出头，包括登陆火星、 登陆月球等等。大概是以形象工程为主。&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;北斗的安全风险&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;中共媒体经常宣传，北斗卫星的双向信息传递功能是GPS所不具备的。中共央视曾报导称：通俗地说，你不仅可以通过北斗知道你在哪里，还可以通过该系统告诉别人你在哪里。&lt;/p&gt;
+&lt;p&gt;然而，这种能力引发了严重的安全担忧。&lt;/p&gt;
+&lt;p&gt;CNBC报导，随着北斗系统最近的改进，它可能会成为一种监视设备，其双向消息传递功能会泄露用户的位置及其它类型的数据。随着手机应用程序的不断增长，以及使用北斗系统的自动驾驶汽车的增加，越来越多的用户数据正在被传输。&lt;/p&gt;
+&lt;p&gt;台湾2016年通过的一项立法也指出，双向通信功能可能被用于网络攻击。该立法建议政府雇员避免使用依赖北斗导航系统的智能手机。&lt;/p&gt;
+&lt;p&gt;美国国防大学2022年报告显示，北斗通过双向通信来提高定位精度，却以泄露用户位置和高昂的扩展成本为代价。地面站使用来自北斗卫星的信号计算用户的位置。然而，在设有地面站的地方使用北斗系统，中共政府就能够监控用户的位置。&lt;/p&gt;
+&lt;p&gt;报告认为，北斗系统不会对美国用户构成安全威胁，因为美国不允许在其领土内设立北斗地面站；但对于参与中共“一带一路”倡议并利用地面站提供的额外功能的国家来说，这些国家正在牺牲隐私以换取更好的服务。&lt;/p&gt;
+&lt;p&gt;根据哈佛大学贝尔弗中心2023年报告，这些地面系统和互连的中共 GNSS 接收器，理论上可能包含后门和其它恶意功能，中共政府可以利用这些后门和其它恶意功能开展间谍活动、监视、数据窃取、干扰和网络攻击。&lt;/p&gt;
+&lt;p&gt;苏紫云表示，北斗的双向传输的技术部分来自于欧洲系统。欧洲卫星也可以上传部分简讯，原本用意是良善的，如果有人遇到迷路或要求救，可以快速传输求救讯号。&lt;/p&gt;
+&lt;p&gt;他说，中共获得这个技术之后把它扩大之。如果说手机跟中共北斗建立双向联系的话，当然就可以透过内部后门程式，陆陆续续把手机里面的资讯，点点滴滴的传回给北斗地面站，再汇送到北京的大数据资料库，就可以锁定特定的个人捞取机密了。&lt;/p&gt;
+&lt;p&gt;王绣雯表示，北斗为何要发展出全球独一无二的双向通讯功能？除了军事应用和所谓的救急救难之外，对于无时不刻都想控制人民的中共政府而言，北斗无疑是监控工具。使用北斗，你的位置和讯息就会被传到北京的遥控中心，然后经过AI和大数据分析，使中共掌握你的各种位置资讯等，这对西方国家人民，当然是无法忍受的事情。&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;美中太空争霸&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;中共声称北斗发展从不针对谁，更无意挑战谁。但据《南华早报》报导， 2013 年中共与泰国签署北斗协议时，当时武汉大学的一位北斗专家表示，“如果泰国能够接受北斗，其它国家可能会效仿，美国在该地区的政治、经济和军事力量将会削弱”。&lt;/p&gt;
+&lt;p&gt;因此，北斗计划的战略定位从一开始就很明确，以美国为目标。&lt;/p&gt;
+&lt;p&gt;中共最初20 世纪 80 年代开始构思建立卫星导航系统，但其动力则来自于美国在沙漠风暴行动中首次实战测试 GPS。另一个催化剂是 1993 年的“银河号事件”，此后不久中共1994年启动了研发工作。而1995—96年第三次台海危机期间，中共一枚飞越台湾海峡的弹道导弹失去了控制，更加让中共认定这一决定是正确的。&lt;/p&gt;
+&lt;figure id="attachment_14280892" aria-describedby="caption-attachment-14280892" class="wp-caption alignnone"&gt;&lt;a target="_blank" href="https://i.epochtimes.com/assets/uploads/2024/07/id14280892-1200px-USS_Wisconsin_BB-64_launching_Tomahawk.jpg"&gt;&lt;img decoding="async" class="size-medium_vertical wp-image-14280892" src="https://i.epochtimes.com/assets/uploads/2024/07/id14280892-1200px-USS_Wisconsin_BB-64_launching_Tomahawk-605x400.jpg" alt="1991年1月18日，美军战列舰威斯康星号（BB-64）在沙漠风暴行动中发射BGM-109战斧巡航导弹，打击伊拉克境内目标。(美国海军/公有领域)"&gt;&lt;/a&gt;&lt;figcaption id="caption-attachment-14280892" class="wp-caption-text"&gt;1991年1月18日，美军战列舰威斯康星号（BB-64）在沙漠风暴行动中发射BGM-109战斧巡航导弹，打击伊拉克境内目标。(美国海军／公有领域)&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;如今，在美中紧张对峙情势下，有着更浓的火药味。&lt;/p&gt;
+&lt;p&gt;《南华早报》援引浙江科技大学一名不愿透露姓名的学者的话称：“现在，中国的一些国产设备要么不支持美国的GPS，要么出于安全原因故意不使用，尤其是当政府机构、国有企业或军事单位需要导航服务或超精确地图时。”&lt;/p&gt;
+&lt;p&gt;美国Zephr 的首席执行官兼联合创始人肖恩‧戈尔曼（Sean Gorman）在《太空新闻》（Space news）撰文说，尽管美国和欧洲正在寻求对全球导航卫星系统采取更具合作性的方式，但中共却将其视为与其更大的地缘政治战略相关的零和游戏。&lt;/p&gt;
+&lt;p&gt;换句话说，中共让其它国家使用北斗系统，企图增强强制和胁迫筹码。&lt;/p&gt;
+&lt;p&gt;王绣雯表示，中共希望北斗成为其“一带一路”的基础建设，进而扩大其国际影响力。但从北斗系统到目前为止的进展来看，似乎距离此目标还很遥远。中共可以强制其国内全面使用北斗系统，并且以廉价来吸引发展中国家，但是这可能反而将中国或其它使用北斗的国家隔离在GPS全球系统之外。&lt;/p&gt;
+&lt;p&gt;苏紫云表示，可以把北斗系统想像成是一个数位纳粹、数位盖世太保，二次大战的时候，盖世太保还得派人跟踪。现在如果用了中共的数位产品，就等于一个贴身的盖世太保。&lt;/p&gt;
+&lt;p&gt;他认为，在未来的情况就是，西方国家一律要跟红色资讯、红色数位切割开来，所以两个数位阵营已经是存在了。&lt;/p&gt;
+&lt;p&gt;责任编辑：林妍#&lt;/p&gt;
+&lt;span id="epoch_socail_span"&gt;&lt;/span&gt;					
+					&lt;p id="below_article_ad"&gt;&lt;/p&gt;
+				&lt;/div&gt;
+									&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>大紀元</author><pubDate>Sun, 25 May 2025 16:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBlWS1naTQ5YXUtRkJ2Y1RqcjN6OHhLWXBKWVoyakVkWDhIclBxUmVtOFhyazVael85UUI4eUFmQXZLNHlHMFdtVURCZi1LX28yZTVRMVZEMC11MzJXUUk4SdIBZkFVX3lxTFBHM1ZFeXBUY19zRzJaaE5LYWZycUdLRjl0YXZoSk5GbXppeXVSY0NFM0tiTlNlazhIc0JzTjdsTXhYZUtVV3RBdjdoVEV2UlNKeV9ob0kyalFfeUNOa1RBVHhFR0dIQQ</guid></item><item><title>机器人摔倒、KO、站起再战，格斗大赛打出了宇树的技术底牌？ - 凤凰网</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE8zUWdfOUIweG1kQnhNbUl4MGUxSHdkSEZlMHA2d3FveVhHV3JZaWhzd3UyOEk2UUp0RmIwd0hIam1SXzYxQ3pJN3VvNDI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;5月25日晚上八点半，由央视主办的“CMG世界机器人大赛•系列赛——机甲格斗擂台赛”正式打响。四位来自不同领域的非专业选手操控了四台宇树G1机器人登上擂台，展开三轮、共十二回合的格斗比拼。最终，一位人工智能博主操控的“AI策算师”击败了所有对手，赢得冠军。&lt;/p&gt;&lt;p&gt;这场直播被主持人多次强调是“科普展示赛”。但在这场看似以展示为主的机器人格斗赛背后，是一场公开的技术验证秀。在冲撞、失衡、被“KO”的场景中，机器人暴露了当前动态控制、感知延迟等问题，也展现出抗冲击性、多模态感知与快速恢复能力。也许比赛是娱乐赛，尽管比赛是“表演赛”，但它也成为了检验机器人真实表现的测试场。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;选手遥控机器人对战，十二回合决胜&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;5月25日下午两点半，在杭州的一场机器人产业与资本对接会上，头戴拳击头罩，手戴红色拳套的宇树G1成为了不折不扣的“明星迎宾”。手持遥控器的操作者不断让G1摆出拳击的准备姿势，与来往的投资人、产业创业者合影。&lt;/p&gt;&lt;p&gt;“为了看晚上的直播，我推了一个饭局。”一位从上海赶来的投资者告诉第一财经记者，自己已经定好了闹钟，准时收看今晚格斗比赛。&lt;/p&gt;&lt;p&gt;六个小时以后，“CMG世界机器人大赛•系列赛——机甲格斗擂台赛”在杭州正式开始。由古风博主、机器人博主等“圈外素人”操作的四个G1机器人在擂台中分成两组进行对抗。G1是宇树在2024年推出的人形机器人，身高1.3米左右，体重35公斤，有23个自由度，膝关节最大扭矩90N.m。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/29C9421A93E818EEE51099FBEFDAD1784B5A0927_size1413_w2556_h1179.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="选手正在场外控制G1。图片来源：央视直播截图"&gt;&lt;/p&gt;&lt;p&gt;尽管在正式比赛前，主持人展示了机器人的语音控制、跟随能力，但第一财经记者注意到，在实际比赛当中，仍然由四位选手遥控操作G1机器人。在人类拳击比赛的规则之上，本次机器人格斗比赛的规则更为简洁：机器人击中头部和躯干为有效击打。手部动作有效击打计1分，腿部动作有效击打计3分，击中四肢不计分。&lt;/p&gt;&lt;p&gt;正式的比赛分为三轮，每轮分为三个回合。根据三回合累计总积分，积分最高的机器人最终获胜。在经过十二回合的比赛之后，机甲格斗擂台赛终于有了胜出者——由一位人工智能博主控制的“AI策算师”最终获得了冠军。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;数次被“KO”，机器人有“皮外伤”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在十二回合的比赛中，第一财经的记者观察到，在人类遥控操作之下的机器人也会遇到“意外情况”。比如主动攻击的机器人反而扑空、失去稳定性倒地，被对手“KO”；机器人退后寻找角度，却意外被擂台围绳缠住；两个机器人在缠斗当中意外卡住，最终裁判出手将其分开…….&lt;/p&gt;&lt;p&gt;“这其实暴露了机器人动态运动控制与实时感知的不足。”科技部国家科技专家、中国计算机学会智能机器人专业委员会委员周迪教授告诉第一财经记者，尽管本次比赛采用了遥操，但这跟传统遥控玩具的控制系统还是有一定的差别。&lt;/p&gt;&lt;p&gt;他表示，本次宇树的遥操作方式融合了动作控制、智能决策等多种算法模型。当操作人员发出“勾拳”“踢腿”等指示的时候，机器人的感知系统会迅速定位对手并构建地图数据，决策系统根据学习训练评估环境、目标和指令，生成可执行策略路径，最后由控制执行系统完成动作。&lt;/p&gt;&lt;p&gt;而扑空、踉跄等状态背后，则有动作规划、传感器等模块的原因。周迪判断，尽管G1能够通过强化学习掌握一些格斗招式，但在动态对抗中，从传感器捕捉对手位置到关节执行动作存在毫秒级延迟，导致挥拳时机偏差。“G1的视觉和激光雷达数据在复杂对抗中可能出现噪声。”他认为，这也可能影响对手位置的实时定位，尤其是在快速移动或遮挡场景下。&lt;/p&gt;&lt;p&gt;和此前展示的跑步、跳舞、后空翻等所处的环境不同，G1在本次格斗比赛中，需要面临的是随时会给自己施加干扰的动态互动环境。高度的对抗性给整个系统的稳定性带来更多的挑战。第一财经记者注意到，上场的机器人不少都有“皮外伤”。部分G1的金属外壳在训练中遭到了外界的击打和剐蹭，留下了深浅不一的划痕。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/C0459A6F244CF7A021250F86CDFFCA9C1F4315AA_size1610_w2556_h1179.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="G1的皮外伤。图片来源：央视直播截图。"&gt;&lt;/p&gt;&lt;p&gt;“G1的运动性能之所以不太受到这些‘皮外伤’的影响，除了是因为内部关节模组、电机等核心零部件的稳定之外，还与其算法的抗冲击性、多模态感知协同等有关。”周迪表示，格斗中的碰撞和冲击测试能暴露电机、传感器等硬件的薄弱环节，推动抗干扰设计和材料升级，“只有在软硬件的协调之下，G1才能顺利地打完这场比赛”。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;拳击赛成技术验证“秀场”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在本次比赛当中，央视的主持人和解说员多次强调，这场格斗赛仅仅是一个“科普展示赛”。一位宇树的投资人告诉第一财经记者，尽管本次比赛也能够为宇树带来一定的C端流量和品牌效应，但更重要的是向观众传播机器人文化，并展示宇树在软硬件上的能力。&lt;/p&gt;&lt;p&gt;周迪表示，格斗场景因其实时互动、击打等特性，是一次暴露在公众面前的压力测试。“其实整体来看，这次的压力测试还不算‘上强度’。”记者注意到，尽管打了十二个回合，但每个回合只有两分钟。&lt;/p&gt;&lt;p&gt;格斗要求机器人在快速变化的环境中实时调整姿态、预判对手意图，周迪说，这种能力可迁移至工业中的协作机器人避障、救援机器人应对突发障碍等场景。“格斗场景能全面检验机器人的机械结构、运动控制、传感器融合和智能决策能力，例如动态平衡、抗冲击性、多模态感知协同等。”他认为，这些技术指标能够在未来直接关联工业、救援等实际应用的可靠性。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/2A0959BD6966D24392102FABE2F318689B24AD4D_size1666_w2556_h1179.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="有机器人被围绳绊倒。图片来源：央视直播截图。"&gt;&lt;/p&gt;&lt;p&gt;此外，本次宇树没有选择在春晚出现的H1全尺寸人形机器人。H1身高超过一米七，重量超过45公斤。机器人算法工程师Jean告诉第一财经记者，G1的轻量化构型让其在算法调优的效率上更有优势，更适合快速迭代强化学习策略。“G1因为它的构型原因，运动更加灵活，H1的高负载能力在工业上会更有优势，不适合拳击的场景。”&lt;/p&gt;&lt;p&gt;“宇树这次应该也会针对拳击中特定的场景进行专门的算法优化。”Jean推测，宇树应该针对格斗场景进行了特定的动态平衡补偿算法和抗干扰传感器融合方案，提升机器人在对抗中的容错率。第一财经记者观察到，除了在“KO”场景倒地不起外，大部分时间，G1机器人倒地后，都能在5秒钟之内迅速站立并稳定。&lt;/p&gt;&lt;p&gt;比赛虽为“秀场”，却不仅是表演。Jean认为，这场比赛是一次全面检验机器人智能硬件和软件协同能力的窗口。“现实地来说这种‘人机共战’的方式，也大概率会成为未来5-10年的机器人主流操作形态。”&lt;/p&gt;&lt;p&gt;乔心怡&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sun, 25 May 2025 16:34:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE8zUWdfOUIweG1kQnhNbUl4MGUxSHdkSEZlMHA2d3FveVhHV3JZaWhzd3UyOEk2UUp0RmIwd0hIam1SXzYxQ3pJN3VvNDI</guid></item><item><title>北斗和GPS竞争？专家解析北斗短板及风险 | “北斗”系统 | 精确定位 | 全球卫星导航系统 | 大纪元 - 大紀元</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlWS1naTQ5YXUtRkJ2Y1RqcjN6OHhLWXBKWVoyakVkWDhIclBxUmVtOFhyazVael85UUI4eUFmQXZLNHlHMFdtVURCZi1LX28yZTVRMVZEMC11MzJXUUk4SQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="artbody" class="post_content" itemprop="articleBody"&gt;
 					
 					&lt;p&gt;【大纪元2025年05月25日讯】（大纪元记者宋唐、易如采访报导）最近，中共的北斗导航系统又成为热点。5月20日，针对两天前中共发布《2025中国卫星导航与位置服务产业发展白皮书》，中共外交部发言人毛宁辩称，中共的科技创新和产业发展从不针对谁，更无意挑战谁。&lt;/p&gt;
 &lt;p&gt;不过，众多的事实表明，中共自上世纪末启动北斗研发及今天向全球推广该系统，挑战美国的目标非常明显，并为此开发双向信息传递功能，这些也正是北斗的短板及风险所在。&lt;/p&gt;
@@ -160,7 +1053,26 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 25 May 2025 15:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPNGtIMHVuczl0ckh2bDdDZ2piQ0s5M2hfcl9qNUFQdnZxM1BYUTBhT1JuU0tfVkxtcWFINDlWVVB2eFVXQTFEV2N2TTlIYjNtT2J6RGJYUjhUa3NLc0p4VEJuLW00eU9pbmtjNTVSQ3VzN29IU2V5UkQxaC1OZ2FQLWc3bHo0ekU</guid></item><item><title>不知名小厂也来做锐龙AI Max+ 395迷你机：张口就要1.2万 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lejVoMGtoTFFaTl9YNVFFQXd4VEVsd0F4NEh3dU1VQXEwSWYzWDNkYml1dUxCVUc0YmRUbjdJSXdXWWVhVEkxZ1FudVp2Wk1GUHh0UjFRdzY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 25 May 2025 15:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPNGtIMHVuczl0ckh2bDdDZ2piQ0s5M2hfcl9qNUFQdnZxM1BYUTBhT1JuU0tfVkxtcWFINDlWVVB2eFVXQTFEV2N2TTlIYjNtT2J6RGJYUjhUa3NLc0p4VEJuLW00eU9pbmtjNTVSQ3VzN29IU2V5UkQxaC1OZ2FQLWc3bHo0ekU</guid></item><item><title>周末巨震！近9万人爆仓 发生了什么？ - 东方财富</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTFBBblNjUkE2VmhHbzVmZW5YWm9Dc3VRdURGZUxnY1ZVWnZpamlXYmsyeFFsRTJHX1REUGpQaUl3THBMa3htWnFyd1lnQmhnREhJenNQUW03bnlBVExTTUVITg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
+        
+        &lt;p class="related"&gt;
+
+        &lt;/p&gt;
+
+        
+
+        
+        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
+        &lt;p class="layer"&gt;&lt;/p&gt;
+        
+        
+        
+
+        
+
+        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Sun, 25 May 2025 14:55:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBBblNjUkE2VmhHbzVmZW5YWm9Dc3VRdURGZUxnY1ZVWnZpamlXYmsyeFFsRTJHX1REUGpQaUl3THBMa3htWnFyd1lnQmhnREhJenNQUW03bnlBVExTTUVITg</guid></item><item><title>不知名小厂也来做锐龙AI Max+ 395迷你机：张口就要1.2万 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lejVoMGtoTFFaTl9YNVFFQXd4VEVsd0F4NEh3dU1VQXEwSWYzWDNkYml1dUxCVUc0YmRUbjdJSXdXWWVhVEkxZ1FudVp2Wk1GUHh0UjFRdzY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月25日消息，这两年，迷你机市场空前活跃，尤其是在AMD锐龙的支持下，很多名不见经传的小厂也能第一时间推出最先进的迷你机产品。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;比如Bosgame，也趁热发布了一款顶级迷你机“M5”，配备了AMD旗舰级的锐龙AI Max+ 395处理器。&lt;/strong&gt;&lt;/p&gt;
@@ -181,7 +1093,80 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 14:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5lejVoMGtoTFFaTl9YNVFFQXd4VEVsd0F4NEh3dU1VQXEwSWYzWDNkYml1dUxCVUc0YmRUbjdJSXdXWWVhVEkxZ1FudVp2Wk1GUHh0UjFRdzY</guid></item><item><title>2299元 KTC新款27寸显示器首发2299元：2K 240Hz OLED屏 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tZUVLaVhZOU9PZTd5ZGFiVDRsX0JSRkdCa0pTWExPaklFM3hFOGcyUHU0V1hfR2Zhdkl1ZDdfSWVxeW1iT1hPOEVEVW54RzVLUUVmY0lzMWc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 14:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5lejVoMGtoTFFaTl9YNVFFQXd4VEVsd0F4NEh3dU1VQXEwSWYzWDNkYml1dUxCVUc0YmRUbjdJSXdXWWVhVEkxZ1FudVp2Wk1GUHh0UjFRdzY</guid></item><item><title>全球首场人形机器人格斗大赛举行 宇树G1机器人“对打”多轮 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMiggFBVV95cUxPMU04ME5YYlc4cEJfTmdId0lHQlROdm1kTEl0MWU5Uy16WkNIR2ROSjNkOHNTaG00ZUpRb3lFeDdnNmg3UUFGaHdlZEVSZmVCVGNCLUt4TnNTbTNwejdzQU5RTmlza210VEFtd0lTSmdKNnpINzRsUW5FOVlnX3FwWVRB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　新浪科技讯 5月25日晚间消息，《CMG世界&lt;span id="stock_sz300024"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz300024/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;机器人&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz300024"&gt;&lt;/span&gt;大赛·系列赛》机甲格斗擂台赛今晚举行，这是全球首个以人形机器人为参赛主体的格斗竞技赛事。&lt;/p&gt;
+&lt;p&gt;　　比赛中，由不同团队操作的宇树G1人形机器人进行了多轮对抗，并连续施展了侧踢、膝踢、勾拳、组合拳等动作，展现出较强的稳定性、平衡性和敏捷性，比如机器人倒地后能迅速爬起。最后，由名为“AI策算师”的机器人夺冠。&lt;/p&gt;
+
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：王若云 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 25 May 2025 14:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiggFBVV95cUxPMU04ME5YYlc4cEJfTmdId0lHQlROdm1kTEl0MWU5Uy16WkNIR2ROSjNkOHNTaG00ZUpRb3lFeDdnNmg3UUFGaHdlZEVSZmVCVGNCLUt4TnNTbTNwejdzQU5RTmlza210VEFtd0lTSmdKNnpINzRsUW5FOVlnX3FwWVRB</guid></item><item><title>2299元 KTC新款27寸显示器首发2299元：2K 240Hz OLED屏 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tZUVLaVhZOU9PZTd5ZGFiVDRsX0JSRkdCa0pTWExPaklFM3hFOGcyUHU0V1hfR2Zhdkl1ZDdfSWVxeW1iT1hPOEVEVW54RzVLUUVmY0lzMWc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;2299元 KTC新款27寸显示器首发2299元：2K 240Hz OLED屏&lt;/p&gt;
           
@@ -372,7 +1357,9 @@
 &lt;p&gt;
 	虽说这很实用主义，也似乎带来了不少好处，但我也不好说这是否能算作一种进步。很明显，一个更神奇的未来已经开始向我们展开了——或许，这也并不会止于AI绘画这么简单吧。
 &lt;/p&gt;            &lt;/div&gt;
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 25 May 2025 13:29:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5HbHRZY0FQeXZ0WWZLdUpiYkFraTBjUGw5akZENWowTXdGOXlFWXZaaHhXbUxNX1hKZXR3ZG52c0ZHa1VJdXA0Z1pRNjFYZHQ4Zm1SakJFdTk</guid></item><item><title>小米家电“三年前三”的野望，美的、海尔、格力谁惧？ - 风闻</title><link>https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oZmpFZ3VRU2JkbGRmSG4xSkh1Q2U1dnUweHJsWGFYLTlBemtrcFlCM1lRVGdUaVdERHBidDZXZ1J0TlZlUnBOZEhxbWhaM0hRYU8zVU5GUjk3TFk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 25 May 2025 13:29:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5HbHRZY0FQeXZ0WWZLdUpiYkFraTBjUGw5akZENWowTXdGOXlFWXZaaHhXbUxNX1hKZXR3ZG52c0ZHa1VJdXA0Z1pRNjFYZHQ4Zm1SakJFdTk</guid></item><item><title>中国高考在即 AI押题模拟卷价达400人民币 - 联合早报</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTFBMVVgtZE1zR3F3c3c4dWxQUGhwY3FnNkYwMVoxaEI1RDdOSEdfampZSGtPRkF5aFRCT1FTanFaa0RsRUdFMy1aQVAxQzFLakI4Yi1tWmlTdzZRN0hFcnNqVklURnNoVldYcHc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;p&gt;（北京讯）中国全国高考将于6月7日至10日举行，模拟卷市场热度居高不下，用“AI（人工智能）预测”题目的模拟试卷更大受热捧，一份卷子售价可高达400元人民币（下同，约71新元）。&lt;/p&gt;&lt;p&gt;据中央广电总台中国之声报道，中国市场上模拟卷种类繁多，当中有一些还称由“名师”或AI来预测、押题。相较于一般几十元一份的试卷，这些押题试卷的售价甚至可飙升至三四百元。&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.zaobao.com.sg/realtime/china/story20250219-5899831" target="_blank" rel="nofollow"&gt;一份模拟卷能“押中”几题&lt;/a&gt;，是考生和家长会关心的指标。受访家长称，自己就是因看到网上宣传某些试卷押题很准，便心动购买了一套给孩子。 &lt;/p&gt;&lt;p&gt;不过，中国教育发展战略学会学术委员会委员陈志文表示，这些押题内容的背后暗藏的都是商业套路，考生和家长应保持理性，不要被商家过度宣传所迷惑。&lt;/p&gt;&lt;p&gt;他解释，高考在命题上讲究平稳，所考察的概念和题型往往变化不大，唯一未知的是参数变化。即便是在新高考地区也有适应性测试，知识点、题型与正式高考不会有太大区别。　&lt;/p&gt;
+    
+  &lt;p&gt;报道也引述江西省遂川中学教师袁媛指：“从往年情况看，这些押题卷所谓的‘押中’标准非常宽泛，只要涉及相同知识点都算押中了，这些知识点平时复习都会讲到，信这个，不如信自己和老师。”&lt;/p&gt;&lt;p&gt;袁媛提醒，考生不能把升学的希望寄托在这些所谓的“押题预测试卷”上。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Sun, 25 May 2025 12:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBMVVgtZE1zR3F3c3c4dWxQUGhwY3FnNkYwMVoxaEI1RDdOSEdfampZSGtPRkF5aFRCT1FTanFaa0RsRUdFMy1aQVAxQzFLakI4Yi1tWmlTdzZRN0hFcnNqVklURnNoVldYcHc</guid></item><item><title>小米家电“三年前三”的野望，美的、海尔、格力谁惧？ - 风闻</title><link>https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oZmpFZ3VRU2JkbGRmSG4xSkh1Q2U1dnUweHJsWGFYLTlBemtrcFlCM1lRVGdUaVdERHBidDZXZ1J0TlZlUnBOZEhxbWhaM0hRYU8zVU5GUjk3TFk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
 							&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525084946377.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;在定下“三年之内成为中国前三”的目标之后，小米作为搅局者发的挑战，对传统白电三巨头来说还是很有压力的。小米家电会把谁挤出局？或许业务结构单一的，压力会更大。&lt;/p&gt;&lt;p&gt;九黎 / 主编观点&lt;/p&gt;&lt;p&gt;原创ⓒ新熵  家电科技组&lt;/p&gt;&lt;p&gt;作者丨思原  编辑丨茯神&lt;/p&gt;&lt;p&gt;美的集团董事长方洪波在最近的一次采访中，不经意道出了小米做家电的野心——三年之内成为中国前三。面对当前行业里公认的三巨头（美的、海尔、格力），小米想挤下谁，也是外界所好奇的问题。&lt;/p&gt;&lt;p&gt;事实上，在很长一段时间里，国内家电行业的格局可以说十分固化，包括TCL、长虹在内的老牌企业，都很难分走三巨头的蛋糕，而大家也多少有些甘于现有格局，相安无事。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525084949130.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;小米作为赛道的后来者，带着互联网思维、强大的生态整合能力以及独特的性价比策略强势入局，甚至专门修建了一座智能家电工厂，其打法和决心无疑给家电行业带来了一些想象空间。&lt;/p&gt;&lt;p&gt;当然，三巨头各自的转型方向和自身优势也决定了他们面对小米时的不同处境。那么，在未来三年内，小米是否真的能够实现成为中国家电前三的目标？美的、格力、海尔之中，又有哪家最有可能被超越掉队？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;01&lt;/strong&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;strong&gt;&lt;strong&gt;小米凶猛，家电市场格局震荡&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;小米进入家电行业所应用的互联网思维，体现在对用户需求的精准把握和快速响应上。&lt;/p&gt;&lt;p&gt;当传统家电企业还在依赖线下渠道和传统营销模式时，小米利用线上平台，通过社交媒体营销、粉丝经济等方式，沿用手机领域的性价比策略，迅速拉近与年轻用户的距离，积累起庞大的用户群体。 &lt;/p&gt;&lt;p&gt;作为大家电领域的后起之秀，小米“冰空洗”产品在市场上“攻城略地”的速度令人刮目相看。今年一季度，小米旗下米家空调、冰箱、洗衣机的销量稳居全国第四，销售额同比增幅均在100%以上，其中洗衣机销售额增幅高达184.4%。 &lt;/p&gt;&lt;p&gt;而中怡康的数据显示，小米家电已经有4项品类是线上市场第一，分别是电视、净水器、电吹风、空气净化器。并且统计的11项品类中，10项都在增长，只有电视市场份额下滑了0.5%，但也是第一。另外的都是大幅度的增长，比如空调、冰箱、洗衣机、热水器等这些大家电，都是最低52.6%，最高216%的涨幅。&lt;/p&gt;&lt;p&gt;不过小米的家电生意成长性可观，渠道也存在结构性的不平衡。其各个家电的线下排名及市占率，几乎都在十名开外，即便是卖得最好的空调，份额也仅为1.67%。&lt;/p&gt;&lt;p&gt;毋庸置疑，线下是家电行业的主场，即便是小米，短时间也难以撼动这些行业老炮。不过小米也有自己的应对，就是加大线下直营渠道的建设。集团总裁卢伟冰说过，小米门店好处是，没有淡旺季之分，且门店位置越来越好，“开了非常多的大店”。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525084955391.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;据他介绍，到2025年底，500平米的大店将增长至400家，门店一边放新能源汽车，另一边陈列手机、空调等产品。&lt;/p&gt;&lt;p&gt;当然，更值得行业巨头担忧的是生产问题。此前的代工生产模式是小米常被诟病的环节。格力董事长董明珠也公开诘问过，小米空调全靠别的厂家做产品，其核心技术是什么？但如今，小米家电正着手进行重资产投入，自建产能。其位于武汉的智能家电工厂，预计于2025年11月投产，2026年将大规模量产。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525084957834.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;小米对于家电行业来说就像一条鲶鱼，而且是以完全有别于传统家电行业的形式进入。总是以一个或者几个火热的单品直接打开市场，和传统家电企业成百上千的 SKU形成了效率和成本上的对比，而且这些单品能在某些程度上依靠噱头引起强大的传播效应。&lt;/p&gt;&lt;p&gt;这就是行业需要警惕小米的原因。不过随着行业掀起波澜，传统三巨头也并非一成不变，纷纷开启转型之路。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;02&lt;/strong&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;strong&gt;&lt;strong&gt;巨头转身，错位竞争下长短板显现&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;巨头跨出家电领域，去找新的增长，或许便是方洪波所讲战略上不害怕小米的具体表现。&lt;/p&gt;&lt;p&gt;美的一方面转型做B端和出海，另一方面对家电产品进行优化，稳固优势业务，砍掉没优势的板块。&lt;/p&gt;&lt;p&gt;在出海方面，美的通过收购海外品牌和建立海外生产基地，不断拓展国际市场。2016 年，美的收购了日本东芝白电业务，获得了东芝在日本和东南亚市场的品牌、渠道和技术资源。&lt;/p&gt;&lt;p&gt;在B端业务，美的于2017年便收购了德国库卡机器人公司，进入工业机器人领域，提升了在高端制造领域的竞争力。目前，美的的海外营收占比已经超过40%，To B业务收入突破千亿，在集团营收中占比已经超过25%，成为其重要的增长来源。 &lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525085000912.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而C端家电基本盘，美的的空调、冰箱、洗衣机等产品仍然保持着领先地位。与此同时，砍掉了一些市场竞争力较弱的业务，如微波炉等小家电中的部分低端产品线，集中资源发展优势业务。&lt;/p&gt;&lt;p&gt;由于美的的转型方向主要集中在B端和海外市场，所以站在整个集团层面，与小米的主要竞争领域仅剩为数不多的大白电业务，只要稳扎稳打，市场份额并不会出现大起大落。&lt;/p&gt;&lt;p&gt;海尔的转型方向主要聚焦在两个关键领域：高端化和智能生态。前者成效显著，正在从“卖产品”向“卖服务”转型，后者通过构建“智慧家庭”生态系统，打造从家电到家居、从硬件到软件的全场景服务能力。&lt;/p&gt;&lt;p&gt;其推出的“三翼鸟”场景品牌，正是这一战略的具体体现。用户不再只是购买一台冰箱或洗衣机，而是获得一套完整的智慧生活解决方案。这种模式不仅提升了客户粘性，也为海尔打开了更高的价值天花板。&lt;/p&gt;&lt;p&gt;卡萨帝品牌的成功塑造，使海尔在高端家电市场占据了重要份额，而这一领域由于对品牌溢价能力、技术研发实力和用户服务水平要求极高，短期内小米难以涉足。不过，在智能生态场景建设方面，海尔与小米可以说是直接的竞争关系。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525085004831.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;海尔U-home智慧家庭生态系统，涵盖了家庭生活的各个场景，包括智慧客厅、智慧厨房、智慧卧室等，通过物联网技术实现家电设备之间的互联互通和智能控制。&lt;/p&gt;&lt;p&gt;而小米的智能家居生态同样以丰富的产品种类和便捷的用户体验为特色，“小米在智能化方面的领先，虽然不是遥遥领先的，但领先还是非常多的。”小米集团总裁卢伟冰此前曾坦言，“现在有百分之七十几的用户都使用了小米的联网，但是某些品牌只有百分之几，我们之间几乎有近10倍的差距。”&lt;/p&gt;&lt;p&gt;两者在智能生态的布局和发展上的重叠，使得海尔必须重视小米的竞争威胁。&lt;/p&gt;&lt;p&gt;格力的业务结构相对较为单一，长期以来主要依赖空调业务。虽然格力在空调领域凭借卓越的技术研发能力、过硬的产品质量和强大的品牌影响力，占据了国内空调市场的领先地位，但在多元化发展方面却面临诸多挑战。&lt;/p&gt;&lt;p&gt;格力在除空调外的其他家电业务领域，如冰箱、洗衣机、小家电等，始终未能取得突破性进展，市场份额相对较小。此外，格力试图将新能源作为企业的第二增长曲线，布局光伏、钛新能源等赛道，但从目前的发展情况来看，并未如预期般带来显著的业绩增长和想象空间。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525085007897.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;相比之下，小米在智能家居生态的布局中，涵盖了多种家电产品，且通过性价比策略和互联网营销手段，在一些新兴家电品类市场中迅速打开局面。这使得格力在面对小米的竞争时，尤其是在非空调家电业务领域，显得较为脆弱，成为小米相对比较容易超越的对象。&lt;/p&gt;&lt;p&gt;值得一提的是，从单个产品来看，空调仍是小米家电的拳头产品。此前，卢伟冰曾表示，对于传统的空调技术，过去小米一直在补课，目前已经基本上补齐了。小米空调将在今年内实现从行业第四名到第三名的跃升。他还大胆预测，到2030年，小米空调将会国内“数一数二”。&lt;/p&gt;&lt;p&gt;其实从小米家电工厂的产能布局，也能看出小米想要先在空调上站稳脚跟的意图。小米家电工厂主要以空调、冰箱、洗衣机的“自研自产”为主体，规划产能600万套，一期将聚焦空调品类，预计年底大规模投产，产能在百万以上。&lt;/p&gt;&lt;p&gt;客观来讲，小米以空调、冰箱、洗衣机作为切入点，对三巨头来说都很有压力，不过站在整体集团层面来看，或许只有在业务结构上更为局限的格力，更容易成为被超越的对象。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;03&lt;/strong&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;strong&gt;变局之下，谁都没有绝对优势&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;过去十年，中国家电行业的竞争主要集中在产品层面的价格博弈。但在消费升级、技术进步和全球化趋势的共同推动下，白电行业的竞争格局正在发生根本性转变。&lt;/p&gt;&lt;p&gt;如今，巨头之间的较量早已超越了简单的“性价比比拼”，而是进入了一个全新的维度——“规模韧性+技术壁垒+全球化深度”的综合实力竞争阶段。&lt;/p&gt;&lt;p&gt;放眼2025年，白电行业正经历着“周期性调整”与“结构性变革”的双重冲击。政策东风、技术革命与全球化重构带来新机遇，而存量博弈、成本压力与战略转型风险，也形成多重挑战。三巨头的竞争变量，正从内部业务结构延伸至整个产业生态的重构能力，以及小米等外部竞争者加入带来的不确定性。&lt;/p&gt;&lt;p&gt;不过需要注意的是，尽管小米在某些方面有着一定的竞争优势，但对于小米自身来说，想要在单一业务上挑战三巨头还非常困难。后者在传统家电的核心技术领域，如高效压缩机技术、变频技术等，都有着深厚的技术积累和专利壁垒，并且强大的生产能力和广泛的销售、售后渠道，这些都是前者短期内难以超越的。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/05/25/20250525085011500.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;另外，当规模竞争见顶，大家都在存量中寻找变数，整个市场已经延伸到智能家居生态系统和智慧生活解决方案的构建上。而小米通过构建“人车家”智能生态，以及针对年轻用户的性价比策略，持续保持着一定吸引力，这是不容忽视的。&lt;/p&gt;&lt;p&gt;总体而言，未来三年，小米能否实现成为中国家电前三的目标，还需要看其在技术研发、产品品质、品牌建设和生态构建等方面的综合表现。对于传统三巨头来说，也应保持开放的心态，积极与新兴品牌展开合作与竞争，共同推动家电行业的创新发展。&lt;/p&gt;&lt;p&gt;家电市场的格局并非不可改变，但在这个过程中，无论是传统巨头还是新兴力量，都需要不断地自我革新和提升，才能在激烈的市场竞争中立于不败之地。&lt;/p&gt;&lt;p&gt;参考资料：&lt;/p&gt;&lt;p&gt;晚点LatePost，《独家对话美的方洪波：我只是一个过客，不需要被任何人记住》&lt;/p&gt;&lt;p&gt;21世纪商业评论，《雷军卖家电，奔向1000亿》&lt;/p&gt;&lt;p&gt;奥维云网，《2025Q1空调市场：分化中谋变，挑战下突围，空调市场韧性依旧》&lt;/p&gt;&lt;p&gt;定焦ONE，《空调「三国杀」：美的格力争第一，小米能否「搅局」？》&lt;/p&gt;													&lt;/div&gt;
 						
 						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Sun, 25 May 2025 12:26:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE1oZmpFZ3VRU2JkbGRmSG4xSkh1Q2U1dnUweHJsWGFYLTlBemtrcFlCM1lRVGdUaVdERHBidDZXZ1J0TlZlUnBOZEhxbWhaM0hRYU8zVU5GUjk3TFk</guid></item><item><title>《星球大战：前线2》Steam在线峰值破记录 接近2万人 - 3DM</title><link>https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rQWZBNDI2NTdsT0xaeUtiXzZDTzZnQjVIakUweElZOEZNemlRS3c1REZoUUI4WnVZYUFMVEt3eHhZUU9BOVZiNmx3NkdxQ2lkTHJxVXlIdTl5QUl4?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
@@ -454,7 +1441,9 @@
         
                 
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 25 May 2025 12:25:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE9rQWZBNDI2NTdsT0xaeUtiXzZDTzZnQjVIakUweElZOEZNemlRS3c1REZoUUI4WnVZYUFMVEt3eHhZUU9BOVZiNmx3NkdxQ2lkTHJxVXlIdTl5QUl4</guid></item><item><title>比甄嬛还狠！奥特曼「千面人设」被揭穿，MIT华人记者7年曝黑幕 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIVmdxUVROYTVla3F5LXJSUVA2T19qV1dCTU5zdFQ1UEpVc21zQ2lvakRSMWtFMjRROTY5TXBwMFVkTHhqbDAwaENFUjFRbEtLUnZZ?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 25 May 2025 11:19:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBIVmdxUVROYTVla3F5LXJSUVA2T19qV1dCTU5zdFQ1UEpVc21zQ2lvakRSMWtFMjRROTY5TXBwMFVkTHhqbDAwaENFUjFRbEtLUnZZ</guid></item><item><title>一文了解8大彩虹无人机：从空中小皮卡 到空中变形金刚 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBsTFFwMWRHVlJ0RTNTOXhvSHdBVHdjMUZTQ2tIWWpzSWFSV3pKVG04LU1lQ2FLaXVwVDk1VU1GZGdPdUpqMlR5SkZYcDlfSXdtTm91cFBicnI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 25 May 2025 12:25:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE9rQWZBNDI2NTdsT0xaeUtiXzZDTzZnQjVIakUweElZOEZNemlRS3c1REZoUUI4WnVZYUFMVEt3eHhZUU9BOVZiNmx3NkdxQ2lkTHJxVXlIdTl5QUl4</guid></item><item><title>巴基斯坦为比特币挖矿分配2000 兆瓦电力装机容量- 数字货币/ 区块链 - cnBeta.COM</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE9fWFplaUVVcFZERldXb2J5T0YxbHNWOFJvRnBXSWRLUGM4cnh6TF9Ld1FOUHJwZkdTa056YkhuMFRCei1RcnJpdWJuMk95UmtwRkFqQndOQ1BidDMyM3gxWQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="artibody"&gt;
+                        &lt;p class="article-global"&gt;&lt;/p&gt;                            &lt;p&gt;&lt;a href="https://static.cnbetacdn.com/article/2023/0202/fc67f6eb4718f51.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2023/0202/fc67f6eb4718f51.jpg"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;巴基斯坦财政部在一份声明中表示，这项由巴基斯坦加密货币委员会主导的计划，还将有助于实现剩余能源的货币化，并创造高科技就业岗位。财政部称，萨希瓦尔（Sahiwal）、中国枢纽（China Hub）和卡西姆港（Port Qasim）等目前仅以 15% 产能运行的燃煤发电项目，预计将被改用于这一计划。&lt;/p&gt;&lt;p&gt;巴基斯坦联邦政府正寻求投资以提振经济 —— 该国在 2023 年勉强避免了债务违约。据估计，巴基斯坦拥有 1500 万至 2000 万加密货币用户，其目标是建立监管框架，以壮大本地加密生态系统并吸引全球资本。&lt;/p&gt;&lt;p&gt;今年 4 月，巴基斯坦邀请全球最大加密货币交易所币安（Binance）联合创始人赵长鹏（Changpeng Zhao）参与建立数字金融平台。加密货币委员会还与美国总统唐纳德・特朗普（Donald Trump）的加密项目签署初步协议，以加速区块链创新。&lt;/p&gt;&lt;p&gt;财政部声明称，巴基斯坦已吸引全球加密货币矿工和数据基础设施公司的关注，但未披露具体企业名称。&lt;/p&gt;                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta.COM</author><pubDate>Sun, 25 May 2025 11:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9fWFplaUVVcFZERldXb2J5T0YxbHNWOFJvRnBXSWRLUGM4cnh6TF9Ld1FOUHJwZkdTa056YkhuMFRCei1RcnJpdWJuMk95UmtwRkFqQndOQ1BidDMyM3gxWQ</guid></item><item><title>比甄嬛还狠！奥特曼「千面人设」被揭穿，MIT华人记者7年曝黑幕 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIVmdxUVROYTVla3F5LXJSUVA2T19qV1dCTU5zdFQ1UEpVc21zQ2lvakRSMWtFMjRROTY5TXBwMFVkTHhqbDAwaENFUjFRbEtLUnZZ?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 25 May 2025 11:19:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBIVmdxUVROYTVla3F5LXJSUVA2T19qV1dCTU5zdFQ1UEpVc21zQ2lvakRSMWtFMjRROTY5TXBwMFVkTHhqbDAwaENFUjFRbEtLUnZZ</guid></item><item><title>一文了解8大彩虹无人机：从空中小皮卡 到空中变形金刚 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBsTFFwMWRHVlJ0RTNTOXhvSHdBVHdjMUZTQ2tIWWpzSWFSV3pKVG04LU1lQ2FLaXVwVDk1VU1GZGdPdUpqMlR5SkZYcDlfSXdtTm91cFBicnI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月25日消息，近日，彩虹-YH1000新型无人运输机在西北某机场成功首飞试验，飞行数据良好，达到试验目的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;彩虹-YH1000无人运输机是一款具有强大运输投送能力的多用途无人机平台，可担负军事和民用运输任务，优势突出：挂载能力强、投放精度高、超短距起降、适应各种恶劣起降环境。&lt;/strong&gt;&lt;/p&gt;
@@ -864,7 +1853,70 @@ Interactive及核心开发者大卫·西蒙斯基表示：“孩子，你干得�
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 08:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8tR1pwNjJPbEFKSml5WnU4Qzl6U25WZ2dxMThtWEVvM21nYmpqbkpmTW9fQ0hFZGtraW5uV0Q5cTk2SFJzdUdpYndNRnR1elVkZWR0TzVQazI</guid></item><item><title>俄罗斯科技公司：美国禁令没用 Intel、AMD处理器照样买得到 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE52SXJaV0JETFZfcmphM1YzT0t6WHM3SEFnRFVWMGRQSXVhOEJ4cGdQZ180UWtGb1l5dEZYdTNnXzdGWnEyWnBmbGd4NWVTWThKelBmQmdXVXI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 08:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8tR1pwNjJPbEFKSml5WnU4Qzl6U25WZ2dxMThtWEVvM21nYmpqbkpmTW9fQ0hFZGtraW5uV0Q5cTk2SFJzdUdpYndNRnR1elVkZWR0TzVQazI</guid></item><item><title>任天堂Switch 2确认支持普通USB鼠标！还不影响Joy-Con - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9yYUFPMUE5R2F5UU9GTnFGMlRWTlptcWdyaExiWUpsWlN4aXpnODhEalNJRVdpbnFXa3ZWLURMMnp3MDBBcGM2Wm9IdXJ1TVN2aWR4SDdSdkQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;任天堂Switch 2确认支持普通USB鼠标！还不影响Joy-Con&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-25 15:51:08  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1049780-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月25日消息，光荣特库摩在日前的直播中，&lt;strong&gt;展示了即将发售的《信长之野望·新生 with威力加强版Complete Edition》的鼠标操作实机游玩视频，这也是首款确认支持鼠标操作的Switch 2游戏。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在演示中，《信长之野望·新生with威力加强版 Complete Edition》的制作人兼总监刘迪使用普通鼠标操作Switch 2版游戏。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250525/ca2f1e2c-1cde-4fb7-bd39-1f5de13caf9e.png" target="_blank"&gt;&lt;img alt="任天堂Switch 2确认支持普通USB鼠标！还不影响Joy-Con" h="330" src="//img1.mydrivers.com/img/20250525/Sca2f1e2c-1cde-4fb7-bd39-1f5de13caf9e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;他介绍，Switch 2的Joy-Con 2支持鼠标功能，按下侧面的SL或SR键可切换鼠标模式，再次按下则切换回控制器模式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;鼠标模式下，右Joy-Con 2支持鼠标左右键及滚轮，左Joy-Con 2仍保留按键功能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其还展示了直接将一个普通USB鼠标接在Switch2上， 也是可以自由操作，而且普通鼠标优先级高于Switch 2鼠标，且使用普通鼠标时左Joy-Con 2依然可用。&lt;/p&gt;
+&lt;p&gt;值得一提的是，虽然一代Switch也能识别普通键盘鼠标，但因游戏不支持而用途有限，如今到了Switch 2，支持鼠标操作的游戏增多，直接连接鼠标也将成为玩家的新选择。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250525/ab3ea297-09c5-4b53-8f51-7910d853555a.jpg" target="_blank"&gt;&lt;img alt="任天堂Switch 2确认支持普通USB鼠标！还不影响Joy-Con" h="337" src="//img1.mydrivers.com/img/20250525/Sab3ea297-09c5-4b53-8f51-7910d853555a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 07:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9yYUFPMUE5R2F5UU9GTnFGMlRWTlptcWdyaExiWUpsWlN4aXpnODhEalNJRVdpbnFXa3ZWLURMMnp3MDBBcGM2Wm9IdXJ1TVN2aWR4SDdSdkQ</guid></item><item><title>俄罗斯科技公司：美国禁令没用 Intel、AMD处理器照样买得到 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE52SXJaV0JETFZfcmphM1YzT0t6WHM3SEFnRFVWMGRQSXVhOEJ4cGdQZ180UWtGb1l5dEZYdTNnXzdGWnEyWnBmbGd4NWVTWThKelBmQmdXVXI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月25日消息，俄罗斯企业表示，美国禁令很大程度上是无效的。&lt;/p&gt;
 &lt;p&gt;俄媒报道，&lt;strong&gt;根据俄罗斯联邦海关总署（FCS）表示，与2023年相比，2024年Intel、AMD的CPU进口量分别减少了81%与95%。&lt;/strong&gt;&lt;/p&gt;
@@ -1421,83 +2473,9 @@ Interactive及核心开发者大卫·西蒙斯基表示：“孩子，你干得�
 
 
 &lt;/body&gt;
-</description><author>36氪</author><pubDate>Sun, 25 May 2025 04:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9qdGVaaXlUUTloQzBmOFlTUFNDdzhKY1F6blJyb3FGUmFVOW9MVjVuakF0LUdRSjhBS1A1M0NqS0lkaTQ0NmpXclpnRm5ldw</guid></item><item><title>小米YU7黑科技"天际屏"演示视频发布！支持语音联动+多屏互动 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1pMG83TmNnS01TODFNQy1rRFBBN1JzVWhyOHlwcmxOd2lMR0xiRjlyZmRwSWcyWWhYX2RBRXVhdjhTYVdvblNRNmFpLUUxMVJzQ1lLSTNCNWo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;近日，小米创办人、董事长兼 CEO 雷军发布了小米 YU7 汽车的天际屏全景显示 Xiaomi HyperVision 的演示视频，展示了该车在智能交互方面的强大功能。&lt;/p&gt;
-&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
-&lt;p&gt;视频中可以看到，&lt;strong&gt;小米 YU7 的天际屏全景显示能够呈现车辆实时数据、音乐播放状态、导航数据等车辆信息。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;同时，该系统支持语音联动和多屏互动功能，为用户提供了更加便捷和智能的交互体验。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;小米 YU7 的 “天际屏” 采用了 3 块 Mini LED 屏幕，支持 1.1 米超宽全景显示和 108PPD 超视网膜级高清显示。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250525/48df38a55a584a8e9e6b0779fda88080.png" target="_blank"&gt;&lt;img alt="小米YU7黑科技" h="332" src="//img1.mydrivers.com/img/20250525/s_48df38a55a584a8e9e6b0779fda88080.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;通过曲面投影技术，屏幕内容可以反射到前风挡下的黑区，为驾驶者提供更加直观和安全的信息展示。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;小米 YU7 搭载第三代骁龙 8 座舱 SoC 芯片，匹配 700 TOPS 英伟达 DRIVE AGX 车载计算平台，具备强大的智能处理能力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;车辆的长宽高分别为 4999/1996/1608（1600）mm，轴距达到 3000mm，属于中大型 SUV。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250525/7404a49a9c3f425fbbd69581f200a32f.png" target="_blank"&gt;&lt;img alt="小米YU7黑科技" h="401" src="//img1.mydrivers.com/img/20250525/s_7404a49a9c3f425fbbd69581f200a32f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;小米 YU7 提供三种不同配置，均搭载小米 V6s Plus 超级电机。其中，YU7 为单电机后驱，零百加速 5.88 秒，峰值功率 235kW，峰值扭矩 528N`m，最高车速 240km/h；&lt;/p&gt;
-&lt;p&gt;YU7 Pro 为双电机四驱，零百加速 4.27 秒，峰值功率 365kW，峰值扭矩 690N`m，最高车速 240km/h；&lt;/p&gt;
-&lt;p&gt;YU7 Max 为双电机四驱，零百加速 3.23 秒，峰值功率 508kW，峰值扭矩 866N`m，最高车速 253km/h。&lt;/p&gt;
-&lt;p&gt;在续航方面，基础后驱版搭载 96.3kWh 磷酸铁锂电池，CLTC 工况续航可达 835km；&lt;/p&gt;
-&lt;p&gt;Pro 版同样搭载 96.3kWh 磷酸铁锂电池，CLTC 工况续航为 770km；&lt;/p&gt;
-&lt;p&gt;Max 版高性能四驱搭载 101.7kWh 三元锂电池，CLTC 工况续航为 760km。&lt;/p&gt;
+</description><author>36氪</author><pubDate>Sun, 25 May 2025 04:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9qdGVaaXlUUTloQzBmOFlTUFNDdzhKY1F6blJyb3FGUmFVOW9MVjVuakF0LUdRSjhBS1A1M0NqS0lkaTQ0NmpXclpnRm5ldw</guid></item><item><title>苹果AI 的崩塌真相：从乔布斯愿景， 到高管失误的困局 - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE5JTDRqMDlJYzRQN2gwTmNzSnB0dDVwUVRMV3FjcGNUc0hGMUMzNmFpQjFaTTNzMXJjNS1hY3p3R3RHS0JXcFI5QXpEazhOV2xSczRPdQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="140714"&gt;&lt;a href="http://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&amp;amp;mid=2653080107&amp;amp;idx=1&amp;amp;sn=6c39c2625e645b92db8fd314e88c68ce&amp;amp;chksm=7f03cb73e2a4e7dd874ec272cb26eadcbdb544824189d24d185471d111a4c1631ac9a59cc18a#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-check-id="862514"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="505034"&gt;AI，已经热了快三年了。&lt;/p&gt;&lt;p data-check-id="466222"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="446887"&gt;各大科技巨头争先恐后下注入局，可偏偏在这个热潮中，最接近我们生活的苹果，却看起来离AI最远。&lt;/p&gt;&lt;p data-check-id="220714"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="303008"&gt;最大的巨头，在最热的潮流面前，好似隐身了。&lt;/p&gt;&lt;p data-check-id="704775"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="783257"&gt;去年6月WWDC上，苹果慢吞地发布了Apple Intelligence，可如今快一年过去，对大部分用户来说，Apple Intelligence依旧只闻其声、不见其形。&lt;/p&gt;&lt;p data-check-id="713956"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="443371"&gt;&lt;strong&gt;全世界都看到苹果的AI做不好了，但没人知道到底发生了什么&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="246398"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="554327"&gt;知名苹果分析师Mark Gurman刚刚在外媒发出一篇长文，题为《Why Apple Still Hasn’t Cracked AI》，揭露了苹果内部对AI态度的摇摆，内部的斗争和难以克服的技术瓶颈。&lt;/p&gt;&lt;p data-check-id="705053"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="501141" label="正文" class="text-normal"&gt;值得注意的是，Gurman用的是“Still hasn’t”，这词就已经给苹果的现状定了调。&lt;/p&gt;&lt;p data-check-id="213587"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="844251"&gt;本文将通过重组原文以呈现苹果在AI领域的历史、现状、问题根源及未来挑战，剖析苹果为何在AI赛道上步履维艰，让AI成为其阿喀琉斯之踵。&lt;/p&gt;&lt;p data-check-id="528473"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="447400" label="大标题"&gt;01&lt;/p&gt;&lt;p data-check-id="827957"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="450715"&gt;2011年10月4日，乔布斯去世前一天，他留给苹果的遗产Siri问世了。&lt;/p&gt;&lt;p data-check-id="949765"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="204238"&gt;彼时Siri宛如科幻成真的产物，它能听懂用户的语音指令，能预订餐厅、查找电影院或叫出租车，苹果再一次把未来科技概念变成了主流产品。&lt;/p&gt;&lt;p data-check-id="447436"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="777874"&gt;当时，乔布斯对打造搜索引擎兴趣不大。&lt;/p&gt;&lt;p data-check-id="591770"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="887305"&gt;一位曾与他共事的人说：“乔布斯不相信用户会主动去搜索东西，他认为苹果的职责是精心挑选并向用户展示他们想要的内容。”这一理念，如同乔布斯的许多信念一样，在他去世后依然深刻影响着苹果公司。&lt;/p&gt;&lt;p data-check-id="413929"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="500182"&gt;乔布斯首次接触到当时还是App Store里一款应用的Siri时，他立刻被吸引了。&lt;/p&gt;&lt;p data-check-id="328708"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="253782"&gt;Siri的联合创始人Dag Kittlaus回忆，Siri的终极目标是“你可以对着互联网说话，助手会为你处理一切。你甚至无需知道信息来源，应用和网站发现的问题也将被解决。”这正是当下大语言模型最广泛的应用场景。&lt;/p&gt;&lt;p data-check-id="460762"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="545702"&gt;乔布斯立刻意识到，Siri远不止一款应用，他很快联系了Kittlaus，邀请Siri团队到家中面谈，在长达三小时的会面中，乔布斯提出收购他们的公司。Kittlaus起初拒绝收购提案，但耐不住乔布斯连续24天每天致电劝说。&lt;/p&gt;&lt;p data-check-id="237890"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="135023"&gt;最终，Kittlaus同意出售Siri，&lt;strong&gt;乔布斯马上把Siri列为苹果的顶级开发项目，并且在他的生命末期也全情投入在Siri的研发上&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="676698"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="485823"&gt;当时Siri引领了智能语音助手市场，然而几年后，谷歌、亚马逊、小米等竞争对手纷纷推出了更先进的语音助手和智能音箱，而Siri却看不到显著进步。&lt;/p&gt;&lt;p data-check-id="678852"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="172880"&gt;伴随Siri的启动，苹果也开启了机器学习的研究，但主要用于面部和指纹识别、智能建议、改进地图，以及当时的重点项目：头显和汽车。&lt;/p&gt;&lt;p data-check-id="816988"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="575307"&gt;最初几年Siri的开发重点只集中在基础任务上，如提供天气信息、设置定时器、播放音乐和处理短信。&lt;/p&gt;&lt;p data-check-id="914063"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="516141"&gt;看行动，苹果早早就布局到了AI行业，他们曾收购了多家小型AI公司，包括机器学习公司Laserlike、Tuplejump、Turi。&lt;/p&gt;&lt;p data-check-id="450493"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="178107"&gt;据知情人士透露，苹果甚至考虑以约40亿美元收购Mobileye Global Inc.，这可能是苹果有史以来最大规模的收购。&lt;/p&gt;&lt;p data-check-id="511053"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="555214"&gt;Mobileye做的是加速自动驾驶系统和计算机视觉技术的开发。但最终苹果放弃了这笔交易，2017年英特尔以150亿美元收购了Mobileye。&lt;/p&gt;&lt;p data-check-id="809654"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="145536"&gt;所以看方向，苹果并没有把AI投注到语音助手领域。&lt;/p&gt;&lt;p data-check-id="684873"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="133457"&gt;那时，仅成立半年的OpenAI宣称将制造“通用”机器人。但Siri还像它被收购时一样，在无数台iPhone上制定闹钟、查询天气、播放音乐。&lt;/p&gt;&lt;p data-check-id="254399"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="356784" label="大标题"&gt;02、期望、内讧、排挤&lt;/p&gt;&lt;p data-check-id="320648"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="738353"&gt;有钱、有地位、有实力的苹果，为什么在AI上栽了跟头？或许也只有资深苹果分析师Mark Gurman能接触到这么多内幕消息，他用了极大篇幅报道了苹果内部在AI上的内讧。&lt;/p&gt;&lt;p data-check-id="411722"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="102645"&gt;2018年，苹果从谷歌挖来了John Giannandrea担任AI负责人。&lt;/p&gt;&lt;p data-check-id="629650"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="541801"&gt;JG此前负责谷歌的搜索和AI部门，带领团队在谷歌相册、翻译和Gmail等产品中部署AI技术。&lt;/p&gt;&lt;p data-check-id="904652"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="870358"&gt;“JG不仅在谷歌被视为仅次于CEO的最具影响力高管，还曾担任互联网先驱网景的首席技术官。”一位参与招聘的人士表示：“还能找到比他更合适的人吗？”&lt;/p&gt;&lt;p data-check-id="529579"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="874281"&gt;对苹果来说，挖来JG不仅可以重挫竞争对手谷歌，他更被期望成为让苹果转型为AI领头羊的第一步。&lt;/p&gt;&lt;p data-check-id="705872"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="430651"&gt;在当时苹果官方发布的新闻稿里，库克表示“机器学习和AI对于苹果公司的未来发展至关重要，它不仅会彻底改变人们与技术进行交互的方式，而且已经为用户的生活带来了显著改善。能够与John携手并肩，我们感到非常幸运。作为AI领域的领军人物，他必将能够推动我们在这一关键领域的长足发展。”&lt;/p&gt;&lt;p data-check-id="994736"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="635028"&gt;然而，七年后回看，这种期望和乐观已荡然无存。苹果的AI不仅没有起色，反而落后得更远。&lt;/p&gt;&lt;p data-check-id="957006"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="183113"&gt;核心问题是：&lt;/p&gt;&lt;p data-check-id="143158"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="415521"&gt;&lt;strong&gt;高管们对AI的路线认知不统一&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="516442"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="414165"&gt;一些负责软件工程的高级高管认为，苹果应在iOS中更凸显AI。2014年左右，一位高管就表示：“我们很快意识到，这是一项革命性技术，威力远超我们最初的理解。”但他们无法说服主管iOS的Craig Federighi认真对待AI“很多建议都石沉大海。”&lt;/p&gt;&lt;p data-check-id="601787"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="338806"&gt;然而库克却意外地看好AI，一位曾与他共事的人说：“库克是苹果内部最看好AI的人之一。他一直对Siri落后于Alexa感到沮丧。他还对苹果未能在智能音箱领域占据一席之地感到不满。”&lt;/p&gt;&lt;p data-check-id="960557"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="848778"&gt;负责人JG对AI的判断却一直在摇摆。&lt;/p&gt;&lt;p data-check-id="349729"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="512808"&gt;2018年JG加入苹果时，根据其他高管回忆，他认为苹果封闭的软件生态系统是一个独特优势，能即时向数十亿设备部署最新的功能。&lt;/p&gt;&lt;p data-check-id="754254"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="165111"&gt;但JG很快发现，苹果需要额外投入数亿美元，用于大规模测试以及图像和文本标注来训练大模型。JG从谷歌挖来顶级AI研究员，并组建了负责测试和数据分析的团队。而后JG将矛头对准Siri，撤换负责人，提议砍掉Siri很少使用的功能。&lt;/p&gt;&lt;p data-check-id="417141"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="840336"&gt;然而，JG的努力常常受阻。据多位同事透露，&lt;strong&gt;软件负责人Craig Federighi不愿在AI上投入巨资，他不认为AI是移动设备的核心能力&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="318737"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="852101"&gt;一位长期在苹果工作的老高管说：“Craig不是那种会说‘我们得干件大事，需要更多预算和人’的家伙。”&lt;/p&gt;&lt;p data-check-id="251377"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="726156"&gt;其他领导者也有类似保留意见，一位老高管说：“在AI领域，你得先投入才能知道产品是什么。这不是苹果的做事方式。苹果在开发产品时，早就知道最终目标是什么……我们惯常的策略是晚入场，凭借超10亿用户，稳扎稳打，最终击败所有人。”&lt;/p&gt;&lt;p data-check-id="361832"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="413326"&gt;但对AI，这策略行不通。2022年11月ChatGPT的发布，打了苹果一个措手不及。&lt;/p&gt;&lt;p data-check-id="633606"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="648757"&gt;一位高级高管表示，在此之前苹果“&lt;strong&gt;甚至连Apple Intelligence的概念都没有&lt;/strong&gt;。”&lt;/p&gt;&lt;p data-check-id="790104"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="608341"&gt;另一位高管说：“OpenAI的动作并非秘密，任何关注到市场的人，都应该看到并全力投入进去。”&lt;/p&gt;&lt;p data-check-id="290364"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="143036"&gt;ChatGPT发布一个月不到，Craig Federighi就开始用生成式AI为软件项目写代码了。据知情人士透露，他突然看到了AI的潜力，联合了JG和其他高管开始与OpenAI、Anthropic等AI公司会面，抓紧学习和了解最新的模型和市场动态。那时起，Craig Federighi就要求2024年的iOS 18中要尽可能多地加入AI功能。&lt;/p&gt;&lt;p data-check-id="780626"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="155317"&gt;JG又开始组建开发大语言模型的AI团队，此时他们已经落后竞争对手多年了。&lt;/p&gt;&lt;p data-check-id="360183"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="755888"&gt;据多名员工透露，苹果内部各类产品开发团队都负责了一部分AI研发，结果导致技术、进度、兼容性很难统一。&lt;/p&gt;&lt;p data-check-id="612469"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="154813"&gt;在2024年的WWDC上，Apple Intelligence如约而至，但能力有些捉襟见肘。&lt;/p&gt;&lt;p data-check-id="530364"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="820860"&gt;苹果生成式AI的能力的确落后，据彭博社的报道，苹果公司内部有一款能处理基本的图像生成的聊天机器人，但该机器人比ChatGPT落后至少25%，在处理大多数查询时的准确性明显不足。&lt;/p&gt;&lt;p data-check-id="984655"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="606235"&gt;为了提供消费者真正想要的AI产品，苹果只好去找谷歌、Anthropic和OpenAI等竞争对手谈判。&lt;/p&gt;&lt;p data-check-id="823407"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="444514"&gt;这又在内部产生了分歧，JG力主采用谷歌的Gemini，理由是OpenAI对个人数据的保护和持续发展力不如谷歌。但苹果的企业发展团队并不这么认为，&lt;strong&gt;他们看好OpenAI，于是WWDC上宣布，Siri无法处理的请求将转给ChatGPT&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="969850"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="803012"&gt;苹果缺乏自研的AI聊天机器人让很多高管感到不安，但JG并不认为大模型是AI的未来。&lt;/p&gt;&lt;p data-check-id="585373"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="846430"&gt;据多名员工透露，JG认为，AI Agent能真正取代人类还有多年时间，且大多数消费者和他一样不信任生成式AI。&lt;/p&gt;&lt;p data-check-id="591578"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="322576"&gt;这些员工们说，这解释了为何JG未全力打造面向消费者的ChatGPT竞品。他们透露，&lt;strong&gt;JG曾表示，消费者不想要ChatGPT那样的工具&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="902204"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="756655"&gt;在苹果内部，JG因延迟和失误承担了大部分指责。而据多名员工透露，JG一直难以融入苹果核心高管圈“那些高管共事数十年，运营公司如同家族企业。”&lt;/p&gt;&lt;p data-check-id="364126"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="375214"&gt;JG的位置就很尴尬，他是一名来自外部的空降高管，难以在苹果推动核心变革。据一位了解他的员工表示“JG本该更积极地争取大笔资金，但他不是推销员，是技术专家。”&lt;/p&gt;&lt;p data-check-id="739558"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="803217"&gt;也有人说，JG不够亲力亲为，也未严格要求员工。一位高管说：“苹果其他工程团队都全力以赴，按时交付，而JG的团队不是这样，他们执行力不足。”这种“宽松”的印象还延伸到福利上。&lt;/p&gt;&lt;p data-check-id="295115"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="824755"&gt;与其他硅谷巨头不同，苹果总部员工需自付食堂餐费。但在Apple Intelligence赶工期间，JG的部分工程师常获免费餐券，引发其他团队不满。一名员工说：“苹果不提供免费餐食，可他们团队比别人晚一年交付，还能吃免费午餐。”这些细微之处的区别对待，引发了苹果内部不同团队之间的分裂。&lt;/p&gt;&lt;p data-check-id="826784"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="135473"&gt;而JG所谓缺乏紧迫感可能不仅是性格问题，还有对AI理解的哲学考量。&lt;/p&gt;&lt;p data-check-id="181560"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="167356"&gt;他一直对AI发展节奏持保守态度，对聊天机器人的价值存疑，他认为OpenAI、Meta、谷歌等对手的威胁并不迫切。&lt;/p&gt;&lt;p data-check-id="356351"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="681306"&gt;一些苹果的同事们表示，&lt;strong&gt;JG坚持认为用户想要的AI助手是设备的主界面，而非某款应用&lt;/strong&gt;。尽管遭遇延迟和挫折，他仍坚守这一愿景。&lt;/p&gt;&lt;p data-check-id="566393"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="463217"&gt;今年3月，JG被剥夺了所有产品开发控制权，包括Siri和机器人项目。据其他高管透露，库克对JG打造新产品的执行力失去了信心。&lt;/p&gt;&lt;p data-check-id="102864"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="186570"&gt;JG保留了对AI、大语言模型开发、AI分析及部分开发团队的监督权。据内部人士透露，一些高管讨论过缩减JG的职责或让他逐步退休的想法，但Craig Federighi等人担心，若JG离开，他带来的顶级研究员和工程师可能也会随之出走。&lt;/p&gt;&lt;p data-check-id="574308"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="763764"&gt;目前，JG选择留下，他对同事表示，在苹果AI工作步入正轨前，他不想离开。他还坦言，不再负责Siri让他松了一口气。&lt;/p&gt;&lt;p data-check-id="776764"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="584654" label="大标题"&gt;03、技术落后，隐私的十字路口&lt;/p&gt;&lt;p data-check-id="774046"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="321352"&gt;科技巨头的失误不能简单归咎于JG一个人。&lt;/p&gt;&lt;p data-check-id="795271"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="213623"&gt;营销和广告团队提前宣传了未完成的功能，Craig Federighi是软件项目的最终决策者，库克则设定了整个公司的产品开发文化。&lt;/p&gt;&lt;p data-check-id="565522"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="171815"&gt;就连前首席财务官在采购GPU时也过于保守，苹果没有利用市场主导地位和现金储备，还是按惯例慢慢采购AI硬件。结果全球大部分GPU被亚马逊、微软等对手抢购一空，导致苹果的AI模型训练速度更慢了。&lt;/p&gt;&lt;p data-check-id="639972"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="562017"&gt;据苹果及其他公司高管透露，&lt;strong&gt;苹果的AI员工数量远少于竞争对手，采购用于训练和运行大语言模型训练的GPU也较少&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="140644"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="620682"&gt;对苹果而言，错过潜在的颠覆性技术并不致命。毕竟苹果常常会让同行先探索新技术去验证市场，而后再打磨产品，向用户推出设计精良、也更易用的版本。&lt;/p&gt;&lt;p data-check-id="919044"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="248117"&gt;这种策略也塑造了用户对苹果“不求最新，但求最好”的印象。一直以来，苹果都凭借精心打造的产品、精选内容和每年一次的软件更新，成为全球最有价值的科技公司。&lt;/p&gt;&lt;p data-check-id="992524"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="104302"&gt;苹果也是这么想的，在5月的财报电话会议上，库克被股东问及AI延迟的问题时，他表示只是需要更多时间以达到苹果的质量标准，“没有太多其他原因，只是比我们预期的时间长了一些。”&lt;/p&gt;&lt;p data-check-id="931990"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="788230"&gt;但问题是，多长算长呢？苹果已经在AI上投入了大量资源却收效甚微。何况AI是一项更快、更复杂的技术。&lt;/p&gt;&lt;p data-check-id="880165"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="271007"&gt;回顾历史，苹果最成功的产品都建立在内部开发的核心技术上，比如iPhone的多点触控，Mac的自研M系列芯片。但在AI上，很难看到苹果的技术力。&lt;/p&gt;&lt;p data-check-id="865205"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="250610"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202505/25/120658153677.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="568"&gt;&lt;img src&gt;&lt;img src&gt;&lt;img src&gt;&lt;/p&gt;&lt;p class="text-img-note" data-check-id="358543" label="图片备注"&gt;苹果M系列自研芯片已经全面渗透进硬件线里｜图片来源：Figma&lt;/p&gt;&lt;p data-check-id="480042"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="503274"&gt;何况在AI上，苹果有着一个其他巨头都没有的技术瓶颈：数据利用。&lt;/p&gt;&lt;p data-check-id="174095"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="641566"&gt;多年来，苹果一直把保护用户隐私作为宣传卖点，如今这成为了他们AI开发的阻碍。&lt;/p&gt;&lt;p data-check-id="316742"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="721115"&gt;坐拥23.5亿活跃设备的苹果，掌握的网页搜索、用户习惯、通信数据超过许多竞争对手。但苹果对AI开发者访问数据的限制远严于谷歌、Meta和OpenAI，这使得苹果的研究人员只能去用第三方授权数据集和合成数据。&lt;/p&gt;&lt;p data-check-id="722598"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="350727"&gt;一位了解苹果AI和软件开发的人说：“苹果在AI上，每件举动都有千百个否决，你得与隐私警察斗争才能有所进展。”一位持类似观点的高管说：“看看X的Grok，它不断进步，因为他们有所有X的数据。苹果拿什么来训练自家AI？”&lt;/p&gt;&lt;p data-check-id="452093"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="526230"&gt;苹果站在了数据和隐私的十字路口，以往宣传的优势变成了技术上的劣势。在草莽中狂奔的AI市场里，苹果显得过于“文雅”了。&lt;/p&gt;&lt;p data-check-id="223378"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="284038" label="大标题"&gt;04、牵一发动全身&lt;/p&gt;&lt;p data-check-id="299864"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="684765"&gt;苹果在AI上的势弱，影响的可不止是Apple Intelligence。&lt;/p&gt;&lt;p data-check-id="810308"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="382817"&gt;去年，苹果终止了耗资数十亿美元、历时十年的自动驾驶汽车项目，部分原因是也是因为AI无法实现全自动驾驶的承诺。&lt;/p&gt;&lt;p data-check-id="526861"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="765570"&gt;根据Gurman的推测，AI上的失败可能危及苹果未来的产品计划，包括AR眼镜、机器人以及能识别周围物体的Apple Watch和AirPods。&lt;/p&gt;&lt;p data-check-id="525651"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="371341"&gt;如果苹果未来无法给硬件注入AI，不仅会颠覆苹果公司“硬件是软件的载体”的价值观，还会影响苹果引以为傲的软硬件生态链。&lt;/p&gt;&lt;p data-check-id="104323"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="203831"&gt;苹果服务高级副总裁Eddy Cue曾对同事表示，苹果在科技界的霸主地位岌岌可危。&lt;/p&gt;&lt;p data-check-id="813914"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="576386"&gt;上个月，苹果设备上的谷歌搜索量下降。Eddy Cue表示：“&lt;strong&gt;22年来从未发生过这种情况，AI是原因&lt;/strong&gt;。”&lt;strong&gt;他承认用户越来越依赖大语言模型来获取信息。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="578139"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="557734"&gt;Eddy Cue指出，苹果不像埃克森美孚那样提供不可或缺的商品，他担忧AI之于苹果，可能就像当年iPhone之于诺基亚，诺基亚倒在苹果前面，而苹果可能倒在AI前面。&lt;/p&gt;&lt;p data-check-id="618980"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="573744"&gt;他甚至直言称iPhone十年内可能变得无关紧要，“听起来很疯狂，但确实可能。”&lt;/p&gt;&lt;p data-check-id="114069"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="200515"&gt;更大的挑战还来自外部，据知情人士透露，为符合欧盟预期的新规，苹果正着手修改操作系统，将允许用户将默认语音助手从Siri切换为第三方选项。&lt;/p&gt;&lt;p data-check-id="356119"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="576414"&gt;这意味着若苹果在语音助手上还没有重大突破，用户未来可能就不用Siri，改用OpenAI、Anthropic、Meta、Alphabet、X甚至DeepSeek的AI助手了。&lt;/p&gt;&lt;p data-check-id="875316"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="533066"&gt;苹果没有坐以待毙，据员工透露，苹果在苏黎世的AI办公室正在打造一个完全基于大语言模型的Siri，旨在让Siri更具对话性和信息整合能力。该秘密项目被称作LLM Siri。&lt;/p&gt;&lt;p data-check-id="180925"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="731717"&gt;苹果还在得克萨斯、西班牙和爱尔兰的办公室有数千名分析师，来审查Apple Intelligence摘要的准确性，比较数据偏差，评估AI幻觉的频率。&lt;/p&gt;&lt;p data-check-id="984646"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="463641"&gt;至于苹果自研的聊天机器人，现在一些高管想把Siri打造为真正的ChatGPT竞品。&lt;/p&gt;&lt;p data-check-id="640365"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="683558"&gt;为此，公司开始让Siri访问开放网络，整合多源数据。据员工透露，苹果内部测试的聊天机器人在过去六个月取得显著进展，部分高管认为其性能已媲美ChatGPT的近期版本。&lt;/p&gt;&lt;p data-check-id="946797"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="412426"&gt;苹果内部人士透露，对于下个月的WWDC，公司计划重点升级现有Apple Intelligence功能，并新增一些功能，比如AI优化的电池管理、虚拟健康教练。&lt;/p&gt;&lt;p data-check-id="687448"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="315802"&gt;而Siri的重大升级，甚至一年前“画的饼”不太可能在WWDC上过多提及了。消息人士称，&lt;strong&gt;尽管苹果内部对“LLM Siri”寄予厚望，但苹果准备在营销中将Apple Intelligence与Siri分开&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="198334"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="283887"&gt;他们一方面担心全面落后竞品的Siri拖累公司的AI宣传。另一方面，苹果也不敢再提前数月宣布新功能了。&lt;/p&gt;&lt;p data-check-id="271438"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="288235"&gt;还记得Siri联合创始人Kittlaus吗？他目前对Siri的AI化依旧乐观，他说：“所有模型公司都不知道助手是什么，而苹果自2010年以来一直在研究这一概念。”他认为，苹果只需让Siri变得更智能：“苹果有设备和品牌，只要给Siri‘换个脑子’，它完全有机会成为首选助手。”&lt;/p&gt;&lt;p data-check-id="808244"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="527306"&gt;十四年前，Siri的问世让苹果站在了智能交互的巅峰，乔布斯的远见点燃了语音助手市场，也孕育了如今我们用自然语言就能畅谈的聊天机器人。&lt;/p&gt;&lt;p data-check-id="576793"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="585034"&gt;然而，今日的苹果却在AI赛道上步履维艰，Apple Intelligence的迟到与失色、Siri的停滞与落伍、自动驾驶的失败……&lt;/p&gt;&lt;p data-check-id="784431"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="356775"&gt;能拿到内部消息的Mark Gurman揭示的不仅是苹果表面上在AI的迟滞，更是内部战略的摇摆、技术路径的困境、以及核心文化与时代脉搏的摩擦。&lt;/p&gt;&lt;p data-check-id="199988"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="317770"&gt;那些曾让苹果引以为傲的产品策略和企业文化，在以前所未有的速度重塑着科技格局的AI面前，反而成了苹果的绊脚石。&lt;/p&gt;&lt;p data-check-id="291657"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="544757"&gt;苹果的未来正因AI的短板而蒙上阴影，库克说，只是时间问题。可时间，苹果还有多少？&lt;/p&gt;&lt;p data-check-id="182973"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="725452"&gt;至少下个月的WWDC，我们不会看到期待的答案。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Sun, 25 May 2025 04:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE5JTDRqMDlJYzRQN2gwTmNzSnB0dDVwUVRMV3FjcGNUc0hGMUMzNmFpQjFaTTNzMXJjNS1hY3p3R3RHS0JXcFI5QXpEazhOV2xSczRPdQ</guid></item><item><title>微软AI公开折磨微软员工，修Bug唯一贡献是改了PR标题，GitHub评论区成吃瓜现场 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE90SG44UEthU0o0YnRfdHNfbzdqZXNhUHNXV1JyVGhhSXoyXzY3NWthNGJSSkJfVzFJbnZPRkF3bl9vWXUzT293S1NmT3p2Zw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
 
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：王略&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 03:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1pMG83TmNnS01TODFNQy1rRFBBN1JzVWhyOHlwcmxOd2lMR0xiRjlyZmRwSWcyWWhYX2RBRXVhdjhTYVdvblNRNmFpLUUxMVJzQ1lLSTNCNWo</guid></item><item><title>突然！央视正式官宣华为5nm麒麟X90处理器已量产装机：我们都在等待一个转折点 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9oOG10T3N0RTg1OGlScGNYT05FZUc1V0VLN0xNM1RlQi1HbFlINnhEV3NQM0NRd2NqUEFTOWJJRGl1NjVZZGJ6ZzlNMF9ScWtTT0ZySzhlLUY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月25日，本周，中国半导体领域热闹非凡。先是小米自研3nm玄戒O1芯片发布，央视称这是中国大陆地区3nm芯片设计的一次突破，紧追国际先进水平。&lt;/p&gt;
-&lt;p&gt;小米也成继苹果、高通、联发科后，全球第四家发布自主研发设计3nm制程手机处理器芯片的企业。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250525/78114a775a8f4b3fb013760cdf011404.jpg" target="_blank"&gt;&lt;img alt="突然！央视正式官宣华为5nm麒麟X90处理器已量产装机：我们都在等待一个转折点" h="391" src="//img1.mydrivers.com/img/20250525/s_78114a775a8f4b3fb013760cdf011404.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;紧接着，在5月24日晚播出的央视新闻周刊《中国“芯”突破》节目中，&lt;span&gt;&lt;strong&gt;首次报道了华为鸿蒙电脑载5nm工艺麒麟X90芯片。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250525/7cf23e5e59bd44eca2cd42bf90593844.jpg" target="_blank"&gt;&lt;img alt="突然！央视正式官宣华为5nm麒麟X90处理器已量产装机：我们都在等待一个转折点" h="251" src="//img1.mydrivers.com/img/20250525/s_7cf23e5e59bd44eca2cd42bf90593844.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这意味着什么呢？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;报道称，作为现代科技金字塔的基石，芯片产业，涉及研发、设计、制造、应用等一系列链条。就在本周，华为在成都正式发布两款鸿蒙电脑，&lt;strong&gt;这是国产自主研发的鸿蒙操作系统首次在电脑端正式发布，&lt;span&gt;它的诞生，意味着我们在电脑领域，从硬件的芯片到软件的操作系统，都实现了自主可控。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“&lt;strong&gt;电脑搭载5纳米工艺麒麟X90芯片，与鸿蒙系统深度协同，有分析指出，这让国产处理器首次在性能与生态适配性上形成闭环。&lt;/strong&gt;”&lt;/p&gt;
-&lt;p&gt;众所周知，受制于美国制裁，华为的芯片无法由台积电等厂商代工。&lt;span&gt;&lt;strong&gt;此次5nm麒麟X90芯片的官宣，不仅意味着我们可以完成5nm芯片的自主设计，也实现了5nm工艺的生产。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250525/32dd6dde3a1c4d32adf7000af0e1b180.png" target="_blank"&gt;&lt;img alt="突然！央视正式官宣华为5nm麒麟X90处理器已量产装机：我们都在等待一个转折点" h="310" src="//img1.mydrivers.com/img/20250525/s_32dd6dde3a1c4d32adf7000af0e1b180.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;时间回拨到2016年，那是美国对中国开始实施芯片打压的一个标志性年份，中兴通讯突然遭到了美方制裁。&lt;strong&gt;当年，中国进口了2270亿美元的芯片，占到全球芯片产值的2/3以上，国产芯片的自给率，还不足10%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;很多人没有想到，三年之后，2019年，华为昇腾910芯片面世，而且，其在算力等关键指标上的突破，可以和英伟达高端芯片一较高下。&lt;/p&gt;
-&lt;p&gt;紧接着，历经优化迭代的昇腾910芯片，开始与国内蓬勃发展的人工智能行业共同成长，截至去年12月底，昇腾已发展超过60家硬件合作伙伴，已孵化40多个原生大模型及50多个大模型应用，与科大讯飞等10家伙伴发布了大模型训推一体机。&lt;/p&gt;
-&lt;p&gt;美国政府连续几年的出口限制，不仅催生了中国芯片的技术蜕变，而且市场也出现了趋势性的变化。&lt;strong&gt;数据显示，去年中国进口的芯片，美国进口只占3%。相关机构预测，今年，中国AI服务器市场外购芯片的比例，预计会从去年的约63%，下降至42%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;报道还称，&lt;span&gt;&lt;strong&gt;美国政府长期以来的限制政策，不会打垮中国企业，只会倒逼我们走上芯片自主研发之路。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;面对前所未有的打压，我们当初的预测没有错，行进到今天，中国芯片的未来之路，已经越发明朗和确定。&lt;/p&gt;
-&lt;p&gt;正像一位学者所言，我们都在等待一个转折点——&lt;span&gt;&lt;strong&gt;也就是中国在芯片领域取得重大突破的那个转折点，到那时，或许才能够让美国一些人真正明白，对中国采取的一系列打压限制，既无效又毫无意义。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250525/b5517a6aeed648f9acbb4cae2cd81c97.png" target="_blank"&gt;&lt;img alt="突然！央视正式官宣华为5nm麒麟X90处理器已量产装机：我们都在等待一个转折点" h="310" src="//img1.mydrivers.com/img/20250525/s_b5517a6aeed648f9acbb4cae2cd81c97.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
 
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 03:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9oOG10T3N0RTg1OGlScGNYT05FZUc1V0VLN0xNM1RlQi1HbFlINnhEV3NQM0NRd2NqUEFTOWJJRGl1NjVZZGJ6ZzlNMF9ScWtTT0ZySzhlLUY</guid></item><item><title>15亿美元AI独角兽崩塌：全是印度程序员冒充，亚马逊等惨遭忽悠 - QQ News</title><link>https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LdU9TSkM1dzlHUEo4NnlKLWhNQ0tpckxvclN4eDVzNnNGbGoyY2phSTVNZ3hNNUtRbEJJbXdPMmpHMi1jSTF3cFZVODVza0RCYVo5OHZB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;编辑｜定慧 好困 &lt;/p&gt;&lt;p&gt;印度老哥是真的有点猛啊！&lt;/p&gt;&lt;p&gt;今天要说的这位，是AI编程公司Builder.ai的创始人兼前CEO——Sachin Dev Duggal。&lt;/p&gt;&lt;p&gt;他不仅造了个「全是人工，没有智能」的假AI公司&lt;/p&gt;&lt;p&gt;从软银、微软等巨头手里骗到了数亿美元融资，估值干到15亿&lt;/p&gt;&lt;p&gt;而且还敢对投资人虚报300%的营收&lt;/p&gt;&lt;p&gt;是的，这家公司的后台里并没有AI，有的只是一群印度老哥假装AI写代码。&lt;/p&gt;&lt;p&gt;更劲爆的是，这一骗愣是坚持了8年。&lt;/p&gt;&lt;p&gt;但这周他算是彻底玩完了。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OsSYZDXgcHl32x_6g7cz34pVhkopcV5lrmUx6FU0lpTbYAA/641" data-src="https://inews.gtimg.com/om_bt/OsSYZDXgcHl32x_6g7cz34pVhkopcV5lrmUx6FU0lpTbYAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;创始人兼前首席执行官Sachin Dev Duggal&lt;/p&gt;&lt;p&gt;随着最近一次「欺诈」的曝光，上一轮的投资人吓得赶紧冻结了投资账户里的剩下的3700万美元（共投资5000万美元），只给公司账户留下500万美元，而这500万美元还受限于政府的资金出境规定，也没法用来发工资。&lt;/p&gt;&lt;p&gt;没办法，Builder.ai只能申请破产，此时的CEO早已换成来「擦屁股」的Manpreet Ratia——创始人Sachin Dev Duggal于2月份辞去CEO职务，由Ratia接替。&lt;/p&gt;&lt;p&gt;这场闹剧直接导致了自2022年ChatGPT发布以来，AI初创公司中规模最大的一次倒闭事件——这家公司在上一轮融资中估值已经超过15亿美元。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/Obn5rWTgyAbGCMwfKwh27m88qG8bLulJEUl4bdg57WhM8AA/641" data-src="https://inews.gtimg.com/om_bt/Obn5rWTgyAbGCMwfKwh27m88qG8bLulJEUl4bdg57WhM8AA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Builder.ai的破产清算通告&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OemEiJZSgfwDwQG3nLOnvyZIorosTiHcQbN9Af3ZgObIMAA/641" data-src="https://inews.gtimg.com/om_bt/OemEiJZSgfwDwQG3nLOnvyZIorosTiHcQbN9Af3ZgObIMAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Builder.ai的官网已经无法访问，只剩下两个联系邮箱&lt;/p&gt;&lt;p&gt;而这场风波中的「冤大头」除了上面提到的提供了5000万美元的Viola Credit外，还有两年前牵头2.5亿美元融资的全球最大主权财富基金之一——卡塔尔投资局（QIA）。&lt;/p&gt;&lt;p&gt;以及同年也进行了投资，并成为战略伙伴的微软。甚至，他们还把Builder.ai集成到了云服务中。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;黄金时代&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Builder.ai诞生于伦敦，源于其创始人Sachin Dev Duggal对传统软件开发的不满。&lt;/p&gt;&lt;p&gt;在AI驱动的叙事黄金时代，Builder.ai有一个好到不容忽视的宣传口号：让软件开发「像点披萨一样简单」。&lt;/p&gt;&lt;p&gt;这家成立于2016年的初创公司声称，它可以通过一个据称由AI驱动的平台，让非工程师也能够构建复杂的应用程序，从而普及软件开发。&lt;/p&gt;&lt;p&gt;AI的宣传口号对投资者而言效果奇佳。&lt;/p&gt;&lt;p&gt;Builder.ai的前身叫做Engineer.ai，总部位于伦敦和洛杉矶的公司2018年从包括Deepcore Inc.在内的投资者处筹集了 2950万美元资金，Deepcore Inc.是软银（SoftBank）的全资子公司。&lt;/p&gt;&lt;p&gt;其他投资方还包括总部位于苏黎世的风险投资公司 Lakestar（Facebook Inc.和 Airbnb Inc.的早期投资者）以及总部位于新加坡的Jungle Ventures。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OAjnrCzbFLzAOYZHjext_OnA-io9c-e7S3P_75LtQmx0AAA/641" data-src="https://inews.gtimg.com/om_bt/OAjnrCzbFLzAOYZHjext_OnA-io9c-e7S3P_75LtQmx0AAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;创始人Sachin Dev Duggal在早年的一次科技会议上&lt;/p&gt;&lt;p&gt;到2022年，Builder.ai已筹集了1.95亿美元，并于2023年5月，在由卡塔尔投资局 (QIA) 领投的一轮融资中又增加了2.5亿美元。&lt;/p&gt;&lt;p&gt;同年，微软作为战略投资者和合作伙伴加入，将其Builder.ai平台集成到其云服务产品中。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OaTidb_H991sOJng-wmrjf_4Jli6SeLnh5DtrX_PhZXA0AA/641" data-src="https://inews.gtimg.com/om_bt/OaTidb_H991sOJng-wmrjf_4Jli6SeLnh5DtrX_PhZXA0AA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;微软宣布成为Builder.ai的战略投资者和合作伙伴&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OQ_NbskBF2js2D5s_nno6cD9AAkhTcVc301Kx2yjNzGWAAA/641" data-src="https://inews.gtimg.com/om_bt/OQ_NbskBF2js2D5s_nno6cD9AAkhTcVc301Kx2yjNzGWAAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Builder.ai平台被集成到微软云服务产品中&lt;/p&gt;&lt;p&gt;这带来了巨大的认可，随之而来的期望也同样巨大。&lt;/p&gt;&lt;p&gt;在接下来的8年里，它筹集了超过4.45亿美元的资金，其投资者包括微软和卡塔尔投资局，公司估值也跨过了 13 亿美元的大关。&lt;/p&gt;&lt;p&gt;Builder.ai提供的解决方案是：将模块化代码组件与人类开发者相结合，并由AI进行协调。&lt;/p&gt;&lt;p&gt;其名为「Builder Studio」的平台，配备了一个名为「Natasha」（娜塔莎）的数字助理，承诺提供由AI驱动的无缝用户体验。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/O6lh6CptTWNElpVn51z7Exmnwk8yQ2czYk_TNag7F5lqwAA/641" data-src="https://inews.gtimg.com/om_bt/O6lh6CptTWNElpVn51z7Exmnwk8yQ2czYk_TNag7F5lqwAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Builder.ai酷炫的官网，如今已经全部无法打开&lt;/p&gt;&lt;p&gt;但这个愿景的背后实际上是：大部分工作是由印度的开发人员完成的，而非AI。&lt;/p&gt;&lt;p&gt;2019年，「华尔街日报」揭露了一个令人尴尬的真相：Builder.ai的AI更多的是营销噱头，而非工程突破。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OFERIdy7F06PCwui60I-fK_gNXgNt8Cd1uPWZn4So09jkAA/641" data-src="https://inews.gtimg.com/om_bt/OFERIdy7F06PCwui60I-fK_gNXgNt8Cd1uPWZn4So09jkAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;华尔街日报报道&lt;/p&gt;&lt;p&gt;多位现任和前任员工表示，一些定价和时间表的计算是由传统软件来做的，剩下的大部分工作也都是由员工手动完成。&lt;/p&gt;&lt;p&gt;如果你告诉客户你在使用AI，他们很可能不会想到上世纪50年代的技术。决策树是一项非常老旧且简单的技术。&lt;/p&gt;&lt;p&gt;这些人表示，公司缺乏自然语言处理技术，并且公司内部使用的决策树不应被视为AI。&lt;/p&gt;&lt;p&gt;正如报道所言，Builder.ai这家AI公司「全是人工，没有智能」。&lt;/p&gt;&lt;p&gt;这种叙事与现实之间的鸿沟将决定该公司的发展轨迹。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;只有人工，没有智能&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Builder.ai欺骗的迹象不仅仅出现在2019年华尔街日报的报道。&lt;/p&gt;&lt;p&gt;根据Reddit上多位前员工和知情人士的爆料，Builder.ai公司可能一开始就只有人工，没有智能。&lt;/p&gt;&lt;p&gt;多位前员工表示，管理层不可能不知道正在进行的欺诈，只是视而不见。这公司工作两年，几乎没有看到有项目交付。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OBnM8e0ZghgQ6dF6Mte6Od1boAdnHYLwuZsW6COf2NdSEAA/641" data-src="https://inews.gtimg.com/om_bt/OBnM8e0ZghgQ6dF6Mte6Od1boAdnHYLwuZsW6COf2NdSEAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;前员工评论&lt;/p&gt;&lt;p&gt;而且有前员工透露Builder.ai极限压低员工工资，甚至称「给的薪资太垃圾」，并且不是AI导向，而是营销导向的公司。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/O-OUSZeJ1qPMTc5RQbYBiyL58j_5WfzSS8QU4yWAmS6t8AA/641" data-src="https://inews.gtimg.com/om_bt/O-OUSZeJ1qPMTc5RQbYBiyL58j_5WfzSS8QU4yWAmS6t8AA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;前员工评论&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OM8Nfoagi8iDgOPQU9OpdzTLul2_PJ36InpgCAYbg8RikAA/641" data-src="https://inews.gtimg.com/om_bt/OM8Nfoagi8iDgOPQU9OpdzTLul2_PJ36InpgCAYbg8RikAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;前员工评论&lt;/p&gt;&lt;p&gt;一名用户在一年前就发现自己在使用Builder.ai的服务中发现很多「无法理解」之处。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/O32v6rutQSQIkdBO3tN651VeWrq9axAg2B2w7UxRgscy8AA/641" data-src="https://inews.gtimg.com/om_bt/O32v6rutQSQIkdBO3tN651VeWrq9axAg2B2w7UxRgscy8AA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;用户评论&lt;/p&gt;&lt;p&gt;包括：开发体验极差、缺少模块、代码无法使用、无法访问IDE甚至有些代码完全无法修改。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OYedmeTNde0Tlb0kmmu7J2KtBG_BwZG6uLgzPAH68QuncAA/641" data-src="https://inews.gtimg.com/om_bt/OYedmeTNde0Tlb0kmmu7J2KtBG_BwZG6uLgzPAH68QuncAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;用户评论&lt;/p&gt;&lt;p&gt;还有知情人士直接透露Builder.ai其实就是用「ai域名」来欺诈的公司。公司里雇佣了大量的低成本开发人员来「假装AI」。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OTDUVoG4jY0kabknMH-7aSPH9P6Nnfc3ZovBfp0aFHBSsAA/641" data-src="https://inews.gtimg.com/om_bt/OTDUVoG4jY0kabknMH-7aSPH9P6Nnfc3ZovBfp0aFHBSsAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;用户评论&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;清算时刻&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;随着时间的推移，Builder.ai内部的裂痕也一直在扩大。&lt;/p&gt;&lt;p&gt;据内部人士透露，该公司长期以来一直依赖夸大的营收预测和AI方面的宣传来获得融资。&lt;/p&gt;&lt;p&gt;庞大的全球员工队伍和耗资巨大的扩张计划，包括在东南亚和中东开拓新市场，使资金消耗率不断上升。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OrzZiBFW36cBhSekm_dsEUe3t4B1dEhvlMp12H26SS5zAAA/641" data-src="https://inews.gtimg.com/om_bt/OrzZiBFW36cBhSekm_dsEUe3t4B1dEhvlMp12H26SS5zAAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Builder.ai&lt;/p&gt;&lt;p&gt;与此同时，前CEO的法律问题也层出不穷。&lt;/p&gt;&lt;p&gt;据「金融时报」报道，Duggal卷入了印度一桩洗钱刑事案件的调查。对此，Builder.ai的总法律顾问曾在一篇现已删除的博客中回应称，Duggal只是该案的一名证人。&lt;/p&gt;&lt;p&gt;不过，Duggal还是在2月辞去了CEO职务，但仍留在董事会并保留了他的「wizard」头衔。&lt;/p&gt;&lt;p&gt;接替他的，是亚马逊和Flipkart的前高管Manpreet Ratia，后者此前曾担任Builder.ai投资方Jungle Ventures的管理合伙人。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OA8ieH1HuHEsFR1E8PO0XBmzj_xNPPus2P1Gp0w_R_cpUAA/641" data-src="https://inews.gtimg.com/om_bt/OA8ieH1HuHEsFR1E8PO0XBmzj_xNPPus2P1Gp0w_R_cpUAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Manpreet Ratia&lt;/p&gt;&lt;p&gt;紧接着，清算的时刻就来临了。&lt;/p&gt;&lt;p&gt;2025年5月，Builder.ai的高级投资方之一Viola Credit从该公司账户中扣押了3700万美元，并触发违约。&lt;/p&gt;&lt;p&gt;仅在两个月前接手收拾残局的首席执行官Manpreet Ratia手中仅剩下500万美元现金。&lt;/p&gt;&lt;p&gt;几天后，他申请了破产。&lt;/p&gt;&lt;p&gt;事实证明，Builder.ai向贷款方提供了夸大的财务预测，谎报了其营收健康状况。&lt;/p&gt;&lt;p&gt;这一违反契约条款的行为让Viola Credit得以采取断然措施。&lt;/p&gt;&lt;p&gt;但这次结构性崩溃背后更大的原因是，他们的商业模式从未与他们的品牌宣传相匹配。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/Oh5-9ex34WDu6axOUtZlkitiaBfFNp7H5KrwmRQJCatYEAA/641" data-src="https://inews.gtimg.com/om_bt/Oh5-9ex34WDu6axOUtZlkitiaBfFNp7H5KrwmRQJCatYEAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Builder.ai员工合照&lt;/p&gt;&lt;p&gt;Ratia在一次全公司范围的电话会议中，承认了败局已定。大部分全球员工遭到解雇，曾被定位为AI创新旗舰的产品也被搁置。&lt;/p&gt;&lt;p&gt;5月20日，它正式宣告破产。&lt;/p&gt;&lt;p&gt;在失败之前的一个月，该公司进行了最后时刻的重组，裁掉了770名员工中的220人。&lt;/p&gt;&lt;p&gt;Builder.ai本周表示，由于「无法从历史挑战和过去的决策中恢复过来，这些因素给公司的财务状况带来了巨大压力」，尽管管理层「不懈努力」，但公司将任命一名行政官来监督破产程序。&lt;/p&gt;&lt;p&gt;据「金融时报」报道，Builder.ai总共欠了亚马逊8500万美元，欠微软3000万美元。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;创业明星&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;为何Duggal一开始能获得投资人的青睐？不论是卡塔尔资金、软银还是微软，都不是轻易能够欺骗的。&lt;/p&gt;&lt;p&gt;这就不得不提Duggal「光鲜」的履历了。&lt;/p&gt;&lt;p&gt;Sachin Dev Duggal在14岁时开始通过组装PC电脑开启职业生涯，到17岁时，他为德意志银行创建了世界上首批自动化货币套利交易系统之一。&lt;/p&gt;&lt;p&gt;他在21岁仍在帝国理工学院就读期间，启动了他的下一个创业项目——云计算公司Nivio。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OvnF3Z49HxGYx6Aeh3dYzlKdsZid_X5Mp9iMC5rR_kPMYAA/641" data-src="https://inews.gtimg.com/om_bt/OvnF3Z49HxGYx6Aeh3dYzlKdsZid_X5Mp9iMC5rR_kPMYAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Sachin Dev Duggal&lt;/p&gt;&lt;p&gt;在离开估值为1亿美元的Nivio之后，Duggal开始专注于打造一个名为Shoto的照片分享应用。&lt;/p&gt;&lt;p&gt;然而，他很难找到符合自己需求的前端开发人员。Duggal不禁思考：如果连他自己都难以找到可靠的帮手，那么没有工程背景的人又该如何开始构建一款应用呢？&lt;/p&gt;&lt;p&gt;于是，他创立了Builder.ai，旨在让软件构建「变得像点披萨一样简单」。&lt;/p&gt;&lt;p&gt;后面的故事，大家也都知道了。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;AI洗白&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;在行业上，Builder.ai这种将传统技术服务包装成AI来骗取资金的模式，被称为「AI洗白」（AI washing）。&lt;/p&gt;&lt;p&gt;而它的失败，也重新引发了关于在AI交易中进行技术尽职调查必要性的讨论。&lt;/p&gt;&lt;p&gt;对于客户而言，其中许多是初创公司和中小企业，这次突然的停运让他们手忙脚乱地重建或迁移他们的应用程序。这凸显了依赖新兴参与者提供关键任务软件基础设施的风险。&lt;/p&gt;&lt;p&gt;尽管遭遇了这次打击，但更广泛的低代码/无代码市场依然保持韧性。&lt;/p&gt;&lt;p&gt;Gartner预测，到2028年，60%的新企业应用程序将使用此类平台开发。预计到今年年底，全球市场规模将达到 260亿美元。&lt;/p&gt;&lt;p&gt;从Gartner的赞誉到Fast Company的排名，从明星投资者到其网站上展示的顶级公司标识，Builder.ai似乎是AI时代的伟大成功故事之一。&lt;/p&gt;&lt;p&gt;但像许多建立在炒作之上的公司一样，它混淆了规模与可持续性，以及知名度与生存能力。&lt;/p&gt;&lt;p&gt;最终，Builder.ai的故事与其说是一项失败的技术，不如说是假装它曾经奏效所带来的后果。&lt;/p&gt;&lt;p&gt;在 ChatGPT 带动的投资热浪里，规模、估值与曝光度并不等于护城河。&lt;/p&gt;&lt;p&gt;Builder.ai的故事像极了昔日Theranos——&lt;strong&gt;当技术承诺与实际能力出现1毫米的裂缝，资本市场就会在下一秒撕开1千米的深渊&lt;/strong&gt;。&lt;/p&gt;&lt;p data-exeditor-arbitrary-box="image-box"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/OCuF9-IiSUt69AcT2eZeQJ8UFgrClQgpc21v84C3MczigAA/641" data-src="https://inews.gtimg.com/om_bt/OCuF9-IiSUt69AcT2eZeQJ8UFgrClQgpc21v84C3MczigAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p class="qqnews_image_desc"&gt;Theranos&lt;/p&gt;&lt;p&gt;参考资料：&lt;/p&gt;&lt;p&gt;https://www.ft.com/content/926f4969-fda7-4e78-b106-4888c8704bda &lt;/p&gt;&lt;p&gt;https://www.financialexpress.com/business/start-ups/why-did-microsoft-backed-1-3bn-builderai-collapse-accused-of-using-indian-codersforaiwork/3854944/ &lt;/p&gt;&lt;p class="editor-note"&gt;本文来自微信公众号&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;“新智元”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，作者：新智元，36氪经授权发布。&lt;/p&gt;&lt;p powered-by="qqnews_ex-editor"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>QQ News</author><pubDate>Sun, 25 May 2025 02:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE1LdU9TSkM1dzlHUEo4NnlKLWhNQ0tpckxvclN4eDVzNnNGbGoyY2phSTVNZ3hNNUtRbEJJbXdPMmpHMi1jSTF3cFZVODVza0RCYVo5OHZB</guid></item><item><title>8GB显存够用吗！AMD高管回应RX 9060 XT 8GB：大部分玩家不需要更多 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE10d1lxWGR0RWtIRTdVb19uLW5WYjN0cTJCM3NkZDdJOUFTdTNwX3BNNHhfQ0pOUkFyR3NLeVBIaDVXemJXRmd3WTRnVDhDYVZRQ0R4bVZRYmk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月25日消息，&lt;strong&gt;AMD在2025年台北国际电脑展上，发布了新一代Radeon RX 9060 XT显卡，提供8GB和16GB两种显存版本。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过8GB显存版本引发了一些玩家的不满，尤其是在2025年，8GB显存在1080p下玩一些有些都显得捉襟见肘。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250525/8b8673d0-cbfc-447d-97ea-f599f62ce983.png" target="_blank"&gt;&lt;img alt="8GB显存够用吗！AMD高管回应RX 9060 XT 8GB：大部分玩家不需要更大" h="265" src="//img1.mydrivers.com/img/20250525/S8b8673d0-cbfc-447d-97ea-f599f62ce983.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;对此，AMD资深架构师兼游戏解决方案和游戏营销首席架构师Frank Azor进行了回应。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;Frank Azor表示，大多数玩家仍然在1080p分辨率下玩游戏，而且他们主玩电子竞技游戏，根本不需要超过8GB的显存，换言之，8GB显存对于这些玩家来说已经绰绰有余。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;他表示，如果没有市场需求，AMD根本不会推出它，他还指出，如果用户觉得8GB显存不够用，可以选择16GB版本，两个版本采用相同的GPU，没有性能妥协，只是显存选项不同。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="8GB显存够用吗！AMD高管回应RX 9060 XT 8GB：大部分玩家不需要更大" h="329" src="//img1.mydrivers.com/img/20250525/8dcdadb2-50de-4ee5-91cc-c3238e815db6.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;此前NVIDIA的RTX 5060 Ti 8GB在某些情况下因显存不足而受到限制，导致玩家不得不降低图形设置或分辨率以获得可接受的帧率，也因此引发了不少不满。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="8GB显存够用吗！AMD高管回应RX 9060 XT 8GB：大部分玩家不需要更大" h="372" src="//img1.mydrivers.com/img/20250525/d961dab1-f516-432f-bde1-1d07eb107e4e.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;根据Steam硬件调查，1080p分辨率仍然占据市场主导地位，占比55.27%，其次是1440p，占比19.90%，这表明8GB显存的市场定位在一定程度上是准确的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;但问题是玩家究竟是因为1080p而选择8GB显存，还是因为拥有8GB显卡而只能选择1080p，&lt;/strong&gt;当然正如网友所评论的那样，如果价格合适，那么8GB显存其实并不差，就看AMD能否将这些显卡保持在2499元的建议零售价了。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="8GB显存够用吗！AMD高管回应RX 9060 XT 8GB：大部分玩家不需要更大" h="410" src="//img1.mydrivers.com/img/20250525/cc5db0fa-b9b7-43f7-8b48-29a6bb188e19.png" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 25 May 2025 02:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10d1lxWGR0RWtIRTdVb19uLW5WYjN0cTJCM3NkZDdJOUFTdTNwX3BNNHhfQ0pOUkFyR3NLeVBIaDVXemJXRmd3WTRnVDhDYVZRQ0R4bVZRYmk</guid></item></channel></rss>
+&lt;/body&gt;
+</description><author>36Kr</author><pubDate>Sun, 25 May 2025 04:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE90SG44UEthU0o0YnRfdHNfbzdqZXNhUHNXV1JyVGhhSXoyXzY3NWthNGJSSkJfVzFJbnZPRkF3bl9vWXUzT293S1NmT3p2Zw</guid></item></channel></rss>
