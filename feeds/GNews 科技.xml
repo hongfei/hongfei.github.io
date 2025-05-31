@@ -1,5 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>真的很牙膏！酷睿Ultra 200升级版首次现身 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzcDRWRjg5NV9YMHdURGZMMUNIbVowV2tzMjJaNHNZWG9QQ040VVVOQThYMWxNRWNsYXFzN2J3RTVGSlF1SXpGaW5IdU8zVzBsTmpNVDR3T1U?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE16dmotWmZlM1JRdjAwZURNbUhvODBFbEN1QzBURTVkeXZQdU5wSW5OcDZGUjlrbWkyXzREUmFyWjZQaF9ILS1Vb2xsYTIzV3RkVlZwYUVsVDc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;好家伙，AI意外生成的内核（kernel），性能比人类专家专门优化过的还要好！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;斯坦福最近披露了一组新发现，结果真的太亮眼了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;由AI优化的内核，在常见深度学习操作上，翻倍超越原生PyTorch，性能至多可以提升近400%——&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;矩阵乘法（Matmul，FP32）：性能达到PyTorch torch.matmul的101.3%。&lt;/p&gt;
+&lt;p&gt;二维卷积（Conv2D）：性能达到 torch.nn.Conv2D的179.9%。&lt;/p&gt;
+&lt;p&gt;Softmax：性能达到 torch.softmax的111.8%。&lt;/p&gt;
+&lt;p&gt;层归一化（LayerNorm）：性能达到torch.nn.LayerNorm的484.4%。&lt;/p&gt;
+&lt;p&gt;Conv2D+ReLU+MaxPool组合操作：性能达到PyTorch参考实现的290.1%，以及torch.compile()参考实现的189.0%。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;（在NVIDIA L40S GPU上进行基准测试，性能百分比定义为参考时间除以生成的kernel_size时间）&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/81cc024d-d70f-4df0-83c8-0992dcc2f06e.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="337" src="//img1.mydrivers.com/img/20250531/S81cc024d-d70f-4df0-83c8-0992dcc2f06e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更惊人的是，这一切都是意外实现的。&lt;/p&gt;
+&lt;p&gt;研究团队本来的目标是生成合成数据以训练内核生成模型。&lt;/p&gt;
+&lt;p&gt;结果发现，&lt;strong&gt;仅在测试阶段生成的合成数据本身，竟然可以生成性能非常优秀的内核。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/835b057e-70fe-4a16-aa93-3ff3792137c7.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="183" src="//img1.mydrivers.com/img/20250531/S835b057e-70fe-4a16-aa93-3ff3792137c7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;围观网友：没想到AI也要取代内核工程师了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/2572ec99-81a4-43bd-9e41-5cc5b55df9b0.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="530" src="//img1.mydrivers.com/img/20250531/S2572ec99-81a4-43bd-9e41-5cc5b55df9b0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;还有人发现，除了性能大幅提升外，研究团队采用的方法也非常有趣：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;他们没有简单的在操作上逐步优化（类似于爬坡算法），而是在每次迭代之间加入了一个语言推理的步骤，通过这种方式鼓励搜索过程更加多样化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;也就是说，他们是让系统在每次改进时通过类似“思考”的方式产生更多想法，从而找到更好的解决方案。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/f3e7ad70-3d51-47d9-a561-5502d3a9b2c0.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="211" src="//img1.mydrivers.com/img/20250531/Sf3e7ad70-3d51-47d9-a561-5502d3a9b2c0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;具体如何实现，一起来看。&lt;/p&gt;
+&lt;p&gt;改代码前先生成自然语言优化思想&lt;/p&gt;
+&lt;p&gt;按照斯坦福团队博客的描述，这种内核生成的思路非常简单——给定torch代码，然后告诉都能写编写自定义内核来替换torch算子。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这些内核是用纯CUDA-C编写，无需使用CUTLASS和Triton等库和DSL（Domain-Specific Language，领域专用语言）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不同于传统方法的是，模型并不是一上来就直接改代码，而是先用自然语言生成优化思想，然后再将这些思想转化为新的代码变体。&lt;/p&gt;
+&lt;p&gt;团队这样做的理由是，“按顺序修改”式的优化思路缺乏多样性，导致陷入局部极小值，重复访问同一类转换或无休止地优化没有前景的轨迹。&lt;/p&gt;
+&lt;p&gt;为了进一步增强思路多样性，斯坦福团队还使用了多分支的探索模式。&lt;/p&gt;
+&lt;p&gt;具体来说，他们的方法并非每一步都只优化一个候选方案，而是将每个想法分散开来，使其衍生出多个实现，并使用性能最高的内核作为下一轮的种子。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/6e364905-5c22-45b1-b206-a5bae8898547.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="281" src="//img1.mydrivers.com/img/20250531/S6e364905-5c22-45b1-b206-a5bae8898547.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;团队使用OpenAI o3和Gemini 2.5 Pro挑战KernelBench 1级中的10个问题，运行多轮后，最佳内核开始出现。&lt;/p&gt;
+&lt;p&gt;其中大多数最佳结果出现在后续轮次（总共5轮），并且主要是第4轮或第5轮。&lt;/p&gt;
+&lt;p&gt;KernelBench是斯坦福团队自己提出的一套AI生成内核测试基准，基准中的任务分为3个级别，其中1级是指单一原始操作（Single primitive operation），包括AI的基础构建块（例如卷积、矩阵-向量与矩阵-矩阵乘法、损失函数、激活函数以及层归一化）。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/8b3d0f69-7a2b-4340-9349-c0dcb8edb481.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="381" src="//img1.mydrivers.com/img/20250531/S8b3d0f69-7a2b-4340-9349-c0dcb8edb481.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这一发现再加上之前DeepMind的AplhaEvolve，以及o3发现Linux的0day漏洞等一系列事件，让网友们认为Gemini 2.5Pro和o3的能力水平已经达到了新的层级。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/1670dfbd-801a-4241-9deb-22d3819628e6.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="138" src="//img1.mydrivers.com/img/20250531/S1670dfbd-801a-4241-9deb-22d3819628e6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;回到斯坦福的项目，在生成过程当中，可以看到模型的生成思路开始显现出与人类的经验相似之处——&lt;/p&gt;
+&lt;p&gt;内存访问优化： 提高不同内存层次结构（全局内存、共享内存、寄存器）之间数据移动的效率，并确保以最大化带宽和最小化冲突的方式访问数据；&lt;/p&gt;
+&lt;p&gt;异步操作和延迟隐藏： 通过将慢速操作（如全局内存访问）与计算或其他内存传输重叠，“隐藏”慢速操作的延迟；&lt;/p&gt;
+&lt;p&gt;数据类型和精度优化： 尽可能使用低精度数据类型（如 FP16 或 BF16）以减少内存带宽要求、提高缓存效率；&lt;/p&gt;
+&lt;p&gt;计算和指令优化：提高算术计算本身的效率，减少指令数量，或利用专门的硬件指令；&lt;/p&gt;
+&lt;p&gt;并行性和占用率增强：最大化流多处理器（SM）上的活动线程数量，以更好地隐藏延迟并提高整体吞吐量；&lt;/p&gt;
+&lt;p&gt;控制流和循环优化：减少与循环、分支和索引计算相关的开销。&lt;/p&gt;
+&lt;p&gt;并且斯坦福团队还展示了一组具体的优化轨迹，从中可以看出，&lt;strong&gt;并不是每一步优化都一定能让速度更快，但经过多个步骤的组合，内核的速度能够得到大幅提升，并最终超越PyTorch。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/efc226a9-f234-46da-8af4-76d0cd7e84e6.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="393" src="//img1.mydrivers.com/img/20250531/Sefc226a9-f234-46da-8af4-76d0cd7e84e6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在具体实现上，有人询问AI生成CUDA内核时的优化建议，是否可以被转化为对应代码实现、还是说只是触发了随机探索？&lt;/p&gt;
+&lt;p&gt;作者回应说，尽管还没有进行更严谨的系统验证，但是手动检查的案例中，生成的CUDA视线与提出的优化建议是大致匹配的。&lt;/p&gt;
+&lt;p&gt;即AI并不是在完全随机做优化，而是确实在尝试实现它自己提出的策略。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/8be097d4-c3b9-4d1c-ba8f-cbf722a1cee6.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="247" src="//img1.mydrivers.com/img/20250531/S8be097d4-c3b9-4d1c-ba8f-cbf722a1cee6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;华人主创团队意外发现&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这项研究共有三位作者：Anne Ouyang、Azalia Mirhoseini和Percy Liang。&lt;/p&gt;
+&lt;p&gt;Ouyang目前是斯坦福大学扩展智能实验室的博士生，她本硕毕业于麻省理工，曾在英伟达cuDNN团队工作。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/80cc026b-de10-4c6b-a6a5-cc80b66db6a0.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="290" src="//img1.mydrivers.com/img/20250531/S80cc026b-de10-4c6b-a6a5-cc80b66db6a0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Percy Liang是斯坦福大学计算机科学副教授兼统计学助理教授，目前担任斯坦福基础模型研究中心主任。&lt;/p&gt;
+&lt;p&gt;曾和李飞飞一起发布、推进了多项研究工作。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/2be0b1c5-d2ed-45b2-a474-f9f8dc0e6c00.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="201" src="//img1.mydrivers.com/img/20250531/S2be0b1c5-d2ed-45b2-a474-f9f8dc0e6c00.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Azalia Mirhoseini是斯坦福大学计算机科学助理教授、斯坦福扩展实验室创始人。她曾在DeepMind、Google Brain以及Anthropic工作过。&lt;/p&gt;
+&lt;p&gt;她此前参与的研究包括MoE、芯片设计算法AlphaChip等。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/55ca82c0-3ff5-41f1-8c91-c5975d542c88.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="497" src="//img1.mydrivers.com/img/20250531/S55ca82c0-3ff5-41f1-8c91-c5975d542c88.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本次研究，本来是希望生成数据来训练内核生成模型。&lt;/p&gt;
+&lt;p&gt;但是在过程中却出现了意想不到的结果，仅在测试阶段生成的合成数据本身，竟然可以生成性能非常优秀的内核。&lt;/p&gt;
+&lt;p&gt;因为这些内核利用了此前被认为很难实现的高级优化和硬件特性，所以团队决定以博客形式分享此次成果。&lt;/p&gt;
+&lt;p&gt;不过具体是如何生成数据的，研究团队暂时不对外发布，只是提到了这种设计理念也很简单。&lt;/p&gt;
+&lt;p&gt;最关键的还是，它已经展示出了巨大潜力。&lt;/p&gt;
+&lt;p&gt;此外，研究团队也认为此次发现也与最近的一些趋势相呼应——大规模再训练已不是必需。&lt;/p&gt;
+&lt;p&gt;有时，聪明的搜索和分支策略，可以解锁科学创新并解决复杂问题，通过verifier进行广泛搜索还能有更多收获。&lt;/p&gt;
+&lt;p&gt;将强大推理能力与同时探索多个假设结合起来，能带来更好结果。就像AlphaEvolve、AlphaEvolution、 Gemini 2.5 Pro深度思考一样。&lt;/p&gt;
+&lt;p&gt;最后，团队表示这项研究还有很多可优化的空间。比如他们手头上就还在优化两个维度：&lt;/p&gt;
+&lt;p&gt;FP16 Matmul：52% performance of torch.matmul&lt;/p&gt;
+&lt;p&gt;FP16 Flash Attention：9% performance of torch.nn.functional.scaled_dot_product_attention&lt;/p&gt;
+&lt;p&gt;与FP16或BF16相比，FP32在新推出硬件上的优化程度通常比较低，这也是为何使用FP32内核比PyTorch更容易实现性能提升。&lt;/p&gt;
+&lt;p&gt;他们表示，虽然现在还有不少限制，但是对于未来前景还是很乐观的。&lt;/p&gt;
+&lt;p&gt;毕竟最开始，他们连能正常运行的内核都生成不了，但是通过不断优化搜索方法，已经能让flash attention的性能提升到了一个不错的水平。&lt;/p&gt;
+&lt;p&gt;值得一提的是，搜索使用的资源也很少，大概只用了300万token输入和400万token输出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One More Thing&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;实际上，不只是一个团队在尝试开发内核大模型。&lt;/p&gt;
+&lt;p&gt;就在5月，开发了Devin的Cognition开源了首个通过强化学习即可编写CUDA内核的大模型Kevin-32B。&lt;/p&gt;
+&lt;p&gt;它基于QwQ-32B在KernelBench数据集上使用GRPO，实现了多轮强化学习，性能优于o3、o4-mini。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250531/91c82d23-b9e5-4f05-a2ae-ba748a77d7f6.png" target="_blank"&gt;&lt;img alt="斯坦福意外用AI生成超强CUDA内核 性能好得出奇！华人主创" h="486" src="//img1.mydrivers.com/img/20250531/S91c82d23-b9e5-4f05-a2ae-ba748a77d7f6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;参考链接：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[1]https://crfm.stanford.edu/2025/05/28/fast-kernels.html&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[2]https://x.com/anneouyang/status/1928124885567467768&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[3]https://x.com/cognition_labs/status/1919835720493236295&lt;/em&gt;&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 31 May 2025 06:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE16dmotWmZlM1JRdjAwZURNbUhvODBFbEN1QzBURTVkeXZQdU5wSW5OcDZGUjlrbWkyXzREUmFyWjZQaF9ILS1Vb2xsYTIzV3RkVlZwYUVsVDc</guid></item><item><title>真的很牙膏！酷睿Ultra 200升级版首次现身 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzcDRWRjg5NV9YMHdURGZMMUNIbVowV2tzMjJaNHNZWG9QQ040VVVOQThYMWxNRWNsYXFzN2J3RTVGSlF1SXpGaW5IdU8zVzBsTmpNVDR3T1U?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月31日消息，作为酷睿Ultra 200系列的升级版，Arrow Lake Refresh先是被取消，然后又复活了，现在终于有了确凿证据。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;根据泄露的W880工作站主板首测，Arrow Lake Refresh的名字赫然已经出现，也证明它只是一次小幅度的升级，没有任何本质变化。&lt;/strong&gt;&lt;/p&gt;
@@ -18,7 +107,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 31 May 2025 05:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAzcDRWRjg5NV9YMHdURGZMMUNIbVowV2tzMjJaNHNZWG9QQ040VVVOQThYMWxNRWNsYXFzN2J3RTVGSlF1SXpGaW5IdU8zVzBsTmpNVDR3T1U</guid></item><item><title>OpenAI的高估值，印度人立大功 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiUkFVX3lxTFBuZ1pXSHpFWnVDTTRYYkZ0NTRGcXRWektjWnRPQllHaHVKd2FjaXNGVVRSWHdOWGhzUUdNWHVMWkZjdUtMNmduc0tVeDJzY2ZBdEE?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sat, 31 May 2025 03:04:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUkFVX3lxTFBuZ1pXSHpFWnVDTTRYYkZ0NTRGcXRWektjWnRPQllHaHVKd2FjaXNGVVRSWHdOWGhzUUdNWHVMWkZjdUtMNmduc0tVeDJzY2ZBdEE</guid></item><item><title>3年亏了8亿！酒店送餐机器人 其实是在送钱 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9YVVEtT0lGZkVHWmxUMFdMY3NvSWtJOUpGTUV1WGVyT0pDY0ZwUmZxYlJLZHBCajktcXVMbUtXcXFWZWlZTDVfaFB3NFBIcktWei1mVXNTbHk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 31 May 2025 05:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAzcDRWRjg5NV9YMHdURGZMMUNIbVowV2tzMjJaNHNZWG9QQ040VVVOQThYMWxNRWNsYXFzN2J3RTVGSlF1SXpGaW5IdU8zVzBsTmpNVDR3T1U</guid></item><item><title>车价低到心动？行业人士：现在购车性价比最高，但也是风险最大的时候 - QQ News</title><link>https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tX21UY3MyOXpZR1RHUXpiUjIzZVhPMGVTWlMxUEVYRkJITm5VMmxjaWdUcFVNZ2ZfeHJUaXJ6c2FtSHJWeHh0QUZyRmRRR1o2cDQzX1pR?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="comps-contentify-wrap comps-contentify-pc-wrap comps-contentify-arbitrary-wrap"&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;&lt;i&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OC_Y2ZUOzbYaDw40qENPJN2OSPgVAqQSSzVGxEg80ITP0AA/641" data-src="https://inews.gtimg.com/news_bt/OC_Y2ZUOzbYaDw40qENPJN2OSPgVAqQSSzVGxEg80ITP0AA/641" alt="图片"&gt;&lt;/i&gt;&lt;span&gt;&lt;i&gt;&lt;span&gt;《车市新声》是由腾讯汽车推出的一档直播栏目，旨在联合合作伙伴、特邀专家、学者围绕如自动驾驶、价格战等车市热点事件直播解读相关议题，硬核输出带来干货的分析与解读。  &lt;/span&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;腾讯汽车《车市新声》&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;内容策划 杨   帆&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;编辑&lt;/strong&gt; &lt;strong&gt;杨布丁&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;近期，&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;哪吒汽车&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;关联公司合众新能源汽车股份有限公司被申请破产审查。事实上，早在破产消息之前，哪吒汽车App就多次出现断网、无法远程控车、蓝牙钥匙失效等问题，导致大量车主用车体验受损。&lt;/p&gt;&lt;p&gt;随着新能源汽车市场竞争白热化，哪吒汽车的困境并非个例，前有威马、高合，近期还有极越，他们的陆续“消失”，或许只是行业变化下的一个缩影。&lt;/p&gt;&lt;p&gt;对于已经购买这些品牌的用户来说，产品的售后、数据、权益等问题，成为悬在头顶的“达摩克利斯之剑”。&lt;/p&gt;&lt;p&gt;腾讯汽车《车市新声》栏目邀请知名经济学家、工信部信息通信经济专家委员会委员-盘和林，北方工业大学汽车产业创新研究中心主任、教授-纪雪洪，远川汽车评论主编-罗松松以及腾讯汽车行业观察主编-傲敦围绕“新势力变局下，车主用车权益如何保障？”进行一系列探讨解析。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OPxkAU2qRCK2q4hDoKq4ZDEU10JcCewp_08MMtEgPjaNwAA/1000" data-src="https://inews.gtimg.com/news_bt/OPxkAU2qRCK2q4hDoKq4ZDEU10JcCewp_08MMtEgPjaNwAA/1000" alt="图片"&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h3&gt;「核心要点提示」&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;以下为直播分享实录精华（在不改变原意的情况下有删减、调整）：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h2&gt;新势力的“难进难退”&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;Q：高合汽车要复活了？&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;远川汽车评论主编-罗松松:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;从年初相关消息传出到今天，高合一直没有正式宣布破产，说明他们一直在积极寻求资金支持。最初，高合主要是希望能和国内的一些资本方或产业方合作，比如&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;长安&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;等，也曾接触过一些行业大佬，但最终都没有达成合作。后来，他们转而寻求中东资本的支持。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;我认为，目前中国新能源汽车行业存在一个很特殊的现象：活着的企业日子都不太好过，而看似“死了”的企业又很难真正退出市场。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;这种现象背后存在双重因素：首先，地方政府与车企存在深度利益绑定，无论是直接投资还是税收就业考量，都难以接受属地车企破产；其次，&lt;strong&gt;中国已成为全球智能电动车领域的成本洼地和技术高地，&lt;/strong&gt;这种产业优势使本土电动车产品具备全球竞争力，也吸引着国际资本持续关注。&lt;/p&gt;&lt;p&gt;不过当国内产业资本集体放弃高合时，已充分说明其市场前景不被看好。即便获得中东资本输血，鉴于其核心竞争力和生存空间持续收窄，企业真正实现复苏的可能性仍然存疑。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;北方工业大学汽车产业创新研究中心主任、教授-纪雪洪：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;目前事件真实性尚待验证，但中东资本对中国新能源汽车产业确实展现出持续投资热情。参照&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;比亚迪&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;等企业获得中东资本重注的先例，高合与中东资方接洽存在现实可能性。不过合作能否最终落地仍需观察。&lt;/p&gt;&lt;p&gt;当前新能源汽车行业已进入下半场，经历前期的市场洗牌后，现存企业普遍具备较强产品竞争力和资本储备。近年来能够逆势进入市场的，基本都是像小米、华为这样具备强大资本和资源能力的企业。&lt;strong&gt;因此，单纯依靠资本输血想要让一家企业起死回生，甚至实现逆转，难度非常大。&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;Q：倒下的新势力都犯了什么错，有没有什么共性，对现阶段存活下来的车企们有什么警示？&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;知名经济学家、工信部信息通信经济专家委员会委员-盘和林：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;核心问题可归结为两大共性：成本控制失效与战略误判。当前行业已从资本驱动阶段转向硬核实力竞争阶段。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;第一，成本控制能力决定生死线。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;造车新势力能否存活，核心并不在于资本的多少，最关键的还是企业自身的内核，也就是造车的成本能否有效控制。过去存在"卖40万亏40万"的非理性扩张模式，但现在行业已经进入了新的阶段，尤其是在已经有企业实现盈利的当下，单纯靠资本输血依赖“烧钱”模式的企业很难再获得资本青睐。&lt;/p&gt;&lt;p&gt;从共性来看，很多倒下的企业都存在成本控制不力的问题。一些企业一味追求规模化，为通过低价占领市场、扩大销售后，就能提升与供应商的议价能力，从而降低成本。但实际上，动力电池等核心零部件的供应商同样具备规模效应和技术壁垒。例如，宁德时代等头部电池企业不仅规模大、技术成熟，还具备较强的议价能力，反而对车企形成成本压力。很多新势力车企既没有配套能力，也缺乏电池等关键零部件的自研能力，导致在供应链上处于弱势地位。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;第二，低端路线难以为继。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;部分车企选择走性价比、低端路线，试图通过低价抢占市场。当比亚迪等头部企业通过垂直整合能力将产品价格下探至10万元区间时，缺乏核心技术壁垒的二线品牌立即失去生存空间。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;第三，第二增长曲线存在技术风险。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;智能驾驶等新方向正在成为双刃剑。此前这类技术可作为溢价支撑和融资工具，但随着相关安全事故（如安徽车祸事件）的发生，其可能从利润增长点转变为技术风险点，对尚未建立稳定现金流的二线车企形成致命威胁。&lt;/p&gt;&lt;p&gt;所以，表面上看，资本断供是企业倒下的直接原因，但本质上还是企业自身缺乏降本能力和核心竞争力。资本方如果看不到企业降本和盈利的希望，自然不会持续投入。&lt;strong&gt;当前行业已经进入成熟阶段，淘汰赛正在加速，早期靠讲故事、画大饼的时代已经过去。现在，市场和投资人都在看谁能真正跑出来，谁能实现可持续发展。总体来看，成本控制和核心竞争力是决定企业能否存活的关键。&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;北方工业大学汽车产业创新研究中心主任、教授-纪雪洪：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;回顾这些倒下的企业，可以发现它们有一些共性。首先，很多企业的创始团队来自传统车企的高管。无论是威马、哪吒还是高合，基本上都是传统汽车行业的高管出来创业。在传统汽车市场环境较好的时候，他们取得过不错的成绩，但进入新能源汽车领域后，需要从零开始创业，这与在大平台上工作完全不同。此外，这些高管往往延续了传统汽车的思维方式。如果用传统车企的打法、理念和产品定位去参与竞争，实际上很难与传统车企形成差异化，反而会处于劣势。&lt;/p&gt;&lt;p&gt;相比之下，蔚小理想等企业的创始团队大多有互联网或消费电子行业的背景，更贴近智能汽车的发展方向。他们在产品理念、用户运营等方面有创新，并且产品迭代速度很快，更接近&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;特斯拉&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;的模式。此外，这些企业的创始人往往有多次创业的成功经验，并带着个人资本进入行业，这与传统车企高管创业有明显区别。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;远川汽车评论主编-罗松松:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;我认为，造车新势力倒下的核心问题还是“人”。但并不在于创始人是否来自传统车企，还是跨界高管，而在于他们创业的初衷和管理方式。&lt;/p&gt;&lt;p&gt;以高合为例，其创始人丁磊对融资态度保守，未能在危机前建立充足资金储备（相比之下，李斌对&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;蔚来&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;的资金管理更具前瞻性），同时对互联网资本开放度不足，例如字节跳动张一鸣曾考察高合但未达成合作，这侧面体现管理层对资本介入的审慎态度。&lt;/p&gt;&lt;p&gt;而产品方面，则显得过于激进。比如2022年初，高合某款车型月销量一度超过1000台，成为当时国产最贵的车型之一。但其在智能化方向的判断也存在问题，比如过度押注车路协同，对整车智能包括从L2到L4的演进路线缺乏清晰认知，座舱芯片迭代滞后，2022款车型仍采用高通820A而非行业主流的8155芯片。&lt;/p&gt;&lt;p&gt;综合来看，无论是对智能化的重视程度、资金来源的开放性，还是产品更迭的节奏和融资结构的把控，这些因素都影响了高合的生存，对现阶段存活下来的车企来说也是很重要的警示。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;漫长的“僵尸期”&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;Q：车企倒闭申请破产的流程是什么样的？&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;知名经济学家、工信部信息通信经济专家委员会委员-盘和林：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;破产主要分为两种情况：破产重整和破产清算。破产重整是指企业与债权人、股东、供应商、员工等多方协商，各方作出一定让步，寻求通过免除部分债务或引入新资金等方式，帮助企业恢复经营。这种方式的核心在于通过重组实现企业的延续，是一种相对温和的处理方式。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;而破产清算则是大家通常理解的“倒闭”。&lt;/strong&gt;在这种情况下，债权人会成立清算组，优先支付员工工资和税收，有抵押的债权人可以优先获得抵押物，剩余资产则变卖后按比例偿还其他债权人。破产清算的清偿率通常较低，尤其是在车企这种负债率较高的行业，供应商等相关方的回收几乎可以忽略不计，设备等资产也往往难以变现。&lt;/p&gt;&lt;p&gt;以哪吒汽车为例，这类企业更有可能首先寻求破产重组，通过减轻负担、引入新投资等方式寻找出路。如果重组无法达成，只能进入破产清算程序。需要注意的是，无论是破产重组还是清算，债权人一般不会主动发起，尤其是清算，因为一旦进入程序，债权人往往面临血本无归的风险。企业一旦被公开进入破产程序，潜在投资人和消费者会停止交易，企业现金流会迅速枯竭，经营难以为继。&lt;/p&gt;&lt;p&gt;因此，法院在受理此类案件时通常会尽量促成各方协商，避免进入不可逆转的破产程序。总体来看，无论是重组还是清算，对企业和相关方的伤害都很大，一旦进入破产程序，企业恢复正常经营的可能性极低。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;Q：正处于“转型”阶段的车企，车主因智能功能瘫痪等问题导致出现事故，责任该如何划分？&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;Q：车企陷入“转型”/寻求接盘的阶段，这个过程要持续多久？&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;知名经济学家、工信部信息通信经济专家委员会委员-盘和林：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;这个过程会相当漫长，主要取决于是破产重整还是破产清算，以及债权人是否有足够的动力推动破产程序。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;一般来说，推动企业破产的主要是债权人。但从债权人角度看，即使申请破产，债权人能够获得的清偿比例也很有限，可能只有10%、20%，甚至更低，所以部分债权人更倾向维持现状获取有限补偿，而非主动启动破产流程。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;就行业特性而言，新能源车企一旦进入破产程序，其资产实际价值往往远低于债务规模，甚至可能出现员工薪酬都难以偿付的情况。&lt;/strong&gt;这种"负资产"属性导致多数企业难以进入正式的司法破产程序，而是长期处于"非生非死"的停滞状态。&lt;/p&gt;&lt;p&gt;如果企业进入法院的破产程序，流程会有明确的时间周期，但实际上，很多企业根本走不到这一步。&lt;strong&gt;可以预见的是，未来我们会看到更多“僵尸企业”存在于市场上，既不彻底退出，也无法真正复苏。&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;Q：车企倒闭后车主的真实影响是怎么样的？未来行业会如何解决这样的问题？&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;北方工业大学汽车产业创新研究中心主任、教授-纪雪洪：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;车企一旦破产，首当其冲的就是车辆价值断崖式下跌。以极越为例，其二手车价在品牌危机后立即大幅缩水。更为现实的影响体现在三个方面：其一，智能互联功能可能全面瘫痪，例如此前部分用户反映的哪吒APP断网问题，导致远程控制等功能失效；其二，保险体系将产生连锁反应，保险公司可能将此类车辆列为拒保对象，导致续保成本飙升；其三，核心配件供应链断裂，事故车辆可能面临"无件可修"的困境。一旦发生事故，车辆大件的维修也会变得非常困难，甚至可能因为缺乏配件或维修成本过高，影响车辆的继续使用。&lt;/p&gt;&lt;p&gt;值得关注的是，目前已有第三方服务机构通过整合原厂供应商资源或回收库存零部件，为小众车型提供维修支持。但这类服务需要车企在破产前与第三方达成授权合作，确保技术背书和服务延续性。现实困境在于，濒临破产的车企往往疲于应对供应商追责，难以顾及用户权益维护。&lt;/p&gt;&lt;p&gt;因此，这一问题需要行业和政府共同关注。比如，是否可以设立保障基金，或者由行业协会、政府部门介入，要求车企在破产时对车主负责。根据现行汽车消费管理办法，车企应保证车型有十年的配件供应能力，但在实际操作中，随着市场竞争加剧，部分企业难以履行这一承诺。&lt;/p&gt;&lt;p&gt;未来，解决这一问题可以通过多种方式，比如保险公司与第三方企业、车企合作，或者由行业协会、政府牵头建立保障机制。无论采用哪种方式，核心都应以用户为中心，保障车主的合法权益。企业在发展顺利时要重视用户，在遇到困难时更不能忽视用户的利益，这是行业健康发展的基础。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;知名经济学家、工信部信息通信经济专家委员会委员-盘和林：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;当前部分车企面临经营困境，未来可能涉及数百万车主权益。解决问题的核心在于推进新能源汽车基础功能的标准化与通用化。&lt;/p&gt;&lt;p&gt;以传统燃油车为例，即使品牌退出市场，车主仍可通过第三方维修渠道解决配件问题。反观新能源车领域，部分企业为建立竞争壁垒，在电池规格等基础部件上采用差异化设计，甚至同一品牌不同车型都存在标准不统一的情况，这种做法实际上增加了用户的后续使用难度。&lt;/p&gt;&lt;p&gt;对于已形成规模化产业的新能源汽车而言，建议从三方面着手：其一，在电池规格、核心配件等基础领域建立强制标准，确保车主在车企退市后仍可获得基础维保服务；其二，智能车机系统应在保障安全前提下实现基础功能的兼容性，避免因系统割裂导致用户迁移困难；其三，建立行业保障基金作为补充机制，但需明确这只是辅助手段而非根本解决方案。&lt;/p&gt;&lt;p&gt;需要强调的是，标准化并不妨碍创新。企业可将创新重点放在智能座舱、高阶智驾等增值体验层面，而非在基础功能上构筑技术壁垒。这是维护用户利益、促进产业健康发展的根本所在。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;远川汽车评论主编-罗松松:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;首先需要明确的是，市场经济环境下消费者应当承担自主决策的责任。汽车作为大宗消费品，消费者在选择品牌时理应具备风险意识。当企业面临市场淘汰时，要求政府或社会为个体消费行为兜底不符合市场经济规律。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;关于电动车的标准化问题，其实充电桩的接口已经实现了统一，这一点毋庸置疑。但在电池方面，目前大多数电动车的电池结构非常复杂，电芯数量众多且高度集成，拆卸和更换都非常困难。比如特斯拉的电池包，里面有上千颗电芯，全部粘合在一起，一旦出现问题，基本无法单独更换，这也是导致电动车保险费用逐年上升、维保成本高企的重要原因。&lt;/p&gt;&lt;p&gt;如果要从行业角度思考解决方案，我认为可以借鉴房地产行业的预售资金监管制度。比如，新东方的俞敏洪曾提到，公司账上要始终留有足够支付员工几个月工资的现金流。对于车企来说，是否也可以设立类似的资金底线，确保即使企业出现问题，现有车主的基本用车需求和安全能够得到保障，比如车机系统不黑屏、车辆能够正常启动和行驶等。毕竟，一旦出现系统失灵、无法解锁或挂挡等问题，会带来很大的安全隐患。&lt;/p&gt;&lt;p&gt;当然，这种兜底措施应该由企业自身来承担，而不是社会或政府出面。市场经济的本质就是“买定离手”，每个人都要为自己的选择负责。我们可以探讨行业是否需要建立一定的保障机制，但不应由政府或协会强制设立专项资金。消费者和企业都应遵循市场规则，理性决策、各自承担相应的责任。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;告别“烧钱”阶段，谁能突围？&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;Q：未来什么样的新势力才能存活下去？&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;知名经济学家、工信部信息通信经济专家委员会委员-盘和林：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;当前新能源汽车行业已进入成熟期，存活的关键在于产业链掌控能力。以比亚迪为例，其通过垂直整合实现全产业链自主可控，在成本控制方面形成显著优势。当行业告别资本驱动的烧钱阶段后，不具备降本能力的企业终将被淘汰。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;现阶段新势力需要突破两个方向：一是构建规模化成本优势，通过供应链管理、技术自研和生产效率提升实现降本增效；二是建立品牌护城河，但后者门槛极高，短期内很难被新势力复制，目前国内企业更适合通过成本控制突围。&lt;/p&gt;&lt;p&gt;从投资逻辑看，资本市场已不再单纯追逐规模扩张，转而关注企业的成本管控与盈利潜力。最终能存活的企业，必然是那些在研发投入、生产制造和供应链协同方面形成系统性降本能力的竞争者。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;远川汽车评论主编-罗松松:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;未来新能源车企领域的头部效应会非常明显。现在市场上新成立的新能源车企，产品价格大多集中在10万到50万元区间。10万元以下的市场主要还是由传统车企如&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;吉利&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;、比亚迪等占据，而像&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;零跑&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;、哪吒、蔚来等新势力品牌，基本也都集中在10万到40万元之间。这样的价格区间其实很难容纳这么多新能源车企，未来必然会有不少企业被淘汰。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;我的判断是，未来可能会出现更多大型的汽车产业集团，而不少新势力车企都有可能面临被收购的命运。&lt;/strong&gt;对于一些具备品牌、成本或技术优势的企业来说，仍然具有一定的收购价值，可以为大集团带来补充效应。至于哪些新势力最终能够存活下来，现在还很难下定论，&lt;strong&gt;但可以预见的是，未来会有越来越多的品牌被淘汰，市场格局将进一步集中。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;对于消费者来说，在购车时需要更加谨慎，尤其是在追求低价的同时，要充分考虑潜在的风险和损失做好最坏打算：一旦品牌消失，能否承受相应代价？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;现在是买车性价比最高的时代，但同时也是风险最大的时代。虽然现在的车型配置丰富、价格实惠，但一旦遇到品牌倒闭，消费者可能会面临较大的经济损失。&lt;/strong&gt;比如去年年底买了某品牌的车，结果今年品牌就退出市场，短时间内可能会损失十万元，这样的风险不容忽视。当前行业正处于极端的两面性阶段，作为消费者，大家都需要对此有充分的心理准备。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul classname="ex-list" data-ex-list="ul" data-list-style-type="disc" class="nonUnicode-list-style-type"&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;北方工业大学汽车产业创新研究中心主任、教授-纪雪洪：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;虽然行业内有观点认为未来新能源汽车品牌不会剩下太多家，但我不完全认同。汽车的功能性和价格维度远超手机，两者行业虽有相似性，但差异显著。汽车行业未来格局可能更类似于过去的电脑行业，将存在核心供应商（如宁德时代、华为、Momenta等），以及专注于制造、通过与核心企业合作满足细分市场需求的品牌。后者虽生存压力较大，但仍能存活。因此，对存活品牌的数量不必过于悲观。&lt;/p&gt;&lt;p&gt;当然，行业洗牌在所难免。当前燃油车市场快速萎缩，新能源汽车高速增长。在总量基本稳定的存量市场中，燃油车份额锐减。&lt;strong&gt;那些在新能源化和智能化转型上较慢的传统燃油车企，尤其是一些合资品牌，可能会面临被淘汰的风险。过去依赖合资企业盈利的国内股东，也会因此承受较大压力。虽然这些企业正在积极孵化新品牌，但高端化转型需要巨大的投入，而母公司利润下滑使得这种转型更加艰难。&lt;/strong&gt;因此，传统车企必须具备强烈的危机意识，否则很可能在转型过程中被淘汰。&lt;/p&gt;&lt;p&gt;反观新能源造车新势力，目前存活下来且现金流与利润状况相对不错的几家，证明了其较高的生存能力。我比较看好它们。因为它们是在资源受限甚至备受质疑的激烈竞争中生存下来，并实现了销量增长。这证明其产品能够抓住目标客户群。这些新势力目前展现出很强的战斗力，未来很可能成为行业的领军力量，虽不一定规模最大，但能在细分市场（如高端车型或特定品类）中稳健发展。&lt;/p&gt;&lt;p&gt;综合来看，认为仅剩“十家八家”的观点过于保守。我们还需考虑海外市场的巨大潜力。部分在国内市场艰难的车企，通过技术授权（例如与一汽、Stellantis合作）或像&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;奇瑞&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;、比亚迪那样提前布局海外，可以拓展生存空间。海外市场为车企提供了成为国际车企的机会，甚至可以通过“反向合资”与国际转型较慢的车企合作。&lt;/p&gt;&lt;p&gt;因此，我对中国车企的竞争力及未来能存活的车企数量持相对乐观态度。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p powered-by="qqnews_ex-editor"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>QQ News</author><pubDate>Sat, 31 May 2025 03:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE1tX21UY3MyOXpZR1RHUXpiUjIzZVhPMGVTWlMxUEVYRkJITm5VMmxjaWdUcFVNZ2ZfeHJUaXJ6c2FtSHJWeHh0QUZyRmRRR1o2cDQzX1pR</guid></item><item><title>OpenAI的高估值，印度人立大功 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiUkFVX3lxTFBuZ1pXSHpFWnVDTTRYYkZ0NTRGcXRWektjWnRPQllHaHVKd2FjaXNGVVRSWHdOWGhzUUdNWHVMWkZjdUtMNmduc0tVeDJzY2ZBdEE?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sat, 31 May 2025 03:04:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUkFVX3lxTFBuZ1pXSHpFWnVDTTRYYkZ0NTRGcXRWektjWnRPQllHaHVKd2FjaXNGVVRSWHdOWGhzUUdNWHVMWkZjdUtMNmduc0tVeDJzY2ZBdEE</guid></item><item><title>3年亏了8亿！酒店送餐机器人 其实是在送钱 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9YVVEtT0lGZkVHWmxUMFdMY3NvSWtJOUpGTUV1WGVyT0pDY0ZwUmZxYlJLZHBCajktcXVMbUtXcXFWZWlZTDVfaFB3NFBIcktWei1mVXNTbHk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;在歪果仁眼中，咱大部分酒店都有的送餐机器人，似乎已经成了来中国游玩的尝鲜项目之一。&lt;/p&gt;
 &lt;p&gt;一位外网博主随便录了一段送餐机器人的工作流程，就收获了上千万播放。&lt;/p&gt;
@@ -433,7 +522,90 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 16:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA1djNoRFU4SVI5YkJDenEwWktIWW00WEFtQXRZWnBOaTZZTk9VcDA4NWt1VGQxMmVnVk95MUJ5clZPU015Vzgtc1prbm9WeVR5NG1nT2ZuLUY</guid></item><item><title>英特尔考虑退出网络与边缘业务 博通强化AI芯片主导地位 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMihwFBVV95cUxNMVB5QXU1YkEwMjJpQTBXVHNWbEtuZGdnY3RCWkVSM09LVlpKV3JKMkU3RUE1aEpLaHZNaUpPUm02cC1uVnJ2MEdQQUtGN1YwV19scVdqaXV2ZlcxOFBHUFNmOEU1WS1ZMEQxeF9nUVNGaVJqN0FfdEdSeVphQXBQRjRIQXpDY1k?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 16:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA1djNoRFU4SVI5YkJDenEwWktIWW00WEFtQXRZWnBOaTZZTk9VcDA4NWt1VGQxMmVnVk95MUJ5clZPU015Vzgtc1prbm9WeVR5NG1nT2ZuLUY</guid></item><item><title>iPhone最强平替！vivo X200s首销月拿下4000-5000元价位段第一 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tZW5udTRCdmhXWF9PS0twTFFOOHBMZFpiVExhaUhrQ1JFWlFKaXBHa1FxM3FCb2dFNHp6YXkzczFCZkEwbFJpVWNVQ3lDNi13aVpIdmpQYmU?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;iPhone最强平替！vivo X200s首销月拿下4000-5000元价位段第一&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-31 00:10:07  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1051075-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月31日消息，据供应链消息，vivo X200s和X200 Ultra自4月21日发布上市一个月（4.21-5.25），在高端旗舰市场中取得突破。&lt;/p&gt;
+&lt;p&gt;其中&lt;span&gt;&lt;strong&gt;X200s助力vivo以23.32%的份额拿下4000-5000元价位段第一&lt;/strong&gt;&lt;/span&gt;，X200 Ultra助力vivo在国产旗舰机6000-8000元价位段拿下第二，6月毕业促销季即将来临，这些机型将进一步推升vivo的市场份额。&lt;/p&gt;
+&lt;p&gt;资料显示，vivo X200s于4月21日正式发布，&lt;strong&gt;国补后的首发起售价是3699元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该机堪称是iPhone最佳平替，这次vivo打破了安卓和iOS之间的壁垒隔阂，实现了互联互通，X200s支持与苹果设备互传实况照片、视频、文件等等。&lt;/p&gt;
+&lt;p&gt;并且vivo还实现电话/短信/通知双机流转服务，iPhone上来电了可以用vivo X200s来接听，而且你可以粘贴来自iPhone的验证码，也可以查找iPhone，同时X200s还兼容AirPods系列耳机。&lt;/p&gt;
+&lt;p&gt;核心配置上，vivo X200s采用6.67英寸1.5K直屏，搭载联发科天玑9400+平台，前置3200万，后置5000万主摄IMX921、5000万像素长焦IMX882和5000万像素超广角，电池是6200mAh，支持90W有线和40W无线闪充。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250531/debd518a656f4c76a1976d828d560313.jpg" target="_blank"&gt;&lt;img alt="iPhone最强平替！vivo X200s首销月拿下4000-5000元价位段第一" h="400" src="//img1.mydrivers.com/img/20250531/s_debd518a656f4c76a1976d828d560313.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="4199元" goods_title="vivo X200s 12GB+256GB 淡紫 国家补贴 蔡司超级潜望长焦 湿手秒开超声波指纹 拍照 AI手机" href="https://dt.mydrivers.com/mv.ashx?txt=WlYYP" img="https://img14.360buyimg.com/pop/jfs/t1/271640/4/22203/29696/6801cb16F3f98d544/1962f5648dae25e5.png" target="_blank"&gt;京东(4199元)&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 16:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4tZW5udTRCdmhXWF9PS0twTFFOOHBMZFpiVExhaUhrQ1JFWlFKaXBHa1FxM3FCb2dFNHp6YXkzczFCZkEwbFJpVWNVQ3lDNi13aVpIdmpQYmU</guid></item><item><title>宇树科技放大招！全新人形机器人来了：26关节 钢铁侠同款胸灯 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tSWVmcUJROG9ScHI0ME5TWlRJM1VGRU5rdF9lYmpja3lXTGthMDJ4VmdUZnBYU2xMYWlsb1RGUXRRR3dYbjlTdExyOEp3X1pLS09zT2pkS0c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月31日消息，日前，宇树科技官方发布海报，&lt;span&gt;&lt;strong&gt;海报中出现了一个全新人形机器人剪影，机器人胸口还有类似钢铁侠的三角胸灯。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;海报配文“26 joint DOF（6*2+2+5*2+2） ”，指26个关节活动度，定价为“?000”美元。&lt;/p&gt;
+&lt;p&gt;除此以外，官方暂未公布更多新品信息，只是让大家敬请期待。&lt;/p&gt;
+&lt;p&gt;有网友猜测，此次宇树科技推出的是家庭服务机器人，但该说法未得到官方证实。&lt;/p&gt;
+&lt;p&gt;在今年3月的中国发展高层论坛2025年年会上，宇树科技创始人王兴兴现身论坛开幕式。&lt;/p&gt;
+&lt;p&gt;有媒体向他提问“家用人形机器人何时上市？”，王兴兴表示，其实我们目前像工业端会发展更快一点，家用还是会更慢一点，大家都在推进这个事情。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“但是具体多长时间，也不是特别好预估，我觉得，也不是最近两三年可以实现的问题。”&lt;/strong&gt;王兴兴说。&lt;/p&gt;
+&lt;p&gt;据了解，目前，宇树科技有四足机器狗和通用人形机器人两大系列产品，其中，人形机器人包括Unitree H1/H1-2和Unitree G1。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250530/f62870dd418c45128d3bf367f0a63e8c.jpg" target="_blank"&gt;&lt;img alt="宇树科技放大招！全新人形机器人来了：26关节 钢铁侠同款胸灯" h="984" src="//img1.mydrivers.com/img/20250530/s_f62870dd418c45128d3bf367f0a63e8c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 16:04:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4tSWVmcUJROG9ScHI0ME5TWlRJM1VGRU5rdF9lYmpja3lXTGthMDJ4VmdUZnBYU2xMYWlsb1RGUXRRR3dYbjlTdExyOEp3X1pLS09zT2pkS0c</guid></item><item><title>英特尔考虑退出网络与边缘业务 博通强化AI芯片主导地位 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMihwFBVV95cUxNMVB5QXU1YkEwMjJpQTBXVHNWbEtuZGdnY3RCWkVSM09LVlpKV3JKMkU3RUE1aEpLaHZNaUpPUm02cC1uVnJ2MEdQQUtGN1YwV19scVdqaXV2ZlcxOFBHUFNmOEU1WS1ZMEQxeF9nUVNGaVJqN0FfdEdSeVphQXBQRjRIQXpDY1k?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -508,7 +680,73 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Fri, 30 May 2025 15:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxNMVB5QXU1YkEwMjJpQTBXVHNWbEtuZGdnY3RCWkVSM09LVlpKV3JKMkU3RUE1aEpLaHZNaUpPUm02cC1uVnJ2MEdQQUtGN1YwV19scVdqaXV2ZlcxOFBHUFNmOEU1WS1ZMEQxeF9nUVNGaVJqN0FfdEdSeVphQXBQRjRIQXpDY1k</guid></item><item><title>全球首款星闪手表来了！华为WATCH 5即将上市：支持尊界S800星闪车钥匙 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE85SzhmaEtYUS04R2ZueHZXWkxKMnl1aXFGS1ZVb19LSVN4WGhfTHc2Mk1QTGlfU2YxQVRYeTdRRkJ5VkxTeTFUUlJBdXd3Z1hsRzFSZzlsTEU?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Fri, 30 May 2025 15:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxNMVB5QXU1YkEwMjJpQTBXVHNWbEtuZGdnY3RCWkVSM09LVlpKV3JKMkU3RUE1aEpLaHZNaUpPUm02cC1uVnJ2MEdQQUtGN1YwV19scVdqaXV2ZlcxOFBHUFNmOEU1WS1ZMEQxeF9nUVNGaVJqN0FfdEdSeVphQXBQRjRIQXpDY1k</guid></item><item><title>618史低价！小米15 Ultra 16+1T不到6000元：网友直呼性价比起飞了 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE81aE14S0JWQXlNTzJ4MjhzNXNqWFdEcjBVYmw3OURacFI0WWs0dmlobTFwXzdTc2pWRVVhV1JxSXlRZF9oMVRLSEZPcmxvR2dTUGdwT2VteW8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;618史低价！小米15 Ultra 16+1T不到6000元：网友直呼性价比起飞了&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-05-30 23:08:43  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1051070-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月30日消息，博主搞机Time实测发现，&lt;strong&gt;小米15 Ultra 16GB+1TB版本领券后到手价只要&lt;span&gt;5918元&lt;/span&gt;，&lt;/strong&gt;性价比起飞了。&lt;/p&gt;
+&lt;p&gt;据悉，消费者需要先去直播间领取6000-500的消费券，&lt;strong&gt;再叠加国补和Plus券之后就能拿到最低价格，&lt;/strong&gt;在同档位极具竞争力。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250530/5e982af2a4ba4c9cb5356d877fdd921c.jpg" target="_blank"&gt;&lt;img alt="618史低价！小米15 Ultra 16+1T不到6000元：网友直呼性价比起飞了" h="503" src="//img1.mydrivers.com/img/20250530/s_5e982af2a4ba4c9cb5356d877fdd921c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该机被称之为“夜神”，搭载了史上最强悍的影像传感器，主摄是1英寸的光喻LYT-900超大底摄像头，光圈为f/1.63，拥有5000万像素的解析力，是目前业内公认的旗舰传感器。&lt;/p&gt;
+&lt;p&gt;与此同时，小米15 Ultra还配备一颗2亿像素超长焦镜头，可以拍摄更远的景观，带来超强的远景拍摄能力，搭配70mm人像镜头和14mm超广角镜头，15 Ultra实现了全焦段覆盖。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250530/7bd8e605f3994750b5954e848c5a9960.jpg" target="_blank"&gt;&lt;img alt="618史低价！小米15 Ultra 16+1T不到6000元：网友直呼性价比起飞了" h="400" src="//img1.mydrivers.com/img/20250530/s_7bd8e605f3994750b5954e848c5a9960.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;核心配置上，&lt;span&gt;&lt;strong&gt;小米15 Ultra采用6.73英寸3200×1440全面屏，搭载高通骁龙8至尊版平台，&lt;/strong&gt;&lt;/span&gt;前置3200万像素，电池是6000毫安时，支持90W有线和80W无线充。&lt;/p&gt;
+&lt;p&gt;另外，小米15 Ultra带来了传奇拼色设计，右侧是荔枝皮纹理，左侧是玻璃纤维材质，左上角还有全新Ultra铭牌作为点睛之笔，营造出经典的复古相机氛围感。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250530/cc58bea066784faeb5c8e317082aab48.jpg" target="_blank"&gt;&lt;img alt="618史低价！小米15 Ultra 16+1T不到6000元：网友直呼性价比起飞了" h="474" src="//img1.mydrivers.com/img/20250530/s_cc58bea066784faeb5c8e317082aab48.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250530/59d325eec73b492e9412422837fc3a06.jpg" target="_blank"&gt;&lt;img alt="618史低价！小米15 Ultra 16+1T不到6000元：网友直呼性价比起飞了" h="511" src="//img1.mydrivers.com/img/20250530/s_59d325eec73b492e9412422837fc3a06.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="6999元" goods_title="小米（MI）小米15Ultra&amp;amp;SU7Ultra齐发布 徕卡2亿超级长焦 白色 16+512 小米 5g手机 小米汽车" href="https://dt.mydrivers.com/mv.ashx?txt=AZmm5" img="https://img14.360buyimg.com/pop/jfs/t1/257450/16/24821/25390/67bebb90Ffe05bc86/1766769044b5d347.png" target="_blank"&gt;京东(6999元)&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 15:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81aE14S0JWQXlNTzJ4MjhzNXNqWFdEcjBVYmw3OURacFI0WWs0dmlobTFwXzdTc2pWRVVhV1JxSXlRZF9oMVRLSEZPcmxvR2dTUGdwT2VteW8</guid></item><item><title>全球首款星闪手表来了！华为WATCH 5即将上市：支持尊界S800星闪车钥匙 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE85SzhmaEtYUS04R2ZueHZXWkxKMnl1aXFGS1ZVb19LSVN4WGhfTHc2Mk1QTGlfU2YxQVRYeTdRRkJ5VkxTeTFUUlJBdXd3Z1hsRzFSZzlsTEU?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月30日消息，今日，尊界S800正式发布，上海海思官方发文称，尊界S800搭载星闪车钥匙。&lt;/p&gt;
 &lt;p&gt;海思表示，&lt;strong&gt;支持星闪数字车钥匙的智能手表华为WATCH 5、智能手机将于近期首发上市，与汽车形成星闪生态闭环。&lt;/strong&gt;&lt;/p&gt;
@@ -530,7 +768,12 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 14:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE85SzhmaEtYUS04R2ZueHZXWkxKMnl1aXFGS1ZVb19LSVN4WGhfTHc2Mk1QTGlfU2YxQVRYeTdRRkJ5VkxTeTFUUlJBdXd3Z1hsRzFSZzlsTEU</guid></item><item><title>景区抢滩“黑科技”！文旅暗战为何使用这一“神器”？ - guancha.cn</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTE9EVTVTQ3ZnUndzeEUtaDNSX2YybFZuc0oxWnJQNlRvNDhoR3ctdTh3R0ZEelF3ZTZUV3I1ZUtlcm1XRmhtMTJwcTRLdE1wTW12a2RnU1Z5SlVIM0FYeXA0V0pB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 14:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE85SzhmaEtYUS04R2ZueHZXWkxKMnl1aXFGS1ZVb19LSVN4WGhfTHc2Mk1QTGlfU2YxQVRYeTdRRkJ5VkxTeTFUUlJBdXd3Z1hsRzFSZzlsTEU</guid></item><item><title>谷歌CEO访谈：AI业务的崛起与未来之路，互联网生态将重新洗牌 - 36kr.com</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SQW5YOHFyUVloRG0xMk5PZTJFMzlfMHB2akc3RmF2Q25aOGZzbjFjS0tnN1lTZnVaMmJqVlBiWndXcUdYQ3M1NlVod3Bndw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p id="app"&gt;&lt;/p&gt;
+
+
+&lt;/body&gt;
+</description><author>36kr.com</author><pubDate>Fri, 30 May 2025 12:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5SQW5YOHFyUVloRG0xMk5PZTJFMzlfMHB2akc3RmF2Q25aOGZzbjFjS0tnN1lTZnVaMmJqVlBiWndXcUdYQ3M1NlVod3Bndw</guid></item><item><title>景区抢滩“黑科技”！文旅暗战为何使用这一“神器”？ - guancha.cn</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTE9EVTVTQ3ZnUndzeEUtaDNSX2YybFZuc0oxWnJQNlRvNDhoR3ctdTh3R0ZEelF3ZTZUV3I1ZUtlcm1XRmhtMTJwcTRLdE1wTW12a2RnU1Z5SlVIM0FYeXA0V0pB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	【文/观察者网 王勇 编辑/赵乾坤】
 &lt;/p&gt;
@@ -1096,56 +1339,4 @@
       &lt;/div&gt;
     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 10:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1iNURpMV84Tm9xLXRWOGNERWpJdEZWd2tsblF0Z245X1FtN2tGYkRCbWwyUmZzNzF5aW8tVlhybE1GUGdqZXBVc0R5aklxYXdsSmhSd19nSmE</guid></item><item><title>比特币录得四连跌，盘中跌穿10.5万美元！加密货币市场超21万人爆仓 提供者 Investing.com - 英为财情 Investing.com</title><link>https://news.google.com/rss/articles/CBMic0FVX3lxTE1lMzh0N2ZSQUFTSkU0bDVsNEFVUVN5TzFqRmZucHhrWXI2ZGFsZEtrbUd3STQzWXNMbkJfWFR2bklVMFF4M3JhQjRtVlV2ZklaTU5IWWRPbkUzbjVHb05MTEo5bkJPaV8xbkFRY1hwTGRFaDg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Fri, 30 May 2025 09:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMic0FVX3lxTE1lMzh0N2ZSQUFTSkU0bDVsNEFVUVN5TzFqRmZucHhrWXI2ZGFsZEtrbUd3STQzWXNMbkJfWFR2bklVMFF4M3JhQjRtVlV2ZklaTU5IWWRPbkUzbjVHb05MTEo5bkJPaV8xbkFRY1hwTGRFaDg</guid></item><item><title>DeepSeek发布新版R1 称多方面性能强化 - 联合早报</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTE9WdmVfUnlVSVNDcVZnVXBIM1MweEdHcWRqRkRSY1VjN3ZKVEQzc3dPT3NEcnVXZTdkYkgwNkJHdkpZYkhiTF9DYUFGOGlIMmh2ZmRVX3gycHdKcEJNUlRYeW9mMFhsLTBzd1E?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;p&gt;（浙江讯）中国人工智能起步公司深度求索（DeepSeek），星期四公布其热门推理模型R1的首次更新版本，称新模型在通用逻辑等多个基准上得到强化，整体表现已接近其他国际顶尖模型。&lt;/p&gt;&lt;p&gt;深度求索星期四（5月29日）在官方微信公众号发文称，R1模型已完成小版本升级，在思维深度与推理能力上获得显著的提升。&lt;/p&gt;&lt;p&gt;据介绍，新版R1模型在数学、编程与通用逻辑等多个基准测评中领先当前中国国内所有模型，在整体表现上已接近美国竞争对手OpenAI和谷歌推出的顶尖模型。&lt;/p&gt;&lt;p&gt;该公司还称，新版模型在总结摘要、阅读理解等场景中的幻觉率也降低了约一半，能提供更准确、可靠的结果。创意写作方面，更新后的R1模型能输出篇幅更长、结构内容更完整的作品，同时呈现出更加贴近人类偏好的写作风格。&lt;/p&gt;&lt;p&gt;上述贴文指用户通过官方网站、应用程序或微信小程序进入对话界面后，开启“深度思考”功能即可体验最新版本。应用程序编程接口（API）也已同步更新，调用方式不变。&lt;/p&gt;
     
-  &lt;p&gt;DeepSeek-R1模型1月20日问世后，因其制造成本相对低，却在性能上逼近主流AI巨头，&lt;a href="/news/china/story20250209-5835546" target="_blank"&gt;引起全球关注&lt;/a&gt;。&lt;a href="/news/china/story20250322-6056246" target="_blank"&gt;腾讯&lt;/a&gt;、&lt;a href="/news/china/story20250313-6013993" target="_blank"&gt;阿里巴巴&lt;/a&gt;等中国科技巨头也陆续推出自研人工智能模型，反映中国人工智能市场竞争日益激烈。 &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Fri, 30 May 2025 09:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9WdmVfUnlVSVNDcVZnVXBIM1MweEdHcWRqRkRSY1VjN3ZKVEQzc3dPT3NEcnVXZTdkYkgwNkJHdkpZYkhiTF9DYUFGOGlIMmh2ZmRVX3gycHdKcEJNUlRYeW9mMFhsLTBzd1E</guid></item><item><title>欧洲央行官员警告银行面临加密资产相关风险 提供者 Investing.com - 英为财情 Investing.com</title><link>https://news.google.com/rss/articles/CBMiekFVX3lxTE1MY0NES1RfV1l6aHAxZUlOYzlBZEtFaUxSWlZJZnNiMlZiU3JDcXNuRWk5bDFWbjFTY3lQei1uZUxya19idXN6cXpsY0M3R05FNWhOdkZ0d0VtY1RWSndMdXFWQVc2eFlOX3FDTExENFlIZ1hKUnktUE5B?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Fri, 30 May 2025 09:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE1MY0NES1RfV1l6aHAxZUlOYzlBZEtFaUxSWlZJZnNiMlZiU3JDcXNuRWk5bDFWbjFTY3lQei1uZUxya19idXN6cXpsY0M3R05FNWhOdkZ0d0VtY1RWSndMdXFWQVc2eFlOX3FDTExENFlIZ1hKUnktUE5B</guid></item><item><title>iPhone 17灵动岛或将彻底隐身，MOE是什么鬼？ - 36氪</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE5OclY4MXp0cHVaT2gwS3JTS25WemtqTG5iSDVBeVRGbE1yOVJFQ3A5TXR5YTVGWGY5NkhSTjVqM3JUMjlfZGQ2XzdYQ2czdw?oc=5</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-
-
-&lt;/body&gt;
-</description><author>36氪</author><pubDate>Fri, 30 May 2025 09:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5OclY4MXp0cHVaT2gwS3JTS25WemtqTG5iSDVBeVRGbE1yOVJFQ3A5TXR5YTVGWGY5NkhSTjVqM3JUMjlfZGQ2XzdYQ2czdw</guid></item><item><title>苹果高端市场杀疯了！iPhone 16 Pro单周激活量近80万台 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE16ZTZrSWQxSUpRZ3lVQjVOVEhPd1UtNjA5ZlktdnptYnBkMnBPSk1wZHd5bU1DRWY0OVBQcW9rei1uLVpPcHZncEFOYjR6SnJFOVNmeWI2OVA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月30日消息，在降价+国补的双重刺激下，苹果手机在高端市场又杀疯了。&lt;/p&gt;
-&lt;p&gt;今日，数码博主“数码闲聊站”发文称，&lt;span&gt;&lt;strong&gt;苹果在21周单周份额蝉联榜一，iPhone 16 Pro Max国内累积激活量已破1000万台，iPhone 16 Pro单周激活近80万台，&lt;/strong&gt;&lt;/span&gt;高端真是乱杀了。&lt;/p&gt;
-&lt;p&gt;据了解，从5月10日开始，iPhone 16 Pro系列正式调价。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250530/d390372fff19485a9c520f2acd6c4fde.png" target="_blank"&gt;&lt;img alt="苹果高端市场杀疯了！iPhone 16 Pro单周激活量近80万台" h="159" src="//img1.mydrivers.com/img/20250530/s_d390372fff19485a9c520f2acd6c4fde.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中，&lt;strong&gt;iPhone 16 Pro的128GB版降幅最大，电商平台直降2500元，并且首次参加国补，叠加500元国补后到手价5499元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此外，iPhone 16 Pro 256GB也限时优惠2100元，以旧换新补贴+消费券，到手6899元起。&lt;/p&gt;
-&lt;p&gt;iPhone 16 Pro Max 256GB和512GB限时优惠2200元，叠加优惠到手价分别为7799元和9799元。&lt;/p&gt;
-&lt;p&gt;截稿前，苹果三款手机牢牢占据京东手机618竞速榜前三，&lt;strong&gt;三款机型分别是iPhone 16 Pro、iPhone 16 Pro Max和iPhone 16。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从这些数据来看，降价后的iPhone 16 Pro系列销量表现，是国产手机无法相比的。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250530/fc7e8709a5e24798bb511f893b0e3965.png" target="_blank"&gt;&lt;img alt="苹果高端市场杀疯了！iPhone 16 Pro单周激活量近80万台" h="766" src="//img1.mydrivers.com/img/20250530/s_fc7e8709a5e24798bb511f893b0e3965.png" w="503"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250530/483cb1aa325b446b87df5ae7d443c876.jpg" target="_blank"&gt;&lt;img alt="苹果高端市场杀疯了！iPhone 16 Pro单周激活量近80万台" h="338" src="//img1.mydrivers.com/img/20250530/s_483cb1aa325b446b87df5ae7d443c876.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 09:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE16ZTZrSWQxSUpRZ3lVQjVOVEhPd1UtNjA5ZlktdnptYnBkMnBPSk1wZHd5bU1DRWY0OVBQcW9rei1uLVpPcHZncEFOYjR6SnJFOVNmeWI2OVA</guid></item><item><title>搭配NVIDIA显卡时网页/视频闪烁：火狐Firefox推出139.0.1紧急更新 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9mSzFYWXY2Y1l4ZW91c3U1aE1fNzRHR054MjFZa1k0ZE5OQ0R2d3lLMmNGTl9CNnB4YW1fSXRvMjlZVGdpRGhaVmlIMWlkdFhJNDVxYURWbng?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技5月30日消息，&lt;span&gt;&lt;strong&gt;Mozilla Firefox浏览器发布了一个紧急更新版本139.0.1，用于解决搭配NVIDIA GPU使用时出现的网页和视频闪烁问题。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这一问题在Firefox v139.0版本发布后被部分用户反馈，影响了部分用户的正常使用体验。&lt;/p&gt;
-&lt;p&gt;该问题的原因是Firefox v139.0版本删除了一个阻止列表，该列表原本用于阻止浏览器在混合刷新的NVIDIA设置中使用名为DirectComposition的功能。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当用户在60Hz显示器上播放60FPS视频时，滚动或悬停内容会导致部分视频缓冲区泄露到其他窗口中，页面重绘时就会出现闪烁或闪光问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;而使用AMD或Intel GPU的设备，或者播放30FPS的视频则不受此问题影响。&lt;/p&gt;
-&lt;p&gt;值得注意的是，DirectComposition本身并不是问题的根源，而是Firefox浏览器的实现方式与某些NVIDIA GPU发生了冲突。&lt;/p&gt;
-&lt;p&gt;Firefox工程师后续会针对该问题进行进一步优化，未来即使删除该阻止列表，也不应再出现类似问题。&lt;/p&gt;
-&lt;p&gt;目前，Firefox v139.0.1版本已经开始向用户推送，用户可以通过点击浏览器右上角的菜单，选择“关于Firefox”来自动检查并下载最新版本。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="搭配NVIDIA显卡时网页/视频闪烁：火狐Firefox推出139.0.1紧急更新" h="337" src="//img1.mydrivers.com/img/20250530/a0550c9f-3517-4c82-8b3a-92c69ec45936.jpg" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 30 May 2025 09:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9mSzFYWXY2Y1l4ZW91c3U1aE1fNzRHR054MjFZa1k0ZE5OQ0R2d3lLMmNGTl9CNnB4YW1fSXRvMjlZVGdpRGhaVmlIMWlkdFhJNDVxYURWbng</guid></item><item><title>美副总统万斯：美元稳定币将增强美元的国际地位 - Caixin Global</title><link>https://news.google.com/rss/articles/CBMiYkFVX3lxTE1oNnBvUC00dldsLWZCRFVOeWUxdDBPdjNwc04xcjJzejZWSnRoYVBnQ1RsUXEwanQ3ZW53MmRSV1Nya2gxX0lxV1JMX0ZsY1BkYjJ0OVBYWmdYUFlzT2YteURB?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
-       &lt;p&gt;　　&lt;b&gt;【财新网】&lt;/b&gt;美国拉斯维加斯时间5月29日，美国副总统万斯在比特币2025大会上发表演讲，介绍了美国政府的加密资产监管政策方面的进展、制定政策背后的指导原则，以及对加密货币未来的乐观态度。&lt;/p&gt;
-&lt;p&gt;　　万斯介绍，现在有5000万美国人持有比特币，预计不久之后这个数字会增长到1亿人。&lt;/p&gt;
-&lt;p&gt;　　万斯表示，首先，特朗普和本届政府要清扫加密行业发展障碍，消除上届政府对加密行业犯下的官僚主义、法律侵犯和过度执法等错误。万斯承诺，针对加密行业的特别执法行动已经彻底终结，且在本届政府下，不会卷土重来，本届政府不会打压、阻碍加密行业的发展，不会削弱加密行业对经济的积极影响。&lt;/p&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Caixin Global</author><pubDate>Fri, 30 May 2025 08:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTE1oNnBvUC00dldsLWZCRFVOeWUxdDBPdjNwc04xcjJzejZWSnRoYVBnQ1RsUXEwanQ3ZW53MmRSV1Nya2gxX0lxV1JMX0ZsY1BkYjJ0OVBYWmdYUFlzT2YteURB</guid></item></channel></rss>
+  &lt;p&gt;DeepSeek-R1模型1月20日问世后，因其制造成本相对低，却在性能上逼近主流AI巨头，&lt;a href="/news/china/story20250209-5835546" target="_blank"&gt;引起全球关注&lt;/a&gt;。&lt;a href="/news/china/story20250322-6056246" target="_blank"&gt;腾讯&lt;/a&gt;、&lt;a href="/news/china/story20250313-6013993" target="_blank"&gt;阿里巴巴&lt;/a&gt;等中国科技巨头也陆续推出自研人工智能模型，反映中国人工智能市场竞争日益激烈。 &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Fri, 30 May 2025 09:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9WdmVfUnlVSVNDcVZnVXBIM1MweEdHcWRqRkRSY1VjN3ZKVEQzc3dPT3NEcnVXZTdkYkgwNkJHdkpZYkhiTF9DYUFGOGlIMmh2ZmRVX3gycHdKcEJNUlRYeW9mMFhsLTBzd1E</guid></item><item><title>欧洲央行官员警告银行面临加密资产相关风险 提供者 Investing.com - 英为财情 Investing.com</title><link>https://news.google.com/rss/articles/CBMiekFVX3lxTE1MY0NES1RfV1l6aHAxZUlOYzlBZEtFaUxSWlZJZnNiMlZiU3JDcXNuRWk5bDFWbjFTY3lQei1uZUxya19idXN6cXpsY0M3R05FNWhOdkZ0d0VtY1RWSndMdXFWQVc2eFlOX3FDTExENFlIZ1hKUnktUE5B?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Fri, 30 May 2025 09:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE1MY0NES1RfV1l6aHAxZUlOYzlBZEtFaUxSWlZJZnNiMlZiU3JDcXNuRWk5bDFWbjFTY3lQei1uZUxya19idXN6cXpsY0M3R05FNWhOdkZ0d0VtY1RWSndMdXFWQVc2eFlOX3FDTExENFlIZ1hKUnktUE5B</guid></item></channel></rss>
