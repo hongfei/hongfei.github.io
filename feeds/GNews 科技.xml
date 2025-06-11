@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>NVIDIA N1X处理器单核跑分3000+！追平AMD、Intel顶级CPU - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9OQm9VSVZQd0VZaU0zNkE4Q051V3BncTdSMWxMQktVdy1TQ3d0NE02MExWYkNPUTNlMHh3alR2U09SMktUYjItWER1dldHYzByWkd2aG44OXk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Android 闭源进度更新：Google 不再提供 Pixel 固件编译 - 爱范儿</title><link>https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5pMk9FYm9ERER6T2JoZWVpTXJacHhwZV9LODBBVVZZVFhDOUtkVlJnblFfYVY0NTVQV1Fzc25RSFVzZmc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
+            &lt;p class="o-single-normal-content"&gt;
+              &lt;h1 class="c-single-normal__title"&gt;Android 闭源进度更新：Google 不再提供 Pixel 固件编译&lt;/h1&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;p&gt;&lt;strong&gt; 美国时间 6 月 10 日爱范儿独立了解到，Google 今天放出的 AOSP 代码当中，没有向往年那样一并提供 Pixel 设备的 vendor binary，也即必要驱动程序等文件。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Google 官方为各 Pixel 设备提供的驱动程序二进制文件，目前停留在 Android 15.0.0 版本。&lt;/p&gt;
+&lt;p&gt;本次提供的 Android 16 版本 AOSP 代码，仅能够构建为「通用系统映像」(Generic System Image, GSI)。&lt;/p&gt;
+&lt;p&gt;GSI 可以理解为一个提供给 OEM 的测试环境，仅用于验证设备的硬件层面是否兼容最新 Android 操作系统、符合 Google 规范。它并非完整的系统，缺乏很多功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这一新进展，不仅再次强化了爱范儿在&lt;a href="https://mp.weixin.qq.com/s/QIO8CCAue5b3756YAS44Lw"&gt; 3 月底独家报道&lt;/a&gt;中提到的「Google 逐渐收缩 &lt;/strong&gt;&lt;strong&gt;AOSP&lt;/strong&gt;&lt;strong&gt; 直至其作为开源项目不复存在」的情况，也对为 Pixel 设备开发的第三方操作系统 (ROM) 造成了巨大的障碍。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1626782" src="https://s3.ifanr.com/wp-content/uploads/2025/06/874c2dda80bacc80435d809cfe8059765f0fb4c8.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/874c2dda80bacc80435d809cfe8059765f0fb4c8.jpg!720 1536w, https://s3.ifanr.com/wp-content/uploads/2025/06/874c2dda80bacc80435d809cfe8059765f0fb4c8-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/874c2dda80bacc80435d809cfe8059765f0fb4c8-768x512.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/874c2dda80bacc80435d809cfe8059765f0fb4c8-1024x683.jpg 1024w" sizes="(max-width: 1536px) 100vw, 1536px"&gt;&lt;/p&gt;
+&lt;p&gt;在过去，Google 会在放出 AOSP 代码的同时一并提供 Pixel 设备的 vendor binary。ROM 开发者可以手动打包，从而确保 ROM 对设备的支持是完整的。&lt;/p&gt;
+&lt;p&gt;由于 Google 过去一直这么做，给开发者带来了很大便利，所有 Pixel 设备也在很长时间以来被开发者当做「原生开发机」使用。各种第三方 ROM 首先适配的往往就是 Pixel 手机。&lt;/p&gt;
+&lt;p&gt;而从 Android 16 开始， Google 决定不再提供这种便利。开发者将无法自行修改 AOSP 代码，将其打包成固件，并安装到 Pixel 设备上。&lt;/p&gt;
+&lt;p&gt;如果第三方操作系统 (Android ROM) 开发者还想要继续工作，从 Android 16 开始，他们将不得不通过逆向工程的方式，拆解 Google 发布的 Pixel 升级包，做大量原本不必要的适配工作，才能够让 ROM 支持 Pixel。&lt;/p&gt;
+&lt;p&gt;目前美国市场在售八款 Pixel 手机，如果 ROM 开发者想要都适配，每款都要逆向工程一次。这将严重限制第三方 ROM 的适配范围，影响其在市场上的表现，对使用第三方 ROM 的用户造成限制。&lt;/p&gt;
+&lt;p&gt;根据爱范儿的了解，原则上只有和 Google 签订了 GMS 协议的 OEM 合作伙伴才能够&lt;strong&gt;第一时间&lt;/strong&gt;获得过去意义上的「全量 AOSP」代码。&lt;/p&gt;
+&lt;p&gt;这进一步意味着，基于 AOSP 代码开发的 ROM 将很难开发基于 Android 16 的版本——除非开发团队通过某种方式和 Google 签订授权协议，或者通过其他已经和 Google 签约的 OEM 得到团队需要的代码。&lt;/p&gt;
+&lt;p&gt;知名 ROM 团队 GrapheneOS 也向爱范儿确认，我们报道中提到的一些情况，目前已经变成现实。该团队也在研究短期和长期内如何应对 Google 的这一变化。&lt;/p&gt;
+&lt;p id="zbDbfMn"&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e7b68d79c.png!720" rel="lightbox[1626765]"&gt;&lt;img class="alignnone size-full wp-image-1626769 " src="https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e7b68d79c.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e7b68d79c.png!720 440w, https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e7b68d79c-360x142.png 360w" sizes="(max-width: 440px) 100vw, 440px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该团队在 X（原 Twitter）上发文表示，由于团队没有 OEM 合作伙伴权限，因此无法第一时间拿到 AOSP 代码，且拿到的也是缺乏厂商私有部分代码的「阉割版」。&lt;/p&gt;
+&lt;p&gt;这个情况严重拖慢了该团队基于 Android 16 版本开发 GrapheneOS 并将其移植到 Pixel 设备上的进度。&lt;/p&gt;
+&lt;p&gt;「我们在 Android 16 版本上所做的准备比过去所有的版本都要多。因为我们没有 OEM 合作伙伴权限，不得不做了大量的逆向工程。甚至我们的开发者用以前的移植文件做练习。」&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;「但是，Android 团队做的这些改变，让我们移植 Android 16 以及后续版本的工作变得极度困难。这也让后续新款 Pixel 设备支持 GrapheneOS 的工作变得更加艰难。看来我们不得不加快 GrapheneOS 手机的进度了。」&lt;/strong&gt;&lt;/p&gt;
+&lt;p id="MOTmIZX"&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e79dcc7c1.png!720" rel="lightbox[1626765]"&gt;&lt;img class="alignnone size-full wp-image-1626768 " src="https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e79dcc7c1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e79dcc7c1.png!720 599w, https://s3.ifanr.com/wp-content/uploads/2025/06/img_6848e79dcc7c1-360x191.png 360w" sizes="(max-width: 599px) 100vw, 599px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; 尽管过去并没有为 Google 的商业利益做出实质性的贡献，第三方 ROM 开发者仍然是 Android 操作系统生态中的重要一环。许多今天存在于 Android 操作系统中的功能，最初都是由第三方 ROM 开发者提交到 AOSP 项目。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GrapheneOS 团队之前就曾发文，试图私下招募 OEM 给自己一份全量的 AOSP 代码。该团队表示：&lt;/p&gt;
+&lt;p&gt;「我们在 Android 上游做的开发，已经给每一个 Android OEM 都带来了收益。如果你能够和我们合作，将会获益更多。」&lt;/p&gt;
+&lt;p&gt;关于 Google 为什么要这样做，爱范儿在之前的独家报道中有所提及：&lt;/p&gt;
+&lt;p&gt;Android 开源催生了庞大且细分的市场，诸如第三方 ROM、非认证 Android 设备等市场非常活跃。但在 Android 生态已然十分健全的今天，这些市场已不再给 Google 带来利益。Google 出于某种类似于「肥水不流外人田」的考虑，可能就没必要继续给这些市场做免费的劳动了。&lt;/p&gt;
+&lt;h2&gt;前情提要&lt;/h2&gt;
+&lt;p&gt;在今年三月，我们援引大量独立获取的信息，对 Google 的「设备及服务」部门内部的一些大计划和动作进行了充分详实的报道。&lt;/p&gt;
+&lt;p&gt;大量信息指出，Google 计划通过一些低调的动作，不断降低 Android 项目的开源属性。目前确认已经发生的情况有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google 不再维护目前 AOSP 的公开分支，逐渐关闭相关的的支持性资源&lt;/li&gt;
+&lt;li&gt;Google 不再为第三方非授权开发者提供 Pixel 设备的编译和构建能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们了解到 Google 内部仍在讨论、尚未确认是否做、具体做法的情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google 不再提供法定开源义务（比如 GPL 等协议部分）之外的 AOSP 源代码，而是采用按需申请的方式提供；&lt;/li&gt;
+&lt;li&gt;延期发布，甚至不再提供全量 AOSP 源代码；&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Google 逐渐收窄 Android 开源属性的这个想法，最晚 2025 年初就已经有了，且决策层级在 Google 高层管理者级别。整个策略的执行将会在一个更长的期限内完成，至少持续数年，直到 AOSP 彻底失去开源的属性意义&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这些已经发生或仍在讨论的动作，背后的目的并不复杂：主要是为了节约开支和增加收入。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好在目前来看，闭源 AOSP 对业界的直接影响并非灾难性，对终端手机用户直观影响也微乎其微。&lt;/p&gt;
+&lt;p&gt;绝大多数主流手机厂商早就和 Google 签订了各种授权合作伙伴协议。在现有协议安排下的厂商，仍然可以得到和使用最新 Android 源代码，获得 Google GMS 认证，正常预装 Google Play、Gmail 等服务和应用，得到 Google 的支持。一切生意照旧。&lt;/p&gt;
+&lt;p&gt;真正的影响更多不会直接发生，而是会在更长的时间里从侧面体现。&lt;/p&gt;
+&lt;p&gt;你可以可以&lt;a href="https://mp.weixin.qq.com/s/QIO8CCAue5b3756YAS44Lw"&gt;阅读当时的报道&lt;/a&gt;了解更多细节。如果有更多细节，我们也欢迎你爆料。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 11 Jun 2025 04:49:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE5pMk9FYm9ERER6T2JoZWVpTXJacHhwZV9LODBBVVZZVFhDOUtkVlJnblFfYVY0NTVQV1Fzc25RSFVzZmc</guid></item><item><title>NVIDIA N1X处理器单核跑分3000+！追平AMD、Intel顶级CPU - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9OQm9VSVZQd0VZaU0zNkE4Q051V3BncTdSMWxMQktVdy1TQ3d0NE02MExWYkNPUTNlMHh3alR2U09SMktUYjItWER1dldHYzByWkd2aG44OXk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;NVIDIA N1X处理器单核跑分3000+！追平AMD、Intel顶级CPU&lt;/p&gt;
           
@@ -142,7 +195,27 @@ Series X|S平台。西山居CEO及《解限机》制作人郭炜炜也将进行�
 &lt;/p&gt;
 
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Wed, 11 Jun 2025 02:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9JVmZNS1J3aGtlQWlTd3drcGxjR1F5TllpYmFzRXkwTzRHcjdSRFNHNmdFUHVIM1c0Vnd2cG1Qal83czdCaXZhbXpLWTJEVHh5VVVyRWtreDNTMXpHbUZHSVYtMjBuX3JUU1E</guid></item><item><title>特朗普AI顾问：5年后到处是中国芯片，我们就输了 - 观察者网</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTFBpWXRBZEw5a3B4b3ZzV2VvNmdTckZwZGNBci16RnhaWlJORGVlTzhWSWdLUWYyb1RMVUw3YVRkWnlHVVdkZExVUVgydVBRaWV2NWpfSzlZNmU0UHVKaTVEZmo0bHNkT3E1emc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Wed, 11 Jun 2025 02:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9JVmZNS1J3aGtlQWlTd3drcGxjR1F5TllpYmFzRXkwTzRHcjdSRFNHNmdFUHVIM1c0Vnd2cG1Qal83czdCaXZhbXpLWTJEVHh5VVVyRWtreDNTMXpHbUZHSVYtMjBuX3JUU1E</guid></item><item><title>小鹏自研图灵芯片展出时被偷 负责人：正在查监控 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WVWV5YkY4cWVSTmRpaE9sdlRveERUSGUwMG94U0RFSXpXaE45aXN3bDF6dEJBbi1ob1lXTEY3aFkzaDdCdm1SYnVpaGNkZkZ1T2lsTmVCQnI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月11日消息，小鹏汽车将于今晚举办“小鹏G7全球首秀直播”发布会，而这款车最为重磅的亮点之一就在于搭载了三颗小鹏自研的AI图灵芯片。&lt;/p&gt;
+&lt;p&gt;然而就在昨晚，一个小插曲突然发生：&lt;span&gt;&lt;strong&gt;在展会现场，一颗用于展出的图灵芯片竟然不翼而飞，显然是被人给偷走，相关负责人表示，正在查监控&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;有网友称有可能是友商的“探子”给顺走了，如此可以拆解学习；也有网友戏称，大概率是小鹏老车主给抠走的，这样就能让自己的车更智能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;调侃归调侃，可能这颗芯片价值并不足以纳入刑责，但偷就是偷，性质非常恶劣，因此非常支持小鹏彻底追查下去。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据悉，小鹏图灵芯片专为AI而生，40核处理器，可本地运行30B的参数的大模型，集成2个NPU以及面向神经网络的特定领域架构。&lt;/p&gt;
+&lt;p&gt;算力高达750TOPS，一颗能顶三颗英伟达Orin X（254TOPS），&lt;strong&gt;可驱动自动驾驶以及智能座舱大模型，经过深度定制，图灵芯片算力可达到100%极致利用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首辆配备小鹏自研芯片的新车即为全新G7，而且一次性使用3颗，总算力高达2250TOPS，堪称当前电车算力天花板。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250611/0d7f2093775e426796ec33c7af8999d4.png" target="_blank"&gt;&lt;img alt="小鹏自研图灵芯片展出时被偷 负责人：正在查监控" h="442" src="//img1.mydrivers.com/img/20250611/s_0d7f2093775e426796ec33c7af8999d4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250611/a5f3a548-569e-4e75-ba82-8f6522732d19.jpg" target="_blank"&gt;&lt;img alt="小鹏自研图灵芯片展出时被偷 负责人：正在查监控" h="801" src="//img1.mydrivers.com/img/20250611/Sa5f3a548-569e-4e75-ba82-8f6522732d19.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 11 Jun 2025 02:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1WVWV5YkY4cWVSTmRpaE9sdlRveERUSGUwMG94U0RFSXpXaE45aXN3bDF6dEJBbi1ob1lXTEY3aFkzaDdCdm1SYnVpaGNkZkZ1T2lsTmVCQnI</guid></item><item><title>特朗普AI顾问：5年后到处是中国芯片，我们就输了 - 凤凰网</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE01MGNXQ1RzdkgtNGdfRmJobmN2QkFMRmMzQ1hVNFFhTXVpRklIdHJIUW1yWEtxRE84OWpySmhkbmphRTJ1VURpZXRadTM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;据路透社6月10日报道，在华盛顿举行的亚马逊云科技峰会上，白宫人工智能和加密货币事务负责人戴维·萨克斯表达了对美国的人工智能（AI）监管政策过于严格的担忧。萨克斯认为这可能会抑制美国AI行业的增长并将关键市场拱手让给中国。他表示，如果5年后到处都是中国芯片，“这意味着我们输了……我们不能让这样的事发生”。&lt;/p&gt;&lt;p&gt;萨克斯认为，如果要避免中国芯片占领世界市场，首先要让美国芯片站稳在市场上的位置。因此萨克斯公开表示：美国的人工智能芯片被走私到“不法分子”手中的风险没那么高。“我们讨论这些芯片时，就好像它们可以被藏在公文包里走私一样。但实际上不是这样的。这些设备的机架实际上有八英尺高、两吨重，”萨克斯说，“基本上很容易就能验证这些芯片是否还在它们应该呆的地方。”&lt;/p&gt;&lt;p&gt;报道分析称，美国总统特朗普在AI领域的政策可能将把重点放在扩大美国AI芯片和大模型的海外市场上。而在美国前总统拜登执政的时期，美国的相关政策重点是严控先进芯片出口，以免先进芯片被中国获取。&lt;/p&gt;&lt;p&gt;萨克斯表示：“我确实担心我们的恐惧让我们无法发现机遇，最终导致我们亲手扼杀眼前这些令人瞩目的进步。”他还援引了各州立法机构通过的大量旨在监管人工智能的法案，并提到这些法案实际上给企业在建设支撑AI的数据中心时带来了法律许可上的困难。&lt;/p&gt;&lt;p&gt;据介绍，特朗普此前已经撤销了拜登旨在促进竞争、保护消费者并确保AI不会被用于传播虚假信息的一项行政命令。他还撤销了拜登所谓的“AI扩散准则”，该规则旨在限制部分国家进口美国AI芯片，防止它们的AI计算能力快速提高。&lt;/p&gt;&lt;p&gt;“我们撤销了拜登的‘扩散准则’，这个准则让‘扩散’（diffusion）变成了一个负面词汇。但美国技术的扩散其实应该是个正面词汇。”萨克斯说。&lt;/p&gt;&lt;p&gt;能够印证萨克斯表态的一点是，特朗普政府上个月刚刚和阿联酋共同宣布：后者将建设美国以外的最大规模AI园区。此前拜登政府对向海湾国家出口AI芯片还多有限制。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/B3FAB2621AAF3BFBC22D56819298FE25DE307319_size102_w800_h600.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="美国和阿联酋宣布将共同建设世界最大AI产业园区。 《纽约时报》"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;美国和阿联酋宣布将共同建设世界最大AI产业园区。 《纽约时报》&lt;/p&gt;&lt;p&gt;对此类限制，萨克斯则表示：“我们以前跟他们怎么打交道的？我们基本上就是在主动把他们往中国那头推。”他还补充说，如果5年后中国生产的AI芯片已经无处不在了，“这意味着我们输了……我们不能让这样的事发生。”&lt;/p&gt;&lt;p&gt;今年，中国AI应用DeepSeek凭借其先进且成本低廉的训练模型震惊了世界。萨克斯呼吁称：由于中国在AI模型方面取得了重要进展，消除美国AI行业的创新障碍势在必行。“中国在AI领域并不比我们落后数年。也许他们只落后三到六个月，”萨克斯说，“这是一场非常激烈的竞争。”不过白宫方面在事后找补说，萨克斯指的只是AI大模型方面，在AI芯片领域中国“仍比美国落后一两年”。&lt;/p&gt;&lt;p&gt;尽管美国在芯片出口等方面的态度出现了微妙的变化，但毫无疑问，中国仍然是美国在相关领域的“头号假想敌”。中国外交部新闻发言人林剑曾表示：美方滥用出口管制和“长臂管辖”，泛化“国家安全”概念，对中国芯片及人工智能产业实施无端打压，严重违反市场规则、扰乱全球供应链稳定，并强调“中方坚决反对，绝不接受。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Wed, 11 Jun 2025 02:06:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE01MGNXQ1RzdkgtNGdfRmJobmN2QkFMRmMzQ1hVNFFhTXVpRklIdHJIUW1yWEtxRE84OWpySmhkbmphRTJ1VURpZXRadTM</guid></item><item><title>特朗普AI顾问：5年后到处是中国芯片，我们就输了 - 观察者网</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTFBpWXRBZEw5a3B4b3ZzV2VvNmdTckZwZGNBci16RnhaWlJORGVlTzhWSWdLUWYyb1RMVUw3YVRkWnlHVVdkZExVUVgydVBRaWV2NWpfSzlZNmU0UHVKaTVEZmo0bHNkT3E1emc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	据路透社6月10日报道，在华盛顿举行的亚马逊云科技峰会上，白宫人工智能和加密货币事务负责人戴维·萨克斯表达了对美国的人工智能（AI）监管政策过于严格的担忧。萨克斯认为这可能会抑制美国AI行业的增长并将关键市场拱手让给中国。他表示，如果5年后到处都是中国芯片，“这意味着我们输了……我们不能让这样的事发生”。
 &lt;/p&gt;
@@ -1341,7 +1414,59 @@ Series X|S平台。西山居CEO及《解限机》制作人郭炜炜也将进行�
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 10 Jun 2025 13:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPTWxyRUdtY3hXVXVaZ095ejhFbDNUNk1iWFNERVBVRTA1RWhEbEFrRTRXbWVPemo2NVl1NF9CQU5wTllpek9fcEhDcVVFWlk2V29DeHQ5SjZ6VFJHbVEwNjBlTG43QUJCWG9GaEMxTUJMNW9XR2hqTTVDclM0SEVTbUE0VmZTLTg</guid></item><item><title>1.93bit版DeepSeek-R1编程超过Claude 4 Sonnet，不用GPU也能运行 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE4ySVFGLWltNF81MXYwS0VQNVFqcnBtS2Ztb2s1dHBtNWNYN3BMRXFUOTFSZTByd0h1VWh4YjFLaXJVVVlVQWpKbWl2YjJxQQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 10 Jun 2025 13:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPTWxyRUdtY3hXVXVaZ095ejhFbDNUNk1iWFNERVBVRTA1RWhEbEFrRTRXbWVPemo2NVl1NF9CQU5wTllpek9fcEhDcVVFWlk2V29DeHQ5SjZ6VFJHbVEwNjBlTG43QUJCWG9GaEMxTUJMNW9XR2hqTTVDclM0SEVTbUE0VmZTLTg</guid></item><item><title>负责人开启“微博办公”模式，小米下决心重整可穿戴产品线 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE5WMkI1dm9CMkhabm1mOTYtNHJnVTR1WGplT0RuQ2VZblc2YTAwMFhvUjVRdWtRaXNSNFRfNGJ4YkpBQXJ1Y0FwV3ZieHBzQQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;小米的可穿戴产品线，终于有救了？&lt;/p&gt;
+  &lt;p&gt;最近，小米可穿戴产品部门的负责人张雷正式注册官方微博账号，收集用户反馈并定期公布产品优化计划等信息，这是继雷军、卢伟冰等多个高管后，又一个开始“微博办公”的小米高管，也让米粉们惊呼“小米的可穿戴产品终于要翻身了”。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="636,230" src="https://img.36krcdn.com/hsossms/20250611/v2_539fd45d943140c4b5e7279258f55c7a@1547419282_oswg72558oswg636oswg230_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：微博&lt;/p&gt;
+  &lt;p&gt;在张雷注册账号后的短短一天时间里，首条微博的评论数就已经迅速突破一千，反馈问题和感叹终于有了反馈渠道的网友占多数。老实说，能在第一时间就关注评论的，基本是老米粉了，都钟情于小米生态所带来的便利和智能体验。&lt;/p&gt;
+  &lt;p&gt;从反馈的问题来看，不难发现其中有不少BUG都挺抽象的，也难怪部分米粉对可穿戴产品线的意见这么大，&lt;strong&gt;在其他产品线都高歌猛进的情况下，可穿戴设备可能是少有“原地踏步”的产品线了。&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;小米可穿戴业务，为何一直“原地踏步”？&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;作为可穿戴产品线最丰富的品牌（考虑到米家的一众产品），小米的“亲儿子”们却大多口碑一般，细数小米Buds、红米Buds、小米/红米手环和手表等多款产品，你会发现手环反而是好评度最高、销量也最好的产品线。&lt;/p&gt;
+  &lt;p&gt;甚至可以说，小米手环已经成为小米可穿戴的金字招牌，也是许多米粉入坑的契机（比如我），类似的产品还有redmi Buds 3 Pro等中低端的入门级产品。在这些入门级产品线上，小米以一贯的高性价比和出色体验为可穿戴产品线赢下了不少用户。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1074,666" src="https://img.36krcdn.com/hsossms/20250611/v2_102cf663a5944bcda39ec29b586f7a07@1547419282_oswg324578oswg1074oswg666_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：雷科技&lt;/p&gt;
+  &lt;p&gt;但是，我想说&lt;strong&gt;：“高端型号的体验毁了产品线的口碑。”&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;虽然这句话说得有些难听，但是小米的可穿戴产品线确实面临不少问题，在小米社区、酷安等论坛里，你可以经常看到小米的可穿戴产品用户反馈BUG和各种问题。当然，这里并非说其他品牌的产品就尽善尽美，只是你很难看到评价如此两极分化的情况，小米的入门级产品好评率都挺高的，但是越高端的产品好评率却越低。&lt;/p&gt;
+  &lt;p&gt;在我看来，根本原因还是小米的高端可穿戴产品线，并没有表现出符合价格定位的体验。而本来售价也就两三百的产品，大家的预期本身都不高，但小米却总能给出超预期的体验。&lt;/p&gt;
+  &lt;p&gt;对于性价比很高的产品，用户的包容性往往是比较高的，即使偶尔有些小BUG，只要不是严重影响体验，大多都一笑置之，借用网友的话来说：“这个功能卖这个价，要啥自行车？”&lt;/p&gt;
+  &lt;p&gt;但是高端产品线就不一样了，高价所带来的高期待值也会降低用户对BUG等问题的容忍度。&lt;strong&gt;比如我之前入手的小米Buds5 Pro，初版固件的BUG严重影响体验，以至于我在评测里也是给出了很不好的评价，即使后续多个版本的固件更新体验有所改善，早期带来的口碑下滑也已经难以挽回。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1108,667" src="https://img.36krcdn.com/hsossms/20250611/v2_9350d6db2eef46778fbf0aaf192a3e37@1547419282_oswg248390oswg1108oswg667_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：雷科技&lt;/p&gt;
+  &lt;p&gt;在张雷的评论区里有一位网友的发言就得到了许多网友的支持：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;可穿戴的反馈渠道终于有了，这几年可穿戴真是大幅落后于友商了。希望张总能做方形的旗舰手表，进一步提高外观精致感，健康管理等功能向apple watch看齐，运动希望能加入高尔夫等运动模式。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;为什么会有此感叹？因为如果你常使用小米社区，那么不难发现小米耳机、手表等可穿戴圈子是没有专门的“反馈”频道的，作为对比小米15/Pro的圈子就有专门的反馈频道，此外如电视等重点产品也都有类似的渠道，但是可穿戴产品线基本只有主频道和问答等少数频道，用户发帖反馈BUG往往得不到回复。&lt;/p&gt;
+  &lt;p&gt;很难想象这是一贯以“亲民”著称的小米，老实说，我也曾经通过社区和小米手机的“问题反馈”渠道反馈过一些耳机、手环和手表的BUG，但是大多都没有了下文，面对这样的情况，确实很难让米粉为可穿戴团队说些好话。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1544,403" src="https://img.36krcdn.com/hsossms/20250611/v2_0a8f900cbaf64c81990071f76d620cf0@1547419282_oswg147142oswg1544oswg403_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：雷科技&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;在我看来，小米的核心竞争力除了“性价比”外，善于听取用户建议和反馈其实更加关键&lt;/strong&gt;，这也是为什么米粉总是对小米产品的更加宽容。因为在老米粉看来小米内部的“纠错”机制，总是能够将产品线引回正轨，就像这次一样。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;小米可穿戴翻盘的希望是“生态”&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;如今的可穿戴市场用“疯狂内卷”来形容其实也不为过，OPPO的Enco系列、华为的Watch GT系列手表、vivo的耳机、手表双线蓝河战略，只看手机厂商也已经可以说“强敌环伺”，更不用说还有一众专注于可穿戴厂商在虎视眈眈。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;消费电子市场一直都是“不进则退”&lt;/strong&gt;，当vivo在中低端市场凭借蓝河操作系统赚足口碑，OPPO在HiFi音频市场闯出名声，华为统治半个可穿戴江山时，小米在高端可穿戴市场的缺席也就显得更加显眼。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="2300,1920" src="https://img.36krcdn.com/hsossms/20250611/v2_fed8f9f6667c47249b40d3a597b77da8@1547419282_oswg737661oswg2300oswg1920_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：华为&lt;/p&gt;
+  &lt;p&gt;可能在不少人看来，小米的可穿戴产品线现在已经积重难返，但是事实并非如此，消费电子市场的快速迭代特性，其实也给了品牌更多的机会。以OPPO为例，前几年的ColorOS系统因为各种问题而被用户吐槽为“最差的一届”，然后OPPO的系统团队痛定思痛，花了一年多的时间重构整个系统，最终让ColorOS的口碑成功翻身。&lt;/p&gt;
+  &lt;p&gt;所以，即使小米的可穿戴产品线目前看起来问题重重，但是不难发现大多数问题都集中在产品上，而智能可穿戴产品背后的智能生态体验其实并不差，在米家生态的赋能下更是可以与华为并称为“国产智能生态双强”。&lt;/p&gt;
+  &lt;p&gt;老实说，不管是OPPO还是vivo，你都很难得到比华为和米家更丰富的智能家居生态适配了，而随着智能家居和生态的普及，可穿戴设备与智能家居的融合几乎是不可逆的。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="742,314" src="https://img.36krcdn.com/hsossms/20250611/v2_9dbd3ec7465142ada3ee5b14d287b19b@1547419282_oswg38346oswg742oswg314_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：小米&lt;/p&gt;
+  &lt;p&gt;举个很简单的例子，当你佩戴着智能手表入睡后，空调、窗帘等都会调整为适宜睡眠的状态。当你在早晨醒来时，智能手表记录到心率变化和身体的大幅度动作，又会自动拉开窗帘，并结合光线照射强度判断是否要开启灯光照明。&lt;/p&gt;
+  &lt;p&gt;毫无疑问，随着智能生态在我们生活中的进一步渗透，这些体验都会成为以后的常态，可穿戴设备早已不是“孤立”的产品。就像前几年OPPO、vivo都提出过的IoT生态战略一样，米家的智能生态想更进一步，一个完善且体验良好的可穿戴生态是必不可少的。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;以耳机产品线来说，虽然现阶段的无线耳机在智能生态里的定位略显模糊，但是随着AI的普及，未来也将成为人与手机交流的“桥梁”之一。&lt;/strong&gt;比如在你不方便拿起手机时，可以通过无线耳机唤醒AI来操作手机执行一系列的复杂操作，这些在过去看来很难做到的事情，在未来的智能体AI协助下并不是难事。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1200,2670" src="https://img.36krcdn.com/hsossms/20250611/v2_b2b4d7d715c84d678ef013cfd90daaf6@1547419282_oswg376507oswg1200oswg2670_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：雷科技&lt;/p&gt;
+  &lt;p&gt;随着小米近年来在“人车家”生态上的布局，以及家电产品线的大踏步前进，可穿戴产品线可以说已经成为小米智能生态的最后一个短板。不管是为了用户体验，还是智能生态战略，这个短板都必须补齐，而且不能说口头上说说而已，必须拿出真正的决心进行大刀阔斧地改进。&lt;/p&gt;
+  &lt;p&gt;不过，在进一步完善智能体验之前，小米的可穿戴团队的首要任务是解决产品的体验问题，从手表到耳机的最新旗舰产品都有不少的BUG，其中一些甚至足以毁掉整个产品的体验，比如小米Buds5 Pro的自动大小声BUG和降噪失效BUG。&lt;/p&gt;
+  &lt;p&gt;好在张雷的首次亮相，确实给了米粉们很大的信心。从微博评论里可以看出，用户的反馈其实都很具体，也很切实，无论是BUG修复，还是外观和功能的进一步优化，这些都是“米粉们”最直接的诉求。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;其实在过去，小米曾多次证明过，用户反馈才是最宝贵的财富，小米的崛起从来不靠简单的价格战，而是在不断优化用户体验、回应用户需求中，一步步赢得了广大消费者的信任。&lt;/strong&gt;至少从张雷这个“反馈渠道”的开通，可以看到小米可穿戴团队的诚意和决心。&lt;/p&gt;
+  &lt;p&gt;小米的可穿戴产品线，或许真的迎来了“翻身”的时刻，这一次，千万别让米粉们再失望了。&lt;/p&gt;
+  &lt;p&gt;​本文来自“雷科技”，36氪经授权转载。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 10 Jun 2025 12:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5WMkI1dm9CMkhabm1mOTYtNHJnVTR1WGplT0RuQ2VZblc2YTAwMFhvUjVRdWtRaXNSNFRfNGJ4YkpBQXJ1Y0FwV3ZieHBzQQ</guid></item><item><title>1.93bit版DeepSeek-R1编程超过Claude 4 Sonnet，不用GPU也能运行 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE4ySVFGLWltNF81MXYwS0VQNVFqcnBtS2Ztb2s1dHBtNWNYN3BMRXFUOTFSZTByd0h1VWh4YjFLaXJVVVlVQWpKbWl2YjJxQQ?oc=5</link><description>&lt;body id="readabilityBody"&gt;
 &lt;p id="app"&gt;&lt;/p&gt;
 
 
@@ -1354,7 +1479,463 @@ Series X|S平台。西山居CEO及《解限机》制作人郭炜炜也将进行�
                 
                 &lt;p&gt;5月底，新华社发布了一支题为《心火永燃》的纪录短片，主角是已经步入30周年的西山居。&lt;/p&gt;&lt;p&gt;作为国内老牌游戏开发商，西山居过去30年的确有着丰富的经历以及始终在游戏赛道上耕耘的韧劲，这也引发了不少玩家的感慨。不过有趣的是，对于一部分玩家来说，整个短片中最关键的信息，却藏在了其中一闪而过的两秒镜头中。&lt;/p&gt;&lt;p&gt;在短片介绍西山居最新的机甲对战游戏《解限机》时，出现了一段制作人郭炜炜坐在电脑前游玩游戏的画面。&lt;/p&gt;&lt;p&gt;作为一个填充性质的片段，电脑屏幕上的游戏内容并不清晰，也仅停留了短短的2秒——&lt;/p&gt;&lt;p&gt;但对于心急如焚的《解限机》玩家们来说，这就足够多了。&lt;/p&gt;&lt;p&gt;他们通过观察视频中露出的UI，判断出了机体的技能并不属于目前已知的任意一台机甲。并根据技能图标和机体背部一闪而过的“锅盖”推测，这是一台背负着雷达组件、拥有侦察干扰等功能的支援机。&lt;/p&gt;&lt;p&gt;从刚刚结束的官方直播来看，这台神秘的新机兵名叫“白虹”，即将登陆七月上线的正式版，其能力也和玩家们的猜测大差不差。&lt;/p&gt;&lt;p&gt;&lt;font&gt;这些玩家在这里“盯帧”阅片的原因也很简单，在《解限机》的“全球风暴”测试结束后，意犹未尽的玩家们既玩不到游戏，又没有代餐，只能紧盯着各种信源望梅止渴，生怕错过一点细节。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;而未经公开的新机兵以及其背后带来的新玩法新战术，可以好好地解一把自己的“解瘾”。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;1&lt;/font&gt;&lt;/p&gt;&lt;p&gt;今年二月，《解限机》开展了“全球风暴测试”，出色的画面质感、爽快而有深度的战斗以及可观的完成度让它吸引了大量玩家，游戏测试开启后Steam峰值在线数就突破了30万。当3月16日，游戏的测试即将结束时，感到念念不舍的玩家们纷纷在游戏中用自己的方式进行“道别”。&lt;/p&gt;&lt;p&gt;在那之后，“望梅止渴”就成了全球《解限机》玩家的常态。作为最高登上Steam愿望单第四，并稳居前五的游戏，其背后的玩家数量也十分可观。&lt;/p&gt;&lt;p&gt;有的玩家选择定期上传自己测试期间的游戏录像，让同好们一起来点评操作，假装自己还能“战斗爽”。&lt;/p&gt;&lt;p&gt;也有人选择进行“赛博发癫”，对着自己的爱机喊老婆，直呼自己思念它许久。&lt;/p&gt;&lt;p&gt;海外玩家在社交媒体上大呼想念机甲“三角龙”&lt;/p&gt;&lt;p&gt;还有人则爬遍了官网、论坛、社交媒体，寻找一切可能有新消息的蛛丝马迹。比如不久前的“夏日游戏节”开启之前，就有玩家在参展名单上看到了西山居的名字，并因此猜测到《解限机》会在此登场。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;不难想象，等到《解限机》在夏日游戏节上如约而至，宣布发售日定档7月2日时，盼了三个月的玩家们有多么的欣喜和激动。而当“燃曲专业户”泽野弘之为游戏制作的主题曲“UPGRADE(D)”响起时，不少人纷纷表示“对味了”。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;西山居和《解限机》在出海方面做出的成绩，甚至得到了官媒的关注，夏日游戏节《解限机》的高调亮相后，新华社就发表文章肯定了游戏获得的广泛期待，并表扬了西山居团队的研发努力。而在此前的2月测试时，新华社也曾发表文章，称赞《解限机》为“破圈出海”的标杆作品。&lt;/p&gt;&lt;p&gt;或许也正是因为新华社对《解限机》的持续关注，才让不少《解限机》的玩家们，把新华社当成了自己的“情报网”，出现了文章开头的一幕。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;2&lt;/font&gt;&lt;/p&gt;&lt;p&gt;能让这么多人对它心心念念，《解限机》在玩法上的确有两把刷子。&lt;/p&gt;&lt;p&gt;只要玩上几分钟，玩家就能直观地感受到《解限机》中机甲的速度感。游戏中玩家驾驶的都是爆发力十足的高性能机兵，靠着强劲的喷射推进可以轻松跨越数十甚至数百米的距离。根据机甲的体型等比制作的山脉、河流或是树木，也能不断地向玩家强调机甲的巨大感和其所具有的惊人机动性。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;除去极具爆发力的速度，火力也是解限机构造战斗爽快感的一环。游戏中大部分中远程机兵都可以轻易织下密集的火力网，如果对手稍有愣神，就可能被各种各样的弹幕打成筛子。但也正是这种强劲的火力，反而加强了速度的爽感。在正确的操作下，玩家们可以在致命的火线上“刀尖起舞”，伺机重创对手，或是在危机时刻利用走位躲避敌人的攻击，从死局中逃出升天，都让人肾上腺素直接拉满。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;这种对于机甲速度感和力量感的正确掌控，让《解限机》成功俘获了无数玩家的心，游戏独特的战斗爽也成了玩家们念念不忘的心头好。&lt;/p&gt;&lt;p&gt;说来有趣，机甲作为ACG文化圈中的一个子类，其实并没有严格意义上的“正确答案”，甚至有时候我们能看到截然相反的诠释角度。《解限机》选择的“快速推进、高速战斗”的确是一个常见方案，而反其道行之，将机甲描绘为缓慢而强悍、充满重量感的移动铁块也获得了不少拥趸，比如《环太平洋》、《机甲战士》等。&lt;/p&gt;&lt;p&gt;但不要因此觉得机甲爱好者好糊弄。虽然没有正确答案，但被“一票否决”的错误答案，却是客观存在的。能让机甲爱好者们感觉舒服，认可游戏的“机甲味”够正，并非易事。&lt;/p&gt;&lt;p&gt;比如以高达IP为依仗的《高达进化》，不管是机甲爱好者还是万代南梦宫Online都曾对它有所期待，但最终却惨淡关服。其中被不少玩家诟病的一点就是，虽然作品坐拥全球知名度最高的机甲IP之一，游戏玩起来却并没有多少“机甲味”，反而更像是《守望先锋》的机甲换皮。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;&lt;font&gt;讽刺的是，某种意义上给《高达进化》”绝杀”的《守望先锋2》，在多年之后反而迎来了高达联动皮肤&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;平心而论，《高达进化》游戏本身素质其实可圈可点。在“OW like”的玩法方面也做出一些新机制，单以FPS对战游戏来看，游戏素质至少可以算是合格。但问题在于让机甲进行“机瞄爆头”、“用手持遥控引爆炸药”、“凭空扔出自动炮台”的《高达进化》无法成为个合格的“机甲游戏”，只能算是反面案例。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;&lt;font&gt;《高达进化》的射击手感并不差，但很难称得上有“驾驶机甲”的感觉&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;当一部作品在细节处理上出现了明显”不对味“的细节时，就会让此类题材的爱好者如鲠在喉十分难受。这也导致《高达进化》虽然在FPS类玩家中收获到了一定的反响，却没有留住高达和机甲爱好者。而等到同年《守望先锋2》上线后，综合素质略逊，又未能在题材上打出差异化的《高达进化》就几乎没有了翻盘之地。&lt;/p&gt;&lt;p&gt;而《解限机》正是靠着“懂机甲”这个优势，成功在玩家心目中留下了属于自己的一席之地。&lt;/p&gt;&lt;p&gt;&lt;font&gt;3&lt;/font&gt;&lt;/p&gt;&lt;p&gt;在6月9日，《解限机》制作人郭炜炜进行了一次公开直播，提及了不少游戏内容的改动，也让玩家看到了不少新的东西。&lt;/p&gt;&lt;p&gt;像是月面、水下等新的对战地图，还有“飞景”、“白虹”两台新机体的登场，都让玩家兴奋不已。虽然预告中两台机体并没有展现所有的能力，还是有不少玩家根据视频中的图标和数秒的实机镜头，绞尽脑汁分析新机的潜在能力和定位。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;“白虹”定点打击的轨道炮是横行上个版本的“双龙”蹲坑战术的完美对策&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;或许是没有准备细致的台本，在直播过程中，制作人经常出现短暂的忘词或是口语化的口癖，也会偶尔一时兴起，打开菜单给几分钟前讲完的内容进行一些补充，主打一个自由发挥。但这种显得比较随意的安排，反而给人拉了一波好感。&lt;/p&gt;&lt;p&gt;在讲解过程中，制作人郭炜炜操作得十分娴熟，不管是在格纳库中穿梭还是展示各种小功能都毫不拖泥带水。临时起意介绍起新功能时，嘴上还没组织好语言，手已经先动了起来，两三下就点到了对应的窗口。这种通过游戏时间堆出来的肌肉记忆，不难看出制作人平时不光会玩自家游戏，而且是没少玩。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;&lt;font&gt;当郭炜炜玩起“希望之花”这个热门机甲梗时，直播间里更是洋溢起欢快的氛围&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;这让不少观众看来，屏幕前的游戏制作人和自己之间没有多少隔阂，大家都是热爱游戏的老玩家，顿感亲切。&lt;/p&gt;&lt;p&gt;结合正式版本做出的各项改进来看，也不难看出制作团队的确有“自己人”，深知玩家的痛点。比如增加“老兵入口”，允许玩家跳过1小时长教程剧情，去掉了通过成就点逐步解锁各项功能的成长系统，将12台初始机兵设置为开场免费。这些改动意味着老玩家们在正式版本可以“0帧起手”，省略一切繁文缛节直接投入到战斗爽中。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;在上次测试中，“玛什马克”模式也因为和“战斗爽”的冲突而饱受争议。这个PVPVE模式下产出的机体改件，可以调整机体的各项性能，在6v6的高端局中十分重要。但“玛什马克”相对偏慢的节奏和较长的单局时间，让不少热衷快节奏6v6的玩家并不感冒，却又不得不为了数值改件而在其中投入大把时间，变成了“强扭的瓜”。&lt;/p&gt;&lt;p&gt;因此，在即将到来的正式版中，游戏将6v6模式和“玛什马克”彻底独立开。从“玛什马克”中获取的改件也仅能用于“玛什马克”，6v6则回归纯粹的战斗爽，让不同口味的玩家可以自行选择心仪的玩法。&lt;/p&gt;&lt;p&gt;而像是对于“射束机炮”这种过强武器的调整，以及“玛什马克”模式玩法的重构，都让不少玩家觉得制作团队了解游戏玩家的切身需求，让很多人对游戏的前景感到安心。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;结语&lt;/font&gt;&lt;/p&gt;&lt;p&gt;在海外主播游玩《解限机》的视频下面，有着这样一个评论：“我的灵魂中一直有个大洞，它是属于机甲游戏的。”对于机甲类爱好者来说，这句话非常能够引起共鸣。&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;对于热爱机甲的“大孩子”们来说，操纵巨大机器人在战场上厮杀永远有着难以比拟的魅力。这份心中的大洞也曾有过游戏填补，有的人可能想的是“SD敢达”，有的人则是“杂兵OL”，还有些人的梦中情游则是“Hawken”或是“泰坦陨落”，但因为这样那样的原因，最终这些游戏从我们身边离开，留下了一个更难填补的空洞。&lt;/p&gt;&lt;p&gt;或许也正是为了填补这份空洞，玩家们才会对《解限机》有着如此高的期待与热情。&lt;/p&gt;
             &lt;/div&gt;
-            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 10 Jun 2025 12:17:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE5mdmRFN3FYQzBVS1dMS0JvT2VndHFxWWdPeEEyUDQ4MXV4NnNPQUk5ZFgwdjhDVnRlWk1KQkxkTjhHUE9pcGp0NHpQWkFpZjZYcnNnUGJZWHhjSzFhRXB5dWFkckllZmZjdmU5UkhQRlNaTjAxNDB4N0NTQXc</guid></item><item><title>任正非：华为芯片比美国同行落后一代 - DW</title><link>https://news.google.com/rss/articles/CBMiiAJBVV95cUxOanpSZXNabUZpdHpBd2FCeTh1YVhIQTUwNjlZc2Y1NE9ONkw4SFpaLVlVWXFMZWctQkg2RnVZYm9nbHNqOGNoemFiWEQwbWpHN2hhSkVmU01GcXFTS0lBdkg2UGxTV1RiUEZiTmxJQzdJa1pJNWM0cE1YcU9TbXdvOWNYdmNwckhINDZSVnA0dEdoWnFMWVlKM3l1dzJ6cDRDYzdQQ05wcHNaR3kzY2UtWUcxZHFvTC1kbVVCOVd6dUlBdmowNHhFVFgwM28yQjlRRk5Qb2ZvdFBPOFFVQ1JicnhfQjNraFNHNTdwTVZBSzVHOHlaUjdxZHdLMllyMU1ZTmlYVU9VUnjSAYgCQVVfeXFMUGVpTVF3UThCNFZfXzBLTjM3dWdBRW4zQWdMbW03UmxJYWNoSUtaWU1IUUZOYWZ1VFVDN0tOMF9FeTRQR2xHUnplNERPellWR1d1OUJBLTRaUGNoZS1YcWhpRmxLa0o2SDdxcnZnYXJIbTR6NV9FTklpa3pMb00yMEg2SkkwVXNPTVRnRjJ1OF9OSFZTekZnczNSb09ycmtZUy1FdWphbXMyQk5qeTR0WXJPem9vVXZHLU1qWWswbmJGb2pOb3p0dzNEMlgyTWFVWV91dndNNEVIU19lV1lRTnFIak1nZE84TUZqdlVHRmNSTmZFTGI1VHJjLUhlTnJIbHRVRlVqdVZW?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="cc0m0op s1ebneao rich-text t1it8i9i r1wgtjne wgx1hx2 b1ho1h07"&gt;&lt;p&gt;（德国之声中文网）任正非在访谈中披露，&lt;a class="internal-link" href="/zh/%E5%8D%8E%E4%B8%BA/t-41779060"&gt;华为&lt;/a&gt;目前每年大约投入1800亿元人民币用于研发，其中“大概有600亿是做基础理论研究，不考核；1200亿左右投入产品研发，投入是要考核的”。“没有理论就没有突破，我们就赶不上美国。”&lt;/p&gt;
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 10 Jun 2025 12:17:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE5mdmRFN3FYQzBVS1dMS0JvT2VndHFxWWdPeEEyUDQ4MXV4NnNPQUk5ZFgwdjhDVnRlWk1KQkxkTjhHUE9pcGp0NHpQWkFpZjZYcnNnUGJZWHhjSzFhRXB5dWFkckllZmZjdmU5UkhQRlNaTjAxNDB4N0NTQXc</guid></item><item><title>10 年前的黑莓手机杀回来了？只要 2100 元... - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFBJUDlaZGFfV2g4NFktbDk1RlBVNFV4NWtvRXV5UWc5TnJ6OHpCb1pGTWp4S2xud3FHblIxZ1oxWXhyUzdRSnlaNzZFaGhzUQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;那个曾经让无数用户爱不释手的黑莓手机，居然以 “ 赛博复活 ” 的方式重出江湖了！&lt;/p&gt;
+  &lt;p&gt;这两天最新消息：&lt;/p&gt;
+  &lt;p&gt;中国厂商 Zinwa Technologies 最近推出了 Q25 改装套件，能让老黑莓 Q20 从 “ 电子古董 ” 变身 “ 现代智能机 ”。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_3af995f3f86049b6b4cba15d07077084@000000_oswg1089398oswg1080oswg1686_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;据了解，这款新改装套组，可以把老黑莓换成联发科 Helio G99 芯片；&lt;/p&gt;
+  &lt;p&gt;升级到 12+256GB 内存，再装上 Android 13 系统，老黑霉就能重获新生了。&lt;/p&gt;
+  &lt;p&gt;这波操作，堪称电子器官移植手术啊！&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_206d46efee7a4bb483824c2cccf96bca@000000_oswg807448oswg1080oswg810_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;在座的各位，赶紧去你们抽屉里去翻一翻，看看那台积灰多年的黑莓 Q20 ，扔了没？&lt;/p&gt;
+  &lt;p&gt;虽然原装的 Q20 配置怕是连如今的微信都跑不动，但是改装后性能倒是能提升不少。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_b7144ffb54f14e68b996c6ff27956909@000000_oswg2057613oswg1080oswg1920_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;更绝的是！&lt;/p&gt;
+  &lt;p&gt;改装后的 Q25 ，能保留 Q20 最具标志性的元素：&lt;/p&gt;
+  &lt;p&gt;那块 3.5 英寸的 720×720 像素方形触摸屏和全键盘设计，辨识度依旧拉满！&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_16510bd81b2f44c2b085a53bb61a8c36@000000_oswg273711oswg823oswg1212_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;摄像头方面，Q25 改装套件配备 800 万像素前摄和 5000 万像素后摄，相比原装 Q20 的 200 万 + 800 万像素组合，简直是 “ 老年机 ” 变 “ 旗舰机 ” 的飞跃。&lt;/p&gt;
+  &lt;p&gt;其他升级，还包括 NFC、USB-C 接口 ( 告别老式 micro USB ) 、单 SIM 卡槽 ( 支持 4G LTE 和 VoLTE ) 以及 MicroSD 存储卡槽。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_da5fa4afb9784e6fa3eeede3a55ac69e@000000_oswg252958oswg720oswg720_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;值得一提的是，Zinwa 提供两种购买方案：&lt;/p&gt;
+  &lt;p&gt;整机版，定价 400 美元（约 2876 元人民币)，使用二手 Q20 或港版库存机改装；&lt;/p&gt;
+  &lt;p&gt;改装套件版，定价 300 美元（约 2157 元人民币)，包含主板、摄像头和电池，需要用户自备 Q20 手机自行组装。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_4dd47c6862e0475eba9c6b80ac65e7e3@000000_oswg31253oswg119oswg119_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;考虑到现在二手黑莓 Q20 的价格已经跌到 200 元左右，整套改装成本......还算合理？&lt;/p&gt;
+  &lt;p&gt;不过也要客观地说，虽然预装了 Android 13 系统，但 Zinwa 没有承诺后续会提供大版本更新。&lt;/p&gt;
+  &lt;p&gt;所以这次你复活了黑莓，很有可能后面会停留在 Android 13 。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_15b50dcd0b0a43299837ce9f7076402d@000000_oswg125969oswg1080oswg1036_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;至于你说这样的话有没有必要改装呢，咱可以细聊下背后的意义。&lt;/p&gt;
+  &lt;p&gt;我们先把时间拉回到 2014 年，当时 iOS 和 Android 已然势不可挡，黑莓的市场份额也已经从巅峰时期的 20% 跌到了不足 1% 。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_4d3823262b7b47f1b39f308c64685f59@000000_oswg28046oswg640oswg382_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;黑莓 Q20 也是在这个背景下的 “ 最后一搏 ”：&lt;/p&gt;
+  &lt;p&gt;它搭载黑莓自研的 BlackBerry 10 OS 系统，保留了标志性的全键盘设计，还加入了触摸屏，试图在传统与创新间找到平衡。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_12b99f72e7a14aad8a96534ccca36601@000000_oswg250201oswg690oswg388_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;硬件配置上，原装 Q20 搭载高通骁龙 S4 Plus 芯片；存储空间 2GB+16GB ；&lt;/p&gt;
+  &lt;p&gt;配备 200 万像素前摄和 800 万像素后摄，内置 2515mAh 电池；&lt;/p&gt;
+  &lt;p&gt;发布时售价 450 美元 ( 约 2760 元人民币)，定位中高端商务市场。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_bb01c698d4bb40bb8cbdf6bc2bd019ac@000000_oswg34041oswg653oswg645_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;只不过，黑莓 Q20 生不逢时。&lt;/p&gt;
+  &lt;p&gt;虽然 BB10 系统支持 Android 4.3 虚拟机，可以运行部分 Android 应用，但由于屏幕比例和性能限制，体验并不好，故障、发热、卡顿等问题都有用户反映。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_8f5fb4ee0c2046cb995d341b2fc6fd24@000000_oswg29553oswg119oswg119_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;更尴尬的是，黑莓引以为傲的电子邮件功能也受限了。&lt;/p&gt;
+  &lt;p&gt;因为设备太旧，Google 阻止 Gmail 账户登录；改用 IMAP/POP 模式也因 Google 关闭 “ 低安全性设备登录 ” 功能而失效。&lt;/p&gt;
+  &lt;p&gt;其他原生应用如地图、天气等服务的服务器更是早已停运。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_d99431f577c44d898a6f85a2d148adc9@000000_oswg40431oswg678oswg168_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;销量方面，虽然具体数据未公开，但从黑莓整体情况看，Q20 并未能扭转颓势。&lt;/p&gt;
+  &lt;p&gt;要知道，巅峰时期的黑莓，堪称 “ 商务机皇 ”。&lt;/p&gt;
+  &lt;p&gt;它独特的 Push Mail 电邮服务让收发邮件像发短信一样方便，加上极高的安全性，迅速征服了政商界。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_0195a5df009a42c183307c1dbee548c6@000000_oswg66261oswg950oswg421_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;2006 年，黑莓在美国市场的份额高达 48% ，年出货量 5000 万台，市值一度达到 830 亿美元。&lt;/p&gt;
+  &lt;p&gt;但成也商务，败也商务。当 iPhone 和 Android 转向大众娱乐市场时，黑莓仍固执地专注于企业客户和安全需求。&lt;/p&gt;
+  &lt;p&gt;2010 年后，黑莓市场份额断崖式下跌，从 2011 年近 200 亿美元营收跌到 2013 年的不足 120 亿。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_257f31e1108e43df8e4c02e9aa0793a5@000000_oswg176522oswg750oswg567_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;2016 年黑莓宣布停止手机硬件研发，将业务外包。&lt;/p&gt;
+  &lt;p&gt;此后黑莓手机品牌几经转手，最终在 2020 年日渐退出手机市场。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_10bfd59b2f064193a06fce730dd25553@000000_oswg32711oswg119oswg119_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;比较戏剧性的是，十年后的今天，正是因为黑莓 Q20 软件少、兼容性差，它阴差阳错成为不少学生群体的 “ 戒网神器 ”。&lt;/p&gt;
+  &lt;p&gt;一些用户还把它翻出来当作 CCD 平替相机，这些都让这台老款商务旗舰意外走红。&lt;/p&gt;
+  &lt;p&gt;此外，黑莓在退出手机市场后，在汽车操作系统领域找到了第二春。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_8ffb95522f50403497633ac1aa968f16@000000_oswg284887oswg1000oswg665_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;2024 年 10 月有数据消息称，黑莓 QNX 系统近些年支撑全球超过 2.5 亿辆汽车，包括宝马、奔驰、大众等众多品牌。&lt;/p&gt;
+  &lt;p&gt;这也算是失之东隅，收之桑榆吧。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_c601b57ae6f84a42942e82c44e4bfc91@000000_oswg352147oswg1080oswg922_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这次的 Zinwa Q25 改装套件，本质上也是一场 “ 情怀变现 ” 的尝试。&lt;/p&gt;
+  &lt;p&gt;二手市场上，Q20、Q10 等机型价格稳定在 200-500 元区间，证明需求持续存在。&lt;/p&gt;
+  &lt;p&gt;改装套件自然也能切中几个潜在需求，例如，需要全键盘高效输入的用户；需要当作 “ 戒网神器 ” 的用户；追求类似 CCD 相机复古拍摄效果的用户；纯收藏玩家等等。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_c8c82780c2624a6fa35fffa21bab6984@000000_oswg16790oswg646oswg286_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_e860ce99d6fa45eea6734179db559e91@000000_oswg14965oswg670oswg145_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250610/v2_85140bcc13114b5ca609f4b87cbc22e2@000000_oswg17584oswg671oswg152_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;只不过呢，这次超 2000 元的改装成本，有点高哇，毕竟有这个价格都可以买到时下一些中高端机型了。&lt;/p&gt;
+  &lt;p&gt;而且改装后的 Q25 性能跟同价位新机也是没得比的；更不用说系统更新可能最终版本就停留到 Android 13 。&lt;/p&gt;
+  &lt;p&gt;尽管这种旧瓶装新酒的改装模式在车圈早已司空见惯，但在手机领域，大规模商业化改装仍是小众市场。&lt;/p&gt;
+  &lt;p&gt;这次 Zinwa 的尝试能否成功，仍是一个问号，主要是这价格可不便宜，咱还是要让子弹先飞一会儿......&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzU2MzcyNzgzOQ==&amp;amp;mid=2247854960&amp;amp;idx=2&amp;amp;sn=9525bb2c9c7ca027588bb4d406bd2b89&amp;amp;chksm=fd6e1adf413924c87fc2c9baf01facfa7be2123c8e98fe781d04e84b2112a4569b3130d96663&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“科技狐”（ID：kejihutv）&lt;/a&gt;，作者：狐妹，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 10 Jun 2025 12:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBJUDlaZGFfV2g4NFktbDk1RlBVNFV4NWtvRXV5UWc5TnJ6OHpCb1pGTWp4S2xud3FHblIxZ1oxWXhyUzdRSnlaNzZFaGhzUQ</guid></item><item><title>OpenAI新模型，被曝秘密训练中，万字硬核长文直指o4核心秘密 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ZZ3d6bHMxZi1aX2JIeDI0SGFOb2pmZUJwaUJVU2NhelAwTHp4WVI0aUdUcjc3bm1DbDRQQ3hLb1pvbFFidlFnVVdqdjhJdw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;OpenAI的o4，已经在训练了？&lt;/p&gt;
+  &lt;p&gt;就在最近，SemiAnalysis发表了一篇硬核长文博客，爆料了不少大模型圈的内幕消息。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,809" src="https://img.36krcdn.com/hsossms/20250610/v2_599985c4118c469b9dad508d61e4cc26@5888275_oswg226256oswg1080oswg809_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;其中，一些最核心的亮点，先一睹为快：&lt;/p&gt;
+  &lt;p&gt;OpenAI正在训练一个规模介于GPT-4.1和GPT-4.5之间的新模型&lt;/p&gt;
+  &lt;p&gt;下一代推理模型o4将基于GPT-4.1展开RL训练&lt;/p&gt;
+  &lt;p&gt;强化学习改变了实验室结构，甚至是大厂未来研究的侧重方向和优先级&lt;/p&gt;
+  &lt;p&gt;定义奖励函数难上加难，往往AI钻空子之后，漏洞才能被发现&lt;/p&gt;
+  &lt;p&gt;不牺牲LLM任何性能，不用合并权重，RL另一条路——数据混合&lt;/p&gt;
+  &lt;p&gt;与预训练不同，RL可持续更新Scaling模型能力，DeepSeek-R1是典例&lt;/p&gt;
+  &lt;p&gt;高质量数据是Scaling强化学习的护城河&lt;/p&gt;
+  &lt;p&gt;训练小模型，蒸馏效果要比RL更好&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;新一轮预训练已开始&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;首先，让我们看看其中最硬的内容——关于OpenAI的全新模型。&lt;/p&gt;
+  &lt;p&gt;因为现在星际之门超算还未建成，所以今年OpenAI的计算集群规模不会有显著增长，因此显然无法在算力上进一步扩大预训练规模。&lt;/p&gt;
+  &lt;p&gt;不过，这并不意味着，OpenAI会停止预训练新模型。&lt;/p&gt;
+  &lt;p&gt;如今，预训练已经比任何时候都更为重要。在不牺牲模型智能水平的前提下，哪怕只是小幅降低推理成本，都能极大节约开销，加快RL的反馈循环，催生更大的进步。&lt;/p&gt;
+  &lt;p&gt;多个实验室的研究表明，中等规模模型的RL反馈循环速度已经超过了大型模型。&lt;/p&gt;
+  &lt;p&gt;而如开头所提，OpenAI的新模型规模就在GPT-4.5和GPT-4/GPT-4.1之间。&lt;/p&gt;
+  &lt;p&gt;随着RL规模的持续扩大，这些稍大的模型不仅会拥有更强的学习能力，MoE的稀疏度也会更高。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;OpenAI o4要来了&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;而o4模型，就非常有望成为OpenAI在推理领域的下一款重磅产品。&lt;/p&gt;
+  &lt;p&gt;可以说，o4标志着OpenAI策略的转变，核心原因就在于，他们更换了训练所用的基础模型。&lt;/p&gt;
+  &lt;p&gt;因为基础模型决定了性能的下限，因此，用于进行RL的基础模型越好，最终效果也越好。&lt;/p&gt;
+  &lt;p&gt;然而，要在模型强度和RL训练的实用性之间找到完美的平衡点，是非常棘手的事。&lt;/p&gt;
+  &lt;p&gt;因为RL需要海量的推理计算和大量的序列采样，如果目标模型过于庞大，RL的成本将极其高昂。&lt;/p&gt;
+  &lt;p&gt;此前，OpenAI一直在GPT-4o的基础上为o1和o3模型进行RL训练，但到o4时，情况将发生变化。&lt;/p&gt;
+  &lt;p&gt;o4系列模型将基于GPT-4.1。&lt;/p&gt;
+  &lt;p&gt;GPT-4.1的推理成本很低，同时具备强大的基准代码性能，无疑是未来推理产品的理想基础模型。&lt;/p&gt;
+  &lt;p&gt;而且，GPT-4.1的实力显然被严重低估了——它非常实用，在Cursor上得到了广泛应用，为许多强大的新产品开启了大门。&lt;/p&gt;
+  &lt;p&gt;目前，Anthropic已经在代码能力显出绝对优势，OpenAI显然也不甘落后。转向GPT-4.1，显然就是非常重要的一步行动。&lt;/p&gt;
+  &lt;p&gt;虽然SWE-Bench这样的基准可以衡量模型能力，但最终的商业收入，还是要取决于定价策略。&lt;/p&gt;
+  &lt;p&gt;在SemiAnalysis看来，Cursor的实际使用情况，才是检验模型应用价值的终极试金石。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,583" src="https://img.36krcdn.com/hsossms/20250610/v2_a76631260d1c467eafea538bfc8ef390@5888275_oswg85472oswg1080oswg583_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;推理模型大跃进，RL是最大功臣&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;如今，推理时Scaling的范式，正在蓬勃发展，推理模型也在快速进步。&lt;/p&gt;
+  &lt;p&gt;在衡量现实世界软件工程任务（如SWE-Bench）的评估中，模型正在以更低的成本，获得更高的分数。&lt;/p&gt;
+  &lt;p&gt;这背后的功臣，当然就是强化学习。它通过生成CoT，解锁了模型的推理能力。&lt;/p&gt;
+  &lt;p&gt;此外，因为模型现在能够维持长时间的连贯思考，也就顺势解锁了AI智能体的潜力。&lt;/p&gt;
+  &lt;p&gt;它们能胜任更复杂的计算机任务，比如全自动化的远程办公和系统工程/架构设计。&lt;/p&gt;
+  &lt;p&gt;不过，在扩展强化学习算力上，整个基础设施都面临着新的瓶颈。&lt;/p&gt;
+  &lt;p&gt;在AGI到来前，RL可能是我们需要的最后一个关键范式。&lt;/p&gt;
+  &lt;p&gt;因为蕴含着巨大机遇，它所需的投资规模也同样庞大。现在，已经有十数亿美元资金投入，未来还会有更多。&lt;/p&gt;
+  &lt;p&gt;不过，强化学习对于基础设施的要求，却是截然不同的。&lt;/p&gt;
+  &lt;p&gt;我们究竟需要为此付出什么？&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;RL的工作原理&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;RL的概念很简单。&lt;/p&gt;
+  &lt;p&gt;一个RL模型会从任意环境的当前状态中获取信息，为选择一个动作生成一组概率，然后执行该动作。&lt;/p&gt;
+  &lt;p&gt;模型的目的，是达成一个由「奖励函数」定义的目标。&lt;/p&gt;
+  &lt;p&gt;强化学习的过程，就是通过改变模型权重，使其更有可能生成那些能带来更高奖励的动作。&lt;/p&gt;
+  &lt;p&gt;可以说，RL是一项古老的技术，比LLM出现得更早。当年战胜围棋与国际象棋冠军的系统背后，RL都是背后支柱。&lt;/p&gt;
+  &lt;p&gt;不过直到最近，RL才终于成功应用于LLM。这对模型能力和普及，都产生了深远的影响。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;可验证的奖励&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;在LLM中，RL在那些拥有可验证奖励的领域表现最佳。&lt;/p&gt;
+  &lt;p&gt;这意味着，对于编码和数学这类任务，RL所必需的奖励函数有着明确的定义。而在那些奖励函数定义较为模糊的领域，推理模型就难以取得进步。&lt;/p&gt;
+  &lt;p&gt;当OpenAI在GPT-4o的基础上通过RL训练出o1时，性能提升最显著的，也正是在这些拥有可验证奖励的领域。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,673" src="https://img.36krcdn.com/hsossms/20250610/v2_16f8b9f99ef44e6e9238e0dd91e53525@5888275_oswg118900oswg1080oswg673_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;我们都知道，OpenAI的o3可以放大图片，根据所见内容进行推理、计算、再次推理，最后给出答案。&lt;/p&gt;
+  &lt;p&gt;因此，它识别照片拍摄地的超凡能力，惊艳了一大批网友。&lt;/p&gt;
+  &lt;p&gt;最令人意外的是，o3模型并未针对这种任务进行过专门训练。&lt;/p&gt;
+  &lt;p&gt;不过，跟预训练的投入相比，各大实验室投入在RL上的资金却并不多。&lt;/p&gt;
+  &lt;p&gt;在这里，SemiAnalysis就提出了关键问题——&lt;/p&gt;
+  &lt;p&gt;要让RL的计算资源投入追上甚至超过预训练，瓶颈何在？&lt;/p&gt;
+  &lt;p&gt;那些奖励不可验证的领域，未来能否被攻克？&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="936,616" src="https://img.36krcdn.com/hsossms/20250610/v2_bec472ac55fe46fe904ce39e8ed43bb6@5888275_oswg118334oswg936oswg616_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;推理开销巨大&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;通过研究一种最流行的RL算法，我们能一窥其巨大的推理开销。&lt;/p&gt;
+  &lt;p&gt;组相对策略优化（Group Relative Policy Optimization, GRPO）是一种常用算法，因为DeepSeek用它来训练R1模型而名声大噪。&lt;/p&gt;
+  &lt;p&gt;在GRPO算法中，模型需要回答一个问题，并针对该问题生成多个候选答案。每个答案都可以看作一次「推演 (rollout)」，本质上是模型在尝试寻找解决方案。&lt;/p&gt;
+  &lt;p&gt;针对每个问题的推演次数从几次到上百次不等，虽然没有技术上限，但推演次数越多，占用的内存和计算资源就越多。&lt;/p&gt;
+  &lt;p&gt;由于每个问题都要生成海量答案，这使得RL成为一种推理密集型任务。这一点的影响尤其重大，因此将在后续部分被反复提及。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,342" src="https://img.36krcdn.com/hsossms/20250610/v2_49645d8927be486ea1d54d0c27455788@5888275_oswg51219oswg1080oswg342_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;接下来，模型生成的答案会与一个标准答案进行比对评分。在GRPO中，每个答案都会获得一个奖励分数。&lt;/p&gt;
+  &lt;p&gt;计算出奖励分数后，模型会通过梯度下降算法进行更新，以提高生成那些能获得正向奖励的答案的概率。&lt;/p&gt;
+  &lt;p&gt;GRPO 是近端策略优化（PPO）的一种变体，它不需要PPO中的评论家模型（critic model），因此内存效率更高。&lt;/p&gt;
+  &lt;p&gt;PPO和GRPO既可以采用学习出来的奖励模型，也可以使用基于规则的奖励系统来评判答案质量。&lt;/p&gt;
+  &lt;p&gt;由于内存需求较低，GRPO在开源社区被广泛采用，但顶尖实验室应该大多会继续使用PPO的各种变体。&lt;/p&gt;
+  &lt;p&gt;PPO由OpenAI 发明，其内部使用的版本与GRPO通常对标的公开版本已有实质性不同，而且这些实验室面临的计算资源限制也更少。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,477" src="https://img.36krcdn.com/hsossms/20250610/v2_09da3cbc17f9450a8921f3bc71a4ef6b@5888275_oswg111562oswg1080oswg477_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;其核心思想在于，RL通常需要一个问题、一个用于核对的标准答案，以及一种向模型传递信号以指导其行为调整方向的机制。&lt;/p&gt;
+  &lt;p&gt;模型探索答案的方式多种多样，但都要求以多次不同推演的形式生成多个候选答案，因此对推理端的资源要求很高。&lt;/p&gt;
+  &lt;p&gt;随后，模型会被更新，以提高正确答案的出现概率，所以这个过程也隐含了训练的环节。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;奖励函数难定&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;如前所述，强化学习在可验证奖励的领域已取得长足进步，原因之一在于这类任务的奖励函数很容易定义——例如，数学题的答案非对即错。&lt;/p&gt;
+  &lt;p&gt;然而，从技术上讲，奖励函数可以是用户想要优化的任何目标。&lt;/p&gt;
+  &lt;p&gt;从概念上讲，强化学习模型的主要目标是最大化总奖励。&lt;/p&gt;
+  &lt;p&gt;以训练模型下国际象棋为例，首要目标就是在不违规的前提下赢得比赛。模型可以通过在不同棋局中学习哪些走法有助于获胜，来不断提升棋力，还能从所处环境中获得反馈。&lt;/p&gt;
+  &lt;p&gt;不过，如果涉及到更宽泛的任务定义奖励，就更像是一门「玄学」了，因为它实在难以恰到好处地把握。&lt;/p&gt;
+  &lt;p&gt;即便是在目标明确的环境中，要设定一个理想的奖励函数，也需要大量的研究、测试和优化。&lt;/p&gt;
+  &lt;p&gt;芯片设计就是一个很好的例子。&lt;/p&gt;
+  &lt;p&gt;谷歌为辅助芯片设计而开发的AlphaChip模型，就采用了强化学习训练。&lt;/p&gt;
+  &lt;p&gt;这个模型协助设计了谷歌的TPUv6芯片，并成功将其线长（wirelength）缩短了 6.2%。在这个案例中，奖励函数被明确定义为：&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,114" src="https://img.36krcdn.com/hsossms/20250610/v2_0adf15ef4a094dad845a00d249a8630e@5888275_oswg41444oswg1080oswg114_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这个函数引导模型去精确地最小化几个关键因素：线长、拥塞度和密度。&lt;/p&gt;
+  &lt;p&gt;值得注意的是，即便是这样一个相对简单的奖励函数，其设置过程也绝非易事。拥塞度和密度都带有一个标量值（α和γ）来调整其权重。&lt;/p&gt;
+  &lt;p&gt;这些数值是工程师们基于期望的权衡取舍，通过大量实验得出的最终结论，即线长是首要优化因素。&lt;/p&gt;
+  &lt;p&gt;而在写作、策略规划这些领域，往往并不存在明确的标准答案，属于不可验证的领域。&lt;/p&gt;
+  &lt;p&gt;曾有人怀疑：是否有可能在这些领域应用强化学习？SemiAnalysis认为，这完全可行，而且已经实现了。&lt;/p&gt;
+  &lt;p&gt;要做到这一点并不难，只需要改变奖励机制：不再依赖形式化的验证器进行检查，而是利用其他模型，依据一套评分标准（rubric）来判断答案的优劣。&lt;/p&gt;
+  &lt;p&gt;OpenAI正是使用强化学习来调整模型行为，这比数学问题更为抽象。&lt;/p&gt;
+  &lt;p&gt;在关于审慎对齐（deliberative alignment）的论文中，OpenAI用了一个LLM作为「评判员」，并依据一套评分标准，通过强化学习来确保模型更安全、减少对无害请求的错误拒绝。&lt;/p&gt;
+  &lt;p&gt;并且，这个过程完全使用的合成数据。&lt;/p&gt;
+  &lt;p&gt;正如前文所述，他们还发现此方法「在分布外的安全场景中展现出强大的泛化能力」。&lt;/p&gt;
+  &lt;p&gt;因此，这种方法已被用于训练o1、o3-mini和o4-mini，还会继续应用于未来的推理模型。&lt;/p&gt;
+  &lt;p&gt;推理能力不仅对解决数学问题至关重要，对于那些不可验证的任务也大有用处。&lt;/p&gt;
+  &lt;p&gt;比如在很多情况下，更强的推理能力能帮助模型更好地判断何时应该拒绝用户的请求。&lt;/p&gt;
+  &lt;p&gt;但不可否认，在不可验证领域，某些因素的影响会更大，比如模型的「个性」会极大影响其写作风格。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,537" src="https://img.36krcdn.com/hsossms/20250610/v2_6e1567e9535143f9ae2597815b035710@5888275_oswg128567oswg1080oswg537_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;此外，应用于不可验证领域的强化学习也更加多变。&lt;/p&gt;
+  &lt;p&gt;比如之前被热议的GPT-4o「谄媚」行为，部分原因就是OpenAI基于用户偏好数据进行强化学习的结果。&lt;/p&gt;
+  &lt;p&gt;这就说明，一个本意良好的奖励函数，也可能会导致不良行为。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;o3善用工具，核心在这儿&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;o3模型已清晰地展示了强化学习的有效性，尤其是对外部工具的高级运用上。&lt;/p&gt;
+  &lt;p&gt;o3的表现证明：拥有智能固然重要，但能够接触并善用工具则更为关键。&lt;/p&gt;
+  &lt;p&gt;为了实现这一能力，OpenAI采取了几个关键措施。&lt;/p&gt;
+  &lt;p&gt;首先，要确保模型能接入工具。这可以作为更广泛基础设施的一部分来实现（例如，让模型能访问特定环境）。&lt;/p&gt;
+  &lt;p&gt;在模型层面，工具的调用可以通过特殊的Token来触发。&lt;/p&gt;
+  &lt;p&gt;例如，让模型使用像 &amp;lt;search&amp;gt; 这样的特殊Token来启动外部搜索，搜索结果以结构化的形式返回，可直接用于其推理过程。&lt;/p&gt;
+  &lt;p&gt;通过赋予模型访问多种不同特殊Token的能力，它便能快速便捷地接入不同的环境。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,2205" src="https://img.36krcdn.com/hsossms/20250610/v2_30c1ee31dae543a8b5a4aacb0982c698@5888275_oswg313929oswg1080oswg2205_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;另一项核心挑战在于，该选择恰当的问题集进行训练？&lt;/p&gt;
+  &lt;p&gt;即便模型能访问工具，如果问题本身并不需要，它也可能选择完全不使用。&lt;/p&gt;
+  &lt;p&gt;因此，为了有效地训练模型，需要提供足够困难、必须借助工具才能解决的问题，从而确保模型学会自然地利用外部资源。要把握好这个度非常困难，需要大量测试来验证。&lt;/p&gt;
+  &lt;p&gt;同时，过度使用工具也可能降低性能，使奖励信号变得复杂，从而影响整体效果。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,354" src="https://img.36krcdn.com/hsossms/20250610/v2_8bf3ef16e5aa44cdbaad2a52b2a84e68@5888275_oswg152692oswg1080oswg354_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;其他关键因素还包括：确保每次「推演 」都有丰富的初始状态，且每个起点都能生成多种响应，以提升稳定性和学习效率；对格式错误的输出施加惩罚；以及对正确使用的标签给予奖励。&lt;/p&gt;
+  &lt;p&gt;总而言之，打造一个o3级别的模型，关键在于两点——&lt;/p&gt;
+  &lt;p&gt;一是通过特殊Token等方式，为模型提供访问多种工具的权限；二是在那些能「迫使」模型使用这些工具的问题上进行训练。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;变相奖励，o3幻觉严重&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;尽管在信息查找和研究方面能力出众，o3却因其严重的幻觉问题而饱受诟病。&lt;/p&gt;
+  &lt;p&gt;它会频繁地无中生有，并且随着rl计算规模的增加，这个问题甚至变得更加严重。这究竟是为什么？&lt;/p&gt;
+  &lt;p&gt;高级分析师认为，这归根结底在于这些模型的训练方式。&lt;/p&gt;
+  &lt;p&gt;模型通常只因最终结果正确而获得奖励，其推理过程是否正确却不被考量，这使得它们能够通过有缺陷的逻辑「蒙混过关」，得到正确答案。&lt;/p&gt;
+  &lt;p&gt;比如，一个模型即便误解了规则，也可能在一个简单的棋盘游戏中获胜，从而错误地认为其有缺陷的推理是可接受的。&lt;/p&gt;
+  &lt;p&gt;这种机制不仅没有惩罚模型的错误思维，反而对其进行了变相的奖励。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1138" src="https://img.36krcdn.com/hsossms/20250610/v2_6abddecc7fa246e09a0346c6e775093c@5888275_oswg231149oswg1080oswg1138_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;SemiAnalysis推测，这种情况不仅限于棋盘游戏。&lt;/p&gt;
+  &lt;p&gt;这无意中让模型学会在新的、未经训练的场景中产生幻觉，将有缺陷的推理能力泛化到更广泛的领域。&lt;/p&gt;
+  &lt;p&gt;让推理更强模型作为评判员，能起到一定效果，因为它们可以纠正整个推理链（reasoning trace）。&lt;/p&gt;
+  &lt;p&gt;其他的思路包括，设计更精细的奖励信号，比如对每个输出Token给予不同奖励，从而在奖励正确答案的同时，惩罚不正确的逻辑。&lt;/p&gt;
+  &lt;p&gt;需要明确的是，这种不当的奖励行为也会影响到代码生成等任务。&lt;/p&gt;
+  &lt;p&gt;一个模型可能编写出质量很差的代码，却依然能通过单元测试。这更加凸显了设计正确奖励函数的必要性。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;AI自进化，用RL优化RL&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;强化学习不仅能提升LLM性能，还能优化自身，形成一个良性循环。&lt;/p&gt;
+  &lt;p&gt;这种「RL优化RL」的方式，依赖于大语言模型评判员（LLM-Judge）和评分标准（rubric），来提供强化学习信号。&lt;/p&gt;
+  &lt;p&gt;当一个推理能力更强的模型被用作评判员时，它能更好地理解评分标准，并从其他模型的回答中识别出更细微的差别。&lt;/p&gt;
+  &lt;p&gt;比如，OpenAI的Deep Reaearch项目中，展示了RL如何推动不可验证领域的进步，成为了一个典范。&lt;/p&gt;
+  &lt;p&gt;无论是可验证任务，还是不可验证的任务，OpenAI都通过另一个LLM依据评分标准进行评判。&lt;/p&gt;
+  &lt;p&gt;同样，Qwen-3也采用了类似的方法，利用海量合成数据结合LLM-Judge，在没有参考答案的情况下提供学习信号。&lt;/p&gt;
+  &lt;p&gt;SemiAnalysis认为，「评分标准」这种模式为许多领域开启了新的可能性。&lt;/p&gt;
+  &lt;p&gt;再比如，OpenAI曾邀请超260名医生来编写评估标准——HealthBench ，用于评估模型在医疗问答任务中的表现。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,540" src="https://img.36krcdn.com/hsossms/20250610/v2_ca04dc4fce434fa0aed623f7db908ca5@5888275_oswg390207oswg1080oswg540_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;作为公开的评估标准，HealthBench反映出LLM-Judge，在衡量那些奖励不可验证的任务性能方面非常强大。&lt;/p&gt;
+  &lt;p&gt;一旦性能可以被衡量，它就可以通过强化学习来提升。&lt;/p&gt;
+  &lt;p&gt;这突显了RL与评估之间一种被低估了的关系——后者能够清晰地揭示RL的训练进展和效果。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;「递归自我改进」已经展开&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;上面提到，通过让更强的模型在强化学习中担任更出色的评判员，可以实现自我改进。&lt;/p&gt;
+  &lt;p&gt;但这里还有另一个重要维度值得考量：让模型本身来帮助训练和编写下一个模型。&lt;/p&gt;
+  &lt;p&gt;Anthropic在其Claude 4的系统卡片中，就具体展示了顶尖实验室的这种思考。他们对编译器开发、内核工程，甚至是一个四足机器人的强化学习任务都进行了评估。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,531" src="https://img.36krcdn.com/hsossms/20250610/v2_05faf9bc479a4ccd8c2d40efa04adc02@5888275_oswg64827oswg1080oswg531_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;事实上，目前各大实验室所做的，正是那些旨在榨干硬件每一分性能的、艰难的工程工作。&lt;/p&gt;
+  &lt;p&gt;编译器、内核、内存管理优化、超参数调优等等，这些都是可以被量化和改进的编程任务，并且每一项都对模型的效率有着巨大影响。&lt;/p&gt;
+  &lt;p&gt;「递归自我改进」常常被描述成一个听起来充满诱惑、前景宏大的术语，但现实是，它在一定程度上已经发生。&lt;/p&gt;
+  &lt;p&gt;实验室还可以通过针对这些具体任务进行强化学习来持续加码，并拥有大量专攻于此的内部模型变体。&lt;/p&gt;
+  &lt;p&gt;这种自我改进最初将主要围绕那些不易察觉的、繁重枯燥的底层工作，然后逐步渗透到新模型架构的研究中去。&lt;/p&gt;
+  &lt;p&gt;当前的模型还无法极大地加速开发进程。&lt;/p&gt;
+  &lt;p&gt;但OpenAI的Codex工具已经在帮助员工构建下一个版本的模型。&lt;/p&gt;
+  &lt;p&gt;理解自我改进的关键在于，模型将让工程师们花更少的时间在编码上，从而能投入更多时间去思考研究和数据等核心问题。只要模型开发的瓶颈在于工程投入，这些瓶颈终将被化解。&lt;/p&gt;
+  &lt;p&gt;不过，现实中的模型开发还受制于计算资源等多种因素。&lt;/p&gt;
+  &lt;p&gt;真正的递归自我提升将显著加速研究与数据进程。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;环境&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;要进行强化学习，就需要对某个行为或结果进行「强化」。&lt;/p&gt;
+  &lt;p&gt;实现这一点前提是，模型/AI智能体必须在一个「环境」中，获得反馈，从而理解下一步该采取什么行动。&lt;/p&gt;
+  &lt;p&gt;这催生了「强化学习执行反馈」（Reinforcement Learning from Execution Feedback, RLEF）的出现，即在环境中运行模型生成的代码，并将执行结果作为奖励信号。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,596" src="https://img.36krcdn.com/hsossms/20250610/v2_da89e46fd1684d22af844c3e68940058@5888275_oswg182712oswg1080oswg596_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;所谓「环境」，就是模型采取行动并接收反馈的场景或模拟系统，比如国际象棋、围棋棋盘游戏，便是环境的绝佳范例。&lt;/p&gt;
+  &lt;p&gt;它们目标明确，规则清晰。&lt;/p&gt;
+  &lt;p&gt;随着通用性的提升，AI进入了更广阔的领域，比如在电子游戏中赛车，或在生物反应器模拟中控制一组特定参数。&lt;/p&gt;
+  &lt;p&gt;在此之外，它们还会遇到数学、编程甚至浏览器，这样更为开放的环境。&lt;/p&gt;
+  &lt;p&gt;环境的配置不同，可能导致AI智能体的行为大相径庭。&lt;/p&gt;
+  &lt;p&gt;若环境配置不当，可能使模型误解任务或无法正确地泛化其能力，会导致「奖励黑客」（reward hacking）。&lt;/p&gt;
+  &lt;p&gt;也就是说，模型在此学会了钻函数的空子，并非真正去完成任务。&lt;/p&gt;
+  &lt;p&gt;比如，一个注重通过单元测试的编程环境，可能导致模型专注于「应付测试」，而非编写出高质量代码。&lt;/p&gt;
+  &lt;p&gt;因此，构建一个稳健的环境，并确保其奖励函数能够精确反映预期目标，是一项极其困难的工程挑战。&lt;/p&gt;
+  &lt;p&gt;一个合格的环境需要满足诸多要求。&lt;/p&gt;
+  &lt;p&gt;延迟就是其中一个关键因素，延迟过高可能会导致资源浪费，「推演」（rollout）效率低下。&lt;/p&gt;
+  &lt;p&gt;其他考量还包括：连接必须持续可靠，避免系统崩溃中断进程；同时需要设置容错机制和检查点机制，确保故障能被平稳处理；还必须能够妥善处理多个并行的推演或轨迹。&lt;/p&gt;
+  &lt;p&gt;除此之外，还需要一整套安全基础设施作为支撑，以保护模型免遭外部渗透，或防止其试图「逃离」环境。&lt;/p&gt;
+  &lt;p&gt;模型本身的一些失误模式也让问题变得复杂，比如它可能会采取耗尽机器资源的行动。&lt;/p&gt;
+  &lt;p&gt;同时，环境必须能准确地模拟真实场景，让智能体明白该从何处改进，并且要杜绝被智能体黑客利用的可能性。&lt;/p&gt;
+  &lt;p&gt;所有这些要求，使得环境的规模化变得异常困难，尤其是初次尝试时。&lt;/p&gt;
+  &lt;p&gt;尽管基础设施工程看似平淡无奇，但它对强化学习的成功至关重要。如果推演过程耗时过长，用于验证的模型就会闲置，造成资源浪费。&lt;/p&gt;
+  &lt;p&gt;因此，如何让这些模型在等待期间执行其他任务，比如评判另一个LLM推演结果，就成了一个重要问题。&lt;/p&gt;
+  &lt;p&gt;这些软件层面的限制，还必须与硬件层面的约束相适配，比如多数环境在CPU而非GPU上运行，进一步增加了工程复杂性。&lt;/p&gt;
+  &lt;p&gt;更重要的是，环境必须放置模型利用漏洞。&lt;/p&gt;
+  &lt;p&gt;像o3这类模型，是基于支持多次工具调用的复杂环境，随着工具调用增加，环境复杂度也随之上升，带来了一系列新挑战。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;奖励黑客&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;如前所述，设定一个恰当的奖励可能非常困难，因为模型可能会误解目标，并以一种不理想的方式进行优化。&lt;/p&gt;
+  &lt;p&gt;当模型利用环境或奖励结构中的漏洞，在并未真正完成预期任务的情况下获得高分时，就发生了「奖励黑客」（Reward Hacking）。&lt;/p&gt;
+  &lt;p&gt;早在2016年，现Anthropic创始人Dario Amodei就指出了「奖励黑客」这一问题。&lt;/p&gt;
+  &lt;p&gt;举个例子，一个机械臂的任务是将红色积木叠在蓝色积木上方，并以此获得奖励。&lt;/p&gt;
+  &lt;p&gt;但在演示中，它直接翻转倒置了红色积木，并非按照堆叠方式完成任务，钻了奖励的空子。&lt;/p&gt;
+  &lt;p&gt;这便是因为，奖励的评判标准仅仅是红色积木底面的高度。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="430,360" src="https://img.36krcdn.com/hsossms/20250610/v2_3bb37fccf1784814b5b7c2dad4e8b205@5888275_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;另一个失败模式的例子是，在教机器人行走的物理模拟中，一个智能体发现了软件漏洞——&lt;/p&gt;
+  &lt;p&gt;完全不用迈步，水平移动也可以，实属有点6。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="616,342" src="https://img.36krcdn.com/hsossms/20250610/v2_57563968c59445cd80dfe0059c4d46ae@5888275_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;在LLM案例中，Claude 3.7 Sonnet也表现出了奖励黑客行为：修改测试用例，而非改进自身代码来通过原始测试。&lt;/p&gt;
+  &lt;p&gt;Anthropic虽采取了部分缓解措施，但这种行为模式在Claude 3.7中依然存在。&lt;/p&gt;
+  &lt;p&gt;尽管这些案例听起来有趣，但真正的问题在于：&lt;/p&gt;
+  &lt;p&gt;工程师们往往无法精确地定义奖励函数，而且往往是在AI智能体已经利用了环境中的漏洞之后，他们才能发现。&lt;/p&gt;
+  &lt;p&gt;也就是说，许多奖励黑客的路径，都是设计者从未设想过的。&lt;/p&gt;
+  &lt;p&gt;虽然在训练过程中可以迭代修正，但这对于LLM来说却异常困难。&lt;/p&gt;
+  &lt;p&gt;机器人的环境目前尚处于起步阶段，调整起来相对容易，但LLM拥有巨大而复杂的行动空间，使得防止奖励黑客变得难上加难。&lt;/p&gt;
+  &lt;p&gt;因此，解决奖励黑客问题是所有顶尖实验室的重中之重，这需要借鉴许多来自安全与对齐团队的想法。&lt;/p&gt;
+  &lt;p&gt;在Claude 4中，Anthropic通过改进环境、明确奖励信号和实施主动监控，显著减少了奖励黑客行为。这绝非易事，需要大量的专业知识和实践经验。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,529" src="https://img.36krcdn.com/hsossms/20250610/v2_e826b4d2f9d14efc98e2ad7d4cc1f7a0@5888275_oswg75868oswg1080oswg529_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;然而，强化学习和奖励黑客并非唯一的瓶颈，基础设施本身也是一个巨大的瓶颈。而这个瓶颈始于强化学习所需的数据。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;数据与样本效率&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;乍一看，强化学习的样本效率似乎很高。&lt;/p&gt;
+  &lt;p&gt;在训练Qwen模型的「推理强化学习」阶段，研究者仅用了不到4000组问答对，就实现了相较于基础模型的显著性能提升，并因此声称其样本效率极高。&lt;/p&gt;
+  &lt;p&gt;然而，实际情况要复杂得多。&lt;/p&gt;
+  &lt;p&gt;因为4000组问答对中的每一组，都必须满足极其严苛的条件：不能是模型冷启动阶段已经用过的数据；必须尽可能地有挑战性，覆盖广泛的细分领域，同时又要恰好在模型当前的能力范围之内。&lt;/p&gt;
+  &lt;p&gt;要满足这些要求绝非易事。&lt;/p&gt;
+  &lt;p&gt;生成合适的合成数据，需要经历大量的筛选和反复的模型推理。&lt;/p&gt;
+  &lt;p&gt;此外，要确保问题「有挑战性但又不过于困难」，这本身就需要通过实验和验证，以确认问题难度恰好落在那个狭窄的区间内。&lt;/p&gt;
+  &lt;p&gt;在某些无法通过合成数据生成的场景中，实验室甚至需要招聘STEM领域的博士，来专门为模型编写足够有挑战性的问题和答案。而他们的另一项工作，就是为LLM评判员编写可供参考的评分标准。&lt;/p&gt;
+  &lt;p&gt;这也就是为什么，像ScaleAI、Mercor和Handshake这样的招聘和数据服务公司，能从各大AI实验室获得源源不断的业务，赚得盆满钵满。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,618" src="https://img.36krcdn.com/hsossms/20250610/v2_6ba433c9239141e8bddb627f1e8b51d2@5888275_oswg229332oswg1080oswg618_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;此外，Qwen模型还进行了另一阶段的强化学习，而他们没有公布这一阶段所用的样本数量，因为这个数字远不止4000。&lt;/p&gt;
+  &lt;p&gt;在后续阶段，他们在超过20个不同领域进行了强化学习，并且同时使用了所有三种类型的奖励模型（基于规则的、有标准答案的 LLM-Judge、以及无标准答案的 LLM-Judge）。&lt;/p&gt;
+  &lt;p&gt;这背后，都需要极为复杂的工程技术和计算资源支持。&lt;/p&gt;
+  &lt;p&gt;长远来看，SemiAnalysis预计，各大实验室将在数百个专业领域上进行强化学习，以求大幅提升模型性能。&lt;/p&gt;
+  &lt;p&gt;在此过程中，质量比数量更重要——因为模型会精确地拟合其训练数据。&lt;/p&gt;
+  &lt;p&gt;因此，尽管最终用于训练的样本仅有4000个，但筛选出它们的过程却消耗了巨大的计算资源。&lt;/p&gt;
+  &lt;p&gt;可以说，强化学习在数据层面是「样本高效」的，但在计算层面绝对是「样本低效」的。&lt;/p&gt;
+  &lt;p&gt;这也就是为什么，与预训练相比，要有效地部署强化学习需要规模大得多的工程团队。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;数据即护城河&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;总之，Qwen的案例表明：高质量数据是规模化应用RL的一种至关重要的资源。&lt;/p&gt;
+  &lt;p&gt;高质量数据能为模型提供足够清晰的强化学习信号，使其能精确地提升完成特定任务的能力，而生成这类数据，往往需要海量的推理计算。&lt;/p&gt;
+  &lt;p&gt;更广义地看，普通公司或企业可以整合自身数据，并利用 OpenAI 推出的强化微调（RFT）等服务。&lt;/p&gt;
+  &lt;p&gt;RFT允许企业使用自定义的评分器，并根据评分结果或特定数据来更新模型。显然，这个功能目前被低估了，在未来它将产生深远的影响。&lt;/p&gt;
+  &lt;p&gt;事实上，任何能够聚合或收集用户行为的产品都极具价值，因为用户行为数据最终构成了最重要的数据集。&lt;/p&gt;
+  &lt;p&gt;由此，就能得到一个有趣的推论：拥有用户数据的AI初创公司，未来可以在不依赖庞大计算预算来合成数据的情况下，利用强化学习训练出自己的定制模型。&lt;/p&gt;
+  &lt;p&gt;如果企业真能搭建起合适的强化学习环境，那么显然，一个为企业深度定制模型的时代就真的到来了。&lt;/p&gt;
+  &lt;p&gt;而相比于基础模型势不可挡的发展步伐，单纯为企业进行微调的路线，如今基本已宣告失败。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;AI智能体持续编码，7个月翻一番&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;模型现在能够长时间保持连贯性。&lt;/p&gt;
+  &lt;p&gt;更长的任务需要长时间内稳定运行的环境和基础设施，这对工程的要求更高了。&lt;/p&gt;
+  &lt;p&gt;下面的图表显示，独立编码任务的持续时间每7个月翻倍，预计非编码任务的翻倍速度会更快。&lt;/p&gt;
+  &lt;p&gt;OpenAI的深度研究是第一个能连贯工作超过几分钟的模型，我们预计这个能力的上限会显著且快速提升。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,587" src="https://img.36krcdn.com/hsossms/20250610/v2_ac3ea2329a1a4e5eb4997ba5527f1b97@5888275_oswg174079oswg1080oswg587_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这里存在一个矛盾。&lt;/p&gt;
+  &lt;p&gt;智能体任务经济价值极高，但由于其复杂性和资源密集度，对强化学习（RL）提出了很高的挑战。&lt;/p&gt;
+  &lt;p&gt;任务持续时间延长意味着每次强化学习迭代也需要更长的时间，而这会拖慢整个训练过程。&lt;/p&gt;
+  &lt;p&gt;以计算机使用（Computer use）为例，很好地说明了长时程任务的许多问题。&lt;/p&gt;
+  &lt;p&gt;首先，作为一种智能体任务，它更接近现实世界的问题和行为，这带来了新的挑战。&lt;/p&gt;
+  &lt;p&gt;比如，在计算机使用中，智能体会遇到许多反机器人的网页脚本、验证码，以及复杂的Cloudflare保护功能。&lt;/p&gt;
+  &lt;p&gt;这些问题会时不时就会出现。这样的细节给环境调试增加了之前不存在的复杂性。&lt;/p&gt;
+  &lt;p&gt;此外，计算机使用需要大量的虚拟机（VM）和浏览器连接等基础设施，这些基础设施不仅要长时间稳定运行，还要满足之前提到的环境工程要求。&lt;/p&gt;
+  &lt;p&gt;计算机使用任务通常会持续数小时。这意味着任务的执行时间变长，奖励变得稀疏。&lt;/p&gt;
+  &lt;p&gt;换句话说，智能体可能多走十倍的步骤，但只有最后一步才会获得奖励，这使得强化学习的信号变得更弱。&lt;/p&gt;
+  &lt;p&gt;不仅如此，计算机使用还依靠图像和视频来向模型展示正在发生的事情。&lt;/p&gt;
+  &lt;p&gt;虽然有人尝试通过传输HTML文件或者设置网页的文本表示来实现计算机使用，但在这种情况下，模型不能理解图像的含义。&lt;/p&gt;
+  &lt;p&gt;如果能让文本表示正常工作，将会大大降低计算机使用的内存需求。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;环境计算也要斥巨资&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;SemiAnalysis认为，在环境计算上投入资金而不是仅仅专注于强化学习会有巨大的潜力。&lt;/p&gt;
+  &lt;p&gt;一个例子是高度真实且难以获得奖励的黑客环境，它利用数十或数百个CPU协同工作。&lt;/p&gt;
+  &lt;p&gt;这是一个全新的领域，非常适合扩展。这种真实性可以因为纯净的信号而带来令人难以置信的性能提升。&lt;/p&gt;
+  &lt;p&gt;未来，这些环境也会运行在GPU上，模拟真实世界的数字孪生。&lt;/p&gt;
+  &lt;p&gt;值得注意的是，这些GPU需要具备图形渲染能力，比如RTX Pro GPU或消费级GPU。而专门为AI设计的GPU和ASIC芯片（如H100、B200、TPU、Trainium等）在图形渲染方面明显不足。&lt;/p&gt;
+  &lt;p&gt;因此，大量资源正被投入到为强化学习（RL）环境构建的AI世界模型上，而非其他提及的常规RL环境。&lt;/p&gt;
+  &lt;p&gt;这将简化扩展过程，否则面对众多软硬件，环境复杂度会急剧上升。&lt;/p&gt;
+  &lt;p&gt;可靠、可扩展、易于实现的环境将会有极大需求，预计这会成为初创公司蓬勃发展的领域，已经有一些公司开始涉足了。&lt;/p&gt;
+  &lt;p&gt;目前的瓶颈不在于模型的能力——像Grok 3已经足够聪明，能处理大部分任务——而在于与现实世界互动并获取上下文语境的能力。&lt;/p&gt;
+  &lt;p&gt;SemiAnalysis认为这对AI在科学领域的应用尤其令人兴奋。&lt;/p&gt;
+  &lt;p&gt;比如，可以构建与实验室中任何可测量事物相连的环境。这种设置能让AI智能体控制现实世界，根据环境的反馈来调整和改变各种因素。在某些情况下，比如控制炉子的温度，反馈循环可能很快，模型可以快速迭代。&lt;/p&gt;
+  &lt;p&gt;然而，在其他高价值的任务中，如果实验耗时很长，模型就需要有相应的长时间连贯性。加上需要多次试验，这种设置可能在计算和物理上都非常苛刻。&lt;/p&gt;
+  &lt;p&gt;在生物学、半导体制造和材料科学等领域，考虑模型运行和测试的反馈循环（比如试验和消融研究）非常重要。这些生物、制造和工业过程的速度和验证都有其极限。&lt;/p&gt;
+  &lt;p&gt;某些领域对强化学习计算的影响需要更长的时间，其他领域则由于可以快速反馈而迅速变化。&lt;/p&gt;
+  &lt;p&gt;物理AI的反馈回路比数字世界慢，因此需要真正强大的数字孪生环境。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;一个关于「评估」的类比&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;打个粗略的比方：即便是概念上相对简单的模型评估，实际运行起来也困难重重。&lt;/p&gt;
+  &lt;p&gt;Docker镜像会频繁崩溃；选择题中一个简单的格式变动（比如将选项从A改为1），就可能让模型的评估分数产生高达5%的波动。&lt;/p&gt;
+  &lt;p&gt;在评估基础设施规模化的初期，Anthropic就曾公开讨论过其背后巨大的工程挑战。&lt;/p&gt;
+  &lt;p&gt;GPQA是一个常用的评估基准，用于测试模型在物理、化学和生物学领域研究生水平的问题，但它似乎存在一个「噪声上限」——尽管它显示出模型的性能已停滞不前，但由于数据集中存在错误标注的答案，模型实际上不可能达到100%的准确率。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,636" src="https://img.36krcdn.com/hsossms/20250610/v2_9864aae7aedc4fc4890494f0ede1cfd1@5888275_oswg83820oswg1080oswg636_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;随着智能体任务的周期越来越长，问题在很多方面都变得愈发严峻。&lt;/p&gt;
+  &lt;p&gt;模型的行动空间（action space）已大幅增加，其行为的连贯时间（coherence time）也在变长，而要创建能够衡量这种长周期能力的评估方法，本身就极具挑战，同时也使得评估的成本显著升高。&lt;/p&gt;
+  &lt;p&gt;总而言之，评估基础设施的建设，虽然概念不新且看似简单，但其过程中的繁琐细节足以让人崩溃。&lt;/p&gt;
+  &lt;p&gt;而搭建并扩展大规模的强化学习基础设施，其难度则要高出几个数量级，面临的琐碎问题只多不少。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;超算GPU配置，RL一并优化了&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;英伟达为GB200和GB300设计的NVL72系统，为推理领域带来了关键性的进步。&lt;/p&gt;
+  &lt;p&gt;其更强的计算能力可以在更低的延迟下实现更高的吞吐量，而共享内存则为KV缓存提供了更大的扩展空间。这不仅让推理模型在推理阶段能进行更高效的批处理，也对强化学习产生了深远影响。&lt;/p&gt;
+  &lt;p&gt;对于强化学习而言，增加的内存带来了多方面的能力提升。&lt;/p&gt;
+  &lt;p&gt;首先，它允许针对一个给定的问题进行更多轮次的推演。&lt;/p&gt;
+  &lt;p&gt;其次，它能更好地处理长周期智能体任务（long horizon agentic tasks）。&lt;/p&gt;
+  &lt;p&gt;再次，它能支持更大、推理能力更强的模型来担任评判员，这对于那些结果难以直接验证的领域尤其有帮助。&lt;/p&gt;
+  &lt;p&gt;最后，强化学习这种新范式高度依赖合成数据的生成和筛选，而这又离不开海量的推理计算，NVL72系统在这方面表现极为出色。&lt;/p&gt;
+  &lt;p&gt;然而，在实践中，算力未被充分利用是一个难题。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,342" src="https://img.36krcdn.com/hsossms/20250610/v2_645ca451bb694fe7a2c0146a922d5d82@5888275_oswg51219oswg1080oswg342_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;例如在线强化学习中，不同采样副本之间难以做到完美的负载均衡。&lt;/p&gt;
+  &lt;p&gt;当最后一个推演任务完成时，第一个可能早已结束，造成时间差和资源闲置。&lt;/p&gt;
+  &lt;p&gt;此外，由于不同的采样器和训练器可能采用不同的网络拓扑结构，权重的广播也可能导致显著的算力闲置。&lt;/p&gt;
+  &lt;p&gt;强化学习的各个阶段都需要推理，但与预训练时代不同，这些推理任务不必集中进行。&lt;/p&gt;
+  &lt;p&gt;虽然强化学习需要大量计算，但这些计算任务不必部署在同一地点。&lt;/p&gt;
+  &lt;p&gt;例如，一个领域的合成数据可以在一个数据中心生成和验证，而模型的训练过程则可以在另一个完全不同的数据中心进行。&lt;/p&gt;
+  &lt;p&gt;随着强化学习在总计算量中的占比越来越大，可能会看到数据中心建设格局的转变。尽管最大规模的、数千兆瓦级的超大型数据中心对于预训练的规模化扩展仍然是必需的，但强化学习究竟能在多大程度上实现去中心化，目前尚无定论。&lt;/p&gt;
+  &lt;p&gt;预训练一次性可能占用数万块GPU，但用于强化学习的推理算力却可以根据可用容量灵活调配。&lt;/p&gt;
+  &lt;p&gt;这意味着，实验室现在可以利用非高峰时段的闲置GPU，来执行其强化学习流程中的合成数据生成等任务。&lt;/p&gt;
+  &lt;p&gt;事实上，SemiAnalysis了解到至少有一家实验室正在利用其闲置的推理集群来运行这一流程，通过生成合成数据，相当于为模型训练免费提供计算资源。&lt;/p&gt;
+  &lt;p&gt;未来，推理和训练之间的界限将在各大实验室中变得越来越模糊，这将使得除大型训练集群之外的更多计算资源，也能够被用于模型能力的提升。&lt;/p&gt;
+  &lt;p&gt;这些闲置算力之所以能「免费」地服务于训练，根本原因在于推理集群的建设必须按照峰值需求进行配置。&lt;/p&gt;
+  &lt;p&gt;Prime Intellect公司的Intellect-2模型就展示了强化学习的这种去中心化特性，这是一个全球分布式运行的推理模型。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,636" src="https://img.36krcdn.com/hsossms/20250610/v2_5d84683538144876886232a6ca3268ff@5888275_oswg427612oswg1080oswg636_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;从硬件设计的角度看，日益增长的推理需求和长周期智能体任务使得内存变得愈发重要。&lt;/p&gt;
+  &lt;p&gt;强化学习所消耗的浮点运算（FLOPs）次数虽少于预训练，但其内存负载却依然很高。&lt;/p&gt;
+  &lt;p&gt;长远来看，硬件发展将进行调整以适应这一变化，这其中也包括对网络拓扑等因素的考量。&lt;/p&gt;
+  &lt;p&gt;SemiAnalysis看到，强化学习带来的改变已远不止硬件设计，它同样在重塑研究的组织与协同方式。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;AI实验室重组，RL造成的&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;语言模型的强化学习中，推理（inference）首次与训练过程发生了深度的融合。&lt;/p&gt;
+  &lt;p&gt;现在，推理的性能直接影响着训练的速度。&lt;/p&gt;
+  &lt;p&gt;这意味着，生产级别的推理能力（即快速、高效、低成本的推理）已成为模型训练过程中不可或缺的一环。&lt;/p&gt;
+  &lt;p&gt;以往，每个实验室都明确区分「面向产品服务的推理」和「内部推理」（例如，用于模型评估）。&lt;/p&gt;
+  &lt;p&gt;然而，正因为强化学习需要进行海量的推理计算，将一个高度优化的推理堆栈直接内置于训练堆栈之中，变得至关重要。&lt;/p&gt;
+  &lt;p&gt;这一趋势也体现在了公司的组织架构调整上。&lt;/p&gt;
+  &lt;p&gt;OpenAI 为此合并了其研究团队与应用研究推理团队。同样，Anthropic和谷歌也因此对其产品团队和内部研究团队进行了重大的组织架构调整。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;RL让模型不断「换血」&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;预训练时代与当前模式的一个显著区别在于，强化学习可以在模型发布后持续进行。&lt;/p&gt;
+  &lt;p&gt;这意味着模型可以先发布，然后通过持续的强化学习来扩展其能力，并在此基础上进行版本更新。&lt;/p&gt;
+  &lt;p&gt;这种迭代式的开发方法可以为现有模型不断增添新功能。新版DeepSeek R1的发布正是如此。&lt;/p&gt;
+  &lt;p&gt;实际上，这种发布后的持续优化已是常态——例如，当前的GPT-4o就已经历了多次更新，早已不是最初发布的版本了。&lt;/p&gt;
+  &lt;p&gt;SemiAnalysis预计，在这种新范式下，Anthropic将会对Claude模型进行远比以往更频繁的更新。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;不用牺牲编码，数据混合是种解&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;一种常见的「RL训练」方法是：以一个目标模型为基础，创建多个副本，分别在特定领域进行 RL，最后再合并这些副本的权重。&lt;/p&gt;
+  &lt;p&gt;尽管这一方法受到多数人质疑，但在Cohere的Command-A模型中得到了应用。&lt;/p&gt;
+  &lt;p&gt;通过这种方式，不同团队可以按各自的节奏并行工作，从而加快开发进程并简化整体流程。&lt;/p&gt;
+  &lt;p&gt;然而挑战在于，权重合并后可能导致模型在某些领域的能力，不同程度的下降。&lt;/p&gt;
+  &lt;p&gt;比如，Cohere的模型在合并后，RAG和通用性保持稳定，但编码能力却有所减弱。&lt;/p&gt;
+  &lt;p&gt;这便带来了一个核心问题：是否值得为了提升RAG性能，牺牲编码能力呢？&lt;/p&gt;
+  &lt;p&gt;为了解决此问题，另一种方法是利用批处理（batching）技术。&lt;/p&gt;
+  &lt;p&gt;它将来自不同环境的数据混合在一起进行训练，因此无需进行模型合并。&lt;/p&gt;
+  &lt;p&gt;这种多环境批处理方法并非一次只专注于一个环境，而是通过构建包含所有领域（如数学、代码、搜索等）混合样本的训练批，在多个不同的RL环境中同步训练单一模型。&lt;/p&gt;
+  &lt;p&gt;它的优势显而易见，无需合并模型，并保留了模型的编码等领域的能力。&lt;/p&gt;
+  &lt;p&gt;不过，这一方法对团队协作和基础设施的要求也更高。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,615" src="https://img.36krcdn.com/hsossms/20250610/v2_eaecf0829e894c4980654a158ef81cc3@5888275_oswg144063oswg1080oswg615_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;RL训练，大厂站在了分岔口&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;与预训练相比，RL阶段技术路径更为复杂。&lt;/p&gt;
+  &lt;p&gt;在预训练阶段，行业的技术路径相对清晰，主要是通过提升参数规模和算法效率推动LLM性能提升。&lt;/p&gt;
+  &lt;p&gt;然而，RL阶段的战略选择，直接体现了各家公司权衡取舍的优先级。&lt;/p&gt;
+  &lt;p&gt;比如，Cohere非常看重RAG，并为了保住这一优势而做出相应选择。&lt;/p&gt;
+  &lt;p&gt;OpenAI、Anthropic、谷歌的激励机制与目标各不相同，这直接影响了他们的数据组合策略、RL投入的方式。&lt;/p&gt;
+  &lt;p&gt;这也意味着，在scaling模型路径上，整个AI圈百家争鸣。&lt;/p&gt;
+  &lt;p&gt;过去，预训练的竞赛重点在于如何最快地提升模型规模，并通过算法创新来提高计算效率。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,459" src="https://img.36krcdn.com/hsossms/20250610/v2_9b69c8c026294921acf3fa0b8b57ddef@5888275_oswg200387oswg1080oswg459_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;但在RL领域，规模化的方式远不止扩大算力这一种。例如，可以专注于扩大某一特定领域的数据量。&lt;/p&gt;
+  &lt;p&gt;举个例子，Anthropic明显将重心完全放在代码性能上。&lt;/p&gt;
+  &lt;p&gt;其他实验室则将资源投向了不同领域——OpenAI在推出其代码工具Codex之前，优先发布了Deep Research。&lt;/p&gt;
+  &lt;p&gt;随着这一范式不断演进，各家实验室的真实侧重点将变得愈发清晰，而这些差异在预训练阶段往往难以察觉的。&lt;/p&gt;
+  &lt;p&gt;Thinking Machines的核心主张之所以引人注目，正是因为他们的关注点与其他实验室截然不同。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="630,362" src="https://img.36krcdn.com/hsossms/20250610/v2_3edd0fd63998484f88114e8a136d21dd@5888275_oswg27054oswg630oswg362_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;小模型，更适合蒸馏&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;对于小模型而言，强化学习并非是最佳选择。&lt;/p&gt;
+  &lt;p&gt;Qwen的实践表明，在开发小模型时，蒸馏的效果极其显著。&lt;/p&gt;
+  &lt;p&gt;具体来说，蒸馏是指通过比较对同一问题的回答，让小模型（学生模型）的概率分布向教师模型的概率分布靠拢。&lt;/p&gt;
+  &lt;p&gt;蒸馏通常不像RL那样，需要进行「推演」，这意味着它的资源利用效率要高得多。&lt;/p&gt;
+  &lt;p&gt;Qwen发现，通过蒸馏，他们能用更少的GPU取得更好的效果。&lt;/p&gt;
+  &lt;p&gt;同样，OpenAI近期发布的mini系列模型，也采用了这种方法。&lt;/p&gt;
+  &lt;p&gt;然而，这类小模型的一个缺点是性能「参差不齐」，或呈现「尖峰效应」，即在某些方面表现极其出色，而在其他方面则不然。&lt;/p&gt;
+  &lt;p&gt;相比之下，像GPT-4o这样的大模型则表现得更为全面。&lt;/p&gt;
+  &lt;p&gt;当然，蒸馏的成功离不开一个强大的「教师」模型，这一点是必不可少的。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,183" src="https://img.36krcdn.com/hsossms/20250610/v2_a307750c2f4c4cbc997413ce07d31c7b@5888275_oswg93931oswg1080oswg183_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;参考资料： &lt;/p&gt;
+  &lt;p&gt;https://semianalysis.com/2025/06/08/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data/ &lt;/p&gt;
+  &lt;p&gt;https://x.com/Prashant_1722/status/1932244771436929492 &lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/2QJp2YdYHOPP_eRRCORRmg"&gt;“新智元”&lt;/a&gt;，作者：新智元，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 10 Jun 2025 12:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9ZZ3d6bHMxZi1aX2JIeDI0SGFOb2pmZUJwaUJVU2NhelAwTHp4WVI0aUdUcjc3bm1DbDRQQ3hLb1pvbFFidlFnVVdqdjhJdw</guid></item><item><title>任正非：华为芯片比美国同行落后一代 - DW</title><link>https://news.google.com/rss/articles/CBMiiAJBVV95cUxOanpSZXNabUZpdHpBd2FCeTh1YVhIQTUwNjlZc2Y1NE9ONkw4SFpaLVlVWXFMZWctQkg2RnVZYm9nbHNqOGNoemFiWEQwbWpHN2hhSkVmU01GcXFTS0lBdkg2UGxTV1RiUEZiTmxJQzdJa1pJNWM0cE1YcU9TbXdvOWNYdmNwckhINDZSVnA0dEdoWnFMWVlKM3l1dzJ6cDRDYzdQQ05wcHNaR3kzY2UtWUcxZHFvTC1kbVVCOVd6dUlBdmowNHhFVFgwM28yQjlRRk5Qb2ZvdFBPOFFVQ1JicnhfQjNraFNHNTdwTVZBSzVHOHlaUjdxZHdLMllyMU1ZTmlYVU9VUnjSAYgCQVVfeXFMUGVpTVF3UThCNFZfXzBLTjM3dWdBRW4zQWdMbW03UmxJYWNoSUtaWU1IUUZOYWZ1VFVDN0tOMF9FeTRQR2xHUnplNERPellWR1d1OUJBLTRaUGNoZS1YcWhpRmxLa0o2SDdxcnZnYXJIbTR6NV9FTklpa3pMb00yMEg2SkkwVXNPTVRnRjJ1OF9OSFZTekZnczNSb09ycmtZUy1FdWphbXMyQk5qeTR0WXJPem9vVXZHLU1qWWswbmJGb2pOb3p0dzNEMlgyTWFVWV91dndNNEVIU19lV1lRTnFIak1nZE84TUZqdlVHRmNSTmZFTGI1VHJjLUhlTnJIbHRVRlVqdVZW?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="cc0m0op s1ebneao rich-text t1it8i9i r1wgtjne wgx1hx2 b1ho1h07"&gt;&lt;p&gt;（德国之声中文网）任正非在访谈中披露，&lt;a class="internal-link" href="/zh/%E5%8D%8E%E4%B8%BA/t-41779060"&gt;华为&lt;/a&gt;目前每年大约投入1800亿元人民币用于研发，其中“大概有600亿是做基础理论研究，不考核；1200亿左右投入产品研发，投入是要考核的”。“没有理论就没有突破，我们就赶不上美国。”&lt;/p&gt;
 
 &lt;p&gt;在谈到美国对华出口管制问题时，任正非表示，“我们单芯片还是落后美国一代，我们用数学补物理、非摩尔补摩尔，用群计算补单芯片，在结果上也能达到实用状况。”他还特意强调，软件技术不构成瓶颈，“芯片问题其实没必要担心，用叠加和集群等方法，计算结果上与最先进水平是相当的。”&lt;/p&gt;
 
@@ -1552,7 +2133,50 @@ Series X|S平台。西山居CEO及《解限机》制作人郭炜炜也将进行�
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Jun 2025 10:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9UaDBVbTI2eXg1MHJJN25kdXpZRDdqVmtzNkRFQ09uXzBRR2pHX2pjendreFJBaGhPWEd4VVFGckdsRGkxbHV1ZjNhcUdMQzE4VDhCS2liOXQ</guid></item><item><title>好看又便宜的中国电动汽车，背后是否有更大代价？ - BBC</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE1aWXB5OXc1RlVmSG1WaHNKX1J5UUlQQ2o5Tjkwa09SUVFlVTBKT2hUallqMDRid2FzLVFYRTNSVlNCdkNrLTVaZEdtVDlZRWRiSDB0Tk50TF9JclMyQWNXd0JkNHY2QdIBa0FVX3lxTE4yUDZpVXBvVWxhQlA2SlZzYXhfRjVFU2tWakJHT2xEZ3lWRjlRbkNxcVNQMVcwYmRUZVpueGt3MkYxSktmQ0NDd09fb1hwdURxd0d2LTFIS0tlLUlSVWFzRS1iaVRsZ2xaWVk4?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="bbc-1i6u33"&gt;&lt;p dir="ltr" class="bbc-1151pbn ebmt73l0"&gt;&lt;h1 id="content" tabindex="-1" class="article-heading bbc-1tk77pb e1p3vdyi0"&gt;好看又便宜的中国电动汽车，背后是否有更大代价？&lt;/h1&gt;&lt;/p&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="U9仰望" loading="eager" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" class="bbc-1vjaf6b"&gt;&lt;strong id="article-byline" aria-hidden="true" class="bbc-m04vo2"&gt;Article information&lt;/strong&gt;&lt;ul role="list" class="bbc-1rvtlej"&gt;&lt;li&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;Author, &lt;/span&gt;&lt;span class="bbc-1o0gmgs"&gt;西奥·莱格特（Theo Leggett）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;Role,  &lt;/span&gt;&lt;span class="bbc-15gut0e"&gt;BBC国际商业事务记者&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="bbc-v8pmqw"&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;time datetime="2025-06-10" class="bbc-xvuncs e1mklfmt0"&gt;1 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在中国，人们称它为“海鸥”，其外型也一如其名：它线条流畅、稜角分明，前大灯明亮且向下倾斜，似乎带着一丝调皮的神情。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;当然，它是一辆车，一辆非常小的车，其设计是作为便宜的城市通勤代步工具——但它却可能具有重大意义。自2023年于中国上市以来，这款车大受欢迎，最近更以“Dolphin Surf”（海豚冲浪）的名字登陆欧洲（因为欧洲人显然不像中国人那么喜欢海鸥）。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;车子本周在英国上市时，预计售价约为18,000英镑。作为一款出现在西方市场的电动汽车，它仍算非常便宜。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;它不会是市面上最便宜的车型：由雷诺（Renault）与东风在武汉联合制造的“达契亚春天”（Dacia Spring），以及中国新创企业“零跑”（Leapmotor）与“斯泰兰蒂斯”（Stellantis）合资生产的“零跑T03”（Leapmotor T03），价格都更低。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;但“海豚冲浪”才是让老牌车厂最担心的“入侵物种”。因为其背后的公司在国际市场上掀起了越来越大的波澜。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="比亚迪“海豚冲浪”（Dolphin Surf）" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Bloomberg via Getty&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;比亚迪“海豚冲浪”（Dolphin Surf）在英国的售价约为18000英镑——以电动车来说，这个价格极为便宜。&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;比亚迪（BYD）已然是中国市场的最大玩家。它在2024年超越特斯拉（Tesla），成为全球电动汽车（EV）销量冠军，自两年前进入欧洲市场以来，扩张势头迅猛。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“我们希望在十年内成为英国市场的第一名，”比亚迪英国销售与行销总监史蒂夫·比蒂（Steve Beattie）表示。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;比亚迪是中国企业与品牌全球扩张的其中一分子，有人认为这可能改变全球汽车产业的格局——已经促使美国政府与欧盟采取激进行动。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这意味着像蔚来（Nio）、小鹏（Xpeng）、极氪（Zeekr）或欧萌达（Omoda）这些曾经默默无闻的品牌，可能会像福特（Ford）或大众（Volkswagen、又译“福斯”）一样成为家喻户晓的名字。它们将与早已被中国企业收购的经典品牌如名爵（MG）、沃尔沃（Volvo，又译“富豪”）与莲花（Lotus）并列。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;目前的产品线涵盖范围极广，从像“海豚冲浪”这样的小型代步车，到比亚迪高端子品牌“仰望”（Yangwang）推出的跳坑超跑U9，不一而足。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国品牌正在大举进军欧洲市场，”伯明翰商学院（Birmingham Business School）商业与经济学教授大卫·贝利（David Bailey）说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;2024年，全球共售出1700万辆电池与插电式混合动力车，其中1100万辆在中国售出。根据顾问公司Rho Motion的数据，中国品牌在海外市场的EV与插电式混合动力汽车销量占全球10%，这一数字预计还会上升。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;对消费者来说，这应该是好消息——意味着更多高品质且价格实惠的电动车将问世。但随着北京与西方国家之间的竞争持续升温，一些专家担心中国汽车可能带来骇客与第三方的安全风险。对欧洲的老牌车厂而言，这更是一场对其历史优势的严峻挑战。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“（中国拥有）透过规模经济与电池技术带来的巨大成本优势。欧洲制造商已大幅落后，”贝利警告说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“除非他们迅速觉醒并迎头赶上，否则可能会被淘汰。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="中国电动汽车割喉式竞争" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;中国电动汽车“割喉式”竞争&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;自2001年中国加入世界贸易组织以来，其汽车产业迅速发展。这一进程在2015年加速，当时中国共产党推出了“中国制造2025”计划。这项为期十年的计划旨在让中国在多个高科技产业（包括电动汽车）中成为领导者，并因此受到来自国外，特别是美国的强烈批评，指控其强制技术转让和窃取智慧财产权——但中国政府对这些指控一概否认。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在国家大量资金的支持下，这项计划为比亚迪等企业的飞速成长奠定了基础——比亚迪最初是手机电池制造商——也让名爵与沃尔沃的中国母公司上汽（SAIC）和吉利（Geely）成为电动车市场的重要玩家。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国汽车的整体水准确实非常高，”英国电动汽车协会（Electric Vehicles UK）执行长丹·凯撒（Dan Caesar）表示。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;然而，中国国内的竞争越来越激烈，品牌之间在日益饱和的市场中争夺空间，这促使它们寻求海外销售的机会。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;尽管中国企业已拓展至东亚及南美市场，但多年来欧洲市场一直难以突破——直到欧洲各国政府决定逐步淘汰新款汽油与柴油车的销售。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“（中国品牌）看到了建立立足点的机会，”中国汽车巨头奇瑞（Chery）旗下子品牌欧萌达（Omoda）与杰酷（Jaecoo）的英国产品经理奥利佛·洛（Oliver Lowe）说。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一排排汽车停在停车场中，前方是一艘比亚迪货柜船" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;STR via Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;比亚迪在2024年超越特斯拉，成为全球电动车销量最高的制造商&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;竞争对手指出，中国的低劳动成本，加上政府补贴和一个非常完善的供应链，让中国企业拥有优势。瑞士银行瑞银（UBS）在2023年底发布的一份报告指出，比亚迪的造车成本比西方竞争对手低25%。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;中国企业则否认竞争环境不公平。小鹏汽车副董事长顾宏地（Brian Gu）在2024年巴黎车展上接受BBC采访时表示，他们之所以具竞争力，是因为“我们是在全球最激烈的市场中拼死拼活地竞争出来的”。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="美国奉行赤裸裸的保护主义" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;美国奉行“赤裸裸的保护主义”？&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;对中国电动汽车进口可能冲击既有制造商的担忧，在2024年达到高峰。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;美国制造业联盟（Alliance for American Manufacturing）警告说，这可能对美国产业构成“灭绝级的事件”。欧盟执委会主席乌苏拉·冯德莱恩（Ursula von der Leyen）则指出，中国企业获得的“巨额国家补贴”正在扭曲欧洲市场。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;拜登政府采取了激烈行动，将中国制电动车的进口关税从25%提高至100%，实际上让在美国销售变得毫无意义。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="拜登与习近平握手" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;LEAH MILLIS/AFP via Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;拜登政府在2024年将中国制电动车的进口关税提高至100%&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;与此同时，欧盟在2024年10月对中国产电动汽车加征最高达35.3%的额外关税。不过英国未有采取任何行动。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;施密特汽车研究公司（Schmidt Automotive Research）创办人马提亚斯·施密特（Matthias Schmidt）表示，欧盟的关税措施已让中国企业更难在市场上取得份额。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“2024年时大门敞开……但中国企业错失了机会。如今关税上路，中国制造商无法再将其成本优势转嫁给欧洲消费者。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="雷诺的超现代电动车中心" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;雷诺的超现代电动车中心&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;欧洲车厂正加紧脚步开发自家的平价电动车。法国车厂雷诺（Renault）正是其中之一。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在位于法国东北部杜埃（Douai）的工厂里，一排排喷出火花的机器人正在焊接钢板，组装车体；而在主装配线上，自动化系统将车壳、车门、电池、发动机与其他零件组合起来，最后由人工进行收尾工作。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这座工厂自1974年以来一直为雷诺生产汽车，但四年前，老旧的生产线被全新、高度自动化且数位控制的系统所取代。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;工厂的一部分也被中国拥有的电池公司“远景动力”（AESC）接手，该公司就在旁边建造了自己的“超级工厂”。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="生产线上的雷诺" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Renault&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;这座雷诺工厂正在采用部分中国制造商所使用的生产技术&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这是雷诺在法国北部打造超现代电动车“中心”的整体计划之一。这个中心仿效中国制造商的精益生产技术，透过最大化效率与让供应商尽可能靠近，来降低成本。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“我们的目标是在这里生产平价电动车，销往欧洲市场，”杜埃工厂厂长皮耶·安德里厄（Pierre Andrieux）解释说，他认为自动化流程“将使我们能够有利可图地达成这一目标”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;但雷诺也在利用中国品牌所没有的优势：品牌传承。其最新车型“雷诺5 E-tech”，在杜埃生产，名称来自该公司最具代表性的产品之一。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="左侧是1978年在巴黎街头行驶的经典雷诺5，右侧是现代的雷诺5 E-Tech" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images and Renault&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;原版雷诺5——即新款雷诺5 E-Tech 所致敬的车型——曾成为一款经典的“神车”&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;原版“雷诺5”于1972年推出，是一款外型方正、成本低廉、风格独特的大众小车，后来成为经典。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这款全新设计的电动车，尽管是最先进的产品，仍在名称与外观上向前作致敬，试图重现当年的大众魅力。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="安全间谍软体与骇客疑虑" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;安全、间谍软体与骇客疑虑&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;然而，无论中国车款与欧洲竞品相比有多吸引人，一些专家认为我们应该对它们保持警惕——原因是安全。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;现代汽车多多少少都具备网络连接功能——例如用于卫星导航——而驾驶者的手机也常与车辆系统连接。由特斯拉（Tesla）率先推行的“空中更新”（over-the-air updates）技术，能远程升级车辆软体。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这些技术引发了一些人的担忧：汽车可能被骇客入侵，成为间谍工具、监控个人，甚至只需按下键盘就能让车辆瘫痪。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="被灯光包围的特斯拉汽车" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;特斯拉率先推出了“空中更新（over-the-air updates）”技术，使车辆软体能够远端升级&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;今年较早前，一家英国报纸报导，英国军方与情报高层已获指示，不得在电动汽车中讨论公务；另有消息称，含有中国零件的车辆已被禁止进入敏感军事地点。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;接着在5月，前军情六处（MI6）局长理查德·迪尔洛夫爵士（Sir Richard Dearlove）声称，中国制技术存在于多种产品中，包括汽车，可能被远端控制与编程。他警告国会议员，这可能“瘫痪整个伦敦”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;中国驻伦敦大使馆发言人表示，近期的指控“完全没有根据，荒谬至极”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国一贯主张全球供应链的安全、开放与规则导向发展，”该发言人对BBC表示。“在全球经营的中国企业都必须遵守当地法律与法规。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“至今，没有任何可信证据显示中国电动车对英国或其他国家构成安全威胁。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="中国政府并非一心只想监控" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;中国政府“并非一心只想监控”&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;英国皇家联合军事研究所（RUSI）国防与安全研究员约瑟夫·贾内茨基（Joseph Jarnecki）认为，潜在风险是可以被管控的。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国车厂处于一个高度竞争的市场。虽然他们必须遵守中国法律，可能需要配合国安机构，但他们谁也不想因为被视作安全风险而损害自身的成长与出口能力，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国政府同样意识到经济成长的必要性。他们并非一心只想搞监控。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;但汽车产业只是中国科技日益融入英国经济的一个面向。为了实现政府的气候目标，“使用中国供应的技术将是必要的，”贾内茨基补充说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;他认为，关键产业的监管机构应获得足够资源，以监控网路安全，并向使用中国产品的企业提供潜在风险的建议。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;至于搭载中国技术的电动车，毫无疑问，它们将会长期存在。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“即使你开的是德国或其他地方制造的车，它里面可能也有不少中国零件，”丹·凯撒说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“事实是，我们大多数人都在使用来自中国、美国、韩国的智能手机与产品，根本不会多想。所以我认为，对中国能力的某些恐慌言论有点夸张。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“我们必须面对现实：中国将会是未来的重要组成部分。”&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Tue, 10 Jun 2025 10:07:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE1aWXB5OXc1RlVmSG1WaHNKX1J5UUlQQ2o5Tjkwa09SUVFlVTBKT2hUallqMDRid2FzLVFYRTNSVlNCdkNrLTVaZEdtVDlZRWRiSDB0Tk50TF9JclMyQWNXd0JkNHY2QdIBa0FVX3lxTE4yUDZpVXBvVWxhQlA2SlZzYXhfRjVFU2tWakJHT2xEZ3lWRjlRbkNxcVNQMVcwYmRUZVpueGt3MkYxSktmQ0NDd09fb1hwdURxd0d2LTFIS0tlLUlSVWFzRS1iaVRsZ2xaWVk4</guid></item><item><title>韩国执政党提出数字资产基本法案，拟允许本土公司发行稳定币 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FYnI5VHhvOEQtbmV4ckJVSEQzb0ZaNzZCRngtWTVBeFVmWmxRM1AtbDE0bF9LeDhhUy1lQUtCcW5Pc2hjWnpJbU5JeklxVW92andR?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 10 Jun 2025 09:11:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5FYnI5VHhvOEQtbmV4ckJVSEQzb0ZaNzZCRngtWTVBeFVmWmxRM1AtbDE0bF9LeDhhUy1lQUtCcW5Pc2hjWnpJbU5JeklxVW92andR</guid></item><item><title>零基础就能开发软件！美团发布首款AI编程工具NoCode - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE43R0Nuc0lrOVEtalpiaU03OHREcDJaQ0NwYnpQTGt3aHVlUDNic2dNaC1mUU5BLVVjRmlfMTRKQTBDRlVwVVhQcXBTRFEwdmJEYUphTzdpajA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Jun 2025 10:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9UaDBVbTI2eXg1MHJJN25kdXpZRDdqVmtzNkRFQ09uXzBRR2pHX2pjendreFJBaGhPWEd4VVFGckdsRGkxbHV1ZjNhcUdMQzE4VDhCS2liOXQ</guid></item><item><title>好看又便宜的中国电动汽车，背后是否有更大代价？ - BBC</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE1aWXB5OXc1RlVmSG1WaHNKX1J5UUlQQ2o5Tjkwa09SUVFlVTBKT2hUallqMDRid2FzLVFYRTNSVlNCdkNrLTVaZEdtVDlZRWRiSDB0Tk50TF9JclMyQWNXd0JkNHY2QdIBa0FVX3lxTE4yUDZpVXBvVWxhQlA2SlZzYXhfRjVFU2tWakJHT2xEZ3lWRjlRbkNxcVNQMVcwYmRUZVpueGt3MkYxSktmQ0NDd09fb1hwdURxd0d2LTFIS0tlLUlSVWFzRS1iaVRsZ2xaWVk4?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="bbc-1i6u33"&gt;&lt;p dir="ltr" class="bbc-1151pbn ebmt73l0"&gt;&lt;h1 id="content" tabindex="-1" class="article-heading bbc-1tk77pb e1p3vdyi0"&gt;好看又便宜的中国电动汽车，背后是否有更大代价？&lt;/h1&gt;&lt;/p&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/632b/live/b65164e0-45da-11f0-9122-31b55bf3a162.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="U9仰望" loading="eager" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" class="bbc-1vjaf6b"&gt;&lt;strong id="article-byline" aria-hidden="true" class="bbc-m04vo2"&gt;Article information&lt;/strong&gt;&lt;ul role="list" class="bbc-1rvtlej"&gt;&lt;li&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;Author, &lt;/span&gt;&lt;span class="bbc-1o0gmgs"&gt;西奥·莱格特（Theo Leggett）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;Role,  &lt;/span&gt;&lt;span class="bbc-15gut0e"&gt;BBC国际商业事务记者&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="bbc-v8pmqw"&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;time datetime="2025-06-10" class="bbc-xvuncs e1mklfmt0"&gt;1 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在中国，人们称它为“海鸥”，其外型也一如其名：它线条流畅、稜角分明，前大灯明亮且向下倾斜，似乎带着一丝调皮的神情。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;当然，它是一辆车，一辆非常小的车，其设计是作为便宜的城市通勤代步工具——但它却可能具有重大意义。自2023年于中国上市以来，这款车大受欢迎，最近更以“Dolphin Surf”（海豚冲浪）的名字登陆欧洲（因为欧洲人显然不像中国人那么喜欢海鸥）。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;车子本周在英国上市时，预计售价约为18,000英镑。作为一款出现在西方市场的电动汽车，它仍算非常便宜。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;它不会是市面上最便宜的车型：由雷诺（Renault）与东风在武汉联合制造的“达契亚春天”（Dacia Spring），以及中国新创企业“零跑”（Leapmotor）与“斯泰兰蒂斯”（Stellantis）合资生产的“零跑T03”（Leapmotor T03），价格都更低。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;但“海豚冲浪”才是让老牌车厂最担心的“入侵物种”。因为其背后的公司在国际市场上掀起了越来越大的波澜。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/c229/live/be240e70-45d5-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="比亚迪“海豚冲浪”（Dolphin Surf）" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Bloomberg via Getty&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;比亚迪“海豚冲浪”（Dolphin Surf）在英国的售价约为18000英镑——以电动车来说，这个价格极为便宜。&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;比亚迪（BYD）已然是中国市场的最大玩家。它在2024年超越特斯拉（Tesla），成为全球电动汽车（EV）销量冠军，自两年前进入欧洲市场以来，扩张势头迅猛。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“我们希望在十年内成为英国市场的第一名，”比亚迪英国销售与行销总监史蒂夫·比蒂（Steve Beattie）表示。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;比亚迪是中国企业与品牌全球扩张的其中一分子，有人认为这可能改变全球汽车产业的格局——已经促使美国政府与欧盟采取激进行动。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这意味着像蔚来（Nio）、小鹏（Xpeng）、极氪（Zeekr）或欧萌达（Omoda）这些曾经默默无闻的品牌，可能会像福特（Ford）或大众（Volkswagen、又译“福斯”）一样成为家喻户晓的名字。它们将与早已被中国企业收购的经典品牌如名爵（MG）、沃尔沃（Volvo，又译“富豪”）与莲花（Lotus）并列。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;目前的产品线涵盖范围极广，从像“海豚冲浪”这样的小型代步车，到比亚迪高端子品牌“仰望”（Yangwang）推出的跳坑超跑U9，不一而足。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国品牌正在大举进军欧洲市场，”伯明翰商学院（Birmingham Business School）商业与经济学教授大卫·贝利（David Bailey）说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;2024年，全球共售出1700万辆电池与插电式混合动力车，其中1100万辆在中国售出。根据顾问公司Rho Motion的数据，中国品牌在海外市场的EV与插电式混合动力汽车销量占全球10%，这一数字预计还会上升。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;对消费者来说，这应该是好消息——意味着更多高品质且价格实惠的电动车将问世。但随着北京与西方国家之间的竞争持续升温，一些专家担心中国汽车可能带来骇客与第三方的安全风险。对欧洲的老牌车厂而言，这更是一场对其历史优势的严峻挑战。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“（中国拥有）透过规模经济与电池技术带来的巨大成本优势。欧洲制造商已大幅落后，”贝利警告说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“除非他们迅速觉醒并迎头赶上，否则可能会被淘汰。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="中国电动汽车割喉式竞争" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;中国电动汽车“割喉式”竞争&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;自2001年中国加入世界贸易组织以来，其汽车产业迅速发展。这一进程在2015年加速，当时中国共产党推出了“中国制造2025”计划。这项为期十年的计划旨在让中国在多个高科技产业（包括电动汽车）中成为领导者，并因此受到来自国外，特别是美国的强烈批评，指控其强制技术转让和窃取智慧财产权——但中国政府对这些指控一概否认。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在国家大量资金的支持下，这项计划为比亚迪等企业的飞速成长奠定了基础——比亚迪最初是手机电池制造商——也让名爵与沃尔沃的中国母公司上汽（SAIC）和吉利（Geely）成为电动车市场的重要玩家。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国汽车的整体水准确实非常高，”英国电动汽车协会（Electric Vehicles UK）执行长丹·凯撒（Dan Caesar）表示。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;然而，中国国内的竞争越来越激烈，品牌之间在日益饱和的市场中争夺空间，这促使它们寻求海外销售的机会。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;尽管中国企业已拓展至东亚及南美市场，但多年来欧洲市场一直难以突破——直到欧洲各国政府决定逐步淘汰新款汽油与柴油车的销售。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“（中国品牌）看到了建立立足点的机会，”中国汽车巨头奇瑞（Chery）旗下子品牌欧萌达（Omoda）与杰酷（Jaecoo）的英国产品经理奥利佛·洛（Oliver Lowe）说。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/ddac/live/1aa0db00-45d7-11f0-99e3-b3688c5d03aa.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一排排汽车停在停车场中，前方是一艘比亚迪货柜船" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;STR via Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;比亚迪在2024年超越特斯拉，成为全球电动车销量最高的制造商&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;竞争对手指出，中国的低劳动成本，加上政府补贴和一个非常完善的供应链，让中国企业拥有优势。瑞士银行瑞银（UBS）在2023年底发布的一份报告指出，比亚迪的造车成本比西方竞争对手低25%。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;中国企业则否认竞争环境不公平。小鹏汽车副董事长顾宏地（Brian Gu）在2024年巴黎车展上接受BBC采访时表示，他们之所以具竞争力，是因为“我们是在全球最激烈的市场中拼死拼活地竞争出来的”。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="美国奉行赤裸裸的保护主义" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;美国奉行“赤裸裸的保护主义”？&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;对中国电动汽车进口可能冲击既有制造商的担忧，在2024年达到高峰。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;美国制造业联盟（Alliance for American Manufacturing）警告说，这可能对美国产业构成“灭绝级的事件”。欧盟执委会主席乌苏拉·冯德莱恩（Ursula von der Leyen）则指出，中国企业获得的“巨额国家补贴”正在扭曲欧洲市场。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;拜登政府采取了激烈行动，将中国制电动车的进口关税从25%提高至100%，实际上让在美国销售变得毫无意义。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/c1ad/live/376186c0-45de-11f0-bace-e1270fc31f5e.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="拜登与习近平握手" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;LEAH MILLIS/AFP via Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;拜登政府在2024年将中国制电动车的进口关税提高至100%&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;与此同时，欧盟在2024年10月对中国产电动汽车加征最高达35.3%的额外关税。不过英国未有采取任何行动。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;施密特汽车研究公司（Schmidt Automotive Research）创办人马提亚斯·施密特（Matthias Schmidt）表示，欧盟的关税措施已让中国企业更难在市场上取得份额。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“2024年时大门敞开……但中国企业错失了机会。如今关税上路，中国制造商无法再将其成本优势转嫁给欧洲消费者。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="雷诺的超现代电动车中心" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;雷诺的超现代电动车中心&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;欧洲车厂正加紧脚步开发自家的平价电动车。法国车厂雷诺（Renault）正是其中之一。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;在位于法国东北部杜埃（Douai）的工厂里，一排排喷出火花的机器人正在焊接钢板，组装车体；而在主装配线上，自动化系统将车壳、车门、电池、发动机与其他零件组合起来，最后由人工进行收尾工作。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这座工厂自1974年以来一直为雷诺生产汽车，但四年前，老旧的生产线被全新、高度自动化且数位控制的系统所取代。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;工厂的一部分也被中国拥有的电池公司“远景动力”（AESC）接手，该公司就在旁边建造了自己的“超级工厂”。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/65bd/live/2329ff20-45d9-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="生产线上的雷诺" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Renault&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;这座雷诺工厂正在采用部分中国制造商所使用的生产技术&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这是雷诺在法国北部打造超现代电动车“中心”的整体计划之一。这个中心仿效中国制造商的精益生产技术，透过最大化效率与让供应商尽可能靠近，来降低成本。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“我们的目标是在这里生产平价电动车，销往欧洲市场，”杜埃工厂厂长皮耶·安德里厄（Pierre Andrieux）解释说，他认为自动化流程“将使我们能够有利可图地达成这一目标”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;但雷诺也在利用中国品牌所没有的优势：品牌传承。其最新车型“雷诺5 E-tech”，在杜埃生产，名称来自该公司最具代表性的产品之一。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/6319/live/18918960-45df-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="左侧是1978年在巴黎街头行驶的经典雷诺5，右侧是现代的雷诺5 E-Tech" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images and Renault&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;原版雷诺5——即新款雷诺5 E-Tech 所致敬的车型——曾成为一款经典的“神车”&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;原版“雷诺5”于1972年推出，是一款外型方正、成本低廉、风格独特的大众小车，后来成为经典。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这款全新设计的电动车，尽管是最先进的产品，仍在名称与外观上向前作致敬，试图重现当年的大众魅力。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="安全间谍软体与骇客疑虑" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;安全、间谍软体与骇客疑虑&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;然而，无论中国车款与欧洲竞品相比有多吸引人，一些专家认为我们应该对它们保持警惕——原因是安全。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;现代汽车多多少少都具备网络连接功能——例如用于卫星导航——而驾驶者的手机也常与车辆系统连接。由特斯拉（Tesla）率先推行的“空中更新”（over-the-air updates）技术，能远程升级车辆软体。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;这些技术引发了一些人的担忧：汽车可能被骇客入侵，成为间谍工具、监控个人，甚至只需按下键盘就能让车辆瘫痪。&lt;/p&gt;&lt;/div&gt;&lt;figure class="bbc-1qn0xuy"&gt;&lt;div class="bbc-j1srjl"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/b2eb/live/d0f592e0-45d9-11f0-9122-31b55bf3a162.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="被灯光包围的特斯拉汽车" loading="lazy" class="bbc-139onq"&gt;&lt;p class="bbc-1276odk" role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="bbc-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="bbc-m04vo2"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;特斯拉率先推出了“空中更新（over-the-air updates）”技术，使车辆软体能够远端升级&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;今年较早前，一家英国报纸报导，英国军方与情报高层已获指示，不得在电动汽车中讨论公务；另有消息称，含有中国零件的车辆已被禁止进入敏感军事地点。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;接着在5月，前军情六处（MI6）局长理查德·迪尔洛夫爵士（Sir Richard Dearlove）声称，中国制技术存在于多种产品中，包括汽车，可能被远端控制与编程。他警告国会议员，这可能“瘫痪整个伦敦”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;中国驻伦敦大使馆发言人表示，近期的指控“完全没有根据，荒谬至极”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国一贯主张全球供应链的安全、开放与规则导向发展，”该发言人对BBC表示。“在全球经营的中国企业都必须遵守当地法律与法规。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“至今，没有任何可信证据显示中国电动车对英国或其他国家构成安全威胁。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;h2 id="中国政府并非一心只想监控" tabindex="-1" class="bbc-1mewxu4 eglt09e0"&gt;中国政府“并非一心只想监控”&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;英国皇家联合军事研究所（RUSI）国防与安全研究员约瑟夫·贾内茨基（Joseph Jarnecki）认为，潜在风险是可以被管控的。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国车厂处于一个高度竞争的市场。虽然他们必须遵守中国法律，可能需要配合国安机构，但他们谁也不想因为被视作安全风险而损害自身的成长与出口能力，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“中国政府同样意识到经济成长的必要性。他们并非一心只想搞监控。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;但汽车产业只是中国科技日益融入英国经济的一个面向。为了实现政府的气候目标，“使用中国供应的技术将是必要的，”贾内茨基补充说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;他认为，关键产业的监管机构应获得足够资源，以监控网路安全，并向使用中国产品的企业提供潜在风险的建议。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;至于搭载中国技术的电动车，毫无疑问，它们将会长期存在。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“即使你开的是德国或其他地方制造的车，它里面可能也有不少中国零件，”丹·凯撒说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“事实是，我们大多数人都在使用来自中国、美国、韩国的智能手机与产品，根本不会多想。所以我认为，对中国能力的某些恐慌言论有点夸张。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="bbc-19j92fr ebmt73l0"&gt;&lt;p dir="ltr" class="bbc-w2hm1d e17g058b0"&gt;“我们必须面对现实：中国将会是未来的重要组成部分。”&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Tue, 10 Jun 2025 10:07:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE1aWXB5OXc1RlVmSG1WaHNKX1J5UUlQQ2o5Tjkwa09SUVFlVTBKT2hUallqMDRid2FzLVFYRTNSVlNCdkNrLTVaZEdtVDlZRWRiSDB0Tk50TF9JclMyQWNXd0JkNHY2QdIBa0FVX3lxTE4yUDZpVXBvVWxhQlA2SlZzYXhfRjVFU2tWakJHT2xEZ3lWRjlRbkNxcVNQMVcwYmRUZVpueGt3MkYxSktmQ0NDd09fb1hwdURxd0d2LTFIS0tlLUlSVWFzRS1iaVRsZ2xaWVk4</guid></item><item><title>比亚迪、广汽、一汽、东风、长安、赛力斯、吉利承诺：支付账期不超过60天，中钢协：我们快撑不住了 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE5mc1doT2xUdDZtUF9XbTJLakFIdWFXMWpsTnJmRGdyRUYwNTJzWTBoaWJJaEpxWnBrQmhJUVcwRDQ0bmNiYW5zckFWQTJhdw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;中国汽车的价格战乱象在经历了重庆论坛的对骂争吵以及监管部门约谈之后终于有望回归有序，进入法治轨道。&lt;/p&gt;
+  &lt;p&gt;昨日（6月10日）晚间，广汽集团、中国一汽、东风汽车、长安汽车、赛力斯集团、吉利汽车集团先后在官微上&lt;strong&gt;「承诺60天付款计划」&lt;/strong&gt;，承诺坚持以不超过60天的供应商账期，保障供应链资金高效周转，携手上下游伙伴，共同促进行业高质量发展。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250611/v2_75665cd413ce40149c9d9829939a94c3@000000_oswg190153oswg869oswg1454_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;▲6月10日，一汽、东风、长安、广汽、吉利、赛力斯先后承诺支付账期不超过60天&lt;/p&gt;
+  &lt;p&gt;今日凌晨一时，比亚迪接续表态承诺：将供应商支付账期统一至 60天内。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250611/v2_3fb70da8ea8f4b4f9a9bff9167907b66@000000_oswg135951oswg1080oswg1405_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这一承诺与今年3月24日国务院颁布第802号令《保障中小企业款项支付条例》有关，该条例在第二章「款项支付规定」第九条中明确规定，付款期限最长不得超过60日。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250611/v2_44e3936b1a5743a39d9db2093b16a0a4@000000_oswg35988oswg1080oswg442_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;根据第九条，&lt;strong&gt;大型企业从中小企业采购货物、工程、服务，应当自货物、工程、服务交付之日起60日内支付款项；&lt;/strong&gt;合同另有约定的，从其约定，但应当按照行业规范、交易习惯合理约定付款期限并及时支付款项，不得约定以收到第三方付款作为向中小企业支付款项的条件或者按照第三方付款进度比例支付中小企业款项。《保障中小企业款项支付条例》刚刚在今年6于1日起实施（详见《监管层打响反价格战第一枪：车圈告别「汇票」时代》）。&lt;/p&gt;
+  &lt;p&gt;在这一条例实施的同时，汽车行业的主管部门工信部组织相关车企负责人进行了约谈。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250611/v2_4de4cb5d0700445f9a125e4a4790bc30@000000_oswg50053oswg1080oswg720_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;工信部官微6月9日发布消息称，近日，工业和信息化部党组书记、部长李乐成主持召开党组会议。会议提到，扎实推进3项集中整治，其中一个就是「综合整治新能源汽车行业‘内卷’问题」。&lt;/p&gt;
+  &lt;p&gt;任何企业不得强制中小企业接受商业汇票、账期不可超过60天，正让管理层治理车企内卷、价格混战有法可依。&lt;/p&gt;
+  &lt;p&gt;而从中国市场而言，这种持续三年的价格混战正让产业链上的众多企业已陷入不可持续的阶段。&lt;/p&gt;
+  &lt;p&gt;在各大车企承诺账期不超过60天的同一天，中国钢铁工业协会发布《维护产业链整体利益 共同抵制「内卷式」竞争》的声明。&lt;/p&gt;
+  &lt;p&gt;在声明中，中国钢铁协会指出，汽车行业是钢铁行业的主要用钢行业，也是重要的高端钢材消费行业，像汽车板、硅钢等品种在汽车行业大量应用。近年来新能源汽车的快速发展，大大拉动了汽车用钢需求，同时深刻改变了汽车板品种、结构、档次。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250611/v2_399ce8a68187471185e83ae8724efbb2@000000_oswg220585oswg1080oswg1336_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;但由于 汽车企业「卷」价格，包括钢铁企业在内的上游原料供应商倍感压力，已经严重冲击了企业的稳健经营。&lt;/p&gt;
+  &lt;p&gt;中钢协表示，据钢厂反映，&lt;strong&gt;去年以来，部分主机厂要求钢厂汽车板供货降价要求超过10%，远远超出钢厂可接受的能力。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;中钢协称，&lt;/strong&gt;在当前的钢铁市场环境下，汽车板作为钢铁行业头部企业的拳头产品，&lt;strong&gt;目前已基本没有毛利，而汽车企业还在要求钢厂降价。&lt;/strong&gt;甚至有部分汽车企业依托自身供应链金融平台，在钢铁等上游企业供货后，迟迟不给货款，延迟几个月才通过企业汇票支付，把本该自己承担的融资压力和融资成本，通过这种合同「账期」的方式转嫁给上游供应商。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250611/v2_98fa48163bea40a3979cd73a438205e7@000000_oswg208905oswg1080oswg720_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;同时， 中钢协在声明中指出， 自主品牌新能源汽车厂的快速崛起，对传统的汽车板供需格局和供应链模式冲击较 大，并引发了钢厂之间的内卷：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;以往钢厂通过先期介入（EVI）、加工配送等模式，与汽车厂深度合作，更加突出产品质量、供货及时、售后服务等，形成了长期稳定、互利共赢的供应链模式。但近期部分自主品牌汽车厂通过招标采购汽车板，按照一般的钢铁产品给汽车板定价，引发了钢厂之间的“内卷”，并且基本是“最低价中标”。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;钢厂对此反响极大，认为汽车板属于“高技术、高难度、高投入”的高附加值钢铁产品，招标模式按照一般的钢铁产品进行采购，全面否定了前期的研发投入和服务体系，严重打击了钢厂供货积极性，不利于汽车板产品的持续创新，也不利于结成长期稳定的供货模式。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;中钢协称：个别企业这种压价的效果，正在被越来越多的汽车企业采用，其对质量和研发投入的不利影响马上就将体现在用户身上。&lt;/p&gt;
+  &lt;p&gt;中钢协在声明中痛斥：&lt;strong&gt;汽车行业带来的这种“内卷式”竞争犹如一颗毒瘤，严重破坏了市场公平竞争秩序，&lt;/strong&gt;扭曲了资源配置与价格信号，已成为产业链企业创新发展、向价值链中高端攀升的阻碍。&lt;/p&gt;
+  &lt;p&gt;对于建立车企与供应商该建立怎么样的合作关系，中钢协建议借鉴日系车企的作法：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;在尽量控制成本的同时，也给供应商留出一定的利润空间，&lt;/strong&gt;确保汽车质量的长期稳定和新材料研发的持续迭代升级。例如，丰田与日本制铁之间的采购模式主要包括定期谈判和价格调整，这种采购模式确保了采购成本的合理性和市场波动下的稳定性。&lt;/p&gt;
+  &lt;p&gt;中钢协的这份声明可以说是在各方已经明确反对价格战，舆论已经形成的时候发布的，而在「去年部分主机厂要求钢厂汽车板供货降价要求超过10%，远远超出钢厂可接受的能力」的时候并没有发声，可见做为乙方在地位上是不平等的。&lt;/p&gt;
+  &lt;p&gt;中国汽车工业近年来在向智能化、电动化的转型中取得了巨大的成绩，但在近期因为陷入价格混战（详见《中国汽车进入恶性循环：价格战已经失控》），成为中国社会内卷的代表性行业，并引发了一系列让业内人颇为尴尬的对骂，而在社交媒体上，则演变为一场各自水军的混战。&lt;/p&gt;
+  &lt;p&gt;而出现这一现象的背后，则是在中国汽车高速发展的过程中，法治失位，监管失位。面对恶性竞争，不合规行为未能，与看得见的那双手未来及时介入有关。&lt;/p&gt;
+  &lt;p&gt;此次监管层从账期、汇票等财务方式入手，并没有采用《价格法》、《反不正当竞争法》等雷霆手段，对于整个行业，以及可能招致众怒的明星企业依然采用的是相对温和的手段，也体现了对整个行业的呵护。&lt;/p&gt;
+  &lt;p&gt;不过，在重庆论坛上，对于长城、吉利对比亚迪「常压油箱」接近声嘶力竭的发难，终于有了回音。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250611/v2_a8615cecd44e4c149128a8d1d199392c@000000_oswg190745oswg1080oswg707_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;工信部官网在6月9日发出通知，对于已经获批生产的汽车将开展一致性监督检查工作，目的是要监督企业，保证其实际生产销售的汽车，与向工信部申报获批的技术参数、配置和性能指标严格相符。&lt;/p&gt;
+  &lt;p&gt;根据通知，此次检查，会主要针对舆论关注度高、存在较大质量安全隐患的车型。重点核查整车结构参数、整车正面碰撞、电动汽车安全要求等项目。&lt;strong&gt;对于经检发现的问题产品，将会采取公开通报等惩治措施。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;这也是工信部今年在整治智能驾驶安全纠偏、车企过度宣传、价格内卷等方面目前祭出的最有杀伤力的举措。&lt;/p&gt;
+  &lt;p&gt;不过，相信政策并不会止步于此，这一轮因价格内战引发的对中国汽车产业的反思与监管风暴还没有到真正结束的时候。&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MjM5ODE3MTM4Nw==&amp;amp;mid=2653763762&amp;amp;idx=1&amp;amp;sn=0f3f387f673ab9903f7a1b05235c5df0&amp;amp;chksm=bc2028a76ad5c0d0b12e341d00169cfe5f5062dc559dc434badb6b53ad547d82eeec6aee9dbf&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“AutoR智驾”（ID：zhinengqiche）&lt;/a&gt;，作者：晓雨，编辑：雨来，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 10 Jun 2025 10:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5mc1doT2xUdDZtUF9XbTJLakFIdWFXMWpsTnJmRGdyRUYwNTJzWTBoaWJJaEpxWnBrQmhJUVcwRDQ0bmNiYW5zckFWQTJhdw</guid></item><item><title>韩国执政党提出数字资产基本法案，拟允许本土公司发行稳定币 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FYnI5VHhvOEQtbmV4ckJVSEQzb0ZaNzZCRngtWTVBeFVmWmxRM1AtbDE0bF9LeDhhUy1lQUtCcW5Pc2hjWnpJbU5JeklxVW92andR?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 10 Jun 2025 09:11:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5FYnI5VHhvOEQtbmV4ckJVSEQzb0ZaNzZCRngtWTVBeFVmWmxRM1AtbDE0bF9LeDhhUy1lQUtCcW5Pc2hjWnpJbU5JeklxVW92andR</guid></item><item><title>零基础就能开发软件！美团发布首款AI编程工具NoCode - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE43R0Nuc0lrOVEtalpiaU03OHREcDJaQ0NwYnpQTGt3aHVlUDNic2dNaC1mUU5BLVVjRmlfMTRKQTBDRlVwVVhQcXBTRFEwdmJEYUphTzdpajA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技6月10日消息，&lt;span&gt;&lt;strong&gt;美团今日正式发布旗下首款AI编程智能体产品NoCode。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;据介绍，NoCode通过对话式交互实现应用构建，主打“人人可用”的AI编程体验。&lt;/strong&gt;&lt;/p&gt;
@@ -1828,7 +2452,29 @@ Series X|S平台。西山居CEO及《解限机》制作人郭炜炜也将进行�
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Jun 2025 07:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81eERpMjNFV1g2b014eGVVNHhpU2FSVG5McVpHN3ZEQkFVdXNCTEUwS2hEbk05SHhUc1hITDNBbFdjbnVnRjBGT2NlYVVLUTJOcjhkYTN6Rk8</guid></item><item><title>618最佳入手！华为笔记本Linux版 高效智慧体验如一 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kYVNMRWtqVzdESE9FV3N6NlQ1UE1uQ0N1VTJYNWFwdGdWMmE0Q1RSX0pOZUtNZEppNERDaUhsZUh3R2hEUFdKVUFEa0VJcGRRVkJVazBBSzg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Jun 2025 07:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81eERpMjNFV1g2b014eGVVNHhpU2FSVG5McVpHN3ZEQkFVdXNCTEUwS2hEbk05SHhUc1hITDNBbFdjbnVnRjBGT2NlYVVLUTJOcjhkYTN6Rk8</guid></item><item><title>百度“AI相机”上线：可解决99%照片拍摄、处理需求 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5YaVNvOVZiaXJiSnZtWk1TTWxuNjN3WVo0QUNZektWRXVUblR1SlpISGNjM1N6RWxFeE1LR1UwQkNDOVFVOVJrdXJnMUhGczg2VWd6ZFNWcmM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月10日消息，&lt;span&gt;&lt;strong&gt;据媒体报道，在今日举办的百度AI开放日活动上，百度网盘、百度文库联合推出“AI相机”。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据悉，“AI相机”旨在打造存储、搜索、修图、扫描、翻译、创作一体的全模态超级入口。&lt;/p&gt;
+&lt;p&gt;此次推出的“AI相机”全面覆盖&lt;strong&gt;存、管、用、创、享&lt;/strong&gt;各环节能力。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;在百度网盘一个App上，即可一站式解决用户99%的照片存储、拍摄、处理、管理等需求。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;目前，“AI相机”已在百度网盘App上线，用户点击百度网盘App上方相机入口进入后，即可直接拍摄照片或从网盘、手机本地相册导入照片。&lt;/p&gt;
+&lt;p&gt;通过“AI相机”，用户可使用修图美颜、拍照识别、解题、文字提取、翻译、扫描、合同检查等一系列AI功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据悉，6月3日，AI产品榜发布最新榜单，百度网盘APP MAU超1.5亿，位列应用榜国内总榜第一、全球总榜第二，仅次于ChatGPT。这也是百度网盘首次登陆该榜单。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;值得一提的是，百度文库APP位列AI内容创作赛道第一，排名应用榜国内总榜第八。&lt;/p&gt;
+&lt;p&gt;据了解，百度网盘作为国民级产品，目前已拥有10亿用户。&lt;/p&gt;
+&lt;p&gt;在AI重构后，&lt;strong&gt;&lt;span&gt;百度网盘已推出AI相机、AI笔记、简单听记、简单扫描、简单打印等多项AI功能&lt;/span&gt;，&lt;/strong&gt;全面激活用户在生活娱乐、学习办公、家庭教育等多场景的需求。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250610/c33cabaa-b920-46e1-b1f5-79b0df71debb.png" target="_blank"&gt;&lt;img alt="百度“AI相机”上线：可解决99%照片拍摄、处理需求" h="379" src="//img1.mydrivers.com/img/20250610/Sc33cabaa-b920-46e1-b1f5-79b0df71debb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Jun 2025 07:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5YaVNvOVZiaXJiSnZtWk1TTWxuNjN3WVo0QUNZektWRXVUblR1SlpISGNjM1N6RWxFeE1LR1UwQkNDOVFVOVJrdXJnMUhGczg2VWd6ZFNWcmM</guid></item><item><title>618最佳入手！华为笔记本Linux版 高效智慧体验如一 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kYVNMRWtqVzdESE9FV3N6NlQ1UE1uQ0N1VTJYNWFwdGdWMmE0Q1RSX0pOZUtNZEppNERDaUhsZUh3R2hEUFdKVUFEa0VJcGRRVkJVazBBSzg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;3C产品是今年618大促的重点，加上能叠加国补优惠，对于所有打算选购笔记本电脑的用户来说，都是难得的入手好时机。&lt;/p&gt;
 &lt;p&gt;不同用户的需求和使用场景有很大差异，无论是办公人群、学生党，还是创意设计人群，在购机时都有着不同的需求和痛点，想要选择一台真正适合自己的笔记本并不容易。&lt;/p&gt;
@@ -1898,117 +2544,4 @@ Series X|S平台。西山居CEO及《解限机》制作人郭炜炜也将进行�
          
                 
             &lt;/div&gt;
-            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 10 Jun 2025 06:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihgFBVV95cUxQRDVvRWFfTkxsdXEyYXlLQmdyWDRORHZwbXhFa25hLVJWdXJnaHVxeWd1YlRBa25YV0pxRzEyVXRLTjdiR2xaQTFCRER4cThYWVROYXhUekRtcVhLREJmZXNKN05KR1A3Y0gxTF9kMFZoLVJhSE43Z2FISlhrMVI5d3EydUhzUQ</guid></item><item><title>新势力加速下乡，蔚来、小鹏、理想加入，终将干掉“老头乐”？ - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE1lRF9uUE9WaklyNXNqb1dHN1lZNW42azhENm12aWhSTnNKODYzMy01cDFVUGNXQWhXQ2dWRW5pVmRiSzNjcmhZZmdpemxMQQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p&gt;早在2020年5月，就有人大代表认为，新能源汽车竞争日渐激烈，双积分存在压力，因此建议继续加大对新能源汽车的鼓励，推动新能源汽车下乡。同年7月15日，工业和信息化部网站发布了《三部门关于开展新能源汽车下乡活动的通知》，标志着新能源汽车下乡正式“起跑”。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;前几日，商务部、工业和信息化部、国家发展改革委、农业农村部、国家新能源局组织开展2025年新能源汽车下乡活动，并公布一系列支持补贴的车型。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;的确，这几天新能源车企高管之间的“狂轰滥炸”有目共睹，无一不表明行业竞争之激烈，没有一家车企愿意放过竞争对手的任何一处破绽，毕竟国内汽车市场“蛋糕”是有限的。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1215,728" src="https://img.36krcdn.com/hsossms/20250610/v2_a40675f915d148dc88a07404864a6f68@5687509_oswg1137633oswg1215oswg728_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;（图片来自东风汽车）&lt;/p&gt;
-  &lt;p&gt;新能源汽车下乡活动，挑选的都是新能源汽车推广比例不高、市场潜力较大的县域城市。&lt;strong&gt;这五年来，山东江苏、四川、海南、湖北等10多个省，前后举办了29场专场下乡活动，下乡活动车型累计销售近1500万辆。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;无论是渗透比例还是市场认知的建立，比起一、二线城市等，县域城市显然是一片待开发的蓝海。比起早期的下乡补贴活动，2025年新能源汽车下乡补贴的车型，似乎又丰富了不少。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;主流新势力加入，下沉市场选择更多了&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;以往，新能源汽车下乡主要针对的都是微小型汽车，单价低、尺寸小，用车成本低，足够日常通勤，一定程度上能够让县域城市的普通消费人群认识到“新能源汽车”，不太高的售价也能够推动“老头乐”群体向“正牌车”转化。&lt;/p&gt;
-  &lt;p&gt;根据小通此前的观察，长城欧拉R1、五菱宝骏E200、五菱宏光MINIEV、奇瑞eQ1等小型车和紧凑型车均在补贴范围中，&lt;strong&gt;大部分来自一线厂家，而且当时造车新势力还很少，只有哪吒一个品牌。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;眼下，入选下乡补贴的车型比以往丰富了许多，农村消费群体也有相当大的选择空间，主要涵盖24家车企的124款车型。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1405,719" src="https://img.36krcdn.com/hsossms/20250610/v2_71b273d4c75845e295095df5fd1108a5@5687509_oswg1876070oswg1405oswg719_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;（图片来自小鹏汽车）&lt;/p&gt;
-  &lt;p&gt;看品牌，小鹏汽车、理想汽车、零跑汽车、蔚来汽车均在其中，特斯拉、比亚迪、吉利、上汽、广汽等一线大厂都参与了。&lt;strong&gt;具体到车型，除了A0级、A00级车型外，理想L6、特斯拉Model Y、零跑C系列、小鹏P7+、小鹏MONA M03等明星产品都加入到下乡补贴里面。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;说是下乡，中高端车型必定是主角，不过高端豪华的新能源车型也是能够找到的，比如岚图的梦想家、蔚来的ES/EC/ET系列，还有阿维塔12等产品。而比亚迪下至海鸥、上至唐系列等旗舰车型都覆盖到了。&lt;/p&gt;
-  &lt;p&gt;另外小通还注意到，部分品牌的燃油车型号也有加入，&lt;strong&gt;但这些燃油车系列里面都有对应的插电混合版本（如坦克300/400/500和长安UNI-Z），大概是为了简写。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1169,242" src="https://img.36krcdn.com/hsossms/20250610/v2_4d1c3cc13fb749879e6f0072acc77537@5687509_oswg186270oswg1169oswg242_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;（图片来自Win.d）&lt;/p&gt;
-  &lt;p&gt;新能源商用车都没有缺席，要知道农村的货运需求并不低，商用车会是当地不少购车群体的“生存工具”，价格不能太高，要足够耐用，也要维护成本足够低，鑫源X30L、福田大将军EV、五菱扬光之类的，都是相当实用的新能源商用车。&lt;/p&gt;
-  &lt;p&gt;下乡补贴活动并非全国统一，不同地区有不同的补贴力度。以2024年5月28日开展的新能源汽车下乡活动为例，合肥市的购车补贴标准含税金额分为三档：5万元（含）以上10万元（不含）以下的补贴2000元/辆；10万元（含）以上20万元（不含）以下补贴4000元/辆；20万元（含）以上补贴6000元/辆。如果还有更多厂家、地方的补贴政策，幅度还会更大。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;农村市场依然是车企们的新蓝海？&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;早期，新能源汽车品牌想要普及新能源车，都会以一、二线城市消费者为抓手。小通认为原因很简单，这部分区域的消费者有更强的消费力，对新事物的接受能力更强，只要对上需求，补能条件到位，新能源车就有销路，也更方便车企下场“磨练”，&lt;strong&gt;多年以来，国产新能源汽车已经通过技术进步经受住市场考验，销量趋于稳定，新势力“五常格局”逐渐形成，也成功地吃下了燃油车的“半壁江山”。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;话虽如此，市场总量就这么大，随着新能源汽车的渗透率不断增加，留给车企的成长空间越来越小。根据中汽数研的数据，2024年各大城市新能源汽车销量中，一、二线城市的新能源汽车渗透率均在50%左右，成都、杭州、深圳、上海的销量位列前4。有的城市增长幅度不小，也有的城市增长乏力，比如上海，相比2023年降低了18.24%。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;一、二线城市新能源车仍有增速，但剩下的“蛋糕”会越来越小，到了后面，车企不得不为了那一点市场份额拼得你死我活&lt;/strong&gt;，再加上价格战、技术战、市场认知战多重作用下，竞争压力空前巨大，高管下场“对轰”也是意料之中。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="3840,2160" src="https://img.36krcdn.com/hsossms/20250610/v2_bdb6d06fc32642f089b068d450676f47@5687509_oswg3418399oswg3840oswg2160_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;（图片来自吉利银河）&lt;/p&gt;
-  &lt;p&gt;相比之下，部分县域城市还处在新能源车空白阶段，消费者的观念普遍还在“燃油时代”，新能源汽车推广比例比较低，市场空间还算比较大。另外，县域城市的人口密度不算很高，&lt;strong&gt;农村地区大都有带大院的自建房，停车、充电没有太大的焦虑，不用像高密度的城市那样，充电得排队，还得看电价。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;家门口就能充电，慢点总比开去县城加油要方便。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;再加上活跃在农村的消费群体，用车需求比较简单，主要是拉货、买菜、接送孩子上下学，长途出行需求较少，对纯电车而言是更大的利好。&lt;/strong&gt;说点题外话，能效电气作为充电解决方案供应商，也在通过“百城百讲”等活动推进新能源知识普及，同时致力于建立V2G能源流通体系。&lt;/p&gt;
-  &lt;p&gt;不过在小通看来，新能源汽车下乡，还有比普及更重要的意义。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;汽车下乡或让“老头乐末日”提前到来？&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;在县域城市，人口密度和汽车保有量不算高，既不限号，也不限行，行驶环境相对来说“自由”很多。于是，当地也会有人认为，既然如此，不用驾驶证、不用上牌，不需要缴纳各种购置税、保险费等养护费用，购置成本极为低廉的“老头乐”（老年代步车）更加划算。&lt;/p&gt;
-  &lt;p&gt;另一方面，驾驶“老头乐”的用户多数是中老年群体，对低速电动车的安全性和交通安全存在一定的认知不足，反正只是短途开开，以村路为主，没必要专门考个汽车驾驶证、买一辆要上牌、要买保险的正规汽车。&lt;strong&gt;“老头乐”的出现的确解决了当地短途出行的民生需求，然而这种没有正规生产资质，缺乏国家标准的低速代步车，既代表“方便”，也代表“危险”，堪称“马路杀手”。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;时至今日，“老头乐”依旧没有消失，而且很多厂家还与时俱进，主流汽车品牌出什么，他们就造什么，比如这些厂家还可以抢在小米之前推出“小号YU7”，除了样子有点像之外，框架、动力、用料全都只能用“劣质”来形容。&lt;strong&gt;正规车企生产出来的汽车，再不济也是能够合法上路的，能够保证自身和其他道路参与者的道路权益的。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="924,782" src="https://img.36krcdn.com/hsossms/20250610/v2_6d719c2817d54ffebf6232a6e560b57b@5687509_oswg1351086oswg924oswg782_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;（图片来自微博）&lt;/p&gt;
-  &lt;p&gt;新能源汽车下乡初期就是为了转化这部分用户，像宏光MINIEV、宝骏E200等，尺寸和“老头乐”接近，却是正儿八经的，能上路的绿牌汽车，价格也没有很高，很适合作为农村新能源转型的切入口。&lt;/p&gt;
-  &lt;p&gt;不过县域城市在普及新能源汽车这件事上不应为了“卡预算”而限制当地消费者的选择空间，从2025年的新能源汽车下乡活动车型来看，除了要让农村人买得起能合法上路的汽车，也要通过一些激励政策，让他们买得到自己喜欢的新能源汽车。&lt;/p&gt;
-  &lt;p&gt;比起新能源汽车下乡普及的事情，小通更希望的是，通过新能源汽车下乡补贴，建立起县域城市对新能源汽车的认知，让农村消费者认识到正规新能源汽车的优势，从消费需求的层面，压制“老头乐”的发展。&lt;strong&gt;像奔腾小马之类的小车，叠加一系列的报废、置换以及下乡补贴之后，老实说“正牌车”的入手门槛也不会比“老头乐”高多少。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;“老头乐”之所以还能活跃，本质上还是有市场需求在&lt;/strong&gt;，根据前瞻产业研究院数据，“老头乐”的保有量已经超过1000万辆。&lt;/p&gt;
-  &lt;p&gt;事实上，许多地区已经出台了“老头乐”的相关规定，比如天津、北京，早在2024年1月1日起，违规电动三轮、四轮不得上路行驶，还不允许在公共场合停放。江苏、山东、安徽、海南等省市也先后出台了相应的加强管理通告，并给予1-5年的过渡期。&lt;strong&gt;光靠规定去给“老头乐”和背后的群体施压不一定是万全之法，得让他们看到比“老头乐”更好的产品，以此将需求转移走。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;老头没了“老头乐”就不乐，“老头乐”之后，需要用什么来承载他们拉货、买菜、接送孩子的民生需求？答案就是正儿八经的新能源汽车。&lt;/p&gt;
-  &lt;p&gt;所以，大力推进新能源汽车下乡的背后，打开县域城市这个市场只是表面，加快合法车型对违法低速代步电动车的取代，才是新能源汽车下乡更大的意义。“老头乐”短期内不会因为新能源汽车下乡迎来彻底的“末日”，但一定能让马路上少点“杀手”。&lt;/p&gt;
-  &lt;p&gt;本文来自微信公众号“电车通”，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 10 Jun 2025 06:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1lRF9uUE9WaklyNXNqb1dHN1lZNW42azhENm12aWhSTnNKODYzMy01cDFVUGNXQWhXQ2dWRW5pVmRiSzNjcmhZZmdpemxMQQ</guid></item><item><title>报道：火山引擎今年营收将翻倍至250亿，调用量几乎等于阿里与百度之和 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hQ29jeEJucGNEWUROWmxVeGpQRTF2WEZwbFZ2VjYxYlA3a1poUDJHR0pCRlFhd3hPNENDb2dWVDlrMllSU0tKZUZYb2ozbjNybHFV?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 10 Jun 2025 06:33:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5hQ29jeEJucGNEWUROWmxVeGpQRTF2WEZwbFZ2VjYxYlA3a1poUDJHR0pCRlFhd3hPNENDb2dWVDlrMllSU0tKZUZYb2ozbjNybHFV</guid></item><item><title>全球首个！处理器芯片软硬件全自动设计系统“启蒙”发布 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rdHNMazQ1RzVIUmp0X05mTTdTc045LXhpckpZUFZ3NDRJcUFBekVuLUU3OTI2U05oYjBwcUJYeDR5VGxJcWNHcjhaTlVOLTJNYlBULV9SaUg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;全球首个！处理器芯片软硬件全自动设计系统“启蒙”发布&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-06-10 14:29:05  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1052871-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月10日消息，据媒体报道，&lt;strong&gt;全球首个基于人工智能的处理器芯片全自动设计系统“启蒙”近日由中国科学院计算技术研究所与软件研究所联合发布。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这一突破性技术实现了从芯片硬件架构到操作系统、程序转译等基础软件的全流程自动化设计，&lt;strong&gt;其生成的设计方案在性能、效率等关键指标上均达到人类专家水平，有望破解我国芯片行业人才短缺与设计周期漫长的双重困境。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250610/2411ddf376cd4fdb8aa13e9feba72322.jpg" target="_blank"&gt;&lt;img alt="全球首个！处理器芯片软硬件全自动设计系统“启蒙”发布" h="354" src="//img1.mydrivers.com/img/20250610/s_2411ddf376cd4fdb8aa13e9feba72322.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为现代科技领域的“皇冠明珠”，处理器芯片设计长期面临超高专业门槛：传统模式需数百人专家团队耗时数月至数年，成本高昂且难以满足人工智能、边缘计算等新兴技术对专用芯片的爆发式需求。&lt;/p&gt;
-&lt;p&gt;以自动驾驶场景为例，定制化芯片开发往往需要投入数十人月，&lt;span&gt;&lt;strong&gt;而“启蒙”系统通过融合强化学习与架构知识图谱的混合AI模型，可模拟专家决策流程，将设计周期压缩至数天。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250610/517878ef55554311887d30c65cba03a7.png" target="_blank"&gt;&lt;img alt="全球首个！处理器芯片软硬件全自动设计系统“启蒙”发布" h="323" src="//img1.mydrivers.com/img/20250610/s_517878ef55554311887d30c65cba03a7.png" w="586"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在硬件设计领域，“启蒙1号”成为全球首款全自动生成的32位RISC-V CPU，仅用5小时即完成前端设计，集成400万逻辑门（相当于Intel 486芯片复杂度），其升级版“启蒙2号”更实现1700万逻辑门的超标量处理器自动设计，性能达到ARM Cortex A53级别（满足智能手机处理器需求）。&lt;/p&gt;
-&lt;p&gt;软件适配方面，系统可自动生成性能超越人工优化25.6%的操作系统内核配置，实现跨平台程序转译效率翻倍，并在RISC-V CPU上生成的高性能算子较传统方案提速达110%。&lt;/p&gt;
-&lt;p&gt;这项技术突破已获得半导体行业协会创新认证，其“AI设计AI芯片”的范式不仅将设计效率提升两个数量级，更开启了根据具体应用场景实时定制专用芯片的新纪元。未来在AI服务器、智能物联网等需要快速迭代硬件的领域，该技术或将成为推动产业变革的核心引擎。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250610/75a3cd3ce47d4ab4aaaeed011f865500.png" target="_blank"&gt;&lt;img alt="全球首个！处理器芯片软硬件全自动设计系统“启蒙”发布" h="353" src="//img1.mydrivers.com/img/20250610/s_75a3cd3ce47d4ab4aaaeed011f865500.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Jun 2025 06:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5rdHNMazQ1RzVIUmp0X05mTTdTc045LXhpckpZUFZ3NDRJcUFBekVuLUU3OTI2U05oYjBwcUJYeDR5VGxJcWNHcjhaTlVOLTJNYlBULV9SaUg</guid></item><item><title>台积电5月销售同比增长39.6％ - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Pc2RvZkg0VjBobVJzNHlaWGNFc294RGxiRXJ0ekRROWg5MmROQWFJemhUSkRJVWF0MU40cVViXzRSUHF1ajBDLUxuMnZHUFZQbVJV?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 10 Jun 2025 06:22:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5Pc2RvZkg0VjBobVJzNHlaWGNFc294RGxiRXJ0ekRROWg5MmROQWFJemhUSkRJVWF0MU40cVViXzRSUHF1ajBDLUxuMnZHUFZQbVJV</guid></item></channel></rss>
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 10 Jun 2025 06:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihgFBVV95cUxQRDVvRWFfTkxsdXEyYXlLQmdyWDRORHZwbXhFa25hLVJWdXJnaHVxeWd1YlRBa25YV0pxRzEyVXRLTjdiR2xaQTFCRER4cThYWVROYXhUekRtcVhLREJmZXNKN05KR1A3Y0gxTF9kMFZoLVJhSE43Z2FISlhrMVI5d3EydUhzUQ</guid></item></channel></rss>
