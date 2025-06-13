@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>维生素D状态对南亚儿童复发性肾病综合征缓解期的影响：一项三级医院横断面研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE04Uk1tQjFSVlpZQmZFQV9NNmdRZmRNcDVjZHJxOUNlU3FLcGtVNXhrMjhsOWNhb1hSblFFYlU2aXltQU5aV0NlNXZybGdLdl9SMThpd3pKdHd5TzJBR0Via08yM2VNN3F4U1dSUw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Egyptian Pediatric Association Gazette》：Vitamin D status on remission of relapsing nephrotic syndrome among children at a South Asian tertiary hospital&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>计算标记揭示阅读障碍与多动症在复杂学习环境中的特异性缺陷机制 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBzWkJ1bFM3S3Jia1lwYXUtcDdsd0ZLSGFNczBER0J4amh3ejdDdWZaQ2Z5OC1jRUo1ejZkNTRmWURFR3VvdFA2YVNVd1hUd182TmVEOGtvRDFGY1oxcU9sRVRxR0NsbXpFX3lhdw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《npj Science of Learning》：Computational markers show specific deficits for dyslexia and ADHD in complex learning settings&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究通过游戏化多维强化学习任务，结合计算建模方法，揭示了神经发育障碍（ADHD和 dyslexia）在自然情境学习中的特异性缺陷模式。研究人员发现ADHD患者难以运用计算量更大的贝叶斯推理策略(Bayesian inference)，而dyslexia群体则表现出更高的学习衰减率(decay rate)，表明其对近期学习关联的快速遗忘特性。该研究为理解神经发育障碍的学习机制差异提供了新的计算标记物，对个性化教育干预具有重要指导意义。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;在现实世界的学习场景中，我们常常面临比实验室复杂得多的环境——就像走进一家咖啡馆时，你无法立即确定美味的蓝莓松饼究竟归功于水果原料（食材维度）、店铺品质（环境维度）还是两者协同作用。这种多维不确定情境下的学习能力，恰恰是神经发育障碍患者面临的核心挑战。传统研究多聚焦简化实验室任务，而以色列海法大学Yafit Gabay团队在《npj Science of Learning》发表的研究，首次系统揭示了注意力缺陷多动症(ADHD)和阅读障碍(dyslexia)患者在自然情境学习中的特异性计算标记。&lt;/p&gt;
+&lt;p&gt;研究采用交叉设计，包含显性辅助(Explicit-Assist)和隐性辅助(No-Explicit-Assist)两种任务模式。通过招募21名ADHD患者、20名dyslexia患者及匹配对照组，使用三维特征（颜色/形状/纹理）的强化学习游戏，结合混合计算模型（整合强化学习RL与贝叶斯推理），量化分析了学习率(η)、衰减率(η&lt;sub&gt;k&lt;/sub&gt;&lt;br&gt;
+)、维度权重(δ)等关键参数。&lt;/p&gt;
+&lt;p&gt;【主要发现】&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;行为表现差异&lt;br&gt;
+在需要自主发现奖励维度的No-Explicit-Assist任务中，ADHD组正确率(62%)显著低于对照组(71%)；dyslexia组在Explicit-Assist任务中即表现出缺陷(62% vs 70%)，提示其基础强化学习机制受损。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算标记特征&lt;br&gt;
+&lt;/p&gt;&lt;br&gt;
+ADHD组呈现显著降低的α参数(0.12 vs 0.23)，表明其难以运用计算密集的贝叶斯策略，转而依赖次优的强化学习机制；dyslexia组则显示更高的衰减率η&lt;sub&gt;k&lt;/sub&gt;&lt;br&gt;
+(0.52 vs 0.38)，反映其对未选择特征的快速遗忘倾向。
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;机制解释&lt;br&gt;
+ADHD患者的缺陷可能源于前额叶-纹状体环路异常导致的执行控制障碍，难以动态整合先验知识与新证据；dyslexia群体则表现出程序性记忆系统的特异性损伤，这与已有文献报告的统计学习巩固障碍(statistical learning consolidation)现象一致。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;【研究启示】&lt;br&gt;
+该研究突破性地揭示了：&lt;br&gt;
+1）ADHD与dyslexia在复杂学习中存在差异化计算标记，前者以策略选择缺陷为主，后者以记忆保持障碍为特征；&lt;br&gt;
+2）衰减率η&lt;sub&gt;k&lt;/sub&gt;&lt;br&gt;
+可能成为dyslexia的新型生物标记物，而α参数对ADHD诊断具有特异性；&lt;br&gt;
+3）为开发靶向干预方案（如对ADHD加强贝叶斯推理训练，对dyslexia采用间隔重复学习）提供理论依据。&lt;/p&gt;
+&lt;p&gt;这项研究将神经发育障碍的认知研究推向"计算精神病学"新维度，其构建的混合模型框架为理解自然情境学习障碍开辟了新途径。未来研究可进一步探索这些计算标记与神经影像特征的关联，以及其在早期筛查中的应用价值。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 13 Jun 2025 23:06:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBzWkJ1bFM3S3Jia1lwYXUtcDdsd0ZLSGFNczBER0J4amh3ejdDdWZaQ2Z5OC1jRUo1ejZkNTRmWURFR3VvdFA2YVNVd1hUd182TmVEOGtvRDFGY1oxcU9sRVRxR0NsbXpFX3lhdw</guid></item><item><title>子宫内膜癌患者下肢淋巴水肿对更年期症状及生活质量的影响研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE44TTJEUlhlam1VNGdWUklkbnE3S0xxaTRPOHZZYmhWZjlsSk1wd1FZejU2dHpQdTZ0cE1aTThNQXF1Y05LVXdXTzdGQWVLeEJWRWxXZVdodkEyajEza042blBxOTBUMVdCRVY4OA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Journal of Patient-Reported Outcomes》：Quality of life and climacteric symptoms in women with endometrial cancer: examining the impact of lower limb lymphedema&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对子宫内膜癌(EC)治疗后常见的下肢淋巴水肿(LLL)问题，探讨了其对患者更年期症状及生活质量(QoL)的影响。通过横断面观察性研究设计，研究人员发现39%的EC患者存在LLL，且伴有更严重的焦虑、抑郁及躯体症状，同时QoL多项功能维度显著降低。该研究为临床早期识别和管理LLL提供了循证依据，对改善EC幸存者长期预后具有重要意义。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;子宫内膜癌(Endometrial Cancer, EC)作为全球女性第六大高发恶性肿瘤，其发病率在包括台湾地区在内的高收入地区呈现显著上升趋势。随着诊疗技术的进步，早期EC患者的5年生存率已达83%，但治疗带来的长期并发症——尤其是手术和放疗后出现的下肢淋巴水肿(Lower Limb Lymphedema, LLL)和更年期症状，正成为影响幸存者生活质量(Quality of Life, QoL)的关键问题。LLL会导致肢体疼痛、肿胀和功能障碍，而双侧卵巢切除引发的手术绝经更可能加重血管舒缩症状和心理困扰。然而，目前关于LLL对EC患者更年期症状和QoL的复合影响缺乏系统研究，特别是在亚洲人群中证据更为匮乏。&lt;/p&gt;
+&lt;p&gt;为填补这一研究空白，长庚大学医学院护理学院的研究团队开展了一项横断面观察性研究。该研究纳入105名完成治疗至少6个月的台湾EC患者，采用妇科癌症淋巴水肿问卷(Gynecologic Cancer Lymphedema Questionnaire, GCLQ)、格林更年期量表(Greene Climacteric Scale, GCS)和欧洲癌症研究与治疗组织生活质量核心问卷(EORTC QLQ-C30)及其EC特异性模块(QLQ-EN24)进行评估。研究通过独立样本t检验比较LLL组与非LLL组的差异，并计算Cohen's d值评估效应量。&lt;/p&gt;
+&lt;p&gt;主要技术方法包括：1) 基于医院门诊的便利抽样，纳入林口长庚纪念医院2017-2020年的EC患者；2) 使用经过验证的中文版GCLQ(临界值≥4分)识别LLL；3) 采用GCS评估更年期症状的焦虑、抑郁、躯体症状和血管舒缩症状四个维度；4) 应用EORTC QLQ-C30和QLQ-EN24全面评估QoL的生理功能、症状负担等指标。&lt;/p&gt;
+&lt;p&gt;研究结果显示：&lt;br&gt;
+&lt;strong&gt;LLL的患病率与症状特征&lt;/strong&gt;&lt;br&gt;
+39%的EC患者存在LLL（GCLQ≥4分），平均得分7.12±2.77，显著高于非LLL组的1.05±1.05(p&amp;lt;0.001)。最常见症状为酸痛(80%患者报告)、沉重感(68%)和肿胀(51%)，且所有症状簇评分均呈现大效应量差异(d=0.69-3.18)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更年期症状的加重&lt;/strong&gt;&lt;br&gt;
+LLL组GCS总分(14.10±7.80)显著高于非LLL组(9.02±6.30)，效应量d=0.73。其中躯体症状差异最大(d=0.78)，表现为更严重的肌肉关节疼痛和感觉异常；焦虑(d=0.44)和抑郁(d=0.42)症状也更为突出，但性功能障碍无显著差异。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;生活质量的多维度损害&lt;/strong&gt;&lt;br&gt;
+在EORTC QLQ-C30评估中，LLL组在生理功能(87.15±11.68 vs 96.25±6.04)、认知功能(77.64±21.61 vs 86.98±13.10)等所有功能维度均显著较差(d=0.41-1.05)。症状方面，LLL组疲劳(26.56±21.36 vs 13.02±13.36)和疼痛(22.36±19.94 vs 7.29±11.45)评分显著升高(d&amp;gt;0.8)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EC特异性症状负担&lt;/strong&gt;&lt;br&gt;
+QLQ-EN24显示LLL组在淋巴水肿特异性症状(21.54±19.81 vs 4.69±11.30)、泌尿系统问题(13.01±14.32 vs 7.16±10.49)和体像障碍(14.63±25.87 vs 3.13±13.57)等方面均存在中度以上效应量差异(d=0.44-1.17)。&lt;/p&gt;
+&lt;p&gt;该研究首次在亚洲人群中系统证实了LLL与EC患者更年期症状加重及QoL下降的显著关联。临床意义在于：1) 39%的LLL患病率提示需在治疗前充分告知患者风险；2) 酸痛和沉重感可作为早期筛查的警示症状；3) 应建立包含心理支持、疼痛管理和康复训练的综合干预方案。局限性包括单中心设计和缺乏纵向数据，未来研究可通过扩大样本量和延长随访进一步验证结论。&lt;/p&gt;
+&lt;p&gt;这些发现为妇科肿瘤临床实践提供了重要启示：在追求生存获益的同时，需关注淋巴水肿预防和早期管理，将患者报告结局(PROs)纳入常规随访，从而实现EC幸存者生理-心理-社会功能的全面康复。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 13 Jun 2025 22:14:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE44TTJEUlhlam1VNGdWUklkbnE3S0xxaTRPOHZZYmhWZjlsSk1wd1FZejU2dHpQdTZ0cE1aTThNQXF1Y05LVXdXTzdGQWVLeEJWRWxXZVdodkEyajEza042blBxOTBUMVdCRVY4OA</guid></item><item><title>维生素D状态对南亚儿童复发性肾病综合征缓解期的影响：一项三级医院横断面研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE04Uk1tQjFSVlpZQmZFQV9NNmdRZmRNcDVjZHJxOUNlU3FLcGtVNXhrMjhsOWNhb1hSblFFYlU2aXltQU5aV0NlNXZybGdLdl9SMThpd3pKdHd5TzJBR0Via08yM2VNN3F4U1dSUw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Egyptian Pediatric Association Gazette》：Vitamin D status on remission of relapsing nephrotic syndrome among children at a South Asian tertiary hospital&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -853,42 +924,4 @@ Nestin&lt;sup&gt;-&lt;/sup&gt;&lt;br&gt;
 群体对治疗具有固有抗性，提示需联合靶向干细胞亚群。这些发现为正在开展的临床试验（如NCT04201457）提供理论基础，并为开发Galectin-3抑制剂等联合方案开辟新途径。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 12 Jun 2025 23:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9NRm1VYlk2VTV6TlFCN1JYZDBaNFdPaE5sN0VCMUJjai1lZS1XbUlGeWFNRHVKdTVERmRHNE01Z29WTU9nQm41eTY3NktWOXJsSjJMRkVsSmhLWEstQ0puU3VLX2tXVS1LUDFFYw</guid></item><item><title>巨噬细胞通过下调NEDD9抵抗沙门氏菌介导的FAK-AKT通路激活及溶酶体抑制 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE43Q0d1UWtqT2xtRzVxM0VLcU0tUGt2M2ZVckFhd3hLbEJTbDU2ZDNUQXczQjRZbnlQMGFXcWQ4cVFSSFp0Q1pwMXkxejd0eVlUZTlPQzZrdnRfVzhxVk1XRzNQcTJCeWt6eGREWg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Cell Death &amp;amp; Disease》：Macrophages downregulate NEDD9 to counteract S. Typhimurium- mediated FAK-AKT activation and lysosome inhibition&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究揭示了巨噬细胞抵抗沙门氏菌感染的新机制：通过下调支架蛋白NEDD9，阻断病原体对FAK-AKT通路的劫持，从而恢复溶酶体杀菌功能。团队发现沙门氏菌(S.Typhimurium)感染诱导NEDD9向含菌吞噬体转位并激活FAK-AKT信号，抑制溶酶体成熟；而Nedd9基因敲除显著增强细菌清除率和炎症反应。该发现为脓毒症等血流感染提供了新的宿主导向治疗靶点。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;血流感染引发的脓毒症每年导致全球约600万人死亡，而抗生素耐药性沙门氏菌(S.Typhimurium, ST)等革兰阴性菌的流行加剧了这一危机。这类病原体通过劫持宿主信号通路逃避免疫清除，其中巨噬细胞溶酶体功能的抑制是关键环节。尽管已知ST能激活黏着斑激酶(FAK)-蛋白激酶B(AKT)通路阻碍溶酶体成熟，但宿主如何反击这一免疫逃逸机制尚不清楚。德国研究团队在《Cell Death and Disease》发表的研究首次揭示，支架蛋白NEDD9（神经前体细胞表达发育下调蛋白9）是这一攻防战的核心调控因子。&lt;/p&gt;
-&lt;p&gt;研究采用转录组分析、基因敲除模型和临床样本验证等多学科方法。关键技术包括：①沙门氏菌感染小鼠骨髓源性巨噬细胞(mBMDMs)的转录组测序；②Nedd9&lt;sup&gt;-/-&lt;/sup&gt;&lt;br&gt;
-小鼠脓毒症模型构建；③患者外周血单个核细胞(PBMCs)的蛋白质印迹分析；④共聚焦显微镜观察NEDD9与溶酶体标记物LAMP1的共定位；⑤β-半乳糖苷酶活性检测溶酶体功能。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;NEDD9在细菌感染中的动态调控&lt;/strong&gt;&lt;br&gt;
-转录组分析显示ST感染2小时后Nedd9 mRNA下调95%，其信号网络中的FAK、CRKL等关键分子同步降低。蛋白质水平上，NEDD9在感染4小时后显著减少，24小时几乎完全降解。这种调控不依赖ST的毒力因子，因为SPI1/SPI2突变株仍能诱导NEDD9降解。值得注意的是，革兰阴性菌特征分子LPS单独处理即可完全清除NEDD9，而金黄色葡萄球菌等革兰阳性菌无此效应。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;溶酶体介导的NEDD9降解机制&lt;/strong&gt;&lt;br&gt;
-&lt;/p&gt;&lt;p&gt;
-免疫荧光显示NEDD9从胞质转位至含ST吞噬体，与溶酶体标记LAMP1共定位。溶酶体抑制剂Concanamycin A可阻断NEDD9降解，而蛋白酶体抑制剂MG132无效。功能实验表明Nedd9&lt;/p&gt;&lt;sup&gt;-/-&lt;/sup&gt;&lt;p&gt;
-巨噬细胞的溶酶体活性显著增强，表现为LysoTracker信号增强和β-半乳糖苷酶活性升高。
-&lt;/p&gt;&lt;p&gt;&lt;strong&gt;NEDD9缺失增强宿主防御&lt;/strong&gt;&lt;br&gt;
-Nedd9&lt;sup&gt;-/-&lt;/sup&gt;&lt;br&gt;
-巨噬细胞分泌更多IL-6和TNF-α，细菌负荷降低10倍。在动物模型中，感染ST的Nedd9&lt;sup&gt;-/-&lt;/sup&gt;&lt;br&gt;
-小鼠脾脏菌载量显著减少，伴随淋巴滤泡增大和CD11b&lt;sup&gt;+&lt;/sup&gt;&lt;br&gt;
-髓系细胞浸润增加。临床样本分析显示血流感染患者PBMCs中NEDD9蛋白水平较健康对照显著降低，而人源巨噬细胞中NEDD9 siRNA敲除同样增强细菌清除能力。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;FAK-AKT通路的劫持与反制&lt;/strong&gt;&lt;br&gt;
-&lt;/p&gt;&lt;p&gt;
-ST感染诱导NEDD9与磷酸化FAK(pFAK Tyr&lt;/p&gt;&lt;sup&gt;397&lt;/sup&gt;&lt;p&gt;
-)在吞噬体共定位。Nedd9&lt;/p&gt;&lt;sup&gt;-/-&lt;/sup&gt;&lt;p&gt;
-细胞中FAK表达和磷酸化水平显著降低，导致AKT(Thr&lt;/p&gt;&lt;sup&gt;308&lt;/sup&gt;&lt;p&gt;
-/Ser&lt;/p&gt;&lt;sup&gt;473&lt;/sup&gt;&lt;p&gt;
-)及其下游mTOR、NDRG1磷酸化受阻。AKT激活剂SC-79可逆转Nedd9&lt;/p&gt;&lt;sup&gt;-/-&lt;/sup&gt;&lt;p&gt;
-细胞的杀菌优势。自噬标志物LC3-II转化增加和p62降解加速证实，NEDD9缺失通过解除FAK-AKT对自噬的抑制增强溶酶体功能。
-&lt;/p&gt;&lt;p&gt;该研究首次阐明NEDD9在感染免疫中的双重角色：既是ST逃逸宿主防御的"帮凶"，又是巨噬细胞反击的"开关"。病原体通过NEDD9-FAK-AKT轴抑制溶酶体，而宿主则通过降解NEDD9重建杀菌能力。这一发现不仅拓展了对CAS家族蛋白功能的认识，更为脓毒症等顽固性感染提供了新的治疗策略——靶向NEDD9可能打破病原体与宿主的僵持，为后抗生素时代的抗感染治疗开辟新途径。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 12 Jun 2025 22:56:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE43Q0d1UWtqT2xtRzVxM0VLcU0tUGt2M2ZVckFhd3hLbEJTbDU2ZDNUQXczQjRZbnlQMGFXcWQ4cVFSSFp0Q1pwMXkxejd0eVlUZTlPQzZrdnRfVzhxVk1XRzNQcTJCeWt6eGREWg</guid></item></channel></rss>
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 12 Jun 2025 23:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9NRm1VYlk2VTV6TlFCN1JYZDBaNFdPaE5sN0VCMUJjai1lZS1XbUlGeWFNRHVKdTVERmRHNE01Z29WTU9nQm41eTY3NktWOXJsSjJMRkVsSmhLWEstQ0puU3VLX2tXVS1LUDFFYw</guid></item></channel></rss>
