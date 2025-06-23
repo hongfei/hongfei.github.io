@@ -1,5 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>10辆车、配安全员、有限范围行驶！特斯拉正式推出“自动驾驶出租车”，评论吐槽远不如Waymo - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE5rb2hwWjk5VGpqdnVwOV9JMk0tZ0pDQmJrRUVjeDJXMmtfZ21EcXNPZEo3NVdwcG11WFpsc0dob1BkRzlmcHVUcGxoM3VUTWVxeGYw?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 23 Jun 2025 01:14:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5rb2hwWjk5VGpqdnVwOV9JMk0tZ0pDQmJrRUVjeDJXMmtfZ21EcXNPZEo3NVdwcG11WFpsc0dob1BkRzlmcHVUcGxoM3VUTWVxeGYw</guid></item><item><title>性能超OpenAI、Gemini！月之暗面发布首个自主强化学习Agent - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9xRHlTY2tvWlQ0OFpNTFRESjE5bS0zU1NrT2tGN0hLOThmWlF5aVZyMndDcjVaMFJheEswdXNEVXN1TlhqaDBaQ3ZXcGE5WHpnb0xpcmI5bFY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>NVIDIA显卡打开一个简单设置：性能轻松白捡10％！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xdnc2R1I1d2pqeDFVaHpDQVN0OGFSVWh0Z0dUbUdTdndNQ2FQVEpyOUtRQXZ1S3JTSlZpMzVvdE16SHZOOW9JeXd4ZGNBNndTRlEtMUF4MHM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月23日消息，油管博主JayzTwoCents最近意外发现，&lt;strong&gt;Intel处理器＋NVIDIA显卡平台上，Resizable BAR并没有默认开启，而手动打开后可以带来大约10％的性能提升。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Resizable BAR意思是可调整大小的基址寄存器，是一种PCIe技术，PCIe 2.0时代就有了，通过优化CPU与GPU之间的数据交互，提升系统性能，尤其在游戏和高负载应用场景中提升显著。&lt;/p&gt;
+&lt;p&gt;传统模式下，CPU一次只能访问显卡显存中的256MB数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resizable BAR则允许CPU直接访问显卡的全部显存，大幅减少数据传输的瓶颈&lt;/strong&gt;，可以直接理解为显存直连，但一直无人理会。&lt;/p&gt;
+&lt;p&gt;直到2020年，AMD率先支持Resizable BAR，最早享受这一福利的是锐龙5000处理器、RX 6000显卡，当时AMD叫做SAM智能显存访问技术，如今一般都是默认开启的。&lt;/p&gt;
+&lt;p&gt;目前，AMD处理器＋AMD显卡是支持Resizable BAR效果最好的，AMD处理器＋NVIDIA或者Intel显卡也同样可用，但是Intel处理器＋NVIDIA显卡就奇怪了。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/0b886ab2ee88468a8ca317fa2f1dbd3c.jpg" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="337" src="//img1.mydrivers.com/img/20250623/s_0b886ab2ee88468a8ca317fa2f1dbd3c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;打开GPU-Z，可以看到Resizable BAR显示已经开启，但是使用NVIDIA Profile Inspector却发现它其实仍然处于关闭状态。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;猜测这时只是在BIOS层面开启，驱动层面并未真正启用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/b1af2e7abcb3429d868294d268eca9dd.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="353" src="//img1.mydrivers.com/img/20250623/s_b1af2e7abcb3429d868294d268eca9dd.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/5a8468d0143b4fa8922a701a20565ca9.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="337" src="//img1.mydrivers.com/img/20250623/s_5a8468d0143b4fa8922a701a20565ca9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NVIDIA Profile Inspector里将rBAR参数设置为开启(Enable)，同时修改下方的两个参数：&lt;/p&gt;
+&lt;p&gt;iBAR Options：从0x00000000改为0x00000001。&lt;/p&gt;
+&lt;p&gt;iBAR Size Limit：从0x00000000改为0x0000000040000000。&lt;/p&gt;
+&lt;p&gt;这样，Resizable BAR就真正开启了。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/a9daf1df041a4278b34a49f8d5755b4c.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="333" src="//img1.mydrivers.com/img/20250623/s_a9daf1df041a4278b34a49f8d5755b4c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/5bbc4956374642b29525a909c18a68e8.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="298" src="//img1.mydrivers.com/img/20250623/s_5bbc4956374642b29525a909c18a68e8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/6da6c29c2a01406b89fd950613764697.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="263" src="//img1.mydrivers.com/img/20250623/s_6da6c29c2a01406b89fd950613764697.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;博主在自己的i9-14900KS、RTX 5090平台上测试，Resizable BAR开启前3DMark Port Royal跑分为37105，开启后提高到了40409，最高40602，提升幅度9.4％。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/88fca3db63634c20af9e108fa526206d.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="437" src="//img1.mydrivers.com/img/20250623/s_88fca3db63634c20af9e108fa526206d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/f9bedae70d85419ba5e198036d416a98.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="419" src="//img1.mydrivers.com/img/20250623/s_f9bedae70d85419ba5e198036d416a98.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/71604e254db548418308af3196efef84.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="380" src="//img1.mydrivers.com/img/20250623/s_71604e254db548418308af3196efef84.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另一套i9-12900K、RTX 4090组成的“老平台”上，Port Royal跑分也从25937提高到26364，提升幅度约2％。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/3039bfbca4184c0f80687faaef0f5cdc.png" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="375" src="//img1.mydrivers.com/img/20250623/s_3039bfbca4184c0f80687faaef0f5cdc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可惜，没有测试游戏性能对比，按理说区别不会这么大，因为有赖于游戏单独优化。&lt;/p&gt;
+&lt;p&gt;至于NVIDIA默认不打开Resizable BAR技术，暂时不详，&lt;strong&gt;可能不像AMD那样有自己的处理器＋显卡，懒得花太大精力去测试优化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;毕竟，这帮臭打游戏的，怎么能比AI GPU加速卡更让NVIDIA赚钱呢。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/c43b523a20384aa6b356977eeb4336e3.jpg" target="_blank"&gt;&lt;img alt="NVIDIA显卡打开一个简单设置：性能轻松白捡10％！" h="337" src="//img1.mydrivers.com/img/20250623/s_c43b523a20384aa6b356977eeb4336e3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 03:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1xdnc2R1I1d2pqeDFVaHpDQVN0OGFSVWh0Z0dUbUdTdndNQ2FQVEpyOUtRQXZ1S3JTSlZpMzVvdE16SHZOOW9JeXd4ZGNBNndTRlEtMUF4MHM</guid></item><item><title>两大传奇首度同框！比尔盖茨和Linus Torvalds首次见面共进晚餐 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LcXh3VWltcGh0RFUxNmctSlVJRmVnMmYwWUQtSVBSdHJiSjBpUGxaamhVOFpYUVhOZ3Q3aE5OZEgxcVBDelNIOGtiTjgwOGx6Y1JLVTRUTWo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月23日消息，&lt;span&gt;&lt;strong&gt;微软工程师Mark Russinovich分享的一张照片记录了一个历史性时刻，比尔·盖茨和Linus Torvalds终于首次见面，并且共进晚餐。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;令人想不到的是，Windows和Linux背后的领军人物之前竟然从未见过面。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;照片中，比尔·盖茨和Linus Torvalds肩并肩站在一起，显得十分友好，他们身边还有微软的两位杰出工程师：Mark Russinovich和David Cutler。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这四位在计算机技术领域有着深远影响的人物齐聚一堂。一些人也在思考，如果没有这些人的话，科技界现在会是怎样的。&lt;/p&gt;
+&lt;p&gt;Mark Russinovich在LinkedIn上写道：&lt;strong&gt;“我一生中最激动人心的时刻之一，就是为比尔·盖茨、Linus Torvalds和David Cutler主持晚餐。Linus从未见过比尔，Dave也从未见过Linus。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“晚餐上没有做出任何重大的内核决策，但也许下次晚餐会有所不同。”&lt;/p&gt;
+&lt;p&gt;比尔·盖茨作为微软的联合创始人，如今已是IT行业的传奇人物，从20世纪70年代中期开始，他对开创商业软件和个人计算生态系统的发展起到了关键作用。&lt;/p&gt;
+&lt;p&gt;Linus Torvalds于1991年9月发布了开源Linux内核的第一个版本，这种非商业化的方式，尤其是在软件方面，与盖茨和微软的做法形成对比，但他最出名的还是火爆的脾气。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/d843545b-8d6a-4ca1-a904-523f5bcb6dd5.jpg" target="_blank"&gt;&lt;img alt="两大传奇首度同框！比尔盖茨和Linus Torvalds首次见面共进晚餐" h="390" src="//img1.mydrivers.com/img/20250623/Sd843545b-8d6a-4ca1-a904-523f5bcb6dd5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 02:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1LcXh3VWltcGh0RFUxNmctSlVJRmVnMmYwWUQtSVBSdHJiSjBpUGxaamhVOFpYUVhOZ3Q3aE5OZEgxcVBDelNIOGtiTjgwOGx6Y1JLVTRUTWo</guid></item><item><title>全球股市关注下一个“DeepSeek时刻” - 日经中文网</title><link>https://news.google.com/rss/articles/CBMihwFBVV95cUxPYWxiR3lRZ2tZVlg2Ml9ZdXdZVWgxR2V6ZFBHbWhLanZDVzBETG55OTFmNGZGbG9UaVoxdFhLN1h1bUJxcXlTRmJJVXBMRHhRWGlta3RiUHN3cGI3dFJDTDN2cUZlMWdMQ0xYX0lkaFcxLXoybmdOVUV5QmNzWHoxNlhTOEt5dGs?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="newsText fix"&gt;
+
+
+&lt;p&gt;   &lt;/p&gt;
+&lt;p&gt;      “DeepSeek时刻”这一说法正在全球股市成为话题。1月，中国新兴企业深度求索（DeepSeek）开发的低成本生成式AI（人工智能）问世，动摇了美国对AI的主导权。DeepSeek时刻正是用来形容源自中国的创新颠覆世界产业结构和主流技术的瞬间。&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;
+&lt;p&gt;      继AI产业之后，正在发生DeepSeek时刻的是生物医药行业。5月，美国辉瑞（Pfizer）宣布与中国三生制药签署了癌症治疗药开发和生产的独家授权协议。美国有代表性的制药企业依赖中国企业技术的情况被认为是象征DeepSeek时刻的案例。&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;
+
+&lt;p&gt;  &lt;/p&gt;
+&lt;p&gt;      三生制药股价在消息发布后大涨，与4月底相比上涨了7成。QUICK FactSet的数据显示，自2024年底以来，在香港股市上市的生物技术企业组成的股价指数上涨了51%。远高于恒生指数（17%）和美国标普500指数（1%），反映出投资者对中国生物企业的预期之高。&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;     &lt;/p&gt;
+&lt;p&gt;      在约70年前的1957年，前苏联成功发射了历史上第一颗人造卫星，给美国带来冲击。后来成为美国总统的巴拉克·奥巴马为了强调研发和教育投资的重要性，根据第一课人造卫星的名字，将相关状况表述为“斯普特尼克时刻’(Sputnik moment)”。&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;
+&lt;p&gt;      在机器人和量子计算机等领域，中国同样在磨练技术。投资者之所以关注“DeepSeek时刻”可能是因为他们感受到了中国将从美国手中夺走主导权的潮流变化。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;     &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;strong&gt;版权声明：日本经济新闻社版权所有，未经授权不得转载或部分复制，违者必究。&lt;/strong&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>日经中文网</author><pubDate>Mon, 23 Jun 2025 01:57:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPYWxiR3lRZ2tZVlg2Ml9ZdXdZVWgxR2V6ZFBHbWhLanZDVzBETG55OTFmNGZGbG9UaVoxdFhLN1h1bUJxcXlTRmJJVXBMRHhRWGlta3RiUHN3cGI3dFJDTDN2cUZlMWdMQ0xYX0lkaFcxLXoybmdOVUV5QmNzWHoxNlhTOEt5dGs</guid></item><item><title>中国首款6nm国产自研GPU首次理论跑分：类似13年前的GTX 660 Ti - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1QQU9mZ1ZGSjFzVmZJNzlDNmxNNF9NRGxaR3ZxZGV2T3RsbXFfU05ocko4M1NYM2dIRS1wOVBPaUw4SlFucldSOHQ0TVp3eGFXV1FsT0UzaHE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;中国首款6nm国产自研GPU首次理论跑分：类似13年前的GTX 660 Ti&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-06-23 09:57:56  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/278470.html" title="上方文Q的主页" class="newstiao4"&gt;上方文Q&lt;/a&gt;&lt;p&gt;  编辑：上方文Q &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1055387-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月23日消息，5月底，国产GPU厂商砺算科技宣布，经过3年多的研发，首款自研架构、全自主知识产权的GPU芯片“G100”已成功点亮，符合预期，将继续进行详细的测试和调优，尽快向客户送测。&lt;/p&gt;
+&lt;p&gt;根据砺算科技介绍，&lt;strong&gt;G100是中国国内第一颗6nm GPU，采用自研的TureGPU架构，面向高性能图形渲染、AI加速，号称性能对标RTX 4060系列。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/46ddff92154d44ab850202a2de9943e6.jpg" target="_blank"&gt;&lt;img alt="中国首款6nm国产自研GPU首次理论跑分：类似13年前的GTX 660 Ti" h="256" src="//img1.mydrivers.com/img/20250623/s_46ddff92154d44ab850202a2de9943e6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/d2660dec1a8b476db5e3fa1d0ef71ce7.jpg" target="_blank"&gt;&lt;img alt="中国首款6nm国产自研GPU首次理论跑分：类似13年前的GTX 660 Ti" h="256" src="//img1.mydrivers.com/img/20250623/s_d2660dec1a8b476db5e3fa1d0ef71ce7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;没想到，&lt;strong&gt;&lt;span&gt;这就在GeekBench里看到了它，型号识别为砺算7G100系列，配备32个计算单元，最低频率300MHz(最高不详)，显存只有256MB。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前尚无法确认这样的检测是否准确，也不清楚计算单元的具体情况，比如内部包含多少计算引擎，毕竟是新的架构，极有可能不太准。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/f8012cbdf7d04b038bfaf9b2972d9b37.png" target="_blank"&gt;&lt;img alt="中国首款6nm国产自研GPU首次理论跑分：类似13年前的GTX 660 Ti" h="224" src="//img1.mydrivers.com/img/20250623/s_f8012cbdf7d04b038bfaf9b2972d9b37.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;测试平台采用搭配锐龙7 8700G处理器、64GB DDR5-4800内存、七彩虹战斧AX B650M-PLUS主板，&lt;strong&gt;测试项目为OpenCL通用计算，得分15524。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这点成绩确实不值一提，&lt;strong&gt;和13年前的GTX 660 Ti、10年前的R9 370基本在同一水平，甚至只相当于移动端采用AMD GPU架构的三星Exynos 2400。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/16eda04cd5c045e48c0d0f1793a05c4a.png" target="_blank"&gt;&lt;img alt="中国首款6nm国产自研GPU首次理论跑分：类似13年前的GTX 660 Ti" h="589" src="//img1.mydrivers.com/img/20250623/s_16eda04cd5c045e48c0d0f1793a05c4a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;毫无意外，砺算科技G100 GPU还在最初期的调试阶段，加上是一个独特的新架构，GeekBench不可能很好地支持，无论信息监测还是跑分测试都没有什么参考价值，所以还是耐心地多给点时间吧。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;另外，摩尔线程的下一代GPU，今年也该出来了。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/f96226bd506749238a69b95d408200ff.jpg" target="_blank"&gt;&lt;img alt="中国首款6nm国产自研GPU首次理论跑分：类似13年前的GTX 660 Ti" h="450" src="//img1.mydrivers.com/img/20250623/s_f96226bd506749238a69b95d408200ff.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 01:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1QQU9mZ1ZGSjFzVmZJNzlDNmxNNF9NRGxaR3ZxZGV2T3RsbXFfU05ocko4M1NYM2dIRS1wOVBPaUw4SlFucldSOHQ0TVp3eGFXV1FsT0UzaHE</guid></item><item><title>禁用Intel核显安全补丁：性能直接暴涨20%！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmTkdkUWlqbl9hVm00R2RRTHhtZTJWMUtRZ3A0V1NZbzNqRVVPNFpLM0F1Wl8zN0NNSm1NcmxuNzlGYVNaZE1leU1pVmZiSHJqNnNIWm52akk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月23日消息，&lt;span&gt;&lt;strong&gt;Canonical正与Intel合作，计划在Ubuntu中禁用Intel核显的安全缓解措施，这一举措有望使Intel核显的性能提升高达20%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;此前，为了应对诸如Spectre和Meltdown等安全漏洞，Intel为其CPU部署了多种缓解措施，而为了安全起见，Intel图形堆栈也收到了类似的保护。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/651d3c09-d5f5-4074-97ac-32c2170aef4e.png" target="_blank"&gt;&lt;img alt="禁用Intel核显安全补丁：性能直接暴涨20%！" h="175" src="//img1.mydrivers.com/img/20250623/S651d3c09-d5f5-4074-97ac-32c2170aef4e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这些措施虽然阻止了潜在的风险，但也导致了核显性能的下降，Canonical在测试中发现，这些安全缓解措施对Intel核显的性能产生了明显的负面影响。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;由于至今未有针对Intel核显的安全攻击报告，且这些措施对核显来说并非必要，因此移除它们将显著提升核显性能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;具体来说，Ubuntu用户可能会在未来的版本中看到高达20%的性能提升，这一改进预计将在Ubuntu 25.10版本中实现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不过移除这些安全缓解措施可能会为黑客攻击系统开辟新的途径，为了降低风险，Intel和Canonical已经正式审查并批准了这一变更。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;并且Intel已在GitHub上发布的官方Intel Compute Runtime版本中，禁用了这些缓解措施，因此预计在Ubuntu上禁用这些措施不会带来安全问题。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/944d169077504d0994dcdfcd70711f4a.png" target="_blank"&gt;&lt;img alt="禁用Intel核显安全补丁：性能直接暴涨20%！" h="337" src="//img1.mydrivers.com/img/20250623/s_944d169077504d0994dcdfcd70711f4a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 01:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBmTkdkUWlqbl9hVm00R2RRTHhtZTJWMUtRZ3A0V1NZbzNqRVVPNFpLM0F1Wl8zN0NNSm1NcmxuNzlGYVNaZE1leU1pVmZiSHJqNnNIWm52akk</guid></item><item><title>10辆车、配安全员、有限范围行驶！特斯拉正式推出“自动驾驶出租车”，评论吐槽远不如Waymo - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE5rb2hwWjk5VGpqdnVwOV9JMk0tZ0pDQmJrRUVjeDJXMmtfZ21EcXNPZEo3NVdwcG11WFpsc0dob1BkRzlmcHVUcGxoM3VUTWVxeGYw?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 23 Jun 2025 01:14:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5rb2hwWjk5VGpqdnVwOV9JMk0tZ0pDQmJrRUVjeDJXMmtfZ21EcXNPZEo3NVdwcG11WFpsc0dob1BkRzlmcHVUcGxoM3VUTWVxeGYw</guid></item><item><title>多家机构预测小米YU7 定价 25 万元左右；美媒揭秘1999 美元的「美国制造」手机；特斯拉Robotaxi 正式上线 - 极客公园</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE1sVGVmbjd1MmgzSFAwa3I1T2Z6Szl5ZUtpMWlDYXREeVhZVzVVWFBUWWw4X1k4alhaZ2hpSURHVG0xNXJJOE1RQW00VEw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content"&gt;&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/01/9d/019d52937ab2594757f7215410b197a6.png"&gt;&lt;/p&gt;
+&lt;h2&gt;美媒揭秘 1999 美元的「美国制造」手机：配置落后十年，一半客户是政府&lt;/h2&gt;
+&lt;p&gt;特朗普一直在施压苹果公司在美国制造 iPhone，并推出了自家 Trump Mobile 土豪金智能手机。&lt;/p&gt;
+&lt;p&gt;《华尔街日报》发文称，美国确实可以制造智能手机，但是这样的手机不会像 iPhone 那样时尚精致或性能强大，而且成本会高得多。&lt;/p&gt;
+&lt;p&gt;美国科技公司 Purism 开发的 Liberty 手机是目前最接近实现美国制造目标的产品。然而，它的配置放在十年前也许还算不错，但现在已经过时了，售价却高达 1999 美元 (约合 1.4 万元人民币)。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/95/56/955655816b947574bb83c273ff4e3e17.png"&gt;&lt;/p&gt;
+&lt;p&gt;Liberty 手机目前并不是为了与 iPhone 竞争而打造的。其创始人韦弗指出，1999 美元的零售价反映的是这款手机「采购来源安全、供应链可核查」的价值。他还补充说，Purism 大约一半的客户是美国政府机构。&lt;/p&gt;
+&lt;p&gt;「对于消费者群体，我们的用户主要是安全极客、想给孩子买手机的家长、年长者，或者那些想避开大型科技公司的用户。需要超强摄像头的人，并不是我们的目标客户。」韦弗称。&lt;/p&gt;
+&lt;p&gt;韦弗估计，他能够在六个月内将产量提升到每月 10 万部手机，但要实现这一目标，需要投资用于购买新设备、增加生产线操作员，以及扩充厂房空间。（来源：凤凰科技）&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/65/73/65734a90cb9f7933a7192dc272080f5b.png"&gt;&lt;/p&gt;
+&lt;h2&gt;上线仅一天，苹果撤下「说服父母给买 Mac」广告&lt;/h2&gt;
+&lt;p&gt;近日，苹果公司最新推出了一份长达 81 页的《家长推介》演示文稿，以帮助孩子说服父母将 Mac 作为学习设备收入囊中。不仅如此，苹果还发布置顶了一段由喜剧演员 Martin Herlihy 主演的 YouTube 视频，进一步围绕这一主题展开推广，试图以轻松幽默的方式打动家长和孩子。&lt;/p&gt;
+&lt;p&gt;在第 7 页，文稿以孩子的视角俏皮发声：「虽然我没办法带着爸妈上大学，但我可以带着 Mac 去呀！」&lt;/p&gt;
+&lt;p&gt;不过，此视频今日已被苹果设置为私密，目前无法观看。（来源：快科技）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Sam Altman：GPT-5 之后，界面将近乎「消失」&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Y Combinator 最近在旧金山举办的 AI Startup School 活动上，OpenAI CEO Sam Altman 表示，不要去构建一个 ChatGPT 的翻版。其次，不要去做人人都在做的热门方向。最持久的公司通常都始于一个独特的领域，这让你有时间窗口去打造出色的产品。&lt;/p&gt;
+&lt;p&gt;他表示，GPT-5 之后，AI 将从被动的问答工具，进化为主动的、持续运行的智能体。它会了解你、连接你所有数据，并主动为你完成任务。最终的愿景是一个完全多模态的集成模型，能深度推理、实时生成视频、即时编写代码，让计算机界面近乎「消失」，变得无感。&lt;/p&gt;
+&lt;p&gt;「未来，LLM 就是交互界面，它可以根据你的业务逻辑和数据，在你需要时即时生成一个应用。这对传统 SaaS 是颠覆，但对能快速迭代的初创公司是巨大机会，因为行业周期变化越剧烈，初创公司越容易胜出。」（来源：机器之心）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;马斯克：Grok 4 将重写人类所有知识库&lt;/h2&gt;
+&lt;p&gt;近日，埃隆·马斯克在 X 社交平台上放话，将用新一代大模型 Grok 3.5（或许直接叫 Grok 4）重写整个人类知识库，添加缺失信息，删除错误内容，然后基于这个「纯净版」知识库重新训练模型。&lt;/p&gt;
+&lt;p&gt;马斯克想让 Grok 成为人类知识的审核员和补全者。据悉，新一代 Grok 拥有高级推理能力，能够识别知识库中的错误和缺失。（来源：网易）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;多家机构预测小米 YU7 定价 25 万元左右&lt;/h2&gt;
+&lt;p&gt;小米首款 SUV 车型 YU7 已经定于 6 月底（下周）发布。随着发布会日期临近，YU7 的最终定价成为市场关注的焦点。雷军曾多次公开否认低价传闻，强调 YU7 定位高端，瞄准特斯拉 Model Y。目前，市场分析机构普遍预测其起售价约为 25 万元人民币。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/b9/78/b978e32c74d0f4bc504d7f32587d24c4.png"&gt;&lt;/p&gt;
+&lt;p&gt;针对 YU7 的定价区间，多家大行发布了预测报告。美银证券预估 YU7 售价区间为 25 万至 30 万元人民币，2025 年及 2026 年出货量分别可达 8.5 万辆及 26 万辆。&lt;/p&gt;
+&lt;p&gt;花旗银行预测定价介乎 25 万至 32 万元，月销量约 3 万辆，年销量有望达 30 万至 36 万辆，并认为 YU7 将显著影响特斯拉 Model Y 在中国市场的份额。&lt;/p&gt;
+&lt;p&gt;招商证券国际预测起售价约 25 万元，直接竞争对手包括特斯拉 Model Y（起售价 26.35 万元）、蔚来 EC6 及小鹏 G7。（来源：新浪财经）&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/c6/e2/c6e20eadb62ea4abb7d412b0cd9dcbfb.png"&gt;&lt;/p&gt;
+&lt;h2&gt;《情感反诈模拟器》在线人数峰值近 7 万，位居国区热销第一&lt;/h2&gt;
+&lt;p&gt;国产情感反诈题材互动影游《捞女游戏》（现已改名为情感反诈模拟器）已于 6 月 20 日正式发售，截止至发稿时 Steam 平台共收获上万条评测，好评率高达 97%，「好评如潮」。&lt;/p&gt;
+&lt;p&gt;根据 SteamDB 数据显示，本作在 6 月 21 日晚在 Steam 平台迎来一波在线人数高潮，历史峰值一口气来到 69747 人！&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/93/c5/93c5abc78d23a588f40a57ede06a0580.png"&gt;&lt;/p&gt;
+&lt;p&gt;本作改名后，Steam 商店页面的游戏介绍也进行了更新，特别强调改名后的游戏内容与首发版一样无删减。针对玩家们对于故事情节的一些批评，官方也对游戏内容进行了修改：将第一章吴宇伦的失败结局调整为止损结局。此修改不影响已经解锁此结局玩家的解锁记录，更新完毕后修改为止损结局。（来源：游民星空）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;微软、Linux 创办人 50 年来首度同框：比尔・盖茨与林纳斯・托瓦兹共同参加晚宴&lt;/h2&gt;
+&lt;p&gt;6 月 23 日消息，两位科技界重量级人物比尔・盖茨与林纳斯・托瓦兹上周末首次同框出镜，肩并肩站在合影中央，神情比想象中更加亲切。向来在软件商业理念上针锋相对的两人，此刻正与微软技术高管马克・鲁西诺维奇和戴维・卡特勒畅谈交流。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/64/ac/64ac6f2bd62d2d949fb1fbd0f2996f3d.png"&gt;&lt;/p&gt;
+&lt;p&gt;在过去 50 年间，执掌 Windows 与 Linux 的两位关键人物此前并未谋面。东道主鲁西诺维奇称，这是两人第一次碰面，若在几十年前，或许这样的同桌而坐只会引发激烈争执，但时间终究让人变得包容。（来源：新浪）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;跨境支付通今日上线，内地与香港两地居民可实时跨境汇款&lt;/h2&gt;
+&lt;p&gt;6 月 22 日，内地与香港间的「跨境支付通」正式上线。此前 6 月 20 日，中国人民银行与香港金融管理局联合举办「跨境支付通」启动仪式。据中国人民银行深圳分行透露，「跨境支付通」推出首日，全国首笔「跨境支付通」内地居民南向、港人北向汇款业务落地深圳。&lt;/p&gt;
+&lt;p&gt;在操作方面，两地居民只需在手机银行「跨境支付通」功能模块，输入电话号码或组合输入户名和收款账号便可进行跨境汇款，同时还可根据需要灵活选择到账币种为人民币或港币。（来源：每日经济新闻）&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/28/40/2840f9a7cb61b19aba8756962d97abc6.png"&gt;&lt;/p&gt;
+&lt;h2&gt;特斯拉 Robotaxi 在奥斯汀正式上线，配备远程操作员和实体乘务员，固定费用 4.20 美元&lt;/h2&gt;
+&lt;p&gt;特斯拉已在德克萨斯州奥斯汀正式小规模推出了其自动驾驶出租车服务。根据特斯拉过去几天发出的抢先体验邀请，自动驾驶出租车服务将仅在奥斯汀特定的地理围栏区域内提供，车队规模约为 10 至 20 辆。用户可以通过专门定制的应用程序叫车。特斯拉计划在奥斯汀的运营时间为早上 6 点至凌晨 0 点。&lt;/p&gt;
+&lt;p&gt;为了增加安全性，一名特斯拉员工（某种形式的物理服务员）将坐在前排乘客座位上，可以通过定制的自动驾驶出租车 UI 轻松访问「紧急停止」和「靠边停车」命令。&lt;/p&gt;
+&lt;p&gt;埃隆·马斯克表示，特斯拉自动驾驶出租车服务统一收费 4.20 美元。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h1&gt;古尔曼称「真全面屏」iPhone 后年问世：分两步走，明年先缩小灵动岛&lt;/h1&gt;
+&lt;p&gt;6 月 23 日消息，彭博社记者马克・古尔曼在昨天发布的《Power On》时事通讯中透露，苹果计划在明年推出的新款 iPhone 上缩小灵动岛的尺寸。他预计到 2027 年，苹果将发布一款焕然一新的二十周年纪念版 iPhone。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/fc/32/fc324ada73d0d3265669e53c34584b85.png"&gt;&lt;/p&gt;
+&lt;p&gt;根据古尔曼此前的说法，这款纪念机型将配备弧形玻璃边缘、超窄边框和真正的无打孔全面屏。&lt;/p&gt;
+&lt;p&gt;上月，《The Information》记者 Wayne Ma 报道称，明年的 iPhone 18 Pro 将采用屏下 Face ID，仅在屏幕左上角保留一个小孔用于前置摄像头，不再有药丸形开孔。因此，对于古尔曼所说的「明年仍将保留一个缩小版灵动岛」，外界尚不清楚其具体含义。&lt;/p&gt;
+&lt;p&gt;综合目前的消息来看，第一款配备屏下 Face ID 和屏下前置摄像头的「真全面屏」iPhone，可能会在 2027 年亮相。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/ff/44/ff443633c8aa64dd6e2076f8798367ed.png"&gt;&lt;/p&gt;
+&lt;h2&gt;欧空局正在建造巨大的太空天线来监听黑暗宇宙&lt;/h2&gt;
+&lt;p&gt;6 月 17 日，欧洲航天局（ESA）与 OHB 系统公司正式签署建造 LISA（激光干涉仪空间天线）的协议。这项开创性的任务将成为首个旨在探测引力波的太空天文台。引力波是由超大质量黑洞碰撞和合并等巨大事件在时空中产生的微妙涟漪。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/87/ca/87cad63d7ece54a13cb6cdbe7c838cea.png"&gt;&lt;/p&gt;
+&lt;p&gt;欧空局计划利用 LISA 卫星，利用相距数百万公里的三角形探测器捕捉来自太空的引力波，揭开我们从未见过的宇宙秘密。&lt;/p&gt;
+&lt;p&gt;LISA 将由三艘相距 250 万公里的航天器组成三角形飞行器，用于「聆听」宇宙中最具灾难性的事件（例如黑洞碰撞）在时空中产生的涟漪。&lt;/p&gt;
+&lt;p&gt;为了实现这一壮举，LISA 将被设计为由三艘航天器组成的星座。它们将以三角形编队飞行，跟随地球绕太阳运行。等边三角形的每一条边长 250 万公里，是地月距离的六倍多。（来源：cnbeta）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>极客公园</author><pubDate>Mon, 23 Jun 2025 00:46:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1sVGVmbjd1MmgzSFAwa3I1T2Z6Szl5ZUtpMWlDYXREeVhZVzVVWFBUWWw4X1k4alhaZ2hpSURHVG0xNXJJOE1RQW00VEw</guid></item><item><title>刷新全球轻薄记录！荣耀Magic V5官宣厚度仅8.8mm - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5yYi0zY3Z6Y2FZYlJiaEVVc1JwQi1ScXlZMTJBNFBsc2Yxd0hNWXNDWDN4bUlGcEd5Z0VPbnFMeVhWVDd1VlhQNlI1Z3V3TXNsNTdjbmU5QnY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月23日消息，荣耀Magic V5将于7月2日19:00正式发布，新机主打AI和轻薄机身。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;刚刚荣耀官方提前揭晓新机厚度，折叠状态仅8.8mm，刷新折叠屏手机最轻薄记录。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/cefa3983ae4e4a6ca828482eea46908e.jpg" target="_blank"&gt;&lt;img alt="刷新全球轻薄记录！荣耀Magic V5官宣厚度仅8.8mm" h="337" src="//img1.mydrivers.com/img/20250623/s_cefa3983ae4e4a6ca828482eea46908e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;值得注意的是，这个厚度也已经与直板旗舰站在同一阵营，比如荣耀自家的Magic7 RSR保时捷设计、Magic7 Pro就是8.8mm。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;值得注意的是，此前爆料还称该机重量小于219g，同样是看齐了直板旗舰。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/b3aae49b61c149ba8d33e46fba5578d1.jpg" target="_blank"&gt;&lt;img alt="刷新全球轻薄记录！荣耀Magic V5官宣厚度仅8.8mm" h="283" src="//img1.mydrivers.com/img/20250623/s_b3aae49b61c149ba8d33e46fba5578d1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这样的厚度和重量，让折叠屏彻底摆脱了以往厚重的短板，将吸引更多用户接受折叠屏。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;后摄部分依然维持了家族式设计，采用后置三摄方案，并且拥有潜望长焦镜头。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/7867017720b24f88a2efb24f9f856d9f.jpg" target="_blank"&gt;&lt;img alt="刷新全球轻薄记录！荣耀Magic V5官宣厚度仅8.8mm" h="292" src="//img1.mydrivers.com/img/20250623/s_7867017720b24f88a2efb24f9f856d9f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;除了极致的轻薄设计，荣耀Magic V5还搭载全栈式个人知识库、多智能体协同与全品牌互联互通功能，带来PC级别的移动生产力体验。&lt;/p&gt;
+&lt;p&gt;荣耀Magic V5还将推动AI从场景落地走向用户日常，成为用户生活中的核心工具，该机不仅是全球最轻薄折叠屏手机，同时也是行业最强AI智能体手机。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="刷新全球轻薄记录！荣耀Magic V5官宣厚度仅8.8mm" h="309" src="//img1.mydrivers.com/img/20250623/6bb11d4e-1a00-492d-8d3e-5aac51f78b72.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;具体配置上，该机将采用7.95英寸2K+LTPO屏幕，核心搭载骁龙8至尊领先版，内置5950mAh电池（额定值），支持66W有线快充。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;配备5000万像素主摄，支持北斗卫星短信、侧边指纹等。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 00:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5yYi0zY3Z6Y2FZYlJiaEVVc1JwQi1ScXlZMTJBNFBsc2Yxd0hNWXNDWDN4bUlGcEd5Z0VPbnFMeVhWVDd1VlhQNlI1Z3V3TXNsNTdjbmU5QnY</guid></item><item><title>央视说谎，被抓包了 - 万维读者网</title><link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VUUVFOWNYbGZOT1FZT1RTaDEzejhxc2h5dURoUVNOZWNtZ2wtYjRVSFB6YzJJdVFvaVZCTGV6d2QyeTBSWWl5bWF4NklwOExUQ0lQbFlXVk9TcmljV18xYTdUbXZvUQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="newsContent"&gt;&lt;p&gt;中国央视日前宣称，华为历经5年研发的首款鸿蒙个人电脑，搭载5奈米制程的麒麟X90芯片，表明中国半导体取得突破性进展。如今惨遭加拿大半导体研究机构TechInsights打脸，经拆解发现麒麟X90芯片采用的是中芯7奈米（N+2）制程，表明中芯尚无法量产 5奈米芯片。而且随著台积电等大厂提供客户2奈米制程产品，中国技术与世界的差距将扩大至3代。&lt;/p&gt;&lt;p&gt;中国央视在5月24日晚播出的央视新闻周刊《中国“芯”突破》节目中，首次报导华为鸿蒙个人电脑搭载5奈米制程的麒麟X90芯片，与鸿蒙系统深度协同。&lt;/p&gt;&lt;p&gt;对于华为携手中芯突破美国层层制裁，让中国媒体及网友嗨翻，直指这次5奈米麒麟X90芯片的官宣，不仅意味著中国可以完成5奈米芯片的自主设计，也实现5奈米制程的生产。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;至于华为如何实现5奈米制程的芯片生产？有人研判，华为透过中芯国际N+2制程与长电科技4奈米封装技术来支撑量产。&lt;/p&gt;&lt;p&gt;中国官媒宣称华为实现5奈米制程一事，很快遭到科研机构打脸。TechInsights指出，尽管有传言称华为Matebook Fold  Ultimate Design 折叠笔电，全新X90 SoC可能采用突破性的中芯5奈米（N+3）制程制造，但TechInsights可以确认，它采用的是中芯7奈米（N+2）制程制造。&lt;/p&gt;&lt;p&gt;TechInsights 强调，2023年8月在华为Mate E40 Pro手机，发现中芯7奈米（N+2）制程的首个商用实例。近两年过去了，中芯的5奈米（N+3）制程仍然难以捉摸。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://img.ltn.com.tw/Upload/business/page/800/2025/06/22/phpGMaHmX.jpg" alt="科研機構拆解華為麒麟X90晶片非5奈米製程。（路透）"&gt;&lt;/p&gt;&lt;p&gt;TechInsights 说，虽然华为并未明确声明新款 PC 是否采用先进制程，但业内已有传言称，这款设备确实暗示其可能采用中芯 5奈米（N+3）制程。由于该设备仍采用 N+2 制程制造，这可能意味著中芯尚未实现可规模生产的 5奈米等制程。&lt;/p&gt;&lt;p&gt;TechInsights说，这项消息表明，美国实施的技术管制可能会继续影响中芯在行动、PC以及云端/AI应用芯片领域，迈向更先进制程以追赶现有晶圆代工领先企业的能力。由于EUV曝光机等在内各种设备的获取有限，中国晶圆代工厂在交付先进制程芯片方面，仍然面临挑战，仅能依赖多重曝光技术，而随著芯片尺寸缩小，将造成良率下降。&lt;/p&gt;&lt;p&gt;TechInsights还说，随著台积电、三星、英特尔和Rapidus都将在未来12到24个月内向客户提供2奈米制程，将使中国制程技术与世界其他地区的差距至少扩大三代。&lt;/p&gt;&lt;/div&gt;
+
+      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>万维读者网</author><pubDate>Mon, 23 Jun 2025 00:44:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE5VUUVFOWNYbGZOT1FZT1RTaDEzejhxc2h5dURoUVNOZWNtZ2wtYjRVSFB6YzJJdVFvaVZCTGV6d2QyeTBSWWl5bWF4NklwOExUQ0lQbFlXVk9TcmljV18xYTdUbXZvUQ</guid></item><item><title>性能超OpenAI、Gemini！月之暗面发布首个自主强化学习Agent - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9xRHlTY2tvWlQ0OFpNTFRESjE5bS0zU1NrT2tGN0hLOThmWlF5aVZyMndDcjVaMFJheEswdXNEVXN1TlhqaDBaQ3ZXcGE5WHpnb0xpcmI5bFY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;性能超OpenAI、Gemini！月之暗面发布首个自主强化学习Agent&lt;/p&gt;
           
@@ -60,7 +319,70 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 00:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9xRHlTY2tvWlQ0OFpNTFRESjE5bS0zU1NrT2tGN0hLOThmWlF5aVZyMndDcjVaMFJheEswdXNEVXN1TlhqaDBaQ3ZXcGE5WHpnb0xpcmI5bFY</guid></item><item><title>你支持吗！《人民日报》、《新华社》为华为鸿蒙目前发展速度点赞：指数级扩张 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE11UVNFcVZpVDRMcUVfY2Ixb0dLRTcyZExObVFSMndlN0tZQ3NkaXdTakFkanotZlpYeVVPbGxyN0VTUktRd0U0QUZHaXc3dE1WODRHekVzd2w?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 00:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9xRHlTY2tvWlQ0OFpNTFRESjE5bS0zU1NrT2tGN0hLOThmWlF5aVZyMndDcjVaMFJheEswdXNEVXN1TlhqaDBaQ3ZXcGE5WHpnb0xpcmI5bFY</guid></item><item><title>程序员开发奇妙广告拦截器：戴上AR眼镜就能屏蔽现实世界的广告 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBHYURNZkVDSmtVbTVHdFpqM3hzaVRGYkpFRlhlYTd4VHBXY0V1cFkwQS1KckF4VzMzcFhCT3VnNVlRdVlXdU83UEt6Zmw5NVdPV21kb1dqdFE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;程序员开发奇妙广告拦截器：戴上AR眼镜就能屏蔽现实世界的广告&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-06-23 08:02:27  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1055366-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月23日消息，在当今这个广告无处不在的时代，比利时程序员斯泰恩·斯潘霍夫带来了一款令人瞩目的AR应用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;它能在现实中精准识别并巧妙屏蔽广告、广告牌以及各类品牌标识，然后将它屏蔽。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这款颇具创新性的应用能够在Snap第五代AR眼镜Spectacles上运行。其背后调用了谷歌强大的Gemini AI，凭借先进的算法，快速且准确地识别出眼镜视野中的广告内容。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250623/80cd297455d8407993ca8febc42c31bc.png" target="_blank"&gt;&lt;img alt="程序员开发奇妙广告拦截器：戴上AR眼镜就能屏蔽现实世界的广告" h="359" src="//img1.mydrivers.com/img/20250623/s_80cd297455d8407993ca8febc42c31bc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一旦识别成功，应用便会迅速将其屏蔽，取而代之的是一个醒目的红色方块，同时还会标出所拦截品牌的名字。&lt;/p&gt;
+&lt;p&gt;从实际测试效果来看，这款应用的表现堪称出色。&lt;strong&gt;无论是街头广告牌，还是报纸上的广告，都难逃它的“法眼”，均能被成功识别并进行视觉遮挡。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;斯泰恩·斯潘霍夫表示，目前这个项目尚处于初期探索阶段，但他已经畅想出一个令人充满期待的未来——一个由用户决定眼前看到什么的世界。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250623/6b7ba7d2530b4b7b88911d5eff570662.png" target="_blank"&gt;&lt;img alt="程序员开发奇妙广告拦截器：戴上AR眼镜就能屏蔽现实世界的广告" h="416" src="//img1.mydrivers.com/img/20250623/s_6b7ba7d2530b4b7b88911d5eff570662.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 23 Jun 2025 00:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBHYURNZkVDSmtVbTVHdFpqM3hzaVRGYkpFRlhlYTd4VHBXY0V1cFkwQS1KckF4VzMzcFhCT3VnNVlRdVlXdU83UEt6Zmw5NVdPV21kb1dqdFE</guid></item><item><title>你支持吗！《人民日报》、《新华社》为华为鸿蒙目前发展速度点赞：指数级扩张 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE11UVNFcVZpVDRMcUVfY2Ixb0dLRTcyZExObVFSMndlN0tZQ3NkaXdTakFkanotZlpYeVVPbGxyN0VTUktRd0U0QUZHaXc3dE1WODRHekVzd2w?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;你支持吗！《人民日报》、《新华社》为华为鸿蒙目前发展速度点赞：指数级扩张&lt;/p&gt;
           
@@ -362,7 +684,44 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 22 Jun 2025 23:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiggFBVV95cUxQZkhwbWNCOFVHVmtxb3Eyci1Ob2VjcngyRFlyamdUazJyZFVTN25xVTJxa01RUGlaeVc5dGZnZE1xemNSZHRkWHgzamZ2eER2ODVqcEhaZTJTYXhBM2NaMzZ5Y1RrNF90ZUgtUkhpcXhmWFlGV181OXdMU1BpOFZIZjhR</guid></item><item><title>苹果iPhone 17 Pro首次堆散热：均热板谍照曝光 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9xaDlUT1VLNkpUYks5RHZCNWgyUDdvWTBsWFNEMEJqUDBMM1ZybDRoVnF6RUhqNC01cjY3UlU5Z2d4ZHJLemFKbEJSdXUta0NvYUw3ekNFN1Q?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 22 Jun 2025 23:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiggFBVV95cUxQZkhwbWNCOFVHVmtxb3Eyci1Ob2VjcngyRFlyamdUazJyZFVTN25xVTJxa01RUGlaeVc5dGZnZE1xemNSZHRkWHgzamZ2eER2ODVqcEhaZTJTYXhBM2NaMzZ5Y1RrNF90ZUgtUkhpcXhmWFlGV181OXdMU1BpOFZIZjhR</guid></item><item><title>国际原子能机构：无法确定福尔多核设施内部受损情况，另两处遭严重破坏 - 观察者</title><link>https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MSFc0WU9LUVJWaXZrOVRic25hcy1UODBuNWtOTDByWEJ0MWRwWlVSeDBQR0ZGZ2xhUzhjc3JEejVUaUhOWEVJRjZyMUtrZzZ5TWNGZGY2OV85cHVtZDFSRWh4bGpnVFE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="g_content"&gt;
+	&lt;p class="g_title"&gt;国际原子能机构：无法确定福尔多核设施内部受损情况，另两处遭严重破坏&lt;/p&gt;
+	&lt;div class="g_tag"&gt;
+		&lt;div class="g_text"&gt;
+			&lt;p class="g_source"&gt;来源：央视新闻客户端&lt;/p&gt;
+			&lt;p class="g_text1"&gt;2025-06-23 06:42&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;p class="clearfix"&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	
+	&lt;/div&gt;
+&lt;div class="gc_content"&gt;
+   	   	   	&lt;p&gt;
+	当地时间22日，国际原子能机构总干事格罗西就伊朗局势向联合国安理会发表声明，通报了伊朗核设施受损情况。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/06/23/20250623063202966.jpg!wap.jpg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;span&gt;央视新闻客户端&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	国际原子能机构总干事格罗西在该机构当天发表的声明中说：“很明显，福尔多也受到了直接影响，但无法确定铀浓缩车间内的损坏程度。”
+&lt;/p&gt;
+&lt;p&gt;
+	声明说，美国夜间发动空袭后，伊朗福尔多、纳坦兹和伊斯法罕三处核设施被击中。此前遭以色列多次袭击的伊斯法罕核设施遭到更多破坏。国际原子能机构曾报告说伊斯法罕核设施综合体的几座建筑物受损，其中一些建筑物内可能有核材料。美国的袭击进一步破坏了这处核设施的建筑物。国际原子能机构已确定地下隧道的入口受到了影响。
+&lt;/p&gt;
+&lt;p&gt;
+	格罗西说，伊朗核监管机构已通知国际原子能机构，三处核设施遭袭击后，场外辐射水平没有上升。
+&lt;/p&gt;
+&lt;p&gt;
+	格罗西在声明中呼吁相关国家紧急采取外交手段，以结束敌对行动，并使国际原子能机构能够恢复在伊朗的核查活动。
+&lt;/p&gt;
+&lt;p&gt;
+	（总台记者 朱赫）
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Sun, 22 Jun 2025 22:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZ0FVX3lxTE1MSFc0WU9LUVJWaXZrOVRic25hcy1UODBuNWtOTDByWEJ0MWRwWlVSeDBQR0ZGZ2xhUzhjc3JEejVUaUhOWEVJRjZyMUtrZzZ5TWNGZGY2OV85cHVtZDFSRWh4bGpnVFE</guid></item><item><title>苹果iPhone 17 Pro首次堆散热：均热板谍照曝光 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9xaDlUT1VLNkpUYks5RHZCNWgyUDdvWTBsWFNEMEJqUDBMM1ZybDRoVnF6RUhqNC01cjY3UlU5Z2d4ZHJLemFKbEJSdXUta0NvYUw3ekNFN1Q?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;苹果iPhone 17 Pro首次堆散热：均热板谍照曝光&lt;/p&gt;
           
@@ -872,13 +1231,219 @@
             
                     
                     
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 22 Jun 2025 12:02:13 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi0AJBVV95cUxQRC05Y01TLXFmZ2xpaU16LWRsdHZzV3N2NUhNcmF0Y25oNzZGSGpJVGtaZDVvT0R3OFZtR3dmVDFTR1RFWUNBak9ha1FubGxhdFRKSDRYaEpaS0EzUnhaVng2ZE1pV2xGT2RBb0VBaXJyX3RXRVVfM1JvelNncmFOaWQ4SFREVmtKckFubkdqMy1ZN241VXVFdzEyQll6SUhra2FfQ09PaXVXTmpMTlpoVGo4TTdyMEZnamtuamM0QWZsME0xR0h0bGJjdjdVLU9lM1o3RXprNjluOWFpdXZHc0s4OWVaRTdGZ1IyOFhKUTMwb3R5cU9KN1NPM1pvZXgyUTh6ajZZVG1tMm1xakN5d2diR3ZHOEdFRG9WT29aUnl4TWlYS29EU1FzcWV4WjRlWGxUcjZoTkVpdFMxT0pWT2tPN3ZNcHFwTk5pT3o2eno</guid></item><item><title>杀入AI眼镜赛道，小米能否引爆市场？ - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE9uX1JjQnNaVDU3VGlSTDM3Z21hT1VDek5lMy1UNGNmRExYbWtHeC1OTGszTVRubWM5WjN4SFRKM0VyRVpzVmNxRzNYVmhkbDZVc0xSVw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="661618"&gt; &lt;/p&gt;&lt;p data-check-id="259702"&gt;如无意外，小米的首款AI眼镜将在下周正式发布。&lt;/p&gt;&lt;p data-check-id="259461"&gt; &lt;/p&gt;&lt;p data-check-id="741937"&gt;就虎嗅目前汇总到的信息来看，这是一款从功能、形态上全面对标RayBan-Meta的AI眼镜，但不同于前者的单SoC芯片方案，小米AI眼镜将采用“系统级SoC+协处理器”的双芯片方案。&lt;/p&gt;&lt;p data-check-id="106131"&gt; &lt;/p&gt;&lt;p data-check-id="447911"&gt;另外，相较于目前主流的“墨镜式”和“光学镜架式”的两种形态，小米AI眼镜大概率会使用“光学镜架+电致变色玻璃”的方案，以满足不同场景下的使用需求。&lt;/p&gt;&lt;p data-check-id="969070"&gt; &lt;/p&gt;&lt;p data-check-id="807350" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/22/183750945527.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="609"&gt;&lt;/p&gt;&lt;p data-check-id="446405" label="图片备注" class="text-img-note"&gt;RayBan-Meta，图片来源：视觉中国 &lt;/p&gt;&lt;p data-check-id="166312"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="543516"&gt;较为遗憾的是，笔者目前尚未见过真机，但一位AI眼镜品牌创始人向虎嗅表示，他曾体验过这款眼镜的原型机，评价是“完成度非常高”。&lt;/p&gt;&lt;p data-check-id="223395"&gt; &lt;/p&gt;&lt;p data-check-id="369116"&gt;这倒并不令人感到意外。&lt;/p&gt;&lt;p data-check-id="250855"&gt; &lt;/p&gt;&lt;p data-check-id="321066"&gt;回顾过去一年的AI眼镜赛道，互联网大厂、AR眼镜厂商、创业公司三方纷纷入局。&lt;/p&gt;&lt;p data-check-id="546950"&gt; &lt;/p&gt;&lt;p data-check-id="411601"&gt;小米在这场角逐开始前，便已有着非常明显的优势：相较互联网大厂，小米在硬件研发上有着深厚的技术积累，此前多年围绕“眼镜形态”产品的开发，也为AI眼镜积攒下宝贵经验，能规避掉常见的技术陷阱。&lt;/p&gt;&lt;p data-check-id="386745"&gt; &lt;/p&gt;&lt;p data-check-id="339283"&gt;更重要的一点是，小米不需要去考虑“如何与手机厂商做流量分成”的问题。&lt;/p&gt;&lt;p data-check-id="590696"&gt; &lt;/p&gt;&lt;p data-check-id="970191"&gt;而相较于一般创业公司和传统的AR眼镜厂商，小米在渠道覆盖、供应链管理上有着更加成熟的体系，还有生态整合能力，更是其无法忽略的核心竞争力。&lt;/p&gt;&lt;p data-check-id="249932"&gt; &lt;/p&gt;&lt;p data-check-id="402658"&gt;那么手握“技术、经验、生态”三张王牌的小米，究竟能在AI眼镜市场搅起多大波澜？&lt;/p&gt;&lt;p data-check-id="951495"&gt; &lt;/p&gt;&lt;p data-check-id="933261" label="大标题" class="text-big-title"&gt;年轻人的第一台AI眼镜？&lt;/p&gt;&lt;p data-check-id="703034"&gt; &lt;/p&gt;&lt;p data-check-id="126123"&gt;为什么小米会做一款对标RayBan-Meta的产品？因为从产业链发展情况来看，现在能满足批量出货的只有这一种形态。&lt;/p&gt;&lt;p data-check-id="512746"&gt; &lt;/p&gt;&lt;p data-check-id="672455"&gt;我们先来盘点现阶段AI眼镜的品类：&lt;/p&gt;&lt;p data-check-id="271516"&gt; &lt;/p&gt;&lt;p data-check-id="410288"&gt;第一类是无摄像头、无显示，只支持语音交互的AI眼镜。可以很肯定地说，这类产品的生命周期很短，可能到了明年就不会再有公司去进行研发，因为它能实现的功能，通过TWS耳机基本都能实现。&lt;/p&gt;&lt;p data-check-id="241149"&gt; &lt;/p&gt;&lt;p data-check-id="788776"&gt;第二类就是以Rayban-Meta为代表的，集成摄像头但没有显示的AI眼镜。这类产品功能主要集中在拍摄、AI交互、实时翻译上，在交互上主要以语音和触控为主。&lt;/p&gt;&lt;p data-check-id="682239"&gt; &lt;/p&gt;&lt;p data-check-id="971628"&gt;第三类产品是基于AR显示技术的AI眼镜。这类产品在应用丰富度上足以实现蜕变，比如前不久雷鸟发布的X3 Pro，可以支持“实时导航功能”，让步行路径直接在眼前呈现。&lt;/p&gt;&lt;p data-check-id="170739"&gt; &lt;/p&gt;&lt;p data-check-id="510544"&gt;不过，这个方案对于光学系统有着极高的要求，往往需要“光波导+MicroLED”的组合才能实现，让成本大幅提高，部分高配置产品甚至逼近万元价位。&lt;/p&gt;&lt;p data-check-id="158052"&gt; &lt;/p&gt;&lt;p data-check-id="300415"&gt;综上所述，如果在成本与产品体验之间去找到一个平衡点，那么RayBan—Meta形态的眼镜，当下应该算是最优解。&lt;/p&gt;&lt;p data-check-id="634684"&gt; &lt;/p&gt;&lt;p data-check-id="868869"&gt;实际上，小米早在2022年，就做过一款类似的产品。由于当时生成式AI尚未爆发，而这款眼镜主打的功能为拍照，因此小米将其命名为“米家眼镜相机”。&lt;/p&gt;&lt;p data-check-id="691817"&gt; &lt;/p&gt;&lt;p data-check-id="165471" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/22/183938012125.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="536"&gt;&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p data-check-id="586042"&gt;这款眼镜相机最早以众筹的形式售卖，在发布5分钟后众筹金额就突破100万元。不过，这款产品也饱受诟病，除了成像画质和视频防抖这些常见问题外，其100克的重量、光机导致的重心前倾也让它的佩戴体验可谓相当糟糕。&lt;/p&gt;&lt;p data-check-id="906986"&gt; &lt;/p&gt;&lt;p data-check-id="703731"&gt;后续的RayBan-Meta能够大获成功，一个重要原因就是Meta将机身重量控制在了49克，能够满足理论是“全天候”的使用条件。&lt;/p&gt;&lt;p data-check-id="163676"&gt; &lt;/p&gt;&lt;p data-check-id="388065"&gt;回到本次即将发布的“小米AI眼镜”上，可以确认的一点是，它的机身重量在同一水平线上。但相较于RayBan-Meta，小米AI眼镜还有一处调整是，它极有可能额外配置了一枚协处理器芯片，比如恒玄2700/2800去处理诸如待机、音频等低功耗场景。&lt;/p&gt;&lt;p data-check-id="780654"&gt; &lt;/p&gt;&lt;p data-check-id="143236"&gt;结合小米近年来在高密度电池技术上的积累，笔者认为它的续航时间可能会大幅领先于RayBan-Meta。&lt;/p&gt;&lt;p data-check-id="305454"&gt; &lt;/p&gt;&lt;p data-check-id="865521"&gt;另外，据产业链消息，小米AI眼镜很可能配备了“电致变色镜片”，这些技术过去在AR眼镜上，曾被Xreal等厂商使用过，主要是为应对环境光线变化问题。&lt;/p&gt;&lt;p data-check-id="521259"&gt; &lt;/p&gt;&lt;p data-check-id="465083"&gt;不过，在一个没有显示屏的AI眼镜上，电致变色镜片究竟能发挥出多大的实际作用，可能还要等到发布会上去揭晓。&lt;/p&gt;&lt;p data-check-id="796547"&gt; &lt;/p&gt;&lt;p data-check-id="196454"&gt;最后再说说这次小米AI眼镜的定价问题。&lt;/p&gt;&lt;p data-check-id="591647"&gt; &lt;/p&gt;&lt;p data-check-id="929149"&gt;之前的“米家眼镜相机”其众筹价格为2499元，笔者认为小米首款AI眼镜的定价不会高于这个价格，因为在去掉自由曲面AR光机后，成本已明显降低，另外参照目前市面上的几个功能类似的竞品来看，其定价也在1600-2100元之间。&lt;/p&gt;&lt;p data-check-id="194714"&gt; &lt;/p&gt;&lt;p data-check-id="219993"&gt;小米的首款AI眼镜，起售价大概率也在这个范围区间内。&lt;/p&gt;&lt;p data-check-id="156891"&gt; &lt;/p&gt;&lt;p data-check-id="364409" label="大标题" class="text-big-title"&gt;小米入场，会改变什么？&lt;/p&gt;&lt;p data-check-id="219545"&gt; &lt;/p&gt;&lt;p data-check-id="533899"&gt;在谈到某类消费电子的发展前景时，最终的落脚点都离不开生态，而当下的AI眼镜行业基本不存在所谓的生态。不过，小米的下场很可能会让这个局面迎来一丝转机，行业生态可能就此趋于整合。&lt;/p&gt;&lt;p data-check-id="325907"&gt; &lt;/p&gt;&lt;p data-check-id="127354"&gt;我们先来说说AI眼镜行业为什么难以形成生态。&lt;/p&gt;&lt;p data-check-id="203466"&gt; &lt;/p&gt;&lt;p data-check-id="242504"&gt;首先，行业处于早期摸索阶段，大多数厂商论证的都是单一功能的突破。&lt;/p&gt;&lt;p data-check-id="762331"&gt; &lt;/p&gt;&lt;p data-check-id="281752"&gt;其次，之所以传统的互联网厂商都在押注AI眼镜赛道，是因为他们意识到该品类可能是下一个流量入口，而这就又不可避免地与传统智能手机厂商产生矛盾。&lt;/p&gt;&lt;p data-check-id="718796"&gt; &lt;/p&gt;&lt;p data-check-id="473230"&gt;需要明确一点：在未来很长一段时间内，AI眼镜都无法摆脱智能手机，成为独立的硬件平台。原因无他，如果想要贴上AI的概念，眼镜芯片的那点算力根本不够看的。&lt;/p&gt;&lt;p data-check-id="168587"&gt; &lt;/p&gt;&lt;p data-check-id="279646"&gt;在AI相关的任务处理和调度上，可以分为两种路径。第一种基于智能手机的端侧算力完成，第二种是更复杂计算，需要通过智能手机向云侧传输请求或数据。在两种情况下，智能手机要么扮演后台的角色，要么扮演中继的角色。&lt;/p&gt;&lt;p data-check-id="993353"&gt; &lt;/p&gt;&lt;p data-check-id="942198"&gt;不妨做个假设：一家互联网大厂希望通过在自家的AI眼镜上推广本地服务，这种情况下该如何与智能手机厂商进行流量分成？&lt;/p&gt;&lt;p data-check-id="247961"&gt; &lt;/p&gt;&lt;p data-check-id="692485"&gt;在以智能手机为中心的移动互联网时代，各大厂都想努力突破终端厂商的桎梏，比如腾讯尝试收购黑鲨、字节不惜砸下300亿元扶植Pico，背后的原因都是想在智能手机之外，开辟出新的流量入口，以避免出现当年“华腾大战”时的窘境。&lt;/p&gt;&lt;p data-check-id="203322"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="466790" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/22/184430405170.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="667"&gt;&lt;/p&gt;&lt;p data-check-id="205338" label="图片备注" class="text-img-note"&gt;Pico曾承载着字节抢夺流量入口的希望 &lt;/p&gt;&lt;p data-check-id="162044"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="924693"&gt;在可预见的未来，只要AI眼镜无法成为独立硬件平台，互联网大厂与手机厂商之间，就难以形成稳定且牢固的生态。&lt;/p&gt;&lt;p data-check-id="489165"&gt; &lt;/p&gt;&lt;p data-check-id="426391"&gt;而小米的特殊之处在于，智能手机本身就是它的基本盘，独立开发的系统和品类丰富的生态链产品，还能够进一步帮助AI眼镜去拓展能力边界。因此，笔者认为，小米有极大概率会成为第一家跑通AI眼镜生态的公司。&lt;/p&gt;&lt;p data-check-id="420410"&gt; &lt;/p&gt;&lt;p data-check-id="270492"&gt;另外，当一家打通AI眼镜软硬件的大厂出现后，对于创业公司和过去的AR眼镜公司来说，他们势必要与产业链上下游形成更加紧密的绑定关系，而这一过程也势必伴随着大量的兼并与收购。&lt;/p&gt;&lt;p data-check-id="628284"&gt; &lt;/p&gt;&lt;p data-check-id="224514"&gt;不过，这并不意味着行业在短时间内会形成“马太效应”。&lt;/p&gt;&lt;p data-check-id="639073"&gt; &lt;/p&gt;&lt;p data-check-id="254341"&gt;因为马太效应的产生需要有明显的“竞争机制”，比如智能手机在4G到5G的过程中，百花齐放的国产手机厂商逐渐收敛为头部的五六家公司，而现在的AI眼镜行业显然没有到这个阶段。&lt;/p&gt;&lt;p data-check-id="406568"&gt; &lt;/p&gt;&lt;p data-check-id="902057"&gt;另根据第三方调研机构Wellsenn XR发布的报告，2025年全球AI眼镜销量为550万台，未来6年的CAGR高达97.4%，在现有的消费电子品类中，几乎再也找不到如此高增量的市场。&lt;/p&gt;&lt;p data-check-id="678957"&gt; &lt;/p&gt;&lt;p data-check-id="355941"&gt;因此，对于这个行业的创业者和中小企业来说，虽然大厂的加入会让他们压力剧增，但AI眼镜这个赛道仍布满着机遇。&lt;/p&gt;&lt;p data-check-id="916684"&gt; &lt;/p&gt;&lt;p data-check-id="284754"&gt; &lt;/p&gt;&lt;p data-check-id="820237"&gt;&lt;br&gt;&lt;/p&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 22 Jun 2025 12:02:13 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi0AJBVV95cUxQRC05Y01TLXFmZ2xpaU16LWRsdHZzV3N2NUhNcmF0Y25oNzZGSGpJVGtaZDVvT0R3OFZtR3dmVDFTR1RFWUNBak9ha1FubGxhdFRKSDRYaEpaS0EzUnhaVng2ZE1pV2xGT2RBb0VBaXJyX3RXRVVfM1JvelNncmFOaWQ4SFREVmtKckFubkdqMy1ZN241VXVFdzEyQll6SUhra2FfQ09PaXVXTmpMTlpoVGo4TTdyMEZnamtuamM0QWZsME0xR0h0bGJjdjdVLU9lM1o3RXprNjluOWFpdXZHc0s4OWVaRTdGZ1IyOFhKUTMwb3R5cU9KN1NPM1pvZXgyUTh6ajZZVG1tMm1xakN5d2diR3ZHOEdFRG9WT29aUnl4TWlYS29EU1FzcWV4WjRlWGxUcjZoTkVpdFMxT0pWT2tPN3ZNcHFwTk5pT3o2eno</guid></item><item><title>特斯拉自驾出租车在美低调登场 - 联合早报</title><link>https://news.google.com/rss/articles/CBMiakFVX3lxTE1TSWNPOEMzRlgwbFlQREQ4ajIyby1Kd3Y5WktYRDBsSkhXWUxVXzkxU1FDLTVpSkpJUFVNT0RyYnRFQTRQZVhrOXVWd1pJdUt2SXBCNGQxbDhXbnJiSUpIenJ2TTI4VmlQWWc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;p&gt;（旧金山综合电）美国电动车巨头特斯拉备受期待的无人驾驶电动车（Robotaxi）于美东时间星期天（6月22日）在美国得克萨斯州奥斯汀登场。不过初期仅投入约10辆车，与特斯拉首席执行官马斯克长期承诺的具备广泛能力的自动驾驶汽车相去甚远。&lt;/p&gt;&lt;p&gt;分析认为，这一首秀不仅显得颇为低调，也暴露出特斯拉在自动驾驶技术上面临的多重挑战。&lt;/p&gt;&lt;p&gt;据报道，服务初期只采用Model Y车型，而非造型极具未来感的CyberCab。这项服务还将受到其他限制，特斯拉计划避开恶劣天气和路口，并且不接受18岁以下的乘客。&lt;/p&gt;&lt;p&gt;尽管如此，投资者对特斯拉低调的发布仍抱有很高的期待，他们期望这项新业务能重振这家饱受销量下滑和消费者对马斯克不满打击的公司。马斯克将公司的未来押注于自动驾驶、人工智能（AI）和人形机器人，这些领域虽热门，但在很大程度上仍存在许多不确定性。&lt;/p&gt;&lt;figure class="inline-figure bff-inline-image" data-slide="1"&gt;
+              
+              &lt;figcaption&gt;美国特斯拉无人驾驶电动车（Robotaxi）服务初期只采用Model Y车型，而非造型极具未来感的CyberCab（图）。（法新社）&lt;/figcaption&gt;
+            &lt;/figure&gt;&lt;p&gt;自动驾驶汽车的商业化存在风险且成本高昂。Deepwater资产管理公司管理合伙人蒙斯特（Gene Munster）接受彭博社访问时说：“这是第一次真正的考验，发生的任何事情都会被放大，尤其是负面消息。”&lt;/p&gt;
+    
+  &lt;p&gt;粉丝们则对特斯拉的谨慎态度和期待已久的产品发布表示欢迎，指特斯拉在推出自驾出租车服务时“极其谨慎，这是好事”。&lt;/p&gt;&lt;p&gt;马斯克上月接受采访时说，自驾出租车服务初期将在奥斯汀的部分区域开展，且投放数量有限，大约只有10辆；未来几个月可能会扩展到美国其他城市，自驾出租车总数也将增加到约上千辆。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Sun, 22 Jun 2025 11:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1TSWNPOEMzRlgwbFlQREQ4ajIyby1Kd3Y5WktYRDBsSkhXWUxVXzkxU1FDLTVpSkpJUFVNT0RyYnRFQTRQZVhrOXVWd1pJdUt2SXBCNGQxbDhXbnJiSUpIenJ2TTI4VmlQWWc</guid></item><item><title>杀入AI眼镜赛道，小米能否引爆市场？ - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE9uX1JjQnNaVDU3VGlSTDM3Z21hT1VDek5lMy1UNGNmRExYbWtHeC1OTGszTVRubWM5WjN4SFRKM0VyRVpzVmNxRzNYVmhkbDZVc0xSVw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="661618"&gt; &lt;/p&gt;&lt;p data-check-id="259702"&gt;如无意外，小米的首款AI眼镜将在下周正式发布。&lt;/p&gt;&lt;p data-check-id="259461"&gt; &lt;/p&gt;&lt;p data-check-id="741937"&gt;就虎嗅目前汇总到的信息来看，这是一款从功能、形态上全面对标RayBan-Meta的AI眼镜，但不同于前者的单SoC芯片方案，小米AI眼镜将采用“系统级SoC+协处理器”的双芯片方案。&lt;/p&gt;&lt;p data-check-id="106131"&gt; &lt;/p&gt;&lt;p data-check-id="447911"&gt;另外，相较于目前主流的“墨镜式”和“光学镜架式”的两种形态，小米AI眼镜大概率会使用“光学镜架+电致变色玻璃”的方案，以满足不同场景下的使用需求。&lt;/p&gt;&lt;p data-check-id="969070"&gt; &lt;/p&gt;&lt;p data-check-id="807350" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/22/183750945527.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="609"&gt;&lt;/p&gt;&lt;p data-check-id="446405" label="图片备注" class="text-img-note"&gt;RayBan-Meta，图片来源：视觉中国 &lt;/p&gt;&lt;p data-check-id="166312"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="543516"&gt;较为遗憾的是，笔者目前尚未见过真机，但一位AI眼镜品牌创始人向虎嗅表示，他曾体验过这款眼镜的原型机，评价是“完成度非常高”。&lt;/p&gt;&lt;p data-check-id="223395"&gt; &lt;/p&gt;&lt;p data-check-id="369116"&gt;这倒并不令人感到意外。&lt;/p&gt;&lt;p data-check-id="250855"&gt; &lt;/p&gt;&lt;p data-check-id="321066"&gt;回顾过去一年的AI眼镜赛道，互联网大厂、AR眼镜厂商、创业公司三方纷纷入局。&lt;/p&gt;&lt;p data-check-id="546950"&gt; &lt;/p&gt;&lt;p data-check-id="411601"&gt;小米在这场角逐开始前，便已有着非常明显的优势：相较互联网大厂，小米在硬件研发上有着深厚的技术积累，此前多年围绕“眼镜形态”产品的开发，也为AI眼镜积攒下宝贵经验，能规避掉常见的技术陷阱。&lt;/p&gt;&lt;p data-check-id="386745"&gt; &lt;/p&gt;&lt;p data-check-id="339283"&gt;更重要的一点是，小米不需要去考虑“如何与手机厂商做流量分成”的问题。&lt;/p&gt;&lt;p data-check-id="590696"&gt; &lt;/p&gt;&lt;p data-check-id="970191"&gt;而相较于一般创业公司和传统的AR眼镜厂商，小米在渠道覆盖、供应链管理上有着更加成熟的体系，还有生态整合能力，更是其无法忽略的核心竞争力。&lt;/p&gt;&lt;p data-check-id="249932"&gt; &lt;/p&gt;&lt;p data-check-id="402658"&gt;那么手握“技术、经验、生态”三张王牌的小米，究竟能在AI眼镜市场搅起多大波澜？&lt;/p&gt;&lt;p data-check-id="951495"&gt; &lt;/p&gt;&lt;p data-check-id="933261" label="大标题" class="text-big-title"&gt;年轻人的第一台AI眼镜？&lt;/p&gt;&lt;p data-check-id="703034"&gt; &lt;/p&gt;&lt;p data-check-id="126123"&gt;为什么小米会做一款对标RayBan-Meta的产品？因为从产业链发展情况来看，现在能满足批量出货的只有这一种形态。&lt;/p&gt;&lt;p data-check-id="512746"&gt; &lt;/p&gt;&lt;p data-check-id="672455"&gt;我们先来盘点现阶段AI眼镜的品类：&lt;/p&gt;&lt;p data-check-id="271516"&gt; &lt;/p&gt;&lt;p data-check-id="410288"&gt;第一类是无摄像头、无显示，只支持语音交互的AI眼镜。可以很肯定地说，这类产品的生命周期很短，可能到了明年就不会再有公司去进行研发，因为它能实现的功能，通过TWS耳机基本都能实现。&lt;/p&gt;&lt;p data-check-id="241149"&gt; &lt;/p&gt;&lt;p data-check-id="788776"&gt;第二类就是以Rayban-Meta为代表的，集成摄像头但没有显示的AI眼镜。这类产品功能主要集中在拍摄、AI交互、实时翻译上，在交互上主要以语音和触控为主。&lt;/p&gt;&lt;p data-check-id="682239"&gt; &lt;/p&gt;&lt;p data-check-id="971628"&gt;第三类产品是基于AR显示技术的AI眼镜。这类产品在应用丰富度上足以实现蜕变，比如前不久雷鸟发布的X3 Pro，可以支持“实时导航功能”，让步行路径直接在眼前呈现。&lt;/p&gt;&lt;p data-check-id="170739"&gt; &lt;/p&gt;&lt;p data-check-id="510544"&gt;不过，这个方案对于光学系统有着极高的要求，往往需要“光波导+MicroLED”的组合才能实现，让成本大幅提高，部分高配置产品甚至逼近万元价位。&lt;/p&gt;&lt;p data-check-id="158052"&gt; &lt;/p&gt;&lt;p data-check-id="300415"&gt;综上所述，如果在成本与产品体验之间去找到一个平衡点，那么RayBan—Meta形态的眼镜，当下应该算是最优解。&lt;/p&gt;&lt;p data-check-id="634684"&gt; &lt;/p&gt;&lt;p data-check-id="868869"&gt;实际上，小米早在2022年，就做过一款类似的产品。由于当时生成式AI尚未爆发，而这款眼镜主打的功能为拍照，因此小米将其命名为“米家眼镜相机”。&lt;/p&gt;&lt;p data-check-id="691817"&gt; &lt;/p&gt;&lt;p data-check-id="165471" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/22/183938012125.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="536"&gt;&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;p data-check-id="586042"&gt;这款眼镜相机最早以众筹的形式售卖，在发布5分钟后众筹金额就突破100万元。不过，这款产品也饱受诟病，除了成像画质和视频防抖这些常见问题外，其100克的重量、光机导致的重心前倾也让它的佩戴体验可谓相当糟糕。&lt;/p&gt;&lt;p data-check-id="906986"&gt; &lt;/p&gt;&lt;p data-check-id="703731"&gt;后续的RayBan-Meta能够大获成功，一个重要原因就是Meta将机身重量控制在了49克，能够满足理论是“全天候”的使用条件。&lt;/p&gt;&lt;p data-check-id="163676"&gt; &lt;/p&gt;&lt;p data-check-id="388065"&gt;回到本次即将发布的“小米AI眼镜”上，可以确认的一点是，它的机身重量在同一水平线上。但相较于RayBan-Meta，小米AI眼镜还有一处调整是，它极有可能额外配置了一枚协处理器芯片，比如恒玄2700/2800去处理诸如待机、音频等低功耗场景。&lt;/p&gt;&lt;p data-check-id="780654"&gt; &lt;/p&gt;&lt;p data-check-id="143236"&gt;结合小米近年来在高密度电池技术上的积累，笔者认为它的续航时间可能会大幅领先于RayBan-Meta。&lt;/p&gt;&lt;p data-check-id="305454"&gt; &lt;/p&gt;&lt;p data-check-id="865521"&gt;另外，据产业链消息，小米AI眼镜很可能配备了“电致变色镜片”，这些技术过去在AR眼镜上，曾被Xreal等厂商使用过，主要是为应对环境光线变化问题。&lt;/p&gt;&lt;p data-check-id="521259"&gt; &lt;/p&gt;&lt;p data-check-id="465083"&gt;不过，在一个没有显示屏的AI眼镜上，电致变色镜片究竟能发挥出多大的实际作用，可能还要等到发布会上去揭晓。&lt;/p&gt;&lt;p data-check-id="796547"&gt; &lt;/p&gt;&lt;p data-check-id="196454"&gt;最后再说说这次小米AI眼镜的定价问题。&lt;/p&gt;&lt;p data-check-id="591647"&gt; &lt;/p&gt;&lt;p data-check-id="929149"&gt;之前的“米家眼镜相机”其众筹价格为2499元，笔者认为小米首款AI眼镜的定价不会高于这个价格，因为在去掉自由曲面AR光机后，成本已明显降低，另外参照目前市面上的几个功能类似的竞品来看，其定价也在1600-2100元之间。&lt;/p&gt;&lt;p data-check-id="194714"&gt; &lt;/p&gt;&lt;p data-check-id="219993"&gt;小米的首款AI眼镜，起售价大概率也在这个范围区间内。&lt;/p&gt;&lt;p data-check-id="156891"&gt; &lt;/p&gt;&lt;p data-check-id="364409" label="大标题" class="text-big-title"&gt;小米入场，会改变什么？&lt;/p&gt;&lt;p data-check-id="219545"&gt; &lt;/p&gt;&lt;p data-check-id="533899"&gt;在谈到某类消费电子的发展前景时，最终的落脚点都离不开生态，而当下的AI眼镜行业基本不存在所谓的生态。不过，小米的下场很可能会让这个局面迎来一丝转机，行业生态可能就此趋于整合。&lt;/p&gt;&lt;p data-check-id="325907"&gt; &lt;/p&gt;&lt;p data-check-id="127354"&gt;我们先来说说AI眼镜行业为什么难以形成生态。&lt;/p&gt;&lt;p data-check-id="203466"&gt; &lt;/p&gt;&lt;p data-check-id="242504"&gt;首先，行业处于早期摸索阶段，大多数厂商论证的都是单一功能的突破。&lt;/p&gt;&lt;p data-check-id="762331"&gt; &lt;/p&gt;&lt;p data-check-id="281752"&gt;其次，之所以传统的互联网厂商都在押注AI眼镜赛道，是因为他们意识到该品类可能是下一个流量入口，而这就又不可避免地与传统智能手机厂商产生矛盾。&lt;/p&gt;&lt;p data-check-id="718796"&gt; &lt;/p&gt;&lt;p data-check-id="473230"&gt;需要明确一点：在未来很长一段时间内，AI眼镜都无法摆脱智能手机，成为独立的硬件平台。原因无他，如果想要贴上AI的概念，眼镜芯片的那点算力根本不够看的。&lt;/p&gt;&lt;p data-check-id="168587"&gt; &lt;/p&gt;&lt;p data-check-id="279646"&gt;在AI相关的任务处理和调度上，可以分为两种路径。第一种基于智能手机的端侧算力完成，第二种是更复杂计算，需要通过智能手机向云侧传输请求或数据。在两种情况下，智能手机要么扮演后台的角色，要么扮演中继的角色。&lt;/p&gt;&lt;p data-check-id="993353"&gt; &lt;/p&gt;&lt;p data-check-id="942198"&gt;不妨做个假设：一家互联网大厂希望通过在自家的AI眼镜上推广本地服务，这种情况下该如何与智能手机厂商进行流量分成？&lt;/p&gt;&lt;p data-check-id="247961"&gt; &lt;/p&gt;&lt;p data-check-id="692485"&gt;在以智能手机为中心的移动互联网时代，各大厂都想努力突破终端厂商的桎梏，比如腾讯尝试收购黑鲨、字节不惜砸下300亿元扶植Pico，背后的原因都是想在智能手机之外，开辟出新的流量入口，以避免出现当年“华腾大战”时的窘境。&lt;/p&gt;&lt;p data-check-id="203322"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="466790" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/22/184430405170.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="667"&gt;&lt;/p&gt;&lt;p data-check-id="205338" label="图片备注" class="text-img-note"&gt;Pico曾承载着字节抢夺流量入口的希望 &lt;/p&gt;&lt;p data-check-id="162044"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="924693"&gt;在可预见的未来，只要AI眼镜无法成为独立硬件平台，互联网大厂与手机厂商之间，就难以形成稳定且牢固的生态。&lt;/p&gt;&lt;p data-check-id="489165"&gt; &lt;/p&gt;&lt;p data-check-id="426391"&gt;而小米的特殊之处在于，智能手机本身就是它的基本盘，独立开发的系统和品类丰富的生态链产品，还能够进一步帮助AI眼镜去拓展能力边界。因此，笔者认为，小米有极大概率会成为第一家跑通AI眼镜生态的公司。&lt;/p&gt;&lt;p data-check-id="420410"&gt; &lt;/p&gt;&lt;p data-check-id="270492"&gt;另外，当一家打通AI眼镜软硬件的大厂出现后，对于创业公司和过去的AR眼镜公司来说，他们势必要与产业链上下游形成更加紧密的绑定关系，而这一过程也势必伴随着大量的兼并与收购。&lt;/p&gt;&lt;p data-check-id="628284"&gt; &lt;/p&gt;&lt;p data-check-id="224514"&gt;不过，这并不意味着行业在短时间内会形成“马太效应”。&lt;/p&gt;&lt;p data-check-id="639073"&gt; &lt;/p&gt;&lt;p data-check-id="254341"&gt;因为马太效应的产生需要有明显的“竞争机制”，比如智能手机在4G到5G的过程中，百花齐放的国产手机厂商逐渐收敛为头部的五六家公司，而现在的AI眼镜行业显然没有到这个阶段。&lt;/p&gt;&lt;p data-check-id="406568"&gt; &lt;/p&gt;&lt;p data-check-id="902057"&gt;另根据第三方调研机构Wellsenn XR发布的报告，2025年全球AI眼镜销量为550万台，未来6年的CAGR高达97.4%，在现有的消费电子品类中，几乎再也找不到如此高增量的市场。&lt;/p&gt;&lt;p data-check-id="678957"&gt; &lt;/p&gt;&lt;p data-check-id="355941"&gt;因此，对于这个行业的创业者和中小企业来说，虽然大厂的加入会让他们压力剧增，但AI眼镜这个赛道仍布满着机遇。&lt;/p&gt;&lt;p data-check-id="916684"&gt; &lt;/p&gt;&lt;p data-check-id="284754"&gt; &lt;/p&gt;&lt;p data-check-id="820237"&gt;&lt;br&gt;&lt;/p&gt;
           &lt;div class="article__canonical"&gt;
             &lt;p&gt;文章标题：杀入AI眼镜赛道，小米能否引爆市场？&lt;/p&gt;
             &lt;p&gt;文章链接：https://www.huxiu.com/article/4495539.html&lt;/p&gt;
             &lt;a href="https://www.huxiu.com/article/4495539.html"&gt;阅读原文：杀入AI眼镜赛道，小米能否引爆市场？_虎嗅网&lt;/a&gt;
           &lt;/div&gt;
-        &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Sun, 22 Jun 2025 11:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9uX1JjQnNaVDU3VGlSTDM3Z21hT1VDek5lMy1UNGNmRExYbWtHeC1OTGszTVRubWM5WjN4SFRKM0VyRVpzVmNxRzNYVmhkbDZVc0xSVw</guid></item><item><title>5大分析师AI动向：Nvidia、Meta目标价上调；思科系统公司升级至买入评级 提供者 Investing.com - 英为财情 Investing.com</title><link>https://news.google.com/rss/articles/CBMicEFVX3lxTE9hYWdyN2draVVwSWJ5b2JOYmlhM3RoOFNOQXhPOTk0RmZWeGVXd0prYXpaS0ZFMDZVZzN2Qk9MdUZ5YzNrcGx1Y1NseTFoRXY3MW5qQ3ZBYjRpSEZNOHBSMUJ2dHB4bWRzYWxWS1B3RWg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Sun, 22 Jun 2025 10:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE9hYWdyN2draVVwSWJ5b2JOYmlhM3RoOFNOQXhPOTk0RmZWeGVXd0prYXpaS0ZFMDZVZzN2Qk9MdUZ5YzNrcGx1Y1NseTFoRXY3MW5qQ3ZBYjRpSEZNOHBSMUJ2dHB4bWRzYWxWS1B3RWg</guid></item><item><title>具备高速L3能力！华为ADS 4将于9月底分批推送 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwR0RWTWlPbllCS0trQ2ZMQ1pYdllEOWptd3l4VHhUVHA1Y0NnaTdWa2ZSSWpramxWRDU2b1NVaVRPLWZ6N2YyajVqQjFqLXFnbk9oZEd0d3g?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Sun, 22 Jun 2025 11:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9uX1JjQnNaVDU3VGlSTDM3Z21hT1VDek5lMy1UNGNmRExYbWtHeC1OTGszTVRubWM5WjN4SFRKM0VyRVpzVmNxRzNYVmhkbDZVc0xSVw</guid></item><item><title>充电宝上热搜，罗马仕可能要凉了？ - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE1aYkp6U0ZVV0NYMU9RNW5ub25WY3BNY0RXWVFoeG90Sm0tVFJhbU5tVVNUY0pMbEpRdTBtOU1zRHpBbDBnNmpfZEtNQ05yZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;接下来我要说的这个品牌就算你没用过他家的产品也绝对听说过，没错，它就是罗马仕，尤其是罗马仕的充电宝，你要问它为啥卖得好，便宜呗！&lt;/p&gt;
+  &lt;p&gt;罗马仕 20000 毫安充电宝售价还不到 90 元，这价格还要啥自行车啊，你看别家的 20000 毫安充电宝高低也要一两百块钱，但是吧，罗马仕充电宝的好日子可能快到头了，截至目前京东和抖音等多个电商平台都全面下架了罗马仕充电宝。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;罗马仕被点名送上热搜&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;事情的起因是近日北京多所高校发布通知称接到上级主管部门提醒，近期发现 20000 毫安时的罗马仕品牌充电宝相比于其他品牌充电宝在使用过程中容易发生自燃爆炸，因此不建议师生们继续使用该品牌充电宝。&lt;/p&gt;
+  &lt;p&gt;翻译成大白话就是：罗马仕充电宝容易炸，大家最好别用！&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_fdae2152f5de485f90cb3dec5969d297@000000_oswg299611oswg836oswg1062_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;通知的字数并不多，但是吧，往往字数越少，事情越大。事实上也的确如此，这则消息直接把罗马仕送上了各大平台的热搜。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_0f5a187375b440fb92a254275014413a@000000_oswg31254oswg830oswg146_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;由此可见，罗马仕这次是真的惹了大麻烦。而网友们更是抱着看热闹不嫌事大的心态开始爆料罗马仕充电宝的各种“黑历史”。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;罗马仕充电宝前科累累&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;随着网友的深挖，罗马仕的充电宝在爆炸自燃这方面可谓是前科累累，“战绩”可查。早在今年 3 月 20 号，香港航空公司的一架空客 A320 飞机在中国航线上飞行时，乘客行李架中一个罗马仕 20000 毫安充电宝突然起火，机组人员紧急灭火后改飞福州机场安全降落。事故虽未造成人员伤亡，但已经严重影响飞行安全。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_907a8f923bd14892a1051244099dd48a@000000_oswg577924oswg832oswg880_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;紧接着浙江一位网友又跳出来说他于今年 3 月网购的罗马仕充电宝在日本旅游途中发生爆燃，充电宝被彻底烧毁，民宿的地板也被烧了一个大洞，为此还赔偿了民宿约 8000 元。在此心疼这位浙江网友一秒。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_3da0c8e9a2a4484f9d20fc017a244a6e@000000_oswg272062oswg832oswg438_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;道歉+召回&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;这么看来，大家还真不是有意针对罗马仕，的确是是罗马仕的充电宝动不动就炸。对此次事件罗马仕的态度是迅速滑跪，6 月 14 日就发布了相关声明。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_64c37dfd30cf4f86b2a4e81aae081ad5@000000_oswg641878oswg830oswg1106_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;嗯，态度还算诚恳，接着又于 6 月 18 日发布了移动电源的召回计划，总共涉及 3 个具体型号，据统计召回总数超过 49 万台。虽然罗马仕的认错态度还行，也召回了一部分有问题的产品。但这一系列的举动并不足以挽回声誉，这次事件对于罗马仕品牌所造成的伤害是永久性的，说的直白一点，罗马仕的充电宝很有可能就凉凉了。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_75a9f41843914596bec87d1de026202d@000000_oswg794670oswg832oswg1780_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;三星的前车之鉴&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;这绝不是在危言耸听，产品质量问题本身对于品牌的打击就很大，何况罗马仕此次所涉及的还不是普通的产品质量问题，这绝对触碰到了大多数人的底线。&lt;/p&gt;
+  &lt;p&gt;尤其是对于充电宝这类产品，安全问题本身就非常敏感。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_38ae182d4da4461ca622bd88f3e972db@000000_oswg878619oswg830oswg624_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;说到这里，三星表示：这剧情我熟悉啊。没错，大家不妨回看一下当年三星 Note 7 的自燃事件，当年三星的 Note 7 手机也是因为电池质量问题导致手机自燃，虽然三星最后也道歉了，也召回了，但是稍微熟悉数码圈的人都知道三星手机在国内的销量从此一蹶不振，市占率更是跌到了谷底，再难恢复昔日的盛况，直到现在，一提起三星手机许多人的第一印象依旧是不安全，容易自燃爆炸。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_c85cbc90426b4678a4d2a88d092ac184@000000_oswg552344oswg832oswg468_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;由此可见，这种威胁到安全的产品质量问题对品牌的打击往往是致命的，而且很容易给人留下负面的刻板印象。&lt;/p&gt;
+  &lt;p&gt;这次罗马仕充电宝的事件和当年三星的 Note 7 事件有着许多相似之处，同样是电池质量问题，都发生了自燃，也都进行了召回。&lt;/p&gt;
+  &lt;p&gt;而且网上对于罗马仕充电宝电芯鼓包等各种质量问题的反馈也绝不在少数。前车之鉴在此，我们很难对于罗马仕充电宝抱有乐观的态度。&lt;/p&gt;
+  &lt;p&gt;何况，对于召回的具体执行方案，罗马仕的操作也堪称逆天，你猜怎么着？&lt;/p&gt;
+  &lt;p&gt;它没有采用统一的集中召回，而是让用户自己发快递寄回，问题是现在大多数快递直接拒收罗马仕充电宝，理由嘛，当然是不安全。&lt;/p&gt;
+  &lt;p&gt;你罗马仕充电宝都这样了试问谁哪个快递敢收？&lt;/p&gt;
+  &lt;p&gt;用户不怕，快递公司和保险公司还怕呢，毕竟这要是在运输途中自燃了，烧毁的可能就不是一个充电宝这么简单了，很可能是一集装箱的快递。&lt;/p&gt;
+  &lt;p&gt;更要命的的是，根据目前的最新消息，罗马仕充电宝的 3C 证书已经被吊销，而且还连累了一众上游厂商，就连电芯供应商安普瑞斯的 3C 证书也被暂停了。&lt;/p&gt;
+  &lt;p&gt;好家伙罗马仕自己遭殃还要拖供应商下水！这是要拉全行业上下游一起给它陪葬的节奏啊！毕竟没有了 3C 认证意味着罗马仕不能继续生产充电宝产品，安普瑞斯也无法提供电芯。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_642d6a485f754c6d8d839c7bd9b68b2c@000000_oswg376412oswg830oswg848_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;小小的充电宝却考验着厂商的良心&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;其实充电宝这玩意儿虽然没啥很高的技术含量，但却是最考验厂商良心的产品。&lt;/p&gt;
+  &lt;p&gt;罗马仕的充电宝确实便宜，人嘛，难免都会有贪便宜的心理，但是有时候便宜≠有良心，因为充电宝的电芯、功率元器件和内部各种电路板以及保护芯片都是必不可少的，而高质量的这些物料成本都不便宜，因此我们虽然不能武断的说便宜没好货，但是当它价格低到太离谱，又频繁产生质量问题时，倒也有理由怀疑它是不是在某些方面偷工减料了。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_21bf5b04f5cb431aaa7f3e4904a8c19a@000000_oswg309851oswg830oswg554_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;其实这次上级部门发的这一纸通知以及最近几个月罗马仕充电宝发生的这一系列自燃事件，倒也给充电宝行业敲响了警钟，从罗马仕发布的公开声明当中，声称他们的产品最新的两个国标，但是这俩国标都是 2022 年才开始执行的，而罗马仕涉足充电领域已有 13 年，那么在此之前的发布的充电宝怎么说？这里面的说法可就多了去了，不得不引起重视。&lt;/p&gt;
+  &lt;p&gt;另一方面，除了罗马仕还有多个品牌的充电宝使用了安普瑞斯的电芯，具体的就不点名了，各位自己看，隔壁 Anker 已经主动召回了部分充电宝，可能也和使用的电芯有关。这么看的话，罗马仕这次事件还真的引起了充电宝行业的地震。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20250622/v2_5c14144be795436591c4056782119ba4@000000_oswg326653oswg830oswg428_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;近几年，电池电芯安全这事儿引起了极高的关注度，一方面是由于新能源电动汽车的快速普及，另一方面手机和充电宝的电池也越做越大，价格还在不断降低，可谓是内卷到了极致，这就逼的厂商不得不想方设法降低成本，这时候难免会有一些厂商受不住安全的底线，罗马仕就是其中的典型。&lt;/p&gt;
+  &lt;p&gt;最后我想说，大家在购买充电宝时不要过分贪图便宜，还是要尽量选择靠谱的大品牌。毕竟大多数人只是想买个靠谱的充电宝安安心心的用，这要求不过分吧。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;参考资料：&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;被北京多所高校禁用！罗马仕致歉，召回近50万台充电宝&lt;/p&gt;
+  &lt;p&gt;热搜第一！“多所高校禁用”？知名品牌发声明&lt;/p&gt;
+  &lt;p&gt;三星官方公布 Note 7 自燃原因：根源在于电池的设计和制造问题&lt;/p&gt;
+  &lt;p&gt;20000毫安罗马仕充电宝易爆炸，被北京多所高校禁用？公司致歉：承诺经鉴定存缺陷的产品将担责&lt;/p&gt;
+  &lt;p&gt;充电宝“潜伏”的炸弹？罗马仕49万召回顺丰菜鸟拒收你还在敢用&lt;/p&gt;
+  &lt;p&gt;多个充电宝品牌3C认证证书被暂停！涉及罗马仕、安克、绿联、倍思等&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzU2MzcyNzgzOQ==&amp;amp;mid=2247855959&amp;amp;idx=1&amp;amp;sn=f3366b68dd5453f4572d756a984860ba&amp;amp;chksm=fd6e63559dc81e8540160ccc8b5dcd108ca0d89a2ee5c1269829db372a0064e009857d6470df&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“科技狐”（ID：kejihutv）&lt;/a&gt;，作者：斐哥，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Sun, 22 Jun 2025 10:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1aYkp6U0ZVV0NYMU9RNW5ub25WY3BNY0RXWVFoeG90Sm0tVFJhbU5tVVNUY0pMbEpRdTBtOU1zRHpBbDBnNmpfZEtNQ05yZw</guid></item><item><title>5大分析师AI动向：Nvidia、Meta目标价上调；思科系统公司升级至买入评级 提供者 Investing.com - 英为财情 Investing.com</title><link>https://news.google.com/rss/articles/CBMicEFVX3lxTE9hYWdyN2draVVwSWJ5b2JOYmlhM3RoOFNOQXhPOTk0RmZWeGVXd0prYXpaS0ZFMDZVZzN2Qk9MdUZ5YzNrcGx1Y1NseTFoRXY3MW5qQ3ZBYjRpSEZNOHBSMUJ2dHB4bWRzYWxWS1B3RWg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Sun, 22 Jun 2025 10:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE9hYWdyN2draVVwSWJ5b2JOYmlhM3RoOFNOQXhPOTk0RmZWeGVXd0prYXpaS0ZFMDZVZzN2Qk9MdUZ5YzNrcGx1Y1NseTFoRXY3MW5qQ3ZBYjRpSEZNOHBSMUJ2dHB4bWRzYWxWS1B3RWg</guid></item><item><title>CS博士求职8个月0 offer，绝望转行，斯坦福入学停滞，全美仅增0.2% - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE5GSnRtNDhHZ0JDMGVyUGR1ZWNwVWIwZUtnazZFT3lsQVNlV3c2Sng3bTRzX1kzeVp4ZktGeXVKeE02eWIybDlBLWY4LUZxZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;&lt;strong&gt;计算机专业从神坛跌落？全美入学率仅增0.2%，斯坦福、杜克等顶尖高校招生大不如前。计算机博士求职8个月未果，有人狂投600份简历上岸，AI或成「就业杀手」。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;谁曾想，曾经炙手可热的计算机专业，正逐渐走向「冷门」......&lt;/p&gt;
+  &lt;p&gt;The Atlantic最新数据让人傻眼：&lt;/p&gt;
+  &lt;p&gt;今年全美计算机专业入学率仅微增0.2%，不少顶尖院校招生几乎停滞。&lt;/p&gt;
+  &lt;p&gt;过去一年，杜克大学计算机科学入门课程的报名人数，直接腰斩20%。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,392" src="https://img.36krcdn.com/hsossms/20250623/v2_4d3a4b5392af4426b7a9c7abdbc057ec@5888275_oswg91851oswg1080oswg392_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;人工智能正取代那些创造它的人&lt;/p&gt;
+  &lt;p&gt;普林斯顿大学计算机系主任Szymon Rusinkiewicz直言，照这样的趋势发展下去，两年后毕业生得缩水25%。&lt;/p&gt;
+  &lt;p&gt;曾经人人追捧的香饽饽，现在AI大佬们都在劝退：别学编程了！&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,160" src="https://img.36krcdn.com/hsossms/20250623/v2_b4327774ec4c4ab6942adf0f94da0052@5888275_oswg61568oswg1080oswg160_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这背后最大的杀手，竟是AI。&lt;/p&gt;
+  &lt;p&gt;如今，AI自动化了大量初级编程岗位，导致许多人「毕业即失业」的担忧加剧。&lt;/p&gt;
+  &lt;p&gt;纽约联邦储备银行统计显示，计算机科学已成为全美失业率第七大专业，高达6.1%。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,606" src="https://img.36krcdn.com/hsossms/20250623/v2_5c96087b4c9b4f1a97037044fd4cf9b4@5888275_oswg149189oswg1080oswg606_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;计算机科学的热潮，难道是要凉了？&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;斯坦福入学停滞，计算机专业爆冷&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;过去二十年，计算机专业被许多人奉为未来氪金的「王牌」。&lt;/p&gt;
+  &lt;p&gt;2005至2023年间，美国计算机科学专业学生数量翻了两番，高薪神话吸引无数人扎堆。&lt;/p&gt;
+  &lt;p&gt;正因如此，最新数据才显得如此惊人。&lt;/p&gt;
+  &lt;p&gt;增长0.2%入学率，几乎可以约等于0，其中许多美国高校计算机专业招生人数严重下滑。&lt;/p&gt;
+  &lt;p&gt;尤其是，公认的全美顶尖斯坦福大学，计算机专业人数在多年激增后，直接陷入停滞。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,540" src="https://img.36krcdn.com/hsossms/20250623/v2_902d5cfec1ed4eb3a9bca8b462de3c39@5888275_oswg968107oswg1080oswg540_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这波「退潮」看似突然，原因不难猜：初级程序员的就业市场，前景暗淡。&lt;/p&gt;
+  &lt;p&gt;科技行业裁员潮、招聘冻结接踵而至，罪魁祸首正是AI。&lt;/p&gt;
+  &lt;p&gt;皮尤研究中心的数据显示，美国人认为，软件工程师是生成式AI的「头号受害者」。&lt;/p&gt;
+  &lt;p&gt;事实证明，AI在写代码方面的价值，甚至超过文字创作，直接威胁到初级程序员的饭碗。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;求职八个月未果，狂投600份offer上岸&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;「AI正在完美取代那些创造它的人」。&lt;/p&gt;
+  &lt;p&gt;这句话听起来扎心，却精准概括了现状。&lt;/p&gt;
+  &lt;p&gt;田纳西大学博士生Chris Gropp的遭遇，就是一个活生生的例子。&lt;/p&gt;
+  &lt;p&gt;他手握计算机科学、数学、计算科学（computational science）三个学位，博士课程全部修完。&lt;/p&gt;
+  &lt;p&gt;然而，求职八个月，颗粒无收。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,351" src="https://img.36krcdn.com/hsossms/20250623/v2_4d9251eded99407c98496a4c0bb1e3a5@5888275_oswg67865oswg1080oswg351_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;他认识的两位成功者中，一个为40个岗位量身定制求职信、跑断腿去面试，另一个直接狂投600份简历才上岸。&lt;/p&gt;
+  &lt;p&gt;Chris苦笑道，「我身处AI革命，专攻AI技术，到头来却连一份工作也找不到」。&lt;/p&gt;
+  &lt;p&gt;两个月前，他甚至放弃毕业，改行去当电工学徒。&lt;/p&gt;
+  &lt;p&gt;Chris的困境并不是孤例，过去三年，美国22-27岁人群的总体就业率微增，但计算机和数学岗位就业率却暴跌8%。&lt;/p&gt;
+  &lt;p&gt;想当年，顶尖院校的计算机毕业生轻轻松松就拿到了谷歌、亚马逊的offer，如今却得「卷生卷死」。&lt;/p&gt;
+  &lt;p&gt;Chris的父亲、伊利诺伊大学超级计算中心主管William Gropp坦言，「他精通机器学习，却还在求职。我只能说，这行业真的变天了」。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="216,270" src="https://img.36krcdn.com/hsossms/20250623/v2_c9166616fd374873b2d43b71bfe944b9@5888275_oswg89098oswg216oswg270_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;技术人，被AI踢出局？&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;极具讽刺的是，AI抢走的不只是普通程序员的饭碗，连AI相关岗位都岌岌可危。&lt;/p&gt;
+  &lt;p&gt;普林斯顿大学Szymon一针见血，「AI提升了效率，企业自然要少招人」。&lt;/p&gt;
+  &lt;p&gt;纽约联邦储备银行上周公布的数据显示，截至3月，应届毕业生的失业率为5.8%，高于一年前的4.6%。&lt;/p&gt;
+  &lt;p&gt;从事不需要大学学位的工作的新毕业生比例，在3月达到41.2%，高于2024年同期的40.6%。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,792" src="https://img.36krcdn.com/hsossms/20250623/v2_e009e5efe3664044aa4b58a0dde2a383@5888275_oswg111079oswg1080oswg792_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;毋庸置疑，AI渗透越深的行业，失业率也就越高。&lt;/p&gt;
+  &lt;p&gt;科技巨头们已经不藏着掖着，谷歌和微软曾公开表示，AI已参与编写超25%的代码。&lt;/p&gt;
+  &lt;p&gt;几天前，微软又裁了6000人。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,719" src="https://img.36krcdn.com/hsossms/20250623/v2_4bfd333e9fb945bfb9b6c6417dd7bd48@5888275_oswg780893oswg1080oswg719_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;Anthropic高管在播客中爆料，内部资深工程师正将工作交给聊天机器人，初级员工倒不如AI去做」。&lt;/p&gt;
+  &lt;p&gt;CEO Dario Amodei甚至警告，未来5年，AI可能取代半数初级岗位。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,404" src="https://img.36krcdn.com/hsossms/20250623/v2_ba65830dfbdb46ca91988fbeed51466b@5888275_oswg286148oswg1080oswg404_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;但也有人认为，AI不该当全锅侠。&lt;/p&gt;
+  &lt;p&gt;乔治城大学教育劳动力研究中心主任Zack Mabel认为，科技行业本就周期性强，眼下高利率威胁，企业缩减招聘很正常。&lt;/p&gt;
+  &lt;p&gt;科技巨头们爱把裁员赖到AI头上，但这更多是他们自己的决策。&lt;/p&gt;
+  &lt;p&gt;AI真要引发职场大地震，还得等企业彻底消化新技术，这一步还没走远。&lt;/p&gt;
+  &lt;p&gt;计算机科学入学率向来随就业市场起伏，低谷后往往反弹更猛，像芝加哥大学目前还没掉队。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,258" src="https://img.36krcdn.com/hsossms/20250623/v2_b21818c0b7414a51b82c8125730cc79c@5888275_oswg124959oswg1080oswg258_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;MIT教授Sam Madden甚至大胆预测，即便生成式AI大行其道，软件工程师的需求可能不减反增。&lt;/p&gt;
+  &lt;p&gt;正如Reddit网友所言，AI虽自动化的简单部分，却让任务变得更加复杂——你得花一天时间，去找haystack里的那根针。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,554" src="https://img.36krcdn.com/hsossms/20250623/v2_88243bc803864c6f8ed822acf5beaf15@5888275_oswg217163oswg1080oswg554_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;专家建议：文科也是出路&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;不管这波低迷是短期的「阵痛」，还是职场大洗牌的开端，专家们给大学生的建议出奇一致：&lt;/p&gt;
+  &lt;p&gt;选择能持久培养、可迁移技能的学科。&lt;/p&gt;
+  &lt;p&gt;哈佛的研究显示，历史和社会科学专业的毕业生，长期收入可能超过工程和计算机同行，因为他们掌握了沟通、协作、批判性思维等「软技能」。&lt;/p&gt;
+  &lt;p&gt;这些，才是雇主们的「心头好」。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,720" src="https://img.36krcdn.com/hsossms/20250623/v2_3094bc1893454c4191ee65045ad6fea7@5888275_oswg828285oswg1080oswg720_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;「为学习特定技能而上学风险太高，你得攒一身能抗未来45年变革的硬本事」。&lt;/p&gt;
+  &lt;p&gt;参考资料： &lt;/p&gt;
+  &lt;p&gt;https://www.theatlantic.com/economy/archive/2025/06/computer-science-bubble-ai/683242/ &lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/2GmH4kmCe7ZxDaB8tigSXw"&gt;“新智元”&lt;/a&gt;，作者：新智元，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Sun, 22 Jun 2025 09:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5GSnRtNDhHZ0JDMGVyUGR1ZWNwVWIwZUtnazZFT3lsQVNlV3c2Sng3bTRzX1kzeVp4ZktGeXVKeE02eWIybDlBLWY4LUZxZw</guid></item><item><title>现在张嘴不说Vibe，都不适合在AI圈待了？ - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTE1LSEU4ajlwQ2NZTmExZzc1SG9rOVV4Y1p5ZjZkY0pPUTVSa21FQzh1M1BKOEhyUGFza0Fqbi10YjZtVEY1MjVVSUViS0luUQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;过去一个月，你听到了多少次Vibe？&lt;/p&gt;
+  &lt;p&gt;如果你关注AI的各种动态，那应该比你过去N年听到的次数都多。&lt;/p&gt;
+  &lt;p&gt;从Vibe Coding，再到Vibe Marketing、Vibe Investing……“Vibe”正在成为 AI 圈的一种Vibe。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="750,582" src="https://img.36krcdn.com/hsossms/20250623/v2_896f8ded0aa14712960a54eacc671ca1@5888275_oswg44395oswg750oswg582_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;有人把它当作技术普及化的福音，让普通人也能分享AI红利；也有人觉得这就是新一轮的概念包装，正在把一切产品变成一种言之无物的“小圈子黑话”。&lt;/p&gt;
+  &lt;p&gt;有人为“Vibe+一切”疯狂，坚信这代表了人机交互的下一个时代；有人已经彻底受够了这个词的满天飞，担心它正在掏空技术讨论的核心内容。&lt;/p&gt;
+  &lt;p&gt;为什么是"Vibe"这个词，成为了被集体讨论的对象？&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;Karpathy一条推文，Vibe成了热词&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;这一切都始于2025年2月，OpenAI的创始团队成员、前特斯拉AI总监Andrej Karpathy在X上的一条推文。&lt;/p&gt;
+  &lt;p&gt;他在文中描述了一种叫做"Vibe Coding"的编程新体验，"我完全沉浸在这种氛围中，享受着指数级的生产力爆炸，甚至忘了代码这回事。"通过和AI聊天，就直接完成例如"把侧边栏内边距减一半"的任务，"全部接受"AI的操作。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="750,454" src="https://img.36krcdn.com/hsossms/20250623/v2_7a3f045960de48848ebda3c4d288ebac@5888275_oswg275954oswg750oswg454_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;代码报错了，直接把error message复制粘贴扔给AI重新生成即可，"感觉我不是在写代码，我就是在看、在说、在跑、在复制粘贴，然后事情就成了。"他说。&lt;/p&gt;
+  &lt;p&gt;Karpathy的厉害之处在于，他没有整什么冰冷的技术黑话，而是选了"Vibe"这个词。&lt;/p&gt;
+  &lt;p&gt;传统的"AI Coding"这个说法本身就存在局限性——它听起来过于技术化，主要面向那些已经具备编程基础的开发者群体。而程序员群体，从来不是大众文化中的"性感"存在。&lt;/p&gt;
+  &lt;p&gt;但当Coding前加上了"Vibe"这个标签时，一切都变了。"Vibe"暗示着编程不再是一件有门槛的技术党的专利，而是一种感性、直觉的创造行为。这种表达方式，瞬间拉近了技术与大众的距离。&lt;/p&gt;
+  &lt;p&gt;这条推文最后转发破5千，点赞超2万，像在干柴上扔下了一颗火星，精准地捕捉到了一个时代的集体情绪，随后多位圈内从业者以及各大媒体开始广泛应用这一个词语。&lt;/p&gt;
+  &lt;p&gt;科技圈还给这场运动找到了完美的精神图腾——传奇音乐制作人里克·鲁宾（Rick Rubin），作为九座格莱美的得主，鲁宾却在无数采访中都坦言，自己“几乎不会乐器，也不会操作调音台”，他依靠的是对好声音的直觉，是对作品“感觉”的把握。&lt;/p&gt;
+  &lt;p&gt;一个“零技术”、纯品味，却能凭“Vibe”创造出无数行业经典的宗师——这不就是“Vibe Coding”最完美的人形化身吗？&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="716,475" src="https://img.36krcdn.com/hsossms/20250623/v2_e2ebeb5851cf42fa98ec9e1e39aeef03@5888275_oswg248302oswg716oswg475_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;一张拍摄于2016年CES展会上的宣传照被重新挖了出来，图中里克·鲁宾闭着眼睛戴着耳机，一副“用灵魂在感受”的模样，被P图、配文，成为病毒式传播的完美meme。&lt;/p&gt;
+  &lt;p&gt;甚至，前段时间里克·鲁宾真的跟Anthropic合作，出了本叫《The Way of Code》的书，这本书实际由“AI代码大师”Claude创作，把道德经的核心观点，转化为了代码之道。道家的"大道无形、无为而治、顺其自然"跟Vibe Coding的"不管过程、跟着AI走、让技术带你飞"抽象地契合在了一起。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="750,346" src="https://img.36krcdn.com/hsossms/20250623/v2_1dd6f509bac640ac989be7022ca4fbf3@5888275_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;一个Vibe Coder，似乎只需要写提示词，就可以让AI搞定一切。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;从Vibe Coding到Vibe Everything&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;如果说Karpathy点燃了导火索，那接下来发生的就是连锁爆炸。&lt;/p&gt;
+  &lt;p&gt;营销圈迅速借用了它。Flowith的CMO拐子提到，“Vibe Marketing”代表着一种全新的营销方式——抛弃传统营销那套繁琐的调研、分析、规划流程，改为依靠AI的无限火力和快速验证。&lt;/p&gt;
+  &lt;p&gt;From 拐子：&lt;/p&gt;
+  &lt;p&gt;1. 不拒绝AI生成：不再是营销团队字斟句酌地打磨每个广告词，而是让AI大量生成文案、图片、视频脚本，甚至用户画像和营销策略。&lt;/p&gt;
+  &lt;p&gt;2. 凭"感觉"选择与迭代：面对AI提供的海量选项，决策简化为让AI决策"这个感觉对了"、"这个看起来像爆款"。不深入推敲逻辑链条，而是快速上线测试。&lt;/p&gt;
+  &lt;p&gt;3. 快速响应而非深度规划：收到市场反馈时，行动往往是"复制粘贴式"调整——快速更换素材、调整出价、尝试新的AI建议，不深究根本原因。&lt;/p&gt;
+  &lt;p&gt;4. 策略的"薛定谔状态"：营销活动可能超出传统营销理论的严谨框架，甚至偏离品牌长期战略。速度和"网感"有时压倒品牌一致性。&lt;/p&gt;
+  &lt;p&gt;5. 对工具和趋势的追逐：营销人永远在追赶最新AI工具、平台算法或社媒热点，心知肚明这些"最佳实践"可能转瞬即逝。              &lt;/p&gt;
+  &lt;p&gt;“Vibe Marketing一方面让你拥有前所未有的效率魔法，但另一方面，它也让你在信息洪流和变化的工具链中晕头转向，感觉自己一直在调整、测试，却又在原地打转，创造更多'营销噪音'而非清晰的品牌价值。” 他补充分享道，“传统营销追求的是精确，而Vibe Marketing追求的是「共振」。在信息过载的今天，用户不会记住你的全部论证，但会记住你带给他们的感觉。”&lt;/p&gt;
+  &lt;p&gt;设计领域，也是如此。传统UI/UX设计需要设计师掌握色彩理论、排版原理、交互逻辑等专业知识，但"Vibe Design"试图用更直觉的方式替代这一切。&lt;/p&gt;
+  &lt;p&gt;像Lovart这样的平台让用户可以通过描述"我想要那种安静的、像SPA一样的感觉"或者"来点赛博朋克风格的酷炫感"来生成对应的界面设计，完全不需要了解什么hex色值、字体层级、响应式布局这些技术细节。用户只要能表达想要的"感觉"，AI就能把这种模糊的情感需求转化成具体的视觉呈现。&lt;/p&gt;
+  &lt;p&gt;还有内容创作领域，YouMind创始人玉伯在一次访谈中提到了"Vibe Writing"概念，他认为这代表着内容创作的范式转移。"当创作不再是为了发论文或写专业报告，而是为了跟朋友分享某个瞬间的灵感，或记录一次旅行的感受时，AI能大大'降低创作的心理门槛'。"&lt;/p&gt;
+  &lt;p&gt;一些嗅觉敏锐的创业者已经开始在社交媒体的资料里悄悄更改简介，从"Senior Developer"变成"Vibe Coder"，从"UX Designer"变成"Vibe Designer"，这种职业身份的重新包装，也反映了整个行业的微妙变化。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;迅速变成自娱自乐的“黑话”？&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;我喜欢凑热闹的编辑王兆洋也没忍住要玩这个梗，在我们昨天文章里，他“发明”了“Vibe editing ”，还说按这个圈子说法，他应该叫自己“Vibe Editing 提出者定义者概念主理人”了。&lt;/p&gt;
+  &lt;p&gt;除了想和我们的读者“会心一笑”，我们也的确觉得这词开始走向如今AI行业很多概念最终走向的方向：没有明确定义，谁都可以把它用一用。&lt;/p&gt;
+  &lt;p&gt;当任何概念被过度使用、过度解读、过度包装时，反弹几乎是必然的。对"Vibe"这个词的反思也已经开始。&lt;/p&gt;
+  &lt;p&gt;最早的批评声来自技术社区内部。资深开发者发了篇《Vibe Coding的隐性成本》，其中一句话被疯狂转发："恭喜，现在两个工程师就能产出过去五十个工程师才能写出的、同样数量的不安全、不可维护、技术债务爆表的代码了。"&lt;/p&gt;
+  &lt;p&gt;这话虽然带着明显的讽刺，但戳中了核心问题：当我们过度依赖AI生成代码时，到底是在提升效率，还是在积累风险？Delbare在文章里详细分析了几个"Vibe Coding"项目案例，发现这些项目虽然开发很快，但在长期维护、性能优化、安全审计方面都有严重隐患。&lt;/p&gt;
+  &lt;p&gt;吴恩达在2025年5月的一次AI大会上，他把"Vibe Coding"说成是"危险的误导性概念"。&lt;/p&gt;
+  &lt;p&gt;“人们以为'Vibe Coding'意味着不用动脑子就能写代码，这完全错了，”吴恩达提到，“实际上，有效指导AI编写有用软件是极其深度的智力练习，需要大量思考、监督和专业判断。当我花一整天在AI帮助下编程时，说实话，晚上我已经累得不行了。"&lt;/p&gt;
+  &lt;p&gt;更有意思的是，连"Vibe Coding"提出者Karpathy本人也开始修正自己的概念。在最近几次公开发言中，他开始推一个新概念："AI辅助编程"（AI assisted coding）。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="750,794" src="https://img.36krcdn.com/hsossms/20250623/v2_134a60443d52458ba505621a051dd144@5888275_oswg255899oswg750oswg794_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;"几天前朋友问我是不是在vibe coding，我说不，我在real coding，"Karpathy在推特上写道。在他看来，真正有效的人机协作编程需要开发者保持专业技术判断力，需要深入理解代码逻辑和架构，而不是盲目依赖"感觉"。&lt;/p&gt;
+  &lt;p&gt;这种转变很微妙但很重要。&lt;/p&gt;
+  &lt;p&gt;在国内，字节跳动技术副总裁洪定坤在火山引擎大会上提出了更有区分度的概念："用自然语言写代码"。他认为这跟"Vibe Coding"有本质区别。&lt;/p&gt;
+  &lt;p&gt;“把一切交给AI，只负责点按钮、提需求，这样做出来的程序很难维护，"洪定坤说，"用自然语言写代码不是模糊描述功能然后等结果，而是用自然语言精确描述编码逻辑和技术方案。”&lt;/p&gt;
+  &lt;p&gt;洪定坤分享了自己用Trea的体验："我提技术方案和流程时会很具体，生成的代码我也会仔细review，这样能随时接管进行人工修改。"&lt;/p&gt;
+  &lt;p&gt;从不同AI编程产品针对Vibe Coding的看法，我们也能看到它们是如何定位自己、定位用户群体和产品路线的。一些产品选择拥抱"Vibe"概念，强调易用性和降门槛；另一些产品选择跟"Vibe"保持距离，强调专业性和代码质量。&lt;/p&gt;
+  &lt;p&gt;当红杉资本在最近一份行业报告中使用"Vibe Revenue"这个词时，玩梗中也带了一些讽刺意味。这个概念专门用来形容那些主要靠市场炒作、用户好奇心和概念热度驱动，而不是真实价值创造驱动的早期收入。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;让Vibe的归Vibe&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;一个词语的流行，是时代情绪最精准的切片。在人工智能这个以精确、逻辑和算力为基石的领域，为何偏偏是“Vibe”这样一个模糊、感性甚至有些轻佻的词，成为了新的通用语？&lt;/p&gt;
+  &lt;p&gt;答案或许在于，&lt;strong&gt;“Vibe”完美地填补了当下AI发展的叙事真空。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;通用人工智能（AGI）是所有从业者和信徒心中的“星辰大海”，但它过于宏大和遥远。在日复一日的渐进式更新中，行业需要一个更触手可及、更能点燃即时兴奋感的“当下故事”。“Vibe”应运而生。它足够新鲜，足够酷，同时又足够模糊，以至于任何人都可以将自己的期待投射其中。它承诺了一条捷径，一种绕过枯燥训练、直达创作核心的魔法。&lt;/p&gt;
+  &lt;p&gt;这也揭示了“Vibe”流行的第二个秘密：&lt;strong&gt;它是一个“无定义”的开放概念，因而拥有了病毒式传播的潜力。&lt;/strong&gt; 任何可以被严格定义的概念，都会树立起认知门槛，从而限制其传播。而“Vibe”恰恰相反，它的魅力就在于其不可言说性。当你说“这个设计很有Vibe”，没有人能用逻辑反驳你，因为这关乎主观感受。这种模糊性，使其在社交媒体上畅通无阻，也成为了一种“圈内人”身份的社交货币。&lt;/p&gt;
+  &lt;p&gt;但问题也随之而来。&lt;strong&gt;一个无法被清晰定义的概念，终究无法在严肃的落地场景中成为一个可依赖的基石。&lt;/strong&gt;这个词的内涵正在被无限稀释，看起来要从一个精妙的比喻滑向行业自娱自乐的黑话。&lt;/p&gt;
+  &lt;p&gt;也许现在反而应该回到Andrej Karpathy最初提出这个概念的场景。&lt;strong&gt;“Vibe”最有效的应用，并非是让新手小白一步登天，而是让顶尖高手如虎添翼。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;人们将里克·鲁宾奉为图腾，却往往忽略了他那神乎其神的“Vibe”，根植于数十年音乐制作经验淬炼出的深刻直觉和审美判断。他的“感觉”是有根基的。同理，Karpathy能享受“Vibe Coding”带来的指数级生产力，是因为他本身就是一位顶级的AI科学家。他的“Vibe”——即他对代码架构、解决方案的高层直觉——能够精准地指导AI完成繁琐的底层执行工作。&lt;/p&gt;
+  &lt;p&gt;“Vibe”并非一种人人可得的魔法，它更像一个放大器。&lt;strong&gt;它放大的，是你已有的专业深度和认知水平。&lt;/strong&gt; 对于一个领域的专家而言，AI成为了他们生产力和经验能力的延伸，将他们的直觉（Vibe）以前所未有的速度转化为现实。而对于缺乏领域知识的人来说，所谓的“Vibe”操作，更像是在进行一场结果不可控的随机实验，产出的可能是惊喜，也更有可能是难以维护的“技术噪音”和“创意垃圾”。&lt;/p&gt;
+  &lt;p&gt;当我们讨论对AI的使用感觉时，Vibe也许是个合适的落点，但当这个词被用在描述需要更准确更可靠的交付的产品，我们就需要更严肃一些的表达了。&lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/dO7Es5Ii9BUwZ0N1cFmj7w"&gt;“硅星人Pro”&lt;/a&gt;，作者：summer，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Sun, 22 Jun 2025 09:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1LSEU4ajlwQ2NZTmExZzc1SG9rOVV4Y1p5ZjZkY0pPUTVSa21FQzh1M1BKOEhyUGFza0Fqbi10YjZtVEY1MjVVSUViS0luUQ</guid></item><item><title>具备高速L3能力！华为ADS 4将于9月底分批推送 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwR0RWTWlPbllCS0trQ2ZMQ1pYdllEOWptd3l4VHhUVHA1Y0NnaTdWa2ZSSWpramxWRDU2b1NVaVRPLWZ6N2YyajVqQjFqLXFnbk9oZEd0d3g?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;具备高速L3能力！华为ADS 4将于9月底分批推送&lt;/p&gt;
           
@@ -1603,286 +2168,4 @@ tern”的手提包由Tern公司设计，于今年2月首次亮相后迅速售�
     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 22 Jun 2025 04:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBYVTVyQ21BVlFsa2NORnpFZGZYRDJ2blRlTTFBUXpTWWRXWlVjUFphaDVwcHlZMGk0bU90cENFOUUyTFBTblBMUW9WVjhrMW5COGphREpzVnQ</guid></item><item><title>在 HDC 大会，我理解了为什么鸿蒙越来越不同了。。。 - 风闻</title><link>https://news.google.com/rss/articles/CBMiW0FVX3lxTE11aWRnWXFKTkpkcXNqWnF3VXN5V3pxZWg4blZ1UTM5U1ZxZ0syWWF5RG91bWZOTlNrYkxweTBVVWRMX20zZUdMcW8zZS1meGNkYUpoel9HUnAzb2M?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
 							&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741442.png?imageView2/2/w/500/format/png" alt="500"&gt; 这下，我们可能不得不换个态度看鸿蒙了。&lt;/p&gt;&lt;p&gt;是这么回事，这几天正好是华为开发者大会2025（HDC2025），华为在昨天的 HDC主题演讲上，公布了最新的鸿蒙 6.0 的消息。 咱也是没想到，刚发完 Pura 80 系列没几天，华子又打出了一张王炸。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741282.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不光如此，我们看往年的主题演讲上，上台分享开发的基本都是一些头部应用的代表。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741915.png?imageView2/2/w/500/format/png" alt="500"&gt; 但今年好像有点不一样，随着 HarmonyOS 6 Developer Beta 面向开发者启动报名，除了那些经常跟我们打交道的互联网企业和他们的 App 之外，我们还看到了一些之前从来没有见过的身影。&lt;/p&gt;&lt;p&gt;就拿主题演讲上上台分享的 Remy 来说，在此之前大家应该都没听说过这个应用，而这个应用实现的功能 ——拍一圈视频就能生成一个可互动的 3D 建模，更是前所未见。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741341.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;Remy会在今年第四季度在鸿蒙的 APPGallery 全球首发，在此之前还没在任何其他平台上露过脸，可以说是土生土长的鸿蒙 “ 本地人 ” 。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741855.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;除了Remy 以外呢，其实还有非常多小而美的应用，在我们不注意的时候适配了鸿蒙，光是我记得住名字的就有 Arrrt 、示路、快手笔等等。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741590.png?imageView2/2/w/500/format/png" alt="500"&gt; 它们有的之前已经在别的系统适配，如今选择加入鸿蒙；有的来自自学编程5年的飞机放行工程师自主开发；有的甚至出自医生+码农的夫妻档之手。&lt;/p&gt;&lt;p&gt;所有这些小而美的应用，加上从去年开始就陆陆续续登录鸿蒙的一些主流应用，构成了丰富的鸿蒙应用生态，看着这个生态，托尼忍不住去想：现在的鸿蒙好像确实跟之前刚出来时不太一样了，大家对它的态度也在悄悄发生变化——&lt;/p&gt;&lt;p&gt;&lt;strong&gt;今年的鸿蒙生态，&lt;/strong&gt;&lt;strong&gt;早&lt;/strong&gt;&lt;strong&gt;已&lt;/strong&gt;&lt;strong&gt;不是“有没有”的&lt;/strong&gt;&lt;strong&gt;事儿了，大家好像更好奇的是上了鸿蒙之后，应用们到底有没有玩出点不一样的？&lt;/strong&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741271.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;据我观察，在即将到来的鸿蒙 6.0 上，不管是刚刚聊到的小应用，还是小红书、钉钉、哔哩哔哩这些头部的应用，它们身上的鸿蒙特色越来越明显了。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741707.png?imageView2/2/w/500/format/png" alt="500"&gt; 就拿之前刷爆社交平台的碰一碰功能来说吧，刚出来时，我们原本以为只是鸿蒙自带的应用会用，没想到短时间内就有超过 50 个三方应用跟进适配了。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741830.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;昨天华为何刚在主题演讲上提到的碰一碰升级，今天到 HDC 展区一看，有不少应用已经适配上了。&lt;/p&gt;&lt;p&gt;比如小红书，在用碰一碰分享笔记时，整个分享卡片比鸿蒙 5 上的看上去更精致了。&lt;/p&gt;&lt;p&gt;左图为鸿蒙5 碰一碰分享卡片，右图鸿蒙 6 碰一碰卡片&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080741230.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;至于碰一碰的另一个更新 “ 一发多收 ”，也被许多应用支持了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080742881.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这个碰一碰还能把大家拉进同一个游戏房间里，好友迅速搓一局也是很方便了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080742719.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而在另一头，剪映这些强调生产力的应用，则是把碰一碰刚刚支持上的跨设备新特性给拿了过来。&lt;/p&gt;&lt;p&gt;在鸿蒙 6.0 上，你如果想要把手机上的照片和视频素材插入到电脑上的剪映里，只需要将手机对准电脑屏幕上的剪映素材箱 —— &lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080742590.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080742941.png?imageView2/2/w/500/format/png" alt="500"&gt; 当当~ 这样就能触发碰一碰了，再滑一下素材自己就过去了。&lt;/p&gt;&lt;p&gt;至于主题演讲上展示的非常酷炫的多窗口碰一碰，我们也试过了，同时在电脑上打开多张照片的情况下，真的就是手机碰到哪张就 “ 吸 ” 哪张，准确度高到吓人。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080742978.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;说到了好玩，当然也少不了这两年大家一直都在聊的智能。在上一个阶段，会发现鸿蒙花非常大的力气在讲自己的智能体，也就是大家比较熟悉的小艺。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080742483.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而在昨天的 HDC 主题演讲上，鸿蒙干脆换了个思路：讲智能体嘛，老是让小艺在上头唱独角戏多没意思，干脆我发一个鸿蒙智能体框架，伙伴们就在这个框架的基础上，也来鸿蒙上整一些自己的智能体行不行？&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080742734.png?imageView2/2/w/500/format/png" alt="500"&gt; 一开始托尼以为所谓的伙伴自己的智能体，会像在安卓和 iOS 上一样，每个应用自己做完了就放到自己的搜索框里，或者单独做一个卡通形象入口，给到用户进行问答互动。&lt;/p&gt;&lt;p&gt;直到今天，到了展台体验才发现，完全不是那么回事。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080744898.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;就拿首批尝鲜小艺智能体，昨天主题演讲也有上台分的微博智能体来说，用户如果想知道一个话题在微博上的讨论情况，只需要长按导航条唤出小艺，直接提问微博上的情况就可以了，小艺会自动帮你调用微博的智能体来回答。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080743426.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;除了微博之外，还有深航、喜马拉雅等等三方应用，都适配了鸿蒙智能体框架。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080744515.png?imageView2/2/w/500/format/png" alt="500"&gt; 所以大家应该也能反应过来了，到了鸿蒙 6.0 上，小艺会变得越来越像一个随手可得的 AI 公共平台，而各个伙伴自己的智能体，就更像是这个平台上的插件，用来应对具体的应用场景。&lt;/p&gt;&lt;p&gt;谷歌和苹果对于终端 AI 的思考还停留在 Google IO、WWDC 的宣传片当中，而鸿蒙则是没跟你扯那么多有的没的，直接把厂商拉了过来，跟大家讲 “我们具体是怎么把这个功能做成的”。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080744839.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;在分享完这些新奇有趣的东西之后，我们再来看一个更加直观的。&lt;/p&gt;&lt;p&gt;相信不少在用 HarmonyOS 的差友，一开始都是被它流畅的动画和细腻灵动的画面给吸引的，这方面托尼也特地留意了下鸿蒙6的情况，还真被我发现了不少新东西。&lt;/p&gt;&lt;p&gt;相信大家都听说过 HDR，这东西用大白话来讲就是将画面里原本暗的地方，变得更暗，亮的地方变得更亮。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080744241.png?imageView2/2/w/500/format/png" alt="500"&gt; 这么做的目的其实无非就是让画面变得更加透亮，现在很多小伙伴相册里的照片应该都是 “自带发光” 的，看着很好看。&lt;/p&gt;&lt;p&gt;之前HDR 更多都是用在照片和视频上，但是 HDR 的直播你们听说过吗。。。&lt;/p&gt;&lt;p&gt;这第一个吃上螃蟹的还是我们的老朋友B站。。。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080745248.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;我们从 HDC 展区展出的讲解内容里了解到，借助鸿蒙提供的 Camera Kit 工具，B站可以直接在华为手机、平板等多个设备上快速调用相机，获得保留高光和阴影细节的原始视频流。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080745913.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而鸿蒙提供的另一个负责视频流编解码的工具 AVCodec Kit 能够帮助 B 站这样的直播平台尽可能地把 HDR 视频流压缩得小一点，让整个直播过程不至于占用太大的网络带宽。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080745993.png?imageView2/2/w/500/format/png" alt="500"&gt; 就目前了解到的消息来看，后面会有更多的平台像 B 站一样通过鸿蒙提供的这套工具，吃上更多 HDR 内容。&lt;/p&gt;&lt;p&gt;当然啦，我们在展区现场其实也体验到了很多其他应用，基于这些鸿蒙特性开发出来的好玩又好用的功能，比如鸿蒙设备彼此之间的应用接力。。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080747683.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;还有钉钉的最新隐私安全保护——&lt;/p&gt;&lt;p&gt;这东西直接把华为手机上那套防窥屏机制给搬过来了，只要应用识别到不是机主本人在，就不会展示钉钉聊天记录等等这些隐秘的信息。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080747207.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不管怎么样，看托尼说了这么多，大家应该已经感觉到了，相比起去年鸿蒙5 发布的时候，现在的鸿蒙生态里系统跟应用之间的羁绊明显变得更深了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080747267.png?imageView2/2/w/500/format/png" alt="500"&gt; 事实上，就这回HDC 主题演讲上透露的数据来看，事情的确在往这个方向发展：目前已经累计有9000多个应用参与了70多种系统级创新体验的联合打造。&lt;/p&gt;&lt;p&gt;可以说是操作系统与应用生态史上最大规模的一次联合创新了。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080748938.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;到今天，已经有40多款华为终端产品搭载鸿蒙5，系统功能更新260多项。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080748868.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而随着这些应用在鸿蒙上扎根、生长、开花、结果，鸿蒙也逐渐从当初冲锋陷阵开疆扩土的马车，转变成给开发者、普通用户提供舒适旅程体验的快速列车。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080748350.png?imageView2/2/w/500/format/png" alt="500"&gt; 作为一个鸿蒙的重度用户，托尼对这个过程最明显的一个感知就是，我从鸿蒙上获得的体验就像是个微笑型的曲线——&lt;/p&gt;&lt;p&gt;刚入坑的时候感觉眼前一亮，好像从系统动画到应用切换，一切都很丝滑；使用一段时间发现有不少地方还是需要自适应的，需要不断给提改进意见，到现在随着鸿蒙设备越来越多，各种应用的完善度越来越好，越能感受到鸿蒙的魅力。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080749135.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;你要问我现在的鸿蒙是不是已经完美了？那我肯定要说还不到那个程度。&lt;/p&gt;&lt;p&gt;鸿蒙现在展现出来的更像是昨天余承东在 HDC 主题演讲上说的那样，它不是烟花式的瞬间爆发，而是一种持续生长生命力。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080749654.png?imageView2/2/w/500/format/png" alt="500"&gt; 这也是为啥每隔一段时间，托尼就会想跟大家分享一下鸿蒙最近状态的原因。&lt;/p&gt;&lt;p&gt;越来越多的例子证明，对于鸿蒙这列快车来说，速度往往只是一方面。能够一直前进，给“ 车内 ”的开发者和用户，提供更多舒适和富有新意的可能性，没准才是一个系统和一个生态保持活力的关键。&lt;/p&gt;&lt;p&gt;这或许也是这次 HDC 想要传达出来的核心理念之一。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;图片、资料来源&lt;/strong&gt;：&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622080749456.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;													&lt;/div&gt;
 						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Sun, 22 Jun 2025 04:15:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE11aWRnWXFKTkpkcXNqWnF3VXN5V3pxZWg4blZ1UTM5U1ZxZ0syWWF5RG91bWZOTlNrYkxweTBVVWRMX20zZUdMcW8zZS1meGNkYUpoel9HUnAzb2M</guid></item><item><title>这几年，高薪专业有啥变化：工科包揽前十，信息安全专业稳居首位 - 风闻</title><link>https://news.google.com/rss/articles/CBMiW0FVX3lxTE5JSUR6a2VVbVVUb0NBOVY5OUxtWTFER3h5RzhfOWIzZzRROHhNaEdNcGlTa3dKYXRkNXlxXzFJWDdEQkZkM0hwNGJGdEZuTUxJR05GYWVHSDNjVUk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
-							&lt;p&gt;作为应届生，哪些专业入行收入最高？&lt;/p&gt;&lt;p&gt;近日，教育数据咨询和评估机构麦可思发布2025年版就业蓝皮书，公布2024届本科毕业生月收入前十的专业排行。&lt;/p&gt;&lt;p&gt;这些专业由高至低排序为：信息安全、微电子科学与工程、电子科学与技术、自动化、软件工程、材料成型及控制工程、光电信息科学与工程、电子信息科学与技术、机械设计制造及其自动化、机械电子工程。&lt;/p&gt;&lt;p&gt;这十个专业月收入在7018元~7599元不等，超越其统计本科毕业生平均月收入水平——6199元。&lt;/p&gt;&lt;p&gt;和国家统计局每年公布的城镇单位年平均工资数据不同，麦可思每年发布的就业蓝皮书主要统计上年应届毕业生从业初期的薪酬。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622093546364.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p align="center"&gt;图源：图虫创意&lt;/p&gt;&lt;p&gt;从学科门类看，上述十大高薪专业均为工学类专业，兼具高壁垒、强实践、政策红利三重属性，且与现阶段我国产业发展重心相关。&lt;/p&gt;&lt;p&gt;不过正如产业是持续演化和动态发展的，高薪专业排行也在发生变化。&lt;/p&gt;&lt;p&gt;时代周报记者梳理发现，过去十年共计24个专业进入过十大高薪排行，其中信息安全每年都是高薪榜第1名。&lt;/p&gt;&lt;p&gt;&lt;b&gt;工学包揽前十&lt;/b&gt;&lt;/p&gt;&lt;p&gt;普通高等学校本科一般有12个学科门类：哲学、经济学、法学、教育学、文学、历史学、理学、工学、农学、医学、管理学、艺术学。&lt;/p&gt;&lt;p&gt;其中的工学包揽了前述十大高薪专业。麦可思分析指出，这些高薪专业以解决短板技术（芯片、信息安全）和支撑产业升级（智能制造、新能源）为目标，兼具高壁垒、强实践、政策红利三重属性。&lt;/p&gt;&lt;p&gt;若以学科门类为单位进行比较。麦可思指出，工学2024届毕业生的月收入达到6841元，反映出高端制造、信息技术等领域的薪资竞争力较强。&lt;/p&gt;&lt;p&gt;其后是经济学（6280元）、理学（6115元）、管理学（6075元）。其中金融领域整体薪资水平相对较高；教育学毕业生的月收入相对较低，2024届为5085元，这与教育领域初始薪资水平相对较低有关。&lt;/p&gt;&lt;p&gt;而这也是麦可思每年发布的就业蓝皮书的一个特点，主要体现应届生从业初期的收入状况。这与国家统计局每年发布的城镇单位年平均工资在统计对象上有所差异，后者在统计对象选取上不限学历也不限从业年限。&lt;/p&gt;&lt;p&gt;进一步说。从概念上，专业通常指的是高等教育中的某一学科领域，而行业指的是社会上的产业领域和经济部门。同一专业毕业生可以进入不同行业工作，同一个行业也需要吸纳不同专业人员实现发展。不过一些专业因其技能与特定行业需求高度匹配，形成了强关联，故两者在薪酬高低排序上具有较大契合。&lt;/p&gt;&lt;p&gt;对照来看，今年5月国家统计局发布的《2024年城镇单位就业人员年平均工资情况》显示，去年最挣钱的三个行业为：信息传输、软件和信息技术服务业，金融业，科学研究和技术服务业。&lt;/p&gt;&lt;p&gt;而上述十大高薪专业学生的就业去向，大都是信息传输、软件和信息技术服务业和科学研究和技术服务业两个高薪行业。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622093546138.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p align="center"&gt;图源：图虫创意&lt;/p&gt;&lt;p&gt;除了金融业。麦可思指出，国家统计局的数据中，其金融业平均工资是涵盖中高层的，但金融学应届毕业生进入金融业多从事基层岗，且金融业薪资结构较复杂，包括绩效奖金等，这些福利体现在应届生薪酬中则相对较低。&lt;/p&gt;&lt;p&gt;高薪专业和高薪行业名单，也是我国现阶段产业发展重心的体现。&lt;/p&gt;&lt;p&gt;华东师范大学城市发展研究院院长曾刚对时代周报记者指出，作为第四次工业革命的重点产业，信息技术是国际竞争的关键领域，也是我国战略性新兴产业、未来产业，正处于收益高、前景好的发展阶段，具有庞大的市场前景和政策层面的支持，加之从业门槛颇高，不仅常年坐稳高薪专业前列，行业也长居高位。&lt;/p&gt;&lt;p&gt;&lt;b&gt;变与不变&lt;/b&gt;&lt;/p&gt;&lt;p&gt;过去十年，高薪专业排行发生了什么变化？其中的变与不变，对个体选择有何启示？&lt;/p&gt;&lt;p&gt;麦可思提供的2016-2025年高薪专业榜单显示，近十年共计24个专业进入过该排行，其中软件工程和信息安全专业连续十年进入本科生起薪前10，且信息安全每年都是第1名。&lt;/p&gt;&lt;p&gt;过去十年多次入围十大高薪专业排行的还有：电子科学与技术（9次）、网络工程（8次）、物联网工程（8次）、信息工程（8次）、计算机科学与技术（7次）、微电子科学与工程（5次）。&lt;/p&gt;&lt;p&gt;而且，入围的24个专业中，23个都属于工学。&lt;/p&gt;&lt;p&gt;有趣的是，属于文科范畴的法语共计入围4次，且连续分布在2016年-2019年，这与中非在商贸和建设等领域逐渐深化合作有一定关系。&lt;/p&gt;&lt;p&gt;文科专业在高薪榜的竞争力不足，只是文科在就业市场式微的一个缩影。&lt;/p&gt;&lt;p&gt;近年来，诸多文科专业在舆论场被冠以“天坑专业”的名号，高校文科专业裁减，文科生就业难、薪酬整体偏低等现象普遍。&lt;/p&gt;&lt;p&gt;《21世纪经济报道》也在近期发文表示，之前我国在扩大招生中增加的文科专业过多、质量不高，现阶段文科生就业难度加大、市场需求缩小的情况确实存在。但并不意味着“文科无用”。相反，制造业转型升级，服务业在经济当中占比持续提高，全民综合素质的培育，乃至政府的管理和决策，文科在其中都发挥关键作用。&lt;/p&gt;&lt;p&gt;更有建设性的认识是，现阶段的文科教育已经亟待提质以适应社会需求，以及探索跨界融合发展。&lt;/p&gt;&lt;p&gt;另一方面，计算机科学与技术在2016年-2022年连续7年进入十大高薪专业阵营，且名次均处于前六位，但最近三年来年逐渐下滑。&lt;/p&gt;&lt;p&gt;麦可思对此表示，该专业毕业生薪资增长放缓是行业转型、供需失衡、技术迭代、经济环境及教育仍旧偏传统等多重因素叠加的结果。&lt;/p&gt;&lt;p&gt;而整个计算机市场也大致如此，作为一个大类专业兴盛多年，但随着产业向前发展，部分领域出现技术替代或供给过剩面临淘汰压力，如早期炙手可热的基础编程岗位，伴随着ai工具逐渐成熟、可以执行基础编程任务，加之早年激增的报读人群迈向就业市场，供给庞大但需求缩减，故行业近年裁员、降薪力度颇大。&lt;/p&gt;&lt;p&gt;而由计算机衍生出的人工智能产业，成为现阶段经济发展的“关键词”之一，算法工程师、大模型训练师、大数据工程师等成为炙手可热的职业。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/06/22/20250622093546582.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p align="center"&gt;今年来，人工智能热潮涌动 图源：图虫创意&lt;/p&gt;&lt;p&gt;从行业视角而言，最挣钱的领域也一直在变化。&lt;/p&gt;&lt;p&gt;时代周报记者梳理国家统计局数据发现，2015年及以前，金融业长居高薪行业榜首，不过2016年开始，信息传输、软件和信息技术服务业取代金融业来到第一，并持续至今。&lt;/p&gt;&lt;p&gt;若把时间继续拉长。曾刚指出，过去几十年，从房地产，金融业，再到现在的信息技术，最挣钱的领域一直在发生变化。&lt;/p&gt;&lt;p&gt;“一直以来，学生及家长不论选择专业还是就业，一个重要考虑因素就是就业待遇。但要同时考虑到，时代和产业的发展不是线性的，同一个行业在不同发展阶段，所需要的人才数量和结构也会发生变化。”&lt;/p&gt;&lt;p&gt;记者丨曾思怡&lt;/p&gt;&lt;p&gt;编辑丨 黎  广&lt;/p&gt;&lt;p&gt;运营丨   珂  &lt;/p&gt;&lt;p&gt;&lt;strong&gt;-END-&lt;/strong&gt;&lt;/p&gt;													&lt;/div&gt;
-						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Sun, 22 Jun 2025 03:56:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE5JSUR6a2VVbVVUb0NBOVY5OUxtWTFER3h5RzhfOWIzZzRROHhNaEdNcGlTa3dKYXRkNXlxXzFJWDdEQkZkM0hwNGJGdEZuTUxJR05GYWVHSDNjVUk</guid></item><item><title>尽管遭美国攻击 伊朗誓言不会放弃核项目 - 8world</title><link>https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRTc5SWdyU01GVXRzcFZudDFtLXV4Q09rVk1OTG55by1hWXRCMHlCQ2JVeHZ2bUNXRElSclFjWGtYdUZTOHBRTDJpR3BwUDA4UTJlNWRMalMzcnVOUU5kWm9BaU9RSVo1T2FxQmdGT0ZqRXYtTFp6OElxeTRuMVM2SzR3TWdmUHFv?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;尽管受到美国的攻击，但伊朗誓言，不会放弃核项目。&lt;/p&gt;&lt;p&gt;伊朗原子能机构在声明中指出，将会继续进行核项目，承诺不会让由核烈士鲜血凝聚成的核工业的发展道路被阻断。&lt;/p&gt;&lt;p&gt;伊朗原子能机构也指责美军攻击伊朗核设施的行动是“野蛮行为”，公然违反国际法，尤其是《不扩散核武器条约》，同时指控国际原子能机构是“共谋”。&lt;/p&gt;&lt;p&gt;伊朗原子能机构敦促国际社会支持伊朗，并对美国发出谴责。&lt;/p&gt;&lt;/div&gt;
-      
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world</author><pubDate>Sun, 22 Jun 2025 03:39:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiiAFBVV95cUxQRTc5SWdyU01GVXRzcFZudDFtLXV4Q09rVk1OTG55by1hWXRCMHlCQ2JVeHZ2bUNXRElSclFjWGtYdUZTOHBRTDJpR3BwUDA4UTJlNWRMalMzcnVOUU5kWm9BaU9RSVo1T2FxQmdGT0ZqRXYtTFp6OElxeTRuMVM2SzR3TWdmUHFv</guid></item><item><title>网上垃圾信息太多了！马斯克刚刚宣布一件大事：Grok 4将重写人类所有知识库 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE52LWplMXRKZ1gxNWp0aXBhR2ZLV3NsUGpYeDBwRUpVSm5KQ19QVlRzdHNHZElieDJkOFRFdnFBOXIxNlhlbzVyaVRxWDZ0a1F4enVqOC1CdTg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月22日消息，马斯克刚刚宣布了一件大事——将重写人类整个知识库。&lt;/p&gt;
-&lt;p&gt;今日，埃隆·马斯克在X社交平台上放话，&lt;span&gt;&lt;strong&gt;将用新一代大模型Grok 3.5（或许直接叫Grok 4）重写整个人类知识库，添加缺失信息，删除错误内容，然后基于这个“纯净版”知识库重新训练模型。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“在任何基于未修正数据训练的基础模型中，都有太多的垃圾。”&lt;/strong&gt;马斯克说。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250622/85eead4350b24b07ba829063c1f370a7.jpg" target="_blank"&gt;&lt;img alt="网上垃圾信息太多了！马斯克刚刚宣布一件大事：Grok 4将重写人类所有知识库" h="484" src="//img1.mydrivers.com/img/20250622/s_85eead4350b24b07ba829063c1f370a7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;坦白说，马斯克想让Grok成为人类知识的审核员和补全者。&lt;strong&gt;据悉，新一代Grok拥有高级推理能力，能够识别知识库中的错误和缺失。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;简单来说，&lt;strong&gt;就是要让AI当知识界的福尔摩斯，通过蛛丝马迹找出人类知识体系中的漏洞。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当前，AI正在以前所未有的速度进入人们的日常生活和工作。但你有没有发现，当你在使用AI时候，它会胡编乱造，凭空捏造细节？&lt;/p&gt;
-&lt;p&gt;我们在《&lt;a class="f14_link" href="https://news.mydrivers.com/1/1034/1034293.htm" target="_blank"&gt;DeepSeek的胡编乱造正淹没互联网：真实性是当下AI最大的槽点&lt;/a&gt;》一文中就曾说过，AI为了迎合你的要求，会自己加戏，从而凭空想象出很多不存在，或者还未发生的细节，直接当成真实事件嵌入到文章里。&lt;/p&gt;
-&lt;p&gt;而如果一旦这样的内容多了，这些看似真实的内容甚至会被AI重新咀嚼回去训练，再被下一次输出时引用。&lt;/p&gt;
-&lt;p&gt;这时候，真真假假就更难以分辨了。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250622/b0bcddf39c9c4ea995d2cfa9cba99047.jpg" target="_blank"&gt;&lt;img alt="网上垃圾信息太多了！马斯克刚刚宣布一件大事：Grok 4将重写人类所有知识库" h="387" src="//img1.mydrivers.com/img/20250622/s_b0bcddf39c9c4ea995d2cfa9cba99047.jpg" w="508"&gt;&lt;/a&gt;&lt;/p&gt;
-
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 22 Jun 2025 03:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE52LWplMXRKZ1gxNWp0aXBhR2ZLV3NsUGpYeDBwRUpVSm5KQ19QVlRzdHNHZElieDJkOFRFdnFBOXIxNlhlbzVyaVRxWDZ0a1F4enVqOC1CdTg</guid></item><item><title>微星官方确认！B850 MPOWER主板三季度推出：专注超频 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0SGRMaWVlOHNBVkRHaFF2SUU0Ni0zX0d1djZlV092N0UxNnFveEZrRXk4VWFpeEtXZWZudklSdy1Ud3hnSm1JTlhiM2dBcDZfXzNiVkRrLVc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;微星官方确认！B850 MPOWER主板三季度推出：专注超频&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-06-22 11:31:15  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1055254-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月22日消息，&lt;span&gt;&lt;strong&gt;微星宣布，其专为超频爱好者设计的B850 MPOWER主板将于2025年第三季度推出。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;在年初的国际电脑展上，微星就已展出了这款主板，采用mATX规格，配备AM5插槽，延续了经典的黑色与黄色配色方案，还舍弃了RGB灯效，专注于超频性能的提升。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250622/74d7d9e7-407d-4e0e-b77e-116adcb94bd9.jpg" target="_blank"&gt;&lt;img alt="微星官方确认！B850 MPOWER主板三季度推出：专注超频" h="450" src="//img1.mydrivers.com/img/20250622/S74d7d9e7-407d-4e0e-b77e-116adcb94bd9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;主板拥有两个内存插槽，有助于提高内存信号质量和超频潜力，微星声称该主板支持最高128GB的DDR5内存。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此外，主板还配备了三个M.2插槽，其中一个位于内存旁边，另外两个位于一个大型被动散热器下方。&lt;/p&gt;
-&lt;p&gt;微星还为该主板配备了EZ Dashboard模块，集成了电源、重置、清除CMOS按钮和调试LED，简化了重启和测试流程，为更强的超频设置而设计。&lt;/p&gt;
-&lt;p&gt;在国际电脑展商，微星超频团队使用该主板打破了多项世界纪录，其中锐龙5 9600X被超频至7.385GHz，锐龙7 9700X被超频至7.294GHz。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="微星官方确认！B850 MPOWER主板三季度推出：专注超频" h="400" src="//img1.mydrivers.com/img/20250622/fc08422a-2d56-4b41-a066-70878737c2df.jpg" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 22 Jun 2025 03:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA0SGRMaWVlOHNBVkRHaFF2SUU0Ni0zX0d1djZlV092N0UxNnFveEZrRXk4VWFpeEtXZWZudklSdy1Ud3hnSm1JTlhiM2dBcDZfXzNiVkRrLVc</guid></item><item><title>伊朗再袭以色列 启动新一轮导弹与无人机攻势 - 联合早报</title><link>https://news.google.com/rss/articles/CBMib0FVX3lxTE5NbTdtWXZWYmZBVldtNmNtdWZYQVI2SUZWYTZqV290Q3RHSW5XSkQ2NGZVT3FxRWVZcDBvTWVqZ0RRUWdDOG1IcjJsOHBIZVp3bmlFcVJVaHlqdzRKcHpEckhwWWVGWldXeU1xVExwaw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-content-inactive text-label2 leading-[26px] lg:flex lg:flex-wrap"&gt;&lt;div class="w-full pb-[16px] lg:w-6/12 lg:px-[16px] lg:pb-0 lg:pl-0"&gt;&lt;p class="text-label4 text-secondary-inverse"&gt;MDDI (P) 042/10/2024, MDDI (P) 043/10/2024&lt;br&gt;新报业媒体有限公司版权所有（公司登记号：202120748H）&lt;br&gt;在中国的用户请游览 &lt;a class="cursor-pointer touch-auto text-link-on-dark-default hover:text-link-on-dark-hover" aria-label="zaobao.com" rel="" href="https://www.zaobao.com" target="_blank"&gt;zaobao.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="w-full lg:w-6/12 lg:px-[16px] lg:pr-0 "&gt;&lt;p class="text-label4 text-secondary-inverse"&gt;提醒：新加坡网络业者若未经许可，擅自引用本网内容将面对法律行动。&lt;/p&gt;&lt;p class="text-label4 text-secondary-inverse"&gt;第三方公司可能在早报网站宣传他们的产品或服务。不过您跟第三方公司的任何交易与早报网站无关，早报将不会对可能引起的任何损失负责。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Sun, 22 Jun 2025 02:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTE5NbTdtWXZWYmZBVldtNmNtdWZYQVI2SUZWYTZqV290Q3RHSW5XSkQ2NGZVT3FxRWVZcDBvTWVqZ0RRUWdDOG1IcjJsOHBIZVp3bmlFcVJVaHlqdzRKcHpEckhwWWVGWldXeU1xVExwaw</guid></item><item><title>刚刚，全线暴跌！特朗普：已彻底摧毁！ - 新浪财经</title><link>https://news.google.com/rss/articles/CBMigAFBVV95cUxQenZoZHlWMkh0U2hWZ21sZG5lVElKcUVxY1V4OVVwa2VoSG1LZkFvVWc4azJfRTl3d2JRZ1lNR2JDVWtzTUpHMllpSEJoczRaR2lFd25MaVNZM0Zmano1ZGtxV205djFONmlaMW9wLU1TZXM0ZTkwckFRTW9DdjhqeQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-                    &lt;blockquote&gt;&lt;p&gt;　　炒股就看&lt;a href="https://finance.sina.com.cn/stock/reportch/jinqilin.shtml" target="_blank"&gt;金麒麟分析师研报&lt;/a&gt;，权威，专业，及时，全面，助您挖掘潜力主题机会！&lt;/p&gt;&lt;/blockquote&gt;		&lt;p&gt;　　&lt;font cms-style="color0"&gt;中东紧张局势，火速升级！&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="strong-Bold"&gt;据最新消息，伊朗伊斯兰革命卫队称，将打击美国在中东地区的所有利益。此前，美军在对伊朗福尔道核设施的袭击中投下6枚钻地弹，还向伊朗其他核设施发射了30枚“战斧”导弹。随后，以色列升级全国戒备状态。&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="color210"&gt;在上述背景下，市场避险情绪急速升温，投资者纷纷抛售风险资产。加密货币集体暴跌，截至记者发稿时，以太坊跌超7%，艾达币、狗狗币跌超6%，Solana跌4.63%，XRP跌近4%，BNB跌2.50%，比特币跌1.36%。coinglass数据显示，过去24小时内，加密货币全网爆仓人数超过17万人，爆仓金额达到6.75亿美元，其中近九成为多单爆仓。&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;　　据美联社报道，美国空袭伊朗核设施后，纽约市警方表示，出于“高度谨慎”，他们正在加强宗教、文化和外交场所的安保。据报道，纽约警察局表示，他们正在跟踪情况，与联邦执法机构协调，并将继续监测此事对美国最大城市的任何潜在影响。&lt;/p&gt;
-&lt;p cms-style="color0"&gt;　　特朗普发表全国讲话&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="color210"&gt;据央视新闻消息，美国东部时间21日22时，美国总统特朗普就袭击伊朗核设施发表全国讲话。特朗普称，伊朗关键的核设施已被“彻底摧毁”。&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　特朗普表示，美国和以色列作为一个团队进行了密切合作。如果伊朗不能实现和平，美国会继续攻击。他还表示：伊朗要么会有和平，要么会有悲剧，这比我们过去八天看到的要大得多。&lt;/p&gt;
-&lt;p&gt;　　特朗普在讲话中警告伊朗称，伊朗不仅对以色列构成威胁，也对美国构成威胁。特朗普称，美国可以在几分钟内精确、快速、熟练地打击其他目标。&lt;/p&gt;
-&lt;p&gt;　　特朗普在讲话中还向以色列总理内塔尼亚胡表示感谢：我要感谢并祝贺比比·内塔尼亚胡总理。我们作为一个团队合作，这可能是以前从未有过的，我们在消除对以色列的可怕威胁方面取得了长足进展。&lt;/p&gt;
-&lt;p&gt;　　特朗普称，美军参谋长联席会议主席凯恩以及美国国防部长赫格塞思将于美国东部时间22日上午8时举行新闻发布会。&lt;/p&gt;
-&lt;p&gt;　　此前，美军空袭了伊朗的核设施。据美国福克斯新闻网站21日报道，美军在对伊朗福尔道核设施的袭击中投下6枚钻地弹，还向伊朗其他核设施发射了30枚“战斧”导弹。美国总统特朗普当天在社交媒体上发帖称：“福尔道已不复存在。”&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="color210"&gt;另据美国哥伦比亚广播公司报道，知情人士透露，美国已通过外交途径与伊朗取得联系称，此次袭击完全是美国的计划，但伊朗政权更迭行动并非美国的目标。据称美国预计不会发动后续袭击，但已准备好对伊朗的任何报复性袭击做出回应。&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　以色列国防军22日在社交媒体上发表声明说，基于当前局势，决定当日起立即调整本土守备司令部指令，升级全国戒备状态。&lt;/p&gt;
-&lt;p&gt;　　声明说，经国防部长卡茨批准，基于当前局势评估，以军决定从当地时间22日3时45分起，立即调整本土守备司令部指令。调整内容包括，将全国所有地区由“部分限制活动”状态升级为“必要活动”状态。新指令包括：禁止教育活动、聚集性活动及非必要行业运营。&lt;/p&gt;
-&lt;p cms-style="color0"&gt;　　伊朗回应：美军中东军事基地人员都是合法打击目标&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="color210"&gt;美国媒体认为，美国直接打击伊朗核设施标志着中东局势升级，可能引发伊朗方面对该地区美军人员和军事设施的报复。&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　当地时间6月21日，一名美国官员称，如果美国加入以色列对伊朗的战争，伊朗准备袭击美国在中东的军事基地和装备。&lt;/p&gt;
-&lt;p&gt;　　另据美国有线电视新闻网同日报道，伊朗官员证实了伊方有这一打算。此外，一伊朗国家电视台评论员表示，美军在中东军事基地的每个美国公民或军人现在都是伊朗合法的目标。&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="color210"&gt;另外，当地时间21日，也门胡塞武装发言人叶海亚·萨雷亚在该组织控制的马西拉电视台发表声明说，如果美国对伊朗发动攻击，该组织将袭击红海海域的美国军舰和船只。&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　当地时间21日，美国总统特朗普在其社交媒体“真实社交”上发文称，美国已完成对伊朗福尔多、纳坦兹和伊斯法罕三处核设施的袭击。一名以色列高级官员称，美国在打击伊朗核设施前通知了以色列。&lt;/p&gt;
-&lt;p&gt;　　据伊朗塔斯尼姆通讯社22日报道，伊朗库姆省灾害管理部门负责人当天说，位于库姆省的福尔道核设施部分区域遭到“敌方空袭”。&lt;/p&gt;
-&lt;p cms-style="color0"&gt;　　联合国秘书长：深感震惊&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="color210"&gt;据@CCTV国际时讯，当地时间6月21日，在美军对伊朗发动军事打击后，联合国秘书长古特雷斯通过发言人发表紧急声明，表示对此举“深感震惊”，并警告称，这一危险升级行为可能令本已紧张的地区局势全面失控。&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　古特雷斯指出，这场冲突若持续升级，将对中东平民、地区稳定乃至全球安全造成“灾难性后果”。他敦促所有会员国“采取降级措施”，并强调在任何情况下都必须遵守《联合国宪章》和国际法。&lt;/p&gt;
-&lt;p&gt;　　古特雷斯强调，“在这危急关头，必须避免陷入混乱的恶性循环。军事手段不是出路。唯一的前进方向是外交，唯一的希望是和平。”&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;p id="app-kaihu-stock"&gt;&lt;/p&gt;
-
-
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：杨赐 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 22 Jun 2025 02:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMigAFBVV95cUxQenZoZHlWMkh0U2hWZ21sZG5lVElKcUVxY1V4OVVwa2VoSG1LZkFvVWc4azJfRTl3d2JRZ1lNR2JDVWtzTUpHMllpSEJoczRaR2lFd25MaVNZM0Zmano1ZGtxV205djFONmlaMW9wLU1TZXM0ZTkwckFRTW9DdjhqeQ</guid></item><item><title>取代Windows PC更进一步！华为鸿蒙电脑将支持侧载：不通过应用市场 可直接安装第三方应用 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5OSGlMOVpTaEU4RHBWMGVfYTFickV5X0gwOHp3ZURtQnI3Z3U1d3BydmhkUWZoX01xa01OYXJKZ0JQbmRFMEFWMzd5REVHU2k1LV95Zk1QZ20?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;取代Windows PC更进一步！华为鸿蒙电脑将支持侧载：不通过应用市场 可直接安装第三方应用&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-06-22 10:52:42  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/801442.html" title="朝晖的主页" class="newstiao4"&gt;朝晖&lt;/a&gt;&lt;p&gt;  编辑：朝晖 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1055249-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月22日消息，关于鸿蒙电脑侧载的问题，华为官方首次回应。&lt;/p&gt;
-&lt;p&gt;日前，在华为开发者大会2025电脑分论坛上，&lt;span&gt;&lt;strong&gt;华为终端BG平板与PC产品线总裁朱懂东回应侧载问题时称，华为鸿蒙电脑将支持侧载，接下来会慢慢开放。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250622/43d7bc7dab7e4e6b895858047ad9acae.jpg" target="_blank"&gt;&lt;img alt="取代Windows PC更进一步！华为鸿蒙电脑将支持侧载：不通过应用市场 可直接安装第三方应用" h="305" src="//img1.mydrivers.com/img/20250622/s_43d7bc7dab7e4e6b895858047ad9acae.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;“&lt;strong&gt;从某种角度来讲，我也希望大家理解，鸿蒙电脑还是比较开放的。我们要侧载也要等电脑慢慢完善了，一步步开放，谁说我们电脑不能侧载，开发都能做怎么可能不侧载。&lt;/strong&gt;”他说。&lt;/p&gt;
-&lt;p&gt;朱懂东表示，只是现在还没有开放，等到功能、安全机制都完善了，而且用户数达到一定基础，安全攻防有进一步理解和认知以后，会把这些东西慢慢给开放。&lt;/p&gt;
-&lt;p&gt;他还补充道&lt;strong&gt;：“我之前不知道什么是侧载，简单讲，不通过应用商店装三方应用，是可以的。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;ps.侧载，指绕过官方应用商店，直接在设备上安装应用程序的行为。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250622/7a03907758a141988bfedb20592531b0.jpg" target="_blank"&gt;&lt;img alt="取代Windows PC更进一步！华为鸿蒙电脑将支持侧载：不通过应用市场 可直接安装第三方应用" h="308" src="//img1.mydrivers.com/img/20250622/s_7a03907758a141988bfedb20592531b0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;朱懂东还透露，&lt;span&gt;&lt;strong&gt;下半年会有两款新的鸿蒙电脑，其中一款是“键盘可以拆开的电脑”，可以体现平板的体验和电脑的体验完美融合。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;6月20日，华为开发者大会2025上，鸿蒙6首次登场，华为宣布HarmonyOS 6 Developer Beta版本即日面向开发者正式启动，拥有更智能、低时延、更开放等特性。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="取代Windows PC更进一步！华为鸿蒙电脑将支持侧载：不通过应用市场 可直接安装第三方应用" h="301" src="//img1.mydrivers.com/img/20250622/bc0fd446-1e21-4eb5-a6dd-1a9119cecf01.jpg" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 22 Jun 2025 02:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5OSGlMOVpTaEU4RHBWMGVfYTFickV5X0gwOHp3ZURtQnI3Z3U1d3BydmhkUWZoX01xa01OYXJKZ0JQbmRFMEFWMzd5REVHU2k1LV95Zk1QZ20</guid></item><item><title>加拿大指受中国政府支持黑客入侵网络设备 - 联合早报</title><link>https://news.google.com/rss/articles/CBMib0FVX3lxTFBtcnJnM3M2ZXRUeDBLV0wtZUhjRG1Ra1BCbVlGenBRM2x5WWlyVF9uVHlhUnFXXzI1cUI0cGI1THd0WFFJbVZ0SHFNaGFqNTd0SWpPTldPS2tRTS11WlNnWjlpaWZpR2xYWEdNMmIxZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;p&gt;加拿大网络安全机构指针对本国电信基础设施的恶意网络活动，可能是受中国支持的黑客所为，并说注册在一家加拿大公司的三台网络设备在攻击中被入侵。&lt;/p&gt;&lt;p&gt;据彭博社报道，加拿大网络安全中心和美国联邦调查局在星期五（6月20日）晚间发布的公告中，敦促加拿大各机构采取措施，加强其网络防御被指与中国政府有关联的“盐台风”（Salt Typhoon）组织的威胁。&lt;/p&gt;&lt;p&gt;中心说：“网络中心知悉目前针对加拿大电信公司的恶意网络活动。相关行为者几乎可以肯定是受中国政府支持的组织，具体而言是‘盐台风’。” &lt;/p&gt;&lt;p&gt;机构也说，黑客几乎肯定会未来两年内，继续努力渗透加拿大组织，尤其是电信提供商。&lt;/p&gt;
-    
-  &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Sun, 22 Jun 2025 02:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTFBtcnJnM3M2ZXRUeDBLV0wtZUhjRG1Ra1BCbVlGenBRM2x5WWlyVF9uVHlhUnFXXzI1cUI0cGI1THd0WFFJbVZ0SHFNaGFqNTd0SWpPTldPS2tRTS11WlNnWjlpaWZpR2xYWEdNMmIxZw</guid></item><item><title>罗永浩：新AI产品3个月后见 DeepSeek创始人建议我“靠嘴吃饭” - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFA1M0xMZUM1dVJveHdmYTlzeEg5NmhSazFXcDk3RXU3bEFMZDdYVjV1OGV3dnFSVVFmUUp2a2p4WTZHMzZCS1BPMGtyR01ROWNiYmc3QkV5cHA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月22日消息，&lt;span&gt;&lt;strong&gt;昨日，罗永浩表示公司的AI新产品还有两三个月就会上线。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;罗永浩透露，自己的团队曾试了美国大量AI邮件工具项目，虽然他们客户端和网页版都接入了AI，但都做得很差，而在中国也很少有人做这个方向。&lt;/p&gt;
-&lt;p&gt;在被问到产品其实是个AI邮件工具时，罗永浩解释称：&lt;span&gt;&lt;strong&gt;“算是效率工具集的一部分，邮件只是其中一个组件。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;关于新产品的细节，罗永浩称不敢说太多：“以前发预热的时候，因为得瑟把很多事给说出来了，公司内部很多人对我意见很大。”&lt;/p&gt;
-&lt;p&gt;此外，在DeepSeek爆火之前，罗永浩还见了其创始人梁文峰，梁文峰给他介绍了很多AI圈的资源，也解答了团队遇到的技术问题。&lt;/p&gt;
-&lt;p&gt;而其中一个问题让罗永浩很奇怪。&lt;/p&gt;
-&lt;p&gt;梁文峰问罗永浩：&lt;span&gt;&lt;strong&gt;“你为什么非要做科技呢？我认为你‘靠嘴吃饭’的能力，绝对是全国顶尖的。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;梁文峰解释称，一个人如果在任何一个领域能做到全国顶尖的水平，就不应该辜负这份天分。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;罗永浩后面回忆后心想：“如果要找一件靠嘴吃饭、同时又与科技界密切关联，甚至能对我的科技创业有协同辅助作用的事，我现在考虑的是做类似Lex Fridman、Joe Rogan那样的播客，与科技领袖和创业者进行深度对谈。”&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250622/5974674e-2edd-465b-8ef9-603ca9f908d0.png" target="_blank"&gt;&lt;img alt="罗永浩：新AI产品3个月后见 DeepSeek创始人建议我“靠嘴吃饭”" h="398" src="//img1.mydrivers.com/img/20250622/S5974674e-2edd-465b-8ef9-603ca9f908d0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 22 Jun 2025 02:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA1M0xMZUM1dVJveHdmYTlzeEg5NmhSazFXcDk3RXU3bEFMZDdYVjV1OGV3dnFSVVFmUUp2a2p4WTZHMzZCS1BPMGtyR01ROWNiYmc3QkV5cHA</guid></item><item><title>苹果的论文被硅谷AI圈围殴了- Apple 苹果 - cnBeta.COM</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTFByQVBoYzJSejQtUThJdU1paVhDZGNvRGxjWDhkT2YyVWs2ZDctNVVEaVA2Nk1pd1o1WGE0VWFaRE1GZUxNb1lyQm8tcFVkVmJvRS1iVVVKSTRyTEpWYnRMdQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="artibody"&gt;
-                        &lt;p class="article-global"&gt;&lt;/p&gt;                            &lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/1b17cc41cb7e469.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;博客地址：https://garymarcus.substack.com/p/seven-replies-to-the-viral-apple&lt;/p&gt;&lt;p&gt;马库斯还援引全球SaaS龙头Salesforce于5月24日发布的一篇论文，拥护苹果的观点。这篇论文提到，在可能需要推理和算法精度的“多轮”条件下，即便是Gemini-2.5-Pro这样的顶级模型在测试中性能仅为35%。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/1e2f2a6265db58a.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;论文地址：https://arxiv.org/abs/2505.18878&lt;/p&gt;&lt;p&gt;此外，加州大学伯利克里分校于6月9日发表的一篇论文展示了视觉语言模型的脆弱性：“视觉语言模型的表现明显比其视觉编码器差，性能会下降到接近偶然水平。”这也被认为是苹果“大模型崩溃论”的有力论证。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/90fb3de989edeb8.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;论文地址：https://www.arxiv.org/abs/2506.08008&lt;/p&gt;&lt;p&gt;值得一提的是，参与这场AI论辩的除了人类还有AI作者。此前6月10日，大模型Claude被放在arXiv论文的一作，与一名人类作者联合“发文”质疑苹果的实验设计有问题，强调所谓的“推理崩溃”其实只是token限制导致。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/27415bef4c7f255.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;论文地址：https://arxiv.org/abs/2506.09250&lt;/p&gt;&lt;p&gt;一、大模型Claude被放论文一作，驳斥苹果的“AI崩溃论”&lt;/p&gt;&lt;p&gt;苹果刚刚发布一篇论文质疑大型推理模型是“假思考”，就有大模型“本模”跳出来反驳了。&lt;/p&gt;&lt;p&gt;6月10日，Anthropic旗下大模型Claude被一位名为Lawsen的人类作者放在论文一作，在arXiv平台上“发表”了一篇题为《思维的幻觉的幻觉（The Illusion of the Illusion of Thinking）》的论文。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/89bcc87ff4c1fbe.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;苹果此前的论文报告大型推理模型在超过特定复杂度阈值的规划难题上会表现出“准确率崩溃”，Claude的这篇论文则试图证明，他们发现这主要反映了实验设计的局限性，而非根本性的推理失败。&lt;/p&gt;&lt;p&gt;这篇论文主要攻击了苹果AI论文中的河内塔实验。河内塔游戏是一种经典的游戏，它有三个柱子和多个圆盘，玩家需要将左侧柱子上的所有圆盘移动到右侧柱子上，并且不能将较大的圆盘堆叠在较小的圆盘上。&lt;/p&gt;&lt;p&gt;论文的分析揭示了三个关键问题：1、河内塔实验在报告的失败点系统性地超出了模型输出token的限制，而模型在其输出中明确承认了这些限制；2、作者的自动评估框架未能区分推理失败和实际约束，导致模型能力分类错误；3、最令人担忧的是，他们的“过河”基准测试包含了由于船只容量不足导致N&amp;gt;5在数学上不可能出现的实例，但模型却因未能解决这些无法解决的问题而被评为失败。&lt;/p&gt;&lt;p&gt;当他们控制这些实验结果时，通过请求生成函数而不是详尽的移动列表，跨多个模型的初步实验表明，此前被报告为完全失败的河内塔实例具有很高的准确率。这些发现凸显了在评估AI推理能力时，精心设计实验的重要性。&lt;/p&gt;&lt;p&gt;这篇论文的观点得到不少人的赞同。有网友认为，Claude的批评证明了象征性限制扭曲了大模型的产出。苹果的“推理崩溃”是技术性的，而非根本性的——研究方法终将适应。也有人称“token限制论证为性能指标提供了新的视角”，并认为“看到AI直接参与学术讨论很有趣了。”&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/ab7ee7071542935.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;不少网友赞叹“AI作为一作的时代正式到来”、“C. Opus将成为被引用次数最多的研究人员之一”、“现在每个人都在读LLM的文章，甚至连研究人员都一样”，这侧面论证了大模型的强大能力。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/2b375e8a2fa1b7c.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;但反驳的声音依然强大。X平台用户Chomba Bupe说：“整件事都只是在重复我在Twitter上看到的那些观点。Claude到底贡献了什么，竟然被列为作者？如果语言模型（LM）连需要255次迭代的算法都执行不了，那它还有什么用？”&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/9960406d9001895.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;二、苹果AI论文七大质疑，纽约大学名誉教授：都缺乏说服力&lt;/p&gt;&lt;p&gt;针对大量反驳苹果AI论文的观点，纽约大学名誉教授、《代数思维》和《深度学习正在遭遇瓶颈》的作者加里·马库斯进行了总结，依次列出了七个论点并进行了一一反驳。&lt;/p&gt;&lt;p&gt;总的来说，马库斯认为所有这些反驳都缺乏说服力。苹果的论文再次明确表明，规模化并非解决之道。&lt;/p&gt;&lt;p&gt;观点1：人类在处理复杂问题和内存需求方面存在困难。&lt;/p&gt;&lt;p&gt;马库斯反驳称：“没错。但这还不够全面。我们完全有理由期待机器去做我们做不到的事情。汽车拥有更强的耐力，计算器不会犯算术错误。这就是我们发明计算机的原因：进行无差错的重复计算。而且在很多情况下，包括论文中重点提到的河内塔问题，我们现有的系统都能完美运行，不会出现任何错误。AGI应该向前迈一步。&lt;/p&gt;&lt;p&gt;但在很多情况下，大语言模型反而是倒退了一步。请注意，他们把‘我们要构建能够彻底改变世界的AGI’变成了‘相信我们，我们的系统会犯错，人类也会犯错’。&lt;/p&gt;&lt;p&gt;苹果论文的真正要点是，随着算法复杂度和与训练分布的距离不断增加，大语言模型不再适合用来运行算法，就像人类不应该充当计算器一样。如果我们想要实现AGI，就必须做得更好。”&lt;/p&gt;&lt;p&gt;观点2：大型推理模型无法解决问题，是因为输出需要太多的输出标记（也就是说，正确答案太长，大型推理模型无法生成）。&lt;/p&gt;&lt;p&gt;马库斯反驳称：“这部分属实，但也是一个非常巧妙的观察：大型推理模型有一个缺点，那就是其输出长度有限。对于某些大型推理模型来说，12步河内塔的正确答案太长，无法输出，作者应该已经解决了这个问题。&lt;/p&gt;&lt;p&gt;但关键在于：&lt;/p&gt;&lt;p&gt;1、这个反对意见虽然很巧妙，但实际上并不能解释结果的整体模式。大型推理模型在8个盘的河内塔问题上失败了，其中最优解是255步，完全在所谓的标记限制之内；&lt;/p&gt;&lt;p&gt;2、编写良好的符号人工智能系统通常不会遇到这个问题，通用人工智能也不应该遇到这个问题。大语言模型的长度限制是一个Bug，绝对不是一个特性。再说，如果大语言模型连像“河内塔”这样基本的计算都无法可靠地完成，你怎么能认为它能够正确计算军事战略（尤其是在战争迷雾笼罩的情况下）或分子生物学（存在许多未知数）呢？苹果团队要求的比现实世界通常要求的要简单得多。”&lt;/p&gt;&lt;p&gt;观点3：这篇论文是由一名实习生撰写的。&lt;/p&gt;&lt;p&gt;马库斯反驳称：“这让我很生气，因为它是一种人身攻击而不是实质内容，它具有误导性，几乎不真实，而且完全缺乏背景。第一作者确实是苹果的实习生Parshin Shojaee，但马库斯强调：&lt;/p&gt;&lt;p&gt;1、她也是一位非常有前途的三年级博士生，曾在许多主要会议上发表过论文。&lt;/p&gt;&lt;p&gt;2、如果你真的读过这篇文章，就会清楚地发现她与拥有博士学位的Iman Mirzadeh共同承担领导责任。&lt;/p&gt;&lt;p&gt;3、这篇论文实际上有六位作者，而不是一位，其中四位拥有博士学位；其中一位是Yoshua Bengio的兄弟Samy Bengio，他在机器学习社区中非常有名气&lt;/p&gt;&lt;p&gt;4、在许多科学领域，像这篇论文一样，把初级作者放在第一位，资深作者放在最后，这是一种常见的做法；成千上万篇重要论文都这么做了，而且从未因此受到批评。&lt;/p&gt;&lt;p&gt;5、真正重要的是论文的质量。Alfred Sturtevant在发明基因图谱时还是一名本科生。”&lt;/p&gt;&lt;p&gt;观点4：更大的模型可能会做得更好。&lt;/p&gt;&lt;p&gt;马库斯反驳称：“没错，情况总是如此，我看到过一份报告称o3-pro至少在某些时候可以解决其中一个问题。更大的模型有时会做得更好，因为模型本身有真正的改进，有时是因为针对特定问题进行了训练。从外部我们永远无法知道是哪种原因。&lt;/p&gt;&lt;p&gt;但问题是，我们无法提前知道对于任何给定的问题，哪个模型足够大。苹果的结果是，一些相当大的模型可以在6个圆盘的河内塔游戏中取得成功，给人一种精通的假象，但到8张圆盘时就会崩溃，这不是好的信号。人们只需要一直测试所有的东西，而几乎没有任何保证。有些模型可能对规模为S的任务T来说足够大，但在下一个规模或略有不同的任务T’上会失败，等等。这一切都变成了掷骰子游戏。”&lt;/p&gt;&lt;p&gt;观点5：这些系统可以用代码解决难题。&lt;/p&gt;&lt;p&gt;马库斯反驳称：“在某些情况下确实如此，这对于神经符号人工智能来说是一个巨大的胜利，因为它们无法在没有代码的情况下可靠地解决难题，而且代码是符号化的。这极大地证明了我一直以来的说法：我们需要一种能够整合神经网络和符号算法及表示，例如逻辑、代码、知识图谱等的人工智能。但同时，我们需要可靠地、通用地做到这一点，而我们还没有跨过这个门槛。&lt;/p&gt;&lt;p&gt;重要的是，苹果论文的目标是了解大型推理模型如何通过推理和回溯在无人协助的情况下探索解决方案，而不是了解它如何很好地利用从网络上检索到的现有代码。打个比方：学生可能会抱怨数学考试需要手算积分或微分，即使数学软件可以立即给出正确答案。然而，老师布置问题的目的并非寻找问题的答案，而是评估学生对概念的理解。&lt;/p&gt;&lt;p&gt;大语言模型真的理解河内塔算法的概念吗？这正是苹果团队想要探究的。大语言模型能下载正确的代码吗？当然可以。但如果遇到新问题、环境瞬息万变等情况，在没有概念理解的情况下下载代码就没什么用了。”&lt;/p&gt;&lt;p&gt;观点6：这篇论文只有四个例子，其中至少有一个（河内塔）并不完美。&lt;/p&gt;&lt;p&gt;马库斯反驳称：“例子可能都不是完美的，但这四个例子加在一起，提供了与数十篇其他先前论文相吻合的证据，他相信还会发现更多的例子。他自己已经在算法应用中发现了几个类似的错误，将在几天后写出来。&lt;/p&gt;&lt;p&gt;纽约大学的Tal Linzen刚刚发表了另一个例子，其中模型……能够更正简单版本的语言问题（小型语法、短字符串），但随着问题变得更加复杂，准确率会迅速下降。马库斯认为，假以时日，我们将看到大量论文强化苹果的结果。”&lt;/p&gt;&lt;p&gt;观点7：这篇论文并非新鲜事，我们早已知道这些模型泛化能力很差。&lt;/p&gt;&lt;p&gt;马库斯反驳称：“没错，但为什么我们认为这些模型是通往通用人工智能的康庄大道呢？除了这是一项巧妙的研究，明确了一个重要观点之外，真正的新闻是，人们终于开始关注生成式AI的两大致命弱点之一，并认识到其重要性。顺便说一句，同时听到‘这是错的’和‘我们早就知道’真是太搞笑了。至少有一次，我看到一个人同时说出了这两句话，间隔几分钟。&lt;/p&gt;&lt;p&gt;归根结底所有这些反驳都缺乏说服力。如果像Sam Altman这样的人感到紧张，那是因为他们应该紧张。苹果的论文再次明确表明，规模化并非解决之道；这一次，人们终于开始关注这个问题了。”&lt;/p&gt;&lt;p&gt;三、Salesforce新研究“撞题”苹果：多轮推理测试下准确率仅35%&lt;/p&gt;&lt;p&gt;除了马库斯的一系列反驳，Salesforce最新发布的一篇论文拥护了苹果的观点。&lt;/p&gt;&lt;p&gt;论文证明，在可能需要推理和算法精度的“多轮”条件下，即便是Gemini-2.5-Pro这样的顶级模型在测试中性能仅为35%。马库斯认为这足以和苹果的论文融合证明当前的技术不可信。&lt;/p&gt;&lt;p&gt;让我们来具体看看这篇论文，论文发布于2025年5月24日，题为：《CRMArena-Pro：对不同业务场景和互动中的大语言模型智能体进行全面评估（CRMArena-Pro：Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions）》&lt;/p&gt;&lt;p&gt;论文提到，尽管智能体（AI Agent）在商业领域拥有变革潜力，但由于广泛使用的平台上缺乏公开且真实的业务数据，有效的性能基准测试受到阻碍。现有的基准测试通常对其环境、数据和智能体与用户交互缺乏保真度，对各种业务场景和行业的覆盖范围有限。&lt;/p&gt;&lt;p&gt;为了弥补这些不足，Salesforce推出了CRMArena-Pro，这是一个全新的基准测试，用于对各种专业环境中的大语言模型智能体进行全面、真实的评估。CRMArena-Pro在CRMArena的基础上进行了扩展，包含19项经专家验证的任务，涵盖销售、服务和“配置、定价和报价”流程，适用于B2B和B2C场景，融合了由不同角色引导的多轮交互和保密意识评估。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/db09da382cfc157.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;实验表明，领先的大语言模型在CRMArena-Pro上的单轮成功率仅为58%左右，在多轮设置下，性能显著下降至约35%。&lt;/p&gt;&lt;p&gt;虽然工作流执行对于顶尖的智能体来说更容易掌握（单轮成功率超过83%），但其他经评估的业务技能却面临更大的挑战。此外，智能体的固有保密意识几乎为零；虽然有针对性的提示可以改善这种情况，但这往往会损害任务绩效。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/4ba4c009f0d4a1f.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这些发现凸显了当前大语言模型能力与企业需求之间的巨大差距，展示了在多轮推理、保密性和多功能技能习得方面取得进步的必要性。&lt;/p&gt;&lt;p&gt;这篇论文同样质疑了当下主流测试基准的价值，并通过一个基于业务场景数据的新基准论证了主流推理模型能力的不足。&lt;/p&gt;&lt;p&gt;此外，其中有一句话对于很多企业来说都是一个破坏因素：几乎零保密性。这又攻击了大语言模型在信息安全上的不足。&lt;/p&gt;&lt;p&gt;四、UC伯克利论文：视觉语言模型很脆弱，只会学习捷径&lt;/p&gt;&lt;p&gt;另一篇论文展示了视觉语言模型（VLM）的脆弱性：“视觉语言模型的表现明显比其视觉编码器差，性能会下降到接近偶然水平”，X用户Chomba Bupe认为，这意味着语言模型只是忽略了来自视觉编码器的丰富信息然后输出内容。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/30cf9925321636c.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;他谈道：“理解视觉信息需要某种形式的抽象推理，如果没有推理，连接到视觉编码器（VE）的语言模型只会学习捷径，即忽略来自VE的信息并编造看起来合理但毫无意义的细节。”&lt;/p&gt;&lt;p&gt;让我们具体来看下这篇论文，论文由加州大学伯利克里分校于2025年6月9日发布，题为：《隐藏在显而易见的地方：视觉语言模型忽略了它们的视觉表现（Hidden in plain sight: VLMs overlook their visual representations）》。&lt;/p&gt;&lt;p&gt;论文提到，语言提供了一个自然的界面来指定和评估视觉任务的性能。为了实现这一可能性，视觉语言模型必须成功地整合视觉和语言信息。UC伯克利研究人员的工作将视觉语言模型与其视觉编码器的直接读数进行比较，以了解它们跨模态整合的能力。在一系列以视觉为中心的基准测试（例如深度估计、对应性）中，他们发现视觉语言模型的性能明显低于其视觉编码器，性能下降到接近偶然水平。&lt;/p&gt;&lt;p&gt;他们通过对整个视觉语言模型进行一系列分析来探究这些结果：1、视觉表征的退化，2、对任务提示的脆弱性，以及3、语言模型在解决任务中的作用。&lt;/p&gt;&lt;p&gt;他们发现，执行这些以视觉为中心的任务的瓶颈就在于这第三类。视觉语言模型无法有效地利用整个模型中易于访问的视觉信息，并且它们继承了大语言模型中存在的语言先验。&lt;/p&gt;&lt;p&gt;如下图所示，在所有任务中，尽管视觉编码器的性能存在较大差异，但视觉编码器的表现均显著优于视觉语言模型评估和盲评估。此外，尽管DINOv2在6项任务中的5项里是性能最强的编码器，但它在任何任务中都未使视觉语言模型方法达到最高性能。&lt;/p&gt;&lt;p&gt;&lt;img src="https://static.cnbetacdn.com/article/2025/0622/17863fb64c1c9d9.webp"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;结语：苹果AI论文争议，呼唤新评估范式&lt;/p&gt;&lt;p&gt;这场围绕苹果论文引发的学术论战超出技术细节争论，触及大模型发展前景的信仰。一方面这种反共识的观点受到了来自多方的围攻，另一方面，Salesforce和UC伯克利的研究则从多轮复杂推理任务的显著低成功率、以及视觉语言模型对视觉信息利用的脆弱性等不同角度，提供了有力的佐证。&lt;/p&gt;&lt;p&gt;这场争论不仅指出了“规模化”路径的潜在局限，更倡导评估范式的革新与底层架构的突破。未来的突破点或许在于更深入地理解模型失效的根源，设计更能真实反映智能本质的测试基准，以及探索神经符号结合等新架构，使AI不仅能识别模式，更能进行可靠、可泛化的计算与推理。&lt;/p&gt;                        &lt;/div&gt;
-                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta.COM</author><pubDate>Sun, 22 Jun 2025 02:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFByQVBoYzJSejQtUThJdU1paVhDZGNvRGxjWDhkT2YyVWs2ZDctNVVEaVA2Nk1pd1o1WGE0VWFaRE1GZUxNb1lyQm8tcFVkVmJvRS1iVVVKSTRyTEpWYnRMdQ</guid></item></channel></rss>
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Sun, 22 Jun 2025 04:15:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE11aWRnWXFKTkpkcXNqWnF3VXN5V3pxZWg4blZ1UTM5U1ZxZ0syWWF5RG91bWZOTlNrYkxweTBVVWRMX20zZUdMcW8zZS1meGNkYUpoel9HUnAzb2M</guid></item></channel></rss>
