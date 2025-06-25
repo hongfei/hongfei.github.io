@@ -1,5 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>高中生也能轻松上手 华为整出了个大模型“瑞士军刀” - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9mT0EyNzJIT1djZEItM2FISGxxMU9qMzJwSlBISXlrVVNuLVJmcVVZclFWT25POEllWVlDUGlXdzAxQm9WbGxKSHRCQWpjZmExblBpLWFjN3I?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>LLM进入“拖拽时代”，只靠Prompt，几秒定制一个大模型，效率飙升12000倍 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFB2dDNWNnRaV0RGQ1RBT1UzQnF1UjZZODlkUnQ0Z2c4b2VGaGtHTU52cE1tYVNYZ1Z4MkhJdEJzTFFZbzJBdTlINW5tVVFUZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;&lt;strong&gt;最近，来自NUS、UT Austin等机构的研究人员创新性地提出了一种「拖拽式大语言模型」（DnD），它可以基于提示词快速生成模型参数，无需微调就能适应任务。不仅效率最高提升12000倍，而且具备出色的零样本泛化能力。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;现在的大模型基本都具备零样本泛化能力，但要在真实场景中做特定的适配，还是得花好几个小时来对模型进行微调。&lt;/p&gt;
+  &lt;p&gt;即便是像LoRA这样的参数高效方法，也只能缓解而不能消除每个任务所需的微调成本。&lt;/p&gt;
+  &lt;p&gt;刚刚，包括尤洋教授在内的来自新加坡国立大学、得克萨斯大学奥斯汀分校等机构的研究人员，提出了一种全新的「拖拽式大语言模型」——&lt;strong&gt;Drag-and-Drop LLMs！&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,336" src="https://img.36krcdn.com/hsossms/20250625/v2_9b3292a2091a475ea006aa59dadb592c@5888275_oswg162967oswg1080oswg336_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;论文地址：https://arxiv.org/abs/2506.16406&lt;/p&gt;
+  &lt;p&gt;DnD是一种基于&lt;strong&gt;提示词&lt;/strong&gt;的参数生成器，能够对&lt;strong&gt;LLM&lt;/strong&gt;进行无需训练的自适应微调。&lt;/p&gt;
+  &lt;p&gt;通过一个轻量级文本编码器与一个级联超卷积解码器的组合，DnD能在数秒内，仅根据无标签的任务&lt;strong&gt;提示词&lt;/strong&gt;，生成针对该任务的LoRA权重矩阵。&lt;/p&gt;
+  &lt;p&gt;显然，对于那些需要快速实现模型专业化的场景，DnD可以提供一种相较于传统微调方法更强大、灵活且高效的替代方案。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,215" src="https://img.36krcdn.com/hsossms/20250625/v2_9e84dac803f24c059ab92f7a308d6b04@5888275_oswg136144oswg1080oswg215_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;总结来说，DnD的核心优势如下：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;极致效率：&lt;/strong&gt;其计算开销比传统的全量微调低12,000倍。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;卓越性能：&lt;/strong&gt;在零样本学习的常识推理、数学、编码及多模态基准测试中，其性能比最强大的、需要训练的LoRA模型还要高出30%。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;强大泛化：&lt;/strong&gt;仅需无标签的提示词，即可在不同领域间展现出强大的泛化能力。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="880,802" src="https://img.36krcdn.com/hsossms/20250625/v2_ae3b1e2124404c78b2b43b2196bcdcce@5888275_oswg189629oswg880oswg802_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;DnD实现方法&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;通过观察，研究人员发现，LoRA适配器无非是其训练数据的一个函数：梯度下降会将基础权重「拖拽」至一个特定任务的最优状态。&lt;/p&gt;
+  &lt;p&gt;如果能够直接学习从提示到权重的映射，那么就可以完全绕过梯度下降过程。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,491" src="https://img.36krcdn.com/hsossms/20250625/v2_bb6adc7f14934240abb402857a4f9276@5888275_oswg78767oswg1080oswg491_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;DnD通过两个核心步骤获得「拖拽」能力：准备训练数据（左上）与训练参数生成器（右上）。&lt;/p&gt;
+  &lt;p&gt;在准备数据时，将模型参数（权重）与特定数据集的条件（提示词）进行显式配对。&lt;/p&gt;
+  &lt;p&gt;在训练时，DnD模型将条件作为输入来生成参数，并使用原始的LoRA参数作为监督信号进行学习。&lt;/p&gt;
+  &lt;p&gt;基于这些洞见，团队提出了「拖拽式大语言模型」，它无需微调即可生成任务专属的权重。&lt;/p&gt;
+  &lt;p&gt;团队首先在多个不同数据集上分别训练并保存相应的LoRA适配器。&lt;/p&gt;
+  &lt;p&gt;为了赋予模型「拖拽」的能力，团队将这些数据集的提示词与收集到的LoRA权重进行随机配对，构成DnD模型的训练数据——即「提示词-参数」对。&lt;/p&gt;
+  &lt;p&gt;参数生成器是一个由级联卷积块构成的解码器。&lt;/p&gt;
+  &lt;p&gt;参数生成器的模块细节如下：每个超卷积块包含三个超卷积模块，用于在不同维度上提取并融合特征信息。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,329" src="https://img.36krcdn.com/hsossms/20250625/v2_ca1c2956b9ff4c1d90640e934112305a@5888275_oswg64137oswg1080oswg329_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;训练时，团队采用一个现成的文本编码器提取提示词的嵌入向量，并将其输入生成器。&lt;/p&gt;
+  &lt;p&gt;生成器会预测出模型权重，团队利用其与真实LoRA权重之间的均方误差（MSE）损失来对其进行优化。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,331" src="https://img.36krcdn.com/hsossms/20250625/v2_9479c72d99b944a09df32d31c449188c@5888275_oswg132821oswg1080oswg331_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;在推理阶段，团队只需将来自全新数据集（训练中未见过）的提示词输入DnD，仅需一次前向传播，即可获得为该任务量身定制的参数。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;效果评估&lt;/strong&gt;&lt;/h2&gt;
+  &lt;h3&gt;&lt;strong&gt;零样本学习效果&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,152" src="https://img.36krcdn.com/hsossms/20250625/v2_9020862b2507470c80eaf679e2d0906f@5888275_oswg67317oswg1080oswg152_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,603" src="https://img.36krcdn.com/hsossms/20250625/v2_011b826fb40d416bbd431692d493a503@5888275_oswg154711oswg1080oswg603_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;在新的（测试）数据集上的泛化能力。&lt;/p&gt;
+  &lt;p&gt;在所有未曾见过的数据集上，DnD在准确率上都显著超越了那些用于训练的LoRA模型。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,179" src="https://img.36krcdn.com/hsossms/20250625/v2_90336f3307ff48858238c5f050b0ae7e@5888275_oswg76220oswg1080oswg179_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;DnD能为数学、代码和多模态问答等更复杂的任务生成参数。&lt;/p&gt;
+  &lt;p&gt;在这些任务上依然展现出强大的零样本学习能力。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="895,277" src="https://img.36krcdn.com/hsossms/20250625/v2_438cd47cb80b430087f8e6308d7b977d@5888275_oswg51576oswg895oswg277_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,601" src="https://img.36krcdn.com/hsossms/20250625/v2_0e64e94a009f4932ba30623d858c09ed@5888275_oswg224913oswg1080oswg601_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;DnD在多种任务上超越了基座LLM，展现出显著的「拖拽」增强效果。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="872,170" src="https://img.36krcdn.com/hsossms/20250625/v2_095a26f1ba2f42dab0cdfb40b60e4d43@5888275_oswg38565oswg872oswg170_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;DnD能够很好地扩展至更大的7B基座模型，并在更复杂的LiveCodeBench基准测试中保持强劲性能。&lt;/p&gt;
+  &lt;p&gt;通过利用已微调的LoRA作为训练数据，DnD成功地在输入提示词与模型参数之间建立了联系。&lt;/p&gt;
+  &lt;p&gt;团队向DnD输入其训练阶段从未见过的数据集提示词，让它为这些新任务直接生成参数，以此来检验其零样本学习能力。&lt;/p&gt;
+  &lt;p&gt;DnD在权重空间中生成的参数与原始参数分布接近，并且在性能上表现良好。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,542" src="https://img.36krcdn.com/hsossms/20250625/v2_e865781488ff4e188085d74b2d0e8384@5888275_oswg210372oswg1080oswg542_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;实验结果表明，在零样本测试集上，团队的方法相较于训练所用的LoRA模型的平均性能，取得了惊人的提升，并且能够很好地泛化到多种真实世界任务和不同尺寸的LLM。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;对比其他微调方法&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;为了进一步展示DnD的强大能力，团队将其与全量样本微调（full-shot tuning）、少样本学习（few-shot）以及上下文学习（in-context learning）进行了对比。&lt;/p&gt;
+  &lt;p&gt;令人惊讶的是，DnD的性能超越了LoRA全量微调的效果，同时速度快了2500倍。&lt;/p&gt;
+  &lt;p&gt;虽然经过更多轮次的迭代，全量微调的性能会超过DnD，但其代价是高达12000倍的推理延迟。&lt;/p&gt;
+  &lt;p&gt;此外，在样本数少于256个时，DnD的性能稳定地优于少样本学习和上下文学习。&lt;/p&gt;
+  &lt;p&gt;尤其值得注意的是，少样本学习和上下文学习都需要依赖带标签的答案，而DnD仅仅需要无标签的提示词。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,318" src="https://img.36krcdn.com/hsossms/20250625/v2_74a9895351cc44ac94e61269ee71a4ca@5888275_oswg191506oswg1080oswg318_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;DnD能够达到与全量样本相当甚至更优的性能，同时速度提高了2500-12000倍&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;作者介绍&lt;/strong&gt;&lt;/h2&gt;
+  &lt;h3&gt;&lt;strong&gt;Zhiyuan Liang&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1440" src="https://img.36krcdn.com/hsossms/20250625/v2_70e8445a7b8a425e9514c71df60fa673@5888275_oswg1074694oswg1080oswg1440_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;Zhiyuan Liang目前在新加坡国立大学高性能计算人工智能实验室实习，师从尤洋教授。同时，也得到了Kai Wang博士和Wangbo Zhao的指导。&lt;/p&gt;
+  &lt;p&gt;此前，他在中国科学技术大学获得人工智能学士学位。并曾在北卡罗来纳大学教堂山分校Huaxiu Yao教授的指导下进行实习，以及在中国科学技术大学数据科学实验室跟着导师Xiang Wang度过了两年的时光。&lt;/p&gt;
+  &lt;p&gt;他的研究兴趣主要集中在高效机器学习与参数生成，希望从权重空间学习的视角，探索实现更高层次智能的有效路径。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;Zhangyang(Atlas) Wang&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,721" src="https://img.36krcdn.com/hsossms/20250625/v2_c4906dabc48b435ea4a59a157e504ced@5888275_oswg903304oswg1080oswg721_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;Zhangyang Wang目前是德克萨斯大学奥斯汀分校钱德拉家族电气与计算机工程系的终身副教授，并荣膺坦普尔顿基金会第7号捐赠教席。&lt;/p&gt;
+  &lt;p&gt;他同时也是该校计算机科学系以及奥登研究所计算科学、工程与数学项目的核心教员。&lt;/p&gt;
+  &lt;p&gt;他于2016年获伊利诺伊大学厄巴纳-香槟分校电气与计算机工程博士学位，师从计算机视觉泰斗黄煦涛(Thomas S.Huang)教授；并于2012年获中国科学技术大学电子工程与信息科学学士学位。&lt;/p&gt;
+  &lt;p&gt;他的研究兴趣主要聚焦于为生成式AI与神经符号AI定坚实的理论与算法基础。&lt;/p&gt;
+  &lt;p&gt;核心目标是创建结构化、模块化的模型表示：1）在过参数化模型空间中实现高效、鲁棒的学习；2）与符号知识及推理进行无缝连接。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;Kai Wang&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1078" src="https://img.36krcdn.com/hsossms/20250625/v2_e1428ef0adf9445b8ae0a6a5f39a5c34@5888275_oswg1795440oswg1080oswg1078_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;Kai Wang目前是新加坡国立大学HPC-AI实验室的研究员，接受尤洋教授的指导。&lt;/p&gt;
+  &lt;p&gt;此前，他在新加坡国立大学获得数据科学与机器学习博士学位，在中国科学院深圳先进技术研究院获得计算机技术硕士学位，在北京师范大学珠海校区获得学士学位。&lt;/p&gt;
+  &lt;p&gt;他的研究方向聚焦于参数生成与高效机器学习，尤其注重通过探索简洁的基线方法，来深入洞察深度学习的内在机理。&lt;/p&gt;
+  &lt;p&gt;参考资料：&lt;/p&gt;
+  &lt;p&gt;https://jerryliang24.github.io/DnD/ &lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/geOn7zyJRQwfJra38EjcxQ"&gt;“新智元”&lt;/a&gt;，作者：新智元，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Wed, 25 Jun 2025 00:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFB2dDNWNnRaV0RGQ1RBT1UzQnF1UjZZODlkUnQ0Z2c4b2VGaGtHTU52cE1tYVNYZ1Z4MkhJdEJzTFFZbzJBdTlINW5tVVFUZw</guid></item><item><title>特想聊聊快手这次的变化 - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iX2xMdFNVRGM3NW9TaU1QMjRJZng4QzROY01zbThxcWRiUWY3cFJieWVLSWJ0eS0wV2ZLTGFvczdwN05Sd2dVbFBSVTlDSEJtTlZWYw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="941379"&gt;前几日刷朋友圈，看到消息说快手已经把 AI 大模型驱动的推荐系统全量上线到产品中。而这套基于大模型的生成式推荐系统，是行业里第一个工业级的推荐解决方案。放眼全球，目前还没有其他大公司能做到这个程度。&lt;/p&gt;&lt;p data-check-id="221526"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="973836"&gt;快手的技术这几年确实有点东西。比如他们的视频生成模型可灵，现在也是全球顶级水准。&lt;/p&gt;&lt;p data-check-id="955116"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="687328"&gt;以前我更多把快手当成一家短视频公司，现在回头看，他们在底层技术上的积累，其实比我想象中要深得多。这也让我越来越好奇这家公司的运作方式。我总觉得，公司的创新背后，其实是它气质和风格的延伸。&lt;/p&gt;&lt;p data-check-id="793324"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="704308"&gt;说回到推荐系统。其实我们对推荐系统并不陌生，它当属移动互联网时代最大的技术创新之一。包括快手、抖音、拼多多、美团、小红书等耳熟能详的国民级产品，他们的模式均建立在推荐系统之上。推荐系统的本质是完成人和信息的匹配，目前来看，大致有两种信息分发方式：&lt;/p&gt;&lt;p data-check-id="134797"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="851356"&gt;一类是基于用户的协同过滤，推荐系统根据用户的自然属性和浏览兴趣来计算用户相似度，进而给相似用户推荐内容。另一类是基于内容的协同过滤。推荐系统提取内容的特征，然后计算不同内容之间的相似性之后，给用户推荐与过去喜欢内容相似的内容。&lt;/p&gt;&lt;p data-check-id="427193"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="829673"&gt;当然还有一类是给用户直接推荐系统的高热内容，这部分没有难度，不过多展开。&lt;/p&gt;&lt;p data-check-id="581034"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="656890"&gt;无论是基于用户还是内容的协同过滤，大致都是一套“多阶段流水线”架构。平台先用一个召回模型，从海量内容池里筛出一批可能相关的视频。然后，粗排和精排模型再逐步“打分”，把更可能吸引用户的内容一层层挑出来。最后，重排阶段会针对内容多样性、新内容扶持等策略再做一轮调整。&lt;/p&gt;&lt;p data-check-id="637100"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="441708"&gt;这种结构看上去很科学，但其实这些年也积累了不少问题。&lt;/p&gt;&lt;p data-check-id="896163"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="334659"&gt;因为每一层模型只管自己那摊事，很难从整体出发考虑用户的真实兴趣。比如召回阶段可能直接把用户真正喜欢的内容筛掉，后面的精排模型再智能也救不回来。&lt;/p&gt;&lt;p data-check-id="543568"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="345665"&gt;更麻烦的是，各层的目标经常互相掣肘：一边要拉高点击率，一边还要兼顾冷门和多样性，这种拉扯长期下来，系统的一致性和效率会持续恶化，最终也会影响到推荐的准确度。&lt;/p&gt;&lt;p data-check-id="462135"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="607457"&gt;更深层的问题在于，算力浪费。多阶段流水线虽然让流程分工明确，但每一层模型通常各自独立运行，分开消耗硬件资源，整体的 GPU 利用率非常低。&lt;/p&gt;&lt;p data-check-id="272184"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="629550"&gt;以快手为例，即使是推荐系统里最复杂、算力消耗最大的精排模型，在旗舰级 GPU 上训练和推理的算力利用率也只有 4.6% 和 11.2%。而大语言模型在顶级芯片 H100 上的算力利用率普遍能达到 40% 以上。&lt;/p&gt;&lt;p data-check-id="797016"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="313655"&gt;在大模型技术没有正式爆发之前，上面提到的两个问题，都没有明确的解法。2022 年年底，ChatGPT 在小圈子内走红之后，我一个在大厂专做推荐系统的朋友告诉我说，他可能隐约看到了新一代推荐系统的影子。后来，大模型彻底爆发后，朋友就离职自己创业去了，没再把精力投入到推荐系统方向。&lt;/p&gt;&lt;p data-check-id="835515"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="604783"&gt;这两年，我出去和行业的人交流，也会问到大家为什么没把大模型的技术用到推荐系统中。&lt;/p&gt;&lt;p data-check-id="723011"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="379723"&gt;几乎所有人的第一反应都是，端到端大模型在推荐系统里，真的太难了。不是没想过用，但一上业务就会发现，模型庞大，特征复杂，整个链路极其脆弱，线上环境很容易出幺蛾子。训练、推理、数据流全部得重构，哪怕有工程团队敢试水，最后也多半因为效率和成本问题被劝退。&lt;/p&gt;&lt;p data-check-id="693232"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="574031"&gt;所以，这次看到快手真的把这样一套端到端大模型的推荐系统 OneRec 全量上线，说实话，还是非常激动。&lt;/p&gt;&lt;p data-check-id="110480"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="924915"&gt;OneRec 本质上是把推荐问题从多阶段、分层筛选，彻底切换成了端到端的大模型生成。过去，推荐系统像装配线，一层层地筛选内容；现在，OneRec 通过大模型，直接生成出一串用户最可能感兴趣的视频内容列表。这是一次范式的变化。&lt;/p&gt;&lt;p data-check-id="643268"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="755255"&gt;具体来看，OneRec 主要做了三件事：&lt;/p&gt;&lt;p data-check-id="952680"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="759170"&gt;1、用户建模：系统会把用户长期的全部行为，比如观看、点赞、评论等数据，进行深度编码，形成一组多维度的兴趣向量。&lt;/p&gt;&lt;p data-check-id="327089"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="291799"&gt;2、推荐生成：基于兴趣向量，由大模型的 MoE 解码器一步步生成推荐内容，实现内容匹配和排序。&lt;/p&gt;&lt;p data-check-id="657689"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="646439"&gt;3、奖励机制：引入强化学习，对用户反馈做动态优化，确保推荐结果能够不断贴合用户真实兴趣。&lt;/p&gt;&lt;p data-check-id="671464"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="172115"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/25/082901235731.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="427"&gt;&lt;/p&gt;&lt;p data-check-id="581968"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="302880"&gt;接下来，我分别解释下这几个环节中的卡点。当然，只是我的理解。&lt;/p&gt;&lt;p data-check-id="693237"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="325632"&gt;推荐系统要想真正做到个性化，最根本的前提还是对内容本身有足够深入的理解。尤其是短视频这种极度丰富、多样的内容形式，如果系统只能看懂表层标签，实际上很难捕捉到用户的真实兴趣点。&lt;/p&gt;&lt;p data-check-id="556294"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="118483"&gt;正因为如此，OneRec 在内容理解上做了一步重要尝试，就是引入多模态语义分词器。它不再只看视频的标签、标题或者简单的视觉特征，而是把每个视频拆解成更细致的信息片段——比如画面内容、文字、配音、音乐，甚至用户的互动。&lt;/p&gt;&lt;p data-check-id="890226"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="235634"&gt;系统会把这些不同的细节单独分离出来，像拼图一样组合成对内容的整体理解，让模型看到更多元的内容层面。&lt;/p&gt;&lt;p data-check-id="524948"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="917666"&gt;举个例子：比如一条美食短视频，分词器不仅会捕捉画面里的食材、烹饪动作、厨房环境，还能分析配音里的生活化语气，用户评论和弹幕，比如“太治愈了”或者“学会了这道菜”，都会变成内容理解的一部分。音轨里如果有轻快的 BGM、环境音或者笑声，系统同样会识别出来，把这些都融合到对内容的整体表达里。&lt;/p&gt;&lt;p data-check-id="283918"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="849246"&gt;这种多模态分词的方式，相比以往只看标签的做法，能把内容拆得更细致、理解得更立体。&lt;/p&gt;&lt;p data-check-id="580628"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="494981"&gt;以前的推荐系统像是用粗网捕鱼，只能抓到大鱼，很多微妙的兴趣点都漏掉了。现在有了分词器，模型能更精准地捕捉到用户可能喜欢的那些内容细节，理解能力也更接近人类实际的内容感知。&lt;/p&gt;&lt;p data-check-id="843542"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="158457"&gt;理解内容只是第一步，系统还需要理解每个用户的兴趣变化，这样推荐才能真正精准。&lt;/p&gt;&lt;p data-check-id="651129"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="313549"&gt;传统推荐系统往往高度依赖用户最近的行为，比如用户这几天刷了什么、点了什么，模型就会重点推类似内容。这样虽然短期效果还不错，但一旦用户的兴趣发生变化，或者本身兴趣比较多元，系统很容易误判真实偏好。&lt;/p&gt;&lt;p data-check-id="745695"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="382212"&gt;比如用户其实喜欢历史、健身、美食，但最近几天只是偶尔关注了几条旅游短视频，传统推荐很可能就疯狂推荐旅行内容，久而久之会让用户觉得内容越来越单调，真正的兴趣被忽略。&lt;/p&gt;&lt;p data-check-id="471064"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="772803"&gt;OneRec 在这方面的创新，是用大模型把用户的静态特征、短期行为和长期行为全都串联起来，统一建模。它不再只看最近的动作，而是把长期的浏览、互动、偏好变成一条完整的“兴趣序列”。不管是阶段性兴趣变化，还是本身爱好多样，模型都能捕捉到不同时间段的兴趣转折，及时调整推荐策略。&lt;/p&gt;&lt;p data-check-id="165295"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="250919"&gt;比如，某个用户半年前很喜欢科幻片，最近转向美食、生活内容，系统会自动平衡这些变化，既不会死盯着最近一两天的点击，也不会完全忽略历史上的偏好。&lt;/p&gt;&lt;p data-check-id="623396"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="268707"&gt;和传统那种主要靠人工设定特征和预定义兴趣分类的做法不同，OneRec 的用户建模用的是深度神经网络结构，能直接从大规模数据中自动学习复杂兴趣变化。这让模型能动态适应用户的多变需求，让推荐更接近真实兴趣轨迹。&lt;/p&gt;&lt;p data-check-id="829747"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="251015"&gt;是不是有点烧脑？&lt;/p&gt;&lt;p data-check-id="822287"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="830922"&gt;我们继续，前面分别讲了快手的新一代推荐系统 OneRec 是怎么理解用户和视频内容的。接下来最关键的一步，就是怎么做二者之间的匹配。&lt;/p&gt;&lt;p data-check-id="962514"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="183752"&gt;OneRec 在这里采用了新的生成架构：不再按部就班筛选内容，而是把用户兴趣、内容特征一同输入大模型，由系统一步步生成完整的内容推荐序列。&lt;/p&gt;&lt;p data-check-id="243186"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="423876"&gt;具体来说，OneRec 采用的是编码器-解码器结构。编码器负责将用户的兴趣轨迹压缩成兴趣向量（刚才提到的），解码器则像自动“写清单”一样，逐步生成一串用户可能感兴趣的内容。&lt;/p&gt;&lt;p data-check-id="654892"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="299616"&gt;在解码阶段，快手引入了 MoE 架构，这种专家混合机制能显著提升模型容量和表达能力，同时让推理效率大幅提升。&lt;/p&gt;&lt;p data-check-id="884411"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="246894"&gt;举个例子：某位用户在半年时间里，兴趣从科幻变成了美食和生活，OneRec 在生成推荐序列时，会自动综合各个兴趣点的最新权重，让推荐列表里既有用户最近最常互动的内容，也能适当穿插历史偏好甚至冷门兴趣，避免内容变得单一。&lt;/p&gt;&lt;p data-check-id="964189"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="713990"&gt;MoE 架构的优势在于，每一步推荐内容的生成，都会动态激活一组最合适的专家网络参与协作决策。这样不仅提升了模型对复杂兴趣分布的刻画能力，也保证了算力资源的高效利用。最终，系统既能实现高度个性化的推荐，也能兼顾内容多样性和新鲜感。&lt;/p&gt;&lt;p data-check-id="348442"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="709216"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/25/082902379403.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="412"&gt;&lt;/p&gt;&lt;p data-check-id="107033"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="610035"&gt;再进一步，快手还引入了基于奖励机制的偏好对齐方法，用强化学习系统性增强了推荐的效果。&lt;/p&gt;&lt;p data-check-id="541541"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="281783"&gt;传统推荐领域，强化学习其实早就被提出，但在多阶段流水线体系下，往往水土不服——反馈信号稀疏、链路割裂，业务线上难以全链路闭环，模型很难捕捉到用户真实而细致的偏好，优化也很有限。&lt;/p&gt;&lt;p data-check-id="788335"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="630952"&gt;OneRec 的端到端生成式架构，让强化学习首次真正贯穿内容理解、用户建模、推荐生成全链路。具体做法，是构建了一套综合性的奖励系统，把不同业务目标直接内嵌进模型训练。最重要的有三类：&lt;/p&gt;&lt;p data-check-id="555219"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="696249"&gt;第一类是偏好奖励，目的是让模型学会分辨用户到底喜欢什么。比如有的人喜欢剧情反转，有的人爱看宠物卖萌，这一类奖励会帮模型自动给每种内容打个性化分数，推得越对味，分越高。&lt;/p&gt;&lt;p data-check-id="793291"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="753685"&gt;第二类是格式奖励。传统强化学习在推荐系统里有个老大难问题，模型容易只推一种内容，造成内容同质化，也就是所谓的挤压效应。OneRec 专门设计了一套格式奖励，确保每次推荐出来的内容都合法有效，既有主流，也有冷门内容，内容分布更加均衡。&lt;/p&gt;&lt;p data-check-id="807195"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="816373"&gt;第三类是工业场景奖励，主要是为了适配实际业务的复杂场景，比如适度抑制营销号、给新视频和长尾内容一定的曝光机会。模型会结合这些业务规则，动态平衡不同类型内容的分发，避免平台只剩下爆款内容或刷屏套路。&lt;/p&gt;&lt;p data-check-id="138216"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="662943"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/25/082903638188.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="456"&gt;&lt;/p&gt;&lt;p data-check-id="588144"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="460426"&gt;这些奖励信号贯穿在模型训练和优化的全过程，模型每做出更优的推荐决策都会得到正向激励，反之则被及时修正。最终，OneRec 让强化学习真正落地在工业级推荐系统中，实现了业务目标与用户体验的双重提升，也让推荐结果变得更加多元和动态。&lt;/p&gt;&lt;p data-check-id="756912"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="387971"&gt;据快手官方披露，OneRec 在灰度阶段的数据表现其实挺值得关注的。在主站和极速版的短视频推荐主场景，快手做了一周 5% 流量的 AB 测试。&lt;/p&gt;&lt;p data-check-id="593216"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="865130"&gt;结果是，仅靠生成式模型加 RL 对齐用户偏好，就已经能跑到和原有复杂系统类似的效果。如果再叠加奖励模型选择策略，用户停留时长分别提升了 0.54% 和 1.24%，7 日用户生命周期也有 0.05% 和 0.08% 的增长。&lt;/p&gt;&lt;p data-check-id="455199"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="915386"&gt;别小看这些数字，在快手这种日活用户体量下，0.1% 的停留时长提升就已经有统计意义了。更重要的是，不光是停留时长，点赞、关注、评论等一系列交互指标也都在往好的方向走。目前，OneRec 已经承接了快手短视频推荐主场景 25% 的请求。&lt;/p&gt;&lt;p data-check-id="250780"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="765286"&gt;除了短视频推荐外，OneRec 在本地生活场景的表现同样不差。AB 实验数据显示，GMV 提升了 21%，订单量、购买用户、新客获取效率也都是两位数的增长。现在本地生活业务线已经实现了 100% 流量切换，并且上线后核心指标比灰度阶段还进一步扩大，说明 OneRec 的泛化能力确实比较强。&lt;/p&gt;&lt;p data-check-id="545324"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="916629"&gt;当然，OneRec 并不是终极答案，眼下它依然有不少工程和算法难题要解决。比如推理速度、训练资源消耗、冷启动内容的分发策略，以及奖励机制的进一步优化，都是团队后续需要持续攻坚的地方。包括用户兴趣的极端多样性和时效性，如何在模型架构和采样机制上继续提升灵活性，未来也有不少空间。&lt;/p&gt;&lt;p data-check-id="308805"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="816197"&gt;但有一点已经很明显：OneRec 把推荐系统推进到了一个全新的阶段。以前推荐系统总是慢半拍，最新的 Scaling Law、强化学习、硬件能力提升，业界能用到的都非常有限。现在这种大模型驱动的端到端生成推荐，等于是把推荐和 AI 最新进展重新拉回同一起跑线。&lt;/p&gt;&lt;p data-check-id="589573"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="308079"&gt;新一代的推荐系统，也来了。2025 年，真有意思。&lt;/p&gt;&lt;p data-check-id="567102"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="785545"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MjM5ODQ2MDIyMA==&amp;amp;mid=2650731926&amp;amp;idx=1&amp;amp;sn=2d584217b682c36d47a1ff6c36975e98&amp;amp;chksm=bfd23435209fb23e5e627542cfaacaf2bc70f11333b2227942ff4e5458dd589de8e678e5c924&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0625rE34QyyKQI5FScWPEv4y&amp;amp;sharer_shareinfo=852abb4adb370a661f2ee8046eb7cc5c&amp;amp;sharer_shareinfo_first=49ab379a87a343dddd3161b6e5811e14&amp;amp;version=4.1.6.70203&amp;amp;platform=mac#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Wed, 25 Jun 2025 00:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9iX2xMdFNVRGM3NW9TaU1QMjRJZng4QzROY01zbThxcWRiUWY3cFJieWVLSWJ0eS0wV2ZLTGFvczdwN05Sd2dVbFBSVTlDSEJtTlZWYw</guid></item><item><title>高中生也能轻松上手 华为整出了个大模型“瑞士军刀” - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9mT0EyNzJIT1djZEItM2FISGxxMU9qMzJwSlBISXlrVVNuLVJmcVVZclFWT25POEllWVlDUGlXdzAxQm9WbGxKSHRCQWpjZmExblBpLWFjN3I?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;对整天关心前沿AI的差评君来说，比起大厂的新模型发布会，最近我倒是被这么个新闻吸引了。&lt;/p&gt;
 &lt;p&gt;一个17岁的高中生，靠华为云MaaS这个平台，自己动手搞出了一个专门帮唇腭裂小朋友做语言康复训练的AI应用。&lt;/p&gt;
@@ -846,7 +930,96 @@ GPU，同时部署在Xbox和PlayStation等下一代游戏机中。&lt;/span&gt;&
   &lt;p&gt;参考资料：https://www.reddit.com/r/SaaS/comments/1lg2zw7/i_left_my_job_spent_almost_10_months_20k_of_loss/&lt;/p&gt;
   &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/iZbdKDYulwS1uKX9PYFRHg"&gt;“CSDN”&lt;/a&gt;，整理：屠敏，36氪经授权发布。&lt;/p&gt;
  
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 24 Jun 2025 09:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFA3VXVMcEtZYXBhMFNhREhQZ3BHUEZuOG9GN0Jibm5JZFJzZmplUUNxOFFMakVFbHNBdFN1WkxSU2tuUnMwdmtqcE5MMml0QQ</guid></item><item><title>BBA放弃挣扎 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFBqRE53NVJGMVFrT0Rlb2NWdERwU1FkRUF1VkxkOVZJdjFtMzRWN3ZlNXVRYmFqeFRhYjZGRlBjcXBHaDlVM3g0eXNEazhsZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 24 Jun 2025 09:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFA3VXVMcEtZYXBhMFNhREhQZ3BHUEZuOG9GN0Jibm5JZFJzZmplUUNxOFFMakVFbHNBdFN1WkxSU2tuUnMwdmtqcE5MMml0QQ</guid></item><item><title>特斯拉Robotaxi在奥斯汀的事故被摄像头捕捉 引发监管机构关注 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMinAFBVV95cUxNM210Q2M3TkxiNHo0R2xIV0dSYjNZUHlqM3kwdklyelNmMUxuUks2amhhRHRTR0pBMGhROEdBYVkyd3pRdm5SQU1EYkxpOUlxd2poa3FfbGIzV0wxaURXVVBTNi1aUFhwUmR0ZE05NGZ0aFIwbko3dEdkc295czRwdjE0Z0V4SmZKcFFIa2dTS1h2NnUxcE5sQURSSEY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　核心要点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;美国国家公路交通安全管理局（NHTSA）于周一致函&lt;span id="usstock_TSLA"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/TSLA.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;特斯拉&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_TSLA"&gt;&lt;/span&gt;，要求其提供更多关于被摄像头记录并在社交媒体广泛传播的 Robotaxi 事故的信息。&lt;/li&gt;
+&lt;li&gt;本周末，特斯拉在得克萨斯州奥斯汀启动了 Robotaxi 服务，首批投入 10 至 20 辆配备最新无人驾驶技术的 Model Y 车型，副驾驶座上配备一名人类安全员。&lt;/li&gt;
+&lt;li&gt;该服务的推出推动特斯拉股价周一大涨 8%。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;　　特斯拉在得克萨斯州奥斯汀的 Robotaxi 被社交媒体视频曝光在公共道路上行驶混乱后，美国国家公路交通安全管理局（NHTSA）于周一对其展开接触。&lt;/p&gt;
+&lt;p&gt;　　埃隆・马斯克（Elon Musk）的电动汽车制造商于周日在奥斯汀推出自动驾驶出行服务，目前仅向少数受邀用户开放。&lt;/p&gt;
+&lt;p&gt;　　在网上广泛传播的视频中，一辆特斯拉 Robotaxi 被拍到逆行，另一辆则在车流中急刹车 —— 据描述是因 “对行驶路径外的静止警车作出反应”，类似事件还有多起。&lt;/p&gt;
+&lt;p&gt;　　NHTSA 发言人在电子邮件中表示，该机构 “已知晓相关事件，正在与制造商联系以收集更多信息”。&lt;/p&gt;
+&lt;p&gt;　　特斯拉车辆工程副总裁拉斯・莫拉维（Lars Moravy）和监管法律顾问凯西・布莱恩（Casey Blaine）暂未对置评请求作出回应。&lt;/p&gt;
+&lt;p&gt;　　美国联邦安全监管机构称，其不 “预先批准新技术或车辆系统”，而是由汽车制造商自行认证其生产的每款车型符合联邦机动车安全标准。该机构表示，将在评估大量报告和信息后，对 “涉及潜在安全缺陷的事件” 展开调查，并采取 “必要行动保护道路安全”。&lt;/p&gt;
+&lt;p&gt;　　此前，NHTSA 已因涉及伤亡事故，对特斯拉 FSD-Supervised 技术（即 FSD Beta 系统）的潜在安全缺陷启动调查，该调查仍在进行中。&lt;/p&gt;
+&lt;p&gt;　　奥斯汀的特斯拉 Robotaxi 为 Model Y 车型，配备了该公司最新的 FSD Unsupervised 软件和硬件。这项试点服务仅投入不到 24 辆车，在白天及良好天气条件下运行，副驾驶座设有人类安全监督员。&lt;/p&gt;
+&lt;p&gt;　　该服务目前仅限受邀用户，用户需同意特斯拉 “早期访问计划” 的条款。收到邀请的大多是特斯拉产品、股票及其 CEO 的推广者。&lt;/p&gt;
+&lt;p&gt;　　尽管该服务推动特斯拉股价周一大涨 8%，但其落地仍未兑现马斯克过去十年多次许下的无人驾驶承诺。&lt;/p&gt;
+&lt;p&gt;　　2015 年，马斯克告诉股东，特斯拉汽车将在三年内实现 “完全自动驾驶”；2016 年，他称特斯拉电动车将在 2017 年底前完成全程无人干预的跨国行驶；2019 年，在一场帮助其融资超 20 亿美元的机构投资者电话会议上，马斯克表示 2020 年将有 100 万辆具备 Robotaxi 功能的特斯拉车上路，每辆车每周可完成 100 小时驾驶工作，为车主创收。&lt;/p&gt;
+&lt;p&gt;　　然而这些承诺均未实现。&lt;/p&gt;
+&lt;p&gt;　　与此同时，&lt;span id="usstock_GOOG"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/GOOG.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;谷歌&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_GOOG"&gt;&lt;/span&gt;母公司 Alphabet 旗下的 Waymo 称其上月付费出行量已突破 1000 万次；中国的竞争对手，包括&lt;span id="usstock_BIDU"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/BIDU.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;百度&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_BIDU"&gt;&lt;/span&gt; Apollo Go、&lt;span id="usstock_WRD"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/WRD.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;文远知行&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_WRD"&gt;&lt;/span&gt;（WeRide）和小马智行（Pony.ai），也在运营商业化 Robotaxi 车队。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：郭明煜 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 24 Jun 2025 09:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMinAFBVV95cUxNM210Q2M3TkxiNHo0R2xIV0dSYjNZUHlqM3kwdklyelNmMUxuUks2amhhRHRTR0pBMGhROEdBYVkyd3pRdm5SQU1EYkxpOUlxd2poa3FfbGIzV0wxaURXVVBTNi1aUFhwUmR0ZE05NGZ0aFIwbko3dEdkc295czRwdjE0Z0V4SmZKcFFIa2dTS1h2NnUxcE5sQURSSEY</guid></item><item><title>BBA放弃挣扎 - 36Kr</title><link>https://news.google.com/rss/articles/CBMiTkFVX3lxTFBqRE53NVJGMVFrT0Rlb2NWdERwU1FkRUF1VkxkOVZJdjFtMzRWN3ZlNXVRYmFqeFRhYjZGRlBjcXBHaDlVM3g0eXNEazhsZw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
  
  
   &lt;p&gt;当年转型的口号喊得多响亮，如今刹车踩得就有多狼狈。&lt;/p&gt;
@@ -1677,132 +1850,4 @@ GPU，同时部署在Xbox和PlayStation等下一代游戏机中。&lt;/span&gt;&
 
 
 &lt;/section&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>极客公园</author><pubDate>Tue, 24 Jun 2025 04:46:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE43ZHRTXzJfMWZDdGFNT25iTWxNWVp1QWtOMjJ3QlVqQi1Wdk42OU1faVJibUZYTXpya1BnZ1pFcVEwWDMzSkNBelJhOEQ</guid></item><item><title>高到没人敢信！曝AMD Zen6 CPU频率将远超6.0GHz - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE43dXVxSk1sZnlreGhnQWFQUFM0dExZeHVkYXg3bk1ibEdFSzJFLU5ZSXg3VVU3dDBmM3l4UlliZm5fRHI4Z1pDbEtFLThSNjFTVGlmTk5QZlc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月24日消息，据最新爆料，&lt;span&gt;&lt;strong&gt;AMD明年推出的Zen 6桌面CPU可能拥有惊人的频率，将远超过6GHz。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;爆料者Moore’s Law Is Dead（MLID）在其最新视频中透露，AMD的Zen 6处理器不仅在核心数量增加，而且在核心频率上也有显著提升。&lt;/p&gt;
-&lt;p&gt;MLID表示，在与AMD的许多不同人士交谈后，&lt;strong&gt;发现Zen 6处理器的目标频率远不止6.0GHz，MLID 没有透露确切的加速频率数字，他表示“太疯狂了，没人会相信”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过其强调，这个数字将远高于6.0GHz，这也意味着不会是6.1GHz或6.2GHz，可能会达到6.4GHz甚至更高。&lt;/p&gt;
-&lt;p&gt;MLID补充道，AMD最初打算以5.0GHz以上的CPU频率推出Zen 4，但最终以超过5.7GHz的速度上市，而且从Zen 3到Zen 4只是一个单一节点的跳跃。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;但是Zen 6直接从台积电N4P到N3P，再到N2X ，几乎是三个工艺节点，这种巨大的工艺进步使得AMD有可能将Zen 6处理器的频率推至更高。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过需要注意的是，这些仅仅是目标频率，实际产品可能无法达到如此高的频率，在官方确认或有确凿证据之前，对于这些爆料还是要持谨慎态度。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/a88f701958184a05ba32b4716733a4b2.png" target="_blank"&gt;&lt;img alt="高到没人敢信！曝AMD Zen6 CPU频率将远超6.0GHz" h="397" src="//img1.mydrivers.com/img/20250624/s_a88f701958184a05ba32b4716733a4b2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 24 Jun 2025 04:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE43dXVxSk1sZnlreGhnQWFQUFM0dExZeHVkYXg3bk1ibEdFSzJFLU5ZSXg3VVU3dDBmM3l4UlliZm5fRHI4Z1pDbEtFLThSNjFTVGlmTk5QZlc</guid></item><item><title>特斯拉Robotaxi上线第一天问题多：严重画龙、直接停在十字路口 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1vMldqbXJuRENVbzB0WWpsQkYzcGFNTGhMQzNDbFdkRUx0WUFuSjZuT3UzMHk5SW43dDFEV001SGJFLVg2QWdvUjIzcUQxN3JYWERBcEhZbV8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月24日消息，当地时间22日，特斯拉Robotaxi终于在美国得州首府奥斯汀市正式开启服务，首批投放量大约在10-20辆。&lt;/p&gt;
-&lt;p&gt;敢投放市场，那就说明特斯拉对自家的自动驾驶能力有十足的信心，&lt;strong&gt;不过就体验而言，上线第一天还是暴露出了不少问题&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;从博主“不是郑小康”发布的&lt;a class="f14_link" href="http://t.cn/A6D4253J" target="_blank"&gt;视频&lt;/a&gt;中可以看到，&lt;strong&gt;&lt;span&gt;车辆在无标线左转时突然无故严重摆了几下方向盘，像是有一双无形大手在抢方向盘，导致车辆画龙，最后又回到了直行车道上&lt;/span&gt;&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250624/718d92e3-c060-4f21-934a-0086a8478b57.png" target="_blank"&gt;&lt;img alt="特斯拉Robotaxi上线第一天问题多：严重画龙、直接停在十字路口" h="306" src="//img1.mydrivers.com/img/20250624/S718d92e3-c060-4f21-934a-0086a8478b57.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;博主表示：想不出为啥会有这样的bug，这种级别的画龙在国产头部智驾上也非常罕见了，我自己开了几千公里FSD v13.2.6 也没遇到过，然而确实在用作Robotaxi 的 FSD v13.3 上出现了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;他认为这属于模型问题，因为特斯拉“直接用FSD v13这一代的基础模型做Robotaxi”&lt;/strong&gt;，同时他还预测称，如果使用参数量再大4.5倍的FSD v14，下一代模型的泛化性能要明显更高。&lt;/p&gt;
-&lt;p&gt;除了画龙，还有定位问题，&lt;strong&gt;&lt;span&gt;有体验的用户在App上点了停车后，车辆竟然直接停在了十字路口&lt;/span&gt;&lt;/strong&gt;；此外，不少体验者叫了车，但得走一段找找车，而不是实现精准的“车找人”。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250624/51b09896-869b-47f3-a2c3-798a041999e6.png" target="_blank"&gt;&lt;img alt="特斯拉Robotaxi上线第一天问题多：严重画龙、直接停在十字路口" h="347" src="//img1.mydrivers.com/img/20250624/S51b09896-869b-47f3-a2c3-798a041999e6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;对于这两个问题，博主认为更类似网约车的运营问题，“既然特斯拉不选择和Uber/Left合作，那么构建一个网约车平台所需的运营上的know-how，就得自己一点点来了。”&lt;/p&gt;
-&lt;p&gt;当然话又说回来了，技术进步的过程中难免会存在各种问题，暴露出来反而是好事，&lt;strong&gt;期待随着OTA的迭代，特斯拉能早日去掉安全员，让车辆真正意义上成为无人驾驶出租车&lt;/strong&gt;。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 24 Jun 2025 04:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1vMldqbXJuRENVbzB0WWpsQkYzcGFNTGhMQzNDbFdkRUx0WUFuSjZuT3UzMHk5SW43dDFEV001SGJFLVg2QWdvUjIzcUQxN3JYWERBcEhZbV8</guid></item><item><title>iPadOS 26 可能用来办公，但用 iPadOS 26 办公有点不可能 - 爱范儿</title><link>https://news.google.com/rss/articles/CBMiQ0FVX3lxTFB2azdnbEVIRHJRS3V3Yi1JS0g3ZjlFalFpWU1uc0hncU83VlVaUS01SUxUeVgxa3NrV25RZ1VVRFRRUmM?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
-  
-&lt;p&gt;在刚刚过去的 WWDC25 上，虽然大部分的目光都集中在了跨平台的视觉系统改动上，但 iPadOS 26 迎来的新东西却远不止这些。其中最引人注目的，就是 iPadOS 26 里面全新的多任务和多窗口操作机制。&lt;/p&gt;
-&lt;p&gt;自从十年前 iPad 正式推出了「Pro」款开始，iPad 的生产力就一直是一个充满了矛盾与争论的话题，这个话题在 2021 年苹果将 Mac 同款的 M1 处理器装进第五代 iPad Pro 之后更是甚嚣尘上、直到今天——毕竟现在的 iPad 使用着和 Mac 几乎一模一样的 SoC，iPad 作为平板电脑和真电脑之间的差距，几乎就只剩下 iPadOS 了。&lt;/p&gt;
-&lt;p&gt;然而大改款的 iPadOS 26 真的能够成为 iPad 生产力的救赎吗？&lt;/p&gt;
-&lt;h2&gt;新的窗口化 app 机制&lt;/h2&gt;
-&lt;p&gt;在连续一两年令人打哈欠的 WWDC 之后，iPadOS 26 除了版本号之外，终于有了一项足以让人耳目一新的东西：一套全新的窗口化操作逻辑。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628137" src="https://s3.ifanr.com/wp-content/uploads/2025/06/1-iPadOS-26-windowing-demo.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/1-iPadOS-26-windowing-demo.gif 480w, https://s3.ifanr.com/wp-content/uploads/2025/06/1-iPadOS-26-windowing-demo-360x224.gif 360w" sizes="(max-width: 480px) 100vw, 480px"&gt;&lt;/p&gt;
-&lt;p&gt;对于 Mac 用户来说，这套新的 iPad 窗口交互绝对不会让你感到陌生，iPadOS 26 基本是将 macOS 中现有的窗口功能原封不动的搬进了 iPad ——包括分屏的样式和种类：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628138" src="https://s3.ifanr.com/wp-content/uploads/2025/06/2-macOS-current-window.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/2-macOS-current-window.png!720 2466w, https://s3.ifanr.com/wp-content/uploads/2025/06/2-macOS-current-window-360x220.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/2-macOS-current-window-768x470.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/2-macOS-current-window-1024x626.png 1024w" sizes="(max-width: 2466px) 100vw, 2466px"&gt;&lt;/p&gt;
-&lt;p&gt;此外，iPadOS 26 中的分屏相比 macOS 还多了一点交互性，目前大家比较熟悉的 Windows 窗口分屏需要用鼠标拖着窗口贴到屏幕边缘才会出发，大多数 macOS 上的第三方分屏工具也承袭了这个操作逻辑。但是在 iPadOS 26 上，左右分屏的动作实际上是需要拖着窗口向左右「甩」出去才会触发的：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628139" src="https://s3.ifanr.com/wp-content/uploads/2025/06/3-ipados-split-windows-sweep.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/3-ipados-split-windows-sweep.gif 480w, https://s3.ifanr.com/wp-content/uploads/2025/06/3-ipados-split-windows-sweep-360x270.gif 360w" sizes="(max-width: 480px) 100vw, 480px"&gt;&lt;/p&gt;
-&lt;p&gt;这样一步额外的动作在触屏的时候尚属可以理解，但是现在 iPad 越来越重视键鼠配件、除了 iPad mini 的所有型号都有对应的妙控键盘套了，「甩出」这个动作就和 Windows 与 macOS 中已经形成的肌肉记忆冲突，并不是非常的直观。&lt;/p&gt;
-&lt;p&gt;除了窗口化管理之外，iPadOS 26 还带来了一个名为「Exposé」的功能，在前台有多个 app 窗口打开的时候可以通过上滑悬停的方式进入一个类似后台任务的界面。所有以窗口打开的 app 会集中显示在中间，而全屏的 app 则隐藏在屏幕左侧：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628140" src="https://s3.ifanr.com/wp-content/uploads/2025/06/4-ipados-expose-to-multi.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/4-ipados-expose-to-multi.gif 480w, https://s3.ifanr.com/wp-content/uploads/2025/06/4-ipados-expose-to-multi-360x270.gif 360w" sizes="(max-width: 480px) 100vw, 480px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;iPadOS 26 Exposé&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;但是 Exposé 与 iPadOS 原有的后台界面又是不一样的，因为在两次上滑、隐藏所有窗口化 app 之后，再次进入后台就会发现它们不再平铺开来，而是堆叠在了一起：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628141" src="https://s3.ifanr.com/wp-content/uploads/2025/06/5-ipados-background-stack.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/5-ipados-background-stack.jpg!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/5-ipados-background-stack-360x270.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/5-ipados-background-stack-768x576.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/5-ipados-background-stack-1024x768.jpg 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;iPadOS 26 后台，Exposé 窗口化的 app 会堆叠在一起&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这真的是一个非常奇怪且别扭的功能。因为对于 Mac 用户来说，Exposé 实际上是一个完全不同的功能，它的用途是平铺展示当前应用程序打开的所有窗口（比如 Finder 同时打开的多个文件夹），而不是展示所有桌面上打开的窗口：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628142" src="https://s3.ifanr.com/wp-content/uploads/2025/06/6-macos-expose-demo.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/6-macos-expose-demo.gif 480w, https://s3.ifanr.com/wp-content/uploads/2025/06/6-macos-expose-demo-360x317.gif 360w" sizes="(max-width: 480px) 100vw, 480px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;macOS Exposé&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;更要命的是，macOS 上的 Exposé 手势方向与 iPadOS 都是完全相反的，如果你同时有一台 Mac 和一台 iPad，就会面临着非常拧巴的习惯。从 iPadOS Exposé 的效果来看，这个功能应该被叫做调度中心（Mission Control）才对。&lt;/p&gt;
-&lt;p&gt;此外，虽然 iPadOS 26 引入了新的窗口机制，但苹果没有告诉你的是，它们还移除了一项 iPadOS 上曾经有的多窗口功能：Slide Over。也就是那个允许你用类似 iPhone 的长宽比，在全屏显示的 app 上额外叠加一个或多个 app 小窗口的用法——&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628143" src="https://s3.ifanr.com/wp-content/uploads/2025/06/7-ipad-slide-over-old.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/7-ipad-slide-over-old.gif 480w, https://s3.ifanr.com/wp-content/uploads/2025/06/7-ipad-slide-over-old-360x258.gif 360w" sizes="(max-width: 480px) 100vw, 480px"&gt;&lt;/p&gt;
-&lt;p&gt;这项自 iOS 11 加入 iPad 的功能一直保留到了 iPadOS 18，哪怕有了 Stage Manager 苹果也没有将 Slide Over 移除。它在看视频或者写东西的时候进行一些快速的查询或者消息回复其实是很好用的，甚至比单独拉一个窗口更加便捷。更何况 Slide Over 和多窗口其实并不冲突，不确定苹果后续是否会在更新中将它加回来。&lt;/p&gt;
-&lt;h2&gt;新旧交替的文件管理逻辑&lt;/h2&gt;
-&lt;p&gt;自从「文件」app 被加入 iOS 再继承到 iPadOS 上，它与 Finder 在功能性上的差距就一直被人诟病，归根结底还是 iPadOS 底层依然采用的沙盒机制，导致很难做出一个能够同时打通应用层和文件层的文件管理器。&lt;/p&gt;
-&lt;p&gt;而在 iPadOS 26 中，苹果再次尝试对这个问题做出了增补，围绕着文件 app 引入了不少增强功能。虽然沙盒机制的底层没有办法改变，但一部分更新功能还是让使用方便了不少的。&lt;/p&gt;
-&lt;p&gt;首先，文件 app 中的显示方式相比 iPadOS 18 有所增加，除了图标和详细列表之外，现在还新增了一个「分栏」的样式。至此，除了画廊（Gallery）视图之外，iPadOS 和 macOS 的文件显示方式已经基本实现了统一。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628144" src="https://s3.ifanr.com/wp-content/uploads/2025/06/8-ipados-files-column.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/8-ipados-files-column.png!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/8-ipados-files-column-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/8-ipados-files-column-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/8-ipados-files-column-1024x768.png 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;此外，iPadOS 26 终于允许自定义文件夹的图标和颜色了，用户自己创建的文件夹也可以像系统文件那样拥有单独的 emoji 标识和特殊的颜色。不过文件夹的颜色并不能 100% 自定义，而是需要与用户设置的「标签」绑定：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628145" src="https://s3.ifanr.com/wp-content/uploads/2025/06/9-ipad-files-customization.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/9-ipad-files-customization.png!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/9-ipad-files-customization-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/9-ipad-files-customization-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/9-ipad-files-customization-1024x768.png 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;与此同时，macOS 上的强力工具「预览」也终于来到了 iPadOS 26 中，并且拥有了一个全新的独立启动界面。文件 app 和 iCloud 云盘里面绝大多数常见的文件都可以直接用预览打开，甚至包括 psd 和 ai 文件，也支持进行简单批注或编辑导出：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628160" src="https://s3.ifanr.com/wp-content/uploads/2025/06/10-file-colum-view-1.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/10-file-colum-view-1.jpg!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/10-file-colum-view-1-360x270.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/10-file-colum-view-1-768x576.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/10-file-colum-view-1-1024x768.jpg 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;iPad 拥有了独立的预览 app，最大的意义还是在于解决了一部分由于沙盒机制导致的不便，此前虽然可以很方便的从 Mac 上传输各种各样的文件给 iPad，但是想在 iPad 上查看这些文件却很麻烦，十有八九都得下载对应的 app 才能打开。&lt;/p&gt;
-&lt;p&gt;现在有了预览 app，iPadOS 在文件管理的能力上终于接近了 macOS ——换句话说，接近一台正儿八经的电脑了：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628147" src="https://s3.ifanr.com/wp-content/uploads/2025/06/11-ipados-preview-app.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/11-ipados-preview-app.png!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/11-ipados-preview-app-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/11-ipados-preview-app-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/11-ipados-preview-app-1024x768.png 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;h2&gt;问题的根源并不在窗口模式&lt;/h2&gt;
-&lt;p&gt;虽然上述 iPadOS 26 在操作方式和文件管理方面的更新可以称得上一次大改，但仅就 Developer Beta 1 目前的表现来看，其中仍然有一些根本性的问题没有得到解决。&lt;/p&gt;
-&lt;p&gt;其中最致命的，就是 iPad 要兼顾触控与键鼠两种操作方式而引起的矛盾。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628148" src="https://s3.ifanr.com/wp-content/uploads/2025/06/12-ipad-demo-gorilla-arm.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/12-ipad-demo-gorilla-arm.jpg!720 5120w, https://s3.ifanr.com/wp-content/uploads/2025/06/12-ipad-demo-gorilla-arm-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/12-ipad-demo-gorilla-arm-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/12-ipad-demo-gorilla-arm-1024x576.jpg 1024w" sizes="(max-width: 5120px) 100vw, 5120px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;甚至 WWDC25 的官方视频都是在接着键盘用触屏&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;其实从操作方式的角度看，iPad 是所有苹果产品中最具多样性的那个——比起不能触摸的 macOS 和不能用笔的 iOS，iPadOS 真正做到了「前可伸手点屏幕、中可提笔画批注、退可键鼠移窗口」，苹果过去三十年所有人机交互技术的结晶基本上都在 iPad 上得到了体现。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628149" src="https://s3.ifanr.com/wp-content/uploads/2025/06/13-apple-pencil-scene.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/13-apple-pencil-scene.jpg!720 6240w, https://s3.ifanr.com/wp-content/uploads/2025/06/13-apple-pencil-scene-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/13-apple-pencil-scene-768x512.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/13-apple-pencil-scene-1024x683.jpg 1024w" sizes="(max-width: 6240px) 100vw, 6240px"&gt;&lt;/p&gt;
-&lt;p&gt;对于 iPad 的传统长项来说，iPadOS 26 所带来的改变并不多。无论是窗口化 app 还是文件管理，对于类似图片后期、平面设计、美术之类需要专注于单一 app 的使用方式，新系统带来的新机制更多起到的还是辅助作用，工作效率本身并没有什么飞跃式的提升。&lt;/p&gt;
-&lt;p&gt;然而物理的规律决定了，在体积有限的前提下，一个电子产品的功能越是多样化，它在每一种工具上的优化程度就越低，即所谓「专用工具」与「泛用工具」之间的区别。&lt;/p&gt;
-&lt;p&gt;不巧的是，无论是 iPad 的功能历史还是硬件配置，都决定了它是一台超级泛用的设备。&lt;/p&gt;
-&lt;p&gt;只不过在文字工作方面，反而是 iPadOS 26 中更新的一个不起眼的小功能起到了最大的效果——现在 iPadOS 连接鼠标后显示的光标，终于不再是模拟触控的圆圈，而是一个像样的三角形箭头了：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628150" src="https://s3.ifanr.com/wp-content/uploads/2025/06/14-ipados-new-cursor.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/14-ipados-new-cursor.png!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/14-ipados-new-cursor-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/14-ipados-new-cursor-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/14-ipados-new-cursor-1024x768.png 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;虽然这个改动看上去不明显，但是在部分涉及到紧凑界面和高密度内容时候，一个看起来「像电脑光标」的光标还是非常直观的，尤其是 iPadOS 26 为很多小尺寸的 iPad 也带来了多窗口堆叠之后，更精细的光标将会是一个必需品。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628151" src="https://s3.ifanr.com/wp-content/uploads/2025/06/15-ipad-word-split-screen.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/15-ipad-word-split-screen.png!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/15-ipad-word-split-screen-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/15-ipad-word-split-screen-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/15-ipad-word-split-screen-1024x768.png 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;一个典型的文字编辑场景在 iPad 上的显示&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;然而 iPad 本身的问题在这里依然是存在的：哪怕在 13 寸的机型上，因为 iPadOS 的各种窗口界面要在兼顾 Apple Pencil 批画和鼠标点击的同时，保持可以用手指触屏的基础，因此必须要将很多按钮和区域的面积做大，导致 iPad 同屏多窗口的能力始终无法与 Mac 看齐。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628152" src="https://s3.ifanr.com/wp-content/uploads/2025/06/16-ipad-vs-mac-in-word-editing.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/16-ipad-vs-mac-in-word-editing.png!720 6183w, https://s3.ifanr.com/wp-content/uploads/2025/06/16-ipad-vs-mac-in-word-editing-360x130.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/16-ipad-vs-mac-in-word-editing-768x277.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/16-ipad-vs-mac-in-word-editing-1024x370.png 1024w" sizes="(max-width: 6183px) 100vw, 6183px"&gt;&lt;/p&gt;
-&lt;p&gt;而相同的三个窗口放在 macOS 上，因为根本不需要为触屏做优化，因此界面无论是信息密度还是工具的丰富程度都要比 iPadOS 多不少。至少从 iPadOS 26 的角度上看，iPad 仍然是一个面向「全屏应用」为主的工具。&lt;/p&gt;
-&lt;p&gt;同样的问题在「终极办公工具」——Excel 上面则会更明显一些。&lt;/p&gt;
-&lt;p&gt;与写作、绘画之类从零开始创造的工作流程不同，表格数据处理起来通常需要进行大量的切屏参考、数据粘贴、编辑公式之类的操作。可一旦涉及到编辑操作，iPadOS 在面对 Excel 时最大的问题就会浮现出来：它的界面完全没有为任何一种操作方式做出优化。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628153" src="https://s3.ifanr.com/wp-content/uploads/2025/06/17-Excel-on-ipad-decaff.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/17-Excel-on-ipad-decaff.png!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/17-Excel-on-ipad-decaff-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/17-Excel-on-ipad-decaff-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/17-Excel-on-ipad-decaff-1024x768.png 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;数据已经过脱敏处理&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;以最基础的用表格数据生成透视表（pivot table）为例，哪怕放在面积最充裕的 13 寸 iPad 上，Excel 用于添加透视表过滤器的界面因为需要考虑触屏操作而将 UI 控件放的很大， 一旦筛选项超过三四个，所需的点击和拖拽操作就会变成一种折磨。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628154" src="https://s3.ifanr.com/wp-content/uploads/2025/06/18-Excel-compare.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/18-Excel-compare.jpg!720 6680w, https://s3.ifanr.com/wp-content/uploads/2025/06/18-Excel-compare-360x137.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/18-Excel-compare-768x291.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/18-Excel-compare-1024x388.jpg 1024w" sizes="(max-width: 6680px) 100vw, 6680px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;数据已经过脱敏处理&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;而相同的两张 Excel 表在 macOS 上的空间相比之下就充裕了许多，哪怕不考虑 MacBook 屏幕尺寸、缩放比例之类的要素，仅从工具栏的显示效率来说，只需要考虑键鼠的 macOS 就比 iPadOS 高出了几个量级。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628155" src="https://s3.ifanr.com/wp-content/uploads/2025/06/19-Tool-bar-efficiency.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/19-Tool-bar-efficiency.jpg!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/19-Tool-bar-efficiency-360x100.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/19-Tool-bar-efficiency-768x213.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/19-Tool-bar-efficiency-1024x284.jpg 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;p&gt;类似的界面问题在 Office 三件套中都可以遇到，也可以在大量「传统办公软件」中看到。这归根结底还是因为 iPad 需要同时满足手指和键鼠两种不同的交互方式，导致必然会有一部分显示上的浪费。再加上 iPad 的显示面积普遍都小于或等于 Mac，更加局促的界面将会变成必然。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628156" src="https://s3.ifanr.com/wp-content/uploads/2025/06/20-Excel-full-screen-decaff.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/20-Excel-full-screen-decaff.jpg!720 2732w, https://s3.ifanr.com/wp-content/uploads/2025/06/20-Excel-full-screen-decaff-360x270.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/20-Excel-full-screen-decaff-768x576.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/20-Excel-full-screen-decaff-1024x768.jpg 1024w" sizes="(max-width: 2732px) 100vw, 2732px"&gt;&lt;/p&gt;
-&lt;h2&gt;iPad 更需要一次生产端的革命&lt;/h2&gt;
-&lt;p&gt;如果从一个更宏观的视角来看这个现象，也就揭示了 iPad 现阶段在生产力上面临的最大的问题：&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;在绘画、3D 等等创意领域以外的「传统生产力场景」中，iPad 因为需要优先考虑触控操作，先天性的无法适配过去几十年中围绕着键鼠操作而形成的软件生态与使用习惯。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;这件事情甚至与 iPad 上的软件功能全不全、硬件设计合不合理都无关，而是根植在用户使用习惯与大的社会生产环境中的，仅凭 iPadOS 的一次更新并不会对其产生显著影响。&lt;/p&gt;
-&lt;p&gt;这也是为什么你会看到，现在 iPad 所高度适配的那些生产力场景——比如餐厅点单、轻量剪辑、移动办公等等，其实都是在最近十年、甚至就是跟随着平板电脑这种产品面世以来才逐渐出现的。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628157" src="https://s3.ifanr.com/wp-content/uploads/2025/06/21-traditional-ipad-productivity.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/21-traditional-ipad-productivity.jpg!720 6016w, https://s3.ifanr.com/wp-content/uploads/2025/06/21-traditional-ipad-productivity-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/21-traditional-ipad-productivity-768x513.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/21-traditional-ipad-productivity-1024x684.jpg 1024w" sizes="(max-width: 6016px) 100vw, 6016px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;尤其在数字艺术领域，iPad 的便捷让许多过去无法实现的工作方式成为了可能&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;而在那些更加传统的生产力场景，那些在几十年的发展中接近完善的行业流程和使用环境——比如会计——里面，iPad 所扮演的更多仍然是「PC 伴侣」的角色，并没有体现出要取代电脑或者成为新的主要工具的趋势。&lt;/p&gt;
-&lt;p&gt;这也是为什么大家总会调侃：你的下一台电脑，还得是电脑。这句话的另一面，是因为在那些特化的领域里，你的上一台设备本来就不是电脑：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628158" src="https://s3.ifanr.com/wp-content/uploads/2025/06/22-wacom-cintiq-demo.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/22-wacom-cintiq-demo.jpeg!720 960w, https://s3.ifanr.com/wp-content/uploads/2025/06/22-wacom-cintiq-demo-360x240.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/22-wacom-cintiq-demo-768x512.jpeg 768w" sizes="(max-width: 960px) 100vw, 960px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;然而一旦涉及到规模巨大、需要多人协同的美术项目，终极解决方案仍然是一块巨大的数位屏｜The Outerhaven&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;因此，iPad 有生产力吗？当然有，它已经成功的在社会生产里开拓出了专属于自己的生产场景，在这些场景里面没有任何一台电脑可以超过 iPad；iPadOS 26 的新窗口化功能、新文件管理系统可以给生产力带来提升吗？毫无疑问。&lt;/p&gt;
-&lt;p&gt;但是在一方面，背靠市面上最完善的平板软件生态，iPad 毫无疑问已经成为了全世界几千万人日常生活中的伴侣。另一方面，作为一款已经存在了十五年的成功商业产品，如今却依然会被问起：它可以用来做什么？不得不说也是一种奇景。&lt;/p&gt;
-&lt;p&gt;iPad 夹在智能手机和笔记本电脑中间，同时拥有两者的血脉，却没有办法完全融入任何一方；它既像是一个可以用来生产的工具，诸多使用场景上的限制却又把它框在了内容消遣的笼子里。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628159" src="https://s3.ifanr.com/wp-content/uploads/2025/06/23-ipad-in-consruction.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/23-ipad-in-consruction.jpeg!720 2000w, https://s3.ifanr.com/wp-content/uploads/2025/06/23-ipad-in-consruction-360x241.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/23-ipad-in-consruction-768x513.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/23-ipad-in-consruction-1024x685.jpeg 1024w" sizes="(max-width: 2000px) 100vw, 2000px"&gt;&lt;br&gt;
-&lt;span&gt;图｜Site Title&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;但我们更需要知道的是，生活中还有很多比 iPad 存在时间更长，更加基础甚至都不被察觉到的生产力场景，iPad 在这些场景中大多只是一个辅助工具，远非生产行为本身。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;因此，也许是时候停止追问「iPad 有没有生产力」这个问题了。相比之下，人们更该问的是：我可以用 iPad 创造出什么？&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Tue, 24 Jun 2025 04:11:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTFB2azdnbEVIRHJRS3V3Yi1JS0g3ZjlFalFpWU1uc0hncU83VlVaUS01SUxUeVgxa3NrV25RZ1VVRFRRUmM</guid></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>极客公园</author><pubDate>Tue, 24 Jun 2025 04:46:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE43ZHRTXzJfMWZDdGFNT25iTWxNWVp1QWtOMjJ3QlVqQi1Wdk42OU1faVJibUZYTXpya1BnZ1pFcVEwWDMzSkNBelJhOEQ</guid></item></channel></rss>
