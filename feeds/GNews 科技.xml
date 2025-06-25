@@ -1,5 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>早报｜高考成绩出炉，宇树王兴兴报考建议火了/雷军：预计小米YU7 会和SU7 一样火爆/苹果官网上线国补 - 爱范儿</title><link>https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBQM3VpRHZnSlFsZzBNNEhuUG5SM3ZWa1hVcjZHLS00TkVPYlRKUlk0RDJLNUZRT1R2TEdlLWxVX2xEU1k?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>断网都没用，机器人终于「摆脱」人类控制！Google 首发离线 AI 大脑，一句话让它干活 - 爱范儿</title><link>https://news.google.com/rss/articles/CBMiQ0FVX3lxTE4xRFBrLXROVTBQa1V2elJjek5jWUI3YkxNSnNYQkZZblJCZWtvQWJmUnpheHQwSVlPSW5jOVVpTmdfeUk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
+            &lt;p class="o-single-normal-content"&gt;
+              &lt;h1 class="c-single-normal__title"&gt;断网都没用，机器人终于「摆脱」人类控制！Google 首发离线 AI 大脑，一句话让它干活&lt;/h1&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  &lt;p&gt;在影视作品里，我们看过太多机器人失控的场面。一些应对方案的段子也早已烂熟于心：断网、拔电、重启三连，一键送它回炉重造。&lt;/p&gt;
+&lt;p&gt;但现在，这一套流程可能不太管用了。&lt;/p&gt;
+&lt;p&gt;今天，Google DeepMind 推出了一款全新机器人控制模型——Gemini Robotics On-Device。这款大模型能在机器人本地运行，集视觉识别、语言理解和动作执行于一体。&lt;/p&gt;
+&lt;p&gt;而它最大亮点在于，即使完全离线，它也能理解人类指令，流畅完成任务。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628324" src="https://s3.ifanr.com/wp-content/uploads/2025/06/1-22.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/1-22.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2025/06/1-22-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/1-22-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/1-22-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;比起诸如 ChatGPT、Gemini 等擅长聊天、写作、答题的大模型，Gemini Robotics On-Device 则给机器人装上了一个真正的「大脑」，让其也能具备类似的理解力和执行力。&lt;/p&gt;
+&lt;p&gt;它本质上是一个专为双臂机器人打造的 VLA 基础模型，顾名思义，Vision（视觉）+Language（语言）+Action（动作），三者结合，看得见、听得懂、动得了，是它的基本素养。&lt;/p&gt;
+&lt;p&gt;举例而言，你可以对机器人发出请求：「请把这件衣服叠好，再放进背包里，拉上拉链。」过去这需要提前编写程序、分解动作，现在 Gemini On-Device 可以直接理解这句话的意思，然后一步一步执行下来。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628325" src="https://s3.ifanr.com/wp-content/uploads/2025/06/2.gif.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/2.gif.gif 640w, https://s3.ifanr.com/wp-content/uploads/2025/06/2.gif-360x203.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
+&lt;p&gt;那既然联网也能跑，为什么还要费劲折腾本地运行？答案不外乎速度和稳定性。&lt;/p&gt;
+&lt;p&gt;机器人若需将数据传至云端、等待服务器分析再返回结果，必然产生延迟。在医疗操作、灾难救援、工厂自动化等任务中，延迟容错空间几乎为零。何况，现实中许多地方网络条件差，甚至完全无网。&lt;/p&gt;
+&lt;p&gt;实际上，让机器人顺利应对复杂、动态的现实任务，一直是 AI 领域最难啃的骨头之一。&lt;/p&gt;
+&lt;p&gt;从公开视频看，Gemini On-Device 已能胜任多种常见场景，如叠衣、拉链、抓取陌生物体并放置到指定位置。而这一切得益于它的学习机制。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628327" src="https://s3.ifanr.com/wp-content/uploads/2025/06/3-21.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/3-21.png!720 1232w, https://s3.ifanr.com/wp-content/uploads/2025/06/3-21-360x226.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/3-21-768x483.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/3-21-1024x644.png 1024w" sizes="(max-width: 1232px) 100vw, 1232px"&gt;&lt;/p&gt;
+
+&lt;p&gt;它不需要从零开始进行长时间训练，开发者仅需提供 50 至 100 次人工演示，如亲自操控机器人叠衣，模型便能迅速学会并独立操作。&lt;/p&gt;
+&lt;p&gt;在更具挑战性的分布式任务或复杂的多步骤指令执行中，Gemini Robotics On-Device 的表现依然优于目前其他本地运行的替代方案。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628328" src="https://s3.ifanr.com/wp-content/uploads/2025/06/4-19.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/4-19.png!720 1232w, https://s3.ifanr.com/wp-content/uploads/2025/06/4-19-360x226.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/4-19-768x483.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/4-19-1024x644.png 1024w" sizes="(max-width: 1232px) 100vw, 1232px"&gt;&lt;/p&gt;
+&lt;p&gt;而且，它的适配性也很强。&lt;/p&gt;
+&lt;p&gt;虽然 Gemini Robotics On-Device 最初在 Google 自研的 ALOHA 双臂机器人平台上进行训练的 ，但稍加适配，它也能稳定运行于 Franka FR3 工业机械臂。&lt;/p&gt;
+&lt;p&gt;甚至结构迥异的人形机器人 Apollo 也能丝滑运行，同一个通用模型通过少量学习，就习惯了完全不同的身体形态。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628329" src="https://s3.ifanr.com/wp-content/uploads/2025/06/5-3.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/5-3.gif 640w, https://s3.ifanr.com/wp-content/uploads/2025/06/5-3-360x203.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
+&lt;p&gt;理想情况下，开发者无需为每种新机器人重新训练一个 AI，只需训练一次通用模型，之后通过轻量级的迁移学习即可部署到各式各样的机器人平台上。这种「一模多用」的能力将有望加速机器人技术的普及和应用。&lt;/p&gt;
+&lt;p&gt;当然，理想归理想，它也还有短板。&lt;/p&gt;
+&lt;p&gt;随着机器人智能与自主性提升，安全要求也随之提高。Gemini On-Device 虽然能执行动作，但它并不能合理判断你给的任务是否安全，因此，必须为模型加装「安全栓」。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628330" src="https://s3.ifanr.com/wp-content/uploads/2025/06/6-18.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/6-18.png!720 726w, https://s3.ifanr.com/wp-content/uploads/2025/06/6-18-360x378.png 360w" sizes="(max-width: 726px) 100vw, 726px"&gt;&lt;/p&gt;
+&lt;p&gt;DeepMind 给出的建议是，开发者可以给模型接入 Google Gemini Live API 接口，让系统先判断这个指令合不合理，再决定是否执行；同时在动作层面设置物理限制，如力度、角度、速度，以防意外。&lt;/p&gt;
+&lt;p&gt;此外，模型多步骤逻辑规划能力仍有提升空间。&lt;/p&gt;
+&lt;p&gt;像做三明治、整理桌面这这类需要先后逻辑、顺序安排的操作，目前还不在它的舒适区。这和它所基于的 Gemini 2.0 架构有关，未来随着升级到 2.5，这部分能力可能也会补齐。&lt;/p&gt;
+&lt;p&gt;另一个现实挑战，是数据。&lt;/p&gt;
+&lt;p&gt;虽然它只需几十次演示就能上手，但最理想的示范，是由真人实际操控机器人时采集的真实数据，而不是虚拟模拟。这类数据训练出来的效果，更快、更准，也更稳定。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1628331" src="https://s3.ifanr.com/wp-content/uploads/2025/06/8-13.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/06/8-13.png!720 1174w, https://s3.ifanr.com/wp-content/uploads/2025/06/8-13-360x375.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/06/8-13-768x799.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/06/8-13-984x1024.png 984w" sizes="(max-width: 1174px) 100vw, 1174px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲技术报告地址：https://arxiv.org/pdf/2503.20020&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;据项目负责人 Carolina Parada 介绍，这是 Google 首次发布完全脱离云端运行的机器人 AI 模型，也是首个供开发者根据自身需求进行微调的版本。&lt;/p&gt;
+&lt;p&gt;目前，DeepMind 向「可信测试者」开放了 Gemini Robotics On-Device 的 SDK 和模型访问权限。如果你是做机器人开发、工业自动化，或智能系统研究的开发者，现在就可以申请试用。&lt;/p&gt;
+&lt;p&gt;附上申请链接：https://docs.google.com/forms/d/1sM5GqcVMWv-KmKY3TOMpVtQ-lDFeAftQ-d9xQn92jCE/edit?ts=67cef986&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 25 Jun 2025 03:57:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE4xRFBrLXROVTBQa1V2elJjek5jWUI3YkxNSnNYQkZZblJCZWtvQWJmUnpheHQwSVlPSW5jOVVpTmdfeUk</guid></item><item><title>明晚发布！小米AI眼镜正式官宣：下一代个人智能设备 - 3DM</title><link>https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sNUJTR2NiTldqZkxHeUpLbmFMbzFJcXkzT09DZENqR2J5YXg2Q2FoRkN3SWpINnRIQnFCNU1xOC1iTXRBeWc3X1kzZkFYc3hDMTFlckp3WnRNdk9H?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;明晚发布！小米AI眼镜正式官宣：下一代个人智能设备&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2025-06-25 11:32:08&lt;/span&gt;&lt;/p&gt;
+            
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/0625/1750822316317.jpg" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	酝酿许久，小米AI眼镜终于官宣，号称是面向下一代的个人智能设备。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;这款产品也将在明晚的发布会上正式登场。&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;a href="https://img1.mydrivers.com/img/20250625/7409c8c6-5bb2-46d2-a4ec-95fd2e696d05.jpg" target="_self"&gt;&lt;img alt="明晚发布！小米AI眼镜正式官宣：下一代个人智能设备" src="https://img.3dmgame.com/uploads/images/xiaz/20250625/1750822314_768997.jpg"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	其实这款眼镜早在去年就已经被爆料出来，只是小米官方一直都没有透露任何消息。
+&lt;/p&gt;
+&lt;p&gt;
+	根据爆料，这款产品定位类似Meta雷朋，后者是目前全球范围卖得最好的AI眼镜。
+&lt;/p&gt;
+&lt;p&gt;
+	作为小米首款真AI智能眼镜，该产品将采用双芯架构，并且自带镜头，预计能实现Meta雷朋一样的拍摄效果。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img alt="明晚发布！小米AI眼镜正式官宣：下一代个人智能设备" src="https://img.3dmgame.com/uploads/images/xiaz/20250625/1750822314_721908.jpg"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	预计还能通过镜头来感知现实世界，结合AI带来非常丰富的玩法，比如类似苹果视觉智能的功能，可以通过镜头识别物品，自动识别餐厅等，并给出价位、评分等等。
+&lt;/p&gt;
+&lt;p&gt;
+	爆料称这款产品并没有配备屏幕，所以交互方面大概率是以触摸、语音为主，或许还会基于AI识别做到手势操控，不过误操作方面会比较难优化。
+&lt;/p&gt;
+&lt;p&gt;
+	这也符合早在去年就出现的爆料，当时有消息称小米AI眼镜与歌尔合作打造，搭载AI功能、音频耳机模块、摄像头模块，并以小米自有品牌形式发布，而不是“MIJIA”。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img alt="明晚发布！小米AI眼镜正式官宣：下一代个人智能设备" src="https://img.3dmgame.com/uploads/images/xiaz/20250625/1750822314_179051.jpg"&gt;
+&lt;/p&gt;                                &lt;/div&gt;
+                                                &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Wed, 25 Jun 2025 03:32:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE9sNUJTR2NiTldqZkxHeUpLbmFMbzFJcXkzT09DZENqR2J5YXg2Q2FoRkN3SWpINnRIQnFCNU1xOC1iTXRBeWc3X1kzZkFYc3hDMTFlckp3WnRNdk9H</guid></item><item><title>稳定币的下一站：国际支付、美股代币化与AI Agent - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KNVpyT205RzcydW9qbFRZSHF3d1UzY3JRTFhqY1lPS3BlTXAwMUo1R0EtNDU2THl3cS1zUERFNVpIUW9zTWVEUzYtbXlYbUFNZTV3?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 25 Jun 2025 03:21:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9KNVpyT205RzcydW9qbFRZSHF3d1UzY3JRTFhqY1lPS3BlTXAwMUo1R0EtNDU2THl3cS1zUERFNVpIUW9zTWVEUzYtbXlYbUFNZTV3</guid></item><item><title>早报｜高考成绩出炉，宇树王兴兴报考建议火了/雷军：预计小米YU7 会和SU7 一样火爆/苹果官网上线国补 - 爱范儿</title><link>https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBQM3VpRHZnSlFsZzBNNEhuUG5SM3ZWa1hVcjZHLS00TkVPYlRKUlk0RDJLNUZRT1R2TEdlLWxVX2xEU1k?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
   
 &lt;div&gt;
 
@@ -193,7 +298,101 @@
 &lt;p&gt;该片由尹露监制，邱玉洁编剧、导演，蒋奇明、张艺凡领衔主演。&lt;/p&gt;
 
   &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 25 Jun 2025 02:44:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTFBQM3VpRHZnSlFsZzBNNEhuUG5SM3ZWa1hVcjZHLS00TkVPYlRKUlk0RDJLNUZRT1R2TEdlLWxVX2xEU1k</guid></item><item><title>真缝合怪：AMD、NVIDIA居然出现在了同一块显卡上！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9udFdaMExEc0FlbXh0akFEeDJSckdjZzVnY2VfVkFCRFdGTWN4RTVrTHFlZ2d3Vk1nc0xrb2pTQVJ1Y1RyN3hnaXJrX1JhLThheUNxVnJJbzI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 25 Jun 2025 02:44:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTFBQM3VpRHZnSlFsZzBNNEhuUG5SM3ZWa1hVcjZHLS00TkVPYlRKUlk0RDJLNUZRT1R2TEdlLWxVX2xEU1k</guid></item><item><title>谷歌地球迎来20周年 上线历史影像功能可重现82年前街景 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WR3VhYzdXR2JwdEVfenRqazVDbC1uY29fQ2Y4VjY3UmFrcG9DMUhtOXVCaHV1WnVQUVE0czBlTXhGQ2lwTGNVMFBRY2VhSkc4ME9YQUJ0dXY?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技6月25日消息，今日谷歌地球迎来20岁生日，为了庆祝这一时刻，谷歌在服务中引入了&lt;span&gt;&lt;strong&gt;历史街景影像功能。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;打开谷歌地球，会在工具栏中发现新增的“历史影像”选项。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通过该功能，用户可在当下与过去的岁月之间来回自由切换，查看不同时期的街景影像。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例如：用户可查看柏林从1943年到现代的变迁，包括柏林墙的建造与拆除，以及随后城市经历的巨大转型。&lt;/p&gt;
+&lt;p&gt;也可以观察拉斯维加斯自1980年代以来的快速扩张，或者了解休斯顿NRG体育场是如何在1944年还只是农田的地方拔地而起的。&lt;/p&gt;
+&lt;p&gt;用户还能查看多年前自己家的照片，甚至有可能发现已故亲人的影像。 &lt;/p&gt;
+&lt;p&gt;谷歌在其官方博客中表示，此次周年更新将使用户能够“从更多视角探索地球的奇迹，无论是鸟瞰视角还是街景视角”。&lt;/p&gt;
+&lt;p&gt;此前，历史街景影像功能仅在谷歌地图中存在，现在谷歌地球也上线了该功能，使得鸟瞰视角和街景模式的历史影像彻底打通，用户的探索维度得到了极大丰富。&lt;/p&gt;
+&lt;p&gt;数据显示，自2005年上线以来，谷歌地球已累计更新3D时光轴、可搜索壁纸等功能，首周下载量即突破1亿次。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250625/0cf5cc71-2b57-4f0c-ad8b-fca9f24bf09e.png" target="_blank"&gt;&lt;img alt="谷歌地球迎来20周年 上线历史影像功能可重现82年前街景" h="442" src="//img1.mydrivers.com/img/20250625/S0cf5cc71-2b57-4f0c-ad8b-fca9f24bf09e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Jun 2025 02:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5WR3VhYzdXR2JwdEVfenRqazVDbC1uY29fQ2Y4VjY3UmFrcG9DMUhtOXVCaHV1WnVQUVE0czBlTXhGQ2lwTGNVMFBRY2VhSkc4ME9YQUJ0dXY</guid></item><item><title>猫王音响创始人回应怼雷军：有点被带偏了，对小米和雷军没有什么意见 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMiggFBVV95cUxQZ0thdU5KVjJuZFBscWNTaVdaXzZzRVVMcDdNT1cxTWxhYzltck5hZ0lKZGNFdFMtaUtNa1lvY2RCRzFoWF9Edm5pd3VZT3hHOUVwSmpDLU1KS09MSEQxTkhGSXNNbmk0VG5qa3JqdW1oWmNSdHVIdkpya2ZYRkRsT3JR?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　新浪科技讯 6月25日上午消息，猫王音响创始人曾德钧就昨日发视频称雷军“网上形象高大上私下表现拙劣”一事回应称，“我对小米对雷军个人没有什么意见，没有其他的意图，在我身边的朋友也有在用小米的，虽然我自己没有用，并不表示产品不好，小米也是这些年成长起来的一家互联网企业，也受到大家的认同和喜欢，我希望我们所有的中国企业都能够不断前进发展，能够代表中国把产品越做越好。”&lt;/p&gt;
+&lt;p&gt;　　曾德钧表示，“视频发出去后，我们也发现风评有些不对，评论就已经不是我们想说那么回事儿，我觉得有点被带偏了，没有想到给雷军给小米这边带来一些不必要的麻烦。希望媒体不要利用这件事情去做一些与我初衷相违背的事情，甚至对我的视频断章取义，过度地解读，甚至带偏带节奏。”&lt;/p&gt;
+&lt;p&gt;　　昨日晚间，曾德钧曾公开发视频评价小米CEO雷军，提及雷军形象反差大，缺乏尊重，还提及十多年前的一桩旧事称：自己作为国内最早投身智能音箱领域的开拓者，带着项目与雷军旗下的顺为资本洽谈，却遭雷军一句“智能音箱有什么用？我们不要在上面浪费时间了”，随后起身离去，连看都没看他一眼。（文猛）&lt;/p&gt;
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：尉旖涵 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 25 Jun 2025 01:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiggFBVV95cUxQZ0thdU5KVjJuZFBscWNTaVdaXzZzRVVMcDdNT1cxTWxhYzltck5hZ0lKZGNFdFMtaUtNa1lvY2RCRzFoWF9Edm5pd3VZT3hHOUVwSmpDLU1KS09MSEQxTkhGSXNNbmk0VG5qa3JqdW1oWmNSdHVIdkpya2ZYRkRsT3JR</guid></item><item><title>真缝合怪：AMD、NVIDIA居然出现在了同一块显卡上！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9udFdaMExEc0FlbXh0akFEeDJSckdjZzVnY2VfVkFCRFdGTWN4RTVrTHFlZ2d3Vk1nc0xrb2pTQVJ1Y1RyN3hnaXJrX1JhLThheUNxVnJJbzI?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;真缝合怪：AMD、NVIDIA居然出现在了同一块显卡上！&lt;/p&gt;
           
@@ -551,7 +750,142 @@
        &lt;p&gt;　　&lt;b&gt;【财新网】&lt;/b&gt;“过去18个月，AI发生了根本性的变化，从计算机科学变成了AI+，”6月24日，国际货币基金组织原副总裁，世界经济论坛董事会成员朱民在&lt;a href="https://international.caixin.com/2025/2025xjdws/?cxapp_link=true" target="_blank"&gt;2025夏季达沃斯论坛&lt;/a&gt;指出，从已发表论文可以看出，其重点已经从计算机科学的深度学习等领域拓展至制造业和服务业。&lt;/p&gt;
 &lt;p&gt;　　朱民指出，中国AI发展有三个特点，一是AI应用广泛，二是AI使用的成本在降低，三是基于14亿人口基数的广泛的应用场景。政策层，中国目前承认数据作为生产要素计入企业的资产负债表，其意义重大，因为中国是全球最大的数据来源国，公共部门和私营机构都成为了重要的数据提供者。因此，系列政策其实是鼓励包括制造业、服务业在内的全行业使用AI的。&lt;/p&gt;
       &lt;/div&gt;
-     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新</author><pubDate>Tue, 24 Jun 2025 23:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1rSkoyd1Nfc1FQLTQzZVdHYjdfZk9zdENudmFfa1FMWi1XT1VoUU1GUWUyMzhWRkFhNHhiXzM5ZUstN1R6bUNMUTl3TWFjU3A4ZjNpQkVSM0o4U2JoZEM5cG0zZUU</guid></item><item><title>英伟达CEO黄仁勋出售价值1500万美元股票，开启8.73亿美元售股计划的首次抛售 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMiekFVX3lxTE51Y3dXZW1udjNmWktzS1R3a09temY4NFhia2o1WndYRXJzcExRY0pLaHp2b3FURFJ5T0ZiNy1DUE1ucXpKLW9uenlrbnAzVElGRjdzYlJXUHJCYUtLalVuNF9adVlWRGJhUVFmUjBZRHdfT3k1d092dWlR?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新</author><pubDate>Tue, 24 Jun 2025 23:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1rSkoyd1Nfc1FQLTQzZVdHYjdfZk9zdENudmFfa1FMWi1XT1VoUU1GUWUyMzhWRkFhNHhiXzM5ZUstN1R6bUNMUTl3TWFjU3A4ZjNpQkVSM0o4U2JoZEM5cG0zZUU</guid></item><item><title>两家高管对峙，小马智行与文远知行相煎何急？ - 新浪财经</title><link>https://news.google.com/rss/articles/CBMigAFBVV95cUxOVXIzZHNja09pc0NvSkxsT0RwZ2dmSnVWaTk0MUVubGJWN01obGppdWRWTlJEdHpvR29lWmRnV0VYZHRyNUpheFNENnBHRmd3Y09tTUVnSEtOSmJsQ1g5SnBqRW44cE5HdFFtTUVqTFZNdlRNMVIzbHNyX0ZueldnZg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　作者 |孟烦了&lt;/p&gt;
+&lt;p&gt;　　来源 |深潜atom&lt;/p&gt;
+&lt;p&gt;　　导语：从多种维度上看，两家公司都是个起鼓相当的公司，并不足以让小马智行无视文远知行。自动驾驶的竞争，将是一场关于“技术深度”与“场景广度”的长期博弈。&lt;/p&gt;
+&lt;p&gt;　　作为自动驾驶的关键应用场景，Robotaxi市场前景广阔。Grand View Research估计2024年全球Robotaxi市场规模为19.5亿美元，预计到2030年将达到437.6亿美元；根据&lt;span id="stock_sh601162"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh601162/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;天风证券&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh601162"&gt;&lt;/span&gt;研报数据预测，2030年全球Robotaxi规模有望达到8349亿元。&lt;/p&gt;
+&lt;p&gt;　　在占领市场之前，率先抢占用户心智至关重要。&lt;/p&gt;
+&lt;p&gt;　　近日，小马智行联合创始人、CTO楼天城在接受腾讯汽车采访时表示：从规模化和无人化两个标准看，除了“牌桌”上的Waymo、小马智行和百度这三家公司，其他公司没有达到这三家公司两年半前的状态，差距已经落后两年半时间了。&lt;/p&gt;
+&lt;p&gt;　　该话语一出，在国内自动驾驶行业中引发了不小的讨论。同为自动驾驶重要玩家的文远知行，自然不会认同楼天城的话术，文远知行CFO李璇在微信朋友圈公开回击楼天城，列举小马智行种种运营问题，并直言：“想学文远就做到位，至少真正落地跑几十辆车再说！”&lt;/p&gt;
+
+&lt;p&gt;　　小马智行在自动驾驶领域的领先地位不可否认，但刻意公开“贬低”文远知行的行为，并不能让其在战略上无视这个强有力的竞争对手。&lt;/p&gt;
+
+&lt;p&gt;　　从技术路线到“第一股”较劲，&lt;/p&gt;
+&lt;p&gt;　　不能转变为市场“恶意竞争”&lt;/p&gt;
+&lt;p&gt;　　2016年12月，曾担任百度自动驾驶部门首席架构师的彭军和同样在谷歌、百度等企业从事无人车技术开发的楼天城成立了小马智行；2017年4月，百度自动驾驶事业部首席科学家韩旭和时任百度自动驾驶事业部总经理的王劲，在离开百度后创立了景驰科技，即文远知行的前身，此后王劲离开，韩旭成为新CEO并将公司改名为文远知行。&lt;/p&gt;
+&lt;p&gt;　　从成立时间上看小马智行更早，不过短短4个月时间，对于一家初创公司的影响并不大。不过，几乎同样的成立时间和同样的百度自动驾驶的背景，让两家公司自成立后就被放在一起比较。&lt;/p&gt;
+&lt;p&gt;　　回顾两家公司，在最初的技术路径上就已经有了明显的区别。小马智行的技术路线更强调冗余性与安全性，文远知行的技术研发更注重成本优化。&lt;/p&gt;
+&lt;p&gt;　　小马智行以“Robotaxi+Robotruck”双轮驱动为核心，专注于L4级全无人驾驶技术的深度突破。其第七代Robotaxi方案采用多传感器融合方案，配备激光雷达、摄像头、毫米波雷达等冗余配置，并通过“影子模式”持续优化算法。&lt;/p&gt;
+&lt;p&gt;　　小马智行通过“世界模型+虚拟司机”技术，每周生成超100亿英里测试数据，推动算法迭代，其技术路线更强调冗余性与安全性。&lt;/p&gt;
+
+&lt;p&gt;　　文远知行采取“全场景覆盖”的多元化策略，构建了Robotaxi、Robobus、Robovan、Robosweeper、高阶智能驾驶解决方案五大产品矩阵。&lt;/p&gt;
+&lt;p&gt;　　在技术泛化能力上，文远知行的自动驾驶系统可快速适配不同车型和场景，例如在瑞士苏黎世落地欧洲首个商业化机场Robobus项目，在新加坡部署自动驾驶环卫车和物流车，正因如此文远知行有更多的真实数据。&lt;/p&gt;
+&lt;p&gt;　　这两家头部公司，无论哪一家都是中国的代表。但在自动驾驶这个赛道，一定要分一个胜负，这也决定资本市场对其的态度。小马智行自2016年完成首轮融资后，连续获得多伦融资，累计融资13亿美元；文远知行融资总额也在13亿美元左右。&lt;/p&gt;
+&lt;p&gt;　　在自动驾驶这个最被看好的赛道，很多投资公司和巨头们都是多线押注，正因如此，两家公司不但有共同的投资机构，同样有共同的合作伙伴。商场如战场，在不进则退的自动驾驶赛道，两家公司都有不得不赢的决心。&lt;/p&gt;
+&lt;p&gt;　　2025年5月，Uber向文远知行追加1亿美元的股权投资，这背后看中了中东市场的地缘红利。&lt;/p&gt;
+&lt;p&gt;　　在Uber追加投资的同期，文远知行已经开始在阿布扎比开启纯无人驾驶Robotaxi试运营，正在打造中东地区第一支纯无人Robotaxi车队；另一方面，Uber小马智行达成中东Robotaxi平台接入协议，小马智行将通过中东市场的实战数据反哺算法迭代。&lt;/p&gt;
+
+&lt;p&gt;　　两家公司在资本市场层面暗暗较劲，甚至在2024年围绕“Robotaxi第一股”展开激烈博弈。&lt;/p&gt;
+&lt;p&gt;　　2024年10月18日，小马智行和文远知行同一天向美国证券交易委员会递交了招股书，同样都计划在纳斯达克上市‌。&lt;/p&gt;
+&lt;p&gt;　　2024年10月25日，文远执行登陆纳斯达克，摘获“Robotaxi第一股”，首日收盘市值为44.91亿美元；短短一个月后的11月27日，小马智行同样登陆股市，首日收盘市值41.88亿美元。在这场“Robotaxi第一股”争夺战中，文远知行取得成功。&lt;/p&gt;
+&lt;p&gt;　　Robotaxi本就是个全新的赛道，市场呈现萝卜快跑、文远知行和小马智行的“三强争霸”格局，这是客观的事实。&lt;/p&gt;
+&lt;p&gt;　　因为萝卜快跑背靠百度，这个赛道更多像是小马智行与文远知行的竞争，特别是资本实力与商业化能力的综合较量。在双方竞争过程中，双方虽然严守知识产权、数据安全与公平竞争的底线，但在舆论上并未如此。&lt;/p&gt;
+&lt;p&gt;　　楼天城作为Robotaxi领域的知名人物，认为文远知行不具备上“牌桌”，不知是战术上的轻视，还是其他原因。特别是其他公司没有达到这三家公司两年半前的状态，差距已经落后两年半时间了，这种论断传播出去，对于文远知行的影响巨大。&lt;/p&gt;
+&lt;p&gt;　　文远知行CFO李璇对于小马智行软件被美国吊销，在北京的起火等运营问题进行回应，对于小马智行的冲击也不可谓不小。&lt;/p&gt;
+&lt;p&gt;　　在Robotaxi在全面爆发之际，恶性竞争只会延缓L4落地进程。作为国内Robotaxi的领头企业，两家公司不能将目光仅放在彼此身上，一致对外，先打下中国Robotaxi的品牌和市场影响力，未来更好分蛋糕。&lt;/p&gt;
+
+&lt;p&gt;　　多维度对比，&lt;/p&gt;
+&lt;p&gt;　　小马智行是否有资格无视文远知行&lt;/p&gt;
+&lt;p&gt;　　Momenta、文远知行、小马智行三家公司先后与Uber签约，Uber已经帮小马智行验证了这两家公司的技术实力。但在小马智行和文远知行的竞争博弈中，依然忽视文远知行，那么问题来了，小马智行是否有资格无视文远知行呢？&lt;/p&gt;
+&lt;p&gt;　　两家公司的技术路线不同，但都未曾大规模落地之前，依然难以验证哪一家技术实力更强。不过，从研发费用和技术积累上可以简单分析一下。&lt;/p&gt;
+&lt;p&gt;　　2022年到2024年，小马智行研发费用分别为1.54亿美元、1.23亿美元和2.40亿美元，累计研发投入5.17亿美元，约37.17亿元人民币；文远知行同期研发费用分别为7.59亿元、10.58亿元和10.91亿元，累计29.08亿元人民币。从研发费用的投入上，小马智行投入更高。&lt;/p&gt;
+&lt;p&gt;　　根据天眼查数据显示，广州文远知行科技有限公司共申请了921项专利，北京小马智行科技有限公司共有93项专利信息；小马智行商标信息高达892条，文远知行商标信息为381条。仅从两家上市主体公司上看，文远知行的技术积累更多，小马智行似乎更偏重未来商业化。&lt;/p&gt;
+
+&lt;p&gt;　　公开数据显示，截至2024年6月，小马智行Robotaxi车队累计超3350万公里自动驾驶路测里程，自动驾驶运行总里程超4600万公里；文远知行全球自动驾驶运行总里程超4000万公里。小马智行测试总里程更多，但统计了每周100亿英里虚拟测试。&lt;/p&gt;
+&lt;p&gt;　　2025年5月13日上午，北京亦庄一辆小马智行无人驾驶测试车辆在行驶中触发系统保护机制紧急停车，随后起火。事故发生后，小马智行已被北京叫停。无论具体原因是什么，对小马智行来说，都暴露了在车辆硬件安全方面可能存在风险。&lt;/p&gt;
+&lt;p&gt;　　商业化是对企业现行运行情况的大考。2022年到2024年，小马智行主营收入分别为6839万美元、7190万美元和7503万美元，累计2.15亿美元，约16.46亿人民币；同期的文远知行营收分别为5.28亿元、4.02亿元和2.50亿元，累计11.80亿元人民币。&lt;/p&gt;
+&lt;p&gt;　　如果仅从营收角度看，小马智行已经领先文远知行“半个身位”，此外文远知行营收在三年内断崖式下滑，与小马智行距离似乎也越来越远。2024年，小马智行的Robotaxi营收占比9.7%，Robotaxi营收占比为15.6%，仅仅从Robotaxi业务上看，Robotaxi在文远知行体系内贡献更高。&lt;/p&gt;
+
+&lt;p&gt;　　截至2024年末，文远知行总资产76.94亿元，同比增长37.05%；总负债6.28亿元，同比减少92.75%；净资产70.66亿元，较年初增长331.52%；资产负债率8.16%，较2024年年初减少146.2个百分点。债务方面，2024年末文远知行流动负债5.42亿元，较年初减少93.69%。&lt;/p&gt;
+&lt;p&gt;　　截至2024年末，小马智行总资产10.51亿美元，同比增长40.70%；总负债8211万美元，同比增加58.09%；净资产9.69亿美元，较年初增长40.03%；资产负债率7.80%，较2024年年初增加0.84个百分点。债务方面，2024年末小马智行流动负债7089万美元，较年初增长47.17%。&lt;/p&gt;
+&lt;p&gt;　　2024年，在完成IPO后，文远知行摆脱高负债的困境，净资产快速攀升；小马智行登陆股市后，总资产也出现了40.03%的增长。&lt;/p&gt;
+&lt;p&gt;　　2024年末，文远知行经营现金流量净额-5.94亿元，较期初减少25.05%；投资现金流量净额3.26亿元，同比增长159.60%；筹资现金流量净额28.24亿元，同比增长531.77%。年末现金及等价物42.68亿元，同比增长156.95%。&lt;/p&gt;
+&lt;p&gt;　　2024年末，小马智行经营现金流量净额-1.11亿美元，较期初收窄3.48%；投资现金流量净额-1.81亿美元，同比减少232.12%；筹资现金流量净额4.07亿美元，同比增长352.22%。年末现金及等价物5.36亿美元，同比增长25.82%。&lt;/p&gt;
+&lt;p&gt;　　现如今，两家公司的现金流都很健康。但2024年，通过现金流可以发现文远知行经营现金流量净额减少25.05%，出现了经营性挑战；小马智行投资现金流量净额同比减少232.12%，出现了投资挑战。两家公司在2024年，各自有各自的问题。&lt;/p&gt;
+
+&lt;p&gt;　　据公开报道，22年3月，美国国家交通安全管理局宣布，小马智行已经同意对其部分版本的自动驾驶软件进行召回。美国国家交通安全管理局认为该软件存在安全缺陷，要求其进行召回，涉及三辆小马智行测试车，这也是全球首个L4级全自动驾驶系统召回案例。&lt;/p&gt;
+&lt;p&gt;　　22年5月24日，美国加州机动车管理局撤销了小马智行的自动驾驶测试许可证（驾驶位有安全员），原因是没有监测到该公司测试许可证上的安全员驾驶记录。&lt;/p&gt;
+&lt;p&gt;　　小马智行国际化受挫，导致了两家公司的发展路径出现差异。&lt;/p&gt;
+&lt;p&gt;　　如今，小马智行聚焦中国市场，Robotaxi服务已覆盖北上广深等一线城市核心区域及交通枢纽，2025年第一季度乘客车费收入同比增长800%，Robotaxi日均订单量超15单，计划年底前将车队规模扩展至千台；文远知行以全球化扩张为核心战略，Robotaxi业务已覆盖9国30城。&lt;/p&gt;
+&lt;p&gt;　　国内市场方面，文远知行于2025年3月首次进入北京核心城区，与小马智行形成直接竞争。&lt;/p&gt;
+&lt;p&gt;　　因为市场布局方向的不同，小马智行的生态本质是“技术精英主义”——通过高研发投入和车企深度绑定，在运输场景构建不可复制的技术壁垒，比如与&lt;span id="stock_sh601598"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh601598/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;中国外运&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh601598"&gt;&lt;/span&gt;合资成立青骓物流，覆盖京津塘高速等干线。&lt;/p&gt;
+&lt;p&gt;　　小马智行未来的挑战在于能否将国内车企生态复制到海外，打破“技术强、全球化弱”的瓶颈。&lt;/p&gt;
+&lt;p&gt;　　文远知行的生态则是“场景实用主义”——借助全球化资本与政策红利，在多场景中寻找商业化突破口。&lt;/p&gt;
+&lt;p&gt;　　比如，文远知行在瑞士苏黎世机场Robobus、新加坡自动驾驶环卫车、阿联酋Robotaxi，单场景毛利率达30.7%。未来的挑战在于能否在多场景扩展中实现技术复用，避免“大而全”导致的效率损耗。&lt;/p&gt;
+&lt;p&gt;　　从多种维度上看，两家公司都是个起鼓相当的公司，并不足以让小马智行无视文远知行。自动驾驶的竞争，将是一场关于“技术深度”与“场景广度”的长期博弈。&lt;/p&gt;
+&lt;p id="app-kaihu-stock"&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：韦子蓉 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 24 Jun 2025 23:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMigAFBVV95cUxOVXIzZHNja09pc0NvSkxsT0RwZ2dmSnVWaTk0MUVubGJWN01obGppdWRWTlJEdHpvR29lWmRnV0VYZHRyNUpheFNENnBHRmd3Y09tTUVnSEtOSmJsQ1g5SnBqRW44cE5HdFFtTUVqTFZNdlRNMVIzbHNyX0ZueldnZg</guid></item><item><title>英伟达CEO黄仁勋出售价值1500万美元股票，开启8.73亿美元售股计划的首次抛售 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMiekFVX3lxTE51Y3dXZW1udjNmWktzS1R3a09temY4NFhia2o1WndYRXJzcExRY0pLaHp2b3FURFJ5T0ZiNy1DUE1ucXpKLW9uenlrbnAzVElGRjdzYlJXUHJCYUtLalVuNF9adVlWRGJhUVFmUjBZRHdfT3k1d092dWlR?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -1828,177 +2162,4 @@ GPU，同时部署在Xbox和PlayStation等下一代游戏机中。&lt;/span&gt;&
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Tue, 24 Jun 2025 07:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBYeFF5aTBGb1VXY0FVcDlMdVF6dkxwM2wwUmtvX2xhZ0ZEaktUQnJxSXJEajlfeTMzWHRiNXZaUHFVR0RzR3hubXFib3FyZ0hJQmkxXy1NWnRzUllfUGZyVV9QYXBFQllZZ3c</guid></item><item><title>手机处理器工艺制程大升级！首波2nm旗舰SoC要来了 国产5nm有点难 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtWXE4MXVfYzllRUE5WmhNTlY4ZGlNcTJaa3ZtOXNOZjRoX0RUNnI2WVZsLUxDVldqeG9MVnJMcGt1M2o0aW9GTl9DcVRFZ3BpQ0lyY1dndUE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月24日消息，知名调研机构Counterpoint在报告中指出，&lt;span&gt;&lt;strong&gt;2026年将有1/3的手机SoC采用3nm或2nm先进工艺制程。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Counterpoint发布的《全球移动处理器（AP-SoC）节点长期预测》报告显示，苹果2023年率先在iPhone 15 Pro系列导入台积电3nm制程的A17 Pro芯片。高通与联发科则于2024年推出其3nm旗舰SoC。 2025年起，所有新一代旗舰SoC将全面转向3nm。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/a6ebc9bc5be242728f77cdc2d249b06b.jpg" target="_blank"&gt;&lt;img alt="手机处理器工艺制程大升级！首波2nm旗舰SoC要来了 国产5nm有点难" h="429" src="//img1.mydrivers.com/img/20250624/s_a6ebc9bc5be242728f77cdc2d249b06b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而到了2026年，苹果、高通与联发科将陆续升级台积电2nm工艺。 3nm与2nm制程不仅提供更高的晶体管密度与时钟速度，更能支持生成式AI、沉浸式游戏与高画质影像处理等需求，成为提升智能手机效能与效率的关键。&lt;/p&gt;
-&lt;p&gt;Counterpoint Research资深分析师Parv Sharma表示，目前市场对设备端AI运算能力的需求，正驱动芯片朝向更小、更强大、效率更高的制程演进。&lt;/p&gt;
-&lt;p&gt;但这也导致SoC整体成本上升，包括晶圆价格与半导体含量的增加。预计到2026年，将有三分之一的智能手机SoC导入3nm与2nm节点，达成一项重要里程碑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Parv认为，台积电预计将于今年下半年进行2nm工艺的tape-out（流片），并于2026年进入量产阶段。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;苹果、高通与联发科将在2026年底推出首波2nm旗舰SoC。初期采用将以旗舰与高端手机为主。终端设备则逐步从7/6nm转向5/4nm制程，并在后续几年过渡至3nm节点。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Counterpoint Research副研究总监Brady Wang预计，2025年台积电在5nm及以下（含3nm与2nm）制程的智能手机SoC市占将达87%，并于2028年增至89%。&lt;/p&gt;
-&lt;p&gt;目前除台积电外，手机厂商可选择的代工厂有限。&lt;strong&gt; 中芯国际的7nm制程主要支持海思SoC，供应华为使用，但受限于中美地缘政治与EUV设备出口禁令，短期内难以扩展至更先进工艺（比如5nm）。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/50e3ba57f93c48d48e7a5b5d8865b58b.jpg" target="_blank"&gt;&lt;img alt="手机处理器工艺制程大升级！首波2nm旗舰SoC要来了 国产5nm有点难" h="400" src="//img1.mydrivers.com/img/20250624/s_50e3ba57f93c48d48e7a5b5d8865b58b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 24 Jun 2025 07:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBtWXE4MXVfYzllRUE5WmhNTlY4ZGlNcTJaa3ZtOXNOZjRoX0RUNnI2WVZsLUxDVldqeG9MVnJMcGt1M2o0aW9GTl9DcVRFZ3BpQ0lyY1dndUE</guid></item><item><title>程序员住车里遭群嘲， 是一种对普通人的恶意 - 虎嗅</title><link>https://news.google.com/rss/articles/CBMiVEFVX3lxTE9PNGs5WjFjOXlTN2lpZ2tmcVliTUUtbmhheWh4QzByREZuWU8wTHFiU2ExeTRmQkNMTWRvb1o0VGhXaUg4RnYybTlyWVpkVVgxNDMzMw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="article__content" data-v-74bd681e&gt;&lt;p data-check-id="683456"&gt;近日，深圳程序员张运来因不租房住车里引发大量关注。报道称，&lt;strong&gt;他工作日期间天天睡车里，利用公园的公共卫生间洗漱，每晚只需花费6元停车费，每日消费仅100元上下。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="312205"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="454031"&gt;这其实是个挺心酸也挺励志的故事。虽然这位程序员说自己“并不是为了省钱”，但是新闻里他处处在算钱，说明钱终究是一个逃不过去的因素。&lt;/p&gt;&lt;p data-check-id="799684"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="122031"&gt;而他能想办法，以最低成本的方式，在一线城市里获得一个可行的而且不失体面的生活方式——他至少生活得自由，离公司不远，还能基本洗漱，这是多么好的事。&lt;/p&gt;&lt;p data-check-id="523959"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="581312"&gt;即便如此，还是有人看不惯。曾有网友对他的行为提出质疑，认为他“占用了公共资源”。&lt;/p&gt;&lt;p data-check-id="185987"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="606345"&gt;这种说法，对普通人是有多大的恶意，是多么看不得普通人过得稍微努力一点。而“占用公共资源”也觉得是近期我见过非常令人厌恶的一种说法了——&lt;strong&gt;如果一个住在车里的打工人，都不能使用公共资源，那么公共资源到底要给谁用呢？&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="894245"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="482880" label="大标题"&gt;一&lt;/p&gt;&lt;p class="text-normal" data-check-id="950315" label="正文"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-normal" data-check-id="633139" label="正文"&gt;其实我也很好奇，晚上在停车场过夜，到底能占用多少公共资源？&lt;/p&gt;&lt;p data-check-id="978236"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="383620"&gt;据张运来他自己说，称自己住在深圳湾公园，晚上空闲车位很多，刷牙、洗脸他都在公共洗手间，洗澡去健身房。&lt;/p&gt;&lt;p data-check-id="732491"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="607380"&gt;这甚至让人觉得，没有他才是浪费公共资源，夜晚的公园，空余的车位，晚上少有人用的洗手间，只要运营就都是成本。&lt;strong&gt;恰恰是他，才让这些设施提高了利用率，&lt;/strong&gt;哪怕只有一点点。&lt;/p&gt;&lt;p data-check-id="934441"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="864247"&gt;更何况，他还付了6元停车费——这简直不能更荒诞，人家付了钱，这还叫占用公共资源？&lt;/p&gt;&lt;p data-check-id="179461"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="754806" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202506/24/145956749202.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="634" data-h="655"&gt;&lt;/p&gt;&lt;p data-check-id="365098" label="图片备注" class="text-img-note"&gt;▲张运来经常与网友们分享自己的生活（图/视频截图）&lt;/p&gt;&lt;p data-check-id="241347"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="154254"&gt;说回“公共资源”，有一点也让人不解，到底是什么“公共资源”？&lt;/p&gt;&lt;p data-check-id="491138"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="250407"&gt;犹记得明星道歉倒是特别爱说“占用公共资源”，但考虑到明星语言、逻辑的平均水平，倒也不用深究。不妨搜几个新闻，来看看什么是人们眼中的“公共资源”。&lt;/p&gt;&lt;p data-check-id="762834"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p data-check-id="208287"&gt;梁实回应连续29年高考“浪费公共资源”；&lt;/p&gt;&lt;p data-check-id="649014"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="217576"&gt;景区抽水8小时打捞游客手机，被指浪费公共资源；&lt;/p&gt;&lt;p data-check-id="940605"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="870872"&gt;男生考上北大后退学第二年考上清华，被质疑挤占名额。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-check-id="675866"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="342288"&gt;尤其是第三条，也是让人有点无话可说，看到网民那副大义凛然的样子，在人均初中学历的互联网，他到底挤占了谁的名额？&lt;/p&gt;&lt;p data-check-id="995064"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="517582"&gt;说白了，大概也能看出来什么是“公共资源”了——普通人不配享用的，就是网民口中的“公共资源”。&lt;/p&gt;&lt;p data-check-id="695492"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="820341"&gt;法律赋予的考试机会，收税保障的社会救济，自己博来的升学机会，甚至是付费的停车场，在网民口中全都成了不容染指的“公共资源”。在这里，只有抽象虚拟的“公共”，从来没有有名有姓的“个人”——&lt;strong&gt;“这是公共的，但就是不能给你用”。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="822074"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="782250"&gt;仔细想想，&lt;strong&gt;恰恰是普通人才最需要公共资源。因为他的私有财产是有限的，他的博弈能力是不足的，&lt;/strong&gt;他才最需要公共资源的保障——一个腰缠万贯的人，手机丢了就丢了，只有普通人，他才需要公共资源去帮他捞手机。&lt;/p&gt;&lt;p data-check-id="275658"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="860281"&gt;但这在网民眼中可是犯了大忌。现在的网络，对普通人可谓充满恶意，欺负起普通人来真是兴高采烈。&lt;/p&gt;&lt;p data-check-id="841261"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="476420" label="大标题"&gt;二&lt;/p&gt;&lt;p data-check-id="954931"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="268105"&gt;就像前不久有一个新闻，“母子错过航班大闹机场，并称耽误了儿子次日早上的公务员考试”。&lt;/p&gt;&lt;p data-check-id="321011"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="316542"&gt;这是一个彻头彻尾的假新闻。新闻主角不是母子是姐弟，不是公务员考试是技能资格考试，女子哭闹也不只是因为迟到，而是“机场人员提示可以走快速通道”，但“工作人员就说自己不想担责，所以拒绝我弟弟登机”。&lt;/p&gt;&lt;p data-check-id="896274"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="654127"&gt;但这已经晚了，在此之前围绕女子展开了一系列批判。&lt;strong&gt;骂她巨婴，批她干扰公共秩序，笑她“没坐过飞机”，造谣她是“舍不得打车”。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="711836"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="411147"&gt;引发这一切的，就是一种猥琐的造谣。知道现在“妈宝”“考公”“巨婴”有流量，那就全部叠在一起编。各路网民也是如获至宝，看到一个没头没尾的网络视频，就煞有介事地一通批判，对一个普通人的批评一下就布满热搜。&lt;/p&gt;&lt;p data-check-id="351759"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="158245"&gt;欺负一个普通人真是干劲十足，但在这个过程中，就没看到一篇正经言论，去问问机场、航空公司的程序合不合理。网民终究还是聪明的，知道该欺负谁，敢欺负谁。&lt;/p&gt;&lt;p data-check-id="774319"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="351287"&gt;这里面尤其让人觉得厌恶的，则是造谣她“舍不得打车”——穷，就是一种错，舍不得花钱，就活该你哭天抢地、毫无尊严。&lt;/p&gt;&lt;p data-check-id="810416"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="213007"&gt;这样的新闻并不少。就像前两天，一名女业主因为维权视频走红。&lt;/p&gt;&lt;p data-check-id="248392"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="353377"&gt;视频中，这名女业主称2022年购买了一楼盘商品房，后来开发商延期交付，从2023年拖到2025年，多次与开发商协商无果。在获得关注同时，女业主视频中的衣着也引发争议，甚至被部分网友指为“擦边维权”。&lt;/p&gt;&lt;p data-check-id="748867"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="480120"&gt;真是没见过比这更荒唐的。一位买到烂尾房的业主，万般无奈去视频维权，不去骂开发商违法，倒是骂女业主擦边，真是没有比这更魔幻的事了。&lt;/p&gt;&lt;p data-check-id="479130"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="224751" label="大标题"&gt;三&lt;/p&gt;&lt;p data-check-id="127034"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="564643"&gt;其实大概也能推测出，骂一个程序员占用“公共资源”的人，大概是什么生活状态。大概率也是属于除了“公共资源”，没有多少资源的人。&lt;/p&gt;&lt;p data-check-id="288314"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="287071"&gt;确实也很难想象一位生活非常优渥的人，会觉得在公共停车场占了一个车位有什么大不了。恨意最大的，&lt;strong&gt;大概率还是处于同一生态位的人，因此才会对稍微出格的、比自己多了一分收益的行为而愤恨不已。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="334352"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="453148"&gt;当苛刻地对待普通人的时候，其实也可以反过来想想：骂一个普通人，到底有什么好处？&lt;/p&gt;&lt;p data-check-id="675811"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="755651"&gt;骂着别人占用公共资源，这些公共资源也可以轻而易举地对你关闭；骂着别人大闹机场，这些地方也绝不会为你开辟紧急通道；说别人维权擦边，也绝不会有人对你的权益百般呵护。&lt;/p&gt;&lt;p data-check-id="281052"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="776277"&gt;去苛刻地对待普通人，但并不会因为这种“表态”，而给自己带来多少安全感，并没有人在乎这种亢奋却廉价的“态度鲜明”。&lt;/p&gt;&lt;p data-check-id="474305"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="318063"&gt;大多数人都应该照照镜子，看看镜子里的自己是多么的普通。&lt;strong&gt;也正是因为普通，所以才需要去争取公共资源，去争取社会关注的重视，去争取身为普通人的体面生活的权利。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="293228"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="288038"&gt;少来这种虚幻的勇敢、滑稽的正义感，人应当有一点自知之明：永远不要洋洋自得欺负了一个千里之外的普通人，这比欺负邻居还要卑劣，邻居至少还能扎你的自行车轮胎，欺负无关的普通人，只是一种零风险的自我感动。&lt;/p&gt;&lt;p data-check-id="782004"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="742141"&gt;或许，对普通人百般苛刻，也是心理学里的投射现象——&lt;strong&gt;对别人的指责，恰恰是源自自己的痛处。&lt;/strong&gt;很多人大概就是在这些普通人身上，看到同样一个平凡、渺小、毫无博弈能力的自己，试图通过大义凛然地批判，将自己拽离同一阶层。&lt;/p&gt;&lt;p data-check-id="790120"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="453047"&gt;祝愿他们成功。&lt;/p&gt;&lt;p data-check-id="296116"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="649794"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MzI1MjcwNzExMg==&amp;amp;mid=2247616197&amp;amp;idx=1&amp;amp;sn=0f743f643aa859520fcbffc8e5b45a47&amp;amp;chksm=e85c497eb0787a45fbf2dfe5062df78516b9ce78fb20142ffdbf16ffe7bcadc0bf22b2313b9d&amp;amp;poc_token=HItHWmijMpo08TafSuXhkZah-I7-Ac28uenWLEAF" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Tue, 24 Jun 2025 07:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9PNGs5WjFjOXlTN2lpZ2tmcVliTUUtbmhheWh4QzByREZuWU8wTHFiU2ExeTRmQkNMTWRvb1o0VGhXaUg4RnYybTlyWVpkVVgxNDMzMw</guid></item><item><title>Windows夜间模式在Arm PC上失效！戴尔：芯片限制、没法解决 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9UZDl1SEN1X2JSUTg4OTFRV29Tc19oT0RGdGtzdzJ1QTdRTHZFclZIZGRLR00yVGdqVlRNUlZXazFobS1RcE1vX1M3NFloWjZHSThiemZKT2g?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;Windows夜间模式在Arm PC上失效！戴尔：芯片限制、没法解决&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-06-24 15:00:38  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1055733-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月24日消息，Windows 10和Windows 11中的夜间模式（Night Light）功能，能够减少屏幕发出的蓝光，从而减轻眼睛的疲劳。&lt;/p&gt;
-&lt;p&gt;但据戴尔最近发布的支持文档显示，&lt;span&gt;&lt;strong&gt;当连接外部显示器时，Windows夜间模式在某些Windows Arm PC的辅助显示器上无法正常工作，&lt;/strong&gt;&lt;/span&gt;不过该功能在笔记本电脑本身的屏幕上仍然可以正常运行。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250624/0153ee28-1e25-4ff6-be4a-3f9dce37a1ec.png" target="_blank"&gt;&lt;img alt="Windows夜间模式在Arm PC上失效！戴尔：芯片限制、没法解决" h="350" src="//img1.mydrivers.com/img/20250624/S0153ee28-1e25-4ff6-be4a-3f9dce37a1ec.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;受影响的PC型号包括Inspiron 14 5441、Inspiron 14 Plus 7441、Latitude 5455、Latitude 7455和XPS 13 9345。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;戴尔确认，这一问题并非由于硬件或软件故障，而是由于高通Oryon芯片组的限制。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250624/206824af-9f77-40d3-ab06-c062e7275417.png" target="_blank"&gt;&lt;img alt="Windows夜间模式在Arm PC上失效！戴尔：芯片限制、没法解决" h="203" src="//img1.mydrivers.com/img/20250624/S206824af-9f77-40d3-ab06-c062e7275417.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这意味着，尽管客户可以使用内置或第三方工具调整显示器的颜色配置文件，但戴尔无法使Windows夜间模式在上述Arm PC连接的外部显示器上正常工作。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;戴尔强调，没有计划在当前的戴尔Arm平台上支持此功能，用户只能接受现状，&lt;/strong&gt;不过这一功能很可能在“下一代”的Arm计算机上如期运行，这些计算机预计将采用不受此限制影响的芯片组。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 24 Jun 2025 07:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9UZDl1SEN1X2JSUTg4OTFRV29Tc19oT0RGdGtzdzJ1QTdRTHZFclZIZGRLR00yVGdqVlRNUlZXazFobS1RcE1vX1M3NFloWjZHSThiemZKT2g</guid></item><item><title>你遇到没！QQ突然崩了：腾讯回应已快速修复完毕 目前可正常使用 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFAtRmtsRXY2bm1ha1l0X0o1bDNscVhIUE1qYk9tWkJlcW1MSjhidmtpeHdBb21nWVQwRDJmM2VTRWFLRFlXU2EyYTcyVGYyUzA3d3c5R1NHT2I?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月24日消息，QQ今天突然崩了，你发现了吗？&lt;/p&gt;
-&lt;p&gt;今天多名网友反应，收到QQ遇到错误的消息，随后“QQ崩了”引起热议，而相关话题也被挤上了热搜。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;对此，腾讯客服表示，关于电脑QQ闪退提示错误报告的问题，相关工作人员正在紧急处理中，请您不用担心并请后续留意。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;b&gt;截至笔者发稿时，腾讯官方回应称，&lt;/b&gt;&lt;/span&gt;&lt;b&gt;&lt;span&gt;就少量用户使用桌面QQ时出现报错闪退的情况作出说明：已于中午快速修复完毕，目前可正常使用。给您造成使用不便，我们深表歉意！&lt;/span&gt; ​​​&lt;/b&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/083e2ffc080a4fa5a852bf069c0e65ca.jpg" target="_blank"&gt;&lt;img alt="你遇到没！QQ突然崩了：腾讯回应已快速修复完毕 目前可正常使用" h="122" src="//img1.mydrivers.com/img/20250624/s_083e2ffc080a4fa5a852bf069c0e65ca.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;之前，腾讯2024年第四季度财报显示，QQ智能终端月活跃账户数为5.24亿，同比下降5%。&lt;/p&gt;
-&lt;p&gt;??部分第三方报告（如2025年2月中国社交App排名）指出QQ月活达6.6亿，可能包含PC端及国际用户。&lt;/p&gt;
-&lt;p&gt;?第三方统计的QQ用户特征?显示，00后占比超50%，25岁以下用户为绝对主力。&lt;/p&gt;
-&lt;p&gt;此外，QQ的文件传输、群管理等办公功能受35岁以上用户青睐。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/6da32539c75c4db18931d495b90cec6c.jpg" target="_blank"&gt;&lt;img alt="你遇到没！QQ突然崩了：腾讯回应已快速修复完毕 目前可正常使用" h="330" src="//img1.mydrivers.com/img/20250624/s_6da32539c75c4db18931d495b90cec6c.jpg" w="595"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 24 Jun 2025 06:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAtRmtsRXY2bm1ha1l0X0o1bDNscVhIUE1qYk9tWkJlcW1MSjhidmtpeHdBb21nWVQwRDJmM2VTRWFLRFlXU2EyYTcyVGYyUzA3d3c5R1NHT2I</guid></item><item><title>169元起！小米三合一充电宝5000 33W开售：自带插脚、充电线 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBpWWNINE5BNkdidmdsVERQbzFfYXY2TWNMWlpBc25MNE5Ld0E0cGt2ZTBLdV9WMHVqUjR5YVNTbThsSGJqdzRmUy1xVzJnWGMwQTA5TmxwQ2c?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;169元起！小米三合一充电宝5000 33W开售：自带插脚、充电线&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-06-24 14:47:39  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1299472.html" title="建嘉的主页" class="newstiao4"&gt;建嘉&lt;/a&gt;&lt;p&gt;  编辑：建嘉 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1055728-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技6月24日消息，小米最新推出来了一款“小米三合一充电宝5000 33W”，目前已经在京东等电商平台开售，官方建议零售价199元，京东到手价169元起。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这款产品最大的亮点就是全能，一款产品直接集合了充电头、充电线、充电宝，出门只用带一个就行。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/a58cd80e55094412b588a4118660a787.jpg" target="_blank"&gt;&lt;img alt="169元起！小米三合一充电宝5000 33W开售：自带插脚、充电线" h="525" src="//img1.mydrivers.com/img/20250624/s_a58cd80e55094412b588a4118660a787.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;充电器方面，该产品自带可折叠插脚，秒变充电器，&lt;strong&gt;配合上自带USB-C充电线+1个USB-C接口，可以同时给两个设备充电，单口最大放电功率33W，最大充电功率15W。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;充电宝方面，典型能量是18Wh 3.6V 5000mAh，额定容量是2700mAh，&lt;/strong&gt;&lt;/span&gt;带有隐藏式LED数显，提供22.5W输出功率，单扣最大放电功率22.5W，最大充电功率18W。&lt;/p&gt;
-&lt;p&gt;带有隐藏式LED数显，可显示电量百分比、充电中标志、异常标志等。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/765e5b8ad4b1448b8cdd26ab8a8ff04d.jpg" target="_blank"&gt;&lt;img alt="169元起！小米三合一充电宝5000 33W开售：自带插脚、充电线" h="410" src="//img1.mydrivers.com/img/20250624/s_765e5b8ad4b1448b8cdd26ab8a8ff04d.jpg" w="531"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;协议方面，该产品USB-C充电线端支持PD、PPS、DCP输出协议；USB-C接口输出支持QC、PD、DCP、Apple 2.4A协议。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;另外还支持小电流模式，可以安全的为蓝牙耳机、手环、手表等设备充电。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="169元" goods_title="小米（MI）小米三合一充电宝 5000 33W 海盐蓝 可上飞机 多彩便携 自在充电 iPhone安卓可用" href="https://dt.mydrivers.com/mv.ashx?txt=dMZWY" img="https://img14.360buyimg.com/pop/jfs/t1/310861/10/4653/37811/6835b02eF5d48f568/4cf44fef99f8cad1.png" target="_blank"&gt;京东(169元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250624/dcfa4d513ab5477c94b683471398a1d5.jpg" target="_blank"&gt;&lt;img alt="169元起！小米三合一充电宝5000 33W开售：自带插脚、充电线" h="800" src="//img1.mydrivers.com/img/20250624/s_dcfa4d513ab5477c94b683471398a1d5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 24 Jun 2025 06:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBpWWNINE5BNkdidmdsVERQbzFfYXY2TWNMWlpBc25MNE5Ld0E0cGt2ZTBLdV9WMHVqUjR5YVNTbThsSGJqdzRmUy1xVzJnWGMwQTA5TmxwQ2c</guid></item></channel></rss>
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Tue, 24 Jun 2025 07:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBYeFF5aTBGb1VXY0FVcDlMdVF6dkxwM2wwUmtvX2xhZ0ZEaktUQnJxSXJEajlfeTMzWHRiNXZaUHFVR0RzR3hubXFib3FyZ0hJQmkxXy1NWnRzUllfUGZyVV9QYXBFQllZZ3c</guid></item></channel></rss>
