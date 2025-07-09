@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>全球销量前十的神机续作！小米REDMI 15C来了：外观揭晓 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GSGVLb2U2a1U2amtMNzVKdHZXQ3I3emRUZzhzMGVFcWhyREJja0VjTGVrbUpQR3BHcUNwZlk5VEk4UlIzbDl4WVdnT0t2VGh3LS13ZWpPZko?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>macOS 26 引入新磁盘映像格式ASIF，极致“压榨”内置 SSD 性能 - OSCHINA - 中文开源技术交流社区 - OSCHINA</title><link>https://news.google.com/rss/articles/CBMiS0FVX3lxTE45a0k3dEZ4RWlEWlo1QXpYR3o4WjdBdW5FZmxIQS04Q2h5czZvWWVWWlpMSjRlenBlSFJZYUxyWGxMaXE0Slg2czlhUQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;苹果 macOS 26 Tahoe 首次引入了新的磁盘映像格式 ASIF。&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fdeveloper.apple.com%2Fdocumentation%2Fvirtualization%2Fvzdiskimagestoragedeviceattachment%2F" target="_blank"&gt;根据苹果开发者文档的介绍&lt;/a&gt;，ASIF 全称为 Apple Sparse Image Format（苹果稀疏映像格式），该格式的文件在主机或磁盘之间传输更高效，因为它们的内在结构不依赖于主机文件系统的功能。ASIF 文件在文件系统中占用的空间与磁盘映像中实际存储的数据大小成正比。&lt;/p&gt; 
+&lt;blockquote&gt; 
+ &lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/0709/142434_p1DB_2720166.png"&gt;&lt;/p&gt; 
+&lt;/blockquote&gt; 
+&lt;p&gt;多年来，磁盘映像一直是 Mac 用户的必备工具，支持从加密文件存储到虚拟机管理等各种操作。然而，这些映像长期以来一直饱受性能低下的困扰，尤其是在涉及加密的情况下。即使在 Apple 速度最快的内置 SSD 上，传统的加密稀疏映像 (UDSP) 的运行速度有时也像老式硬盘一样缓慢，很少超过 100 MB/s。&lt;/p&gt; 
+&lt;p&gt;全新 ASIF 磁盘映像格式现已在macOS 26 Tahoe中推出，有望改变这一现状。早&lt;strong&gt;期测试表明，ASIF 映像的读写速度可接近 Mac 内置固态硬盘 (SSD) 的原始性能&lt;/strong&gt;——这对于虚拟存储而言是前所未有的飞跃。&lt;/p&gt; 
+&lt;p&gt;在一项基准测试中，在 MacBook Pro M3 Pro 上运行的 100 GB ASIF 映像在未加密的 APFS 文件系统下，读取速度达到 5.8 GB/s，写入速度达到 6.6 GB/s。&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-6788dd25ceff359dc07684ac10f09ba2245.png"&gt;&lt;/p&gt; 
+&lt;p&gt;即使启用加密，速度仍然令人印象深刻，仅分别降至 4.8 GB/s 和 4.6 GB/s。在运行 macOS 15.5 的 Mac mini M4 Pro 上也观察到了类似的结果，其写入速度飙升至 8.3 GB/s。&lt;/p&gt; 
+&lt;p&gt;苹果并未透露 ASIF 底层机制的具体细节，但可以确定的是，该格式的设计使其与主机文件系统的功能无关。ASIF 映像在 APFS 中被标记为稀疏文件，这意味着它们在磁盘上的物理大小仅会随着数据的添加而增长。例如，一个新建的 100 GB ASIF 映像最初可能占用不到 1 GB 的实际磁盘空间。即使在频繁使用和添加额外卷之后，清空映像时其占用空间通常也保持在 3.2 GB 以下。&lt;/p&gt; 
+&lt;p&gt;目前，创建 ASIF 磁盘映像需要使用“磁盘工具”应用程序或 macOS 26 中的 diskutil 命令行工具。对于熟悉命令行操作的用户来说，该过程很简单，但在早期版本的 macOS 中尚不支持，也没有集成到更常用的 hdiutil 工具中。&lt;/p&gt; 
+&lt;p&gt;苹果尚未明确哪些之前的 macOS 版本能够挂载和使用 ASIF 映像，这引发了用户对跨不同系统工作的兼容性的疑问。&lt;/p&gt; 
+&lt;p&gt;ASIF 带来的性能提升尤其与虚拟化相关。Apple 建议虚拟机从较旧的 RAW（UDIF 读写）磁盘映像过渡到 ASIF，理由是 ASIF 不仅能够提升速度，还能提高在主机或磁盘之间传输虚拟机文件的效率。&lt;/p&gt; 
+&lt;p&gt;与传统上在磁盘映像类型中提供最佳性能的稀疏捆绑不同，ASIF 映像将所有数据整合到一个文件中，从而简化了管理并进一步提高了速度。&lt;/p&gt; 
+&lt;p&gt;尽管有这些优势，新格式也并非没有局限性。目前，只有 macOS Tahoe 支持创建 ASIF 映像，并且该过程依赖于命令行工具而非专用 API。这意味着第三方应用程序和虚拟化器需要进行适配，以便用户能够充分利用新格式的潜力。&lt;/p&gt; 
+&lt;p&gt;Mac 社区正在等待 Apple 提供更广泛的支持和更详细的技术文档，而开发者们也已经开始关注这些可能性。C-Command 的 DropDMG 等工具预计将很快添加 ASIF 兼容性，为更便捷的采用铺平道路。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Wed, 09 Jul 2025 06:24:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE45a0k3dEZ4RWlEWlo1QXpYR3o4WjdBdW5FZmxIQS04Q2h5czZvWWVWWlpMSjRlenBlSFJZYUxyWGxMaXE0Slg2czlhUQ</guid></item><item><title>Windows11成为全球第一大桌面操作系统 - guancha.cn</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jZDVyX3JFbjlXcGpCNzZHdUVCRW9hdDNFQjAzVkE4aTNSRXlpejRUckM3bWtkdGZCVnVxYUFFcjBrWXRZM0h3Y2FBSVl0SWZLenZtVXp0bDluZzNhUW8yeGFQYW0?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/07/09/20250709125001805.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	7月9日，据Statcounter数据显示，在发布四年后，Windows11如今以约52%的市场份额首次超越Windows10，成为全球范围内第一大Windows操作系统。
+&lt;/p&gt;
+&lt;p&gt;
+	最新数据显示，Windows11在Windows中的份额占比达到52.19%，Windows10降到了44.48%。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/07/09/20250709124646273.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;span&gt; 图源Statcounter官网&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	Windows11自2021年上市以来，到2022年12月仅占据了不到10%的市场份额。自那时起，Windows11的市场份额一直缓慢而稳定地增长。2023年12月，Windows11的市场份额为26.54%
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/07/09/20250709124726238.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;span&gt; 图源Statcounter官网&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	Windows11最近市场占有率大幅飙升是多种因素综合作用的结果，例如Windows10标准版本将于2025年10月14日结束支持；个人和企业用户逐步升级硬件，以寻求最新的安全改进和软件增强；Windows11的性能不断得到优化，更严格的安全默认设置，以及内置的人工智能驱动工具支持等功能，使其更具吸引力。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/07/09/20250709124812508.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;span&gt; 图源Microsoft官网&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	从全球桌面操作系统整体来看，Windows系统在7月拥有71.55%的占比，OS X占比9.11%，macOS占比4.87%，Linux占比4.11%，Chrome OS占比0.96%，Windows11也由此成为全球第一大桌面操作系统。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/07/09/20250709124904625.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;span&gt; 图源Statcounter官网&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	6月25日，微软推出了扩展安全更新（ESU）计划，允许Windows10用户在2025年10月14日支持结束后，继续获得一年的安全更新。外界关注，额外一年的免费安全更新是否会抑制Windows11目前的上升势头。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Wed, 09 Jul 2025 05:39:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1jZDVyX3JFbjlXcGpCNzZHdUVCRW9hdDNFQjAzVkE4aTNSRXlpejRUckM3bWtkdGZCVnVxYUFFcjBrWXRZM0h3Y2FBSVl0SWZLenZtVXp0bDluZzNhUW8yeGFQYW0</guid></item><item><title>全球销量前十的神机续作！小米REDMI 15C来了：外观揭晓 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GSGVLb2U2a1U2amtMNzVKdHZXQ3I3emRUZzhzMGVFcWhyREJja0VjTGVrbUpQR3BHcUNwZlk5VEk4UlIzbDl4WVdnT0t2VGh3LS13ZWpPZko?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技7月9日消息，Nieuwe Mobiel日前首次曝光了REDMI 15C，并且带来了高清渲染图。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;据介绍，该机将提供月光蓝、暮光橙、午夜黑和绿色四种颜色。&lt;/p&gt;
@@ -26,7 +95,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 09 Jul 2025 05:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5GSGVLb2U2a1U2amtMNzVKdHZXQ3I3emRUZzhzMGVFcWhyREJja0VjTGVrbUpQR3BHcUNwZlk5VEk4UlIzbDl4WVdnT0t2VGh3LS13ZWpPZko</guid></item><item><title>一度超411万手封死涨停 总股本不够卖！人形机器人独角兽影子股曝光 - 东方财富</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE43eWJfSHZSWmJ4Y1BWdmFzSmNhN09BQ3RjYmtFNEJJdjlLY20xOXcwTnlWdm5HZldNY3pkTmprak5oakRteUticU1UbHNYSDJjUjdBTTRzaFc1d0daZmw4VQ?oc=5</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE43eWJfSHZSWmJ4Y1BWdmFzSmNhN09BQ3RjYmtFNEJJdjlLY20xOXcwTnlWdm5HZldNY3pkTmprak5oakRteUticU1UbHNYSDJjUjdBTTRzaFc1d0daZmw4VQ?oc=5" target="_blank"&gt;一度超411万手封死涨停 总股本不够卖！人形机器人独角兽影子股曝光&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;东方财富&lt;/font&gt;</description><author>东方财富</author><pubDate>Wed, 09 Jul 2025 04:32:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE43eWJfSHZSWmJ4Y1BWdmFzSmNhN09BQ3RjYmtFNEJJdjlLY20xOXcwTnlWdm5HZldNY3pkTmprak5oakRteUticU1UbHNYSDJjUjdBTTRzaFc1d0daZmw4VQ</guid></item><item><title>“稚晖君”的智元机器人借壳上市！宇树科技还是慢了一步 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtZ3hoT3dYdEpvZURZaVR5ck8tM3d5Zzh5RHBPSm12NEVFdkU4cllZblR6eG9OcGJLUVdabUw5SkxHZ0VEQ2JMcTNWbndES1pwR1I5Q2ZwdnE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 09 Jul 2025 05:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5GSGVLb2U2a1U2amtMNzVKdHZXQ3I3emRUZzhzMGVFcWhyREJja0VjTGVrbUpQR3BHcUNwZlk5VEk4UlIzbDl4WVdnT0t2VGh3LS13ZWpPZko</guid></item><item><title>一度超411万手封死涨停 总股本不够卖！人形机器人独角兽影子股曝光 - 东方财富</title><link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE43eWJfSHZSWmJ4Y1BWdmFzSmNhN09BQ3RjYmtFNEJJdjlLY20xOXcwTnlWdm5HZldNY3pkTmprak5oakRteUticU1UbHNYSDJjUjdBTTRzaFc1d0daZmw4VQ?oc=5</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE43eWJfSHZSWmJ4Y1BWdmFzSmNhN09BQ3RjYmtFNEJJdjlLY20xOXcwTnlWdm5HZldNY3pkTmprak5oakRteUticU1UbHNYSDJjUjdBTTRzaFc1d0daZmw4VQ?oc=5" target="_blank"&gt;一度超411万手封死涨停 总股本不够卖！人形机器人独角兽影子股曝光&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;东方财富&lt;/font&gt;</description><author>东方财富</author><pubDate>Wed, 09 Jul 2025 04:32:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE43eWJfSHZSWmJ4Y1BWdmFzSmNhN09BQ3RjYmtFNEJJdjlLY20xOXcwTnlWdm5HZldNY3pkTmprak5oakRteUticU1UbHNYSDJjUjdBTTRzaFc1d0daZmw4VQ</guid></item><item><title>高盛最新中国AI报告：原生应用势头强劲，AI智能体商业化模式初现 - 华尔街见闻</title><link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE44UTFzbFpNSk1TM0s2RVFtZWJLVUtielE2QXY4ZGdQdXl2VmhfU0R6WVMxZ2V5aENjUkttbl9EUjdwUGlBaHNlcVRyaExMZzZBWmpj?oc=5</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 09 Jul 2025 03:57:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE44UTFzbFpNSk1TM0s2RVFtZWJLVUtielE2QXY4ZGdQdXl2VmhfU0R6WVMxZ2V5aENjUkttbl9EUjdwUGlBaHNlcVRyaExMZzZBWmpj</guid></item><item><title>“稚晖君”的智元机器人借壳上市！宇树科技还是慢了一步 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtZ3hoT3dYdEpvZURZaVR5ck8tM3d5Zzh5RHBPSm12NEVFdkU4cllZblR6eG9OcGJLUVdabUw5SkxHZ0VEQ2JMcTNWbndES1pwR1I5Q2ZwdnE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月9日消息，昨夜，稚晖君带着智元机器人冲进了科创板。&lt;/p&gt;
 &lt;p&gt;7月8日晚间，A股上市公司上纬新材发布公告，&lt;strong&gt;控股股东将变更为智元机器人及其管理团队共同持股的主体，&lt;span&gt;实际控制人将变为前华为副总裁邓泰华，核心团队包括“稚晖君”彭志辉等。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1665,94 +1734,4 @@
 	Counterpoint Research高级分析师Mengmeng Zhang补充道：“第二季度的销售表现在一定程度上得益于国家智能手机补贴政策的拉动，但下半年该政策或将逐步缩减，这为市场增长带来一定不确定性，尤其是考虑到最近的销售旺季整体表现平淡。”
 &lt;/p&gt;&lt;p&gt;&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 08 Jul 2025 08:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTFBDRl9Qa1JPVVgwNVlvNkEyQXFHcU03eGtkMklJRGdzSzdlYlloSDdXZWRNZFNIbzZRbklFX3g0bldFdzBIdGRqbTJEaVkxOURHR0ZGak1mRUtJd3R1MzZPVlRIblE</guid></item><item><title>曝18A制程代工告吹！Intel下一代处理器Panther Lake将成绝唱 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxUHpGQVd6YjFqMjBOeVNrdDVEckF3bm1lRjRqMzBPeEtLTE9CVXZKOF9yRFB2bkxud0t2OHg4aXRnanJCQ3p1X2VSSW1kcjdtZG5mSVp6elA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月8日消息，放弃20A制程之后，18A制程被视作Intel重现蓝色荣光，赶上甚至超越台积电的救命稻草。&lt;strong&gt;不过，最近却传出Intel内部打算再度放弃18A，转而全力专注于更先进的14A制程，这到底是真的吗？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;之前Intel放弃20A制程，看似中断前CEO 帕特·基辛格的5Y4N（五年四节点）策略，但外界对这样的决策普遍还是持乐观态度。&lt;/p&gt;
-&lt;p&gt;因为18A制程RibbonFET（环绕栅极晶体管）和PowerVIA（背面供电）等技术确实让人眼前一亮，从首颗确认采18A制程的下代Panther Lake处理器曝光的细节来看，18A能效性能表现俱佳，让外界又重新对Intel先进制程燃起希望。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="曝18A制程代工告吹！Intel下一代处理器Panther Lake将成绝唱 " h="367" src="//img1.mydrivers.com/img/20250708/312ce02c-6219-415f-843d-d15b0a7d11ee.jpg" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;最近，SemiAnalysis报告称，&lt;strong&gt;Intel有可能放弃18A制程（对外代工），资源转投更先进14A。推测原因是18A良率和成本控制进度低于预期，导致无法对外部代工客户（IFS）保证可行价格、产能和时效。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;也因为如此，&lt;span&gt;Intel认为不如将18A制程留给自家处理器较务实，所以到时Panther Lake很有可能是整个市场唯一采用Intel 18A制程的处理器。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;不过，根据我们获得的消息，&lt;span&gt;&lt;strong&gt;首先，这事还是一个计划，还需要等待董事会的正式决议。第二点，不是说Intel要砍掉18A，而只是停止对外积极推广，不再在这个工艺节点上发力对外代工业务，不影响Intel既有的内部和外部订单。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;也就是说，Intel自己家还是继续用，酷睿的Panther Lake，至强的Diamond Rapids/Clearwater Forest都还会用它。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;至于资源转向14A开发和优化理由也很明确，&lt;strong&gt;就是要和台积电N2竞争。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当然，Intel目前尚未对外宣布任何放弃18A制程的消息。不管最终结果如何，我们依然会看到18A制程在Panther Lake上开花结果。&lt;/p&gt;
-&lt;p&gt;时间节奏上，Panther Lake将在今年下半年如期量产，OEM厂商会在2026年初发布相关产品。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="曝18A制程代工告吹！Intel下一代处理器Panther Lake将成绝唱 " h="326" src="//img1.mydrivers.com/img/20250708/098470a9-467b-438e-ab28-1196714d7990.png" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 08 Jul 2025 08:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBxUHpGQVd6YjFqMjBOeVNrdDVEckF3bm1lRjRqMzBPeEtLTE9CVXZKOF9yRFB2bkxud0t2OHg4aXRnanJCQ3p1X2VSSW1kcjdtZG5mSVp6elA</guid></item><item><title>交管12123鸿蒙版3.2.6更新发布：学法减分、老年人业务代办上线 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBHMEVtSTJnUk1XNHZFMXRTU19HMERkWndsTVhnb3BwMVJIdWhKQlZaV3F3cnRER3lTQ3RDaC1MdU5nZ0d1X0xfNTEwS0wyT2xfS19UTm9FYVc?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;交管12123鸿蒙版3.2.6更新发布：学法减分、老年人业务代办上线&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-07-08 15:47:16  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1391597.html" title="拾柒的主页" class="newstiao4"&gt;拾柒&lt;/a&gt;&lt;p&gt;  编辑：拾柒 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1059557-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月8日消息，今日，&lt;span&gt;&lt;strong&gt;交管12123鸿蒙版App更新3.2.6版本，上线学法减分、老年人业务代办两项民生服务。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;学法减分：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;驾驶证记分后，&lt;strong&gt;登录App学习交通法规→通过在线考试可最高减免6分。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;老年人业务代办：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;子女/亲友可绑定60岁以上老年人账号；&lt;/p&gt;
-&lt;p&gt;代办理补换领证件、违法查询等高频业务。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250708/842e2f420f0d404d82b93e7d7536d634.png" target="_blank"&gt;&lt;img alt="交管12123鸿蒙版3.2.6更新发布：学法减分、老年人业务代办上线" h="728" src="//img1.mydrivers.com/img/20250708/s_842e2f420f0d404d82b93e7d7536d634.png" w="355"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;据了解，&lt;strong&gt;今年3月，交管12123鸿蒙版正式上线，上线服务功能已覆盖近60%的交管业务。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250708/712b025c06f240c6a8c3db95a5cb882c.png" target="_blank"&gt;&lt;img alt="交管12123鸿蒙版3.2.6更新发布：学法减分、老年人业务代办上线" h="733" src="//img1.mydrivers.com/img/20250708/s_712b025c06f240c6a8c3db95a5cb882c.png" w="355"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在业务中心中，用户可通过图标右上角的红色小旗标，方便查看和使用已上线功能。&lt;/p&gt;
-&lt;p&gt;交管12123是公安部官方互联网交通安全综合服务管理平台的唯一手机客户端应用软件，由公安部交通管理科学研究所负责研发并提供技术支持，服务对象为全国机动车车主、驾驶人等广大用户。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 08 Jul 2025 07:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBHMEVtSTJnUk1XNHZFMXRTU19HMERkWndsTVhnb3BwMVJIdWhKQlZaV3F3cnRER3lTQ3RDaC1MdU5nZ0d1X0xfNTEwS0wyT2xfS19UTm9FYVc</guid></item></channel></rss>
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 08 Jul 2025 08:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTFBDRl9Qa1JPVVgwNVlvNkEyQXFHcU03eGtkMklJRGdzSzdlYlloSDdXZWRNZFNIbzZRbklFX3g0bldFdzBIdGRqbTJEaVkxOURHR0ZGak1mRUtJd3R1MzZPVlRIblE</guid></item></channel></rss>
