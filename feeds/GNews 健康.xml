@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>重症患者严重水肿的原因及处理策略-MedSci.cn - 梅斯医学 MedSci</title><link>https://news.google.com/rss/articles/CBMibkFVX3lxTE5IcFF2SUYyMlB0a29pWkZNWEFweHJrLW96NjhjU3ZaRkxqMERLaHY5SHlSY0lKNUd0MWlkVl9tdzJISzBkbTM2VEdGci1ITDBhOU5XaFg5ZlJuSTgwQW91b1B5NEp4dGYtdk9vMm5B?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="shortcode-content" id="content"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于视觉语言模型的CT肺动脉造影报告生成与预后预测系统：一项多中心临床验证研究 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBnbThkemZnZUk5UXVtcXNDVlZnUUZQcEpRS2RkeDhNV1ZpOFJkRjFnaHBtLVIwLTNfT3ZNUjlKTk1KQmV6ckk1cDlxd0FrbUFuQ1ZGS1dvRk00eDNrRWtOTHBibGVLcWVIZGN2WQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《npj Digital Medicine》：Vision-language model for report generation and outcome prediction in CT pulmonary angiogram&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对肺动脉栓塞(PE)诊断中CTPA图像解读特异性不足和结构化报告缺失的临床挑战，开发了集成视觉语言模型(VLM)和大型语言模型(LLM)的智能诊断框架。研究人员通过分析69,761例来自布朗大学、约翰霍普金斯大学和INSPECT数据库的CTPA扫描，构建了可检测32种PE相关异常的多标签分类器(AUROC 0.710-0.788)，并创新性地采用异常引导的报告生成策略(BERT-F1 0.891)。该框架首次实现了异常检测、结构化报告生成与多模态生存预测(C-index 0.863)的临床闭环，显著优于传统PESI评分系统。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;肺动脉栓塞(PE)作为威胁生命的急症，每年导致全美超6万例死亡，其诊断高度依赖计算机断层扫描血管造影(CTPA)。然而传统解读方式面临三大困境：放射科医师疲劳导致的30%漏诊率、非结构化报告造成的关键信息遗漏，以及单纯依赖临床指标(PESI评分)的预后预测局限性。这些瓶颈使得近三成未及时诊治的患者在确诊后一个月内死亡，凸显智能化解决方案的紧迫性。&lt;/p&gt;
+&lt;p&gt;布朗大学健康中心(Brown University Health)联合约翰霍普金斯大学的研究团队在《npj Digital Medicine》发表突破性研究，开发出首个整合异常检测、报告生成与预后预测的CTPA全流程分析框架。该研究通过多中心69,761例CTPA扫描的大规模训练，构建的视觉语言模型(VLM)可精准识别32种PE相关异常，其AUROC在外部验证集达0.710-0.788。更创新的是采用异常引导策略生成结构化报告，在专家盲评中96.7%的案例优于传统器官导向式报告。最终通过融合影像特征、临床变量和生成报告文本构建的多模态预后模型，将生存预测C-index提升至0.863，显著超越传统PESI评分(0.764)。&lt;/p&gt;
+&lt;p&gt;关键技术方法包括：1)基于I3D架构的3D多异常分类器，采用Merlin预训练权重增强特征提取；2)分层提示工程，通过器官导向和异常导向双策略驱动CT-CHAT VLM生成区域化发现；3)Llama 3模型实现从图像发现到结构化报告的语义升华；4)Cox比例风险模型整合影像(Img)、文本(Text)、诊断(Dia)和临床变量(Clin)四模态数据。研究队列涵盖BUH(19,565例)、JHU(1,077例)和INSPECT(4,248例)三大数据集，预后分析纳入1,012例确诊PE患者。&lt;/p&gt;
+&lt;p&gt;【结构化CTPA诊断和报告框架】&lt;br&gt;
+研究设计七解剖区域分层分析体系，涵盖肺动脉、心肺等关键结构。多标签分类器在检测"肺动脉栓塞"等32种异常时，F1分数达56.7-60.9%。&lt;/p&gt;&lt;p&gt;显示该框架通过异常预测指导CTPA阅读代理生成区域化发现，再经报告写作代理合成符合临床标准的完整报告。
+&lt;/p&gt;&lt;p&gt;【异常诊断性能】&lt;br&gt;
+在PE检测任务中，模型AUROC(0.740)超越专用算法PENet(0.715)。&lt;/p&gt;&lt;p&gt;显示模型在肺部(0.82)和胸膜(0.79)区域表现尤为突出，对临床关键的胸腔积液、淋巴结肿大等异常识别准确。
+&lt;/p&gt;&lt;p&gt;【报告生成质量】&lt;br&gt;
+异常引导策略(Abn-Pred)使BLEU-4提升114.9%，&lt;/p&gt;&lt;p&gt;对比显示其显著优于器官导向方法。专家评估中90%案例认为异常引导报告更符合临床需求，尤其在"研究印象"部分准确突出PE相关结论。
+&lt;/p&gt;&lt;p&gt;【多模态预后预测】&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;显示四模态融合(Img+Clin+Dia+Text)将BUH队列C-index提升至0.863，决策曲线分析证实其临床效用跨越广泛风险阈值。
+&lt;/p&gt;&lt;p&gt;这项研究开创性地构建了PE诊疗全流程智能化解决方案，其核心突破在于：1)首次实现从影像解读到预后预测的临床闭环；2)异常引导的报告生成策略使AI输出更契合临床思维；3)多模态融合模型突破传统评分系统局限。尽管存在32种预设异常的覆盖局限，但框架设计支持灵活扩展。未来通过前瞻性验证和罕见异常检测增强，该技术有望重塑PE诊疗范式，为AI在急重症医学中的落地提供标杆范例。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sun, 13 Jul 2025 16:02:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBnbThkemZnZUk5UXVtcXNDVlZnUUZQcEpRS2RkeDhNV1ZpOFJkRjFnaHBtLVIwLTNfT3ZNUjlKTk1KQmV6ckk1cDlxd0FrbUFuQ1ZGS1dvRk00eDNrRWtOTHBibGVLcWVIZGN2WQ</guid></item><item><title>重症患者严重水肿的原因及处理策略-MedSci.cn - 梅斯医学 MedSci</title><link>https://news.google.com/rss/articles/CBMibkFVX3lxTE5IcFF2SUYyMlB0a29pWkZNWEFweHJrLW96NjhjU3ZaRkxqMERLaHY5SHlSY0lKNUd0MWlkVl9tdzJISzBkbTM2VEdGci1ITDBhOU5XaFg5ZlJuSTgwQW91b1B5NEp4dGYtdk9vMm5B?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="shortcode-content" id="content"&gt;
                                                 &lt;p&gt;&lt;/p&gt;&lt;p&gt;本报告全面概述了重症患者严重水肿的原因及处理策略，基于当前临床研究和试验数据，详细阐述了潜在病理生理机制、诊断方法和治疗方式。&lt;/p&gt;
 &lt;p&gt;一、引言&lt;/p&gt;
 &lt;p&gt;重症患者的严重水肿是一种多因素现象，会导致器官功能障碍、延长重症监护病房住院时间并增加死亡率，因此在重症医学中构成重大治疗挑战。这些患者水肿的发生与潜在疾病过程以及积极液体复苏的后果密切相关，后者可能导致液体超负荷、毛细血管渗漏和微血管通透性异常。本报告回顾了严重水肿的主要原因，包括液体超负荷、内皮功能障碍和炎症介质释放，以及当前的处理策略，并整合了多项临床试验和观察性研究的证据。鉴于重症疾病的紧迫性和异质性，必须整合个体化监测和量身定制的液体管理方案，以优化患者结局。&lt;/p&gt;
@@ -644,106 +671,4 @@ SRC表达与LUAD的TMB正相关，而与COAD的MSI负相关（图4）。这种�
 &lt;p&gt;这项研究的重要发现在于：首次确立miR-338-3p作为PCOS潜在的诊断标志物，其血清水平降低与疾病发生密切相关；从分子机制上阐明了miR-338-3p通过靶向抑制PTEN表达，进而调控颗粒细胞增殖/凋亡平衡的新途径。这不仅为理解PCOS的发病机制提供了新视角，更重要的是为开发基于miRNA的早期诊断方法和靶向治疗策略奠定了理论基础。特别是考虑到PTEN作为PI3K/Akt通路的关键负调控因子，这一发现也将PCOS的生殖异常与胰岛素抵抗两大核心特征在分子水平上联系起来，对实现PCOS的精准分型和个体化治疗具有重要指导价值。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 12 Jul 2025 16:43:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5PQUl2b1RseUFMMkFsN0hha3VnNDB5ZC15ZmhtX0VTNmVOcTRNcXNFNlVJbDl6MENzeWRuRGgtVG5vYkQzZGhyZnZqMzZoT1dYZWN6a3FmdG5iOWhJeWJKc0hlTUR4bEpIWHdTOQ</guid></item><item><title>削减美国FDA经费 加拿大药品检查主要依赖美国 - 温哥华港湾</title><link>https://news.google.com/rss/articles/CBMiXkFVX3lxTE5hd3poaERYVm5hTTRVOUl1bW9odHNzVDRzTE5iZXQ3R2FvZktIeDU3cUVsNjc0b09FZTE2ckZ1aTNPNE1pY0NlRS1vRnFtSVlIT0Vodm5CUWRTOHYtbVE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="cont"&gt;
-                                &lt;p&gt;加拿大药品制造检查主要依赖他国，已引起专家关切。&lt;br&gt;&lt;br&gt;加拿大药品制造商负责配制和生产数百万加拿大人每天服用的药物，从抗生素到血压药。&lt;br&gt;&lt;br&gt;加拿大人都信任制药商会遵守严格的标准，因为品质问题可能会影响治疗、恶化健康结果，在最严重的情况下，甚至导致患者重病。&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;据加拿大卫生部获得的最新数据显示，供应加拿大市场的药品制造厂检查中，有85%是由国际监管机构而非加拿大卫生部进行的。&lt;/p&gt;&lt;p&gt;考虑到全球品牌药和非专利药供应链的规模和复杂性，依赖合作伙伴是必要的。&lt;/p&gt;&lt;p&gt;然而，加拿大在这些检查中有70%是依赖美国，而美国正面临检查积压，其检查水平仍未恢复到疫情以前。&lt;/p&gt;&lt;p&gt;专家对该系统能否有效保护加拿大人免受劣质或危险药物的侵害表示担忧。&lt;/p&gt;&lt;p&gt;美国北卡罗来纳州杜克大学的健康经济学家里德利（David Ridley）研究了美国食品药物管理局（FDA）的药品制造商检查系统。&lt;/p&gt;&lt;p&gt;他表示，作为政府效率部门（DOGE）一部分，近期对监管机构的削减“对FDA工作人员来说是破坏性的，压力很大，但检查问题已经存在多年，甚至几十年。”&lt;/p&gt;&lt;p&gt;里德利说：“这些机构中许多都没有受到加拿大或美国官员的检查。”&lt;/p&gt;&lt;p&gt;他警告说，监管松懈的风险是“我们可能会得到品质低劣的产品，效果不佳，不稳定，在最坏的情况下是有毒。”&lt;/p&gt;&lt;p&gt;专家警告，随著美国FDA大幅削减预算，加拿大人可能会失去重要的安全资讯。&lt;/p&gt;&lt;p&gt;疫情期间，美国的检查数量骤降。去年，近2千家药厂的检查逾期。&lt;/p&gt;&lt;p&gt;美国政府问责局（Government Accountability Office）是一个应国会委员会要求审计政府活动的独立政府机构，自2009年以来，该机构一直将药品供应链监管领域标记为“高风险”。&lt;/p&gt;&lt;p&gt;该办公室在2024年的一份报告中表示，它“长期以来一直关注FDA监管日益全球化的药品供应链的能力。”&lt;/p&gt;&lt;p&gt;加拿大达尔豪斯大学（Dalhousie University）法律与医学教授赫德（Matthew Herder）专门研究加拿大药品监管。他说，知道世界上最大、最完善的监管机构人手不足，可能会助长松懈的行为。&lt;/p&gt;&lt;p&gt;赫德说：“我担心人们会开始偷工减料。”&lt;/p&gt;&lt;p&gt;加拿大人服用的药物在全球各地生产。据加拿大统计局的贸易数据，2024年，加拿大药品进口量的30.8%来自美国，至少33.5%来自欧洲国家，3.2%来自印度，以及2.9%来自中国。 多年来，药品行业一直受到一系列安全漏洞的困扰。2023年，印度生产的眼药水因发现抗药性细菌污染而被召回，这些产品导致美国3人死亡和8例失明。&lt;/p&gt;&lt;p&gt;近年来在加拿大，药品因微生物和乳胶污染等制造问题而被召回。多伦多大学副教授兼加拿大真实世界证据和药品政策研究主席塔德罗斯（Mina Tadrous）估计，2018年因亚硝胺杂质（被认为是可能的人类致癌物）而召回的缬沙坦（Valsartan）导致加拿大在一个月内有 20万名患者更换处方。这次召回对医疗系统产生连锁反应，给患者、医生和药剂师造成了混乱。&lt;/p&gt;&lt;p&gt;里德利说，虽然有毒污染是最坏的情况，但最常见的影响更为隐蔽。“如果产品品质低劣，最可能的结果就是它不会那么有效。这对人们来说很难察觉。”&lt;/p&gt;&lt;p&gt;无效的处方药可能导致治疗失败、病情延长、产生抗药性以及对医疗保健失去信任。&lt;/p&gt;&lt;p&gt;加拿大药剂师协会通讯高级经理戈戈（Tyler Gogo）在一份电子邮件声明中说：“药剂师依赖强大的监管系统来确保药物安全和高品质。”&lt;/p&gt;&lt;p&gt;他说，当该系统不足时，“它会对提供护理造成实际问题。”&lt;/p&gt;&lt;p&gt;截至今年3月31日，加拿大药品供应依赖境内927家设施和境外5,024家设施。上个财政年度，加拿大卫生部进行了312次国内现场检查、47次国外现场检查，并依赖FDA等值得信赖的国际监管合作伙伴提供的资讯，进行了另外2,086次现场检查。&lt;/p&gt;&lt;p&gt;和美国一样，加拿大在2020年因疫情相关的旅行限制而暂停了国际检查。虽然检查已恢复，但并未增加以弥补错过的一年。然而，加拿大卫生部表示，他们没有任何计划检查的积压。&lt;/p&gt;&lt;p&gt;加拿大卫生部健康产品合规总局局长戈达德（Kim Godard）说：“这就是依赖模式的力量，每个人都参与其中，我们在产生大量积压方面没有处于同样的情况。”&lt;/p&gt;&lt;p&gt;设施数量和行业范围超出了任何单一监管机构的资源。&lt;/p&gt;&lt;p&gt;里德利说：“依赖合作伙伴是合理的。FDA 如此庞大，美国也如此庞大。我们有规模。与我们合作确实是合理的。但这取决于能否指望我们进行这些国外旅行。”&lt;/p&gt;&lt;p&gt;他说，美国一直在努力为印度和中国的海外办事处配备人员，这两个国家是药物活性成分的主要来源。&lt;/p&gt;&lt;p&gt;关于美国的情况，加拿大卫生部的戈达德说：“加拿大目前没有任何担忧。”她说，如果某个地点特别重要，加拿大的检查员或像澳大利亚这样的其他合作伙伴将会填补空白。&lt;/p&gt;&lt;p&gt;对检查协议的担忧正值行业部分领域面临越来越大的压力，要求更便宜地生产药物。&lt;/p&gt;&lt;p&gt;里德利说：“我最担心的是非专利药制造商，因为他们与竞争对手正在进行一场价格战。”他说，美国主要的药品采购商、零售商和批发商正在寻找最便宜的非专利药。&lt;/p&gt;&lt;p&gt;加拿大的非专利药制造商也面临类似的压力。&lt;/p&gt;&lt;p&gt;塔德罗斯说：“我们为药品付款的方式与我们的供应链之间可能存在脱节。”他说，尽管许多医院密切关注药品的来源，但加拿大的药品选择过程并不总是考虑药物是如何或在哪里制造的。&lt;/p&gt;&lt;p&gt;他说：“在很长一段时间里，他们对药物如何进入该国以及监管机构和付款方如何分离漠不关心。”&lt;/p&gt;&lt;p&gt;据加拿大卫生部使用的全球药品趋势预测IQVIA Pharmafocus 2027，非专利药占加拿大产品销售额的约 20%，按处方计算占市场份额的 75%。扩大的国家药品福利计划可能会增加对非专利药的需求。&lt;/p&gt;&lt;p&gt;去年，加拿大卫生部召回了三种非专利药（Accel-Ondansetron ODT、Mint-Betahistine 和 PMS-Pirfenidone），原因是印度Synapse Labs（测试这些产品的机构）发现严重的数据完整性问题。欧洲药品管理局发现“研究数据异常”，引发了对这些药物生物等效性的严重担忧。&lt;/p&gt;&lt;p&gt;据加拿大卫生部称，召回后，Accel-Ondansetron ODT 和 Mint-Betahistine 的制造商提交了新的生物等效性数据。监管机构得出结论，这些药物安全且等同于品牌药，并已批准它们恢复销售。&lt;/p&gt;&lt;p&gt;当被问及非专利药领域的行业压力是否值得担忧时，该部门表示：“加拿大卫生部尚未发现非专利药制造商特有的重大持续合规问题。”&lt;/p&gt;&lt;p&gt;尽管对全球监管机构的监管漏洞和日益增大的压力感到担忧，加拿大卫生部表示正在积极适应。&lt;/p&gt;&lt;p&gt;戈达德说：“我们正在关注情势、趋势、技术以及制药行业正在发生的事情，以确保我们能够满足明天的需求。”&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://www.mingpaocanada.com/realtimenews/article_image/can20250712/$12NR07A.jpg"&gt;&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>温哥华港湾</author><pubDate>Sat, 12 Jul 2025 16:19:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE5hd3poaERYVm5hTTRVOUl1bW9odHNzVDRzTE5iZXQ3R2FvZktIeDU3cUVsNjc0b09FZTE2ckZ1aTNPNE1pY0NlRS1vRnFtSVlIT0Vodm5CUWRTOHYtbVE</guid></item><item><title>海马体C3补体通路激活在炎症性疼痛诱发焦虑抑郁样行为中的关键作用及机制 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5BUjM4YkRKRkdHZlNMbnR5NWQ1cWNJd3Ixcm9aY1BmcmZIbzlZaHBDRExWaDJxVUtfX2ZpXzVXdGhCcjMxUWw0QnB2aExIYW16NFVia296NkNrU1ZjX1NmZ21MelNWaUxWVVhHUA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Molecular Neurobiology》：Activation of the C3 Complement Pathway in the Hippocampus Produces Anxiodepressive Effects in a Mouse Model of Inflammation Pain&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　来自国内的研究人员针对炎症性疼痛常伴随焦虑抑郁共病的问题，通过CFA诱导的小鼠模型发现海马体补体成分3（C3）表达显著升高。研究采用AAV载体敲低C3，证实其通过抑制C3aR-GSK3β信号通路、调节神经胶质活化，同时改善疼痛与情绪障碍，为靶向治疗提供了新依据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;在炎症性疼痛患者中，焦虑与抑郁的共病现象亟待深入解析。最新研究通过完全弗氏佐剂（CFA）构建的小鼠炎症疼痛模型揭示：注射三周后，动物不仅表现出显著焦虑抑郁样行为，海马区补体成分3（C3）的表达也异常升高。当研究者用腺相关病毒（AAV）载体靶向敲低海马C3时，小鼠的情绪障碍明显缓解——有趣的是，连疼痛行为也得到部分改善。&lt;/p&gt;
-&lt;p&gt;机制层面发现，C3的调控作用可能源于其对下游C3a受体（C3aR）-糖原合成酶激酶3β（GSK3β）信号通路的抑制。这一操作使得过度活跃的神经胶质细胞趋于平静，炎症反应回归基线水平，仿佛为大脑按下"重置键"。该成果不仅阐明海马体C3/C3aR-GSK3β通路是炎症疼痛诱发情绪障碍的关键枢纽，更为开发新型靶向疗法提供了分子蓝图。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 12 Jul 2025 16:04:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5BUjM4YkRKRkdHZlNMbnR5NWQ1cWNJd3Ixcm9aY1BmcmZIbzlZaHBDRExWaDJxVUtfX2ZpXzVXdGhCcjMxUWw0QnB2aExIYW16NFVia296NkNrU1ZjX1NmZ21MelNWaUxWVVhHUA</guid></item><item><title>鲫鱼IV型干扰素CaIFNu的转录调控与信号转导机制研究揭示其与I型干扰素的功能分化 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1jOWxUT0w5U2ZIMEhjSnZJckk1SWRYZXVDZ241UHFsTGF1VktCeTBZVGpGbkVaTmNVWFpKNXpiWFpvaUdTT01qSE1tSDlEN0pKcjFpTVg0SnlEbnc2RkJrY1VLU0ZpaWJOZXcxaw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Cell Communication and Signaling》：Transcriptional regulation and signaling of type IV interferon in Carassius gibelio&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究针对脊椎动物IV型干扰素(IFNu)功能机制不清的科学问题，通过鉴定银鲫(Carassius gibelio)中新型CaIFNu，系统解析了其与典型I型干扰素CaIFNa1在抗病毒特性、转录调控模式及信号通路的异同。研究发现CaIFNu通过CaCRFB4/12受体复合物激活JAK-STAT、MAPK和PI3K通路诱导ISGs表达，其启动子对NF-κB(p65)响应显著强于IRFs，在肠道组织特异性高表达，为理解鱼类干扰素系统进化与功能分化提供了新视角。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;在脊椎动物免疫防御系统中，干扰素(IFN)作为关键的细胞因子扮演着重要角色。虽然I型、II型和III型干扰素的功能已较为明确，但新发现的IV型干扰素(IFNu)从鱼类到原始哺乳动物中广泛存在，其精确功能和信号机制却仍是未解之谜。特别是在硬骨鱼类中，干扰素亚型呈现惊人的多样性，这种多基因特性使其成为研究干扰素系统起源与进化的理想模型。更引人深思的是，IV型干扰素与I型干扰素在序列和受体使用上存在显著差异，却都具有抗病毒活性，这种功能重叠背后的分子机制亟待阐明。&lt;/p&gt;
-&lt;p&gt;华中农业大学的研究团队在《Cell Communication and Signaling》发表的研究，首次在天然多倍体银鲫(Carassius gibelio)中鉴定出IV型干扰素CaIFNu，并通过系统的比较研究揭示了其与I型干扰素CaIFNa1在功能特性、转录调控和信号转导方面的异同。研究采用生物信息学分析、双荧光素酶报告系统、蛋白质互作验证、基因沉默等技术手段，结合体内外病毒感染模型，阐明了CaIFNu通过独特受体复合物激活多重信号通路的分子机制。&lt;/p&gt;
-&lt;p&gt;研究首先通过基因组分析鉴定出银鲫19个干扰素亚型，包括新发现的CaIFNu。序列分析显示其具有典型的II类螺旋细胞因子结构，但与其他干扰素亚型的氨基酸同源性仅7.69%-21.94%。基因结构分析发现CaIFNu与斑马鱼IFNu相似，包含5个外显子和4个内含子。&lt;/p&gt;
-&lt;p&gt;在抗病毒特性方面，研究发现重组CaIFNu能显著诱导mx1、pkr、gig1和viperin等干扰素刺激基因(ISGs)的表达，并抑制鲤春病毒血症病毒(SVCV)的复制。但与CaIFNa1相比，CaIFNu诱导ISGs的动力学较慢，在感染早期(6h)的诱导幅度较低，而24小时后两者效果相当。噬斑实验显示CaIFNu使病毒滴度降至4.81 log&lt;sub&gt;10&lt;/sub&gt; PFU/ml，略低于CaIFNa1的6.47 log&lt;sub&gt;10&lt;/sub&gt; PFU/ml，表明两者抗病毒效能存在差异。&lt;/p&gt;
-&lt;p&gt;转录调控研究发现CaIFNu和CaIFNa1启动子均含有STAT、IRF和NF-κB结合位点，但对转录因子的响应模式迥异。双荧光素酶报告系统显示，NF-κB(p65)是CaIFNu启动子最强的激活因子(359.34倍)，而CaIFNa1启动子最响应IRF3(168.10倍)。值得注意的是，IRF1/IRF7组合对CaIFNu启动子表现出显著协同激活效应(3.09-4.38倍)，而对CaIFNa1无此作用；相反，IRF1/IRF3组合特异性协同激活CaIFNa1启动子。&lt;/p&gt;
-&lt;p&gt;信号通路分析表明，CaIFNu通过典型JAK-STAT通路激活STAT1a的磷酸化和核转位，并能激活MAPK和PI3K/Akt等非经典通路。特别的是，CaIFNu强烈依赖p38和JNK的激活，但对ERK无显著影响，这与CaIFNa1能激活所有三种MAPK的特性形成对比。抑制剂实验证实，JNK抑制剂SP600125和p38抑制剂SB203580能显著抑制CaIFNu诱导的信号传导。&lt;/p&gt;
-&lt;p&gt;受体机制研究发现，沉默CaCRFB4或CaCRFB12均能阻断CaIFNu下游信号传导。通过AlphaFold 2预测蛋白结构和ZDOCK模拟显示，CaIFNu通过Val83-Phe86区域结合CaCRFB4，通过Ser181-Cys200区域结合CaCRFB12。免疫共沉淀实验证实三者能形成复合物，且CaCRFB4与CaCRFB12之间存在直接相互作用。&lt;/p&gt;
-&lt;p&gt;体内表达谱分析揭示，CaIFNu在鲤疱疹病毒2型(CyHV-2)和嗜水气单胞菌感染后呈现延迟但持久的诱导模式，且在肠道组织中表达显著高于CaIFNa1。受体分布分析发现CaCRFB4/12在鳃和肠道高表达，而I型干扰素受体CaCRFB1/2/5在脾脏和头肾富集，这种组织分布差异可能决定了两类干扰素的功能分工。&lt;/p&gt;
-&lt;p&gt;这项研究首次系统揭示了鱼类IV型干扰素在转录调控、受体使用和信号激活方面的独特特征，其与I型干扰素的关系类似于哺乳动物中III型与I型干扰素的功能分化。发现不仅为理解脊椎动物干扰素系统的进化提供了新视角，也为开发针对水产病原体的新型免疫调节策略奠定了理论基础。特别值得注意的是，CaIFNu在肠道等粘膜组织中的优势表达模式，暗示其可能在鱼类粘膜免疫防御中扮演特殊角色，这一发现为研究低等脊椎动物的粘膜免疫机制开辟了新途径。研究建立的比较分析框架也为今后解析其他物种IV型干扰素功能提供了重要方法学参考。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 12 Jul 2025 16:03:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1jOWxUT0w5U2ZIMEhjSnZJckk1SWRYZXVDZ241UHFsTGF1VktCeTBZVGpGbkVaTmNVWFpKNXpiWFpvaUdTT01qSE1tSDlEN0pKcjFpTVg0SnlEbnc2RkJrY1VLU0ZpaWJOZXcxaw</guid></item><item><title>综述：胆固醇在中枢神经系统中的作用、循环与髓鞘再生 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE5sZkM3X2hCTzFyazh4Tkh6bFRXZ3hGQkJuRjZ0OFZOck0yWkQ0ckdkVEllVERsTXVKNTMtakc3ak1iVkJzT2FWNC1CdEFscXZjdzlBcnhTVUlGTDROOXE1RmwtekJHTFpaSDVkTA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Journal of Neuroinflammation》：Cholesterol in the CNS: functions, recycling and remyelination&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　这篇综述深入探讨了胆固醇（CNS）在中枢神经系统中的生理功能、代谢循环机制及其在髓鞘再生（remyelination）中的关键作用，特别聚焦于多发性硬化症（MS）等神经退行性疾病中胆固醇稳态失调的病理机制。文章系统梳理了星形胶质细胞、小胶质细胞和少突胶质细胞间的胆固醇交互（cross-talk），并评述了靶向胆固醇代谢的治疗策略（如他汀类、环糊精和LXR激动剂）的潜在应用价值。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;h3&gt;引言&lt;/h3&gt;
-&lt;p&gt;胆固醇作为人体最丰富的脂质之一，自1769年从胆结石中发现以来，其生理功能不断被揭示。中枢神经系统（CNS）虽仅占体重的5%，却集中了全身25%的胆固醇。由于血脑屏障（BBB）的隔离，CNS胆固醇需通过局部合成和细胞间循环维持稳态。近年研究发现，胆固醇代谢紊乱与多发性硬化症（MS）等神经疾病密切相关。&lt;/p&gt;
-&lt;h3&gt;胆固醇结构&amp;amp;合成&lt;/h3&gt;
-&lt;p&gt;胆固醇属于甾醇家族，由四碳环骨架、羟基和非极性烃尾组成。其合成通过Bloch和Kandutsch-Russell两条经典途径，均以乙酰辅酶A（Acetyl-CoA）为起始原料，经HMG-CoA还原酶（HMGCR）催化生成甲羟戊酸，最终形成胆固醇。值得注意的是，7-脱氢胆固醇（7-DHC）不仅是胆固醇前体，还可经紫外线转化为维生素D。&lt;/p&gt;
-&lt;h3&gt;胆固醇在CNS中的生成&lt;/h3&gt;
-&lt;p&gt;星形胶质细胞是发育期胆固醇的主要来源，敲除其胆固醇合成关键蛋白SCAP会导致持续性髓鞘形成不良。神经元在胚胎期活跃合成胆固醇，但成年后转为依赖外源性供给。少突胶质细胞虽能合成胆固醇，但缺陷时可被其他细胞代偿。小胶质细胞在髓鞘再生过程中表现出显著的胆固醇合成上调，特异性敲除其胆固醇合成会严重损害髓鞘修复。&lt;/p&gt;
-&lt;h3&gt;生理功能&lt;/h3&gt;
-&lt;p&gt;胆固醇在CNS中具有多重功能：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;髓鞘形成&lt;/strong&gt;：占髓鞘脂质的70%，是发育性髓鞘形成的限速因素；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;突触可塑性&lt;/strong&gt;：通过调节突触结合蛋白（synaptotagmin）功能促进囊泡融合；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;神经发育&lt;/strong&gt;：驱动树突分化和轴突生长，区域特异性影响神经突延伸；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;激素前体&lt;/strong&gt;：可转化为孕烯醇酮，进而生成皮质醇、性激素等。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;脂质循环机制&lt;/h3&gt;
-&lt;p&gt;CNS通过精密回收系统避免胆固醇堆积：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;外排&lt;/strong&gt;：ABCA1/ABCG1转运体将胆固醇装载至载脂蛋白E（ApoE）颗粒；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;转运&lt;/strong&gt;：HDL样颗粒经LRP1/Trem2受体被神经元和胶质细胞摄取；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;清除&lt;/strong&gt;：神经元特异性酶CYP46A1将胆固醇转化为可跨越BBB的24S-羟胆固醇（24S-HC）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;病理机制&lt;/h3&gt;
-&lt;p&gt;循环障碍会导致：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;胆固醇结晶&lt;/strong&gt;：激活炎症小体，促发促炎性小胶质细胞极化；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;泡沫细胞&lt;/strong&gt;：持续髓磷脂暴露使吞噬细胞脂质超载，形成功能缺陷的脂滴小胶质细胞；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;自噬受损&lt;/strong&gt;：SQSTM1标记显示MS患者病灶中存在脂噬障碍。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;多发性硬化症中的胆固醇紊乱&lt;/h3&gt;
-&lt;p&gt;MS病灶中可见：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;转录组特征&lt;/strong&gt;：慢性活动性病灶边缘的泡沫化小胶质细胞（MIMS）高表达脂代谢相关基因；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;治疗矛盾&lt;/strong&gt;：他汀类药物在实验性自身免疫性脑脊髓炎（EAE）模型中减轻炎症，但在铜宗模型中抑制髓鞘再生；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;生物标志物&lt;/strong&gt;：血清24S-HC水平可反映CNS脱髓鞘程度。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;治疗策略&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;环糊精（CD）&lt;/strong&gt;：通过溶解胆固醇结晶、增强自噬和促进溶酶体胞吐发挥作用，在尼曼匹克病C型（NPC1）中已显示神经保护作用；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LXR激动剂&lt;/strong&gt;：上调ABCA1/ApoE表达，减少泡沫细胞积聚；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RXR激动剂&lt;/strong&gt;：贝沙罗汀可增强髓磷脂碎片清除，但临床试验因副作用未达主要终点。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;结论&lt;/h3&gt;
-&lt;p&gt;胆固醇代谢是CNS功能维持的核心环节，其失调通过炎症、吞噬障碍和髓鞘修复受损等多途径推动神经病变。靶向胆固醇稳态的疗法需平衡免疫调节与髓鞘再生需求，未来研究应深入探索细胞特异性代谢调控机制。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 12 Jul 2025 16:00:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5sZkM3X2hCTzFyazh4Tkh6bFRXZ3hGQkJuRjZ0OFZOck0yWkQ0ckdkVEllVERsTXVKNTMtakc3ak1iVkJzT2FWNC1CdEFscXZjdzlBcnhTVUlGTDROOXE1RmwtekJHTFpaSDVkTA</guid></item></channel></rss>
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 12 Jul 2025 16:43:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5PQUl2b1RseUFMMkFsN0hha3VnNDB5ZC15ZmhtX0VTNmVOcTRNcXNFNlVJbDl6MENzeWRuRGgtVG5vYkQzZGhyZnZqMzZoT1dYZWN6a3FmdG5iOWhJeWJKc0hlTUR4bEpIWHdTOQ</guid></item></channel></rss>
