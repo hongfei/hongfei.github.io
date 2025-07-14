@@ -78,7 +78,153 @@
  
 &lt;p&gt;进一步了解 Tinyflow，可以移步文章&lt;a href="https://www.oschina.net/news/335641"&gt;《嘿，我开发了个性感的 AI 框架 Tinyflow，看看？》&lt;/a&gt;。&lt;/p&gt;
                                                                                 &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 14 Jul 2025 18:22:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTFAzQlJ5MEE3N1hQek5fN2NPWmd0Ql9mRHlRZVFmMWJpRDI1Z3JqUWh3UmREeEtQTGdYc01KbHYxaF9FTnhLelp4OVFlYjRfcmxNWVJyYTJoV3pqS1VDOEU4UFY0ZGl0MFkzWkZmR051RQ</guid></item><item><title>苹果考虑收购法国 AI 初创公司 Mistral AI - OSCHINA</title><link>https://news.google.com/rss/articles/CBMiS0FVX3lxTE5KM19zQm9DVUU2VGlZUzFFcGxmRDN6TTlBUHlwXzRNa1FfRzJHX2JzUWlUQmVyWThxQllydG9LcTZhR1JBRWlkc0IzSQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 14 Jul 2025 18:22:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTFAzQlJ5MEE3N1hQek5fN2NPWmd0Ql9mRHlRZVFmMWJpRDI1Z3JqUWh3UmREeEtQTGdYc01KbHYxaF9FTnhLelp4OVFlYjRfcmxNWVJyYTJoV3pqS1VDOEU4UFY0ZGl0MFkzWkZmR051RQ</guid></item><item><title>月之暗面发布并开源 Kimi K2：擅长代码与 Agentic 任务 - OSCHINA</title><link>https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRQlEzRmZQVnRSTmtHMGFtRV82eGlPbnNOVmhPdkhRblJZZ2VaWVZkZDdxWjBPNXBqdEF5TERrMW9SaWZ5QzUyVWlqajdleWJ3ZVQzVmFR?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;月之暗面正式&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fmoonshotai.github.io%2FKimi-K2%2F" target="_blank"&gt;公布&lt;/a&gt;并开源旗下生成模型 Kimi K2，号称「具备超强代码和 Agent 能力的 MoE 架构基础模型」。&lt;/p&gt; 
+&lt;p&gt;官方介绍，Kimi K2 总参数达到 1T，激活参数为 32B，上下文长度为 128k，并且支持 ToolCalls、JSON Mode、Partial Mode、联网搜索功能等；但模型不支持视觉功能。&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/0714/103750_5M8i_2720166.png"&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/0714/103829_5dWA_2720166.png"&gt;&lt;/p&gt; 
+&lt;p&gt;具体来看，Kimi K2 现已具备稳定的复杂指令解析能力，可将需求自动拆解为一系列格式规范、可直接执行的 ToolCall 结构。&lt;/p&gt; 
+&lt;p&gt;据悉，在 SWE Bench Verified、Tau2、AceBench 等基准性能测试中，Kimi K2 均取得开源模型中的 SOTA 成绩，展现出在代码、Agent、数学推理任务上的领先能力。&lt;/p&gt; 
+&lt;p&gt;目前，Kimi K2 系列已开源 Base（未经过指令微调的基础预训练模型）和 Instruct（通用指令微调版本，为非思考模型）两个版本。&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;Kimi-K2-Base（基座模型）：适合科研与自定义场景；&lt;/li&gt; 
+ &lt;li&gt;Kimi-K2-Instruct（后训练模型）：在大多数问答与Agent任务中表现卓越。&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;模型及 fp8 权重文件已开源至 Hugging Face：&lt;em&gt;&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fhuggingface.co%2Fmoonshotai%2FKimi-K2-Instruct" target="_blank"&gt;https://huggingface.co/moonshotai/Kimi-K2-Instruct&lt;/a&gt;&lt;/em&gt;&lt;/p&gt; 
+&lt;p&gt;另外，月之暗面官方还公布了 Kimi K2 的价格，kimi-k2-0711-preview 定价如下（每百万 tokens）：&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;输入价格（缓存命中）1 元；&lt;/li&gt; 
+ &lt;li&gt;输入价格（缓存未命中）4 元&lt;/li&gt; 
+ &lt;li&gt;输出价格 16 元&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;详情查看&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2F2RPmHf_8KqIjXbY5jLdztQ" target="_blank"&gt;发布公告&lt;/a&gt;。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 14 Jul 2025 18:21:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTFBRQlEzRmZQVnRSTmtHMGFtRV82eGlPbnNOVmhPdkhRblJZZ2VaWVZkZDdxWjBPNXBqdEF5TERrMW9SaWZ5QzUyVWlqajdleWJ3ZVQzVmFR</guid></item><item><title>OpenAI 推迟发布首个开源权重大模型 - OSCHINA</title><link>https://news.google.com/rss/articles/CBMiS0FVX3lxTE4xcmR0OUduVnRrcTdodG53Q3hKRGtBbE1LQVVnZXdCSmp1ZklCdUw4bzlNalRJMGZhU3BYSHpwYjQ4NVVMclo1Zml3VQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;OpenAI 宣布推迟原定于下周发布的开放权重模型。OpenAI CEO Sam Altman &lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fx.com%2Fsama%2Fstatus%2F1943837550369812814" target="_blank"&gt;表示&lt;/a&gt;，此次延迟是为了进行额外的安全测试并审查高风险领域。他强调，一旦模型权重被公开发布，就无法撤回，「并且新模型对我们来说是新的，我们希望做得正确。」  &lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-011c111d2b6d73fdb36348b8e6b94e4c92c.png"&gt;&lt;/p&gt; 
+&lt;p&gt;OpenAI 的研究副总裁，同时也是本次开源模型项目负责人 Aidan Clark 补充说，尽管该模型在能力上表现“非凡”，但公司对开源模型的标准很高，需要更多时间来确保发布的模型在各个方面都令人满意，因为这款模型发布后将无法弃用。&lt;/p&gt; 
+&lt;p&gt;根据此前的报道，该模型的性能水平预计与 o3-mini 相当。新模型预计命名为「开放模型」，但这一说法容易与传统「开源」混淆，开放程度仍取决于其是否公布完整代码、训练细节及许可证。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 14 Jul 2025 18:21:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE4xcmR0OUduVnRrcTdodG53Q3hKRGtBbE1LQVVnZXdCSmp1ZklCdUw4bzlNalRJMGZhU3BYSHpwYjQ4NVVMclo1Zml3VQ</guid></item><item><title>马斯克倾商业帝国之力托举AI梦想 烧钱机器急需特斯拉股东支持 - 新浪财经</title><link>https://news.google.com/rss/articles/CBMihwFBVV95cUxPX1A3QTdOT3Fmcnp3S0pvc1dBUE1qdnhDZ0ljaENBbnpSa1FpWUVGMTVUTnAyQk5SdHgyMGJZZ2lmNEpKT185bWZLMF9uSUR0NUZnWWJyZjFXZ1d1Q2tpVnR0X1JOakFDcW9Gb25RR2lVRXBvWGNNWUdqSkRBbW1EUnN0UEtaQW8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　埃隆·马斯克商业帝国的资金正越来越多地向一个方向汇聚，那就是人工智能（AI）。&lt;/p&gt;
+&lt;p&gt;　　这位亿万富豪周日表示，他计划让&lt;span id="usstock_TSLA"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/TSLA.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;特斯拉&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_TSLA"&gt;&lt;/span&gt;股东投票表决是否允许公司投资两年前创立的人工智能企业xAI。据知情人士透露，马斯克的太空运输公司SpaceX最近已同意向xAI投资约20亿美元。&lt;/p&gt;
+&lt;p&gt;　　马斯克称，他不支持将xAI与其他公司合并，但希望特斯拉投资者能分享到xAI增长的红利。今年3月，xAI以全股票交易方式并入马斯克的社交平台X，估值达1130亿美元。&lt;/p&gt;
+&lt;p&gt;　　不过，马斯克并未说明旗下多家公司投资xAI将如何遏制该公司每月10亿美元的烧钱速度。xAI正试图打造先进的AI模型，与OpenAI等竞争对手展开较量，但其目前仍未在大型企业客户中站稳脚跟，也尚未在开发者社区中建立核心地位。&lt;/p&gt;
+
+&lt;p&gt;　　埃隆·马斯克&lt;/p&gt;
+&lt;p&gt;　　据报道，xAI今年全年将消耗约130亿美元资金，意味着公司目前积极融资的速度最多只能勉强跟上开支。&lt;/p&gt;
+&lt;p&gt;　　为了延长xAI的资金“跑道”，马斯克打造了一个交叉持股、互相支援的“埃隆系”企业集团。但问题在于，并非所有特斯拉股东都愿意让这家市值1万亿美元的电动车公司成为马斯克予取予求的“现金池”。&lt;/p&gt;
+&lt;p&gt;　　此外，xAI的聊天机器人Grok也面临争议。上周五，Grok在X上发布了一份长篇道歉声明，因该模型此前发布了自称“MechaHitler”的内容并赞扬希特勒和大屠杀行为。&lt;/p&gt;
+&lt;p&gt;　　&lt;strong&gt;特斯拉&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　尽管特斯拉仍是全球市值最高的汽车制造商，但在销量下滑和马斯克涉足政治等因素影响下，该公司股价年初至今已下跌约22%。&lt;/p&gt;
+&lt;p&gt;　　Laffer Tengler Investments的CEO兼首席投资官Nancy Tengler表示，特斯拉若投资xAI，将“进一步影响其本就滑坡的电动车业务”。&lt;/p&gt;
+&lt;p&gt;　　不过，她认为该投资最终可能仍会获得股东批准，因为很多投资者对马斯克保持高度忠诚。Tengler指出，2016年特斯拉以全股票方式收购SolarCity的交易就是先例，当时虽然遭遇法律挑战和反对意见，但股东还是放行了。&lt;/p&gt;
+&lt;p&gt;　　“股东可能会把投资xAI视为利好，”她说，“我认为xAI估值还会继续上升，特斯拉的投资将让该公司股东有机会参与获利。”&lt;/p&gt;
+&lt;p&gt;　　特斯拉已将年度股东大会定于11月6日，但尚未发布股东委托书（proxy）。特斯拉、马斯克、特斯拉董事会主席Robyn Denholm以及投资者关系主管Travis Axelrod均未回应置评请求。&lt;/p&gt;
+&lt;p&gt;　　据知情人士透露，马斯克及高管正在讨论构建一个垂直整合的AI基础设施。要实现这一目标，xAI将需要具备全球分发能力和高速连接，而SpaceX运营的7，000多颗星链卫星可能正是关键基础设施。&lt;/p&gt;
+&lt;p&gt;　　晨星公司高级股票分析师Seth Goldstein指出，“如果马斯克能够阐明xAI将来有助于特斯拉AI的发展，那特斯拉投资就有合理性。”&lt;/p&gt;
+&lt;p&gt;　　“但马斯克过去也说过xAI和特斯拉的AI完全不同。如果未来也是这种情况，那么投资xAI就只在私募股权层面才有意义，前提是董事会认为xAI未来的估值会上升。否则，特斯拉董事会应该拒绝这一机会。”&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：王许宁 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 14 Jul 2025 17:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPX1A3QTdOT3Fmcnp3S0pvc1dBUE1qdnhDZ0ljaENBbnpSa1FpWUVGMTVUTnAyQk5SdHgyMGJZZ2lmNEpKT185bWZLMF9uSUR0NUZnWWJyZjFXZ1d1Q2tpVnR0X1JOakFDcW9Gb25RR2lVRXBvWGNNWUdqSkRBbW1EUnN0UEtaQW8</guid></item><item><title>Claude Code 1.0.51 发布，原生支持 Windows - OSCHINA</title><link>https://news.google.com/rss/articles/CBMiZEFVX3lxTFBCLXFkeWEtUlRzQVBXT1pKVWVqX0RhUFk2UUtRck5GQWpMMFZBZUlwTXhOYXgzUEN4ZzFiWE1kTURWY2JoSmN0RmlrX2pLMjRSREp5SVU3aWFSYjZBM191V2FvR3Y?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;Anthropic 发布了其编码助手 Claude Code 的 1.0.51 版本，带来了多项重要更新。&lt;/p&gt; 
+&lt;p&gt;此版本增加了对原生 Windows 的支持，用户不再需要依赖 WSL 环境，但需要安装 Git for Windows。&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;更新内容&lt;/strong&gt;&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;Windows支持新增原生 Windows 支持，无需 WSL。&lt;/li&gt; 
+ &lt;li&gt;API支持通过环境变量 AWS_BEARER_TOKEN_BEDROCK 支持 Bedrock API 密钥。&lt;/li&gt; 
+ &lt;li&gt;诊断工具新增 /doctor 命令帮助用户识别和修复无效的设置文件。&lt;/li&gt; 
+ &lt;li&gt;命令增强--append-system-prompt 命令现在也可在交互模式下使用。&lt;/li&gt; 
+ &lt;li&gt;警告阈值自动压缩警告阈值从60%提高到80%。&lt;/li&gt; 
+ &lt;li&gt;修复了处理带空格的用户目录时 shell 快照的问题。&lt;/li&gt; 
+ &lt;li&gt;信息增强OTEL 资源现在会包含更详细的操作系统信息。&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;详情查看 &lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Fblob%2Fmain%2FCHANGELOG.md" target="_blank"&gt;https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md&lt;/a&gt;&lt;/p&gt; 
+&lt;hr&gt; 
+&lt;div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt; 
+   &lt;div&gt; 
+    &lt;div&gt; 
+     &lt;p&gt;Claude Code 是一款在终端运行的 AI 编程助手，支持理解和操作本地代码库，能够执行基本编码任务、解释复杂的代码逻辑、处理 Git 工作流程等。&lt;/p&gt; 
+     &lt;p&gt;除此之外，Claude Code 还能够回答有关代码架构和逻辑的问题，执行和修复测试、代码格式化等命令。&lt;/p&gt; 
+     &lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-0559ee4c0a0311f8c10e90f9db9df82709f.png"&gt;&lt;/p&gt; 
+    &lt;/div&gt; 
+   &lt;/div&gt; 
+  &lt;/div&gt; 
+ &lt;/div&gt; 
+&lt;/div&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 14 Jul 2025 16:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTFBCLXFkeWEtUlRzQVBXT1pKVWVqX0RhUFk2UUtRck5GQWpMMFZBZUlwTXhOYXgzUEN4ZzFiWE1kTURWY2JoSmN0RmlrX2pLMjRSREp5SVU3aWFSYjZBM191V2FvR3Y</guid></item><item><title>苹果考虑收购法国 AI 初创公司 Mistral AI - OSCHINA</title><link>https://news.google.com/rss/articles/CBMiS0FVX3lxTE5KM19zQm9DVUU2VGlZUzFFcGxmRDN6TTlBUHlwXzRNa1FfRzJHX2JzUWlUQmVyWThxQllydG9LcTZhR1JBRWlkc0IzSQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
                                                                     
                                                         &lt;p&gt;据彭博社&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fwww.bloomberg.com%2Fnews%2Fnewsletters%2F2025-07-13%2Fis-apple-going-to-replace-ceo-tim-cook-who-is-the-next-ceo-of-apple-ternus-md1mhrj4" target="_blank"&gt;报道&lt;/a&gt;，苹果将Mistral视为潜在的收购对象，以弥补其在生成式AI领域（如Siri）的不足 。&lt;/p&gt; 
 &lt;p&gt;Mistral AI是欧洲估值最高的AI初创企业，目前估值约€5.8亿（约$6.2亿），已融资约€1.1亿（约$1.2亿），并正在洽谈新一轮高达$1亿的融资 。该公司以高效的模型和OCR功能闻名，其聊天机器人“Le Chat”也因快速响应受到用户好评 。&lt;/p&gt; 
