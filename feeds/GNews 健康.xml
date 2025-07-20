@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>全科医生对呼吸道合胞病毒(RSV)疾病负担认知及免疫策略观点的质性研究：来自荷兰的启示 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBGZ05rbzJ2MEMtV1FBd1RwV0d3dTRSS0JPbVBoNE5SX2Q3UE9INmFfMjJPSS11UXVhYTBDdlZtWDVvc3BjRWdTN2VSRmI2ZkxMVTRMZGNUTTRYSVNwQ3ZFbjhxNURvcjgwS2NIMA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Vaccine: X》：General practitioners' perceptions of the burden of RSV and views on RSV immunisation – a qualitative interview study&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>综述：人工智能驱动的表位发现用于猴痘病毒疫苗的理性设计 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE10eHBURnJWX05uanl5RUxuS1pibkYzMjZUV3dqMWs1SDd5MGZVeDRTMHBVYU4yTUVtczJQcTBBR3hiTjgzN01RRHhIZEhuOFBtR0Q5bW41QjBiTnFiNmx5M3FqT1F5UHVvYzZrMg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Vaccine: X》：A narrative review of pneumococcal serotypes causing invasive disease in North Africa and the Middle East&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　这篇综述系统阐述了人工智能（AI）在猴痘病毒（MPXV）疫苗开发中的革新性应用，重点探讨了机器学习（ML）和深度学习（DL）如何加速表位（epitope）预测、优化免疫原性分析，并通过整合多组学数据（如基因组学/蛋白质组学）设计多表位疫苗。文章强调AI技术（如AlphaFold2/NetMHCpan）可突破传统疫苗的局限性（如ACAM2000的心肌炎风险），为应对高致死率Clade 1b毒株提供快速响应方案。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;br&gt;
+猴痘病毒（MPXV）作为正痘病毒属成员，自2022年被WHO列为国际关注的公共卫生紧急事件后，其高致死率Clade 1b变异株（致死率10%）的流行凸显疫苗研发紧迫性。传统疫苗如JYNNEOS和ACAM2000存在免疫缺陷人群禁忌症和心肌炎风险，而AI技术通过解析MPXV的197kb基因组及191种蛋白，为理性疫苗设计开辟新路径。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;病毒学与结构特征&lt;/strong&gt;&lt;br&gt;
+MPXV具有典型痘病毒双层膜结构：胞内成熟病毒颗粒（IMV）含核心膜包裹的DNA基因组，其表面A29L、E8L等膜融合蛋白是中和抗体的关键靶点；胞外包膜病毒颗粒（EEV）则依赖B6R糖蛋白实现细胞间传播。AlphaFold2预测显示，A35R等蛋白的保守结构域可作为AI筛选表位的优先目标。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI驱动表位发现&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;数据整合&lt;/strong&gt;：通过ViPR和NCBI获取MPXV蛋白序列，结合IEDB库训练深度学习模型。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结构预测&lt;/strong&gt;：ColabFold重构171种病毒蛋白的3D构象，pLDDT值&amp;gt;90区域被确认为高可信表位候选区。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;免疫识别&lt;/strong&gt;：NetMHCpan算法预测的CTL表位（如ILFLMSQRY）与HLA分子强结合，而BepiPred识别的线性B细胞表位可诱导中和抗体。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;多表位疫苗设计&lt;/strong&gt;&lt;br&gt;
+AI筛选出10种高免疫原性蛋白（如M1R、L1R），其多表位组合可覆盖92%人群HLA类型。VaxiJen评估显示，A29L-A35R复合表位的抗原性评分达0.89，且AllerTOP验证其无过敏风险。分子对接证实这些表位与TCR/CD4&lt;sup&gt;+&lt;/sup&gt;复合物稳定结合。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;挑战与展望&lt;/strong&gt;&lt;br&gt;
+当前瓶颈在于低复杂度区域（LCRs）干扰预测精度，且缺乏MPXV蛋白晶体结构验证。未来可通过迁移学习（transfer learning）借鉴牛痘病毒数据提升模型效能。ESCOTT突变效应预测器显示，Clade 1b的APOBEC3型突变可能影响表位保守性，需动态更新AI训练集。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;&lt;br&gt;
+AI将MPXV疫苗研发周期从数年缩短至数月，其核心优势在于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;快速锁定跨毒株保守表位&lt;/li&gt;
+&lt;li&gt;精准预测MHC-I/II结合亲和力&lt;/li&gt;
+&lt;li&gt;虚拟评估免疫原性/毒性&lt;br&gt;
+这项技术革新为应对新发人兽共患病提供了"数字生物武器库"的构建范式。&lt;/li&gt;
+&lt;/ul&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sun, 20 Jul 2025 17:01:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE10eHBURnJWX05uanl5RUxuS1pibkYzMjZUV3dqMWs1SDd5MGZVeDRTMHBVYU4yTUVtczJQcTBBR3hiTjgzN01RRHhIZEhuOFBtR0Q5bW41QjBiTnFiNmx5M3FqT1F5UHVvYzZrMg</guid></item><item><title>全科医生对呼吸道合胞病毒(RSV)疾病负担认知及免疫策略观点的质性研究：来自荷兰的启示 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTFBGZ05rbzJ2MEMtV1FBd1RwV0d3dTRSS0JPbVBoNE5SX2Q3UE9INmFfMjJPSS11UXVhYTBDdlZtWDVvc3BjRWdTN2VSRmI2ZkxMVTRMZGNUTTRYSVNwQ3ZFbjhxNURvcjgwS2NIMA?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Vaccine: X》：General practitioners' perceptions of the burden of RSV and views on RSV immunisation – a qualitative interview study&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
