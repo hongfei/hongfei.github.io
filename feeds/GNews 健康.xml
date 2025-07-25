@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>全球最大蚊子工厂巴西投产！年产50亿只“防病蚊”对抗登革热 - 羊城晚报</title><link>https://news.google.com/rss/articles/CBMiY0FVX3lxTE5SZ2U4S2hCU1VzRnhTREpPbXY2TXF2LXNMT3RTa0gwRm9mSTlHVC1DUTVSZ1ZqdVNrTGIxakxNWUs5ZWxwNTcwU0F2d1Y0M0xjR2FndC1rSXNtaWlYNFc5b0JxQQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main_article img" id="imgshow" data-pswp-uid="1"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于双向子集相似性的共享标记谱病毒分类工具VirGo的开发与评估 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE42SGlDM1VFWGY2aW1CeWVCQ2lDVHdlVUd0TWs1bmNBTzhoVFJXUm9BZDN2ZGZ1cUtrQWxCdjdtUlJvZUZfVlJRRVFDRDFCa2l3MW15ckEwX1lfTnk2WVV0WGpBTWRxT1d6cFlEbQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Microbiome》：Bidirectional subsethood of shared marker profiles enables accurate virus classification&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对病毒分类学快速更新导致现有生物信息学工具难以同步的问题，开发了新型病毒分类软件VirGo。研究人员创新性地提出双向子集相似性(bidirectional subsethood)算法，通过比对病毒特异性标记谱(virus-specific markers)实现高精度分类。该工具在人类肠道病毒组(kVSCs)、海洋巨型病毒(GOEV)和ICTV参考病毒等数据集测试中，家族水平分类F1值达0.9以上，且能灵活适配国际病毒分类委员会(ICTV)各版本分类体系。研究成果发表于《Microbiome》，为病毒组学研究提供了与时俱进的分类解决方案。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;在病毒学研究领域，国际病毒分类委员会(ICTV)每年多次更新分类体系，这种动态更新虽然能反映病毒进化的最新认知，却给生物信息学工具带来巨大挑战。现有分类软件如vConTACT2、VPF-Class等多基于特定ICTV版本训练，导致分类结果与最新分类体系脱节。更棘手的是，病毒宏基因组测序技术快速发展，使得ICTV收录的病毒物种数量在过去五年翻倍增长（MSL35至MSL39版本新增3468个条目），但现有工具难以同步更新，造成分类标签"冻结"问题。&lt;/p&gt;
+&lt;p&gt;针对这一瓶颈，南加州大学定量与计算生物学系Fengzhu Sun团队联合意大利佛罗伦萨大学等机构的研究人员，开发了新型病毒分类软件VirGo。该工具创新性地采用双向子集相似性算法，通过分析病毒开放阅读框(vORF)与161,862个病毒特异性标记谱的匹配模式，建立序列相似性度量标准。研究显示，VirGo不仅能准确分类完整基因组，对碎片化序列（最低1kbp）仍保持0.9以上的F1值，且可无缝适配ICTV各版本分类体系。&lt;/p&gt;
+&lt;p&gt;关键技术方法包括：1) 使用Prodigal V2.11.0-gv预测vORF；2) 采用MMSeqs2进行高灵敏度序列比对(-s 7.5参数)；3) 开发ICTVdump工具自动获取不同版本ICTV数据；4) 基于Jaccard相似度计算双向子集相似性得分；5) 利用CheckV评估基因组完整性。测试数据集涵盖人类肠道病毒组(kVSCs)、海洋巨型病毒(GOEV)和NCBI RefSeq病毒等。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;病毒标记谱覆盖分析：&lt;br&gt;
+研究发现ICTV病毒序列目前仅覆盖44.05%的病毒特异性标记谱（71,279/161,862），但随ICTV版本更新，匹配标记数呈持续增长趋势（图2e）。值得注意的是，MSL39版本中3%病毒（506个）未匹配任何标记，而8%病毒匹配超过500个标记，显示ICTV收录序列的遗传多样性正在快速扩展。&lt;/p&gt;
+&lt;p&gt;分类性能评估：&lt;br&gt;
+在人类肠道噬菌体数据集(kVSCs)测试中，VirGo严格标准下的F1值达1.0，显著优于geNomad(0.918)和PhaGCN2(0.914)。对860株ICTV代表性病毒的留一法验证显示，VirGo分类准确率达0.982。特别在难分类的60-70% ANI相似度区间，VirGo(0.899)比VPF-Class(0.833)更具优势。海洋巨型病毒分类测试中，VirGo(0.984准确率)仅次于专用工具TIGTOG(0.995)。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;分类稳健性研究：&lt;br&gt;
+通过人工片段化实验发现，即使基因组完整性降至10%（平均长度4.8kbp），VirGo仍保持0.9以上F1值（图4）。Meta分析显示正确分类的病毒比错误分类的病毒平均多10.97%的AAI完整性（95%CI[7.37,13.93]）。当查询序列和参考序列均含≥2个vORF时，分类准确率可达0.987。&lt;/p&gt;
+&lt;p&gt;讨论与展望：&lt;br&gt;
+该研究提出的双向子集相似性度量突破了传统分类工具的版本限制，其核心优势在于将分类特征与动态变化的ICTV分类体系解耦。VirGo的创新性体现在：1) 使用无序集合比较替代固定标记基因；2) 通过ICTVdump实现分类体系动态更新；3) 对碎片化数据保持鲁棒性。值得注意的是，Mononegavirales目病毒仍存在家族级分类困难，未来或需引入序列顺序信息改进算法。&lt;/p&gt;
+&lt;p&gt;研究同时揭示了病毒组学的重要挑战：当前56%的病毒标记谱尚未被ICTV收录，提示环境病毒多样性远超现有分类体系覆盖范围。VirGo的发布为这一快速发展领域提供了关键工具，其设计理念也启示生物信息学工具需与人工注释资源协同进化。该成果对病毒生态研究、临床诊断和新发病毒鉴定具有重要应用价值。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 25 Jul 2025 16:23:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE42SGlDM1VFWGY2aW1CeWVCQ2lDVHdlVUd0TWs1bmNBTzhoVFJXUm9BZDN2ZGZ1cUtrQWxCdjdtUlJvZUZfVlJRRVFDRDFCa2l3MW15ckEwX1lfTnk2WVV0WGpBTWRxT1d6cFlEbQ</guid></item><item><title>全球最大蚊子工厂巴西投产！年产50亿只“防病蚊”对抗登革热 - 羊城晚报</title><link>https://news.google.com/rss/articles/CBMiY0FVX3lxTE5SZ2U4S2hCU1VzRnhTREpPbXY2TXF2LXNMT3RTa0gwRm9mSTlHVC1DUTVSZ1ZqdVNrTGIxakxNWUs5ZWxwNTcwU0F2d1Y0M0xjR2FndC1rSXNtaWlYNFc5b0JxQQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main_article img" id="imgshow" data-pswp-uid="1"&gt;
 						
 					    
 							&lt;p&gt;今日（7月25日），全球规模最大的蚊子工厂在巴西巴拉那州库里蒂巴健康科技园正式启用。该工厂由非营利组织“世界蚊子计划”（WMP）与巴西奥斯瓦尔多·克鲁兹基金会（Fiocruz）合作运营，每周可生产1亿枚蚊卵，预计年产带菌蚊子50亿只，为全球蚊媒疾病防控树立新标杆。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;以蚊治蚊&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;靶向蚊种：工厂专攻埃及伊蚊（登革热、寨卡病毒、基孔肯雅病主要传播媒介）。&lt;/p&gt;&lt;p&gt;核心武器：培育携带沃尔巴克氏菌的雄蚊，该菌可阻断病毒在蚊体内复制，并通过交配将细菌扩散至野生种群，逐步降低病毒传播力。&lt;/p&gt;&lt;p&gt;绿色优势：相比化学杀虫剂，此法无化学污染、不破坏生态平衡，且效果可持续。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;中国案例&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;广州中山大学“蚊子工厂”自2012年运营，采用核辐照不育技术与沃尔巴克氏菌结合，每周生产5000万只雄蚊。南沙区沙仔岛持续释放3年后，野生蚊群减少超90%，部分区域蚊虫绝迹。&lt;/p&gt;&lt;p&gt;综合来源：中国青年报、澎湃新闻&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
