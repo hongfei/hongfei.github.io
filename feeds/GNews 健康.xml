@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>一巴掌拍死蚊子 它的嘴会断在你的肉里吗 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE0yb3pTODA4NVM2R1huSVdVaTVZVFN6YmlPdFB1Q2tuT0I0a0RHdThiaEx6dFhUanNNVVZpdV8ySkZKbFdTMi1Zc1pqQzZ1YmJkQm1XaEhQbE8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>人类海马体单核与空间转录组整合图谱揭示分子景观及其在神经精神疾病中的意义 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1MbEFBSk9Qd0FWdFNYdVh4YkVaY1cxVFRhN0I0RlZjZ0JGUVJydGhGNXViUnlqUENnN2huaFZ3ZEVySHJOclhOWi01VHFEZU5MVTJLNW1pUzE2TmNlWm9FbjhTWTB6VjVWbkthSw?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Nature Neuroscience》：An integrated single-nucleus and spatial transcriptomics atlas reveals the molecular landscape of the human hippocampus&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　这篇研究通过整合单核RNA测序（snRNA-seq）和空间转录组学（SRT）技术，首次绘制了成人海马体（HPC）的高分辨率分子图谱。研究揭示了海马体亚区（如齿状回、CA1-CA4、下托）的细胞类型空间分布特征，并利用非负矩阵分解（NMF）识别了与突触可塑性（如nmf13/nmf7）和神经元活动（如nmf91/nmf20）相关的基因表达模式。通过跨物种分析，研究者将小鼠电惊厥刺激（ECS）数据映射到人类海马体，预测了颗粒细胞（GC）的活性依赖转录程序。此外，研究还发现了下托（SUB）和 retrohippocampal（RHP）区域的层状分子标记（如COL24A1、TOX），为理解阿尔茨海默病（AD）和精神分裂症（SCZ）等疾病的神经环路机制提供了新视角。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;h3&gt;实验设计与数据生成&lt;/h3&gt;
+&lt;p&gt;研究团队对10例神经典型成人脑样本的前海马体进行了解剖，通过Visium空间基因表达平台（Visium-H&amp;amp;E）和10x Genomics单核RNA测序技术，获得了150,917个空间位点和75,411个高质量核的转录组数据。空间数据采用nnSVG和PRECAST算法进行聚类，识别出18个空间域，包括齿状回颗粒细胞层（GCL）、CA1-CA4锥体神经元层以及下托（SUB）等区域。单核数据通过基于偏差的特征选择和批次校正，最终注释出60个细胞簇，涵盖兴奋性神经元、GABA能神经元和胶质细胞等类型。&lt;/p&gt;
+&lt;h3&gt;海马体空间分子架构&lt;/h3&gt;
+&lt;p&gt;空间差异表达分析揭示了海马体亚区的标志性基因：GCL高表达PPFIA2，CA1-CA4富集PRKCG，而SLM-SGZ神经毡区域特异性表达SFRP2。通过伪批量模型比较发现，神经元富集区域（如CA1）高表达CLSTN3，而血管/脑脊液区域则特异性表达TPM2。单核数据进一步解析了颗粒细胞的异质性，例如表达不同激活素受体（ACVR1/ACVR2A/ACVR1C）的亚群，提示成年期GCL存在稳定的功能分化。&lt;/p&gt;
+&lt;h3&gt;跨模态数据整合&lt;/h3&gt;
+&lt;p&gt;研究采用两种整合策略：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;空间解卷积&lt;/strong&gt;：通过Visium-SPG（空间蛋白质组学）验证了RCTD算法在预测神经元（NEUN&lt;sup&gt;+&lt;/sup&gt;）、少突胶质细胞（OLIG2&lt;sup&gt;+&lt;/sup&gt;）空间分布的准确性（ρ&amp;gt;0.86）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;非负矩阵分解（NMF）&lt;/strong&gt;：从单核数据中提取100个表达模式，其中47个具有空间域特异性。例如，nmf77（少突胶质细胞相关）和nmf81（星形胶质细胞相关）分别富集于髓鞘形成（ANK3/RHOA）和突触调控（NRXN1/NCAN）通路。更引人注目的是，nmf13和nmf7捕获了跨神经元的突触特征——前者与兴奋性突触后响应（CAMKK1/DLGAP3）相关，后者编码抑制性突触结构（GABRA1/KIF5A）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;活动依赖性转录程序的发现&lt;/h3&gt;
+&lt;p&gt;通过将人类NMF模式映射到小鼠电惊厥刺激（ECS）数据集，研究者发现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;即刻早期基因模式&lt;/strong&gt;：nmf91（FOS/JUN/NR4A1）在ECS激活的颗粒细胞中权重显著增加，且68.9%的nmf91&lt;sup&gt;+&lt;/sup&gt;位点位于神经元或神经毡区域。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;突触可塑性模式&lt;/strong&gt;：nmf14（BDNF/ACVR1C/SGK1）在ECS颗粒细胞中上调，其人类同源位点主要分布于GCL表层，提示该区域细胞具有突触稳态调节潜能。&lt;br&gt;
+对比之下，nmf10（CNTN1/ADAM22）在静息态颗粒细胞中活跃，可能参与维持已建立的突触连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;下托与海马旁回的空间分子解析&lt;/h3&gt;
+&lt;p&gt;NMF揭示了海马旁回（RHP）的精细分层结构：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;下托亚区&lt;/strong&gt;：nmf40（Sub.1）和nmf54（Sub.2）分别对应CA1近端和中层，而nmf65标记的深层SUB（Sub.3）高表达SCN7A和COL4A1。跨物种分析显示，SUB神经元特异性投射至丘脑和 hypothalamus。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前下托（PreS）&lt;/strong&gt;：nmf17模式的空间分布与经典解剖学描述一致，其标记基因MDFIC可能参与糖皮质激素响应。研究者还鉴定出新型分层标志物，如浅层SUB的NDST4（突触特异性）和深层SUB的TRPC3（离子通道调控）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;疾病关联与意义&lt;/h3&gt;
+&lt;p&gt;S-LDSC分析显示，CA1空间域与精神分裂症（SCZ）遗传风险显著相关，而RHP区域在多种精神疾病中富集。此外，小胶质细胞模式在阿尔茨海默病（AD）中呈现特异性关联。这些发现为靶向特定海马体环路的治疗策略提供了分子基础，例如通过调节BDNF-SORCS3通路改善突触功能障碍。&lt;/p&gt;
+&lt;p&gt;该研究构建的交互式数据库（如Samui）将促进海马体在认知和情绪障碍中的深入研究，其整合方法论（NMF+跨物种映射）为其他脑区图谱研究提供了范式。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 30 Jul 2025 16:34:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1MbEFBSk9Qd0FWdFNYdVh4YkVaY1cxVFRhN0I0RlZjZ0JGUVJydGhGNXViUnlqUENnN2huaFZ3ZEVySHJOclhOWi01VHFEZU5MVTJLNW1pUzE2TmNlWm9FbjhTWTB6VjVWbkthSw</guid></item><item><title>心肌细胞JAK1信号通路在心脏稳态和细胞因子依赖性STAT3激活中的关键作用 - 生物通</title><link>https://news.google.com/rss/articles/CBMibEFVX3lxTE1RYkVxSjh2OUU0dFlFM0NsNl9NSm50M1RTQm9taGo1OVpBeWUzWUktRl80S0J6TmJZLURscW1zQXZKUzNYTmFNaWptQzZZY0QzeWU5ZXh1X0lUYlBJbENscHNUTjRBaEE5dW55QQ?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Journal of Molecular and Cellular Cardiology》：Cardiomyocyte Janus kinase 1 (JAK1) signaling is required for cardiac homeostasis and cytokine-dependent activation of STAT3&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　为解决心肌细胞如何感知和响应炎症环境这一关键科学问题，研究人员开展了心肌细胞Janus激酶1（JAK1）信号通路在心脏稳态中的作用机制研究。通过构建心肌细胞特异性JAK1敲除小鼠模型，发现JAK1缺失导致扩张型心肌病，并证实JAK1是STAT3磷酸化、核转位及转录重编程的必要介质。该研究揭示了JAK1-STAT3轴在心脏生理和病理重塑中的核心地位，为心血管疾病治疗提供了新靶点。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;心脏作为人体最重要的器官之一，其功能维持依赖于复杂的信号网络调控。在心力衰竭等慢性心血管疾病中，炎症反应扮演着关键角色，但心肌细胞如何精确感知和响应炎症环境仍是一个未解之谜。细胞因子通过Janus激酶（JAK）/信号转导和转录激活因子（STAT）通路传递信号，其中STAT3被认为是心脏应激反应的主要介质。然而，作为该通路核心组分的JAK1在心肌细胞中的具体功能，尤其是其对心脏稳态和应激适应的贡献，长期以来缺乏直接证据。&lt;/p&gt;
+&lt;p&gt;针对这一科学空白，美国密歇根大学药理学系（Department of Pharmacology, University of Michigan）的研究团队开展了一项突破性研究。他们发现心肌细胞JAK1信号缺失会导致扩张型心肌病，并首次证实JAK1是细胞因子激活STAT3的必要条件。这项发表在《Journal of Molecular and Cellular Cardiology》的重要成果，为理解心脏生理和病理重塑机制提供了新视角。&lt;/p&gt;
+&lt;p&gt;研究人员采用心肌细胞特异性JAK1敲除小鼠模型，结合超声心动图评估心脏功能，通过免疫印迹和免疫荧光分析STAT3激活状态，并运用RNA测序技术鉴定JAK1依赖性转录靶点。实验还采用组织学染色和免疫组化方法评估心脏纤维化和细胞浸润情况。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.1. Generation of Jak1 conditional deletion mice&lt;/strong&gt;&lt;br&gt;
+研究团队成功构建了心肌细胞特异性JAK1敲除小鼠（Jak1&lt;sup&gt;cKO&lt;/sup&gt;），免疫印迹证实JAK1蛋白在心肌细胞中被完全敲除，而JAK2表达不受影响，确保了模型的特异性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.2. Defective STAT3 signaling in JAK1-deficient cardiomyocytes&lt;/strong&gt;&lt;br&gt;
+分离培养的成年心室肌细胞实验显示，JAK1缺失完全阻断了oncostatin M（OSM）诱导的STAT3酪氨酸705位点（Tyr-705）磷酸化，并显著降低STAT3总蛋白水平。免疫荧光证实JAK1缺失使STAT3核转位能力丧失。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.3. JAK1 is required for cytokine-induced transcriptional reprogramming in cardiomyocytes&lt;/strong&gt;&lt;br&gt;
+RNA测序分析发现OSM处理可显著上调与炎症和免疫反应相关的基因表达。qPCR验证显示，JAK1缺失使心肌细胞对OSM诱导的Thbd、Timp1、Socs3等基因表达完全无反应，但Vegfa表达不受影响，表明JAK1对特定基因程序的调控具有选择性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.4. Cardiomyocyte-specific loss of JAK1 results in dilated cardiomyopathy&lt;/strong&gt;&lt;br&gt;
+超声心动图监测发现，6月龄Jak1&lt;sup&gt;cKO&lt;/sup&gt;小鼠出现左心室扩张和收缩功能减退，表现为典型的扩张型心肌病表型。组织学分析显示心脏重量/体重比显著增加。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.5. Interstitial fibrosis in hearts of aged mice lacking cardiomyocyte JAK1&lt;/strong&gt;&lt;br&gt;
+8月龄Jak1&lt;sup&gt;cKO&lt;/sup&gt;小鼠心脏出现明显间质纤维化，PDGFR&lt;sup&gt;α&lt;/sup&gt;阳性成纤维细胞显著增多。分子标志物Postn和Nox4表达上调，证实JAK1缺失加速了心肌纤维化进程。&lt;/p&gt;
+&lt;p&gt;这项研究首次在体内证实了心肌细胞JAK1信号对心脏稳态的不可或缺性。JAK1通过介导OSM等细胞因子诱导的STAT3激活，调控特定基因程序，维持正常心脏功能。值得注意的是，虽然JAK1和JAK2在心肌细胞中都具有重要功能，但本研究揭示二者可能存在分工：JAK2维持基础STAT3活性，而JAK1介导应激诱导的STAT3激活。这一发现为理解心脏疾病中细胞因子信号的特异性调控提供了新框架。&lt;/p&gt;
+&lt;p&gt;从转化医学角度看，研究提示JAK1特异性抑制剂（目前已用于类风湿关节炎等疾病治疗）可能通过调节STAT3依赖性转录，成为干预心脏不良重塑的潜在策略。特别是在炎症相关心脏疾病中，选择性靶向JAK1可能实现精准调控，避免全面抑制JAK-STAT通路带来的副作用。未来研究可进一步探索不同应激条件下JAK1与JAK2的功能异同，以及JAK1抑制剂在心血管疾病治疗中的临床应用前景。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 30 Jul 2025 16:24:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1RYkVxSjh2OUU0dFlFM0NsNl9NSm50M1RTQm9taGo1OVpBeWUzWUktRl80S0J6TmJZLURscW1zQXZKUzNYTmFNaWptQzZZY0QzeWU5ZXh1X0lUYlBJbENscHNUTjRBaEE5dW55QQ</guid></item><item><title>一巴掌拍死蚊子 它的嘴会断在你的肉里吗 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE0yb3pTODA4NVM2R1huSVdVaTVZVFN6YmlPdFB1Q2tuT0I0a0RHdThiaEx6dFhUanNNVVZpdV8ySkZKbFdTMi1Zc1pqQzZ1YmJkQm1XaEhQbE8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月30日消息，夏天拍蚊子时，很多人会担心：一巴掌拍下去，蚊子的嘴会不会断在皮肤里？&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;答案是：大概率不会。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
