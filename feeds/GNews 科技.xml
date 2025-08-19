@@ -43,7 +43,94 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Tue, 19 Aug 2025 07:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9RQllUOXk5OF80SUkyMk5WanhkNUlFV0MwcGpIZUdDX3B6RzhLbUthVDUycW0wSXlZeVNrQ2VyV1ZWQU1uQXpfNlRFMm01WWZUSkRtaHRGNzhMUlJURFVzZ0NLQXFWMFdFWkE</guid></item><item><title>蔚来100kWh电池包降价2万：已提车的用户可获2万礼金券 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5vUF9KcTZDcGN6aFgyWGpEU3JwNU5SWXRoM2N5OEhHMU11R2Y4Q1FNS0w5RnN6b0V4UENHX1lhUUVQQnpVa18tUmwwbEdSMjZ2Z2szNUZoNWg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Tue, 19 Aug 2025 07:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9RQllUOXk5OF80SUkyMk5WanhkNUlFV0MwcGpIZUdDX3B6RzhLbUthVDUycW0wSXlZeVNrQ2VyV1ZWQU1uQXpfNlRFMm01WWZUSkRtaHRGNzhMUlJURFVzZ0NLQXFWMFdFWkE</guid></item><item><title>Crossplane 2.0 发布 - OSCHINA</title><link>https://news.google.com/rss/articles/CBMia0FVX3lxTE5icE5jTmR5UEZFdk1OWlhHcDZLSkVCcFAzeEt2U1g5NlptaHljdFNMZDRaT3A3b0FZZ2taMU8wNU02QlRYVzAtYVdVWkZkZ21RdER6NEhCN1V2RVo1Y2pkck5XRnMtbXc0V1hn?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;&lt;span&gt;Crossplane 2.0 现已发布，一些新变化包括：&lt;/span&gt;&lt;/p&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;&lt;span&gt;应用支持 —— 不再只管理基础设施，也能和云资源一起管理应用&lt;/span&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;span&gt;更丰富的组合能力 —— 组合资源现在可以包含任何 Kubernetes 资源，不仅限于 Crossplane 定义的资源，支持全栈抽象&lt;/span&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;span&gt;默认命名空间隔离 —— 复合资源（XRs）和托管资源（MRs）默认都有命名空间，隔离更好，更符合 Kubernetes 习惯&lt;/span&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;span&gt;声明式的运维操作 —— 新增 Operation 类型，支持一次性、定时和事件驱动的升级、备份、维护等操作&lt;/span&gt;&lt;/li&gt; 
+ &lt;li&gt;&lt;span&gt;托管资源过滤 —— 只安装你需要的托管资源，不必一次性全部加载某个 Provider 的所有资源&lt;/span&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-b98d1f632166e7cfec273ab5cb31721891b.png"&gt;&lt;/p&gt; 
+&lt;p&gt;Crossplane 2.0 的一些核心变化包括：&lt;/p&gt; 
+&lt;h4&gt;&lt;strong&gt;应用成为一等公民&lt;/strong&gt;&lt;/h4&gt; 
+&lt;p&gt;2.0 最大变化是组合资源现在能包含任何 Kubernetes 资源，不只限于 Crossplane 管理的基础设施。这意味着你可以定义一个复合资源，一次性完成数据库、网络、应用部署、监控等全部配置。&lt;/p&gt; 
+&lt;p&gt;举例，平台团队可以给开发团队提供一个简单的 “microservice” API，自动完成新服务所有所需：&lt;/p&gt; 
+&lt;pre&gt;
+&lt;code&gt;apiVersion: &lt;span&gt;platform.acme.io/v1&lt;/span&gt;
+kind:&lt;span&gt;Microservice&lt;/span&gt;
+metadata:
+namespace:&lt;span&gt;team-api&lt;/span&gt;
+name:&lt;span&gt;user-service&lt;/span&gt;
+spec:
+image:&lt;span&gt;acme/user-service:v1.2.3&lt;/span&gt;
+database:
+    engine:&lt;span&gt;postgres&lt;/span&gt;
+    size:&lt;span&gt;medium&lt;/span&gt;
+ingress:
+    subdomain:&lt;span&gt;users&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;背后自动创建 RDS 实例，配置安全组，部署应用（Deployment）、创建 Service 和 Ingress，甚至设置监控面板。平台团队处理复杂，开发团队获得精准服务。&lt;/p&gt; 
+&lt;h4&gt;&lt;strong&gt;默认启用命名空间隔离&lt;/strong&gt;&lt;/h4&gt; 
+&lt;p&gt;不再默认集群级别资源，这常让新用户困惑。2.0 版本中，复合资源和托管资源都默认在命名空间内，符合 Kubernetes 规范，多租户更直观。&lt;/p&gt; 
+&lt;p&gt;旧的 claim 和 XR 二元结构取消。你只需在对应命名空间创建资源：&lt;/p&gt; 
+&lt;pre&gt;
+&lt;code&gt;apiVersion: &lt;span&gt;example.crossplane.io/v1&lt;/span&gt;
+kind:&lt;span&gt;Database&lt;/span&gt;
+metadata:
+namespace:&lt;span&gt;frontend-team&lt;/span&gt;
+name:&lt;span&gt;user-db&lt;/span&gt;
+spec:
+engine:&lt;span&gt;postgres&lt;/span&gt;
+storage:&lt;span&gt;100Gi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;需要集群范围资源（如共享网络）时依然可以创建，但必须显式指定，不再默认。&lt;/p&gt; 
+&lt;h4&gt;&lt;strong&gt;声明式的运维操作&lt;/strong&gt;&lt;/h4&gt; 
+&lt;p&gt;新增了 Operation 类型。多年来，团队在备份、升级、维护等操作上常依赖自定义控制器或外部定时任务。现在，这些都能用 Crossplane 的声明式方式实现：&lt;/p&gt; 
+&lt;pre&gt;
+&lt;code&gt;apiVersion: &lt;span&gt;ops.crossplane.io/v1alpha1&lt;/span&gt;
+kind:&lt;span&gt;CronOperation&lt;/span&gt;
+metadata:
+name:&lt;span&gt;weekly-db-maintenance&lt;/span&gt;
+spec:
+schedule:&lt;span&gt;"0 2 * * 0"&lt;/span&gt;&lt;em&gt;# Sundays at 2 AM&lt;/em&gt;
+operationTemplate:
+    spec:
+      pipeline:
+      &lt;span&gt;-&lt;/span&gt;step:&lt;span&gt;upgrade&lt;/span&gt;
+        functionRef:
+          name:&lt;span&gt;function-database-upgrade&lt;/span&gt;
+        input:
+          apiVersion:&lt;span&gt;fn.crossplane.io/v1beta1&lt;/span&gt;
+          kind:&lt;span&gt;UpgradeInput&lt;/span&gt;
+          maxDowntime:&lt;span&gt;5m&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;还推出了 WatchOperation，用于事件驱动自动化。&lt;/p&gt; 
+&lt;h4&gt;只安装所需资源&lt;/h4&gt; 
+&lt;p&gt;之前安装 AWS Provider 会加载 100+ 个 CRD，API 服务器压力大。虽然早就意识到问题，但解决方案复杂。&lt;/p&gt; 
+&lt;p&gt;2.0 引入了 ManagedResourceDefinitions（MRDs）和激活策略，优雅解决这个难题：&lt;/p&gt; 
+&lt;pre&gt;
+&lt;code&gt;apiVersion: &lt;span&gt;apiextensions.crossplane.io/v1alpha1&lt;/span&gt;
+kind:&lt;span&gt;ManagedResourceActivationPolicy&lt;/span&gt;
+metadata:
+name:&lt;span&gt;aws-essentials&lt;/span&gt;
+spec:
+activate:
+&lt;span&gt;-&lt;/span&gt;&lt;span&gt;instances.rds.m.aws.crossplane.io&lt;/span&gt;
+&lt;span&gt;-&lt;/span&gt;&lt;span&gt;buckets.s3.m.aws.crossplane.io&lt;/span&gt;
+&lt;span&gt;-&lt;/span&gt;&lt;span&gt;"*.ec2.m.aws.crossplane.io"&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt; 
+&lt;p&gt;这样不仅减轻 API 服务器负担，还让团队清楚平台支持哪些云资源。&lt;/p&gt; 
+&lt;blockquote&gt; 
+ &lt;p&gt;“构建 Crossplane 2.0 过程很艰难。我们弃用了当初看似重要、但实际增加复杂度的功能。基于社区反馈重构核心 API。最重要的是，让 Crossplane 更像原生 Kubernetes，因为平台团队一直这么告诉我们。&lt;/p&gt; 
+ &lt;p&gt;工程量巨大。重构核心控制器，重新设计组合引擎支持任意 Kubernetes 资源，打造全新操作和 Provider 管理系统。但这次发布更像是理念的转变：Crossplane 不只是管理基础设施，而是赋能平台团队构建完整的开发者体验。”&lt;/p&gt; 
+&lt;/blockquote&gt; 
+&lt;p&gt;2.0 版本对大多数 v1.x 配置保持兼容。你已有的组合、Provider、复合资源继续有效。新项目建议直接用 v2 模式。现有项目可以逐步迁移，没必要着急。v1 API 还会持续支持，直到社区不再需要。&lt;/p&gt; 
+&lt;p&gt;公告称，Crossplane 2.0 只是开始。开发团队正着手增强可观察性、改进组合调试工具，强化与云原生生态的集成。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Tue, 19 Aug 2025 06:22:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMia0FVX3lxTE5icE5jTmR5UEZFdk1OWlhHcDZLSkVCcFAzeEt2U1g5NlptaHljdFNMZDRaT3A3b0FZZ2taMU8wNU02QlRYVzAtYVdVWkZkZ21RdER6NEhCN1V2RVo1Y2pkck5XRnMtbXc0V1hn</guid></item><item><title>蔚来100kWh电池包降价2万：已提车的用户可获2万礼金券 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE5vUF9KcTZDcGN6aFgyWGpEU3JwNU5SWXRoM2N5OEhHMU11R2Y4Q1FNS0w5RnN6b0V4UENHX1lhUUVQQnpVa18tUmwwbEdSMjZ2Z2szNUZoNWg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月19日消息，蔚来官方宣布调整100kWh长续航电池包（包含400V、900V平台）的买断价格，蔚来品牌长续航版车型整车购买和电池租用购买起售价同时调整。&lt;/p&gt;
 &lt;p&gt;2025年8月19日（含）起，&lt;span&gt;&lt;strong&gt;蔚来100kWh长续航电池包价格从12.8万元下调至10.8万元，电池租用服务费不变；&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -270,7 +357,33 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Tue, 19 Aug 2025 03:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1wZGtLUzl6bGN3TUluR0lTOXJOeFpwRnpRZzRrMzlTcWliRF8tMVBUOFVjNHYtVjQzZmZ1UmpETFc0aTU2UGJvN3VITGRSbVRHNVJ5djM4WHZXWEVHVGRrVGItQkVzc0lfWmc</guid></item><item><title>NVIDIA App官宣升级！RTX 40系列获Smooth Motion AI插帧 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE94eVJ0cUpxNkN0ZnA0U2N0MF9KSHFkWnZHVzd4N2RERV83WG5PQ0pNTThjTlg3Mno1Sm5KdTlJSy1yZ190dGlULVJSdmVBaHBRRkN0RlZZYU8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Tue, 19 Aug 2025 03:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1wZGtLUzl6bGN3TUluR0lTOXJOeFpwRnpRZzRrMzlTcWliRF8tMVBUOFVjNHYtVjQzZmZ1UmpETFc0aTU2UGJvN3VITGRSbVRHNVJ5djM4WHZXWEVHVGRrVGItQkVzc0lfWmc</guid></item><item><title>REDMI Note 15 Pro+搭载7000mAh金沙江电池：支持90W快充、22.5W反充 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTFBOX19jLVpPV081eUZUaGZYaTZ3dmpSZTlNNE5UOEc3THFQM3kyNGZxV0FMczNjS0tLWUdKNWZUVzNfdWhfajIwOU1wZjZ1Tm5sb1FwbXd2ZGE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，REDMI Note 15系列已经官宣，将于8月21日（周四）19:00正式发布。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官方今天透露，Note 15 Pro+采用黄金续航组合，实现Note迄今最强续航。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250819/902040f5-456d-4b0f-9d78-c6323da319ac.jpg" target="_blank"&gt;&lt;img alt="REDMI Note 15 Pro+搭载7000mAh金沙江电池：支持90W快充、22.5W反充" h="800" src="//img1.mydrivers.com/img/20250819/S902040f5-456d-4b0f-9d78-c6323da319ac.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;内置7000mAh小米金沙江电池，妥妥用一天，而且还是1600次长循环电池，可以放心用5年。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;此外还支持同级别罕见的90W有线秒充+22.5W反向快充，&lt;/strong&gt;&lt;/span&gt;可以方便的为其他手机、设备补电。&lt;/p&gt;
+&lt;p&gt;根据跑分信息显示，该机将搭载骁龙7s Gen4处理器，CPU部分是1*2.71GHz+3*2.4GHz+4*1.8GHz，集成Adreno 810 GPU。&lt;/p&gt;
+&lt;p&gt;内存方面，Note 15 Pro+配备了最高16GB。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="REDMI Note 15 Pro+搭载7000mAh金沙江电池：支持90W快充、22.5W反充" h="793" src="//img1.mydrivers.com/img/20250819/cbb8cef3-d351-4ec3-80d3-53a8e8791c53.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;Note 15 Pro+是Note系列最高定位的机型，该系列主要承担的是旗舰技术下放，以及保证超高的品质，包括防水、防摔、通信等等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这一代Note 15 Pro+甚至提供了北斗短报文版本，是REDMI品牌首款卫星通信手机，此前连K系列旗舰都没能配备。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;可以在无地面网络时，发送或接收卫星消息，关键时刻传递重要信息，获得及时救援。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="REDMI Note 15 Pro+搭载7000mAh金沙江电池：支持90W快充、22.5W反充" h="799" src="//img1.mydrivers.com/img/20250819/bbd4430f-1ff8-474d-9351-3202a8c6df54.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;防水抗摔方面，这次Note 15 Pro+采用小米龙晶玻璃，获得十倍耐摔。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不仅支持IP66、IP68、IP69，还新增IP69K认证，可长时间防高温高压喷水，通过行业首个五星长效防水品质认证。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;模拟用户真实使用1年，防水依旧如新。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 19 Aug 2025 03:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBOX19jLVpPV081eUZUaGZYaTZ3dmpSZTlNNE5UOEc3THFQM3kyNGZxV0FMczNjS0tLWUdKNWZUVzNfdWhfajIwOU1wZjZ1Tm5sb1FwbXd2ZGE</guid></item><item><title>NVIDIA App官宣升级！RTX 40系列获Smooth Motion AI插帧 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE94eVJ0cUpxNkN0ZnA0U2N0MF9KSHFkWnZHVzd4N2RERV83WG5PQ0pNTThjTlg3Mno1Sm5KdTlJSy1yZ190dGlULVJSdmVBaHBRRkN0RlZZYU8?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;NVIDIA App官宣升级！RTX 40系列获Smooth Motion AI插帧&lt;/p&gt;
           
@@ -1181,7 +1294,36 @@
 &lt;span id="epoch_socail_span"&gt;&lt;/span&gt;					
 					&lt;p id="below_article_ad"&gt;&lt;/p&gt;
 				&lt;/div&gt;
-									&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>大紀元</author><pubDate>Mon, 18 Aug 2025 20:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE13M2FqTWhIa0dJblFMcHlFTm9uUktVeF96LTFLb1JiTmg2dGxmVEYxdV9RZTJDZGJFcm9CaURfb3pJQVp1ckF2TXBONUREV3ZNN0tabl9XSHRxa1Vhc3F3R9IBZkFVX3lxTFAxdGM2LWJLOTBlVWljOHh4N3RkMDZaMnVncmlCbHhvUXF6anQ4ZElaWjVrckhkTlpWQ05KZi1xVHpCZzRjZXJCcG1jSXc3Nm1xVldVSVlGWUFROW9KN2hQbzQtbnFJQQ</guid></item><item><title>特朗普政府据报考虑持有英特尔公司10%股份，英特尔股价下跌 提供者 Investing.com - 英为财情 Investing.com</title><link>https://news.google.com/rss/articles/CBMicEFVX3lxTE0wU0xqQVhLejNZR21rQ3ZzNENRNTRBTDdaaTVQb0NYeXlKTW5MZXpJc2gtWThPYmp6SjIwbWc3X2VMaW0zem9RY0p6anBqY2pVMXExX1JkMTlCNnZjamRQTFBPYmlLSEV2TFctU1d4MGg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Mon, 18 Aug 2025 16:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE0wU0xqQVhLejNZR21rQ3ZzNENRNTRBTDdaaTVQb0NYeXlKTW5MZXpJc2gtWThPYmp6SjIwbWc3X2VMaW0zem9RY0p6anBqY2pVMXExX1JkMTlCNnZjamRQTFBPYmlLSEV2TFctU1d4MGg</guid></item><item><title>马斯克吹过的牛 特斯拉现在要用17亿来还债了 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WMW1BaFhfemVlU3VMel9wSndpLTJRN0lIanRGVTdvM0Y4b3FXSjZJMDd4YTdoUEwzWEtCajYxcXNwRTJsa0k3X1lmeE1pREhvQ3BCUGRsNmg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+									&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>大紀元</author><pubDate>Mon, 18 Aug 2025 20:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE13M2FqTWhIa0dJblFMcHlFTm9uUktVeF96LTFLb1JiTmg2dGxmVEYxdV9RZTJDZGJFcm9CaURfb3pJQVp1ckF2TXBONUREV3ZNN0tabl9XSHRxa1Vhc3F3R9IBZkFVX3lxTFAxdGM2LWJLOTBlVWljOHh4N3RkMDZaMnVncmlCbHhvUXF6anQ4ZElaWjVrckhkTlpWQ05KZi1xVHpCZzRjZXJCcG1jSXc3Nm1xVldVSVlGWUFROW9KN2hQbzQtbnFJQQ</guid></item><item><title>特朗普政府据报考虑持有英特尔公司10%股份，英特尔股价下跌 提供者 Investing.com - 英为财情 Investing.com</title><link>https://news.google.com/rss/articles/CBMicEFVX3lxTE0wU0xqQVhLejNZR21rQ3ZzNENRNTRBTDdaaTVQb0NYeXlKTW5MZXpJc2gtWThPYmp6SjIwbWc3X2VMaW0zem9RY0p6anBqY2pVMXExX1JkMTlCNnZjamRQTFBPYmlLSEV2TFctU1d4MGg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Mon, 18 Aug 2025 16:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE0wU0xqQVhLejNZR21rQ3ZzNENRNTRBTDdaaTVQb0NYeXlKTW5MZXpJc2gtWThPYmp6SjIwbWc3X2VMaW0zem9RY0p6anBqY2pVMXExX1JkMTlCNnZjamRQTFBPYmlLSEV2TFctU1d4MGg</guid></item><item><title>699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ObkNZRm9nN25JQ292R016cVNZUm4wcm0wdE5vUTVvTVlKV09FV0x5VUJjZDNCLWE2Q0xlZGpFb0RhbExOamdyZzZIYm16ejhHMzVRUld5NWE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，&lt;strong&gt;小米智能家庭屏8 云台版将于8月21日19:00开售，首发到手价699元，目前新品详细配置已在小米商城公布。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;小米智能家庭屏8 云台版是该系列首款搭载云台摄像头的产品，主打看家、护家功能。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/fd5df2a395bd4d2c929574827eb4360c.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="319" src="//img1.mydrivers.com/img/20250818/s_fd5df2a395bd4d2c929574827eb4360c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;摄像头水平角度360°，垂直方向支持上下共30°手动调节，摄像头为500万像素，&lt;/strong&gt;&lt;/span&gt;号称呈现3K超清画质。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/7b8317a831674c188394a91f9be25aa0.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="720" src="//img1.mydrivers.com/img/20250818/s_7b8317a831674c188394a91f9be25aa0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此外，摄像头内置红外补光灯，夜视距离10米，无光环境也能清晰成像。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/fa0eb3e80e534ceaa01b3b97f70682f3.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="495" src="//img1.mydrivers.com/img/20250818/s_fa0eb3e80e534ceaa01b3b97f70682f3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小米智能家庭屏8 云台版支持AI看护功能，&lt;strong&gt;支持人脸识别、人脸检测、人形追踪，还能智能看娃，支持宝宝哭声检测。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/199bfb89cc57400faf79e79b2d4c0e64.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="572" src="//img1.mydrivers.com/img/20250818/s_199bfb89cc57400faf79e79b2d4c0e64.png" w="597"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当家人、孩子、宠物有情况时，该产品还能远程通知。&lt;/p&gt;
+&lt;p&gt;据悉，小米智能家庭屏8 云台版支持微信、家庭屏双向沟通，方便与家里老人、儿童联系。&lt;/p&gt;
+&lt;p&gt;除了能看家外，该机还内置儿童绘本、学科知识、老年养生、影视综艺等资源，秒变家庭娱乐中心。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/eb51bd937e92447ea8f3a48076d06901.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="800" src="//img1.mydrivers.com/img/20250818/s_eb51bd937e92447ea8f3a48076d06901.png" w="594"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小米智能家庭屏8 云台版搭载小米澎湃OS，可畅连多种智能家庭设备，并升级小米Mesh 2.0网关。&lt;/p&gt;
+&lt;p&gt;其他方面，&lt;strong&gt;该家庭屏屏幕为8英寸，1280*800分辨率，搭载A53四核AI处理器，运行内存2GB，8GB存储空间，搭载超级小爱，&lt;/strong&gt;可自动识别童脸，开启防沉迷、内容过滤。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/e0d9d6e845ef47fda4a696fec791d9a3.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="583" src="//img1.mydrivers.com/img/20250818/s_e0d9d6e845ef47fda4a696fec791d9a3.png" w="590"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/f4f615962299414594ec1939567bcc37.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="691" src="//img1.mydrivers.com/img/20250818/s_f4f615962299414594ec1939567bcc37.png" w="597"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250818/5a7cad06138a44e09dfeb0b5ca7fbce7.png" target="_blank"&gt;&lt;img alt="699元 小米智能家庭屏8 云台版配置公布：360°AI看家神器" h="956" src="//img1.mydrivers.com/img/20250818/s_5a7cad06138a44e09dfeb0b5ca7fbce7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 18 Aug 2025 16:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ObkNZRm9nN25JQ292R016cVNZUm4wcm0wdE5vUTVvTVlKV09FV0x5VUJjZDNCLWE2Q0xlZGpFb0RhbExOamdyZzZIYm16ejhHMzVRUld5NWE</guid></item><item><title>马斯克吹过的牛 特斯拉现在要用17亿来还债了 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WMW1BaFhfemVlU3VMel9wSndpLTJRN0lIanRGVTdvM0Y4b3FXSjZJMDd4YTdoUEwzWEtCajYxcXNwRTJsa0k3X1lmeE1pREhvQ3BCUGRsNmg?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;开着辅助驾驶模式出了车祸，车企到底该不该背锅？&lt;/p&gt;
 &lt;p&gt;这个问题如果放在半年前，那还有得吵。保守派认为车企就不该拿辅助驾驶出来吹nb，而激进派则是觉得司机全责。&lt;/p&gt;
@@ -1873,162 +2015,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 18 Aug 2025 10:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1OQ1pyLUtOTFVLZmhnQmtqRHFBVzFZbkJmbTJHdWMtVDl2SXh0dENzTGxGcWxrZFdHdExiWmI0MTVXVkwwZzJkM3RCZUk0dE1haHZrQ3E2Yjc</guid></item><item><title>中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了 - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE9pTVdSalNhX0NuM3BDR0dXTS1CUEJZcDNnUFdac1hzV09wZU5QdVZEUzZWUHhzemQ4eTF1V2QtVGxsV19DSFNPbEt3WUdyWWppYldsMTFKVFk?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;男篮亚洲杯中国队1分憾负澳大利亚，但另一边绿茵场上，中国机器人传来好消息：&lt;/p&gt;
-&lt;p&gt;1-0战胜人形机器人版德国战车，再次将世界冠军收入囊中。&lt;/p&gt;
-&lt;p&gt;获得胜利的是清华火神队。&lt;/p&gt;
-&lt;p&gt;只见身穿红色队服的火神队1号一脚大力抽射，足球命中德国队球员坚硬的后脚跟，直接回弹入网！&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/7f0cc3dd-a209-42a0-85ff-379338cd29c6.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="338" src="//img1.mydrivers.com/img/20250818/S7f0cc3dd-a209-42a0-85ff-379338cd29c6.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这一波啊，其实战术是翻袋（doge）。&lt;/p&gt;
-&lt;p&gt;一记乌龙球，奠定这场5v5机器人足球赛最终的胜负之势。而这样的让观众们一边鼓掌欢呼一边忍俊不禁的场面，亦是本届&lt;strong&gt;世界人形机器人运动会&lt;/strong&gt;的小小缩影。&lt;/p&gt;
-&lt;p&gt;怎么说？值此闭幕之际，一起来复盘一波机器人冠军们的鬼畜名场面吧~&lt;/p&gt;
-&lt;p&gt;名场面，够帅也够鬼畜&lt;/p&gt;
-&lt;p&gt;首先来看宇树7块金牌之一的100米障碍赛。&lt;/p&gt;
-&lt;p&gt;G1跨栏动作一出，现场欢呼声之巨，毫不逊于人类运动会。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/fefe3ac1-5378-4150-9d0d-4079e13ea076.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="335" src="//img1.mydrivers.com/img/20250818/Sfefe3ac1-5378-4150-9d0d-4079e13ea076.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;最终，宇树以&lt;strong&gt;33.71秒&lt;/strong&gt;的成绩拿下这项比赛的冠军。&lt;/p&gt;
-&lt;p&gt;但其实嘛，是有机会更快的，如果不是……&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/9cd300cc-15a1-42f3-b539-7e9481413872.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="335" src="//img1.mydrivers.com/img/20250818/S9cd300cc-15a1-42f3-b539-7e9481413872.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;画面转到自由搏击赛场，决赛选手这架势确实帅气，看后边蓝衣服大哥的反应就知道打得漂亮。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/db734d2d-2bbe-4d36-b008-6b4112c0dd08.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="328" src="//img1.mydrivers.com/img/20250818/Sdb734d2d-2bbe-4d36-b008-6b4112c0dd08.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;但在这场机器人运动会中想要争得冠军，帅气之外，总要留下点别的素材（doge）。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/c8d84ec1-96cf-4284-a81e-36a87cd6f2a8.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="328" src="//img1.mydrivers.com/img/20250818/Sc8d84ec1-96cf-4284-a81e-36a87cd6f2a8.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;还有快把自家操作员小哥累出工伤的百米飞人：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/add20c20-6df3-4b2a-ac28-fc6bfe190f15.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="338" src="//img1.mydrivers.com/img/20250818/Sadd20c20-6df3-4b2a-ac28-fc6bfe190f15.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;把友商工程师“无情”创飞的长跑健将：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="1024" src="//img1.mydrivers.com/img/20250818/ca221e9f-7615-4b65-9c44-cb2ce33ef0f8.gif" w="576"&gt;&lt;/p&gt;
-&lt;p&gt;兴奋过头冲出广告牌，被工程师赶紧提溜走的足球运动员：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/f56fc57f-9285-4dc5-bc53-bb16a6046f0f.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="338" src="//img1.mydrivers.com/img/20250818/Sf56fc57f-9285-4dc5-bc53-bb16a6046f0f.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;总之，鬼畜名场面第一，比赛第二。不如跳舞，不如跳舞。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/c69c68af-1bba-45c3-9399-f8f1626fe8ef.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="338" src="//img1.mydrivers.com/img/20250818/Sc69c68af-1bba-45c3-9399-f8f1626fe8ef.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;技术实战第一，比赛第二&lt;/p&gt;
-&lt;p&gt;咳咳，玩归玩，闹归闹，话说回来，这次世界人形机器人运动会在赛场的热闹背后，硬核程度也是拉满了的。&lt;/p&gt;
-&lt;p&gt;就拿解说来说，不仅要解说比赛画面，还得把“端到端”、“视觉识别”等等专业术语都熟练掌握。其实也是为了让观众在享受精彩的比赛之后，也能真正了解到当今世界机器人进化到了什么样的水平。&lt;/p&gt;
-&lt;p&gt;技术细节方面，咱们就展开讲讲开头提到的机器人5V5足球赛。实际上，这是此类赛事首次上演5V5规格——&lt;/p&gt;
-&lt;p&gt;足球赛里的机器人全部都是自主行动，无人操控，机器人的数量越多，也就意味着复杂度越高。最早起源于1992年的RoboCup机器人世界杯，最新采用的就是3V3对战模式。&lt;/p&gt;
-&lt;p&gt;参赛队伍们本次采用的都是&lt;strong&gt;加速进化的BoosterT1&lt;/strong&gt;机器人：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/6658a93c-7903-4db8-9806-c0f0543f94da.jpg" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="315" src="//img1.mydrivers.com/img/20250818/S6658a93c-7903-4db8-9806-c0f0543f94da.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;硬件一致，比赛胜负的关键，就是看算法。&lt;/p&gt;
-&lt;p&gt;比如清华火神队锁定金牌，靠的就是这一脚独家“射门”算法——50支参赛队里，只有他们调教机器人掌握了这个动作。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="270" src="//img1.mydrivers.com/img/20250818/2b5e790b-5e4b-4015-b1fc-8b8d46fcab35.gif" w="480"&gt;&lt;/p&gt;
-&lt;p&gt;需要说明的是，由于是全自主上场，何时射门，何时回防，都是机器人自己判断的。这背后就涉及到对球、对自己，以及对球门位置的掌握。&lt;/p&gt;
-&lt;p&gt;也就是说，这场比赛真正考验的是机器人的&lt;strong&gt;视觉识别和空间判断&lt;/strong&gt;：每个机器人头上都装有4个摄像头，其中1个主摄像头负责视觉感知，像人眼一样锁定足球位置，另外3个摄像头则进行距离分析和信息采集，帮机器人判断周围环境。&lt;/p&gt;
-&lt;p&gt;每一次追球、每一次拦截，全靠算法精准计算。机器人一看到球和球门，必须在0.1毫秒内立刻响应动作，否则连贯性就会被打破。&lt;/p&gt;
-&lt;p&gt;另外，本次比赛双方都引入了躲避碰撞算法，让机器人在场上跑动更聪明也更安全。红蓝两队在策略上也各有侧重：&lt;/p&gt;
-&lt;p&gt;德国队采用稳健的联防策略，前锋几乎不回撤到后场防守，全力压制进攻。&lt;/p&gt;
-&lt;p&gt;火神队则采用人盯人策略，前锋有机会回到后场防守，后卫也可能冲到前场参与进攻，攻防转换更灵活。&lt;/p&gt;
-&lt;p&gt;当然，“团队智慧”也是重点。机器人足球赛的意义不仅在于看谁单个球员技术高超，更在于比拼整支队伍的战术智慧——谁的算法更聪明，谁的策略更巧，才是真正的胜负关键。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/0c756323-dc29-439d-99d9-0dbe456ab8a1.gif" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="338" src="//img1.mydrivers.com/img/20250818/S0c756323-dc29-439d-99d9-0dbe456ab8a1.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;26个赛项487场比拼，已经落下帷幕。&lt;/p&gt;
-&lt;p&gt;作为观赛者，我们也还沉浸在赛场的热烈之中，想要抠细每一个名场面——&lt;/p&gt;
-&lt;p&gt;那里既有最前沿技术惊人的进展，也有现实的技术考验值得思索。&lt;/p&gt;
-&lt;p&gt;从机器人马拉松，到世界人形机器人运动会，运动赛事激发的热血背后，实验室里的技术攻关也被更清晰地展现到公众面前，我们得以一窥，当今世界机器人技术的真实面貌。&lt;/p&gt;
-&lt;p&gt;说实话，已经开始期待明年的比赛了。&lt;/p&gt;
-&lt;p&gt;BTW，今年的比赛日门票是128元起，最贵428元。卖得属实火爆。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/bdcc0d10-3f78-4591-8abb-87ae5d1e2545.jpg" target="_blank"&gt;&lt;img alt="中国足球还是靠机器人吧！首届机器人运动会闭幕：票价终究保守了" h="1076" src="//img1.mydrivers.com/img/20250818/Sbdcc0d10-3f78-4591-8abb-87ae5d1e2545.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 18 Aug 2025 10:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9pTVdSalNhX0NuM3BDR0dXTS1CUEJZcDNnUFdac1hzV09wZU5QdVZEUzZWUHhzemQ4eTF1V2QtVGxsV19DSFNPbEt3WUdyWWppYldsMTFKVFk</guid></item><item><title>新加坡 AI 办公系统 Agnes：200 个 Agent 并行研究，让 AI 主动「找茬」打磨设计 - 极客公园</title><link>https://news.google.com/rss/articles/CBMiTEFVX3lxTE9fak5JVFB1U2E0OHBFdmhRaWVDYS1kMGNiU2djU000MkN1Q1ZwV1gxQTE1b25sQjlxeENJU3BERk1vRDJydWdDN0ZreXo?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content"&gt;&lt;p&gt;工具越多，效率反而越低？一项来自《哈佛商业评论》的调查显示，员工每天平均切换应用程序超过 1200 次，一年下来累计浪费的时间高达 5 个完整工作周，占全年总工作时间的 9%。&lt;/p&gt;
-&lt;p&gt;这一现象被称为「切换税」（Toggling Tax）——频繁的认知任务或上下文切换带来的认知干扰、时间损耗和心理负担，并导致注意力分散、错误率上升以及工作质量降低。&lt;/p&gt;
-&lt;p&gt;由新加坡国立大学（NUS）系统孵化的 AI 平台 Agnes，正试图从「系统层」改变这种割裂式工作流，重构一个流畅、连贯的一体化智能工作流体验。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/4c/62/4c623778505d09e64a944ff9f2ad425a.PNG"&gt;&lt;/p&gt;
-&lt;p&gt;Agnes 将搜索、文档生成、图像创作、PPT 输出整合到同一平台中，以共享记忆、共享上下文和实时协同为核心。用户无需手动切换工具，在同一界面即可完成从灵感获取到成品输出的全流程。团队成员能基于统一上下文实时协作，所有修改即时同步，真正实现高效无缝的一站式协同创作。&lt;/p&gt;
-&lt;p&gt;继推出 AI Design 功能后，Agnes 最近再次更新功能——Deep Design 和 Wide Research，聚焦多 Agent 架构，提升复杂任务处理能力和生成质量，进一步巩固其在 AI 原生协作办公系统中的领先地位。同时，Agnes 移动端原生 APP 正式上线 iOS App Store 和 Google Play，满足用户碎片化办公和远程协作的需求。&lt;/p&gt;
-&lt;p&gt;这家诞生于 NUS 体系的 AI 初创产品，在 Product Hunt 上线不满 3 个月，访问量就已接近设计类头部应用 Lovart。目前，Agnes 所属 SAPIENS 公司正以 1 亿美元估值进行新一轮融资。根据其团队内部消息，因为近期注册用户与活跃数据大幅增长，创始团队正在考虑进一步上调估值，为加速海外扩张预留更多资本空间。&lt;/p&gt;
-&lt;h1&gt;01&lt;/h1&gt;
-&lt;p&gt;&lt;span&gt;从 AI Design 到 Deep Design：&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;让 Agent 主动「找茬」，持续优化创作 &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Agnes 首次切入视觉设计领域是在 8 月 1 日推出 &lt;span&gt;AI Design &lt;/span&gt;功能，当时已经支持自然语言对话生图，上传参考图进行风格提取与迁移、选区编辑、色彩和排版调整等，生成的图片还能无缝嵌入 AI PPT，实现图文一体化创作。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/ce/be/cebeacaed039174103ba7ea16582a522.png"&gt;&lt;/p&gt;
-&lt;p&gt;这一次推出的 Deep Design，相比之前又进阶了一层，支持用户在生成图像上手绘修改，系统会即时识别并根据绘图自动调整对应区域细节。&lt;/p&gt;
-&lt;p&gt;更重要的一个更新是 Agnes 在 Deep Design 中引入了 Agent 评审与迭代机制。在生图过程中，多个 Agent 会从构图、风格一致性、细节是否符合描述等维度逐一「找茬」，并给出可执行的修改建议。这些建议会被转化成新的绘图指令生图，再经过评审——形成「生成 → 找茬 → 再生成」的多轮迭代和优选，最终打磨出更贴合用户预期和任务目标的图片。&lt;/p&gt;
-&lt;p&gt;这个设计思路，源于 Agnes 创始人 Bruce 近期被 ICIS 录取的论文《Toward Effective AIGC for Marketing: A Theory-Driven System Design and Empirical Evaluation》。Bruce 拥有微软、LinkedIn 背景，本科毕业于加州大学伯克利分校，数学与计算机双学士，目前为新加坡国立大学博士，是少见的兼顾学术深度与工程能力的 AI 初创公司的创始人。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/9a/f5/9af540633690f6028400c065681a37a1.png"&gt;&lt;/p&gt;
-&lt;p&gt;他在论文与访谈中指出，大语言模型（LLM）与绘图模型在创作过程中的能力是互补的：绘图模型擅长执行指令，但往往只呈现用户描述的「表面含义」，难以捕捉场景背后的真实业务目标或隐含语境；而 LLM 驱动的 Agent，则能对用户输入进行多轮的深度语义分析，挖掘潜在需求，把这些隐藏的意图转化为更精准、完整的绘图指令。两者互补，能显著提升生成结果与实际需求的契合度。&lt;/p&gt;
-&lt;p&gt;在 Deep Design 中，Agent 不仅在生图前优化指令，还在生图后担当评审员，通过「Agent 做高质量思考+绘图模型做高质量执行」的组合，将人类创意从繁琐的细节调整中解放出来。用户只需明确创意与目标，系统就会自动打磨出既符合审美又契合业务需求的最终作品。&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;例如，一个家电品牌设计团队输入「智能电饭煲广告概念图」，Deep Design 会先生成初稿，再由 Agent 审查背景光线、产品质感、品牌色调是否统一，并提出多项优化建议。经过几轮迭代，团队即可直接获得可参考的成品稿，而不必经历传统反复修改的长周期。&lt;/p&gt;
-&lt;h1&gt;02&lt;/h1&gt;
-&lt;p&gt;&lt;span&gt;Wide Research： &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;2 00 个 Agent 并行的研究引擎&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;除了设计功能，Agnes 此次还推出了面向大规模数据研究、市场分析、行业报告生成任务的 Wide Research 功能。&lt;/p&gt;
-&lt;p&gt;据其团队透露，Agnes Wide Reesearch 最多可调用 200 个 Agent 并行工作，搜索广度上较 Agnes 此前的 Search、DeepResearch 功能有明显提升。相比 Manus 的同类功能，Agnes Wide Reesearch 不仅运行速度更快，高并发的 token 成本也更低。&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;原因在于 Agnes 所采用的自研多智能体架构 CodeAgents，它以结构化伪代码替代自然语言作为多 Agent 的沟通方式，实现任务的精细拆解、角色分工与高效调度。该架构能使多步骤任务中的推理成功率提升 20%、Token 消耗下降 40%，并在跨模态任务（如 HotpotQA 和 VirtualHome 仿真环境）中展现了稳定高效的表现。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/81/dc/81dc7fab62277848abc648783658daa2.png"&gt;&lt;/p&gt;
-&lt;p&gt;Agnes 团队近期发表的论文《CodeAgents: A Token-Effcient Framework for Codifed Multi-Agent Reasoning in LLMs》，论文一作为创始人 Bruce，剩余共同作者来自新加坡国立大学和东南大学。&lt;/p&gt;
-&lt;h1&gt;03&lt;/h1&gt;
-&lt;p&gt;&lt;span&gt;发布订阅计划并上线移动端，&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;迈向智能协作办公系统新阶段 &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Agnes 目前也正式发布了收费方案，涵盖 Free、Basic（9.9 美元/月）、Plus（19.9 美元/月）、Pro（99.9 美元/月）四档订阅服务，以支持其持续的技术研发和全球扩张计划。新注册用户可免费体验 DeepDesign、WideResearch、协作功能。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/65/71/6571d3fb17b81c390b71d6f7bce1f43f.png"&gt;&lt;/p&gt;
-&lt;p&gt;为了适配碎片化办公场景，Agnes 同时上线了 iOS App Store 和 Google Play 原生 APP，首批功能涵盖 Search、Deep Research 和 AI Slides，移动端与 Web 端共享任务状态与上下文信息。用户无论在办公室、家中还是出差途中，都能无缝延续任务，不受时间与地点限制。&lt;/p&gt;
-&lt;p&gt;Bruce 曾强调：「真正的 AI 系统不是一个 Chat 窗口，而是一个智能的工作现场」，并主张从「插件组合」走向完整的「工作系统」。&lt;/p&gt;
-&lt;p&gt;Deep Design、Wide Research 包括移动端 APP 的上线，证明了 Agnes 确实在沿着这一方向持续推进——把零散的创作工具重构为流畅、高效的智能工作流，其目标不仅是生成内容，而是全面提升生产力、优化团队协作流程，并打造一个可持续演进的智能办公生态系统。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>极客公园</author><pubDate>Mon, 18 Aug 2025 10:22:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9fak5JVFB1U2E0OHBFdmhRaWVDYS1kMGNiU2djU000MkN1Q1ZwV1gxQTE1b25sQjlxeENJU3BERk1vRDJydWdDN0ZreXo</guid></item><item><title>印度女子误将Labubu当神明供奉 网友调侃：Labubu正式封神了！ - 驱动之家</title><link>https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kcExlb3JsajFDR3RjbVBvLUxmclkyRzYxX0FHQzk5WGszQ285THU3QmVockxwdTRHVXJKZzlXQ1F4TlZKOGtEXzlJaVpycktudmpWUDdwTTE?oc=5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;印度女子误将Labubu当神明供奉 网友调侃：Labubu正式封神了！&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-08-18 17:40:42  出处：快科技 作者：哈尔  编辑：哈尔 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1068974-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-  
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，据媒体报道，近日，印度一名女子误把中国人气玩偶Labubu当神明供奉，还献上供品，引发网友热议。&lt;/p&gt;
-&lt;p&gt;据悉，这段视频最初由网友上传至TikTok与X，附文写道：&lt;strong&gt;“一个印度女孩告诉妈妈，Labubu是中国神明，结果妈妈立刻开始供奉。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;视频中可以看到，女子拿起Labubu玩偶，对着神坛进行传统祈祷仪式，还向玩偶献上水果供品。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250818/83dfcfa4-4947-4c04-881c-6e47550a39a9.png" target="_blank"&gt;&lt;img alt="印度女子误将Labubu当神明供奉 网友调侃：Labubu正式封神了！" h="751" src="//img1.mydrivers.com/img/20250818/S83dfcfa4-4947-4c04-881c-6e47550a39a9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;有的网友觉得十分搞笑，调侃道：“Labubu 正式封神了！”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;还有一位网友评论道：“我看到一位能接纳一切的人。在万物中看到神性，典型的印度风格。”&lt;/p&gt;
-&lt;p&gt;据悉，Labubu是泡泡玛特独家IP“THE MONSTERS”精灵天团系列中的一个角色，其原型是一只来自北欧森林的精灵。因其尖耳朵、圆眼睛、九颗锯齿状牙齿和“偷感”笑容，获得了不少年轻人的喜爱。&lt;/p&gt;
-&lt;p&gt;今年4月24日，Labubu在全球发售第三代搪胶毛绒产品“前方高能”系列，产品发售当晚，“抢labubu”相关词条便迅速登顶微博热搜榜首。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 18 Aug 2025 09:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1kcExlb3JsajFDR3RjbVBvLUxmclkyRzYxX0FHQzk5WGszQ285THU3QmVockxwdTRHVXJKZzlXQ1F4TlZKOGtEXzlJaVpycktudmpWUDdwTTE</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 18 Aug 2025 10:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1OQ1pyLUtOTFVLZmhnQmtqRHFBVzFZbkJmbTJHdWMtVDl2SXh0dENzTGxGcWxrZFdHdExiWmI0MTVXVkwwZzJkM3RCZUk0dE1haHZrQ3E2Yjc</guid></item></channel></rss>
