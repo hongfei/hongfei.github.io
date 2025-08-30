@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>WhatsApp发现新的网络间谍活动 受影响用户不到200人 - 8world</title><link>https://www.8world.com/world/whatsapp-finds-new-hacking-campaign-2891156</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;即时通讯应用程序WhatsApp发现一个先进的网络间谍活动，利用应用程序和苹果设备中的一系列安全漏洞进行入侵，所幸受影响的用户不到200人。&lt;/p&gt;&lt;p&gt;WhatsApp发布简短声明说，已经修复了其中一个安全漏洞。黑客之前利用这个漏洞，得以通过苹果设备的另一个漏洞，侵入用户的设备。&lt;/p&gt;&lt;p&gt;国际特赦组织（Amnesty International）安全实验室的研究员说，初步迹象显示，受影响的除了苹果iPhone用户，也包括安卓用户，包括不明身份的民间团体成员。其他应用程序也可能受到牵连。团队已开始收集潜在受害者的取证数据。&lt;/p&gt;&lt;/div&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>华为云CEO：384超节点每卡性能可达英伟达H20三倍 - guancha.cn</title><link>https://www.guancha.cn/economy/2025_08_30_788269.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/08/30/20250830105501165.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	（文/观察者网 吕栋 编辑/张广凯）
+&lt;/p&gt;
+&lt;p&gt;
+	“芯片重不重要？重要。但更重要的是，能够提供客户所需要的计算结果。”8月28日，在中国国际大数据产业博览会开幕式上，华为常务董事、华为云计算CEO张平安说道。
+&lt;/p&gt;
+&lt;p&gt;
+	这是华为云被传出组织架构大调整后，张平安首次公开发声。他表示，华为云正在坚定不移地造算力黑土地，通过昇腾AI云服务和Tokens服务满足客户的“最终计算结果”。
+&lt;/p&gt;
+&lt;p&gt;
+	在当下，大模型发展对AI基础设施提出了更高要求，未来十年，算力的需求可能会有数万倍的增长。但是相比英伟达、AMD等海外厂商，国产芯片的发展受到美国层层围堵。
+&lt;/p&gt;
+&lt;p&gt;
+	在芯片工艺受限的情况下，中国如何提升算力性能和规模？张平安表示，华为可以发挥“大杂烩”的优势——综合在光通信、网络、供电等多方面的技术，以系统补单点，以空间换算力，以带宽换算力，以能源换算力，通过云上算力集群，获得规模优势和提升性能。
+&lt;/p&gt;
+&lt;p&gt;
+	今年4月，华为云发布了CloudMatrix384超节点，将384颗昇腾NPU和192颗鲲鹏CPU，通过全新高速网络MatrixLink全对等互联，形成一台超级“AI服务器”，算力规模达到300 PFlops。此外，对于万亿、十万亿参数的大模型训练任务，可以通过横向扩展方式，将432个超节点连在一起，组成一个16万卡的AI集群。如果这个集群用于训练千亿参数大模型，可以同时支持1300个。
+&lt;/p&gt;
+&lt;p&gt;
+	在这次大会上，华为云宣布其Tokens服务接入CloudMatrix384超节点，通过xDeepServe架构创新，单芯片最高可实现2400TPS、50msTPOT的高吞吐、低时延，超过业界水平。
+&lt;/p&gt;
+&lt;p&gt;
+	观察者网从现场了解到，xDeepServe是以Transformerless的极致分离架构，把MoE大模型拆成可独立伸缩的Attention、FFN、Exper三个微模块，相当于在一台CloudMatrix384上把“大模型”拆成“积木”，并分派到不同的NPU上同步处理任务。之后，再用基于内存语义的微秒级XCCL通信库与FlowServe自研推理引擎，把它们重新拼成一个超高吞吐的LLM服务平台，即Tokens的“超高速流水线”。通过xDeepServe不断调优，最终实现了从非超节点单卡吞吐600tokens/s至超节点单卡吞吐2400tokens/s的提升。
+&lt;/p&gt;
+&lt;p&gt;
+	“昇腾AI云服务，我们可以称之为国产的，我们不在意它是7纳米、5纳米还是10纳米，我们在意的是这样的AI云服务，能够为客户提供算力服务，提供Token服务，来服务客户的最终计算结果。很高兴告诉大家，现在我们超节点的Token服务，在50ms时延下，每卡可以生产出2400个Token，这个效率是H20的三倍。除盘古外，我们还支持主流的DeepSeek、Kimi等开源大模型。”张平安在大会上表示。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2025/08/30/20250830110532200.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span&gt;CloudMatrix384超节点&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	根据大会上的信息，目前华为云正围绕贵安、乌兰察布、和林格尔、芜湖三大核心枢纽，打造“全国算力一张网”，其中在贵州已部署超40套CloudMatrix384超节点。相比去年同期，华为云整体算力规模增长接近250%，昇腾AI云服务客户从从去年的321家增长到今年1714家，重大事故为零的记录连续保持了756天。
+&lt;/p&gt;
+&lt;p&gt;
+	与此同时，华为云围绕智能驾驶领域集中发布CloudVeo智能驾驶云服务等解决方案和成果，华为云贵安汽车专区正式上线，长安天枢智驾搭载华为云CloudMatrix 384超节点也同步亮相。
+&lt;/p&gt;
+&lt;p&gt;
+	华为云透露，中国最大的智能驾驶（辅助）企业引望已经跑在昇腾上。多个项目的实际测试结果显示，在典型感知模型、E2E、VLA模型上，CloudMatrix 384超节点可以达到或者超过H1002.5-3倍。
+&lt;/p&gt;
+&lt;p&gt;
+	就在这次大会前，华为云组织架构调整引发诸多关注。市场传言称，华为云多个部门被裁撤整合。调整后，华为云将聚焦3+2+1业务：3包括通算、智算、存储；2包括AI PaaS、数据库；1则主要为安全业务。
+&lt;/p&gt;
+&lt;p&gt;
+	Canalys数据显示，今年一季度，华为云在中国大陆云服务市场中排名第二，占据18%的份额，与阿里云33%的份额仍有差距。而阿里云AI相关工作负载已连续七个季度实现三位数增长，成为其云业务的核心引擎。
+&lt;/p&gt;
+&lt;p&gt;
+	在分析人士看来，市场主流需求已从“上云”转向“上AI”，客户对AI的旺盛需求正重塑云计算应用方式。华为云此次组织“阵痛”是一次必然的战略抉择，就是通过砍掉协同效应弱、资源消耗大的外围研发，将所有力量都集中到能最大化“昇腾AI+盘古”组合优势的核心场景上。
+&lt;/p&gt;
+&lt;p&gt;
+	这次大会上，华为副总裁、中国云业务部部长陈林也谈到组织架构调整一事。他表示，“原因很简单，就是聚焦AI饱和投入。当前是人工智能应用行业落地的加速期，中国拥有千行万业的业务场景，各行各业都在积极的拥抱AI，中国非常有机会在各行业构筑起全球领先的优势。”
+&lt;/p&gt;
+&lt;p&gt;
+	“我们希望大模型能在昇腾云上跑的更快更好。”张平安也提到，在蒸汽机发明的时候，人们曾经尝试着给三轮车装上蒸汽机，这让火车的发明推迟了四十年，因此，在AI时代来临的时候，要积极拥抱AI原生思维，用AI原生的思维来构筑AI，围绕AI重新构建应用、数据、流程、人员。
+&lt;/p&gt;
+&lt;p&gt;
+	“今天是硅基辅助人来干活，AI是工具；未来AI可能会成为执行任务的主体，人的任务就是管理AI，控制AI的开关。对于希望用AI构筑领先优势的企业来说，只有通过AI原生思维来拥抱AI，才能充分发挥AI的潜力，提高效率，创新业务模式，抓住智能时代机遇，实现智能跃迁。”他表示。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Sat, 30 Aug 2025 03:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE5td2RvbkhjdmhkTlp4X1pTSE9CTjF1OHU4TUVRQTBLdlVXazU1WXhuN3laWnRoeGt5WUFMT0FCUFVtVmh5Y0VQWXd1c2NJTGdhMEdSRzJ3S2VPdUtENlJoMWlONGM</guid></item><item><title>全球首款2nm芯片！三星Exynos 2600跑分出炉：超大核拉到3.8Ghz - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071400.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月30日消息，据博主@i冰宇宙爆料，&lt;span&gt;&lt;strong&gt;三星Exynos 2600最新版跑分已经出现，单核3309，多核11256，已经超过骁龙8至尊版。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;数据显示，其大核心已经拉到3.8Ghz，相比之前的3.55GHz高了不少，另外9颗核心也分别有所提升。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250830/e674aaa5-f2c9-4c78-bb74-843fa69f2a9a.jpg" target="_blank"&gt;&lt;img alt="全球首款2nm芯片！三星Exynos 2600跑分出炉：超大核拉到3.8Ghz" h="837" src="//img1.mydrivers.com/img/20250830/Se674aaa5-f2c9-4c78-bb74-843fa69f2a9a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据悉，Exynos 2600采用1+3+6十核心设计，目前最新版本超大核主频是3.8GHz、大核主频是3.26GHz，小核主频是2.76GHz。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作为对比，此前的版本超大核主频是3.55GHz、大核主频是2.96GHz，小核主频是2.46GHz。&lt;/p&gt;
+&lt;p&gt;这次频率提升让这款芯片性能表现明显高了不少，至少能够站在第一梯队阵营了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="全球首款2nm芯片！三星Exynos 2600跑分出炉：超大核拉到3.8Ghz" h="390" src="//img1.mydrivers.com/img/20250830/dc069957-fe12-4a45-87d5-994cde216296.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;值得注意的是，此前三星还已经确认，&lt;span&gt;&lt;strong&gt;Exynos 2600将成为首款采用最新2nm GAA工艺制造的旗舰芯片组。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而苹果、联发科、高通、小米的下一代旗舰都还是保持3nm工艺，三星Exynos 2600也将是全球首款2nm芯片，&lt;/strong&gt;先进工艺也可能会带来不小的优势。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="全球首款2nm芯片！三星Exynos 2600跑分出炉：超大核拉到3.8Ghz" h="347" src="//img1.mydrivers.com/img/20250830/0067b947-be54-472e-8da2-58dd96522c0f.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;目前来看，三星这次是下定决心要一雪前耻了。&lt;/p&gt;
+&lt;p&gt;此前Exynos 2500遭遇各种问题，比原计划上市时间晚了一年多，前段时间才刚刚在Galaxy Z Flip7上实现首发，作为老牌厂商的作品实际表现还不如小米玄戒O1。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 30 Aug 2025 03:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1zU0Y0OFhqVXFqQnNLOV8ycFJnRUhvZzlQanJRLXZONXZLbzhTcUtFMVdyWnZnNWsyQldQZHdubmxBLTVUYXFfSGhDa3puRk5ILV9ZMHMxWVI</guid></item><item><title>WhatsApp发现新的网络间谍活动 受影响用户不到200人 - 8world</title><link>https://www.8world.com/world/whatsapp-finds-new-hacking-campaign-2891156</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;即时通讯应用程序WhatsApp发现一个先进的网络间谍活动，利用应用程序和苹果设备中的一系列安全漏洞进行入侵，所幸受影响的用户不到200人。&lt;/p&gt;&lt;p&gt;WhatsApp发布简短声明说，已经修复了其中一个安全漏洞。黑客之前利用这个漏洞，得以通过苹果设备的另一个漏洞，侵入用户的设备。&lt;/p&gt;&lt;p&gt;国际特赦组织（Amnesty International）安全实验室的研究员说，初步迹象显示，受影响的除了苹果iPhone用户，也包括安卓用户，包括不明身份的民间团体成员。其他应用程序也可能受到牵连。团队已开始收集潜在受害者的取证数据。&lt;/p&gt;&lt;/div&gt;
       
 &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world</author><pubDate>Sat, 30 Aug 2025 01:23:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE5YS2RjTmVxM0plXzdVZXlLWFZRSGg3aDhrXzZkdmtOYjhXRUZnSWhSaHZ2MlpGeGZjSm5EYl9qUmJaYUxFTzhqT1NUeVllYldkRHFNS3ctanRUZldpXzdkOHlfby1jTFBYbkNNekVST0oxSWpmS3pKQzRsRHk</guid></item><item><title>百度又拿了个第一后 好像找到了自己的节奏 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071372.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
@@ -1256,25 +1347,4 @@ https://time.com/collections/time100-ai-2025/&lt;/p&gt;
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 29 Aug 2025 05:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Oa0pKcTlnenRLMVNqel9KNEpkZExic1l0S1BEX08wTlBfX2RsaGlsdXctN3RmS2ppYUlRa2pZRGxJRDVKTXR4cGRSbzYxaUZpUHI1R29Hdmo</guid></item><item><title>AMD锐龙原装散热器有变！它们不再自带 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071216.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月29日消息，近日，AMD锐龙处理器的原装散热器出现了一些变化，有的不再自带，有的进行了调整。&lt;/p&gt;
-&lt;p&gt;AMD官方解释说，SR2a、SR4散热器已经进入退市阶段(EOL)，因此锐龙8000G/7000/5000系列处理器部分型号更新为SR1散热器，取代SR4散热器，2025年8月1日起开始执行。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250829/5b076e130b2f45c8a1838d5046a37949.jpg" target="_blank"&gt;&lt;img alt="AMD锐龙原装散热器有变！它们不再自带" h="312" src="//img1.mydrivers.com/img/20250829/s_5b076e130b2f45c8a1838d5046a37949.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;对于部分盒装处理器，比如锐龙7 7700、锐龙9 7900，不再自带幽灵Prism散热器，用户需要自行购买。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;对于锐龙7 8700G、锐龙5 3400G等部分型号，自带散热器将从幽灵Prism，换成较小的幽灵Spire，散热片体积缩小，也没有RGB灯效。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过，相关处理器的价格似乎没变。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250829/064974e367b640629db8447497c0be4e.jpg" target="_blank"&gt;&lt;img alt="AMD锐龙原装散热器有变！它们不再自带" h="348" src="//img1.mydrivers.com/img/20250829/s_064974e367b640629db8447497c0be4e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;幽灵系列处理器是从2018年的第二代锐龙2000系列开始引入的，先后衍生出了四种型号，从高到低分别是&lt;strong&gt;Max、Prism、Spire、Stealth&lt;/strong&gt;，用于65W、95W型号，X系列型号一般不自带散热器。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250829/b9088a7930b64050b232e648126a01b2.jpg" target="_blank"&gt;&lt;img alt="AMD锐龙原装散热器有变！它们不再自带" h="337" src="//img1.mydrivers.com/img/20250829/s_b9088a7930b64050b232e648126a01b2.jpg" w="600"&gt;&lt;/a&gt;、&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250829/c80b2fbb35334d60b6980d26487e95e3.jpg" target="_blank"&gt;&lt;img alt="AMD锐龙原装散热器有变！它们不再自带" h="336" src="//img1.mydrivers.com/img/20250829/s_c80b2fbb35334d60b6980d26487e95e3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 29 Aug 2025 05:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBMdkZnQmYxd0IxWEhIM3VjMlZ1T2prZHdUTzZZVEVhTzF6am5hMnZreXdoT0NHUTJpenJiY21Pcy1EUFhjWmZMQUo5QUtEMUxnV19UN05IRTY</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 29 Aug 2025 05:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Oa0pKcTlnenRLMVNqel9KNEpkZExic1l0S1BEX08wTlBfX2RsaGlsdXctN3RmS2ppYUlRa2pZRGxJRDVKTXR4cGRSbzYxaUZpUHI1R29Hdmo</guid></item></channel></rss>
