@@ -1,5 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>千亿身家的江西“网瘾少年”，把茅台推下神坛 - 风闻</title><link>https://user.guancha.cn/main/content?id=1509162</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>从DS这串“乱码”到寒武纪爆发，更大惊喜是……-好评-观察者网 - guancha.cn</title><link>https://www.guancha.cn/haoping/2025_08_30_788338.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175241409.jpg"&gt; 
+&lt;/p&gt;
+&lt;blockquote class="content-quote"&gt;
+	&lt;p&gt;
+		DeepSeek V3.1提及的UE8M0 FP8引爆了舆论，但我们也要清醒看到，其意义并非在于技术上的原创性突破，而是标志着国产AI产业链协同迈入新阶段。它的核心意图在于串联起芯片厂商适配、大模型工具链优化，打破“单点创新”困局。尽管国产算力仍有短板，但上下游企业从协同设计到生态联盟的探索，正以“1+1&amp;gt;2”的合力，为中国AI全产业链突围筑牢根基。
+	&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+	最近一周，半导体成为A股表现最强的板块。上半年利润仅10亿的寒武纪，以超过6000亿的市值跃居科创板首位，滚动市盈率高达500余倍，股价也一度超过茅台成为A股“股王”。
+&lt;/p&gt;
+&lt;p&gt;
+	引爆市场情绪的，是上周DeepSeek V3.1的发布——准确来说，甚至不是这款模型的能力本身，而是短短不到20个字的一则官方留言：“UE8M0 FP8是针对即将发布的下一代国产芯片设计。”
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175242403.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	UE8M0 FP8，立即成了国产AI技术突破的最新代名词。
+&lt;/p&gt;
+&lt;p&gt;
+	在一周高涨的情绪之后，今天的市场出现正常回落。而与之相伴的，是中芯国际冷暖参半的半年报——上半年营收增长22%，Q2产能利用率高达92.5%，中国区收入占比提升至84.2%；但单看二季度，净利润和毛利润都出现下滑。
+&lt;/p&gt;
+&lt;p&gt;
+	事实上，如果把DeepSeek、寒武纪、中芯国际们近期的一系列信息串联起来，我们在欣喜于其进步之余，也能够看到国产AI生态仍受到严重限制，距离世界先进水平仍有差距。
+&lt;/p&gt;
+&lt;p&gt;
+	但更大的惊喜在于，中国产业链的协同程度正在迅速提升。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175242130.png" alt=""&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;DeepSeek到底干了什么&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	UE8M0 FP8，这串如同乱码一般的字符，究竟有什么魔力？
+&lt;/p&gt;
+&lt;p&gt;
+	我们不妨先从FP8说起。
+&lt;/p&gt;
+&lt;p&gt;
+	FP8是一种8位浮点数，其基本原理是用较少的字符来表示更复杂的数字，这对于使用二进制语言的计算机来说是非常重要的。
+&lt;/p&gt;
+&lt;p&gt;
+	这是因为，二进制数字只有0和1两个字符，一个较短的十进制数字，写成二进制可能会变得很长。举个例子，一个随机的十进制数字56.89，如果直接转化计算机使用的二进制数字，是111000.11100011，字符非常多，也就意味着会占用更多存储空间。
+&lt;/p&gt;
+&lt;p&gt;
+	那么为了节省字符，人们发明了浮点数。
+&lt;/p&gt;
+&lt;p&gt;
+	具体来说，所谓浮点数，是指一种特殊的数字表示格式，其基本格式是把数字a写成m×b^e的形式。
+&lt;/p&gt;
+&lt;p&gt;
+	例如，上述的111000.11100011，可以写成1.1100011100011×2⁵。如果我们愿意损失一定的精度，规定小数点后只保留3位，就约等于1.110×2⁵。这样一来，只需要记录下小数点后的110和5次幂这两个信息，就能还原出原来的数字了，存储空间占用量大大减少。
+&lt;/p&gt;
+&lt;p&gt;
+	FP8就是这样一种记录方式，规定用8位二进制数来记录上述信息。例如拿出4位数记录幂值，另外3位数来记录110，剩下1位数记录正负。这种格式叫做E4M3 FP8。
+&lt;/p&gt;
+&lt;p&gt;
+	但是这里面仍然有个问题：当数字比较大时，幂值会变大，而4位二进制数最大仅相当于十进制的15，更大幂值就无法记录。E4M3 FP8最大就只能记录十进制-480到+480之间的数字。
+&lt;/p&gt;
+&lt;p&gt;
+	想要表示更大数字，就要增加用于记录幂值的字符，减少记录前面数字的字符，但这会导致精确度继续变差。
+&lt;/p&gt;
+&lt;p&gt;
+	而UE8M0 FP8，就意味着把全部8位数字都用来记录幂值，而完全舍弃小数点后的信息，以及正负值。
+&lt;/p&gt;
+&lt;p&gt;
+	换句话说，UE8M0 FP8只能记录2,4,8,16……这样2的整数次幂，其它数字都只能近似成这些数字，极大地牺牲了精度，以换取存储范围。
+&lt;/p&gt;
+&lt;p&gt;
+	理解了这一点，我们就可以来讨论DeepSeek为什么要使用UE8M0 FP8。
+&lt;/p&gt;
+&lt;p&gt;
+	大模型的基本原理，是把文字、图像等信息，全部用数字来表示，并预测哪些数字的相关性更高。
+&lt;/p&gt;
+&lt;p&gt;
+	这些数字，就是人们常说的参数，而参数自然是范围越大、越精确越好。
+&lt;/p&gt;
+&lt;p&gt;
+	想要范围和精度两者兼得，就需要用更多的二进制字符来记录。因此，过去很多大模型会使用FP16、FP32等格式，这意味着更大的存储量和算力消耗。
+&lt;/p&gt;
+&lt;p&gt;
+	而DeepSeek V3和R1这样的模型，之所以能够降低算力成本，就是因为使用了FP8，以牺牲精度来换取速度。
+&lt;/p&gt;
+&lt;p&gt;
+	但是，这种牺牲真的不可避免吗？这就要说到UE8M0了。
+&lt;/p&gt;
+&lt;p&gt;
+	事实上，DeepSeek并非所有数据都使用UE8M0格式。如前所述，UE8M0的极端取舍，导致精度极差，是难以满足大模型训练需求的。
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek所做的，是引入UE8M0作为“缩放因子”，使用了microscaling的方法。简单理解，其参数仍然以E4M3 FP8等格式存储，以保证精度，并通过与另一个UE8M0 FP8数字相乘的方式，实现类似FP32的效果，并节省75%的存储需求。
+&lt;/p&gt;
+&lt;p&gt;
+	这种做法尽管增加了算法的复杂程度，但是仅仅在必要时才去做计算，仍然能够大大节省算力和通信带宽需求。
+&lt;/p&gt;
+&lt;p&gt;
+	这对于算力受到严重限制的国内大模型行业来说，自然是极为契合的思路。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175242884.png" alt=""&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;国产芯片“补课”&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	但是，我们也无需过度拔高DeepSeek V3.1的独创程度。
+&lt;/p&gt;
+&lt;p&gt;
+	早在2023年，Meta、英特尔、谷歌等科技巨头推动的“开放计算项目（OCP）”就提出了MXFP8的microscaling数据格式标准，以UE8M0作为缩放因子，而英伟达显卡也早已支持UE8M0。国内的阿里、腾讯、百度等头部大厂，也都参与了这个项目。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175242101.png"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	2023年10月，OCP全球峰会在美国加州圣何塞举办&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	2023年，英伟达首席科学家比尔·戴利曾指出，驱动英伟达芯片性能大幅提升的秘密，已经不是芯片制程驱动的“摩尔定律”，而是数据格式等因素共同驱动的“黄氏定律”，即通过引入较低精度的数字表示法，来减少对存储空间和计算资源的消耗，从而可以加快计算速度和效率。英伟达H100等显卡，就已经开始支持FP8格式。
+&lt;/p&gt;
+&lt;p&gt;
+	如果把目光放到学术界，英伟达和加州理工的研究人员更是在2021年时就曾经发表过一篇论文《LNS-Madam：在对数数值系统中采用乘法式权重更新的低精度训练》，提出了类似的数据转换方法。
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek今年2月发布的高性能计算库DeepGEMM中，也使用了UE8M0缩放因子。DeepGEMM正是针对英伟达显卡所做的优化，而国产显卡当时却普遍并不支持这种格式。
+&lt;/p&gt;
+&lt;p&gt;
+	以至于当DeepSeek V3和R1问世时，国产显卡需要借助软件优化将FP8格式转化成FP16，适配效果大打折扣。
+&lt;/p&gt;
+&lt;p&gt;
+	因此，DeepSeek此次透露的信息，或许重点并不在前半部分的UE8M0，而是后半部分的“针对下一代国产芯片设计”。
+&lt;/p&gt;
+&lt;p&gt;
+	近期，摩尔线程、芯原等国产芯片厂商也同步释放了适配UE8M0 FP8的消息。
+&lt;/p&gt;
+&lt;p&gt;
+	摩尔线程对观察者网指出，其旗舰产品MTT S5000是国内首批原生支持FP8并已大规模量产的GPU。摩尔线程的MUSA架构原生支持硬件FP8张量加速计算，能够完美支持UE8M0 FP8 Scale，利用硬件原生FP8，相对于传统的FP16计算能够实现两倍的浮点算力提升、访存和通信带宽效率提升和存储容量利用率提升，同时最优化张量表达精度。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175243633.png"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	摩尔线程在WAIC 2025上发布了MTT S5000&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	但需要注意的是，尽管国产芯片逐步开始支持FP8格式，由于不同品牌显卡在底层硬件架构上的差异，原本针对英伟达显卡设计的算法也并非可以直接移植到国产芯片上。因此，大模型针对国产芯片的适配调整仍是一项重要工作。
+&lt;/p&gt;
+&lt;p&gt;
+	“补课”，或许才是对现阶段工作更合适的表述。
+&lt;/p&gt;
+&lt;p&gt;
+	这或许也解释了为什么DeepSeek R2延宕许久尚未问世。
+&lt;/p&gt;
+&lt;p&gt;
+	因此，DeepSeek V3.1真正的意义，应该不是对UE8M0 FP8这种数据格式本身的应用，而是类似于DeepGEMM这样针对国产芯片的工具链设计。
+&lt;/p&gt;
+&lt;p&gt;
+	而且，DeepSeek特意提到是针对“下一代国产芯片”，这意味着国产大模型厂商与芯片厂商之间的协同配合达到了更高的层次，双方可以在硬件开发阶段就共同参与优化。
+&lt;/p&gt;
+&lt;p&gt;
+	摩尔线程对观察者网表示，此举能够充分发挥出已量产的国产芯片架构特性，通过国产大模型和国产芯片协同设计优化，实现1+1&amp;gt;2。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175243249.png" alt=""&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;生态协同新高度&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	事实上，谈到国产大模型与芯片的协同开发，DeepSeek也不是唯一的参与者。
+&lt;/p&gt;
+&lt;p&gt;
+	一方面，头部大厂往往已经通过自建生态的方式，早早布局软硬件协同，如华为昇腾、阿里平头哥、百度昆仑芯等。
+&lt;/p&gt;
+&lt;p&gt;
+	本周，百度发布了百舸AI计算平台5.0，基于昆仑芯实现超节点，并针对DeepSeek引领的强化学习风潮，推出强化学习框架，极致压榨算力资源。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175244686.jpg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	2025百度云智大会上，百度智能云正式发布百度百舸AI计算平台5.0全新版本。
+&lt;/p&gt;
+&lt;p&gt;
+	而更多的大模型初创公司，则通过与芯片厂商联合的方式来提升适配效率。
+&lt;/p&gt;
+&lt;p&gt;
+	今年7月，阶跃星辰联合近10家芯片及基础设施厂商发起“模芯生态创新联盟”，首批成员包括华为昇腾、沐曦、壁仞科技、燧原科技、天数智芯、无问芯穹、寒武纪、摩尔线程、硅基流动等。
+&lt;/p&gt;
+&lt;p&gt;
+	阶跃星辰联合创始人、副总裁朱亦博对观察者网指出，一款芯片的开发周期需要两年以上，而如今模型迭代的速度只有半年到一年，如果让芯片厂商去适配模型，必然是低效的。如今，阶跃星辰希望在国产芯片的开发阶段，就主动去进行适配，是一种更高效的方式。
+&lt;/p&gt;
+&lt;p&gt;
+	但我们也要清醒地看到，国产算力生态仍然处于一种“带着镣铐跳舞”的状态。
+&lt;/p&gt;
+&lt;p&gt;
+	从中芯国际的财报可以看到，尽管国内旺盛的需求推动其产能利用率不断攀升，并且还有大规模扩产计划，但是其主要业务仍来自成熟制程。因此，其业绩并如台积电那样未充分受益于当下的算力热潮。
+&lt;/p&gt;
+&lt;p&gt;
+	包括制程能力、HBM技术等限制，也让国产AI产业往往采用极限创新的方式，在硬件受限的情况下用更高的成本、更复杂的算法来压榨效率。
+&lt;/p&gt;
+&lt;p&gt;
+	例如，华为不得不使用384个超多节点、昂贵的光通信等方式来对标英伟达的NVLink72。其AI推理加速“黑科技”UCM，也是在HBM受限的情况下，主要针对“节流”进行的创新；而原理类似的英伟达Dynamo，则更多聚焦于发挥高端算力集群的能力。
+&lt;/p&gt;
+&lt;p&gt;
+	近期华为盘古大模型遭遇的争议和收缩，也显示出中国企业尚难以凭借单打独斗去全方位赢得全球AI竞争。以开放和协同的方式汇聚国内全部力量，才是更好的突围之道。
+&lt;/p&gt;
+&lt;p&gt;
+	因此，近期国产AI产业一系列突破固然令人欣喜，但仍然要看到，其真正意义并非在于单点的进步，而是在于产业链上下游的信任和协作达到了一个新的高度，为未来中国全产业链的领先打下坚实基础。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/08/30/20250830175244893.jpg"&gt; 
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://i.guancha.cn/shiping-banner.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，文章内容纯属作者个人观点，不代表平台观点，未经授权，不得转载，否则将追究法律责任。关注观察者网微信guanchacn，每日阅读趣味文章。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Sat, 30 Aug 2025 14:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9XZmhEUFl0U3EyTzJ4MUtGTll6TnluRGtvQUxLcjI2VnpoeFJ0RnNiR0hGVWtKaDNGYzRhYkwtU3JlVU9jbUVYWFQ5Q044VVlBSEFTZ08tYmxOc2FVaHYtMUloUFk</guid></item><item><title>千亿身家的江西“网瘾少年”，把茅台推下神坛 - 风闻</title><link>https://user.guancha.cn/main/content?id=1509162</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
 							&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421470.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;“以后去老丈人家，不带白酒，只带显卡”。&lt;/p&gt;&lt;p&gt;打败你的不一定是同行，还有可能是跨界者。这句话对于现在的茅台来说，可是相当有感触。&lt;/p&gt;&lt;p&gt;继飞天茅台价格跌破之后，没想到茅台再失一城——股价。曾经坐拥A股股王宝座的茅台，绝对想不到自己竟然还有被赶超的一天？对手竟然还是八竿子打不着的AI? &lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421784.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;谁也想不到就在这两天，寒武纪的股票突然如同坐火箭飙升，市值冲上6000亿，一度超越贵州茅台。不少人一夜账户就多了几万几十万。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421617.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;如此之猛，连寒武纪本纪都出来，提醒广大投资者注意风险。但这并不影响众人的狂欢。&lt;/p&gt;&lt;p&gt;高盛很快发布研报，直接将寒武纪目标价上调50%至1835元，换算成市值将高达7700亿。连市盈率（股价与每股盈利的比值，用来衡量上市公司股价合理性）都高达500多，相比之下连英伟达都只有57.8。&lt;/p&gt;&lt;p&gt;股价能赶超茅台，这个寒武纪到底是何方神圣？很多人或许是最近才听说，在AI芯片领域，寒武纪算是国内极少数从最底层的指令集、架构开始完全自主研发的AI芯片公司，以此衍生的还有各种称号如“寒王”“中国版英伟达”。&lt;/p&gt;&lt;p&gt;谁能想到，最初的寒武纪，还是一个无经费、无论文、无人问津的“三无研究”，研发环境更是憋屈，团队把行军床搬到工位边，一熬就是一个通宵，甚至连创始人都被说成“不务正业”。&lt;/p&gt;&lt;p&gt;曾经被人看不起的小透明，竟然逆袭成了如今的“寒王”。很多人觉得，因为AI是现在全民关注的大风口，作为搞AI的头号玩家，寒武纪得到关注似乎不稀奇。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421339.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;但问题来了，搞AI概念的公司这么多，为何市值狂飙如此之猛的是寒武纪？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;01&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;中科大“网瘾少年”，用10年熬出头&lt;/b&gt;&lt;/p&gt;&lt;p&gt;寒武纪背后的两个江西男人，始终绕不开"天才" 二字。&lt;/p&gt;&lt;p&gt;毕竟，光从前半生的履历来看，连小说爽文男主都不敢这么编的。&lt;/p&gt;&lt;p&gt;哥哥陈云霁14岁就入读中科大少年班，在同龄人还在享受大学生活时，他19岁就参与龙芯3号芯片设计。&lt;/p&gt;&lt;p&gt;小两岁的弟弟陈天石也是个神话。16岁入中科大少年班，在深度学习算法领域也是天赋异禀，每天干的事就是死磕计算机，说是“网瘾少年”也不为过。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421995.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;兄弟俩有点年代感的童年照&lt;/p&gt;&lt;p&gt;俩兄弟都这么出息，甚至在学习之外还沉迷于打游戏。于是很多人感叹，他们的父母算是妥妥的中了“基因彩票”。&lt;/p&gt;&lt;p&gt;不过说到这里，还只是个天才关起门来的传奇故事，能让无数中国人心情跟着紧密波动，离不开这俩人之后做出一个“叛逆决定”。&lt;/p&gt;&lt;p&gt;当时，在中国科学院计算所一次内部汇报中，陈云霁、陈天石兄弟就提出一个大胆构想：做一款AI芯片，解决人工智能对算力的巨大需求。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421608.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;由于项目过于冷门，很多人连AI是什么都没有概念，据说兄弟俩连20万的经费都没能申请下来。&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;毕竟连英伟达在当时也还只是卖游戏显卡。整个全球半导体界都没在意这个领域，甚至觉得是天方夜谭。&lt;/p&gt;&lt;p&gt;陈云霁回忆时曾感慨：“就像在一片黑暗中摸索，不知道哪里是方向、哪里是出口，甚至不知道有没有出口。”  &lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421198.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;很多人以为两兄弟只是随便说说，谁也想不到，这个小团队竟然一直在这个方向默默闷头搞研发，2015年就研发出世界首款深度学习专用处理器原型芯片。&lt;/p&gt;&lt;p&gt;推出芯片还不是小打小闹，在那个很多人没听过AI的年代，陈天石们就敢all in这个“冷门”赛道。甚至在推出芯片的第二年，陈天石直接离岗创业，创始团队成员和中国科学院计算所的投资管理平台中科算源，共同设立了北京中科寒武纪科技，这也有了寒武纪。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421803.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这个时候，英伟达也开始重视AI芯片，甚至大步一跨，成为全球最出色的AI芯片公司，也吃到了第一波AI的红利。&lt;/p&gt;&lt;p&gt;相比之下，表面上寒武纪的规模和动作都没那么高调，更没有英伟达那么出名，但随着美国的政策打压，也让大家真真切切看到了中国AI芯片的巨大潜力。&lt;/p&gt;&lt;p&gt;2017年9月，华为发布人工智能手机芯片“麒麟970”，背后竟然就是搭载寒武纪1A处理器！&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421319.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这一次，让不少人开始对这个公司真正有了实感。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;02&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;为了追赶英伟达，它赌了一件事&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;然而，好日子却没过太久。&lt;/p&gt;&lt;p&gt;靠着华为大客户，寒武纪一战成名，还顺便洗刷了曾经被误解的屈辱上了个市。2020年7月，寒武纪成功登陆科创板，首日市值便突破1000亿。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422881.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;然而谁也没想到，成也华为，栽也华为。很快华为宣布自研芯片，好家伙从客户一夜变成对手。上市成了寒武纪少有的巅峰时刻，此后多年走上“下坡路”。&lt;/p&gt;&lt;p&gt;赚钱能力上，让股东相当不开心。2020年至2023年，寒武纪不仅没能赚钱还不断亏损。资本市场反应也很快，寒武纪市值一度掉到200多亿。&lt;/p&gt;&lt;p&gt;果不其然，寒武纪再次迎来了很多人的质疑：是不是不行了？AI到底是不是噱头？这俩兄弟是不是圈钱的？&lt;/p&gt;&lt;p&gt;然而仅过几年冲上6000亿的寒武纪，再一次用现实证明：市场还是低估了。寒武纪为何又再次低谷翻盘？&lt;/p&gt;&lt;p&gt;1.狠心死磕一件事，只为活下去&lt;/p&gt;&lt;p&gt;都知道前有英伟达虎视眈眈，后有华为等老大哥争相竞争，寒武纪创始人却偏偏不信邪，为了干成中国AI芯片，就赌上一件事：全部身家。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422479.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;都知道搞AI产品跟搞商业很难两全，但陈天石放出豪言，“我们这一代企业家的使命，是把冷板凳坐热。”&lt;/p&gt;&lt;p&gt;他很明白，靠单一智能终端芯片卖给别人风险很高，而且很被动，于是狠心决定——要做就做最难的事：向云、边、端全场景智能芯片延伸。&lt;/p&gt;&lt;p&gt;在这个思路下，寒武纪开发了一系列云端推理、训练芯片，以及边缘计算产品线，并为所有产品构建了统一的基础系统软件和工具链。不断扩展更多的版图，也给自己找到更多的输血“大腿”，前五大客户就贡献了80%以上的营收，保证能活下去。&lt;/p&gt;&lt;p&gt;2.自虐式研发，只为当“将军”&lt;/p&gt;&lt;p&gt;光是有人“输血”还不够，支撑这场逆袭的，还有十年如一日的“真金白银”氪金。&lt;/p&gt;&lt;p&gt;夸张到什么程度？在2023年，寒武纪营收7.09亿，砸到研发的钱就高达11.18亿，都快是营收的两倍。&lt;/p&gt;&lt;p&gt;2024年的研发费用稍微收敛了些，但也占了营收91.3%，为10.72亿，792名研发人员占比近80%。&lt;/p&gt;&lt;p&gt;如此不计上限的投入，换来的是累计申请专利2774项，97%为发明专利以及在芯片领域的一次次技术突破。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422411.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;与此同时，寒武纪也不会放过任何中国人用AI的场景。比如自研MLU-OPS算力调度平台适配90%国产框架，提升DeepSeek-V3大模型推理效率等，努力在大众中刷存在感。&lt;/p&gt;&lt;p&gt;如此大的开支下，哪怕寒武纪自2016年成立以来累计亏了50多个亿，陈天石也丝毫不掩饰野心，“如果智能时代真的到来，一定会诞生新的巨头。我不讳言寒武纪想当这个将军。”&lt;/p&gt;&lt;p&gt;能做到这种程度，寒武纪被人视为中国AI“全村的希望”也就不足为奇。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;03​&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;泡沫还是真底气，还得用实力说话&lt;/b&gt;&lt;/p&gt;&lt;p&gt;如今，很多人对寒武纪的观点鲜明地分成了两派。&lt;/p&gt;&lt;p&gt;一派认为它更需要时代，企业的能力远没有风口的威力更大，估值里泡沫更多；另一派则认为，是因为自己练出了产品护城河，风口的助推只是锦上添花。&lt;/p&gt;&lt;p&gt;很难真正判断谁对谁错，但有一点可以确定的是，AI风口之下，寒武纪绝不是第一个，也不会是最后一个玩家。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422328.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;如今，在AI行业有个心照不宣的共识是：国产芯片时代已经来临。&lt;/p&gt;&lt;p&gt;要知道，以往国内云计算公司尤其是互联网公司，一直偏向于采购英伟达的AI芯片产品，然而这种情况，在这些年有了质的改变：以寒武纪为代表的部分国产AI推理芯片，因为同样可以满足AI推理计算需求，也开始出现在不少国产公司的订单上。&lt;/p&gt;&lt;p&gt;IDC研究显示，2024年中国本土AI芯片的出货量已超过82万张。其中国产芯片占比在30%左右。机构预测，随着AI芯片国产化的趋势进一步加强，国产占比到今年年底将进一步升至40%。&lt;/p&gt;&lt;p&gt;因为还是新兴行业，现在国产芯片公司众多，还没有形成特别明显的垄断态势，暂时没有谁能一家独大。也就是说，谁能提前瞄准下一个AI细分算力风口，谁就能提前抢到更多的机会。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422387.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不得不说，寒武纪要想真正打破很多人对它的偏见，还需要像之前一样，用现实成绩单打脸。&lt;/p&gt;&lt;p&gt;首先是在赚钱能力上证明自己。其实，营收能力已经有了明显的提升。&lt;/p&gt;&lt;p&gt;寒武纪最近发布半年报，今年上半年营业收入28.81亿，同比直接增长4347.82%；归属于母公司所有者的净利润10.38亿，上年同期净亏损5.3亿，实现了扭亏为盈。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422932.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不得不说，这已经是个好的开头，接下来寒武纪要做的，就是保住盈利势头，一边继续赚更多的钱，另一边把资金子弹投入更多的研发，形成正向循环，也是像英伟达学习。&lt;/p&gt;&lt;p&gt;其次，圈子就这么大，要做好“回头客”效应。&lt;/p&gt;&lt;p&gt;毕竟，AI芯片早已从过去的小众概念变成如今的大众风口，越来越多对手的加入如华为昇腾、海光、昆仑芯等，就意味着寒武纪并不是非它不可的资源。对于客户而言，性价比和效果才是最关键的，而不是看空无一物的估值或融资。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422329.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;寒武纪还不能掉以轻心，还需要持续不断掏出更多的”真家伙”。只有如此，才能真正在业内站稳脚跟，而不是昙花一现。&lt;/p&gt;&lt;p&gt;毕竟，中国&lt;b&gt;“芯片新王”不稀奇，宝座坐稳才是真本事。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;图片来源于网络，侵权请联系删除&lt;/p&gt;&lt;p&gt;&lt;strong&gt;@The End&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://mp.weixin.qq.com/s/YH1jl_B9vnpT4b8g7ob8dg" title=""&gt;点击「金错刀」阅读原文&lt;/a&gt;&lt;/p&gt;													&lt;/div&gt;
 						
 						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Sat, 30 Aug 2025 11:24:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE9uRzlPSzBRekIyVlF4czd1Y1RlZnMtSUY3TVFNblF2R0pSZXV4WlUxVVR3UzRaODNFbWxHTEI2djZqazRMRFVidlVvbzVKSTJIaG8tXzNaNVFnalE</guid></item><item><title>锂电池自燃 湖北42辆电动自行车烧成铁架 距离停车场几步之遥 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071442.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
