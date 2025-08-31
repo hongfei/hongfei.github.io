@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>两颗9950X接连被烧：AMD已开始调查！ - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071552.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Intel SDC超级核心专利曝光：多小核协同提升单线程性能！ - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071554.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;Intel SDC超级核心专利曝光：多小核协同提升单线程性能！&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-08-31 18:36:12  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1071554-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月31日消息，&lt;span&gt;&lt;strong&gt;Intel最新的专利EP4579444A1揭示了如何通过软件定义的超级核心（Software Defined Super Cores，SDC），来提升CPU的单线程性能。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;传统上，CPU依赖于大核来提升性能，但一个非常大的核心可能会导致性能提升的边际效应递减，新专利就展示了如何通过软件定义的超级核心来应对这一问题。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250831/235349a6-e9d6-44a4-b569-5f56efbb7899.png" target="_blank"&gt;&lt;img alt="Intel SDC超级核心专利曝光：多小核协同提升单线程性能！" h="347" src="//img1.mydrivers.com/img/20250831/S235349a6-e9d6-44a4-b569-5f56efbb7899.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SDC允许在需要时将多个小核心虚拟地融合在一起，以替代一个大型核心，例如两个小核可以协同工作，通过分配工作负载来显著提升单线程性能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;本质上涉及指令的分割，它首先将负载分配到多个小核心上，然后这些核心协调工作以保持指令顺序。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250831/01d44765-20e1-4a1d-aaf6-e9e67c15089a.png" target="_blank"&gt;&lt;img alt="Intel SDC超级核心专利曝光：多小核协同提升单线程性能！" h="932" src="//img1.mydrivers.com/img/20250831/S01d44765-20e1-4a1d-aaf6-e9e67c15089a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然，这种方法也有挑战，因为将任务分配到多个核心上，同时保持程序的顺序是非常困难的，&lt;strong&gt;不过新专利声称SDC能够在保持指令正确顺序的同时，让软件仍然认为它是一个更大的核心在执行单线程操作。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;简单来说，这就像将一个任务分配给两个人而不是一个人，但他们共同完成同一个任务以提高效率，这可能听起来像是多线程，但SDC的目标是针对单线程操作。&lt;/p&gt;
+&lt;p&gt;这种方法不仅可以通过聚合IPC来提升单线程性能，而且据说可以在不增加电压或频率的情况下实现这一点。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250831/e6f92fd22d5e49b5b84acf91d5cd4a1c.jpg" target="_blank"&gt;&lt;img alt="Intel SDC超级核心专利曝光：多小核协同提升单线程性能！" h="399" src="//img1.mydrivers.com/img/20250831/s_e6f92fd22d5e49b5b84acf91d5cd4a1c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 10:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE55aUFZY0ZnaDFsUnBTS2FkbjJWUVg3Ui1jVUNkOS01RzBHMzZnYlpoOTJGaFdhMXJMeGV6cE1WdWd2anVLWUZUSVpIRHlheTVOaXRPYVhFczY</guid></item><item><title>两颗9950X接连被烧：AMD已开始调查！ - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071552.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月31日消息，&lt;span&gt;&lt;strong&gt;GMP开源库的作者Torbjörn Granlund在过去几个月中发现，其在进行测试时，两颗AMD 9950X CPU被烧。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;据Granlund介绍，这两颗CPU分别在2月和8月烧毁，他也承认硬件设置并不理想，但这些CPU在运行高强度的GMP测试时显然过载了。&lt;/p&gt;
@@ -19,7 +84,72 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 09:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBuUzdNcllqOWxnQjZ5d05EMTdVUlJVZzhXMlBFRU5HUzdnQ0RrMjV2SjRpRUhJZWpJN0tNMk9aYVp6ajJDZFhCSUd4MlFmUTJ6QWVVb2VrVTI</guid></item><item><title>23年前的ATI Radeon R300显卡 竟然还有驱动更新 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071545.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 09:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBuUzdNcllqOWxnQjZ5d05EMTdVUlJVZzhXMlBFRU5HUzdnQ0RrMjV2SjRpRUhJZWpJN0tNMk9aYVp6ajJDZFhCSUd4MlFmUTJ6QWVVb2VrVTI</guid></item><item><title>唯一入门！酷睿Ultra 3 205首次跑分：多核飙升 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071548.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;唯一入门！酷睿Ultra 3 205首次跑分：多核飙升&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-08-31 16:04:48  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/278470.html" title="上方文Q的主页" class="newstiao4"&gt;上方文Q&lt;/a&gt;&lt;p&gt;  编辑：上方文Q &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1071548-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月31日消息，酷睿Ultra 200系列桌面处理器一直没有入门级的3系列，不过很快就要改变了，酷睿Ultra 3 205即将登场。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250831/c781d221b2af4ce591b4a4f663179556.jpg" target="_blank"&gt;&lt;img alt="唯一入门！酷睿Ultra 3 205首次跑分：多核飙升" src="//img1.mydrivers.com/img/20250831/s_c781d221b2af4ce591b4a4f663179556.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GeekBench 6数据库里第一次看到了酷睿Ultra 3 205，检测显示它&lt;span&gt;&lt;strong&gt;还是大小核架构，包括4大4小，组成8核心8线程。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二级缓存3MB，三级缓存15MB&lt;/strong&gt;，基准频率3.8GHz，加速不详。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;单核跑分最好2664&lt;/strong&gt;，基本和酷睿Ultra 5 225F差不多，对比14代酷睿的i3-14100、i5-14400高出了超过10％，但略低于锐龙5 7600。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;多核跑分最好9935，对比4核心8线程的i3-14100提升了接近30％，无限接近6+4 10核心16线程的i5-14400，还是相当可以的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这么看，酷睿Ultra 3 205F还是挺能打的，再加上带核显非常适合轻量办公，当然关键是得便宜。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250831/b12b72a2a4774afd880b4b52eedf1087.png" target="_blank"&gt;&lt;img alt="唯一入门！酷睿Ultra 3 205首次跑分：多核飙升" h="432" src="//img1.mydrivers.com/img/20250831/s_b12b72a2a4774afd880b4b52eedf1087.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250831/9a9bc79455634361bb37e9fea2663371.png" target="_blank"&gt;&lt;img alt="唯一入门！酷睿Ultra 3 205首次跑分：多核飙升" h="756" src="//img1.mydrivers.com/img/20250831/s_9a9bc79455634361bb37e9fea2663371.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 08:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5NWTl5N0VTZ1dSMU5oSy1sZ1ktcHZ5eDZXc2l5LWktT3JudWk4blYxZ0hFc1ZvMzM4NkY1V09qb0plNFZWMmwzQUxOSmgydHZoQ1QtbExYTG0</guid></item><item><title>23年前的ATI Radeon R300显卡 竟然还有驱动更新 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071545.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;23年前的ATI Radeon R300显卡 竟然还有驱动更新&lt;/p&gt;
           
@@ -649,7 +779,102 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 04:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBZLU5HSzFZQkxwNlVCRFY4VzBpenk1SDlLcnc3eFZ6clVFZW91UllwRThqZGtjdnMwODRlVlNFUXZnYUppeHNZZkxtMXhnSjBmbXFDM0oxems</guid></item><item><title>发电的又一“大招”，来了 - QQ News</title><link>https://news.qq.com/rain/a/20250831A035NI00</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;7月底，浙江舟山，台风过境。雨后第一天，一辆小船从岱山县秀山岛向南出发，载着黄强和同事前往一处海上平台。平台位于稻桶山岛与青山岛之间，状似一把横卧海面的提琴。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;黄强的工作是平台的维护检修。更多时候，他要在秀山岛的数据中心检视这把“提琴”的工作情况。“平台是架设在海床上的，水下部分超过20米，有九层楼高，其中涡轮半径就有7.5米，特别壮观。”黄强告诉《中国新闻周刊》，他上岗两年以来，几乎每月都要接待前来访问的国内外专家学者。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“提琴”其实是LHD海洋潮流能电站的发电机组，由杭州林东新能源科技股份有限公司（以下简称“林东新能源”）研发建设。它是全国首台兆瓦级潮流能发电机组，单机容量居全球首位。截至今年7月底，该电站已连续运行超98个月，稳定运行时间打破世界纪录，总并网电量超861万千瓦时。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;潮流能即潮汐涨落的水流动能，是海洋能的一种，也是重要的可再生能源。今年2月，自然资源部、国家发展改革委等联合印发《关于推动海洋能规模化利用的指导意见》 （以下简称《指导意见》），明确提出要聚焦海洋能规模化利用，培育打造海洋领域新质生产力。其中，潮流能、波浪能是重点发展方向。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;国家海洋技术中心研究员、海洋能项目管理办公室副主任王冀向《中国新闻周刊》表示，以潮流能、波浪能为代表的海洋能发电项目已进入规模化发展的推动期。但多位受访者认为，海洋能也遇到了成本高、上网电价昂贵、政策起步慢等问题。目前，科研院所和企业都在寻找海洋能尽快走出“新手村”，突破规模化瓶颈的“钥匙”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span data-widget="image"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OGHsZD62fziylGkBFONnwVvfyNVwHmKp0H4KLaNO-OQiMAA/641" data-src="https://inews.gtimg.com/news_bt/OGHsZD62fziylGkBFONnwVvfyNVwHmKp0H4KLaNO-OQiMAA/641" alt="图片"&gt;&lt;span&gt;位于浙江舟山秀山岛南部海域的LHD海洋潮流能发电站 图/视觉中国&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;许多实验在“泳池”里完成&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在杭州市滨江区，林东新能源总部有个展厅，LHD发电机组的实时数据在此汇集。下午三点半，舟山附近海域开始涨潮，监控镜头里，水下涡轮由平潮时的静止开始转动，逐渐加快。发电机功率曲线上扬，几秒钟内从0涨到78千瓦。新一轮的潮流发电开始了。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“这台机组今日的发电功率峰值是1317千瓦，今天的总发电量累计3804千瓦时。发电功率和发电量与潮水的周期性密切相关，一次电量高峰一般横跨6个小时，每天有两个这样的峰。”曾做牛肉干起家，如今担任杭州林东新能源董事长兼总工程师的林东向《中国新闻周刊》介绍。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东所指的机组是2022年2月下海并网的LHD第四代发电机组“奋进号”，装机功率1.6兆瓦，至今累计发电量超过550万千瓦时，已成为主力。2016年7月，LHD第一代机组下海，一个月后并入国家电网。经过不断技术迭代，第二代、第三代机组于2018年先后下海发电。目前，第三代机组仍在运行，6年多来累计发电超130万千瓦时。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;人类最早认识的海洋能其实是潮汐能。中国海洋大学山东省海洋工程重点实验室主任史宏达告诉《中国新闻周刊》，海洋能包括潮汐能、潮流能、波浪能、温差能、盐差能等。潮汐能即利用潮汐涨落时的势能差发电。潮流能发电类似风电。波浪能综合利用水的动能和势能。以上三种均已有工程实践，但潮汐能已不是研发重点。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;王冀指出，中国已掌握拦坝式潮汐能发电、发电机组制造及电站运行等关键技术，而潮汐能之所以逐渐“隐退”，源于其资源利用的模式。史宏达解释，潮汐发电一般需筑坝，利用坝内外水位差发电。要实现可观功率，就需提高流量，这意味着要在海湾围筑一个很大的水库。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“但是中国沿海人口太多了，潮汐能虽然原理可靠、技术可及，但开发不太符合国情。”史宏达指出，在大部分沿海地区，若整段海岸线被围住用于开发潮汐能，会影响其他海上工程和项目。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;潮流能工程则一般坐落于岛屿峡间水流速度高的地方，对近海开发影响较小。浙江大学机械工程学院教授、机电控制技术与工程研究所所长刘宏伟向《中国新闻周刊》介绍，潮流能规律性强，可借鉴风电原有的技术储备，发展最为快速。潮流能受海上天气影响也较小，林东表示，7月底的台风天里，LHD的日发电功率波动不到10％。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;不过，这也意味着，广阔的平静海面上，潮流能利用可能受限，但波浪能不会。史宏达表示，所谓无风不起浪，波浪能广泛存在于海面，若能实现长期可靠利用，对远海开发、科考等意义重大。这也是《指导意见》将潮流能和波浪能作为发展重点的主要原因。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;但向大海要电并非易事。2009年，林东联合流体力学、材料学领域另外两位海外专家，在美国加利福尼亚州成立了美国LHD科技公司。林东自己拥有工商管理、能源开发与管理硕士学位，把LHD称为“两个半科学家”组成的团队。那时，林东几乎抱着“闹着玩”的心态，以每年50万美金的投入摸索潮流能发电的技术路线，许多实验都在“泳池”，也就是自建的环形水道里完成。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东回忆，那时潮流能发电还是非常前沿的领域，没有国家完全走通技术路径。2008年，英国在北爱尔兰安装了世界上第一台商业化并网的潮流能发电机SeaGen，功率1.2兆瓦。SeaGen于2016年就进入了退役阶段，被后续更高效的涡轮技术取代。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;据测算，中国可开发利用的潮流能资源理论平均功率近1400万千瓦，一半以上分布在浙江省。史宏达介绍，欧洲北部是全球波浪能、潮流能最丰沛的区域，中国在资源上其实不占优势，虽然海域广阔，但能流密度低。因此，国内潮流能的利用需要更高的技术水平，以实现低流速发电。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;2024年9月，国际能源署发布全球海洋能二十大亮点工程，LHD项目入选。王冀表示，潮流能已成为国际海洋能规模化发展重点方向。英国亚特兰蒂斯公司开发的MeyGen潮流能发电项目设计装机398兆瓦，首期4台1.5兆瓦机组已于2016年11月并网发电。波浪能国际上也多有工程应用示范。多位受访者的共识是，中国潮流能、波浪能应用的技术水平已在国际第一梯队，“别人能做的我们都能做”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟团队从2004年开始研究潮流能发电技术，并于2014年在浙江大学摘箬山海洋科技示范岛先后建成60千瓦、120千瓦、650千瓦潮流能机组，并建成国内首个漂浮式潮流能试验电站。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;王冀指出，相比潮流能，波浪能发电的技术路线还很多样。按照国际通用的技术成熟度评价标准，潮汐能属于9级，也就是最高级，代表已可以商业化。潮流能为8—9级，处于商业化前期，而波浪能总体评价处于7—8级，代表其处在从工程化应用向规模化应用发展的过程中。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“中国虽在海洋能重大关键技术上取得了一定突破，在潮流能、波浪能领域已具备规模化开发资源条件和技术基础，但示范工程总体规模偏小，发电成本较高，持续运维压力较大。”王冀认为，目前海洋能突破的关键，是实现长期稳定运行电站的“由少变多、由小变大”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span data-widget="image"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/Oxz3Woq0UQTx5iBNp9VKxwQF3A8JCrZ9T3G0dwdU16wE0AA/641" data-src="https://inews.gtimg.com/news_bt/Oxz3Woq0UQTx5iBNp9VKxwQF3A8JCrZ9T3G0dwdU16wE0AA/641" alt="图片"&gt;&lt;span&gt;中国首台兆瓦级潮流能发电机组“奋进号” 图/受访者提供&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;“小浪不发电，大浪易损坏”&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;LHD潮流能电站目前并入华东电网，两台机组一年发电量近190万千瓦时。而这部分电能只占国内新能源发电总量的极少一部分。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东表示，以1.6兆瓦的LHD第四代机组为例，至今发电超过550万千瓦时，如果下水一万台，累计发电量将达到550亿千瓦时。而舟山市全年社会用电约200亿千瓦时，也就是说，一万台机组才勉强满足舟山三年的用电量。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;而国家能源局数据显示，2024年全国风电发电量9916亿千瓦时，占全社会用电量的近10％。史宏达指出，“十五五”期间，海洋能技术研发的首要目标就是增大容量。风力发电在步入兆瓦级阶段后便走上了快速发展的道路，海洋能下一步也应以单台兆瓦级以上的装机容量为目标。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;实现规模化的突破究竟有多难？2010年时，林东团队的研究有了眉目，计算和测试数据都指向一个结果：潮流能发电有技术可行性。但经济可行性还是一团迷雾。下定决心将成果带回国后，林东算了笔账，与硅谷时期的小打小闹不同，回国研发至少要有两个亿的资金储备。他开始不断审视自己的技术路径。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;2012年回国后，林东在千岛湖畔建立了LHD模拟洋流能大型户外实验室。“相当于挖一个水槽，模拟各种海洋环境，先花掉两千多万。”林东的计划是，实验数据不大好，就再反复打磨几年。没想到数据非常好，仅两年后，LHD潮流能发电机组就迅速在舟山开建。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东坦言，他的经历多少有些运气成分，也许其他企业很难复刻。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;对于波浪能，史宏达将其上规模的瓶颈总结为“小浪不发电，大浪易损坏”。太小的波浪想要获能很困难，而大浪的情况下，波浪能装置的“生存”又成问题。“要‘生存’，就要附加额外的技术和设施，会抬高造价。但安全开销又不能不花，即使装置工作的几年里只遇到一次台风，在台风下的可靠性也必须保证。波浪能造价高的问题短期内还很难解决。”史宏达说。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;他还提到，国内的工程建造水平近年有了迅猛发展，但和国际水平仍有差距。除了加工精密程度外，一些关键材料，例如抗腐蚀、抗附着、抗疲劳等指标过硬的材料仍依赖进口。这方面的研发很难一蹴而就。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;对潮流能来说，成本更多来自海上工程。刘宏伟指出，其实潮流能机组的硬件成本并不高。和风电机组类似，容量足够大的前提下，单位千瓦装机成本可以控制在一万元以下。真正昂贵的是海桩，或漂浮式平台的建设和运维，以及未来往深远海发展后，电力的传输成本。这也是整个行业的共同痛点。海上基础设施的稳定可靠及其低成本对产业化发展至关重要。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在王冀看来，国内海洋能正处于向规模化、产业化迈进的最关键阶段，部分关键核心技术亟待突破，装备可靠性和经济性有待加强，仍需进一步促进技术的优化设计、迭代升级。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“LHD第一代机组的度电成本是106元，到第三代就降到了8.45元。第四代机组的度电成本目前测算是1.1元，预计再迭代两次，成本就能压缩到0.3元以下，低于火电。这样就真正为大规模建设做贡献了。”林东说。目前，LHD的临时电价为每度电2.58元，参考了江厦电站潮汐能的电价。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;电力上网是个更复杂的问题。史宏达表示，上网要和电力部门协商，满足电网的功率、电压、频率、波动性等要求。“目前的海洋能电价相较风电和光伏还不具备竞争力。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;借“风”出海&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟团队建设的潮流能试验电站目前机组状况一切正常，可以发电，学生也经常用这些机组做实验。由于是试验电站，没有指导电价，运维成本制约了机组的长期运行。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟认为，要快速实现海洋能商业化，国家扶持是必须的。“只要有合适的电价，现有的试验电站就能摇身一变成为并网示范电站，实现技术的同场竞技、良性发展。现在就差临门一脚。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;《指导意见》提出力争到2030年，海洋能装机规模达到40万千瓦，建成一批海岛多能互补电力系统和海洋能规模化示范工程，培育一批具有较强技术研发能力和全球竞争力的海洋能规模化开发利用企业。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“现在能长期并网发电的只有我们一家，政策不会单独为我们倾斜。”林东坦言。根据《中华人民共和国增值税暂行条例》，新能源发电项目在销售电力时需缴纳增值税。林东指出，火电的增值税税率为13％，光伏和风电作为清洁能源，已基本实现50％的即征即退，实际增值税为6.5％，而小型水电项目只收取3％。由于各项优惠政策里没有海洋能，海洋能的增值税仍按照火电的13％收取。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“归根结底还是它太新了，一切才刚起步。”林东说。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在史宏达看来，海洋能发展与国家政策紧密关联，欧洲地区由于很早就落地了碳交易、碳补贴政策，可再生能源电力能获得的补贴相当可观。“国内海洋能电力还没有专门的补贴，但总是有办法的。”多位受访者指出，国内海洋能发展需要走摊低成本的道路。如何摊低？史宏达给出了四个字：同场开发。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;近几年，国内海上风电发展势头迅猛。2022 年起，海上风电项目不再纳入中央财政补贴范畴，基本实现了平价上网。因此“风浪同场”成为海洋能发展的重要契机。史宏达介绍，与通过自身技术迭代降低成本不同，摊低成本意味着共用现有海上工程结构。对于漂浮的风电机组来说，波浪能装置能吸收波浪能量，减少其对机组的冲击，提高安全性，这部分能量还能用于波浪能发电，形成双赢。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟团队也在研究深远海综合能源开发。他指出，最容易想到的，也是现在研究的大趋势，就是与渔业、制氢等行业的共同开发。风渔同场开发、风电制氢已有应用案例。刘宏伟希望潮流能也能和这些行业结合，不仅完成海岛供电，还能制淡水、制氢等，实现海岛的多资源联供。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;史宏达与坐落于苏格兰的欧洲海洋能源中心（EMEC）有着十多年的合作交流。他指出，EMEC建有一个潮流能、一个波浪能发电的海上电厂，但它没有任何自研的海洋能装置，仅对来自欧洲的海洋能装置进行测试，过程中产生的电力同样用于并网。目前，史宏达和团队正在青岛斋堂岛海域建设“海洋能海上综合试验场”。“希望它未来能成为CMEC，即中国海洋能源中心。”史宏达称。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“斋堂岛试验场已初具规模，但还远远不够。”史宏达坦言，测试平台对产业发展至关重要。不测试就不知道年发电量，就无法计算投入产出比，风险就难以量化，企业界就无法判断是否值得投资。在史宏达看来，中国海洋能测试标准体系还不完备，而这是一个行业共识形成的过程。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;王冀所在的国家海洋技术中心作为 “国家队”，已建设威海、舟山、珠海和三亚4个试验场区，形成了“北东南、浅海+深远海”的国家级海上试验场，2022年，中心成为国内首个具备波浪能、潮流能发电装置功率特性和电能质量特性检验检测认证资质的机构。王冀表示，从测试能力来说，中心已具备从原理样机到工程试验的全链条测试服务。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东新能源接下来规划了百兆瓦级的潮流能电厂，就在LHD电站5公里外的海域，预计年发电量为2.5亿千瓦时。该电厂用海面积预计为70亩，而同样100兆瓦的光伏电站至少要用地3500亩。“前期工作都做完了，只要电价政策下来，我们立刻可以开工建设。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;深远海藏着林东更大的野心。全球第二大洋流“黑潮”从菲律宾北上经过中国台湾、东海，直达日本，其流量约为地球淡水总流量的50—60倍。“这就是家门口的‘石油’，是我们下一步的主战场。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“最快5年，最慢10年。”谈起国内海洋能规模化的前景时，史宏达这样说道。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;（文中黄强为化名）&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;发于2025.9.1总第1202期《中国新闻周刊》杂志&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;杂志标题：海洋能竞速：向“深蓝”要“绿电”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;记者：周游&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;编辑：杜玮&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p powered-by="qqnews_ex-editor"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>QQ News</author><pubDate>Sun, 31 Aug 2025 03:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE1CZXNuZmpsbHp5X2I2WnpGbXpMSncxWUwzM1pwbHltdE5McjRpQ0hUOVVGUWtOVHBBTVpFOTdiRjBRelJpNjdxQTRRNTcwNkVmcjNvUmF3</guid></item><item><title>史上最大Mate！华为智慧屏MateTV尺寸出炉：最大110英寸 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071512.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 04:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBZLU5HSzFZQkxwNlVCRFY4VzBpenk1SDlLcnc3eFZ6clVFZW91UllwRThqZGtjdnMwODRlVlNFUXZnYUppeHNZZkxtMXhnSjBmbXFDM0oxems</guid></item><item><title>发电的又一“大招”，来了 - QQ News</title><link>https://news.qq.com/rain/a/20250831A035NI00</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;7月底，浙江舟山，台风过境。雨后第一天，一辆小船从岱山县秀山岛向南出发，载着黄强和同事前往一处海上平台。平台位于稻桶山岛与青山岛之间，状似一把横卧海面的提琴。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;黄强的工作是平台的维护检修。更多时候，他要在秀山岛的数据中心检视这把“提琴”的工作情况。“平台是架设在海床上的，水下部分超过20米，有九层楼高，其中涡轮半径就有7.5米，特别壮观。”黄强告诉《中国新闻周刊》，他上岗两年以来，几乎每月都要接待前来访问的国内外专家学者。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“提琴”其实是LHD海洋潮流能电站的发电机组，由杭州林东新能源科技股份有限公司（以下简称“林东新能源”）研发建设。它是全国首台兆瓦级潮流能发电机组，单机容量居全球首位。截至今年7月底，该电站已连续运行超98个月，稳定运行时间打破世界纪录，总并网电量超861万千瓦时。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;潮流能即潮汐涨落的水流动能，是海洋能的一种，也是重要的可再生能源。今年2月，自然资源部、国家发展改革委等联合印发《关于推动海洋能规模化利用的指导意见》 （以下简称《指导意见》），明确提出要聚焦海洋能规模化利用，培育打造海洋领域新质生产力。其中，潮流能、波浪能是重点发展方向。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;国家海洋技术中心研究员、海洋能项目管理办公室副主任王冀向《中国新闻周刊》表示，以潮流能、波浪能为代表的海洋能发电项目已进入规模化发展的推动期。但多位受访者认为，海洋能也遇到了成本高、上网电价昂贵、政策起步慢等问题。目前，科研院所和企业都在寻找海洋能尽快走出“新手村”，突破规模化瓶颈的“钥匙”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span data-widget="image"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OGHsZD62fziylGkBFONnwVvfyNVwHmKp0H4KLaNO-OQiMAA/641" data-src="https://inews.gtimg.com/news_bt/OGHsZD62fziylGkBFONnwVvfyNVwHmKp0H4KLaNO-OQiMAA/641" alt="图片"&gt;&lt;span&gt;位于浙江舟山秀山岛南部海域的LHD海洋潮流能发电站 图/视觉中国&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;许多实验在“泳池”里完成&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在杭州市滨江区，林东新能源总部有个展厅，LHD发电机组的实时数据在此汇集。下午三点半，舟山附近海域开始涨潮，监控镜头里，水下涡轮由平潮时的静止开始转动，逐渐加快。发电机功率曲线上扬，几秒钟内从0涨到78千瓦。新一轮的潮流发电开始了。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“这台机组今日的发电功率峰值是1317千瓦，今天的总发电量累计3804千瓦时。发电功率和发电量与潮水的周期性密切相关，一次电量高峰一般横跨6个小时，每天有两个这样的峰。”曾做牛肉干起家，如今担任杭州林东新能源董事长兼总工程师的林东向《中国新闻周刊》介绍。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东所指的机组是2022年2月下海并网的LHD第四代发电机组“奋进号”，装机功率1.6兆瓦，至今累计发电量超过550万千瓦时，已成为主力。2016年7月，LHD第一代机组下海，一个月后并入国家电网。经过不断技术迭代，第二代、第三代机组于2018年先后下海发电。目前，第三代机组仍在运行，6年多来累计发电超130万千瓦时。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;人类最早认识的海洋能其实是潮汐能。中国海洋大学山东省海洋工程重点实验室主任史宏达告诉《中国新闻周刊》，海洋能包括潮汐能、潮流能、波浪能、温差能、盐差能等。潮汐能即利用潮汐涨落时的势能差发电。潮流能发电类似风电。波浪能综合利用水的动能和势能。以上三种均已有工程实践，但潮汐能已不是研发重点。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;王冀指出，中国已掌握拦坝式潮汐能发电、发电机组制造及电站运行等关键技术，而潮汐能之所以逐渐“隐退”，源于其资源利用的模式。史宏达解释，潮汐发电一般需筑坝，利用坝内外水位差发电。要实现可观功率，就需提高流量，这意味着要在海湾围筑一个很大的水库。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“但是中国沿海人口太多了，潮汐能虽然原理可靠、技术可及，但开发不太符合国情。”史宏达指出，在大部分沿海地区，若整段海岸线被围住用于开发潮汐能，会影响其他海上工程和项目。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;潮流能工程则一般坐落于岛屿峡间水流速度高的地方，对近海开发影响较小。浙江大学机械工程学院教授、机电控制技术与工程研究所所长刘宏伟向《中国新闻周刊》介绍，潮流能规律性强，可借鉴风电原有的技术储备，发展最为快速。潮流能受海上天气影响也较小，林东表示，7月底的台风天里，LHD的日发电功率波动不到10％。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;不过，这也意味着，广阔的平静海面上，潮流能利用可能受限，但波浪能不会。史宏达表示，所谓无风不起浪，波浪能广泛存在于海面，若能实现长期可靠利用，对远海开发、科考等意义重大。这也是《指导意见》将潮流能和波浪能作为发展重点的主要原因。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;但向大海要电并非易事。2009年，林东联合流体力学、材料学领域另外两位海外专家，在美国加利福尼亚州成立了美国LHD科技公司。林东自己拥有工商管理、能源开发与管理硕士学位，把LHD称为“两个半科学家”组成的团队。那时，林东几乎抱着“闹着玩”的心态，以每年50万美金的投入摸索潮流能发电的技术路线，许多实验都在“泳池”，也就是自建的环形水道里完成。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东回忆，那时潮流能发电还是非常前沿的领域，没有国家完全走通技术路径。2008年，英国在北爱尔兰安装了世界上第一台商业化并网的潮流能发电机SeaGen，功率1.2兆瓦。SeaGen于2016年就进入了退役阶段，被后续更高效的涡轮技术取代。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;据测算，中国可开发利用的潮流能资源理论平均功率近1400万千瓦，一半以上分布在浙江省。史宏达介绍，欧洲北部是全球波浪能、潮流能最丰沛的区域，中国在资源上其实不占优势，虽然海域广阔，但能流密度低。因此，国内潮流能的利用需要更高的技术水平，以实现低流速发电。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;2024年9月，国际能源署发布全球海洋能二十大亮点工程，LHD项目入选。王冀表示，潮流能已成为国际海洋能规模化发展重点方向。英国亚特兰蒂斯公司开发的MeyGen潮流能发电项目设计装机398兆瓦，首期4台1.5兆瓦机组已于2016年11月并网发电。波浪能国际上也多有工程应用示范。多位受访者的共识是，中国潮流能、波浪能应用的技术水平已在国际第一梯队，“别人能做的我们都能做”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟团队从2004年开始研究潮流能发电技术，并于2014年在浙江大学摘箬山海洋科技示范岛先后建成60千瓦、120千瓦、650千瓦潮流能机组，并建成国内首个漂浮式潮流能试验电站。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;王冀指出，相比潮流能，波浪能发电的技术路线还很多样。按照国际通用的技术成熟度评价标准，潮汐能属于9级，也就是最高级，代表已可以商业化。潮流能为8—9级，处于商业化前期，而波浪能总体评价处于7—8级，代表其处在从工程化应用向规模化应用发展的过程中。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“中国虽在海洋能重大关键技术上取得了一定突破，在潮流能、波浪能领域已具备规模化开发资源条件和技术基础，但示范工程总体规模偏小，发电成本较高，持续运维压力较大。”王冀认为，目前海洋能突破的关键，是实现长期稳定运行电站的“由少变多、由小变大”。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span data-widget="image"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/Oxz3Woq0UQTx5iBNp9VKxwQF3A8JCrZ9T3G0dwdU16wE0AA/641" data-src="https://inews.gtimg.com/news_bt/Oxz3Woq0UQTx5iBNp9VKxwQF3A8JCrZ9T3G0dwdU16wE0AA/641" alt="图片"&gt;&lt;span&gt;中国首台兆瓦级潮流能发电机组“奋进号” 图/受访者提供&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;“小浪不发电，大浪易损坏”&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;LHD潮流能电站目前并入华东电网，两台机组一年发电量近190万千瓦时。而这部分电能只占国内新能源发电总量的极少一部分。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东表示，以1.6兆瓦的LHD第四代机组为例，至今发电超过550万千瓦时，如果下水一万台，累计发电量将达到550亿千瓦时。而舟山市全年社会用电约200亿千瓦时，也就是说，一万台机组才勉强满足舟山三年的用电量。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;而国家能源局数据显示，2024年全国风电发电量9916亿千瓦时，占全社会用电量的近10％。史宏达指出，“十五五”期间，海洋能技术研发的首要目标就是增大容量。风力发电在步入兆瓦级阶段后便走上了快速发展的道路，海洋能下一步也应以单台兆瓦级以上的装机容量为目标。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;实现规模化的突破究竟有多难？2010年时，林东团队的研究有了眉目，计算和测试数据都指向一个结果：潮流能发电有技术可行性。但经济可行性还是一团迷雾。下定决心将成果带回国后，林东算了笔账，与硅谷时期的小打小闹不同，回国研发至少要有两个亿的资金储备。他开始不断审视自己的技术路径。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;2012年回国后，林东在千岛湖畔建立了LHD模拟洋流能大型户外实验室。“相当于挖一个水槽，模拟各种海洋环境，先花掉两千多万。”林东的计划是，实验数据不大好，就再反复打磨几年。没想到数据非常好，仅两年后，LHD潮流能发电机组就迅速在舟山开建。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东坦言，他的经历多少有些运气成分，也许其他企业很难复刻。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;对于波浪能，史宏达将其上规模的瓶颈总结为“小浪不发电，大浪易损坏”。太小的波浪想要获能很困难，而大浪的情况下，波浪能装置的“生存”又成问题。“要‘生存’，就要附加额外的技术和设施，会抬高造价。但安全开销又不能不花，即使装置工作的几年里只遇到一次台风，在台风下的可靠性也必须保证。波浪能造价高的问题短期内还很难解决。”史宏达说。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;他还提到，国内的工程建造水平近年有了迅猛发展，但和国际水平仍有差距。除了加工精密程度外，一些关键材料，例如抗腐蚀、抗附着、抗疲劳等指标过硬的材料仍依赖进口。这方面的研发很难一蹴而就。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;对潮流能来说，成本更多来自海上工程。刘宏伟指出，其实潮流能机组的硬件成本并不高。和风电机组类似，容量足够大的前提下，单位千瓦装机成本可以控制在一万元以下。真正昂贵的是海桩，或漂浮式平台的建设和运维，以及未来往深远海发展后，电力的传输成本。这也是整个行业的共同痛点。海上基础设施的稳定可靠及其低成本对产业化发展至关重要。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在王冀看来，国内海洋能正处于向规模化、产业化迈进的最关键阶段，部分关键核心技术亟待突破，装备可靠性和经济性有待加强，仍需进一步促进技术的优化设计、迭代升级。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“LHD第一代机组的度电成本是106元，到第三代就降到了8.45元。第四代机组的度电成本目前测算是1.1元，预计再迭代两次，成本就能压缩到0.3元以下，低于火电。这样就真正为大规模建设做贡献了。”林东说。目前，LHD的临时电价为每度电2.58元，参考了江厦电站潮汐能的电价。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;电力上网是个更复杂的问题。史宏达表示，上网要和电力部门协商，满足电网的功率、电压、频率、波动性等要求。“目前的海洋能电价相较风电和光伏还不具备竞争力。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;借“风”出海&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟团队建设的潮流能试验电站目前机组状况一切正常，可以发电，学生也经常用这些机组做实验。由于是试验电站，没有指导电价，运维成本制约了机组的长期运行。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟认为，要快速实现海洋能商业化，国家扶持是必须的。“只要有合适的电价，现有的试验电站就能摇身一变成为并网示范电站，实现技术的同场竞技、良性发展。现在就差临门一脚。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;《指导意见》提出力争到2030年，海洋能装机规模达到40万千瓦，建成一批海岛多能互补电力系统和海洋能规模化示范工程，培育一批具有较强技术研发能力和全球竞争力的海洋能规模化开发利用企业。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“现在能长期并网发电的只有我们一家，政策不会单独为我们倾斜。”林东坦言。根据《中华人民共和国增值税暂行条例》，新能源发电项目在销售电力时需缴纳增值税。林东指出，火电的增值税税率为13％，光伏和风电作为清洁能源，已基本实现50％的即征即退，实际增值税为6.5％，而小型水电项目只收取3％。由于各项优惠政策里没有海洋能，海洋能的增值税仍按照火电的13％收取。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“归根结底还是它太新了，一切才刚起步。”林东说。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在史宏达看来，海洋能发展与国家政策紧密关联，欧洲地区由于很早就落地了碳交易、碳补贴政策，可再生能源电力能获得的补贴相当可观。“国内海洋能电力还没有专门的补贴，但总是有办法的。”多位受访者指出，国内海洋能发展需要走摊低成本的道路。如何摊低？史宏达给出了四个字：同场开发。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;近几年，国内海上风电发展势头迅猛。2022 年起，海上风电项目不再纳入中央财政补贴范畴，基本实现了平价上网。因此“风浪同场”成为海洋能发展的重要契机。史宏达介绍，与通过自身技术迭代降低成本不同，摊低成本意味着共用现有海上工程结构。对于漂浮的风电机组来说，波浪能装置能吸收波浪能量，减少其对机组的冲击，提高安全性，这部分能量还能用于波浪能发电，形成双赢。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;刘宏伟团队也在研究深远海综合能源开发。他指出，最容易想到的，也是现在研究的大趋势，就是与渔业、制氢等行业的共同开发。风渔同场开发、风电制氢已有应用案例。刘宏伟希望潮流能也能和这些行业结合，不仅完成海岛供电，还能制淡水、制氢等，实现海岛的多资源联供。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;史宏达与坐落于苏格兰的欧洲海洋能源中心（EMEC）有着十多年的合作交流。他指出，EMEC建有一个潮流能、一个波浪能发电的海上电厂，但它没有任何自研的海洋能装置，仅对来自欧洲的海洋能装置进行测试，过程中产生的电力同样用于并网。目前，史宏达和团队正在青岛斋堂岛海域建设“海洋能海上综合试验场”。“希望它未来能成为CMEC，即中国海洋能源中心。”史宏达称。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“斋堂岛试验场已初具规模，但还远远不够。”史宏达坦言，测试平台对产业发展至关重要。不测试就不知道年发电量，就无法计算投入产出比，风险就难以量化，企业界就无法判断是否值得投资。在史宏达看来，中国海洋能测试标准体系还不完备，而这是一个行业共识形成的过程。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;王冀所在的国家海洋技术中心作为 “国家队”，已建设威海、舟山、珠海和三亚4个试验场区，形成了“北东南、浅海+深远海”的国家级海上试验场，2022年，中心成为国内首个具备波浪能、潮流能发电装置功率特性和电能质量特性检验检测认证资质的机构。王冀表示，从测试能力来说，中心已具备从原理样机到工程试验的全链条测试服务。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;林东新能源接下来规划了百兆瓦级的潮流能电厂，就在LHD电站5公里外的海域，预计年发电量为2.5亿千瓦时。该电厂用海面积预计为70亩，而同样100兆瓦的光伏电站至少要用地3500亩。“前期工作都做完了，只要电价政策下来，我们立刻可以开工建设。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;深远海藏着林东更大的野心。全球第二大洋流“黑潮”从菲律宾北上经过中国台湾、东海，直达日本，其流量约为地球淡水总流量的50—60倍。“这就是家门口的‘石油’，是我们下一步的主战场。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“最快5年，最慢10年。”谈起国内海洋能规模化的前景时，史宏达这样说道。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;（文中黄强为化名）&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;发于2025.9.1总第1202期《中国新闻周刊》杂志&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;杂志标题：海洋能竞速：向“深蓝”要“绿电”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;记者：周游&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;编辑：杜玮&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p powered-by="qqnews_ex-editor"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>QQ News</author><pubDate>Sun, 31 Aug 2025 03:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE1CZXNuZmpsbHp5X2I2WnpGbXpMSncxWUwzM1pwbHltdE5McjRpQ0hUOVVGUWtOVHBBTVpFOTdiRjBRelJpNjdxQTRRNTcwNkVmcjNvUmF3</guid></item><item><title>除了寒武纪，章建平还现身这7股 - 新浪财经</title><link>https://finance.sina.com.cn/stock/s/2025-08-31/doc-infnvyrk0580459.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+                    &lt;blockquote&gt;&lt;p&gt;　　炒股就看&lt;a href="https://finance.sina.com.cn/stock/reportch/jinqilin.shtml" target="_blank"&gt;金麒麟分析师研报&lt;/a&gt;，权威，专业，及时，全面，助您挖掘潜力主题机会！&lt;/p&gt;&lt;/blockquote&gt;		&lt;p&gt;　　近期，因重仓布局AI芯片龙头企业&lt;span id="stock_sh688256"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh688256/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;寒武纪&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh688256"&gt;&lt;/span&gt;，章建平再度成为市场关注的焦点。&lt;/p&gt;
+&lt;p&gt;　　值得注意的是，随着上市公司半年报披露收官，数据显示，章建平二季度新纳入7只重仓股，截至二季度末总计出现在9家公司的前十大流通股东名单中，持股市值合计约50.95亿元。&lt;/p&gt;
+
+&lt;p&gt;　　从产业属性来看，这9家公司里有8家归属于AI产业链。其中，&lt;span id="stock_sh603119"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh603119/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;浙江荣泰&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh603119"&gt;&lt;/span&gt;、&lt;span id="stock_sh605133"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh605133/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;嵘泰股份&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh605133"&gt;&lt;/span&gt;、&lt;span id="stock_sh600592"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh600592/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;龙溪股份&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh600592"&gt;&lt;/span&gt;、&lt;span id="stock_sz002048"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz002048/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;宁波华翔&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz002048"&gt;&lt;/span&gt;等多只个股，还同时具备人形&lt;span id="stock_sz300024"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz300024/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;机器人&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz300024"&gt;&lt;/span&gt;概念，凸显出章建平对AI及相关延伸领域的布局倾向。&lt;/p&gt;
+&lt;p&gt;　　浮盈已超60亿元？&lt;/p&gt;
+&lt;p&gt;　　寒武纪2025年半年报显示，截至6月30日，章建平持有该公司608.63万股，与一季度末持股数量一致，未发生变化。&lt;/p&gt;
+&lt;p&gt;　　回溯持仓数据，章建平是在2024年第四季度，首次晋升寒武纪前十大流通股东，截至2024年末，其持有533.88万股，期末持股市值达35.13亿元。今年一季度，他继续加仓74.75万股，持仓数量升至608.63万股，持股市值增至37.92亿元，截至二季度末持股数量不变。&lt;/p&gt;
+&lt;p&gt;　　从股价表现看，2025年一季度、二季度，寒武纪股价表现一般，分别下跌5.32%和3.45%。受此影响，章建平二季度末持股市值略微下降至36.61亿元。但进入三季度后，寒武纪股价走出了一波连续拉升行情，截至8月29日收盘，较7月10日最低点累计上涨186.65%。若章建平期间一股不卖的话，其持股市值已突破90亿元，浮盈或超50亿元。&lt;/p&gt;
+
+&lt;p&gt;　　除寒武纪外，章建平在2025年二季度还新进多家公司的前十大流通股东名单。数据显示，截至二季度末，他共现身9家公司前十大流通股东榜，累计持股市值达50.95亿元。&lt;/p&gt;
+&lt;p&gt;　　据记者粗略估算，以期末持仓为基准，且假设期间持股数量未发生变化，近两个月这9家公司为他带来超60亿元浮盈。&lt;/p&gt;
+&lt;p&gt;　　新进哪些个股？&lt;/p&gt;
+&lt;p&gt;　　具体来看，章建平二季度新进的7家公司分别是浙江荣泰、嵘泰股份、&lt;span id="stock_sz301316"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz301316/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;慧博云通&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz301316"&gt;&lt;/span&gt;、龙溪股份、宁波华翔、&lt;span id="stock_sz300007"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz300007/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;汉威科技&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz300007"&gt;&lt;/span&gt;、&lt;span id="stock_sh688299"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh688299/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;长阳科技&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh688299"&gt;&lt;/span&gt;，且这7家公司均与AI或AI相关延伸产业相关。进一步梳理发现，浙江荣泰、嵘泰股份、龙溪股份、宁波华翔、汉威科技等多家公司还具有人形机器人概念，其中部分个股已走出强势上涨行情。&lt;/p&gt;
+&lt;p&gt;　　以浙江荣泰为例，8月29日，该股上涨7.82%，收盘价创历史新高，自7月1日以来累计涨幅达64.68%。&lt;/p&gt;
+
+&lt;p&gt;　　半年报显示，章建平新晋为浙江荣泰第三大流通股东，截至二季度末，其持有1091.26万股，持股市值5.05亿元。&lt;/p&gt;
+&lt;p&gt;　　公开信息显示，浙江荣泰是云母耐火绝缘行业龙头企业，主要以云母材料为核心打造多元化绝缘产品，广泛应用于新能源汽车、小家电、电缆阻燃等领域。同时，借助多方积累与资本并购，公司快速进入精密传动、智能装备和人形机器人等新兴领域——上半年，先后收购狄兹精密51%股份与金力传动15%股份。其中，狄兹精密主营丝杠业务，是机器人灵巧手细分领域的头部企业；金力传动主要深耕微型传动，是微特传动领域的领先品牌。&lt;/p&gt;
+&lt;p&gt;　　目前，机器人业务与公司现有业务已形成强协同效应，叠加市场、生产管理等方面能力持续提升，浙江荣泰的人形机器人“第二增长曲线”已经初步成形。&lt;/p&gt;
+&lt;p&gt;　　此外，慧博云通、嵘泰股份、龙溪股份、宁波华翔、汉威科技的核心题材也均包含人形机器人概念；另一只新进个股长阳科技则有固态电池概念，8月29日该股最高涨幅达18%。&lt;/p&gt;
+&lt;p&gt;　　从行业层面看，近期人形机器人与AI赛道利好不断。2025年8月，天太机器人签署全球首个具身智能人形机器人1万台订单，标志着行业进入规模化应用阶段。此前，英伟达CEO黄仁勋曾公开表示，机器人时代已经到来，具身智能是人工智能的下一波浪潮。&lt;/p&gt;
+&lt;p&gt;　　对于AI行业趋势，华商均衡成长混合基金经理张明昕分析认为，从最近海外的产业进展来看，AI行业发生了根本的变化。经过产业界持续的研发与投入，海外已经在Coding为代表的应用领域形成了商业闭环，并迅速向更多的领域拓展。目前AI行业已经基本完成“0到1”的产业突破，这实际上是本轮海外算力持续走强的核心所在。&lt;/p&gt;
+&lt;p&gt;　　“这不是投资周期的高点，而是一个长周期的行业的起点。”他说。&lt;/p&gt;
+&lt;p&gt;　　作者：高志刚&lt;/p&gt;
+&lt;p id="app-kaihu-stock"&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 31 Aug 2025 03:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE4zTHhnRUpVR2g4Sl9GOWI0MDZDZU5jZllrczBDc0ZZVHNGb0V5Y01sOTJBa0tjaV9FVnRpWGhlRTN0R1k1MDBtV1E4NW9qQ0NQX241ekxWLWNteXJJS0xtcjB5RkVSUFZxQ2VmbDNCa0QtczNwVUJBdUx1WnU</guid></item><item><title>史上最大Mate！华为智慧屏MateTV尺寸出炉：最大110英寸 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071512.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;史上最大Mate！华为智慧屏MateTV尺寸出炉：最大110英寸&lt;/p&gt;
           
@@ -927,7 +1152,9 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 02:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBuSWg4T1pZR0ZLRjZGOHZQVFFFQ0ktdHFSbUcxOFh4NDBNZjR2T2pIZEYtRkFxdVF5cGxlVEdWMmhjRjBMaWNkdTk0VzRaUzZFUkl2WEVpVGs</guid></item><item><title>Intel承认高端桌面CPU表现不尽人意：确认Nova Lake 2026年发布 要和AMD见高低！ - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071500.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 31 Aug 2025 02:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBuSWg4T1pZR0ZLRjZGOHZQVFFFQ0ktdHFSbUcxOFh4NDBNZjR2T2pIZEYtRkFxdVF5cGxlVEdWMmhjRjBMaWNkdTk0VzRaUzZFUkl2WEVpVGs</guid></item><item><title>中国科研团队正开发微型涡轮发动机，可让无人机续航达到30小时 - 凤凰网科技</title><link>https://tech.ifeng.com/c/8mGJdbnLZrt</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_smallFont_3Pwv1
+                            index_text_TwFCV
+                             articleText"&gt;&lt;img src="https://x0.ifengimg.com/res/2025/39B846B88290912FCD964779347CEECCA10A5D5E_size247_w644_h344.png"&gt;&lt;p&gt;IT之家 8 月 31 日消息，据潮新闻报道，欧洲科学院院士、浙江清华长三角研究院海纳 — 动力系统研究中心主任姜开春及其团队正在加急开发一款微型涡轮发动机，这款发动机有望成为无人机的“强心脏”，推动无人机飞得更高、更远、更久，为低空经济的发展注入强大动力。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img src="https://x0.ifengimg.com/res/2025/39B846B88290912FCD964779347CEECCA10A5D5E_size247_w644_h344.png"&gt;&lt;/p&gt;&lt;p&gt;IT之家了解，低空经济作为当下热门领域，正逐渐深入人们的生活。从空中汽车到无人机配送，从高山水果的快速运输到各种低空应用场景，低空经济展现出巨大潜力。然而，要让飞行器更好地服务于人类生产生活，还需突破续航、载重、环保等多重瓶颈。姜开春团队选择了一条创新之路，致力于打造微型涡轮发动机，以“小身躯”释放“大能量”。&lt;/p&gt;&lt;p&gt;在续航能力方面，姜开春指出，燃料发动机的能量密度普遍比电池高出 30 至 40 倍。目前市面上锂电池无人机的续航时间大多在 30 分钟到 2、3 小时之间，&lt;strong&gt;而他们开发的微型涡轮发动机可使无人机续航时间长达 20 至 30 小时，且起飞重量控制在 200 公斤左右&lt;/strong&gt;，显著提升了无人机的实用性。&lt;/p&gt;&lt;p&gt;从环保角度来看，微型涡轮发动机同样表现出色。该发动机能够燃烧绿色甲醇、氨气或氢气等清洁能源，实现全程零碳排放，为低空经济的可持续发展提供有力支持。&lt;/p&gt;&lt;p&gt;尽管该技术目前仍处于紧张的测试阶段，但已吸引了多家企业的订单。姜开春表示，预计今年年底，搭载他们发动机的无人机有望在嘉兴上空进行试飞。随着试飞的临近，团队正全力以赴做好最后的准备工作。&lt;/p&gt;&lt;p&gt;展望未来，微型涡轮发动机的应用前景十分广阔。除了无人机领域，它还可以应用于城市空中交通、偏远地区电力供应、环境监测、灾害预警等多个方面，为低空经济的全面发展提供强大动力。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网科技</author><pubDate>Sun, 31 Aug 2025 02:20:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE4yencwb0p6TUdORWVnQzlWVnlNM3pjbWRVX2pIajNzZVZoYlBxUEx6dTRGUGNTN1NURndCeVB2S1VvNGVvSHA0dlhZbTM</guid></item><item><title>Intel承认高端桌面CPU表现不尽人意：确认Nova Lake 2026年发布 要和AMD见高低！ - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071500.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月31日消息，据报道，在近日举办的2025年德意志银行科技大会上，&lt;strong&gt;Intel CFO戴维·津斯纳（David Zinsner）公开承认，公司在高性能桌面市场战略失误，导致市场份额下滑。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;他明确，&lt;span&gt;&lt;strong&gt;下一代Nova Lake处理器将于2026年正式推出，并承诺其性能将全面超越当前Arrow Lake，彻底解决高端桌面CPU市场的战略短板。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1450,25 +1677,4 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 30 Aug 2025 12:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9RU1cwa09aSkJrYnNsVE54LVVUSGUzQm9ZWVZKeldmcVZlWURDTndiekNndk1uWTNKc1VCTl83Mk4yX2xiMU5PeTFSaUZaZ1Z2T1MwcU14Nkg</guid></item><item><title>明年安卓阵营迈入阔折叠平时代：向苹果看齐 - 驱动之家</title><link>https://news.mydrivers.com/1/1071/1071470.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月30日消息，博主数码闲聊站爆料，明年安卓阵营将推出阔折叠屏，其&lt;span&gt;&lt;strong&gt;屏幕比例跟已经上市的安卓折叠屏完全不同。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;该博主曾爆料，&lt;strong&gt;TOP5厂商不止一家会在明年下半年推出折叠屏新品，&lt;/strong&gt;其屏幕尺寸、屏幕比例都将全面对标苹果，虽然苹果折叠屏推出时间晚于安卓厂商，但是苹果仍然是业界标杆，安卓阵营接下来将转向阔折叠。&lt;/p&gt;
-&lt;p&gt;和市面上的多数折叠屏不同，阔折叠机型在相对小巧的屏幕尺寸里获得了更大的显示面积，以一种崭新的形态带来了更广阔的屏幕视野。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250830/be2bc0a10c25455ba59279635da99e4e.jpg" target="_blank"&gt;&lt;img alt="明年安卓阵营迈入阔折叠平时代：向苹果看齐" h="111" src="//img1.mydrivers.com/img/20250830/s_be2bc0a10c25455ba59279635da99e4e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;据悉，苹果首款折叠屏的屏幕尺寸是7.58英寸，分辨率为2713×1920，屏幕纵横比为14.1:10，是一款阔折叠机型，该机配备A20系列芯片，后置双摄像头（包含广角和超广角镜头），并搭载Touch ID。&lt;/p&gt;
-&lt;p&gt;在苹果折叠屏之后，安卓阵营也将迈入阔折叠屏时代，其屏幕比例跟苹果折叠屏接近，值得期待。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250830/75bc32e6615e49369f355f5147de2244.jpg" target="_blank"&gt;&lt;img alt="明年安卓阵营迈入阔折叠平时代：向苹果看齐" h="399" src="//img1.mydrivers.com/img/20250830/s_75bc32e6615e49369f355f5147de2244.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 30 Aug 2025 12:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9PUmxicjZzVG51aVlERTY3TWhFWHl6M1lJTU5zLUlRZ1hUYkNNM0IyM0dLLUdnMkRGX05BZzBsMk1QUXB5c0UwXzBxNDgtS2lMRFV3MnRMaFQ</guid></item><item><title>千亿身家的江西“网瘾少年”，把茅台推下神坛 - 风闻</title><link>https://user.guancha.cn/main/content?id=1509162</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
-							&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421470.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;“以后去老丈人家，不带白酒，只带显卡”。&lt;/p&gt;&lt;p&gt;打败你的不一定是同行，还有可能是跨界者。这句话对于现在的茅台来说，可是相当有感触。&lt;/p&gt;&lt;p&gt;继飞天茅台价格跌破之后，没想到茅台再失一城——股价。曾经坐拥A股股王宝座的茅台，绝对想不到自己竟然还有被赶超的一天？对手竟然还是八竿子打不着的AI? &lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421784.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;谁也想不到就在这两天，寒武纪的股票突然如同坐火箭飙升，市值冲上6000亿，一度超越贵州茅台。不少人一夜账户就多了几万几十万。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421617.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;如此之猛，连寒武纪本纪都出来，提醒广大投资者注意风险。但这并不影响众人的狂欢。&lt;/p&gt;&lt;p&gt;高盛很快发布研报，直接将寒武纪目标价上调50%至1835元，换算成市值将高达7700亿。连市盈率（股价与每股盈利的比值，用来衡量上市公司股价合理性）都高达500多，相比之下连英伟达都只有57.8。&lt;/p&gt;&lt;p&gt;股价能赶超茅台，这个寒武纪到底是何方神圣？很多人或许是最近才听说，在AI芯片领域，寒武纪算是国内极少数从最底层的指令集、架构开始完全自主研发的AI芯片公司，以此衍生的还有各种称号如“寒王”“中国版英伟达”。&lt;/p&gt;&lt;p&gt;谁能想到，最初的寒武纪，还是一个无经费、无论文、无人问津的“三无研究”，研发环境更是憋屈，团队把行军床搬到工位边，一熬就是一个通宵，甚至连创始人都被说成“不务正业”。&lt;/p&gt;&lt;p&gt;曾经被人看不起的小透明，竟然逆袭成了如今的“寒王”。很多人觉得，因为AI是现在全民关注的大风口，作为搞AI的头号玩家，寒武纪得到关注似乎不稀奇。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421339.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;但问题来了，搞AI概念的公司这么多，为何市值狂飙如此之猛的是寒武纪？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;01&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;中科大“网瘾少年”，用10年熬出头&lt;/b&gt;&lt;/p&gt;&lt;p&gt;寒武纪背后的两个江西男人，始终绕不开"天才" 二字。&lt;/p&gt;&lt;p&gt;毕竟，光从前半生的履历来看，连小说爽文男主都不敢这么编的。&lt;/p&gt;&lt;p&gt;哥哥陈云霁14岁就入读中科大少年班，在同龄人还在享受大学生活时，他19岁就参与龙芯3号芯片设计。&lt;/p&gt;&lt;p&gt;小两岁的弟弟陈天石也是个神话。16岁入中科大少年班，在深度学习算法领域也是天赋异禀，每天干的事就是死磕计算机，说是“网瘾少年”也不为过。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421995.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;兄弟俩有点年代感的童年照&lt;/p&gt;&lt;p&gt;俩兄弟都这么出息，甚至在学习之外还沉迷于打游戏。于是很多人感叹，他们的父母算是妥妥的中了“基因彩票”。&lt;/p&gt;&lt;p&gt;不过说到这里，还只是个天才关起门来的传奇故事，能让无数中国人心情跟着紧密波动，离不开这俩人之后做出一个“叛逆决定”。&lt;/p&gt;&lt;p&gt;当时，在中国科学院计算所一次内部汇报中，陈云霁、陈天石兄弟就提出一个大胆构想：做一款AI芯片，解决人工智能对算力的巨大需求。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421608.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;由于项目过于冷门，很多人连AI是什么都没有概念，据说兄弟俩连20万的经费都没能申请下来。&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;毕竟连英伟达在当时也还只是卖游戏显卡。整个全球半导体界都没在意这个领域，甚至觉得是天方夜谭。&lt;/p&gt;&lt;p&gt;陈云霁回忆时曾感慨：“就像在一片黑暗中摸索，不知道哪里是方向、哪里是出口，甚至不知道有没有出口。”  &lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421198.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;很多人以为两兄弟只是随便说说，谁也想不到，这个小团队竟然一直在这个方向默默闷头搞研发，2015年就研发出世界首款深度学习专用处理器原型芯片。&lt;/p&gt;&lt;p&gt;推出芯片还不是小打小闹，在那个很多人没听过AI的年代，陈天石们就敢all in这个“冷门”赛道。甚至在推出芯片的第二年，陈天石直接离岗创业，创始团队成员和中国科学院计算所的投资管理平台中科算源，共同设立了北京中科寒武纪科技，这也有了寒武纪。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421803.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这个时候，英伟达也开始重视AI芯片，甚至大步一跨，成为全球最出色的AI芯片公司，也吃到了第一波AI的红利。&lt;/p&gt;&lt;p&gt;相比之下，表面上寒武纪的规模和动作都没那么高调，更没有英伟达那么出名，但随着美国的政策打压，也让大家真真切切看到了中国AI芯片的巨大潜力。&lt;/p&gt;&lt;p&gt;2017年9月，华为发布人工智能手机芯片“麒麟970”，背后竟然就是搭载寒武纪1A处理器！&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091421319.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这一次，让不少人开始对这个公司真正有了实感。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;02&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;为了追赶英伟达，它赌了一件事&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;然而，好日子却没过太久。&lt;/p&gt;&lt;p&gt;靠着华为大客户，寒武纪一战成名，还顺便洗刷了曾经被误解的屈辱上了个市。2020年7月，寒武纪成功登陆科创板，首日市值便突破1000亿。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422881.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;然而谁也没想到，成也华为，栽也华为。很快华为宣布自研芯片，好家伙从客户一夜变成对手。上市成了寒武纪少有的巅峰时刻，此后多年走上“下坡路”。&lt;/p&gt;&lt;p&gt;赚钱能力上，让股东相当不开心。2020年至2023年，寒武纪不仅没能赚钱还不断亏损。资本市场反应也很快，寒武纪市值一度掉到200多亿。&lt;/p&gt;&lt;p&gt;果不其然，寒武纪再次迎来了很多人的质疑：是不是不行了？AI到底是不是噱头？这俩兄弟是不是圈钱的？&lt;/p&gt;&lt;p&gt;然而仅过几年冲上6000亿的寒武纪，再一次用现实证明：市场还是低估了。寒武纪为何又再次低谷翻盘？&lt;/p&gt;&lt;p&gt;1.狠心死磕一件事，只为活下去&lt;/p&gt;&lt;p&gt;都知道前有英伟达虎视眈眈，后有华为等老大哥争相竞争，寒武纪创始人却偏偏不信邪，为了干成中国AI芯片，就赌上一件事：全部身家。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422479.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;都知道搞AI产品跟搞商业很难两全，但陈天石放出豪言，“我们这一代企业家的使命，是把冷板凳坐热。”&lt;/p&gt;&lt;p&gt;他很明白，靠单一智能终端芯片卖给别人风险很高，而且很被动，于是狠心决定——要做就做最难的事：向云、边、端全场景智能芯片延伸。&lt;/p&gt;&lt;p&gt;在这个思路下，寒武纪开发了一系列云端推理、训练芯片，以及边缘计算产品线，并为所有产品构建了统一的基础系统软件和工具链。不断扩展更多的版图，也给自己找到更多的输血“大腿”，前五大客户就贡献了80%以上的营收，保证能活下去。&lt;/p&gt;&lt;p&gt;2.自虐式研发，只为当“将军”&lt;/p&gt;&lt;p&gt;光是有人“输血”还不够，支撑这场逆袭的，还有十年如一日的“真金白银”氪金。&lt;/p&gt;&lt;p&gt;夸张到什么程度？在2023年，寒武纪营收7.09亿，砸到研发的钱就高达11.18亿，都快是营收的两倍。&lt;/p&gt;&lt;p&gt;2024年的研发费用稍微收敛了些，但也占了营收91.3%，为10.72亿，792名研发人员占比近80%。&lt;/p&gt;&lt;p&gt;如此不计上限的投入，换来的是累计申请专利2774项，97%为发明专利以及在芯片领域的一次次技术突破。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422411.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;与此同时，寒武纪也不会放过任何中国人用AI的场景。比如自研MLU-OPS算力调度平台适配90%国产框架，提升DeepSeek-V3大模型推理效率等，努力在大众中刷存在感。&lt;/p&gt;&lt;p&gt;如此大的开支下，哪怕寒武纪自2016年成立以来累计亏了50多个亿，陈天石也丝毫不掩饰野心，“如果智能时代真的到来，一定会诞生新的巨头。我不讳言寒武纪想当这个将军。”&lt;/p&gt;&lt;p&gt;能做到这种程度，寒武纪被人视为中国AI“全村的希望”也就不足为奇。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;03​&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;泡沫还是真底气，还得用实力说话&lt;/b&gt;&lt;/p&gt;&lt;p&gt;如今，很多人对寒武纪的观点鲜明地分成了两派。&lt;/p&gt;&lt;p&gt;一派认为它更需要时代，企业的能力远没有风口的威力更大，估值里泡沫更多；另一派则认为，是因为自己练出了产品护城河，风口的助推只是锦上添花。&lt;/p&gt;&lt;p&gt;很难真正判断谁对谁错，但有一点可以确定的是，AI风口之下，寒武纪绝不是第一个，也不会是最后一个玩家。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422328.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;如今，在AI行业有个心照不宣的共识是：国产芯片时代已经来临。&lt;/p&gt;&lt;p&gt;要知道，以往国内云计算公司尤其是互联网公司，一直偏向于采购英伟达的AI芯片产品，然而这种情况，在这些年有了质的改变：以寒武纪为代表的部分国产AI推理芯片，因为同样可以满足AI推理计算需求，也开始出现在不少国产公司的订单上。&lt;/p&gt;&lt;p&gt;IDC研究显示，2024年中国本土AI芯片的出货量已超过82万张。其中国产芯片占比在30%左右。机构预测，随着AI芯片国产化的趋势进一步加强，国产占比到今年年底将进一步升至40%。&lt;/p&gt;&lt;p&gt;因为还是新兴行业，现在国产芯片公司众多，还没有形成特别明显的垄断态势，暂时没有谁能一家独大。也就是说，谁能提前瞄准下一个AI细分算力风口，谁就能提前抢到更多的机会。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422387.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不得不说，寒武纪要想真正打破很多人对它的偏见，还需要像之前一样，用现实成绩单打脸。&lt;/p&gt;&lt;p&gt;首先是在赚钱能力上证明自己。其实，营收能力已经有了明显的提升。&lt;/p&gt;&lt;p&gt;寒武纪最近发布半年报，今年上半年营业收入28.81亿，同比直接增长4347.82%；归属于母公司所有者的净利润10.38亿，上年同期净亏损5.3亿，实现了扭亏为盈。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422932.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不得不说，这已经是个好的开头，接下来寒武纪要做的，就是保住盈利势头，一边继续赚更多的钱，另一边把资金子弹投入更多的研发，形成正向循环，也是像英伟达学习。&lt;/p&gt;&lt;p&gt;其次，圈子就这么大，要做好“回头客”效应。&lt;/p&gt;&lt;p&gt;毕竟，AI芯片早已从过去的小众概念变成如今的大众风口，越来越多对手的加入如华为昇腾、海光、昆仑芯等，就意味着寒武纪并不是非它不可的资源。对于客户而言，性价比和效果才是最关键的，而不是看空无一物的估值或融资。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/08/30/20250830091422329.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;寒武纪还不能掉以轻心，还需要持续不断掏出更多的”真家伙”。只有如此，才能真正在业内站稳脚跟，而不是昙花一现。&lt;/p&gt;&lt;p&gt;毕竟，中国&lt;b&gt;“芯片新王”不稀奇，宝座坐稳才是真本事。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;图片来源于网络，侵权请联系删除&lt;/p&gt;&lt;p&gt;&lt;strong&gt;@The End&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://mp.weixin.qq.com/s/YH1jl_B9vnpT4b8g7ob8dg" title=""&gt;点击「金错刀」阅读原文&lt;/a&gt;&lt;/p&gt;													&lt;/div&gt;
-						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Sat, 30 Aug 2025 11:24:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE9uRzlPSzBRekIyVlF4czd1Y1RlZnMtSUY3TVFNblF2R0pSZXV4WlUxVVR3UzRaODNFbWxHTEI2djZqazRMRFVidlVvbzVKSTJIaG8tXzNaNVFnalE</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 30 Aug 2025 12:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9RU1cwa09aSkJrYnNsVE54LVVUSGUzQm9ZWVZKeldmcVZlWURDTndiekNndk1uWTNKc1VCTl83Mk4yX2xiMU5PeTFSaUZaZ1Z2T1MwcU14Nkg</guid></item></channel></rss>
