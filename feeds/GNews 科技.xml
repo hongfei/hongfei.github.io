@@ -1,5 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>大疆全景无人机真要来了！谍照全球首曝：相关配置信息流出 - 驱动之家</title><link>https://news.mydrivers.com/1/1073/1073021.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>RTX 5090遇诡异Bug完全无响应！悬赏1000美元寻解决方案 - 驱动之家</title><link>https://news.mydrivers.com/1/1073/1073025.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技9月7日消息，据报道，&lt;span&gt;&lt;strong&gt;NVIDIA的RTX 5090和RTX PRO 6000显卡最近被发现存在一个可复现的虚拟化重置漏洞，该漏洞会导致显卡完全无响应，直到主机系统物理重启才能恢复。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;CloudRift是一家GPU云服务提供商，他们在生产环境中多个配备Blackwell芯片的系统上遇到了这个问题后，详细公布了问题的分析报告，并悬赏1000美元，公开征集能够找到解决方案或根本原因的人。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20250907/08f31401-d5d7-44ef-a10c-5f89874b2026.png" target="_blank"&gt;&lt;img alt="RTX 5090遇诡异Bug完全无响应！悬赏1000美元寻解决方案" h="321" src="//img1.mydrivers.com/img/20250907/S08f31401-d5d7-44ef-a10c-5f89874b2026.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;根据CloudRift的日志，这个漏洞发生在GPU通过KVM和VFIO传递给虚拟机后。在虚拟机关闭或GPU重新分配时，主机系统会发出一个PCIe功能级重置（FLR）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但与正常情况不同的是，GPU并没有恢复到良好状态，而是停止响应，内核报告称：“FLR后65535毫秒仍未就绪；放弃。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此时，显卡也变得无法被lspci读取，lspci会抛出“未知头部类型7f”的错误，CloudRift指出，唯一恢复正常操作的方法是对整个机器进行断电重启。&lt;/p&gt;
+&lt;p&gt;AI初创公司Tiny Corp也复现了CloudRift的发现，并直接提出了一个问题：“RTX 5090和RTX PRO 6000是否有硬件缺陷？我们已经调查过，但找不到解决方案。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;社区的讨论中，许多家庭用户和其他RTX 5090的早期采用者也报告了类似的问题，&lt;/strong&gt;一位用户表示在关闭Windows虚拟机后，整个主机系统挂起，即使操作系统级别的重启后，GPU也无法重新初始化。&lt;/p&gt;
+&lt;p&gt;用户证实，切换PCIe ASPM或ACS设置并不能缓解故障，目前还没有报告称旧型号显卡（如RTX 4090）存在类似问题，这表明该漏洞可能仅限于NVIDIA的Blackwell系列。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20250907/d55858c1ea59467f8f1a88fbfe85e04e.jpg" target="_blank"&gt;&lt;img alt="RTX 5090遇诡异Bug完全无响应！悬赏1000美元寻解决方案" h="399" src="//img1.mydrivers.com/img/20250907/s_d55858c1ea59467f8f1a88fbfe85e04e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 07 Sep 2025 15:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1HX0liajlIWTl5cHZpT3gxRC1pODBFalJ3bUt3dTBBandBczFWdjhRdWFrU3FrYjZXQTVBRENiVjVTZ0lZZTk3cndjUjBneUZfazF4S2E1T0o</guid></item><item><title>无法再安装！微软宣布停用Outlook Lite轻量版 - 驱动之家</title><link>https://news.mydrivers.com/1/1073/1073023.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;无法再安装！微软宣布停用Outlook Lite轻量版&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-09-07 22:30:42  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1073023-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+  
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技9月7日消息，&lt;span&gt;&lt;strong&gt;微软宣布，Outlook Lite即将停用，顾名思义，这是一款轻量级的Outlook应用。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;该应用在首次推出时，大小仅为5MB（目前约为7.5MB），凭借小体积，Outlook Lite带来了“快速性能、低电量消耗以及在所有网络上的稳定运行”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;自推出以来，Outlook Lite取得了相当的成功，截至2023年11月底，下载量已超过五百万次，而在不到一年后的2024年8月，这一数字翻了一番。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但对于用户来说，微软宣布了一个令人遗憾的消息：Outlook Lite即将停用，停用流程将于2025年10月6日开始。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微软指出，“在此日期之后，新安装将被阻止”，“现有用户可以在全面停用前的有限时间内继续使用该应用”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;微软建议用户切换到Outlook移动应用，以继续享受安全且功能丰富的电子邮件体验，并提供了具体步骤：&lt;/p&gt;
+&lt;p&gt;在Outlook Lite应用的通知部分，选择“安装Microsoft Outlook”横幅。&lt;/p&gt;
+&lt;p&gt;或者打开应用商店。&lt;/p&gt;
+&lt;p&gt;搜索“Microsoft Outlook”。&lt;/p&gt;
+&lt;p&gt;下载并安装该应用。&lt;/p&gt;
+&lt;p&gt;使用现有凭据登录，以访问电子邮件、日历和文件。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="无法再安装！微软宣布停用Outlook Lite轻量版" h="337" src="//img1.mydrivers.com/img/20250907/45728719-c7e6-4b85-b2ef-4f56c24efb01.png" w="600"&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 07 Sep 2025 14:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9XaDhYZVJEQ1UxN2o0VlBRZDl5dUxFMDV2eHJIOUFjajNVRlMyZkJObkI2Q0lxamt0eEdRMmV1MHlibHJIMjFWS0hiRm1kNUk4QW56MEduUHc</guid></item><item><title>大疆全景无人机真要来了！谍照全球首曝：相关配置信息流出 - 驱动之家</title><link>https://news.mydrivers.com/1/1073/1073021.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;大疆全景无人机真要来了！谍照全球首曝：相关配置信息流出&lt;/p&gt;
           
@@ -308,7 +396,63 @@ Mods用户Baiker在9月5日发布了一个MOD，可防止任何敌人或Boss造�
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 07 Sep 2025 09:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBqcUg3cFp4Nzd6S2JlcFdPSXhqTGliQ2Q2R3ExYXhOcFo4OGJLOHJhRUc3a0ZjV1J5VHNfQkxKYnlRX09qejEwWVl1amtLZzhleU1oeFVBbDQ</guid></item><item><title>Intel CEO陈立武亲自督战：每款CPU等芯片必须由他审核批准 - 驱动之家</title><link>https://news.mydrivers.com/1/1072/1072993.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 07 Sep 2025 09:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBqcUg3cFp4Nzd6S2JlcFdPSXhqTGliQ2Q2R3ExYXhOcFo4OGJLOHJhRUc3a0ZjV1J5VHNfQkxKYnlRX09qejEwWVl1amtLZzhleU1oeFVBbDQ</guid></item><item><title>AMD不回应显卡份额只剩6%：为RX 9000销量感到高兴 - 3DM</title><link>https://www.3dmgame.com/news/202509/3927339.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;AMD不回应显卡份额只剩6%：为RX 9000销量感到高兴&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2025-09-07 15:04:17&lt;/span&gt;&lt;/p&gt;
+            &lt;ul class="intem"&gt;
+                                &lt;li&gt;来源：&lt;span class="weibo"&gt;3DM整理&lt;/span&gt;&lt;/li&gt;
+                                                &lt;li&gt;作者：&lt;span class="name"&gt;快科技&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;newtype2001&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/0907/1757228651590.jpg" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	调研机构JPR近日发布了Q2季度GPU市场报告，AIB独显市场上NVIDIA直接拿下了94%的份额，创造了历史新高。
+&lt;/p&gt;
+&lt;p&gt;
+	AMD的独显只剩下6%份额，比去年同期的12%直接减少一半，环比上个季度也少了2%。
+&lt;/p&gt;
+&lt;p&gt;
+	AMD如此表现让网友很是震惊，这事比Intel独显份额为0还让人关注。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20250907/1757228645_598535_jpg_r.jpg" alt="AMD不回应显卡份额只剩6%：为RX 9000销量感到高兴"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	那AMD对这个报告是怎么看的呢?在IFA 2025展会上也有人问到了这个问题，结果AMD的态度是不回应这些数据，这倒也没什么不能理解的。
+&lt;/p&gt;
+&lt;p&gt;
+	AMD代表表示，我们对AMD GPU在多领域的持续强劲销售感觉高兴，目前的需求依然高于产量。
+&lt;/p&gt;
+&lt;p&gt;
+	AMD在推出RX 9000系列之后就宣布将大幅提高产量，不过具体的销量数据也没有明确的公布过。
+&lt;/p&gt;
+&lt;p&gt;
+	在RDNA4架构这一代，AMD改变了显卡市场的策略，放弃了旗舰级显卡市场，RDNA4这一代只有4款显卡——RX 9070 XT/9070、RX 9060 
+XT/9060，而且还有些型号并不在DIY市场流通。
+&lt;/p&gt;                                &lt;/div&gt;
+                                                &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 07 Sep 2025 07:04:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFBoTVN2U0wzcDlUcWR2ZXNoZGlEOWJIbUZJaEFSMVB1YTdmQXRWR3I0M1gyNjdaQlZUT1J2dmZnNURUWmhNTFkyM1MyblBDUkFpZ2FBZkhuaXdZVklm</guid></item><item><title>Intel CEO陈立武亲自督战：每款CPU等芯片必须由他审核批准 - 驱动之家</title><link>https://news.mydrivers.com/1/1072/1072993.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;Intel CEO陈立武亲自督战：每款CPU等芯片必须由他审核批准&lt;/p&gt;
           
