@@ -1415,7 +1415,105 @@ Exynos 2600与A19 Pro速度对比&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 11 Sep 2025 02:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE52b3lZbmRtXzlfVGx6V3hOTWlsY092NEk0OVRFQWhuNU9hWGVIRXhGc3RFdXljeHRZSXJBNTA4SVNNeV9KajR0OGdaLVROTXl5d19xWGtXM1ZMZWpjTXFhR2g3TDhNWW1ZNld6M2dYZDhsSWhGN0M1a0hBMzc</guid></item><item><title>甲骨文“爆裂增长”幕后：OpenAI的5年合同据称价值3000亿美元 - 财联社</title><link>https://www.cls.cn/detail/2141574</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社9月11日讯（编辑 史正丞）&lt;/strong&gt;作为周三全球股市最拉风的个股，老牌科技巨头甲骨文日内一度暴涨超40%，使得创始人拉里·埃里森一度攀上世界首富的宝座。&lt;/p&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 11 Sep 2025 02:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE52b3lZbmRtXzlfVGx6V3hOTWlsY092NEk0OVRFQWhuNU9hWGVIRXhGc3RFdXljeHRZSXJBNTA4SVNNeV9KajR0OGdaLVROTXl5d19xWGtXM1ZMZWpjTXFhR2g3TDhNWW1ZNld6M2dYZDhsSWhGN0M1a0hBMzc</guid></item><item><title>她们估值840亿，刚发了第一个AI成果 - 量子位</title><link>https://www.qbitai.com/2025/09/330325.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article"&gt;
+				     &lt;h1&gt;她们估值840亿，刚发了第一个AI成果&lt;/h1&gt;
+    			   &lt;div class="article_info"&gt;
+             &lt;span class="author"&gt;&lt;img src="http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg" class="avatar avatar-200"&gt;&lt;em&gt;&lt;a href="https://www.qbitai.com/author/luyu" title="由鹭羽发布" rel="author"&gt;鹭羽&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;
+                          &lt;span class="date"&gt;2025-09-11&lt;/span&gt;
+             &lt;span class="time"&gt;10:30:51&lt;/span&gt;
+          &lt;span class="from"&gt;
+          来源：&lt;a href="http://www.qbitai.com" target="blank" rel="nofllow"&gt;量子位&lt;/a&gt;            &lt;/span&gt;&lt;/div&gt;
+                          
+                            			&lt;blockquote class="pgc-blockquote-abstract"&gt;
+&lt;p class="pgc-h-arrow-right" data-track="61"&gt;闻乐 鹭羽 发自 凹非寺&lt;/p&gt;
+&lt;p class="pgc-h-arrow-right" data-track="62"&gt;量子位 | 公众号 QbitAI&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p data-track="2"&gt;刚刚，0产出估值就已冲破120亿美元的Thinking Machines，终于发布&lt;strong&gt;首篇研究博客&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="3"&gt;创始人、OpenAI前CTO Mira Murati亲自宣发，翁荔等一众公司大佬纷纷转推：&lt;/p&gt;
+
+&lt;p data-track="4"&gt;研究主题是“Defeating Nondeterminism in LLM Inference”，&lt;strong&gt;克服大语言模型推理中的不确定性&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="5"&gt;主要讨论的内容就是，为什么大模型每次的推理结果总是难以复现？根源在于批次不变性。&lt;/p&gt;
+
+&lt;p data-track="6"&gt;不鸣则已，一鸣就是万字长文，并且，Thinking Machines还致敬了一波“连接主义”——&lt;/p&gt;
+&lt;p data-track="7"&gt;Mira和她的同事们认为，科学因分享而更加卓越。他们将保持对研究成果的分享，并与研究社区保持频繁、开放的联系。&lt;/p&gt;
+&lt;p data-track="8"&gt;而翁荔在转发推文中，还透露了Thinking Machines的第一代旗舰产品名为&lt;strong&gt;Connection Machine&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p data-track="9"&gt;&lt;s&gt;（CloseAI膝盖又中了一枪）&lt;/s&gt;&lt;/p&gt;
+&lt;h2 class="pgc-h-arrow-right" data-track="10"&gt;击败LLM推理中的非确定性&lt;/h2&gt;
+&lt;p data-track="11"&gt;众所周知，LLM推理中，想要获取可复现结果相当困难，比如说多次向ChatGPT提出相同问题，但结果很有可能不同。&lt;/p&gt;
+&lt;p data-track="12"&gt;即使将采样温度降至0，原则上LLM会选择概率最高的token输出，但实际中此时不确定性仍然存在。&lt;/p&gt;
+&lt;p data-track="13"&gt;过去普遍认为这是因为&lt;strong&gt;浮点非结合性&lt;/strong&gt;和&lt;strong&gt;并发执行&lt;/strong&gt;之间的某种组合导致，即GPU在执行浮点数运算时会出现非结合性，比如(a+b)+c不一定等于a+(b+c)，然后在并行操作中则根据执行顺序的不同，产生不同的结果。&lt;/p&gt;
+&lt;p data-track="14"&gt;但其实这个说法并不完整，如果在GPU上对同一数据重复运行相同的矩阵乘法，却可以始终获得确定的同一结果。&lt;/p&gt;
+
+&lt;p data-track="15"&gt;于是Thinking Machine深入研究后发现，其实罪魁祸首应该是&lt;strong&gt;批次不变性&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="16"&gt;首先浮点数计算存在数值差异的原因确实是浮点数非结合性。&lt;/p&gt;
+&lt;p data-track="17"&gt;因为浮点数本身在编码中，是通过 “尾数×10^指数” 的形式表示，精度有限，所以当两个不同指数的浮点数相加时，就必须调整指数并舍弃部分精度，从而导致一部分信息丢失，所以后续的相加顺序不同才会产生不同的结果，使其不满足结合律。&lt;/p&gt;
+&lt;p data-track="18"&gt;但浮点数为什么会以不同顺序相加呢？&lt;/p&gt;
+&lt;p data-track="19"&gt;究其根源，是因为现在的LLM推理缺乏批次不变性，单个请求的输出受到同一批次中请求数量的影响。&lt;/p&gt;
+&lt;p data-track="20"&gt;主要问题是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li data-track="21"&gt;实际部署中，服务器会随着负载动态调整大模型推理批次的大小，而现有的内核会因批次的变化而改变矩阵乘法、RMSNorm等关键操作的计算顺序或策略；&lt;/li&gt;
+&lt;li data-track="22"&gt;浮点运算的非结合性使不同计算顺序产生微小偏差，这种偏差在Transformer多层迭代中被放大，最终导致相同输入正在不同批次下输出不同，破坏了推理的一致性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p data-track="23"&gt;要解决这一问题，那就需要&lt;strong&gt;让RMSNorm、矩阵乘法、注意力机制分别具备批次不变性&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p data-track="24"&gt;在&lt;strong&gt;RMSNorm&lt;/strong&gt;中，重点就是要固定好每个批次元素的归约顺序而不受批次大小影响，则需要为每个内核分配一个批处理元素，让每次归约操作都能在单个核心中完成。&lt;/p&gt;
+&lt;p data-track="25"&gt;当批大小增大时，核心就会依次处理多个批次元素，而保持归约策略不变；当批大小较小时，则可以自动忽略一些并行性优化措施，虽然效率可能会随之降低，但能保障批次不变性。&lt;/p&gt;
+&lt;p data-track="26"&gt;而&lt;strong&gt;矩阵乘法&lt;/strong&gt;在实际中也与批大小有关，所以可以通过将输出张量拆分为2D块，然后为每个块分配不同的核心。&lt;/p&gt;
+
+&lt;p data-track="27"&gt;其中每个核心计算都属于该块的点积，再在该核心中执行归约操作。&lt;/p&gt;
+&lt;p data-track="28"&gt;但要注重在批维度&lt;em&gt;（M和N）&lt;/em&gt;过小时，可能会被迫沿着归约维度&lt;em&gt;（K）&lt;/em&gt;进行分割，也就是&lt;strong&gt;Split-K矩阵乘法&lt;/strong&gt;，这样做同样会影响归约顺序，另外不同的张量核心指令也会导致结果变化。&lt;/p&gt;
+&lt;p data-track="29"&gt;所以更简单的方法是为所有输入形状编译统一的内核配置，避免因批大小变化切换并行策略或张量核心指令。&lt;/p&gt;
+&lt;p data-track="30"&gt;尽管相较于&lt;strong&gt;CuBLAS&lt;/strong&gt;，这样做可能会损失约20%的性能，但是可接受的。&lt;/p&gt;
+
+&lt;p data-track="31"&gt;而&lt;strong&gt;注意力机制&lt;/strong&gt;则更加特殊，首先它需要更多的归约维度，需要沿着特征维度和序列维度双重归约，一些像分块预填充&lt;em&gt;（chunked prefill）&lt;/em&gt;、前缀缓存&lt;em&gt;（prefix caching）&lt;/em&gt;等推理优化也会改变序列处理方式。&lt;/p&gt;
+&lt;p data-track="32"&gt;所以在注意力内核执行前，首先要&lt;strong&gt;更新KV缓存和页表&lt;/strong&gt;，确保无论序列是否拆分处理&lt;em&gt;（预填充或解码阶段）&lt;/em&gt;，KV的存储布局始终一致，从而保障归约顺序不变。&lt;/p&gt;
+
+&lt;p data-track="33"&gt;沿着KV维度拆分时，也不同于常规策略按照所需并行度均匀拆分KV维度，拆分数量随批大小变化，而是固定每个拆分块的大小&lt;em&gt;（如固定为256）&lt;/em&gt;，拆分数量随KV长度自适应，确保归约顺序不依赖批大小。&lt;/p&gt;
+&lt;p data-track="34"&gt;研究人员也对此进行了三种不同的实验验证，分别是&lt;strong&gt;推理确定性验证&lt;/strong&gt;、&lt;strong&gt;性能验证&lt;/strong&gt;和&lt;strong&gt;真实在线策略强化学习应用验证&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="35"&gt;首先使用&lt;strong&gt;Qwen/Qwen3-235B-A22B-Instruct-2507模型&lt;/strong&gt;，在相同条件下，判断1000个长度为1000 token的结果差异情况。&lt;/p&gt;
+&lt;p data-track="36"&gt;结果发现未使用批次不变性内核时，共生成80个不同结果，前102个token完全一致，但到第103个token则开始分化。&lt;/p&gt;
+&lt;p data-track="37"&gt;如果使用批次不变性内核，则&lt;strong&gt;1000个结果完全相同&lt;/strong&gt;，实现了确定性推理。&lt;/p&gt;
+
+&lt;p data-track="38"&gt;而在性能上，统一使用单GPU部署&lt;strong&gt;Qwen-3-8B&lt;/strong&gt;模型的API服务器，并处理相同问题。&lt;/p&gt;
+&lt;p data-track="39"&gt;结果发现，确定性推理虽存在性能损失，但性能在可接受范围之内，仍然具备实际应用价值。&lt;/p&gt;
+&lt;p data-track="40"&gt;由于训练与推理的数值差异会导致在线策略RL变为离线策略RL，一般需要引入重要性加权等离线校正项才能稳定训练。&lt;/p&gt;
+
+&lt;p data-track="41"&gt;所以通过比对校正前后的数据可以发现，缺乏重要性加权校正时，模型奖励将会在训练中途崩溃，KL散度也会大幅飙升，而校正后，训练变得稳定，KL散度可以维持在0.001左右，偶有波动情况出现。&lt;/p&gt;
+&lt;p data-track="42"&gt;确定性推理则全程保持稳定，&lt;strong&gt;KL散度始终为0&lt;/strong&gt;，实现了真正的在线策略RL，无需离线校正。&lt;/p&gt;
+&lt;h2 class="pgc-h-arrow-right" data-track="43"&gt;大佬云集的Thinking Machine&lt;/h2&gt;
+&lt;p data-track="44"&gt;再来说说Thinking Machine这支&lt;strong&gt;AI梦之队。&lt;/strong&gt;&lt;/p&gt;
+&lt;p data-track="45"&gt;虽然尚未有具体模型产品产出，但是人才和资本都非常豪华，小扎只能干看着，挖也挖不到。&lt;/p&gt;
+&lt;p data-track="46"&gt;掌舵人Mira Murati在2016年加入OpenAI，一路晋升至CTO，主导打造了GPT-3、GPT-4等一系列关键技术开发。&lt;/p&gt;
+
+&lt;p data-track="47"&gt;联合创始人及首席科学家John Schulman是PPO算法的开发者，在强化学习领域举足轻重，还主导了ChatGPT的研发工作。&lt;/p&gt;
+
+&lt;p data-track="48"&gt;Thinking Machine的CTO则是前OpenAI副总裁Barret Zoph，主导了ChatGPT的后训练。&lt;/p&gt;
+
+&lt;p data-track="49"&gt;联创Andrew Tulloch曾经在Meta待了11年，后来进入OpenAI，参与了OpenAI GPT-4o到o系列，和Mira Murati创办Thinking Machine后，面对小扎6年15亿美元的天价薪酬，也丝毫不动摇&lt;/p&gt;
+
+&lt;p data-track="50"&gt;此外，公司还聘请了GPT的开山一作Alec Radford、OpenAI前首席研究官Bob McGrew担任技术顾问。&lt;/p&gt;
+
+&lt;h1 class="pgc-h-arrow-right" data-track="51"&gt;△左Alec Radford右Bob McGrew&lt;/h1&gt;
+&lt;p data-track="52"&gt;更有北大校友、前OpenAI安全团队负责人翁荔加盟，可以说，这支团队约三分之二成员都来自OpenAI。&lt;/p&gt;
+
+&lt;p data-track="53"&gt;前段时间，还有蛛丝马迹表明清华姚班校友陈丹琦也加入了这支团队。&lt;/p&gt;
+
+&lt;p data-track="54"&gt;融资方面，今年6月，Thinking Machines完成了20亿美元的种子轮投资，由a16z领投，英伟达、Accel、ServiceNow、CISCO、AMD、Jane Street等各领域知名机构纷纷跟投。&lt;/p&gt;
+&lt;p data-track="55"&gt;以有史以来最大规模的种子轮融资刷新了AI圈的融资纪录。（虽然传闻中该公司的融资目标只有10亿美元）&lt;/p&gt;
+&lt;p data-track="56"&gt;这轮融资完成后，这家没模型没产品的初创公司估值也达到了120亿美元。&lt;/p&gt;
+&lt;p data-track="57"&gt;这次新研究发布后，翁荔还透露了第一个Thinking Machines产品名为&lt;strong&gt;Connection Machine&lt;/strong&gt;，连接主义。&lt;/p&gt;
+&lt;p data-track="58"&gt;连接主义缘起于上世纪60年代，McCulloch和Pitts提出了人工神经元模型，如今的深度学习可以被视为连接主义的直接延续，当下人工智能中的“神经网络”就是连接主义的实现形式。&lt;/p&gt;
+
+&lt;p data-track="59"&gt;这下网友可坐不住了：先把公司Logo发出来。&lt;/p&gt;
+
+&lt;p data-track="60"&gt;&lt;em&gt;参考链接：&lt;/em&gt;&lt;em&gt;&lt;br&gt;
+&lt;/em&gt;&lt;em&gt;[1]https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/&lt;/em&gt;&lt;/p&gt;
+                
+                
+                &lt;p class="line_font"&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;版权所有，未经授权不得以任何形式转载及使用，违者必究。&lt;/em&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+     		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>量子位</author><pubDate>Thu, 11 Sep 2025 02:30:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTFBXQk42dmN1UDRxX0FsQVpNTFh5NkpVQmt3SjY3MWRaZDJHc0kyZUFiMnMyUVlmRjJFSHlPNF8wbUZNNWhfRWxYbVBJZXVpREFCZ1kzWQ</guid></item><item><title>甲骨文“爆裂增长”幕后：OpenAI的5年合同据称价值3000亿美元 - 财联社</title><link>https://www.cls.cn/detail/2141574</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社9月11日讯（编辑 史正丞）&lt;/strong&gt;作为周三全球股市最拉风的个股，老牌科技巨头甲骨文日内一度暴涨超40%，使得创始人拉里·埃里森一度攀上世界首富的宝座。&lt;/p&gt;
 &lt;p&gt;截至发稿，甲骨文的最新涨幅超过36%，相当于日内市值暴增2510亿美元（约合人民币1.78万亿元）。然而，公司股价暴涨的逻辑基础也在当日晚些时候遭到检验。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://img.cls.cn/images/20250911/644556y5vz_784x564.png" alt="image"&gt;&lt;/p&gt;
 &lt;h3&gt;（甲骨文日线图，来源：TradingView）&lt;/h3&gt;
