@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>单孔胸腔镜微创食管癌切除术中国临床专家共识（2025版）-MedSci.cn - 梅斯医学 MedSci</title><link>https://www.medsci.cn/article/show_article.do?id=8ba089e774da</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="shortcode-content" id="content"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>深度学习在左心室肥厚辅助诊断和预后评估中的应用进展-MedSci.cn - 梅斯医学 MedSci</title><link>https://www.medsci.cn/article/show_article.do?id=a4a3898008e3</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="shortcode-content" id="content"&gt;
+                                                &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt; 摘  要 &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;左心室肥厚是多种心血管疾病的中间表型，早期诊断有助于及时干预，防止病情恶化，减少心力衰竭、心律失常等严重并发症，从而改善预后。深度学习在左心室肥厚的早期诊断和病因识别中取得初步进展。本文介绍左心室肥厚的病理生理学、病因及诊断标准，探讨深度学习在超声心动图、心脏磁共振成像和心电图等诊断方法中的应用优势与局限性，分析其在预后评估中的应用，并总结现有成果和提出未来研究方向。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;正  文&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;根据《左心室肥厚诊断和治疗临床路径中国专家共识2023》[1]，左心室肥厚（left ventricular hypertrophy，LVH）的特征是左心室壁厚度增加，通常是由心脏长期承受过高压力或容量负荷所致，同时LVH可导致严重并发症，如心力衰竭[2]、心律失常[3]、心肌缺血[4]等，因此早期诊断至关重要。此外，LVH的病因复杂，根据其病因和病理机制可以分为以下几类：压力负荷相关LVH，如高血压性心脏病（hypertensive heart disease，HHD）、主动脉瓣狭窄等；浸润性疾病相关LVH，如心脏淀粉样变（cardiac amyloidosis，CA）、法布雷病（Anderson-Fabry disease，AFD）等；遗传性心肌病相关LVH，如肥厚型心肌病（hypertrophic cardiomyopathy，HCM）、Danon病等；药物及运动相关LVH，如长期使用类固醇激素或高强度运动导致的LVH等[5]。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;LVH的早期诊断标准经历了多次技术迭代。最初，心电图（electrocardiogram，ECG）作为主要筛查工具，依赖于电压标准（如Sokolow-Lyon指数：SV1+RV5/RV6男性≥3.5 mV，女性≥3.0 mV；Cornell电压标准：RaVL+SV3男性≥2.8 mV，女性≥2.0 mV[6]）和波形形态判断LVH。然而，该方法特异性较低。随后，超声心动图（echocardiogram，Echo）的出现使定量结构评估成为可能，将左心室壁厚度（舒张末期男性≥12 mm或女性≥11 mm）确立为诊断的金标准[7]。此外，由Echo计算得到的左心室质量指数（男性≥115 g/m2或女性≥95 g/m2）进一步完善了LVH评估标准。随着多模态成像技术越发成熟，心脏磁共振成像（cardiac magnetic resonance imaging，CMR）等高分辨率技术改善了局灶性肥大（如室间隔基底段≥15 mm提示肥厚型心肌病[8]）的检测，并且3D-Echo减少了与2D平面限制相关的测量误差[9]。然而以上诊断都依赖于经验丰富的医师，其手动解读过程耗时且容易出错，因此，基于深度学习的LVH辅助诊断开始涌现。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;近年来，人工智能（artificial intelligence，AI）飞速发展，深度学习逐渐应用于心血管医学领域，如心脏瓣膜病[10]、心力衰竭[11]、冠心病[12]等疾病的诊断中，并凭借出色的特征提取能力对临床上揭示病理的多模态医学影像，如胸部X线（chest X-ray，CXR）、Echo、计算机断层扫描（computed tomography，CT）、CMR、冠状动脉造影等，以及基于时间序列的医学数据，如ECG、心音图（phonocardiogram，PCG）、心脏收缩期-舒张期的影像等，进行自动特征提取以实现心血管疾病的诊断。如今，与LVH相关的基于深度学习的辅助诊断方法已经得到广泛应用，本文对最近几年提出的方法进行综述，探讨各种方法的优势及局限，并为后续研究扩宽视野。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;1 &lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;左心室肥厚概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;LVH是心脏长期高压导致的心肌增厚和结构异常，常见于多种心血管疾病。其核心机制包括心肌细胞增大、排列紊乱及纤维化，进而使心脏舒张功能受损，最终可能引发心力衰竭。早期无明显症状，后期可能出现气促、胸痛、心悸和晕厥。严重LVH会显著增加心律失常（如心房颤动、室性心动过速）和猝死风险。研究[13]表明，LVH患者的心力衰竭风险比正常人高3～5倍，且与全因死亡率显著相关。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;在当前基于深度学习的LVH诊断研究中，Echo通常被用作提供训练标签的临床金标准。于是，研究人员开始将Echo作为金标准，并尝试与患者同期CMR、ECG、CXR以及人口统计学特征进行配对，寻求更加经济便利的方式来诊断LVH。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;2 &lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;深度学习在左心室肥厚辅助诊断中的应用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;深度学习作为机器学习的重要分支，其核心技术在于通过多层人工神经网络架构实现特征的自适应分层提取，突破了传统算法依赖人工设计特征的局限性[14]。该技术自2017年起在医学领域快速渗透，尤其在处理高维度、非线性医学数据方面展现出显著优势[15]。其核心价值体现在通过端到端的学习机制解析多模态医学数据间的复杂关联，例如在CT图像中自动识别肺结节形态特征[16]，或对糖尿病视网膜病变血管进行分割和重建[17]等。同样，深度学习通过结合Echo、CMR、ECG、CXR等在早期诊断LVH中也发挥着重要作用[18]。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;2.1   联合超声心动图在左心室肥厚诊断中的应用&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Echo是一种安全、无创的诊断方式，通过二维成像结合M型超声精准评估左心室壁厚度，诊断LVH的敏感性显著高于ECG和CXR，是目前诊断的金标准[19]。然而，其诊断结果依赖于医师经验，对于普通医师，诊断仍然存在困难。因此，开发辅助诊断系统来帮助医师识别LVH至关重要，Hwang等[20]提出的卷积神经网络（convolutional neural network，CNN）-长短期记忆网络（long-short term memory，LSTM）模型通过整合Echo的5个视图（PLAX、PSAX、A4C、A2C和A3C），结合CNN提取图像空间特征和LSTM捕捉心动周期的时间序列信息，实现了对HHD、HCM和心脏轻链型淀粉样变性的高效鉴别，测试集平均曲线下面积（area under the curve，AUC）分别达0.962、0.982和0.996，总体诊断准确率达到92.3%，显著超越专家80%的准确率。此类多模态数据整合策略在Yu等[21]的多任务框架中进一步优化，其基于ResNet和U-net++的模型通过融合PLAX与A4C视图特征，同步完成视图分类、LVH检测及病因识别3个任务，且AUC分别达到1.0、0.98和0.91。此外，Grad-CAM显示模型重点关注A4C视图中的心室区域，PLAX视图中的室间隔区域。针对数据标注成本高的挑战，Holste等[22]开发了自监督学习框架Echo CLR，通过对比学习和帧重排序任务预训练模型，利用无标注超声视频提取时序特征，微调后在LVH分类任务中AUC达0.723。同样在数据受限条件下，Farhad等[23]提出的Siamese网络则创新性地结合零样本学习与少样本学习，通过距离阈值分类策略，将诊断精度提升8%～11%，显著优化了医疗数据稀缺场景下的模型表现。在解剖学特征量化方面，Duffy等[24]利用临床医师标注的室间隔厚度、左心室内径等关键参数在PLAX图像上训练改进的DeepLabv3架构，结合3D Resnet-18分析A4C视频，预测CA和HCM的AUC分别达0.83和0.98。Xu等[25]首次引入心肌时频域分析，采用Res U-Net分割室间隔并提取静态和动态放射组学特征，通过逐点门控玻尔兹曼机（PGBM）融合时频域特征后，采用支持向量机（support vector machine，SVM）进行分类，模型在HCM与尿毒症性心肌病诊断中的AUC达0.91，揭示了心肌运动频域特征对病因鉴别的独特价值。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;虽然深度学习在Echo辅助诊断LVH进展显著，但由于Echo结果依赖于医师经验以及设备性能，易导致数据偏差；其次，对于特殊患者群体的适用性受限，如肥胖、慢性阻塞性肺疾病或胸廓畸形的患者；再者，Echo检查成本高致使临床数据稀缺，公开数据匮乏，且现有多数研究基于单中心数据，使得模型泛化能力难以得到充分验证。未来需通过多中心数据整合扩大样本量，或融合其他临床数据特征来提升模型泛化能力。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;2.2   联合心脏磁共振成像在左心室肥厚诊断中的应用&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;准确诊断LVH的难点在于区分HCM、AFD、CA等病因。Echo对心肌微观病变的敏感性有限，难以区分各种病因的特异性改变。相比之下，CMR能通过心肌组织参数来区分LVH[26]，如T1 mapping[27]和细胞外容积（extracellular volume，ECV）mapping[28]，其中AFD的T1值降低，CA的T1值和ECV会显著升高。但CMR在全球普及率低，且不同设备参数标准不一。因此，研究人员探索基于Cine-CMR的深度学习方案以弥补不足。Chen等[29]首次提出一种基于3D ResNet18架构的深度学习模型，该模型通过分析SAX视图的Cine-CMR动态序列，实现无需心肌组织参数的分类。首先，采用3D卷积核捕获心肌运动在时空维度上的动态特征；其次，通过多阶段训练策略优化模型对LVH形态学差异的敏感性；最后，结合注意力机制强化对心肌基底段特征的学习，在区分AFD与HCM时AUC值达到0.92，但该研究缺乏其他视图的特征信息。为有效融合多视图信息，Germain等[30]基于VGG16网络构建双通道输入框架，以Cine-CMR 3种视图2CH、4CH、SAX的舒张期和收缩期作为输入，通过CNN提取心脏动态运动的空间特征，并融合双分支特征进行二元分类。该设计突破了传统单时间点分析的局限，提高了对心肌收缩-舒张周期特征的捕捉能力。同时，模型准确率与AUC分别提升至82.5%和0.895。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;对心脏结构进行有效分割，有助于诊断LVH并区分病因。Yan等[31]在传统SegNet基础上使用深度可分离卷积替代普通卷积，并引入金字塔池化增强模型对全局信息的感知能力，实现对SAX图像中心脏结构的高精度分割，以分类LVH、心肌梗死、心力衰竭。改进SegNet模型的灵敏度和特异度分别为0.889、0.965，Dice系数为0.878。此外，显著性映射表明模型识别区域为左心室边界和心肌区域，与临床医师经验一致，增强了模型的可解释性。在基于Cine-CMR的自动化诊断研究中，针对CA、HCM及HHD的诊断技术已取得阶段性进展，但仍面临3D空间信息与动态特征融合的挑战。Diao等[32]提出多通道全自动心肌分割和病因诊断框架，采用Res-Unet网络对CMR 3个视图2CH、4CH、SAX的感兴趣区域（ROI）进行全自动心肌分割，Dice系数达0.945，验证了模型对解剖结构的高效解析能力。在此基础上，通过循环神经网络（recurrent neural networks，RNN）提取心肌运动的时空形态特征，捕捉舒张期至收缩期的动态变化规律，从而模拟临床医师对心脏功能时序演变的评估逻辑。最后利用SVM整合结果，在外部测试集中总体分类准确率达77.4%，AUC达0.983。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;当前深度学习通过CMR诊断LVH时，3D空间信息与动态时间序列的融合仍面临效率与精度不足的问题，未来应开发更高效的时空融合架构，如Transformer结合3D CNN[33]，Transformer与RNN、LSTM相比，其在处理时间序列数据时具有更高的灵活性和准确性[34]。此外，对于不同设备的参数差异导致模型性能波动，可以开发基于域自适应[35]或联邦学习[36]算法，减少设备间差异对模型的影响。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;2.3   联合心电图在左心室肥厚诊断中的应用&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;ECG作为一种安全、经济且便捷的筛查工具，在LVH诊断中具有广泛的应用前景。然而，传统的ECG诊断标准在实际应用中与真实LVH的匹配率较低，因此研究人员希望通过深度学习探索新的标准来提高诊断准确性[37]。首先，Gupta等[38]通过变分自编码器提取ECG特征，结合多种机器学习模型，显著提高LVH的诊断准确性。其中，基于ECG特征和变分自编码器潜在编码的LGBM模型表现最佳，AUC达0.790，表明基于机器学习的模型优于传统ECG诊断标准。Siontis等[39]在国际队列中检测HCM，使用CNN搭建AI-ECG模型，将10 s的12-lead ECG转换为12×5 000的矩阵，并通过CNN提取特征，输出ECG属于HCM患者的概率，模型AUC为0.922，表明模型能够有效区分HCM与其他病因引起的LVH。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;针对单一ECG特征的表征局限性，Kokubo等[40]采用双分支模型集成多模态数据，CNN提取12-lead ECG时序特征，DNN整合患者人口统计学参数，并通过集成神经网络融合双分支特征，诊断LVD和LVH的AUC分别达到0.810和0.784，优于机器学习方法及传统ECG诊断标准。此外，Grad-CAM表明模型关注V5和V6导联的QRS波。Ryu等[41]同样将12-lead ECG特征与人口统计学参数进行多模态融合，提出名为CoAt-Mixer的架构，该架构融合自注意力机制与CNN的优势，构建多模态特征分析系统。研究显示不同性别群体在LVH预测模型中的响应特征存在显著统计学差异，为个性化诊断提供了新的技术路径。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;此外，在个性化诊断领域，儿童ECG因右心室优势、QRS波群时限较窄、胸导联电压高等年龄依赖性特征[42]，导致成人模型直接迁移时性能受限。Mayourian等[43]基于波士顿儿童医院92 377对ECG-Echo数据，构建了12-lead CNN模型。该模型在儿童LVH检测中的测试集平均AUC达0.86，阴性预测值均超过99%，表明其在高危病例筛查中具备临床实用性。对ECG特征分析显示，模型主要关注心前区QRS波和T波特征，其中外侧T波倒置（左心室功能障碍）、V1/V2深S波与V6高R波（LVH）、V4-V6高R波（左心室扩张）被识别为高危标志。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;传统的LVH诊断依赖于12-lead ECG，而6-lead ECG在便携式设备中更为常见，具有更高的临床应用潜力。Dwivedi等[44]将6-lead ECG的中值搏动信号输入到DNN模型，通过CNN和ResNet自动提取ECG特征，最终AUC达0.92，接近12-lead DNN模型的表现。此外，ECG特征分析表明模型在检测任务中主要依赖于R波振幅和QRS波，与临床诊断标准一致，但相对而言，存在胸导联特征遗漏问题。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;传统ECG诊断依赖医师标注，存在主观偏差，Khurshid等[45]使用CMR作为诊断的金标准，通过计算左心室质量指数为模型提供高质量标签。模型在UK Biobank测试集中揭示V5导联对LVH预测贡献度达97.4%，其关注区域与QRS波早期电活动高度相关。而Soto等[46]则使用电子健康记录（EHR）中的临床血压测量数据和HCM中心的诊断共识作为训练标签，避免医师标注的主观偏差。构建了双通道模型，使用ResNet-34提取ECG电生理特征，r2plus1d_18提取Echo形态学特征，通过晚期特征融合策略，模型特异性达到0.96。此外，SHAP可解释性分析进一步表明，模型决策依赖于ECG中V3导联及T波倒置、Echo中的室间隔厚度。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;虽然ECG获取相对简单，但多数模型依赖CMR或Echo等金标准标注，患者需要满足同期内做过ECG和Echo或CMR检查才能作为训练样本，使得此类数据获取成本高且存在机构间差异，制约模型的泛化能力。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;2.4   联合胸部X线在左心室肥厚诊断中的应用&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;最近的研究表明，深度学习可以通过Echo、CMR和ECG诊断LVH。然而，使用CXR检测心脏病理的方法有限。于是，Bhave等[47]开发了基于CXR的自动化检测工具，以检测与B期或更严重心力衰竭相关的LVH以及左心室扩张。同样使用Echo作为金标准，并与同期内的CXR配对，以生成高质量训练标签。模型使用DenseNet-121提取CXR图像特征，并在最后一层加入患者性别和年龄组合产生的单个数据向量，模型输出Echo测量值，包括室间隔舒张末期厚度、左心室舒张末期内径、左心室后壁舒张末期厚度，并基于测量值计算左心室肥厚、左心室扩张和复合标签的概率，其中平均AUC分别为0.79、0.80、0.80，实现了71%的灵敏度，模型性能优于放射科医师的表现。此外，LayerCAM表明模型的较浅层网络对心脏轮廓和左心室结构敏感，而较深层网络对心脏整体轮廓敏感。由此可知，探索CXR在LVH诊断中的应用同样具有临床意义。LVH诊断方法总结见表1。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;img class="" src="https://img.medsci.cn/images/20250914/8fd2266a60fb42efa9cec9a9041355c8-xVQDDWupVOuS.jpg" alt="图片" data-imgfileid="523060032" data-ratio="1.412962962962963" data-s="300,640" data-src="https://img.medsci.cn/images/20250914/8fd2266a60fb42efa9cec9a9041355c8-xVQDDWupVOuS.jpg" data-type="jpeg" data-w="1080" data-original-style="vertical-align: middle;max-width: 100%;width: 100%;box-sizing: border-box;" data-index="6" data-report-img-idx="7" data-fail="0"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;img class="" src="https://img.medsci.cn/images/20250914/5aa57d7e6e054c348c00faba8046ba72-0k1hkT3bD1HD.jpg" alt="图片" data-imgfileid="523060031" data-ratio="0.32685185185185184" data-s="300,640" data-src="https://img.medsci.cn/images/20250914/5aa57d7e6e054c348c00faba8046ba72-0k1hkT3bD1HD.jpg" data-type="jpeg" data-w="1080" data-original-style="vertical-align: middle;max-width: 100%;width: 100%;box-sizing: border-box;" data-index="7" data-report-img-idx="8" data-fail="0"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;３ &lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;深度学习在左心室肥厚预后中的应用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;在LVH的预后中，深度学习通过整合多维度临床特征与影像参数，展现出精准风险分层的潜力。现有研究[48]表明，通过无监督聚类分析可识别不同临床表型，并对患者结局进行预测。其中，Loutati等[49]将左心室质量增加患者分为4类，与不同的临床结局显著相关。研究揭示了性别与合并症对预后的影响，合并症少的女性预后优于合并症多的男性。Allegra等[50]将包括AL型、ATTRv型、ATTRwt型以及未明确诊断为CA的患者队列分为7个聚类：聚类1主要包含AL-CA患者，其特征为低整体纵向应变和左心室射血分数以及低电压，预后较差；聚类2～4主要为ATTRwt型患者，具有不同的心血管风险因素和生化功能参数，预后差异显著，其中聚类2的患者预后最差，生存率仅为20%；ATTRv型患者均匀分布在聚类2～4和聚类6中，反映了不同TTR变体的表型差异；非CA患者则主要分布在聚类5～7中，其中聚类7的患者具有代谢性心脏病的特征，4年死亡率为31%。结果表明，LVH预后与CA类型、心血管风险因素和生化功能参数密切相关，不同聚类之间的预后差异显著。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Hwang等[51]使用AI自动测量ECV来改善预后，在AL-CA患者中显示出显著的预后能力。研究[52]表明，ECV≥40%的患者发生心血管死亡和心力衰竭住院的风险显著增加（校正HR=4.247，P=0.024）。即使使用重新修订的Mayo分期，ECV的预后价值仍然显著（校正HR=6.324，P=0.004）。同时，将ECV与Mayo分期系统结合，能够显著改善AL-CA患者的风险分层。ECV≥40%且处于Mayo分期Ⅳ期的患者预后最差，而ECV＜40%且处于Mayo分期Ⅲ期的患者预后最好。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;对于异质性较大的患者群体，未来可以继续探索机器学习在心血管疾病风险分层中的应用，同时引入深度学习技术来改善预后，推动个体化预后模型的构建。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;4 &lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;总结与展望&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;深度学习逐渐应用到LVH辅助诊断和预后中，并展现出显著优势，不仅提升了诊断的准确性和效率，而且为个性化治疗和风险分层提供了新的工具。然而，其广泛应用仍面临数据质量、模型泛化能力、临床验证和计算资源等挑战。未来的研究应重点放在：（1）多中心数据集的构建：为有效解决数据匮乏、模型泛化能力差的问题，应该促进医院、研究机构之间的数据共享，构建多中心的LVH数据集，可以结合区块链技术[53]来创建和管理患者的各项临床数据，同时确保数据的准确性、完整性和隐私性，这对于LVH患者的长期管理和跟踪至关重要。并通过联邦学习技术，在保护患者隐私的前提下，利用多中心数据训练模型，提高模型的泛化能力。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;（2）融合多模态数据特征：影像数据、基因组数据和临床数据等多模态信息在LVH诊断中提供丰富的特征，涵盖心脏结构、功能、遗传背景和临床表型等多个方面[54]。通过整合这些多模态信息，可以显著提高LVH的诊断准确性、病因鉴别能力和预后评估水平，为患者提供更精准的个性化诊疗方案。未来，随着深度学习技术的发展，多模态数据的融合将进一步推动LVH的早期筛查和精准医疗[55]。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;（3）应用于实际生活：单导联ECG设备结合深度学习算法已展现出在可穿戴设备中筛查LVH的潜力。Sato等[56]证实此类模型能有效识别早期心脏结构异常，为动态监测提供新路径。同步采集PCG与ECG的可穿戴设备可全面评估心脏电机械活动，吴丹等[57]通过logistic回归分析发现，经心动周期校正的电-机械耦联时间和第四心音是LVH的独立预测因子，这一发现为可穿戴设备的无创风险评估提供了定量化参数支持。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;（4）革新LVH的研究范式：将深度学习与全基因组关联研究（GWAS）进行有效结合，用以解析复杂心血管表型。Yuan等[58]采用全卷积神经网络分割CMR的SAX图像，量化心尖部和室间隔质量，实现大规模图像的高通量分析，解决了传统方法难以精准量化区域性肥厚的问题。通过对总LVH、心尖部质量、室间隔质量分别进行GWAS及多基因风险评分，最终揭示心尖肥厚的独特遗传机制，未来可探索潜在的LVH相关基因。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;总之，推动深度学习在LVH中的进一步研究，可以提高早期筛查效率与准确性；优化多模态数据整合，有利于LVH病因鉴别，同时改善风险分层与预后评估。此外，将深度学习应用于可穿戴设备可实现LVH无创风险评估以及动态检测。另外，未来可以将深度学习与基因分析相结合，揭示LVH潜在病理基因。&lt;/span&gt;&lt;/p&gt;
+                                                
+                                            &lt;/div&gt;
+
+                                            &lt;p class="detail-look-tip"&gt;
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            &lt;/p&gt;
+
+                                        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>梅斯医学 MedSci</author><pubDate>Sat, 20 Sep 2025 04:03:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE1xVmhHcTBSYUw2TEYxT2J2anFIMzdKQnFtSEdUb0RMcG9ITUxyOVd1UUpxN0tFaW1aUFlVUkktbGd5cWxTWHVzcXVObUxYYVl0Q2RqOEU3YzdqZ2ZlbTJaNnpCV0V0OEU2b0ZUZ3NR</guid></item><item><title>单孔胸腔镜微创食管癌切除术中国临床专家共识（2025版）-MedSci.cn - 梅斯医学 MedSci</title><link>https://www.medsci.cn/article/show_article.do?id=8ba089e774da</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="shortcode-content" id="content"&gt;
                                                 &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt; 摘  要 &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;随着微创技术的不断进步与发展，单孔胸腔镜微创食管癌切除术（uniportal thoracoscopic minimally invasive esophagectomy，UTMIE）因其具有创伤小、切口美观、疼痛减轻等诸多显著优势，在食管癌外科治疗领域的应用范围逐渐扩大。本共识基于国内外最新的循证医学证据以及众多专家丰富的临床实践经验，系统梳理和总结了UTMIE的适应证范围、关键技术要点、学习曲线特点、围术期综合管理策略以及并发症的预防和处理方法等内容。为了确保共识的科学性和权威性，特别邀请了83位该领域的专家，通过德尔菲函询法进行了多轮深入讨论和意见征询，最终达成了24项推荐意见的共识。该共识的制定旨在规范和指导UTMIE在临床实践中的标准化应用，在确保安全性和提高疗效的前提下进一步推动其更加高效和广泛的发展。&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;正  文&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1448,111 +1499,4 @@
 &lt;p class="shenhe"&gt;三审：谭登&lt;/p&gt;
 &lt;p class="content_source"&gt;来源：华声在线·网站&lt;/p&gt;
         &lt;/div&gt;
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华声在线</author><pubDate>Fri, 19 Sep 2025 06:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiX0FVX3lxTE5sd3ZtNkRWSmppSm04QTBWVTR1SXE0bVJEc0NuOVVwakRtczdudTRDRnpyazFTb2E1U0dEbTRhMmt5blJldWFUS2k2UWRIcE1tcVZLTmJzX0JNelJ0VVp3</guid></item><item><title>接触者追踪对HIV系统发育流行病学推断影响的识别研究 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-9/20250919082613346.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Virus Evolution》：Identifying Impacts of Contact Tracing on HIV Epidemiological Inference from Phylogenetic Data&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本文推荐研究人员开展关于接触者追踪（Contact Tracing）对HIV系统发育推断影响的研究。通过开发SEEPS模拟器，团队发现接触者追踪会导致系统发育树结构失衡、降低对整体流行病的代表性，并影响内部/外部枝长比。该研究发表于《Virus Evolution》，为分子流行病学中采样偏差的校正提供了重要工具和理论依据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;在传染病防控领域，接触者追踪（Contact Tracing）一直是公共卫生应对策略的核心手段，特别是在HIV/AIDS等重大传染病的防控中发挥着关键作用。然而，这种非随机采样方式对病原体分子进化研究的影响却长期被忽视。传统的系统发育推断方法通常假设样本是随机采集的，但实际工作中，许多病毒序列正是通过接触者追踪获得的，这种有偏采样（Biased Sampling）是否会影响我们对疫情传播动态的准确推断，成为亟待解答的科学问题。&lt;/p&gt;
-&lt;p&gt;由Michael D. Kupperman、Ruian Ke和Thomas Leitner*组成的研究团队在《Virus Evolution》发表了创新性研究成果。他们开发了名为SEEPS（Sequence Evolution and Epidemiological Process Simulator）的新型模拟平台，首次实现了对接触者追踪过程的完整模拟，包括传播树重建、病原体系统发育树生成和病毒基因序列演化。特别重要的是，SEEPS在模拟过程中考虑了宿主内进化（Within-Host Evolution）对系统发育重建的影响，这使得模拟结果更加贴近真实世界情况。&lt;/p&gt;
-&lt;p&gt;研究团队发现，接触者追踪会显著改变系统发育树的结构特征：使树结构更不平衡（Sackin's index增高）、降低对整体流行病的代表性（2-label parsimony score降低），并影响内部/外部枝长比（I/E branch length ratios）这一关键流行病学指标。这些发现警示我们，忽略采样偏差可能导致对疫情传播动态的错误解读。&lt;/p&gt;
-&lt;p&gt;为了验证模拟结果的可靠性，研究人员分析了真实的HIV-1 CRF01流行数据，包括2007-2008年瑞典注射吸毒者聚集性疫情和更广泛的1998-2010年欧洲流行数据。结果显示，瑞典疫情数据表现出强烈的接触者追踪特征，而欧洲整体流行数据则符合随机采样模式，这与已知的流行病学背景完全一致。&lt;/p&gt;
-&lt;p&gt;本研究的技术方法主要包括：SEEPS模拟器开发（基于R语言）、传播动力学模拟（考虑急性感染期传播增强效应）、接触者追踪算法实现（基于广度优先搜索的随机化发现过程）、系统发育树统计分析方法（Sackin's指数、2-label parsimony score、I/E枝长比）以及真实HIV-1序列的系统发育重建（使用PhyML v3软件，GTR+I+G模型）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.1 接触者追踪影响系统发育树整体结构&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;通过SEEPS模拟发现，接触者追踪会显著改变系统发育树的拓扑结构。高强度的接触者追踪（p=0.9）会产生高度不平衡的树结构，表现为Sackin's指数显著高于Yule模型预期值，而这种影响在考虑宿主内进化后更为明显。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.2 接触者追踪使系统发育树更不平衡&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对44,000个传播树和系统发育树的分析表明，接触者追踪水平与树结构不平衡度存在直接关联。高接触者追踪水平使Sackin's指数显著提升，这表明采样方式直接影响我们对疫情传播模式的判断。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.3 基于接触者追踪的树对整体流行病的代表性&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;通过2-label parsimony score分析发现，接触者追踪降低了样本对整体流行病的代表性。两个时间点的采样比较显示，接触者追踪强度越高，样本代表整体疫情结构的能力越差，这种效应在R&lt;sub&gt;0&lt;/sub&gt;值较高时更为明显。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.4 平均内部/外部枝长比受接触者追踪影响&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;研究发现接触者追踪显著影响I/E枝长比，这一指标反映了样本间的近期进化关系。高接触者追踪条件下，I/E比值随时间推移持续增长，而在无接触者追踪时该比值保持相对稳定。采样延迟会使I/E比值降低约10%。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.5 真实数据中可观察到接触者追踪效应&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对欧洲HIV-1 CRF01数据的实证分析证实了模拟结果的可靠性。瑞典疫情数据的最佳拟合接触者追踪发现概率为p=0.6，而欧洲整体流行数据则符合低接触者追踪模式（p≤0.1），这与实际情况完全吻合。&lt;/p&gt;
-&lt;p&gt;该研究通过理论模拟和实证分析证实，接触者追踪作为非随机采样策略，会显著影响基于系统发育的流行病学推断。SEEPS模拟器的开发为评估采样偏差的影响提供了强大工具，有助于提高分子流行病学研究的准确性。研究结果强调，在进行疫情传播动态分析时，必须考虑样本采集方式的影响，否则可能导致对传播模式、疫情规模和进化历史的错误解读。特别是在HIV等重大传染病的防控中，准确理解接触者追踪对系统发育推断的影响，对于制定科学的防控策略具有重要意义。&lt;/p&gt;
-&lt;p&gt;这项研究不仅填补了接触者追踪与系统发育推断交叉研究领域的空白，也为未来开发更稳健的系统发育分析方法奠定了理论基础。随着病原体基因组 surveillance 的广泛应用，SEEPS模拟器将成为评估和校正采样偏差的重要工具，推动分子流行病学研究向更加精确和可靠的方向发展。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 19 Sep 2025 04:42:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1EOUFTUmJzV2YzdEYwWGhwWjJHczFMNmw3VUliUDczZHhLcldJdWlyNnprS3N1NGVMVWE1V3dCbjFYUXVmQnN0VjV1ZnZCY2JaWDEtM3VaaENzS2ZSOFZDM3ZoV3ZzSnJZMFZfag</guid></item><item><title>M1 Nos1+神经元在运动学习及脑卒中后运动功能恢复中的关键作用 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-9/20250919082543531.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Cell Reports》：Nos1+ neurons are critical for motor learning and post-stroke motor recovery&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本期Cell Reports推荐南京医科大学朱东亚团队的研究：为解决脑卒中后运动功能障碍恢复难题，研究人员聚焦于初级运动皮层（M1）中表达神经元型一氧化氮合酶（nNOS/Nos1）的神经元，通过多学科技术手段揭示其在运动学习中的特异性激活及对神经可塑性、脑血流和神经网络振荡的调控作用，并证明激活该类神经元或使用一氧化氮（NO）供体可显著促进脑卒中后的运动功能恢复，为临床康复提供了新策略。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;脑卒中作为全球致残率最高的神经系统疾病，其导致的运动功能障碍严重影响患者生活质量。虽然急性期治疗手段不断进步，但大多数患者仍面临长期运动功能缺损的困境。当前康复治疗手段未能充分挖掘运动功能恢复的潜力，因此开发新型治疗策略迫在眉睫。运动学习作为恢复丧失运动功能的基本策略，其神经机制成为研究重点。初级运动皮层（M1）在感觉运动整合、自主运动精确控制以及运动技能学习中发挥核心作用，其中皮层特异性环路连接模式虽已明确，但细胞类型特异性对运动学习的响应机制尚不清晰。特别值得注意的是，神经元型一氧化氮合酶（nNOS，基因名Nos1）阳性神经元在突触可塑性和长时程记忆形成中起重要作用，但其在M1介导的运动学习及卒中后恢复过程中的具体功能仍未被阐明。&lt;/p&gt;
-&lt;p&gt;为深入探究这一问题，南京医科大学朱东亚、林玉辉及徐秀梅团队在《Cell Reports》上发表了最新研究成果。研究人员综合运用了转基因动物模型（包括Nos1-Cre与报告基因小鼠杂交）、病毒追踪技术（逆向及顺向腺相关病毒AAV）、在体钙信号光纤记录、膜片钳电生理、在体双光子显微成像（用于树突棘重塑和脑血流分析）、场电位记录、行为学测试（单颗粒抓取任务、旋转棒测试、网格行走和滚筒任务）、分子生物学以及转录组学分析等多种关键技术方法，样本来源于健康及脑卒中模型小鼠。&lt;/p&gt;
-&lt;p&gt;研究首先通过特异性标记和操控M1中Nos1+与Nos1-神经元，发现抑制Nos1+而非Nos1-神经元的活动会显著损害小鼠在单颗粒抓取任务和旋转棒任务中的运动学习表现，表明Nos1+神经元的激活对运动技能的获得和维持至关重要。进一步的钙成像结果显示，只有在成功抓取颗粒时，M1 Nos1+神经元才被特异性激活，而其兴奋性也在运动学习后选择性增强。&lt;/p&gt;
-&lt;p&gt;在机制探索层面，研究表明运动学习能显著增加M1内NO水平。利用条件性基因敲除技术特异性敲低M1的nNOS，或局部施用NO清除剂C-PTIO，均会损害运动学习，证实了nNOS衍生的NO在该过程中的必要性。病毒追踪实验揭示，M1 Nos1+神经元主要构成支配前肢运动的皮质脊髓束（投射至颈髓C5-C7节段前角）和皮质纹状体投射，而Nos1-神经元虽也投射至纹状体，但很少投射至颈髓前角，这种远程投射模式的差异可能是Nos1+神经元选择性调控运动学习的解剖学基础。&lt;/p&gt;
-&lt;p&gt;研究还发现，激活M1 Nos1+神经元能比激活Nos1-神经元引发更强的M1第5层锥体神经元树突棘重组，同时显著增加局部脑血流（CBF）并增强皮层低频θ和β振荡活动。转录组分析提示，Nos1+神经元的激活涉及学习、记忆和突触可塑性相关基因的上调，并且其活动对于纹状体突触可塑性（如LTP）至关重要。&lt;/p&gt;
-&lt;p&gt;将研究延伸至疾病模型，团队发现在脑卒中后亚急性期（第15至30天），M1区nNOS活性持续下降，但其蛋白表达量不变。在卒中修复期（第15-21天）通过化学遗传学手段特异性激活M1 Nos1+神经元，能显著促进小鼠运动功能的恢复，改善其在单颗粒抓取、网格行走和滚筒任务中的表现；反之，抑制其活动则加重功能缺损。进一步机制探讨表明，激活Nos1+神经元可逆转卒中引起的M1兴奋性降低、兴奋性突触传递减弱以及树突棘丢失，并改善M1至对侧皮层、同侧纹状体和对侧颈髓等远端靶区的功能可塑性。&lt;/p&gt;
-&lt;p&gt;基于上述机制，研究团队测试了NO供体治疗的潜力。在卒中后修复期局部施用S-亚硝基谷胱甘肽（GSNO）或口服单硝酸异山梨酯（IM），不仅能促进小鼠和大鼠的运动功能恢复，还能帮助动物回忆卒中前已学会的精细运动技能，且治疗剂量下未影响心率和血压。&lt;/p&gt;
-&lt;p&gt;综上所述，该研究确立了M1 Nos1+神经元作为一类关键的皮质脊髓神经元，通过nNOS-NO信号通路，整合调控运动学习相关的树突棘重塑、局部脑血流和网络振荡活动，是运动学习及其记忆巩固的细胞基础。研究进一步揭示了卒中后自发性功能恢复受限的部分原因在于Nos1+神经元活性降低，而通过化学遗传学手段激活该类神经元或使用NO供体进行干预，可有效促进卒中后的运动功能恢复。这些发现不仅深化了对运动学习神经环路的理解，更重要的是为开发以NO信号系统为靶点的脑卒中康复治疗新策略提供了坚实的实验依据和转化前景。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 19 Sep 2025 04:42:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE94dm45ZHpRNWZObmMzbDF5WTlBYmdDZ3lJRDluTU5uak5kNXVFMTd4djc2d0NoMXZnVFBmU2xxcUQ5U1JwQUZYUE9vcEhIdUc0RGJNWEE5dXRldzA0clV1YmxNRHJ2LXNuYVBjdw</guid></item><item><title>法医毒理学前沿：TIAFT第61届年会研究成果与技术创新 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-9/20250919082614442.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本期《Journal of Analytical Toxicology》特别刊聚焦法医毒理学领域最新突破，汇集TIAFT年会的400余项研究成果。研究者通过质谱分析、代谢组学等技术，深入探讨新型精神活性物质（NPS）的检测方法、中毒机制与临床干预策略，为药物滥用防治、司法鉴定和公共健康政策提供关键科学依据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;在全球化与药物滥用问题日益复杂的背景下，新型精神活性物质（New Psychoactive Substances, NPS）的不断涌现对公共健康安全和司法鉴定体系提出了严峻挑战。这些物质不仅化学结构多样、代谢途径复杂，且常规毒理学检测方法难以实现精准识别，导致临床中毒病例诊断延误和司法证据链完整性受损。2023年在瑞士圣加伦举办的国际法医毒理学家协会（The International Association of Forensic Toxicologists, TIAFT）第61届年会，汇集了全球765名专家学者，通过400余场学术报告展示了该领域的最新研究进展与方法学创新。本期《Journal of Analytical Toxicology》的TIAFT特刊即是对该会议科学成果的系统梳理与发表。&lt;/p&gt;
-&lt;p&gt;为系统推进毒物鉴定与机制研究，研究人员运用高效液相色谱-高分辨质谱（HPLC-HRMS）、液相色谱-串联质谱（LC-MS/MS）和气相色谱-质谱（GC-MS）等分析技术，结合体外代谢模型和回顾性案例研究，对生物样本中的药物及其代谢物进行定性与定量分析。部分研究采用代谢组学策略筛选潜在生物标志物，另一些则通过体外酶促反应评估NPS的代谢通路。样本来源包括人体尸检材料、临床中毒病例生物样本以及实验室模拟代谢产物。&lt;/p&gt;
-&lt;p&gt;一、新型精神活性物质的检测与分析方法创新&lt;/p&gt;
-&lt;p&gt;研究通过优化样品前处理流程和色谱分离条件，建立了多种NPS及其代谢物的高灵敏度检测方法。例如，采用LC-QTOF-MS（液相色谱-四极杆飞行时间质谱）实现了血样中多种合成大麻素的同时筛查，检测限达到ng/mL级别。该方法在实际案件样本中成功检测出此前未被报告的代谢产物，为相关中毒案件的鉴定提供新依据。&lt;/p&gt;
-&lt;p&gt;二、代谢途径与生物转化机制研究&lt;/p&gt;
-&lt;p&gt;利用人肝微粒体体外孵育模型及重组酶实验，多项研究揭示了NPS如卡西酮类、苯乙胺类物质的代谢图谱，明确了CYP450酶系（如CYP2D6、CYP3A4）在羟基化、N-脱烷基等关键反应中的作用，并建立起代谢产物与母体药物之间的定量关系。这些结果有助于解释毒物动力学特性和毒效持续时间的个体差异。&lt;/p&gt;
-&lt;p&gt;三、中毒案例的回顾性研究与法医学应用&lt;/p&gt;
-&lt;p&gt;基于多国合作的案例汇总分析，研究团队系统评估了NPS相关死亡案件中毒物浓度分布、多药联用情况及其与病理结果的相关性。其中涉及芬太尼类似物、苯二氮?新型衍生物等物质的混合中毒成为突出趋势。该部分成果为制定血液中毒物浓度参考值和判定死因提供了实证依据。&lt;/p&gt;
-&lt;p&gt;四、质量保证与标准化实践&lt;/p&gt;
-&lt;p&gt;部分论文聚焦于实验室间比对、方法验证标准和定量分析质量控制方案，提出了基于同位素内标和标准操作程序（SOP）的优化策略，显著提升了检测结果的可比性与可靠性，尤其在复杂生物基质背景下抗干扰能力得到增强。&lt;/p&gt;
-&lt;p&gt;本研究系列通过多技术融合与跨地域合作，显著提升了法医毒理学在药物滥用监测、中毒机制解析与司法鉴定实践中的应对能力。所建立的高灵敏度分析方法为NPS的快速筛查与确认提供了可靠工具；代谢机制的阐明则为临床解毒干预和毒性评估奠定理论基础。此外，大规模样本的统计分析和标准化实践推动了该领域质量保证体系的国际化与规范化进程。这些成果不仅体现了TIAFT在全球毒理学领域的学术领导力，也为未来应对新型毒物挑战提供了科学技术支撑和政策建议。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 19 Sep 2025 04:42:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFA5WC0wUnl4NWZDYmE4VWhpTjMyUUJCTk1IMWJESlliVDN5NUxWMjRVTUZzaDBfV2Q5RXNkdXgzM1RKSVc0Vk9vVUd0eHJRTjF0VUtCZzQyYkU4UW1xNTd0U010bWthUENXOUxVcg</guid></item><item><title>肿瘤抑制蛋白p53调控人类滋养层谱系发育的新机制及其在生殖与癌症中的双重意义 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-9/20250919082528273.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Cell Reports》：Tumor suppressor protein p53 governs human trophoblast lineage development&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　Cell Reports期刊推荐：本研究针对p53在人类胚胎发育和生殖健康中的未知功能，利用人多能干细胞模型揭示p53通过调控细胞周期状态决定滋养层细胞命运倾向的新机制。研究发现p53缺失导致滋养层干细胞分化潜能失衡，合体滋养层发育缺陷而绒毛外滋养细胞侵袭性增强，为理解p53在胚胎植入、胎盘发育及肿瘤转移中的双重作用提供重要依据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;在人类胚胎发育的早期阶段，受精卵经过一系列精细调控的细胞分裂和分化过程，最终形成包含内细胞团（ICM）和滋养层（TE）的囊胚。滋养层细胞进一步分化为构成胎盘的各类滋养层细胞，包括细胞滋养层细胞（CTBs）、合体滋养层（STBs）和绒毛外滋养细胞（EVTs）。这些细胞共同承担着胚胎植入、母胎界面建立、激素分泌和免疫调节等关键功能。胎盘发育异常会导致子痫前期、胎儿生长受限等严重妊娠并发症，但调控滋养层谱系发育的分子机制尚未完全阐明。&lt;/p&gt;
-&lt;p&gt;肿瘤抑制蛋白p53（由TP53基因编码）作为最著名的抑癌基因，在细胞应激响应、DNA损伤修复、细胞周期阻滞和凋亡等过程中发挥核心作用。近年来研究发现，p53在胚胎发育、干细胞分化和生殖过程中也扮演重要角色。p53缺失的小鼠表现出多种胚胎发育缺陷甚至植入失败，携带p53基因单核苷酸多态性（SNP）的患者也显示植入率降低。然而，p53如何影响人类滋养层发育及其在细胞命运决定中的具体作用机制仍不清楚。&lt;/p&gt;
-&lt;p&gt;为了解决这些问题，香港大学刘宝陶（Pentao Liu）团队与广州医科大学附属第三医院刘见桥（Jianqiao Liu）团队合作，在《Cell Reports》发表了题为"Tumor suppressor protein p53 governs human trophoblast lineage development"的研究论文。研究人员主要利用人多能干细胞（hPSCs），特别是具有胚胎和胚外发育潜能的扩展潜能干细胞（hEPSCs），结合基因编辑、单细胞多组学分析和功能实验，系统揭示了p53在人类滋养层谱系发育中的关键调控作用。&lt;/p&gt;
-&lt;p&gt;研究采用的主要技术方法包括：利用CRISPR/Cas9基因编辑技术构建TP53敲除的干细胞模型；通过体外定向分化体系获得滋养层干细胞（hTSCs）及其分化后代；采用单细胞RNA测序（scRNA-seq）解析细胞异质性和发育轨迹；通过染色质免疫共沉淀测序（ChIP-seq）和ATAC-seq分析表观遗传调控机制；使用Transwell实验评估细胞侵袭能力；并利用人类早期胚胎和胎盘组织进行免疫荧光验证。&lt;/p&gt;
-&lt;p&gt;研究发现，p53在人类植入前胚胎中高表达，抑制p53活性会导致胚胎发育停滞，并伴有滋养层特异性标记物CDX2和GATA3表达下调。在干细胞模型中，TP53敲除的hEPSCs（TP53KO-hEPSCs）虽然维持多能性，但在向滋养层分化过程中表现出明显的缺陷：滋养层基因表达显著降低，人绒毛膜促性腺激素（hCG）分泌减少，囊胚样类胚体（BAP-EB）的植入能力受损。&lt;/p&gt;
-&lt;p&gt;通过单细胞转录组分析，研究人员发现p53缺失导致滋养层分化过程中羊膜细胞特征基因表达上调，而滋养层谱系基因表达下调，表明p53可能参与调节滋养层与羊膜谱系之间的命运抉择。更重要的是，从TP53KO-hEPSCs建立的滋养层干细胞（TP53KO-hTSCs）虽然表达典型的滋养层干性标记物（如TP63、ELF5），但其双向分化潜能严重失衡。&lt;/p&gt;
-&lt;p&gt;在分化功能上，TP53KO-hTSCs完全丧失形成多核合体滋养层（STBs）的能力，表现为STB标记基因（CGB、ERVW-1、SDC1）表达缺陷、hCG分泌不足和细胞融合障碍。相反，p53缺失并不影响绒毛外滋养细胞（EVTs）的分化效率，但显著增强其增殖和侵袭能力。TP53KO-EVTs表现出与人类癌症细胞相似的转录组特征，包括细胞粘附、迁移和免疫调节相关基因的富集。&lt;/p&gt;
-&lt;p&gt;研究人员进一步通过scRNA-seq将hTSCs分为三个亚群：TSC-1（富集STB祖细胞特征）、TSC-2（典型CTBs）和TSC-3（富集EVT祖细胞特征）。p53缺失导致TSC-1群体几乎完全消失，TSC-3群体显著扩增，表明p53通过调节细胞身份影响滋养层命运倾向。&lt;/p&gt;
-&lt;p&gt;机制上，p53通过介导细胞周期状态调控滋养层命运决定。在正常hTSCs中，向STB命运分化的细胞主要停滞在G1期，而向EVT命运分化的细胞分布在所有细胞周期阶段。p53缺失导致细胞周期进程加速，G1期细胞减少，S/G2M期细胞增加。使用CDK4/6抑制剂帕博西尼（palbociclib）处理TP53KO-hTSCs，强制诱导G1期阻滞，可部分恢复STB祖细胞相关基因表达并抑制EVT祖细胞基因表达，证明p53通过调控细胞周期状态影响细胞命运抉择。&lt;/p&gt;
-&lt;p&gt;表观遗传学分析发现，p53缺失导致hTSCs中染色质开放性和组蛋白修饰发生显著改变。STB相关基因位点（如CGB基因簇、FOSL1）的活跃组蛋白标记（H3K27ac、H3K4me3）减少，而抑制性标记（H3K27me3）增加；相反，EVT关键转录因子（如ASCL2、IRX4）位点则呈现活跃染色质状态，为p53调控滋养层命运决定的表观遗传机制提供了证据。&lt;/p&gt;
-&lt;p&gt;研究结论表明，p53是人类滋养层发育的多阶段调控因子：在植入前胚胎中促进滋养层谱系特化；在滋养层干细胞中维持双向分化潜能；通过调控细胞周期状态决定STB与EVT的命运平衡；并通过表观遗传机制抑制EVTs的过度侵袭性。这些发现不仅揭示了p53在人类生殖和胚胎发育中的新功能，也为理解p53在正常发育与肿瘤抑制中的双重作用提供了重要连接——滋养层细胞特别是EVTs的侵袭行为与肿瘤转移具有相似性，p53在其中的抑制作用可能代表了一种进化上保守的机制，既保障正常胎盘发育，又防止异常侵袭行为。&lt;/p&gt;
-&lt;p&gt;该研究的发现对理解人类不孕症、胎盘相关妊娠并发症以及p53在癌症发生发展中的作用具有重要意义，为相关疾病的诊断和治疗提供了新的思路和靶点。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 19 Sep 2025 04:42:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9mc1h6RGJYMnZFb1pOR1JZN0gycWlVRHhOWllvVWJ1dVdvYjl4OFlYRjd6M0NaVzREbWx4S2N2dWVmRzVqZGtqUFZNZW9fbTN0RG95clRsamtoUnJYZi1YdmRLYVY2ZFlvVnJQeA</guid></item></channel></rss>
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华声在线</author><pubDate>Fri, 19 Sep 2025 06:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiX0FVX3lxTE5sd3ZtNkRWSmppSm04QTBWVTR1SXE0bVJEc0NuOVVwakRtczdudTRDRnpyazFTb2E1U0dEbTRhMmt5blJldWFUS2k2UWRIcE1tcVZLTmJzX0JNelJ0VVp3</guid></item></channel></rss>
