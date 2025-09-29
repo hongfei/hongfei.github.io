@@ -1,5 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>华为拟明年生产约60万枚昇腾910C芯片 产量约为今年两倍 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20250929-%E5%8D%8E%E4%B8%BA%E6%8B%9F%E6%98%8E%E5%B9%B4%E7%94%9F%E4%BA%A7%E7%BA%A660%E4%B8%87%E6%9E%9A%E6%98%87%E8%85%BE910c%E8%8A%AF%E7%89%87-%E4%BA%A7%E9%87%8F%E7%BA%A6%E4%B8%BA%E4%BB%8A%E5%B9%B4%E4%B8%A4%E5%80%8D</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>“10倍速度，0倍理解？”AI代写代码的那些坑 - 36Kr</title><link>https://m.36kr.com/p/3487494049913734</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;blockquote&gt;
+   &lt;p&gt;2025 年，AI 编程助手已经能在几秒钟内写出成百上千行代码，看起来好像能把开发效率提升好几倍。但真实情况并没有那么简单——写代码只是软件开发的一小部分，理解需求、设计架构、测试验证、团队协作才是大头。而 AI 的加入，让这些环节既更快，也更容易出问题。本文作者将探讨，如何把这些“超高速的初级工程师”用得聪明，让速度真正转化为能用、靠谱的软件。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;如果你观察过别人“写代码”的过程，可能就会发现他们花在“发呆”上的时间比敲键盘的时间还多。当然，也不要想太多，这些程序员大概率不是在偷懒。毕竟软件开发本质上就是一种解决问题的过程，就像解复杂的填字游戏一样，真正的工作大多发生在脑子里。&lt;/p&gt;
+  &lt;p&gt;在整个软件开发生命周期中，写代码只是往填字游戏里填字母——相对来说只是很小的一部分。更多的精力其实用在周边工作上：开发者需要先理解业务领域，逐步明确需求，设计合适的抽象结构，思考各种副作用，一点点测试新功能，最后还要消灭在过程中漏网的 bug。&lt;/p&gt;
+  &lt;p&gt;日常来看，写代码的实际情况就是这样的：&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,284" src="https://img.36krcdn.com/hsossms/20250929/v2_5f4c7f64844244a49d88fbc93b323d84@46958_oswg36516oswg1080oswg284_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;但是，当 AI 介入写代码时，情况就完全不一样了。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;“先写代码，问题以后再说”&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;像 Claude Code 这样的 AI 编程助手，可以非常快地单独生成代码。但大多数软件并不是孤立存在的，而是运行在复杂系统中。由于大模型（LLM）还没法一次性记住一个应用的全部上下文，因此，人工的审查、测试和集成仍然不可或缺。问题在于，当代码是 AI 写出来而不是人边思考边写时，这些后续工作会变得更难。结果就是，在复杂软件里，开发者常常要花更多时间去“事后理解”AI 写出来的代码。&lt;/p&gt;
+  &lt;p&gt;换句话说，是“先写代码，再去理解”。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,215" src="https://img.36krcdn.com/hsossms/20250929/v2_0665f46f79b54f2ca2f185ac65676dd3@46958_oswg36197oswg1080oswg215_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这也正是为什么营销宣传里常说 AI 编程能“使得编码速度提升 10 倍”，但现实中开发者真正交付可用软件时，效率提升往往只有 10% 左右。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,335" src="https://img.36krcdn.com/hsossms/20250929/v2_6812df52c45f4240b3dc48c9e8373be5@46958_oswg71728oswg1080oswg335_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;更让人沮丧的是，开发者花的时间越来越多是在“善后”。AI 可以飞快地生成那些有趣、简单的部分，而留给人的则是那些又繁琐又不讨喜的工作：测试保证旧功能没被破坏、清理重复代码、写文档、搞部署和运维……真正能用来写代码的时间反而更少了。&lt;/p&gt;
+  &lt;p&gt;不过，好消息是：虽然 AI 让这个问题更明显，但它本质上并不罕见。事实上，这只是一个老问题的新说法，我称之为：&lt;strong&gt;“技术负责人的两难”。&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;“技术负责人的两难”&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;随着工程师资历增长，很多人会成为技术负责人。有的会带团队，有的则是资深工程师，不管有没有管理职责，他们的任务都是确保团队的技术交付。通常来说，他们也是团队里经验最丰富的人——无论是职业年限、专业领域，还是两者兼具。&lt;/p&gt;
+  &lt;p&gt;软件交付需要团队协作，但“经验差距”会让不同成员的产出效率相差很大。于是，技术负责人在交付中往往面临两种选择：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;公平分工 &lt;/strong&gt;——把任务合理分给团队成员，让新人有学习和成长的机会，但这样进度可能会被最慢的人拖住。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;自己兜底&lt;/strong&gt;——把难活、关键任务都揽下来，让新人只做简单部分。这样交付速度确实快，但相当于把团队“惯坏”了。&lt;/p&gt;
+  &lt;p&gt;虽然第二种做法（自己兜底）对长期团队发展非常有害，但短期内确实能提升交付速度。因为资深工程师的产出效率就是更高。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,484" src="https://img.36krcdn.com/hsossms/20250929/v2_1b89b6bf3e2a4cadbedb0596da173799@46958_oswg113976oswg1080oswg484_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;我在职业生涯中无数次看到这种情况。但代价也很明显：经验和知识过度集中在 Tech Lead 身上，团队变得脆弱、支持难度加大，最后 Tech Lead 压力爆棚，不是倦怠就是离职，结果团队陷入危机。&lt;/p&gt;
+  &lt;p&gt;短期收益，长期失败。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,695" src="https://img.36krcdn.com/hsossms/20250929/v2_924a678a4c1a4ba998a72253e86563d6@46958_oswg107706oswg1080oswg695_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;所以，真正的解法往往不是这两个极端，而是找到平衡点：既保证交付，又让团队成长。可以用一句话来总结：&lt;/p&gt;
+  &lt;p&gt;通过合理的团队实践，让每位工程师都能在可控框架里写出能运行的代码，减少返工、提升协作，同时获得学习和成长的机会。&lt;/p&gt;
+  &lt;p&gt;在我担任 Datasine 的 CTO 时，我们甚至把这种理念提炼成了一个团队口号：&lt;/p&gt;
+  &lt;p&gt;学习。交付。享受过程。&lt;/p&gt;
+  &lt;p&gt;一个好的 Tech Lead，会让工程师接触到足够有挑战的工作，同时通过合适的流程和实践来降低交付风险，让每个人都能在实战中成长。这其实就是优秀技术领导力的本质。&lt;/p&gt;
+  &lt;p&gt;要做到这一点，有很多方法：既可以是严格的规则体系（比如极限编程 XP），也可以是更灵活的“最佳实践”，比如：&lt;/p&gt;
+  &lt;ul&gt;
+   &lt;li&gt;代码评审&lt;/li&gt;
+   &lt;li&gt;小步快跑，逐步交付&lt;/li&gt;
+   &lt;li&gt;模块化设计&lt;/li&gt;
+   &lt;li&gt;测试驱动开发（TDD）&lt;/li&gt;
+   &lt;li&gt;结对编程&lt;/li&gt;
+   &lt;li&gt;高质量文档&lt;/li&gt;
+   &lt;li&gt;持续集成&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;那么，对于今天的资深工程师来说，一个迫切的问题就是：&lt;strong&gt;如何把这些行之有效的实践方法带入 AI 编程的新时代？&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;LLM 就像“闪电般的初级工程师”&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;到了 2025 年，很多工程师首次面临每位技术主管常遇到的挑战：如何管理一位聪明但难以预测的初级工程师。如何让这样的“天才”融入团队合作、发挥价值，是技术领导者的一大挑战。不过，AI 编程助手和新人工程师不一样，它们的产出方式、成长模式有着本质差异。&lt;/p&gt;
+  &lt;p&gt;对人类工程师来说，经验的积累往往带来多方面的提升：写出更健壮的代码，使用更合理的抽象，更少花时间修 bug，更快理解复杂架构，更好覆盖边界情况，更早发现重复模式……简而言之，既提高了&lt;strong&gt;质量&lt;/strong&gt;，也提高了&lt;strong&gt;速度&lt;/strong&gt;。一个优秀的工程师，往往会在这两个方向上同时进步。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,682" src="https://img.36krcdn.com/hsossms/20250929/v2_569642bfc457413f92cb38478b308f56@46958_oswg78221oswg1080oswg682_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;早期的大模型（LLM）写代码很快，但因为 bug 多、容易“胡编”，要花很多时间去修复，整体交付反而慢。随着模型更智能、上下文管理和工具更完善，如今的 AI 编程助手能“一次写对”的几率大大提升。它们能非常快地产出一些中级工程师都要费力才能解决的代码，但距离资深工程师的水平还有差距。&lt;/p&gt;
+  &lt;p&gt;所以，我们可以把现在的 AI 编程助手看作“超高速的初级工程师”，但有两个关键不同点：&lt;/p&gt;
+  &lt;p&gt;速度远超新人 ——AI 生成代码不受思考或打字速度的限制。&lt;/p&gt;
+  &lt;p&gt;不会真正学习——它们不会像人类一样逐渐成长，只能靠更好的提示工程或新模型来提升。&lt;/p&gt;
+  &lt;p&gt;就像带新人一样，我们对待 AI 也有两种用法，取决于是看重短期还是长期：&lt;/p&gt;
+  &lt;p&gt;AI 驱动的工程实践：遵循最佳实践，确保人类对代码的理解，放慢一点节奏，追求长期可持续的开发。&lt;/p&gt;
+  &lt;p&gt;“Vibe coding”式快写：完全不管三七二十一，快速写出代码，牺牲理解来换速度，最后不可避免地陷入一团乱麻。&lt;/p&gt;
+  &lt;p&gt;结果可想而知：&lt;strong&gt;Vibe coding 的结局就和团队里“自己兜底”的做法一样——短期有用，长期必然失败。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,652" src="https://img.36krcdn.com/hsossms/20250929/v2_1dbd9847452246d5a4f5fffcc1e3cc44@46958_oswg114817oswg1080oswg652_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;因此，Vibe coding 适合小项目或一次性原型。这类应用足够简单，可以不用太多思考就让 AI 独立完成。但一旦遇到更复杂的软件，AI 就无法单独应对了。做原型比以往任何时候都容易。 &lt;/p&gt;
+  &lt;p&gt;但如果我们想让 LLM 真正帮助交付复杂、安全、稳定的软件，而不是只带来有限的效率提升，就需要一本新的“工程手册”，专门指导如何让人类和 AI 团队协同合作。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;如何避免 AI 编程陷阱&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;AI 编程工具的使用确实有利于程序员高产，但是它们对你的业务、代码库或产品规划一无所知。倘若没人对这些进行把关，AI 工具绝对会毫不犹豫地生成成千上万行代码，却不顾设计一致性或可维护性。&lt;/p&gt;
+  &lt;p&gt;工程师的任务，就是当好这些“神速新人”的技术负责人：提供结构、标准和流程，把原始速度转化为可持续的交付能力。&lt;/p&gt;
+  &lt;p&gt;我们需要一套全新的工程实践，来高效交付可运行的软件。而回顾过去的经验，能帮助我们找到答案。只要把 LLM 当作“闪电般的初级工程师”，我们就能借鉴软件开发生命周期里的最佳实践，构建真正可扩展的系统。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,497" src="https://img.36krcdn.com/hsossms/20250929/v2_844cac2f4d9c437d99d97db9277fc0f8@46958_oswg119629oswg1080oswg497_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;AI 可以融入开发生命周期的每一个阶段：&lt;/p&gt;
+  &lt;ul&gt;
+   &lt;li&gt;需求：帮助探索、分析和细化需求，覆盖边界情况，聚焦核心功能。&lt;/li&gt;
+   &lt;li&gt;文档：提前生成并审查文档，提供可复用的约束和持久的记录。&lt;/li&gt;
+   &lt;li&gt;模块化设计：搭建模块化架构，控制上下文范围，提升可理解性。&lt;/li&gt;
+   &lt;li&gt;测试驱动开发（TDD）：先生成大量测试用例，引导实现并防止回归。&lt;/li&gt;
+   &lt;li&gt;编码规范：通过上下文提示，让代码生成遵循团队风格和最佳实践。&lt;/li&gt;
+   &lt;li&gt;监控与分析：AI 能比人更快分析日志、提取洞察。&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;只要我们明白，写代码只是软件交付的一部分，就能避免掉进“AI 编程陷阱”，真正放大我们的能力，打造高效、可扩展的软件。&lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/uUva82tqUA1dNILzTV3B4Q"&gt;“CSDN”&lt;/a&gt;，作者：Chris Loy，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Mon, 29 Sep 2025 14:29:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFA5Y1ZzTVVZdHFlTFF5RnAxYTZyVUNYempUZDh1VnRudlkwdUU3d2V0S3lWdVhNZUlvS2dPaTRwcW1rT2VvTDZfTlQ4anJuZw</guid></item><item><title>弹出福建舰，变身“机器人”！歼-35战机机甲重磅亮相 - 腾讯网</title><link>https://news.qq.com/rain/a/20250929A085LB00</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="comps-contentify-wrap comps-contentify-pc-wrap comps-contentify-arbitrary-wrap"&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;极目新闻记者 涂梦蝶 陈倩&lt;/p&gt;&lt;p&gt;摄影记者 刘中灿&lt;/p&gt;&lt;p&gt;见习记者 杨绍杭 李梁玉&lt;/p&gt;&lt;p&gt;9月29日，首届国防科技工业文化创意产业博览会在武汉国际博览中心盛大开幕。在这场汇聚军工重器的盛会上，一架以歼-35战机为原型设计的炫酷机甲重磅亮相，成为全场焦点，生动展现了国防科技与文化创意的深度融合。&lt;/p&gt;&lt;p&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/O-XAznBAWXaszALcvYijYW1tSSDnnVs8X4Gyswqh9fzFYAA/641" data-src="https://inews.gtimg.com/om_bt/O-XAznBAWXaszALcvYijYW1tSSDnnVs8X4Gyswqh9fzFYAA/641" alt="图片"&gt;&lt;span class="img_desc" title="注意：此处为图说区域，编辑正文区域需将光标定位在正文区域"&gt;歼-35战机机甲&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;展区前，这架威武的机甲吸引了众多观众驻足。许多“大朋友”纷纷掏出手机，寻找最佳角度与它合影；不少小朋友更是兴奋不已，有的因为机甲过于高大，被父亲高高托起在肩头，只为一睹其全貌，现场洋溢着惊叹与自豪的氛围。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/O4qYBP-b9fEsX5fOqvhs0yR7npEdyByL4fobSzBgMDAicAA/641" data-src="https://inews.gtimg.com/om_bt/O4qYBP-b9fEsX5fOqvhs0yR7npEdyByL4fobSzBgMDAicAA/641" alt="图片"&gt;&lt;span class="img_desc" title="注意：此处为图说区域，编辑正文区域需将光标定位在正文区域"&gt;歼-35战机机甲&lt;/span&gt;&lt;/p&gt;&lt;p&gt;此次展出的歼-35机甲，其原型是我国自主研制的新一代隐身舰载战斗机。作为一款以制空作战为主、兼顾对面攻击的多用途战机，歼-35是人民海军迈向“远海防卫”的标志性装备，也是全球第三款隐身舰载机。就在本月22日，中国海军刚宣布歼-35与&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;歼-15T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;、空警-600在福建舰上成功完成电磁弹射起飞训练，标志着&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;福建舰&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;已初步形成全甲板作业能力。&lt;/p&gt;&lt;p&gt;首届国防军工文博会不仅展示了国之重器的硬核实力，更通过创新的文创形式，将高精尖的国防科技转化为公众可感、可知、可互动的文化体验，极大地激发了社会各界的民族自豪感和爱国热情。&lt;/p&gt;&lt;p&gt;（来源：极目新闻）&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>腾讯网</author><pubDate>Mon, 29 Sep 2025 13:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTFBxZndoVWozbXdfU29oRF9kVU54QW5WQ2txVXRCbWNOaU1qUU5OZ2NUR1UwNWg5R0xSdHJUTDVqQWlQa3hCZExJTmd2YzRONzZyTktMbXNR</guid></item><item><title>华为拟明年生产约60万枚昇腾910C芯片 产量约为今年两倍 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20250929-%E5%8D%8E%E4%B8%BA%E6%8B%9F%E6%98%8E%E5%B9%B4%E7%94%9F%E4%BA%A7%E7%BA%A660%E4%B8%87%E6%9E%9A%E6%98%87%E8%85%BE910c%E8%8A%AF%E7%89%87-%E4%BA%A7%E9%87%8F%E7%BA%A6%E4%B8%BA%E4%BB%8A%E5%B9%B4%E4%B8%A4%E5%80%8D</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
                         华为正准备在明年大幅提升其最先进人工智能芯片的产量，力争在全球最大半导体市场赢得客户，而竞争对手英伟达正艰难应对地缘政治逆风。        &lt;/p&gt;
     
     
@@ -604,7 +681,105 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 29 Sep 2025 08:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMinAFBVV95cUxPZkFIOFY4RU5mV1NpQmVHUWYzd0d1ZEt0MFI3azVBcEc5N2ZWY3owQS1UajhkR0YzSVVISmN3QVh6bzJRUzZLekxqclVVSFhwWWF6ZGhsQUtzYmFhNWdYTWtpWGdEUWIwNkl1WVZUZWRiRTBySlZPSTBRUmdpZW9xNTZMYnRaczdLdDVGUW4tRTFTUGxyY2tnUGtvdUo</guid></item><item><title>特斯拉技术员被机器人打成重伤，索赔 5100 万 - OSCHINA</title><link>https://www.oschina.net/news/375237</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 29 Sep 2025 08:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMinAFBVV95cUxPZkFIOFY4RU5mV1NpQmVHUWYzd0d1ZEt0MFI3azVBcEc5N2ZWY3owQS1UajhkR0YzSVVISmN3QVh6bzJRUzZLekxqclVVSFhwWWF6ZGhsQUtzYmFhNWdYTWtpWGdEUWIwNkl1WVZUZWRiRTBySlZPSTBRUmdpZW9xNTZMYnRaczdLdDVGUW4tRTFTUGxyY2tnUGtvdUo</guid></item><item><title>美股初代科技七巨头看似已过时 AI时代新的股票组合有望取而代之 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2025-09-29/doc-infsecqp1763859.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　华尔街最强大的股票组合科技七巨头（Mag Seven）看起来有点过时了，给“八大巨头”（Great Eight）让路吧，或者“黄金十二强”（Golden Dozen），再或者是“生成式AI十巨擘”（TenAI of GenAI）。&lt;/p&gt;
+&lt;p&gt;　　自OpenAI的ChatGPT让人工智能走到全球经济的舞台中心以来，已有将近三年时间，而且推动一个交易主题主导美国股市：买入科技七巨头。英伟达、&lt;span id="usstock_MSFT"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/MSFT.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;微软&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_MSFT"&gt;&lt;/span&gt;、&lt;span id="usstock_AAPL"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/AAPL.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;苹果&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_AAPL"&gt;&lt;/span&gt;、Alphabet、&lt;span id="usstock_AMZN"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/AMZN.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;亚马逊&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_AMZN"&gt;&lt;/span&gt;、Meta Platforms和&lt;span id="usstock_TSLA"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/TSLA.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;特斯拉&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_TSLA"&gt;&lt;/span&gt;，在互联网时代以来最大的技术变革中，这七只股票被视为给投资者带来巨额回报的最佳选择。&lt;/p&gt;
+&lt;p&gt;　　虽然这一切基本已经实现，但在走向全球主导地位的路上，发生了一件有趣的事情。AI交易以意想不到的方式扩张，甚至超越了市场青睐的几家大型科技公司。“科技七巨头”贡献了标普500指数自2023年初以来逾70%涨幅中的逾半壁江山，但基于这个组合的投资策略也让投资者错过了一些有望在AI未来蓬勃发展的公司，比如博通、&lt;span id="usstock_ORCL"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/ORCL.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;甲骨文&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_ORCL"&gt;&lt;/span&gt;和Palantir。&lt;/p&gt;
+&lt;p&gt;　　“七巨头在移动、互联网和电子商务等技术周期中获胜，但并不意味着他们会在这方面也胜出，”Artisan Partners旗下Antero Peak Group的投资组合经理Chris Smith表示。“下一批赢家将是那些通过AI来应对庞大且不受约束的市场的公司，未来它们将成为比如今七巨头更大的公司。”&lt;/p&gt;
+
+&lt;p&gt;　　这并不是说初代七巨头消逝，它们几乎占据了标普500指数35%的权重，预计其盈利将在2026年增长15%以上，收入增速料为13%。除七巨头之外的标普500指数其他成分股预计明年利润将上涨13%，收入将增长5.5%。&lt;/p&gt;
+&lt;p&gt;　　不过，七巨头成员的股价表现存在分化。英伟达、Alphabet、Meta和微软被认为在AI领域占据有利地位，股价今年上涨了21%至33%不等，但另一方面，苹果、亚马逊和特斯拉的前景则不那么明朗，而且股价表现严重落后。&lt;/p&gt;
+&lt;p&gt;　　Smith表示：“很难将目前的七巨头视为AI领域的最佳代表。”&lt;/p&gt;
+&lt;p&gt;　　因此，华尔街一直在对这一主题进行各种调整，以捕捉真正的赢家。一些人将其精简为英伟达 、微软、Meta 和亚马逊这四巨头。Seaport Research首席股票策略师Jonathan Golub建议移除特斯拉，创立“六巨头”标签。Melius Research分析师Ben Reitzes等人则更倾向于在七巨头基础上加上芯片制造商博通，命名“八大巨头”，按市值计算，博通目前是美国市值第七大公司。&lt;/p&gt;
+&lt;p&gt;　　但这些都无法覆盖整个人工智能行业。例如，随着与AI相关的云计算业务蓬勃发展，甲骨文股价今年上涨了75%以上。Palantir是迄今为止&lt;span id="usstock_.IXIC"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/.IXIC.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;纳斯达克&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_.IXIC"&gt;&lt;/span&gt;100指数中表现最佳个股，受市场对其AI软件的需求强劲推动，该股2025年以来已飙升135%。&lt;/p&gt;
+&lt;p&gt;　　“一家公司可能会变得太大而无法忽视，”富达投资全球宏观部门主管Jurrien Timmer表示，其参与管理16.4万亿美元的资产。“随着人工智能的发展，即使之前的赢家继续表现良好，新的赢家也可能取代旧的赢家。”&lt;/p&gt;
+
+&lt;p&gt;　　七巨头的概念在华尔街并不新鲜，他们喜欢创建一系列热门股票标签，以便投资者更轻松地理解市场，从1960年代的“漂亮50”（Nifty Fifty），到互联网时代的纳斯达克“四骑士”（Four Horsemen），再到本世纪初智能手机和人工智能时代盛行的“FAANG”。然而，这些巨头虽然一度占据主导地位，但最终会被其他新公司所取代，这似乎是人工智能领域势必会出现的趋势。&lt;/p&gt;
+&lt;p&gt;　　有迹象表明华尔街的眼光不再局限于七巨头，Cboe Global Markets Inc．推出基于芝加哥期权交易所十大公司（Magnificent 10）指数的期货和期权，该指数包括初代七巨头以及博通、Palantir和Advanced Micro Devices Inc．。&lt;/p&gt;
+&lt;p&gt;　　该指数表明了这种做法的主观性。芝加哥期权交易所于9月10日宣布了这一消息，当时甲骨文录得了自1992年以来的最大单日涨幅，该公司凭借其强劲的预测巩固了作为人工智能主要赢家的地位。自2023年初以来，甲骨文的股价表现一直强于七巨头中的大部分，但它仍然未能跻身芝加哥期权交易所的十大公司指数之列。&lt;/p&gt;
+&lt;p&gt;　　“我们确实需要将讨论范围扩大到七巨头以外，”一位管理着约347亿美元投资策略的资产组合经理Nick Schommer表示。“甲骨文现在肯定是其中的一部分，博通也是。”&lt;/p&gt;
+&lt;p&gt;　　芝加哥期权交易所拒绝出面谈论该指数的编制方法，但在宣布十大公司的新闻稿中说 ，成员股的选出“基于流动性、市场价值、交易量以及在人工智能和数字化转型等领域的领导力”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;　　下一代领军者&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　华尔街专家列出了下一代领军者的诸多潜力股，其中有一些公司被谈及的频率尤其高。与甲骨文和博通一样，&lt;span id="usstock_TSM"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/TSM.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;台积电&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_TSM"&gt;&lt;/span&gt;也被视为人工智能生态系统的重要组成部分。此外，Palantir被认为是人工智能软件中为数不多的赢家之一，昔日领头羊&lt;span id="usstock_CRM"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/CRM.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;Salesforce&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_CRM"&gt;&lt;/span&gt;和奥多比等公司有种被甩在后面的感觉。&lt;/p&gt;
+&lt;p&gt;　　至于哪些股票不再出色这个问题，苹果和特斯拉最常被提及。苹果没有产生与其他科技巨头相同的增长水平，而且它在人工智能方面被认为远远落后。与此同时，随着销售下滑、竞争激烈，特斯拉的电动汽车业务面临沉重压力。&lt;/p&gt;
+&lt;p&gt;　　但这两家公司在股市里仍有大批信徒，押注时机成熟时它们会加入大潮。对于苹果来说，筹码是iPhone将成为大量消费者使用人工智能的平台。特斯拉投资者希望首席执行官马斯克推动自动驾驶和仿人机器人业务来带动未来增长，而这两项业务都需要人工智能的参与。&lt;/p&gt;
+&lt;p&gt;　　从人工智能中受益的行业也越来越多，其中包括电力企业、人工智能基础设施建设的其他行业，例如通信设备公司Arista Networks Inc．、存储芯片制造商&lt;span id="usstock_MU"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/MU.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;美光&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_MU"&gt;&lt;/span&gt;科技、存储公司&lt;span id="usstock_WDC"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/WDC.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;西部数据&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_WDC"&gt;&lt;/span&gt;、Seagate Technology和&lt;span id="usstock_SNDK"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/SNDK.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;SanDisk&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_SNDK"&gt;&lt;/span&gt;等。&lt;/p&gt;
+&lt;p&gt;　　锁定人工智能行业的另一个挑战是有几家关键公司是非上市公司。OpenAI可能会出现在任何AI赢家名单上，但对大多数投资者来说，这家公司无法企及。据报道，OpenAI为现任和前任员工的股票二次出售进行初步谈判，对公司的估值可能约5000亿美元。Anthropic和SpaceX也没有上市。&lt;/p&gt;
+&lt;p&gt;　　随着人工智能的推广渗透，受益者可能会从促进崛起的公司转变为提供人工智能特定服务和产品的公司，最后变成利用人工智能来提高效率和增长的企业。这种转变可能会决定人工智能的最终赢家，不管华尔街最终会给它们冠以什么样的名头。&lt;/p&gt;
+&lt;p&gt;　　富达的Timmer表示，“随着这种演变的发生，人工智能热潮中的领头羊可能会变得估值昂贵，它们的增&lt;span id="usstock_CKHUY"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/CKHUY.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;长和&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_CKHUY"&gt;&lt;/span&gt;现金流可能不再看起来那么好，交易将开始在边际磨损。市场集中的问题在于，随着领头羊的热度减弱，我们可能会面临颠覆性的变革。”&lt;/p&gt;
+&lt;p id="gtx-trans"&gt; &lt;/p&gt;
+&lt;p id="app-kaihu-stock"&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：刘明亮 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 29 Sep 2025 08:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxOd2VVYnpsUHQ4OHZTZ2J1bVJuV2RsZHNVaG9TRTZWNXhOcW95U1hCYlJ1NTR3aDBSYU9mX0lSdE93QkotTDA4bkJMQk9KRVBVZGY2UEY1M2ZCa0hKaHE1WkN6SC1nakI2Yk5UbXdBSExMMGxQTFd2b1BTU3hGeUYzUXNwWnpTVXc</guid></item><item><title>特斯拉技术员被机器人打成重伤，索赔 5100 万 - OSCHINA</title><link>https://www.oschina.net/news/375237</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
                                                                     
                                                         &lt;p&gt;&lt;span&gt;一名特斯拉（Tesla）技术员在工作期间被有故障的机器人袭击，身受重伤。目前医疗费用已达100万美元，后续治疗至少还需要600万美元。他在近日将特斯拉及其供货商告上法庭，提出5100万美元的赔偿。&lt;/span&gt;&lt;/p&gt; 
 &lt;p&gt;&lt;span&gt;50岁的彼得·亨特多布勒（Peter Hinterdobler）是特斯拉公司的技术员。2023年7月，他在美国加州佛利蒙工厂协助工程师拆卸机器人时受到袭击。&lt;/span&gt;&lt;/p&gt; 
@@ -1826,7 +2001,19 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 29 Sep 2025 03:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1sLUVhcGlFZFBtYTk0QVpCY1RLcVdISUZQLWJiRGJXNjdTeEZUcFpQYndsMG5nVldtRXZ5dllMUDNyRFVBZFlqWnlhMF90bFVhdnRSMlBLMVM</guid></item><item><title>第五代骁龙8至尊版跑分对比上代：安兔兔成绩提升40% - 驱动之家</title><link>https://news.mydrivers.com/1/1077/1077661.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 29 Sep 2025 03:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1sLUVhcGlFZFBtYTk0QVpCY1RLcVdISUZQLWJiRGJXNjdTeEZUcFpQYndsMG5nVldtRXZ5dllMUDNyRFVBZFlqWnlhMF90bFVhdnRSMlBLMVM</guid></item><item><title>OpenAI 面向付费用户“偷换”低算力模型被实锤- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/375138</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;近日，OpenAI被曝在用户不知情的情况下，强制将ChatGPT的GPT-4、GPT-5等高阶模型切换至两款低算力的“秘密模型”——gpt-5-chat-safety和gpt-5-a-t-mini。&lt;/p&gt; 
+&lt;p&gt;当用户输入涉及情感、敏感话题或潜在违规内容时，系统会自动跳转至这两个过滤模型，导致回复质量下降。&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-7584df9faf5688f431a08fd91c65e5a10e3.png"&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-4f10184322c4bc03a4c0bf9fddc6a3925bf.png"&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-705d59da46742b653b64c8f6deab3ec7311.png"&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-19aa1a8b804baf452144c0612754235b1c5.png"&gt;&lt;/p&gt; 
+&lt;p&gt;这一行为引发用户对付费权益和选择权的质疑，OpenAI回应称这是安全测试的一部分，但未提前告知用户。&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-805bfdd2e5732c2420d09eaefa74dea7803.png"&gt; &lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-2765b2587e15a1ce47793f258b0c33b87a5.png"&gt; &lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-2f1ae64a720ed8254f33271c463f4320830.png"&gt;&lt;/p&gt; 
+&lt;p&gt;OpenAI这次举动已引发核心争议：当你付费选择了某个模型，却被默默降配，你的“选择权”在哪里？许多用户质疑这是否侵犯了它们的知情权与使用权。AI 厂商在算法控制、模型切换、资源分配背后实施的“模糊策略”，正逐步成为新的用户焦虑。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 29 Sep 2025 03:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE1VUk9oaHVXM3BKRFdEVGd5MWJPTlExY1d1VHJFT1hHRnlJRWhLSWp5QW14V3N6TWw3QWtjSExLX2FjYVhBOHp4SnFUWQ</guid></item><item><title>第五代骁龙8至尊版跑分对比上代：安兔兔成绩提升40% - 驱动之家</title><link>https://news.mydrivers.com/1/1077/1077661.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;最新发布的第五代骁龙8至尊版较去年的骁龙8至尊版实现了重大升级。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;官方数据显示，第三代Oryon CPU性能提升达20%，同时能效比提升35%。全新Adreno 840 GPU配合软件优化，图形性能可提升23%，能耗比提高20%。&lt;/strong&gt;&lt;/p&gt;
@@ -3259,4 +3446,4 @@ Max单款机型也打破了今年国产手机全价位段首销全天销量、�
             
                     
                     
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 28 Sep 2025 20:47:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi2AJBVV95cUxQdVl4a2hYOUxNSEg3N0V5QlVHdXlIR2JxcTB6ckJmWjlvdThja19IQ19PQm5ibFBvLTk1Q2lSdXoxcktBUVpBa1UyNmlCMHNITEJSS1JSbUJfNkZXaGdmQlp4WE1yTm1md28xcjdpMkRaRVF1MkwxRXdvWmVfby1WcVM4ejlZSnNnTGV6aDBmSkNTYTh3ZHFvcmhYSndrRll1a0MzMVBPTzVxaDRRem5FZnZsUnJVSXFHZ3FaOGRuVHA1S0ZZSkFTNVBLUzgyMEhhN0tPcFc0QVIwRUVZTFNTVkFsOTN2UEs3dkFPekxTeHZmN2RORWdRTm14WVMyczhiRzlXamtjQndFT29EU2I5OUtJcG5pQ1J0LWZJa3VpNVhYcGNsZWwzRE8tWlU4TDQ5YkpURHYzb0x0azBkcm5rTXIzSTN4QmNfS25Od09iWHhXVmQ0dU5iMw</guid></item><item><title>EOS 下跌10% 提供者 Investing.com - 英为财情 Investing.com</title><link>https://cn.investing.com/news/cryptocurrency-news/article-3004459</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Sun, 28 Sep 2025 20:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMic0FVX3lxTE9fbzd2YlBDQkJINl83OEhoTUJ2NXN1RnpZdjhXbUJYYU85YkJwbkRpRnNRbjZaU3Rwdk9Ub2NGUDNvX0VFTDdKOHo5bjEwc0ZzbXdJWkVIZWltU3VTMGo4SDg3Z2FhRVBsYl9FM1lJQ3pKN0U</guid></item><item><title>币安HODLer空投上线OpenEden（EDEN），使用BNB申购保本赚币产品，以获得EDEN回溯空投！ - Binance</title><link>https://www.binance.com/zh-CN/support/announcement/detail/feec6071453d4433bf251e8e17438c7c</link><description>&lt;a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQOWhWcXZ3bXc1NDR1MU5UQnIyNmFtMHdkVWtyS2NpajNiVTM4RTdKbmIwTzZTdmNwaEMyT0JMOVRLdlNxZnBQazVGcDRTalV4MjB0Rnd0TlZUcGZzYncxblh0U3hFVUVacjlCczYyeUtIUzk1WWpPNkRzbU51OG54eGFSaG1sSlozeU42aWFpZ25oQV9z?oc=5" target="_blank"&gt;币安HODLer空投上线OpenEden（EDEN），使用BNB申购保本赚币产品，以获得EDEN回溯空投！&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;Binance&lt;/font&gt;</description><author>Binance</author><pubDate>Sun, 28 Sep 2025 17:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilAFBVV95cUxQOWhWcXZ3bXc1NDR1MU5UQnIyNmFtMHdkVWtyS2NpajNiVTM4RTdKbmIwTzZTdmNwaEMyT0JMOVRLdlNxZnBQazVGcDRTalV4MjB0Rnd0TlZUcGZzYncxblh0U3hFVUVacjlCczYyeUtIUzk1WWpPNkRzbU51OG54eGFSaG1sSlozeU42aWFpZ25oQV9z</guid></item></channel></rss>
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 28 Sep 2025 20:47:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi2AJBVV95cUxQdVl4a2hYOUxNSEg3N0V5QlVHdXlIR2JxcTB6ckJmWjlvdThja19IQ19PQm5ibFBvLTk1Q2lSdXoxcktBUVpBa1UyNmlCMHNITEJSS1JSbUJfNkZXaGdmQlp4WE1yTm1md28xcjdpMkRaRVF1MkwxRXdvWmVfby1WcVM4ejlZSnNnTGV6aDBmSkNTYTh3ZHFvcmhYSndrRll1a0MzMVBPTzVxaDRRem5FZnZsUnJVSXFHZ3FaOGRuVHA1S0ZZSkFTNVBLUzgyMEhhN0tPcFc0QVIwRUVZTFNTVkFsOTN2UEs3dkFPekxTeHZmN2RORWdRTm14WVMyczhiRzlXamtjQndFT29EU2I5OUtJcG5pQ1J0LWZJa3VpNVhYcGNsZWwzRE8tWlU4TDQ5YkpURHYzb0x0azBkcm5rTXIzSTN4QmNfS25Od09iWHhXVmQ0dU5iMw</guid></item><item><title>EOS 下跌10% 提供者 Investing.com - 英为财情 Investing.com</title><link>https://cn.investing.com/news/cryptocurrency-news/article-3004459</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Sun, 28 Sep 2025 20:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMic0FVX3lxTE9fbzd2YlBDQkJINl83OEhoTUJ2NXN1RnpZdjhXbUJYYU85YkJwbkRpRnNRbjZaU3Rwdk9Ub2NGUDNvX0VFTDdKOHo5bjEwc0ZzbXdJWkVIZWltU3VTMGo4SDg3Z2FhRVBsYl9FM1lJQ3pKN0U</guid></item></channel></rss>
