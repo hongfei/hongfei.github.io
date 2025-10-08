@@ -1,5 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>综述：哮喘中的免疫和炎症机制：表观遗传修饰的见解 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251009003030777.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Frontiers in Immunology》：Immune and inflammatory mechanisms in asthma: insights into epigenetic modifications&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>自监督学习揭示间皮瘤组织形态学图谱：基于3446张全切片图像的生物学洞察与临床预测新突破 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008024522738.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;自监督学习揭示间皮瘤组织形态学图谱：基于3446张全切片图像的生物学洞察与临床预测新突破&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;《Nature Communications》：A histomorphological atlas of resected mesothelioma discovered by self-supervised learning from 3446 whole-slide images&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年10月09日&lt;/i&gt;
+            &lt;i&gt;来源：Nature Communications 15.7&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对间皮瘤诊断中存在的高度形态学复杂性和预后预测难题，利用自监督学习技术（HPL）对3446张H&amp;amp;E染色全切片图像进行深度分析，构建了包含47个组织形态表型簇（HPCs）的定量图谱。研究实现了88%的亚型分类AUC和0.65的生存预测C-index，并通过多中心病理专家验证和分子机制关联分析，揭示了HPCs与肿瘤微环境、增殖标记（Ki67）及mRNA翻译通路（eIF4A1/mTOR）的显著相关性，为间皮瘤的精准诊断和靶向治疗提供了新方向。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;section&gt;间皮瘤是一种与石棉暴露高度相关的致命性癌症，其诊断和治疗面临巨大挑战。由于肿瘤具有显著的形态学异质性，即使经验丰富的病理学家也难以通过传统的H&amp;amp;E染色切片准确区分恶性与反应性病变，更难以预测患者的临床结局。目前的AI辅助诊断方法多依赖于有监督或弱监督学习，需要大量人工标注且难以捕捉肿瘤微环境的复杂性。因此，亟需一种能够无标注、自动化地解析间皮瘤形态学特征并关联临床与分子表型的新方法。&lt;/section&gt;
+&lt;section&gt;在此背景下，由Farzaneh Seyedshahi和Kai Rakovic等来自英国格拉斯哥大学、CRUK苏格兰研究所、莱斯特大学医院等多个机构的研究人员开展了一项大规模研究。他们利用自监督学习框架Histomorphological Phenotype Learning（HPL），对来自485例手术切除样本的3446张全切片图像（WSI）进行分析，构建了间皮瘤的首个定量组织形态学图谱，相关成果已于2025年10月发表在《Nature Communications》。&lt;/section&gt;
+&lt;section&gt;研究主要依托莱斯特归档胸部肿瘤研究队列-间皮瘤（LATTICe-M）这一大型临床样本库，包含512例患者资料，其中H&amp;amp;E切片经扫描后提取约323万张图像块（tiles），通过Barlow Twins自监督算法提取特征，再经Leiden聚类识别出47个具有可重复性的组织形态表型簇（HPCs）。每个HPC均经由三位亚专业病理学家进行盲法注释，评估内容包括细胞形态、炎症程度、坏死、纤维化等指标。随后，研究利用HPC组成特征进行生存分析（Cox比例风险模型）和亚型分类（逻辑回归），并在TCGA队列和St. George’s Hospital TMA数据集上进行外部验证。&lt;/section&gt;
+&lt;section&gt;在技术方法上，本研究采用自监督学习（HPL pipeline）从全切片图像中提取形态特征，通过聚类算法识别表型簇（HPCs），并利用这些特征进行生存分析和亚型分类；使用多实例学习（MIL）在组织微阵列（TMA）数据上进行验证；通过免疫组化（IHC）和转录组（RNA-seq）数据关联HPCs的分子基础；应用HoVer-Net模型进行细胞类型分割及炎症评估。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;Mapping the histomorphological phenotype landscape&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;研究成功识别出47个HPCs，这些簇在超过20%的病例中重复出现。罕见HPCs（&amp;lt;20% prevalence）多对应正常组织或特殊反应性改变，而普遍存在的HPCs（&amp;gt;80%）则包括广泛存在的恶性形态或非肿瘤组分（如血管、胶原）。病理学家注释显示，炎症和坏死评估一致性较高（Fleiss’ Kappa 0.2–0.6），而上皮与梭形细胞结构分类存在一定主观差异。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;HPCs predict mesothelioma subtypes&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;通过逻辑回归模型，研究基于HPC频率成功区分上皮样和非上皮样（肉瘤样/双相型）亚型，模型在LATTICe-M上达到88%的AUC，在TCGA队列中为80%。其中，HPC15、16、22（富含紊乱梭形细胞）被一致认定为非上皮样亚型的标志，而部分上皮样HPCs（如HPC6、7）在双相型病例中也显著出现，提示其可能与胸壁侵袭相关。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;HPCs as predictors of patient survival&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;HPC组成在多数据集（LATTICe-M和TCGA）中均显著预测患者生存，C-index达0.65–0.67。加入临床变量（年龄、分期、亚型）仅轻微提升性能。Cox模型识别出HPC10（上皮样巢状结构）和HPC27（密集淋巴细胞）为保护性因子，而HPC15（肉瘤样梭形细胞）和HPC22（过渡型间皮瘤）则与不良预后显著相关。Kaplan-Meier分析显示模型能有效区分高风险与低风险组（p&amp;lt;0.001），且在TCGA纯上皮样病例中优于传统组织学分级（p=0.025 vs. p=0.282）。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;Subtype-specific HPC analysis and immunohistochemical marker correlations&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;在亚组分析中，上皮样病例内HPC22（过渡型形态）强烈预示不良结局，提示其可能代表向上皮-间质转化（EMT）的早期过渡；而在肉瘤样/双相型病例中，HPC23（温和梭形细胞与胶原）与预后差相关，HPC27（淋巴细胞浸润）则关联较好结局。IHC结果显示，高风险HPCs（如肉瘤样或低分化上皮样簇）显著富集增殖标记（Ki67）和翻译起始因子（eIF4A1），且与氧化磷酸化下调相关，支持其代谢重编程特征。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;Molecular underpinnings of HPCs&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;通过整合TCGA转录组数据，研究发现肉瘤样HPCs显著关联细胞增殖、缺氧和EMT相关通路（如KEGG、MSigDB hallmark），而上皮样HPCs则更多表达正常组织相关信号。淋巴细胞富集簇（HPC27）显示与T细胞、B细胞和树突细胞高度相关，提示免疫微环境在预后中的积极作用。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;Validation on tiny tissue fragments&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;研究进一步在St. George’s Hospital TMA数据集（小组织片段）上验证模型泛化能力。通过多实例学习（HPL-MIL）方法，模型在未经过额外训练的情况下仍保持较高分类性能（AUC、精度、敏感性等均优于现有方法如CLAM、MesoGraph），证明其适用于活检小样本的临床诊断场景。&lt;/section&gt;
+&lt;section&gt;本研究通过自监督学习成功构建了间皮瘤的组织形态学图谱，首次系统性地揭示了其形态表型与临床结局、分子机制之间的定量关系。不仅实现了高精度的亚型分类和生存预测，还发现了过渡型形态等此前难以人工识别的高危表型，为间皮瘤的早期诊断和预后分层提供了新工具。此外，研究证实HPCs与增殖、免疫微环境、代谢通路等关键生物学过程显著相关，为未来靶向治疗（如免疫疗法或翻译抑制剂）提供了理论依据。该方法克服了传统AI模型依赖标注和数据一致性的局限，展现出强大泛化能力，尤其适用于活检小样本的分析，具有重要的临床转化潜力。&lt;/section&gt;
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 08 Oct 2025 21:03:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE83RHdMRlNhUkRsWHpXdXhWaGxxUExqRGdyeHlHSHVQcWJJMS03RHkwdmlWTVA4VThkRGpkelBiLXllbHpGM1BXSFdRY0s3WjJHTmF5OFpScC03WWdkWnh4aHloZHVDdm1oZUlVci1R</guid></item><item><title>综述：哮喘中的免疫和炎症机制：表观遗传修饰的见解 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251009003030777.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Frontiers in Immunology》：Immune and inflammatory mechanisms in asthma: insights into epigenetic modifications&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -823,7 +937,117 @@
 
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 08 Oct 2025 17:29:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE1JNEctQzVVR0d6V2RjNndZdFJZMk1GLWV1cFlpUjhwdF9QQ3JSRjFkTG9kYXQ4YWI0dXNOS1huVnhRZUpUeUR1SEQwQWxBQ1NqZEJFOXFzUVV1S1MtYzAwTTBZMXVMaUJ5SzlsYnN3</guid></item><item><title>青少年1型糖尿病急性高血糖与低血糖脑反应研究：脑血流与神经活动变化揭示恢复延迟机制 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008220924567.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 08 Oct 2025 17:29:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE1JNEctQzVVR0d6V2RjNndZdFJZMk1GLWV1cFlpUjhwdF9QQ3JSRjFkTG9kYXQ4YWI0dXNOS1huVnhRZUpUeUR1SEQwQWxBQ1NqZEJFOXFzUVV1S1MtYzAwTTBZMXVMaUJ5SzlsYnN3</guid></item><item><title>妊娠晚期B族链球菌定植对阴道微生态及全身炎症的影响：微生物组学与临床标志物关联分析 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008215202245.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;妊娠晚期B族链球菌定植对阴道微生态及全身炎症的影响：微生物组学与临床标志物关联分析&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;《BMC Microbiology》：Unveiling the microbial shift: the impact of group B Streptococcus on vaginal microbiota and inflammation in late pregnancy&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年10月09日&lt;/i&gt;
+            &lt;i&gt;来源：BMC Microbiology 4.2&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对妊娠晚期B族链球菌（GBS）定植对阴道微生物群落及全身炎症反应的影响展开深入探讨。通过16S rRNA测序技术结合炎症标志物检测，发现GBS阳性孕妇阴道乳杆菌丰度显著降低，加德纳菌等致病菌增殖，且与中性粒细胞计数（NEU）、高敏C反应蛋白（hs-CRP）、白细胞介素-6（IL-6）等炎症指标升高显著相关。该研究为GBS相关妊娠并发症的微生态调控提供了重要理论依据。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;section&gt;在围产医学领域，B族链球菌（Group B Streptococcus, GBS）的定植问题始终笼罩着孕产妇与新生儿健康。全球约有1970万孕妇携带这种机会性病原体，其中相当比例会通过垂直传播导致新生儿罹患败血症、肺炎甚至脑膜炎。尽管现有研究多集中于GBS的流行病学特征，但其如何扰动阴道微生态环境、引发全身性炎症反应的内在机制仍迷雾重重。妊娠期雌激素和孕酮水平变化会促进阴道上皮细胞糖原蓄积，正常情况下乳杆菌可将其分解为乳酸维持酸性环境；但当微生物平衡被打破时，糖原代谢异常可能导致pH值上升，反而为GBS等条件致病菌提供温床。&lt;/section&gt;
+&lt;section&gt;为破解这一难题，YU等学者在《BMC Microbiology》发表了开创性研究，通过多组学技术揭示了GBS定植与阴道微生物群落结构改变、系统性炎症激活之间的内在联系。研究团队纳入20例GBS阳性与19例阴性晚期妊娠妇女，采用16S rRNA基因测序解析阴道菌群特征，同步检测血液炎症标志物，并运用线性判别分析（LEfSe）等生物信息学方法挖掘关键微生物标志物。&lt;/section&gt;
+&lt;section&gt;关键技术方法包括：采集孕妇阴道分泌物样本进行DNA提取与PCR扩增（引物338F/806R靶向V3-V4区），使用Illumina NextSeq 2000平台进行高通量测序；通过UPARSE算法以97%相似度聚类操作分类单元（OTU）；采用LASSO回归筛选临床指标以消除多重共线性；通过Spearman相关性分析建立菌群-炎症关联模型。&lt;/section&gt;
+
+&lt;section&gt;&lt;strong&gt;微生物多样性特征&lt;/strong&gt;：虽然Alpha多样性指数无显著差异，但Beta分析（PCoA/NMDS/PLS-DA）显示GBS阳性组群落结构发生显著重构（P&amp;lt;0.05），样本离散度增加提示微生物稳定性受损。&lt;/section&gt;
+
+&lt;section&gt;&lt;strong&gt;菌群组成变化&lt;/strong&gt;：GBS阳性组乳杆菌相对丰度显著降低（尤其Lactobacillus jensenii与Lactobacillus reuteri），而加德纳菌（Gardnerella vaginalis）和GBS本身（Streptococcus agalactiae）显著富集（P&amp;lt;0.001）。值得注意的是，乳杆菌约翰逊氏菌（Lactobacillus johnsonii）在GBS阳性组反呈升高趋势，揭示乳杆菌菌株功能存在异质性。&lt;/section&gt;
+
+&lt;section&gt;&lt;strong&gt;炎症标志物关联&lt;/strong&gt;：GBS阳性组中性粒细胞百分比（NEU%）、高敏C反应蛋白（hs-CRP）、白细胞介素-6（IL-6）、降钙素原（PCT）及血沉（ESR）均显著升高（P&amp;lt;0.01）。双歧杆菌（Bifidobacterium）与hs-CRP/IL-6呈正相关，而乳杆菌与hs-CRP/IL-6/ESR均呈负相关（P&amp;lt;0.05），提示特定菌群可能直接调控炎症通路。&lt;/section&gt;
+
+&lt;section&gt;&lt;strong&gt;标志性微生物识别&lt;/strong&gt;：LEfSe分析发现GBS阴性组富集Gemella菌（可能参与维持酸性环境），而GBS阳性组特异性富集加德纳菌（LDA=3.79），后者可能通过协同生物膜形成促进GBS持续定植。&lt;/section&gt;
+
+&lt;section&gt;研究结论强调：GBS定植通过破坏阴道微生态平衡（乳杆菌主导地位丧失→致病菌增殖）触发全身性炎症反应，这种"微生物-免疫"跨系统对话可能是不良妊娠结局的重要机制。特别值得注意的是，乳杆菌不同菌株（如詹氏乳杆菌与约翰逊氏乳杆菌）可能发挥截然相反的生物学效应，这为未来精准微生态干预提供了方向——恢复特定功能菌株（而非单纯补充乳杆菌总量）或成为阻断GBS致病链的新策略。该研究不仅深化了对妊娠期宿主-微生物互作的理解，更为开发基于微生物组学的预测模型和靶向治疗（如益生菌制剂/阴道微生物移植）奠定了实证基础。&lt;/section&gt;
+        &lt;/div&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 08 Oct 2025 16:25:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTFBKRzN3MUl3ZnpRY3dPTGo0V25BZkh2akNqeXVkSE5VdG1fWkNXdllLWERxSDhleENrVHBBUUxLV0M5RmxtVEdrZ2FJU0J4Z2JhdzRKcUNQU2VNbjNlOTVZNk1OQks3TElMTGlZWE1R</guid></item><item><title>青少年1型糖尿病急性高血糖与低血糖脑反应研究：脑血流与神经活动变化揭示恢复延迟机制 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008220924567.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
 	&lt;div class="p1_b1Left fl"&gt;
     	&lt;p class="p1Title"&gt;青少年1型糖尿病急性高血糖与低血糖脑反应研究：脑血流与神经活动变化揭示恢复延迟机制&lt;/p&gt;
 		&lt;p class="p1Subtitle"&gt;《Diabetologia》：Acute brain responses to hypoglycaemia and hyperglycaemia in adolescents with type 1 diabetes&lt;/p&gt;
@@ -931,7 +1155,112 @@
 
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 08 Oct 2025 16:04:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE5rcXpIelpKNW5McExEWlh2UXlXdlNZa2VvNUlCQTBzSVVLcGU1eC1JeGU1LTNLVUhoR0plYmpESzNrVDlSb2xTZWQ3cHhFOWQ4N2JRQUx6dlczdzNNYlVIS0tOZC1rNFdabWlYeFF3</guid></item><item><title>综述：炭疽病原体基因组中的重复序列——在分子流行病学中的应用及对编码蛋白结构的影响 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008224929103.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Russian Journal of Genetics》：Repetitive Sequences in the Anthrax Pathogen Genome—Use in Molecular Epidemiology and Influence on the Structure of Encoded Proteins&lt;/p&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 08 Oct 2025 16:04:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE5rcXpIelpKNW5McExEWlh2UXlXdlNZa2VvNUlCQTBzSVVLcGU1eC1JeGU1LTNLVUhoR0plYmpESzNrVDlSb2xTZWQ3cHhFOWQ4N2JRQUx6dlczdzNNYlVIS0tOZC1rNFdabWlYeFF3</guid></item><item><title>综述：表观遗传学因素在膀胱癌中的作用机制 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008224929600.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;综述：表观遗传学因素在膀胱癌中的作用机制&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;《Russian Journal of Genetics》：Mechanisms of Epigenetic Factors Involvement in Bladder Cancer&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年10月09日&lt;/i&gt;
+            &lt;i&gt;来源：Russian Journal of Genetics 0.5&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本综述系统阐述了非编码RNA（miRNA、lncRNA）与逆转录转座子在膀胱癌（BC）中的调控机制，揭示了其通过DNA甲基化、竞争性内源RNA（ceRNA）网络影响肿瘤发生的关键路径，为BC的生物标志物挖掘及靶向治疗提供了重要理论依据。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;section&gt;膀胱癌（BC）的发生发展与人类基因组中多种生物标志物相关，这些标志物多位于基因间区、调控区和内含子区域，涉及非编码RNA基因与转座元件的调控。研究表明，这些关联通过改变非编码RNA及转座元件的活性影响BC进展，其中DNA甲基化变化是核心机制之一：microRNA（miRNA）可作为RNA依赖性DNA甲基化的引导分子，而逆转录元件的转录本则作为竞争性内源RNA（ceRNA）与miRNA相互作用。&lt;/section&gt;
+
+&lt;section&gt;大量长链非编码RNA（lncRNA）和miRNA被证实参与BC发展，它们依据靶基因的不同可扮演癌基因或抑癌基因的角色。例如，TINCR/miR-7、RP11-89/miR-129-5p、CASC11/miR-150、LUCAT1/miR-181c-5p、KCNQ1OT1/miR-218-5p、GAS6-AS6/miR-298、BCCE4/miR-328-3p、KCNMB2-AS1/miR-374a、SNHG1/miR-493、TUG1/miR-582-5p、UCA1/miR-582-5p、LINC00958/miR-625、DDX11-AS1/miR-2355-5p、ARAP1-AS1/miR-3918、BACH1-IT2/miR-4786等组合在BC中具有协同调控作用。此外，27种源自逆转录元件的miRNA也被证明在BC癌变过程中发挥作用。&lt;/section&gt;
+
+&lt;section&gt;逆转录元件的激活被多项临床研究支持为表观遗传调控的关键驱动因素。这些元件通过产生ceRNA或调控性转录本，广泛参与染色质重塑和基因表达修饰，进而影响BC的恶性进展。&lt;/section&gt;
+
+&lt;section&gt;文中所述的生物标志物为BC的诊断和靶向治疗提供了新策略。通过靶向特定lncRNA-miRNA通路或逆转录元件相关机制，可能开发出更精准的治疗方法。未来需进一步探索这些表观遗传因子在BC分期、预后及耐药性中的具体作用。&lt;/section&gt;
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Wed, 08 Oct 2025 16:03:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE9HbVFDLUdZc0VNczZiOUxPT29lSzlqMHRhV0ZWbUNhZHZQdnFka21sd3I1Tk5YalFlbENyQWoyaUM5TnhDRkVpZU5TRkxwY0RhLXdxLXBNWE9PWnZiSElkdzRxdnhLZGNzMkxJWENB</guid></item><item><title>综述：炭疽病原体基因组中的重复序列——在分子流行病学中的应用及对编码蛋白结构的影响 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008224929103.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1Subtitle"&gt;《Russian Journal of Genetics》：Repetitive Sequences in the Anthrax Pathogen Genome—Use in Molecular Epidemiology and Influence on the Structure of Encoded Proteins&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -2292,117 +2621,4 @@
 
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 07 Oct 2025 23:55:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE4xQ0lBeUhya2U3amdXYmxiT0ZXdWJpYjg2Q19OMklsLUR2STFwMWtwRUctYUx4dG1LZlJvN1NjZGRTZW5iRDhNdXlMSGlFTV90MUJxaVVYamNiSG54M29YTFR2LUhlVHpQejg5X2pn</guid></item><item><title>情绪多变需关怀，上一秒开心下一秒变忧郁的三大星座女 - 澳洲亿忆网</title><link>https://www.yeeyi.com/news/details/2823697/</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="__next"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>澳洲亿忆网</author><pubDate>Tue, 07 Oct 2025 23:20:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE1YQkRKR205cXRJUFA4bENidHRVYXB0YTRYd1BNZ0tfb1RDenQ0WHloXzMzc3h5em9rUEw2ZlhlUWJqcjJmU1BBZWdWU05OM3kxSkxZeGl3</guid></item><item><title>园游．杏林｜流感重症不只限老年 少壮切勿轻视后果 - 香港01</title><link>https://global.hk01.com/01%E8%AE%BA%E5%9D%9B/60282920/%E5%9B%AD%E6%B8%B8-%E6%9D%8F%E6%9E%97-%E6%B5%81%E6%84%9F%E9%87%8D%E7%97%87%E4%B8%8D%E5%8F%AA%E9%99%90%E8%80%81%E5%B9%B4-%E5%B0%91%E5%A3%AE%E5%88%87%E5%8B%BF%E8%BD%BB%E8%A7%86%E5%90%8E%E6%9E%9C</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div data-testid="article-content-section" class="cmp-article-detail medium"&gt;&lt;p class="-mx-3 -mt-4 flex min-h-250px items-center bg-light-n2 md:hidden"&gt;&lt;/p&gt;&lt;p class="-ml-3 md:ml-0"&gt;&lt;span class="border-primary mb-6 block border-l-4 pl-3 md:mb-8"&gt;作者：陈俊平医生&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class="-ml-3 md:ml-0"&gt;&lt;span class="border-primary mb-6 block border-l-4 pl-3 md:mb-8"&gt;中秋节刚刚过去，天气即将转季。这意味着我们与冬季流感高峰期的距离又再近一点。&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div class="-ml-3 w-screen md:ml-0 md:w-full"&gt;&lt;span class="img-caption ml-3 block text-left text-light-n6 md:ml-0"&gt;卫生防护中心于9月9日宣布本港踏入夏季流感季节，预料本地流感活跃程度持续上升，在短期内维持在较高水平。&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;p class="whitespace-pre-wrap break-words"&gt;去年，我在门诊中曾遇上有一位患糖尿病和高血压的六旬病人。秋天前，我曾提醒他要注射疫苗，提防染上流感后患重症。不料他未及打针，就已经不幸患上流感，并并发肺炎留院。三个月后，病人再到门诊覆诊，他因为是次入院而状态转差，走路易喘气，日常生活中难以做运动，最终本身的糖尿病病情亦因而受牵连。幸好，病人在再三劝喻下终于接受了疫苗注射。&lt;/p&gt;&lt;p class="whitespace-pre-wrap break-words"&gt;作为医生，我最希望看到广大市民能预防患病，而非患病后接受治疗。上述个案不幸地留院，但其实他的情况绝对可以透过接种疫苗有效避免。&lt;/p&gt;&lt;p class="whitespace-pre-wrap break-words"&gt;流感疫苗的其中一个重要作用，就是预防重症。长期病患者包括心血管病、肝肾或肺病、严重肥胖、自身免疫系统疾病等患者，不论年纪，一旦感染流感再并发重症的后果可以非常严重，愈后的日常生活亦可受到影响。有见及此，今年季节性流感疫苗接种计划扩大资助范围，18至49岁的长期病患者都可以接种免费或获资助流感疫苗。&lt;/p&gt;&lt;p class="whitespace-pre-wrap break-words"&gt;根据去年统计，此年龄层出现49宗流感严重个案，占所有严重个案的10%，而当中绝大部分人均没有接种流感疫苗。不少人往往认为自己仍年轻力壮，容易忽视流感所带来的风险，尤其长期病患者本身免疫系统较弱，流感并发重症的风险更高。&lt;/p&gt;&lt;p class="whitespace-pre-wrap break-words"&gt;疫苗一定是“应打尽打”，才可以达致群体免疫。接受疫苗注射，不仅保护自身，更可保护身边人。合资格人士可以按自己所属组别，前往医院管理局的公立医院或门诊，以及地区康健中心、母婴健康院等地点接种疫苗，详情可参阅&lt;a class="mx-0.5 rounded-full bg-opacity-100 px-2 hover:bg-opacity-50 active:bg-opacity-25" target="_blank" rel="noreferrer" href="https://www.chp.gov.hk/tc/features/107880.html"&gt;卫生防护中心疫苗计划专页&lt;/a&gt;。&lt;/p&gt;&lt;p class="whitespace-pre-wrap break-words"&gt;希望不同年龄层的人都可以正视流感可带来风险，并立即行动，及早接种疫苗！&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p class="-ml-3 md:ml-0"&gt;&lt;span class="border-primary mb-6 block border-l-4 pl-3 md:mb-8"&gt;作者陈俊平医生是港岛西医院联网家庭医学及基层医疗部副部门主管。&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p class="-ml-3 md:ml-0"&gt;&lt;span class="border-primary mb-6 block border-l-4 pl-3 md:mb-8"&gt;“园游．杏林”栏目由医管局医护人员撰写。&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p class="-ml-3 md:ml-0"&gt;&lt;span class="border-primary mb-6 block border-l-4 pl-3 md:mb-8"&gt;文章仅属作者意见，不代表香港01立场。&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p class="whitespace-pre-wrap break-words"&gt;&lt;strong&gt;“01论坛”欢迎投稿。请电邮至01view@hk01.com，并附上作者真实姓名、自我简介及联络方法。若不适用，恕不另行通知。香港01保留文章最终编辑权。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"&gt;&lt;/template&gt;&lt;p id="article-bottom-anchor-60282920"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>香港01</author><pubDate>Tue, 07 Oct 2025 22:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi5AJBVV95cUxOTzMtNkhvMGlsR2VTZ0NoOE1NemcwSEh2TXdvNkhFV0JaYU5hZ01ZU29aV2x5dTBZVEwwc3A4OEhYSlFsSXR3U0dVUWg1VlkwdGZIUl9NN3dBcDFKSGVmQWF5Q3drMzRjNkl2ZnF1WGJrOWRHaHkxdENWV09pQ2F3cU00dHJ3cHpibE5POWQ5UWc2UHp4YldtWS1XbnpyZHRvOHlDQ2VkR2JwUG9IOTZRNDk4dElFWEgwT3lTVEc0MlB2M1NqcWtkWWJFcVVMTHNHSk9EMkxwOTduSEh6ODJCZzdMUUxTWWIzOUd0OVBWRXVsTmVrVGRfekY1aWxuakluRlJHNzZCR2NtWWdvRmY5WFU2NDVIX0xTbjB5YzJ3NU1EWnFpQkliTkRNemVfWldEbjFwYW84dVJXT052bXV1MTFSNnJtNTBVUDc2QTdLLW41bFktakxYVVBjbG5LajRYamVwRg</guid></item><item><title>星形胶质细胞化学遗传学活性调控挽救5xFAD阿尔茨海默病模型小鼠海马神经退行性病变 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251008001224054.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;星形胶质细胞化学遗传学活性调控挽救5xFAD阿尔茨海默病模型小鼠海马神经退行性病变&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;《NEURAL PLASTICITY》：Chemogenetic Modulation of Astrocytic Activity Rescues Hippocampus Associated Neurodegeneration in Alzheimer’s Disease Mice Model 5xFAD&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年10月08日&lt;/i&gt;
-            &lt;i&gt;来源：NEURAL PLASTICITY 3.7&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究发现，通过化学遗传学技术（DREADDs）特异性激活海马星形胶质细胞hM3D(Gq)受体，可显著改善5xFAD阿尔茨海默病模型小鼠的认知功能障碍（MWM/FC测试）、恢复突触可塑性（LTP增强），并减少Aβ淀粉样斑块沉积。该研究为靶向星形胶质细胞的疾病修饰疗法提供了非侵入性治疗新策略。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;ol&gt;&lt;li&gt;&lt;span&gt;1.&lt;/span&gt;&lt;span&gt;
-&lt;section&gt;阿尔茨海默病（AD）是一种以Aβ淀粉样蛋白积累和认知衰退为特征的神经退行性疾病。近年来研究发现，星形胶质细胞作为大脑中最丰富的胶质细胞，在突触传递、神经元兴奋性和可塑性调控中发挥关键作用。在AD病理状态下，星形胶质细胞转化为反应性状态，表现出异常的钙信号传导和神经递质释放紊乱，使其成为疾病修饰治疗的潜在靶点。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;2.&lt;/span&gt;&lt;span&gt;
-&lt;section&gt;研究采用8月龄5xFAD转基因小鼠模型，通过立体定位注射将AAV5-GFAP-hM3D(Gq)-mCherry病毒载体特异性表达于海马星形胶质细胞。实验组每日腹腔注射3 mg/kg氯氮平-N-氧化物（CNO）激活hM3D受体，对照组注射vehicle。通过恐惧条件反射（FC）、莫里斯水迷宫（MWM）、开放场地（OF）等行为学测试评估认知功能；采用电生理记录分析长时程增强（LTP）；通过Thioflavin-T染色和GFAP免疫组化分析Aβ斑块负荷和星形胶质细胞反应性。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;3.&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
-&lt;section&gt;每日CNO给药显著改善了5xFAD+hM3D小鼠的空间记忆和情境记忆。MWM测试显示实验组潜伏期显著缩短（p&amp;lt;0.05），平台穿越次数增加；FC测试中情境记忆冻结时间恢复至野生型水平。LTP记录显示5xFAD+hM3D组突触增强幅度达到173.30%±17.34%，与对照组相比显著改善（p=0.0035），表明海马突触可塑性得到恢复。&lt;/section&gt;
-
-&lt;section&gt;开放场地实验显示5xFAD+hM3D小鼠在中心区域停留时间（71.26±30.42 s）较对照组（140.50±72.04 s）显著减少（p=0.0069），表明焦虑样行为得到纠正。社会偏好测试中，实验组对社会对象的探索时间（123.10±38.46 s）和头部进入次数（78.55±29.70）均显著高于对照组（p&amp;lt;0.05），表明社会交往能力恢复。&lt;/section&gt;
-
-&lt;section&gt;Thioflavin-T染色显示5xFAD+hM3D组海马Aβ斑块面积（0.290%±0.199%）较对照组（0.579%±0.093%）显著减少（p=0.0067），单个斑块平均面积从57.90±3.37 μm2降至47.63±6.39 μm2（p=0.0119）。GFAP免疫染色显示星形胶质细胞反应性呈下降趋势（4.474%±0.166% vs 3.910%±0.157%，p=0.0808），阈值化GFAP阳性单元尺寸从53.94±2.24 μm2降至45.66±1.54 μm2（p=0.0008）。&lt;/section&gt;
-&lt;ol&gt;&lt;li&gt;&lt;span&gt;4.&lt;/span&gt;&lt;span&gt;
-&lt;section&gt;研究证实通过Gq耦合受体调控星形胶质细胞活性可产生多重治疗效益：①促进胶质递质（谷氨酸、腺苷、D-丝氨酸）释放，调节NMDA受体功能和突触可塑性；②增强EAAT-2介导的谷氨酸摄取，减轻兴奋毒性；③改善葡萄糖代谢和能量稳态；④通过BDNF、IL-6等神经保护因子分泌减轻神经炎症。化学遗传学方法相比光遗传学具有非侵入性优势，更适合转化应用。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;5.&lt;/span&gt;&lt;span&gt;
-&lt;section&gt;海马星形胶质细胞hM3D(Gq)受体的化学遗传学激活可有效改善5xFAD小鼠的认知缺陷、突触功能障碍和病理特征，为AD治疗提供了基于胶质细胞调控的新型疾病修饰策略。该研究揭示了星形胶质细胞在神经退行性疾病中的核心调控作用，为开发非侵入性神经调控疗法奠定了理论基础。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
-        &lt;/div&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 07 Oct 2025 21:58:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE9veWFfZVl6dVJ6M056bWJTTXFwcU9EakxiQXBOc1Fxek5keUtXRUU2Y1k4X1JPZjQ4dzBhTmtsaHJEVzgyNFdHNVQ4cklsMDV0akt6QmNrNnNCLWJmVjJKVVo0QUpuWmpsa0l6dXl3</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 07 Oct 2025 23:55:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE4xQ0lBeUhya2U3amdXYmxiT0ZXdWJpYjg2Q19OMklsLUR2STFwMWtwRUctYUx4dG1LZlJvN1NjZGRTZW5iRDhNdXlMSGlFTV90MUJxaVVYamNiSG54M29YTFR2LUhlVHpQejg5X2pn</guid></item><item><title>情绪多变需关怀，上一秒开心下一秒变忧郁的三大星座女 - 澳洲亿忆网</title><link>https://www.yeeyi.com/news/details/2823697/</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="__next"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>澳洲亿忆网</author><pubDate>Tue, 07 Oct 2025 23:20:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE1YQkRKR205cXRJUFA4bENidHRVYXB0YTRYd1BNZ0tfb1RDenQ0WHloXzMzc3h5em9rUEw2ZlhlUWJqcjJmU1BBZWdWU05OM3kxSkxZeGl3</guid></item></channel></rss>
