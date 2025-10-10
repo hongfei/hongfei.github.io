@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>罗永浩不得不用苹果手机 本人解释原因：生态体验整体是最好的 - 驱动之家</title><link>https://news.mydrivers.com/1/1079/1079301.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>微软宣告Windows离线安装死刑：网友发现跳过账号登录方法！ - 驱动之家</title><link>https://news.mydrivers.com/1/1079/1079342.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月10日消息，&lt;strong&gt;微软在最新的Windows 11测试版中，首次OOBE设置PC时，将强制用户使用Microsoft账户登录，彻底堵死了绕过账户登录的可能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;微软认为，Microsoft账户和互联网连接是开箱即用体验中不可或缺的环节，在Windows 11 Insider Preview Build 26220.6772版本中，微软已删除了多种绕过Microsoft账户设置页面的方法。&lt;/p&gt;
+&lt;p&gt;不过技术爱好者The Bob Pony却发现了新的跳过方法，虽然微软已经封堵了大部分漏洞，&lt;span&gt;&lt;strong&gt;但BypassNRO方法仍然有效，只是需要通过修改注册表来实现，而不能直接通过命令重启系统。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;具体操作方法如下：&lt;/p&gt;
+&lt;p&gt;1、提前断开网络连接（拔掉网线并关闭Wi-Fi）。&lt;/p&gt;
+&lt;p&gt;2、在需要登录账户的OOBE屏幕，按Shift+F10打开命令提示符。&lt;/p&gt;
+&lt;p&gt;3、在命令提示符中输入以下命令：&lt;/p&gt;
+&lt;p&gt;reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f&lt;/p&gt;
+&lt;p&gt;4、执行上述命令后，重启系统：shutdown /r/t 0&lt;/p&gt;
+&lt;p&gt;5、系统重启后，用户将可以直接创建本地账户，而无需使用在线账户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用户也可以手动打开注册表编辑器进行修改：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、断开网络并按Shift+F10打开命令提示符。&lt;/p&gt;
+&lt;p&gt;2、输入regedit并回车，打开注册表编辑器。&lt;/p&gt;
+&lt;p&gt;3、转到以下路径：&lt;/p&gt;
+&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE&lt;/p&gt;
+&lt;p&gt;4、在右侧空白处点击鼠标右键，新建一个DWORD（32位）值，命名为BypassNRO。&lt;/p&gt;
+&lt;p&gt;5、双击BypassNRO，将其键值修改为1并保存重启。&lt;/p&gt;
+&lt;p&gt;目前这一方法已在最新的Windows 11 Beta版本中测试成功，但随着时间推移，微软可能会进一步封堵这一漏洞。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251010/1b1bc61492004a1bbca2b0ec5b099971.jpg" target="_blank"&gt;&lt;img alt="微软宣告Windows离线安装死刑：网友发现跳过账号登录方法！" h="400" src="//img1.mydrivers.com/img/20251010/s_1b1bc61492004a1bbca2b0ec5b099971.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 10 Oct 2025 10:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5mVkhST2dkZlBmWVhpQlJud2JIaWlvU3F4aVVTaFg3NDMwc1lBUjBkbkJnaGFvR3Y5VEEya2VWYUk0RDBEMkl1emY4OWpSZUZhQlE5SGU4MEg</guid></item><item><title>罗永浩不得不用苹果手机 本人解释原因：生态体验整体是最好的 - 驱动之家</title><link>https://news.mydrivers.com/1/1079/1079301.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;罗永浩不得不用苹果手机 本人解释原因：生态体验整体是最好的&lt;/p&gt;
           
@@ -167,7 +197,109 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 10 Oct 2025 07:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE96d3V6WEF0MTgwd1lRUU8wcG9wby1aR0NhQ1hOYXdjeGhqd3lJLUtGdF9FbjZjQjIwd0tFTEF5RTh6WUh2QU9yOE5BZkZGY2o1X011dnQ4S0k</guid></item><item><title>大疆降价风暴背后，藏着一场生死攻防战 - 虎嗅</title><link>https://m.huxiu.com/article/4789932.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="article-detail-content"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 10 Oct 2025 07:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE96d3V6WEF0MTgwd1lRUU8wcG9wby1aR0NhQ1hOYXdjeGhqd3lJLUtGdF9FbjZjQjIwd0tFTEF5RTh6WUh2QU9yOE5BZkZGY2o1X011dnQ4S0k</guid></item><item><title>我到2025年的福岛转了转：预料之中，意料之外 - 观察者</title><link>https://www.guancha.cn/internation/2025_10_10_792759.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	【文/ 观察者网 张译心】
+&lt;/p&gt;
+&lt;p&gt;
+	9月27日，我从东京乘坐火车到达了福岛县双叶郡大熊町的车站。很多国人恐怕没有听说过这个地方。但仅需知道，这个名叫“大野”的车站，距离至今仍在产生核污染水的福岛第一核电站（后文简称“福岛核电站”）仅有不到五公里的直线距离。
+&lt;/p&gt;
+&lt;p&gt;
+	在到达之前，我曾想象过2025年福岛核电站的周围会是何种景观。之前我曾写过一篇介绍“311大地震”灾区居民现状的文章，但相应的资料均是从日本的各大媒体和社交网络上获得的。我在执笔时当然尽可能筛选、取用了值得信任的信息，但坦白地说，心里总是存在几分心虚。
+&lt;/p&gt;
+&lt;p&gt;
+	这也让我产生了一个疑问：福岛核电站周围，现在看起来是什么样子，当地的居民过着怎样的生活？而解答疑惑的最好方式就是自己去看看。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009182043900.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	在当地的数天行程中，就没有见到除我之外的其他游客打扮、不说日语的人，一个都没有。 &lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;出乎意料的重建&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	出乎我意料的是，单就车站和车站周边而言，相关设施和道路的建设水平，可以说相当不错。能看出设施是最近几年新建的，门口还有即将发车前往居民区的“免费巴士”（不过实际是类似依维柯的车型）。单就我第一时间的感受来说，这里的感觉非常像是国内某些刚刚建好火车站跟广场的小县城，只是从规模体量上小得多得多而已。
+&lt;/p&gt;
+&lt;p&gt;
+	不过很快我意识到，大熊町的车站周边本就是2020年前后才“解除限制”，重新开放给居民返乡的。因此配套的基础设施是新建的，本来也不算奇怪。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009180535107.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	大熊町大野站周边的广场，能看得出来设施成色非常新。
+&lt;/p&gt;
+&lt;p&gt;
+	很快，大熊町向我露出了它更“真实”的面目。尽管道路情况不算糟糕，至少和我国大多数的乡镇道路相当，但有些过于空旷的民居和时不时出现的褪色路牌，以及零星散布的荒芜废墟，都在告诉我这并不是一个普通的日本村镇，而是受到“311大地震”和福岛核问题影响最严重的地区。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009180920419.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	大熊町随处可见的废墟。&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	赶巧的是，我在车上正好碰到一位从能登地区到当地社区中心做分享的先生，我也应他的邀请参加了当天下午的交流活动。
+&lt;/p&gt;
+&lt;p&gt;
+	可以明显感受到，与能登不同，至少在“震后救灾、重建”的问题上，福岛比能登的运气要更好。相比当前几乎处于“摆烂”状态的能登灾区的清理和重建工作，我目之所及的大熊地区其实已经不太看得出来地震和海啸带来的影响了。先不论过了多少年吧（虽然这有点耍流氓了），至少当地重建的一些成果，我作为一个外来人已经能看到了。
+&lt;/p&gt;
+&lt;p&gt;
+	然而，这仅仅只限于“除开核问题不谈”的条件下。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009181320181.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	当地市民会馆中举办的对能登灾区现状的分享活动，但来参与的除我之外都已经是老年人。&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;阴魂不散的福岛核问题&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	在福岛核电站周围，要抛开核问题不谈，是不可能的。从车站到学校，从政府办事处到国道公路上，随处可见的盖革计数器和相关数字都在提醒我，这是个被核问题严重困扰的地区。只是这次临行前忘记带上了专门准备的便携盖革计数器，没法跟当地的公开数据“对账”，成为了此行最大的遗憾。
+&lt;/p&gt;
+&lt;p&gt;
+	福岛核电站的位置处于当地大熊町和双叶町的正中，这两个地区也因此受影响最大。最明显的一点是，当地还有相当大片的区域被认定为是“归还困难区域”。如果顺着当地类似于国道的公路前进的话，也随处可以看到大量路牌和路障，表示前方禁止通行。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009180954154.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	红色范围内即为“归还困难区域”。此外图中靠右侧的灰黑色区域则是福岛核电站和存放被辐射污染的水和土壤的储藏区域。图中仅为大熊町的相关区域地图，北部、南部还有更多区域目前处于封锁当中&lt;span&gt;。&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	被封闭的区域基本都是当前还未能完成辐射清理的区域，或者是通往福岛核电站的必经区域。当时在路过一个路口时，我还发现罕见地有两个穿着制服值班的守卫。但直到我回国重新整理这段游记时，才意识到照片背后的那座双叶医院和紧邻的养老院，曾发生过多么骇人的惨剧。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009180453220.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	在福岛核电站机组爆炸后，周围被迅速划为撤离区。由于日本政府等机构的应对不力，画面背后的双叶医院及临近养老院甚至出现了“警察强令医护人员撤离，仅留下患者、老人们等待后续救援”的情况，最终他们由并非医护专业的自卫队带走。医院患者前后有超过24人死亡，养老院甚至发生了过半老人（50位）死亡的惨剧。&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	其中尤其让我感到荒诞的是，一块提示当地和东京都市圈距离的路牌：两地间距仅有二百余公里。不论原因为何，一个距离国家的政治、经济、文化中心仅二百余公里的核电站，能出这种规模的恶性事故，还能在这么多年后处理成目前这个样子，实在是让我这个中国人难以想象。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009180522766.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	至于当前仍然存在的“归还困难区域”能否回归正常，我只能持悲观态度。
+&lt;/p&gt;
+&lt;p&gt;
+	至少就纸面上的相关规定，相关区域必须在完成辐射清理后才能够开放并让居民们返回故乡。但完全可以预料、也是可以理解的是，许多在灾后前往外地避难的居民恐怕并不想要真的回到故乡，而这又反过来造成当地政府难以开展工作、许多预算事实上被“浪费”的困局。考虑到当地乃至于整个福岛的各项产业所面临的难题，要如何真正完成“复兴”，恐怕是一个没有人敢打包票回答的难题。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;会有核电产业之外的“救世主”出现吗？&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	27日到29日之间，我蹬着大熊町当地租到的共享助力车，大概把山区之外的大熊町大体转了一圈，还一路骑到了北边的浪江町和双叶町。南边的富冈町也坐着车简单转了转，但我总有一个问题得不到解答：当地人平时都靠干什么糊口？
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Fri, 10 Oct 2025 07:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBvV2xfUE8ycDM3TEJaeEwzLUxnUnA5eVpmUHlYSkhydFF2ODUxTzJiSDJLX0ZWOEFmcmY3dkxBRHMwR1RMUkxHZTlUNU96bkFydTlNT2hFaTQyMlZDQWpLZTBJTWFLMjdoQlE</guid></item><item><title>大疆降价风暴背后，藏着一场生死攻防战 - 虎嗅</title><link>https://m.huxiu.com/article/4789932.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="article-detail-content"&gt;
                             
                           &lt;div class="article-ai-summary js-ai-summary-box"&gt;
     
@@ -250,7 +382,18 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 10 Oct 2025 06:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1aTWFlSTJRUmlIUXgzOVhnVmtZVnhoZU83UVVlOGxUcDZpRGMtUVI3TjZhOThVYVJsQmlWc2xISFVoR3p6aDRVZ1RsR2k1TFk1aFNBbUNEZE8</guid></item><item><title>微星首款背插显卡发布：纯白、看不到一根线 - 驱动之家</title><link>https://news.mydrivers.com/1/1079/1079274.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 10 Oct 2025 06:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1aTWFlSTJRUmlIUXgzOVhnVmtZVnhoZU83UVVlOGxUcDZpRGMtUVI3TjZhOThVYVJsQmlWc2xISFVoR3p6aDRVZ1RsR2k1TFk1aFNBbUNEZE8</guid></item><item><title>年轻一代面临“就业灾难”，全球企业转向AI 取代新员工- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/376622</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;根据英国标准协会（BSI）的一项研究，全球商业&lt;span&gt;领导者&lt;/span&gt;表示，年轻人进入职场时正面临一场 “就业灾难”。许多公司优先投资人工智能(AI)技术，而非新员工的招聘，这使得初入职场的年轻人面临更大的挑战。该报告在英国、美国、法国、德国、澳大利亚、中国和日本等七个国家，对850多名商业&lt;span&gt;领导者&lt;/span&gt;进行了调查。&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-816d1914c9d0195f70b7c66c29d9dcfa45e.png"&gt;&lt;/p&gt; 
+&lt;p&gt;调查显示，四成（41%）的公司高管认为，AI 使他们能够减少员工数量。近三分之一(31%)的受访者表示，他们的组织在考虑聘用新员工之前，首先会考虑 AI 解决方案。两成(40%)的&lt;span&gt;领导者&lt;/span&gt;预计，在未来五年内，企业将更加倾向于使用 AI 来替代人力。更令人担忧的是，四分之一的受访者认为，几乎所有的入门级工作都可以通过 AI 来完成。&lt;/p&gt; 
+&lt;p&gt;BSI 的首席执行官苏珊・泰勒・马丁（Susan Taylor Martin）表示，尽管 AI 为全球企业带来了巨大的机会，但在追求更高的生产力和效率的同时，企业也不能忽视人力资源的重要性。她强调，必须进行长期规划和对员工的投资，以确保可持续和高效的就业环境。&lt;/p&gt; 
+&lt;p&gt;此外，调查还发现，近四成（39%）的商业&lt;span&gt;领导者&lt;/span&gt;表示，AI 技术的应用已经导致了入门级职位的减少或取消。这一现象引发了对于未来就业市场的深刻担忧。虽然超过一半的受访者表示，他们感到很幸运在 AI 广泛应用之前开始职业生涯，但同样有53% 的&lt;span&gt;领导者&lt;/span&gt;认为，AI 实施的好处将大于对劳动力市场的干扰。&lt;/p&gt; 
+&lt;p&gt;随着 AI 技术在英国企业中的快速应用，调查显示，三分之二（76%）的&lt;span&gt;领导者&lt;/span&gt;预计，新的 AI 工具将在未来12个月内为他们的组织带来显著好处。企业主要投资 AI 是为了提高生产力、效率、降低成本及弥补技能缺口。&lt;/p&gt; 
+&lt;p&gt;值得注意的是，BSI 对公司年度报告的分析表明，“自动化” 一词的出现频率几乎是 “技能提升” 或 “再培训” 词汇的七倍。最近的另一项调查显示，半数英国成年人对 AI 对其就业的影响感到担忧，担心它可能会取代或改变他们的工作。&lt;/p&gt; 
+&lt;p&gt;目前，英国的就业市场正处于降温阶段，工资增长放缓，失业率达到四年来的高点4.7%。不过，大多数经济学家认为，这与 AI 投资的加速并无直接关系。同时，也有声音警告，当前 AI 公司的高估值可能会导致股市泡沫，进而引发市场崩盘的风险。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Fri, 10 Oct 2025 06:47:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE12VFkyRWVWRGN4UFVIZ293aWR2UVItblRLVE9qbGMyRnZLeG0xUUhCWU1rQXJiMC1SM0lTamVTbFBZTG1QZFpiRnVmVQ</guid></item><item><title>微星首款背插显卡发布：纯白、看不到一根线 - 驱动之家</title><link>https://news.mydrivers.com/1/1079/1079274.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技10月10日消息，微星宣布推出新款显卡“&lt;strong&gt;RTX 5070 Ti 16G VENTUS 3X PZ&lt;/strong&gt;”，这也是首款采用背插设计方案的显卡，其中PZ代表“PROJECT ZERO”。&lt;/p&gt;
 &lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251010/6edbb29f47ee4d489ecd8623e003050e.png" target="_blank"&gt;&lt;img alt="微星首款背插显卡发布：纯白、看不到一根线" h="323" src="//img1.mydrivers.com/img/20251010/s_6edbb29f47ee4d489ecd8623e003050e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1272,7 +1415,77 @@ iPhone Air硬盘跑分&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 09 Oct 2025 23:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE5MMVJLRnREXzh1OV9LeXFSYlo1UUwxdnQxcmViT3NjY0tKaEtyLWVWMU00T2VSNUtyeHk2R21tazdaVGZhbDJ2emFCdFRqSzJWaXhmT1hmM1RNY1haYzA1czZDWFk5Y2RiYlNLOTdScWdFNFpWeTloRg</guid></item><item><title>英特尔公布首个18A工艺芯片架构细节：年底前开始出货 用于AI PC等 - 东方财富</title><link>https://wap.eastmoney.com/a/202510103529949488.html</link><description>&lt;ol&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QLVpvWWhfQ09ESlJCNml4a0l0QkZqczJRR3dVZExVSUZZMkx4c1p0Nk1sVHdxNU9qLWJtWUExdVhZcUVUcm9kNml1aHBtcmc0Q0JWRWg2ek5PQ3ZjUURGNg?oc=5" target="_blank"&gt;英特尔公布首个18A工艺芯片架构细节：年底前开始出货 用于AI PC等&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;东方财富&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nOU9mTE9TVEtlMkE4MUIzS05rLVI4eHBFTW9nVjhzRXVJM0pKbTlEMlJ2T21WYVdNeS1WQWRpQ1RTTGlzYmJMVU5ZclVNalYxN29Hd1NBNTU?oc=5" target="_blank"&gt;Intel Panther Lake深度揭秘：P+E+LPE混合架构日臻完美！功耗低得惊人&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;驱动之家&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBpZnJ3OG4yVjFVLWNNRTZiYzA4aXlPTnNHckk1RVJRaEo5Ukt3YkdTXzQ1c2dMWkxEMHg4XzRXaHpvdmF0V0FBVA?oc=5" target="_blank"&gt;成败全看它！英特尔CEO手捧全球首款1.8纳米工艺芯片晶圆亮相&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;财联社&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE50M1ZIZ1VCNlgzVFBkcTlUVGx5aE52MEU1YjJySnVpOXBZcmVSSkFnVVhtdkRLOUVndEZCdE9mM0VPdlo3WGxaVGEwOTVuMVJQVTF3S09IRzRYazczdGhZREFmbWc?oc=5" target="_blank"&gt;英特尔展示1.8纳米CPU，正在美国量产-观察者网&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;观察者&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9rT1dUNEd5MjFsdkF5U3hZWFpUbGd5dndtMjB6ekE2aGl1NExyc1N6cXF3ZHRIbVBld1hwdHBya1pZb3c?oc=5" target="_blank"&gt;英特尔想造一种很新的 AIPC&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;爱范儿&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;</description><author>东方财富</author><pubDate>Thu, 09 Oct 2025 23:47:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1QLVpvWWhfQ09ESlJCNml4a0l0QkZqczJRR3dVZExVSUZZMkx4c1p0Nk1sVHdxNU9qLWJtWUExdVhZcUVUcm9kNml1aHBtcmc0Q0JWRWg2ek5PQ3ZjUURGNg</guid></item><item><title>阿航空难38人死亡，普京道歉：3架乌克兰无人机侵入，俄军发射2枚导弹，在客机数米外爆炸 - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/2025-10-10/detail-infticea9635295.d.html?vt=4&amp;pos=108</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 09 Oct 2025 23:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE5MMVJLRnREXzh1OV9LeXFSYlo1UUwxdnQxcmViT3NjY0tKaEtyLWVWMU00T2VSNUtyeHk2R21tazdaVGZhbDJ2emFCdFRqSzJWaXhmT1hmM1RNY1haYzA1czZDWFk5Y2RiYlNLOTdScWdFNFpWeTloRg</guid></item><item><title>量子计算“接棒”AI，谷歌两年内“走出”五位诺奖得主 - 新浪财经</title><link>https://finance.sina.com.cn/jjxw/2025-10-10/doc-inftkerq9104911.shtml?cre=sinapc&amp;mod=g</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p cms-style="font-L "&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;两年时间科技巨头谷歌“走出”了五位诺贝尔奖得主。&lt;/p&gt;&lt;p cms-style="font-L"&gt;当地时间10月7日，瑞典皇家科学院决定将2025年诺贝尔物理学奖授予科学家约翰·克拉克（John Clarke）、米歇尔·H·德沃雷特（Michel H. Devoret）、约翰·M·马蒂尼斯（John M. Martinis），以表彰他们“发现电路中的宏观量子力学隧道效应和能量量子化”。&lt;/p&gt;&lt;p cms-style="font-L"&gt;三人通过一系列实验证明，量子世界的奇特特性可在宏观系统中具象化。他们设计的超导电路系统能从一种状态隧穿到另一种状态，仿佛直接穿过一堵墙。他们还证实，该系统会以特定大小的能量“剂量”吸收和释放能量，与量子力学的预测完全一致。三位获奖者将平分1100万瑞典克朗（约合836万元人民币）奖金。&lt;/p&gt;&lt;p cms-style="font-L"&gt;有趣的是，由于这三位科学家中有两位都与谷歌有紧密的联系，也就意味着，这已经是谷歌连续两年有相关科学家获得诺贝尔奖。其中，德沃雷特目前在谷歌担任量子AI团队的量子硬件首席科学家，马蒂尼斯于2014年至2020年期间担任谷歌量子AI团队的硬件负责人。&lt;/p&gt;&lt;p cms-style="font-L"&gt;对此，谷歌的CEO桑达尔·皮查伊（Sundar Pichai）在X（原推特）平台上表示祝贺，强调获奖者的研究为公司在量子计算领域取得的最新突破奠定了基础。他写道：“这个早晨让我感到很幸运，能在一家拥有五位诺贝尔奖得主的公司工作——两年内获得了三个奖项！”谷歌的官方账号也迅速向这几位诺贝尔奖得主表示了祝贺。&lt;/p&gt;&lt;p cms-style="font-L"&gt;2024年，诺贝尔化学奖被授予了三位科学家，一半被授予美国华盛顿大学教授大卫·贝克 （David Baker），以表彰其在计算蛋白质设计方面的贡献，另一半被授予谷歌旗下AI研究公司DeepMind的联合创始人兼CEO丹米斯·哈萨比斯（Demis Hassabis）和资深科学家约翰·乔普（John M. Jumper），以表彰其在蛋白质结构预测方面的贡献。&lt;/p&gt;&lt;p cms-style="font-L"&gt;此外，获得2024年诺贝尔物理学奖的知名“AI教父”杰弗里·辛顿（Geoffrey Hinton）也曾于2013年至2023年期间在谷歌任职。这是因为在2013年，谷歌收购了辛顿在加拿大创办的、专注于深度神经网络研究的AI公司DNNresearch。&lt;/p&gt;&lt;p cms-style="font-L"&gt;不过，这五位诺贝尔奖得主中，马蒂尼斯和辛顿都早已离开了谷歌。辛顿于2023年5月离职，他曾在接受采访时表示，离开谷歌“是为了能够自由地谈论AI的危险”。&lt;/p&gt;&lt;p cms-style="font-L"&gt;而马蒂尼斯在2020年离开谷歌，则是因为他与谷歌量子AI部门内部在团队管理与研究方向上出现了分歧。据外媒报道，马蒂尼斯希望以“主导研究者”的身份领导硬件团队，而以谷歌量子AI创始人兼负责人哈特穆特·乃文（Hartmut Neven）为首的部门管理层更倾向于一种扁平化的管理模式。&lt;/p&gt;&lt;p cms-style="font-L"&gt;对此，网友也展开了争论，一方认为谷歌“只是雇用过这些人”，现在重点宣传未免有“蹭热度”的嫌疑；另一方则认为，这对于一家商业公司来说已经是值得称赞的成绩，并且现有AI大模型的共同鼻祖Transformer架构确实也诞生于谷歌。&lt;/p&gt;&lt;p cms-style="font-L"&gt;针对本次诺贝尔物理学奖，在谷歌官网公告中，哈特穆特·乃文写道：“对于谷歌量子AI团队而言，此次诺贝尔奖不仅是对历史性科学成就的庆祝，更是对我们当前超导量子计算研究基础的认可。”&lt;/p&gt;&lt;p cms-style="font-L"&gt;他指出，德沃雷特和马蒂尼斯的研究推动了谷歌量子AI的进展，包括在2024年12月发布的量子芯片Willow，以及在2019年实现的里程碑式“量子霸权”实验（首次通过量子计算机完成了经典计算机无法在合理时间内完成的任务），并将继续指引谷歌在量子硬件路线图上前进。&lt;/p&gt;&lt;p cms-style="font-L"&gt;值得注意的是，从诺奖人数来说，目前贝尔实验室（Bell Labs）依然遥遥领先，根据贝尔实验室官网，自1937年以来，该研究机构的科学家已经收获了10项诺奖和5项图灵奖。&lt;/p&gt;&lt;p cms-style="font-L"&gt;澎湃新闻记者 胡含嫣&lt;/p&gt;&lt;p cms-style="font-L"&gt;&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 09 Oct 2025 23:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijwFBVV95cUxPX2g5d2ZUUVdSLVdWTUVFSUpELS1ZV1ItdXZ6dUVwU2g0S2gzQkVuYjlSS0VKcU16UDZ1U3BsRnZ1RHVMSmRUV1ZtdjduM19SY1JxX3JuZHN5bFRKZDlCU0cxZDluX1U2MDREM1hFaUlFemphZXFvZVRJb3dmUzFIUTdUTjF2ZmhDUndJcXlRSQ</guid></item><item><title>英特尔公布首个18A工艺芯片架构细节：年底前开始出货 用于AI PC等 - 东方财富</title><link>https://wap.eastmoney.com/a/202510103529949488.html</link><description>&lt;ol&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QLVpvWWhfQ09ESlJCNml4a0l0QkZqczJRR3dVZExVSUZZMkx4c1p0Nk1sVHdxNU9qLWJtWUExdVhZcUVUcm9kNml1aHBtcmc0Q0JWRWg2ek5PQ3ZjUURGNg?oc=5" target="_blank"&gt;英特尔公布首个18A工艺芯片架构细节：年底前开始出货 用于AI PC等&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;东方财富&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nOU9mTE9TVEtlMkE4MUIzS05rLVI4eHBFTW9nVjhzRXVJM0pKbTlEMlJ2T21WYVdNeS1WQWRpQ1RTTGlzYmJMVU5ZclVNalYxN29Hd1NBNTU?oc=5" target="_blank"&gt;Intel Panther Lake深度揭秘：P+E+LPE混合架构日臻完美！功耗低得惊人&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;驱动之家&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBpZnJ3OG4yVjFVLWNNRTZiYzA4aXlPTnNHckk1RVJRaEo5Ukt3YkdTXzQ1c2dMWkxEMHg4XzRXaHpvdmF0V0FBVA?oc=5" target="_blank"&gt;成败全看它！英特尔CEO手捧全球首款1.8纳米工艺芯片晶圆亮相&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;财联社&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE50M1ZIZ1VCNlgzVFBkcTlUVGx5aE52MEU1YjJySnVpOXBZcmVSSkFnVVhtdkRLOUVndEZCdE9mM0VPdlo3WGxaVGEwOTVuMVJQVTF3S09IRzRYazczdGhZREFmbWc?oc=5" target="_blank"&gt;英特尔展示1.8纳米CPU，正在美国量产-观察者网&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;观察者&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9rT1dUNEd5MjFsdkF5U3hZWFpUbGd5dndtMjB6ekE2aGl1NExyc1N6cXF3ZHRIbVBld1hwdHBya1pZb3c?oc=5" target="_blank"&gt;英特尔想造一种很新的 AIPC&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;爱范儿&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;</description><author>东方财富</author><pubDate>Thu, 09 Oct 2025 23:47:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1QLVpvWWhfQ09ESlJCNml4a0l0QkZqczJRR3dVZExVSUZZMkx4c1p0Nk1sVHdxNU9qLWJtWUExdVhZcUVUcm9kNml1aHBtcmc0Q0JWRWg2ek5PQ3ZjUURGNg</guid></item><item><title>阿航空难38人死亡，普京道歉：3架乌克兰无人机侵入，俄军发射2枚导弹，在客机数米外爆炸 - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/2025-10-10/detail-infticea9635295.d.html?vt=4&amp;pos=108</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
 	
 
 &lt;a href=""&gt;
@@ -2221,57 +2434,4 @@ Cores）运行，又能进一步提高性能。除了这些性能提升外，我
   &lt;p&gt;不然可能真得考虑考虑，把已经埋了的 Model 2 老祖再请出来了。&lt;/p&gt;
   &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/7uXPg5268V8V2az14IGkgQ?scene=1&amp;amp;click_id=21"&gt;“差评X.PIN”&lt;/a&gt;，作者：脖子哥，36氪经授权发布。&lt;/p&gt;
  
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Thu, 09 Oct 2025 13:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1FYncyVjBWbnR6MndXRWoyZjZLM2hVdmN3VGMwck5FQkFXM3hRVEtQNmpHd0UxclBaT1ZZWnp1TzdiNXNaeWcxUXZKb0U0QQ</guid></item><item><title>腾讯在杭州成立新公司，或与游戏业务相关-观察者网 - 观察者</title><link>https://www.guancha.cn/economy/2025_10_09_792666.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/origin/2025/10/09/20251009132237126.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	公开资料显示，近日，杭州光跃互娱科技有限公司成立，法定代表人为陆遥，经营范围包含：软件开发；信息技术咨询服务；技术服务、技术开发、技术咨询等。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2025/10/09/20251009132000209.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	公司相关信息&lt;span&gt; 天眼查&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	天眼查股权数据显示，该公司由腾讯科技（上海）有限公司全资持股。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2025/10/09/20251009132520744.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	股东信息 天眼查
-&lt;/p&gt;
-&lt;p&gt;
-	据腾讯游戏学堂公示的信息，该公司法定代表人陆遥的身份为腾讯互动娱乐旗下光子工作室群的技术中心总监。公开资料显示，他曾参与《欢乐斗地主》、《节奏大师》、《全民小镇》等游戏的研发。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2025/10/09/20251009132826570.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	相关信息介绍 腾讯游戏学堂
-&lt;/p&gt;
-&lt;p&gt;
-	据悉，近年来，腾讯多次在杭州布局，覆盖游戏、云服务等多类业务。
-&lt;/p&gt;
-&lt;p&gt;
-	据悉，2025年7月23日，传腾讯控股的北京永航科技有限公司杭州分公司正式在杭州市滨江区成立，将专注于《QQ炫舞》相关产品的开发。
-&lt;/p&gt;
-&lt;p&gt;
-	此外，腾讯旗下全资子公司萨罗斯网络科技（深圳）有限公司也在杭州设有分支机构。
-&lt;/p&gt;
-&lt;p&gt;
-	此前还有信息称，腾讯正在杭州筹备开发3A游戏大作，同时正在招募游戏方面人才。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2025/10/09/20251009133743369.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	相关招聘信息&lt;span&gt;&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Thu, 09 Oct 2025 12:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE83eUw2a2FmMnRNR09kT2phVzBjSUZCdzFaQmRjWTNyeVRLOWpENWdsQnowWG9USGNXbVVoaUM3NkQ1LVJZcHpTeTRWeWd5RXhfUm1DX0JEOE1nUG5mZE0xdDVoQ1E</guid></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Thu, 09 Oct 2025 13:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1FYncyVjBWbnR6MndXRWoyZjZLM2hVdmN3VGMwck5FQkFXM3hRVEtQNmpHd0UxclBaT1ZZWnp1TzdiNXNaeWcxUXZKb0U0QQ</guid></item></channel></rss>
