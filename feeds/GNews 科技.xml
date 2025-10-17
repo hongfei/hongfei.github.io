@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>iPhone Air液压机暴力抗弯测试：100公斤终于压断了 - 驱动之家</title><link>https://news.mydrivers.com/1/1080/1080655.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>跨平台原生 UI 框架 AtomUI OSS 5.0.0 发布 - OSCHINA</title><link>https://www.oschina.net/news/377881/atomui-5-0-0-released</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-21966230d7aea7707d0a84cd5ca39fc4f17.png"&gt;&lt;/p&gt; 
+&lt;p&gt;很高兴在这里宣布 AtomUI OSS 5.0.0 版本发布，本次更新给各位开发者朋友带来了新的 Steps 控件以及优化对 Application 类的控制权，同时修复了若干 BUG。&lt;/p&gt; 
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;新特性&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;新增 Steps 控件&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;数据表格新增操作提示器&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;优化&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;优化 NavMenu 控件结构，重写底层结构，支持用数据源绑定的方式生成导航菜单&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;优化&lt;/span&gt;&lt;span&gt;&lt;span&gt;对 Application 的接管，改用 IThemeManager 的方式，方便Prism 等框架进行整合&lt;/span&gt;&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;&lt;span&gt;优化 combobox 控件的 Popup，支持开发者自己指定显示条目的数量&lt;/span&gt;&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;&lt;span&gt;优化 CircleProgress，现在支持自己指定成功和失败的图标&lt;/span&gt;&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;&lt;span&gt;优化 SelectableTextBlock 控件&lt;/span&gt;&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;&lt;span&gt;优化 LoadingIndicator，重名为 Spin，并且彻底重写&lt;/span&gt;&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;Bug 修复&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt; 
+&lt;ol&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;修复在苹果系统下编译方法不存在的问题&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;修复点击 DataGrid 的行标题报异常&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;修复系统字体干扰问题&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;修复 Button 设置字体为斜体的时候，部分字母显示不全&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;修复 ColorPicker 关闭色彩选择框后，再打开就失效了&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;&lt;span&gt;修复 atom:Window 的 IsTitleBarVisible 属性无效&lt;/span&gt;&lt;/p&gt; &lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;p&gt;&lt;strong&gt;关于 5.0.0 版本的说明&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span&gt;开发者朋友可能比较疑惑，为什么 AtomUI OSS 的版本一下飙升到 5.0，这里我给大家进行说明一下。因为 AtomUI OSS 本质上是 Ant Design 5.0 设计语言的 Avalonia/.NET 实现，为了降低对开发者的解释成本，AtomUI OSS 从这个版本开始锚定 Ant Design 的主版本。&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span&gt;例如：&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;AtomUI OSS 5.0 -&amp;gt; Ant Design 5.0&lt;br&gt; AtomUI OSS 6.0 -&amp;gt; Ant Design 6.0&lt;br&gt; AtomUI OSS 7.0 -&amp;gt; Ant Design 7.0&lt;/p&gt; 
+&lt;p&gt;&lt;span&gt;并且以此类推&lt;/span&gt;&lt;/p&gt; 
+&lt;hr&gt; 
+&lt;p&gt;AtomUI OSS 发展离不开开发者朋友的支持和帮助，如果您在使用过程中，发现任何问题欢迎在我们的开发者群和 Gitee 或者 Github 上给我们留下宝贵的意见，谢谢！&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-d962cb9ae5ed56f527aad07ac7984f9b6e3.png"&gt;&lt;/p&gt; 
+&lt;hr&gt; 
+&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-783d2c909cd373d09fec00bc033150da1d6.png"&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span&gt;北京秦派软件科技有限公司 (Qinware Technologie&lt;/span&gt;&lt;span&gt;s &lt;/span&gt;&lt;span&gt;&lt;span&gt;Co., Ltd.&lt;/span&gt;&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;span&gt; 是一家致力于开发生产力工具软件的技术公司，成立之初立志要在工具软件领域深耕，践行精益求精的研发精神，努力推出优质的生产力工具软件服务国内外的开发者，提升开发者的工作效率，同时创造出商业价值和社会价值。&lt;/span&gt;&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Fri, 17 Oct 2025 01:55:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiaEFVX3lxTE1YbGc1a2gzZ2tfSEZndFFObXZjN09RcFA4NU83RVVMclJzc1dLekp4dkdQU3ZtRzlGLWF2M2M5cDN1ZU16aXZJYkpEdmRJX3IxeW5BaGxyZl8yV0xMNXVjVmJWQk4zZ2pm</guid></item><item><title>iPhone Air液压机暴力抗弯测试：100公斤终于压断了 - 驱动之家</title><link>https://news.mydrivers.com/1/1080/1080655.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;iPhone Air液压机暴力抗弯测试：100公斤终于压断了&lt;/p&gt;
           
@@ -64,7 +103,43 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 17 Oct 2025 01:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE16RmlLM3h3MlRuWWNBYWdEa25MaFRVVHJxbV9LcGx6MFJkUENiUXVtUWFkNm0yTEpOdVd1YUVxTkZMWlFqTkVQWjBSbG9iR09pV0FNR3lZdlQ</guid></item><item><title>网传大批英伟达5090显卡现身大陆，微星急撇清 - guancha.cn</title><link>https://www.guancha.cn/economy/2025_10_17_793615.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 17 Oct 2025 01:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE16RmlLM3h3MlRuWWNBYWdEa25MaFRVVHJxbV9LcGx6MFJkUENiUXVtUWFkNm0yTEpOdVd1YUVxTkZMWlFqTkVQWjBSbG9iR09pV0FNR3lZdlQ</guid></item><item><title>国行eSIM手机终极教程来了！一文看懂iPhone Air如何开通eSIM、能否保留号码 - 驱动之家</title><link>https://news.mydrivers.com/1/1080/1080654.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月17日消息，iPhone Air国行版今天正式开启预购，对于国内通信行业堪称是里程碑产品。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;这是国行第一款彻底取消实体SIM卡的手机，必须使用eSIM，开启了国内手机的新时代。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;作为新技术，很多人还不太了解eSIM的各项问题，&lt;strong&gt;比如如何开通？能不能保留手机号？支持哪家运营商？出国能不能用……&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="国行eSIM手机终极教程来了！一文看懂iPhone Air如何开通eSIM、能否保留号码" h="387" src="//img1.mydrivers.com/img/20251017/14d4fc7f-497b-455e-b539-5b8f01ead8f6.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;官方统一解答来了：&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;首先明确，eSIM必须在线下开通，收到iPhone Air后要先激活并完成数据传输，之后再前往营业厅办理eSIM服务。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;eSIM可以沿用原来的号码吗？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;可以。在eSIM上选择号码与实体SIM卡相同，你可以沿用原来的号码，或是开通新号。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;iPhone Air支持双eSIM，你可同时使用两个eSIM号码。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="国行eSIM手机终极教程来了！一文看懂iPhone Air如何开通eSIM、能否保留号码" h="490" src="//img1.mydrivers.com/img/20251017/7e3129e3-a3fb-46d0-9ea0-96c5f0ae031c.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;前往运营商线下营业厅开通eSIM前，需要做哪些准备？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;1、携带本人有效身份证件&lt;/p&gt;
+&lt;p&gt;2、携带iPhone Air&lt;/p&gt;
+&lt;p&gt;3、如果你在同一运营商下将实体SIM卡转成eSIM，还需带上原有SIM卡&lt;/p&gt;
+&lt;p&gt;4、找到你附近的运营商营业厅&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;支持哪家运营商？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;中国移动、中国电信、中国联通都支持。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="国行eSIM手机终极教程来了！一文看懂iPhone Air如何开通eSIM、能否保留号码" h="287" src="//img1.mydrivers.com/img/20251017/d07acb84-ffff-440e-92bb-ff4a111fa818.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;如果先开通了eSIM，但数据还没传输，要怎么办？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;你可以先将新iPhone Air抹掉，再重新开机触发“快速开始”画面，然后按照提示进行数据迁移。&lt;/p&gt;
+&lt;p&gt;抹掉iPhone Air需打开设置＞通用＞传输或还原iPhone＞抹掉所有内容和设置。&lt;/p&gt;
+&lt;p&gt;如果你已为iPhone Air开通了eSIM，请在抹掉iPhone时选择保留eSIM并抹掉数据。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;在境外旅行时能用eSIM吗？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;使用eSIM进行国际漫游时的操作方式与使用实体SIM卡进行漫游时的操作方式一样，具体信息需要联系对应运营商。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;你也可以在中国大陆境外旅行时安装当地运营商或全球服务提供商的eSIM套餐。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 17 Oct 2025 01:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9wMC0ydFJVYUM1TGJDX0xyWlR6N1dLUlpiT2lNQTNoYlEwdjRyVVAwSUZEeEVuZFl5OUhuU05CSUNPemJVeFZjQTkyeThUdU52b1dKbEdoYVo</guid></item><item><title>网传大批英伟达5090显卡现身大陆，微星急撇清 - guancha.cn</title><link>https://www.guancha.cn/economy/2025_10_17_793615.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p align="center"&gt;
 	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
 &lt;/p&gt;
@@ -846,7 +921,85 @@ Type-A接口、1个2.5G网口、以及1个3.5mm音频插孔。
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 16 Oct 2025 10:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81LWxWZXZBM3JGY3p6Z3ZWVWROLUdvRWNUMFZ6LTY4N1g1Vlc1VUIzTXF2ZnJLcjY3TjhDLTZGX3A1bGVqaGVKTk9SakhnVHBXdFZBN2N6akc</guid></item><item><title>deepin 大佬为爱发电「极简待办神器」，实力颜值双在线- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/377600</link><description>&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 16 Oct 2025 10:05:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE1BRUt3OWNHQ2llbzFSV09BNHBINVMxangyNk56eVhKMXhvTFJTcWNWYjhPMzZCSUxRSm56TUo2cGU1VmkxSk9nVmZ6Zw</guid></item><item><title>地铁裸眼3D广告里女子被困不停跳舞 网友：太诡异了！ - 驱动之家</title><link>https://news.mydrivers.com/1/1080/1080547.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 16 Oct 2025 10:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81LWxWZXZBM3JGY3p6Z3ZWVWROLUdvRWNUMFZ6LTY4N1g1Vlc1VUIzTXF2ZnJLcjY3TjhDLTZGX3A1bGVqaGVKTk9SakhnVHBXdFZBN2N6akc</guid></item><item><title>雷军公开发言了！呼吁抵制水军黑公关，资源集中技术研发 - 量子位</title><link>https://www.qbitai.com/2025/10/342428.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article"&gt;
+				     &lt;h1&gt;雷军公开发言了！呼吁抵制水军黑公关，资源集中技术研发&lt;/h1&gt;
+    			   &lt;div class="article_info"&gt;
+             &lt;span class="author"&gt;&lt;img src="http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg" class="avatar avatar-200"&gt;&lt;em&gt;&lt;a href="https://www.qbitai.com/author/yifan" title="由一凡发布" rel="author"&gt;一凡&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;
+                          &lt;span class="date"&gt;2025-10-16&lt;/span&gt;
+             &lt;span class="time"&gt;18:23:30&lt;/span&gt;
+          &lt;span class="from"&gt;
+          来源：&lt;a href="http://www.qbitai.com" target="blank" rel="nofllow"&gt;量子位&lt;/a&gt;            &lt;/span&gt;&lt;/div&gt;
+                          
+                            			&lt;blockquote data-pm-slice="0 0 []"&gt;
+&lt;p class="pgc-h-forward-slash" data-track="44"&gt;一凡 发自 北京&lt;/p&gt;
+&lt;p class="pgc-h-forward-slash" data-track="45"&gt;智能车参考 | 公众号 AI4Auto&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class="pgc-h-forward-slash"&gt;只在地上跑，已经满足不了中国车企了。&lt;/p&gt;
+&lt;p data-track="3"&gt;刚刚，车圈大佬云集北京亦庄，在2025世界智能网联汽车大会上介绍了当前的成绩，展望了未来。&lt;/p&gt;
+&lt;p data-track="4"&gt;&lt;strong&gt;李书福&lt;/strong&gt;透露，吉利目前在低轨已部署在轨卫星64颗。&lt;strong&gt;朱华荣&lt;/strong&gt;则表示，长安会在2028年量产人形机器人，还谈到了与华为的合作。&lt;/p&gt;
+&lt;p data-track="5"&gt;华为&lt;strong&gt;余承东&lt;/strong&gt;虽然缺席了今年的大会，但大会上依然含“华”量爆满。除了长安，赛力斯、广汽、北汽等车企董事长也介绍了与华为合作的最新进展。&lt;/p&gt;
+&lt;p data-track="6"&gt;最后，雷军压轴登场，&lt;strong&gt;呼吁全行业共同抵制网络水军&lt;/strong&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p data-track="7"&gt;阅读指引：&lt;/p&gt;
+&lt;p data-track="8"&gt;李书福：吉利布局天地一体化科技生态&lt;/p&gt;
+&lt;p data-track="9"&gt;长安朱华荣：2028年量产人形机器人，2030年推出飞行汽车产品&lt;/p&gt;
+&lt;p data-track="10"&gt;赛力斯张兴海：率先与华为跨行合作，问界M9交付已超23万台&lt;/p&gt;
+&lt;p data-track="11"&gt;北汽张建勇：首发基于高通8775芯片打造的辅助驾驶&lt;/p&gt;
+&lt;p data-track="12"&gt;雷军：呼吁全行业“以安全为基础”，共同抵制网络水军&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 class="pgc-h-forward-slash" spellcheck="false" data-track="13"&gt;李书福：吉利布局天地一体化科技生态&lt;/h1&gt;
+&lt;p data-track="14"&gt;&lt;strong&gt;李书福&lt;/strong&gt;表示，吉利已经实现了算力、算法和数据AI“三驾马车”的均衡发展，接着介绍了当前的智能化成果。&lt;/p&gt;
+&lt;p data-track="15"&gt;包括AI座舱OS Flyme Auto 2、雷神AI电混2.0、千里浩瀚辅助驾驶系统，其中千里浩瀚是李书福强调“特别值得一提”的技术。&lt;/p&gt;
+
+&lt;p data-track="16"&gt;不仅是地上跑的，吉利还把目光投向了低空和低轨。&lt;/p&gt;
+
+&lt;p data-track="17"&gt;低轨方面，李书福透露目前吉利星座已经完成一期组网部署，在轨卫星64颗，卫星通信技术将在旗下多个品牌应用，并且探索为Robotaxi车队提供服务。&lt;/p&gt;
+
+&lt;p data-track="18"&gt;在低空领域，李书福认为旗下沃飞长空已成为行业头部，AE200首架机已成功下线，目标未来实现跨域出行、机场接驳、景区直达、低空游览和应急救援等需求。&lt;/p&gt;
+
+&lt;h1 class="pgc-h-forward-slash" spellcheck="false" data-track="19"&gt;长安朱华荣：2028年量产人形机器人，2030年推出飞行汽车产品&lt;/h1&gt;
+&lt;p data-track="20"&gt;朱华荣首先介绍了“新长安”的基本情况，旗下有&lt;strong&gt;143家&lt;/strong&gt;控股子公司，员工&lt;strong&gt;14.5万人&lt;/strong&gt;，资产总额达到了&lt;strong&gt;3087亿元&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p data-track="21"&gt;1-7月，L2辅助驾驶在乘用车的渗透率已达&lt;strong&gt;63%&lt;/strong&gt;，汽车智能化不断发展，朱华荣判断汽车未来的演化方向就是“智能汽车机器人”。&lt;/p&gt;
+
+&lt;p data-track="22"&gt;朱华荣介绍，到2030年具身智能市场规模将&lt;strong&gt;超230亿美元&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p data-track="23"&gt;长安将持续押注具身智能和飞行汽车赛道，在&lt;strong&gt;2028年量产下线人形汽车机器人&lt;/strong&gt;，2030年推出航线飞行汽车产品。&lt;/p&gt;
+
+&lt;h1 class="pgc-h-forward-slash" spellcheck="false" data-track="24"&gt;赛力斯张兴海：率先与华为跨行合作，问界M9交付已超23万台&lt;/h1&gt;
+&lt;p data-track="25"&gt;赛力斯董事长&lt;strong&gt;张兴海&lt;/strong&gt;登台首先点赞了前面发言的嘉宾：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p data-track="26"&gt;前面各位老总已经讲得很好，我深受启发。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p data-track="27"&gt;接着用一系列数据，介绍了赛力斯在智能化方面的成绩。&lt;/p&gt;
+
+&lt;p data-track="28"&gt;张兴海表示赛力斯率先开启与华为在汽车行业的跨行合作，透露当前问界M9上市一年半，累计交付已超&lt;strong&gt;23万台&lt;/strong&gt;，问界品牌辅助驾驶累计里程已超38亿公里，“第三空间”每天日均使用时长为2小时。帮助用户避免潜在的碰撞200多万次。&lt;/p&gt;
+&lt;p data-track="29"&gt;最后补充一个张兴海没有谈及的数字，截止今天收盘赛力斯市值为&lt;strong&gt;2622亿元&lt;/strong&gt;。&lt;/p&gt;
+&lt;h1 class="pgc-h-forward-slash" spellcheck="false" data-track="30"&gt;北汽张建勇：首发基于高通8775芯片打造的辅助驾驶&lt;/h1&gt;
+&lt;p data-track="31"&gt;北汽集团董事长&lt;strong&gt;张建勇&lt;/strong&gt;介绍了北汽在不同等级智能驾驶上的布局。&lt;/p&gt;
+&lt;p data-track="32"&gt;L2层面，北汽将在月底首发基于&lt;strong&gt;高通8775芯片&lt;/strong&gt;打造的辅助驾驶系统&lt;strong&gt;“元景智驾”&lt;/strong&gt;，面向10-15万元市场。&lt;/p&gt;
+
+&lt;p data-track="33"&gt;L3层面，张建勇透露北汽在2023年就获得了北京首批L3路测牌照，截止今年8月北汽L3测试里程已&lt;strong&gt;超11万公里&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="34"&gt;L4层面，北汽联合Robotaxi明星&lt;strong&gt;小马智行&lt;/strong&gt;基于极狐阿尔法T5打造的Robotaxi在今年7月已示范运行，今年将实现千台示范运行。&lt;/p&gt;
+
+&lt;p data-track="35"&gt;最后张建勇还介绍了北汽的一系列合作伙伴，合作方式有不同特点。比如地平线，北汽是和其成立了合资公司，将基于J6M开发行泊一体的智能辅助驾驶系统。&lt;/p&gt;
+&lt;p data-track="36"&gt;北汽介绍，其与华为是“车企+科技全生态”战略合作，&lt;strong&gt;未来3年会投资20亿元&lt;/strong&gt;用于智能辅助驾驶和智能座舱。&lt;/p&gt;
+
+&lt;p data-track="37"&gt;值得一提的是，张建勇在发言中全篇没有提及华为和北汽的合作项目&lt;strong&gt;享界&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="38"&gt;倒是紧随其后登场的广汽集团董事长&lt;strong&gt;冯兴亚&lt;/strong&gt;，提及了最近和华为共创的品牌&lt;strong&gt;启境&lt;/strong&gt;，透露品牌首款车型将在明年上市。&lt;/p&gt;
+
+&lt;h1 class="pgc-h-forward-slash" spellcheck="false" data-track="39"&gt;雷军：呼吁全行业“以安全为基础”，共同抵制网络水军&lt;/h1&gt;
+&lt;p data-track="40"&gt;在一众单独发言的嘉宾中，雷总最后压轴登场。登场第一张PPT，就是介绍小米汽车累计交付了40万台车。&lt;/p&gt;
+
+&lt;p data-track="41"&gt;然后接着介绍了YU7的智能化配置，比如全系标配了700TOPS算力、激光雷达和4D毫米波雷达。雷军认为，这样“大幅度地提高辅助驾驶系统的体验和安全性”。&lt;/p&gt;
+&lt;p data-track="42"&gt;此外雷军还透露，当前智能辅助驾驶专属的研发团队规模已达1800人，第一期总投入为&lt;strong&gt;57.9亿元&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p data-track="43"&gt;最后，雷军认为当前行业发展不是“零和博弈”，呼吁全行业要&lt;strong&gt;“以安全为基础”&lt;/strong&gt;，把资源和精力集中到科技创新和技术研发上，&lt;strong&gt;共同抵制网络水军和“黑公关”&lt;/strong&gt;。&lt;/p&gt;
+                
+                
+                &lt;p class="line_font"&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;版权所有，未经授权不得以任何形式转载及使用，违者必究。&lt;/em&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+     		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>量子位</author><pubDate>Thu, 16 Oct 2025 10:23:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTFBuUENaNmMxaDJYR2xaNXVGb1ZVWEJ5ZlVzMWlyZW9udUQ5M2p0WmNEZTJFVGl5XzJjVHN0aUF3U2NJY3hjM1hobGRucVVvaW5ydEJmSg</guid></item><item><title>deepin 大佬为爱发电「极简待办神器」，实力颜值双在线- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/377600</link><description>&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 16 Oct 2025 10:05:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE1BRUt3OWNHQ2llbzFSV09BNHBINVMxangyNk56eVhKMXhvTFJTcWNWYjhPMzZCSUxRSm56TUo2cGU1VmkxSk9nVmZ6Zw</guid></item><item><title>地铁裸眼3D广告里女子被困不停跳舞 网友：太诡异了！ - 驱动之家</title><link>https://news.mydrivers.com/1/1080/1080547.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;地铁裸眼3D广告里女子被困不停跳舞 网友：太诡异了！&lt;/p&gt;
           
@@ -973,7 +1126,125 @@ Type-A接口、1个2.5G网口、以及1个3.5mm音频插孔。
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 16 Oct 2025 08:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBkdlJwNHczNjVxNDFjeVlQXzF0TDVkczJtdmh1dkQ0SXFqcjk5M09MMHdLU01iVFFYelhwdlROdW15RE5KanNrYlJyS21aTXhUTXpBcHJVSVU</guid></item><item><title>美国防部挪用研发经费给军人发工资 - 凤凰网</title><link>https://news.ifeng.com/c/8nV6tcmB3Nr</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;10月15日是美国军方发薪日。据美国广播公司15日报道，美国国防部证实，为避免因政府停摆造成军人薪酬停发，美方已使用约80亿美元的国防部研究与开发方面经费发放军人薪酬。美国媒体对此评论称，把国会批准的专项资金转作其他用途，可能会让特朗普政府面临诉讼风险。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2025_42/C31AD4E0018C1EE5204251CDFD70819BFCFE9CDB_size351_w636_h423.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Thu, 16 Oct 2025 08:35:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9GRi1Ebm1vOTVINjk1Ujd4VTBibHY3WXVFb2lNUnNUMmtYTWFuQ2p0aExGZk5ObWxPV3BwLVZadThFN1NxRjhTV2xieEY</guid></item><item><title>历史首次！今年双11发放500亿消费券 6款淘宝AI导购全面落地 - 驱动之家</title><link>https://news.mydrivers.com/1/1080/1080513.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 16 Oct 2025 08:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBkdlJwNHczNjVxNDFjeVlQXzF0TDVkczJtdmh1dkQ0SXFqcjk5M09MMHdLU01iVFFYelhwdlROdW15RE5KanNrYlJyS21aTXhUTXpBcHJVSVU</guid></item><item><title>美国防部挪用研发经费给军人发工资 - 凤凰网</title><link>https://news.ifeng.com/c/8nV6tcmB3Nr</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;10月15日是美国军方发薪日。据美国广播公司15日报道，美国国防部证实，为避免因政府停摆造成军人薪酬停发，美方已使用约80亿美元的国防部研究与开发方面经费发放军人薪酬。美国媒体对此评论称，把国会批准的专项资金转作其他用途，可能会让特朗普政府面临诉讼风险。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2025_42/C31AD4E0018C1EE5204251CDFD70819BFCFE9CDB_size351_w636_h423.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Thu, 16 Oct 2025 08:35:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9GRi1Ebm1vOTVINjk1Ujd4VTBibHY3WXVFb2lNUnNUMmtYTWFuQ2p0aExGZk5ObWxPV3BwLVZadThFN1NxRjhTV2xieEY</guid></item><item><title>从 Meta 拆解、苹果眼镜爆料，看「不科幻但好用」的 AR 眼镜｜硬哲学 - 爱范儿</title><link>https://www.ifanr.com/1640763</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;blockquote&gt;&lt;p&gt;爱范儿关注「明日产品」，硬哲学栏目试图剥离技术和参数的外衣，探求产品设计中人性的本源。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;你戴过 AR 眼镜吗？&lt;/p&gt;
+&lt;p&gt;不是 Ray-Ban Meta 或小米眼镜那样「只能听不能看」的智能眼镜，也不是 Meta Quest 或 Apple Vision Pro 那样笨重的 XR 头显，而是一副外观与普通眼镜无异，但却带有显示屏幕的眼镜。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640767" src="https://s3.ifanr.com/wp-content/uploads/2025/10/hq720.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/hq720.jpg!720 686w, https://s3.ifanr.com/wp-content/uploads/2025/10/hq720-360x203.jpg 360w" sizes="(max-width: 686px) 100vw, 686px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ Meta Ray-Ban Display 图源：YouTube @Mrwhosetheboss&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;这种曾经是科幻电影和实验室专属的设备，已经成为了当下大小科技品牌的兵家必争之地，Meta、苹果、Google 都在酝酿新品，甚至还将其视作取代智能手机的下一代交互。&lt;/p&gt;
+&lt;p&gt;如果说之前的 AR 眼镜产品还处于一种相对青涩的时刻，体验上还有不少硬伤未能解决，那么从今年下半年开始，到后年这个阶段，AR 眼镜将进入「野蛮生长」的阶段，我们将会见到大量不同更实用的解决方案逐渐落地产品。&lt;/p&gt;
+&lt;h3&gt;往镜片里装「潜望镜」&lt;/h3&gt;
+&lt;p&gt;Meta 上个月发布的首款带屏眼镜 Ray-Ban Display 获得了不少关注，作为当下形态最优秀、技术最成熟的 AR 眼镜，戴上 Ray-Ban Display 的试用者都不免感叹一句「未来已至」。&lt;/p&gt;
+&lt;p&gt;【插入视频号】&lt;/p&gt;
+&lt;p&gt;戴上 Meta Ray-Ban Display 的人可能不会有所感知，但外人却会发现这款 AR 眼镜和其他同类产品有一个非常显著的差距——&lt;/p&gt;
+&lt;p&gt;眼镜屏幕点亮时，外人是完全看不到镜片上的反射和漏光，和一副普通不带屏幕的眼镜无异。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640768" src="https://s3.ifanr.com/wp-content/uploads/2025/10/comparison-1024x376.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/comparison-1024x376.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/comparison-360x132.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/comparison-768x282.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/comparison.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ @梦雅Myra 佩戴的 Display，在类似的角度不会出现明显的屏幕漏光&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;根据爱范儿和@梦雅Myra 的现场体验，只有从侧面角度看，才能发现眼镜几排光波导屏幕导线的反光。&lt;/p&gt;
+&lt;p&gt;几乎当下的所有 AR 眼镜产品或者原型机，都离不开镜片漏光的现象，Meta Ray-Ban Display 可以说是第一副真正解决了这个问题的眼镜。&lt;/p&gt;
+&lt;p&gt;著名拆解机构 iFixit 从 Ray-Ban Display 的镜片中，发现了这项技术背后的秘密。&lt;/p&gt;
+&lt;p&gt;AR 眼镜，本质上就是镜框上的一个小「投影仪」（光机），把光投到镜片上，然后再利用光波导技术，将光「关」在透明材料之中，引导光进行传播，最终传播到我们的肉眼之中。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640769" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ar-vr-glasses-illustration.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ar-vr-glasses-illustration.jpg!720 1000w, https://s3.ifanr.com/wp-content/uploads/2025/10/ar-vr-glasses-illustration-360x216.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/ar-vr-glasses-illustration-768x461.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px"&gt;&lt;/p&gt;
+&lt;p&gt;AR 智能眼镜有两种光波导方案：衍射光波导和几何光波导，目前大部分 AR 眼镜产品都采用的是前者，而 Ray-Ban Display 则用的是后者。&lt;/p&gt;
+&lt;p&gt;衍射波导就是通过纳米压印或者光刻的方式，在镜片上「雕刻」出大量平行刻痕，刻痕之间不透光，两刻痕之间的光滑部分可以透光，通过规律性的纳米结构改变光的衍射方向，这些刻痕也就是「光栅」。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640770" src="https://s3.ifanr.com/wp-content/uploads/2025/10/grind-1024x551.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/grind-1024x551.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/grind-360x194.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/grind-768x413.png 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 左边是入射光栅，右边是出射光栅，图源：Nature&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;这些光栅可以简单理解为光的「入口」和「出口」，光机的光被入射光栅带到镜片内部后，会沿着镜片内进行规律和有方向的「全反射」传播，到达出射光栅时，光的传播方向又被改变，定向地射向人眼。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640771" src="https://s3.ifanr.com/wp-content/uploads/2025/10/grid2-1024x503.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/grid2-1024x503.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/grid2-360x177.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/grid2-768x378.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/grid2.jpg 1188w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+
+&lt;p&gt;由于光在镜片中会进行密密麻麻的反射传输，很多能量在这个过程中损失，光子也不一定都能按照刻痕的引导进入人眼，还有很多光子会偏离预期方向，出现在不该出现的位置，于是造成镜片在外部看起来的漏光现象。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640774" src="https://s3.ifanr.com/wp-content/uploads/2025/10/allreflect-1024x124.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/allreflect-1024x124.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/allreflect-360x44.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/allreflect-768x93.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/allreflect.png 1588w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+
+&lt;p&gt;而几何波导的原理实际上比衍射波导简单很多：利用两种镜子，将光准确无误地从光机导向眼球。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640776" src="https://s3.ifanr.com/wp-content/uploads/2025/10/rayneo-1024x576.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/rayneo-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/rayneo-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/rayneo-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+
+&lt;p&gt;仔细观察 Ray-Ban Display 会发现镜片边缘有十一道比较显眼的「划痕」，那就是第一道棱镜，将光机的光引导到镜片中央的区域，那部分也有一些几乎不可见的反光镜，每面镜子会反射大约 5% 的光线，并将光线准确传导到人眼。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640781" src="https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_154-1024x576.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_154-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_154-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_154-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ Ray-Ban Display 的镜片，光线会在镜片中精准传输，图源：iFIxit&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;这样利用两种镜子进行光线准确传导的方式，和潜望镜的结构比较类似。好处就是，光在镜片中反射传播的密度大大降低，偏离预期传播的光也大幅减少，绝大部分的光都能顺利到达镜片中央的反光镜，也就不会那么容易漏光了。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640784" src="https://s3.ifanr.com/wp-content/uploads/2025/10/periscope-see-beyond-obstacles-with-this-ingenious-optical-device-vector.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/periscope-see-beyond-obstacles-with-this-ingenious-optical-device-vector.jpg!720 980w, https://s3.ifanr.com/wp-content/uploads/2025/10/periscope-see-beyond-obstacles-with-this-ingenious-optical-device-vector-360x360.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/periscope-see-beyond-obstacles-with-this-ingenious-optical-device-vector-768x768.jpg 768w" sizes="(max-width: 980px) 100vw, 980px"&gt;&lt;/p&gt;
+
+&lt;p&gt;不漏光还不是几何波导最大的优势。由于几何波导损耗低的特性，可以选用 LCoS 光机，对比传统衍射波导 AR 眼镜的 micro-LED 和激光方案，成本和能耗要低很多，刚好是 AR 眼镜当下的两大短板。&lt;/p&gt;
+&lt;p&gt;但就目前而言，几何波导方案还很难成为一种主流方案。目前具有几何波导镜片量产能力的仅有肖特（SCHOTT）一家光学企业。比起成熟的衍射波导生产，几何波导镜片需要非常精密的加工工艺，实现反射镜的角度、位置精准控制，如果角度有误差，很可能会影响成像。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640785" src="https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_3-1024x576.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_3-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_3-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/Meta_Glasses_3-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+
+&lt;p&gt;除此之外，由于镜片内部有微反射镜结构，几何波导镜片会有一定厚度，目前最少也是 2-3mm，而衍射波导镜片能做到 1mm；视场角方面，几何方案也不如衍射波导，也就是说显示区域会更小一点。&lt;/p&gt;
+&lt;p&gt;因此，关于几何波导和衍射波导孰优孰劣，在行业内一直有争议。Meta 在 Ray-Ban Display 上采用几何波导方案，更多也是一种技术试验。&lt;/p&gt;
+&lt;p&gt;但从长远来看，几何波导「不漏光」的特性，有着更深远的价值。&lt;/p&gt;
+&lt;p&gt;在这两三年智能眼镜兴起后，越来越多人发现身边的人戴的是一副「智能眼镜」，下意识会感觉有点不适。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640787" src="https://s3.ifanr.com/wp-content/uploads/2025/10/light-1024x576.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/light-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/light-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/light-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ Meta Orion，图源：TechRadar&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;这种智能设备带来的「侵入感」，在黑莓手机和无线耳机兴起的初期都存在着，别人能很明显感知到你在用一种设备，从而怀疑你的注意力是否还在当下。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于智能眼镜设备来说，这种感觉更明显——屏幕漏光会遮挡用户和外界的眼神交流，而眼神交流是现代人沟通、社交中非常重要的环节。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640788" src="https://s3.ifanr.com/wp-content/uploads/2025/10/strret.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/strret.jpeg!720 660w, https://s3.ifanr.com/wp-content/uploads/2025/10/strret-360x202.jpeg 360w" sizes="(max-width: 660px) 100vw, 660px"&gt;&lt;/p&gt;
+
+&lt;p&gt;因此，苹果的 Vision Pro 专门设计了一个「EyeSight」的功能，在佩戴头显时能模拟显示用户的「眼睛」，就是想保留用户在使用这种沉浸式设备时的在场感。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640790" src="https://s3.ifanr.com/wp-content/uploads/2025/10/eyesight-1024x576.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/eyesight-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/eyesight-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/eyesight-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而我们出门不愿意戴着一个笨重的头显出门，原因其实不仅因为它的重量和形态，还因为我们希望自己看起来依然是「人」，而不是一台机器的延伸。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最好的科技产品，往往无法让人察觉技术的存在，对自己、对他人来说都是如此。&lt;/p&gt;
+&lt;h3&gt;成不了 iPhone，那就先成为 Apple Watch&lt;/h3&gt;
+&lt;p&gt;如果说 Meta Ray-Ban Display 探索了智能眼镜硬件形态上的一种新思路，那么苹果正在酝酿的，则是智能眼镜软件上的解决方案。&lt;/p&gt;
+&lt;p&gt;由于眼镜紧凑的形态限制了性能，为其配备一个像 iOS 那样完整的图形界面操作系统将很困难，目前口碑比较好的 AR 智能眼镜产品，基本都搭载了一个非常简约的系统，功能和界面都比较类似按键功能机，不强调「App」的概念。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640793" src="https://s3.ifanr.com/wp-content/uploads/2025/10/meta-1024x535.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/meta-1024x535.jpeg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/meta-360x188.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/meta-768x401.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/meta.jpeg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ Meta Ray-Ban Display 更像是给 Meta AI 提供了一个可视化界面&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;苹果则准备为其 AR 眼镜搭载 Vision Pro 同款的 visionOS 系统，但不是一个独立的「完整版」。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640794" src="https://s3.ifanr.com/wp-content/uploads/2025/10/visionos-home-screen-mt-hood-1024x576.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/visionos-home-screen-mt-hood-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/visionos-home-screen-mt-hood-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/visionos-home-screen-mt-hood-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/visionos-home-screen-mt-hood.jpg 1600w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+
+&lt;p&gt;对于首款 Apple Glasses，苹果明显不想一步登天做能替代 iPhone 的设备，它更类似 Apple Watch，能够与 iPhone 和 Mac 进行配对，直接利用后两者现成的算力和性能。&lt;/p&gt;
+&lt;p&gt;如果是与 iPhone 进行配对，那么眼镜将显示一个更精简的界面，降低资源消耗；而和 MacBook 配对后，将解锁完整的 visionOS 体验。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640803" src="https://s3.ifanr.com/wp-content/uploads/2025/10/50434-99454-NReal-Air-and-iPhone-with-adapter-xl-1024x576.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/50434-99454-NReal-Air-and-iPhone-with-adapter-xl-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/50434-99454-NReal-Air-and-iPhone-with-adapter-xl-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/50434-99454-NReal-Air-and-iPhone-with-adapter-xl-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/50434-99454-NReal-Air-and-iPhone-with-adapter-xl.jpg 1312w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ XREAL AR 眼镜和 iPhone 配对，直接投影后者画面，图源：Apple Insider&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;另一个爆料是，苹果正在为 iPhone 准备「桌面模式」，通过 USB-C 口连接外部显示器，就能提供类似台前调度的界面，非常适合用来演示和观看，比起外接显示器，是一个更适合 AR 眼镜的界面。&lt;/p&gt;
+&lt;p&gt;这是一种非常具有「苹果特色」的方案——有自己成熟的操作系统以及可以协同的硬件生态，在这方面远远超越 Meta，比 Android XR 则多出了 Mac 这种电脑端的协同算力，以及更紧密的软硬结合。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640804" src="https://s3.ifanr.com/wp-content/uploads/2025/10/apple-wwdc24-visionos-2-mac-virtual-display-1024x576.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/apple-wwdc24-visionos-2-mac-virtual-display-1024x576.jpeg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/apple-wwdc24-visionos-2-mac-virtual-display-360x203.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/apple-wwdc24-visionos-2-mac-virtual-display-768x432.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/apple-wwdc24-visionos-2-mac-virtual-display.jpeg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ Vision Pro 已经可以成为 MacBook 的延伸&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;在智能眼镜无法在能耗、发热和性能上取得跨越式飞跃的前提下，不去做一个更独立的形态，而是一个辅助、配合 iPhone、Mac 的产品，出门不用从裤袋掏手机就能看地图、工作时一个 3D 建模直接直观呈现眼前，已经很具有突破性了。&lt;/p&gt;
+&lt;p&gt;这也不是只有苹果一家在探索的场景，不少 OEM 厂商也在探索 Android 手机和 Android XR 的协同能力，将强大的高通骁龙算力「带上头」。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640805" src="https://s3.ifanr.com/wp-content/uploads/2025/10/Android-XR-YouTube-TV-Interface-1024x576.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/Android-XR-YouTube-TV-Interface-1024x576.jpeg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/Android-XR-YouTube-TV-Interface-360x203.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/Android-XR-YouTube-TV-Interface-768x432.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+
+&lt;p&gt;目前苹果正在顾虑的问题，是这种「分体式」的方案究竟能不能带来优秀的体验：想要低延迟，很难避免一根连接眼镜和 iPhone 的数据线，但苹果内部当然不会喜欢这种不优雅和有损体验的方案。&lt;/p&gt;
+&lt;p&gt;苹果更可能会像当年为 AirPods 订制专门无线芯片一样，为智能眼镜找到一种低延迟的无线连接方案，这也是一种「Only Apple Can Do」的优势。&lt;/p&gt;
+&lt;p&gt;毕竟，在各家的同类产品都在今明两年问世的情况下，苹果想要再一次「后发制人」，不免要在体验上有一点过人的长处了。&lt;/p&gt;
+&lt;h3&gt;不够完美，但很实用&lt;/h3&gt;
+&lt;p&gt;除了这两家巨头，最近爱范儿也留意到了 AR 眼镜领域新出现的一些相对前沿的技术，都为解决了 AR 眼镜现存的一些硬伤而来。&lt;/p&gt;
+&lt;p&gt;夸克最近推出的 AR 眼镜，自然以 AI 交互为核心，但最有意思的，是这款眼镜采用的「换电」设计。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640806" src="https://s3.ifanr.com/wp-content/uploads/2025/10/quark2.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/quark2.jpg!720 720w, https://s3.ifanr.com/wp-content/uploads/2025/10/quark2-360x247.jpg 360w" sizes="(max-width: 720px) 100vw, 720px"&gt;&lt;/p&gt;
+&lt;p&gt;夸克 AI 眼镜的镜腿本身就是一块电池，通过热插拔技术，用户可以像换笔芯一样，通过「一拔一插」的简单动作快速更换主电池 。即使在眼镜运行状态下也能直接更换电池，不会导致设备关机或数据丢失 。&lt;/p&gt;
+&lt;p&gt;夸克还准备了一个只有耳机盒大小的便携充电仓，可以随身携带备用镜腿 。&lt;/p&gt;
+&lt;p&gt;除此之外，这款眼镜还采用了双芯设计，这意味着眼镜在待机时会跑在低功耗的辅芯片上，只有在处理复杂任务时才会启动主芯片，从而大幅提升了能效 。&lt;/p&gt;
+&lt;p&gt;爱范儿实测，低功耗 + 可换电的组合拳，让夸克 AI 眼镜基本能实现全天候续航，再也不需要用着用着把眼镜摘下来充电。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640807" src="https://s3.ifanr.com/wp-content/uploads/2025/10/quark3.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/quark3.jpg!720 720w, https://s3.ifanr.com/wp-content/uploads/2025/10/quark3-360x240.jpg 360w" sizes="(max-width: 720px) 100vw, 720px"&gt;&lt;/p&gt;
+&lt;p&gt;对于 AR 眼镜这种「未来式」设备，我们想当然会觉得它应该是更现代的「一体化」设计，我相信这也是它的最终归宿。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但在小型化与大电池之间的矛盾无法解决之前，可换电池这样的「落后」设计，未尝不是一个可行的解决方案，真正让智能眼镜实现全天候的陪伴，发挥它应有的价值。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;除了续航，AR 眼镜当下另一个硬伤，在于屈光度的调节问题。&lt;/p&gt;
+&lt;p&gt;近视患者想要使用 AR 眼镜，不免要经历一番折腾，需要另外定制不同的镜片，品牌也未必都提供这种服务。&lt;/p&gt;
+&lt;p&gt;爱范儿了解到，国内 AR 眼镜品牌 XREAL 正在探索一种更加简单方便的解决方案：一种有厚度的透明胶体，可以直接粘在眼镜的光机透镜上，从而改变眼镜的屈光度，不过目前还处在实验的阶段。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-large wp-image-1640808" src="https://s3.ifanr.com/wp-content/uploads/2025/10/shortsight-1024x768.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/shortsight-1024x768.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/10/shortsight-360x270.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/shortsight-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;p&gt;上面提到的很多技术，有很多其实都并不属于「最终答案」，但在智能眼镜技术无法实现跨越式突破的当下，这些略带妥协性质的解决方案，都是「最优解」。&lt;/p&gt;
+&lt;p&gt;如果我们回头看，每一代新形态的计算设备，都是在这种「不完美但前进」的状态下成长起来的：智能手机在最初也离不开电量焦虑、信号不稳、触控迟滞；智能手表也经历过「鸡肋」的尴尬阶段。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;比起一个只能存在于实验室的完美概念演示机，将真正能用、可用、有用的「产品」带到用户头上，更意味着如今的 AR 眼镜，正从青涩走向成熟。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果要类比，那现在的 AR 智能眼镜，已经从只能打电话的按键机，过渡到黑莓、诺基亚的智能手机，很快也将迎来「iPhone 时刻」。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Thu, 16 Oct 2025 08:27:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTFBJYWZfZmw5MFBRM2RtNDhTWmJSYmM0U0JsMGNBLWh0S2Rrd0RwTTh5dEVQYXlYVzFHSW9lTl9KMUVsdDQ</guid></item><item><title>历史首次！今年双11发放500亿消费券 6款淘宝AI导购全面落地 - 驱动之家</title><link>https://news.mydrivers.com/1/1080/1080513.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;历史首次！今年双11发放500亿消费券 6款淘宝AI导购全面落地&lt;/p&gt;
           
@@ -1399,107 +1670,4 @@ messenger(即时通讯)和PC手机混搭的还是很不一样的&lt;/span&gt;&lt
     
 
 &lt;/body&gt;
-</description><author>InfoQ 官网</author><pubDate>Thu, 16 Oct 2025 04:43:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTFA5Q25CdUtSNzN4aU96QS1qc3dNeEFOR3o5aTl5YnBaR0NuclZyMjRPbXBuaEpVMkplMmJ5TU5sVEthMmh0bFBQdXktcmhtZElSdDNNUngyUDdXcy10S2c</guid></item><item><title>腾讯提出无训练优化方法：120 元成本实现传统7 万元微调效果- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/377608</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
-                                                                    
-                                                        &lt;p&gt;腾讯AI实验室近期&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Farxiv.org%2Fabs%2F2510.08191" target="_blank"&gt;发布&lt;/a&gt;了一种名为"无训练组相对策略优化"（Training-Free GRPO）的新型模型优化技术。这一方法通过外部知识库更新替代传统参数微调，在大幅降低训练成本的同时，实现了与昂贵微调方案相当的性能提升。&lt;/p&gt; 
-&lt;p&gt;该技术的核心创新在于将经验知识转化为token级别的先验信息，使大模型在参数完全冻结的状态下完成性能优化。腾讯研究团队在DeepSeek-V3.1-Terminus模型上进行的实验显示，这种方法在数学推理和网络搜索等任务中均取得了显著效果。&lt;/p&gt; 
-&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-abd06524453481289a8ed894a0cfa86eda8.png"&gt;&lt;/p&gt; 
-&lt;p&gt;从技术实现角度看，传统大语言模型在处理需要外部工具调用的复杂任务时常常表现欠佳。而Training-Free GRPO通过保持模型主体参数不变，仅动态维护一个外部经验知识库的方式来提升能力。这种设计不仅大幅削减了计算资源消耗，还增强了模型的跨领域泛化能力。&lt;/p&gt; 
-&lt;p&gt;实验数据具体体现了这一方法的有效性。在数学竞赛级测试AIME24和AIME25中，经过Training-Free GRPO优化的DeepSeek-V3.1-Terminus模型准确率分别从80%和67.9%提升至82.7%和73.3%。更关键的是，这一提升仅使用了100个跨域训练样本，而传统强化学习方法通常需要数千个样本才能达到类似效果，后者的成本往往高达数万美元。&lt;/p&gt; 
-&lt;p&gt;在网络搜索任务的测试中，该方法同样表现出色，模型的Pass@1指标从63.2%提升至67.8%。这一系列测试结果表明，Training-Free GRPO在保持低成本投入的前提下，能够在多种任务类型中实现稳定的性能改善。&lt;/p&gt; 
-&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-e5379d297561c7e0cbea53ab402acb92ef2.png"&gt;&lt;/p&gt; 
-&lt;p&gt;从成本对比来看，官方数据显示使用Training-Free GRPO优化一个模型仅需约120元人民币，而传统的参数微调方案通常需要投入7万元左右的计算资源。这一成本差距主要源于该方法无需进行梯度回传和参数更新等计算密集型操作。&lt;/p&gt; 
-&lt;p&gt;这项技术的发布为AI模型优化提供了新的思路方向。特别是对于资源受限的中小企业和研究机构而言，这种低成本高效率的优化方案降低了大模型应用的门槛。不过需要注意的是，该方法的适用范围和在更多场景下的表现还有待进一步验证，当前公布的测试数据主要集中在数学推理和信息检索等特定任务上。&lt;/p&gt;
-                                                                                &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 16 Oct 2025 04:32:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTFBScjZKQ253VDk1VEY4YlRoX3ROYzF2cEE3OGtIN3V6ajgwSFdfU21BN0pNVVdOUTNTdDExdUJHaklJSHhxMGxuNTViaw</guid></item><item><title>网友扒到宇树CEO 王兴兴的硕士毕业论文：10 年前就押对了- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/377730</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
-                                                                    
-                                                        &lt;p&gt;近日，有网友掘地三尺将宇树科技CEO王兴兴的硕士毕业论文扒出来了。&lt;/p&gt; 
-&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-3c812c13f011061f073882f24ecb0b31dca.png"&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-74efaed7aa8c6b390a191c2247380bd439e.png"&gt;&lt;/p&gt; 
-&lt;p&gt;众所周知，宇树科技最初的产品是机器狗，而这篇论文完成于2016年，题目为《新型电驱式四足机器人研制与测试》，其中有两点颇让人注意：&lt;/p&gt; 
-&lt;p&gt;&lt;strong&gt;首先是王兴兴当时大胆押注的电驱式机器人方案，目前已被业界广泛接受。&lt;/strong&gt;&lt;/p&gt; 
-&lt;p&gt;当时包括波士顿动力在内的国内外团队都将研究集中于液压方案，但现在这一形式已经发生逆转，其中波士顿动力从去年开始改液压为电驱。&lt;/p&gt; 
-&lt;p&gt;&lt;strong&gt;其次是宇树科技的开局就源自论文所提出的“XDog”机器小狗。&lt;/strong&gt;&lt;/p&gt; 
-&lt;p&gt;值得注意的是，不止王兴兴本人在多个场合公开提到这只小狗，而且它还被明晃晃摆在宇树科技展厅的首要位置。&lt;/p&gt;
-                                                                                &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 16 Oct 2025 04:02:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE1yR3NpNGtSX0RiNzJGZGtlaTdLamxrSF9EZ3dKRFJWeEl5UUZweTJ5d2JoRlpKZ1N3eW4wbFNZdmFzN3Z0dVVIbGJ6OA</guid></item><item><title>让 AI 帮我制定假日旅游路线，很完美，除了目的地不存在 - 爱范儿</title><link>https://www.ifanr.com/1640363</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
-            &lt;p class="o-single-normal-content"&gt;
-              &lt;h1 class="c-single-normal__title"&gt;让 AI 帮我制定假日旅游路线，很完美，除了目的地不存在&lt;/h1&gt;
-            &lt;/p&gt;
-          &lt;/div&gt;
-          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
-  &lt;p&gt;国庆八天假，大家都去了哪里玩？是爬了北京的埃菲尔铁塔，还是逛了巴黎的天坛，还是打卡了伦敦的花果山？&lt;/p&gt;
-&lt;p&gt;如果你觉得离谱，那说明你还没有受骗，但架不住有人已经被骗了。BBC 的一则报道里，就真的有人被骗到：两位游客满心期待地奔赴秘鲁安第斯山中的「圣胡曼塔伊峡谷」，花了 160 美元车费，长途跋涉，来到了偏远山区地带，然后发现——&lt;strong&gt;这个峡谷不存在。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640874" src="https://s3.ifanr.com/wp-content/uploads/2025/10/rtkospfjqlwjfeyauxrg-2560x1709.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/rtkospfjqlwjfeyauxrg-2560x1709.jpg!720 2560w, https://s3.ifanr.com/wp-content/uploads/2025/10/rtkospfjqlwjfeyauxrg-2560x1709-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/rtkospfjqlwjfeyauxrg-2560x1709-768x513.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/rtkospfjqlwjfeyauxrg-2560x1709-1024x684.jpg 1024w" sizes="(max-width: 2560px) 100vw, 2560px"&gt;&lt;/p&gt;
-
-&lt;p&gt;都是因为他们听信了 AI 给出的旅行建议，AI 结合真实景点的信息和图片，凭空捏出了一个地方。两位游客误入海拔 4000 米、无信号，面临缺氧的危险，险些酿成大祸。&lt;/p&gt;
-&lt;p&gt;类似的「AI 幻觉」其实多了不少。有旅行博主分享了自己的惨痛经历：她和丈夫按照 ChatGPT 安排，在日本宫岛爬弥山看日落，结果下山时才发现 AI 提供的缆车运营时间是错的——缆车早已停止运行，两人被困山顶，险些露宿山中。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640873" src="https://s3.ifanr.com/wp-content/uploads/2025/10/Hiroshima-cart.jpeg!720" alt=""&gt;&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;「北京埃菲尔铁塔」也是 AI 的手笔，来自旅行平台 Layla，他们还曾给英国游客设计过一条横跨意大利北部的「特种兵」行程，路线安排极其不合理，大部分时间都得耗在路上。&lt;/p&gt;
-&lt;p&gt;最大的问题在于，游客对于目的地并不熟悉，还只能去到了才发现。尤其是有些资深驴友，喜欢挖掘不为人知的小众地点，被 AI 摆一道，也是很有可能。&lt;/p&gt;
-&lt;p&gt;根据全球救援组织 2025 年夏季旅行者安全与情绪调查，有24%的旅行者使用过人工智能进行旅行规划。最常见的用途包括行程规划（75%）和目的地研究（71%），其次是餐厅推荐（37%）和（25%）。&lt;/p&gt;
-&lt;p id="WzDlHVP"&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8cf7284487.png!720" rel="lightbox[1640363]"&gt;&lt;img class="alignnone size-full wp-image-1640366 " src="https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8cf7284487.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8cf7284487.png!720 1346w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8cf7284487-360x208.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8cf7284487-768x443.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8cf7284487-1024x590.png 1024w" sizes="(max-width: 1346px) 100vw, 1346px"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;有趣的是，当被问及在国外紧急情况下是否会信任 AI 时，有30%的受访者表示「是」，33%的受访者表示「否」，37%的受访者表示不确定。&lt;/p&gt;
-&lt;p&gt;这个比例，相差并不算悬殊，而且用户满意度很高。在使用过 AI 旅行工具的受访者中，79% 表示这些工具「非常」或「基本」有用，男性的满意度略高于女性，32% 的男性认为人工智能「非常有用」，而女性的这一比例仅为 26%。&lt;/p&gt;
-&lt;p&gt;只能说，AI 有用的时候确实令人满意，可是一旦翻车，倒霉起来也就很倒霉。还有什么比辛辛苦苦跑一趟，却发现目的地「只存在于 AI 的想象中」更糟心的？&lt;/p&gt;
-&lt;h3&gt;一代人有一代人的「图骗」&lt;/h3&gt;
-&lt;p&gt;不过，仔细想来，「只存在于想象中」并不是 AI 时代才有的事。&lt;/p&gt;
-&lt;p&gt;AI 问世之前，社交媒体的「精装照片」，也是另外一种幻象。无论是在朋友圈、Instagram、还是小红书上，旅行照大都经过精心炮制：又是选角度，又是修图，又是加滤镜，美得挑不出毛病。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640877" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-ins-grid.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-ins-grid.png!720 441w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-ins-grid-360x473.png 360w" sizes="(max-width: 441px) 100vw, 441px"&gt;&lt;/p&gt;
-&lt;p&gt;只不过，一旦追随这些「种草帖」踏上旅途，现实往往会给人迎头一棒。滤镜照片营造的美好，在现场可能变成大型翻车现场。&lt;/p&gt;
-&lt;p&gt;还有之前大火的云南澄江「粉红沙滩」。照片里沙滩的颜色美得如梦似幻，让无数人心动不已。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640879" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-pink-beach.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-pink-beach.png!720 438w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-pink-beach-360x479.png 360w" sizes="(max-width: 438px) 100vw, 438px"&gt;&lt;/p&gt;
-&lt;p&gt;可是等假期一到，大家纷纷赶赴云南之后才发现，没有了手机滤镜的沙滩，实际上是暗淡的「猪肝色」，就是一个普通红土滩。周边设施也很不完善，停车难、上厕所难，完全没有网上宣传的仙境感觉。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640878" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-pink-beach-2.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-pink-beach-2.png!720 439w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-pink-beach-2-360x473.png 360w" sizes="(max-width: 439px) 100vw, 439px"&gt;&lt;/p&gt;
-&lt;p&gt;网友：可以报警吗？&lt;/p&gt;
-&lt;p&gt;过度美化是一种「照骗」，过度拥挤则是另一种。社交媒体上的照片可以调角度，避开人群，只展现最舒服的一面，但假期里的热门目的地真实情况往往是「人人人人人」。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640882" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-the-bund-2025.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-the-bund-2025.png!720 441w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-the-bund-2025-360x478.png 360w" sizes="(max-width: 441px) 100vw, 441px"&gt;&lt;/p&gt;
-&lt;p&gt;尤其是国庆期间，各大热门景区纷纷开启「人人人人」的模式。今年国庆的第一天，上海外滩的瞬时客流量能飙升至 5.7 万人，较去年同期上升 31.7%，累计客流也达到 56.3 万人次。&lt;/p&gt;
-&lt;p&gt;所以，你看到的照片，是在璀璨的城市灯火。看不到的，是要被夹在人流里一点点挪过马路，得举起手来才能拍到一张没被人群淹没的东方明珠。&lt;/p&gt;
-&lt;p id="rRCZpwE"&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8d1c12ad1e.png!720" rel="lightbox[1640363]"&gt;&lt;img class="alignnone size-full wp-image-1640371 " src="https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8d1c12ad1e.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8d1c12ad1e.png!720 1346w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8d1c12ad1e-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8d1c12ad1e-768x434.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68e8d1c12ad1e-1024x578.png 1024w" sizes="(max-width: 1346px) 100vw, 1346px"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;除了滤镜和人潮，一些「网红打卡地」本身就是营销产物。为了刺激人流，不少景区给自己安上各种 「小 XX」 的名号：小马代、小镰仓、小瑞士……&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640880" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-rednote-grid.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-rednote-grid.png!720 441w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-rednote-grid-360x524.png 360w" sizes="(max-width: 441px) 100vw, 441px"&gt;&lt;/p&gt;
-&lt;p&gt;眼花缭乱，AI 搞错也不足为奇。&lt;/p&gt;
-&lt;p&gt;这些名字营造出异国情调的幻想，吸引大批游客慕名而来，但实际往往就名不副实。重庆曾有一家景区宣传「天空之境」仙境般照片，结果游客去了，发现离谱到十万八千里，引发大量投诉。当地监管部门认定这是虚假宣传，对景区运营公司开出了罚单。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640876" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-chongqing.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-chongqing.png!720 439w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-chongqing-360x355.png 360w" sizes="(max-width: 439px) 100vw, 439px"&gt;&lt;/p&gt;
-&lt;p&gt;不得不说，在社交媒体和营销包装下，「照骗」无处不在：有的美景全靠修图拼接，有的体验被夸得天花乱坠，有的照片干脆就是纯纯的摆拍——一代人有一代人的「图骗」，要么是被人骗，要么是被 AI 骗。&lt;/p&gt;
-&lt;h3&gt;来一场不被幻象操控的旅行&lt;/h3&gt;
-&lt;p&gt;我们越来越擅长制造图像，同时也越来越容易被误导。AI 的幻觉、滤镜的修饰、算法的推荐，正在合力构筑一个看似完美的世界——它漂亮、精致，看似触手可及，却也在慢慢消解「真实」的质感。旅行就是最典型的例子：我们出发去看世界，却常常看到的是世界的幻象。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640884" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-page.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-page.png!720 441w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-page-360x236.png 360w" sizes="(max-width: 441px) 100vw, 441px"&gt;&lt;/p&gt;
-&lt;p&gt;但现在不可能回到没有社交媒体、没有 AI 的时候了。真正的问题不在技术，而在于我们自己的心态与期待。&lt;/p&gt;
-&lt;p&gt;当 AI 帮我们生成路线时，不仅仅是在推荐一个目的地，也隐含了我们对旅行的期待和诉求。为了贴合那个期待，AI 虚构出了一个地方；也因为贴合期待，所以我们选择相信，直到亲身感受期待破灭的那一刻。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1640883" src="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-grid.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-grid.png!720 441w, https://s3.ifanr.com/wp-content/uploads/2025/10/ai-travel-grid-360x224.png 360w" sizes="(max-width: 441px) 100vw, 441px"&gt;&lt;/p&gt;
-&lt;p&gt;但真实的旅行从来不是完美无缺的，它就是由各种各样的意外组合而成：堵车、下雨、踩雷、人山人海。正是旅行中的不确定性，才是让我们确认「我在这里」的方式。过于执着地寻找心里「完美」的目的地，反而容易被 AI、被社交媒体反将一军。&lt;/p&gt;
-&lt;p&gt;所以，别让 AI 带你去不存在的地方，也不要留恋朋友圈里刷到的照片。旅行的意义，就在于用自己的脚，重新丈量这个被算法润色过的世界。&lt;/p&gt;
-
-  &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Thu, 16 Oct 2025 03:56:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE9hN1RZUmhaSjJSWU5LdzRyc0NkaFk5VnpZUUNSaElGclp4U3hlblFveDJvSW4xZTFjVTBPRk8yQXBUZnM</guid></item><item><title>智元发布新一代工业级交互式具身作业机器人精灵 G2 - OSCHINA</title><link>https://www.oschina.net/news/377728</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
-                                                                    
-                                                        &lt;p&gt;智元机器人举行线上直播发布会，正式发布新一代工业级交互式具身作业机器人智元精灵G2。精灵G2以工业标准打造，搭载高性能运动关节、高精度力矩传感器，集成先进的空间感知系统，支持快速学习部署，拥有出色的多模态语音交互能力，具备工业、物流、导览等多场景通用能力。目前，精灵G2已获数亿元订单，并已开启首批商用交付。&lt;/p&gt; 
-&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-6997403a61e2cd11299057b773741b4750c.png"&gt;&lt;/p&gt; 
-&lt;p&gt;根据介绍，精灵G2基于 2023年11月发布的精灵G1，具备卓越运动能力、感知能力和交互能力。其搭载高性能的关节执行器、多种类型的传感器、高性能AI计算平台，可以实现全场景全向避障，高精度力控作业。其腰部3自由度设计，可实现近似人类的弯腰、转腰和侧向摆动身体能力。&lt;/p&gt; 
-&lt;p&gt;G2配置全球首款十字腕力控臂，全臂搭载高精度关节扭矩传感器，通过关节阻抗控制，能细腻感知外力并做出柔顺反应，搭配快速部署工具链，即便没有任何力控调参能力的普通用户也可实现快速部署。续航方面，精灵G2可自主回到充电站补能，还拥有双电池热插拔换电能力，满足24小时工厂产线节拍。&lt;/p&gt; 
-&lt;p&gt;精灵G2全面支持多人实时智能交互，基于知识库个性化定制讲解内容，并能根据观众提出的不同问题智能作答，还可根据语境切换不同的讲解员人设和音色。此外，基于智元全栈自研的通用基座大模型GO-1和世界模型GE-1，G2处理复杂和长程任务的能力得到全面提升。&lt;/p&gt;
-                                                                                &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 16 Oct 2025 03:52:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE4tZWZzWjBsZE1GRG1DVlpnbWNNUG9fYmNKQ3B4QkFLR3J4MHgxYTIxZjAzbXYzNERKejROcUprSnhJTDROU3BxZW5ITQ</guid></item><item><title>英伟达重磅 受益股曝光！AI电源持续高增长可期 - 东方财富</title><link>https://wap.eastmoney.com/a/202510163535889623.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
-        
-        &lt;p class="related"&gt;
-
-        &lt;/p&gt;
-
-        
-
-        
-        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
-        &lt;p class="layer"&gt;&lt;/p&gt;
-        
-        
-        
-
-        
-
-        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Thu, 16 Oct 2025 03:51:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE13SGkyVGV3eE9oMlIzWU1pWjRwUmVUVmcwOUR2bGNURG5CeU51MWNvZUZMUWpiZXJMRkYwcktMcExiQnFwMWNiQmQtM3ZEb01HcHZGLUVubXVCakN6aU9Jbg</guid></item></channel></rss>
+</description><author>InfoQ 官网</author><pubDate>Thu, 16 Oct 2025 04:43:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTFA5Q25CdUtSNzN4aU96QS1qc3dNeEFOR3o5aTl5YnBaR0NuclZyMjRPbXBuaEpVMkplMmJ5TU5sVEthMmh0bFBQdXktcmhtZElSdDNNUngyUDdXcy10S2c</guid></item></channel></rss>
