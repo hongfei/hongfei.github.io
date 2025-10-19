@@ -210,7 +210,121 @@
 
 &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 18 Oct 2025 21:33:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE96c0M3aG1pYjRfWXVfR2MxN0I2QUJvN2d5NzBRaWlRNVJDOTlreG8teFNYZkhZazhVWWxDZ21XVnVmLWJKZ2Zfb2gxOV9JUnJCUWdGWHR5WjFVanl3X1ZzcVFjamxVRUJMYVFEZnFR</guid></item><item><title>生产制造产业日报(10.18) : "DOVE工具助VTE早诊" - 亿欧</title><link>https://www.iyiou.com/data/202510191111944</link><description>&lt;body id="readabilityBody"&gt;&lt;/body&gt;
 
-</description><author>亿欧</author><pubDate>Sat, 18 Oct 2025 19:26:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE50SFo3TFFCeFhtb2E2Q29OTjU0a3dqWlZhMFNKTk1tTWhCNUtBM05BZzlmTXQ5aFhlbHpXS2syYXFiSnJxRGFfcjhMVFVyVFBuT1dTWg</guid></item><item><title>突触前谷氨酸释放增加：抗NMDAR脑炎相关癫痫发作的潜在发病机制 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251019003414236.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+</description><author>亿欧</author><pubDate>Sat, 18 Oct 2025 19:26:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE50SFo3TFFCeFhtb2E2Q29OTjU0a3dqWlZhMFNKTk1tTWhCNUtBM05BZzlmTXQ5aFhlbHpXS2syYXFiSnJxRGFfcjhMVFVyVFBuT1dTWg</guid></item><item><title>综述：如何充分利用癌症空间转录组学数据 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251019005323812.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;综述：如何充分利用癌症空间转录组学数据&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;《Seminars in Cell &amp;amp; Developmental Biology》：How to get the most out of your cancer spatial transcriptomics data&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年10月19日&lt;/i&gt;
+            &lt;i&gt;来源：Seminars in Cell &amp;amp; Developmental Biology 6&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本文系统梳理了空间转录组学（ST）技术在肿瘤生态系统研究中的前沿进展，为研究者提供了从数据预处理（细胞分割、反卷积）、差异表达分析到细胞通讯网络构建的全流程方法指南，并展望了多组学整合等未来发展方向。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　
+&lt;section&gt;空间转录组学（Spatial Transcriptomics, ST）平台主要分为基于成像和基于测序两大类。这些平台在空间分辨率、检测通量、技术要求和成本上各有特点（相关平台比较可参阅专门综述）。基于成像的平台通过荧光标记原位检测RNA分子，而测序类平台则通过捕获组织切片上的mRNA进行高通量测序。平台选择直接影响后续分析策略，例如高分辨率平台支持单细胞水平分析，而低分辨率数据则需要借助反卷积（deconvolution）算法推断细胞组成。&lt;/section&gt;
+
+&lt;section&gt;分析ST数据的第一步是识别样本中的细胞类型及其基因表达模式。这通常依赖于组织学染色（如H&amp;amp;E染色）提供的形态学信息，结合细胞分割（cell segmentation）或细胞类型反卷积技术。细胞分割用于识别单个细胞边界，进而进行细胞表型鉴定；而针对分辨率较低的测序数据，反卷积算法则能估算每个捕获点内不同细胞类型的比例，为后续空间分析奠定基础。&lt;/section&gt;
+
+&lt;section&gt;在确定细胞/点位及其基因表达矩阵后，下一个关键步骤是识别在不同组织区域间表达存在差异的基因或基因集，以揭示样本内的异质性群体。一种策略是&lt;em&gt;de novo&lt;/em&gt;发现具有空间变异表达模式的特征基因（如图3A, B）。通用转录组分析工具如Seurat提供了多种空间差异表达分析方法。另一种策略是基于先验知识（如已知的标记基因或预定义的区域）进行比较分析，其统计方法与单细胞RNA测序（scRNA-seq）相似，但需考虑空间位置带来的技术偏差。&lt;/section&gt;
+
+&lt;section&gt;传统的差异表达分析将细胞视为离散状态，而实际上细胞常处于连续的动态过渡中。借鉴单细胞RNA测序中的伪时间（pseudotime）分析思路，ST数据也可用于重构细胞发育轨迹或状态转换路径。这有助于研究肿瘤细胞的可塑性（plasticity）、谱系分化等生物学过程，将细胞的空间位置信息与发育时间维度相结合。&lt;/section&gt;
+
+&lt;section&gt;解析肿瘤生态系统需要明确肿瘤细胞携带的遗传变异、克隆数量、空间分布及其与微环境的相互作用，并可能据此推断其进化历史（如图4）。许多为单细胞RNA测序开发的肿瘤克隆推断工具可直接或经适配后应用于ST数据，前提是数据能达到单细胞或近单细胞分辨率。通过识别体细胞突变或拷贝数变异（Copy Number Alteration, CNA），可以界定不同的肿瘤克隆，并分析其空间分布模式（如克隆混合或隔离），从而揭示肿瘤的进化动态。&lt;/section&gt;
+
+&lt;section&gt;前述方法能识别细胞类型、空间变异基因等，但对空间组织模式的量化是实现样本间比较的关键。细胞邻域（cell neighbourhood）分析旨在量化细胞间的空间组织“规则”（例如聚集、分散、混合程度）。分析方法包括空间聚类（如BayesSpace）、细胞邻域组成定义（如使用Cellular Neighborhood或Niche）以及空间相关性度量（如Moran's I）。量化这些模式有助于比较不同样本（如治疗前后）或不同区域（如肿瘤核心与边缘）的生态系统结构差异。&lt;/section&gt;
+
+&lt;section&gt;细胞邻域分析揭示了细胞的空间组织模式，而细胞-细胞通讯（cell-cell communication）分析则旨在揭示驱动或产生这种空间分布的潜在生物学机制（如图6）。在癌症研究中，ST为理解细胞通讯网络在肿瘤进展、治疗抵抗中的作用提供了独特视角。通过整合配体-受体（Ligand-Receptor, L-R）相互作用数据库和空间邻近信息，可以推断局部或远程的细胞通讯事件，揭示肿瘤生态系统内部的功能连接。&lt;/section&gt;
+
+&lt;section&gt;ST技术的未来发展可能集中在几个方面：更高分辨率和全转录组覆盖技术的融合、多组学（如空间蛋白质组、表观基因组）整合、计算方法的进一步创新（如更好地处理空间依赖性、开发动态模型）以及标准化分析流程的建立。ST平台已经为揭示癌症生态系统的特征开辟了崭新途径，具有巨大的潜力推动新型治疗策略的开发。尽管目前的研究多侧重于细胞分布的可视化和基础分析，但计算方法的飞速发展有望更深入地挖掘ST数据所蕴含的丰富信息，最终加速癌症研究的进展。&lt;/section&gt;
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 18 Oct 2025 18:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTFB3Y1I3cWdyRkEzSFRCRUlrNVc2RWtidGVvd2Y2cGFCYU1fVGlsd2cwZjQ4MDZELUQ3NzdLLWViT0J4dXYtOUpGcXFGSUJ5NzdPRzhFVFFsQTFKSV9jMGhXMVBhVDJicl9JQ1JZcldB</guid></item><item><title>突触前谷氨酸释放增加：抗NMDAR脑炎相关癫痫发作的潜在发病机制 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-10/20251019003414236.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
 	&lt;div class="p1_b1Left fl"&gt;
     	&lt;p class="p1Title"&gt;突触前谷氨酸释放增加：抗NMDAR脑炎相关癫痫发作的潜在发病机制&lt;/p&gt;
 		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
@@ -2099,30 +2213,4 @@ Open Access&lt;/p&gt;
                 &lt;p&gt;本地感染病例清零，并非疟疾防控的终点。2025年8月，正值柬埔寨雨季，40岁的布蒙坐在金边办公室里，窗外暴雨如他对这个国家疟疾形势的担忧。布蒙是克林顿健康发展组织的高级项目经理，为柬埔寨疟疾防控提供咨询与支持。&lt;/p&gt;&lt;p&gt;疟疾是一种由疟原虫引起、蚊子叮咬传播的急性传染病，可分为间日疟、恶性疟、三日疟等，其中恶性疟可引发脑型疟、多器官衰竭等并发症。过去十多年，柬埔寨在疟疾消除方面取得显著进展：从2011年的11.2万例降至2024年的355例；自2018年起无死亡病例。柬埔寨目标是在2025年底前实现本土疟疾病例完全消除，如果能连续三年无本地传播，便能在2028年获得世界卫生组织（WHO）的“无疟疾”认证。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img2.utuku.imgcdc.com/650x0/news/20251018/802646ba-03b9-4b0a-b858-d12aef0d15df.jpg" alt="柬埔寨疟疾清零的“最后一公里” 资金与跨境挑战"&gt;&lt;/p&gt;&lt;p&gt;尽管如此，资金困难和基层医院诊疗能力不足等问题仍拖慢了最后阶段的达成。布蒙担心，即便拿到WHO的疟疾清零认证，边境和森林地区的防控以及邻国泰国、缅甸等外来病例输入可能造成疫情死灰复燃。大湄公河次区域包含中国云南省、越南、老挝、柬埔寨、泰国、缅甸，曾是全球除非洲外疟疾疫情最严重的地区之一。中国于2021年获得WHO消除疟疾认证，已连续八年无本土原发蚊传疟疾病例报告，但境外输入性疟疾带来的风险持续存在。例如，云南省2024年共报告564例输入性疟疾病例，半数来自缅甸。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img2.utuku.imgcdc.com/650x0/news/20251018/62698bdf-a97a-4e59-bc30-93255b7ff093.jpg" alt="柬埔寨疟疾清零的“最后一公里” 资金与跨境挑战"&gt;&lt;/p&gt;&lt;p&gt;不需要签证就能出国的蚊子对传染病防控构成威胁。今年暴发的基孔肯雅热是由基孔肯雅病毒引起，主要通过埃及伊蚊和白纹伊蚊叮咬传播。南方医科大学热带医学研究所所长陈晓光表示，人们对蚊虫了解程度不够，阻断传染病任重道远。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img3.utuku.imgcdc.com/650x0/news/20251018/ddc2a497-40e3-4664-8b0f-996850ff15e5.jpg" alt="柬埔寨疟疾清零的“最后一公里” 资金与跨境挑战"&gt;&lt;/p&gt;&lt;p&gt;布蒙担忧的是，在即将消除疟疾的最后一步，跨境区域合作、外部资金与国家投入却在大幅缩减，前期成果可能付诸东流。2017年，布蒙加入CHAI，参与了蚊帐与抗疟药物发放工作。他领导的团队见证了疫情急转直下：2018年疟疾零死亡；2024年恶性疟已被消除，疟疾病例数降至355例，以间日疟为主。面对即将到来的病例清零，布蒙担忧大于乐观，资金稳定性成为核心问题。柬埔寨仍是一个不富裕的国家，除了疟疾还面临结核病、艾滋病等挑战，随着全国疟疾病例数和死亡数骤减，政府的资金投入显著减少。&lt;/p&gt;
             &lt;/div&gt;
             
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中华网</author><pubDate>Sat, 18 Oct 2025 04:03:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE1WeHBHM3NGbTE3cFROWkxuSmc5NXUxZ25taV9HN1k4OWExQ0EyWXhZR1lOMEpmZlA3bnhtdXk3NUd3RVBJamg2THd2MlpXMFNOamZuY2dGcTJZUUxiY0wzRTZ4dGh6NExTTTJhNkNNblM</guid></item><item><title>癌症终于有救了？“超级疫苗”进展顺利，实验中治愈率高达88% - 网易</title><link>https://www.163.com/dy/article/KC57RJF705568PHC.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="post_body"&gt;
-                    &lt;p&gt;&lt;/p&gt;&lt;blockquote id="414GC3PK"&gt;声明：本文内容均是根据权威资料，结合个人观点撰写的原创内容，文中标注文献来源及截图，请知悉&lt;br&gt;&lt;/blockquote&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2Fd186cfa9j00t4b3rz0018d000p400him.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3O6"&gt;前言&lt;/p&gt;&lt;p id="414GC3O7"&gt;说起癌症，想必很多人都是避之不及，毕竟这种得了几乎就已经宣告死亡的病，任谁都不想接触，甚至还有人身边就有类似的案例，身边那些令人揪心的案例，戳中了无数人对癌症的恐惧。&lt;/p&gt;&lt;p id="414GC3O8"&gt;但最近发表的一项研究，给癌症防控带来了颠覆性希望，美国马萨诸塞大学阿默斯特分校的团队搞出了一种“纳米超级疫苗”，在动物实验里不仅能预防三种致命癌症，&lt;strong&gt;甚至还能彻底挡住癌细胞转移！&lt;/strong&gt;&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F7988962cj00t4b3rz002bd000yy00m8m.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3OA"&gt;不一样的防癌疫苗&lt;/p&gt;&lt;p id="414GC3OB"&gt;咱们平时打流感疫苗，包括之前的新冠疫苗，是让免疫系统认病毒，这新疫苗的思路更绝直接教免疫系统“认癌细胞”。&lt;/p&gt;&lt;p id="414GC3OC"&gt;负责研究的生物医学工程专家Prabhani Atukorale教授解释，疫苗里有两个关键部件：&lt;strong&gt;一个是“癌细胞身份证”，另一个是“免疫激活器”。&lt;/strong&gt;&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F165751acj00t4b3rz002xd000pe00hqm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3OE"&gt;这个“激活器”可是个狠角色，传统的疫苗里的佐剂常和抗原“水火不容”，根本就没有办法兼容使用，效果大打折扣。&lt;/p&gt;&lt;p id="414GC3OF"&gt;但这个纳米佐剂能把两种激活物质包起来，直接送到免疫细胞跟前，就像给免疫系统开了“全功率模式”。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F8fbeffe1j00t4b3s00011d000rs00iim.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3OH"&gt;中山大学王骥团队在《自然》发表的研究也证实，好的佐剂能让杀伤肿瘤的CD8+T 细胞反应增强5倍以上，而这种纳米佐剂正是抓住了这个关键。&lt;/p&gt;&lt;p id="414GC3OI"&gt;更厉害的是它能&lt;strong&gt;留下“免疫记忆”&lt;/strong&gt;，就像疫苗打完能防好几年流感，这疫苗激活的T细胞会在全身“巡逻”，记住癌细胞的样子。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2Fcab16c11j00t4b3rz002fd000rr00m8m.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3OK"&gt;哪怕后来癌细胞再想偷偷长出来，或者转移到肺部肝脏这些地方，T细胞能立刻识别并消灭它们，这就是为啥实验里接种的小鼠没出现转移。&lt;/p&gt;&lt;p id="414GC3OL"&gt;光说原理没用，实验结果才是硬通货，研究团队先拿“癌王”胰腺癌、凶险的黑色素瘤和三阴性乳腺癌做实验，这三种癌症都是出了名的难治，&lt;strong&gt;转移后 5 年生存率不到20%&lt;/strong&gt;。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2Fe0d202d9j00t4b3s00020d000no00bwm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3ON"&gt;惊艳的实验数据&lt;/p&gt;&lt;p id="414GC3OO"&gt;第一轮实验用了针对黑色素瘤的“精准抗原”，给小鼠打完疫苗3周再接触癌细胞，结果颠覆认知，八成的接种小鼠&lt;strong&gt;活过了250天&lt;/strong&gt;，从头到尾没长肿瘤。&lt;/p&gt;&lt;p id="414GC3OP"&gt;而没接种或打了传统疫苗的小鼠，35天内全死了，无一例外，更神的是转移测试，故意让癌细胞全身扩散，接种疫苗的小鼠肺部一个转移灶都没有，对照组却全出现了肺部病变。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F852db03ej00t4b3rz001ad000xc00m8m.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3OR"&gt;后来他们又搞了个“通用版疫苗”，直接把灭活的癌细胞打碎当抗原，不用再从头开始艰难找特定的靶点了。&lt;/p&gt;&lt;p id="414GC3OS"&gt;没想到效果更惊喜：88%的胰腺癌小鼠、75%的三阴性乳腺癌小鼠、69%的黑色素瘤小鼠都成功躲过肿瘤，更关键的是这些小鼠后续再接触癌细胞，&lt;strong&gt;依然没长肿瘤&lt;/strong&gt;，“免疫记忆”是真管用。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F7e2afac8j00t4b3s0004fd000yq00rsm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3OU"&gt;这么好的技术可不是实验室里的“花瓶”，研究团队已经成立了NanoVax Therapeutics公司，专门推进临床转化。&lt;/p&gt;&lt;p id="414GC3OV"&gt;按照规划第一步就要瞄准&lt;strong&gt;癌症高危人群&lt;/strong&gt;，比如有乳腺癌家族史、BRCA基因突变的人，经常接触甲醛、苯等致癌物的工人，还有慢性萎缩性胃炎、大肠腺瘤这些癌前病变患者。&lt;/p&gt;&lt;p id="414GC3P0"&gt;央视新闻也提醒，这类人群定期筛查很重要，但如果能靠疫苗提前预防，无疑是多了道“护身符”。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F5c1563b5j00t4b3rz001qd000kt00dwm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3P2"&gt;癌症预防正迎来“疫苗时代”&lt;/p&gt;&lt;p id="414GC3P3"&gt;不过从实验室到给人用，还有三道坎要迈，首先是人体免疫系统比小鼠复杂得多，每个人的癌细胞突变都不一样，疫苗得适应个体差异。&lt;/p&gt;&lt;p id="414GC3P4"&gt;其次是安全性，得通过临床试验搞清楚打几针、剂量多少合适，有没有长期副作用，最后是递送效率，要确保疫苗能精准到达免疫细胞，不浪费药效。&lt;/p&gt;&lt;p id="414GC3P5"&gt;好消息是团队已经计划&lt;strong&gt;2026年启动I期临床试验&lt;/strong&gt;，先测试剂量反应，再验证高危人群的预防效果。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F0daa7f63j00t4b3rz0014d000ku00dwm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3P7"&gt;论文第一作者Griffin Kane说：“我们的目标很简单，就是让癌症高危人群不用再担惊受怕，让患者能少受点罪。”&lt;/p&gt;&lt;p id="414GC3P8"&gt;可能有人会问这疫苗是不是独一份？其实全球都在攻关。中山大学王骥团队今年3月在《自然》发表的SABER佐剂技术，能把抗原精准送到免疫细胞的“加工厂”。&lt;/p&gt;&lt;p id="414GC3P9"&gt;激活 T 细胞的能力比传统佐剂强 5 倍以上，在肿瘤疫苗里已经展现出治疗免疫抵抗肿瘤的潜力，这些技术互相启发，正在加速癌症疫苗从概念走向现实。&lt;br&gt;&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F8dcd8993j00t4b3s0000vd000kr00djm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3PB"&gt;以前咱们对抗癌症，基本是&lt;strong&gt;“发现了再治”&lt;/strong&gt;，晚期就只能听天由命，但现在不同了，从HPV疫苗预防宫颈癌，到乙肝疫苗降低肝癌风险，再到这种能防多种癌症的纳米疫苗，人类正在从“被动治疗”转向“主动防御”。&lt;/p&gt;&lt;p id="414GC3PC"&gt;当然现在还不能盼着马上打上疫苗，但想想20年前mRNA技术还没人看好，如今已经能应对新冠，10年前免疫疗法还在试验阶段，现在已经救了无数癌症患者。&lt;/p&gt;&lt;p id="414GC3PD"&gt;这项纳米疫苗技术既然在动物实验里交出了&lt;strong&gt;88%防癌率和100%防转移&lt;/strong&gt;的成绩单，这就值得我们期待了。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F5bd73395j00t4b3rz0033d0011a00rsm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="414GC3PF"&gt;结语&lt;/p&gt;&lt;p id="414GC3PG"&gt;或许再过几年，癌症高危人群不用再靠频繁筛查“保命”，打一针疫苗就能安安心心过日子，晚期患者也能靠疫苗拦住转移，有更多时间等待治愈的希望，到那时，“谈癌色变”可能真的会成为历史。&lt;/p&gt;&lt;p id="414GC3PH"&gt;虽然这疫苗还要等临床试验过安全关，但光是“88%小鼠免患癌、能挡转移”这个结果，就够让人安心了，想想以后家里有癌症家族史的长辈，不用再频繁做筛查担惊受怕，打一针就能多层保障，&lt;strong&gt;这下再也不用怕“癌”找上门了！&lt;/strong&gt;&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1018%2F6b7dbbfaj00t4b3rz001qd000ku00dwm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-                &lt;/div&gt;
-                
-                
-                    
-                    
-                &lt;div class="post_statement"&gt;
-                    &lt;span class="bg"&gt;&lt;/span&gt;
-                    
-                    &lt;p&gt;特别声明：以上内容(如有图片或视频亦包括在内)为自媒体平台“网易号”用户上传并发布，本平台仅提供信息存储服务。&lt;/p&gt;
-                    &lt;p&gt;Notice: The content above (including the pictures and videos if any) is uploaded and posted by a user of NetEase Hao, which is a social media platform and only provides information storage services.&lt;/p&gt;
-                    
-                &lt;/div&gt;
-                
-                
-
-
-
-
-
-
-                
-                
-                
-                
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>网易</author><pubDate>Sat, 18 Oct 2025 02:48:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTE5aLWt1X2c4TUlGV2NXRUhOVTY2OHJtV2d0SmtqSkxzaF9PeW9NQ0JydWFIVnNkZVozTDVYUE9fZ1ZmUElOZmZqOTQwa1NFXzNEeHYtNVo0UFdWRGthNnpCV0NR</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中华网</author><pubDate>Sat, 18 Oct 2025 04:03:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE1WeHBHM3NGbTE3cFROWkxuSmc5NXUxZ25taV9HN1k4OWExQ0EyWXhZR1lOMEpmZlA3bnhtdXk3NUd3RVBJamg2THd2MlpXMFNOamZuY2dGcTJZUUxiY0wzRTZ4dGh6NExTTTJhNkNNblM</guid></item></channel></rss>
