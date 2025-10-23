@@ -490,7 +490,23 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Oct 2025 07:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1KMXFSUWZ4WDBrRXp2enBWVl91OG1SUEZlMHBQV0ZXTFdqM3dacHoyTmZUdm02LWwxdklHY3dLWGg1NDR4dlU0dkkwbkV2Ul96Q1pzMkl4QXo</guid></item><item><title>阿里把「豆包」塞进夸克，用了半天后我发现它和 OpenAI 想一块去了 - 爱范儿</title><link>https://www.ifanr.com/1641948</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Oct 2025 07:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1KMXFSUWZ4WDBrRXp2enBWVl91OG1SUEZlMHBQV0ZXTFdqM3dacHoyTmZUdm02LWwxdklHY3dLWGg1NDR4dlU0dkkwbkV2Ul96Q1pzMkl4QXo</guid></item><item><title>Valkey 9.0.0 正式 GA，Linux 基金会维护的 Redis 分支 - OSCHINA</title><link>https://www.oschina.net/news/379032/valkey-9-ga</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;由 Linux 基金会维护的 Redis 分支 —— 开源内存数据库 Valkey 9.0.0 已正式 GA。新版本带来多项重要性能与功能升级。此次更新的重点在于更高效的集群迁移机制、更灵活的哈希字段管理，以及对大规模分布式部署的全面优化。&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/1023/152658_JC48_2720166.png"&gt;&lt;/p&gt; 
+&lt;h3&gt;&lt;strong&gt;原子槽迁移（Atomic Slot Migrations）&lt;/strong&gt;&lt;/h3&gt; 
+&lt;ul&gt; 
+ &lt;li&gt; &lt;p&gt;在旧版本中，集群中数据从一个节点迁移到另一个节点是“逐 key”迁移：先 move 再 delete。会导致迁移过程中客户端访问不确定在哪个节点、重定向或重试、性能下降。&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;在 9.0 版中，Valkey 引入“槽级别”的迁移机制：每个节点负责多个“槽”（slot），现在迁移直接将整个槽（slot）从一个节点原子地迁移到另一个节点。这样可以避免旧机制那种“key 在两个节点间”的不确定状态。&lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt; &lt;p&gt;对于大集合（例如 sorted sets、lists）迁移时也更友好：旧方式大 key 可能因为目标节点输入缓冲区满导致迁移阻塞。新机制使用 AOF 格式逐项迁移集合成员，而不是整体 key，减缓了延迟峰值。&lt;/p&gt; &lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;h3&gt;&lt;strong&gt;支持哈希字段级别的过期（Hash Field Expiration）&lt;/strong&gt;&lt;/h3&gt; 
+ 
+&lt;h3&gt;&lt;strong&gt;集群模式下支持编号数据库（Numbered Databases in cluster mode）&lt;/strong&gt;&lt;/h3&gt; 
+ 
+&lt;p&gt;下载地址：&lt;em&gt;https://github.com/valkey-io/valkey/releases/tag/9.0.0&lt;/em&gt;&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 23 Oct 2025 07:34:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE42SWZBc0dSOWJidDFXM2Qwd3pCSVl3SVdQMDFCYmNrYzFHSFlQaGZuSlQtbXlhUnR3eFoyMUpRc3FxWlViM2tGUnp2NGVYRzZWT25ZS3g2MVc5dXM</guid></item><item><title>阿里把「豆包」塞进夸克，用了半天后我发现它和 OpenAI 想一块去了 - 爱范儿</title><link>https://www.ifanr.com/1641948</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
             &lt;p class="o-single-normal-content"&gt;
               &lt;h1 class="c-single-normal__title"&gt;阿里把「豆包」塞进夸克，用了半天后我发现它和 OpenAI 想一块去了&lt;/h1&gt;
             &lt;/p&gt;
@@ -1173,7 +1189,7 @@
 &lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-1ae4b37c270d1922c69f6893c8b4c523285.png"&gt;&lt;/p&gt; 
 &lt;p&gt;来自达特茅斯学院的量子物理学家詹姆斯·惠特菲尔德（James Whitfield）则更加直言不讳：“这项技术进步令人印象深刻，但认为它能突然解决一些经济上可行的问题，还是略显牵强。”根据IBM和中国信通院报告总结来看，量子计算目前还处于早期技术攻关阶段，预计未来5到10年有可能出现实质性进展。&lt;/p&gt;
                                                                                 &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 23 Oct 2025 03:00:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5tTTd1QXZFdW9GU1h1SFpzbjJHUEx1TDh3aVJTdDhCdVd6aE1QWFdmV3o3cFoxVi1XM0FaVzVHSFhiT3FuLU1rakhUTQ</guid></item><item><title>史上最强Ace！一加Ace 6行业唯一超高刷+大电池+快充旗舰 - 驱动之家</title><link>https://news.mydrivers.com/1/1081/1081841.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Thu, 23 Oct 2025 03:00:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5tTTd1QXZFdW9GU1h1SFpzbjJHUEx1TDh3aVJTdDhCdVd6aE1QWFdmV3o3cFoxVi1XM0FaVzVHSFhiT3FuLU1rakhUTQ</guid></item><item><title>AI交易中的“循环融资”是双赢还是泡沫迹象？ - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/is-the-flurry-of-circular-ai-deals-a-win-winor-sign-of-a-bubble-6b8879c0</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Thu, 23 Oct 2025 02:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiogFBVV95cUxOeEJzblhoT0tsUTZoNDU3cTJmVUUtbE1nVERBOVFQb1dReENNMEc0Qk91ZHF2YXU3UWlSS0VNYm9ybVRBWHE3X3hmMmJsV1B2Z0ZXdkszVGdyS25FdW4talBvRm56TDNWV3FwcG5MTm9zcjgtemtmNGZzdWhEOXYyUFFCVEJBSGZadllIZ1NXUkNXYWVkaXEtMXVRVjZ5UkIyRVE</guid></item><item><title>史上最强Ace！一加Ace 6行业唯一超高刷+大电池+快充旗舰 - 驱动之家</title><link>https://news.mydrivers.com/1/1081/1081841.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;史上最强Ace！一加Ace 6行业唯一超高刷+大电池+快充旗舰&lt;/p&gt;
           
@@ -1996,78 +2012,4 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 22 Oct 2025 20:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijwFBVV95cUxPYlVXRW1abHB4RjZaODJFTjNna2dVZTdLTUlEQ0Yyd3doT1FiQXV2a3JjRW5CcEZvcGxwMUtwai1PeVRNWUhPRXJORTRfVy1CQUtrajk1UUJtV1hrS2lxOHlhUkxIMDNwZnA0LWNrcndWczJoVFRHVFZiaUdobXpKTldHWVhOSUtXZXNGTktJbw</guid></item><item><title>马斯克放狠话：工资不到位 特斯拉CEO谁爱干谁干 - 文学城</title><link>https://www.wenxuecity.com/news/2025/10/22/126382285.html</link><description>&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</description><author>文学城</author><pubDate>Wed, 22 Oct 2025 20:19:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiaEFVX3lxTE15VFctTlVYYy1pVjhIUTVqa0YzSWdSQnJwUndSeVVncGVMaXpvbVcwdGxJb0RNR3VDWFBXV2psbHM4WklBQ0ZtZGVHRFBsblgxLTQ4bDJFQjliaXpUdnkycUcwOUlkVUpJ</guid></item><item><title>谷歌称Willow芯片取得突破 有望加速量子技术实用化 - 新浪财经</title><link>https://finance.sina.com.cn/world/2025-10-23/doc-infuvenx2847997.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p&gt;　　Alphabet旗下谷歌宣布，该公司“Willow”量子计算芯片运行的一种算法可在类似平台上重复运行，并且性能超越传统超级计算机。谷歌表示，这项突破为量子技术在未来五年内实现实际应用铺平了道路。&lt;/p&gt;
-&lt;p&gt;　　谷歌周三在《自然》杂志披露的名为“Quantum Echoes”的算法具有可验证性，意味着可以在其他量子计算机上重复运行。谷歌表示，其运行速度为全球最强超级计算机的1.3万倍。这些进展综合起来，预示着量子计算在医学和材料科学领域存在广泛的应用潜力。&lt;/p&gt;
-&lt;p&gt;　　“可验证性的关键意义在于，这是迈向现实世界应用的重要一步，”谷歌量子AI的研究科学家Tom O’Brien表示，他负责监督了这项工作的完成。“实现这一成果表明我们正切实推动量子计算走向主流。”&lt;/p&gt;
-&lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/113/w550h363/20251023/0452-243e11b09c0614c26b0b509daa1d5b65.jpg" alt="Willow芯片"&gt;&lt;span class="img_descr"&gt;Willow芯片&lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;　　Alphabet股价周三在纽约市场一度上涨2.4%。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 22 Oct 2025 19:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE45eEZtQjhnY1JSYllOajVobVNJMTRUcGdUSFJ2SU1uaUl3YU5rNldqSkNkMjVEaU5Ga3VfWi03R3g3VEJ5bzg1d3ZDVWlqQi1LcjB1cWxoQ3ZhdTVUamFMR01yZlVwU0ppYjVUeGdHVHBkMjNfNEFIbHRR</guid></item></channel></rss>
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 22 Oct 2025 20:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijwFBVV95cUxPYlVXRW1abHB4RjZaODJFTjNna2dVZTdLTUlEQ0Yyd3doT1FiQXV2a3JjRW5CcEZvcGxwMUtwai1PeVRNWUhPRXJORTRfVy1CQUtrajk1UUJtV1hrS2lxOHlhUkxIMDNwZnA0LWNrcndWczJoVFRHVFZiaUdobXpKTldHWVhOSUtXZXNGTktJbw</guid></item></channel></rss>
