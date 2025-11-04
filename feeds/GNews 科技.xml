@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>最新财新周刊｜电动汽车设计激进探索 “表演式创新”不能忽视安全风险 - 财新周刊</title><link>https://weekly.caixin.com/2025-11-01/102378124.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Win11越用越卡真不是错觉！自带两项默认功能严重拖慢系统 - 3DM</title><link>https://www.3dmgame.com/news/202511/3931086.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	许多用户在使用Windows 11的过程中，常会感觉系统越用越慢，不过Enderma发现，这种性能下降并非错觉，而是由于Windows 11默认启用了两项看似便利、实则严重拖慢系统的功能。
+&lt;/p&gt;
+&lt;p&gt;
+	Enderma指出，Windows 操作系统中存在一个已知会影响性能的问题，即文件资源管理器中的“自动发现”（Auto-Discovery）。
+&lt;/p&gt;
+&lt;p&gt;
+	该功能的工作原理是：每次打开文件夹时，系统都会根据文件夹的内容自动调整其查看模式（例如，如果主要存放图片，就会切换到“图标模式”）。
+&lt;/p&gt;
+&lt;p&gt;
+	当一个文件夹内包含数百个甚至更多文件时，文件资源管理器会消耗大量不必要的时间进行数据处理。
+&lt;/p&gt;
+&lt;p&gt;
+	问题在于，为了判断应该使用何种查看模式，系统每次打开时都会重新扫描文件夹内的所有内容，导致反应速度明显变慢，尤其是在频繁访问大型文件夹时，用户体验极差。
+&lt;/p&gt;
+&lt;p&gt;
+	要禁用“自动发现”，可以通过修改注册表禁用此功能：
+&lt;/p&gt;
+&lt;p&gt;
+	1、找到HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell
+&lt;/p&gt;
+&lt;p&gt;
+	2、在右侧窗格中右键单击，选择新建&amp;gt; String Value，并将其命名为FolderType
+&lt;/p&gt;
+&lt;p&gt;
+	3、双击新建的FolderType，将其Value Data设置为NotSpecified
+&lt;/p&gt;
+&lt;p&gt;
+	完成后，Windows将不再自动扫描文件夹内容来判定查看模式，用户可以手动设置文件夹的查看模式，系统也会记住上次的设定，完全不影响日常使用。
+&lt;/p&gt;
+&lt;p&gt;
+	另一个问题则是开始菜单的搜索功能响应缓慢，这是因为Windows 11的设计逻辑是并不会优先搜索本地数据，而是同时尝试通过Bing提供在线内容。
+&lt;/p&gt;
+&lt;p&gt;
+	这种默认的在线搜索行为会占用额外的资源并引入延迟，拖慢本地搜索结果的显示速度，禁用方法如下：
+&lt;/p&gt;
+&lt;p&gt;
+	1、找到 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search
+&lt;/p&gt;
+&lt;p&gt;
+	2、找到BingSearchEnabled（如果不存在，可能需要新建一个DWORD值），双击，将其DWORD值设置为0
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;a href="https://img1.mydrivers.com/img/20251104/f779f50228f84e8385ca51379f0e5f65.jpg" target="_self"&gt;&lt;img alt="Win11越用越卡真不是错觉！自带两项默认功能严重拖慢系统" src="https://img1.mydrivers.com/img/20251104/s_f779f50228f84e8385ca51379f0e5f65.jpg"&gt;&lt;/a&gt;
+&lt;/p&gt;                                &lt;/div&gt;
+                                                        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Tue, 04 Nov 2025 09:15:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE9rWGljZDBMYVBJY21uaElsNWJKc0xpaGh2YzFiNGw4Yl9PSVlMb2pnbC1QVEpiMUVYUElBTmpycllJdnFCeGQ4bjVHRkl5eWQyTjFlbkVVRmhwbDFX</guid></item><item><title>最新财新周刊｜电动汽车设计激进探索 “表演式创新”不能忽视安全风险 - 财新周刊</title><link>https://weekly.caixin.com/2025-11-01/102378124.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
        &lt;p&gt;　　&lt;b&gt;文｜财新周刊 安丽敏&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;　　电动化和智能化正在全方位影响汽车行业。在设计方面，车辆前脸普遍放弃格栅，车门使用隐藏式门把手，车内搭载多块大屏幕，这些新元素基本成为标准配置，消费者能够直观感受到智能电动汽车与众不同。&lt;/p&gt;
 &lt;p&gt;　　特斯拉（NASDAQ：TSLA）是电动汽车设计潮流的开拓者。伴随其市场成功，它运用的新“符号”很快扩散开来。众多中国车企紧随其后，持续探索。&lt;/p&gt;
@@ -40,7 +86,7 @@
 &lt;/ul&gt; 
 &lt;p&gt;温馨提示：该仓库仅用于教育和研究目的。&lt;/p&gt;
                                                                                 &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Tue, 04 Nov 2025 07:00:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5hSUR0MXA5elBzZktydnNEN3ZWTU9lNFAybnFDWVJXdU1HRkZWcGFUYWFDSTBYVHJlWmpkVU1KVFptYkFUc3hPWUQxTQ</guid></item><item><title>微软机房里 大量NVIDIA GPU在吃灰：原因哭笑不得 - 驱动之家</title><link>https://news.mydrivers.com/1/1084/1084371.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Tue, 04 Nov 2025 07:00:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5hSUR0MXA5elBzZktydnNEN3ZWTU9lNFAybnFDWVJXdU1HRkZWcGFUYWFDSTBYVHJlWmpkVU1KVFptYkFUc3hPWUQxTQ</guid></item><item><title>供应集中+核能超级周期=一个多年的“铀牛市” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3758624</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 04 Nov 2025 06:20:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9iTFNOMHNaZDZEcDk1Q1Qtd3JnTVpLRVpKY2doQU12aTg0M1NxYTJEX2Y5UGpXcERXalF5RXVlU0VMSTdJWEh4RVpqYWxtTWNmdVhJ</guid></item><item><title>微软机房里 大量NVIDIA GPU在吃灰：原因哭笑不得 - 驱动之家</title><link>https://news.mydrivers.com/1/1084/1084371.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;在最新播客节目BG2中，&lt;strong&gt;&lt;span&gt;微软CEO纳德拉亲口承认公司正面临一个前所未有的尴尬：微软手上有成堆的GPU，却因为缺电、缺空间，只能闲置在那儿。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;但最大的问题不是算力过剩的现状——&lt;/p&gt;
@@ -113,7 +159,37 @@
 &lt;p&gt;值得一提的是，刚刚推送至用户的 iOS26中虽然引入了20多项 Apple Intelligence 新功能，但这次更新并未被认为是 AI 领域的重大突破。苹果正在为即将到来的 iOS27铺路，力求在 AI 技术方面进行更深入的创新。&lt;/p&gt; 
 &lt;p&gt;在 iOS26.4的更新中，苹果将推出个性化 Siri，这意味着 Siri 助手将会有一次全面革新。新的 Siri 具备屏幕感知、个人情境和应用控制三大核心功能，用户可以通过这一智能助手获取更为精准的信息。例如，用户可以询问 Siri 关于母亲的航班信息或午餐预订的情况，Siri 将能根据邮件和信息应用中的相关数据进行智能应答。&lt;/p&gt;
                                                                                 &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Tue, 04 Nov 2025 05:59:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTFAtUkhkSnlwLWVtRzdDMWYxeVdtLTdpVGJCemdQektRejNSak1mbnVVRFo3NThSWVdXd1dqMEczbDJhX2dYMmdobk5SRQ</guid></item><item><title>青岛某公司员工离职前故意删除公司数据，构成违法犯罪- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/381474</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Tue, 04 Nov 2025 05:59:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTFAtUkhkSnlwLWVtRzdDMWYxeVdtLTdpVGJCemdQektRejNSak1mbnVVRFo3NThSWVdXd1dqMEczbDJhX2dYMmdobk5SRQ</guid></item><item><title>全球首个AI投资大赛落幕：中国模型全部盈利 美国模型全部亏损 - 东方财富</title><link>https://wap.eastmoney.com/a/202511043554567531.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
+        
+        &lt;p class="related"&gt;
+
+        &lt;/p&gt;
+
+        
+
+        
+        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
+        &lt;p class="layer"&gt;&lt;/p&gt;
+        
+        
+        
+
+        
+
+        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 04 Nov 2025 05:57:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9nSjhmREU1eV94dUtENHd3OTdGSG11SEdTWkFUNjhGMGJxUm1RZFRneGhHdEQ1azBlTWJtaG5QOFJ3dWJxWTd5YVZUdnlWTEh3ZnlPdVlDX0cySjhVVFpPRQ</guid></item><item><title>尤雨溪创业公司 VoidZero 完成 1250 万美元 A 轮融资 - OSCHINA</title><link>https://www.oschina.net/news/381460</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;知名开源前端框架 Vue 作者尤雨溪创办的 VoidZero 公司&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fvoidzero.dev%2Fposts%2Fannouncing-series-a" target="_blank"&gt;宣布&lt;/a&gt;完成 1250 万美元 A 轮融资。&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/1104/113342_gtcX_2720166.png"&gt;&lt;/p&gt; 
+&lt;p&gt;本轮由 Accel 领投，参与方还有 Peak XV Partners、 Sunflower Capital、Koen Bok（Framer）以及 Eric Simons（StackBlitz）等。&lt;/p&gt; 
+&lt;p&gt;VoidZero 去年已完成种子轮融资，用于验证能否构建一个“更快、更易用、开发者体验（DX）更好”的 JavaScript 工具链。在种子阶段验证成功后，本轮融资主要用于 “加速”发展：团队扩张、开发周期加快、提升研发效率。&lt;/p&gt; 
+&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-5f476090f4dcbb7daf767cab72d64ee9cbd.png"&gt;&lt;/p&gt; 
+&lt;p&gt;尤雨溪介绍称，借助团队努力，VoidZero 在其开源项目上取得了如下成绩：&lt;/p&gt; 
+ 
+&lt;p&gt;此外，他们提到最近推出了 Vite+ —— 一个统一的 JavaScript 工具链，目前处于私测阶段（private beta）。融资将使得 Vite+ 的稳定版本发布时间提早。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Tue, 04 Nov 2025 05:55:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTFBTQmJKUFVBT3FtdjM4eUNKWVpFeGJNZS1MbjFzQVN0QVhUNzdjQUhueG11elEzei13RlljTEdUa1Y2YmdzX0RFVFZaQQ</guid></item><item><title>青岛某公司员工离职前故意删除公司数据，构成违法犯罪- OSCHINA - OSCHINA</title><link>https://www.oschina.net/news/381474</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
                                                                     
                                                         &lt;p&gt;公安部网安局今日&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FIcscUaArt46dx4xFVZRbXQ" target="_blank"&gt;发文&lt;/a&gt;，通报了近日发生的一起被网友戏称为“删库跑路”类型的违法案例。&lt;/p&gt; 
 &lt;blockquote&gt; 
@@ -201,7 +277,29 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 04 Nov 2025 03:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5RRTQ1blRHQ0tWTmxkRjYxOVFaUWFjbEpGdDlCOVZ3MjY4RVdnNU15djM3M0JNSzlCaEZ5ZUVmMWVMdWRjdTBsSWN0Q2lYUGlHRkFNRDFmNmc</guid></item><item><title>赵长鹏威胁国安却被赦免？特朗普：他谁啊-观察者网 - guancha.cn</title><link>https://www.guancha.cn/internation/2025_11_04_795681.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 04 Nov 2025 03:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5RRTQ1blRHQ0tWTmxkRjYxOVFaUWFjbEpGdDlCOVZ3MjY4RVdnNU15djM3M0JNSzlCaEZ5ZUVmMWVMdWRjdTBsSWN0Q2lYUGlHRkFNRDFmNmc</guid></item><item><title>AI万亿赌局：表外“幽灵债务”正在堆积，魔鬼藏在SPV里？ - 财联社</title><link>https://www.cls.cn/detail/2190328</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社11月4日讯（编辑 潇湘）&lt;/strong&gt;在电影《大空头》中，有许多精彩场景，其中一幕就涉及一座积木塔。&lt;/p&gt;
+&lt;p&gt;该片改编自著名投资者迈克尔·巴里押注美国房地产市场崩盘的故事。在电影中，当一名交易员向客户推介时，为说明担保债务凭证(CDO)的风险，其展示了一座“积木塔”——它象征着CDO内部填充的抵押债券。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://img.cls.cn/images/20251104/Y5E5MLU2Za_649x570.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当然，无论是在银幕上还是现实中，这座塔最后都不可避免地倒塌了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而如今，许多持怀疑态度的投资者，也正担忧人工智能投资热潮可能出现类似的崩盘。科技巨头们的市值已飙升至令人咋舌的高度，但数据中心项目投入的巨额资金在周期初期根本无法产生收益，更遑论盈利。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Cantor Fitzgerald分析师预计，四大云服务商——微软、谷歌、亚马逊和甲骨文的年度总支出，到明年年底将达到5200亿美元。&lt;/p&gt;
+&lt;p&gt;与此同时，美国银行的数据显示，顶尖科技公司的资本支出计划，正吞噬其现有业务产生的几乎全部现金流。&lt;/p&gt;
+&lt;p&gt;美银分析师Yuri Seliger指出，“这可能意味着AI企业正集体面临现金流承载能力的极限，难以仅凭现有资金支持全部AI资本支出。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而这或许就是为什么人们近期在人工智能融资领域越来越多地看到了一个新的趋势发展，它与那些在2000年代末让全球金融体系陷入困境的许多CDO所采用的工具有着惊人的相似之处：即借道所谓的特殊目的载体(SPV)。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;表外“幽灵债务”堆积&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;SPV是为实现特定目标（如资产证券化、风险隔离、项目融资、并购重组等）而设立的独立法律实体，核心功能是通过风险隔离和税收优化实现基础资产与发起人的信用、破产风险分离。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在金融危机前的房地产繁荣时期，SPV有效地将数千亿美元住房债务从美国最大银行的资产负债表中剥离。这使得投资者更难理解其中风险——当危机爆发时，他们几乎毫无预警。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而今年10月，Meta Platforms已通过名为Beignet Investor LLC的SPV筹集约300亿美元资金（主要为债务融资），用于在路易斯安那州建设数据中心。&lt;/strong&gt;此举使相关债务脱离Meta资产负债表，但实质上仍与其整体业务前景紧密相连。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据报道，马斯克旗下的xAI也正计划通过SPV结构融资200亿美元，用于采购英伟达处理器并回租给这家AI初创公司。&lt;/strong&gt;英伟达CEO黄仁勋已表示对参与该项目“感到欣喜”。&lt;/p&gt;
+&lt;p&gt;目前，现金流可能是Meta决定使用SPV工具的考量因素，因为其当前资金已有约65%用于资本支出。这家Facebook母公司上周向投资者透露，2026年资本支出增幅将“显著扩大”。&lt;/p&gt;
+&lt;p&gt;作为对比，Alphabet第三季度资本支出约240亿美元，仅占同期经营现金流的一半。正是这种健康的财务结构，使这家谷歌母公司得以在周一从美国债券市场融资150亿美元。其中部分债券期限长达50年。该公司还将在欧洲企业债市场再融资70亿美元。&lt;/p&gt;
+&lt;p&gt;Meta亦在传统企业债券市场发行了巨额债务，10月以史上第五大债券发行规模筹集约300亿美元。甲骨文则于9月下旬售出180亿美元债券。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前，对于科技巨头们开始更多借道SPV融资的做法，Gimme Credit高级分析师Dave Novosel认为，眼下使用SPV更多还是应对新债激增的策略，而非担忧科技巨头资产负债表健康状况。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;他解释称，使用SPV不仅能实现债务分离，还能隔离特定项目的风险，为投资者提供更多资金投放选择。超大规模企业及其他巨额债券发行方拥有极其强劲的信用资质，因此能在资本市场轻松融资。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然而，鉴于SPV市场远不如传统公司债券活跃，此举也不免引发了对透明度和市场流动性的质疑。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当这些问题与市场对科技巨头主导股市的担忧日益加剧、以及少数玩家间人工智能支出形成闭环的现象叠加时，矛盾无疑正显得尤为突出。OpenAI周一与亚马逊达成380亿美元协议，为其计算需求提供英伟达芯片，可以说就进一步加剧了AI巨头间“铁索连环”的趋势。&lt;/p&gt;
+&lt;p&gt;目前，OpenAI已承诺未来十年进一步投入约1.5万亿美元。而其自身预测显示，其2030年营收仍将略低于1750亿美元。未来，若OpenAI也选择通过表外工具及传统债务市场填补融资缺口，投资者也将进一步开始审视这些融资工具的本质，探究其特殊性究竟何在。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;届时，投资者或许又将面对一座需要小心拆解的“积木塔”……&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 04 Nov 2025 03:23:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE1jVDFrNW5yWlBnak9UaVJ6dllIcHNvV0ZQMFBxQjc1ZzY5M2R0MTNvMjZlb1BMWjl5UDFzbFpqS1JVbkx0YlZadA</guid></item><item><title>赵长鹏威胁国安却被赦免？特朗普：他谁啊-观察者网 - guancha.cn</title><link>https://www.guancha.cn/internation/2025_11_04_795681.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	【文/观察者网 柳白】
 &lt;/p&gt;
@@ -680,7 +778,7 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 04 Nov 2025 00:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5VWmlBUTV2TjFNOWMxWUs1N1FzcElwZ2JYTmpkaFZuOWw1YjUxU21iTzRQNlBqYnlJZXlndGNOT1NSQWJVNk9RSGd4SW03ODA1RVhlTFZqMF8</guid></item><item><title>境外间谍以兼职为名拉拢学生搜集敏感数据，国安机关披露案件详情 - 凤凰网</title><link>https://news.ifeng.com/c/8o03WvVsKkR</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;全民防线——国家安全机关典型案例解析（三）&lt;/p&gt;&lt;p&gt;近年来，境外间谍情报机关瞄准我青年学生群体，以求职兼职等名义，拉拢、利诱甚至胁迫我个别青年学生为其从事涉密资料搜集等间谍活动及其他违法行为，给我国家安全带来威胁。相关案例警示我们，要当心“私人定制”的招聘陷阱，切勿踏入境外间谍情报机关的窃密圈套。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;strong&gt;诱惑——校园招揽&lt;/strong&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;金某因读研期间需要实习经历，在校内论坛发现某国驻华使馆发布招聘经济学、管理学在读研究生担任兼职研究助理的信息。金某抱着试试看的想法，向指定邮箱投送简历。几天后，A以某国驻华使馆外交官身份，对金某进行了面试，金某顺利通过并成功“入职”，开启“打工”之路。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;strong&gt;合作——步步为营&lt;/strong&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;金某按照A的要求，在互联网查询经济类公开数据，并撰写调研报告，按次收取现金报酬。次数多了，金某也产生了疑虑，但A表示相关材料只用于两国经贸合作，自己工作太多，只是找个助理帮忙编写而已。尽管心中仍有顾虑，但一想到只需简单地搜集公开材料、撰写报告，便能换取高额报酬，金某便不再纠结。毕业工作后，金某一直与A保持“合作”，赚取“外快”。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/472A2A004CF394881F398765A82CED912BC315B3_size49_w1080_h720.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;止步——悬崖勒马&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;随着合作深入，A要求金某签订《咨询顾问协议》，不仅约定按月支付薪金，更有重点地将合作方向转向政治、能源、国际问题等热点领域。A向金某强调此类调研报告报酬翻倍，并针对性地指导金某开展敏感数据搜集和分析、撰写报告等。同时，希望通过金某结识相关敏感领域的专业人士进行合作。金某对A的身份逐渐产生怀疑，感觉存在合作风险，遂主动疏离，停止合作往来。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;收网——水落石出&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;事实上，就在金某庆幸自己及时脱身之时，国家安全机关也早已将A纳入侦察视线，掌握了其境外间谍情报机关人员身份。鉴于金某在不知晓对方系境外间谍情报机关人员身份情况下为其工作，且金某主动停止违法行为，未对国家安全和利益造成严重危害，国家安全机关对金某进行了批评教育，并没收其违法所得。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;strong&gt;国家安全机关提示&lt;/strong&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;青年学生作为祖国未来的栋梁之才，应当自觉将“国家安全高于一切”内化于心、外化于行。在面对境外机构或个人提出的所谓“学术交流”“合作邀约”“高薪兼职”时，务必保持高度警惕和头脑清醒，认清间谍“圈套”，切莫因小失大。《中华人民共和国反间谍法》规定，实施间谍行为，构成犯罪的，依法追究刑事责任；实施间谍行为，有自首或者立功表现的，可以从轻、减轻或免除处罚；有重大立功表现的，予以奖励。&lt;/p&gt;&lt;p&gt;同学们如发现或遇到可疑情况，可通过12339国家安全机关举报受理电话、网络举报平台（www.12339.gov.cn）、国家安全部微信公众号举报受理渠道或直接向国家安全机关进行举报。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 04 Nov 2025 00:14:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE5YT2F3Z3FVUUhLQkRNUXdKdlJ1VXpIN3NmbTYyYmZKSjhJREpmNHE5OERXNXpuTUdFV3JqVWJtRWZXMmppYkdpZ1dOWXo</guid></item><item><title>AI“黄金浪潮”开启！华尔街集体唱多英伟达：8.5万亿美元市值可期 - 财联社</title><link>https://www.cls.cn/detail/2190148</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社11月4日讯（编辑 卞纯）&lt;/strong&gt;上周，英伟达成为历史上第一家市值突破5万亿美元的公司。华尔街分析师表示，该公司市值可能进一步增加数万亿美元。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 04 Nov 2025 00:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5VWmlBUTV2TjFNOWMxWUs1N1FzcElwZ2JYTmpkaFZuOWw1YjUxU21iTzRQNlBqYnlJZXlndGNOT1NSQWJVNk9RSGd4SW03ODA1RVhlTFZqMF8</guid></item><item><title>微软获美国批准向阿联酋出口英伟达芯片 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/%E5%BE%AE%E8%BD%AF%E8%8E%B7%E7%BE%8E%E5%9B%BD%E6%89%B9%E5%87%86%E5%90%91%E9%98%BF%E8%81%94%E9%85%8B%E5%87%BA%E5%8F%A3%E8%8B%B1%E4%BC%9F%E8%BE%BE%E8%8A%AF%E7%89%87-ef8831af</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Tue, 04 Nov 2025 00:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMipgJBVV95cUxQMzUxdjV5TmIyR3gxMmpyWkRha2h2eWJoNUo4RXBPbjVKNk5ub1JuWnBxLV90S2Vhel9XWXoweHJhZjVwUmNXY1pxeFpjakZDV0ZSaGIyeHBsM29UeE9pZGwwWEpQaXc4R2hoc0lvZi1uY1BIcjJYM3FQZk5wdHlqLUM3SmZZWkk1Wks4ODZ3b1hoNUJrRlZfSHRvSV95M1F0cy02UkhKZkUyekhQSlhvc0V6OGJNZzI4YmFJbW9mUXo1OTB3ZThsRzVPay1jSFNXVFhjMjFqb05sS21EeW5FUFZaNWxWU3VadlVwbHpNOHRQMDhQbVdHT25NVHA4YmFoS3JRU092MW5pUS1TZm42clI3ZVlXWVZYSm1JbWt1UndDdGxGcVE</guid></item><item><title>境外间谍以兼职为名拉拢学生搜集敏感数据，国安机关披露案件详情 - 凤凰网</title><link>https://news.ifeng.com/c/8o03WvVsKkR</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;全民防线——国家安全机关典型案例解析（三）&lt;/p&gt;&lt;p&gt;近年来，境外间谍情报机关瞄准我青年学生群体，以求职兼职等名义，拉拢、利诱甚至胁迫我个别青年学生为其从事涉密资料搜集等间谍活动及其他违法行为，给我国家安全带来威胁。相关案例警示我们，要当心“私人定制”的招聘陷阱，切勿踏入境外间谍情报机关的窃密圈套。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;strong&gt;诱惑——校园招揽&lt;/strong&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;金某因读研期间需要实习经历，在校内论坛发现某国驻华使馆发布招聘经济学、管理学在读研究生担任兼职研究助理的信息。金某抱着试试看的想法，向指定邮箱投送简历。几天后，A以某国驻华使馆外交官身份，对金某进行了面试，金某顺利通过并成功“入职”，开启“打工”之路。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;strong&gt;合作——步步为营&lt;/strong&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;金某按照A的要求，在互联网查询经济类公开数据，并撰写调研报告，按次收取现金报酬。次数多了，金某也产生了疑虑，但A表示相关材料只用于两国经贸合作，自己工作太多，只是找个助理帮忙编写而已。尽管心中仍有顾虑，但一想到只需简单地搜集公开材料、撰写报告，便能换取高额报酬，金某便不再纠结。毕业工作后，金某一直与A保持“合作”，赚取“外快”。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/472A2A004CF394881F398765A82CED912BC315B3_size49_w1080_h720.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;止步——悬崖勒马&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;随着合作深入，A要求金某签订《咨询顾问协议》，不仅约定按月支付薪金，更有重点地将合作方向转向政治、能源、国际问题等热点领域。A向金某强调此类调研报告报酬翻倍，并针对性地指导金某开展敏感数据搜集和分析、撰写报告等。同时，希望通过金某结识相关敏感领域的专业人士进行合作。金某对A的身份逐渐产生怀疑，感觉存在合作风险，遂主动疏离，停止合作往来。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;收网——水落石出&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;事实上，就在金某庆幸自己及时脱身之时，国家安全机关也早已将A纳入侦察视线，掌握了其境外间谍情报机关人员身份。鉴于金某在不知晓对方系境外间谍情报机关人员身份情况下为其工作，且金某主动停止违法行为，未对国家安全和利益造成严重危害，国家安全机关对金某进行了批评教育，并没收其违法所得。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;strong&gt;国家安全机关提示&lt;/strong&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/7197ED25583661E11A1A519A2BA3B2B2A043D9A6_size30_w1080_h91.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;青年学生作为祖国未来的栋梁之才，应当自觉将“国家安全高于一切”内化于心、外化于行。在面对境外机构或个人提出的所谓“学术交流”“合作邀约”“高薪兼职”时，务必保持高度警惕和头脑清醒，认清间谍“圈套”，切莫因小失大。《中华人民共和国反间谍法》规定，实施间谍行为，构成犯罪的，依法追究刑事责任；实施间谍行为，有自首或者立功表现的，可以从轻、减轻或免除处罚；有重大立功表现的，予以奖励。&lt;/p&gt;&lt;p&gt;同学们如发现或遇到可疑情况，可通过12339国家安全机关举报受理电话、网络举报平台（www.12339.gov.cn）、国家安全部微信公众号举报受理渠道或直接向国家安全机关进行举报。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 04 Nov 2025 00:14:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE5YT2F3Z3FVUUhLQkRNUXdKdlJ1VXpIN3NmbTYyYmZKSjhJREpmNHE5OERXNXpuTUdFV3JqVWJtRWZXMmppYkdpZ1dOWXo</guid></item><item><title>AI“黄金浪潮”开启！华尔街集体唱多英伟达：8.5万亿美元市值可期 - 财联社</title><link>https://www.cls.cn/detail/2190148</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社11月4日讯（编辑 卞纯）&lt;/strong&gt;上周，英伟达成为历史上第一家市值突破5万亿美元的公司。华尔街分析师表示，该公司市值可能进一步增加数万亿美元。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;美国投行Loop Capital Markets周一将英伟达目标股价从250美元大幅上调至350美元。这一新目标价较英伟达最新收盘价206.88美元高出约70%，意味着该公司市值有望超过8.5万亿美元。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;英伟达股价周一上涨逾2%，对应略超千亿美元的市值增幅。一方面，亚马逊与OpenAI签署 380亿美元算力合同对英伟达股价起到了推动作用，另一方面，有消息称，美国首次批准微软向阿联酋出口最新款英伟达芯片。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://img.cls.cn/images/20251104/R593W8gq9V_554x416.png" alt="image"&gt;&lt;/p&gt;
@@ -1253,7 +1351,88 @@
 &lt;/section&gt;
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Mon, 03 Nov 2025 14:07:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMizAFBVV95cUxPMjdQNWNGR1dHQy11X0E4ZG9mS1cta01Bck03OUhabVVZb3VFaXAtUXVweTltWVVyZnNELURPUE1GaG1NOF85dXAzVy0zcE5Oa1ZyYU5oUE5PVHhEenpBRTZpWmFpRTluWUdLUU1HSEhUWmxoeDdNZkgtSUs4cTNzRXdoU3pVc1JEV1ktYWppNkl5a3dRd0p5VENMQVlaLVJXZTV0YWhNU0s2UmdReUItU3J3VmN5dEktWEZwc1BBMEtBTllmdmVPSldLMk0</guid></item><item><title>22:00:50【亚马逊与OpenAI签署380亿美元协议】 - 财联社</title><link>https://www.cls.cn/detail/2189973</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40"&gt;&lt;p class="m-b-15 f-s-20 c-de0422 detail-telegraph-content"&gt;财联社11月3日电，今天，亚马逊网络服务（AWS）和OpenAI宣布建立多年战略合作伙伴关系，提供AWS世界一流的基础设施，以立即开始运行和扩展OpenAI的核心人工智能（AI）工作负载。根据这项价值380亿美元的新协议，该协议将在未来七年内持续增长，OpenAI正在访问包含数十万个最先进的NVIDIAGPU的AWS计算，并能够扩展到数千万个CPU以快速扩展代理工作负载。AWS在安全、可靠和大规模运行大规模AI基础设施方面拥有非凡的经验，集群芯片超过500K。AWS在云基础设施方面的领先地位与OpenAI在生成式AI方面的开创性进步相结合，将帮助数百万用户继续从ChatGPT中获得价值。&lt;br&gt;&lt;br&gt;“扩展前沿人工智能需要大规模、可靠的计算，”OpenAI联合创始人兼首席执行官SamAltman说。“我们与AWS的合作加强了广泛的计算生态系统，这将为下一个时代提供动力，并为每个人带来先进的人工智能。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Mon, 03 Nov 2025 14:00:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE9aYmwwdXFVVTBvVnI2bkN1Nkk2M2hxd2tzcTlkdV82QWpRSThJbFJVQV9HOHlDUE1hUm50Z1VQZjY0LWNhMS1Eaw</guid></item><item><title>微软机房大量英伟达GPU开始吃灰…… - 36kr.com</title><link>https://m.36kr.com/p/3538214720167048</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Mon, 03 Nov 2025 14:07:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMizAFBVV95cUxPMjdQNWNGR1dHQy11X0E4ZG9mS1cta01Bck03OUhabVVZb3VFaXAtUXVweTltWVVyZnNELURPUE1GaG1NOF85dXAzVy0zcE5Oa1ZyYU5oUE5PVHhEenpBRTZpWmFpRTluWUdLUU1HSEhUWmxoeDdNZkgtSUs4cTNzRXdoU3pVc1JEV1ktYWppNkl5a3dRd0p5VENMQVlaLVJXZTV0YWhNU0s2UmdReUItU3J3VmN5dEktWEZwc1BBMEtBTllmdmVPSldLMk0</guid></item><item><title>22:00:50【亚马逊与OpenAI签署380亿美元协议】 - 财联社</title><link>https://www.cls.cn/detail/2189973</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40"&gt;&lt;p class="m-b-15 f-s-20 c-de0422 detail-telegraph-content"&gt;财联社11月3日电，今天，亚马逊网络服务（AWS）和OpenAI宣布建立多年战略合作伙伴关系，提供AWS世界一流的基础设施，以立即开始运行和扩展OpenAI的核心人工智能（AI）工作负载。根据这项价值380亿美元的新协议，该协议将在未来七年内持续增长，OpenAI正在访问包含数十万个最先进的NVIDIAGPU的AWS计算，并能够扩展到数千万个CPU以快速扩展代理工作负载。AWS在安全、可靠和大规模运行大规模AI基础设施方面拥有非凡的经验，集群芯片超过500K。AWS在云基础设施方面的领先地位与OpenAI在生成式AI方面的开创性进步相结合，将帮助数百万用户继续从ChatGPT中获得价值。&lt;br&gt;&lt;br&gt;“扩展前沿人工智能需要大规模、可靠的计算，”OpenAI联合创始人兼首席执行官SamAltman说。“我们与AWS的合作加强了广泛的计算生态系统，这将为下一个时代提供动力，并为每个人带来先进的人工智能。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Mon, 03 Nov 2025 14:00:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE9aYmwwdXFVVTBvVnI2bkN1Nkk2M2hxd2tzcTlkdV82QWpRSThJbFJVQV9HOHlDUE1hUm50Z1VQZjY0LWNhMS1Eaw</guid></item><item><title>比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手 - 驱动之家</title><link>https://news.mydrivers.com/1/1084/1084247.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;AMD锐龙AI Max+ PRO 395处理器有着极其出色的性能，尤其在AI大语言模型应用方面，甚至可以取代AI一体机。而且得益于其优异的能效比，这个平台可以被应用到迷你主机，甚至掌机里。&lt;/p&gt;
+&lt;p&gt;今天咱们来聊聊惠普Z2 Mini G1a 迷你AI工作站，它就是一款搭载了AMD锐龙AI Max+ PRO 395处理器的高性能迷你主机。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;做工精湛的2.9L超小型机箱&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;惠普Z2 Mini G1a采用了2.9L超小型机箱设计，整个外观乍看上去就像一台NAS。纯黑色机身，配上颇具科技感的前端面板设计，使得这款产品非常适合企业级用户。&lt;/p&gt;
+&lt;p&gt;同时拿到这款机器的第一感觉就是可靠，并且整体做工极为出色。圆角矩形机身的四个边角的弧度打磨极为自然，前端菱格矩阵式散热格栅美观又实用，给机身内部带来很好的通风效果。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/3da4b6eb-b76f-4373-85bd-301e6ccd1a4e.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/S3da4b6eb-b76f-4373-85bd-301e6ccd1a4e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前面板靠上方正中位置有两个实体菱形面板，靠上方的是电源键，下方则是产品LOGO。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/526aab52-1ac9-44d8-bef8-28cd295367d9.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/S526aab52-1ac9-44d8-bef8-28cd295367d9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前面板下方设计了经典的hp薯条LOGO，用户可以将其略微拉出来改变方向，从而使得机器卧放时LOGO也能保持正向展现。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/be4da7cd-f738-4d83-8f2e-664cb72e0341.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/Sbe4da7cd-f738-4d83-8f2e-664cb72e0341.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;机身卧放时也不必担心侧面板会与桌面摩擦而产生擦伤，因为惠普为其设计了两条橡胶脚垫，可以自由采用卧放或立放的形态。此外，这款机器重量为2.4kg，跟目前16英寸游戏本的重量差不多。&lt;/p&gt;
+&lt;p&gt;整机尺寸为20×16.8×8.55cm，体积小巧，摆放在桌面基本不占用空间，轻松融入办公环境之中，并保持桌面整洁舒适。同时用户也可以将它固定在显示器背面、桌面下方等隐藏位置，进一步节约桌面空间，让桌面更加美观。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/60682c2c-dabe-4abc-8d07-29346d1cd606.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/S60682c2c-dabe-4abc-8d07-29346d1cd606.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;对于有集群算力需求的企业级用户来说，惠普Z2 Mini G1a也可以非常方便地放在机架上，4U机架可以配置5台主机，借助AMD锐龙AI Max+ PRO 395强悍的AI计算能力，可以轻松构建专属于自家企业的私有AI大模型运行环境。&lt;/p&gt;
+&lt;p&gt;而且相对于直接采购动辄数万、十数万的AI一体机来说，售价2W左右的惠普Z2 Mini G1a的成本支出就要低得多了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;接口配置齐全扩展性出众&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于迷你主机来说，优异的扩展性必不可少，惠普Z2 Mini G1a也不例外。这款机器在机身左侧设计有1个10Gbps传输速度的USB Type-A可充电接口，在其右侧配有1个10Gbps传输速度的USB Type-C接口，并且支持USB对外供电和DP 2.1视频传输，再靠右侧是1个3.5mm耳麦插孔。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/ce3e916f-3b72-4c04-805a-ea4ee1181ea5.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/Sce3e916f-3b72-4c04-805a-ea4ee1181ea5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;机身背面是接口布局的主要区域，这里配有标准的RJ45 2.5GbE规格的以太网口，4个USB接口（2×10Gbps USB-A/2×USB-A 2.0）方便接驳键鼠和移动高速SSD等外接设备。2个40Gbps高速雷电4 USB-C接口，而且功能齐全，扩展能力出众。再过来是2个MiniDP 2.1接口，所以这台机器还随机配送了一枚MiniDP转DP线，方便用户连接显示器。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/f1fb379e-49e6-4da6-801d-ee6ae1897571.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/Sf1fb379e-49e6-4da6-801d-ee6ae1897571.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此外，最右侧顶部和底部接口区域还预留了两个Fle× I/O区域，用户可以根据自身需求选配串口、额外USB接口或额外的2.5G网口甚至10G万兆网口。&lt;/p&gt;
+&lt;p&gt;其它接口还包括电源接口和安全锁孔。此外，你还能看到2个雷电4接口上方似乎有一个小开关。没错，跟着箭头指示的位置扳下去，就可以将机箱侧盖向后方滑动后拆下来，免工具拆卸让硬件维护、升级、更换更加便捷。&lt;/p&gt;
+&lt;p&gt;打开侧盖之后可以看到机器内部的情况，主板区域被大面积的铜制散热鳍片以及2个风扇所覆盖。另外可以看到这款机器的风扇与散热鳍片之间衔接紧密，保证了出色的功耗释放和散热效率。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/34fecb84-d816-41c4-9e5f-f20b54ccd466.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/S34fecb84-d816-41c4-9e5f-f20b54ccd466.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;除了主机和视频转接线之外，惠普Z2 Mini G1a还随机配送了一套惠普有线键鼠，这也是惠普迷你主机的老规矩了，为的就是让用户到手就能直接用，不必再额外购置外设。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/3bbd5a5a-ce00-4348-b73b-d6e77121f142.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="450" src="//img1.mydrivers.com/img/20251103/S3bbd5a5a-ce00-4348-b73b-d6e77121f142.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;硬件平台理论性能评估&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;相对于外观设计来说，可能大家更加关心惠普Z2 Mini G1a的性能，毕竟它搭载了AMD面向AI领域推出的神级计算平台——锐龙AI Max+ PRO 395处理器。&lt;/p&gt;
+&lt;p&gt;从规格来看，这颗处理器cTDP为45-120W，能兼顾性能和能耗的需求。内部包含了一个16核32线程的4nm Zen5 CPU核心，最高加速频率5.1GHz，总缓存高达80MB，以及峰值AI算力为50TOPs的超低功耗NPU核心，支持Windows 11 AI+PC的诸多系统级本地AI功能。&lt;/p&gt;
+&lt;p&gt;而与重度AI计算息息相关的则是集成的Radeon 8060s超大GPU核心，拥有40组RDNA 3.5架构CU计算单元，2560个流处理器，并且配备了AMD独显中才有的infinity Cache用以进一步提升显存带宽降低延迟。&lt;/p&gt;
+&lt;p&gt;AMD锐龙AI Max+ PRO 395可以支持最高128GB统一内存，不同于传统APU最高只能划拨一半内存给显存，它可以支持最高96GB GPU专属显存，下面我们来看看它的理论性能与实际应用性能表现。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="370" src="//img1.mydrivers.com/img/20251103/42bdba51-8ae6-4672-800f-e21507490e73.jpg" w="395"&gt;&lt;/p&gt;
+&lt;p&gt;其实此前我们测试过锐龙AI Max+ 395处理器的性能，而锐龙AI Max+ PRO 395与前者规格相同，只是增加了AMD PRO企业级安全管理技术，所以就看机器模具的散热设计是否能进一步帮助性能得到释放。首先从CINEBENCH R23和2024测试来看，惠普Z2 Mini G1a确实做到了：在R23测试标准下，单核得分1938，多核得分37708；2024标准下单核得分110，多核得分1881。多核性能都比此前我们测试的成绩要高出不少。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/2b0f4c41-fb7a-4133-89ca-1be6675134c6.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="383" src="//img1.mydrivers.com/img/20251103/S2b0f4c41-fb7a-4133-89ca-1be6675134c6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;究其原因，惠普Z2 Mini G1a给了锐龙AI Max+ PRO 395更加强劲的功耗释放。通过AIDA 64 FPU CPU单烤机测试可以看到，这颗处理器的长时稳定功耗释放基本达到了120W附近，但平均核心温度只有95.5℃，可见惠普Z2 Mini G1a的整机散热调校还是相当给力的，这确保了锐龙AI Max+ PRO 395在性能释放上更加游刃有余。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/71aec4b2-a9d3-466c-9237-30c6d1550d70.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="265" src="//img1.mydrivers.com/img/20251103/S71aec4b2-a9d3-466c-9237-30c6d1550d70.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;锐龙AI Max+ PRO 395支持128GB LPDDR5× 8000高速内存，其读取速度高达119.74GB/s，写入速度高达211.65GB/s，拷贝速度高达149.46GB/s，速度极快。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="518" src="//img1.mydrivers.com/img/20251103/f1c66c9d-3b92-46d4-95b7-6506d7e7e051.jpg" w="539"&gt;&lt;/p&gt;
+&lt;p&gt;本次我们拿到的评测机配备了一块1TB容量的PCIe 4.0固态硬盘，实测顺序读取速度为4516.67MB/s，顺序写入速度为3640.92MB/s，4K随机读取速度为45.59MB/s，4K随机写入速度为179.16MB/s，达到了PCIe4.0固态硬盘的中端性能水准。在运行日常办公软件、加载AI大语言模型、加载图片/视频素材时，会提供不错的速度支持。HP在Z2 Mini G1a上还提供了诸多容量和速度规格的方案，单个盘最高可以选配2TB的Z turbo超高速PCIe4.0 SSD。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="342" src="//img1.mydrivers.com/img/20251103/24c0b47f-b699-4066-8f31-f939c8c828d3.jpg" w="472"&gt;&lt;/p&gt;
+&lt;p&gt;锐龙AI Max+ PRO 395集成了Radeon 8060S iGPU，这颗GPU本身性能相当不错，但AMD为了能让它跑大参数量模型，可以通过调用内存做显存来提升显存容量。它拥有2560个流处理器，核心频率高达2900MHz，是目前最强的集成显卡之一。我们手上的设备将显存分配了64GB专属，加上可以调用剩余64G内存的一半，理论上这颗GPU目前可以调用的显存高达96GB&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/c42b1682-9db0-42a2-a287-2986610d722f.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="838" src="//img1.mydrivers.com/img/20251103/Sc42b1682-9db0-42a2-a287-2986610d722f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;接下来我们看看3DMark测试成绩，Time Spy以及Fire Strike E图形性能分别达到了11418和14267分，从集成显卡角度来说，这样的跑分是相当超模的规格，而且理论图形性能达到了RT× 4060独显的水准。但若是论跑大语言模型的能力，别说RT× 4060，就是RT× 5090来了也不是它的对手。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/bc868e1b-aac6-43a3-b756-46c3c97c4fb0.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="331" src="//img1.mydrivers.com/img/20251103/Sbc868e1b-aac6-43a3-b756-46c3c97c4fb0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/02b55890-f1af-4182-9060-2a27622b4eb9.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="363" src="//img1.mydrivers.com/img/20251103/S02b55890-f1af-4182-9060-2a27622b4eb9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考UL Procyon的Ryzen AI NPU Integer测试以及Windows ML ONN× GPU Float 16性能测试，前者得分高达1761分，后者达到了953分，单从理论跑分来看，锐龙AI Max+ PRO 395的NPU和GPU AI算力也是当前AI PC领域的顶尖水准。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/8c9c6237-6348-4718-b132-61ab79c68a7e.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="282" src="//img1.mydrivers.com/img/20251103/S8c9c6237-6348-4718-b132-61ab79c68a7e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/2c10720d-9095-49bf-a812-7f0c01c56084.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="285" src="//img1.mydrivers.com/img/20251103/S2c10720d-9095-49bf-a812-7f0c01c56084.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;生产力及AI应用性能评估&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;理论性能了解之后，我们来看看惠普Z2 Mini G1a在实际应用侧的性能表现。&lt;/p&gt;
+&lt;p&gt;首先是生产力应用，这里参考UL Procyon的图片编辑和视频编辑测试，可以看到锐龙AI Max+ PRO 395的性能相当彪悍，图片编辑得分8386，视频编辑得分22441，整体效率相当高，满足重负载生产力应用不成问题。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/80d23c69-f711-4010-9f12-b1b6a97fa300.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="326" src="//img1.mydrivers.com/img/20251103/S80d23c69-f711-4010-9f12-b1b6a97fa300.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/593483ad-f163-4f3f-9716-31679f317990.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="240" src="//img1.mydrivers.com/img/20251103/S593483ad-f163-4f3f-9716-31679f317990.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;就比如D5渲染器这种工程设计类软件，我们分别测试了工程图和1080p视频渲染，前者耗时仅为1分30秒，后者也仅用了5分57秒。&lt;/p&gt;
+&lt;p&gt;此前，这种专业领域的渲染任务必须要放到专业台式工作站上去做，而现在，惠普Z2 Mini G1a这样的2.9L超小型迷你主机在锐龙AI Max+ PRO 395平台的加持下就可以轻松完成，不得不感慨时代和技术的变化。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/3be99e97-d8be-41cf-b40f-8b93c9c4d81f.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="355" src="//img1.mydrivers.com/img/20251103/S3be99e97-d8be-41cf-b40f-8b93c9c4d81f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="344" src="//img1.mydrivers.com/img/20251103/2ff3ee22-80b2-4f30-85da-fa2a3a42d776.jpg" w="592"&gt;&lt;/p&gt;
+&lt;p&gt;在超凡的生产力效率之外，锐龙AI Max+ PRO 395最为惊艳的还是极其优异的AI算力支持。&lt;/p&gt;
+&lt;p&gt;往前倒1-2年，我们都很难想像能够在即使是最顶级的集成显卡平台上去跑AI，这就是为什么锐龙AI Max+系列是真正具备革命意义本地AI硬件平台，它为很多面向AI本地部署、AIGC、AI专业内容创意、科学计算、软件开发等应用场景的企业用户、开发者和个人用户提供了经济又实用的低成本解决方案，同时兼容运行众多软件，通过了多种ISV认证。&lt;/p&gt;
+&lt;p&gt;同时，AMD与Amuse AI合作，还为锐龙AIPC打造了专门的AIGC工具Amuse，通过它你可以快速部署适配AMD锐龙平台的AIGC大模型，除了可以做文生图、图生图，还可以做文生视频，而且支持调用AMD NPU进行超分辨率辅助或独立采用NPU来完成图像生成，是目前非常好用且易用的AIGC应用。&lt;/p&gt;
+&lt;p&gt;这里我们使用同样的一段提示词，分别在不同的大模型中做了文生图体验，精度不高的模型最快5秒钟就能生成一张图片，而高精度模型也只需37.4秒就能生成一张1024×1024规格的图片。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/c22d5e44-54dc-4796-84b7-36d46b779bff.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="351" src="//img1.mydrivers.com/img/20251103/Sc22d5e44-54dc-4796-84b7-36d46b779bff.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/ff294b51-1209-4ea2-8db4-add27cf4edb4.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="351" src="//img1.mydrivers.com/img/20251103/Sff294b51-1209-4ea2-8db4-add27cf4edb4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/daa26c38-0d00-4635-82fe-a4e12c1dbdd7.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="351" src="//img1.mydrivers.com/img/20251103/Sdaa26c38-0d00-4635-82fe-a4e12c1dbdd7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/df5daf3f-db59-4b29-80ec-065208b8c5f1.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="351" src="//img1.mydrivers.com/img/20251103/Sdf5daf3f-db59-4b29-80ec-065208b8c5f1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外我们还使用locomotion模型体验了文生视频，耗时30.6秒钟完成了下面GIF图所示的一段视频素材，整体效果说实话还是相当让人满意的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/b2146b55-6da1-4a00-a798-c723699353d1.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="351" src="//img1.mydrivers.com/img/20251103/Sb2146b55-6da1-4a00-a798-c723699353d1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最后我们通过LM Studio部署了七款不同参数规模的常用大语言模型，以下GIF图为1倍速录制，运行的大模型是OpenAI旗下的gpt-oss-120b，大约45 token/s左右的生成速度，非常快，足够满足用户的本地化AI助手应用需求了。&lt;/p&gt;
+&lt;p&gt;由于是本地化部署，自然没有网络延迟，也不用付费购买tokens流量，还不用担心数据隐私泄露的问题。&lt;/p&gt;
+&lt;p&gt;另外我们还统计了七款大模型的生成速度，qwen3-30b-a3b混合专家模型生成速度达到了61.48tokens/s，接下来是qwen2.5-omni-7b和openai/gpt-oss-120b，生成速度分别为44.94 tokens/s和38.57 tokens/s；Llama4-scout-17b和qwen3-235b-a22b生成速度分别为15.72 tokens/s和13.66 tokens/s，也能很好地满足日常应用需求。要知道受限于单卡显存，常见顶级独显也都只有24或32GB显卡，是很难部署和流畅运行这类超大参数的大模型的，而锐龙AI Max+ PRO 395平台不仅能顺利部署和加载，甚至真正能够跑得动、跑得快。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251103/fe8f1959-a8e1-4bbe-a57d-f06d57681287.jpg" target="_blank"&gt;&lt;img alt="比NAS小 比台式机性能强！锐龙AI Max+ PRO 395迷你电脑上手" h="315" src="//img1.mydrivers.com/img/20251103/Sfe8f1959-a8e1-4bbe-a57d-f06d57681287.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;评测总结&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;惠普迷你PC一直以来都给人以非常踏实和可靠的感觉，出色的稳定性、可靠性以及性能表现，让不少企业级用户、专业用户从中受益。&lt;/p&gt;
+&lt;p&gt;在AI时代到来之后，AMD推出的锐龙AI Max+ PRO 395平台可谓是技惊四座，它与惠普Z2 Mini G1a AI图形工作站的强强联手，可以说是给想要研究AI、学习AI、实用AI的企业用户、开发者和个人用户提供了相当靠谱的硬件平台，用户无需花费数万甚至数十万元去购买AI一体机，只需要一台搭载锐龙AI Max+ PRO 395的惠普Z2 Mini G1a，两万左右的价格即可解决普通的AI算力部署需求。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 03 Nov 2025 13:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1fbUY3dGhEcFVMNVozQ3ptdWhRcHZzWEh2T3Z6WXd4S1pUcTktWnA0QWpDTmZWd2pXaDZMMXNSZEhWWEN2ZHZGRm5qWlE1STdOU05QV0syd1g</guid></item><item><title>微软机房大量英伟达GPU开始吃灰…… - 36kr.com</title><link>https://m.36kr.com/p/3538214720167048</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
  
  
   &lt;p&gt;你敢想，&lt;strong&gt;微软堆成山的GPU，只能在库房里吃灰&lt;/strong&gt;？&lt;/p&gt;
@@ -2019,116 +2198,4 @@
  &lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/1103/185901_Khw6_2720166.png"&gt;&lt;/p&gt; 
 &lt;/blockquote&gt;
                                                                                 &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 03 Nov 2025 11:13:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE15Mi1LNFBxckVvc2k1VkNTRzNLN2ZLRkhZT1VYNTB3bm1HaFVmVkdxaldjOVV5NmM2Yl9KWVRlVGhNMUhhNXU2VWE0bw</guid></item><item><title>HDD硬盘价格大涨 西数表态：一点产量都不会增加 - 3DM</title><link>https://www.3dmgame.com/news/202511/3931006.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
-        &lt;div class=" news_warp_top"&gt;
-            &lt;h1 class="bt"&gt;HDD硬盘价格大涨 西数表态：一点产量都不会增加&lt;/h1&gt;
-            &lt;p class="time"&gt;时间：&lt;span&gt;2025-11-03 18:05:41&lt;/span&gt;&lt;/p&gt;
-            
-                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-                        &lt;p class="clear"&gt;&lt;/p&gt;
-        &lt;/div&gt;
-                    
-&lt;p class="Tonglan_785"&gt;
-    
-    &lt;i&gt;&lt;/i&gt;
-&lt;/p&gt;
-                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/1103/1762153220599.jpg" id="coverUrl"&gt;
-                &lt;div class="news_warp_center"&gt;
-            &lt;p&gt;
-	由于AI需求爆发，HDD机械硬盘也迎来了春天，今年价格已经大涨，明年的供应也不乐观，预计还得再涨两三个季度。
-&lt;/p&gt;
-&lt;p&gt;
-	这样的情况当然会让两大硬盘巨头业绩爆发，继希捷之后，西数也发布了2026财年第一季度(截至10月3日)的财报，收入增长27%到28.2亿美元，&lt;strong&gt;但利润暴涨140%到11.8亿美元。&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	西数表示，营收增长主要得益于公司制造运营部门的出色执行，他们在供应链方面投入了大量精力，提高了良率。
-&lt;/p&gt;
-&lt;p&gt;
-	同时价格上涨也起到了推动作用，市场需求超过了西数和希捷等制造商的产能，同时客户转向更大容量的硬盘也促进了营收增长。
-&lt;/p&gt;
-&lt;p&gt;
-	面对这样多年不遇的好日子，西数和希捷很有默契，两家公司都不会增产——西数CEO直接表示，&lt;strong&gt;&lt;span&gt;他想明确说明一点，目前不会在他们的产品组合中增加任何单位产能。&lt;/span&gt;&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	也就是说希捷、西数两家都选择不靠增加产量的方式，&lt;strong&gt;他们现在的目标是提高硬盘容量，而非新建工厂，毕竟AI需求对大容量硬盘要求更高。&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20251103/1762153215_845984.jpg" alt="HDD硬盘价格大涨 西数表态：一点产量都不会增加"&gt;
-&lt;/p&gt;                                &lt;/div&gt;
-                                                        &lt;a class="zan_box"&gt;
-                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
-                &lt;span class="znums"&gt;0&lt;/span&gt;
-            &lt;/a&gt;
-                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
-
-                                        
-                        
-                                
-        
-                
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Mon, 03 Nov 2025 10:05:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFBnT1hqWjNYelh0M1Z1S3paRWx5WHpUNWh0NjdLM2xKRnJxMWxhQVFDemtHUENvVzhsRmdaMXRLYlIxRWNuSF9yRElhcGpwc1pxVE9XMWhwZHZ1Sjdt</guid></item><item><title>这群大学生，正在教 OPPO 做 AI 产品 - 爱范儿</title><link>https://www.ifanr.com/1643045</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
-  
-&lt;p&gt;没人理解那个对着画纸说话的孩子。&lt;/p&gt;
-&lt;p&gt;小表弟总爱画画时自言自语， 像在跟另一个世界的朋友聊天。「他画的不是画， 他画的是一个世界。」这个被大多数人当作小孩子童真稚趣的场景， 却被山东大学《绘语梦园》团队成员记住了，并成为他们参加第四届中国高校计算机大赛智能交互创新赛的创意起点。&lt;/p&gt;
-&lt;p&gt;他们想做的很简单：让每个孩子的涂鸦都能活过来。&lt;/p&gt;
-&lt;p&gt;于是便有了这样一款软件：你随手画一条鱼， 它就能在屏幕里游动；你画个哆啦 A 梦， 点击它就能和你对话。AI 会根据角色性格生成对话， 还能识别你拍下的真人照片， 并变成 2.5D 动态世界里的角色。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1643046" src="https://s3.ifanr.com/wp-content/uploads/2025/11/1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/11/1.png!720 1265w, https://s3.ifanr.com/wp-content/uploads/2025/11/1-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/1-768x512.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/1-1024x682.png 1024w" sizes="(max-width: 1265px) 100vw, 1265px"&gt;&lt;/p&gt;
-&lt;p&gt;「画得丑点，效果反而更开心。」这不是专业设计师的工具，而是一个让儿童甚至成年人也能玩起来的创作世界，AI 会自动将你的涂鸦风格化，调整成适合这个世界的样子，让笨拙的线条也有了生命力。&lt;/p&gt;
-&lt;p&gt;最终，这个看似童趣的想法，获得了第四届中国高校计算机大赛智能交互创新赛的一等奖和最佳商业潜力奖。&lt;/p&gt;
-&lt;p&gt;而这，也正是 OPPO 连续四年承办这项全国性赛事所寻找的答案。&lt;/p&gt;
-&lt;p&gt;OPPO 会安排产品经理和技术专家为参赛队伍提供课程指导，跟这些充满热爱的年轻人一起，为这些野生的创意注入可行性的思考。&lt;/p&gt;
-&lt;p&gt;在这里，企业和学生的身份被搁置一旁，剩下的只有问题和答案。本届比赛里的 470 多所高校，3600 多支队伍，2000 多份作品，都在回答同一个问题：AI 能在哪些场景真正落地，创造出前所未有的价值？&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1643047" src="https://s3.ifanr.com/wp-content/uploads/2025/11/2.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/11/2.png!720 1269w, https://s3.ifanr.com/wp-content/uploads/2025/11/2-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/2-768x512.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/2-1024x683.png 1024w" sizes="(max-width: 1269px) 100vw, 1269px"&gt;&lt;/p&gt;
-&lt;h3&gt;OPPO 办了个比赛，让年轻人找到 AI 该解决的问题&lt;/h3&gt;
-&lt;p&gt;四年，对于瞬息万变的科技行业来说，意味着什么？&lt;/p&gt;
-&lt;p&gt;2025 年，整个行业已经被大模型和智能体的浪潮彻底改写，也正是在这一年，OPPO 与浙江大学迎来了联合承办中国高校计算机大赛-智能交互创新赛的第四个年头。本次大赛的主题也随之进化为「面向移动终端的 AI 智能体创新」。&lt;/p&gt;
-&lt;p&gt;在互联网大厂纷纷缩减对外合作的当下，OPPO 年复一年地在产学研这条路上坚定投入，连续投入这么多人力物力，ROI（投资回报率）该如何衡量？&lt;/p&gt;
-&lt;p&gt;在接受爱范儿等媒体采访时，OPPO 产学研事务总监秦征给出了答案：&lt;/p&gt;
-&lt;p&gt;「产学研合作本身就不是立竿见影的事， 它是长期投入。&lt;/p&gt;
-&lt;p&gt;OPPO 追求的是更健康、更长久地发展， 所以我们看重几个维度：第一是技术问题的解决。短期内，我们会遇到技术团队自己想不出答案的挑战， 这时候高校的专业老师能给我们带来一些新思路；中期来看， 我们希望高校与我们一起进行 3 到 5 年后的技术布局和探索， 为下一代产品做准备；长期来说， 我们需要看到未来可能出现的颠覆性技术。这种视角从公司内部很难获得， 我们需要合作伙伴不以利润为导向， 纯粹地思考技术的未来走向。&lt;/p&gt;
-&lt;p&gt;第二是人才。公司的根本是人， 我们希望通过与高校的合作， 识别更多优秀的技术、管理、营销人才加入。」&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1643048" src="https://s3.ifanr.com/wp-content/uploads/2025/11/3.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/11/3.png!720 1268w, https://s3.ifanr.com/wp-content/uploads/2025/11/3-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/3-768x512.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/3-1024x683.png 1024w" sizes="(max-width: 1268px) 100vw, 1268px"&gt;&lt;/p&gt;
-&lt;p&gt;这个答案很务实。OPPO 相信，AI 将能够重新定义我们与设备的交互方式。但如何让前沿技术真正落地？关键在于找到更多应用场景，让最富有创造力的头脑共同碰撞，这需要听到更多声音，尤其是那些真正在生活里发现问题、想解决问题的年轻人。&lt;/p&gt;
-&lt;p&gt;他们本身就是真实用户，也更敏锐地感知到生活中那些未被满足的需求。&lt;/p&gt;
-&lt;p&gt;于是 OPPO 决定：在赛程期间开放智能体开发平台，向参赛队伍提供最新旗舰设备，并组建技术团队提供阶段性支持。从初赛降低开发门槛，到决赛前的专项指导，让好的想法不会因为技术门槛而止步。&lt;/p&gt;
-&lt;p&gt;对于脱颖而出的优秀团队，OPPO 还提供实习直通或校招优先录取的机会。今天在赛场上展示的创意，可能就是明天 OPPO 产品上的新功能，或者成为整个行业的新方向。&lt;/p&gt;
-&lt;p&gt;这就是一场双向奔赴：把大赛做成连接象牙塔和商业世界的桥梁，让技术实力和年轻人的想象力真正碰撞起来。&lt;/p&gt;
-&lt;p&gt;浙江大学参赛项目《轻绘 AI》就是个典型例子。&lt;/p&gt;
-&lt;p&gt;他们发现， 传统 AI 绘图工具依赖冗长的提示词， 普通用户很难准确表达需求。在 OPPO 提供的设备和智能体平台支持下，他们设计了一套让 AI 自动追问并生成动态配置界面的系统——用滑块、选项等交互组件取代复杂文字输入， 用户可以快速控制光照、构图等细节。&lt;/p&gt;
-&lt;p&gt;更巧妙的是， 系统会根据场景自动调整：生成商品海报时的配置项， 和生成人像合照时完全不同。类似 Figma 的多图层画布， 让用户能对局部图层精细调整， 试图解决改一处全乱套的问题。&lt;/p&gt;
-&lt;p&gt;但 OPPO 的产学研布局，远不止学生竞赛这一块拼图。2018 年开始，OPPO 就与浙江大学、上海交通大学、清华大学等院校建立了联合实验室。这些实验室不是挂个牌子摆设，而是真刀真枪地攻克技术难题。&lt;/p&gt;
-&lt;p&gt;比如与浙江大学合作，从还原色彩真实的全球首个安卓全链路色彩管理系统，到行业首创的视疲劳预测AI模型，视疲劳预测准确率超过85%——在你的眼睛感到干涩、模糊之前，系统会悄悄调整屏幕光谱、发出休息提醒；与华中科技大学合作焕新存储技术，教手机学会「预测」哪些文件即将变得碎片化，并赶在卡顿发生前就做好整理，让手机久用流畅如新。&lt;/p&gt;
-&lt;p&gt;这些技术有个共同点：它们从真实需求出发，最终变成手机里那些你每天在用、但从未留意过的功能。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1643049" src="https://s3.ifanr.com/wp-content/uploads/2025/11/4.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/11/4.png!720 1269w, https://s3.ifanr.com/wp-content/uploads/2025/11/4-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/4-768x513.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/4-1024x683.png 1024w" sizes="(max-width: 1269px) 100vw, 1269px"&gt;&lt;/p&gt;
-&lt;p&gt;OPPO 和高校的合作方式也不走寻常路。&lt;/p&gt;
-&lt;p&gt;双方共同定义问题、共同攻克难关。OPPO 提供产业洞察和工程能力，高校提供理论深度和学术视野，这已经超越了传统的「企业出题、高校解题」的模式。&lt;/p&gt;
-&lt;p&gt;为了支持这种深度合作，OPPO曾在 2018 年启动「贝尔计划」，设立 2 亿元且不设上限的创新基金，在全球范围内支持青年学者的前沿探索。&lt;/p&gt;
-&lt;p&gt;如今，OPPO 已经与超过 100 所高校建立了合作关系，涵盖 AI、影像、健康等多个领域，只有不追求立竿见影的回报，才能等来持续的创新。&lt;/p&gt;
-&lt;h3&gt;年轻人的创新思维， OPPO 的长期主义&lt;/h3&gt;
-&lt;p&gt;爱范儿在现场看完比赛，我们发现它真正值得关注的，不在于获奖的作品有多成功，商业模式有多么突破性，而是在于这些年轻人中涌现的创新思维。&lt;/p&gt;
-&lt;p&gt;学生在探索 AI 该怎么服务人，OPPO 也在用产品回应这个问题。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1643050" src="https://s3.ifanr.com/wp-content/uploads/2025/11/5.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/11/5.jpg!720 1271w, https://s3.ifanr.com/wp-content/uploads/2025/11/5-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/5-768x512.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/5-1024x682.jpg 1024w" sizes="(max-width: 1271px) 100vw, 1271px"&gt;&lt;/p&gt;
-&lt;p&gt;今年是 OPPO 创立的第三十年。三十年前没人能想到手机会变成今天这个样子，而站在 AI 手机时代的起点，OPPO 正用同样的执着思考一个更本质的问题：技术应该为人做什么，而不是人该为技术做什么。&lt;/p&gt;
-&lt;p&gt;无论是使用超过 30 亿次的「AI 消除」，简单点击就能去除照片中的多余元素，还是通过物理实体按键实现的「一键闪记」，自动整理灵感、识别账单并记账，亦或者直接对着屏幕上的任何内容提问的「AI 一键问屏」，OPPO 始终在探索同一件事：通过更自然的交互方式，让 AI 真正落地。&lt;/p&gt;
-&lt;p&gt;在这个过程中，把 AI 做重，把体验做轻，用户才能无需感知参数，只需享受结果。&lt;/p&gt;
-&lt;p&gt;今年 8 月，小布助手突破 1.7 亿月活用户，成为国内活跃用户数最多的手机 Al 助手的背后，就是无数个「诶，还真挺好用」的真实瞬间。&lt;/p&gt;
-&lt;p&gt;而这些创新的源头，很大程度上来自 OPPO 对年轻创造力的尊重。&lt;/p&gt;
-&lt;p&gt;年轻人只会真诚地想解决生活中遇到的问题，这种「从人出发」的思维恰恰是技术创新最需要的。这也是 OPPO 在产学研领域持续耕耘的深层逻辑：通过开放的生态，让更多年轻人参与进来，一起找到技术服务于人的最佳路径。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1643051" src="https://s3.ifanr.com/wp-content/uploads/2025/11/6.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/11/6.png!720 1265w, https://s3.ifanr.com/wp-content/uploads/2025/11/6-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/6-768x512.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/6-1024x682.png 1024w" sizes="(max-width: 1265px) 100vw, 1265px"&gt;&lt;/p&gt;
-&lt;p&gt;秦征对此也深有感触:&lt;/p&gt;
-&lt;p&gt;「AI 时代是年轻人的时代。我们发现很多实习生的想法，比我们的还好。他们是 AI 的原住民，对 AI 的理解可能比传统计算机工作者更深，经常能做出很惊艳的东西。&lt;/p&gt;
-&lt;p&gt;这个比赛，就是我们希望看到同学们作为 AI 原住民，怎么用 AI 去改变他们的生活。&lt;/p&gt;
-&lt;p&gt;我们看到有人用 AI 做绘画，有人帮助残障人士，有人帮助孩子更好地接受教育。他们对痛点有亲身感受，知道怎么用 AI 去解决问题。这对我们的帮助非常大。」&lt;/p&gt;
-&lt;p&gt;事实上，这条路径已经在现实中开花结果。&lt;/p&gt;
-&lt;p&gt;2024 年的获奖作品《愈伴精灵——面向青少年心理健康支持的新型智能体》，如今已在山东省精神卫生中心投入实际应用。从比赛作品到临床应用，《愈伴精灵》的落地不仅验证了其在公益领域的技术价值，也是 OPPO 整体 AI 战略的缩影。&lt;/p&gt;
-&lt;p&gt;在上个月的开发者大会上，OPPO 给出了更系统的答案：&lt;/p&gt;
-&lt;p&gt;新计算、新感知、新生态，以 On-Device Compute 端侧智能计算，PersonaX 记忆共生引擎，以及 Agent Matrix 智能体生态框架为技术基座，打造与用户共生的智慧系统，引领个人化 AIOS。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1643052" src="https://s3.ifanr.com/wp-content/uploads/2025/11/7.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/11/7.png!720 1265w, https://s3.ifanr.com/wp-content/uploads/2025/11/7-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/7-768x512.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/7-1024x682.png 1024w" sizes="(max-width: 1265px) 100vw, 1265px"&gt;&lt;/p&gt;
-&lt;p&gt;好的技术，应该让人忘记它的存在。&lt;/p&gt;
-&lt;p&gt;而要做到这一点，需要在看不见的地方下笨功夫——无论是底层技术的持续投入，还是对人才和行业的长远布局。产学研合作或许不会立即带来产品突破，但它同时正在培养人才、验证方向、积累势能，让年轻人从真实的生活场景出发，自由探索技术可以为人做什么。&lt;/p&gt;
-&lt;p&gt;从赛事出去的人才不只服务于 OPPO，更会把这种以人为本的理念带到更多产品中，推动整个行业真正为用户着想，好用的 AI 也因此走向更多人的生活。&lt;/p&gt;
-&lt;p&gt;开放的生态思维，是在为行业探索一条更长远的路。风口诱人，但回到用户需求、让 AI 真正好用，OPPO 这种定力显得弥足珍贵。&lt;/p&gt;
-
-  &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Mon, 03 Nov 2025 09:52:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE96UzI2WFBLMF9PUjJlRk5QRWdnRmdxUXhIaFVkbE5DT0tsYUhVbnNNc2dNT2ZqMGNWRUI4YW5hV1IwRzg</guid></item></channel></rss>
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Mon, 03 Nov 2025 11:13:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE15Mi1LNFBxckVvc2k1VkNTRzNLN2ZLRkhZT1VYNTB3bm1HaFVmVkdxaldjOVV5NmM2Yl9KWVRlVGhNMUhhNXU2VWE0bw</guid></item></channel></rss>
