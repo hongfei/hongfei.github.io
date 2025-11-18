@@ -18,7 +18,29 @@
 
         &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 18 Nov 2025 09:08:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE85Q1hwTmpmTVNTWWw4YjAybV9EUno1ZVVxMHRVSnZhdnotTzVrcWJBd2U4LURLcjhibllIQXQ1OFR4YmtUZ3dHMEd1Z25OT3U1ek5ENzY0SUxKRS1aOVh2bQ</guid></item><item><title>短短六周，币圈“蒸发”了1.2万亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759605</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 07:34:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE53VVQwWG1QRnlZcEV5TUN4NVN0NzdLdXJnLVpMTkR2LUhrY2hiRzk1a1lyNTRnVHVkM3pFZWZCeXViYlBtSDNDZm1ZejdQczdQcTlz</guid></item><item><title>Kimi K2 Thinking 被 Perplexity 接入 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/384277</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 18 Nov 2025 09:08:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE85Q1hwTmpmTVNTWWw4YjAybV9EUno1ZVVxMHRVSnZhdnotTzVrcWJBd2U4LURLcjhibllIQXQ1OFR4YmtUZ3dHMEd1Z25OT3U1ek5ENzY0SUxKRS1aOVh2bQ</guid></item><item><title>Git 2.52 正式发布，新增 git last-modified 命令 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/384307/git-2-52</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;Git 2.52 已正式&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Flore.kernel.org%2Fgit%2Fxmqqh5usmvsd.fsf%40gitster.g%2F" target="_blank"&gt;发布&lt;/a&gt;，本次更新带来了多项面向大型代码库与未来演进的重要特性。&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/1118/165208_a4t4_2720166.png"&gt;&lt;/p&gt; 
+&lt;h3&gt;&lt;strong&gt;关键更新亮点&lt;/strong&gt;&lt;/h3&gt; 
+&lt;p&gt;&lt;strong&gt;1. 目录级别的 “最后修改者” 查询更快更强&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Git 新增 &lt;code&gt;git last-modified&lt;/code&gt; 命令，可一次性查看目录下所有文件的最后修改提交，性能相比传统方法提升约 5 倍。该功能来自 GitHub 内部多年实践沉淀。&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;2. 更智能的仓库维护策略上线&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;code&gt;git maintenance&lt;/code&gt; 引入“几何式（geometric）”策略，按比例合并 packfiles，避免频繁的大型打包操作，显著提升大仓库的健康度与维护效率。这套方法同样来自 GitHub 的生产经验。&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;3. 新实验性命令 &lt;code&gt;git repo&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Git 开始用更现代的方式重构仓库元信息查询功能。&lt;code&gt;git repo info&lt;/code&gt;、&lt;code&gt;git repo structure&lt;/code&gt; 可轻松查看仓库类型、对象格式、引用结构统计等信息，为工具链和自动化分析提供更好支持。&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;4. 为 Git 3.0 做准备：SHA-256 与 Rust 逐步引入&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;Git 2.52 延续对 SHA-256 的支持推进，强化未来哈希切换的互操作性。同时，Git 开始加入 Rust 实现的内部组件（需 WITH_RUST 选项），为未来更多 Rust 重构铺路。&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;5. Bloom Filter 加速路径查询&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;路径过滤的日志查询（特别是带通配符的 pathspec）性能进一步提升，复杂路径下的 &lt;code&gt;git log&lt;/code&gt; 体验更流畅。&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;6. 多项性能优化&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;包括：&lt;/p&gt; 
+ 
+&lt;p&gt;&lt;strong&gt;7. sparse-checkout 新增清理命令&lt;/strong&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;code&gt;sparse-checkout clean&lt;/code&gt; 能移除不再匹配 sparse 配置的文件，方便管理部分签出的仓库。&lt;/p&gt; 
+&lt;p&gt;详情查看：&lt;em&gt;https://github.blog/open-source/git/highlights-from-git-2-52/&lt;/em&gt;&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Tue, 18 Nov 2025 08:57:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiV0FVX3lxTFB2NGtVc1c0b3U5RlZUQ2U3M3Q3bHdCd3puT3dpa1dUUGF3Tzg4MFR5R3NjN3AtdjZoNnBJbzl0MkRyNmVtN0I3Rm8zTFFHSzZPZDlqbFdaMA</guid></item><item><title>短短六周，币圈“蒸发”了1.2万亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759605</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 07:34:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE53VVQwWG1QRnlZcEV5TUN4NVN0NzdLdXJnLVpMTkR2LUhrY2hiRzk1a1lyNTRnVHVkM3pFZWZCeXViYlBtSDNDZm1ZejdQczdQcTlz</guid></item><item><title>Kimi K2 Thinking 被 Perplexity 接入 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/384277</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
                                                                     
                                                         &lt;p&gt;&lt;span&gt;Kimi K2 Thinking 模型已&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fyw98oX_auH-fPBgsaaxCeA" target="_blank"&gt;接入&lt;/a&gt; AI 搜索应用 Perplexity，成为唯一被接入的国产模型，同批被接入的还有 OpenAI 刚发布的 GPT-5.1。&lt;/span&gt;&lt;/p&gt; 
 &lt;p&gt;&lt;span&gt;此前，Cherry Studio、Cline、CoStrict、Cursor、Genspark、Kilo Code、Kortix Suna、RooCode、Trae、Vercel、Visual Studio Code、Windsurf、YouWare 等 AI 应用均已接入 Kimi K2 系列模型。&lt;/span&gt;&lt;/p&gt; 
@@ -775,7 +797,77 @@ Abidur Chowdhury&lt;/p&gt;
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Nov 2025 00:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1Wbmh2eURkbk1Tcm1nbDEzM216WTBVdXl1VFByOEZMUnQ5MVp6WlU1WkM5aDJ2UEtHR28tOGhjbWtWQ2RaU1kySlBLTmdnZjVveUJyb3lTN2U</guid></item><item><title>科技股、币圈、黄金“三杀”，美股跌破关键支撑位，美国市场遭遇“全面抛售” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759576</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 00:17:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5iT2hEOU9SNFBKeWt1ZzBMY2tQMklRcVAwTzg5LV9QZ1Y1anlyVGk4eHVOSndrRmdJdnUycGhrNEwtOXZpMTR5cDlrT29GUVRYb2xr</guid></item><item><title>币圈“极度恐慌”，市场为比特币跌向“80000美元”做准备 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759577</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 00:15:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBLQ0dPSkZlNTNtLV92b0pyVDAtaTRDZzEzNUp3dEZvZWc4REVUQzVXTVloZmlEbm9WSktLOXlpUl9iZkVfWUd5SXA1SzFlTVozQVBn</guid></item><item><title>对于AI价值的体现，股市远远跑在经济前面 - 华尔街见闻</title><link>https://wallstreetcn.com/charts/41958039</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 00:04:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUkFVX3lxTFBwck9RXzFsWGFaRHlLTlJXNEtybXBuWGRyWmd1UFZvc2Q0dHhWQ004bUpIblppMEJpakxOTy1BbU9wOS1QWG54VVVJY1g1SmRUTGc</guid></item><item><title>市场暴跌加剧，科技股、加密货币到黄金无一幸免 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/market-rout-intensifies-sweeping-up-everything-from-tech-to-crypto-to-gold-aaf61ee9</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Mon, 17 Nov 2025 23:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMisAFBVV95cUxOVUVJbjU3dnlmV2xoWTJjcG9JUXk2TXMzRWhXYW9KTjE5Uzc4b25CN1VZR3Q3cTlpT3hnV1JQT1drdGR5cm5qd1J6SGlvZmgxakxNWVMtT2REWFNzSDBSVU1QZTFDTVY3WFR2M1hUMWtRVkdBRkp2SnRCT0RJVDhEcUlPOHBqUW56LXFmeU9xOEx1czZadURWbzJDLXFkdWFPaE1hQ095QWhfSVhlekdveQ</guid></item><item><title>贝索斯创办人工智能初创公司，马斯克回应：“哈哈，跟屁虫” - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2025-11-18/doc-infxumzi4811893.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Nov 2025 00:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1Wbmh2eURkbk1Tcm1nbDEzM216WTBVdXl1VFByOEZMUnQ5MVp6WlU1WkM5aDJ2UEtHR28tOGhjbWtWQ2RaU1kySlBLTmdnZjVveUJyb3lTN2U</guid></item><item><title>科技股、币圈、黄金“三杀”，美股跌破关键支撑位，美国市场遭遇“全面抛售” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759576</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 00:17:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5iT2hEOU9SNFBKeWt1ZzBMY2tQMklRcVAwTzg5LV9QZ1Y1anlyVGk4eHVOSndrRmdJdnUycGhrNEwtOXZpMTR5cDlrT29GUVRYb2xr</guid></item><item><title>币圈“极度恐慌”，市场为比特币跌向“80000美元”做准备 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759577</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 00:15:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBLQ0dPSkZlNTNtLV92b0pyVDAtaTRDZzEzNUp3dEZvZWc4REVUQzVXTVloZmlEbm9WSktLOXlpUl9iZkVfWUd5SXA1SzFlTVozQVBn</guid></item><item><title>对于AI价值的体现，股市远远跑在经济前面 - 华尔街见闻</title><link>https://wallstreetcn.com/charts/41958039</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Nov 2025 00:04:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUkFVX3lxTFBwck9RXzFsWGFaRHlLTlJXNEtybXBuWGRyWmd1UFZvc2Q0dHhWQ004bUpIblppMEJpakxOTy1BbU9wOS1QWG54VVVJY1g1SmRUTGc</guid></item><item><title>华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏 - 驱动之家</title><link>https://news.mydrivers.com/1/1087/1087140.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-11-18 07:57:01  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1461185.html" title="落木的主页" class="newstiao4"&gt;落木&lt;/a&gt;&lt;p&gt;  编辑：落木 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1087140-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技11月18日消息，近日有网友分享视频，称自己的华为Mate 30 RS保时捷设计不慎丢失，多方找寻无果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而等到第二天被人捡到送回来时，手机已经烧得面目全非，变身战损版。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从网友发布的视频看，这部手机后背受损尤其严重，几乎被烧成了焦炭，高温也导致屏幕出现损坏，大概三分之一受损严重。&lt;/p&gt;
+&lt;p&gt;然而即便如此，&lt;span&gt;&lt;strong&gt;这台手机竟然还能点亮屏幕，正常指纹解锁、充电甚至是玩游戏&lt;/strong&gt;&lt;/span&gt;，不过由于摄像头损坏严重，虽然可以执行拍照指令，但已经无法正常成像。&lt;/p&gt;
+&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
+&lt;p&gt;当男子把自己的遭遇分享出来后吸引了非常多网友的关注，很多人得感慨这台手机质量的稳定，还有人表示正好Mate 80系列要出来了，可以更换。&lt;/p&gt;
+&lt;p&gt;据悉，华为Mate 30 RS保时捷设计是华为与德国保时捷设计公司 (Porsche Design) 合作推出的高端旗舰手机，&lt;strong&gt;于2019年9月19日在德国慕尼黑全球发布，11月10日正式开售，距今已有6年整&lt;/strong&gt;。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251118/c59e76926f734b82b8301869c8a4756e.png" target="_blank"&gt;&lt;img alt="华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏" h="902" src="//img1.mydrivers.com/img/20251118/s_c59e76926f734b82b8301869c8a4756e.png" w="572"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251118/2a3a7dc789b24abf839fe8b522f10f77.png" target="_blank"&gt;&lt;img alt="华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏" h="895" src="//img1.mydrivers.com/img/20251118/s_2a3a7dc789b24abf839fe8b522f10f77.png" w="576"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251118/ee90b92bbdc74f4cbca82813eb9e9c49.png" target="_blank"&gt;&lt;img alt="华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏" h="559" src="//img1.mydrivers.com/img/20251118/s_ee90b92bbdc74f4cbca82813eb9e9c49.png" w="577"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251118/f5c1f1cbdbc14880a67e679913825e4f.png" target="_blank"&gt;&lt;img alt="华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏" h="635" src="//img1.mydrivers.com/img/20251118/s_f5c1f1cbdbc14880a67e679913825e4f.png" w="563"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251118/3047815db91b49fc9344c467370d466c.png" target="_blank"&gt;&lt;img alt="华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏" h="664" src="//img1.mydrivers.com/img/20251118/s_3047815db91b49fc9344c467370d466c.png" w="576"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251118/3965758f6b7e4551afa2c8eed6b20316.png" target="_blank"&gt;&lt;img alt="华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏" h="731" src="//img1.mydrivers.com/img/20251118/s_3965758f6b7e4551afa2c8eed6b20316.png" w="576"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251118/3dca49b350f148a7ac4560d37faca417.png" target="_blank"&gt;&lt;img alt="华为Mate 30 RS保时捷被火烧到面目全非：还能充电玩游戏" h="480" src="//img1.mydrivers.com/img/20251118/s_3dca49b350f148a7ac4560d37faca417.png" w="575"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 17 Nov 2025 23:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1ycndDOFVJYUFveTBVZEp3dWkybkZzV3pyUEZySXBaZmdzTUItc2VhRFhMSzA4YVBteHZ1N0MyYmlzZ0JYWnh4emt3OGxGZ3JGaTVYVHBaZmI</guid></item><item><title>市场暴跌加剧，科技股、加密货币到黄金无一幸免 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/market-rout-intensifies-sweeping-up-everything-from-tech-to-crypto-to-gold-aaf61ee9</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Mon, 17 Nov 2025 23:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMisAFBVV95cUxOVUVJbjU3dnlmV2xoWTJjcG9JUXk2TXMzRWhXYW9KTjE5Uzc4b25CN1VZR3Q3cTlpT3hnV1JQT1drdGR5cm5qd1J6SGlvZmgxakxNWVMtT2REWFNzSDBSVU1QZTFDTVY3WFR2M1hUMWtRVkdBRkp2SnRCT0RJVDhEcUlPOHBqUW56LXFmeU9xOEx1czZadURWbzJDLXFkdWFPaE1hQ095QWhfSVhlekdveQ</guid></item><item><title>贝索斯创办人工智能初创公司，马斯克回应：“哈哈，跟屁虫” - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2025-11-18/doc-infxumzi4811893.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -1004,7 +1096,7 @@ Abidur Chowdhury&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 17 Nov 2025 23:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijgFBVV95cUxQaHFYWDloMnNXQ1hTdUQyMDV2SmRVWUhSZUg4UXNfamNTdE5ZRW94YkZTM1FVbi1nZU90RjhSTS1TaWhvVnRJdndManlDcVRmbkQwZ05pVFQ5VW9IdVQ3LUtvc3RHdEdiV29fTkVvQldJLW1Ock82Y1oteExGcnJ6bWFILXFYTjE4U21SeFRn</guid></item><item><title>白宫经济顾问哈塞特：AI提升生产率或致就业市场“平静期”，美联储是时候真正“以数据为驱动” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759559</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 17 Nov 2025 21:25:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9LbUNWVWJaZFk0Y1k4RkdXZzdlRXhsaHM4anRWdHlkdzdHTTJ6T3B4Mk1WeHh0dzBwaEdyOGxXQ04zV3RmdFQwbWRtSkh6NlpZWFNZ</guid></item><item><title>谷歌在全球推出人工智能“航班优惠”工具 - 新浪财经</title><link>https://finance.sina.com.cn/world/2025-11-18/doc-infxuftm4918381.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 17 Nov 2025 23:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijgFBVV95cUxQaHFYWDloMnNXQ1hTdUQyMDV2SmRVWUhSZUg4UXNfamNTdE5ZRW94YkZTM1FVbi1nZU90RjhSTS1TaWhvVnRJdndManlDcVRmbkQwZ05pVFQ5VW9IdVQ3LUtvc3RHdEdiV29fTkVvQldJLW1Ock82Y1oteExGcnJ6bWFILXFYTjE4U21SeFRn</guid></item><item><title>白宫经济顾问哈塞特：AI提升生产率或致就业市场“平静期”，美联储是时候真正“以数据为驱动” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759559</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 17 Nov 2025 21:25:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9LbUNWVWJaZFk0Y1k4RkdXZzdlRXhsaHM4anRWdHlkdzdHTTJ6T3B4Mk1WeHh0dzBwaEdyOGxXQ04zV3RmdFQwbWRtSkh6NlpZWFNZ</guid></item><item><title>苹果iPhone拟采用错峰发布新策略：高端机型秋季发，标准版移至次年春季 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759569</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 17 Nov 2025 20:28:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE94a0dEQXFqMDhERHRfTzNMNEI0c2tmdE9uZk03cy11Zjk4R3MxUmxkWXY2WTFoQjJDZGhoT3B0d1dVTVc1VlExZU51QkFvYTZDOVcw</guid></item><item><title>谷歌在全球推出人工智能“航班优惠”工具 - 新浪财经</title><link>https://finance.sina.com.cn/world/2025-11-18/doc-infxuftm4918381.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -1517,290 +1609,4 @@ Abidur Chowdhury&lt;/p&gt;
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 17 Nov 2025 13:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1WektDTlRUZWJrbXNMd3FkeXo3UVByUUpvcHFXQlh1emgzZ29zVks1TGxxa29STjdncXRTZGhrS0tDYmhBaUxudm9QQjJMQVpzX2pmRjJ3ZzU</guid></item><item><title>大摩Wilson展望2026年：AI驱动盈利强劲增长，标普500或升至7800点，收益率曲线“牛陡”，黄金仍是首选 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759546</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 17 Nov 2025 13:06:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1TdUNFRlJfUWJXVFVLTXE5OXI3TDc2cnRSS2lCd0E0ZU9RUHlFdkpma2xDa0hsdUo1cGtfdVNQUF9uZkVLeGRzR0pqUEV4aDUtSjNn</guid></item><item><title>阿里千问硬刚ChatGPT，得先“干掉”四个豆包？ - 新浪财经</title><link>https://finance.sina.com.cn/jjxw/2025-11-17/doc-infxtkpv5363993.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p cms-style="font-L"&gt;　　文|财经故事荟 万天南&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　编辑|陈纪英&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　“阿里AI布局的重点，是做AI插件（In-App AI），改造存量业务，而非AI 原生APP了吗？”&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　两个月前，《财经故事荟》曾向一位阿里人士请教。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　两个月后，阿里给出了明确答案，通义APP改名千问APP，重新上线，承担起AI C 端入口的重任。据《晚点》报道，这一决策由阿里巴巴集团 CEO 吴泳铭亲自拍板。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　在《财经故事荟》看来，此前通义APP一直处于尴尬的错位之中——论AI技术能力，阿里旗下Qwen，已是全球第一的开源大模型；可惜在C端却不太叫座，月活用户规模甚至不足字节旗下豆包的十分之一。&lt;/p&gt;
-
-&lt;p cms-style="font-L"&gt;　　据QuestMobile披露，截至今年9月，字节旗下原生AI App 豆包和DeepSeek 用户规模断层领先，是月活唯二过亿的应用。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　而阿里旗下的通义 APP，则位居第十。9月的月活用户规模仅有305万左右，不但与豆包、DeepSeek 、腾讯旗下元宝差距悬殊，甚至还被蚂蚁旗下的AQ（785.5万月活）反超。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　和饿了么改名淘宝闪购一样，通义APP想改名也想改命。千问 APP 一上线便定下宏大目标 —— 与 ChatGPT 直接掰手腕。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　据OpenAI CEO 奥尔特曼今年10月披露，ChatGPT 每周活跃用户已增至 8 亿。另据哈佛大学的研究结果，ChatGPT 7 月的月活跃用户达到 7 亿，占全球成年人口约 10%。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　不妨保守一点，假设ChatGPT目前月活用户7亿，豆包9月的月活则是1.72亿——这意味着，未来千问APP要在用户规模上追上ChatGPT，至少需先超越四个 “豆包” 的体量。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　后发的千问APP，有何底牌和底气？&lt;/p&gt;
-&lt;p cms-style="font-L strong-Bold"&gt;　　01 AI 原生C端入口，阿里“非做不可”&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　通义 APP 更名为千问后，有媒体人感叹，“千问这个新名字，一目了然，比通义好多了”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　阿里一号位亲自拍板，可见对AI原生入口的重视。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　在阿里内部，对AI原生入口的落地路径，是有过摇摆的。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　AI to C业务的牵头人，是阿里巴巴智能信息事业群总裁吴嘉，旗下统管的业务包括夸克、原通义 APP（现千问）和天猫精灵等。APP市场显示，千问背后的公司是上海智信普惠科技有限公司，这家公司全资股东是广州大鱼快乐信息技术有限公司，法人正是吴嘉。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　有阿里内部人士告诉《财经故事荟》，目前千问由阿里巴巴集团统筹，未来大概率还是由智能信息事业群主导。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　不过，起码在千问之前，阿里的AI To C布局上，夸克的重要性似乎要高于通义APP。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　今年3月中旬，阿里宣布推出 AI 旗舰应用新夸克。当时吴嘉曾乐观预计，2025 年或 2026 年上半年将出现 DAU 过亿的超级 AI 应用，“我们要努力成为第一家。”&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　承担“第一家”重任的就是夸克，吴嘉同时也担任夸克CEO。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　担当重任的夸克，此后表现的确不俗。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　一方面用户粘性大幅提升。自“超级搜索框” 升级为 “ AI 超级框”后，Questmobile的报告披露，今年6月，夸克AI应用的月人均使用次数大幅飙升，为64.9次，排名第一，是同期百度的6倍左右。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　另一方面用户规模持续增长。据《晚点》报道，目前夸克的 DAU 在 5000 万 - 6000 万之间，阿里财报更披露，今年 3 月底其月活已突破 2 亿。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　不过，把夸克作为AI入口，也有弊端——夸克原本是做搜索出身，功能体系较为繁琐，容易在用户端弱化其 “AI” 核心属性。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　正因如此，在最近接受晚点采访时候，千问团队表态，“随着 AI 能力的提升，我们觉得对话式 AI 助手是更好的形式，接下来阿里会重点发展千问。”&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　将千问推向战略核心，对阿里而言是必走之路，核心原因有三：&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　一，阿里三年内计划投入3800亿重金押注AI，需要一款杀手级的C端原生AI应用，来承接其技术成果。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　有阿里人士告诉《财经故事荟》，阿里接下来对AI的投入有望提升到万亿规模。不过这一数据并未得到阿里官方确认。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　二，AI to C的超级入口，可以串联起阿里旗下业务，为其导流。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　如今，月活用户达到七八亿的ChatGPT，已在9月末上线了即时结账功能，正式试水电商。豆包也开始为抖音引流带货了。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　电商是阿里的营收和利润奶牛。千问这个AI C端入口一单做大，也可以把阿里的诸多业务，如电商、支付、出行、外卖、健康等一揽子串联起来。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　三，C端入口的商业价值很可观，不止导流价值。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　麦肯锡预测，2030年全球AI To C市场规模将达1.3万亿美元，年均增长率超过35%。OpenAI已经珠玉在前了， 目前其年度收入约为 130 亿美元，其中 70%来自 ChatGPT C端用户的付费。&lt;/p&gt;
-&lt;p cms-style="font-L strong-Bold"&gt;　　02 千问硬刚ChatGPT，同向不同路&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　阿里对AI C端入口的重视，从今年夏天开始逐渐升温——今年10月，夸克“C计划”曝光。彼时，有媒体大胆猜测“C”取自经典游戏“吃豆人”（Pac-Man），阿里要硬钢“豆包”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　不过，随着千问上线，阿里的对外叙事再度拔高——千问并不打算对标豆包，而是直接瞄向了ChatGPT。千问国际版也将在近期上线，试图借力Qwen大模型的海外影响力，与ChatGPT直接争夺全球用户。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　作为后来者，千问继承了通义APP的300多万月活用户，但用户规模尚不及ChatGPT的零头，如何后发赶超？&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　据《财经故事荟》观察，目前千问的路径，也与ChatGPT差异明显。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　ChatGPT推出了收费服务，千问则完全免费。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　OpenAI急于收费也很正常。OpenAI 打算在人工智能基础设施上，投入超过1万亿美元，所以急需增加收入。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　目前，C端订阅为OpenAI贡献了约七成营收，不过，用户付费旅仍然很低，七八亿用户中仅约5%会为订阅付费。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　而且，据《财富》杂志报道，ChatGPT 收入可能已经出现停滞，引发了“人工智能泡沫”的忧虑。科技博主Ed Zitron甚至还援引内部文件声称，OpenAI存在巨大的“财务黑洞”，夸大了收入，调低了推理成本。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　与资金捉襟见肘的OpenAI不同，阿里不差钱，截至今年二季度末，阿里手握现金及等价物、短期投资和其他理财投资，共计5856.63亿元。所以，千问有底气“免费开放，人人可用”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　此外，OpenAI的业务布局不完整，所以必须开环。千问则可以打造内循环的AI应用大生态。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　阿里的AI布局分为三层：底层的云计算阿里云，位居全球第四、亚洲第一；中间的大模型层，如今，阿里Qwen已经成为全球性能最强、应用最广泛的开源大模型；与C端用户、B端客户直接接壤的应用层，可以分为两块，一块是原生 AI APP，比如千问，一块是插件形态的AI应用，改造存量业务，夸克、钉钉、淘宝万能搜均是如此。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　此外，闭环还体现在，由于阿里业务相当多元，千问作为生活入口，可以调动阿里的电商、出行、健康等板块，构建一个内循环的AI生态。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　与千问不同，OpenAI则是开环的，要从微软购买Azure的云计算服务，要从英伟达购买芯片，其电商业务的落地，则是牵手电商平台Shopify、Etsy。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　目前，OpenAI的优势在于其庞大的用户规模。不过，阿里业务布局纵深，意味着可以吃到整个AI产业链的红利。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　今年10月，OpenAI的估值已经超过5000亿美金，而眼下，阿里的美股市值还不足3700亿美金。未来，如果阿里AI C端入口做大做强，也许会迎来一场整体的价值重估。&lt;/p&gt;
-&lt;p cms-style="font-L strong-Bold"&gt;　　03 千问改名又改命&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　曾经多年被美团轻松碾压的饿了么，改名“淘宝闪购”的同时，依赖于阿里上下总动员和饱和式攻击，也同步改了命。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　千问能否复制饿了么的轨迹？追上ChatGPT确实不容易，千问应该设法在国内，先追上元宝和豆包。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　第一，这取决于阿里对千问的重视程度。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　阿里能在外卖、闪购上扳回一局，依赖于蒋凡打团战，不仅重金投入，阿里系几大流量入口，集体为外卖和闪购业务“带货”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　千问上线，由吴泳铭亲自拍板，看来也被视为“必打必赢”之战。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　据虎嗅报道，为了千问项目，阿里陆续从北京、广东等地“调”来超百位核心工程师，共聚杭州，他们来自夸克所在的智能信息事业群、阿里云、通义实验室、淘天、高德等。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　在千问这一战役上，阿里肯定也会集纳全集团之力，继续打团战。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　第二，技术和流量，谁是AI C端入口的决定变量？&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　复盘国内AI原生应用的榜单，目前Top3分别是豆包、DeepSeek、元宝。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　三个玩家的成功路径有所差异：一是元宝和豆包的流量路线，依靠整个集团的流量生态，为其漫灌流量，再加上还算不错的用户体验，最终做大用户规模；二是DeepSeek靠技术领先带动口碑做大用户量。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　两条路线都能成功，接下来千问的路子，大概率是双线并行，一来继续精进技术，做好体验，二来也会大手笔投流。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　先看技术上，已有不少全球企业界技术界顶流，主动为Qwen大模型带货。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　比如，Airbnb CEO布莱恩·切斯基公开表示，公司正“大量依赖Qwen”，因其比openAI模型更快更好；英伟达CEO黄仁勋也表态，Qwen已占据全球开源模型的大部分市场；目前，Qwen系列模型的全球下载量已突破6亿次。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　现在，阿里要做好“翻译”工作，把专业大咖的认可破圈为大众的认知，然后对千问产生好感并投奔而来。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　三，取决于周期判断，AI原生应用的格局已经趋于稳定，还是处于洗牌期？&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　《财经故事荟》的判断是后者。今年3月底，DeepSeek的用户量还遥遥领先，3月月活用户高达1.94亿，彼时，豆包排名第二为1.16亿。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　但到了第三季度，豆包和DeepSeek排名逆转，豆包月活用户大幅飙升至1.72亿。DeepSeek则大幅滑落至1.44亿，用户少了5000万左右。原因大概率是因为，DeepSeek目前仍然局限于单一的AI搜索功能，而豆包已经是全能AI应用了，目前其APP功能覆盖15大类。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　千问同样是走得“全能”路线，功能覆盖14个大类，后续会推出更多功能。目前，千问团队正与高德、淘宝、支付宝、闪购等进行联合开发，购物、支付、导航、打车等功能，估计也会很快上线。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　《财经故事荟》判断，接下来，千问从豆包、元宝抢用户不容易，但可以大幅吸附DeepSeek等单一大模型、以及垂类AI应用（如美图）的用户。毕竟，用户如果想使用更完备的AI功能，必然会选择迁移，千问也许可以抓住这个接盘机会。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　总之，千问的逆袭大战虽然不好打，但还有窗口期可以利用，阿里必须饱和式攻击。&lt;/p&gt;
-&lt;p id="app-kaihu-stock"&gt;&lt;/p&gt;
-
-
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：刘万里 SF014&lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 17 Nov 2025 12:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTFBDN1lJZF9DdjZCak1JQVJpVTlXd2RySnVRUTFUMlJkTUVfUEU3VHd5SWZDVGFmcnZrTW85elRWZXRRcVhOY3ZqeE5zaTg4T2EyekF1R1pwcG9qYWxwS0hyZnpJWlRyM3dmN2hKbW5hU3NBWkd5WWY5ZQ</guid></item><item><title>资金狂撤、恐慌上头，比特币的最悲观情景是跌破7万美元？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759547</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 17 Nov 2025 12:39:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBtRnp6bktRNkdQaERMT2xfMnJwb2s3U2diZVJhbWZMVHNmZS1MeDRQRGdpYmhMSnJCTWY3THp0WkNtSXR6cGJ5QkxVUV9UeEtFWm93</guid></item><item><title>成本暴降99%！万人大会系统全是AI生成的，Vibe Coding真上战场了 - 量子位</title><link>https://www.qbitai.com/2025/11/353556.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article"&gt;
-				     &lt;h1&gt;成本暴降99%！万人大会系统全是AI生成的，Vibe Coding真上战场了&lt;/h1&gt;
-    			   &lt;div class="article_info"&gt;
-             &lt;span class="author"&gt;&lt;img src="http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg" class="avatar avatar-200"&gt;&lt;em&gt;&lt;a href="https://www.qbitai.com/author/xifeng" title="由西风发布" rel="author"&gt;西风&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;
-                          &lt;span class="date"&gt;2025-11-17&lt;/span&gt;
-             &lt;span class="time"&gt;20:28:12&lt;/span&gt;
-          &lt;span class="from"&gt;
-          来源：&lt;a href="http://www.qbitai.com" target="blank" rel="nofllow"&gt;量子位&lt;/a&gt;            &lt;/span&gt;&lt;/div&gt;
-                          
-                            			&lt;blockquote&gt;
-&lt;p class="pgc-h-forward-slash" data-track="83"&gt;西风 发自 凹非寺&lt;/p&gt;
-&lt;p class="pgc-h-forward-slash" data-track="84"&gt;量子位 | 公众号 QbitAI&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p data-track="2"&gt;你敢信，国内大厂的万人年度大会，从邀请函、官网到留资、参会、签到、现场活动的&lt;strong&gt;整套系统由AI凭几句话生成&lt;/strong&gt;，智能体正在从“可玩”走向“可用”。&lt;/p&gt;
-&lt;p data-track="3"&gt;没错，就是下面这一整套：&lt;/p&gt;
-
-&lt;p data-track="4"&gt;靠几句大白话驱使AI搞定，程序员只负责坐等结果：&lt;/p&gt;
-
-&lt;p data-track="5"&gt;过去大家还把这种工具当个“玩具”随便试试，谁能想到，现在它已经能扛起企业级的正儿八经业务了。&lt;/p&gt;
-&lt;p data-track="6"&gt;在刚刚结束的百度世界大会2025上，&lt;strong&gt;无代码对话式应用搭建平台——“秒哒”，宣布进化到2.0&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="7"&gt;相比上一代，2.0有两大升级点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li data-track="8"&gt;&lt;strong&gt;全栈应用一键生成&lt;/strong&gt;：把做应用的开发、调试、线上部署等整套环节全包了。&lt;/li&gt;
-&lt;li data-track="9"&gt;&lt;strong&gt;一站式开发与分发&lt;/strong&gt;：由秒哒打造的应用可一键发布到公网，同时能打通搜索引擎得到曝光，支持发布成微信小程序。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p data-track="10"&gt;基于这套能力，大会全链路系统就是它从0到1吭哧吭哧建出来的。据估算，相比传统纯人工开发，其综合&lt;strong&gt;成本暴降99%&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="11"&gt;更有意思的是，会上百度秒哒产品负责人还跟观众了进行现场互动，同样是一行代码不写，当场构建了一个个人闲置物品电商平台。&lt;/p&gt;
-&lt;p data-track="12"&gt;这不是个只靠好看界面撑场子的展示品，而是个&lt;strong&gt;前后端逻辑、数据库、AI试衣插件、支付能力全都配齐的完整应用&lt;/strong&gt;，可以直接上线，还能接入搜索引擎，真正把一个小店铺给支棱起来。&lt;/p&gt;
-
-&lt;p data-track="13"&gt;商家能在后台上架商品、管理数据：&lt;/p&gt;
-
-&lt;p data-track="14"&gt;买家能线上选购、上传照片AI试衣：&lt;/p&gt;
-
-&lt;p data-track="15"&gt;还能真实填写地址提交订单：&lt;/p&gt;
-
-&lt;p data-track="16"&gt;现场演示真刀真枪跑完了支付流程，台下观众甚至有人抢在官方前头，抢先一步扫码把订单付了。&lt;/p&gt;
-
-&lt;p data-track="17"&gt;well～well～well&lt;/p&gt;
-
-&lt;p data-track="18"&gt;既然如此，量子位童鞋立马上手体验了一波。&lt;/p&gt;
-&lt;h1 class="pgc-h-forward-slash" data-track="19"&gt;实测，从一句话到一个应用&lt;/h1&gt;
-&lt;p data-track="20"&gt;打开官网，能看到主页应用广场中有大量应用已经在公网上线了。&lt;/p&gt;
-
-&lt;p data-track="21"&gt;购物类网站品类清晰，支持折扣标价、购物车结算、用户登录等完整功能：&lt;/p&gt;
-
-&lt;p data-track="22"&gt;还有Nano Banana 3D手办工坊，自带JS前端特效，交互流畅无卡顿。&lt;/p&gt;
-
-&lt;p data-track="23"&gt;随手就能生成“高雅人士企鹅”系列盲盒：&lt;/p&gt;
-
-&lt;p data-track="24"&gt;下面以搭建一个“北京小猫小狗领养平台”为例，记录一下完整开发过程。&lt;/p&gt;
-&lt;p data-track="25"&gt;首先输入端，支持上传文件、图片辅助描述的同时，还能让&lt;strong&gt;AI自动优化指令&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="26"&gt;不得不说，这个AI自动优化确实有点东西，它能&lt;strong&gt;把一句笼统的话，自动补充成一份考虑周全的需求说明&lt;/strong&gt;，瞬间就让你的想法变得像样起来，这下就算需求模糊不会表达也不怕了：&lt;/p&gt;
-
-&lt;p data-track="27"&gt;另外，如果你要做微信小程序，可以直接点击输入框下面的对应按钮。&lt;/p&gt;
-&lt;p data-track="28"&gt;微信支付、图像编辑、视频生成、语音生成等&lt;strong&gt;一系列插件也都有配备，选用即可，无需额外开发对接&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;p data-track="29"&gt;接下来，秒哒会先&lt;strong&gt;根据用户指令整理一份详细的需求文档&lt;/strong&gt;，支持编辑修改：&lt;/p&gt;
-
-&lt;p data-track="30"&gt;确认无误后点击“立即生成应用”，自动编码正式启动：&lt;/p&gt;
-
-&lt;p data-track="31"&gt;稍等片刻，一个宠物领养网站就出炉了。&lt;/p&gt;
-&lt;p data-track="32"&gt;令人眼前一亮的是，秒哒第一次生成就成功了。按照指令设置，它已经预先生成上传了一批宠物身份卡，还按猫咪、狗狗分好类：&lt;/p&gt;
-
-&lt;p data-track="33"&gt;传统无代码平台，大多擅长快速构建前端用户界面，但一到复杂的后端业务逻辑、数据库设计和接口联调，往往仍需专业开发者介入。&lt;/p&gt;
-&lt;p data-track="34"&gt;而这个由秒哒一键开发的宠物领养平台，管理员登录后就能实现后台管理。&lt;/p&gt;
-
-&lt;p data-track="35"&gt;每只宠物的信息都能编辑，若被领养，也能实时更新状态：&lt;/p&gt;
-
-&lt;p data-track="36"&gt;除此之外，娱乐场景咱也试试。&lt;/p&gt;
-&lt;p data-track="37"&gt;接下来我们用它快速创建“&lt;strong&gt;狗了个狗&lt;/strong&gt;”小游戏：&lt;/p&gt;
-
-&lt;p data-track="38"&gt;同样几分钟后，咱已经上手玩上了：&lt;/p&gt;
-
-&lt;p data-track="39"&gt;再来模仿小破站搭建一个简易视频网站：&lt;/p&gt;
-
-&lt;p data-track="40"&gt;也完全可以在登录后，顺利上传发布视频：&lt;/p&gt;
-
-&lt;p data-track="41"&gt;弹幕、评论、点赞等核心功能都是打开即可正常使用：&lt;/p&gt;
-
-&lt;p data-track="42"&gt;有任何不满意的地方，也只需一句话让它给你修改。&lt;/p&gt;
-&lt;p data-track="43"&gt;最后，这些生成的应用皆可一键发布。&lt;/p&gt;
-&lt;p data-track="44"&gt;域名和证书配置完成后便能立即上线，并且与搜索引擎贯通，可获得面向亿级用户的曝光入口。&lt;/p&gt;
-
-&lt;p data-track="45"&gt;如果你有好的想法，不妨亲自上手试试。没有想法的话，那再来看两个例子，或许能给你一点启发。&lt;/p&gt;
-&lt;p data-track="46"&gt;有人用它搭起了能实际运营的&lt;strong&gt;表情包社区&lt;/strong&gt;，用户可以为自己喜欢的表情包付费，所有内容和用户数据都能在后台统一管理：&lt;/p&gt;
-
-&lt;p data-track="47"&gt;还有人做了个“&lt;strong&gt;双十一凑单计算助手&lt;/strong&gt;”，只要输入商品价格、选好优惠券，就能帮你算出最划算的购买方案：&lt;/p&gt;
-
-&lt;p data-track="48"&gt;下面问题来了，如此流畅完整的应用生成体验，是怎么做到的？&lt;/p&gt;
-&lt;h1 class="pgc-h-forward-slash" data-track="49"&gt;凭什么实现全栈生成？&lt;/h1&gt;
-&lt;p data-track="50"&gt;从尝鲜小玩具进化为能扛住复杂场景、高标准要求的商业级工具，秒哒2.0的核心解法也不藏了——&lt;/p&gt;
-&lt;p data-track="51"&gt;&lt;strong&gt;多智能体协作&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="52"&gt;当用户输入一段自然语言需求后，平台内部并非单一模型在响应，而是由一个智能体团队在协同工作：&lt;/p&gt;
-&lt;p data-track="53"&gt;产品经理智能体负责梳理需求，架构师智能体设计技术方案，程序员智能体负责前后端编码，测试员智能体则保障应用质量……&lt;/p&gt;
-&lt;p data-track="54"&gt;这套分工机制，模拟了一个微型开发团队的完整流程，从而能够输出一个全栈应用。&lt;/p&gt;
-&lt;p data-track="55"&gt;而要让这个应用能真的好用起来的，还离不开两大关键支撑。&lt;/p&gt;
-&lt;p data-track="56"&gt;一方面是&lt;strong&gt;百度生态的深度整合&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="57"&gt;背靠百度智能云，秒哒生成应用时能直接调用百度的各种成熟工具，不用你自己找接口、做复杂对接。比如想在邀请函里加会场定位，就能自动调用百度地图插件；报名环节需要验证码，短信服务直接启用，语音、搜索这些功能也能一键激活。&lt;/p&gt;
-&lt;p data-track="58"&gt;甚至支付、域名购买这些商业相关的功能，在平台上就能一站式搞定，百度本身也就具备域名管理与售卖能力。&lt;/p&gt;
-&lt;p data-track="59"&gt;换句话说，&lt;strong&gt;一个个人应用从诞生的那一刻起，就天然具备了接入商业世界各种服务的能力&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p data-track="60"&gt;另一方面是&lt;strong&gt;后端能力的持续升级&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="61"&gt;早期秒哒只能做静态展示，就像简单的网页一样。随着不断升级，现在生成应用时会自动配好数据库，不用你自己注册、设置任何参数，上传的内容、提交的订单都会安全存储，后续想查数据、改内容，在后台就能直接操作，支持增删改查，完全满足长期使用需求。&lt;/p&gt;
-&lt;p data-track="62"&gt;总结来看，从应用开发到上线再到触达用户，在秒哒上可以实现全程无缝衔接。&lt;/p&gt;
-&lt;p data-track="63"&gt;这套技术体系也得到了权威认可，根据IDC发布的《中国无代码生成式应用开发平台实测报告2025》，&lt;strong&gt;秒哒总体能力行业领先&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;p data-track="64"&gt;尤其是在服务集成、用户与生态、应用类型支持、应用复杂度支持、功能完整性等方面表现突出：&lt;/p&gt;
-
-&lt;h1 class="pgc-h-forward-slash" data-track="65"&gt;40万个脑洞，在秒哒变成应用&lt;/h1&gt;
-&lt;p data-track="66"&gt;官方数据显示，秒哒平台上，&lt;strong&gt;至今已诞生了超过40万个应用&lt;/strong&gt;，平均每分钟就有一个新应用诞生。这些应用覆盖教育、电商、办公、企业管理等场景。AI驱动的应用开发，正在从演示层走向真实复杂的日常业务环境。&lt;/p&gt;
-&lt;p data-track="67"&gt;如此体量应用的背后，是过去始终被高技术门槛所压抑的海量个性化、长尾化的需求。&lt;/p&gt;
-&lt;p data-track="68"&gt;放眼全球，真会写代码的人不足1%，而秒哒这类工具，让剩下的99%的人，无论背景、无论年龄，都能把自己的想法转化为真实可用的数字产品。&lt;/p&gt;
-&lt;p data-track="69"&gt;为了鼓励更多人能把脑洞变成产品，百度秒哒还跟小红书科技一拍即合，联合发起了&lt;strong&gt;中国首届非程序员黑客松大赛&lt;/strong&gt;，把全球不会敲代码、但脑洞突破天际的人都薅了过来。&lt;/p&gt;
-
-&lt;p data-track="70"&gt;在黑客松大赛中，我们看到作品&lt;strong&gt;《技能五子棋》&lt;/strong&gt;，凭借出色的可玩性和高度还原的游戏体验，成功闯入决赛：&lt;/p&gt;
-
-&lt;p data-track="71"&gt;作品&lt;strong&gt;《化学分子结构分析》&lt;/strong&gt;则让我们看到了另一种学习方式。&lt;/p&gt;
-&lt;p data-track="72"&gt;输入化学分子式，点击一键分析，就能立马查看其3D结构：&lt;/p&gt;
-
-&lt;p data-track="73"&gt;更进一步，路易斯结构式、电子结构分析、化学键参数分析、原子轨道电子排布分析等等一应俱全：&lt;/p&gt;
-
-&lt;p data-track="74"&gt;随着以秒哒2.0为代表的AI开发工具能力持续升级，当由AI开发的应用不断被注入更稳固的后端能力、更强大的逻辑处理和完善的生态服务，创意也不再止于好玩了。&lt;/p&gt;
-&lt;p data-track="75"&gt;个性化教育工具、垂直领域专业应用、社交娱乐产品……条条大路通商业化。&lt;/p&gt;
-&lt;p data-track="76"&gt;事实上，在技术社区中已经可以看到一些探索方向。&lt;/p&gt;
-&lt;p data-track="77"&gt;WaytoAGI社区负责人最近就表示，他们尤其看好秒哒在构建&lt;strong&gt;聚合类内容平台、SVG设计工具、可视化仪表盘及媒体生成工具&lt;/strong&gt;等垂直应用方面的潜力。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p data-track="78"&gt;我们最近通过深挖细分行业的长尾关键词，锁定了一个精准场景。我在想，如果把这个场景单独提炼出来，用秒哒批量化生成对应的应用，再嵌入一些付费功能，或许能探索出全新的商业化方向。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p data-track="79"&gt;从秒哒官方公布的数据来看，平台上诞生的应用也呈现出明显的场景化特征，&lt;strong&gt;大量应用都集中于解决某个垂直且具体的实际问题&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;p data-track="80"&gt;值得一提的是，世界另一边，&lt;strong&gt;秒哒海外版MeDo也已上线&lt;/strong&gt;，还曾一度登上全球科技新品发现与推广社区Product Hunt的产品日榜榜首，歪果仁一样用得津津有味，现在访问medo.dev就可以使用了。&lt;/p&gt;
-
-&lt;p data-track="81"&gt;也许未来最难的，不是写代码，而是想清楚你想让AI帮你做什么。&lt;/p&gt;
-&lt;p data-track="85"&gt;官方体验链接：https://www.miaoda.cn/&lt;/p&gt;
-                
-                
-                &lt;p class="line_font"&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;版权所有，未经授权不得以任何形式转载及使用，违者必究。&lt;/em&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
-            &lt;/div&gt;
-     		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>量子位</author><pubDate>Mon, 17 Nov 2025 12:28:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTFBweURfM3dtSnVTN3RSMEhkSHNLRXdNV3kxRzRpaVpTYWZ4bmFnNl8xSEgtbEc4bmphaV9URjZoMTh1MXdDQ2l6UmpRRUhkUjJHdWRHYg</guid></item><item><title>港交所勒令停牌 加密货币概念股星太链暴跌70% - 财新</title><link>https://finance.caixin.com/2025-11-17/102383898.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
-       &lt;p&gt;　　&lt;b&gt;【财新网】&lt;/b&gt;加密货币概念股星太链（00399.HK）2025年11月17日开市前公告称，遭香港联交所勒令于11月26日停牌，原因是联交所质疑该公司未能满足持续上市资格。该股11月17日暴跌73%，收市报0.064港元/股，较7月底股价最高时蒸发91%。&lt;/p&gt;
-&lt;p&gt;　　香港联交所指出，根据《上市规则》第13.24条规定，星太链未能维持足够的运营水平，且没有足够价值的资产支持其运营，令其股份得以继续维持上市地位，故要求其于11月26日起停牌。星太链则于公告中回应，已决定向联交所上市委员会申请复核。&lt;/p&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新</author><pubDate>Mon, 17 Nov 2025 12:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTE01aEN6dVJkLThRMlNjbXBtS3M5ZWx6X3pFTFF6bzM2R2FjdElyQUg4Q3k3V3AwZHdYckkzN1J5Vk1KUWRkUTFyMl9RVFFvLWpLdnBBU19RanNFbXYzQloxTE13</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 17 Nov 2025 13:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1WektDTlRUZWJrbXNMd3FkeXo3UVByUUpvcHFXQlh1emgzZ29zVks1TGxxa29STjdncXRTZGhrS0tDYmhBaUxudm9QQjJMQVpzX2pmRjJ3ZzU</guid></item><item><title>大摩Wilson展望2026年：AI驱动盈利强劲增长，标普500或升至7800点，收益率曲线“牛陡”，黄金仍是首选 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3759546</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 17 Nov 2025 13:06:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1TdUNFRlJfUWJXVFVLTXE5OXI3TDc2cnRSS2lCd0E0ZU9RUHlFdkpma2xDa0hsdUo1cGtfdVNQUF9uZkVLeGRzR0pqUEV4aDUtSjNn</guid></item></channel></rss>
