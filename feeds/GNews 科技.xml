@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>骁龙X Elite Linux笔记本等不到了！因性能问题被取消 - 驱动之家</title><link>https://news.mydrivers.com/1/1088/1088239.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>奇迹般的巧合！深埋了34年的苹果Mac Bug被发现 - 驱动之家</title><link>https://news.mydrivers.com/1/1088/1088240.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技11月23日消息，一名电脑爱好者最近挖掘出一个存在于苹果Mac Classic II ROM代码中长达34年的Bug。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;令人惊讶的是，这个原本足以导致系统启动崩溃的漏洞，却从未在真实的硬件上出现，背后则是摩托罗拉68030 CPU中一个未被记录的功能，悄无声息地抵消了这一缺陷。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这位名叫Downtown Doug Brown的爱好者，同时也是开源项目MAME的忠实粉丝，他在使用MAME模拟Mac Classic II时，发现该系统在启用32位寻址模式时会崩溃，但在24位模式下则能正常启动，而原始硬件则从未出现此类问题。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="奇迹般的巧合！深埋了34年的苹果Mac Bug被发现" h="416" src="//img1.mydrivers.com/img/20251123/0fea034b-b6f7-4259-aafd-82cef5577e27.png" w="514"&gt;&lt;/p&gt;
+&lt;p&gt;这一现象激发了Brown的好奇心，在对苹果ROM进行逆向和对模拟机器进行大量取证调试后，Brown最终确认：这个bug确实存在于Mac Classic II的ROM代码中，与模拟软件无关。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题的核心在于，在MAME中运行引导代码时，Mac Classic II会执行一条指令，跳转到一个位于内存“A1”的无效地址，导致下一条指令在错误的位置执行，从而引发崩溃。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当Brown在同一时代的Macintosh 2ci（同样使用摩托罗拉68030 CPU）上调试这段代码时，发现硬件采取了一种不同的处理方式：&lt;strong&gt;它将这个无效地址“巧妙地”转换成了一个有效地址，轻松跳过了这个缺陷。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Brown指出，68030 CPU的官方文档中并没有记载过这种运作特性，如果不是MAME模拟器，这个bug很可能“永远不会被发现”，&lt;/strong&gt;因为系统启动看起来一切正常。&lt;/p&gt;
+&lt;p&gt;Brown写道：“这表明了bug可以在你认为一切都完美无瑕的地方潜伏。”他也承认，这个bug并不算大问题：“机器运行良好，没有人注意到。”&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251123/97f33ebf-c1ca-4d85-adc9-5a39515883e3.png" target="_blank"&gt;&lt;img alt="奇迹般的巧合！深埋了34年的苹果Mac Bug被发现" h="337" src="//img1.mydrivers.com/img/20251123/S97f33ebf-c1ca-4d85-adc9-5a39515883e3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Nov 2025 14:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1FUGZyMWFZdm51TTZTQlZZV3pRTGdHaG5xbmZOZGtvTG5uOWdCOEc1dUFyWDQwVEhvRW92YXZQS1ZuVzFJS1pEREZoMWVnZGhreGV2aUt3Y1c</guid></item><item><title>骁龙X Elite Linux笔记本等不到了！因性能问题被取消 - 驱动之家</title><link>https://news.mydrivers.com/1/1088/1088239.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技11月23日消息，&lt;span&gt;&lt;strong&gt;PC制造商Tuxedo Computers宣布，经过超过18个月的开发工作，已正式取消了基于高通骁龙X Elite处理器的Linux笔记本电脑项目。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;该公司坦言，第一代X1E芯片的表现“比预期中更不适合Linux”，同时考虑到即将发布的骁龙X2 Elite，继续开发已无太大意义。&lt;/p&gt;
@@ -103,7 +124,64 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Nov 2025 13:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10cU8xUGRrRDg4N0ZJUlE3emNyZUxtS1RHRUdiZDNhZlIxb21zTXlWMXlZWFRKOElFeFptSVNPUlFLdGpWRnhzNnYwT0VjNG1qT2YzVjFBZmQ</guid></item><item><title>Intel锐炫B390 Time Spy达7000分！比RTX 3050桌面版快12% - 驱动之家</title><link>https://news.mydrivers.com/1/1088/1088232.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Nov 2025 13:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10cU8xUGRrRDg4N0ZJUlE3emNyZUxtS1RHRUdiZDNhZlIxb21zTXlWMXlZWFRKOElFeFptSVNPUlFLdGpWRnhzNnYwT0VjNG1qT2YzVjFBZmQ</guid></item><item><title>育碧大力称赞AI：影响堪比从2D转向3D游戏 每个团队都在使用AI - 3DM</title><link>https://www.3dmgame.com/news/202511/3932375.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;育碧大力称赞AI：影响堪比从2D转向3D游戏 每个团队都在使用AI&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2025-11-23 20:39:30&lt;/span&gt;&lt;/p&gt;
+            &lt;ul class="intem"&gt;
+                                &lt;li&gt;来源：&lt;span class="weibo"&gt;eurogamer&lt;/span&gt;&lt;/li&gt;
+                                                &lt;li&gt;作者：&lt;span class="name"&gt;3DM编译&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;豆角&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/1123/1763901553586.png" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	育碧认为，生成式AI对游戏业的影响堪比从2D向3D的革命性转变，而这项技术正在全公司范围内被采纳。此前，EA公司CEO在回应在全公司推广AI引起的争议时暗示会继续推进对AI的使用。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20251123/1763901418_758815.png" alt="育碧大力称赞AI：影响堪比从2D转向3D游戏 每个团队都在使用AI"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	育碧CEO 
+Guillemot表示，生成式人工智能已融入整个公司，并表示他相信生成式AI对于电子游戏而言，其带来的“革命性”堪比从2D到3D的转变。
+&lt;/p&gt;
+&lt;p&gt;
+	Guillemot表示：“我们在将人工智能应用于高价值用例方面取得了巨大进展，这些用例能为我们的玩家和团队带来切实的好处……这对我们行业来说，其意义堪比向3D时代的转型。我们拥有引领这一领域的全部优势。”
+&lt;/p&gt;
+&lt;p&gt;
+	“在玩家体验方面，我们正在持续推进面向玩家的突破性生成式AI应用，这是我们在2024年宣布的NPC新概念的延续。我们已经从原型设计阶段过渡到玩家实际体验阶段，我们期待在年底前分享更多信息。”
+&lt;/p&gt;
+&lt;p&gt;
+	最后，Guillemot表示，&lt;strong&gt;育碧对AI的拥抱远不止于专门的AI项目，AI的应用已经融入到育碧所有办公室的每个开发团队中&lt;/strong&gt;。他解释说：“在制作方面，我们所有工作室和办公室的团队都在积极拥抱这项新技术，并不断探索在编程、美术和整体游戏质量方面的新应用。”
+&lt;/p&gt;
+&lt;p&gt;
+	目前，育碧在生成式AI领域公开展示的成果是前文提到的Neo NPC原型，Eurogamer的Chris 
+Tapsell曾亲身体验过。他将这项技术描述为“一种先于其他技术而开发的工具——其理念是，如果我们开发出来，肯定会有聪明人来利用它。但也有人认为这种想法有点本末倒置：最好的工具应该是解决聪明人已经遇到的问题的方案。”或许我们很快就能看到这项技术的实际应用了。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20251123/1763901428_120125_jpg_r.jpg" alt="育碧大力称赞AI：影响堪比从2D转向3D游戏 每个团队都在使用AI"&gt; 
+&lt;/p&gt;                                &lt;/div&gt;
+                                                        &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 23 Nov 2025 12:39:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE5WVFYtNzRkUEdrZ0RJS0lnMUNsRmRDdjB5alQzRExTdkd3aWhyZHVkelFpYUVkR2hEUzJxX1dnU1RFVkJTMXh5cUtucnZMcm9iZFFvTkJrV01yQTRO</guid></item><item><title>Intel锐炫B390 Time Spy达7000分！比RTX 3050桌面版快12% - 驱动之家</title><link>https://news.mydrivers.com/1/1088/1088232.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;Intel锐炫B390 Time Spy达7000分！比RTX 3050桌面版快12%&lt;/p&gt;
           
@@ -506,7 +584,7 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Nov 2025 08:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Hb3FmVy1zZ1haMndtRHFWNHB5d1d5bDRORU5PVTlGMERJZk1qSFI5NU04b3RjUmd6N21UMjl5bk1GRHFIVllMa2IzZ3FJR1MydklsU2NvV0o</guid></item><item><title>微软为Edge Copilot新增截图功能 可即时分析屏幕内容 - 驱动之家</title><link>https://news.mydrivers.com/1/1088/1088212.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Nov 2025 08:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Hb3FmVy1zZ1haMndtRHFWNHB5d1d5bDRORU5PVTlGMERJZk1qSFI5NU04b3RjUmd6N21UMjl5bk1GRHFIVllMa2IzZ3FJR1MydklsU2NvV0o</guid></item><item><title>Block能否成功将比特币转变为日常货币？ 提供者 Investing.com - 英为财情 Investing.com</title><link>https://cn.investing.com/news/stock-market-news/article-3095488</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>英为财情 Investing.com</author><pubDate>Sun, 23 Nov 2025 08:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE9kWktJUzFIQU1SWkpud2kxSTRsLWNwZDlFb1Zub1Bnd21iVmVabnZ2T0FOSTZkeW42bFhUZXo2SnBkSlJhUXdFSUc2ek8wcm92ZWQtcjQ4SlR6cEJ6eklVWmQ3aGkxVjZyOThQZTlGZXc</guid></item><item><title>微软为Edge Copilot新增截图功能 可即时分析屏幕内容 - 驱动之家</title><link>https://news.mydrivers.com/1/1088/1088212.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;微软为Edge Copilot新增截图功能 可即时分析屏幕内容&lt;/p&gt;
           
