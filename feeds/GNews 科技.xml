@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>估值低，仓位轻！摩根大通上调中国股市评级，看好AI应用加速和反内卷 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3760603</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 03 Dec 2025 03:18:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5lUVRJZDBVbTVSVVVhYk9LUElGa2tnR09DTEVfZTBWQW5wVDY5bVV1ZWFGaUtvdzRBN0ozYk4yZVBldWxYblBGQml3dnp4RVFnZkQ0</guid></item><item><title>Anthropic 宣布收购开源 JavaScript 运行时 Bun - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/387305/bun-joins-anthropic</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Anthropic首份内部报告出炉！自家工程师亲述：生产力飙升50%，但感觉在亲手砸掉自己饭碗 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3760608</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 03 Dec 2025 05:26:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE10QUtCTmNfMW5oTUExZmtVYTEzMWpuMk5vTzRzNGY4cUJfSmtPRXF5NUllaW5fcVU5YmlfY0dvUkNjX1RXcmRDWDNzSHpZbHpNUWFV</guid></item><item><title>明显 Bug 拖三年不修，Zig 宣布从GitHub 迁移至Codeberg - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/387325</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
+                                                                    
+                                                        &lt;p&gt;因对 GitHub 持续恶化的服务质量失望，Zig软件基金会&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fziglang.org%2Fnews%2Fmigrating-from-github-to-codeberg%2F" target="_blank"&gt;宣布&lt;/a&gt;将项目迁移至非营利代码托管服务Codeberg。&lt;/p&gt; 
+&lt;p&gt;&lt;img src="https://oscimg.oschina.net/oscnet/up-946afe8f1d87f66e2c523857117a13a2b1d.png"&gt;&lt;/p&gt; 
+&lt;p&gt;据悉，事件起源于一个名为"safe_sleep.sh脚本无限期挂起"的bug。2022年2月，GitHub将posix "sleep"命令替换为"safe_sleep"脚本，但该脚本存在明显缺陷——如果进程未在1秒间隔内被调度运行，脚本就会陷入死循环，持续占用100% CPU。&lt;/p&gt; 
+&lt;p&gt;Zig核心开发者Matthew Lugg在2025年4月的错误报告中指出："在负载&lt;span&gt;极高&lt;/span&gt;的CI服务器上，这种情况很容易发生。一旦发生，后果非常严重：它会彻底摧毁一个运行器，直到人工干预。在Zig的CI运行器服务器上，我们观察到多个这样的进程已经运行了数百小时，悄无声息地导致两个运行器服务器宕机数周。"&lt;/p&gt; 
+&lt;p&gt;尽管该问题在2025年4月被正式报告，GitHub直到8月20日才合并修复代码，且从未在原讨论帖中回应，该帖直到12月1日才被关闭。更讽刺的是，修复方案早在2024年2月就已提出，但在一年多时间里未经审查，还曾在2025年3月被GitHub机器人自动关闭。&lt;/p&gt; 
+&lt;p&gt;Zig软件基金会主席兼首席开发者Andrew Kelly在宣布迁移时称：&lt;/p&gt; 
+&lt;blockquote&gt; 
+ &lt;p&gt;"GitHub Actions存在不可原谅的漏洞，却完全被忽视。GitHub的CEO曾说过'要么拥抱AI，要么滚蛋'，看来微软的那些走狗们领会了其中的含义，因为GitHub Actions开始'随机调度'——看似随机地选择要运行的任务。再加上其他漏洞以及无法手动干预，这导致我们的持续集成系统严重积压，甚至连主分支的提交都无法检查。"&lt;/p&gt; 
+&lt;/blockquote&gt; 
+&lt;p&gt;Kelly随后为这篇"煽动性帖子"道歉，但Zig基金会的迁移决定并未改变。&lt;/p&gt; 
+&lt;p&gt;Answer.AI和Fast.AI联合创始人Jeremy Howard在社交媒体上表示："这个漏洞的实现方式非常明显，几乎任何人一眼就能看出它会一直占用100% CPU，并且除非任务恰好在正确的时间检查时间，否则它会一直运行下去。我实在无法理解，这样一系列令人瞠目结舌、匪夷所思的事件是如何在一个正常运转的组织中产生的。"&lt;/p&gt; 
+&lt;p&gt;Zig并非&lt;span&gt;唯一&lt;/span&gt;离开GitHub的项目。Dillo浏览器项目创建者Rodrigo Arias Mallo上周末也宣布计划离开GitHub，理由包括过度依赖JavaScript、可用性下降、审核工具不足，以及"过度关注LLM和生成式AI，这些正在摧毁开放网络"。&lt;/p&gt; 
+&lt;p&gt;自今年1月以来，非营利代码托管平台Codeberg的支持会员人数已从600多人翻倍至上周的1200多人。&lt;/p&gt; 
+&lt;p&gt;相比之下，GitHub尚未透露当前付费用户总数。微软CEO萨蒂亚·纳德拉在2025年第三季度财报会上称"GitHub Copilot用户超过1500万，同比增长超过4倍"，但未说明有多少用户为Copilot或其他服务付费。2024年第四季度，GitHub年收入运行率为20亿美元，其中GitHub Copilot订阅收入约占年增长的40%。&lt;/p&gt;
+                                                                                &lt;/div&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Wed, 03 Dec 2025 03:59:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE9GZzdPNHNtQUllOXdqeDhFcFpIS3Zoa1VpbE1xZld1R0RfUkpGQTZ2QUFVaWlObV9YcWprR0NFa0IxRXpKakVjYkJMWQ</guid></item><item><title>马斯克晒擎天柱跑步出镜视频仅4秒团队：刷新个人纪录-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090253.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;马斯克晒擎天柱跑步 出镜视频仅4秒 团队：刷新个人纪录&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-12-03 11:34:29  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1090253-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月3日消息，北京时间12月3日，特斯拉CEO马斯克在社交平台转发了一则特斯拉擎天柱（Optimus）团队发布的一段短视频。&lt;/p&gt;
+&lt;p&gt;值得一提的是，该视频演示的是人形机器人在实验室进行跑步的状态，其动作姿态流畅自然，但时长仅为4秒，让人颇感不过瘾。而该团队则配文称：&lt;strong&gt;刚在实验室刷新了个人纪录。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251203/b81b908fa8ce42b0ba4e7e8464f816ad.png" target="_blank"&gt;&lt;img alt="马斯克晒擎天柱跑步 出镜视频仅4秒 团队：刷新个人纪录" h="342" src="//img1.mydrivers.com/img/20251203/s_b81b908fa8ce42b0ba4e7e8464f816ad.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251203/1e54f2b6d3934f269abecb8432bc4eaf.png" target="_blank"&gt;&lt;img alt="马斯克晒擎天柱跑步 出镜视频仅4秒 团队：刷新个人纪录" h="344" src="//img1.mydrivers.com/img/20251203/s_1e54f2b6d3934f269abecb8432bc4eaf.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据此前报道，11月上旬，特斯拉宣布其人形机器人的试生产产线已经在弗里蒙特工厂开始运行，规模更大的第三代人形机器人的生产线将于2026年建成投产。&lt;/p&gt;
+&lt;p&gt;目前公司也正在工厂及特斯拉办公场所测试各类使用场景，机器人规模化生产后，预计每台成本将控制在&lt;strong&gt;2万美元&lt;/strong&gt;以内。&lt;/p&gt;
+&lt;p&gt;值得一提的是，马斯克曾在11月底转发了一段展示Optimus在多种场景执行任务的视频，并配以未来愿景：机器人将提升全球财富、使工作从必需转变为可选。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 03 Dec 2025 03:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1nWWFUbUl1eE9DdHNmcjdzSU5lSWlod2cteWtEMnU0THRWN1MwSjFOX3diYWpaWlJ1OHZ5OGMxbFJnX0RGVDJ0LXV0c0s1Tk1scFdJYV91UGY</guid></item><item><title>估值低，仓位轻！摩根大通上调中国股市评级，看好AI应用加速和反内卷 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3760603</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 03 Dec 2025 03:18:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5lUVRJZDBVbTVSVVVhYk9LUElGa2tnR09DTEVfZTBWQW5wVDY5bVV1ZWFGaUtvdzRBN0ozYk4yZVBldWxYblBGQml3dnp4RVFnZkQ0</guid></item><item><title>Anthropic 宣布收购开源 JavaScript 运行时 Bun - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/387305/bun-joins-anthropic</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
                                                                     
                                                         &lt;p&gt;Anthropic &lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fwww.anthropic.com%2Fnews%2Fanthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone" target="_blank"&gt;宣布&lt;/a&gt;收购 JavaScript 运行时 Bun，后者将成为 Claude Code、Claude Agent SDK 及未来AI编码产品的底层基础设施。收购后，Bun 将继续保持开源和 MIT 许可，原有团队不变，并持续公开开发。&lt;/p&gt; 
 &lt;p&gt;此次收购旨在通过结合 Bun 的高性能工具链与 Claude Code 的AI编码能力，加速下一代软件基础设施的建设。同时，Claude Code 在发布六个月后，其年化运营收入已达到 10亿美元。&lt;/p&gt; 
@@ -8,7 +88,240 @@
 &lt;p&gt;&lt;img src="https://static.oschina.net/uploads/space/2025/1203/105440_AAIl_2720166.png"&gt;&lt;/p&gt; 
 &lt;p&gt;Anthropic 首席产品官 Mike Krieger 表示：“Bun 团队所代表的卓越技术正是我们希望引入 Anthropic 的。Jarred 和他的团队从根本上重新思考了整个 JavaScript 工具链，同时始终专注于实际应用案例。Claude Code 仅用了 6 个月就实现了 10 亿美元的年化收入，而 Bun 团队的加入意味着我们可以构建基础设施，从而巩固这一发展势头，并跟上 AI 应用呈指数级增长的步伐。”&lt;/p&gt;
                                                                                 &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Wed, 03 Dec 2025 03:04:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE8zaTk0U1AxYTFFMnBxRzFqU1FPZEVzXzJKYlBOU0FRdUdZZFhlU0IyTUo0SHFPcm82WV9CVFFZTkZ4V0h3a0VRdWN5UHBiWWpSRFcwMFQxX2lNenNhM2F6R1dJOGQ2dw</guid></item><item><title>雷军宣布小米汽车现车选购功能开放：现在下定本月就能提车-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090214.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Wed, 03 Dec 2025 03:04:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE8zaTk0U1AxYTFFMnBxRzFqU1FPZEVzXzJKYlBOU0FRdUdZZFhlU0IyTUo0SHFPcm82WV9CVFFZTkZ4V0h3a0VRdWN5UHBiWWpSRFcwMFQxX2lNenNhM2F6R1dJOGQ2dw</guid></item><item><title>早报｜三星三折叠来了，售价达1.7万元/小米汽车累计交付破50万台/索尼全画幅新机A7 V正式发布 - 爱范儿</title><link>https://www.ifanr.com/1647123</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;div&gt;
+&lt;div&gt;
+&lt;p&gt;📱&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;三星三折叠 Galaxy Z TriFold 亮相，采用「G」字形折叠方案&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div&gt;
+&lt;p&gt;🖥️&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;消息称三星半导体拒绝与手机部门签订 DRAM 长期合同，Galaxy S26 或面临「芯片通胀」&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;p&gt;💡&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;IBM CEO：AI 数据中心 8 万亿美元投入难获回报&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;📷&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;17999 元，索尼 Alpha 7 V 全画幅微单正式发布&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;🚗&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;理想汽车携手蔡司，AI 眼镜 Livis 今晚发布&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;🤖&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;字节跳动 Seed 推出 GR-RL，机器人首次完成真机穿鞋带&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;🤖&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;中新网发布 2025 年十大流行语：聚焦人工智能与二次元经济&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h3&gt;三星三折叠 Galaxy Z TriFold 亮相，采用「G」字形折叠方案&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/60134555-8056-4760-a366-1f458d2441c2.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，三星正式官宣旗下首款三折叠手机 Galaxy Z TriFold。&lt;/p&gt;
+&lt;p&gt;不同于华为的「Z」型折叠方式，这款新机采用「G」字形内折叠方案，机身展开最薄处仅 3.9mm，折叠态厚度为 12.9mm，重量为 309g。其他参数如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;内屏尺寸为 10 英寸，外屏为 6.5 英寸，峰值亮度分别为 1600nit 与 2600nit，均支持 120Hz LTPO 技术；&lt;/li&gt;
+&lt;li&gt;搭载高通骁龙 8 Elite 处理器，提供 16GB + 512GB 与 16GB + 1TB 两种存储版本；&lt;/li&gt;
+&lt;li&gt;主摄 2 亿像素，长焦为 10MP 三倍光学变焦，超广角为 12MP；&lt;/li&gt;
+&lt;li&gt;电池容量提升至 5600mAh，支持 45W 有线充电与 15W 无线充电。机身厚度中心为 4.2mm，带按键侧屏幕厚度为 4mm。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;值得注意的是，该机配备钛合金铰链，并支持 IP48 防尘防水，成为全球首款具备防尘防水能力的三折叠手机。&lt;/p&gt;
+&lt;p&gt;三星还为 Galaxy Z TriFold 引入独立 DeX 模式，无需外接显示器即可实现类 PC 桌面体验，定位直追自家旗舰平板 Tab S11 Ultra。SIM 卡配置方面，这款新机支持双实体 SIM + 多 eSIM。&lt;/p&gt;
+&lt;p&gt;上市时间方面，Galaxy Z TriFold 将于 12 月 12 日在韩国市场开售，中国大陆也将在 12 月 9 日 10:00 开启预售。&lt;/p&gt;
+&lt;p&gt;据悉，新机韩版起售价为 359 万元（约合人民币 1.72 万元）。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/e3363558-20d9-4e3b-aa9d-b90b1308ab14.png!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;有趣的是，罗永浩昨日发文评价了新机，表示「这么折叠不就相当于是四块手机屏吗？除了比华为那种方案更厚，意义在哪里呢？￼」&lt;/p&gt;
+&lt;p&gt;🔗 相关阅读：&lt;a href="https://mp.weixin.qq.com/s/1Bynud4D74EXp3lBiI245w"&gt;三星三折叠上手：折起是手机，展开竟然是…电脑？&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;OpenAI 宣布「红色警报」，集中资源抗衡对手&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/9146beba-cc95-4f4b-8170-4406a8ff46df.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据 The Information 报道，OpenAI CEO Sam Altman 在当地时间周一向员工宣布进入「红色警报」状态，以应对来自 Google 等人工智能竞争对手的压力，并集中资源提升 ChatGPT 的性能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Altman 表示，公司将因此推迟包括广告业务在内的其他计划。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Altman 在内部备忘录中指出，「我们正处于 ChatGPT 的关键时刻」。他强调，&lt;strong&gt;OpenAI 将优先推出一款新的推理模型，该模型在内部评估中表现优于 Google 的 Gemini 3。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据悉，OpenAI 正计划通过一个代号为「Garlic」的新大语言模型进行反击。&lt;/p&gt;
+&lt;p&gt;知情人士透露，OpenAI 首席研究官 Mark Chen 近期向公司内部人员介绍了该新模型，并且 Gartlic 在代码、推理任务中，能够媲美 Google Gemini 3 和 Anthropic Opus 4.5.&lt;/p&gt;
+&lt;p&gt;同时，公司还将加快改进图像生成 AI、提升模型行为表现、优化速度与可靠性，并减少「过度拒答」现象。&lt;/p&gt;
+&lt;p&gt;消息人士透露，OpenAI 原本正在测试多种广告形式，包括与在线购物相关的广告，但该计划已被暂缓。此外，其他产品如自动化购物与健康任务的 AI agent，以及为用户生成个性化报告的 Pulse，也将延后开发。&lt;/p&gt;
+&lt;p&gt;Altman 在内部沟通中警告，Google 的 AI 反攻可能带来「短期经济阻力」。&lt;/p&gt;
+&lt;p&gt;Google 在 10 月宣布，其 Gemini 聊天机器人月活跃用户已增至 6.5 亿，高于 7 月的 4.5 亿，显示其增长势头明显。相比之下，OpenAI 披露 ChatGPT 每周用户超过 8 亿，并占据全球约 70% 的 AI 助手活动。&lt;/p&gt;
+&lt;p&gt;财务层面，OpenAI CFO Sarah Friar 上月在与投资者的通话中提到 ChatGPT 增长出现放缓迹象。&lt;/p&gt;
+&lt;p&gt;公司预计今年订阅收入约 100 亿美元，明年将达 200 亿美元，并在 2027 年达到约 350 亿美元。与此同时，OpenAI 计划未来几年投入数百亿美元用于技术研发和算力支持。&lt;/p&gt;
+&lt;p&gt;Altman 强调，OpenAI 的「红色警报」不仅是防御，更是主动出击。他表示，下周将发布的新推理模型将进一步强化 ChatGPT 的「思考模式」和 Deep Research 功能，以保持在激烈竞争中的领先地位。&lt;/p&gt;
+&lt;p&gt;🔗 相关阅读：&lt;a href="https://mp.weixin.qq.com/s/1SjsPT89jmyOxiUK7RZqaQ"&gt;OpenAI 生死时刻？奥特曼内部信曝光，下死命令暂停广告，ChatGPT 不能输&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;苹果将初代 iPhone SE 列为「过时产品」&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/8c9b37fd-2927-431b-812e-6a663bd5deb2.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据 MacRumors 报道，苹果已将初代 iPhone SE 列入「过时产品」名单。这意味着该机型自昨天起在全球范围内不再享受官方维修、换电池或其他服务支持，包括苹果零售店及授权服务提供商。&lt;/p&gt;
+&lt;p&gt;苹果的政策规定，产品在停止销售满 7 年后即被认定为过时。初代 iPhone SE 于 2016 年 3 月发布，并在 2018 年 9 月停产，如今已跨过这一时间节点。&lt;/p&gt;
+&lt;p&gt;该机型沿用了 iPhone 5s 的外观设计，配备 4 英寸显示屏、Touch ID 主键以及铝合金与玻璃材质机身，但核心搭载了来自 iPhone 6s 系列的 A9 芯片。&lt;/p&gt;
+&lt;p&gt;在发布时，苹果前营销主管 Phil Schiller 曾表示：「所有喜欢小尺寸手机的用户都会爱上 iPhone SE」。&lt;/p&gt;
+&lt;p&gt;此后，苹果分别在 2020 年和 2022 年推出了第二代与第三代 iPhone SE，外观更接近 iPhone 8。然而在今年 2 月，苹果宣布全面停产 iPhone SE 系列，并由 iPhone 16e 接替其市场定位。&lt;/p&gt;
+&lt;p&gt;这一调整标志着苹果彻底结束了小尺寸机型的生命周期。尽管 iPhone SE 曾因小巧设计和相对低价受到部分用户青睐，但随着产品线更新，苹果在经历两代 iPhone mini 的尝试后，已将战略重心转向更大屏幕与更高性能的机型。&lt;/p&gt;
+&lt;p&gt;🔗 所有「停产和过时」产品：&lt;a href="https://support.apple.com/en-us/102772"&gt;https://support.apple.com/en-us/102772&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;消息称三星半导体拒绝与手机部门签订 DRAM 长期合同，Galaxy S26 或面临「芯片通胀」&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/b8c4837e-8428-4467-ba0d-2ce836c891c2.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据首尔经济日报报道，三星内部芯片团队与移动业务部门的矛盾正在加剧，Galaxy S26 系列的供应链因此面临风险。&lt;/p&gt;
+&lt;p&gt;三星计划在明年初推出 Galaxy S26 系列，但移动业务 MX 部门未能与半导体 DS 部门达成长期内存芯片供应协议。消息人士称，DS 部门拒绝了 MX 部门提出的一年以上 DRAM 合同请求，仅愿意维持季度合约。&lt;/p&gt;
+&lt;p&gt;报道指出，尽管双方高层曾进行多轮谈判，MX 部门最终仅确保了截至 12 月 31 日的第四季度 DRAM 供应。&lt;/p&gt;
+&lt;p&gt;与此同时，DS 部门正将资源集中在高带宽存储（HBM）等面向 AI 数据中心的产品上，逐渐淡化 DRAM 与 NAND 的合同业务。&lt;/p&gt;
+&lt;p&gt;这一策略使 MX 部门在面对内存价格上涨时陷入困境。三星 12GB LPDDR5X RAM 的价格今年初约为 33 美元（约 233 元人民币），而近期已飙升至约 70 美元（约 495 元人民币）。&lt;/p&gt;
+&lt;p&gt;Galaxy S26 系列的 DRAM 将由三星电子与美光共同供应，但具体比例尚未披露。&lt;/p&gt;
+&lt;p&gt;业内分析认为，DS 部门优先追求利润增长，利用内存市场的「超级周期」提升营收，而 MX 部门则因成本压力面临利润下滑风险。这场内部博弈凸显了三星在平衡不同业务板块利益上的挑战。&lt;/p&gt;
+&lt;h3&gt;小米汽车累计交付破 50 万台大关&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/92411518-39a7-4a45-947f-86de2cc1fb4b.png!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，小米汽车宣布，自 2024 年 4 月 3 日以来，累计交付已超过 50 万台，超额完成年初设定的全年目标 35 万台。&lt;/p&gt;
+&lt;p&gt;此外，小米汽车还公布了第 50 万辆小米汽车的车主，是一位42岁的工程师，选择的是小米 YU7 宝石绿。该车主表示，「YU7很适合自驾游，提车后第一时间就要开着去旅行。」&lt;/p&gt;
+&lt;h3&gt;灵光上线两周创纪录，闪应用数量突破 330 万&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/0bede6d0-6a17-456d-a593-534b857c801a.png!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;通用 AI 助手「灵光」在上线两周后迎来爆发式增长。昨天，蚂蚁集团宣布，灵光 App 用户已成功创建 330 万个「闪应用」。&lt;/p&gt;
+&lt;p&gt;灵光闪应用的核心突破在于极大降低了开发门槛，用户无需编程知识，仅用自然语言即可在移动端最快 30 秒生成一个可交互、可编辑、可分享的小应用。这与传统开发模式形成鲜明对比，推动了大众化的 AI 创作潮流。&lt;/p&gt;
+&lt;p&gt;灵光 App 首期上线「灵光对话」「灵光闪应用」「灵光开眼」三大功能，迅速成为现象级 AI 产品。&lt;/p&gt;
+&lt;p&gt;官方数据显示，灵光在 6 天内突破 200 万下载，远高于 ChatGPT 首周的 60.6 万和 Claude 的 15.7 万；在突破 100 万下载的速度上，灵光仅用 4 天，也快于 Sora2 的 5 天。&lt;/p&gt;
+&lt;h3&gt;千问 APP 接入万相 2.5，视频创作能力再升级&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/c626d1be-dc31-4c3c-af8b-f06f6d9324f6.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，千问 APP 宣布接入阿里最新视频生成模型万相 Wan2.5，全面升级视频创作能力。该版本在动作精度和肢体协调性方面显著提升，并成为首个支持音视频同步输出的移动端 AI 助手。&lt;/p&gt;
+&lt;p&gt;万相 2.5 是目前业界少数具备音画同步能力的视频模型之一，支持文本、图像、视频、音频等多模态输入与输出。在权威大模型评测 LMArena 上，万相的图生视频能力位居全球第三，稳居国内第一。&lt;/p&gt;
+&lt;p&gt;此次接入后，千问 APP 用户只需上传一张照片和一段文字，即可生成肢体动作自然、口型匹配准确的 1080P 高清唱跳视频，最长支持 10 秒。&lt;/p&gt;
+&lt;p&gt;据悉，千问 APP 公测仅一周，下载量已突破 1000 万次，超越 ChatGPT、Sora、DeepSeek，成为史上增长最快的 AI 应用。&lt;/p&gt;
+&lt;h3&gt;💡 IBM CEO：AI 数据中心 8 万亿美元投入难获回报&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/07588083-ff7a-46a4-8548-d278c91dcc9f.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据《商业内幕》报道，IBM CEO 阿尔温德 · 克里希纳在接受「Decoder」播客采访时表示，当前科技巨头在人工智能数据中心上的巨额资本支出几乎没有可能获得回报。&lt;/p&gt;
+&lt;p&gt;他指出，按照现有成本测算，建设 1GW 数据中心约需 800 亿美元，而全球承诺的总规模已接近 100GW，总投入约 8 万亿美元。&lt;/p&gt;
+&lt;p&gt;克里希纳强调，这意味着企业需要每年约 8000 亿美元利润才能覆盖利息成本，这在现实中难以实现。他同时提到，数据中心内部的 AI 芯片存在快速折旧问题，通常五年后就必须更换，这进一步加剧了成本压力。&lt;/p&gt;
+&lt;p&gt;在 AGI（通用人工智能）方面，克里希纳持高度怀疑态度。他认为现有大模型扩展路径无法实现 AGI，概率仅在 0–1%。他提出未来可能需要将「硬知识」与大语言模型结合，但即便如此也只是「也许」。&lt;/p&gt;
+&lt;p&gt;这一观点与 OpenAI CEO 山姆 · 奥特曼的乐观态度形成鲜明对比。奥特曼此前建议美国每年增加 100GW 能源产能，并承诺约 1.4 万亿美元的资本支出。&lt;/p&gt;
+&lt;p&gt;行业背景方面，Meta 在财报中频繁提及「容量」与 AI 基础设施，Google 更是宣布未来计划在太空建设数据中心。与此同时，投资人迈克尔 · 伯里因担忧英伟达芯片的折旧问题，近期对 AI 股票提出批评，导致市场波动。&lt;/p&gt;
+&lt;p&gt;多位科技领袖也对 AGI 的加速持怀疑态度。Salesforce CEO 马克 · 贝尼奥夫称其「极度可疑」，Google Brain 创始人吴恩达认为 AGI「被过度炒作」，Mistral CEO 阿瑟 · 门施则直言其是「营销手段」。&lt;/p&gt;
+&lt;p&gt;OpenAI 联合创始人伊利亚 · 苏茨克维尔更指出「大规模扩展时代已结束」，未来需要更多研究而不仅仅是算力堆叠。&lt;/p&gt;
+&lt;p&gt;尽管如此，克里希纳仍然看好现有 AI 工具在企业生产力上的价值，认为其有望释放数万亿美元的效率提升。他强调，AGI 的实现需要超越当前大模型路径的更多技术突破。&lt;/p&gt;
+
+&lt;h3&gt;17999 元，索尼 Alpha 7 V 全画幅微单正式发布&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/64a006d3-b43e-4385-9c09-87814684e787.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，索尼正式发布全画幅微单新品 Alpha 7 V（型号 ILCE-7M5）。&lt;/p&gt;
+&lt;p&gt;作为 Alpha 7 系列的第五代产品，该机在影像传感器、处理器、AI 算法、视频性能及操控续航等方面全面升级，成为索尼微单十五周年的代表性新品：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;搭载新开发的部分堆栈式 Exmor RS CMOS 全画幅传感器，约 3300 万有效像素；&lt;/li&gt;
+&lt;li&gt;配备最新 BIONZ XR2 影像处理器，集成 AI 智能处理功能，在实时识别 AF、实时追踪、连拍速度及色彩还原方面显著提升；&lt;/li&gt;
+&lt;li&gt;支持最高 30fps 高速连拍，且支持 14-bit RAW 无损输出；配备预拍摄功能，并可录制 7K 超采样无裁切 4K60P 视频及 Super35 裁切 4K120P 视频；&lt;/li&gt;
+&lt;li&gt;配备升级的 3.2 英寸翻转屏，支持双卡槽（SD 与 CFexpress Type-A）；&lt;/li&gt;
+&lt;li&gt;机身采用镁合金框架，重量约 610 ~ 695 克，具备防尘防潮设计，续航可达约 750 张照片。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;售价方面，Alpha 7 V 单机身国行建议零售价为 17999 元，国行即日开启预售，海外市场计划于 12 月 19 日开售。&lt;/p&gt;
+&lt;p&gt;🔗 相关阅读：&lt;a href="https://mp.weixin.qq.com/s/m3TuTvFjLkOkCGVTgO2fJQ"&gt;鱼和熊掌兼得？在 A7M5 身上，我看到了相机两难的和解&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;AI 情感交互台灯「Ongo」发布，玩具总动员编剧参与设计&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/fd21b414-522f-4c39-9337-703e3297b98a.png!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，互动机器人公司 InteractionLabs 宣布正式发布 AI 台灯 Ongo，定位为「有生命的台灯」，除具备照明功能外，还能通过人工智能与用户进行情感交互。&lt;/p&gt;
+&lt;p&gt;该产品由 CEO Karim Rkha Chaham 与 CTO Julien Ajdenbaum 共同开发，创意总监为曾获奥斯卡提名的玩具总动员编剧 Alec Sokolow。&lt;/p&gt;
+&lt;p&gt;Ongo 的设计强调情感智能与环境感知。它能够识别用户的面部表情，感知工作节奏，并通过光线与动作进行回应，帮助用户在专注时自动调暗灯光，营造安静氛围。&lt;/p&gt;
+&lt;p&gt;此外，设备捕捉到的视觉数据仅在端侧处理，确保隐私安全，并配备可磁吸的遮光镜片以提供完全的隐私模式。&lt;/p&gt;
+&lt;p&gt;在功能层面，Ongo 的交互逻辑由故事化设计驱动，旨在减少用户对屏幕的依赖，成为桌面上的情感伙伴。有开发者提出，未来 Ongo 或可结合健康监测模型，实现水分与血糖水平的检测。&lt;/p&gt;
+&lt;p&gt;发售不久后，CEO Karim 在 X 上宣布，首批 100 台 Ongo 已售罄，并将开放新的购买名额。&lt;/p&gt;
+&lt;h3&gt;理想汽车携手蔡司，AI 眼镜 Livis 今晚发布&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/12888a8f-a27a-42be-a0f4-64df475c7b5e.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，理想汽车宣布与德国光学巨头蔡司达成全球战略合作，并将在今天 19:30 举办新品发布会，正式推出其首款 AI 智能眼镜「Livis」。&lt;/p&gt;
+&lt;p&gt;理想汽车表示，此次合作标志着公司从智能汽车制造商向「智能出行生态服务商」的转型。Livis AI 眼镜将作为车机系统的延伸，结合全场景 AI 能力，把「理想同学」的智能交互体验从车内拓展至日常生活。&lt;/p&gt;
+&lt;p&gt;产品搭载 MicroOLED 高清显示屏，并借助蔡司在光学领域的技术优化视觉清晰度与场景适配性。同时，眼镜支持轻量化设计与近视定制功能，提升佩戴舒适度。&lt;/p&gt;
+&lt;p&gt;根据理想汽车官方预热视频，Livis 智能眼镜还具备远程控车功能，可实现打开电动侧滑门、提前开启车内空调及座椅加热等操作。&lt;/p&gt;
+&lt;p&gt;蔡司于 1957 年进入中国，业务覆盖半导体制造技术、工业质量解决方案、研究显微镜解决方案、医疗技术、视力保健和消费者光学所有业务领域。2021 年起，中国已成为蔡司在全球最大的单一市场。&lt;/p&gt;
+&lt;h3&gt;字节跳动 Seed 推出 GR-RL，机器人首次完成真机穿鞋带&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/f1643c97-c4e1-4a5c-81d3-000ce81b522b.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，字节跳动 Seed Research 团队正式发布最新研究成果 GR-RL，在真实机器人平台上首次实现了「连续为整只鞋穿鞋带」的复杂操作。&lt;/p&gt;
+&lt;p&gt;字节跳动称，这一突破标志着视觉-语言-动作（VLA）模型在精细灵巧任务上的能力边界被显著拓展。&lt;/p&gt;
+&lt;p&gt;团队指出，主流模仿学习存在两大缺陷：人类演示数据的「次优性」以及训练与推理之间的「执行错位」，导致模型在毫米级精度任务中频繁失败。&lt;/p&gt;
+&lt;p&gt;为此，Seed 团队选择真机强化学习路径，提出了多阶段训练框架，包括离线数据筛选、数据增强以及在线强化学习。&lt;/p&gt;
+&lt;p&gt;在双臂机器人 ByteMini-v2 上，GR-RL 将穿鞋带任务成功率从监督学习基线 GR-3 的 45.7% 提升至 83.3%，失败率减少近 70%。&lt;/p&gt;
+&lt;p&gt;其中，数据过滤、镜像增强和在线强化学习均对性能提升贡献显著。实验中，模型展现出类似人类的「纠错智能」，在鞋带滑落或摆放位置不佳时能主动调整并重试，体现了对任务物理逻辑的理解，而非单纯轨迹记忆。&lt;/p&gt;
+&lt;p&gt;团队认为，强化学习经验应进一步蒸馏回基础 VLA 模型，以构建兼具高精度操作与强大泛化能力的通用策略。&lt;/p&gt;
+&lt;p&gt;📖 论文链接：&lt;a href="https://arxiv.org/abs/2512.01801"&gt;https://arxiv.org/abs/2512.01801&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;🖥️ 项目主页：&lt;a href="https://seed.bytedance.com/gr_rl"&gt;https://seed.bytedance.com/gr_rl&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;可灵 O1 生图模型上线，支持多图融合与精准细节控制&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/166bd18e-d273-4029-8a6a-410bb8bfd20c.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，可灵 AI 宣布 O1 图片模型已正式全量上线，定位「一站式创意引擎」，覆盖从基础图像生成到高阶细节编辑的完整流程，旨在让创意实现更加精准与高效。&lt;/p&gt;
+&lt;p&gt;据介绍，该模型具备四大核心优势：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;特征全保真&lt;/strong&gt;：支持多达 10 张参考图的特征提取，能够精准锁定主体轮廓与色调，即便跨图生成也能保持高度一致性；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;细节全掌控&lt;/strong&gt;：用户无需专业修图技能，仅凭文字指令即可实现物品与人物的精准增删改操作，满足影视级创作需求；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;风格全复刻&lt;/strong&gt;：通过多图融合与风格解构，实现全局风格的自然统一与无缝转绘；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;创意全融合&lt;/strong&gt;：支持涂鸦编辑与自然语言指令触发，进一步拓展复杂构想的实现路径。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;此外，可灵 AI 宣布，自即日起至 12 月 14 日 24 时，O1 视频生成会员提供限时双周 7.5 折优惠，O1 图片生成铂金及以上会员最长可享 1 年无限使用，全场会员年卡限时 6.6 折。&lt;/p&gt;
+
+&lt;h3&gt;中新网发布 2025 年十大流行语：聚焦人工智能与二次元经济&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/7841eec7-6a45-45d5-912d-fa2251e4eebe.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，中新网《咬文嚼字》编辑部正式公布 2025 年十大流行语。榜单延续社会学与语言学双重标准，集中反映了人工智能、经济转型及社会情绪等多维度趋势。&lt;/p&gt;
+&lt;p&gt;核心词汇方面，「韧性」位居榜首，体现社会在面对复杂环境时的普遍心理与发展态势。&lt;/p&gt;
+&lt;p&gt;「具身智能」等词语凸显人工智能技术的快速渗透，语言体系正被深刻重塑；「赛博对账」「活人感」「苏超」则反映数字化与体育热点的广泛关注。&lt;/p&gt;
+&lt;p&gt;值得注意的是，「谷子」一词同样入选，源自「goods」的谐音，常用于指代二次元 IP 的周边文创产品，折射出二次元经济的兴起与消费模式的变化。&lt;/p&gt;
+&lt;p&gt;「数字游民」则揭示就业方式的多元化与新质生产力的加速发展。同时，备选词条如「竖店」「低空经济」「悦己经济」等，进一步展现了产业结构优化与社会生活方式的演变。&lt;/p&gt;
+&lt;p&gt;社会情绪方面，「××基础，××就不基础」「从从容容、游刃有余」「匆匆忙忙、连滚带爬」「预制××」等词语同样得到提名，折射出公众在快节奏生活中的心态与价值观念。&lt;/p&gt;
+&lt;h3&gt;电动自行车新国标落地，终端最高涨至 4000 元&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/eeefe69b-ca6f-4159-9e4b-8a845840dfe7.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;据蓝鲸新闻报道，在 12 月 1 日国家电动自行车新国标实施之后，记者在深圳等地走访发现，政策落地初期市场呈现复杂局面：&lt;/p&gt;
+&lt;p&gt;新国标车型因安全与智能化升级导致生产成本显著增加，终端售价普遍上涨至 2000 – 4000 元；与此同时，部分旧国标车型仍通过「带牌过户」或区域转销等灰色渠道继续流通。&lt;/p&gt;
+&lt;p&gt;在深圳，台铃、雅迪、绿源等品牌已开售符合新国标的车型，但整体铺货节奏不均衡。&lt;/p&gt;
+&lt;p&gt;小牛电动专卖店负责人表示，新款车辆最快需至下周才有现货，目前仅有样车展示。九号电动车门店也透露仍在等待厂家发货，市场处于「青黄不接」状态。&lt;/p&gt;
+&lt;p&gt;部分经销商指出，旧国标车型虽已停产，但因库存有限且具备改装空间，价格反而上涨 200 – 300 元。&lt;/p&gt;
+&lt;p&gt;更有经销商透露，部分门店提前为旧车上好牌照，消费者可通过过户方式继续使用，但需额外支付 700 – 800 元费用。这种「带牌过户」模式在监管相对宽松的三、四线城市尤为常见。&lt;/p&gt;
+&lt;p&gt;新国标的实施不仅提升了整车安全标准，还对材料、结构与功能提出更高要求。例如，塑料件质量占比不得超过整车 5.5%，必须使用高阻燃材料，并鼓励搭载北斗定位与通信模块。电池安全也被提升至前所未有的高度，要求在材料与 BMS（电池管理系统）方面进行技术升级。&lt;/p&gt;
+&lt;p&gt;此外，新规明确要求车辆在超速时持续发出提示音，并在达到最高限速时自动切断动力输出。&lt;/p&gt;
+&lt;p&gt;九号公司产品经理表示，车辆系统已设置 25 km/h 限速，并通过动态算法避免突然断电带来的不适。多数品牌强调限速不可解除，但部分经销商认为未来或出现「破解」手法。&lt;/p&gt;
+&lt;h3&gt;索尼推出《原神》限定版 PS5 手柄&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/e6a42c15-72c9-4fe9-a1fa-0968f134b77c.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;索尼昨日宣布，将推出全新「DualSense 无线手柄 ——《原神》限定版」。&lt;/p&gt;
+&lt;p&gt;该款 PS5 手柄深度融合了《原神》世界观元素，设计灵感来源于旅行者双子（空 / 荧）以及向导派蒙，整体配色为白、金与绿色，并点缀神秘符文，凸显提瓦特幻想氛围。&lt;/p&gt;
+&lt;p&gt;该限定版手柄将于 12 月 11 日开启预购，并计划在 2026 年 1 月 21 日率先于日本及部分亚洲市场上市。&lt;/p&gt;
+&lt;p&gt;零售价格方面，索尼公布的建议售价为 84.99 美元（约合人民币 601.6 元）、84.99 欧元（约合人民币 698.5 元）、74.99 英镑（约合人民币 701.8 元）以及 12480 日元（约合人民币 568.3 元）。&lt;/p&gt;
+&lt;p&gt;米哈游全球发行与运营总裁金雯怡表示：「我们希望旅人们能够享受这款手柄带来的乐趣，并继续在《原神》中开启冒险之旅」。&lt;/p&gt;
+
+&lt;h3&gt;《一战再战》夺 2025 哥谭奖最佳影片&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/cc05822c-f8a4-48db-a9ae-a281ab8c6ddd.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;美国电影奖项「哥谭奖」昨日公布 2025 年度获奖名单，作为奥斯卡颁奖季的前哨站，本届评选结果引发业界广泛关注。&lt;/p&gt;
+&lt;p&gt;《一战再战》斩获最佳影片，成为最大赢家。《普通事故》则凭借导演贾法·帕纳西的执导与编剧表现，获得最佳导演、最佳原创剧本及最佳国际影片三项荣誉，展现出强劲的创作实力。&lt;/p&gt;
+&lt;p&gt;在表演类奖项方面，索佩 · 迪瑞苏凭借《父影之下》获最佳主角，乌米 · 马萨库凭《罪人》获最佳配角。阿布 · 桑加雷凭《苏莱曼的故事》获得最佳突破表演，而《父影之下》导演阿基诺拉 · 戴维斯则获最佳突破导演奖。&lt;/p&gt;
+&lt;p&gt;此外，《后座》摘得最佳改编剧本，《不受欢迎的朋友：第一部分莫斯科的最后一息》获最佳纪录片。&lt;/p&gt;
+&lt;h3&gt;《疯狂动物城2》内地票房突破 20 亿，4D 场次一票难求&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/4fb4500c-172d-4832-ad15-5b951f111166.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;《疯狂动物城2》在全球上映后迅速刷新多项票房纪录，中国市场成为最大推动力。&lt;/p&gt;
+&lt;p&gt;截至昨天，影片中国内地票房突破 20 亿元，迪士尼官方微博发布庆祝视频，并展示从 4 亿至 20 亿的票房里程碑海报，显示出市场的持续热度。猫眼专业版预测，该片最终内地票房或将达到 42.51 亿元。&lt;/p&gt;
+&lt;p&gt;在北美市场，影片赶上感恩节档期，五天票房为 1.56 亿美元，三日票房为 9680 万美元，虽登顶周票房冠军，但未能打破历史纪录，仍次于去年同期的《海洋奇缘2》。&lt;/p&gt;
+&lt;p&gt;相比之下，中国市场的表现更为突出，该片不仅成为中国影史进口动画片票房冠军，也在所有进口片中仅次于《复仇者联盟4：终局之战》。&lt;/p&gt;
+&lt;p&gt;影片的火爆带动影院运营全面升温。据蓝鲸财经报道，12 月 1 日，《疯狂动物城2》在中国内地排片占比达 78.1%，上座率高达 91.2%。尤其是 4D 场次因追车与雨林场景的沉浸式体验而一票难求，甚至出现黄牛高价转售现象，票价翻倍至近 200 元。&lt;/p&gt;
+&lt;p&gt;迪士尼方面高度重视该片的市场表现。CEO 鲍勃 · 艾格亲自出席上海迪士尼的全球盛典，显示出公司对这一项目的战略期待。&lt;/p&gt;
+&lt;p&gt;此前，迪士尼在真人版《白雪公主》及《创：战神》等项目上遭遇票房失利，《疯狂动物城2》被视为其重振市场信心的重要作品。&lt;/p&gt;
+&lt;p&gt;除票房外，影片的商业联动也在中国市场掀起热潮。澎湃新闻指出，《疯狂动物城2》上映前后已有近 60 起品牌联名活动，涵盖潮玩、餐饮、服饰、汽车等多个领域，形成全方位的消费狂欢。&lt;/p&gt;
+&lt;p&gt;上海迪士尼的「疯狂动物城」主题园区亦成为热度延续的重要场景，园区核心项目「热力追踪」持续吸引大量游客，进一步强化了 IP 的市场号召力。&lt;/p&gt;
+&lt;h3&gt;《利刃出鞘 3》发布新海报，12 月 12 日上线 Netflix&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://s3.ifanr.com/images/ep/uploads/20251203_%E6%97%A9%E6%8A%A5/2b436a29-37ad-43db-afe7-b38f16f92d3d.jpg!720" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;昨天，悬疑电影《利刃出鞘 3》发布新海报，定名为「Wake Up Dead Man: A Knives Out Mystery」，将于 12 月 12 日正式上线 Netflix。&lt;/p&gt;
+&lt;p&gt;本片由莱恩 · 约翰逊继续执导，丹尼尔 · 克雷格再度饰演侦探贝诺特 · 布兰科，展开新一轮复杂的谋杀疑案调查。&lt;/p&gt;
+&lt;p&gt;《利刃出鞘》系列自 2019 年首部作品亮相以来，凭借复杂的叙事结构和群像表演获得广泛关注。&lt;/p&gt;
+&lt;p&gt;此次第三部作品在延续悬疑推理风格的同时，进一步强化了「谁是凶手」的核心悬念，此前公布的预告片中亦多次强调复杂线索与角色关系的交织。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 03 Dec 2025 02:01:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE9RT2dXRFBBQlZOSlFpSU9hNGVUd0JFMVJiY01ibldGVEsxOWVYb0xGb25KZUluUV9YQm1hTlNUZGF5dFk</guid></item><item><title>雷军宣布小米汽车现车选购功能开放：现在下定本月就能提车-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090214.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技12月3日消息，小米创办人，董事长兼CEO雷军发文宣布，小米汽车现车选购的功能今天10点全面开放，大家可以到小米汽车APP选购。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;据介绍，现车包含全新现车、官方展车、准新车，已通过严格质检，可享快速提车、完整原厂质保和售后，部分车型可享优惠。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2476,282 +2789,4 @@ https://arxiv.org/pdf/2510.24797&lt;/p&gt;
 &lt;p&gt;彩蛋：众擎曾在五月份宣布，将在今年 12月24日举办一场机器人自由格斗比赛「机甲拳王」。现在这场格斗马上就要登场了，今天发布的 T800，也将作为核心参赛机型登场对战。&lt;/p&gt;
 
   &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Tue, 02 Dec 2025 07:15:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1ZcmprM2lyNnVJSi1BYVpiSkh3TzA5ZjlaWWFYc1JJb05TZHFfTzUySnRDR1hJaVp2ZnJJU3poM19BaE0</guid></item><item><title>亚马逊云计算盛会开幕！CEO今晚登台 新AI模型和AI芯片即将亮相？ - 东方财富</title><link>https://wap.eastmoney.com/a/202512023580274063.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
-        
-        &lt;p class="related"&gt;
-
-        &lt;/p&gt;
-
-        
-
-        
-        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
-        &lt;p class="layer"&gt;&lt;/p&gt;
-        
-        
-        
-
-        
-
-        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 02 Dec 2025 06:32:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE01M0dKTERtQy1fcVVLNE1LZm1JQ3dZQXV2MmYzZTQ2MDc1UUtHWGVURjZQSUg5bW50RGdsTVo2TzJSZ1NLRkx3TWlzSmJsQWwwa0xMZmlmQnBmRGl2WDZXWA</guid></item><item><title>“友邦惊诧”遭遇中国速度-心智观察所-观察者网 - 观察者</title><link>https://www.guancha.cn/xinzhiguanchasuo/2025_12_02_799057.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	【文/观察者网专栏作者 心智观察所】
-&lt;/p&gt;
-&lt;p&gt;
-	11月14日，中国机器人公司优必选发布了一段视频：数百台Walker S2人形机器人在仓库中整齐列队，齐齐转头、挥动手臂，随后鱼贯进入集装箱。这段视频在社交媒体上引发轩然大波，但争议的焦点却出人意料——不是讨论技术水平，而是质疑视频的真实性。
-&lt;/p&gt;
-&lt;p&gt;
-	美国机器人公司Figure的创始人布雷特·阿德考克第一时间在社交媒体上发文，声称视频是电脑生成的CGI特效。这场争论本身，或许比视频内容更值得玩味：它揭示的不仅是技术认知的鸿沟，更是一场产业权力转移的前兆。
-&lt;/p&gt;
-&lt;p&gt;
-	阿德考克的质疑逻辑颇为有趣。他指着视频中机器人头部的灯光反射说：“前面的机器人是真的，后面的都是假的。如果你看到头部反射出天花板灯，那就说明是电脑生成的图像。”
-&lt;/p&gt;
-&lt;p&gt;
-	这番话立刻遭到了专业人士的反驳——恰恰相反，真实环境中的金属表面确实会反射环境光源，这正是物理世界的正常现象。优必选随后发布了一段FPV无人机一镜到底的原声视频作为回应，配文写道：“到底是不是AI生成？一镜到底原声原速大揭秘！”
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2025/12/02/20251202142317544.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	然而，正如香港《南华早报》所指出的，阿德考克并非孤例。这种“下意识的不相信”在西方科技界和军事界已经形成了某种模式。当中国航母福建舰首次展示电磁弹射系统时，美国军事专家同样提出了类似的质疑。《南华早报》一针见血地指出：基于过往经验的假设，似乎模糊了他们对中国当下工业现实的认知。
-&lt;/p&gt;
-&lt;p&gt;
-	这让人不禁想起鲁迅先生笔下那句著名的讽刺——友邦惊诧。只不过在今天的语境下，这种“惊诧”已经从政治领域延伸到了高科技产业。当中国企业展示出超越预期的技术能力时，部分西方观察者的第一反应不是承认现实，而是怀疑眼睛。这种认知惯性的背后，是对全球产业格局正在发生深刻变化这一事实的集体回避。
-&lt;/p&gt;
-&lt;p&gt;
-	要理解中国人形机器人产业为何能够实现超预期发展，首先需要理解这个产业的本质特征。人形机器人是一个高度复杂的系统工程，涉及机械结构、电机驱动、传感器、人工智能算法、电池能源等多个技术领域的深度融合。它不是单一技术的突破，而是整个工业体系综合能力的体现。正因如此，人形机器人的产业化进程，与一个国家的制造业底蕴密切相关。
-&lt;/p&gt;
-&lt;p&gt;
-	深圳南山区的“机器人谷”提供了一个绝佳的观察窗口。在这里，数百家机器人研发企业和零部件供应商聚集在方圆数公里的范围内，形成了一个完整的产业生态系统。当地流传着一句话，形象地描述了这种产业集聚的密度：“楼上楼下是上下游，产业园就是产业链。”这意味着，一家机器人企业可以在步行距离内找到几乎所有需要的零部件供应商，从精密电机到传感器，从碳纤维外壳到定制芯片。这种空间上的极度接近，大幅缩短了从设计到原型的周期，也让快速迭代成为可能。
-&lt;/p&gt;
-&lt;p&gt;
-	深圳某机器人联合创始人将这种高效归功于开源协作策略：“通过开源部署和训练代码，我们吸引全球开发者共同构建应用生态。”这种开放式创新模式，与中国完善的供应链体系形成了强大的协同效应。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;成本控制能力是中国人形机器人产业的另一张王牌。&lt;/strong&gt;2024年10月，北京松延动力推出了一款售价不足一万元人民币的人形机器人，目标客户群是业余爱好者和编程教育机构。值得注意的是，就在六个月前，这款看似平价的机器人刚刚在人形机器人半程马拉松比赛中获得亚军——这说明低价格并不意味着低性能。这种性价比革命的背后，是中国在电机、电池、传感器等核心零部件领域长期积累形成的规模效应和成本优势。
-&lt;/p&gt;
-&lt;p&gt;
-	政府层面的支持同样不可忽视。深圳市政府主动向机器人企业开放了巡检、消防等公共部门场景，为机器人提供真实的“工作岗位”。龙岗区人工智能署署长赵冰冰道出了其中的深意：“一些机器人公司在产品发布后很难找到可行的商业模式。商业机会只有在持续的实际应用中才能逐渐显现。”这种应用场景先行的策略，为机器人企业提供了宝贵的实战训练机会，也加速了技术的迭代完善。
-&lt;/p&gt;
-&lt;p&gt;
-	与中国人形机器人产业的蓬勃发展形成鲜明对比的，是西方同行们的艰难处境。波士顿动力的命运堪称这一困境的缩影。这家成立于1992年的公司，以其研发的Atlas人形机器人和Spot四足机器人闻名于世，其机器人展示的奔跑、跳跃、后空翻等动作一度惊艳全球。然而，在商业化道路上，波士顿动力却步履维艰。
-&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 02 Dec 2025 06:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE92b2hNWXRvZ19wWGs5eGNJc2d4M2tnNy00MXA1OFhXbFBNQTR4bDZpaHVGcEJPU0owWHJjNW02Q3ZzQXZXVnpUUzRQd29la2IxOEJtakJWbUpnUDFZcTZBaU9nX1RSUmhpbU92aGdZX08</guid></item><item><title>中国AI大战将在2026年“全面加剧”：“流量入口”成大厂“必争之地”，AI出海也将加速 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3760517</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 02 Dec 2025 06:28:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9pUklHclgya0Rzc3FBS1g5UHhGRFQwbXpVSngyYTRYRTc1ZVpLWHVSaV9IVm41NEJ2OXpycHlLZ3hIUTVuTnlRRDZGalV5X0hxZVBj</guid></item><item><title>不止 Sora2！拍我AI V5.5 更新：人人都能用 AI 视频当导演了 - 爱范儿</title><link>https://www.ifanr.com/1646930</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
-  
-&lt;p&gt;2025 年，AI 视频又把桌子掀了。手切金属、小猫做饭，甚至是那个火遍全网的「奥特曼宇宙」，对 AI 来说不过是几句 Prompt 的功夫。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646933" src="https://s3.ifanr.com/wp-content/uploads/2025/12/2025_1003_38fa6067j00t3jwpx00dmd200u000cmg00u000cm.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/2025_1003_38fa6067j00t3jwpx00dmd200u000cmg00u000cm.png!720 1080w, https://s3.ifanr.com/wp-content/uploads/2025/12/2025_1003_38fa6067j00t3jwpx00dmd200u000cmg00u000cm-360x151.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/2025_1003_38fa6067j00t3jwpx00dmd200u000cmg00u000cm-768x323.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/2025_1003_38fa6067j00t3jwpx00dmd200u000cmg00u000cm-1024x430.png 1024w" sizes="(max-width: 1080px) 100vw, 1080px"&gt;&lt;br&gt;
-但也别高兴得太早。&lt;/p&gt;
-&lt;p&gt;绝大多数 AI 视频工具，依然停留在「素材生成」阶段。它们能给你一段精美的画面，但这些画面是大多是破碎的、静音的、单一景别的。&lt;/p&gt;
-&lt;p&gt;如果你想搞点严肃创作，比如带分镜的故事片，你得不停地「抽卡」，祈祷 AI 能听懂什么是远景、什么是特写。&lt;/p&gt;
-&lt;p&gt;结果往往是，它一股脑塞给你一堆逻辑不通的废片。选完还得配音、剪辑、配乐…一串工作流下来，10秒视频能干两个星期。&lt;/p&gt;
-&lt;p&gt;AI 视频到底什么时候才有带演技的叙事能力能学会「讲故事」？&lt;/p&gt;
-&lt;p&gt;昨晚，拍我AI（PixVerse） V5.5 的更新给了给我带来了惊喜。时隔半年，这位「卷王」再次扔出重磅炸弹。如果说上一个版本是给你配了一个特效师，那么 V5.5 则是给你配备了一个懂视听语言的导演组。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646934" src="https://s3.ifanr.com/wp-content/uploads/2025/12/pv.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/pv.png!720 828w, https://s3.ifanr.com/wp-content/uploads/2025/12/pv-360x201.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/pv-768x429.png 768w" sizes="(max-width: 828px) 100vw, 828px"&gt;&lt;/p&gt;
-&lt;p&gt;V5.5 是国内目前唯一能够一键生成「分镜 +音频」，实现完整叙事的 AI 视频大模型。&lt;/p&gt;
-&lt;p&gt;它最大的突破在于：AI 视频开始具备「导演思维」。它不再只是生成会动的图片，而是开始理解镜头、声音与叙事之间的逻辑关系。&lt;/p&gt;
-&lt;p&gt;以前需要专业分镜师才能做到的事，现在的你，也能「从从容容游刃有余」。&lt;/p&gt;
-&lt;h3&gt;AI 视频终于拥有了「灵魂」&lt;/h3&gt;
-&lt;p&gt;影片的「故事感」从何而来？很大程度上，源于人物的对白、背景音乐的烘托，以及镜头切换带来的节奏感。&lt;/p&gt;
-&lt;p&gt;我们就从这两个维度，来狠狠考验一下拍我AI 的成色。&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MjM5MjAyNDUyMA==&amp;amp;tempkey=MTM1MF9BYTA2MFFRQWd6S2RQcWJWQzIwa2lnY293SFRSN29JTXltMkZfRDBzeHJzOUFJWlg0OGhkTVVuVU8tTDFvdTBwMW01R0ZueUh3SU04cmhzLWk3RFNwM0xwdzh4NVdOSzBPRTZwSjl3YzlWRmtGaGtZOGhsWURxVjFpYXZqcHQyTjVtRkc0dGwwUTJLcnNyQmk5Mjg4YXdhSFVjeV83MVRSNnRiTU5Bfn4%3D&amp;amp;chksm=bd5c12e98a2b9bff519898694eb902ec838e7754f6e726fcae24b84b72b72d7f26c16936bac7&amp;amp;token=1937548220&amp;amp;lang=zh_CN#rd"&gt;查看完整视频案例效果请跳转 APPSO 推文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;自带百万音效师&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;先从「配音师」这个角色开始，拍我 AI V5.5 支持多角色音画同步，看它水平怎么样。&lt;/p&gt;
-&lt;p&gt;首先我们来段沙滩广告。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646962" src="https://s3.ifanr.com/wp-content/uploads/2025/12/03.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/03.gif 624w, https://s3.ifanr.com/wp-content/uploads/2025/12/03-360x594.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/03-620x1024.gif 620w" sizes="(max-width: 624px) 100vw, 624px"&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;提示词：男人看向镜头，将啤酒举到镜头前，对着镜头倾斜瓶子，做干杯动作。背景音是动感的电子乐，有明显的鼓点，充满流行感。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;拍我 AI 做得干净利落。最让我起鸡皮疙瘩的是细节： 它完全听懂了场景，配上了十分适合夏日沙滩的感觉的音乐。&lt;/p&gt;
-&lt;p&gt;这种对环境音的理解，十分给力。&lt;/p&gt;
-&lt;p&gt;再来点环境不一样的，让一辆的士驶过城市街头。&lt;/p&gt;
-&lt;p&gt;拍我 AI 也是手拿把掐，镜头不仅跟随着汽车，还配上了街头嘈杂的汽车声，仿佛真的置身于人头攒动的纽约街头。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646963" src="https://s3.ifanr.com/wp-content/uploads/2025/12/04.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/04.gif 1204w, https://s3.ifanr.com/wp-content/uploads/2025/12/04-360x195.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/04-768x416.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/04-1024x555.gif 1024w" sizes="(max-width: 1204px) 100vw, 1204px"&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;提示词：出租车在城市街道里前行，渐渐消失在画面中。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;但这还只是开胃菜，我们继续上强度。&lt;/p&gt;
-&lt;p&gt;我先用拍我AI 内置的 Nano Banana Pro，生成了一张图片，然后再让拍我 AI 生成了一个「欢迎南方小土豆光临东北」的视频。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646937" src="https://s3.ifanr.com/wp-content/uploads/2025/12/pv1.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/pv1.jpeg!720 1536w, https://s3.ifanr.com/wp-content/uploads/2025/12/pv1-360x645.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/pv1-768x1376.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/pv1-572x1024.jpeg 572w" sizes="(max-width: 1536px) 100vw, 1536px"&gt;&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646967" src="https://s3.ifanr.com/wp-content/uploads/2025/12/08.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/08.gif 620w, https://s3.ifanr.com/wp-content/uploads/2025/12/08-360x595.gif 360w" sizes="(max-width: 620px) 100vw, 620px"&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;提示词：女人热情地说：「欢迎南方小土豆，来我的家乡！俺东北这里可想你啊！」&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;短短两句话，口型对上了，东北阿姨热情的劲儿都拿捏了，简直让人想要下了班就立刻买张机票去旅行。&lt;/p&gt;
-&lt;p&gt;再比如，下面这段帕丁顿熊的片段中，它精准地复刻了那标志性的英伦腔调。那种特有的顿挫节奏与绅士般的「老伦敦」口音，听起来不仅地道，而且非常有辨识度。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646965" src="https://s3.ifanr.com/wp-content/uploads/2025/12/06.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/06.gif 1372w, https://s3.ifanr.com/wp-content/uploads/2025/12/06-360x165.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/06-768x352.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/06-1024x469.gif 1024w" sizes="(max-width: 1372px) 100vw, 1372px"&gt;&lt;/p&gt;
-&lt;p&gt;而在处理小熊的剧情时，它更是展现出了对剧本的理解力。&lt;/p&gt;
-&lt;p&gt;当角色意识到自己身处巴黎铁塔，而对方在东京铁塔的乌龙瞬间，拍我AI 生成的语音准确传达出了那一刻的错愕与惊讶。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646964" src="https://s3.ifanr.com/wp-content/uploads/2025/12/05.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/05.gif 1372w, https://s3.ifanr.com/wp-content/uploads/2025/12/05-360x165.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/05-768x352.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/05-1024x469.gif 1024w" sizes="(max-width: 1372px) 100vw, 1372px"&gt;&lt;/p&gt;
-&lt;p&gt;这种对语气拿捏的细腻程度，让整个片段不再是简单的画面堆砌，而是有了真实的情绪流动。&lt;/p&gt;
-&lt;p&gt;它不仅仅是简单地识别了两个角色形象，更深刻地理解了角色背后的文化符号与剧情语境，从而为它们匹配了极具灵魂的声音演绎。&lt;/p&gt;
-&lt;p&gt;不难看出，拍我AI 音频生成功能，让视频工作流里的配乐和配音门槛大幅降低。只要在拍我AI 的视频生成的参数里，将「音频」的选项打开，接着只需要简单的一句话，就能帮你快速批量尝试，简单到一个人就能轻松做好。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;拿捏影视级的镜头&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;景别，是导演手中的刀，用来切割时空，引导情绪。&lt;/p&gt;
-&lt;p&gt;过去，用 AI 做分镜简直是「噩梦」：你得分别生成远景、近景，然后再自己去剪辑软件里拼。而在拍我AI V5.5 里，这种笨功夫成为了历史。&lt;/p&gt;
-&lt;p&gt;打开多镜头模式，告诉 AI 你要的画面的景别，并切换多机位，它就能直接生成一段有叙事节奏的成片。&lt;/p&gt;
-&lt;p&gt;比如那个火遍全网的「三宫格海边写真」，我们就能把它变成一段更加有趣的剧情短片：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646969" src="https://s3.ifanr.com/wp-content/uploads/2025/12/10.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/10.gif 696w, https://s3.ifanr.com/wp-content/uploads/2025/12/10-360x598.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/10-617x1024.gif 617w" sizes="(max-width: 696px) 100vw, 696px"&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;提示词：&lt;br&gt;
-镜头一：猫回头看着镜头。猫说：「山的那边是什么」。&lt;br&gt;
-镜头二：猫再次回头望向大海。镜头拉近猫，猫说：「你不用告诉我」。&lt;br&gt;
-镜头三：猫正脸部的特写镜头。猫说：「因为，我只想在你家里捣乱。」&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;整体成片的效果相当扎实。但真正让我惊叹的，是拍我AI 理解了台词背后的情感潜台词。在猫咪开口前的瞬间，极具灵性地加了一个推镜头的特写调度。这种看似简单的运镜处理，瞬间拉满了画面的叙事张力。&lt;/p&gt;
-&lt;p&gt;我们再来到东非大草原。我还用 Nano Banana Pro 生成了一个纪录片图片，一键视频生成了一段剧情短片：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646961" src="https://s3.ifanr.com/wp-content/uploads/2025/12/02.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/02.gif 1332w, https://s3.ifanr.com/wp-content/uploads/2025/12/02-360x198.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/02-768x423.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/02-1024x564.gif 1024w" sizes="(max-width: 1332px) 100vw, 1332px"&gt;&lt;/p&gt;
-&lt;p&gt;如果你觉得还要先学习写分镜太麻烦，没关系，拍我AI V5.5 的「脑补」能力同样惊人。 只给一句话，它也能给你惊喜。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646960" src="https://s3.ifanr.com/wp-content/uploads/2025/12/01.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/01.gif 1288w, https://s3.ifanr.com/wp-content/uploads/2025/12/01-360x191.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/01-768x407.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/01-1024x542.gif 1024w" sizes="(max-width: 1288px) 100vw, 1288px"&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;提示词：he woman watching her memory-lost mother at home, and sad. They hugged but her mother seemed not to remember her anymore.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;拍我AI V5.5 交出的答卷超出预期。不但给了我三个镜头，还自主构建了一段完整的叙事：从母女互动，到最后温情相拥的落点，剧情逻辑清晰感人。&lt;/p&gt;
-&lt;p&gt;可以看出，拍我AI V5.5 已经不再止步于单一画面推进，而是开始真正掌握了视听语言的语法。通过精准捕捉提示词中的场景氛围与情感基调，自主编排景别和镜头，为生成的影像注入了能够打动观众的内涵。&lt;/p&gt;
-&lt;p&gt;这种变化，让最终的成品摆脱了「动态图片」的单调标签，进化为一段真正具有叙事承载力的影像素材。&lt;/p&gt;
-&lt;h3&gt;一键直出广告大片，新的创作神器诞生&lt;/h3&gt;
-&lt;p&gt;刚才那些玩法可能还只是「整活」，为了验证它是否真的具备「生产力」，我们决定再上点难度。&lt;/p&gt;
-&lt;p&gt;直接甩给拍我AI V5.5一个完整的惊悚电影镜头脚本，看看它接不接得住。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646966" src="https://s3.ifanr.com/wp-content/uploads/2025/12/07.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/07.gif 1372w, https://s3.ifanr.com/wp-content/uploads/2025/12/07-360x165.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/07-768x352.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/07-1024x469.gif 1024w" sizes="(max-width: 1372px) 100vw, 1372px"&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;提示词：The video is shot using a fisheye lens, giving a distorted, wide-angle view of an urban street scene at night in front of a store with a sign reading “DELI • GROCERY • ATM” (English). The lighting is dim, with red neon reflecting off wet pavement. The musical sound is slow, ominous industrial bass with distant sirens. The camera focuses on a tall figure wearing a cracked, porcelain doll mask and a heavy trench coat, looming over the lens. Behind him, two figures in black hoodies stand motionless near the store entrance. The masked figure leans uncomfortably close to the fisheye lens, whispering hoarsely: “Midnight tick, the shadows don’t sleep. Price on the head, and the secrets we keep. You saw the sign, but you didn’t read the print. One wrong step, and you vanish in a tint.” The figure slowly raises a gloved hand to cover the camera lens as the screen fades to black.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;坦白说，最终呈现的成片质感大大超出了我的心理预期。&lt;/p&gt;
-&lt;p&gt;拍我AI V5.5 展现出的剪辑非常老练，它懂得如何在不同景别间流畅切换，避免了 AI 视频生成中常见的时空割裂感，让画面流转显得合乎逻辑。&lt;/p&gt;
-&lt;p&gt;当然，现阶段的 AI 还无法做到百分之百的完美。比如在处理最后那个极具张力的鱼眼镜头人物对白时，面部细节仍显露出些许破绽。但它在动态物理规律的遵循上守住了底线，整体瑕不掩瑜，成片的完成度和可用性依然处于高水准。&lt;/p&gt;
-&lt;p&gt;更令人惊喜的是声画配合。拍我AI V5.5 生成的人声不仅仅是念出台词，而是精准拿捏到了惊悚题材所需要的紧张氛围与压抑感，从音色质感到语速节奏，都与画面情绪实现了默契。&lt;/p&gt;
-&lt;p&gt;这种逻辑自洽、鲜有出戏感的表现，直接拓展了它的落地场景。对于电影导演而言，它完全可以作为高效的沟通工具，用来向编剧或摄影指导直观地阐述创意构思。&lt;/p&gt;
-&lt;p&gt;而对于广告人来说，它还是个创意利器。只需投喂一个完整的 Brief 和示意图，它就能迅速生成一支达到提案级别的汽车商业广告，效率惊人。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646968" src="https://s3.ifanr.com/wp-content/uploads/2025/12/09.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/09.gif 728w, https://s3.ifanr.com/wp-content/uploads/2025/12/09-360x652.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/09-566x1024.gif 566w" sizes="(max-width: 728px) 100vw, 728px"&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;提示词：黑暗的极简空间中，一束流动的光带扫过深灰色车身的腰线，展示出”液态金属”般的肌肉质感。紧接着，矩阵式LED大灯猛然亮起，光束直刺镜头，照亮空气中的微尘。音乐声是低沉的电流声逐渐增强，伴随一声类似心脏跳动的重低音。一个沉稳深沉的男声说：”觉醒。” 镜头切至下一场景： 城市夜景的高速跟拍镜头，车辆在充满了蓝紫色霓虹灯光的隧道中飞驰。流动的城市灯光在车窗和流线型车身上拉出长长的光带，强调极速下的动态模糊感。音效是尖锐且充满未来感的电机加速啸叫声，混合着破风声。男声说：”超越速度的边界。” 镜头切至下一场景： 航拍镜头展现广阔的沿海悬崖公路，正值日落时分（Magic Hour），金色的阳光洒满车身，与深邃的大海形成冷暖对比。车辆向着地平线驶去，留下优雅的背影。音乐转为宏大且激昂的电影氛围乐，带有史诗感。男声继续：”不仅是抵达前方，更是征服。” 镜头切至下一场景： 车辆静止在极简的黑色反光地面上，车头正视前方，背景是抽象的红色流光慢慢消散。镜头缓慢拉远，上方浮现银色金属质感字幕”APEX “。男声说：”Apex GT。” 音乐在最后一声强有力的重音后戛然而止。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;可以看到，这类成片的质感已经比较稳定。这充满速度与金属质感的车辆，让你几乎很难分辨这出自 AI 之手，还是某家专业广告公司的制作班底。&lt;/p&gt;
-&lt;p&gt;画面之间的衔接展现出了极高的成熟度，丝毫看不出拼接的痕迹。拍我AI V5.5 并非机械地堆砌素材，而是通过摇移等镜头、特写转向全景等画面语言，生成了一段有起伏、有张力的叙事段落。&lt;/p&gt;
-&lt;p&gt;配合引擎轰鸣与契合度极高的背景音乐，它成功摆脱了「AI 味」的廉价感，呈现出了可以融入到的工作流级别的影像水准。&lt;/p&gt;
-&lt;h3&gt;别当「工具人」了，去当真正的「导演」&lt;/h3&gt;
-&lt;p&gt;这次拍我AI （PixVerse) V5.5 的体验，让我产生了一个强烈的体感：AI 视频生成，正在经历一次关键的转折点。&lt;/p&gt;
-&lt;p&gt;过去使用 AI，像是在指挥一个听不懂人话的实习美工。你花着钱，还得在海量废片里大浪淘沙。那种频繁调整、试错、最后还得不到满意结果的挫败感，磨灭的不仅是时间，更是创作的热情。&lt;/p&gt;
-&lt;p&gt;拍我AI  V5.5 的出现，让我们看到了一丝曙光。&lt;/p&gt;
-&lt;p&gt;V5.5 底层模型基于自研多模态理解与生成技术，支持音频和视频同步生成，模型融合多镜头理解能力，智能生成匹配的分镜与多镜头，理解了视听逻辑。它不再是一个冷冰冰的素材库，而是一个开始懂剧本、懂叙事的「执行导演」。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646936" src="https://s3.ifanr.com/wp-content/uploads/2025/12/PV3.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/PV3.jpeg!720 1139w, https://s3.ifanr.com/wp-content/uploads/2025/12/PV3-360x198.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/PV3-768x423.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/PV3-1024x564.jpeg 1024w" sizes="(max-width: 1139px) 100vw, 1139px"&gt;&lt;/p&gt;
-&lt;p&gt;虽然它还远未完美，但 拍我AI V5.5 这次确实给 AI 带来了一种「叙事能力的觉醒」，开始抹平普通人与专业导演之间那道巨大的技术鸿沟。&lt;/p&gt;
-&lt;p&gt;往后，无论是个人整活，还是商业化的广告样片、影视预演（Pre-viz），效率都将迎来质变。&lt;/p&gt;
-&lt;p&gt;这意味着，我们即将告别 AI 「素材生成」时代，跨入真正的「内容生成」时代。&lt;/p&gt;
-&lt;p&gt;在这个新时代下做专业创作，你可以不再需要精通 PR 或 AE，也不需要昂贵的摄影器材。你只需要专注于最核心的东西——创意与表达。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1646935" src="https://s3.ifanr.com/wp-content/uploads/2025/12/PV5.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2025/12/PV5.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2025/12/PV5-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/PV5-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/PV5-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
-&lt;p&gt;把繁琐的执行交给 AI，把思考留给人。&lt;/p&gt;
-&lt;p&gt;我想，这就是 AI 技术进步最性感的意义。&lt;/p&gt;
-
-  &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Tue, 02 Dec 2025 06:14:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1aOE9aYnJPLUtTOWpoSzhLMkJtdFBKTmhFd0laSm0tRjVPR2hFYWdYQmlLZVd3angzalpPdmNoLVgxcWs</guid></item><item><title>前端没死，AI APP正在返祖 - 量子位</title><link>https://www.qbitai.com/2025/12/358085.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article"&gt;
-				     &lt;h1&gt;前端没死，AI APP正在返祖&lt;/h1&gt;
-    			   &lt;div class="article_info"&gt;
-             &lt;span class="author"&gt;&lt;img src="http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg" class="avatar avatar-200"&gt;&lt;em&gt;&lt;a href="https://www.qbitai.com/author/shisan" title="由十三发布" rel="author"&gt;十三&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;
-                          &lt;span class="date"&gt;2025-12-02&lt;/span&gt;
-             &lt;span class="time"&gt;13:51:55&lt;/span&gt;
-          &lt;span class="from"&gt;
-          来源：&lt;a href="http://www.qbitai.com" target="blank" rel="nofllow"&gt;量子位&lt;/a&gt;            &lt;/span&gt;&lt;/div&gt;
-                          
-                            			&lt;blockquote&gt;
-&lt;p data-track="89"&gt;金磊 发自 凹非寺&lt;/p&gt;
-&lt;p data-track="90"&gt;量子位 | 公众号 QbitAI&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p data-track="2"&gt;不用“噫吁嚱”——&lt;strong&gt;前端没被AI杀死，终端且得狂飙。&lt;/strong&gt;&lt;/p&gt;
-&lt;p data-track="3"&gt;在许多人高呼“AI正在颠覆一切”的当下，这样的一句判断，竟显得如此反直觉。&lt;/p&gt;
-&lt;p data-track="4"&gt;但别急，看完下面的一张图，或许就能让众多迷茫的前端程序员瞬间醍醐灌顶：&lt;/p&gt;
-
-&lt;p data-track="5"&gt;在这张图中，我们看到的是三个跨时代的手机：2000年的诺基亚3310、2007年的初代iPhone，以及今年的iPhone 17 Pro。&lt;/p&gt;
-&lt;p data-track="6"&gt;三者并排放在一起，一个非常直观的感受就是，电路板变得&lt;strong&gt;越来越复杂&lt;/strong&gt;；3310的主板，可能只是iPhone 17 Pro的一个小传感器。&lt;/p&gt;
-&lt;p data-track="7"&gt;很多人以为AI是对传统开发的降维打击、是一场彻底的革命，但当你拆开技术的“后盖”，盯着那些密密麻麻的线路时，你会发现，&lt;strong&gt;复杂度从未消失&lt;/strong&gt;，它只是换了一种形式存在——&lt;/p&gt;
-&lt;p data-track="8"&gt;从电路板的物理堆叠，迁移到了模型、接口、网络、算力共同构成的数字堆叠。&lt;/p&gt;
-&lt;p data-track="9"&gt;这就是&lt;strong&gt;蚂蚁集团&lt;/strong&gt;终端技术委员会负责人&lt;strong&gt;翁欣旦&lt;/strong&gt;在SEE Conf大会中抛出的观点。&lt;/p&gt;
-&lt;p data-track="10"&gt;更进一步的，他还给出了一个非常发人深省的结论：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p data-track="11"&gt;&lt;strong&gt;前端程序员的宿命从未改变，永远在对抗熵增（复杂系统）。&lt;/strong&gt;&lt;/p&gt;
-&lt;p data-track="12"&gt;&lt;strong&gt;但在AI时代，是时候要清算一下技术债了。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="pgc-img"&gt;
-&lt;p&gt;&lt;img class="syl-page-img" src="/wp-content/uploads/replace/eb79d29306507398d66a7052f2d974d1.jpeg" alt="前端没死，AI APP正在返祖" data-src="/wp-content/uploads/replace/eb79d29306507398d66a7052f2d974d1.jpeg"&gt;&lt;/p&gt;
-&lt;p class="pgc-img-caption"&gt;△蚂蚁集团终端技术委员会负责人，翁欣旦&lt;/p&gt;
-&lt;/div&gt;
-&lt;p data-track="15"&gt;一言蔽之，技术的浪潮更像是一个巨大的轮回，只是规模在放大，节奏在加快，体验在被不断刷新。&lt;/p&gt;
-&lt;h1 class="pgc-h-forward-slash" data-track="16"&gt;AI APP，其实在返祖&lt;/h1&gt;
-&lt;p data-track="17"&gt;我们不妨先从最为直观的终端前端的效果开始讲起。&lt;/p&gt;
-&lt;p data-track="18"&gt;例如打开现在最火的AI应用，无论是OpenAI的ChatGPT，还是蚂蚁发布的AQ、灵光，你都会产生一种强烈的既视感：&lt;/p&gt;
-&lt;p data-track="19"&gt;&lt;strong&gt;它们太简单了。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p data-track="20"&gt;一个输入框，一个对话流，一行行简洁排布的回答；没有复杂的导航、没有丰富的层级，也没有堆满屏幕的信息分发。&lt;/p&gt;
-&lt;p data-track="21"&gt;这个简洁的界面让人不禁回想起20年前的WAP网页，或者是那个功能单一、界面朴素的支付宝1.0时代。&lt;/p&gt;
-&lt;p data-track="22"&gt;这看似是一种倒退，毕竟移动互联网在经历了十几年雕花般的UI进化，把APP做得像精装修的豪宅之后，AI APP突然一夜回到毛坯房。&lt;/p&gt;
-&lt;p data-track="23"&gt;这背后是极简美学的回归吗？&lt;/p&gt;
-&lt;p data-track="24"&gt;在翁欣旦看来，我们正在经历两个技术上的轮回式的返祖。&lt;/p&gt;
-
-&lt;p data-track="25"&gt;首先是&lt;strong&gt;交互的轮回&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="26"&gt;计算机的发展史，可以说是一部从DOS（命令行界面）走向GUI（图形用户界面）的历史。&lt;/p&gt;
-&lt;p data-track="27"&gt;DOS时代的黑底白字，被Windows和Mac的窗口图标取代，因为点击比输入指令更符合直觉。&lt;/p&gt;
-&lt;p data-track="28"&gt;而现在的AI，似乎正试图把我们拉回CUI时代——用自然语言对话来解决一切。&lt;/p&gt;
-&lt;p data-track="29"&gt;但这真的高效吗？&lt;/p&gt;
-&lt;p data-track="30"&gt;翁欣旦在现场提出了一个非常务实的质疑：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p data-track="31"&gt;如果小手轻轻一点就能办妥的事，用户为什么要打开一个Agent，跟它絮絮叨叨讲上一分钟？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p data-track="32"&gt;Rabbit R1和AI Pin等纯AI硬件的翻车，已经给出了市场反馈。当用户必须对着一个没有屏幕或屏幕极小的设备说话，且无法通过视觉反馈确认操作状态时，沟通成本反而大幅上升。&lt;/p&gt;
-&lt;p data-track="33"&gt;单纯依赖CUI，在处理复杂任务时效率极低；交互的未来，注定不是CUI杀死GUI，而是两者的共生。&lt;/p&gt;
-&lt;p data-track="34"&gt;更明确一些来说，是让GUI负责高频、确定性的操作，CUI则是负责长尾、复杂的意图理解。&lt;/p&gt;
-&lt;p data-track="35"&gt;现在的AI APP界面之所以如此简陋，恰恰是因为这种“GUI+CUI”的深度融合范式尚未成熟，行业还在摸着石头过河。&lt;/p&gt;
-&lt;p data-track="36"&gt;其次是&lt;strong&gt;架构的轮回&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="37"&gt;在移动互联网爆发初期，API网关是一个里程碑式的存在，为了应对海量的APP请求，为了业务的灵活性，开发者们曾热衷于把接口做得很宽。&lt;/p&gt;
-&lt;p data-track="38"&gt;就像翁欣旦提到的那个血淋淋的例子：为了省事，很多核心业务逻辑被塞进了一个名为“extend_info”的字段里。&lt;/p&gt;
-
-&lt;p data-track="39"&gt;这种做法在当年是为了管好接口，给业务留足后路；但到了AI时代，这笔技术债开始爆雷了。&lt;/p&gt;
-&lt;p data-track="40"&gt;当我们试图让大模型去理解、去调用这些接口时，模型懵了：它读不懂那个黑盒一样的“extend_info”里到底藏了什么。&lt;/p&gt;
-&lt;p data-track="41"&gt;即便把几百行相关代码喂给模型，缺乏上下文的它依然无法理解其中的业务含义。&lt;/p&gt;
-&lt;p data-track="42"&gt;以前做API网关，是为了让以前的程序能跑通；现在做架构，是为了让大模型能看懂。&lt;/p&gt;
-&lt;p data-track="43"&gt;为了实现这一点，我们不得不重新定义接口，重新去把那些为了灵活性而牺牲的语义补回来。&lt;/p&gt;
-&lt;p data-track="44"&gt;这哪里是AI杀死了前端？这分明是AI逼着前端工程师把以前偷懒没做好的作业，重新做一遍。&lt;/p&gt;
-&lt;p data-track="45"&gt;AI原生应用看似全新，实则仍在解决&lt;strong&gt;老问题&lt;/strong&gt;：&lt;/p&gt;
-&lt;p data-track="46"&gt;如何在复杂性与可用性之间取得平衡，如何在开放与管控之间找到边界，如何在创新与工程之间保持节奏。&lt;/p&gt;
-&lt;h1 class="pgc-h-forward-slash" data-track="47"&gt;终端是不可被替代的&lt;/h1&gt;
-&lt;p data-track="48"&gt;除了软件形态的返祖，另一种流行的焦虑是&lt;strong&gt;云端万能论&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="49"&gt;因为有不少人会认为，既然大模型都在云端运行，终端是不是只需要做一个显示器就好了？&lt;/p&gt;
-&lt;p data-track="50"&gt;这种想法忽略了两个最硬核的物理限制：&lt;strong&gt;网络&lt;/strong&gt;和&lt;strong&gt;算力&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="51"&gt;想象这样一个场景：你正兴致勃勃地跟AI聊得火热，突然走进电梯，或者经过一个信号盲区，屏幕上的文字戛然而止，那个原本流畅吐字的Token流断了。&lt;/p&gt;
-&lt;p data-track="52"&gt;这一刻的体验是灾难性的。无论云端的模型有多智能，无论流式传输技术吹得有多神，在物理网络缺失的那一秒，一切归零。&lt;/p&gt;
-&lt;p data-track="53"&gt;这就是终端存在的意义。&lt;/p&gt;
-
-&lt;p data-track="54"&gt;对此，翁欣旦将网络和算力放到了一个更大的三维坐标系来分析。&lt;/p&gt;
-&lt;p data-track="55"&gt;在X轴的&lt;strong&gt;网络维度&lt;/strong&gt;看，通信技术的进步确实解放了交互模态：从GSM时代的纯文本WAP，到3G时代的图片，4G时代的视频，再到5G时代的3D和XR。&lt;/p&gt;
-&lt;p data-track="56"&gt;但物理世界的网络覆盖永远存在盲区，5G再快，也没法消灭信号死角。&lt;/p&gt;
-&lt;p data-track="57"&gt;从Y轴的&lt;strong&gt;算力维度&lt;/strong&gt;看，终端设备正在经历一场悄无声息的服务器化。&lt;/p&gt;
-&lt;p data-track="58"&gt;回看2007年的初代iPhone，412MHz的CPU，128MB的内存。&lt;/p&gt;
-&lt;p data-track="59"&gt;那时的开发者如果听说只有这点资源，恐怕连个像样的Demo都跑不起来。&lt;/p&gt;
-&lt;p data-track="60"&gt;而今天的iPhone 17 Pro，拥有4.29GHz的多核CPU和12GB内存，堪比一个随身携带的小型服务器了。&lt;/p&gt;
-&lt;p data-track="61"&gt;随着端侧算力的暴涨，未来的手机将成为一个&lt;strong&gt;边缘计算&lt;/strong&gt;（Edge Computing）的强力节点。&lt;/p&gt;
-&lt;p data-track="62"&gt;翁欣旦做了一个极具画面感的假设：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p data-track="63"&gt;如果我们在会场搞一个彩蛋，让现场几百人同时拿出手机，用AI功能生成一个特效。如果完全依赖云端推理，这一瞬间的并发请求，足以把后端的推理算力打爆。&lt;/p&gt;
-&lt;p data-track="64"&gt;如果连一个彩蛋特效都能把几百人的推理算力打爆，那云端永远无法承载亿级用户的实时AI互动。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p data-track="65"&gt;未来的AI体验，一定是&lt;strong&gt;“云侧训练 + 端侧推理”&lt;/strong&gt;的混合模式。&lt;/p&gt;
-&lt;p data-track="66"&gt;云端负责这一代模型的智力上限，而终端负责让这份智力随时随地、无延迟地服务于人。&lt;/p&gt;
-&lt;p data-track="67"&gt;在这个架构下，终端开发者的价值非但没有被稀释，反而因为要承载模型推理、保障隐私安全、处理极端场景而变得更加核心。&lt;/p&gt;
-&lt;h1 class="pgc-h-forward-slash" data-track="68"&gt;AI时代，更能体现程序员的价值&lt;/h1&gt;
-&lt;p data-track="69"&gt;最后，我们还需要讨论一个问题：&lt;/p&gt;
-&lt;p data-track="70"&gt;既然前端没死，终端依然重要，那程序员的焦虑到底来自哪里？&lt;/p&gt;
-&lt;p data-track="71"&gt;很多时候，焦虑或许源于对新技术的误解，我们往往高估了技术的短期爆发力，而低估了它的长期渗透力。&lt;/p&gt;
-&lt;p data-track="72"&gt;翁欣旦讲了一个关于&lt;strong&gt;多点触控&lt;/strong&gt;的故事。&lt;/p&gt;
-
-&lt;p data-track="73"&gt;当乔布斯在2007年的发布会上，用两根手指放大一张照片，全场惊呼“Apple invented Multi-touch”时，事实并非如此。&lt;/p&gt;
-&lt;p data-track="74"&gt;早在1970年代，多点触控的原型就已经在实验室里诞生；1999年，Fingerworks公司就开始将这项技术商业化。&lt;/p&gt;
-&lt;p data-track="75"&gt;苹果在2005年收购了这家公司，经过两年的打磨，才把它变成了iPhone上那个改变世界的交互。&lt;/p&gt;
-&lt;p data-track="76"&gt;从技术原型到产品爆发，中间隔了&lt;strong&gt;整整37年&lt;/strong&gt;。&lt;/p&gt;
-&lt;p data-track="77"&gt;AI亦是如此。&lt;/p&gt;
-&lt;p data-track="78"&gt;Transformer架构虽然是2017年才提出，但神经网络的理论基础早在1980年就已经成熟。&lt;/p&gt;
-&lt;p data-track="79"&gt;为什么当年没火？因为那是局域网时代，没有海量的数据去喂养它。是互联网这30年积累的浩如烟海的文本、图片、视频数据，才让Transformer在今天有了用武之地。&lt;/p&gt;
-
-&lt;p data-track="80"&gt;技术本身可能早已就位，缺的是应用体验的临门一脚，这正是前端和终端程序员的机会所在。&lt;/p&gt;
-&lt;p data-track="81"&gt;现在的AI技术，就像是一把刚刚铸好且性能强悍的锤子。但到底要钉什么钉子？钉多深？钉完之后是不是歪的？这需要人来把控。&lt;/p&gt;
-&lt;p data-track="82"&gt;用翁欣旦的话来说就是，&lt;strong&gt;应用是新技术的量尺，体验是C端应用的灵魂。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p data-track="83"&gt;大模型给出了概率性的预测，但用户需要的是确定性的服务：&lt;/p&gt;
-&lt;p data-track="84"&gt;大模型能生成一段代码，但它无法理解这段代码在复杂业务场景下的副作用；大模型能画出一张图，但它不知道这张图在弱网环境下该如何优雅地加载。&lt;/p&gt;
-&lt;p data-track="85"&gt;“不要因为AI来了，就急着丢掉手里的螺丝刀。”&lt;/p&gt;
-&lt;p data-track="86"&gt;那些看似枯燥的工程能力——&lt;/p&gt;
-&lt;p data-track="87"&gt;如何优化首屏加载时间，如何处理内存泄漏，如何在高并发下保证稳定性，如何在复杂的手机碎片化环境中保证UI一致性，这些对抗熵增的经验，才是AI无法替代的护城河。&lt;/p&gt;
-&lt;p data-track="88"&gt;一言蔽之，机器学不会的对体验的极致敏感度，正是优秀的前端工程师的价值所在。&lt;/p&gt;
-                
-                
-                &lt;p class="line_font"&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;版权所有，未经授权不得以任何形式转载及使用，违者必究。&lt;/em&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
-            &lt;/div&gt;
-     		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>量子位</author><pubDate>Tue, 02 Dec 2025 05:51:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTFBzMm41Tzl2WkZsYnpzTGFFMk1OWW4xcGhVOURiVGV1R1BpdzFScGdNbnlRLVJNZmRNV0NLM2xsV2xPeVM3UkJHSExrZ0FUZ0xnM0Rhaw</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Tue, 02 Dec 2025 07:15:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1ZcmprM2lyNnVJSi1BYVpiSkh3TzA5ZjlaWWFYc1JJb05TZHFfTzUySnRDR1hJaVp2ZnJJU3poM19BaE0</guid></item></channel></rss>
