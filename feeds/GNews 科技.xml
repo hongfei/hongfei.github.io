@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>北京第六家Apple官方零售店开业 老人掏出第一代iPhone合影打卡 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090956.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>谷歌憋了十年的大招 让英伟达好日子到头了？ - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090966.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;要说上个月谁是科技巨头里最大的赢家，世超提名谷歌应该没人有意见吧？&lt;/p&gt;
+&lt;p&gt;靠着性能炸裂的 Gemini 3，短短半个月，股价蹭蹭涨不说，还在竞技场内拳打 OpenAI，竞技场外脚踢英伟达。&lt;/p&gt;
+&lt;p&gt;回撤一点，问题不大&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/a83c0b66-8622-4c43-be86-b9ba6e2db7f9.png" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="288" src="//img1.mydrivers.com/img/20251206/Sa83c0b66-8622-4c43-be86-b9ba6e2db7f9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;至于卖铲子的老黄怎么也跟着躺枪，原因很简单，谷歌表示，Gemini 3 Pro 是在自研 TPU（Tensor Processing Unit）上训练的，至少在字面上，是没提英伟达一个字儿。&lt;/p&gt;
+&lt;p&gt;紧跟着，媒体和吃瓜群众开始纷纷猜测，说什么谷歌这回，可能真要终结 CUDA 护城河了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/5edb056a-2013-4866-87e5-dc2ca70637ef.png" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="320" src="//img1.mydrivers.com/img/20251206/S5edb056a-2013-4866-87e5-dc2ca70637ef.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 那么问题来了，看似让英伟达好日子到头的 TPU，到底是个啥？&lt;/p&gt;
+&lt;p&gt;从名字上也能看得出，它其实是一类芯片，和 GPU 是近亲，只不过做成了 AI 特供版。&lt;/p&gt;
+&lt;p&gt;虽然 TPU 最近才引起大伙儿的注意，但这是一个从 2015 年延续到现在的老项目。&lt;/p&gt;
+&lt;p&gt;第一代 TPU 长这样&lt;/p&gt;
+&lt;p&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="238" src="//img1.mydrivers.com/img/20251206/a649e403-f1f8-499e-832b-adf4071e073e.png" w="500"&gt;&lt;/p&gt;
+&lt;p&gt;那时候谷歌正经历技术转型的阵痛，想把传统的搜推算法全换成深度学习。结果他们发现，这 GPU 不止不够用，还巨耗电，根本用不起。&lt;/p&gt;
+&lt;p&gt;GPU 的问题，在于它太想全能了。为了什么都能干，不得不搞了一套硬盘、内存、显存、核心，层层叠叠的复杂架构。&lt;/p&gt;
+&lt;p&gt; 这带来一个大麻烦，在芯片的世界里，搬运数据的成本，远比计算本身高得多。数据从显存跑到核心，物理距离可能只有几厘米，电子却要翻山越岭。&lt;/p&gt;
+&lt;p&gt;GPU 工作方式&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/56e36dc0-9d64-4941-9892-5f6b3044984a.jpg" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="251" src="//img1.mydrivers.com/img/20251206/S56e36dc0-9d64-4941-9892-5f6b3044984a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;于是，电费大半没花在算数上，全花在送快递的路费上了。最后变成热量，还得拜托风扇吹一吹。&lt;/p&gt;
+&lt;p&gt;这在做图形渲染时没毛病，因为画面高度随机，要啥素材没法预料，只能回显存现取。&lt;/p&gt;
+&lt;p&gt; 但 AI 的矩阵运算，每个数怎么算，和谁算，算几次都是固定的。我明知道这个数算完了，一会儿还要接着用，GPU 硬是得把它存回去，等着别人再取进计算单元，这不纯纯浪费吗？&lt;/p&gt;
+&lt;p&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="372" src="//img1.mydrivers.com/img/20251206/a612cd8b-a1fb-47c4-bf67-7d983eca9c76.png" w="479"&gt;&lt;/p&gt;
+&lt;p&gt;所以，作为一个 AI 专属工具人，TPU 就这样出生了。它把 GPU 那些用不上的图形、控制流、调度模块等等拆的拆，压的压。&lt;/p&gt;
+&lt;p&gt;核心思路，是专门对 AI 最常用的矩阵乘法做优化，搞了一个叫 “ 脉动阵列 ” 的方法。&lt;/p&gt;
+&lt;p&gt;用上这一招，每个数据一旦开算，就会在密集排列的计算单元之间传递，没用完不许回存储单元。这样，就不需要频繁读写了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="220" src="//img1.mydrivers.com/img/20251206/cf386601-79b1-4b30-8a4a-91f5f46dfb0f.jpg" w="400"&gt;&lt;/p&gt;
+&lt;p&gt; 就这样，TPU 每个周期的计算操作次数达到了数十万量级，是 GPU 的近十倍。初代 TPU v1 能效比达到同时期 NVIDIA Tesla K80 的 30 倍，性价比极高。&lt;/p&gt;
+&lt;p&gt;当然，最开始谷歌也是边缘试探，没玩那么大。TPU 也还只搞推理，不会训练，功能单一，完全没法和 GPU 比。&lt;/p&gt;
+&lt;p&gt;从第二代起，谷歌才开始往内存上堆料，提升容量和数据传输速度，让 TPU 能一边计算，一边快速记录和修改海量的中间数据（比如梯度和权重），自此点亮了训练的技能树。&lt;/p&gt;
+&lt;p&gt;随着 TPUv3 规模增加，模型训练速度提升&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/eff9ca11-c180-4107-bbcc-9d06b31a1aa9.png" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="458" src="//img1.mydrivers.com/img/20251206/Seff9ca11-c180-4107-bbcc-9d06b31a1aa9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但这么多年以来，明明用 TPU 训练推理的成本更低，性能也和 GPU 不相上下，为啥巨头们还非得去抢英伟达的芯片呢？&lt;/p&gt;
+&lt;p&gt;事实上，真不是大伙儿不馋，而是谷歌坏，一直在硬控。所有的 TPU 只租不卖，绑定在谷歌云里。大公司不能把 TPU 搬回家，相当于把身家性命都交给谷歌云，心里总毛毛的。生怕英伟达没卡死的脖子，在谷歌这直接快进到掐断了。&lt;/p&gt;
+&lt;p&gt; 即使这样，苹果也没架住便宜大碗的诱惑，多多少少租了点儿。&lt;/p&gt;
+&lt;p&gt;而这回热度这么高，一方面是 Gemini 3 证明了 TPU 的成功，品质放心；另一方面，是因为第七代 TPU Ironwood，谷歌终于舍得卖了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/743babd1-39fc-429b-8dba-3732b44f8dbc.png" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="587" src="//img1.mydrivers.com/img/20251206/S743babd1-39fc-429b-8dba-3732b44f8dbc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;根据 The Information 的报道，Meta 已经在和谷歌洽谈数十亿美元的大合同，准备从 2027 年开始，在机房部署 TPU，还计划最早明年就要从谷歌那租用 TPU。&lt;/p&gt;
+&lt;p&gt;消息一出，谷歌股价立涨 2.1%，英伟达下跌 1.8%。&lt;/p&gt;
+&lt;p&gt;甚至有谷歌内部人士放话，我们这一波大开张，可能会抢走英伟达几十亿美元的大蛋糕，直接切掉他们 10% 的年收入哦。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="526" src="//img1.mydrivers.com/img/20251206/a24c7250-f86e-4cbe-aa96-32f3bbb3def4.png" w="539"&gt;&lt;/p&gt;
+&lt;p&gt;华尔街对 TPU 也是爱得不行，觉得这好东西钱途一片光明。就连负责设计制造的博通都沾了光，被上调了业绩预期。&lt;/p&gt;
+&lt;p&gt; 但是，要说 TPU 会取代 GPU，真不至于。&lt;/p&gt;
+&lt;p&gt;TPU 是一种 ASIC（Application-Specific Integrated Circuit），又名专用集成电路。人话来讲，TPU 除了擅长 AI 那几个矩阵计算，别的啥都不太行。&lt;/p&gt;
+&lt;p&gt;这是它的优点，也是它的痛点。&lt;/p&gt;
+&lt;p&gt;TPU 工作方式&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/971a6389-e834-4c94-aaaf-10ae5e55642f.jpg" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="249" src="//img1.mydrivers.com/img/20251206/S971a6389-e834-4c94-aaaf-10ae5e55642f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;赶上大模型当道的好时候，对矩阵计算的需求大得离谱，TPU 跟着一步登天。但要是以后有啥更火的 AI 技术路线，不搞现在这一套，TPU 分分钟失业。&lt;/p&gt;
+&lt;p&gt;而且 TPU 因为太专精，一旦在计算上没有性能优势，就彻底失去价值。四年前的 TPU v4，咱们已经很难见到它了。&lt;/p&gt;
+&lt;p&gt; 相比之下，GPU 就不一样了。以五年前诞生在大模型浪潮前的 3090 为例，它硬是靠着 24G 超大显存，和 CUDA 不抛弃不放弃的向下兼容生态，直到现在还是普通人玩 AI 的超值主力卡，跑个 Llama 8B 小模型不成问题。&lt;/p&gt;
+&lt;p&gt;退一步讲，就算 AI 这碗饭不香了，大不了回去接着伺候游戏玩家和设计师，照样活得滋润。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="270" src="//img1.mydrivers.com/img/20251206/ecde1b89-3726-4319-bd7e-28d7369afe39.jpg" w="480"&gt;&lt;/p&gt;
+&lt;p&gt;另外，CUDA 生态依然是英伟达最大的杀招。&lt;/p&gt;
+&lt;p&gt;这就好比你用惯了 iOS，虽然安卓也很好，但让你把存了十年的照片、习惯的操作手势、买的一堆 App 全都迁移过去，你大概率还是会选下次一定。&lt;/p&gt;
+&lt;p&gt;现在的 AI 开发者也是一样，大家的代码是基于 CUDA 写的，调用的库是英伟达优化的，甚至连报错怎么改都只会搜 CUDA 的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/3a290e40-4060-480c-b959-c02bee708778.png" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="343" src="//img1.mydrivers.com/img/20251206/S3a290e40-4060-480c-b959-c02bee708778.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 想转投 TPU？行啊，先把代码重构一遍，再适应新的开发环境。&lt;/p&gt;
+&lt;p&gt;即使强兼了 PyTorch，很多底层的优化、自定义算子，换到 TPU 上还是得重新调试。专门指定的 JAX 语言，也给人才招聘垫高了门槛。&lt;/p&gt;
+&lt;p&gt;对于大多数只想赶紧把模型跑起来的中小厂来说，与其费劲巴拉地去适配 TPU，甚至根本搞不到，直接买英伟达芯片，反而是最省事的选择。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251206/ceb440ce-a50e-409d-b080-62c2d4a4f3e8.png" target="_blank"&gt;&lt;img alt="谷歌憋了十年的大招 让英伟达好日子到头了？" h="147" src="//img1.mydrivers.com/img/20251206/Sceb440ce-a50e-409d-b080-62c2d4a4f3e8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不说别的，谷歌自己还在大量采购英伟达的 GPU，就算自己不用，谷歌云那么多客户还得用呢。&lt;/p&gt;
+&lt;p&gt; 所以，TPU 这波开卖，确实在大模型训练这一亩三分地上，用经济划算给英伟达上了一课。但也绝对没有被吹的，要抢 GPU 饭碗那么神。&lt;/p&gt;
+&lt;p&gt;未来的算力市场，更大概率是 TPU 占据头部大厂的专用需求，而 GPU 继续统治通用市场。&lt;/p&gt;
+&lt;p&gt;但只要巨头们竞争起来，就有可能把算力价格打下来，这怎么看，都是个好事啊。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 06 Dec 2025 08:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9LbzZjeWFpOTQ2WUFyWlBiYkdxUkFNVGNrX2s3SExTUGpFNkl3bmNJQ09pMEtEVmVlZWNxS0hNZ3dnVi1ubTdDOXdmNF80bDUzaFJZR3VxXzI</guid></item><item><title>中国是否曾夷平一座山 为数千公顷的太阳能电池板腾出空间？法媒质疑 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20251206-%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E6%9B%BE%E5%A4%B7%E5%B9%B3%E4%B8%80%E5%BA%A7%E5%B1%B1-%E4%B8%BA%E6%95%B0%E5%8D%83%E5%85%AC%E9%A1%B7%E7%9A%84%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0%E6%9D%BF%E8%85%BE%E5%87%BA%E7%A9%BA%E9%97%B4-%E6%B3%95%E5%AA%92%E8%B4%A8%E7%96%91</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
+                        “中国是否曾夷平一座山，为数千公顷的太阳能电池板腾出空间？”这一问题涉及到一大片墙，提及这片新的“长城”，人们未必会想到中国。这一大片墙与那座从山海关到嘉峪关的绵延2万公里的中国长城不同，而且距离遥远！这些图片是由无人机拍摄的，如今在社交网络上广泛流传，它们显示了在位于中国西南部的乌蒙山脉、云贵高原以及靠近北京的太行山脉，都安装了数千公顷的太阳能电池板。法国媒体近日纷纷关注中国存在的这种现象，并开门见山地质疑。          &lt;/p&gt;
+    
+    
+                        &lt;div class="t-content__dates t-content__dates--reading-time"&gt;
+                &lt;p class="m-pub-dates"&gt;&lt;span class="m-pub-dates__date"&gt;发表时间： &lt;time datetime="2025-12-06T08:38:57+00:00" pubdate="pubdate"&gt;06/12/2025 - 09:38&lt;/time&gt;&lt;/span&gt;&lt;span class="m-pub-dates__date"&gt;更改时间： &lt;time datetime="2025-12-06T09:11:25+00:00"&gt;06/12/2025 - 10:11&lt;/time&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class="a-reading-time"&gt;
+    &lt;span class="a-svg a-svg--picto-clock" title="浏览时间"&gt;&lt;/span&gt; 8 分钟    &lt;span class="u-sr-only"&gt;浏览时间&lt;/span&gt;
+&lt;/p&gt;
+            &lt;/div&gt;
+            
+    
+                                                                            
+                    &lt;div class="t-content__body u-clearfix"&gt;
+                                            
+                                                                &lt;p&gt;法国二十分钟媒体(&lt;strong class="BCX2 SCXW19733206 TextRun"&gt;20minutes)&lt;/strong&gt;提问：中国是否曾夷平一座山，为数千公顷太阳能电池板腾出空间？根据网络帖子标题，计划在这片山峦叠嶂的珊瑚礁上铺设4万英亩的太阳能电池板，覆盖面积超过1.6万公顷。网友们纷纷谴责此举将以牺牲当地的动植物为代价。就在同一篇文章的下方，一段同样令人印象深刻的视频展现了类似的景象。这一次，在中国东北部的太行山脉，光伏板绵延不绝，一眼望不到边。这些视频看起来完全不像真的，因为它们所展现的景象实在太不可思议了。以至于在评论区，不少人都在问：这是人工智能生成的景象图吗？ &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;虽然要明确这两个视频的来源以及所涉及的地点比较困难，第一个视频是几天前在中国的&lt;strong class="BCX2 SCXW19733206 TextRun"&gt;抖音&lt;/strong&gt; TikTok上发表的，之前首先是在一个美国社区网站公布的，所以这也显示了这两处是确实存在的。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;类似的视频此前已被多家法国及外国媒体播出。以视频方式出现的这两个帖子的地点的相片可在 Getty上上找到其他资料，这也确认了这些新景观的真实性。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;针对中国近来对于可再生能源方面的投资，特别是在太阳能方面的投资，这也就不足为奇了。北京在2000年代初就开始投资光伏产业，此后从未停止扩大生产规模。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;黑色硅矿床已逐渐侵占了该国的那些山区，首先是在在蒙古边境，靠近戈壁沙漠的附近，例如在贵州及云南省的乌蒙地带的山区，甚或在青海省海拔 3000 米的西藏高原上部署的黑色硅牌。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;《法国电视第二台 （ France 2）》11 月 5 日推出一特别报道节目，证实了在中国这些山区的最近安装太阳能板的真实情况。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;最近发回的报道是由法国电视台派驻在中国的记者在河北地区太行山拍摄的相片；那些倾斜的山顶有一部分覆盖着漆黑的光伏发电设备。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;&lt;strong class="BCX2 SCXW19733206 TextRun"&gt;在库布其沙漠中的一大片“太阳能”墙海&lt;/strong&gt; &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;据中国国家能源局统计，通过在其境内不断新安装架设的大片光伏发电站原野，到了2023年，中国的太阳能发电装机容量将增长55%。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;国家能源局统计2025年的最新报告指出，虽然2024年，全球光伏发电累计装机容量已超过2.2太瓦，其中仅中国就占了一半。这远远领先于欧盟，欧盟去年的发电量仅为 338 吉瓦。 &lt;/p&gt; &lt;p&gt;&lt;strong class="BCX2 SCXW186253815 TextRun"&gt;只有扩大增加太阳能电池板的数量，才成为可能达到中国所预定的产电量&lt;/strong&gt;。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;相关的最新建设是正在内蒙古库布其沙漠打造的“太阳能墙”，预计将于2030年投入使用。根据美国国家航空航天局（NASA）称，该太阳能墙可产生100吉瓦的太阳能，其目的在为整个北京供电力。 &lt;/p&gt; &lt;p class="Paragraph SCXW19733206 BCX2"&gt;全球能源转型竞赛并非没有带来一些后果：中国目前的电力存储能力不足以满足其生产需求。此外，由于需要砍伐森林来安装这些巨型太阳能电池板，在某些地区的生物多样性仍然面临很高的风险。&lt;/p&gt;
+                                                                
+    
+                &lt;/div&gt;
+            
+            
+                    
+                    
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sat, 06 Dec 2025 08:38:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiygNBVV95cUxOWjc1bzhvYS13bHRmak01OVgwcnl4eWhqT3VSa2ZWV0RWdmI4eDJxend0QlJ5cHBIdHR5U1VYWDk1ZzhYVF9sS1F4TjhldUFBbW8ycERRcDRCckZrN0plaEtCdzFkcWpLOHNhaFlzbkVKTzNYSmduTGVWQjhEZ2hFQVJmektDZGw5ZFl4bE9uMFZ2SERvLUYwVUVZTkJtWXdpelZzQXlaNmxrQlZLMnhMT1A4YjZ3ZUF6a0NfN1lNSGdGTnNkWDNrYVBJSHJZWmV5eTZuam03Rlk0dDc4T29XWlllc3RRLWhMX2dBZ2VJa09KQktqakhUZXVLSE5tVW1OaldwUE1SNnM5SHpXbExvOWdlcHE2aUQxTjNFSlRmNC1hYlJJZ2pvYnZ3cVlwTEQydU1RcWR5UFUxV1VXOEt2ZG96ME1SQ1FlOFFGdU9xUzc5WGdwTFhLQWg0M0cxeUdjS1BZMjNJR2FZU19Nem5YMGJZRmhudUEzLS14MzZLTlE4Qk53WjBtMjZmbU1aQU1wcjJqa1F3YzFDYnVKUVpTVFFOTEtEMVYxeW0xd1FkQjVFckUxM1E2SXpoYVZoTklHbnNmUURKMWFvUQ</guid></item><item><title>北京第六家Apple官方零售店开业 老人掏出第一代iPhone合影打卡 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090956.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;北京第六家Apple官方零售店开业 老人掏出第一代iPhone合影打卡&lt;/p&gt;
           
@@ -64,7 +155,24 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 06 Dec 2025 07:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5WWWZIcXI5Rkg4QlRwMDBBLVIwek5HWEgweHgtUGhSbWpQaUxZZ1F0NmtUMGF6VW5CU1FTQ3NtOW1DSWh5Mkd6S2htOUlYUG9ILVAwZUdScnE</guid></item><item><title>刚刚，英伟达CUDA迎来史上最大更新！ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3760843</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sat, 06 Dec 2025 06:38:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9BblpQVjY1OTJ2N0Y4YnplQVpCWTVOZHZDVmtmR0xlNHBCRWtIMmgwLVR3czRLOU42UGpPUHRRYnFxcnFCTkNZRzRmVXhJd3Uwdzdn</guid></item><item><title>歌手贾斯汀·比伯吐槽iPhone按钮设计不合理：气得想对苹果全体员工来‘裸绞锁喉’ - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090928.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 06 Dec 2025 07:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5WWWZIcXI5Rkg4QlRwMDBBLVIwek5HWEgweHgtUGhSbWpQaUxZZ1F0NmtUMGF6VW5CU1FTQ3NtOW1DSWh5Mkd6S2htOUlYUG9ILVAwZUdScnE</guid></item><item><title>刚刚，英伟达CUDA迎来史上最大更新！ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3760843</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sat, 06 Dec 2025 06:38:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9BblpQVjY1OTJ2N0Y4YnplQVpCWTVOZHZDVmtmR0xlNHBCRWtIMmgwLVR3czRLOU42UGpPUHRRYnFxcnFCTkNZRzRmVXhJd3Uwdzdn</guid></item><item><title>中方：贼喊捉贼、别有用心，坚决反对 - 观察者</title><link>https://www.guancha.cn/internation/2025_12_06_799575.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	微信公众号“中国驻加拿大使馆”12月6日消息，驻加拿大使馆发言人就加方炒作所谓“中国网络攻击”答记者问。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2025/12/06/20251206140314255.png"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	有记者问：日前，加拿大网络安全中心与美国网络安全与基础设施安全局和国家安全局联合发布分析报告称，中国政府支持的网络威胁行为者使用Brickstorm恶意软件入侵政府服务机构、设施以及信息技术行业组织系统。请问中方有何评论？
+&lt;/p&gt;
+&lt;p&gt;
+	驻加拿大使馆发言人：众所周知，美国才是名副其实的“黑客帝国”，是网路攻击的集大成者和全球网络安全的最大威胁。所谓分析报告对美国肆无忌惮的网络攻击行为视而不见，却对中国进行无端栽赃抹黑，纯属贼喊捉贼、别有用心，中方对此坚决反对。
+&lt;/p&gt;
+&lt;p&gt;
+	中国是网络攻击的主要受害国之一，一贯坚决反对并依法打击一切形式的网络攻击行为，坚定致力于维护网络安全。中方敦促加方立即停止随美起舞，停止把网络安全问题政治化、污名化，停止利用网络安全问题抹黑中国。
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Sat, 06 Dec 2025 06:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBWUHdWRFBKMTJqM19ZblVVNTdXaVFPVDJkbUxfX0Z1cWxXc29YUkJ3eWhEYVFWaHMzUjBsWE5lOWtOOEhINlRpSXZnQ1RBdWxCczVtQm1pS1FvZkxsLWkwVlk3QkZlWGJabGc</guid></item><item><title>歌手贾斯汀·比伯吐槽iPhone按钮设计不合理：气得想对苹果全体员工来‘裸绞锁喉’ - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090928.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;歌手贾斯汀·比伯吐槽iPhone按钮设计不合理：气得想对苹果全体员工来‘裸绞锁喉’&lt;/p&gt;
           
@@ -1215,194 +1323,4 @@
 &lt;p&gt;这意味着，在传统云计算之外，AI 推理和模型服务已经成为新的主战场。面对压力，阿里云已开始降价并组织专门团队应对，但行业人士认为“模型服务 + 高性价比”正成为新趋势，对以基础设施见长的传统云厂商形成结构性挑战。&lt;/p&gt; 
 &lt;p&gt;业内普遍认为，中国 AI 云市场正从“卖硬件、卖算力”向“卖模型、卖服务”加速转型，而字节跳动的快速崛起正在重新定义竞争格局。&lt;/p&gt;
                                                                                 &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Fri, 05 Dec 2025 11:29:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5UZUxaY3lZdlMzNmdxMVhFTlJSWlpnYzNYY2d2SFFrWG9Mc0luWjJGalBMakp3V0J2YVRqVmlUcGZVaV9ZaHU1QmhQWQ</guid></item><item><title>1099元起 分形工艺推出poch XL系列机箱：现代简约设计 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090871.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;1099元起 分形工艺推出poch XL系列机箱：现代简约设计&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-12-05 19:26:55  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1090871-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技12月5日消息，&lt;strong&gt;分形工艺推出新款Epoch XL系列机箱，设计简约，提供了黑白配色、有无侧透/RGB共有五种款式可选，售价&lt;span&gt;1099&lt;/span&gt;元起。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Epoch XL机箱整体尺寸为 503 x 240 x 509 mm（长x宽x高），具备出色的主板兼容性，&lt;strong&gt;支持从Mini-ITX、Micro-ATX 到标准ATX以及宽度最大275mm的E-ATX规格主板，同时也兼容采用背插式设计的Micro-ATX和ATX主板。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251205/13d36661c84a4d24b432e3f5e882c2b4.png" target="_blank"&gt;&lt;img alt="1099元起 分形工艺推出poch XL系列机箱：现代简约设计" h="530" src="//img1.mydrivers.com/img/20251205/s_13d36661c84a4d24b432e3f5e882c2b4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;机箱前置I/O面板配备了1个高速USB 3.2 Gen2x2 Type-C接口、2个USB 3.2 Gen1 Type-A接口，以及标准的音频输入/输出插孔，满足日常使用需求。&lt;/p&gt;
-&lt;p&gt;硬件支持能力上，Epoch XL提供了灵活的存储选项，&lt;strong&gt;包括2个3.5英寸硬盘位（可转换为2.5英寸使用）和额外的2个2.5英寸硬盘位。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251205/eae62e40b54b45fe834878100888820c.png" target="_blank"&gt;&lt;img alt="1099元起 分形工艺推出poch XL系列机箱：现代简约设计" h="526" src="//img1.mydrivers.com/img/20251205/s_eae62e40b54b45fe834878100888820c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;机箱拥有7个PCIe扩展槽位，为多显卡或其他扩展卡提供空间。内部空间规划上，CPU散热器的安装高度限制为176mm，显卡长度限制则根据前方安装情况有所不同：安装前置风扇时最长支持425mm，安装前置冷排时则支持最长 385mm 的显卡。&lt;/p&gt;
-&lt;p&gt;电源方面支持标准ATX规格，其长度限制取决于硬盘托架的使用数量：安装1组HDD托架时电源限长290mm，安装2组HDD托架时则限长175mm。机箱背部预留了37mm的理线空间，方便用户整理线材。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="1099元" goods_title="Fractal Design分形工艺FD机箱Epoch XL透气型中塔ATX风冷360水冷自带3支momentum14风扇散热425显卡电脑台式机 Epoch XL Black Solid" href="https://dt.mydrivers.com/mv.ashx?txt=r4X9b" img="https://img14.360buyimg.com/pop/jfs/t1/373689/40/822/37154/692fea81Fb206cc4d/208725ac7d7ad0fc.jpg" target="_blank"&gt;京东(1099元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251205/9ec8a622565648a494b546b46a20584d.png" target="_blank"&gt;&lt;img alt="1099元起 分形工艺推出poch XL系列机箱：现代简约设计" h="538" src="//img1.mydrivers.com/img/20251205/s_9ec8a622565648a494b546b46a20584d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251205/782576dee5a54d2eb89fa6fd1f347807.png" target="_blank"&gt;&lt;img alt="1099元起 分形工艺推出poch XL系列机箱：现代简约设计" h="427" src="//img1.mydrivers.com/img/20251205/s_782576dee5a54d2eb89fa6fd1f347807.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 05 Dec 2025 11:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE15Q0YwQXFiaDRhblZFTG5RdXhOLUE0em9rc1duR2xBRmpaT0JGdWF1Wnc1X2owZDZsZTFZTHdvR2o1VldVUHVySjFrek85M0I0eXp0S2ZhcmM</guid></item><item><title>国产通用GPU第一股来了！摩尔线程今日上市 469%开盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090865.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;国产通用 GPU 第一股，正式登陆！&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;摩尔线程&lt;/strong&gt;今日敲钟，开盘价约&lt;strong&gt;650 元&lt;/strong&gt;，较 114.28 元的发行价高出&lt;strong&gt;469%&lt;/strong&gt;，开盘市值&lt;strong&gt;超 3055 亿元&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;从今年 6 月 30 日 IPO 申请受理，到 9 月 26 日成功过会，摩尔线程仅用时&lt;strong&gt;88 天&lt;/strong&gt;，创科创板 IPO 最快过会纪录。&lt;/p&gt;
-&lt;p&gt;创始人兼 CEO 张建中在 GPU 这一行业已经深耕近二十年，创业前是英伟达中国总经理。在启动上市之前，摩尔线程已完成数轮融资，累计融资金额达数十亿元。&lt;/p&gt;
-&lt;p&gt;敲钟前，摩尔线程背后投资阵容豪华，已吸引了中国移动、深创投、上海国盛、中银国际、建银国际、招商局创投、中关村科学城、红杉资本等知名国资和风投机构站队。&lt;/p&gt;
-&lt;p&gt;" 国产 GPU 第一股 " 敲钟&lt;/p&gt;
-&lt;p&gt;刚刚，" 国产 GPU 第一股 " 摩尔线程登陆科创板，正式上市。&lt;/p&gt;
-&lt;p&gt;公司首次公开发行后总股本为 4.7 亿股，首次公开发行股票数量 7000 万股。&lt;/p&gt;
-&lt;p&gt;发行价为&lt;strong&gt;114.28 元 / 股&lt;/strong&gt;，募资总额 80 亿元，创今年&lt;strong&gt;A 股上市新股最高纪录&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;开盘价&lt;strong&gt;650 元&lt;/strong&gt;，较 114.28 元的发行价高出&lt;strong&gt;469%&lt;/strong&gt;，开盘市值&lt;strong&gt;超 3055 亿元&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/07070cd0-7235-42b5-b597-ea1d34aed281.jpg" target="_blank"&gt;&lt;img alt="国产通用GPU第一股来了！摩尔线程今日上市 469%开盘" h="298" src="//img1.mydrivers.com/img/20251205/S07070cd0-7235-42b5-b597-ea1d34aed281.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;招股书显示，公司此次计划募集的 80 亿元资金，主要将被用于研发。&lt;/p&gt;
-&lt;p&gt;其中 25.09 亿元用于摩尔线程新一代自主可控 AI 训推一体芯片研发项目，25.02 亿元用于摩尔线程新一代自主可控图形芯片研发项目，19.81 亿元用于摩尔线程新一代自主可控 AISoC 芯片研发项目。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/c18e2adb-0e5d-4387-a984-5eb49cd59325.jpg" target="_blank"&gt;&lt;img alt="国产通用GPU第一股来了！摩尔线程今日上市 469%开盘" h="348" src="//img1.mydrivers.com/img/20251205/Sc18e2adb-0e5d-4387-a984-5eb49cd59325.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今年前三季度，摩尔线程的营业收入为 7.8 亿元，同比暴涨 182%。&lt;/p&gt;
-&lt;p&gt;前三季度净亏损也收窄为 7.2 亿元，低于去年同期的 8.9 亿元。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/2f575ee9-d123-472d-bb94-0f6e512ad8d0.jpg" target="_blank"&gt;&lt;img alt="国产通用GPU第一股来了！摩尔线程今日上市 469%开盘" h="299" src="//img1.mydrivers.com/img/20251205/S2f575ee9-d123-472d-bb94-0f6e512ad8d0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;与营收规模爆发式增长同样显著的是公司收入结构的根本性转变——摩尔线程将其战略重心从早期的桌面级产品全面转向高性能、高毛利的 AI 智算领域。&lt;/p&gt;
-&lt;p&gt;2022 年，公司收入主要依赖桌面级图形加速产品，占收入的 71.44%；而到了 2024 年，AI 智算产品异军突起，贡献了 3.36 亿元收入，占年度总收入的 77.63%。&lt;/p&gt;
-&lt;p&gt;到今年上半年，AI 智算产品已成为绝对的收入支柱，收入占比飙升至 94.85%，达到 6.65 亿元。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/8597b8f9-3fbc-4e78-985e-62bf8eb861e2.jpg" target="_blank"&gt;&lt;img alt="国产通用GPU第一股来了！摩尔线程今日上市 469%开盘" h="822" src="//img1.mydrivers.com/img/20251205/S8597b8f9-3fbc-4e78-985e-62bf8eb861e2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;摩尔线程：" 中国版英伟达 "&lt;/p&gt;
-&lt;p&gt;摩尔线程成立于 2020 年 6 月，注册资本 3.3 亿元。实控人为&lt;strong&gt;张建中&lt;/strong&gt;，控制公司 44.07% 股份。&lt;/p&gt;
-&lt;p&gt;在创办摩尔线程之前，张建中曾任&lt;strong&gt;英伟达全球副总裁、中国区总经理&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;在英伟达任职超过 15 年，他成功建立了 GPU 在中国的完整生态系统，并将大中华区发展成为英伟达全球最重要的市场之一。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/aac0de73-7de9-4835-b239-cd51a100146a.jpg" target="_blank"&gt;&lt;img alt="国产通用GPU第一股来了！摩尔线程今日上市 469%开盘" h="349" src="//img1.mydrivers.com/img/20251205/Saac0de73-7de9-4835-b239-cd51a100146a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从 2020 年诞生以来，这家公司就颇受资本市场关注，实现过「百天长成独角兽」的战绩。去年 11 月正式启动上市进程时，企业估值达到了 255 亿元。&lt;/p&gt;
-&lt;p&gt;离开英伟达短短 19 个月后，张建中就率队交付一块国产全功能 GPU 苏堤，采用先进的 MUSA（MT Unified System Architecture）架构。&lt;/p&gt;
-&lt;p&gt;MUSA 是一个融合了 GPU 硬件和软件的全功能 GPU 计算加速统一系统架构 ，涵盖了统一的芯片架构、指令集、编程模型、软件运行库和驱动程序框架。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/7c9980c5-c4ae-429d-b980-b6102f8232b4.jpg" target="_blank"&gt;&lt;img alt="国产通用GPU第一股来了！摩尔线程今日上市 469%开盘" h="301" src="//img1.mydrivers.com/img/20251205/S7c9980c5-c4ae-429d-b980-b6102f8232b4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该架构的特点是 " 全功能 "，即在单一芯片中集成了 AI 计算加速、图形渲染、物理仿真和科学计算、超高清视频编解码等多种能力。&lt;/p&gt;
-&lt;p&gt;基于该架构，摩尔线程已成功推出四代 GPU 芯片，企业级和消费级均有涵盖，产品迭代迅速，另外还有相应的板卡 / 模组、一体机、集群设备等产品。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/ce610955-6a8b-4989-8a95-4d9b8790370b.jpg" target="_blank"&gt;&lt;img alt="国产通用GPU第一股来了！摩尔线程今日上市 469%开盘" h="437" src="//img1.mydrivers.com/img/20251205/Sce610955-6a8b-4989-8a95-4d9b8790370b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其他国产 GPU 上市进度&lt;/p&gt;
-&lt;p&gt;除了摩尔线程，多家国产 GPU 也正在进行 IPO 工作。&lt;/p&gt;
-&lt;p&gt;进度和摩尔线程最接近的是&lt;strong&gt;沐曦&lt;/strong&gt;，今日开启申购，本次发行股份数量为 4010 万股，占发行后总股本的比例为 10.02%，全部为公开发行新股，发行价格为 104.66 元 / 股。&lt;/p&gt;
-&lt;p&gt;另外，燧原科技、上海壁仞科技、上海 GPU 独角兽瀚博半导体，都已公布了上市进度。&lt;/p&gt;
-&lt;p&gt;国产芯片厂商扎堆 IPO，而现在已有玩家成功冲线了。&lt;/p&gt;
-&lt;p&gt;招股书传送门：&lt;/p&gt;
-&lt;p&gt;&lt;a class="f14_link" href="https://dataclouds.cninfo.com.cn/shgonggao/2025/2025-11-28/8154dc9dcb8011f086a1fa163e957f7a.pdf" target="_blank"&gt;https://dataclouds.cninfo.com.cn/shgonggao/2025/2025-11-28/8154dc9dcb8011f086a1fa163e957f7a.pdf&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 05 Dec 2025 11:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvUkQ0WUx4UldnVmZfcVUtRGhjV0dpc045MjRJTTlqUVpDTElZZzFxNlN3eTFpdG5WRFh5SnpwYXhuTmE5S0s4cXVCVXhRZ05mbzE3TldRWmk</guid></item><item><title>Rust 编写的开源操作系统Redox OS 成功移植Wayland - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/387994</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content"&gt;
-                                                                    
-                                                        &lt;p&gt;Rust 编写的开源操作系统 &lt;strong&gt;Redox OS&lt;/strong&gt; 近日迎来了一个&lt;a href="https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fwww.redox-os.org%2Fnews%2Fthis-month-251130%2F" target="_blank"&gt;重要进展&lt;/a&gt;：团队已成功将 &lt;strong&gt;Wayland&lt;/strong&gt; 移植到系统中，并让基础组件在 Redox 上顺利运行。&lt;/p&gt; 
-&lt;p&gt;根据最新进度，Redox 已能够运行：&lt;/p&gt; 
- 
-&lt;p&gt;Wayland 是现代 Linux/类 Unix 系统中常用的图形显示协议/服务器，相比老的 X11，有更现代、模块化、效率更高的设计。使用 Wayland 对 Redox 来说，是将其带 closer to 现代桌面/GUI 系统支持的重要一步。这意味着基于 GTK 的现代 GUI 应用，有望在 Redox 上获得初步支持。&lt;/p&gt; 
-&lt;p&gt;&lt;img alt="" src="https://oscimg.oschina.net/oscnet/up-bc64ba42273185f905d22d6bc09891d30b1.png"&gt;&lt;/p&gt; 
-&lt;p&gt;Redox 仍提供 X11 路线，团队已让 &lt;strong&gt;MATE 桌面环境&lt;/strong&gt; 在 X11 Session 下运行，为用户提供两种图形系统选择。&lt;/p&gt; 
-&lt;p&gt;不过，当前的 Wayland 合成器性能仍不理想，官方将其称为“尚不足以满足需求”，整体仍处于实验性阶段。但这一里程碑为 Redox 迈向现代桌面体验奠定了基础，也让这个 Rust 操作系统距离可用 GUI 生态更近一步。&lt;/p&gt;
-                                                                                &lt;/div&gt;
-                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Fri, 05 Dec 2025 10:58:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE1fU3N6cUZJSUhkQ3pqeFFiOElnN1ZwTTRpVjI1MDhfeEhoS25UWEJfTUF6VFhaMjUwRndlYldOSjVHZ1ZyWXNnNlN1dw</guid></item><item><title>微软全面开放Windows 11 25H2升级！所有受支持设备都能升 - 驱动之家</title><link>https://news.mydrivers.com/1/1090/1090861.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;微软全面开放Windows 11 25H2升级！所有受支持设备都能升&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-12-05 18:52:20  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1090861-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技12月5日消息，微软宣布，&lt;span&gt;&lt;strong&gt;已全面开放最Windows 11 25H2版本的升级通道，所有满足Windows 11系统要求的设备，无论是Windows 10还是Windows 11，都可以选择升级到这个最新版本。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;要获取该更新，用户需要在Windows Update设置页面中启用“尽快获取最新更新”的开关。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251205/1466e822-cc22-4e47-bf5c-225914e98446.png" target="_blank"&gt;&lt;img alt="微软全面开放Windows 11 25H2升级！所有受支持设备都能升" h="255" src="//img1.mydrivers.com/img/20251205/S1466e822-cc22-4e47-bf5c-225914e98446.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;随后只需前往“设置”&amp;gt;“Windows更新”，并选择“检查更新”，如果设备已准备就绪，用户将看到下载并安装Windows 11 25H2的选项。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;微软Windows 11 25H2的系统要求保持不变，部分新增的AI功能可能需要更强大的PC硬件支持。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;虽然微软全面开放升级，但仍存在一个需要注意的问题，微软最近承认，Windows 11 24H2和25H2存在主要的Shell用户界面问题，这可能导致开始菜单、任务栏和文件资源管理器等核心UI组件崩溃。&lt;/p&gt;
-&lt;p&gt;不过这一问题影响的主要是企业系统，个人家庭用户极少会受到影响。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251205/d1b7635652504847bf5c51e2096fb24c.png" target="_blank"&gt;&lt;img alt="微软全面开放Windows 11 25H2升级！所有受支持设备都能升" h="399" src="//img1.mydrivers.com/img/20251205/s_d1b7635652504847bf5c51e2096fb24c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 05 Dec 2025 10:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0zOTFVSXBSaFc3YlAzcWpEeWw4WERJMlQ4bGVzc0Q4SDVDMVd3NHJzNzR0TjZ2ZG14TjJreTVMWGpDOU01aF9pMkVuaDFzRHJrWnFKWmNwWVE</guid></item><item><title>高盛依然看好Snowflake：增速放缓不足为虑，核心指标健康，AI势头依然很猛 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3760798</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 05 Dec 2025 10:35:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9EbXZMWWw2bWE4YXFZT3dDanJzUkR1UXExWC1ENF9HYjk1UmpFakhqcU16SUM4S1Z5d0t3RXJWY0tkWXBwdE1zOHctXzQwQmo5a0VN</guid></item></channel></rss>
+                                                                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OSCHINA</author><pubDate>Fri, 05 Dec 2025 11:29:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5UZUxaY3lZdlMzNmdxMVhFTlJSWlpnYzNYY2d2SFFrWG9Mc0luWjJGalBMakp3V0J2YVRqVmlUcGZVaV9ZaHU1QmhQWQ</guid></item></channel></rss>
