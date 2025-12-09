@@ -1,5 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>从伤口边缘生态位适应性看金黄色葡萄球菌的生存策略及其对慢性糖尿病伤口治疗的启示 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251210052535483.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>社会隔离的动力学系统模型：从理论框架到计算模拟的突破性研究 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251210052407828.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;社会隔离的动力学系统模型：从理论框架到计算模拟的突破性研究&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;《NPP—Digital Psychiatry and Neuroscience》：Viewing social isolation as a complex dynamical system: A theoretical and computational framework&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年12月10日&lt;/i&gt;
+            &lt;i&gt;来源：NPP—Digital Psychiatry and Neuroscience&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对社会隔离的动态演化机制这一关键问题，提出了一个基于动力学系统理论的创新框架。研究人员通过建立随机微分方程模型，模拟了健康状态与隔离状态之间的转移动力学，并采用参数可识别性分析验证了模型可靠性。结果表明，内部控制变量（如社会动机）和外部控制变量（如社交网络密度）共同决定了系统的稳定性，为早期识别隔离风险提供了量化工具。该研究发表于《NPP—Digital Psychiatry and Neuroscience》，为精神健康领域的精准干预开辟了新途径。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;section&gt;在人类进化过程中，社会连接如同大脑的"硬件配置"般被深刻烙印。然而当这种连接断裂，社会隔离（social isolation）便成为潜伏的公共健康危机——它不仅与抑郁症、自杀行为等心理问题密切相关，更会诱发2型糖尿病、肺功能障碍等躯体疾病，每年造成超过1600亿美元的经济负担。令人警惕的是，最新研究表明社会隔离对健康的危害可能比主观孤独感更为致命：英国生物银行数据显示，社会隔离者患痴呆症的风险增加26%，且这种关联独立于心血管疾病、遗传等其他因素而存在。&lt;/section&gt;
+&lt;section&gt;然而现有研究大多将社会隔离视为静态终点，忽视了其随时间演化的动态特性。美国退伍军人事务部大洛杉矶医疗中心的Samuel J. Abplanalp团队在《NPP—Digital Psychiatry and Neuroscience》发表的研究，开创性地将社会隔离建模为复杂动力学系统（complex dynamical system），揭示了状态转移的潜在规律。&lt;/section&gt;
+&lt;section&gt;研究人员采用多阶段研究方法：首先构建包含潜在函数V(Z)=1/4 Z&lt;sup&gt;4&lt;/sup&gt;-1/2 a Z&lt;sup&gt;2&lt;/sup&gt;-b Z的随机微分方程（SDE）模型，其中Z&lt;sub&gt;t&lt;/sub&gt;表示潜在社交状态，a和b分别对应内部与外部控制变量；接着通过欧拉-马拉尤马算法进行数值模拟，展示四种典型系统状态（稳定隔离态、失稳态、临界点态、健康态）的演化轨迹；最后采用无迹卡尔曼滤波（UKF）与RTS平滑器进行参数可识别性分析，验证模型从密集纵向数据中恢复参数的能力。&lt;/section&gt;
+
+&lt;section&gt;通过模拟不同参数组合下的系统行为，研究揭示了社会隔离动力学的关键特征：&lt;/section&gt;
+
+&lt;section&gt;稳定隔离态对应深势阱景观，系统抵抗扰动能力强；失稳态则出现双势阱结构，临界点（临界点）开始显现。轨迹模拟显示，当系统处于临界点附近时，微小扰动即可引发状态跃迁，这解释了为何重大生活事件（如疫情隔离）可能触发社交状态的急剧变化。&lt;/section&gt;
+
+&lt;section&gt;通过模拟恢复分析发现，延长监测时间可显著提升参数估计精度：365天×5次/天的设计使参数b的均方根误差从0.46降至0.24，潜在轨迹Z&lt;sub&gt;t&lt;/sub&gt;的置信带明显收窄。这一结果为采用混合测量设计（如嵌入爆发式评估的生态瞬时评估EMA）提供了方法论依据。&lt;/section&gt;
+
+
+&lt;section&gt;研究提出采用统计过程控制（SPC）中的指数加权移动平均（EWMA）方法监测系统韧性变化。当社交行为指标持续超出基于基线计算的控制限时，可能预示系统正在失去韧性并接近临界点。这种个体化预警机制为精神疾病前驱期（如精神病前的社会退缩）的早期干预提供了时间窗口。&lt;/section&gt;
+
+&lt;section&gt;该研究的核心突破在于将抽象的社会隔离过程转化为可量化的动力学模型，揭示了内部变量（社会动机、认知偏差）与外部变量（社交网络密度）的非线性交互作用。通过参数可识别性分析，证实了模型在现实数据场景下的可行性，为开发基于被动传感（passive sensing）的个体化预警系统奠定了理论基础。未来研究可拓展至多主体建模（multiple-subjects design），探索抑郁程度等协变量对系统参数的调节效应，最终实现从"描述现象"到"预测转变"的范式革新。&lt;/section&gt;
+        &lt;/div&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 09 Dec 2025 23:09:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE9lUmFUR2J5Z2EwdW9MSGg0TURqRm8yTzhfaU0wRmVIbWNsUUZ5OXpTWEtnX1ZHSThfZ0s0WkFicFp5QTdyZW1yRVBpZHEwTFg1ZzZnNWw3VWFLUkVnN3lDOHU4aXl1VU5HWlJXOE5R</guid></item><item><title>自主跑轮运动通过增强纹状体多巴胺释放改善老年小鼠运动功能 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251210052403128.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;自主跑轮运动通过增强纹状体多巴胺释放改善老年小鼠运动功能&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;《npj Parkinson's Disease》：Voluntary exercise increases striatal dopamine release and improves motor performance in aging mice&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年12月10日&lt;/i&gt;
+            &lt;i&gt;来源：npj Parkinson's Disease 6.7&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本刊推荐：为探究有氧运动改善衰老相关运动功能衰退的机制，研究人员以12月龄老年小鼠为模型，开展了为期30天的自主跑轮运动干预研究。结果发现，运动可显著提升纹状体多个亚区（背外侧纹状体、伏隔核核心部与壳部）的电诱发多巴胺（DA）释放浓度，并改善小鼠的运动速度与协调性。该研究首次在老年两性小鼠中证实运动增强DA释放的效应独立于胆碱能调控，为运动干预帕金森病（PD）等运动障碍提供了新的神经机制见解。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;section&gt;随着全球人口老龄化加剧，与年龄相关的运动功能衰退已成为影响老年人生活质量的重要问题。这种衰退常伴随着大脑多巴胺（Dopamine, DA）系统功能的下降，而多巴胺正是调控运动、奖赏和认知功能的关键神经递质。在帕金森病（Parkinson's Disease, PD）中，黑质致密部（Substantia Nigra pars compacta, SNe）多巴胺能神经元的退变导致纹状体多巴胺严重耗竭，引发运动迟缓、震颤和姿势不稳等典型症状。有趣的是，即便是正常衰老，个体也可能出现类似但程度较轻的运动能力下降，这与纹状体多巴胺信号减弱密切相关。尽管左旋多巴（L-DOPA）等药物能缓解症状，但无法阻止疾病进展，且长期使用会引发运动并发症。因此，寻找能有效改善多巴胺功能、且无副作用的新策略至关重要。大量证据表明，有氧运动不仅能改善心血管健康，还对大脑功能有积极影响，甚至能在PD患者和动物模型中改善运动症状。然而，运动究竟如何影响衰老大脑中的多巴胺系统，其细胞和环路机制仍不明确。此前，研究团队曾在年轻雄性小鼠中发现，30天的自主跑轮运动能显著增强纹状体多巴胺释放，且该效应依赖于脑源性神经营养因子（Brain-Derived Neurotrophic Factor, BDNF）。那么，对于衰老的个体，运动是否还能产生类似的益处？这种益处是否在两性中都存在？其背后又涉及哪些分子机制？为了回答这些问题，由Guendalina Bastioli和Margaret E. Rice领衔的研究团队在《npj Parkinson's Disease》上发表了最新研究成果。&lt;/section&gt;
+&lt;section&gt;研究人员主要运用了以下几种关键技术方法：采用12月龄C57BL/6J雌雄小鼠，进行30天自主跑轮运动干预，并设置锁轮组作为对照；利用快扫描循环伏安法（Fast-Scan Cyclic Voltammetry, FSCV）在离体皮质纹状体脑片上检测背外侧纹状体（dorsolateral Striatum, dlStr）、伏隔核（Nucleus Accumbens, NAc）核心部及壳部电诱发多巴胺浓度（[DA]&lt;sub&gt;o&lt;/sub&gt;）；通过开放场地实验、垂直杆爬下测试、粘胶去除实验和抓力测试等系统评估运动行为；使用尼古丁乙酰胆碱受体（nAChR）拮抗剂二氢-β- erythroidine（DHβE）探究胆碱能系统在运动效应中的作用。&lt;/section&gt;
+
+&lt;section&gt;研究发现，在30天的自主跑轮期间，雌性小鼠的每日跑步距离显著高于雄性小鼠，但两性跑步者均表现出相似的纹状体多巴胺释放增强和运动行为改善。&lt;img src="&amp;lt;span&amp;gt;&amp;lt;span&amp;gt;https://hunyuan-plugin-1258344706.cos.ap-nanjing.myqcloud.com/pdf_youtu/img/01c6c5467c015d143bb80e3ab11de50d-image.png&amp;lt;/span&amp;gt;&amp;lt;svg&amp;gt;&amp;lt;path&amp;gt;&amp;lt;/path&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/span&amp;gt;" caption="Fig.1| Voluntary wheel running. A Timeline for wheel-running protocol. For each study,12 singly housed mice of a given sex were acclimated to a modified light-dark cycle for two weeks, then randomly assigned to cages with a freely rotating wheel(runners,n=6) or a locked wheel(controls,n=6).Behavioral testing was conducted on days 28 and 29, then on day 30, mice were removed for brain slice studies of evoked DA release using FSCV. Mouse image created in &amp;lt;span&amp;gt;&amp;lt;span&amp;gt;https://BioRender.com.B&amp;lt;/span&amp;gt;&amp;lt;svg&amp;gt;&amp;lt;path&amp;gt;&amp;lt;/path&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/span&amp;gt;Daily running patterns for each sex, with greatest activity in the dark phase for both sexes(shaded box). Females showed greater activity in revolutions per hour(revs/h)than males(***p&amp;lt;0.001;2-way ANOVA, Sidák" s post hoc test per sex total daily running patterns also showed that females greater&gt;&lt;/section&gt;
+&lt;section&gt;activity(revs/day) than males during the first 27 days that were uninterrupted by behavioral testing(&lt;strong&gt;&lt;em&gt;p&amp;lt;0.001;2-way ANOVA, Sidak's post hoc test, n= 6 runners per sex).D,F Change in body weight monitored weekly, with the first day of housing with a wheel taken as baseline(100%). No significant changes in weight were seen in or between any group(female or male runners and controls(n=6 per group; 2-way ANOVA, Dunnett's and Sidak's post hoc test). E, G Average food consumption for female and male cohorts assessed weekly(&lt;/em&gt;p&amp;lt;0.05,&lt;/strong&gt;p&amp;lt;0.001 female runners vs.female controls,*p&amp;lt;0.05 male runners vs. male controls,n=6 mice per group;2-way ANOVA, Sidak's post hoc test).'&amp;gt;&lt;/section&gt;
+
+&lt;section&gt;在老年雌性和雄性小鼠中，30天自主运动均显著提高了dlStr、NAc核心部和NAc壳部的电诱发[DA]&lt;sub&gt;o&lt;/sub&gt;，增幅与之前在年轻雄性小鼠中观察到的相当。这表明运动对多巴胺释放的增强作用在衰老个体中依然存在，且具有跨性别的一致性。&lt;/section&gt;
+
+&lt;section&gt;通过应用nAChR拮抗剂DHβE，研究发现运动增强的多巴胺释放效应在大多数脑区（除雌性NAc核心外）不依赖于胆碱能信号的调控。这表明运动对多巴胺能轴突释放功能产生了直接的、细胞自主性的增强效应。&lt;/section&gt;
+
+&lt;section&gt;行为学测试表明，运动组小鼠在开放场地中的移动总距离显著增加，在垂直杆测试中爬下时间显著缩短，表明其运动速度和协调性得到改善。然而，在衡量精细运动协调性的粘胶去除测试和抓力测试中，运动组与对照组无显著差异。这说明运动主要改善了与多巴胺相关的整体运动能力（如速度和协调性），而非肌肉力量或精细运动技能。&lt;/section&gt;
+&lt;section&gt;本研究得出结论，为期30天的自主跑轮运动能有效增强老年雌雄小鼠纹状体多巴胺的释放，并改善其运动速度和协调性。这种多巴胺释放的增强效应在很大程度上独立于胆碱能系统的调控，提示运动对多巴胺能轴突功能产生了直接的正向作用。该研究不仅将运动有益效应的机制从年轻个体拓展到衰老个体，并证实了两性均可受益，为理解运动改善衰老及相关神经退行性疾病（如帕金森病）运动症状的神经生物学基础提供了关键证据。运动诱导的内源性多巴胺释放增强，作为一种安全、非药物的干预方式，有望为延缓年龄相关性运动功能衰退和辅助治疗帕金森病提供新的思路和靶点。&lt;/section&gt;
+        &lt;/div&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 09 Dec 2025 22:50:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE0yUG80bElSSjhwLVQtaUkzaTM1c010aU5UY3Fxd2FzU3lpZVUwUFVqWDl1NzVjcjhlMEFuNnFabkhra1lkNVZUd1d0NnR2WkFJOVNGZVhqMU9JXzR1anA2ZkJQSXRFZ0E3aUFwVGpR</guid></item><item><title>功能性KCC2标记围产期皮层中进化保守的早熟中间神经元群 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251210052533103.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;功能性KCC2标记围产期皮层中进化保守的早熟中间神经元群&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;《Nature Communications》：Functional KCC2 expression marks an evolutionarily conserved population of early-maturing interneurons in the perinatal cortex&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年12月10日&lt;/i&gt;
+            &lt;i&gt;来源：Nature Communications 15.7&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对皮层中间神经元（INs）GABA能功能成熟轨迹不清的问题，通过高分辨率皮层发育图谱、单细胞RNA测序及电生理等技术，发现KCC2可作为标记物识别一群在围产期即表达KCC2、具备超极化GABAA反应、内在兴奋性及突触整合更成熟的早熟INs。该群INs主要位于第5层、表达SST，且在人类胚胎皮层中存在同源群体，揭示了GABA能功能成熟在INs亚群间的异质性，为理解皮层早期环路发育提供了新见解。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;section&gt;大脑皮层是一个复杂的网络，由兴奋性的谷氨酸能主神经元（PNs）和抑制性的GABA能中间神经元（INs）组成。在发育早期，GABA的作用经历了一个关键的转变：从去极化转变为超极化。这个转变主要由钾-氯共转运体KCC2的上调所驱动，它通过降低神经元内的氯离子浓度来实现。然而，这个“GABA能转换”的时间点在主神经元中已被广泛研究，通常发生在小鼠出生后第一周左右；但在中间神经元中，其发生的时间点和模式却一直是个未解之谜。理解不同神经元群体在发育过程中的异质性成熟轨迹，对于揭示早期神经环路的组装和功能至关重要。&lt;/section&gt;
+&lt;section&gt;为了解决这一关键问题，来自赫尔辛基大学等机构的研究团队在《Nature Communications》上发表了一项研究。他们发现，KCC2的表达可以作为一个可靠的标记，来识别一群在围产期（出生前后）就已经表现出超前成熟特征的中间神经元。这群“早熟”的中间神经元不仅在小鼠中存在，在人类胚胎大脑中也发现了其同源群体，表明这一发育机制在进化上是保守的。&lt;/section&gt;
+&lt;section&gt;为了开展这项研究，研究人员综合运用了多种技术手段。他们利用了公开的小鼠高分辨率皮层发育生物信息学图谱和人类胚胎大脑单核RNA测序（snRNA-seq）数据，来追踪KCC2（基因名Slc12a5）在不同发育阶段和不同神经元类型中的表达模式。在实验方面，他们使用了表达GAD2（谷氨酸脱羧酶2，是GABA能神经元的标志）的转基因报告小鼠。通过免疫组织化学和免疫电镜技术，在胚胎期18天（E18）和出生后（P0）的小鼠体感皮层中观察KCC2蛋白的表达和亚细胞定位。关键的 electrophysiology（电生理学）实验采用了gramicidin（革兰霉素）穿孔膜片钳技术，这种技术可以无损地测量GABA的反转电位（E&lt;sub&gt;GABA&lt;/sub&gt;），从而准确判断GABA的功能是去极化还是超极化。同时，研究人员还结合了全细胞膜片钳记录来研究神经元的固有电生理特性（如放电频率、动作电位特性），并通过生物胞素填充和三维形态重建分析了神经元的树突复杂性。此外，研究还结合了单细胞patch-transcriptomics（在膜片钳记录后抽取细胞内容物进行qPCR分析）和单细胞RNA测序（scRNA-seq）数据分析，将神经元的电生理表型与其基因表达谱联系起来，并进行了差异基因表达（DGE）和基因本体（GO）富集分析。人类数据分析则来源于已发表的孕17至41周的人类胚胎大脑snRNA-seq数据集。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;KCC2在胚胎期E18的中间神经元中的表达早于谷氨酸能神经元&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;研究人员首先通过免疫组化发现，在胚胎第18天（E18），KCC2蛋白已经在皮层板（CP）、底板（SP）和中间带（IZ）的GAD2阳性INs亚群中表达，而在GAD2阴性的主神经元中则检测不到。免疫电镜进一步显示，此时的KCC2主要位于胞体和树突的胞质内运输囊泡中，提示其正在向细胞膜运输。到出生时（P0），KCC2在体感皮层第5层的INs中表达强烈，但仍主要位于胞内，膜相关信号仅占7.5%。这些结果表明，INs中KCC2的表达在发育上早于PNs。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;围产期中间神经元中的功能性KCC2驱动GABA能信号极性的早期发育转变&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;那么，这些早期表达的KCC2是否具有功能呢？通过gramicidin穿孔膜片钳记录，研究人员发现，在出生时（P0-P2），第5层的GAD2阳性INs的GABA反转电位（E&lt;sub&gt;GABA&lt;/sub&gt;）显著比PNs更负，表明GABA在INs中已经是超极化作用。应用KCC2选择性拮抗剂VU0463271后，INs的E&lt;sub&gt;GABA&lt;/sub&gt;发生去极化，证实了其超极化的GABA反应是由KCC2依赖的氯离子外排所介导的，而PNs对拮抗剂不敏感。结合单细胞转录组数据，他们进一步确认，表达Kcc2的INs比不表达Kcc2的INs具有更负的E&lt;sub&gt;GABA&lt;/sub&gt;和更高的GABA驱动力。这表明，在围产期，一部分INs已经率先完成了GABA能功能的转换。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;早期表达KCC2的围产期中间神经元表现出早熟的内在特性&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;接下来，研究人员探索了这群KCC2阳性INs的其他电生理特性。电流钳记录显示，与KCC2阴性INs相比，KCC2阳性INs具有更高的放电频率、更小的动作电位（AP）半宽幅、更大的后超极化（AHP）振幅以及更低的输入电阻，这些都是神经元更加成熟的电生理标志。这些发现表明，KCC2阳性INs在内在兴奋性方面也更为早熟。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;早期表达KCC2的围产期中间神经元表现出显著成熟的树突形态&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;形态学分析进一步支持了电生理的结果。通过生物胞素填充和三维重建，研究发现KCC2阳性INs拥有更复杂的树突分枝、更多的交叉点以及更长的总树突长度。Scholl分析显示，KCC2阳性INs在各个距离上的树突交叉点数量都更多。它们的树突形态多样，包括多极形、局部树枝形和双簇形。树突总长度与最大放电频率呈正相关，进一步将形态成熟与功能成熟联系起来。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;早期Kcc2表达是围产期INs中成熟表型的可靠标志物&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;为了明确这群早熟INs的分子身份，研究人员进行了单细胞patch-transcriptomics分析。结果显示，在记录到的第5层GAD2阳性INs中，60%表达Kcc2。其中，表达生长抑素（SST）的INs是Kcc2阳性的最主要群体（72.7%的Kcc2阳性细胞同时表达SST）。神经肽Y（Npy）和钙结合蛋白1（Calb1）也是重要的共表达标记物。重要的是，在每个IN标记物（SST， Npy， Calb1）组内，Kcc2的表达都能区分出具有更高放电频率和更超极化GABA驱动力的亚群，凸显了Kcc2作为功能成熟标志物的可靠性。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;单细胞RNA测序和空间转录组分析揭示了出生时具有高水平Kcc2表达的离散中间神经元群体&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;对公共scRNA-seq数据集的分析确认，在出生时（P0），Kcc2在多个SST阳性INs亚型中高表达，包括未来的第5层T-Martinotti细胞、第2-5层扇形Martinotti细胞、SST阳性非Martinotti细胞以及支配第4层的SST细胞。对另一个scRNA-seq数据集（Di Bella等）的分析也表明，在E18和P1的INs中，Kcc2主要在一个富含SST表达的细胞簇（簇0）中表达。谱系追踪分析显示，大多数围产期Kcc2阳性INs表达MGE（内侧神经节隆起）来源的标记基因（如Lhx6， Nxph1），表明它们主要起源于MGE，是早期生成的INs。RNAscope原位杂交证实了Kcc2 mRNA主要在INs中表达，且在第5层密度最高，该层也是SST与Kcc2共定位比例最高的区域。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;早期Kcc2/Slc12a5表达的INs显示多种促进突触发生、突触信号和成熟的基因上调&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;差异基因表达（DGE）分析揭示，与Kcc2阴性INs相比，Kcc2阳性INs有385个基因显著上调，而只有2个基因（Sox4和Gm17750）下调。基因本体（GO）和突触基因本体（SynGO）富集分析表明，上调的基因显著富集在与突触信号传导、突触组织、神经元连接性以及细胞投射相关的生物学过程和细胞组分中。这从基因表达水平上解释了这群细胞为何具有更成熟的特性。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;早期表达KCC2的围产期中间神经元显示出明显更高的突触输入动态&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;与基因表达谱一致，电压钳记录发现，KCC2阳性INs的自发和微型兴奋性/抑制性突触后电流（sEPSC/sIPSC， mEPSC/mIPSC）的频率和振幅均显著高于KCC2阴性INs。这表明KCC2阳性INs接受了更多的突触输入，其突触连接性更强，在发育早期就已高度整合到局部环路中。&lt;/section&gt;
+&lt;section&gt;&lt;strong&gt;早期表达KCC2/SLC12A5的INs在人类胚胎大脑中被识别并显示类似的促进突触发生和成熟的基因上调&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;最后，研究团队将发现拓展到人类。通过分析人类胚胎大脑（孕17至38周）的snRNA-seq数据，他们发现了一个在孕中期（约20周后）开始表达KCC2的INs群体。与小鼠类似，这群人类KCC2阳性INs也高表达MGE标志物（如LHX6， NXPH1），并且一部分共表达SST。DGE分析显示，人类KCC2阳性INs同样有大量基因（492个）特异性上调，其中25个基因（如SDC3， TSPAN7， NPAS4）与小鼠中上调的基因重叠，这些基因参与突触形成、可塑性和神经递质释放。GO分析再次确认这些基因富集于突触功能和信号传导。同样，SOX4在人类KCC2阳性INs中也下调。这些发现强有力地证明了，表达KCC2的早熟INs群体在小鼠和人类之间是进化保守的。&lt;/section&gt;
+&lt;section&gt;综上所述，这项研究解决了一个发育神经生物学中的关键空白，首次明确证实了皮层中间神经元亚群在GABA能功能成熟上存在异质性。研究人员鉴定出一群在围产期就表达功能性KCC2的“早熟”中间神经元，它们主要起源于MGE，表达SST等标志物，并在电生理特性、树突形态、基因表达谱和突触连接性方面都表现出超前于其他神经元的成熟特征。更重要的是，在人类胚胎大脑中也发现了同源的细胞群体。这项工作确立了KCC2作为早期成熟中间神经元的可靠标志物。由于这群神经元在皮层环路发育早期就已高度整合，它们可能作为“枢纽”神经元，在感觉信息处理早期和神经元同步化活动的产生中扮演重要角色。该研究为理解正常皮层发育提供了新框架，其发现也可能为某些神经发育障碍（如癫痫、精神分裂症）中存在的早期连接异常提供新的病因学线索。未来，针对这群特定中间神经元的深入研究，将有助于揭示皮层网络组装的基本原理，并可能为相关疾病的诊断和治疗提供新的生物标志物和靶点。&lt;/section&gt;
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 09 Dec 2025 22:30:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE82cm80V3JJbzUwTXBzdmFnNFhnX2dlUW8ybGtuMG9wSmwycFlnVzhWNVZveUZ1NHU4TTVGdjEzMGVPb3ZpeTgzRkh0bUs3QmV3ZmlTdnRWSU10RWVTODR4S2kyNWJ4Ri1JbkdIcy1n</guid></item><item><title>从伤口边缘生态位适应性看金黄色葡萄球菌的生存策略及其对慢性糖尿病伤口治疗的启示 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251210052535483.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
 	&lt;div class="p1_b1Left fl"&gt;
     	&lt;p class="p1Title"&gt;从伤口边缘生态位适应性看金黄色葡萄球菌的生存策略及其对慢性糖尿病伤口治疗的启示&lt;/p&gt;
 		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
@@ -4633,115 +4975,4 @@ Available to Purchase&lt;/p&gt;
 
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 08 Dec 2025 23:44:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE5NS2pabFJCYjJaV21CM01lXzFlOHpmdFg4bVV4MDQzbVNEMEpkWXdHWnZlZkJ6bFh6eS14Ulk3QXdZLXRnS3Nscy1ZV2RyMzZnWHl1dDJSOGR6N0FUanFvRVp3SkVLR2ZZZzNYSmJ3</guid></item><item><title>短肠综合征临床前模型中肝损伤与自噬功能受损相关 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251209041543185.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;短肠综合征临床前模型中肝损伤与自噬功能受损相关&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
-		&lt;p class="p1EnTitle"&gt;《Scientific Reports》：Liver injury in a preclinical model of short bowel syndrome is associated with impaired autophagy&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年12月09日&lt;/i&gt;
-            &lt;i&gt;来源：Scientific Reports 3.9&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究针对短肠综合征（SBS）并发肠衰竭相关性肝病（IFALD）的机制，探讨了自噬在其中的作用。研究人员通过小鼠小肠大部切除术（SBR）模型，发现SBR小鼠出现显著肝损伤，并伴有自噬关键受体p62/SQSTM1的积累。进一步的自噬流定性分析和单核RNA测序揭示，肝损伤与自噬功能受损相关，其潜在机制可能与PI3K-Akt-ErbB信号通路汇聚激活mTORC1有关。该研究为理解IFALD的发病机制提供了新视角，并提示mTORC1可能成为潜在治疗靶点。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;p class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;section&gt;当人们因为克罗恩病、肠系膜血管栓塞或创伤等原因，不得不接受大面积的小肠切除手术后，一种名为短肠综合征（Short Bowel Syndrome, SBS）的严重状况便可能随之而来。患者赖以生存的营养吸收能力大打折扣，而更雪上加霜的是，一种被称为肠衰竭相关性肝病（Intestinal Failure-Associated Liver Disease, IFALD）的并发症常常如影随形。过去，IFALD常被归咎于长期肠外营养的支持治疗，但越来越多的证据表明，其病因远比想象中复杂，肠道本身的缺失、肠道菌群的紊乱、胆汁酸代谢的异常都可能参与其中。尽管科学家们已经知道肝脏会因此受损，出现内质网应激和线粒体功能障碍，但细胞内部一个至关重要的“清洁回收”系统——自噬（Autophagy），在IFALD中的作用却一直是个谜。自噬是细胞在应激状态下，通过形成自噬体将受损的细胞器、错误折叠的蛋白质等“垃圾”运送至溶酶体进行降解回收的过程，对维持细胞健康至关重要。那么，在短肠综合征引发的肝损伤中，自噬系统是过度劳累，还是功能不彰？这个问题成为了美国圣路易斯华盛顿大学Jun Guo和Brad W. Warner团队关注的焦点。他们的最新研究成果《Liver injury in a preclinical model of short bowel syndrome is associated with impaired autophagy》发表在《Scientific Reports》上，首次揭示了自噬功能受损是IFALD肝损伤的一个关键特征，并指出了其背后可能的分子开关。&lt;/section&gt;
-&lt;section&gt;为了回答这个问题，研究人员主要运用了几项关键技术：他们建立了成熟的小鼠75%近端小肠切除术（SBR）模型来模拟人类短肠综合征及相关的肝损伤；通过血清学检测、肝脏组织病理学评分（采用NASH临床研究网络NAS CRN系统）和分子生物学方法（如RT-qPCR、Western Blot）评估肝损伤和自噬相关标志物（如p62）的表达；利用腺病毒介导的GFP-LC3II感染原代肝细胞并进行饥饿诱导，通过共聚焦显微镜进行自噬流的定性分析；对肝脏组织进行单核RNA测序（snRNA-seq），结合生物信息学分析（如KEGG、GSEA）来探索不同细胞群体的转录组特征和潜在信号通路；并通过免疫组织化学（IHC）对关键蛋白（如p-S6）进行定位和半定量分析。&lt;/section&gt;
-
-&lt;section&gt;研究人员首先确认了SBR小鼠模型的可靠性。与假手术（Sham）对照组相比，SBR小鼠术后出现了特征性的体重下降，并在2-3周后达到最低点，随后在8周内缓慢恢复。身体成分分析显示，SBR小鼠体脂百分比降低，瘦体重增加。肠道方面，SBR小鼠表现出典型的适应性改变，即残留小肠的绒毛高度增加。更重要的是，SBR小鼠在术后2周和10周均表现出明显的肝损伤证据：血清转氨酶（AST、ALT）水平升高，肝脏组织学评分（NAS CRN评分）显示脂肪变性、小叶炎症和肝细胞气球样变等特征，天狼星红染色证实了10周时出现肝纤维化。此外，内质网应激标志物Ddit3和氧化应激标志物Nqo1的mRNA表达在SBR小鼠肝脏中也持续上调。这些结果证实，该模型成功模拟了SBS相关的肝损伤。&lt;/section&gt;
-
-&lt;section&gt;为了探究自噬的作用，研究人员检测了自噬受体p62（由Sqstm1基因编码）的表达。p62在自噬过程中负责将泛素化的货物招募到正在形成的自噬体膜上，其积累通常提示自噬流受阻。免疫组化、Western Blot和RT-qPCR结果一致表明，无论在雄性还是雌性SBR小鼠的肝脏中，p62的mRNA和蛋白水平在术后2周和10周均显著高于对照组。这一发现强烈提示SBR后肝脏的自噬功能可能受损。&lt;/section&gt;
-&lt;section&gt;&lt;strong&gt;单核RNA测序揭示SBR后肝细胞中mTORC1激活的潜在机制&lt;/strong&gt;&lt;/section&gt;
-&lt;section&gt;为了更深入地了解自噬受损的机制，研究人员对术后2周的雄性小鼠肝脏进行了单核RNA测序。分析结果揭示了一个在SBR肝脏中显著增多的肝细胞亚群（标记为簇5肝细胞）。引人注目的是，这个亚群的肝细胞表现出最高的p62（Sqstm1）基因表达。对簇5肝细胞的差异表达基因进行分析后发现，与假手术组相比，SBR组的该簇肝细胞在ErbB信号通路和PI3K-Akt通路相关的基因上显著富集。值得注意的是，这两条通路均可汇聚激活mTORC1（雷帕霉素机制靶标复合体1）。而mTORC1的激活是自噬起始的关键负调控因子。基因集富集分析（GSEA）进一步显示，这些肝细胞中与核糖体生物合成相关的基因集被激活，而肝脏代谢相关基因集被抑制，这间接支持了mTORC1可能被激活的假设，因为mTORC1正调控蛋白质翻译和核糖体生成。&lt;/section&gt;
-
-&lt;section&gt;基于生物信息学的发现，研究人员通过免疫组化检测了mTORC1活化的下游标志物——磷酸化核糖体蛋白S6（p-S6）的表达。结果显示，在术后2周和10周，无论是雄性还是雌性SBR小鼠的肝脏中，p-S6的阳性染色面积均显著高于对照组，这表明mTORC1信号通路在SBR后肝脏中被持续激活。&lt;/section&gt;
-
-&lt;section&gt;本研究首次在短肠综合征相关的肝损伤模型中系统地揭示了自噬功能受损的现象。通过p62积累这一替代标志物、直接的自噬流观察以及单核转录组学分析，研究人员提供了多重证据，表明自噬过程，特别是其诱导阶段，在SBR后肝脏中受到抑制。生物信息学分析和免疫组化验证共同将矛头指向了PI3K-Akt-mTORC1信号通路的激活，这可能是导致自噬抑制的关键上游事件。&lt;/section&gt;
-&lt;section&gt;其重要意义在于，它将短肠综合征后可能发生的多种病理生理改变（如脂质吸收改变、内毒素易位、内质网应激和氧化应激）与细胞内稳态的核心调控机制——自噬联系了起来。研究人员推测，肠道切除后，脂质代谢紊乱和肠道菌群产物可能通过门静脉系统直接冲击肝脏，导致脂毒性、内质网应激和线粒体损伤，这些应激原本应激活自噬进行修复，但mTORC1的异常激活可能“关闭”了自噬的启动开关，使得损伤累积，最终导致肝损伤。这一发现为IFALD的机制研究开辟了新的方向。尽管本研究存在自噬检测为定性、机制探索尚属间接关联等局限性，但它为后续研究，例如使用mTORC1抑制剂进行药理干预以恢复自噬并减轻肝损伤，提供了坚实的理论基础和令人信服的初步证据。未来，靶向自噬通路或许能成为预防和治疗IFALD的一种新策略。&lt;/section&gt;
-        &lt;/p&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 08 Dec 2025 22:43:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTFBUcGhVM1BJSzBmNXpCYi11aTBSY3BvQUp3eHZocFVkRC0tYTN6NzNyUE1uVjNnbHRENHhpSlFlNGE2b19ncDNMY25hY29zQ3Q0WkgyMEhWemhYaElzSDlsVVVzMDVKNFFhX2pCcFFR</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 08 Dec 2025 23:44:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE5NS2pabFJCYjJaV21CM01lXzFlOHpmdFg4bVV4MDQzbVNEMEpkWXdHWnZlZkJ6bFh6eS14Ulk3QXdZLXRnS3Nscy1ZV2RyMzZnWHl1dDJSOGR6N0FUanFvRVp3SkVLR2ZZZzNYSmJ3</guid></item></channel></rss>
