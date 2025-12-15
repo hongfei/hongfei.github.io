@@ -1,5 +1,458 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>呼吸衰竭有多凶险？一旦出现这几种呼吸变化，可能已在迅速恶化-yeeyi - yeeyi</title><link>https://www.yeeyi.com/news/details/2905728/</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="__next"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>yeeyi</author><pubDate>Sun, 14 Dec 2025 22:09:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE5ia0d1Y2phNlNuYkxacjlwRlg5WUNZYzB0SW5xQlkzdkIwaFozTjJHSEpCQy1GdmxkUUJsQmdZaWdpQzRYWURqSGVwS29BOGpNS2ZKZXFR</guid></item><item><title>人不会无故患甲流！专家发现：得甲流的人，多半离不开这8点 - 网易</title><link>https://www.163.com/dy/article/KGLIJVBN05569FBH.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="post_body"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于生物物理模拟的图像驱动空间组学分析框架SiDoLa-NS实现神经系统多尺度分割与图谱映射 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251215000707582.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;基于生物物理模拟的图像驱动空间组学分析框架SiDoLa-NS实现神经系统多尺度分割与图谱映射&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;《npj Systems Biology and Applications》：Biophysical simulation enables segmentation and nervous system atlas mapping for image first spatial omics&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年12月15日&lt;/i&gt;
+            &lt;i&gt;来源：npj Systems Biology and Applications 3.5&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对空间组学(SO)分析中组织分割依赖人工标注、跨尺度整合困难等挑战，开发了基于生物物理模拟的"模拟不标注"框架SiDoLa-NS。该技术通过生成合成训练数据，实现了小鼠大脑(mAP50=0.869)、脊髓(mAP50=0.96)和猪坐骨神经(mAP50=0.995)的多尺度自动分割，为神经系统研究提供了可扩展的拓扑分析方法。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;section&gt;在生物医学研究领域，空间组学(Spatial Omics, SO)技术的兴起带来了一场革命。这项技术能够同时获取组织切片中数千个基因的表达信息和空间位置，就像为生物学家提供了一幅详细的"分子地图"。然而，这幅地图的解读却面临巨大挑战——如何将分子数据与组织的复杂结构精确对应？特别是在大脑、脊髓等具有复杂管状结构的神经组织中，传统的图像分割方法往往力不从心。&lt;/section&gt;
+&lt;section&gt;当前的空间组学分析方法主要分为"自下而上"(bottom-up)和"自上而下"(top-down)两种策略。自下而上方法依赖于分子表达模式进行聚类分析，但难以准确对应到已知的解剖结构；而自上而下方法虽然能识别解剖区域，却严重依赖耗时费力的人工标注。更棘手的是，神经网络等先进方法需要大量标注数据训练，而人工标注不仅成本高昂，还容易引入主观偏差。这些问题严重限制了空间组学在神经科学等领域的广泛应用。&lt;/section&gt;
+&lt;section&gt;为解决这些挑战，由Lina Mohammed Ali、Aldrin Kay Yuen Yim、Emanuel Gerbi等研究人员组成的团队在《npj Systems Biology and Applications》上发表了他们的最新研究成果。他们开发了一种名为SiDoLa-NS(Simulate, Don't Label-Nervous System)的创新框架，通过生物物理模拟生成合成训练图像，完全摆脱了对人工标注的依赖。&lt;/section&gt;
+&lt;section&gt;研究团队采用了多项关键技术方法：利用Blender几何节点构建生物物理模拟管道，生成模拟不同尺度生物结构的合成图像；基于YOLO(You Only Look Once)框架开发实例分割卷积神经网络；使用艾伦脑图谱(Allen Brain Atlas)作为参考进行图谱映射；对小鼠脑、脊髓和猪坐骨神经等多组织多平台数据进行了系统性验证；整合空间转录组数据实现分子与形态学特征的关联分析。&lt;/section&gt;
+
+&lt;section&gt;研究人员首先展示了SiDoLa-NS在三个层次上的分析能力。在微观尺度，通过模拟不同细胞类型的核形态特征，训练出的SiDoLa-NS-Micro-CNS模型能够准确分割小鼠大脑切片中的细胞核，即使在细胞密度极高的区域也表现优异。在中观尺度，模型成功识别出大脑中的条纹状和层状结构，如海马齿状回和CA区。在宏观尺度，基于艾伦脑图谱训练的SiDoLa-NS-Macro-mCB模型能够精确划分大脑功能区，在验证集上达到了0.977的mAP&lt;sub&gt;50&lt;/sub&gt;值。&lt;/section&gt;
+
+&lt;section&gt;在脊髓分析中，SiDoLa-NS-Macro-mSC模型成功识别了超过20个脊髓功能区，包括各种板层和白质区域。研究人员通过胆碱乙酰转移酶(ChAT)阳性细胞的分布验证了模型的准确性——腹角中ChAT阳性细胞比例(21%)显著高于背角(&amp;lt;1%)，与已知生物学知识一致。模型对不同染色方法(如尼氏染色Nissl staining)和图像质量变化表现出强鲁棒性，即使在70%噪声混合情况下仍保持0.783以上的mAP&lt;sub&gt;50&lt;/sub&gt;。&lt;/section&gt;
+
+&lt;section&gt;在猪坐骨神经分析中，SiDoLa-NS-Micro-PNS模型能够区分髓鞘化轴突和施万细胞核，而SiDoLa-NS-Meso-pSN模型则可自动识别神经束膜。定量分析显示，猪坐骨神经束平均包含约100个轴突和70个细胞核，与人工标注结果高度一致。这种分析能力对于研究如化疗引起的周围神经病变(CIPN)等疾病具有重要意义，因为不同功能类型的神经束可能受到选择性影响。&lt;/section&gt;
+
+&lt;section&gt;通过将SiDoLa-NS与空间转录组数据结合，研究人员发现了多个脑区和脊髓区域的标志基因。例如，在大脑中，Tshz2在压后区域特异性表达，Neurod6在海马区富集；在脊髓中，ChAT在板层7-10高表达，与运动输出功能一致，而Spag16在中央管周围表达，与脑脊液流动调节相关。这些发现证明了SiDoLa-NS在关联组织结构与分子功能方面的强大能力。&lt;/section&gt;
+
+&lt;section&gt;研究人员还将SiDoLa-NS应用于阿尔茨海默病(Alzheimer's disease)模型大脑的分析。结果显示，在CRND8转基因小鼠中，基底外侧杏仁核、齿状回颗粒细胞层等区域出现了与野生型小鼠相反的年龄相关细胞数量变化趋势。同时，模型在老年阿尔茨海默病模型大脑中的区域识别置信度降低，可能反映了与神经退行性病变相关的组织形态学改变。&lt;/section&gt;
+&lt;section&gt;此外，研究还发现，仅基于图像特征（如尼氏染色纹理）就能区分不同的脊髓功能区，表明形态学特征本身就包含丰富的生物学信息。&lt;/section&gt;
+&lt;section&gt;研究表明，SiDoLa-NS框架通过"模拟不标注"的创新策略，成功解决了空间组学分析中的多个关键问题。与生成对抗网络(GAN)或扩散模型不同，该方法的训练数据完全基于生物物理原理模拟生成，避免了递归生成崩溃问题，同时保证了训练数据的无限性和标注准确性。&lt;/section&gt;
+&lt;section&gt;这种方法的最大优势在于其通用性和可扩展性。通过调整模拟参数，可以轻松适应不同物种、组织类型和成像平台。此外，与自下而上方法的互补使用，可以充分发挥两种策略的各自优势——自上而下方法提供解剖学背景，而自下而上方法揭示分子异质性。&lt;/section&gt;
+&lt;section&gt;值得注意的是，SiDoLa-NS并非旨在取代现有的细胞分割工具，而是提供了一个更加全面的多尺度分析框架。从单个细胞到整个器官尺度，该工具能够无缝整合不同层次的空间信息，为理解复杂生物系统的组织原理提供了新途径。&lt;/section&gt;
+&lt;section&gt;尽管SiDoLa-NS表现出色，研究人员也指出了进一步优化的方向。例如，探索不同的神经网络架构（如UNet与实例分割模型的组合）可能会提升性能；同时，如何更好地处理边界模糊的组织区域也是未来研究的重点。&lt;/section&gt;
+&lt;section&gt;总之，SiDoLa-NS代表了一种新的空间组学分析范式，通过将生物物理模拟与深度学习相结合，为研究神经系统及其他复杂组织的结构与功能关系提供了强大工具。随着空间组学技术的快速发展，这种可扩展、可解释的分析框架将在生物医学研究中发挥越来越重要的作用，特别是在精准医疗和疾病机制研究领域。&lt;/section&gt;
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE1scjBxRnQ5Sm02eC0taVNyYXBGOGZNelVzbnRBRnBYNU82RnYwcWczMlBqX2p2QXpLR1NhbExBWkNHTC1nZmlzanEwa1FuZjhmV3BRc3VfQzBuMjZaQmRlb1A4RkttQmZGblFiRjVB</guid></item><item><title>基于呼吸道流体动力学模型解析天花吸入式传播机制及其对猴痘传播的启示 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251215000716245.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;基于呼吸道流体动力学模型解析天花吸入式传播机制及其对猴痘传播的启示&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;《Scientific Reports》：Decoding the mechanophysiology for inhaled onset of smallpox with model-based implications for mpox spread&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年12月15日&lt;/i&gt;
+            &lt;i&gt;来源：Scientific Reports 3.9&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对正痘病毒（如天花病毒和猴痘病毒）通过吸入病毒气溶胶传播的机制尚不明确的问题，开发了一种经实验验证的生理流体动力学模型。通过高保真大涡模拟（LES）模拟了病毒颗粒在真实呼吸道解剖结构中的传输与沉积，并结合病毒载量（VL）和感染剂量（ID）等病毒学参数，量化了导致感染发作的关键暴露时长（Tc）。研究首次计算出天花（VARV）的Tc为1-19小时，与经典Wells-Riley模型预测吻合；并进一步将模型拓展至猴痘（MPXV），预测其Tc为24-40小时，揭示了猴痘在长时间密切接触下存在空气传播的潜在风险。该力学生理学框架为评估正痘病毒的空气传播风险及制定精准防控策略提供了新工具。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;section&gt;在人类与传染病的漫长斗争中，天花的根除是一项里程碑式的成就。然而，作为其“近亲”的猴痘病毒（MPXV）近年来却多次引发国际关注的公共卫生事件，提醒人们正痘病毒（Orthopoxvirus）的威胁并未远去。这类病毒一个关键的潜在传播途径是呼吸道吸入——当感染者咳嗽、说话时，会喷出携带病毒的飞沫和气溶胶，被附近的人吸入后，就可能引发感染。但一个核心的科学问题始终悬而未决：这些微小的病毒颗粒在吸入后，是如何在复杂曲折的呼吸道中“旅行”并最终找到“靶点”引发感染的？更重要的是，需要吸入多少病毒、暴露多长时间才会“中招”？对于已灭绝的天花，历史数据尚有迹可循；但对于正在流行的猴痘，其空气传播潜力究竟如何，我们却知之甚少。&lt;/section&gt;
+&lt;section&gt;为了解决这些难题，一篇发表在《Scientific Reports》上的研究论文《Decoding the mechanophysiology for inhaled onset of smallpox with model-based implications for mpox spread》为我们带来了突破。研究团队独辟蹊径，将工程领域的流体动力学与病毒学、免疫学相结合，构建了一个全新的“力学-生理学”模型，旨在从物理力学角度解码天花和猴痘的吸入式传播机制。&lt;/section&gt;
+&lt;section&gt;为了精准回答上述问题，研究人员主要采用了以下几项关键技术：首先，基于医学级计算机断层扫描（CT）影像数据，重建了两个具有代表性的、无疾病的成人上呼吸道三维解剖模型（AG1和AG2）。其次，利用计算流体动力学（CFD）中的高保真大涡模拟（Large Eddy Simulation, LES）技术，详细模拟了在不同呼吸流量（15 L/min和30 L/min）下，空气流场以及不同尺寸（0.1-50 μm）病毒颗粒在这些真实呼吸道模型中的运动轨迹和沉积规律。第三，通过3D打印技术制作了AG1模型的实体铸件，并利用咖啡因溶液雾化实验，对模拟得到的局部颗粒沉积分数进行了实验验证。最后，将模拟得到的颗粒沉积/穿透效率（η）与已知的感染者呼吸道分泌物中的病毒载量（V&lt;sub&gt;L&lt;/sub&gt;，单位pfu/mL）、感染剂量（I&lt;sub&gt;D&lt;/sub&gt;，单位pfu）以及个体免疫因素（通过病毒斑形成单位效力p来表征）相结合，建立数学模型，计算出了引发感染所需的关键暴露时长（τ&lt;sub&gt;c&lt;/sub&gt;）。&lt;/section&gt;
+
+
+&lt;section&gt;模拟结果表明，较小的吸入颗粒在到达呼吸道易感部位方面更具优势。对于直径d ? 9 μm的颗粒，其在上呼吸道易感部位直接沉积和穿透气管出口进入下呼吸道支气管易感区域的总效率（η&lt;sub&gt;k&lt;/sub&gt;）在所有测试的几何模型和呼吸流量组合下均超过30%。&lt;/section&gt;
+
+&lt;section&gt;&lt;strong&gt;2. 等级顺序检验评估流-几何耦合与传输趋势同质性&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;对两个几何模型（AG1和AG2）在不同呼吸流量下模拟得到的沉积分数进行等级相关性分析（斯皮尔曼和肯德尔检验），结果显示高度显著的相关性（p值远小于0.00001）。这表明，尽管个体呼吸道解剖结构存在差异，但病毒颗粒沉积效率随颗粒尺寸变化的趋势在不同个体间具有高度一致性和可预测性，为建立普适性模型奠定了基础。&lt;/section&gt;
+
+&lt;section&gt;通过整合流体动力学模拟数据（η）、吸入颗粒尺寸分布（N&lt;sub&gt;in&lt;/sub&gt;）、天花感染剂量（I&lt;sub&gt;D&lt;/sub&gt;= 10-100 pfu）以及从历史数据中获取的咽喉拭子病毒载量（V&lt;sub&gt;L&lt;/sub&gt;= 10&lt;sup&gt;2.952&lt;/sup&gt;pfu/mL），并考虑病毒斑形成单位（plaque-forming unit, pfu）的感染效力（p，假设在60%-100%之间），研究计算出导致天花感染发作的关键暴露时长τ&lt;sub&gt;c&lt;/sub&gt;大约在1.12至18.59小时之间。尤为引人注目的是，当p=63%时，τ&lt;sub&gt;c&lt;/sub&gt;为1.77至17.70小时，这与基于空间传播的经典Wells-Riley模型在感染概率为63%时预测的1.7至16.7小时惊人地一致，交叉验证了该力学模型的有效性。&lt;/section&gt;
+
+&lt;section&gt;&lt;strong&gt;4. 模型向同属病原体传播性的拓展：以猴痘病毒为例&lt;/strong&gt;&lt;/section&gt;
+&lt;section&gt;在成功验证模型对天花的预测能力后，研究团队将其应用于猴痘病毒。采用猴痘的感染剂量（I&lt;sub&gt;D&lt;/sub&gt;= 200 pfu）和基于唾液样本估算的病毒载量（V&lt;sub&gt;L&lt;/sub&gt;= 10&lt;sup&gt;2.92&lt;/sup&gt;pfu/mL），模型预测猴痘通过吸入途径引发感染的关键暴露时长τ?&lt;sub&gt;c&lt;/sub&gt;约为24至40小时。这个时间窗口虽然明显长于天花，但仍表明在长时间密切接触的场景下，猴痘存在经空气传播的可能性。敏感性分析进一步显示，如果病毒发生进化，导致呼吸道分泌物中的病毒载量升高（例如，log&lt;sub&gt;10&lt;/sub&gt;V&lt;sub&gt;L&lt;/sub&gt;增加0.5），τ?&lt;sub&gt;c&lt;/sub&gt;可缩短至约7.6小时，显著增加其空气传播风险。&lt;/section&gt;
+
+
+&lt;section&gt;通过3D打印的AG1气道铸件进行的物理实验（测量9.5 μm颗粒在声门区域的沉积分数）与相应条件下的计算机模拟结果进行了比较。实验测得的声门沉积分数（G&lt;sub&gt;E&lt;/sub&gt;）约为计算机模拟预测值（G&lt;sub&gt;C&lt;/sub&gt;）的80%，相对误差为20%。研究人员认为这一水平的吻合度是可以接受的，并将差异归因于实验过程中从铸件上取出声门插件时可能造成的沉积物损失。&lt;/section&gt;
+
+
+&lt;section&gt;这项研究成功地开发并验证了一个创新的力学-生理学框架，通过整合高保真计算流体动力学模拟、真实的呼吸道解剖结构和关键的病毒学参数，首次从物理力学角度精确量化了天花病毒通过吸入途径引发感染的关键暴露时长，其预测结果与历史流行病学数据高度吻合。更重要的是，该模型展现出强大的拓展能力，当其应用于猴痘病毒时，预测结果指出，尽管猴痘通过空气传播所需的暴露时间较长，但在特定条件下（如长时间密切接触或病毒进化导致呼吸道病毒载量升高）确实存在可能性。这为评估猴痘及其他正痘病毒的空气传播风险提供了重要的理论依据和量化工具。&lt;/section&gt;
+&lt;section&gt;研究的优势在于其跨学科的方法和基于历史数据（天花）的验证。然而，作者也坦诚地指出了当前模型的局限性，例如仅使用了两个静态的呼吸道几何模型，未考虑气道组织的动态顺应性、黏膜清除机制以及更精确的个体免疫差异等。此外，对于猴痘，其准确的呼吸道组织嗜性、不同病毒分支间的差异等关键数据仍有待充实，未来模型的精化有赖于更多临床和实验数据的支持。&lt;/section&gt;
+&lt;section&gt;尽管存在这些局限，该项研究的意义依然重大。它超越了传统的基于概率的传播模型，从微观的物理传输过程出发，为理解病毒空气传播的“黑箱”机制提供了崭新的视角。该框架不仅有助于在疫情初期快速评估新发呼吸道病原体的传播风险，指导精准的感染控制措施（如通风要求、个人防护建议），也为未来研究其他呼吸道传染病的传播机制树立了标杆。最终，这种力学与生物学深度融合的研究范式，有望为全球公共卫生防御体系增添一道坚实的科学屏障。&lt;/section&gt;
+        &lt;/div&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE8wd25UdFIxNHc0SndDUmxfRDdzc1ZxYlVqMUhwSS1VRDhXdXczLWFtd2lwLUZ2d21VYV8zVkd6NlQyV2Q2aWVFTU13cVppcVk3R1d0Z1E1TnVWRHRJS3YtZnJlT3BNRUN4V2M3Zi1R</guid></item><item><title>糖尿病状态、病程及发病年龄与肺癌风险之间的关联：来自中国卡多里生物银行研究的结果 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251215000140331.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;糖尿病状态、病程及发病年龄与肺癌风险之间的关联：来自中国卡多里生物银行研究的结果&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;《International Journal of Cancer》：Associations of diabetes status, duration, and onset age with the risk of lung cancer: Results from the China Kadoorie Biobank study&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年12月15日&lt;/i&gt;
+            &lt;i&gt;来源：International Journal of Cancer 4.7&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　糖尿病状态、病程及发病年龄与肺癌风险增加显著相关，早于40岁发病及≥15年病程者风险分别达2.81倍和2.06倍，该关联在低身体活动及超重人群中更突出。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;div&gt;&lt;div&gt;
+   &lt;section&gt;
+      &lt;h3&gt;摘要&lt;/h3&gt;
+      &lt;div&gt;
+         
+         &lt;p&gt;本研究在中国Kadoorie生物银行中探讨了糖尿病状态、病程长度以及发病年龄与肺癌风险之间的关联。我们对510,148名无癌症参与者进行了前瞻性分析，其中29,962名参与者在基线时患有糖尿病，我们对这些患者的糖尿病病程长度和发病年龄进行了进一步分析。使用Cox回归模型估算了多变量调整后的风险比（HR）和95%置信区间（CI），并通过似然比检验评估了不同亚组中的效应修饰情况。在平均9.17年的随访期间，共发生了5007例肺癌病例。与无糖尿病的参与者相比，糖尿病患者患肺癌的风险更高（HR = 1.15，95% CI：1.01–1.32）。发病年龄小于40岁的糖尿病患者患肺癌的风险是发病年龄大于或等于60岁组的2.81倍（95% CI：1.31–6.02）。糖尿病病程较长（≥15年 vs &amp;lt;1年）也与肺癌风险增加相关（HR = 2.06，95% CI：1.33–3.19）。在体力活动水平低于中位数的个体中，糖尿病状态与肺癌风险的关联更为显著；而在超重参与者中，糖尿病病程长度与肺癌风险的关联更为明显。总体而言，这些发现表明，糖尿病，尤其是早发和病程较长的糖尿病，会显著增加肺癌风险，这凸显了对高风险人群进行筛查和针对性管理的必要性。&lt;/p&gt;
+         &lt;/div&gt;
+   &lt;/section&gt;
+   &lt;section&gt;
+      &lt;h3&gt;新发现&lt;/h3&gt;
+      &lt;div&gt;
+         
+         &lt;p&gt;糖尿病被认为通过慢性代谢紊乱和高血糖促进癌症的发展。然而，对于肺癌而言，其具体影响仍存在争议。这项来自中国的全国性队列研究利用详细的基线和随访数据，评估了肺癌风险与糖尿病状态、病程长度及发病年龄之间的关联。研究结果表明，早发和长期糖尿病会显著增加肺癌风险。此外，糖尿病与肺癌的关联在缺乏运动或超重的个体中更为明显。这些结果强调了针对高风险人群实施糖尿病管理策略的重要性。&lt;/p&gt;&lt;figure&gt;
+            
+         &lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+         &lt;/div&gt;
+   &lt;/section&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE5sWVFETHExQWVfNVlRMkJ3X2hCTzlkVXp0MnNZMGd1RjBzLXM1VTZXNTVQYnhvdWFrS2hVa0lJZ3E2VjBvSEhMUFpBVEdIUHFFMldUbE1PQVFXaXp0RzhJVG0zcTlCQzk5Tm5JSFJB</guid></item><item><title>综述：应用于红外和拉曼光谱技术的化学计量方法在虫媒病毒诊断中的应用：一项系统评价与荟萃分析 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251215000154653.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
+	&lt;div class="p1_b1Left fl"&gt;
+    	&lt;p class="p1Title"&gt;综述：应用于红外和拉曼光谱技术的化学计量方法在虫媒病毒诊断中的应用：一项系统评价与荟萃分析&lt;/p&gt;
+		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
+		&lt;p class="p1EnTitle"&gt;&lt;/p&gt;
+        &lt;p class="p1Titles"&gt;
+            &lt;i&gt;
+            【字体：
+            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
+            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
+            】
+            &lt;/i&gt;
+            &lt;i&gt;时间：2025年12月15日&lt;/i&gt;
+            &lt;i&gt;来源：Analytical Science Advances 4.1&lt;/i&gt;
+        &lt;/p&gt;
+        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本文系统综述了ATR-FTIR和拉曼光谱结合AI在诊断登革热等虫媒病毒中的应用，结果显示该方法灵敏度和特异度分别达94%和97%，但存在样本量小、验证不足等问题，需进一步研究。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;p class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;br&gt;本文是一篇系统综述，旨在整合并评估近年的研究成果，探讨基于光谱学与人工智能技术（AI）的病毒性发热性疾病诊断方法。研究聚焦于登革热、寨卡病毒、基孔肯雅病毒和黄热病四种由蚊媒传播的疾病，这些疾病在临床表现上高度相似，给鉴别诊断带来挑战。传统实验室检测方法存在交叉反应、依赖专业设备等局限性，而新兴的光谱学技术结合AI算法展现出快速、低成本和高效的特点。&lt;br&gt;&lt;br&gt;### 关键发现与意义&lt;br&gt;1. **技术原理**  &lt;br&gt;   研究主要采用两种光谱技术：  &lt;br&gt;   - **ATR–FTIR**（衰减全反射傅里叶红外光谱）：通过检测样本中化学键的振动模式，分析蛋白质、核酸和脂质等生物分子的结构变化。  &lt;br&gt;   - **Raman光谱**（包括表面增强拉曼光谱SERS）：通过非弹性散射检测分子振动特征，特别适用于检测病毒蛋白或免疫反应相关的分子标记。  &lt;br&gt;   这两种技术无需复杂前处理，可直接分析血清、血浆等体液样本，适合临床快速筛查。&lt;br&gt;&lt;br&gt;2. **AI与化学计量学结合的优势**  &lt;br&gt;   - **数据处理能力**：AI算法（如主成分分析-线性判别分析PCA-LDA、偏最小二乘判别分析PLS-DA）能够从海量光谱数据中提取关键特征，降低维度并消除冗余信息。  &lt;br&gt;   - **诊断效能**：综合23项研究的结果，基于Raman光谱的模型灵敏度达94%，特异性达97%，基于ATR–FTIR的模型性能接近。AUC（受试者工作特征曲线下面积）均超过0.97，表明其分类能力优于传统方法。  &lt;br&gt;   - **适用性广**：技术可应用于多种样本类型（如血清、血浆、全血），且无需特定试剂，适合资源有限的地区。&lt;br&gt;&lt;br&gt;3. **方法学挑战与局限性**  &lt;br&gt;   - **样本偏差**：大部分研究来自单一地区（如巴基斯坦占65%），且病例多为登革热，其他病毒如寨卡和基孔肯雅的样本量较少，可能影响模型的泛化能力。  &lt;br&gt;   - **验证不足**：仅少数研究采用外部验证（独立样本测试），且验证集规模较小，存在过拟合风险。此外，约34.8%的研究未明确报告交叉验证方法，可能夸大模型性能。  &lt;br&gt;   - **临床转化障碍**：现有技术依赖实验室专业设备（如拉曼光谱仪），尚未实现便携化。成本效益、操作规范性和结果可重复性仍需优化。&lt;br&gt;&lt;br&gt;4. **创新方向**  &lt;br&gt;   - **多技术融合**：例如SERS结合ATR–FTIR可同时捕捉表面增强效应与红外特征，提升检测灵敏度。  &lt;br&gt;   - **深度学习探索**：已有研究尝试用卷积神经网络（CNN）处理高维光谱数据，但需更大样本支持。生成对抗网络（GAN）被用于合成缺失样本数据，缓解小样本问题。  &lt;br&gt;   - **标准化流程**：需建立统一的样本采集、预处理和光谱采集标准，并制定AI模型性能评估的通用框架（如PROBAST-AI工具的应用）。&lt;br&gt;&lt;br&gt;### 现实应用潜力&lt;br&gt;该技术路线对热带地区具有特殊价值：  &lt;br&gt;- **快速筛查**：在症状出现初期（如登革热前3天）即可通过血清样本检测，早于PCR方法。  &lt;br&gt;- **多病鉴别**：部分研究成功区分登革热与其他蚊媒疾病（如寨卡、基孔肯雅）及疟疾，减少误诊。  &lt;br&gt;- **成本优势**：ATR–FTIR设备成本低于质谱，Raman光谱的便携式设备已进入临床测试阶段。&lt;br&gt;&lt;br&gt;### 局限性与改进建议&lt;br&gt;1. **样本多样性不足**：需纳入不同地理、年龄、性别分布的样本，尤其是混合感染病例。  &lt;br&gt;2. **结果可解释性差**：AI模型常被视为“黑箱”，需结合化学计量学方法（如特征变量可视化）增强结果解释。  &lt;br&gt;3. **临床验证缺失**：仅少数研究通过多中心外部验证，未来需扩大试验规模并纳入真实世界数据。&lt;br&gt;&lt;br&gt;### 结论&lt;br&gt;光谱学与AI的结合为登革热等蚊媒疾病提供了高效、无创的检测方案，但其临床落地仍需解决标准化、设备便携化和大规模验证问题。后续研究应着重于多中心合作、模型可解释性提升及成本控制，以推动技术从实验室走向实际诊疗场景。
+        &lt;/p&gt;
+		
+        
+
+		&lt;p&gt;
+		&lt;/p&gt;
+
+        
+        
+        
+
+    &lt;/div&gt;
+
+    &lt;div class="p1_b1Right fr"&gt;
+    	&lt;div class="topdenglu"&gt;
+        	&lt;div class="leftdenglu"&gt;
+				&lt;div class="qr-content"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
+					&lt;span&gt;生物通微信公众号&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class="qr-content hidden"&gt;
+					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
+					&lt;span&gt;生物通新浪微博&lt;/span&gt;
+				&lt;/div&gt;
+            &lt;/div&gt;
+        	
+        &lt;/div&gt;
+    	
+        
+        
+        
+    &lt;/div&gt;
+
+	&lt;p class="p1_b1Left fl"&gt;
+		
+    &lt;/p&gt;
+
+    &lt;p class="clear"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="content bottomBox"&gt;
+	&lt;p class="bot_linkT"&gt;
+		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
+		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
+		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
+		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
+		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
+		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
+    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
+	&lt;p class="bot_linkB"&gt;
+		
+	&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE84aXFjNVd2Tk80SDhYVTQ0UmVhS1pjdFFJcVI2d0tfbndDd094eGZJWkZyM0pLaWFJMFNiR0NSbzVDcUptNWMyZE1zOHJhNnB0MzRMaHVpUk9xZ2hCaHdBM0lwWEZaYlBwWU1HQ3NR</guid></item><item><title>呼吸衰竭有多凶险？一旦出现这几种呼吸变化，可能已在迅速恶化-yeeyi - yeeyi</title><link>https://www.yeeyi.com/news/details/2905728/</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="__next"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>yeeyi</author><pubDate>Sun, 14 Dec 2025 22:09:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE5ia0d1Y2phNlNuYkxacjlwRlg5WUNZYzB0SW5xQlkzdkIwaFozTjJHSEpCQy1GdmxkUUJsQmdZaWdpQzRYWURqSGVwS29BOGpNS2ZKZXFR</guid></item><item><title>人不会无故患甲流！专家发现：得甲流的人，多半离不开这8点 - 网易</title><link>https://www.163.com/dy/article/KGLIJVBN05569FBH.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="post_body"&gt;
                     &lt;p class="f_center"&gt;&lt;img src="http://dingyue.ws.126.net/2025/1213/3137dc59g00t76wp400psd000nm006ym.gif"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GPG"&gt;那天夜里是零下四度，医院急诊室的门几乎没合上过风。凌晨两点，一个被儿子背进来的老太太，呼吸急促、脸通红、体温表爆了表。她一边咳，一边还在说“不用紧张，就是受了点凉”。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2F466a4de1j00t76wp30028d000u000k0m.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GPI"&gt;查血氧、拍胸片、快速流感抗原，一串操作做下来，确诊：甲型流感合并病毒性肺炎。她儿子站在抢救室门口，脸冻得发紫，反复说：“妈平时身体可结实了，怎么就突然这样了？”我没法安慰他，只能轻声说：“她不是突然，是身体早就发出信号了，只是没人听懂。”&lt;/p&gt;&lt;p id="45KR4GPJ"&gt;&lt;strong&gt;很多人以为甲流是“风一吹就感冒”的事，其实它更像是身体在一次次被忽视后的小报复。&lt;/strong&gt;城市冬天的毛病，是太安逸了。老家那边山里冷得透骨，但人起得早、动得多、吃得简单。到了城市，暖气让人赖床，外卖让人吃得油腻，习惯让人不再警觉。&lt;/p&gt;&lt;p id="45KR4GPK"&gt;有些人说：“我这几天没出门，怎么还感冒了？”其实很多冬季的病，不是“冷出来”的，是“闷出来”的。&lt;strong&gt;舒服的生活方式，往往没那么安全。&lt;/strong&gt;&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2Fdfcff357j00t76wp30035d000u000jwm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GPM"&gt;在我接诊中，甲流不是“突然袭击”，而是“长期放纵”后的集中爆发。看似八竿子打不着的生活习惯，正在悄悄地，把大伙儿推进发烧、咳嗽、呼吸困难的病房。&lt;/p&gt;&lt;p id="45KR4GPN"&gt;她坐在沙发上刷手机，一坐就是三个小时，连水都懒得倒。这是上个月的门诊病人，32岁，设计公司上班。她来的时候已经高烧两天，咽痛得说不出话。CT报告上写着：“&lt;strong&gt;双肺纹理增粗，考虑病毒性肺炎。”甲流阳性。&lt;/strong&gt;&lt;/p&gt;&lt;p id="45KR4GPO"&gt;她说：“我没出门呀，怎么也中招了？”我问她家里通风吗？她说不开窗，怕冷。我问她上次运动是什么时候？她想了想，说：“国庆去商场逛了一圈算吗？”&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2F5c3ab987j00t76wp3003yd000u000lsm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GPQ"&gt;&lt;strong&gt;长时间久坐，会让肺部的“清洁工”——纤毛系统工作变慢。它们本来负责把吸进来的灰尘、病毒慢慢往外扫，但你不动，它们也懒得动。&lt;/strong&gt;再加上冬天屋里干燥，病毒一旦进来，就像进了VIP房间，没人赶得走。&lt;strong&gt;甲流病毒&lt;/strong&gt;就是这么在她体内“住下来”的。&lt;/p&gt;&lt;p id="45KR4GPR"&gt;我跟她说：“你不是没出门，是你的身体一直没动。”冬天不是不能宅，而是不能“死宅”。&lt;strong&gt;建议：每隔一小时起来走一圈，哪怕是客厅来回走；每天开窗两次，每次五分钟，哪怕冷也要通风；室内湿度控制在40%-60%，对呼吸道是一种保护。&lt;/strong&gt;&lt;/p&gt;&lt;p id="45KR4GPS"&gt;他晚饭吃完，一杯奶茶，一碗火锅底料泡面，然后捂着被子刷剧到凌晨三点。这是前天晚上急诊的一个大学男生，21岁，凌晨来的时候体温40.2℃，嘴唇发干、全身肌肉酸痛。我们做了甲流快检，阳性。他说：“我就是吃多了点，怎么就烧成这样？”&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2Ff3ef8ee0j00t76wp3003cd000u000mim.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GPU"&gt;我看了他两眼，心里其实很难过。&lt;strong&gt;年轻人对身体的信任，常常是对身体的误解。&lt;/strong&gt;&lt;/p&gt;&lt;p id="45KR4GPV"&gt;暴饮暴食，尤其是夜间吃高油、高糖、高盐的食物，会让&lt;strong&gt;肠道免疫系统&lt;/strong&gt;陷入混乱。肠道是人体最大的免疫器官之一，占了近70%的免疫细胞。你吃的每一口垃圾食物，都可能在“拆你自己的墙”。&lt;/p&gt;&lt;p id="45KR4GQ0"&gt;更别提他吃完直接裹着厚被子躺着，胃肠道血流增加，肺部、脑部供血就减少了。&lt;strong&gt;这时候病毒要是来了，免疫系统根本顾不上应对。&lt;/strong&gt;&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2Fc2e903d2j00t76wp3002ed000u000jym.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GQ2"&gt;我劝他：“以后晚上十点以后别再吃重口味的东西了，肠胃不是夜猫子。”他点头，但我知道，很多习惯不是一两句话能改的。&lt;strong&gt;建议：冬天晚饭尽量在七点前完成，避免高脂高糖食物，尤其别用“捂汗出毒”的方式对抗发热，那是对身体的二次伤害。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote id="45KR4GQH"&gt;她每天早上五点起床，穿着薄羽绒服去公园跑步，说是“坚持锻炼”。这是一位退休教师，58岁，前几天发热、头痛、肌肉酸痛三天后确诊甲流。她说：“医生，我有锻炼呀，怎么还会得流感？”&lt;br&gt;&lt;/blockquote&gt;&lt;p id="45KR4GQ4"&gt;我问她晨练的细节，她说天还没亮，空气清新，自己跑完步再去买菜。问题就出在这里。&lt;strong&gt;冬季清晨，气温最低，空气中悬浮颗粒物最多，尤其在北方城市，清晨的空气看似宁静，实则可能含有较高的病毒载量和污染物。&lt;/strong&gt;&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2F1fe26038j00t76wp3002hd000u000k0m.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GQ6"&gt;身体在天没亮前起床，会打乱&lt;strong&gt;昼夜节律&lt;/strong&gt;，造成&lt;strong&gt;免疫系统&lt;/strong&gt;短暂性“降级模式”。再加上她穿得不够，冷空气一吸进肺里，气道收缩，纤毛活动减弱，病毒就有了突破口。&lt;strong&gt;她不是没锻炼，是选错了时间。&lt;/strong&gt;&lt;/p&gt;&lt;p id="45KR4GQ7"&gt;我跟她说：“锻炼是好事，但别让健康败在早起的执念上。”她笑着说：“那我以后太阳出来再出门。”&lt;strong&gt;建议：冬天运动最好安排在白天十点以后，阳光出来、气温回升后；避免空腹晨练，注意保暖，尤其是胸口和口鼻；户外空气污染严重时，尽量在室内活动。&lt;/strong&gt;&lt;/p&gt;&lt;p id="45KR4GQ8"&gt;冬天的急诊科，最常听到的一句话是：“我以为没事。”我也曾以为，身体强壮的人就不会得流感；以为年轻就是抵抗力；以为感冒是小病，扛扛就过去。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2F7e808804j00t76wp3001td000u000j4m.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GQA"&gt;直到我亲眼看过，一个30岁的健身教练，因甲流引发&lt;strong&gt;急性心肌炎&lt;/strong&gt;躺进ICU；一个刚考完研的女孩，烧到意识模糊，靠吸氧恢复。&lt;/p&gt;&lt;p id="45KR4GQB"&gt;&lt;strong&gt;病毒从不挑人，但人的行为会决定病毒的路径。&lt;/strong&gt;甲流不是“运气不好”的结果，而是多个“小错”叠加的后果。&lt;strong&gt;免疫力不是天赋，而是日积月累的选择。&lt;/strong&gt;&lt;/p&gt;&lt;p id="45KR4GQC"&gt;今晚下班路上，天上飘着细雪，街边便利店的热包子正冒着腾腾热气。我想起住院的那个老太太，今天退烧了，能自己吃几口饭了，她儿子给她带了家里炖的萝卜羊肉汤。&lt;/p&gt;&lt;p class="f_center"&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F1213%2F388dba29j00t76wp3002md000u000kwm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p id="45KR4GQE"&gt;我站在路口，看着车灯把雪光拉得暖黄，心里突然多了一句话：&lt;strong&gt;“冬天不是用来扛的，是用来照顾身体的。”&lt;/strong&gt;如果你看到这封信，愿你在这个冬天里，不是靠硬扛，而是靠善待自己，熬过每一场风雪。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote id="45KR4GQI"&gt;参考文献：&lt;br&gt;［1］中国疾病预防控制中心.2024年冬季流感监测周报[R].2024.&lt;br&gt;［2］张晓红,李强.呼吸道病毒感染与宿主免疫机制研究进展[J].临床医学进展,2023,13(6):712-716.&lt;br&gt;［3］李文,周静.冬季锻炼与呼吸道疾病的关系探讨[J].健康研究,2022,41(4):305-308.&lt;br&gt;&lt;/blockquote&gt;&lt;p id="45KR4GQG"&gt;&lt;strong&gt;本文内容基于权威医学资料并结合作者个人观点撰写，仅作健康科普使用，不构成诊疗依据，请知悉。&lt;/strong&gt;&lt;/p&gt;
                 &lt;/div&gt;
                 
@@ -508,239 +961,4 @@
                 
                 
                 
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>网易</author><pubDate>Sun, 14 Dec 2025 02:50:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFA3OHI0Y205VU5lU0k5VXdwTmFnaTcweW8wNkkxRVlscHFhUEk0RV9OWnRLUEJ4VkItZTRuYXN0cU1XSjdwQVJKb3NEXzZCakt2Tmc1M1VfVXlWYWhxSmhtbk9B</guid></item><item><title>医学研究千名吸烟者，惊奇发现：易得肺癌的人，有这5个共性！-yeeyi - yeeyi</title><link>https://www.yeeyi.com/news/details/2904887/</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="__next"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>yeeyi</author><pubDate>Sun, 14 Dec 2025 01:29:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTFBISGpjQy12MG83aUhlX05ZRmtIeVMtM1ltb25nSFFtaGZlS1Ezc0RmZWlpNEFnSlN1ektuQ0RBM2hUc3BySWRZZ01ENVFkUlhvTlFqOTJn</guid></item><item><title>加拿大节前疫情大爆发 单周确诊超3000例 - 温哥华港湾</title><link>https://www.bcbay.com/life/health/2025/12/13/996735.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="cont"&gt;
-                                &lt;p&gt;&lt;strong&gt;加拿大流感病例节前快速上升，这些信息一定要知道！&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;随着假期临近，加拿大各地的&lt;strong&gt;流感病例正在明显上升&lt;/strong&gt;。联邦卫生部门最新数据显示，全国范围内的流感检测阳性率、相关疫情暴发以及住院病例都在明显增加，而且目前几乎全部都是&lt;strong&gt;甲型流感（Influenza A）&lt;/strong&gt; 在推动这波传播。&lt;/p&gt;&lt;p&gt;根据加拿大政府在&lt;strong&gt;12月5日发布的最新通报&lt;/strong&gt;(数据覆盖截至11月29日，第48周监测周期)，全国流感检测阳性率已经达到 &lt;strong&gt;13%&lt;/strong&gt;，并呈持续上升趋势。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;仅在这一周，全国就录得 &lt;/p&gt;&lt;strong&gt;3.655例实验室确诊流感病例&lt;/strong&gt;&lt;p&gt;，其中 &lt;/p&gt;&lt;strong&gt;99% 为甲型流感&lt;/strong&gt;&lt;p&gt;，而且以 &lt;/p&gt;&lt;strong&gt;A(H3N2) 亚型&lt;/strong&gt;&lt;p&gt; 为绝对主流。&lt;/p&gt;&lt;p&gt;卫生官员指出，几乎所有流感相关指标都在走高——包括感染人数、暴发事件和住院率。正值家庭聚会、节日出行和社交活动频繁的季节，这一趋势让公共卫生部门格外担忧，并特别提醒&lt;strong&gt;老年人和儿童&lt;/strong&gt;提高警惕，因为这两个群体受当前流行毒株影响最大。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://p0.51img.ca/i/693d954f1026f.png" alt="" align=""&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;最新关键数据一览（第48周）&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;从官方公开报告来看，这波流感疫情有几个非常明确的特点：&lt;/p&gt;&lt;p&gt;在检测方面，第48周共报告 &lt;strong&gt;3.655例流感病例&lt;/strong&gt;，其中 &lt;strong&gt;3.618例被确认为甲型流感&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://p0.51img.ca/i/693d955074545.png" alt="" align=""&gt;&lt;/p&gt;&lt;p&gt;在分型方面，在已完成亚型检测的甲型流感病例中，&lt;strong&gt;80% 属于 A(H3N2)&lt;/strong&gt;，显示该毒株为当前主要传播来源。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://p0.51img.ca/i/693d954f10011.png" alt="" align=""&gt;&lt;/p&gt;&lt;p&gt;从年龄分布来看：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;65岁以上老年人&lt;/strong&gt;是检测人数最多的群体;而&lt;strong&gt;儿童和青少年（19岁以下人群）&lt;/strong&gt;，则占所有 &lt;strong&gt;A(H3N2)病例的47%&lt;/strong&gt;，是该毒株比例最高的人群。&lt;/p&gt;&lt;p&gt;在暴发事件方面：&lt;/p&gt;&lt;p&gt;单周确认 &lt;strong&gt;38起流感暴发事件&lt;/strong&gt;，而且这一数字仍在持续上升。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://p0.51img.ca/i/693d954f362cb.png" alt="" align=""&gt;&lt;/p&gt;&lt;p&gt;在住院方面：&lt;/p&gt;&lt;p&gt;全国每周住院率达到 &lt;strong&gt;每10万人中1.9人&lt;/strong&gt;，并且仍在呈现持续上升趋势。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;各省疫情分布：哪些地区最严重？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;流感活动目前已经在 &lt;strong&gt;全国12个省和地区的48个区域被监测到&lt;/strong&gt;，整体呈扩散态势。&lt;/p&gt;&lt;p&gt;报告显示：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;卑诗省（B.C.）和魁北克省（Quebec）&lt;/strong&gt; 已进入“广泛传播”阶段;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;阿尔伯塔省、萨省、安大略省、魁北克省、新不伦瑞克省、新斯科舍省&lt;/strong&gt; 出现局部活跃传播;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;西北地区、纽芬兰和拉布拉多省、爱德华王子岛&lt;/strong&gt; 以及部分其他地区目前为零星传播;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;育空地区（Yukon）&lt;/strong&gt;、部分&lt;strong&gt;西北地区&lt;/strong&gt;、&lt;strong&gt;努纳武特地区（Nunavut）&lt;/strong&gt; 以及部分&lt;strong&gt;纽芬兰和拉布拉多地区&lt;/strong&gt;目前尚未检测到流感活动。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://p0.51img.ca/i/693d954fafe64.png" alt="" align=""&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;整个流感季的数据也不乐观&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;从今年 &lt;strong&gt;8月24日&lt;/strong&gt; 流感季开始至今，全国已报告&lt;strong&gt;超过1万例流感确诊病例&lt;/strong&gt;，其中 &lt;strong&gt;98% 为甲型流感&lt;/strong&gt;。在已进行亚型分析的病例中，&lt;strong&gt;A(H3N2) 占比达到 63%&lt;/strong&gt;，仍是绝对主流毒株。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://p0.51img.ca/i/693d954f413db.png" alt="" align=""&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;疫苗仍是最有效的预防方式&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;加拿大公共卫生部门提醒，民众仍可免费接种流感疫苗。疫苗可以在以下地点获得：&lt;/p&gt;&lt;p&gt;参与项目的药房&lt;/p&gt;&lt;p&gt;家庭医生或执业护士诊所&lt;/p&gt;&lt;p&gt;Walk-in 诊所&lt;/p&gt;&lt;p&gt;部分地区公共卫生诊所&lt;/p&gt;&lt;p&gt;官方特别建议&lt;strong&gt;老年人、儿童以及有基础疾病的人群&lt;/strong&gt;尽早接种，以降低重症和住院风险。&lt;/p&gt;&lt;p&gt;节日前后是流感传播的高风险时期，今年以甲型流感A(H3N2)为主，传播快、住院人数上升明显，打疫苗、戴口罩和减少密集聚会，依然是最有效的防护方式。&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>温哥华港湾</author><pubDate>Sun, 14 Dec 2025 01:18:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZ0FVX3lxTE1qMkZfelJnNTNodEF3ZGUtdmdNc1B0YkdMNXVqV1lDU0FhS3lORmR5dmtmbUVCU2RGY2xTUFlSbW5Gcm9iTGQtX29XY1Z3VVlQd3AtNkJFN1dZYnpjUVVpMGFyN0FVdHc</guid></item><item><title>处理完成 综述：病原体劫持单核细胞分化产生特洛伊木马 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251214083000259.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;处理完成
-综述：病原体劫持单核细胞分化产生特洛伊木马&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
-		&lt;p class="p1EnTitle"&gt;《TRENDS IN Microbiology》：Producing Trojans: hijacking of monocyte differentiation by pathogens&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年12月14日&lt;/i&gt;
-            &lt;i&gt;来源：TRENDS IN Microbiology 14.9&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本综述探讨了病原体如何通过劫持单核细胞分化过程实现免疫逃逸。病毒、细菌和真菌利用宿主信号通路，将单核细胞重编程为支持病原体生存和传播的表型。这种策略不仅揭示了新的致病机制，也为开发靶向单核细胞分化的免疫治疗策略提供了理论基础。（DC：树突状细胞；M-CSF：巨噬细胞集落刺激因子）
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;p class="p1Textcen font14" id="Zoom"&gt;
-        　　
-&lt;section&gt;在宿主与病原体的长期博弈中，病原体进化出了精妙的策略来逃避宿主免疫监视。其中一种独特的方式便是劫持单核细胞的分化过程，将其转化为有利于病原体生存和传播的"特洛伊木马"。&lt;/section&gt;
-&lt;section&gt;单核细胞作为免疫系统的重要组成部分，具有相当的可塑性，能够根据组织微环境、细胞因子信号、病原体相关分子模式(PAMPs)、代谢线索和宿主转录调节因子的指引，进行功能性编程。这种动态发育过程原本是为了快速应对病原体入侵和组织损伤，但病原体却巧妙地利用了这一特性。&lt;/section&gt;
-
-&lt;section&gt;人类免疫缺陷病毒(HIV-1)利用单核细胞向巨噬细胞转变的早期阶段进行高效的病毒复制，而在后期转变阶段则与病毒潜伏相关联。HIV感染的CD4&lt;sup&gt;+&lt;/sup&gt;T细胞会产生升高的白细胞介素(IL)-27，驱动单核细胞衍生的IL-10分泌，从而抑制HIV抗原特异性的干扰素-γ(&lt;span&gt;I&lt;/span&gt;&lt;span&gt;F&lt;/span&gt;&lt;span&gt;N&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;&lt;span&gt;γ&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/section&gt;
-        &lt;/p&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sun, 14 Dec 2025 00:37:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE43ZHMxaW03eW1ucXJGWTdFUkVTX0RLdWhmQjdhMXRzeWRxRXBkYklFYndMcE5nOGtmM0syVnVJazV5NWQ4SjhIMHRPemxUcElaTDY1VUo1OHRsVGwtM0FkaVZRVmt5RjBrYkNJd3pB</guid></item><item><title>综述：HECT型E3泛素连接酶在DNA损伤应答和修复中的作用 - 生物通</title><link>https://www.ebiotrade.com/newsf/2025-12/20251214061820438.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;综述：HECT型E3泛素连接酶在DNA损伤应答和修复中的作用&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
-		&lt;p class="p1EnTitle"&gt;《Cell Death Discovery》：The role of HECT-type E3 ubiquitin ligases in DNA damage response and repair&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2025年12月14日&lt;/i&gt;
-            &lt;i&gt;来源：Cell Death Discovery 7&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本文系统阐述了HECT型E3泛素连接酶家族在维持基因组稳定性中的核心作用。作者深入剖析了NEDD4样、HERC和“其他”三大亚家族成员如何通过调控p53、BRCA1、PARP1等关键蛋白的泛素化，精确影响DNA损伤信号传导、染色质重塑及修复通路（如HR、NHEJ、BER）的选择。该综述不仅揭示了HECT E3s在肿瘤发生与治疗耐药中的新机制，更为开发靶向E3连接酶的创新疗法（如PROTACs）提供了理论依据，对突破癌症治疗瓶颈具有重要启示。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　
-&lt;section&gt;细胞的生命活动时刻面临着内外部因素引起的DNA损伤威胁。为了维持基因组的完整性，细胞演化出了一套精细的DNA损伤应答（DDR）系统。在这个系统中，蛋白质的翻译后修饰——尤其是泛素化——扮演着至关重要的角色。泛素化过程由E1、E2和E3三类酶依次催化完成，其中E3泛素连接酶负责识别特异性底物，决定了修饰的特异性。在E3连接酶大家族中，HECT（Homologous to the E6-AP Carboxyl Terminus）家族因其独特的催化机制而备受关注：它们能够与泛素分子形成硫酯中间体，再直接将其转移至底物上，这与作为支架蛋白的RING型E3s截然不同。尽管RING型E3s在DDR中的作用已被广泛研究，但HECT型E3s在这一领域的复杂功能网络仍如一幅亟待拼凑完整的拼图。&lt;/section&gt;
-
-&lt;section&gt;当DNA损伤发生时，细胞会启动DDR信号通路，激活细胞周期检查点，并启动转录重编程以促进修复因子的表达。p53作为“基因组守护者”，是DDR的核心调控者。DNA损伤的类型决定了修复路径的选择。对于最致命的DNA双链断裂（DSBs），细胞主要采用高保真的同源重组（HR）或易错配的非同源末端连接（NHEJ）进行修复。而对于单链损伤，则涉及核苷酸切除修复（NER）、碱基切除修复（BER）和错配修复（MMR）等通路。这些通路之间存在着复杂的交互对话与竞争关系，共同织就了一张维护基因组稳定的安全网。&lt;/section&gt;
-
-&lt;section&gt;泛素化通过多种方式协调DDR与修复。它可以通过修饰组蛋白（如H2A、H2B）来改变染色质结构，便于修复因子募集；也可以直接调控DDR因子（如p53、XPC）的稳定性与功能。例如，RING型E3连接酶RNF8和RNF168在DSB位点催化组蛋白的K63连接的多聚泛素化，为BRCA1、53BP1等修复蛋白搭建招募平台。而RING型E3 FANCL则通过单泛素化FANCI-FANCD2（ID2）复合物来启动链间交联（ICLs）的修复。&lt;/section&gt;
-
-&lt;section&gt;人类基因组编码28个HECT E3家族成员，它们共享一个约350个氨基酸组成的C端HECT结构域。该结构域分为N叶（与E2-泛素复合物相互作用）、C叶（含有催化半胱氨酸）和连接两者的柔性铰链区。根据底物识别结构域的不同，HECT E3s可分为三个亚家族：含有WW结构域的NEDD4样亚家族、含有RCC1样结构域（RLD）的HERC亚家族，以及既不含有WW也不含有RLD结构域的“其他”亚家族。泛素链的类型（如引导蛋白酶体降解的K48连接链，或参与信号传导的K63连接链）决定了底物的命运，HECT E3s能够催化形成多种类型的泛素链，从而精细调控下游事件。&lt;/section&gt;
-
-&lt;section&gt;该亚家族成员通过调控关键DDR蛋白，在维持基因组稳定性中发挥重要作用。&lt;/section&gt;
-&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;NEDD4&lt;/strong&gt;：通过K63连接的多聚泛素化稳定MDM2，间接促进p53的降解。它还能泛素化PTEN，影响其稳定性，从而扰动由PTEN调控的RAD51、BRCA1、ATM、Chk1和53BP1的水平，导致DSBs应答缺陷。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;NEDD4L&lt;/strong&gt;：通过泛素化降解53BP1，促使修复平衡向HR倾斜。在BER通路中，它介导糖苷酶OGG1的泛素化降解，精细调控其在氧化应激下的活性，防止BER中间产物单链断裂（SSBs）的过度积累。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;ITCH&lt;/strong&gt;：受ATM磷酸化激活后，通过泛素化连接组蛋白H1.2，干扰RNF8/RNF168依赖的53BP1焦点聚集，从而促进HR。它还降解c-FLIP和p73等蛋白，平衡凋亡与生存信号。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;WWP1&lt;/strong&gt;：通过K63连接的多聚泛素化修饰组蛋白去甲基化酶JARID1B，增强其稳定性，促进染色质开放，从而正向调控HR和NHEJ因子的招募。此外，它还通过调控TXNIP影响细胞氧化还原状态。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;WWP2&lt;/strong&gt;：催化RNAPII大亚基RPB1的K48连接的多聚泛素化，导致转录停滞，防止其干扰修复。它还泛素化PARP1并促其降解，避免过度的PARP1信号。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;SMURF1/2&lt;/strong&gt;：SMURF2被ATM磷酸化后，可泛素化降解RING型E3 RNF20（负责H2B泛素化）并拮抗RNF168，从而负向调控DDR和DSBs修复因子的招募，形成反馈调节。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;NEDL1/2&lt;/strong&gt;：NEDL1与p53相互作用并增强其转录活性。NEDL2则通过泛素化稳定p73，增强其转录功能。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;section&gt;HERC家族成员，特别是HERC1和HERC2，在基因组稳定性维持中扮演关键角色。&lt;/section&gt;
-&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;HERC1&lt;/strong&gt;：参与MMR通路，可能通过直接或间接方式调节MSH2的稳定性。其下调与MSH2水平显著降低相关，可能导致MMR缺陷和基因组不稳定。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;HERC2&lt;/strong&gt;：功能尤为广泛。它作为p53的调控因子，既能招募ATM/ATR以稳定p53，又能标记p53被MDM2降解。在DSB修复中，HERC2被ATM/ATR/DNA-PK磷酸化后，与MDC1、RNF8形成复合物，促进RNF168招募和组蛋白泛素化信号放大。它还能泛素化降解RPA2和BRCA1。在NER通路中，HERC2调控XPA的稳定性。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;HERC3-6&lt;/strong&gt;：这些小HERC成员的功能仍在探索中。HERC3的移码突变见于微卫星不稳定的胃癌和结直肠癌。HERC4在乳腺癌和肺癌中过表达。HERC5和HERC6是干扰素刺激基因15（ISG15）的E3连接酶，在抗病毒免疫中发挥作用，提示它们可能在感染相关DNA损伤应答中起作用。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;AREL1&lt;/strong&gt;：作为一种抗凋亡E3，通过降解SMAC、HtrA2和ARTS等IAP拮抗剂，帮助癌细胞逃避凋亡。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;HUWE1&lt;/strong&gt;：功能多样，能降解Mcl-1促进凋亡，降解HDAC2影响p53乙酰化，降解BRCA1影响HR，并与TRIM26共同靶向BER糖苷酶NEIL1。它还调控H2AX和Cdc6的稳定性。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;G2E3&lt;/strong&gt;：一种G2/M期调控蛋白，在基因毒性应激下从核仁转位至核质。其缺失会损害DNA损伤信号（如降低γH2AX水平和Chk1磷酸化），导致复制应激和ssDNA积累。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;TRIP12&lt;/strong&gt;：通过其PAR结合结构域与PARP1结合并促其泛素化降解，从而限制PARP抑制剂（PARPi）在DNA断裂位点的“捕获”效应。它与UBR5共同调节RNF168的水平，防止53BP1和BRCA1的过度招募。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;section&gt;&lt;strong&gt;UBR5&lt;/strong&gt;：与TRIP12协同调节RNF168。在复制应激下，PPARγ增强UBR5对ATM相互作用蛋白（ATMIN）的泛素化降解，从而影响53BP1的定位和NHEJ效率。UBR5还能与ITCH协作，在TXNIP上形成K48/K63分支泛素链，靶向其降解，参与氧化应激应答调控。&lt;/section&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;section&gt;综上所述，HECT型E3泛素连接酶通过精确调控其DDR底物的水平和功能，在维持基因组完整性中发挥着不亚于RING型E3s的关键作用。它们功能的失调与多种肿瘤的发生、发展及治疗耐药密切相关。尽管针对泛素-蛋白酶体途径的抑制剂（如蛋白酶体抑制剂）已在癌症治疗中取得成效，但开发高选择性的HECT E3s抑制剂或PROTACs（蛋白降解靶向嵌合体）仍面临巨大挑战，主要障碍在于HECT结构域在家族成员间的保守性导致的选择性难题。未来的研究需要借助结构生物学和高通量蛋白质组学等手段，进一步揭示HECT E3s的底物特异性、时空调控规律及其与其他修饰酶的交叉对话。针对特定HECT E3s（如HERC2、TRIP12、WWP1）的抑制剂，与PARPis、放疗或氧化治疗联用，有望为克服肿瘤耐药性开辟新的途径。&lt;/section&gt;
-        &lt;/div&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://www.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://www.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sun, 14 Dec 2025 00:12:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE5TMUg3YkI1NE9mbEt4dWpPOWJMWm9Pem85VHRfOXVULXlQY0cwcTFvb09rWGExZ2pfSnFhRk5aTlQwVlNmUHcyR1NVelZBS2QwcTZGM3A1MXp1NV84VXh6R01tYmZ6dUYwdUdEc2NB</guid></item></channel></rss>
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>网易</author><pubDate>Sun, 14 Dec 2025 02:50:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFA3OHI0Y205VU5lU0k5VXdwTmFnaTcweW8wNkkxRVlscHFhUEk0RV9OWnRLUEJ4VkItZTRuYXN0cU1XSjdwQVJKb3NEXzZCakt2Tmc1M1VfVXlWYWhxSmhtbk9B</guid></item></channel></rss>
