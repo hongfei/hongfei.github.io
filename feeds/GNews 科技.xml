@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>厉害在哪里？中国大飞翼彩虹-7隐身无人机成功首飞！出口哪些国家，性能不过剩吗？ - 风闻</title><link>https://user.guancha.cn/main/content?id=1566749</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>显卡还没跑满 数据中心先被“网线”卡脖子了 - 驱动之家</title><link>https://news.mydrivers.com/1/1092/1092933.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;不是，这年头用在电视上的 Micro LED 技术 ，还能做成网线，用来传数据了？&lt;/p&gt;
+&lt;p&gt;是这样的，前阵子托尼在网上刷到这样一条新闻，说微软正在研究通过 Micro LED 光互联技术（MOSAIC），来解决算力中心的数据传输，被 “卡脖子” 的问题。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/d739e738-c47c-4475-8759-458a9f9051a3.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="221" src="//img1.mydrivers.com/img/20251217/Sd739e738-c47c-4475-8759-458a9f9051a3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;emmm，虽然听起来很抽象，但是负责数据处理的算力中心，反过来被数据传输卡了脖子，竟然是因为算力中心的网线 “不够用了”。。。&lt;/p&gt;
+&lt;p&gt;你可能好奇了，我这会儿上某东搜条超六类的万兆（10Gbps）网线也就十几块钱，咋能不够用呢？&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/dddec83c-97ce-46e7-a67c-37b58d863716.jpg" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="305" src="//img1.mydrivers.com/img/20251217/Sdddec83c-97ce-46e7-a67c-37b58d863716.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但其实它们跟数据中心用的网线，在连接速率上，差了可不止一个数量级 ——&lt;/p&gt;
+&lt;p&gt;我们家里的网线，通常能承载的最大速率就是 1000 Mbps - 2500 Mbps，也就是 1 Gbps - 2.5 Gbps。这两年部分地区在推广 “万兆网络”，匹配了 10 Gbps 的网线，但这几乎就是民用网线速率的上限了。&lt;/p&gt;
+&lt;p&gt; 而数据中心的端口交换速率，100 Gbps 早就已经是主流，AI 算力中心的交换机，更是要做到 400 Gbps 起步。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/4b300d2a-3625-4234-8d92-9adcdf8353e8.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="295" src="//img1.mydrivers.com/img/20251217/S4b300d2a-3625-4234-8d92-9adcdf8353e8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;其实就是因为 AI 大模型越来越大，在做训练和推理的时候，服务器之间和 GPU 之间，都得交换大量数据，对带宽的需求也就跟着变大了。&lt;/p&gt;
+&lt;p&gt;要传递这么多的数据，数据中心现在用的铜缆和光纤，还真就 “不够用了”。。。&lt;/p&gt;
+&lt;p&gt;先说铜缆，这种材料的特性就是传输速率和有效距离只能顾一头。为了达到数据中心要求的高速率，高速铜缆的长度一般就只有 1-2m。这也就是为啥机柜内部一个个 GPU 之间，往往是用铜缆来连接。&lt;/p&gt;
+&lt;p&gt;随着传输速率增加，铜缆有效距离逐渐缩短（a）、光纤功耗逐渐增加（b）&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/77087fcb-ca5d-4f4f-ad2e-4bd3664b81f1.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="572" src="//img1.mydrivers.com/img/20251217/S77087fcb-ca5d-4f4f-ad2e-4bd3664b81f1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而光纤虽然跑得又快又远，可以跨机柜连接。但它涉及到复杂的 “光电转换”，相关的电路非常费电，而且对温度敏感，又容易老化，在机房这种极其高温的环境下，非常容易出故障。&lt;/p&gt;
+&lt;p&gt; 微软的论文里就提到，如果全用光纤互联，那么英伟达的 GB200 NVL72 机柜，功耗会原地暴涨 17%；超大规模的 GPU 集群，会每 6-12 小时就发生一次链路故障。。。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/b1ed6355-2656-470a-9a98-0cf0ede8c6b9.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="337" src="//img1.mydrivers.com/img/20251217/Sb1ed6355-2656-470a-9a98-0cf0ede8c6b9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;所以在综合考虑之后，英伟达 GB200 NVL72 最终采用了铜缆连接方案。但这样一来，里面的 72 个 GPU 只能被塞在单个机架里，导致整个机柜的供电和散热压力非常大。&lt;/p&gt;
+&lt;p&gt;而且维护起来也很麻烦。毕竟集成度做到这么高，一旦某个 GPU 或者传输链路上的哪个部分出点什么问题，真要修起来，整个机柜的运行都会受影响。&lt;/p&gt;
+&lt;p&gt;通过这个例子你也能发现，传统的铜缆和光纤通信，已经不能同时满足数据中心高带宽、低功耗和长距离的连接需求了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/daacac3f-0103-4710-a769-af940a697d6f.jpg" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="313" src="//img1.mydrivers.com/img/20251217/Sdaacac3f-0103-4710-a769-af940a697d6f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 而 MicroLED 光通信的出现，就是为了解决这个问题。&lt;/p&gt;
+&lt;p&gt;微软提出的 MOSAIC，本质上是用 MicroLED 像素做光源。你可以把发光的 MicroLED 像素阵列，想象成一个个摞起来的显示器 ——&lt;/p&gt;
+&lt;p&gt;因为 MicroLED 像素可以独立发光，每个像素就是一条传输数据的光通道。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="381" src="//img1.mydrivers.com/img/20251217/b9faa047-f37c-453b-a040-a3a35efd5be7.png" w="581"&gt;&lt;/p&gt;
+&lt;p&gt;所以发射端控制像素的亮灭，让亮表示 1、灭表示 0。接收端再记录每个像素的亮度变化，就能把接收到的长串 0/1，还原成原始的数据，也就能通过光信号来传递信息。&lt;/p&gt;
+&lt;p&gt;听上去跟传统光纤的通信原理差不多，但不同于光纤的 “窄带宽、高速率”，MOSAIC 的传输模式属于 “宽而慢” ——&lt;/p&gt;
+&lt;p&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="236" src="//img1.mydrivers.com/img/20251217/60990501-cfad-41af-9112-f0f9b651678b.jpg" w="564"&gt;&lt;/p&gt;
+&lt;p&gt; 咱们先来聊聊 “慢” 的事情。&lt;/p&gt;
+&lt;p&gt;MOSAIC 就规定，不需要像传统光纤通信那样，把单通道卷到 50 Gb/s、甚至 100 Gb/s 的超高速率，每个 MicroLED 像素可以摸摸鱼，只跑 2 Gb/s 的 “低速率” 。&lt;/p&gt;
+&lt;p&gt;用这么慢的速率，还能实现高速传输，靠的是 MOSAIC 的另一个特性 “宽”。 &lt;/p&gt;
+&lt;p&gt;以往要做到 800Gbps 带宽，需要靠 8 个 100Gbps 的高速通道，而 MOSAIC 虽然单个通道降到了 2Gbps，但把 MicroLED 阵列做成 400 个像素点，就可以实现 800Gbps 的带宽。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/d68ac248-5e42-43e4-849d-98a22c57661a.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="378" src="//img1.mydrivers.com/img/20251217/Sd68ac248-5e42-43e4-849d-98a22c57661a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但可千万不要以为，MicroLED 光通信的模块体积和功耗，也会跟着 “失控 ”——&lt;/p&gt;
+&lt;p&gt;之所以 MOSAIC 敢用规模换速度，一方面是因为 MicroLED 像素本身只有几微米到几十微米，即使做成 400 个像素点的阵列，核心发光的芯片体积也不足 1 mm?。而传统 800Gbps 级别的光模块，核心的 光源/调制器体积，会达到 十几 mm? 甚至几十 mm? 的量级。&lt;/p&gt;
+&lt;p&gt;相当于把一粒小米和一粒大米放在桌面上比大小。&lt;/p&gt;
+&lt;p&gt;Micro LED 在同样的像素间距下，像素尺寸更小、排列更密集&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/272b4815-a162-46d0-8e74-032347f843c9.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="337" src="//img1.mydrivers.com/img/20251217/S272b4815-a162-46d0-8e74-032347f843c9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 即使把 MicroLED 的连接速率，拓展到 1.6 Tbps，甚至 3.2 Tbps，也就是目前数据中心主流传输速率的 4 倍，整个 MicroLED 光模块的体积，也不会比传统光纤的光模块更大。。。&lt;/p&gt;
+&lt;p&gt;另外一方面，MOSAIC 的传输线缆也比较硬核，直接把医疗内窥镜里用的 “多芯成像光纤” 搬进了机房。简单来说，MicroLED 光通道的增加，并不会让线缆变得更占地方。&lt;/p&gt;
+&lt;p&gt;因为这种光纤的内部包含成千上万个细小的纤芯，数量上完全可以覆盖 MicroLED 几百个光通道的连接需求。&lt;/p&gt;
+&lt;p&gt;MicroLED 多纤成像光纤，可承载数百个光通道&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/86108f82-e3ff-42ad-a991-9fb8fdcc24d8.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="346" src="//img1.mydrivers.com/img/20251217/S86108f82-e3ff-42ad-a991-9fb8fdcc24d8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;还是拿 800Gbps 的带宽举例，传统的光纤方案，需要把 16 根单模光纤（ 8 根发射 + 8 根接收 ），封装到一起。而 “多芯成像光纤” 相当于用一根线缆就能搞定高带宽。&lt;/p&gt;
+&lt;p&gt; 而且，这类多芯成像光纤可以做到 50m 的有效传输距离，也已经远超铜缆连接的极限了。&lt;/p&gt;
+&lt;p&gt;再加上，MicroLED 结构简单，所以控制像素亮灭的电流开关也能做得简单，省去了不少传统光模块的高功耗电路。&lt;/p&gt;
+&lt;p&gt;根据微软的数据，实现相同的带宽，MOSAIC 的功耗，相比传统的光纤互联，最多可以降低 68%，故障率更是可以降到原来的 1/100。。。&lt;/p&gt;
+&lt;p&gt;可以说，有了这个技术，往后再搭建机柜或者服务器，就不需要在“粗重的铜缆”，和 “高功耗的光纤模块” 中间纠结，而是多了一条在功耗、距离和带宽之间更平衡的第三种方案。&lt;/p&gt;
+&lt;p&gt;数据中心常用的连接方案：交换机之间采用光纤连接，机柜内部采用铜缆连接&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251217/1de976cc-2491-4add-9190-41822ccbd759.png" target="_blank"&gt;&lt;img alt="显卡还没跑满 数据中心先被“网线”卡脖子了" h="375" src="//img1.mydrivers.com/img/20251217/S1de976cc-2491-4add-9190-41822ccbd759.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;只不过，目前 MicroLED 光通信还停留在技术验证阶段，台积电、Avicena、兆驰等厂商也还在做原型机和产业布局，真正的大规模商用还没有落地。&lt;/p&gt;
+&lt;p&gt; 不过托尼倒是很看好这个技术的发展前景，毕竟 MicroLED 光通信，可是实打实地会降低功耗，而国外的电力紧缺一直是个大问题。&lt;/p&gt;
+&lt;p&gt;还有更重要的一点，就是咱们开头提到的，现在算力中心越来越被通信效率 “卡脖子” 的问题。或者换个角度来说，通信效率的革命，会反过来弥补算力的劣势。&lt;/p&gt;
+&lt;p&gt;就比如现在华为的 384 超节点，里面单个昇腾 AI 处理器的性能并没有那么强，但通过 384 颗 NPU 互相串联成算力集群，就能够让整台机器的性能，对标英伟达的 GB200 NVL72。&lt;/p&gt;
+&lt;p&gt;那么我想，能不能靠新的光通信协议 “弯道超车”，把数据传输做得更快、更省电、更可靠，可能会是 AI 竞赛和算力 “游戏” 的下半场。。。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 16 Dec 2025 16:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ScF9OdHBaSzFGY3c5SGV4RjlSOEZIY0hPVDdiRk1hbE1mdGhld3ItV3Nib2s2TXpPQ0lrZG41MllVRVB2WnEwellRWmtSMUFLMVBjWFpDeGo</guid></item><item><title>厉害在哪里？中国大飞翼彩虹-7隐身无人机成功首飞！出口哪些国家，性能不过剩吗？ - 风闻</title><link>https://user.guancha.cn/main/content?id=1566749</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
 							&lt;p&gt;&lt;b&gt;时值年末，没有等来传说中的&lt;/b&gt;“水分子”，倒是等来了航天科技彩虹的新产品。根据央视新闻12月15日报道，当天，由航天科技彩虹无人机研发的高空、长航时、隐身侦察无人机彩虹-7型，成功完成首飞。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212542335.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;提到航天科技彩虹无人机公司研发的彩虹-7型无人机，这也算是咱们的老朋友了，大伊万第一次去参加的珠海航展，也就是2018年第12届中国航展，展厅里就曾经出现过它的身影。当时，彩虹-7型无人机的旁边还摆上了另外一架忠诚僚机的模型，其后彩虹-7型无人机多次在珠海航展上亮相。&lt;/p&gt;&lt;p&gt;但是由于研发进度等因素，2024年11月左右，该机才开始进行地面滑跑测试，又过了一年时间才完成首飞。当然，考虑到型号的研发难度，研发资源，预定客户等因素，彩虹-7型无人机作为航天彩虹目前技术难度最高的一个型号，这个进度也属正常。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212542266.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;那么，彩虹-7型无人机的总体设计、设计细节如何？主要承担怎样的使命？为何这么大大方方的就公开了呢？&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;b&gt;&lt;strong&gt;​彩虹-7的设计性能&lt;/strong&gt;&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;首先从总体设计上来讲，彩虹-7型无人机应当是一种使用了近似于大飞翼布局的曲柄风筝布局、无垂尾设计的中型无人机。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212542950.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;整体线条较为光顺流畅，使用机身上方进气口和半隐藏式排气口，在付出了一定大迎角机动飞行代价的同时，极大地提高了无人机的低可探测性能、后半球红外低可探测性能等。总的来说，彩虹-7型无人机的气动外形和隐身设计，和目前主要军事强国的飞翼构型无人机/察打一体无人机比较类似，总体设计良好。&lt;/p&gt;&lt;p&gt;而从具体的技术数据、设计细节来看，由于目前彩虹-7型无人机刚刚首飞，还有很多信息可能要等到2026年的中国航展才可公开，因此目前公开的相关性能数据都是仅供参考。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212542609.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;比如其最大起飞重量据称是8吨，这个起飞重量算是比较高的了，巡航平飞速度大约为0.6到0.7倍音速，续航时间12个小时到16个小时。看起来，彩虹-7型无人机使用的是一台无加力版本的中等推力涡轮风扇发动机，不具备超音速飞行能力，当然作为一款侦察无人机这性能也足够。&lt;/p&gt;&lt;p&gt;在设计细节上，目前的彩虹-7型无人机由于仅仅是01号技术验证机，其蒙皮还是沿用了黄色的底漆涂装，暂时没有涂装RAM材料以提高其隐身性能。在诸如机翼后缘的襟翼、襟副翼细节处理上，也没有像我军的第五代战斗机、新一代隐身察打一体无人机那样，使用柔性材料包裹气动控制面转轴、接缝、作动筒等，在最大程度上进行隐身的细节修型。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212542963.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;当然，还是那句话——考虑到目前彩虹-7还是技术验证机状态，这些设计细节是可以暂时不用考虑的，后面再加也不迟。同时最起码从机体细节设计上，彩虹-7型无人机的机体表面少有异常突起，大多数天线等也都进行了保形设计，蒙皮接缝采用锯齿形处理，铆钉也都使用了埋头抽芯铆钉，这些细节都可以有效降低诸如蒙皮接缝的雷达波反射。&lt;/p&gt;&lt;p&gt;故而从这个角度来看，彩虹-7型无人机从外形、细节设计上来看，其低可探测性能应该是不错的。因此，我们现在可以明确的是，彩虹-7型无人机，是一种具备比较强的低可探测性能的、采用曲柄风筝飞翼设计的、最大起飞重量8吨左右、最大航程8000千米以上的中大型无人机。&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;b&gt;&lt;strong&gt;彩虹-7承担的任务&lt;/strong&gt;&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;那么该型无人机被赋予的使命如何，预定承担的任务有哪些呢？根据航天彩虹的报告，彩虹-7型现在的构型是一种侦察型无人机，配备有完善的态势感知和通讯设备，从其气动外形设计，再从其可能存在射频部件的部位来看，彩虹-7无人机可能存在的侦察/态势感知系统，可能包括如下分系统组件：&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543378.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;其一是合成孔径雷达，可以配备在机身下方或者侧方，探测视野位于前侧下方，以其机身侧面尺寸推测配备的合成孔径雷达，探测距离不会低于200千米。&lt;/p&gt;&lt;p&gt;其二是光电/红外设备，目前彩虹-7的01号验证机上暂时没有出现光电/红外设备窗口，考虑到低可探测性能要求也不可能在无人机的机首下方加装转塔，因此大概率会采用类似于歼-20一样的红外搜索与跟踪系统（IRST）的鼓包设计，或者采用类似于新一代平台一样的保形设计。&lt;/p&gt;&lt;p&gt;其三是电子对抗/电子支援设备，按照航天彩虹的报告，彩虹-7型无人机在机身中部安装有任务舱段，那必然可以容纳电子支援设备用来进行电磁测向等作业。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543780.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;其四是通讯设备和算力设备，彩虹-7型无人机既然有任务舱，可以携带电子对抗/支援设备，就可以携带通讯和算力设备，包括高带宽保密数据链，还有算力中心设备等。&lt;/p&gt;&lt;p&gt;其五，目前的彩虹-7型无人机暂时还没有具备察打一体能力，从其外形来看机腹部分似乎也没有弹舱。但是从长远来看，彩虹-7型无人机将机腹的任务舱段改进为具备弹舱功能的任务舱段，问题也不大。从目前的情况看，该型无人机暂时还只是一款侦察无人机，在配备了射频、光电、信号侦察设备的情况下，借助其低可探测性能承担侦察任务。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543943.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;在具体的战术任务和装备运用场景上，既然是侦察型无人机，那么彩虹-7型无人机的战术运用也不难猜了：&lt;/p&gt;&lt;p&gt;第一是战场侦察和目标指示，合成孔径雷达看，电子支援系统测，光电雷达也一样探测，发现目标后直接标定形成火力闭环，也就顺带把目标指示的功能也给做了。&lt;/p&gt;&lt;p&gt;第二是电子干扰和电子支援，可以使用机身携带的电子干扰设备进行战略、战术级别（战术级别的可能性居多）的电子干扰，同时无线电测向和监听等不仅可以用于战场侦察，日常监控收集信号情报也一样。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543819.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;第三是战场通讯、中继通讯等，彩虹-7携带的通讯模块可承担战场通讯中继、转发使命，以其大带宽可以同时容纳多个作战节点接入，作为战场数据网络的通讯节点存在。&lt;/p&gt;&lt;p&gt;第四是作为无人作战系统的算力中心，这需要彩虹-7配套相应的通讯模块实现，作为无人机蜂群核心搭载核心算力，然后统一指挥其它的CCA忠诚僚机，也就是说彩虹-7可以不用携带武器，忠诚僚机可以作为空中武器库使用嘛。&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;b&gt;&lt;strong&gt;为何在此时公开彩虹-7&lt;/strong&gt;&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;当然了，国产的大飞翼、准大飞翼这么多，彩虹-7型无人机可谓是唯一一款在滑跑和首飞阶段就大大方方公开亮相的，这和航空工业的同类型号形成鲜明对比。&lt;/p&gt;&lt;p&gt;此次公布的彩虹-7指挥方舱画面&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543994.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212544972.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不然你看攻击-11和攻击-21无人机都出来多少年了，都上了两次阅兵式了，也没真正有多少报道的画面。相比之下，彩虹-7确实“过于公开”了一些，不仅试飞画面拍了，甚至连机体的设计细节，指挥方舱内景都拍了。&lt;/p&gt;&lt;p&gt;既然拍了这么多细节，自然就有它的理由。很显然，如果是内装装备的话，根本不可能有这么高的公开度，什么在试飞阶段就给你拍，还上新闻？那唯一的解释就是，彩虹-7型无人机并不是一种用于内装的装备。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543957.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;毕竟，无论是从其总体所，还是从其同类产品来讲，中国空军的主战战机从来都是以航空工业为主。而从同类产品来说，攻击系列无人机已经对彩虹-7型无人机构成了同态竞争的关系。&lt;/p&gt;&lt;p&gt;因此从这个角度看，彩虹-7型无人机比较大的概率是一款立足外贸的装备。所以，也难怪研发方对该型无人机的宣传这么上心，首飞就直接报道了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543357.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;那么彩虹-7型无人机可能谁会要呢？这就不好说了：&lt;/p&gt;&lt;p&gt;一方面，该型无人机如果真的推向国际市场的话，可能是目前国际无人机市场上所能买到的性能最好的隐身侦察、察打一体无人机了。但是也正因为它的性能太好，是不是有可能会面临着买家买了根本不知道怎么用？毕竟用比较低端一些的无人机就能搞定的问题，这是有可能影响该无人机的销路的。&lt;/p&gt;&lt;p&gt;二方面，彩虹-7型无人机看起来并不是一个单一的无人机型号，背后肯定是一个基于忠诚僚机的无人作战体系。那么这套无人作战体系买了无人机还要买忠诚僚机，是否还要跟着买歼-35战斗机，也是买家需要考虑的一个问题，毕竟不是那么多国家都有钱自己搞一套小体系出来的。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2025/12/16/20251216212543447.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;总的来讲，这种具备极强隐身性能的无人机，作为国际军火市场上的一个新生事物，潜在用户，接受度等等都还有未知数，无论如何，也许在2026年的珠海航展上，很多事情都会变得明朗，到时候我们继续观察。&lt;/p&gt;													&lt;/div&gt;
 						
 						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Tue, 16 Dec 2025 15:20:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE41OTZaZHUzeFl4YmZRZ2FwdW1lT0FPN2g5c2E2ZjFhQjNTQnViSnhWUGUzUFpOUngxS1RMbU9LbTBqeWJuQllSMDl5aVJJR0QwSUV0d0xNU0thQkE</guid></item><item><title>阿里反腐再落重锤 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3761502</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 16 Dec 2025 13:16:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBwY2cwNGlaYWk5Y3BNbzRMQmhyM3Z3amgtLXJ0eGVZVFFXRlNRRTlNaUsyMklrTHpHVmpObWNyQ0UxR2l1elZwQS01TkprSngxOGpR</guid></item><item><title>“坚定持有AI赢家，别轮换”！摩根大通硬件团队：2026年“网络”增长将超越“算力” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3761492</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 16 Dec 2025 12:06:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9KcnFXQWhCNEJKdUVmYjRDRXJCZzE5eUNPYWlyRS1ZbE9ZLXM2QkdXZGJEa2hWUEVZZWczTVJkYkhGSU1acGxMNTVZLV95UXhPTENZ</guid></item><item><title>又一国产芯片巨头来了 壁仞科技冲刺“港股GPU第一股” - 驱动之家</title><link>https://news.mydrivers.com/1/1092/1092913.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
@@ -624,7 +687,89 @@ A飞跃其它车辆的视频，这架飞行汽车原地起飞后，从一辆特�
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 16 Dec 2025 09:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBSdnY4Q2ZkY1NsVUdJNzd6bTZTTHhkVDlEdHRvdFBrbVNBT0Nfek16MVl4VUxVWFFvSHhUc1YxNjFkc1hCWTd2YUN2RDVKcTN0eGdDcVRveGI</guid></item><item><title>AMD总裁率队来华，到访联想集团-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2025_12_16_800610.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 16 Dec 2025 09:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBSdnY4Q2ZkY1NsVUdJNzd6bTZTTHhkVDlEdHRvdFBrbVNBT0Nfek16MVl4VUxVWFFvSHhUc1YxNjFkc1hCWTd2YUN2RDVKcTN0eGdDcVRveGI</guid></item><item><title>太空“三只眼”拍出3D中国！揭秘资源三号04星强大能力-观察者网 - guancha.cn</title><link>https://www.guancha.cn/industry-science/2025_12_16_800612.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	今天（12月16日）11时17分，我国在太原卫星发射中心使用长征四号乙运载火箭，成功将资源三号04星发射升空，卫星顺利进入预定轨道，发射任务获得圆满成功。此次任务是长征系列运载火箭的第617次飞行。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;我国立体对地观测能力进一步提升&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	资源三号04星是由自然资源部主持建造的高分辨率立体测图卫星，将与在轨的资源三号02星、03星形成自主立体测绘卫星星座，获取高分辨率立体影像和多光谱影像，进一步提升我国立体对地观测能力。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	
+&lt;/p&gt;
+
+
+&lt;p&gt;
+	资源三号04星是资源三号系列卫星的第四颗。它充分继承了资源三号系列前序卫星的技术状态，并进行适当优化。星上搭载了先进的三线阵立体测绘相机和高精度激光测高载荷，能够实现对地面目标的高精度立体测绘。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160558564.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;资源三号04星应用系统副总设计师 周平&lt;/strong&gt;：卫星上面同时装载了三台相机拍摄，一台向前，一台垂直对地，一台向后，三台相机同时开机工作。一次成像能获取一个地面物体三个方向的影像，构成一个立体影像。类似于我们拍3D电影的时候，三个相机从不同的角度拍同一个场景之后，我们就可以播放出3D的电影效果。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160559362.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	资源三号04星将自然资源监管能力从“看得到”的二维平面，提升到“测得准”的三维立体空间。在三维影像图上直接做国土空间规划，更加直观、真实，不仅能定位地块，还能测算坡度；通过地质灾害发生前后三维对比，不仅能清晰展示灾害体周边环境特征，还能用于估算灾害体体积。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160600162.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	资源三号04星发射成功之后，将与资源三号02星、03星组网观测，进一步完善我国民用高分辨率光学测绘卫星的观测体系，进一步提升我国立体对地观测能力。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160601704.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;自然资源部国土卫星遥感应用中心副主任 高小明&lt;/strong&gt;：比如说一个地方发生了洪涝灾害，这个时候我们就要进行紧急拍摄，如果是双星组网的话，我们要3天才能等到它过一次境进行一次拍摄，但是如果是三星组网的话，一天之内我们就有一颗星可以过境，可以对我们的应急区域进行拍摄，有效提升我们对突发事件的应急能力。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;立体影像监测 助力生态环保督察&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	资源三号系列卫星一共发射了四颗。目前，01星已经退役，02星、03星都在轨运行而且状态良好。那么，资源三号卫星能应用于哪些领域呢？
+&lt;/p&gt;
+&lt;p&gt;
+	在自然资源部黑龙江基础地理信息中心，工作人员正在对资源系列卫星拍摄回传的数据进行整合处理。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160601674.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;自然资源部黑龙江基础地理信息中心主任 谭继强&lt;/strong&gt;：大屏幕上展示的就是我们利用资源系列的卫星传回的数据，现在就是亚布力的场景，可以看到山势的起伏以及雪场，还有村庄、河流，这些情况一目了然。这些卫星就像太空中的千里眼，可以发现大地上的每一处细节变化，我们把这些数据上传到专业平台，可以为各行各业提供科学决策作为相应的支撑。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160602763.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	生态环境监测，就是卫星遥感立体图像的应用场景之一。通过黑龙江省数字督察管理平台，当地矿山生态修复的监管效率大幅提升。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160602163.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;黑龙江省生态环境厅哈尔滨生态环境督察局局长 金宝石&lt;/strong&gt;：这个图片就是我们2018年矿山修复之前的影像资料，绿化率是比较低的。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160602818.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;黑龙江省生态环境厅哈尔滨生态环境督察局局长 金宝石&lt;/strong&gt;：这个图片就是我们2025年卫星遥感的图像，可以看到两个图片非常鲜明的变化，绿化率提高了。过去我们需要人员到现场进行实地的核查，一般每天一个工作人员只能核查3到5个点位，现在我们通过这项技术，每天每人平均能核查50个点位。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/2025/12/16/20251216160603637.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	不只是生态环境监测，资源三号卫星还能利用遥感立体影像的显著优势，在实景三维建设过程中快速获取大范围地形地貌信息；此外，卫星在住建领域的建设工程规划管理，在低空经济的空域分级分类、低空三维航线规划等方面都能发挥重要作用。
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Tue, 16 Dec 2025 08:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE5IdGtJMEVQdzBIRmNqN3QtYTlNWXhYV2VobVphTkl0TzBJQ196dlYxaFlDMmJ0Q25fY3YzdUpqcWQtNWFWcWFwZFZYdjlBSFByLV9ZX1hqTFdHbDlWblE2OFlmZm1NT0ZjWkxjRXB3d1k</guid></item><item><title>AMD总裁率队来华，到访联想集团-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2025_12_16_800610.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p align="center"&gt;
 	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
 &lt;/p&gt;
@@ -1683,7 +1828,60 @@ A飞跃其它车辆的视频，这架飞行汽车原地起飞后，从一辆特�
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 16 Dec 2025 03:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0ySXE0LXVmMkxhdHN0eDJobGhfTjJULU5wSTU4MXRicFJmQXE2MXkxNUFRR1NSbXJCMm1aVENLN0ZaNm5kQi1xdi1JTElZcXdkWXhIRUJQdmw</guid></item><item><title>我国L3自动驾驶来了！一文看懂L3到底是什么体验：不用握方向盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1092/1092773.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 16 Dec 2025 03:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0ySXE0LXVmMkxhdHN0eDJobGhfTjJULU5wSTU4MXRicFJmQXE2MXkxNUFRR1NSbXJCMm1aVENLN0ZaNm5kQi1xdi1JTElZcXdkWXhIRUJQdmw</guid></item><item><title>本周五开始！Steam冬季大促宣传片发布 - 3DM</title><link>https://www.3dmgame.com/news/202512/3933944.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;本周五开始！Steam冬季大促宣传片发布&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2025-12-16 10:53:02&lt;/span&gt;&lt;/p&gt;
+            
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/1216/1765852746731.webp" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	Valve今日正式宣布，一年一度的Steam冬季特卖将于北京时间12月19日（本周五）凌晨2点准时拉开帷幕，并持续至2026年1月6日凌晨2点结束。这场为期近三周的年度终极折扣盛宴，被视为玩家在年底清空愿望单、为假期囤积游戏的最佳时机。
+&lt;/p&gt;
+&lt;h3&gt;
+	宣传视频：
+&lt;/h3&gt;
+&lt;p align="center"&gt;
+	
+&lt;/p&gt;
+&lt;p&gt;
+	宣传片出镜游戏：《污痕圣杯：阿瓦隆的陨落》、《真・三国无双 起源》、《无主之地®4》、《Dune: Awakening 沙丘：觉醒》、《消逝的光芒：困兽》、《The Last of Us™ Part II Remastered》、《开球! REMATCH》、《Slime Rancher 2》、《天国：拯救2》、《Megabonk》、《数码宝贝物语
+时空异客》、《R.E.P.O.》、《刺客信条：影》、《漫威蜘蛛侠2》、《我们到了吗？》、《逃离鸭科夫》、《Dispatch》、《DELTARUNE》、《艾尔登法环
+黑夜君临》、《哈迪斯2I》、《Drive Beyond Horizons》
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20251216/1765852737_103520_png_r.webp" alt="本周五开始！Steam冬季大促宣传片发布"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	随着宣传片的发布，Steam平台即将进入熟悉的节日氛围。届时，数十万款游戏及软件将参与促销，其中不乏年度新作与经典名作的大幅折扣。历届Steam冬季特卖均以惊人的折扣力度和庞大的参与阵容著称，本次大促预计将延续这一传统，为全球玩家送上丰厚的节日礼物。
+&lt;/p&gt;
+&lt;p&gt;
+	除了直接的价格折扣外，Steam冬季特卖通常还会伴随“探索队列”、“贴纸收藏”等丰富的社区活动，玩家通过参与即可获得徽章、个人资料背景等虚拟奖励，为购物体验增添乐趣。同时，备受期待的“Steam年度游戏大奖”提名与投票活动也往往在此期间同步进行，让玩家能够为自己喜爱的作品助威。
+&lt;/p&gt;
+&lt;p&gt;
+	请各位玩家准备好钱包，调好闹钟，共同迎接这场属于游戏玩家的年终狂欢吧！
+&lt;/p&gt;                                &lt;/div&gt;
+                                                        &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Tue, 16 Dec 2025 02:53:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFBJLVB0c2tyc1B2UnFFeEpwUUpSYi04Z0FoeS1JRmRHaThVTXVtWHBmSTROUkQ4dTdOUmNlT25Wdm5PaFA4bmozbzAzVjd4NGFYUnNmWkdoaUs1cTFD</guid></item><item><title>我国L3自动驾驶来了！一文看懂L3到底是什么体验：不用握方向盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1092/1092773.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技12月16日消息，日前工信部正式官宣，我国首批L3级有条件自动驾驶车型准入许可，两款分别适配城市拥堵、高速路段的车型将在北京、重庆指定区域开展上路试点。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;根据定义，L3级是有条件的自动驾驶，驾驶员需随时保持接管能力，在必要时及时介入。&lt;/strong&gt;&lt;/p&gt;
@@ -3279,79 +3477,4 @@ A飞跃其它车辆的视频，这架飞行汽车原地起飞后，从一辆特�
 &lt;p&gt;此外， xAI据称正洽谈新一轮融资，估值或达2300亿美元。据估算，马斯克持有xAI约53%的股份，价值约600亿美元。&lt;/p&gt;
 &lt;p&gt;马斯克在过去五年创造了一系列财富里程碑。2020年3月，他的身家还仅为246亿美元；随着特斯拉股价飙升，到当年8月，他成为历史上第五位身家突破1000亿美元的人。&lt;/p&gt;
 &lt;p&gt;2021年1月，马斯克首次登顶全球首富宝座，净资产接近1900亿美元。同年9月，他成为历史上第三位身家突破2000亿美元的人。&lt;/p&gt;
-&lt;p&gt;随后，马斯克又在2021年11月突破3000亿美元、2024年12月突破4000亿美元，并于今年10月跨过5000亿美元关口。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Mon, 15 Dec 2025 20:32:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBubEI3S3htbFp5Tm9sdWV5bjR6X243dEJ1SEtPWVNjczloeDNiczZtWUN2VlE2dFlGeWpINzEtZ3Fpb29OR000Ng</guid></item><item><title>比特币跌破8.6万美元 进一步滑向年内低点 - 新浪财经</title><link>https://finance.sina.com.cn/world/2025-12-16/doc-inhaxqvw0391146.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    
-&lt;p&gt;　　比特币两周来首次跌破8.6万美元，随着全球最大的加密货币进一步滑入熊市区域，投资者情绪走弱。&lt;/p&gt;
-&lt;p&gt;　　分析人士表示，比特币在滑向其近期交易区间的下限，而且每当价格出现反弹，都会遇到在10月初纪录高位附近买入的投资者抛售。周一比特币一度下跌3.3%至85，578美元，较逾12.6万美元的纪录高点下跌约30%。&lt;/p&gt;
-&lt;p&gt;　　FalconX高级衍生品交易员Bohan Jiang表示：“比特币仍在8.5万美元至9.4万美元之间剧烈波动，整个加密货币市场普遍缺乏兴趣且成交量低迷。”&lt;/p&gt;
-
-&lt;p&gt;　　比特币近几周与其他风险资产同步下跌，但在它们反弹时却未跟随上行，打破了其通常的正相关走势。分析师指出，此轮下跌凸显市场在流动性偏弱和风险偏好下降的环境中承受压力，即便美联储上周降息也未能重振数字资产的动能。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 15 Dec 2025 19:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE00WE1xT0JkbUdHYWc1RVdibEVuYjdXaGR0Y25RTVAydGh2NnUyUWk2Vl9yRXVWY2lfUDBEbUtzQmtMWEExRTdTdk5iRE1tdkE4M1AxZVR3MnFMeUxWVFRpcWxPX3BNWkNobnRCV01GV2lmSHA0bnBEZGVR</guid></item></channel></rss>
+&lt;p&gt;随后，马斯克又在2021年11月突破3000亿美元、2024年12月突破4000亿美元，并于今年10月跨过5000亿美元关口。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Mon, 15 Dec 2025 20:32:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBubEI3S3htbFp5Tm9sdWV5bjR6X243dEJ1SEtPWVNjczloeDNiczZtWUN2VlE2dFlGeWpINzEtZ3Fpb29OR000Ng</guid></item></channel></rss>
