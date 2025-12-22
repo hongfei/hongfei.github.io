@@ -1,5 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>MacOS 26 Bug致显示器闪烁：官方多次更新问题反而更糟！ - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093819.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Waymo自动驾驶出现史诗级丑闻 博主：特斯拉FSD实测不会卡死 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093848.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月22日消息，当地时间本月21日，加州旧金山Waymo自动驾驶出租车发生“史诗级丑闻”：&lt;span&gt;&lt;strong&gt;几十辆车在各个十字路口趴窝，让多个路段交通严重瘫痪&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;之所以如此，是因为PG&amp;amp;E太平洋煤气电力公司的一座变电站发生火灾，旧金山大概30%的地区发生大范围停电，包括所在区域的红绿灯。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这导致所有Waymo自动驾驶出租车开到路口发现感知不到红绿灯后，于是都打开双闪停在了路口，造成了大规模拥堵。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251222/4fa6db54-3cd0-48d8-b695-09dcfe992291.jpg" target="_blank"&gt;&lt;img alt=" Waymo自动驾驶出现史诗级丑闻 博主：特斯拉FSD实测不会卡死" h="450" src="//img1.mydrivers.com/img/20251222/S4fa6db54-3cd0-48d8-b695-09dcfe992291.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251222/00ce2ce9-67b9-430e-9025-7916f6c553aa.png" target="_blank"&gt;&lt;img alt=" Waymo自动驾驶出现史诗级丑闻 博主：特斯拉FSD实测不会卡死" h="456" src="//img1.mydrivers.com/img/20251222/S00ce2ce9-67b9-430e-9025-7916f6c553aa.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251222/3b4a13eb-b6a7-4603-a924-7c499378dc66.jpg" target="_blank"&gt;&lt;img alt=" Waymo自动驾驶出现史诗级丑闻 博主：特斯拉FSD实测不会卡死" h="800" src="//img1.mydrivers.com/img/20251222/S3b4a13eb-b6a7-4603-a924-7c499378dc66.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;博主“不是郑小康”关注到这件事，他分析了相关成因：&lt;/p&gt;
+&lt;p&gt;很显然Waymo Robotaxi的远程服务没有响应或者至少是无法同时响应这种大规模的突发趴窝，不然也不会出现后续警车都赶到来解决。&lt;/p&gt;
+&lt;p&gt;虽然Waymo还没回应，但很明显，&lt;strong&gt;根本原因是Waymo Driver压根没有被编程如何应对停止工作的红绿灯。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接着他称赞了特斯拉的FSD，称类似的场景自己去年CES期间在美国洛杉矶试驾FSD的时候真遇到过。&lt;/p&gt;
+&lt;p&gt;博主介绍，当时当时试驾的版本还是FSD v13，并且是头车，&lt;span&gt;&lt;strong&gt;但FSD依然能够在开到路口检测不到红绿灯的时候，根据对向和横向的车流执行交替通行原则，融入交通流不影响交通&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;他最后就Waymo和FSD的不同表现做了对比总结：&lt;/p&gt;
+&lt;p&gt;尽管Waymo这一套路线的安全性、可靠性在绝大多数现实世界的道路场景下是赢得了消费者和监管机构的认可的，已经开启了Robotaxi的第一步。&lt;/p&gt;
+&lt;p&gt;“&lt;span&gt;&lt;strong&gt;但真正可泛化的Robotaxi，必然要求模型具备应对非典型场景的实时推理能力，如果没有基础模型，场景无法穷尽，实时推理亦不可能实现&lt;/strong&gt;&lt;/span&gt;。”&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251222/796fa9bbfc0d4c3592556f151c47d6b7.png" target="_blank"&gt;&lt;img alt=" Waymo自动驾驶出现史诗级丑闻 博主：特斯拉FSD实测不会卡死" h="1013" src="//img1.mydrivers.com/img/20251222/s_796fa9bbfc0d4c3592556f151c47d6b7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 22 Dec 2025 01:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5WdjE1bTRxUTVWeVZoSFBEaUxzNTdoTDRZa1BpRXg2YWRmeG9pMGtmeWM0ZjNYTzZpeGxNV3BVV2VVQWRLVGZ0MFFvR09Uc1c2S09pOHBuZGw</guid></item><item><title>日本拟重启全球最大核电站 - 观察者</title><link>https://www.guancha.cn/internation/2025_12_22_801188.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	据共同社12月18日援引知情人士消息报道，东京电力公司目前正重点考虑于明年1月20日重启位于日本新泻县的柏崎刈羽核电站6号机组。
+&lt;/p&gt;
+&lt;p&gt;
+	该核电站是目前全球装机容量最大的核电站，距离东京仅约220公里。2011年东日本大地震及其引发的海啸导致福岛第一核电站发生核事故，此后日本全国共有54座核反应堆被迫关停，柏崎刈羽核电站亦在其中。
+&lt;/p&gt;
+&lt;p&gt;
+	报道称，日本目前已重启可运行的33座反应堆中的14座，高市政府正试图借此逐步摆脱对进口化石燃料的依赖。若此次重启获批，柏崎刈羽核电站将成为东京电力公司事故后首座重新投入运行的核电站。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2025/12/22/20251222080016645.png"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	日本新泻县柏崎刈羽核电站&lt;span&gt; 路透社&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	程序审批方面，知情人士称柏崎刈羽核电站的6号和7号机组已通过作为重启前提的新安全标准合规审查。若新泻县议会22日投票通过该决议，该县知事花角英世将正式告知高市政府同意重启，并完成地方层面的相关同意手续，东京电力公司预计最快将于本月24日向原子能规制委员会提交“使用前确认”申请，接受设备最终检查。
+&lt;/p&gt;
+&lt;p&gt;
+	东京电力公司发言人高田正胜表示，公司“始终坚定承诺，绝不让类似事故重演，并确保新潟居民不会经历同样的事情”。
+&lt;/p&gt;
+&lt;p&gt;
+	此外，东京电力公司今年早些时候还承诺，未来10年将向新潟县投入约1000亿日元（约合人民币48亿元），以争取当地居民对核电站重启的理解与支持。
+&lt;/p&gt;
+&lt;p&gt;
+	另据路透社报道，日本新潟县10月公布的民调显示，60%的当地居民认为重启核电站的条件尚不成熟，近70%的当地居民则对东京电力公司的运营资质深感忧虑。
+&lt;/p&gt;
+&lt;p&gt;
+	一名在福岛核事故后撤离并定居新潟的女性向路透社表示，她当年的住所处在福岛核事故发生后设立的约20公里辐射隔离区内。“我亲身经历过核事故的风险，无法对其轻描淡写，”她坦言，福岛事故造成的心理创伤至今仍影响着她。
+&lt;/p&gt;
+&lt;p&gt;
+	“即便是上月对重启核电站表示支持的花角英世，也表达了希望日本最终能减少对核能依赖的愿望。”她说，“希望有一天人们不再需要依赖这种让人担忧的能源”。
+&lt;/p&gt;
+&lt;p&gt;
+	目前，化石燃料仍占据日本发电总量的60%至70%。去年，日本在进口液化天然气和煤炭上的支出高达10.7万亿日元（约合人民币4900亿元），这一数额已占到其进口总额的十分之一。
+&lt;/p&gt;
+&lt;p&gt;
+	也有部分日本媒体分析认为，高市政府如此强烈支持推动核电重启，与日本寻求突破“无核三原则”有关。据日本《朝日新闻》报道，当地时间12月18日，一名负责向日本首相高市早苗提供安全保障政策的官员向媒体表示，鉴于日本面临“严峻的安全保障环境”，他个人认为“日本应当拥有核武器”。
+&lt;/p&gt;
+&lt;p&gt;
+	制造核武器主要依靠两大材料，一种是铀235，纯度从原矿石含量0.7%提纯至90%时，就可以制造核武器了。另一种是钚239，需要铀238在反应堆中，经过中子照射后生成。
+&lt;/p&gt;
+&lt;p&gt;
+	与铀235相比，钚239的武器化非常难以监管。因为只要有反应堆就行，也就是只要该国存在核电厂，就可以制造武器级的钚239。
+&lt;/p&gt;
+&lt;p&gt;
+	国际原子能机构（IAEA）的公开数据显示，截至2023年，日本申报的分离钚总量约为44.5吨，其中约8.7吨存放于日本境内。若根据核武器设计的核心需求进行估算，日本国内的8.7吨分离钚储量理论上足以制造至少1100枚核弹。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Mon, 22 Dec 2025 01:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE0ySURGRy1xZTVaZEhoZlk1dWpoMzhkUWRVcnN1UUFNbGZ5MEZqa3ZQVFZWWkJpUVhfQnRHSXZlejhLUlRwUWJkOWsyd2tqbFRCbkc5SENDVUtVUW1EVUxsRnZrVDJlQ0hkaFE</guid></item><item><title>MiniMax首次披露业绩！将与智谱争夺大模型“第一股” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3761813</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 22 Dec 2025 00:33:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBtR2RlZlhvRWZnZ2FyNUdsanh2dHhlMzR4QkZ1S3g5UlllbFBaZDN0aWZOYk5RZktmX2M2RHYwVlp1ZDNpOTllcGVucmZmT3RqamNv</guid></item><item><title>连续2周碾压苹果！华为重夺中国手机第一：Mate 80周销量杀入前二 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093842.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;连续2周碾压苹果！华为重夺中国手机第一：Mate 80周销量杀入前二&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-12-22 08:29:41  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1093842-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月22日消息，根据权威三方机构数据显示，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1091/1091931.htm" target="_blank"&gt;自华为Mate80系列发布以来，华为手机国内市场份额连续2周超越苹果，重夺国内市场份额第一&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;从数据上看，W48、W49周中国手机市场排名上，华为都遥遥领先，份额分别是27.81%和22.89%。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251211/06f573e92229454d81f1fcb9f04d38f8.jpg" target="_blank"&gt;&lt;img alt="连续2周碾压苹果！ Mate 80助力：华为重夺中国手机市场份额第一" h="800" src="//img1.mydrivers.com/img/20251211/s_06f573e92229454d81f1fcb9f04d38f8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;第二名苹果对应的市场份额分别是W48的17.12%和W49的18.65%。&lt;/p&gt;
+&lt;p&gt;此外，博主“@智慧芯片案内人”还发布了第49周的机型销量排名，其中iPhone 17 Pro Max凭借出色的市场表现，成功登顶当周销量冠军。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;排名中还显示，紧随其后的是华为Mate 80，位居第二，同样表现出色。iPhone 17、iPhone 17 Pro分别位列第三和第四名。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，荣耀X70、vivo Y50 2025、OPPO Reno15、A5x、荣耀500和vivo Y500也都在前十名中（排名从左到右依次进行）。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251213/43649802-037e-49ba-9943-ece2d4b3eb7a.jpg" target="_blank"&gt;&lt;img alt="华为份额重回中国第一！Mate 80系列销量达75.49万" h="337" src="//img1.mydrivers.com/img/20251213/S43649802-037e-49ba-9943-ece2d4b3eb7a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 22 Dec 2025 00:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBGd2NSXy1RbEc2c2VyWFVkMU1peE9YcVdQSE04eGxfYWNmLUVERTJ1eENJcjc4OWdOeTc5cXZWVEtQNFVMMDhtaXhCY0tsalQxZTdzZnBOSFE</guid></item><item><title>中国电竞显示器最新线上销量TOP 10：小米同比暴涨110% 增幅第一 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093840.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月22日消息，今日，研究机构洛图科技发布2025年11月中国大陆电竞显示器线上市场品牌销量TOP 10。&lt;/p&gt;
+&lt;p&gt;据了解，&lt;strong&gt;中国大陆电竞显示器11月线上市场（不含抖快等内容电商）销量为73万台，销售额为8亿元，销量与销额同比均增长10.1%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从品牌格局来看，市场延续上月稳定态势，AOC、HKC、SANC稳居销量前三。&lt;/p&gt;
+&lt;p&gt;其中，AOC市占率超过18%；HKC市占率15%，但表现承压，市占率同比下降2个百分点，销量同比下滑4%；SANC市占率8%，销量同比降幅超过10%。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251222/8c397dda32c649e1b1d8767d7eecedc2.png" target="_blank"&gt;&lt;img alt="中国电竞显示器最新线上销量TOP 10：小米同比暴涨110% 增幅第一" h="323" src="//img1.mydrivers.com/img/20251222/s_8c397dda32c649e1b1d8767d7eecedc2.png" w="600"&gt;&lt;/a&gt;&lt;br&gt;
+2025年11月 中国大陆电竞显示器线上市场TOP品牌销量份额及同比变化&lt;/p&gt;
+&lt;p&gt;作为行业的核心增长力量，小米今年以来在电竞显示器市场的布局成效显著。&lt;/p&gt;
+&lt;p&gt;数据显示，11月小米市占率排名第五，&lt;span&gt;&lt;strong&gt;销量同比增长高达110%，增幅位居行业第一。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在细分赛道方面，小米在电竞双模显示器市场同样表现突出，2025年前11个月，小米在该细分市场的线上销量份额位列第二。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;中国大陆电竞显示器11月线上市场销量TOP 10：&lt;/strong&gt;AOC、HKC、SANC、KTC、小米、泰坦军团、ROG、联想、华硕、创维。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251222/0198e1f849b84eddabfd7a5abecb49fa.jpg" target="_blank"&gt;&lt;img alt="中国电竞显示器最新线上销量TOP 10：小米同比暴涨110% 增幅第一" h="358" src="//img1.mydrivers.com/img/20251222/s_0198e1f849b84eddabfd7a5abecb49fa.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 22 Dec 2025 00:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1VeXpWWEV4Z1JGa1hqNFZkaHRHWGwtVlRjWVctM0hqRzIxbVMySVg0dHlYRkx5N1pGMEVNTFhKblZ2dXoyLV9tUlI3eUVQdkdwLVkwdl9MNkc</guid></item><item><title>男子因沉迷AI聊天就医：聊到凌晨三点 边打字边流泪 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093836.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月22日消息，据媒体报道，一则“男子因沉迷和AI聊天就医”的新闻近日引发广泛关注。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四川成都一男子因过度投入与人工智能的对话，日常生活受到影响，最终主动前往医院求助。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“和AI聊天总能得到正向回应”，这种被全然接纳的感受让他一度聊到凌晨三点，一边打字一边流泪。然而半年后，每当与AI的对话因达到平台上限而被迫中断、必须重开新窗口时，他都会感到强烈的焦虑，最终决定就医。&lt;/p&gt;
+&lt;p&gt;“严格来说，这位男子目前还处于一种心理困境，尚不能定义为疾病。”浙中医大二院临床心理科主任韩耀静指出，AI的反馈往往是“秒回”，极具同理心，且总是保持“正向”与“接纳”，容易让大脑产生愉悦感，这正是许多人愿意乃至沉迷与AI交流的原因。&lt;/p&gt;
+&lt;p&gt;据统计，我国平均每天约有2亿人使用AI软件，网页AI产品的单日访问总量超过6亿。&lt;/p&gt;
+&lt;p&gt;AI正在成为一些人生活中无所不能的伴侣。2025年上映的电影《完美伴侣》，便探讨了智能机器人与人类之间情感关系的复杂性。&lt;/p&gt;
+&lt;p&gt;AI的回应通常经由算法优化，倾向于避免冲突与负面内容，形成了一种心理意义上的“无菌环境”。&lt;/p&gt;
+&lt;p&gt;然而韩耀静提醒，这种单一的回应模式存在缺陷：“研究表明，适度的情绪挑战和现实社交中的摩擦，对心理健康其实很重要。它们有助于培养心理韧性和解决冲突的能力。”&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251222/74e357fdf4ac40158693e7490552419a.png" target="_blank"&gt;&lt;img alt="男子因沉迷AI聊天就医：聊到凌晨三点 边打字边流泪" h="380" src="//img1.mydrivers.com/img/20251222/s_74e357fdf4ac40158693e7490552419a.png" w="568"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;长期处于被 AI “完美回应”包裹的状态，可能削弱个体处理现实人际关系的能力，在真实社交中更容易焦虑和回避。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在西方国家，已有AI重度使用者出现“现实感丧失”的症状。2025年初，美国有精神科医生报告了12例因过度与AI互动导致“现实测试能力”受损的病例。&lt;/p&gt;
+&lt;p&gt;患者开始混淆AI生成的关系与现实人际交往，甚至出现妄想、思维混乱等症状，逐渐脱离现实社交。&lt;/p&gt;
+&lt;p&gt;沉迷与AI聊天，与沉迷网络小说、游戏等行为类似，都属于“行为成瘾”的范畴。韩耀静强调，对于已达到依赖或成瘾程度的行为，有效治疗是一个系统性的专业过程，远非“切断电源”那么简单。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;治疗首先需判断“沉迷”是否为抑郁症、焦虑症、社交恐惧等潜在问题的表现，并优先处理原发病。&lt;/strong&gt;对于单纯的行为依赖，则常以心理治疗为主，结合药物、家庭及社会支持进行综合干预。行为成瘾的治疗往往需要一定周期，急性期可能持续数月，之后仍需长期维持以防止复发。&lt;/p&gt;
+&lt;p&gt;“治疗的目标不是‘永远不用’，而是恢复自主、有节制的控制能力，让工具回归工具的位置。”韩耀静最后强调。&lt;/p&gt;
+&lt;p&gt;韩耀静建议家庭、学校应加强AI认知教育，明确其工具属性，帮助使用者——尤其是青少年——分辨虚拟陪伴与真实情感，重获对现实生活的主导权。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251222/a2501aa5603d47588f39d5a3636f78ff.png" target="_blank"&gt;&lt;img alt="男子因沉迷AI聊天就医：聊到凌晨三点 边打字边流泪" h="363" src="//img1.mydrivers.com/img/20251222/s_a2501aa5603d47588f39d5a3636f78ff.png" w="570"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 23:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ORk8yVmhGSnRlMnA2cUtxWnRHMlFoSklQcVZsblVNYU5EMExUVlY4UE5CUkl4ZnJHSi1fODdBcnFRczh5VlMyUF9XcHREZWxUQmduTXdjUjU</guid></item><item><title>罗永浩称电信网速问题已解决：现在网速快的让人有些惶恐 - 凤凰网科技</title><link>https://tech.ifeng.com/c/8pHfmfNZ6EJ</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;快科技12月22日消息，近日，罗永浩吐槽在上海使用电信独享千兆宽带，网速长期不足百兆，随后此事也是被挤上了热搜。&lt;/p&gt;&lt;p&gt;有网友因此质疑罗永浩道：“批天批地，已经失去本心了，流量使人膨胀，动不动就一哭二闹三上吊网上搞舆论，适可而止，早晚反噬。”&lt;/p&gt;&lt;p&gt;对此，罗永浩就此回应称：“本心就是花了钱之后相应地要网速正常，一直不给解决就要斗争啊，谁哭谁闹谁上吊了？”罗永浩直言，“有些xx仅仅是因为看不惯别人的风格，就能使自己面目全非，失去判断能力，这是病，得治”。&lt;/p&gt;&lt;p&gt;&lt;img alt="罗永浩称电信网速问题已解决：现在网速快的让人有些惶恐！" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/01E11FE4B28FBB76FDD1F4A0698C701843BD3618_size238_w600_h609.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;罗永浩表示，自己发朋友圈的当天就得到（上海电信）反馈，第二天就来了客服，现在的网速…快得让人有些惶恐。什么时候“普通网友”找客服也是这效果，那才叫“本心”。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;有行业专家对此事的看法是，千兆宽带本身不是虚假营销，但如果运营商宣传措辞让消费者合理误解为“使用时实际就能达到1000 Mbps”，而没有充分说明条件与限制，这种营销是可能被认定为虚假或误导性营销的。&lt;/p&gt;&lt;p&gt;&lt;img alt="罗永浩称电信网速问题已解决：现在网速快的让人有些惶恐！" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/490B080B808489B1E5347587F3DCE803AE6A870E_size151_w600_h400.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;&lt;p&gt;责任编辑：雪花&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网科技</author><pubDate>Sun, 21 Dec 2025 23:28:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE5yTGtNZU1wTXVuMll5eUdKLU1ySjBBOVN2ZHpqZ1czcGhjSFd5aDJMMzdvdlFPU3VfZVJYRkNZaWdSU3REVTYyRV9nY3M</guid></item><item><title>【早报】A股市场千亿级并购来了；首块L3级自动驾驶牌照诞生 - 财联社</title><link>https://www.cls.cn/detail/2235799</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;img src="https://img.cls.cn/images/20251222/1zpsDH9AlZ_1015x373.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;宏观新闻&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、国务院总理李强12月19日主持召开国务院常务会议，深入学习贯彻习近平总书记在中央经济工作会议上的重要讲话精神，对贯彻落实中央经济工作会议决策部署作出安排。&lt;/p&gt;
+&lt;p&gt;2、国家发展改革委、市场监管总局、国家网信办制定了《互联网平台价格行为规则》。平台内经营者在不同平台销售商品或者提供服务的，依法自主定价。平台经营者不得违反《中华人民共和国电子商务法》第三十五条规定，采取提高收费标准、增加收费项目、扣除保证金、削减补贴或者优惠、限制流量、搜索降序、算法降权、屏蔽店铺、下架商品或者服务等措施。&lt;/p&gt;
+&lt;p&gt;3、12月20日，商务部党组扩大会议在京召开。会议强调，要大力提振消费，扩大优质商品和服务供给，释放服务消费潜力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;行业新闻&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、12月20日，首块L3级自动驾驶专用正式号牌“渝AD0001Z”在重庆诞生，标志着长安汽车开启L3级自动驾驶时代。&lt;/p&gt;
+&lt;p&gt;2、第二届未来运动会17日至23日在阿联酋阿布扎比举行。中国俱乐部自主设计制造的机器人深海巨鲨3参加了格斗机器人大赛，并在决赛中击败国外俱乐部获得冠军。&lt;/p&gt;
+&lt;p&gt;3、山西省人民政府宣布废止《山西省人民政府关于禁止生产、经营、储存、运输和燃放烟花爆竹的通告（2020年8月17日）》。对此，中国烟花爆竹协会称，协会将积极支持和协助山西调整烟花爆竹燃放政策的相关工作实施，助力科学精准施策，推动行业健康有序发展。&lt;/p&gt;
+&lt;p&gt;4、《2025年世界贸易报告》指出，在配套政策到位的情况下，人工智能有望通过提升生产率、降低贸易成本，到2040年将跨境货物和服务贸易额提高34%至37%，全球GDP增长12%至13%。&lt;/p&gt;
+&lt;p&gt;5、2025年全年动画电影票房突破250亿，成为中国影史动画电影票房最高一年。《哪吒之魔童闹海》《疯狂动物城2》《浪浪山小妖怪》分列2025年动画电影票房榜前三位。&lt;/p&gt;
+&lt;p&gt;6、三星发布全球首款2nm智能手机芯片——Exynos 2600系统芯片，市场普遍预计该处理器将至少为明年2月底将发布的Galaxy S26系列的某些版本提供动力。&lt;/p&gt;
+&lt;p&gt;7、12月20日，全球首台商用超临界二氧化碳发电机组“超碳一号”示范工程在贵州六盘水首钢水城钢铁厂成功投运，意味着全球首次将超临界二氧化碳发电技术从实验室推向商业落地。&lt;/p&gt;
+&lt;p&gt;8、12月18日，王力宏成都演唱会首次引入人形机器人伴舞，共同演绎《火力全开》，实现了全球首个演唱会机器人舞台。6名宇树科技G1机器人最后一起完成高难度“韦伯斯特”空翻结尾，燃炸全场。20日，特斯拉CEO埃隆·马斯克在社交平台转发相关视频，并配文评价“Impressive（令人印象深刻）”。&lt;/p&gt;
+&lt;p&gt;9、从上海交通大学获悉，该校科研人员近日在新一代光计算芯片领域取得突破，首次实现了支持大规模语义媒体生成模型的全光计算芯片。相关成果12月19日发表于《科学》杂志。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;公司新闻&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、中国神华公告，拟购买国家能源集团及其全资子公司西部能源持有的相关资产，交易价格1335.98亿元。&lt;/p&gt;
+&lt;p&gt;2、通用人工智能科技公司MiniMax通过港交所聆讯。MiniMax（上海稀宇科技）是2022年初成立的中国大模型初创公司，总部位于上海，专注于研发文本、语音、视觉多模态融合的通用人工智能技术。&lt;/p&gt;
+&lt;p&gt;3、12月19日，北京智谱华章科技股份有限公司更新聆讯后资料集，意味着该公司港交所IPO正式通过聆讯。&lt;/p&gt;
+&lt;p&gt;4、12月20日，摩尔线程在北京举办首届“MUSA开发者大会”（MDC 2025），创始人、董事长兼CEO张建中介绍了公司研发历时五年的核心成果——新一代全功能GPU架构“花港”。&lt;/p&gt;
+&lt;p&gt;5、观想科技公告称，筹划购买辽晶电子不低于60%的股权，公司股票今起停牌。&lt;/p&gt;
+&lt;p&gt;6、*ST东易公告称，北京市第一中级人民法院于2025年12月21日裁定批准公司重整计划。公司将进入重整计划执行阶段。&lt;/p&gt;
+&lt;p&gt;7、上峰水泥公告，公司通过全资子公司投资的粤芯半导体首次公开发行股票（IPO）并在创业板上市申请于12月19日获深交所受理。公司间接持有此次公开发行上市前粤芯半导体的股权比例约为1.4957%。&lt;/p&gt;
+&lt;p&gt;8、*ST名家公告称，公司资本公积金转增股本已全部完成，共计转增7.3亿股，总股本增至14.26亿股。公司股票今起复牌。&lt;/p&gt;
+&lt;p&gt;9、壁仞科技在港交所公告，在港上市拟发行247,692,800股H股（视乎发售量调整权及超额配股权行使与否而定），定价区间介于17至19.6港元/股。预期H股将在明年1月2日开始交易。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;环球市场&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、上周五，在甲骨文和英伟达走强的带动下，人工智能（AI）概念股重新站稳脚跟，美股三大指数连续第二个交易日集体收涨。截至收盘，道琼斯指数涨0.38%，标普500指数涨0.88%，纳斯达克指数涨1.31%。&lt;/p&gt;
+&lt;p&gt;2、美国总统唐纳德·特朗普上周五宣布与九家制药公司达成协议，这是一系列相关协议中的最新一批。这些协议旨在以降低部分美国人的药品价格来换取三年关税宽限期。&lt;/p&gt;
+&lt;p&gt;3、近日，SpaceX旗下“星链”计划的一颗卫星日前在太空中发生异常，产生了少量碎片并与地面失去联系。SpaceX表示，这颗卫星的轨道高度迅速下降4000米，表明发生了某种爆炸。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;投资机会参考&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、OpenAI发力教育领域，机构指出“AI+教育”未来增长动力强劲&lt;/p&gt;
+&lt;p&gt;OpenAI已在美国多所高校建立起“滩头阵地”，成功化解了大学管理层对人工智能的戒心，让ChatGPT在成为下一代劳动者首选助手的竞赛中抢得先机。根据媒体查阅的采购订单，OpenAI已向约35所公立大学出售了超过70万份ChatGPT授权，供学生和教职员工使用。&lt;/p&gt;
+&lt;p&gt;申万宏源证券指出，“AI+教育”高速增长的核心驱动力来自政策、技术与市场三方面的共振。海外成功案例如多邻国（Duolingo）为“AI+教育”提供了可复制的商业化范式，其付费用户规模与营收的持续增长，证明了AI教育产品在提升学习效果与实现商业变现上的双重潜力。尽管“AI+教育”整体仍处发展早期，但其应用场景广阔，未来增长动力强劲。当前行业在技术融合深度与市场渗透率上尚有提升空间，但随着成本下降与用户认知提高，产品普及速度将加快。投资者可重点关注在To C端具备数据、算法与内容优势的科技企业，以及深耕教育场景的硬件与解决方案提供商，关注传统教培机构的转型机会。&lt;/p&gt;
+&lt;p&gt;2、2026年用于数据中心资本支出的业务支出有望再增长50%&lt;/p&gt;
+&lt;p&gt;据摩根大通北美分析师团队的一份报告，尽管市场存在对人工智能泡沫的担忧，但一些领先的半导体和网络公司仍有可能在2026年再次跑赢大盘。一个由HarlanMa领导的分析师团队估计，2026年用于数据中心资本支出的业务支出可能会再增长50%。&lt;/p&gt;
+&lt;p&gt;华鑫证券分析指出，英伟达CEO黄仁勋近期预警AI能源危机，指出算力需求爆发将挑战传统能源供应。美国电力短缺已制约其AI发展，而中国电力装机规模领先，国内电力设备产业链完整，有望同时受益于国内电网稳健投资与全球（尤其是北美）AI数据中心扩容带来的增量机遇。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Sun, 21 Dec 2025 23:08:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBDeVJFaWEwMWJqQUdoY2U3TzUxRWp2TjA3N0xnUkkxNF9Ic013eEZ0ZFNLOUZMQzFiSWlYWnJaQmRlSHEtMEphbQ</guid></item><item><title>MacBook Pro明年重磅升级：首发全新OLED+M6芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093826.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月22日消息，最新消息指出，苹果将于明年对MacBook Pro进行全面改版，这款重新设计的MacBook Pro有五大关键升级点，具体如下：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1、OLED显示屏&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2024年苹果在iPad Pro上引入了OLED屏，明年苹果将OLED应用到MacBook Pro上，带来更高的亮度、更好的对比度和更出色的色彩表现。&lt;/p&gt;
+&lt;p&gt;据悉，&lt;span&gt;&lt;strong&gt;苹果全新MacBook Pro将采用与iPad Pro相同的串联式OLED显示技术。&lt;/strong&gt;&lt;/span&gt;众所周知，单层OLED有一层红、绿、蓝色层，而双层串联OLED则有第二层RGB色层，两层串联堆叠可以提高屏幕亮度，同时延长使用寿命。&lt;/p&gt;
+&lt;p&gt;除了升级OLED，苹果可能会取消刘海设计，转而采用更小的挖孔屏形态。值得注意的是，该报告并未明确说明MacBook Pro屏幕是单挖孔还是说类似iPhone的灵动岛，但无论如何，改版后的MacBook Pro屏幕开孔都不会像现在这么大。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、更轻薄的设计&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;苹果2026款MacBook Pro采用更轻薄的设计。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3、触摸屏&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;越来越多的证据表明苹果正朝着触摸屏方向发展，供应链分析师郭明錤认为，触摸屏功能很可能会在2026年MacBook Pro中成为现实。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4、支持蜂窝网络&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;预计苹果2026款MacBook Pro支持蜂窝网络，此前马克·古尔曼称苹果将于2026年为Mac配备自研调制解调器，这意味着MacBook Pro也将支持蜂窝网络连接。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5、M6芯片&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;全新改版的MacBook Pro首发M6系列芯片，预计M6将是苹果首批采用台积电2纳米技术的产品，同期的iPhone A20芯片也将采用该工艺。&lt;/p&gt;
+&lt;p&gt;可以确定的是，MacBook Pro将首发M6 Pro和M6 Max芯片，至于苹果是否会推出搭载M6芯片的基础款14英寸MacBook Pro，目前还无法确定。之前马克·古尔曼称此次改版仅限于M6 Pro和M6 Max机型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6、发布日期&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;全新MacBook Pro最快会在2026年下半年亮相。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251222/a62308dc8fdb400a819742747d5341fd.jpg" target="_blank"&gt;&lt;img alt="MacBook Pro明年重磅升级：首发全新OLED+M6芯片" h="399" src="//img1.mydrivers.com/img/20251222/s_a62308dc8fdb400a819742747d5341fd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 22:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9CTGs5SXhuOFYyMjFZczZuZFlPQkdibWtWSWpxU0JxUldYV3dXWGEtTlU0cExkdFJoM1E2RXVUSDFDSWxrVjVpMk94OVAxeXJ5UUpDRTJHM0c</guid></item><item><title>美国“星链”一颗卫星或爆炸失联-观察者网 - 观察者</title><link>https://www.guancha.cn/internation/2025_12_22_801175.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	美国太空探索技术公司旗下“星链”计划的一颗卫星日前在太空中发生异常，产生了少量碎片并与地面失去联系。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/hmt/2025/12/22/20251222064241104.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	“星链”19日在社交媒体账号上发文称，17日，这颗卫星的轨道高度迅速下降4000米。目前卫星大致保持完整，正在翻滚，预计将在几周内重新进入地球大气层并完全烧毁。该公司正与美国太空军和美国国家航空航天局合作监测卫星碎片。
+&lt;/p&gt;
+&lt;p&gt;
+	追踪卫星机构澳大利亚近地轨道实验室公司表示，发现了“数十块”可能是事故残骸的碎片，可能还会发现更多碎片。这颗卫星的碎片可能对其他在轨运行的卫星构成威胁。
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Sun, 21 Dec 2025 22:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBoSk9IYmJQbGljNWlBLUFzQlotRDZYSmNfUTBHOWtzVF82bkY3SE5wQmRZMEdweXZLOTV6NTVPVWdkdnVEWGNGOXcteWlKVWZNQmk0TWg2Nmk0YmhFZkhsOFFiNHRxQ1NpV0E</guid></item><item><title>内部财务数据显示：OpenAI 人工智能运营效率持续提升 - 新浪财经</title><link>https://finance.sina.com.cn/world/2025-12-22/doc-inhcqsvx5208418.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　就在 OpenAI 洽谈规模高达 1000 亿美元的史无前例融资轮之际，其在业务运营层面的多项关键优化成果足以引以为傲。尽管算力总成本占营收的比重依旧居高不下，但在为支撑 ChatGPT 订阅业务、向企业客户出售模型使用权而投入的每一分服务器运营成本中，公司正实现更高的营收回报。&lt;/p&gt;
+&lt;p&gt;　　据一位了解该公司财务状况的人士透露，OpenAI 面向付费用户的算力利润率 —— 即扣除为付费用户运行人工智能模型的成本后剩余的营收占比 —— 已从去年年末的约 52%、2024 年 1 月的约 35%，跃升至今年 10 月的约 70%。&lt;/p&gt;
+
+&lt;p&gt;　　据《The Information》对其财务数据的分析，与之形成对比的是，竞争对手Anthropic去年的算力利润率约为负 90%。该分析显示，Anthropic有望在今年年底将这一利润率提升至约 53%，而其最乐观的预测显示，明年该指标或将达到 68%。&lt;/p&gt;
+&lt;p&gt;　　不过，从整体来看，Anthropic的预测数据表明，若将面向非付费用户的人工智能模型运行成本以及模型训练成本纳入考量，该公司的综合服务器运营效率将超越 OpenAI。OpenAI 拥有数亿免费聊天&lt;span id="stock_sz300024"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz300024/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;机器人&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz300024"&gt;&lt;/span&gt;用户，未来需通过广告投放或购物返佣的方式实现这部分用户的商业化变现，以弥补这一效率差距。而Anthropic旗下聊天机器人的免费用户规模则要小得多。&lt;/p&gt;
+
+&lt;p&gt;　　Anthropic于今年夏季预计，2025 年至 2028 年期间，公司在算力领域的总投入或将高达 600 亿美元，其中涵盖新人工智能模型的研发成本。该预测尚未计入近期与谷歌、微软达成的服务器租赁相关协议。同期，OpenAI 预计将在服务器方面投入 2200 亿美元。&lt;/p&gt;
+&lt;p&gt;　　OpenAI 在服务器上的巨额投入，反映出公司领导层的核心判断：服务器供应短缺是制约公司发展，以及通往通用人工智能道路上的最大挑战。通用人工智能，即具备自动化完成大部分高经济价值任务能力的人工智能。&lt;/p&gt;
+&lt;p&gt;　　“如果没有充足的算力支撑，我们根本无法推进相关研发。当前我们正面临严重的算力瓶颈。” 该公司首席执行官山姆・奥特曼在周四发布的一期播客采访中表示，“如果算力规模翻倍，我认为公司当前的营收也能随之翻倍。” 奥特曼并未就此展开进一步阐述。&lt;/p&gt;
+&lt;p&gt;　　对于有意投资 OpenAI 的潜在投资者而言，他们或许会迫切关注该公司付费用户相关利润率的任何改善迹象，因为付费套餐利润率的提升，有望为免费用户的运营成本提供补贴。即便如此，70% 的算力利润率仍远低于上市软件公司的同类利润率水平 —— 这些企业能够以极低的成本，为新增用户（包括免费用户）提供服务。&lt;/p&gt;
+&lt;p&gt;　　OpenAI 还面临另一个挑战，其最大的聊天机器人竞争对手正是谷歌。谷歌采用自研的张量处理单元这一定制化服务器芯片，有效降低了运营成本；而 OpenAI 使用的则是价格高昂的英伟达服务器芯片。据《The Information》报道，OpenAI 领导层据此认为，谷歌的人工智能运营效率要远高于自身。这意味着，谷歌在推动免费用户商业化变现方面承受的压力会小得多。&lt;/p&gt;
+&lt;p&gt;　　今年年初，OpenAI 将降低人工智能产品的服务器运行成本（即模型推理成本）列为工作重点。据一位知情人士透露，今年 2 月，在DeepSeek推出一款新模型后，OpenAI 内部启动了 “红色警报” 应急机制。DeepSeek方面宣称，其新模型的训练成本远低于 OpenAI 等企业开发的专有模型。&lt;/p&gt;
+&lt;p&gt;　　另一位知情人士表示，OpenAI 算力利润率的提升得益于两大因素：一是全年算力租赁成本的持续下降，二是公司对人工智能模型进行了优化调整，使其运行效率更高。此外，OpenAI 还推出了定价更高的订阅服务套餐，从部分客户群体中获得了更多营收。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 21 Dec 2025 16:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTFBHX0xIRFRnbnVodTdzVnRUS05kNW5kODhJYnUtdUlpRDcydERoS0RuNGZwTmI5aEF3eHJ1Zy1uX1ZfdzJWOWVpWFJzSm1BelJVVDZmN3lUcm1sTTdRbHUyUlpHdlgxRFE3cV9OY0pScUt4WDFmdjBSa293</guid></item><item><title>MacOS 26 Bug致显示器闪烁：官方多次更新问题反而更糟！ - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093819.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;MacOS 26 Bug致显示器闪烁：官方多次更新问题反而更糟！&lt;/p&gt;
           
@@ -296,7 +648,28 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 13:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8teWVGOHRhMkVZaVNqRDVQdWJIenFXZ2dMdnpoY3A2b3gteTJEeldneDFNbVpBb1d3ZVN0SmJfNldVNTRKWTVxOGM3MWlxY184ellybGxmZWQ</guid></item><item><title>华擎顶级GPU！RX 9070 XT太极白色版发布：配备LCD显示屏 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093808.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 13:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8teWVGOHRhMkVZaVNqRDVQdWJIenFXZ2dMdnpoY3A2b3gteTJEeldneDFNbVpBb1d3ZVN0SmJfNldVNTRKWTVxOGM3MWlxY184ellybGxmZWQ</guid></item><item><title>可折叠iPhone难抢 分析师预警发布初期将严重缺货 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093809.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月21日消息，macrumors报道，苹果公司正在研发其首款可折叠iPhone已是公开的秘密。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然而最新报告显示，这款备受期待、原定于2026年秋季亮相的产品，可能正面临生产上的挑战。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;天风证券知名分析师郭明錤在最新报告中指出：“可折叠iPhone的研发进度目前落后于预期，但仍预计能在2026年下半年正式发布。”&lt;/p&gt;
+&lt;p&gt;郭明錤补充称，&lt;span&gt;&lt;strong&gt;由于早期生产良率与产能爬坡存在困难，实际稳定出货可能需等到2027年。&lt;/strong&gt;&lt;/span&gt;加上预期需求强劲而供应有限，该产品在2026年底前很可能持续缺货。&lt;/p&gt;
+&lt;p&gt;苹果近年已较少出现新产品严重供应不足的情况。尽管2017年iPhone X曾推迟数周发售，但类似程度的交付延迟，还要追溯到2016年第一代AirPods上市之时。&lt;/p&gt;
+&lt;p&gt;从时间线看，下一代iPhone旗舰机型预计于2026年秋季发布（iPhone 17e可能提至春季）。目前距离发布尚有近十个月，这段时间通常足以让苹果调整生产节奏。&lt;/p&gt;
+&lt;p&gt;参考2025年初iPhone Air也曾陷入生产困境的传闻，但最终在当年9月实现了充足供应，有理由相信苹果能够克服当前难题。&lt;/p&gt;
+&lt;p&gt;《福布斯》分析认为，郭明錤对市场需求的判断可能准确：&lt;strong&gt;尽管折叠屏手机尚未迎来爆发，但苹果的入场很可能改变这一局面，甚至带动整个品类发展，使竞争对手一同受益。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/b2215352c0ae4c1ebebb571bf3a81d1c.png" target="_blank"&gt;&lt;img alt="可折叠iPhone难抢 分析师预警发布初期将严重缺货" h="333" src="//img1.mydrivers.com/img/20251221/s_b2215352c0ae4c1ebebb571bf3a81d1c.png" w="589"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 13:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5NUnJPb2RYU1dJbldIOWJkel9GSlZxbFQzaUQybGM4bTRoT3RKT1A4ZEtfRUtsQXlSNHpqcjF0RUNMX183Nkh4djZmWjd3MEZVV1pYZkpkdTE</guid></item><item><title>华擎顶级GPU！RX 9070 XT太极白色版发布：配备LCD显示屏 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093808.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;华擎顶级GPU！RX 9070 XT太极白色版发布：配备LCD显示屏&lt;/p&gt;
           
@@ -794,7 +1167,100 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 08:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1ld3Qxa3U5UHB3REhPLUpqSkRoSjNBQVVZSkNRc2xOWnRCX3VEaWxyQzh5V3R6MVE1TXlHa1NycTF0cENPRnZKbjU2Q2kzNUNhMHV4Qm9rQmY</guid></item><item><title>北斗官方揭秘南京导航干扰：区域性用户信号频率被干扰 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093794.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 08:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1ld3Qxa3U5UHB3REhPLUpqSkRoSjNBQVVZSkNRc2xOWnRCX3VEaWxyQzh5V3R6MVE1TXlHa1NycTF0cENPRnZKbjU2Q2kzNUNhMHV4Qm9rQmY</guid></item><item><title>ChatGPT文风，原产地肯尼亚 - 36kr.com</title><link>https://m.36kr.com/p/3605940425557001</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;ChatGPT文风奇怪的原因（俗称AI味儿很浓）找到了！&lt;/p&gt;
+  &lt;p&gt;肯尼亚作家：都是跟我们学的。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="218,217" src="https://img.36krcdn.com/hsossms/20251222/v2_35fb45ded12a4bdd970e97088d88c538@5091053_oswg57754oswg218oswg217_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;就在最近，一位肯尼亚作家的“控诉贴”登上Hacker News热榜——&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;我是肯尼亚人。不是我的写作风格和ChatGPT一样，而是ChatGPT写作风格和我一样。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,184" src="https://img.36krcdn.com/hsossms/20251222/v2_5f061f64660346d884f63f7bbda40a46@5091053_oswg63592oswg1080oswg184_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;一点进去才知道，原来这位朋友连续精心撰写的好几篇文章都被退稿了，而且理由还都是“太像ChatGPT”。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,343" src="https://img.36krcdn.com/hsossms/20251222/v2_204418d36143482980cd1f3774014522@5091053_oswg84947oswg1080oswg343_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;emmm……一想到自己从小接受的教育都是“文章必须像一座完美的大厦”、“你必须展现丰富的词汇量”，而现在却被误认为出自AI，这位朋友实在忍不住发出怒吼：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;对于那些热衷于侦查数字虚假性的侦探们，我想说：朋友，欢迎来到肯尼亚教室、会议室或公司内部Teams聊天室里一个典型的星期二。&lt;strong&gt;你们所认为的机器指纹，实际上却是我们教育的化石记录&lt;/strong&gt;。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,390" src="https://img.36krcdn.com/hsossms/20251222/v2_4453765dbca540129b52a2609315f74e@5091053_oswg75542oswg1080oswg390_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;而且很早就有消息指出，为了节省人力成本，很多AI模型厂商会把RLHF这类工作交给非洲人，所以模型的很多用语习惯也会偏向非洲那边。&lt;/p&gt;
+  &lt;p&gt;所以我们有理由怀疑，难道ChatGPT真是从肯尼亚“偷师”写作技巧的？&lt;/p&gt;
+  &lt;p&gt;咱这就火速围观一下——&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;“ChatGPT无意中在模仿我们”&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;事情是这样的。&lt;/p&gt;
+  &lt;p&gt;来自肯尼亚的Marcus Olang’（以下简称小马）最近发文控诉，从年初收到第一条回复开始，他就陷入了需要“自证不是AI”的困境中。当时甲方给的回复是：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;你写的挺好，逻辑也扎实，就是……能不能用更“像人”的方式重写一下？现在这个感觉，有点太像ChatGPT写的了。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;而且不止是他，他身边的很多作家朋友也都收到了类似反馈。&lt;/p&gt;
+  &lt;p&gt;而在仔细对比了自己和ChatGPT所写内容之后，小马最终无奈发现——&lt;strong&gt;别说，你还真别说，咱们的文风确实很像ChatGPT&lt;/strong&gt;。&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;从某种意义上说，指控者并非完全错误。我的写作风格确实与大语言模型的输出结果有几分相似。&lt;/p&gt;
+   &lt;p&gt;我们都倾向于使用结构严谨、平衡的句子。我们都喜欢使用过渡词，以确保逻辑流畅。我们都会偶尔使用（如今看来似乎成了罪证）连字符、分号或破折号来连接相关的想法，使其比简单的句号更显优雅。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="212,212" src="https://img.36krcdn.com/hsossms/20251222/v2_550f4b171c0f4368a36aaac208224713@5091053_oswg84854oswg212oswg212_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;不过在小马看来：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;讽刺之处在于，这种讽刺或许会让我们的祖先会心一笑。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;他表示，&lt;strong&gt;不是自己写得像ChatGPT，而是ChatGPT无意中在模仿他们&lt;/strong&gt;——模仿他们这一代，以及过去几代在全球南方，尤其是在像肯尼亚这样的地方，经过严苛教育体系“锻造”出来的人。&lt;/p&gt;
+  &lt;p&gt;从小到大，小马接受的写作指导都是讲求规范、讲求精心遣词造句（是谁DNA又动了？）。&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;&lt;strong&gt;我们从小被教导，文章必须像一座完美的大厦&lt;/strong&gt;。引言是地基，主体是承重墙，结论是封顶，必须坚固、对称、无懈可击。我们要用“首先、其次、最后”来构建逻辑，要用“此外、然而、因此”来精确转折，要用“光辉灿烂”、“精疲力竭”这样的“好词”来展现词汇量。&lt;/p&gt;
+   &lt;p&gt;&lt;strong&gt;这种写作，是我们的敲门砖&lt;/strong&gt;，是我们在KCPE（小学毕业考试）决定命运的四十分钟里必须掌握的生存技能，是我们向上攀爬的阶梯。它严谨、清晰、富有说服力，但也因此，在今天某些人的耳朵里，它听起来“缺乏人性的温度”。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;而这一套恰巧也被AI学去了。&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;&lt;strong&gt;讽刺来了，AI大模型（比如ChatGPT）正是从海量的书籍、论文、报告中学习写作的。&lt;/strong&gt;而这些文本库中，充满了历史沉淀下来的、经典的、正式的书面语——也就是我们被训练去模仿的那种文体。所以，当AI为了显得“权威”和“可信”而输出时，它的文风自然就与我所受的教育产生了诡异的“孪生”效应。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;所以，如今面对“文风像AI”的指责，小马愤而吐槽：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;这台机器为了显得权威，最终听起来却像个英语作文得了“A”的肯尼亚小学毕业考试（KCPE）毕业生。它无意中复制了大英帝国的语言幽灵。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;而且他还提到，现存的一些AI检测器往往更倾向于将流畅、逻辑严密、句式规整的文本标记为AI生成，而这恰恰是许多非英语母语者（尤其接受过严格正式写作训练的人）的写作特点，所以他们也更容易被误判。&lt;/p&gt;
+  &lt;p&gt;总之，小马用自己的亲身经历告诉大家——&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;由于历史原因，一些非英语母语者的写作，本就是现有AI模型的“教材”，而现在他们却成了AI普及后的“受害者”&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;这一说法也纷纷获得了网友们的认同：&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,432" src="https://img.36krcdn.com/hsossms/20251222/v2_6c3225266110435b8a86c37bd57a0095@5091053_oswg124406oswg1080oswg432_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;不过，令人啼笑皆非的是，小马的这篇感情饱满、“活人感”很强的文章，竟然还是被Pangram网站判定为100%由AI生成。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,557" src="https://img.36krcdn.com/hsossms/20251222/v2_f28eb32f6fb2492fb1399c796fea8e5e@5091053_oswg203769oswg1080oswg557_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;啊这……小马不语，小马只是一味生气吐血（doge）。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;因非洲人做RLHF，ChatGPT还爱用“delve”一词&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;而基于类似理由，人们还发现，ChatGPT似乎对&lt;strong&gt;“delve”&lt;/strong&gt;（挖掘、深入研究）这个词情有独钟。&lt;/p&gt;
+  &lt;p&gt;《卫报》曾有一篇文章指出，Jeremy Nguyen这位来自墨尔本斯威本科技大学的AI专家发现——&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;在PubMed这类专业学术网站上，“delve”的出现频率在近几年激增了10到100倍&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;（PubMed主要收录了80余国5200+生物医学期刊，总量超3900万条文献。）&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,655" src="https://img.36krcdn.com/hsossms/20251222/v2_36effe68f8c64411b53516d0ae3ff392@5091053_oswg333895oswg1080oswg655_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这暗示了，有大量研究人员可能在用ChatGPT辅助写作，并将其偏好的词汇带入了正式学术文本。&lt;/p&gt;
+  &lt;p&gt;这一现象还引来马斯克和YC联合创始人保罗·格雷厄姆的关注，后者发帖表示：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;有人给我发了一封带“delve”一词的邮件，而这个词表明文本大概率是AI生成的（暗示对方用AI写项目书，还要找他投资hhh）。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,882" src="https://img.36krcdn.com/hsossms/20251222/v2_2007e1cac6cf4845be64873ca56de02a@5091053_oswg255059oswg1080oswg882_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;并且就在格雷厄姆发帖之后，ChatGPT官号还用这个词公开整活，继而引来无数网友跟风。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1074,253" src="https://img.36krcdn.com/hsossms/20251222/v2_0ee1da9625764b3fba5823f9d70d7572@5091053_oswg39211oswg1074oswg253_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1078,206" src="https://img.36krcdn.com/hsossms/20251222/v2_567143e888794993ab1698c4826cddee@5091053_oswg43272oswg1078oswg206_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,355" src="https://img.36krcdn.com/hsossms/20251222/v2_7a674781ed894c4a8fe65ec31b29ab60@5091053_oswg91776oswg1080oswg355_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;不过，进一步的数据分析显示，“delve”远非孤例——&lt;/p&gt;
+  &lt;p&gt;像“explore”、“tapestry”、“testament”和“leverage”等词汇，在ChatGPT生成的文本中出现频率也异常地高。&lt;/p&gt;
+  &lt;p&gt;《卫报》在文章中详细揭开了这背后的谜底——&lt;/p&gt;
+  &lt;p&gt;为了将大语言模型“驯化”成安全、有用、可控的聊天机器人，企业一般会雇佣大量人类测试员，让他们与模型互动并提供反馈（如点赞/点踩，或撰写理想的回复）。&lt;/p&gt;
+  &lt;p&gt;模型从这些海量的人类偏好数据中学习，从而调整自己的行为，也即所谓的RLHF（基于人类反馈的强化学习）。&lt;/p&gt;
+  &lt;p&gt;而出于人力成本考量，RLHF这项劳动密集型工作被大量外包给了肯尼亚、尼日利亚等英语区的非洲国家。&lt;/p&gt;
+  &lt;p&gt;对这些国家来说，“delve”这样的词正是他们日常生活中自然、规范的商务或学术英语，因此被高频使用。&lt;/p&gt;
+  &lt;p&gt;所以这些词也就自然在ChatGPT中高频出现了。&lt;/p&gt;
+  &lt;p&gt;BTW，你还有哪些小技巧来鉴别某项内容是出自AI之手吗？&lt;/p&gt;
+  &lt;p&gt;有网友先给大家打个样了：&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,351" src="https://img.36krcdn.com/hsossms/20251222/v2_d526795633174214be8053d37099cfac@5091053_oswg37768oswg1080oswg351_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;“幼兽般的呜咽”、“瞳孔缩成针尖”……嗯，一般人属实想不到了（doge）。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;参考链接：&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;[1]https://marcusolang.substack.com/p/im-kenyan-i-dont-write-like-chatgpt&lt;/p&gt;
+  &lt;p&gt;[2]https://news.ycombinator.com/item?id=46273466&lt;/p&gt;
+  &lt;p&gt;[3]https://x.com/JeremyNguyenPhD/status/1780580567215681644&lt;/p&gt;
+  &lt;p&gt;[4]https://x.com/ChatGPTapp/status/1780721920322781447&lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/sX0qwaRYELoEZC4_kxIP6g?click_id=184"&gt;“量子位”&lt;/a&gt;，作者：一水，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36kr.com</author><pubDate>Sun, 21 Dec 2025 08:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE0yUl8xdHh0bGY3aVl0VmpvRXBjd2RWTF9ScTVTTWdUMHJYeHBwbzdLamVaUHpYampjTzNZay1aQnFkaG1EQWlIQmFMV3JkQQ</guid></item><item><title>北斗官方揭秘南京导航干扰：区域性用户信号频率被干扰 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093794.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;北斗官方揭秘南京导航干扰：区域性用户信号频率被干扰&lt;/p&gt;
           
@@ -1331,390 +1797,4 @@ Raiders》视为一个为期10年的长期项目。
         
                 
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 21 Dec 2025 03:05:56 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE90WmpQQ2oxUWdIV3ZQUHBjQ3ctLTIyVEk0dEo4WWxleUR6SmRhbEE2YnhrUjRqMk4yNGhLajkxLVRRWVlhYjBZTTB5WE1XX0JnMW5mZTlTT1pURUd1</guid></item><item><title>“聪明钱”今年在币圈也被“割韭菜”了 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3761786</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 21 Dec 2025 02:18:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5TNGtrYUpmRXBaeDd5QmYyR1hJZXJiUFdpV3lfR25ITG9zVi1wNzE2dTdid0tzOGJWMHppeF9oMDZKUGZSc2M5R2xrUGZXMjF1Yi1z</guid></item><item><title>卡通风格冒险新作《暗途：梅尔王遇刺案》现已发售 - 3DM</title><link>https://www.3dmgame.com/news/202512/3934286.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
-        &lt;div class=" news_warp_top"&gt;
-            &lt;h1 class="bt"&gt;卡通风格冒险新作《暗途：梅尔王遇刺案》现已发售&lt;/h1&gt;
-            &lt;p class="time"&gt;时间：&lt;span&gt;2025-12-21 09:56:14&lt;/span&gt;&lt;/p&gt;
-            &lt;ul class="intem"&gt;
-                                &lt;li&gt;来源：&lt;span class="weibo"&gt;3DM编译&lt;/span&gt;&lt;/li&gt;
-                                                &lt;li&gt;作者：&lt;span class="name"&gt;3DM&lt;/span&gt;&lt;/li&gt;
-                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;newtype2001&lt;/span&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-                        &lt;p class="clear"&gt;&lt;/p&gt;
-        &lt;/div&gt;
-                    
-&lt;p class="Tonglan_785"&gt;
-    
-    &lt;i&gt;&lt;/i&gt;
-&lt;/p&gt;
-                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2025/1221/1766282167319.jpg" id="coverUrl"&gt;
-                &lt;div class="news_warp_center"&gt;
-            &lt;p&gt;
-	《暗途：梅尔王遇刺案》（Darkway: Murder of King 
-Mere）现已登陆Steam平台，无需漫长倒计时与拖沓铺垫，便将一场冰封犬族黑色悬疑案鲜活呈现。这款游戏悄然上线，但其讲述的故事却注定无法尘封。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20251221/1766282123_607585_jpg_r.jpg" alt="卡通风格冒险新作《暗途：梅尔王遇刺案》现已发售"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	游戏背景设定在冰封的墨色之城，这款像素笔触的绘画风格悬疑作品中，玩家将化身“学徒”——一名在秘密、忠诚与政治腐朽交织的城市中探寻真相的调查者。而最关键的是：梅尔王遇刺身亡，其兄奥古斯特王子被指认为凶手，宫廷似乎已准备就此结案。但在表象之下，真相在重重压力下支离破碎。
-&lt;/p&gt;
-&lt;p&gt;
-	从游戏开篇起，玩家便可凭借流畅的跑酷动作在积雪覆盖的屋顶自由穿行，在各个城区间潜行穿梭，每一道阴影都暗藏猜忌。全语音配音的嫌疑人、盟友与权力掮客阵容，通过紧张的审讯与脆弱的联盟，共同推动调查进程。每一次对话都会改变案件走向，每一个决定都将留下无法挽回的印记。
-&lt;/p&gt;
-&lt;p&gt;
-	《暗途：梅尔王遇刺案》预告片：
-&lt;/p&gt;
-&lt;p&gt;
-	
-&lt;/p&gt;
-&lt;p&gt;
-	最新发布的预告片展现了犬族帝国的双重面貌：壮阔冰封的城市天际线，与粗糙不安、如警示般附着于墙面的草图形成鲜明对比。墨色之城仿佛拥有生命，充满敌意却又洞察一切，在这里，流言比脚步传播得更快，而真相亦能成为致命武器。
-&lt;/p&gt;
-&lt;p&gt;
-	梅尔王曾是和平与外交的象征，如今他的鲜血染红了白雪，帝国也开始从内部分崩离析。作为“学徒”，玩家需在这个没有绝对真相的世界中拼凑线索碎片。正义摇摇欲坠，结局未知难料，生存更是毫无保障。
-&lt;/p&gt;
-&lt;p&gt;
-	《暗途：梅尔王遇刺案》邀请玩家踏入一个充满阴谋、因果报应与隐秘威胁的世界——在这里，揭露真相的代价，或许远比保持沉默更为沉重。
-&lt;/p&gt;                                &lt;/div&gt;
-                                                        &lt;a class="zan_box"&gt;
-                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
-                &lt;span class="znums"&gt;0&lt;/span&gt;
-            &lt;/a&gt;
-                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
-
-                                        
-                        
-                                
-        
-                
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 21 Dec 2025 01:56:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE5qZFo1TnFnTGpIb1NVX0FfVG5LV29CeFpPNGNRWmVvUHhGV1NaQmRSZGFkWVVBYnllU1lXLXJtQ0V2Rm9udjFTdHd2Q2RaQ19vcHM2MElkTzdKRVVK</guid></item><item><title>年仅27岁出任腾讯AI首席科学家：高考数学睡觉错失全省第一 - 凤凰网科技</title><link>https://tech.ifeng.com/c/8pGBSTzJ1J9</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;快科技12月21日消息，据媒体报道，&lt;strong&gt;近日，年仅27岁的姚顺雨出任腾讯AI首席科学家。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;腾讯升级大模型研发架构，新成立AI Infra部、AI Data部、数据计算平台部，全面强化其大模型的研发体系与核心能力。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;而姚顺雨出任“CEO/总裁办公室”首席AI科学家，&lt;/strong&gt;向腾讯总裁刘炽平汇报，同时兼任AI Infra部、大语言模型部负责人，向技术工程事业群总裁卢山汇报。&lt;/p&gt;&lt;p&gt;值得注意的是，这位超级学霸的班主任表示，&lt;strong&gt;姚顺雨当时觉得高考数学简单，于是睡了一觉丢了十几分，总分704错失全省第一，事后还向老师道歉。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;他还表示，自己立志要上清华姚班，因为和他同姓。&lt;/p&gt;&lt;p&gt;据公开资料，姚顺雨毕业于清华大学姚班，他曾任姚班联席会主席，还是清华大学学生说唱社联合创始人。随后，姚顺雨前往普林斯顿大学深造，并获计算机博士学位。&lt;/p&gt;&lt;p&gt;博士期间，他提出了思维树框架改进决策模型，构建CoALA模块化认知架构。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2024年，姚顺雨成功加入OpenAI，参与智能体产品operator与deep research开发，是项目的核心贡献者。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2025年5月，《麻省理工科技评论》“35岁以下科技创新35人”中国区名单发布，27岁的姚顺雨入选，成为最年轻的入选者。&lt;/p&gt;&lt;p&gt;&lt;img alt="年仅27岁出任腾讯AI首席科学家：高考数学睡觉错失全省第一" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2025/E0F3E22A215584AF4D2C17CBC17073B47BE4F912_size460_w460_h732.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网科技</author><pubDate>Sun, 21 Dec 2025 01:49:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9yT2MxQWhjWXdmRXh2YmtlSHN5RkpDUVF3RHBMLTBqc3g0Ykt1UDE1cGhaQU1xbHFDRmdVaTBTSEFsdmFZbjV2dnIxYnY</guid></item><item><title>年仅27岁出任腾讯AI首席科学家：高考数学睡觉错失全省第一 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093761.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技12月21日消息，据媒体报道，&lt;strong&gt;近日，年仅27岁的姚顺雨出任腾讯AI首席科学家。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;腾讯升级大模型研发架构，新成立AI Infra部、AI Data部、数据计算平台部，全面强化其大模型的研发体系与核心能力。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;而姚顺雨出任“CEO/总裁办公室”首席AI科学家，&lt;/strong&gt;向腾讯总裁刘炽平汇报，同时兼任AI Infra部、大语言模型部负责人，向技术工程事业群总裁卢山汇报。&lt;/p&gt;
-&lt;p&gt;值得注意的是，这位超级学霸的班主任表示，&lt;span&gt;&lt;strong&gt;姚顺雨当时觉得高考数学简单，于是睡了一觉丢了十几分，总分704错失全省第一，事后还向老师道歉。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;他还表示，自己立志要上清华姚班，因为和他同姓。&lt;/p&gt;
-&lt;p&gt;据公开资料，姚顺雨毕业于清华大学姚班，他曾任姚班联席会主席，还是清华大学学生说唱社联合创始人。随后，姚顺雨前往普林斯顿大学深造，并获计算机博士学位。&lt;/p&gt;
-&lt;p&gt;博士期间，他提出了思维树框架改进决策模型，构建CoALA模块化认知架构。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2024年，姚顺雨成功加入OpenAI，参与智能体产品operator与deep research开发，是项目的核心贡献者。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2025年5月，《麻省理工科技评论》“35岁以下科技创新35人”中国区名单发布，27岁的姚顺雨入选，成为最年轻的入选者。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="年仅27岁出任腾讯AI首席科学家：高考数学睡觉错失全省第一" h="732" src="//img1.mydrivers.com/img/20251221/29cdce95-25a9-4db1-a99f-ccf46e0b316c.png" w="460"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 01:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBVQnYydXBiTGpEVjNTLVplVHBNc2VvQzE5Z2NGbjRSbVVObzU0WmF1LVcyT2hnUVhEX1huUk12SGd1M3QxSVNzeE9faTZFOXNlcm55RFF6al8</guid></item><item><title>三星发布全球首款2nm智能手机芯片 或将用于Galaxy S26 - 财联社</title><link>https://www.cls.cn/detail/2235586</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社12月21日讯（编辑 刘蕊）&lt;/strong&gt;在2025年结束之前，三星在全球移动半导体行业投下一颗重磅炸弹：正式推出业内首款2纳米工艺智能手机应用处理器——Exynos 2600系统芯片。&lt;/p&gt;
-&lt;p&gt;这款芯片是由三星电子设备解决方案事业部下属的系统LSI业务部门设计，通过三星自营的晶圆厂采用2纳米环绕栅极（GAA）工艺制造而成的，采用了基于Arm v9.3架构的新10核CPU设计，由一个高性能核心以高达3.8GHz的频率运行，辅以3个性能核心和6个效率核心，三星宣称其性能提升了高达39%。&lt;/p&gt;
-&lt;p&gt;在GPU方面，Exynos 2600引入了Xclipse 960 GPU，据说其计算性能比前一代提高了2倍，同时在光线追踪方面性能提升了多达50%。这意味着未来Galaxy S手机在移动游戏性能方面会有巨大的提升。&lt;/p&gt;
-&lt;p&gt;至于人工智能方面，升级后的神经处理单元（NPU）将提速113%，这将使任何类型的生成式人工智能、翻译、更智能的摄像头处理以及其他本地运行的功能的速度都比以前更快。&lt;/p&gt;
-&lt;p&gt;三星还为相机部门做了未来规划，因为它将支持高达320万像素的传感器，以及诸如高分辨率拍摄的零快门延迟、人工智能驱动的降噪、30帧每秒的8K视频以及高达120帧每秒的4K HDR录制等先进的图像信号处理器（ISP）功能。&lt;/p&gt;
-&lt;p&gt;长期以来一直令三星Exynos芯片感到困扰的热问题，在这次也得到了特别关注，因为新的热路径块设计旨在降低热阻并改善散热，有助于芯片在游戏或长时间的AI任务等持续负载下保持性能。再加上2纳米GAA工艺带来的效率提升，目标是实现更流畅的性能而不进行过度的降频。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;虽然三星尚未正式确认哪些手机将搭载Exynos 2600处理器，但市场普遍预计该处理器将在明年至少为Galaxy S26系列的某些版本提供动力，具体哪些版本会搭载取决于所在地区。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;三星计划于明年2月底在美国举行的Galaxy Unpacked 2026发布会上正式发布Galaxy S26系列。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Sun, 21 Dec 2025 01:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE1qNmsxZEtyR3h5NWdzTXBvbllQUXRoMldDWUpTV3pPQVFQR1A0OGJNMjFGUzNQOEkwRC1nN3ZzVUI5eGktSVV1WA</guid></item><item><title>家用充电桩也能赚钱了！比亚迪App上线充电桩共享功能 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093757.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;家用充电桩也能赚钱了！比亚迪App上线充电桩共享功能&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-12-21 09:22:39  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297417.html" title="若风的主页" class="newstiao4"&gt;若风&lt;/a&gt;&lt;p&gt;  编辑：若风 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1093757-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技12月21日消息，日前，我们了解到，&lt;strong&gt;比亚迪App已上线家庭充电桩共享服务，可让同社区的比亚迪车主实现充电“邻里互助”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;具体操作方法为：用户需打开比亚迪App服务页面，找到家桩服务设置，随后在“我的社区”中寻找邻居的充电桩，交换联系方式后沟通共享充电事宜。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;共享充电桩由双方自行商谈交易细节，可明确充电时间段和费用等。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/9774b66244cd48bb82ca6a2a00ce156b.png" target="_blank"&gt;&lt;img alt="家用充电桩也能赚钱了！比亚迪App上线充电桩共享功能" h="1295" src="//img1.mydrivers.com/img/20251221/s_9774b66244cd48bb82ca6a2a00ce156b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;对于充电桩车主来说，自己白天如果外出或上班，至少有10个及以上的闲置时间，共享后能赚取收益，可算做低成本增收途径。&lt;/p&gt;
-&lt;p&gt;而对未安家用充电桩的车主而言，小区共享的充电桩，不仅离自己家更近，充电更方便，且家充桩充电无需手续费，居民小区电价也更便宜，相较外面超充站，能够节省不少时间和金钱成本。&lt;/p&gt;
-&lt;p&gt;此外，除了比亚迪，蔚来也在车主APP内上线了共享充电桩的功能，设置后共享桩和充电时间后，其它车主就能通过APP找到充电桩，且能直接通过APP来收费。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251221/99bca4ee39ed45189d64ce694e6d4a46.png" target="_blank"&gt;&lt;img alt="家用充电桩也能赚钱了！比亚迪App上线充电桩共享功能" h="992" src="//img1.mydrivers.com/img/20251221/s_99bca4ee39ed45189d64ce694e6d4a46.png" w="455"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/bab51d342b1d4d2a8ba70496969d1280.png" target="_blank"&gt;&lt;img alt="家用充电桩也能赚钱了！比亚迪App上线充电桩共享功能" h="471" src="//img1.mydrivers.com/img/20251221/s_bab51d342b1d4d2a8ba70496969d1280.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 01:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBuTmh3dmtQXy1JaENQRVp4b2xPZDdXQzVxd2daZ3V5LUEyeFpKaHRiX2FjdXpfVFVpUThiZGZ5R0ctR2xSTkhkQlRQS3pyX0ZXREx2Qjd6NHI</guid></item><item><title>告别低通胀、AI接力新需求叙事，改革红利提振消费率......十大券商一文展望2026中国经济 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3761246</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 21 Dec 2025 01:13:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1PQ2VpUktGQVVWcUZvTWVINEt4a0pCU21HOVpwdnY4ZWlDdlBRX3BBNjhsOUtScmk0SE1ZOGpiLTdfRXAwZkY2OGhoN0hVSXduVS13</guid></item><item><title>从羊吃人到房子吃人到AI吃人，资本主义从来不缺物吃人-周德宇-观察者网 - 观察者网</title><link>https://www.guancha.cn/ZhouDeYu/2025_12_21_801116.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	【文/观察者网专栏作者 周德宇】
-&lt;/p&gt;
-&lt;p&gt;
-	通过“牢A”的出圈，想必今年很多人都了解到了美国西雅图这个城市中，底层生活的悲惨一面。想要理解为什么西雅图这样一个看似经济发达科技先进的城市，底层会有这样的遭遇，我们可以从一个词谈起，就是“士绅化”（gentrification），毕竟西雅图就是美国“士绅化”问题最严重的城市之一。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/12/19/20251219162727634.png" alt=""&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	在美国前100个大城市中，西雅图市的士绅化程度排在第三位&lt;span&gt; 图自《西雅图时报》&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	士绅化是什么意思呢？是一个街区吸引更多的资本和人才流入的过程，是一个街区减少犯罪增加便利的过程，是一个穷街区变得富裕高档的过程……这不是好事吗？很多人第一反应肯定会是这样。
-&lt;/p&gt;
-&lt;p&gt;
-	但是在美国，士绅化往往是一个负面词汇，因为一个街区变得富裕，变得文明光鲜的过程，往往是丑陋野蛮的。当一个地方因为高科技或者金融产业的兴起，而吸引了大量资金和人才的时候，一定会推高当地的地价和物价。这就使得该地原有的居民，因为租金和生活成本的上涨而不得不流离失所。
-&lt;/p&gt;
-&lt;p&gt;
-	有人可能会说了，市场经济嘛，总是会不可避免地带来这样的人员流动，资源配置优化，这不是什么大事。
-&lt;/p&gt;
-&lt;p&gt;
-	比如，我几年前写的《用得上的资本论》里面，讲到美国硅谷的“士绅化”，有一个微信读书评论是这样写的：
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/social/2025/12/19/20251219162913630.png" alt=""&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	可能这位读者想的是我国城市发展的时候，被拆迁的人会领到补偿款，所以他觉得士绅化导致流离失所的人都是活该——怎么说呢，这就是文化差异了，你从中国人的常识角度，是不可能理解美国在发生什么的。
-&lt;/p&gt;
-&lt;p&gt;
-	士绅化的过程，正如资本主义的过程一样，往往是伴随着无形甚至有形的暴力的。看不见的手自然就不用说了，对于大部分没有积蓄的美国人来说，他们完全无法应对生活成本的上涨。而对于本来就处于租金最低廉区域的穷人来说，士绅化带来的房租增长往往意味着他们直接没有任何容身之处，连消费降级的希望都没有。至于补偿款？那是给地主的，跟你们普通人有什么关系？
-&lt;/p&gt;
-&lt;p&gt;
-	而无形的手由于起效不够快，所以往往需要伴随有形的手来推一把，这个过程就非常的残酷了。比如今年美国历史学家刚出版了一本书，《生于烈火——纵火的生意和美国城市的重塑》：
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/12/19/20251219163005483.png" alt=""&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	这书讲的是什么事呢？讲的是在美国城市士绅化的过程中，总是伴随着吞噬大量生命的火灾，而这些火灾的起因往往是人为纵火。谁在放火呢？不是那个街区的犯罪者，不是对士绅化不满的穷人，而是当地的地主。
-&lt;/p&gt;
-&lt;p&gt;
-	因为随着中产阶级和大公司的涌入，地主们非常希望将自己的廉价住房重建为豪华公寓，把原有的租客赶走迎来有钱的白领们。而放一把火，既可以清除掉原有的租客和建筑，为“士绅化”做准备，甚至还可以领到保险赔偿。
-&lt;/p&gt;
-&lt;p&gt;
-	所以在上世纪七八十年代，纽约、旧金山、波士顿等金融业和科技产业红红火火地发展起来的时候，物理意义上的红红火火也在席卷这些城市的贫困街区。这个过程直到今天我们还能见到。
-&lt;/p&gt;
-&lt;p&gt;
-	比如前些年旧金山发生了一系列神秘火灾，虽然人们都怀疑是房东纵火，但警方没有能力或意愿去查证。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/12/19/20251219163057939.png" alt=""&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	2019年《华盛顿邮报》有一个关于“士绅化纵火”的报道，“士绅化如何导致美国城市在燃烧”。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/12/19/20251219163133706.png" alt=""&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	士绅化如何导致美国城市的燃烧&lt;span&gt; 《华盛顿邮报》&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	文章里面提到了一个细节：
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2025/12/19/20251219163229539.png" alt=""&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	“……但是，从来没有任何一个人被起诉。证明一个房东有罪，证明他谋划了纵火，需要有证据证明他们花钱找人纵火，单凭经济收益的证据是不够的。”
-&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Sun, 21 Dec 2025 01:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE9TV3k1WXl3RXRCNXlKQzJxOFJRWllzXzgwaExhQWNTeXhDY2RIMVgwblFPUXVRX251OEhSaThtT25leEJTVUJwa3h1Q2w0OVZ2YXF0blZDVjF0em10OVIwak1vNUViZw</guid></item><item><title>到手屠龙刀！央视曝光手机回收平台藏猫腻：高价预估低价收购 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093754.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技12月21日消息，你的旧手机是留着当备用机还是卖给二手平台？&lt;/p&gt;
-&lt;p&gt;日前，央视曝光手机回收平台藏猫腻，&lt;span&gt;&lt;strong&gt;本来是平台高价预估，但用户将手机寄给平台回收商后，平台却开始了讨价还价，甚至恶意压价，上演到手“屠龙刀”。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;据报道，今年10月，大连的安先生在购物平台以旧换新购买了一个新手机，并将自己正在用的手机卖给了平台。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/ea4496229a9a4a2b872550fa5c2ed616.png" target="_blank"&gt;&lt;img alt="到手屠龙刀！央视曝光手机回收平台藏猫腻：高价预估低价收购" h="308" src="//img1.mydrivers.com/img/20251221/s_ea4496229a9a4a2b872550fa5c2ed616.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当时平台给出的手机回收价格为4488元，&lt;/strong&gt;安先生接受了这个价格，随后将手机寄给了平台。&lt;/p&gt;
-&lt;p&gt;然而平台收到手机后，给出的二次报价让他无法接受。&lt;/p&gt;
-&lt;p&gt;安先生称，平台说他的手机有明显的磕碰、划痕和掉漆，&lt;strong&gt;回收价从原来的4488元变成3017元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;但他打开检测报告里的图，没有看到值1500元的磕碰掉漆划痕。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/f2a778e5dfb14417bf383791c01378f1.png" target="_blank"&gt;&lt;img alt="到手屠龙刀！央视曝光手机回收平台藏猫腻：高价预估低价收购" h="275" src="//img1.mydrivers.com/img/20251221/s_f2a778e5dfb14417bf383791c01378f1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;随后的几天，安先生一直在联系购物平台和回收方客服，要求提供清晰照片，等到的是可以将回收价格提高到3200元的短信通知。&lt;/p&gt;
-&lt;p&gt;在三天后终于联系到人工客服，给出的答案，让安先生更加不能接受。&lt;/p&gt;
-&lt;p&gt;回收平台客服表示称，放大看，按键右侧有两个白点，应该是磨损的颜色变浅。&lt;/p&gt;
-&lt;p&gt;但安先生并未从对方提供的照片上找到这两个白点，于是要求对方把手机退回，取消订单。&lt;/p&gt;
-&lt;p&gt;之后事情迎来反转，&lt;span&gt;&lt;strong&gt;平台开始主动联系安先生逐渐提高回收价格，从3400元开始一路涨到了4200元，见安先生依然要求退回手机，最后竟然同意以最初的报价4488元回收手机。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;安先生没有同意对方报价，最终坚持退回了手机。&lt;/p&gt;
-&lt;p&gt;法律专家表示，&lt;strong&gt;平台二次报价后，经讨价还价，最终仍以最初价格成交来看，这里存在平台利用主导地位恶意压价行为。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/360e0f46a67c475fb9ce614632ca63b9.jpg" target="_blank"&gt;&lt;img alt="到手屠龙刀！央视曝光手机回收平台藏猫腻：高价预估低价收购" h="400" src="//img1.mydrivers.com/img/20251221/s_360e0f46a67c475fb9ce614632ca63b9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 21 Dec 2025 00:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1VSnJsbXVGak5YcElOY1JVdmp4V0N6X0FsUXpzX2RjdW1pazU1QXd2LW11VEIzd2NuNmxjZUs0aUVVSTBuazBzZmpTOXozTUZHMEVHRUVKaEc</guid></item><item><title>长安汽车获得中国首块L3级自动驾驶号牌：渝AD0001Z - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093752.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;长安汽车获得中国首块L3级自动驾驶号牌：渝AD0001Z&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-12-21 07:48:06  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297417.html" title="若风的主页" class="newstiao4"&gt;若风&lt;/a&gt;&lt;p&gt;  编辑：若风 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1093752-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技12月21日消息，长安汽车日前宣布，首块L3级自动驾驶专用正式号牌“渝AD0001Z”在重庆诞生，由重庆市公安局交通管理总队正式授予长安汽车，标志着长安汽车率先开启L3级自动驾驶时代。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/060444c7ab274fef828b629ba80f1135.png" target="_blank"&gt;&lt;img alt="长安汽车获得中国首块L3级自动驾驶号牌：渝AD0001Z" h="463" src="//img1.mydrivers.com/img/20251221/s_060444c7ab274fef828b629ba80f1135.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这块编号“渝AD0001Z”的L3级自动驾驶专用正式号牌，将率先安装在深蓝汽车产品上。&lt;/p&gt;
-&lt;p&gt;由重庆长安车联科技有限公司作为运营主体，并获准在重庆市内环快速路、新内环快速路（高滩岩立交—赖家桥立交）及渝都大道（人和立交—机场立交）开展上路通行试点。&lt;/p&gt;
-&lt;p&gt;这些路段为重庆市民主要出行道路，&lt;strong&gt;其典型的车辆密集拥堵、车流频繁汇入汇出、事故高发、道路施工等复杂路况，将成为长安L3级自动驾驶系统实战训练、迭代升级的最佳“考场”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在真实城市道路拥堵环境进行试点，不仅检验系统对极端动态环境（如加塞、急刹）的预判与响应能力，接管机制的安全冗余与无缝衔接水平。&lt;/p&gt;
-&lt;p&gt;更可积累长周期、高密度的真实驾驶数据，为长安汽车L3级自动驾驶系统的可靠性与实用性提供实践支撑。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251221/eb661829f68c4df8b066490ca081cda9.png" target="_blank"&gt;&lt;img alt="长安汽车获得中国首块L3级自动驾驶号牌：渝AD0001Z" h="463" src="//img1.mydrivers.com/img/20251221/s_eb661829f68c4df8b066490ca081cda9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 20 Dec 2025 23:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9VMEpuWGtVY3pHb01DdTR5ZzVPOGl3ejlQZWR0Ml9PNXdMbENwUnFLeGQ0UzhMUzZlTjE3OVRhVWdDVnp0ZjktR0lZSUEwellpdVRsaEU5NnE</guid></item><item><title>新一代夜神杀到！小米17 Ultra真机全网首秀：大圆Deco、白色机身优雅 - 驱动之家</title><link>https://news.mydrivers.com/1/1093/1093751.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;新一代夜神杀到！小米17 Ultra真机全网首秀：大圆Deco、白色机身优雅&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2025-12-21 07:46:48  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1391597.html" title="拾柒的主页" class="newstiao4"&gt;拾柒&lt;/a&gt;&lt;p&gt;  编辑：拾柒 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1093751-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技12月21日消息，&lt;strong&gt;小米17 Ultra将于下周发布，这是小米目前最强影像旗舰，在影像硬件上将实现断层式领先，成为新一代“夜神”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;今日，小米集团副总裁、小米集团CMO许斐通过其头条号晒出小米17 Ultra真机视频，这也是该机首次官方亮相。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/f7fa1318746941119ca1eb5e6020ac35.png" target="_blank"&gt;&lt;img alt="新一代夜神杀到！小米17 Ultra真机全网首秀：大圆Deco、白色机身优雅" h="220" src="//img1.mydrivers.com/img/20251221/s_f7fa1318746941119ca1eb5e6020ac35.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从视频来看，&lt;span&gt;&lt;strong&gt;小米17 Ultra白色机身简洁优雅，采用居中大圆Deco设计，徕卡标识位于Deco中间，机身左上角预计为“Ultra”铭牌角标，&lt;/strong&gt;&lt;/span&gt;顶部为两颗对称排列的闪光灯。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/10f3e05efdb54e51960253ad1c0886c1.png" target="_blank"&gt;&lt;img alt="新一代夜神杀到！小米17 Ultra真机全网首秀：大圆Deco、白色机身优雅" h="969" src="//img1.mydrivers.com/img/20251221/s_10f3e05efdb54e51960253ad1c0886c1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/c8faf7b7c66f405d9c46f33c1eb5df85.png" target="_blank"&gt;&lt;img alt="新一代夜神杀到！小米17 Ultra真机全网首秀：大圆Deco、白色机身优雅" h="995" src="//img1.mydrivers.com/img/20251221/s_c8faf7b7c66f405d9c46f33c1eb5df85.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251221/499645c7e4824833a4337cdfa2953203.png" target="_blank"&gt;&lt;img alt="新一代夜神杀到！小米17 Ultra真机全网首秀：大圆Deco、白色机身优雅" h="992" src="//img1.mydrivers.com/img/20251221/s_499645c7e4824833a4337cdfa2953203.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;小米17 Ultra后置三摄，&lt;strong&gt;主摄为国产豪威全新旗舰传感器OV50X，拥有1英寸超大底，搭载第三代LOFIC技术。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;同时，小米17 Ultra还将配备全新徕卡2亿潜望长焦镜头，镜头模组体积比小米15 Ultra增大35%，获得徕卡APO光学认证。&lt;/p&gt;
-&lt;p&gt;据了解，小米17 Ultra是小米与徕卡全新“战略共创模式”下的首款作品，夜景画质与长焦创作体验迎来颠覆式的革新，让移动影像光学站上前所未有的全新起点。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 20 Dec 2025 23:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5rTkdGdmo0X2p3VHdhdEJySXlKU3ZIMlhGcjlFR2JCeFRDWmp1ZHIteTcwbl9jNWpBd2JxRElVTE9fNFZDdGNBM2hSRmhfWnhuTjF5bEEzVmg</guid></item><item><title>“讨薪”成功，马斯克成世界首位7000亿美元富豪 - 凤凰网科技</title><link>https://tech.ifeng.com/c/8pFyiljlFyv</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p class="detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2025_52/12E9481E697DC4B0D7FF8335B947C8A53252DAAD_size765_w1394_h926.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="马斯克"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;马斯克&lt;br&gt;&lt;/p&gt;&lt;p&gt;凤凰网科技讯 北京时间12月21日，据路透社报道，根据《福布斯》亿万富豪指数，在特拉华州最高法院恢复了埃隆·马斯克(Elon Musk)的价值1390亿美元的特斯拉股票期权后，他的净资产在周五晚间飙升至接近7490亿美元。&lt;/p&gt;&lt;p&gt;特斯拉在2018年授予了马斯克这一薪酬方案，当时价值560亿美元。两年前，特拉华州下级法院曾以“高得离谱”否决了这一薪酬方案。但是在周五，特拉华州最高法院恢复了该薪酬方案，认为此前的裁决不当，对马斯克不公平。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2025_52/0955B4CC050905FD10C7D95EB3ADF32EC9F3C361_size269_w3108_h1520.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="马斯克净资产7489亿美元"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;马斯克净资产7489亿美元&lt;br&gt;&lt;/p&gt;&lt;p&gt;《福布斯》实时亿万富翁榜单显示，马斯克现在的净资产达到7489亿美元，牢牢占据世界首富位置。谷歌联合创始人拉里·佩奇(Larry Page)排在第二，净资产为2526亿美元，落后近5000亿美元。&lt;/p&gt;&lt;p&gt;本周早些时候，在SpaceX上市消息的提振下，马斯克成为世界上首位净资产超过6000亿美元的富豪。(作者/箫雨)&lt;/p&gt;&lt;p&gt;更多一手新闻，欢迎下载凤凰新闻客户端订阅凤凰网科技。想看深度报道，请微信搜索“凤凰网科技”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网科技</author><pubDate>Sat, 20 Dec 2025 23:38:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1rcVRNb2gydDM0UDlLSS1MenJlOWJsQzc5b1AwWnRBdkZuNUtsWktFbU1zNER2bXlSMXRFMWJBSllQX3Iza1I5UTZINDY</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 21 Dec 2025 03:05:56 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE90WmpQQ2oxUWdIV3ZQUHBjQ3ctLTIyVEk0dEo4WWxleUR6SmRhbEE2YnhrUjRqMk4yNGhLajkxLVRRWVlhYjBZTTB5WE1XX0JnMW5mZTlTT1pURUd1</guid></item></channel></rss>
