@@ -58,7 +58,59 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 31 Dec 2025 03:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5Da21oQkQwcFN6Y3hGV3daWW1XdUFIRUpaV2tkUGZrUmd3Qkw2cmxUSG5UWklORlhJdjRmdWhFZFQ5bThOUU1yUW84b0M4ZjV0R191TlI1R0RzYzhOWV9kTXBQYWFlY1ZZVWc</guid></item><item><title>iPhone 17 Pro和Pro Max又出现新问题！充电时有杂音引发用户不满 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095771.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 31 Dec 2025 03:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5Da21oQkQwcFN6Y3hGV3daWW1XdUFIRUpaV2tkUGZrUmd3Qkw2cmxUSG5UWklORlhJdjRmdWhFZFQ5bThOUU1yUW84b0M4ZjV0R191TlI1R0RzYzhOWV9kTXBQYWFlY1ZZVWc</guid></item><item><title>22岁女天才攻破NVIDIA Tegra X2！特斯拉在内所有设备都能破解：无法修复 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095799.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月31日消息，在第39届混沌通讯大会（39C3）上，&lt;span&gt;&lt;strong&gt;年仅22岁的女天才安全研究员Amber Katze宣布，已完全攻破NVIDIA Tegra X2芯片的安全启动机制。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这意味着全球数以百万计搭载该芯片的设备，从MR眼镜到特斯拉电动车的系统在内，只要能接触到其USB接口就能被入侵。&lt;/p&gt;
+&lt;p&gt;Amber Katze表示，她之所以投入大量精力去攻破NVIDIA Tegra X2芯片，起因是2024年Magic Leap关闭了Magic Leap One的启动服务器，导致这款MR眼镜变成了无法使用的“电子垃圾”，于是她决定恢复这些设备的正常功能。&lt;/p&gt;
+&lt;p&gt;Magic Leap One采用了NVIDIA Tegra X2芯片，而该芯片在启动时使用了Fastboot协议，其开源代码实现由NVIDIA提供，Katze深入研究代码后，&lt;strong&gt;发现了两个关键漏洞：“sparsehax”和“dtbhax”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“Sparsehax”涉及系统解压缩SparseFS镜像时的逻辑缺陷，而“dtbhax”则允许通过加载特定的核心设备树块（DTB）实现持久化访问。&lt;/p&gt;
+&lt;p&gt;利用这两个漏洞，Katze成功在Magic Leap One上执行了未签名代码，突破了系统的第一道防线。&lt;/p&gt;
+&lt;p&gt;随后，她通过故障注入的方式，迫使Tegra X2在启动过程中出现错误，并通过侧信道导出了被严密保护的BootROM固件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在BootROM代码中，她发现了USB恢复模式的严重漏洞，由于BootROM是芯片硅片上的只读代码，NVIDIA无法通过软件修复这一缺陷。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Katze指出，通过USB恢复模式的漏洞，所有使用NVIDIA Tegra X2芯片的设备，只要能够接触到USB接口，都可以被绕过安全启动链并完全接管，包括特斯拉电动汽车的自动驾驶系统。&lt;/p&gt;
+&lt;p&gt;虽然攻击条件较为苛刻（需物理接触），但Katze仍构建出复杂的利用链，最终实现了最高权限的代码执行。&lt;/p&gt;
+&lt;p&gt;不过需要注意的是，Tegra X2芯片于2016年发布，目前已停产，后续已修复相关漏洞，因此对普通用户实际影响有限。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251231/08e15b2c-f027-47a5-bbef-cd605df1b91b.jpg" target="_blank"&gt;&lt;img alt="22岁女天才攻破NVIDIA Tegra X2！特斯拉在内所有设备都能破解：无法修复" h="450" src="//img1.mydrivers.com/img/20251231/S08e15b2c-f027-47a5-bbef-cd605df1b91b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 31 Dec 2025 03:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9BSDRzM2x5VjBMd3lybjRkNHlZX255TXNwNDlKd3NSVWdfZmlETkhGU2VkT1A1MzNsSGJrTkNndnExYWNzV2RsdGhyR0xDZWpURUdVUFNZT0s</guid></item><item><title>DDR5死贵 历史开倒车！DDR4主板真香啊 但有个坏消息 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095784.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技12月31日消息，DDR5内存行情如今太吓人了，动不动两三倍的涨价，曾经六七百元的32GB DDR5-6000如今都超过2000元甚至是2500元，关键是这绝非终点。&lt;/p&gt;
+&lt;p&gt;再加上硬盘也在疯狂涨价，DIY装机正面临前所未有的尴尬，DDR5平台俨然成了“有钱人”的专属，毕竟整体成本比以往要贵了至少2000元。&lt;/p&gt;
+&lt;p&gt;很自然地，越来越多的人把目光转向了DDR4老平台，毕竟32GB DDR4-3200只要1200元左右，16GB则在600元左右。&lt;/p&gt;
+&lt;p&gt;当然，DDR4内存也在涨价，但至少目前幅度相对温和，DDR4主板和处理器也远未退市。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251231/05378f4dc95043fc82bca01a5fc701c7.jpg" target="_blank"&gt;&lt;img alt="DDR5死贵 历史开倒车！DDR4主板真香啊 但有个坏消息" h="398" src="//img1.mydrivers.com/img/20251231/s_05378f4dc95043fc82bca01a5fc701c7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;厂商自然也看到了这种形势，之前就有说法称AMD已经推迟了B550主板停产退市时间，继续供货。&lt;/p&gt;
+&lt;p&gt;根据最新消息，&lt;span&gt;&lt;strong&gt;华硕主板已经调整了2026年第一季度的生产计划，对供应链和产能布局进行策略性调整，重点加大DDR4主板的市场投入力度。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;AMD平台方面，600系列主板、Zen4锐龙7000系列处理器开始不再支持DDR4内存，只有更老的500系列搭配锐龙5000系列才行，因此&lt;strong&gt;B550、A520主板的产能和供货规模将显著提升，满足市场需求。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Intel平台方面，700系列和14代酷睿及之前都支持DDR4，所以&lt;strong&gt;B760、H610等主流主板的供应量都会大大增加，尤其是针对电商渠道，满足线上客户。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于线下渠道，H760、H610主板将继续维持稳定的供应，确保库存充足。&lt;/p&gt;
+&lt;p&gt;华硕工厂还承诺，会在第一季度全力配合渠道协调，积极响应线下和线下客户销售需求。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251231/28f5160b9ded46e5bf70c61c164f7d52.png" target="_blank"&gt;&lt;img alt="DDR5死贵 历史开倒车！DDR4主板真香啊 但有个坏消息" h="431" src="//img1.mydrivers.com/img/20251231/s_28f5160b9ded46e5bf70c61c164f7d52.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;相信微星、技嘉等主板厂商也会有类似的动作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;事实上，主板厂商都已经开始加大AMD B550芯片中的采购量、产能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;坏消息是AMD趁机开始涨价，B550芯片中的采购成本最近涨了3-4美元左右，可能会在终端价格上有所反映。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;只是随着产能大部分转向HBM，留给DDR5的空间都会很有限，DDR4恐怕更难，说不定供应紧张会加剧，价格也难免飙升。&lt;/p&gt;
+&lt;p&gt;到时候，又该怎么办呢？&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20251231/77b31cf1232d4d838e86884781ea8d00.jpg" target="_blank"&gt;&lt;img alt="DDR5死贵 历史开倒车！DDR4主板真香啊 但有个坏消息" h="400" src="//img1.mydrivers.com/img/20251231/s_77b31cf1232d4d838e86884781ea8d00.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 31 Dec 2025 02:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBITDIwQWgwcU1UXzg2amQ5cnNST2NfWFgxbW4tUk82UEcxY3NZYTVCa0kybExxalRYMnplVVY2Ui1GelFJLXVqcnpSMEhobVlLY0REVml0Tng</guid></item><item><title>iPhone 17 Pro和Pro Max又出现新问题！充电时有杂音引发用户不满 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095771.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;iPhone 17 Pro和Pro Max又出现新问题！充电时有杂音引发用户不满&lt;/p&gt;
           
@@ -633,7 +685,151 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪网</author><pubDate>Wed, 31 Dec 2025 00:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxQaTVhNHo0NzgxTWVSMFF4WlRQdEx6cjhzbWMzXzN4emx3a3JBelBfNUdGWVRuTFZCYlRDaFp1MWJGSU0zQ082Vkd2Z3duSTRldXZHT29IOXZYMjZhWHF3YXBXeE40VjhMLVl3ZnZ2RzVuNEswR2hQYVByUjZ4QW1NYmJkWDloaHM</guid></item><item><title>不是简单滤镜！小米揭秘徕卡一瞬如何实现：端侧模型+胶片建模 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095727.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪网</author><pubDate>Wed, 31 Dec 2025 00:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxQaTVhNHo0NzgxTWVSMFF4WlRQdEx6cjhzbWMzXzN4emx3a3JBelBfNUdGWVRuTFZCYlRDaFp1MWJGSU0zQ082Vkd2Z3duSTRldXZHT29IOXZYMjZhWHF3YXBXeE40VjhMLVl3ZnZ2RzVuNEswR2hQYVByUjZ4QW1NYmJkWDloaHM</guid></item><item><title>收购Manus引入中国鲶鱼：扎克伯格的AI焦虑症之年｜硅谷观察 - 新浪财经</title><link>https://finance.sina.com.cn/world/2025-12-31/doc-inhervys6679625.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　硅谷观察/郑峻&lt;/p&gt;
+
+&lt;p&gt;　　距离2025年结束还有一天时间，美国社交媒体巨头Meta突然宣布收购AI代理创业公司Manus，引入了充满活力与速度的中国创业团队，为扎克伯格充满焦虑症与危机感的一年画上了充满象征意义的句号。&lt;/p&gt;
+&lt;p&gt;　　&lt;strong&gt;岁末火线达成收购&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　Meta的AI业务负责人亚历山大·王（Alexandr Wang）昨天在社交媒体上宣布，Manus已经加入Meta，期待与Manus联合创始人兼CEO肖弘一道打造出色的AI产品。他称赞，Manus团队在探索当今模型的过剩能力方面处于世界一流水平，能够构建强大的AI代理。&lt;/p&gt;
+
+&lt;p&gt;　　Manus的肖弘回应称，“加入Meta让我们能够在更强大、更可持续的基础上发展，同时不改变Manus的运作方式或决策方式。”收购完成之后，他将出任Meta的副总裁，与团队继续留在新加坡。&lt;/p&gt;
+&lt;p&gt;　　收购AI代理产品公司Manus，不仅是Meta AI业务版图的又一次扩张与补缺，更是扎克伯格和亚历山大试图引入外部力量重塑内部组织，在内部矛盾不断的情况下，提振自身AI产品竞争力的又一次豪赌。&lt;/p&gt;
+&lt;p&gt;　　Meta在公告中表示，交易完成之后，计划继续运营并销售 Manus的服务，并将其整合到其社交媒体产品套件中。AI代理工具已经成为巨头们激烈竞争的领域。“我们计划将这项服务扩展到更多企业。”&lt;/p&gt;
+&lt;p&gt;　　双方并未宣布交易金额，但据美国媒体报道，成交价在20亿-30亿美元间。而且Meta洽购Manus的时候，后者正寻求以20亿美元的融资进行新一轮融资。双方团队从接洽到宣布交易，只用了不到半个月时间。这是典型的扎克伯格交易风格：认准价值就迅速出击。&lt;/p&gt;
+&lt;p&gt;　　如果将这笔交易置于Meta今年一系列AI战略调整的背景下审视，就更能理解扎克伯格对自身AI业务的严重焦虑：从Llama 4的惨淡表现，到开出天价年薪招募行业顶尖人才，到143亿美元入股Scale AI并引入亚历山大空降重组AI业务，再到对基础研究部门进行大裁员，以及AI教父杨立昆（Yann LeCun）辞职，最后以20亿美元收购Manus，为Meta AI业务这动荡重组的一年画上了一个句号。&lt;/p&gt;
+&lt;p&gt;　　&lt;strong&gt;中国团队出海企业&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　虽然名义上是一家新加坡企业，但Manus实际上是中国创业团队的出海企业，今年6月才搬迁到新加坡。Manus背后的公司蝴蝶效应是由中国创业者肖弘与季逸超等创业伙伴于2022年创立的，公司设在北京和武汉。&lt;/p&gt;
+&lt;p&gt;　　蝴蝶效应的首个产品是AI助手Monica，一个整合了ChatGPT和Claude等模型的浏览器扩展插件，到去年已积累超过1000万用户，并实现了盈利。不过，真正让肖弘团队吸引全球AI行业关注的，是今年3月推出的Manus。&lt;/p&gt;
+
+&lt;p&gt;　　这款产品被称为”世界首个真正的通用AI代理”，能够在云端异步运行，自主完成诸如创建网站、分析股票、制定旅行计划、筛选简历等复杂任务。与传统的聊天&lt;span id="stock_sz300024"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz300024/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;机器人&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz300024"&gt;&lt;/span&gt;不同，Manus采用多智能体架构，由一个中央”执行者”协调多个专业子智能体，处理不同任务环节。&lt;/p&gt;
+&lt;p&gt;　　Manus的技术实现并非自主开发全新模型，而是巧妙地编排了现有的强大模型——主要使用Anthropic的Claude 3.5 Sonnet和阿里巴巴Qwen的定制版本，配合29个专业工具进行网页浏览、API交互和脚本执行。这种”整合大于创新”的策略让Manus能够快速推向市场，并在某些基准测试（如GAIA）上超越了OpenAI的Deep Research。&lt;/p&gt;
+&lt;p&gt;　　令人印象深刻的是Manus的商业化速度。按照他们最近的介绍，产品推出仅有8个多月时间，Manus已经处理了超过147万亿个tokens，创建了8000万个虚拟计算机，服务着数百万用户和企业。&lt;/p&gt;
+&lt;p&gt;　　而且，Manus的年度经常性收入（ARR）已经超过了1亿美元，据称是全球最快达到这一里程碑的初创公司。需要解释的是，年化收入指的是按照目前的营收态势估算未来一年的营收，而非过去一年的实际营收。&lt;/p&gt;
+&lt;p&gt;　　&lt;strong&gt;美国风投巨头积极撮合&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　此次Meta收购之后，买断了Manus所有投资者的股权。这是Manus的诸多投资人最愿意看到的局面，尤其是美国风投巨头Benchmark。蝴蝶效应创办之后完成了两轮融资，总计融资8500万美元，国内投资者包括腾讯、真格基金以及红杉中国等。&lt;/p&gt;
+&lt;p&gt;　　今年4月，还在中国的Manus完成了美国风投基金BenchMark领投的7500万美元B轮融资，投后估值在5亿美元左右。BenchMark董事总经理普塔衮塔（Chetan Puttagunta）因此加入了Manus董事会。&lt;/p&gt;
+&lt;p&gt;　　据一位硅谷风投圈的人士向《硅谷观察》透露，Benchmark基金在撮合Meta与Manus的交易中发挥了关键作用。此次Meta买断收购Manus，意味着Benchmark这笔投资在8个月时间，得到了4-5倍的回报，是一个相当不错的快进快出投资。&lt;/p&gt;
+&lt;p&gt;　　值得一提的是，作为硅谷知名风投基金，这是Benchmark第二次从扎克伯格的收购中赚得盆满钵满。他们曾经是Instagram的A轮领投方，也参与了B轮融资，在那笔交易中总计获得了超过25倍的投资回报。&lt;/p&gt;
+&lt;p&gt;　　2012年，Instagram刚刚完成5亿美元估值的B轮融资，扎克伯格立刻以两倍估值锁定了收购，清除了Facebook未来最有可能的竞争对手。现在Instagram估值高达数千亿美元，扎克伯格的这次豪赌被认为是互联网历史上最为成功的收购交易。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;　　Meta AI的黑暗之年&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　要理解Meta为何如此迫切地收购Manus，需要回顾2025年Meta在AI领域遭遇的诸多挫折，就能理解扎克伯格对AI竞争掉队的焦虑症与危机感。&lt;/p&gt;
+&lt;p&gt;　　2025年的AI行业，见证了中国团队DeepSeek的异军突起，也见证了AI巨头Meta的混乱与挫折。今年4月，Meta发布了Llama 4系列模型，其中包括Scout（109B参数）、Maverick（400B参数）和训练中的Behemoth（计划2万亿参数）。这本应是Meta在开源AI领域的又一次胜利，但结果却是一场令人难堪的灾难。&lt;/p&gt;
+
+&lt;p&gt;　　几乎在发布后，研究人员就注意到基准分数存在问题。Meta在测试中使用了专门优化的“experimental chat version”（实验聊天版本），而非公开发布的版本。这一做法引发了社区的质疑。更糟糕的是，Llama 4在编码和复杂推理等关键领域明显落后于竞争对手，尤其是中国的DeepSeek模型。&lt;/p&gt;
+&lt;p&gt;　　内部和外部的双重批评让扎克伯格深感触动。据内部人士透露，他对外界认为Meta试图”掩盖”产品表现不佳的看法尤为愤怒，对Meta AI团队非常失望。公司内部高管也认为模型性能未达预期，而外部开发者则指责Meta过度承诺、交付不足。&lt;/p&gt;
+&lt;p&gt;　　更令人担忧的是Behemoth的发布时间无限期推迟。据《华尔街日报》报道，Meta内部对Behemoth团队的进展感到沮丧，扎克伯格因此考虑对负责Llama 4 Behemoth开发的AI产品组进行”重大管理变革”。&lt;/p&gt;
+&lt;p&gt;　　开源大模型原本是Meta的领先赛道，但现在已经完全被中国群狼反超。DeepSeek和阿里Qwen等中国模型在多项基准测试中位居前列，常与闭源顶级模型（如OpenAI o1、Claude 4.5、Gemini 2.5）比肩或超越，尤其在数学、编程、推理和多语言任务上。&lt;/p&gt;
+&lt;p&gt;　　对开发者而言，中国大模型更有着明显的成本优势。近期公布的OpenRouter报告显示（a16z合作，覆盖100万亿Token）：中国开源模型全球使用量占比已经从去年年底的~1%飙升至峰值近30%。开源整体份额~33%，其中中国模型主导增长。&lt;/p&gt;
+&lt;p&gt;　&lt;strong&gt;　AI团队外行管内行&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　那么，为什么Llama 4会表现糟糕？一位曾在Llama团队直接参与开发的前Meta员工向《硅谷观察》透露，这背后或许更多是因为中高层的决策问题，存在着严重的“外行领导内行”问题。&lt;/p&gt;
+&lt;p&gt;　　Llama团队原本优先投入在多模态方向，因为Meta有多元化的产品生态，如元宇宙，智能眼镜，社交媒体等。但是今年年初DeepSeek出现之后，推理能力显著超越了Llama，让Meta团队内部“非常恐慌”。团队两头都想做好，但时间已经来不及了，这就导致了产品的混乱。&lt;/p&gt;
+&lt;p&gt;　　这位前Meta员工透露，Meta AI团队问题的根源是在于人不配位。一些原本做产品的Meta中高层，AI技术背景薄弱，但却领导真正做AI的人，这就是所谓的“外行管内行”。这种话语权的错位，是让他决定离职的重要原因之一。&lt;/p&gt;
+&lt;p&gt;　　原始Llama团队由14名拥有博士学位的学者和研究人员组成，但其中11人已经离开公司。后续版本由完全不同的团队开发，这种人才流失严重影响了产品连续性。这位前员工也是在扎克伯格引入亚历山大之前就离开了Meta。&lt;/p&gt;
+&lt;p&gt;　　&lt;strong&gt;扎克伯格焦虑求变&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　这一系列挫折促使扎克伯格陷入焦虑，从而决定采取激进变革。扎克伯格意识到Llama 4失败背后存在严重的团队领导问题，但又认为自己很难通过内部手段带来改变，需要寻找外部的鲶鱼来让团队重新具备竞争力。这就是扎克伯格找亚历山大来领导Meta AI部门的直接原因。&lt;/p&gt;
+
+&lt;p&gt;　　扎克伯格今年最重要的交易，无疑是投资143亿美元获得了AI数据标注公司Scale AI 49%的股权，同时将其28岁的创始人兼CEO亚历山大·王招至麾下，领导新成立的Meta Superintelligence Labs（MSL）。这是Meta有史以来最大的外部投资。&lt;/p&gt;
+&lt;p&gt;　　扎克伯格对亚历山大寄予厚望，希望他能够带来Meta在数据创新方面的突破。据知情人士透露，Meta领导层曾抱怨公司领先AI团队在数据创新方面缺乏进展。亚历山大的专长正是AI模型训练所需的高质量数据标注和评估，这正是Meta所需要的。&lt;/p&gt;
+&lt;p&gt;　　除了招募亚历山大空降领导Meta AI，扎克伯格还亲自参与了AI人才招聘，创建了一个名为”招聘派对”的高管群组，全天候讨论物色人才。过去半年时间，Meta向OpenAI、谷歌等知名AI公司的研究人员开出”七到九位数”的薪酬包。并重新调整总部座位布局，让核心的新员工能坐在扎克伯格附近。&lt;/p&gt;
+&lt;p&gt;　&lt;strong&gt;　Meta内部组织震荡&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　亚历山大的到来很快引发了Meta AI内部的组织震荡。这或许是扎克伯格希望看到的，也或许超过了他的预期。&lt;/p&gt;
+
+&lt;p&gt;　　首先是部门重组与大举清洗。亚历山大空降到来之后，Meta传奇AI科学家杨立昆成为了他的下属。这对于一位在AI领域拥有数十年研究经验、被公认为是“AI之父之一”的知名学者来说，是难以接受的“屈辱”，直接预示了他随后的离职。&lt;/p&gt;
+&lt;p&gt;　　今年10月，亚历山大对Meta AI团队进行精简整合，裁员600多人。除了他自己直属的TBD Lab没有被裁员，其他三个部门都受到明显影响，尤其是FAIR基础研究部门，包括“华人AI大牛”田渊栋在内的诸多AI研究人才都被无情清洗。&lt;/p&gt;
+&lt;p&gt;　　其次是战略分歧与资源争夺。《纽约时报》报道，亚历山大在2025年秋季的内部会议上与Meta的元老高管产生了明显分歧，包括产品主管考克斯（Chris Cox）和技术主管博茨沃斯（Andrew Bosworth），这些都是扎克伯格的多年亲信。&lt;/p&gt;
+&lt;p&gt;　　据报道，双方的冲突集中在AI投资优先级、开发时间表以及与Meta现有产品的整合等根本问题上。元老高管们主张利用公司庞大的社交数据优势，借助Facebook和Instagram的数据来训练Meta的新模型。&lt;/p&gt;
+&lt;p&gt;　　但亚历山大持有不同意见。他主张专注于追赶谷歌和OpenAI的模型，认为应该在技术前沿展开竞争而不是依赖现有产品数据。这种分歧反映了两种不同的AI战略愿景：是利用现有资产增量改进，还是大胆追求技术突破？至少在目前，扎克伯格给予了亚历山大足够的支持与信任。&lt;/p&gt;
+&lt;p&gt;　　第三是文化冲突与人才流失。一方面，亚历山大到来之后组建自己直属的精英团队，又高薪从竞争对手那里挖来顶级AI开发人才，直接拉开了与原先Llama团队的薪资差距。这种落差在Meta AI部门内部士气造成了一定影响，促使一些原先员工寻求跳槽机会。&lt;/p&gt;
+
+&lt;p&gt;　　另一方面，高薪挖来的人才也因为文化冲突寻求离开。从OpenAI和Scale AI加入的新人才对大公司的官僚主义表示沮丧。Scale AI前高级副总裁梅耶（Ruben Mayer）在加入Meta仅两个月后就离开了公司。生成式AI产品管理总监纳耶克（Chaya Nayak）和研究工程师瓦尔马（Rohan Varma）也在最近几周宣布离职。&lt;/p&gt;
+&lt;p&gt;　　据《金融时报》在12月中旬报道，亚历山大私下向同事抱怨扎克伯格的”微观管理”让他感到”窒息”。而一些员工则质疑他是否有能力管理Meta规模的研究团队，指出他的背景是AI数据服务而非前沿AI开发。这种双向的不满预示着内部关系的脆弱。&lt;/p&gt;
+&lt;p&gt;　　&lt;strong&gt;战略收购补缺业务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　在这样的重组背景下，Meta火线收购Manus就有了更深的含义。亚历山大和扎克伯格都希望通过收购来补充Meta AI业务，带来新的用户与数据，同时引入来自中国创业团队的竞争力。&lt;/p&gt;
+&lt;p&gt;　　Meta 拥有强大的开源基础模型Llama 系列，在模型参数、推理效率和多模态能力上领先，但Meta 的核心缺口在于将这些模型转化为可靠的、自主完成复杂任务的代理系统。&lt;/p&gt;
+&lt;p&gt;　　Manus正是Meta这一缺口最好的补充。Manus 号称“全球首个通用 AI 代理”（general-purpose AI agent），能独立处理端到端任务，如市场研究、简历筛选、旅行规划、代码编写/部署、股票分析等，几乎无需人类干预。它依赖多代理架构 + 第三方模型，专注在执行可靠性、工具调用和上下文工程上。&lt;/p&gt;
+&lt;p&gt;　　而且Manus已经证明了自己的商业模式。推出不到9个月，就获得了数百万付费用户和企业，年化收入超过1亿美元。这是 AI 代理领域罕见的快速商业化成功，证明了市场需求。&lt;/p&gt;
+&lt;p&gt;　　这样的业务对Meta是很好的补充。收购后，Manus业务将继续独立运营，同时被整合进 Meta AI、Facebook、Instagram、WhatsApp等大家庭产品中，实现“代理丰富”（agentic-rich）的个人 AI 愿景。这直接填补了 Meta 在“代理执行层”的短板，让 Llama 模型从“会聊天”转向“会做事”，并为中小企业（尤其是 WhatsApp SMB）提供自动化工具。&lt;/p&gt;
+&lt;p&gt;　　从竞争角度看，收购Manus阻止了竞争对手的补强。AI代理已经超过聊天机器人，成为可预见未来的焦点竞争战场。在这一领域，OpenAI有Deep Research和Operator，Anthropic有Claude的计算机使用能力，Google有Gemini的多模态能力。&lt;/p&gt;
+&lt;p&gt;　　为了不在竞争中掉队，Meta需要类似的AI代理能力来保持竞争力，特别是在将AI整合到Facebook、Instagram、WhatsApp等数十亿用户产品中时。这就是收购Manus的直接意义。此外，Manus的中国团队以及在Qwen模型上的经验可能帮助Meta更好地理解和应对来自中国的AI竞争。&lt;/p&gt;
+&lt;p&gt;　　&lt;strong&gt;中国鲶鱼搅动Meta&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　作为一家由中国人才创立，搬迁到新加坡，获得美国基金投资，现在被美国科技巨头收购的公司，Manus的发展经历体现了AI时代的全球化本质。他们的技术和文化能否在硅谷巨头中存活，将是观察中国AI创业者国际化输出路径的一个重要案例。&lt;/p&gt;
+&lt;p&gt;　　Manus的成功案例也再次证明：在AI领域，中国创业者的执行力、产品化能力和商业化速度都已经达到了世界级水平。Manus能在8个月内达到1亿美元ARR，这种商业化速度即使在硅谷也是罕见的。和TikTok一样，Manus成功的背后是中国互联网行业多年积累的快速迭代、精益创业、以用户为中心的方法论的成功。&lt;/p&gt;
+&lt;p&gt;　　然而，这笔收购的未来整合也存在着不确定性。目前Manus是基于Claude和阿里Qwen等外部模型构建，而Meta当然希望推广自己的Llama模型。如果Manus被要求迁移到Llama，似乎是不可避免的事情。如果Llama的能力不足以支撑Manus的功能，这可能会影响到产品竞争力。&lt;/p&gt;
+
+&lt;p&gt;　　Manus的创始人肖弘和季逸超被认为是新一代中国AI创业者的代表，习惯于快速迭代与灵活决策，这与Meta的大公司流程可能格格不入。扎克伯格引入这两位中国创业者，其实是在下一场豪赌：赌这两条“中国鲶鱼”能在被大公司文化吞噬之前，先把 Meta的AI 生态彻底激活。&lt;/p&gt;
+&lt;p&gt;　　目前 Meta 采取了相对宽松的策略。Manus 团队目前仍以独立雇员身份加入 Meta，并在新加坡等地维持运营，试图在不完全融入 Meta 流程的情况下保持初创公司的节奏。&lt;/p&gt;
+&lt;p&gt;　　Manus团队来自中国创业背景，习惯于”996”工作制和快速试错。但Meta虽然也强调”move fast”，但作为成熟的上市公司，其内部流程、合规要求、决策机制都要复杂得多。这种文化碰撞可能导致团队失去原有的创新活力。&lt;/p&gt;
+&lt;p&gt;　　肖弘在收购后复盘提到，真正的难度不在于技术分析，而在于“克服内部惯性，将其变为组织的行动”。这暗示了他目前在 Meta 内部更多承担着推动文化变革、对抗大公司病的角色。而这正是扎克伯格和亚历山大希望看到的变化。&lt;/p&gt;
+&lt;p&gt;　　Meta收购Manus，表面上是一次常规的科技收购，实质上是硅谷巨头在AI时代焦虑的缩影，是扎克伯格用金钱和速度，引入“中国鲶鱼”来对抗组织惰性的又一次尝试，更是中国AI创业者输出全球影响力的又一次体现。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：杨赐 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 30 Dec 2025 23:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE8zSi10elkwRjJvOWF3bzRYYkhCaUsya3FpVnRjaHNGMnpnc0RPN1cxWEVXbDU1dVZjVmNCRVlHeDFLdnFoMmpEcnRVNEM0SFliTFFHLXdiTklQdkRqZ0N2dmQyU0YtRXFMVXlJTEZMVzhiT3huV0R0Ql93</guid></item><item><title>不是简单滤镜！小米揭秘徕卡一瞬如何实现：端侧模型+胶片建模 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095727.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技12月31日消息，小米17 Ultra徕卡版上配备了独有的“徕卡一瞬”功能，这与以往的徕卡画质并不相同，并不是简单的色彩滤镜。&lt;/p&gt;
 &lt;p&gt;小米表示，小米17 Ultra系列是与徕卡宣布全球影像战略合作升级后的首款杰作，为“徕卡一瞬”功能推出两款全新画质：&lt;/p&gt;
@@ -1024,7 +1220,76 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Dec 2025 14:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1xOW55R3F4ajR3d2lLejJFclFkdkVWSjgtakVIV0FRQ2tSMU5NTFNjM01rWVkwMWkzelZVekQ1NTUzS2JCRFFqLW12TkxWcGhqSmptQVlnX1c</guid></item><item><title>内存价格暴涨 PC倒车请注意：华硕计划增产DDR4主板 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095698.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Dec 2025 14:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1xOW55R3F4ajR3d2lLejJFclFkdkVWSjgtakVIV0FRQ2tSMU5NTFNjM01rWVkwMWkzelZVekQ1NTUzS2JCRFFqLW12TkxWcGhqSmptQVlnX1c</guid></item><item><title>荣耀WIN上手：10000mAh电池带你稳赢 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095699.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;24年12月，荣耀定位年轻性能市场的GT系列正式发布，其更着重于体现新品的科技、潮流设计，以及更极致的性能表现，目标打造出更懂年轻人的全新性能科技新品，凭借亲民的售价也获得了手游玩家们的青睐。&lt;/p&gt;
+&lt;p&gt;一年之后，荣耀宣布将GT系列升级为WIN系列，全新升级的荣耀WIN凭借10000mAh巨无霸青海湖电池、第五代骁龙8至尊版旗舰芯、荣耀东风涡轮散热等硬核配置，再次打造出一款性能先锋。ZOL编辑部此次也提前拿到了荣耀WIN，快来和我们一起上手体验一下~&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内敛设计加持，185Hz超高刷电竞屏刷新流畅体验&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为了体现出年轻潮流感，市面上绝大多数电竞性能手机都会采用“特立独行”的设计，虽然初看惊艳，但入手后又会觉得在公共场合拿不出手。在这方面荣耀WIN三款配色均采用纯色设计，其中“快开黑”版本设计尤为内敛。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/e3279821-cdd8-42d2-9b56-61c78435cdb0.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="449" src="//img1.mydrivers.com/img/20251230/Se3279821-cdd8-42d2-9b56-61c78435cdb0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;荣耀WIN采用了四边包裹式中框设计，横竖握持手感都很圆润；精研雾面金属中框的表面采用哑光设计，不仅能有效减少指纹沾染，也更加耐磨，常用常新。&lt;/p&gt;
+&lt;p&gt;从图中可以看出，荣耀WIN的边框与机身背盖做了微弧处理，久握不硌手。同时，整机支持IP68+IP69+IP69K的密封架构，无须担心日常生活中的液体泼溅，就算在海边游玩也无需过度担心意外损坏。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/f5bef27f-c567-4f49-88a4-83edbd32a308.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="449" src="//img1.mydrivers.com/img/20251230/Sf5bef27f-c567-4f49-88a4-83edbd32a308.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;翻到手机背面，荣耀WIN的风暴之眼Deco平铺在机身上侧，右下角有“WIN”标识，广角主摄+长焦+超广角三颗镜头配置在右侧，与荣耀东风涡轮散热共同组成矩阵排布，观感和谐。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/8a1cfc55-2c47-436c-aed0-7c17e983887b.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="449" src="//img1.mydrivers.com/img/20251230/S8a1cfc55-2c47-436c-aed0-7c17e983887b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;机身右侧配备有音量按键、电源按键以及一颗AI键，短按、双击、长按都能自定义功能，默认双击开启相机，长按启动游戏空间，随时拿出手机都能开两把。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/7c3fb955-bcdc-4b5d-b936-2d747854f0e8.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="449" src="//img1.mydrivers.com/img/20251230/S7c3fb955-bcdc-4b5d-b936-2d747854f0e8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;机身底部配备有SIM卡槽、USB-C接口以及扬声器，顶部底部双1216对称扬声器听感更立体，游戏沉浸感十足。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/67286111-cef6-4976-8ab3-07b80a34de9c.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="449" src="//img1.mydrivers.com/img/20251230/S67286111-cef6-4976-8ab3-07b80a34de9c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;翻到正面，荣耀WIN采用6.83英寸185Hz超高刷电竞直屏，分辨率为1272 x 2800，峰值亮度6000nits，最低亮度1nit，再加上5920Hz PWM调光，明暗环境都清晰护眼；3500Hz瞬时触控采样率记录玩家的每一个精细操作。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/0ed5c2d9-e4c0-47f3-81e4-14f8952ba5c7.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="449" src="//img1.mydrivers.com/img/20251230/S0ed5c2d9-e4c0-47f3-81e4-14f8952ba5c7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这款产品也延续了荣耀其他系列机型的护眼基因，支持AI动态离焦、AI视觉健康管理、视觉个性化显示等一系列定制护眼功能，还可根据用户日常用机习惯AI调节屏幕亮度，夜间睡前自动转暗，打造全场景视觉健康管理方案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第五代骁龙8至尊版移动平台加持，带你游戏把把WIN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;来到荣耀WIN的性能实测环节，该机搭载第五代骁龙8至尊版旗舰芯片，搭配LPDDR5X至尊版+UFS 4.1组成性能铁三角。在此基础上，该机还内置了荣耀幻影引擎3.0，游戏启动更快，画面更稳。&lt;/p&gt;
+&lt;p&gt;直接开始游戏实测，我们选择了《原神》、《王者荣耀》、《三角洲行动》三款热门手游，测试不同负载下的画面、温度体验。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/7480ceb1-cd09-4838-8bb8-7dfa18c45705.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="251" src="//img1.mydrivers.com/img/20251230/S7480ceb1-cd09-4838-8bb8-7dfa18c45705.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;荣耀WIN游玩《原神》极高画质+60帧模式，平均帧率为60.2，1%Low帧也控制在59.3，全程都没有明显卡顿出现。测试结束后，机身温度最高处仅有38.2℃，手感与游玩之前区别。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/a9367102-36ce-456e-9f67-92a3acd525d3.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="446" src="//img1.mydrivers.com/img/20251230/Sa9367102-36ce-456e-9f67-92a3acd525d3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看出，位于Deco顶部的荣耀东风涡轮散热风扇处明显温度更低，这颗内置风扇风道直触主板热区，冷风直吹芯片热源，高效降低整机发热。在通知栏中我们可以随时开关这颗内置风扇，并将其设定为智能、手动两种模式，选择智能模式后手机充电发热时自动开启，低温停转，温度越高转速越快。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/d7ed2df4-11de-4290-9204-059b53d3a8a5.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="250" src="//img1.mydrivers.com/img/20251230/Sd7ed2df4-11de-4290-9204-059b53d3a8a5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在热门FPS手游《三角洲行动》中，荣耀WIN可以带来高清画质+120帧的流畅体验，连续游玩3-4局烽火地带模式画面流畅稳定。测试结束后机身核心温度仅为36.1℃。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/b4214b89-7d1c-4b0b-bf17-7da9444e7a1b.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="449" src="//img1.mydrivers.com/img/20251230/Sb4214b89-7d1c-4b0b-bf17-7da9444e7a1b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在手游《王者荣耀》中，荣耀WIN目前支持开启极致分辨率+144帧模式，实测游戏过程中画面平均帧率为151.9，无论在前期对线还是后期团战中画面都没有出现明显波动。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/0fea41f0-b29b-47ac-8058-be6837f335a0.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="248" src="//img1.mydrivers.com/img/20251230/S0fea41f0-b29b-47ac-8058-be6837f335a0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在游戏管家中，玩家还能开启帧率增强、触控增强、画质增强、幻影稳帧等一系列游戏功能，带来堪比PC级的视觉体验和高性能表现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;10000mAh青海湖电池搭配百瓦快充，上分间隙随时“回血”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为了不打断玩家们的上分体验，荣耀WIN内置了一颗能量密度大、放电损耗小的10000mAh巨无霸青海湖电池，结合荣耀都江堰电源管理系统、HONOR E2芯片等一系列软硬件，足以提供一天的游玩使用。&lt;/p&gt;
+&lt;p&gt;至于其实际续航表现如何，我们照例来进行囊括手游、播放影音、刷软件、听音乐等项目的ZOL五小时重度续航测试，最终结果如下：&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/79d408bf-7c88-4344-86cb-e17cbf78b4fd.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="291" src="//img1.mydrivers.com/img/20251230/S79d408bf-7c88-4344-86cb-e17cbf78b4fd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，荣耀WIN在5小时测试后仍可剩余80%电量，是目前测试过的手机产品中的顶级水平，正常使用1天无压力，基本告别了“电量焦虑症”。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/02665ff0-d900-4b0c-9d40-f415a91d5446.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="284" src="//img1.mydrivers.com/img/20251230/S02665ff0-d900-4b0c-9d40-f415a91d5446.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;充电方面，本机则是支持100W超级快充+80W无线充电+27W有线反充，30分钟补充40%电量，毕竟电池容量也要大其他旗舰一截，续航时间也更长，用起来更长久。早上出门时如果发现手机没电了，充个15分钟就能补充21%，用2、3个小时足够了。&lt;/p&gt;
+&lt;p&gt;对于手游玩家们来说，荣耀WIN的满血快充足以让你在周末上分随时补充电量，该机还支持充电分离功能，充电器优先给主板供电，有效降低游戏时充电的发热情况，避免温度过高影响用户的使用体验，&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;高素质三摄组合搭配AI修图，出片一条龙&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最后，我们再来体验下荣耀WIN的影像实力，该机后置三颗镜头，分别是5000万像素索尼LYT-700主摄，1/1.56英寸大底传感器、f/1.95大光圈，支持OIS光学防抖+CIPA 5.0级防抖；5000万像素长焦人像镜头，支持3X光变、100倍数字变焦、OIS+EIS防抖；以及一颗1200万像素超广角镜头，满足不同场景下的拍摄需求。&lt;/p&gt;
+&lt;p&gt;先来看几张主摄样张：&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/eec4934b-f559-4c63-81d4-0507f87d39cd.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/Seec4934b-f559-4c63-81d4-0507f87d39cd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/4369df84-fbf7-40a0-8b1b-091c7f888190.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/S4369df84-fbf7-40a0-8b1b-091c7f888190.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/c2d9e8fd-e40a-4dff-b552-f54d6a48821f.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/Sc2d9e8fd-e40a-4dff-b552-f54d6a48821f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/313f1342-9c36-4ec2-8fef-7c7a1b03742c.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="866" src="//img1.mydrivers.com/img/20251230/S313f1342-9c36-4ec2-8fef-7c7a1b03742c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/39bcbc65-2634-4952-a091-fe8bdd46fc4a.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/S39bcbc65-2634-4952-a091-fe8bdd46fc4a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看出，荣耀WIN这颗高素质主摄在日间场景下解析力较强，画面细节丰富，建筑、光效还原清晰自然，尤其是在一些高对比度的场景中也没有出现明显偏色，即便在阳光直射的高对比度场景下，天空与地面的明暗分布依然平衡，没有明显的压暗或过曝区域。&lt;/p&gt;
+&lt;p&gt;荣耀WIN的5000万像素长焦镜头也能在远距离拍摄时保持较高的清晰度，细节丰富色彩鲜艳，6X及更高倍数变焦出片同样好看，这对于拍摄远处的风景或人物非常实用，搭配AI键看到感兴趣的景物随拿随拍。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/d1a92da7-3043-407c-8eed-1247b7fbf39c.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="866" src="//img1.mydrivers.com/img/20251230/Sd1a92da7-3043-407c-8eed-1247b7fbf39c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/a87fc1d6-3b78-4100-bc8b-1a3d67fd1c4a.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="866" src="//img1.mydrivers.com/img/20251230/Sa87fc1d6-3b78-4100-bc8b-1a3d67fd1c4a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/a5555425-28c8-4905-a8f9-e9737470126d.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="866" src="//img1.mydrivers.com/img/20251230/Sa5555425-28c8-4905-a8f9-e9737470126d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/a1a3d8bb-0ade-41f0-b35e-1b9eafb9def8.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="866" src="//img1.mydrivers.com/img/20251230/Sa1a3d8bb-0ade-41f0-b35e-1b9eafb9def8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/5c7685b7-c9df-454b-b0fa-6044644d4687.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="866" src="//img1.mydrivers.com/img/20251230/S5c7685b7-c9df-454b-b0fa-6044644d4687.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;荣耀WIN的超广角镜头同时支持微距拍摄，为用户提供了更广阔的视野范围，尤其是在拍摄风景时可以捕捉到更多的画面信息，营造出更具张力的画面效果。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/3e4f88cb-c348-4305-a21f-0371b56d1f86.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/S3e4f88cb-c348-4305-a21f-0371b56d1f86.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/22565775-977a-4168-9273-f4a02563d628.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/S22565775-977a-4168-9273-f4a02563d628.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;值得一提的是，荣耀WIN还为用户提供了相当丰富的AI修图功能，除了最基础的消除路人、消除反光，还支持3D真人手办、贴纸合拍、AI换天等风格化玩法，让每张照片都能散发出生命力。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/df70e86e-2544-4a46-a24a-d22337e3b8d2.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/Sdf70e86e-2544-4a46-a24a-d22337e3b8d2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/636e9eac-8de3-44f2-85d2-6a1cb47b8bf2.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="500" src="//img1.mydrivers.com/img/20251230/S636e9eac-8de3-44f2-85d2-6a1cb47b8bf2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251230/54399415-b366-4226-ae9d-6c4aab2baaca.jpg" target="_blank"&gt;&lt;img alt="荣耀WIN上手：10000mAh电池带你稳赢" h="431" src="//img1.mydrivers.com/img/20251230/S54399415-b366-4226-ae9d-6c4aab2baaca.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作为荣耀GT系列升级为WIN系列后的首代产品，荣耀WIN已经脱离了传统性能机“硬件互卷”的产品迭代逻辑，它精准地捕捉到了年轻一代对于高性能、长续航和全面影像的需求，凭借旗舰芯片、护眼屏幕、游戏算法为潮流玩家们打造了一款堆料满满的电竞“夯”机，相信荣耀WIN也能性能旗舰市场站稳脚跟，树立技术创新的风向标。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Dec 2025 14:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBjcHpyWG56akhvTmZPaXFRMnBlbUpYbVpHTzZxZ2U0U1RSZVBXUXJmLWREb0EwYmJpSl9mZzY5bXV0Nmw2bU42aUpIMmUzQ3lpT181dGNUM1M</guid></item><item><title>内存价格暴涨 PC倒车请注意：华硕计划增产DDR4主板 - 驱动之家</title><link>https://news.mydrivers.com/1/1095/1095698.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;内存价格暴涨 PC倒车请注意：华硕计划增产DDR4主板&lt;/p&gt;
           
