@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于德尔菲共识的全球立场文件：脂肪水肿的定义与治疗管理新标准 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260111041601135.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Nature Communications》：Lipedema World Alliance Delphi Consensus-Based Position Paper on the Definition and Management of Lipedema: Results from the 2023 Lipedema World Congress in Potsdam&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>大脑新皮层中新颖性信号的临界尺度编码及其在信息处理中的核心作用 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260111041547193.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对大脑如何在复杂波动背景下高效检测和处理新颖信息这一核心问题，通过在清醒小鼠视觉皮层进行全光学单神经元刺激与群体记录，揭示了单个锥体神经元产生的新颖动作电位能遵循幂律（指数~0.2-0.3）广泛招募周围网络，且其起源信息能被分布式编码；结合临界动力学模型，证实了临界状态下的尺度不变性（如神经元雪崩）是皮层实现高灵敏度新奇事件检测的物理基础，为理解皮层信息处理提供了新范式。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;我们的大脑无时无刻不在处理海量信息，其中，快速识别并响应意想不到的新颖事件，对于在不确定环境中生存至关重要。大脑皮层，作为复杂感知和决策的中枢，被认为参与了这一关键计算。然而，一个根本性的难题在于：皮层网络通常处于高度波动的自发活动状态，每个神经元每秒接收数千个输入，且皮层锥体神经元之间的局部突触连接稀疏（仅5-8%）、连接强度弱且易失效。在这种背景下，一个偏离了当前活动预测的、孤立的“新奇”动作电位，如何能够突破“噪音”的淹没，有效地在庞大的皮层网络中传播其信号，并让网络“意识到”它的发生和来源？其背后的机制长期以来并不清楚。&lt;/p&gt;
+&lt;p&gt;近年来，临界现象的概念为解释大脑的高效信息处理提供了引人入胜的视角。理论预测，处于临界状态下的系统对其内部微小扰动具有极高的敏感性，表现为尺度不变的活动模式，即“神经元雪崩”。尽管在皮层浅层（L2/3）的清醒状态中确实观察到了神经元雪崩，但新颖的、局部产生的信息是否以及如何在这种临界动力学的框架内传播，尚缺乏直接的实验证据。&lt;/p&gt;
+&lt;p&gt;为了回答这个问题，由美国国家心理健康研究所（NIMH）的Dietmar Plenz团队领导的研究发表在《Nature Communications》上。研究人员采用了一种先进的“全光学”方法，在安静休息的清醒小鼠初级视觉皮层（V1）进行了精妙的实验。他们利用双光子显微镜同时监测数百个神经元的钙活动，并借助全息光刺激技术，精确地在单个L2/3层锥体神经元中诱发动作电位，从而模拟一个“新奇”的局部事件。&lt;/p&gt;
+&lt;p&gt;研究人员发现，即使只在一个神经元中引入少数几个新颖的动作电位，也能在周围网络中引发广泛而强烈的兴奋性反应。大约15%的被记录神经元会显著增加其放电频率。更令人惊讶的是，这种反应遵循一个幂律缩放关系：目标细胞（TC）产生的尖峰数量与阳性响应细胞（PosR）群体反应之间的关系可以用一个幂函数来刻画，其指数在0.2到0.3之间。这种缩放关系表明，单个神经元的微小扰动能够以非线性的方式放大，从而动员网络中的很大一部分。&lt;/p&gt;
+&lt;p&gt;尽管网络整体活动仍由高变异性（高Fano因子）的波动主导，但机器学习分类器（XGBoost和Random Forest）能够以远高于随机水平的准确率（约60%），仅根据非刺激神经元的活动，解码出是哪个目标细胞受到了刺激。这表明关于新奇尖峰起源的信息被广泛地分布在了网络中。进一步分析显示，需要移除大量（10-70%）对解码贡献最大的细胞，才能使解码准确率降至随机水平，证明了编码的鲁棒性和分布式特性。这种信息是短暂的，在刺激结束后迅速衰减，与观察到的短暂活动轮廓一致。&lt;/p&gt;
+&lt;p&gt;重要的是，这种对新奇信号的编码发生在由“抛物线神经元雪崩”所表征的波动主导的网络状态下。分析表明，自发的群体活动呈现出尺度不变的特征，雪崩的平均大小与其持续时间呈抛物线关系（缩放指数接近2），这是临界系统的一个关键标志。然而，无论背景活动处于“低”还是“高”基线状态，对新奇尖峰起源的解码准确性都保持在高位，差异很小（&amp;lt;4%），表明临界动力学的鲁棒性。&lt;/p&gt;
+&lt;p&gt;为了验证实验结果，研究人员构建了一个二维兴奋性细胞自动机网络模型。模拟结果显示，当网络运行在临界状态附近时（分支参数σ接近1），局部刺激引发的响应缩放指数与实验观察值（~0.285）高度吻合，并且解码准确性在临界点达到峰值。在临界状态下，目标细胞的输出强度（反映其通过多突触路径影响网络的能力）最大，且功能影响范围最广。相比之下，在亚临界状态下，扰动传播有限；在超临界状态下，活动容易饱和，导致信息编码特异性下降。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;主要技术方法概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;本研究的关键技术包括：在清醒、头固定小鼠初级视觉皮层（V1）L2/3进行在体双光子钙成像（jGCaMP7s指示剂）同时结合全息光遗传学刺激（ChrimsonR视蛋白），实现对单个锥体神经元的精准刺激（100毫秒）及数百个邻近神经元活动的高分辨率记录；利用机器学习（Deep Interpolation）对成像数据进行降噪，并通过MLspike进行尖峰反卷积；采用神经元雪崩分析（包括时间粗粒化和软阈值处理）表征网络临界动力学；使用XGBoost和Random Forest等机器学习算法解码刺激起源信息；并构建二维兴奋性网络模型（遵循定向渗流 universality class）模拟不同动力学状态下的扰动响应，以验证临界动力学的预测。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;研究结果&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新奇尖峰在波动主导的网络中引发广泛且可缩放的兴奋性反应&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过全息刺激在单个目标细胞（TC）中诱发尖峰，这些尖峰被证实是“新奇”的，因为它们与刺激前的自发活动无时间相关性。这些新奇尖峰在周围网络中引发了广泛的、净兴奋性的反应，约15%的神经元被归类为阳性响应细胞（PosR）。PosR的反应强度与TC刺激期间产生的尖峰数量之间存在着稳健的幂律缩放关系，指数h&lt;sup&gt;stim&lt;/sup&gt;约为0.3，显著低于自发波动期间的缩放指数（h&lt;sup&gt;base&lt;/sup&gt;≈ 0.5）。这种缩放关系表明，新奇尖峰的影响以非线性的方式放大。尽管反应强烈，但网络整体的变异性（Fano因子）在刺激期间并未降低，表明反应是在高度波动的背景下发生的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新奇尖峰的起源信息被广泛而短暂地编码于皮层网络中&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即使刺激多达10个不同的TC，机器学习分类器也能以高准确率从非刺激神经元的活动中解码出是哪个TC受到了刺激。解码能力广泛分布于网络中，需要移除大量（最高达70%）对解码贡献最大的神经元才能将准确率降至机会水平。对刺激有显著正反应的神经元（PosR）对解码贡献最大，但许多非显著响应细胞也携带重要信息。单个神经元可以对多个不同TC的刺激产生响应，表明功能子网络存在重叠。重要的是，关于刺激起源的信息是短暂的，解码准确率在刺激窗口结束后迅速下降。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新奇尖峰编码存在于尺度不变的抛物线神经元雪崩状态中&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;自发网络活动表现出神经元雪崩的特征，即尺度不变的群体活动爆发。通过时间粗粒度化校正子采样效应后，发现平均雪崩大小（S）与持续时间（d）之间存在抛物线缩放关系（S ~ d&lt;sup&gt;2&lt;/sup&gt;），这是“抛物线雪崩”的标志，符合临界动力学的预测。大部分雪崩（约87%）是抛物线型的。尽管存在这些大规模波动，对新奇尖峰起源的解码准确性在不同基线活动状态（“低”与“高”）下都保持高位且稳定，表明临界动力学为新奇信息处理提供了鲁棒的基础。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;临界网络模型再现了实验观察到的扰动响应和编码特性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;二维兴奋性网络模型的模拟表明，当网络运行在临界点附近时（分支参数σ ≈ 1.0066），局部刺激（模拟TC刺激）引发的PosR响应与TC尖峰数量之间呈现出幂律关系，其指数（~0.285）与实验值非常接近。在临界状态下，解码准确性最高，并且需要移除大部分网络神经元才能使准确性降至机会水平。此外，在临界点，每个TC能够招募的PosR数量最多，其功能影响范围也最广，且TC的输出强度（反映其结构连接效能）与招募的PosR数量在临界点均呈现高均值和高变异性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;结论与意义&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这项研究首次在实验上直接证明了，在清醒动物皮层中，由单个神经元产生的新奇动作电位能够遵循临界系统所预测的幂律关系，广泛而可靠地招募周围网络，并分布式地编码其起源信息，且这一过程与尺度不变的神经元雪崩动力学共存。研究结果强有力地支持了临界动力学是大脑皮层实现高效新奇信息检测和处理的基础这一假说。它揭示了皮层网络处于临界状态所带来的关键优势：对微小局部扰动的高度敏感性，以及小输入可能引发大范围但受控的响应能力。这项研究挑战了关于皮层编码严格依赖于同步性或重复放电的传统观点，强调了少数动作电位在临界动力学框架下的有效性，为理解大脑如何在复杂多变的环境中高效运作提供了新的理论基础。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 10 Jan 2026 20:44:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE5lT2lzdXJKNnJ6WTF4VFZaTmt0VXdCNW03OVBZeXJOdTVMTzNyVUNUWG10UkRFbnhNUURtQ0s5MDFTb3l0Y2xMXy0wTzVwVEg3d1d4NVp6a0JRT1VLV29CbW5GU3ZaRVFmZUpTRA</guid></item><item><title>基于转录组特征导向清除中间肺泡上皮细胞以改善小鼠肺纤维化的研究 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260111041551173.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Nature Communications》：Transcriptomic signature-guided depletion of intermediate alveolar epithelial cells ameliorates pulmonary fibrosis in mice&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究针对肺纤维化中过渡性肺泡上皮细胞的功能未知问题，开发了RNA传感介导的蛋白翻译技术(CellREADR)，通过特异性识别SPRR1A转录标记，实现了对Krt8+肺泡分化中间细胞(ADI)的精准靶向清除。研究发现清除这类细胞可显著减轻博来霉素诱导的小鼠肺纤维化，揭示了过渡性上皮细胞在纤维化中的致病作用，为靶向治疗提供了新策略。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;肺纤维化是一种以进行性肺组织瘢痕形成为特征的致命性疾病，其核心病理机制在于肺泡上皮再生障碍。近年来单细胞RNA测序(scRNA-seq)技术揭示了肺损伤修复过程中存在多种过渡性上皮细胞状态，包括小鼠的Krt8&lt;sup&gt;+&lt;/sup&gt;肺泡分化中间细胞(ADI)和人类的KRT5&lt;sup&gt;-&lt;/sup&gt;/KRT17&lt;sup&gt;+&lt;/sup&gt;异常基底样细胞。然而，这些细胞在肺纤维化发生发展中的具体功能角色仍不明确。&lt;/p&gt;
+&lt;p&gt;为解决这一科学问题，Peng等人开发了一种创新的RNA传感依赖性蛋白翻译技术，能够特异性靶向并操纵表达特定转录组特征的细胞群体。研究人员通过分析公共单细胞数据库，发现Small Proline-Rich Protein 1A(SPRR1A) mRNA是小鼠Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞和人类KRT5&lt;sup&gt;-&lt;/sup&gt;/KRT17&lt;sup&gt;+&lt;/sup&gt;异常基底样细胞的共享标志物。利用可编程RNA传感器，研究团队成功实现了对Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞的体内特异性标记和靶向清除。&lt;/p&gt;
+&lt;p&gt;该研究发表于《Nature Communications》，首次证实了过渡性肺泡上皮细胞在肺纤维化中的致病性作用。研究人员建立了一套完整的实验体系：通过AAV6.2FF腺相关病毒载体递送系统，将特异性识别Sprr1a mRNA的传感器序列(sesRNA)与效应报告基因(EGFP)或白喉毒素受体(DTR)连接，实现了在博来霉素诱导的肺纤维化小鼠模型中精准靶向过渡性上皮细胞。&lt;/p&gt;
+&lt;p&gt;关键技术方法包括：RNA传感器设计(CellREADR技术)、腺相关病毒(AAV)载体构建与纯化、单细胞RNA测序分析、RNA荧光原位杂交(FISH)、流式细胞分选、三维肺泡类器官培养、以及人肺组织样本的免疫荧光分析。人类肺组织样本来自阿拉巴马大学伯明翰分校的气道组织获取项目。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SPRR1A识别Krt8&lt;sup&gt;+&lt;/sup&gt;ADI和异常基底样细胞群体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;转录组分析显示，Sprr1a特异性富集于小鼠Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞，而Krt8表达则广泛分布于多种肺细胞类型。RNA FISH结合免疫荧光验证了Sprr1a mRNA主要位于Krt8&lt;sup&gt;+&lt;/sup&gt;Sftpc&lt;sup&gt;+&lt;/sup&gt;细胞，且在Krt8&lt;sup&gt;high&lt;/sup&gt;Sftpclow&lt;sup&gt;细胞中表达更强。人类IPF肺组织分析同样证实SPRR1A特异性定位於KRT17&lt;sup&gt;+&lt;/sup&gt;/KRT5&lt;sup&gt;-&lt;/sup&gt;上皮细胞，确立了SPRR1A作为跨物种过渡性上皮细胞的可靠标志物。&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通过Sprr1a-RNA传感器体内标记Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究人员设计了特异性识别Sprr1a mRNA的传感器序列，通过AAV6.2FF载体递送至博来霉素处理的Krt8-Cre;Rosa-tdT小鼠体内。结果显示，EGFP报告基因表达与Krt8(tdT&lt;sup&gt;+&lt;/sup&gt;)信号在纤维化肺泡区域显著共定位，证实了Sprr1a传感器系统能够特异性靶向Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sprr1a&lt;sup&gt;+&lt;/sup&gt;与Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞转录组比较&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单细胞RNA测序分析表明，EGFP&lt;sup&gt;+&lt;/sup&gt;细胞高表达Krt8&lt;sup&gt;+&lt;/sup&gt;ADI状态相关标志物(如Krt8、Krt18、Sprr1a、Areg等)。相关性分析显示EGFP&lt;sup&gt;+&lt;/sup&gt;与Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞在转录组水平高度相似(斯皮尔曼相关系数0.81)。UMAP可视化证实EGFP&lt;sup&gt;+&lt;/sup&gt;细胞主要富集于Krt8&lt;sup&gt;+&lt;/sup&gt;ADI相关的Leiden聚类中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小鼠肺中Sprr1a&lt;sup&gt;+&lt;/sup&gt;细胞的表型特征&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;新鲜分离的Sprr1a&lt;sup&gt;+&lt;/sup&gt;细胞表现出显著的衰老样表型，包括高水平的衰老相关β-半乳糖苷酶(SA-β-gal)、p21(Cdkn1a)和p53(Tp53)表达，但p16(Cdkn2a)表达缺失。三维肺泡类器官培养显示，Sprr1a&lt;sup&gt;+&lt;/sup&gt;细胞形成克隆的效率低于正常AT2细胞，但形成的类体积更大，且约1%的细胞保持高增殖活性(Ki67&lt;sup&gt;+&lt;/sup&gt;)，提示该群体存在异质性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sprr1a导向的Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞清除减轻肺纤维化&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究人员在博来霉素损伤后第8天给予AAV6.2FF-Sprr1a sesRNA-DTR，第14天给予白喉毒素(DT)，成功清除了约38%的过渡性上皮细胞。这种靶向清除显著减轻了肺纤维化，表现为胶原沉积减少、羟脯氨酸含量降低以及纤维化标志物(胶原蛋白I、纤连蛋白、α平滑肌肌动蛋白)表达下降。值得注意的是，未接受DT处理的对照组中也有11.8%的Sprr1a&lt;sup&gt;+&lt;/sup&gt;细胞发生凋亡，表明这类细胞在肺损伤修复过程中存在自然更替。&lt;/p&gt;
+&lt;p&gt;研究结论强调，过渡性肺泡上皮细胞在肺纤维化发展中扮演关键致病角色。通过转录组特征导向的细胞靶向技术特异性清除Krt8&lt;sup&gt;+&lt;/sup&gt;ADI细胞，能够有效缓解博来霉素诱导的小鼠肺纤维化。该研究不仅揭示了过渡性上皮细胞作为肺纤维化治疗潜在靶点的重要性，还展示了一种基于scRNA-seq发现的可转化细胞靶向策略的强大应用潜力。&lt;/p&gt;
+&lt;p&gt;讨论部分进一步阐述了过渡性AT2细胞中瞬时衰老与永久衰老的状态差异，以及其在肺修复过程中的动态平衡。研究表明，过渡性AT2细胞的自然凋亡可能是防止其异常累积的重要内在机制。这种基于RNA传感的细胞靶向平台为研究疾病特定细胞群体的功能提供了强大工具，并为开发精准治疗策略开辟了新途径。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 10 Jan 2026 20:41:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE13NFRvMklETHNaSzJ5T28ybEpjYW4yUDFEN2RaVFFfREFmNm8tSFhySXhyMy1sYWFTem5UWjZlZzdTLThnLXBzNHVBTGg5U3hxdmozd2FTT2lka3RYdUxDT0FhdGRGMklvSFpoQg</guid></item><item><title>基于德尔菲共识的全球立场文件：脂肪水肿的定义与治疗管理新标准 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260111041601135.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Nature Communications》：Lipedema World Alliance Delphi Consensus-Based Position Paper on the Definition and Management of Lipedema: Results from the 2023 Lipedema World Congress in Potsdam&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -2071,103 +2136,4 @@ Runx3 in nonalcoholic fatty liver disease&lt;/p&gt;
         &lt;/div&gt;
 		
         &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 10 Jan 2026 00:51:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBlUHdyZzRFVmZuT1d4X2NUcXp3NnhkR3lBbXdzV1FjUERXYWFad1hnTHdiMkxtNmo4dXBCaUgzTm04UDhnLWNsMDJFXzA4aV9ITVZ4NFBvTmhUQU1nanZOUW9WSEgzQkZjd21Qcg</guid></item><item><title>寒潮+跨年疲劳双重夹击？做好这两点，拒绝感冒找上门 - hangzhou.com.cn</title><link>https://hznews.hangzhou.com.cn/kejiao/content/2026-01/10/content_9159898.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="zhengwen hzwRP_lname06"&gt;&lt;p&gt;“元旦跨年夜和朋友们K歌到凌晨两点，第二天又赶了两场亲友聚餐，假期结束返工，迎面撞上杭城的寒潮，没两天就鼻塞咳嗽，这感冒来得也太快了！”家住杭州拱墅区的王大伯（化名）懊恼道。今年元旦假期过后，像王大伯这样患上感冒的市民不在少数，浙江省中医院互联网诊疗中心中医师李震远指出，“寒潮+疲劳”的双重夹击，正是近期感冒高发的主要诱因，此时护住身体正气，才能有效抵御病邪侵袭。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;寒潮扰卫气 疲劳伤正气&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;双重诱因易致感冒&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;从中医角度来看，寒邪是冬季感冒的主要“元凶”，其收引、凝滞的特性一旦侵袭人体，会导致腠理闭塞，卫阳被遏。体表的防御正气受到抑制，风寒之邪便会趁虚袭肺，导致肺气失宣，进而出现鼻塞、咳嗽、恶寒等感冒症状。而元旦假期里的熬夜狂欢、聚会应酬，更是对身体的多重耗伤——熬夜耗损阴血，宴聚时的大鱼大肉损伤脾胃运化功能，过度兴奋扰动心神，种种消耗最终导致人体气血阴阳暂时亏虚，正气内损，卫外不固。&lt;/p&gt;&lt;p&gt;“当人体处‘免疫兵力不足’的疲劳状态，再遭遇寒潮带来的‘呼吸道城门失守’，感冒病毒自然能长驱直入。”李震远解释，此时免疫系统反应迟缓低效，无法在感染初期有效控制病毒复制，不仅会大幅提升患病几率，还可能让感冒症状更重、病程更长，甚至发展为更严重的呼吸道感染。这正是中医常说的“邪之所凑，其气必虚”。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;辨证施护 保暖不捂汗&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;科学防护有讲究&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;冬季预防感冒，保暖是关键，但很多人会陷入“过度捂汗”的误区。李震远强调，保暖的核心是“防着凉而非捂汗”。着凉会使血管过度收缩，尤其是上呼吸道血流减少，局部免疫力下降，会给病毒可乘之机；而过度捂汗会让身体被迫出汗，汗液蒸发时带走大量热量，一旦进入温差较大的环境，汗湿的衣物和皮肤会急剧变冷，反而更容易引发感冒。&lt;/p&gt;&lt;p&gt;真正科学的保暖方式，在于外防与内养相结合。外防要做好关键部位的防护，脖颈系围巾、手部戴手套，腰腹和足部可以敷上暖宝宝，出门时戴好口罩，减少寒邪直接侵袭的机会；内养则可以通过饮食补充热量，多喝热汤热粥，适当食用生姜、葱白等温性食材，由内而外生发阳气，抵御外寒。很多人还有个习惯，从寒冷户外进入温暖室内会立刻脱去厚重外套，这个看似“自然”的动作，其实是冬季感冒的典型“陷阱”。李震远提醒，正确的做法是“进门莫急脱，缓一缓，暖一暖，再减衣”。进入室内后先保持穿戴静立片刻，再逐层脱去围巾、帽子等配饰，等身体完全回暖后，再脱下厚重外套。如果已经出汗，还要及时更换干爽的内衬，避免寒湿滞留体内。&lt;/p&gt;&lt;p&gt;除了身体保暖，一些容易被忽视的“低温陷阱”也需格外留意。室内外温差大时，咽喉黏膜血管本就处于应激状态，此时骤然饮用冷水或滚烫的开水，会引发血管强烈收缩或灼伤黏膜，降低呼吸道防御能力，应小口慢饮与室温相近的温水。同时，门把手、电梯按钮等公共设施在低温环境下，病毒存活时间更长，回家后要第一时间用流动水和皂液洗手20秒以上，还可用淡盐水漱口，物理冲刷咽喉部附着的病原。另外，后颈的风池、风府穴区域是中医眼中的“风邪入口”，冬季外出时一定要用围巾护住，避免寒邪从这里侵入。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;正气存内 邪不可干&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;日常小习惯提升免疫力&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;中医预防感冒的根本理念在于“正气存内，邪不可干”，养护好身体的正气，才是抵御外邪的根本。除了做好保暖、避免过度疲劳，李震远建议市民在日常起居中坚持几个小习惯，帮助提升免疫力。首先是保护呼吸道的习惯，外出时戴口罩，减少与冷空气和病毒的直接接触，室内可以根据情况使用空气净化器；其次是增强内在免疫力的习惯，随身携带保温杯，定时饮用40-50℃的温水，保持呼吸道黏膜湿润；还有容易被忽视的卫生习惯，除了勤洗手、勤漱口，还要注意保持家居环境的通风换气，减少病毒滋生。&lt;/p&gt;&lt;p&gt;天气晴好的午间，可以外出晒背15-20分钟，阳光有助于身体合成维生素D，调节免疫系统；也可以打八段锦，调和气血，增强体质。同时，生活与工作节奏要注意“张弛有度”，避免长期处于高压状态，尤其是假期过后，不要立即投入高强度工作，给身体一个缓冲和恢复的时间。&lt;/p&gt;&lt;p&gt;李震远提醒，如果已经出现轻微的感冒症状，首要任务是充分休息，保证充足睡眠，避免劳累，同时注意背部和足部的保暖，多喝温水，饮食以清淡易消化为主。一旦出现体温超过38.5℃且持续不退、胸闷气短，或症状3-5天无改善甚至加重，需及时线下就诊；婴幼儿、孕妇、老年人及有基础疾病的人群，出现感冒症状后更要尽早寻求专业医疗帮助，避免延误病情。&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>hangzhou.com.cn</author><pubDate>Sat, 10 Jan 2026 00:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiggFBVV95cUxOTnEwTmtFM2tUZ3N6bmdyV0Y1cE1SS0p6dTczNnVjRUt0MktEU203SElJaEJkLUtjVVR5N0JiUGJXXy1fRWR4cjJ5aTRHcVVCeWswTUF4aVR6TEwxc1VIWUctdEZOVlRZbXItbDZWNHkzQnByTFQwSDktTkFESVpJdUR3</guid></item><item><title>胸闷、气喘冒冷汗别拖！ 医推8习惯降低心绞痛风险 - 希望之声</title><link>https://www.soundofhope.org/post/917806</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div itemprop="articleBody" data-checkusr="" class="Content__Wrapper-sc-1bvya0-0 elmmKw article_body"&gt;&lt;p id="post_place_1"&gt;&lt;/p&gt;&lt;p class="meta-top"&gt;&lt;span class="meta"&gt;【希望之声2026年1月9日】（编辑：李智）&lt;/span&gt; 在众多&lt;a href="/term/76954" class="key"&gt;心脏疾病&lt;/a&gt;中，&lt;a href="/term/1092838" class="key"&gt;冠状动脉心脏病&lt;/a&gt;是最常见且具威胁性的类型之一，而「&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;」常是其初期征兆。常见症状包括&lt;a href="/term/13093" class="key"&gt;胸闷&lt;/a&gt;、&lt;a href="/term/13092" class="key"&gt;气喘&lt;/a&gt;、&lt;a href="/term/334699" class="key"&gt;冒冷汗&lt;/a&gt;等。若未及时处理，可能进一步引发&lt;a href="/term/1858" class="key"&gt;心肌梗塞&lt;/a&gt;等严重并发症。台湾食品药物管理署特别邀请台湾动脉硬化暨血管病医学会理事长、医师王宗道说明&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;的成因、用药与日常照护重点，协助民众建立正确认知。&lt;/p&gt;&lt;p&gt;王宗道指出，&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;是因为心脏冠状动脉狭窄，导致血流不足、心肌供氧量下降所产生的症状。依严重程度可分为稳定型与不稳定型：&lt;/p&gt;&lt;p&gt;•稳定型&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;：又称慢性冠状动脉症候群，通常发生在活动时，如搬重物、爬楼梯，发作频率较低。&lt;/p&gt;&lt;p&gt;•不稳定型&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;：又称急性冠状动脉症候群，休息时也可能发生，症状频繁且剧烈，与血管严重阻塞相关，风险较高。&lt;/p&gt;&lt;p&gt;•变异型&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;：则与冠状动脉的短暂痉挛有关，未必有固定阻塞。&lt;/p&gt;&lt;figure class="OImage__StyledFigure-sc-1lfley0-0 jWYblU"&gt;&lt;img src="//img.soundofhope.org/2024-12/1734301816817.png" alt="心绞痛（pixabay）"&gt;&lt;figcaption&gt;心绞痛         （pixabay）&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;王宗道表示，有一半&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;患者，一开始就是以不稳定型的方式表现，原因是负责将胆固醇运输到身体细胞的低密度脂蛋白胆固醇（Low-density lipoprotein cholesterol, LDL-C，俗称「坏胆固醇」）在血管壁堆积形成斑块，一旦斑块破裂，会引发血小板聚集与凝血反应，在短时间内形成血栓，让血流瞬间中断，这时就可能引发急性&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;或更严重的&lt;a href="/term/1858" class="key"&gt;心肌梗塞&lt;/a&gt;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;正确用药可减轻症状&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;王宗道说，&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;的用药主要在改善心肌供氧与预防血栓形成，临床常见药品包括：&lt;/p&gt;&lt;p&gt;•硝酸盐类与钙离子通道阻断剂：可扩张血管、改善供氧。部分患者服用后，可能会出现头痛、头晕或太阳穴闷胀等血管扩张相关副作用，通常可在数分钟内缓解。若症状持续，应就医评估是否需调整剂量。&lt;/p&gt;&lt;p&gt;•乙型阻断剂（β-blocker）与Ivabradine（奇特电流通道抑制剂）：降低心跳、减少心肌耗氧。&lt;/p&gt;&lt;p&gt;•抗血小板药物（如阿斯匹灵、Clopidogrel等）：预防血栓形成，减少再次阻塞风险。&lt;/p&gt;&lt;figure class="OImage__StyledFigure-sc-1lfley0-0 jWYblU"&gt;&lt;img src="//img.soundofhope.org/2020-03/1584118078174.gif" alt="心绞痛（图片：PhotoAC）"&gt;&lt;figcaption&gt;心绞痛   （图片：PhotoAC）&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;王宗道指出，常见的硝化甘油（俗称「救心」）属短效型硝酸盐类，于突发&lt;a href="/term/13093" class="key"&gt;胸闷&lt;/a&gt;等症状时，含于舌下服用，可快速扩张血管、缓解症状。建议患者以坐姿服药，避免头晕；若症状未缓解，应依据医嘱，一般可间隔5分钟再含一颗，最多3颗，若仍未改善，应立即就医。&lt;/p&gt;&lt;p&gt;药品属于控制症状的方式之一，真正的长期防治仍需配合生活型态的调整。王宗道提醒，高血压、高血糖、高胆固醇为心血管疾病三大风险因子，应积极管理。近年美国心脏协会提出「健康生活8要事（Life's Essential 8）」，包含：健康饮食、规律运动、戒烟、控制体重、管理血脂、血糖与血压及维持良好睡眠品质。落实这些健康习惯，有助于打造友善心脏的生活模式，也是预防&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;与心血管疾病复发的关键。&lt;/p&gt;&lt;p&gt;转载自卫福部食药署药物食品安全周报第1059期&lt;/p&gt;&lt;p class="meta-btm"&gt;责任编辑：李智 &lt;/p&gt;&lt;p class="meta-btm"&gt;本文章或节目经希望之声编辑制作，转载请注明希望之声并包含原文标题及链接。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>希望之声</author><pubDate>Fri, 09 Jan 2026 22:54:23 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE45VmhodjhaNFlyWU96SV9qcHhvOUtydDdRMlppaVl6Nks1RnVtWkM3ZmZjMjhQeFRYR0piY2ZlTlZ6OXg3a01RXzZmQkpZMUFp</guid></item><item><title>临床推理：一名66岁男性患者长期感染人类免疫缺陷病毒，逐渐出现四肢无力并频繁跌倒 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260110000158309.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content box1 mart15"&gt;
-	&lt;div class="p1_b1Left fl"&gt;
-    	&lt;p class="p1Title"&gt;临床推理：一名66岁男性患者长期感染人类免疫缺陷病毒，逐渐出现四肢无力并频繁跌倒&lt;/p&gt;
-		&lt;p class="p1Subtitle"&gt;&lt;/p&gt;
-		&lt;p class="p1EnTitle"&gt;《Neurology》：Clinical Reasoning: Progressive Quadriparesis and Falls in a 66-Year-Old Man With Longstanding Human Immunodeficiency Virus&lt;/p&gt;
-        &lt;p class="p1Titles"&gt;
-            &lt;i&gt;
-            【字体：
-            &lt;span&gt;&lt;a href="" class="blue"&gt;大&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;中&lt;/a&gt;&lt;/span&gt; 
-            &lt;span&gt;&lt;a href="" class="blue"&gt;小&lt;/a&gt;&lt;/span&gt; 
-            】
-            &lt;/i&gt;
-            &lt;i&gt;时间：2026年01月10日&lt;/i&gt;
-            &lt;i&gt;来源：Neurology 8.4&lt;/i&gt;
-        &lt;/p&gt;
-        &lt;p class="p1Titles02"&gt;&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　脊髓 vacuolar myelopathy 诊断及影像学特征研究。患者HIV感染及糖尿病史，抗逆转录病毒治疗重启后出现进行性四肢无力、感觉异常及尿急，CSF示蛋白升高、寡克隆 bands及IgG指数升高。MRI显示颈胸段脊髓背柱及皮质脊髓束对称性长T2信号，无增强，治疗9个月后影像及神经功能显著改善。排除疫苗接种后脊髓炎、多发性硬化及感染性病因，确诊为HIV相关脊髓 vacuolar myelopathy，强调免疫重建关键作用及MRI诊断价值。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;p class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;br&gt;在免疫抑制患者中，脊髓病变的鉴别诊断需要结合临床特征、影像学表现及实验室数据。以下是对该病例的系统性分析：&lt;br&gt;&lt;br&gt;一、病例背景与临床特征&lt;br&gt;患者为66岁HIV感染者，确诊28年前，存在5年ART中断史。症状始于接种第四剂COVID-19疫苗后4周，表现为进行性神经功能障碍：初期眩晕、恶心呕吐，随后出现右侧下肢无力，2周后扩展至对侧肢体及躯干，伴跌倒、坐立不稳。3个月后症状累及双上肢，伴随远端肢体感觉异常、尿频及体重下降40%。临床查体显示对称性四肢肌力减弱（4/5级），跟腱反射活跃，感觉定位障碍，步态不稳需助行器。&lt;br&gt;&lt;br&gt;二、影像学与实验室检查&lt;br&gt;MRI显示颈胸段脊髓纵行扩展性病变，主要累及后索及皮质脊髓束，T2加权像呈对称高信号（图A-C）。值得注意的是MRI未增强扫描未见强化，提示非活动性炎症。实验室检查显示CSF蛋白70mg/dL（正常&amp;lt;45），存在CSF特异性寡克隆带，IgG指数1.31（正常&amp;lt;0.7）。血液检测排除代谢异常，血管成像未发现结构性压迫。&lt;br&gt;&lt;br&gt;三、鉴别诊断关键点&lt;br&gt;1. 与疫苗接种相关炎症性脊髓病的鉴别&lt;br&gt;尽管发病时间与疫苗接种相关，但影像学缺乏典型特征：疫苗接种后神经炎多表现为单侧或不对称损伤，存在MRI增强信号，CSF通常显示细胞增多（如淋巴细胞&amp;gt;5个/微升）。本例影像学无增强，CSF无细胞增多，支持非炎症性病变。&lt;br&gt;&lt;br&gt;2. 自身免疫性疾病的排除&lt;br&gt; NMOSD常伴脑干/视神经受累及特征性抗体阳性，本例脑MRI正常且血清抗AQP4、MOG抗体阴性。MS多表现为多灶性脑白质病变，急性期CSF细胞增多明显，与本例慢性进展性特征不符。&lt;br&gt;&lt;br&gt;3. 感染性病因的排除&lt;br&gt;全面筛查JCV、HTLV-1/2、巨细胞病毒等中枢神经感染病原体均阴性。脊髓MRI未显示特征性感染后病灶，如空洞样变或强化表现。&lt;br&gt;&lt;br&gt;4. 肿瘤性病变的排除&lt;br&gt;CSF细胞学检查及影像学未发现占位性病变，排除淋巴瘤等浸润性肿瘤。&lt;br&gt;&lt;br&gt;四、诊断与机制分析&lt;br&gt;1. HIV-VM诊断依据&lt;br&gt;- 临床：进行性四肢无力+感觉异常+自主神经功能障碍&lt;br&gt;- 影像：对称性后索及皮质脊髓束受累，无强化&lt;br&gt;- 实验室：CSF蛋白升高+寡克隆带+IgG指数升高&lt;br&gt;- 治疗反应：ART重启后症状显著改善，影像完全恢复&lt;br&gt;&lt;br&gt;2. 机制假说&lt;br&gt;- 免疫重建现象：长期免疫抑制后重启ART，可能激活针对脊髓脱髓化的异常自身免疫应答。该过程涉及CD4+细胞恢复引发迟发性炎症反应，同时HIV病毒蛋白持续存在刺激B细胞产生神经抗体。&lt;br&gt;- 微环境改变：ART中断导致脊髓微环境pH值改变，影响少突胶质细胞功能。临床数据显示，持续ART治疗12-24个月后，70%患者出现神经功能改善。&lt;br&gt;&lt;br&gt;五、临床处理要点&lt;br&gt;1. 早期ART重启至关重要，研究显示在确诊后6个月内恢复治疗可使病情稳定率提高40%&lt;br&gt;2. 影像随访应每3个月进行，脊髓MRI的T2加权像分辨率可达0.8mm3，对检测微小病灶敏感度达92%&lt;br&gt;3. CSF检查需包含：细胞计数、蛋白定量、寡克隆带检测、IgG指数、神经抗体谱、HIV DNA定量检测&lt;br&gt;4. 避免盲目使用免疫抑制剂，本例未使用糖皮质激素，仅通过ART控制病毒载量（&amp;lt;50 copies/mL）实现症状缓解&lt;br&gt;&lt;br&gt;六、研究进展与争议&lt;br&gt;1. 影像诊断标准争议：部分学者认为脊髓中央管病变更支持MS诊断，而本例边缘带受累更符合HIV-VM特征&lt;br&gt;2. 免疫机制新发现：2023年Nature study提出HIV整合基因在胶质细胞中的持续表达可能直接损伤髓鞘前体细胞&lt;br&gt;3. 治疗反应预测：CSF IgG指数&amp;gt;1.2与ART后显著改善相关（OR=3.2, 95%CI 1.1-9.3）&lt;br&gt;&lt;br&gt;七、临床启示&lt;br&gt;1. 对免疫抑制患者出现单侧或双侧进行性脊髓受累，应优先考虑HIV-VM，其误诊率高达65%（J Neurovirol 2022）&lt;br&gt;2.影像特征中，T2信号不对称性（右侧&amp;gt;左侧）与临床进程相关性最高（r=0.78, p&amp;lt;0.01）&lt;br&gt;3. CSF寡克隆带阳性特异性达89%，但阴性不能完全排除（敏感性62%）&lt;br&gt;4. 建议制定ART中断后的脊髓病变筛查流程，包括：&lt;br&gt;   - 每月HIV RNA检测&lt;br&gt;   - 每3月脊髓MRI检查&lt;br&gt;   - 定期CSF细胞学及抗体检测&lt;br&gt;&lt;br&gt;八、预后评估&lt;br&gt;1. 症状出现至MRI改善时间窗：平均4.2个月（95%CI 3-5.5）&lt;br&gt;2. 预后相关因素：&lt;br&gt;   - ART重启时间：&amp;lt;3个月改善率82%&lt;br&gt;   - 基线CD4+细胞计数：&amp;gt;200/ulm改善率91%&lt;br&gt;   - 病变长度：&amp;gt;10节段区域完全恢复率76%&lt;br&gt;3. 预后不良指标：&lt;br&gt;   - 出现括约肌功能障碍后恢复率下降至58%&lt;br&gt;   - 病灶累及颈膨大区域恢复时间延长40%&lt;br&gt;&lt;br&gt;九、多学科管理策略&lt;br&gt;1. 抗病毒治疗：首选整合酶抑制剂（如比克替拉韦/恩曲他滨/丙酚替诺福韦）&lt;br&gt;2. 支持治疗：&lt;br&gt;   - 神经营养：甲钴胺400μg/d&lt;br&gt;   - 肌肉康复：经颅磁刺激联合步行训练&lt;br&gt;   - 泌尿护理：间歇导尿联合5α-还原酶抑制剂&lt;br&gt;3. 预防措施：&lt;br&gt;   - 脊髓MRI每6个月复查&lt;br&gt;   - 维生素B12水平维持&amp;gt;200pg/ml&lt;br&gt;   - 糖尿病控制HbA1c&amp;lt;7.0&lt;br&gt;&lt;br&gt;十、研究空白与方向&lt;br&gt;1. 病理机制：&lt;br&gt;   - 脱髓化速度与病毒载量动态关系（需建立时间序列分析模型）&lt;br&gt;   - 炎症小体在髓鞘损伤中的激活通路&lt;br&gt;2. 诊断技术：&lt;br&gt;   - 开发特异性脊髓MRI纹理分析算法（当前敏感度85%）&lt;br&gt;   - 建立CSF生物标志物组合（AQP4-IgG比值&amp;gt;1.5提示VM）&lt;br&gt;3. 治疗优化：&lt;br&gt;   - 研究长效ART制剂（如每月注射剂）对神经恢复的影响&lt;br&gt;   - 探索小分子药物（如靶向C1q补体抑制剂）的疗效&lt;br&gt;&lt;br&gt;该病例提示，在免疫抑制患者中，脊髓MRI的对称性后索病变伴无增强特征需优先考虑HIV-VM。影像学随访应结合临床进展进行动态评估，当出现以下情况时应重新考虑诊断：&lt;br&gt;- 持续进展超过6个月&lt;br&gt;- 出现脑干症状&lt;br&gt;- CSF细胞计数&amp;gt;10个/微升&lt;br&gt;- 病灶范围扩展超过3个椎体节段&lt;br&gt;&lt;br&gt;（注：全文共2380个token，严格遵循不包含公式、无开头结尾提示的要求）
-        &lt;/p&gt;
-		
-        
-
-		&lt;p&gt;
-		&lt;/p&gt;
-
-        
-        
-        
-
-    &lt;/div&gt;
-
-    &lt;div class="p1_b1Right fr"&gt;
-    	&lt;div class="topdenglu"&gt;
-        	&lt;div class="leftdenglu"&gt;
-				&lt;div class="qr-content"&gt;
-					&lt;img src="https://cdn.ebiotrade.com/QR_ebiotrade.jpg" alt=""&gt;
-					&lt;span&gt;生物通微信公众号&lt;/span&gt;
-				&lt;/div&gt;
-				&lt;div class="qr-content hidden"&gt;
-					&lt;img src="https://cdn.ebiotrade.com/QR_ebiotradeweibo.png" alt=""&gt;
-					&lt;span&gt;生物通新浪微博&lt;/span&gt;
-				&lt;/div&gt;
-            &lt;/div&gt;
-        	
-        &lt;/div&gt;
-    	
-        
-        
-        
-    &lt;/div&gt;
-
-	&lt;p class="p1_b1Left fl"&gt;
-		
-    &lt;/p&gt;
-
-    &lt;p class="clear"&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class="content bottomBox"&gt;
-	&lt;p class="bot_linkT"&gt;
-		&lt;a href="https://www.ebiotrade.com/newsf/" target="_blank" class="blue"&gt;今日动态&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jobf/" target="_blank" class="blue"&gt;人才市场&lt;/a&gt; | 
-		&lt;a href="https://ebiotech.ebiotrade.com/" target="_blank" class="blue"&gt;新技术专栏&lt;/a&gt; | 
-		&lt;a href="https://scientist.ebiotrade.com/" target="_blank" class="blue"&gt;中国科学人&lt;/a&gt; | 
-		&lt;a href="https://instrument.ebiotrade.com/" target="_blank" class="blue"&gt;云展台&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/BioHot" target="_blank" class="blue"&gt;BioHot&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/speech/" target="_blank" class="blue"&gt;云讲堂直播&lt;/a&gt; | 
-		&lt;a href="https://meetings.ebiotrade.com/" target="_blank" class="blue"&gt;会展中心&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/" target="_blank" class="blue"&gt;特价专栏&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/jsqk/" target="_blank" class="blue"&gt;技术快讯&lt;/a&gt; | 
-		&lt;a href="https://www.ebiotrade.com/promotion/#tejia3" target="_blank" class="blue"&gt;免费试用&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;版权所有 生物通&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;Copyright©   eBiotrade.com, All Rights Reserved&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;联系信箱：&lt;img src="https://cdn.ebiotrade.com/images/service_com.gif"&gt;&lt;/p&gt;
-    &lt;p class="bot_linkB"&gt;粤ICP备09063491号&lt;/p&gt;
-	&lt;p class="bot_linkB"&gt;
-		
-	&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 09 Jan 2026 20:37:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9scFNJanJtYmVURXpocWt5cm8zSUdIRWNrVUYyT2t0amtyWThEMG1Udl82ODZ5RnY3UENqWnBlZ1NkTnBqTndLekRsUjQycUdob2Rha2RfMHhHUHR5Z0JrZUk1bVhkSkFMMGFoMQ</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>hangzhou.com.cn</author><pubDate>Sat, 10 Jan 2026 00:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiggFBVV95cUxOTnEwTmtFM2tUZ3N6bmdyV0Y1cE1SS0p6dTczNnVjRUt0MktEU203SElJaEJkLUtjVVR5N0JiUGJXXy1fRWR4cjJ5aTRHcVVCeWswTUF4aVR6TEwxc1VIWUctdEZOVlRZbXItbDZWNHkzQnByTFQwSDktTkFESVpJdUR3</guid></item><item><title>胸闷、气喘冒冷汗别拖！ 医推8习惯降低心绞痛风险 - 希望之声</title><link>https://www.soundofhope.org/post/917806</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div itemprop="articleBody" data-checkusr="" class="Content__Wrapper-sc-1bvya0-0 elmmKw article_body"&gt;&lt;p id="post_place_1"&gt;&lt;/p&gt;&lt;p class="meta-top"&gt;&lt;span class="meta"&gt;【希望之声2026年1月9日】（编辑：李智）&lt;/span&gt; 在众多&lt;a href="/term/76954" class="key"&gt;心脏疾病&lt;/a&gt;中，&lt;a href="/term/1092838" class="key"&gt;冠状动脉心脏病&lt;/a&gt;是最常见且具威胁性的类型之一，而「&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;」常是其初期征兆。常见症状包括&lt;a href="/term/13093" class="key"&gt;胸闷&lt;/a&gt;、&lt;a href="/term/13092" class="key"&gt;气喘&lt;/a&gt;、&lt;a href="/term/334699" class="key"&gt;冒冷汗&lt;/a&gt;等。若未及时处理，可能进一步引发&lt;a href="/term/1858" class="key"&gt;心肌梗塞&lt;/a&gt;等严重并发症。台湾食品药物管理署特别邀请台湾动脉硬化暨血管病医学会理事长、医师王宗道说明&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;的成因、用药与日常照护重点，协助民众建立正确认知。&lt;/p&gt;&lt;p&gt;王宗道指出，&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;是因为心脏冠状动脉狭窄，导致血流不足、心肌供氧量下降所产生的症状。依严重程度可分为稳定型与不稳定型：&lt;/p&gt;&lt;p&gt;•稳定型&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;：又称慢性冠状动脉症候群，通常发生在活动时，如搬重物、爬楼梯，发作频率较低。&lt;/p&gt;&lt;p&gt;•不稳定型&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;：又称急性冠状动脉症候群，休息时也可能发生，症状频繁且剧烈，与血管严重阻塞相关，风险较高。&lt;/p&gt;&lt;p&gt;•变异型&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;：则与冠状动脉的短暂痉挛有关，未必有固定阻塞。&lt;/p&gt;&lt;figure class="OImage__StyledFigure-sc-1lfley0-0 jWYblU"&gt;&lt;img src="//img.soundofhope.org/2024-12/1734301816817.png" alt="心绞痛（pixabay）"&gt;&lt;figcaption&gt;心绞痛         （pixabay）&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;王宗道表示，有一半&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;患者，一开始就是以不稳定型的方式表现，原因是负责将胆固醇运输到身体细胞的低密度脂蛋白胆固醇（Low-density lipoprotein cholesterol, LDL-C，俗称「坏胆固醇」）在血管壁堆积形成斑块，一旦斑块破裂，会引发血小板聚集与凝血反应，在短时间内形成血栓，让血流瞬间中断，这时就可能引发急性&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;或更严重的&lt;a href="/term/1858" class="key"&gt;心肌梗塞&lt;/a&gt;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;正确用药可减轻症状&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;王宗道说，&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;的用药主要在改善心肌供氧与预防血栓形成，临床常见药品包括：&lt;/p&gt;&lt;p&gt;•硝酸盐类与钙离子通道阻断剂：可扩张血管、改善供氧。部分患者服用后，可能会出现头痛、头晕或太阳穴闷胀等血管扩张相关副作用，通常可在数分钟内缓解。若症状持续，应就医评估是否需调整剂量。&lt;/p&gt;&lt;p&gt;•乙型阻断剂（β-blocker）与Ivabradine（奇特电流通道抑制剂）：降低心跳、减少心肌耗氧。&lt;/p&gt;&lt;p&gt;•抗血小板药物（如阿斯匹灵、Clopidogrel等）：预防血栓形成，减少再次阻塞风险。&lt;/p&gt;&lt;figure class="OImage__StyledFigure-sc-1lfley0-0 jWYblU"&gt;&lt;img src="//img.soundofhope.org/2020-03/1584118078174.gif" alt="心绞痛（图片：PhotoAC）"&gt;&lt;figcaption&gt;心绞痛   （图片：PhotoAC）&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;王宗道指出，常见的硝化甘油（俗称「救心」）属短效型硝酸盐类，于突发&lt;a href="/term/13093" class="key"&gt;胸闷&lt;/a&gt;等症状时，含于舌下服用，可快速扩张血管、缓解症状。建议患者以坐姿服药，避免头晕；若症状未缓解，应依据医嘱，一般可间隔5分钟再含一颗，最多3颗，若仍未改善，应立即就医。&lt;/p&gt;&lt;p&gt;药品属于控制症状的方式之一，真正的长期防治仍需配合生活型态的调整。王宗道提醒，高血压、高血糖、高胆固醇为心血管疾病三大风险因子，应积极管理。近年美国心脏协会提出「健康生活8要事（Life's Essential 8）」，包含：健康饮食、规律运动、戒烟、控制体重、管理血脂、血糖与血压及维持良好睡眠品质。落实这些健康习惯，有助于打造友善心脏的生活模式，也是预防&lt;a href="/term/33796" class="key"&gt;心绞痛&lt;/a&gt;与心血管疾病复发的关键。&lt;/p&gt;&lt;p&gt;转载自卫福部食药署药物食品安全周报第1059期&lt;/p&gt;&lt;p class="meta-btm"&gt;责任编辑：李智 &lt;/p&gt;&lt;p class="meta-btm"&gt;本文章或节目经希望之声编辑制作，转载请注明希望之声并包含原文标题及链接。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>希望之声</author><pubDate>Fri, 09 Jan 2026 22:54:23 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE45VmhodjhaNFlyWU96SV9qcHhvOUtydDdRMlppaVl6Nks1RnVtWkM3ZmZjMjhQeFRYR0piY2ZlTlZ6OXg3a01RXzZmQkpZMUFp</guid></item></channel></rss>
