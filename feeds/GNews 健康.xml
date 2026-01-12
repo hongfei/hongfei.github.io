@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>仿生血小板膜脂质体能够实现紫草素的有效靶向输送，从而用于血栓治疗 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260113000233736.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Journal of Controlled Release》：Biomimetic platelet membrane liposomes enable targeted shikonin delivery for thrombosis therapy&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>循环免疫细胞的可解释性炎症图谱：基于1047例患者的单细胞转录组学揭示炎症跨疾病共性机制 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260113001115639.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Nature Medicine》：Interpretable inflammation landscape of circulating immune cells&lt;/p&gt;
+        &lt;div class="p1Texttop font14"&gt;
+        	&lt;div class="p1Tl fl"&gt;
+            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
+                &lt;p class="fk_text"&gt;
+                　　本研究利用单细胞转录组测序（scRNA-seq）技术，构建了涵盖19类炎症性疾病（包括自身免疫性疾病、感染、肿瘤等）的循环免疫细胞炎症图谱，通过对逾650万个外周血单核细胞（PBMC）的系统分析，揭示了炎症相关基因签名、转录因子调控网络（如STAT1/SP1）及细胞特异性免疫应答模式。研究进一步结合可解释机器学习（如XGBoost与SHAP算法）筛选疾病判别关键基因（如CYBA、IFITM1），并开发了基于细胞嵌入空间的疾病分类框架，为炎症性疾病的精准诊断提供了新策略。
+                &lt;/p&gt;
+				
+            &lt;/div&gt;
+            
+			
+        &lt;/div&gt;
+        &lt;div class="p1Textcen font14" id="Zoom"&gt;
+        　　&lt;p&gt;&lt;strong&gt;炎症景观的系统性解析&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究通过整合1047例患者（涵盖19类炎症性疾病）的650万个外周血单核细胞（PBMC）单细胞转录组数据，构建了全球首个跨疾病炎症免疫细胞图谱。利用概率生成模型（scVI/scANVI）对数据进行批次校正后，通过递归聚类识别出64个免疫细胞亚群（Level 2），包括先天性与适应性免疫细胞的关键状态。细胞比例分析验证了疾病特异性改变，如系统性红斑狼疮（SLE）患者中非经典T细胞（UTC）比例降低，而单核细胞与B细胞扩增。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;炎症相关基因签名的跨疾病活动模式&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究团队定义了21类炎症相关基因签名（如细胞黏附、趋化因子、抗原呈递等），并通过Spectra算法优化为119个细胞类型特异性因子。线性混合模型（LMEM）分析显示，免疫介导的炎症性疾病（IMID）中黏附分子、NF-κB信号通路及抗原呈递签名普遍激活。值得注意的是，干扰素（IFN）Ⅰ/Ⅱ型签名在多数IMID的CD8&lt;sup&gt;+&lt;/sup&gt;T细胞中上调，其中FGFBP2&lt;sup&gt;+&lt;/sup&gt;GZMB&lt;sup&gt;+&lt;/sup&gt;效应记忆T细胞在溃疡性结肠炎（UC）中显著富集，提示其可能作为循环中上皮损伤相关T细胞的早期标志。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;转录因子调控网络的疾病特异性活动&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;基因调控网络（GRN）分析揭示STAT1与SP1是IFN诱导签名的主要调控因子。在SLE患者中，STAT1活性在非经典单核细胞中升高，而SP1在髓系细胞中活跃；在流感（Flu）感染中，STAT1特异性激活于IFN应答CD8&lt;sup&gt;+&lt;/sup&gt;T细胞。进一步对SLE患者 flare（疾病活动期）与non-flare状态的分析发现，STAT1在CD8&lt;sup&gt;+&lt;/sup&gt;T细胞中活动增强，而SP1在髓系细胞中更活跃，提示二者在疾病动态进展中的互补作用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;可解释机器学习驱动关键基因发现&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过梯度提升决策树（GBDT）模型与SHAP值分析，研究筛选出疾病判别关键基因。例如，CYBA（编码吞噬细胞氧化酶组分）在肠道炎症性疾病（UC/CD）中高表达，而在银屑病（PS）及银屑病关节炎（PsA）中低表达，可能与组织特异性氧化应激反应相关；IFITM1在慢性阻塞性肺疾病（COPD）的CD4&lt;sup&gt;+&lt;/sup&gt;T细胞及固有淋巴样细胞（ILC）中高表达，或促进淋巴细胞肺部聚集。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基于细胞嵌入空间的疾病分类框架&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究提出一种新型患者分类流程：通过scANVI将查询患者细胞映射至参考图谱的嵌入空间，再基于细胞类型特异性嵌入训练分类器。在未见患者数据（Scenario 2）中，分类器加权F1分数（WF1）达0.98；然而在跨研究验证（Scenario 3）中性能下降（WF1=0.23），凸显批次效应对泛化能力的挑战。通过集中化数据集（单一中心、标准化实验流程）优化后，分类性能显著提升（WF1=0.56），为未来临床转化提供了优化方向。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;讨论与展望&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该研究首次系统性绘制了循环免疫细胞的炎症景观，并建立了可解释的疾病分类模型。未来需扩大样本多样性（如多祖先背景）、优化批次校正策略，并探索循环细胞与组织驻留免疫状态的关联，以推动炎症性疾病的精准诊疗发展。&lt;/p&gt;
+        &lt;/div&gt;
+		
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 12 Jan 2026 16:16:56 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE4wNHY1Mm5SNHc2cWUzNGJKOElQSndOZG9FRW1odE9GbmZBZHdEaExteEg3ZTlVNE1Femdaa2RkYUo5dktNR3JmR0J1NlhUUEdLZk5nMDJBMTZHMTh6T1RmQmxCTVF6Z0xGdkhKUA</guid></item><item><title>仿生血小板膜脂质体能够实现紫草素的有效靶向输送，从而用于血栓治疗 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260113000233736.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Journal of Controlled Release》：Biomimetic platelet membrane liposomes enable targeted shikonin delivery for thrombosis therapy&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
             	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
@@ -241,7 +268,7 @@ APS的神经学表现范围广泛，从缺血性中风和短暂性脑缺血发�
 &lt;strong&gt;D. Barcellona：&lt;/strong&gt;撰写修订稿、验证结果、监督工作、概念构思。&lt;/section&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 12 Jan 2026 09:42:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE56TU1obTB3c0gyR0F4eDN0ckh3bFZoUlY5VDk2QzlZN3lUNk1UdnltRnpzS21yUEtUNi13MnJVUjNtRVdtUXMxYUoyTTBfdVdyS1ExWEJMZE1VMnNGcjBGX1p6S2w5UTdxcE5qVw</guid></item><item><title>超級K流感來勢洶洶 開年兩週2500人中招 - 大紀元新聞網</title><link>https://www.epochtimes.com/gb/26/1/12/n14674307.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="artbody" class="column" itemprop="articleBody"&gt;
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 12 Jan 2026 09:42:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE56TU1obTB3c0gyR0F4eDN0ckh3bFZoUlY5VDk2QzlZN3lUNk1UdnltRnpzS21yUEtUNi13MnJVUjNtRVdtUXMxYUoyTTBfdVdyS1ExWEJMZE1VMnNGcjBGX1p6S2w5UTdxcE5qVw</guid></item><item><title>水灾后及时清走垃圾 严防蚊虫鼠蛇病媒风险 - 诗华日报</title><link>https://news.seehua.com/post/1428247</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>诗华日报</author><pubDate>Mon, 12 Jan 2026 09:37:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE0zMElJYUM5RkZ2Q2JNd1FVX0h5Ym1ZRGdadHozd0s2S3dmcVFEelRiV0xocnJLdEU0T0VuUXZRQjlQcGhfTjBrSG5tVlI</guid></item><item><title>超級K流感來勢洶洶 開年兩週2500人中招 - 大紀元新聞網</title><link>https://www.epochtimes.com/gb/26/1/12/n14674307.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="artbody" class="column" itemprop="articleBody"&gt;
 		
         		
 		&lt;p&gt;【大纪元2026年01月12日讯】（大纪元记者天睿澳洲悉尼编译报导）卫生部门警告，澳洲人需为今年可能异常严峻的流感季做好准备。一种传播速度极快的新型流感毒株“超级K”（Super K）在澳洲的夏季引发大量感染病例。&lt;/p&gt;
@@ -609,7 +636,7 @@ APS的神经学表现范围广泛，从缺血性中风和短暂性脑缺血发�
 
 
 &lt;/body&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>健康报</author><pubDate>Mon, 12 Jan 2026 00:46:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFBZNXV0bFVEVHh6OVNmM0xkYWhrVDl0UHdzVXZvQTNGcFV3X0JXdHlQbTU3UVNKaEI4MU4tb3RRbVg3WW1DOXU3WXAyYUdCWjZtOEV0LTlFUTVXU2REc0FQcjV3</guid></item><item><title>几内亚蜱源伯纳特立克次体（Coxiella burnetii）遗传多样性揭示及新基因型发现 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260112001636242.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Ticks and Tick-borne Diseases》：Genetic diversity of 
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>健康报</author><pubDate>Mon, 12 Jan 2026 00:46:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFBZNXV0bFVEVHh6OVNmM0xkYWhrVDl0UHdzVXZvQTNGcFV3X0JXdHlQbTU3UVNKaEI4MU4tb3RRbVg3WW1DOXU3WXAyYUdCWjZtOEV0LTlFUTVXU2REc0FQcjV3</guid></item><item><title>健康百科｜定时睡觉能降血压？ - 中國報 China Press</title><link>https://www.chinapress.com.my/20260112/%E5%81%A5%E5%BA%B7%E7%99%BE%E7%A7%91%EF%BD%9C%E5%AE%9A%E6%97%B6%E7%9D%A1%E8%A7%89%E8%83%BD%E9%99%8D%E8%A1%80%E5%8E%8B%EF%BC%9F/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中國報 China Press</author><pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi-gFBVV95cUxPNFJucThvWXJ2b1lpdjBDdXR4eGhqTXNTbzdrQnNlcXdjbmlCS3pob0dlMG1JM2k4dV9rQlNxdnJWZGZabjRERlRsYlVWSm9aSmtsUUNQNG1oYXRVLVpYVjF1WEJIT0xsSzZsSGxHdXE5RzQzbnRTcnB5VTRpWnJqN05sVDczRFg3N2RvTi1FV0JoODVPVGE0Q1dRc1Z0MTdCV3lsQ0ZMdkR5dkJGbjNqdVZVcHhHbEJuOWtDb01lNV9scnZmWFRkVXdMZ3M4WkhqYlpPbUtPeFYxOTVpMk9aRkJDaWsxWXBFWEJRdU1pSWRUb00wcUcyQjl3</guid></item><item><title>几内亚蜱源伯纳特立克次体（Coxiella burnetii）遗传多样性揭示及新基因型发现 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260112001636242.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Ticks and Tick-borne Diseases》：Genetic diversity of 
 Coxiella burnetii in ticks from the Republic of Guinea&lt;/p&gt;
         &lt;div class="p1Texttop font14"&gt;
         	&lt;div class="p1Tl fl"&gt;
@@ -666,20 +693,4 @@ Coxiella burnetii in ticks from the Republic of Guinea&lt;/p&gt;
 &lt;p&gt;尽管皮质厚度在随访中展现恢复趋势，但整体认知功能的停滞不前提示：PE可能加速与年龄相关的脑萎缩进程，这种“结构性可逆”与“功能性滞留”的分离现象，或许正是连接妊娠期并发症与远期痴呆风险的关键环节。该研究不仅为PE患者的脑健康监测提供了具体影像学靶点，更开创性地将妊娠相关疾病纳入AD早期防控体系——通过管理孕前BMI、控制血压等可干预因素，或能阻断神经退行性变的连锁反应，为女性生命周期脑健康保护开辟新途径。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sun, 11 Jan 2026 18:59:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1pUG9uOVdmR05sU3RJUllmQ21FZ2pXOWhWQXNlV1lqaFBfeDQyVzdjbV9rTXppbVpSeUhhVTQ4OGxDX2FwZXZXUEZmRTRYc1EyNTdYSGRKeG54TGNjcF8zTkswOWpSdDR3R2xkNA</guid></item><item><title>山柰酚通过抑制铁死亡（ferroptosis）来缓解高脂饮食引起的肝细胞损伤 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260112001638106.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Tissue and Cell》：Kaempferol alleviates high-fat-induced hepatocyte injury by inhibiting ferroptosis&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　代谢综合征相关脂肪性肝病的核心病理是肝细胞脂质堆积引发脂毒性损伤，可能导致炎症、氧化应激及铁依赖性细胞死亡。本研究证实天然黄酮槲皮素通过激活AMPK信号通路，抑制CD36介导的脂质摄取，同时阻断PA诱导的 ferroptosis 烧烤效应，有效改善肝细胞脂毒性和炎症反应。该机制为开发槲皮素治疗非酒精性脂肪肝提供了新理论依据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;楼林杰|叶仁|黄一胜&lt;/p&gt;&lt;p&gt;温州医科大学第一附属医院老年医学科&lt;/p&gt;&lt;div&gt;&lt;h2&gt;摘要&lt;/h2&gt;&lt;div&gt;&lt;h3&gt;背景&lt;/h3&gt;&lt;p&gt;代谢功能障碍相关性脂肪性肝病（MASLD）是肝脏中代谢综合征的关键表现形式。其核心病理特征是肝细胞内脂质过度积累及随后的脂毒性损伤。这不仅会推动疾病进展为肝炎、肝纤维化和肝硬化，还显著增加肝细胞癌的风险。非酒精性脂肪肝病（NAFLD）已成为日益严重的全球公共卫生问题，亟需探索安全有效的预防和治疗策略。本研究旨在评估天然黄酮类化合物山柰酚对棕榈酸（PA）诱导的肝细胞脂毒性的干预作用。&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;方法&lt;/h3&gt;&lt;p&gt;通过一系列生化实验来评估山柰酚对肝细胞脂毒性的影响。&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;结果&lt;/h3&gt;&lt;p&gt;研究结果表明，山柰酚不仅能够拮抗棕榈酸引起的肝细胞增殖和活力抑制，还能减轻棕榈酸引发的炎症反应（TNF-α、IL-6、IL-1β）和氧化应激（ROS）。重要的是，我们发现这些保护作用是通过抑制棕榈酸诱导的一种新型细胞死亡方式——铁死亡（ferroptosis）来实现的。从机制上看，山柰酚主要通过激活AMPK信号通路发挥其益处。AMPK的激活产生了双重保护作用：首先，通过下调脂肪酸转运蛋白CD36来减少脂质积累；其次，更重要的是，有效抑制铁死亡过程，从而打破脂质过载、氧化应激和细胞死亡之间的恶性循环。&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;结论&lt;/h3&gt;&lt;p&gt;这一新发现为理解山柰酚的作用机制提供了新的视角。本研究不仅证实了山柰酚可通过“AMPK-CD36”轴协同对抗脂质代谢紊乱和铁死亡，还为将其开发为脂肪肝病预防和治疗药物提供了坚实的实验基础和创新的理论支持。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;h2&gt;部分内容摘录&lt;/h2&gt;&lt;section&gt;&lt;h2&gt;背景&lt;/h2&gt;&lt;p&gt;MASLD是一种不涉及饮酒或其他已知肝病因素的慢性肝病。它不仅对肝脏构成直接威胁，还可能增加患者患各种代谢性和心血管疾病的风险，严重影响患者的生活质量和预期寿命（Younossi等人，2023年）。代谢相关性脂肪性肝炎（MASH）作为MASLD的进展形式，可发展为肝纤维化、肝硬化甚至肝细胞癌等终末期肝病。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;生化试剂&lt;/h2&gt;甲醇、异丙醇、蛋白酶和磷酸酶抑制剂、RIPA裂解缓冲液、丙烯酰胺、甘氨酸、SDS、生理盐水、BSA、PBS缓冲液、青霉素-链霉素溶液、Triton X-100、DMSO以及Western Blot膜再生溶液均购自Solarbio科技有限公司；MDA检测试剂盒、GSH-Px检测试剂盒和SOD检测试剂盒均购自Beyotime生物科技有限公司；山羊血清购自Boster生物科技有限公司（浓度为4%）。&lt;/section&gt;&lt;/div&gt;&lt;section&gt;&lt;h2&gt;在肝细胞模型中选择山柰酚的最佳浓度&lt;/h2&gt;&lt;p&gt;在肝细胞模型（AML12和THLE-2）中，为了确定具有最佳生物效应的山柰酚浓度，我们设计了一系列浓度梯度实验。首先选取对数生长阶段的肝细胞（如AML12和THLE-2细胞系），分别向每个孔中加入不同浓度的山柰酚（Kp，0、10、20、40、80和160 μM）。刺激细胞24小时后，观察不同浓度山柰酚对细胞活力的影响。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;讨论&lt;/h2&gt;&lt;p&gt;全球约有四分之一的人口患有MASLD（Riazi等人，2021年）。该疾病的谱系从单纯的肝脂肪变性到伴有肝细胞损伤和炎症的代谢功能障碍相关性脂肪性肝炎（MASH）不等。部分患者可能进一步发展为肝纤维化、肝硬化甚至肝细胞癌。早期MASLD通常没有症状，但其潜在的进展性使其成为重要的公共卫生问题。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;结论&lt;/h2&gt;&lt;p&gt;本研究发现，山柰酚可通过激活AMPK信号通路来减轻CD36介导的脂质积累，同时有效抑制棕榈酸诱导的铁死亡。这项工作为后续的转化研究奠定了关键的理论基础。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;未引用的参考文献&lt;/h2&gt;&lt;p&gt;(Bartolini等人，2018年；Bartolini等人，2017年；Engin，2024年；Migni等人，2025年；Nassir，2022年；Nakamura，2024年；Pafili和Roden，2021年；Riazi等人，2022年；Svegliati-Baroni等人，2019年；Xu等人，2024年)&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;CRediT作者贡献声明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;楼林杰：&lt;/strong&gt;撰写初稿、软件操作。&lt;strong&gt;叶仁：&lt;/strong&gt;软件操作、资源管理、项目协调、方法设计。&lt;strong&gt;黄一胜：&lt;/strong&gt;撰写与编辑、初稿审阅、项目监督、资金筹集、数据分析、数据管理。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;致谢&lt;/h2&gt;&lt;p&gt;本工作得到了温州市科学技术局基础研究项目（项目编号：Y20220002）和叶仁著名中医药专家传承工作室（项目编号：GZS2021030）的支持。&lt;/p&gt;&lt;/section&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sun, 11 Jan 2026 16:46:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1PNl9VdU10amJtdTl0RDBQQmtmZVhFQWh1bGVKUjNjd2FTemFxTlBlcHNra2R4X1JwYTE2THp4WXRwb2ZyZFh3SlZFYjl1SFFveVd2ZHBqN0hkZzJSTXJXbVZza2VFcHhBZkdjTw</guid></item></channel></rss>
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sun, 11 Jan 2026 18:59:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1pUG9uOVdmR05sU3RJUllmQ21FZ2pXOWhWQXNlV1lqaFBfeDQyVzdjbV9rTXppbVpSeUhhVTQ4OGxDX2FwZXZXUEZmRTRYc1EyNTdYSGRKeG54TGNjcF8zTkswOWpSdDR3R2xkNA</guid></item></channel></rss>
