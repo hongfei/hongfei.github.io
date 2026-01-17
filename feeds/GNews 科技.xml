@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>华为鸿蒙系统通过国家安全可靠测评！ - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098878.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>硬盘涨上天 闪存贵如金 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098892.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;TomsHardware的编辑测算了PCIe 4.0/5.0 NVMe固态盘的净重均值（显然，仅针对无散热片型号），在记录了超过一百个样本后得出结论：8TB M2固态盘均重8.2克，4TB均重8克——双面贴片高容量盘并未显著增重。&lt;/p&gt;
+&lt;p&gt;由于8TB固态盘的售价不成比例地较4TB型号贵上不少，每根均价高达1476美元，按每克价值计算已超过黄金（184美元 vs 148美元）。即便是4TB型号，某些牌号的NVMe SSD也接近8克黄金的价值（1184美元），比如企业盘，每克价值贵过黄金毋庸置疑。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="硬盘涨上天 闪存贵如金" h="434" src="//img1.mydrivers.com/img/20260117/09c3e1b046114894a01767ec1e8c639c.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;（昔日所谓金盘如今绝非戏言）&lt;/p&gt;
+&lt;p&gt;TomsHardware的编辑指出，目前大部分消费级4TB SSD的价位不到800美元，克重计价低于金价——不如黄金那般金贵，但售价较前两年则翻了一番不止。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260117/209df9a6e32148aeb1d8362a43cd40db.jpg" target="_blank"&gt;&lt;img alt="硬盘涨上天 闪存贵如金" h="336" src="//img1.mydrivers.com/img/20260117/s_209df9a6e32148aeb1d8362a43cd40db.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;许多人不明白为何闪存（Flash）也会搭上AI顺风车价格一路狂飙，最流行的说法是厂商扩产内存（RAM）挤占了闪存产线，实际上这个说法并不准确。&lt;/p&gt;
+&lt;p&gt;以群联aiDAPTIV+技术为代表的AI计算加速平台&lt;strong&gt;使用闪存作为辅助内存池&lt;/strong&gt;，可有效缓解GPU VRAM不足导致的效率损失。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260117/3d6d3736450a4723b5144743ee775cc7.jpg" target="_blank"&gt;&lt;img alt="硬盘涨上天 闪存贵如金" h="375" src="//img1.mydrivers.com/img/20260117/s_3d6d3736450a4723b5144743ee775cc7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;经研究人员测算，DGX Spark用于推理时TTFT（首个token生成时间）约为40 秒，使用aiDAPTIV后降为9 秒；Strix Halo的TTFT用时36秒，使用aiDAPTIV降为6 秒。&lt;/p&gt;
+&lt;p&gt;在模型训练场景下，NVIDIA平台会将所有内容加载至GPU内存，比如70B参数的LLM需要20x70B=1.4TB显存，需动用18块H100或10块H200/8块B200/5块B300，用上aiDAPTIV技术后，训练被分解为多个部分，16GB显存就能跑，性能损失只有10%左右。&lt;/p&gt;
+&lt;p&gt;（主控厂商）群联电子曾演示过一个更极端的例子，只使用两块RTX Pro 6000进行Llama 3.1 405B模型训练，硬件部分仅仅是192GB显存配8TB aiDAPTIV SSD缓存池，硬件成本在5万美元左右。&lt;/p&gt;
+&lt;p&gt;如果不用SSD缓存池，把显存扩充至8TB要买一大堆NVIDIA AI卡，硬件成本接近400万美元。&lt;/p&gt;
+&lt;p&gt;aiDAPTIV的代价是……写入量极大，SSD必须配置为SLC模式——按8TB SLC等于32TB TLC来算，闪存产线都忙不过来了！全行业普遍供不应求，缺口在15%-20%左右。&lt;/p&gt;
+&lt;p&gt;标准aiDAPTIV SSD的额定寿命是100DWPD，而2TB消费级SSD的寿命大概是0.3DWPD（用于aiDAPTIV只能坚持一个星期），从这个角度看，aiDAPTIV缓存池里的SSD等同于耗材，进一步加剧了供应短缺局面。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260117/9dbb5bc336e74cf7b1eef87b0a301c6b.jpg" target="_blank"&gt;&lt;img alt="硬盘涨上天 闪存贵如金" h="224" src="//img1.mydrivers.com/img/20260117/s_9dbb5bc336e74cf7b1eef87b0a301c6b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;由于扩建闪存工厂需要两年时间，即便厂商现在就扩产，产能要到2028年方可释放。前两年闪存价格持续走低，没有厂家愿意投资扩产，导致如今供不应求局面难以缓解。&lt;/p&gt;
+&lt;p&gt;硬盘市场同理，数据中心遍地开花，对大容量企业级硬盘的需求也水涨船高，但硬盘厂商这几年一直抱残守缺，根本没有扩产的念头，只有苦了松鼠党。硬盘价格平均上涨46%，容量越大上涨越厉害——希捷24TB酷鱼曾低至239美元，如今现货要卖499美元，很多电商平台还缺货。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：Zhengogo&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 17 Jan 2026 01:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1GcHdoVmFzcnVlWldQa3EyeWhrbmVVVS1vNFMwN09Vd2VvQUZRc3puTVREbmZZUDhKSzdnNlMydkhLOHFHczVRN09BajlKb2o1T0QzR3lEMkE</guid></item><item><title>马斯克因星链与欧洲最大航空公司CEO对骂：大白痴 解雇他 - 凤凰网科技</title><link>https://tech.ifeng.com/c/8pytKjz7Qyv</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE1TY2FXVWhkd2p3TkQ4d051VHBzcjgtTEl1bUNBUWFScEdwM3k0T0lnRWFhM3VOTWhxMHJ0M2V0dHZnNU1qV3ZQcWE3WmY?oc=5" target="_blank"&gt;马斯克因星链与欧洲最大航空公司CEO对骂：大白痴 解雇他&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;凤凰网科技&lt;/font&gt;</description><author>凤凰网科技</author><pubDate>Sat, 17 Jan 2026 01:02:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1TY2FXVWhkd2p3TkQ4d051VHBzcjgtTEl1bUNBUWFScEdwM3k0T0lnRWFhM3VOTWhxMHJ0M2V0dHZnNU1qV3ZQcWE3WmY</guid></item><item><title>俄乌局部停火以修复扎波罗热核电站供电线 - 联合早报</title><link>https://www.zaobao.com.sg/realtime/world/story20260117-8114587</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;p&gt;国际原子能机构（IAEA）星期五（1月16日）发表声明说，已促成俄罗斯和乌克兰局部停火，以修复扎波罗热核电站受损的330千伏备用供电线。&lt;/p&gt;&lt;p&gt;新华社报道，扎波罗热核电站这条供电线1月2日遭军事活动破坏，导致这座核电站目前仅靠一条供电线维持运转。&lt;/p&gt;&lt;p&gt;国际原子能机构说，乌克兰电网运营商技术人员将开始修复这条受损供电线，国际原子能机构已派工作组从维也纳总部前往一线，监督修复作业。&lt;/p&gt;&lt;p&gt;国际原子能机构总干事格罗西在声明中说，这是俄乌双方在国际原子能机构斡旋下，就扎波罗热核电站第四次达成临时停火。“国际原子能机构正持续与俄乌双方密切合作，以确保扎波罗热核电站的核安全，并防止冲突期间发生核事故。”&lt;/p&gt;&lt;p&gt;扎波罗热核电站是欧洲最大核电站之一。2022年2月24日俄罗斯入侵乌克兰后，俄方很快控制了扎波罗热核电站。此后，这座核电站多次遭到炮击或无人机攻击，引发国际社会对核电站安全的担忧。&lt;/p&gt;
+    
+  &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Fri, 16 Jan 2026 23:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTE40TG5tZF9DTEpaU0lhdDc5WG4ydGItZzhWLVVENkhmZnI0WGlIVy15c0d1ZGoxTmFhMV9QNEE1QUpsekZWUmgwMnZSWjFhSVVMZ0VtM2tBb191UjYtbTA0NFdMLUNmTFRfQURGRXltVQ</guid></item><item><title>ChatGPT Go 现已面向全球用户开放 - OpenAI</title><link>https://openai.com/zh-Hans-CN/index/introducing-chatgpt-go/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OpenAI</author><pubDate>Fri, 16 Jan 2026 23:29:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMia0FVX3lxTE9zUmltSmNaLTIxQ1Ffd2J1RmJVdzlhUk9Zc2xKS1lwcE11aUpNVEdPZUxTSHluVHZ4QVI4SjBEdkI0YkN4T01JdHZhdlNiXzdIckhsZ0J0Qy12bFhvVWJtMUFFd1NUN05OdEVr</guid></item><item><title>iPhone 18 Pro和iPhone Fold将首发苹果A20 Pro芯片：2nm工艺 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098882.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技1月17日消息，行业分析师Jeff Pu在最新投资者报告中披露，&lt;span&gt;&lt;strong&gt;苹果首款折叠屏iPhone Fold将于今年9月与iPhone 18 Pro、iPhone 18 Pro Max同步发布，三款高端机型均搭载台积电2nm工艺的A20 Pro芯片。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;至于iPhone 18标准版、iPhone 18e则推迟至2027年春季推出，标志着苹果正式开启分批发布的新品策略。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260117/39e55f70-c82b-431f-b8ed-63c5263d7e76.png" target="_blank"&gt;&lt;img alt="iPhone 18 Pro和iPhone Fold将首发苹果A20 Pro芯片：2nm工艺" h="335" src="//img1.mydrivers.com/img/20260117/S39e55f70-c82b-431f-b8ed-63c5263d7e76.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;A20 Pro将采用台积电N2 2nm制程，相较上代A19芯片，CPU/GPU性能提升15%，能效比优化30%，可更好支撑多任务处理、AR应用及Apple Intelligence相关AI功能。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;芯片首次应用台积电晶圆级多芯片模块（WMCM）技术，将RAM直接集成在CPU、GPU、神经网络引擎所在的晶圆上，替代传统硅中介层连接内存的方案。&lt;/p&gt;
+&lt;p&gt;该技术不仅使芯片体积缩小，为折叠屏内部元器件腾出更多空间，还能提升数据传输速度，间接延长续航，同时强化AI计算响应效率。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="iPhone 18 Pro和iPhone Fold将首发苹果A20 Pro芯片：2nm工艺" h="337" src="//img1.mydrivers.com/img/20260117/ca60abf2-9616-4fb0-9fe0-6fa07389942d.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三款机型均配备12GB LPDDR5内存、4800万像素后置摄像头及苹果自研C2调制解调器，C2预计在5G信号接收、低功耗方面有进一步优化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;iPhone Fold采用书本式折叠形态，内屏尺寸为7.8英寸，外屏5.5英寸，主打无折痕显示效果。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="iPhone 18 Pro和iPhone Fold将首发苹果A20 Pro芯片：2nm工艺" h="450" src="//img1.mydrivers.com/img/20260117/9e818fd6-788f-4299-a118-af711f9ddf2e.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;放弃iPhone常规的Face ID，改用侧边Touch ID；前后均配备前置摄像头，折叠/展开状态下均可满足自拍、视频通话需求。&lt;/p&gt;
+&lt;p&gt;展开后厚度仅4.5mm，闭合状态厚度9-9.5mm，搭配疑似钛金属+铝合金混合材质机身。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 23:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5VWVFnM21abUd6WXNzUE9pRlY3bkI5T29jaE5Xa3R6cW5BM0poZktXcllIcFh6SDVoSTZRU0pqZ3QxUVZKLTJrQkFKZ1Q4NWlUSmZlUkI3UTA</guid></item><item><title>华为鸿蒙系统通过国家安全可靠测评！ - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098878.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;strong&gt;快科技1月17日消息，据中国信息安全测评中心官网发布的《安全可靠测评结果公告（2026年第1号）》，华为鸿蒙桌面操作系统与华为云欧拉（openEuler）服务器操作系统正式通过安全可靠测评。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;其中，鸿蒙是唯一获得了Ⅱ级的评测成绩的系统。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -411,7 +465,80 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 10:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB1S0ItQUJCd3BwbW5CNHVUcTVyTHlCSFhhcFJSMkJUakxfUVgwY1BwYVNlM05aZjZyNFBiU0pHSHMzQkVJSzlGVDFaVjNfNkJmNE1sWlFiNVE</guid></item><item><title>时隔不到一年！我国科学家3D打印出跳动的心脏类器官：未来可进行器官局部修复 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098832.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 10:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB1S0ItQUJCd3BwbW5CNHVUcTVyTHlCSFhhcFJSMkJUakxfUVgwY1BwYVNlM05aZjZyNFBiU0pHSHMzQkVJSzlGVDFaVjNfNkJmNE1sWlFiNVE</guid></item><item><title>你的浏览器会主动提问了？夸克 AI 浏览器正在验证 AI Native 的「下半场」 - 爱范儿</title><link>https://www.ifanr.com/1651982</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
+            &lt;p class="o-single-normal-content"&gt;
+              &lt;h1 class="c-single-normal__title"&gt;你的浏览器会主动提问了？夸克 AI 浏览器正在验证 AI Native 的「下半场」&lt;/h1&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;p&gt;当代打工人的浏览器标签栏里，藏着各种各样的秘密：帮忙润色文案的 AI 工具、汲取灵感的视频素材库、应付周报的模板网站，还有那些越装越多的浏览器插件。&lt;/p&gt;
+&lt;p&gt;说到底，这些都是为了一个目的：&lt;strong&gt;在有限的工作时间里，少干点重复劳动，多留点时间给真正需要动脑的事。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但问题是，工具越装越多，浏览器越来越卡，至于那些号称「AI 加持」的浏览器，要么就是简单粗暴地塞个聊天框，要么功能藏得一个比一个深。&lt;/p&gt;
+&lt;p&gt;直到最近用了几天夸克 AI 浏览器的新版本，才发现原来浏览器还能这么玩。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651996" src="https://s3.ifanr.com/wp-content/uploads/2026/01/124-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/124-1.png!720 3038w, https://s3.ifanr.com/wp-content/uploads/2026/01/124-1-360x222.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/124-1-768x474.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/124-1-1024x632.png 1024w" sizes="(max-width: 3038px) 100vw, 3038px"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不满足于把体验做到「够用」，致力于打造更强大的 AI 浏览器，此次夸克对千问智能套件能力进一步升级。&lt;/strong&gt;除了大家熟悉的千问划词和侧边栏，最让我惊喜的是新增的千问读屏「自动提问」模式。&lt;/p&gt;
+&lt;p&gt;它直接打破了以往手动提问才响应的老规矩，能够捕捉共享屏幕的内容变化，主动发起提问并解答。&lt;strong&gt;这种被 AI 主动提问，「追着喂饭」的体验，说实话还挺新鲜的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当然，除此之外，我还发现夸克藏着不少能让学生党、打工人都觉得嘴角上扬的功能，只能说懂行的都在偷偷用。&lt;/p&gt;
+&lt;h3&gt;打工人的苦活累活，被夸克 AI 浏览器包了&lt;/h3&gt;
+&lt;p&gt;所谓 AI Native，从不是简单叠加个 AI 入口凑数。夸克的思路很清晰：把用户不愿做、耗时间的苦活累活，交给 AI 来扛。&lt;strong&gt;这种让工具适配人，而非人适配工具的逻辑，才是它对 AI Native 可能性的理解。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;千问划词：AI 能 get 你的潜台词，划个词就够了&lt;/p&gt;
+&lt;p&gt;咱先聊最常用的划词功能，一般的 AI 浏览器划文字，顶破天就是复制、搜索、翻译三板斧，遇到复杂需求照样抓瞎。但夸克的千问划词，硬是玩出了新高度。&lt;/p&gt;
+&lt;p&gt;谁懂啊！看一些外网网站时，那些绕来绕去的长难句，还有「Phenomenological Hermeneutics」这种一看就头大的词，以前得切出去开翻译软件，来回切换烦得想砸键盘。现在用千问划词直接一划点击「翻译」，千问立马就能把意思讲得明明白白。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651984" src="https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d3b53009c48601f3eda69215631404467cf1800ccfa0bc4ec934bfcfd68ab14b7df8385ebd76229487dbdcc4b313534bf.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d3b53009c48601f3eda69215631404467cf1800ccfa0bc4ec934bfcfd68ab14b7df8385ebd76229487dbdcc4b313534bf.gif 640w, https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d3b53009c48601f3eda69215631404467cf1800ccfa0bc4ec934bfcfd68ab14b7df8385ebd76229487dbdcc4b313534bf-360x264.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
+&lt;p&gt;但更实用的，千问划词它还能设置专属的快捷指令。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说白了，就是把好用的常用的指令存成快捷指令，轻轻一划，即可一键随时调用，打开设置，找到划词工具栏 ，点击「添加自定义指令」，输入你想要的指令，搞定。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651987" src="https://s3.ifanr.com/wp-content/uploads/2026/01/fanyi.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/fanyi.gif 1096w, https://s3.ifanr.com/wp-content/uploads/2026/01/fanyi-360x263.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/fanyi-768x561.gif 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/fanyi-1024x748.gif 1024w" sizes="(max-width: 1096px) 100vw, 1096px"&gt;&lt;/p&gt;
+&lt;p&gt;就说写论文这事儿，脑子里全是大白话，死活憋不出学术腔，直接写进去肯定被导师打回来，返工到崩溃。&lt;/p&gt;
+&lt;p&gt;这时候划选那段大白话，点一下提前设置好的「论文润色大师」快捷指令，千问秒出学术腔版本，复制粘贴就能用——省了多少脑细胞，谁用谁知道！&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651989" src="https://s3.ifanr.com/wp-content/uploads/2026/01/lunwendashijiujiujiban12456.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/lunwendashijiujiujiban12456.gif 878w, https://s3.ifanr.com/wp-content/uploads/2026/01/lunwendashijiujiujiban12456-360x344.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/lunwendashijiujiujiban12456-768x733.gif 768w" sizes="(max-width: 878px) 100vw, 878px"&gt;&lt;/p&gt;
+&lt;p&gt;咱就说，直男们谁没踩过「我没生气」的坑？女朋友发微信说这话，你敢回「好的」，晚上键盘就已经准备好了。现在有了可以自定义的「求生欲助手」快捷指令，一套丝滑连招下来，感觉 AI 的情商至少比我高了两个段位。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651991" src="https://s3.ifanr.com/wp-content/uploads/2026/01/qinglvzuizhongban.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/qinglvzuizhongban.gif 592w, https://s3.ifanr.com/wp-content/uploads/2026/01/qinglvzuizhongban-360x431.gif 360w" sizes="(max-width: 592px) 100vw, 592px"&gt;&lt;/p&gt;
+&lt;p&gt;打工人则更得尝试这个功能。日常工作记录写进周报里，却显得工作量不饱和还没价值。这时候用「周报美化大师」快捷指令，划词一点，立马显得你专业又靠谱，领导看了都点头。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651985" src="https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d91d388c3b69edc81ede6bb609dc1ac09b8c7b3855a4a16f0a666b26657180c473dc4a47deb8462e82d1a0613377587fc.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d91d388c3b69edc81ede6bb609dc1ac09b8c7b3855a4a16f0a666b26657180c473dc4a47deb8462e82d1a0613377587fc.gif 640w, https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d91d388c3b69edc81ede6bb609dc1ac09b8c7b3855a4a16f0a666b26657180c473dc4a47deb8462e82d1a0613377587fc-360x305.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
+&lt;p&gt;千问侧边栏：打工人的摸鱼/干活神器，重复活全省了&lt;/p&gt;
+&lt;p&gt;现在浏览器都有侧边栏，但大多是凑数的。而夸克的千问侧边栏就一个核心思路：&lt;strong&gt;能让 AI 干的，绝不让你动手，主打一个脏活累活，能省则省。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;就拿我最近的经历来说，打开外网新闻，我再也不用逐行读，而是点击右上角千问按钮调出侧边栏，输入个指令，它就能直接提炼核心重点，省了巨多时间。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651993" src="https://s3.ifanr.com/wp-content/uploads/2026/01/waiwangxinwen.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/waiwangxinwen.gif 966w, https://s3.ifanr.com/wp-content/uploads/2026/01/waiwangxinwen-360x277.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/waiwangxinwen-768x590.gif 768w" sizes="(max-width: 966px) 100vw, 966px"&gt;&lt;/p&gt;
+&lt;p&gt;当然，打工人最崩溃的瞬间是什么？必须是老板周末随手甩个视频，丢下一句「周一汇报总结」，然后消失得无影无踪。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;以前的我是匆匆忙忙连滚带爬，现在的我却是从从容容游刃有余。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以这个 TED 演讲为例，我可以用侧边栏提取长视频字幕，它能生成视频的逐字稿，辅助我深度研究这条视频；也能满足我快速看完视频核心内容。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651992" src="https://s3.ifanr.com/wp-content/uploads/2026/01/TED.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/TED.gif 1080w, https://s3.ifanr.com/wp-content/uploads/2026/01/TED-360x247.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/TED-768x527.gif 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/TED-1024x703.gif 1024w" sizes="(max-width: 1080px) 100vw, 1080px"&gt;&lt;/p&gt;
+&lt;p&gt;然后，让它基于字幕导出演讲稿，再直接生成 PPT，应付内部快速汇报完全没问题。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651990" src="https://s3.ifanr.com/wp-content/uploads/2026/01/PPT1.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/PPT1.gif 1080w, https://s3.ifanr.com/wp-content/uploads/2026/01/PPT1-360x277.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/PPT1-768x592.gif 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/PPT1-1024x789.gif 1024w" sizes="(max-width: 1080px) 100vw, 1080px"&gt;&lt;/p&gt;
+&lt;p&gt;千问读屏-自动提问：既懂眼色，又会思考&lt;/p&gt;
+&lt;p&gt;两个月前，我们介绍过夸克「千问读屏」的主动提问模式，它就是用户的第二双眼睛，能够识别屏幕上的内容，现在千问读屏功能还新增「自动提问」模式（需升级到 6.2.5 版本）。&lt;/p&gt;
+&lt;p&gt;具体来说，选定并共享窗口后，开启后自动截屏，发送预置指令开启对话，每次你切换页面，千问自动发出提问，帮你实时解答问题。&lt;/p&gt;
+&lt;p&gt;比如在备考驾照科目一刷题时，难免会遇到那些让人头晕的扣分罚款题。当你对着错题发愁，屏幕切到哪道题，AI 就能秒回一份更深度的解析，把背后的交规逻辑讲得清楚，帮你迅速吃透考点。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1652004" src="https://s3.ifanr.com/wp-content/uploads/2026/01/kaoshizhongjiban.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/kaoshizhongjiban.gif 3832w, https://s3.ifanr.com/wp-content/uploads/2026/01/kaoshizhongjiban-360x198.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/kaoshizhongjiban-768x422.gif 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/kaoshizhongjiban-1024x563.gif 1024w" sizes="(max-width: 3832px) 100vw, 3832px"&gt;&lt;/p&gt;
+&lt;p&gt;再比如我手里这份大佬的 PPT，全是干货但好多专业术语看不懂，这时我们同样可以直接开启「自动提问」模式，之后顺着往下看就行。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1652003" src="https://s3.ifanr.com/wp-content/uploads/2026/01/qianwenduping2.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/qianwenduping2.gif 3920w, https://s3.ifanr.com/wp-content/uploads/2026/01/qianwenduping2-360x198.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/qianwenduping2-768x423.gif 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/qianwenduping2-1024x564.gif 1024w" sizes="(max-width: 3920px) 100vw, 3920px"&gt;&lt;/p&gt;
+&lt;p&gt;热知识，夸克还有一个「隐藏彩蛋」：跨标签分析。&lt;strong&gt;在首页、侧边栏直接 @ 多个标签页，就能让 AI 总结这些页面的内容，或者对比它们的差异，不用再来回切换看。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651988" src="https://s3.ifanr.com/wp-content/uploads/2026/01/kuabiaoqianyefenxijiujiban.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/kuabiaoqianyefenxijiujiban.gif 900w, https://s3.ifanr.com/wp-content/uploads/2026/01/kuabiaoqianyefenxijiujiban-360x304.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/kuabiaoqianyefenxijiujiban-768x649.gif 768w" sizes="(max-width: 900px) 100vw, 900px"&gt;&lt;/p&gt;
+&lt;p&gt;基于以上这些功能，你要是把它们组合起来用，那效果就更好了。&lt;/p&gt;
+&lt;p&gt;就说写论文这终极折磨，谁没被开头难住过？盯着空白文档半天，脑子里啥思路都没有，这时候别硬憋！直接把相关的几篇文献网页全打开，使用「跨标签分析」帮忙理清思路，找灵感、写文献综述。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1652005" src="https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequankuabiaoqianfenxi.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequankuabiaoqianfenxi.gif 640w, https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequankuabiaoqianfenxi-360x225.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
+&lt;p&gt;写完了觉得文笔不够好？点击千问划词已经设置好的快捷指令，让 AI 帮你改成教授爱看的学术腔。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651995" src="https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanxueshulunwenrunsedashi.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanxueshulunwenrunsedashi.gif 906w, https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanxueshulunwenrunsedashi-360x319.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanxueshulunwenrunsedashi-768x680.gif 768w" sizes="(max-width: 906px) 100vw, 906px"&gt;&lt;/p&gt;
+&lt;p&gt;最后要交差了，也不用熬夜赶 PPT，直接让夸克基于论文内容生成 PPT 就行。这套组合拳下来，写论文的时间直接砍半，只能说，用过的都懂有多省事。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651994" src="https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanppt.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanppt.gif 916w, https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanppt-360x339.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/zuhequanppt-768x723.gif 768w" sizes="(max-width: 916px) 100vw, 916px"&gt;&lt;/p&gt;
+&lt;h3&gt;沉寂多年的 PC 赛道，被夸克用 AI 撕开了一道口子&lt;/h3&gt;
+&lt;p&gt;AI 浪潮席卷之下，PC 浏览器这个在移动时代几乎被遗忘的品类，这两年硬是上演了一出「回马枪」，重新成了巨头们的必争之地。微软 Edge 深度集成 Copilot 后，市场份额连续好几个季度逆势上涨，就是这场浏览器「文艺复兴」最直观的信号。&lt;/p&gt;
+&lt;p&gt;用户用脚投票的选择，本质很简单：&lt;strong&gt;PC 端的场景价值，从来都是不可替代的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;移动端核心是碎片化消费：刷短视频、看资讯，用户被动接收信息流，浏览器没什么存在感也正常。但 PC 是实打实的「生产力主场」，写报告、做数据分析、查论文都要主动处理信息，核心需求就俩——省时间、降门槛。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1651986" src="https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d6201fc3eae3c2155ff95cf0903be5fa364969119e24f9826372572e5ce1557cbb4ea326f999d8b61765d897200cca1cf.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d6201fc3eae3c2155ff95cf0903be5fa364969119e24f9826372572e5ce1557cbb4ea326f999d8b61765d897200cca1cf.png!720 1125w, https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d6201fc3eae3c2155ff95cf0903be5fa364969119e24f9826372572e5ce1557cbb4ea326f999d8b61765d897200cca1cf-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d6201fc3eae3c2155ff95cf0903be5fa364969119e24f9826372572e5ce1557cbb4ea326f999d8b61765d897200cca1cf-768x512.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/5eecdaf48460cde5ceabb303d9ccfb39de1009e25ee48a5475b8339e1c4c2483ced9e73ce41a7fcf39e8703ac5556d0d6201fc3eae3c2155ff95cf0903be5fa364969119e24f9826372572e5ce1557cbb4ea326f999d8b61765d897200cca1cf-1024x683.png 1024w" sizes="(max-width: 1125px) 100vw, 1125px"&gt;&lt;/p&gt;
+&lt;p&gt;交互设计教父雅各布·尼尔森做过项重磅研究，指出生成式 AI 最大的贡献，是缩小了技能差距。&lt;/p&gt;
+&lt;p&gt;放到 PC 浏览器的场景里，这话就可以翻译成：以前得靠熟练工具链、复杂操作才能搞定的事，现在靠更自然地交互就能完成，省掉了一堆繁琐步骤。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而夸克的思路就是，与其让用户费劲适应复杂菜单和插件，不如让浏览器靠 AI 读懂用户的话，直接给结果，让所有协作、复杂工作流，都在 1 个夸克 AI 浏览器里完成。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;就像我们前面提到的，千问划词能直接润色改写，侧边栏一键总结视频、提取字幕，读屏功能能读懂屏幕信息，自动回答。不管你是学生、财务、运营，还是普通打工人，都能在夸克里找到省事省心的功能。&lt;/p&gt;
+&lt;p&gt;用户价值的提升，最终会转化为商业价值。&lt;/p&gt;
+&lt;p&gt;在效率工具圈里，用户愿不愿意付费，大多和省下来的时间成正比。而且 PC 端的工作流一旦养成，切换成本高到离谱，这种高粘性给了厂商持续研发的底气，一个正向的商业循环也得以建立。&lt;/p&gt;
+&lt;p&gt;微软 CEO 萨提亚·纳德拉早说过一个预言：AI 会把浏览器从被动的「阅读器」，变成主动的「推理器」。这或许也能解释，为啥 PC 浏览器能在 AI 时代「杀回来」，不是 PC 突然又流行了，而是生产场景的需求从来就没消失。&lt;/p&gt;
+&lt;p&gt;AI 的出现，终于让这个需求有了被满足的机会。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更重要的是，夸克 AI 浏览器的突围，同样验证了那个在科技圈流传已久的判断：在 AI Native 的语境下，所有的经典软件都值得重做一遍，也重新有了更多想象空间。&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Fri, 16 Jan 2026 10:06:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE52cmV1WUtnR2Z3QncyNS1NV3FDejVWdVpOa0xjTWNXSnJTVXpjYmJINmVmVE1mV2dCRkpoNkVMYUpGZlk</guid></item><item><title>时隔不到一年！我国科学家3D打印出跳动的心脏类器官：未来可进行器官局部修复 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098832.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技1月16日消息，近日，据央视节目报道，&lt;strong&gt;深圳清华大学研究院的徐弢教授，带领团队用生物3D打印机打出了“微小心脏”。&lt;/strong&gt;&lt;/p&gt;
 &lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260116/d2bc836a4dab4486aa27c40cf23c6333.png" target="_blank"&gt;&lt;img alt="时隔不到一年！我国科学家3D打印出跳动的心脏类器官：未来可进行器官局部修复" h="358" src="//img1.mydrivers.com/img/20260116/s_d2bc836a4dab4486aa27c40cf23c6333.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1425,372 +1552,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 04:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5DQzRmSkhSdGpzeUVnSUpjTmtFMEVqRzhjNU1Bc1F5M2VRcWxpVHNPRXo3b2pVRTFmM1BDUDQ1QXc1aXRmNlIyenZiZFVXZGZxTXN4a1pmU1c</guid></item><item><title>去美国试了最新的特斯拉FSD+Grok，我有点被震惊了。。。 - 风闻</title><link>https://user.guancha.cn/main/content?id=1584572</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
-							&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555971.png?imageView2/2/w/500/format/png" alt="500"&gt;关注汽车部的差友们应该记得，脖子哥老早之前就有去美国试过特斯拉的FSD（Full-Self Driving，完全自动驾驶）。&lt;/p&gt;&lt;p&gt;那会儿特斯拉已经开始了端到端，而国内玩这个的还不多，它的FSD确实让人印象深刻。&lt;a href="https://mp.weixin.qq.com/s?__biz=MzA5NDc1NzQ4MA==&amp;amp;mid=2654510766&amp;amp;idx=1&amp;amp;sn=ce6ed93ede4307cfb567b40ec90c3df3&amp;amp;scene=21#wechat_redirect"&gt;我去美国试了特斯拉的FSD，好像真有点遥遥领先。。。&lt;/a&gt;&lt;/p&gt;&lt;p&gt;而在前些天，趁着CES去美国出差的机会，脖子哥和差评君的蛋布利多一起，去到了特斯拉在加州的弗里蒙特工厂，&lt;strong&gt;试了下FSD最新的V14版本，以及特斯拉的Robotaxi&lt;/strong&gt;（无人驾驶出租车）。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555928.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555537.png?imageView2/2/w/500/format/png" alt="500"&gt;这个V14版本相比之前有了不小的变化：&lt;strong&gt;模型参数量比V13提高了10倍&lt;/strong&gt;，并且把导航和路径规划整合到了神经网络，还能通过听觉、视觉识别警车、消防车，主动避让。&lt;/p&gt;&lt;p&gt;可以说，这是特斯拉在进入端到端以来最大的一次更新。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555427.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;上个月底，美国一位特斯拉车主就用FSD V14搞了个大新闻，他从洛杉矶一直开到东海岸，快3天一共4400公里的路程里，全程没有一次接管，包括找充电桩都是车子自己完成的。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555371.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;所以这一版到底有多强？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555526.png?imageView2/2/w/500/format/png" alt="500"&gt;先来个结论哈，我们只在&lt;strong&gt;整体行程难度不大的&lt;/strong&gt;旧金山湾区大农村试了下，FSD表现出色，在跟车、起步、刹停这些细节上都很丝滑，而最让人惊喜的，是加了语音助手Grok后，特斯拉的语音交互体验一下提升了好几档。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;来，挨个说说。&lt;/p&gt;&lt;p&gt;一上车我就发现，之前的FSD是需要脚踩刹车，长按确认才能开，而现在V14变成只要轻按一下就出发，非常无感。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555222.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;具体功能上，&lt;strong&gt;这次最大的进步就是可以做到车位到车位，解决了最后一百米的问题。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在地图选取一个停车场作为终点，它会到了附近后，自动找一个车位停下，这里你也可以选择停到路边或者车道上。但现在它还不支持自定义车位，官方说是后面会更新这个。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555340.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;其他车的智驾一般最多是3种超车策略可选，而FSD V14多到有5种，从最慢的Sloth，图标是这个树懒，到最激进的Mad Max。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555566.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555815.png?imageView2/2/w/500/format/png" alt="500"&gt;几种模式之间区别非常明显，特别是Mad Max，见到慢车就要超，一点都忍不了那种。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555192.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而且它能识别一些减速带，就是识别率不算很高，有些矮一点的就没看见。我还试了一段坑洼路，发现它对小坑就比较难识别到。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555805.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555216.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;FSD整体开得都挺稳，即便是标准模式下，过弯速度都能干到70-80km/h，非常自信。各种开法也是一如既往熟练的像人，比如它会不跟导航右转再掉头，而是选择直接左转。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555352.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;只不过太有想法可能也不都是好事，我发现FSD经常不跟导航走，有一次我们大路走着好好的，它自己冲进小路想抄近道，然后绕一圈发现不行，又开回大道了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555860.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555399.png?imageView2/2/w/500/format/png" alt="500"&gt;该说不说，和国内比，美国路况确实简单多了，我们在这大农村里，没有地下车库，也没能遇到什么非常难的场景，没咋试出上限来。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;而这次最让我印象深刻的，是车机里Grok的联动。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Grok对语意的理解非常聪明，你可以说出三四个想去的地方，并且用比较模糊的表述，它都能规划出正确行程。&lt;/p&gt;&lt;p&gt;比如我说我想开车去一个湖边逛逛，Grok找到一个湖后，我说要去这个湖的东北角，它会告诉我这个湖东边是开车到不了的，然后自动定位选在了西边。这些都是我们在其他车上没体验过的。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555444.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555264.png?imageView2/2/w/500/format/png" alt="500"&gt;它还可以根据网上查到的信息，告诉你前面路肩施工拥堵，只不过信息准不准就另说了，反正我们是没看到施工。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555739.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;你愿意玩的话，甚至可以让它扮演猫娘嘿嘿嘿...&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074556455.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;不得不说，Grok狠狠加强了一波特斯拉的语音交互，但是，我觉得还是有两个地方可以优化一下。&lt;/p&gt;&lt;p&gt;一个是，特斯拉还是不给唤醒词，每次得要按着开关才能说话，对于副驾很不方便。另一个是，Grok只是和导航结合，还没有和智驾结合。比如切换车道、路边停车这些理想语音助手已经有的功能，Grok还做不到。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074556850.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;OK，再来看下特斯拉Robotaxi。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;特斯拉目前只在美国奥斯汀和旧金山湾区运营Robotaxi，奥斯汀是有真·无人的车，而旧金山这里还没拿到无人牌照，所以是有安全员的。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074556310.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555441.png?imageView2/2/w/500/format/png" alt="500"&gt;打车需要用到Tesla Robotaxi这个APP，来了才发现这个APP只上架了苹果的App Store，安卓的Play商店是没有的。只服务iPhone用户，可以，这很“美利坚”。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074556942.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;现在Robotaxi是24小时运营，但我们在郊区非常难打，我们之前叫了两三次都没有叫到。安全员说市区会好一点。&lt;/p&gt;&lt;p&gt;上车可以发现，它后排界面是专门定制的，有欢迎界面、地图、多媒体等，基本和别家Robotaxi差不多路数。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555349.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555497.png?imageView2/2/w/500/format/png" alt="500"&gt;前排就亲切多了，车机看起来和普通特斯拉没差别，但它把dock栏全换成多媒体了，你会发现这里是没有车辆设置的，所以我也没法看到这个FSD的版本。&lt;/p&gt;&lt;p&gt;不过从页面风格来看，Robotaxi应该就是FSD v14版本，毕竟这个版本也是号称能做到量产车和Robotaxi同源同架构。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074556511.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;同时，我的手机APP也能控制音乐和空调，有个蛮有意思的细节是，&lt;strong&gt;上车后我的手机自动通过蓝牙连接上了这辆车，所以我控制音乐响应速度非常快。&lt;/strong&gt;这个真没见过。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074556348.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;实际体验也开得不错，反正我是没感受出Robotaxi和自己开FSD的区别，加上主驾也有人，还都是Model Y，感觉是又试了一遍FSD。。。&lt;/p&gt;&lt;p&gt;脖子哥也问了这位安全员老哥，他说除非是自己要停车吃个饭啥的，已经记不起上一次接管是啥时候了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555923.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这也是特斯拉做Robotaxi的优势，别人都是定制车辆，塞了一堆昂贵的激光雷达传感器，就它用量产车的纯视觉路线，就已经能做到这个程度，有一说一是有两把刷子的。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555450.png?imageView2/2/w/500/format/png" alt="500"&gt;总的来说，老马对FSD吹得那么狠，这次体验下来虽然也有些小失误，但整体还是非常优秀的智驾。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;前段时间，英伟达机器人业务负责人更是评价道，FSD V14可能已经通过了图灵测试。最近马斯克又说，FSD以后不搞买断，只能订阅。看看，哥们多自信。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555167.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;所以理论上，当特斯拉FSD突破某个瓶颈后，依靠它的Robotaxi就可以迅速铺开，以后可以期待一波了。&lt;/p&gt;&lt;p&gt;不过这次比较可惜的是，咱没能体验特斯拉专为Robotaxi打造的CyberCab，特斯拉的人说这车已经在路测了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074556113.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;按照马斯克的说法，今年4月这车就会量产。老马呀老马，相信这个饼你今年能圆上的...吧？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;图片、资料来源&lt;/strong&gt;：&lt;/p&gt;&lt;p&gt;特斯拉官网、X、脖子哥实拍&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/01/16/20260116074555557.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;													&lt;/div&gt;
-						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Fri, 16 Jan 2026 03:39:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE1EWDU5UWJNem85ZV9EN0EzNTZCOTBpazFSb0hVYUVHWktkb0U1WV9FMlhmajVOQkFYOURtZmowaTFOSmJMQUdELVotZWRLZEtYLVlmVGczQ0IxWjA</guid></item><item><title>中国天眼FAST将升级成宇宙超级探针：周边将布局数十台中等口径天线 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098748.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;中国天眼将迎重大升级：周边将布局数十台中等口径天线&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-01-16 11:34:11  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1098748-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月16日消息，据央视新闻报道，为进一步巩固我国在中低频射电天文领域的领先地位，应对国际竞争，&lt;strong&gt;被誉为“中国天眼”的500米口径球面射电望远镜（FAST）正在规划一项重大升级。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;根据方案，&lt;span&gt;&lt;strong&gt;项目计划在FAST周边建设数十台中等口径天线，共同构成一个以FAST为核心的巨型综合孔径阵列。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这一设计将有效弥补单口径望远镜在空间分辨率上的局限，并显著提升观测灵敏度，实现综合性能的跨越式提升。&lt;/p&gt;
-&lt;p&gt;升级后的FAST将成为一个功能更强大的“宇宙超级探针”，&lt;strong&gt;为破解一系列天体物理前沿难题提供关键观测支持，包括探索快速射电暴的起源、理解“哈勃常数危机”以及寻找宇宙中“迷失的重子物质”等。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;FAST位于贵州省平塘县的喀斯特洼地中，反射面面积相当于约30个标准足球场，天顶覆盖角度为40°，工作频率覆盖70MHz至3GHz。&lt;/p&gt;
-&lt;p&gt;FAST由我国已故天文学家南仁东先生于1994年提出构想，历时22年建成，并于2020年1月通过国家验收，正式开放运行。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260116/bd8f75e2572048bfa88f6ce49f36098b.png" target="_blank"&gt;&lt;img alt="中国天眼FAST将升级成宇宙超级探针：周边将布局数十台中等口径天线" h="441" src="//img1.mydrivers.com/img/20260116/s_bd8f75e2572048bfa88f6ce49f36098b.png" w="589"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 03:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5oSF8wc0ljTXRBY1NXU1lULWxzMmJST2c2dl9SZzlzQ0drZW5kM0pEWVNRX2t0VFViOVAtdkl0dV9tZVk5d0RkdnVuLURYVkN5Q2ticXJQWXc</guid></item><item><title>电源附带白色线偏紫被投诉 联力回应：属实、免费换 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098747.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月16日消息，近日，&lt;strong&gt;知名机电品牌联力针对其去年推出的SX Platinum系列白金电源发布公告，回应了用户关于白色版电源模组线“颜色偏紫”的投诉。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;联力在1月13日的公告中承认，经内部调查确认，部分批次白色版SX Platinum电源随附的模组线确实带有明显的紫色色调。&lt;/p&gt;
-&lt;p&gt;在全白装机环境下，这种偏色会导致视觉效果不统一，显得十分突兀。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;对于那些喜欢更简洁统一外观的用户，联力表示很乐意提供一组纯白的替换线缆，以替换现有的线缆，用于替换存在偏色问题的旧线材。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;受影响的用户可通过联力官方提交申请，即可免费获得一套全新的纯白线材进行替换。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260116/81d5f362-26f6-40e6-bb52-697b5d226eaa.jpg" target="_blank"&gt;&lt;img alt="电源附带白色线偏紫被投诉 联力回应：属实、免费换" h="450" src="//img1.mydrivers.com/img/20260116/S81d5f362-26f6-40e6-bb52-697b5d226eaa.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 03:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1LTHFOOTZVSldyc2ZOcFhmdnRnSXlHUklYdDNKNlplRUgwTVJWX1ZpWHhLX0w3dkxBYjVxRTNSaUY2bkxyUlk4R1FKdGZRSV9CeXJtZXpxRU8</guid></item><item><title>连干8小时不停歇！人形机器人完成全球首例人机协作高空焊接作业 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098746.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月16日消息，近日，&lt;strong&gt;“开普勒人形机器人”官方宣布称完成了全球首例“人机协作”高空焊接作业&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260116/56641eb0-e39c-442e-b15d-55e1205098e9.png" target="_blank"&gt;&lt;img alt="连干8小时不停歇！人形机器人完成全球首例人机协作高空焊接作业" h="379" src="//img1.mydrivers.com/img/20260116/S56641eb0-e39c-442e-b15d-55e1205098e9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;操作员戴着VR头显在地面控制区自然抬手、转身、调整焊枪角度，20米高空的开普勒K2大黄蜂人形机器人以毫米级精度复刻每一个动作。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;30公斤级双臂稳稳托举焊枪，在连续8小时不间断作业中始终保持稳定姿态，整个过程无卡顿、无偏差，完成高难度高空焊接任务&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;img alt="连干8小时不停歇！人形机器人完成全球首例人机协作高空焊接作业" h="374" src="//img1.mydrivers.com/img/20260116/9cb3432b0b984cb2be45ba126bdad5a6.gif" w="540"&gt;&lt;/p&gt;
-&lt;p&gt;开普勒称其自研沉浸式全身遥操系统，是融合动作捕捉、低时延通信、力反馈等多技术，实现人类对机器人远程、沉浸、精准的1:1全身控制技术。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当操作员通过遥操设备做出动作，K2大黄蜂能在高空中同步响应；当焊接器械遇到阻力，力反馈系统实时传递压力感；当焊缝出现火花飞溅，VR头显同步呈现第一视角画面。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;img alt="连干8小时不停歇！人形机器人完成全球首例人机协作高空焊接作业" h="374" src="//img1.mydrivers.com/img/20260116/baf9d4fb29c24d0d9d807ae7dd90120d.gif" w="540"&gt;&lt;/p&gt;
-&lt;p&gt;而机器人在长续航作业周期内，高保真记录每一次操作的多模态运动数据（包括负载变化、路径偏差、力控调节等），通过真实世界与仿真环境的双向映射，让机器人在反复遥操中自主优化动作策略。&lt;/p&gt;
-&lt;p&gt;例如，&lt;strong&gt;首次焊接某类工件时需操作员精细调整，经过3-5次遥操训练后，机器人可自主适配工件公差范围，减少操作员干预频次，“越用越熟练”&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;此外，开普勒解决方案还支持最长2000公里超远距离实时遥操，技术人员无需亲赴现场，即可远程指导偏远工厂完成重型工件焊接、大型设备检修等复杂作业。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260116/06363609-dc06-4caf-81c4-f04bd40a94d7.jpg" target="_blank"&gt;&lt;img alt="连干8小时不停歇！人形机器人完成全球首例人机协作高空焊接作业" h="274" src="//img1.mydrivers.com/img/20260116/S06363609-dc06-4caf-81c4-f04bd40a94d7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;并且&lt;strong&gt;无需对现有厂房布局和产线结构进行大规模改造，仅需1:1同构的人形机器人本体+遥操设备+笔记本电脑，即可快速完成系统部署&lt;/strong&gt;。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;img alt="连干8小时不停歇！人形机器人完成全球首例人机协作高空焊接作业" h="374" src="//img1.mydrivers.com/img/20260116/82ab0f5dc65b47f893b0eb0007db9278.gif" w="540"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 03:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Pc2hBb2JyRUtwbHdfSThBXzNPbndTdU9ONVo1eUR4ZDVIWjVvYkd5TllPRldQQ3FleEt5RTBaNmtXQkxjZWM5bm1wOWdqQTVTWk1rN2pRdjc</guid></item><item><title>修电池白送顶配！七年前旧MacBook进苹果售后：免费换回M4 Max旗舰 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098740.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月16日消息，苹果的M4 Max芯片无疑是当前最强大的芯片之一，搭载此芯片的的MacBook Pro 16在京东上最低售价也要27999元。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;但令人没想到的是，近日一位2018款MacBook Pro的主人在寻求电池更换服务时，竟阴差阳错地获赠了一台最新款16英寸M4 Max MacBook Pro。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;故事始于otto-mate那台2018年款MacBook Pro收到了电池更换提示，他首先尝试了第三方维修店，报价200英镑，觉得太贵于是转向官方苹果店，员工报价45英镑，但需等待一周来订购所需零件。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260116/8992cd9c-633f-4576-8fde-82c7f21f03e5.png" target="_blank"&gt;&lt;img alt="修电池白送顶配！七年前旧MacBook进苹果售后：免费换回M4 Max旗舰" h="497" src="//img1.mydrivers.com/img/20260116/S8992cd9c-633f-4576-8fde-82c7f21f03e5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一周后，苹果店员工通知用户零件已到，但不幸的是，MacBook在维修过程中停止了工作，先后尝试了两套全新的维修零件，但电脑依然无法修复。&lt;/p&gt;
-&lt;p&gt;面对这一情况，苹果店员工提供了一个解决方案：为用户提供了一台规格与用户原有产品大致相等的机器。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;令人大跌眼镜的是，店员最终拿出的竟是搭载M4 Max芯片的顶级MacBook Pro 16。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;用户原本愿意为新电池支付245英镑，并希望花150英镑用于选择新的纳米玻璃屏，但最终苹果没有向他收取任何费用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;最终苹果免费提供了价值3249英镑的配置，很可能是配备了16核CPU、40核GPU、48GB统一内存和2TB SSD的顶级M4 Max，这个配置目前在国内的售价约为36099元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;有分析称，这可能是因为员工在维修过程中不小心损坏了这款机器，出于补偿心理及库存考量，选择了当时店内性能最强劲的现货进行赔偿。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260116/e062d089-7607-40e6-8aec-9400ad74628e.jpg" target="_blank"&gt;&lt;img alt="修电池白送顶配！七年前旧MacBook进苹果售后：免费换回M4 Max旗舰" h="450" src="//img1.mydrivers.com/img/20260116/Se062d089-7607-40e6-8aec-9400ad74628e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 03:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5KZW80dEdDeHVpc2sxdjdFOTAtVU1YT041V3hXVHlWWnlXczFjMXJsaUVOR2F4TE1QU1JWQ0NKdEJHWklpLTlJWmtsaW1EQ21XQzNkV2E0bmI</guid></item><item><title>英伟达悄然修改论文错误，数据中心铜需求重估 - 富途牛牛</title><link>https://news.futunn.com/post/67484136/nvidia-quietly-revises-paper-errors-reevaluation-of-copper-demand-in</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="content" class="main zh-cn"&gt;  &lt;div class="inner origin_content zh-cn"&gt;&lt;div class="ftAbstract"&gt;&lt;p&gt;①英伟达此前一份技术报告中对数据中心铜用量的预测被指责出错后，其已悄然修改，将传统机架一吉瓦的铜母线用量从50万吨下修至200吨；②这一修改可能意味着有关数据中心对铜用量的部分预期此前被大幅夸大；③周四，铜价从历史高位回落，一度下跌2%。&lt;/p&gt;&lt;/div&gt;&lt;p&gt;在媒体近日指出英伟达此前提出的铜需求预期值存在错误后， &lt;a isremark="0" class="nnstock" stockid="202597" stockcode="NVDA" stockname="英伟达" stocksymbol="NVDA.US" stockinfo="JTdCJTIyemgtY24lMjIlM0ElN0IlMjJzdG9ja25hbWUlMjIlM0ElMjIlMjQlRTglOEIlQjElRTQlQkMlOUYlRTglQkUlQkUoTlZEQS5VUyklMjQlMjIlMkMlMjJsYW5nJTIyJTNBJTIyemgtY24lMjIlN0QlMkMlMjJ6aC1oayUyMiUzQSU3QiUyMnN0b2NrbmFtZSUyMiUzQSUyMiUyNCVFOCU4QiVCMSVFNSU4MSU4OSVFOSU4MSU5NChOVkRBLlVTKSUyNCUyMiUyQyUyMmxhbmclMjIlM0ElMjJ6aC1oayUyMiU3RCUyQyUyMmVuLXVzJTIyJTNBJTdCJTIyc3RvY2tuYW1lJTIyJTNBJTIyJTI0TlZJRElBKE5WREEuVVMpJTI0JTIyJTJDJTIybGFuZyUyMiUzQSUyMmVuLXVzJTIyJTdEJTJDJTIyamElMjIlM0ElN0IlMjJzdG9ja25hbWUlMjIlM0ElMjIlMjQlRTMlODIlQTglRTMlODMlOEMlRTMlODMlOTMlRTMlODMlODclRTMlODIlQTMlRTMlODIlQTIoTlZEQS5VUyklMjQlMjIlMkMlMjJsYW5nJTIyJTNBJTIyamElMjIlN0QlN0Q=" href="https://www.futunn.com/stock/NVDA-US" markettype="5" relatedsource="1" instrumenttypev2="3" subinstrumenttypev2="3002" symbol="NVDA.US" oldsource="www.futunn.com/stock/NVDA-US"&gt;$英伟达 (NVDA.US)$&lt;/a&gt; 方面已悄然修改该数据，外界对人工智能数据中心的铜需求可能需要重估。&lt;/p&gt;&lt;p&gt;据英伟达官网去年刊登的一份技术论文指出，一个容量在一吉瓦的传统数据中心机架，需要高达50万吨铜母线，这引起外界对未来铜的供需形势大为担忧。&lt;/p&gt;&lt;p&gt;&lt;img class="boundary-pic" loading="lazy" src="https://record.futunn.com/news-editor-imgs/20260116/public/17685778475706225293902.png?imageMogr2/quality/minsize/1/ignore-error/1/format/webp"&gt;不过，近期有细心的观察者发现，该论文的结论存在明显的计算错误，实际上一吉瓦数据中心仅需要200多吨铜，差不多相当于50万磅，可能是该论文用错了单位。&lt;/p&gt;&lt;p class="ftImgannotation"&gt;注：修改前论文中有关铜需求的表述&lt;/p&gt;&lt;p&gt;而英伟达目前已经修正了这一错误，将论文中的50万吨修改为200,000千克，即200吨。&lt;/p&gt;&lt;p&gt;这意味着此前外界一些关于数据中心将导致铜陷入严重短缺的预期过于激进。&lt;/p&gt;&lt;p&gt;不过，新能源、人工智能以及建筑领域对铜的需求回升仍可能将继续支持铜市场的繁荣。&lt;/p&gt;&lt;p&gt;周四，铜期货价格从历史高位回落，伦交所价格一度下跌2%至每吨13,033美元。高盛指出，铜价可能即将迎来大幅回调，原因在于其已进入供应过剩。&lt;/p&gt;&lt;p&gt;高盛最新报告指出，近几个月来，铜市场基本面一直在恶化，全球库存持续上升，废铜供应增加，而需求则低于预期。最近的上涨主要受投机性资金流入推动。&lt;/p&gt;&lt;p&gt;高盛分析师们还警告，铜价上涨的大部分已经过去，铜价越来越容易出现回调。他们预计铜价将出现更大幅度的下跌，在今年底跌至每吨11000美元。&lt;/p&gt;&lt;p&gt;宏观方面来看，2025年第四季度，中国的铜需求增长仍低于预期，全球电动车销量疲软也压抑了工业对铜的需求。此外，铜的高价也将迫使电动汽车行业从铜转向铝。此外，特朗普政府决定暂缓对关键矿产进口征收关税，也可能导致铜的溢价收窄。&lt;/p&gt;&lt;p&gt;但高盛指出，由于围绕铜关税的不确定性仍然存在，高价可能在今年第一季度维持在每吨约13,000美元的高位。&lt;/p&gt;&lt;p&gt;&lt;img class="nnemotion editor-emotion" nnemotionid="87" data-src="https://emoticon.futunn.com/small_emoticon/v2_240316/80px/087.png?imageMogr2/quality/minsize/1/ignore-error/1/format/webp" alt="webp" ftsrcwh="80x80"&gt;&lt;span&gt;想选股、想诊股？想知持仓机会同风险？关于投资的一切问题，&lt;/span&gt;&lt;a href="futunn://url/https%3A%2F%2Fchat-ai.futunn.com%2F"&gt;&lt;span&gt;开口问牛牛AI就得啦！&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p class="ftEditor"&gt;编辑/KOKO&lt;/p&gt;&lt;/div&gt; &lt;p class="copyright-wrap"&gt;&lt;/p&gt;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>富途牛牛</author><pubDate>Fri, 16 Jan 2026 03:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiqgFBVV95cUxQNjl4UGZ4b2MwX1JFeXZrNUxsTlI0UTFSNjFZeDlCMERtRXNyWXY1dHFXbVFycWVrcTRzNEtBSUdkOWxZVUoyUm9LMUI1V3RQdmppYWZZMWVydWlnZUJiZzk2SDg4SzNQWW5nQ2IxVEpnOWs2bEoyTllwSEZkOHVXQXBkbmFkVF9PUEE2QlZ3X3BJYVJDUXRLRkM0Q05heEFWQVB5bkNJamt1Zw</guid></item><item><title>物理AI专利竞争力：中企包揽前三 - 日经中文网</title><link>https://cn.nikkei.com/industry/itelectric-appliance/61099-2026-01-16-10-29-52.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="newsText fix"&gt;
-
-&lt;table border="0"&gt;&lt;colgroup&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src="/images/2026/01/0116/1010-06-3-L.jpg" loading="lazy" data-path="local-images:/2026/01/0116/1010-06-3-L.jpg"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;span&gt;&lt;strong&gt;中国进行的人形机器人拳击比赛（2025年8月，北京市）&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;       &lt;/p&gt;
-&lt;p&gt;      日经旗下周刊NIKKEI BUSINESS在美国知识产权信息公司LexisNexis的协助下，分析了将人行机器人等机械与人工智能（AI）融合的“物理AI”相关领域的专利竞争力。按专利申请国家和地区的综合实力排名，中国位居世界第一，美国以微弱差距紧随其后。&lt;/p&gt;
-&lt;p&gt;  &lt;/p&gt;
-
-&lt;p&gt;     &lt;/p&gt;
-&lt;p&gt;      韩国虽有部分企业进入排行榜前列，但整体实力与中美仍有差距，之后是日本。随着日本长期领先的机械等技术竞争主战场转向AI，日本国内企业被迫采取新的应对措施。&lt;/p&gt;
-&lt;p&gt;  &lt;/p&gt;
-&lt;p&gt;      该调查以与“机器人技术”、“机器学习”、“AI”相关的有效专利为基础，综合考量专利数量与质量，作为总资产价值计算出“综合得分”。&lt;/p&gt;
-&lt;p&gt;  &lt;/p&gt;
-&lt;p&gt;      从企业和机构来看，综合得分前三位由百度（Baidu）、华为（Huawei）和腾讯控股（Tencent）等中国IT大企业包揽。中国保险大企业中国平安保险凭借专利数量的优势位列第六。&lt;/p&gt;
-&lt;p&gt;  &lt;/p&gt;
-&lt;p&gt;      中国企业与同样进入综合实力前列的美国英特尔、英伟达、Alphabet相比，在专利质量方面仍有差距。但据称，华为已接近美国企业的水平。&lt;/p&gt;
-&lt;p&gt;  &lt;/p&gt;
-&lt;p&gt;      日本企业中排名最高的是第13位的发那科。&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;      &lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;strong&gt;版权声明：日本经济新闻社版权所有，未经授权不得转载或部分复制，违者必究。&lt;/strong&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>日经中文网</author><pubDate>Fri, 16 Jan 2026 02:51:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiigFBVV95cUxPeDJwTUVYanZpNjdwc0E3VjRnOHVMc1pDNWlzUzNCNEVFYmc0NlZaMXdvQ3RRdDhLTnFEMDVxTk1TaWhiaUFkUVc3anR0OUhvTENXWk9sTlJNNnRQS2FNdXZrcmVRbGRwOVlfWTFuOVBwRFk4V2hGbml4VlVnMGZvSmxaRTEydENDRHc</guid></item><item><title>马斯克网红前女友起诉xAI：指控Grok生成色情内容且拒绝删除 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098739.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月16日消息，据媒体报道，&lt;strong&gt;近日，马斯克的网红前女友阿什莉·圣克莱尔正式起诉xAI。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;她指控马斯克旗下聊天机器人Grok未经许可生成并传播她的色情露骨图像，构成骚扰。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;她曾要求删除但未获处理，但反遭X平台取消变现资格。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260116/d74118d9-cf91-4e4b-9293-391dcf509506.jpg" target="_blank"&gt;&lt;img alt="马斯克网红前女友起诉xAI：指控Grok生成色情内容且拒绝删除" h="338" src="//img1.mydrivers.com/img/20260116/Sd74118d9-cf91-4e4b-9293-391dcf509506.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;值得注意的是，在她提起诉讼之际，全球多国政府和监管机构正加强对Grok图像生成技术的审查。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;xAI昨日公告称，将对Grok采取限制措施，禁止该功能生成真人裸露图像。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;X平台安全团队表示，已实施技术措施，防止Grok账号允许编辑真人穿着比基尼等暴露服装的图像，此项限制适用于所有用户，包括付费订阅用户。&lt;/p&gt;
-&lt;p&gt;公开资料显示，2025年2月，阿什莉·圣克莱尔在X公开发文，自己于2024年9月诞下一名男婴，并声称孩子的父亲为马斯克。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;而该声明首次将马斯克的子女数量推至13人，引发媒体广泛报道。&lt;/strong&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 02:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5INzVoSk9FQjNQZlNSblpac1NGNEhQZ3BnVEtyU1pOOTBXSG5MaHpwdG5TWXNhWjNvRHM0VHUwdEE4N0FCd2c3ZGx4WmFsak1mQjdwQTVkNGU</guid></item><item><title>疑借用代码 韩国多款AI模型被指与中国模型相似 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098737.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月16日消息，韩国政府去年6月启动的人工智能（AI）基础模型竞赛近期深陷“技术独立性”争议。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;该赛事旨在打造完全由韩国技术研发的AI模型，计划2027年前选出两款性能可与国际领先水平比肩的本土产品&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;但目前5家入围团队中，已有3家被爆使用外国开源组件，其中多款与中国开源模型高度相似。&lt;/p&gt;
-&lt;p&gt;未进入五强的本土竞争企业Sionic AI首席执行官在社交媒体公开质疑&lt;span&gt;&lt;strong&gt;Upstage的AI模型部分组件与中国智谱AI开源模型雷同，且代码中保留了智谱AI的版权标记，直指其“将疑似中国模型微调版本提交国家项目”&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
-&lt;p&gt;争议发酵后，其他入围企业也受到更严格审视，报道披露，Naver的视觉和音频编码器被指与阿里巴巴及OpenAI产品相似；SK电讯的推理代码结构被怀疑与DeepSeek相近。&lt;/p&gt;
-&lt;p&gt;Naver回应称，&lt;strong&gt;HyperCLOVA X的核心韩语处理模块为100%自主研发，仅基础架构参考开源社区通用标准，且强调“相似性源于行业共识，并非借用特定模型代码”&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;三星和首尔大学均表示“基于开源协议（如 Apache 2.0）使用通用代码，符合合规要求”，否认“未经授权借用”。&lt;/p&gt;
-&lt;p&gt;然而技术审计机构指出，&lt;strong&gt;行业通用框架（如Transformer）的相似性通常在30%-50%，而此次涉事模型的“专属优化逻辑”重合度超80%，“唯一合理的解释是直接复用或小幅修改中国模型代码”&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;基于舆论影响，韩国科技部目前已启动对本土AI模型研发合规性的专项审查，但同时强调“支持企业追赶全球AI技术进度”。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260116/44ac9af233594ae3b1097a50dba7138c.jpg" target="_blank"&gt;&lt;img alt="疑借用代码 韩国多款AI模型被指与中国模型相似" h="315" src="//img1.mydrivers.com/img/20260116/s_44ac9af233594ae3b1097a50dba7138c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 02:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0wcFdUNFFjazBoMGs5QmdFZFRsQVdaNFFOWmpwVFVfSFBQRUZnOHZvcndyOU05b2JQdUE3VmlPSHMxaHYwSmRpUEk2UGhOVmhjdUNubWlVYk4</guid></item><item><title>2亿美元！Tom Lee旗下“以太坊第一财库”投资“油管第一网红” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3763426</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 16 Jan 2026 02:44:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9QaUdLRlFKVEx6VjJqdjhUeG1nVExPcnZDamlXcUJZN1Y1S0ZWdWpxS1dZdURzNy1kamFGeExUd2pnaUJqcWhWaDlQMUFqSGk3dy1r</guid></item><item><title>一图看懂新能源车废旧电池回收新规 动力电池将有数字身份证 - 驱动之家</title><link>https://news.mydrivers.com/1/1098/1098735.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月16日消息，据“工信微报”公众号消息，今天，工业和信息化部、国家发展改革委等六部门联合发布《新能源汽车废旧动力电池回收和综合利用管理暂行办法》，自2026年4月1日起施行。&lt;/p&gt;
-&lt;p&gt;《管理办法》提到，随着销售使用的新能源汽车动力电池容量衰减步入退役期，废旧动力电池产生量不断增长，未来我国将迎来动力电池规模化退役阶段。&lt;/p&gt;
-&lt;p&gt;据有关研究机构测算，&lt;strong&gt;2030年当年的废旧动力电池产生量将超过100万吨。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260116/45f893a6ac7d4ce697630456b0d99f97.jpg" target="_blank"&gt;&lt;img alt="一图看懂新能源车废旧电池回收新规 动力电池将有数字身份证" h="400" src="//img1.mydrivers.com/img/20260116/s_45f893a6ac7d4ce697630456b0d99f97.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;《管理办法》突出全渠道、全链条、全生命周期三大特点。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在全渠道方面，抓好电池生产、车辆报废、换电运营、维修更换等各类废旧动力电池产生源头的规范管理，重点设计“车电一体报废”等制度，防止出现废旧动力电池流向难以掌握的情况。&lt;/p&gt;
-&lt;p&gt;在全链条方面，明确电池生产、销售、维修、更换、拆解、回收、综合利用各环节各类主体责任义务。&lt;/p&gt;
-&lt;p&gt;在全生命周期方面，加强信息溯源管理，搭建全国新能源汽车动力电池溯源信息平台，&lt;span&gt;&lt;strong&gt;建立新能源汽车动力电池数字身份证管理制度，明确动力电池编码、信息报送等要求，运用数字化技术加强动力电池流向监测。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;据了解，&lt;span&gt;&lt;strong&gt;数字身份证包括新能源汽车动力电池产品类别、产品构成、报废回收等必要信息，&lt;/strong&gt;&lt;/span&gt;具体办法另行规定。&lt;/p&gt;
-&lt;p&gt;在监管方面，对未按要求交售废旧动力电池、不履行回收责任、违反编码和信息报送要求等行为，设定了责令改正、警告、罚款等行政处罚措施，并明确了行政处罚的实施主体，增强制度的刚性约束。&lt;/p&gt;
-&lt;p&gt;《管理办法》为加强动力电池回收利用管理提供了法律依据，将有效规范各环节参与主体行为。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260116/2aca512370b54c1fb9ffd0f5b3d2eb8a.jpg" target="_blank"&gt;&lt;img alt="一图看懂新能源车废旧电池回收新规 动力电池将有数字身份证" h="10058" src="//img1.mydrivers.com/img/20260116/s_2aca512370b54c1fb9ffd0f5b3d2eb8a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 02:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5OdlZySzNTU0Y1SEpiczR2Y0VyVFRwYi1aT0VMTW42azh6akNlQzVtU3FzSk15Y1JTdFo1SVQzVEpObFdpNEwtTWVUQ1RFdjNBZHdWRGQzTko</guid></item><item><title>六部门：报废新能源汽车时必须“车电一体” - 财联社</title><link>https://www.cls.cn/detail/2259891</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;财联社1月16日讯，工业和信息化部等6部门16日联合发布《新能源汽车废旧动力电池回收和综合利用管理暂行办法》，遵循“全渠道、全链条、全生命周期”管理思路，自2026年4月1日起施行。&lt;/p&gt;
-&lt;p&gt;全渠道抓好电池生产、车辆报废、换电运营、维修更换等各类废旧动力电池产生源头的规范管理，&lt;strong&gt;管理办法重点设计“车电一体报废”等制度，&lt;/strong&gt;明确“报废新能源汽车，动力电池缺失的，应当认定为车辆缺失，具体办法另行规定”，从而防止出现废旧动力电池流向难以掌握的情况。&lt;/p&gt;
-&lt;p&gt;聚焦全生命周期加强信息溯源管理，管理办法提出，建立全国新能源汽车动力电池溯源信息平台，建立新能源汽车动力电池数字身份证管理制度，明确动力电池编码、信息报送等要求，运用数字化技术加强动力电池流向监测。&lt;/p&gt;
-&lt;p&gt;与此同时，管理办法对未按要求交售废旧动力电池、不履行回收责任、违反编码和信息报送要求等行为，设定了责令改正、警告、罚款等行政处罚措施，并明确了行政处罚的实施主体，增强制度的刚性约束。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;工信部等六部门联合印发《新能源汽车废旧动力电池回收和综合利用管理暂行办法》&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;为加强新能源汽车废旧动力电池回收和综合利用全链条监督管理，构建规范、安全、高效回收利用体系，工业和信息化部、国家发展改革委、生态环境部、交通运输部、商务部、市场监管总局等六部门近日联合印发《新能源汽车废旧动力电池回收和综合利用管理暂行办法》（以下简称《管理办法》）。&lt;/p&gt;
-&lt;p&gt;近年来，我国新能源汽车产业快速发展，产销量持续攀升。2025年，新能源汽车产销量分别为1662.6万辆、1649万辆，同比分别增长29%和28.2%。随着销售使用的新能源汽车动力电池容量衰减步入退役期，废旧动力电池产生量不断增长，未来我国将迎来动力电池规模化退役阶段。据有关研究机构测算，2030年当年的废旧动力电池产生量将超过100万吨。做好废旧动力电池回收利用工作，关系生态环境保护，关系人民群众生命财产安全，也关系到我国新能源汽车和动力电池产业高质量发展。党中央、国务院高度重视废旧动力电池回收利用工作，2025年2月，国务院办公厅印发了《健全新能源汽车动力电池回收利用体系行动方案》（以下简称《行动方案》），要求加快制定相关法规规章，用法治化手段规范回收利用。&lt;/p&gt;
-&lt;p&gt;《管理办法》是落实《行动方案》的重要举措，坚持遵循“全渠道、全链条、全生命周期”管理的基本思路。一是全渠道抓好电池生产、车辆报废、换电运营、维修更换等各类废旧动力电池产生源头的规范管理，重点设计“车电一体报废”等制度，防止出现废旧动力电池流向难以掌握的情况。二是全链条明确电池生产、销售、维修、更换、拆解、回收、综合利用各环节各类主体责任义务。三是全生命周期加强信息溯源管理，搭建全国新能源汽车动力电池溯源信息平台，建立新能源汽车动力电池数字身份证管理制度，明确动力电池编码、信息报送等要求，运用数字化技术加强动力电池流向监测。四是强化监管措施，对未按要求交售废旧动力电池、不履行回收责任、违反编码和信息报送要求等行为，设定了责令改正、警告、罚款等行政处罚措施，并明确了行政处罚的实施主体，增强制度的刚性约束。&lt;/p&gt;
-&lt;p&gt;《管理办法》为加强动力电池回收利用管理提供了法律依据，将有效规范各环节参与主体行为。下一步，工业和信息化部将会同国务院有关部门做好《管理办法》宣贯和实施工作，营造行业规范发展的良好氛围，加快健全新能源汽车动力电池回收利用体系。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;新能源汽车废旧动力电池回收和综合利用管理暂行办法&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;关于印发《民爆行业落实〈国家智能制造标准体系建设指南〉实施方案》的通知&lt;/p&gt;
-&lt;p&gt;（2025年12月31日中华人民共和国工业和信息化部、国家发展改革委、生态环境部、交通运输部、商务部、市场监管总局令第73号公布，自2026年4月1日起施行。）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第一章 总则&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第一条 为了加强新能源汽车废旧动力电池（以下简称废旧动力电池）回收和综合利用管理，促进资源循环利用，保护和改善环境，根据《中华人民共和国循环经济促进法》《中华人民共和国固体废物污染环境防治法》等法律、行政法规，制定本办法。&lt;/p&gt;
-&lt;p&gt;第二条 在中华人民共和国境内开展废旧动力电池回收、综合利用以及相关活动，应当遵守本办法。&lt;/p&gt;
-&lt;p&gt;第三条 工业和信息化部负责制定废旧动力电池回收和综合利用管理政策，统筹协调全国废旧动力电池回收和综合利用体系建设和相关监督管理。国家发展改革委、生态环境部、交通运输部、商务部、市场监管总局等部门按照职责分工负责废旧动力电池回收和综合利用相关监督管理。&lt;/p&gt;
-&lt;p&gt;县级以上地方人民政府工业和信息化、发展改革、生态环境、交通运输、商务、市场监督管理等部门按照职责分工负责本行政区域内废旧动力电池回收和综合利用相关监督管理。&lt;/p&gt;
-&lt;p&gt;第四条 工业和信息化部会同国务院有关部门建立全国新能源汽车动力电池溯源信息平台（以下简称信息平台），推进新能源汽车动力电池生产、销售、维修、更换、拆解、回收、综合利用等全生命周期流向监控和信息化追溯。&lt;/p&gt;
-&lt;p&gt;第五条 国家建立和完善废旧动力电池综合利用标准体系，支持废旧动力电池综合利用新技术、新工艺和新设备的示范、推广与应用，鼓励中介机构、学会等社会组织开展废旧动力电池综合利用宣传和咨询服务。&lt;/p&gt;
-&lt;p&gt;第六条 从事废旧动力电池回收、综合利用以及相关活动，应当按照法律、行政法规和强制性标准的规定，全面落实安全和环保要求，保障生产安全，防止产生再次污染。&lt;/p&gt;
-&lt;p&gt;第七条 有关行业协会应当按照法律、行政法规和章程，加强行业自律，引导企业守法、诚信经营，履行社会责任。 &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第二章 新能源汽车动力电池生产与编码等&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第八条 生产或者进口在境内销售、使用的新能源汽车动力电池，应当优先采用标准化、易拆解的设计方案，使用无毒无害或者低毒低害以及便于回收利用的材料；不得设计使用国家禁止使用的有毒有害物质。&lt;/p&gt;
-&lt;p&gt;第九条 生产或者进口在境内销售、使用的新能源汽车动力电池的企业（以下统称动力电池企业）应当按照《汽车动力蓄电池编码规则》（GB/T 34014）的要求，对其生产或者进口在境内销售、使用的新能源汽车动力电池进行编码，在动力电池单体、模块、电池包上粘贴标识。&lt;/p&gt;
-&lt;p&gt;第十条 新能源汽车动力电池编码应当唯一、准确，标识应当清晰、可见、耐久且不易更换。&lt;/p&gt;
-&lt;p&gt;任何组织或者个人不得恶意损毁、伪造或者冒用新能源汽车动力电池编码及标识。&lt;/p&gt;
-&lt;p&gt;第十一条 动力电池企业应当向相关新能源汽车生产企业、机动车维修企业等提供新能源汽车动力电池编码和必要的拆解技术信息。&lt;/p&gt;
-&lt;p&gt;第十二条 国家建立新能源汽车动力电池数字身份证管理制度，数字身份证包括新能源汽车动力电池产品类别、产品构成、报废回收等必要信息，具体办法另行规定。&lt;/p&gt;
-&lt;p&gt;第十三条 新能源汽车生产企业应当在保障安全的前提下，使用易于维护与拆卸的新能源汽车动力电池固定、连接部件。&lt;/p&gt;
-&lt;p&gt;新能源汽车生产企业应当按照国家有关规定及时有效公开汽车维修技术信息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第三章 废旧动力电池回收&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第十四条 动力电池企业应当对其生产或者进口在境内销售、使用的新能源汽车动力电池承担回收责任，履行以下回收义务，但交售给新能源汽车生产企业的新能源汽车动力电池除外：&lt;/p&gt;
-&lt;p&gt;（一）在销售新能源汽车动力电池的省级行政区域自行或者委托设立与销售量相匹配的回收服务网点，提供废旧动力电池回收服务；&lt;/p&gt;
-&lt;p&gt;（二）在官方网站或者互联网应用程序等渠道的显著位置公布并及时更新回收服务网点地址、联系方式以及回收提示性信息；&lt;/p&gt;
-&lt;p&gt;（三）不得拒绝接收从事动力电池租用、换电等经营服务的企业（以下统称电池换电服务企业）、机动车维修企业等移交的应当由动力电池企业负责回收的废旧动力电池。&lt;/p&gt;
-&lt;p&gt;第十五条 新能源汽车生产企业应当对其装车并在境内销售、使用的新能源汽车动力电池承担回收责任，履行以下回收义务：&lt;/p&gt;
-&lt;p&gt;（一）在销售新能源汽车的地市级行政区域自行或者委托设立与销售量相匹配的回收服务网点，提供废旧动力电池回收服务；&lt;/p&gt;
-&lt;p&gt;（二）在官方网站或者互联网应用程序等渠道的显著位置公布并及时更新回收服务网点地址、联系方式以及回收提示性信息；&lt;/p&gt;
-&lt;p&gt;（三）在官方网站或者互联网应用程序等渠道的显著位置公布并及时更新新能源汽车动力电池维修、报废、回收等相关程序，在新能源汽车动力电池达到建议报废条件时，及时通过车载信息系统或者售后服务渠道等告知新能源汽车用户回收程序和要求；&lt;/p&gt;
-&lt;p&gt;（四）不得拒绝接收机动车维修企业、报废机动车回收拆解企业等移交的应当由新能源汽车生产企业负责回收的废旧动力电池。&lt;/p&gt;
-&lt;p&gt;第十六条 回收服务网点的选址、场地建设、设施设备以及作业，应当符合城乡建设规划、环境保护、安全生产等法律、行政法规和强制性标准的规定。&lt;/p&gt;
-&lt;p&gt;鼓励动力电池企业、新能源汽车生产企业按照《车用动力电池回收利用管理规范第2部分：回收服务网点》（GB/T 38698.2）的要求建设回收服务网点。&lt;/p&gt;
-&lt;p&gt;第十七条 动力电池企业、新能源汽车生产企业分立、合并的，由继续从事新能源汽车动力电池、新能源汽车生产经营活动的企业承担本办法第十四条、第十五条规定的回收责任；法律、行政法规另有规定的，从其规定。&lt;/p&gt;
-&lt;p&gt;动力电池企业、新能源汽车生产企业终止的，应当在终止前对废旧动力电池回收作出妥善安排。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第四章 废旧动力电池综合利用&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第十八条 对废旧动力电池进行综合利用，应当符合资源综合利用、环境保护、安全生产等法律、行政法规和强制性标准的规定。&lt;/p&gt;
-&lt;p&gt;未依法办理废旧动力电池综合利用建设项目投资核准或者备案手续，完成环境影响评价，建设配套的环境保护、安全等设施，并取得排污许可或者办理排污登记手续，不得从事废旧动力电池综合利用活动。&lt;/p&gt;
-&lt;p&gt;第十九条 动力电池企业、新能源汽车生产企业应当将本企业依据本办法第十四条、第十五条规定回收的废旧动力电池，交由依法设立的从事废旧动力电池综合利用的企业（以下简称综合利用企业）进行综合利用；具备综合利用条件的，也可以自行综合利用。&lt;/p&gt;
-&lt;p&gt;第二十条 电池换电服务企业、机动车维修企业、报废机动车回收拆解企业应当将本企业拆卸的废旧动力电池交由综合利用企业进行综合利用，或者交由动力电池企业、新能源汽车生产企业依法设立的回收服务网点回收。&lt;/p&gt;
-&lt;p&gt;第二十一条 报废机动车回收拆解企业应当依法回收、拆解新能源汽车。&lt;/p&gt;
-&lt;p&gt;报废新能源汽车，动力电池缺失的，应当认定为车辆缺失，具体办法另行规定。&lt;/p&gt;
-&lt;p&gt;第二十二条 任何组织或者个人不得将废旧动力电池直接或者加工后用于电动自行车以及法律、行政法规和强制性标准禁止使用的其他领域。&lt;/p&gt;
-&lt;p&gt;第二十三条 动力电池企业、新能源汽车生产企业对在研发、生产、检测等过程中产生的属于工业固体废物的废旧动力电池进行综合利用的，依据《中华人民共和国固体废物污染环境防治法》等法律、行政法规的规定执行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第五章 信息管理&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第二十四条 有关企业应当及时通过信息平台报送下列信息：&lt;/p&gt;
-&lt;p&gt;（一）新能源汽车生产企业、进口新能源汽车在境内销售的企业，应当在取得新能源汽车产品准入公告或者新能源汽车强制性产品认证后的6个月内，报送新能源汽车动力电池拆卸和必要的拆解等技术信息；&lt;/p&gt;
-&lt;p&gt;（二）新能源汽车生产企业、进口新能源汽车在境内销售的企业，应当在配发出厂合格证或者完成通关检验后的20日内，报送车辆类型、名称、品牌、型号、识别代码以及新能源汽车动力电池编码等信息；在车辆销售上牌后的40日内报送车辆销售日期等信息；在研制、生产、装车等过程中产生的废旧动力电池移交出库后的15日内报送出库信息；&lt;/p&gt;
-&lt;p&gt;（三）动力电池企业应当在研制、生产、返修等过程中产生的废旧动力电池移交出库后的15日内报送出库信息；&lt;/p&gt;
-&lt;p&gt;（四）电池换电服务企业应当在每月15日前，报送上月换电型新能源汽车动力电池末次更换信息；在换电运营过程中产生的废旧动力电池移交出库后的15日内报送出库信息；&lt;/p&gt;
-&lt;p&gt;（五）与新能源汽车生产企业合作的机动车维修企业应当在新能源汽车动力电池维修并更换后的15日内向新能源汽车生产企业报送更换信息，新能源汽车生产企业应当在新能源汽车动力电池更换后的40日内报送更换信息；未与新能源汽车生产企业合作的机动车维修企业应当在新能源汽车动力电池维修并更换后的40日内报送更换信息；&lt;/p&gt;
-&lt;p&gt;（六）动力电池企业、新能源汽车生产企业应当在设立、变更回收服务网点后的30日内报送回收服务网点信息；在回收废旧动力电池后的15日内报送入库信息；在废旧动力电池或者利用废旧动力电池中单体电池、电池组生产的电池产品移交出库后的15日内报送出库信息；&lt;/p&gt;
-&lt;p&gt;（七）综合利用企业应当在接收废旧动力电池后的30日内报送入库信息；在综合利用产品移交出库后的30日内报送出库信息；&lt;/p&gt;
-&lt;p&gt;（八）报废机动车回收拆解企业应当按照《报废机动车回收管理办法实施细则》有关规定报送车辆报废信息及拆卸的废旧动力电池出库信息。&lt;/p&gt;
-&lt;p&gt;前款所称出库信息、入库信息，包括新能源汽车动力电池编码、来源单位、去向单位等必要信息。&lt;/p&gt;
-&lt;p&gt;有关企业按照本条第一款要求报送相关信息时，应当检查新能源汽车动力电池编码是否完好，并对报送信息的真实性负责。&lt;/p&gt;
-&lt;p&gt;第二十五条 机动车维修企业、报废机动车回收拆解企业、综合利用企业可以通过信息平台查询新能源汽车动力电池拆卸、拆解等技术信息。&lt;/p&gt;
-&lt;p&gt;机动车维修企业、报废机动车回收拆解企业、综合利用企业应当确保查询的相关技术信息仅用于本企业拆卸、拆解相应废旧动力电池。&lt;/p&gt;
-&lt;p&gt;第二十六条 信息平台开展数据处理活动，应当依据《中华人民共和国网络安全法》《中华人民共和国数据安全法》等法律、行政法规的规定，建立健全相关管理制度，采取技术措施和其他必要措施，履行网络安全、数据安全保护义务。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第六章 监督管理&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第二十七条 县级以上人民政府工业和信息化、发展改革、生态环境、交通运输、商务、市场监督管理等部门应当加强对废旧动力电池回收、综合利用以及相关活动的监督检查，有权采取以下措施：&lt;/p&gt;
-&lt;p&gt;（一）进入废旧动力电池回收、综合利用以及相关活动场所进行现场检查；&lt;/p&gt;
-&lt;p&gt;（二）进入涉嫌违法的废旧动力电池回收、综合利用以及相关活动场所进行调查取证；&lt;/p&gt;
-&lt;p&gt;（三）询问当事人和与监督检查事项有关的单位、个人，要求其说明情况，或者要求其按照指定的方式报送与被监督检查事项有关的文件和资料；&lt;/p&gt;
-&lt;p&gt;（四）查阅、复制与被监督检查事项有关的文件和资料；&lt;/p&gt;
-&lt;p&gt;（五）法律、行政法规规定的其他措施。&lt;/p&gt;
-&lt;p&gt;第二十八条 县级以上人民政府工业和信息化、发展改革、生态环境、交通运输、商务、市场监督管理等部门实施监督检查，应当严格执行法律、行政法规以及国务院关于严格规范涉企行政检查的规定要求，确保监督检查于法有据、严格规范、公正文明、精准高效。&lt;/p&gt;
-&lt;p&gt;第二十九条 县级以上人民政府工业和信息化、发展改革、生态环境、交通运输、商务、市场监督管理等部门在监督检查中应当相互配合；发现存在的违法行为应当由其他有关部门进行处理的，应当及时移送其他有关部门，接受移送的有关部门应当及时进行处理。&lt;/p&gt;
-&lt;p&gt;第三十条 县级以上人民政府工业和信息化、发展改革、生态环境、交通运输、商务、市场监督管理等部门及其工作人员对在监督检查过程中知悉的商业秘密、个人信息和个人隐私等依法负有保密义务。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第七章 法律责任&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第三十一条 违反本办法第八条规定，动力电池企业设计使用列入国家禁止使用名录的有毒有害物质的，由市场监督管理部门责令改正，依据《中华人民共和国循环经济促进法》的规定予以处罚。&lt;/p&gt;
-&lt;p&gt;第三十二条 违反本办法规定，有下列行为之一的，由县级以上地方人民政府工业和信息化主管部门责令改正；拒不改正的，处警告或者5万元以下的罚款：&lt;/p&gt;
-&lt;p&gt;（一）动力电池企业未按照本办法第九条、第十条规定，对新能源汽车动力电池进行编码、粘贴标识，或者恶意损毁、伪造、冒用新能源汽车动力电池编码及标识的；&lt;/p&gt;
-&lt;p&gt;（二）动力电池企业未按照本办法第十一条规定，提供新能源汽车动力电池编码和拆解技术信息的；&lt;/p&gt;
-&lt;p&gt;（三）动力电池企业、新能源汽车生产企业等不执行本办法第十二条规定的数字身份证有关管理制度的；&lt;/p&gt;
-&lt;p&gt;（四）动力电池企业、新能源汽车生产企业未按照本办法第十四条、第十五条规定，履行废旧动力电池回收责任的。&lt;/p&gt;
-&lt;p&gt;第三十三条 违反本办法第十三条第二款规定，新能源汽车生产企业未按照国家有关规定公开汽车维修技术信息的，由交通运输主管部门责令改正，依据《中华人民共和国大气污染防治法》等有关法律、行政法规、部门规章的规定予以处罚。&lt;/p&gt;
-&lt;p&gt;第三十四条 违反本办法第十八条规定，从事废旧动力电池综合利用活动，未依法办理废旧动力电池综合利用建设项目投资核准或者备案手续的，由发展改革部门责令改正，依据《企业投资项目核准和备案管理条例》等有关法律、行政法规、部门规章的规定予以处罚。&lt;/p&gt;
-&lt;p&gt;第三十五条 违反本办法规定，有下列行为之一的，由生态环境主管部门责令改正，依据《中华人民共和国环境保护法》《中华人民共和国大气污染防治法》《中华人民共和国水污染防治法》《中华人民共和国固体废物污染环境防治法》等法律、行政法规、部门规章的规定予以处罚：&lt;/p&gt;
-&lt;p&gt;（一）从事废旧动力电池综合利用活动，未按照本办法第十八条规定，完成环境影响评价、建设配套的环境保护设施、依法取得排污许可或者办理排污登记手续的；&lt;/p&gt;
-&lt;p&gt;（二）动力电池企业、新能源汽车生产企业未按照本办法第二十三条规定，利用、处置属于工业固体废物的废旧动力电池的；&lt;/p&gt;
-&lt;p&gt;（三）违反本办法规定的其他环境违法行为。&lt;/p&gt;
-&lt;p&gt;第三十六条 违反本办法第十九条、第二十条规定，动力电池企业、新能源汽车生产企业、电池换电服务企业将回收或者拆卸的废旧动力电池交由本办法第十九条、第二十条规定以外的组织或者个人回收、综合利用的，由县级以上地方人民政府工业和信息化主管部门责令改正；拒不改正的，处1万元以上3万元以下的罚款。&lt;/p&gt;
-&lt;p&gt;违反本办法第二十条规定，机动车维修企业、报废机动车回收拆解企业将拆卸的废旧动力电池交由本办法第二十条规定以外的组织或者个人回收、综合利用的，由县级以上地方人民政府交通运输、商务主管部门按照职责分工会同有关部门责令改正；拒不改正的，处1万元以上3万元以下的罚款；法律、行政法规、部门规章另有规定的，从其规定。&lt;/p&gt;
-&lt;p&gt;第三十七条 违反本办法第二十一条规定，报废机动车回收拆解企业违法回收、拆解报废新能源汽车的，由商务主管部门责令改正，依据《报废机动车回收管理办法》等法律、行政法规、部门规章的规定予以处罚。&lt;/p&gt;
-&lt;p&gt;第三十八条 违反本办法第二十二条规定，将废旧动力电池直接或者加工后用于电动自行车以及法律、行政法规和强制性标准禁止使用的其他领域的，由有关主管部门按照职责分工责令改正，依据《中华人民共和国产品质量法》等法律、行政法规、部门规章的规定予以处罚。&lt;/p&gt;
-&lt;p&gt;第三十九条 违反本办法规定，有下列行为之一的，由县级以上地方人民政府工业和信息化、发展改革、生态环境、交通运输、商务、市场监督管理等部门按照职责分工责令改正；拒不改正的，处警告或者3万元以下的罚款，对直接负责的主管人员和其他责任人员处1万元以下的罚款；法律、行政法规、部门规章另有规定的，从其规定：&lt;/p&gt;
-&lt;p&gt;（一）动力电池企业、新能源汽车生产企业、电池换电服务企业、机动车维修企业、报废机动车回收拆解企业、综合利用企业违反本办法第二十四条规定，拒不报送相关信息或者报送虚假信息的；&lt;/p&gt;
-&lt;p&gt;（二）机动车维修企业、报废机动车回收拆解企业、综合利用企业违反本办法第二十五条规定，将拆卸、拆解等技术信息用于本企业拆卸、拆解相应废旧动力电池之外用途的；&lt;/p&gt;
-&lt;p&gt;（三）动力电池企业、新能源汽车生产企业、电池换电服务企业、机动车维修企业、报废机动车回收拆解企业、综合利用企业拒绝、阻挠监督检查或者在接受监督检查时弄虚作假的。&lt;/p&gt;
-&lt;p&gt;第四十条 开展废旧动力电池综合利用以及相关活动，违反城乡规划、安全生产、消防管理等法律、行政法规和强制性标准的，由有关部门依据《中华人民共和国城乡规划法》《中华人民共和国安全生产法》《中华人民共和国消防法》等法律、行政法规、部门规章的规定予以处罚。&lt;/p&gt;
-&lt;p&gt;第四十一条 地方性法规、地方政府规章以及县级以上地方人民政府对本章规定的行政处罚的实施主体另有规定的，从其规定。&lt;/p&gt;
-&lt;p&gt;第四十二条 综合利用企业违反本办法规定，受到有关行政机关行政处罚的，两年内不得申报工业和信息化部新能源汽车废旧动力电池综合利用行业规范条件企业；已列入工业和信息化部新能源汽车废旧动力电池综合利用行业规范条件企业公告的，依法予以撤销。&lt;/p&gt;
-&lt;p&gt;第四十三条 动力电池企业、新能源汽车生产企业、电池换电服务企业、机动车维修企业、报废机动车回收拆解企业、综合利用企业违反本办法规定，构成犯罪的，依法追究刑事责任。&lt;/p&gt;
-&lt;p&gt;第四十四条 有关行政机关的工作人员违反本办法规定，滥用职权、玩忽职守、徇私舞弊的，依法给予处分；构成犯罪的，依法追究刑事责任。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第八章 附则&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第四十五条 本办法下列用语的含义：&lt;/p&gt;
-&lt;p&gt;（一）新能源汽车动力电池，是指为新能源汽车动力系统提供能量的蓄电池。&lt;/p&gt;
-&lt;p&gt;（二）废旧动力电池，是指在研发、生产、检测、装车、贮存、运输、使用、维修、车辆报废等过程中报废的失去原有使用价值的动力电池。&lt;/p&gt;
-&lt;p&gt;（三）废旧动力电池综合利用，是指对废旧动力电池进行拆解、破碎、分选、冶炼等处理，进行资源化利用的活动。&lt;/p&gt;
-&lt;p&gt;第四十六条 本办法所规定的“日”均为自然日。&lt;/p&gt;
-&lt;p&gt;第四十七条 进口新能源汽车在境内销售的企业开展废旧动力电池回收、综合利用以及相关活动，按照本办法有关新能源汽车生产企业的规定执行；本办法另有规定的，从其规定。&lt;/p&gt;
-&lt;p&gt;第四十八条 本办法施行前取得新能源汽车产品准入或者新能源汽车强制性产品认证，且相关新能源汽车产品仍在生产、销售的，应当在本办法施行后的6个月内，按照本办法规定的程序补充报送新能源汽车动力电池拆卸以及必要的拆解等技术信息。&lt;/p&gt;
-&lt;p&gt;第四十九条 废旧铅酸动力电池等属于危险废物的电池的回收、综合利用以及相关活动的管理，不适用本办法。&lt;/p&gt;
-&lt;p&gt;第五十条 本办法自2026年4月1日起施行。《新能源汽车动力蓄电池回收利用管理暂行办法》（工信部联节〔2018〕43号）、《新能源汽车动力蓄电池回收利用溯源管理暂行规定》（工业和信息化部公告2018年第35号）、《新能源汽车动力蓄电池回收服务网点建设和运营指南》（工业和信息化部公告2019年第46号）、《新能源汽车动力蓄电池梯次利用管理办法》（工信部联节〔2021〕114号）同时废止。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;三问+一图，读懂《新能源汽车废旧动力电池回收和综合利用管理暂行办法》&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;近日，工业和信息化部与国家发展改革委、生态环境部、交通运输部、商务部、市场监管总局联合公布《新能源汽车废旧动力电池回收和综合利用管理暂行办法》（工业和信息化部、国家发展和改革委员会、生态环境部、交通运输部、商务部、国家市场监督管理总局令第73号，以下简称《办法》）。为了更好地理解和执行《办法》，工业和信息化部产业政策与法规司负责同志对《办法》进行了解读。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;问&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;《办法》制定的背景是什么？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2018年以来，工业和信息化部先后会同有关部门联合印发《新能源汽车动力蓄电池回收利用管理暂行办法》《新能源汽车动力蓄电池回收利用溯源管理暂行规定》等文件，在鼓励引导废旧动力电池回收利用体系建设、加强溯源管理和综合利用等方面发挥了重要作用。近年来，随着新能源汽车产业快速发展，新能源汽车动力电池进入规模化退役阶段，需要进一步规范废旧动力电池回收和综合利用活动。党中央、国务院高度重视废旧动力电池回收和综合利用工作。2025年2月，国务院办公厅印发了《健全新能源汽车动力电池回收利用体系行动方案》（以下简称《行动方案》），要求加快制定相关法规规章，用法治化手段规范回收利用。为落实《行动方案》工作部署，加强废旧动力电池回收和综合利用管理，工业和信息化部会同有关部门制定了《办法》。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;问&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;《办法》制定过程中，主要开展了哪些工作？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在制定过程中，主要开展了以下工作：一是梳理现行有关法律法规和政策文件，聚焦行业发展中的突出问题，充分听取有关部门、企事业单位的意见，研究形成《办法（征求意见稿）》。二是多次书面征求国务院有关部门、地方工业和信息化主管部门、有关企业意见，并向社会公开征求意见。三是认真吸纳研究相关意见，形成《办法（草案）》。2025年10月30日，工业和信息化部部务会议审议通过了《办法（草案）》。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;问&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;《办法》的主要内容有哪些？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;《办法》坚持问题导向，聚焦废旧动力电池回收、综合利用以及相关活动，重点规定了以下内容：&lt;/p&gt;
-&lt;p&gt;（一）加强动力电池信息溯源管理&lt;/p&gt;
-&lt;p&gt;一是明确工业和信息化部会同国务院有关部门建立全国新能源汽车动力电池溯源信息平台，推进动力电池全生命周期的流向监控和信息化追溯。&lt;/p&gt;
-&lt;p&gt;二是规定动力电池企业应当按照有关国家标准，对其生产或者进口的动力电池进行编码并粘贴标识。&lt;/p&gt;
-&lt;p&gt;三是规定动力电池企业、新能源汽车生产企业等主体应当及时通过信息平台报送相关信息。&lt;/p&gt;
-&lt;p&gt;四是明确信息平台应当依法履行网络安全、数据安全保护义务。&lt;/p&gt;
-&lt;p&gt;（二）加强废旧动力电池回收管理&lt;/p&gt;
-&lt;p&gt;一是明确动力电池企业、新能源汽车生产企业应当承担的回收责任。&lt;/p&gt;
-&lt;p&gt;二是规定建设回收服务网点应当符合城乡建设规划、环境保护、安全生产等法律、行政法规和强制性标准的规定。&lt;/p&gt;
-&lt;p&gt;三是规定动力电池企业、新能源汽车生产企业、报废机动车回收拆解企业等主体，应当规范移交废旧动力电池。&lt;/p&gt;
-&lt;p&gt;（三）加强废旧动力电池综合利用管理&lt;/p&gt;
-&lt;p&gt;一是规定从事废旧动力电池综合利用活动，应当符合资源综合利用、环境保护、安全生产等法律法规，并办理项目核准、排污许可等手续。&lt;/p&gt;
-&lt;p&gt;二是禁止将废旧动力电池直接或者加工后用于法律、行政法规和强制性标准禁止使用的其他领域。&lt;/p&gt;
-&lt;p&gt;三是明确属于工业固体废物的废旧动力电池的处置利用，依据《中华人民共和国固体废物污染环境防治法》等法律、行政法规的规定执行。&lt;/p&gt;
-&lt;p&gt;（四）明确监督管理和法律责任&lt;/p&gt;
-&lt;p&gt;一是明确工业和信息化、发展改革等部门应当加强监督检查，严格落实国务院涉企行政检查的要求。&lt;/p&gt;
-&lt;p&gt;二是对违反动力电池编码要求、不履行回收责任、未按要求移交废旧动力电池，以及不履行信息报送义务等行为，设定了罚款等行政处罚，并明确了行政处罚的实施主体。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://img.cls.cn/images/20260116/miakb02X8t_900x15088.png" alt="image"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Fri, 16 Jan 2026 02:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBWNThad1phMXV6VmRsQ3dxeVVEZ29jeTNCUTNHWEMzYWZxOW5lYzhMYkRyZTc5YjdWQmxXcE9HMElxU2N2TVBmUw</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 16 Jan 2026 04:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5DQzRmSkhSdGpzeUVnSUpjTmtFMEVqRzhjNU1Bc1F5M2VRcWxpVHNPRXo3b2pVRTFmM1BDUDQ1QXc1aXRmNlIyenZiZFVXZGZxTXN4a1pmU1c</guid></item></channel></rss>
