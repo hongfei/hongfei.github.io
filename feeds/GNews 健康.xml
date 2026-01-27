@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>高蛋白饮食通过激活CG6415/AMT基因破坏线粒体稳态促进衰老的机制研究 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-1/20260128000215721.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于SHAP-UMAP监督聚类的MASLD亚群与CKD新发风险的精准分层研究 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-1/20260128000530663.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
+                    &lt;p&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;代谢功能障碍相关脂肪性肝病（MASLD）是心血管-肾脏-代谢（CKM）综合征的重要组成部分，其与新发慢性肾脏病（CKD）的关联日益受到关注。然而，MASLD患者群体存在显著的异质性，这种异质性对CKD发生风险的影响尚不明确。传统无监督聚类方法的结果往往存在重叠且难以解释。本研究旨在利用一种名为“监督聚类”的新型机器学习方法，结合SHAP（SHapley Additive exPlanations）值转换矩阵，探索MASLD的亚群划分，并评估各亚群与新发CKD的关联。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;研究方法&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究纳入了2006年在日本札幌一处诊所接受年度健康检查的12,168名受试者（男性/女性：7927/4241，平均年龄48岁），基线均无CKD。主要终点为10年随访期间新发CKD（定义为估算肾小球滤过率eGFR &amp;lt; 60 mL/min/1.73 m&lt;sup&gt;2&lt;/sup&gt;或尿蛋白阳性）。&lt;/p&gt;
+&lt;p&gt;研究的核心分析流程包括两大步骤：首先，利用所有可用数据（12,168样本 × 41个特征）进行监督聚类以识别独特亚群。具体而言，先使用CatBoost模型对SLD（脂肪性肝病）的原始分类进行预测，然后计算SHAP值，将原始特征矩阵转换为SHAP矩阵，以最大化簇的纯度。随后，比较多种降维技术（PCA、t-SNE、UMAP等）结合不同聚类算法（k-means、HDBSCAN、GMM）的效果。最终，基于轮廓系数等指标，确定最优方案为使用SHAP转换矩阵进行UMAP降维，再采用高斯混合模型进行聚类。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;研究结果&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.  MASLD亚群的识别与特征&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GMM分析将总人群划分为10个亚群，其中MASLD患者被清晰地分为3个亚群（集群5、6、7）。富集分析显示：&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;集群5（瘦型MASLD）&lt;/strong&gt;：以相对较低的体重指数（BMI）、腰围（WC）、血压以及较高的高密度脂蛋白胆固醇（HDL-C）为特征。&lt;/p&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;集群6（肥胖型MASLD）&lt;/strong&gt;：具有较高的BMI、WC、血压和甘油三酯（TG）水平。&lt;/p&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;集群7（高危肥胖型MASLD）&lt;/strong&gt;：在集群6的基础上，表现出更严重的肥胖指标、致动脉粥样硬化血脂谱（如低HDL-C、高小而密低密度脂蛋白胆固醇sdLDL-C）、更高的脂肪酸肝指数（FLI）以及高尿酸血症。&lt;/p&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;基于SHAP值的特征重要性分析进一步揭示，FLI和尿酸水平是预测高危集群7的关键因素。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.  MASLD亚群与新发CKD的风险关联&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Kaplan-Meier生存曲线分析显示，三个MASLD亚群的新发CKD累积发生率存在显著差异。集群5的风险最低，与部分非SLD人群相近；集群6和集群7的风险显著升高，且集群7的风险最高。&lt;/p&gt;
+&lt;p&gt;多变量Cox比例风险模型在校正了年龄、性别、eGFR、高血压、糖尿病和血脂异常后，与集群5相比，集群7发生CKD的风险比（HR）仍显著升高（HR 1.256, 95% CI 1.005–1.569）。即使进一步校正具体血脂指标，集群7的高风险依然存在。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.  高危亚群的预测与临床工具开发&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究人员构建了CatBoost模型来预测高危集群7，该模型表现出色（AUC = 0.984）。SHAP依赖图显示，BMI、WC、FLI、丙氨酸氨基转移酶（ALT）、血糖等因素对预测集群7的贡献呈单调递增趋势，而HDL-C和尿酸则呈现U型曲线效应，提示其影响的复杂性。&lt;/p&gt;
+&lt;p&gt;为了便于临床转化，研究还开发了一个列线图，整合了年龄、性别、是否属于集群7、糖尿病、高血压和基线eGFR，用于个体化预测患者1年、5年和10年的CKD无病概率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;讨论与结论&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;本研究首次成功应用SHAP-UMAP监督聚类技术，在MASLD人群中识别出具有不同CKD风险的临床相关亚型。研究结果表明，MASLD并非同质性疾病，其内部存在显著的异质性，特别是伴有肥胖、高FLI和高尿酸血症的亚群（集群7）是新发CKD的极高危群体。这提示对于MASLD患者的管理应采取精准分层策略，对该高危亚群需加强肾脏功能的监测与早期干预。FLI和血尿酸水平可作为识别这类高危个体的重要生物标志物。本研究为理解MASLD的异质性及其与CKD的复杂关系提供了新的视角，并为未来开展针对特定MASLD表型的精准预防和治疗研究奠定了基础。&lt;/p&gt;
+
+                    &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 27 Jan 2026 20:26:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE8tYU1jd05RMXB5VWtad3NCZFNwQjBCSmVIQzBGUjFaM1RpZ182dDRCcFUxQ21VZHRKRm5pZVA1SVg3SDVMcjgzLURPTTA1c0pZOENqLVlxTG9kVGRLN2dPVUNSR1ZQMVIxSHc</guid></item><item><title>高蛋白饮食通过激活CG6415/AMT基因破坏线粒体稳态促进衰老的机制研究 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-1/20260128000215721.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
                     &lt;p&gt;在当代社会，随着健康意识的提升和健身文化的流行，高蛋白饮食日益受到追捧。蛋白质作为生命活动的重要物质基础，在能量供应、免疫调节和骨骼生长等方面发挥着不可或替代的作用。然而，一些流行病学研究发现，长期高蛋白饮食可能会增加全因死亡风险，并与慢性肾脏病、2型糖尿病等年龄相关疾病的发病风险升高有关。这提示膳食蛋白与衰老之间存在着复杂的关系。尽管已有大量研究表明限制膳食蛋白可以促进长寿，但高蛋白饮食是否会反过来促进衰老，其背后的具体机制如何，尤其是在生命不同阶段的影响及其动态变化规律，仍有待深入探索。此外，蛋白质由20种氨基酸构成，每种氨基酸都拥有与衰老密切相关的多种生理功能，究竟是哪些氨基酸在高蛋白饮食影响衰老的过程中扮演了关键角色，也是悬而未决的科学问题。针对这一系列问题，哈尔滨医科大学公共卫生学院营养与食品卫生学科的研究团队在《Journal of Advanced Research》上发表了一项重要研究，系统揭示了高蛋白饮食促进衰老的分子机制。&lt;/p&gt;
 &lt;p&gt;为了回答这些科学问题，研究人员设计了一套严谨的实验方案。他们以果蝇为主要模型，设置了从5%到30%共6个不同蛋白质能量供给水平的饮食，系统观察了这些饮食对果蝇寿命的影响。通过多时间点（第18天和第48天）的转录组学和蛋白质组学分析，筛选出受高蛋白饮食持续影响的通路和关键基因。利用基因敲除和过表达的果蝇模型，验证了关键基因CG6415在高蛋白饮食影响衰老过程中的介导作用。基于基因敲除果蝇的组学数据洞察，在哺乳动物遗传背景中使用人胚胎肾293T细胞验证了CG6415的人类同源基因AMT影响衰老的机制。此外，通过分析高蛋白饮食对果蝇氨基酸谱的影响、单独补充20种氨基酸的寿命观察，以及利用CG6415基因敲除果蝇进行验证，识别出了在高蛋白饮食影响衰老过程中起关键作用的氨基酸。&lt;/p&gt;
 &lt;p&gt;研究结果揭示了一系列重要发现。首先，在5%到30%的膳食蛋白能量范围内，寿命与膳食蛋白之间存在倒U型关系。其中，10%蛋白质能量供给的饮食条件下果蝇寿命最长，而低于或高于此比例都会缩短寿命。多时间点多组学分析发现，甘氨酸、丝氨酸和苏氨酸代谢通路以及CG6415基因可以被不同比例的高蛋白饮食在多个生命阶段点激活。进一步机制研究表明，CG6415/AMT基因通过抑制氧化磷酸化，破坏线粒体稳态，随后激活p53-p21通路，从而促进衰老和应激诱导的损伤。特别值得注意的是，补充异亮氨酸可以部分模拟高蛋白饮食在调控CG6415介导的衰老中的作用。&lt;/p&gt;
@@ -157,7 +181,7 @@
 
                     &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
                 &lt;/div&gt;
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 27 Jan 2026 16:05:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE44NDFYelg4RmJrWEpraDh3SkktZHFidXVwaEFmX19FNFVfN0pvT0xFVHdlVHB4dGdRQ0lxWkJnSHcyUDA2bVVHYkxSc3IzcHRsZTFoeG5VcTg5aFYtdFFvLU1DamJ6MHdSamc</guid></item><item><title>肥胖通过局部脂肪组织炎症以及STAT3/CYP19A1通路，影响青春期前男孩的生殖发育 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-1/20260127223430276.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;h3&gt;背景&lt;/h3&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 27 Jan 2026 16:05:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE44NDFYelg4RmJrWEpraDh3SkktZHFidXVwaEFmX19FNFVfN0pvT0xFVHdlVHB4dGdRQ0lxWkJnSHcyUDA2bVVHYkxSc3IzcHRsZTFoeG5VcTg5aFYtdFFvLU1DamJ6MHdSamc</guid></item><item><title>慢性肾病与老年性白内障之间的因果关系：一项双向双样本孟德尔随机化研究 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-1/20260127220413598.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;尽管观察到了流行病学上的关联，但慢性肾病（CKD）与老年性白内障之间的直接因果关系仍不明确。这项双向孟德尔随机化（MR）研究评估了CKD（包括肾小球滤过率（eGFR）、尿白蛋白与肌酐比值（UACR）、透析以及快速eGFR下降）与老年性白内障之间的因果关系。研究分析了欧洲血统的全基因组关联研究（GWAS）的汇总统计数据。老年性白内障的数据来自404,086名个体，而CKD及相关肾功能特征的数据则来自大规模荟萃分析（样本量高达1,004,040）。使用F统计量大于10的工具变量，通过逆方差加权（IVW）回归来估计因果关系，并结合了加权中位数、加权模式和MR-Egger方法进行补充分析。敏感性分析包括使用MR-PRESSO进行多效性调整，以及使用Cochran’s Q进行异质性评估。此外，还进行了多变量MR（MVMR）分析以调整2型糖尿病（T2D）的影响。单变量MR分析未支持一般CKD、eGFR、UACR或透析与老年性白内障之间的因果关系。然而，在调整了T2D影响的MVMR分析中，基因预测的快速eGFR下降（Rapid3）与老年性白内障风险增加显著相关（OR = 1.089，P = 0.014）。反向MR分析表明老年性白内障对CKD或肾功能特征没有因果效应。该研究未发现一般CKD与老年性白内障之间存在直接的因果联系。然而，研究结果表明，肾功能的快速恶化可能是白内障的致病风险因素，这一机制可能与2型糖尿病的共享遗传途径无关。这些结果强调了在肾功能加速丧失的患者中监测眼部健康的临床重要性。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Tue, 27 Jan 2026 16:00:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5zVUNydDJYQjhpSUo2NXhhaG9seGdOeVg0Z3l1Q3JsN2hBaXA4cHVXamd4UklOVHFMSXBjb0ZIcld4VU5hODV6QTRxRkFCOW1rZzZqUElmV0haaUQ3VVBrd3ZidXlCWFZuNUE</guid></item><item><title>肥胖通过局部脂肪组织炎症以及STAT3/CYP19A1通路，影响青春期前男孩的生殖发育 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-1/20260127223430276.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;h3&gt;背景&lt;/h3&gt;
 &lt;p&gt;儿童肥胖发病率的上升是一个严重的全球公共卫生问题，对男性生殖健康构成了重大威胁。肥胖男性体内的芳香化酶（CYP19A1）表达通常会升高，这与睾酮水平下降有关，但儿童肥胖与长期男性不育之间的潜在机制仍不甚明了。&lt;/p&gt;
 &lt;h3&gt;方法&lt;/h3&gt;
 &lt;p&gt;我们进行了一项多方面的研究，结合了横断面临床调查、孟德尔随机化（MR）分析、公共数据集的生物信息学分析以及动物机制研究。临床研究包括30名肥胖男孩和30名正常体重的青春期前男孩。通过双样本孟德尔随机化分析来推断不同类型肥胖与男性不育之间的因果关系。利用基因表达组（GEO）数据集识别差异表达基因（DEGs）和信号通路。建立了一种高脂饮食（HFD）诱导的肥胖小鼠模型，通过研究STAT3/CYP19A1通路来验证生物信息学假设。&lt;/p&gt;
@@ -525,56 +549,4 @@
                                                         &lt;/div&gt;
                             
                         
-                                                                                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cbgc.scol.com.cn</author><pubDate>Mon, 26 Jan 2026 22:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBCZmpLX2N4MVFnMDNpZ1p1cEhGdDhsRkw0RjZNY1NWYmE5bFFxdlpGUC12Tmd0X1VYeGdPRHoxby1RMmN1WWlVeEVsbnhjZw</guid></item><item><title>坦桑尼亚五岁以下儿童人腺病毒基因组多样性解析：揭示F40、F41、B型及罕见A18基因型的流行与进化 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-1/20260127000733153.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
-                    &lt;p&gt;在儿童健康领域，腹泻病依然是导致发病和死亡的主要原因之一，而病毒是引发婴幼儿急性胃肠炎的重要病原。人腺病毒（Human Adenovirus, HAdV）作为一种无包膜的双链DNA病毒，能够引起从呼吸道感染、结膜炎到肠胃炎等多种临床疾病，尤其对五岁以下儿童构成显著健康威胁。其中，HAdV-F种的F40和F41型被公认为是全球范围内儿童病毒性腹泻的重要病原体。尽管在坦桑尼亚已有研究报道了HAdV的感染，且流行率在2%至33.6%之间，但一个关键的空白始终存在：在GenBank或ENA等全球公共数据库中，竟然没有一株来自坦桑尼亚的HAdV全基因组序列。这严重阻碍了我们对当地流行病毒株的传播动态、遗传进化以及其与疾病严重程度关联的深入理解。&lt;/p&gt;
-&lt;p&gt;为了填补这一关键数据缺口，一个由坦桑尼亚、丹麦等国研究人员组成的团队在《Virology》上发表了一项重要研究。他们利用先进的纳米孔宏基因组测序技术，对坦桑尼亚大陆及桑给巴尔地区多家医院收治的急性腹泻患儿粪便样本进行了深入分析。这项研究成功地绘制了坦桑尼亚流行HAdV的基因组图谱，不仅首次揭示了罕见基因型HAdV-A18在非洲的基因组特征，还提供了该国首例HAdV-F40、HAdV-F41和HAdV-B3的完整基因组序列，为全球病毒基因组库增添了宝贵资源。&lt;/p&gt;
-&lt;p&gt;研究人员开展此项研究主要依托几个关键技术方法：首先，他们从坦桑尼亚五个地区及桑给巴尔两家医院的200份五岁以下急性腹泻患儿粪便样本中提取核酸；其次，采用牛津纳米孔技术（Oxford Nanopore Technologies）的MinION平台进行宏基因组测序，无需病毒富集或宿主DNA去除；最后，利用KMA工具进行参考基因组比对和组装，并通过MAFFT、IQ-TREE等软件进行系统发育和重组分析，同时采用AlphaFold3预测蛋白质结构，从而全面解析病毒基因组的特征与进化关系。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;临床特征与HAdV检测&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;研究共检测了200份样本，HAdV总体阳性率为16%（32/200）。从这32份阳性样本中，有17份成功获得了高质量的全基因组序列（测序深度&amp;gt;50X），涵盖了HAdV-F40 (8株)、HAdV-F41 (5株)、HAdV-B3 (1株)、HAdV-B7 (1株) 和 HAdV-A18 (2株)五种类型。物种F是其中最流行的类型。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;全面的系统发育分析&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;基于全基因组和六邻体基因（hexon gene）构建的系统发育树显示，这17株坦桑尼亚腺病毒株清晰地聚集在已知的A、B、F物种中。特别值得注意的是，两株HAdV-A18与来自中国和美国的参考基因组形成了一个强支持的分支，但坦桑尼亚株又形成了自己独特的亚簇，提示可能存在地域性进化或长期的地方性传播。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;HAdV基因组注释与结构&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;基因注释显示，所有测序的HAdV完整基因组都保持了预期的基因组结构，包括早期基因和晚期基因。同线性分析（Synteny analysis）表明，这些基因组没有出现基因重排、缺失或插入的迹象，结构保守。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;HAdV-A18与参考株的基因组比较&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本研究获得的两株HAdV-A18基因组（DOM01251和DOM01724）是非洲首报、全球第三例完整基因组，使该罕见型的公共序列数量翻倍。它们与现有参考序列（GU191019.1和OR609364.1）的相似性分别为98.93%和99.03%，共发现了数百个单核苷酸多态性（SNP），表明与现有毒株存在一定遗传距离。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;HAdV-A18选定编码序列的氨基酸变异及六邻体结构指导映射&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;氨基酸变异分析发现，纤维蛋白（fibre）和六邻体蛋白（hexon）的变异频率最高，这与它们作为表面暴露蛋白承受宿主免疫压力有关。对六邻体蛋白的结构映射显示，大多数氨基酸替换位于超变区（HVR），这些环状结构暴露在病毒颗粒表面，可能与免疫逃逸和宿主适应相关，而六邻体的核心结构则高度保守。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;人腺病毒B种&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;研究获得了HAdV-B3和HAdV-B7各一株完整基因组。系统发育分析表明，它们分别与来自印度、美国、中国等地的同型毒株聚集在一起。B种腺病毒通常与呼吸道感染相关，其在腹泻患儿粪便中的检出可能反映了呼吸道感染后的病毒排泄，或提示了其潜在的肠道嗜性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;人腺病毒F种&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;流行的肠道腺病毒HAdV-F41和HAdV-F40是本研究中的优势株。系统发育分析显示，坦桑尼亚的HAdV-F41菌株分布在三个不同的谱系（1, 2B, 3A）中，而HAdV-F40菌株则分布在谱系1和2中，这表明当地流行的肠道腺病毒具有显著的基因组多样性，存在多个谱系共循环的现象。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;型间重组分析&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;采用多种方法进行的重组分析未在任何分析的HAdV基因组中发现统计学上显著的重组事件。这表明点突变可能是这些腺病毒基因组，特别是肠道腺病毒进化的重要驱动力，而非同源重组。&lt;/p&gt;
-&lt;p&gt;研究的讨论部分对上述发现进行了深入阐释。本研究中16%的HAdV检出率与坦桑尼亚及其他地区的研究结果相近。未发现HAdV感染与性别或特定年龄组（2岁以下 vs. 2岁以上）有显著关联，但研究者指出后者可能受样本量影响。本研究最重要的贡献在于提供了坦桑尼亚首批HAdV全基因组数据，特别是极为罕见的HAdV-A18的基因组信息，使该型的公共可用序列翻倍。对HAdV-A18的氨基酸变异，尤其是纤维蛋白和六邻体蛋白超变区替换的分析，为了解其免疫压力和潜在的功能变化提供了线索。HAdV-B和HAdV-C在腹泻样本中的检出，提示在解释其病原学意义时，需综合考虑呼吸道感染后排泄与潜在肠道感染的可能性。HAdV-F41和F40呈现出的多谱系共循环，凸显了当地病毒种群结构的复杂性，强调了持续基因组监测对于追踪流行株演变的重要性。未检测到重组事件，则提示点突变在本次研究的腺病毒进化中占主导地位。&lt;/p&gt;
-&lt;p&gt;综上所述，这项研究通过对坦桑尼亚腹泻患儿样本进行高通量测序，首次系统地揭示了该国流行的HAdV基因型构成和基因组特征，极大地丰富了全球数据库，特别是对罕见型HAdV-A18的认识。研究结果凸显了基因组监测对于理解病毒传播、进化以及指导包括疫苗研发在内的防控策略的重要性，并证明了宏基因组学在发现和表征新发病原体方面的强大能力。未来的研究方向应包括扩大地理和季节性监测，并结合详细的临床数据，以深入探索基因型与疾病严重程度之间的关联。&lt;/p&gt;
-
-                    &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 26 Jan 2026 20:02:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBoSEE5elc1T0c0VWxxMHFJM1k3YkJaWG5ISno2UmVObm10TXZLbzFIY0szdkJ0Yk5McUtneXUxLTJSbkt1RFZCY3lkSG9hNHRJQ1RScXM4Unc1SWlBV3I2eDdtTThERzdDR0E</guid></item><item><title>基于血液铅生物标志物与老年人肌肉减少症指标的关联研究：一项多中心横断面分析 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-1/20260127000456530.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Journal of Cachexia, Sarcopenia and Muscle》：Blood-Based Lead Biomarkers and Sarcopenia Indicators in Older Adults&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本研究通过分析来自西班牙（Seniors-ENRICA-2）和美国（NHANES系列）四大基于人群的研究数据，首次系统评估了全血铅（whole blood Pb）和血清铅（serum Pb）水平与老年人肌肉减少症（sarcopenia）各项指标（包括肌肉力量、质量和功能）的关联。结果表明，环境铅暴露与老年人肌肉健康受损显著相关，且血清铅可能是比全血铅更敏感的肌肉衰老生物标志物。该发现为识别可干预的环境风险因素、延缓年龄相关的肌肉功能衰退提供了重要的流行病学证据。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;&lt;strong&gt;背景&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;慢性低水平铅（Pb）暴露是一个普遍存在的公共卫生问题，尤其对老年人影响显著。尽管铅的神经毒性和心血管效应已广为人知，但其在加速年龄相关的肌肉骨骼衰退中的潜在作用尚不完全清楚。新出现的证据表明铅可能促成肌肉减少症的发生，但相关的流行病学数据，特别是关于最具信息量的暴露生物标志物的数据，仍然有限。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;方法&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本研究分析了来自四项基于人群的研究（NHANES III, NHANES 1999–2006, NHANES 2011–2012 和 Seniors-ENRICA-2）共11,842名年龄≥60岁的参与者的数据。肌肉减少症的指标包括肌肉力量（握力和椅子站立测试）、肌肉质量（双能X线吸收测定法DXA、小腿围和上臂围）和肌肉功能（步速和简易体能状况量表SPPB评分）。在Seniors-ENRICA-2研究中，使用欧洲老年人肌肉减少症工作组2（EWGSOP2）标准定义肌肉减少症。采用多变量回归和荟萃分析评估铅暴露（全血和血清）与肌肉减少症指标之间的关联。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;结果&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;铅水平与居住环境暴露（如交通接近度、工业排放和土壤污染）相关，分别解释了全血铅和血清铅约11%和9%的变异性。全血铅和血清铅均显示与肌肉减少症指标（包括力量、质量和功能测量值）存在剂量依赖性的负相关。与全血铅相比，血清铅与下肢结局的关联通常更强。血清铅四分位数间距（IQR）的增加与确诊或严重肌肉减少症的比值比（OR）增加1.33倍（95% CI: 1.02, 1.70）相关，而全血铅的相应增加为1.20倍（95% CI: 1.06, 1.36）。剂量反应关联分析显示，铅生物标志物与握力之间，以及血清铅与椅子站立表现之间，未发现明显偏离线性的情况。&lt;/p&gt;
-&lt;p&gt;关于肌肉质量，在NHANES 1999–2006中，低四肢肌肉质量（AMM）的加权患病率为29.5%。全血铅水平&amp;gt;50 μg/L的个体患低AMM的几率显著更高（OR: 1.58; 95% CI: 1.16, 2.16）。结合Seniors-ENRICA-2和NHANES的数据进行荟萃分析显示，全血铅每IQR增加，低小腿围的合并OR为1.09（95% CI: 1.02, 1.18）；对于全血铅水平高于 versus 低于50 μg/L的参与者，其上臂围平均减少0.83 cm（95% CI: -1.42, -0.25）。血清铅的结果与全血铅一致。&lt;/p&gt;
-&lt;p&gt;在功能结局方面，Seniors-ENRICA-2中基于SPPB的低下肢功能受损患病率为15.2%，基于低步速的为17.9%。在Seniors-ENRICA-2中，全血铅水平&amp;gt;50 μg/L的参与者低SPPB表现的OR高出1.69倍（95% CI: 1.05, 2.71）。对Seniors-ENRICA-2和NHANES数据的汇总分析表明，与全血铅水平低于50 μg/L者相比，全血铅水平高于50 μg/L的参与者低步速的OR高出1.35倍（1.08, 1.62），以通常步速行走8英尺所需时间延长4.73%（1.10, 8.35），行走20英尺所需时间延长3.71%（1.06, 6.36）。涉及血清铅水平的关联在所有评估结局中通常比全血铅观察到的更强。&lt;/p&gt;
-&lt;p&gt;根据研究的操作定义，Seniors-ENRICA-2中有464名参与者（18.8%）被归类为可能肌肉减少症，182名（7.4%）符合确诊（2.1%）或严重（5.3%）肌肉减少症的标准。多变量调整后，与全血铅最低四分位数相比，最高四分位数的参与者患可能性和确诊/严重肌肉减少症的患病比（PR）分别为1.13（0.90, 1.43）和1.50（1.01, 2.25）。血清铅的相应PR分别为1.32（1.02, 1.70）和1.53（1.01, 2.34）。风险随铅四分位数增加而逐步上升，支持累积剂量反应关系。&lt;/p&gt;
-&lt;p&gt;研究发现性别间的效应修饰作用有限，主要针对肌肉质量结局和Seniors-ENRICA-2研究的参与者，表明男性和女性对铅不利影响的易感性大致相似。环境暴露数据（如交通、空气污染PM&lt;sub&gt;10&lt;/sub&gt;、工业源）解释了铅生物标志物变异的显著部分（全血铅约11%，血清铅约9%）。生活在低至中度污染区域的个体，其铅暴露与肌肉健康结局的关联往往更强。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;环境铅暴露对肌肉骨骼健康具有有害影响，并导致老年人肌肉减少症。血清铅可能是比全血铅更敏感的肌肉衰老生物标志物，应在未来的研究和监测策略中予以考虑。这些发现强调了持续采取公共卫生行动以减少铅暴露的必要性，并提高了临床对铅暴露个体潜在肌肉骨骼影响的认识。潜在的生物学机制可能涉及氧化应激、肌肉线粒体功能障碍、慢性炎症、胰岛素抵抗、合成代谢激素水平改变以及钙代谢和神经肌肉传递受损等途径。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Mon, 26 Jan 2026 19:51:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE8yMVlsUVhWVExuTERRYjFydjJ0d3RlTmV4ODMwd2NDcUV2WWIyT3NnQTZVQklnV29jYWQ1bVI3cGpHTDRfTkp3ZU9XSmljTTN4bHVoLVU0cDdPUC1aUEZVV2hjczFVWmpZdkxaLQ</guid></item></channel></rss>
+                                                                                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cbgc.scol.com.cn</author><pubDate>Mon, 26 Jan 2026 22:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBCZmpLX2N4MVFnMDNpZ1p1cEhGdDhsRkw0RjZNY1NWYmE5bFFxdlpGUC12Tmd0X1VYeGdPRHoxby1RMmN1WWlVeEVsbnhjZw</guid></item></channel></rss>
