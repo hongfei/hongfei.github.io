@@ -1,5 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>机箱新花样！日本厂商推隐身模式主机：一键从透明变朦胧美 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101070.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101077.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;2026年1月26日，英特尔正式解禁了&lt;strong&gt;Panther Lake&lt;/strong&gt;，也就是英特尔酷睿Ultra X处理器（系列3）的评测数据。&lt;/p&gt;
+&lt;p&gt;作为&lt;strong&gt;Intel 18A&lt;/strong&gt;制程工艺打造的首个高性能移动级处理器，Panther Lake在&lt;strong&gt;RibbonFET全环绕栅极晶体管&lt;/strong&gt;技术以及&lt;strong&gt;PowerVia背面供电&lt;/strong&gt;技术加持下，实现了性能与能效的巨大突破。&lt;/p&gt;
+&lt;p&gt;同时，Panther Lake的GPU tile从Compute tile中分离出来之后，在核心规模上不仅变得更大，而且可以做更加灵活的配置，因此像本篇评测中&lt;strong&gt;酷睿Ultra X9 388H&lt;/strong&gt;集成的&lt;strong&gt;12Xe核心&lt;/strong&gt;的&lt;strong&gt;锐炫B390&lt;/strong&gt;核显，将带来极其出色的GPU图形性能和AI算力表现。&lt;/p&gt;
+&lt;p&gt;本次首发测试平台，我们使用了&lt;strong&gt;联想小新Pro 16 GT酷睿版&lt;/strong&gt;机型，其具体配置如下：&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/3a97b7e3-0543-4c90-873c-daa4a9d5257c.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="484" src="//img1.mydrivers.com/img/20260128/S3a97b7e3-0543-4c90-873c-daa4a9d5257c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;架构简介&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们先来简单回顾一下Panther Lake的架构设计。&lt;/p&gt;
+&lt;p&gt;下图是Panther Lake处理器的架构示意图，它分为三大模块，左上角区域是&lt;strong&gt;Compute tile&lt;/strong&gt;，其中包含了CPU的&lt;strong&gt;P-Core、E-Core和LP E-Core&lt;/strong&gt;核心，用于图像信号处理的IPU 7.5计算单元，用于&lt;strong&gt;AI计算的NPU 5&lt;/strong&gt;计算单元，以及Xe媒体和显示引擎，同时还包含了8MB的内存侧缓存单元，这也是Panther Lake全新加入的设计。所有&lt;strong&gt;Compute tile均使用Intel 18A制程工艺&lt;/strong&gt;打造。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/3f66d8ca-c17d-424e-93ac-fcf12931ca3e.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="1049" src="//img1.mydrivers.com/img/20260128/S3f66d8ca-c17d-424e-93ac-fcf12931ca3e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;左下角则是重新分离出来的&lt;strong&gt;Xe3架构锐炫核显&lt;/strong&gt;，首发包含&lt;strong&gt;4核心&lt;/strong&gt;和&lt;strong&gt;12核心&lt;/strong&gt;两种规格，&lt;strong&gt;4核心GPU为Intel 3制程工艺&lt;/strong&gt;打造，&lt;strong&gt;12核心GPU则采用了TSMC N3E制程工艺&lt;/strong&gt;打造。&lt;/p&gt;
+&lt;p&gt;右侧紧挨Compute tile的平台控制模块同样采用外部代工，由TSMC N6制程工艺打造，其内部包含了所有I/O控制器。&lt;/p&gt;
+&lt;p&gt;其中8核心CPU和16核心CPU+12核心GPU处理器均支持12条PCIe通道，也就是8条PCIe4.0+4条PCIe5.0构成，而16核心CPU+4核心GPU处理器拥有20条PCIe通道，即8条PCIe4.0+12条PCIe5.0构成。此外还升级到了4x雷电4接口，集成Wi-Fi 7（R2）和蓝牙Core 6.0控制模块，以及2个USB 3.2+8个USB 2.0接口控制模块。&lt;/p&gt;
+&lt;p&gt;在平台控制模块的上方和下方，还设计有两块填充模块，它们不参与计算，主要负责配平整个Die，以使散热器的压力更加均衡，避免对整个Die造成损伤。&lt;/p&gt;
+&lt;p&gt;英特尔Panther Lake家族首发包含14款不同规格的SKU，最高型号为英特尔酷睿Ultra X9 388H和酷睿Ultra 9 386H，前者是我们今天评测的主角。&lt;/p&gt;
+&lt;p&gt;16核心16线程的CPU带来更强的计算能力，50 TOPS算力的NPU计算单元继续以低功耗赋能AI应用，而大放异彩的Xe3架构锐炫B390核显凭借12个Xe核心带来的强劲图形性能与120TOPS的AI算力升级，轻松覆盖游戏、创作到AI应用到全场景应用需求。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/7d32cee6-54ad-4b19-825d-8ee21ee3ca76.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="589" src="//img1.mydrivers.com/img/20260128/S7d32cee6-54ad-4b19-825d-8ee21ee3ca76.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/74b260a4-12c3-4fdd-921d-0ca2af73295c.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="556" src="//img1.mydrivers.com/img/20260128/S74b260a4-12c3-4fdd-921d-0ca2af73295c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;酷睿Ultra X9 388H性能评估&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;基本信息了解之后，我们正式进入测试环节。&lt;/p&gt;
+&lt;p&gt;首先来看&lt;strong&gt;英特尔酷睿Ultra X9 388H&lt;/strong&gt;处理器的基本规格，它是一颗&lt;strong&gt;16核16线程&lt;/strong&gt;处理器，性能核架构为Cougar Cove，能效核和低功耗能效核架构均为Darkmont，性能核睿频加速频率可以达到&lt;strong&gt;5.1GHz。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;能效核和低功耗能效核睿频加速频率分别为&lt;strong&gt;3.8GHz&lt;/strong&gt;和&lt;strong&gt;3.7GHz&lt;/strong&gt;，拥有&lt;strong&gt;18MB L3&lt;/strong&gt;，基础TDP为25W，标称最高TDP为&lt;strong&gt;80W&lt;/strong&gt;，我们使用的小新Pro 16 GT酷睿版机型在&lt;strong&gt;开启极客模式&lt;/strong&gt;之后，可以达到稳定&lt;strong&gt;85W&lt;/strong&gt;功耗释放。另外Panther Lake的内存规格再次提升，支持&lt;strong&gt;LPDDR5X 9600MT/s&lt;/strong&gt;，最高&lt;strong&gt;96GB双通道&lt;/strong&gt;内存。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/87644576-9ebe-4c73-ae0b-75aaecdd1032.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="441" src="//img1.mydrivers.com/img/20260128/S87644576-9ebe-4c73-ae0b-75aaecdd1032.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;理论性能测试&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;下面我们来看看处理器的理论性能表现。&lt;/p&gt;
+&lt;p&gt;在单核和多核性能方面，我们主要参考CINEBENCH 2024的测试结果。但是R23和最新的2026的测试成绩同样也可以作为参考。&lt;/p&gt;
+&lt;p&gt;在&lt;strong&gt;CINEBENCH 2024&lt;/strong&gt;测试标准下，酷睿Ultra X9 388H处理器单核得分达到了&lt;strong&gt;132&lt;/strong&gt;，多核得分达到了&lt;strong&gt;1329&lt;/strong&gt;，表现出色。另外在最新的&lt;strong&gt;2026测试标准&lt;/strong&gt;下，这颗处理器单核得分&lt;strong&gt;528&lt;/strong&gt;，多核得分&lt;strong&gt;5200&lt;/strong&gt;，后续我们也会陆续引入更多处理器的CINEBENCH 2026测试，方便大家在新的测试标准下对处理器性能作出判断。&lt;/p&gt;
+&lt;p&gt;其实从R23和2024单核和多核测试来看，酷睿Ultra X9 388H处理器与上一代酷睿Ultra 9 285H做对比的话（R23单核2015、多核21403，2024单核121，多核1147），已经实现了全面超越。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/b6e656ee-06dd-44bc-a434-48d9fcef4c06.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="536" src="//img1.mydrivers.com/img/20260128/Sb6e656ee-06dd-44bc-a434-48d9fcef4c06.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="468" src="//img1.mydrivers.com/img/20260128/8e5fa304-dbb7-4637-ae7f-2e83e8bbcc0f.jpg" w="516"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;应用性能测试&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;理论性能方面，酷睿Ultra X9 388H处理器较上一代同级别酷睿Ultra处理器提升显著，这主要得益于新架构带来的性能升级。而单核和多核理论性能的进步，反映在实际应用层面会有怎样的表现？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;压缩/解压缩&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先是压缩和解压缩，&lt;strong&gt;7-Zip压缩速度109915 KB/s&lt;/strong&gt;，&lt;strong&gt;解压缩速度1164538 KB/s&lt;/strong&gt;，总评分114.553 GIPS，10轮压缩解压缩测试耗时仅50.515秒，速度极快。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/1de38aaf-2277-4502-9be7-8e05dac6d8b3.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="372" src="//img1.mydrivers.com/img/20260128/S1de38aaf-2277-4502-9be7-8e05dac6d8b3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WinRAR&lt;/strong&gt;压缩/解压缩基准处理速度平均达到了&lt;strong&gt;20977 KB/s&lt;/strong&gt;，16线程带来的性能提升还是比较明显的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/1c00aeb5-60e9-44bb-8d31-3b90566f314c.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="625" src="//img1.mydrivers.com/img/20260128/S1c00aeb5-60e9-44bb-8d31-3b90566f314c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;视频编码&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;再来看看视频编码，这是英特尔酷睿处理器一直以来的强项。&lt;strong&gt;x264 Benchmark&lt;/strong&gt;编码2500帧耗时仅为&lt;strong&gt;24秒&lt;/strong&gt;，帧速率&lt;strong&gt;104.86fps&lt;/strong&gt;；&lt;strong&gt;x265 Benchmark&lt;/strong&gt;编码1128帧，耗时仅&lt;strong&gt;18.58秒&lt;/strong&gt;，帧速率&lt;strong&gt;60.72fps&lt;/strong&gt;，速度极快，是目前编码性能最强的移动级处理器。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/f9b11c25-f817-463a-be1c-d7bdae2f02c3.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="438" src="//img1.mydrivers.com/img/20260128/Sf9b11c25-f817-463a-be1c-d7bdae2f02c3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/e733bbc4-01ee-4503-ba07-37a0bff74309.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="282" src="//img1.mydrivers.com/img/20260128/Se733bbc4-01ee-4503-ba07-37a0bff74309.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;渲染速率与采样率&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;渲染性能方面，我们参考V-Ray Benchmark、Corona 10 Benchmark以及Blender Benchmark的测试结果。&lt;/p&gt;
+&lt;p&gt;酷睿Ultra X9 388H处理器在&lt;strong&gt;V-Ray Benchmark&lt;/strong&gt;测试标准下，一分钟采样率为&lt;strong&gt;22733 vsamples&lt;/strong&gt;，&lt;strong&gt;Corona 10 Benchmark&lt;/strong&gt;光线渲染速度可以达到&lt;strong&gt;7093796 rays/s&lt;/strong&gt;，而&lt;strong&gt;Blender Benchmark&lt;/strong&gt;的&lt;strong&gt;monster、junkshop和classroom&lt;/strong&gt;三项测试中，1分钟采样率分别为&lt;strong&gt;138.94、95.76以及68.8 samples&lt;/strong&gt;，整体渲染性能较上一代也有比较显著的提升。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/4f5de5a4-d1b2-48f3-ac14-3331b4f05a85.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="396" src="//img1.mydrivers.com/img/20260128/S4f5de5a4-d1b2-48f3-ac14-3331b4f05a85.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/8b97c760-f666-4eb4-bbc0-49a4ad7dfd47.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="466" src="//img1.mydrivers.com/img/20260128/S8b97c760-f666-4eb4-bbc0-49a4ad7dfd47.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/f59955b3-950f-4634-b59f-b092fef131c5.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="362" src="//img1.mydrivers.com/img/20260128/Sf59955b3-950f-4634-b59f-b092fef131c5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;从英特尔自身定位来说，Panther Lake要达到的设计目标是拥有Arrow Lake性能的同时达到Lunar Lake的能效。而从CPU理论和应用测试来看，Panther Lake超额完成了性能目标，较Arrow Lake家族同级别的酷睿Ultra 9 285H性能更强，效率更快。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内存性能测试&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;除了CPU本身性能保持高水准之外，Panther Lake其实最让人期待的除了GPU性能，还有内存。毕竟LPDDR5X 9600MT/s规格的支持是目前移动级处理器中的独一档，那么实际性能如何呢？&lt;/p&gt;
+&lt;p&gt;从&lt;strong&gt;AIDA 64内存性能测试&lt;/strong&gt;来看，&lt;strong&gt;读取速度达到了115.8 GB/s，写入速度130.75 GB/s，拷贝速度124.88GB/s&lt;/strong&gt;，这意味着从Panther Lake开始，移动级平台的内存性能全面突破百GB/s速度大关。&lt;/p&gt;
+&lt;p&gt;而且更为让人意外的是，&lt;strong&gt;内存延迟降到了87.6ns&lt;/strong&gt;，这可以说是相当大的进步。因为此前几代处理器平台在内存延迟上普遍超过了100ns，Panther Lake内存延迟下降到87.6ns可以说是非常大的进步，在面对游戏等内存敏感型应用上，更低的延迟自然会带来更好的体验。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/79899093-50cc-42da-83d3-6ee46d9cfb7b.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="576" src="//img1.mydrivers.com/img/20260128/S79899093-50cc-42da-83d3-6ee46d9cfb7b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;锐炫B390核显性能评估&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;酷睿Ultra X9 388H处理器集成了锐炫B390核显，拥有&lt;strong&gt;12个Xe核心&lt;/strong&gt;，&lt;strong&gt;可用显存为18GB&lt;/strong&gt;，&lt;strong&gt;显存频率2500MHz，&lt;/strong&gt;这可以说是英特尔目前为止最强的核显。而且因为GPU tile从Compute tile中分离出来，后续在核心规模的调配方面自然会更加灵活。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/de46a3ec-41f4-4aea-a198-7032fb00f690.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="431" src="//img1.mydrivers.com/img/20260128/Sde46a3ec-41f4-4aea-a198-7032fb00f690.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我们先来通过&lt;strong&gt;3DMark理论测试&lt;/strong&gt;看看锐炫B390的图形性能表现。在&lt;strong&gt;Time Spy DX12&lt;/strong&gt;测试标准下，B390图形性能评分达到了&lt;strong&gt;7254分&lt;/strong&gt;，这个性能其实比较接近此前65W超低功耗的RTX 4060独显的性能水准。另外&lt;strong&gt;Steel Nomad Light&lt;/strong&gt;测试得分&lt;strong&gt;6283分&lt;/strong&gt;，在集成显卡里确实是有着天花板级别的图形性能表现。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/cb3c65b3-d1be-4ae0-a156-7dc457009a5f.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="287" src="//img1.mydrivers.com/img/20260128/Scb3c65b3-d1be-4ae0-a156-7dc457009a5f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/656f955c-9128-43f2-87ce-821aa6fca466.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="282" src="//img1.mydrivers.com/img/20260128/S656f955c-9128-43f2-87ce-821aa6fca466.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下图是3DMark FireStrike模式历代核显的测试成绩，大家可以此为参考对锐炫B390的性能有一个更为直观的了解：&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/69c3fa01-3ca7-4db0-ac2f-5573e7811cb9.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="816" src="//img1.mydrivers.com/img/20260128/S69c3fa01-3ca7-4db0-ac2f-5573e7811cb9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;检验GPU性能最直接的方法还是游戏，所以接下来我们看看锐炫B390的实际游戏体验到底怎样？&lt;/p&gt;
+&lt;p&gt;为了有一个比较具象的感知，我先贴一张上一代&lt;strong&gt;锐炫140V&lt;/strong&gt;核显的&lt;strong&gt;《CS2》&lt;/strong&gt;1920 x 1200分辨率、默认画质、沙漠2地图的平均帧数，只有&lt;strong&gt;50fps&lt;/strong&gt;。算是勉强能玩，但肯定是达不到电竞要求的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/e4fc418b-c9b7-4f13-b13d-651f0e90c961.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="391" src="//img1.mydrivers.com/img/20260128/Se4fc418b-c9b7-4f13-b13d-651f0e90c961.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;图形性能大幅提升的锐炫B390可就完全不一样了，&lt;strong&gt;1920×1200&lt;/strong&gt;分辨率&lt;strong&gt;、低画质&lt;/strong&gt;可以直接上到&lt;strong&gt;292.8fps&lt;/strong&gt;，游戏性能提升显著。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/be7d6a40-615c-46d1-9ba6-3bd92d77eae3.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Sbe7d6a40-615c-46d1-9ba6-3bd92d77eae3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;《明日方舟：终末地》&lt;/strong&gt;是刚刚上线的一款3D即时策略RPG游戏，画面制作精良，对硬件性能要求是比较高的。在&lt;strong&gt;1920×1200&lt;/strong&gt;分辨率，开启&lt;strong&gt;最高画质&lt;/strong&gt;的情况下，锐炫B390核显运行游戏的平均帧率为&lt;strong&gt;87fps&lt;/strong&gt;，流畅运行无压力。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/468d8315-211f-455d-b06b-0688b42a9f80.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/S468d8315-211f-455d-b06b-0688b42a9f80.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/b47b1f8e-99bc-4184-9791-7120e0111e4b.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Sb47b1f8e-99bc-4184-9791-7120e0111e4b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/55ed60d5-de8b-43d1-9632-ca8666e695b9.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="392" src="//img1.mydrivers.com/img/20260128/S55ed60d5-de8b-43d1-9632-ca8666e695b9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;《古墓丽影：暗影》&lt;/strong&gt;这款游戏笔者做了开关XeSS的测试，具体如下：在&lt;strong&gt;1920×1200&lt;/strong&gt;分辨率、&lt;strong&gt;最高画质&lt;/strong&gt;下，&lt;strong&gt;不开XeSS&lt;/strong&gt;的情况下，游戏平均帧率为&lt;strong&gt;73fps&lt;/strong&gt;。分别开启&lt;strong&gt;性能、平衡、画质、超高画质&lt;/strong&gt;四个XeSS档位之后，1920×1200分辨率、最高画质平均帧率分别为&lt;strong&gt;104fps、94fps、87fps、77fps&lt;/strong&gt;，所以较老一些的3A游戏玩起来是完全没有问题的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/8a41ec60-061b-48b0-92c4-f3dbd00a1a12.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/S8a41ec60-061b-48b0-92c4-f3dbd00a1a12.jpg" w="600"&gt;&lt;/a&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/cfd5129d-aaf8-49b0-9bf3-f0228f5d13b0.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Scfd5129d-aaf8-49b0-9bf3-f0228f5d13b0.jpg" w="600"&gt;&lt;/a&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/1e672b21-4800-42c8-95c4-ae9220389665.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/S1e672b21-4800-42c8-95c4-ae9220389665.jpg" w="600"&gt;&lt;/a&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/063213e6-1ef6-48c6-b6b8-63a05a2c9cb3.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/S063213e6-1ef6-48c6-b6b8-63a05a2c9cb3.jpg" w="600"&gt;&lt;/a&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/be16c228-f1a6-44b0-abec-a4354c651d48.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Sbe16c228-f1a6-44b0-abec-a4354c651d48.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;《极限竞速：地平线5》&lt;/strong&gt;对于硬件的优化非常到位，所以锐炫B390跑起来也是相当顺畅，&lt;strong&gt;1920×1200&lt;/strong&gt;分辨率，&lt;strong&gt;极端画质&lt;/strong&gt;下，平均流畅度可以达到&lt;strong&gt;64fps&lt;/strong&gt;，这对于集成显卡来说已经是相当出色的表现了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/c4620008-830b-433e-b8fc-c922c3c8eb22.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Sc4620008-830b-433e-b8fc-c922c3c8eb22.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/a9563f1f-9dd7-4882-823f-31ed25b7e8ca.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Sa9563f1f-9dd7-4882-823f-31ed25b7e8ca.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;《荒野大镖客2》&lt;/strong&gt;在1920×1200分辨率&lt;strong&gt;默认画质&lt;/strong&gt;下进行测试，最终平均帧率达到了&lt;strong&gt;80fps&lt;/strong&gt;，可见12个Xe核心的锐炫B390在游戏性能上确实给力。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/ec6e84bf-9580-4a30-b708-0f797ee0a7a7.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Sec6e84bf-9580-4a30-b708-0f797ee0a7a7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外Xe3架构核显开始支持&lt;strong&gt;多帧生成&lt;/strong&gt;技术，在Intel Graphics Software控制中心里最高可以开启&lt;strong&gt;4倍多帧生成&lt;/strong&gt;，这样的话在运行3A游戏时就会有相当不错的帧率表现。而且如果把锐炫B390放到掌机里的话，游戏体验绝对是秒杀现在所有的Windows掌机了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/38c871c3-3ccf-4d8c-ae23-a04b1623b5ce.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="327" src="//img1.mydrivers.com/img/20260128/S38c871c3-3ccf-4d8c-ae23-a04b1623b5ce.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我们通过《赛博朋克2077》和《黑神话：悟空》进行了多帧生成测试，可以看到&lt;strong&gt;《赛博朋克2077》&lt;/strong&gt;在&lt;strong&gt;1920×1080&lt;/strong&gt;分辨率、&lt;strong&gt;低画质&lt;/strong&gt;下平均帧率可以达到&lt;strong&gt;264.79fps&lt;/strong&gt;；而如果&lt;strong&gt;关闭游戏内帧生成&lt;/strong&gt;选项的话，&lt;strong&gt;1920×1080&lt;/strong&gt;分辨率、&lt;strong&gt;低画质&lt;/strong&gt;下平均帧率也能达到&lt;strong&gt;106.13fps&lt;/strong&gt;，表现相当不错。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/d84f94ed-889c-4405-94aa-5584aad89797.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="337" src="//img1.mydrivers.com/img/20260128/Sd84f94ed-889c-4405-94aa-5584aad89797.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/9749f63e-53a6-4066-bb26-99f028ea89d2.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="338" src="//img1.mydrivers.com/img/20260128/S9749f63e-53a6-4066-bb26-99f028ea89d2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;《黑神话：悟空》&lt;/strong&gt;在1&lt;strong&gt;920×1200&lt;/strong&gt;分辨率、&lt;strong&gt;低画质&lt;/strong&gt;，&lt;strong&gt;开启4倍多帧生成&lt;/strong&gt;的情况下，平均帧率可以达到&lt;strong&gt;216fps&lt;/strong&gt;，而且《黑神话：悟空》这款游戏对于GPU性能的敏感度极高，因此可以充分体现出这一代锐炫B390核显的图形性能到底提升有多大。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/d94924ff-3174-4f61-be7e-4f095741e0ee.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/Sd94924ff-3174-4f61-be7e-4f095741e0ee.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外其实用锐炫B390玩游戏的话，起码在1920×1200分辨率环境下，不用过于保守地去开低画质，我们将画质调整到超高，也就是仅次于影视级画质的&lt;strong&gt;二档高画质&lt;/strong&gt;，锐炫B390运行《黑神话：悟空》的平均帧率都可以达到&lt;strong&gt;73fps&lt;/strong&gt;，完全能够满足动作3A游戏的流畅运行需求。而且放大图片可以看到，&lt;strong&gt;95%帧率其实是高于59fps&lt;/strong&gt;的，画面流畅度极其稳定，不会出现瞬时大幅掉帧导致的迟滞或卡顿。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/78e78372-1cb0-4e1e-a1c4-1c7feb1e909a.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/S78e78372-1cb0-4e1e-a1c4-1c7feb1e909a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;通过游戏测试可以看出，锐炫B390核显性能着实是相当不错，1080p分辨率下基本所有游戏都能带来相当不错的画面流畅度，而2.5K分辨率则可以通过降低画质或者开启XeSS以及多帧生成来提高游戏帧率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;相当出色的生产力&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;比Arrow Lake更强的CPU性能，比上一代锐炫核显更强的图形性能，以及大幅进步的内存读写速度与延迟降低之外，酷睿Ultra X9 388H在生产力方面会带给用户怎样的体验呢？&lt;/p&gt;
+&lt;p&gt;生产力理论性能方面，我们参考&lt;strong&gt;PCMark 10 Extended&lt;/strong&gt;测试。&lt;/p&gt;
+&lt;p&gt;搭载酷睿Ultra X9 388H平台的联想小新Pro 16 GT酷睿版在常用基本功能，包含Web浏览、视频会议、应用程序启动等得分为&lt;strong&gt;11441&lt;/strong&gt;分。&lt;/p&gt;
+&lt;p&gt;说明其完成这些基础办公任务没有任何问题；生产力项目测试中得分高达&lt;strong&gt;23005&lt;/strong&gt;分，表明其拥有卓越的电子表格、文档工作性能；数位内容创作评分高达&lt;strong&gt;14753&lt;/strong&gt;分，说明其能够非常高效地完成图片、视频编辑、图形渲染等工作；游戏性能评高达&lt;strong&gt;11916&lt;/strong&gt;分，游戏体验出色。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;综合得分11439分&lt;/strong&gt;，是目前轻薄本产品中，PCMark 10 E模式得分最高的一款，而且四项测试分数均过万，可见酷睿Ultra X9 388H是相当完美的一款移动端处理器平台。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/cc1276f6-d331-4a5d-b780-ea983b687dd3.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="286" src="//img1.mydrivers.com/img/20260128/Scc1276f6-d331-4a5d-b780-ea983b687dd3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;生产力应用性能方面，参考&lt;strong&gt;UL Procyon&lt;/strong&gt;的&lt;strong&gt;照片编辑&lt;/strong&gt;和&lt;strong&gt;视频编辑&lt;/strong&gt;测试，联想小新Pro 16 GT酷睿版的评分分别达到了&lt;strong&gt;6630&lt;/strong&gt;和&lt;strong&gt;16704&lt;/strong&gt;分，可以轻松胜任RAW图片处理以及1080p、2K、4K视频剪辑任务。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/27f84ad1-339e-4888-ae1a-254e86cfcd55.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="358" src="//img1.mydrivers.com/img/20260128/S27f84ad1-339e-4888-ae1a-254e86cfcd55.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/b635e458-1fa4-48d9-87e7-d45d3707b461.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="260" src="//img1.mydrivers.com/img/20260128/Sb635e458-1fa4-48d9-87e7-d45d3707b461.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/0442b4ce-56c7-4edf-8c6f-468bd798c1f8.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="296" src="//img1.mydrivers.com/img/20260128/S0442b4ce-56c7-4edf-8c6f-468bd798c1f8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;综合来看，英特尔酷睿Ultra X9 388H在生产力性能方面相对于上一代Arrow Lake有着非常显著的提升，尤其是GPU性能大幅加强之后，图片与视频处理都更加游刃有余，即便将竞品平台考虑进来，酷睿Ultra X9 388H也是目前最强的移动级处理器平台。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI算力评分&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Panther Lake除了在传统计算领域有着大幅度提升之外，更加强调AI计算能力的升级。其&lt;strong&gt;CPU+NPU+GPU&lt;/strong&gt;算力达到了&lt;strong&gt;180TOPS&lt;/strong&gt;，其中&lt;strong&gt;GPU&lt;/strong&gt;算力提升最大，达到了&lt;strong&gt;120TOPS&lt;/strong&gt;，而NPU虽然只提升了2TOPS，但是其矩阵引擎规模变大之后，实际计算效率远比纸面的2TOPS更高。&lt;/p&gt;
+&lt;p&gt;通过UL Procyon，我们给CPU、GPU和NPU算力进行了测算，首先&lt;strong&gt;CPU Integer&lt;/strong&gt;算力评分为&lt;strong&gt;282&lt;/strong&gt;，相对于上一代&lt;strong&gt;没有提升&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;而&lt;strong&gt;GPU Float16&lt;/strong&gt;算力评分达到&lt;strong&gt;1495&lt;/strong&gt;，相对于上一代的800+提升了近700分；而&lt;strong&gt;NPU&lt;/strong&gt;算力评分达到&lt;strong&gt;1223&lt;/strong&gt;，相对于上一代900+的评分提升了300多分，因此酷睿Ultra X9 388H在&lt;strong&gt;GPU和NPU算力上分别提升了约78%和32%！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/6ab84132-de32-4aa3-bc99-5d1f12cdb421.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="274" src="//img1.mydrivers.com/img/20260128/S6ab84132-de32-4aa3-bc99-5d1f12cdb421.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/f18e4d0d-92cb-4307-ae2c-3afe6d743459.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="276" src="//img1.mydrivers.com/img/20260128/Sf18e4d0d-92cb-4307-ae2c-3afe6d743459.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/aa72a211-8488-4c8e-8b11-0f8fae545c97.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="287" src="//img1.mydrivers.com/img/20260128/Saa72a211-8488-4c8e-8b11-0f8fae545c97.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此外，上一代核显受限于算力不足和显存不足的问题，无法完成UL Procyon的AI大语言模型生成测试，而酷睿Ultra X9 388H不仅能够顺利完成，并且在&lt;strong&gt;PHI 3.5、MISTRAL 7B、LLAMA 3.1、LLAMA 2&lt;/strong&gt;四款大语言模型测试中，生成速度分别达到了&lt;strong&gt;43.3 tokens/s、28.47 tokens/s、25.17 tokens/s以及14.02 tokens/s。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/66d67107-43e4-48d0-bdbb-eb4a86148aaa.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="410" src="//img1.mydrivers.com/img/20260128/S66d67107-43e4-48d0-bdbb-eb4a86148aaa.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;轻松达成全天候续航&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;性能过硬，那么续航如何呢？&lt;/p&gt;
+&lt;p&gt;UL Procyon &lt;strong&gt;1小时视频播放掉电量只有&lt;/strong&gt;&lt;strong&gt;3%&lt;/strong&gt;，相比上一代Lunar Lake的9%左右提升显著。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/2091752d-8b4f-44a5-b647-040b4b67f871.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="293" src="//img1.mydrivers.com/img/20260128/S2091752d-8b4f-44a5-b647-040b4b67f871.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外笔者还通过&lt;strong&gt;B站4K视频循环播放&lt;/strong&gt;进行了续航测试，并且使用Windows 11系统自带的电池电量监测查看续航表现。这项测试对笔记本电脑的续航挑战极大，因为不仅需要强有力的硬件解码能力，同时无线网络还始终处于工作状态。测试时我们将屏幕亮度调整至50%，刷新率切换到60Hz，开启节能模式，音量调整到30%。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/4a662f53-cd1a-4321-9619-7a275d902575.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/S4a662f53-cd1a-4321-9619-7a275d902575.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看到从第一天早8点开始循环播放时电量为99%，到第二天凌晨4点左右电量剩余3%自动进入休眠，&lt;strong&gt;历时约20个小时&lt;/strong&gt;，表现相当出色。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/2ba0da57-2e44-4188-9609-2f96e25e6217.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="231" src="//img1.mydrivers.com/img/20260128/S2ba0da57-2e44-4188-9609-2f96e25e6217.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;功耗释放稳定双拷机温度低&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最后我们来看看酷睿Ultra X9 388H的功耗释放和温度表现。这里需要说明的一点是，我们使用的测试机并非零售版机型，而是工程样机，因此最终的散热表现可能会有再进一步的改善。&lt;/p&gt;
+&lt;p&gt;首先&lt;strong&gt;AIDA 64 FPU CPU单拷机&lt;/strong&gt;测试，&lt;strong&gt;CPU&lt;/strong&gt;功耗稳定&lt;strong&gt;85W&lt;/strong&gt;释放，&lt;strong&gt;CPU封装温度96℃&lt;/strong&gt;，表现良好。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/cac0a1e0-0f80-487f-b29a-ab9d4e60811c.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="261" src="//img1.mydrivers.com/img/20260128/Scac0a1e0-0f80-487f-b29a-ab9d4e60811c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AIDA 64+FurMark CPU+GPU双拷机&lt;/strong&gt;测试，CPU封装功率依旧稳定在&lt;strong&gt;85W&lt;/strong&gt;，此时整体&lt;strong&gt;封装温度&lt;/strong&gt;会下降到&lt;strong&gt;84℃&lt;/strong&gt;，所以在日常使用的时候完全无需担心温度问题。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/688ac543-09f4-443b-a960-92f2e6e1eb55.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="349" src="//img1.mydrivers.com/img/20260128/S688ac543-09f4-443b-a960-92f2e6e1eb55.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;就比如在玩&lt;strong&gt;《明日方舟：终末地》&lt;/strong&gt;的时候，我们通过监测软件记录了&lt;strong&gt;CPU&lt;/strong&gt;和&lt;strong&gt;GPU&lt;/strong&gt;的&lt;strong&gt;实时温度&lt;/strong&gt;，分别为&lt;strong&gt;76℃和70℃&lt;/strong&gt;，整体功耗在&lt;strong&gt;82W&lt;/strong&gt;左右，散热无压力，且功耗释放充分。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/20d5e5c6-631d-4341-891d-77804f31ca82.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="375" src="//img1.mydrivers.com/img/20260128/S20d5e5c6-631d-4341-891d-77804f31ca82.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;联想小新Pro 16 GT酷睿版简介&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;评测的最后，我们看看本次评测所使用的测试平台，也就是联想小新Pro 16 GT酷睿版的设计。因为使用的是工程样机，所以可能最终设计会略有不同，因此以实际上市产品为准。&lt;/p&gt;
+&lt;p&gt;工程样机其实和去年的小新Pro 16 GT AI元启版一样，简约干练的家族式设计语言，深空灰配色加上金属喷砂漆面，塑造出细腻的金属质感与触摸手感。A面正中间位置镶嵌有亮面抛光的Lenovo品牌logo，为整体的简约设计增添了些许时尚感。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/56241727-6c4c-48e6-8435-65f511403ac7.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="450" src="//img1.mydrivers.com/img/20260128/S56241727-6c4c-48e6-8435-65f511403ac7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这款机器配备了16英寸SSR星耀舒适屏，默认600nits、HDR开启后峰值1100nits的亮度将高色域、高色准优势凸显出来。而且这一亮度等级在目前的笔记本市场里罕有对手。&lt;/p&gt;
+&lt;p&gt;这块屏幕通过了严苛的VESA Display HDR TrueBlack 1000认证，四边超窄边框OLED大屏有着高达90%的屏占比，支持2880×1800分辨率，16:10黄金比例为生产力应用带来极为出色的视觉体验。它还支持60Hz/120Hz刷新率切换，支持莱茵硬件级低蓝光/无频闪认证。&lt;/p&gt;
+&lt;p&gt;其机身重量大约为1.7kg，对比市面上其它品牌的16英寸笔记本电脑要更轻便一些。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/08e1d19e-05d0-44a4-913c-7f7523ea735a.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="450" src="//img1.mydrivers.com/img/20260128/S08e1d19e-05d0-44a4-913c-7f7523ea735a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;底部开有大面积散热窗，内置双风扇散热模组，确保整体的散热效率。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/b5f741dd-1eff-4f41-9a6c-98a9d7063a74.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="450" src="//img1.mydrivers.com/img/20260128/Sb5f741dd-1eff-4f41-9a6c-98a9d7063a74.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;整个C面同样给人以简约、干练的印象。全尺寸白色背光键盘采用了1.5mm键程设计，手感舒适，独立数字键区必须给个好评！硕大的触控板位于空格键正下方，操控起来极为顺滑。方向键并未采用半高设计，足见联想在设计产品时极为关注用户需求，避免了不少雷点。标志性的Fn+Q性能模式快速切换功能延续下来。&lt;/p&gt;
+&lt;p&gt;另外可以看到因为是工程样机，所以C面腕托区域并未贴英特尔第三代酷睿Ultra处理器的硬件标识，实际上市产品会贴。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/28a05b5e-a6ab-4aeb-8c87-c1e74995219a.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="450" src="//img1.mydrivers.com/img/20260128/S28a05b5e-a6ab-4aeb-8c87-c1e74995219a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/4321a448-3af9-43df-8d86-220959282aa2.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="450" src="//img1.mydrivers.com/img/20260128/S4321a448-3af9-43df-8d86-220959282aa2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小新Pro 16 GT酷睿版提供了大满贯接口，有着出色的扩展性。机身左侧双满血雷电4接口同时可以满足数据高速传输、视频输出、PD充电的需求，标准的HDMI 2.1视频端口方便外接屏幕。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/b5761556-5a16-4b8b-a835-fe7d45581c26.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="450" src="//img1.mydrivers.com/img/20260128/Sb5761556-5a16-4b8b-a835-fe7d45581c26.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;机身右侧的2个USB 3.2 Gen 1 Type-A使用便捷，标准SD读卡器相比不少产品配备的MicroSD读卡器更加实用。另外电源键设计在侧面的话，外接显示器就会更加方便，开机时不用打开屏幕。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/c3c6367a-8368-4e9a-a79f-4e9d7dabce03.jpg" target="_blank"&gt;&lt;img alt="相当完美的新一代移动处理器！英特尔酷睿Ultra X9 388H实测" h="450" src="//img1.mydrivers.com/img/20260128/Sc3c6367a-8368-4e9a-a79f-4e9d7dabce03.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过一系列深入测试可以看到，首个Intel 18A制程工艺打造的Panther Lake处理器可以说是交出了一张完美答卷。&lt;/p&gt;
+&lt;p&gt;这颗酷睿Ultra X9 388H在CPU、GPU、NPU性能上没有短板。映射在实际应用端的话，从生产力办公，到游戏，再到AI等常见应用都可以提供极为出色的性能体验。&lt;/p&gt;
+&lt;p&gt;同时其在能效方面表现突出，搭配大容量锂电池可以达成超过24小时以上的续航能力。而且在实际应用中，4K网络流媒体连续播放续航达到20小时左右，这意味着长续航不再是ARM+MacOS阵营的独有优势，英特尔第三代酷睿Ultra处理器让x86+Windows阵营也有了超长续航能力。&lt;/p&gt;
+&lt;p&gt;然而可以预见的是，基于酷睿Ultra X9 388H打造的新一代轻薄本或AI PC的价格并不便宜，尤其是在内存、硬盘等配件集体涨价的情况下，酷睿Ultra X9 388H机型面临的销量压力着实不小。&lt;/p&gt;
+&lt;p&gt;而从目前第三代酷睿Ultra家族的构成来看，笔者个人预计酷睿Ultra 5 338H，也就是搭载10个Xe核心的锐炫B370核显的处理器，更大概率会成为销量甜点。&lt;/p&gt;
+&lt;p&gt;因此，如果单从Intel 18A制程，以及酷睿Ultra X9 388H处理器自身各种性能、能效表现来看的话，这绝对是有史以来最完美的一颗移动端PC处理器。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 12:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0zRlFZcE9FMy1ReUNjS3NNdHQzNnRQMmdIaFNldzY2bHpzSFZ2UFI4WGxGRml3bnI5bXgwd1Y1SE5HRkFfajFneVBHS3QzR1hsNEZqcEdneGM</guid></item><item><title>机箱新花样！日本厂商推隐身模式主机：一键从透明变朦胧美 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101070.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;机箱新花样！日本厂商推隐身模式主机：一键从透明变朦胧美&lt;/p&gt;
           
@@ -65,7 +224,27 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 11:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE50TGFmemtiRTVlcjZDdDVBdFlUd2dGQ1N1N0lHNDdISHY2NFVWU1RGb0hiSDQ0M0ZvVkE0S0cwM1JaSFZ5SlVOaHpweUhDVmtMcjhhMUhVMGg</guid></item><item><title>Dify女装程序员火了！网友：乍一看是女的 开口直接没绷住 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101057.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 11:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE50TGFmemtiRTVlcjZDdDVBdFlUd2dGQ1N1N0lHNDdISHY2NFVWU1RGb0hiSDQ0M0ZvVkE0S0cwM1JaSFZ5SlVOaHpweUhDVmtMcjhhMUhVMGg</guid></item><item><title>观点交锋！高晓松直言AI音乐追不上人类 遭昆仑万维董事长当场打断 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101058.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技1月28日消息，今日，昆仑万维发布Mureka V8音乐大模型，宣布该模型在音乐旋律、人声表现力，编曲/结构和情绪表达与渲染能力方面，均取得了超越国际知名AI音乐创作平台Suno的水平。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260128/a9b5f26520054838ac8faa8dc0c41c3c.png" target="_blank"&gt;&lt;img alt="观点交锋！高晓松直言AI音乐追不上人类 遭昆仑万维董事长当场打断" h="405" src="//img1.mydrivers.com/img/20260128/s_a9b5f26520054838ac8faa8dc0c41c3c.png" w="524"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;发布会上，知名音乐人高晓松在谈及AI音乐创作对音乐产业乃至于自己的影响时指出：“我是一个来自上个世纪的音乐人，但并不担心AI会追上或超越自己。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;随后，他进一步以行业过往现象为例补充道，在过去的音乐行业中，普遍存在这样一种创作与发行逻辑：一张专辑若缺乏优质曲目，便难以获得市场关注与良好的商业收益；&lt;/p&gt;
+&lt;p&gt;而只要包含几首优质作品，其商业价值便不会有太大差距。这一现状也导致创作者往往仅在一张专辑中投放少量优质歌曲，搭配约80%的普通曲目，将其余优质作品留存至后续专辑中发布。&lt;/p&gt;
+&lt;p&gt;谈及于此，昆仑万维董事长周亚辉打断道：&lt;strong&gt;“我明确明显地感觉到他其实心里是完全不服自己会被AI所颠覆的，完全不相信他会被AI所beta的，但是他很矛盾，所以他会一上来说自己是一个上一时代的音乐人。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;周亚辉解释称，在Mureka V1.0发布或者到V6.0发布的时候，自己对AI会不会颠覆音乐产业也将信将疑，但是当公司真正把 V8训练出来的时候，自己听到V8创作的音乐时，就100%的觉得音乐产业肯定要变化了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“V8上线之后，大家可以去听它做的歌，然后再回过头来听V 1.0做的歌，你会发现进步太大了，一年半到两年的时间，我觉得有10倍甚至100倍的进步。”周亚辉表示。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;公开资料显示，北京昆仑万维科技股份有限公司成立于2008年3月，公司主营业务涵盖游戏研发与全球发行、人工智能大模型开发及多模态应用。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 10:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5QdmMzSFhKZl9IZjJTQTdacXJzSElWbHJZbUlSSWpqVDJLVFljQTZqaHUyeDJyTGhaelZwNVFnQTVoRjlHQk9PMEdxUWVDYWczSEJfQXJIaWE</guid></item><item><title>Dify女装程序员火了！网友：乍一看是女的 开口直接没绷住 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101057.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;Dify女装程序员火了！网友：乍一看是女的 开口直接没绷住&lt;/p&gt;
           
@@ -131,7 +310,221 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 10:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBucEpkM2pQUDVUYm5Gdk91dWRPT3Z6RHM1YXJzYXNqVmdxSXhyRFpQemN3T2pCYk41Z182Z2pmRW15SXZNODhlamhSZlF6ZF82NWltY2pUOXQ</guid></item><item><title>中国AI“三杰”同日轰炸，召唤百个Agent的门票终于发到每个人手里-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_01_28_805328.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 10:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBucEpkM2pQUDVUYm5Gdk91dWRPT3Z6RHM1YXJzYXNqVmdxSXhyRFpQemN3T2pCYk41Z182Z2pmRW15SXZNODhlamhSZlF6ZF82NWltY2pUOXQ</guid></item><item><title>300万一张票 中国版太空旅游来了 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101055.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;当维珍银河的太空船划破天际，当蓝色起源的飞行器载着游客在亚轨道飞行，太空旅游早已不再是科幻电影里的想象，而正成为可预订的现实服务。如今，这股浪潮也正式登陆中国。&lt;/p&gt;
+&lt;p&gt;1月22日，北京穿越者载人航天科技有限公司（以下简称“穿越者”）举行“太空旅游全球发布会”，揭晓了首批十余位太空游客阵容，阵容横跨文娱、科技、创投等领域——&lt;/p&gt;
+&lt;p&gt;青年演员黄景瑜、智元机器人CMO邱恒、众擎机器人PM01、知名户外品牌探路者品牌创始人王静、啟赋资本董事长兼创始人傅哲宽等，成为了首批“中国太空游客”。&lt;/p&gt;
+&lt;p&gt;根据规划，“穿越者壹号”载人飞船预计2028年实现载人首飞，这场旅行的核心体验是2.5小时的亚轨道飞行，乘客将被送至100公里高的卡门线——国际公认的太空边界。在那里，他们将体验约几分钟的失重状态，并在太空中俯瞰地球。&lt;/p&gt;
+&lt;p&gt;更引人注目的是价格门槛。据悉，穿越者船票预售价格为300万元/张，预付10%，即30万元可锁定名额。这一数字虽仍属高净值人群消费范畴，但相较早期动辄数百万美元的国际报价已大幅下探。&lt;/p&gt;
+&lt;p&gt;“通过重复使用技术，穿越者壹号（CYZ1）船票价格已从亿元级降至百万元级”穿越者创始人雷诗情表示，未来目标是下探至数十万元级，为太空旅游大众化铺路。&lt;/p&gt;
+&lt;p&gt;这一愿景正加速照进现实。自维珍银河、蓝色起源与SpaceX相继完成商业载人飞行以来，亚轨道旅游已进入常态化试运营阶段，全球市场快速扩容，在这场关乎未来的产业竞争中，以穿越者为代表的中国玩家已然就位。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;前央视主持人跨界造飞船，计划2028年实现首飞&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在清一色由技术大牛主导的硬科技创业圈，雷诗情的跨界履历显得格外亮眼。她本科就读于暨南大学新闻专业，硕士毕业于中国人民大学，曾担任央视《逐梦太空》商业航天专题系列片主持人，长期深耕国内外商业航天领域，积累了深厚的行业洞察。&lt;/p&gt;
+&lt;p&gt;“中国人的太空旅游，一定要由中国人来打造。”雷诗情认为，一个大众太空时代的正在到来，而太空旅游是一个兼具商业价值与社会意义的黄金赛道，它让产业链从技术驱动转向需求拉动。&lt;/p&gt;
+&lt;p&gt;基于这一判断，雷诗情于2023年初正式跨界创业。与国内多数聚焦运载火箭研发的同行不同，穿越者自成立之初便锚定差异化赛道，避开与国家队及头部企业的直接竞争，不涉足火箭制造，而是集中核心资源深耕载人飞船研发，聚焦“载人太空旅游”这一C端应用场景。&lt;/p&gt;
+&lt;p&gt;目前，穿越者已经与蓝箭航天、星河等中国民营火箭公司达成合作，成为这些民营火箭公司的超级用户，其开放接口、多家合作的模式，规避了单一供应链风险。&lt;/p&gt;
+&lt;p&gt;在技术层面，穿越者的核心技术包括亚轨道飞行高精度、高舒适度自主返回控制技术；基于大推力发动机与人工智能强化学习等在线轨迹规划算法技术；基于国内现有技术基础，创新性设计的逃逸系统可回收重复使用技术等。&lt;/p&gt;
+&lt;p&gt;目前，穿越者核心产品是自主研发的“穿越者壹号”（CYZ1）可重复使用载人飞船，该飞船是国内首艘瞄准全可重复使用设计的载人飞船，在国家神舟飞船及新一代飞船实现返回舱部分可重复使用的研制基础上，通过创新性的飞船构型设计及逃逸、结构、回收等关键系统的可重复使用设计，实现飞船质量99%可重复使用。&lt;/p&gt;
+&lt;p&gt;作为对标美国蓝色起源“新谢泼德号”的产品，“穿越者壹号”差异化在于：不仅采用先进推式逃逸技术，具备高精度返回及无损着陆回收能力，还拥有更大的舱内飞行空间与更长的体验时长，功能上可实现载人、载货两用。&lt;/p&gt;
+&lt;p&gt;近期，穿越者的技术研发迎来关键突破。2026年1月18日，穿越者完成了“穿越者壹号”载人飞船试验舱的着陆缓冲系统综合验证试验。其自主研发的“云感着陆”系统，能够将舱体整体触地冲击过载稳定控制在5g以内，远低于人体耐受极限。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/021f3ec8-90a8-4a1a-a14f-f53c1e604bfa.png" target="_blank"&gt;&lt;img alt="300万一张票 中国版太空旅游来了" h="393" src="//img1.mydrivers.com/img/20260128/S021f3ec8-90a8-4a1a-a14f-f53c1e604bfa.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;来源：网络&lt;/p&gt;
+&lt;p&gt;穿越者方面表示，作为我国商业航天领域首个载人飞船全尺寸试验舱着陆缓冲关键技术验证项目，此次试验的成功意义重大，标志着穿越者成为继SpaceX和蓝色起源之后，全球第三家掌握并验证该核心技术的商业航天企业。&lt;/p&gt;
+&lt;p&gt;值得注意的是，这三家企业的发展路径存在显著差异：穿越者专注亚轨道旅游，以“云感着陆”技术打造舒适、较低成本的消费级体验；蓝色起源深耕亚轨道航天领域，技术路径从亚轨道小型火箭逐步向轨道级大型火箭延伸；SpaceX则聚焦轨道飞行与深空探索。&lt;/p&gt;
+&lt;p&gt;按照规划，穿越者将分三步推进太空旅游落地：2028年实现亚轨道商业首飞，2032年开启近地轨道多天驻留服务，2038年推出地月空间“回望地球”体验，逐步构建多层次太空旅游产品矩阵。&lt;/p&gt;
+&lt;p&gt;资本的持续加注为这一规划提供了坚实保障，天眼查数据显示，穿越者自成立以来融资节奏紧凑：2023年9月获南粤基金数百万元种子轮投资，2024年11月获啟赋资本3000万元天使轮融资，2025年6月完成彬复资本、中天汇富数千万元天使+轮融资，同年8月再获启迪之星创投、中天汇富、启榕创投天使++轮融资，持续夯实技术研发与运营筹备基础。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;商业航天热潮涌动，中国玩家加速入场&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;穿越者的高调亮相，并非孤立的商业事件，而是全球商业航天产业全面提速的一个缩影。在太空经济蓬勃发展的背景下，商业航天正成为继新能源、人工智能之后的又一热门赛道，吸引着资本、技术与人才的密集涌入，而太空旅游则是其中最具想象空间的细分领域。&lt;/p&gt;
+&lt;p&gt;据Grand View Research调查统计，2023年全球太空旅游市场规模价值8.514亿美元，预计2032年市场规模约278亿美元，年复合年增长率（CAGR）为44.8%。&lt;/p&gt;
+&lt;p&gt;国际市场上，先行者们早已开启太空旅游的常态化运营。近几年来，维珍银河、蓝色起源、SpaceX等企业陆续完成首次载人太空飞行，打破了政府主导太空探索的传统格局。&lt;/p&gt;
+&lt;p&gt;其中，蓝色起源的“新谢泼德”飞行器于2021年完成首次载人试飞，此后持续迭代升级，截至2026年1月，已完成38次太空飞行，其中17次为载人飞行，最新一期任务搭载6名游客完成约10分钟的太空之旅，验证了其技术的可靠性与安全性。&lt;/p&gt;
+&lt;p&gt;马斯克旗下的SpaceX于2021年将四名普通游客送入近地轨道，开启了无专业航天员陪同的商业太空旅游新模式。这些国际先行者的成功，为中国商业航天企业提供了清晰的技术范本与商业参考，也让市场看到了商业太空旅游的巨大潜力。&lt;/p&gt;
+&lt;p&gt;在中国，政策支持与资本加持正共同推动商业航天产业进入发展快车道。近年来，国家层面密集出台多项政策，鼓励民间资本参与航天产业，提出积极打造商业航天新增长引擎，作为培育未来产业的一部分，为商业航天企业提供了良好的发展环境。&lt;/p&gt;
+&lt;p&gt;在此背景下，大量创业团队纷纷涌入商业航天领域，形成了覆盖上游火箭、卫星制造，中游测控、发射服务，下游应用场景开发的全产业链布局。&lt;/p&gt;
+&lt;p&gt;除了聚焦运载火箭的蓝箭航天、星际荣耀、星河动力等企业，更多玩家开始探索差异化赛道，例如聚焦遥感数据服务的星际光遥、专注卫星制造的天兵科技、供应卫星通信地面设备的航天环宇……而穿越者则选择了更贴近C端的载人太空旅游，这既避开了与国家队在发射服务上的直接竞争，又抓住了全球高净值人群对“太空体验”的新兴需求。&lt;/p&gt;
+&lt;p&gt;资本端的热度同样居高不下，国内商业航天企业的融资与IPO进程同步提速。1月24日，证监会官网显示，中科宇航上市辅导状态更新，由“辅导验收”变更为“辅导工作完成”；1月22日，蓝箭航天科创板IPO进入“已问询”状态；星河动力、星际荣耀等企业也密集更新IPO辅导进展……&lt;/p&gt;
+&lt;p&gt;机遇背后，挑战亦不容忽视。商业太空旅游的规模化落地，不仅需要技术层面的持续迭代，还需攻克安全监管、游客培训、应急处置等一系列难题。目前，全球范围内尚未形成统一的商业太空旅游监管标准，如何在保障绝对安全的前提下推进商业化运营，是所有从业者面临的共同课题。&lt;/p&gt;
+&lt;p&gt;对于穿越者而言，&lt;strong&gt;2028年的亚轨道首飞不仅是技术验证的关键节点，更是对其运营能力、合规能力与风险管控能力的全面考验。&lt;/strong&gt;未来，随着技术不断成熟、门槛持续降低，中国人的太空梦，或许将从“少数人的体验”变为“大众的向往”。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/39a0e233-2ecd-43a3-b36e-8293c2a83fc2.png" target="_blank"&gt;&lt;img alt="300万一张票 中国版太空旅游来了" h="469" src="//img1.mydrivers.com/img/20260128/S39a0e233-2ecd-43a3-b36e-8293c2a83fc2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 10:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1PSnVsNFF0cVBlTzVaQ3g2bDhaVTlNQ2otWVBSNDl5NF9COEJxSTNVTnMwMDh2cEw1ak9MNUZTSmZDMHZ0OEc1LUlfX0JfdDMwQ25TYmRTZG8</guid></item><item><title>小米最强旗舰芯片！玄戒O2继续使用台积电3nm工艺 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101038.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;小米最强旗舰芯片！玄戒O2继续使用台积电3nm工艺&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-01-28 17:45:43  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1101038-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技1月28日消息，去年5月，小米正式推出自主研发的旗舰SoC——玄戒O1，这颗芯片由玄戒团队自主设计，采用台积电第二代3nm工艺，CPU和GPU都采用了Arm方案，多核跑分成绩超过9000分，跻身行业第一梯队。&lt;/p&gt;
+&lt;p&gt;但小米并未大范围在其自家产品上应用玄戒O1，仅小米15S Pro及小米平板7 Ultra等少量产品搭载。&lt;/p&gt;
+&lt;p&gt;小米创办人雷军曾在接受采访时表示，研芯片需要有三到四年的研发周期，第一代是在验证技术，所以预定数量少，下一步我们会全部自研四合一的域控制，为将来小米自研芯片上车做好准备。&lt;/p&gt;
+&lt;p&gt;进入2026年，小米玄戒O2提上日程。据博主爆料，&lt;strong&gt;玄戒O2继续采用台积电3nm工艺，消息称其工艺制程升级为&lt;span&gt;台积电第三代3nm工艺N3P&lt;/span&gt;&lt;/strong&gt;，无缘台积电最新的2nm工艺。这颗芯片不仅会应用到小米手机上，还将搭载在小米其它智能设备上，进一步拓展自研芯片的应用场景。&lt;/p&gt;
+&lt;p&gt;业内人士指出，手机SoC芯片是系统级芯片，集成CPU、GPU等系统核心部件，对性能功耗平衡、设计水平有严苛要求，&lt;strong&gt;玄戒的这次创新突破，有望推动国产半导体供应链升级。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260128/a268db4823e24f4487b2a57ad85aa949.jpg" target="_blank"&gt;&lt;img alt="小米最强旗舰芯片！玄戒O2继续使用台积电3nm工艺" h="399" src="//img1.mydrivers.com/img/20260128/s_a268db4823e24f4487b2a57ad85aa949.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 09:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9jc1EyZ3BkTUJFQnpDdmRNWmkya2puVFJPT0h4djRnLVFQZV9IcThnLXU3VWZ1bmdRN1NMWmhuOW1xVjZGZjFTTWd2Rzc1dlVMc29YbGEta0Y</guid></item><item><title>会做生意！饭店老板在桌上放牌子：英伟达CEO千亿富豪黄仁勋坐过的位置 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101032.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;会做生意！饭店老板在桌上放牌子：英伟达CEO千亿富豪黄仁勋坐过的位置&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-01-28 17:29:57  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/801442.html" title="朝晖的主页" class="newstiao4"&gt;朝晖&lt;/a&gt;&lt;p&gt;  编辑：朝晖 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1101032-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技1月28日消息，近日，一张饭店餐桌的照片在社交平台引发热议 ——&lt;span&gt; &lt;strong&gt;透明亚克力立牌上印着 “英伟达CEO千亿富豪黄仁勋先生坐过的位置” 字样，还搭配了黄仁勋用餐时的照片&lt;/strong&gt;&lt;/span&gt;，网友纷纷调侃 “老板太会做生意了”“这不得拿玻璃罩子罩起来”。&lt;/p&gt;
+&lt;p&gt;虽然照片并未透露具体饭店名称，但这块立牌精准抓住了流量密码。红色字体突出千亿富豪身份，搭配黄仁勋的用餐照片，既点明了话题核心，又自带传播属性。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260128/06d91d66afd94b299662453f17631ef9.jpg" target="_blank"&gt;&lt;img alt="会做生意！饭店老板在桌上放牌子：英伟达CEO千亿富豪黄仁勋坐过的位置" h="800" src="//img1.mydrivers.com/img/20260128/s_06d91d66afd94b299662453f17631ef9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不少网友在评论区表示 “想坐一下沾沾财气”，也有人笑称 “老板这波蹭热度的水平可以打满分”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这一营销操作的热度，源于英伟达CEO黄仁勋正在进行的中国行。&lt;/strong&gt;1月28日，全球最高市值公司英伟达的CEO黄仁勋出现在位于深圳市南山区的英伟达半导体（深圳）有限公司楼下，身穿黑色夹克和黑色裤子。&lt;/p&gt;
+&lt;p&gt;据悉，黄仁勋在上午参加完英伟达深圳公司的活动后，于中午12时左右下楼，与现场人群互动并签名，随后黄仁勋乘车离开。&lt;/p&gt;
+&lt;p&gt;据了解，本次中国行黄仁勋已经陆续到访上海、北京、深圳三大城市，他分别参加了三地分公司举办的新年活动，并参与面向核心供应商的答谢活动。除了参加年会外，主题是“逛吃”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在上海，黄仁勋出席了公司年会并到市场买水果，在北京他打卡了北京王府中环半山腰品尝云南菜，在深圳他吃了八合里牛肉火锅&lt;/strong&gt;，每一站的餐饮选择都成为网友讨论的话题。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260128/bea0c660eda04526ba10e24ef671de44.png" target="_blank"&gt;&lt;img alt="会做生意！饭店老板在桌上放牌子：英伟达CEO千亿富豪黄仁勋坐过的位置" h="346" src="//img1.mydrivers.com/img/20260128/s_bea0c660eda04526ba10e24ef671de44.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260128/07f39cc95df8487e809635fbed17046c.png" target="_blank"&gt;&lt;img alt="会做生意！饭店老板在桌上放牌子：英伟达CEO千亿富豪黄仁勋坐过的位置" h="338" src="//img1.mydrivers.com/img/20260128/s_07f39cc95df8487e809635fbed17046c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260128/ef5eed02e60d44af961ba8a9adf4eebd.jpg" target="_blank"&gt;&lt;img alt="会做生意！饭店老板在桌上放牌子：英伟达CEO千亿富豪黄仁勋坐过的位置" h="493" src="//img1.mydrivers.com/img/20260128/s_ef5eed02e60d44af961ba8a9adf4eebd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 09:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1EcXZxLVBxVDJ1UklHU1NiV01sblFSTE03RTN1ZF9XT3phem03WHUtNjl5Z09XTEhlSUtmenlLc2JoSzNaaUJ4RFloN2tPSEtHU0pqSjVYV1I</guid></item><item><title>终于肯改了！险些影响中国卫星发射，“星链后怕不已” - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/gn/2026-01-28/detail-inhiwaht8950979.d.html?vt=4&amp;cid=56261&amp;node_id=56261</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+	
+
+&lt;p class="art_p" cms-style="font-L"&gt;【文/观察者网 齐倩】&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;中方多次公开批评Space X“&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;星链&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;”的快速扩张及其带来的安全隐患。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;去年12月，中国代表在联合国安理会会议上指出，“星链”卫星曾两次迫近中国空间站致&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;紧急避碰&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;。 &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;据香港《南华早报》1月27日报道，中国科研人员近期研究发现，去年12月发生的最近一次“星链”设备险些与中国卫星相撞事件，直接促使Space X决定将超过4000颗卫星降到更低的轨道运行。&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;去年12月13日，Space X工程副总裁迈克尔·尼科尔斯在社交媒体X平台发文称，一颗卫星于当月10日与位于560公里高度的STARLINK-6079（56120）卫星擦肩而过，相距仅约200米。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;他还转发了中国商业航天企业中科宇航在酒泉卫星发射中心成功发射9颗卫星的新闻。 &lt;/font&gt;&lt;/p&gt;
+
+
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;今年1月2日，尼科尔斯又发帖表示，为提升太空安全，“星链”正在对其卫星星座进行重大调整。他宣布，今年，公司计划将运行高度约550公里的卫星（约4400颗，占“星链”所有在轨卫星的一半）降至约480公里，以“降低碰撞的总体概率”。 &lt;/font&gt;&lt;/p&gt;
+
+
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;1月26日，中国科学院软件研究所一组研究人员在媒体《太空与网络》发布题为《星链大规模降轨研判分析与近况跟踪》的报告。报告指出，“星链”设备最近一次与其他卫星近距离交会，险些酿成碰撞事故。“虽然最终无事，但思之仍心有余悸，为星链星座大范围降轨的直接原因。”&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;报告指出，基于天智巨星座研究平台研究发现，Space X公司未能及时发现新发射的卫星2025-292A。&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;观察者网科技评论员指出，星链的快速扩张，占据了部分500公里以上的轨道，对正常的卫星发射带来了重大的安全隐患，本次事件就是例证。&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;SpaceX方面此前一直强调降轨能让失效卫星更快再入大气层烧毁，但研究人员认为，此举也能帮助SpaceX“树立更负责任的运营商形象”。&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;据研究人员分析，降到更低轨道其实也能让“星链”卫星自身更安全。他们统计了2019年以来非“星链”卫星的初始轨道高度，发现大多数都位于500公里以上。中国等国的大型星座主要部署在500至600公里区间。“因此对星链来说，480公里附近的轨道比550公里要更加安全一些。” &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;报告也指出，低轨道运行虽然能改善信号强度、降低延迟，但大气阻力会大幅增加，轨道维持耗燃料更快，卫星寿命缩短，整体成本上升。“根据分析，星链卫星在560公里高度平均每天&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;轨道衰减&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;约101米，而在485公里则达到约267米。” &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;研究人员特别提醒，不要一次性把4400颗卫星同时降轨，因为这将是史上最大规模的在轨机动，近距离接近事件的风险会急剧上升。一旦失控或发生碰撞，可能引发灾难性的连锁反应。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;最后，报告得出结论：“星链在技术可实现的基础上，利用此次大规模卫星降轨达到对国际批评的回应、频轨资源的占据、国际监管的规避以及增加行业话语权等多方面的目的，一举多得。” &lt;/font&gt;&lt;/p&gt;
+
+
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;此外，中方研究人员特别提到，“星链”此次调整，正值“对巨型星座安全风险的担忧日益加剧”之际。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;中国多次公开批评“星链”等商业卫星的快速扩张，指出其带来的运营隐患。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;早在2021年，时任外交部发言人赵立坚指出，当年7月和10月，“星链”卫星先后两次接近中国空间站。在此期间，中国航天员正在空间站内执行任务。出于安全考虑，中国空间站采取了紧急避碰措施。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;2022年2月，赵立坚重申，在相关避碰事件中，美国星链卫星均处于连续轨道机动状态，机动策略和意图不明。中国在轨航天员面临着现实、紧迫的安全威胁。中方不得不采取预防性碰撞规避控制。避碰事件发生后，中方主管部门多次尝试邮件联系美方，但均未收到回复。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;他当时指出，美方却以所谓“紧急碰撞标准下限”的说法推卸责任、转移视线。这并非一个航天大国应有的负责任态度。更何况，美方也无权单方面设定一个“紧急碰撞标准下限”。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;去年12月29日，中国代表在低地球轨道卫星问题安理会阿里亚模式会议上发言时表示，个别国家的商业卫星星座肆意扩张，缺乏有效监管，带来显著安全挑战。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;以“星链”为例，“星链”在轨卫星超1万颗，曾两次迫近中国空间站致紧急避碰，近期一颗解体产生100多枚碎片，严重威胁缺乏控轨能力的发展中国家航天器。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;此外，一些低轨卫星星座无视相关国家法律规定，在他国上空和边界私自开通信号服务，成为干预他国内政的工具。在非洲萨赫勒、南亚及东南亚地区，“星链”被暴恐分子、分离势力以及电诈集团大量使用，带来监管和执法难题。 &lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L italic"&gt;中国代表呼吁相关国家切实遵守《&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;外空条约&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;》义务，对本国商业航天活动加强监管。 &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;	
+
+	
+
+&lt;/section&gt;
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Wed, 28 Jan 2026 09:17:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMimAFBVV95cUxQTDVENDFrdHBuUEo2VlRDaS1CeVhIb3lBQUI5U2FyQnFJZ3NSSTV4Z3g1ZHpQTk9zMU9VemV2d3FpTm12MDZWWEJHMFlpY2FDbkpRWHBRelBmb2twSzlVVGhxYVhNZk9meWpSaFdNUkhaY2o4d0VoNzhHR25tMkkzU29Ba2xJU1dzQlFUS0lncl9OZFEyV0tzRg</guid></item><item><title>中国AI“三杰”同日轰炸，召唤百个Agent的门票终于发到每个人手里-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_01_28_805328.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
 &lt;/p&gt;
@@ -499,7 +892,62 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 08:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1oY1VobWw3Q3ZBTE1qRXYxbXVfemZTTk1RcV9VMEZweU1KQ0pNSFllVGhPTlhPUWt6cEcxb2dUa2V3WGR2X09Ob29FYTZNVEd1Rl9YeUpyc3c</guid></item><item><title>ClawdBot，正在引爆全球灾难，各大CEO预警：不要安装，不要安装 - 36 Kr</title><link>https://m.36kr.com/p/3658719429747589</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 08:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1oY1VobWw3Q3ZBTE1qRXYxbXVfemZTTk1RcV9VMEZweU1KQ0pNSFllVGhPTlhPUWt6cEcxb2dUa2V3WGR2X09Ob29FYTZNVEd1Rl9YeUpyc3c</guid></item><item><title>2026年国产手机涨价成定局 罪魁祸首是AI和芯片！ - 驱动之家</title><link>https://news.mydrivers.com/1/1100/1100999.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;2026年，全球智能手机市场站在一个关键的十字路口。行业核心研究机构IDC指出，市场已明确进入“总量承压、结构分化”的深刻调整期。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="2026年国产手机涨价成定局 罪魁祸首是AI和芯片！" h="337" src="//img1.mydrivers.com/img/20260128/61bbb4fb-2f2b-4a29-a2d8-9de21cfeaa45.png" w="598"&gt;&lt;/p&gt;
+&lt;p&gt;一方面，存储芯片等核心元器件的成本持续大幅上涨，成为笼罩在整个行业上空的压力。&lt;strong&gt;Counterpoint的数据显示，内存价格在2026年第二季度前可能再涨约40%，这直接导致手机物料成本攀升，尤其对低端机型冲击巨大。&lt;span&gt;成本压力正通过价格上涨向消费者传导，预计2026年全球智能手机平均售价将显著上涨6.9%。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;另一方面，市场增长动力悄然生变。高盛等机构已因此下调全球出货预期，认为成本上涨将抑制换机需求。IDC预测，2026年中国市场出货量可能出现2.2%的小幅下滑。&lt;/p&gt;
+&lt;p&gt;然而，这并非意味着市场的全面萎缩，在“量减价升”的表象之下，从产品定义、技术路线到消费逻辑和产业生态，一系列预示未来的关键风向标正在显现。&lt;/p&gt;
+&lt;p&gt;我们特此推出“2026手机圈五大风向标”深度专题，而本篇文章将聚焦于“手机行业的新一轮价格上涨”。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="2026年国产手机涨价成定局 罪魁祸首是AI和芯片！" h="504" src="//img1.mydrivers.com/img/20260128/436eddd3-fd75-46ff-88ef-9bc5d9b9100f.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;在科技制造领域，手机堪称低利润产品的典型代表。小米公司董事长雷军曾公开宣称，小米手机硬件综合毛利率绝不超5%。其他调研机构数据也表明，除苹果、三星、华为等企业外，其余手机厂商情况大致相同。正因如此，手机行业对上游原材料价格波动极为敏感，毫无缓冲空间，只能随行就市。2024年底，受台积电3nm工艺芯片涨价影响，小米15系列、vivo X200系列等机型就不得不调价。而如今，行业与消费者或将迎来比2024年更猛烈的涨价潮。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;双管齐下&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;与2024年的涨价潮有所不同，彼时手机厂商主要承受着来自高通、联发科等SoC供应商的成本攀升压力。&lt;strong&gt;而当下，除了核心的SoC成本高企，存储芯片也如同一记重拳，狠狠砸向手机厂商的成本控制防线。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="2026年国产手机涨价成定局 罪魁祸首是AI和芯片！" h="436" src="//img1.mydrivers.com/img/20260128/1abf06e9-f91b-4f10-a107-5ce1518597cd.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;先聚焦于SoC领域。2026年下半年，高通将推出第六代骁龙8至尊版，联发科则会发布天玑9600处理器。这些全新旗舰SoC极有可能采用台积电先进的2nm工艺。目前披露的信息显示，台积电2nm工艺优势显著，在相同功耗下，相比3nm工艺性能可提升10% - 15%；若保持相同性能，功耗则能降低25% - 30%。然而，先进工艺的背后是高昂的成本，2nm晶圆代工费用高达3万美元/片，较3nm工艺上涨了50% - 66%。这一涨幅直接导致苹果A20芯片成本飙升至280美元，增幅高达80%，成本压力可见一斑。&lt;/p&gt;
+&lt;p&gt;我们再把目光投向存储芯片行业。熟悉手机圈的网友或许有所耳闻，自2025年下半年起，由于AI行业需求激增，大量存储芯片产能被挤占，不少手机公司的高管或员工便在公开渠道预警手机存储芯片价格将上涨。不过，目前很多人对此并未有切身感受。而最新的一则爆料显示，&lt;span&gt;&lt;strong&gt;同样是LPDDR5x+UFS4.0的配置，如今12GB+256GB版本手机的存储芯片成本，已超过2025年第一季度16GB+1TB版本手机的存储芯片成本。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如今，在一台16GB+1TB的手机中，存储芯片已然成为最大的单一成本项。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="2026年国产手机涨价成定局 罪魁祸首是AI和芯片！" h="355" src="//img1.mydrivers.com/img/20260128/7e90da36-239e-478b-9443-3e46236339df.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;在此严峻背景下，硬件综合毛利率普遍不超过5%的手机企业已退无可退。摆在它们面前的，似乎只有两条路可走：要么降低手机配置，以压缩成本；要么提高产品售价，将成本压力转嫁给消费者。这场由SoC和存储芯片成本上涨引发的涨价风暴，正席卷整个手机行业。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;厂商们的应对&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;尽管手机厂商提前数月便发出了涨价预警，但要让消费者欣然接受产品大幅溢价，依旧困难重重。为此，厂商们精心规划了多条应对策略。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="2026年国产手机涨价成定局 罪魁祸首是AI和芯片！" h="270" src="//img1.mydrivers.com/img/20260128/90708e5a-b13a-48bb-bbcb-b8c3f1756c1a.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;在成本高昂的SoC领域，今年高通第六代骁龙8至尊版移动平台首次采用双版本策略，推出标准版和Pro版。显然，高通也清楚继续涨价的2nm芯片会给手机厂商带来的巨大压力，但技术升级的步伐不能停滞，于是选择这种折中方案。预计2026年，像小米18等标准版旗舰机型会搭载标准版第六代骁龙8至尊版，而小米18 Ultra等定位更高的机型则会配备性能更极致的Pro版。如此一来，入门旗舰机型价格有望得到控制，但顶配旗舰价格上涨恐怕在所难免。&lt;/p&gt;
+&lt;p&gt;存储芯片方面，情况同样不容乐观。可以确定的是，16GB＋1TB等大存储配置手机正从中端市场悄然退场，未来或许只有旗舰机型，甚至Ultra级机型才会配备。同时，产品价格也在上调。2025年底，受存储芯片影响，小米、荣耀等厂商已对部分千元入门平板涨价。手机市场则可能通过撤回已降价优惠的方式变相涨价，部分顶级Ultra机型售价还可能继续上扬。不过，苹果、华为等硬件综合毛利率较高的企业，因有更高的缓冲空间，或许不在此次调整之列。&lt;/p&gt;
+&lt;p&gt;此外，据此前媒体报道，小米、OPPO、vivo等头部厂商已集体下调2026年中低端机型出货计划，幅度达15% - 20%，部分厂商甚至直接取消千元机新品上市计划；传音也将年度目标砍至7000万台以下。这一系列举措旨在优先保障利润，避免陷入“卖一台亏一台”的困境。厂商们还刻意拉大不同存储配置版本间的价格差距，例如将12GB + 512GB与12GB + 256GB版本差价从400元提高到600元，引导消费者购买利润更高的大内存版本。而在中高端市场，厂商们正集中资源投入利润空间更充裕的机型，力求重建规模与利润的平衡。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;我们应该怎么做？&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;2026年，对厂商和消费者而言，都注定是充满挑战的一年，难言友好。机构Counterpoint Research的最新预测显示，在人工智能硬件需求激增、推高芯片与存储器成本的大背景下，全球智能手机市场将在2026年面临收缩，行业整体呈现出“量减价升”的严峻态势。其最新报告将2026年全球智能手机出货量预测大幅下调约2.6%，预计出货量同比下降约2.1%，并且不再局限于少数品牌下滑，而是“几乎所有主要厂商”都将遭遇年度出货量的下跌。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="2026年国产手机涨价成定局 罪魁祸首是AI和芯片！" h="361" src="//img1.mydrivers.com/img/20260128/695b18e4-09fa-4bf6-ad23-db0718ddb8d0.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;对于消费者来说，当下的选择颇为有限，主要有三条路径可走。倘若你今年有换机的打算，那么尽早行动不失为一个明智之选。当前，手机市场产品价格虽已受到成本上涨的波及，但市面上仍有大量此前生产的现货，所以整体影响尚未充分显现。此时入手，或许能以相对合理的价格买到心仪的手机。&lt;/p&gt;
+&lt;p&gt;要是你并无近期购机的计划，不妨将换机时间推迟至2027年。有机构预计，这一波存储芯片的周期性紧张局面将在2027年得到缓解，届时手机价格或许会有所回落。&lt;/p&gt;
+&lt;p&gt;此外，消费者还有另一个选择——考虑老款旗舰机型。手机行业是一个规模化效应极为显著的行业，这也是众多厂商即便硬件利润率微薄，部分机型上市一年后仍能大幅降价的原因所在。2025年上半年甚至更早发布的老款旗舰，其生产成本相较于新机型有着明显优势，受此次涨价潮的影响较小。当然，选择老款旗舰也意味着要舍弃最新款的芯片、电池和影像等前沿配置，但换来的是更实惠的价格和相对稳定的性能。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;写在最后&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;和2025年不同，2026年的手机行业注定会在成本重压与结构调整中步履维艰。我们正在步入一个艰难的冬天，但要相信的是，没有一个冬天不可跨越，也没有一个春天不会来临。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 08:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBWSzBXWkhINF9wNjA2QVdFSHVTUTlHYkVhUHk4QkdzWkhxQks3b0NGZjh0ZklyS2ZQdXN0dXgzUW5LNEpYWUJyRFdIS2pEM3duS3QxaTN4S1I</guid></item><item><title>华尔街传奇大空头“剑指”数据中心：AI交易中最不该碰的领域！ - 财联社</title><link>https://www.cls.cn/detail/2272560</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社1月28日讯（编辑 黄君芝）&lt;/strong&gt;华尔街传奇大空头、投资公司Kynikos Associates的总裁兼创始人吉姆·查诺斯（Jim Chanos）对人工智能（AI）交易中的一大领域发出了警告——数据中心。&lt;/p&gt;
+&lt;p&gt;诚然，数据中心蓬勃发展是2025年的主要市场趋势之一，科技公司竞相建设基础设施以支持其人工智能雄心。但查诺斯认为，&lt;strong&gt;投资者应该通过构建人工智能模型的公司来寻求人工智能投资机会，而不是通过为这些模型提供支持的数据中心。这与他一贯的理念相符。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从过往的履历来看，查诺斯最为人熟知的一段经历可能是他在2000年底和2001年初对安然公司做出的极具预见性的做空押注，当时安然公司的会计欺诈行为还远未曝光。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;而在运营了近四十年后，查诺斯于2023年将自己的对冲基金转变为家族办公室。他曾抱怨，秉持做空风格的基金经理很难筹集资金，尽管他认为这是一个“欺诈行为的黄金时代”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不过值得注意的是，查诺斯近年来的一些押注并不像他20年前押注安然时那么成功。在特斯拉股价飙升的五年多时间里，查诺斯做空了该公司。而且在2022年，他还做空了数据中心，尽管事实证明，数据中心是人工智能热潮中利润丰厚的一部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本周，在芯片巨头英伟达宣布向人工智能基础设施公司CoreWeave追加投资20亿美元后，查诺斯指出了一些令人担忧的因素，他认为这些因素表明这种增长不可持续。&lt;/p&gt;
+&lt;p&gt;英伟达此前已是CoreWeave的投资者，并曾承诺在2032年前从该公司采购超过60亿美元的服务。&lt;/p&gt;
+&lt;p&gt;尽管CoreWeave的股价在过去一年里持续上涨，但一些金融专家对该公司的业务及其盈利前景表示担忧。查诺斯就其中之一，他指出，“在这种情况下，你应该持有构建大模型的公司，而不是建造数据中心的公司。前者是科技公司，后者是房地产投资信托基金（REITs）。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在他看来，数据中心公司可能被投资者视为科技公司，但从经济角度来看，它们更像是房地产投资。&lt;/strong&gt;查诺斯以CoreWeave为例，质疑投资者是否关注实际的基本面，而不是仅仅被人工智能的热潮所吸引。&lt;/p&gt;
+&lt;p&gt;“还有人会费心去核实这些极度乐观的说法，比如看看他们的实际财务报表吗？”他问道：“因为根据CoreWeave第三季度年化业绩，就算按照10年使用寿命计算GPU折旧，该公司依然会亏损！”&lt;/p&gt;
+&lt;p&gt;此前，CoreWeave公布的第三季度收益超过了华尔街的营收预期，但该公司也下调了对来年的业绩预期，并透露与数据中心合作伙伴相关的项目暂时延期。&lt;/p&gt;
+&lt;p&gt;当然，这并非查诺斯第一次对数据中心热潮表示怀疑。在之前的采访中，他曾强调，如果企业开始仔细审查其巨额资本支出带来的投资回报率，可能会出现问题。&lt;/p&gt;
+&lt;p&gt;“我开始担心，目前在人工智能的实体繁荣发展方面投入了太多资金——数据中心、芯片等等的建设——以至于如果有人停下来问问自己，‘我们在这里真正的经济回报是什么？’这可能会是个大问题。”他说。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Wed, 28 Jan 2026 07:43:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE5XNVpfOWlCSkwzMUZkMzZvNS0tdXBicjBkb044LXYzclozeVp2Ykg3V2RVUVFGZ0FtTkN3SjE1WUJHZmpDbkp0Qg</guid></item><item><title>ClawdBot，正在引爆全球灾难，各大CEO预警：不要安装，不要安装 - 36 Kr</title><link>https://m.36kr.com/p/3658719429747589</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
  
  
   &lt;p&gt;&lt;strong&gt;【导读】一夜爆红的ClawdBot，正在把无数公司和个人推向深渊：端口裸奔、无鉴权、可被远程接管。现在，暴力破解、数据清空已经真实发生了，这不是危言耸听。各位CEO纷纷预警：ClawdBot，正在酝酿一场全球灾难！&lt;/strong&gt;&lt;/p&gt;
@@ -1163,7 +1611,25 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 06:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE11WWVSRmRYc0h6bW5KelFkdWh4bWF6Wm5XN3pXbEJPcG9nZHh3UE0yanc1enVzcGtmbjVYekpXbkVJRHZMSi1kd0ZzQkRJVlZFR1c2WU9adC0</guid></item><item><title>天价IPO遇上玄学！SpaceX拟6月上市，赶上“行星连珠”与马斯克生日 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3764334</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 28 Jan 2026 05:52:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5RRnFHTlNuaXJQQlY4X180elZiWW0yRWlGNi1sUlFQOUwyWnFCQWVBNWd2OW5qUFpXckdFMXNwQmJSTDhBUU1DZkxuS3dCSzZwMVUw</guid></item><item><title>内存价格翻倍，iPhone变贵？天风郭明錤：苹果的策略是"承担成本抢份额，用服务赚回来" - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3764326</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 28 Jan 2026 04:58:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE4xdUpiWnVqUlR4T1BCNlBudFI5SFB1UTZYQ3lFeDl0RHplUDhjU2hsZ1hwQlJmanE0UTcxOGduU0prUXNtLTVJbGI4VGtVTUE0ekFZ</guid></item><item><title>徕卡 10 亿欧元卖身，为什么小米一定不能买？ - 36 Kr</title><link>https://m.36kr.com/p/3658536629052037</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 06:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE11WWVSRmRYc0h6bW5KelFkdWh4bWF6Wm5XN3pXbEJPcG9nZHh3UE0yanc1enVzcGtmbjVYekpXbkVJRHZMSi1kd0ZzQkRJVlZFR1c2WU9adC0</guid></item><item><title>黄仁勋现身英伟达深圳公司楼下 参加年会并“逛吃” - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/gn/2026-01-28/detail-inhivrsx9063692.d.html?vt=4&amp;cid=56261&amp;node_id=56261</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+	
+
+&lt;p class="art_p" cms-style="font-L"&gt;人民财讯1月28日电，1月28日，全球最高市值公司——英伟达的CEO黄仁勋出现在位于深圳市南山区的英伟达半导体（深圳）有限公司楼下，身穿黑色夹克和黑色裤子。证券时报记者在现场了解到，黄仁勋在上午参加完英伟达深圳公司的活动后，于中午12时左右下楼，与现场人群互动并签名之后，黄仁勋乘车离开。此前在2025年1月，黄仁勋曾在深圳公司的年会上派发“万元大红包”，包括十多个1万元和2.5万元的红包，以及五个4万元的红包，当时黄仁勋在现场表示，下次到访时红包金额将达到10万元。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;据了解，本次“中国行”黄仁勋已经陆续到访上海、北京、深圳三大城市，他分别参加了三地分公司举办的新年活动，并参与面向核心供应商的答谢活动。除了参加年会外，本次中国行的主题是“逛吃”。在上海，黄仁勋出席了公司年会并到菜市场买菜，在北京他打卡了北京王府中环半山腰品尝云南菜，在深圳他吃了八合里牛肉火锅。&lt;/p&gt;
+&lt;a href=""&gt;
+										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
+											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1140" h="766" data-src="//k.sinaimg.cn/n/spider20260128/306/w1140h766/20260128/57a5-66fa04a78531ca4a93a7b951e4e336e8.png/w700d1q75cms.jpg?by=cms_fixed_width" alt=""&gt;
+										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1140" h="766" data-src="//k.sinaimg.cn/n/spider20260128/306/w1140h766/20260128/57a5-66fa04a78531ca4a93a7b951e4e336e8.png/w700d1q75cms.jpg?by=cms_fixed_width" alt="" disabeld-show="true"&gt;
+											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
+										&lt;/figure&gt;
+									&lt;/a&gt;	
+
+	
+
+&lt;/section&gt;
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Wed, 28 Jan 2026 05:53:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMimAFBVV95cUxQVzVSVVVja1QzSDNVSWZIeUQtcjNZelZ5VVVOM0xGNW5NX3VTLURtMGdhV0dfMUZIQW5FNjRxX2taSGpYMmM3d1hjTDRpdkVyLWpSWERfaWJuak1tSGM4c0JFdlVvNlg3aGk5MW9KQThCQS1WVlNLZ2p5Q0I3a3dhUWtMREJXSmVUbGlDTDZEZ1B4MGE4bF96YQ</guid></item><item><title>天价IPO遇上玄学！SpaceX拟6月上市，赶上“行星连珠”与马斯克生日 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3764334</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 28 Jan 2026 05:52:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5RRnFHTlNuaXJQQlY4X180elZiWW0yRWlGNi1sUlFQOUwyWnFCQWVBNWd2OW5qUFpXckdFMXNwQmJSTDhBUU1DZkxuS3dCSzZwMVUw</guid></item><item><title>内存价格翻倍，iPhone变贵？天风郭明錤：苹果的策略是"承担成本抢份额，用服务赚回来" - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3764326</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 28 Jan 2026 04:58:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE4xdUpiWnVqUlR4T1BCNlBudFI5SFB1UTZYQ3lFeDl0RHplUDhjU2hsZ1hwQlJmanE0UTcxOGduU0prUXNtLTVJbGI4VGtVTUE0ekFZ</guid></item><item><title>徕卡 10 亿欧元卖身，为什么小米一定不能买？ - 36 Kr</title><link>https://m.36kr.com/p/3658536629052037</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
  
  
   &lt;blockquote&gt;
@@ -1262,7 +1728,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 04:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBBNmJRWVRDSG8zUE53NHVndkxrcHJPOTdITzdlVDUwMTNVQmkzMUUtS0szZkRvSmVYVFpuSWlsb2tjcXFRRTRQNktsYlZqb0x3RHR5bWFOT1k</guid></item><item><title>五个 00 后大学生，打算「爆改微信」 - 36 Kr</title><link>https://m.36kr.com/p/3658453081912065</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 28 Jan 2026 04:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBBNmJRWVRDSG8zUE53NHVndkxrcHJPOTdITzdlVDUwMTNVQmkzMUUtS0szZkRvSmVYVFpuSWlsb2tjcXFRRTRQNktsYlZqb0x3RHR5bWFOT1k</guid></item><item><title>微软将于2025年5月6日正式关停Skype语音通信服务 - 虎嗅</title><link>https://www.huxiu.com/article/4830376.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" data-v-87a1a9f6&gt;&lt;p data-check-id="470272"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MjM5MTU3Mzk2OA==&amp;amp;mid=2654917076&amp;amp;idx=3&amp;amp;sn=0fbb73f37c824e2663cfe3fc0054ff8a&amp;amp;chksm=bc1e9497367fb14d22408cf9d233f168ca4398db0c0d3c156582f558679ad61432bf91b324d9#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="855804"&gt;2025年5月6日，微软正式关停Skype。&lt;/p&gt;&lt;p data-check-id="261207"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="668035"&gt;曾经的全球最大语音通信软件，宣告死亡。&lt;/p&gt;&lt;p data-check-id="740480"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="614812" label="大标题"&gt;Skype是如何崛起的？&lt;/p&gt;&lt;p data-check-id="338232"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="584626"&gt;其兴衰，又给我们带来什么启示？&lt;/p&gt;&lt;p data-check-id="156805"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="148252"&gt;自诞生之初，互联网就是为了实现计算机之间的通信和资源共享。&lt;/p&gt;&lt;p data-check-id="688041"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="618001"&gt;有了互联网，无论身处世界何地，都可以进行通信和数据交换。&lt;/p&gt;&lt;p data-check-id="110201"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="584346"&gt;为了更高效、更便捷、更及时的连接，互联网在连接的技术与应用上，也在不断迭代更新。&lt;/p&gt;&lt;p data-check-id="588274"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="208117"&gt;最早的应用是诞生于1960年代的电子邮件，让用户可以通过网络发送和接收文本信息，至今仍在被广泛使用。&lt;/p&gt;&lt;p data-check-id="628848"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="655610"&gt;随后的是诞生于1970年代的公告板系统（Bulletin Board System，BBS），天涯论坛、猫扑论坛曾火爆一时，是众多网友喜爱的交流平台。&lt;/p&gt;&lt;p data-check-id="414037"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="170266"&gt;真正意义上的即时通信软件，还要等到1996年。&lt;/p&gt;&lt;p data-check-id="425854"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="862784"&gt;三个以色列人研发出ICQ（I SEEK YOU我找你之意），支持在互联网上聊天、发送消息、传递文件等功能。&lt;/p&gt;&lt;p data-check-id="525073"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="184246"&gt;ICQ开创了即时通讯软件的先河，也为人们提供了一种全新的互联网交流方式。&lt;/p&gt;&lt;p data-check-id="363062"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="130440"&gt;值得一提的是，腾讯的QQ就是基于ICQ的概念和功能开发的，可谓“青出于蓝胜于蓝”。&lt;/p&gt;&lt;p data-check-id="283820"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="266513"&gt;为什么要不厌其烦地介绍互联网通信软件的历史？&lt;/p&gt;&lt;p data-check-id="240436"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="776832"&gt;这是因为，了解这些，有助于理解Skype的快速崛起与急速衰落。&lt;/p&gt;&lt;p data-check-id="628424"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="644624"&gt;从电子邮箱到BBS，再到即时通信软件，其进步与迭代呈现出清晰的规律。&lt;/p&gt;&lt;p data-check-id="175355"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="102164"&gt;交互实时性越来越强，功能日益丰富多元，不足之处也非常明显，交流方式以文字图片为主，只局限于互联网之内。&lt;/p&gt;&lt;p data-check-id="148503"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="843874"&gt;正是在这样的背景下，Skype诞生了。&lt;/p&gt;&lt;p data-check-id="784335"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="381283"&gt;2003年，爱沙尼亚的2个程序员，开发出了Skype，名字来自“sky peer to peer”，愿景是让人们打破地域界限，自由沟通。&lt;/p&gt;&lt;p data-check-id="684840"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="555787"&gt;与当时已经广为普及的ICQ、MSN不同，Skype的最大特点是，可以直接免费语音通话。&lt;/p&gt;&lt;p data-check-id="670765"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="355777"&gt;今天，我们已习惯用微信或QQ语音通话。&lt;/p&gt;&lt;p data-check-id="665531"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="857271"&gt;但在当时，网络状况不好，Skype依靠独家的点对点（P2P）技术，才实现了稳定且高质量的语音通话。&lt;/p&gt;&lt;p data-check-id="111643"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="285227"&gt;Skype的另一大杀手锏是，可以用软件直接拨打国外固定电话和手机。&lt;/p&gt;&lt;p data-check-id="514565"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="602415"&gt;彼时，国际电话费高达1美元/分钟，用Skype拨打，只按本地电话收费。&lt;/p&gt;&lt;p data-check-id="121360"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="534752"&gt;因为解决了国际语音通信的痛点，Skype一经推出，便迅速流行。&lt;/p&gt;&lt;p data-check-id="708444"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="127225"&gt;推出次年，用户数量就达到了1100万。&lt;/p&gt;&lt;p data-check-id="746472"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="787057"&gt;2005年，又猛增至5400万。&lt;/p&gt;&lt;p data-check-id="431026"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="617402"&gt;2006年，用户突破1亿。&lt;/p&gt;&lt;p data-check-id="588062"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="263251"&gt;2008年，用户突破4.05亿，成为全球最大的即时通信软件之一。&lt;/p&gt;&lt;p data-check-id="561188"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="320565"&gt;对一个软件来说，用户过亿后，月活跃用户数是一个关键的指标。&lt;/p&gt;&lt;p data-check-id="763115"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="315406"&gt;到了2011年，Skype的月活跃用户已达到1.7亿。&lt;/p&gt;&lt;p data-check-id="303144"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="358834"&gt;2013年，Skype的月活跃用户首次突破3亿，国际通话市场份额达36%，成为当时全球最大的即时语音通信软件。&lt;/p&gt;&lt;p data-check-id="584257"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="323751"&gt;也就是说，每打10分钟的国际电话，就有3.6分钟是在Skype上进行的。&lt;/p&gt;&lt;p data-check-id="804811"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="247546"&gt;然而，自2016年起，Skype用户活跃度开始下降。&lt;/p&gt;&lt;p data-check-id="800113"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="802286"&gt;2023年，Skype月活跃用户下降至1.7亿，日活跃用户降至3600万。&lt;/p&gt;&lt;p data-check-id="550580"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="136303"&gt;要知道，全球主流即时通信软件的日活跃用户都在1亿以上，微信的日活更是超过了10亿。&lt;/p&gt;&lt;p data-check-id="862356"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="421756"&gt;在全球主流的即时通信软件中，Skype已“泯然众人”矣。&lt;/p&gt;&lt;p data-check-id="576527"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="text-big-title" data-check-id="383137" label="大标题"&gt;Skype为什么衰落了？&lt;/p&gt;&lt;p data-check-id="316514"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="551532"&gt;很多人都会提到“3次易主”和“1次改版”。&lt;/p&gt;&lt;p data-check-id="173250"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="586041"&gt;“3次易主”指的是，2005年，Skype以26亿美元现金加股票的价格被eBay收购；2009年，eBay以27.5亿美元的价格把Skype的70%股权出售给了Silver Lake牵头的投资集团；2011年，微软以85亿美元的价格收购了Skype。&lt;/p&gt;&lt;p data-check-id="435151"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="263820"&gt;“1次改版”指的是，2017年，Skype进行重大改版，不仅修改了用户界面，还迁移了服务器，严重影响用户体验，导致在应用商店的评级直接从3.5星掉到了1.5星。&lt;/p&gt;&lt;p data-check-id="788214"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="708844"&gt;6年内三易其主，造成其战略方向反复摇摆，技术投入断层，最终失去市场主导地位。&lt;/p&gt;&lt;p data-check-id="348542"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="458881"&gt;2017年的大改版，成为压垮骆驼的最后一根稻草。&lt;/p&gt;&lt;p data-check-id="833082"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="264672"&gt;如果没有频繁的易主，如果没有失败的改版，Skype是否还有机会？&lt;/p&gt;&lt;p data-check-id="680456"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="284742"&gt;历史，无法假设。&lt;/p&gt;&lt;p data-check-id="633288"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="161274"&gt;但是，我们可以根据趋势，推断出Skype的命运走向。&lt;/p&gt;&lt;p data-check-id="708773"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="367871"&gt;当微软收购Skype时，互联网正在迎来三大趋势。&lt;/p&gt;&lt;p data-check-id="540755"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="514732"&gt;正是在这三大趋势之下，Skype渐渐掉队了。&lt;/p&gt;&lt;p data-check-id="821350"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="363177"&gt;其一，流量普及化，优势不再。&lt;/p&gt;&lt;p data-check-id="275618"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="807507"&gt;上文提到，Skype起家的核心技术是P2P技术。&lt;/p&gt;&lt;p data-check-id="838487"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="727301"&gt;P2P，是一种用户直接点对点传输数据的技术，无需中心服务器中转，大幅降低服务器和带宽成本。&lt;/p&gt;&lt;p data-check-id="425010"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="246644"&gt;在互联网流量昂贵且并不稳定的时代，Skype使用P2P技术拨打语音或国际长途，既能节省流量，成本极低，也能够稳定传输，保障通话质量。&lt;/p&gt;&lt;p data-check-id="734356"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="117151"&gt;这也是Skype拨打语音，能做到免费的重要原因。&lt;/p&gt;&lt;p data-check-id="628342"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="652386"&gt;随着技术的进步和商业化普及，流量资费越来越便宜，网络传输越来越稳定，Skype的技术优势被削弱了。&lt;/p&gt;&lt;p data-check-id="801557"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="531046"&gt;其二，移动化转型，劣势凸显。&lt;/p&gt;&lt;p data-check-id="353827"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="118044"&gt;更要命的是，移动互联网兴起后，Skype的优势，反而成了劣势。&lt;/p&gt;&lt;p data-check-id="514053"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="252337"&gt;一方面，移动网络普遍使用NAT（网络地址转换），P2P直连需复杂穿透技术，Skype在移动网络下的连接失败率增高。&lt;/p&gt;&lt;p data-check-id="428617"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="450700"&gt;另一方面，Skype最初为电脑端设计，推出移动端时仍延续复杂操作逻辑，界面臃肿且耗电高，与移动端“轻量化、即时性”需求严重脱节。&lt;/p&gt;&lt;p data-check-id="546388"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="838101"&gt;2009年后，WhatsApp、微信等即时通信软件开始崛起，它们是土生土长的移动端软件，比Skype更了解移动用户。&lt;/p&gt;&lt;p data-check-id="460363"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="412686"&gt;2010年，苹果推出iPhone 4，自带的FaceTime就能实现网络电话、视频等功能，也抢走了Skype的一部分用户。&lt;/p&gt;&lt;p data-check-id="511215"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="263042"&gt;&lt;img data-h="537" data-w="475" src="https://img.huxiucdn.com/article/content/26-01-28/8720f690-c866-4ca2-b9b7-9a9017dde36b.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p class="text-img-note" data-check-id="107364" label="图片备注"&gt;苹果iPhone4自带Facetime功能&lt;/p&gt;&lt;p data-check-id="841755"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="505881"&gt;其三，社交化浪潮，降维打击。&lt;/p&gt;&lt;p data-check-id="464161"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="756207"&gt;Skype之所以能够崛起，是因为满足了国际通话这一刚需。&lt;/p&gt;&lt;p data-check-id="110438"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="521406"&gt;当其他软件也都具有了国际通话这一功能后，软件之间的竞争，就要看其他维度上功能的比拼。&lt;/p&gt;&lt;p data-check-id="443716"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="500628"&gt;微信最初只是一款即时通信软件，随后开发朋友圈、公众号、小程序等功能，构建“社交+内容+服务”闭环，成为一个超级平台。&lt;/p&gt;&lt;p data-check-id="888112"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="246776"&gt;丰富的功能，既满足了用户社交的需求，也增强了用户的粘性。&lt;/p&gt;&lt;p data-check-id="308808"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="704045"&gt;WhatsApp虽然更克制、更为简洁，但近年来也通过“状态”、“社群”等功能向轻社交领域扩展，逐步向轻社交渗透。&lt;/p&gt;&lt;p data-check-id="502801"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="613122"&gt;相对而言，Skype始终定位于“通讯工具”，缺乏社交网络构建能力。&lt;/p&gt;&lt;p data-check-id="821886"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="636852"&gt;当人际关系逐渐沉淀，对用户而言，社交功能的刚需性远高于语音通话。&lt;/p&gt;&lt;p data-check-id="743878"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="747153"&gt;用户使用WhatsApp的频次，也要远远高于Skype。&lt;/p&gt;&lt;p data-check-id="532565"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="252228"&gt;Skype遭遇了一场降维打击，用户也就慢慢流失了。&lt;/p&gt;&lt;p data-check-id="116838"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="308384"&gt;综合来看，流量普及化削弱了Skype的技术护城河，移动化暴露其产品设计缺陷，社交化则使其在用户留存竞争中彻底掉队。&lt;/p&gt;&lt;p data-check-id="371163"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="527520"&gt;很多人也许会有疑问，按上面的逻辑，是不是所有的工具性软件，都没有活路了？&lt;/p&gt;&lt;p data-check-id="820854"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="665613"&gt;也不尽然。&lt;/p&gt;&lt;p data-check-id="667075"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="546234"&gt;面对WhatsApp、微信的竞争，Skype只要能盈利，就能活下去。&lt;/p&gt;&lt;p data-check-id="150471"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="714764"&gt;问题恰恰在于，Skype始终未找到可持续的盈利路径。&lt;/p&gt;&lt;p data-check-id="264048"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="257756"&gt;Skype的主要收入来源是国际电话充值业务。&lt;/p&gt;&lt;p data-check-id="605122"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="674011"&gt;即用户使用拨打固定电话和手机需要付费。&lt;/p&gt;&lt;p data-check-id="777302"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="713256"&gt;这部分收入，无法覆盖日益增长的营运成本。&lt;/p&gt;&lt;p data-check-id="358331"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="445001"&gt;微软财报显示，2016-2020年Skype累计亏损超过12亿美元。&lt;/p&gt;&lt;p data-check-id="721080"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="832224"&gt;持续流血的商业模式，只能靠外部输血，这几乎决定了Skype被巨头收购的命运。&lt;/p&gt;&lt;p data-check-id="132156"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="156870"&gt;被eBay、微软收购后，Skype活下去的关键，不是能否盈利，而是能否融入巨头的大生态。&lt;/p&gt;&lt;p data-check-id="381030"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="703748"&gt;以WhatsApp为例，2014年被Meta（原Facebook）以190亿美元收购。&lt;/p&gt;&lt;p data-check-id="618301"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="866083"&gt;有媒体估算，截至2024年底，WhatsApp的年收入约为13亿美元，还不到Meta年收入的1%。&lt;/p&gt;&lt;p data-check-id="350468"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="502163"&gt;虽然收入占比很低，但是，WhatsApp已成为Meta继Instagram和Facebook Messenger之后的第三大重要资产。&lt;/p&gt;&lt;p data-check-id="660165"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="434008"&gt;这是因为，在Meta生态中，WhatsApp被Meta视为核心的“通讯基础设施”。&lt;/p&gt;&lt;p data-check-id="774600"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="870484"&gt;既为Meta在即时通讯领域构筑了坚实的竞争壁垒，又为Meta的AI服务、商业增长提供了重要的平台。&lt;/p&gt;&lt;p data-check-id="540528"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="207356"&gt;反观Skype，在eBay是“电商附庸”，在微软是“备胎工具”，始终没找到自己的生态位。&lt;/p&gt;&lt;p data-check-id="378161"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="838400"&gt;微软收购Skype时，宣称要将Skype深度整合进Windows系统，目标实现10亿活跃用户。&lt;/p&gt;&lt;p data-check-id="345084"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="512488"&gt;具体执行中，微软在资源倾斜、产品协同上频频出错。&lt;/p&gt;&lt;p data-check-id="452033"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="733325"&gt;不仅没有达到预期的整合效果，反而削弱了Skype的用户体验和品牌价值。&lt;/p&gt;&lt;p data-check-id="852877"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="317013"&gt;鉴于Office365的统治地位，微软推出了Skype for Business，希望在办公领域打开局面。&lt;/p&gt;&lt;p data-check-id="538778"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="318857"&gt;然而，Skype for Business与微软已有的Lync（企业通讯工具）功能重叠，导致用户认知混乱。&lt;/p&gt;&lt;p data-check-id="357762"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="650118"&gt;2017年，在收购Skype仅6年后，微软又推出了Teams。&lt;/p&gt;&lt;p data-check-id="333155"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="830303"&gt;Teams是一款集聊天、视频会议、文件协作和应用程序集成于一体的团队协作平台，深度集成Outlook（邮件/日历）、OneDrive（云存储）、SharePoint（文档管理）、Planner（项目管理）等服务。&lt;/p&gt;&lt;p data-check-id="468362"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="214184"&gt;微软有了Teams这个“嫡子”，“庶出”出身的Skype基本上就被放弃了。&lt;/p&gt;&lt;p data-check-id="572525"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="784430"&gt;2018年，微软将Skype团队并入Office事业部，90%的研发预算投向Teams。&lt;/p&gt;&lt;p data-check-id="864652"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="770632"&gt;Skype逐渐沦为“技术试验场”，其创新的屏幕共享、群组通话等功能都被优先移植到Teams。&lt;/p&gt;&lt;p data-check-id="514572"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="418060"&gt;&lt;img data-h="672" data-w="959" src="https://img.huxiucdn.com/article/content/26-01-28/852bf903-6292-4dbd-8779-51b4425ff959.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p class="text-img-note" data-check-id="348860" label="图片备注"&gt;Teams的月活跃用户增长趋势&lt;/p&gt;&lt;p data-check-id="874284"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="121527"&gt;最新数据显示，Teams的月活跃用户超过了3亿。&lt;/p&gt;&lt;p data-check-id="881000"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="768435"&gt;关于Skype关停，微软365协作应用和平台总裁杰夫·特珀表示：&lt;/p&gt;&lt;p data-check-id="361417"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="574881"&gt;多年来，我们从Skype中学到了很多东西，并将其融入到Teams中，我们在过去七到八年里不断发展Teams。但我们觉得现在是时候了，因为我们可以为市场、为客户群体提供更简单的选择，而且通过专注于Teams，我们可以更快地提供更多的创新。&lt;/p&gt;&lt;p data-check-id="203628"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="212152"&gt;简单归纳一下就是，Skype没有利用价值了。&lt;/p&gt;&lt;p data-check-id="781527"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="443818"&gt;Skype的兴衰史揭示了一个残酷的商业逻辑：&lt;/p&gt;&lt;p data-check-id="183763"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="143264"&gt;技术的先发优势终会消逝，唯有通过持续迭代与生态融合，才能避免被市场淘汰。&lt;/p&gt;&lt;p data-check-id="881574"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="558068"&gt;再见了，Skype。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Wed, 28 Jan 2026 04:30:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1NVHZQbWNqcFI5enh0TlZtZ2JBNjdsZEowdnR2SlhJS213TEVtamhlcm1nMlNpdVpZZk1aZTloYUdtNk13TFdaNXF6dmJuNkVhSHVzeg</guid></item><item><title>五个 00 后大学生，打算「爆改微信」 - 36 Kr</title><link>https://m.36kr.com/p/3658453081912065</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
  
  
   &lt;blockquote&gt;
@@ -3475,7 +3941,7 @@
 
 &lt;p&gt;&lt;/p&gt;
 &lt;strong&gt;版权声明：日本经济新闻社版权所有，未经授权不得转载或部分复制，违者必究。&lt;/strong&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>日经中文网</author><pubDate>Tue, 27 Jan 2026 21:01:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTFAycC1YR2hGM01VcHhILWZHQTBrTUNqOFdGbmdTWHZDVUE1TXRGLVgtUG5Ib3lJNEhRN08zVU9qdFJ5QzRYNjRBVXdFNF9jY3d5dk05cHYxR2ZpYzNJTjJoc0FDN3J4VWozS01naVVtQmt5MDVMWnc</guid></item><item><title>黄仁勋之后谁能接班掌舵英伟达 胜任者或许凤毛麟角 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-01-28/doc-inhiuqfq5404799.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>日经中文网</author><pubDate>Tue, 27 Jan 2026 21:01:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTFAycC1YR2hGM01VcHhILWZHQTBrTUNqOFdGbmdTWHZDVUE1TXRGLVgtUG5Ib3lJNEhRN08zVU9qdFJ5QzRYNjRBVXdFNF9jY3d5dk05cHYxR2ZpYzNJTjJoc0FDN3J4VWozS01naVVtQmt5MDVMWnc</guid></item><item><title>币安合约将下架多个 U本位永续合约（2026-01-30） - Binance</title><link>https://www.binance.com/zh-CN/support/announcement/detail/79211335d1de4f7589ad2d8780580970</link><description>&lt;a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPSHY0NC1ZZEtIX2tCZEhiVl9JdURvRVBtNDJiOTV3M0I0OXlJUHgtclRtVDJ3cVhEdGU0RENIUkpIR0g5TEpLbDU4Y2JuemJkRkdkbEE2c1RXOEJFaUxTN3ZUbmxxV1RUMnk5OFZrVXV4eEFPZDFuS1Q5djRfOERnSDFLTXZwQjhHQkluME1scVJ2Q05t?oc=5" target="_blank"&gt;币安合约将下架多个 U本位永续合约（2026-01-30）&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;Binance&lt;/font&gt;</description><author>Binance</author><pubDate>Tue, 27 Jan 2026 18:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilAFBVV95cUxPSHY0NC1ZZEtIX2tCZEhiVl9JdURvRVBtNDJiOTV3M0I0OXlJUHgtclRtVDJ3cVhEdGU0RENIUkpIR0g5TEpLbDU4Y2JuemJkRkdkbEE2c1RXOEJFaUxTN3ZUbmxxV1RUMnk5OFZrVXV4eEFPZDFuS1Q5djRfOERnSDFLTXZwQjhHQkluME1scVJ2Q05t</guid></item><item><title>黄仁勋之后谁能接班掌舵英伟达 胜任者或许凤毛麟角 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-01-28/doc-inhiuqfq5404799.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -3833,262 +4299,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 27 Jan 2026 14:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9YRkdLZUkwOGh6MUJZNndwb0NjZElsY2FmMk9oNWNpbk02bWFvVVM2bTczSTRkMVBvTk1ROThYMW5MazB5MVRFS0RkVVZJWnAzSmh5ZDU5R0w</guid></item><item><title>美国软件已不安全 法国公共部门全面换用国产会议软件：数据不出国 - 驱动之家</title><link>https://news.mydrivers.com/1/1100/1100857.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;美国软件已不安全 法国公共部门全面换用国产会议软件：数据不出国&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-01-27 22:19:48  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1100857-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月27日消息，美国的软件在全球都很流行，各国的公共部门也要依赖美国的办公、会议软件，然而法国现在开了个头，正在全面替换为国产的会议软件，而且数据保留在本地。&lt;/p&gt;
-&lt;p&gt;据theregister网站报道，法国方面日前宣布将在公共部门淘汰美国的软件，主要是Zoom，Teams，Webex和Google Meet，这几款都是视频会议软件。&lt;/p&gt;
-&lt;p&gt;法国表示，&lt;strong&gt;使用外国视频会议平台会使官方通信暴露在海外基础设施、法律和政治压力之下&lt;/strong&gt;，而政府希望避免这种情况。&lt;/p&gt;
-&lt;p&gt;为此法国推出了自己的视频会议软件Visio，由政府的数字事务部理事会（DINUM）开发和推出，并将成为公务员的默认及独家视频会议工具。&lt;/p&gt;
-&lt;p&gt;该系统已经过数万名公务员的测试，目前正在扩大规模，以便在各部委、机构和公共机构中更广泛地使用。&lt;/p&gt;
-&lt;p&gt;该计划是到2027年在全国范围内日常使用，之后外国的视频会议许可证将不再更新。&lt;/p&gt;
-&lt;p&gt;法国这不仅是替换为国产软件，&lt;span&gt;&lt;strong&gt;而且数据、基础设施等也都是法国国内的，实现了数据不出国的安全。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260127/cd931067824e415282fa4b1c6c72635e.jpg" target="_blank"&gt;&lt;img alt="美国软件已不安全 法国公共部门全面换用国产会议软件：数据不出国" h="363" src="//img1.mydrivers.com/img/20260127/s_cd931067824e415282fa4b1c6c72635e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 27 Jan 2026 14:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE91ellBNzgzdkJGZVRfNV9YSHZoLUE2bkpTeE9kRllfOFJsWFcxeWdsY0xCZGlGcEVGQk5VTmNwazBxTWhFbUlCSGcwdy1xRlRQWlQ2QXo0X3A</guid></item><item><title>全新大屏旗舰小米17 Max来了：徕卡2亿三摄 无背屏 - 驱动之家</title><link>https://news.mydrivers.com/1/1100/1100854.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;全新大屏旗舰小米17 Max来了：徕卡2亿三摄 无背屏&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-01-27 22:00:17  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1100854-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月27日消息，去年9月发布的小米17系列堪称是小米近年来变化最大的一代，主要体现在产品设计上。&lt;/p&gt;
-&lt;p&gt;具体来看，小米17系列除了常规的标准版、Pro版之外，&lt;span&gt;&lt;strong&gt;还新增了Pro Max版本，该机在Pro的基础上增大了手机屏幕并增强了影像配置。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;根据博主爆料的消息，小米17系列今年还有一款新品——小米17 Max。爆料称小米17 Max定位是全能大屏旗舰，该机没有背屏，后置徕卡三摄，包括2亿像素主摄、5000万索尼潜望长焦以及5000超广角。&lt;/p&gt;
-&lt;p&gt;不止于此，&lt;strong&gt;小米17 Max的电池容量达到8000mAh，支持100W有线和50W无线充，出厂搭载全新澎湃OS操作系统。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从定位来看，小米17 Max可以看作是小米17的大屏版本。由于砍掉了背屏，小米17 Max定价预计会比小米17 Pro Max更低，该机将在今年Q2亮相。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260127/243c3f261cf94317b3dba8b0671e2e64.jpg" target="_blank"&gt;&lt;img alt="全新大屏旗舰小米17 Max来了：徕卡2亿三摄 无背屏" h="399" src="//img1.mydrivers.com/img/20260127/s_243c3f261cf94317b3dba8b0671e2e64.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 27 Jan 2026 14:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBCMTN3QllvbVg4VndFQndIRXFKTmhrTlR6UjFxWFZLdTFXMjJOSl9jRi1YQUVWV0pOTDRtbllia1NjZ0VnY3l6NTFvZ200VW1nTHZUOTRiUTc</guid></item><item><title>Face ID为什么难普及 原因揭开 - 驱动之家</title><link>https://news.mydrivers.com/1/1100/1100852.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;近期关于苹果iPhone 18系列的供应链消息在科技圈引发了广泛讨论。&lt;/p&gt;
-&lt;p&gt;多方爆料指向一个核心变化：&lt;span&gt;&lt;strong&gt;预计于今年9月登场的iPhone 18 Pro与Pro Max机型，或将迎来Face ID技术的重大形态革新。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;据悉，苹果计划将Face ID组件实现“屏下化”部署，从而使得屏幕外观摆脱沿用多年的“药丸”形态，转而采用单打孔设计，且开孔位置可能破天荒地向左侧迁移。这一潜在的设计变革，不仅意味着苹果在工业设计上的又一次妥协与进取，更让“3D人脸识别”这一技术话题重新回到了公众视野的中心。&lt;/p&gt;
-&lt;p&gt;纵观当前的智能手机市场，尽管屏下指纹（尤其是超声波指纹）已成为安卓阵营的主流选择，但在3D人脸识别这一赛道上，似乎只剩下苹果、华为与荣耀三家厂商在持续深耕。为什么在其他厂商浅尝辄止后，这三家巨头依然坚持“死磕”3D方案？随着屏下技术的演进，生物识别的未来又将走向何方？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;升维的安全性：从“看图”到“建模”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在探讨行业格局之前，有必要先厘清“3D人脸识别”与常规“2D人脸识别”在技术本质上的区别。这并非简单的数字游戏，而是二维图像与三维空间建模的代际差异。&lt;/p&gt;
-&lt;p&gt;市面上常见的2D人脸识别，其核心逻辑是“图像比对”。设备通过前置摄像头捕捉用户的平面照片，并与系统中预存的照片进行特征点匹配。由于缺乏深度信息，这种方案在面对高精度的平面照片、视频甚至特制面具时，存在被误导的风险，其安全性通常难以达到金融支付级别。&lt;/p&gt;
-&lt;p&gt;相比之下，3D人脸识别则是通过特定的光学组件（如点阵投影器或ToF镜头）对人脸进行立体成像。它不仅捕捉面部的纹理，更重要的是捕捉面部的深度信息、曲率以及轮廓的起伏，从而构建出一个高精度的三维模型。&lt;/p&gt;
-&lt;p&gt;这种技术具备极高的活体检测能力，能够有效抵御照片、视频等二维媒介的攻击，因此被广泛应用于银行级支付解锁等高安全需求场景。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260127/97d750ea-d604-4039-a5c2-2378c69cf28b.jpg" target="_blank"&gt;&lt;img alt="Face ID为什么难普及 原因揭开" h="337" src="//img1.mydrivers.com/img/20260127/S97d750ea-d604-4039-a5c2-2378c69cf28b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;回顾发展史，苹果在iPhoneX上率先引入Face ID，开启了3D结构光时代，并历经刘海屏到“灵动岛”的形态演变，始终将其作为核心交互手段。&lt;/p&gt;
-&lt;p&gt;华为则在Mate 20 Pro上首次搭载3D结构光，随后在Mate 30 Pro上转向ToF方案，并一直延续至最新的Mate 80系列——值得注意的是，Mate80实现了标准版机型对3D人脸识别的支持，进一步普及了该技术。荣耀继承了这一技术基因，其Magic系列持续深耕，最新的旗舰机型甚至配备了双3D生物识别系统。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260127/3b4681b9-ac71-4e5d-bd73-61b76556d1bd.jpg" target="_blank"&gt;&lt;img alt="Face ID为什么难普及 原因揭开" h="450" src="//img1.mydrivers.com/img/20260127/S3b4681b9-ac71-4e5d-bd73-61b76556d1bd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;历史上，小米8透明探索版和OPPO Find X也曾探索过3D方案，但由于种种原因，这两家厂商最终并未在后续机型中持续沿用，这也使得目前的3D人脸识别领域形成了“御三家”鼎立的局面。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;殊途同归：结构光与ToF的技术博弈&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;虽然苹果、华为、荣耀都被归类为3D人脸识别阵营，但在具体的技术实现路径上，各家却有着不同的选择，主要分为“3D结构光”与“3D ToF（飞行时间）”两大流派。&lt;/p&gt;
-&lt;p&gt;苹果的Face ID依赖于一套被称为“原深感摄像头”的复杂系统。这套系统集成了红外镜头、泛光感应元件、点阵投影器等八大组件。&lt;/p&gt;
-&lt;p&gt;工作时，点阵投影器会向面部投射出数万个肉眼不可见的红外光点，通过分析这些光点的畸变情况，绘制出面部的精细深度图。随后，A系列芯片中的神经网络引擎会将这些数据转换为数学表示形式进行比对。这种方案的优势在于近距离识别精度极高，安全性极强。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260127/cb41c63a-f563-4d03-a769-09680637e01c.jpg" target="_blank"&gt;&lt;img alt="Face ID为什么难普及 原因揭开" h="282" src="//img1.mydrivers.com/img/20260127/Scb41c63a-f563-4d03-a769-09680637e01c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;华为在早期尝试结构光后，从Mate 30 Pro开始转向3D ToF技术。以Mate80系列为例，其前置区域集成了3DToF深感摄像头。&lt;/p&gt;
-&lt;p&gt;ToF（TimeofFlight）的原理是通过发射连续的光脉冲，接收并计算光线从发射到反射回传感器所需的时间（飞行时间）。结合光速，算法可以精确计算出物体与镜头的距离，从而生成三维模型。&lt;/p&gt;
-&lt;p&gt;值得关注的是，技术路线的选择背后，是厂商对核心算法的掌控力。据业内人士透露，华为的3D人脸识别与侧边指纹技术均采用自研算法，而非直接使用供应链的公版方案。&lt;/p&gt;
-&lt;p&gt;上游供应商仅提供传感器（Sensor）和模组元件，核心的系统调试与算法优化均由厂商独立完成。这种“软硬解耦”的研发模式，确保了体验的独特性与安全性的可控。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;护城河：为何只有三家在坚持？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;既然3D人脸识别安全性更高，为何其他安卓厂商普遍回归了指纹识别方案？这背后并非单纯的成本考量，而是涉及技术门槛、系统整合与工业设计的综合博弈。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260127/7a211a94-730e-43d3-a319-657240441150.jpg" target="_blank"&gt;&lt;img alt="Face ID为什么难普及 原因揭开" h="452" src="//img1.mydrivers.com/img/20260127/S7a211a94-730e-43d3-a319-657240441150.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;荣耀研发工程师曾就此问题进行过公开解答，指出了3D人脸识别落地的两大难点：一方面，3D人脸识别并非简单的“买来装上”。&lt;/p&gt;
-&lt;p&gt;它要求厂商针对芯片平台的图像通路（ISP）和运行环境（TEE安全执行环境）进行定制化改造。从图像获取、处理到算法运行的全流程，都必须集成在芯片的高安全等级环境中，这考验着厂商对底层硬件的调教能力。&lt;/p&gt;
-&lt;p&gt;另一方面，为了适应全球不同人种的面部特征，以及复杂多变的光线环境（如暗光、逆光），厂商需要庞大的数据库进行算法训练，以兼顾识别率与防伪能力。&lt;/p&gt;
-&lt;p&gt;这两大难点意味着需要长期的技术积淀与持续的资源投入，对于追求快速迭代和成本控制的厂商而言，无疑是一道巨大的门槛。&lt;/p&gt;
-&lt;p&gt;此外，外观设计的妥协也是重要因素。3D人脸识别组件体积相对较大，为了容纳红外、投影等元件，往往需要在屏幕上保留“刘海”或“药丸”形状的开孔，这在追求“真全面屏”的当下，在视觉观感上确实存在一定争议。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;破局：屏下化与小型化的未来&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;技术的进步终将解决形态的遗憾。目前，3D人脸识别正处于从“显性”向“隐性”过渡的关键阶段。&lt;/p&gt;
-&lt;p&gt;苹果iPhone 18 Pro系列传闻中的“单打孔”方案，正是Face ID屏下化技术迈出的重要一步。通过将发射端或接收端元件隐藏于屏幕下方，可以大幅减小对显示区域的占用。&lt;/p&gt;
-&lt;p&gt;与此同时，国产阵营也在积极布局。供应链消息显示，某国产头部厂商正在评估小型化的ToF3D人脸识别方案，旨在进一步缩小前置挖孔的体积。&lt;/p&gt;
-&lt;p&gt;更为激进的消息指出，国产供应链已经在实验室阶段完成了屏下前摄与屏下3D人脸技术的样机测试。这意味着，未来我们有望看到具备金融级安全人脸识别、同时拥有完美无孔屏幕的形态出现。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;结语&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;总体来看，3D人脸识别之所以长期只被少数厂商坚持，并不是技术不够“先进”，而是它对硬件、算法、系统安全与产品结构的要求更接近一项“系统工程”。&lt;/p&gt;
-&lt;p&gt;当外观趋势与成本压力占上风时，它就更容易被边缘化；而当屏下化、小型化带来新的解题空间，它又会重新回到聚光灯下。&lt;/p&gt;
-&lt;p&gt;接下来行业会走向“仍然是少数派”，还是出现更多品牌的跟进与分层落地，就要看技术成熟度、成本曲线以及厂商对安全体验的优先级排序了。需要时间，也需要更具体的产品来给出答案。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260127/2fd437cb4dd4467dbd57a73fc0a5f969.jpg" target="_blank"&gt;&lt;img alt="Face ID为什么难普及 原因揭开" h="399" src="//img1.mydrivers.com/img/20260127/s_2fd437cb4dd4467dbd57a73fc0a5f969.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 27 Jan 2026 13:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Ia3JaTWliUzJXQUFPbFJhNUk3VF9ZLTV1S3BFbktSVGJWcEhvWkFCV2dlTTZRQ1ZHaFFaY09RRHNWa3Q0MDgyVEtWZTFEZUZpV3pqck9NR1A</guid></item><item><title>英特尔，“重返”DRAM？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3764289</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 27 Jan 2026 13:47:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5tTlBlV1Q3azFEM0NpTkNoalU4Q0hYLWh3WG92MVFwR09BVk5fWmhLOUhnM01jbVJuRnh3QVpBTzcySWxHazZOTkJ0SXdJRFpoTUhJ</guid></item><item><title>SSD缺货涨价 韩国一SSD品牌Teracle突发跑路：售后都坑了 - 驱动之家</title><link>https://news.mydrivers.com/1/1100/1100849.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技1月27日消息，内存及闪存最近半年来大涨价，涨幅都是5-10倍的涨，囤货的厂商赚麻了，但肯定也会有各种奇葩事件出现，比如最近一家韩国SSD品牌就跑路了。&lt;/p&gt;
-&lt;p&gt;德国Computerbase网站报道称，&lt;strong&gt;这家初创企业名为Teracle，是一家韩国公司，&lt;/strong&gt;2年前给他们送测了Teracle T450硬盘，PCIe 4.0规格的，Innogrite主控和SK海力士的TLC闪存，性能表现一般水平，但也没啥不好的地方。&lt;/p&gt;
-&lt;p&gt;但在一年后，Teracle的SSD硬盘开始出现质量问题，CB网站的论坛上有读者反馈了至少三例故障报告，软件工具识别出了坏的扇区，部分处于写保护状态，数据无法读取。&lt;/p&gt;
-&lt;p&gt;他们也复测了之前的产品，还联系了Teracle公司，后者当时也做出了回应，当时的在线零售商Mindfactory出售的2960块SSD中，有59个被认为有问题，2%的故障率要高于正常的水平。&lt;/p&gt;
-&lt;p&gt;Teracle后来表示，他们调查后认为除了三个例外的SSD，其他产品都没有使用散热垫，SSD过热时会出现问题，Teracle强烈建议用户安装散热片，他们还更新了产品手册。&lt;/p&gt;
-&lt;p&gt;如果只到以上情况，那么Teracle还算是个负责的厂商，然而大跌眼镜的是CB网站现再联系这家公司也没回应了，&lt;span&gt;&lt;strong&gt;他们的网站Teracle.io也离线了，网站访问会提示过期，美国及其他地区的零售商也没有Teracle的产品卖了。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Teracle这么离奇的跑路放在以前可能不算啥新闻，但是当前SSD市场可是各种缺货涨价，小厂已经拿不到多少供应了，要么就是接受大幅涨价。&lt;/p&gt;
-&lt;p&gt;Teracle的SSD品控质量爆发应该会有不小的售后麻烦，不论是退换还是赔偿，显然都不太好处理，这大概也是他们跑路的缘由吧。&lt;/p&gt;
-&lt;p&gt;在此也提醒大家一下，在当前内存及闪存大涨价的情况下，要么管住手不去高价接盘，就算是刚需不得不买，产品也尽量选择靠谱的渠道和靠谱的大厂吧，涨价缺货这事持续几年的话，肯定有各种跑路事件出现，大家最好别中招。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260127/1b31ce88a723423097383090801476df.jpg" target="_blank"&gt;&lt;img alt="SSD缺货涨价 韩国一SSD品牌Teracle突发跑路：售后都坑了" h="400" src="//img1.mydrivers.com/img/20260127/s_1b31ce88a723423097383090801476df.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 27 Jan 2026 13:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4zOF9tdnR2M3ZrT0Nma2o5bjVwSXkxYUVUTGR5Y1ctNkF0VjlkckpIU1JxMjNkOXdPTE9aRHUzRWVsN25xS3hmUmFFeWhxUHFwQXBYTWpTY3Q</guid></item><item><title>降价2000元iPhone Air疑为库存机？客服回应-观察者网 - 观察者网</title><link>https://www.guancha.cn/economy/2026_01_27_805245.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	1月27日，话题“降价2000元iPhone Air疑为库存机”登上热搜。
-&lt;/p&gt;
-&lt;p&gt;
-	不少网友购买后发现iPhone Air电池生产日期在2025年7月至2025年9月，甚至有网友收到电池生产日期2025年4月iPhone Air。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/01/27/20260127184746949.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/01/27/20260127184746993.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	网友在社交媒体晒出，其所购买到的iPhone Air的电池生产日期在2025年7月至2025年9月不等。&lt;span&gt;&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	针对质疑，苹果客服强调产品是全新未拆封/未激活的国行正品，不是先有订单后生产产品，因此时间会有出入。此外，该客服还透露，设备发出前看不到实际情况，官方也没有库存机的说法。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/01/27/20260127185100145.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	客服建议，如果用户对设备品质有担心，可以联系技术部门进行咨询排查。
-&lt;/p&gt;
-&lt;p&gt;
-	此前，1月23日晚，淘宝平台上的Apple Store官方旗舰店正式上线新年促销活动，其中iPhone Air价格迅速成为关注焦点。
-&lt;/p&gt;
-&lt;p&gt;
-	根据“天猫年货节”活动页面显示，iPhone Air全系直降2000元。其中原本定价7999元的256GB版本，在大幅度降价后为5999元，刚好符合“国补”标准，用户还可叠加500元“国补”，最终实际支付价格低至5499元起。据客服介绍，此次促销活动将于1月25日20时正式开启，限量供应13000台。
-&lt;/p&gt;
-&lt;p&gt;
-	在相关活动引起关注后，24日中午京东也同步上线了iPhone Air直降2000元的优惠活动，如果算上400元的以旧换新补贴和500元“国补”，iPhone Air 256GB版本最低为5099元。不过目前，苹果官网并未有类似活动。
-&lt;/p&gt;
-&lt;p&gt;
-	这款机型于2025年10月22日正式发售，距今仅三个月，价格已下调2500元，创下苹果新机上市后最快、最大幅度的降价纪录。市场普遍认为，iPhone Air的促销政策来得如此之快，或与其销量不及预期有关。
-&lt;/p&gt;
-&lt;p&gt;
-	这并不让人感到意外。为了追求极致的轻薄，这款机型所付出的代价相当明显。除了续航问题，受限于过度局促的空间，iPhone Air仅配备单扬声器的同时在主摄上也显著缩水，仅配备一颗4800万像素后置主摄，超广角镜头缺失。其他问题还包括触感反馈（haptics）较弱等。这些硬件配置上的问题，对于日常体验而言已带来了难以忽视的缺陷。
-&lt;/p&gt;
-&lt;p&gt;
-	另一方面eSIM功能，国内三大运营商虽已获批开展业务，但仍处在商用试验阶段，仅支持线下自有营业厅受理业务，对消费者吸引力有限。  
-&lt;/p&gt;
-&lt;p&gt;
-	自发售以来，有关iPhone Air销量不及预期的消息频传，甚至有消息称苹果已经计划大幅削减iPhone Air的产量。此前，在2025财年第四季度财报的电话会议上，苹果CEO库克也对Air机型的销量表现“避而不谈”，更进一步加深了市场的质疑。
-&lt;/p&gt;
-&lt;p&gt;
-	分析认为，以中国市场的消费标准来看，iPhone Air性价比较低，消费者更倾向于选择配置丰富、功能全面的标准版iPhone 17。而此次iPhone Air在大幅度降价后，价格已经基本与标准版iPhone 17 256GB版本持平，或许会有更多的消费者愿意尝鲜。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Tue, 27 Jan 2026 13:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1WTzVYRWpPRlRfWE1FQXZkemlQSVNjcU9IUXh0M0poR1p4NGlOeDc0UEpwNExTTzFCZUZ0WThfMUQ1UG5fcDZYcmxPbmRLd01ONEFDb1pfYm5MT1YzaHRHRnhKSjY</guid></item><item><title>一名顶级交易员的万字加密生存笔记：别被「赚快钱」毁掉 - BlockBeats</title><link>https://www.theblockbeats.info/news/61065</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news-content" data-v-2c669f00&gt;&lt;blockquote&gt;原文标题：《无惧牛熊：加密生存法则》&lt;/blockquote&gt;&lt;blockquote&gt;原文作者：@0xPickleCati，加密交易员&lt;/blockquote&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;律动 BlockBeats 注：&lt;/strong&gt;本文来自加密交易员 Pickle Cat 的深度分享。在中文世界里，她更常被称为「黄瓜猫」。她 12 岁（没看错，真的是 12 岁）进入加密市场，亲历多个完整牛熊周期，币本位合约长期实盘盈利排名位居前列，累计盈利超过 4000 万美元。「00 后」「天才」「女交易员」等标签，曾长期伴随她的交易生涯。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;但本文并非一篇关于收益、技巧或「如何快速成功」的炫耀式总结。恰恰相反，这是一次在经历了完整周期洗礼之后，对交易、生存与认知的系统性复盘。核心只有一个：别被「赚快钱」毁掉。以下为原文内容：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;你的「搞快钱」思维，才是阻碍你赚大钱的罪魁祸首&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我在 2013 年买入了人生中第一枚比特币。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;作为一个活到 2026 经历了十几年周期的老韭菜，我见过这市场把人创的死去活来的一万种方式。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我发现在这漫长的时间里，似乎存在一条不可忽视的铁律：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;那就是，在这个圈子里，「赢」的定义从不是你赚了多少钱。每个接触过这圈子的人都能至少赚过一次钱，哪怕他再小白、哪怕他本金再小，他都能成为短暂的「天才」。那「赢」到底是什么？是你赚到了钱，且在多年后的今天，还能守住这个钱。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;换句话说，如果你想通过币圈逆天改命，你首先得意识到这并不是个「谁赚最多」、「谁翻倍最猛」的比赛，而是个「谁能活到最后」的比赛。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;可现实是残酷的，大部分「天才」都成为了燃料，只有小部分人能成功活到下一周期，而在这些幸存者中，能真正实现复利滚雪球的，更是凤毛麟角。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;10/11 后，市场情绪再次回到了我熟悉的枯燥期。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;那天，我又失去了很多原本以为能并肩作战币圈很多年的朋友。虽然这种「道别」已上演过无数次，可每次遇到，我还是会下意识地翻开自己这些年断断续续写下的一些反思。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我想，是时候整理一下了。为了搞清楚那个终极命题：到底是什么、到底有没有一些可以复刻的特质，才能在币圈活到最后。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;为此，我还找了几个依然活跃在币圈的老朋友聊了聊，于是，便有了这篇文章。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这篇文章就是我的独家感悟，呕心沥血之作，它将&lt;strong&gt;试图解释&lt;/strong&gt;以下几点：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 为什么有的人能在这周期性的「血海」中存活，而其他人只能铩羽而归？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 如何在熊市被折磨得痛不欲生时还能保持希望？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 你要怎么做才能成为如上所述的人？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;为了彻底搞懂这个道理，咱们首先得&lt;strong&gt;返璞归真&lt;/strong&gt;，请先忘掉其他人对你所讲这个圈子之种种。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「唯一真正的智慧，就是知道自己一無所知」—苏格拉&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;文内会简短阐释币圈的发展史以及币圈的本质，绝大部分新入圈的玩家都会忽略这些要素，毕竟了解这个哪有立马开单赚钱（亏钱）来得爽（痛）呢。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;但据我个人经验来说，恰恰是这被人忽略的才是让人无惧牛熊的秘籍，正如哲学家乔治·桑塔亚那所说的那样：「不记得过去的人注定重蹈覆辙」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;在本篇文章中，我会带着大家弄懂：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;I. 到底是什么能让币圈牛回，怎么分辨「行情启动」vs「回光返照」？其中包含了 3 个案例分析，以及一份你可以直接拿去用的基础版「判断准则」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;II. 到底要干什么才能提升你捉到「下一个大风口」的概率？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;III. 那些能跨越多个血海周期，还能持续赚钱的人，到底都有什么可复制的共同点？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;如果你曾在币圈里让自己的钱包也被「去中心化」了，那这篇文章就是写给你的。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;I. 让币圈脱离横盘的真正推手&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;每当人们追问为何加密市场陷入停滞，答案几乎千篇一律：新叙事还没诞生！机构尚未全面进场！技术革命还没爆发！都怪那些割人做市商和 KOL！都是因为某某与某某交易平台/项目/公司搞砸了！&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这些因素确实重要，但解决它们从来不是终结加密寒冬的真正原因。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你穿越过足够多的牛熊，便会看清一个清晰的规律：加密市场的再展雄风，从来不是因为它变得更像传统体系，而是因为它再次让人们想起——&lt;strong&gt;旧体系令人窒息的七七八八&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;加密的停滞，并非是因为缺乏创新，也不仅是流动性问题。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;本质上是&lt;strong&gt;协作失效&lt;/strong&gt;——更准确地说，当以下三者同时失灵时，停滞便发生了：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· &lt;strong&gt;资本&lt;/strong&gt;毫无兴致&lt;/p&gt;&lt;p&gt;· &lt;strong&gt;情绪&lt;/strong&gt;消耗殆尽&lt;/p&gt;&lt;p&gt;· &lt;strong&gt;当前共识&lt;/strong&gt;再也无法解释「我们为何要在乎这个圈子」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在这样的局面下，价格疲软并非因为加密「已死」，而是因为没有新的要素能让新参与者形成合力。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这正是多数人困惑的根源。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;他们总认为下一轮周期将由某个「更好、更炸」的产品、功能或新叙事触发。但这些都只是果，而非因。真正的转折点，在更深层的共识升级完成之后才会显现。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;若看不清这层逻辑，你只会继续被市场噪音牵着鼻子走，成为那些兜持货盘的狗庄带单中最易收割的韭菜。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这就是为什么总有人不断追逐「下一个热点」，试图去当究极钻石手，最终却总发现自己入场太迟，或者更糟——买了空气币中的空气币。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你想培养真正的投资嗅觉，那种能让你早期发现机会，而不是在每个项目发币后一周都被浇给到自闭的韭菜命运，你首先需要学会鉴别：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;共识与叙事的区别&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;事实就是，每一轮将加密世界拖出寒冬的，始终是同一件事：共识的进化。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「共识」，在这个圈子里，是指人类找到了一种新的方式，能以加密货币为媒介，将某种「抽象元素」（比如信仰、判断力、身份认同等）进行金融化，并围绕它进行大规模协作&lt;/p&gt;&lt;p&gt;请务必注意：共识绝不等同于叙事。而多数人的认知偏差，正是从这里开始的。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/20fc5292-4639-4a43-8620-8c71751849f4.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;叙事，是一个众人共享的故事。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;共识，是众人共同的行为。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;叙事用说的，共识用做的。事吸引目光，共识留住人群。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 只有叙事而无行为 → 短期狂欢&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 只有行为而无叙事 → 台下演变&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 两者兼备之时 → 真正的大周期才会启动&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;要弄懂这里面的门道，你需要将眼光放的长远，去从更加宏达的视角切入。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;当你快速过一遍加密简史，你就会发现:&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;所有叙事的底层，本质都是聚合——而这就是共识。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/79e5ac35-170a-404e-872d-575ac7136122.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2017 年，ICO 是那个时代最顶级的「攒局」神技。它本质上是一种协调机制，它把相信同一个故事的人聚集起来，把他们的资金和信仰汇聚到同一个地方。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;基本就是在说：「我这有一份 PDF 和一个梦想，押一把不？」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;后来的 IDO 则把这种「攒局」接去了去中心化交易平台，使融资变成一场无需许可的自由博弈「仪式」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;接着是 2020 年 DeFi 之夏，它所聚合的是「金融劳作」。我们成了那家永不歇业银行的后台员工：借贷、抵押、套利，夜以继日地寻找那 3000% 的年化，每夜都在祈祷起床时它别跑路。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;再接着是 2021 年 NFT，它所聚合的，不再只是资本，更是对某种共同文化、审美或理念产生共鸣的人。当时所有人都在问：「等等，我为什么要买一张图片？」「那哪只是图片啊，那可是文化。」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;大家都在寻找属于自己的「部落」，你的小图片就是你的护照，一个数字化的「自己人」勋章，它就是你进入高级群聊和高端聚会的门票。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;到了 2024 年 Meme 币 时代，这一趋势已无法忽视。此时，人们几乎不再关心技术。它真正在聚合的，是情绪、身份认同和圈内的集体玩笑。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你买的已经不是白皮书了。你买的是那句「懂的都懂，而且你明白我为何在笑（或哭）嘿嘿。」你买的是个当币价跌 80% 时，能让你觉得没那么孤独的「社区」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;到如今，我们迎来了预测市场。它聚合的不再是情绪，而是判断力，是对未来的共同信念。并且，这些信念真正实现了无国界的流动。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;以美国总统大选为例，全世界的焦点事件。但如果你不是美国人，你就没有投票权。而在预测市场中，虽说你依然无法投票，但你却可以为你的认知下注。这时，真正的转变就显而易见了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;加密货币不再仅仅是在搬运资金，它在重新分配「谁说了算」的权力。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;随着每次周期都会有新的维度被融入这个大系统中：金钱、信仰、金融劳作、文化、情绪、判断、____？下一个又会是什么呢&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你会发现，每一次加密领域的破圈，本质上都是用一种新方式把人聚集起来。每个阶段带来的不只是更多用户，更是一个让人留下的新理由——这才是关键所在。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;重点从来不是代币本身，代币只是个让大家围拢过来的话题，好让彼此能一起玩。真正在这个系统里流动的，是那些能承载越来越大规模原生共识的东西。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;说直白点：在那管道里流动的其实根本不是「钱」。而是我们这帮人，正在学习如何在没有老板管着的情况下，达成越来越大、越来越复杂的共识。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;如果想更透彻地理解这一点，不妨看看下面这个简单的「三燃料模型」：&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/ec56c203-eb96-41c6-9574-f5e569da1dac.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 流动性（宏观风险偏好、美元流动性、杠杆能力等）如同注入市场的氧气，它决定了价格能移动多快。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 叙事（人们为何在乎、如何被解释、共同的语言）吸引注意力，它决定了有多少人会看向这里。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 共识的底层构建（共同行为、重复动作、去中心化的协作方式）影响持久性，它决定了当价格不再给予回报时，谁会真正留下。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;流动性或许可以暂时推高价格，叙事或许可以短暂引爆关注，但唯有新的共识构建，才能赋予人们超越单纯买卖行为的共赢行动方式。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这正是许多所谓加密小牛回往往没能成为真正的牛回的原因：它们拥有流动性，也编织了不错的故事，但人们的实际共识却毫无改变。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;那么，如何辨别「回光返照」与真正的「共识升级」？&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;不要先看价格——去看行为。真正的共识升级，往往会在时间长河中显现出相似的信号，它会改变我们这帮人聚在一起「玩耍」的方式。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;每次都是先从行为出发，而非价格。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你想自己学会辨别，光看理念没用，得先复习遍加密史，从中学习并总结，才有概率在下一个共识升级时发现重点。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;下面有 4 个部分，其中是 3 个我整理的拓展案例，最后是一份基础清单，可用来识别下一次共识升级是否正在来临，以及如何判断叙事导致的行为会不会真正留存。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;拓展案例 1：2017 年 ICO 的蓬勃发展 VS 早期试水&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/514a0df1-9b34-4f7d-af3d-347969b78863.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;ICO 狂潮时期（2017 年中 - 2018 年中）的 BTC 与 ETH 价格&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这是加密世界第一次搞明白如何在全球范围内大规模地协调人与资本。数十亿美元流向链上，不是投向成熟的产品，而是注入理念。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在此之前，当然有过早期试水。例如 2013 年的 Mastercoin，2014 年以太坊自己的众筹等。这些尝试很有趣，但始终小众。它们尚未创造出一种能将所有人吸入同一轨道、全球共享的行为模式。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在加密的早期岁月里，玩法其实很简单： 挖矿，交易，持有，用它买东西（比如在暗网上）。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;当然，当时也有不少「快速暴富」的庞氏骗局，但那时候我们并没有定义标准的方式来让一群素不相识的人在链上为同一个梦想共同押注。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2016 年的 The DAO 是加密真正的「顿悟」时刻。它证明了一群素不相识的人，仅凭代码就能汇集资金。但说实话……当时的工具原始，技术脆弱，最后还被黑客搞废了。行为模式出现了，但并不可持续。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;随后 2017 年到来，一切都变得可「量产」了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;以太坊和（此时更成熟的）ERC-20 标准将代币发行变成了量产流程。突然间，参与加密世界的「底层逻辑」发生了一场革命:&lt;/p&gt;&lt;p&gt;融资活动全面上链，成为新常态。白皮书成了「投资标的」。我们用「最小可行产品」换来了「最小可行 PDF」。Telegram 直接变成了金融基础设施。&lt;/p&gt;&lt;p&gt;这种全新的「趋势性」行为让数百万人涌入，并推动了一场史诗级牛市。但更重要的是，它永久重塑了加密世界的 DNA。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;即使泡沫破灭后，我们也再未退回「旧模式」。任何人、在任何地方都能为一个协议众筹——这个想法已经牢牢扎根。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;没错，那时候大部分 ICO 都是彻头彻尾的骗局或庞氏。这种脏事儿 2017 年之前有，2026 年现在也还有。但人们协同工作和调度资金的方式，已经永远改变了，这就是所谓的「共识升级」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;拓展案例 2：2020 年 DeFi 之夏 VS 虚假的牛&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/0a229782-1583-4ebc-8edc-bd9a050283bf.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;DeFi Summer 时期（2020 年 6 月 - 2020 年 9 月）的 BTC 与 ETH 价格&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这个时代也是一个真正的「共识升级」，因为即使价格没有狂暴增长，人们也开始将加密资产当作「金融工具」来使用。这与 ICO 时代截然不同——那时价格上涨与用户行为是互相喂养的共生关系。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2020 年之前，除了 ICO 狂欢季，加密世界的体验基本就是「买入、持有、交易、然后祈祷」。（嗯，除非你是矿工……或者在做一些不可告人的事）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;但现在，大伙逐渐形成了链上肌肉记忆，永远地改变了这个行业。我们学会了：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 借贷： 把你的加密资产存进协议，就能赚取「租金」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 抵押借款： 不卖掉你的加密资产也能获得购买力，就像用房子抵押贷款。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 流动性挖矿： 每周把资金挪到收益最丰厚的地方，资金左腾右挪。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 做 LP： 把你的筹码放在桌上让别人交易，然后从手续费中抽成。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 循环抵押：抵押、借出、再抵押、再借出，把杠杆和收益层层叠加。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 治理： 真正参与协议规则的投票，而不仅仅是赌代币的价格。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在 DeFi 之夏 期间，即便 ETH 和 BTC 横盘震荡，整个生态也感觉是「活的」，活跃度并不取决于价格的直线拉升。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;它打破了「纯赌场」的思维定式，因为加密世界第一次感觉像一个有生产力的金融系统，而不再只是投机玩具。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Compound ($COMP)、Uniswap ($UNI)、Yearn Finance ($YFI)、Aave ($AAVE)、Curve ($CRV)、Synthetix ($SNX) 和 MakerDAO ($MKR/$DAI) 等 DeFi 项目，成为了「互联网的银行」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;即使是像 SushiSwap 这样疯狂的实验也意义重大。它的「吸血鬼攻击」直接从 Uniswap 吸走了流动性，证明了激励机制真的可以像指挥军队一样调度资金。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;然后……随之而来的是虚假的复兴，虚假的牛市，「回光返照」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;比如那些用食物命名的仿盘农场——Pasta、Spaghetti、Kimchi。它们没有带来任何新的协调行为，大多数都像出现时一样转瞬即逝。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;到了 2021 年，DeFi 仍然充满活力（dYdX、PancakeSwap 等项目在快速增长），但野蛮生长的阶段已经结束，人群早已转向下一个闪亮的叙事（NFT）。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;站在今天（2026 年）的视角回看，你会发现 2020 年才是「链上经济」真正诞生的时刻。我们现在做的几乎所有事情（从空投积分、追逐 TVL 到 Layer 2 激励活动等）都沿用了 2020 年的那套玩法。在 DeFi 之夏 后，如果一个新产品不能给用户提供一个「留在链上」的实质性理由，它就很难再激起什么水花了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;激励确实能带动短期活跃度，但如果这些奖励没能建立起一种持久的社区习惯（一种新的范式），那么当补贴发完的那一刻，这个项目就会迅速沦为一座鬼城。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;拓展案例 3：NFT 时代翻转社交习惯&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/2805ddb0-baef-4f7b-aa8d-c25eab5e171f.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;NFT 狂潮期间（2021 年初 - 2022 年中）的 BTC 和 ETH 价格。2021 年是一场「完美风暴」：全球放水与宏观流动性环境、机构入场、NFT 爆发、DeFi 增长、公链之战等等在同一时间共振，将市场推向巅峰。本案例研究将重点关注 NFT——它是该周期中影响力最大的核心催化剂之一。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果说 DeFi 之夏 是大家埋头钻研流动性曲线的极客时代，那么 2021 年就是加密世界终于拥有了「人格」的一年。我们不再纯为了收益率去内卷，开始转而追求氛围感、身份认同和归属感。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;数字物品第一次不再是可随意复制粘贴的「东西」。它们有了可验证的出处。你不仅仅是在「买一张图片」，而是一张写着「你是原主」的数字收据，而整条区块链都是你的证人。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这彻底改写了社交脚本。人们不再试图在计算上压过对方，而是在秀身份。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如今，头像变成了护照。拥有一个加密朋克（CryptoPunks）或一个无聊猿（BAYC）成为了一种数字化的「圈层归属证明」。你的头像不再是自家的猫，而是你进入「全球精英圈层」的入场券。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这时，门槛也出现了。你的钱包变成了你的会员卡。如果你没有对应的资产，你就进不去那些私密 Discord 频道，参加不了圈内派对，也领不到专属的空投。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;还有 IP 所有权。BAYC 把商用权给了持有者并让「所有权革命」成功破圈了。突然间，陌生人们开始围绕他们的「猿」协调合作，开发衍生商品、音乐和街头服饰。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;最重要的是，它吸引了大量「圈外人」入场。那些不关心年化收益率或清算机制的艺术家、游戏玩家和创作者们，突然找到了拥有一个钱包的理由&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;加密不再只是金融了。它成了互联网原生的文化层。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;从共识习惯的维度看：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 取代流动性池的，是藏品系列。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 取代总锁仓价值的，是地板价和社交资本。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 取代收益的，是归属感。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;当然，「回光返照」也随之而来…&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;首先，我们迎来了「模仿者」浪潮。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;一旦「无聊猿」的模式被验证成功，模仿者便一窝蜂地涌现。它们有故事，但毫无灵魂。无数外观相似的藏品系列涌现，基本上都是「无聊猿，但主角是仓鼠」，并承诺着童话般的路线发展图。其中大多数变成了空气，或者说，有价格的空气。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;接着是「刷单」狂欢。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;像 LooksRare 和 X2Y2 这种平台，试图把「DeFi 挖矿」那套逻辑生搬硬套到 NFT 上，搞所谓的「交易挖矿」。结果就是引来了一帮「科学家」自买自卖、左手倒右手。账面上交易量惊人，看起来像行情回来了，其实背地里全是机器人在对敲薅羊毛，真正的玩家早退群了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;最后，还有「名人圈钱」狂潮。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;几乎每个一二线明星都推出过一个系列，因为他们的经纪人告诉他们这是台「新的印钞机」。由于背后没有真正的共识或社区，这些项目比 TikTok 上的热点消失得还快。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;那么，这里面的教训是什么？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;就像 ICO 和 DeFi 之夏 的时代一样，NFT 的泡沫破裂了。但这个时代中行为模式的残留是永久性的，它持续了足够长的时间，永久地改变了这个行业。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;加密不再只是一个数字银行，它成了互联网原生的文化层。我们不再问「为什么要拥有一张 JPEG？」，而是开始理解这一系列行为背后意味着什么。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;例如：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 品牌开始转向「数字护照」和「社群即服务」（CaaS）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 在这个 AI 饱和的时代里，出处成为了数字真实性的标准&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 社群优先的发布模式，现在成了每个新消费初创公司的首选手册&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;协作的习惯留存了下来，以及我们学会了归属于数字文化，并且永远也不会倒退到那个只当个「用户」的时代了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;想要磨炼「投资眼光」？你能怎么做？&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;读到现在大家已经看完了本文章三分之一的内容，上面我给出了三个详细的案例来展现如何辨别虚假的共识升级（「回光返照」）与真正的升级。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;毫不夸张地说，我可以洋洋洒洒再写几百页关于 Meme 币与预测市场的案例分析，但是授人以鱼不如授人以渔，所以我把这部分的分析空出来给你们自己去复盘体会了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;还有，失败的叙事、失败的「共识升级」也值得钻研，例如 2021-2022 Metaverse 1.0、2023-2024 SocialFi 1.0 等。虽然只留下了「一波流」的残骸，并未即刻重塑行为习惯，但这并不代表它们的终结。真正的「共识升级」极少一蹴而就。正如 2013 年 Mastercoin 开启了 ICO 先河，却沉寂数年，直到 2017 年才真正爆发并大规模改变行业行为。早期的失败是认知的垫脚石。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;别因为「凉了」就视而不见。下一次「共识升级」也许是全新的东西，但也可能是曾经失败过的「旧东西」以「某种新形式」的复兴，当这样的事发生的时候，这份认知将会是你的大机缘。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;想要磨炼「投资眼光」的最好方式便是亲自下实际功夫去调研分析验证。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;多问问自己是否明白大众到底在做什么，如果你无法观察到这之中的行为变化，那么你就无法发觉浪潮的变化。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在第一部分结束之前，我还准备了个基础清单，可用来识别下一次共识升级是否正在来临。我称之为「韭菜自我保护 5 问」：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;1. 是否有「圈外人」入场&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;出现了一批主要目的不是赚钱的参与者，你看到的人不再只是为了炒币而来。他们是创作者、建设者，或是寻求身份认同的人。如果房间里只有交易员，那这个房间本质上就是空的。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;（如果你是个交易员并且正在读这段——嗯，我也是个交易员。你我都明白，要让这场游戏玩得转，光靠我们 PVP 是不够的）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2. 它能否通过「激励衰减」测试&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;观察当奖励枯竭或价格横盘时会发生什么。如果人们留下来，说明一种习惯已经养成。如果「免费午餐」一停他们就消失，那你面对的只是一堆带价格标签的空气。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;3. 他们是在选择「日常习惯」而非「持仓」吗&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;新手只会看 k 线，而高手观察人们每天都在做什么。如果他们围绕这个系统建立起了日常习惯，那这就是一个永久性升级。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;4. 是否存在「行为&amp;gt;体验」的现象&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;真正的转变发生在工具还很原始、分散、低效的时候。如果人们愿意忍受糟糕的用户界面也要参与，那么这种行为就是「有效」的。等到应用变得丝滑通畅精致时，你已经晚了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;5.（最重要的一点！！）是否存在「用爱发电&lt;/strong&gt;」&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这一点很关键。当人们开始捍卫一个系统，是因为它构成了他们身份的一部分，而不仅仅是因为他们会亏钱时，转变就彻底完成了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;所以，你若只盯着价格，无限幻想自己于某某价格猛猛抄底的想法很可能就是你导致你永远「卖飞大趋势」、「拿不住」、「总心态崩」、「有仓位就睡不着」的理由。巨大阳线之所以出现，是因为行为模式在几个月前就已经在变了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;价格是这种转变的结果；价格，只是那个终于承认世界已经前进的滞后指标。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;II.  菜就多练，财富无法 1000x 就把认知先 10x&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我知道你现在在想啥。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「好吧，我搞懂了底层的逻辑了，行为变化，协作升级之云云，理论上我知道该看什么了，可当下一次共识升级真的发生时，混乱和机遇共存...... 所以说，到底哪些玩意能涨 1000 倍啊？更重要的是，我该怎么早点发现这些玩意才好猛猛买入啊？」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;实话说，这里是现实世界，不是番茄爽文，光是这个问题就价值连城。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果有人能自信到看着你的眼睛，给你个不知从哪里搞来的「5 步财富密码」，那他们要么是想让你给他们抬轿子好浇给你，或是想让你花几万智商税去买他们的「秘制小课堂」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;为什么这么说？因为每一个新的周期，都是一场全新的协调游戏。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你不可能拿着 2020 年 DeFi 之夏 的剧本，就指望用这套秘籍帮你在 2024/2025 年选出哪些 Meme 币 会爆拉。就算你今天是顶级 Meme 猎手，也不能保证你那套玩法能让你在 2026 年预测市场大杀四方。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「路径依赖」，这害了多少人啊。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;(不过凡事并无绝对，只要你姓特朗普，那么... 您说得对，毕竟都是能画 K 线的主儿了。恭喜你在两个领域都是冠绝一世了)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;没人能预测未来，但最起码我们能给自己打好地基、搭建一个底层框架，让你在真正机会来临时，能比别人快 10 倍盘透它、学会它。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;有自己的框架不能保证你一定比上轮赚更多，但它能让你相对于那些只是来赌博的新手，获得巨大的先发优势。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;框架分三部分：加密周期底层逻辑 + 加密知识结构 + 价值锚定系统。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;第一部分已讲完，现在讲第二部分，也就是「我到底该学些啥，有什么学习办法？」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;可一千个人有一千个哈姆雷特，没有所谓「绝对的正确」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;所以下方我放了两个我的个人建议。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;建议 1：猛猛成为链上柯南&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/f90d4f1a-bfda-4744-8ba7-5f15d9fa5019.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;以下是必备的基础技能清单，所有内容都是可以 100% 在网上免费学到的，不需要任何付费课程或「大师」指点，你唯一需要支付的，是你的决心和时间：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;第一，你要提高自己能辨别「组织性狙击事件」的概率，否则你永远逃不出当接盘侠的命运。学会熟练查看钱包历史、持仓分布、捆绑交易、资金来源于流向，并能嗅出那些不对劲的链上猫腻。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;第二，搞懂市场机制，尽可能判断潜在的供应冲击并避开剧烈的插针清算。需要知道去哪查看并搞懂：订单簿深度、点差、交易平台净流入/流出、代币解锁于解锁周期表、Mcap/TVL 比率、未平仓量、资金费率、宏观资金流向等。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;第三，如果你不想在「黑暗森林」里被生吞活剥，起码得知道 MEV 如何运作，不然你哪天被人「三明治攻击」了都不知道（我的血泪教训）。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你想学的更深、跑的比周围人更快，那你还得学会最大程度的识别虚假交易/刷量/对敲交易、套利刷分、「低流通/高 FDV」陷阱。如果你在撸空投，要明白什么是反女巫机制。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;还有个重要的是，你应该把部分信息流相关的工作自动化，例如各种数据异动警报、新闻筛选、叙事过滤、噪音削减等。现在有了 vibe coding 后，这一切的基础门槛都降低了，谁都能学会。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在 2026 年的今天，我认识的几乎所有人（包括没有过任何 cs 背景的），都在自制工具用来过滤垃圾信息及寻找机会。如果你现在还全靠「手动找信息」，这可能就是你总是慢人一步的原因。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你不投入决心，时间，以及努力打下这个基础，你就是在选择「困难模式」。往小了说意味着你总是比别人慢一步，或者错过很多机会，往大了说就是被诈骗、被卷款、被榨干，直到你终于破防开始学习（或者直接认命退圈了）。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我知道，因为我也是这么一路走过来的，各种雷都踩了一遍，比如说：被陌生人及「朋友」骗、栽在各种庞氏骗局、千奇百怪的内幕浇给、后门合约、热钱包被盗、场外交易诈骗、甚至被社会工程学杀过。害，这还不算我被爆仓的那 3 次。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;除了这些「偏技术类的」，我还整理了些在「社会柯南层面」你能直接拿去用的防坑小技巧。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;先从简单的开始：项目的官号是不是改过 10 次以上名字？以前的马甲是不是跟某些跑路的垃圾项目有关？有很多工具能查账号更名史，用起来。投资前，先核查团队是否存在，创始人和核心成员是否有 X、领英、GitHub 账户？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果他们声称在知名公司工作过或毕业于名校，你得去核实，毕竟伪造的斯坦福、伯克利学历，以及虚假的前 Meta、谷歌、摩根士丹利履历，比人们想象的要常见得多。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;对于那些号称有「某 VC 投了」、「由…孵化」或「与…合作」的说法也一样，有些「知名投资者」或许从未真给钱。有些合作伙伴实际上只是间接顾问，却允许项目方使用其 logo。这种事发生的频率远超你的预期，我都亲身当过受害者。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在 AI 泛滥的如今，虚假互动越来越频繁且只会越来越难辨别。你能看出粉丝数与互动量的比例不正常吗？你能识别 Discord、Telegram 和 X 上的机器人回复或 AI 生成的闲聊吗？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你以前做不到上面说的这些，起码你现在知道该从哪练起了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;建议 2：遁入尘世诚结善缘&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/816aa840-0a31-4ef8-be13-0fa1275c8a88.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;说白了，你就是得多认识人。与「金融圈」、「科技圈」、「任何圈」一样，人脉才是自己最大的依仗。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我是可以写个「投研项目要看的 50 个东西」之类的玩意，但那终究都是一堆毫无价值的废话，为什么这么说？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;因为真正的「核心信息」或者 alpha，当它还具有第一手信息优势时，是永远不会被公开分享的。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;等到一个项目开始被你信息流里有名望的声音大肆鼓吹时，你或许还能赚到钱，但那已经不是你来加密世界追寻的「改变人生的 1000 倍收益」了，那个「最佳入场」的窗口，早就被焊死了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这便是为什么每个周期里，大多数满怀期待想要淘金的新人最终都成了流动性然后退圈。因为他们拿到的信息，是经过一层又一层私人圈子过滤后的「滞后再滞后」的消息。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;所以，如果你还没有一条（或多条）靠谱的「内幕线」，那么仓位管理就是你唯一的安全网，所以一定要将你的大部分加密资产配置在长线标的上。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;长线标的对信息差的要求没那么高，也没那种短线交易的令人崩溃的时效压力，能让你有喘息的余地去研究公开数据，不需要去争做第一个发现规律的人，因为只需要一个项目能活过哪怕 1.5 个周期，无论你何时入场，都大概率能吃到好几波利润。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;与此同时，你的长远目标是停止做一个旁观者，并且开始成为一个参与者。要做到这一点，你手里得有筹码，除了你的家人，这个世界是按利益结盟的，你钦佩的那些人，不会和一个无法提供对等价值的人交换一手信息。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你需要成为「某个有价值的人」或者拥有「某种有价值的东西」来交换，无论是专业知识、实地调研、资金还是人脉，没有人是万事通，正因如此你可以抓住这种机会。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;最好的方法，就是真诚地热情地钻研到一个生态中去：首先，在你看好的领域里的一个项目中找一份工作，无论你是开发者、运营、还是商务拓展，「入门好说话」。工作是建立声誉和结识目标人群最快的方式。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;当然啦，仅仅拥有一份入门级的 web3 工作并不会立刻给你想要的一切，但这是一个很好的开始。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「但如果我缺乏经验，找不到一份靠谱的加密工作怎么办？」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;好消息是：在 2026 年的今天，加密行业仍然不像传统金融或科技大厂那样「职场沙漠」，你不需要一个精英学位和两叠精英实习经历，再过五关斩六将过七轮面试才能得到工作。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在这个行业，你的链上经历就是你的简历，如果你已经投入了大量时间去实验、去「梭哈」、去实实在在地做事情，你其实已经比大多数转行过来的「企业人士」拥有更多相关经验了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;不想打工咋办？那你还有两个办法（依然要付出巨大努力）：如果你超级聪明且足够幸运能在链上打出漂亮的成绩，且还没准备好退休的话，可以把那个钱包地址与你推特账户「绑定」，你都不需要主动去社交，「同好」会不请自来的。在 X 上建立个人品牌，不过这个过程的艰辛冷暖自知，这并非是一个普适性建议。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;世界上没有免费的午餐，也没有靠谱的捷径，100% 的努力不一定能换来 100% 的成功，但 100% 的不努力一定会带来 100% 的失败（除非你的名字叫 Barron Trump）。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;III. 如何做到坚持就是胜利&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;基于个人经历，那些能够在沟槽的周期里不「裸泳」的家伙们都有以下两个特质：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;1. 他们都有着独立于价格的坚强信念&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2. 他们都建立了多维度的价值锚定系统&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;首先我们必须明确，信念（Conviction）不等于执迷不悟或因为「某某大佬」说了什么导致的盲信。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;它不是「今后无论发生什么，打死也不卖」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;真正的信念是结构性的。而结构性本身就包含了灵活性。你可以拥有巨大的信念，同时也会分批止盈或者调整仓位比例。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;关键的区别在于，你是否总能、且始终如一地回到这个牌桌上来。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你不会因为音乐停止就离开。你最初出现在这里的理由，从来就不是为了那些红红绿绿的 k 线，你是因为那个底层的「为什么」而留下的。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;能经周期而屹立不倒的人从来不问：「大佬们，今天是涨是跌啊？」他们会问：「即便价格在未来几年都持续偏离我的观点，我认可这事的本身逻辑还成立吗？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这个思维上的差异，便导致了结果上的天差地别。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「赚快钱」的思维不仅会掏空你的钱包。它更会腐蚀你的信念，摧毁你的信仰体系。而再度建立信仰，可要比重建资本要困难得多。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;所以，他们的「多维度价值系统」究竟是什么？你又该如何构建你自己的呢？&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/10602aea-844f-4a42-8c94-9a6441ad7fb9.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;第一层：概念锚定（Concept）&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;别再只盯着 k 线跳舞了，开始关注核心原则。问问自己：是什么让这个东西值得持有，即便它的价格已经跌穿屏幕了？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;回想一下你最近交易的 10 个代币。现在，快进两年。问问自己：它们中还有多少会依然「存在」？又有多少还会真的「重要」？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你审视一个标的时，无法在不提及「社区」或「狂暴大牛上月球」的情况下，解释清楚它为何值得投入长期资本，那么你拥有的就不是信念。你拥有的，只是一个仓位。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;第二层：时间维度（Time）&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;绝大部分人的行为逻辑是混乱的，他们的决策容易被群体情绪所操纵，就比如以下这个例子：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 今天，他们在某个绝密电报频道跟风买入 4 个不同的，据说一定上月球的 Meme 币&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 明天，他们在 Polymarket 上押注某些项目，因为看到推特上有大佬在喊财富密码&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 突然之间，他们消失了一阵子&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 然后某一天，他们突然私信你，打听某个快要上所的标的&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 可不知怎么的，他们却突然买了个隐私板块的标的，却连这个板块是用来做什么的都不知道&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 又过了几天，他们在群里喊着「牛回速归」、「大饼蓄能完毕，梭哈！」无脑做多比特币，只是因为某个新闻头条写着「下个月会涨到 20 万美元」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;嘿，这可不是策略，这完全是把钱交到别人手里，丢圣杯说不定都比这胜率来的高。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;当然啦，我也不是没见过有人这样做赚到了钱，但我真没见过这类人在两月后还能把这钱守住的。他们唯一留下的，是曾经的辉煌过往和+99999% 的心理阴影。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这类人真正的问题在于，容易被噪音干扰失去主见，同时还开辟了多个超过自己能力以及认知圈的「战场」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;短期投机、中期布局和长期投资，各自需要完全不同的行为模式。而那些能跨越周期的人，清楚地知道每一个仓位属于哪个时间维度，而且绝不会让情绪跨维度传染。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;他们不会因为短期的价格噪音就否定长期的信念，也不会用长期的叙事来为自己冲动的短线操作找借口。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果你正试图从日内交易转向波段交易，以下是一些常见的「自我毁灭」错误：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;1. 你告诉自己现在是个「长期投资者」了，但你 80% 的时间仍在追逐一次性的新闻头条。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2. 你看到一个本该在自己风险可控范围内的、微不足道的 3% 回调，依然会恐慌。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;3. 最糟糕的是，你仍然在用「抢短线赚快钱」的心态去配置仓位和评估风险，导致你又又又卖飞了大趋势。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;从时间维度上锚定，就是通过强迫你在点击「买入」前回答一个极度令人不适的问题，来阻止这个恶性循环：「得要多久我才愿意承认自己『错了』？」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;第三层：行为层面（Behavior）&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你不能只在你顺的时候说你自己「有信仰」，当你的账户一片血红，当的脑海里的声音疯狂尖叫着让你「做点什么」时，那才是真考验。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你需要建立一套用来预测你自己，而非预测行情的自问自答框架。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;在每笔交易进场前，你需要过一遍以下清单，为了确保未来的你是否会给现在的你使绊子：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 当价格下跌 x% 时，我是否已有计划？我是否已经清楚自己会按兵不动、减仓还是退出？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 我是不是屁股决定脑袋的家伙。在回撤期间，我是在客观地重新评估投资逻辑，还是在潜意识里搜集信息，只为给恐慌性抛售找理由？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 我是不是在频繁变更自己的目标点位？当价格上涨 x% 时，我是否会因为「感觉来了」就变得贪婪，不断推高我的止盈目标？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 我能否在不使用「热度」这个词的情况下解释「持有」的理由？除了看情绪、看热度，我能不能清清楚楚地讲出背后持有的理由？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 这是「信念」还是「沉没成本」？当一个仓位横盘的时间超出预期时，我持有它是因为投资逻辑依然成立，还是因为我不愿承认自己错了呢？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 我违反规则后的「认错时间」有多长？当我违反了一条自己的交易规则时，我是立刻察觉并采取行动，还是非要等到账户亏麻了才反应过来？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;· 我是否容易进行「复仇交易」？一笔亏损后，我是否会立刻感到气血上头，想跳进另一笔交易，只为了「刚刚损了，接着开，必须干回来」？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这些问题的目的不是为了猜 k 线怎么走，而是为了勾勒出当你顶着巨大的心理压力时，未来的你是否会背叛现在的你。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;所谓「行为锚点」，本质上就是对压力的预处理。在冷静时定好动作，是为了防止你在绝望时乱搞。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;毕竟，你若没想好用啥计划「玩」交易，那么最终，交易就会开始「玩」你。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;第四层：信仰维度（Belief）&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你有没有发现，最快「消失」的人往往都是是牛市里嗓门最大的那群人：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「现在是买 XX 最后的上车机会了」「这次之后你不会在看到十万以下的比特币！」「听我的，吃麻吃炸吃飞起来，不买 xx 你就是在和未来对着干！」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;随着价格的反转，这群人一个个烟消云散，他们的「信仰」仿佛从未存在过。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这种「一夜暴富」的心态不仅会通过频繁交易毁掉你的投资组合，更会腐蚀你的信仰体系。而一个破碎的信仰体系，远比一个银行账户更难重建。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「快钱总是会引来可悲的过度行为。这是天性，就像非洲的动物以腐尸为食一样。」——查理·芒格&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;可悲的是，大多数人就是会在狂欢顶峰时耗尽他们的资本，等到真正的机会（真正的熊市）最终来临时，他们已经没有「子弹」了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这真是一个天大的玩笑：将人们带入加密世界的心态、对一夜暴富的渴望，恰恰就是扼杀他们获得财富的元凶。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;大多数人甚至意识不到自己失去了什么，直到多年后比特币再次成倍上涨，他们才拍着大腿问：「我当时怎么就熬不过那点挫折呢？早知道就拿住了。」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这就是为什么信仰是最重要的一层：它是一个需要多年时间才能形成的信条。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;如何测试你的信念是否足够坚定？&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;试试这个：如果此刻有人激烈地质疑你的立场，你能冷静地为其辩护吗？你能坦然面对尖锐的问题，而不是回避它们吗&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你的信仰应该是极度主观、独一无二的。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;对一些人来说，它是加密朋克精神（Cypherpunk）：一种对管制和中心化控制的彻底反叛。对他们而言，加密不仅仅是一项投资，更是从一个破碎系统中退出的曙光。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;对另一些人来说，它是&lt;strong&gt;货币史的另一次迭代&lt;/strong&gt;：他们看到了法币贬值和金融掠夺的周期循环，认识到加密是对抗每百年都以相似方式崩溃的传统体系的唯一对冲。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;对于某些信仰者，它是主权、中立性或生存权。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你必须找到你自己的「为什么」，而不是仅仅租用某个大 V 的理念。我无法告诉你独属于你的信仰应该是什么，但我可以分享我的。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;去年，当我还只有 2000 个粉丝，没人在乎我说什么的时候，我写了一篇帖子回答一个简单的问题：为什么，在经历了所有这些崩盘和归零之后，我仍然购买比特币。我称之为：「上帝与人类签订的第四份契约」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;人类历史上的前三大契约都有一个致命的缺陷：它们从来就不是为所有人准备的。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;第一份是《旧约》，它由血缘绑定，归属权在你出生前就已决定。如果你不属于被选中的血脉，你便从未有资格。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;第二份是《新约》，它谈论对所有人的爱与救赎，但历史揭示了言语试图掩盖的真相：如果你是 17 世纪一个贫穷的亚洲农民，你这辈子都没机会踏进大教堂半步，帝国会把你拦在门口，唯有种族、权力和等级决定了谁才值得被救赎。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;第三份是《独立宣言》，这是现代世界的诞生，它承诺自由、平等和机会，但前提是你出生在正确的土地上，持有正确的护照，身处正确的体系内。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;当然，从某种意义上说，「迁徙自由」是存在的，但对大多数人来说代价太高了，概率渺茫，这些规则似乎从未为普通人而写。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;大多数人甚至从未到达起跑线，他们得用一生去证明自己「配得上」，用金钱、用教育、用服从、或是用运气，他们一层又一层地乞求这个系统让他们「归属」。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;而如今，第四份契约出现了：《比特币》&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://image.blockbeats.cn/file_v6/20260127/67042042-35c9-4478-a94b-ef840f300ffa.png?x-oss-process=image/quality,q_50/format,webp" alt="" data-href=""&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这是人类历史上&lt;strong&gt;第一个&lt;/strong&gt;不问你是谁的系统。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;它不在乎你的种族。它不在乎你的国籍。它不在乎你会说什么语言，也不在乎你出生在哪里。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这里没有神父，没有政体，没有国界，也不需要许可，&lt;strong&gt;只要你和一把私钥&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你不需要被选中，你不需要有关系，你不需要被批准，你不需要向比特币证明自己。你要么理解它，要么不理解。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;这个体系不承诺你舒适、安全或必然成功，它只提供一件人类从未真正拥有过的东西：&lt;strong&gt;在同一时间，让所有人面对同样的规则，拥有同样的准入权&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;对我来说，这不是一个投资论点，这不是一笔交易，也不是一次赌博。这个信念是我能够静坐穿越市场沉浮，忍受多年的寂静、质疑、嘲笑和绝望，并依然持有的唯一原因。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1&gt;如果你已经耐着性子读到了这里......&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;那么恭喜你，你已经拿到了「幸存者」的蓝图。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;你学会了如何识别「共识升级」，你学会了如何使用那份「调查员工具包」来提高早期入场的胜率，你也知道了构建信仰和保持定力需要哪些要素。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;不过，我还是得诚实地告诉你&lt;/strong&gt;：道法自然，如来。无论你拥有再高端的工具，如果你无法控制使用工具的人，那么永远是力大砖飞。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我所分享的这一切都源自于我在市场沉浮的 13 年所经历的无数错误、教训、以及刻骨铭心的伤疤。我写下的这些零碎的反思笔记，也源于和那些同样从战场侥幸存活下来的朋友们，在深夜的一次次对话。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;翻看着我这些凌乱的笔记，我意识到我手头的素材起码能大手一挥写一本书，每一章都能以不同的角度深入探讨加密。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;然而，这些教训无法在一夜之间就让你神功大成，就像「快钱思维」并不能真正让你变得富有一样。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我目睹了每个周期里的那些「天才」的陨落...... 亏钱并不是因为他们不聪明，或者棋差一着，而是因为他们都长着一颗「&lt;strong&gt;只想搞快钱的脑子&lt;/strong&gt;」，还端着一副狂妄但「&lt;strong&gt;一碰就碎&lt;/strong&gt;」的自尊。与此同时，那些在 2026 年仍在获利的人，及那些保住收益并全身而退的人，都共享着一个认知：&lt;strong&gt;代币本身从来都不是重点&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;重点是我们正在构建的这个主权体系，以及归属于它所需要的那份个人纪律。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;加密是这个星球上最残酷、最诚实的老师&lt;/strong&gt;：它会逼出你内心里的魔鬼，也会找到你最薄弱的特质——无论是贪婪、急躁还是懒惰。然后为此向你收取一笔巨额的「学费」。我的那份，我想，我已经全额付清了，哈哈。&lt;strong&gt;我唯一的希望是，这篇文章能让你不必付出像我一样多的代价&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;如果你真的从头到尾读完了这些&lt;/strong&gt;（而不是让 AI 来帮你总结），那么我真的相信，你有潜力成为我们这些征服了多个周期的幸存者中的一员，你正是那种能真正掌握我在第二部分给出的技能清单的人。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;我真诚地希望，你能成为我新的「老朋友」之一，能与我一起，在下个周期、在下下个周期、在未来无数个周期里，一起成长的战友，一起见证比特币彻底颠覆世界。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;而对于我那些长期的读者们：谢谢你们，正是你们的善意和支持，让我决定回忆我的过往，分享这些经历。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;加密世界或许时常令人糟心，但它依然值得热爱，依然值得为之建设。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;那么，我先走一步，我们下一次「共识升级」时再见。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://x.com/0xPickleCati/status/2016059049729458207" target="_blank"&gt;原文链接&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.theblockbeats.info/news/58433" target="_blank"&gt;点击了解律动BlockBeats 在招岗位&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;欢迎加入律动 BlockBeats 官方社群：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Telegram 订阅群：&lt;a href="https://t.me/theblockbeats" target="_blank"&gt;https://t.me/theblockbeats&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Telegram 交流群：&lt;a href="https://t.me/BlockBeats_App" target="_blank"&gt;https://t.me/BlockBeats_App&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Twitter 官方账号：&lt;a href="https://twitter.com/BlockBeatsAsia" target="_blank"&gt;https://twitter.com/BlockBeatsAsia&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;  &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BlockBeats</author><pubDate>Tue, 27 Jan 2026 13:14:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9Ja3ZLbS05MXJfVG94TVdwWWxFNWVlQWhiUXdMbVU4b3h4RzU2UDJ4SF9ZOUdiUjRzZmU4SFk5QWJQdU9zVWk0X1ZaMGxOTFJhTDB3</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 27 Jan 2026 14:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9YRkdLZUkwOGh6MUJZNndwb0NjZElsY2FmMk9oNWNpbk02bWFvVVM2bTczSTRkMVBvTk1ROThYMW5MazB5MVRFS0RkVVZJWnAzSmh5ZDU5R0w</guid></item></channel></rss>
