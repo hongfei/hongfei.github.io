@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Windows 11 26H2确认今年推出！首次在系统更新现身 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101773.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>飞牛NAS用户注意！黑客放出新变种病毒针对fnOS升级 官方紧急通告 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101891.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月2日消息，日前，飞牛fnOS被曝出现重大安全漏洞引发业内和用户关注。&lt;/p&gt;
+&lt;p&gt;今日，飞牛安全应急响应团队发布紧急安全通告，称昨日发布1.1.18安全更新后，大规模入侵行为已初步遏制。&lt;/p&gt;
+&lt;p&gt;但攻击者针对OTA升级机制进行了对抗性升级，在官方发布查杀更新后，&lt;span&gt;&lt;strong&gt;黑客组织明显活跃，病毒已出现新变种，部分受感染设备的系统更新服务被恶意破坏，导致无法正常接收修复补丁。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，官网、社区、官方域名等也在持续承受不同程度的DDOS攻击。&lt;/p&gt;
+&lt;p&gt;此次组合攻击呈现高度组织化、针对性的特征，攻击方正在根据防御动态持续调整策略。&lt;/p&gt;
+&lt;p&gt;对于更新服务已损坏且未完成升级的受感染设备，存在被持续控制的重大风险。&lt;/p&gt;
+&lt;p&gt;为降低设备风险，&lt;strong&gt;飞牛提供以下修复建议，用户可按照自身情况，选择对应处理方式，尽快替换到最新系统。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;针对无法通过OTA升级的设备&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;建议可从官网下载1.1.18完整系统镜像进行重装，目前系统1.1.18镜像已上架官网：&lt;a class="f14_link" href="https://www.fnnas.com/download" target="_blank"&gt;https://www.fnnas.com/download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;fnOS采用存算分离架构设计，重装仅替换系统分区，存储池数据可完全保留。&lt;/p&gt;
+&lt;p&gt;重装后重新挂载即可恢复数据访问，存储空间不受该木马影响，此方案可以有效解决当前风险。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;针对已经更新或者遇到异常情况的设备&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;目前提供了官方紧急验证查杀脚本，可以自行验证。&lt;/p&gt;
+&lt;p&gt;curl -L https://static2.fnnas.com/aptfix/trim-sec -o trim-sec &amp;amp;&amp;amp; chmod +x trim-sec &amp;amp;&amp;amp; ./trim-sec&lt;/p&gt;
+&lt;p&gt;该脚本连接云端病毒库，可识别并清除已知变种，官方也会随病毒特征变化实时更新规则。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;针对暂时无条件进行更新或者重装的设备&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;建议立即断开设备公网连接或关机，防止设备成为僵尸网络节点或遭受进一步破坏。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;针对已经完成更新，但是功能使用出现异常的设备&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;建议进入系统设置，使用系统修复功能，进行修复，该工具会强制校验并修复关键系统文件，恢复设备使用。&lt;/p&gt;
+&lt;p&gt;此外，飞牛官方表示，注意到存在第三方人员恶意利用已公开漏洞，对未升级设备实施入侵的情况。&lt;/p&gt;
+&lt;p&gt;此类行为已涉嫌破坏计算机信息系统罪，公安机关和国家通信部门已介入此类案件调查并固定相关证据，移交公安机关网络安全部门处理。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260202/3579d30b2019418182dd66f9509f0e55.jpg" target="_blank"&gt;&lt;img alt="飞牛NAS用户注意！黑客放出新变种病毒针对fnOS升级 官方紧急通告" h="400" src="//img1.mydrivers.com/img/20260202/s_3579d30b2019418182dd66f9509f0e55.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 02 Feb 2026 11:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9jTHVMSWQtdkRyUlN5eGxmOHE3dzFVWEpvQVRFWnpobmwyRWQ5dTdLZW9qSFVweUtqTWN6V05WTl9xR0NacmZsZFhIczl4LXJSMkRGQ1ZmR0E</guid></item><item><title>自己买也要花钱！雷军满足网友要求晒自己开的车：还会买新一代小米SU7 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101774.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;自己买也要花钱！雷军满足网友要求晒自己开的车：还会买新一代小米SU7&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-02 12:42:00  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1101774-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月2日消息，在昨天的直播中，雷军在跟网友互动时被问到自己平时都开什么车，而他也是大方回应。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;按照雷军自己的说法，之前购买过小米SU7创始版、SU7 Ultra，而目前最常开的车型是一款影青色的小米YU7。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接下来雷军也有购买新车的打算，当然是新一代小米SU7。&lt;/p&gt;
+&lt;p&gt;据介绍，从2月1日0点开始，小米汽车已经在全国各大机场如北京首都T3机场、上海浦东机场等已投放新一代小米SU7广告。&lt;/p&gt;
+&lt;p&gt;首批新一代小米SU7展车预计在2月13日陆续进店，北京、上海、广州、深圳、杭州、成都、武汉等城市会有商场展厅展示，具体到店通知会及时通知大家。&lt;/p&gt;
+&lt;p&gt;另外，雷军还表示，虽然他是小米的CEO，但自己买车也是要自掏腰包的，并且没有折扣，提车时间上也没什么特殊照顾，都是按照订单顺序来的。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260202/42433f095589422c86227e9c8c6fa2ce.jpg" target="_blank"&gt;&lt;img alt="自己买也要花钱！雷军满足网友要求晒自己开的车：还会买新一代小米SU7" h="400" src="//img1.mydrivers.com/img/20260202/s_42433f095589422c86227e9c8c6fa2ce.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt; &lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 02 Feb 2026 04:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA0NEJ4OTlwSjRxYlBlX3loZ05sVkMzTjF5M3Q2eFE0X2NZOS1pQ3VTOWg1UXQ5RE5sa1JuMkpUa3NDY2lKUW9sdUFueEFadnlhbmJZWWJvVFo</guid></item><item><title>Windows 11 26H2确认今年推出！首次在系统更新现身 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101773.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;Windows 11 26H2确认今年推出！首次在系统更新现身&lt;/p&gt;
           
@@ -63,7 +160,28 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 02 Feb 2026 04:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE82VEppNzJVWkswUVhaQzIxZjN2MXM3STJ2ZGtBMHV2ZTVhS0tiSjhvMzVGTUwwS2RROVgzVDh3bHdmWG5rWkdmUUt3d0xZc200cUxNcF9zUXA</guid></item><item><title>雷军：第一代小米SU7已停售 个别车商为了蹭流量又哭又闹 欢迎大家帮我们举报 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101769.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 02 Feb 2026 04:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE82VEppNzJVWkswUVhaQzIxZjN2MXM3STJ2ZGtBMHV2ZTVhS0tiSjhvMzVGTUwwS2RROVgzVDh3bHdmWG5rWkdmUUt3d0xZc200cUxNcF9zUXA</guid></item><item><title>英特尔代工iPhone芯片没戏了！行业人士揭开背后原因 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101771.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月2日消息，在过去的几周时间里，苹果牵手英特尔的传闻引发广泛关注。&lt;/p&gt;
+&lt;p&gt;有证券机构披露，苹果会让英特尔代工部分M系列处理器和非Pro版iPhone芯片，预计在2027年发货的低端M系列芯片以及2028年iPhone标准版芯片中使用英特尔18A-P工艺。&lt;/p&gt;
+&lt;p&gt;消息称苹果公司已经与英特尔签署了保密协议，并获取了其先进的18A-P工艺的PDK（工艺设计套件）样本，用于产品评估。资料显示，英特尔18A-P工艺是其首个支持Foveros Direct 3D混合键合技术的工艺节点，该技术允许通过TSV实现多个小芯片的垂直堆叠。&lt;/p&gt;
+&lt;p&gt;不过行业人士对英特尔代工iPhone芯片泼了一盆冷水，&lt;strong&gt;认为英特尔绝无可能会代工iPhone芯片，主要原因是BSPD（背面供电）技术。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;具体来说，台积电是部分工艺节点采用 BSPD、部分不采用，以此完善其产品组合；而&lt;strong&gt;英特尔则是在其最先进的18A和14A工艺上全面押注BSPD。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据悉，BSPD的优势是提升芯片性能，由于芯片是通过背面更短、更粗的金属路径供电，这降低了电压降，支持更高、更稳定的工作频率，但是对于移动芯片而言，这种方案带来的性能增益微乎其微。&lt;/p&gt;
+&lt;p&gt;更糟糕的是，该方案会带来严重的自发热效应，需要额外的散热措施。因为垂直散热效果较差，横向散热也很更糟，在许多依赖空气散热或有温度限制的场景中，这根本无法实现。&lt;/p&gt;
+&lt;p&gt;由于这些散热问题，行业人士认为，&lt;span&gt;&lt;strong&gt;英特尔在短期内绝无可能获得iPhone芯片的代工订单。当然，M系列处理器由于散热空间相对较大，或许仍存在合作的可能性。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260202/592e973410a34f6787321cc3082a29f8.jpg" target="_blank"&gt;&lt;img alt="英特尔代工iPhone芯片没戏了！行业人士揭开背后原因" h="399" src="//img1.mydrivers.com/img/20260202/s_592e973410a34f6787321cc3082a29f8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 02 Feb 2026 04:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9BWmdxMFp1eF9qWTlHdFNtNW41eFdYcktxUHRuNVU0RGJLdjlFMkZGVjNCUTJCckNUOTIzTWp3dXFiZHRKem9iM1ZEbl9kMmVrYTQ0LVNqSDA</guid></item><item><title>雷军：第一代小米SU7已停售 个别车商为了蹭流量又哭又闹 欢迎大家帮我们举报 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101769.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月2日消息，2月1日晚间，小米创始人、董事长兼CEO雷军在北京亦庄小米汽车实验室开启直播，集中回应多项行业热点，明确披露第一代小米SU7已正式停售，同时详解交付数据争议、新一代车型进展及二手车保值率等核心信息。&lt;/p&gt;
 &lt;p&gt;直播中，雷军介绍，小米汽车已在上海、北京、武汉、南京四城建成100多间自建实验室，北京亦庄实验室既承担部分研发工作，也负责保障汽车生产的量产一致性，仅测试验证相关工作人员就达800多人，加上集团支持团队，小米汽车部研发队伍已超8000人。&lt;/p&gt;
@@ -643,7 +761,72 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 02 Feb 2026 02:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4zQVdVcjFaNVpMb2lyeXZtQjZMd2FMc25WRUNhLVRXTUQzV0ZBTVZ1Umtyb0xJV1JzR3ZoNk9JSk5vOWhuMmlhcWJlcnFoUGlPbm5ra19BYTY</guid></item><item><title>《Apex 英雄》NS1版将于8月4日停服 - 机核GCORES</title><link>https://www.gcores.com/articles/210361</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="862p8-0-0"&gt;&lt;p data-offset-key="862p8-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="862p8-0-0"&gt;&lt;span data-text="true"&gt;EA宣布，29赛季将会是《Apex 英雄》Nintendo Switch 版的最终一个赛季。自 2026 年 8 月 4 日（赛季 30）起，《Apex 英雄》将不再能于 Nintendo Switch 主机上游玩。 直到 2026 年 8 月 4 日为止，玩家仍可继续投入战斗、获得奖励，并如常享受对战。 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="3275l-0-0"&gt;&lt;p data-offset-key="3275l-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="3275l-0-0"&gt;&lt;span data-text="true"&gt;自2026 年 8 月 4 日起，游戏内高级货币将不再能于 Nintendo Switch 上购买，但任何现有余额仍可在 2026 年 8 月 4 日前使用。玩家可以在 Nintendo Switch 2 上使用来自 Nintendo Switch 的任何现有余额。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="aotu0-0-0"&gt;&lt;p data-offset-key="aotu0-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="aotu0-0-0"&gt;&lt;span data-text="true"&gt;所有玩家的进度、购买内容和获得项目都会绑定到他们的个人 EA 帐号。所有已获得或购买的内容，包含 Apex 硬币与外观道具，都将延续至 Nintendo Switch 2，即使您在 2026 年 8 月 4 日之后才购买 Nintendo Switch 2，也一样会延续。请注意，在某些地区，当地法律要求玩家在购买数字货币后的 180 天内使用。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="e8rko-0-0"&gt;&lt;p data-offset-key="e8rko-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="e8rko-0-0"&gt;&lt;span data-text="true"&gt;《Apex 英雄》将会继续在所有其他受支持平台上推出。随着开发者在持续发展《Apex 英雄》的内容和技术基础，目标是提供高品质的游戏体验。NS2 也为《Apex 英雄》提供了出色的掌上游戏体验。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="4uhb5-0-0"&gt;&lt;p data-offset-key="4uhb5-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="4uhb5-0-0"&gt;&lt;span data-text="true"&gt;官方表示，衷心感谢自第一天起就与他们同行的 Nintendo 社群，希望能在 Nintendo Switch 2 的运输舰上与玩家相见。 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>机核GCORES</author><pubDate>Mon, 02 Feb 2026 02:29:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiT0FVX3lxTE1WaGJSd2NMM1BqZE52X1NObUMxZUs3WmpnaS1GaWJVN3B4bENkNE5HU3hvZ3RnUERZQTZ3NVR0VUJjMk5CZWhwaERZeWZuNTg</guid></item><item><title>安卓小平板口碑王！新款联想拯救者Y700官宣3月见：支持实体SIM卡 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101740.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 02 Feb 2026 02:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4zQVdVcjFaNVpMb2lyeXZtQjZMd2FMc25WRUNhLVRXTUQzV0ZBTVZ1Umtyb0xJV1JzR3ZoNk9JSk5vOWhuMmlhcWJlcnFoUGlPbm5ra19BYTY</guid></item><item><title>《Apex 英雄》NS1版将于8月4日停服 - 机核GCORES</title><link>https://www.gcores.com/articles/210361</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="862p8-0-0"&gt;&lt;p data-offset-key="862p8-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="862p8-0-0"&gt;&lt;span data-text="true"&gt;EA宣布，29赛季将会是《Apex 英雄》Nintendo Switch 版的最终一个赛季。自 2026 年 8 月 4 日（赛季 30）起，《Apex 英雄》将不再能于 Nintendo Switch 主机上游玩。 直到 2026 年 8 月 4 日为止，玩家仍可继续投入战斗、获得奖励，并如常享受对战。 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="3275l-0-0"&gt;&lt;p data-offset-key="3275l-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="3275l-0-0"&gt;&lt;span data-text="true"&gt;自2026 年 8 月 4 日起，游戏内高级货币将不再能于 Nintendo Switch 上购买，但任何现有余额仍可在 2026 年 8 月 4 日前使用。玩家可以在 Nintendo Switch 2 上使用来自 Nintendo Switch 的任何现有余额。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="aotu0-0-0"&gt;&lt;p data-offset-key="aotu0-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="aotu0-0-0"&gt;&lt;span data-text="true"&gt;所有玩家的进度、购买内容和获得项目都会绑定到他们的个人 EA 帐号。所有已获得或购买的内容，包含 Apex 硬币与外观道具，都将延续至 Nintendo Switch 2，即使您在 2026 年 8 月 4 日之后才购买 Nintendo Switch 2，也一样会延续。请注意，在某些地区，当地法律要求玩家在购买数字货币后的 180 天内使用。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="e8rko-0-0"&gt;&lt;p data-offset-key="e8rko-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="e8rko-0-0"&gt;&lt;span data-text="true"&gt;《Apex 英雄》将会继续在所有其他受支持平台上推出。随着开发者在持续发展《Apex 英雄》的内容和技术基础，目标是提供高品质的游戏体验。NS2 也为《Apex 英雄》提供了出色的掌上游戏体验。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="story_block story_block-text " data-block="true" data-editor="articles210361" data-offset-key="4uhb5-0-0"&gt;&lt;p data-offset-key="4uhb5-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"&gt;&lt;span data-offset-key="4uhb5-0-0"&gt;&lt;span data-text="true"&gt;官方表示，衷心感谢自第一天起就与他们同行的 Nintendo 社群，希望能在 Nintendo Switch 2 的运输舰上与玩家相见。 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>机核GCORES</author><pubDate>Mon, 02 Feb 2026 02:29:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiT0FVX3lxTE1WaGJSd2NMM1BqZE52X1NObUMxZUs3WmpnaS1GaWJVN3B4bENkNE5HU3hvZ3RnUERZQTZ3NVR0VUJjMk5CZWhwaERZeWZuNTg</guid></item><item><title>机器人市场变天了，宇树智元争春晚流量，腾讯阿里字节打响「代理人战争」 - 36氪</title><link>https://m.36kr.com/p/3663387680469767</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;CES 2026 归来，小雷发现具身智能和机器人赛道的高人气，丝毫不见衰减之势。尤其是 Omdia 近期公布的一项数据，更掀起了机器人行业两大明星品牌宇树与智元间的缠斗。&lt;/p&gt;
+  &lt;p&gt;Omdia 数据显示，2025 年全球人形机器人市场出货量预计达 1.3 万台，其中智元以超过 5100 台的出货量，占据 39% 的市场份额，位列第一；宇树以 4200 台的出货量，占据 32% 的市场份额，位列第二；智元和宇树，合计占据全球人形机器人市场 71% 份额。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;就是这样的一份「两强争霸」榜单，结果「居于人后」的宇树不爽了，官方甚至特地发布了一份数据澄清说明。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1920" src="https://img.36krcdn.com/hsossms/20260131/v2_eafe7f4b28bf4264bc3e9c104d3d03e7@1547419282_oswg208289oswg1080oswg1920_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;宇树透露，其 2025 全年人形机器人实际出货量超 5500 台，2025 年本体量产下线超 6500 台，以上两项数据均不含双臂、轮式等其他机器人产品。宇树还特别指出，「目前各种机器人形态多样，请勿把不同类型机器人数量，直接合并在一起对比」。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;第三方市场调研机构公布的出货量数据，通常都会有一定的误差区间，相对成熟的品类，误差区间会偏小，例如手机、电脑等品类市场，而像人形机器人这类既处发展早期、市场规模又极小的品类，官方不给出明确数据的话，第三方市研机构也比较难给出相对精确的各厂商出货量数据。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;下一步，就看智元会否给出 2025 全年确切的人形机器人出货量数据，从而「再次力压」宇树。&lt;/p&gt;
+  &lt;h2&gt;宇树智元缠斗，更多机器人「实干派」不再低调&lt;/h2&gt;
+  &lt;p&gt;宇树、智元缠斗的同时，更多机器人「实干派」，开始不再低调，甚至开始频繁刷脸。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;蛇年春晚，宇树一家独舞，引爆全民关注人形机器人的同时，品牌关注度和星光度更是得到全方位扩大。马年春晚，更多机器人品牌开始争抢这一顶流秀台入场券，甚至不惜豪掷亿元。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;此前有消息称，没有一家机器人企业获得马年春晚独家赞助权益，「最终大约有五家左右的具身智能公司一起上春晚，每家出资 1 亿左右」。近日，就有两家品牌企业抢先宇树，率先官宣获得马年春晚赞助商资格：一家是魔法原子，一家是银河通用，均非此前呼声最高的品牌企业。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="6048,4032" src="https://img.36krcdn.com/hsossms/20260131/v2_8eedccdcb8274268be8dba615079789f@1547419282_oswg3450950oswg6048oswg4032_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;雷科技 CES 2026 现场摄制&lt;/p&gt;
+  &lt;p&gt;有说法认为，之所以是这两家机器人企业率先拿到马年春晚入场券，更多是因其产品设计理念和场景应用更偏向「实用性」和「可落地性」。这种说法，有一定道理。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;作为 CES 2026 报道团成员，小雷在拉斯维加斯现场就见识到了这两家品牌机器人的功用性，而非观赏性。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;魔法原子的机器人，今年首次登台 CES，带来从科研教育到工业生产，再到家庭生活应用场景的机器人产品系列矩阵，例如在工业场景下拥有高自由度仿人作业能力的机器人，能全程自主完成从点单到出餐的机器人，可完成物品递送、开关门窗等日常家务的机器人，在复杂高危巡检环境下的工业四足机器人等。&lt;strong&gt;显然，魔法原子想把机器人可以实现的核心能力，尽快适配到更多实际应用和工作场景。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1268,714" src="https://img.36krcdn.com/hsossms/20260131/v2_afc5505b03c84774b1aa984498756a62@1547419282_oswg99313oswg1268oswg714_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：魔法原子&lt;/p&gt;
+  &lt;p&gt;值得一提的是，成为马年春晚首个机器人合作品牌的同时，魔法原子联合创始人顾诗韬透露，公司将在今年冲击 IPO。&lt;/p&gt;
+  &lt;p&gt;作为抢先官宣登台马年春晚的另一家机器人品牌，银河通用在去年 12 月完成新一轮超 3 亿美元融资，打破国内机器人行业单轮及累计融资双纪录，公司估值也来到 30 亿美元。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;在技术路线上，银河通用同样强调「实用主义」。&lt;/strong&gt;在其 CES 2026 展台，小雷就看到醒目的「AI-Driven Autonomous Robots, Born for Productivity（AI 驱动的自主机器人，为生产力而生）」大标语。展台的机器人，则亮出了两大核心技能：其一是从货架取送商品，其二是搬运箱子，全流程自动化。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1280,1892" src="https://img.36krcdn.com/hsossms/20260131/v2_f197382ff73b45e5a91b495f09710f32@1547419282_oswg139237oswg1280oswg1892_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：银河通用&lt;/p&gt;
+  &lt;p&gt;除了这两家将要登上马年春晚舞台的新创企业，机器人领域的一些老牌创业企业也在加大自身品牌宣传和产品推广力度。&lt;/p&gt;
+  &lt;p&gt;雷科技近期就留意到一家名为睿尔曼（RealMan）的机器人和具身智能企业，其成立于 2018 年。睿尔曼创始人郑随兵曾对媒体表示，「&lt;strong&gt;我们造机器人不是为了造一个人，而是为了造一个能在具体场景干活的工具&lt;/strong&gt;」。&lt;/p&gt;
+  &lt;p&gt;具体到企业发展上，睿尔曼目前拥有三大核心产品：全栈自研一体化关节模组、超轻量仿人机械臂、远程作业网络（GLN），均有清晰的商用落地场景。&lt;/p&gt;
+  &lt;p&gt;其中，睿尔曼在 CES 2026 完成了「北京-拉斯维加斯」跨洋实时遥操演示，即通过构建「北京人形机器人数据训练中心-拉斯维加斯国际会展中心」的远程劳动力网络，使在北京的具身训练师可远程精准控制在 CES 展台的 RealBOT 轮式折叠机器人，执行「递送物品」「传递水果」等真实场景作业。&lt;/p&gt;
+  &lt;p&gt;睿尔曼之外，应该还有更多业内老牌创业企业在默默发力，以求能实现从量变到质变的突破，从而迎来真正的出人头地日。&lt;/p&gt;
+  &lt;h2&gt;具身智能赛道火热，互联网巨头掀起「代理人」之争&lt;/h2&gt;
+  &lt;p&gt;马年春晚舞台，魔法原子、银河通用抢先宇树官宣，多品牌机器人登台亮相，告别单品牌「独角戏」。迎接马年到来，具身智能和机器人赛道更多在场企业，正在怒刷存在感，例如在目前同样火热的创投市场舞台。近期，名不见经传的自变量机器人完成 10 亿元 A++ 轮融资，成立不到半年的至简动力完成第四轮融资。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;具身智能和机器人赛道，新创企业跃跃欲试、新新企业层出不穷，这一市场格局远未到定型时。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;值得注意的是，&lt;strong&gt;自变量和至简动力背后均有多家互联网巨头企业的身影&lt;/strong&gt;。其中，自变量是目前业内唯一同时被&lt;strong&gt;美团、阿里巴巴、字节跳动&lt;/strong&gt;这三家互联网大厂投资的具身智能企业，至简动力则是同时被&lt;strong&gt;腾讯、阿里巴巴&lt;/strong&gt;这两家互联网巨头投资的具身智能企业。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1199,722" src="https://img.36krcdn.com/hsossms/20260131/v2_22eb4f9bd2314c6b98a28d93070befcd@1547419282_oswg86723oswg1199oswg722_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：自变量&lt;/p&gt;
+  &lt;p&gt;为何互联网巨头此刻仍在疯狂押注具身智能和机器人企业，尤其赛道新新企业？&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;一、互联网巨头本身也是 AI 大模型平台企业，而具身智能正是 AI 大模型在硬件应用领域的「顶流」和「未来」赛道。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;主流观点认为，通往 AGI（通用人工智能）的道路上，AI 是大脑，机器人是身体，大脑和身体缺一不可。故而，这些 AI 大模型平台企业，不可能不涉足机器人尤其具身智能赛道。与此同时，现阶段的具身智能和机器人市场整体规模偏小，互联网巨头需要战略布局，但又无法自身涉足其中，站台新创企业（尤其尚未成型的新新企业）自然也就成了唯一解。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;二、机器人亟待解决「大小脑」未同步发育以及批量化交付（快速上量）的难题，而这给了互联网巨头一个全面介入的契机。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;机器人企业，普遍更擅长的是硬件技术、运动控制，以及对应的软件适配和优化，这就决定了多数机器人企业，只能从硬件和运动控制层面去打磨机器人产品。机器人的「小脑」，即控制其运动能力的功能模块；机器人的「大脑」，即控制其智能程度的功能模块。久而久之，就出现了目前机器人「大小脑」未同步发育，具身智能概念落地难的行业发展现状。&lt;/p&gt;
+  &lt;p&gt;机器人行业这一普遍发展瓶颈，既是困难，也是机遇。具身智能赛道的新创企业，尤其是被互联网巨头选中的企业，自然不会错过这一良机。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;自变量，主打具身智能基础模型，即独立于、平行于大语言模型、多模态模型等虚拟世界基础模型的物理世界基础模型。&lt;/strong&gt;自变量的具身智能基础模型，以所有机器人的感知信息（例如视觉、触觉、语音等）为输入，直接输出机器人的动作、视觉，以及语言等，让机器人能够具备实时处理非结构化、动态及随机任务的能力。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;至简动力，由理想汽车多位前高管共同创办和带队，产品聚焦通用机器人而非人形双足机器人，基于汽车智驾技术路线（核心成员出自理想智驾研发团队），力求可以面向 B 端应用场景「快速上量」。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="3840,2160" src="https://img.36krcdn.com/hsossms/20260131/v2_5b3a5a3baa394a29a70f34cdea253849@1547419282_oswg1870316oswg3840oswg2160_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图源：理想&lt;/p&gt;
+  &lt;p&gt;这个速度究竟有多快呢？&lt;strong&gt;去年下半年才成立的至简动力，计划今年实现通用机器人的量产。&lt;/strong&gt;互联网思维中的一大要义，是快。也许正是这一点，打动了腾讯、阿里巴巴这两大互联网巨头，并共同为其站台。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;三、机器人和具身智能赛道已经涌入不少新老企业，此刻还想连续/大额融资的新创企业，尤其新新企业，深信「最后一张船票」的互联网巨头，自然也就成了少数可选的慷慨买单者。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;当然，从根本上来说，软件层面的 AI、硬件层面的机器人，以及打通两者的具身智能，对于意欲全面转型到 AI 大模型平台的互联网巨头企业而言，是一场不得不前瞻布局的必打之战。&lt;/p&gt;
+  &lt;p&gt;只要互联网巨头（ AI 大模型平台）还没有拿到足够多的「船票」和资源，机器人尤其具身智能赛道的新创企业就会继续跃跃欲试、新新企业就会继续破土而生。&lt;/p&gt;
+  &lt;h2&gt;四大势力逐鹿未来，机器人大战恐难避免&lt;/h2&gt;
+  &lt;p&gt;伴随互联网巨头的全面介入，目前中国机器人和具身智能赛道不仅显得颇为拥挤，而且集合了多派势力。对于这一「早期还早期」「蓝海还蓝海」的市场，似乎有点不可承受之重。&lt;/p&gt;
+  &lt;p&gt;总体来看，目前机器人和具身智能赛道有以下四大势力：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;1.机器人硬件企业：智元、宇树等明星品牌企业，银河通用、魔法原子等跃跃欲试品牌企业，睿尔曼等默默发力型老牌创业企业。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;2.智能清洁和大家电企业，包括已经推出的通用机器人、陪伴机器人等产品，以及人形机器人等概念产品。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;3.汽车企业，尤其是智能汽车品牌（造车新势力）企业正在密集入局的人形机器人领域。&lt;/strong&gt;理想汽车就最新宣布，一定会做人形机器人，而且将尽快落地亮相。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;4.具身智能企业，尤其是互联网巨头站台的相关新创企业、新新企业。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;目前来看，机器人和具身智能赛道这四大势力，各有千秋，例如：&lt;/p&gt;
+  &lt;p&gt;机器人硬件企业拥有机器人关节（自由度）和运动控制领域的核心技术，智能清洁和大家电企业则在 AI 硬科技和居家场景应用有着天然优势，智能汽车企业可以在机器人赛道全面外延甚至再造 VLA，互联网巨头站台的具身智能企业可以在解决机器人「大小脑」未同步发育的问题上发挥重要作用。&lt;/p&gt;
+  &lt;p&gt;具体到其中一派势力，例如最典型的机器人硬件领域，目前的明星企业，或者说「顶流」企业，在业内的位置都远未「坐牢靠」，而更多非明星企业以及老牌创业企业，在今年开年、春节期间正在掀起的「不再低调」行动，也证明其绝非一直愿当「绿叶」之辈。&lt;/p&gt;
+  &lt;p&gt;机器人硬件行业的明星企业、非明星企业、老牌企业，智能清洁和大家电企业，智能汽车企业，互联网巨头（AI 大模型平台）站台的具身智能企业，这四大势力各有优势、各有所长，短期内也很难决出个胜负，但机器人赛道的一场大战似乎也很难避免。&lt;/p&gt;
+  &lt;p&gt;而在即将来到的农历马年，四大势力也将在机器人和具身智能市场掀起更加激烈、甚至惨烈的争夺战和卡位战，尤其是各派势力内部的企业较量。&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号“雷科技”，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36氪</author><pubDate>Mon, 02 Feb 2026 01:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5nU0kyeVdDaFVYNl92QnM1Mk03SVlKTVV4dllCNnBwX0Q3X3g0Y1JXUkJIQW0xZjBySFE2b0tEb3B3NFlueXdMUjFWd2Z2QQ</guid></item><item><title>安卓小平板口碑王！新款联想拯救者Y700官宣3月见：支持实体SIM卡 - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101740.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月2日消息，去年开始，多家厂商开始进军小尺寸性能平板，但目前口碑最好的依然还是联想拯救者平板Y700。&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;联想官方今天正式宣布，新款拯救者Y700平板将在3月登场。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2116,130 +2299,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 01 Feb 2026 13:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5wS3lPTzFtZGIwN2dBWmFtbFV1YUJCWmZ0TWZZblptSlV2aGRNY29UYXJEbnBMZ1I3MGMyS0xfTlJSb0xGaGIydGpVY2xVZUtaakNnMHJVOUg</guid></item><item><title>显存稀缺暴涨：三款RTX 50 GPU将占一季度总供应量75%！ - 驱动之家</title><link>https://news.mydrivers.com/1/1101/1101700.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;显存稀缺暴涨：三款RTX 50 GPU将占一季度总供应量75%！&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-01 21:35:21  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1101700-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月1日消息，在显存供应紧缺与采购成本节节攀升的双重压力下，NVIDIA及其AIC品牌商不得不调整战略，根据博板堂最新透露，NVIDIA已经制定了2026年第一季度的供应计划，将大部分产能集中在三款特定的RTX 50系列显卡上。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;具体而言，RTX 5060 Ti 8GB被定为该季度的绝对“走量”主力，RTX 5060 8GB紧随其后成为第二大批次，RTX 5070 12GB则位列第三优先级别，这三款将占据GPU总出货量的75%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;RTX 5070虽然在显存容量上比竞品RX 9070 XT低了4GB，但它在NVIDIA的产品线中起到了填补作用，NVIDIA力保RTX 5070的供应，可以填补5060 Ti与5080之间的市场空白。&lt;/p&gt;
-&lt;p&gt;由于内存供应持续吃紧，通过主推8GB显存的主流型号，NVIDIA能够更有效地利用有限的显存资源。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这也意味着，包括RTX 5060 Ti 16GB、5070 Ti、5080乃至旗舰5090在内的高端型号，只能共享不足四分之一的供应量，采取根据实际需求给货的策略。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对于广大玩家而言，今年一季度想要入手大显存的高端显卡，恐怕依然面临一卡难求或价格虚高的困境。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="显存稀缺暴涨：三款RTX 50 GPU将占一季度总供应量75%！" h="400" src="//img1.mydrivers.com/img/20260201/e9e38188-77a7-4f2c-9ec6-df8da6355bd0.jpg" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 01 Feb 2026 13:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9rQ0JCaEM2TUQ1YkJhVE1XX2Q5azFXdHdWY0oybGltTTJIWDZpU2xwZGMyNjdSbDFabng4NXVndThxcXpQSFdpUHpDcmRRaVdtb1VFV1hVUmI</guid></item><item><title>币安将上市Zama（ZAMA）并为其添加种子标签 - Binance</title><link>https://www.binance.com/zh-CN/support/announcement/detail/c411646abd94488bba084537c5563beb</link><description>&lt;a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPMlNEdnlFcmRYYXp5ZWF3LWgxNy1UeHYwVFg4by0ybG1XR3VTZEZQeklxRTM0VHB4V3BCdFlZZllEdUk2N014SC1QSXN2bG5SWHgxa0Z0eDZ2VGhMeDdLMUdBNHRFSl9KbUpZMzg3RW04dW11OXV3TjZqZHFwbzQzLXJSZzlWM3BDcUJ3M004MlJUZjdh?oc=5" target="_blank"&gt;币安将上市Zama（ZAMA）并为其添加种子标签&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;Binance&lt;/font&gt;</description><author>Binance</author><pubDate>Sun, 01 Feb 2026 12:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilAFBVV95cUxPMlNEdnlFcmRYYXp5ZWF3LWgxNy1UeHYwVFg4by0ybG1XR3VTZEZQeklxRTM0VHB4V3BCdFlZZllEdUk2N014SC1QSXN2bG5SWHgxa0Z0eDZ2VGhMeDdLMUdBNHRFSl9KbUpZMzg3RW04dW11OXV3TjZqZHFwbzQzLXJSZzlWM3BDcUJ3M004MlJUZjdh</guid></item><item><title>英伟达新驱动程序 针对GTX 10系列显卡等的安全修复 - 3DM</title><link>https://www.3dmgame.com/news/202602/3936951.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
-        &lt;div class=" news_warp_top"&gt;
-            &lt;h1 class="bt"&gt;英伟达新驱动程序 针对GTX 10系列显卡等的安全修复&lt;/h1&gt;
-            &lt;p class="time"&gt;时间：&lt;span&gt;2026-02-01 20:03:17&lt;/span&gt;&lt;/p&gt;
-            
-                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-                        &lt;p class="clear"&gt;&lt;/p&gt;
-        &lt;/div&gt;
-                    
-&lt;p class="Tonglan_785"&gt;
-    
-    &lt;i&gt;&lt;/i&gt;
-&lt;/p&gt;
-                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2026/0201/1769947286252.jpg" id="coverUrl"&gt;
-                &lt;div class="news_warp_center"&gt;
-            &lt;p&gt;
-	近日，英伟达为基于Maxwell、Pascal和Volta架构GeForce GTX 700/900/1000/TITAN系列显卡推出了新的GeForce 
-582.28 WHQL驱动程序，属于不定期的安全更新，修复了多个安全漏洞，未添加新功能或者针对性能的提升。
-&lt;/p&gt;
-&lt;p&gt;
-	NVIDIA GeForce 582.28 WHQL驱动程序（Windows 10-64bit/11），地址：&lt;a href="https://www.nvidia.com/en-us/drivers/details/263265/" target="_blank"&gt;点此前往&amp;gt;&amp;gt;&amp;gt;&lt;/a&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260201/1769947284_349774_jpg_r.jpg" alt="英伟达新驱动程序 针对GTX 10系列显卡等的安全修复"&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;该版驱动程序适用的显卡包括：&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	GeForce 10系列 - GeForce GTX 1080 Ti，GeForce GTX 1080，GeForce GTX 1070 
-Ti，GeForce GTX 1070，GeForce GTX 1060，GeForce GTX 1050 Ti，GeForce GTX 
-1050，GeForce GT 1030，GeForce GT 1010
-&lt;/p&gt;
-&lt;p&gt;
-	GeForce 900系列 - GeForce GTX 980 Ti，GeForce GTX 980，GeForce GTX 970，GeForce 
-GTX 960，GeForce GTX 950
-&lt;/p&gt;
-&lt;p&gt;
-	GeForce 700系列 - GeForce GTX 750 Ti，GeForce GTX 750，GeForce GTX 745
-&lt;/p&gt;
-&lt;p&gt;
-	GeForce TITAN系列 - NVIDIA Titan V，NVIDIA Titan Xp，NVIDIA Titan 
-X（Pascal），GeForce TITAN X
-&lt;/p&gt;
-&lt;p&gt;
-	这次英伟达修复了五个高危漏洞，包括CVE-2025-33217、CVE-2025-33218、CVE-2025-33219、CVE-2025-33220和CVE-2025-33237。这些缺陷可能被利用来实现代码执行、权限升级、数据篡改、拒绝服务或信息泄露，另外英伟达还解决了HD 
-Audio驱动中可能导致拒绝服务状态的中等严重性问题。
-&lt;/p&gt;
-&lt;p&gt;
-	随着去年Blackwell架构的到来，英伟达逐步放弃对Maxwell、Pascal和Volta架构GPU的支持。R580版本是最后一个支持Maxwell、Pascal和Volta架构GPU的驱动程序分支，到了2025年10月发布的R590版本驱动程序也不再提供常规支持，不过仍然能继续接收到安全更新。
-&lt;/p&gt;                                &lt;/div&gt;
-                                                        &lt;a class="zan_box"&gt;
-                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
-                &lt;span class="znums"&gt;0&lt;/span&gt;
-            &lt;/a&gt;
-                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
-
-                                        
-                        
-                                
-        
-                
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 01 Feb 2026 12:03:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE5YbTFRaXVPTXNhWDMtcnR3TzVPUkhGSW4wZEV5aHNFbGpCblM4cXAxdFpHTFBNQXBoOHdjOFpHdDZ6YU1Eb2tpal9iMTliRkF2b1RvVHRmaFRKc05F</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 01 Feb 2026 13:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5wS3lPTzFtZGIwN2dBWmFtbFV1YUJCWmZ0TWZZblptSlV2aGRNY29UYXJEbnBMZ1I3MGMyS0xfTlJSb0xGaGIydGpVY2xVZUtaakNnMHJVOUg</guid></item></channel></rss>
