@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>iPhone 17e定档2月19日：灵动岛来了，但高刷与双摄依旧缺席 - 36Kr 36氪</title><link>https://www.36kr.com/p/3676862793134593</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>国家互联网应急中心预警：新型RCtea僵尸网络蔓延 近万台物联网设备已中招 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103544.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月10日消息，国家互联网应急中心CNCERT今日发布关于RCtea僵尸网络大范围传播的风险提示。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一、概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;近期，CNCERT监测到一个新型僵尸网络正在互联网上大范围传播，该僵尸网络自2025年12月下旬起开始活跃。&lt;/p&gt;
+&lt;p&gt;该家族在通信协议、数据存储及反追踪机制上均展现出高度的复杂性和规避性，其核心特征为广泛使用基于RC4、ChaCha20及TEA算法变种的深度定制加密方案。据此，我们将其命名为RCtea僵尸网络。&lt;/p&gt;
+&lt;p&gt;分析表明，该家族目前正处于快速传播与能力构建阶段，&lt;span&gt;&lt;strong&gt;具备极强的对抗与反检测反追踪意识，已具备成熟的DDoS攻击能力，且主要针对物联网（IoT）设备。&lt;/strong&gt;&lt;/span&gt;现将其主要情况分析披露如下。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、僵尸网络分析&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;（一）主要传播方式与目标&lt;/p&gt;
+&lt;p&gt;RCtea家族目前的传播活动具有明确的针对性。在目标设备方面，已发现的传播样本均针对ARM和MIPS架构的系统进行编译，&lt;span&gt;&lt;strong&gt;这清晰地表明其当前主要攻击目标是路由器、摄像头等各类物联网设备，&lt;/strong&gt;&lt;/span&gt;尚未发现面向传统Linux服务器或主机的样本。&lt;/p&gt;
+&lt;p&gt;在传播手段上，该家族主要依赖Telnet暴力破解进行对外扩散。木马在成功入侵一台设备后，会主动对外发起扫描，并尝试使用内置的常见弱口令列表进行破解，从而感染更多的在线设备，实现僵尸网络规模的快速扩张。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（二）核心检测与对抗手段&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;攻击者为规避安全检测与追踪，采用了多层精心设计的技术手段。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260210/48c2ee90-b244-457d-b8b8-122e8c03ad22.png" target="_blank"&gt;&lt;img alt="国家互联网应急中心预警：新型RCtea僵尸网络蔓延 近万台物联网设备已中招" h="343" src="//img1.mydrivers.com/img/20260210/S48c2ee90-b244-457d-b8b8-122e8c03ad22.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 图 1 RCtea对抗手段&lt;/p&gt;
+&lt;p&gt;首先，木马具备独特的参数启动机制，只有在运行时接收到攻击者预设的特定参数（如当前版本的“telnet.curl”）才会激活核心恶意功能，否则将主动退出。此设计能有效绕过依赖自动执行进行行为分析的沙箱环境。&lt;/p&gt;
+&lt;p&gt;其次，在数据保护层面，木马对所有核心配置及通信内容共计使用了三种经过高度变形和混淆的加密算法变种（RC4、ChaCha20、TEA），具备较高的对抗性，提升分析难度。&lt;/p&gt;
+&lt;p&gt;为了保证自身能够稳定运行，木马还会为当前进程设置最高级别的OOM（Out-Of-Memory）保护，确保恶意进程在系统内存不足时拥有最高生存优先级，在系统内存耗尽时不会被内核强制终止。&lt;/p&gt;
+&lt;p&gt;木马在下载至受害者设备时，其文件名由随机生成的6个字符构成，以规避基于固定名称的检测。执行后，木马会在控制台输出“here we are”作为调试标记，该行为可为动态分析提供可见线索。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（三）命令控制与网络特征&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该家族的命令与控制网络设计体现了较强的抗打击意识。木马并非使用固定的IP或域名，而是内置了多组地址及端口。在通信时，木马会随机选取其中一组进行连接。这种多冗余、随机选择的架构显著提升了僵尸网络控制通道的稳定性和存活能力。&lt;/p&gt;
+&lt;p&gt;而在网络通信时，所有上线认证及指令数据均使用自定义的TEA变种算法（密钥“FrshPckBnnnSplit"）和ChaCha20算法配合加密，并将上线过程拆分为十余个数据包分轮发送，极大地增加了流量分析与解密还原的难度。&lt;/p&gt;
+&lt;p&gt;（四）主要功能与潜在意图&lt;/p&gt;
+&lt;p&gt;根据对样本的逆向分析，RCtea木马已具备发起多种DDoS攻击的能力，支持包括SYN FLOOD、ACK FLOOD、UDP FLOOD及TCP FLOOD（含多种变体）在内的攻击方式。&lt;/p&gt;
+&lt;p&gt;结合其当前活跃的传播态势与尚未观测到大规模攻击的现象综合研判，该僵尸网络很可能正处于规模扩张或功能升级的准备期。攻击者目前的首要目标可能是尽可能多地控制设备，构建庞大的僵尸网络资源，为后续可能发起的大规模、竞争性攻击或其他非法活动做准备。&lt;/p&gt;
+&lt;p&gt;（五）关联性分析&lt;/p&gt;
+&lt;p&gt;尽管RCtea从代码结构上看是一个全新构建的家族，未大范围沿用已知僵尸网络的模块结构，但其在多个关键技术选型与实现偏好上，与已知的AISURU僵尸网络存在显著相似性。&lt;/p&gt;
+&lt;p&gt;这些共同点包括：均倾向于使用并配置多组冗余地址；均采用对基础加密算法（如RC4、TEA、ChaCha20）进行深度自定义变形处理来保护关键信息；均将上线认证流程拆分为多轮完成。这些共性强烈暗示，两者背后的运营方可能存在关联、继承或共享同一技术来源。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三、僵尸网络感染规模&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过监测分析发现，2026年1月20日至25日期间，RCtea僵尸网络在我国境内已确认的活跃“肉鸡”规模达9827台，境内日上线肉鸡数量最高达4870台，肉鸡C2日访问量最高达27.8万次。上线肉鸡IP数量分布情况如下：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="国家互联网应急中心预警：新型RCtea僵尸网络蔓延 近万台物联网设备已中招" h="356" src="//img1.mydrivers.com/img/20260210/d5041493-076b-4062-b9da-8a56712b9fbe.png" w="594"&gt;&lt;/p&gt;
+&lt;p&gt;图 2 境内日上线肉鸡数量分布情况&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四、防范建议&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;请广大网民强化风险意识，加强安全防范，避免不必要的经济损失，主要建议包括：&lt;/p&gt;
+&lt;p&gt;（1）梳理已有资产列表，及时修复相关系统漏洞，包括历史漏洞和最新曝光的漏洞。&lt;/p&gt;
+&lt;p&gt;（2）加强口令强度，避免使用弱口令，密码设置要符合安全要求，并定期更换。建议使用16位或更长的密码，包括大小写字母、数字和符号在内的组合，同时避免多个服务器使用相同口令。&lt;/p&gt;
+&lt;p&gt;（3）当发现主机感染僵尸木马程序后，立即核实主机受控情况和入侵途径，并对受害主机进行清理。&lt;/p&gt;
+&lt;p&gt;五、相关IOC&lt;/p&gt;
+&lt;p&gt;样本HASH：&lt;/p&gt;
+&lt;p&gt;b1c2458d22bbb0b7580470d9481654fae096a2bc0e8aab742ba9ac584568094d&lt;/p&gt;
+&lt;p&gt;f4d312c31b3f1170621721ea7dda0ceb50977bda8f04527cf060f85dda15c513&lt;/p&gt;
+&lt;p&gt;45168bc663329c3b1d883b83a59fe84f08b6e01895c37144ddfa9156bea3eaee&lt;/p&gt;
+&lt;p&gt;下载链接：&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/wget.sh&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/curl.sh&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/arm&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/arm5&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/arm7&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/mips&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/mpsl&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/arc&lt;/p&gt;
+&lt;p&gt;http://91.92.242.42/aarch64&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/wget.sh&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/curl.sh&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/arm&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/arm5&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/arm7&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/mips&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/mpsl&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/arc&lt;/p&gt;
+&lt;p&gt;http://5.255.127.15/aarch64&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/wget.sh&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/curl.sh&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/arm&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/arm5&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/arm7&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/mips&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/mpsl&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/arc&lt;/p&gt;
+&lt;p&gt;http://103.146.23.241/aarch64&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/wget.sh&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/curl.sh&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/arm&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/arm5&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/arm7&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/mips&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/mpsl&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/arc&lt;/p&gt;
+&lt;p&gt;http://103.149.29.38/aarch64&lt;/p&gt;
+&lt;p&gt;控制域名：&lt;/p&gt;
+&lt;p&gt;www.gokart.su&lt;/p&gt;
+&lt;p&gt;www.boatdealers.su&lt;/p&gt;
+&lt;p&gt;kieranellison.cecilioc2.xyz&lt;/p&gt;
+&lt;p&gt;nineeleven.gokart.su&lt;/p&gt;
+&lt;p&gt;www.plane.cat&lt;/p&gt;
+&lt;p&gt;mail.gokart.su&lt;/p&gt;
+&lt;p&gt;感谢北京神州绿盟科技有限公司在本报告的样本分析工作中做出的重要贡献。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260210/6fd59134362f49e483c0915c3d1a9b7c.png" target="_blank"&gt;&lt;img alt="国家互联网应急中心预警：新型RCtea僵尸网络蔓延 近万台物联网设备已中招" h="400" src="//img1.mydrivers.com/img/20260210/s_6fd59134362f49e483c0915c3d1a9b7c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Feb 2026 10:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAxcDlKYzJDVUJzQ3BSQXkwZFBLVVRsZThSYUhUUGFJNVF6UGFucnQtdlNxaHZ6MW95WDB2U3lZRFBGdTBwVzVyLU5NNnBKdFUyYnVBVnpWSmc</guid></item><item><title>AI狂热抹去周期记忆：当闪迪涨了12倍，谁还记得曾经的崩盘？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3765409</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 10 Feb 2026 10:38:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE10VUY2YWJvYTVVZEpaYW9aWjBWX0VjZjRRS0xKNlRZUzRIRnZZWHJFWkZoRUNiY1dsMzU5WE5xN0xySW5mSjE1ZkxTSC1NVm9Jb2sw</guid></item><item><title>iPhone 17e定档2月19日：灵动岛来了，但高刷与双摄依旧缺席 - 36Kr 36氪</title><link>https://www.36kr.com/p/3676862793134593</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
  
  
   &lt;p&gt;去年9月发布的iPhone 17系列，在市场上大获成功，发售不到半年，在国内的激活量就超过了2000万台。&lt;strong&gt;同时，iPhone 17系列很快将新增一名成员——iPhone 17e。&lt;/strong&gt;&lt;/p&gt;
@@ -362,7 +459,31 @@
 &lt;p&gt;&lt;strong&gt;毕竟现在的手机市场，不需要再多一个回本都费劲的日本品牌，但很需要索尼的 Lytia 901 两亿像素传感器。&lt;/strong&gt;&lt;/p&gt;
 
   &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Tue, 10 Feb 2026 08:31:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE54TDVBeHJ3MkZESXFkdlpjajg1YnpPYjgybHpmNVRaMEdpaEJSc1N1RHA4Y1FBaDhLZmtjYndjSloycjg</guid></item><item><title>全球首个海风直连海底数据中心启用：机房藏在海底 好处海了去了 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103491.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Tue, 10 Feb 2026 08:31:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE54TDVBeHJ3MkZESXFkdlpjajg1YnpPYjgybHpmNVRaMEdpaEJSc1N1RHA4Y1FBaDhLZmtjYndjSloycjg</guid></item><item><title>北京人形机器人创新中心发布具身天工3.0：支持各类外设工具灵活接入 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103498.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月10日消息，&lt;strong&gt;“北京人形机器人创新中心”公众号发文，“北京人形机器人创新中心”正式发布新一代通用机器人平台——具身天工3.0。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该平台以“更开放、更好用”为核心目标，并依托自研的“慧思开物”通用具身智能平台，在本体稳定性、运动控制、具身大小脑协同及全自主作业等方面实现显著提升，成为行业内首个实现触物交互式全身高动态运动控制的全尺寸人形机器人。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260210/1a9cc1acbbf34a7a8104b668b3940e2d.png" target="_blank"&gt;&lt;img alt="北京人形机器人创新中心发布具身天工3.0：支持各类外设工具灵活接入" h="392" src="//img1.mydrivers.com/img/20260210/s_1a9cc1acbbf34a7a8104b668b3940e2d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;针对当前行业在开发应用层面普遍存在的兼容性与适配性难题，具身天工3.0通过提供开放的软硬件接口，有效降低了各行业的开发成本与门槛。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其硬件本体预留了多类型拓展接口，支持各类外设工具灵活接入，可快速适配特种作业、工业制造、商用服务等多元场景。软件层面则基于“慧思开物”平台生态，提供完善的开发文档、工具链及低代码开发环境，完全兼容ROS2、MQTT等主流通信协议，使合作伙伴无需重构底层技术即可进行高效二次开发。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260210/5aff0cf31a9c4a73bd9c7e4517c0d70e.png" target="_blank"&gt;&lt;img alt="北京人形机器人创新中心发布具身天工3.0：支持各类外设工具灵活接入" h="394" src="//img1.mydrivers.com/img/20260210/s_5aff0cf31a9c4a73bd9c7e4517c0d70e.png" w="595"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为实现“更好用”的目标，具身天工3.0在“本体性能”与“具身智能”两大核心技术上取得突破。&lt;strong&gt;本体层面，凭借高扭矩一体化关节与高自由度结构，机器人具备了极强的爆发力、稳定性与灵巧操作能力，可完成翻越障碍、跪地作业、毫米级精细操作等复杂任务。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;智能层面，“慧思开物”平台构建了“感知-决策-执行”的全链路闭环，通过世界模型、VLM/VLA大模型等驱动，使机器人能够理解场景、分解任务并精准执行，逐步实现从单机自主到多机协同的跨越。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260210/40b45275f9db4dfdbdaba9871ab02015.png" target="_blank"&gt;&lt;img alt="北京人形机器人创新中心发布具身天工3.0：支持各类外设工具灵活接入" h="397" src="//img1.mydrivers.com/img/20260210/s_40b45275f9db4dfdbdaba9871ab02015.png" w="588"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前，北京人形机器人创新中心已将包括“具身天工”本体、运控框架、世界模型、训练工具链及数据集在内的多项关键技术成果开源开放。这一生态策略旨在打破技术壁垒，加速技术迭代与场景落地，推动人形机器人快速适配千行百业的个性化需求。&lt;/p&gt;
+&lt;p&gt;作为推动具身智能产业化的重要一步，具身天工3.0的发布不仅夯实了产业的技术产品根基，也为规模化应用注入了核心动能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;未来，创新中心将以该平台为基础，携手生态伙伴共同推动人形机器人在多领域的落地应用，迈向人机共生的新时代。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260210/e4d6d6942eca42ed82da18e2dc21d708.png" target="_blank"&gt;&lt;img alt="北京人形机器人创新中心发布具身天工3.0：支持各类外设工具灵活接入" h="392" src="//img1.mydrivers.com/img/20260210/s_e4d6d6942eca42ed82da18e2dc21d708.png" w="593"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 10 Feb 2026 08:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1DRy1hQ2FxT183V04wV3hwVzJTYUstVWRFV2ZQQzlLTmdmU2hqb1RKNlVIaXRXVzZGcFlnNGszbGZjUVFuVWlEQTdjZkc4cW1pWDRUUHBvZzI</guid></item><item><title>全球首个海风直连海底数据中心启用：机房藏在海底 好处海了去了 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103491.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;全球首个海风直连海底数据中心启用：机房藏在海底 好处海了去了&lt;/p&gt;
           
@@ -2398,7 +2519,57 @@
   &lt;p&gt;https://x.com/theinformation/status/2020871592314556446&lt;/p&gt;
   &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/9bRuGctBwNrZi0PREJ2Nhg"&gt;“新智元”&lt;/a&gt;，作者：新智元，编辑：桃子 好困，36氪经授权发布。&lt;/p&gt;
  
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36氪</author><pubDate>Tue, 10 Feb 2026 02:37:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE9VaXd1alIxRGh5LV95X25VN0ZxSXJ3XzM4ZHRjNjd1NktrZDdGRlpaZ3A5VmVLV2ZGUkhCVG5pbDFKX252cnh5bTQtekRwZzhk</guid></item><item><title>A股震荡走高，AI应用持续爆发，光伏产业链调整，恒科指涨近2%，科网股全线反弹 - wallstreetcn.com</title><link>https://wallstreetcn.com/articles/3765360</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVUy1wbUNxckhKaWVfZjZtVU5xR2pQX1JpcGhzald5SFNQOC05aWdTLXJfWVJNR0ozaWc0TUdSbExLYTdNUWYwN3JBWFNFTURFZnlv?oc=5" target="_blank"&gt;A股震荡走高，AI应用持续爆发，光伏产业链调整，恒科指涨近2%，科网股全线反弹&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;wallstreetcn.com&lt;/font&gt;</description><author>wallstreetcn.com</author><pubDate>Tue, 10 Feb 2026 02:28:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBVUy1wbUNxckhKaWVfZjZtVU5xR2pQX1JpcGhzald5SFNQOC05aWdTLXJfWVJNR0ozaWc0TUdSbExLYTdNUWYwN3JBWFNFTURFZnlv</guid></item><item><title>GitHub 上，人类已经干不过 AI 了 - 36 Kr</title><link>https://www.36kr.com/p/3672726109741953</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36氪</author><pubDate>Tue, 10 Feb 2026 02:37:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE9VaXd1alIxRGh5LV95X25VN0ZxSXJ3XzM4ZHRjNjd1NktrZDdGRlpaZ3A5VmVLV2ZGUkhCVG5pbDFKX252cnh5bTQtekRwZzhk</guid></item><item><title>技嘉推出新款27寸QHD电竞显示器：高刷高亮还护眼，全面提升你的游戏战力 - 3DM</title><link>https://3c.3dmgame.com/show-120-21663-1.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Hardinforcenter"&gt;
+                &lt;p&gt;
+	技嘉在即将到来的马年春节前夕，重磅推出了一款27英寸的QHD电竞显示器——技嘉GO27Q24G，它搭载了全新的RealBlack镜面WOLED面板，带来了相比前代的QD-OLED面板更为深邃的暗场效果和清晰的画面表现，同时支持高刷、低延迟和高品质的护眼效果。首发2699的价格，加上2K级别下顶级的硬件配置，应该会让它成为不少电竞发烧友在年前置换旗舰2K显示器的不错选择。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/yjnews/20260209/1770618179_599134.png" alt="技嘉推出新款27寸QHD电竞显示器：高刷高亮还护眼，全面提升你的游戏战力"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	这台技嘉GO27Q24G，采用了一块27英寸的LG Display MLA+镜面抗反射WOLED面板，具备2560×1440的QHD分辨率、240Hz的刷新率，以及0.03ms的GTG响应时间，拥有10.7亿色，覆盖了99%的DCI-P3色域，对比度高达1.5M:1，能让用户享受极致丰富和逼真的色彩，带来影院级的观看体验。
+&lt;/p&gt;
+&lt;p&gt;
+	屏幕正面采用四面无边框设计，带来更广阔画面视野，配合多显示器拼接的使用场景，可以实现近乎无缝的超宽幅画面衔接，为用户打造无干扰的沉浸式视觉体验。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/yjnews/20260209/1770618188_719897.png" alt="技嘉推出新款27寸QHD电竞显示器：高刷高亮还护眼，全面提升你的游戏战力"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	依托先进的微透镜阵列增强版技术（MLA+），技嘉GO27Q24G进一步提升了OLED屏幕的显示亮度，该显示器的标准亮度为275尼特，峰值亮度则可达惊人的1300尼特，搭配技嘉的HyperNits技术，还可在峰值1300尼特模式下，最高将亮度提升达30%，且完整保留画面核心高光细节，为用户呈现亮度更出众，色彩更鲜活，画面层次感更优的视觉效果。
+&lt;/p&gt;
+&lt;p&gt;
+	同时，屏幕表面还覆盖了零雾度光学层，能有效减少光线满散，既能在明亮环境下保留画面中的暗部细节，搭配进阶抗反射抗刮伤保护膜，也能有效防止周围环境的反光干扰，为用户带来干净通透，沉浸感十足的观看体验。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/yjnews/20260209/1770618196_407816.png" alt="技嘉推出新款27寸QHD电竞显示器：高刷高亮还护眼，全面提升你的游戏战力"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	对于追求画面流畅度和长期使用不伤眼的硬核电竞玩家们来说，技嘉GO27Q24G的体验同样出色。它兼容英伟达的G-SYNC和AMD的FreeSync Premium Pro技术，在释放GPU全部潜能的同时，确保游戏画面流畅，无撕裂且响应迅速。同时也支持无闪烁、防眩光、低蓝光和OLED 可变刷新率技术，搭载Eyesafe 3.0护眼认证，通过莱茵TÜV权威认证，在确保显示画面色彩还原度的同时，过滤有害蓝光，长期使用也能获得不错的护眼效果。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/yjnews/20260209/1770618207_159456.png" alt="技嘉推出新款27寸QHD电竞显示器：高刷高亮还护眼，全面提升你的游戏战力"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	与此同时，它也支持目前技嘉旗下主流显示器标配的多种为游戏玩家量身定制的战术功能，比如可以一键切换画面尺寸的战术镜2.0、减少动态模糊带来更清晰游戏画面的Ultra Clear、能够深化场景暗部细节的黑平衡，以及包含计时器、自定义准星在内的多种游戏专属工具。有了这些功能的辅助，玩家们不光能获得极致清晰且流畅的游戏画面表现，而且还能在各类竞技游戏中更加从容不迫地获取优势，游戏体验胜人一筹。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/yjnews/20260209/1770618215_333464.png" alt="技嘉推出新款27寸QHD电竞显示器：高刷高亮还护眼，全面提升你的游戏战力"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	而在显示器的使用场景上，技嘉GO27Q24G也采用了更符合人体工程学的设计，显示器搭配的专属人体工学支架，支持多档位的高度和倾斜调节，支持0到+90度的顺时针旋转调节和正负15度的水平旋转调节，搭配2毫米超薄底座，适用于各种桌搭需求。接口方面，它配备了两个HDMI 2.1接口和一个DP 1.4接口，完美满足玩家日常用显示器接电脑主机和游戏机的使用需求，单独的一个USB Type-C接口，支持15W的供电，方便用户随时为身边的移动设备补电，减少了额外桌面布线带来的烦恼。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/yjnews/20260209/1770618224_297735.png" alt="技嘉推出新款27寸QHD电竞显示器：高刷高亮还护眼，全面提升你的游戏战力"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	值此新春佳节之际，技嘉也为这台显示器的OLED智能屏幕防护和高端WOLED面板，提供了三年的质保服务，包含烧屏保障，让用户可以全程无忧地选购和使用。能在首发2099的价格下，获得2K档位旗舰级的硬件规格和技嘉丰富的显示与游戏技术支持，对广大玩家来说，这块技嘉GO27Q24G电竞显示器，无疑会是新年焕新季中极具性价比的选择。它将于不久后的2月14日正式上线发售，感兴趣的玩家现在就可前往京东商城参与预约，第一时间将这台2K高刷显示器带回家中，在即将到来的春节假期里，借助它全面提升你的游戏战力。
+&lt;/p&gt;
+&lt;p&gt;
+	京东商城预购地址：&lt;a href="https://item.jd.com/100241383865.html"&gt;https://item.jd.com/100241383865.html&lt;/a&gt; 
+&lt;/p&gt;            &lt;/div&gt;
+            
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Tue, 10 Feb 2026 02:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiV0FVX3lxTE95SFItY3FTRVg1dVJZclFObjViaWpDWHlUVUdRNFIybTBOZ0pRVFBZb1pZMGFFNTFBVEhoaEVnb0NJMEYwRjZBQWdfZmlxRzFQYmhPZlFQNA</guid></item><item><title>A股震荡走高，AI应用持续爆发，光伏产业链调整，恒科指涨近2%，科网股全线反弹 - wallstreetcn.com</title><link>https://wallstreetcn.com/articles/3765360</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVUy1wbUNxckhKaWVfZjZtVU5xR2pQX1JpcGhzald5SFNQOC05aWdTLXJfWVJNR0ozaWc0TUdSbExLYTdNUWYwN3JBWFNFTURFZnlv?oc=5" target="_blank"&gt;A股震荡走高，AI应用持续爆发，光伏产业链调整，恒科指涨近2%，科网股全线反弹&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;wallstreetcn.com&lt;/font&gt;</description><author>wallstreetcn.com</author><pubDate>Tue, 10 Feb 2026 02:28:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBVUy1wbUNxckhKaWVfZjZtVU5xR2pQX1JpcGhzald5SFNQOC05aWdTLXJfWVJNR0ozaWc0TUdSbExLYTdNUWYwN3JBWFNFTURFZnlv</guid></item><item><title>GitHub 上，人类已经干不过 AI 了 - 36 Kr</title><link>https://www.36kr.com/p/3672726109741953</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
  
  
   &lt;p&gt;如果几年前有人跟码农同学说，「你以后可能要和 AI 抢 GitHub 提交记录了」，他大概会笑掉大牙。&lt;/p&gt;
@@ -4387,370 +4558,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Feb 2026 16:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE01RG9ycFY5SFNGNlZTR21MYk01b0ZYaDRsQmRKOHFaWEF1NXhNY0NUYUxLdE9qRDB6OVpBTTVJa1c0ZGpHdENselZ5am0xVkJTMnphMG1PNUQ</guid></item><item><title>这份职业成了人工智能不会取代人类的终极案例 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-02-09/doc-inhmfuky5189879.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p&gt;　　作者：莉萨・埃迪奇科&lt;/p&gt;
-&lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/109/w550h359/20260209/0197-a7edca9711565d33e5927c2d1cc1890d.png" alt="2010 年 5 月 6 日，洛杉矶，一名放射科医生正在检查乳房 X 光片。"&gt;&lt;span class="img_descr"&gt;2010 年 5 月 6 日，洛杉矶，一名放射科医生正在检查乳房 X 光片。&lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;　　想了解人工智能会如何改变你的工作？不妨以放射科为鉴。&lt;/p&gt;
-&lt;p&gt;　　放射科如今成了人工智能竞赛中的热议话题。上月，达沃斯世界经济论坛的科技行业高管们多次提及这一领域，白宫发布的一份关于人工智能与经济的白皮书也对其有所探讨。&lt;/p&gt;
-&lt;p&gt;　　受人工智能影响的职业远不止放射科一种，这项技术正逐步融入软件工程师、教师、甚至水管工等众多职业的工作中。&lt;span id="usstock_GS"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/GS.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;高盛&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_GS"&gt;&lt;/span&gt;集团估算，若人工智能相关技术被广泛应用，或将取代美国 6% 至 7% 的劳动力，不过该技术预计也会创造新的工作岗位。&lt;/p&gt;
-&lt;p&gt;　　但放射科领域已成为印证人工智能如何赋能而非取代工作的典型案例。克利夫兰医学中心的诊断放射学专科医生陈柏豪博士表示，放射科的工作类型也十分适合借助人工智能提供辅助。&lt;/p&gt;
-&lt;p&gt;　　放射科拥有大量可用于人工智能研究和应用的数据，而人工智能的训练恰恰需要海量数据支撑。人工智能处理海量数据的速度远超人类，目前也已在放射科助力加快部分工作流程 —— 例如，判断哪些影像扫描结果需要优先处理。&lt;/p&gt;
-&lt;p&gt;　　放射科的工作中，人类医生仍需承担绝大部分核心工作，比如做出诊断、为患者进行体格检查以及撰写诊断报告。而且，随着放射科持续接纳人工智能技术，该领域的岗位需求增速预计将超过其他行业。&lt;/p&gt;
-&lt;p&gt;　　乔治敦大学安全与新兴技术中心研究员杰克・卡斯滕表示：“人工智能不仅没有取代放射科的工作人员，实际上还提升了他们的工作处理能力，同时增加了对其专业服务的需求。对于科技行业而言，这可以说是人工智能为经济带来积极作用的美好前景。”&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;人工智能如何赋能工作而非取而代之&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　陈博士指出，人工智能擅长分析图像、识别数据中的规律，而这两项能力都是放射科工作的关键。此外，放射科数字化发展已有多年，这意味着该领域拥有海量的可用数据。&lt;/p&gt;
-&lt;p&gt;　　他说：“目前仍有一些小众的工作场景还在采用传统的模拟方式，但在美国，绝大多数的 X 光、CT、核磁共振影像都已实现数字化存储。”&lt;/p&gt;
-&lt;p&gt;　　陈博士及另外两位接受美国有线电视新闻网采访的放射科专家表示，如今放射科医生正借助人工智能确定影像扫描的处理优先级、提升影像质量，还能让其辅助撰写诊断报告摘要。&lt;/p&gt;
-&lt;p&gt;　　约翰斯・霍普金斯医学中心介入放射科医生沙德普尔・德梅里博士说：“人工智能从未取代任何人的工作，只是让我们的工作更高效、更有价值。”&lt;/p&gt;
-&lt;p&gt;　　宾夕法尼亚大学工程学院的工程与放射学教授勒内・维达尔认为，人工智能在通过更少的扫描次数获取高质量核磁共振影像方面尤为实用。这一技术能加快检查流程，让医生在相同时间内接诊更多患者。&lt;/p&gt;
-&lt;p&gt;　　维达尔表示，目前研究人员还在探索人工智能的其他应用场景，比如利用其测量肿瘤体积、自动生成诊断报告等，不过这些应用落地可能还为时尚早。&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;那些曾被预言会消失却依然存在的职业&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　维达尔称，医疗领域使用的人工智能工具必须获得美国食品药品监督管理局的批准，算上研发和临床试验阶段，这一过程大约需要 8 年时间。但相关审批工作一直在推进：目前美国食药监局已批准的 1357 款人工智能医疗设备中，有 1041 款适用于放射科领域。&lt;/p&gt;
-&lt;p&gt;　　与此同时，放射科的岗位需求还在持续增长。美国劳工统计局预测，2024 至 2034 年，放射科的就业岗位将增长 5%，高于所有职业 3% 的平均增幅。美国有线电视新闻网获取的招聘平台 Indeed 数据也显示，2025 年放射科的岗位数量较五年前有所增加。&lt;/p&gt;
-&lt;p&gt;　　接受采访的放射科专家表示，医疗诊断过程中对影像检查的需求攀升，加之人口老龄化程度不断加深，或许是放射科服务需求增加的主要原因。&lt;/p&gt;
-&lt;p&gt;　　但人们过去并非如此看待这一领域。被称为 “人工智能之父” 的诺贝尔经济学奖得主、计算机科学家杰弗里・辛顿曾在 2016 年表示，“现在应该停止培养放射科医生了”，因为深度学习 —— 人工智能的一个分支，模拟人类大脑的学习模式 —— 将在 5 至 10 年内更好地胜任这项工作。&lt;/p&gt;
-&lt;p&gt;　　辛顿去年在给《纽约时报》的邮件中表示，他 2016 年的那些言论过于绝对了。&lt;/p&gt;
-&lt;p&gt;　　德梅里回忆道，2015 至 2016 年前后，放射科领域曾普遍存在对人工智能取代人类工作的焦虑情绪。而如今，这项技术已被视作医生的 “第二双眼睛”。&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;过度依赖人工智能的隐患&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　不过陈博士也指出，人工智能存在偏见风险，同时人们也可能出现过度依赖它的问题。例如，麻省理工学院 2022 年的一项研究显示，与人类放射科医生不同，人工智能能通过 X 光片准确判断一个人的种族，这引发了人们对诊断中存在偏见的担忧。&lt;/p&gt;
-&lt;p&gt;　　陈博士还表示，他担心如果人工智能技术发展到足够成熟的阶段，医疗机构可能会产生调整人员配置的想法 —— 比如用护士替代医生，或是用全科医生取代放射科专科医生。这种做法在某些情况下或许可行，但对于放射科主要应对的病症，如癌症、致命性感染的检测，大多并不适用。&lt;/p&gt;
-&lt;p&gt;　　他说：“我们必须明白，人工智能算法的良好表现，很大程度上是因为其自动化输出结果都会经过专业医生的审核。可以说，正是机器与专业人士的这种协作，才真正实现了诊疗水平的提升。”&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：郭明煜 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 09 Feb 2026 15:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxQY2k4cDRnNnpLcXRVYzlsVUZGMFJoM290eUpoYko1eGR4dEdURUVzbTlNMFNrMld6RTdQNUtqQU1JR2E1UF9hT0EySnpzOTB0NWhiVDE3U1VhZVVjT0hlb2Z4NkNJb1RjRWJBRUtlQUNtNFJ3N01nQ0NPOHhWVGZaQ0FJVG0tUTQ</guid></item><item><title>马斯克引爆光伏 产业链市值“回血”！太空光伏前景几何 - 东方财富</title><link>https://wap.eastmoney.com/a/202602093645766214.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
-        
-        &lt;p class="related"&gt;
-
-        &lt;/p&gt;
-
-        
-
-        
-        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
-        &lt;p class="layer"&gt;&lt;/p&gt;
-        
-        
-        
-
-        
-
-        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Mon, 09 Feb 2026 15:03:56 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE8xbjdzbUdPT3Zlc2FzS0dqWGE2cUcwV0hRWl93RXVhMlB0bG50R00taVBrY3liajJ5X1QybzJjUjFjMDJDenlhYkJYUS1pc1J5S3ZQZUNubWp4TWN1TU9vdA</guid></item><item><title>价格暴涨6倍 明明可以直接抢钱的！程序员已经用不起Claude了 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103323.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;如果有人告诉你，让 AI 跑得快一点，需要多花 6 倍的钱，你的第一反应是什么？&lt;/p&gt;
-&lt;p&gt;这不是假设，而是 Anthropic 刚刚推出的 Claude Opus 4.6 快速模式给出的现实答案。&lt;/p&gt;
-&lt;p&gt;在春节前疯狂的 AI 新品曝光大赛中，Anthropic 的新模型 Claude Opus 4.6，再次以超强的能力和优越的表现，吸引了人们的目光。&lt;/p&gt;
-&lt;p&gt;但比能力更「秀」的是，Opus 4.6 的收费标准。Opus 4.6 不仅提供标准版，更有一个「快速」版本，而正是这个快速版本的定价，让人大吃一惊—— 快速版本提供 2.5 倍的速度提升，但成本增加了 6 倍 ！&lt;/p&gt;
-&lt;p&gt;难怪不少人在体验和测评过后，抱怨：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;已经用不起新模型了 ！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;为什么 Anthropic 会给新模型这样的定价？旗舰级模型「按需分级」的时代，已经到来了吗？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;01 明明可以去抢，它却&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;新模型定价稍微高一点，符合人们的期望，这点无可厚非，但是 Anthropic 此次对 Opus 4.6 的定价，显然有点夸张。&lt;/p&gt;
-&lt;p&gt;根据官方介绍，Claude Opus 4.6 标准模式的定价是：每百万输入 Token 5 美元，输出 Token 25 美元。快速模式直接涨到：输入 Token 30 美元，输出 Token 150 美元。&lt;/p&gt;
-&lt;p&gt;6 倍的价格，2.5 倍的速度——这意味着什么？&lt;/p&gt;
-&lt;p&gt;技术博主 Simon Willison 给出了一个关键计算：「支付 6 倍的 Token 费用换取 2.5 倍的速度，意味着每秒输出的成本仍然比标准模式高 2.4 倍。」&lt;/p&gt;
-&lt;p&gt;独立测试机构 Artificial Analysis 的数据显示：在智能指数测试中，Opus 4.6 自适应推理模式生成了 5800 万个 tokens ，而平均水平仅为 1100 万个 。评测成本高达 $2,486.45 ，远超同类模型。&lt;/p&gt;
-&lt;p&gt;实际案例显示：&lt;/p&gt;
-&lt;p&gt;一个中型项目的编码任务，使用 Opus 4.6 快速模式可能花费 $3,650/月同样任务用标准模式： $610/月换用 Sonnet 4.5： $366/月 （便宜 83%）&lt;/p&gt;
-&lt;p&gt;一位用户警告：「最大的风险是 extra usage 设置。你可能烧完 $50 免费额度，然后超额费用会悄悄启动——下次银行账单会给你一个『惊喜』。」&lt;/p&gt;
-&lt;p&gt;更有趣的是，Anthropic 还埋了一个「成本陷阱」：如果你在对话中途切换到快速模式，整个对话上下文会按快速模式的价格重新计费。这就像是在高速公路上临时决定走 VIP 通道，结果发现要为整段路程买单。&lt;/p&gt;
-&lt;p&gt;这样的定价逻辑，让人不得不思考：Anthropic 到底在卖什么？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;02 AI 版「时间就是金钱」&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从网络反应来看，快速模式正在制造一个明显的用户分层。&lt;/p&gt;
-&lt;p&gt;Reddit 的 r/ClaudeAI 社区里，个人开发者对定价感到震惊，但企业用户的态度截然不同。有用户直言：「 在企业环境中，开发者时间很昂贵，公司愿意承担费用。 」&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/f57a5a19-b4b8-451f-b942-ccd0627ae0b1.png" target="_blank"&gt;&lt;img alt="价格暴涨6倍 明明可以直接抢钱的！程序员已经用不起Claude了" h="450" src="//img1.mydrivers.com/img/20260209/Sf57a5a19-b4b8-451f-b942-ccd0627ae0b1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;目前国外旗舰大模型成本和能力对比｜图片来源：AI 制作&lt;/p&gt;
-&lt;p&gt;这揭示了一个被忽视的事实：&lt;/p&gt;
-&lt;p&gt;AI 服务正在从「按需付费」向「按需分级」转变 。&lt;/p&gt;
-&lt;p&gt;对于一家金融公司来说，让交易算法快 2.5 倍运行，可能意味着数百万美元的收益差异。6 倍的 AI 成本在这个场景下几乎可以忽略不计。但对于个人开发者或小团队，这样的定价直接把他们挡在了门外。&lt;/p&gt;
-&lt;p&gt;更有意思的是竞争对手的反应。&lt;/p&gt;
-&lt;p&gt;有用户指出，Gemini 3 Pro 的速度是常规 Opus 4.6 的 1.8 倍，但价格只有 0.45 倍。这种对比让人怀疑： Anthropic 是在测试市场的价格承受能力，还是真的相信速度已经成为值得 6 倍溢价的「优质商品」 ？&lt;/p&gt;
-&lt;p&gt;从技术角度看，快速模式之所以更贵，是因为需要更多 GPU 和更高的并行化程度。但这种成本增加是否应该 1:1 转嫁给用户，显然是个有争议的问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;03 更强更快，更贵&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Anthropic 的快速模式定价，实际上在向整个行业发出一个信号：&lt;/p&gt;
-&lt;p&gt;AI 服务的差异化竞争，正在从「更聪明」转向「更快」 。&lt;/p&gt;
-&lt;p&gt;这种转变并不意外。 当大模型的能力差距逐渐缩小，速度就成了新的竞争维度 。但问题在于，这种竞争是否会导致 AI 服务市场的进一步分化？&lt;/p&gt;
-&lt;p&gt;从应用场景看，Anthropic 明确表示快速模式不适用于「较长的自主运行、批处理和成本敏感的工作负载」。这种限制本身就说明， 快速模式更像是一个针对特定场景的「奢侈品」，而不是普惠的技术升级 。&lt;/p&gt;
-&lt;p&gt;有 AI 研究者指出，快速模式有独立的速率限制，因为它从不同的容量池提供服务。这意味着 Anthropic 实际上在运营两套基础设施：&lt;/p&gt;
-&lt;p&gt;一套面向「普通用户」，一套面向「付费用户」 。&lt;/p&gt;
-&lt;p&gt;这种基础设施的分层，可能正在重新定义 AI 服务的公平性边界。&lt;/p&gt;
-&lt;p&gt;值得注意的是，Anthropic 为快速模式提供了 2 月 16 日前的 50% 折扣，但这个促销期很短。这更像是一个市场测试，而不是长期策略。&lt;/p&gt;
-&lt;p&gt;从行业竞争的角度看，如果快速模式获得成功，其他 AI 厂商很可能会跟进类似的分层定价策略。到那时，「速度」就会从技术优势变成商业门槛。&lt;/p&gt;
-&lt;p&gt;Anthropic 的这次定价实验，可能正在为整个 AI 行业的商业化路径埋下伏笔。当技术不再是唯一的护城河，如何在速度、成本和公平性之间找到平衡，将成为每个 AI 厂商都要面对的问题。&lt;/p&gt;
-&lt;p&gt;快速模式的 6 倍价格，看似是一个简单的产品决策，实际上却在测试一个更深层的问题：&lt;/p&gt;
-&lt;p&gt;AI 服务的价值，到底应该如何定义 ？&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260209/e4e721ffef0440ebb6378eabad41eed1.png" target="_blank"&gt;&lt;img alt="价格暴涨6倍 明明可以直接抢钱的！程序员已经用不起Claude了" h="338" src="//img1.mydrivers.com/img/20260209/s_e4e721ffef0440ebb6378eabad41eed1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Feb 2026 15:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBwUGZsMkxhU3lsSGV5d3FsUDdsZWVmem56ZEJiMmc1Y3RfVVJsenRqdE8xeGY2OHJYQm1PYzdxelZOTHh3VXNLSmUwN0lJeTI2Z3lJRkljYzk</guid></item><item><title>爆单！这个春节机器人比真人还忙 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103322.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月9日消息，临近春节，机器人租赁市场迎来了一场前所未有的爆发式增长，一机难求竟然成了行业常态。&lt;/p&gt;
-&lt;p&gt;根据最新的行业数据显示，&lt;strong&gt;今年春节期间的机器人租赁订单量相比往常猛增了两到三倍。不少租赁平台的订单已经一路排到了2月底，甚至连正月十五之后的档期都被抢订一空。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如今的机器人租赁已不再是单纯的设备出租，而是升级成了全场景的定制化方案。无论是门店开业时的吸粉引流，还是景区展览中的趣味互动，平台都能提供针对性的服务建议。&lt;/p&gt;
-&lt;p&gt;有报道称，在北京，一些全尺寸机器人甚至能完成写字等精细化动作，最忙碌的时候一天要马不停蹄地转场参与八场活动。&lt;/p&gt;
-&lt;p&gt;与此同时，私人定制需求也出现了爆发式增长。&lt;strong&gt;自1月以来，家庭聚会、生日宴以及茶话会等私人场景的订单环比激增了300%，占据了总订单量的六成左右。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;市场的持续火热正带动整个行业加速狂奔。就在刚刚过去的2025年，全国新增了1500多家机器人租赁公司，同比增长接近五成。&lt;/p&gt;
-&lt;p&gt;随着硬件采购成本的逐年下降，曾经高不可攀的黑科技正在加速走进普通人的生活，为这个传统的中国年增添了一份别样的科技韵味。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260209/3672df8ac46046dfa4837398769d1b6a.png" target="_blank"&gt;&lt;img alt="爆单！这个春节机器人比真人还忙" h="800" src="//img1.mydrivers.com/img/20260209/s_3672df8ac46046dfa4837398769d1b6a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Feb 2026 15:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xV1hZVFYxX3RicTYyZFVKcTluVzlaUG5Rck5TLU0tdDBSWnhZc1hHUTN5TUdiREFNU3F0QWljZE5ZLWxUQ040ajUweHJRTHFrRHExTklWVFg</guid></item><item><title>怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103321.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;美国无人车，菲律宾操控？？&lt;/p&gt;
-&lt;p&gt;Waymo首席安全员近期公开承认，Waymo无人车，仍有大量云端安全员远程盯车。&lt;/p&gt;
-&lt;p&gt;且这些安全员大部分不在美国，而是横跨半个地球，位于1万多公里外的菲律宾等地。&lt;/p&gt;
-&lt;p&gt;美国参议员认为“完全不能接受”，网友听完也是相当震惊：&lt;/p&gt;
-&lt;p&gt;传说中的“智能”或者“AI”，背后原来是呼叫中心的许多菲律宾人？&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/fe50dd89-86d6-41f8-a583-6d38437212ca.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="173" src="//img1.mydrivers.com/img/20260209/Sfe50dd89-86d6-41f8-a583-6d38437212ca.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;美国无人车，菲律宾操控？&lt;/p&gt;
-&lt;p&gt;事情的起因，来自美国参议院最近举办的一场自动驾驶听证会，特斯拉和Waymo的高管都参与其中。&lt;/p&gt;
-&lt;p&gt;听证会上，Waymo首席安全官毛里西奥·佩尼亚（Mauricio Pe?a）透露：&lt;/p&gt;
-&lt;p&gt;公司的无人车在遇到特殊路况时，系统会启用“远程操作员”，以帮助车辆顺利脱困。&lt;/p&gt;
-&lt;p&gt;这些操作者多是合同工，虽然有一些在美国工作，但多数人来自菲律宾等其他国家。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/08059257-997c-4c8c-981a-af434eccda4a.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="329" src="//img1.mydrivers.com/img/20260209/S08059257-997c-4c8c-981a-af434eccda4a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这一点引起了参议员们的质询。马萨诸塞州参议员埃德·马基（Ed Markey），将这种情景称为“Waymo会打电话给人类朋友寻求帮助”。&lt;/p&gt;
-&lt;p&gt;随即他当众表示，大量使用国外云端安全员，简直“完全无法接受”。&lt;/p&gt;
-&lt;p&gt;不仅参议员们质疑，不少网友也对这个消息表示担忧，比如疑惑这些菲律宾员工有没有美国驾照：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/cc681ccb-e788-4a0b-9f95-6deb35a16433.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="152" src="//img1.mydrivers.com/img/20260209/Scc681ccb-e788-4a0b-9f95-6deb35a16433.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;总结公众讨论的焦点，主要集中在三方面：&lt;/p&gt;
-&lt;p&gt;其一，聚焦于海外云端安全员。虽然菲律宾和美国都是右舵，但这些海外安全员是否足够熟悉、理解美国交通规则，外界并不知晓。&lt;/p&gt;
-&lt;p&gt;其二是距离过远，菲律宾远在地球另一端，距美国1万公里以上，如果存在网络延迟可能会带来安全隐患。&lt;/p&gt;
-&lt;p&gt;其三涉及安全，参议员们认为，涉及关键交通基础设施的岗位，却大量外包到海外，可能会对公共安全有所影响。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/7cd215ec-9fc7-45ec-9bac-857d03ed8b17.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="338" src="//img1.mydrivers.com/img/20260209/S7cd215ec-9fc7-45ec-9bac-857d03ed8b17.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而关于安全员的问题，Waymo另一位高管在后续补充了细节。&lt;/p&gt;
-&lt;p&gt;他强调，这些人并不能叫做“远程驾驶员”，更合适的叫法应当是“车队响应代理”。因为这些员工只在特殊情况下提供指导，回答车辆提出的多项选择题。&lt;/p&gt;
-&lt;p&gt;而动态的驾驶任务，始终由Waymo车辆自己负责，不会远程操控。&lt;/p&gt;
-&lt;p&gt;并且这些运营人员在上岗前，会接受其所服务地区的道路规则培训，必须持有乘用车或厢式货车驾照，还要定期接受驾驶记录审查。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/6fe82b32-287c-486d-a99a-b8cbd32eb498.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="334" src="//img1.mydrivers.com/img/20260209/S6fe82b32-287c-486d-a99a-b8cbd32eb498.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;所以，“自动驾驶”的泡沫没破，开车的依然是AI；有云端安全员也好理解，毕竟“人力兜底”在这个行业不是新鲜事……&lt;/p&gt;
-&lt;p&gt;不过为啥偏偏要去海外的菲律宾找呢？&lt;/p&gt;
-&lt;p&gt;无人车不是真无人？&lt;/p&gt;
-&lt;p&gt;在L4行业，大家对于安全员的存在并不陌生。不过，此前更易被公众所感知的，大多是指车内安全员。&lt;/p&gt;
-&lt;p&gt;而远程安全员，是从车内配备安全员，走向完全无人运营的必经阶段。&lt;/p&gt;
-&lt;p&gt;各国的监管机构，此前普遍要求自动驾驶车辆配备安全员，当作一种过渡性安排。&lt;/p&gt;
-&lt;p&gt;以中国为例，2023年11月，交通运输部办公厅印发的《自动驾驶汽车运输安全服务指南（试行）》中明确：&lt;/p&gt;
-&lt;p&gt;从事出租汽车客运的完全自动驾驶汽车，在指定的区域运营时可使用远程安全员，远程安全员人车比不得低于1∶3。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/a1f0988b-c0d8-4392-8d5f-e5d218fea24f.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="389" src="//img1.mydrivers.com/img/20260209/Sa1f0988b-c0d8-4392-8d5f-e5d218fea24f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如今的Robotaxi顶尖玩家们，例如国内的萝卜快跑、文远知行、小马智行，还有与Waymo正面交锋的特斯拉，也都经历过这个从“有人”到“无人”的过程，并都配有远程协助平台，正集体努力提升人车比。&lt;/p&gt;
-&lt;p&gt;或许有人会疑惑，这是否能称得上是真正的“自动驾驶”？为什么仍需要人类做后备呢？&lt;/p&gt;
-&lt;p&gt;其实在驾驶系统完全自动化的背后，公司仍要面临两大挑战：&lt;/p&gt;
-&lt;p&gt;首先就是技术的局限性。&lt;/p&gt;
-&lt;p&gt;当前的自动驾驶系统，普遍仍难以处理的长尾问题，也就是罕见但重要的边缘情况，AI系统需要人类作为“安全冗余”应对极端情况。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/1cfe8687-9082-45a9-928e-7a066e8320ba.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="407" src="//img1.mydrivers.com/img/20260209/S1cfe8687-9082-45a9-928e-7a066e8320ba.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;例如Waymo，这次听证会召开前，Waymo还因为遭遇鬼探头撞倒儿童而处于调查中。&lt;/p&gt;
-&lt;p&gt;当时，这个儿童从违规停放的车后突然窜出，直接跑到Waymo的行驶车道上。&lt;/p&gt;
-&lt;p&gt;再比如之前Waymo闯入警匪对峙现场，直奔嫌疑人车辆驶去……这类极端场景，正是自动驾驶系统需要人类协助的典型情况。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="216" src="//img1.mydrivers.com/img/20260209/00cc75ca-8823-49ee-a6dc-3c7cd407d76e.gif" w="334"&gt;&lt;/p&gt;
-&lt;p&gt;其次，Robotaxi走向规模化运营，商业化提上日程。但当前的自动驾驶行业，仍面临着巨大的研发和运营成本压力。&lt;/p&gt;
-&lt;p&gt;这个过程中，成本考量是影响盈利时间线的重要因素。&lt;/p&gt;
-&lt;p&gt;更低的成本，意味着相同的开支可以支撑更大的车队规模，更早、更快地争夺更多市场。&lt;/p&gt;
-&lt;p&gt;而降低成本的方式，一方面体现在车辆本身——随着行业趋向成熟和技术成熟，智驾相关零部件成本下降，整车生产成本也同步下降。&lt;/p&gt;
-&lt;p&gt;不过这个过程通常较长，迫使企业在人力环节寻求节约，这就是降本的另一方面体现，降低运营成本。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260209/00bffbde-8ba0-4bfc-ad63-71c63099395c.png" target="_blank"&gt;&lt;img alt="怕了怕了！Waymo无人车美国开 “遥控器”远在菲律宾" h="342" src="//img1.mydrivers.com/img/20260209/S00bffbde-8ba0-4bfc-ad63-71c63099395c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一个现成的例子就是上文提到的，搭建远程操作中心，公司可以实现多车协同监控，不但成本更低，还能明显提升运营效率。&lt;/p&gt;
-&lt;p&gt;这其实也能解释，为什么Waymo会把远程安全员的工作外包——&lt;/p&gt;
-&lt;p&gt;菲律宾等地的劳动力成本显著低于美国本土，是很有效的降本方式。&lt;/p&gt;
-&lt;p&gt;另外，Waymo还对外媒透露，将业务外包给菲律宾，也是公司全球扩张战略的一部分。&lt;/p&gt;
-&lt;p&gt;这是不是在暗示，Waymo已经早早布局，准备进军亚洲了？&lt;/p&gt;
-&lt;p&gt;One More Thing&lt;/p&gt;
-&lt;p&gt;正在美国市场竞速、频频公开嘲讽对方的Waymo和特斯拉，倒是难得在听证会上“和谐”了一回。&lt;/p&gt;
-&lt;p&gt;双方齐齐敦促美国国会，通过立法，为自动驾驶汽车建立全国性框架。&lt;/p&gt;
-&lt;p&gt;因为真的等不及了。&lt;/p&gt;
-&lt;p&gt;Waymo首席安全官佩尼亚表示，美国在自动驾驶汽车领域的领先地位，正面临来自中国公司的竞争，这些中国公司在国家大力支持下正在快速扩张。&lt;/p&gt;
-&lt;p&gt;特斯拉公司车辆工程副总裁拉斯·莫拉维，也在听证会上表示，对于阻碍行业创新能力的法规，国会必须进行现代化改革。&lt;/p&gt;
-&lt;p&gt;他在书面证词中写道：&lt;/p&gt;
-&lt;p&gt;如果美国不在自动驾驶汽车发展领域发挥领导作用，那将来塑造这项技术、标准和全球市场，就是中国了。&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Feb 2026 14:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8xVjFHZzlVNEZZcWNMQXFIV2t5am9SNFM4NENaM1J3TGZGN0Z4NmFwb3NvUTRLa1otTmpHZWx5UUJjc3ZaSUZiaFpJUVo4VWFWSU5tdmdidUo</guid></item><item><title>SpaceX将重心转为先建造月球城市 - DW.com</title><link>https://www.dw.com/zh/spacex%E5%B0%86%E9%87%8D%E5%BF%83%E8%BD%AC%E4%B8%BA%E5%85%88%E5%BB%BA%E9%80%A0%E6%9C%88%E7%90%83%E5%9F%8E%E5%B8%82/a-75876300</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div data-tracking-skip="true" data-tracking-name="rich-text" class="c17j8gzx rc0m0op r1ebneao s198y7xq rich-text l1evdo4u blt0baw s16w0xvi rcjjkz7 w128axg5 b1fzgn0z"&gt;&lt;p&gt;（德国之声中文网）&lt;a class="internal-link" href="/zh/%E5%9F%83%E9%9A%86%E9%A9%AC%E6%96%AF%E5%85%8B/t-74002807"&gt;马斯克&lt;/a&gt;周日在其社交媒体平台X上写道，“对于那些不了解情况的人来说，SpaceX已经将重心转移到在月球上建造一座能自我发展的城市（Self-growing city），因为我们有可能在不到10年的时间内实现这一目标，而在火星上则需要20年以上。”&lt;/p&gt;
-
-&lt;p&gt;马斯克还写道，只有当行星每26个月排列成一条直线时才有可能前往火星，行程需要6个月，”而我们可以每10天发射一次飞船前往月球（行程需要2天）。这意味着我们可以更快地完成一座月球城市的建设，而不是火星城市的建设。“&lt;/p&gt;
-
-&lt;p&gt;他表示，SpaceX仍然计划五到七年内启动在火星上建城的计划，但“首要任务是确保人类文明的未来，而登月速度更快。”就在去年，马斯克还表示，他的目标是在2026年底前向火星发射无人探测器。&lt;/p&gt;
-
-&lt;p&gt;《华尔街日报》上周五的一篇报道指出，SpaceX已告知投资者，公司将优先考虑登月，稍后再尝试火星之旅。报道称，SpaceX的目标是在2027年3月进行无人登月。&lt;/p&gt;
-
-&lt;p&gt;去年年底，美国总统特朗普签署了一项关于美国太空政策的行政命令，表示他希望美国国家航空航天局（NASA）的阿尔忒弥斯计划能在2028年将美国人送上月球。SpaceX是该计划的承包商，它与NASA签订的阿尔忒弥斯登月合同金额达40亿美元，任务是使用星舰将宇航员送上月球表面，并在2027年3月前完成无人登月验证。&lt;/p&gt;
-
-&lt;p&gt;美国在本个十年（2020年代）重返月球的目标面临着来自中国的激烈竞争。自1972年阿波罗17号在月球上着陆以来，人类就再也没有踏足过月球表面。&lt;/p&gt;&lt;div class="vjs-wrapper embed big"&gt;&lt;h2 aria-label="内嵌视频 — 号称“史上最强大火箭” 星舰有何特别之处？" class="headline"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20"&gt;&lt;g fill-rule="evenodd"&gt;&lt;path d="M14.114 7.599H13.5l.002 4.706h.601l4.582 3.25-.005-11.11zM11.084 4.444l-9.007.002-1.336.797.002 9.514 1.334.793 9.007.006 1.509-.799-.004-9.516z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;号称“史上最强大火箭” 星舰有何特别之处？&lt;/h2&gt;&lt;video id="video-65359961" controls playsinline="" preload="none" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-id="65359961" data-posterurl="https://tvdownloaddw-a.akamaihd.net/stills/images/vdt_zh/2023/bchi230418_001_starship_01r_partner.jpg" data-duration="01:48"&gt;&lt;source src="https://hlsvod.dw.com/i/dwtv_video/flv/vdt_zh/2023/bchi230418_001_starship_01r_,AVC_480x270,AVC_512x288,AVC_640x360,AVC_960x540,AVC_1280x720,AVC_1920x1080,.mp4.csmil/master.m3u8" type="application/x-mpegURL"&gt;&lt;source src="https://tvdownloaddw-a.akamaihd.net/dwtv_video/flv/vdt_zh/2023/bchi230418_001_starship_01r_AVC_1920x1080.mp4" type="video/mp4"&gt;&lt;p class="vjs-no-js"&gt;To view this video please enable JavaScript, and consider upgrading to a web browser that &lt;a href="https://videojs.com/html5-video-support/" target="_blank"&gt;supports HTML5 video&lt;/a&gt;&lt;/p&gt;&lt;/source&gt;&lt;/source&gt;&lt;/video&gt;&lt;/div&gt;
-
-&lt;h2&gt;战略调整&lt;/h2&gt;
-
-&lt;p&gt;SpaceX的上述战略转变发生在SpaceX收购了马斯克的初创公司xAI之后。不到一周前，马斯克宣布SpaceX收购了他领导的人工智能公司xAI，这笔交易对SpaceX的估值为1万亿美元，对xAI的估值为2500亿美元，合并后的新公司估值达到1.25万亿美元。交易支持者认为，SpaceX此举可以加强其建立太空数据中心的计划。马斯克认为，随着人工智能的发展，对算力的需求激增，太空数据中心比地面设施更节能。&lt;/p&gt;
-
-&lt;p&gt;SpaceX还计划进行首次公开募股（IPO），最早可能在今年夏天进行。SpaceX希望通过IPO筹集高达500亿美元的资金，这可能成为历史上规模最大的IPO。&lt;/p&gt;
-
-&lt;p&gt;在重新调整SpaceX战略的同时，马斯克也正推动其上市公司特斯拉朝着新的方向发展。特斯拉计划今年投资200亿美元，转型至自动驾驶和机器人领域。为了加快转型步伐，马斯克上个月表示，特斯拉将停止在加州工厂生产两款车型，以便腾出空间生产其Optimus人形机器人。&lt;/p&gt;
-
-&lt;p&gt;（法新社、路透社等）&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;DW中文有&lt;a href="https://www.instagram.com/dw.chinese/"&gt;Instagram&lt;/a&gt;！欢迎搜寻dw.chinese，看更多深入浅出的图文与影音报道。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;© 2026年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>DW.com</author><pubDate>Mon, 09 Feb 2026 14:35:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi4AFBVV95cUxNZmVoVEZDWTJsTTVybHA5T1ZwZFNvamE4bWN6bGY5NHIwZXhYMTMtSmZBLTlFa3QwWHhFdzU5NFhLMVYxaS00c29aWjNHbmhjSjB0X1l0dTE3ZF9VOTBTdmExaXI5MFRxLWdkSTcteG5oSG1WZktkRWdLVE9iODVZd2lYZUVmRnNDYl9XZlNKYmRid244RjJrbHBRUEhJTTk2dEI5M0t1dmo4WmF6b2lDREIxX2lUQjFBbWN1RWtVQ3lldFFtQ25IVVVqcTczNzVJRXJsaXdkWjJCY1pGYzE2MtIB4AFBVV95cUxPQ0JHQTdlRkRfVlBuc2o1UkNqbU96RVczYmk5UVNmc1lRTTk2ak8ydUMtbHoyc2pHSVZuM0d6NVRfVXQyWVkzVHlSOHVTeWU1NFM5RzQzdnJFVk5ueWhXSVdJN29mUG1ScExPM25ZZmRoUVhZNkFuN29WRU1QZ3RwVFBGaVZSV2dvZFYtcXlOb0ZEcWlCUFBlM1NtdjhjOWVteXRVb3VzTG9DNFZyRnVudHRVNklXWEMzUjlhanFwbWlIeC1XQ1dVSmdaZkJnb3F5X3ptTFdsakI2bVB4M3hhRA</guid></item><item><title>古尔曼曝苹果将掀新品发布潮：iPhone 17e、新iPad合力猛攻新兴市场 - 东方财富</title><link>https://wap.eastmoney.com/a/202602093645750273.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
-        
-        &lt;p class="related"&gt;
-
-        &lt;/p&gt;
-
-        
-
-        
-        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
-        &lt;p class="layer"&gt;&lt;/p&gt;
-        
-        
-        
-
-        
-
-        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Mon, 09 Feb 2026 14:25:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE8yclFYeHBSWGlQTnhRQWdneXZpelBzaWtydVpubWdPekdGUFZaS2FCT1ZOczV0NzhYaEVQT2x2MEw3eXJ3NTRYMVVMMkc2ZWUxd2ZPU0NHR0I2OUNGQlFNOA</guid></item><item><title>雷鸟新款27寸显示器首发2999元：4K 160Hz/FHD 320Hz双模切换 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103312.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;雷鸟新款27寸显示器首发2999元：4K 160Hz/FHD 320Hz双模切换&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-09 22:03:10  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1103312-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月9日消息，&lt;strong&gt;雷鸟推出新款27英寸Mini-LED显示器27U8A Pro，首发售价&lt;span&gt;2999&lt;/span&gt;元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;该显示器搭载一块27英寸Fast-IPS面板，采用Mini-LED背光技术，拥有2304个背光分区，并支持双模切换功能，可在4K 160Hz与1080P 320Hz之间自由选择，响应时间低至1ms GTG。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260209/f6653b6b3657474d92cd89f4164359c0.png" target="_blank"&gt;&lt;img alt="雷鸟新款27寸显示器首发2999元：4K 160Hz/FHD 320Hz双模切换" h="314" src="//img1.mydrivers.com/img/20260209/s_f6653b6b3657474d92cd89f4164359c0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;屏幕全屏亮度最高900尼特，峰值亮度可达2000尼特，静态对比度为1000:1，支持HDR 1400认证。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;色彩方面，该显示器支持QD量子点技术，具备10bit色深，覆盖99% DCI-P3及99% sRGB色域，平均色准Delta E＜2。同时配备硬件级低蓝光与DC调光，兼顾画质与护眼需求。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260209/e49a22aed3c447b5a9110d6303007f04.png" target="_blank"&gt;&lt;img alt="雷鸟新款27寸显示器首发2999元：4K 160Hz/FHD 320Hz双模切换" h="326" src="//img1.mydrivers.com/img/20260209/s_e49a22aed3c447b5a9110d6303007f04.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;功能上，&lt;strong&gt;27U8A Pro内置两个5W扬声器，支持AMD FreeSync Premium与NVIDIA G-SYNC Compatible防撕裂技术，并集成游戏辅助功能。&lt;/strong&gt;此外，它还支持KVM多设备切换、画中画（PIP）及并排显示（PBP）模式，兼顾游戏与多任务办公。&lt;/p&gt;
-&lt;p&gt;人体工学支架设计紧凑，支持125mm升降、±20°水平旋转、-5°~15°俯仰调节及垂直旋转，并预留100 x 100mm VESA挂壁接口。&lt;/p&gt;
-&lt;p&gt;背部接口丰富，包括2个HDMI 2.1、1个DP 1.4、1个支持90W反向供电的全功能USB-C，以及多个USB 3.0接口和音频输出口。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="2999元" goods_title="雷鸟U8A Pro狩猎者II代27英寸4K160Hz双模1K320Hz电竞电脑显示器2304分区QD-MiniLED Type-C 90W显示屏 【27U8A Pro】4K双模/2304分区" href="https://dt.mydrivers.com/mv.ashx?txt=AZjab" img="https://img14.360buyimg.com/pop/jfs/t1/389906/4/11242/128029/697b2328F1dcdd6a0/00833203208d2706.png" target="_blank"&gt;京东(2999元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260209/58b7af6b571c4f6cb10cef7e9a6f76c4.png" target="_blank"&gt;&lt;img alt="雷鸟新款27寸显示器首发2999元：4K 160Hz/FHD 320Hz双模切换" h="342" src="//img1.mydrivers.com/img/20260209/s_58b7af6b571c4f6cb10cef7e9a6f76c4.png" w="592"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Feb 2026 14:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE14Mm5yU3daMkEydDRiMXFQa2N0NGg1ZGhoN0o1akpZQUlyTk9hbmNpYXBFampITHhqR002TC1IUVhJYTFsemdTcDMyUmk3N1o4TmpVQlFKYW8</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Feb 2026 16:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE01RG9ycFY5SFNGNlZTR21MYk01b0ZYaDRsQmRKOHFaWEF1NXhNY0NUYUxLdE9qRDB6OVpBTTVJa1c0ZGpHdENselZ5am0xVkJTMnphMG1PNUQ</guid></item></channel></rss>
