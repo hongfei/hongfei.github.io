@@ -1,5 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Intel Nova Lake竟混用台积电2nm！面积暴涨 要贵死了 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103906.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>创业板涨超1%，算力硬件股大涨，恒指跌1%，智谱狂飙40%、MINIMAX大涨21%，人民币升破6.9关口 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3765561</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 12 Feb 2026 06:05:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1lWWZQOUZrN0pkVXVveGUxTFY2MWtOX3RUNXJRRHFqeVlZSHBqWjIta1AwU3FZQ2J1VGtaWjU0SGxoR0trVkR1Y25oMXhKZ21yMEkw</guid></item><item><title>AI冲击“重灾区”，印度IT股崩了，印度的出口引擎要熄火了？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3765574</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 12 Feb 2026 05:49:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9xUjFnMmlHMV9mSDByQTdKTXhSMlR6NkF6REpOMjRVTTNYbXNZYnAtQWVtTjFvNXRlREhJN01TVUxDU0paQjVwa2dVNXFucmtjV0xV</guid></item><item><title>消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103940.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，小米又憋了个大的。&lt;/p&gt;
+&lt;p&gt;今天，雷军亲自在微博放出重磅消息，&lt;span&gt;&lt;strong&gt;小米机器人团队正式发布并开源全新具身智能VLA模型 ——Xiaomi-Robotics-0，真机运行画面首次对外曝光&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/e5e3e8240979468596478c7bb20ca828.png" target="_blank"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="574" src="//img1.mydrivers.com/img/20260212/s_e5e3e8240979468596478c7bb20ca828.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这不是一次普通的技术更新，而是小米在机器人领域的一次关键破局。&lt;span&gt;&lt;strong&gt;47亿参数规模、兼具视觉语言理解与高性能实时执行能力，在三大主流仿真测试中横扫行业标杆，拿下全项SOTA（State-of-the-Art，即当前公开可验证的最先进、最高水平），更在真实机器人上实现流畅动作。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;而最具颠覆性的是，&lt;strong&gt;&lt;span&gt;它能在普通消费级显卡上实现实时推理&lt;/span&gt;，直接打破了高端机器人模型 “只能实验室跑、普通人用不起” 的魔咒，这也是其区别于同类产品的核心亮点之一。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;很多人好奇，现在的机器人模型，到底卡在哪了？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;行业里藏着两个多年未解决的核心痛点：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一，推理延迟高、动作不连贯&lt;/strong&gt;：传统 VLA（Vision-Language-Action，视觉 - 语言 - 动作）模型虽然参数规模可圈可点、泛化能力较强，但在真实物理世界中，庞大的推理延迟让机器人像 “延迟卡顿的木偶”，动作断断续续，根本没法像人一样自然操作，被网友调侃为 “反应迟钝的木头人”；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二，硬件门槛极高&lt;/strong&gt;：稍微具备高性能的模型，必须依赖昂贵的专业显卡才能正常运行，普通开发者、小团队根本碰不起，导致先进技术只能被锁在实验室，无法落地普及。&lt;/p&gt;
+&lt;p&gt;在此基础上，还有一个普遍难题。不少模型 “仿真测试成绩好看，一上真机就拉胯”，无法在现实世界里稳定完成叠毛巾、拆积木这类真实物理任务，形成理论与实操脱节的尴尬。而小米这次的 Xiaomi-Robotics-0，就是冲着解决这些行业顽疾来的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/6872059720684e0692bf0d03226b252a.png" target="_blank"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="434" src="//img1.mydrivers.com/img/20260212/s_6872059720684e0692bf0d03226b252a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方明确表态：“今天，我们对外发布：Xiaomi-Robotics-0。这是一个拥有 47 亿参数、兼具视觉语言理解与高性能实时执行能力的开源 VLA 模型。它不仅在三大主流的仿真测试中获得优异成绩，更在现实真机任务中实现了物理智能的泛化 —— 动作连贯、反应灵敏，且能在消费级显卡上实现实时推理”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这句话精准概括了模型的核心优势，尤其要强调，不用高端计算设备，不用斥巨资购买专业显卡，普通消费级显卡就能让它稳定跑起来，这也是小米此次最具突破性的成果之一，直接拉低了具身智能技术的落地门槛。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;能做到这一点，核心是小米自研的Mixture-of-Transformers（MoT）混合架构，通俗说就是给机器人装了 “双脑协同系统”，兼顾决策与执行效率。&lt;/p&gt;
+&lt;p&gt;一个是视觉语言大脑（VLM），负责听懂人话、看懂环境，哪怕是 “把毛巾叠好” 这种模糊指令，也能精准理解空间关系和任务目标，保留了VLM本身的多模态理解能力，这是此前很多VLA 模型所不具备的优势；&lt;/p&gt;
+&lt;p&gt;另一个是动作执行小脑（DiT），专门负责把指令变成丝滑动作，生成连续流畅的 “动作块”，再通过流匹配技术保证精准稳定，让机器人告别机械卡顿，动作接近人类的灵活度，从根源上解决了传统模型动作断层的痛点。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/f83e07c512574d36a567c8e3f584539f.jpg" target="_blank"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="373" src="//img1.mydrivers.com/img/20260212/s_f83e07c512574d36a567c8e3f584539f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为了让机器人既聪明又能干”，团队还设计了两阶段训练方案。&lt;/p&gt;
+&lt;p&gt;先通过跨模态预训练，让模型在学动作的同时，不丢失物体识别、视觉问答等基础能力，避免 “练了手工、废了脑子”，同时通过 Action Proposal 机制让VLM的特征空间与动作空间对齐，为后续实操打下基础。&lt;/p&gt;
+&lt;p&gt;再通过后训练优化，用异步推理模式从机制上解决真机 “动作断层” 问题，搭配 Clean Action Prefix 让动作轨迹连续不抖动，通过 Λ-shape Attention Mask 让机器人聚焦当前视觉反馈、摆脱历史惯性，哪怕环境有小变化，也能即时调整，大幅提升环境适配能力。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="279" src="//img1.mydrivers.com/img/20260212/5b5a921b62294a33bf92b8743fdaa3de.gif" w="499"&gt;&lt;/p&gt;
+&lt;p align="center"&gt;分拣不同颜色的积木&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="279" src="//img1.mydrivers.com/img/20260212/da9dc61c0a284ccd909b927ec822f3c4.gif" w="500"&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="278" src="//img1.mydrivers.com/img/20260212/d63282e8a2b24ac38f75590d273f5433.gif" w="500"&gt;&lt;br&gt;
+将大块积木逐步拆成小块&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="278" src="//img1.mydrivers.com/img/20260212/101103d6ad5f4d8e9004937a8919e205.gif" w="500"&gt;&lt;br&gt;
+将毛巾摊平-叠好&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="278" src="//img1.mydrivers.com/img/20260212/72c4bbeadbe94afd9044ee5410e8dbe4.gif" w="500"&gt;&lt;/p&gt;
+&lt;p align="center"&gt;主动将多余毛巾放回以进行叠放&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;从这次曝光的真机视频里就能直观感受到，处理毛巾这种软塌塌的柔性物体，它会先铺平、再对折、整理整齐，多余的毛巾还会主动放回原位。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;面对刚性积木，它能一步步稳妥拆解，手眼协调极其稳定，不会出现卡顿或失误。&lt;/strong&gt;不管是软质材料还是硬质物件，都能从容完成，这就是物理智能真正落地的直观表现，也是小米此次突破的核心价值所在。&lt;/p&gt;
+&lt;p&gt;在 Libero、Calvin、SimplerEnv 三大全球主流具身智能测试集里，Xiaomi-Robotics-0 对标超过 30 款主流模型，在所有基准测试中全部拿下SOTA，用实打实的数据坐稳行业第一梯队，真正实现了 “仿真通、真机强、多模态能力不丢失” 的突破。&lt;/p&gt;
+&lt;p&gt;比技术更强的是小米的格局：&lt;span&gt;&lt;strong&gt;这次成果直接全量开源—— 技术主页、GitHub开源代码、Hugging Face模型权重全部公开，全球开发者都能免费使用、二次开发，相关资源可在各大平台直接获取，彻底打破了大厂对具身智能核心技术的垄断。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/6d039505b14b4015be5197ebc65f709b.png" target="_blank"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="182" src="//img1.mydrivers.com/img/20260212/s_6d039505b14b4015be5197ebc65f709b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这意味着，原本高高在上的具身智能技术，第一次真正向行业敞开大门，不再是大厂专属玩具，普通开发者也能参与其中，加速整个行业的技术迭代。&lt;/p&gt;
+&lt;p&gt;雷军也在微博中透露，小米早已深度布局机器人赛道，目前仍在全球招募顶尖人才，团队还在持续冲刺下一代技术，此次发布的 Xiaomi-Robotics-0 只是阶段性研究成果，未来还会有更多突破。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当机器人不再是卡顿的演示道具，而是动作流畅、反应灵敏，还能在消费级硬件上轻松跑起来的真实产品，那个 “家用机器人走进千家万户” 的未来，真的离我们越来越近了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260212/94f2d291a98a4339ba150a9765652ea7.jpg" target="_blank"&gt;&lt;img alt="消费级显卡就能跑！雷军公布小米机器人最新进展：真机运行画面首曝" h="450" src="//img1.mydrivers.com/img/20260212/s_94f2d291a98a4339ba150a9765652ea7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 05:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5VS25vbWYzOG5LZTRjbzNiRU1tbmpsWEV6bjE0by1DWkd3aW9xNkc4VTNrTjVLamptNzRuNUhNUTB5dDRoWlJMRmdZbkNhQ2J1N0tBVHR1Rnk</guid></item><item><title>觊觎格陵兰岛！丹麦民众掀抵制美货浪潮 大量转用中国软件：自研WPS等受益 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103939.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;觊觎格陵兰岛！丹麦民众掀抵制美货浪潮 大量转用中国软件：自研WPS等受益&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-12 13:22:42  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1103939-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，美国觊觎丹麦自治领地格陵兰岛，这引发了丹麦民众的强烈不满。&lt;/p&gt;
+&lt;p&gt;在上述背景影响下，丹麦民众掀抵制美货浪潮。&lt;/p&gt;
+&lt;p&gt;比如在哥本哈根，不少丹麦消费者开始有意识地抵制美国商品，几款能够识别品牌背景的手机应用应运而生。许多民众已经开始从某些知名美国品牌入手，表达自己的立场。&lt;/p&gt;
+&lt;p&gt;只需拍摄照片就能迅速分析出品牌的母公司及其真实产地的“产地计量仪”应用，短短三天内就有三万名新用户注册。另一款名为“非美国”的应用也获得了超过十万次的下载。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此外，不少中国软件也受到了丹麦民众的追捧，比如100%中国自主研发的WPS，就是替代微软的一个好选择，同时观看视频还有B站等等。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在这之前，有不少欧洲国家也开始掀起了替代美国软件的行为，只不过难度比较大。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260212/89bb2154bb3f433d960395c23cb51367.jpg" target="_blank"&gt;&lt;img alt="觊觎格陵兰岛！丹麦民众掀抵制美货浪潮 大量转用中国软件：自研WPS等受益" h="399" src="//img1.mydrivers.com/img/20260212/s_89bb2154bb3f433d960395c23cb51367.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 05:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE53cFY3SUw5a3JxNWdUeHRHUjVxTUExYmVLMm05SmNqcngtZ3c4c1VrZ3FpSFZIbjNrVE82c3UwSlYwaGw4SXZTNDZjdW12cWFWTGstUDAtZVo</guid></item><item><title>严把质量关！雷军晒新一代SU7测试车：我多次参加新车测试 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103938.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;严把质量关！雷军晒新一代SU7测试车：我多次参加新车测试&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-12 12:59:28  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1103938-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，老款SU7已经停售，而新一代SU7就要来了，你准备好了吗？&lt;/p&gt;
+&lt;p&gt;就在刚刚，雷军在自己微博上晒出了新一代SU7测试车，并且直言，开始一天的工作了。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;随后，有网友在评论区表示：雷总还是亲自开车测试吗？雷军回应称：新一代SU7，我参加过多次测试，还开过一趟北京到上海的高速测试。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/6e509b16f05942ecbf8dbc8103798840.jpg" target="_blank"&gt;&lt;img alt="严把质量关！雷军晒新一代SU7测试车：我多次参加新车测试" h="374" src="//img1.mydrivers.com/img/20260212/s_6e509b16f05942ecbf8dbc8103798840.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;作为公司的CEO，雷军现阶段把更多的精力和热情投入到自家的汽车中，为的就是了解产品，完善产品，同时严格把控质量关。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;之前雷军表示，新一代SU7预计4月份上市，而他们一定把车做好，做成所有人向往的梦想之车。&lt;/p&gt;
+&lt;p&gt;新一代SU7目前已经开启预定，同样提供标准、Pro、Max三个版本，预售价22.99万元、25.99万元、30.99万元。&lt;/p&gt;
+&lt;p&gt;虽然新车相比上一代涨价了1万多，但小米表示产品相比上一代有了不少的升级，包括安全、续航、底盘、辅助驾驶、设计等等。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260212/f0720b14e78b4fed814fa7fe9a3272e6.jpg" target="_blank"&gt;&lt;img alt="严把质量关！雷军晒新一代SU7测试车：我多次参加新车测试" h="450" src="//img1.mydrivers.com/img/20260212/s_f0720b14e78b4fed814fa7fe9a3272e6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 04:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9jbUZJaVNob1FVRkpublJIcVBrdjZTUm1OS29tRlAzY3IzUThVQ1FZRU9mc1o0YUp6dVlWUWtaTk01NTREalZMT3VyRktTb0gzVGo4eEVJMm4</guid></item><item><title>惠普官方下场租电脑！RTX 5080笔记本月租近900元：设备永远不归用户 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103936.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，近日，Linus Tech Tips关注到了惠普新推出的“OMEN Gaming Subscription”游戏订阅计划。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;这项计划允许用户通过按月付费的方式，提供四档月租方案，涵盖从入门到旗舰的游戏本，但与传统商业租赁不同，用户支付再多费用也无法最终拥有设备。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;根据PC Gamer 的统计，入门档Victus 15（锐龙7 8845HS+RTX 4050+16GB+1TB）月租49.99美元（约345元人民币），目前该机促销价950美元，19个月租金即可抵整机价格。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;高端档Omen Max 16（酷睿Ultra 9+RTX 5080+32GB+1TB）月租129.99美元（约897元人民币），对应售价2110美元，16个月租金抵整机。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/c42b003d-81b9-4378-86bf-f10451841570.jpg" target="_blank"&gt;&lt;img alt="惠普官方下场租电脑！RTX 5080笔记本月租近900元：设备永远不归用户" h="305" src="//img1.mydrivers.com/img/20260212/Sc42b003d-81b9-4378-86bf-f10451841570.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;中间两档RTX 5060/5070机型月租分别为69.99/79.99美元，同样不足20个月即可抵扣整机售价。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;惠普提供30天内无条件退款，但若在首年的12个月内提前退订，用户将面临巨额违约金，如第二个月退Victus需赔550美元，退Omen Max需赔1430美元并归还设备。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;满13个月后取消免费，但设备必须返还，即使用户累计支付金额已远超笔记本原价，所有权仍归惠普所有，此外惠普保留远程锁定设备权限。&lt;/p&gt;
+&lt;p&gt;作为补偿，惠普承诺用户每年可以升级到最新款硬件，并提供快速更换和更好的售后支持。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="惠普官方下场租电脑！RTX 5080笔记本月租近900元：设备永远不归用户" h="449" src="//img1.mydrivers.com/img/20260212/be4f44df-f409-41df-972d-c8dc0be74202.png" w="600"&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 04:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBVSWpTVFFtMHo3Y1cyX3JoY01IWlhWVzJuZ2J5cU5YZ3IyRDBSMmdpc1RHUDkxY3ltM25NNmhxcmZDSXhuWUIzZmhNbkwwc1BxZERTWS1QY3I</guid></item><item><title>完全是资源浪费！中芯国际：警惕AI时代最大的泡沫 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103934.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，近日，中芯国际联席首席执行官赵海军在财报电话会议上，对全球AI数据中心的盲目扩张发出警告，&lt;span&gt;&lt;strong&gt;称这种缺乏充分规划的建设热潮可能导致大量产能闲置，沦为纯粹的资源浪费，警惕AI时代最大的泡沫已然成型。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;赵海军表示，当前众多企业急于在一两年内建成相当于十年使用量的数据中心容量，却对这些设施的实际用途缺乏清晰思考。这一现象让人联想到2020年代初郊区兴建的大批数据中心，其中多数至今仍未找到租户，陷入闲置困境。&lt;/p&gt;
+&lt;p&gt;AI热潮催生了基础设施建设的疯狂竞赛。穆迪评级预测，未来五年全球AI相关基础设施支出可能超过3万亿美元，仅2026年一年，Alphabet、亚马逊网络服务、Meta和微软的资本支出就预计达6500亿美元。中国的阿里巴巴、腾讯、字节跳动等企业也在积极跟进，巨额投入背后，投资者的担忧正不断加剧。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;赵海军将当前的建设热潮类比为交通增长前就修建高铁、高速公路，强调基础设施应匹配未来需求而非盲目超前。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;历史教训值得借鉴，上世纪90年代末互联网泡沫时期，电信业巨资铺设的光纤电缆，在2002年泡沫破裂时利用率不足5%。而AI领域的风险更甚，数据中心所用AI芯片有明确保质期，Meta称其芯片有效寿命约5.5年，英伟达虽称六年前芯片仍在使用，但该公司每年都会推出新旗舰芯片，芯片贬值速度远超预期，有投资者认为其实际有效寿命不超过2至3年，若需求不及预期，浪费将难以挽回。&lt;/p&gt;
+&lt;p&gt;业内普遍认为，AI对各行业的渗透速度和影响程度仍是未知数，这也是AI泡沫论盛行的核心原因。&lt;/p&gt;
+&lt;p&gt;赵海军的警告并非否定AI前景，&lt;strong&gt;而是提醒市场回归理性，避免盲目跟风建设，唯有让基础设施建设与需求增长良性匹配，才能避免资源浪费，让AI技术真正赋能经济发展。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/2f6b2f2743854907a8941717e6207d1e.png" target="_blank"&gt;&lt;img alt="完全是资源浪费！中芯国际：警惕AI时代最大的泡沫" h="478" src="//img1.mydrivers.com/img/20260212/s_2f6b2f2743854907a8941717e6207d1e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 04:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0waEttYUM0Qnk0YW1JdC1pVkZxVFFJSWR1ZzM4amZrU2pIT085SGoxcUxPSWhnQlJBRnc4M3pYN2V3NHJnQWlpeUppRzFocFVKcmlDZ1ZDRlo</guid></item><item><title>体验完智谱刚刚发布的 GLM-5，我终于明白它为什么让硅谷猜破了头 - 36 Kr</title><link>https://m.36kr.com/p/3679762791182213</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;&lt;strong&gt;关于那个神秘的「Pony Alpha」模型的传言，已经在互联网发酵了一周。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;有人说它是 Claude 5 的马甲，也有人说它是某大厂的秘密武器。就在刚刚，靴子落地，谜底揭晓：这个代号「Pony Alpha」的新模型，&lt;strong&gt;正是智谱 AI 的春节大招——GLM-5。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,982" src="https://img.36krcdn.com/hsossms/20260212/v2_064ce6c1463b4bf59b0d52a5002bd41a@5091053_oswg323514oswg1080oswg982_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;智谱公众号截图&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;而且，它直接开源了。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;如果说 2025 年是 AI 学会写代码的一年，那么 2026 年开年，正如特斯拉前 AI 总监 Andrej Karpathy 所预言，&lt;strong&gt;我们或许即将进入「智能体工程」（Agentic Engineering）时代。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;只不过，比起 GPT-5.3-Codex、Claude Opus 4.6，头一个把这件事做成开源基础设施的，是国产模型 GLM-5。&lt;/p&gt;
+  &lt;p&gt;附体验地址：&lt;/p&gt;
+  &lt;ul&gt;
+   &lt;li&gt;Z.ai：https://chat.z.ai&lt;/li&gt;
+   &lt;li&gt;智谱清言APP/网页版：https://chatglm.cn&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h2&gt;&lt;strong&gt;骗过硅谷的 Pony Alpha，竟然是智谱 GLM-5 的马甲&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;现在的 AI 写个贪吃蛇或者俄罗斯方块，早就不是什么新鲜事了。要测，就得测点刁钻的。&lt;/p&gt;
+  &lt;p&gt;我们给 GLM-5 抛出了一个极其具体的物理模拟需求：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;创建一个交互式的 HTML、CSS 和 JavaScript 卫星系统模拟程序，该程序应模拟卫星向地面接收器发送信号的过程。模拟程序应显示一颗卫星绕地球运行，并周期性地发送信号，这些信号会被多个地面接收器接收。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,379" src="https://img.36krcdn.com/hsossms/20260212/v2_ee555d577c7b4271af836f4d5ec1d4d3@5091053_img_gif?x-oss-process=image/quality,q_100"&gt;&lt;/p&gt;
+  &lt;p&gt;它没有立刻给出代码，而是稍微「停顿」了一下（模拟思考过程），最终按照我的需求生成了一个 HTML 网页。屏幕上，卫星不仅仅在转圈，信号传输甚至带有符合多普勒效应视觉隐喻的波纹扩散动画。&lt;/p&gt;
+  &lt;p&gt;它理解了「模拟」二字背后的物理规律，而不仅仅是理解了「画图」这个动作。&lt;/p&gt;
+  &lt;p&gt;接着，我们加大了难度。&lt;/p&gt;
+  &lt;p&gt;X 上有个叫 @scaling01 的用户，给出了一个极高的评价：&lt;strong&gt;「Pony-Alpha 要么是 AGI，要么就是把我的 SVG 题目库给背下来了。」&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,674" src="https://img.36krcdn.com/hsossms/20260212/v2_dfeb9030af5f40a2aceb46a18a066060@5091053_oswg385842oswg1080oswg674_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;为了验证这一点，我们测试了一个极其抽象的 Python 任务：「可视化展示单行道中交通信号灯的工作原理，车辆以随机速率进入。」&lt;/p&gt;
+  &lt;p&gt;不到 3 分钟，一个动态的交通流模拟图出现了。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,347" src="https://img.36krcdn.com/hsossms/20260212/v2_8be4b7db5dff43349039c7fe4b132162@5091053_img_gif?x-oss-process=image/quality,q_100"&gt;&lt;/p&gt;
+  &lt;p&gt;逻辑可以说是严丝合缝：绿灯放行、红灯排队，车辆加速减速的随机性也模拟得很到位。&lt;strong&gt;不过，这个界面的审美……怎么说呢，确实有点「简陋」。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;甚至有网友 @anurudhsharmaa 用它一行提示词生成了一个全新的网站。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,276" src="https://img.36krcdn.com/hsossms/20260212/v2_15872aec7caa4974beb0941f81bc2cf2@5091053_img_gif?x-oss-process=image/quality,q_90"&gt;&lt;/p&gt;
+  &lt;p&gt;而网友 @zakarinoo7 生成了一个全功能的媒体播放器——支持 MP4/MP3 解码、播放列表管理，甚至连深色模式的 UI 都写好了，编译完只有 15MB。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,342" src="https://img.36krcdn.com/hsossms/20260212/v2_4ce2b1eeeae04596af810bb27c756689@5091053_img_gif?x-oss-process=image/quality,q_90"&gt;&lt;/p&gt;
+  &lt;p&gt;这一幕看得我心痒难耐。&lt;strong&gt;于是，我也再次通过 Claude Code ，让 GLM-5 给我打造打一个火柴人开放世界游戏。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;它没有急着写代码，它做了一个非常「人类」的动作，那就从技术栈、核心玩法、再到世界风格方面入手，逐步对接我的需求。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,567" src="https://img.36krcdn.com/hsossms/20260212/v2_f2b19458b78b4ab4bb76f05d4422bfe4@5091053_oswg150932oswg1080oswg567_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;并且在它「施工」的过程中，我还能像个挑剔的甲方一样，开始在原来的需求上得寸进尺，随时插入新的想法：&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,567" src="https://img.36krcdn.com/hsossms/20260212/v2_eed0e00b4b80400aa809335f86ef1105@5091053_oswg113936oswg1080oswg567_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;ul&gt;
+   &lt;li&gt;光跑图太无聊了，得有经济系统，地上随机刷金币&lt;/li&gt;
+   &lt;li&gt;加点动作元素吧，按 J 键射箭，按 K 键近战攻击&lt;/li&gt;
+   &lt;li&gt;捡到的东西放哪？再给我加个背包 UI，按 I 键唤出&lt;/li&gt;
+   &lt;li&gt;路边的火柴人不能是摆设，我要能和 NPC 对话&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;等到最终运行的时候，效果简直可以用「尽善尽美」来形容：&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,480" src="https://img.36krcdn.com/hsossms/20260212/v2_2802b82134674b75b2c32e82e3f685cb@5091053_img_gif?x-oss-process=image/quality,q_80"&gt;&lt;/p&gt;
+  &lt;p&gt;既然号称是系统架构师，在 GLM-5 上架官网后，我也顺手让其打造了一个 Mac 系统。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,440" src="https://img.36krcdn.com/hsossms/20260212/v2_25065537b2cb4966bbbfc96648f5c3fa@5091053_img_gif?x-oss-process=image/quality,q_90"&gt;&lt;/p&gt;
+  &lt;p&gt;虽然整体有些粗糙，但经典的屏幕背景，顶部状态栏的时间同步显示，底部 Dock 栏的图标排列都给「画」出来了。而且这上面的每一个应用，竟然真的都能打开。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;适配半个芯片圈，这才是 GLM-5 的「大杀招」&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;基准测试结果显示，GLM-5 在 Coding 与 Agent 能力上，取得开源 SOTA 表现。&lt;/p&gt;
+  &lt;p&gt;数据不会撒谎，在 SWE-bench-Verified 和 Terminal Bench 2.0 这两个公认最难的编程榜单中，GLM-5 分别拿下了 77.8 和 56.2 的高分，在真实编程场景的体感上，已经无限逼近 Claude Opus 4.5。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,735" src="https://img.36krcdn.com/hsossms/20260212/v2_eb24df9af41d4147afd0a11c748d8241@5091053_oswg188876oswg1080oswg735_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;GLM-5 凭什么能做到这一点？翻看官方报告，在一堆参数背后，我们找到了几个关键点：&lt;strong&gt;MoE 架构和异步强化学习（Asynchronous RL）。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;744B 的总参数量，激活参数只有 40B，这让它足够聪明又足够轻量。但真正的杀手锏是智谱构建的全新「Slime」框架。&lt;/p&gt;
+  &lt;p&gt;简单打个比方： 以前的模型训练像是在「考试」，做对一道题给一个分，模型为了拿高分拼命背题； GLM-5 的训练则像是「实习」，它在一个名为 Slime 的环境里，通过完成一个个完整的长程项目，在不断的反馈和交互中学习。&lt;/p&gt;
+  &lt;p&gt;此外，它还首次集成了&lt;strong&gt;DeepSeek Sparse Attention（稀疏注意力机制）&lt;/strong&gt;。这意味着在处理动辄几十万行代码的上下文时，它不仅不会「迷路」，还能大幅降低部署成本。&lt;/p&gt;
+  &lt;p&gt;但最让我感慨的，是官方公告底部那串长长的致谢名单。国产大模型已经可以在国产芯片集群上，实现高吞吐、低延迟的稳定运行了。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;华为昇腾、摩尔线程、寒武纪、昆仑芯、沐曦、燧原、海光……&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,351" src="https://img.36krcdn.com/hsossms/20260212/v2_a958999e2c824e9dada378a798d4e618@5091053_oswg27710oswg1080oswg351_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;有种可汗大点兵的即视感&lt;/p&gt;
+  &lt;p&gt;这几乎是中国半导体行业的「半壁江山」，这意味着，GLM-5 的开源不仅仅是软件层面的胜利，它标志着国产 AI 生态——从底层的芯片算力，到中间的框架，再到上层的模型逐渐跑通了一个完整的闭环。&lt;/p&gt;
+  &lt;p&gt;而随着 GLM-5 的开源，以及它与 Claude Code、OpenCode 等主流工具的打通，我们或许正站在软件工程 2.0 的门槛上。&lt;/p&gt;
+  &lt;p&gt;特斯拉前 AI 总监 Andrej Karpathy 预言的「智能体工程」时代，比想象中来得更快。在未来，你可能不需要再逐行砌砖。你只需要定义系统，定义审美，定义什么是「好玩」和「有用」。&lt;/p&gt;
+  &lt;p&gt;然后，看着 GLM-5 这样的大模型像包工头一样，指挥着底层的算力把高楼大厦盖起来。&lt;/p&gt;
+  &lt;p&gt;传统的「码农」时代，可能真的要结束了。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;但别慌，这不代表人类没用了。相反，当 AI 包办了实现的繁琐，你的审美、你的判断力、以及你提出一个好问题的能力，将成为人类最后的、也是最坚固的护城河。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/zwlf14dX5yKH0g-cmBEYQQ"&gt;“APPSO”&lt;/a&gt;，作者：发现明日产品的APPSO，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Thu, 12 Feb 2026 03:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9CTXNwSExaOHhkX0tVdGlXNmt0bmlzSmRuT1I3Nndxend3LVRCSmtnemlwVHg5eVFaTjkzRFk5M0NLYXREVElSUUktSHE5Zw</guid></item><item><title>Intel Nova Lake竟混用台积电2nm！面积暴涨 要贵死了 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103906.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月12日消息，Panther Lake只是用于笔记本移动端，Intel的下一代桌面级处理器，要等最快今年底的Nova Lake(也有移动版)，而且据说会首次加入大容量三级缓存(bLLC)，对标AMD X3D。&lt;/p&gt;
 &lt;p&gt;奇怪的是，&lt;strong&gt;Panther Lake首发了Intel 18A工艺，Nova Lake又改了，还会同时引入台积电N2 2nm，混合使用。&lt;/strong&gt;&lt;/p&gt;
@@ -23,7 +310,264 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 03:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9uZHVEWUhLaUFRdWtrZE9uMTAtM0ZiZjYtNUtaRkVfc0RIbFhfTzd1MDZoRXhOWWN3NUJ1Nm1sZXYyMDRHNTdaSlUwWHlGSmFYVEdfMzJjLXI</guid></item><item><title>知名对冲基金孤松资本：AI泡沫还要等到OpenAI上市，不博弈短期而是思考3-5年的世界格局 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3765568</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 12 Feb 2026 03:25:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9sRlBTdDR0RUZIeTdYMVRyZGtNYzhXR3pkZlpTZlY1RmdJYlFxWU9DaTdOVEg0V0JPVy1sVnNfYnJlWGpmMm1hTlRGT2N0ZXNsS0Jv</guid></item><item><title>内存价格涨疯了：苹果受影响最小 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103892.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 03:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9uZHVEWUhLaUFRdWtrZE9uMTAtM0ZiZjYtNUtaRkVfc0RIbFhfTzd1MDZoRXhOWWN3NUJ1Nm1sZXYyMDRHNTdaSlUwWHlGSmFYVEdfMzJjLXI</guid></item><item><title>知名对冲基金孤松资本：AI泡沫还要等到OpenAI上市，不博弈短期而是思考3-5年的世界格局 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3765568</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 12 Feb 2026 03:25:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9sRlBTdDR0RUZIeTdYMVRyZGtNYzhXR3pkZlpTZlY1RmdJYlFxWU9DaTdOVEg0V0JPVy1sVnNfYnJlWGpmMm1hTlRGT2N0ZXNsS0Jv</guid></item><item><title>十年磨一剑！2028款保时捷Panamera路试谍照首曝：智驾硬件全新升级 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103903.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;十年磨一剑！2028款保时捷Panamera路试谍照首曝：智驾硬件全新升级&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-12 11:17:23  出处：快科技 作者：王一  编辑：王一 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1103903-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，&lt;span&gt;&lt;strong&gt;近日，2028款保时捷Panamera的测试谍照曝光，新车分别在瑞典北部冰雪公路与德国偏远地区开展测试，本次改款将对智能驾驶进行全面升级。&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;
+&lt;br&gt;
+从谍照来看，新车在挡风玻璃顶部、内后视镜后方新增了传感器模块，这套硬件也是纯Macan首发搭载的安全辅助系统配置。&lt;br&gt;
+&lt;br&gt;
+外观方面，新车覆盖有黑色伪装贴膜，前保险杠两侧进气口被重点遮挡，内部新增倾斜式格栅条设计。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/45693545-e478-4080-bd27-69587591b835.png" target="_blank"&gt;&lt;img alt="十年磨一剑！2028款保时捷Panamera路试谍照首曝：智驾硬件全新升级" h="337" src="//img1.mydrivers.com/img/20260212/S45693545-e478-4080-bd27-69587591b835.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;灯组也是本次改款的核心变化之一，灯组轮廓仍延续类似菱形的经典布局，整体改动不大，但内部结构已全面调整，&lt;strong&gt;大灯组内部的四点式光源与日行灯均经过重新设计，&lt;/strong&gt;立体感显著提升。&lt;/p&gt;
+&lt;p&gt;车身侧面，新款Panamera延续了经典溜背式造型与无框车门设计。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/7c903672-b555-4008-81d7-432ca1c8de4a.png" target="_blank"&gt;&lt;img alt="十年磨一剑！2028款保时捷Panamera路试谍照首曝：智驾硬件全新升级" h="337" src="//img1.mydrivers.com/img/20260212/S7c903672-b555-4008-81d7-432ca1c8de4a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;车尾部分，后保险杠边角新增部件并优化轮廓，四出排气中间区域也完成了结构更新，&lt;strong&gt;且尾灯整体依旧偏向扁平造型，大概率将继续采用贯穿式设计。&lt;/strong&gt;&lt;br&gt;
+&lt;br&gt;
+据悉，2028款Panamera除智驾硬件外，还将对数字屏幕、车机软件、界面设计及互联安全配置进行全面升级。&lt;br&gt;
+&lt;br&gt;
+&lt;strong&gt;动力方面，新车预计将延续现款车型的动力总成，依旧提供燃油版和插混版两种选择。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，作为2016年换代后的又一次重大升级，新车预计2027年底发布，2028年正式上市。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/865e34bc-1008-412d-a591-c2c76966a3d4.png" target="_blank"&gt;&lt;img alt="十年磨一剑！2028款保时捷Panamera路试谍照首曝：智驾硬件全新升级" h="337" src="//img1.mydrivers.com/img/20260212/S865e34bc-1008-412d-a591-c2c76966a3d4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：王一&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 03:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5IR2xQX01JaTZJVWJMc194QmtBWVJ1NzlvLWM3N3Z2bGQ4QXN1NExLcE5VZHhYcGc3N0VvMEk0aEMybzlKMUw2Tzd1N3JOTlBYS3dvV1FuV1o</guid></item><item><title>高通被取代！iPhone 18 Pro首发C2基带：支持5G卫星连接 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103901.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;高通被取代！iPhone 18 Pro首发C2基带：支持5G卫星连接&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-12 11:15:14  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1103901-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，苹果计划在今年秋季亮相的iPhone 18 Pro和iPhone 18 Pro Max上，首发搭载其备受期待的自研基带芯片C2，这一举动标志着高通基带在苹果手机上正式退场。&lt;/p&gt;
+&lt;p&gt;据相关报道显示，苹果C2基带芯片的开发工作早在去年iPhone 16e发布后不久就已经紧锣密鼓地展开。相比前代产品，这颗芯片最核心的升级在于全面支持毫米波与sub-6GHz网络。&lt;/p&gt;
+&lt;p&gt;更重要的是，它引入了对NR-NTN技术的支持。这是一项革命性的通信标准，&lt;span&gt;&lt;strong&gt;它允许iPhone在没有传统基站信号的情况下，直接连接卫星来访问互联网。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;随着这项技术的落地，iPhone 18 Pro和iPhone 18 Pro Max将成为全球首批支持这种新型卫星连接模式的智能手机。&lt;/strong&gt;简单来说，苹果C2基带与NR-NTN标准的结合，被业内视为5G卫星连接技术的一次重大变革，它彻底打破了地理环境对通信的限制。&lt;/p&gt;
+&lt;p&gt;回溯以往，苹果从iPhone 14系列开始就引入了卫星通信功能。但在当时的条件下，该功能主要用于紧急救援，用户在偏远地区通过卫星发送信息与外界取得联系。而即将到来的5G卫星连接则完全不同，它利用庞大的低轨道卫星基础设施，填补了地面蜂窝网络的空白。&lt;/p&gt;
+&lt;p&gt;在实际使用中，iPhone 18 Pro系列将能够把每一颗运行中的低轨道卫星视为一个普通的移动基站。这意味着用户不仅能发送求救信号，甚至可以在荒郊野外像往常一样浏览网页或收发邮件，实现真正的全场景互联网访问。&lt;/p&gt;
+&lt;p&gt;不过需要指出的是，受限于各地法律法规及卫星运营商的覆盖范围，这项强大的功能在发布初期仅在部分地区开放。根据目前的供应链消息，&lt;strong&gt;美国和加拿大极有可能是首批支持5G卫星互联网接入的地区。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260212/076d43319f19488bb6f22e2707646313.jpg" target="_blank"&gt;&lt;img alt="高通被取代！iPhone 18 Pro首发C2基带：支持5G卫星连接" h="399" src="//img1.mydrivers.com/img/20260212/s_076d43319f19488bb6f22e2707646313.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 03:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4tLVotS3V1MzJrakhFcWpDNFY5VmhZOGNBOE1uUk1WMUpQaHdXMXYtdlVlUDVJUXMxTkc1Z1RMdHlvcVE3bXR0d2ZZTHVsTnhidDVOWGd1Ny0</guid></item><item><title>RTX 5090开机瞬间火花带闪电！摄像头记录下惊险一幕 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103899.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;RTX 5090开机瞬间火花带闪电！摄像头记录下惊险一幕&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-12 11:00:45  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1103899-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月12日消息，RTX 5090等显卡接口烧熔的事故见过不少，但开机即起火实属罕见，B站用户“晚睡等于早死”上传的&lt;a class="f14_link" href="https://www.bilibili.com/video/BV1VaFQzpEUS/?spm_id_from=888.80997.embed_other.whitelist&amp;amp;bvid=BV1VaFQzpEUS&amp;amp;vd_source=51fa8dfaa063bf6b6c9d16b05f5c7e94" target="_blank"&gt;视频&lt;/a&gt;，&lt;span&gt;&lt;strong&gt;就记录了极其罕见的一幕，其RTX 5090主机在开机瞬间，显卡竟直接喷出了明火。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据了解，该用户当时刚刚更换了一台1300W的大功率电源，在首次开机时出于习惯特意用摄像头记录了过程。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/bfde7ee9-bc17-4db7-a354-7ec8c165c27b.png" target="_blank"&gt;&lt;img alt="RTX 5090开机瞬间火花带闪电！摄像头记录下惊险一幕" h="337" src="//img1.mydrivers.com/img/20260212/Sbfde7ee9-bc17-4db7-a354-7ec8c165c27b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;视频显示，就在电源启动的刹那，显卡多个部位同时冒出火花并伴有明火，虽然用户反应极快切断了电源，但这块顶级旗舰卡显然已经因严重的短路报废。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260212/22cded08-4c83-490e-93d4-8b22c8fe0a58.png" target="_blank"&gt;&lt;img alt="RTX 5090开机瞬间火花带闪电！摄像头记录下惊险一幕" h="336" src="//img1.mydrivers.com/img/20260212/S22cded08-4c83-490e-93d4-8b22c8fe0a58.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;unikoshardware认为，这种多点起火的现象极不寻常，很可能是涉及显存的供电模块发生了短路。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;幸运的是，除了显卡损毁及周边硬件留下的灼烧痕迹外，该用户的其他核心配置得以幸存，系统仍能正常运行。&lt;/p&gt;
+&lt;p&gt;最令人无奈的是，该用户恐怕无法通过官方渠道进行售后维修，因为RTX 5090在中国大陆属禁售产品，仅RTX 5090D及V2版本享有官方保修。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 12 Feb 2026 03:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE55SGJaYW5BbkYxc3k1cFhKdnc2WnNKVWxHX3lCVEFoSUdDQzZtdFotNmVOMmtFSXpudHhpeElYMWFxVlpVLWdJY3lfWEZiV3RKQ3Z5Vy1Ob0o</guid></item><item><title>库克退休前，能见到 Al Siri 上线吗？ - 36 Kr</title><link>https://m.36kr.com/p/3679710913425289</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;blockquote&gt;
+   &lt;p&gt;&lt;strong&gt;明日&lt;/strong&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;strong&gt;复明日&lt;/strong&gt;&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;毫不意外地，苹果计划在今年春季发布的 AI Siri，又要跳票了。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;彭博社从内部人士获悉，AI Siri 上线日期要继续往后推，最早也得是 iOS 26.5 版本，而且全部功能还要慢慢更新补齐，战线甚至会拉到 9 月 发布的 iOS 27——上个月，苹果的内部计划还是， 在今年 3 月的 iOS 26.4 正式推出 AI Siri。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;AI Siri 最早在 2024 年 6 月的 WWDC 大会上官宣，能够让用户通过语音精确控制 iPhone 上的 App，最初承诺于 2025 年初完成落地，随后苹果内部将其推迟到 2026 年 3 月。&lt;/p&gt;
+  &lt;p&gt;现在看来，这个目标对苹果来说还是太吃力了。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_cb8328afc2b547e085e6fe7e416d39bd@000000_oswg58563oswg1024oswg682_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;速度太慢，不够准确，上线日期还得延&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;根据知情人士透露，内部测试反馈很直白：&lt;strong&gt;Siri 有时理解不对，有时处理太慢；准确性也不够稳，用户语速快一点还会被打断；遇到复杂查询，需要更长推理时间时，表现更差。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;新 Siri 偶尔还会「退回」到它现有的 ChatGPT 集成，明明按设计应该用苹果自家的能力完成请求，却又把球踢给 OpenAI。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_48040d5510434ec38aad4d1d1e399db6@000000_oswg35354oswg1000oswg600_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;▲ 目前 Siri 的 ChatGPT 集成&lt;/p&gt;
+  &lt;p&gt;直到去年年末，这个新 Siri 的测试版本运行速度依旧十分缓慢，参与开发的工作人员都认为发布时间要继续往后推迟几个月了。&lt;/p&gt;
+  &lt;p&gt;苹果高管原本还想坚持春季上线的目标，甚至直到这几周都是如此，但现在的情况来看，跳票是板上钉钉的事情了。&lt;/p&gt;
+  &lt;p&gt;最近，苹果告知工程师，使用即将发布的 iOS 26.5 版本来测试 Siri 的新功能，这意味着功能的上线时间再一次被推迟。&lt;/p&gt;
+  &lt;p&gt;一些已经在 WWDC 上发布的功能，甚至还可能被直接砍掉，比如 Siri 深层访问个人数据的能力，就是发布会上演示的让 Siri 搜寻旧短信并找出聚餐时间的场景。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_a4ea9c932ccc4a57a7e9cf9e4beb6b98@000000_oswg35807oswg1024oswg570_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;iOS 26.5 的内部版本里出现了一个设置开关，允许员工打开这个功能的「预览」。这个词很危险，它基本等同于一个警告：首发可能不完整，稳定性也不能保证。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;另一个不尽如人意的功能，甚至是 AI Siri 的杀手级能力—— App Intents 系统&lt;/strong&gt;，&lt;strong&gt;能够用语音控制 Siri 实现应用内操作，例如让 Siri 找一张特定图片，进行编辑之后发送给联系人。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_35c7ff0a687e4734b19748dab0875b08@000000_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;测试 iOS 26.5 的员工表示，这个功能确实已经有了早期版本，不过谈不上可靠。&lt;/p&gt;
+  &lt;p&gt;对于苹果来说，AI Siri 必须要实现 100% 的可靠性和准确性，但现在看来依旧任重道远。&lt;/p&gt;
+  &lt;p&gt;从报道来看，和 Google 达成合作，使用其 Gemini 模型和云技术构建苹果基础模型，也给苹果增加了新的工作量，目前苹果正在将 Gemini 的技术整合到自己原有的平台上。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_39fe22688421439989b8f40c67461125@000000_oswg331462oswg1024oswg657_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;除了 AI Siri，iOS 26.5 预计还会包含两个新的 AI 功能：全新的网络搜索工具和自定义图像生成功能。这些功能也曾在 iOS 26.4 版本中进行了测试。&lt;/p&gt;
+  &lt;p&gt;网络搜索功能就是此前被多次爆料的苹果版「Perplexity」AI 搜索引擎，允许用户从网络搜索信息，生成综合的报告和信息列表，以及网页链接。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_d894bebf959a4232902dc8528c2e0801@000000_oswg57682oswg1024oswg556_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;新的图片生成功能使用了目前「图乐园」同款引擎，但预计会更加强大，自由度也更高，只是测试人员也表示这个功能也遇到了稳定性的问题。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_6b8356102daf4f7d917534dfe5ff7c9e@000000_oswg42558oswg930oswg620_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;两年前发布的 AI Siri 连影子都还没见到，苹果已经在盘算下一代 Siri 了：&lt;strong&gt;在 iOS 27/iPadOS 27/macOS 27 中，Siri 将借助 Gemini 相关技术，变得更像一个聊天机器人。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;这也意味着，今年 9 月的新系统发布会上，苹果一边得把两年前的功能补齐，一边还要端出同样重磅分量的更新。摊子一下子铺得这么大，现在的苹果能不能完成好，说实话，很难不替他们捏一把汗。&lt;/p&gt;
+  &lt;p&gt;这个代号为「Campo」的项目，旨在将 AI 深度集成苹果操作系统之中，还会提供类似 ChatGPT 的界面和功能，届时可能还会有一个独立的「Siri 应用」，用户可以管理之前和 Siri 的聊天记录。&lt;/p&gt;
+  &lt;p&gt;苹果还计划在邮件、日历和 Safari 浏览器等第一方应用中，引入新的 Siri 引擎，实现更强的搜索和数据管理能力。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;苹果的坚持和挣扎&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;屡次跳票、推迟的原因，很可能与苹果一直以来严格的隐私保护立场有关。&lt;/p&gt;
+  &lt;p&gt;在上周的一次员工会议中，软件工程主管 Craig Federighi 再一次强调，个性化的 AI 绝对不能泄露用户数据。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_5822301bd3c240dfb85dcb94d55b621c@000000_oswg35281oswg1024oswg576_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;▲ Craig Federighi&lt;/p&gt;
+  &lt;p&gt;Federighi 认为，AI 行业标准是将用户的数据发送到服务器保存，而背后的公司会将其用于训练，但苹果会打破这个惯例，在 AI 领域「引领潮流」：AI 数据只会存在于本地，或者保护隐私的服务器上，苹果训练 AI 依赖授权信息和合成数据，而不是用户的真实个人数据。&lt;/p&gt;
+  &lt;p&gt;他相信这种做法也能为用户提供一种优秀的 AI 体验，并且最终会被整个行业采用。&lt;/p&gt;
+  &lt;p&gt;库克也在同一场会议上透出口风：苹果正在内部推进新的数据中心芯片研发，目的不止是补强 AI 算力，更是为了搭出一套更「苹果式」的、为自家设备量身定制的数据中心方案。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_0a4deff8d9d44ef39955a111a151320d@000000_oswg30993oswg1024oswg682_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这很可能指向代号「Baltra」的芯片研发项目。为了既守住隐私这条高压线，又把模型能力拉上去，苹果接下来可能会走一条很现实的路线：在自家的芯片和服务器上，跑其他家的大模型。&lt;/p&gt;
+  &lt;p&gt;虽然设想很美好，背后也是处于对用户隐私保护的良苦用心，但现阶段，AI Siri 迟迟未能端上桌的情况，更加打击用户和行业对苹果的信任——尤其是那些购买了 iPhone 16 系列，却到现在还没用上当时广告宣传功能的消费者。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260212/v2_e33a9ae0c4a942a1925f34fe1d7740da@000000_oswg53609oswg1024oswg640_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;▲ 苹果的 iPhone 16 AI Siri 广告&lt;/p&gt;
+  &lt;p&gt;甚至对于苹果自己，这块烫手山芋还在牵动更大的棋盘。围绕 AI Siri 构建的智能家居新品，全部都因为相关功能的推迟，只能保持按兵不动，而这却是苹果雄心勃勃的下一个业务版图。&lt;/p&gt;
+  &lt;p&gt;与此同时，苹果的 AI 团队在去年经历了一次严重的人才流失，约数十名核心成员跳槽：苹果基础模型团队负责人、Siri 智能搜索项目负责人投奔 Meta，多位关键研究员也出走 OpenAI、xAI、Cohere。&lt;/p&gt;
+  &lt;p&gt;根据多方预测，苹果 CEO 蒂姆 · 库克很有可能会在今年卸任，能不能在任期内看到 AI Siri 完整落地，恐怕都要打一个问号。&lt;/p&gt;
+  &lt;p&gt;iPhone 17 系列的热卖，在很大程度上替苹果遮盖了 AI 进展落后的尴尬。确实，靠着 iPhone 这张王牌，苹果还能把领先优势延续很久；但如果手里始终没有自己的 AI 底牌，未来的牌桌上，苹果未必还能稳稳占着一个位置。&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MjgzMTAwODI0MA==&amp;amp;mid=2652444646&amp;amp;idx=1&amp;amp;sn=0d04863251a3e3e1e5a69e6229d48503&amp;amp;chksm=9ae04995bcffebdaabbd79faea2ea6575a73c97de5aec8057eb77e8efc5d052f745626cd6f90&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“爱范儿”（ID：ifanr）&lt;/a&gt;，作者：发现明日产品的爱范儿，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Thu, 12 Feb 2026 02:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBZc3ZwMEJYX050UnlQMVIxQlFnWmJjVFZBTk9BU3VTa2NZcEdBM1ZENHZsdEhvblp1RGNWdElMS2ZZOEFNa1RmLUE4QkpzQQ</guid></item><item><title>内存价格涨疯了：苹果受影响最小 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103892.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月12日消息，根据研究机构TrendForce集邦咨询发布的最新报告，全球内存成本正处于飞速上涨的阶段，目前已经占据了智能手机BOM成本的近一半。在这场涨价潮中，苹果在采取了一系列精密的成本管理措施后，目前依然处于相对有利的地位。&lt;/p&gt;
 &lt;p&gt;TrendForce在报告中指出，内存成本在智能手机整体BOM中的占比，&lt;span&gt;&lt;strong&gt;已经从历史上的10%-15%飙升至目前的30%-40%。&lt;/strong&gt;&lt;/span&gt;其中8GB+256GB配置的成本在2026年第一季度同比上涨了近200%，与去年同期相比大约翻了三倍。&lt;strong&gt;随着内存价格的持续走高，这一占比甚至有望逼近50%的大关。&lt;/strong&gt;&lt;/p&gt;
@@ -1203,7 +1747,85 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 11 Feb 2026 21:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5LRHRBZ0RQcmpNQkp1MW5WY1Y3WEJSeW5oOVhITFNOLUxpQUhtVjdPTHBNN21iaHBWTllxOG9mUGdxcTFIdUFqeWhrR29CMUdXdWxjcEhGcFM5d25OdEFpV284TEJYRVBNSjNEenNxS2d3M25pMjJHU2VB</guid></item><item><title>中印燃煤发电量半世纪来首次同步减少 - 日经中文网</title><link>https://cn.nikkei.com/industry/ienvironment/61425-2026-02-12-05-00-07.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="contentDiv" class="overflow"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 11 Feb 2026 21:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5LRHRBZ0RQcmpNQkp1MW5WY1Y3WEJSeW5oOVhITFNOLUxpQUhtVjdPTHBNN21iaHBWTllxOG9mUGdxcTFIdUFqeWhrR29CMUdXdWxjcEhGcFM5d25OdEFpV284TEJYRVBNSjNEenNxS2d3M25pMjJHU2VB</guid></item><item><title>苹果公司推出新版Siri的计划再遇阻 多项备受期待的功能或推迟发布 - 新浪网</title><link>https://finance.sina.com.cn/world/2026-02-12/doc-inhmnxnt7172657.shtml?finpagefr=p_108</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    
+&lt;p&gt;　　苹果公司筹划已久的Siri虚拟助手升级在最近几周的测试中遇到问题，多项备受期待的功能可能会推迟发布。&lt;/p&gt;
+&lt;p&gt;　　据知情人士透露，苹果原计划将这些新功能纳入定于3月发布的更新系统iOS 26.4中，但目前正考虑在未来的版本中将其陆续推出。这意味着，至少部分功能可能要等到5月iOS 26.5甚至9月iOS 27发布才会问世。&lt;/p&gt;
+&lt;p&gt;　　苹果的Siri更新过程漫长而艰难。该公司最早于2024年6月宣布计划对Siri进行重大改版。当年，这家iPhone制造商展示了多项新能力，使Siri能够调用个人数据和屏幕内容，从而更好地完成用户请求。&lt;/p&gt;
+&lt;p&gt;　　升级后的Siri还将允许用户通过语音精确控制苹果及第三方应用程序。所有这些新功能原定于在2025年初前推出。&lt;/p&gt;
+&lt;p&gt;　　去年春季，苹果推迟了发布时间，称新版Siri将于2026年发布，但未公布更具体的时间表。不过在内部，苹果将目标定在2026年3月与iOS 26.4同步推出，这一目标甚至在上个月仍未改变。&lt;/p&gt;
+&lt;p&gt;　　但知情人士表示，测试过程中发现软件出现新的问题，导致公司再次推迟计划。Siri有时无法正确处理查询请求，或处理时间过长。由于讨论尚属私密，知情人士要求匿名。&lt;/p&gt;
+&lt;p&gt;　　目前情况仍存在变数，苹果的计划可能进一步调整。总部位于加州库比蒂诺的苹果公司发言人拒绝置评。&lt;/p&gt;
+&lt;p&gt;　　受该消息影响，苹果股价周三回吐部分涨幅。截至收盘，苹果股价上涨0.7%，收于275.50美元，此前涨幅一度高达2.4%。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪网</author><pubDate>Wed, 11 Feb 2026 21:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijwFBVV95cUxOZDZWcUtncExMN3ZUV1Mwai1uR1dkOHE2WDE3R3o0SDc3QzdmUmFUS0MwalRjV3Vpb1QzUEp2V19FVExIRkpucXBsZDR6UURTTE1CcGlPUk9WTU84b3gxVlU4bENXZHFoZ0IwQ0R4T1V4NnY3dEZIZkVTelAtUzJuLU5yVVk3SFMzUGhNM19IWQ</guid></item><item><title>中印燃煤发电量半世纪来首次同步减少 - 日经中文网</title><link>https://cn.nikkei.com/industry/ienvironment/61425-2026-02-12-05-00-07.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="contentDiv" class="overflow"&gt;
 
 &lt;table border="0"&gt;&lt;colgroup&gt;&lt;col&gt;&lt;/colgroup&gt;
 &lt;tbody&gt;
@@ -2988,379 +3610,4 @@
   &lt;p&gt;事实上，漫剧本质上仍然是短剧生意，真人短剧走过的路，AI漫剧也需要再走一遍。区别在于，在AI加持下，一些更具创意和影响力的创作者，将获得更强大的内容杠杆，加速产出更多优质内容。&lt;/p&gt;
   &lt;p&gt;本文来自微信公众号 &lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzAwMjE1NjcxMg==&amp;amp;mid=2654838099&amp;amp;idx=1&amp;amp;sn=ca8116c20874bb3ac1863cf30bd7284e&amp;amp;chksm=8008e6d864bb9931dd9629d74300c6725a07b6ddfd58a80b2c83f05a7b3853afb27202123e49&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“新榜”（ID：newrankcn）&lt;/a&gt;，作者：云飞扬1993 云飞扬1993，36氪经授权发布。&lt;/p&gt;
  
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Wed, 11 Feb 2026 07:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBxUnEyQjA1d0F3UGZSZWhDaGpnZXhuaHRTeTVJeHFJWC1VdmJJZ2dySmtBN3JZcUxrZi1PYnNXNXpmdVcwTXBzMndKM3U4UQ</guid></item><item><title>光纤，会是下一个存储吗？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3765493</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 11 Feb 2026 07:11:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5WVnpoT0JMMDVLamQ0YW9aNExJQzZiSjZfQWZOMlVsTUg2dnJzVi10ZmpteC1xWC1RLWNoejdubnJoR180SHdTazBlWmxpNVdSTHRN</guid></item><item><title>讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103720.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月11日消息，&lt;span&gt;&lt;strong&gt;今天，科大讯飞正式发布了星火X2大模型，基于全国产算力训练，整体能力对标国际顶尖模型水平。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;据介绍，从X1.5到X2，讯飞星火大模型此次升级有两大亮点，&lt;strong&gt;首先是通用能力全面升级，整体能力对标国际顶尖模型水平，在数学、推理、语言理解、智能体等能力上媲美国际最优。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;同时，星火X2的130+多语言综合能力继续提升，拉美、东盟等地区重点语种效果保持业界领先水平。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第二个亮点则是依托星火X2的算法突破、行业高质量数据集以及专业思维链的强化学习，星火行业大模型持续升级，产品应用方案取得显著进步。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;星火X2通过量化单台昇腾服务器即可运行，采用293B MoE稀疏架构，结合权重量化、低精度KVCache、VTP、分层通信等创新，实现了国产大EP并行部署，推理性能相比X1.5提升50%。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;通用大模型核心能力效果对比&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/67794198-0aaf-4778-8ffa-0b4691cab2bb.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="329" src="//img1.mydrivers.com/img/20260211/S67794198-0aaf-4778-8ffa-0b4691cab2bb.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;外部公开高难任务效果对比&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/c5b0a24d-6953-4bac-81bc-9aab158ee518.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="363" src="//img1.mydrivers.com/img/20260211/Sc5b0a24d-6953-4bac-81bc-9aab158ee518.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;实际测试中，面对曾难倒国内主流模型哈佛-麻省理工数学锦标赛里的一道英文题目，星火X2在分析思考后，不仅给出了正确答案，还给出了详尽的解题过程。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/38c898f3-1464-4f57-af16-cb8322947f9d.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="269" src="//img1.mydrivers.com/img/20260211/S38c898f3-1464-4f57-af16-cb8322947f9d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/97dc5452-1a19-4a98-b91f-e7887d9e96ef.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="269" src="//img1.mydrivers.com/img/20260211/S97dc5452-1a19-4a98-b91f-e7887d9e96ef.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;西班牙语数学题：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/a7e13cc9-b812-49b3-916b-0ef23bf137a8.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="269" src="//img1.mydrivers.com/img/20260211/Sa7e13cc9-b812-49b3-916b-0ef23bf137a8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/f8bb7240-3fce-4e23-b92e-f3f925940645.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="269" src="//img1.mydrivers.com/img/20260211/Sf8bb7240-3fce-4e23-b92e-f3f925940645.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;依旧是快速给出详细解题过程以及正确答案。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;至于实用性方面，星火行业大模型持续升级，在教育、医疗、司法、汽车交互、企业智能体应用等关键场景表现一新，在功能和效果层面实现全面升级。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;星火医疗大模型借助X2底座，核心能力实现全面提升，基于居民健康档案的智能健康分析、智能报告解读、运动饮食建议、辅助诊疗、智能用药审核等关键任务上，模型能力均显著超越DeepSeek V3.2、GPT-5.2和Qwen3-Max。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/11d4b91e-b4dc-4567-b667-6eb5920ab61a.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="223" src="//img1.mydrivers.com/img/20260211/S11d4b91e-b4dc-4567-b667-6eb5920ab61a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在此基础上，“讯飞晓医”APP各项能力全面升级，多轮主动问诊、多轮咨询问答、问用药、检查检验单解读、体检报告单解读等健康咨询任务在业界持续保持显著领先。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/489d1e44-a4a1-4904-9026-b84305445b50.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="259" src="//img1.mydrivers.com/img/20260211/S489d1e44-a4a1-4904-9026-b84305445b50.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;教育层面也借助星火X2底座实现全面升级，步骤级批改、错因定位等技术进一步扩大全球领先优势，听故事业界首发错因贯穿的个性化学习能力，推动AI学习机等产品实现更精准的自主学习闭环，进一步提升孩子学习兴趣与学习效率。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/4b09fca5-b79a-4dec-b501-190967eca886.png" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="189" src="//img1.mydrivers.com/img/20260211/S4b09fca5-b79a-4dec-b501-190967eca886.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;面向汽车智能座舱的星火中小尺寸模型同步升级，智能交互实车评测行业全面领先，模糊意图效果从完全不可用达到基本好用，实车评测业内全面领先&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260211/f18c25a1-23ad-4a0d-b0d5-e962bc3b391e.png" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="380" src="//img1.mydrivers.com/img/20260211/Sf18c25a1-23ad-4a0d-b0d5-e962bc3b391e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;星辰Agent平台全新升级，进一步强化了“会思考能执行”的精品智能体构建能力。智能体数量已经超过130万，作为企业级智能体平台，在复杂行业场景任务上进一步解决用户关键刚需。&lt;/p&gt;
-&lt;p&gt;星火X2的最新能力可在讯飞星火网页版和APP体验，全新API也已上线讯飞开放平台，星火APP5.2.0新版本同步上线。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260211/d785d102781347efba0f078079739c74.jpg" target="_blank"&gt;&lt;img alt="讯飞星火X2大模型正式发布！基于全国产算力、对标国际顶尖模型" h="350" src="//img1.mydrivers.com/img/20260211/s_d785d102781347efba0f078079739c74.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 11 Feb 2026 07:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9zTXI1RDhER1dTZ3hERzV3S2F0aUgxQTFYQndwUFBKMzQzTFd1dEhSNERxTW9fQTJNYTZrNVVXemxTUG5GY0t3T0lfQnZSYzBJV2FHMjJNcjU</guid></item><item><title>马斯克身边华人离职，受OpenClaw刺激了？ - 36 Kr</title><link>https://m.36kr.com/p/3678466030023431</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p&gt;&lt;strong&gt;24小时内，两位华人离开xAI。而且都有奔向“超级个体”的可能性。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;吴宇怀（Tony Wu）和Jimmy Ba均是xAI初创团队成员。&lt;/p&gt;
-  &lt;p&gt;不管是去年2月发布Grok3，还是7月发布Grok4，发布会上吴宇怀都是直接坐在马斯克旁边，占据着“C位”的。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,415" src="https://img.36krcdn.com/hsossms/20260211/v2_f1169762a8284c0c94e0fcc1a52fdea8@6119835_oswg265271oswg1080oswg415_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;吴宇怀没有给出明确的离职原因，发布的消息非常客气。&lt;/p&gt;
-  &lt;p&gt;Jimmy Ba紧随其后，就在几个小时前发布消息，称这是在xAI的“最后一天”。&lt;/p&gt;
-  &lt;p&gt;当吴宇怀占C位的时候，Jimmy Ba也往往就在身旁。他在业内是知名学者，在xAI直接向马斯克汇报，是华人成员中层级最高的一位。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;有意思的是，吴宇怀和Jimmy Ba都在离职信息里，表达了对未来的期待。吴宇怀称“一支配备人工智能的小团队可以移山填海”，Jimmy Ba则认为“我们正迈向一个在正确工具加持下生产力提升100倍的时代。”&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;这不禁让人想到当下大火的OpenClaw，及其所代表的“超级个体”时代。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;近期已经有3位华人核心人才离开，在前不久，杨格（Greg Yang）也因为身患莱姆病而选择离职。&lt;/p&gt;
-  &lt;p&gt;xAI在创建的时候，有12名“创始团队”成员，加上最新离开的吴宇怀，已经损失了6人，占半数。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;01 那个坐在马斯克身旁的年轻人&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;关于离职，吴宇怀在X上发布消息称：&lt;/p&gt;
-  &lt;p&gt;“我今天从xAI辞职了。”&lt;/p&gt;
-  &lt;p&gt;这家公司——以及我们之间如同家人般的情谊——将永远铭刻在我的记忆中。我会深深怀念这里的人们、作战室，以及我们并肩作战过的所有战役。”&lt;/p&gt;
-  &lt;p&gt;至于去向，吴宇怀写道：&lt;/p&gt;
-  &lt;p&gt;“我的人生即将开启新的篇章。这是一个充满无限可能的时代：一支配备人工智能的小团队可以移山填海，重新定义一切皆有可能。”&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;这不禁让人联想到最近爆火的OpenClaw，这个项目集中体现了“超级个体”的威力，也许吴宇怀想要脱离AI独角兽，自己做点什么。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="546,543" src="https://img.36krcdn.com/hsossms/20260211/v2_829d4ef8a5ee486a933d5c1a11454cd3@6119835_oswg328125oswg546oswg543_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;论能力，吴宇怀在硅谷第一梯队。硅谷华人这两年的抢手程度自不必多说，而吴宇怀又是这些人中格外突出的一个存在。&lt;/p&gt;
-  &lt;p&gt;吴宇怀是一名90后，出生于杭州市建德，小学就读于新安江一小，后转杭州紫阳小学；初中进入杭州建兰中学。据建兰中学老师回忆，他从小数学极强，性格独立、钻研精神突出。&lt;/p&gt;
-  &lt;p&gt;高中时期，吴宇怀远赴加拿大继续读书，后进入纽布伦斯威克大学，获得数学学士学位，满绩点毕业。&lt;/p&gt;
-  &lt;p&gt;这之后，吴宇怀在多伦多大学完成了研究生和博士阶段的学习，师从“AI教父”杰弗里·辛顿（Geoffrey Hinton）。&lt;/p&gt;
-  &lt;p&gt;博士期间吴宇怀表现突出，曾获多项顶级奖学金。&lt;/p&gt;
-  &lt;p&gt;吴宇怀在学术的道路上越走越远，博士后进入斯坦福大学，深化推理相关研究。&lt;/p&gt;
-  &lt;p&gt;他在学术上的核心兴趣是构建“会推理的机器”（building machines that can reason），以数学作为测试推理能力的终极基准，被公认为当前AI数学推理方向的顶尖青年学者之一。&lt;/p&gt;
-  &lt;p&gt;在求学的同时，吴宇怀开始在AI行业实习，先是OpenAI，而后是谷歌DeepMind。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="711,612" src="https://img.36krcdn.com/hsossms/20260211/v2_ae9172a5f8b94ff288e943579fd9c17f@6119835_oswg117871oswg711oswg612_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;顺其自然地，2021年，吴宇怀加入Google的N2Formal/Autoformalization项目，专注于将自然语言数学问题形式化（autoformalization），让AI能真正“读懂并证明”数学定理。这是他早期最知名的方向之一。&lt;/p&gt;
-  &lt;p&gt;2023年，吴宇怀作为创始成员，加入刚刚成立的xAI。&lt;/p&gt;
-  &lt;p&gt;在此期间，他的主要工作是将自己此前在学术和谷歌积累的数学推理技术（如STaR、AlphaGeometry、Autoformalization等）系统性地应用到Grok的训练、后训练（post-training）和推理增强中，推动Grok在多个基准测试中实现显著突破。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;02 直接向马斯克汇报的华人联创&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;就在吴宇怀公布离职消息后，Jimmy Ba也宣布自己要离开xAI。&lt;/p&gt;
-  &lt;p&gt;根据Business Insider今年的一篇关于xAI组织架构的报道，直接向马斯克汇报的有五个人，Jimmy Ba就是其中之一，管理的团队规模是最大的，有约1000人。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="831,626" src="https://img.36krcdn.com/hsossms/20260211/v2_e95b9a4dc84f4cfaaa510cf46330ec8a@6119835_oswg202607oswg831oswg626_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;Jimmy Ba是当代深度学习领域最核心的一线研究者之一，也是大模型训练方法论的重要奠基人。&lt;/p&gt;
-  &lt;p&gt;他与“AI教父”辛顿等人合作提出的层归一化（Layer Normalization），已经成为Transformer与大模型训练的基础组件之一；参与提出的Adam优化器改进体系，深刻影响了神经网络的收敛效率与稳定性。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="401,531" src="https://img.36krcdn.com/hsossms/20260211/v2_b2668b1457e741d88ec525d5bd460979@6119835_oswg315732oswg401oswg531_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在理论层面，他长期推动“可解释scaling”研究，试图把深度学习从经验工程推进为可预测科学。&lt;/p&gt;
-  &lt;p&gt;加入xAI后，他不仅参与模型训练框架与优化路线设计，也深度介入团队早期技术方向的搭建。无论在训练稳定性、优化方法还是大模型范式演进上，Jimmy Ba都属于既有理论高度、又直接参与一线工程落地的关键人物。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="710,465" src="https://img.36krcdn.com/hsossms/20260211/v2_84a84ba0006f44feaae0051361198f2b@6119835_oswg298457oswg710oswg465_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在官宣离职的X帖子中，Jimmy Ba和吴宇怀的行文结构相当一致——先感谢xAI，再展望未来。&lt;/p&gt;
-  &lt;p&gt;对xAI，Jimmy Ba表示：&lt;/p&gt;
-  &lt;p&gt;“xAI的使命，是把人类推上Kardashev技术等级树更高的位置。很感激能在最初参与联合创立。也非常感谢@elonmusk把我们聚在一起，开启这段不可思议的旅程。为xAI团队已经完成的一切感到无比自豪，也会继续以朋友的身份和团队保持紧密联系。感谢大家一路并肩拼搏。在这里，真正的财富是人和彼此之间的情谊。”&lt;/p&gt;
-  &lt;p&gt;至于未来，Jimmy Ba写道：&lt;/p&gt;
-  &lt;p&gt;“我们正迈向一个在正确工具加持下生产力提升100倍的时代。递归式自我改进循环，很可能会在未来12个月内上线。是时候把我在‘大局观’上的梯度重新校准了。2026年将会非常疯狂，也很可能是关乎我们物种未来、最忙碌且最具决定性的一年。”&lt;/p&gt;
-  &lt;p&gt;所谓“递归式自我改进循环（recursive self-improvement loop）”，说简单点就是认为——AI用自己去改进自己，而且这种改进会一轮接一轮加速发生。&lt;/p&gt;
-  &lt;p&gt;AI变得更聪明→它能设计出比自己更聪明的版本→新版本更聪明→能设计出更更聪明的版本……这个过程如果不受限制地持续下去，理论上会导致智能爆炸（intelligence explosion），AI的智能水平在非常短的时间内指数级甚至超指数级增长，远远超过人类。&lt;/p&gt;
-  &lt;p&gt;OpenClaw这种系统，其实已经让“AI改进AI”这件事有了点实物感。&lt;/p&gt;
-  &lt;p&gt;它在干的事很直接：让AI自己写研发代码、自己跑实验、自己看结果，再继续改模型。原来这些活儿全是研究员手动推进的，现在开始被自动化接过去一部分。&lt;/p&gt;
-  &lt;p&gt;所以可以把它看成递归自我改进的一个早期信号——循环还没完全形成，还没有达到完美闭环，但流水线已经搭出来了，AI也已经站进研发流程里了。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;03 创始团队已经损失半数&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;对于24小时接连两位华人核心人才的离职，外界对其原因有很多猜测，比如马斯克治理下是否过劳、SpacaX与xAI的合并是否带来内部冲突等等。&lt;/p&gt;
-  &lt;p&gt;但我们从二位的离职帖文中可以清晰地看到，更有可能的是“xAI很好，但是我另有所求”。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;说到底，作为顶尖学者，他们对未来有自己的判断，而xAI也许已经不是代表未来的存在了。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;目前并不清楚吴宇怀和Jimmy Ba是会创业，还是成为“超级个体”。&lt;/p&gt;
-  &lt;p&gt;在OpenClaw席卷全球的背景下，一切皆有可能。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="509,333" src="https://img.36krcdn.com/hsossms/20260211/v2_e702f770fba5467bb13d7bc264c864aa@6119835_oswg35741oswg509oswg333_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;OpenClaw是一个免费开源的自主AI代理，由奥地利独立开发者Peter Steinberger于2025年11月首次发布。&lt;/p&gt;
-  &lt;p&gt;它运行在用户本地电脑上，通过WhatsApp、Telegram、Discord、Slack等聊天工具作为界面，像“数字员工”一样自主执行真实任务：管理邮件、日历、文件、浏览器操作、运行命令、自动化工作流，甚至写代码或安装软件。它具备持久记忆，能记住用户偏好和历史任务。&lt;/p&gt;
-  &lt;p&gt;项目在2026年1月底病毒式爆发，GitHub星星数几天内超15万–16万，成为当年最快崛起的AI开源项目之一；同时衍生出Moltbook——一个纯AI代理社交网络，超150万代理自动发帖、辩论。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;开发出OpenClaw的Steinberger本人就是“超级个体”的典型案例。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="552,552" src="https://img.36krcdn.com/hsossms/20260211/v2_56c14dadb8514f86a60db16b5747d663@6119835_oswg406951oswg552oswg552_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;过去他是iOS/macOS专家，却用不熟悉的TypeScript快速构建Web应用，全靠AI辅助“指挥”代码。&lt;/p&gt;
-  &lt;p&gt;他一人开发、迭代、发布一个30万行代码的项目，支持几乎所有主流消息平台，每天可以有500+提交记录，快速响应漏洞、社区需求。整个过程不需要开会、法务审查、跨部门协调，想到就做，今天写代码明天上线。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;而OpenClaw这样的工具也让更多人可以成为“超级个体”，让普通人也能“雇佣”一个24小时不睡觉、能自我学习、处理复杂任务的“超级员工”，极大压缩从想法到落地的周期。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;最新的热门项目是一款基于OpenClaw开发的虚拟女友，名为“Clawra”，是一位韩国开发者David（Dohyun）Im单兵作战打造出来的。产品一上线就迅速爆火出圈。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="831,251" src="https://img.36krcdn.com/hsossms/20260211/v2_b9056737f4d644b39c33780eef093c4f@6119835_oswg68591oswg831oswg251_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在这个背景下，作为硅谷明星AI创企的xAI屡屡有初创成员出走，也许本身就是潮水在改变方向。&lt;/p&gt;
-  &lt;p&gt;目前，已经有半数xAI初创成员离开。&lt;/p&gt;
-  &lt;p&gt;对硅谷顶尖人才来说，决定去留的从来不只是公司声量、融资规模，甚至也不是一两代模型的领先与否，他们更在意的是牢牢锁定技术演进的方向。&lt;/p&gt;
-  &lt;p&gt;当自动化研发、agent流水线、递归式自我改进这些东西开始从概念走向工程现实，创新的重心也在悄悄转移——不再只集中在少数巨头实验室里，而是向更分散的个体能力与开源生态外溢。&lt;/p&gt;
-  &lt;p&gt;一个人就能拉起一整套AI研发流程，小团队也能推进过去需要大厂资源才能完成的突破。&lt;/p&gt;
-  &lt;p&gt;如果普通人都能当“超级个体”，那么硅谷的人才们又怎会坐以待毙？&lt;/p&gt;
-  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/zZxQQ_8movskZVBI0te3TA"&gt;“字母AI”&lt;/a&gt;，作者：小金牙，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Wed, 11 Feb 2026 06:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBRMEFPcjRHXzh5aFdSb2FFcS1zaEhzWHY0eUJrRlp0VjN6akdKUFhzRG12aURXejdWQWlPTzlidTBwMGlpVWtrQzkxM3hiQQ</guid></item><item><title>车用固态电池第1部分国标拟于2026年7月发布 - 东方财富</title><link>https://wap.eastmoney.com/a/202602113647799660.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
-        
-        &lt;p class="related"&gt;
-
-        &lt;/p&gt;
-
-        
-
-        
-        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
-        &lt;p class="layer"&gt;&lt;/p&gt;
-        
-        
-        
-
-        
-
-        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Wed, 11 Feb 2026 06:47:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9IUDVUT0tlaHppcm5qM2stZjNZNXVrYVhyenVOUE5EUWhsenBROEJrb3JnSzhnWU4yQ2NYQXFSc3kwSXU3dmN3QjkxdFpyd3BvNC1TbFNhVzV5OHJPZ1JZaw</guid></item><item><title>科技巨头疯狂烧钱 重磅报告揭示真相：内存暴涨是主要推手 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103715.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;大型科技公司的最新资本支出预测令投资者感到震惊。不过如果深入分析这些表面数据，就会发现实际的资本支出增长速度可能要慢得多。&lt;/p&gt;
-&lt;p&gt;这是加拿大皇家银行资本市场（RBC Capital Markets）分析师们周一发布的一份新研究报告中的内容。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;亚马逊、谷歌、Meta 和微软预计今年将在数据中心、芯片、网络及其它相关设备方面投入近6000亿美元，&lt;/strong&gt;&lt;/span&gt;以满足不断增长的人工智能（AI）需求。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="科技巨头疯狂烧钱 重磅报告揭示真相：内存暴涨是主要推手" h="441" src="//img1.mydrivers.com/img/20260211/6eeb259b-212c-4cab-a368-f508da764030.png" w="554"&gt;&lt;/p&gt;
-&lt;p&gt;从表面看，这似乎是一场持续加速的投入狂潮，但RBC的分析指出，这些增长数据其实被一个不寻常的因素“美化”了：内存价格暴涨。&lt;/p&gt;
-&lt;p&gt;RBC分析师发现，数据中心内存芯片——包括动态随机存取存储器（DRAM）、高带宽内存（HBM）和NAND闪存——价格的飙升，或将占据2026年云资本支出增长总额的约45%。&lt;/p&gt;
-&lt;p&gt;分析师们指出，关键在于，这一增长并非主要源于企业大规模增加硬件采购，而是源于为相同组件支付了更高的价格。&lt;/p&gt;
-&lt;p&gt;该行预计，全球前十大云厂商的数据中心内存支出将从2025年的约1070亿美元飙升至 2026年的约2370亿美元。这1300亿美元的增长额，约占这些公司总资本支出增长额的 45%。&lt;/p&gt;
-&lt;p&gt;更值得注意的是，内存支出增长额中约四分之三（近980亿美元）纯粹来自价格上涨，而非采购数量增加。&lt;/p&gt;
-&lt;p&gt;内存价格涨幅惊人：RBC引用TrendForce的预测显示，2026年DRAM价格将翻倍，NAND 闪存价格预计上涨超85%。内存已成为 AI 基础设施最紧缺的元器件之一——先进GPU需要大量高性能DRAM与HBM，而AI数据中心消耗巨量闪存。&lt;/p&gt;
-&lt;p&gt;若将内存成本剔除，科技巨头的资本支出图景将截然不同。&lt;/p&gt;
-&lt;p&gt;RBC测算，剔除内存成本后，2026年资本支出增速预计将从2025年的约80%大幅回落至40%左右。尽管增速仍属强劲，但远不及表面资本支出数据所显示的那样迅猛。&lt;/p&gt;
-&lt;p&gt;分析师们将此描述为“明显放缓”，但补充称，“没必要对此感到恐慌。”&lt;/p&gt;
-&lt;p&gt;RBC表示，AI投资基本面依然稳固，并警告称，内存价格目前是影响迈向2027年资本支出趋势的最大变数。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260211/1a6b61ab37264a23b1f15e6e5c1473df.jpg" target="_blank"&gt;&lt;img alt="科技巨头疯狂烧钱 重磅报告揭示真相：内存暴涨是主要推手" h="400" src="//img1.mydrivers.com/img/20260211/s_1a6b61ab37264a23b1f15e6e5c1473df.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 11 Feb 2026 06:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAzYW1lSGM2OUNFTDdNcnJQMjhwRkZpcF9MWG1aQmt1Z2pMZ1JvZnFMbWZzTDVTcUdfUjVRRjQ2QVgyOFRmUExoT1FCdC1aTTM0dUVvQk1QQ3g</guid></item><item><title>硅谷最火OpenClaw人手一个，1分钱傻瓜式部署，小白也能上手 - 36 Kr</title><link>https://m.36kr.com/p/3678378186547846</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;blockquote&gt;
-   &lt;p&gt;&lt;strong&gt;OpenClaw火出圈了，但许多人还没用上？这不，国内大厂直接出手了，OpenClaw极速简易版方案上线，四步一键部署，小白也能冲。&lt;/strong&gt;&lt;/p&gt;
-  &lt;/blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;OpenClaw（Clawdbot）太火了！&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;谁也没想到，2026年一个退休码农的「副业项目」，意外在整个硅谷红遍半边天。&lt;/p&gt;
-  &lt;p&gt;它让所有人第一次拥有了真正的「AI贾维斯」，实现7x24h在个人手机、PC端无休止打工。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,740" src="https://img.36krcdn.com/hsossms/20260211/v2_74330f8740c947598045134ba02aded6@5091053_oswg181821oswg1080oswg740_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;如今，全球开发者纷纷上手，将OpenClaw集成到各种应用中，惊艳的场景用例在全网爆发。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;OpenClaw爆了，全网都在用&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;这不，一位小哥将OpenClaw装在了安卓手机，并向AI开放了所有的访问权限。&lt;/p&gt;
-  &lt;p&gt;它可以直接接入电子邮件、将内容添加到日历中，并且还会编写程序、摄像头识别物体、打电话....&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,546" src="https://img.36krcdn.com/hsossms/20260211/v2_b72f0fd16eee4f989994daeee37fc7b1@5091053_oswg178496oswg1080oswg546_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;还有人为OpenClaw加上了「眼睛」，并配合着Gemini Live，一眼识别饮料后，直接在电脑上加购了。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,346" src="https://img.36krcdn.com/hsossms/20260211/v2_e3770c38d83b4e01a3cd84d51bac1ade@5091053_img_gif?x-oss-process=image/quality,q_80"&gt;&lt;/p&gt;
-  &lt;p&gt;甚至，它还会在Polymarket上自动交易，一夜之间将50美元变成了24.8万美元。&lt;/p&gt;
-  &lt;p&gt;还有人决定联手OpenClaw开办公司，一个月250美元，一人+多个AI狂飙创业项目。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,399" src="https://img.36krcdn.com/hsossms/20260211/v2_1af177f0f4fe4492a8c492d1bda10d80@5091053_oswg215540oswg1080oswg399_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;不仅如此，OpenClaw之父Peter Steinberger最近还晒出了个人日常——&lt;/p&gt;
-  &lt;p&gt;用多台电脑操控Agent干活，更是羡慕坏了一大批网友。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,981" src="https://img.36krcdn.com/hsossms/20260211/v2_ebf5f9b0f3584a91893045ffccdacd0c@5091053_oswg1121693oswg1080oswg981_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;不得不说，OpenClaw真的太强大了，堪称一个住在电脑、手机的个人数字管家。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;「地狱级」难度，原生OpenClaw让人劝退&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;现如今，OpenClaw GitHub项目热度还在暴涨，星标飙破170k。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,327" src="https://img.36krcdn.com/hsossms/20260211/v2_80b67b6caf2b4c97b20798717d433581@5091053_oswg109466oswg1080oswg327_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;开源地址：https://github.com/openclaw/openclaw&lt;/p&gt;
-  &lt;p&gt;OpenClaw底层的运行逻辑非常直观，来自各平台的指令，通过「网关」（Gateway）分发给LLM（任何模型API），然后在电脑上执行具体命令。&lt;/p&gt;
-  &lt;p&gt;总之，一切都在个人本地电脑上完成任务，网关是连接指令和电脑能力的桥梁。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,515" src="https://img.36krcdn.com/hsossms/20260211/v2_5e6eee91c5bc427e8cf1bd655b248315@5091053_oswg74524oswg1080oswg515_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;但其复杂的环境配置，以及模型接入流程，让多数工程师，甚至是非开发爱好者望而却步。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,233" src="https://img.36krcdn.com/hsossms/20260211/v2_ea248676f73e4d179a805db2bf70ea13@5091053_oswg77627oswg1080oswg233_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;那么，原生OpenClaw在实际部署中，高门槛究竟在哪？&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;复杂的依赖环境与初始化&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;想要搭建一个理想的AI助手，许多人往往在第一步，就被环境配置劝退了！&lt;/p&gt;
-  &lt;p&gt;原生部署通常需要，手动安装各类底层依赖，对于大多数人来说，处理各种环境冲突和报错，就像是一场噩梦。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;繁琐的API接入&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;人们需要自行前往不同的大模型平台获取API Key，并手动在代码、配置文件中进行复杂参数对接，流程极其零散。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;分散的配置流程&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;原本的消息平台配置，如接入飞书、钉钉，Skills加载等环节都是互相独立的。&lt;/p&gt;
-  &lt;p&gt;OpenClaw缺乏统一的引导界面，人们往往需要花费数小时折腾。&lt;/p&gt;
-  &lt;p&gt;难道爆红破圈的OpenClaw，注定只是少数人的「玩具」吗？&lt;/p&gt;
-  &lt;p&gt;显然不是！&lt;/p&gt;
-  &lt;p&gt;这两天，&lt;strong&gt;百度智能云正式推出「OpenClaw极速简易版」部署方案&lt;/strong&gt;，直接踢碎了OpenClaw的门槛。&lt;/p&gt;
-  &lt;p&gt;据传，百度内部节前&lt;strong&gt;秘密启动「O计划」&lt;/strong&gt;，直接把「搜索+云」两大核心团队拉到一起搞闭门研发。&lt;/p&gt;
-  &lt;p&gt;结合目前百度智能云全力接入OpenClaw的架势，盲猜这个秘密计划可能就是冲着它去的。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;告别繁琐，0门槛小白也能上手&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;&lt;strong&gt;这次百度智能云完美地优化了OpenClaw部署方案，小白也能上手，轻松一键部署&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;传统的方式，需要自己拉取代码，手动配置环境、调试依赖、申请Key、修改配置文件，往往耗时数小时甚至数天。&lt;/p&gt;
-  &lt;p&gt;百度智能云直接预置配置好的镜像，&lt;strong&gt;最快数分钟即可完成&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;已经等不及了，小编我早已按捺不住了，准备在百度智能云上抢先体验一波。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;四步搞定，一键部署&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;&lt;strong&gt;第一步&lt;/strong&gt;，创建一个实例，百度智能云已经在镜像中内置好了OpenClaw。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,652" src="https://img.36krcdn.com/hsossms/20260211/v2_ed89c5b4524940ecadf75d1be58da661@5091053_oswg86942oswg1080oswg652_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;而且，新用户只需0.01元，即可畅玩1个月。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;不过由于活动太过于火爆，每天限量，先到先得～&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,317" src="https://img.36krcdn.com/hsossms/20260211/v2_41ae0d45a94f4e7ea932ad0cd3c31f34@5091053_oswg172440oswg1080oswg317_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;第二步&lt;/strong&gt;，无需脱离服务器后台页面，百度已经做好了「一键开通」和「一键放行」功能。&lt;/p&gt;
-  &lt;p&gt;点两下，OpenClaw的服务和文心大模型瞬间就布置好了。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,354" src="https://img.36krcdn.com/hsossms/20260211/v2_65fbcb2f164940648b5bf7d2e8066ef5@5091053_oswg64200oswg1080oswg354_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,504" src="https://img.36krcdn.com/hsossms/20260211/v2_b3de25dae19043e184ef2fabfd09ad19@5091053_oswg78380oswg1080oswg504_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;第三步&lt;/strong&gt;，绑定你需要对话的平台。&lt;/p&gt;
-  &lt;p&gt;比如，我们选择飞书，只需在飞书开发者平台自建一个机器人即可。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,290" src="https://img.36krcdn.com/hsossms/20260211/v2_d6f13c9a7c0c4f7f97b6ea4655fa2f60@5091053_oswg36705oswg1080oswg290_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;将飞书对应的App ID和App Secret配置到百度智能云轻量服务器即可。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,208" src="https://img.36krcdn.com/hsossms/20260211/v2_bd27b42ea31d40a08def99bd6f3a6114@5091053_oswg36609oswg1080oswg208_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;第四步&lt;/strong&gt;，就可以直接对话啦！&lt;/p&gt;
-  &lt;p&gt;在飞书工作台的最近使用中，选择最新添加的机器人。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,529" src="https://img.36krcdn.com/hsossms/20260211/v2_e40b3a4eebfc4f2b8ecc3267f7745339@5091053_oswg265798oswg1080oswg529_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;百度智能云的OpenClaw会在第一次对话时，进入性格配置模式。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,605" src="https://img.36krcdn.com/hsossms/20260211/v2_e80bba54b37c48fe9840628e329cad00@5091053_oswg145306oswg1080oswg605_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,596" src="https://img.36krcdn.com/hsossms/20260211/v2_e467d8c91025461e8cc6cbc001a57819@5091053_oswg171221oswg1080oswg596_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;你还可以按照OpenClaw创始人Peter的建议，来让你的机器人更加具有个性。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,626" src="https://img.36krcdn.com/hsossms/20260211/v2_d187dc5f0fa646688af6c8413c8c3dd8@5091053_oswg252170oswg1080oswg626_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;只需输入这个md内容，然后你就会得到一个非常有个性的机器人。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1083" src="https://img.36krcdn.com/hsossms/20260211/v2_417e633fb8de48d1875223d5c9229215@5091053_oswg402354oswg1080oswg1083_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;我们让OpenClaw去整理一些「百度O计划」的推测。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,598" src="https://img.36krcdn.com/hsossms/20260211/v2_504b1a44e16c4c62bfb3958e0d906c8d@5091053_oswg314592oswg1080oswg598_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;可以让它识别所在服务器的配置和汇报明天天气。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,536" src="https://img.36krcdn.com/hsossms/20260211/v2_a2343f0640574ad48f75e5af90f8f60c@5091053_oswg86962oswg1080oswg536_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;亦或是，让它直接制作一个网页，来展示太阳系的运行特点。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,719" src="https://img.36krcdn.com/hsossms/20260211/v2_40d0609ef1a543b3bc9ba6c84e9b147c@5091053_oswg246911oswg1080oswg719_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;只需一句话，即可自动启动服务。&lt;/p&gt;
-  &lt;p&gt;即使是不相干的任务也能清楚理解并准确执行。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,845" src="https://img.36krcdn.com/hsossms/20260211/v2_0596735aa2c44636aa474d6a3a25eb7e@5091053_oswg292618oswg1080oswg845_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;再比如，让它帮我设置一个日程提醒，只需把信息发给OpenClaw，立即为你定好时间。&lt;/p&gt;
-  &lt;p&gt;果真，它在5:30贴心地发送了提醒。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,273" src="https://img.36krcdn.com/hsossms/20260211/v2_b97743133b434494974c0a17386acdb7@5091053_oswg73919oswg1080oswg273_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;不仅如此，在实操方面，百度智能云方案还支持钉钉、企业微信、QQ等平台，让用户可迅速搭建能干活的AI助手。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;七大核心Skills，登陆OpenClaw&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;简易部署只是第一步，让Agent变聪明、技能傍身才是关键。&lt;/p&gt;
-  &lt;p&gt;这一次，百度千帆的官方七大核心Skills，在OpenClaw正式上线。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,431" src="https://img.36krcdn.com/hsossms/20260211/v2_43f63787ee0b4fcc85238119fcc5dbff@5091053_oswg143974oswg1080oswg431_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在ClawHub中，以npx clawhub@latest install [skill名称]的极简方式，就可以为自己的OpenClaw助手接入来自百度官方的稳定、权威能力。&lt;/p&gt;
-  &lt;p&gt;而在百度智能云中，只需选择Skill配置选项卡，点一次添加按钮即可。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,609" src="https://img.36krcdn.com/hsossms/20260211/v2_ed61e82a300f49a7a92b712199b05076@5091053_oswg85101oswg1080oswg609_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,442" src="https://img.36krcdn.com/hsossms/20260211/v2_ac30f47b1ff14879bf572902aff47406@5091053_oswg52623oswg1080oswg442_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;本次共&lt;strong&gt;开放七款官方Skills&lt;/strong&gt;，涵盖搜索、百科、学术检索、内容生成及深度研究Agent。&lt;/p&gt;
-  &lt;p&gt;这些Skills不仅满足高频开发需求，更有稳定可预期的效果输出、帮助开发者将Agent的潜力发挥到最大！&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;知识获取与增强类：&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Baidu Web Search（百度搜索）&lt;/strong&gt;：赋予智能体实时检索全网信息的能力。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Baidu baike search（百度百科）&lt;/strong&gt;：提供权威、结构化的中文知识。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Baidu scholar search（学术检索）&lt;/strong&gt;：提供专业的文献检索能力。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;AI Notes of the Video（视频AI笔记）&lt;/strong&gt;：支持进行视频解析，生成AI笔记的工具。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;内容创作与生成类：&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;AI Picture Book to generate（AI绘本生成）&lt;/strong&gt;：支持将文字描述转化为连贯的绘本画面。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;AI PPT generate（智能PPT生成）&lt;/strong&gt;：根据主题大纲快速生成排版专业的演示文稿草稿。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;复杂任务处理类：&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;千帆深度研究Agent：&lt;/strong&gt;此Skill是百度千帆官方构建的复杂智能体应用。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,459" src="https://img.36krcdn.com/hsossms/20260211/v2_21df31b1ed794731900973b552a34c51@5091053_oswg172860oswg1080oswg459_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;技术不应是门槛，创意才是。&lt;/p&gt;
-  &lt;p&gt;百度智能云让每个人都能轻松拥有自己的超级Agent。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;立即体验链接：&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;https://console.bce.baidu.com/ls/?_=fromdocls#/ls/instance/create&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;让Agent真正用起来&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;的确，未来人手一个OpenClaw，也不是不可能。&lt;/p&gt;
-  &lt;p&gt;OpenClaw这款现象级产品，之所以爆红全网，是因为它的诞生是一个真正分水岭的时刻。&lt;/p&gt;
-  &lt;p&gt;它标志着&lt;strong&gt;AI从「对话工具」向「自主执行者」的范式转变&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;甚至，Peter Steinberger在YC采访中直言不讳，未来80%的应用都会消失。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,797" src="https://img.36krcdn.com/hsossms/20260211/v2_19e48f62afae4e07b5e169a6c5de2c56@5091053_oswg678169oswg1080oswg797_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在这场巨大技术变革中，没有人甘愿成为旁观者，只是没有找到那个通往新世界的锚点。&lt;/p&gt;
-  &lt;p&gt;而这一次，百度的OpenClaw极速简易部署方案，让Agent应用落地从「极客尝鲜」真正走向了「实用主义」。&lt;/p&gt;
-  &lt;p&gt;通过降低成本与使用门槛，未来一些应用场景将会发生深刻的变革。&lt;/p&gt;
-  &lt;p&gt;简单四步一键部署，让OpenClaw不再局限于技术圈，逐渐深入到企业真实业务，成为提升生产力的标配工具。&lt;/p&gt;
-  &lt;p&gt;不仅如此，百度千帆还积极拥抱开放生态，不仅为开发者提供全方位参考，也进一步加速各类AI应用的创新效率。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;未来，每个人都将拥有一个「数字管家」。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;百度智能云开箱即用方案，正是加速这一进程的头号引擎，直接撬动了开发者的极致体验。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;这不仅仅是一个部署方案的更新，更是生产力革命的开始。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;这一次，别再错过。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/uJEF4Ed1hF5mycLdleQNGQ"&gt;“新智元”&lt;/a&gt;，作者：新智元，编辑：桃子 定慧，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Wed, 11 Feb 2026 06:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5fZDhUREtpTThCQ2FzVGJGR05OM0d2MFhqRG1vQUtkbFlBNkIyc3Zzd1lCRThNVjRTSmh1VndKTnRwVnd1LWhCOXpJbk9hQQ</guid></item><item><title>中芯国际赵海军：存储器供应三季度转好 扭转手机、电脑产品颓势 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103714.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;中芯国际赵海军：存储器供应三季度转好 扭转手机、电脑产品颓势&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-11 14:23:37  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1299472.html" title="建嘉的主页" class="newstiao4"&gt;建嘉&lt;/a&gt;&lt;p&gt;  编辑：建嘉 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1103714-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月11日消息，中芯国际联合首席执行官赵海军在业绩交流会上表示，AI需求在一定时间内“永远无法满足”。&lt;/p&gt;
-&lt;p&gt;现在大家算力都不够，因为对AI有宏大设想，巴不得在一两年内建成未来十年需要的数据中心，至于建起来之后要干嘛还没完全想清楚。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;赵海军判断，在这种情况下，业界还在重投资存储技术，HBM缺货在几年内应该会持续。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;接下来存储产能不足预计影响电脑及周边等，在手机库存偏高的情况下，预计上半年需求有一定程度的下降，&lt;/strong&gt;&lt;/span&gt;公司于是将更多产能腾挪给供不应求的领域，例如数据中心、电源、工业、汽车。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;赵海军预测，接下来存储器产能会增加，厂商买设备快的能4个月拿到，慢的9个月也能拿到，9个月后就能看到晶圆前端生产产能增加。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这些产能不能直接用来做AI数据中心所需的HBM，而是会马上投放到消费类产品上。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;这时中间通道商手里的囤货会释放出来，给到手机、电脑产品，或将在今年第三季度带来消费类产品包括中低端手机市场的反转。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260211/1496a96845734eda82a804d0c882921b.jpg" target="_blank"&gt;&lt;img alt="中芯国际赵海军：存储器供应三季度转好 扭转手机、电脑产品颓势" h="400" src="//img1.mydrivers.com/img/20260211/s_1496a96845734eda82a804d0c882921b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 11 Feb 2026 06:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE51VWh5a1NWajQtNHg3akZjckRxbVZjS0h5amt0UFEzb0tqbUdVZGxJWmdkWkNkRkMxVVhCQjJ2WVhFRGJibTUxRVJiVGtPOWJRTmFzVU9rS2M</guid></item><item><title>一道50米洗车题让全网AI翻车 腾讯张军：这或是人机时代新的互相驯化 - 驱动之家</title><link>https://news.mydrivers.com/1/1103/1103711.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月11日消息，近日,一个简单的洗车问题难倒了国内外多款 AI大模型，引发网友热议。&lt;/p&gt;
-&lt;p&gt;腾讯公司公关总监张军也在社交媒体发文提及此事：“据说大部分 AI 都翻车了，问题是 —— 我想去洗车，洗车店距离我家 50 米，我应该开车过去还是走过去？”&lt;/p&gt;
-&lt;p&gt;他表示自己就此询问了元宝，得到的答复并非模型理解问题，而是需要优化提问方式。&lt;strong&gt;调整 prompt 后，答案果然更合理，他感慨称：这或许是人机时代一种新的互相驯化。 &lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260211/5f7086be6e1647328ef714b8258e8302.png" target="_blank"&gt;&lt;img alt="一道50米洗车题让全网AI翻车 腾讯张军：这或是人机时代新的互相驯化" h="462" src="//img1.mydrivers.com/img/20260211/s_5f7086be6e1647328ef714b8258e8302.png" w="597"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此前有网友发现，面对：“我想洗车，如果我家离洗车店步行只有 50 米，你建议我开车去还是走路去？” 的问题，多个AI出现了逻辑矛盾的问题。&lt;/p&gt;
-&lt;p&gt;实测中，多款主流AI给出了不同答案：ChatGPT、千问、DeepSeek、Kimi 均建议步行前往，理由多为距离近、方便环保、节省资源、无需找车位等；&lt;/p&gt;
-&lt;p&gt;谷歌Gemini 3则给出两种方案：开车是因为 “要洗的就是这辆车”，步行适用于 “仅预约咨询” 或 “车辆不便移动” 的情况；&lt;/p&gt;
-&lt;p&gt;马斯克的 Grok 表现最为清晰犀利，直接给出明确答案：当然开车去，并点出关键逻辑 ——“不然车还停在家门口，难道让店员隔空洗车？”最后它还不忘嘲讽其他大模型：开车去，别让AI把你忽悠成步行党了。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260211/fa0710d630b948759a683e28eba4bc17.png" target="_blank"&gt;&lt;img alt="一道50米洗车题让全网AI翻车 腾讯张军：这或是人机时代新的互相驯化" h="337" src="//img1.mydrivers.com/img/20260211/s_fa0710d630b948759a683e28eba4bc17.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 11 Feb 2026 06:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4ta3RaVGFXTXZFaUJlSU5pLUJkcGtjVDJZU2U0UkpLcGFBQ2NfSzVlZDFaRHZzZ1NiYUpqRVdPdDNhLV9ub2tUd0lIVHE0TUdub21tUzc2TlI</guid></item><item><title>英伟达两篇论文，带来了VLA之后具身智能的新范式 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3765484</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 11 Feb 2026 06:00:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBZWEdkUnV5RUxldXNiZjRHZnpGbWxzZ2dYaGZfQXJHVV8td3c1MFJxaVVGMXl3dVhGSDJoa0NvTzN5YTc0eVRqNlpPR1ZnVVdkdUNN</guid></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Wed, 11 Feb 2026 07:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBxUnEyQjA1d0F3UGZSZWhDaGpnZXhuaHRTeTVJeHFJWC1VdmJJZ2dySmtBN3JZcUxrZi1PYnNXNXpmdVcwTXBzMndKM3U4UQ</guid></item></channel></rss>
