@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>路透：北京掩盖无人机飞行疑预演侵台 南中国海灰色战术重大转变 - Zaobao</title><link>https://www.zaobao.com.sg/news/china/story20260226-8643933</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（香港路透电）一架中国大陆大型军用无人机近来掩盖身份在南中国海上空定期飞行。分析认为，这些行动标志着北京在这片主权争议海域的灰色地带战术发生重大转变，且似乎在测试侵略台湾时可能使用的欺敌策略。&lt;/p&gt;&lt;p&gt;路透社对航班追踪网站“Flightradar24”数据的分析显示，自去年8月以来，至少有23次飞行记录显示呼号为“YILO4200”的飞行器，在南中国海飞行时对外发送虚假应答机信号，伪装成白罗斯货机、英国台风战斗机、朝鲜客机等不同身份。&lt;/p&gt;&lt;p&gt;多名开源情报分析师指出，“YILO4200”的呼号属于中国翼龙-2长航时无人机。这是一款类似美国“死神”无人机的飞机，翼展达20.5米，主要用于侦察任务，但也可改装执行其他任务，包括指挥控制、精确导弹打击和反潜作战。&lt;/p&gt;&lt;p&gt;飞行路径分析显示，这架无人机从海南博鳌机场起飞后，通常向东飞往菲律宾方向，&lt;a href="https://www.zaobao.com.sg/news/china/story20250529-6514736?ref=article-inline" target="_blank" rel="nofollow"&gt;靠近有主权争议的西沙群岛（越南称黄沙群岛）&lt;/a&gt;，然后沿着越南海岸线南下，经常持续飞行数小时，在同一区域盘旋成星形或沙漏形飞行轨迹。 &lt;/p&gt;&lt;p&gt;博鳌机场是军民两用设施。路透社获得的去年7月、9月及今年1月的卫星图像显示，停机坪上停放着大型无人机。&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>无需Root 教你怎么在手机上部署一个AI Agent - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105758.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;如今，手机上的AI助手已经进化到只需一句话就能跨应用自动点咖啡、点外卖、甚至购物。这些功能常常被当作宣传卖点出现在发布会上，但实际上我们普通用户也能亲手在手机上搭建一个这样的AI Agent，而且操作简单，还不用root手机。接下来，我就手把手教你怎么做。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在开始教程前，先看看我们需要准备哪些工具？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其实东西不多，都是现成的。你需要一部安卓手机，版本最好在Android 10以上，太老的系统可能跑不动。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/fe1319fe-749e-4ea9-b5c3-7e874cde591c.jpg" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="330" src="//img1.mydrivers.com/img/20260226/Sfe1319fe-749e-4ea9-b5c3-7e874cde591c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;软件方面，核心是三个：AutoGLM For Android这个App（可以从GitHub或酷安下载）、Shizuku（用来给App授权）、以及一个智谱BigModel平台的账号。模型用的是智谱专门为手机操作训练的AutoGLM-Phone，目前还是限时免费的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;接下来是具体步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;第一步是开启手机的“开发者模式”。这个其实很简单，进到「设置」里找到「关于手机」，然后对着「版本号」连续点七下，手机会震动一下提示你已经是开发者了。返回设置主菜单，就能看到一个新增的「开发者选项」入口。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/3b2c377f-b257-4924-816b-c59d09eb831f.jpg" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="572" src="//img1.mydrivers.com/img/20260226/S3b2c377f-b257-4924-816b-c59d09eb831f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;接下来安装Shizuku。这个App的作用是让AutoGLM能拥有一些系统级的权限，但又不用真的去Root手机。安装好后打开它，选择「无线调试」的方式激活。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="485" src="//img1.mydrivers.com/img/20260226/04f18332-cc80-4935-abce-8c10e75cdf26.jpg" w="441"&gt;&lt;/p&gt;
+&lt;p&gt;这时候你需要回到「开发者选项」里找到「无线调试」，打开后点击「使用配对码配对设备」，屏幕上会弹出一串IP地址和配对码。把这串码输入到Shizuku里，配对成功后它就会显示“正在运行”。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/bcb0eaa3-d96a-47f5-ae92-94fd019c1356.jpg" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="1288" src="//img1.mydrivers.com/img/20260226/Sbcb0eaa3-d96a-47f5-ae92-94fd019c1356.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后是安装AutoGLM App。从酷安或者GitHub上把APK下载下来装上，打开后会看到一连串的权限申请，全部允许就行——特别是Shizuku权限、无障碍权限和悬浮窗权限，少一个后面都跑不起来。&lt;/p&gt;
+&lt;p&gt;现在到了最关键的一步：获取API Key。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/e6b89ac1-42f5-45e2-af72-d81a56afc94a.jpg" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="379" src="//img1.mydrivers.com/img/20260226/Se6b89ac1-42f5-45e2-af72-d81a56afc94a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;去智谱的BigModel平台注册一个账号，登录后你会看到一个搜索框，直接搜“autoglm-phone”就能找到这个模型。点击开通，目前是免费的。开通之后，去「API Keys」页面创建一个新的Key，复制下来备用。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/b9719f9c-598c-4001-a452-775fb2a7597f.jpg" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="227" src="//img1.mydrivers.com/img/20260226/Sb9719f9c-598c-4001-a452-775fb2a7597f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;回到AutoGLM App的设置里，找到模型配置，把刚才复制的Key填进去。Base URL要写成https://open.bigmodel.cn/api/paas/v4，注意不要画蛇添足在后面加什么 /v1/chat/completions。Model这一栏直接填autoglm-phone，一字不差。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/6be1f825-f8ca-49b3-8c0d-12bab76fd05c.jpg" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="1257" src="//img1.mydrivers.com/img/20260226/S6be1f825-f8ca-49b3-8c0d-12bab76fd05c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;全部配置好之后，回到主界面，试试你的第一个指令。输入“打开微信，给文件传输助手发一条消息，内容是‘你好，AI’”，然后点击开始。&lt;/p&gt;
+&lt;p&gt;你会看到屏幕上弹出一个悬浮窗，上面显示着AI的思考过程——它正在识别屏幕上的按钮，规划下一步操作。然后微信自动打开了，找到了文件传输助手，输入了文字，点了发送。整个过程就像有人在远程控制你的手机，那种感觉真的很奇妙。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/ff2e4afb-7672-4127-be23-a7c64c149a47.jpg" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="360" src="//img1.mydrivers.com/img/20260226/Sff2e4afb-7672-4127-be23-a7c64c149a47.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那些我替你踩过的坑：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我和很多小白一样，对工具了解有限，因此一开始尝试时也走了不少弯路。最大的坑是选错了模型。一开始我用的Doubao-1.5-pro，发现无法实现后才明白，AutoGLM需要的不是普通的对话模型，而是专门为手机操作训练的视觉模型，比如智谱的autoglm-phone或者其他的视觉模型。前者是官方搭配，成功率最高。&lt;/p&gt;
+&lt;p&gt;另一个常见的坑是Base URL的写法。AutoGLM App会自动拼接后面的路径，所以你只需要填基础地址。如果画蛇添足加上 /v1/chat/completions，就会报“服务器错误”。&lt;/p&gt;
+&lt;p&gt;Shizuku的激活也是个容易出问题的环节。如果无线调试一直配对不上，可以试试用USB线连接电脑，在电脑终端里执行一条命令来激活。具体命令在Shizuku的官方文档里有，照着做就行。&lt;/p&gt;
+&lt;p&gt;还有一个经验是：指令越具体，成功率越高。AI不是读心术，你说“帮我点一份黄焖鸡”，它可能真的只点一份黄焖鸡米饭，但不会帮你选门店、口味、优惠券。如果改成“打开美团，搜索黄焖鸡，选销量第一的那家，点大份，然后停在付款界面”，它就能一步步执行到位。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这件事的意义在哪？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;说实话，我折腾下来最大的感受是：最终效果并没有我预想中那么好用。操作不够流畅，偶尔会卡住，远远谈不上完美。那为什么还要费劲体验它？&lt;/p&gt;
+&lt;p&gt;首先，这是一种很新颖的交互方式，这种质变本身就值得亲自感受一次。&lt;/p&gt;
+&lt;p&gt;更重要的是，基于这套思路，我们可以搭建更有意思的东西。比如既然AutoGLM App底层调用的是语言模型（GLM-4.5等），它本身就具备自然对话能力，完全可以实现一个能陪你聊天的私人助手。而且现在模型已经开源，你甚至可以把它部署在自己的设备上，调教出一个真正懂你、只属于你的AI。&lt;/p&gt;
+&lt;p&gt;说白了，这件事最有意思的地方不是它现在有多好用，而是你自己动手、探索的过程，看着AI真的按你的指令动起来，哪怕只是发出一条微信，也是十分有趣的。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260226/07b355c71430481b8799d2311fb5926e.png" target="_blank"&gt;&lt;img alt="无需Root 教你怎么在手机上部署一个AI Agent" h="400" src="//img1.mydrivers.com/img/20260226/s_07b355c71430481b8799d2311fb5926e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 10:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8zb1g4NjU2RzZZQlZ2VjRZMF82U09oSWpFeDN3V0xLZ19hbVFYU3pnazFLS0s1Qk1VZzZDOWNiMnhpZGZBeHNaZUVKYzdKQm8xVmoyTmItbUo</guid></item><item><title>路透：北京掩盖无人机飞行疑预演侵台 南中国海灰色战术重大转变 - Zaobao</title><link>https://www.zaobao.com.sg/news/china/story20260226-8643933</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（香港路透电）一架中国大陆大型军用无人机近来掩盖身份在南中国海上空定期飞行。分析认为，这些行动标志着北京在这片主权争议海域的灰色地带战术发生重大转变，且似乎在测试侵略台湾时可能使用的欺敌策略。&lt;/p&gt;&lt;p&gt;路透社对航班追踪网站“Flightradar24”数据的分析显示，自去年8月以来，至少有23次飞行记录显示呼号为“YILO4200”的飞行器，在南中国海飞行时对外发送虚假应答机信号，伪装成白罗斯货机、英国台风战斗机、朝鲜客机等不同身份。&lt;/p&gt;&lt;p&gt;多名开源情报分析师指出，“YILO4200”的呼号属于中国翼龙-2长航时无人机。这是一款类似美国“死神”无人机的飞机，翼展达20.5米，主要用于侦察任务，但也可改装执行其他任务，包括指挥控制、精确导弹打击和反潜作战。&lt;/p&gt;&lt;p&gt;飞行路径分析显示，这架无人机从海南博鳌机场起飞后，通常向东飞往菲律宾方向，&lt;a href="https://www.zaobao.com.sg/news/china/story20250529-6514736?ref=article-inline" target="_blank" rel="nofollow"&gt;靠近有主权争议的西沙群岛（越南称黄沙群岛）&lt;/a&gt;，然后沿着越南海岸线南下，经常持续飞行数小时，在同一区域盘旋成星形或沙漏形飞行轨迹。 &lt;/p&gt;&lt;p&gt;博鳌机场是军民两用设施。路透社获得的去年7月、9月及今年1月的卫星图像显示，停机坪上停放着大型无人机。&lt;/p&gt;
     
   &lt;p&gt;四名情报分析师认为，上述飞行特征与大型军用无人机执行侦察任务的典型模式相吻合，覆盖南中国海的敏感区域，包括潜艇活动频繁的海域。&lt;/p&gt;&lt;p&gt;军事武官和安全分析师指出，这些飞行任务标志着中国大陆在南中国海灰色地带战术的重大转变，并且似乎是在测试侵略台湾时可能的欺敌作战策略。&lt;/p&gt;&lt;p&gt;美国夏威夷太平洋论坛智库研究员尼尔说，将无人机的23次飞行航线叠加到台湾地图上，可以看到它经过多个军事要塞，&lt;a href="https://www.zaobao.com.sg/realtime/china/story20251230-8031555?ref=article-inline" target="_blank" rel="nofollow"&gt;主要集中在台北周边&lt;/a&gt;，同时延伸至台湾南部海岸线；东向航线还接近冲绳及琉球群岛其他岛屿上的美日军事基地。 &lt;/p&gt;&lt;p&gt;外交官和情报分析师认为，尽管这种伪装行为不太可能完全欺骗空中交通管制员或军用级雷达，但可能在冲突中制造耗时的混乱，掩盖敏感侦察活动，或被用于宣传、散布虚假信息。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Zaobao</author><pubDate>Thu, 26 Feb 2026 10:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBDS3Y0SFc2eHQxRElUSmFsaDR4ZkN1a1doVTF2N3h2RHNKSVZ3ZEdfNUxSQTQtQmhLdGZQOGc1VmhPM0hpWUJqazdYaEY0QWExQl9TblpwRzRWREY1X3dVVGhQNm9INk9memc</guid></item><item><title>存储芯片成本持续攀升 手机厂商或于3月初集中调价 - 东方财富网</title><link>https://wap.eastmoney.com/a/202602263655085950.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content" id="articleContent"&gt;
                     &lt;a class="ftopicitem" data-code="qwjx" href="/topic/guanzhu.html?code=qwjx"&gt;
@@ -581,7 +621,7 @@
     
 
 &lt;/body&gt;
-</description><author>InfoQ 官网</author><pubDate>Thu, 26 Feb 2026 08:11:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWkFVX3lxTE5ELTJnLUdVSzNvM19jT09zQTNrSmNyMWJNOVRIMG9PRHBzcDdDdmczbnpPY3Nsbmg4QklfME1VX2JId0dDM2tnRXVGdFRKdEZsbnVIeDFzNXc5QQ</guid></item><item><title>三星无奈！Galaxy S26找美光买内存：自家兄弟一点优惠都不给 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105693.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+</description><author>InfoQ 官网</author><pubDate>Thu, 26 Feb 2026 08:11:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWkFVX3lxTE5ELTJnLUdVSzNvM19jT09zQTNrSmNyMWJNOVRIMG9PRHBzcDdDdmczbnpPY3Nsbmg4QklfME1VX2JId0dDM2tnRXVGdFRKdEZsbnVIeDFzNXc5QQ</guid></item><item><title>JDK 26 和 JDK 27：最新进展 - InfoQ 官网</title><link>https://www.infoq.cn/article/NJdeeHJDQ1GvdqeeEr4y</link><description>&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</description><author>InfoQ 官网</author><pubDate>Thu, 26 Feb 2026 08:11:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE9KdWhhSWpzUmVYeFJwQzNyMUwxQUdxcnV1OUZ0Ym1JS1M0QVFSaFpZc3dGX0J1RlZZRmdKWUZPUXh6ckN3N09FRWtWQ1U4ckoyZ1J3YnZuS2o5OV9ZV2c</guid></item><item><title>三星无奈！Galaxy S26找美光买内存：自家兄弟一点优惠都不给 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105693.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月26日消息，尽管三星贵为全球内存芯片巨头，但在2026年这一波史诗级的存储涨价潮中，自家的手机业务也没能拿到优待。&lt;/p&gt;
 &lt;p&gt;根据最新的行业报道，刚刚发布的Galaxy S26系列在内存供应上采取了极其罕见的策略。在其首批订单中，&lt;span&gt;&lt;strong&gt;大约有50%的机型并未采用三星自家DS部门的内存，而是选用了美光的LPDDR5X芯片。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -857,7 +897,11 @@ Li2SnS3界面相调控金属离子迁移示意图&lt;/p&gt;
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 07:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5fLXdVQTRnOXYtazhDanA3Nk5USGdwOHhVaExnQ1pCWkRpZjM5SkVRMlZtZXMyeFRTbEprdFVkYTZ6NkwxUU5qSXFmNDFZaV9aQm5qVHZvYVY</guid></item><item><title>RTX 5090暴力改造2000W 124℃警报无视！惨遭烧毁 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105670.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 07:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5fLXdVQTRnOXYtazhDanA3Nk5USGdwOHhVaExnQ1pCWkRpZjM5SkVRMlZtZXMyeFRTbEprdFVkYTZ6NkwxUU5qSXFmNDFZaV9aQm5qVHZvYVY</guid></item><item><title>中国籍商人在土耳其遭绑架杀害 加密货币被劫 - china.caixin.com</title><link>https://china.caixin.com/2026-02-26/102417176.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
+       &lt;p&gt;　　&lt;b&gt;【财新网】&lt;/b&gt;一名38岁中国籍商人王某在土耳其遭绑架遇害。2月23日，土耳其伊赫拉斯通讯社报道，王某的遗体在土耳其最大城市伊斯坦布尔的一处农田里被发现。目前已确认有10名嫌疑人，其中一人为女性。当地警方通过国际刑警组织发出逮捕令，10人均已在中国落网。&lt;/p&gt;
+&lt;p&gt;　　据伊赫拉斯通讯社，案件始于2026年1月24日，当时王某的律师向当地警察局报了失踪案，警方随后通过追踪王某所驾驶车辆的GPS信号，发现该车最后停留在伊斯坦布尔欧洲一侧、阿纳武特柯伊区的一处农田。警方派出的搜查队在现场挖掘后发现了王某被掩埋的遗体，且死者的手、脚和嘴部均被胶带绑住。现场视频显示，此处农田面积广阔，四周少有人烟。&lt;/p&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>china.caixin.com</author><pubDate>Thu, 26 Feb 2026 07:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiX0FVX3lxTFA3elZTYW9wQjU3TGZYYVNmRkYxM3kzdHk2SWlyd0N1T1poNGxhSnU1aG1lWnlpNy1wbmNUQ3plQklvbTkxUzRybk03aVA3M2hFTXhqQkhnNWxFdlkzUmFz</guid></item><item><title>RTX 5090暴力改造2000W 124℃警报无视！惨遭烧毁 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105670.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月26日消息，Overclock.net超频论坛网友“Vinz”讲述了他的一段悲惨遭遇，还是和罄竹难书的12V-2x6 16针供电接口有关。&lt;/p&gt;
 &lt;p&gt;他有一块ROG RTX 5090 ASTRAL夜神版水冷显卡，&lt;strong&gt;改装了分流电阻以解除功耗限制(shunt-modded)&lt;/strong&gt;，刷入超频BIOS，功耗限制最高解锁至2000W。&lt;/p&gt;
@@ -1775,7 +1819,77 @@ Li2SnS3界面相调控金属离子迁移示意图&lt;/p&gt;
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 01:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBMUWNEWHViLXZrcDFTd0F1Nm9NeWVpWlBLRl91LTFfWnNzVXlFT25iNWNEeXRuTHFPVGhaMUgwd0RiMUtNeGZJY2FYTUV3Qk1BVVo4V0hjOEw</guid></item><item><title>阿里云推出低价AI编程套餐 - Zaobao</title><link>https://www.zaobao.com.sg/news/china/story20260226-8640780</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;作为中国人工智能（AI）领域的领头羊之一的电商巨头阿里巴巴加大对软件编程工具的投入，以极低价格提供对国内数个顶尖AI模型的访问权限。&lt;/p&gt;&lt;p&gt;综合彭博社和华尔街见闻报道，总部位于杭州的阿里云说，公司正销售一款基于阿里巴巴千问3.5、智谱AI、月之暗面和稀宇科技等开源模型构建的编程工具，用户可以在这些模型之间自由切换。&lt;/p&gt;&lt;p&gt;阿里云透露，目前，轻量版首月订阅价仅为7.9元（人民币，下同，1.46新元），续费价格为每月40元。“专业版”首月价格为39.9元，续费价格为每月200元。&lt;/p&gt;&lt;p&gt;AI编程工具近几周受到密切关注，因为Anthropic PBC等公司推出的产品已在一些潜在的弱势行业引发投资者抛售潮。&lt;/p&gt;&lt;p&gt;例如，Anthropic本周为其Claude模型引入新的安全功能后，网络安全股随之大跌。此外，由于Anthropic声称Claude Code可以对运行在IBM计算机上的陈旧编程语言Cobol进行现代化改造，IBM股价创下自2000年以来的最大单日跌幅。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 01:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBMUWNEWHViLXZrcDFTd0F1Nm9NeWVpWlBLRl91LTFfWnNzVXlFT25iNWNEeXRuTHFPVGhaMUgwd0RiMUtNeGZJY2FYTUV3Qk1BVVo4V0hjOEw</guid></item><item><title>新版《最终幻想7》Steam再发售翻车！评论全是差评 - 3DM</title><link>https://www.3dmgame.com/news/202602/3938479.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;新版《最终幻想7》Steam再发售翻车！评论全是差评&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2026-02-26 09:45:33&lt;/span&gt;&lt;/p&gt;
+            &lt;ul class="intem"&gt;
+                                &lt;li&gt;来源：&lt;span class="weibo"&gt;Insidergaming&lt;/span&gt;&lt;/li&gt;
+                                                &lt;li&gt;作者：&lt;span class="name"&gt;3DM整理&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;TPJ&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2026/0226/1772068828324.png" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	《&lt;a target="_blank" href="https://www.3dmgame.com/games/ff7z/"&gt;最终幻想7&lt;/a&gt;》原版于今日在Steam平台重新发售，然而新版上线后的表现似乎并不理想。截至发稿前，游戏在Steam上的用户评价已跌至“褒贬不一”，而国区的评测因为没有中文的原因一致差评。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260226/1772070276_996369.png" alt="新版《最终幻想7》Steam再发售翻车！评论全是差评"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	此次《最终幻想7》原版Steam重新发售带来了多项新特性：玩家可以三倍速度进行战斗、移动及参与特定事件，此外还有随机遇敌开关、可在战斗中恢复HP/MP并让极限技槽直接满格的战斗强化模式，以及自动保存功能。
+&lt;/p&gt;
+&lt;p&gt;
+	据观察，玩家投诉主要集中在游戏新加入的加速功能上。玩家反映的问题包括：“战斗速度彻底崩坏”、“帧数上限从15提升至30，战斗和动作速度翻倍，但动画未同步适配，导致动作与音频不同步”，以及界面覆盖、纹理和画面撕裂等问题。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260226/1772070276_505093_png_r.webp" alt="新版《最终幻想7》Steam再发售翻车！评论全是差评"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	值得注意的是，部分评论指出官方已迅速做出反应，在发售当日即发布补丁尝试修复战斗速度问题。但这一举措能否挽回游戏的口碑，仍有待观察。
+&lt;/p&gt;                                &lt;/div&gt;
+                                                        &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+&lt;div class="news_warp_c"&gt;
+    &lt;div class="itemc"&gt;
+        &lt;a href="https://www.3dmgame.com/games/ff7z/" target="_blank" class="img_a"&gt;&lt;img class="cover" data-original="https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180524/1527126024_927209.jpg"&gt;&lt;/a&gt;
+        &lt;div class="text"&gt;
+            
+            
+            &lt;p class="clear"&gt;&lt;/p&gt;
+            &lt;ul class="ulwarp"&gt;
+                &lt;li class="lista"&gt;类型：&lt;span&gt;角色扮演&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;发行：&lt;span class="test"&gt;SQUARE ENIX CO.LTD.&lt;/span&gt;&lt;/li&gt;
+                &lt;li class="lista"&gt;发售：&lt;span&gt;2019年3月26日（Switch）&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;开发：&lt;span class="test"&gt;SQUARE ENIX CO.LTD.&lt;/span&gt;&lt;/li&gt;
+                &lt;li class="lista"&gt;语言：&lt;span&gt;简中 | 英文 | 日文&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;平台：&lt;span&gt;PC Switch XBOXONE&lt;/span&gt;&lt;/li&gt;
+                &lt;li class="listb"&gt;标签：&lt;span&gt;&lt;a href="https://www.3dmgame.com/tag/zhanzheng_1/" target="_blank" class="colr"&gt;战争&lt;/a&gt;，&lt;a href="https://www.3dmgame.com/tag/mohuan_1/" target="_blank" class="colr"&gt;魔幻&lt;/a&gt;，&lt;a href="https://www.3dmgame.com/tag/jrpg_1/" target="_blank" class="colr"&gt;JRPG&lt;/a&gt;
+                &lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Thu, 26 Feb 2026 01:45:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFBQVlhFU04yZTJwa2hrMnBBRjJweHFYWWxaY1B4LTUtVk5wV1BPR3pRZEJ6d0ZhaENzZkY2S3dOc0VpeXRCVnhtREFSbW9yUmhyZlY4cWhRQldkZjF6</guid></item><item><title>阿里云推出低价AI编程套餐 - Zaobao</title><link>https://www.zaobao.com.sg/news/china/story20260226-8640780</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;作为中国人工智能（AI）领域的领头羊之一的电商巨头阿里巴巴加大对软件编程工具的投入，以极低价格提供对国内数个顶尖AI模型的访问权限。&lt;/p&gt;&lt;p&gt;综合彭博社和华尔街见闻报道，总部位于杭州的阿里云说，公司正销售一款基于阿里巴巴千问3.5、智谱AI、月之暗面和稀宇科技等开源模型构建的编程工具，用户可以在这些模型之间自由切换。&lt;/p&gt;&lt;p&gt;阿里云透露，目前，轻量版首月订阅价仅为7.9元（人民币，下同，1.46新元），续费价格为每月40元。“专业版”首月价格为39.9元，续费价格为每月200元。&lt;/p&gt;&lt;p&gt;AI编程工具近几周受到密切关注，因为Anthropic PBC等公司推出的产品已在一些潜在的弱势行业引发投资者抛售潮。&lt;/p&gt;&lt;p&gt;例如，Anthropic本周为其Claude模型引入新的安全功能后，网络安全股随之大跌。此外，由于Anthropic声称Claude Code可以对运行在IBM计算机上的陈旧编程语言Cobol进行现代化改造，IBM股价创下自2000年以来的最大单日跌幅。&lt;/p&gt;
     
   &lt;p&gt;阿里巴巴在本月较早时发布旗舰AI模型的重大更新，旨在抢在深度求索（DeepSeek）升级之前占领市场。Qwen3.5旨在支持AI智能体任务，能够理解文本、图片和视频输入。公司补充称，这个模型能够分析长达两小时的视频内容。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Zaobao</author><pubDate>Thu, 26 Feb 2026 01:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5BQUw2V2JYY3ZmV2tYQ0g2bHRObzhXOVB0VEZ0cVBjbWpwYld0OW1XaU5uVWowSUlyMk52SEZvdTdjc2Q3VmRkQ2dHak11eXFla0JpRU55N3pqSFNzODd0bG5iREZGNkY5cWc</guid></item><item><title>早报｜魅族手机或成历史：被曝3月退市/英伟达营收再创历史新高/微信回应「重复文件吃内存」 - 爱范儿</title><link>https://www.ifanr.com/1655859</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
   
@@ -3500,7 +3614,7 @@ Li2SnS3界面相调控金属离子迁移示意图&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 25 Feb 2026 20:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5DeFBEbnJPM0loLS1GUnlvY2UtbUMyNEJHczJUT2tCOU5MR1RNVG8xLUFtNlJxVkFlazM5QkNMaGRXY2laY1NfcXpEQjlTbXhTeUpvR2s4VmxfTWxxT0FseUp0T08wclRFb2Y2QmNWVXdCZXVVb3JJTEFn</guid></item><item><title>1399元起售！三星Buds4/Pro正式发布：搭载SWB超清晰通话 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105572.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 25 Feb 2026 20:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5DeFBEbnJPM0loLS1GUnlvY2UtbUMyNEJHczJUT2tCOU5MR1RNVG8xLUFtNlJxVkFlazM5QkNMaGRXY2laY1NfcXpEQjlTbXhTeUpvR2s4VmxfTWxxT0FseUp0T08wclRFb2Y2QmNWVXdCZXVVb3JJTEFn</guid></item><item><title>相比中国，美国的人工智能“输”在哪里？ - 纽约时报中文网</title><link>https://cn.nytimes.com/opinion/20260226/china-america-manufacturing-ai/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;div class="article-paragraph"&gt;&lt;span&gt;特斯拉上海工厂的人均&lt;a rel="noopener noreferrer" target="_blank" href="https://research.gavekal.com/article/unraveling-chinas-productivity-paradox/"&gt;汽车产量远超&lt;/a&gt;其加利福尼亚州的工厂。这一差距反映出中国&lt;a rel="noopener noreferrer" target="_blank" href="https://thediplomat.com/2025/05/the-rise-of-ai-manufacturing-in-china-and-south-korea/"&gt;在制造业方面更广泛优势&lt;/a&gt;中令人不安的一点：中国已摸索出如何围绕自动化、机器人和人工智能的大规模部署来组织生产。而美国尚未做到这一点。&lt;/span&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;再工业化如今是少数能够获得两党支持的经济目标之一。从拜登开始到现在的特朗普，几届政府都把重建美国制造业作为优先事项。在华盛顿，人们往往把美国工厂与全球竞争对手之间的差距解释为不公平补贴、市场扭曲或其他形式的作弊所导致的结果。&lt;/p&gt;&lt;p class="article-paragraph"&gt;这些因素固然重要，但中国的政治体制自上而下迅速推动变革的能力同样关键。而美国面临的核心挑战也并非中国破坏规则。放眼全球，现代制造业已不再像20世纪中叶的工厂车间。如今，机器人技术、自动化和人工智能使得企业能够用更少的劳动力生产更多的产品，而留下的工人技术更好、收入也更高。与中国不同，美国未能正视这一现实，也没有建立起一种能够把自身技术优势转化为同等生产率提升的制造体系。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;span&gt;华盛顿在谈论人工智能时，仿佛它只存在于研究实验室、风险投资项目和数据中心里。中国则将人工智能视为工厂里实实在在的生产工具。如今，人工智能已深度融入中国加速自动化的进程——用于引导机器运行、安排生产进度并实时发现问题。中国已建成3万多家&lt;a rel="noopener noreferrer" target="_blank" href="https://research.gavekal.com/article/unraveling-chinas-productivity-paradox/"&gt;智能工厂&lt;/a&gt;。2024年全球新安装的工业机器人中&lt;a rel="noopener noreferrer" target="_blank" href="https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years"&gt;超过一半&lt;/a&gt;在中国的工厂里。香港&lt;/span&gt;&lt;p&gt;投资人&lt;/p&gt;&lt;span&gt;和经济学家单伟建的研究发现，从钢铁到造船等多个行业，这些工厂如今的&lt;a rel="noopener noreferrer" target="_blank" href="https://research.gavekal.com/article/unraveling-chinas-productivity-paradox/"&gt;人均产出&lt;/a&gt;已超过美国同类工厂。&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Wed, 25 Feb 2026 19:48:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMie0FVX3lxTE5RQ0ZPY1ZhMlFJZDQ0Z09ibndXTGprVjRQOTVjeGg1WXpJVGt0TnNIOXo2SkRDaC1laUE4WTNVVk9xVWxtbFdyQ3d1ZlM3RER6bEdBMEktVURhbUJ3bTJLVW1MemVNU1NIZkU4QkRxbnV1MzFoYWdyLVNRaw</guid></item><item><title>1399元起售！三星Buds4/Pro正式发布：搭载SWB超清晰通话 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105572.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月26日消息，今日凌晨，三星Galaxy Buds4系列耳机在Unpacked发布会上正式登场，&lt;span&gt;&lt;strong&gt;Galaxy Buds4和Galaxy Buds4 Pro分别售价为1399元和1899元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/feb24212-e902-4e24-9de1-df1895825d7a.png" target="_blank"&gt;&lt;img alt="1399元起售！三星Buds4/Pro正式发布：搭载SWB超清晰通话" h="372" src="//img1.mydrivers.com/img/20260226/Sfeb24212-e902-4e24-9de1-df1895825d7a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -3768,303 +3882,4 @@ Li2SnS3界面相调控金属离子迁移示意图&lt;/p&gt;
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Feb 2026 13:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBUTHJUdHoyU2pKR2hEclBCUTIwb3NlNHBaTHd6Y3JGRC1VTEtZVzNpemJ6LUpFVHphSEdPUVRCeVpyRnlxeDl5dUhKbGV0X0tjTTR1d1Y0RDI</guid></item><item><title>Intel统一CPU大小核：消失的是P核 E核才是大放光芒 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105532.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;Intel统一CPU大小核：消失的是P核 E核才是大放光芒&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-25 21:39:08  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105532-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月25日消息，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1105/1105072.htm" target="_blank"&gt;日前Intel的一则招聘信息暴露了他们要统一CPU核心&lt;/a&gt;，放弃21年12代酷睿引入的P+E核设计。&lt;/p&gt;
-&lt;p&gt;P、E核的优点与缺点这几年都很明确了，因此统一CPU内核的设计引发了大家的关注，但具体怎么统一还不好说，Intel官方并没有回应这个问题，而且未来两三年大概率也看不到产品落地。&lt;/p&gt;
-&lt;p&gt;之前的看法是P、E核消失，但是知名舅舅党Olrak29_否认了这个说法，给出了更详细的看法，&lt;span&gt;&lt;strong&gt;他认为Intel统一内核的做法跟AMD有些相似，&lt;/strong&gt;&lt;/span&gt;后者也有Zen5及Zen5c这样的设计，核心架构相同，但缓存、频率、功耗曲线及核心面积不同。&lt;/p&gt;
-&lt;p&gt;此外，&lt;strong&gt;Olrak29_认为Intel的统一内核实际上源于E核，&lt;/strong&gt;如果这个说法属实，那意味着Intel未来会放弃此前的P核设计，因为这种核心虽然性能强，但功耗大、散热容易失控，类似之前的14900K那样，而且不适合移动平台。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/0cb49e54-8569-4b2c-bfb2-8d3af664d03e.png" target="_blank"&gt;&lt;img alt="Intel统一CPU大小核：消失的是P核 E核才是大放光芒" h="419" src="//img1.mydrivers.com/img/20260225/S0cb49e54-8569-4b2c-bfb2-8d3af664d03e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从他的观点来看，&lt;strong&gt;Intel未来的统一CPU内核实际上更像是将目前的E核路线作为标准，而放弃当前的P核路线，通过缓存、频率等来区分。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果大家了解了这几代酷睿处理器的P核、E核表现，应该会认同Olrak29_的这个观点，最近几代的E核确实更优秀，虽然极限性能不如P核，但核心面积、能效曲线占优，IPC性能跟P核差距并不算大，这可能就是Intel计划用E核路线统一CPU内核的原因。&lt;/p&gt;
-&lt;p&gt;当然，最终如何选择，还得等Intel的成果出来才能对比，现在统一内核团队还在招人，产品问世应该不会那么快，过个三四年再操心谁能胜出吧。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Intel统一CPU大小核：消失的是P核 E核才是大放光芒" h="399" src="//img1.mydrivers.com/img/20260225/2c5bfba3-a86a-424d-babe-a7b7f109e36a.jpg" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Feb 2026 13:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9fWjQ2N21GaVlrQUMteG9vaG9peXA2aVJzcHR2TWpoSUgxMzFlX0lCaUVPdERxUXJaTjJFaHRyQ3NMT0JlVjhxZjJXQ015b3Nfdjd3Skh1V3Q</guid></item><item><title>使用模型受限制 五角大楼拟终止与Anthropic合作 - Zaobao</title><link>https://www.zaobao.com.sg/news/world/story20260225-8517448</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（华盛顿路透电）据悉，美国五角大楼正考虑终止与人工智能（AI）公司Anthropic的合作关系，原因是该公司坚持对美军如何使用其Claude聊天机器人模型设限。&lt;/p&gt;&lt;p&gt;美国新闻网站Axios日前引述美国政府官员的消息报道，五角大楼正敦促包括OpenAI和谷歌在内的四家AI公司允许军方将其工具用于“所有合法用途”，包括武器研发、情报收集和战场行动等领域，但Anthropic尚未同意这些条款，经过数月谈判，五角大楼已感到不耐烦。&lt;/p&gt;&lt;p&gt;Anthropic发言人说，该公司尚未与五角大楼讨论Claude模型的具体使用问题，目前与美国政府的对话主要围绕特定使用政策展开，包括对完全自主武器和大规模国内监控的硬性限制，而这些均与当前军事行动无关。&lt;/p&gt;&lt;p&gt;五角大楼并未回复路透社的置评请求。《华尔街日报》早前报道，美军在抓捕委内瑞拉总统马杜罗的行动中，使用了Anthropic的AI模型Claude，凸显AI模型在五角大楼扮演的角色日益吃重。&lt;/p&gt;&lt;p&gt;据悉，Anthropic是第一个由五角大楼用于机密行动的AI模型开发商。&lt;/p&gt;
-    
-  &lt;p&gt;据报道，在委内瑞拉的行动中，可能还有其他AI工具用在非机密任务上，从文件摘要到控制自主无人机都是潜在用途范围。 &lt;/p&gt;&lt;p&gt;据路透社报道，五角大楼正在敦促OpenAI和Anthropic等几家顶级AI公司，使其AI工具能在保密网络上使用，且不受这些公司通常对用户施加的诸多限制。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Zaobao</author><pubDate>Wed, 25 Feb 2026 13:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE13N0czYllWeHVucEx0aHZhZE9tTW1icDBHS0lJM1h2dDRYZldUc1NvQWNSQTIyVXZ6LUMyUVVOLTlJYmRkdC1hZ2JLeGFWTWJJLXZLLVB0c2hyWG45cjVmX0U0ZTcyZUdYY3c</guid></item><item><title>ASML全新EUV光刻机性能暴涨 内幕揭秘：中国留学生扛大梁 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105524.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月25日消息，荷兰ASML是目前唯一能量产EUV光刻机的公司，当前的EUV依然存在很多问题，特别是光源功率不足，严重限制了产能提升。&lt;/p&gt;
-&lt;p&gt;ASML日前宣布了一项重要进展，&lt;span&gt;&lt;strong&gt;那就是将EUV光源功率翻倍提升到了1000W&lt;/strong&gt;&lt;/span&gt;，实现了革命性的提升，详细的介绍可以参考之前的报道：&lt;a class="f14_link" href="https://news.mydrivers.com/1/1105/1105363.htm" target="_blank"&gt;ASML全新EUV光刻机重大飞跃！1000W功率+50％、产能+50％。&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;简单总结一下就是：当前EUV光刻机功率在600W左右，导致产能只有220片晶圆/小时，&lt;strong&gt;提升到1000W功率之后，产能将提升到330片晶圆/小时。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;实现这一突破的原理在于ASML用1um的预脉冲PP取代了之前10um的预脉冲，同时锡滴喷射频率从之前每秒5万个提升到了10万个，因此可以产生更多的EUV光。&lt;/p&gt;
-&lt;p&gt;这一技术不仅可以做到1000W功率，&lt;strong&gt;未来还可以进一步提升到1500W甚至2000W级别，&lt;/strong&gt;意味着EUV光刻机未来的效率和产能还会继续提升，将极大地降低EUV芯片的生产成本。&lt;/p&gt;
-&lt;p&gt;不过目前这个技术还没有量产，至少还要几年时间。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/8f77ee3e-a276-44e5-a7af-ab1b890cdd9b.png" target="_blank"&gt;&lt;img alt="ASML全新EUV光刻机性能暴涨 内幕揭秘：中国留学生扛大梁" h="213" src="//img1.mydrivers.com/img/20260225/S8f77ee3e-a276-44e5-a7af-ab1b890cdd9b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;总之，ASML这次公布的EUV技术意味着他们在这方面的优势再次加强了，其他竞争者想挑战他们的难度大增。&lt;/p&gt;
-&lt;p&gt;此外，值得注意的是这次技术的问世背后，研究团队中有除了欧美的人员之外，还有多名中国研究员，&lt;span&gt;&lt;strong&gt;论文的多个作者中有Qiushi Zhu、Yue Ma及Haining Wang，而Haining Wang不仅是排名第一的作者，也是这篇论文的演讲者。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/1444054a-8e43-460d-bc7e-d2b9a0c5bca2.png" target="_blank"&gt;&lt;img alt="ASML全新EUV光刻机性能暴涨 内幕揭秘：中国留学生扛大梁" h="156" src="//img1.mydrivers.com/img/20260225/S1444054a-8e43-460d-bc7e-d2b9a0c5bca2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从Haining Wang的履历来看，他20多年前获得了国家优秀自费留学生奖，2016年在美国康奈尔大学获得了博士学位，2016年加入了ASML公司，在EUV研究部门中担任了科学家及架构师，专注于研究LPP等离子体技术路线的结果和基础物理。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260225/3727769b0d1745edbb57216224a428df.jpg" target="_blank"&gt;&lt;img alt="ASML全新EUV光刻机性能暴涨 内幕揭秘：中国留学生扛大梁" h="400" src="//img1.mydrivers.com/img/20260225/s_3727769b0d1745edbb57216224a428df.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Feb 2026 13:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9taUpCQi1OLThhVE9SNEpFcjBMdFB0ajB1Q3p2ZmZtXzhJcjhnVlZ3bGotWDFHMmhmUHR2SXl0TFAzeWdySEdTdEhNOXl4X2Y1TFJoRFBxSkU</guid></item><item><title>英伟达今夜财报大考：要多强才能扭转AI泡沫恐慌？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766173</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 25 Feb 2026 12:37:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1sNHlxcURZYlg1ZTI3dEU3VGhtdWQwb1VtOThuYkZQT2RzbEJGXzhHWEpYWHhoYjhIODlvUjRvY190MVdCOWRFeENKM2pTSHBLVHJj</guid></item><item><title>又一大厂加入10000mAh阵营！vivo万级大电池已在路上：淘汰充电宝 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105516.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;又一大厂加入10000mAh阵营！vivo万级大电池已在路上：淘汰充电宝&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-25 20:25:10  出处：&lt;/p&gt;&lt;a href="https://mobile.pconline.com.cn/2102/21025493.html" rel="nofollow"&gt;太平洋科技&lt;/a&gt;&lt;p&gt;  作者：Ocean  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105516-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;博主数码闲聊站爆料，vivo正在测试一款搭载万级超大容量电池的新机，该机核心采用4.53V单电芯硅电池技术，额定电池容量达10000mAh，&lt;span&gt;&lt;strong&gt;典型值更是达到11000mAh-12000mAh±，在续航配置上迎来大幅突破。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;此次vivo测试的新机，核心亮点在于全新的电池技术与超大容量，单电芯硅电池的选用，也是当下手机行业提升电池能量密度、实现大容量的主流技术方向，能在控制机身内部空间的同时，带来更强劲的续航表现。&lt;/p&gt;
-&lt;p&gt;该消息一出也引发网友热议，有网友在评论区询问小米的大电池新机规划，博主回应称小米相关机型也在规划中，且该有的配置都会齐全。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/4fa4d98e-14d3-4d98-82f4-8ea3d438f23a.jpg" target="_blank"&gt;&lt;img alt="又一大厂加入10000mAh阵营！蓝厂万级大电池已在路上：淘汰充电宝" h="337" src="//img1.mydrivers.com/img/20260225/S4fa4d98e-14d3-4d98-82f4-8ea3d438f23a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;还有网友关注今年旗舰机型能否搭载9000mAh级别电池，博主也给出了明确答案，称手机品牌的子系机型可以展望9000mAh电池，而母系旗舰机型暂时无法做到这一配置，目前vivo主品牌旗舰的电池容量还未达到7000mAh，也从侧面印证了大电池在旗舰机型上的研发与设计难度。&lt;/p&gt;
-&lt;p&gt;从行业发展来看，国产手机的电池容量在近年实现了突飞猛进的提升，&lt;strong&gt;当前市场主流机型的电池容量已普及7000mAh-8000mAh，部分机型更是突破9000mAh，万级大电池也开始成为行业新的研发方向。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此前已有消息透露，realme真我和小米REDMI的中端机型，也都计划跟进万级大电池配置，长续航成为手机厂商的重要竞争赛道。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/3e2e0eeb7e634e6bbcb89df6b752eba8.jpg" target="_blank"&gt;&lt;img alt="又一大厂加入10000mAh阵营！蓝厂万级大电池已在路上：淘汰充电宝" h="399" src="//img1.mydrivers.com/img/20260225/s_3e2e0eeb7e634e6bbcb89df6b752eba8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;编辑点评：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;vivo开始测试万级单电芯硅电池新机，将手机续航卷至新高度，4.53V方案也兼顾了电池技术与容量的平衡。大电池已成行业新赛道，红米、真我等也紧跟布局，只是旗舰机型受设计限制难上大容量，高低端机型的续航配置分化或将愈发明显。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260225/6c3448666691444cb17163a9a0b0f080.jpg" target="_blank"&gt;&lt;img alt="又一大厂加入10000mAh阵营！蓝厂万级大电池已在路上：淘汰充电宝" h="400" src="//img1.mydrivers.com/img/20260225/s_6c3448666691444cb17163a9a0b0f080.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Feb 2026 12:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0xNWJMNVJGXzdqWXU4c2d6QWNsZVBYSEsyWUNJQlRjTjg4TkQ2cmlZNzVUb3B1OFpXSlp6SWdOc0kxdk43TmV2N3dsbmkwQzJoSnp0cTZ0X20</guid></item><item><title>旗舰大乱斗！3月新机盘点：科技春晚来了 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105515.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;春节假期结束后，不少新机即将面市，接下来我们就来汇总下目前的曝光配置。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;OPPO Find X9 Ultra&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;其实在春节前，OPPO“超大杯”Find X9 Ultra的影像配置就曾曝光，据传该机将采用一颗2亿像素的1/1.28"超大底潜望长焦，搭配50Mp 10X潜望超长焦、主摄、超广角镜头组成四摄组合，支持外挂增距镜，望远能力将会相当出众。&lt;/p&gt;
-&lt;p&gt;网传OPPO Find X9 Ultra工程机采用四摄布局，机身左侧有按键。其他配置方面，有消息称该机将采用7000+mAh电池，其他外围配置也都很全面均衡。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260225/5acd46d7ebba46b69d1c3577ca800144.jpg" target="_blank"&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="399" src="//img1.mydrivers.com/img/20260225/s_5acd46d7ebba46b69d1c3577ca800144.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;vivo X300 Ultra&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;vivo X300 Ultra也是一款影像配置出众的旗舰机型，曝光消息称该机将配备一块6.82英寸的2K分辨率直屏，采用京东方供应的面板，后置三摄组合，包含2亿像素1/1.12" 35mm定制主摄+50Mp 1/1.28"超广角+高素质潜望长焦，组成全大底三摄组合，搭配定制多光谱视频能力出色。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/c58001f6-7c12-4da0-aa82-042dd4780fe0.jpg" target="_blank"&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="365" src="//img1.mydrivers.com/img/20260225/Sc58001f6-7c12-4da0-aa82-042dd4780fe0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;值得一提的是，vivo X300 Ultra大概率也将支持增距镜，大幅提升手机的望远能力，特别适用于演唱会、舞台摄影等远距离拍摄场景。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;荣耀Magic V6&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;荣耀正式公布Magic V6折叠屏的赤兔红版本，其后盖采用绒马环保皮革材质，并覆以超级纳米涂层，实现防水、耐刮擦与耐腐蚀三重防护能力，兼顾视觉美感与长期使用可靠性。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/b78ea272-23c5-433d-b397-883ebc740019.jpg" target="_blank"&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="344" src="//img1.mydrivers.com/img/20260225/Sb78ea272-23c5-433d-b397-883ebc740019.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从官方公布的渲染图可以看出，荣耀Magic V6的后置影像模组采用八边形Deco布局，赤兔红版本后盖表面压印细腻丝绒纹理，中框及镜头装饰环融入金色元素。&lt;/p&gt;
-&lt;p&gt;其他配置方面，曝光消息称Magic V6将搭载第五代骁龙8至尊版移动平台，内置7000+mAh大容量电池，同时支持120瓦有线超级快充，提升日常续航表现。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;iPhone 17e&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;消息曝光称iPhone 17e或将于3月初面市，依照惯例该机将不会有官方特别活动，发布即上市。相比iPhone 16e，该机的屏幕配置变化不大，仍为6.1英寸OLED+60Hz配置，边框有所缩窄。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="461" src="//img1.mydrivers.com/img/20260225/bfbcfdcd-55b9-4909-b925-85b962f6df6f.jpg" w="595"&gt;&lt;/p&gt;
-&lt;p&gt;为了支持Apple Intelligence，iPhone 17e的性能将大幅升级，预计将搭载iPhone 17同款的A19芯片，GPU核心数可能比Pro系列少1-2核心，但其CPU单核性能依然强劲，起步存储直接拉高至256GB。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="397" src="//img1.mydrivers.com/img/20260225/444f99f7-abe1-4392-b5f0-73f48d404d74.jpg" w="591"&gt;&lt;/p&gt;
-&lt;p&gt;其他配置方面，iPhone 17e将采用一颗4800万像素的高像素传感器。通过A19芯片和计算摄影算法，影像素质还是挺值得期待的。&lt;/p&gt;
-&lt;p&gt;同时该机的前置镜头有望升级至1800万像素，并支持自动对焦。值得一提的是，该机有可能成为首款搭载苹果自研5G调制解调器（代号C1X）的机型，在搜网速度和弱网环境下的表现值得期待。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一加15T&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一加官方已经发布一款“小屏党的梦中情机”发布会邀请函，结合曝光消息其大概率为一加15T。目前关于该机的曝光配置还比较少，我们可以结合前代产品一加13T简单做个前瞻。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/dd60163f-79a8-4e61-aef2-45cd7f9501f4.jpg" target="_blank"&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="450" src="//img1.mydrivers.com/img/20260225/Sdd60163f-79a8-4e61-aef2-45cd7f9501f4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一加13T采用6.32英寸的小屏设计，机身宽度仅71.7mm，重量185g，屏幕支持8T LTPO电路设计、1.5K分辨率、明眸护眼2.0技术，配置全面。该机搭载骁龙8至尊版移动平台，内置6260mAh大电池，续航够持久。&lt;/p&gt;
-&lt;p&gt;在一加13T的基础上，一加15T将带来怎样的配置升级，值得期待。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;OPPO Find N6&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;OPPO新款折叠屏Find N6也已经开启预热，从官方海报以及预热信息来看，其核心突破集中在屏幕折叠技术上，展开后的屏幕平整度有望趋近直板旗舰，彻底告别“沟壑感”带来的视觉与触控干扰。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/93f11e21-d6e6-47d4-857f-6f7a9fe3c1b8.jpg" target="_blank"&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="800" src="//img1.mydrivers.com/img/20260225/S93f11e21-d6e6-47d4-857f-6f7a9fe3c1b8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;影像方面，OPPO Find N6或延续哈苏联合调校，并首次升级为四摄系统。按照OPPO Find系列的影像风格，Find N6的影像组合不仅保留了哈苏标志性的自然色彩，更强化了长焦与场景适配能力，无论是日常人文抓拍，还是远距离风光创作，都能呈现专业级成片质感。&lt;/p&gt;
-&lt;p&gt;结合Find系列的旗舰定位来看，Find N6大概率会延续家族式的核心配置思路，在性能调度、续航表现上保持旗舰水准，最终呈现出均衡的使用体验。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nothing Phone 4(a)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;以设计闻名的Nothing Phone系列新机Nothing Phone(4a)将于3月5日正式发布，根据曝光消息该机采用6.78 英寸120Hz AMOLED屏幕，搭载骁龙7s系列处理器，机身背面的“Glyph”灯阵由63颗LED灯珠组成。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260225/569e2ef6-9a78-4a43-876c-6a39b3393c5f.jpg" target="_blank"&gt;&lt;img alt="旗舰大乱斗！3月新机盘点：科技春晚来了" h="366" src="//img1.mydrivers.com/img/20260225/S569e2ef6-9a78-4a43-876c-6a39b3393c5f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其他配置方面，消息称Nothing Phone (4a) 还将有Pro版本，采用6.83英寸144Hz AMOLED屏幕，后置50MP主摄 + 140倍混合变焦长焦镜头，内置5080mAh 电池，支持IP65防尘防水。&lt;/p&gt;
-&lt;p&gt;你最期待哪款新机？评论区聊聊吧。&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Feb 2026 12:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8wQ0xFVEdTZ0dJajRnS00xbVFQeW1XQXNnWEV3VzBFQk91U3dCWV9UcjFESzVSdU14NGlQOEo0Z3FsOVlsd1F3NjA1YjhpY1h5S3ZvQndGWlA</guid></item><item><title>别了，OpenClaw，19个顶尖AI夜袭硅谷，3万刀金融终端变「废铁」 - 36 Kr</title><link>https://m.36kr.com/p/3699607766839176</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;blockquote&gt;
-   &lt;p&gt;OpenClaw被谷歌封禁之后，Perplexity扔出深水炸弹，重磅上线Perplexity Computer，让全球19个顶尖AI集体打工，全程不用动手。与此同时，Anthropic官宣的一场重磅收购，让Claude执行力迎来质变。&lt;/p&gt;
-  &lt;/blockquote&gt;
-  &lt;p&gt;OpenClaw最强平替来了！&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,309" src="https://img.36krcdn.com/hsossms/20260226/v2_5cc9fae015c6486fb24bd019418cc15d@1743780481_oswg78084oswg1080oswg309_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,859" src="https://img.36krcdn.com/hsossms/20260226/v2_652e951359604f20ba28f8ed907ba26a@1743780481_oswg494270oswg1080oswg859_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;今天，&lt;strong&gt;Perplexity重磅发布「Perplexity Computer」，一键将全球最强AI装进入一个系统&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,630" src="https://img.36krcdn.com/hsossms/20260226/v2_4d12bf4df20c4b56850efd590231d94f@1743780481_oswg173272oswg1080oswg630_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;它可以「端到端」完成全流程任务，包括研究、设计、编写代码、部署、管理任何项目。&lt;/p&gt;
-  &lt;p&gt;更具体讲，Perplexity Computer是一个极其强大的多模态系统，&lt;strong&gt;通过精密的编排，让多个AI智能体并行工作&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;其背后逻辑是，让Claude Opus将不同子任务，分配给最适合的模型，&lt;strong&gt;多达19个模型&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,572" src="https://img.36krcdn.com/hsossms/20260226/v2_0aeacaf2397b424e8d83cc4bc0ea30e1@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;它会自动为每一步选择最佳模型，推理用Claude、研究用Gemini、追求速度用Grok，&lt;strong&gt;并且能在后台自主运行数小时，甚至数天&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,626" src="https://img.36krcdn.com/hsossms/20260226/v2_13bc6057ad1242c1afecf510317b43c9@1743780481_oswg341065oswg1080oswg626_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;就在Perplexity押注Agent操控电脑的同时，&lt;strong&gt;Anthropic也毫不示弱。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;同在今天，Anthropic闪电收购初创Vercept，核心能力将在未来几周并入Claude。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1060" src="https://img.36krcdn.com/hsossms/20260226/v2_bd1071897b7946498e78042331e6b937@1743780481_oswg224555oswg1080oswg1060_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;Perplexity Computer夜袭硅谷，19个大模型集体打工&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;Perplexity Computer，定义了2026年个人电脑应有的样子。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,120" src="https://img.36krcdn.com/hsossms/20260226/v2_4d71d904108446ae9ceab7fa887ac762@1743780481_oswg44412oswg1080oswg120_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;它为个人量身定制，不仅能记住用户过去的工作，而且默认安全可靠。&lt;/p&gt;
-  &lt;p&gt;系统还内置了数百个连接器，拥有持久记忆，可直接访问文件和互联网。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,540" src="https://img.36krcdn.com/hsossms/20260226/v2_586ca1cd19de4c709fdd9a250c5a3a25@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;无论是清空待办事项、推进进行中的项目，还是开启一个新的业余项目，Perplexity Computer全部可以拿捏。&lt;/p&gt;
-  &lt;p&gt;如今，不再局限于任何单一任务，人们可以像指挥乐团一样，同时推进数百个项目。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,629" src="https://img.36krcdn.com/hsossms/20260226/v2_28a2790e156b45078f252831f716209b@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;Perplexity科学家表示，这是为普通人打造的OpenClaw，也是合作过最聪明的「同事」。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,243" src="https://img.36krcdn.com/hsossms/20260226/v2_b9127d3c21674c6bb76c82e51c006e2b@1743780481_oswg37056oswg1080oswg243_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;可以说，Perplexity Computer的诞生，标志着个人计算正式进入了「全能Agent」时代。&lt;/p&gt;
-  &lt;p&gt;假设想要了解「英伟达的估值低了吗」，让Computer去整理AMD、AVGO、INTC、QCOM、TSMC多家公司订单情况，并在web中做可视化展示。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,540" src="https://img.36krcdn.com/hsossms/20260226/v2_1f5ab556ef5841a3be839659672423df@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;Perplexity Computer还能从最新的Dario Amodei播客，找到他讨论「模型差异化」的片段。&lt;/p&gt;
-  &lt;p&gt;AI能剪辑出这段视频，把画面转成适合TikTok的竖屏，并配上了字幕。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,540" src="https://img.36krcdn.com/hsossms/20260226/v2_05ca9c865c8249d8ba93abbd1304d022@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;再比如，想要买一所Walter White的房子，然后把它改成短租房。&lt;/p&gt;
-  &lt;p&gt;想要测算下这套房在Airbnb上出租的投资回报情况，Computer可以帮你搭好一个财务模型。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,540" src="https://img.36krcdn.com/hsossms/20260226/v2_e1fdcf87f5604e3d80ac950c16ca2276@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;值得一提的是，Perplexity Computer强大实力背后，站着一位深藏不露的技术灵魂人物。&lt;/p&gt;
-  &lt;p&gt;他便是Alex Graveley，曾是GitHub Copilot总架构师。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,395" src="https://img.36krcdn.com/hsossms/20260226/v2_9c3e6161cae341148d88e0ffdfafd1d6@1743780481_oswg136371oswg1080oswg395_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;入职Perplexity两年时间里，他还打造了AI原生浏览器Comet&lt;/p&gt;
-  &lt;p&gt;目前，Perplexity Computer在Web端向Max订阅用户开放，每月10,000个积分。&lt;/p&gt;
-  &lt;p&gt;核心模式采用「按量计费」，人们可以为不同的子智能体选择特定模型，并设置token上限。&lt;/p&gt;
-  &lt;p&gt;为了庆祝发布，现有用户和新注册用户都将获得20,000积分限时奖励，有效期30天。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;创始人深度长文：AI就是计算机&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;Perplexity Computer发布之后，创始人Aravind Srinivas发表的一篇深度长文，重新定义了AI时代下「计算机」的概念。&lt;/p&gt;
-  &lt;p&gt;他直言不讳地指出，单一模型由于缺乏「跨家族协作」，已成为生产力的瓶颈。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,687" src="https://img.36krcdn.com/hsossms/20260226/v2_b50e495a44814e60b109e75515d1bef8@1743780481_oswg450174oswg1080oswg687_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;文中，他首次公开了内部代号为「ASI」的秘密实验。&lt;/p&gt;
-  &lt;p&gt;最初，这只是一个Slack插件，但展现出恐怖的进化能力——&lt;/p&gt;
-  &lt;p&gt;它像一个数字员工，能自主拆解任务、创建子智能体、调用数百个工具、甚至在云端沙盒里写代码。&lt;/p&gt;
-  &lt;p&gt;AI不再是一个简单的对话框，而是一个拥有文件系统、浏览器和Shell权限的完整「电脑」。&lt;/p&gt;
-  &lt;p&gt;不仅如此，Srinivas还剖析了计算历史的变迁：从2011年谷歌Chromebook误判了「读」的难度，到如今AI彻底解决信息的检索与合成。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,608" src="https://img.36krcdn.com/hsossms/20260226/v2_1efecbf189794cc5ac8aac01ac58ad90@1743780481_oswg469951oswg1080oswg608_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;他认为，未来的电脑不再是繁琐的GUI，应当由19个甚至更多AI组成的「交响乐团」。&lt;/p&gt;
-  &lt;p&gt;Claude最大的弱点在于，它只能跟Claude协作。&lt;/p&gt;
-  &lt;p&gt;而真正的「超级智能」应该让擅长代码的模型写代码，擅长推理的模型搞逻辑。&lt;/p&gt;
-  &lt;p&gt;Srinivas表示，2025年，平均每17天就有一个新模型面世，计算的护城河将从底层代码，转向对异构模型的调度能力。&lt;/p&gt;
-  &lt;p&gt;这种「交响乐式」的协作范式，预示着传统OS的护城河正在崩塌，一个「AI即电脑」的时代已经到来。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,344" src="https://img.36krcdn.com/hsossms/20260226/v2_8ce6c3bf701d48278e6152ee43ac607c@1743780481_oswg211886oswg1080oswg344_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;一键打造金融APP，秒杀3万刀工具&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;比起Perplexity的自卖自夸，全网的实测更有说服力。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,287" src="https://img.36krcdn.com/hsossms/20260226/v2_1050892db0a54d8f8aa5d312daf05889@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;可选择自我偏好的三款模型：Claude、Gemini、GPT&lt;/p&gt;
-  &lt;p&gt;这不，它正在颠覆传统的高端金融工具了......&lt;/p&gt;
-  &lt;p&gt;通过多模型协作，Perplexity Computer一次性构建出媲美Bloomberg的「实时金融终端」。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,584" src="https://img.36krcdn.com/hsossms/20260226/v2_d624fecdea4240b19b779a7adc2b370e@1743780481_oswg246607oswg1080oswg584_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;下面演示中，它可以针对英伟达股票进行深度分析，包括股价图表、公司信息、财务摘要和市场洞察。&lt;/p&gt;
-  &lt;p&gt;要知道，Bloomberg终端年费高达3万美元，主要价值在于实时数据、网络和专家访问。&lt;/p&gt;
-  &lt;p&gt;网友直言，Bloomberg的界面垄断地位，怕是要被终结了。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,643" src="https://img.36krcdn.com/hsossms/20260226/v2_73a6310a01d84f838e49826340fb5f32@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;更厉害的是，仅一句话，Perplexity Computer做出了一个能显示全球卫星实时位置的Web应用。&lt;/p&gt;
-  &lt;p&gt;它从CelesTrak抓取了 10个卫星星座中，大约1,500颗卫星的两行元素（TLE）轨道数据。&lt;/p&gt;
-  &lt;p&gt;然后，利用satellite.js库进行 SGP4 轨道外推计算，每秒更新一次，把每颗卫星的开普勒轨道根数实时转换成地理位置。&lt;/p&gt;
-  &lt;p&gt;在执行具体任务中，Computer可以自主将任务分配给不同的模型。&lt;/p&gt;
-  &lt;p&gt;开发者让其在GitHub提交PR， Gemini进行探索，而Opus去写代码。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1203" src="https://img.36krcdn.com/hsossms/20260226/v2_6fe6796e883644e1a29af7f5a7f016dc@1743780481_oswg366867oswg1080oswg1203_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;它还可以0样本构建详细的英伟达估值分析。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="640,326" src="https://img.36krcdn.com/hsossms/20260226/v2_6393dc4f13e64932b550284aa0213dd0@1743780481_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;Anthropic再出手，Claude像人一样操控电脑&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;OpenClaw如今成为最新顶流，就连Anthropic也在不断强化Claude「动手能力」。&lt;/p&gt;
-  &lt;p&gt;今天，Anthropic正式宣布收购AI初创公司Vercept。&lt;/p&gt;
-  &lt;p&gt;这一动作目标极其明确——让Claude「电脑使用」（Computer Use）能力，从会操作到像人一样思考。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,252" src="https://img.36krcdn.com/hsossms/20260226/v2_a1d47d7a37f746618e8f70a079b7c37f@1743780481_oswg60828oswg1080oswg252_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;长期以来，Agent处理复杂任务的瓶颈在于，无法像人类一样感知和交互软件。&lt;/p&gt;
-  &lt;p&gt;Vercept，正是解决这一难题的高手。&lt;/p&gt;
-  &lt;p&gt;它由前Meta、Ai2业界大牛Ross Girshick、Luca Weihs、Kiana Ehsani于2024年创办。&lt;/p&gt;
-  &lt;p&gt;成立以来，Vercept一直深耕于AI系统如何像人类一样，在日常软件中「观察」并「行动」。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1172" src="https://img.36krcdn.com/hsossms/20260226/v2_5ca84d9d09f54944a86d78e99d188946@1743780481_oswg298263oswg1080oswg1172_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;这种专业积淀与Anthropic目前正全力攻克的顶级难题高度契合。&lt;/p&gt;
-  &lt;p&gt;上一周，Claude Sonnet 4.6在「计算机使用」上实现了令人惊叹的表现——&lt;/p&gt;
-  &lt;p&gt;在OSWorld基准测试中，它已从2024年底不足15%狂飙至如今的72.5%，正逼近人类水平。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,548" src="https://img.36krcdn.com/hsossms/20260226/v2_afbdc173ea6741b8abb3e35af82010c8@1743780481_oswg95596oswg1080oswg548_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;未来几周，Vercept的能力将全面集成到Claude中。&lt;/p&gt;
-  &lt;p&gt;继收购Bun之后，Anthropic再次通过降维打击，向外界宣告：未来AI的竞争，更要看谁的「手」更好使。&lt;/p&gt;
-  &lt;h3&gt;参考资料：&lt;/h3&gt;
-  &lt;p&gt;https://x.com/natjjin/status/2026741364038488322?s=20&lt;/p&gt;
-  &lt;p&gt;https://www.perplexity.ai/products/computer&lt;/p&gt;
-  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/2uiyc4O6ASQnJL80SU4TsA"&gt;“新智元”&lt;/a&gt;，作者：桃子 ，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Wed, 25 Feb 2026 12:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9qX3hEN1I5WTlsTDFab25xSVN0RjBmTmtyWjlGckd5WENOMk14Yk5sTWlCcDZmMkdSUzgtUWtkcENYaHVYWUQ3a1oyNC12dw</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Feb 2026 13:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBUTHJUdHoyU2pKR2hEclBCUTIwb3NlNHBaTHd6Y3JGRC1VTEtZVzNpemJ6LUpFVHphSEdPUVRCeVpyRnlxeDl5dUhKbGV0X0tjTTR1d1Y0RDI</guid></item></channel></rss>
