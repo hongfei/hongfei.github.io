@@ -1,5 +1,631 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>芯片制造重大突破？阿斯麦下一代EUV已能用于大规模量产，造价翻倍！ - 财联社</title><link>https://www.cls.cn/detail/2296643</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社2月26日讯（编辑 黄君芝）&lt;/strong&gt;据报道，全球光刻机龙头阿斯麦（ASML）的一位高管最新表示，其下一代芯片制造设备已准备就绪，可以供应芯片制造商用于大规模量产，这对芯片行业来说是一个重大进展。&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>DX12重大升级！SM 6.9、光追全新升级 NVIDIA独家支持 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105880.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，&lt;span&gt;&lt;strong&gt;微软发布了DirectX 12 Agility SDK 1.619正式版、1.719预览版，包含新版Shader Model 6.9(SM 6.9)，以及DXR 1.2光追的两项重要更新。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Agility SDK是微软用来推送新版DX12功能的一种方式，不需要等待Windows Update，游戏可以直接打包新版运行时，只需要兼容的GPU显卡硬件和驱动支持即可。&lt;/p&gt;
+&lt;p&gt;DX12 Agility SDK 1.619包含了新版SM 6.9，主要升级了着色器语言和最低功能需求。&lt;/p&gt;
+&lt;p&gt;开发者为DX编写GPU程序的通用语言叫HLSL，而SM正是HLSL着色器的“特性等级”(feature level)。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260227/4ab247baae7447d087a84f3679284456.jpg" target="_blank"&gt;&lt;img alt="DX12重大升级！SM 6.9、光追全新升级 NVIDIA独家支持" h="312" src="//img1.mydrivers.com/img/20260227/s_4ab247baae7447d087a84f3679284456.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SM 6.9重点新增了“长向量”(Long Vector)，有了它着色器就可以直接使用超过4个分量、最长达1024个分量的向量，不再需要繁琐的打包处理。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;同时，&lt;strong&gt;一些原本是可选的特性，在支持SM 6.9的硬件上变为必需&lt;/strong&gt;，包括：&lt;/p&gt;
+&lt;p&gt;原生16位着色器运算、Wave操作(线程组内通信)、64位整数运算。&lt;/p&gt;
+&lt;p&gt;DXR 1.2光追的两项重要升级分别是：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1、不透明度微贴图(Opacity Micromaps)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;早就有了，不过这次是正式发布，最后一部分HLSL相关接口也不再标记为预览。&lt;/p&gt;
+&lt;p&gt;新版主要优化了带Alpha测试的几何体，比如栅栏、植被、镂空纹理，这类物体在光追中的开销通常很高，容易走昂贵的着色器分支。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、着色器执行重排序(SER)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;也结束了预览阶段，成为正式版。&lt;/p&gt;
+&lt;p&gt;SER可以让GPU对相似的光线任务进行重新分组，从而更连贯地执行，提升光追效率。&lt;/p&gt;
+&lt;p&gt;新版中，应用可以查询GPU是否真正执行了重排序，而不只是API层面是否支持。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260227/66e3f9ae911445a2a72143b9d5301956.jpg" target="_blank"&gt;&lt;img alt="DX12重大升级！SM 6.9、光追全新升级 NVIDIA独家支持" h="337" src="//img1.mydrivers.com/img/20260227/s_66e3f9ae911445a2a72143b9d5301956.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不同GPU对于DX12特性等级的支持存在很大不同，长向量、16位浮点等SM 6.9基础特性需要：AMD RX 9000系列、NVIDIA RTX系列、Intel Arc B系列。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;光追不透明度微贴图目前只有NVIDIA RTX系列可以提供硬件支持，其中RTX 50/40系列支持硬件加速了，RTX 30/20系列走软件模拟。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SER则是NVIDIA RTX 50/40系列、Intel Arc B系列硬件支持，AMD RX 9000系列只是支持API，但实际上没有重排序。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/96cec14f23eb40b78fb08a8232a97861.png" target="_blank"&gt;&lt;img alt="DX12重大升级！SM 6.9、光追全新升级 NVIDIA独家支持" h="257" src="//img1.mydrivers.com/img/20260227/s_96cec14f23eb40b78fb08a8232a97861.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/593a71b0556845389e04200505c7824a.png" target="_blank"&gt;&lt;img alt="DX12重大升级！SM 6.9、光追全新升级 NVIDIA独家支持" h="304" src="//img1.mydrivers.com/img/20260227/s_593a71b0556845389e04200505c7824a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;另外，DX12 Agility SDK 1.719也包含多项新功能的预览，分别是：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1、Fence Barriers&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;扩展增强型屏障，允许命令缓冲在指令流中对围栏进行信号发送与等待，实现更细粒度的同步。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、VPblit 3DLUT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;开放视频处理硬件通路，用于色调映射与3D查找表操作，可将这类工作从主3D引擎剥离。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3、D3D12 Extensions机制&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;官方插件式方案，让硬件厂商能在功能进入D3D12核心之前，先行提供实验性特性。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/1384a70fc3ff4ef99221f9d57de7d486.png" target="_blank"&gt;&lt;img alt="DX12重大升级！SM 6.9、光追全新升级 NVIDIA独家支持" h="400" src="//img1.mydrivers.com/img/20260227/s_1384a70fc3ff4ef99221f9d57de7d486.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 03:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5SS1FMQ294Qkl5amJVYmt3VklqSEtwc2NudlI1ZkhlQTFmVmlGaHVsMVhBLUhaakpHTlFGRFhCOFBhNGRaQnM4RUJEbl9MeW5JUlpFWjByQlA</guid></item><item><title>时隔4年，华为在欧洲发布Mate80 Pro-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_02_27_808147.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/02/27/20260227105045124.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	当地时间2月26日，华为在西班牙马德里发布Mate80 Pro海外版手机。
+&lt;/p&gt;
+&lt;p&gt;
+	这是自2022年Mate50 Pro以来，华为再次面向全球市场发布Mate系列直板旗舰，被外界解读为华为重返欧洲高端手机市场的信号。
+&lt;/p&gt;
+&lt;p&gt;
+	根据官网，Mate80 Pro海外版本没有公布芯片型号，预计和国内版本一样搭载麒麟芯片，同时也没有像之前爆料的一样搭载鸿蒙操作系统，而是预装基于安卓的EMUI 15。
+&lt;/p&gt;
+&lt;p&gt;
+	其他配置应该和国内一致，比如搭载第二代红枫影像系统，第二代昆仑玻璃，5750毫安时电池等。
+&lt;/p&gt;
+&lt;p&gt;
+	售价上，Mate80 Pro海外版本16+512GB定价1299欧元，折合人民币10510元，比国内高了3511元。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/02/27/20260227105218859.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span&gt;华为在海外发布Mate80 Pro&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	外媒评价称，马德里的发布会表明，华为在克服了美国严厉的科技制裁后，重新进军全球智能手机市场，并成功重返中国市场，成为全球最大智能手机市场的领导者。
+&lt;/p&gt;
+&lt;p&gt;
+	根据市场研究公司IDC发布的数据，2025年，华为超越苹果，重夺中国大陆智能手机市场第一的位置，市场份额达到16.4%，略微超过苹果的16.2%。
+&lt;/p&gt;
+&lt;p&gt;
+	但坦白来说，华为想在欧洲等海外市场重新崛起，依然难度不小。
+&lt;/p&gt;
+&lt;p&gt;
+	首先是操作系统，鸿蒙生态在国内刚刚起步，正努力从可用走向好用，但走向国外依然任重道远。同时海外用户对谷歌GMS的依赖依然较重，虽然EMUI可以“曲线”安装谷歌软件，但原生GMS依然难以被替代。
+&lt;/p&gt;
+&lt;p&gt;
+	再者欧洲作为另一大高端手机市场，竞争同样激烈。
+&lt;/p&gt;
+&lt;p&gt;
+	根据Omdia发布的数据，2025年欧洲手机市场出货量约为1.34亿部，同比下滑1%。其中三星一家就占据了35%的份额，苹果份额为27%，小米为16%，三家合计占据了接近80%的份额。同时，荣耀、vivo等国内手机巨头也在频频发力，很快将在巴塞罗那世界移动通信大会（MWC 2026）上推出旗舰新品。
+&lt;/p&gt;
+&lt;p&gt;
+	目前来看，华为手表、耳机等穿戴产品对操作系统生态依赖相对较低，同时产品力也较强，可以在海外开拓更多增量。但手机想要重回巅峰，未来依然要等鸿蒙生态破局。
+&lt;/p&gt;
+&lt;p&gt;
+	根据Omdia发布的数据，2025年全球智能手机出货量增长2%，达到12.5亿部，苹果、三星、小米、vivo和OPPO分列前五名，华为以4%的份额位列第九。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Fri, 27 Feb 2026 03:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1QeGV4cUVnNFFWcmpJaEFQZVlxMHdZYzc4blc1WVRHeE1SQnNTY3I1bkZIbzVDcldKbVZRVVpraGIwdnJud25ldVZ3ZXQ3R2RTU0Y5ZmtYbXdERHpub2Nhek44ZDE</guid></item><item><title>跳出手机！阿里千问正式杀入硬件 将面向全球发布AI新品 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105870.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;跳出手机！阿里千问正式杀入硬件 将面向全球发布AI新品&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-27 10:58:34  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105870-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，继AI购物春节爆火后，阿里巴巴旗下个人AI助手“千问”正式进军AI硬件领域，今年将面向全球市场推出多款不同形态的AI硬件产品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据了解，千问将在西班牙巴塞罗那举行的2026年世界移动通信大会（MWC）上发布首款同名AI眼镜，并于3月2日开启线上线下全渠道预约。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据悉，阿里正在将千问打造软硬一体、跨多种终端形态的AI助手。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;跳出手机的千问将能够捕获更多物理世界的信息，在复杂生活场景中理解用户意图，让AI解锁更多的可能性。千问APP点外卖、打车等能力，也将无缝连接到千问AI眼镜等终端设备。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据阿里内部人士透露，除AI眼镜之外，千问还会在年内陆续发布AI指环、AI耳机等产品，并面向全球市场发售。&lt;/p&gt;
+&lt;p&gt;今年春节，凭借强大的“办事”能力，千问APP一跃成为国民级AI助手。&lt;/p&gt;
+&lt;p&gt;期间，全国用户在千问上“一句话下单”近2亿次，全国平均每10人就有1人在千问下单。&lt;strong&gt;据QuestMobile，千问APP日活跃用户已突破7300万，逼近豆包。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/0f3408cd0f8741e9b58caf4c96672842.png" target="_blank"&gt;&lt;img alt="跳出手机！阿里千问正式杀入硬件 将面向全球发布AI新品" h="319" src="//img1.mydrivers.com/img/20260227/s_0f3408cd0f8741e9b58caf4c96672842.png" w="513"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 02:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1nRXR0NjB5SHplQ2dYb1g2WnpUN3lCMHhnZTdncmlyZ3huLVQ1bjFFWjgyNTVFdEQtMGhwbERISWYzZHZpZ1N0V2NsYW9GYlNnZ1d5SkNSSDc</guid></item><item><title>“全网最黑”大熊猫引热议 网友：以为是AI 禁止Cos黑熊 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105868.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;“全网最黑”大熊猫引热议 网友：以为是AI 禁止Cos黑熊&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-27 10:48:20  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1391597.html" title="拾柒的主页" class="newstiao4"&gt;拾柒&lt;/a&gt;&lt;p&gt;  编辑：拾柒 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105868-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，日前，大熊猫幼崽“苏锦崽”意外走红网络，被网友调侃为“全网最黑”大熊猫。&lt;/p&gt;
+&lt;p&gt;从网友发布的视频来看，&lt;span&gt;&lt;strong&gt;苏锦崽趴在树枝上，原本应当黑白分明的毛色几乎“黑成一片”，连脸部的白色区域也被染得发暗。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/3f6e1d486b884f81a3ed9d890cedfdb0.png" target="_blank"&gt;&lt;img alt="“全网最黑”大熊猫引热议 网友：以为是AI 禁止Cos黑熊" h="777" src="//img1.mydrivers.com/img/20260227/s_3f6e1d486b884f81a3ed9d890cedfdb0.png" w="455"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不少网友直呼：“第一眼还以为是黑熊。”“禁止大熊猫Cos黑熊。”“还以为是AI。”&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/2665625aeff140d296eb67fa4b150193.png" target="_blank"&gt;&lt;img alt="“全网最黑”大熊猫引热议 网友：以为是AI 禁止Cos黑熊" h="56" src="//img1.mydrivers.com/img/20260227/s_2665625aeff140d296eb67fa4b150193.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/783f52c6bdca4150acdec1a839f69dbc.png" target="_blank"&gt;&lt;img alt="“全网最黑”大熊猫引热议 网友：以为是AI 禁止Cos黑熊" h="62" src="//img1.mydrivers.com/img/20260227/s_783f52c6bdca4150acdec1a839f69dbc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/1dd1e6965e2445459b7fdb05b483d752.png" target="_blank"&gt;&lt;img alt="“全网最黑”大熊猫引热议 网友：以为是AI 禁止Cos黑熊" h="64" src="//img1.mydrivers.com/img/20260227/s_1dd1e6965e2445459b7fdb05b483d752.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据四川在线报道，苏锦崽变黑的原因主要是今年卧龙神树坪基地遇到几场降雪后，雪水打湿了外场地面。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/f81a9160b413412c9b50534f4516aad9.png" target="_blank"&gt;&lt;img alt="“全网最黑”大熊猫引热议 网友：以为是AI 禁止Cos黑熊" h="905" src="//img1.mydrivers.com/img/20260227/s_f81a9160b413412c9b50534f4516aad9.png" w="586"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;爱打滚的苏锦崽在湿地上反复翻滚玩耍，身上沾满泥土，就呈现出“全身黢黑”的效果。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;资料显示，大熊猫属于熊科、大熊猫属哺乳动物，是中国特有种，仅有两个亚种，四川亚种和秦岭亚种。&lt;/p&gt;
+&lt;p&gt;大熊猫已在地球上生存了至少800万年，被誉为“活化石”和“中国国宝”，世界自然基金会的形象大使，是世界生物多样性保护的旗舰物种。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 02:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE52azhaWUpqQ1MzR3JYamN3TnVEOVFVVkE0S1ZPQUlncnNSZ3NPRGxocm94MVAtRmpwa1Z4WDZaaEdJT2RPSFM1em1jazVVVTBmX1pQZjZOVGU</guid></item><item><title>刚刚，Nano Banana 2 发布！便宜又大碗，体验后我发现这些细节 - 爱范儿</title><link>https://www.ifanr.com/1655944</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
+            &lt;p class="o-single-normal-content"&gt;
+              &lt;h1 class="c-single-normal__title"&gt;刚刚，Nano Banana 2 发布！便宜又大碗，体验后我发现这些细节&lt;/h1&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;p&gt;用 AI 生图，总绕不开一道两难题：要快，还是要好？&lt;/p&gt;
+&lt;p&gt;但速度与质量之间，未必是鱼和熊掌不可兼得。就在刚刚，Google 正式发布了他们的新一代图像生成模型：Nano Banana 2（Gemini 3.1 Flash Image）。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656020" src="https://s3.ifanr.com/wp-content/uploads/2026/02/1-12.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/1-12.png!720 1190w, https://s3.ifanr.com/wp-content/uploads/2026/02/1-12-360x408.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/1-12-768x871.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/02/1-12-903x1024.png 903w" sizes="(max-width: 1190px) 100vw, 1190px"&gt;&lt;/p&gt;
+&lt;p&gt;没有太多颠覆世界的口号，它只是把更好的画质和更懂人话的理解力，一起塞进了全新的底层架构里。就这一件事，却让 AI 生图少了几分「看运气」的感觉，多了几分真正能用的踏实。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656021" src="https://s3.ifanr.com/wp-content/uploads/2026/02/2-11.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/2-11.png!720 2096w, https://s3.ifanr.com/wp-content/uploads/2026/02/2-11-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/2-11-768x433.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/02/2-11-1024x577.png 1024w" sizes="(max-width: 2096px) 100vw, 2096px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲官方博客地址：https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;接入了整个互联网，这次的 AI 真的懂你在说什么&lt;/h3&gt;
+&lt;p&gt;要说清楚这次的变化，得先回想一下三年前 AI 生图有多难用。&lt;/p&gt;
+&lt;p&gt;你让它画「红烧肉」，它可能老老实实给你画一块正在燃烧的肉；你让它在海报上写句中文，它往往会给你凑出一堆毫无意义的鬼画符。缺乏对真实世界的常识，是第一代 AI 最容易让人崩溃的地方。&lt;/p&gt;
+&lt;p&gt;现在的 Nano Banana 2，改变了不少。它和前代 Nano Banana Pro 一样，接入了 Gemini 积累的庞大真实世界知识库，还能结合网页搜索的实时信息，用起来更像是一个见过世面、懂点常识的人。&lt;/p&gt;
+&lt;p&gt;最先感受到的变化，是它开始更好地理解空间和比例了。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656041" src="https://s3.ifanr.com/wp-content/uploads/2026/02/123456.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/123456.png!720 1292w, https://s3.ifanr.com/wp-content/uploads/2026/02/123456-360x196.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/123456-768x418.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/02/123456-1024x558.png 1024w" sizes="(max-width: 1292px) 100vw, 1292px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲提示词：画面中，【东方明珠广播电视塔】被一只超级巨大、超级可爱的【猫】占据。周围的建筑物看起来就像玩具模型一样小，而【猫】则非常巨大。游戏背景设定在一个逼真的城市环境中。整体氛围安静、温暖、舒缓、可爱。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;在上面这个案例中，AI 精准地还原了上海的地标，并极其自然地处理了巨猫与微缩城市之间的光影和透视关系。&lt;/p&gt;
+&lt;p&gt;最直观的改变，是它终于认字、也会写字了。比如让它画一幅《枫桥夜泊》的水墨画。画面上方不仅端端正正地用书法写出了「月落乌啼霜满天」等全句，甚至连排版和水墨的意境都拿捏得比较准。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656023" src="https://s3.ifanr.com/wp-content/uploads/2026/02/4-12.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/4-12.png!720 765w, https://s3.ifanr.com/wp-content/uploads/2026/02/4-12-360x482.png 360w" sizes="(max-width: 765px) 100vw, 765px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲当然，也不是没有瑕疵，仔细看上方悄悄多出了一个「满」字。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;除了诗意，它还能处理相当复杂的 UI 场景——在下面这张图里，复杂的半透明数据面板、悬浮的购物清单、精准的中文显示，被 AI 有条不紊地安排得井井有条，信息之间的层级关系也真正理清楚了。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656024" src="https://s3.ifanr.com/wp-content/uploads/2026/02/5-11.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/5-11.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2026/02/5-11-360x201.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/5-11-768x429.png 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲提示词：第一人称视角，置身于灯光明亮的超市货架通道中。人类双手将一瓶芬达汽水举到镜头前方。鲜艳的橙色饮料装在其标志性的品牌瓶身里，周围环绕着多层全息增强现实界面，用中文展示营养相关数据，包括热量数值、含糖量、咖啡因水平、新鲜度指示、保质/到期日期，以及基于芬达推荐的清爽饮品配方和鸡尾酒调制方案。玻璃质感的 UI 面板，柔和的环境光晕，逼真的光照与阴影，自然的景深效果，沉浸式第一人称交互界面，2K&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;排版极其讲究的双页黑白日式漫画，也是手拿把掐。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656025" src="https://s3.ifanr.com/wp-content/uploads/2026/02/6-6.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/6-6.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2026/02/6-6-360x269.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/6-6-768x574.png 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲提示词：设计一份逼真的双页漫画杂志样张。每一页都应包含多个漫画风格分镜，以富有动感的版式排列，呈现出专业印刷的日本漫画质感。整体风格为黑白稿，使用粗犷有力的墨线、网点效果（screen tones）以及富有表现力的人物绘制。画面中加入对白气泡、中文拟声词，并通过分镜之间的过渡来传达动作、情绪与节奏。左右两页需要连贯衔接，像同一场景或同一话章节的一部分。采用传统漫画镜头语言：特写、远景、斜向分镜以及戏剧化的视角与构图。整体观感要真实可信，仿佛来自一本真正的漫画杂志的跨页内容。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;或者这张带步骤说明的「功夫茶」中文信息图，从排版到意境，都给出了一套可以直接用的视觉方案。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656026" src="https://s3.ifanr.com/wp-content/uploads/2026/02/7-10.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/7-10.png!720 572w, https://s3.ifanr.com/wp-content/uploads/2026/02/7-10-360x644.png 360w" sizes="(max-width: 572px) 100vw, 572px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲生成提示词：一张关于中国传统功夫茶道设计精美的垂直信息图。中国传统水墨画背景。顶部有巨大的、优雅的中文书法标题，明确写着「功夫茶」。向下有三个图文并茂的步骤：步骤 1 展示用沸水温杯，配有中文「温杯」；步骤 2 展示将茶叶放入盖碗，配有中文「投茶」；步骤 3 展示倒出茶汤，配有中文「出汤」。优雅、极简、温暖的大地色调，平衡的布局。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;一位很早就接触到 Nano Banana 2 的内测用户，给出了一个相当中肯的评价：「它并不完美，但它是第一个能够以一定一致性，去处理真正复杂图像和图表的模型。」&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656027" src="https://s3.ifanr.com/wp-content/uploads/2026/02/8-6.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/8-6.png!720 1180w, https://s3.ifanr.com/wp-content/uploads/2026/02/8-6-360x377.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/8-6-768x804.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/02/8-6-978x1024.png 978w" sizes="(max-width: 1180px) 100vw, 1180px"&gt;&lt;/p&gt;
+&lt;p&gt;为了测试这个新模型的理解极限，他随手甩出了一道极其刁钻的测试题：「给我画一张设定在古威尼斯的《寻找沃尔多（Where’s Waldo）》，但里面要找的不能是人，得是一只穿着蓝色条纹飞行服的水獭。」&lt;/p&gt;
+&lt;p&gt;Nano Banana 2 最终也真的理清了逻辑，不仅没画串，还稳稳地交出了答卷。&lt;/p&gt;
+&lt;h3&gt;快和好，终于不用二选一了？&lt;/h3&gt;
+&lt;p&gt;除了懂常识，强大的「主体一致性」是这次 Nano Banana 2 更新的另一大杀手锏。&lt;/p&gt;
+&lt;p&gt;在一次生成过程中，它最多能保持 5 个角色的脸不崩，或者 14 个物品的样子不变。这意味着，你可以放心大胆地拿它来画连载漫画或者做影视分镜了。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656028" src="https://s3.ifanr.com/wp-content/uploads/2026/02/9-2.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/9-2.gif 640w, https://s3.ifanr.com/wp-content/uploads/2026/02/9-2-360x360.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
+&lt;p&gt;不仅如此，它的画质也达到了可以直接干活的标准。&lt;/p&gt;
+&lt;p&gt;从 512px 的配图到 4K 级别的超高清海报，它都能拿捏。输入一段关于「重庆老火锅」的提示词，它能生成一张赛博朋克风的雨夜街景，湿漉漉的柏油路上，红蓝霓虹灯的倒影和「24 小时营业」的招牌都细致入微。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656029" src="https://s3.ifanr.com/wp-content/uploads/2026/02/10-6.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/10-6.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2026/02/10-6-360x197.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/10-6-768x419.png 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲提示词：一张繁忙亚洲城市雨夜的电影感街头照片。一个巨大的、发光的红色霓虹灯牌挂在一座老建筑上，上面清晰地写着「重庆老火锅」。在它下面，一个较小的蓝色霓虹灯牌写着「24 小时营业 – 欢迎光临」。湿漉漉的柏油路反射着霓虹灯光。&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;色彩张力极强的波普艺术风格，它也驾驭得住。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656030" src="https://s3.ifanr.com/wp-content/uploads/2026/02/11-7.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/11-7.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2026/02/11-7-360x242.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/11-7-768x515.png 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;p&gt;或者是这种带着几分荒诞、又透着高级感的时尚大片：&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656031" src="https://s3.ifanr.com/wp-content/uploads/2026/02/12-6.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/12-6.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2026/02/12-6-360x197.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/12-6-768x419.png 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲提示词：This high-resolution bird’s-eye view photograph was taken with a LOMO Ic-a. The ground is covered with countless black-and-white billboard advertisements of beautiful fashion models, and standing on top of the advertisements is an incredibly beautiful chinese film actress wearing a long black coat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;在这个俯视视角的案例中，AI 极好地模拟了老式 LOMO 相机的特殊质感。女演员孑然独立于铺满黑白海报的地面上，画面的电影张力和故事感呼之欲出。&lt;/p&gt;
+&lt;p&gt;不过也不是没有明显短板，让它将二次元人物、铅笔素描和黏土人强行塞进同一个真实咖啡馆的场景中，素描人物的融入就显得十分生硬，边缘过渡也不够自然。&lt;/p&gt;
+&lt;p&gt;显然，在跨维度融合上，它远不及前代模型效果来得自然，还有进步的空间。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656032" src="https://s3.ifanr.com/wp-content/uploads/2026/02/13-5.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/13-5.png!720 1024w, https://s3.ifanr.com/wp-content/uploads/2026/02/13-5-360x197.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/13-5-768x419.png 768w" sizes="(max-width: 1024px) 100vw, 1024px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲提示词：A photo of an everyday scene at a busy cafe serving breakfast. In the foreground is an anime man with blue hair, one of the people is a pencil sketch, another is a claymation person&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;其实整体体验下来，尽管官方博客将 Nano Banana 2（Gemini 3.1 Flash Image）吹的天花乱坠，但实际体感中，生成的质量效果和速度并未得到肉眼可见的提升，甚至在部分场景中还不及前代模型。&lt;/p&gt;
+&lt;p&gt;真正让 Nano Banana 2 站稳脚跟的，其实是它极其接地气的性价比。&lt;/p&gt;
+&lt;p&gt;今天起，在 Gemini 应用和 Google 搜索框里，你都能顺手用上它。没有订阅方案的普通用户，24 小时内也能白嫖 100 张；而 Pro 订阅用户的额度则高达 1000 张。&lt;/p&gt;
+&lt;p&gt;对于开发者而言，API 的价格更是直接腰斩，仅为上一代 Pro 模型的一半。折算下来，生成一张 4K 高清图的成本被硬生生打到了 0.15 美元左右。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1656033" src="https://s3.ifanr.com/wp-content/uploads/2026/02/14-4.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/02/14-4.png!720 1772w, https://s3.ifanr.com/wp-content/uploads/2026/02/14-4-360x215.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/02/14-4-768x459.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/02/14-4-1024x611.png 1024w" sizes="(max-width: 1772px) 100vw, 1772px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 附上地址：https://ai.google.dev/gemini-api/docs/pricing#gemini-3.1-flash-image-preview&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;当然，当 AI 能够以极低的成本、极快的速度批量生产高清图片时，大家心里其实越没底。现在网上的假图满天飞，「眼见为实」这句话早就靠不住了。如果任何人都能在一秒钟内生成一张几可乱真的照片，我们该如何分辨图片？&lt;/p&gt;
+&lt;p&gt;Google 自己也十分清楚这一点，所以他们也一并升级了防伪技术。Nano Banana 2 继续加深了对 SynthID 数字水印和 C2PA 内容凭证的支持，能够更清楚地看到一张图到底是不是 AI 画的，以及它是怎么被修改的。&lt;/p&gt;
+&lt;p&gt;据统计，自去年 11 月以来，Gemini 里的这个验证功能已经被调用了超过 2000 万次。&lt;/p&gt;
+&lt;p&gt;AI 绘图这两年的发展，确实快得让人眼花缭乱。我们经历过 Nano Banana Pro 的一眼惊艳，也经历过繁琐的调教与漫长的等待。Nano Banana 2 的出现，则尝试进一步把好和快揉在了一起，并大大降低了使用的门槛。&lt;/p&gt;
+&lt;p&gt;你脑子里的一个灵感，不用再经过反复的修改和焦躁的等待。敲下回车的瞬间，它就在那里了。自然、简单，且立等可取，这件事听起来平常，但能做到，其实已经很难得了。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Fri, 27 Feb 2026 02:44:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1IZUFfWWdSWmxTdFVRMEFuQW40WHplVkF6SGJkVnNwZ2ZfS3hWQmpNYUlYWG80Y1NFN0N3dVBuQ2RzNm8</guid></item><item><title>就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105864.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-27 10:32:04  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105864-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，从目前传出的消息看，OPPO将在下个月发布折叠屏新机Find N6，而现在它已经提前展现在大家面前了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;现在，广东新闻联播节目中已经提前晒出了Find N6，而从节目中的描述看，这款手机即便是镜头拉近的情况下，也没有看到折痕，基本就是一整块屏幕。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;按照之前的说法，OPPO Find N6是莱茵测过的全球最平整折叠机，将首发无痕钛合金铰链+自修复记忆玻璃。&lt;/p&gt;
+&lt;p&gt;从一些网友晒出的Find N6真机图片看，展开后几乎看不到屏幕的折痕，果真是“一马平川”。&lt;/p&gt;
+&lt;p&gt;此外，还有一些博主爆料称，某国际大厂的折叠机也在借鉴OPPO方案，但落后差不多半年。&lt;/p&gt;
+&lt;p&gt;叠加之前的消息，这个所谓的国际大厂应该就是苹果，毕竟他们之前就曾被曝出买了Find N5来研究它的折叠屏设计。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/47f5383dcfa94e56b3ebbc28e4ba7452.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="338" src="//img1.mydrivers.com/img/20260227/s_47f5383dcfa94e56b3ebbc28e4ba7452.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/3b231874e2b847598afb2f9181e54704.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="339" src="//img1.mydrivers.com/img/20260227/s_3b231874e2b847598afb2f9181e54704.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/7c5cdfa98a38440c81fa6fd1c8450833.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="339" src="//img1.mydrivers.com/img/20260227/s_7c5cdfa98a38440c81fa6fd1c8450833.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/00ea4185fbb44c9c877eb08391a6b24d.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="336" src="//img1.mydrivers.com/img/20260227/s_00ea4185fbb44c9c877eb08391a6b24d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/69d9114bb2284e49b5f48d32eb07d6b5.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="338" src="//img1.mydrivers.com/img/20260227/s_69d9114bb2284e49b5f48d32eb07d6b5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/04b13832f7bf4d2d922713da87f9bf6f.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="340" src="//img1.mydrivers.com/img/20260227/s_04b13832f7bf4d2d922713da87f9bf6f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/7b26edaba96d4d53a127092816c72765.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="338" src="//img1.mydrivers.com/img/20260227/s_7b26edaba96d4d53a127092816c72765.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/8a5dd115c3b24f94896dec3423b89221.jpg" target="_blank"&gt;&lt;img alt="就是一整块屏！广东新闻联播提前展示OPPO Find N6：微距展示肉眼几乎看不到折痕" h="340" src="//img1.mydrivers.com/img/20260227/s_8a5dd115c3b24f94896dec3423b89221.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 02:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9Cb1F1WVR5eUMtYU93Y0M2NnZzU1Nwcl8wbmozYUlYYnd0UzhLaDBERHhrU3BjR2RpaU9hdGZoNmJkSXhadW5pcjBmWHlScDY3NGpEYVpqdmc</guid></item><item><title>内存价格暴涨！第一个撑不住的手机品牌出现：魅族宣布暂停手机新品研发 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105860.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，曾经对标iPhone的魅族手机也要暂时说再见了。&lt;/p&gt;
+&lt;p&gt;今日，魅族科技正式发布战略转型公告，&lt;strong&gt;&lt;span&gt;宣布魅族将暂停国内手机新产品自研硬件项目，&lt;/span&gt;并在积极接洽第三方硬件合作伙伴，同时原有业务不受任何影响。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;魅族在公告中表示，众所周知，近年来国内手机市场竞争激烈程度超乎想象，很多品牌先后选择战略收缩，虽然困难重重，我们仍尽全力拼搏，&lt;span&gt;&lt;strong&gt;希望能保持魅族手机的正常迭代，但近来内存价格的持续暴涨让下一步新产品的正常商业化变成了不可为。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这是一个艰难的决定&lt;/strong&gt;。我们深知，每一部魅族手机，都承载着用户的信任与青春；每一次系统更新，都连接着彼此的默契与陪伴。在此，我们向始终不离不弃的魅友，并肩前行的合作伙伴、倾注心血的全体魅族人，致以最诚挚的感谢。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/a1d7b871087c47fa9b5ed2499036964d.jpg" target="_blank"&gt;&lt;img alt="内存价格暴涨！第一个撑不住的手机品牌出现：魅族宣布暂停手机新品研发" h="399" src="//img1.mydrivers.com/img/20260227/s_a1d7b871087c47fa9b5ed2499036964d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;魅族称，&lt;strong&gt;国内手机新产品的暂停并非告别，而是深思熟虑的战略选择，魅族公司将积极的全面战略转型，在全新的AI时代，从过去以硬件为主导转向为以AI驱动软件产品为主导的发展方向，并打造以Flyme开放生态系统为基座的良性运转的企业。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主动按下的暂停键，是为了集中资源让Flyme软件生态能力，以更开放的姿态为更多场景，更多行业、更多企业，更多品牌的智能设备提供系统生态赋能，让魅族Flyme的极致体验触达更多用户。&lt;/p&gt;
+&lt;p&gt;2003年，黄章在珠海创立了魅族科技，并进军国内mp3市场。2008年，魅族开始致力开发高端智能手机。&lt;/p&gt;
+&lt;p&gt;随后，真正让魅族开始声名鹊起的中国国内第一款大屏幕全触屏智能机魅族M8上市。2009年2月18日，魅族M8正式在全国发售，几乎每家魅族专卖店的门口，都有人早早排起了购机的长队。&lt;/p&gt;
+&lt;p&gt;截止到09年4月，M8已经站稳了国产智能手机的领先地位，成为中国智能手机的分水岭，奠定了魅族在中国电容式触摸屏手机的先驱地位。&lt;span&gt;&lt;strong&gt;有媒体将其称为“中国的iPhone”，可见媒体对其的高度评价。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/0c6d974ce2aa440b9294a95dc16783e8.jpg" target="_blank"&gt;&lt;img alt="内存价格暴涨！第一个撑不住的手机品牌出现：魅族宣布暂停手机新品研发" h="2888" src="//img1.mydrivers.com/img/20260227/s_0c6d974ce2aa440b9294a95dc16783e8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据此前报道，&lt;span&gt;&lt;strong&gt;2026年中国手机行业将迎来全面涨价潮，这不仅是国内手机市场发展以来首次出现全品类、全品牌同步普涨的态势，也是近五年来规模最大、涨幅最显著的一轮集体调价。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;且受内存成本频繁波动影响，2026年中国手机市场或将面临历史上首次一年内多次上调价格的局面。&lt;/p&gt;
+&lt;p&gt;从供应链人士、行业分析机构及多家手机品牌内部人士处获悉，&lt;strong&gt;目前国内OPPO、一加、vivo、iQOO、小米、荣耀等主流品牌均已敲定涨价方案，部分品牌已向线下经销商、线上渠道商下发了调价通知。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;3月将成为此次涨价的关键节点，此后涨价将进入加速阶段：此前上市的老款机型调价幅度相对温和，而3月之后发布的新品，&lt;strong&gt;涨价幅度将明显扩大，最低涨幅不低于1000元，中高端旗舰机型涨幅甚至可能达到2000-3000元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/2a3bf90f2d544f7b9cd18bd06837ef3f.png" target="_blank"&gt;&lt;img alt="内存价格暴涨！第一个撑不住的手机品牌出现：魅族宣布暂停手机新品研发" h="270" src="//img1.mydrivers.com/img/20260227/s_2a3bf90f2d544f7b9cd18bd06837ef3f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;对此，REDMI产品经理@馨心_Mia 感慨：“&lt;strong&gt;上游的内存/芯片价格暴涨，带来的被动价格上调；价格上调又带来市场需求大幅收缩；需求收缩又导致单机分摊成本进一步激增，对手机厂商而言，真是‘鬼故事’系列&lt;/strong&gt;”。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 02:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1SYWdscFVnbi1VMWRWT0JTdm5nbzlHOGxYdWczQ2pQRG1hQlhldWpLeTBZRThmX0E3WEtLbUkxaGpkZ2duWUtDLUNSU0NFWEI5ZFFYeDdMZlo</guid></item><item><title>NVIDIA显卡驱动罕见大翻车！Bug连天 紧急撤回 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105858.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，为了《生化危机：安魂曲》，NVIDIA、AMD、Intel三家非常罕见地同时发布了新版显卡驱动，予以优化支持，但是NVIDIA翻了个大车。&lt;/p&gt;
+&lt;p&gt;NVIDIA新驱动版本号&lt;strong&gt;595.59&lt;/strong&gt;(还挺顺溜)，除了优化&lt;strong&gt;《生化危机：安魂曲》&lt;/strong&gt;并支持DLSS 4，还在&lt;strong&gt;《马拉松》&lt;/strong&gt;中支持DLSS超分、Reflex，支持CUDA 13.2，包含大量最新的性能改进、Bug修复等等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;但是发布后没多久，NVIDIA就紧急公告，承认新驱动存在重大Bug，暂时撤回了下载链接，已安装的建议撤回到591.86版本。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260227/16562dd7fe4145189f38b818186671ec.jpg" target="_blank"&gt;&lt;img alt="NVIDIA显卡驱动罕见大翻车！Bug连天 紧急撤回" h="312" src="//img1.mydrivers.com/img/20260227/s_16562dd7fe4145189f38b818186671ec.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据网友反馈，&lt;strong&gt;&lt;span&gt;595.59版驱动的问题一个是风扇控制和监测，尤其是在RTX 50系列上。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;具体症状包括但不限于：风扇停转、定制风扇曲线无效、GPU-Z/HWiNFO/AfterBurner等软件中只能看到一个风扇传感器，等等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;另一个是核心频率突然降低，电压被限制在0.95V左右，尤其是RTX 5090/5080。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你以为这就完了？还多着呢。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;死机、黑屏、蓝屏(VIDEO_TDR_FAILURE)、崩溃(nvlddmkm Event ID 153)、硬重启、桌面待机时重启(Kernel-Power Event ID 41/BugcheckCode 270)、三星电视HDR信号丢失、三星ViewFinity S9 5K电视睡眠唤醒失败、虚幻引擎UE5游戏性能下降……&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这么多问题，不知道NVIDIA什么时候才能修复好，坐等吧。&lt;/p&gt;
+&lt;p&gt;PS：&lt;a class="f14_link" href="https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-26-2-2.html" target="_blank"&gt;AMD新驱动版本号26.2.2&lt;/a&gt;，也是优化这两款游戏，并修复了两个Bug。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/11475b6a25a74d768bfec0bcea2ea6d4.jpg" target="_blank"&gt;&lt;img alt="NVIDIA显卡驱动罕见大翻车！Bug连天 紧急撤回" h="337" src="//img1.mydrivers.com/img/20260227/s_11475b6a25a74d768bfec0bcea2ea6d4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/81d80ad2bc574f32816a05cde80746f5.jpg" target="_blank"&gt;&lt;img alt="NVIDIA显卡驱动罕见大翻车！Bug连天 紧急撤回" h="338" src="//img1.mydrivers.com/img/20260227/s_81d80ad2bc574f32816a05cde80746f5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 02:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAzaTN2d2c5d3pFNlRFUHFxcmx5dlB3ZVhfckx2TnMtb1o3MjV1YUhlbFZ5T1VqZmx3Z2FWTk9XS0tWYWhtbjVUUFE0MnJJX1V6azhVUXRTNkI</guid></item><item><title>魅族科技宣布战略转型 暂停国内手机新产品自研硬件项目 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105857.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;魅族科技宣布战略转型 暂停国内手机新产品自研硬件项目&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-27 10:11:11  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1391597.html" title="拾柒的主页" class="newstiao4"&gt;拾柒&lt;/a&gt;&lt;p&gt;  编辑：拾柒 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105857-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，今日，魅族科技发布战略转型公告，&lt;span&gt;&lt;strong&gt;宣布将暂停国内手机新产品自研硬件项目，并在积极接洽第三方硬件合作伙伴，原有业务不受任何影响。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;魅族表示，国内手机新产品的暂停并非告别，而是深思熟虑的战略选择。&lt;/p&gt;
+&lt;p&gt;魅族称，近年来国内手机市场竞争激烈程度超乎想象，很多品牌先后选择战略收缩，虽然困难重重，我们仍尽全力拼搏，希望能保持魅族手机的正常迭代，&lt;strong&gt;但近来内存价格的持续暴涨让下一步新产品的正常商业化变成了不可为。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;魅族公司将积极的全面战略转型，在全新的AI时代，从过去以硬件为主导转向为以AI驱动软件产品为主导的发展方向，并打造以Flyme开放生态系统为基座的良性运转的企业。&lt;/p&gt;
+&lt;p&gt;与此同时，海外手机业务、AI眼镜和PANDAER科技潮流品牌业务，也将启动市场化运作。&lt;/p&gt;
+&lt;p&gt;魅族特别提到，&lt;strong&gt;魅族手机、AI眼镜、PANDAER等相关产品将正常销售，魅族在营店铺内的服务及权益不变。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;并且Flyme及售后服务团队将持续守护现有用户的官方售后，维修和系统安全更新服务，保障所有用户权益。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/99b427d962bc403ebad1c834455736c9.jpg" target="_blank"&gt;&lt;img alt="魅族科技宣布战略转型 暂停国内手机新产品自研硬件项目" h="2888" src="//img1.mydrivers.com/img/20260227/s_99b427d962bc403ebad1c834455736c9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 02:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE94R2Z5bTdHN3l1MlBiVTNFQ0dQcmxBRWg1LXRXTlNfR0FEVG1naVJta0MyZGJUeGtMZ0p3ZDVTZDlCdldFUXlRcC1tWVVvdmhxR1dkSG04ZFc</guid></item><item><title>奔驰宝马CEO围观宇树机器人：一个垫着脚 一个录视频发家人 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105850.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;奔驰宝马CEO围观宇树机器人：一个垫着脚 一个录视频发家人&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-27 09:46:20  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105850-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，2月26日，德国总理默茨带队抵达杭州，到访本土机器人企业宇树科技，宇树最新款机器人全部亮相展示。&lt;/p&gt;
+&lt;p&gt;随行的德国企业高管阵容堪称豪华：奔驰、宝马、大众、西门子、阿迪达斯、拜耳、汉高、DHL等悉数在列，这份名单几乎就是半部德国工业发展史。&lt;/p&gt;
+&lt;p&gt;访问期间，现场氛围轻松活跃，上演了趣味一幕：宝马集团董事长齐普策为看清机器人，主动踮脚探头、近距离观望；奔驰集团董事会主席康林松则拿起手机，拍摄机器人表演画面分享给家人。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/b2a300603f704567bd9cec6e3916469a.png" target="_blank"&gt;&lt;img alt="奔驰宝马CEO围观宇树机器人：一个垫着脚 一个录视频发家人" h="328" src="//img1.mydrivers.com/img/20260227/s_b2a300603f704567bd9cec6e3916469a.png" w="491"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/1faab73f178246848b77b0c0b581fdb4.png" target="_blank"&gt;&lt;img alt="奔驰宝马CEO围观宇树机器人：一个垫着脚 一个录视频发家人" h="338" src="//img1.mydrivers.com/img/20260227/s_1faab73f178246848b77b0c0b581fdb4.png" w="498"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;齐普策表示，正考虑相关机器人的应用场景，可在运输等工作中替代人类应对恶劣环境作业。&lt;/p&gt;
+&lt;p&gt;他还特别提及宇树机器狗产品，称赞其采用轮式结合设计十分新颖，坦言此前从未见过同类产品。&lt;/p&gt;
+&lt;p&gt;康林松则现场直言十分喜爱机器人表演，并强调机器人技术对未来产业发展至关重要。&lt;/p&gt;
+&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 01:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9jYi1hTlhxcjJmeUJmbGlQallNT1BWdnNOOTBNX1JFclJka0F0X2VBOXk0TlROSzViRzduQTFrbFBvLU1MTG9CY3hiVlhLbElCRjFKQjRSaHI</guid></item><item><title>英伟达天量业绩为何无法平息最新AI恐慌？ - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%A4%A9%E9%87%8F%E4%B8%9A%E7%BB%A9%E4%B8%BA%E4%BD%95%E6%97%A0%E6%B3%95%E5%B9%B3%E6%81%AF%E6%9C%80%E6%96%B0ai%E6%81%90%E6%85%8C-05034758</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Fri, 27 Feb 2026 01:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMinAJBVV95cUxOaXN6MWpFTGdJSHlycl8xWGJxSEZqTk14bHdsa0R1TlFjdU9Ya2gtemZ4N3dxOHJ1UGRUQUdtSWhTOTlyWFF4ek5KdlhOUklWd3dLa3Q2d1JMUk1yeGNKTzZ2ZENHWVJXMjR6UGFfdXhjTmFaai12Xy1wR0hnZ2w5a01QTmVzVC1kM3EtektzcEdWMkk0bDd0ZDdpMWhiZ1RTeW5wOVdZeHhnVDZGOUxkWUdqNThnQ0k3WDdwYlF1TV9XaUhBQTE2bEdqU1duLWtrN2FKR0lHNWxwanY5RUpWV3BZTzZRVHR1X3VuRUlOaGM1MDRRVWtBbklWVVZBajM4T2R6Q1FhWGZNVnA2TXlpSW53ZnNkWGRfNVJzMA</guid></item><item><title>赚大了！网友网购一条32GB DDR5内存 打开包裹目瞪口呆：竟收到十条 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105847.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技2月27日消息，&lt;strong&gt;“这件事也发生在我身上了，我真的目瞪口呆了。”&lt;/strong&gt;Reddit PC论坛网友AccomplishedFan8690 分享了这一离奇经历，既感到诧异，又欣喜若狂。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260227/0f724037f72e40e2b05f32ba1269554e.png" target="_blank"&gt;&lt;img alt="赚大了！网友网购一条32GB DDR5内存 打开包裹目瞪口呆：竟收到十条" h="413" src="//img1.mydrivers.com/img/20260227/s_0f724037f72e40e2b05f32ba1269554e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据悉，这位网友在亚马逊平台以300美元的价格订购了一条海盗船复仇者（Corsair Vengeance）32GB DDR5内存条。&lt;span&gt;&lt;strong&gt;可当他拆开快递包裹时，眼前的景象让他惊呆了。里面整整装着十条内存条，每条的规格都和他订购的完全一致，相当于只花了十分之一的钱，就拿下了十套同款内存。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;近来内存行业异常火爆，内存条供不应求，不少消费者想入手都得排队等候，而这位网友不仅顺利买到，还收获了“十倍惊喜”，难免让网友们羡慕不已。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/cd4966c220574f70b1a9ae067564ede7.jpg" target="_blank"&gt;&lt;img alt="赚大了！网友网购一条32GB DDR5内存 打开包裹目瞪口呆：竟收到十条" h="800" src="//img1.mydrivers.com/img/20260227/s_cd4966c220574f70b1a9ae067564ede7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;至于这场意外为何会发生，评论区里一些自称是仓库员工的网友给出了答案。&lt;strong&gt;这是仓库发货时的常见失误，工作人员扫描了整个包裹的条形码，而非从箱子里取出单个商品扫描，导致系统只记录了一件商品的订单，却发出了整箱货物。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不少网友好奇，这位幸运儿会如何处理这十条内存条。他表示，计划以低于零售价的合理价格出售多余的内存，既不浪费，也能让有需要的人受益。&lt;/p&gt;
+&lt;p&gt;不过，也有网友提出质疑，认为整个故事是编造的，目的是为了在论坛博取关注。&lt;span&gt;&lt;strong&gt;对此，有其他Reddit用户站出来佐证，称自己也遇到过类似的亚马逊包裹意外惊喜，并非个例。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;事件发酵后，网友们的评论画风各异：有人调侃“赶紧删除这条帖子，两周内别告诉任何人”；有人脑补“卖家发现犯错时的崩溃表情”；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;也有人实名羡慕“天生好运，这种好事从来轮不到我，恭喜楼主好好享受”；还有人开玩笑“他有内存！抓住他！”；&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;甚至有网友留言“请删除这条消息，我们为你高兴，但我无法接受”。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/8980c9c88a2348058c997cae1b817a6f.png" target="_blank"&gt;&lt;img alt="赚大了！网友网购一条32GB DDR5内存 打开包裹目瞪口呆：竟收到十条" h="266" src="//img1.mydrivers.com/img/20260227/s_8980c9c88a2348058c997cae1b817a6f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/5b2be3ddf9434bf8bc0a9d273994e502.png" target="_blank"&gt;&lt;img alt="赚大了！网友网购一条32GB DDR5内存 打开包裹目瞪口呆：竟收到十条" h="545" src="//img1.mydrivers.com/img/20260227/s_5b2be3ddf9434bf8bc0a9d273994e502.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/07b5338cdd624f17b125fd085b30895f.png" target="_blank"&gt;&lt;img alt="赚大了！网友网购一条32GB DDR5内存 打开包裹目瞪口呆：竟收到十条" h="241" src="//img1.mydrivers.com/img/20260227/s_07b5338cdd624f17b125fd085b30895f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260227/1977db6c407548d28f88b00bb80bae95.png" target="_blank"&gt;&lt;img alt="赚大了！网友网购一条32GB DDR5内存 打开包裹目瞪口呆：竟收到十条" h="321" src="//img1.mydrivers.com/img/20260227/s_1977db6c407548d28f88b00bb80bae95.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 01:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5RLWZ2VENYSjN4WVBIZnM0ckZrdUdrcDA0cGtuZzZoN3Q5bW44cWVadE41dmhqVzZCXzExelZ1Q1FISDlxekJvNncyRzltOXhrR1Fma2tmVk0</guid></item><item><title>超万亿市值蒸发！英伟达财报强劲股价却大跌 背后究竟有何原因？ - 财联社</title><link>https://www.cls.cn/detail/2296684</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社2月27日讯（编辑 刘蕊）&lt;/strong&gt;美东时间周三盘后，英伟达公布的财报显示，该公司业绩大获成功：第四财季利润几乎翻了一番，营收也创下历史新高。&lt;/p&gt;
+&lt;p&gt;但是，英伟达股价却呈现出截然相反的悲观表现。&lt;/p&gt;
+&lt;p&gt;这家处于全球人工智能交易中心地位的“AI宠儿”的股价在周三盘后下跌，周四收盘大跌5.5%。这是自去年4月以来的最大单日跌幅，近2600亿美元（约1.7万亿元人民币）市值一夜蒸发。&lt;/p&gt;
+&lt;p&gt;其他主要芯片制造商的股价也大幅下跌，例如博通股价下跌超过3%，AMD跌3.41%，而台积电下跌2.8%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;英伟达的“魔咒”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;英伟达的股价大跌，部分原因在于英伟达的“魔咒”：&lt;strong&gt;自2024年8月开始，不论财报好坏，英伟达次日开盘时全都是低开。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;事实上，这一“魔咒”背后的深层原因可能在于市场对于英伟达的优秀业绩已经不再感到意外了：过去三年，该公司每个季度都稳定超出盈利预期，这让投资者对其业绩抱有很高的期待。&lt;/p&gt;
+&lt;p&gt;这意味着，即便交出强劲财报，对于这家全球市值最高的上市公司来说，似乎也已是家常便饭，已经不再令人惊艳了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;华尔街的情绪发生了转变&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;另一方面，华尔街的情绪也确实发生了转变——尤其是在人工智能领域，以及市场对英伟达的关注方面。&lt;/p&gt;
+&lt;p&gt;JonesTrading 首席市场策略师奥罗克（Mike O'Rourke） 在英伟达财报会后写道：“投资者们知道天堂里出问题了。”&lt;/p&gt;
+&lt;p&gt;任何一家公司的投资价值远不止其盈利数据所能体现的，而这正是奥罗克和其他人工智能空头们所关注的重点。&lt;/p&gt;
+&lt;p&gt;英伟达首席财务官Colette Kress在财报会上承认，2026 年全球头部的五大云计算服务商和超大规模云计算企业贡献了英伟达数据中心业务超50%的营收，这不免再次加重了华尔街对英伟达数据中心需求过于集中的担忧。&lt;/p&gt;
+&lt;p&gt;在电话会议上，一位分析师询问英伟达首席执行官黄仁勋，&lt;strong&gt;他对客户继续投入数千亿美元购买英伟达芯片的能力有多大信心&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;黄仁勋回应说，他对客户公司的现金流增长“充满信心”。&lt;/p&gt;
+&lt;p&gt;但奥罗克指出，&lt;strong&gt;问题在于，黄仁勋的表述与现实情况并不相符&lt;/strong&gt;。事实上，亚马逊、Meta、微软和谷歌这几家顶级“超大规模数据中心”一个月前公布的财报显示，它们的自由现金流要么大幅下滑，要么趋于平稳。&lt;/p&gt;
+&lt;p&gt;奥罗克写道：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“&lt;strong&gt;如果管理层对众所周知的信息不坦诚，投资者就会对未知的事情感到恐惧。&lt;/strong&gt;”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Janus Henderson 的投资组合经理 Richard Clode直言：“辩论的焦点已经从近期业绩结果转移到人工智能资本支出的可持续性上，人们担心英伟达的规模、货币化和潜在的现金流恶化。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“大空头”指出另一关键问题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;令英伟达面临压力进一步加剧的，是知名“大空头”迈克尔·伯里（Michael Burry）的一篇博文。伯里是电影《大空头》的原型，他一直以来都是人工智能热潮的直言不讳的批评者。&lt;/p&gt;
+&lt;p&gt;在博文中，伯里重点提及了英伟达财报中的一个数据——他认为，如果人们对人工智能的热情开始消退，这个数据可能会带来“灾难性”的后果。&lt;/p&gt;
+&lt;p&gt;这个关键数据就是&lt;strong&gt;英伟达的“采购义务”（在特定时间范围内购买商品的合同）&lt;/strong&gt;。在最新财报中，这个数字从一年前的160亿美元飙升至950亿美元。他指出，原因在于其主要供应商台积电要求英伟达支付更多现金，用于其为英伟达生产的复杂定制芯片。&lt;/p&gt;
+&lt;p&gt;伯里写道，这意味着英伟达“被迫在需求明朗之前就下了不可取消的采购订单”，而且这种变化似乎是“结构性的”，而不是暂时的。一旦未来下游需求出现动摇，这个势将进一步膨胀的数字可能会对英伟达的业绩健康构成巨大风险。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;英伟达对未来前景缺乏明确指引&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;投资者指出，英伟达与 OpenAI 价值1000亿美元的交易陷入僵局，这是该股股价下跌的另一个痛点。&lt;/p&gt;
+&lt;p&gt;英伟达周三发布的10-K 监管文件指出，虽然该公司正在与 ChatGPT制造商 OpenAI “敲定一项投资和合作协议”，但“我们无法保证会与 OpenAI 达成投资和合作协议，也无法保证交易能够完成”。&lt;/p&gt;
+&lt;p&gt;Facet 首席投资官 Tom Graff直言，在微软和亚马逊等客户预计增加数据中心支出后，市场早已预期英伟达本季度业绩良好，但投资者希望从英伟达那里获得更多信息，但却得到令人失望的结果了。&lt;/p&gt;
+&lt;p&gt;格拉夫表示： &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“&lt;strong&gt;我们没有得到关于未来业绩指引的具体细节。如果像OpenAI这样的公司可能正在放缓支出，那么这应该会在未来一到两个季度的实际收入中体现出来，因此，缺乏具体的收入前景令人担忧。&lt;/strong&gt;”&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Fri, 27 Feb 2026 01:15:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE5pWC1rRnJLeUhaWGgyOEI4RDZIdGp3M0lkY01HcXVGSEpMRVNicVlxMXZHRG11MFNuQWJ2YlhlZVp0dlVHTDFzQg</guid></item><item><title>CoreWeave电话会：CEO直言AI算力需求“无情且永无止境”，手握668亿美元订单，未来利润里有望稳定于25% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766308</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 27 Feb 2026 01:09:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBtODRkV0xGdWthSFNTU1lFQTNja3Y1V1V0ZzB5YnNHR0lNUU1TWDkzZDNGVUJXQmFTVjhKZDhEQlAyQklLd1NvUkVZNFBLdS0tUFhr</guid></item><item><title>Block将在AI转型中裁员40% - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/jack-dorseys-block-to-lay-off-4-000-employees-in-ai-remake-f96531af</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Fri, 27 Feb 2026 00:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMimwFBVV95cUxNVDQ5clMxbjlBZndVVUVjRUVNc0dUSU4yRm05Y3pFZ3MtZnRDRlk4N0Myd2c1VGtIRFZYaWN5eE9QakxWeHdtX2VXbmlKU0tDV09jbk1oMjRUYlZZVU5sNWczYl8xdzUxaGI1V2pheGdPd005OFQ3aXF3UVE2SjlMVG5xTzMzTUFGNmFTZF9uTkVPVmxzRXVTNVVIaw</guid></item><item><title>芯片制造重大突破？阿斯麦下一代EUV已能用于大规模量产，造价翻倍！ - 财联社</title><link>https://www.cls.cn/detail/2296643</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社2月26日讯（编辑 黄君芝）&lt;/strong&gt;据报道，全球光刻机龙头阿斯麦（ASML）的一位高管最新表示，其下一代芯片制造设备已准备就绪，可以供应芯片制造商用于大规模量产，这对芯片行业来说是一个重大进展。&lt;/p&gt;
 &lt;p&gt;这家荷兰公司生产着全球唯一的商用极紫外光刻（EUV）设备，这是芯片制造商不可或缺的关键部件。阿斯麦的数据显示，&lt;strong&gt;这款新设备将帮助台积电和英特尔等芯片制造商生产出更强大、更高效的芯片，因为它省去了芯片制造过程中的一些昂贵且复杂的步骤。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;阿斯麦首席技术官Marco Pieters周三表示，该公司计划于周四在圣何塞举行的技术会议上公布这一数据，这标志着一个重要的里程碑。&lt;/p&gt;
 &lt;p&gt;据悉，阿斯麦花了数年时间才研发出这些昂贵的下一代设备，而芯片制造商们则一直在试图确定在何种情况下使用这些设备进行大规模生产才具有经济意义。&lt;/p&gt;
@@ -133,7 +759,75 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 00:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBFVUwwZi1SYVp1Z3hTLXlWTTFKNXpzSUxFVTdCWnhyTmVqNTNLUXpfUmpHYUpzVVJGODhxaERQdnZFUERaUjRxTGtKUmlMazc5b2gzVFhfcEM</guid></item><item><title>五角大楼要求“所有权限”，Anthropic拒绝，但马斯克的xAI同意了 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766311</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 27 Feb 2026 00:15:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE0xTWtXMm0ydXhiQXZVS1ZOcFlLVVYzX0ExM1ZDZE94dFJGbVRvM2dvRXFRLThucUpTbjQzQ0pwcUtoVXlkdVhXcXcya3ppOFJ6UFRj</guid></item><item><title>演员王劲松遇自己AI视频直呼太可怕：完全看不出来真假 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105834.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Feb 2026 00:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBFVUwwZi1SYVp1Z3hTLXlWTTFKNXpzSUxFVTdCWnhyTmVqNTNLUXpfUmpHYUpzVVJGODhxaERQdnZFUERaUjRxTGtKUmlMazc5b2gzVFhfcEM</guid></item><item><title>黄仁勋每天都用的AI工具，要抢金融行业饭碗了？ - 36 Kr</title><link>https://m.36kr.com/p/3700290493034369</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;人工智能的海啸，可能要席卷金融行业了。&lt;/p&gt;
+  &lt;p&gt;事情是这样的：&lt;/p&gt;
+  &lt;p&gt;26日，AI 独角兽 Perplexity 扔出一个新东西：&lt;strong&gt;Perplexity Computer&lt;/strong&gt;，一个可以直接操控电脑的通用 AI 系统。官方号称它可以从研究、设计、写代码，到部署、管理，一个项目全流程跑完。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260226/v2_4f30ca207f804ada9ddd55712ca3a1df@000000_oswg346383oswg1054oswg1302_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;一位做投资管理的网友，上手玩了玩这个新“电脑”，结果几轮操作下来，竟然搓出一个简易版的&lt;strong&gt;彭博终端（Bloomberg Terminal)&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;这一下，评论区直接炸了。&lt;/p&gt;
+  &lt;p&gt;因为这个彭博终端，可是金融行业的“专业版信息操作系统”，连华尔街都在用。不过这种专业的金融工具价格非常昂贵，一年的订阅费要 2.4 万美元起，约合人民币 16 万元。&lt;/p&gt;
+  &lt;p&gt;而 Perplexity Computer 这边，只需订阅 Perplexity Max，一年 2000 美元。价格大约是彭博终端年费的&lt;strong&gt;1/12&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260226/v2_3d6b197381ca4fa58872243b74694f4d@000000_oswg253740oswg838oswg771_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;虽然这个用 Perplexity Computer 做的简易版，离彭博终端还有明显差距，但那种集中式金融工作台的感觉已经出来了。&lt;/p&gt;
+  &lt;p&gt;还有不少网友本来不相信，结果都成功复现了。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260226/v2_0550f04a57784cb59a2c1fd4b09b2af1@000000_oswg308519oswg1044oswg1408_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;另辟 AI Agent 蹊径&lt;/h2&gt;
+  &lt;p&gt;不难看出，Perplexity Computer 也是一种 AI Agent 的衍生应用。更准确说，它是一个云端多 Agent 编排系统（meta-agent system）。&lt;/p&gt;
+  &lt;p&gt;现在的 Agent，有的在争入口，比如 OpenClaw；有的则往企业协作场景延伸，比如 Claude Cowork。&lt;/p&gt;
+  &lt;p&gt;现在 Perplexity Computer 横空出世，即没有既抢注桌面控制，也不只做企业协作。网友放图锐评：&lt;/p&gt;
+  &lt;p&gt;那 Perplexity Compu.ter 有什么特别之处，或者说，它凭什么看起来这么猛？&lt;/p&gt;
+  &lt;p&gt;一个关键因素，不是模型本身，而是它的调度能力。它把 19 个顶尖模型全都塞进同一套系统里，让它们分工干活。&lt;/p&gt;
+  &lt;p&gt;核心推理用&lt;strong&gt;Claude Opus 4.6&lt;/strong&gt;，当“大脑”。&lt;/p&gt;
+  &lt;p&gt;但具体干活的时候，它会按任务换“人”：比如，做深度研究、拆分子任务，用 Gemini；生成图片，用 Nano Banana；做视频，用 Veo 3.1；追求速度的小任务丢给 Grok；需要长上下文、跨大量信息检索的时候，用 ChatGPT5.2。&lt;/p&gt;
+  &lt;p&gt;总而言之，它的重点在于多模型的“编排”。把不同模型组织起来，自动拆任务，能够自动生成子 agent 然后自动分配，把一整套复杂流程跑完。&lt;/p&gt;
+  &lt;p&gt;除了前文提到的测评案例，还有人用 Perplexity Computer 为自己的论文做图然后表示，效果真不赖。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260226/v2_fa42f91d2e4d4417953b7705dbba7280@000000_oswg83181oswg1016oswg352_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;不过在一片褒奖声中，也有人指出，这玩意和Manus雷同。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260226/v2_e98399fee8ff4ab9a16aab10819833dd@000000_oswg393131oswg952oswg1498_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;聚光灯下的黑马之路&lt;/h2&gt;
+  &lt;p&gt;Perplexity 不是第一次炸网了。&lt;/p&gt;
+  &lt;p&gt;作为硅谷最炙手可热的 AI 初创公司之一，Perplexity 从诞生起就自带“黑马体质”。&lt;/p&gt;
+  &lt;p&gt;2022 年 8 月，Perplexity 在旧金山成立。随后这家初创公司凭借差异化打法，迎来爆发式增长：月活跃用户（MAU）突破千万，每月处理上亿次查询。&lt;/p&gt;
+  &lt;p&gt;截止 2025 年底，四年时间，估值已达 200 亿美元，凭着差异化打法，打破谷歌在搜索领域“一言堂”的局面。&lt;/p&gt;
+  &lt;p&gt;它也收获了科技圈大佬的青睐。英伟达、亚马逊创始人贝索斯纷纷入局投资，Andrej Karpathy、Garry Tan 等硅谷知名投资人也加入其“投资天团”。连足球巨星克里斯蒂亚诺·罗纳尔多都参与进来。&lt;/p&gt;
+  &lt;p&gt;其中，英伟达的支持尤为高调。2024 年 1 月，英伟达正式参与 Perplexity 7360 万美元的 B 轮融资，黄仁勋更是在《WIRED》采访中直言，自己“几乎每天都用 Perplexity”，尤其偏爱用它查阅专业领域资料。可以说得到了大佬的背书。&lt;/p&gt;
+  &lt;p&gt;Perplexity 之所以敢这么玩，和它的创始团队有关。&lt;/p&gt;
+  &lt;p&gt;创始人 Aravind Srinivas，师从强化学习大牛 Pieter Abbeel，后来在 OpenAI 做核心语言模型研究。&lt;/p&gt;
+  &lt;p&gt;联合创始人兼 CTO Denis Yarats 则来自 Meta，是 Yann LeCun 的学生。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260226/v2_ca6990fa70d44d05bab539cf5133db3a@000000_oswg908654oswg1080oswg720_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;两个人背景都很硬，但更关键的是，他们对“搜索”都有同一个不满：谷歌越来越像广告位，而不是答案。Aravind 在读博时就想做一个真正能给出直接结论的“研究助理”。巧的是，Denis 也在研究类似方向，甚至论文思路都高度相似。&lt;/p&gt;
+  &lt;p&gt;GPT-3.5 发布（2022 年 11 月 30 日）一周后，他们直接下场，把这个想法变成了 Perplexity。&lt;/p&gt;
+  &lt;p&gt;Perplexity 可以说完成了对“搜索”的重新定义。不同于谷歌的“链接聚合”模式，Perplexity 推出的“答案引擎”（Answer Engine），核心依托 RAG（检索增强生成）技术，能实时抓取网页信息、整合分析，最终给用户呈现带引用来源的完整答案。&lt;/p&gt;
+  &lt;p&gt;这正是它与纯大模型对话工具的核心区别，也精准击中了现代人“信息过载却难以快速获取有效内容”的痛点，被不少用户称为“信息降级综合征”的解药。&lt;/p&gt;
+  &lt;p&gt;Perplexity 最出圈的高光时刻，是在 2024 年 11 月的谷歌反垄断案期间。&lt;/p&gt;
+  &lt;p&gt;当时它公开表态：如果监管要求谷歌出售 Chrome，自己有兴趣收购。&lt;/p&gt;
+  &lt;p&gt;此话一出，全场哗然。&lt;/p&gt;
+  &lt;p&gt;Chrome 的估值大概在 150 亿到 200 亿美元，甚至更高；而那时的 Perplexity 估值只有 90 亿美元，成立还不到两年。&lt;/p&gt;
+  &lt;p&gt;一家初创公司，竟敢公开对谷歌的核心资产放话——不管能不能成，姿态已经摆明：它不只想做个 AI 搜索工具，它想进主场。&lt;/p&gt;
+  &lt;p&gt;在创始人 Aravind 看来，一旦将 Chrome 收入囊中，Perplexity 便能将其彻底重塑，打造成下一代 AI 原生浏览器，让搜索与浏览体验深度融合，进一步巩固自身的差异化优势。&lt;/p&gt;
+  &lt;p&gt;目前 Perplexity 团队规模仅 150-200 人左右，绝大多数是顶级 AI 研究员、全栈工程师和增长黑客，就是这样一支相当于谷歌千分之一人力（谷歌全球员工约 18 万人）的小团队，不仅做出了年营收 5000 万美元的成绩，更凭借颠覆性的产品体验，从谷歌手中切走了一部分高净值搜索流量，成为硅谷“AI 时代超级小团队”的标杆。&lt;/p&gt;
+  &lt;p&gt;但对 Perplexity 而言，这 5000 万美元不过是“颠覆谷歌”野心的起点，仅仅是吹响进攻号角的“第一滴血”。&lt;/p&gt;
+  &lt;p&gt;不过风光背后，Perplexity 的日子并不轻松，一系列挑战正接踵而至。&lt;/p&gt;
+  &lt;p&gt;首先是商业化的困境：钱从哪来？&lt;/p&gt;
+  &lt;p&gt;Perplexity 现在主要靠订阅。可 AI 搜索的成本远高于传统搜索——一次普通的谷歌查询成本可能只是几美分，而 Perplexity 每次都要跑 RAG、解析网页、调用大模型生成答案，背后烧的是真金白银的 GPU。&lt;/p&gt;
+  &lt;p&gt;20 美元一个月的订阅费，很难撑起大规模用户的算力消耗，它必须找到更硬的变现方式。&lt;/p&gt;
+  &lt;p&gt;Aravind 曾说过，不想走谷歌那套广告老路，想探索“为准确引用付费”或企业级资料库搜索。但广告试水并不顺利，版权争议一上来，赞助问答、品牌视频这些尝试很快收缩，最后还是回到订阅模式。&lt;/p&gt;
+  &lt;p&gt;版权问题更是长期阴影。Perplexity 的答案建立在全网抓取之上，这天然会碰到媒体的利益边界，诉讼压力始终存在——“颠覆谷歌广告模式”的理想，落地并不轻松。&lt;/p&gt;
+  &lt;p&gt;还有一个更深层的隐患：它没有自己的基础模型。&lt;/p&gt;
+  &lt;p&gt;Perplexity 的强项在产品和整合能力，但底层模型依赖 OpenAI、Anthropic 等巨头。当 Claude、GPT 本身越来越强，联网搜索、长文本总结越来越成熟时，很多人开始问：如果模型原生就能做这些，我为什么还要单独用 Perplexity？&lt;/p&gt;
+  &lt;p&gt;与此同时，Anthropic 等厂商强势推进自己的生态，流量和关注度都在被分流。&lt;/p&gt;
+  &lt;p&gt;所以 Perplexity 最近把重心压到了 Agent 上——从“给你答案”升级为“替你办事”。如果它能掌握交易和执行环节，就有机会从中抽佣，把商业模式从单纯订阅，拉到更有想象力的层级。&lt;/p&gt;
+  &lt;p&gt;不过，这条路同样烧钱，也同样激烈。&lt;/p&gt;
+  &lt;h3&gt;&lt;strong&gt;参考链接&lt;/strong&gt;&lt;/h3&gt;
+  &lt;p&gt;https://x.com/perplexity_ai/status/2026695550771540489&lt;/p&gt;
+  &lt;p&gt;https://www.perplexity.ai/mk/hub/blog/introducing-perplexity-computer&lt;/p&gt;
+  &lt;p&gt;https://x.com/hamptonism/status/2026778742094442959&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&amp;amp;mid=2247656889&amp;amp;idx=1&amp;amp;sn=1d9bf89db93be7ae8e2ea615baa462fe&amp;amp;chksm=fa369eba48cd8fbf6429acf34fa92facf4be6463ee64b135b8214d288429ffd52b9a4adfe252&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“AI前线”（ID：ai-front）&lt;/a&gt;，作者：木子、允毅，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Fri, 27 Feb 2026 00:25:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5tN0k1cFYzd3RvWmtQR1VYMC15TW91eTNzRkpYWEt6RFk5TVZTbDFiY3JreTk2RW9VbVl1Ml80VnRTVEVWM2FZNkNhZWV4UQ</guid></item><item><title>五角大楼要求“所有权限”，Anthropic拒绝，但马斯克的xAI同意了 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766311</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 27 Feb 2026 00:15:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE0xTWtXMm0ydXhiQXZVS1ZOcFlLVVYzX0ExM1ZDZE94dFJGbVRvM2dvRXFRLThucUpTbjQzQ0pwcUtoVXlkdVhXcXcya3ppOFJ6UFRj</guid></item><item><title>演员王劲松遇自己AI视频直呼太可怕：完全看不出来真假 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105834.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;演员王劲松遇自己AI视频直呼太可怕：完全看不出来真假&lt;/p&gt;
           
@@ -1537,7 +2231,111 @@
   &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1004,1172" src="https://img.36krcdn.com/hsossms/20260226/v2_38c2a158904f446ab9ccd29bcc96d016@5888275_oswg201113oswg1004oswg1172_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
   &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/sjRqg0cN6WOMGyXk3vxhEQ"&gt;“量子位”&lt;/a&gt;，作者：关注前沿科技，36氪经授权发布。&lt;/p&gt;
  
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Thu, 26 Feb 2026 08:13:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE41YllUMmNsc3hvcFhaa1REaVUxN29kX2dnSnZfa0o3dWFpRzhUWFQzMUp6bWdYNHBxdkV0TTlNVkZNMFF5dGpib2JnTUdzUQ</guid></item><item><title>DeepSeek V4 压顶，Anthropic CEO 先动手了：一场漏洞百出的舆论战，从构陷到翻车 - InfoQ 官网</title><link>https://www.infoq.cn/news/kN0HD0jPivJBm8JZt8lw</link><description>&lt;body id="readabilityBody"&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Thu, 26 Feb 2026 08:13:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE41YllUMmNsc3hvcFhaa1REaVUxN29kX2dnSnZfa0o3dWFpRzhUWFQzMUp6bWdYNHBxdkV0TTlNVkZNMFF5dGpib2JnTUdzUQ</guid></item><item><title>谷歌生图新王Nano Banana 2深夜突袭，性能屠榜速度飞升，价格腰斩 - 36 Kr</title><link>https://m.36kr.com/p/3700560428658304</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;blockquote&gt;
+   &lt;p&gt;实测1分钟生成4K图片，时钟难题终于破解了。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;智东西2月27日报道，刚刚，谷歌正式发布其&lt;strong&gt;最强图片生成和编辑模型Nano Banana 2&lt;/strong&gt;（Gemini 3.1 Flash Image），该模型已在谷歌Gemini应用、搜索、AI Studio等谷歌全线产品中上线。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_73e91040b9a945508d3e8e9a5651d15c@000000_oswg65664oswg1044oswg350_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;谷歌官宣Nano Banana 2发布&lt;/p&gt;
+  &lt;p&gt;Nano Banana 2&lt;strong&gt;兼具Pro级功能与Flash级速度&lt;/strong&gt;，在世界知识、图像质量、推理能力和主体一致性等方面实现了全面升级，在基准测试中大幅超越了GPT-Image 1.5、Seedream 5.0 Lite、Grok Imagine Image Pro等业界领先模型，&lt;strong&gt;配合思考模式、文本和图像搜索工具则全面超越Nano Banana Pro&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_8dda8bfa6b2245689eea224fdfb43979@000000_oswg38109oswg1000oswg647_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana 2基准测试成绩&lt;/p&gt;
+  &lt;p&gt;智东西第一时间对Nano Banana 2进行了体验，发现Nano Banana 2生成图片细节&lt;strong&gt;逼真度增强，指令精准执行上表现超出预期&lt;/strong&gt;，&lt;strong&gt;文字渲染能力&lt;/strong&gt;和&lt;strong&gt;中国传统文化储备提升&lt;/strong&gt;，且在&lt;strong&gt;处理复杂场景方面明显提升&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;比如我们让Nano Banana 2和Nano Banana Pro基于围绕“60岁亚洲渔夫”的一段相同的提示词生成图片，前者生成效果明显更逼真、细节更丰富，指令遵循准确度更高。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_e2c69f10c64546318022c8639d2016a7@000000_oswg95053oswg1024oswg559_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana 2生成&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_1be79c470a484073af3b673641fb6348@000000_oswg102385oswg1024oswg559_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana Pro生成，提示词：一位年约60岁的亚洲渔夫的超高清面部特写，海浪作为背景虚化。他脸上布满饱经风霜的皱纹和晒斑，皮肤纹理极其细腻，能看到细小的毛孔和银色的胡茬。阳光从侧面45度打来，照亮他半张脸，眼睛微眯，眼神中透露出坚毅与平静，眼球表面映出远处海平面的反光。画面锐度极高，皮肤质感真实到仿佛能触摸到。&lt;/p&gt;
+  &lt;p&gt;不过Nano Banana 2仍被经典的“时钟+满杯红酒”问题难倒，在同时&lt;strong&gt;面临多物体+物理逻辑+光影难题等多重问题时生成仍不准确（后文第一部分详解）&lt;/strong&gt;。同时，一些图片仍有“&lt;strong&gt;AI感&lt;/strong&gt;”，无法做到完全以假乱真。不过话说回来，瑕不掩瑜，Nano Banana 2相比Nano Banana Pro&lt;strong&gt;跨代升级明显&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;虽然综合效果更强、速度更快，但Nano Banana 2的&lt;strong&gt;价格不增反降&lt;/strong&gt;。在谷歌AI Studio平台，Nano Banana 2相比Nano Banana Pro的输入图片的单价从2美元降至0.5美元，输出图片的单价也从0.134美元&lt;strong&gt;减半至0.067美元&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_5f32c4ccebb74e0ca216095810f05a98@000000_oswg73547oswg823oswg949_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana 2的价格不增反降&lt;/p&gt;
+  &lt;p&gt;去年8月，Nano Banana（Gemini 2.5 Flash Image）席卷全球并重新定义图像生成；11月，基于Gemini 3 Pro的Nano Banana Pro更是凭借更强智能和创作控制力，成为AI生图圈接近“封神”的存在；今天，谷歌首度将两者的优势结合打造一款全新定位的模型。&lt;/p&gt;
+  &lt;p&gt;按照谷歌的设计，&lt;strong&gt;Nano Banana Pro&lt;/strong&gt;适合对事实准确性要求最高的&lt;strong&gt;专业任务&lt;/strong&gt;，而&lt;strong&gt;Nano Banana 2&lt;/strong&gt;则适合&lt;strong&gt;快速生成、精确指令遵循和图像搜索集成&lt;/strong&gt;的工作场景。&lt;/p&gt;
+  &lt;p&gt;在谷歌Gemini应用，Nano Banana 2已取代Fast、Thinking和Pro版本中的Nano Banana Pro，Pro和Ultra订阅用户仍可按需继续选择使用Nano Banana Pro。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_b0a45ba1c9874ef6bb9f487206aee4c0@000000_oswg98756oswg1080oswg373_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana 2已上线谷歌Gemini&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;01.1分钟生成4K图片，细节更逼真，破解“时钟生成难题”&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;智东西第一时间对Nano Banana 2进行了体验，发现其在指令精准执行上表现很好，而且中文乱码问题上也改善明显，对中国传统文化理解超出预期。&lt;/p&gt;
+  &lt;p&gt;如下图所示，当智东西要求“一只大熊猫写毛笔字”的相关图片，Nano Banana 2不仅准确生成了“熊猫丝丝入扣的毛发”、“珠翠和绒球质感真实”，茶馆窗外景观和摄影风格都遵循了指令。在文字渲染上，“生成式AI”笔锋流畅且基本没错别字，但“式”的左下部分的“工”书写不太规范。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_d22343725410493490fb0017e6f60fef@000000_oswg109187oswg1024oswg559_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;智东西用Nano Banana 2生成的图片，提示词：一只戴着中国传统京剧头饰的可爱大熊猫，正坐在现代中式茶馆里，用毛笔在宣纸上书写汉字“生成式AI”。要求熊猫的毛发丝丝入扣，头饰上的珠翠和绒球质感真实，写出的毛笔字“生成式AI”笔锋流畅且没有错别字。茶馆窗外是模糊的未来都市景象（深圳天际线）。画风要求是超写实摄影与工笔画融合的风格。&lt;/p&gt;
+  &lt;p&gt;Nano Banana 2在特殊角度的透视还原上也比较逼真。如下图所示，下图围绕“仰视视角拍摄一位芭蕾舞演员腾空跃起的瞬间”主题生成，Nano Banana 2实现了对下对面部比例和透视的准确控制，下巴、下巴的阴影以及舒展的身体线条，包括专注的眼神都精准呈现，形态没有畸变。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_f9c1fdce98a44b6d91410eae4caf8022@000000_oswg979426oswg1080oswg589_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;智东西用Nano Banana 2生成的图片，提示词：仰视视角拍摄一位芭蕾舞演员腾空跃起的瞬间。镜头从下往上，观众看到她的下巴、下巴的阴影以及舒展的身体线条。她的双臂张开，舞裙飞扬，面部表情专注而宁静，眼神望向远方。舞台灯光从上方打下，在她面部形成强烈的明暗对比。要求下巴到额头的透视关系准确，没有畸变。&lt;/p&gt;
+  &lt;p&gt;在多人物互动与情感交流的生图体验中，Nano Banana 2准确还原了新娘和新郎笑中带泪的对视场景，准确呈现了提示词内容，包括“西装面料纹理”、“模糊的草坪和鲜花拱门”都精准呈现。新郎新娘动作、表情和延伸都比较自然，但新郎眼角流出的眼泪在折射和流体形状上不太自然，让人有些“出戏”。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_ac29abdef015418386c8b92b9a596673@000000_oswg1261351oswg1080oswg589_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;提示词： 一对新婚夫妇在婚礼上的First Look瞬间。新娘穿着洁白婚纱，从背后轻轻蒙住新郎的眼睛，新郎转过身来，两人相视而笑，眼中含泪。阳光透过树叶洒在他们身上，婚纱的蕾丝细节、新郎西装的面料纹理清晰可见。背景是模糊的草坪和鲜花拱门，画面充满幸福甜蜜的氛围。&lt;/p&gt;
+  &lt;p&gt;下面这个例子进一步体现了Nano Banana 2精准指令遵循特征。当我上传了三张图片，让Nano Banana 2将下面左图停车场中的小车替换为右图两个小车时，其在保持原图一致性的基础上将其中几辆小车替换，替换后的车辆与其他车辆的比例保持一致，车下的太阳光阴影也符合物理规律。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_1728dc79e1de4897821870b301d09c21@000000_oswg777896oswg1057oswg432_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;智东西输入Nano Banana 2的三张照片&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_92dee65317de44d7a1449305c8de3e6a@000000_oswg1131807oswg1080oswg603_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;智东西用Nano Banana 2生成的图片，提示词：将图1中停车场中的小车替换为图2、图3中的小车，要求画面风格一致，符合物理规律。&lt;/p&gt;
+  &lt;p&gt;很多海内外用户也肯定了Nano Banana 2的跨代升级，Nano Banana 2在处理复杂场景和细节密度方面明显提升。&lt;/p&gt;
+  &lt;p&gt;一位网友分享了“一个复杂的城市场景”的生成图。如下图所示，光照一致性和人群构成令人印象深刻。这位网友称，大多数AI图像生成器都难以处理像这样复杂的场景——多人、反射、多变的光照，Nano Banana 2在处理细节密度方面远超预期。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_bc07400846da4b8d90c4a7cbc31404d8@000000_oswg146708oswg1080oswg589_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;社交平台X网友分享的Nano Banana 2生成图&lt;/p&gt;
+  &lt;p&gt;Nano Banana 2还解决了“时钟难题”。一位网友很兴奋地称：“终于！Nano Banana 2可以精准生成时钟了？！”他输入的提示词是“传统时钟 21:35”，这一任务考察模型将抽象数字转化为时钟精细具象表达的能力，此前Nano Banana Pro在多次处理这一任务中都失败了。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_48a2f139960c4b32af4991af844a04aa@000000_oswg179454oswg1080oswg1538_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana 2生成的时钟图&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_08bc8ffa92594acebba2d3515d7ab1db@000000_oswg42737oswg1006oswg625_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana Pro生成的时钟图&lt;/p&gt;
+  &lt;p&gt;但这位网友也提到，可惜的是，当面临复杂一些的时钟和满杯酒测试，Nano Banana 2的生成效果依旧差了一点。Nano Banana 2还是没有完全通过时钟和满杯酒测试，时针和分针搞反了。看来AI一直以来的准确性难题依旧难以解决。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_a70fe5eccee24e22bac0fe2efccec9a6@000000_oswg93949oswg1080oswg1005_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;Nano Banana Pro生成的时钟和满杯酒测试&lt;/p&gt;
+  &lt;p&gt;不过，话说回来，Nano Banana 2确实性价比可观。一位中国网友称：“Nano Banana 2出来了，产图真的是又快又好，不到一分钟就能产4K图。比Nano Banana Pro效果好、快、便宜。谷歌特有的以下克上，倒反天罡？”&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_36143e9cd05b424c8062a4b3d00875dd@000000_oswg111784oswg1080oswg806_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;X网友分享的Nano Banana 2生成图&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;02.核心升级点：更全世界知识，更精准文本渲染、更强创作控制力&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;看完实测体验，再来看看Nano Banana 2的具体升级点。&lt;/p&gt;
+  &lt;p&gt;谷歌称，该模型将Gemini Flash的高速应用于图像生成，实现了快速编辑和迭代。同时，它试图让更多用户用上了原本Pro版才有的功能：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;1、先进世界知识：&lt;/strong&gt;模型调用Gemini的真实世界知识库，并结合网络搜索获取的实时信息和图像，能够更准确地呈现特定主题。这种深度理解还可用于创建信息图表、将笔记转化为图表，以及生成数据可视化内容。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;2、精准文本渲染与翻译：&lt;/strong&gt;Nano Banana 2可为营销素材或贺卡生成准确易读的文本。用户还可以翻译和本地化图像中的文字，与全球受众分享创意。&lt;/p&gt;
+  &lt;p&gt;下图是谷歌官方公布的示例图片，围绕“一张平铺式的信息图，描绘了水循环”主题生成，可以看到谷歌比较强调Nano Banana 2的科学知识储备和将抽象知识转化为具象图像的能力。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_0e01c22975b545478da0af168580696f@000000_oswg68043oswg1080oswg602_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;谷歌官方公布的Nano Banana 2生成图&lt;/p&gt;
+  &lt;p&gt;同时，Nano Banana 2还具备更强的创作控制力。&lt;/p&gt;
+  &lt;p&gt;Nano Banana 2大幅缩小了速度与画质的差距，能生成高质量、照片级的逼真图像。相比初代Nano Banana，主要改进包括：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;1、主体一致性：&lt;/strong&gt;在单个工作流中，最多可保持五个角色的形象相似性，以及最多14个对象的特征一致性，方便进行故事板绘制和叙事创作。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;2、精确指令遵循：&lt;/strong&gt;增强的指令执行能力让模型能更严格地遵循复杂要求，精准捕捉你的创意细节，确保生成结果符合预期。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;3、生产就绪规格：&lt;/strong&gt;支持从512px到4K的多种分辨率和宽高比，无论是竖屏社交媒体还是宽屏背景，都能输出清晰锐利的视觉效果。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;4、画质提升：&lt;/strong&gt;Nano Banana 2呈现更鲜艳的光照、更丰富的纹理和更清晰的细节，在保持Flash系列速度的同时，实现了高质量的画面效果。&lt;/p&gt;
+  &lt;p&gt;下图展示了“农场里换了的任务和物品”主题图生成，输入15个图像素材，Nano Banana 2讲这些包含动物和农场所需物品融合生成了一张符合主题的图片，突出了主题一致、精准指令遵循等特征。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_f605f86d26b34ec29406df75d572630f@000000_oswg88592oswg1080oswg607_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;谷歌官方公布的Nano Banana 2生成图&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;03.三款示例应用发布，全球广告本地化降本“神器”来了&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;Nano Banana 2利用Gemini模型丰富的全球知识，通过网络搜索图像来创建增强的视觉效果。为了展示这种视觉基础的实际应用，谷歌构建了一个名为&lt;strong&gt;“靠窗座位（Window Seat）”&lt;/strong&gt;的示例App，该App利用Nano Banana 2的知识和网络图像搜索来创建受世界各地位置和实时天气数据启发的逼真窗景。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_177979e6f4f443db8eae7d329a6b156e@000000_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;靠窗座位（Window Seat）App&lt;/p&gt;
+  &lt;p&gt;Nano Banana 2在之前的Flash图像模型基础上进行了升级，提供了更可靠的文本渲染效果。谷歌开发了一款名为“&lt;strong&gt;全球广告本地化器（Global Ad Localizer）&lt;/strong&gt;”的演示App，它可以将广告翻译成不同语言，以适应国际市场。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_8e6fc58560ea4df9a441fe21caf4db90@000000_oswg17246oswg638oswg360_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;全球广告本地化器（Global Ad Localizer）App&lt;/p&gt;
+  &lt;p&gt;Nano Banana 2兼具速度和视觉保真度，呈现生动的光照、更丰富的纹理和更清晰的细节。现在，用户可以通过多种高级创意功能更好地控制这些高保真输出：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;原生宽高比：&lt;/strong&gt;无缝生成或编辑图像以满足用户的项目需求，我们原生支持所有现有宽高比，现在还新增了 4:1、1:4、8:1 和 1:8。在此处查找支持的宽高比的完整列表。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;新增512px分辨率：&lt;/strong&gt;优化效率。继 1K、2K 和 4K 分辨率之后，这一全新分辨率级别可最大限度地减少延迟，从而实现快速迭代和高负载处理流程。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;改进的指令遵循：&lt;/strong&gt;该模型更加严格地遵循复杂的、多层的开发者提示，有助于确保应用程序请求的图像就是生成的图像。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;可配置的思考模式：&lt;/strong&gt;用户现在可以更好地控制模型的推理过程。调整思维水平（最低（默认）与高/动态），使模型能够在渲染之前推理复杂的提示，从而显著提高输出质量和提示遵循度。&lt;/p&gt;
+  &lt;p&gt;其“&lt;strong&gt;宠物护照（Pet Passport）&lt;/strong&gt;”演示版只需拍摄用户宠物的一张照片，即可带领它开启环球旅行，游览世界各地著名地标。它能确保宠物在不同的目的地保持相同的形象。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260227/v2_bad38da9ff874e3e8897f6780c09cc1b@000000_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;宠物护照（Pet Passport）App&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;04.Nano Banana 2谷歌全线产品上线，Pro版仍有适用场景&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;Nano Banana 2即日起在谷歌全线产品中上线，包括：&lt;/p&gt;
+  &lt;p&gt;Gemini应用：Nano Banana 2将取代Fast、Thinking和Pro版本中的Nano Banana Pro。Google AI Pro和Ultra订阅用户仍可通过三点菜单重新生成图像，在特定任务中继续使用Nano Banana Pro。&lt;/p&gt;
+  &lt;p&gt;Nano Banana Pro适合对事实准确性要求最高的专业任务，而Nano Banana 2则适合快速生成、精确指令遵循和图像搜索集成的工作场景。&lt;/p&gt;
+  &lt;p&gt;搜索：可通过谷歌应用以及移动和桌面浏览器，在AI模式和Google镜头中使用。支持范围新增141个国家和地区以及8种语言。&lt;/p&gt;
+  &lt;p&gt;AI Studio+API：已在AI Studio和Gemini API中提供预览版。定价信息可点击查询。Google Antigravity也已集成。&lt;/p&gt;
+  &lt;p&gt;Google Cloud：可通过Vertex AI中的Gemini API预览使用。&lt;/p&gt;
+  &lt;p&gt;Flow：Nano Banana 2已成为Flow的默认图像生成模型，对所有Flow用户免费开放。&lt;/p&gt;
+  &lt;p&gt;广告：Nano Banana可用于广告场景，在创建广告系列时提供建议。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;05.结语：全球AI生图赛道竞赛升级&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;全球AI生图赛道竞赛正在升级。在国内，字节Seedream 5.0、阿里Qwen-Image-2.0等国产模型的密集出击，交出了领先的基准测试成绩和实测反馈；在国外，谷歌正将战火从单纯的画质比拼，引向世界知识集成、精准指令执行和生产效率的综合较量，开辟新战场。&lt;/p&gt;
+  &lt;p&gt;随着Nano Banana 2的发布，谷歌在图像生成产品矩阵实现更清晰切割：Pro版驻扎专业高地和事实准确性，Flash版则以更快、更便宜、足够好的策略抢占规模化应用场景。该模型全线登陆谷歌产品矩阵并大幅降价，AI图像生成的竞赛已从“能不能画”迈入“画得多快、多准、多便宜”的新阶段。&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&amp;amp;mid=2652797483&amp;amp;idx=1&amp;amp;sn=7185d35816852315c18043e3b66f5f09&amp;amp;chksm=85bc2fb46c1430fb64d372a777c12c126e9f1bd1ee969274a7ac04e2f754dddeae3e8fdf0dc5&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“智东西”（ID：zhidxcom）&lt;/a&gt;，作者：李水青，编辑：云鹏，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Thu, 26 Feb 2026 08:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE10WjVHMms3a09DNWZJcGRoeEJlMzhBRFdVQ0pIYzl2ZkhJWWw5ZUdmaTQ2VFpFeWR1R0tScWtYbkwtaS1RRjc4LXExVExldw</guid></item><item><title>DeepSeek V4 压顶，Anthropic CEO 先动手了：一场漏洞百出的舆论战，从构陷到翻车 - InfoQ 官网</title><link>https://www.infoq.cn/news/kN0HD0jPivJBm8JZt8lw</link><description>&lt;body id="readabilityBody"&gt;
 &lt;p id="app"&gt;&lt;/p&gt;
 &lt;img src="https://static001.infoq.cn/static/infoq/img/logo-121-75.yuij86g.png" alt="DeepSeek V4 压顶，Anthropic CEO 先动手了：一场漏洞百出的舆论战，从构陷到翻车_AI&amp;amp;大模型_褚杏娟_InfoQ精选文章"&gt;
 
@@ -2095,7 +2893,9 @@ Li2SnS3界面相调控金属离子迁移示意图&lt;/p&gt;
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 05:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5GTkJOTGRaakhITFMyRGprMnVqdUtBZFdQdm5XdmJleHBCekFXYUI3TTZIdUh3ZGREdVVCTWRZbHhDWkYyLW9zc3pEZE15S0t5d0dRaWVfYmw</guid></item><item><title>我们需要对AI机器人保持礼貌吗？ - BBC</title><link>https://www.bbc.com/zhongwen/articles/crk8jrx52n7o/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-h74ehr"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1miaz2u0"&gt;我们需要对AI机器人保持礼貌吗？&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一名女子拿着手机看" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Serenity Strull/ BBC&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" data-testid="byline"&gt;&lt;strong id="article-byline" aria-hidden="true" class="css-2ozlq5"&gt;Article Information&lt;/strong&gt;&lt;ul class="css-1dlgp3z"&gt;&lt;li class="css-1s1df59"&gt;&lt;ul role="list" class="css-z50d25"&gt;&lt;li class="css-0"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;Author, &lt;/span&gt;&lt;span class="css-gbtxhp"&gt;汤玛斯·杰曼（Thomas Germain）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;time datetime="2026-02-26" class="css-1luxvbl e9szwfh0"&gt;1 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;从礼貌待人到假装自己身处《星际迷航》（Star Trek，《星际争霸战》）的场景中，关于如何与聊天机器人对话的建议可谓五花八门，而且完全没有用。以下这些才是真正有效的方法。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;一群研究人员决定测试“正向思考”是否能提高人工智慧（AI）聊天机器人的准确率，结果却出乎意料。他们向不同的聊天机器人提问，尝试称赞它们“聪明”，鼓励它们认真思考，甚至​​在问题结尾加上一句“这会很有趣！”。然而，这些方法都没有产生一致的效果，但其中一种方法脱颖而出。当他们让AI假装自己身处《星际迷航》场景，它的基础数学能力竟然有所提升。看来，它真的能把我传送上去。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;人们尝试过各种奇葩策略，试图从大型语言模型（LLM，ChatGPT等工具背后的AI技术）中获得更好的回馈。有些人深信，威胁AI能让它表现得更好；另一些人认为，礼貌待人会让聊天机器人更配合；还有些人甚至要求机器人扮演某个研究领域的专家来回答问题。这样的例子不胜枚举。这都是围绕着“提示工程”或“情境工程”——即建构指令以使AI提供更佳结果的不同方法——所形成的迷思的一部分。但事实是：专家告诉我，许多被广泛接受的提示技巧根本不起作用，有些甚至可能是危险的。但是，你与AI的沟通方式确实至关重要，某些技巧真的能带来差异。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“很多人认为，只要用一些神奇的词语，就能让大型语言模型解决问题，”美国范德比尔特大学（Vanderbilt University）研究生成式AI的电脑科学教授朱尔斯·怀特（Jules White）说，“但关键不在于用词，而在于你如何从根本上表达你想要做的事情。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="要讲究礼貌吗" class="css-worlid emoh99e1"&gt;要讲究礼貌吗？&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;2025年，一位用户在X（前身为Twitter）上发推文问道：“我想知道OpenAI因为人们向他们的模型说‘请’和‘谢谢’而损失了多少电费。” 制作ChatGPT的OpenAI首席执行官萨姆·奥特曼（Sam Altman）回应道：“花掉的数千万美元很值得，”他说，“谁知道呢。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;大多数人将最后一句解读为对潜在“AI末日”的戏谑，尽管“数千万美元”这个数字究竟有多大可信度还很难说。不过，这是一个实际的问题。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一只手托着一个手机" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Serenity Strull/ BBC&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;大型语言模型的工作原理是将你的话语分割成称为“词元”（tokens）的小块，然后利用统计方法分析这些词元，从而得到适当的回应。这代表你说的每一个字词，甚至是一个额外的逗号，都可能影响AI的回答。问题在于，这种影响几乎无法预测。虽然已经有许多研究试图从AI提示的细微变化中寻找规律，但大部分证据相互矛盾，结论也不明确。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;举例来说，2024年的一项研究发现，当使用者以礼貌的方式提问，而不是直接下命令时，大型语言模型的回答更好、更准确。更奇怪的是，这其中还存在着文化差异：与中文和英文相比，如果你对日文聊天机器人过于客气，它们的表现反而会略逊一筹。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但也别急着去买张“谢谢卡”送给你的AI。另一个小型测试发现，旧版的ChatGPT在被辱骂时反而更准确。总体来说，这方面的研究还远远不足，无法得出可靠的结论。而且，AI公司不断更新他们的聊天机器人，这意味着研究结果很快就会过时。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;专家表示，AI模式在短短几年内取得了巨大的进步。因此，如果你的目标是让AI更加准确，那么奉承、礼貌、侮辱或威胁等技巧都是浪费时间。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“那时候完全是碰运气。”博通公司（Broadcom）应用机器学习工程师里克·巴特尔（Rick Battle）说。他也是《星际迷航》研究的作者之一。虽然这项研究是在2024年进行的，但情况已经改变了。巴特尔等人表示，如今你在ChatGPT、Gemini或Claude等主流产品中遇到的新型AI模型，能够更好地捕捉你提示中最关键的部分。它们大概不会因为语言上的细微变化而受到影响，至少不会以一种你能持续利用的方式受到影响。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这个结论本身就有些令人不安。当公司设计像ChatGPT或谷歌的Gemini这样的AI时，会使其行为像人一样，所以它们有时看起来好像有情绪，你可以控制它们，或者可以引导它们的个性，这也就不足为奇了。但不要被其所迷惑。AI工具只是模仿者，不是生命体。它们只是在模拟人类行为。如果你想要更好的答案，就不要把AI当人看待，而应该把它当成工具来使用。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="如何与聊天机器人对话" class="css-worlid emoh99e1"&gt;如何与聊天机器人对话&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;AI确实存在一些非常现实的问题，从伦理问题到其可能对环境造成的影响。有些人甚至选择完全不与它互动。但如果你打算使用大型语言模型，那么学会如何更快、更有效率地获得你想要的结果，不仅对你有好处，对过程中消耗的能源也可能更有益。以下这些技巧将帮助你入门。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“我告诉人们的第一件事就是不要只问一个答案，而是问三个或五个。”怀特说。例如，如果你想让AI帮你写文章，就告诉它提供几个在某些重要方面不同的选项。“这能迫使人们重新思考自己喜欢什么以及为什么喜欢。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;尽可能为AI提供范例。 “例如，我见过有人让一个法学硕士帮他们写邮件，然后他们就感到沮丧，因为他们会说‘这完全不像我的风格’。”怀特说。人们的自然反应是列出一长串指令，“要这样做”和“不要那样做”。怀特说，更有效的做法是说“这里有我过去寄出的10封电子邮件，请使用我的写作风格。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“假设你想要生成一份职缺描述。告诉AI：‘我希望你一次问我一个问题，直到你收集到足够资讯来撰写一份有吸引力的职缺公告，’”怀特说，“透过一次一个问题的方式，它能根据你的回答进行调整。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“过去人们认为，如果你告诉AI它是一位数学教授，例如，它在回答数学问题时实际上会更准确。”桑德·舒尔霍夫（Sander Schulhoff）说。他是一位企业家和研究员，也是“提示工程”理念的推广者。但舒尔霍夫和其他人表示，当你寻找资讯或提出只有一个正确答案的问题时，角色扮演反而会降低AI模型的准确性。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“这实际上可能很危险，”巴特尔说。 “你实际上是在鼓励它产生幻觉，因为你告诉它它是专家，它应该相信它内部的参数知识。”本质上，这会让AI表现得过于自信。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但对于那些没有单一正确答案的开放式任务，角色扮演是有效的（例如建议、脑力激荡、创意或探索性的问题解决）。如果你对求职面试感到紧张，让聊天机器人模仿招聘主管的语气练习可能是一个不错的主意——只是要记得同时参考其他资源。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“不要引导证人，”巴特尔说，如果你正在两辆车之间犹豫不决，不要说你倾向于丰田。 “否则，你很可能就会得到那样的答案。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="请和谢谢" class="css-worlid emoh99e1"&gt;“请”和“谢谢”&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;根据皮尤研究中心2019年的一项调查，超过一半的美国人在与智慧音箱对话时会说“请”。这种趋势似乎仍在持续。 未来出版社2025年的一项调查发现，70%的人在使用AI时会保持礼貌。大多数人表示，他们这样做是因为这是理所当然的，但也有12%的人表示，他们这样做是为了在机器人起义时保护自己。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;礼貌或许无法保护你免受机器人的愤怒攻击，也不能让大型语言模型更准确，但还有其他理由让我们继续保持礼貌。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;舒尔霍夫说：“对我来说，更重要的是，说‘请’和‘谢谢’可能会让你在与AI互动时感到更自在。这虽然不会提升模型的性能，但如果它能让你因为感到更自在而更愿意使用它，那么它就是有用的。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;此外，你自身人性中的温柔也值得考虑。哲学家伊曼努尔·康德（Immanuel Kant）认为，人不应该虐待动物，因为这同样会对自己造成伤害。本质上，对任何事物不友善都会让你变得更加冷酷无情。你无法伤害AI的感受，因为它根本没有感情，但或许你还是该对它友善一点。这种习惯或许也能让你的生活其他方面受益。&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Thu, 26 Feb 2026 05:34:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE5iZ1VDb0xDZlg4RzBCN3h1NjgxYVBwUWtDbzc4UE1sUTUyeTJoNVU0S0xTU0xjVEVxcVprOWw0anlOemsxS0s4c2VMMU9zaXdpeFphS0JwYmxTNGNEUkFfRlhJNU51Z9IBa0FVX3lxTE9ieUVuTUU1Nk1oMTlJNTFSeEp6c3BUcXRHckQ5SUstREJra1dVcXlVbGExV1F0OWRKZ2NfNVBpSmRXakNYM2w1VGxqTzdZbUVGLThfYTRrR0tEdmYyVmdnZWpobUgwLWlEa29V</guid></item><item><title>静静躺了24年！世界上第一条跨大西洋海底光缆拆除-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105645.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 05:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5GTkJOTGRaakhITFMyRGprMnVqdUtBZFdQdm5XdmJleHBCekFXYUI3TTZIdUh3ZGREdVVCTWRZbHhDWkYyLW9zc3pEZE15S0t5d0dRaWVfYmw</guid></item><item><title>我们需要对AI机器人保持礼貌吗？ - BBC</title><link>https://www.bbc.com/zhongwen/articles/crk8jrx52n7o/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-h74ehr"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1miaz2u0"&gt;我们需要对AI机器人保持礼貌吗？&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/17af/live/d5e7a2d0-12c9-11f1-b048-c9424b2cf5fd.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一名女子拿着手机看" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Serenity Strull/ BBC&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" data-testid="byline"&gt;&lt;strong id="article-byline" aria-hidden="true" class="css-2ozlq5"&gt;Article Information&lt;/strong&gt;&lt;ul class="css-1dlgp3z"&gt;&lt;li class="css-1s1df59"&gt;&lt;ul role="list" class="css-z50d25"&gt;&lt;li class="css-0"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;Author, &lt;/span&gt;&lt;span class="css-gbtxhp"&gt;汤玛斯·杰曼（Thomas Germain）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;time datetime="2026-02-26" class="css-1luxvbl e9szwfh0"&gt;1 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;从礼貌待人到假装自己身处《星际迷航》（Star Trek，《星际争霸战》）的场景中，关于如何与聊天机器人对话的建议可谓五花八门，而且完全没有用。以下这些才是真正有效的方法。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;一群研究人员决定测试“正向思考”是否能提高人工智慧（AI）聊天机器人的准确率，结果却出乎意料。他们向不同的聊天机器人提问，尝试称赞它们“聪明”，鼓励它们认真思考，甚至​​在问题结尾加上一句“这会很有趣！”。然而，这些方法都没有产生一致的效果，但其中一种方法脱颖而出。当他们让AI假装自己身处《星际迷航》场景，它的基础数学能力竟然有所提升。看来，它真的能把我传送上去。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;人们尝试过各种奇葩策略，试图从大型语言模型（LLM，ChatGPT等工具背后的AI技术）中获得更好的回馈。有些人深信，威胁AI能让它表现得更好；另一些人认为，礼貌待人会让聊天机器人更配合；还有些人甚至要求机器人扮演某个研究领域的专家来回答问题。这样的例子不胜枚举。这都是围绕着“提示工程”或“情境工程”——即建构指令以使AI提供更佳结果的不同方法——所形成的迷思的一部分。但事实是：专家告诉我，许多被广泛接受的提示技巧根本不起作用，有些甚至可能是危险的。但是，你与AI的沟通方式确实至关重要，某些技巧真的能带来差异。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“很多人认为，只要用一些神奇的词语，就能让大型语言模型解决问题，”美国范德比尔特大学（Vanderbilt University）研究生成式AI的电脑科学教授朱尔斯·怀特（Jules White）说，“但关键不在于用词，而在于你如何从根本上表达你想要做的事情。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="要讲究礼貌吗" class="css-worlid emoh99e1"&gt;要讲究礼貌吗？&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;2025年，一位用户在X（前身为Twitter）上发推文问道：“我想知道OpenAI因为人们向他们的模型说‘请’和‘谢谢’而损失了多少电费。” 制作ChatGPT的OpenAI首席执行官萨姆·奥特曼（Sam Altman）回应道：“花掉的数千万美元很值得，”他说，“谁知道呢。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;大多数人将最后一句解读为对潜在“AI末日”的戏谑，尽管“数千万美元”这个数字究竟有多大可信度还很难说。不过，这是一个实际的问题。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/11a5/live/05b8b1c0-12ca-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一只手托着一个手机" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Serenity Strull/ BBC&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;大型语言模型的工作原理是将你的话语分割成称为“词元”（tokens）的小块，然后利用统计方法分析这些词元，从而得到适当的回应。这代表你说的每一个字词，甚至是一个额外的逗号，都可能影响AI的回答。问题在于，这种影响几乎无法预测。虽然已经有许多研究试图从AI提示的细微变化中寻找规律，但大部分证据相互矛盾，结论也不明确。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;举例来说，2024年的一项研究发现，当使用者以礼貌的方式提问，而不是直接下命令时，大型语言模型的回答更好、更准确。更奇怪的是，这其中还存在着文化差异：与中文和英文相比，如果你对日文聊天机器人过于客气，它们的表现反而会略逊一筹。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但也别急着去买张“谢谢卡”送给你的AI。另一个小型测试发现，旧版的ChatGPT在被辱骂时反而更准确。总体来说，这方面的研究还远远不足，无法得出可靠的结论。而且，AI公司不断更新他们的聊天机器人，这意味着研究结果很快就会过时。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;专家表示，AI模式在短短几年内取得了巨大的进步。因此，如果你的目标是让AI更加准确，那么奉承、礼貌、侮辱或威胁等技巧都是浪费时间。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“那时候完全是碰运气。”博通公司（Broadcom）应用机器学习工程师里克·巴特尔（Rick Battle）说。他也是《星际迷航》研究的作者之一。虽然这项研究是在2024年进行的，但情况已经改变了。巴特尔等人表示，如今你在ChatGPT、Gemini或Claude等主流产品中遇到的新型AI模型，能够更好地捕捉你提示中最关键的部分。它们大概不会因为语言上的细微变化而受到影响，至少不会以一种你能持续利用的方式受到影响。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这个结论本身就有些令人不安。当公司设计像ChatGPT或谷歌的Gemini这样的AI时，会使其行为像人一样，所以它们有时看起来好像有情绪，你可以控制它们，或者可以引导它们的个性，这也就不足为奇了。但不要被其所迷惑。AI工具只是模仿者，不是生命体。它们只是在模拟人类行为。如果你想要更好的答案，就不要把AI当人看待，而应该把它当成工具来使用。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="如何与聊天机器人对话" class="css-worlid emoh99e1"&gt;如何与聊天机器人对话&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;AI确实存在一些非常现实的问题，从伦理问题到其可能对环境造成的影响。有些人甚至选择完全不与它互动。但如果你打算使用大型语言模型，那么学会如何更快、更有效率地获得你想要的结果，不仅对你有好处，对过程中消耗的能源也可能更有益。以下这些技巧将帮助你入门。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“我告诉人们的第一件事就是不要只问一个答案，而是问三个或五个。”怀特说。例如，如果你想让AI帮你写文章，就告诉它提供几个在某些重要方面不同的选项。“这能迫使人们重新思考自己喜欢什么以及为什么喜欢。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;尽可能为AI提供范例。 “例如，我见过有人让一个法学硕士帮他们写邮件，然后他们就感到沮丧，因为他们会说‘这完全不像我的风格’。”怀特说。人们的自然反应是列出一长串指令，“要这样做”和“不要那样做”。怀特说，更有效的做法是说“这里有我过去寄出的10封电子邮件，请使用我的写作风格。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“假设你想要生成一份职缺描述。告诉AI：‘我希望你一次问我一个问题，直到你收集到足够资讯来撰写一份有吸引力的职缺公告，’”怀特说，“透过一次一个问题的方式，它能根据你的回答进行调整。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“过去人们认为，如果你告诉AI它是一位数学教授，例如，它在回答数学问题时实际上会更准确。”桑德·舒尔霍夫（Sander Schulhoff）说。他是一位企业家和研究员，也是“提示工程”理念的推广者。但舒尔霍夫和其他人表示，当你寻找资讯或提出只有一个正确答案的问题时，角色扮演反而会降低AI模型的准确性。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“这实际上可能很危险，”巴特尔说。 “你实际上是在鼓励它产生幻觉，因为你告诉它它是专家，它应该相信它内部的参数知识。”本质上，这会让AI表现得过于自信。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但对于那些没有单一正确答案的开放式任务，角色扮演是有效的（例如建议、脑力激荡、创意或探索性的问题解决）。如果你对求职面试感到紧张，让聊天机器人模仿招聘主管的语气练习可能是一个不错的主意——只是要记得同时参考其他资源。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“不要引导证人，”巴特尔说，如果你正在两辆车之间犹豫不决，不要说你倾向于丰田。 “否则，你很可能就会得到那样的答案。”&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="请和谢谢" class="css-worlid emoh99e1"&gt;“请”和“谢谢”&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;根据皮尤研究中心2019年的一项调查，超过一半的美国人在与智慧音箱对话时会说“请”。这种趋势似乎仍在持续。 未来出版社2025年的一项调查发现，70%的人在使用AI时会保持礼貌。大多数人表示，他们这样做是因为这是理所当然的，但也有12%的人表示，他们这样做是为了在机器人起义时保护自己。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;礼貌或许无法保护你免受机器人的愤怒攻击，也不能让大型语言模型更准确，但还有其他理由让我们继续保持礼貌。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;舒尔霍夫说：“对我来说，更重要的是，说‘请’和‘谢谢’可能会让你在与AI互动时感到更自在。这虽然不会提升模型的性能，但如果它能让你因为感到更自在而更愿意使用它，那么它就是有用的。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;此外，你自身人性中的温柔也值得考虑。哲学家伊曼努尔·康德（Immanuel Kant）认为，人不应该虐待动物，因为这同样会对自己造成伤害。本质上，对任何事物不友善都会让你变得更加冷酷无情。你无法伤害AI的感受，因为它根本没有感情，但或许你还是该对它友善一点。这种习惯或许也能让你的生活其他方面受益。&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Thu, 26 Feb 2026 05:34:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE5iZ1VDb0xDZlg4RzBCN3h1NjgxYVBwUWtDbzc4UE1sUTUyeTJoNVU0S0xTU0xjVEVxcVprOWw0anlOemsxS0s4c2VMMU9zaXdpeFphS0JwYmxTNGNEUkFfRlhJNU51Z9IBa0FVX3lxTE9ieUVuTUU1Nk1oMTlJNTFSeEp6c3BUcXRHckQ5SUstREJra1dVcXlVbGExV1F0OWRKZ2NfNVBpSmRXakNYM2w1VGxqTzdZbUVGLThfYTRrR0tEdmYyVmdnZWpobUgwLWlEa29V</guid></item><item><title>微信新能力上线 可查图片使用次数 - Tencent WeChat 腾讯微信 - cnBeta.COM</title><link>https://www.cnbeta.com.tw/articles/tech/1551286.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" id="artibody"&gt;
+                        &lt;p class="article-global"&gt;&lt;/p&gt;                            &lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/67ff13de29c5467ba33a95384f547d02.png" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2026/0226/b24a34500b4b8c1.png"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;此次微信新增的功能中，用户长按聊天中的图片、视频或文件，选择查看相关内容包含的聊天，就能清晰看到该内容在多少个单聊或群聊中被使用。&lt;/p&gt;&lt;p&gt;还能一键定位到具体聊天位置，轻松实现内容流向溯源，被网友称作拯救金鱼记忆的实用能力。&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/644773853e7c4e219fcd0b151cb7d22c.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2026/0226/2e1d3072a9671d7.jpg"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;微信员工表示，这一功能的设计早有规划，&lt;strong&gt;核心是通过UI层面的展示，让用户直观了解到文件转发后只是引用次数增加，并非生成了多个副本，实际存储体积并未变大。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;而这一体验的背后，是微信采用的硬链接技术，同一文件无论转发多少次，手机本地都仅保留一份原始文件，从根源上避免了存储冗余。&lt;/p&gt;&lt;p&gt;除了图片使用次数查询，微信还同步上线了面对面收发图功能，无需加好友、不耗费流量就能快速传输原图。&lt;/p&gt;&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/7fae56fdabea4d29989c39432e3edc33.jpg" target="_blank"&gt;&lt;img src="https://static.cnbetacdn.com/article/2026/0226/13b079ae00caf65.jpg"&gt;&lt;/a&gt;&lt;/p&gt;                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cnBeta.COM</author><pubDate>Thu, 26 Feb 2026 05:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1FQkM5NHVKd1piQmRwRXZsSTdRQmowT1k0U2Jxbk1sSjdNSzlhM3oyQ1FyWEUwZlV3M3Y2LWd3d3UtMW9GZmFxdXNnZ2FhMVBvX09abnBOZzRyQWh5WXpMMg</guid></item><item><title>静静躺了24年！世界上第一条跨大西洋海底光缆拆除-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105645.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技2月26日消息，据报道，海底环境服务公司(Subsea Environmental Services)目前正在葡萄牙附近海域的海床上，拆除世界上第一条跨大西洋海底光缆“&lt;strong&gt;TAT-8&lt;/strong&gt;”，并打捞回收。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这条光缆由美国AT&amp;amp;T、英国电信、法国电信联合建造，1988年12月14日投入使用，但是在2002年的时候出现故障，而维修成本过高，不得不停运。&lt;/strong&gt;&lt;/p&gt;
@@ -2120,310 +2920,4 @@ Li2SnS3界面相调控金属离子迁移示意图&lt;/p&gt;
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 05:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0zeFE1eWtOQU9kTzdvejZyTFlkSXZWanVDeHAzei1YcjBKVzJmMGd5WnV0dDdvNUs4dmUwc3dRV0l3eDNrc2h5dmdnUUtnVEpuNF9CV0NIa2k</guid></item><item><title>Minimax持续猛挖“龙虾肉” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766231</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 26 Feb 2026 04:33:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBldHFoV1gzMnJFUndDdko0azNiZWdRUE1UOVgwc2x3WWdyZDRYM3FtNkFkLU9wclNMUHNJaFRxVndvWEhOdFhIc0dwZlVpLUdHNlg4</guid></item><item><title>ROG与小岛工作室联名笔记本开启预购：售价近30000元！二合一设计-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105639.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;ROG与小岛工作室联名笔记本开启预购：售价近30000元！二合一设计&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-26 12:21:04  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105639-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月26日消息，在今年年初的CES上亮相后，&lt;span&gt;&lt;strong&gt;由华硕ROG与小岛工作室联合打造的限量笔记本ROG Flow Z13-KJP，现已在中国台湾开启预购，售价定为134999元新台币（约人民币29564元）。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;该机型由小岛工作室首席艺术家新川洋司亲自操刀，视觉灵感源自工作室标志性吉祥物Ludens。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/c4b66fea-315f-472d-9a1c-88f50c49c4c4.jpg" target="_blank"&gt;&lt;img alt="ROG与小岛工作室联名笔记本开启预购：售价近30000元！二合一设计" h="337" src="//img1.mydrivers.com/img/20260226/Sc4b66fea-315f-472d-9a1c-88f50c49c4c4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;机身采用CNC铣削机壳与碳纤维材质构建，点缀辨识度极高的恒耀金配色，&lt;strong&gt;联名元素贯穿产品内外，从手提外箱、包装设计到专属的Armoury Crate界面主题和Ludens定制壁纸。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此外，机器预装《死亡搁浅2：冥滩之上》，开箱即可体验完整的仪式感。&lt;/p&gt;
-&lt;p&gt;硬件配置方面，&lt;strong&gt;ROG Flow Z13-KJP采用13.4英寸108Hz IPS触控屏，峰值亮度500尼特，搭载AMD锐龙AI Max+ 395处理器，&lt;/strong&gt;最高可选配128GB LPDDR5X 8000MHz内存。&lt;/p&gt;
-&lt;p&gt;同时延续了经典的二合一可拆卸设计，机身配备双USB4接口、USB-A、HDMI 2.1、3.5mm音频口及microSD读卡槽。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/fd28d830-813e-43ee-8942-bdab00041566.jpg" target="_blank"&gt;&lt;img alt="ROG与小岛工作室联名笔记本开启预购：售价近30000元！二合一设计" h="450" src="//img1.mydrivers.com/img/20260226/Sfd28d830-813e-43ee-8942-bdab00041566.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 04:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5GZkFOVmdXcHMtLVNfczJyLXl6QmpWUzdDNzFvcG56NEtyWjRPMWppRkRjZFBpMGRNT2pkRENVMWQ4U3c4NUdtVl9taEpBaWNPMG9QOUlBX3Q</guid></item><item><title>三星存储部门漫天要价，苹果照单全收——三星手机部门被迫采用50%美光存储芯片 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766227</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 26 Feb 2026 04:00:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFAyYjQyWTNwT1I3YWcxYzYzVGJ6REhicGp4ekhxa0NoZTBaam5nV3dPMlI3R3ZvaVh0S3N4S0ZadGR5UHIzWUhhc0NfQno3aF80XzhN</guid></item><item><title>AMD发布EPYC 8005系列：84个Zen5c核心只要225W-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105632.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;AMD发布EPYC 8005系列：84个Zen5c核心只要225W&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-26 11:48:52  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/278470.html" title="上方文Q的主页" class="newstiao4"&gt;上方文Q&lt;/a&gt;&lt;p&gt;  编辑：上方文Q &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105632-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月26日消息，MWC 2026巴展到来之前，AMD非常低调地发布了新一代EPYC 8005系列处理器，&lt;strong&gt;代号“Sorano”(意大利小城索拉诺)。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;它就是Seina EPYC 8004系列的继任者，依然&lt;strong&gt;定位于零售、制造、电信等智能边缘应用，以及云服务、存储等数据中心应用。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/f68012197d584ecdb1a82f9ca7a7ec35.png" target="_blank"&gt;&lt;img alt="AMD发布EPYC 8005系列：84个Zen5c核心只要225W" h="338" src="//img1.mydrivers.com/img/20260226/s_f68012197d584ecdb1a82f9ca7a7ec35.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;技术规格细节公布的很少，甚至是SKU型号都还没公开。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span&gt;目前只知道架构从Zen4c升级到Zen5c，最多84个核心(增加20个)，最高热设计功耗225W(不变)。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260226/06b83f2d69e6450b9c6a94cdd398d373.png" target="_blank"&gt;&lt;img alt="AMD发布EPYC 8005系列：84个Zen5c核心只要225W" h="343" src="//img1.mydrivers.com/img/20260226/s_06b83f2d69e6450b9c6a94cdd398d373.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;按照官方说法，EPYC 8005系列的主要优势有：&lt;/p&gt;
-&lt;p&gt;－ &lt;strong&gt;宽温工作范围&lt;/strong&gt;，满足各类严苛环境需求。&lt;/p&gt;
-&lt;p&gt;－ &lt;strong&gt;支持符合NEBS标准的平台&lt;/strong&gt;，适用于恶劣环境及户外通信部署。&lt;/p&gt;
-&lt;p&gt;－ &lt;strong&gt;单路高核心数&lt;/strong&gt;，可实现更小的设备尺寸。&lt;/p&gt;
-&lt;p&gt;新品将在未来几周内上市。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260226/f34c58d55be84c15ad3ba2e16a86ae2f.jpg" target="_blank"&gt;&lt;img alt="AMD发布EPYC 8005系列：84个Zen5c核心只要225W" h="750" src="//img1.mydrivers.com/img/20260226/s_f34c58d55be84c15ad3ba2e16a86ae2f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 03:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB3VUhNNElCS2J3U3JjTXZ3dC1mTTFfRExENmtHWGlwVjQ5WHJ5emdpWHoxQmZ6ZEtuci0zcVk0ZTlOQ3UtS1dMd3pjZWdJZVRUSS1RclRDdi0</guid></item><item><title>真做成飞碟了！又一低空飞行器亮相 未来出行新篇章 - 中华网</title><link>https://news.china.com/socialgd/10000169/20260226/49271366.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="chan_newsDetail"&gt;
-                
-
-                &lt;p&gt;真做成飞碟了！又一低空飞行器亮相 未来出行新篇章！你是否想象过这样的场景：一架形似飞碟的飞行器，悄无声息地掠过城市天际线，不需要跑道就能垂直起降，载着你避开地面拥堵？这不再是科幻电影的桥段——武汉电鹰科技研发的全球首款“飞碟式”eVTOL已经完成了130次成功试飞。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img3.utuku.imgcdc.com/650x0/news/20260226/3b8025b7-9850-4dd4-a24b-df46d1f77184.jpg" alt="真做成飞碟了！又一低空飞行器亮相"&gt;&lt;/p&gt;&lt;p&gt;这款飞行器最令人惊叹的是其全封闭设计，将电机和桨叶全部隐藏在涵道内。8个旋翼被巧妙包裹，不仅消除了传统直升机叶片的安全隐患，还能紧贴建筑物飞行。占地仅需30平方米（相当于4个停车位），比同类产品减少60%的起降空间需求。这个直径5.6米的“飞碟”竟能承载1.2吨重量，450公斤的有效载荷让它可以轻松容纳4名乘客。纯电驱动系统大幅降低了使用成本，展现出“小马拉大车”的惊艳性能。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img0.utuku.imgcdc.com/650x0/news/20260226/34d56ad6-6787-4048-a4ab-1d2a4197f326.jpg" alt="真做成飞碟了！又一低空飞行器亮相 未来出行新篇章"&gt;&lt;/p&gt;&lt;p&gt;在物流领域，eVTOL可以绕过地面交通瓶颈，实现医疗物资、精密仪器的快速投递。急救器官能在城市上空直线运输，为生命争取黄金时间。救援场景中，其贴近建筑物的飞行能力尤为可贵，火灾高楼救援、山区物资投放等传统直升机难以施展的场景将成为它的主战场。文旅产业也将迎来革新，游客可以体验“飞碟观光”，从独特视角欣赏城市景观或自然奇观。德清雷甸测试基地的落户预示着我省正抢占这一新兴产业的技术制高点。日常出行领域更是想象无限，当技术成熟后，“打飞的”通勤或将成为现实，有效缓解城市交通压力。武汉作为首批试点城市，正在书写低空出行新篇章。&lt;/p&gt;
-            &lt;/div&gt;
-            
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中华网</author><pubDate>Thu, 26 Feb 2026 03:41:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE10NVo2MjdZZ1RMSUxybi1nOTB1eDgzUmp5NkZrajdfQXZwNjlBRlZMNUVjdjdKR0xxaEQxM29aMXVlWVlvVXBqQjhSdlo2NkZfLS0xQUFQWW1ieF9qTko0R1NrWTNFeXFjeDRuTEFVa2I</guid></item><item><title>太空光伏，是否会成为下一个星辰大海？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766229</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 26 Feb 2026 03:24:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9GZUluMWFkNlRCS0E3YU16ZHZBSnViSDlMTjlQa0xXVnBZSzFRT2paZ0RkWnJvZmdvOG4tR3pESjhCeFp0M0RwZGhrRGNXQ3d5T3c4</guid></item><item><title>离开腾讯后，他想做一款能改变历史的三国游戏 - 36 Kr</title><link>https://m.36kr.com/p/3698585488764553</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p&gt;文 | 贝果树&lt;/p&gt;
-  &lt;p&gt;编辑 | 果脯&lt;/p&gt;
-  &lt;p&gt;对于熟悉三国历史的玩家来说，《我的三国》的游玩体验，可能类似于主角拿到剧本的穿越文学。&lt;/p&gt;
-  &lt;p&gt;公元264年，离陈寿写下《三国志》还有十余年，这时的陈寿，在官场上还资历尚浅。但你看重陈寿的才能，打算提拔他为官职太常。重臣董厥出来劝阻，说这恐难服众。不过，你知道自己不会看错人，便在对话框里自信地打下：“此子将来必能名留青史”。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,603" src="https://img.36krcdn.com/hsossms/20260225/v2_fc468b5094014689bf7d038cdd867d02@6255070_oswg832782oswg1080oswg603_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;此子将来必能写就《三国志》&lt;/p&gt;
-  &lt;p&gt;这是《我的三国》在1月2日发布的实机演示中的内容。《我的三国》是一款由AI驱动的历史模拟游戏，玩家将作为三国故事中的人物，下达指令，触发事件，推进历史的进程。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,601" src="https://img.36krcdn.com/hsossms/20260225/v2_42c9a03c0b5f4a7e8c9b02edf31615b4@6255070_oswg786783oswg1080oswg601_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;有玩家在评论区说这是一款“AI美术，AI文案，AI配音”的“3A”大作。在游戏中，AI会根据玩家的选择推演剧情，有极大的自由度。而这部“3A”作品，最终在B站上收获了33万的播放量。&lt;/p&gt;
-  &lt;p&gt;《我的三国》的诞生，源于制作人胡景皓“想用AI做一款前所未有的游戏”的初衷。&lt;/p&gt;
-  &lt;p&gt;在腾讯工作时，胡景皓就觉得“如果只是在传统游戏上加上AI，不能完全体现出它的价值”。生成式AI有强大的内容创造能力，他相信如果仅比较内容丰富度，能用AI制作出超越GTA5或《博德之门3》那样体量的游戏。&lt;/p&gt;
-  &lt;p&gt;AI的参与为游戏开发带来了一些不一样的地方。臭皮匠工作的成员除了胡景皓都是学生。有人还在读大二大三，他有意保持这种年轻的状态：有了AI带来的“技术平权”，“工作经验其实没那么重要”。&lt;/p&gt;
-  &lt;p&gt;也有一些新的问题。在实机演示的评论区，不少玩家质疑AI“记忆如何保留”；交互与Token成本挂钩，如何选择营收方式？；AI生成内容怎么应对审核？&lt;/p&gt;
-  &lt;p&gt;现在《我的三国》还没有做出一个真正可玩的版本，他们也在探索。但胡景皓相信，“等大家真的能玩到的那天，就能感受到AI游戏的潜力”。&lt;/p&gt;
-  &lt;p&gt;以下是我们和《我的三国》制作人胡景皓的对话内容，经整理后呈现。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;用AI做出一款“前所未有”的游戏&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;&lt;strong&gt;为什么选择从腾讯自己出来做游戏？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;我在腾讯期间的工作分为两个阶段。在大模型出来之前，我们主要做的是NLP（自然语言处理）、CV多模态相关的事情。而大模型出来之后，我们就开始探索大模型在一些游戏当中的应用，比如给《和平精英》《英雄联盟手游》赋能，做一些锦上添花的功能。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,499" src="https://img.36krcdn.com/hsossms/20260225/v2_91583e2fc52841a2a616030854d026b2@6255070_oswg480589oswg1080oswg499_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;《和平精英》的AI队友“花傲天”&lt;/p&gt;
-  &lt;p&gt;但从我个人感觉来看，如果只是在一个传统的游戏里加上AI，可能没法最大化它在游戏中的价值。我更希望能利用AI重新开发一款前所未有，或者说以前技术上无法实现的游戏。&lt;/p&gt;
-  &lt;p&gt;针对这点，在职期间我就自己做了很多头脑风暴，也尝试过开发一些小的AI游戏。反复检验过后，我觉得这件事情本身是可行的，而且很有意思，加上当时脑子里已经对《我的三国》有了一定的构思，所以去年9月份的时候才最终决定离职，出来做自己的一款游戏。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;在你的设想中，这个“前所未有”具体体现在哪里？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;有三方面。&lt;/p&gt;
-  &lt;p&gt;第一种是用AI进行角色扮演，这是之前的游戏做不到的。AI能让游戏角色给玩家一种真正的“人”的感觉。从《我的三国》来说，就是让张飞像张飞，关羽像关羽。&lt;/p&gt;
-  &lt;p&gt;第二种是动态叙事。之前所有游戏里的剧情都是预先生成好的，而AI则能随着游戏进程，动态地生成剧情。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,607" src="https://img.36krcdn.com/hsossms/20260225/v2_531aaec0e5d34b92bc54b7fb6665bf8a@6255070_oswg842033oswg1080oswg607_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;第三种是AIGC。现在很多游戏都用AI去生成游戏素材，但我们的目标是让这些素材和内容能够实时生成。或者即使是离线生成，我们也希望人参与的部分尽可能小，让 AI 生成尽可能多的AIGC资产。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;听起来这些能力都和生成式AI有关。这一轮AI浪潮出现的也大多是生成式AI，和之前相比会有什么不同？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;上一轮AI能做的事情更多是工具性的。比方说NLP功能，更多被用来给玩家言论分类、过滤违规内容等。它被用于提升效率，而不是生成内容。&lt;/p&gt;
-  &lt;p&gt;而在这一轮，AI变成了一个创作者。我们这款游戏的核心，就是让AI能够尽可能地释放它的创造能力。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,606" src="https://img.36krcdn.com/hsossms/20260225/v2_e868f60999294865afa25533393c0439@6255070_oswg744571oswg1080oswg606_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;有了AI的创造能力，你们现在能做出多大内容体量的游戏？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;如果抛开3A大作在引擎和渲染技术上的积累，仅就叙事内容的丰富度而言，我认为我们甚至可以做出超越GTA5或《博德之门3》这样内容体量的游戏。AI有强大的内容创造能力。而我们只需引导AI去生成相应的内容，就能构建出足够的自由度，让游戏呈现出近乎无穷无尽的内容生态。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;不一样的三国游戏&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;&lt;strong&gt;为什么选择三国题材？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;关于这点，我们其实有好几个维度的思考。&lt;/p&gt;
-  &lt;p&gt;首先，做AI游戏最难的点在于怎么让AI理解你这个游戏的世界观。如果它本身是一个架空的世界观，AI其实会不知道这里的人是什么，对于这个世界的运行规则也不了解，因此也没办法推测可能会发生哪些事件，最终导致很容易在生成内容时产生幻觉。&lt;/p&gt;
-  &lt;p&gt;而如果是一个具体的历史题材，AI其实已经充分学习过里面的语料，包括了解里面的每一个人物、每一个事件，以及每一个设定和背景。在开发过程中，我们就不再需要给AI灌注太多额外的知识，只需要保证它能完成一套合理的叙事逻辑就行。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,606" src="https://img.36krcdn.com/hsossms/20260225/v2_0cf13cc423d9496083421bbf340fe136@6255070_oswg543449oswg1080oswg606_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;其次在中国，三国是一个非常大的IP。大家喜欢三国IP，核心还是喜欢三国的故事。但之前的三国游戏大多在剧情、谋略和人物的塑造上有所欠缺，更多是数值和机制的玩法。而我们希望在《我的三国》里，玩家能参与故事的进程，通过不同的谋略和选择改变历史。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,606" src="https://img.36krcdn.com/hsossms/20260225/v2_b845fc05ba3448d4ae77e592f803c0e8@6255070_oswg400334oswg1080oswg606_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;最后，是考虑到目前AI在内容生成上，更偏向于图文或声音的模块，而在游戏引擎和动作上还不能做到那么实时。但我们观察到，一些历史游戏爱好者则对这种图文交互的玩法接受度很高，用AI则能升级这些体验。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;但现在其实也有小部分三国游戏符合你的描述，比如《英雄立志传：三国志》。与他们相比，《我的三国》又会有哪些不同？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;《英雄立志传：三国志》综合了很多机制，做了一个很全面的三国游戏。但从体验角度，AI游戏跟传统游戏最大的核心点差异，在于自由度的呈现方式上。&lt;/p&gt;
-  &lt;p&gt;在传统游戏里，交互被限制在已经暴露出来的玩法上。比方说通过互动增加属性值或触发事件。但它们没办法真正意义上去推演历史或进行宏大叙事。比如，杀掉曹操后世界会发生什么变化？这部分不借助AI很难做。如果能给传统游戏加上AI，可玩性会有很大提升，这也是我们想做的事。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,605" src="https://img.36krcdn.com/hsossms/20260225/v2_af7ee4704d414c59aba0c716cfd307ba@6255070_oswg354144oswg1080oswg605_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;这会产生Token成本。之前一些产品会用IAA模式维持营收，比如Token不够了就需要看广告。《我的三国》未来会采用什么样的营收模式？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;《我的三国》会是一款买断制游戏。在我们的游戏里，Token成本是可控的。我们实时生成的内容以文本为主，而现在文本模型的价格没那么高。&lt;/p&gt;
-  &lt;p&gt;另外我们有缓存机制。当不同玩家玩到相同状态时，游戏就会加载之前生成的内容，而不是实时生成。所以成本会随着游戏进程慢慢降低。&lt;/p&gt;
-  &lt;p&gt;之所以选择买断制，是因为我们更希望以游戏质量，而不是以成本导向定价。订阅制或IAA有点像买牛肉按斤算，在乎的是顾客花了多少成本。而买断制是以内容整体呈现定价。就像一道菜好不好吃，如果顾客觉得好吃，就可以有一些溢价。&lt;/p&gt;
-  &lt;p&gt;如果我们觉得自己在做很好的游戏，那么买断制其实更合理。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;但从玩家角度看，有些人在剧情上可能还是偏向做选择，而不是思考和输出。大家对需要手打输入的模式接受度高吗？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;游戏里会给玩家大量选择空间。比如你的手下会提供一些计策，可以选择采纳或修改这些意见。演示里绝大部分用输入，是为了展示游戏更好的自由度。但对于部分对创造要求不那么高的玩家，也可以通过预设选项来进行游戏。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,604" src="https://img.36krcdn.com/hsossms/20260225/v2_2b78fb61047f4bad84545aa6e7d8885b@6255070_oswg448360oswg1080oswg604_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;玩家可以直接选择预设选项或对预设选项进行更改&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;还有很多玩家关心AI记忆能否保留，这个问题怎么解决？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;核心解决方案是把AI生成的剧本定期结算到游戏的系统状态里。比方说一场战役打完，我们只会记录谁获得了多少土地、谁的数值提高了、哪个将领死掉了，而把具体的剧情发展过程扔掉。&lt;/p&gt;
-  &lt;p&gt;这是一种选择性记忆。我们会定义哪些内容是需要上下文记忆的，哪些不需要。结算就是把一个故事变成一个可以被记录的游戏状态。随着游戏时长增长，我们只会记录那些会影响后续游戏发展的重要内容，有点像副本结算的感觉。所以不会面临传统AI游戏的记忆系统问题。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;之后除了Demo里已有的玩法，还会在哪些方面增加内容？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;未来会增加能够进行交互的地图系统，还会有一个很有意思的后宫系统。而对于已经放出的功能，我们也会进行重新设计，让界面更美观、交互方式更自然。我们对演示过的功能可能都会做一些重构和调整。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;AI的参与改变了传统的开发过程&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;&lt;strong&gt;你们的工作室叫臭皮匠工作室，能简单介绍一下你们是怎样组建这个团队，以及如何分工的吗？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;我们最早是三个同学一起组建的工作室，但现在团队已经扩到了九人。&lt;/p&gt;
-  &lt;p&gt;我们的分工没有那么明确。我自己负责产品和技术，但也会写代码、做调研；我们的设计同学、美术同学会做一些前端开发；程序同学也会参与游戏的讨论。所以我们的游戏其实是大家一起集思广益设计出来的。&lt;/p&gt;
-  &lt;p&gt;现在团队扩建以后，这种分工方式也没有太大改变。每个人会有一块自己负责的技术，但也都会写代码去实现模块部分。所有的同学都会参与到游戏设计里面去。&lt;/p&gt;
-  &lt;p&gt;我希望大家能聚在一起，核心还是对这个游戏本身感兴趣，而不仅仅是实现一个功能。我其实很喜欢这种人人都参与到游戏设计的感觉。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,602" src="https://img.36krcdn.com/hsossms/20260225/v2_eb5fd3d611d44ecda164fa5e16372afe@6255070_oswg395653oswg1080oswg602_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;听起来，AI的应用改变了传统的团队结构和开发流程？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;是的，我们感觉下来，AI带来了“技术平权”。以前没有编程经验的同学可能不敢尝试实现功能，但现在给他一些AI工具，他们也能开始搭界面、做设计。每个人都能做很多之前不敢想的事，核心驱动力变成了大家的兴趣与热情，这是我最看重的一点。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;你们从立项到出Demo似乎很快。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;AI确实能在做游戏上带来非常高的提效。在传统模式里，按我们的想法做一款游戏其实非常难，有很多决策步骤。但当我们用AI去解决这些步骤后，效率跟之前比会有一个质的提升。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,606" src="https://img.36krcdn.com/hsossms/20260225/v2_533a3cbf0c9241d4aa9f784b30595a20@6255070_oswg703728oswg1080oswg606_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;游戏实机演示截图&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;这段时间正好是AIGC应用落地的一个热点周期。有没有感受到大家都开始用AI做游戏？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;其实所有的小团队、大团队都会尝试用AI来提效。之前我在腾讯的时候，就有很多组都在往AI方向转型，用AI来做一些原本需要很多人力去做的事情。&lt;/p&gt;
-  &lt;p&gt;而用做AI原生游戏，或者把AI作为核心玩法的也有不少。但我们感觉下来，大家的思路都不太一样，所以做出来的游戏也千差万别。可能大家都还处于一个探索的阶段。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;用AI做游戏会不会遇到一些新的问题？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;许多任务看起来AI能够完成，但往往不如预期。例如，让AI生成一个《王者荣耀》的英雄，它实际做不好。因为AI并不真正理解这个游戏的具体玩法。&lt;/p&gt;
-  &lt;p&gt;我们在开发中也经常遇到这类问题。我们会以为已经提供了足够的信息让AI生成内容，却因为某些上下文的缺失，导致生成的内容并没有那么好。这时，我们就必须从头思考，究竟缺了哪一方面的信息，才让结果跟我们想象中的有所偏差？这种思考是我们经常要做的。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;这会不会对开发周期有一些影响？内部是否已经定了一个大概的上线日期？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;我们的目标是今年年底能把游戏上线。但我们也预留了一些空间用来探索。因为开发过程中一定会出现问题和需要重新迭代的部分。&lt;/p&gt;
-  &lt;p&gt;所以，我们在做的过程中不担心可能会遇到的问题，因为我们从一开始就已经预留了时间。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;《我的三国》里面有大量的AI生成内容。这在找发行或拿版号审核时，会不会遇到困难？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;我们可能打算自发行。传统发行商对AI游戏还没有很充足的经验，而我们也想自己积累发行经验。&lt;/p&gt;
-  &lt;p&gt;关于审核，有很多AI游戏一开始立项是游戏，但做着做着就做成了一款应用。所以关于这块的政策或审批，我们目前还不是很清楚。但我觉得随着时间发展，应该会有更多案例让我们更清楚地看到审核制度。&lt;/p&gt;
-  &lt;p&gt;目前我们肯定还是先把产品做好，再去观察目前的要求以及对AI生成内容的态度，然后再去申请版号。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;市场如何看待这类AI游戏项目？大家会怎么估值？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;我感觉大家都非常感兴趣，但还是以一种观望的状态去看待。&lt;/p&gt;
-  &lt;p&gt;投资机构觉得2026年是AI应用落地时期，未来会有爆发性的趋势。但之前出现了很多关于AI游戏的概念，而实际可玩性并没想象中高；AI游戏也没有太多先例，所以他们更多是处于观察期。&lt;/p&gt;
-  &lt;p&gt;而我们聊完后，发现其实大家还是很认可我们在做的事情。在做出一个可玩的版本时，我们就会开启比较正式的融资。&lt;/p&gt;
-  &lt;p&gt;我相信大家在玩过我们的游戏后，就能感受到AI游戏的潜力。&lt;/p&gt;
-  &lt;p class="editor-note"&gt;本文首发自&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/pa9xKYFv3evX-eYByvwXSA"&gt;“36氪游戏”。&lt;/a&gt;&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Thu, 26 Feb 2026 03:06:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5LOW9NN2liSTJvQ2tYd0FGUW5fX3ZVZFZOYmdGSUV0c1pyQWp5ekhuNDVzNC01QkxOQ3dxaUw1OTlBT2JoOVBpdDJzSFRJUQ</guid></item><item><title>美国用技术霸权收割全球虚拟货币资产抢夺陈志12.7万枚比特币价值150亿美元-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1105/1105621.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;美国用技术霸权收割全球虚拟货币资产 抢夺陈志12.7万枚比特币价值150亿美元&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-02-26 10:57:19  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1105621-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技2月26日消息，今天，中国国家计算机病毒应急处理中心等部门联合发布的最新报告展示了美国利用技术霸权收割全球虚拟货币资产的过程。&lt;/p&gt;
-&lt;p&gt;据不完全统计，2022—2025年，美国通过各类案件累计没收全球虚拟货币资产价值超300亿美元，其中仅陈志案单案没收资产规模就达150亿美元，占比达50%。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;报告内容显示，2025年10月，美国纽约东区联邦检察官办公室宣布对柬埔寨太子集团创始人陈志发起刑事指控，罪名涉及电信网络诈骗、洗钱等，同时高调宣布没收其控制的约12.7万枚比特币，按当时市场价格计算价值约150亿美元，创下美国司法部门历史上最大规模的虚拟资产没收纪录。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;国际著名虚拟货币交易所币安及其创始人赵长鹏案则是美国利用司法霸权与技术监控手段，逼迫全球虚拟资产平台服从其监管规则、实现经济收割与规则输出的另一典型案例。&lt;/p&gt;
-&lt;p&gt;2023年至2025年，美国针对赵长鹏发起“民事+刑事”双重追责，最终根据认罪协议，币安平台缴纳43亿美元的罚款。&lt;/p&gt;
-&lt;p&gt;报告披露，美国是国际虚拟货币这场大型“赌局”的“头号玩家”，并且长期霸占“庄家”席位。在虚拟货币资产领域，美国掌控着全球主流区块链协议的核心研发权、关键节点控制权及链上数据分析技术优势，头部区块链企业（如Chainalysis、Elliptic）均由美国主导，占据全球链上溯源市场90%以上的份额。&lt;/p&gt;
-&lt;p&gt;美国利用技术优势与规则制定权，并在盟友国家的配合下，将全球虚拟货币资产交易纳入自身监管与基于长臂管辖的跨境执法体系，通过民事没收、刑事追责、罚款追缴等方式，大规模侵占境外虚拟货币资产。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260226/e5dcf893e8fa42e3bcd487ac459809ac.jpg" target="_blank"&gt;&lt;img alt="美国用技术霸权收割全球虚拟货币资产 抢夺陈志12.7万枚比特币价值150亿美元" h="400" src="//img1.mydrivers.com/img/20260226/s_e5dcf893e8fa42e3bcd487ac459809ac.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 02:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB4VWtnVzRFbzdzR0NUN3RrU2lNUFFTWUpYb01kQU1OTDA3d2ZZLWdYbnVSV3A1dU1mcFhvbW41VGFXaEpYMldCb3ZZSlUxSUhocC1GUHJoLXk</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Feb 2026 05:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0zeFE1eWtOQU9kTzdvejZyTFlkSXZWanVDeHAzei1YcjBKVzJmMGd5WnV0dDdvNUs4dmUwc3dRV0l3eDNrc2h5dmdnUUtnVEpuNF9CV0NIa2k</guid></item></channel></rss>
