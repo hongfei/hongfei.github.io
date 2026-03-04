@@ -989,7 +989,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 09:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5XaHBPNG1NVjVpZDBPVTRDTWd5blNHN3dWend0N0J3YVFlakRkRkZRa29DYnNZSW5OUFk1NEJWM096NVBWT1ZMbXNCWkQtZTNvSmVrMUR5YTk</guid></item><item><title>谷歌将其开发者文档带入 AI 智能体时代 - InfoQ 官网</title><link>https://www.infoq.cn/article/ydyggRjpZUGwEZAAdtTF</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;谷歌宣布了开发者知识 API（&lt;/span&gt;&lt;a href="https://developers.googleblog.com/en/introducing-the-developer-knowledge-api-and-mcp-server/" title data-type="link"&gt;Developer Knowledge API&lt;/a&gt;&lt;span&gt;）的公开预览版。它附带了一个模型上下文协议（MCP）服务器。这为 AI 开发工具提供了一个简单、机器可读的方式来访问谷歌的官方开发者文档。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;这一公告解决了 AI 开发中的一个常见问题。在固定文档上训练的语言模型会很快与快速变化的平台脱节。由 AI 驱动的开发者工具生态系统正在增长。这包括像 Antigravity 这样的平台和像 Gemini CLI 这样的命令行工具。因此，确保这些模型拥有准确且最新的文档是一个巨大的挑战。当 AI 助手自信地针对已弃用的 API 或缺失的功能生成代码时，由此产生的缺陷可能是微妙且昂贵的。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;开发者知识 API 作为谷歌公共文档的程序化真实来源。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;API 有两个主要功能。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;ol data-type="numberedlist"&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph" data-number="1"&gt;&lt;span&gt;SearchDocumentChunks：根据查询找到页面 URI 和内容片段。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph" data-number="2"&gt;&lt;span&gt;GetDocument 或 BatchGetDocuments：它们检索搜索结果的完整内容。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;除了 API，谷歌还在发布一个官方的 MCP 服务器。MCP 是许多行业人士正在采用的开放标准。它让 AI 助手能够安全地实时访问外部数据源，而不仅仅是使用它们内置的训练知识。服务器提供了信息检索工具。search_document 工具让智能体使用自然语言查询文档。同时，get_document 检索通过搜索找到的特定页面的完整内容。实际的好处是，AI 助手现在可以查找到像“我如何在 Firestore 中实现向量搜索？”这样的问题的权威答案，而不是幻想一个听起来合理但错误的答案。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;MCP 服务器是一个远程服务器，可在&lt;/span&gt;&lt;a href="https://developerknowledge.googleapis.com/mcp%E4%B8%8A%E8%AE%BF%E9%97%AE" title data-type="link"&gt;https://developerknowledge.googleapis.com/mcp上访问&lt;/a&gt;&lt;span&gt;。开发者通过在他们的谷歌云项目中启用开发者知识 API、创建 API 密钥和更新他们工具的 MCP 配置文件来连接到它。谷歌已经为几个流行的 AI 助手和 IDE 发布了配置说明。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;当前的预览版本以非结构化的 Markdown 形式返回文档。随着谷歌接近普遍可用性，它将增加对结构化内容的支持。这包括特定的代码示例对象和 API 参考实体。它还计划扩展文档并减少重新索引的延迟。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;这一发布符合整个行业&lt;/span&gt;&lt;a href="https://modelcontextprotocol.io/docs/learn/server-concepts" title data-type="link"&gt;MCP&lt;/a&gt;&lt;span&gt;采用的更广泛模式。这表明 MCP 正在成为连接 AI 智能体到实时数据源的标准方式。这类似于 REST 如何在十年前成为 HTTP API 的首选。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对于使用谷歌开发者平台的团队来说，好处是显而易见的。曾经建议过时的 SDK 方法或不正确的配置选项的 AI 代码助手，现在有一个实时参考可以咨询。这有助于弥合模型“知道”的内容与平台实际支持的内容之间的差距。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;谷歌的推出之所以重要，并不是因为它的独特性，而是因为它完善了画面。现在，所有三个主要的云提供商都有官方的、远程托管的 MCP 服务器。这些服务器帮助保持 AI 编码助手与他们的实时文档同步。AWS 的&lt;/span&gt;&lt;a href="https://aws.amazon.com/about-aws/whats-new/2025/07/aws-knowledge-mcp-server-available-preview/" title data-type="link"&gt;Knowledge MCP&lt;/a&gt;&lt;span&gt;服务器已经普遍可用。它提供文档、博客文章和良好架构指导，无需认证。微软的&lt;/span&gt;&lt;a href="https://learn.microsoft.com/en-us/training/support/mcp" title data-type="link"&gt;Learn MCP&lt;/a&gt;&lt;span&gt;服务器也提供对支持 Azure Copilot 的相同索引的未经认证的访问。它随着每次内容更新逐渐刷新。谷歌的提供增加了 API 密钥认证，但仍然承诺在平台更新后 24 小时内重新索引。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;实时文档很快成为针对开发者的 AI 工具的标准期望，而不仅仅是将它们区分开来的功能。最初作为 MCP 的单独实验现在已经成为一个共同的标准。每个提供商都在创建一个类似的“权威真实来源”端点，并将他们的 AI 助手系统与之链接。更令人兴奋的竞争优势是更高层次的。AWS 和微软已经超越了简单的知识检索。他们现在提供的 MCP 服务器可以对云资源采取行动。这些服务器执行 API 调用并为智能体管理多步骤工作流程。谷歌是否会跟进，为其以知识为重点的 API 提供一个操作对应物，随着该领域继续成熟，这将是值得关注的。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;开发者知识 API 可通过谷歌云控制台获得。详细的设置文档可在&lt;/span&gt;&lt;a href="https://developers.google.com/knowledge" title data-type="link"&gt;developers.google.com/knowledge&lt;/a&gt;&lt;span&gt;上找到。&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>InfoQ 官网</author><pubDate>Wed, 04 Mar 2026 09:00:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE4wMnd2bXAzS0QxNzdYNGJtZFRaMXVFejBSUlVpaF9GdWFtVFh5WjROb01IRktaU2lpX21hVlpMV1JGemk5NWloSE9GZ3FTNW4zSmVtRVZIT3BrQ1FoelE</guid></item><item><title>伤敌自损！D加密破解工具容易使破解者电脑被入侵 - 驱动之家</title><link>https://news.mydrivers.com/1/1106/1106995.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 09:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5XaHBPNG1NVjVpZDBPVTRDTWd5blNHN3dWend0N0J3YVFlakRkRkZRa29DYnNZSW5OUFk1NEJWM096NVBWT1ZMbXNCWkQtZTNvSmVrMUR5YTk</guid></item><item><title>3D动作游戏《炎姬》现已在Steam发售 - 机核GCORES</title><link>https://www.gcores.com/articles/211432</link><description>&lt;body id="readabilityBody"&gt;&lt;div id="H5"&gt;&lt;p class="waf-nc-h5-mask"&gt;&lt;/p&gt;&lt;div id="WAF_NC_H5_WRAPPER" class="waf-nc-h5-wrapper"&gt;&lt;div class="waf-nc-h5-panel"&gt;&lt;img class="waf-nc-h5-icon" src="//img.alicdn.com/imgextra/i1/O1CN01L12MaQ1ZwfYKk7Yrc_!!6000000003259-2-tps-900-594.png" alt=""&gt;&lt;p id="tips_message_mobile" class="waf-nc-h5-description"&gt;为了更好的访问体验，请进行验证&lt;/p&gt;&lt;/div&gt;&lt;p id="h5_captcha-element" class="nc-container"&gt;&lt;/p&gt;&lt;button id="h5_button" class="login-btn"&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;p id="newTraceid"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>机核GCORES</author><pubDate>Wed, 04 Mar 2026 09:02:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiT0FVX3lxTE1wVm5SS2NVSlVlNm5UbjZXZEpDNjNjTGhuQ00wZFcyZ3FhdDFYUmh2ck5FSjJucVdoa3ZGT3hqNHBGU1QyY3lNTDJHNERhekk</guid></item><item><title>谷歌将其开发者文档带入 AI 智能体时代 - InfoQ 官网</title><link>https://www.infoq.cn/article/ydyggRjpZUGwEZAAdtTF</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;谷歌宣布了开发者知识 API（&lt;/span&gt;&lt;a href="https://developers.googleblog.com/en/introducing-the-developer-knowledge-api-and-mcp-server/" title data-type="link"&gt;Developer Knowledge API&lt;/a&gt;&lt;span&gt;）的公开预览版。它附带了一个模型上下文协议（MCP）服务器。这为 AI 开发工具提供了一个简单、机器可读的方式来访问谷歌的官方开发者文档。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;这一公告解决了 AI 开发中的一个常见问题。在固定文档上训练的语言模型会很快与快速变化的平台脱节。由 AI 驱动的开发者工具生态系统正在增长。这包括像 Antigravity 这样的平台和像 Gemini CLI 这样的命令行工具。因此，确保这些模型拥有准确且最新的文档是一个巨大的挑战。当 AI 助手自信地针对已弃用的 API 或缺失的功能生成代码时，由此产生的缺陷可能是微妙且昂贵的。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;开发者知识 API 作为谷歌公共文档的程序化真实来源。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;API 有两个主要功能。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;ol data-type="numberedlist"&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph" data-number="1"&gt;&lt;span&gt;SearchDocumentChunks：根据查询找到页面 URI 和内容片段。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph" data-number="2"&gt;&lt;span&gt;GetDocument 或 BatchGetDocuments：它们检索搜索结果的完整内容。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;除了 API，谷歌还在发布一个官方的 MCP 服务器。MCP 是许多行业人士正在采用的开放标准。它让 AI 助手能够安全地实时访问外部数据源，而不仅仅是使用它们内置的训练知识。服务器提供了信息检索工具。search_document 工具让智能体使用自然语言查询文档。同时，get_document 检索通过搜索找到的特定页面的完整内容。实际的好处是，AI 助手现在可以查找到像“我如何在 Firestore 中实现向量搜索？”这样的问题的权威答案，而不是幻想一个听起来合理但错误的答案。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;MCP 服务器是一个远程服务器，可在&lt;/span&gt;&lt;a href="https://developerknowledge.googleapis.com/mcp%E4%B8%8A%E8%AE%BF%E9%97%AE" title data-type="link"&gt;https://developerknowledge.googleapis.com/mcp上访问&lt;/a&gt;&lt;span&gt;。开发者通过在他们的谷歌云项目中启用开发者知识 API、创建 API 密钥和更新他们工具的 MCP 配置文件来连接到它。谷歌已经为几个流行的 AI 助手和 IDE 发布了配置说明。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;当前的预览版本以非结构化的 Markdown 形式返回文档。随着谷歌接近普遍可用性，它将增加对结构化内容的支持。这包括特定的代码示例对象和 API 参考实体。它还计划扩展文档并减少重新索引的延迟。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;这一发布符合整个行业&lt;/span&gt;&lt;a href="https://modelcontextprotocol.io/docs/learn/server-concepts" title data-type="link"&gt;MCP&lt;/a&gt;&lt;span&gt;采用的更广泛模式。这表明 MCP 正在成为连接 AI 智能体到实时数据源的标准方式。这类似于 REST 如何在十年前成为 HTTP API 的首选。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对于使用谷歌开发者平台的团队来说，好处是显而易见的。曾经建议过时的 SDK 方法或不正确的配置选项的 AI 代码助手，现在有一个实时参考可以咨询。这有助于弥合模型“知道”的内容与平台实际支持的内容之间的差距。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;谷歌的推出之所以重要，并不是因为它的独特性，而是因为它完善了画面。现在，所有三个主要的云提供商都有官方的、远程托管的 MCP 服务器。这些服务器帮助保持 AI 编码助手与他们的实时文档同步。AWS 的&lt;/span&gt;&lt;a href="https://aws.amazon.com/about-aws/whats-new/2025/07/aws-knowledge-mcp-server-available-preview/" title data-type="link"&gt;Knowledge MCP&lt;/a&gt;&lt;span&gt;服务器已经普遍可用。它提供文档、博客文章和良好架构指导，无需认证。微软的&lt;/span&gt;&lt;a href="https://learn.microsoft.com/en-us/training/support/mcp" title data-type="link"&gt;Learn MCP&lt;/a&gt;&lt;span&gt;服务器也提供对支持 Azure Copilot 的相同索引的未经认证的访问。它随着每次内容更新逐渐刷新。谷歌的提供增加了 API 密钥认证，但仍然承诺在平台更新后 24 小时内重新索引。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;实时文档很快成为针对开发者的 AI 工具的标准期望，而不仅仅是将它们区分开来的功能。最初作为 MCP 的单独实验现在已经成为一个共同的标准。每个提供商都在创建一个类似的“权威真实来源”端点，并将他们的 AI 助手系统与之链接。更令人兴奋的竞争优势是更高层次的。AWS 和微软已经超越了简单的知识检索。他们现在提供的 MCP 服务器可以对云资源采取行动。这些服务器执行 API 调用并为智能体管理多步骤工作流程。谷歌是否会跟进，为其以知识为重点的 API 提供一个操作对应物，随着该领域继续成熟，这将是值得关注的。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;开发者知识 API 可通过谷歌云控制台获得。详细的设置文档可在&lt;/span&gt;&lt;a href="https://developers.google.com/knowledge" title data-type="link"&gt;developers.google.com/knowledge&lt;/a&gt;&lt;span&gt;上找到。&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>InfoQ 官网</author><pubDate>Wed, 04 Mar 2026 09:00:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE4wMnd2bXAzS0QxNzdYNGJtZFRaMXVFejBSUlVpaF9GdWFtVFh5WjROb01IRktaU2lpX21hVlpMV1JGemk5NWloSE9GZ3FTNW4zSmVtRVZIT3BrQ1FoelE</guid></item><item><title>伤敌自损！D加密破解工具容易使破解者电脑被入侵 - 驱动之家</title><link>https://news.mydrivers.com/1/1106/1106995.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;多个知名盗版论坛和网站的管理团队近日宣布，临时禁止发布所谓“通过虚拟机监控程序（hypervisor）破解”的内容。&lt;/p&gt;
 &lt;p&gt;这一新型破解方式因可绕过包括 Denuvo 在内的最新反盗版系统，在玩家圈内引发了不小震动。&lt;/p&gt;
@@ -4668,97 +4668,4 @@ Mozaic 4+的规模效益与效能提升&lt;/p&gt;
 &lt;p&gt;      中国曾强烈反对福岛第一核电站事故产生的核处理水排海问题，并采取了禁止进口日本水产品等措施。日本也在南鸟岛周边推进稀土开发相关工作。中国也有可能推动形成反对处置场地建设的国际舆论。&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;strong&gt;版权声明：日本经济新闻社版权所有，未经授权不得转载或部分复制，违者必究。&lt;/strong&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>日经中文网</author><pubDate>Tue, 03 Mar 2026 21:04:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijwFBVV95cUxNYmMtNWpFaW1zd2xIS3ZaM3hUMEVkWDhzVWdKQTRuWWpDY2ZiQVFrZ2NnN2Z0aW0zMTJyNEhud3M2Z2NuMHIzZHVFMWdYS0RBTTA1Ym5lWWFaWkNBQTdBX2pjTm5DTUNjRnRMM2E5cEkyemhnTXZVeHVkN0ZxbF9LZDR4bjVoQzltdFladmJGbw</guid></item><item><title>伊朗的导弹和无人机真实战力如何？ - 新浪财经</title><link>https://finance.sina.com.cn/world/2026-03-04/doc-inhpufut3574539.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p&gt;　　在西方制裁削弱其空军力量后，伊朗对导弹和无人机投入巨资。根据美国情报部门2025年初的评估，这个伊斯兰国家此类武器系统库存量位居“中东第一”。&lt;/p&gt;
-&lt;p&gt;　　美国和以色列长期以来致力于消除这一威胁，在最近对伊朗的战争中，美以联军打击军事目标的同时，也在攻击其导弹和无人机发射点。&lt;/p&gt;
-&lt;p&gt;　　然而，这些系统由于分布广泛、隐蔽性强且往往具备机动性，摧毁难度较大。伊朗军方正利用这些武器袭击以色列、美军中东基地以及波斯湾地区多国的其他目标。尽管大部分伊朗发射物被成功拦截，但仍有一些漏网并造成致命后果。&lt;/p&gt;
-&lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/116/w550h366/20260304/84c0-d1926fe033cbb33c83d5bfba66449c42.jpg" alt="伊朗制造的“见证者”无人机。"&gt;&lt;span class="img_descr"&gt;伊朗制造的“见证者”无人机。&lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;　　&lt;strong&gt;为什么伊朗的导弹和无人机一直是关注焦点？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　数十年来，伊朗一直致力于提升其无人机和导弹的破坏力与射程，其中射程最远的型号已将欧洲东南部纳入打击范围。&lt;/p&gt;
-&lt;p&gt;　　外界对伊朗研发核武器的担忧进一步推高了局势风险。假设该国科学家掌握了相关技术要求，弹道导弹将使伊朗具备远距离投送核装置的能力。&lt;/p&gt;
-&lt;p&gt;　　伊朗还向中东地区的盟友民兵组织输出导弹、无人机或相关制造技术，包括黎巴嫩真主党和也门胡塞武装。此举增强了这些组织的“防区外”打击能力——即在不直接承受目标区火力的情况下从远距离实施攻击。&lt;/p&gt;
-&lt;p&gt;　　他们已使用这些防区外武器袭击以色列及红海船只。胡塞武装曾宣称对2019年沙特石油加工设施遭到的毁灭性袭击负责，而沙特认为罪魁祸首是伊朗。&lt;/p&gt;
-&lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/116/w550h366/20260304/7e07-987740d08a3e7094f8fdff36ad8cc86e.jpg" alt="11月在德黑兰举办的导弹和无人机展览。"&gt;&lt;span class="img_descr"&gt;11月在德黑兰举办的导弹和无人机展览。&lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;　　在之前的几轮敌对行动中，伊朗曾动用导弹和无人机，包括2020年美军在伊拉克击毙伊斯兰革命卫队指挥官苏莱曼尼后伊朗的报复行动、2024年4月和10月伊朗与以色列交火，以及2025年6月伊朗对以色列和美国的行动。&lt;/p&gt;
-&lt;p&gt;　　伊朗低成本的“见证者”无人机在俄乌冲突中也发挥了重要作用。俄罗斯在全面冲突初期进口了伊朗无人机，随后开始大规模生产。据战略与国际研究中心（CSIS）数据，到2025年3月，俄罗斯每周发射1，000架“见证者”以饱和攻击乌克兰的防空系统。事实证明，“见证者”能有效穿透防空网并造成包括人员伤亡在内的损失。&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;伊朗拥有多少导弹和无人机？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　据以色列军方估计，在本轮冲突开始时，伊朗拥有2，500枚弹道导弹。自战斗爆发以来，伊朗已向邻国发射了数百枚，以色列称他们通过空袭又摧毁了伊朗数百枚导弹。&lt;/p&gt;
-&lt;p&gt;　　虽然以色列官方未给出伊朗无人机库存的具体数字，但普遍认为伊朗的无人机数量远超导弹。彭博经济研究的国防负责人Becca Wasser分析称，俄罗斯一天能生产数百架“见证者”。&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;伊朗拥有哪些类型的导弹？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　弹道导弹构成了伊朗“防区外”武库的核心。在最初的阶段，它们由火箭动力驱动并受指令引导；随后，导弹会进入一段无动力的惯性轨迹，最终将战斗部投向预定目标。外界认为伊朗在短程和中程弹道导弹领域分别拥有约六种不同变体。它还拥有在飞行过程中具备机动转向能力的巡航导弹。&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;伊朗拥有哪些类型的无人机？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　伊朗成熟的军事无人机项目生产多种无人作战飞行器。该国声称其最新型号“见证者-149”无人机的飞行距离可达4，000公里（2，480英里），载弹量500公斤（1，100磅）。许多伊朗无人机被称为“自杀式”，因为它们并非为在任务中幸存而设计。据CSIS数据，该国一架无人机的成本仅为2万到5万美元。&lt;/p&gt;
-&lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/116/w550h366/20260304/f6bb-2b9b50b1fbbaabab527d7ed560e87737.jpg" alt="2025年6月14日，伊朗向耶路撒冷发射导弹。"&gt;&lt;span class="img_descr"&gt;2025年6月14日，伊朗向耶路撒冷发射导弹。&lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;　　&lt;strong&gt;哪些防御措施可应对伊朗的导弹和无人机？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　伊朗袭击过的中东国家——以色列、沙特阿拉伯、阿联酋、巴林、科威特、卡塔尔、约旦、伊拉克和阿曼——各自都拥有防空系统。以色列的最为精锐。为了保卫在中东的部队，美军不仅在相关海域部署了具备导弹拦截能力的军舰，还在陆地上架设了“爱国者”和“萨德”反导连。&lt;/p&gt;
-&lt;p&gt;　　今年1月，美军宣布在卡塔尔乌代德空军基地成立新机构，以加强美国与该地区伙伴之间在防空和导弹防御方面的协同。此前，美国已与卡塔尔和巴林建立了指挥所以整合他们军方的防空作战。&lt;/p&gt;
-&lt;p&gt;　　然而，伊朗的一些导弹和无人机仍穿透了受袭国家的防御网。如果此次冲突变得旷日持久，拦截弹短缺将成为巨大风险。供应可能会迅速枯竭：传统军事学说要求对每个来袭目标发射两到三枚拦截弹，以确保最大命中率。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 03 Mar 2026 20:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTFBZMnVfT1B5QlljUThHOXVkMTVsNHh2TTZJOXVlZEs2M3JscmdaX21BM3luQVZhNDZlY3k4b1NwQ3FOVUNTYTFZbkZrMDkxcE5YYW15bnJ3c1RlVnBkbVFJRnY3VzJzOGJSTDNlN09ERDc4c0xHc2hhVFZn</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>日经中文网</author><pubDate>Tue, 03 Mar 2026 21:04:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijwFBVV95cUxNYmMtNWpFaW1zd2xIS3ZaM3hUMEVkWDhzVWdKQTRuWWpDY2ZiQVFrZ2NnN2Z0aW0zMTJyNEhud3M2Z2NuMHIzZHVFMWdYS0RBTTA1Ym5lWWFaWkNBQTdBX2pjTm5DTUNjRnRMM2E5cEkyemhnTXZVeHVkN0ZxbF9LZDR4bjVoQzltdFladmJGbw</guid></item></channel></rss>
