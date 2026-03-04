@@ -1,5 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>OpenClaw 能“边用边训”了：智能体强化学习训练框架 AReaL v1.0 稳定版发布 - InfoQ 官网</title><link>https://www.infoq.cn/article/NDDJfG3lJCHjSI43k1I4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;3 月 4 日，蚂蚁集团联合清华大学发布开源强化学习训练框架 AReaL v1.0 稳定版。该版本主打“Agent 一键接入 RL 训练”：不用改代码，兼容各类 Agent 框架，让智能体强化学习训练开箱即用。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;2026 年开年以来，Agent 持续升温，以 LangChain、Claude Code、OpenClaw 为代表的智能体框架繁荣发展，但也暴露出两大瓶颈。一是接入训练成本高：现有智能体框架接口各异，每接入一个往往需要编写整套适配代码。二是 Agent 缺乏持续进化的能力：多数 Agent 的能力取决于底层模型在训练阶段习得的固定权重，部署后无法再针对特定场景持续优化，能力上限在交付时便已确定。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL 是首个全异步训推解耦的大模型强化学习训练系统，能让 Agent 在真实任务交互中获得反馈、持续优化决策。此次发布的 v1.0 版本让任意 Agent 零改造接入 RL 训练成为现实——通过在智能体与训练系统之间加入 Proxy Worker 中转层，开发者只需修改一个请求地址即可接入训练。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/46/46a504052f29e3b1d41e86dc7a5a8585.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph" data-align-center&gt;（图说：AReaL 无缝接入智能体的异步训练架构）&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;以当前大热的 OpenClaw 为例，开发者只需在 OpenClaw 配置文件中将 base_url 和 api_key 指向 AReaL 网关，就能让自己的 OpenClaw 接入强化学习训练。智能体像往常一样执行任务，用户周期性给 Agent 完成任务的情况打分，AReaL 在后台自动完成训练数据的采集与模型的更新，在持续使用的过程中让智能体自动进化。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL v1.0 还推出了原生训练引擎 Archon，它是基于 PyTorch 原生能力实现完整的 5D 并行（数据并行、流水线并行、张量并行、上下文并行、专家并行），降低了安装与调试门槛，同时在训练与推理侧提供多种后端选择，便于在不同环境中灵活部署。令人惊讶的是，这样一个复杂的分布式系统，从零开始实现到验证正确性，仅用了 1 人·月的工作量——32 天内，累计修改近百万行代码完整实现了 Archon 引擎，让它能训练千亿参数 MoE 模型。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;创造这一效率奇迹的秘诀在于 AReaL 集成的一整套 AI 辅助开发体系，实现了复杂工程开发的高度自动化。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/a3/a3103654e62d618b372fa7d202b0ee5a.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL v1.0 引入的 AI 辅助开发流程，为开发者提供了从规划、编码、校验到 PR 创建的全链路支持。尤其是在处理 MoE 并行、内存优化、算法实现等核心模块时，专属的 AI 编程助手会像一位资深专家，在代码变更时及时出现并提供针对性指导，为每一次代码变更保驾护航，有效降低了开发和维护的门槛。AReaL 的 AI 辅助编程不只是提效工具，更能在复杂基础设施工程中承担“可交付”的研发工作，引领了下一代 AI 基础设施工程范式的革新。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL 团队表示，将继续围绕训练引擎、易用性和多模态智能体训练等方向迭代。目前 AReaL v1.0 的代码与文档已在 inclusionAI 社区开源。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;GitHub 仓库：&lt;a href="https://github.com/inclusionAI/AReaL" title data-type="link"&gt;&lt;u&gt;https://github.com/inclusionAI/AReaL&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;相关论文：&lt;a href="https://arxiv.org/abs/2505.24298" title data-type="link"&gt;&lt;u&gt;https://arxiv.org/abs/2505.24298&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>InfoQ 官网</author><pubDate>Wed, 04 Mar 2026 13:34:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE13dnpScXhvX3QzUTRLdDdZcjdMUUQ5ZkNmREI4UzFhRm9PcUJEdjVYX09HWGF6ZDBGZXMwUDU1azctY3oxZS1UYzljb01VQUtOeTByR0dMYXB2OFdCbWc</guid></item><item><title>迷你主机已不值得入手：看完我被彻底劝退了-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107055.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>MWC惊现OPPO Find N6：超平整设计惊艳全场！老外盛赞-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107068.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;近日，MWC 2026在西班牙正式举办，多家中国科技企业参展。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;OPPO旗下的新款大折叠屏手机也意外亮相，其几乎无痕的折叠设计成为全场焦点。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="MWC惊现OPPO Find N6：超平整设计惊艳全场！老外盛赞" h="337" src="//img1.mydrivers.com/img/20260304/059a2f9f-00f0-4e55-8baa-0a2f310d1696.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;Android Authority报道，记者Adamya Sharma有幸提前体验了这款尚未正式发布的折叠屏新机。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;他描述道，当他第一次拿到OPPO Find N6时，最引人注目的便是其屏幕上的折痕——或者更准确地说，是“无折痕”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;他表示：“我试图从各个角度扭曲和转动手机以寻找折痕，但一无所获。Find N6的折痕严重‘隐形’，是我迄今为止见过的最不明显折叠屏痕迹。”&lt;/p&gt;
+&lt;p&gt;&lt;img alt="MWC惊现OPPO Find N6：超平整设计惊艳全场！老外盛赞" h="297" src="//img1.mydrivers.com/img/20260304/b147e62f-5d85-48b6-a81a-3ebf725f9782.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;除了几乎无痕的设计外，OPPO Find N6在握持手感上也表现出色。&lt;/p&gt;
+&lt;p&gt;它轻薄且平衡性极佳，与近期发布的其他海外品牌大折叠屏手机相比，在厚度和重量上都毫不逊色。&lt;/p&gt;
+&lt;p&gt;更重要的是，OPPO Find N6并不显得脆弱，机身工艺出色。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="MWC惊现OPPO Find N6：超平整设计惊艳全场！老外盛赞" h="299" src="//img1.mydrivers.com/img/20260304/628d7013-b82d-4bd8-9bd4-b43d9cdad7c6.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="MWC惊现OPPO Find N6：超平整设计惊艳全场！老外盛赞" h="342" src="//img1.mydrivers.com/img/20260304/94c0caf7-f47b-4aa6-b1b9-5b7efcd9e292.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在硬件配置方面，OPPO Find N6搭载了骁龙8 Elite Gen 5移动平台，配备了8.12英寸的内屏和6000mAh的大容量电池，支持80W SuperVOOC有线快充和50W AirVOOC无线快充。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，它还拥有最高16GB的RAM和1TB的存储空间，以及由哈苏调校的后置四摄系统，前置双2000万像素摄像头，运行ColorOS 16系统。&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 14:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5kcHpPLXloVWwwSTdyMmh4WDVjYTlsb3lNbFBMS0xiZWxzRDNtcUxhYW5tcVlQN2lYY1Y4Z1NVZDJJOElRMWlsVExOTG1Pdm8xZWh6OVhxOVU</guid></item><item><title>OpenClaw 能“边用边训”了：智能体强化学习训练框架 AReaL v1.0 稳定版发布 - InfoQ 官网</title><link>https://www.infoq.cn/article/NDDJfG3lJCHjSI43k1I4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;3 月 4 日，蚂蚁集团联合清华大学发布开源强化学习训练框架 AReaL v1.0 稳定版。该版本主打“Agent 一键接入 RL 训练”：不用改代码，兼容各类 Agent 框架，让智能体强化学习训练开箱即用。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;2026 年开年以来，Agent 持续升温，以 LangChain、Claude Code、OpenClaw 为代表的智能体框架繁荣发展，但也暴露出两大瓶颈。一是接入训练成本高：现有智能体框架接口各异，每接入一个往往需要编写整套适配代码。二是 Agent 缺乏持续进化的能力：多数 Agent 的能力取决于底层模型在训练阶段习得的固定权重，部署后无法再针对特定场景持续优化，能力上限在交付时便已确定。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL 是首个全异步训推解耦的大模型强化学习训练系统，能让 Agent 在真实任务交互中获得反馈、持续优化决策。此次发布的 v1.0 版本让任意 Agent 零改造接入 RL 训练成为现实——通过在智能体与训练系统之间加入 Proxy Worker 中转层，开发者只需修改一个请求地址即可接入训练。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/46/46a504052f29e3b1d41e86dc7a5a8585.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph" data-align-center&gt;（图说：AReaL 无缝接入智能体的异步训练架构）&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;以当前大热的 OpenClaw 为例，开发者只需在 OpenClaw 配置文件中将 base_url 和 api_key 指向 AReaL 网关，就能让自己的 OpenClaw 接入强化学习训练。智能体像往常一样执行任务，用户周期性给 Agent 完成任务的情况打分，AReaL 在后台自动完成训练数据的采集与模型的更新，在持续使用的过程中让智能体自动进化。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL v1.0 还推出了原生训练引擎 Archon，它是基于 PyTorch 原生能力实现完整的 5D 并行（数据并行、流水线并行、张量并行、上下文并行、专家并行），降低了安装与调试门槛，同时在训练与推理侧提供多种后端选择，便于在不同环境中灵活部署。令人惊讶的是，这样一个复杂的分布式系统，从零开始实现到验证正确性，仅用了 1 人·月的工作量——32 天内，累计修改近百万行代码完整实现了 Archon 引擎，让它能训练千亿参数 MoE 模型。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;创造这一效率奇迹的秘诀在于 AReaL 集成的一整套 AI 辅助开发体系，实现了复杂工程开发的高度自动化。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/a3/a3103654e62d618b372fa7d202b0ee5a.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL v1.0 引入的 AI 辅助开发流程，为开发者提供了从规划、编码、校验到 PR 创建的全链路支持。尤其是在处理 MoE 并行、内存优化、算法实现等核心模块时，专属的 AI 编程助手会像一位资深专家，在代码变更时及时出现并提供针对性指导，为每一次代码变更保驾护航，有效降低了开发和维护的门槛。AReaL 的 AI 辅助编程不只是提效工具，更能在复杂基础设施工程中承担“可交付”的研发工作，引领了下一代 AI 基础设施工程范式的革新。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;AReaL 团队表示，将继续围绕训练引擎、易用性和多模态智能体训练等方向迭代。目前 AReaL v1.0 的代码与文档已在 inclusionAI 社区开源。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;GitHub 仓库：&lt;a href="https://github.com/inclusionAI/AReaL" title data-type="link"&gt;&lt;u&gt;https://github.com/inclusionAI/AReaL&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;相关论文：&lt;a href="https://arxiv.org/abs/2505.24298" title data-type="link"&gt;&lt;u&gt;https://arxiv.org/abs/2505.24298&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>InfoQ 官网</author><pubDate>Wed, 04 Mar 2026 13:34:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE13dnpScXhvX3QzUTRLdDdZcjdMUUQ5ZkNmREI4UzFhRm9PcUJEdjVYX09HWGF6ZDBGZXMwUDU1azctY3oxZS1UYzljb01VQUtOeTByR0dMYXB2OFdCbWc</guid></item><item><title>盘前：纳指期货涨0.5% 比特币跃升至接近72000美元 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-03-04/doc-inhpvtwp3806362.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    
+&lt;p&gt;　　周三美国股指期货的抛售势头趋于停滞，因为交易员越来越有信心认为伊朗战争对油价的影响可能小于最初担心的程度。在避险推动美元连续两天上涨之后，美元涨势也暂时歇脚。&lt;/p&gt;
+&lt;p&gt;　　截至发稿，纳指期货涨0.5%，标普500指数期货涨0.3%，道指期货涨0.2%。&lt;/p&gt;
+&lt;p&gt;　　欧洲斯托克600指数在经历自4月以来最糟糕的一天后出现反弹，现涨1.6%。此前周一和周二累计下跌4.6%，创下自2025年4月关祱动荡以来的最大两日跌幅。&lt;/p&gt;
+&lt;p&gt;　　对欧洲的支撑因素之一是基准天然气价格周三趋稳，尽管与上周五收盘相比仍高出约75%。西班牙股市和债市表现相对落后，此前特朗普威胁对该国实施贸易禁运。&lt;/p&gt;
+&lt;p&gt;　　与此同时，华尔街迄今躲过了最猛烈的抛售，本周标普500指数累计跌幅不足1%，前一交易日该基准指数下跌接近1%。大型科技股盘前波动不大。&lt;/p&gt;
+&lt;p&gt;　　&lt;span id="usstock_GS"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/GS.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;高盛&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_GS"&gt;&lt;/span&gt;首席执行官戴维·所罗门在悉尼的讲话中表示，他对市场迄今对不断累积的风险仍显得“反应温和”感到意外。他说：“我认为市场需要几周时间，才能真正消化短期和中期发生的一切影响，我无法推测最终会如何演变。”&lt;/p&gt;
+&lt;p&gt;　　韩国股市崩跌&lt;/p&gt;
+&lt;p&gt;　　亚洲股市指标创近一年来最大跌幅，其中韩国股市创纪录暴跌领跌。KOSPI基准指数收盘下跌12%，创历史最大单日跌幅。韩国高度依赖中东石油。两天之内，这一以科技股为主的指数市值蒸发超过18%，同时韩元跌至17年低位。&lt;/p&gt;
+&lt;p&gt;　　韩国交易所为降温波动一度两次短暂停止交易。航运公司Pan Ocean暴跌17%，而权重股三星电子下跌12%。&lt;/p&gt;
+&lt;p&gt;　　与此同时，日本日经225指数下跌3.6%，创下自4月以来最大单日跌幅。台湾加权指数下跌4.35%，香港恒生指数下跌2.5%，新加坡海峡时报指数下跌2.7%。&lt;/p&gt;
+&lt;p&gt;　　金融市场研究机构Satori Insights创始人Matt King在报告中写道：“在伊朗遭袭之前，人们用来分散配置的许多市场，如今反而突然看起来最脆弱。”&lt;/p&gt;
+&lt;p&gt;　　新加坡盛宝银行首席投资策略师Charu Chanana表示：“‘能卖就卖’的阶段正在蔓延。”她补充说：“亚洲的抛售正在变得失序，因为市场不再把这当作‘一周的头条冲击’。”&lt;/p&gt;
+&lt;p&gt;　　抛售几乎演变为失序&lt;/p&gt;
+&lt;p&gt;　　本周，交易员在全球范围内急于抛售不同资产类别，这种“去风险”在某些时刻几乎演变为失序，因为市场在消化一个关键后果：能源价格可能在较长时间内维持高位。市场某一部分的暴跌正外溢到其他市场，原因是投资者需要弥补别处亏损并降低风险敞口。甚至连避险资产黄金也在周二下跌超过4%，不过周三回升1.5%。&lt;/p&gt;
+&lt;p&gt;　　在所有波动的核心，基准布伦特原油延续涨势，上涨2.8%，突破每桶83美元，连续第三天上涨，但较周二高点回落；此前美国总统特朗普表示，如有必要，美国海军可护送油轮通过关键的霍尔木兹海峡。&lt;/p&gt;
+&lt;p&gt;　　&lt;span id="usstock_ING"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/ING.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;荷兰国际&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_ING"&gt;&lt;/span&gt;集团分析师表示，特朗普承诺为通过霍尔木兹海峡的油轮提供保护“是利好消息，但显然不可能一夜之间落地”，“海军护航很可能会成为伊朗攻击的活靶子”。&lt;/p&gt;
+&lt;p&gt;　　降息前景受质疑&lt;/p&gt;
+&lt;p&gt;　　债市在最初反弹后如今转而承压，因为投资者押注更高油价将推升通胀并推迟降息。交易员目前认为，美联储6月更可能按兵不动。&lt;/p&gt;
+&lt;p&gt;　　澳大利亚投行Barrenjoey首席利率策略师Andrew Lilley表示：“对美国而言，这显然是通胀性的……因此市场正在重新评估，美联储今年是否还能真正实施任何降息。”&lt;/p&gt;
+&lt;p&gt;　　全球债券的抛售仍在继续，基准10年期美债收益率当日上升3个基点至4.08%，本周累计上行12个基点；对利率更敏感的2年期美债收益率本周上升15个基点，最新报3.51%。&lt;/p&gt;
+&lt;p&gt;　　不过，美债抛售的节奏正在放缓，这可能意味着投资者很快会重新把美债当作避险资产。相比之下，欧元区国债收益率下跌。周三政府债供给非常有限，仅德国计划发行10亿欧元、2033年2月到期的德国国债。欧元区10年期国债收益率普遍下行约1个基点。&lt;/p&gt;
+&lt;p&gt;　　在其他地区，原本被认为几乎板上钉钉的英国央行本月晚些时候降息，如今看起来也可能落空，推动英国2年期国债收益率本周上升25个基点。&lt;/p&gt;
+&lt;p&gt;　　美元整体走强，甚至对一些被视为避险的货币也在升值：本周美元兑日元上涨1.4%，兑瑞郎上涨0.7%。欧元被压制在1.16美元附近，日内基本持平，但本周下跌1.5%，主要受更高能源成本拖累。&lt;/p&gt;
+&lt;p&gt;　　与此同时，印度卢比兑美元大幅走弱，受中东军事冲突可能长期化的预期拖累。根据LSEG数据，周三美元最新报92.19卢比，较上周五的91.05明显走高。&lt;/p&gt;
+&lt;p&gt;　　黄金重新站上5100&lt;/p&gt;
+&lt;p&gt;　　黄金恢复上涨，重新站上5，100美元。荷兰国际集团分析师称：“短期内，黄金仍被夹在避险需求与宏观压力之间。”&lt;/p&gt;
+&lt;p&gt;　　比特币跃升至接近72，000美元，显示市场的风险偏好可能正在回暖。Trade Nation分析师David Morrison在报告中称，比特币和以太坊近期表现出韧性，继续横盘震荡。比特币守住6万美元支撑，但在7万美元附近遭遇阻力。他表示，两者的日线MACD从超卖区域回升，“形态相当建设性”。&lt;/p&gt;
+&lt;p&gt;　　美以对伊朗的袭击令中东局势更加动荡，战争何时以及如何结束仍没有明确线索。市场焦点集中在原油上，交易员正在评估特朗普总统提出的方案：为通过霍尔木兹海峡的油轮提供保险并进行护航，而这条关键水道的航运几乎陷入停滞。&lt;/p&gt;
+&lt;p&gt;　　花旗集团策略师Beata Manthey表示：“如果（护航与保险方案）能够实现，那对市场将是非常好的消息。我们大宗商品团队的基本假设是，相关扰动将是短暂的。”&lt;/p&gt;
+&lt;p&gt;　　除冲突因素外，投资者还关注美国ADP私营部门就业数据，而美联储的《褐皮书》将提供美国企业情绪的“实地观察”画面。&lt;/p&gt;
+&lt;p&gt;　　“小非农”人数高于预期&lt;/p&gt;
+&lt;p&gt;　　美国2月ADP就业人数增加6.3万人，为2025年11月来最大增幅，高于市场预期的5万人。&lt;/p&gt;
+&lt;p&gt;　　高盛CEO警告市场还没真正定价“战火代价”。&lt;/p&gt;
+&lt;p&gt;　　高盛董事长兼首席执行官戴维·所罗门表示，他对全球金融市场对于中东地缘政治冲突升级给出的偏向“温和”反应感到意外，并补充称，还需要数周时间才能对美以与伊朗之间波及整个中东的对峙局势有更多了解，因此市场也需要不止一周时间来消化所有的负面冲击波。&lt;/p&gt;
+&lt;p&gt;　　所罗门表示：“我看到近日市场反应，实际上我感到意外。市场反应一直相对温和。”他援引最新收盘数据，标普500指数周一和周二跌幅不到1%，在新一轮地缘政治冲突背景下，这一回调相当温和。&lt;/p&gt;
+&lt;p&gt;　　与此同时，由于战争引发市场对油价上涨将导致全球通胀再度抬头以及货币紧缩周期的担忧，交易员们正在大幅下调对美联储降息的预期，这也是美股周二遭遇大规模抛售的核心逻辑。&lt;/p&gt;
+&lt;p&gt;　　别再指望特朗普救市！华尔街齐声警告：这次局势他控制不了。&lt;/p&gt;
+&lt;p&gt;　　华尔街策略师纷纷警示，面对伊朗局势，切勿再依赖所谓的“特朗普看跌期权”。美以两国对伊朗的军事打击已令中东局势陷入动荡，并可能因推高油价而给美国经济带来新的通胀冲击。&lt;/p&gt;
+&lt;p&gt;　　目前，这场冲突何时以及如何结束尚无定论，这增加了冲突长期化的风险，也可能带来白宫难以预料的后果。&lt;/p&gt;
+&lt;p&gt;　　Baird投资策略师Ross Mayfield认为，无论战事以多快速度结束，中东地区石油基础设施可能遭到大范围破坏这一风险，都将延长战事对市场的冲击。&lt;/p&gt;
+&lt;p&gt;　　BCA Research首席地缘政治和美国政治策略师Matt Gertken表示，只有出现“由市场引发的衰退”风险，即股市下跌约10%至15%时，白宫才会真正感受到压力。&lt;/p&gt;
+&lt;p&gt;　　法国外贸银行美国利率主管John Briggs认为，只有当债券收益率攀升至“引发混乱并蔓延至信贷和股票市场”的程度，才可能促使特朗普试图从冲突中抽身。&lt;/p&gt;
+&lt;p&gt;　　德银泼冷水：小心抄到半山腰！&lt;/p&gt;
+&lt;p&gt;　　随着美国和伊朗之间的冲突不断升级，投资者都在犯嘀咕：这次战争爆发时“逢低买入”的策略还能奏效吗？对此，德银认为，本周的关键问题在于，油气价格是否会飙升至阻碍经济增长的程度、从而破坏复苏交易。&lt;/p&gt;
+&lt;p&gt;　　策略师Henry Allen表示：“我们之前曾写道，地缘政治事件通常不会引起持续的市场反应。但例外情况是，当地缘政治事件拥有影响市场的宏观渠道时。伊朗的事态正是这样一个典型例子。”&lt;/p&gt;
+&lt;p&gt;　　这位策略师表示，以下三个条件中至少需要满足一个——油价飙升至少50%至100%并持续数月；油价上涨将本已降温的经济推入衰退或严重放缓；央行针对油价上涨采取鹰派政策应对，可能会导致标普500指数暴跌超过15%。&lt;/p&gt;
+&lt;p&gt;　　Tom Lee吹响反攻号角：最剧烈抛售本周结束，3月将是科技股与加密资产“反弹月”。&lt;/p&gt;
+&lt;p&gt;　　有“华尔街神算子”之称的Fundstrat研究主管Tom Lee表示，尽管全球市场近期受到地缘政治局势以及前期技术性回调的压力，但加密货币、软件板块以及被统称为“MAG-7”的科技巨头股票本月都将迎来复苏——它们要么已经触底，要么即将触及低点。&lt;/p&gt;
+&lt;p&gt;　　Lee 在接受采访时表示：“我认为抛售最剧烈的阶段将在本周结束。我预计3月份股市将会上涨。”&lt;/p&gt;
+&lt;p&gt;　　焦点个股&lt;/p&gt;
+&lt;p&gt;　　加密货币概念股盘前普涨，特朗普敦促国会尽快推进加密市场结构法案。Strategy、Coinbase涨超6%，&lt;span id="usstock_CRCL"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/CRCL.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;Circle&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_CRCL"&gt;&lt;/span&gt;、MARA Holdings涨超5%，Bitfarms、CleanSpark、Robinhood涨超3%。&lt;/p&gt;
+&lt;p&gt;　　存储概念股盘前拉升，&lt;span id="usstock_SNDK"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/SNDK.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;闪迪&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_SNDK"&gt;&lt;/span&gt;涨超2%，&lt;span id="usstock_MU"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/MU.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;美光&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_MU"&gt;&lt;/span&gt;科技、&lt;span id="usstock_WDC"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/WDC.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;西部数据&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_WDC"&gt;&lt;/span&gt;涨超1%。&lt;/p&gt;
+&lt;p&gt;　　雷神技术盘前涨超1%，消息称白宫将召集美国军工巨头讨论增产。&lt;/p&gt;
+&lt;p&gt;　　Gitlab盘前跌8.8%，Q4业绩喜忧参半，今财年业绩指引逊于预期。&lt;/p&gt;
+&lt;p&gt;　　云计算公司CoreWeave股价盘前上涨3.5%，人工智能公司Perplexity已签约使用该公司的数据中心。&lt;/p&gt;
+&lt;p&gt;　　Moderna盘前涨超4%，专利纠纷靴子即将落地。&lt;/p&gt;
+&lt;p&gt;　　Evolus盘前涨超16%，Q4收入增长实现盈亏平衡 本季指引积极。&lt;/p&gt;
+&lt;p&gt;　　Sea盘前续跌逾2%，Q4盈利逊预期，多家大行下调目标价。&lt;/p&gt;
+&lt;p&gt;　　再鼎医药盘前涨约2%，H股收涨4%，绩后持续获机构唱好。&lt;/p&gt;	
+	
+&lt;div class="app-kaihu-qr app-qihuo-kaihu-qr" id="app-qihuo-kaihu-qr"&gt;
+     &lt;span&gt;新浪合作大平台期货开户 安全快捷有保障&lt;/span&gt;
+    &lt;img src="https://n.sinaimg.cn/finance/transform/340/w170h170/20220415/bd6a-a2376d5226aaa796dfdca62b1d9b1fcb.png"&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：郭明煜 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 04 Mar 2026 13:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxNcGNzWWxjTnJON0tHQkktdzJCS2xDWnJhN1dmMUVHZk03Q2JpaGlWQ1M0bzVzTVhYaVhsNTljdGszSENYMEYwaWUtTmNyODQwSU9tMW96cEFXdklyZ21TbGYweEpMbHNHSklvNENBbC1XeGpfVmZrSWdZcnhUUDdmamRDb05USEk</guid></item><item><title>迷你主机已不值得入手：看完我被彻底劝退了-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107055.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;迷你主机涨价了，这一点毋庸置疑。那么涨价之后的迷你主机还值得入手吗，我翻看了一下主流电商平台上的迷你主机价格，从我个人的角度来看，目前如果没有强需求的话，迷你主机还是暂时别碰了。当然也有一种特殊情况，下面详细聊一下。&lt;/p&gt;
 &lt;p&gt;迷你主机涨价主要有两个原因，第一个是存储涨价，也就是内存和硬盘涨价，使得迷你主机的整体价格出现了非常明显的提升。&lt;/p&gt;
@@ -84,7 +239,29 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 12:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvNTQ4OWxVVHZrcnVWZHdBM2s4cnc3Z09uT01Jb1FXX1FieFVXY3BKWlFxUV9PUzFjQUVmZDZqX3NNSHR6NGNKUlYtTTlFaHFla2xrRTJWVGs</guid></item><item><title>微软想通了！Win11新特性曝光：Print Screen键不再独占 第三方也能用 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107036.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 12:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvNTQ4OWxVVHZrcnVWZHdBM2s4cnc3Z09uT01Jb1FXX1FieFVXY3BKWlFxUV9PUzFjQUVmZDZqX3NNSHR6NGNKUlYtTTlFaHFla2xrRTJWVGs</guid></item><item><title>美国AI被电力卡脖子：进口依赖度高达80% 恰好是中国强项-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107040.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月4日消息，当前AI领域，美国企业强大的地方在于芯片算力充足，然而AI基建上却被电力卡脖子，这一点反而成为中国科技公司的强项。&lt;/p&gt;
+&lt;p&gt;AI数据中心最主要的运营成本就是电力消耗，美国科技公司也为此头疼，而电力公司也同样面临挑战，美国三大区域电力公司宣布了750亿美元的电力投资计划，要建设765千伏的超高压线路以满足美国AI的电力需求。&lt;/p&gt;
+&lt;p&gt;这批线路将成为美国史上规模最大、输电能力最强的电力线路，但是还是不能彻底解决美国AI缺电的问题。&lt;/p&gt;
+&lt;p&gt;不仅如此，微软、谷歌、亚马逊等公司面临的第二个难题就是电费涨价的问题，由于需求旺盛，&lt;strong&gt;美国电力公司已经上调了电费价格，这又引发了美国民众的不满。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;日前美国总统召集了上述多家科技公司的CEO/高管开会，最终让这些公司签署文件，承诺自行供应或者购买AI所需的电力，不把涨价转移到普通人身上。&lt;/p&gt;
+&lt;p&gt;但这样做无疑又会提高美国AI数据中心的运营成本，问题的本质还是美国电力建设已经落后，而且核心电力设备成本高，又太依赖进口。&lt;/p&gt;
+&lt;p&gt;在这方面，国内研报认为美国的变压器供应缺口高达30%，&lt;span&gt;&lt;strong&gt;而且80%都依赖进口，这也成为中国企业的机会。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在电力设备上，中国公司不仅拥有全球最大的电网规模，同时也拥有最完整的产业链，并且可以快速交付。&lt;/p&gt;
+&lt;p&gt;即便是在技术上，中国企业的技术专利也是全球最多的，美国IFI Claims公司去年公布的全球专利TOO250排行榜中，国家电网以12.7万项活跃专利位列第一。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260304/c437ec5b-8d55-4c02-bd13-ddc48e462a0f.png" target="_blank"&gt;&lt;img alt="美国AI被电力卡脖子：进口依赖度高达80% 恰好是中国强项" h="377" src="//img1.mydrivers.com/img/20260304/Sc437ec5b-8d55-4c02-bd13-ddc48e462a0f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 11:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1Wb2dqbk9Mc1BxSHVlSDJLdW1SY2RtdWhIVzlXbVJEZ1gtanRLN0hDczA1YnlteldxRUpIVkpVYmhYY1d5N3R1YXFwc3lBdGxsajhoMy1YX2I</guid></item><item><title>微软想通了！Win11新特性曝光：Print Screen键不再独占 第三方也能用 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107036.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;微软想通了！Win11新特性曝光：Print Screen键不再独占 第三方也能用&lt;/p&gt;
           
@@ -171,7 +348,30 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 11:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBDRy10ZHM2R0RpVnJWYmlHcGVLVU1SdlNHeGFteVpGVnpKN0Nhd2ZDekpEMFJtZ1o0bnIzbm5CcVlDcnZKWjgwd0N4c1BaeTIwRHMwZG0xbkU</guid></item><item><title>画饼两年终于落地！Win11扩大推送Win11彩色电池图标-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107030.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 11:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBDRy10ZHM2R0RpVnJWYmlHcGVLVU1SdlNHeGFteVpGVnpKN0Nhd2ZDekpEMFJtZ1o0bnIzbm5CcVlDcnZKWjgwd0N4c1BaeTIwRHMwZG0xbkU</guid></item><item><title>15岁学生花8684元网购苹果iPhone 16手机激活购买日期竟显示1978年：比我妈都大-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107033.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月4日消息，15岁学生花8684元网购苹果iPhone 16手机，激活购买日期竟显示1978年，这到底是在怎么回事呢？&lt;/p&gt;
+&lt;p&gt;据报道，近日，15岁的江苏苏州初二学生小金反映了自己网购苹果手机的糟心经历。&lt;strong&gt;“按这个手机显示的购买日期算，它比我妈妈年龄还大，可这款手机明明是2024年9月才推出的，太离谱了！”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2025年9月，经家长同意，小金花8684元网购了一台iPhone 16 Pro Max。商家页面标注“正品保障”“官网可查”，让她和家人放松了警惕。&lt;/p&gt;
+&lt;p&gt;收货时虽发现包装盒与原装略有差异，但手机外观完好，便未深究。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/0cb3118bb21d474ba13269517337f058.png" target="_blank"&gt;&lt;img alt="15岁学生花8684元网购苹果iPhone 16手机 激活购买日期竟显示1978年：比我妈都大" h="479" src="//img1.mydrivers.com/img/20260304/s_0cb3118bb21d474ba13269517337f058.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今年春节，该手机出现间歇性无法充电，换用备用充电头后故障依旧。小金到苹果线下门店检测后得知，设备序列号显示购买日期为1978年4月1日，大概率是二手机，工作人员称其购买价格偏高。&lt;/p&gt;
+&lt;p&gt;2026年2月，小金联系商家维权，&lt;strong&gt;对方承认手机是“资源机”，非全新原装，却拒绝退款，仅提出回收处理，追问是否翻新时，客服刻意回避。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;3月4日，媒体联系苹果官方客服得知，涉事设备为“样品机”，虽属正品但无官方保修，1978年的购买日期是苹果区分全新机与非全新机的特殊标注，避免违规销售。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;据悉，“资源机”又称“1978机”，多为苹果官方7天无理由退货机，为准新品却无法进入官方渠道，经非官方渠道流入市场。&lt;/strong&gt;&lt;/span&gt;业内人士提醒，不良商家可能混入问题机，且此类手机无官方三包，维权困难。&lt;/p&gt;
+&lt;p&gt;目前，小金仍在与商家、平台协商维权。苹果官方提醒，网购电子产品优先选官方渠道，警惕低价“资源机”，下单前核实宣传语，收货后及时验证序列号。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/0694be242a1d4b1ca95cd9b4c9560198.jpg" target="_blank"&gt;&lt;img alt="15岁学生花8684元网购苹果iPhone 16手机 激活购买日期竟显示1978年：比我妈都大" h="400" src="//img1.mydrivers.com/img/20260304/s_0694be242a1d4b1ca95cd9b4c9560198.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 04 Mar 2026 11:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1vRHRfc0dKeURobTBOQi1qc3diaFJ1RHQycDZqSG8ydDVKM25uMUJ1THk3d0xEc3BtRzhJTHRtMnJaazNjYzkwdmo0MWhfdWlHRE1KblhMTHc</guid></item><item><title>画饼两年终于落地！Win11扩大推送Win11彩色电池图标-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107030.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;画饼两年终于落地！Win11扩大推送Win11彩色电池图标&lt;/p&gt;
           
@@ -821,7 +1021,10 @@
 	&lt;strong&gt;苗伟：&lt;/strong&gt;2029年6G标准的第一个版本将会冻结，2030年正式开启6G的规模商用。技术商用一般需要经历技术验证、原型机验证、组网验证、最终到规模商用；中兴构建了从核心器件、仪器仪表、整机以及端到端系统内外场验证的完整能力链条。2026年预计基本完成产品整机原型验证，2027年开始系统组网验证以及系列化产品的样机开发；2029年之后开启商用；在这个过程中，上游元器件等，还需要在集成度，器件成本、瓶颈工艺及能耗等多方面突破攻关；仪器仪表仿真软件等也需要实现国产成熟度并培养生态；同时将技术转换为价值，6G技术需要更广泛更深入地与价值场景融合，使得技术创新和产业创新互促发展，通过价值场景的孵化，实现应用落地，最终服务于生产力提升。
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Wed, 04 Mar 2026 08:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1Hek1DV3VNZGFSRmxhZXNSb0EwVlpvc3BRdWRPLTEzS29Jd2JES3Ftd1doNktUSnlOTUZXVHI5djhnR1dSZkFmZTliN0RlUm15eW9GNUhTSXBkV3Vma25jNnk2SUU</guid></item><item><title>OpenClaw 开通官方微博账号 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/407547</link><description>&lt;body id="readabilityBody"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Wed, 04 Mar 2026 08:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1Hek1DV3VNZGFSRmxhZXNSb0EwVlpvc3BRdWRPLTEzS29Jd2JES3Ftd1doNktUSnlOTUZXVHI5djhnR1dSZkFmZTliN0RlUm15eW9GNUhTSXBkV3Vma25jNnk2SUU</guid></item><item><title>“16岁以下禁止使用社媒”，你是支持还是反对？｜两会·言事（一） - 观察者网</title><link>https://www.guancha.cn/politics/2026_03_04_808725.shtml</link><description>&lt;body class="detail" id="readabilityBody"&gt;
+    
+&lt;/body&gt;
+</description><author>观察者网</author><pubDate>Wed, 04 Mar 2026 07:56:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE5XVFBsdWE1Yl96QVhKaTVkWGtNZV9GM1JELUU1MTdKeDV4SllnbU9qdWk3UWJhX3hWak52U244Qlc1Um5YR29OTkpHT0t2RTlSZGtpZnRQb1RDaXNBSnJJelhDS29vUQ</guid></item><item><title>OpenClaw 开通官方微博账号 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/407547</link><description>&lt;body id="readabilityBody"&gt;
   &lt;p id="app"&gt;&lt;/p&gt;
   
   
@@ -4071,7 +4274,7 @@ Mozaic 4+的规模效益与效能提升&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 03 Mar 2026 21:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5pcUgtaUVPS2JwMUdZR2lNUkhWcjByOVFWaGxBeENZRHJqd0tuVDUwR09Kb0pCMkZzVWhGTEVmeWxmT3ZzZWstZXFYUmd6Y1ZVUVgxal9HRTVSdlRIVzRSdDBmU01iUG9GR2dzUVM4dllpR1V0U3FqdURB</guid></item><item><title>日本拟在南鸟岛评估设立核废料处理场 - 日经中文网</title><link>https://cn.nikkei.com/politicsaeconomy/politicsasociety/61622-2026-03-04-05-00-23.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="newsText fix"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 03 Mar 2026 21:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5pcUgtaUVPS2JwMUdZR2lNUkhWcjByOVFWaGxBeENZRHJqd0tuVDUwR09Kb0pCMkZzVWhGTEVmeWxmT3ZzZWstZXFYUmd6Y1ZVUVgxal9HRTVSdlRIVzRSdDBmU01iUG9GR2dzUVM4dllpR1V0U3FqdURB</guid></item><item><title>币安将上市Fabric Protocol（ROBO）并为其添加种子标签| 币安公告,币安最新消息 - Binance</title><link>https://www.binance.com/zh-CN/support/announcement/detail/82c9c8166a2a434681c20a23a346a5b8</link><description>&lt;a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOQzVHWS0zaGtYQmZxQ3c5M0VEWlRvYWJ1bFptSGFvdm5aNUxxVTAwbWk5MFBOYTd6RXhKRnVCNTRFeXlUcy1rWDluSmlHOGM5ZWs2RERRSEZWT2ZkR3ZwdTk2YUpNdzFUR1l6VEVhMzk1S1NEeVJfeUtIYTFwTmZBeFNzbE1WaGNrMWRUZk9LS0psbGFq?oc=5" target="_blank"&gt;币安将上市Fabric Protocol（ROBO）并为其添加种子标签| 币安公告,币安最新消息&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;Binance&lt;/font&gt;</description><author>Binance</author><pubDate>Tue, 03 Mar 2026 21:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilAFBVV95cUxOQzVHWS0zaGtYQmZxQ3c5M0VEWlRvYWJ1bFptSGFvdm5aNUxxVTAwbWk5MFBOYTd6RXhKRnVCNTRFeXlUcy1rWDluSmlHOGM5ZWs2RERRSEZWT2ZkR3ZwdTk2YUpNdzFUR1l6VEVhMzk1S1NEeVJfeUtIYTFwTmZBeFNzbE1WaGNrMWRUZk9LS0psbGFq</guid></item><item><title>日本拟在南鸟岛评估设立核废料处理场 - 日经中文网</title><link>https://cn.nikkei.com/politicsaeconomy/politicsasociety/61622-2026-03-04-05-00-23.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="newsText fix"&gt;
 
 &lt;p&gt;&lt;img src="/images/2026/03/0303/0303-12-L.jpg" loading="lazy" data-path="local-images:/2026/03/0303/0303-12-L.jpg"&gt;&lt;br&gt;&lt;span&gt;&lt;strong&gt;南鸟岛是位于太平洋上的日本最东端的岛屿（日本气象厅供图）&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;  &lt;/p&gt;
@@ -4204,141 +4407,4 @@ Mozaic 4+的规模效益与效能提升&lt;/p&gt;
 &lt;p&gt;值得注意的是，法拉第未来股价在2月创下历史新低，一度跌至0.45美元，年初至今其股票跌幅高达57%。据其最新财报显示，该公司去年第三季度营收仅3.7万美元，净亏损2.22亿美元，资产负债率高达112.53%。&lt;/p&gt;
 &lt;p&gt;目前尚不清楚人形机器人业务对法拉第未来能否起到“脱胎换骨”的效果，但如果从电动汽车业务来看，法拉第未来的未来相当不乐观。&lt;/p&gt;
 &lt;p&gt;该公司在2017年就发布了FF 91车型，并计划在2018年底量产，但实际上在2023年才开始交付，截至2025年的交付量低至16辆。这种长期跳票的过往让法拉第未来在资本市场上颇受怀疑。&lt;/p&gt;
-&lt;p&gt;此外，今年2月，法拉第未来还与中国河北的寰宙汽车销售有限公司达成合作，但后者成立不过一个月，注册资本只有1亿人民币，引发市场对其合作的质疑。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 03 Mar 2026 19:20:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE81YjFMV2liTjNDeEQxR0pxeUdNQzRZaU12VFcyak5ZRG9PZlRRM2cwdldmQVBRQ09nMUdKMDFqb182UDAyeUdxXw</guid></item><item><title>OpenAI发布更快更准更有判断力模型GPT-5.3 Instant，称GPT 5.4将比想象更快到来 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766654</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 03 Mar 2026 18:11:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFB2dGtrVTFVTHlucUdYSS02RWRzQlJDNjFqVzNyM0VpYktMQkdrLVJDdTdBeGk1WVdiNEd0SnVKUjdwOUZHVnNJSklLa2pqTV9kX0lZ</guid></item><item><title>谷歌推出最快最高性价比Gemini 3模型，响应时间提高2.5倍、输出速度提升45% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766651</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 03 Mar 2026 16:41:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1JRmg1X090eXpRN3F6RUY2TFR1Y3h3U0hTTXJ4bjZURzRCNzhaR0ttWWJjdW40WVF4ZXY4OWgzNUE3WTYyYWdjZGZrZl9kbUJ6M3B3</guid></item><item><title>突发！阿里千问负责人林俊旸或从千问离职，曾是阿里最年轻的P10 - 新浪财经</title><link>https://finance.sina.com.cn/tech/2026-03-04/doc-inhpunau7001022.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p&gt;　　来源：Z Finance&lt;/p&gt;
-&lt;p&gt;　　&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;刚刚，通义千问核心负责人&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;林俊旸&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;在 X发文表示将从千问项目 &lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;step down&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;。并不一定是离开阿里，但至少意味着千问&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;这条开源旗舰线，进入了一个交棒/换挡的组织节点&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;　　&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;林俊旸&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;年仅 &lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;32 &lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;岁，&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;是阿里巴巴最年轻的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;P10&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;级技术负责人，也是全球最强开源模型之一&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;——&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;通义千问核心推动者。&lt;/font&gt;&lt;font&gt;从北大课堂到达摩院实验室，从算法代码到开源生态，他用十年时间完成了从&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;“&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;让机器懂语言&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;”&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;到&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;“&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;让智能走进世界&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;”&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font&gt;的跃迁。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　&lt;font&gt;2025 &lt;/font&gt;&lt;font&gt;&lt;font&gt;年春，当全行业仍在争论&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;“&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;开源还是闭源&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;”“Agent &lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;还是模型&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;”“&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;具身智能（&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;Embodied Intelligence&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;）是否为下一战场&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;”&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;时，林俊旸已带领团队悄然开启新一轮进化&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;——&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;让智能从虚拟世界走向真实世界，从理解语言到学会行动。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　&lt;font&gt;&lt;font&gt;与许多&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;算法天才&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;不同，他的成长路径是一条更不寻常但极具逻辑的路线：北大本科学计算机，研究生却选择语言学与应用语言学&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;——&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;不是逃离理工，而是试图回答一个更难的问题：&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;“&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;要让机器懂人类语言、理解人类意图，它首先要学会什么？&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;”&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;正是这段语言学训练，为他后来在大模型语义理解、多模态对齐，以及人机协同智能方向的突破，打下了别人少见的底层逻辑。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　&lt;font&gt;2019&lt;/font&gt;&lt;font&gt;&lt;font&gt;年毕业后，他没有选择学术，而是进入阿里达摩院智能计算实验室，加入仍处于初期的多模态预训练项目&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;M6&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。一年后，通义千问立项，他成为核心架构成员；&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;2022&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;年正式升任技术负责人；&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;2024&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;年带队开源&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;Qwen&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;系列，在全球模型排行榜上与&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;GPT&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;、&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;Claude&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;正面交锋；&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;2025&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;年，他又亲自宣布组建&lt;span id="stock_sz300024"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz300024/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;机器人&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz300024"&gt;&lt;/span&gt;与具身智能团队，试图让模型走出屏幕，去&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;“&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;看世界、动手、行动&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;”&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;　　这次人事调整，讲成为千问的重要分水岭。&lt;/p&gt;
-
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：杨赐 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 03 Mar 2026 16:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE9IQkxud1UtNzZlN1RFOXlGY1pMNGYyX0xPVjhveXRzNzBlUHJEWU1IMldHcHptWVlNbjVDeGM4YS01WDE2SXp0ZzQ3c214c3FqZDlxODRZbmxjaFNWVFVaNThLLUlSMHF1bWd5R01WZzNvbGo0MkIzcQ</guid></item><item><title>GoPro发布新款处理器-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1106/1106823.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;GoPro宣布采用5纳米工艺的GP3定制处理器是公司史上最强大的SoC，其像素处理能力是上一代产品GP2的两倍，同时具有卓越的AI图形处理能力与低光照环境表现。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/959ca717706247d5b806dd03f986a8d1.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="222" src="//img1.mydrivers.com/img/20260304/s_959ca717706247d5b806dd03f986a8d1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/922c4424ffc7424389a790fa1753c7ce.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="222" src="//img1.mydrivers.com/img/20260304/s_922c4424ffc7424389a790fa1753c7ce.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/66f783d27d974292bbf9707f6a46390d.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="222" src="//img1.mydrivers.com/img/20260304/s_66f783d27d974292bbf9707f6a46390d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;新闻稿所附图片据称来自采用GP3处理器的新一代GoPro产品，预计新品将于今年第二季亮相。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260304/2d17b4607b794766aef3c9dedf33b57c.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="450" src="//img1.mydrivers.com/img/20260304/s_2d17b4607b794766aef3c9dedf33b57c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260304/b2c7804cf4fb4f0d87b5bacc5cbbf0c0.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="450" src="//img1.mydrivers.com/img/20260304/s_b2c7804cf4fb4f0d87b5bacc5cbbf0c0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260304/0d70d350add4435fbadde8e4792fa766.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="450" src="//img1.mydrivers.com/img/20260304/s_0d70d350add4435fbadde8e4792fa766.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;GP3处理器拥有AI专用NPU，由此具备较强场景识别与拍摄主体检测能力。新一代GoPro产品有望在续航、能耗，以及拍摄性能方面处于领先地位。未来GoPro产品将基于GP3平台进行拓展，并进军高端影像市场，GoPro创始人兼首席执行官Nicholas Woodman在新闻稿中称。&lt;/p&gt;
-&lt;p&gt;2021年之后推出的GoPro产品基于GP2处理器，公司已许久没有推出激发用户购买欲的产品。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/78a6f3536a384665ba1da9e62dd24ce2.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="538" src="//img1.mydrivers.com/img/20260304/s_78a6f3536a384665ba1da9e62dd24ce2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/5d5fc74c3f324c5093144dc4e1d711a6.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="749" src="//img1.mydrivers.com/img/20260304/s_5d5fc74c3f324c5093144dc4e1d711a6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/3dbc508f96684671844ddc5514c7827d.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="480" src="//img1.mydrivers.com/img/20260304/s_3dbc508f96684671844ddc5514c7827d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/f116982c3b824966996a5c66b08c1e61.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="685" src="//img1.mydrivers.com/img/20260304/s_f116982c3b824966996a5c66b08c1e61.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此外，苹果宣布两款全新处理器M5 Pro与M5 Max将随系统交付至用户手中，搭载M5/M5 Pro/M5 Max处理器的MacBook Air与MacBook Pro机型可于4号下订，11号出货。&lt;/p&gt;
-&lt;p&gt;两款处理器采用3纳米制程将CPU与GPU部分集成在单颗SoC中，其中CPU为18核架构，拥有6个超级核心与12个性能核心，多线程能力较M1 Pro与M1 Max强2.5倍。&lt;/p&gt;
-&lt;p&gt;GPU部分则是划分等级的标尺，M5 Pro搭配20核心GPU，M5 Max搭配最高可达40核GPU。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;img alt="GoPro发布新款处理器" h="337" src="//img1.mydrivers.com/img/20260304/83aa551e49364779bf6ea0ff1fd5b7ae.jpg" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;搭载M5非Pro处理器的MacBook Air入门机型拥有512GB机内存储空间，不仅容量翻番，读写速度也较上一代快一倍，但售价上涨100美元：13寸机型起价1099美元；15寸机型起价1299美元。&lt;/p&gt;
-&lt;p&gt;与此类似，搭载M5 Pro/Max处理器的MacBook Pro入门机型其SSD容量由旧款的512GB提升至1TB。&lt;/p&gt;
-&lt;p&gt;廉价学生机可能被命名为MacBook Neo，机型代码A3404，拥有多种颜色，具体配置待定：&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260304/2bf81c861b2b48db8f6b9736c9159e0d.jpg" target="_blank"&gt;&lt;img alt="GoPro发布新款处理器" h="447" src="//img1.mydrivers.com/img/20260304/s_2bf81c861b2b48db8f6b9736c9159e0d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：Zhengogo&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 03 Mar 2026 16:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5BdXAyYy04SkFjSjFfS0Y0NmNEYXFnY284TG92NVVyWDcwNUctX1VFLWJEQTUwbkJ1c2EzUnEyYTRmQVBhLWZmblNCMVl1bFB1WnpRZUdDSzc</guid></item><item><title>苹果最便宜笔记本提前现身：将定名MacBook Neo！-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1106/1106821.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月4日消息，&lt;span&gt;&lt;strong&gt;据MacRumors报道，苹果官网上短暂出现了一份关于MacBook Neo（型号A3404）的监管文件，目前已修复隐藏。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;结合近期多方消息来看，这款神秘的MacBook Neo，很可能就是即将发布的低价MacBook。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260304/2f4854d2-4e02-4b59-addd-6bff134d1956.png" target="_blank"&gt;&lt;img alt="苹果最便宜笔记本提前现身：将定名MacBook Neo！" h="414" src="//img1.mydrivers.com/img/20260304/S2f4854d2-4e02-4b59-addd-6bff134d1956.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;这款新机定位入门级市场，对标Chromebook，核心面向学生与轻度办公用户，&lt;/span&gt;&lt;strong&gt;海外起售价预计599-799美元，国行或下探至4000元档位，成为苹果史上最亲民的笔记本电脑。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;其最大突破在于首次搭载iPhone同款A系列芯片，采用iPhone 16 Pro同款的A18 Pro，第二代3nm工艺打造，6核CPU+6核GPU搭配16核神经引擎，性能略超M1芯片，单核接近M4水平。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="苹果低价MacBook将定档3月4日：首搭A18 Pro手机芯片！定价4K段" h="334" src="//img1.mydrivers.com/img/20260222/8ebf8a49-7611-48ef-aed6-966914111aaf.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;整体可流畅应对网页浏览、文档处理及轻量音视频剪辑，原生支持Apple Intelligence AI功能，但不支持4K剪辑、3D渲染等重度任务。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;硬件配置上，新机采用12.9英寸LCD屏幕，比MacBook Air的13.6英寸更小，取消刘海设计，显示素质略低于Air系列。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="苹果低价MacBook将定档3月4日：首搭A18 Pro手机芯片！定价4K段" h="337" src="//img1.mydrivers.com/img/20260222/e8b44df5-316e-4f42-b6d3-26ce2c4c8c92.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;机身延续铝合金材质，采用石墨包覆工艺提升散热与结构强度，最大亮点是推出多彩配色——苹果已测试浅黄、浅绿、蓝、粉、银、深灰六种颜色，最终上市版本至少保留四款，致敬经典iBook G3系列。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="苹果低价MacBook将定档3月4日：首搭A18 Pro手机芯片！定价4K段" h="333" src="//img1.mydrivers.com/img/20260222/b778b95d-41a3-41ae-b193-2d5b2c212b54.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span&gt;为控制成本，新机在拓展性上做了取舍：&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;无雷电接口，仅配备10GB/s速率的USB-C接口，仅支持单台外接显示器；&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;存储起步128GB，低于MacBook Air的256GB入门标准；&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;内存标配8GB，暂未确认是否提供16GB版本。&lt;/strong&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 03 Mar 2026 16:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1CQ1ZLOC1qeG1sdFE0N3owOGFHTGRIZWxzblZfOElRRGZtN25Xalp0ZnNOd242TEFMTTVzVW0wN2RUOVhiTXU0bFE4UFV0VUZ0a2FNMkYtMWg</guid></item></channel></rss>
+&lt;p&gt;此外，今年2月，法拉第未来还与中国河北的寰宙汽车销售有限公司达成合作，但后者成立不过一个月，注册资本只有1亿人民币，引发市场对其合作的质疑。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 03 Mar 2026 19:20:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE81YjFMV2liTjNDeEQxR0pxeUdNQzRZaU12VFcyak5ZRG9PZlRRM2cwdldmQVBRQ09nMUdKMDFqb182UDAyeUdxXw</guid></item><item><title>OpenAI发布更快更准更有判断力模型GPT-5.3 Instant，称GPT 5.4将比想象更快到来 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766654</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 03 Mar 2026 18:11:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFB2dGtrVTFVTHlucUdYSS02RWRzQlJDNjFqVzNyM0VpYktMQkdrLVJDdTdBeGk1WVdiNEd0SnVKUjdwOUZHVnNJSklLa2pqTV9kX0lZ</guid></item></channel></rss>
