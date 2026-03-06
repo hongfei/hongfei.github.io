@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>2.5D HAU-Net结合门控空间注意力机制，用于MRI中海马体的自动分割 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260307000407050.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section&gt;&lt;p&gt;海马体位于内侧颞叶，支持情景记忆、空间认知和神经可塑性（Burgess等人，2002年）。海马体的形态变化为阿尔茨海默病、癫痫和其他神经系统疾病提供了敏感、可量化的结构标志物。磁共振成像（MRI）被广泛用于海马体的三维评估。然而，手动分割耗时且劳动强度大，其重复性受操作者依赖性的限制（Chupin等人，2009年）。此外，在MRI上，海马体对比度低、体积小、形态不规则、边界模糊，并且个体间差异显著，这进一步增加了分割的复杂性。这些挑战使得海马体分割对平衡上下文建模、鲁棒性和计算效率的架构设计选择特别敏感。&lt;/p&gt;&lt;p&gt;在这项工作中，我们专注于从T1加权结构MRI自动分割整个海马体。早期的自动化方法主要依赖于传统的机器学习技术，虽然取得了初步的成功，但受到高计算成本、灵活性受限和泛化能力弱的限制，阻碍了其广泛临床应用（López Palafox等人，2017年；Tong等人，2013年；Zheng等人，2018年）。随着计算硬件和数据可用性的进步，深度学习——特别是卷积神经网络——已成为医学图像分割的主流范式，能够在广泛的神经成像任务中实现精确的体素级预测（Yang等人，2020年）。这些发展，加上改进的数据集和注释，显著推动了自动海马体分割的发展，支持神经退行性疾病的早期诊断和纵向监测。&lt;/p&gt;&lt;p&gt;最近的研究越来越多地探索2.5D设计，通过轻量级的跨切片注意力来模拟切片间的依赖性，提供了2D效率和3D上下文建模之间的实际折中。增强注意力的U-Net变体通过抑制无关区域并强调与任务相关的特征，进一步改善了小结构的描绘。尽管取得了显著进展，但仍存在一些重要问题：（1）2D网络未能充分利用平面内的空间信息，而3D网络虽然有效，但往往对内存和数据需求过高，在资源受限或样本量小的环境中不太实用。（2）捕捉微妙的海马体特征并同时优化分割与诊断目标仍然具有挑战性。（3）复杂的设计和不稳定的训练增加了在小数据集上过拟合的风险，限制了实际的泛化能力。&lt;/p&gt;&lt;p&gt;这激发了我们开发能够选择性利用有限的平面内上下文同时避免完整3D建模的成本和不稳定性的架构的动机。为了解决这些限制，我们提出了HAU-Net，这是一种针对T1加权MRI下整个海马体分割的2.5D注意力增强U-Net，适用于计算和数据资源有限的场景。我们的主要贡献如下：（1）一种计算效率高的2.5D海马体分割方法。我们使用一小堆相邻切片构建输入，注入适度的平面内上下文，同时保持网络在核心操作中的完全2D特性，从而避免了与完整3D模型相关的庞大内存占用和训练不稳定性。（2）一种适用于小体积、低对比度结构的门控空间注意力模块。我们引入了一种轻量级的门控机制，进行有针对性的特征选择并抑制来自周围组织（例如脑室和皮质边界）的干扰因素，提高了边界匹配度并减少了误报——这些错误在海马体T1 MRI上尤为突出。（3）在严重类别不平衡情况下的稳定优化方案。我们采用复合Dice–BCE目标函数（α = β = 1），并对其损失动态和收敛行为进行了实证分析，表明与单独使用任一术语相比，所提出的方案在样本量小的情况下提高了训练稳定性。（4）在资源受限的公共基准测试中的广泛验证。我们在Medical Segmentation Decathlon（Hippocampus）和HarP数据集上评估了HAU-Net，报告了具有竞争力的准确性和鲁棒性，同时保持了适合资源受限部署的效率-准确性权衡（内存和推理成本）。总体而言，HAU-Net通过选择性利用有限的平面内上下文和注意力引导的特征细化，明确针对海马体分割中的效率-准确性平衡，而不是依赖于复杂的3D框架或庞大的注意力堆栈。&lt;/p&gt;&lt;p&gt;本文的其余部分组织如下：第2节详细介绍了相关工作；第3节介绍了HAU-Net；第4节报告并讨论了实验结果；第5节将我们的发现与现有文献进行了比较，并概述了影响和局限性；第6节总结了我们的贡献和未来工作的方向。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 06 Mar 2026 16:30:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBBYXVreW1hd19ETWRmdXktdDVqY2tlRFE0RG9xb29yeGJzV2M1U010Y25qd1B3WEdyVTFIMlgxbzMzVVl6R2Vxa2htZlo5Rk8tWGJfSkxtMUduSTF5NjRoVkdkYi05VDNzVUE</guid></item><item><title>摘要 LB-A011：释放 S100A9 的中性粒细胞会增加 BRCA 基因携带者患乳腺癌的风险 免费 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260307000947568.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>丘脑脚桥核-丘脑胆碱能通路在快速眼动睡眠行为障碍中的早期损害及其表型转化预测价值 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260307001157751.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
+                    &lt;p&gt;当我们沉入睡眠，进入快速眼动（REM）睡眠期时，身体通常会进入一种“瘫痪”状态，以防止我们将梦境中的动作真实地演绎出来。然而，有一类患者会打破这种保护机制，他们在REM睡眠期会出现与梦境内容相关的、剧烈的肢体动作，如拳打脚踢、喊叫，甚至可能伤及自身或同床者，这种情况被称为快速眼动睡眠行为障碍（RBD）。更值得警惕的是，RBD，特别是无明显其他病因的孤立性RBD（iRBD），已被大量研究证实是神经退行性疾病，尤其是以帕金森病（PD）和路易体痴呆（DLB）为代表的路易体病的强力前驱标志。大部分iRBD患者最终会转化为这些疾病，这个过程被称为“表型转化”。因此，探究iRBD阶段大脑发生了何种病理改变，并找到能够预测谁将更快转化的生物标志物，对于早期干预和疾病修饰治疗具有至关重要的意义。&lt;/p&gt;
+&lt;p&gt;在路易体病的病理机制中，胆碱能神经系统的退化是其核心特征之一，与患者的认知障碍、睡眠异常等症状密切相关。胆碱能系统主要包含两大投射系统：一是起源于基底前脑的迈内特基底核（NBM），其纤维广泛投射至大脑皮层，参与高级认知功能；二是起源于脑干的脚桥核（PPN），其纤维主要投射至丘脑等结构，在睡眠-觉醒调节和运动控制中扮演关键角色。然而，在疾病的前驱阶段（如iRBD），这两个系统的受累时序和程度如何？哪个系统的变化更能预警即将到来的疾病转化？这些问题此前尚不明确。&lt;/p&gt;
+&lt;p&gt;为了回答这些问题，一项发表在《npj Parkinson's Disease》的研究开展了一项深入的影像学研究。研究人员利用国际知名的帕金森病进展标志物倡议（PPMI）队列的数据，分析了146名iRBD患者和102名健康对照者的脑部磁共振成像（MRI）数据。他们旨在从&lt;strong&gt;结构&lt;/strong&gt;和&lt;strong&gt;连接&lt;/strong&gt;两个维度评估胆碱能系统：通过T1加权像测量基底前脑的体积，以反映其整体结构完整性；更重要的是，他们利用弥散加权成像（DWI）和基于纤维束示踪的空间统计（TBSS）技术，重建并量化了三条关键的胆碱能白质通路的微结构完整性。这三条通路包括：外侧NBM-皮层通路、内侧NBM-皮层通路以及PPN-丘脑通路。通过测量这些通路上的部分各向异性（FA）值，可以间接反映神经纤维的完整性和髓鞘化程度。&lt;/p&gt;
+&lt;p&gt;研究团队采用了贝叶斯混合模型来比较iRBD组与对照组的差异，并分析了这些影像指标与患者基线认知功能（通过蒙特利尔认知评估量表MoCA衡量）的关联。为了探究其预测价值，他们进一步使用Cox比例风险模型，评估了基线时这些通路完整性对未来发生表型转化（转化为PD、DLB或其他相关综合征）的风险预测能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;主要研究结果如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;PPN-丘脑通路在iRBD中已受损&lt;/strong&gt;：研究发现，与健康对照组相比，iRBD患者沿着PPN-丘脑通路的FA值显著降低，这种降低在左侧大脑半球尤为明显。这提示，起源于脑干的胆碱能投射在疾病前驱阶段已经出现了可检测的微结构损伤。&lt;/p&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;基底前脑-NBM系统在iRBD阶段相对保留&lt;/strong&gt;：与之形成对比的是，无论是代表结构体积的基底前脑，还是代表连接完整性的两条NBM-皮层通路（外侧和内侧），在iRBD患者与健康对照组之间均未发现显著差异。这表明，在iRBD时期，皮层导向的胆碱能系统可能尚未发生大规模的结构性退变。&lt;/p&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;不同通路与认知功能的关联各异&lt;/strong&gt;：在iRBD患者群体内部进行分析时，研究发现&lt;strong&gt;内侧NBM-皮层通路&lt;/strong&gt;的完整性与患者基线时的总体认知表现（MoCA分数）存在正相关。这意味着，即便在尚未普遍受损的阶段，该通路保存较好的人，其认知功能也相对更好。然而，PPN-丘脑通路或基底前脑体积与认知功能之间未发现显著关联，凸显了不同胆碱能通路支持不同脑功能的特异性。&lt;/p&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;PPN-丘脑通路完整性可预测表型转化风险&lt;/strong&gt;：最具临床价值的发现在于预测分析。经过平均时长的随访后，部分iRBD患者转化为明确的神经退行性疾病。生存分析显示，基线时&lt;strong&gt;PPN-丘脑通路FA值较低&lt;/strong&gt;的iRBD患者，未来发生表型转化的风险显著更高，风险比（HR）达到2.08。也就是说，该通路完整性较差的患者，其转化风险是通路完整性较好患者的2倍以上。而两条NBM-皮层通路和基底前脑体积均未能显示出对表型转化的预测能力。&lt;/p&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;结论与讨论&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这项研究通过精细的影像学分析，为我们勾勒出路易体病前驱阶段胆碱能系统损害的动态图景。核心结论在于：在iRBD这一临床前驱期，&lt;strong&gt;脑干起源的PPN-丘脑胆碱能投射系统已经出现了可检测的微结构损伤，并且这种损伤能够预测患者未来向帕金森病或路易体痴呆转化的风险&lt;/strong&gt;。相反，皮层导向的基底前脑-NBM胆碱能系统在此时相对保留，其完整性虽与当前认知状态相关，但尚未展现出预测疾病转化的能力。&lt;/p&gt;
+&lt;p&gt;这一发现具有多重重要意义。首先，它挑战了传统的、可能更关注皮层下-皮层上行投射的视角，提出脑干-丘脑胆碱能环路可能是路易体病病理进程中更早受累的“哨兵”。其次，研究首次将PPN-丘脑通路的白质完整性确立为一个潜在的、有前景的神经影像学生物标志物，可用于对iRBD患者进行风险分层。识别出那些具有高转化风险的个体，有助于优先将他们纳入神经保护治疗的临床试验，从而实现真正的早期干预。最后，该研究深化了我们对RBD症状本身病理生理基础的理解，PPN的早期受累可能与REM睡眠期间肌肉失张力的丧失（即RBD的核心症状）直接相关。&lt;/p&gt;
+&lt;p&gt;当然，研究也存在一些局限性，例如横断面设计的部分分析、随访时间尚不足以覆盖所有患者的最终转化等，未来需要更长期的追踪数据进行验证。尽管如此，这项研究无疑为在神经退行性疾病症状全面爆发之前的“黄金窗口期”进行干预，提供了一个新的、以特定神经环路为靶点的科学依据和潜在工具。它让我们看到，在梦境行为失控的背后，是大脑深处特定通路的悄悄改变，而捕捉这种改变，或许就是阻止或延缓疾病步伐的关键一步。&lt;/p&gt;
+
+                    &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 06 Mar 2026 18:00:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1HZWp1VzEybWVWVmh6UWxFN0dRWENlSlZVZWI4UW5kQkZpR2h3UEppUTltYThuY2VJa3hBQ2htWGY1a2U5Uno2MDFVcE15RlFLeWx0LS1QN1hqcmtTWGNqM0xzVXRTUHM2a0E</guid></item><item><title>2.5D HAU-Net结合门控空间注意力机制，用于MRI中海马体的自动分割 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260307000407050.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section&gt;&lt;p&gt;海马体位于内侧颞叶，支持情景记忆、空间认知和神经可塑性（Burgess等人，2002年）。海马体的形态变化为阿尔茨海默病、癫痫和其他神经系统疾病提供了敏感、可量化的结构标志物。磁共振成像（MRI）被广泛用于海马体的三维评估。然而，手动分割耗时且劳动强度大，其重复性受操作者依赖性的限制（Chupin等人，2009年）。此外，在MRI上，海马体对比度低、体积小、形态不规则、边界模糊，并且个体间差异显著，这进一步增加了分割的复杂性。这些挑战使得海马体分割对平衡上下文建模、鲁棒性和计算效率的架构设计选择特别敏感。&lt;/p&gt;&lt;p&gt;在这项工作中，我们专注于从T1加权结构MRI自动分割整个海马体。早期的自动化方法主要依赖于传统的机器学习技术，虽然取得了初步的成功，但受到高计算成本、灵活性受限和泛化能力弱的限制，阻碍了其广泛临床应用（López Palafox等人，2017年；Tong等人，2013年；Zheng等人，2018年）。随着计算硬件和数据可用性的进步，深度学习——特别是卷积神经网络——已成为医学图像分割的主流范式，能够在广泛的神经成像任务中实现精确的体素级预测（Yang等人，2020年）。这些发展，加上改进的数据集和注释，显著推动了自动海马体分割的发展，支持神经退行性疾病的早期诊断和纵向监测。&lt;/p&gt;&lt;p&gt;最近的研究越来越多地探索2.5D设计，通过轻量级的跨切片注意力来模拟切片间的依赖性，提供了2D效率和3D上下文建模之间的实际折中。增强注意力的U-Net变体通过抑制无关区域并强调与任务相关的特征，进一步改善了小结构的描绘。尽管取得了显著进展，但仍存在一些重要问题：（1）2D网络未能充分利用平面内的空间信息，而3D网络虽然有效，但往往对内存和数据需求过高，在资源受限或样本量小的环境中不太实用。（2）捕捉微妙的海马体特征并同时优化分割与诊断目标仍然具有挑战性。（3）复杂的设计和不稳定的训练增加了在小数据集上过拟合的风险，限制了实际的泛化能力。&lt;/p&gt;&lt;p&gt;这激发了我们开发能够选择性利用有限的平面内上下文同时避免完整3D建模的成本和不稳定性的架构的动机。为了解决这些限制，我们提出了HAU-Net，这是一种针对T1加权MRI下整个海马体分割的2.5D注意力增强U-Net，适用于计算和数据资源有限的场景。我们的主要贡献如下：（1）一种计算效率高的2.5D海马体分割方法。我们使用一小堆相邻切片构建输入，注入适度的平面内上下文，同时保持网络在核心操作中的完全2D特性，从而避免了与完整3D模型相关的庞大内存占用和训练不稳定性。（2）一种适用于小体积、低对比度结构的门控空间注意力模块。我们引入了一种轻量级的门控机制，进行有针对性的特征选择并抑制来自周围组织（例如脑室和皮质边界）的干扰因素，提高了边界匹配度并减少了误报——这些错误在海马体T1 MRI上尤为突出。（3）在严重类别不平衡情况下的稳定优化方案。我们采用复合Dice–BCE目标函数（α = β = 1），并对其损失动态和收敛行为进行了实证分析，表明与单独使用任一术语相比，所提出的方案在样本量小的情况下提高了训练稳定性。（4）在资源受限的公共基准测试中的广泛验证。我们在Medical Segmentation Decathlon（Hippocampus）和HarP数据集上评估了HAU-Net，报告了具有竞争力的准确性和鲁棒性，同时保持了适合资源受限部署的效率-准确性权衡（内存和推理成本）。总体而言，HAU-Net通过选择性利用有限的平面内上下文和注意力引导的特征细化，明确针对海马体分割中的效率-准确性平衡，而不是依赖于复杂的3D框架或庞大的注意力堆栈。&lt;/p&gt;&lt;p&gt;本文的其余部分组织如下：第2节详细介绍了相关工作；第3节介绍了HAU-Net；第4节报告并讨论了实验结果；第5节将我们的发现与现有文献进行了比较，并概述了影响和局限性；第6节总结了我们的贡献和未来工作的方向。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 06 Mar 2026 16:30:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBBYXVreW1hd19ETWRmdXktdDVqY2tlRFE0RG9xb29yeGJzV2M1U010Y25qd1B3WEdyVTFIMlgxbzMzVVl6R2Vxa2htZlo5Rk8tWGJfSkxtMUduSTF5NjRoVkdkYi05VDNzVUE</guid></item><item><title>摘要 LB-A011：释放 S100A9 的中性粒细胞会增加 BRCA 基因携带者患乳腺癌的风险 免费 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260307000947568.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12"&gt;
                     &lt;p&gt;&lt;b&gt;编辑推荐：&lt;/b&gt;&lt;/p&gt;
                     &lt;p&gt;携带BRCA1/2突变的女性中性粒细胞通过分泌S100A9激活NF-κB通路，促使乳脂上皮前体细胞（LASP）向基底样细胞转化，形成前肿瘤状态，阻断ALCAM受体可抑制此过程。&lt;/p&gt;
                 &lt;/div&gt;
@@ -591,80 +608,4 @@ Przemko Kwinta&lt;/p&gt;
 &lt;p&gt;由于皮质类淋巴功能障碍与脑膜淋巴引流减少有关，且脊髓淋巴管靠近狭窄区域，因此椎管狭窄可能通过压迫或扭曲 smLVs 而直接损害其结构和功能。这可能导致毒性蛋白和炎性细胞因子清除不足，从而加剧神经炎症和脱髓鞘。因此，针对 smLVs 的治疗策略，如通过 VEGF-C 治疗增强淋巴引流，或通过手术减压解除物理阻塞，可能为多发性硬化提供新的治疗途径。&lt;/p&gt;
         &lt;/div&gt;
 		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 05 Mar 2026 20:45:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1jN3VOX3cyOEowd3E5SFB2NXdCWUpCVlVlR0hoZW94bEJyeFhJaWRnYUZ5Z1dtR0lyeUp0UjJLZmZhd2pETnJFZDVnNlVkbUVKUFdxX3BPcVpSajZjOEs5WXpwQjU5SW4tTkk4SQ</guid></item><item><title>肠道与大脑的遗传对话：孟德尔随机化解码神经精神疾病与便秘的双向因果关系 - 生物通</title><link>https://www.ebiotrade.com/newsf/2026-3/20260306000308143.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="p1EnTitle"&gt;《Brain and Behavior》：Neuropsychiatric Disorders and Constipation: Unraveling Causal Links Through Genetic Analysis&lt;/p&gt;
-        &lt;div class="p1Texttop font14"&gt;
-        	&lt;div class="p1Tl fl"&gt;
-            	&lt;p class="sttop"&gt;&lt;strong class="stro"&gt;编辑推荐：&lt;/strong&gt;&lt;/p&gt;
-                &lt;p class="fk_text"&gt;
-                　　本文通过双向两样本孟德尔随机化（TSMR）分析，系统探究了十二种常见神经精神疾病与便秘之间的遗传因果关系。研究发现焦虑、抑郁与便秘之间存在双向风险促进作用，同时便秘也可能增加癫痫与三叉神经痛的患病风险。研究为临床关注并管理神经精神疾病患者的肠道症状提供了遗传学依据，强调了“脑-肠轴”在疾病诊疗中的重要性。
-                &lt;/p&gt;
-				
-            &lt;/div&gt;
-            
-			
-        &lt;/div&gt;
-        &lt;div class="p1Textcen font14" id="Zoom"&gt;
-        　　&lt;p&gt;&lt;strong&gt;材料与方法&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本研究采用双向两样本孟德尔随机化（Two-Sample Mendelian Randomization, TSMR）设计，旨在探究12种常见神经精神疾病与便秘之间的潜在遗传因果关系。所有全基因组关联研究（Genome-Wide Association Study, GWAS）数据均来自芬兰数据库（Finnish database）的R11版本，并严格限定为欧洲血统人群，以最大程度减少人群分层偏倚。研究所涉及的12种神经精神疾病包括：焦虑症、抑郁症、双相情感障碍、精神分裂症、帕金森病、阿尔茨海默病、脑卒中、多发性硬化、脑积水、癫痫、偏头痛和三叉神经痛。便秘作为对照表型。&lt;/p&gt;
-&lt;p&gt;研究遵循孟德尔随机化的三项核心假设：遗传工具变量（单核苷酸多态性，SNP）必须与暴露因素强相关；工具变量与任何可能影响暴露-结局关系的混杂因素无关；工具变量只能通过暴露因素影响结局变量。工具变量SNP的筛选标准为：与暴露在全基因组水平显著相关（&lt;i&gt;p&lt;/i&gt;&amp;lt; 5 × 10&lt;sup&gt;?8&lt;/sup&gt;），并经过连锁不平衡聚类（&lt;i&gt;r&lt;/i&gt;&lt;sup&gt;2&lt;/sup&gt;&amp;lt; 0.001，遗传距离=10,000 KB）。为排除弱工具变量偏倚，计算了F统计量，剔除F值小于10的SNP。&lt;/p&gt;
-&lt;p&gt;数据分析以随机效应逆方差加权法（Inverse Variance Weighted, IVW）作为主要分析方法。同时，采用加权中位数法、MR-Egger法、加权众数法和简单众数法进行敏感性分析，以评估结果的稳健性。通过比值比（Odds Ratio, OR）及其95%置信区间（CI）来量化因果效应，显著性阈值设为&lt;i&gt;p&lt;/i&gt;&amp;lt; 0.05。此外，研究引入了实际等效区域（Region of Practical Equivalence, ROPE，定义为log OR ∈ [?0.18, 0.18]）来区分统计显著性与临床实际意义。为评估潜在偏倚，研究进一步进行了留一法分析、水平多效性检验（MR-Egger截距检验）和异质性检验（Cochran’s &lt;i&gt;Q&lt;/i&gt;检验）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;研究结果&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;神经精神疾病对便秘的因果效应&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;正向MR分析（以12种神经精神疾病为暴露，便秘为结局）结果显示，焦虑症（IVW OR = 1.133；95% CI: 1.021–1.258；&lt;i&gt;p&lt;/i&gt;= 0.020）和抑郁症（IVW OR = 1.149；95% CI: 1.071–1.232；&lt;i&gt;p&lt;/i&gt;= 0.000）的遗传易感性可能增加便秘的发病风险。双相情感障碍的分析结果（IVW OR = 1.053；&lt;i&gt;p&lt;/i&gt;= 0.038）也提示了潜在关联，但其OR值落在ROPE区间内，表明其临床意义可能有限。其他神经精神疾病，如精神分裂症、帕金森病、阿尔茨海默病、脑卒中等，未发现与便秘存在具有统计学意义且超出ROPE范围的遗传因果关系。敏感性分析中，加权中位数法等结果与IVW法方向基本一致。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;便秘对神经精神疾病的因果效应&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;反向MR分析（以便秘为暴露，12种神经精神疾病为结局）揭示了更丰富的关联。结果显示，便秘的遗传易感性与多种神经精神疾病的发病风险增加相关，包括：焦虑症（IVW OR = 1.273；95% CI: 1.116–1.452；&lt;i&gt;p&lt;/i&gt;= 0.000）、抑郁症（IVW OR = 1.207；95% CI: 1.095–1.331；&lt;i&gt;p&lt;/i&gt;= 0.000）、癫痫（IVW OR = 1.331；95% CI: 1.103–1.607；&lt;i&gt;p&lt;/i&gt;= 0.003）以及三叉神经痛（IVW OR = 1.897；95% CI: 1.225–2.936；&lt;i&gt;p&lt;/i&gt;= 0.004）。其中，便秘对三叉神经痛的风险提升效应最为显著。敏感性分析结果支持了这些发现的稳健性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;敏感性分析与异质性检验&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对上述有阳性发现的关联进行的水平多效性检验（MR-Egger截距检验）显示，所有截距的&lt;i&gt;p&lt;/i&gt;值均大于0.05，未发现明显的水平多效性证据。异质性检验（Cochran’s &lt;i&gt;Q&lt;/i&gt;检验）的&lt;i&gt;p&lt;/i&gt;值也普遍大于0.05，表明研究结果不存在显著的异质性。留一法分析、散点图和漏斗图的可视化结果进一步确认了主要分析结果的可靠性，未发现单个SNP对整体因果估计产生过度影响。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;讨论&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本研究通过大规模遗传数据，首次系统性地揭示了神经精神疾病与便秘之间复杂且特异性的双向因果关系。核心发现确认了焦虑、抑郁与便秘之间存在双向的遗传风险促进作用，这与许多观察性研究的结论一致，并通过MR方法克服了混杂因素和反向因果的干扰，提供了更强的因果证据。同时，研究创新性地发现便秘是癫痫和三叉神经痛的风险因素，这为理解这些疾病的病因提供了新的视角。&lt;/p&gt;
-&lt;p&gt;研究结果与部分早期观察性研究存在差异。例如，未发现帕金森病、阿尔茨海默病、脑卒中与便秘之间存在遗传水平的因果关系。这种差异可能源于观察性研究无法完全控制的混杂因素（如年龄、生活方式），而MR分析在遗传层面上有效规避了这些影响。此外，人群的年龄、性别结构差异也可能导致结果不一致。&lt;/p&gt;
-&lt;p&gt;在机制层面，脑-肠轴（gut-brain axis）可能是连接便秘与神经精神疾病的核心桥梁。情绪障碍可能通过影响自主神经通路，进而干扰肠道动力，导致便秘。反之，便秘可能引发肠道低度炎症，破坏肠道屏障完整性，促进促炎细胞因子释放。这些细胞因子不仅能激活肠道中的5-羟色胺再摄取转运体（SERT），降低5-羟色胺水平，进而参与抑郁的发生，还能通过循环系统影响中枢神经系统功能。肠道菌群失调在这一过程中扮演关键角色，它既是便秘的特征，也与多种神经精神疾病的发病密切相关。便秘相关的菌群结构改变可能通过免疫、神经内分泌和迷走神经等多条通路，扰动脑-肠轴的双向通信，最终影响大脑功能与行为。因此，针对肠道菌群的干预措施（如益生菌）可能成为同时改善神经精神症状和肠道功能的有前景的策略。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;综上所述，这项基于芬兰人群GWAS数据的双向孟德尔随机化研究，证实了特定神经精神疾病（焦虑症、抑郁症）与便秘之间存在双向的遗传因果关联，并首次提出便秘是癫痫和三叉神经痛的潜在风险因素。这些发现从遗传学角度强调了在神经精神疾病的临床诊疗中，需要高度重视并积极管理患者的便秘症状，这对于改善患者整体健康与生活质量具有重要实践意义。研究也凸显了脑-肠轴及其相关通路在精神神经疾病发病机制中的核心地位，为未来开发针对肠道微生态的跨学科治疗策略提供了理论依据。&lt;/p&gt;
-        &lt;/div&gt;
-		
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 05 Mar 2026 18:59:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE9QMHV1eTJlRU9sdnVrTHdvcXYyQlp6ZDJHVEp3djNWSkxYUG1fcTNLUk5ENFF2YnVfSUpOdW1zMUxINHJqWjdfZE5FSzV6bHUtM0hWYldDWHMyZ3VkRkE4aHc0aWhyazJjTEhCeQ</guid></item><item><title>符合5个特征的人 更易患痴呆症 - 加拿大乐活网</title><link>https://lahoo.ca/2026/03/05/797154</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="arcbody" class="content clearfix"&gt;
-&lt;p&gt;想象一下，如果大脑是一台精密的电脑，阿尔茨海默病就像是悄悄侵入系统的病毒——等蓝屏预警响起时，往往已经错过最.佳维护期。但科学家们正在破解这套预警机制，从生活习惯的蛛丝马迹中发现端倪，有些风险因素甚至比家族遗传史更值得警惕。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一、听力损耗是认知下降的信号灯&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1.听力与大脑的隐秘对话&lt;/p&gt;
-&lt;p&gt;当耳蜗收集声音的效率降低，大脑听觉皮层就像长期断电的健身房，神经元之间的“健身器材”会逐渐生锈。研究显示中度听力损失者患痴呆风险增加3倍，这种损伤从40岁后就开始悄然累积。&lt;/p&gt;
-&lt;p&gt;2.社交隔离的连锁反应&lt;/p&gt;
-&lt;div class="article-detail-adpool-ads"&gt;
-&lt;div class="a-pool-auto-detail-d w-100 h-100 cursor-pointer vstack y-bottom"&gt;
-&lt;div class="box-padding__s"&gt;
-&lt;div class="auto-detail-main br-m box-padding__s hstack s"&gt;
-&lt;p class="fit-content"&gt; &lt;/p&gt;
-&lt;p class="detail-button fc-light-black fw-bold hstack x-center"&gt;听不清对话会导致老年人回避社交，而缺乏语言交流相当于剥夺了大脑最重要的有氧运动。每周参与2次以上社交活动的人，脑部灰质密度比孤独者高出15%。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;二、昼夜节律紊乱打乱大脑“清理工”&lt;/strong&gt;
-
-&lt;/p&gt;&lt;p class="adsbygoogle-container"&gt;&lt;/p&gt;
-
-&lt;p&gt;1.深度睡眠是大脑的排毒时间&lt;/p&gt;
-&lt;p&gt;在非快速眼动睡眠阶段，脑脊液会以每分钟10毫升的速度冲刷β淀粉样蛋白。长期熬夜的人，这些致病蛋白就像堵在下水道的垃圾，5年内认知下降速度加快30%。&lt;/p&gt;
-&lt;p&gt;2.午睡.过长的双刃剑&lt;/p&gt;
-&lt;p&gt;超过90分钟的日间睡眠会干扰夜间睡眠质量，但20分钟的小憩却能增强海马体记忆功能。建议固定午睡时长，避免进入深度睡眠周期。&lt;/p&gt;
-&lt;figure class="image" data-attachment-id="6327410" data-aspect-ratio="1.7804" data-width="600" data-height="337"&gt;
-&lt;p class="placeholder"&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img loading="lazy" decoding="async" class="alignnone size-full wp-image-797155" title="69a93f180a197-20260305-101724-69a9c8b4e9510" src="https://cdn.lahoo.ca/wp-content/uploads/2026/03/69a93f180a197-20260305-101724-69a9c8b4e9510.jpeg" alt="69a93f180a197-20260305-101724-69a9c8b4e9510"&gt;&lt;/p&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;三、嗅觉失灵可能是最早预警&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1.鼻神经与大脑的直连线路&lt;/p&gt;
-&lt;p&gt;辨别不了柠檬和汽油味道的人要当心，嗅觉神经元是唯一能直接接触外界的中枢神经。当它们无法正确传递信号时，往往比记忆力减退早5-10年出现。&lt;/p&gt;
-&lt;p&gt;2.简单自测法&lt;/p&gt;
-&lt;p&gt;可以尝试闭眼辨认咖啡豆、肉桂等气味浓厚的物品，连续2周出现识别错误建议就医排查。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;四、代谢综合征加速大脑衰老&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1.胰岛素抵抗的蝴蝶效应&lt;/p&gt;
-&lt;p&gt;当血糖调节失控，过量的胰岛素会突破血脑屏障，触发tau蛋白过度磷酸化。腰围超过身高一半的中年人，晚年认知障碍风险增加89%。&lt;/p&gt;
-&lt;p&gt;2.隐形炎症的慢性腐蚀&lt;/p&gt;
-&lt;p&gt;内脏脂肪分泌的炎症因子会持续攻击血脑屏障，这种情况在BMI正常但体脂率高的人群中更隐蔽。定期检测超敏C反应蛋白很重要。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;五、抑郁情绪改写大脑结构&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1.压力激素的雕刻刀&lt;/p&gt;
-&lt;p&gt;长期抑郁会使海马体每年萎缩1%-2%，这个负责记忆的区域比常人衰老得快3-5年。值得注意是，反复出现的消极思维比单次抑郁发作危害更大。&lt;/p&gt;
-&lt;p&gt;2.情绪与认知的双向恶化&lt;/p&gt;
-&lt;p&gt;早期患者会出现兴趣减退、回避新鲜事物等表现，这又反过来减少神经突触的刺激，形成恶性循环。抗抑郁治疗能延缓病程发展。&lt;/p&gt;
-&lt;p&gt;这些发现不是在制造焦虑，而是给出干预时间窗。就像应对气候变化，在飓风形成前调整生活方式总比灾害登陆后救灾更明智。从今天开始重视听力保护、调整睡眠、训练嗅觉、控制代谢指标和情绪管理，就是在给30年后的自己购买最划算的“脑健康保险”。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>加拿大乐活网</author><pubDate>Thu, 05 Mar 2026 18:18:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSkFVX3lxTE94Uk1lV3VabnhfRVk1SU5lU2d0TWFuVkNzVFdKdWpvWFBlNVJzQS1vZXNueEFfeFlPV0lIaTB3QTVfcFRyR3hLLTd3</guid></item></channel></rss>
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Thu, 05 Mar 2026 20:45:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1jN3VOX3cyOEowd3E5SFB2NXdCWUpCVlVlR0hoZW94bEJyeFhJaWRnYUZ5Z1dtR0lyeUp0UjJLZmZhd2pETnJFZDVnNlVkbUVKUFdxX3BPcVpSajZjOEs5WXpwQjU5SW4tTkk4SQ</guid></item></channel></rss>
