@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>网文作家遇职业危机！AI写作48小时生成500万字长篇小说 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107745.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>华为昇腾、阿里平头哥、沐曦、壁仞：四大国产GPU可以在一起了！ - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107751.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月8日消息，上海人工智能实验室（上海AI实验室）官方宣布，基于此前的DeepLink混训技术方案、跨千公里多智算中心长稳混训千亿参数大模型，正式推出&lt;span&gt;&lt;strong&gt;DeepLink多元算力混合推理加速方案，实现了对华为昇腾、沐曦、阿里平头哥、壁仞等多款国产GPU芯片的混合调度与协同推理。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据悉，DeepLink混推方案基于统一推理中间件、低时延通信、智能流量路由、策略求解器等原创技术，不仅可对多款芯片混合调度与协同推理，性能也大幅提升，&lt;strong&gt;对比单一芯片方案，推理时延TTFT最大可优化34.5％，推理吞吐最大可提升32％。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260308/dde20cb4-ba63-4562-abd8-e0bbc2da1d49.png" target="_blank"&gt;&lt;img alt="华为昇腾、阿里平头哥、沐曦、壁仞：四大国产GPU可以在一起了！" h="410" src="//img1.mydrivers.com/img/20260308/Sdde20cb4-ba63-4562-abd8-e0bbc2da1d49.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;近些年，国产AI GPU如雨后春笋，性能越来越强，但一方面都是各自为战，另一方面大模型推理技术也需要深入优化和提升。&lt;/p&gt;
+&lt;p&gt;上海AI实验室在国产GPU异构算力中，运用了&lt;strong&gt;预填充-解码分离（PD分离）策略&lt;/strong&gt;，验证了混合芯片高效协同推理的路径。&lt;/p&gt;
+&lt;p&gt;同一数据中心内不同规格属性的GPU芯片组合优化使用，可以形成最具性价比的异构算力配比。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;具体实现上，上海AI实验室通过四大原创技术底座，实现了对异构算力资源的兼容调度。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;推理中间件（DLInfer）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以标准化融合算子接口打通上层框架与底层硬件壁垒，实现算法模型在多元硬件上的统一推理，降低应用门槛。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;高速通信库（DLSlime）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;全面兼容各类主流物理连接协议，实现跨架构设备高速互联，核心场景带宽利用率突破97％；具有较强的异步处理能力，可实现计算与通信的重叠。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;智能流量路由系统（DLRouter）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;支持KVCache感知的请求路由，最大限度减少重复或重叠请求，节省计算资源，实现分布式集群负载均衡分配。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;策略求解器（DLSolver）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;自动获取异构芯片全方位评测数据，结合模型配置以及用户服务等级目标等输入，匹配最优PD分离配置策略，兼顾推理性能与成本。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260308/d4cf7ade-b773-474f-92ac-26c3d7389f85.png" target="_blank"&gt;&lt;img alt="华为昇腾、阿里平头哥、沐曦、壁仞：四大国产GPU可以在一起了！" h="261" src="//img1.mydrivers.com/img/20260308/Sd4cf7ade-b773-474f-92ac-26c3d7389f85.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260308/c368764cbf1e47d9a6712571ee6b3c46.png" target="_blank"&gt;&lt;img alt="华为昇腾、阿里平头哥、沐曦、壁仞：四大国产GPU可以在一起了！" h="488" src="//img1.mydrivers.com/img/20260308/s_c368764cbf1e47d9a6712571ee6b3c46.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;单一算力平台推理加速方面，可以实现在华为昇腾A2上，针对千卡规模下的化学数据生成场景，吞吐率提升61.9％；在沐曦曦云C500上，MinerU多模态生成推理加速60％。&lt;/p&gt;
+&lt;p&gt;多款国产GPU芯片的深度混合调度与协同推理方面，&lt;strong&gt;&lt;span&gt;千卡规模推理集群实测数据表明，在多模态生成、高并发智能服务等典型场景下，比单芯片方案推理时延TTFT最大可优化34.5％；&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;在科学论文处理等长输入短输出推理任务中，推理吞吐可提升32％。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260308/b6bb44d2-1ba2-4dee-acf2-6e34545b137c.jpg" target="_blank"&gt;&lt;img alt="华为昇腾、阿里平头哥、沐曦、壁仞：四大国产GPU可以在一起了！" h="492" src="//img1.mydrivers.com/img/20260308/Sb6bb44d2-1ba2-4dee-acf2-6e34545b137c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;值得一提的是，除了以上四家，&lt;strong&gt;寒武纪、燧原科技、天数智芯、无问芯穹、商汤科技、中科曙光等&lt;/strong&gt;也都是上海AI实验室和DeepLink技术方案的合作伙伴。&lt;/p&gt;
+&lt;p&gt;相信会看到越来越多的国产GPU并肩战斗！&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;/p&gt;
+&lt;p&gt;DeepLink官网：&lt;a class="f14_link" href="https://deeplink.org.cn/home" target="_blank"&gt;https://deeplink.org.cn/home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DeepLink Github：&lt;a class="f14_link" href="https://github.com/DeepLink-org" target="_blank"&gt;https://github.com/DeepLink-org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DLInfer仓库：&lt;a class="f14_link" href="https://github.com/DeepLink-org/dlinfer" target="_blank"&gt;https://github.com/DeepLink-org/dlinfer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DLSlime仓库：&lt;a class="f14_link" href="https://github.com/DeepLink-org/DLSlime" target="_blank"&gt;https://github.com/DeepLink-org/DLSlime&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260308/dd2f08e4f107424988de49c9b27eaf94.png" target="_blank"&gt;&lt;img alt="华为昇腾、阿里平头哥、沐曦、壁仞：四大国产GPU可以在一起了！" h="310" src="//img1.mydrivers.com/img/20260308/s_dd2f08e4f107424988de49c9b27eaf94.png" w="600"&gt;&lt;/a&gt;&lt;br&gt;
+DeepLink合作伙伴&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 08 Mar 2026 07:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1pejVCVG5FRVZZZ2M0TmlseDIzT0NwcU16YWdQUTB1RGRPeThNRDFiSVUweWhRa2pyREZWclkxVEFVdzBNRnFXQ0ZlVUZleGxuUTlwa1J0ZWY</guid></item><item><title>黄仁勋：AI智能体将会彻底改造软件 笨软件将消失 - 3DM</title><link>https://www.3dmgame.com/news/202603/3939222.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;黄仁勋：AI智能体将会彻底改造软件 笨软件将消失&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2026-03-08 14:56:03&lt;/span&gt;&lt;/p&gt;
+            &lt;ul class="intem"&gt;
+                                &lt;li&gt;来源：&lt;span class="weibo"&gt;3DM整理&lt;/span&gt;&lt;/li&gt;
+                                                &lt;li&gt;作者：&lt;span class="name"&gt;快科技&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;newtype2001&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2026/0308/1772952958963.png" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	英伟达CEO黄仁勋近日在摩根士丹利科技大会上发表核心观点，认为软件行业当前正迎来一场深刻的“智能体化”变革。
+&lt;/p&gt;
+&lt;p&gt;
+	黄仁勋指出，未来的软件将不再是静态工具，而是具备智能决策与自主执行能力的AI智能体，传统以功能为核心、依赖人工操作的“笨”软件将逐步退出市场。
+&lt;/p&gt;
+&lt;p&gt;
+	在这一趋势下，各类软件企业也将向智能体公司转型，通过自研微调的开源大模型与成熟的闭源大模型相结合，推动软件系统实现全自动化运作，彻底打破传统软件的功能局限。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772952954_113916.png" alt="黄仁勋：AI智能体将会彻底改造软件 笨软件将消失"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	伴随技术形态的转变，商业模式也将迎来根本性重塑。黄仁勋强调，未来的软件公司将不再依赖传统的许可证授权模式，而是转向基于成果的智能服务，通过出租“专业智能体”为客户完成具体工作，核心营收方式变为按Tokens租赁。
+&lt;/p&gt;
+&lt;p&gt;
+	黄仁勋表示，如同企业当前通过正式员工与外包人员协同完成任务的灵活机制，未来的智能系统也将高效调配自有模型与租赁模型，以最优方式执行各类业务需求。
+&lt;/p&gt;
+&lt;p&gt;
+	这一商业模式的升级，不仅将驱动软件企业实现更大规模的发展，也得到了业内越来越多从业者的认同与关注。
+&lt;/p&gt;                                &lt;/div&gt;
+                                                        &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 08 Mar 2026 06:56:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFBJaW1EZlRzdXlOQkI1QXQ1amVXYU1zeWFQbEthMThvSXVaQldvZUMzZjJUT3czSjRfcWdzRGxrNC1XNmhpNFVTYUZZcEJwMUdLT1FrWDRNRjJSRS1R</guid></item><item><title>网文作家遇职业危机！AI写作48小时生成500万字长篇小说 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107745.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;网文作家遇职业危机！AI写作48小时生成500万字长篇小说&lt;/p&gt;
           
@@ -1390,129 +1483,4 @@ Pro以及将来的PS6将是游玩《GTA6》的最佳主机平台。
 &lt;p&gt;　　2月28日，美国和以色列对伊朗发动空袭。埃隆·马斯克（Elon Musk）旗下的美国航天科技公司SpaceX早已卷入其中，备受关注与争议。&lt;/p&gt;
 &lt;p&gt;　　3月初，有批评人士谴责美国在对伊朗的袭击中使用了集成星链（Starlink）终端的自杀式武器。对此，马斯克在其控股的社交平台X上迅速否认，声称“用星链终端连接武器系统违反商业服务条款。一旦发现违规行为，服务将立即终止”；他还特意澄清，美国政府自主运营一个名为“星盾”（Starshield）的卫&lt;a href="https://s.ccxe.com.cn/entities/companies/20103330527?originReferrer=pcarticle" target="_blank"&gt;星网&lt;/a&gt;络，后者并不受SpaceX控制。&lt;/p&gt;
       &lt;/div&gt;
-     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新周刊</author><pubDate>Sat, 07 Mar 2026 10:00:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5fdE9UejY5WHZEVHQ0bmZtQ0JiQ3pVLVhBU0loeFAybTJ4LTQ1NTRYdjUyMm1jc3k1Y19TZmlGbkRDelZuWTJCVGM0VVlJMi1jaUdTQkYxVllCMTRNLXUwag</guid></item><item><title>中国公安机关查处盗版漫画网站运营者 日方检举 - 共同网</title><link>https://china.kyodonews.net/articles/-/7688</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body__inner"&gt;
-    
-								&lt;p&gt;　　【共同社3月7日电】日本的动画制作公司及出版社等加盟的“文化产品海外流通促进机构”（CODA）6日发布消息称，在中国运营盗版漫画网站的一名男子已被中国公安机关查处，理由是涉嫌违反《著作权法》。CODA此前锁定该男子并提出了刑事检举。&lt;/p&gt;
-								&lt;p&gt;　　CODA已于6日在东京举行活动报告会介绍称，上述网站被认为是全球最大规模盗版网站，造成的损失估计约达7700亿日元（约合人民币337亿元）。&lt;/p&gt;
-								&lt;p&gt;　　据CODA介绍，该男子至少从2018年起运营盗版网站，包括约60个类似网站在内，未经授权传播了翻译成50多种语言的日本、韩国、中国的漫画等作品。相关网站截至今年1月已全部关闭。（完）&lt;/p&gt;
-							
-  &lt;/div&gt;
-  
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>共同网</author><pubDate>Sat, 07 Mar 2026 09:37:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE04VHpMZFNXM0pBclBTZURxNEpic1YtQV9ONDRhNUxaTVlvTTBWZHJBR2hHYzAwV2c0cUc1dndmN0ZXbzVPdzBxZE4wSmEzRzdkRVg0RG5n</guid></item><item><title>分析师认为“Helix计划”将会是微软硬件的最后一搏 - 3DM</title><link>https://www.3dmgame.com/news/202603/3939203.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
-        &lt;div class=" news_warp_top"&gt;
-            &lt;h1 class="bt"&gt;分析师认为“Helix计划”将会是微软硬件的最后一搏&lt;/h1&gt;
-            &lt;p class="time"&gt;时间：&lt;span&gt;2026-03-07 17:33:38&lt;/span&gt;&lt;/p&gt;
-            &lt;ul class="intem"&gt;
-                                &lt;li&gt;来源：&lt;span class="weibo"&gt;3DM编译&lt;/span&gt;&lt;/li&gt;
-                                                &lt;li&gt;作者：&lt;span class="name"&gt;3DM&lt;/span&gt;&lt;/li&gt;
-                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;newtype2001&lt;/span&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-                        &lt;p class="clear"&gt;&lt;/p&gt;
-        &lt;/div&gt;
-                    
-&lt;p class="Tonglan_785"&gt;
-    
-    &lt;i&gt;&lt;/i&gt;
-&lt;/p&gt;
-                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2026/0307/1772853199189.jpg" id="coverUrl"&gt;
-                &lt;div class="news_warp_center"&gt;
-            &lt;p&gt;
-	对于Xbox粉丝来说，过去数周的经历堪称跌宕起伏：从效力近40年的菲尔·斯宾塞离任，到昨日神秘的“Helix计划”正式公布。但我们由衷希望，这一切都标志着微软游戏部门即将迎来光明的未来。
-&lt;/p&gt;
-&lt;p&gt;
-	倘若事与愿违，“Helix计划”最终折戟，Xbox硬件业务或许将彻底没有未来——日本游戏行业咨询公司Kantan 
-Games的创始人兼首席执行官、行业分析师塞尔坎·托托博士，正是持这一观点。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260307/1772853192_697519.jpg" alt="分析师认为“Helix计划”将会是微软硬件的最后一搏"&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	在“Helix计划”公布后，托托接受了采访，首先阐释了他眼中微软此举的最终目标。他表示：“这或许是微软为盘活自身硬件业务做出的最后一次尝试。”
-&lt;/p&gt;
-&lt;p&gt;
-	“我认为，业内没有人会相信，如果这款下一代主机失败，Xbox还会推出后续机型。”托托表示，因此在他看来，“Helix计划”的成功与否，对整个Xbox品牌的未来都有着决定性意义。
-&lt;/p&gt;
-&lt;p&gt;
-	想要实现顺利首发绝非易事，毕竟它将直面激烈的市场竞争，其中就包括即将推出的Steam主机。这是Valve针对“主机与PC之争”给出的答案，实现了二者的独特融合，也是Xbox必须实现超越的目标。
-&lt;/p&gt;
-&lt;p&gt;
-	托托直言：“Helix计划必须给Xbox粉丝一个放弃Steam主机、选择它的核心理由，而唯一的实现路径，就是为Xbox游戏提供更完善、更广泛的原生支持。”
-&lt;/p&gt;
-&lt;p&gt;
-	“凭借‘万物皆可Xbox’的战略，微软长期以来一直如履薄冰。如今，他们必须拿出全新的方案，来推动自家硬件的销售。”在我看来，这个逻辑完全成立——毕竟当下的游戏市场，竞争本就残酷无比。
-&lt;/p&gt;
-&lt;p&gt;
-	随后，托托也对Xbox新任首席执行官阿莎·夏尔马发表了看法。这位新任负责人并无游戏行业从业背景，核心履历集中在人工智能领域。
-&lt;/p&gt;
-&lt;p&gt;
-	托托表示：“我预计，夏尔马很快就会摒弃上述战略，拼尽全力，再一次在硬件业务上放手一搏。”谈及这位Xbox新任掌门人时，他还补充道：“她暗示Xbox必须彻底推倒重建，我认为这个方向是完全正确的。”在我看来，这无疑是一道极难跨越的关卡。
-&lt;/p&gt;
-&lt;p&gt;
-	Xbox“Helix计划”最终走向何方，唯有时间能给出答案——毕竟官方称其为“Xbox的王者归来”。但无论结果如何，不可否认的是，它将对微软游戏品牌的整体未来，起到至关重要的作用。
-&lt;/p&gt;                                &lt;/div&gt;
-                                                        &lt;a class="zan_box"&gt;
-                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
-                &lt;span class="znums"&gt;0&lt;/span&gt;
-            &lt;/a&gt;
-                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
-
-                                        
-                        
-                                
-        
-                
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sat, 07 Mar 2026 09:33:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE80NHphZklVYkZhOHlKSFJWWnVxcGQ3VEdFWjlMcFU5b25jSFRlQm4tNndPM0l3eGtheU5YYTFib3ZQcU5tRGM3QXd0aERaTlNiUDZLc0MxZDl3ckVO</guid></item><item><title>前育碧开发者：公司已被千夫所指 但并非难以重回巅峰 - 3DM</title><link>https://www.3dmgame.com/news/202603/3939202.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
-        &lt;div class=" news_warp_top"&gt;
-            &lt;h1 class="bt"&gt;前育碧开发者：公司已被千夫所指 但并非难以重回巅峰&lt;/h1&gt;
-            &lt;p class="time"&gt;时间：&lt;span&gt;2026-03-07 17:21:37&lt;/span&gt;&lt;/p&gt;
-            &lt;ul class="intem"&gt;
-                                &lt;li&gt;来源：&lt;span class="weibo"&gt;3DM编译&lt;/span&gt;&lt;/li&gt;
-                                                &lt;li&gt;作者：&lt;span class="name"&gt;3DM&lt;/span&gt;&lt;/li&gt;
-                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;newtype2001&lt;/span&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-                        &lt;p class="clear"&gt;&lt;/p&gt;
-        &lt;/div&gt;
-                    
-&lt;p class="Tonglan_785"&gt;
-    
-    &lt;i&gt;&lt;/i&gt;
-&lt;/p&gt;
-                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2026/0307/1772852774777.jpg" id="coverUrl"&gt;
-                &lt;div class="news_warp_center"&gt;
-            &lt;p&gt;
-	育碧的一位资深开发者表示，很难想象公司能重回佳作连发的黄金时代，但对于这家《刺客信条》系列的发行商而言，并非全无希望。
-&lt;/p&gt;
-&lt;p&gt;
-	一位匿名的育碧员工近日接受了游戏媒体采访，谈及了这家发行商是如何从每年推出多款口碑佳作，沦落到如今的境地：仅今年一年，育碧就关停了两家工作室、取消了六个游戏项目（其中包括玩家期待已久的《波斯王子》重制版），还有更多项目遭遇延期。
-&lt;/p&gt;
-&lt;p&gt;
-	“无法识别并修正这种开发工作陷入恶性循环的模式，是育碧管理层的失职。”这位匿名开发者直言，“时至今日，没有人为这一失误承担责任，后果却全由开发团队承担——团队内部架构被拆解，最终迎来裁员。而高层管理者却毫发无损，在这场大规模业务调整中，他们问责了所有人，唯独没有反思自己。”
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260307/1772852770_973980.jpg" alt="前育碧开发者：公司已被千夫所指 但并非难以重回巅峰"&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	他们补充道：“十年来推出的作品屡屡让玩家失望，育碧如今被大量玩家所诟病;多年的管理失当，让它被自家众多开发者所不满;糟糕的内容策划与财务规划，也让它被市场所抛弃。在各方都积攒了如此多不满的情况下，很难想象育碧还能再推出爆款大作……很难，但绝非毫无可能。”
-&lt;/p&gt;
-&lt;p&gt;
-	这位资深开发者精准地指出了近期外界对育碧的普遍态度，但也承认，仍有诸多理由让人们对这家公司的未来“抱有期待”。最重要的是，育碧麾下仍有大量才华横溢的开发者，如今“公司的架构调整旨在解决过往的问题，管理层也重新有了紧迫感，开始重视对创新内容的扶持”。
-&lt;/p&gt;
-&lt;p&gt;
-	人们很容易忘记，这家公司曾一度既能推出《刺客信条》《孤岛惊魂》以及多款汤姆·克兰西系列等重磅爆款，也能打造《光之子》《雷曼：传奇》《勇敢的心：世界大战》这类体量更小、更具实验性的作品，且所有作品均收获了业界的一致好评。但愿这家发行商能重回自己的黄金时代，而《刺客信条：暗影》，无疑是一个不错的开端。
-&lt;/p&gt;                                &lt;/div&gt;
-                                                        &lt;a class="zan_box"&gt;
-                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
-                &lt;span class="znums"&gt;0&lt;/span&gt;
-            &lt;/a&gt;
-                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
-
-                                        
-                        
-                                
-        
-                
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sat, 07 Mar 2026 09:21:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE9ZNkhWWTZJM3dydEtaRDBDNHZnSXJqUVhWdTFWRkg3d0Z1cDVDd3d1ZWcwbWFvLVpKaXZ5WU84YU14ZG8tU1dyWTZ1Y05fMXc5Tkh5dWJ6and0dTJV</guid></item></channel></rss>
+     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新周刊</author><pubDate>Sat, 07 Mar 2026 10:00:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5fdE9UejY5WHZEVHQ0bmZtQ0JiQ3pVLVhBU0loeFAybTJ4LTQ1NTRYdjUyMm1jc3k1Y19TZmlGbkRDelZuWTJCVGM0VVlJMi1jaUdTQkYxVllCMTRNLXUwag</guid></item></channel></rss>
