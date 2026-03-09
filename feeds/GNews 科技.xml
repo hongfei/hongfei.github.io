@@ -920,7 +920,94 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 07:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE44TXdrcVl2VllLdm0wLWpTekJxeFhNNnhaQ0dMcms0X0pBc0hWckFrcHl1VzdFV1VjYUdnSWFQcHZDc3FPalp6YlloZXZxU2toZGxGS004clE</guid></item><item><title>上海科技馆机器人表演翻车机器人被机械臂谋杀掉在地上四分五裂-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107916.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 07:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE44TXdrcVl2VllLdm0wLWpTekJxeFhNNnhaQ0dMcms0X0pBc0hWckFrcHl1VzdFV1VjYUdnSWFQcHZDc3FPalp6YlloZXZxU2toZGxGS004clE</guid></item><item><title>卡帕西开源Agent自进化训练框架，5分钟一轮实验，48h内揽星9.5k - qbitai.com</title><link>https://www.qbitai.com/2026/03/384953.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="wx_img"&gt;
+        &amp;lt; img id="wx_img" src="https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png" width="400" height="400"&amp;gt;
+        
+    &lt;/p&gt;
+
+
+      
+                    
+        	&lt;div class="article"&gt;
+				     &lt;h1&gt;卡帕西开源Agent自进化训练框架，5分钟一轮实验，48h内揽星9.5k&lt;/h1&gt;
+    			   &lt;div class="article_info"&gt;
+             &lt;span class="author"&gt;&lt;img src="http://www.qbitai.com/wp-content/themes/liangziwei/imagesnew/head.jpg" class="avatar avatar-200"&gt;&lt;em&gt;&lt;a href="https://www.qbitai.com/author/wenyue" title="由 闻乐 发布" rel="author"&gt;闻乐&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;
+                          &lt;span class="date"&gt;2026-03-09&lt;/span&gt;
+             &lt;span class="time"&gt;15:46:46&lt;/span&gt;
+          &lt;span class="from"&gt;
+          来源：&lt;a href="https://www.qbitai.com" target="blank" rel="nofllow"&gt;量子位&lt;/a&gt;            &lt;/span&gt;&lt;/div&gt;
+                          
+                            			&lt;p data-track="2"&gt;大神Karpathy又开源了新项目——一个能够&lt;strong&gt;自主进化的AI科研循环系统&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="3"&gt;这个项目名叫&lt;strong&gt;autoresearch&lt;/strong&gt;，主打让智能体完全自主地搞科研，只要在Markdown文档里写好指令，剩下的流程全都由AI自动完成。&lt;/p&gt;
+&lt;p data-track="4"&gt;而且整个框架十分精简，一共只有630行代码，&lt;strong&gt;单个GPU就能跑得动&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p data-track="5"&gt;它每5分钟就会跑一轮测试，并根据验证结果决定是保留还是丢弃改动，就像一个24小时从不休息且能自我进化的虚拟研究员。&lt;/p&gt;
+&lt;p data-track="6"&gt;Karpathy还希望，未来能让成千上万个智能体在海量分支里异步协作，不再受限于单一的master分支，从而通过群体智慧实现科研效率的爆发。&lt;/p&gt;
+&lt;p data-track="7"&gt;发布才不到两天，autoresearch斩获的星标数就已经超过了9.5k。&lt;/p&gt;
+
+&lt;p data-track="8"&gt;在X上，Karpathy的帖子也有580多万次围观。&lt;/p&gt;
+
+&lt;p data-track="9"&gt;Shopify CEO看了Karpathy的项目之后表示膜拜，直言这个项目实在是太疯狂了。&lt;/p&gt;
+
+&lt;h1 class="pgc-h-forward-slash" data-track="10"&gt;5分钟自动化实验&lt;/h1&gt;
+&lt;p data-track="11"&gt;autoresearch这个项目的思路非常简单，就是把AI训练的循环试错自动化。&lt;/p&gt;
+&lt;p data-track="12"&gt;AI自己修改代码、跑5分钟的短实验、看效果好不好再决定下一步怎么走。&lt;/p&gt;
+&lt;p data-track="13"&gt;基于nanochat模型训练核心，定了两条铁律：&lt;/p&gt;
+&lt;p data-track="14"&gt;一是每次实验的&lt;strong&gt;纯训练时间固定为5分钟&lt;/strong&gt;，避免因为不同改动下的训练时长不同而影响结果；&lt;/p&gt;
+&lt;p data-track="15"&gt;二是&lt;strong&gt;只看val_bpb&lt;/strong&gt;，这个指标的数值越低，就代表模型效果越好，而且它和模型的大小无关。&lt;/p&gt;
+&lt;p data-track="16"&gt;这样就把训练逻辑浓缩成了单GPU就能跑的版本，代码也就630行。&lt;/p&gt;
+&lt;p data-track="17"&gt;一眼看过去，整个代码库就靠三个核心文件——&lt;/p&gt;
+&lt;p data-track="18"&gt;设置好后全程不用动的prepare.py；需要AI自己改的train.py；只有人类能改的program.md。&lt;/p&gt;
+
+&lt;p data-track="19"&gt;prepare.py用于定义训练的固定常量，比如模型基础维度、下载模型训练需要的原始数据、训练适配的分词器等，同时还提供实验过程中需要的工具。&lt;/p&gt;
+
+&lt;p data-track="20"&gt;train.py是AI唯一可以编辑、修改的文件，相当于AI的实验笔记本。&lt;/p&gt;
+&lt;p data-track="21"&gt;这里面装着模型训练的所有核心内容，有完整的GPT架构、训练用的优化器以及整个训练循环逻辑。&lt;/p&gt;
+&lt;p data-track="22"&gt;AI能在这个文件里改的内容包括模型的层数、训练的批次大小、学习率、权重衰减等等。&lt;/p&gt;
+&lt;p data-track="23"&gt;所有和训练相关的调整，都集中在这个文件里，既然AI的修改范围可控，也方便人类后续回看到底改了哪里。&lt;/p&gt;
+
+&lt;p data-track="24"&gt;program.md是一个纯文本文件，由人类编写修改，里面是给AI的基线指令，比如研究方向、实验规则、参考依据等。&lt;/p&gt;
+&lt;p data-track="25"&gt;AI启动实验之前，会先读取这个文件的指令，再开始修改train.py跑实验。&lt;/p&gt;
+&lt;p data-track="26"&gt;如果想换研究方向，也不用去碰复杂的训练代码，只需要更新这个文件里的指令就行。&lt;/p&gt;
+
+&lt;p data-track="27"&gt;搞懂了核心原理和3个文件，就很容易理解autoresearch的工作流程了。&lt;/p&gt;
+&lt;p data-track="28"&gt;整个过程就是AI按照人类的指令，在5分钟实验规则下，反复完成修改、训练、评估、决策。&lt;/p&gt;
+&lt;p data-track="29"&gt;人类在program.md里写好实验指令，然后启动框架，AI会首先读取这些指令，在train.py里做针对性的修改，通常每次只改1到2个地方。&lt;/p&gt;
+&lt;p data-track="30"&gt;修改完成后，AI会自动启动训练程序，严格遵守框架设定的规则，纯训练时间固定为5分钟，时间一到，训练结束，框架会自动用val_bpb指标给这次的模型打分。&lt;/p&gt;
+&lt;p data-track="31"&gt;根据打分结果作出决策，如果这次的val_bpb分数更低，说明模型进步了，AI就会保留这次对train.py的修改，把这个版本作为下一次实验的基础；&lt;/p&gt;
+&lt;p data-track="32"&gt;如果数值变高了，说明这次的修改是无效的，甚至起了反作用，AI就会果断放弃这次的改动，回到上一个表现最好的版本，重新思考改动方向。&lt;/p&gt;
+&lt;p data-track="33"&gt;完成这一轮判断后，它会立刻开始下一次实验。&lt;/p&gt;
+&lt;p data-track="34"&gt;按照5分钟一次计算，AI一小时能完成10来组实验，这个效率是人类手搓达不到的。&lt;/p&gt;
+
+&lt;p data-track="35"&gt;上图展示了一次近250轮的自主探索，AI最终筛选并保留了29次有效的优化改进。&lt;/p&gt;
+&lt;p data-track="36"&gt;图中灰色点代表被AI判定为无效而舍弃的实验结果，虽然没有带来提升，但也提供了避坑经验。&lt;/p&gt;
+&lt;h1 class="pgc-h-forward-slash" data-track="37"&gt;下一步：模拟整个博士社群&lt;/h1&gt;
+&lt;p data-track="38"&gt;把autoresearch公开出来之后，卡帕西还在X上畅享了下一步的发展方向。&lt;/p&gt;
+&lt;p data-track="39"&gt;他借用UC伯克利在1999年发起的&lt;strong&gt;SETI@home&lt;/strong&gt;项目表示，autoresearch未来的目标不仅是模拟一个博士生的科研过程，还要&lt;strong&gt;模拟整个博士生研究社群&lt;/strong&gt;。&lt;/p&gt;
+&lt;p data-track="40"&gt;SETI@home全称为“Search for Extraterrestrial Intelligence at Home”，核心目标是通过分析射电望远镜收集到的海量无线电信号，寻找可能存在的地外文明迹象。&lt;/p&gt;
+&lt;p data-track="41"&gt;由于分析这些数据需要极其庞大的计算量，远超当时科研机构所能负担的计算机成本，项目组由此开创了分布式计算的新模式。&lt;/p&gt;
+&lt;p data-track="42"&gt;在这个模式下，全球各地的志愿者只需在自己的电脑上安装一个特定的屏保程序，系统就会在计算机闲置时利用其剩余的CPU算力来处理从阿雷西博天文台传回的数据片段。&lt;/p&gt;
+
+&lt;p data-track="43"&gt;Karpathy之所以拿它作比喻，正是看中了这种&lt;strong&gt;“大规模、分布式、异步”&lt;/strong&gt;的特质，这种去中心化的智慧集成正是未来AI社区的雏形。&lt;/p&gt;
+&lt;p data-track="44"&gt;他认为，现在的研究Agent依然局限在单一的、同步发展的线性思路之中，但这种模式极大限制了AI的潜力。&lt;/p&gt;
+&lt;p data-track="45"&gt;在他的理想当中，autoresearch的发展路径应该是让原始代码仓库像种子一样，向各个不同的研究方向和计算平台伸展出无数分支，形成像SETI@home一样的分布式、群体式的探索态势。&lt;/p&gt;
+&lt;p data-track="46"&gt;Karpathy进一步指出，这种局限性在很大程度上源于我们对Git和GitHub的使用惯性。&lt;/p&gt;
+&lt;p data-track="47"&gt;具体而言，现有的版本管理系统几乎都建立在一个默认假设之上，即必须存在一个绝对权威的master分支，而所有的branch和PR都只是暂时的偏离，最终其宿命都是要merge回主干。&lt;/p&gt;
+&lt;p data-track="48"&gt;这种设计逻辑在管理软件代码时固然高效，但在面对需要海量、非线性探索的自动化研究时，却成了一种制度性的束缚。&lt;/p&gt;
+&lt;p data-track="49"&gt;因为它强行要求所有多样化的研究路径最终必须归于一个唯一的标准答案。&lt;/p&gt;
+
+&lt;p data-track="50"&gt;为了验证打破这种僵局的可能路径，Karpathy进行了一些实验性的探索。&lt;/p&gt;
+&lt;p data-track="51"&gt;他尝试让智能体在完成通宵运行后，将研究总结发布在GitHub的Discussion板块，或者通过PR提交精确的commits变动。&lt;/p&gt;
+&lt;p data-track="52"&gt;他在实验中意识到，这些PR可能永远不需要被正式merge，但它们作为独立的研究分支有效地积累了下来。&lt;/p&gt;
+&lt;p data-track="53"&gt;在这一流程中，智能体还会利用GitHubCLI读取已有的讨论和记录来获取灵感，再将新的发现反馈回社区。&lt;/p&gt;
+&lt;p data-track="54"&gt;总之，比起强行维护一个完美的master分支，让智能体在无数个branch中自由探索、互相启发并沉淀结果，可能才是更符合AI特性的科研姿态。&lt;/p&gt;
+&lt;p data-track="55"&gt;这本质上是在探索一种更适合AI高频产出的协作方式，让科研过程从传统的“写软件”逻辑，转向更灵活的“攒经验”逻辑。&lt;/p&gt;
+&lt;p data-track="58"&gt;— 完 —&lt;/p&gt;
+                
+                
+                &lt;p class="line_font"&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;版权所有，未经授权不得以任何形式转载及使用，违者必究。&lt;/em&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+     		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>qbitai.com</author><pubDate>Mon, 09 Mar 2026 07:46:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE83VEJTbEtya2VNUnJBbDloRDNna0RqM19IQm9yV2FQWlktSkxGVDB3SVV4d2Z5RXhKejJjdEVLMmJkaktZTmVwNGM4WXU1Vk9hLWZQWA</guid></item><item><title>上海科技馆机器人表演翻车机器人被机械臂谋杀掉在地上四分五裂-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107916.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;上海科技馆机器人表演翻车 机器人被机械臂谋杀 掉在地上四分五裂&lt;/p&gt;
           
@@ -2592,7 +2679,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 02:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9fRGtTYl9BZHlNTFJaRlRmaWpyVDZER1prMWJkamNqOWc2aHZlMVU2NmJDSzVVUk56bjc3TjRWOVFheU1PQXJrQkRjWmozV01aS0g3LTFZaVA</guid></item><item><title>D加密重大更新：多层次系统检测机制 堵死虚拟机运行 - 3DM</title><link>https://www.3dmgame.com/news/202603/3939269.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 02:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9fRGtTYl9BZHlNTFJaRlRmaWpyVDZER1prMWJkamNqOWc2aHZlMVU2NmJDSzVVUk56bjc3TjRWOVFheU1PQXJrQkRjWmozV01aS0g3LTFZaVA</guid></item><item><title>天然气仅够到3月？郑丽文：民进党能源政策让台湾“快要断气” - 凤凰网</title><link>https://news.ifeng.com/c/8rLd9p1Z0Du</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;【环球网报道】据台湾中时新闻网3月8日报道，国民党主席郑丽文8日至屏东新春团拜，其间她提及民进党“反核”、“台独”主张害惨台湾，尤其是去年硬把核电厂关闭，如今又说要重启，“根本在骗台湾人”。她还表示，现在伊朗在打仗，台行政机构负责人卓荣泰说台湾的天然气储存只能到3月，“现在就是3月，（台湾）快要断气了”。&lt;/p&gt;&lt;p&gt;&lt;img alt="郑丽文 资料图 图源：中时新闻网" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/BF5BE7CD9BB624C6E416FCD3E8900D2FD6A2FE4B_size198_w564_h415.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;据报道，郑丽文8日出席国民党屏东县党部新春团拜，除向国民党党员拜晚年外，再次批评民进党。她称，民进党有两个“神主牌”，一个叫作“反核”，去年为所谓“非核家园”把所有核电厂都关闭，但今年才到3月又说要重启第三核能发电站，根本就是在骗人。&lt;/p&gt;&lt;p&gt;郑丽文气愤地说，全世界都要核能，因为这是最稳定、安全、干净的电，全世界也都在告诉民进党，没有电就没有高科技、AI产业，也就没有竞争力。民进党为了“神主牌”不惜破坏台湾的能源安全，外资不敢投资台湾，如今后悔了却一句道歉都没有。&lt;/p&gt;&lt;p&gt;她还提到，大家都知道伊朗在打仗，卓荣泰告诉大家，台湾天然气的储存只能到3月，“现在就是3月，快要断气了”，因为“反核”，台湾地区未来就要愈来愈依赖天然气，也就是说，台湾的未来将愈来愈危险。&lt;/p&gt;&lt;p&gt;“连中东打仗台湾都会‘断气’，民进党是什么‘政府’？”郑丽文再次怒批，民进党早已失去民心，赖清德在选举中只拿到四成选票，现在只剩下奥步（不好的招数）。郑丽文质疑，台湾因为民进党“反核”、“台独”这两个“神主牌”付出了多少代价，民进党一天到晚用这个制造台湾内部的对立，实在得不偿失。&lt;/p&gt;&lt;p&gt;中东战火蔓延，岛内高度担忧“断气”。根据台经济部门能源署的统计数据，在2025年12月台湾原油进口来源中，沙特阿拉伯占比40.63%居首、科威特16.98%、美国21.05%、阿联酋12.13%、卡塔尔8.67%。换言之，一旦霍尔木兹海峡遭封锁，台湾原油进口来源合计约78%都在危险范围。天然气方面，台湾液化天然气进口来源以澳大利亚居首，占38.22%；卡塔尔居次，占30.32%。其中卡塔尔高度依赖霍尔木兹海峡出口。&lt;/p&gt;&lt;p&gt;有岛内舆论直言，对于高度依赖进口能源的台湾而言，任何航道危机都可能迅速放大为产业和民生冲击。霍尔木兹海峡的烽火，照出了台湾在能源、金融、供应链与地缘政治上的每一条裂缝。台湾《联合报》称，在现今战云密布的当口，各种能源短暂的缓冲期简直是命悬一线。文章称，台湾能源安全之所以陷入如此被动，核心病灶在于能源结构的极度失衡。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Mon, 09 Mar 2026 02:02:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTFBCTnFYVnRBLXZnaTc3eWJvLXNPeG54cGlZNTVzTE03NkpQbHRpdkl5akNxRWJyZXhFaC1OY25OSWJrNndHa1JtSjlhQ0c</guid></item><item><title>D加密重大更新：多层次系统检测机制 堵死虚拟机运行 - 3DM</title><link>https://www.3dmgame.com/news/202603/3939269.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
         &lt;div class=" news_warp_top"&gt;
             &lt;h1 class="bt"&gt;D加密重大更新：多层次系统检测机制 堵死虚拟机运行&lt;/h1&gt;
             &lt;p class="time"&gt;时间：&lt;span&gt;2026-03-09 10:02:45&lt;/span&gt;&lt;/p&gt;
