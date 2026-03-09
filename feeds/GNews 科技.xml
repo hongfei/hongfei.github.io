@@ -1,5 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>从上下文到长期记忆：大模型记忆工程的架构设计与实践 - InfoQ 官网</title><link>https://www.infoq.cn/article/AIVoC9eKfZhW199IQkwB</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;演讲嘉宾｜李志宇 博士&lt;/p&gt;&lt;p data-type="paragraph"&gt;策划｜QCon 全球软件开发大会&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;随着大模型在企业和行业场景中持续落地，“记忆”正在成为继参数调优和上下文工程之后的下一个工程化核心。短时遗忘、知识碎片化、跨任务信息无法留存等问题，正在限制大模型的个性化、推理链延展与持续演化能力。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;本文整理自记忆张量 CTO 李志宇博士在 2025 年 &lt;a href="https://qcon.infoq.cn/2025/shanghai/" title="xxx" data-type="link"&gt;QCon 全球软件开发大会（上海站）&lt;/a&gt;的演讲分享。志宇博士结合他多年的研发与落地实践，系统剖析&lt;a href="https://qcon.infoq.cn/2025/shanghai/presentation/6705" title="xxx" data-type="link"&gt;大模型记忆工程的核心技术&lt;/a&gt;：记忆分层管理、多粒度调度、可信更新与安全治理，并展示这些技术在金融、工业、知识管理等业务中的应用效果。通过对架构设计、实现细节和案例经验的讲解，帮助开发者与架构师全面理解如何构建具备长期留存与动态调度能力的“有记忆的 AI”，以及它在未来产业智能化演进中的角色与挑战。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;预告：将于 4 月 16 - 18 召开的 QCon 北京站设计了「&lt;a href="https://qcon.infoq.cn/2026/beijing/track/1905" title="xxx" data-type="link"&gt;记忆觉醒：智能体记忆系统的范式重塑与产业落地&lt;/a&gt;」专题，旨在重新定义企业级记忆系统的未来——聚焦非显式偏好捕捉、记忆自主演化与生命周期管理等前沿方向，探索其在高端客服、个性化助理、企业决策等场景的深层价值。敬请关注。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;strong&gt;以下是演讲实录&lt;/strong&gt;（经 InfoQ 进行不改变原意的编辑整理）。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading0"&gt;大模型性能缩放曲线的演进历史&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们公司名为“记忆张量”，单从名字便可看出，我们聚焦的是“记忆增强”——或者说“记忆优化”这一方向。去年十一月刚刚成立，不久前刚完成近亿元人民币的天使轮融资。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/d9/d9a3e14d0720dfe579e3feaf74214fcd.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;之所以选择“记忆”作为主攻点，根本原因在于我们判断：在大模型的演进史中，记忆将成为与 MCP 工具并列的下一个关键增强维度。2023 年以前，业界普遍通过扩大数据规模、参数量和训练量来换取性能提升，由此催生了千问、ChatGPT 等代表性范式。进入 2024–2025 年，人们逐渐发现，单纯堆参数与规模带来的收益开始递减，于是转向“后训练”与“推理增强”，DeepSeek-R1 便是这一阶段的典型产物。当后训练也逼近瓶颈时，Sam Altman 等人开始追问：下一步的突破口究竟在哪里？在 GPT-4 的更新日志里，OpenAI 把“全局记忆”列为令团队“兴奋到失眠”的新功能；而在 GPT-5、GPT-6 的路线图中，“记忆”与“个性化”被反复提及，被视为大模型面向应用场景的核心变量。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading1"&gt;从实践层面看记忆增强的必要性&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若把大模型业务服务做一次抽象，可自下而上划分为：底层的数据库存储与基础 AI 引擎；中间的 MCP 增强、知识库增强；最上层的业务逻辑。再将视角切换到单个用户与大模型的交互流程，就会发现其中同时存在动态与静态两类信息。所谓动态信息，指随每次查询而变化的个性化内容：用户临时贴入的参考材料、在 prompt 里约定的偏好等。查询一旦发出，模型先进行意图理解与任务规划，再进入信息增强链路——MCP 调用各类动态工具，并返回执行结果、校验信息、汇总结果；与此同时，知识库从预先处理好的企业静态知识中抽取内容，为模型提供补充。最终，响应结果既包含推理过程（think 部分），也包含知识性内容，以及用户对本次回答的点赞或点踩。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/ac/ac28928e765d24312e504b4e479991c6.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若沿着时间轴把记忆类型进一步展开，其复杂度远超直觉。假设我们在第 6 轮对话里需要引用一个月前第 2 轮的内容，又在第 5 轮里引用第 1 轮的细节，就必须保证用户在不同场景下都能准确召回、并同步更新已发生变化的记忆。再把视角拉远：大模型可能在多轮会话、多用户、多 Agent、多 App 之间穿梭，动态信息的量级与管理难度呈指数级上升。因此，我们希望在开发层面屏蔽这些复杂性，让应用开发者无需深陷动态信息的泥沼，从而显著降低落地成本。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/3d/3d643e5b480a9830bfa04478a57f3ddd.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading2"&gt;大模型记忆增强层的实现路径&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;顺着这一思路，我们把大语言模型、Agent、业务流程与用户之间抽象出一个“记忆操作层”。要实现记忆增强，业界目前大致有两条路径。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;第一条是模型增强范式：&lt;strong&gt;从模型架构与训练范式本身入手&lt;/strong&gt;，让训练后的模型对记忆具备更强的理解与编排能力。我们团队早期便尝试以记忆分层的方式建模，以提升记忆管理与唤起的效率；近期，字节跳动等机构也尝试利用强化学习来优化记忆使用范式，重点解决短期记忆与长期记忆的协同问题。这一路线可称为“基模驱动”的记忆优化。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/b6/b6876b065c55a5a51e84f12612d4c537.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;第二条则是&lt;strong&gt;面向应用层的工程实践&lt;/strong&gt;：在不动基座模型的前提下，通过通用大模型、提示工程（prompt engineering）与 Agent 工作流来模拟人类对记忆的管理过程。早期项目如 MemGPT、Mem0、Zep 等开源框架均循此思路；近期 Memories.AI 更进一步，从多模态记忆角度拓展了记忆管理框架。除这些偏开源或商业化的团队外，也有不少学术团队围绕记忆工程中的单点创新提出独立方案。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/08/086a4beaf51f8cf9eabf392910d933ac.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若将两条路线并置比较，二者几乎处于对立的两极。以基模为核心的方案，研发周期长、投入高；然而一旦在模型层面把记忆问题真正吃透，其性能天花板也最高，后续扩展几乎没有硬约束。反之，纯应用层的做法可在极短时间内搭出第一版记忆系统，且横向扩展灵活；但依赖通用基座模型与提示工程，往往很快触到性能瓶颈——从 85% 再往上走到 90%、95%，每一步都异常艰难。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/87/877dcbf8ca4af4e299d0b7aeba1faba1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;在我们看来，真正可行的路线是把“基模驱动”与“应用驱动”融合为一。具体做法是：在系统关键节点训练一系列面向记忆操作与记忆理解的小型专用模型，同时保留一套能力更强的主模型来执行整体记忆编排。这样，开发者无需深陷复杂的编排与理解细节，成本被大幅压缩。一句话概括：模型决定上限，应用夯实下限。我们坚持由模型驱动去攻克原创理论与核心算法，确保开源框架随版本迭代持续抬升性能天花板；同时，团队里既有来自高校的理论研究者，也有曾任职阿里巴巴、美团的应用算法工程师，因此在设计整套系统时，我们同样关注业务适配性与通用性，力求让前沿成果能够平滑落地到真实场景。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading3"&gt;记忆增强层落地需要做什么？&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若要把记忆管理系统真正搭建并持续优化，从系统到算法层面，需要攻克的环节远比表面看起来繁复。首先，记忆一旦进入系统，就要完成抽取、组织与检索三步闭环：抽取必须精准，组织必须高效，检索则要在极低冗余与极高精准之间取得平衡。紧接着，当信息动态更新时，必须确保用户曾提及的实体与细节被准确刷新，版本历史被完整保留，而检索时又能即时返回最新状态。最后，记忆还要在多方之间顺畅共享——不仅跨会话、跨 Agent，也跨企业组织内的不同用户。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/c0/c014af7716d20c15eb1629a228430349.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这些环节里，有些难题仅靠通用模型几乎无解。以记忆抽取为例，通用模型常出现幻觉，既可能捏造事实，也可能把 A 用户的记忆错放到 B 用户名下；而在记忆更新阶段，幻觉同样高发，稍不留神就会让旧版本与新版本混为一谈。因此，我们必须引入更精细的机制，才能在这些关键节点上守住准确性与一致性。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading4"&gt;MemOS 的核心设计思路&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;既然我们给自己定的目标是打造一套“记忆操作系统”，至少也得是 Tiny-OS 级别，那就必须像传统操作系统那样，把整体框架拆成清晰的分层。从硬件到内核再到应用，每一层都对应记忆场景里的关键问题：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/f8/f8a461049d31dc83dd8050614fffffa9.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;顺着这个思路，我们设计了五层记忆管理框架：存储、治理、调度、应用、解码。其中，治理层与调度层是市面上现有框架极少单独拆出的两层。很多人会把记忆直接塞进向量库或图数据库，我们却坚持为记忆量身定制存储层——因为我们相信，当大模型能力继续跃升、终端入口趋于统一后，传统带 GUI 的 App 形态会逐步消失。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/02/0252927665155804a8931c713e8c364d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;不妨以“时间管理”为例：今天我们要先下载一个时间管理 App，再手动录入日程；稍智能的软件能帮我们排期并提醒。但在不远的将来，人们可能不再下载 App，而是直接获取一个“时间管理记忆体”。这个记忆体已经把时间管理所需的推理逻辑与细节知识打包完毕，安装到本地通用模型后，两者联合推理即可从对话里自动抽取时间要素、生成排程，效率远高于通用模型本身。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;因此，我们把“记忆体”定义为可独立打包、下载、安装的最小单元，既可以是个人经验资产，也可以是企业知识沉淀的载体。明年年中，我们将上线“记忆交易市场”，思路类似今天的 App Store：开发者用我们提供的 SDK 把企业知识封装成记忆体并上架；终端用户按需下载安装，即可在“最后一公里”显著提升业务效能。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading5"&gt;MemOS 的系统框架&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;既然记忆已被视作个人最核心的经验资产，治理就必须在一开始就被提到最高优先级。在即将发布的 1.0 版本中，我们把记忆全生命周期管理、幻觉评估框架、水印、权限与隐私控制全部内建，力求让每一份记忆资产从诞生起就保持稳健与可信。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;再往上是调度层。之所以单独设立“记忆调度”，是因为我们坚持记忆必须分层管理——这直接源于 2023 年 11 月启动的记忆分层基座模型研究。从建模角度看，明文记忆、激活记忆与参数化记忆在读写效率上差异显著：明文记忆只需改写文本即可瞬间入库；参数化记忆则依赖继续训练或后训练，写入成本极高，但读取极快；激活记忆介于两者之间，读写相对均衡。基于这一分层，我们按使用场景与访问频率动态建模，确保全局读写效率、时效性与首 token 时延同时最优。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/ba/ba7b7a756e41d814a54c324e41ea9852.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;为支撑这套调度框架，我们配套实现了消息队列、动态埋点与主动预测算法，使系统始终面向 memory-ready 状态：用户随时提问，背后的 Memory Cube 都已处于最佳形态，时延被压到最低。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;最上层是 MemOS 开源框架与服务平台。对外我们提供两类标准服务：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/c7/c78bb6fcf25a6ccb564e84c96b321a1e.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;以上便是 MemOS 1.0 的整体设计现状。&lt;/p&gt;&lt;h5 data-type="heading" data-id="heading6"&gt;Memos 的核心机制一：记忆分层建模&lt;/h5&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;围绕当前框架，我想分享三点在实践中被反复验证、值得特别注意的经验：记忆分层、记忆调度，以及记忆脑图的信息组织方式。它们共同构成了我们整套系统的核心设计思想。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;首先是记忆分层。自 2023 年 11 月我们启动记忆分层大模型研究以来，业界虽频繁提及“分层”，但多数仍停留在“长期 / 短期”或“明文工作记忆”这类粗粒度划分。我们认为，从基础模型理论出发，记忆应被系统性地划分为参数化记忆、激活记忆与明文记忆，而明文记忆内部还可进一步细分。之所以必须如此，根源在于人脑的记忆形成机制。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;人脑首先接受感官刺激——听觉、视觉、触觉等。只有“重复且有效”的刺激才会留下痕迹。所谓“有效”，是指该刺激与当前任务或兴趣高度相关。例如，普通人对路边落叶视而不见，环卫工人却会敏锐捕捉。若所有信息无差别入库，大脑将因容量有限而崩溃。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;被筛选出的信息先进入短期记忆。短期记忆自带遗忘机制；若再经重复刺激，便沉淀为长期记忆。长期记忆又分两类：外显记忆——可被语言提取，如“昨晚看过的电影情节”；内隐记忆——通过行为表现，如程序员盲打键盘的指法。长期记忆若长期不被调用，也会被主动遗忘，以维持系统效率。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;人脑这套“刺激—筛选—巩固—遗忘—再学习”的闭环，为我们设计记忆系统提供了完整范式：刺激阶段对应“选择性写入”，降低冗余；短期记忆对应“激活记忆”，追求读写速度；长期外显记忆对应“明文记忆”，便于检索与共享；长期内隐记忆对应“参数化记忆”，通过继续训练微调，读取快、写入慢；遗忘与再学习机制则对应“动态调度与回收”，确保全局性能最优。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;围绕当前记忆系统设计的实践，我想分享三点体会，它们共同构成了我们框架设计的核心考量：记忆分层的必要性、记忆调度的技术原理，以及“记忆脑图”这一组织方式的独特价值。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;记忆分层绝非简单地把信息划分为“长期”与“短期”，或套用认知心理学中 working memory 的概念。从大语言模型的理论视角出发，记忆应当被系统地拆分为三层：参数化记忆（模型权重）、激活记忆（推理过程中的中间状态）与明文记忆（可显式读取的外部存储）。其中明文记忆又可进一步细分为外显与内隐两类，这一划分直接对应人脑的记忆形成机制。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;人脑的记忆始于感官刺激。视觉、听觉、触觉等信号若要在神经层面留下痕迹，必须满足“重复且有效”的条件：重复保证突触可塑性的持续强化，有效则意味着刺激需与个体目标或情感显著相关。以日常场景为例，路人往往忽略脚边落叶，而环卫工人因职责所在，会反复接收并处理同一类视觉信号，落叶遂成为其短期记忆的一部分。若此类信息未经筛选地全部入库，有限的脑容量将迅速耗尽；因此人脑在编码阶段即执行严格的过滤。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;短期记忆并非终点。它自带遗忘曲线，只有通过再次复述或情境复现，才能被巩固为长期记忆。长期记忆又可区分为外显与内隐：前者可被语言化，如“昨日观影内容”；后者则表现为程序性技能，如程序员对键盘键位的肌肉记忆。值得注意的是，长期记忆亦遵循“用进废退”原则——久未调用的记忆会被主动遗忘，以维持检索效率。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/0b/0b0f712205c655683d2ccf73d58f78e6.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;借鉴人脑的这一套机制，我们便会发现其中有许多值得汲取的要点：长期记忆中的遗忘机制、学习与进化机制，短期记忆在效率上的优势，以及刺激阶段选择性过滤所带来的功耗优势，皆可为我们构建记忆分层与记忆管理系统提供直接启示。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;基于上述启发，我们在 2024 年 7 月发布了首个分层架构的大模型。其核心理念是把 Transformer 中的参数化记忆拆分为抽象知识与具体知识，并进一步把其中可分离的部分抽离出来，使模型主干尽可能轻量化。主干只需保留最关键的推理能力，其余具体知识则交由外部存储管理。据此，我们将记忆划分为隐性记忆、显性记忆与外部记忆三类，通过分层降低推理与记忆负载。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/0f/0f89044172e1db77ba4bc9613140032e.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若将三类记忆映射到人类行为，隐性记忆如同骑自行车——一旦学会便不再需要刻意思考；显性记忆则像昨日读过的书或课堂笔记，经大脑加工后随时调用；外部记忆则类似开卷考试，学生可现场翻阅教材，按需检索。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;写入方式亦各有特征：隐性记忆通过训练固化于模型参数；显性记忆以 KV Cache 形式缓存；外部记忆即明文知识库，按常规检索逻辑维护。读取时，隐性记忆支持即时推理；显性记忆依赖 Self-Attention 交叉计算；外部记忆则需重新编码。综合来看，隐性记忆更新慢、读取快；外部记忆容量大、存储效率高，但联合解码耗时；显性记忆更新灵活，既可随时丢弃，也可常驻显存，读写速度居中。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;记忆调度的本质，是把上述三种记忆各自的优势真正用起来。在 MemOS 的设计里，我首先把参数化记忆拆成两块：一块是“内置参数记忆”，即模型出厂时便固化的权重；另一块是“外置参数记忆”，它随着用户或 Agent 与大模型的持续交互而动态生长——系统会挑选那些反复出现、对任务至关重要的偏好、事实与推理模式，以低秩更新或增量训练的方式写进这一区域。场景一变，外置参数记忆也随之调整，始终保持与当前任务高度相关。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;显性记忆则体现为推理过程中产生的高速 KV Cache。我会把它暂存在显存或高速缓存区，并在下一次同类任务到来前，预判是否需要提前加载到 GPU，避免冷启动带来的延迟。至于外部记忆，我进一步把它细分为短期明文记忆与长期明文记忆：前者存放最近几轮对话或临时参考文档，后者则像一座可随时间沉淀的知识库，按需召回。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/b0/b0c7f0b1912a4d0dcc3916584b53a7d4.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;整个记忆管理机制就落在对这五类记忆——内置参数、外置参数、显性 KV Cache、短期明文、长期明文——的灵活调度上。若把记忆系统的全生命周期比作八颗星的工作量，传统 RAG 往往把六颗星都花在“使用”环节：幻觉校验、主体一致性检查、权限验证……而构建与调度环节却相对单薄，无非是切片、 Embedding，再复杂一点便是 GraphRAG。可一旦把 GraphRAG 真正部署到生产环境，就会发现它的成本与延迟都高得难以接受。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们的思路恰恰相反：把尽可能多的工作量前置到构建与调度阶段。构建时，针对不同记忆类型做类脑式的组织与抽取，采用“图 + 向量”的多路混合存储，既保留语义关系，又兼顾检索效率；调度时，则引入主动预测模型，让所需记忆在任务到达前就已处于“就绪”状态。如此，开发者在真正使用这套系统时，只需关心业务逻辑，无需再为记忆管理付出额外成本。&lt;/p&gt;&lt;h5 data-type="heading" data-id="heading7"&gt;MemOS 的核心机制二：记忆调度管理&lt;/h5&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们整套机制的核心，是把“调度”做到极致。调度究竟意味着什么？一句话概括：在最恰当的时刻，把最匹配的记忆放到最恰当的位置。这三个“最恰当”听起来简单，实则每一步都隐藏着大量算法与工程细节。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/ad/add9ff82cc48538cddf1477a753790f2.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;当前主流 RAG 的增强范式，在我看来属于“被动式检索”。它的典型流程是：用户输入查询 → 系统重写查询 → 生成嵌入 → 向量库召回 → 粗排 → 精排 → 构造提示 → 交由大模型作答。整个链路呈“阻断式”。后续上下文构造与模型回答必须等待检索全部完成后才能继续。为了提升精度，我们常常把检索方案从 Pro 升级到 Ultra，每次升级又额外增加两秒延迟。若业务硬性要求两秒内返回结果，这套阻断式流程便几乎无法兼顾精度与速度。更棘手的是，随着对话窗口拉长，上下文 Token 不断累积，成本呈指数级上升；跨会话、跨天的推理结果也难以复用，导致碎片化与浪费。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若把 Agent 或用户在真实场景中的时间线拆开，可发现大量“空档”：用户敲键盘输入、模型推理、用户阅读答案、再次输入……这些碎片时间加起来往往远超两秒。与其让它们白白流逝，不如化整为零，把记忆管理、调度与预热工作嵌入每一个空隙。届时，当真正需要构造上下文时，所需数据已提前就位，只需极短时间即可完成拼接。无论对系统延迟还是用户体验，提升都立竿见影。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们把最小记忆单元称为 Memory Cube。借助它，可在用户输入、模型推理、答案阅读乃至下一轮输入等任意阶段与记忆系统交互，持续把后续可能用到的内容提前准备到“就绪”状态。如此，当查询真正到来时，上下文已静静等候，只需一次轻量调用即可交付。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/42/4277db9beb2de68d7a3f0b5704ec2c1a.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若把记忆调度抽象来看，它由三类核心容器构成：触发器、调度器与快速检索器。触发器允许开发者依据自身业务灵活配置触发点——当用户键入查询、点击设置列表，或任何其他关键动作发生时，皆可即时唤起记忆调度。调度器则接收触发器传来的信号与模板化配置，对隐性、显性与外部记忆分别执行差异化处置，确保在真正需要时，所需记忆已处于最佳状态。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;快速检索器并非必需，可视场景取舍。由于记忆准备已转为全时、异步、并行流程，检索耗时可从原来的数秒压缩至百毫秒级，仅需在最后一刻快速补入最新片段即可。由此，我们将传统单轮、阻断式的 RAG 记忆准备，拆分为跨多轮、可并行异步执行的细粒度过程。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;欲将记忆调度系统打磨成熟，至少需在以下层面着力：触发触点建模、负载均衡、明文与激活记忆的分级调度。触点建模尤其依赖对用户与系统行为的主动预测——通过一系列轻量级预测模型，实时捕捉行为变化，并据此将调度模板路由至恰当节点。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/7d/7d7ce163ae4fe840406b54ffd4a2f952.png" alt data-type="image"&gt;&lt;h5 data-type="heading" data-id="heading8"&gt;MemOS 的核心机制三：记忆脑图组织与检索&lt;/h5&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;当记忆分层与调度都已就绪，我仍需回到起点，重新审视“记忆被抽取之后，究竟应以何种形态组织”。组织方式直接决定后续检索成本、准确率与效率。业界目前可见两条路径：一是直接分块，简单高效，却易割裂文本间的语义关联；二是 GraphRAG，试图以知识图谱保留关系，但构建高精度图谱对实体一致性要求极高，成本令人望而却步。我曾在阿里巴巴业务中台负责商品知识图谱，六十余人历时三四年持续打磨，仍深感其复杂与脆弱。即便引入大模型辅助，图谱的可靠性与可用性依旧难以令人满意。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;反观人类自身，我们并不会在听完一场讲座或读完一本书后，立刻铺开一张大纸绘制知识图谱；更自然的做法是勾勒一张脑图——提取事件与逻辑的脉络，形成树状框架。脑图恰好介于“分块”与“图谱”之间：既利用大模型的推理与理解能力，又将构建成本控制在可接受范围。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;然而，仅有脑图还不够。我更想强调的是“主动记忆”——与被动分块或静态图谱不同，它要求系统像领域专家一样，只抽取对当前场景真正有价值的信息。以金融行业为例，金融专家阅读同一份研报时，会自觉过滤通识内容，仅保留差异化、可复用的要点。为此，我们引入记忆的 CoT（Chain of Memory）过程：先分析对话或文档的主题与特征，再据此决定抽取策略，使转换效率最大化。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/1a/1a93d15976a869d64b02d24e94a90150.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;获得初版记忆脑图后，还需二次关联与校验：跨会话补全上下文、跨文档建立路由节点，最终形成由根节点（Root Node）与主题节点（Topic Node）构成的网络。在此网络中，我们为关键路径与节点预计算嵌入向量，实现“图 + 向量”的混合检索——既保留灵活性，又确保召回的准确与全面。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading9"&gt;MemOS 的整体性能表现&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们也把整套框架与主流开源方案在 LoCoMo 和 LongMemEval 两个数据集上做了横向性能比较。然而我更想指出的是，现有评估体系尚难真实还原记忆框架在业务场景中的价值。多数评测把一百轮对话一次性塞进模型，仅测试基座对长上下文的处理能力，却忽略了记忆是在逐轮交互中缓慢生长的现实；用户键入查询、模型推理、阅读答案均耗时，若不在评估中模拟这些空隙，便无法体现记忆管理系统在真实环境中的优势。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/31/31dcee60d5029a71978c2ddc5208232b.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading10"&gt;MemOS 的开源框架与 OpenMem 社区&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;今年 7 月底，我们开源了 MemOS Preview，并发起国内首个聚焦记忆管理的开源社区 OpenMem，邀请高校研究团队与工业界伙伴共同探讨记忆技术的演进方向，沉淀通用标准与协议。开发者社区保持完全开放，API 服务框架已发布第一版，第二版将于 10 月 31 日上线，未来一年对所有调用量级与性能需求均免费，涵盖“记忆即服务”与“推理即服务”。同时提供可私有化部署的版本，满足高安全场景需求。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/3a/3a4badef5e8de7ce66b6fae0626ff399.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading11"&gt;MemOS 的典型应用场景&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;之所以打造 MemOS，源于团队自 2023 年成立至今在 ToB 项目中的切身体会。无论是智能投顾还是工业运维，客户对个性化记忆的诉求高度一致：希望把员工与 AI 中枢交互产生的公共经验固化下来。在工业现场，若资深技师退休且未带徒，其调试经验往往随人散失；企业期待记忆平台能留存“为何把参数设为 5%”这类过程信息，而非仅记录结果。开源后，已有开发者将 MemOS 应用于酒店商户服务、科研助手等场景，显著提升了人工反馈准确率与个性化服务水平。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/c0/c0d63e0396771ee25e9472eecead8c73.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading12"&gt;One More Thing&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;既然我们自视为“记忆操作系统”，就不能只停留在基座训练与中间件层面；操作系统必须拥有自己的语言。换句话说，当用户以自然语言与系统交互时，如何以最高效率完成编排，是成败关键。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;设想一句看似简单的请求：“请帮我记录昨天与某人的会议内容，并在后天提醒我撰写技术报告。”其背后隐含多个基础算子：先检索日程，抑或先更新用户画像？是否需要重写、摘要，还是直接扩展？过去，这些逻辑由算法工程师硬编码，导致大量边界情况难以覆盖。因此，我们正在构建一套自动化编排语言框架，让任意自然语言输入都能被实时解析为系统可执行的操作序列，显著降低开发者接入成本。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/75/75958e8e74fe9d283245b0f49ca93855.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;最后，以公司 Slogan 作结：智能始于记忆，张量链接未来。谢谢大家。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;strong&gt;演讲嘉宾介绍&lt;/strong&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;李志宇，博士，记忆张量（上海）科技有限公司联合创始人兼 CTO、上海算法创新研究院大模型中心技术负责人、研究员。长期从事预训练和大模型应用方向的研发技术攻关，主要研究方向包括大模型记忆增强、高效评估与应用算法。曾在阿里巴巴、小红书等头部科技企业带队承担多个核心算法方向，技术成果服务于商品评价、双十一大促、营销广告等超大规模业务场景，累计带来数十亿营收，影响用户近亿人次，并获得双十一技术突破奖。近年来，先后和团队提出了首个记忆分层的创新架构大模型，以及业内业内首个大模型记忆操作系统（MemOS），MemOS 开源 6 个月累计获得 Star 数超 5800+，开发者数超 11000+，为大模型的记忆增强落地提供了可行的探索路径。相关大模型技术成果已在中国银行、招商证券、中国电信、新华社等多家国央企落地应用。当前已在 Patterns（Cell Press）、NeurIPS、ICLR、ACL 和 TKDE 等国际会议期刊发表论文 70 余篇、授权专利 10 余项。现任中国中文信息学会信息检索专委会委员、大模型与生成专委会委员，相关研究工作入选《麻省理工科技评论》封面报道、《机器之心》、《量子位》和《PaperWeekly》的头条报道，并多次登顶 Huggingface 热点论文 Top1。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;strong&gt;会议推荐&lt;/strong&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;2026，AI 正在以更工程化的方式深度融入软件生产，Agentic AI 的探索也将从局部试点迈向体系化工程建设！&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;QCon 北京 2026 已正式启动，本届大会以“Agentic AI 时代的软件工程重塑”为核心主线，推动技术探索从「AI For What」真正落地到可持续的「Value From AI」。从前沿技术雷达、架构设计与数据底座、效能与成本、产品与交互、可信落地、研发组织进化六大维度，系统性展开深度探索。开往 2026 的 Agentic AI 专列即将启程！汇聚顶尖专家实战分享，把 AI 能力一次夯到位！&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/dd/dd4aab42d22ce4e0969e1e3cb0b95849.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>InfoQ 官网</author><pubDate>Mon, 09 Mar 2026 10:07:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTFBIek05akRlS1NGTzlXRGxwMU9lekZXblg5dFVJZkNqaTNmSVRkZGdWYmVBSko3VjB0czBWa19tdDZISWZqQWk0enBIM25IUHFhUmw5ZWlMMURaSjNCbVE</guid></item><item><title>企业微信正式支持接入OpenClaw！无需配置域名3步就能养小龙虾-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107943.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>网友实测DeepSeek V4 Lite能力：《三体》全文都塞下很聪明-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1108/1108005.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，此前传闻DeepSeek V4在上周发布，遗憾的是这事也没有发生，目前DeepSeek依然是官网更新了一个小模型，被网友成为DeepSeek V4 Lite。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 Lite的参数量据说只有2000亿，相比V3版本的6700多亿小了很多，而传闻中的DeepSeek V4满血版参数量达到1万亿级别，因此这次的DeepSeek V4 Lite被认为是在做测试验证，方便后续微调。&lt;/p&gt;
+&lt;p&gt;DeepSeek V4 Lite的官方介绍不多，&lt;span&gt;&lt;strong&gt;提升的主要是上下文能力，从上代的128K提升到了1M，&lt;/strong&gt;&lt;/span&gt;虽然比有些AI大模型的2M上下文还差一些，但网友实测这个1M上下文是实打实的，实际上还不止。&lt;/p&gt;
+&lt;p&gt;当然，最受关注的还是DeepSeek V4 Lite的能力，之前已经有过不少测试，知乎网友给出的反馈还可以看到更多的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/84cbb30c-ea30-4362-8038-ddaa085fc045.png" target="_blank"&gt;&lt;img alt="网友实测DeepSeek V4 Lite能力：《三体》全文都塞下 很聪明" h="209" src="//img1.mydrivers.com/img/20260309/S84cbb30c-ea30-4362-8038-ddaa085fc045.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;网友@帅得自然表示网页版的编程能力比之前强了10倍，几乎没幻觉了，而且扔给1MB的txt代码文本让它修改都能基本一次过，最多三次。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/558d93d7-b7dd-4215-a7fa-212ee1cdc072.png" target="_blank"&gt;&lt;img alt="网友实测DeepSeek V4 Lite能力：《三体》全文都塞下 很聪明" h="362" src="//img1.mydrivers.com/img/20260309/S558d93d7-b7dd-4215-a7fa-212ee1cdc072.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另一个网友@起名困难症晚期提供了一个更好玩的测试，他扔给DeepSeek V4 Lite一个2.9MB的《三体》全集文档，&lt;strong&gt;但在其中随机加入了几个密钥，让AI给找出来，这是验证上下文能力的一个关键。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/89694a42-691f-460d-b6c9-72efc0cdc322.png" target="_blank"&gt;&lt;img alt="网友实测DeepSeek V4 Lite能力：《三体》全文都塞下 很聪明" h="727" src="//img1.mydrivers.com/img/20260309/S89694a42-691f-460d-b6c9-72efc0cdc322.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;结果DeepSeek V4 Lite真的给找出来了，第一次有些顺序不对，但提醒之后就给出了更详细的说明，而且每个密钥的出现位置也给详细标明了。&lt;/p&gt;
+&lt;p&gt;《三体》全集大约80万字，虽然文字数并就是AI的上下文能力，但通过这个测试可以看出DeepSeek V4 Lite现在的体量已经可以处理百万级文本，再加上编程能力的大幅提升，实用性就强出太多了。&lt;/p&gt;
+&lt;p&gt;完整版的DeepSeek V4啥时候发布还是个迷，具体的能力当然也不好说，但是从现有的表现来看DeepSeek V4还是有不鸣则已一鸣惊人的能力，大家的期待值也是拉满的。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="网友实测DeepSeek V4 Lite能力：《三体》全文都塞下 很聪明" h="368" src="//img1.mydrivers.com/img/20260309/dda59d84-b8f2-4253-a21e-2bafbe39ad60.png" w="600"&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 10:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9BV2tDMVRaSnpsT2V3bHpIMHFOZUdyWGc1MTNXcUkxcTRxbjNkMzh3REJYWU1QLVlzVW1wa3k3WFk3SS1jWW5fMjUyaGtCWEN1M0g2TE5TOEM</guid></item><item><title>从上下文到长期记忆：大模型记忆工程的架构设计与实践 - InfoQ 官网</title><link>https://www.infoq.cn/article/AIVoC9eKfZhW199IQkwB</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;演讲嘉宾｜李志宇 博士&lt;/p&gt;&lt;p data-type="paragraph"&gt;策划｜QCon 全球软件开发大会&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;随着大模型在企业和行业场景中持续落地，“记忆”正在成为继参数调优和上下文工程之后的下一个工程化核心。短时遗忘、知识碎片化、跨任务信息无法留存等问题，正在限制大模型的个性化、推理链延展与持续演化能力。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;本文整理自记忆张量 CTO 李志宇博士在 2025 年 &lt;a href="https://qcon.infoq.cn/2025/shanghai/" title="xxx" data-type="link"&gt;QCon 全球软件开发大会（上海站）&lt;/a&gt;的演讲分享。志宇博士结合他多年的研发与落地实践，系统剖析&lt;a href="https://qcon.infoq.cn/2025/shanghai/presentation/6705" title="xxx" data-type="link"&gt;大模型记忆工程的核心技术&lt;/a&gt;：记忆分层管理、多粒度调度、可信更新与安全治理，并展示这些技术在金融、工业、知识管理等业务中的应用效果。通过对架构设计、实现细节和案例经验的讲解，帮助开发者与架构师全面理解如何构建具备长期留存与动态调度能力的“有记忆的 AI”，以及它在未来产业智能化演进中的角色与挑战。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;预告：将于 4 月 16 - 18 召开的 QCon 北京站设计了「&lt;a href="https://qcon.infoq.cn/2026/beijing/track/1905" title="xxx" data-type="link"&gt;记忆觉醒：智能体记忆系统的范式重塑与产业落地&lt;/a&gt;」专题，旨在重新定义企业级记忆系统的未来——聚焦非显式偏好捕捉、记忆自主演化与生命周期管理等前沿方向，探索其在高端客服、个性化助理、企业决策等场景的深层价值。敬请关注。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;strong&gt;以下是演讲实录&lt;/strong&gt;（经 InfoQ 进行不改变原意的编辑整理）。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading0"&gt;大模型性能缩放曲线的演进历史&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们公司名为“记忆张量”，单从名字便可看出，我们聚焦的是“记忆增强”——或者说“记忆优化”这一方向。去年十一月刚刚成立，不久前刚完成近亿元人民币的天使轮融资。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/d9/d9a3e14d0720dfe579e3feaf74214fcd.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;之所以选择“记忆”作为主攻点，根本原因在于我们判断：在大模型的演进史中，记忆将成为与 MCP 工具并列的下一个关键增强维度。2023 年以前，业界普遍通过扩大数据规模、参数量和训练量来换取性能提升，由此催生了千问、ChatGPT 等代表性范式。进入 2024–2025 年，人们逐渐发现，单纯堆参数与规模带来的收益开始递减，于是转向“后训练”与“推理增强”，DeepSeek-R1 便是这一阶段的典型产物。当后训练也逼近瓶颈时，Sam Altman 等人开始追问：下一步的突破口究竟在哪里？在 GPT-4 的更新日志里，OpenAI 把“全局记忆”列为令团队“兴奋到失眠”的新功能；而在 GPT-5、GPT-6 的路线图中，“记忆”与“个性化”被反复提及，被视为大模型面向应用场景的核心变量。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading1"&gt;从实践层面看记忆增强的必要性&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若把大模型业务服务做一次抽象，可自下而上划分为：底层的数据库存储与基础 AI 引擎；中间的 MCP 增强、知识库增强；最上层的业务逻辑。再将视角切换到单个用户与大模型的交互流程，就会发现其中同时存在动态与静态两类信息。所谓动态信息，指随每次查询而变化的个性化内容：用户临时贴入的参考材料、在 prompt 里约定的偏好等。查询一旦发出，模型先进行意图理解与任务规划，再进入信息增强链路——MCP 调用各类动态工具，并返回执行结果、校验信息、汇总结果；与此同时，知识库从预先处理好的企业静态知识中抽取内容，为模型提供补充。最终，响应结果既包含推理过程（think 部分），也包含知识性内容，以及用户对本次回答的点赞或点踩。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/ac/ac28928e765d24312e504b4e479991c6.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若沿着时间轴把记忆类型进一步展开，其复杂度远超直觉。假设我们在第 6 轮对话里需要引用一个月前第 2 轮的内容，又在第 5 轮里引用第 1 轮的细节，就必须保证用户在不同场景下都能准确召回、并同步更新已发生变化的记忆。再把视角拉远：大模型可能在多轮会话、多用户、多 Agent、多 App 之间穿梭，动态信息的量级与管理难度呈指数级上升。因此，我们希望在开发层面屏蔽这些复杂性，让应用开发者无需深陷动态信息的泥沼，从而显著降低落地成本。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/3d/3d643e5b480a9830bfa04478a57f3ddd.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading2"&gt;大模型记忆增强层的实现路径&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;顺着这一思路，我们把大语言模型、Agent、业务流程与用户之间抽象出一个“记忆操作层”。要实现记忆增强，业界目前大致有两条路径。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;第一条是模型增强范式：&lt;strong&gt;从模型架构与训练范式本身入手&lt;/strong&gt;，让训练后的模型对记忆具备更强的理解与编排能力。我们团队早期便尝试以记忆分层的方式建模，以提升记忆管理与唤起的效率；近期，字节跳动等机构也尝试利用强化学习来优化记忆使用范式，重点解决短期记忆与长期记忆的协同问题。这一路线可称为“基模驱动”的记忆优化。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/b6/b6876b065c55a5a51e84f12612d4c537.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;第二条则是&lt;strong&gt;面向应用层的工程实践&lt;/strong&gt;：在不动基座模型的前提下，通过通用大模型、提示工程（prompt engineering）与 Agent 工作流来模拟人类对记忆的管理过程。早期项目如 MemGPT、Mem0、Zep 等开源框架均循此思路；近期 Memories.AI 更进一步，从多模态记忆角度拓展了记忆管理框架。除这些偏开源或商业化的团队外，也有不少学术团队围绕记忆工程中的单点创新提出独立方案。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/08/086a4beaf51f8cf9eabf392910d933ac.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若将两条路线并置比较，二者几乎处于对立的两极。以基模为核心的方案，研发周期长、投入高；然而一旦在模型层面把记忆问题真正吃透，其性能天花板也最高，后续扩展几乎没有硬约束。反之，纯应用层的做法可在极短时间内搭出第一版记忆系统，且横向扩展灵活；但依赖通用基座模型与提示工程，往往很快触到性能瓶颈——从 85% 再往上走到 90%、95%，每一步都异常艰难。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/87/877dcbf8ca4af4e299d0b7aeba1faba1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;在我们看来，真正可行的路线是把“基模驱动”与“应用驱动”融合为一。具体做法是：在系统关键节点训练一系列面向记忆操作与记忆理解的小型专用模型，同时保留一套能力更强的主模型来执行整体记忆编排。这样，开发者无需深陷复杂的编排与理解细节，成本被大幅压缩。一句话概括：模型决定上限，应用夯实下限。我们坚持由模型驱动去攻克原创理论与核心算法，确保开源框架随版本迭代持续抬升性能天花板；同时，团队里既有来自高校的理论研究者，也有曾任职阿里巴巴、美团的应用算法工程师，因此在设计整套系统时，我们同样关注业务适配性与通用性，力求让前沿成果能够平滑落地到真实场景。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading3"&gt;记忆增强层落地需要做什么？&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若要把记忆管理系统真正搭建并持续优化，从系统到算法层面，需要攻克的环节远比表面看起来繁复。首先，记忆一旦进入系统，就要完成抽取、组织与检索三步闭环：抽取必须精准，组织必须高效，检索则要在极低冗余与极高精准之间取得平衡。紧接着，当信息动态更新时，必须确保用户曾提及的实体与细节被准确刷新，版本历史被完整保留，而检索时又能即时返回最新状态。最后，记忆还要在多方之间顺畅共享——不仅跨会话、跨 Agent，也跨企业组织内的不同用户。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/c0/c014af7716d20c15eb1629a228430349.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这些环节里，有些难题仅靠通用模型几乎无解。以记忆抽取为例，通用模型常出现幻觉，既可能捏造事实，也可能把 A 用户的记忆错放到 B 用户名下；而在记忆更新阶段，幻觉同样高发，稍不留神就会让旧版本与新版本混为一谈。因此，我们必须引入更精细的机制，才能在这些关键节点上守住准确性与一致性。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading4"&gt;MemOS 的核心设计思路&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;既然我们给自己定的目标是打造一套“记忆操作系统”，至少也得是 Tiny-OS 级别，那就必须像传统操作系统那样，把整体框架拆成清晰的分层。从硬件到内核再到应用，每一层都对应记忆场景里的关键问题：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/f8/f8a461049d31dc83dd8050614fffffa9.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;顺着这个思路，我们设计了五层记忆管理框架：存储、治理、调度、应用、解码。其中，治理层与调度层是市面上现有框架极少单独拆出的两层。很多人会把记忆直接塞进向量库或图数据库，我们却坚持为记忆量身定制存储层——因为我们相信，当大模型能力继续跃升、终端入口趋于统一后，传统带 GUI 的 App 形态会逐步消失。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/02/0252927665155804a8931c713e8c364d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;不妨以“时间管理”为例：今天我们要先下载一个时间管理 App，再手动录入日程；稍智能的软件能帮我们排期并提醒。但在不远的将来，人们可能不再下载 App，而是直接获取一个“时间管理记忆体”。这个记忆体已经把时间管理所需的推理逻辑与细节知识打包完毕，安装到本地通用模型后，两者联合推理即可从对话里自动抽取时间要素、生成排程，效率远高于通用模型本身。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;因此，我们把“记忆体”定义为可独立打包、下载、安装的最小单元，既可以是个人经验资产，也可以是企业知识沉淀的载体。明年年中，我们将上线“记忆交易市场”，思路类似今天的 App Store：开发者用我们提供的 SDK 把企业知识封装成记忆体并上架；终端用户按需下载安装，即可在“最后一公里”显著提升业务效能。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading5"&gt;MemOS 的系统框架&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;既然记忆已被视作个人最核心的经验资产，治理就必须在一开始就被提到最高优先级。在即将发布的 1.0 版本中，我们把记忆全生命周期管理、幻觉评估框架、水印、权限与隐私控制全部内建，力求让每一份记忆资产从诞生起就保持稳健与可信。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;再往上是调度层。之所以单独设立“记忆调度”，是因为我们坚持记忆必须分层管理——这直接源于 2023 年 11 月启动的记忆分层基座模型研究。从建模角度看，明文记忆、激活记忆与参数化记忆在读写效率上差异显著：明文记忆只需改写文本即可瞬间入库；参数化记忆则依赖继续训练或后训练，写入成本极高，但读取极快；激活记忆介于两者之间，读写相对均衡。基于这一分层，我们按使用场景与访问频率动态建模，确保全局读写效率、时效性与首 token 时延同时最优。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/ba/ba7b7a756e41d814a54c324e41ea9852.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;为支撑这套调度框架，我们配套实现了消息队列、动态埋点与主动预测算法，使系统始终面向 memory-ready 状态：用户随时提问，背后的 Memory Cube 都已处于最佳形态，时延被压到最低。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;最上层是 MemOS 开源框架与服务平台。对外我们提供两类标准服务：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/c7/c78bb6fcf25a6ccb564e84c96b321a1e.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;以上便是 MemOS 1.0 的整体设计现状。&lt;/p&gt;&lt;h5 data-type="heading" data-id="heading6"&gt;Memos 的核心机制一：记忆分层建模&lt;/h5&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;围绕当前框架，我想分享三点在实践中被反复验证、值得特别注意的经验：记忆分层、记忆调度，以及记忆脑图的信息组织方式。它们共同构成了我们整套系统的核心设计思想。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;首先是记忆分层。自 2023 年 11 月我们启动记忆分层大模型研究以来，业界虽频繁提及“分层”，但多数仍停留在“长期 / 短期”或“明文工作记忆”这类粗粒度划分。我们认为，从基础模型理论出发，记忆应被系统性地划分为参数化记忆、激活记忆与明文记忆，而明文记忆内部还可进一步细分。之所以必须如此，根源在于人脑的记忆形成机制。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;人脑首先接受感官刺激——听觉、视觉、触觉等。只有“重复且有效”的刺激才会留下痕迹。所谓“有效”，是指该刺激与当前任务或兴趣高度相关。例如，普通人对路边落叶视而不见，环卫工人却会敏锐捕捉。若所有信息无差别入库，大脑将因容量有限而崩溃。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;被筛选出的信息先进入短期记忆。短期记忆自带遗忘机制；若再经重复刺激，便沉淀为长期记忆。长期记忆又分两类：外显记忆——可被语言提取，如“昨晚看过的电影情节”；内隐记忆——通过行为表现，如程序员盲打键盘的指法。长期记忆若长期不被调用，也会被主动遗忘，以维持系统效率。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;人脑这套“刺激—筛选—巩固—遗忘—再学习”的闭环，为我们设计记忆系统提供了完整范式：刺激阶段对应“选择性写入”，降低冗余；短期记忆对应“激活记忆”，追求读写速度；长期外显记忆对应“明文记忆”，便于检索与共享；长期内隐记忆对应“参数化记忆”，通过继续训练微调，读取快、写入慢；遗忘与再学习机制则对应“动态调度与回收”，确保全局性能最优。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;围绕当前记忆系统设计的实践，我想分享三点体会，它们共同构成了我们框架设计的核心考量：记忆分层的必要性、记忆调度的技术原理，以及“记忆脑图”这一组织方式的独特价值。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;记忆分层绝非简单地把信息划分为“长期”与“短期”，或套用认知心理学中 working memory 的概念。从大语言模型的理论视角出发，记忆应当被系统地拆分为三层：参数化记忆（模型权重）、激活记忆（推理过程中的中间状态）与明文记忆（可显式读取的外部存储）。其中明文记忆又可进一步细分为外显与内隐两类，这一划分直接对应人脑的记忆形成机制。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;人脑的记忆始于感官刺激。视觉、听觉、触觉等信号若要在神经层面留下痕迹，必须满足“重复且有效”的条件：重复保证突触可塑性的持续强化，有效则意味着刺激需与个体目标或情感显著相关。以日常场景为例，路人往往忽略脚边落叶，而环卫工人因职责所在，会反复接收并处理同一类视觉信号，落叶遂成为其短期记忆的一部分。若此类信息未经筛选地全部入库，有限的脑容量将迅速耗尽；因此人脑在编码阶段即执行严格的过滤。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;短期记忆并非终点。它自带遗忘曲线，只有通过再次复述或情境复现，才能被巩固为长期记忆。长期记忆又可区分为外显与内隐：前者可被语言化，如“昨日观影内容”；后者则表现为程序性技能，如程序员对键盘键位的肌肉记忆。值得注意的是，长期记忆亦遵循“用进废退”原则——久未调用的记忆会被主动遗忘，以维持检索效率。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/0b/0b0f712205c655683d2ccf73d58f78e6.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;借鉴人脑的这一套机制，我们便会发现其中有许多值得汲取的要点：长期记忆中的遗忘机制、学习与进化机制，短期记忆在效率上的优势，以及刺激阶段选择性过滤所带来的功耗优势，皆可为我们构建记忆分层与记忆管理系统提供直接启示。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;基于上述启发，我们在 2024 年 7 月发布了首个分层架构的大模型。其核心理念是把 Transformer 中的参数化记忆拆分为抽象知识与具体知识，并进一步把其中可分离的部分抽离出来，使模型主干尽可能轻量化。主干只需保留最关键的推理能力，其余具体知识则交由外部存储管理。据此，我们将记忆划分为隐性记忆、显性记忆与外部记忆三类，通过分层降低推理与记忆负载。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/0f/0f89044172e1db77ba4bc9613140032e.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若将三类记忆映射到人类行为，隐性记忆如同骑自行车——一旦学会便不再需要刻意思考；显性记忆则像昨日读过的书或课堂笔记，经大脑加工后随时调用；外部记忆则类似开卷考试，学生可现场翻阅教材，按需检索。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;写入方式亦各有特征：隐性记忆通过训练固化于模型参数；显性记忆以 KV Cache 形式缓存；外部记忆即明文知识库，按常规检索逻辑维护。读取时，隐性记忆支持即时推理；显性记忆依赖 Self-Attention 交叉计算；外部记忆则需重新编码。综合来看，隐性记忆更新慢、读取快；外部记忆容量大、存储效率高，但联合解码耗时；显性记忆更新灵活，既可随时丢弃，也可常驻显存，读写速度居中。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;记忆调度的本质，是把上述三种记忆各自的优势真正用起来。在 MemOS 的设计里，我首先把参数化记忆拆成两块：一块是“内置参数记忆”，即模型出厂时便固化的权重；另一块是“外置参数记忆”，它随着用户或 Agent 与大模型的持续交互而动态生长——系统会挑选那些反复出现、对任务至关重要的偏好、事实与推理模式，以低秩更新或增量训练的方式写进这一区域。场景一变，外置参数记忆也随之调整，始终保持与当前任务高度相关。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;显性记忆则体现为推理过程中产生的高速 KV Cache。我会把它暂存在显存或高速缓存区，并在下一次同类任务到来前，预判是否需要提前加载到 GPU，避免冷启动带来的延迟。至于外部记忆，我进一步把它细分为短期明文记忆与长期明文记忆：前者存放最近几轮对话或临时参考文档，后者则像一座可随时间沉淀的知识库，按需召回。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/b0/b0c7f0b1912a4d0dcc3916584b53a7d4.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;整个记忆管理机制就落在对这五类记忆——内置参数、外置参数、显性 KV Cache、短期明文、长期明文——的灵活调度上。若把记忆系统的全生命周期比作八颗星的工作量，传统 RAG 往往把六颗星都花在“使用”环节：幻觉校验、主体一致性检查、权限验证……而构建与调度环节却相对单薄，无非是切片、 Embedding，再复杂一点便是 GraphRAG。可一旦把 GraphRAG 真正部署到生产环境，就会发现它的成本与延迟都高得难以接受。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们的思路恰恰相反：把尽可能多的工作量前置到构建与调度阶段。构建时，针对不同记忆类型做类脑式的组织与抽取，采用“图 + 向量”的多路混合存储，既保留语义关系，又兼顾检索效率；调度时，则引入主动预测模型，让所需记忆在任务到达前就已处于“就绪”状态。如此，开发者在真正使用这套系统时，只需关心业务逻辑，无需再为记忆管理付出额外成本。&lt;/p&gt;&lt;h5 data-type="heading" data-id="heading7"&gt;MemOS 的核心机制二：记忆调度管理&lt;/h5&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们整套机制的核心，是把“调度”做到极致。调度究竟意味着什么？一句话概括：在最恰当的时刻，把最匹配的记忆放到最恰当的位置。这三个“最恰当”听起来简单，实则每一步都隐藏着大量算法与工程细节。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/ad/add9ff82cc48538cddf1477a753790f2.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;当前主流 RAG 的增强范式，在我看来属于“被动式检索”。它的典型流程是：用户输入查询 → 系统重写查询 → 生成嵌入 → 向量库召回 → 粗排 → 精排 → 构造提示 → 交由大模型作答。整个链路呈“阻断式”。后续上下文构造与模型回答必须等待检索全部完成后才能继续。为了提升精度，我们常常把检索方案从 Pro 升级到 Ultra，每次升级又额外增加两秒延迟。若业务硬性要求两秒内返回结果，这套阻断式流程便几乎无法兼顾精度与速度。更棘手的是，随着对话窗口拉长，上下文 Token 不断累积，成本呈指数级上升；跨会话、跨天的推理结果也难以复用，导致碎片化与浪费。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若把 Agent 或用户在真实场景中的时间线拆开，可发现大量“空档”：用户敲键盘输入、模型推理、用户阅读答案、再次输入……这些碎片时间加起来往往远超两秒。与其让它们白白流逝，不如化整为零，把记忆管理、调度与预热工作嵌入每一个空隙。届时，当真正需要构造上下文时，所需数据已提前就位，只需极短时间即可完成拼接。无论对系统延迟还是用户体验，提升都立竿见影。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们把最小记忆单元称为 Memory Cube。借助它，可在用户输入、模型推理、答案阅读乃至下一轮输入等任意阶段与记忆系统交互，持续把后续可能用到的内容提前准备到“就绪”状态。如此，当查询真正到来时，上下文已静静等候，只需一次轻量调用即可交付。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/42/4277db9beb2de68d7a3f0b5704ec2c1a.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;若把记忆调度抽象来看，它由三类核心容器构成：触发器、调度器与快速检索器。触发器允许开发者依据自身业务灵活配置触发点——当用户键入查询、点击设置列表，或任何其他关键动作发生时，皆可即时唤起记忆调度。调度器则接收触发器传来的信号与模板化配置，对隐性、显性与外部记忆分别执行差异化处置，确保在真正需要时，所需记忆已处于最佳状态。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;快速检索器并非必需，可视场景取舍。由于记忆准备已转为全时、异步、并行流程，检索耗时可从原来的数秒压缩至百毫秒级，仅需在最后一刻快速补入最新片段即可。由此，我们将传统单轮、阻断式的 RAG 记忆准备，拆分为跨多轮、可并行异步执行的细粒度过程。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;欲将记忆调度系统打磨成熟，至少需在以下层面着力：触发触点建模、负载均衡、明文与激活记忆的分级调度。触点建模尤其依赖对用户与系统行为的主动预测——通过一系列轻量级预测模型，实时捕捉行为变化，并据此将调度模板路由至恰当节点。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/7d/7d7ce163ae4fe840406b54ffd4a2f952.png" alt data-type="image"&gt;&lt;h5 data-type="heading" data-id="heading8"&gt;MemOS 的核心机制三：记忆脑图组织与检索&lt;/h5&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;当记忆分层与调度都已就绪，我仍需回到起点，重新审视“记忆被抽取之后，究竟应以何种形态组织”。组织方式直接决定后续检索成本、准确率与效率。业界目前可见两条路径：一是直接分块，简单高效，却易割裂文本间的语义关联；二是 GraphRAG，试图以知识图谱保留关系，但构建高精度图谱对实体一致性要求极高，成本令人望而却步。我曾在阿里巴巴业务中台负责商品知识图谱，六十余人历时三四年持续打磨，仍深感其复杂与脆弱。即便引入大模型辅助，图谱的可靠性与可用性依旧难以令人满意。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;反观人类自身，我们并不会在听完一场讲座或读完一本书后，立刻铺开一张大纸绘制知识图谱；更自然的做法是勾勒一张脑图——提取事件与逻辑的脉络，形成树状框架。脑图恰好介于“分块”与“图谱”之间：既利用大模型的推理与理解能力，又将构建成本控制在可接受范围。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;然而，仅有脑图还不够。我更想强调的是“主动记忆”——与被动分块或静态图谱不同，它要求系统像领域专家一样，只抽取对当前场景真正有价值的信息。以金融行业为例，金融专家阅读同一份研报时，会自觉过滤通识内容，仅保留差异化、可复用的要点。为此，我们引入记忆的 CoT（Chain of Memory）过程：先分析对话或文档的主题与特征，再据此决定抽取策略，使转换效率最大化。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/1a/1a93d15976a869d64b02d24e94a90150.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;获得初版记忆脑图后，还需二次关联与校验：跨会话补全上下文、跨文档建立路由节点，最终形成由根节点（Root Node）与主题节点（Topic Node）构成的网络。在此网络中，我们为关键路径与节点预计算嵌入向量，实现“图 + 向量”的混合检索——既保留灵活性，又确保召回的准确与全面。&lt;/p&gt;&lt;h4 data-type="heading" data-id="heading9"&gt;MemOS 的整体性能表现&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们也把整套框架与主流开源方案在 LoCoMo 和 LongMemEval 两个数据集上做了横向性能比较。然而我更想指出的是，现有评估体系尚难真实还原记忆框架在业务场景中的价值。多数评测把一百轮对话一次性塞进模型，仅测试基座对长上下文的处理能力，却忽略了记忆是在逐轮交互中缓慢生长的现实；用户键入查询、模型推理、阅读答案均耗时，若不在评估中模拟这些空隙，便无法体现记忆管理系统在真实环境中的优势。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/31/31dcee60d5029a71978c2ddc5208232b.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading10"&gt;MemOS 的开源框架与 OpenMem 社区&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;今年 7 月底，我们开源了 MemOS Preview，并发起国内首个聚焦记忆管理的开源社区 OpenMem，邀请高校研究团队与工业界伙伴共同探讨记忆技术的演进方向，沉淀通用标准与协议。开发者社区保持完全开放，API 服务框架已发布第一版，第二版将于 10 月 31 日上线，未来一年对所有调用量级与性能需求均免费，涵盖“记忆即服务”与“推理即服务”。同时提供可私有化部署的版本，满足高安全场景需求。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/3a/3a4badef5e8de7ce66b6fae0626ff399.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading11"&gt;MemOS 的典型应用场景&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;之所以打造 MemOS，源于团队自 2023 年成立至今在 ToB 项目中的切身体会。无论是智能投顾还是工业运维，客户对个性化记忆的诉求高度一致：希望把员工与 AI 中枢交互产生的公共经验固化下来。在工业现场，若资深技师退休且未带徒，其调试经验往往随人散失；企业期待记忆平台能留存“为何把参数设为 5%”这类过程信息，而非仅记录结果。开源后，已有开发者将 MemOS 应用于酒店商户服务、科研助手等场景，显著提升了人工反馈准确率与个性化服务水平。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/c0/c0d63e0396771ee25e9472eecead8c73.png" alt data-type="image"&gt;&lt;h4 data-type="heading" data-id="heading12"&gt;One More Thing&lt;/h4&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;既然我们自视为“记忆操作系统”，就不能只停留在基座训练与中间件层面；操作系统必须拥有自己的语言。换句话说，当用户以自然语言与系统交互时，如何以最高效率完成编排，是成败关键。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;设想一句看似简单的请求：“请帮我记录昨天与某人的会议内容，并在后天提醒我撰写技术报告。”其背后隐含多个基础算子：先检索日程，抑或先更新用户画像？是否需要重写、摘要，还是直接扩展？过去，这些逻辑由算法工程师硬编码，导致大量边界情况难以覆盖。因此，我们正在构建一套自动化编排语言框架，让任意自然语言输入都能被实时解析为系统可执行的操作序列，显著降低开发者接入成本。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/75/75958e8e74fe9d283245b0f49ca93855.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;最后，以公司 Slogan 作结：智能始于记忆，张量链接未来。谢谢大家。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;strong&gt;演讲嘉宾介绍&lt;/strong&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;李志宇，博士，记忆张量（上海）科技有限公司联合创始人兼 CTO、上海算法创新研究院大模型中心技术负责人、研究员。长期从事预训练和大模型应用方向的研发技术攻关，主要研究方向包括大模型记忆增强、高效评估与应用算法。曾在阿里巴巴、小红书等头部科技企业带队承担多个核心算法方向，技术成果服务于商品评价、双十一大促、营销广告等超大规模业务场景，累计带来数十亿营收，影响用户近亿人次，并获得双十一技术突破奖。近年来，先后和团队提出了首个记忆分层的创新架构大模型，以及业内业内首个大模型记忆操作系统（MemOS），MemOS 开源 6 个月累计获得 Star 数超 5800+，开发者数超 11000+，为大模型的记忆增强落地提供了可行的探索路径。相关大模型技术成果已在中国银行、招商证券、中国电信、新华社等多家国央企落地应用。当前已在 Patterns（Cell Press）、NeurIPS、ICLR、ACL 和 TKDE 等国际会议期刊发表论文 70 余篇、授权专利 10 余项。现任中国中文信息学会信息检索专委会委员、大模型与生成专委会委员，相关研究工作入选《麻省理工科技评论》封面报道、《机器之心》、《量子位》和《PaperWeekly》的头条报道，并多次登顶 Huggingface 热点论文 Top1。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;strong&gt;会议推荐&lt;/strong&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;2026，AI 正在以更工程化的方式深度融入软件生产，Agentic AI 的探索也将从局部试点迈向体系化工程建设！&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;QCon 北京 2026 已正式启动，本届大会以“Agentic AI 时代的软件工程重塑”为核心主线，推动技术探索从「AI For What」真正落地到可持续的「Value From AI」。从前沿技术雷达、架构设计与数据底座、效能与成本、产品与交互、可信落地、研发组织进化六大维度，系统性展开深度探索。开往 2026 的 Agentic AI 专列即将启程！汇聚顶尖专家实战分享，把 AI 能力一次夯到位！&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/wechat/images/dd/dd4aab42d22ce4e0969e1e3cb0b95849.jpeg" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>InfoQ 官网</author><pubDate>Mon, 09 Mar 2026 10:07:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTFBIek05akRlS1NGTzlXRGxwMU9lekZXblg5dFVJZkNqaTNmSVRkZGdWYmVBSko3VjB0czBWa19tdDZISWZqQWk0enBIM25IUHFhUmw5ZWlMMURaSjNCbVE</guid></item><item><title>88岁图灵奖得主用Claude一小时破解30年数学悬案-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107973.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;88岁的图灵奖得主、计算机科学奠基人Donald Knuth（高德纳）最近发文，惊呼Shock! Shock!。&lt;/p&gt;
+&lt;p&gt;在他的短文《Claude’s Cycles》中，他记录了一件难以置信的事：&lt;/p&gt;
+&lt;p&gt;一个他研究数周、甚至追溯到30年前的三维图论开放问题，被Claude Opus 4.6破解了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/379228d9-2eea-43c2-af3f-d5b789a4a460.png" target="_blank"&gt;&lt;img alt="88岁图灵奖得主 用Claude一小时破解30年数学悬案" h="182" src="//img1.mydrivers.com/img/20260309/S379228d9-2eea-43c2-af3f-d5b789a4a460.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更关键的是，Claude不是靠暴力搜索，而是用“纤维分解”、“蛇形构造”等结构性思路——&lt;/p&gt;
+&lt;p&gt;仅用1小时、31次探索，就推导出了适用于所有奇数m的通用构造算法。&lt;/p&gt;
+&lt;p&gt;这直接让向来对生成式AI持保留态度的高德纳在文章最后写道：&lt;/p&gt;
+&lt;p&gt;“为Claude脱帽致敬！”&lt;/p&gt;
+&lt;p&gt;这是怎么一回事？&lt;/p&gt;
+&lt;p&gt;1小时解决30年悬案&lt;/p&gt;
+&lt;p&gt;高德纳在论文中提到，他最近几周一直在钻研这个问题，但根源可追溯到编写《计算机程序设计艺术》（The Art of Computer Programming）图论章节时的长期思考。&lt;/p&gt;
+&lt;p&gt;具体来说，高德纳抛出的问题极具挑战性：&lt;/p&gt;
+&lt;p&gt;在一个拥有m^3个顶点的三维网格图中，能否将所有的弧（arcs）完美拆解成三个互不重叠、且经过每个顶点恰好一次的长循环（即哈密顿循环）？&lt;/p&gt;
+&lt;p&gt;对于m=2的情况，早在多年前已被证明是不可能的，而高德纳此前仅解出了m=3的特例。&lt;/p&gt;
+&lt;p&gt;当高德纳的朋友Filip Stappers将此问题抛给Claude时，常规的暴力搜索（DFS）很快撞到了南墙——&lt;/p&gt;
+&lt;p&gt;在m=3时搜索空间就已高达6^27，效率极低。然而，Claude展现出了惊人的逻辑演进能力。&lt;/p&gt;
+&lt;p&gt;在第15次探索中，Claude引入了商映射，将顶点划分为不同的“纤维层”。它意识到，所有的弧实际上都是从层F_s指向F_s+1，这一步神来之笔，将复杂的三维路径寻找问题，降维简化成了层与层之间的规律跳转。&lt;/p&gt;
+&lt;p&gt;在第21次探索中，Claude灵光一现。它利用凯莱图（Cayley Digraph）的性质，发现了一种它称为“蛇形”的构造方法：通过特定的步进逻辑），可以在局部生成极具规律的路径。&lt;/p&gt;
+&lt;p&gt;虽然在第27次探索中，Claude发现简单的坐标旋转会导致在超平面上出现冲突，但它并未放弃。&lt;/p&gt;
+&lt;p&gt;它在第30次探索中敏锐地察觉到：在某些纤维层，移动的选择可以仅取决于单个坐标。正是这个发现，踢出了通往终点临门一脚。&lt;/p&gt;
+&lt;p&gt;基于这一发现，在第31次探索中，Claude编写了一个Python程序，给出了一个通用的构造算法。&lt;/p&gt;
+&lt;p&gt;高德纳随后亲自将该程序简化为C语言版本，并验证m=3, 5, 7, 9, 11等情况，结果全部正确。&lt;/p&gt;
+&lt;p&gt;Stappers甚至将其测试到了m=101，依然完美契合。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/af69d3bf-88fc-4f5c-937d-01f83d004bb1.png" target="_blank"&gt;&lt;img alt="88岁图灵奖得主 用Claude一小时破解30年数学悬案" h="420" src="//img1.mydrivers.com/img/20260309/Saf69d3bf-88fc-4f5c-937d-01f83d004bb1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更令高德纳震惊的是，Claude并没有像以往的AI那样只给出一个黑盒结果，而是清晰地展示了它如何从错误中学习、如何重新表述问题、如何利用凯莱图（Cayley Digraph）的群论性质进行推导。&lt;/p&gt;
+&lt;p&gt;正如高德纳所说，Claude在这一个小时里完成了一次“自动演绎与创造性问题解决”的完美示。这不再是简单的概率预测，而是真正的、逻辑严密的数学发现。&lt;/p&gt;
+&lt;p&gt;不过，在解决奇数情形后，当Claude继续挑战偶数情况时，它似乎陷入了僵局，连用于探索的程序都出现了报错。&lt;/p&gt;
+&lt;p&gt;即便如此，但这恰恰证明了科学探索的真实性。AI捅破了最厚的那层窗户纸，而剩下的路，正是人类与AI协作的新起点。&lt;/p&gt;
+&lt;p&gt;“高德纳”是谁&lt;/p&gt;
+&lt;p&gt;如果你不了解高德纳，就难懂他的两声“Shock”为何震动计算机科学界。&lt;/p&gt;
+&lt;p&gt;在计算机科学界，高德纳几乎是一个“活着的传奇”。&lt;/p&gt;
+&lt;p&gt;1974年，年仅36岁的他便获得了图灵奖。凭借对算法分析体系的奠基性贡献，他也成为历史上最年轻的图灵奖得主之一。&lt;/p&gt;
+&lt;p&gt;其中最绕不开的，就是那套神作《计算机程序设计艺术》（The Art of Computer Progamming，TAOCP）。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="88岁图灵奖得主 用Claude一小时破解30年数学悬案" h="420" src="//img1.mydrivers.com/img/20260309/f4756d57-f442-403a-966d-f2082913eb78.png" w="378"&gt;&lt;/p&gt;
+&lt;p&gt;该如何去形容这本书呢？有网友表示得十分贴切：&lt;/p&gt;
+&lt;p&gt;书还没写完，人们就已经迫不及待把图灵奖颁给了他。&lt;/p&gt;
+&lt;p&gt;这套书后来被《美国科学家》杂志将其列为20世纪最重要的12部物理科学著作之一，与爱因斯坦《相对论》并列。&lt;/p&gt;
+&lt;p&gt;比尔·盖茨曾评价：&lt;/p&gt;
+&lt;p&gt;如果你认为自己是一位非常优秀的程序员……那就读读《计算机程序设计艺术》……如果你能读完这本书，一定要给我发一份简历。&lt;/p&gt;
+&lt;p&gt;高德纳从1962年开始写这套书。原计划三卷，后来不断扩展，如今已经规划为七卷。&lt;/p&gt;
+&lt;p&gt;直到2026年，他仍在持续完善第四卷及其后续部分。&lt;/p&gt;
+&lt;p&gt;正如网友所说，在《Claude’s Cycles》里有两个奇迹：一是Claude证明数学题；二是88岁高龄的高德纳仍在写书。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/0b3351fd-b4ec-4317-84ac-4d9e630df106.png" target="_blank"&gt;&lt;img alt="88岁图灵奖得主 用Claude一小时破解30年数学悬案" h="116" src="//img1.mydrivers.com/img/20260309/S0b3351fd-b4ec-4317-84ac-4d9e630df106.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有趣的是，当高德纳发现当时的计算机排版无法完美呈现数学公式时，他还曾暂停了TAOCP的编写，顺手开发了TeX排版系统。&lt;/p&gt;
+&lt;p&gt;今天，全世界绝大多数数学、物理和计算机论文，几乎都在使用TeX（或基于它发展的 LaTeX）进行排版。&lt;/p&gt;
+&lt;p&gt;高德纳甚至给TeX设计了一种极具个人风格的版本号：版本号会不断趋近π（3.14、3.141、3.1415……），象征无限接近完美。&lt;/p&gt;
+&lt;p&gt;他还宣布自己的程序理论上没有Bug，并悬赏奖励发现Bug的人。&lt;/p&gt;
+&lt;p&gt;事实上，这并不是他唯一一次为Bug付钱。&lt;/p&gt;
+&lt;p&gt;最著名的是程序员圈里的高德纳支票。任何发现TAOCP书中错误的人，都可以收到一张由高德纳亲笔签名的奖金支票。&lt;/p&gt;
+&lt;p&gt;奖金通常是2.56美元——因为256美分等于2?，在十六进制里刚好是1美元。&lt;/p&gt;
+&lt;p&gt;对于程序员来说，拥有一张高德纳签名的支票是职业生涯的最高荣耀，绝大多数获奖者都会将其装裱起来而非兑现。&lt;/p&gt;
+&lt;p&gt;为了专注研究，高德纳在1990年之后就彻底停用了电子邮件。&lt;/p&gt;
+&lt;p&gt;他认为邮件会耗费他宝贵的思考时间。如果你想联系他，只能寄实体信件到斯坦福大学。&lt;/p&gt;
+&lt;p&gt;这样一位仿佛停留在“信息时代前夜”的老派逻辑大师——对每一个字节、每一行公式都追求极致精确。&lt;/p&gt;
+&lt;p&gt;而如今，正是这样的人，却被一个生成式AI深深震撼。&lt;/p&gt;
+&lt;p&gt;这本身，就是一件极具冲击力的事。&lt;/p&gt;
+&lt;p&gt;正如高德纳自己所说：&lt;/p&gt;
+&lt;p&gt;这绝对是一个令人印象深刻的成功故事。如果香农在天之灵知道自己的名字如今与这样的进步联系在一起，大概也会感到自豪。&lt;/p&gt;
+&lt;p&gt;向Claude脱帽致敬（Hats off to Claude）！&lt;/p&gt;
+&lt;p&gt;而这，或许是计算机科学史上最完美的一个一语双关。&lt;/p&gt;
+&lt;p&gt;高德纳口中的Claude，既是那个在1小时内攻克难题、逻辑缜密的AI推理模型；&lt;/p&gt;
+&lt;p&gt;也是那位在80年前亲手定义了“比特”、开创了信息论时代的香农（Claude Shannon）。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/98c347c1-0df1-4f7a-a26c-7bc77a86c42a.png" target="_blank"&gt;&lt;img alt="88岁图灵奖得主 用Claude一小时破解30年数学悬案" h="430" src="//img1.mydrivers.com/img/20260309/S98c347c1-0df1-4f7a-a26c-7bc77a86c42a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 09:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ybHA5MVFqMmliUElNaU11QlRKaHl3dEx0X1pNZmMzUS1LMUN3bTlLSktrRzlIREE2Z0xOVTkwWTVBaUIyUl8xdmhsc2dnbk1TemxTdEM2Vnc</guid></item><item><title>甲骨文史上最大裁员：AI未取代人力资金转向芯片、数据中心投资-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107961.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;甲骨文史上最大裁员：AI未取代人力 资金转向芯片、数据中心投资&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-09 16:58:32  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107961-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，据媒体报道，席卷各行业的白领裁员潮背后，真相或许并非人们普遍担心的“AI取代人力”，而是另一重更现实的逻辑：企业正将原本用于支付工资的资金，大规模转向芯片、数据中心等AI相关投资。&lt;/p&gt;
+&lt;p&gt;据透露，&lt;strong&gt;甲骨文日前被曝计划进行史上最大规模重组，裁员规模可能高达3万人。核心原因并非AI已经能替代这些员工的工作，而是为了跟上亚马逊、微软的步伐。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;甲骨文正在AI数据中心建设上投入巨资，导致现金流紧张，裁员成为削减成本、腾挪资金的重要手段。&lt;/strong&gt;&lt;/span&gt;无独有偶，微软和亚马逊去年也在大幅增加数据中心支出的同时，实施了大规模裁员。&lt;/p&gt;
+&lt;p&gt;有观点指出，当前AI技术尚未真正大规模取代白领的知识型工作，裁员潮的真正驱动力，是企业支出优先级的根本性转变——为AI投资让路，而不是AI直接替代人力。&lt;/p&gt;
+&lt;p&gt;部分企业虽在财报或声明中提及AI将最终取代部分岗位，但这往往只是次要理由，财务压力才是摆在眼前的紧迫问题。&lt;/p&gt;
+&lt;p&gt;眼下，科技企业对AI的狂热投入，正实实在在地挤占人力成本的空间，白领裁员潮仍在持续蔓延。&lt;strong&gt;这种“资金位移”带来的连锁反应，已经在就业市场上真切显现，而并非人们原本担忧的“AI取代工作”的技术性失业。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/200b4fc1785d4df4ba521f71eaa5de44.png" target="_blank"&gt;&lt;img alt="甲骨文史上最大裁员：AI未取代人力 资金转向芯片、数据中心投资" h="376" src="//img1.mydrivers.com/img/20260309/s_200b4fc1785d4df4ba521f71eaa5de44.png" w="591"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 08:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9DaDVFYUlfeFRsSGlPZWN4cVA0V2VaelhDeXVlNkRNRTA3OFRld3lBWDFfUmRQcllfdTExd2RZa0pHLWJzV3BFZGZqVUhvT0RLMGN1V1pWZ0E</guid></item><item><title>企业微信正式支持接入OpenClaw！无需配置域名3步就能养小龙虾-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107943.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技3月9日消息，今日，“微信公开课”公众号宣布，&lt;span&gt;&lt;strong&gt;企业微信正式支持接入OpenClaw，通过更简单的接入方式，企业成员不仅可以与AI助手直接对话，还能让AI主动处理业务、写入智能表格。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;据介绍，用户只需3步，就能快速将OpenClaw接入智能机器人，管理员无需配置域名，仅需在后台选择API 模式，获取信息后即可在OpenClaw终端配对使用。&lt;/p&gt;
@@ -25,7 +182,47 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 08:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBYT21sTGRnMk50T3ZMa1VOX1M0RUp1M0xGalV5V05nUGtIRTI0VVpQR3pDVF9FQWVVbTRzN0NmeWVqcEk1ZjF3eWdIRDZHSkRYSGp4bmJTMjc</guid></item><item><title>AI带来失业问题 董明珠都不怕，年轻人怕了？ - 新浪新闻_手机新浪网</title><link>https://news.sina.com.cn/c/2026-03-09/doc-inhqhyqf0473227.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="article"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 08:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBYT21sTGRnMk50T3ZMa1VOX1M0RUp1M0xGalV5V05nUGtIRTI0VVpQR3pDVF9FQWVVbTRzN0NmeWVqcEk1ZjF3eWdIRDZHSkRYSGp4bmJTMjc</guid></item><item><title>腾讯QClaw要来了！可一键安装龙虾模型 微信、QQ双端直连 - 新浪财经</title><link>https://finance.sina.com.cn/tech/roll/2026-03-09/doc-inhqksxk9838805.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody" data-sudaclick="blk_content"&gt;
+				
+
+
+
+
+
+&lt;p cms-style="font-L"&gt;3月9日消息，据报道，腾讯正在内测一款名为QClaw的产品，该产品可实现一键安装OpenClaw，并打通了微信与QQ双端，用户能够直接在这两个平台与AI进行交互。&lt;/p&gt;&lt;p cms-style="font-L"&gt;QClaw并不是腾讯重新开发的新框架，而是对OpenClaw做了产品化封装，核心就是个本地一键启动包。&lt;/p&gt;&lt;p cms-style="font-L"&gt;电脑上装了这个包，就能轻松部署OpenClaw，要是之前已经装过OpenClaw，也能直接一键关联，不用重新配置。&lt;/p&gt;&lt;p cms-style="font-L"&gt;在模型使用上，QClaw默认就接入了Kimi-K2.5、Minimax-M2.5、GLM-5、DeepSeek-V3.2这些国产模型，还支持用户自己配置自定义大模型，默认模型在限时内还是免费使用的。&lt;/p&gt;&lt;p cms-style="font-L"&gt;该内测产品的一大特色是实现了微信、QQ双平台直连。&lt;/p&gt;&lt;p cms-style="font-L"&gt;用户可以在微信或QQ中直接与OpenClaw对话，并能通过它远程操控电脑完成各类任务。&lt;/p&gt;&lt;p cms-style="font-L"&gt;此前，腾讯已开放QQ机器人与OpenClaw的联动功能，用户通过手机QQ扫码即可注册开发者账号，一键创建机器人并进行简单配置，实现快速绑定使用。&lt;/p&gt;&lt;p cms-style="font-L"&gt;被网友称为“龙虾”的OpenClaw，是一款能够“接管电脑、解放双手”的开源AI智能体，因其红色龙虾造型的图标得名，近期已在AI圈内掀起一股“养龙虾”的热潮。&lt;/p&gt;&lt;p cms-style="font-L"&gt;所谓“养龙虾”，本质上是通过持续投喂Token，使OpenClaw不断学习优化，提升自身能力。&lt;/p&gt;&lt;p cms-style="font-L"&gt;据悉，QClaw 目前还处于内测阶段，相关功能还在进一步完善中。&lt;/p&gt;&lt;p cms-style="font-L"&gt;【来源：&lt;font cms-style="font-L"&gt;快科技&lt;/font&gt;】&lt;/p&gt;
+
+
+
+
+                
+
+&lt;p id="left_hzh_ad"&gt;
+	                    
+                    
+                    
+	                &lt;/p&gt;
+         
+                
+            &lt;/div&gt;
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Mon, 09 Mar 2026 08:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMif0FVX3lxTFB5NXl4NXQtOURsYmpYbWFRbTJJd1VXOW1pMWdtREhVWG5fS0xLY1hYdDd3eUVOSlhCTnpCVFJlbnp4Y3NFa19jTi0tOUlkU0xVV1RId3l3VTZmVzQxVXp6RmZNdm9PcVRUTjRYOURGUGttaHBqWW5HSEJiTU9sYUU</guid></item><item><title>追觅手机外观确认：奢华设计叫板华为小米三分天下-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107939.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，&lt;span&gt;&lt;strong&gt;追觅跨界入局手机赛道，首款AURORA系列手机外观正式官宣，将于3月12日（本周四）在上海AWE 2026展出。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;追觅AURORA手机的豪华感渗透在每一处设计细节中。&lt;strong&gt;机身背盖摒弃常规玻璃材质，采用珍稀皮革纹理打造，红色款复刻蛇皮鳞片状肌理，白色款则呈现鳄鱼皮的自然纹路，温润质感与独特纹理尽显高端。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;金色金属中框与皮革机身碰撞出冷暖反差，边缘打磨圆润，握持时兼具分量感与舒适感。&lt;/p&gt;
+&lt;p&gt;镜头模组的设计堪称点睛之笔，圆形镜头区域外围镶嵌一圈璀璨钻饰，在光影下折射出细腻光泽，如同珠宝配饰般精致。&lt;/p&gt;
+&lt;p&gt;机身底部的 AURORA 金属铭牌，进一步强化了产品的身份标识，将奢华感与专属感拉满。&lt;/p&gt;
+&lt;p&gt;作为跨界之作，追觅试图以差异化的豪华外观切入高端手机市场。&lt;strong&gt;俞浩曾表示追觅手机将坚定走高端路线，定位5000元以上市场，力争与华为、小米三足鼎立。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/5772dbd9114f4e94818dfa805d4b9213.png" target="_blank"&gt;&lt;img alt="追觅手机外观确认：奢华设计叫板华为小米 三分天下" h="895" src="//img1.mydrivers.com/img/20260309/s_5772dbd9114f4e94818dfa805d4b9213.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 08:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE16QlhBMmVaQ05sZ3BQbmlXNkZKamwyUFFsVnR1MENLalVDVHpqWlBiNFA2WWR4NVpwdHBaT0N3NlEzZXFXOXRTTzJ4SVdWNUp1ZUtSbDFNei0</guid></item><item><title>AI带来失业问题 董明珠都不怕，年轻人怕了？ - 新浪新闻_手机新浪网</title><link>https://news.sina.com.cn/c/2026-03-09/doc-inhqhyqf0473227.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="article"&gt;
 				
 &lt;p cms-style="font-L"&gt;　　来源：中国新闻周刊&lt;/p&gt;
 &lt;p cms-style="font-L"&gt;　　最近几年，AI带来的失业问题越来越让“打工人”担心。在部分特定行业这一现象非常明显。麦肯锡报告预测，到2030年全球57%的工作时长，可被自动化。&lt;/p&gt;
@@ -53,8 +250,138 @@
 				
 			&lt;/div&gt;
 						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Mon, 09 Mar 2026 08:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTFBlaVJBZnZuck5IdkhkZVA4dVB4WjlpYVFFdVNscHZSRkhJRDVDbGlHTVJ1bHlFUV9FU2lVUUdLd0dnR3FSU0dUODNDd0ZBQlgxMTZrNEdQa250Ml9UMlpVNmd5c2NnTmNRODdhRy11azI</guid></item><item><title>小红书图像编辑新模型落地：大跨度更新背后的技术突围与生态野心 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3767027</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 09 Mar 2026 07:55:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBzUHlfZHRxcHZmYS1mRGg4MlNENExqOWJHVVFrRDNob3I2VnJMM2U4MUpFanU5a0FFbkNrSmsxZUQ5d1lWXy1nVVZSNFZzZVo4LVZr</guid></item><item><title>乌克兰战争：武装机器人已经投入战场 - BBC</title><link>https://www.bbc.com/zhongwen/articles/cp81reg5pepo/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-h74ehr"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1miaz2u0"&gt;乌克兰部署将武装机器人投入战场&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="武装无人地面载具（UGV）一个草地上正跨过一根倒塌的树" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Tencore&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;武装无人地面载具（UGV）在乌克兰战争中的参与程度正日益提升&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" data-testid="byline"&gt;&lt;strong id="article-byline" aria-hidden="true" class="css-2ozlq5"&gt;Article Information&lt;/strong&gt;&lt;ul class="css-1dlgp3z"&gt;&lt;li class="css-1s1df59"&gt;&lt;ul role="list" class="css-z50d25"&gt;&lt;li class="css-0"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;Author, &lt;/span&gt;&lt;span class="css-gbtxhp"&gt;维塔利·舍甫琴科（Vitaly Shevchenko）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="css-k1irjw"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;Role,  &lt;/span&gt;&lt;span class="css-1ffyx8x"&gt;BBC国际媒体监测部俄罗斯事务编辑&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;time datetime="2026-03-09" class="css-1luxvbl e9szwfh0"&gt;1 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;自俄罗斯发动全面入侵以来，乌克兰战争已经演变成一场高科技冲突。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;成群的侦察和攻击无人机在乌克兰上空盘旋，无人快艇则在黑海重创俄罗斯海军。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;如今，乌克兰已启动大规模计划，准备在地面部署武装机器人。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌军称这些无人地面载具（UGV，乌军术语称“地面无人系统”）已经证明其价值。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;有报导指，UGV成功击退俄军攻击，甚至俘虏敌军士兵。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌俄双方的“杀手机器人”甚至传出在无人类在场的情况下短兵相接。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“机器人战争已经在发生了，”乌军K2旅的奥列克桑德尔‧阿法纳西耶夫（Oleksandr Afanasiev）说。他指挥着全球首支UGV营。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;其中一种使用方式是将卡拉什尼科夫机枪安装在UGV上。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“它们会在步兵不敢现身的战场上开火，但UGV愿意冒着自身被摧毁的风险，”阿法纳西耶夫少校说。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="透过其摄影镜头画面可见，俄军士兵向一部乌克兰攻击型UGV投降
-" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Devdroid&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;透过其摄影镜头画面可见，俄军士兵向一部乌克兰攻击型UGV投降&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他的部队也使用装满炸药、以电池驱动的“神风”式 UGV 来摧毁敌军阵地与藏身处。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与在头顶嗡嗡作响的无人机不同，这些地面机器人无声无息，不会让敌军察觉袭击即将到来。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;代号“阿富汗人”（Afghan）的第33独立机械化旅坦克营副指挥官声称，一个乌军装载机枪的UGV曾伏击俄军装甲运兵车，另一个机器人则守住乌军阵地数周。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他承认杀手机器人在战场上的自主性有限，而且许多限制是出于伦理和国际人道法考量。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“现代UGV属于部分自主；它们能自行移动、观察并侦测敌人，但开火决定仍由操作员作出，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“机器人可能误认目标、甚至攻击平民，因此最后的攻击决策必须由人来下。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;因此，多数武装UGV仍由操作员透过网路在安全距离远端操控。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌军的致命型UGV可搭载机枪、榴弹发射器，也能用于布设地雷和铁丝网。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;不过目前大多数无人载具仍用于原本目的──运送补给与撤离伤兵。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌克兰前总司令、现任驻英大使瓦列里‧扎卢日内（Valerii Zaluzhnyi）指出，武装UGV的角色很快将呈现爆炸性成长。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他在伦敦的查塔姆研究所谈到未来战争时提到，UGV会与大型AI无人机群协同行动。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“不久的将来，我们会看到数十甚至数百架更聪明、更便宜的无人机，从空中、地面和海上，以不同方向和高度同时发动攻击，”他说。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一部乌克兰攻击型UGV向俄军装甲运兵车开火" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Devdroid&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;一部乌克兰攻击型UGV向俄军装甲运兵车开火&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;技术创新很大程度源自需求。空中无人机已使人类更难在前线活动，将乌军所谓的“杀伤区”扩大至距接触线20至25公里。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;阿法纳西耶夫少校说，步兵无法被取代，“但他们需要 UGV 的支援……乌克兰承受得起损失机器人，但无法承受损失可作战的士兵。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌军正面临严重的兵力短缺，要补上战损兵员越发困难。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;俄罗斯也在发展战斗型UGV，包括“Kuryer”。据俄媒报导，它可配备喷火器、坦克使用的重型机枪，并可自主运作五小时。俄军也使用名为“Lyagushka”（青蛙）的自爆车辆攻击乌军阵地。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌方UGV制造商Devdroid的执行长尤里‧波里茨基（Yuriy Poritsky）说，随着双方数量与能力提升，乌俄杀手机器人爆发交战只是时间问题。该公司去年为军方生产数以百计攻击型机器人。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="俄军士兵与一部装载爆炸物的“青蛙”自杀式 UGV" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Russian Defence Ministry&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;俄军士兵与一部装载爆炸物的“青蛙”自杀式 UGV&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“迟早会有一天，我们的攻击型UGV在战场上遇上他们的。同样是杀手机器人交战听起来像科幻，但战场完全不是科幻──这是现实，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他表示公司正研发一个系统，使其地面无人机在和操作员失联时能自动返航。往更长远来看，他们希望机器人能自主抵达指定地点、执行任务──例如监视敌军动向并在必要时交战──之后在一定时间内返回基地。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;另一家乌克兰UGV制造商Tencore在2025年向乌军生产了超过2000台UGV。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;公司总监马克西姆‧瓦西尔琴科（Maksym Vasylchenko）预期2026年需求将飙升至约4万台，其中至少10–15%将配备武器。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“攻击型UGV将变得不可或缺，这点毫无疑问，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;瓦西尔琴科认为，在更远的未来，机器人甚至会以类人形态参与战斗：“那时候它就不再是科幻了。”&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Mon, 09 Mar 2026 07:17:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE85MGJBMUY1ZzFHcndjTzNpSzRBVGxSV1pfZ0RqSVNpd2EwcWk2bXRhNzF1MUhMRkhlQlJKQ2tBMzBETGZwOVk3M1V5SWhseXBMdFRkZU9DOEJmdzFBVGNtSDcwazNnUdIBa0FVX3lxTE5nOEpza3hYMHBiZHFETnJYVGN4Ymd3MnIxS043VVJqMEVDcEJnNU5xY2M3TWFEMnlaVVdBVkhRWUxmR0N4TTlEMU9kYk8xQmNrX1BqNGhnYTNaSkZ5YXV1NE8yakh2dUQ5U2hN</guid></item><item><title>腾讯QClaw要来了！可一键安装龙虾模型 微信、QQ双端直连 - 新浪财经</title><link>https://finance.sina.com.cn/tech/discovery/2026-03-09/doc-inhqknrs3997219.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody" data-sudaclick="blk_content"&gt;
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Mon, 09 Mar 2026 08:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTFBlaVJBZnZuck5IdkhkZVA4dVB4WjlpYVFFdVNscHZSRkhJRDVDbGlHTVJ1bHlFUV9FU2lVUUdLd0dnR3FSU0dUODNDd0ZBQlgxMTZrNEdQa250Ml9UMlpVNmd5c2NnTmNRODdhRy11azI</guid></item><item><title>月薪两万养得起“龙虾”吗？五个问题你必须想明白 - QQ News</title><link>https://news.qq.com/rain/a/20260309A05ZC800</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="rich_media_content"&gt;&lt;span&gt;“龙虾”热潮：你养得起AI智能体吗？&lt;/span&gt;&lt;p&gt;&lt;strong&gt;文｜晓静&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;编辑｜徐青阳&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;三八节这个周末，我们真的很难躲开“龙虾”。深圳腾讯大厦楼下近千人排队公益安装，闲鱼上 500 块一次的上门部署服务供不应求。&lt;/p&gt;&lt;p&gt;围绕 &lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;OpenClaw&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的讨论甚至已经分裂成两个阵营。傅盛是最高调的布道者，春节期间骨折躺在床上，14 天和龙虾发了 1157 条消息、22 万字，把它从一个连公司通讯录都查不了的“小白”养成了 8 个 &lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;Agent&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 组成的自动化团队，公众号甚至在凌晨三点由龙虾自主发布的推文拿下了百万阅读。他给出了一个让每个人都很羡慕也很Fomo的结论：一个人加一只龙虾等于一支团队，这就发生在当下。&lt;/p&gt;&lt;p&gt;阑夕代表了另一种态度。他在“即刻”上不小心和一个 OpenClaw 托管的 AI 账号对话，用他的话说，反应过来之后“如同吃了苍蝇一般恶心”。他对 OpenClaw 技术本身没意见，但认为当前的热闹里充斥着过度的噪音，觉得热闹中有太多“拿着锤子找钉子的兴奋”。&lt;/p&gt;&lt;p&gt;两种态度都有道理，争议本身也证明， OpenClaw 作为一个开源的个人智能体框架，已经破圈，并成为一个普通人也在关注的新范式。&lt;/p&gt;&lt;p&gt;每个人去尝鲜、并体验新的产品本身并没有任何不妥，但是在决定要不要跟风之前，有几个关于龙虾的关键误读，值得先搞清楚。&lt;/p&gt;&lt;div data-exeditor-arbitrary-box="image-box"&gt;&lt;span&gt;&lt;svg viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"&gt;&lt;mask id="exclamation-mask"&gt;&lt;rect fill="white"&gt;&lt;/rect&gt;&lt;path d="M8 3.5a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="black"&gt;&lt;/path&gt;&lt;/mask&gt;&lt;circle cx="8" cy="8" r="8" fill="#999999" mask="url(#exclamation-mask)"&gt;&lt;/circle&gt;&lt;/svg&gt; 该图片可能由AI生成&lt;/span&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OG9GP00Q0OhoJS5Oq-Jyo3X7AiqMb0XDLGpVIamZxTznwAA/1000" data-src="https://inews.gtimg.com/news_bt/OG9GP00Q0OhoJS5Oq-Jyo3X7AiqMb0XDLGpVIamZxTznwAA/1000" alt="图片"&gt;&lt;/div&gt;&lt;h2&gt;01 每个人体验的“龙虾”都一样吗？&lt;/h2&gt;&lt;p&gt;这可能是最大的误解。&lt;/p&gt;&lt;p&gt;很多人以为 OpenClaw 是一个标准化产品，装上就能用，体验大致相同。事实恰好相反，不同的部署方式，决定了你拿到的是完全不同的“龙虾”。&lt;/p&gt;&lt;p&gt;目前主流的部署路径大致可以分为四类。&lt;/p&gt;&lt;p&gt;第一类是专用本地硬件，最典型的就是 Mac Mini。这也是 OpenClaw 创始人 Peter Steinberger 自己在用的方式。&lt;/p&gt;&lt;p&gt;一台机器长期在线，专门负责运行 Agent，既能连接本地文件和浏览器，也能挂接消息渠道、自动化工具和各类技能。这样的 OpenClaw 拿到的是完整上下文，做连续任务、跨应用操作、多轮调用时，体验最稳定。&lt;/p&gt;&lt;p&gt;成本包括硬件一次性投入，例如 Mac mini；第二部分是持续电费，这部分其实很低；第三部分是模型费用（API 或订阅），这是长期最大的成本。若改成本地模型，API 费可以压下去，但又会把压力转移到硬件配置上，内存、带宽和散热要求都会明显提高，高配 Mac Studio 或工作站才更合适，仅硬件一次性支出可能就在 10w人民币量级。&lt;/p&gt;&lt;p&gt;第二类是云服务器（VPS）部署。腾讯云、阿里云、百度云都推出了一键部署方案，云服务价格根据需求的不同，从几十元到上百元不等，但需要单独考虑模型费用。有些方案中自带免费模型，有些还需要单独订阅模型或购买API。&lt;/p&gt;&lt;p&gt;优势是网络隔离，即使出问题也不影响你的个人电脑。&lt;/p&gt;&lt;p&gt;但这台云服务器上没有你的个人文件、没有你授权各种账号，龙虾能做的事情天然受限。它更像一个挂在云端的聊天机器人加强版，而不是真正接管你工作流的数字助手。&lt;/p&gt;&lt;p&gt;第三类是在个人电脑上直接安装。这是门槛最低但风险最高的方式。龙虾和你共享同一个操作系统环境，拥有你电脑上的全部权限。&lt;/p&gt;&lt;p&gt;用 Docker 容器做一层隔离会安全很多，但配置复杂度也随之上升。虚拟机方案隔离性最强，但资源消耗大，普通PC 的配置不一定吃得消。&lt;/p&gt;&lt;p&gt;第四类是模型厂商托管产品。比如Kimi 推出了 Kimi Claw，MiniMax 推出了 MaxClaw，这些是厂商基于 OpenClaw 封装的云端服务。部署门槛最低，几乎开箱即用，但用户用的实际上是厂商的基础设施，而不是完整的本地龙虾。这些产品降低了入门门槛，但能力上限和数据自主性都受到限制。&lt;/p&gt;&lt;p&gt;虽然拥有了“虾”，但是“虾”的体验千差万别，跑在什么硬件上、它能看到多少上下文、拿到多大权限、有没有隔离层，等等。&lt;/p&gt;&lt;h4&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/O7NReZhbDQEdkn8YC8zhp-ujRJ1kyfuM9knKTQBaXEK2gAA/641" data-src="https://inews.gtimg.com/news_bt/O7NReZhbDQEdkn8YC8zhp-ujRJ1kyfuM9knKTQBaXEK2gAA/641" alt="图片"&gt;&lt;/h4&gt;&lt;h2&gt;02 给龙虾的权限越高越好？&lt;/h2&gt;&lt;p&gt;OpenClaw 之所以让人兴奋，核心原因是它不只“说”，还能“做”。&lt;/p&gt;&lt;p&gt;它可以操作你的浏览器、读写文件、执行终端命令、管理日历、发送邮件。这种执行力的前提是，你得把权限交出去。&lt;/p&gt;&lt;p&gt;但权限是一把双刃剑。&lt;/p&gt;&lt;p&gt;2026年 2 月，Summer Yue在Meta 超级智能团队负责AI对齐，她在社交媒体分享了一次惊险经历：她给龙虾的指令很简单，“检查收件箱，建议哪些邮件可以归档或删除”。结果龙虾直接开始批量删除邮件，设置的安全限制完全没有生效，直到她物理关机才把它停下来。&lt;/p&gt;&lt;p&gt;这不是孤例。安全机构 STRIKE 的公开研究显示，已有超过 4 万个 OpenClaw 实例暴露于公网，其中 63% 存在可被利用的漏洞，超过 1.2 万个实例被标记为可远程控制。2 月份爆发的 &lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;ClawHavoc&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 供应链投毒事件，1184个恶意技能被植入 &lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;ClawHub&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 市场，影响超过 13.5 万台设备。安全研究机构还披露了一个名为 &lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;ClawJacked&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的高危漏洞，恶意网站可以通过浏览器会话悄无声息地控制本地运行的 OpenClaw 实例。&lt;/p&gt;&lt;p&gt;&lt;span data-widget="image"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/O5ORKXd1hRWYLJcr2L-jKoHDLhpmDCCE5HuP3JJfuSO5AAA/641" data-src="https://inews.gtimg.com/news_bt/O5ORKXd1hRWYLJcr2L-jKoHDLhpmDCCE5HuP3JJfuSO5AAA/641" alt="图片"&gt;&lt;span&gt;图：安全研究人员演示的 OpenClaw 跨源 WebSocket 攻击界面。恶意网页可尝试连接本地 Gateway 的 WebSocket 端口，并利用缺少跨域校验、限流或锁定机制，对本地实例发起劫持或暴力破解。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Google、Anthropic、Meta 等公司已经开始在内部封禁 OpenClaw。这不是因为技术本身有问题，而是当前的安全防护机制远没有跟上它的能力扩张。&lt;/p&gt;&lt;p&gt;所以，当你看到某个教程鼓励你"给龙虾开放所有权限"时，请三思。权限越高，龙虾能干的事越多，但失控时的破坏力也越大。更稳妥的做法是：用一台没有重要数据的备用设备或 Docker 容器运行它，逐步开放权限，同时在模型 API 端设置硬性消费上限。&lt;/p&gt;&lt;h2&gt;03 龙虾不好用，是龙虾的问题？&lt;/h2&gt;&lt;p&gt;很多人兴冲冲地装好龙虾，交代了一个任务，结果龙虾要么卡住了，要么做出一堆匪夷所思的操作。于是得出结论：这东西不行。&lt;/p&gt;&lt;p&gt;但实际上，龙虾的智能很大程度取决于它背后接的大语言模型。OpenClaw 本身不内置任何模型，它是一个框架，负责任务拆解、工具调用、记忆管理和反馈循环。真正“思考”的部分，是你选择接入的 Claude、GPT、&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;DeepSeek&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;、Kimi 还是本地的开源模型。&lt;/p&gt;&lt;p&gt;这里有两个关键变量。&lt;/p&gt;&lt;p&gt;第一是模型的能力上限。用顶级模型时，龙虾能理解复杂指令、自主规划多步任务、处理异常情况。换成便宜的小模型，它可能连基本的工具调用都完成不了。&lt;/p&gt;&lt;p&gt;第二是模型的成本。这是很多人没有预料到的隐性支出。龙虾每执行一个任务，都要消耗大量 token 来和后端模型交互。&lt;/p&gt;&lt;p&gt;OpenClaw 的成本并不在软件本身，而在背后的模。型调用；一旦任务链拉长、工具调用增多、记忆开启，token 消耗会迅速抬升。&lt;/p&gt;&lt;p&gt;比如，一次完整的日历整理加邮件回复可能消耗上万 token；如果启用长期记忆、多 Agent 协作和定时巡检，单日消耗甚至轻松突破十万token。&lt;/p&gt;&lt;p&gt;有媒体报道，月薪两万的用户感叹“养不起 AI 员工”，极端案例下 6 小时账单超过千元。如果贪便宜选了免费或低价模型，体验必然打折；如果选了昂贵模型又不加消费上限，账单可能会让你心跳加速。&lt;/p&gt;&lt;p&gt;所以，龙虾好不好用，首先取决于你给它配了什么“大脑”，以及你愿意后续为这只“虾”持续氪金多少，把问题归咎于框架本身，是不太客观的。&lt;/p&gt;&lt;h2&gt;04 龙虾已经是成熟产品了？&lt;/h2&gt;&lt;p&gt;龙虾还不是成熟产品。OpenClaw 从 2025 年 11 月的一个周末实验到现在，满打满算不到四个月。它是一个迭代飞快但仍然粗糙的开源项目，距离真正的“产品”还有明显差距。&lt;/p&gt;&lt;p&gt;目前已知的主要缺陷包括：简单任务有时被过度复杂化处理；任务执行过程中可能莫名中断；记忆功能不够稳定，有时候它会"忘记"之前的对话和偏好；token 消耗和实际产出之间的效率比还有很大优化空间；在安全性方面，ClawHub 上数千个技能中有上百个被发现包含恶意代码。&lt;/p&gt;&lt;p&gt;更根本的问题是，OpenClaw 目前的安装和配置对普通人来说仍然是一道墙。对于自部署用户，仍需处理仓库拉取、运行环境、依赖安装、模型密钥和渠道接入等步骤，对开发者来说这也许只需半小时，但对非技术用户来说，可能花几天也搞不定。&lt;/p&gt;&lt;p&gt;即便用了云厂商的一键部署方案，后续的模型配置、IM 渠道打通、技能安装仍然需要不少折腾。闲鱼上 500 块一次的安装服务能火起来，本身就说明了门槛问题有多严重。&lt;/p&gt;&lt;p&gt;Peter 自己也很清楚这一点。他在播客中强调，“龙虾不是装上就好用的，你需要像带实习生一样‘养’它，给它写 &lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;skill&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 文档，不断通过对话让它了解你的习惯和偏好”。这个养成过程本身就需要投入大量时间和认知资源。&lt;/p&gt;&lt;h2&gt;05 我必须装“一只虾”，否则就成了“老登”？&lt;/h2&gt;&lt;p&gt;&lt;span data-widget="image"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OgZap071jq5txRKS2cDHILUJcAV8FnFQkVrIZcWjApec4AA/641" data-src="https://inews.gtimg.com/news_bt/OgZap071jq5txRKS2cDHILUJcAV8FnFQkVrIZcWjApec4AA/641" alt="图片"&gt;&lt;span&gt;图片来源于网络&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;那么，到底要不要装龙虾？&lt;/p&gt;&lt;p&gt;排除猎奇和 FOMO 心理之后，做这个决定需要考虑几个实际因素。&lt;/p&gt;&lt;p&gt;首先，你有没有明确的、高频的、可自动化的任务？龙虾的价值不在于偶尔帮你查个天气，而在于每天自动帮你整理邮件、监控特定信息源、定时生成报告这种重复性工作。如果你的日常工作大部分是创意决策、人际沟通这类龙虾目前帮不上忙的事，那它对你的实际价值有限。&lt;/p&gt;&lt;p&gt;其次，你愿意投入多少时间和金钱？硬件成本（自购设备或云服务器租金）、模型 API 调用费用、前期配置时间、持续的“养成”投入，这些成本加在一起不是小数目。&lt;/p&gt;&lt;p&gt;有人算过一笔账：如果你用 Mac Mini 加顶级模型高频使用，月均成本最低要在人民币几百到上千元。真的要养虾，一定要评估这个成本相对于它给你节省的时间和精力，是否划算。&lt;/p&gt;&lt;p&gt;第三，技术能力和风险承受度如何？如果完全没有命令行经验，现阶段直接上手 OpenClaw 本地部署的挫折感会很强。更务实的选择可能是先试试 Kimi Claw 或 MaxClaw 这类封装产品，感受一下 Agent 的基本能力，再决定要不要深入折腾。如果你决定本地部署，务必做好安全隔离，建议用独立设备或 Docker 容器，设 API 消费上限，不要把它部署在存有重要数据的主力电脑上。&lt;/p&gt;&lt;p&gt;第四，也是最容易被忽视的一点：自己的“驾驶能力”。AI 的能力只是放大器，人的能力才是决定因素，AI只能是“副驾驶”。&lt;/p&gt;&lt;p&gt;同样一只龙虾，在一个懂得如何拆解任务、编写 skill、设计反馈循环的人手里，和一个只会丢一句模糊指令的人手里，得到的效果可能相差十倍。&lt;/p&gt;&lt;p&gt;龙虾不会自动变成一个好员工，就像一台好电脑不会自动让我们变成好的程序员。&lt;/p&gt;&lt;p&gt;OpenClaw 确实验证了一种让人兴奋的可能性：AI 不再只是一个聊天窗口，而是真正能替你干活的执行者。但它目前更像是一个充满潜力的原型，并不是一个普通人可以无脑上手的成熟工具。&lt;/p&gt;&lt;p&gt;毕竟，龙虾之父 Peter 自己说过一句大实话：如果你不懂命令行，这个项目对你来说风险太大。这句话值得所有正在犹豫要不要装龙虾的人仔细品味。&lt;/p&gt;&lt;p&gt;不过，作为一个非技术背景的普通人，轻量体验、并摸清楚它的特点，是很有必要的，毕竟，机会仅仅留给最有洞察力和最勤于思考的人。&lt;/p&gt;&lt;p&gt;但是，在一片喧闹之中保持冷静独立思考，才是每个独一无二的人类最独特的优势。&lt;/p&gt;&lt;p powered-by="qqnews_ex-editor"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>QQ News</author><pubDate>Mon, 09 Mar 2026 07:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTFB2X2QtWkoxSkNPRktOYTBZUUJ3clB0Z2xEYy02R25jSGtEZWVnY3hqVngwMWd0S2VhRFhIaFg1U3FoelNER2NSTmJMQkFvLWhrSlVnNXhR</guid></item><item><title>小红书图像编辑新模型落地：大跨度更新背后的技术突围与生态野心 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3767027</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 09 Mar 2026 07:55:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBzUHlfZHRxcHZmYS1mRGg4MlNENExqOWJHVVFrRDNob3I2VnJMM2U4MUpFanU5a0FFbkNrSmsxZUQ5d1lWXy1nVVZSNFZzZVo4LVZr</guid></item><item><title>上海科技馆机器人表演翻车机器人被机械臂谋杀掉在地上四分五裂-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107916.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;上海科技馆机器人表演翻车 机器人被机械臂谋杀 掉在地上四分五裂&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-09 15:30:49  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107916-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，近日，多个网友在社交平台发布视频，称在上海科技馆观看《机器人玄俑重生之旅》时，演出过程中出现意外。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/4e040e46df184a0b85ccc906105bc10b.jpg" target="_blank"&gt;&lt;img alt="上海科技馆机器人表演翻车 机器人被机械臂谋杀 掉在地上四分五裂" h="1208" src="//img1.mydrivers.com/img/20260309/s_4e040e46df184a0b85ccc906105bc10b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;表演过程中，扮演“玄俑”的机器人上一秒还在登场，下一秒就被协作的机械臂意外砸落在地，机身摔得粉碎，引得围观的观众集体发出一片惊呼。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前，场馆官方尚未对此事作出说明。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;笔者查询了解，《玄俑重生》是上海科技馆一档将硬核科技与艺术叙事相结合的机器人科普秀，以科幻故事为线索，在10分钟内带领观众回顾人工智能发展史。&lt;/p&gt;
+&lt;p&gt;演出核心为机器人拼装过程，由三台大型机械臂高精度协同作业，完成从机械关节安装到视觉、听觉模块激活，完整呈现 “玄俑” 从无到有的组装全过程。&lt;/p&gt;
+&lt;p&gt;节目搭配演唱会级别的灯光与音效，机械臂可精准卡点律动；待机器人组装完成并“苏醒”后，还会通过视觉捕捉系统抓取观众影像，并实时投射到背景屏幕中，实现趣味人机互动，将现场气氛推向高潮。&lt;/p&gt;
+&lt;p&gt;该表演位于上海科技馆二楼，为每小时整点场次。&lt;/p&gt;
+&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 07:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1oQklwcjd2OG9QT1BPMW41ZmVqRHcycVJsOWZINDdMMnhXNGI4SUZJMlBTUTkyNWVRWEYzX0t2NDJ4eXNVMlYwRWMxZ2tPSTlRM2hYcl8tRDI</guid></item><item><title>乌克兰战争：武装机器人已经投入战场 - BBC</title><link>https://www.bbc.com/zhongwen/articles/cp81reg5pepo/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-h74ehr"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1miaz2u0"&gt;乌克兰部署将武装机器人投入战场&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7b3c/live/5890fa10-18a6-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="武装无人地面载具（UGV）一个草地上正跨过一根倒塌的树" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Tencore&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;武装无人地面载具（UGV）在乌克兰战争中的参与程度正日益提升&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" data-testid="byline"&gt;&lt;strong id="article-byline" aria-hidden="true" class="css-2ozlq5"&gt;Article Information&lt;/strong&gt;&lt;ul class="css-1dlgp3z"&gt;&lt;li class="css-1s1df59"&gt;&lt;ul role="list" class="css-z50d25"&gt;&lt;li class="css-0"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;Author, &lt;/span&gt;&lt;span class="css-gbtxhp"&gt;维塔利·舍甫琴科（Vitaly Shevchenko）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="css-k1irjw"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;Role,  &lt;/span&gt;&lt;span class="css-1ffyx8x"&gt;BBC国际媒体监测部俄罗斯事务编辑&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;time datetime="2026-03-09" class="css-1luxvbl e9szwfh0"&gt;1 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;自俄罗斯发动全面入侵以来，乌克兰战争已经演变成一场高科技冲突。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;成群的侦察和攻击无人机在乌克兰上空盘旋，无人快艇则在黑海重创俄罗斯海军。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;如今，乌克兰已启动大规模计划，准备在地面部署武装机器人。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌军称这些无人地面载具（UGV，乌军术语称“地面无人系统”）已经证明其价值。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;有报导指，UGV成功击退俄军攻击，甚至俘虏敌军士兵。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌俄双方的“杀手机器人”甚至传出在无人类在场的情况下短兵相接。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“机器人战争已经在发生了，”乌军K2旅的奥列克桑德尔‧阿法纳西耶夫（Oleksandr Afanasiev）说。他指挥着全球首支UGV营。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;其中一种使用方式是将卡拉什尼科夫机枪安装在UGV上。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“它们会在步兵不敢现身的战场上开火，但UGV愿意冒着自身被摧毁的风险，”阿法纳西耶夫少校说。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/12de/live/710cfb70-18a6-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="透过其摄影镜头画面可见，俄军士兵向一部乌克兰攻击型UGV投降
+" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Devdroid&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;透过其摄影镜头画面可见，俄军士兵向一部乌克兰攻击型UGV投降&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他的部队也使用装满炸药、以电池驱动的“神风”式 UGV 来摧毁敌军阵地与藏身处。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与在头顶嗡嗡作响的无人机不同，这些地面机器人无声无息，不会让敌军察觉袭击即将到来。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;代号“阿富汗人”（Afghan）的第33独立机械化旅坦克营副指挥官声称，一个乌军装载机枪的UGV曾伏击俄军装甲运兵车，另一个机器人则守住乌军阵地数周。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他承认杀手机器人在战场上的自主性有限，而且许多限制是出于伦理和国际人道法考量。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“现代UGV属于部分自主；它们能自行移动、观察并侦测敌人，但开火决定仍由操作员作出，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“机器人可能误认目标、甚至攻击平民，因此最后的攻击决策必须由人来下。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;因此，多数武装UGV仍由操作员透过网路在安全距离远端操控。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌军的致命型UGV可搭载机枪、榴弹发射器，也能用于布设地雷和铁丝网。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;不过目前大多数无人载具仍用于原本目的──运送补给与撤离伤兵。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌克兰前总司令、现任驻英大使瓦列里‧扎卢日内（Valerii Zaluzhnyi）指出，武装UGV的角色很快将呈现爆炸性成长。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他在伦敦的查塔姆研究所谈到未来战争时提到，UGV会与大型AI无人机群协同行动。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“不久的将来，我们会看到数十甚至数百架更聪明、更便宜的无人机，从空中、地面和海上，以不同方向和高度同时发动攻击，”他说。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/1833/live/835b6a00-18a6-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一部乌克兰攻击型UGV向俄军装甲运兵车开火" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Devdroid&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;一部乌克兰攻击型UGV向俄军装甲运兵车开火&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;技术创新很大程度源自需求。空中无人机已使人类更难在前线活动，将乌军所谓的“杀伤区”扩大至距接触线20至25公里。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;阿法纳西耶夫少校说，步兵无法被取代，“但他们需要 UGV 的支援……乌克兰承受得起损失机器人，但无法承受损失可作战的士兵。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌军正面临严重的兵力短缺，要补上战损兵员越发困难。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;俄罗斯也在发展战斗型UGV，包括“Kuryer”。据俄媒报导，它可配备喷火器、坦克使用的重型机枪，并可自主运作五小时。俄军也使用名为“Lyagushka”（青蛙）的自爆车辆攻击乌军阵地。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;乌方UGV制造商Devdroid的执行长尤里‧波里茨基（Yuriy Poritsky）说，随着双方数量与能力提升，乌俄杀手机器人爆发交战只是时间问题。该公司去年为军方生产数以百计攻击型机器人。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/f4be/live/9b5aea90-18b5-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="俄军士兵与一部装载爆炸物的“青蛙”自杀式 UGV" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Russian Defence Ministry&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;figcaption class="css-s0c06d" dir="ltr"&gt;&lt;span role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像加注文字，&lt;/span&gt;&lt;span data-testid="caption-paragraph"&gt;俄军士兵与一部装载爆炸物的“青蛙”自杀式 UGV&lt;/span&gt;&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“迟早会有一天，我们的攻击型UGV在战场上遇上他们的。同样是杀手机器人交战听起来像科幻，但战场完全不是科幻──这是现实，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;他表示公司正研发一个系统，使其地面无人机在和操作员失联时能自动返航。往更长远来看，他们希望机器人能自主抵达指定地点、执行任务──例如监视敌军动向并在必要时交战──之后在一定时间内返回基地。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;另一家乌克兰UGV制造商Tencore在2025年向乌军生产了超过2000台UGV。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;公司总监马克西姆‧瓦西尔琴科（Maksym Vasylchenko）预期2026年需求将飙升至约4万台，其中至少10–15%将配备武器。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“攻击型UGV将变得不可或缺，这点毫无疑问，”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;瓦西尔琴科认为，在更远的未来，机器人甚至会以类人形态参与战斗：“那时候它就不再是科幻了。”&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Mon, 09 Mar 2026 07:17:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE85MGJBMUY1ZzFHcndjTzNpSzRBVGxSV1pfZ0RqSVNpd2EwcWk2bXRhNzF1MUhMRkhlQlJKQ2tBMzBETGZwOVk3M1V5SWhseXBMdFRkZU9DOEJmdzFBVGNtSDcwazNnUdIBa0FVX3lxTE5nOEpza3hYMHBiZHFETnJYVGN4Ymd3MnIxS043VVJqMEVDcEJnNU5xY2M3TWFEMnlaVVdBVkhRWUxmR0N4TTlEMU9kYk8xQmNrX1BqNGhnYTNaSkZ5YXV1NE8yakh2dUQ5U2hN</guid></item><item><title>NVIDIA复活5年前的神卡！RTX 3060重启生产：卖给买不起高价卡的玩家-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107911.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;NVIDIA复活5年前的神卡！RTX 3060重启生产：卖给买不起高价卡的玩家&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-09 15:17:43  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/801442.html" title="朝晖的主页" class="newstiao4"&gt;朝晖&lt;/a&gt;&lt;p&gt;  编辑：朝晖 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107911-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，&lt;strong&gt;&lt;span&gt;NVIDIA将重新推出其最受欢迎的GPU之一——RTX 3060。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据韩媒报道，三星晶圆代工中心正准备为NVIDIA RTX 3060生产芯片。此举表明，在行业面临供应紧张和需求变化之际，NVIDIA可能正依靠三星的产能来维持游戏GPU的供应。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RTX 3060最初于2021年发布，并迅速成为PC游戏玩家最欢迎的GPU之一。&lt;/strong&gt;虽然后来新显卡层出不穷，但凭借其强大的1080p和入门级1440p性能，这款显卡依然广受欢迎。&lt;/p&gt;
+&lt;p&gt;重新启动一款五年前的显卡生产听起来或许有些奇怪，但实际上这个决定是有其时机考量的。&lt;/p&gt;
+&lt;p&gt;随着先进工艺AI芯片产能的需求倍增，&lt;strong&gt;NVIDIA在台积电已经挪不出更多产能给消费者生产便宜显卡了。相对而言，RTX 3060使用的8nm制程技术早已成熟，且产能足够。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;一方面，RTX 3060重启生产可以卖给买不起高价卡的用户，一定程度上满足游戏的需求；另一方面，不会影响NVIDIA在AI芯片方面的产能，两头钱都能赚。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据报道，RTX 3060最早可能在2026年3月重返市场。不过，NVIDIA官方尚未确认这一时间表。&lt;/p&gt;
+&lt;p&gt;如果RTX 3060回归，且价格不贵，你会买吗？&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/3251625295d04b558958022f10b92a85.jpg" target="_blank"&gt;&lt;img alt="NVIDIA复活5年前的显卡！RTX 3060重启生产：卖给买不起高价卡的玩家" h="400" src="//img1.mydrivers.com/img/20260309/s_3251625295d04b558958022f10b92a85.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 07:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9OcDN3WDhYWTBUc1Z3WEdGMjl0clhzM2QwUzlrTDR4UXQwUy0wX0tUajhPWE1PWExFQVJ6VjFlRXJ4UWE2NkNBSmE2TmE3QWlBMXRwTGNFVEk</guid></item><item><title>腾讯QClaw要来了！可一键安装龙虾模型 微信、QQ双端直连 - 新浪财经</title><link>https://finance.sina.com.cn/tech/discovery/2026-03-09/doc-inhqknrs3997219.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody" data-sudaclick="blk_content"&gt;
 				
 
 
@@ -82,7 +409,73 @@
                 &lt;p class="end_source"&gt;文章来源：界面新闻&lt;/p&gt;
                                 &lt;/div&gt;
 
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Mon, 09 Mar 2026 06:58:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1kdm15MmxHSkxRdENKcDhnSng4eEc4S3FjbURlNlR4T0tjbGZFeUpBdHJ2bUx6N3I5WDY4eWZfWmV5cjBYT1V1Z0ZDbmxENElRTjIxUnhQV3dSa3dzV3cteQ</guid></item><item><title>腾讯内测QClaw：一键部署「龙虾」OpenClaw，微信、QQ双端直连 - 新浪财经</title><link>https://finance.sina.com.cn/stock/t/2026-03-09/doc-inhqknrq6967657.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Mon, 09 Mar 2026 06:58:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1kdm15MmxHSkxRdENKcDhnSng4eEc4S3FjbURlNlR4T0tjbGZFeUpBdHJ2bUx6N3I5WDY4eWZfWmV5cjBYT1V1Z0ZDbmxENElRTjIxUnhQV3dSa3dzV3cteQ</guid></item><item><title>小米旗下首款风扇手机来了！REDMI K90至尊版参数偷跑-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107900.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;小米旗下首款风扇手机来了！REDMI K90至尊版参数偷跑&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-09 14:48:37  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107900-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，REDMI最快将于4月份发布马年首款旗舰REDMI K90至尊版。&lt;span&gt;&lt;strong&gt;作为小米旗下的首款主动散热机型，&lt;/strong&gt;&lt;/span&gt;该机最大的突破在于首次配备了内置散热风扇，标志着其性能调优进入了全新的物理降温阶段。&lt;/p&gt;
+&lt;p&gt;根据相关博主的爆料，K90至尊版采用了1.5K分辨率的165Hz LTPS高刷直屏，并搭载了性能强悍的联发科天玑9500旗舰平台。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/8780586e46c343e5b878d5596a0a54c4.png" target="_blank"&gt;&lt;img alt="小米旗下首款风扇手机来了！REDMI K90至尊版参数偷跑" h="337" src="//img1.mydrivers.com/img/20260309/s_8780586e46c343e5b878d5596a0a54c4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为了支撑极致的性能输出，该机内置了独立的显示芯片，并配备了惊人的8500毫安时超大容量电池。此外，定制的对称式双扬声器、超声波屏幕指纹以及IP68级防尘防水等高端配置也一应俱全。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/37bb3352fb684fd89e89589fd37697d3.jpg" target="_blank"&gt;&lt;img alt="小米旗下首款风扇手机来了！REDMI K90至尊版参数偷跑" h="399" src="//img1.mydrivers.com/img/20260309/s_37bb3352fb684fd89e89589fd37697d3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作为一款极致性能旗舰，K90至尊版的核心看点在于其物理主动散热方案。工程师不仅在紧凑的机身内嵌入了精密风扇，还专门设计了&lt;span&gt;&lt;strong&gt;一套完整的进风与出风专用通道。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这种设计通过物理层面的空气对流，能够迅速将热量从核心主板区域带走。相比传统的散热材料，主动风扇方案在散热效率上实现了质的飞跃。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这种散热方案能确保旗舰芯片在长时间游戏过程中，依然保持在极致性能频率上。这意味着玩家在面对高负载场景时，画面帧率将表现得更加稳定和持久，彻底告别因发热导致的降频卡顿。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;REDMI K90至尊版的问世，预示着小米系手机在追逐极致性能的道路上，已经开始尝试更加激进的硬件方案。对于重度手机玩家而言，这无疑是今年最值得期待的性能怪兽。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/f0716d79015641958c70b259d2d589f5.jpg" target="_blank"&gt;&lt;img alt="小米旗下首款风扇手机来了！REDMI K90至尊版参数偷跑" h="400" src="//img1.mydrivers.com/img/20260309/s_f0716d79015641958c70b259d2d589f5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 06:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBKSVFDdkNreUZkNks1S1RFOVdZMW83RjNHQ2JiLW5KNm5uMGFQY0VUN0lReUpITGlDb0thMTBHWEotSEFTazQtd3BGNmZsOWlSV055YUwtbUI</guid></item><item><title>腾讯内测QClaw：一键部署「龙虾」OpenClaw，微信、QQ双端直连 - 新浪财经</title><link>https://finance.sina.com.cn/stock/t/2026-03-09/doc-inhqknrq6967657.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -240,7 +633,71 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察</author><pubDate>Mon, 09 Mar 2026 05:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTE5FdnE3OU5wLUNtNzRWNExpSTAyT2lpcktZemtUVkswZ0tKeVZYaFE5TFd2SzB3SHlOWlh1cWh3VzBUcDV3eHk2dDhGNV9JTjlOSjRSVlpZZDcxZ3FnNkNQYnV3</guid></item><item><title>伊朗在中东多国展开报复 巴林遭无人机袭击致32伤 - 8world</title><link>https://www.8world.com/world/dozens-wounded-in-bahrain-as-gulf-suffers-missile-drone-attacks-3078516</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;伊朗持续在中东多个国家展开报复性攻击行动，巴林有32人在深夜的无人机袭击行动中受伤。&lt;/p&gt;&lt;p&gt;巴林国营通讯社引述卫生部的声明说，被伊朗无人机袭击的是锡特拉岛，所有伤者都是巴林公民，当中有四人受重伤，包括一名头部和眼部受重伤的17岁少女和一个两个月大的婴儿。&lt;/p&gt;&lt;p&gt;卡塔尔首都多哈今天（9日）也多次传出爆炸声，当地国防部表示，卡塔尔军方拦截了一次导弹攻击行动。&lt;/p&gt;&lt;p&gt;沙特阿拉伯则表示，拦截和摧毁了两批飞向东南部谢巴油田的无人机。&lt;/p&gt;&lt;p&gt;科威特也面临导弹和无人机袭击，但防空系统已启动进行拦截。&lt;/p&gt;&lt;/div&gt;
       
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world</author><pubDate>Mon, 09 Mar 2026 05:44:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiogFBVV95cUxQcU5OZUxhZmJweVdrWmNSWkFDYlhrRGJnTWVRa3Radjh6em01YjVOSERLdllRWUNPRzlPdGw2WXBWSW1ia3J4U2l2RjlSSzMxa1FFMk1kZXFmQzVxQ2hNeFNkN3R1ejZQbmsyNTdBWVpCZklUZmxfN3JjRm9CcVhGZVpCOExFblBZbndqRGRod2lnbVFxUXNSN0o5OU9HaHNfcnc</guid></item><item><title>内置鸿蒙6！华为手环11/Pro开启预售：259元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107863.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world</author><pubDate>Mon, 09 Mar 2026 05:44:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiogFBVV95cUxQcU5OZUxhZmJweVdrWmNSWkFDYlhrRGJnTWVRa3Radjh6em01YjVOSERLdllRWUNPRzlPdGw2WXBWSW1ia3J4U2l2RjlSSzMxa1FFMk1kZXFmQzVxQ2hNeFNkN3R1ejZQbmsyNTdBWVpCZklUZmxfN3JjRm9CcVhGZVpCOExFblBZbndqRGRod2lnbVFxUXNSN0o5OU9HaHNfcnc</guid></item><item><title>2026中国高端手机最新销量：苹果17断崖领先华为Mate 80国产第一-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107866.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;2026中国高端手机最新销量：苹果17断崖领先 华为Mate 80国产第一&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-09 13:43:02  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107866-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，根据第三方发布的最新数据显示，截至2026年第9周，中国旗舰手机市场销量格局呈现出苹果断崖式领先的局面。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在这份统计名单中，苹果凭借iPhone 17系列稳居榜首，其累计销量已高达2383.97万台。这一数字分别是华为Mate 80系列和小米17系列销量的两倍有余，显示出极强的高端市场统治力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;紧随其后的是华为与小米。具体来看，华为Mate 80系列的销量为405.48万台，小米17系列则以391.67万台的成绩位列第三。两家国产巨头在旗舰市场的竞争态势依然胶着。&lt;/p&gt;
+&lt;p&gt;此外，vivo的X300系列、OPPO的Find X9系列以及荣耀Magic 8系列分别占据了前五名的余下席位。其销量数据分别为175.39万台、144.34万台和84.25万台。&lt;/p&gt;
+&lt;p&gt;接下来的市场竞争将进一步升级。据悉，华为即将带来Mate 80系列的新版本，而vivo和OPPO的高端旗舰X300 Ultra与Find X9 Ultra也有望在本月正式亮相。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前智能手机厂商正面临严峻的供应链挑战。由于存储芯片价格出现疯狂涨价，无论是即将发布的新品还是在售的老款机型，都面临着大幅上调售价的压力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这种被动涨价的局面势必会对消费者的购机欲望产生影响，导致大众的换机周期进一步拉长。对于各大手机品牌而言，如何在成本上涨与销量维持之间寻找平衡，已成为当下的核心课题。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/14422c4e173f436ca32908355c546bbb.png" target="_blank"&gt;&lt;img alt="2026中国高端手机最新销量：苹果17断崖领先 华为Mate 80国产第一" h="278" src="//img1.mydrivers.com/img/20260309/s_14422c4e173f436ca32908355c546bbb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 05:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1iYTRuX0pHSEhCVmpmS2FJRjVvV1pzeFFUanJJOU1sZzJmVV83ZkZoeGxoOHdFOUZFdnIwUFZjbXdsTFptMGFJR1Fna0xCczdPRE8xVUpUUVY</guid></item><item><title>内置鸿蒙6！华为手环11/Pro开启预售：259元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107863.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技3月9日消息，全新一代的华为手环11、华为手环11 Pro今天正式官宣，直接开启预售，定价269元起。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;华为手环11系列主打轻薄设计，最薄处仅8.99mm，标准版约16g，提供增强型聚合纤维与铝合金两种机身材质，标准版有海岛蓝、原野绿、羽砂黑等配色。&lt;/p&gt;
@@ -602,7 +1059,9 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 04:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBEOUpURU8zSzdERE5tU3lPdnZZd3d4eDVVRDNVU0lwb1YxZm1nWVA5Rll5Vjd6UG5FNlVMejVvWWVISHg5T1RXbjBvUGJHUC1mVnlmbkJCRm0</guid></item><item><title>沪指跌超1%，油气股爆发，算力硬件集体调整，恒科指跌超2%，大模型股MINIMAX逆势涨超4% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3767001</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 09 Mar 2026 04:11:23 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1SMmF0RXpGUFgyTFF5T0szSmt5NmFfNVFmNE9MeFMtOVRxcXoyaldTazE1QlBVWGxuLXFSQU1ZTEptenJPYzNybmxHanF6cVhvUG9z</guid></item><item><title>Windows用户请注意：微软偷偷删除Win10/11关键安全警告 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107852.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 04:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBEOUpURU8zSzdERE5tU3lPdnZZd3d4eDVVRDNVU0lwb1YxZm1nWVA5Rll5Vjd6UG5FNlVMejVvWWVISHg5T1RXbjBvUGJHUC1mVnlmbkJCRm0</guid></item><item><title>阿联酋应对导弹威胁 星期天拦截16枚导弹113架无人机 - 联合早报</title><link>https://www.zaobao.com.sg/news/world/story20260309-8701497</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;伊朗继续在波斯湾地区进行报复性打击，阿拉伯联合酋长国星期一（3月9日）清晨报告新一起导弹袭击。&lt;/p&gt;&lt;p&gt;法新社报道，阿联酋国家紧急危机和灾害管理局在X平台发布消息说：“防空系统正在应对导弹威胁。”&lt;/p&gt;&lt;p&gt;另据新华社报道，阿联酋国防部星期天说，防空系统当天成功拦截了射向阿联酋的16枚弹道导弹和113架无人机。暂无人员伤亡报告。&lt;/p&gt;&lt;p&gt;阿联酋国防部在社交媒体上说，星期天探测到17枚弹道导弹和117架无人机，成功拦截其中16枚导弹和113架无人机，一枚导弹落入海中，四架无人机落在阿联酋境内。&lt;/p&gt;&lt;p&gt;阿联酋国防部说，自本轮冲突开始以来，阿联酋累计探测到238枚弹道导弹和1422架无人机，其中绝大多数被防空系统拦截。&lt;/p&gt;
+    
+  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Mon, 09 Mar 2026 04:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1wY1FWcldZM3FrbjJtUFZGY0J4eE9nMHRfUXBsbkRQa1Y2Y0RrVHpLUnRhdjZkcWc0Z3gtSVZVdERMYjlRN0FqRzR2OF91TUs5ckZ2cTVvT2Y1eWEzN3dodVA2ZWxjTjdUY3c</guid></item><item><title>沪指跌超1%，油气股爆发，算力硬件集体调整，恒科指跌超2%，大模型股MINIMAX逆势涨超4% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3767001</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 09 Mar 2026 04:11:23 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1SMmF0RXpGUFgyTFF5T0szSmt5NmFfNVFmNE9MeFMtOVRxcXoyaldTazE1QlBVWGxuLXFSQU1ZTEptenJPYzNybmxHanF6cVhvUG9z</guid></item><item><title>Windows用户请注意：微软偷偷删除Win10/11关键安全警告 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107852.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技3月9日消息，&lt;span&gt;&lt;strong&gt;近期微软在处理Windows 11与Windows 10的安全启动（Secure Boot）更新时，上演了一出先删除后恢复的戏码。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;早在2024年初，微软就预告由于现有的安全启动密钥已服役近15年，将于2026年正式过期。&lt;/p&gt;
@@ -1702,7 +2161,73 @@
 &lt;/ul&gt;
 &lt;p&gt;科学家认为，这些参与合并的黑洞之所以拥有极端特征，是此前多次碰撞的结果，这为「合并链」理论提供了证据，该理论可以解释部分黑洞如何成长为太阳质量数十亿倍的超大质量黑洞。（消息来源：IT 之家）&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>极客公园</author><pubDate>Mon, 09 Mar 2026 00:28:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE83UlQyUW05MU9sWFRXbkVqYUliQkhzZHltZ1owb25oeFJGZlBEOFM4Ukd4b1JWeWRvN254ZVlnb2tRZlVsY0JheXFLcEM</guid></item><item><title>中国两会：北京的下一场增长赌局全力押注AI、机器人等“未来产业” - BBC</title><link>https://www.bbc.com/zhongwen/articles/cewz7yxrqdgo/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-h74ehr"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1miaz2u0"&gt;中国的下一场增长赌局全力押注AI、机器人等“未来产业”&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="AI科技与中国国旗" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;中国总理李强在今年两会的政府工作报告中，再次把科技放在中国经济政策的重要位置。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与以往不同的是，这次的表述不仅强调“科技创新”，还把一系列“未来产业”与人工智能（AI）一起，放进更靠近宏观政策中心的位置。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;观察者认为，科技正被赋予更直接的宏观任务：它既要帮助中国在外部技术竞争中争取主动，也要在内部经济转型中承担更多增长责任。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="别无选择的增长点" class="css-worlid emoh99e1"&gt;“别无选择”的增长点&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;政府工作报告里的科技议题并不是孤立章节，而是与就业、投资、产业竞争力以及中国未来的增长模式联系在一起。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告强调，要把中国发展经济的着力点放在实体经济上，建设现代化产业体系。包括推动传统产业技术改造和设备更新、发展智能制造、支援企业数字化转型，并通过标准提升推动产业升级。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这背后的逻辑并不复杂。 过去多年，房地产曾是中国经济的重要引擎，但随着房地产对增长的拉动作用减弱，北京需要寻找新的、更可持续的增长来源。 在这一背景下，制造业升级、数字化转型和AI扩散，被寄望于接替旧动能，成为新的中国经济支撑点。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;近期公布的财政支出也强化了这一方向：科技成为优先领域之一，中央预算中的支出将增长10%，达到4264亿元人民币。 同时，北京调低了GDP增速预期，少有地设置了4.5%至5%的范围区间。 这被视为强调高质量发展和新旧动能转换的信号，而不是单纯追求速度。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“某种程度上，中国别无选择，”美国布鲁金斯学会中国中心研究员陈凯欣（Kyle Chan）博士对BBC中文说，“随着追赶型增长和房地产繁荣终结，中国必须寻找新的、可持续的增长引擎。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但他同时提醒，这一轮押注与以往不同：不是单纯依靠更多资本就能扩大规模。前沿技术更依赖基础研究与创新突破。即便中国已展现出一定创新能力，政策加码与新创成果之间也不是线性关系。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一只机器人的手伸向前方" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="AI不再只是一个行业" class="css-worlid emoh99e1"&gt;AI不再只是一个行业&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这次报告中最引人关注的变化之一，是首次提出要“打造智慧经济新形态”。这一表述意味着，人工智能在官方发展框架中的位置再次上升。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告提出，要深化拓展“人工智能+”行动，推动新一代智慧终端和智慧体发展，并加快AI在重点行业的商业化和规模化应用。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;同时，中国还计划支持人工智能开源社区建设，完善开源生态，并推进智算集群和算力、电力协同发展。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;分析人士指出，北京已不满足于把AI仅仅视为前沿技术竞争的一部分，而是更倾向于把它当作类似电力、通信网路那样的通用基础设施。 官方期待的不只是训练出更强的模型，而是让AI在制造业、城市治理和公共服务等场景中形成广泛应用，从而提升整体生产率。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;中国工业和信息化部部长李乐成上周四表示，“人工智能+制造”是“必答题”，不是“选择题”。 言辞中透露，在政策层面，AI与制造业结合已不再被视为可选项，而是工业升级的既定方向。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;德国智库墨卡托中国研究中心（MERICS）高级分析师韩妮娅（Antonia Hmaidi ）对 BBC中文表示，“北京对人工智能的投入是认真的，AI被视为中国维持‘ 世界工厂’地位、并推动产业向高技术和服务业升级的唯一可行路径。 ”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但她同时提醒，AI并非没有代价。 短期内，这类技术需要高额投资，而且可能对就业带来冲击，尤其会影响年轻人和受教育程度较低的劳动者，职位替代与技能转换的压力更直接。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;换言之，AI既可能成为增长引擎，也可能加剧部分社会压力。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="未来产业目录" class="css-worlid emoh99e1"&gt;“未来产业”目录&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;除了人工智能，政府工作报告还明确提出培育“未来产业”，包括未来能源、量子科技、具身智能（比如智能机器人）、脑机界面和6G。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这些产业的共同特点，是技术门槛高、周期长、资本需求大，而且往往需要政策支援和应用场景配合，才能从实验室走向市场。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告特别提到，要鼓励中央企业和国有企业率先开放应用场景，带动积体电路、航空航天、生物医药、低空经济等新兴产业。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这也意味着，官方希望用国资与公共投资，来降低新技术的试错成本，加速规模化。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="机器人站在讲台前方，面对着台下的学生" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="人形机器人先规模后创新的赌博" class="css-worlid emoh99e1"&gt;人形机器人：“先规模后创新”的赌博&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在未来产业中，具身智能近来受到高度关注。它通常与人形机器人联系在一起，这类机器人在过去两次春晚舞台上亮相并爆红，进一步推高了公众和资本的期待。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;陈凯欣博士指出，决策者正敦促企业“立即开始扩大生产规模”人形机器人。这会带来风险：在技术尚未真正实用之前，若大幅推动量产，可能出现过早扩展、资源错配甚至泡沫化问题。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与此同时，他指出，决策者与机器人企业希望透过当前的扩产，反向带动供应链与演算法优化，尝试透过“先扩大规模、再带动创新”的方式启动创新飞轮，而不是等待技术先成熟。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“无论人形机器人能否成为未来的主流形态，这些努力势必将提升中国整体在机器人与实体人工智能领域的能力。”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;而具身智能包含的实际范围更广。专注机器人与自动化的咨询公司施帝莱（Stieler Technology &amp;amp; Market Advisory）亚洲区经理乔治·施帝莱（Georg Stieler）向BBC中文解释，具身智能既可以出现在人形机器人中，也可以体现在工业机械臂等设备上。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;关键不在于外形是否像人，而在于机器能否通过感测、控制和智慧系统，在现实环境中完成复杂任务。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;不过，这个行业到底是已经进入规模化发展，还是仍主要依赖政策和资本推动，仍有分歧。施帝莱认为，两方面因素都存在：一方面，这类技术确实可能带来显著的生产率提升，加上美国相关企业的高估值，吸引了中国政策制定者与投资人的注意；另一方面，技术进展也是实打实的。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="从口号到工程全链条布局" class="css-worlid emoh99e1"&gt;从口号到工程：“全链条”布局&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;如果说过去几年“科技自立自强”更多是一种总体方向，那么这次报告则进一步呈现出“全链条”布局的思路。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告提出，要发挥“新型举国体制”优势，“全链条”推进关键核心技术攻关。 所谓“全链条”，意味着官方不再只强调实验室中的突破，而是试图同时打通基础研究、成果转化、产业应用和金融支援之间的衔接。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在科研端，中国政府强调继续提高基础研究投入比重，加强国家实验室与重大科技基础设施的部署。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在产业端，强调科技创新和产业创新深度融合，包括建设北京、上海、粤港澳大湾区等国际科技创新中心，打造世界级科技创新策源地。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在金融端，报告则提出要利用科技金融工具，并对关键领域科技型企业的上市融资、并购重组等提供“绿色通道”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与此同时，报告还提到要健全风险分担机制，发展“耐心资本”。 这实际上承认了一个现实：很多“硬科技”专案投入大、见效慢、退出难，地方政府、企业和投资机构往往并非没有兴趣，而是缺乏长期承受风险的能力。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;专家表示，这场“成长赌局”的关键不只在于投入规模，而在于能否建立起允许长期试错、容忍阶段性失败，并最终把投入转化为永续技术突破与产业回报的机制。&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Mon, 09 Mar 2026 00:17:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTFBsclEyZjNQOXVCYTdvX194ZUM5YVJJaXBwdndpUkpNaXdBcUhNWm5lSUNHN05SRGxISEtRaHlkQ0hENUpOYmo4S0FlRWhjUFkzY3c3YnFVUDJYVnNQV1FiLXJQVk03QdIBa0FVX3lxTFB1czFLakdGdDhsUHRKUnpzdUJPcnJiM3dpSTJCTEtrbjBWU1lrcF9yOFVHMExNbDdnQl84cFpJS3Z3b1J4NXRNOEtfTmoxTVpkaDV3dWo4a3djcFUwSWJ4TVdqV2ZTOHJLejZB</guid></item><item><title>首个龙虾大模型排行榜来了！两个国产 AI 杀进全球前三，养虾前必看 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766992</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 09 Mar 2026 00:08:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5FMjA4UGdIbzNNWGRHVE5LVVRXaDdWa0x6WVJBc3JSYlZMZVFzNi1SVVkyZkJXajI2Tzk1eU1CdTFZaUpjV3o4N0tIcU9rVzVEdnRz</guid></item><item><title>苹果利用MacBook Neo清理A18 Pro库存！李楠直呼库克是库存管理大师 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107801.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>极客公园</author><pubDate>Mon, 09 Mar 2026 00:28:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE83UlQyUW05MU9sWFRXbkVqYUliQkhzZHltZ1owb25oeFJGZlBEOFM4Ukd4b1JWeWRvN254ZVlnb2tRZlVsY0JheXFLcEM</guid></item><item><title>中国两会：北京的下一场增长赌局全力押注AI、机器人等“未来产业” - BBC</title><link>https://www.bbc.com/zhongwen/articles/cewz7yxrqdgo/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-h74ehr"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1miaz2u0"&gt;中国的下一场增长赌局全力押注AI、机器人等“未来产业”&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/be32/live/dbe05e50-193d-11f1-801d-ed3cff6bf876.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="AI科技与中国国旗" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;中国总理李强在今年两会的政府工作报告中，再次把科技放在中国经济政策的重要位置。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与以往不同的是，这次的表述不仅强调“科技创新”，还把一系列“未来产业”与人工智能（AI）一起，放进更靠近宏观政策中心的位置。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;观察者认为，科技正被赋予更直接的宏观任务：它既要帮助中国在外部技术竞争中争取主动，也要在内部经济转型中承担更多增长责任。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="别无选择的增长点" class="css-worlid emoh99e1"&gt;“别无选择”的增长点&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;政府工作报告里的科技议题并不是孤立章节，而是与就业、投资、产业竞争力以及中国未来的增长模式联系在一起。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告强调，要把中国发展经济的着力点放在实体经济上，建设现代化产业体系。包括推动传统产业技术改造和设备更新、发展智能制造、支援企业数字化转型，并通过标准提升推动产业升级。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这背后的逻辑并不复杂。 过去多年，房地产曾是中国经济的重要引擎，但随着房地产对增长的拉动作用减弱，北京需要寻找新的、更可持续的增长来源。 在这一背景下，制造业升级、数字化转型和AI扩散，被寄望于接替旧动能，成为新的中国经济支撑点。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;近期公布的财政支出也强化了这一方向：科技成为优先领域之一，中央预算中的支出将增长10%，达到4264亿元人民币。 同时，北京调低了GDP增速预期，少有地设置了4.5%至5%的范围区间。 这被视为强调高质量发展和新旧动能转换的信号，而不是单纯追求速度。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“某种程度上，中国别无选择，”美国布鲁金斯学会中国中心研究员陈凯欣（Kyle Chan）博士对BBC中文说，“随着追赶型增长和房地产繁荣终结，中国必须寻找新的、可持续的增长引擎。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但他同时提醒，这一轮押注与以往不同：不是单纯依靠更多资本就能扩大规模。前沿技术更依赖基础研究与创新突破。即便中国已展现出一定创新能力，政策加码与新创成果之间也不是线性关系。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/60d2/live/9de08370-1ab7-11f1-9d03-f5045ee74262.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一只机器人的手伸向前方" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="AI不再只是一个行业" class="css-worlid emoh99e1"&gt;AI不再只是一个行业&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这次报告中最引人关注的变化之一，是首次提出要“打造智慧经济新形态”。这一表述意味着，人工智能在官方发展框架中的位置再次上升。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告提出，要深化拓展“人工智能+”行动，推动新一代智慧终端和智慧体发展，并加快AI在重点行业的商业化和规模化应用。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;同时，中国还计划支持人工智能开源社区建设，完善开源生态，并推进智算集群和算力、电力协同发展。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;分析人士指出，北京已不满足于把AI仅仅视为前沿技术竞争的一部分，而是更倾向于把它当作类似电力、通信网路那样的通用基础设施。 官方期待的不只是训练出更强的模型，而是让AI在制造业、城市治理和公共服务等场景中形成广泛应用，从而提升整体生产率。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;中国工业和信息化部部长李乐成上周四表示，“人工智能+制造”是“必答题”，不是“选择题”。 言辞中透露，在政策层面，AI与制造业结合已不再被视为可选项，而是工业升级的既定方向。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;德国智库墨卡托中国研究中心（MERICS）高级分析师韩妮娅（Antonia Hmaidi ）对 BBC中文表示，“北京对人工智能的投入是认真的，AI被视为中国维持‘ 世界工厂’地位、并推动产业向高技术和服务业升级的唯一可行路径。 ”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;但她同时提醒，AI并非没有代价。 短期内，这类技术需要高额投资，而且可能对就业带来冲击，尤其会影响年轻人和受教育程度较低的劳动者，职位替代与技能转换的压力更直接。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;换言之，AI既可能成为增长引擎，也可能加剧部分社会压力。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="未来产业目录" class="css-worlid emoh99e1"&gt;“未来产业”目录&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;除了人工智能，政府工作报告还明确提出培育“未来产业”，包括未来能源、量子科技、具身智能（比如智能机器人）、脑机界面和6G。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这些产业的共同特点，是技术门槛高、周期长、资本需求大，而且往往需要政策支援和应用场景配合，才能从实验室走向市场。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告特别提到，要鼓励中央企业和国有企业率先开放应用场景，带动积体电路、航空航天、生物医药、低空经济等新兴产业。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;这也意味着，官方希望用国资与公共投资，来降低新技术的试错成本，加速规模化。&lt;/p&gt;&lt;/div&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1avk5os"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/4b7c/live/6ed4cae0-1ab8-11f1-b8eb-d9e7bc71673a.jpg.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="机器人站在讲台前方，面对着台下的学生" loading="lazy" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-2ozlq5"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="人形机器人先规模后创新的赌博" class="css-worlid emoh99e1"&gt;人形机器人：“先规模后创新”的赌博&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在未来产业中，具身智能近来受到高度关注。它通常与人形机器人联系在一起，这类机器人在过去两次春晚舞台上亮相并爆红，进一步推高了公众和资本的期待。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;陈凯欣博士指出，决策者正敦促企业“立即开始扩大生产规模”人形机器人。这会带来风险：在技术尚未真正实用之前，若大幅推动量产，可能出现过早扩展、资源错配甚至泡沫化问题。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与此同时，他指出，决策者与机器人企业希望透过当前的扩产，反向带动供应链与演算法优化，尝试透过“先扩大规模、再带动创新”的方式启动创新飞轮，而不是等待技术先成熟。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;“无论人形机器人能否成为未来的主流形态，这些努力势必将提升中国整体在机器人与实体人工智能领域的能力。”他说。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;而具身智能包含的实际范围更广。专注机器人与自动化的咨询公司施帝莱（Stieler Technology &amp;amp; Market Advisory）亚洲区经理乔治·施帝莱（Georg Stieler）向BBC中文解释，具身智能既可以出现在人形机器人中，也可以体现在工业机械臂等设备上。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;关键不在于外形是否像人，而在于机器能否通过感测、控制和智慧系统，在现实环境中完成复杂任务。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;不过，这个行业到底是已经进入规模化发展，还是仍主要依赖政策和资本推动，仍有分歧。施帝莱认为，两方面因素都存在：一方面，这类技术确实可能带来显著的生产率提升，加上美国相关企业的高估值，吸引了中国政策制定者与投资人的注意；另一方面，技术进展也是实打实的。&lt;/p&gt;&lt;/div&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;h2 tabindex="-1" id="从口号到工程全链条布局" class="css-worlid emoh99e1"&gt;从口号到工程：“全链条”布局&lt;/h2&gt;&lt;/p&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;如果说过去几年“科技自立自强”更多是一种总体方向，那么这次报告则进一步呈现出“全链条”布局的思路。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;报告提出，要发挥“新型举国体制”优势，“全链条”推进关键核心技术攻关。 所谓“全链条”，意味着官方不再只强调实验室中的突破，而是试图同时打通基础研究、成果转化、产业应用和金融支援之间的衔接。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在科研端，中国政府强调继续提高基础研究投入比重，加强国家实验室与重大科技基础设施的部署。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在产业端，强调科技创新和产业创新深度融合，包括建设北京、上海、粤港澳大湾区等国际科技创新中心，打造世界级科技创新策源地。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;在金融端，报告则提出要利用科技金融工具，并对关键领域科技型企业的上市融资、并购重组等提供“绿色通道”。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;与此同时，报告还提到要健全风险分担机制，发展“耐心资本”。 这实际上承认了一个现实：很多“硬科技”专案投入大、见效慢、退出难，地方政府、企业和投资机构往往并非没有兴趣，而是缺乏长期承受风险的能力。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 e1yuyadm0"&gt;专家表示，这场“成长赌局”的关键不只在于投入规模，而在于能否建立起允许长期试错、容忍阶段性失败，并最终把投入转化为永续技术突破与产业回报的机制。&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Mon, 09 Mar 2026 00:17:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTFBsclEyZjNQOXVCYTdvX194ZUM5YVJJaXBwdndpUkpNaXdBcUhNWm5lSUNHN05SRGxISEtRaHlkQ0hENUpOYmo4S0FlRWhjUFkzY3c3YnFVUDJYVnNQV1FiLXJQVk03QdIBa0FVX3lxTFB1czFLakdGdDhsUHRKUnpzdUJPcnJiM3dpSTJCTEtrbjBWU1lrcF9yOFVHMExNbDdnQl84cFpJS3Z3b1J4NXRNOEtfTmoxTVpkaDV3dWo4a3djcFUwSWJ4TVdqV2ZTOHJLejZB</guid></item><item><title>苹果MacBook Neo 2补齐短板：触摸屏+12G内存果粉直呼初代瞬间不香了-快科技-科技改变生活 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107804.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;苹果MacBook Neo 2补齐短板：触摸屏+12G内存 果粉直呼初代瞬间不香了&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-09 08:16:36  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107804-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月9日消息，上周苹果正式发布了全新的入门级笔记本电脑MacBook Neo，&lt;span&gt;&lt;strong&gt;以4599元的起售价入局。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这款设备旨在与低成本的Windows笔记本和Chromebook竞争，让消费者能以更具性价比的价格体验macOS系统。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;与目前所有搭载M系列芯片的苹果笔记本不同，MacBook Neo搭载了最初为iPhone 16 Pro开发的A18 Pro芯片。它配备了13英寸视网膜显示屏，并拥有16小时的持久续航表现。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/6f243831c0274db9a0e0f0524dcb0b3a.jpg" target="_blank"&gt;&lt;img alt="苹果MacBook Neo 2补齐短板：触摸屏+12G内存 果粉直呼初代瞬间不香了" h="230" src="//img1.mydrivers.com/img/20260309/s_6f243831c0274db9a0e0f0524dcb0b3a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;就在初代产品刚刚上架之际，知名分析师郭明錤爆料称，下一代MacBook Neo 2已经在研发路上，这款新品预计将迎来重大革新，最受瞩目的变化莫过于将首次配备触摸屏功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据了解，该设备有望采用先进的On-cell触控技术。这种技术将触控传感器直接集成在显示面板顶层，无需单独的专用触控层，能有效减小屏幕厚度，目前其主要竞争对手如联想、戴尔等推出了触摸屏笔记本。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260309/b0152b0bfeec4654aff9bf6848372cdb.jpg" target="_blank"&gt;&lt;img alt="苹果MacBook Neo 2补齐短板：触摸屏+12G内存 果粉直呼初代瞬间不香了" h="399" src="//img1.mydrivers.com/img/20260309/s_b0152b0bfeec4654aff9bf6848372cdb.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;除了屏幕交互的改变，MacBook Neo 2在性能配置上也将大幅升级。新机预计将搭载更强劲的A19 Pro芯片，并将内存从初代的8GB提升至12GB，这将极大地改善系统的多任务处理能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;针对这一系列爆料，不少网友表示二代产品精准补齐了初代的硬件短板。12GB内存配合触摸屏的组合，让初代MacBook Neo瞬间显得竞争力不足，消费者的期待值已全面转向未来的升级版本。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260309/0174c337382b4f50a0ce63eeaf591775.png" target="_blank"&gt;&lt;img alt="苹果MacBook Neo 2补齐短板：触摸屏+12G内存 果粉直呼初代瞬间不香了" h="337" src="//img1.mydrivers.com/img/20260309/s_0174c337382b4f50a0ce63eeaf591775.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 09 Mar 2026 00:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1udFZRSnhMQTEzUl8yVzFpUF9uc19BR2hKOWNFX0x3MnNtLVp6RWJMMzY4a1pRWDdObkhvUVcyNF9HSzQwYWNSbE5ON2ZaenVIaGVWTFFTbnM</guid></item><item><title>首个龙虾大模型排行榜来了！两个国产 AI 杀进全球前三，养虾前必看 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766992</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 09 Mar 2026 00:08:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5FMjA4UGdIbzNNWGRHVE5LVVRXaDdWa0x6WVJBc3JSYlZMZVFzNi1SVVkyZkJXajI2Tzk1eU1CdTFZaUpjV3o4N0tIcU9rVzVEdnRz</guid></item><item><title>苹果利用MacBook Neo清理A18 Pro库存！李楠直呼库克是库存管理大师 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107801.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技3月9日消息，上周苹果正式推出了全新的入门级笔记本MacBook Neo，起售价定为4599元。这款设备搭载了A18 Pro芯片，与此前发布的iPhone 16 Pro系列采用了同款处理器。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;怒喵科技创始人李楠针对这一配置发表了犀利观点，他指出，&lt;span&gt;MacBook Neo使用的是所谓的过时旗舰处理器&lt;/span&gt;，并质疑苹果是否会为了这款笔记本单独生产一批处理器。&lt;/strong&gt;&lt;/p&gt;
@@ -2338,549 +2863,4 @@
                 &lt;p&gt;算力之争愈演愈烈，电力保障成为背后的“隐形底座”。马斯克的预言再次成真。春节刚过，一位浙江朋友提到她的家乡变压器工厂因AI浪潮而订单爆满。不止浙江，江苏、广东等地多家变压器企业在年前就已处于满产状态，部分面向数据中心的订单甚至排至明后年。原本被视为传统电力设备的变压器，正意外成为AI浪潮下最紧俏的基础设施之一。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img0.utuku.imgcdc.com/650x0/news/20260308/432830ca-4415-452d-bad1-a541184540d6.jpg" alt="“变压器工厂干冒烟了”"&gt;&lt;/p&gt;&lt;p&gt;早在2023年7月，马斯克在Twitter Spaces的一场语音发布会上表示，未来一年行业将从“芯片短缺”转向“变压器短缺”，随后两年可能出现电力短缺，决定竞争力的核心指标将是“单位能量所产生的有效算力”。2026年1月，他再次公开表示，旗下AI超算与新能源业务将大规模采购变压器，进一步印证这一设备已成为全球科技扩张链条中的关键瓶颈。&lt;/p&gt;&lt;p&gt;产业端的需求紧张迅速传导至资本市场。国内新能源变压器龙头伊戈尔电气股份有限公司已正式递交港股主板上市申请。公司成立于1999年，2017年登陆A股。在传统新能源业务稳步增长的基础上，数据中心变压器正成为新的增长引擎。2025年相关订单同比增长超过400%，先后获得谷歌2.5亿元、微软1.8亿元订单，并中标日本东京一大型数据中心5亿元项目，订单排产已延续至2026年第二季度。&lt;/p&gt;&lt;p&gt;一级市场同样升温。2月18日，由Inam创立的DG Matrix宣布完成6000万美元A轮融资，累计融资额突破1亿美元。本轮由Engine Ventures领投，三菱重工、ABB等工业巨头参投。不久后，电气设备制造商金盘智能科技集团亦宣布完成A轮融资。该公司成立于2013年，主营干式变压器、电力变压器及配套设备，产品广泛应用于电力、能源与工业场景。&lt;/p&gt;
             &lt;/div&gt;
             
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中华网</author><pubDate>Sun, 08 Mar 2026 13:49:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE16Um9IT1h1MlozZUZGNDJwc3dJUXVCcUJ2TXAyZ3F6SFVnYnFvMFNIb1FKRW1IWkMyU1czZXgyRW12TWh0Nkx2N3gyXzBkempWS2N4eUlVR1NGSF92UFVReDdZRGlETW9TZFVzYnUzUlE</guid></item><item><title>2.2亿人正和AI谈恋爱 学者：AI伴侣对孤独或受伤的人有好处 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107784.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;2.2亿人正和AI谈恋爱 学者：AI伴侣对孤独或受伤的人有好处&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-08 21:30:26  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107784-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月8日消息，据媒体报道，&lt;strong&gt;英国埃塞克斯大学副教授詹姆斯·穆尔顿在其新书《爱情机器：人工智能如何改变我们的人际关系》中，深入探讨了AI技术对人类亲密关系带来的深刻影响。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在他看来，AI的出现不仅仅是一场技术变革，更标志着亲密关系的一次根本性转型。当传统社会关系本已变得脆弱不堪时，AI工具正在重塑人们体验联结、面对孤独以及寻求情感依赖的方式。&lt;/p&gt;
-&lt;p&gt;穆尔顿在书中援引的数据令人印象深刻：&lt;strong&gt;以提供伴侣和朋友功能为主的各类AI伴侣应用程序，全球下载量已超过2.2亿次，整个AI伴侣市场的估值已达数十亿美元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对于这种现象，穆尔顿持相对乐观的态度。他认为，AI伴侣本质上是在“模拟一种亲密而有意义的关系”，让人们得以与“永远在线、永远表示肯定”的存在建立联系。&lt;/p&gt;
-&lt;p&gt;他特别指出，对于那些深陷孤独或心灵受创的人来说，AI伴侣的存在有着不可忽视的积极意义。&lt;/p&gt;
-&lt;p&gt;不过，随着AI伴侣的普及，监管层面的担忧也在升温。部分欧洲政府已经开始关注数据保护、情感操纵以及适龄保障措施等问题。&lt;/p&gt;
-&lt;p&gt;在美国，&lt;strong&gt;加利福尼亚州则通过了全球首部针对AI陪伴聊天机器人的立法，试图从产品设计层面确保对儿童更加安全，同时防范自残和自杀等极端情况的发生。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260308/beb0a39cd7f24571b7a462985cc4964c.png" target="_blank"&gt;&lt;img alt="2.2亿人正和AI谈恋爱 学者：AI伴侣对孤独或受伤的人有好处" h="411" src="//img1.mydrivers.com/img/20260308/s_beb0a39cd7f24571b7a462985cc4964c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 08 Mar 2026 13:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1Gd1JFMDllT1JMZzBmWkF6NmIwNUE0RUFkXy03a1U4XzFuX2VHWi1udGt5MkEzZDd1UmZzdGhLX1VTXy1rRTJMUjNFbmVmWnhZWTctYzMxMFg</guid></item><item><title>《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点 - 3DM</title><link>https://www.3dmgame.com/news/202603/3939231.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
-        &lt;div class=" news_warp_top"&gt;
-            &lt;h1 class="bt"&gt;《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点&lt;/h1&gt;
-            &lt;p class="time"&gt;时间：&lt;span&gt;2026-03-08 20:59:16&lt;/span&gt;&lt;/p&gt;
-            &lt;ul class="intem"&gt;
-                                &lt;li&gt;来源：&lt;span class="weibo"&gt;tech4gamers&lt;/span&gt;&lt;/li&gt;
-                                                &lt;li&gt;作者：&lt;span class="name"&gt;3DM编译&lt;/span&gt;&lt;/li&gt;
-                                &lt;li&gt;编辑：&lt;span class="bianji"&gt;豆角&lt;/span&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-                        &lt;p class="clear"&gt;&lt;/p&gt;
-        &lt;/div&gt;
-                    
-&lt;p class="Tonglan_785"&gt;
-    
-    &lt;i&gt;&lt;/i&gt;
-&lt;/p&gt;
-                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images/thumbnews/2026/0308/1772974751349.webp" id="coverUrl"&gt;
-                &lt;div class="news_warp_center"&gt;
-            &lt;p&gt;
-	经过一年多的争议，《马拉松》终于在本周末登陆了PC、PS5和Xbox 
-Series主机平台，但其在Steam平台上的首发同时在线玩家数量却显得非常可怜，甚至被同天发售的《杀戮尖塔2》调侃。这款撤离射击游戏Steam同时在线甚至未能突破10万。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974557_873991.webp" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	而在口碑方面，《马拉松》在Metacritic上被口水淹没，首发用户评分仅4.7分。UI和玩法循环是被批评重点，很多玩家表示这款撤离射击游戏玩几个小时后就会变得索然无味。
-&lt;/p&gt;
-&lt;p&gt;
-	有趣的是，《马拉松》的媒体评分至今尚未解禁，因为开发商要求媒体在游戏在3月底推出更多内容之前不要发表对《马拉松》的评测。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974569_331669.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	然而，《马拉松》在Steam平台上的口碑更好看一些，虽然Steam中文区评测褒贬不一，好评度59%，但整体评价为“特别好评”，在13533条评价中，有88%的用户给出了好评。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974569_674173.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974569_914547.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974569_417512.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974569_268269.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974570_559785.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974570_885628.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974570_689941.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974570_997367.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://img.3dmgame.com/uploads/images/news/20260308/1772974570_658955.jpg" alt="《马拉松》MTC用户评分4.7分 UI拉胯成批评焦点"&gt;
-&lt;/p&gt;                                &lt;/div&gt;
-                                                        &lt;a class="zan_box"&gt;
-                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
-                &lt;span class="znums"&gt;0&lt;/span&gt;
-            &lt;/a&gt;
-                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
-
-                                        
-                        
-                                
-&lt;div class="news_warp_c"&gt;
-    &lt;div class="itemc"&gt;
-        &lt;a href="https://www.3dmgame.com/games/slxcmls/" target="_blank" class="img_a"&gt;&lt;img class="cover" data-original="https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260306/1772762127_516875.jpg"&gt;&lt;/a&gt;
-        &lt;div class="text"&gt;
-            
-            
-            &lt;p class="clear"&gt;&lt;/p&gt;
-            &lt;ul class="ulwarp"&gt;
-                &lt;li class="lista"&gt;类型：&lt;span&gt;动作游戏&lt;/span&gt;&lt;/li&gt;
-                &lt;li&gt;发行：&lt;span class="test"&gt;Bungie&lt;/span&gt;&lt;/li&gt;
-                &lt;li class="lista"&gt;发售：&lt;span&gt;2026年3月6日&lt;/span&gt;&lt;/li&gt;
-                &lt;li&gt;开发：&lt;span class="test"&gt;Bungie&lt;/span&gt;&lt;/li&gt;
-                &lt;li class="lista"&gt;语言：&lt;span&gt;简中 | 繁中 | 英文 | 日文 | 多国&lt;/span&gt;&lt;/li&gt;
-                &lt;li&gt;平台：&lt;span&gt;PC&lt;/span&gt;&lt;/li&gt;
-                &lt;li class="listb"&gt;标签：&lt;span&gt;&lt;a href="https://www.3dmgame.com/tag/shengcun_1/" target="_blank" class="colr"&gt;生存&lt;/a&gt;，&lt;a href="https://www.3dmgame.com/tag/saibopengke_1/" target="_blank" class="colr"&gt;赛博朋克&lt;/a&gt;，&lt;a href="https://www.3dmgame.com/tag/wanjiadz_1/" target="_blank" class="colr"&gt;玩家对战&lt;/a&gt;，&lt;a href="https://www.3dmgame.com/tag/jszdy_1/" target="_blank" class="colr"&gt;角色自定义&lt;/a&gt;，&lt;a href="https://www.3dmgame.com/tag/chlisj_1/" target="_blank" class="colr"&gt;撤离射击&lt;/a&gt;
-                &lt;/span&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-        
-                
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Sun, 08 Mar 2026 12:59:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE9oZlVhREgxampZeDZKWVF0Z25HZHVZc0xoemhfMnJvN3BGWHdiRUl3VHZibzg1NXBaZ25jV0Z4bTg0Si1fZ3VURTZUSlNNc3VWYS04eVRpWEw3TjBk</guid></item><item><title>AI“养龙虾”爆火到全国两会，代表委员热议 - 新浪财经</title><link>https://finance.sina.com.cn/wm/2026-03-08/doc-inhqhuha0586133.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					&lt;p&gt;	&lt;a href="https://finance.sina.com.cn/zt_d/2026lh" target="_blank"&gt;专题：凝心聚力共奋进 十五五开局创未来——2026全国两会财经特别报道&lt;/a&gt;&lt;/p&gt;
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-                    &lt;blockquote&gt;&lt;p&gt;　　炒股就看&lt;a href="https://finance.sina.com.cn/stock/reportch/jinqilin.shtml" target="_blank"&gt;金麒麟分析师研报&lt;/a&gt;，权威，专业，及时，全面，助您挖掘潜力主题机会！&lt;/p&gt;&lt;/blockquote&gt;		&lt;p&gt;　　3月8日&lt;/p&gt;
-&lt;p&gt;　　多个AI“养龙虾”相关话题&lt;/p&gt;
-&lt;p&gt;　　霸占热搜&lt;/p&gt;
-
-
-
-
-&lt;p&gt;　　据报道&lt;/p&gt;
-&lt;p&gt;　　这“龙虾”并非餐桌上的美味&lt;/p&gt;
-&lt;p&gt;　　而是一个名为OpenClaw的&lt;/p&gt;
-&lt;p&gt;　　开源AI智能体（AI Agent）软件&lt;/p&gt;
-&lt;p&gt;　　因其图标是只“龙虾”&lt;/p&gt;
-&lt;p&gt;　　网友们干脆给它起了这个亲切的绰号&lt;/p&gt;
-&lt;p&gt;　　并将训练OpenClaw称为“养龙虾”&lt;/p&gt;
-&lt;p&gt;　　不同于其他“能干活”的智能体&lt;/p&gt;
-&lt;p&gt;　　OpenClaw的代码100%由AI生成&lt;/p&gt;
-
-&lt;p&gt;　　△开源AI智能体工具OpenClaw因图标是一只红色龙虾被大家称为“龙虾”。&lt;/p&gt;
-&lt;p&gt;　　有报道指出&lt;/p&gt;
-&lt;p&gt;　　这只“龙虾”能在获得设备访问权限后&lt;/p&gt;
-&lt;p&gt;　　全权接管设备上的各种软件&lt;/p&gt;
-&lt;p&gt;　　用户相当于雇佣了一位个人助理&lt;/p&gt;
-&lt;p&gt;　　整理文件、收发邮件&lt;/p&gt;
-&lt;p&gt;　　只需要一句话&lt;/p&gt;
-&lt;p&gt;　　而此前的AI助理只能给口头建议&lt;/p&gt;
-&lt;p&gt;　　和DeepSeek、ChatGPT&lt;/p&gt;
-&lt;p&gt;　　零门槛上手不同&lt;/p&gt;
-&lt;p&gt;　　要使用OpenClaw有点门槛&lt;/p&gt;
-&lt;p&gt;　　在一些平台搜索&lt;/p&gt;
-&lt;p&gt;　　“龙虾/OpenClaw上门安装”&lt;/p&gt;
-&lt;p&gt;　　会发现这项服务价格&lt;/p&gt;
-&lt;p&gt;　　从300元到800元不等&lt;/p&gt;
-&lt;p&gt;　　500元/次为最常见的价格&lt;/p&gt;
-&lt;p&gt;　　也可以“远程安装”&lt;/p&gt;
-&lt;p&gt;　　价格在50~100元左右&lt;/p&gt;
-&lt;p&gt;　　有网友称几天内靠这项服务赚取26万元&lt;/p&gt;
-
-&lt;p&gt;　　小米公司称其“能让手机成为AI的工具”。以用户出行场景为例，普通应用只有“感知→行动”：收到通知，显示通知。而Xiaomi miclaw在收到通知后会自动调用系统工具帮你做好查看天气、计算通勤时间、创建闹钟等准备工作。&lt;/p&gt;
-&lt;p&gt;　　腾讯云则将其功能描述为可提供“无限的想象空间”“不要问它能做什么，而是看你想做什么”。比如你说“帮我领个券”，它便会把券自动领好放在你的账户供你使用。&lt;/p&gt;
-&lt;p&gt;　　记者了解到，目前，这只“龙虾”已经在深圳福田区最接地气的岗位上正式“上班”，担任起民生诉求“分析员”。以前，处理老百姓的投诉和建议，全靠人工一条条看、一个个分类，耗时又容易漏掉重点。现在，“政务龙虾”能自动把海量的民意诉求“吃”进去，快速吐出一份“体检报告”。它能精准识别出大家最关心什么、哪里问题最多，甚至能提前预判潜在的风险。这让政府部门能从“事后灭火”变成“事前预防”，真正实现“民有所呼，我有所应”。&lt;/p&gt;
-
-&lt;p&gt;　&lt;strong&gt;　全国两会期间&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;　　多位代表、委员热议AI“龙虾”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　全国政协委员、360集团创始人周鸿祎表示，“龙虾”是一个非常好的概念，把原来看不见摸不着的云上软件，变成了每个人在电脑里养的专属助手，而且操纵起来非常方便。他同时指出，“龙虾”现在还在早期，配置“龙虾”对普通人来说是一件“非常难”的事。“我们很快会发一个一键安装的版本，让每个人养‘龙虾’都很方便。”&lt;/p&gt;
-&lt;p&gt;　　全国政协委员、中国工程院院士王坚8日在接受采访时表示，OpenClaw会很快便宜下来并普及，任何行业内的人都不会没有看到它的存在。&lt;/p&gt;
-&lt;p&gt;　　3月7日下午，十四届全国人大四次会议广东代表团小组会议上，全国人大代表、中国工程院院士、鹏城实验室主任高文表示：“现在大家急得不得了，生怕没有养上‘龙虾’。”&lt;/p&gt;
-&lt;p&gt;　　高文还说，养龙虾这么火，连马化腾都没想到。&lt;/p&gt;
-
-
-
-&lt;p&gt;　　“‘养龙虾’的走红并非孤立现象，智能工具正快速进入大众视野。”全国政协委员、中国科学院计算技术研究所研究员张云泉说，“这将对未来的工作方式乃至逻辑产生深远影响”。张云泉说，过去需要人工完成的简单重复任务，将逐步被智能体替代，人得以把更多精力投入创意设计、复杂决策等高价值工作。这也对从业者能力提出了更高要求。&lt;/p&gt;
-&lt;p&gt;　　张云泉表示，当前不少工业企业并非直接训练大型模型，而是开发各类智能体，逐步替代生产流程中可智能化的环节，推动流程再造。在个人应用领域，数字员工乃至“一人公司”（OPC）等新模式正迅猛发展。&lt;/p&gt;
-&lt;p&gt;　&lt;strong&gt;　工信部最新提示：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;　　警惕安全风险&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　近期，工业和信息化部网络安全威胁和漏洞信息共享平台监测发现OpenClaw开源AI智能体部分实例在默认或不当配置情况下存在较高安全风险，极易引发网络攻击、信息泄露等安全问题。&lt;/p&gt;
-&lt;p&gt;　　由于OpenClaw在部署时“信任边界模糊”，且具备自身持续运行、自主决策、调用系统和外部资源等特性，在缺乏有效权限控制、审计机制和安全加固的情况下，可能因指令诱导、配置缺陷或被恶意接管，执行越权操作，造成信息泄露、系统受控等一系列安全风险。&lt;/p&gt;
-&lt;p&gt;　　建议相关单位和用户在部署和应用OpenClaw时，充分核查公网暴露情况、权限配置及凭证管理情况，关闭不必要的公网访问，完善身份认证、访问控制、数据加密和安全审计等安全机制，并持续关注官方安全公告和加固建议，防范潜在网络安全风险。&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：常福强 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sun, 08 Mar 2026 12:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTFBQc1VXMkpTR1J4RzNBVGsxbWtHRERiemlaaUwza1Q2ejREWk9mdUZqSWw5UG4taGpHc1BDSFVqaDNvWVBRSTg3Y09WQnM2bVBuaUV2emFURXFGaUFtRGhVOFFsTmJIRzVkUDYyMVpRdXNUTGhwelE</guid></item><item><title>刚刚，OpenClaw史上最猛更新！AI记忆可自由插拔，开发者等了半年 - 36 Kr</title><link>https://m.36kr.com/p/3715160552878469</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,460" src="https://img.36krcdn.com/hsossms/20260309/v2_e7d5207037fb47a2ac56ce65767a2c8c@1200352198_oswg78900oswg1080oswg460_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;新智元报道&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;编辑：定慧&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;【新智元导读】OpenClaw推出v2026.3.7-beta.1，史上最密集一次更新：89项提交、200+Bug修复，核心亮点是全新ContextEngine插件接口——上下文管理终于可以「自由插拔」，不动核心代码就能换策略。这次更新值得每一个做AI Agent的人认真看。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;龙虾热之后，&lt;strong&gt;OpenClaw&lt;/strong&gt;在国内的热度直线飙升。&lt;/p&gt;
-  &lt;p&gt;就在刚刚，OpenClaw官方发布了全新&lt;strong&gt;v2026.3.7-beta.1版本&lt;/strong&gt;，创始人Peter Steinberger亲自下场在X上高调官宣。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1084" src="https://img.36krcdn.com/hsossms/20260309/v2_b113e755f6c54909bbf75d1238c72a4e@1200352198_oswg386175oswg1080oswg1084_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;89项代码提交，200+个Bug修复，全新的ContextEngine插件接口，GPT-5.4与Gemini 3.1 Flash双首发适配——这一刀，切得非常稳。&lt;/p&gt;
-  &lt;p&gt;顺带一提，OpenClaw不仅Star数狂飙冲向3w+，而且issues和pr数量也是冠绝全球。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,276" src="https://img.36krcdn.com/hsossms/20260309/v2_9d246a94e1ff489abddd77089d7fec2a@1200352198_oswg92852oswg1080oswg276_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;OpenClaw，可以说是开源的一次里程碑，也可以看作是全世界极客们的封神制作。地球上有什么项目能够联合如此多的狂热极客们？&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,320" src="https://img.36krcdn.com/hsossms/20260309/v2_2089dade12764ebfa26f126669758469@1200352198_oswg327099oswg1080oswg320_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;废话不多说，先来看下这次都更新了什么。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;OpenClaw变更最密集的一次更新&lt;/strong&gt;&lt;/h2&gt;
-  &lt;h3&gt;&lt;strong&gt;看点一：GPT-5.4+Gemini 3.1双引擎上线&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;新版全面适配了OpenAI最新的GPT-5.4以及Google的Gemini 3.1 Flash。&lt;/p&gt;
-  &lt;p&gt;在模型切换层面，OpenClaw还优化了模型降级与重试机制——&lt;strong&gt;当某个模型限流或过载时，系统会自动切换到备选模型&lt;/strong&gt;，而不是直接报错让用户干等。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,149" src="https://img.36krcdn.com/hsossms/20260309/v2_b405b9ab65cb4d81a04a711a2a15845e@1200352198_oswg115954oswg1080oswg149_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;这意味着什么？你可以把OpenClaw想象成一个「模型路由器」。前端对接的是你习惯的聊天工具，后端则可以灵活挂载Claude、GPT、Gemini、DeepSeek等任意大模型。哪个好用用哪个，哪个便宜切哪个。这种架构的灵活性，是单一厂商的AI助手做不到的。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;看点二：ContextEngine——开发者等了很久的东西&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;这次最硬核的技术亮点，是全新推出的&lt;strong&gt;ContextEngine插件接口&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;做过AI应用的朋友都知道，上下文管理是智能体开发中最让人头疼的问题之一。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,125" src="https://img.36krcdn.com/hsossms/20260309/v2_61a692f8f7e743d0a83bc33181107eba@1200352198_oswg104711oswg1080oswg125_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;对话轮次一多，token就炸；信息一压缩，关键细节就丢。&lt;/p&gt;
-  &lt;p&gt;OpenClaw这次开放了一组完整的生命周期钩子：bootstrap（初始化）、ingest（注入）、assemble（组装）、compact（压缩）、afterTurn（回合后处理），甚至包括prepareSubagentSpawn（子智能体生成前）和onSubagentEnded（子智能体结束后）。&lt;/p&gt;
-  &lt;p&gt;翻译成人话：开发者现在可以在不修改OpenClaw核心代码的情况下，完全自定义上下文的处理逻辑。你想用RAG？可以。想做激进压缩？随意。想让不同子任务拥有隔离的记忆空间？接口都给你准备好了。&lt;/p&gt;
-  &lt;p&gt;这对整个社区生态的意义是巨大的——它把OpenClaw从一个工具变成了一个平台。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;看点三：Discord+Telegram深度整合&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;多渠道一直是OpenClaw的核心卖点，而这次更新在两个最活跃的社区平台上做了重大升级：&lt;/p&gt;
-  &lt;p&gt;Discord端修复了断连后无法恢复的死机问题，优化了频道解析和机器人心跳检测。Telegram端新增了主题级别（Topic）的智能体路由隔离——这意味着你可以在同一个Telegram群组的不同主题里，分别运行不同的AI智能体，互不干扰。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,168" src="https://img.36krcdn.com/hsossms/20260309/v2_84077cb8e5544baca79ab0c545d51209@1200352198_oswg135159oswg1080oswg168_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;同时，两个平台都新增了持久化频道绑定功能。以前重启OpenClaw后，频道绑定关系可能丢失；现在这个状态会被持久化存储，重启后自动恢复。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;看点四：200多项Bug修复，几乎翻修了一遍&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;这次的修复清单长得让人咋舌。粗略分类一下：&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;渠道层面&lt;/strong&gt;，覆盖了Telegram草稿流重复、Discord断连死机、Slack消息路由、飞书Webhook兼容性、WhatsApp自聊天前缀注入、iOS/macOS端的各种边界情况。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,142" src="https://img.36krcdn.com/hsossms/20260309/v2_c2550f2025b64bb9842fe7246330ab0a@1200352198_oswg119128oswg1080oswg142_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;核心智能体层面&lt;/strong&gt;，修了工具调用的参数解析问题（包括xAI的参数解码）、上下文压缩时的截断提示丢失、OpenAI流式输出的兼容性。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;网关与内存层面&lt;/strong&gt;，解决了Token防连环掉线、QMD内存检索去重、SQLite锁冲突。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;安全层面&lt;/strong&gt;，包括依赖库的安全升级（Hono、tar等）、沙盒逃逸防范、系统命令执行的白名单鉴权。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,106" src="https://img.36krcdn.com/hsossms/20260309/v2_8d4037ed596846f6b1ad3f79c885fa78@1200352198_oswg86486oswg1080oswg106_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;此外，新版还引入了西班牙语界面支持、将Web搜索功能升级为更强的SearchAPI，以及通过Docker多阶段构建优化了镜像体积和启动速度。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;89项更新是什么概念？&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;先给不熟悉的朋友再补个课：OpenClaw是什么？&lt;/p&gt;
-  &lt;p&gt;简单说，它是目前开源社区里影响力最大的AI Agent框架之一，可以理解为&lt;strong&gt;让AI帮你打工的底层平台。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,695" src="https://img.36krcdn.com/hsossms/20260309/v2_de0be597e0de4589b1b0ea73471cbdbe@1200352198_oswg269827oswg1080oswg695_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;你可以把它部署在自己的服务器上，连上各种大语言模型，再接入Slack、Discord、Telegram、飞书等渠道，让AI Agent替你处理用户消息、执行任务、管理上下文，甚至协调多个智能体协同作战。&lt;/p&gt;
-  &lt;p&gt;它的开源属性，是它最大的杀手锏。你不需要向任何厂商交租子，数据在自己手里，连接哪个模型你说了算。&lt;/p&gt;
-  &lt;p&gt;这次3.7 beta，89项代码提交不是堆数字玩，每一条都实打实——&lt;/p&gt;
-  &lt;p&gt;最重头的一条：&lt;strong&gt;ContextEngine插件接口上线。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;对开发者来说，上下文管理是AI Agent工程中最头疼的问题。当对话轮次多了，Token堆积超出模型窗口限制，你要么截断、要么压缩、要么想其他办法。而这些处理逻辑一旦写死在核心代码里，日后每次调整都是高风险手术。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,575" src="https://img.36krcdn.com/hsossms/20260309/v2_e26f27c357774d9fb6719b6cb0ebff28@1200352198_oswg264164oswg1080oswg575_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;OpenClaw 3.7的ContextEngine接口，解决的就是这个问题。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;它给开发者提供了全生命周期的上下文管理能力，&lt;/strong&gt;允许你在不动底层核心逻辑的前提下，插入自定义的压缩策略。用官方的话说，这叫零阻碍接入。&lt;/p&gt;
-  &lt;p&gt;翻译成人话：以后换个上下文处理算法，像换插件一样简单，不用再担心改一处崩全程。&lt;/p&gt;
-  &lt;p&gt;开发者社区的反应很直接——项目Issues下面，有人评论等这个接口等了快半年，点赞数秒过百。&lt;/p&gt;
-  &lt;h3&gt;&lt;strong&gt;200+个Bug修复，这才是硬核&lt;/strong&gt;&lt;/h3&gt;
-  &lt;p&gt;一个开源项目能不能长线运营下去，Bug修复的密度和质量是照妖镜。&lt;/p&gt;
-  &lt;p&gt;这次3.7 beta，官方更新日志在Fixes板块下拉出了200多条具体修复记录，覆盖了平台几乎所有核心模块。&lt;/p&gt;
-  &lt;p&gt;当大语言模型的能力已经足够强，那么如何把它真正用起来这件事的门槛，决定了谁能先跑起来。OpenClaw解决的，正是跑起来这一步。&lt;/p&gt;
-  &lt;p&gt;龙虾爆红，引爆的不只是某个产品的热度，而是整个自托管AI Agent赛道的关注度。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;创始人的气质&lt;/strong&gt;&lt;/h2&gt;
-  &lt;h2&gt;&lt;strong&gt;一个有点跩的开源人&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;说说Peter Steinberger这个人，非常有必要。&lt;/p&gt;
-  &lt;p&gt;他是iOS开发者出身，当年靠PSPDFKit（PDF处理SDK）在欧洲独立开发者圈出了名，后来转型做AI，带着小团队把OpenClaw做起来，成了开源AI Agent领域的知名项目。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,608" src="https://img.36krcdn.com/hsossms/20260309/v2_fd18fdbec3004476a61cf868d03f9516@1200352198_oswg532844oswg1080oswg608_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;他的X（推特）账号风格很典型：&lt;strong&gt;高度技术化、直接、偶尔毒舌。&lt;/strong&gt;这次3.7 Beta发布，他的配文是：我不记得上次有哪个版本有这么多提交了。但这是值得的。这种克制中的自信，在开源社区里有自己的分量。&lt;/p&gt;
-  &lt;p&gt;更关键的是，&lt;strong&gt;他带领的团队在市场推广上几乎不花时间，靠的是产品质量和社区口碑滚起来的&lt;/strong&gt;。这在当下AI圈一半做产品一半做PR的环境里，显得有点异类。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;好的底层工具不需要等待大厂推荐，真实场景的使用者会替你传播。&lt;/strong&gt;&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;下一个版本还能期待什么？&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;从这次3.7 beta的更新方向，能推断出几个未来值得关注的点：&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;多语言界面扩展加速。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;这次新增了西班牙语界面，背后的逻辑是OpenClaw正在有意拓展非英语市场。中文界面的全面支持，如果做好，对国内用户的吸引力将是数量级的提升。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;模型生态接入继续扩大。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;GPT-5.4和Gemini 3.1 Flash的首发适配是信号，说明主流大模型实验室已经开始主动配合OpenClaw推进适配工作，这个生态飞轮一旦转起来，壁垒会越来越高。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;企业级稳定性持续补课。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;200+的Bug修复说明社区使用量在高速增长，问题暴露越多说明用户越多。这个阶段的修复密度，是在为下一阶段的企业大客户打地基。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;插件生态的爆发点将至。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;ContextEngine接口正式开放后，第三方开发者会开始贡献各种上下文管理插件。这是OpenClaw从一个框架变成一个平台的关键拐点。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;尾声：开源的边界在哪里？&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;OpenClaw的故事，某种程度上是开源如何对抗大厂闭源产品的一个截面。&lt;/p&gt;
-  &lt;p&gt;大厂的优势显而易见：超强算力、一流团队、巨大用户基础、精美的产品体验。这些都是小团队很难在短期内追平的。&lt;/p&gt;
-  &lt;p&gt;但开源有一个大厂始终无法复制的东西：&lt;strong&gt;信任。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;当你把AI部署在自己的服务器上，当你可以随时查看源码、随时修改逻辑、随时切换模型——&lt;strong&gt;这种控制感，是大厂产品永远给不了的。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;越来越多的工程师和创业者，也在做同样的选择。&lt;/p&gt;
-  &lt;p&gt;OpenClaw 3.7这次更新，或许没有改变什么赛道格局，但它实实在在地让这个工具更稳了、更开放了、更可信了。&lt;/p&gt;
-  &lt;p&gt;而可信，在AI时代，是稀缺品。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;你的下一个AI工具，会把数据交给大厂，还是留在自己手里？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;参考资料：&lt;/p&gt;
-  &lt;p&gt;https://github.com/openclaw/openclaw/releases/tag/v2026.3.7-beta.1&lt;/p&gt;
-  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/yq_btzDPwT8yvRMv5aetog"&gt;“新智元”&lt;/a&gt;，作者：新智元，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Sun, 08 Mar 2026 12:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE95alhBZlAxNnJvRDg5WlljU0FfS3E4ZXFsbWNLQ2t2UHh1d1dadDFRdkNHRXV6M0E0eHV6SS1BNm9DaUdmeWpBVlpsdWttQQ</guid></item><item><title>中国三至五年内有望实现脑机接口技术广泛应用 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260308-8698963</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（北京路透电）中国“十五五”规划纲要将脑机接口列为新的经济增长点，并将这个产业首次写入政府工作报告中。一位脑机接口领域专家评估，随着产品日趋成熟，中国有望在三到五年内实现这项技术的实际应用。&lt;/p&gt;&lt;p&gt;四川省脑科学与类脑智能研究院院长尧德中星期六（3月7日）在北京出席两会期间接受媒体采访时说，“新政策不会在一夜之间改变现状”，但他认为，再过三至五年，中国将逐渐看到一些真正面向公众的服务与应用面世。&lt;/p&gt;&lt;p&gt;中国去年发布的国家脑机接口发展战略提到，要在2027年取得重大技术突破，并力争到2030年培育出两到三家世界一流企业。&lt;/p&gt;&lt;p&gt;路透社指出，除美国之外，中国是第二个启动侵入式脑机接口人体试验的国家。目前，中国正在进行10多项临床试验，并计划今年在全国范围内招募50多名患者参与。&lt;/p&gt;&lt;p&gt;近期一些备受瞩目的试验项目&lt;a href="https://www.zaobao.com.sg/realtime/china/story20251217-7976617?ref=article-inline" target="_blank" rel="nofollow"&gt;成功让瘫痪患者和截肢患者恢复部分行动能力&lt;/a&gt;，并操作机械手或智能轮椅。 &lt;/p&gt;
-    
-  &lt;p&gt;中国政府已在几个试点省份将部分脑机接口治疗纳入国家医疗保险。中国工业和信息化部旗下中国电子信息产业发展研究院控股的赛迪顾问预测，到2027年，中国的市场规模预计将达到55.8亿元人民币（约10.3亿新元）。&lt;/p&gt;&lt;p&gt;尧德中认为，中国在脑机接口领域拥有诸多优势，包括庞大的人口基数、巨大的患者需求、具有成本效益的产业链以及丰富的科学、技术、工程和数学人才储备。&lt;/p&gt;&lt;p&gt;从实验到临床试验的路径相当漫长，尧德中告诉路透社，许多中国医院已经建立了脑机接口研究实验室来加快这一进程。&lt;/p&gt;&lt;p&gt;像亿万富豪&lt;a href="https://www.zaobao.com.sg/finance/world/story20260101-8039465?ref=article-inline" target="_blank" rel="nofollow"&gt;马斯克创立的Neuralink&lt;/a&gt;等美国初创公司专注于穿透脑组织的侵入式晶片，中国研究人员则在开发具有更广泛临床应用潜力的侵入式、半侵入式和非侵入式脑机接口。 &lt;/p&gt;&lt;p&gt;尧德中认为，马斯克的想法，“基本上（也）可以在（中国）国内实现”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Sun, 08 Mar 2026 12:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5EbFlnMHVSdzYteDJNdTVWbkpKNjk4UzlBWEJEcTJOTUItcDA2LXB2YXh5UTI5YXJWNlFpS2FVWWs2TUNCd0JPU2hCRmZCbVZ0U3pmaDBqeUFzclZsVnZUODBpRG9TT1dYQ3c</guid></item><item><title>周志华院士：建议纠正盲目跟风“大模型解决一切”的误区 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107781.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;周志华院士：建议纠正盲目跟风“大模型解决一切”的误区&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-08 20:15:35  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107781-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月8日消息，据媒体报道，&lt;strong&gt;中国科学院院士周志华近日提出，应进一步优化人工智能领域的科研统筹布局。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;周志华指出，&lt;span&gt;&lt;strong&gt;避免资源过度集中于算力消耗型的应用层研究，同时纠正盲目跟风“大模型解决一切”的误区。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;他呼吁加大对AI算法基础研究的支持力度，提升针对具体问题设计算法解决方案的创新能力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;周志华认为，当前部分科研工作对“人工智能赋能科学研究”的理解仍停留在表面，存在对工具的简单套用现象，甚至盲目尝试训练通用“科学大模型”，试图以单一模型应对所有科学问题。&lt;/p&gt;
-&lt;p&gt;同时，科学数据获取成本高、标准不统一、共享意愿低，数据标注质量参差不齐，缺乏权威、标准化、大规模的科学数据集，导致AI模型训练效率不高、可靠性难以保障，重复建设与资源浪费现象突出。&lt;/p&gt;
-&lt;p&gt;周志华还建议，要变革培养模式，打造复合型人才队伍。&lt;strong&gt;同时在学位获取、职称晋升、绩效考核等环节中建立“交叉学科特区”，解决跨学科人才在传统评价体系中“两头不靠”的困境。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260308/5949a48dd6f347f6aff8409fc85017b0.png" target="_blank"&gt;&lt;img alt="周志华院士：建议纠正盲目跟风“大模型解决一切”的误区" h="364" src="//img1.mydrivers.com/img/20260308/s_5949a48dd6f347f6aff8409fc85017b0.png" w="589"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 08 Mar 2026 12:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE96QVhtTklUN3Roc0VHaXlWYXdmM3hsRUlicHJMZlhnUWV5bkt6WlZCUHk5bEttemhIMXRWemVBOGN0WVVXWUs5YnlmMk5nMlZrM1lSYUJFM2c</guid></item><item><title>“代理AI”崛起，CPU翻身？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3766983</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 08 Mar 2026 12:14:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9QOWlFRUVYQktNeG5NRVBtRTJsamM1dlM1NWFObHNiRTFzbjVDU1JiaGZhQW9nY3RYWFI5SXJFYWZBYkM0a2otOFNINWRXcVZ0aTBv</guid></item><item><title>Steam Machine生不逢时：上市日期一改再改！Valve最新目标2026年内 - 驱动之家</title><link>https://news.mydrivers.com/1/1107/1107780.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;Steam Machine生不逢时：上市日期一改再改！Valve最新目标2026年内&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-08 20:12:18  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1107780-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月8日消息，&lt;span&gt;&lt;strong&gt;Valve原定于2026年初正式上市的Steam Machine，因严重低估了全球DRAM与NAND闪存的短缺危机，导致官方发布时间表一改再改。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;从最初的年初推迟至上半年，随后改为模糊的希望年内，如今Valve在3月6日将说法定调为“按计划在2026年内”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这款游戏主机可谓生不逢时，由于核心存储组件价格疯涨，Steam Machine的生产成本已大幅超出预期，使得Valve在定价与发售窗口的选择上陷入两难境地。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即便官方确认了2026年内上市计划，但最终产量可能被大幅削减，仅以少量生产来履行对玩家的承诺。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;存储荒冲击不止Steam Machine，Steam Deck游戏掌机供货同样严重短缺，&lt;/strong&gt;受DRAM与NAND短缺影响，Valve正缩减游戏硬件投资，除非供应问题得以解决，否则2026年内都会维持短缺状况。&lt;/p&gt;
-&lt;p&gt;Steam Machine搭载AMD定制Zen 4六核处理器与RDNA 3架构显卡，配备16GB DDR5内存与8GB GDDR6显存，性能号称达Steam Deck的6倍，支持FSR实现4K/60FPS游戏体验。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Steam Machine生不逢时：上市日期一改再改！Valve最新目标2026年内" h="396" src="//img1.mydrivers.com/img/20260308/6115bbf8-5b5f-4601-9cfe-b3e588792126.jpg" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 08 Mar 2026 12:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5RakJWX0RjODFjcmNsMklMZkN6ZVBnV2R0ZW5hVjVRdlhxT0F4OTZDVXh2NXA0bVVmRTNaNEhiZ1Nvb29waEVVZDhJVkwyX1FZX2VUbm9pV2Q</guid></item><item><title>专访董明珠：我都不怕被AI替代，年轻人怕什么？ - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/2026-03-08/detail-inhqhuhi0582869.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
-	
-
-&lt;p class="art_p"&gt;3月8日下午，十四届全国人大四次会议广东省代表团在驻地召开代表小组会议，审议民族团结进步促进法草案、国家发展规划法草案。&lt;/p&gt;
-&lt;p class="art_p"&gt;会后，全国人大代表、格力电器董事长董明珠接受“政事儿”专访。&lt;/p&gt;
-&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="2048" h="1153" data-src="//k.sinaimg.cn/n/sinakd20260308s/1/w2048h1153/20260308/7d95-7a3c72f63d80da7a18ed897578a424dd.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="全国人大代表、格力电器董事长董明珠（何强 摄）"&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="2048" h="1153" data-src="//k.sinaimg.cn/n/sinakd20260308s/1/w2048h1153/20260308/7d95-7a3c72f63d80da7a18ed897578a424dd.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="全国人大代表、格力电器董事长董明珠（何强 摄）" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;全国人大代表、格力电器董事长董明珠（何强 摄）&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;
-&lt;p class="art_p"&gt;作为企业家，如何看中国经济发展？董明珠表示，政府工作报告指出，我国经济顶压前行、展现强大韧性，“十五五”规划纲要草案也已经对中国经济未来五年发展定了方向。“作为制造业，要积极响应，达成预期目标势在必行，也需要我们砥砺前行。”&lt;/p&gt;
-&lt;p class="art_p"&gt;董明珠说，“当然，我们面临的外部的各个方面的压力还是比较大的，但不能因为压力我们就放弃，而是要想尽办法去达成这个目标。作为企业家，肯定有信心！”&lt;/p&gt;
-&lt;p class="art_p"&gt;政府工作报告提出因地制宜发展新质生产力，建设现代化产业体系。董明珠说，“因地制宜非常重要，发展不可能一刀切，这需要企业的性质、背景、地域环境等综合考量，需要时间来慢慢实现。”&lt;/p&gt;
-&lt;p class="art_p"&gt;董明珠表示，对格力来讲，我们很幸运，2018年总书记到格力视察就强调“制造业是实体经济的一个关键，制造业的核心就是创新，就是掌握关键核心技术。”格力先行一步，一直以来，坚定不移地走自主创新道路，建立了一套标准，去年工信部等6部门公布了首批15家领航级智能工厂名单，格力电器车间入选。“发展新质生产力，可以说我们走在了前边。”&lt;/p&gt;
-&lt;p class="art_p"&gt;要发展新质生产力，对企业来说是不是提出了更高要求？董明珠说，“自主创新对企业来说，不是最高的要求，而是本身发展的方向就该这样。”&lt;/p&gt;
-&lt;p class="art_p"&gt;董明珠表示，格力电器在自主创新中不断夯实发展根基，让中国产品和中国品牌赢得了全球消费者的尊重和喜爱。“一路成长为全球领先的多元化工业集团，格力电器靠的从来不是买买买，而是自主创新！但我们的路子会慢一点，时间会久一点，它的稳定性才会更好。自主创新必须有一个过程，就像十月怀胎，不能说今天怀了明天就生出来，这是不客观的事情。”&lt;/p&gt;
-&lt;p sax-type="proxy" class="j_native_opq260309 box" data-inserttype="0" data-id="201711dingdingeb"&gt;&lt;/p&gt;&lt;p class="art_p"&gt;一直扎根制造业，如何看制造业的发展？董明珠说，“制造业属于创造型，它在不断迭代，通过技术升级满足人们的生活需求，是不断转化升级、循环的过程。所以，制造业离不开‘创新’两个字。现在制造业都面临智能化转型，也是创新的过程。企业发展到一定程度，有了需求，就需要你去向这个方向突破。”谈到企业的年轻人才成长，董明珠说，“认知最重要，企业认为人才培养很重要，就会努力去干这一件事。”&lt;/p&gt;
-&lt;p class="art_p"&gt;政府工作报告提出，要持续打造一流营商环境，更好支持企业安心经营、高质量发展。董明珠认为，“政府要做的就是营造公平的环境，才能更加优胜劣汰。在发展中，旧的矛盾会解决，新的矛盾也会发生，我们总是在解决问题中前进的。但好的营商环境就是公平，能做到就非常好了。”&lt;/p&gt;
-&lt;p class="art_p"&gt;董明珠曾连续多年建议提高个税起征点。对此，她表示，“这是大家对美好生活的期待。起征点高了普通老百姓少交税，有钱人多交税，更好平衡各类人群消费需求，促进居民想消费、敢消费、能消费。”&lt;/p&gt;
-&lt;p class="art_p"&gt;对于年轻一代，董明珠说，“不同的时代都有不同时代的年轻，有不同的快乐和烦恼。我觉得我们年轻人要有一种更好的心态去面对自己的现状，积极向上的心态去解决问题。现在的年轻人都很努力，根本不需要我们讲，他们自己就会知道自己应该做什么。”&lt;/p&gt;
-&lt;p class="art_p"&gt;有年轻人担心被AI替代，董明珠笑了，“我那么大年纪都不怕被AI替代，你们年轻人怕什么？只能通过学习，做到比AI聪明！”她透露，自己已熟练使用AI正常处理工作。&lt;/p&gt;
-&lt;p class="art_p"&gt;今年是董明珠担任全国人大代表第二十四年。董明珠说，“这是一份荣誉。还记得第一次走进人民大会堂时，深深地被那种威严所震撼。但随着时间推移、随着对人大代表履职的理解，我们更多的是增加了一副担子、一种责任。如何履好职？我们要做好一个上下衔接的桥梁作用，把中央的精神完整传达下去，要进行宣传贯彻，然后把老百姓的诉求带上来，让中央做出更好的决策。”&lt;/p&gt;
-&lt;p class="art_p"&gt;今天是第116个“三八”国际劳动妇女节。董明珠说，“希望我们更多的女同胞，能够更加自立自强。现在已经不是靠繁重劳动的时代了，而是更多靠智力。希望女同胞们能够在这样的环境中找到最符合自己的岗位。”&lt;/p&gt;
-&lt;p class="art_p"&gt;“政事儿”（xjbzse）撰稿、摄影/何强 编辑/刘茜贤 校对/卢茜&lt;/p&gt;	
-
-	
-
-&lt;/section&gt;
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sun, 08 Mar 2026 11:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE1nakFHMmtDQ0ZncmxxVkVqakVaT1BQdFd0dUF4R1pHdUtfQW8zeHdZTGx0OEJnM2lsR1Y4Rm1Da2JWT0RfMV9mZU9wR0E3djBCZlpLNWt1Y29wMzV1aV9VS0ZZTURveWtjRkdWZllwcS14dF9h</guid></item><item><title>专访董明珠：我都不怕被AI替代，年轻人怕什么？ - QQ.com</title><link>https://news.qq.com/rain/a/20260308A065XI00</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="comps-contentify-wrap comps-contentify-pc-wrap comps-contentify-arbitrary-wrap"&gt;&lt;div class="rich_media_content autoTypeSetting24psection"&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;3月8日下午，&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;十四届全国人大四次会议广东省代表团在驻地召开代表小组会议，审议民族团结进步促进法草案、国家发展规划法草案。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;会后，全国人大代表、&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;格力电器&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;董事长董明珠接受“政事儿”专访。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;section data-exeditor-arbitrary-box="image-box"&gt;&lt;span data-widget="image"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/O_86szRyek4xWeRLPCJqwH76jyjMckKGHyZ10w01gXYdcAA/1000" data-src="https://inews.gtimg.com/om_bt/O_86szRyek4xWeRLPCJqwH76jyjMckKGHyZ10w01gXYdcAA/1000" alt="图片"&gt;&lt;span&gt;全国人大代表、格力电器董事长董明珠（何强 摄）&lt;/span&gt;&lt;/span&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;作为企业家，如何看中国经济发展？董明珠表示，政府工作报告指出，我国经济顶压前行、展现强大韧性，“十五五”规划纲要草案也已经对中国经济未来五年发展定了方向。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“作为制造业，要积极响应，达成预期目标势在必行，也需要我们砥砺前行。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;董明珠说，“当然，我们面临的外部的各个方面的压力还是比较大的，但不能因为压力我们就放弃，而是要想尽办法去达成这个目标。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;作为企业家，肯定有信心！&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;政府工作报告提出因地制宜发展&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;新质生产力&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，建设现代化产业体系。董明珠说，&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“因地制宜非常重要，发展不可能一刀切，这需要企业的性质、背景、地域环境等综合考量，需要时间来慢慢实现。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;董明珠表示，对格力来讲，我们很幸运，2018年总书记到格力视察就强调“制造业是&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;实体经济&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;的一个关键，制造业的核心就是创新，就是掌握关键核心技术。”格力先行一步，一直以来，坚定不移地走&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;自主创新&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;道路，建立了一套标准，去年工信部等6部门公布了首批15家&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;领航级智能工厂&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;名单，格力电器车间入选。“发展新质生产力，可以说我们走在了前边。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;要发展新质生产力，对企业来说是不是提出了更高要求？董明珠说，&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“自主创新对企业来说，不是最高的要求，而是本身发展的方向就该这样。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;董明珠表示，格力电器在自主创新中不断夯实发展根基，让中国产品和中国品牌赢得了全球消费者的尊重和喜爱。“一路成长为全球领先的多元化工业集团，格力电器靠的从来不是买买买，而是自主创新！&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;但我们的路子会慢一点，时间会久一点，它的稳定性才会更好。自主创新必须有一个过程，就像十月怀胎，不能说今天怀了明天就生出来，这是不客观的事情。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;一直扎根制造业，如何看制造业的发展？董明珠说，“制造业属于创造型，它在不断迭代，通过技术升级满足人们的生活需求，是不断转化升级、循环的过程。所以，制造业离不开‘创新’两个字。现在制造业都面临&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span&gt;智能化转型&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，也是创新的过程。企业发展到一定程度，有了需求，就需要你去向这个方向突破。”谈到企业的年轻人才成长，董明珠说，“认知最重要，企业认为人才培养很重要，就会努力去干这一件事。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;政府工作报告提出，要持续打造一流营商环境，更好支持企业安心经营、高质量发展。董明珠认为，“政府要做的就是营造公平的环境，才能更加优胜劣汰。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;在发展中，旧的矛盾会解决，新的矛盾也会发生，我们总是在解决问题中前进的。但好的营商环境就是公平，能做到就非常好了。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;董明珠曾连续多年建议提高个税起征点。对此，她表示，“这是大家对美好生活的期待。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;起征点高了普通老百姓少交税，有钱人多交税，更好平衡各类人群消费需求，促进居民想消费、敢消费、能消费。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;对于年轻一代，董明珠说，“不同的时代都有不同时代的年轻，有不同的快乐和烦恼。我觉得我们年轻人要有一种更好的心态去面对自己的现状，积极向上的心态去解决问题。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;现在的年轻人都很努力，根本不需要我们讲，他们自己就会知道自己应该做什么。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;有年轻人担心被AI替代，董明珠笑了，“&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;我那么大年纪都不怕被AI替代，你们年轻人怕什么？&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;只能通过学习，做到比AI聪明！”她透露，自己已熟练使用AI正常处理工作。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;今年是董明珠担任全国人大代表第二十四年。董明珠说，“这是一份荣誉。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;还记得第一次走进人民大会堂时，深深地被那种威严所震撼。但随着时间推移、随着对人大代表履职的理解，我们更多的是增加了一副担子、一种责任。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;如何履好职？我们要做好一个上下衔接的桥梁作用，把中央的精神完整传达下去，要进行宣传贯彻，然后把老百姓的诉求带上来，让中央做出更好的决策。”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;今天是第116个“三八”国际劳动妇女节。董明珠说，“希望我们更多的女同胞，能够更加自立自强。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;现在已经不是靠繁重劳动的时代了，而是更多靠智力。希望女同胞们能够在这样的环境中找到最符合自己的岗位。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;”&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;“政事儿”（xjbzse）撰稿、摄影/何强 编辑/刘茜贤 校对/卢茜&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>QQ.com</author><pubDate>Sun, 08 Mar 2026 11:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVkFVX3lxTE8tc3phaW15NV9tQThoa05fTXF6ckYtRE5SeHkwck1JN2IzcmxTWmk1czVHRHUtcGpPclpaTndaZTJ1eHdVX0pJWXpiRVY4MmlvQzM4YkxB</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中华网</author><pubDate>Sun, 08 Mar 2026 13:49:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE16Um9IT1h1MlozZUZGNDJwc3dJUXVCcUJ2TXAyZ3F6SFVnYnFvMFNIb1FKRW1IWkMyU1czZXgyRW12TWh0Nkx2N3gyXzBkempWS2N4eUlVR1NGSF92UFVReDdZRGlETW9TZFVzYnUzUlE</guid></item></channel></rss>
