@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于天然菌群的单细胞转录组解析小鼠脾脏免疫衰老与慢性应激适应图谱 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260314001029331.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 健康</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>基于病理学与放射学基础模型融合的多模态框架助力WHO 2021胶质瘤分子分型 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260314045919847.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
+                    &lt;p&gt;在脑肿瘤的诊疗领域，胶质瘤是最常见且极具侵袭性的原发性脑肿瘤。传统的诊断和分型高度依赖病理医生的镜下观察和分子检测，但这些方法往往耗时、有创，且对医疗资源有较高要求。与此同时，磁共振成像（MRI）等影像学检查虽能无创地观察肿瘤的宏观形态和生理特征，但在精确的分子亚型判断上常显得力不从心。临床实践面临着一个核心难题：无论是单独依靠“显微镜下”的病理切片，还是单独依靠“影像照片”，都难以对胶质瘤进行精准的分子分型，而这恰恰是世界卫生组织（WHO）2021年中枢神经系统肿瘤分类标准所强调的核心，直接关系到患者的治疗方案选择和预后评估。是否存在一条路径，能够将病理的微观细节与影像的宏观信息强强联合，让计算机模型学会像经验丰富的多学科团队一样“看图识瘤”呢？&lt;/p&gt;
+&lt;p&gt;为了回答这个问题，一组研究人员开展了一项开创性的研究，旨在开发一个能够整合组织病理学和MRI图像的多模态人工智能框架，以实现精准、可解释的胶质瘤WHO 2021分子亚型分类。这项研究发表于《npj Precision Oncology》。研究人员巧妙地将当前人工智能领域的“基础模型”概念引入医疗图像分析，将其分别作为处理病理图像和MRI图像的“单模态专家”。他们面对的现实挑战是，临床上同时具备高质量配对的病理切片和MRI图像的病例数据非常稀缺。因此，研究团队创新性地采用了“非配对”数据集进行模型训练，即模型分别从772例独立的组织病理学案例和959例独立的多参数MRI扫描中学习各自模态的特征，而无需确保每个患者同时拥有两种模态的数据。最终，他们在171例全新的、患者匹配的（即同时拥有两种模态数据的）病例上对模型进行了严格的独立测试。&lt;/p&gt;
+&lt;p&gt;在技术方法层面，本研究的关键在于构建和比较多模态融合策略。研究人员以在大型自然图像数据集上预训练的视觉基础模型（如DINOv2）作为骨干网络，分别初始化了处理组织病理全切片图像和T&lt;sub&gt;2&lt;/sub&gt;加权、T&lt;sub&gt;1&lt;/sub&gt;加权、T&lt;sub&gt;1&lt;/sub&gt;加权钆增强、液体衰减反转恢复序列等多参数MRI图像的编码器。随后，他们系统评估了三种融合来自不同模态信息的架构：晚期融合、早期融合以及专家混合架构。模型训练在两个非配对的数据集上进行，并通过一个独立的、患者匹配的测试集（n=171）进行评估，主要性能指标为受试者工作特征曲线下面积。&lt;/p&gt;
+&lt;p&gt;研究结果通过系统的实验和多角度分析得以呈现。&lt;/p&gt;
+&lt;p&gt;“Multimodal models consistently outperform unimodal baselines”。这是最核心的发现。无论采用哪种融合策略，融合了病理和MRI信息的多模态模型，其分类性能都稳定地超越了仅使用单一模态（纯病理或纯MRI）的基准模型。这有力地证明了整合多模态信息对于提升胶质瘤分子分型准确性的巨大价值。&lt;/p&gt;
+&lt;p&gt;“A mixture-of-experts architecture achieves the strongest performance”。在三种策略中，专家混合架构脱颖而出，取得了最佳性能。在验证集上，其区分不同分子亚型的曲线下面积达到了惊人的0.98；在完全独立的测试集上，性能依旧稳健，曲线下面积为0.94。这表明该架构能最有效地协同和利用来自不同模态的互补信息。&lt;/p&gt;
+&lt;p&gt;“High-performing multimodal classifiers can be trained without paired multimodal data”。这是一个具有重大实际意义的发现。研究结果显示，即使仅使用非配对的数据（即模型从未在训练中见过同一个病人的病理和MRI图像对），所训练出的多模态分类器依然能取得优异的性能。这突破了高质量配对多模态医疗数据难以获取的瓶颈，为在实际临床场景中应用此类技术扫清了一大障碍。&lt;/p&gt;
+&lt;p&gt;“Analysis of learned representations reveals multimodal biomarkers”。通过对模型所学到的多模态表征进行深入分析，研究人员为模型的“黑箱”决策提供了可解释的窗口。他们发现，模型能够自动识别出与特定胶质瘤分子亚型（如异柠檬酸脱氢酶突变型、染色体1p/19q共缺失型等）相关的、跨模态的视觉生物标志物。例如，模型可能将病理图像中的某些细胞形态学特征与MRI图像中的特定纹理或增强模式关联起来，共同指向某一亚型。这不仅仅是一个分类工具，更是一个能够提供新生物学见解的研究平台。&lt;/p&gt;
+&lt;p&gt;综上所述，本研究成功地开发并验证了一个基于基础模型的多模态融合框架，用于胶质瘤的WHO 2021分子亚型分类。其核心结论在于，融合组织病理学和MRI信息能显著提升分类精度，其中专家混合架构最为有效；更重要的是，该框架无需配对的多模态数据即可训练，极大提升了其临床适用性。此外，模型所揭示的多模态视觉生物标志物，为理解不同分子亚型在微观和宏观图像上的表现提供了可解释的洞察。这项研究的意义重大，它不仅为胶质瘤的精准、无创或微创辅助诊断提供了强有力的新工具，其“非配对数据训练”范式也为解决其他医学领域多模态数据融合的普遍难题提供了创新思路，推动了可解释人工智能在临床决策支持中的实际应用。&lt;/p&gt;
+
+                    &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 13 Mar 2026 21:19:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE95dFcxVHJOZkVKV1lwSm1VNTRNZFNUbGRFc1VIeXRrRkRwcnNBQ3RUZHRnRUVQRnM1Rl9fWTBYazl3WkIwa1M5bFgtc3I3bjZCLVllV3JLaFdvZktQRVM3Y1pLNGhmRlctOUE</guid></item><item><title>基于天然菌群的单细胞转录组解析小鼠脾脏免疫衰老与慢性应激适应图谱 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260314001029331.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
                     &lt;p&gt;&lt;strong&gt;研究概览&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;随着衰老，免疫系统的组成、转录组和功能在各组织中发生显著改变。脾脏作为最大的次级淋巴器官，在衰老过程中的作用日益重要，但其在天然菌群和慢性应激背景下的免疫衰老景观仍未得到充分探索。为了弥补这一空白，本研究对拥有天然菌群（NM）的年轻（4月龄）、年老（22-24月龄）以及接受慢性可变应激（CVS）处理的年老小鼠脾脏进行了单细胞RNA测序（scRNA-seq）分析，以解析微生物环境和慢性应激对免疫衰老的影响。研究进一步整合了五个已发表的无特定病原体（SPF）小鼠数据集，构建了一个包含超过27.2万个脾细胞的综合性衰老小鼠脾脏图谱，旨在识别跨数据集保守的衰老特征，并评估菌群和慢性应激的作用。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.1 研究设计与单细胞图谱构建&lt;/strong&gt;&lt;/p&gt;
@@ -144,7 +157,38 @@ Carlos-Alberto Gonçalves&lt;/p&gt;
 
                     &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
                 &lt;/div&gt;
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 13 Mar 2026 16:22:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE94NDk2RnJMMHFORHg1LUFlOVdJOHdDQWpnMC02RUJlTTEzOEU4STJIWWZSeHB0dFNLMVRjQ3FPaEhyT3NsZkhTRTc4aU55bzhhYm5NNERwNnk0eFh0U2lYWkVWdVgwd25oY0E</guid></item><item><title>针对急性以心脏为中心的血流动力学管理措施，能够保护患有高位胸段脊髓损伤的猪的慢性心血管功能 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260314001105200.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;慢性高程度脊髓损伤（SCI）会导致长期的心血管-自主神经系统失调。在受伤后的最初几个小时内，使用多巴胺（DOB）进行以心脏为中心的管理可以优化心血管血流动力学，并与基于标准血管加压剂的管理方法（例如去甲肾上腺素，NE）相比，减轻继发性损伤；然而，任何潜在的长期益处仍有待确定。因此，我们试图评估急性DOB治疗是否可以在慢性高程度SCI的情况下缓解心血管功能障碍。17只患有T2级SCI的尤卡坦迷你猪在受伤后30分钟至6小时内接受了DOB（2.5 µg kg&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，n = 6）、NE（4.25 µg kg&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，n = 6）或无治疗（CON，n = 5）的处理，随后被恢复并饲养12周。在受伤后12周进行了结果评估，包括左心室（LV）、Swan-Ganz导管和动脉导管插入术，以表征心脏和周围血流动力学。两组治疗组的静息平均动脉压（MAP）均较高（DOB：80 ± 9 mmHg，NE：88 ± 11 mmHg vs CON：65 ± 3 mmHg；P = 0.0147 for DOB，P = 0.00679 for NE），并且DOB治疗组的每搏输出量更大（33 ± 4 ml vs NE：25 ± 5 ml，P = 0.0269），而NE治疗组的总外周阻力（41 ± 11 mmHg l&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; vs CON：24 ± 4 mmHg l&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，P = 0.0345）和动脉弹性（3.60 ± 0.95 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; vs CON：2.08 ± 0.34 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，P = 0.0258 vs CON）也有所升高。DOB治疗组的动态左心室功能也得到了保持，在DOB压力测试（收缩末期弹性；+8.96 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; vs CON：+1.28 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;sub&gt;max&lt;/sub&gt;-EDV）vs MAP；-0.56 ± 0.33 ml s&lt;sup&gt;-1&lt;/sup&gt; vs CON：0.04 ± 0.05 ml s&lt;sup&gt;-1&lt;figure&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 13 Mar 2026 16:22:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE94NDk2RnJMMHFORHg1LUFlOVdJOHdDQWpnMC02RUJlTTEzOEU4STJIWWZSeHB0dFNLMVRjQ3FPaEhyT3NsZkhTRTc4aU55bzhhYm5NNERwNnk0eFh0U2lYWkVWdVgwd25oY0E</guid></item><item><title>针对日本患有代谢性脂肪性肝病（MASLD）的F2–F3级肝纤维化患者，优化VCTE和ELF阈值以确定治疗适用性 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260314000902007.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;
+         
+         
+         &lt;section&gt;
+            
+            &lt;h3&gt;目的&lt;/h3&gt;
+            
+            &lt;p&gt;评估西方指南推荐的非侵入性检测临界值是否能够准确识别日本非酒精性脂肪性肝病（MASLD）患者中符合治疗标准的纤维化（F2–3）患者。&lt;/p&gt;
+            &lt;/section&gt;
+         
+         &lt;section&gt;
+            
+            &lt;h3&gt;方法&lt;/h3&gt;
+            
+            &lt;p&gt;我们分析了通过活检确诊为MASLD并接受FIB-4筛查的日本患者，随后进行VCTE或ELF检测。排除了年龄&amp;lt;65岁且FIB-4&amp;lt;1.3的患者，或年龄≥65岁且FIB-4&amp;lt;2.0的患者，最终VCTE组有838名患者，ELF组有657名患者。使用接收者操作特征（ROC）分析来确定各组的临界值。&lt;/p&gt;
+            &lt;/section&gt;
+         
+         &lt;section&gt;
+            
+            &lt;h3&gt;结果&lt;/h3&gt;
+            
+            &lt;p&gt;对于预测F2–3纤维化，VCTE临界值为8 kPa时，灵敏度/特异性/阳性预测值（PPV）/阴性预测值（NPV）分别为83.7%/61.2%/80.2%/66.7%；VCTE临界值为15 kPa时，这些指标分别为88.1%/76.8%/22.3%/98.8%。对于预测F4纤维化，ELF临界值为9.2时，这些指标分别为94.7%/23.1%/66.5%/73.1%；ELF临界值为10.5时，这些指标分别为80.0%/58.4%/9.9%/98.1%。使用ROC分析得出的临界值（VCTE 9.5和15 kPa；ELF 10.3和10.8），VCTE在预测F2–3方面的性能分别为74.0%/75.6%/85.1%/60.8%，ELF分别为66.2%/73.9%/80.6%/57.1%；在预测F4方面，VCTE分别为88.1%/76.8%/22.3%/98.8%，ELF分别为77.1%/69.8%/12.6%/98.2%。在检测结果阳性的患者中，VCTE临界值8–15 kPa时F0–1/F2–3/F4的比例分别为28.7%/69.2%/2.1%，ELF临界值9.2–10.5时分别为47.8%/49.8%/2.4%。&lt;/p&gt;
+            &lt;/section&gt;
+         
+         &lt;section&gt;
+            
+            &lt;h3&gt;结论&lt;/h3&gt;
+            
+            &lt;p&gt;西方指南推荐的VCTE和ELF临界值在日本患者中显示出较高的灵敏度，可用于排除肝硬化。由于当VCTE&amp;gt;15 kPa或ELF&amp;gt;10.5时肝硬化的可能性增加，因此应结合其他临床信息来确定患者是否符合治疗标准，并在必要时进行确认性评估。&lt;/p&gt;
+         &lt;/section&gt;
+         &lt;/div&gt;
+   &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Fri, 13 Mar 2026 16:13:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5ydzRPb2RHUnNYZWpfOVdpb2FXN3RxbkVFcnRjRGVScGtuekI0cGJSVnhvSl96WlQ1X3dPRFNMNHhudXZFSUpyRHRvNlIwclVpNEk0Nk9EM3hpS3h4aGR6dEVDRWtpZGtFOFE</guid></item><item><title>针对急性以心脏为中心的血流动力学管理措施，能够保护患有高位胸段脊髓损伤的猪的慢性心血管功能 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260314001105200.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;慢性高程度脊髓损伤（SCI）会导致长期的心血管-自主神经系统失调。在受伤后的最初几个小时内，使用多巴胺（DOB）进行以心脏为中心的管理可以优化心血管血流动力学，并与基于标准血管加压剂的管理方法（例如去甲肾上腺素，NE）相比，减轻继发性损伤；然而，任何潜在的长期益处仍有待确定。因此，我们试图评估急性DOB治疗是否可以在慢性高程度SCI的情况下缓解心血管功能障碍。17只患有T2级SCI的尤卡坦迷你猪在受伤后30分钟至6小时内接受了DOB（2.5 µg kg&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，n = 6）、NE（4.25 µg kg&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，n = 6）或无治疗（CON，n = 5）的处理，随后被恢复并饲养12周。在受伤后12周进行了结果评估，包括左心室（LV）、Swan-Ganz导管和动脉导管插入术，以表征心脏和周围血流动力学。两组治疗组的静息平均动脉压（MAP）均较高（DOB：80 ± 9 mmHg，NE：88 ± 11 mmHg vs CON：65 ± 3 mmHg；P = 0.0147 for DOB，P = 0.00679 for NE），并且DOB治疗组的每搏输出量更大（33 ± 4 ml vs NE：25 ± 5 ml，P = 0.0269），而NE治疗组的总外周阻力（41 ± 11 mmHg l&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; vs CON：24 ± 4 mmHg l&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; min&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，P = 0.0345）和动脉弹性（3.60 ± 0.95 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; vs CON：2.08 ± 0.34 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt;，P = 0.0258 vs CON）也有所升高。DOB治疗组的动态左心室功能也得到了保持，在DOB压力测试（收缩末期弹性；+8.96 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;/sup&gt;&lt;p&gt; vs CON：+1.28 mmHg ml&lt;/p&gt;&lt;sup&gt;-1&lt;sub&gt;max&lt;/sub&gt;-EDV）vs MAP；-0.56 ± 0.33 ml s&lt;sup&gt;-1&lt;/sup&gt; vs CON：0.04 ± 0.05 ml s&lt;sup&gt;-1&lt;figure&gt;
                   
                &lt;/figure&gt;
             &lt;/sup&gt;&lt;/sup&gt;&lt;/div&gt;
