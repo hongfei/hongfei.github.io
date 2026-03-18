@@ -1,5 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>童年神作Steam更新官方中文！你绝对玩过 - 驱动之家</title><link>https://news.mydrivers.com/1/1110/1110105.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>日本最强大模型，把日本网友搞破防了 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_03_18_810550.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	（文/陈济深 编辑/张广凯）
+&lt;/p&gt;
+&lt;p&gt;
+	中国一开源，日本就自研。
+&lt;/p&gt;
+&lt;p&gt;
+	3月17日，日本互联网巨头乐天集团正式发布了Rakuten AI 3.0，号称"日本国内最大规模的高性能AI模型"，乐天介绍其有约7000亿参数，作为一款日语特化模型在多项日语基准超越GPT-4o，还拿了日本经产省和NEDO的GENIAC项目补助。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/03/18/20260318103625541.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	然后发布当天，这款日本最强大模型就“翻车”了。
+&lt;/p&gt;
+&lt;p&gt;
+	有日本网友测试发现，在钓鱼岛事件上，该模型在阐述日本立场时，也明确表示了中国大陆和中国台湾对钓鱼岛的主权主张，而在抗日战争的定性上，该模型则直接列举了包括731部队等日军行径，并称东京审判已经定性了日本负有战争罪行。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/03/18/20260318103528241.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	这些回答引发了部分日本网友的质疑，认为该模型可能由中国开发。后来更是有日本网友查看了该模型的配置文件后发现，"日本国内最大规模的高性能AI模型"，是DeepSeek V3。
+&lt;/p&gt;
+&lt;p&gt;
+	而更为离谱的是，乐天一开始就没有放入DeepSeek的MIT许可证文件，被指出之后，才默默以NOTICE为文件名补了上去，提交说明写的是"Add the permission notice"，里面的版权声明：Copyright (c) 2023 DeepSeek。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/03/18/20260318103738741.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	截至目前，乐天集团没有任何公开回应。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;“最强日本国产大模型”&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	根据乐天的官方新闻稿，Rakuten AI 3.0是"基于开源社区最优秀的模型，结合乐天独自的高品质双语数据、技术力和研究成果开发"的，对Deepseek只字未提。
+&lt;/p&gt;
+&lt;p&gt;
+	乐天还特别强调，这个模型是GENIAC第三期的成果，学习费用部分由GENIAC提供的计算资源补助支持。
+&lt;/p&gt;
+&lt;p&gt;
+	GENIAC是经济产业省与新能源产业技术综合开发机构（NEDO）主导的项目，为日本的AI开发企业提供GPU利用方面的助力。说白了就是国家出钱、企业出力，目标是建立日本的自主AI能力。
+&lt;/p&gt;
+&lt;p&gt;
+	值得注意的是，扒开该模型底裤没有任何门槛。
+&lt;/p&gt;
+&lt;p&gt;
+	该模型权重上传到Hugging Face之后，任何人点进去，切到Files and versions标签页，打开config.json就能看到。用户发现模型的config.json文件中包含"model_type": "deepseek_v3"这样的条目。architectures写着DeepseekV3ForCausalLM，不是"参考"，不是"借鉴"，是直接声明了模型类别。
+&lt;/p&gt;
+&lt;p&gt;
+	而继续看模型信息就可以发现，hidden_size是7168，intermediate_size是18432，num_hidden_layers是61，n_routed_experts是256，vocab_size是129280。和DeepSeek V3的原版配置一模一样。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/03/18/20260318103849467.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	所以楽天号称"参数量约7000亿"，因为DeepSeek V3的参数量就是6710亿。四舍五入约等于7000亿，这个"约"字用得精髓。
+&lt;/p&gt;
+&lt;p&gt;
+	有日本网友无奈的表示：DeepSeek现在都更新到V3.2了，乐天拿个旧版出来包装，套壳都不挑个新的。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;翻车不是因为抄&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek V3是开源模型，许可证允许商业使用和二次开发，在开源模型基础上做微调是行业通行做法，乐天为何会翻车？
+&lt;/p&gt;
+&lt;p&gt;
+	严格来说，乐天在法律上确实没有违规。但这件事被冲，不是因为"用了开源模型"，而是因为几件事叠在一起。
+&lt;/p&gt;
+&lt;p&gt;
+	第一，乐天在所有对外宣传中刻意回避了DeepSeek的名字。之前乐天发布RakutenAI-7B的时候，老老实实写了"基于Mistral-7B开发"。这次突然改成"基于开源社区最优秀的模型"这种含糊说法，明显是故意的。
+&lt;/p&gt;
+&lt;p&gt;
+	日本AI研究者うみゆき在X上吐槽：上次老实交代了，这次怎么就故意写得含含糊糊了？
+&lt;/p&gt;
+&lt;p&gt;
+	第二，许可证这个操作太难看了。你用了别人的开源成果，连许可证都没放进去，被发现了才补回来。这已经不是透明度的问题了，是态度问题。
+&lt;/p&gt;
+&lt;p&gt;
+	第三，也是最致命的——这个项目花的是日本纳税人的钱。GENIAC项目的初衷是扶持日本自主AI能力，结果楽天拿到补助之后，下载了中国的开源模型，做了一层日语微调，然后号称"日本国内最大规模的高性能AI模型"。
+&lt;/p&gt;
+&lt;p&gt;
+	有日本博主表示：真正可耻的不是用了别人的模型，而是把这件事说得含含糊糊。如果楽天一开始就说"日本目前还没有从零构建基础模型的条件，所以我们基于DeepSeek做日语优化"，这不但不会炎上（指引发大量负面新闻），反而会被视为务实的开发策略。
+&lt;/p&gt;
+&lt;p&gt;
+	可惜乐天选择了装。
+&lt;/p&gt;
+&lt;p&gt;
+	这个事情放在日本社会的语境下，刺痛感会被放大好几倍。
+&lt;/p&gt;
+&lt;p&gt;
+	2025年1月底，DeepSeek在全球爆火。中国AI企业DeepSeek低成本发布了高性能的生成AI模型，其iPhone应用在免费应用排行榜上压过ChatGPT登顶第一，引发了美国股市科技股暴跌的"DeepSeek冲击"。最具冲击力的是AI芯片巨头英伟达股价单日暴跌17%，一天之内市值蒸发近6000亿美元（约合91万亿日元），相当于两个丰田汽车的市值，刷新了单一股票单日市值跌幅的历史纪录。
+&lt;/p&gt;
+&lt;p&gt;
+	日本媒体给DeepSeek起了个名字，叫"AI界的黑船来航"。
+&lt;/p&gt;
+&lt;p&gt;
+	1853年，美国海军东印度舰队司令长官佩里率领包括两艘蒸汽船在内的四艘军舰来到日本，舰队停泊在江户湾入口的浦贺冲，这就是"黑船来航"。旗舰萨斯奎哈纳号（USS Susquehanna）排水量约2450吨，而当时日本最大的和船不过200吨左右，完全不是一个量级。
+&lt;/p&gt;
+&lt;p&gt;
+	喷吐黑烟的蒸汽船的威容，对从未见过这种东西的人来说就是赤裸裸的威胁。据传佐久间象山和吉田松阴站在浦贺用望远镜眺望黑船，两人看到那压倒性的军事力量之后痛感：以日本现在的实力，完全没有任何胜算。
+&lt;/p&gt;
+&lt;p&gt;
+	黒船来航被视为日本近代的开端。它终结了持续约250年的江户幕府统治，从那以后，各藩的藩士和藩主掀起了攘夷论的狂潮，最终导致了倒幕。
+&lt;/p&gt;
+&lt;p&gt;
+	所以在日语里，"黑船"早已不只是指佩里的那几艘军舰了。它变成了一个固定的文化符号，专门用来形容"外来力量对日本造成的不可抗拒的巨大冲击"——你挡不住、躲不掉、也无法假装它不存在。当日本媒体把DeepSeek称为"AI界的黑船"的时候，潜台词是：这东西的冲击力等级，和172年前那几艘炮舰是一样的。
+&lt;/p&gt;
+&lt;p&gt;
+	日本政府的反应也确实像被黑船吓到了一样快。
+&lt;/p&gt;
+&lt;p&gt;
+	2025年2月6日，日本政府向各省厅发出呼吁，要求各政府机关在使用DeepSeek等生成式AI进行业务时，必须充分认识风险，并向内阁网络安全中心（NISC）和数字厅寻求建议。日本个人信息保护委员会特别指出：DeepSeek获取的包含个人信息的数据被保存在中国境内的服务器上，适用中华人民共和国的法令。
+&lt;/p&gt;
+&lt;p&gt;
+	企业层面动作更直接。丰田汽车、三菱重工业、软银等日本大型企业已全面禁止员工在公司内部使用DeepSeek。丰田明确表示"出于信息安全的考虑，禁止使用"；三菱重工即便员工提交申请也不会获批；软银则限制了公司内部访问，禁止在业务设备上下载和使用。不只是这三家，有大型素材厂商表示"与业务中使用的微软生成AI不同，判断风险较高"；有大型住宅厂商称"考虑到信息泄露和数据被用于AI学习的风险"而决定禁用。很多企业的做法是只允许使用美国企业等特定服务，其他AI一律禁止。
+&lt;/p&gt;
+&lt;p&gt;
+	不只是日本。意大利因涉嫌违反GDPR启动调查并要求删除应用；台湾以国家安全为由全面禁止政府机关使用；美国的国防部、NASA、海军均已屏蔽访问，众议院向全体议员发出了使用限制通知；澳大利亚和韩国也采取了类似措施。
+&lt;/p&gt;
+&lt;p&gt;
+	从政府到企业，从日本到全球，DeepSeek在相当一部分国家和机构眼里，就是一个"碰都不能碰"的东西。
+&lt;/p&gt;
+&lt;p&gt;
+	结果现在，日本企业拿着国家补助，用的就是这个"碰都不能碰"的东西，换了个名字，告诉你这是日本国产最强AI。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/03/18/20260318104010265.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	有日本网友在X平台发帖自嘲：算了别生气了，日本AI已经"周回遅れ"（落后一圈），现在唯一的路就是把海外开源模型进口过来追加训练，然后"ハイ国産です～"（哈，国产的哟～），搞"産地偽造国籍ロンダリング"（产地伪造+国籍洗白）。
+&lt;/p&gt;
+&lt;p&gt;
+	还有人去乐天的AI聊天官网实际测试，发现代码能力太好了，而且居然支持图像输入——但DeepSeek V3本身不支持图像，Rakuten AI 3.0也没有加图像编码器。这位博主的结论是：乐天AI官网上跑的大概率根本不是自家的Rakuten AI 3.0，而是Claude或GPT系列。自己发布的"日本最强AI"，自己的官网都不用。
+&lt;/p&gt;
+&lt;p&gt;
+	回过头来看，黑船来航之后，佐久间象山提出了"以夷之术制夷"——引进西方的技术来增强国力，以此对抗西方。
+&lt;/p&gt;
+&lt;p&gt;
+	172年后的2025年，乐天确实引进了中国的技术，但没有用来增强国力，而是用来增强PPT。
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Wed, 18 Mar 2026 12:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1SRWpvWWZBcGljV1hzUy0yd0NrVlBKSXBJS1RSbFdTZVFLb044Zm5HVDJ2dnRNRjRhdXdKUnFHanRhSldFeGNIRkltZzJjekFuYm1SUE13XzNNN1NwaFdPczVKRnk</guid></item><item><title>性能最强悍的8.8英寸小平板来了！联想拯救者Y700五代发布：3499元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1110/1110125.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月18日消息，今日晚间，联想拯救者Y700五代正式发布。起售价定为3999元，&lt;span&gt;&lt;strong&gt;在享受国家补贴后的到手价仅需3499元起，而针对大学生的专项国补优惠价更是低至3299元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这款小尺寸平板采用了8.8英寸的电竞级屏幕，分辨率高达3840×1904。它不仅支持165Hz的超高刷新率，还通过了莱茵硬件级低蓝光、无频闪以及触控无忧等多项专业认证。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260318/fafe3b5f8f6842f78afd64acf9112e61.jpg" target="_blank"&gt;&lt;img alt="性能最强悍的8.8英寸小平板来了！联想拯救者Y700五代发布：3499元起" h="324" src="//img1.mydrivers.com/img/20260318/s_fafe3b5f8f6842f78afd64acf9112e61.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260318/019421cca3b242799ce923df8dd5e48d.jpg" target="_blank"&gt;&lt;img alt="性能最强悍的8.8英寸小平板来了！联想拯救者Y700五代发布：3499元起" h="338" src="//img1.mydrivers.com/img/20260318/s_019421cca3b242799ce923df8dd5e48d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;硬件配置方面，联想拯救者Y700五代搭载了高通第五代骁龙8至尊版旗舰平台。其性能表现极其强悍，在安兔兔跑分测试中一举突破了453万分，再次刷新了小尺寸平板的性能上限。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260318/4c0b0ca3ea4643e2bd836026a75bd283.jpg" target="_blank"&gt;&lt;img alt="性能最强悍的8.8英寸小平板来了！联想拯救者Y700五代发布：3499元起" h="320" src="//img1.mydrivers.com/img/20260318/s_4c0b0ca3ea4643e2bd836026a75bd283.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为了保障持久的战斗力，该机内置了9000毫安时的超大容量电池，并支持68W超级闪充。特别加入的旁路充电技术，可以让玩家在插电游戏时有效降低机身发热，确保性能输出更加稳定。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更具特色的是，该平板同时配备了两个USB-C接口。这一创新设计让游戏充电与使用有线耳机不再冲突。同时，它支持USB3.2Gen2高速数据传输以及DP视频输出，极大拓展了使用边界。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260318/c6e3b2877f2143eea7cfccd003fadccd.jpg" target="_blank"&gt;&lt;img alt="性能最强悍的8.8英寸小平板来了！联想拯救者Y700五代发布：3499元起" h="339" src="//img1.mydrivers.com/img/20260318/s_c6e3b2877f2143eea7cfccd003fadccd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此外，联想拯救者Y700五代还支持便携上网卡以及TF卡扩展，最高可支持2TB的海量存储。无论是重度游戏玩家还是影音爱好者，都能在这款设备上获得极大的灵活性。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260318/5da7a42f18c744a0bd6a3bfeaba430bc.jpg" target="_blank"&gt;&lt;img alt="性能最强悍的8.8英寸小平板来了！联想拯救者Y700五代发布：3499元起" h="262" src="//img1.mydrivers.com/img/20260318/s_5da7a42f18c744a0bd6a3bfeaba430bc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在交互反馈上，该平板搭载了与瑞声科技共同研发的双高端X轴线性马达。这套系统适配了多种场景，能够提供高品质的振感体验，让低频的沉重感与高频的尖锐感在指尖精准释放。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这种细腻且富有层次感的触感反馈，配合顶级的硬件性能，为用户带来了逼真且丰富的沉浸式体验。作为目前市场上罕见的高性能小尺寸平板，联想拯救者Y700五代无疑树立了新的行业标杆。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260318/3a5ba70f46ff4bbe9d54e358f51a73c9.jpg" target="_blank"&gt;&lt;img alt="性能最强悍的8.8英寸小平板来了！联想拯救者Y700五代发布：3499元起" h="400" src="//img1.mydrivers.com/img/20260318/s_3a5ba70f46ff4bbe9d54e358f51a73c9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 18 Mar 2026 12:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBZdFlZWlpoeDBjc3B4R3lETTZRTmJIcjdOU1h1WkRiYzdqWFFTaWVTMTl1dUg2bWdwZmNMaXFWLXg2V2FYRzY3SUlzTlBXYVBtbnJPc3pIUXY</guid></item><item><title>我在微信养了一天龙虾🦞，花了 20 万Token让它给我发压缩包 - 爱范儿</title><link>https://www.ifanr.com/1658689</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;p&gt;现在，你的微信里也能养「龙虾」了。&lt;/p&gt;
+&lt;p&gt;龙虾爆火后，在 AI 牌桌上一向低调的腾讯，罕见打出一套快拳，迅速端出三款「龙虾」，其中最值得拿上台面聊聊的，当数 QClaw——&lt;/p&gt;
+&lt;p&gt;这是腾讯电脑管家基于 OpenClaw 打造的一款本地 AI 助手，它最特别的地方在于你可以支持直接在微信与「龙虾」对话，让它帮你干活。&lt;/p&gt;
+&lt;p&gt;今天，QClaw 正式更新 v0.1.9 版本，用户可以通过小程序接收电脑端文件，同时上线了足以充当龙虾指南的「灵感广场」。&lt;/p&gt;
+&lt;p&gt;APPSO 第一时间实测了微信养龙虾，看看实际体验如何。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658701" src="https://s3.ifanr.com/wp-content/uploads/2026/03/11-5.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/11-5.png!720 1920w, https://s3.ifanr.com/wp-content/uploads/2026/03/11-5-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/11-5-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/11-5-1024x768.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px"&gt;&lt;/p&gt;
+&lt;h3&gt;一只对小白友好的腾讯龙虾&lt;/h3&gt;
+&lt;p&gt;QClaw 的界面长了一张大家都很熟悉的「AI 脸」：左边聊天，右边干活。为了让你最快上手，它在主界面的 C 位甩出了几个预设选项。点击「安装你的第一个 Skill」，这只龙虾就会手把手教你如何点亮它的技能树。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658703" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-10.42.27.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-10.42.27.png!720 2624w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-10.42.27-360x250.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-10.42.27-768x534.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-10.42.27-1024x712.png 1024w" sizes="(max-width: 2624px) 100vw, 2624px"&gt;&lt;/p&gt;
+&lt;p&gt;背靠 ClawHub 和 GitHub ，QClaw 拥有的 Skill 储备超过 5000 种。面对这么庞大的库，该怎么挑？腾讯给出的答案很直接：别挑，直接开口。你只需要用大白话描述你想干啥，它就会自动把合适的 Skill 端到你面前。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658704" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.08.46.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.08.46.png!720 2536w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.08.46-360x246.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.08.46-768x526.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.08.46-1024x701.png 1024w" sizes="(max-width: 2536px) 100vw, 2536px"&gt;&lt;/p&gt;
+&lt;p&gt;傻瓜式的交互，极大抹平了新手的学习曲线。但对喜欢掌控感的人来说，难免会有一点隐秘的焦虑——总得有个完整菜单让我看看有什么菜吧？&lt;/p&gt;
+&lt;p&gt;稍微翻找一下，你会发现它藏在设置的「技能管理」中。在这里，你能总览所有技能，甚至可以直接从 GitHub 粘贴导入。但耐人寻味的是，哪怕在这个稍显硬核的管理界面里，排在最前面的添加方式，依然是「通过对话创建」。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658705" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.19.41.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.19.41.png!720 2624w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.19.41-360x250.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.19.41-768x534.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-11.19.41-1024x712.png 1024w" sizes="(max-width: 2624px) 100vw, 2624px"&gt;&lt;/p&gt;
+&lt;p&gt;可以看出来的是，在决定基础体验与 QClaw 能干什么的事情上，腾讯想尽量将事情做简单——刚刚 QClaw 回复 Skill 列表的第三点，依旧在鼓励我直接告诉它想要什么样的 Skill。&lt;/p&gt;
+&lt;h3&gt;微信养虾很有趣，只是这虾有点生&lt;/h3&gt;
+&lt;p&gt;部署好电脑端之后，我们直奔重头戏——微信遥控。&lt;/p&gt;
+&lt;p&gt;先在主界面左下角用微信登录 QClaw。注意：目前内测仍需填写邀请码，没有邀请码的话，就算微信登录成功也是一个空壳，什么都做不了。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658710" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-15.46.27.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-15.46.27.png!720 2536w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-15.46.27-360x246.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-15.46.27-768x526.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-15.46.27-1024x701.png 1024w" sizes="(max-width: 2536px) 100vw, 2536px"&gt;&lt;/p&gt;
+&lt;p&gt;不过，光在电脑端完成登录，还不足以召唤出这只「龙虾」的完全体。要想真正把它装进口袋，还得进行一次关键的跨屏连线。&lt;/p&gt;
+&lt;p&gt;在界面左下角的头像旁唤醒「微信远程」，掏出手机微信扫一扫，界面会丝滑地跳转到微信里的 QClaw 客服对话框，另一头的电脑屏幕也会默契地亮起连接成功的提示。&lt;/p&gt;
+&lt;p&gt;不需要任何复杂的内网穿透或代码配置，你的微信聊天框，此刻已经正式变成了一个能随时使唤电脑干活的随身遥控器。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658698" src="https://s3.ifanr.com/wp-content/uploads/2026/03/8-4.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/8-4.png!720 1920w, https://s3.ifanr.com/wp-content/uploads/2026/03/8-4-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/8-4-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/8-4-1024x768.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px"&gt;&lt;/p&gt;
+&lt;p&gt;我相信大多数人面对这只一举一动都要花钱的龙虾（当然，目前内测期间 Token 免费），图的绝不仅是多一个代发微信的聊天搭子，而是能实打实分担工作压力、能帮我干活儿的数字员工。&lt;/p&gt;
+&lt;p&gt;对于我也是如此——尤其是当我不在办公电脑前，又急需一些文件和图片的时候。&lt;/p&gt;
+&lt;p&gt;QClaw 最大的亮点就是免去麻烦的部署，可以通过微信对话框指挥电脑上的 QClaw，而在 v0.1.9 版本，QClaw 上线小程序文件传输能力，用户可以直接通过小程序接收电脑端文件，灵活性进一步提升。&lt;/p&gt;
+&lt;p&gt;那它的实际表现如何呢？&lt;/p&gt;
+&lt;p&gt;在我的电脑下载中，有几张拍摄的样片急需放进推文中，但我此时离公司十万八千里，于是我通过客服号中的 QClaw 对话框下达指令，请 QClaw 将照片传递过来。结果——&lt;/p&gt;
+&lt;p&gt;啊？&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658691" src="https://s3.ifanr.com/wp-content/uploads/2026/03/1-15.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/1-15.jpg!720 1706w, https://s3.ifanr.com/wp-content/uploads/2026/03/1-15-360x270.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/1-15-768x576.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/1-15-1024x768.jpg 1024w" sizes="(max-width: 1706px) 100vw, 1706px"&gt;&lt;/p&gt;
+&lt;p&gt;不死心，重试一次。这次成功了，但只能算「基本成功」——从消息内容来看，QClaw 似乎只回过来了后半段，前半段被悄无声息地吞掉了。&lt;/p&gt;
+&lt;p&gt;为了搞清楚发生了什么，我火速赶回公司，看看电脑端的对话框里是怎么呈现的这次任务：&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658708" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.31.36.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.31.36.png!720 2624w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.31.36-360x250.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.31.36-768x534.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.31.36-1024x712.png 1024w" sizes="(max-width: 2624px) 100vw, 2624px"&gt;&lt;/p&gt;
+&lt;p&gt;也就是说，其实第一次下达指令后，QClaw 是成功响应了，但没有顺利反馈到手机微信里的对话框中；而第二次更是提示我可以在 QClaw 小程序中随时查看，但消息却没发送全，唯一幸运的是后半部分的链接顺利递到了我的对话框中，让我至少能正常下载需要的照片。&lt;/p&gt;
+&lt;p&gt;对于工作来说，文件的任何信息都很重要，所以我打算进一步拷打一下 QClaw：&lt;/p&gt;
+&lt;p&gt;我需要的这些照片，会被 QClaw 偷偷压缩吗？小程序中保存的照片，与链接中的照片是否一致？有没有丢失 Exif 信息呢？&lt;/p&gt;
+&lt;p&gt;抱着这样的疑问，我用手机打开「QClaw 管家」小程序，照片确实秒速送达了。令人无奈的是，QClaw 自作主张地将三张照片打成了压缩包，文件不支持点击选中，也不给任何下载到本地再想办法解压的余地。&lt;/p&gt;
+&lt;p&gt;最后的结果是这份急需的资料就这样死死僵在了列表里，没有任何办法增删查改。折腾了半天，我唯一能做的，就是隔着手机屏幕和它干瞪眼。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658693" src="https://s3.ifanr.com/wp-content/uploads/2026/03/3-10.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/3-10.png!720 1920w, https://s3.ifanr.com/wp-content/uploads/2026/03/3-10-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/3-10-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/3-10-1024x768.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px"&gt;&lt;/p&gt;
+
+&lt;p&gt;此时一定有人提问：不是还有链接吗？人家说小程序是用来查看的，你用链接下载不就好了。&lt;/p&gt;
+&lt;p&gt;没毛病，但我用手机返回客服号对话框，重新找到下载链接时，发生的一幕让我血压暴涨——&lt;/p&gt;
+&lt;p&gt;这个链接，是用来跳转到 QClaw 管家小程序的。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658692" src="https://s3.ifanr.com/wp-content/uploads/2026/03/2-13.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/2-13.jpg!720 1206w, https://s3.ifanr.com/wp-content/uploads/2026/03/2-13-360x357.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/2-13-768x761.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/2-13-1024x1015.jpg 1024w" sizes="(max-width: 1206px) 100vw, 1206px"&gt;&lt;/p&gt;
+&lt;p&gt;当一个事情离谱到超出我意料的时候，我会非常执着地想看看它到底能离谱到什么地步。&lt;/p&gt;
+&lt;p&gt;于是我又不信邪，用电脑点击 QClaw 给我的那条下载链接。&lt;/p&gt;
+&lt;p&gt;可喜可贺——这一次没有出任何差错，文件下载下来了。不仅下载下来了，而且图片还没有任何压缩，Exif 信息也没有任何丢失。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658709" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.54.06.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.54.06.png!720 1334w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.54.06-360x234.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.54.06-768x500.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-13.54.06-1024x666.png 1024w" sizes="(max-width: 1334px) 100vw, 1334px"&gt;&lt;/p&gt;
+&lt;p&gt;但是我怎么就是高兴不起来呢？&lt;/p&gt;
+&lt;p&gt;让我们看看我最初是想干什么？&lt;/p&gt;
+&lt;p&gt;因为我不在办公电脑前，所以我找 QClaw 给我发文件；&lt;br&gt;
+QClaw 给我发到小程序里，还给我发了链接，相当周全；&lt;br&gt;
+小程序里是压缩包，我打不开、看不了、下不动、删不掉；&lt;br&gt;
+手机打开的下载链接也跳转到小程序，我打不开、看不了、下不动、删不掉；&lt;br&gt;
+最后只能用电脑点击下载链接，才能顺利看到文件。&lt;br&gt;
+……&lt;/p&gt;
+&lt;p&gt;好，可能是文件夹里三张图片对于 QClaw 这样刚蹒跚学步的龙虾来说太多了，我只留一张，再来一次。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658694" src="https://s3.ifanr.com/wp-content/uploads/2026/03/4-12.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/4-12.jpg!720 5500w, https://s3.ifanr.com/wp-content/uploads/2026/03/4-12-360x261.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/4-12-768x556.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/4-12-1024x742.jpg 1024w" sizes="(max-width: 5500px) 100vw, 5500px"&gt;&lt;/p&gt;
+
+&lt;p&gt;在我特别叮嘱「别压缩」的前提下，成了！并且 Exif 信息没有任何丢失，大成特成！&lt;/p&gt;
+&lt;p&gt;顺带一提，刚刚这一顿操作下来，又是 20 万 Token 没有了。&lt;/p&gt;
+&lt;h3&gt;灵感广场，教你怎么养龙虾&lt;/h3&gt;
+&lt;p&gt;对没碰过「龙虾」的小白来说，前期的本地部署就像在徒手拼装一台发动机，费尽心思终于熬过了复杂配置，满心欢喜地准备拥抱赛博未来，迎面撞上的却只有一个光秃秃的代码框——我真不知道这玩意能干什么， 或者说我不知道它能怎么帮到我。&lt;/p&gt;
+&lt;p&gt;老天给你发了一把绝世好剑，却忘了给剑谱，而 v0.1.9 上线的「灵感广场」，刚好充当了剑谱作用。&lt;/p&gt;
+&lt;p&gt;腾讯在灵感广场中预设了 15 种任务模式。说实话，其中大部分任务并不能直观体现出龙虾的想象力，以前的大语言模型 AI 也能做到看看八字、梳理知识点框架。于是，在一众应用中，我找了一个较为本地化的操作：发票/单据智能归档。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658706" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.04.25.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.04.25.png!720 2624w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.04.25-360x250.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.04.25-768x534.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.04.25-1024x712.png 1024w" sizes="(max-width: 2624px) 100vw, 2624px"&gt;&lt;/p&gt;
+&lt;p&gt;我的电脑里刚好存放着去年大半年的发票准备报销，但直接在电脑上用预设功能实在没什么意思，我打算用微信通知 QClaw 帮我智能归类，并输出为 Excel 表格：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;把电脑上下载中发票报销文件夹里的发票都帮我整理成报销明细 Excel 表格&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658700" src="https://s3.ifanr.com/wp-content/uploads/2026/03/10-5.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/10-5.png!720 1920w, https://s3.ifanr.com/wp-content/uploads/2026/03/10-5-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/10-5-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/10-5-1024x768.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px"&gt;&lt;/p&gt;
+&lt;p&gt;不知道是不是我在发票报销的文件夹中根据项目分出了近十个小文件夹的原因，QClaw 执行整个指令用了约五分钟的时间，最终输出的 Excel 表格通过文字反馈给了微信客服号的对话框中，并同样附上了小程序的链接。&lt;/p&gt;
+&lt;p&gt;美中不足的是，QClaw 出现了部分发票识别不了的情况——我所有的发票都是 PDF 格式，但由拍摄转为 PDF 的实体发票识别无一例外都失败了，结果差强人意。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658699" src="https://s3.ifanr.com/wp-content/uploads/2026/03/9-6.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/9-6.jpg!720 5060w, https://s3.ifanr.com/wp-content/uploads/2026/03/9-6-360x391.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/9-6-768x835.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/9-6-942x1024.jpg 942w" sizes="(max-width: 5060px) 100vw, 5060px"&gt;&lt;/p&gt;
+&lt;p&gt;随后，我又用电脑端单独输入了一遍同样的指令，得到的结果保持一致——由照片转来的五张发票无法顺利识别。&lt;/p&gt;
+&lt;p&gt;打开设置看看用量统计，电脑整理发票这条指令消耗了 839,061 Token，是单条简单对话的 20 倍左右，而手机微信远程指挥的消耗则为 459,501，Token 消耗比较不稳定。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658696" src="https://s3.ifanr.com/wp-content/uploads/2026/03/6-8.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/6-8.jpg!720 1869w, https://s3.ifanr.com/wp-content/uploads/2026/03/6-8-360x246.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/6-8-768x526.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/6-8-1024x701.jpg 1024w" sizes="(max-width: 1869px) 100vw, 1869px"&gt;&lt;/p&gt;
+&lt;p&gt;不过在折腾这个任务时，我也踩到了微信遥控 QClaw 的弊端——&lt;/p&gt;
+&lt;p&gt;你在手机微信里下发的所有指令，到了电脑端并不会根据任务自动分流，全都简单粗暴地把消息塞进了一个对话框里。：一旦你想回到电脑端复盘之前的任务进度，面对的就是一个深不见底的文字瀑布。没有标签，没有分类，你唯一能做的，就是疯狂搓动鼠标滚轮，在海量的历史记录里苦苦打捞你需要的回答。&lt;/p&gt;
+&lt;p&gt;预设任务完成得尚可，更个人、更日常的任务呢？&lt;/p&gt;
+&lt;p&gt;我打算从最简单的入手——发微信。&lt;/p&gt;
+&lt;p&gt;我请 QClaw 帮我叫女朋友起床，按道理，在 v0.1.9 版本中，QClaw 已经接入微信了，发个微信应该不是什么难事儿。但意外的是，接入微信的 QClaw，找不到我的微信联系人。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658697" src="https://s3.ifanr.com/wp-content/uploads/2026/03/7-9.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/7-9.jpg!720 1869w, https://s3.ifanr.com/wp-content/uploads/2026/03/7-9-360x246.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/7-9-768x526.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/7-9-1024x701.jpg 1024w" sizes="(max-width: 1869px) 100vw, 1869px"&gt;&lt;/p&gt;
+&lt;p&gt;面对这种窘境，QClaw 反复尝试挣扎，在经过备注、用户名、微信号三重查找后，浪费了近 20 万 Token 的 QClaw 终于找到了问题所在：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;看到问题了！微信渠道虽然启用了，但 guid 和 userId 都是空的，说明微信账号还没有完成绑定/授权。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;看起来很合理，但我目前已经绑定了微信，并退出重新登陆过一次，依旧无法成功，换到手机微信客服号远程指挥电脑上的 QClaw，也依旧失败。&lt;/p&gt;
+&lt;p&gt;于是我继续追问如何填充 guid 与 userld，又花费了近 20 万 Token 的 QClaw 这样回答：&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658707" src="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.43.11.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.43.11.png!720 2624w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.43.11-360x250.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.43.11-768x534.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/02026-03-18-12.43.11-1024x712.png 1024w" sizes="(max-width: 2624px) 100vw, 2624px"&gt;&lt;/p&gt;
+&lt;p&gt;看起来头头是道，逻辑正确、方案合理，但我翻遍了设置也没有找到其中任何一个解决办法的入口，而截止本篇体验完稿时，我依旧没能叫她起床……&lt;/p&gt;
+&lt;p&gt;关掉 QClaw，读者们大概会分成两拨——乐观者会期待，悲观者会批评。&lt;/p&gt;
+&lt;p&gt;但我并不打算对一个版本号仅为 v0.1.9 的初生牛犊过于苛刻。这是一个相当年轻的版本，从产品逻辑上，能看出腾讯在尽力降低龙虾的准入门槛，但一旦触及到细分需求，它就会出现零零散散的不如意。&lt;/p&gt;
+&lt;p&gt;这很符合逻辑，易用需要大众，而生产力则天生偏向极致细分，解决这样的矛盾还需要时间。目前的 QClaw 只是呈现一个粗糙的框架，向我们掀起未来一角。&lt;/p&gt;
+&lt;p&gt;跳出 QClaw 这盘「小龙虾」，也许我们还可以有一些更大的猜想——&lt;/p&gt;
+&lt;p&gt;之前我们在文章《OpenClaw 让每个聊天软件都有机会变成微信》中提到：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;当一个聊天窗口可以调用任意 agent 完成从订票、编程到数据分析的任意任务时，它已经不只是一条管道——它正在变成一个超级接口。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;有意思的是，这个让全球开发者兴奋不已的叙事，对中国用户来说却充满着强烈的既视感。用一个封闭生态实现「全服务覆盖」，这不就是微信当年用小程序做过的事吗？&lt;/p&gt;
+&lt;p&gt;QClaw 在体验上的种种不如意，以及未来可以预见的权限摩擦，本质上是开放工具撞上封闭生态时的必然代价。它费尽心思想绕过的那堵权限墙，对微信自己来说，不过是底层架构里的一行代码。&lt;/p&gt;
+&lt;p&gt;第三方工具在缝隙里挣扎的每一步，对平台原生能力来说都只是举手之劳。&lt;/p&gt;
+&lt;p&gt;能力的边界，往往就是入场资格的起点。&lt;/p&gt;
+&lt;p&gt;QClaw 只是掀开了一角，让我们看到了 IM 平台向「通用交互层」进化的可能性。而真正的问题是：当微信亲自下场，把原生 Agent 融入其中，那个版本的体验会是什么样的？&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1658702" src="https://s3.ifanr.com/wp-content/uploads/2026/03/23-2.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/03/23-2.jpg!720 2528w, https://s3.ifanr.com/wp-content/uploads/2026/03/23-2-360x242.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/03/23-2-768x515.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/03/23-2-1024x687.jpg 1024w" sizes="(max-width: 2528px) 100vw, 2528px"&gt;&lt;/p&gt;
+&lt;p&gt;想象一下，不需要邀请码，不需要跨屏连线，不需要在压缩包和跳转链接之间反复横跳——只需要打开一个你每天都在用的聊天框，说一句话，事情就办完了。&lt;/p&gt;
+&lt;p&gt;这才是那个 AI 时代真正意义上的「超级接口」。&lt;/p&gt;
+&lt;p&gt;QClaw 让我们预习了这道题，但最终交卷的人，可能另有其人。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 18 Mar 2026 11:50:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE53UjUwejFDUWVOLVVRczl5bl9DTDFTWE54U21USzlUcHkzbkVCbGUtSHc5dV9vWkZ2S3QtaEFZdFJLTzA</guid></item><item><title>被Meta收购 据报北京可能限制Manus部份高管出境 - 联合早报</title><link>https://www.zaobao.com.sg/finance/china/story20260318-8754496</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="my-[16px] text-[14px]"&gt;&lt;div class="relative flex flex-col "&gt;&lt;p class="mx-auto bg-[#fff] pt-[16px] text-center text-secondary"&gt;《纽约时报》报道，中国国家发展和改革委员会官员上周召集Meta和Manus的高管开会，就去年12月宣布的收购交易表达关切。 （路透社）&lt;/p&gt;&lt;button class=" absolute right-[8px] top-[8px] max-h-max cursor-pointer"&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（北京讯）据两名知情人士透露，就美国互联网科技公司Meta以20亿美元（约25.5亿新元）收购&lt;a href="https://www.zaobao.com.sg/finance/singapore/story20251231-8033873?ref=article-inline" target="_blank"&gt;中国人工智能初创公司Manus&lt;/a&gt;的交易，中国政府正采取行动处罚相关人员，可能会限制Manus部分高管出境。 &lt;/p&gt;&lt;p&gt;美国《纽约时报》星期二（3日17月）报道，负责监管包括人工智能在内等经济规划的中国国家发展和改革委员会官员，上周召集Meta和Manus的高管开会，就去年12月宣布这笔交易表达关切。&lt;/p&gt;&lt;p&gt;Manus是一家具有中国背景、总部设在新加坡的人工智能初创公司。报道称，中国官方此举是为了阻止中国人工智能高管将业务转移至海外。&lt;/p&gt;&lt;p&gt;目前尚不清楚中国政府会具体采取了哪些行动，但可能包括限制Manus高管离开中国前往新加坡。过去北京也曾限制正在接受审查的企业高管出境。&lt;/p&gt;&lt;p&gt;Meta发言人斯通（Andy Stone）在一份声明中表示，“交易完全符合相关法律规定”，并提到Manus的团队现已经与Meta深度整合，预计“调查将得到妥善解决”。&lt;/p&gt;
+    
+  &lt;p&gt;今年1月，&lt;a href="https://www.zaobao.com.sg/realtime/china/story20260108-8071157?ref=article-inline" target="_blank"&gt;中国商务部&lt;/a&gt;表示将会同相关部门，对这项收购与出口管制、技术进出口、对外投资等相关法律法规的一致性，开展评估调查。 &lt;/p&gt;&lt;p&gt;由于收购已完成，专家分析，除了禁止Manus高管离境，中国当局可能会试图追回已出口的数据，或者宣布Manus迁到新加坡的行为不合法。&lt;/p&gt;&lt;p&gt;亚洲协会政策研究所中国分析中心的一名研究员认为，中国政府对Meta的审查，可能是为了在&lt;a href="https://www.zaobao.com.sg/news/china/story20260317-8744916?ref=article-inline" target="_blank"&gt;与美国的贸易谈判中&lt;/a&gt;“争取一些筹码”；同时向中国人工智能研究人员发出信号，不要效仿Manus的做法，即在中国研发、再赴海外注册并被美国企业收购。 &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Wed, 18 Mar 2026 11:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibkFVX3lxTE51a3ExS0Q4N2p1WmFIT0VkV2pHNzhyRkstaW9vaHlTaGk5ajE5YjgxaEtiTUpGM192WnA0SDVIck1DajNvZGZhMlFvT3NDQk9xZElJQy1zZnF6ZGxScEl5MDlrc2EtdXFrWE81RF9B</guid></item><item><title>童年神作Steam更新官方中文！你绝对玩过 - 驱动之家</title><link>https://news.mydrivers.com/1/1110/1110105.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;童年神作《黄金矿工》的Steam版本于今日发文宣布，&lt;span&gt;&lt;strong&gt;游戏现已加入官方中文支持，本作于2025年7月20日登陆Setam平台，国区售价16.69元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="童年神作Steam更新官方中文！你绝对玩过" h="326" src="//img1.mydrivers.com/img/20260318/13d42624-901c-41a1-8897-c4b4a5888462.png" w="550"&gt;&lt;/p&gt;
@@ -150,7 +431,55 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 18 Mar 2026 08:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1GaXBsbVFBT3Vpb29JVGdQVlJaeHVfVGVjR1VoOVBkUWg4WUFxVklXRU8wX2JhMDgzcTNHOTVUaUkzNXlrQmY4OXVyU2h5aHVDMUhMY2dwaE4</guid></item><item><title>微信新功能获赞：分寸感一下就上来了 聊天更简洁 - 中华网</title><link>https://news.china.com/socialgd/10000169/20260318/49333732.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="chan_newsDetail"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 18 Mar 2026 08:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1GaXBsbVFBT3Vpb29JVGdQVlJaeHVfVGVjR1VoOVBkUWg4WUFxVklXRU8wX2JhMDgzcTNHOTVUaUkzNXlrQmY4OXVyU2h5aHVDMUhMY2dwaE4</guid></item><item><title>智能体电脑：PC时代的全面进化 - 驱动之家</title><link>https://news.mydrivers.com/1/1110/1110057.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260318/eae3da0a-1019-442e-a6ca-ebcdfc0eb1d8.jpg" target="_blank"&gt;&lt;img alt="智能体电脑：PC时代的全面进化" h="337" src="//img1.mydrivers.com/img/20260318/Seae3da0a-1019-442e-a6ca-ebcdfc0eb1d8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在过去 40 年里，个人计算机一直是人类手中最重要的工具。&lt;/p&gt;
+&lt;p&gt;你坐下来，打开应用程序，开始工作。你写作、构建、设计、分析、编辑、探索并创造。机器为你服务。它是个人化的，也是强大的。它以前所未有的方式拓展了个人能力。它为创作者提供了专业级工具，也让数十亿人能够直接获取信息。它重新定义了工作方式，重新定义了创造力，也重新定义了现代生活。&lt;/p&gt;
+&lt;p&gt;如今，它再次进化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI智能体已成为现实&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;PC 上的 AI 已跨越一个重要的里程碑。&lt;/p&gt;
+&lt;p&gt;如今的AI智能体能够进行研究、写作、总结、分析、规划并执行任务。它们不仅仅是回答问题，更能够采取行动。它们可以持续地、大规模地在各类任务、工具和信息之间切换处理。&lt;/p&gt;
+&lt;p&gt;它们不是聊天机器人，而是持续运行、始终在线的协作伙伴。&lt;/p&gt;
+&lt;p&gt;而事实是：&lt;strong&gt;强大的智能体需要强大的计算能力，而这正是AMD所擅长的&lt;/strong&gt;。它们需要一个全新品类的机器。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;智能体电脑（Agent Computer）应运而生&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;PC的设计初衷是为了支持人类的直接操作，你打开应用、下达指令、并一步一步完成工作。&lt;/p&gt;
+&lt;p&gt;智能体的工作方式则不同。它们可以持续运行，并行处理多个任务，并能够在不同工具之间自主协同运作。&lt;/p&gt;
+&lt;p&gt;智能体电脑是一个全新的设备品类，专为全天候运行你的AI智能体而打造。它可以放在你的家中或办公室，始终保持开启、随时待命、持续工作。&lt;/p&gt;
+&lt;p&gt;你无需像操作PC那样亲自操控它，&lt;strong&gt;只需将任务委托给它即可&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;你在WhatsApp上发送一条消息，你的AI智能体便会开始行动。&lt;/p&gt;
+&lt;p&gt;你在Slack中提交一个任务，你的AI智能体便会接手处理。&lt;/p&gt;
+&lt;p&gt;你在Messages里询问进度，你的AI智能体就会向你反馈结果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;个人电脑运行的是你的应用程序；而智能体电脑运行的是你的AI智能体，让它们替你去操作这些应用。&lt;/strong&gt;这正是正在发生的根本性转变。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;它将改变什么&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;想象一下，当你早晨醒来时发现，在你睡觉期间，你的智能体已经标记出三件最需要你关注的事情，草拟好了最紧急邮件的回复，并为你的第一场会议准备好了简报。再或者，当你正处在一个项目中时，只需说一句：“研究一下竞争格局，整理最新数据，并写一份包含建议的总结。”然后你就可以离开去做别的事情。当你回来时，一份完整的成果已经准备好了。&lt;/p&gt;
+&lt;p&gt;这并非科幻小说，它正在当下发生——就在此刻。&lt;/p&gt;
+&lt;p&gt;对于专业人士而言，智能体电脑意味着更高的产出和更强的效能。对于创作者来说，意味着拥有更多时间专注于原创工作，减少时间处理杂务。对于开发者而言，则意味着拥有了一个专为构建、测试和运行智能体而设计的本地AI环境。&lt;/p&gt;
+&lt;p&gt;智能体电脑并非取代你的能力，而是&lt;strong&gt;将其放大&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本地部署 · 持续运行 · 个性化体验&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;并非所有AI工作负载都适合放在超大规模数据中心。&lt;/p&gt;
+&lt;p&gt;个人和企业希望掌控自己的数据，拥有每天都能无限使用且成本可负担的AI，并且确信AI 真正为他们服务。这使得本地化、以隐私为核心、始终在线的智能体计算，正成为消费者、创作者、开发者、初创公司以及中小企业真实且日益增长的需求。&lt;/p&gt;
+&lt;p&gt;这需要强大的硬件、高带宽统一内存、高效的并行计算能力，以及能够运行复杂AI模型的系统架构。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260318/9b0bd0e3-0b4f-456b-92ad-8629fe4b410b.jpg" target="_blank"&gt;&lt;img alt="智能体电脑：PC时代的全面进化" h="337" src="//img1.mydrivers.com/img/20260318/S9b0bd0e3-0b4f-456b-92ad-8629fe4b410b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AMD：为智能体时代而生&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这正是AMD的与众不同之处。&lt;/p&gt;
+&lt;p&gt;搭载AMD锐龙AI Max+处理器（包括AMD锐龙 AI Max+ 395）的系统，特别适合成为智能体电脑。它们拥有运行复杂本地模型所需的强大算力，具备持续稳定运行的高效能，并且拥有能够支持并行、多智能体工作负载的系统架构，而这正是定义未来计算形态的关键。&lt;/p&gt;
+&lt;p&gt;AMD锐龙AI Halo或Framework Desktop等平台，作为强大的智能体电脑，以业界领先的每行动成本，带来卓越的智能体计算性能。&lt;/p&gt;
+&lt;p&gt;浏览一些目前已经推出的系统：智能体电脑&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PC时代，全面进化&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;PC 仍然是你使用的机器，而智能体电脑则成为为你工作的机器。&lt;/p&gt;
+&lt;p&gt;计算的未来不仅是个性化的，更是智能体化的。&lt;/p&gt;
+&lt;p&gt;了解如何在兼容的AMD硬件上部署流行的OpenClaw个人AI智能体：&lt;/p&gt;
+&lt;p&gt;在AMD锐龙 AI Max+处理器和Radeon GPU上运行OpenClaw。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：世玉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 18 Mar 2026 08:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9wOVhlakx4SDNlWXptLW5QVWdmMUF6aTcwNEFwTjZaUE1wYUJpbWdOZDN3R1pmLU9QT3l1OUdsMnhWQkx6SFZkbjZxYzRSbVVmNkxoRVdfeS0</guid></item><item><title>微信新功能获赞：分寸感一下就上来了 聊天更简洁 - 中华网</title><link>https://news.china.com/socialgd/10000169/20260318/49333732.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="chan_newsDetail"&gt;
                 
 
                 &lt;p&gt;近日，多名网友在社交平台上反馈称微信正在iOS端测试折叠发图功能。当用户发送三张及以上图片或视频时，可以选择合并展示，使聊天界面更加整洁。有用户提到，在iOS系统8.0.69版本中，选择三张及以上视频或照片后会出现合并发送的选项，这可能是内测功能。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img2.utuku.imgcdc.com/640x0/news/20260318/f2a9c2f5-ea9c-4184-9bfb-d19fd07a02e2.jpg" alt="微信新功能获赞：分寸感一下就上来了"&gt;&lt;/p&gt;&lt;p&gt;“微信能折叠发图了”的词条登上微博热搜榜首位，并且关注度持续提升。该功能目前仅在iOS版本小范围开放。用户选择三张及以上图片或视频后，发送界面会出现合并发送选项，开启后图片将以折叠卡片形式呈现。接收方可以左右滑动预览，点击展开按钮即可查看完整图片，也能通过收起按钮恢复折叠状态。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img0.utuku.imgcdc.com/640x0/news/20260318/5e2a7f03-b42c-43d7-bf1d-96ac11f843d5.jpg" alt="微信新功能获赞：分寸感一下就上来了 聊天更简洁"&gt;&lt;/p&gt;&lt;p&gt;此前用户一次发送多张图片时，会在聊天窗口纵向排列，容易造成刷屏，影响阅读体验。而折叠发图功能有效减少界面占用，让信息展示更简洁，尤其适合旅行、日常等多图分享场景。不过，此次折叠发图仍处于测试阶段，仅部分用户可见，官方尚未公布全量推送时间。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img2.utuku.imgcdc.com/640x0/news/20260318/626a8e61-e5c0-4afd-abd4-1516384b89b8.jpg" alt="微信新功能获赞：分寸感一下就上来了 聊天更简洁"&gt;&lt;/p&gt;&lt;p&gt;大量网友纷纷点赞并表示期待：“社交分寸感一下就上来了”“太有用了，经常被一堆图片刷屏很难受”“工作党福音”。&lt;/p&gt;
@@ -412,7 +741,88 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 18 Mar 2026 07:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9sTTlIQ2VxN1czdFJ5TUQtV3dRWmpyeGVFeGlkMGp3ZG5DXzczX2ZUMmlvZkQ5UDZrZ0JmbFEyT1gtVlB3OVZneW44dFlnQzQ2Vm44NkFsaTE</guid></item><item><title>谷歌、微软、OpenAI 等向Linux 基金会捐赠1250 万美元- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/411668/linux-foundation-12-5-million</link><description>&lt;body id="readabilityBody"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 18 Mar 2026 07:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9sTTlIQ2VxN1czdFJ5TUQtV3dRWmpyeGVFeGlkMGp3ZG5DXzczX2ZUMmlvZkQ5UDZrZ0JmbFEyT1gtVlB3OVZneW44dFlnQzQ2Vm44NkFsaTE</guid></item><item><title>为什么说，NAS更适合“养龙虾” - guancha.cn</title><link>https://www.guancha.cn/economy/2026_03_18_810507.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	（文/张志峰 编辑/周远方）
+&lt;/p&gt;
+&lt;p&gt;
+	3月12日，全球消费电子前沿技术在AWE 2026现场同台竞技，中国科技品牌绿联以“联接AI，智护未来”为主题，打造了一场沉浸式科技体验。
+&lt;/p&gt;
+&lt;p&gt;
+	不同于行业内对AI应用的泛化展示，绿联跳出传统技术比拼，以AI NAS私有云为核心，将当下火爆的OpenClaw“养龙虾”概念落地本地安全存储场景，打造出专属的AI“安全沙盒”。
+&lt;/p&gt;
+&lt;p&gt;
+	展会现场，绿联科技品牌经营部负责人陈小林向观察者网详细介绍了其底层技术逻辑：“AI时代的技术创新，从来不是功能的无限堆砌，而是在安全可控的前提下让技术服务于人，绿联NAS能够让用户放心养出属于自己的‘龙虾’，让AI真正成为触手可及的生活助手。”
+&lt;/p&gt;
+&lt;p&gt;
+	这不仅是绿联在智能存储领域的一次全新突破，更是中国本土科技品牌以“安全+AI”为核心，构筑全场景智能生态的生动实践。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/18/20260318152236532.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本地私有数据+云端大模型&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	步入绿联展位，最吸睛莫过于NAS私有云展示与体验区。
+&lt;/p&gt;
+&lt;p&gt;
+	据陈小林介绍，绿联AI NAS采用完全本地化的AI，助力用户以自然的方式搜索文件并与文件互动，可以即时定位特定时刻、人脸、物体、文档及记忆片段。这种AI还能自动整理照片库、支持离线AI对话，并能在数秒内完成语音笔记的转录或摘要生成。
+&lt;/p&gt;
+&lt;p&gt;
+	现场参观者只需通过自然语义与 Uliya AI 助手对话，就能完成各类数据处理工作，数据解析、文件管理、权限控制等核心操作均可在本地完成，用户私有数据全程本地处理不上云。
+&lt;/p&gt;
+&lt;p&gt;
+	“现在大家都在聊OpenClaw养龙虾，体验新鲜但安全顾虑也一直存在，这也是我们把‘龙虾’搬到NAS里的核心原因。”陈小林的解读，点出了当下AI应用的行业痛点。
+&lt;/p&gt;
+&lt;p&gt;
+	作为当下热门的AI应用，OpenClaw凭借灵活的交互能力、强大的自主学习特性圈粉无数，但开放式的运行环境，让用户的隐私数据、个人素材面临泄漏风险，就连OpenClaw创始人也多次提醒用户，不要将“龙虾”部署在主力电脑上，更适合放在相对独立的沙盒环境中。
+&lt;/p&gt;
+&lt;p&gt;
+	而绿联AI NAS，恰似为“龙虾”量身打造的“安全沙盒”。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/18/20260318152431723.png" title="点击查看大图" class="bigimg"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	在绿联的技术逻辑中，用AI NAS养龙虾的优势，核心在于云端通用大模型+本地私有数据的协同架构，安全可控、数据不出本地。
+&lt;/p&gt;
+&lt;p&gt;
+	陈小林介绍道，绿联采用本地安全环境+云端大模型能力的融合方案，依托自研UGOS Pro系统与本地沙盒隔离算法，将用户私有数据完整保留在NAS本地，仅向云端大模型发送必要的指令请求，AI大模型本身部署在本地设备；同时以全链路数据加密技术配合企业级加密方案，从源头杜绝数据泄漏风险。
+&lt;/p&gt;
+&lt;p&gt;
+	在此基础上，3月13日，绿联官宣与通用人工智能企业MiniMax达成深度战略合作，双方围绕私有云场景与大模型技术融合，共同推出面向NAS用户的AI解决方案；OpenClaw应用正式上线绿联NAS私有云UGOS Pro应用中心，首批支持DXP系列及即将上市的iDX系列设备，绿联为NAS用户提供2026年3月13日 - 4月12日共30天MiniMax大模型全量免费使用权限，降低AI使用门槛。
+&lt;/p&gt;
+&lt;p&gt;
+	用户可在应用中心一键安装，无需复杂环境配置即可直接使用大模型能力。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/18/20260318152543279.png" title="点击查看大图" class="bigimg"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	“放在绿联 NAS里的龙虾，成长的环境是封闭的安全沙盒，即便 AI 出现指令偏差、误操作或被恶意注入，也无法突破隔离边界访问NAS核心文件、破坏系统，这是开放式环境无法比拟的。”陈小林说，这种架构足以满足用户日常资料整理、分类、归纳、搜索等核心需求，更重要的是，让用户用得放心、用得安心，这也是绿联始终坚守的 “安全底线”。
+&lt;/p&gt;
+&lt;p&gt;
+	绿联NAS通过docker环境隔离、用户可自由定义授权NAS文件夹权限，配合UGOS Pro文件快照等专业功能，7*24小时长期稳定低功耗运行，是部署OpenClaw“小龙虾”的优质“养殖场”。
+&lt;/p&gt;
+&lt;p&gt;
+	现场的“创作者工作站”场景，更是将AI NAS的实用价值展现得淋漓尽致。
+&lt;/p&gt;
+&lt;p&gt;
+	专业摄影创作者的海量旅拍素材存储在绿联AI NAS中，能基于本地素材索引精准识别素材中的人物、场景、拍摄时间，自动完成分类归档，还能根据创作需求提取素材要点、生成素材说明。
+&lt;/p&gt;
+&lt;p&gt;
+	办公场景下，可对本地存储的合同、报告、笔记进行智能梳理，实现关键信息的快速检索与总结。
+&lt;/p&gt;
+&lt;p&gt;
+	作为SGS全球首个NAS行业双体系认证、TÜV南德国际安全认证产品，绿联NAS用硬核的安全认证，为龙虾的生长筑牢了防护墙，也让用户的数字资产有了最可靠的保障。
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Wed, 18 Mar 2026 07:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTFA1YzhuUy1jTTB1UEJsaTVnNXdlZlAxLUVwWmRtb0o1Yk9yMHpzcnl0QW9fYTRyRXFodEs2X3pycVFEa3NXWjh0ajlrMGVFVHZyeDRtbWQ2cjdQMER0VURWTHFpMWw</guid></item><item><title>谷歌、微软、OpenAI 等向Linux 基金会捐赠1250 万美元- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/411668/linux-foundation-12-5-million</link><description>&lt;body id="readabilityBody"&gt;
   &lt;p id="app"&gt;&lt;/p&gt;
   
   
@@ -745,7 +1155,252 @@
 
 &lt;p class="editor-paragraph"&gt;&lt;span&gt;马斯克曾在社交媒体上表示，将可能为全新Roadster安装10个火箭推进器，快到能起飞，0-96km/h加速不到1秒。全新Roadster峰值扭矩为10000N·m，最大续航里程可达992公里，极速为400km/h。&lt;/span&gt;&lt;/p&gt;
 
-&lt;p class="editor-paragraph"&gt;&lt;span&gt;就在今天，特斯拉官方也发布庆祝信息，庆祝Model Y在2023-2025年度蝉联全球乘用车年度销冠，全球累计销量超400万辆。（编译/汽车之家 秦超）&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>汽车之家</author><pubDate>Wed, 18 Mar 2026 05:17:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFBraVN4VXpxTUtQN09oZFJiZTc2dXZTSy1XSl9XYXplQTNoOGRTcEVQMUlBRjZHMWNlTnZRdTU1OXhrdjdYSG53YnFpaGRYdUlOcllMMzB2SGh4SnNyVU12LVBR</guid></item><item><title>腾讯 QClaw 正式上线，可与微信互联 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/411563</link><description>&lt;body id="readabilityBody"&gt;
+&lt;p class="editor-paragraph"&gt;&lt;span&gt;就在今天，特斯拉官方也发布庆祝信息，庆祝Model Y在2023-2025年度蝉联全球乘用车年度销冠，全球累计销量超400万辆。（编译/汽车之家 秦超）&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>汽车之家</author><pubDate>Wed, 18 Mar 2026 05:17:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFBraVN4VXpxTUtQN09oZFJiZTc2dXZTSy1XSl9XYXplQTNoOGRTcEVQMUlBRjZHMWNlTnZRdTU1OXhrdjdYSG53YnFpaGRYdUlOcllMMzB2SGh4SnNyVU12LVBR</guid></item><item><title>从学步到萌化，机器人公司正在这样小步快跑 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_03_18_810494.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/origin/2026/03/17/20260317214703495.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	在竞争日趋白热化的人形机器人赛道，一家成立不足两年的年轻公司，正以其独特的产品理念，为审视行业未来开辟一个充满人文温度的视角。
+&lt;/p&gt;
+&lt;p&gt;
+	近期，上海青心意创科技有限公司（Cyan）继2024年10月发布全尺寸通用具身智能机器人OrcaⅠ之后，于2026年3月，在AWE（中国家电及消费电子博览会）上，首次亮相了其第二款产品，全球首款具身角色智能机器人Amoo。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2026/03/17/20260317214919141.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	Amoo机器人&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	从一米四五的“大块头”Orca，到不足八十厘米的“小萌物”Amoo，青心意创的产品迭代，清晰勾勒出这家初创公司软硬协同，聚焦机器人温度感和生命感的技术路线图。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;从功能体到情感伙伴，致力于“走进人”&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	不同于行业追求功能性叙事，在青心意创看来，机器人走进人类生活的终极意义，不是替代或工具化，而是情感投射与陪伴。
+&lt;/p&gt;
+&lt;p&gt;
+	人类深刻的社会性与心理需求，同样也容得下机器人的发展空间。 
+&lt;/p&gt;
+&lt;p&gt;
+	公司创始团队在早期就不断追问一个根本问题：机器人为什么要长得像人？ 
+&lt;/p&gt;
+&lt;p&gt;
+	论奔跑速度，人不及马与狗；论力量，也远逊于机械。 
+&lt;/p&gt;
+&lt;p&gt;
+	最终的答案是：人类会将自身情感投射到机器人上，希望它未来能像自己一样。甚至能帮助自己，让个人变得更好。 
+&lt;/p&gt;
+&lt;p&gt;
+	因此，“温度感”与“生命感”成为了青心意创产品研发的底层逻辑，贯穿于从外观设计到行动能力的每一个环节。 
+&lt;/p&gt;
+&lt;p&gt;
+	这一理念在首款产品OrcaⅠ上已初现端倪。
+&lt;/p&gt;
+&lt;p&gt;
+	 OrcaⅠ不仅实现了拟人直膝行走等技术突破，更搭载了全球首个情绪步态大模型，让机器人能够通过步伐的轻重缓急、身体姿态的高低起伏，来表达快乐、生气、紧张等不同情绪。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2026/03/17/20260317215435159.gif" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	青心意创战略负责人曹琳对观察者网表示，他们不希望机器人只会执行命令，而是希望它拥有自己的想法和情绪，具备性格。 
+&lt;/p&gt;
+&lt;p&gt;
+	新发布的Amoo，则是这一理念在家庭场景的集中落地与形态进化。
+&lt;/p&gt;
+&lt;p&gt;
+	 “在走进人心的理念上，Amoo是跟之前的产品一脉相承的。” 
+&lt;/p&gt;
+&lt;p&gt;
+	曹琳表示，真正能走进家庭、被人接纳的机器人，不应是“钢筋铁骨”的冰冷造物。
+&lt;/p&gt;
+&lt;p&gt;
+	因此，Amoo被设计成不足80厘米的娇小双足身形，全身采用独创的毛绒软包覆材质，触感亲肤柔软，外观是与知名设计师合作的“小龙人”IP形象，憨萌可爱。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2026/03/17/20260317215925131.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	这种从视觉到触觉的全面“萌化”，体现出其“可亲近、可触摸、像家人”的理念。 
+&lt;/p&gt;
+&lt;p&gt;
+	青心意创创始人兼CEO牛腾昦博士对观察者网表示，理想的陪伴者，是能让人放心靠近、自在相处的存在，其设计要规避传统机器人的机械感和视觉压迫感。 
+&lt;/p&gt;
+&lt;p&gt;
+	青心意创的路线也代表了一种技术范式的转向：从追求极致的运动性能或负载能力，转向对社会关系交互、情感计算与拟人化表达的深度探索。
+&lt;/p&gt;
+&lt;p&gt;
+	在众多公司瞄准工业搬运或极限运动的机器人时，青心意创试图为其注入一颗“柔软的心”。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;软硬协同，构建机器人的“生命感”&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	家庭环境充满温情，也充满不确定性。 
+&lt;/p&gt;
+&lt;p&gt;
+	要让机器人在此中长期稳定陪伴，并实现“越养越亲”的成长效果，需要一套复杂的技术体系支撑。 
+&lt;/p&gt;
+&lt;p&gt;
+	据了解，青心意创通过自研的大模型，打造出独特的“大小脑”协同系统，让Amoo同时具备了生物的“直觉反应”与“深度思考”能力，通过多模态协同输出技术与物理性闭环交互，确保语音、电子眼神与肢体动作实现毫秒级的语义同步。
+&lt;/p&gt;
+&lt;p&gt;
+	让Amoo能做出丰富细腻的拟人动作和复合情绪，情感表达更精准、更真实。 
+&lt;/p&gt;
+&lt;p&gt;
+	例如，当表达“喜欢”时，Amoo的眼神会实时生成心形图案，并配合头身协同的微幅动作。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2026/03/17/20260317215946152.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	其次，是构建仿生多模态感知系统，让机器人能“看懂、听懂、感觉到”。 
+&lt;/p&gt;
+&lt;p&gt;
+	Amoo搭载覆盖视觉、听觉、触觉的全维度感知系统。
+&lt;/p&gt;
+&lt;p&gt;
+	其超宽广视角与精准的声音识别能力，能清晰捕捉家庭成员的表情、动作与话语，给予恰如其分的回应。
+&lt;/p&gt;
+&lt;p&gt;
+	其还突破了行业局部触觉的局限，在全身核心交互部位布局了多个高响应频率的触摸传感器，能实时感知用户的抚摸、轻拍等交互动作。 
+&lt;/p&gt;
+&lt;p&gt;
+	这套符合系统为机器人理解家庭环境和用户情绪提供了精准的数据输入，为机器人读懂用户、理解用户、精准回应用户夯实了基础。
+&lt;/p&gt;
+&lt;p&gt;
+	 团队将现阶段定义为“新生”，即把所有技术栈跑通，摸清每个模块的瓶颈。 
+&lt;/p&gt;
+&lt;p&gt;
+	下一阶段，将重点打造真正的生命感。 
+&lt;/p&gt;
+&lt;p&gt;
+	曹琳表示，这包括引入类似生老病死的正负反馈机制，例如长时间不互动可能导致记忆淡化，以此创造真实的情感依恋；也包括设计行为的不可预测性，避免机器人无底线讨好用户，因为逆人性的纵容不会产生“真正的依恋”。 
+&lt;/p&gt;
+&lt;p&gt;
+	具体到技术实现，生命感被拆解为“感知”和“表现”两个层面。 
+&lt;/p&gt;
+&lt;p&gt;
+	感知上，需要分阶段实现从语义识别，到表情识别、声音情绪判断、动作判断的多维度升级。 
+&lt;/p&gt;
+&lt;p&gt;
+	表现上，则需要建立庞大的动作原子库，将输出表现做到“千变万化”，才能逼近人类交流的自然与自主，这也是一个需要循序渐进的长期过程。 
+&lt;/p&gt;
+&lt;p&gt;
+	研发团队还将构建亲密度模型和自我成长体系，机器人的性格会随着与用户互动的亲密度高低、接收到的情绪频率而变化，形成专属性格，如同一个真实生命的成长。 
+&lt;/p&gt;
+&lt;p&gt;
+	这个模型会像影响人类性格一样，影响机器人的外化表现。 
+&lt;/p&gt;
+&lt;p&gt;
+	谈到这里，曹琳表示，团队还为此做了一系列心理学的映射。 
+&lt;/p&gt;
+&lt;p&gt;
+	而这一切，都服务于其终极目标：将机器人打造成一个接近独立个体的、拟人化的生命。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;聚焦家庭陪伴，分步走向C端&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	在行业纷纷追逐通用场景模型的背景下，青心意创选择了一条更务实的路径：聚焦家庭情感陪伴。 
+&lt;/p&gt;
+&lt;p&gt;
+	牛腾昦对观察者网表示，团队认为在可预见的时间范围内，做出能应对所有场景的通用机器人并不“make sense”。 
+&lt;/p&gt;
+&lt;p&gt;
+	原因在于，与拥有海量互联网数据的大语言模型不同，物理世界交互所需的数据极度匮乏，需要从零开始积累。 
+&lt;/p&gt;
+&lt;p&gt;
+	此前深耕自驾领域的他，将具身智能的发展类比为自动驾驶，并找到了一个独特的参照切入点：不做“L5（完全自动驾驶）”，而是先做“智能座舱”。 
+&lt;/p&gt;
+&lt;p&gt;
+	团队解释，打造具身智能界的 “智能座舱”，可以通过类交互的机器人率先进入实用场景，实现数据场景的模型闭环，再去推出面向C端，可以真正“干活”的机器人。 
+&lt;/p&gt;
+&lt;p&gt;
+	这样既能率先占领用户心智，又能提高用户的接受度，还能为未来推出更具实用功能的机器人积累数据和用户基础。 
+&lt;/p&gt;
+&lt;p&gt;
+	Amoo正是这一思路下的产物。 
+&lt;/p&gt;
+&lt;p&gt;
+	它首先是一个交互与情感陪伴的载体，其核心价值在于建立情感联结、采集真实的家庭互动数据，而非急于承担繁重的物理劳作。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2026/03/17/20260317220006819.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	在产品演进上，公司也同样呈现出技术验证与消费产品聚焦并行的策略。 
+&lt;/p&gt;
+&lt;p&gt;
+	全尺寸的Orca Ⅰ更像是一个用于技术验证的平台，用于落地和测试如直膝行走、情绪步态等前沿技术。 
+&lt;/p&gt;
+&lt;p&gt;
+	而Amoo则代表了公司未来一段时间内市场化产品的重心：聚焦于面向C端家庭的超小型双足机器人。 
+&lt;/p&gt;
+&lt;p&gt;
+	曹琳表示，目前的产品在“生命感”的塑造上仍与理想有距离，只是一个MVP（最小可行产品）状态，未来将持续向更高维度的生命感发展。 
+&lt;/p&gt;
+&lt;p&gt;
+	这意味着，Amoo并非终点，而是其“让机器人更像人”长期探索中的一个重要中间形态。 
+&lt;/p&gt;
+&lt;p&gt;
+	在商业化路径上，青心意创则展现出清晰的“分步走”战略。 
+&lt;/p&gt;
+&lt;p&gt;
+	其终极目标是直接面向消费者（ToC），让机器人走进千家万户。 
+&lt;/p&gt;
+&lt;p&gt;
+	但团队也深知，当前阶段，无论是产品成熟度、成本还是市场接受度，直接大规模ToC都面临挑战。 
+&lt;/p&gt;
+&lt;p&gt;
+	因此，他们规划了实现的路径：
+&lt;/p&gt;
+&lt;p&gt;
+	 一是通过与养老院、品牌方（如拥有吉祥物、标志形象的连锁品牌）等B端客户合作，让机器人在这些场景中服务，从而触达更广泛的C端用户，提升品牌认知。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2026/03/17/20260317220408869.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	二则是聚焦早期的科技发烧友和特定圈层（如潮玩、车迷爱好者），通过与这些核心用户共创，快速迭代产品，积累口碑。 随着产品能力提升、成本下降和市场教育深化，再逐步向更广泛的大众消费市场泛化。 
+&lt;/p&gt;
+&lt;p&gt;
+	这种策略，本质上是借鉴消费电子与互联网产品的推广逻辑，将其应用于具身智能领域。 
+&lt;/p&gt;
+&lt;p&gt;
+	在AWE展会现场，Amoo也开放了IP合作、企业定制和场景合作的意向。 
+&lt;/p&gt;
+&lt;p&gt;
+	这种积极通过B端合作撬动市场的方式，不仅能获取订单，还能将机器人以更友好、更低门槛的方式（如品牌吉祥物）嵌入各类生活场景，完成初步的用户心智植入。 
+&lt;/p&gt;
+&lt;p&gt;
+	同时，团队透露，Amoo计划于2026年第三季度开启预售。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;小结&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	成立不到两年，推出两款定位迥异却理念相通的产品，青心意创的发展速度令人瞩目。
+&lt;/p&gt;
+&lt;p&gt;
+	在资本密集、竞争激烈的人形机器人赛道，它没有选择与巨头们在运动极限或工业负载上正面强拼，而是敏锐地切入“情感陪伴”这一蓝海市场，将打造有温度、有生命感的伙伴作为自己的产品逻辑。
+&lt;/p&gt;
+&lt;p&gt;
+	通过自研小型关节模组解决家庭适配的硬件瓶颈，通过多模态感知与大小脑协同构建环境理解与自主交互能力，再通过精细的情绪表达系统赋予机器人“灵魂”，青心意创正一步步将其理念转化为现实。
+&lt;/p&gt;
+&lt;p&gt;
+	Amoo的推出，是其技术能力的展示，也是其从技术验证走向场景落地、从实验室走向商业化探索的关键一步。
+&lt;/p&gt;
+&lt;p&gt;
+	尽管前路漫漫，量产落地、成本控制、生态构建等挑战依然存在，但青心意创已通过两款成熟的机器人产品，勾勒出自己的道路：一条以用户体验和情感联结为中心，愿意以务实的策略向终极目标迈进的长期主义道路。
+&lt;/p&gt;
+&lt;p&gt;
+	在机器人究竟应该是“超级工具”还是“亲密伙伴”的行业争论中，青心意创已经用产品做出了自己的回答。
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Wed, 18 Mar 2026 05:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE16ZFpJYVlTTXoxa2ZGemxkOXpfMTdoRjM4dUhRMzZLRUxrWnZnZ2ZVMl9FVE14cmg5WG1pM1VNYTdfemNIT2ZtajJOUTEyUmg0VF80X0sxaGU2QWhQVlA4N0dLdmE</guid></item><item><title>腾讯 QClaw 正式上线，可与微信互联 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/411563</link><description>&lt;body id="readabilityBody"&gt;
   &lt;p id="app"&gt;&lt;/p&gt;
   
   
@@ -2906,368 +3561,4 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 17 Mar 2026 14:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9vdGRkeHRFUUY0NW1MUEQyeFB4Tk1HblZXZzB2SEQ1VnNJMVNmYVk3dmF3bDZ2MkZqQ1JxSXFvMXNjTWR0RWFvemlzZzN0Vnlrb1dzdWlxVDE</guid></item><item><title>349元 OPPO磁吸小涡轮2无线充电器发布：自带360度旋转支架 - 驱动之家</title><link>https://news.mydrivers.com/1/1109/1109859.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;349元 OPPO磁吸小涡轮2无线充电器发布：自带360度旋转支架&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-17 21:27:18  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1109859-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月17日消息，&lt;span&gt;&lt;strong&gt;OPPO正式推出磁吸小涡轮2无线充电器，定价349元&lt;/strong&gt;&lt;/span&gt;，主打50W无线闪充、主动散热与一体化桌面支架，目前已在京东开启预约抢购。&lt;/p&gt;
-&lt;p&gt;这款充电器最高支持50W无线输出，搭载芯片级主动涡轮风冷系统，内置TEC制冷片与离心风扇，散热效率大幅提升。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/2bf742d7f8b24abbb8ad979893b070b8.png" target="_blank"&gt;&lt;img alt="349元 OPPO磁吸小涡轮2无线充电器发布：自带360度旋转支架" h="665" src="//img1.mydrivers.com/img/20260317/s_2bf742d7f8b24abbb8ad979893b070b8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;官方数据显示，&lt;strong&gt;它可以在34分钟内为OPPO Find N6充入50%电量&lt;/strong&gt;，日常使用效率出色。使用时建议搭配功率大于80W的SUPERVOOC充电器与原装快充线，以达到最佳充电状态。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;产品自带360度旋转桌面支架，可自由调整角度&lt;/strong&gt;，横屏追剧、竖屏刷资讯、视频通话都很方便，兼顾充电与使用体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/f3dd0fcdffb64f2d88bf55bd6c193a8a.png" target="_blank"&gt;&lt;img alt="349元 OPPO磁吸小涡轮2无线充电器发布：自带360度旋转支架" h="770" src="//img1.mydrivers.com/img/20260317/s_f3dd0fcdffb64f2d88bf55bd6c193a8a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;它支持双击切换三种工作模式，分别是高功率清凉模式、清新静音模式以及仅散热降温模式，适配办公、休息、游戏等不同场景需求。&lt;/p&gt;
-&lt;p&gt;兼容性方面，磁吸小涡轮2支持OPPO Mag磁吸生态，同时可兼容iPhone等主流手机。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="349元" goods_title="OPPO 磁吸小涡轮 2 AIRVOOC 50W 磁吸无线充电器苹果无线充电器适配OPPO一加系列手机" href="https://dt.mydrivers.com/mv.ashx?txt=nMEyr" img="https://img14.360buyimg.com/pop/jfs/t1/404317/29/6078/42780/69b7c86cFc36e3141/0083320320790926.jpg" target="_blank"&gt;京东(349元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260317/cf49f6e1fcb64e50adfa63bc4e1dd77d.png" target="_blank"&gt;&lt;img alt="349元 OPPO磁吸小涡轮2无线充电器发布：自带360度旋转支架" h="1201" src="//img1.mydrivers.com/img/20260317/s_cf49f6e1fcb64e50adfa63bc4e1dd77d.png" w="563"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 17 Mar 2026 13:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBxZVdBRDBxUkFsaFJKTFB5UTNCM3YtSm9zeTdmZFNpRERTN0x5cjNFc2YyUDNWZV84YTJuaVE4THlBU2NzX280eDdCMTZyNXlfbHlSNW8wblQ</guid></item><item><title>4倍大牛股突传利好！超级赛道再迎重磅催化！ - 东方财富</title><link>https://wap.eastmoney.com/a/202603173674854374.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
-        
-        &lt;p class="related"&gt;
-
-        &lt;/p&gt;
-
-        
-
-        
-        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
-        &lt;p class="layer"&gt;&lt;/p&gt;
-        
-        
-        
-
-        
-
-        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 17 Mar 2026 13:17:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBRbk1pTjJMRE9jSExqQjdKMXl2cS1XZzl3Z0ZuaDBZUHpiNWdCME1yUTU1MERUSjBSWjNhRC1PZ2lnTmYxV0NnZGpXU1habVo0SEVDM29ZOWh3NE5qTmNHNA</guid></item><item><title>推理时代加速到来！英伟达力推LPU，哪些上市公司有望吃到百万出货红利？ - 财联社</title><link>https://www.cls.cn/detail/2315905</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社3月17日讯（记者 王碧微）&lt;/strong&gt;北京时间3月17日凌晨2点，英伟达CEO黄仁勋在GTC 2026主题演讲中正式发布了Groq 3 LPU（Language Processing Unit，语言处理单元）推理芯片，并将其纳入新一代Vera Rubin AI平台。&lt;/p&gt;
-&lt;p&gt;这是英伟达去年底与Groq达成技术许可协议后，首次将LPU以量产产品形态推向市场。黄仁勋在会上表示，三星正全力加速生产这款芯片，基于Groq 3的LPX机架预计今年下半年面世。&lt;/p&gt;
-&lt;p&gt;就在GTC开幕前夕，天风国际证券分析师郭明錤发文称，英伟达投资Groq后，LPU的出货量预测已大幅上调。他预计2026至2027年LPU总出货量将达到400万至500万颗，新架构机柜预计今年第四季度开始量产，2026年机柜出货量约为300至500个，2027年增至15000至20000个。&lt;/p&gt;
-&lt;p&gt;在英伟达将LPU推上前台的同时，国内已有多家上市公司围绕这一技术路线布局。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;LPU做了什么&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在今年GTC的两个多小时演讲中，“推理”（inference）一词出现了近40次。&lt;/p&gt;
-&lt;p&gt;“今年GTC释放出的一个强烈信号，是推理时代正在加速到来。”云天励飞（688343.SH）相关负责人向财联社记者表示。&lt;/p&gt;
-&lt;p&gt;他分析称，随着Agentic AI从“会对话”走向“会做事”，大模型正在越来越深地嵌入到工作流中，AI正从对话工具迈向能够拆解任务、调用工具、执行流程的劳动力。一旦AI进入生产环节，行业最关心的就不再只是模型够不够强，而是算力能不能算得过来。&lt;/p&gt;
-&lt;p&gt;黄仁勋此次反复强调的一个核心概念是“token工厂”：在既定电力、空间和成本约束下，让数据中心产出更多、更快、更有商业价值的token。他在演讲中提出，token是AI时代的硬通货，计算能力就是企业的收入。&lt;/p&gt;
-&lt;p&gt;而LPU正是为了提高这座“工厂”效率而生的。&lt;/p&gt;
-&lt;p&gt;云天励飞相关负责人向财联社记者分析了其中的技术逻辑：大模型推理过程可以拆成prefill（预填充）和decode（解码）两个阶段。Prefill阶段需要高并行算力、大内存容量和高吞吐，Decode阶段则需要低时延、低抖动和快速响应。英伟达在GTC上推出的Vera Rubin和Groq 3 LPU，分别面向这两个阶段。&lt;/p&gt;
-&lt;p&gt;他进一步指出，并非整个decode阶段都交给LPU，而是其中token生成环节由LPU发挥优势。Rubin GPU仍继续处理prefill和decode中的attention计算。&lt;/p&gt;
-&lt;p&gt;黄仁勋在演讲中也给出了具体的配比建议：约25%的数据中心部署Groq，其余75%部署Vera Rubin。他表示，如果用户的工作主要涉及编码等高价值token生成任务，加入Groq后收益更明显。&lt;/p&gt;
-&lt;p&gt;在性能方面，智微智能（001339.SZ）在今年3月举办的投资者交流中表示，根据Groq CEO在2024年ISSCC（国际固态电路大会）上公布的实测数据，LPU的token生成速度达到英伟达H100 GPU的6倍，单token成本降至H100的1/4，推理能耗降至H100的1/3。&lt;/p&gt;
-&lt;p&gt;LPU的速度优势来自其架构设计。&lt;/p&gt;
-&lt;p&gt;与GPU采用的通用并行计算架构不同，LPU采用确定性数据流处理器架构，由编译器在编译阶段完成所有调度，运行时不需要动态仲裁。同时，LPU配备大容量片上SRAM（静态随机存储器），数据直接集成在芯片上，访问延迟远低于GPU从外部显存读取数据的方式。&lt;/p&gt;
-&lt;p&gt;智微智能在投资者交流会中将这一差异做了形象解释：LPU的静态编译调度类似于高铁运行图，所有时刻表提前确定，拥堵概率极低；而GPU的动态调度则类似高速公路自由行驶，个体的随机性在数学上必然导致系统性拥堵。&lt;/p&gt;
-&lt;p&gt;英伟达方面披露的数据显示，Vera Rubin与Groq 3 LPU联合部署后，每兆瓦token生成效率可提升35倍。目前Groq 3 LPU由三星代工，已量产LP30芯片，LPX机架单机柜可容纳256颗LPU，预计今年第三季度出货。&lt;/p&gt;
-&lt;p&gt;云天励飞相关负责人认为，GTC 2026释放的不只是英伟达一家的产品信号，而是整个行业正在形成共识：推理时代拼的不再只是峰值参数，而是能否围绕不同任务的计算特征做更细致的优化，让每一份算力都用在该用的地方。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;国内谁在跟进&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;LPU从概念走向量产，国内上市公司已开始布局。&lt;/p&gt;
-&lt;p&gt;芯片设计端，智微智能近日通过曜腾投资参股了杭州元川微科技有限公司。元川微是国内基于LPU架构的算力芯片公司，自研了硬数据流架构与全资源编译器，推出了面向大模型和端侧应用场景的Mountain（算力）和River（Agent）两大系列产品。&lt;/p&gt;
-&lt;p&gt;智微智能在投资者交流中表示，公司通过与上游芯片原厂的绑定，旨在强化从训练端到推理端的卡位，增强在AI服务器、具身智能、边缘及端侧领域的产品能力。该公司在投资者交流中还表示，未来推理算力占比将达90%，训练仅占10%，LPU有望在推理市场中占据主导地位。&lt;/p&gt;
-&lt;p&gt;此外，星宸科技(301536.SZ)也对元川微进行了多轮增资。&lt;/p&gt;
-&lt;p&gt;云天励飞则从芯片架构层面跟进了类似的技术路线。公司已公开提出GPNPU（通用可编程神经网络处理器）技术路线，围绕大模型推理场景规划了P芯片和D芯片，分别面向prefill和decode阶段优化，同时通过3D堆叠存储来缓解推理链路中的带宽瓶颈。&lt;/p&gt;
-&lt;p&gt;云天励飞相关负责人称，如果说英伟达这次是在用 Rubin + LPX 展示“推理异构化”的全球样本，国内厂商围绕PD分离、存储协同持续推进推理架构创新，实际上正在沿着同一条产业方向前进。&lt;/p&gt;
-&lt;p&gt;万通智控（300643.SZ）也在LPU领域有所动作。公司参股了深明奥思（持股5.66%），锁定其LPU板卡在具身智能域控领域的全球独家制造与销售权。深明奥思的LPU芯片Fellow 1于今年一季度流片，二季度进入送样测试。&lt;/p&gt;
-&lt;p&gt;在上游供应链方面，LPU的规模化应用也将为PCB（印刷电路板）行业带来增量。&lt;/p&gt;
-&lt;p&gt;光大证券在近期发布的研报中指出，由于单颗LPU的片上SRAM容量有限，运行大规模模型需要数百颗LPU串联，所需PCB载板面积较纯GPU方案将数倍增加。同时，LPU对PCB材料要求更高，预计将使用52层M9级覆铜板。上述变化将带动PCB面积需求和加工难度同步上升。&lt;/p&gt;
-&lt;p&gt;目前，沪电股份（002463.SZ）、胜宏科技（300476.SZ）、深南电路（002916.SZ）等公司均有高端PCB业务。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 17 Mar 2026 12:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE9OVHRaN3psMFNkYm9LTExfNmNsNWp5MUItcXY1MFFpZ3JBcFVQblVHVGpMenQ0aXduYUxheXBrTnFoT1h4Qi1YZA</guid></item><item><title>币安HODLer空投上线Fabric Protocol（ROBO），使用BNB申购保本赚币产品，以获得ROBO回溯空投！ - Binance</title><link>https://www.binance.com/zh-CN/support/announcement/detail/20ac487755434d559568552e9812cbf0</link><description>&lt;a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQQlBLb1lPMXM2S0k4WEJ2bElVWFlfTzBCTWkxakZZM1FaMHpLTmxOMnhWTzJRSU5kellLY0N4RzNTR2h5dXNGeElJNlAwckV4c2xvMFpNUG1KdzVuaWZNV0ZEcHdBXzJhZnk2LXJWTk50NXpTeEZqb0dXbWtOS0hmcnBmVURVTmJYUlZ3dzRZcjd6TEFp?oc=5" target="_blank"&gt;币安HODLer空投上线Fabric Protocol（ROBO），使用BNB申购保本赚币产品，以获得ROBO回溯空投！&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;Binance&lt;/font&gt;</description><author>Binance</author><pubDate>Tue, 17 Mar 2026 12:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilAFBVV95cUxQQlBLb1lPMXM2S0k4WEJ2bElVWFlfTzBCTWkxakZZM1FaMHpLTmxOMnhWTzJRSU5kellLY0N4RzNTR2h5dXNGeElJNlAwckV4c2xvMFpNUG1KdzVuaWZNV0ZEcHdBXzJhZnk2LXJWTk50NXpTeEZqb0dXbWtOS0hmcnBmVURVTmJYUlZ3dzRZcjd6TEFp</guid></item><item><title>全智能安卓表皇！OPPO Watch X3发布：无感高血压风险评估 2599元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1109/1109852.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月17日消息，今日，&lt;span&gt;&lt;strong&gt;OPPO Watch X3智能手表正式发布，售价2599元起。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;OPPO Watch X3提供寰宇星橙、无限钛、引力黑三种配色，采用全新十二边形设计，由全钛精工打造整机减轻16%、厚度减薄6.4%。&lt;/p&gt;
-&lt;p&gt;其中，引力黑提供氟橡胶表带，无限钛、寰宇星橙则是混合型氟橡胶表带。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260317/e7d798bc2e9945059bd33f9a8c6a9778.png" target="_blank"&gt;&lt;img alt="全智能安卓表皇！OPPO Watch X3发布：无感高血压风险评估 2599元起" h="331" src="//img1.mydrivers.com/img/20260317/s_e7d798bc2e9945059bd33f9a8c6a9778.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260317/24a200cd5dc546e8aafa34d5209ec77f.png" target="_blank"&gt;&lt;img alt="全智能安卓表皇！OPPO Watch X3发布：无感高血压风险评估 2599元起" h="352" src="//img1.mydrivers.com/img/20260317/s_24a200cd5dc546e8aafa34d5209ec77f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;手表采用1.5英寸LTPO屏幕，466 x 466分辨率，310 PPI，采用蓝宝石玻璃盖板，支持IP68、IP69满级防尘防水。&lt;/p&gt;
-&lt;p&gt;健康方面，&lt;strong&gt;手表支持血氧监测、心率监测、睡眠质量评估、睡眠呼吸暂停风险评估，支持无感高血压风险评估、全天平均血压波形、血压相关影响因素分析、血压改善行为。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;60秒体检覆盖心脏健康、睡眠健康、身心健康3类场景共14项指标监测，提供AI全面健康分析建议。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260317/a574af1a01d6453ab66023aa7655744f.png" target="_blank"&gt;&lt;img alt="全智能安卓表皇！OPPO Watch X3发布：无感高血压风险评估 2599元起" h="357" src="//img1.mydrivers.com/img/20260317/s_a574af1a01d6453ab66023aa7655744f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;OPPO Watch X3支持血糖CGM接入，通过血糖专属表盘实时查看数据、血糖异常预警。&lt;/p&gt;
-&lt;p&gt;运动方面，&lt;strong&gt;手表支持100+运动模式，支持跑步、滑雪、网球、羽毛球、室内游泳、跳绳、登山、健走、骑行、椭圆机、划船机、爬楼等专业运动模式。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;同时提供教练指导，从燃脂，健康，运动表现三方面进行个性化运动分析，AI运动教练可通过监测用户运动与健康数据，评估每日运动准备度，并推荐个性化运动方案，指导科学锻炼。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260317/c0bfdebd92a94f15a68632892eee4d8a.png" target="_blank"&gt;&lt;img alt="全智能安卓表皇！OPPO Watch X3发布：无感高血压风险评估 2599元起" h="385" src="//img1.mydrivers.com/img/20260317/s_c0bfdebd92a94f15a68632892eee4d8a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为全智能安卓表皇，OPPO Watch X3可独立使用手表微信，手机不在身边，也能随时查看、回复消息，eSIM版支持独立接打电话。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;手表支持安卓、苹果同时连，可实现主副手机来电消息一表接听，&lt;/strong&gt;&lt;/span&gt;同时支持支付宝碰一下支付，支持无感车钥匙、NFC门禁卡、公交卡。&lt;/p&gt;
-&lt;p&gt;续航上，OPPO Watch X3内置646mAh电池，全智能重度使用续航3天、全智能续航5天、长续航模式16天。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260317/a6fdab4d48dc424ab7c9d878b9c0862d.jpg" target="_blank"&gt;&lt;img alt="全智能安卓表皇！OPPO Watch X3发布：无感高血压风险评估 2599元起" h="1381" src="//img1.mydrivers.com/img/20260317/s_a6fdab4d48dc424ab7c9d878b9c0862d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 17 Mar 2026 12:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5XbU1vakhyUUtzNmx1Q3g1Si1JTFZGVnZIQ0pxdFdNSUlGdFhVXzhoYThCYjRRN2FmWnoxSVl2N2hMM3c0MnE2eC01UFM3Vl9kRUJqcmZOZFE</guid></item><item><title>华尔街点评GTC：在英伟达定义里，算力即收入，Token是新的大宗商品 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3767740</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 17 Mar 2026 12:11:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE52aVBKclNrbV9BaF9NbVU4a3kza0lBSm9ZMXNRZkYxNFBYQjhLLVA2X3NvQkZpZUluUFBXTl9EbjhUa1ZFSFdoUm1QVF9OeGZqNjFn</guid></item><item><title>全球首发无感折痕屏！OPPO Find N6发布：9999元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1109/1109847.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月17日消息，今日晚间，OPPO在自家滨海湾园区正式发布了年度折叠旗舰OPPO Find N6。&lt;/p&gt;
-&lt;p&gt;售价方面，OPPO Find N6提供了三个版本。其中&lt;span&gt;&lt;strong&gt;12GB+256GB售价9999元；16GB+512GB售价10999元；而顶配的16GB+1TB卫星通信版售价则为11999元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/55d730d47b354d419adb3335a02dc8f5.jpg" target="_blank"&gt;&lt;img alt="全球首发无感折痕屏！OPPO Find N6发布：9999元起" h="450" src="//img1.mydrivers.com/img/20260317/s_55d730d47b354d419adb3335a02dc8f5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为品牌最强折叠屏，该机彻底解决了困扰折叠屏行业多年的折痕难题，带领行业进入无感折痕的新时代。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/27c40fc86b254d94ade1303bb3fb6793.jpg" target="_blank"&gt;&lt;img alt="全球首发无感折痕屏！OPPO Find N6发布：9999元起" h="450" src="//img1.mydrivers.com/img/20260317/s_27c40fc86b254d94ade1303bb3fb6793.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;为了实现极致的视觉平整，OPPO Find N6配备了新一代钛合金天穹铰链。该铰链采用了行业首个仿生对称四轴结构，成功将铰链表面的起伏从0.18毫米降低到了0.1毫米。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这种结构不仅显著提升了屏幕的平整度，还让手机的开合手感变得更加细腻顺滑。配合芯片级高分子3D打印技术，该机能够填平铰链结构中的每一处微型沟壑，为屏幕铺垫了坚实的物理基础。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;为了保证生产品质，OPPO专门设置了一条为平整铰链而生的专属生产线。该产线共计包含15道核心工序和70道平整度检测，确保每一条铰链在出厂时都能达到同样严苛的平整标准。&lt;/p&gt;
-&lt;p&gt;在屏幕材料上，Find N6搭载了创新的天穹记忆玻璃。其刚性达到了传统柔性玻璃的3倍以上，具备极强的抗物理形变能力，能有效维持屏幕的平滑状态。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/834eeac7868b459895a74171342eebc4.png" target="_blank"&gt;&lt;img alt="全球首发无感折痕屏！OPPO Find N6发布：9999元起" h="800" src="//img1.mydrivers.com/img/20260317/s_834eeac7868b459895a74171342eebc4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这种材料最显著的特点是具备99.9%的自修复还原度。在经历数次弯折后再展开，屏幕依然能迅速恢复原状。通过硬件结构与材料科学的深度融合，OPPO成功解决了折叠屏长期使用后折痕加深的痛点。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;官方介绍显示，Find N6是全球首款通过德国莱茵60万次折叠测试的产品。经过德国莱茵的久用测试评估，它被认定为目前全球最平整的折叠手机。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/2a04984cd1f34fe1964955e31520d56c.jpg" target="_blank"&gt;&lt;img alt="全球首发无感折痕屏！OPPO Find N6发布：9999元起" h="450" src="//img1.mydrivers.com/img/20260317/s_2a04984cd1f34fe1964955e31520d56c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;除此之外，OPPO Find N6还带来了全新的AI手写笔。该笔拥有专属的实体AI按键，支持一键速记，能即刻捕捉灵感。通过短按按键，用户可以快速调用演示笔、全局批注以及随心圈等功能。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;核心配置方面，Find N6采用8.12英寸超大内屏以及6.62英寸外屏，搭载高通第五代骁龙8至尊版平台。该机内置6000毫安时大电池，支持80W有线闪充和50W无线闪充。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/2043f475007e47c088ddb81ba1a75416.jpg" target="_blank"&gt;&lt;img alt="全球首发无感折痕屏！OPPO Find N6发布：9999元起" h="450" src="//img1.mydrivers.com/img/20260317/s_2043f475007e47c088ddb81ba1a75416.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;影像系统同样表现卓越，后置搭载了由2亿像素主摄、5000万像素长焦、5000万像素超广角组成的旗舰三摄，并配备丹霞色彩还原镜头。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260317/d55072ad8d2046f79b861d6b63507f15.png" target="_blank"&gt;&lt;img alt="全球首发无感折痕屏！OPPO Find N6发布：9999元起" h="800" src="//img1.mydrivers.com/img/20260317/s_d55072ad8d2046f79b861d6b63507f15.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在拥有如此强悍配置的同时，OPPO Find N6的工业设计也达到了新高度。该机在折叠状态下的厚度仅为8.93毫米，真正实现了高性能与轻薄手感的完美平衡。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;值得一提的是，OPPO Find N6的多个核心元器件都采用了汇顶科技的创新方案，比如便携AI手写笔搭载汇顶主动笔驱动芯片与低功耗蓝牙方案，通过高压驱动+超低功耗，实现了性能与续航双向兼顾，而且小巧芯片和小笔头带来小笔的轻盈与便携，随写随记更高效。&lt;/p&gt;
-&lt;p&gt;并且Find N6搭载了汇顶折叠屏主屏+副屏触控方案，精准响应小笔信号，让笔写极致顺滑，即便是沾了雨水、汗水也依旧灵敏跟手。&lt;/p&gt;
-&lt;p&gt;最后，OPPO Find N6的立体声双扬搭配汇顶CoolPWM架构的智能音频放大器，音浪澎湃、音质细腻，无论追剧听歌，沉浸享受时刻相伴。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260317/bfcd4eaecab546d9919dd89a8491fb1e.jpg" target="_blank"&gt;&lt;img alt="全球首发无感折痕屏！OPPO Find N6发布：9999元起" h="400" src="//img1.mydrivers.com/img/20260317/s_bfcd4eaecab546d9919dd89a8491fb1e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 17 Mar 2026 12:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB4UFR1cHdHcjc0a3g0TE1QZ3BEdmMtUUY5V0xhTVZEdlhoSXFvOV94WG1OQkxEa1FaNUpUbm50cmZqbGhaZGpUa19fTGVKdm11b1lCNXlzTVk</guid></item><item><title>送别林俊旸，阿里AI变阵ATH-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_03_17_810416.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	3月16日，阿里巴巴正式宣布成立Alibaba Token Hub（ATH）事业群，与电商、云智能两大事业群平级，由CEO吴泳铭直接带队。五大战线同时铺开：通义实验室继续造模型，MaaS业务线搭平台，千问事业部做C端助手，悟空事业部攻B端企业，AI创新事业部探索新场景。
-&lt;/p&gt;
-&lt;p&gt;
-	吴泳铭在全员信中写道：“当下正处于AGI爆发前夜。大量数字化工作将由数以百亿计的AI Agent来支撑，而这些AI Agent将由模型产生的Token支撑运行，成为人类与数字世界交互的主要载体。”
-&lt;/p&gt;
-&lt;p&gt;
-	“Token”的命名本身即是战略宣言——从“模型中心”转向“流通中心”，商业模式从“卖模型”转向“卖Token/卖服务”。这不是一次普通的组织架构调整，而是阿里AI从“项目制“走向“事业群制”的质变，是中国大模型行业从“开源浪漫期”进入“商业兑现期”的标志性事件。
-&lt;/p&gt;
-&lt;p&gt;
-	但这场“成人礼”的代价，是一位技术领袖的离开。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;前奏：一个人的告别与一群人的定调&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	十二天前，3月4日凌晨两点，32岁的林俊旸在X平台上敲下一行字：“me stepping down. bye my beloved qwen.”
-&lt;/p&gt;
-&lt;p&gt;
-	二十四小时前，埃隆·马斯克点赞了阿里开源的Qwen3.5模型，评论称“令人印象深刻的智能密度”。这条推文获得了数万点赞，千问团队内部一片欢腾。没人想到，这场高光时刻的庆功宴还没散场，技术负责人就要告别。
-&lt;/p&gt;
-&lt;p&gt;
-	时间需要再往前倒，3月3日下午，马云与阿里、蚂蚁核心管理层齐聚杭州云谷学校。参与者名单覆盖了阿里巴巴最有权势的几个名字：蔡崇信、吴泳铭、邵晓锋、蒋凡、井贤栋、韩歆毅。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2026/03/17/20260317173224600.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	阿里核心管理层齐聚实属罕见，这不是普通的参观行程，而是一次定调会议。马云在内部谈话中强调，AI是“未来之战”，要求集团“All in”。
-&lt;/p&gt;
-&lt;p&gt;
-	如果再往前一天，3月2日，阿里将“通义千问”与“Qwen”两条产品线合并，统一品牌为“千问”。这个看似简单的命名调整，实则是战略整合完成的信号。过去两年，阿里内部并行着多条AI业务线，达摩院做研究、阿里云做商业化、钉钉做场景应用，各自为战。统一命名意味着：整合期的结束，组织升级的前奏。
-&lt;/p&gt;
-&lt;p&gt;
-	时间线揭示了一个被忽视的真相：林俊旸的离开不是ATH成立的原因，而是其得知规划后的个体选择。据晚点LatePost报道，ATH的架构规划在内部沟通时，林俊旸表达了不同看法。“发展理念不合”——这个官方表述背后，是两种组织模式的根本冲突。
-&lt;/p&gt;
-&lt;p&gt;
-	有接近阿里的人士也向观察者网表示，林俊旸离职与架构调整“有点关系”，“他对调整不满意，再加上内部矛盾恶化才离开的，公司现在也不允许‘造神’。”
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;模式对撞：垂直整合与水平分工&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	林俊旸管理千问的方式，在业内被称为“垂直整合”模式。预训练、后训练、Infra、多模态——所有环节紧密协作，汇报线扁平，决策快速。团队规模控制在几十人，每个人都是多面手，既能写代码也能调模型。
-&lt;/p&gt;
-&lt;p&gt;
-	这种模式创造了惊人的效率。2023年，当国内大厂还在纠结是否开源时，林俊旸力主将Qwen开源，并在Hugging Face上建立了活跃的开发者社区。2025年初，Qwen的衍生模型数量已突破9万，成为全球最大的开源模型家族之一。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/17/20260317174046959.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	但垂直整合有个弱点：它依赖技术领袖的个人能力，难以规模化。
-&lt;/p&gt;
-&lt;p&gt;
-	2025年底，阿里开始接触多位外部技术大牛，包括前Google DeepMind研究员周浩。据市场消息，公司的规划是将千问团队“拆分为预训练、后训练、文本、多模态等独立的水平分工团队”，引入更多“符合投资人想象”的人才。
-&lt;/p&gt;
-&lt;p&gt;
-	林俊旸难以接受这种改造。从他的角度看，千问的成功恰恰来自于“全栈掌控”和“不依赖阿里云”。如果改为水平分工，意味着他必须交出部分决策权，与外部引入的“大牛”共享舞台，并将技术底座接入集团的AI Infra体系。
-&lt;/p&gt;
-&lt;p&gt;
-	这不是权力斗争，而是发展哲学的分歧。有阿里内部人士告诉观察者网，公司从来没有说要挤走谁，也挽留过，但林俊旸的离职可能是他自己有一些考虑，不是人事斗争。
-&lt;/p&gt;
-&lt;p&gt;
-	更深层的问题是：当阿里需要从自我投入转向对外融资，林俊旸的简历成了短板。“硕士学历、无海归背景、无国际AI大厂经验，这三项缺失，在投资人眼中构成不可估值性。”一位前阿里P9高管透露。
-&lt;/p&gt;
-&lt;p&gt;
-	不是说林俊旸不够优秀，而是他的履历不够“标准化”，资本市场需要可量化的标签来降低风险溢价。上述高管直言：“商业公司的高管需要符合投资人的想象。”
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;历史的回响：开拓者的使命与守成者的接力&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	阿里内部有一种说法：林俊旸的离职，是阿里云早期故事的某种回响。
-&lt;/p&gt;
-&lt;p&gt;
-	2009年，王坚博士加入阿里，受命从零搭建阿里云。当时的阿里每年花费数亿元采购国外小型机和数据库，扩容慢、服务傲慢。王坚提出“去IOE”（去掉IBM、Oracle、EMC），用分布式架构替代传统集中式数据库，这是一个在当时看来近乎疯狂的想法。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/17/20260317174259997.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	那几年，阿里云经历了艰难的技术探索。内部争议不断，有人质疑分布式路线的可行性，有人担心稳定性风险。王坚带领团队坚持了下来，2012年的年会上，他谈及艰辛时一度动容。但正是这份坚持，为阿里云奠定了技术底座。
-&lt;/p&gt;
-&lt;p&gt;
-	后来的故事是：当技术路线被验证、商业化提上日程，组织需要新的能力——工程化管理、规模化交付、客户运营。2014年，胡晓明接任阿里云总裁，带领团队实现了商业化的突破。王坚转向城市大脑等新赛道，继续他的技术理想。
-&lt;/p&gt;
-&lt;p&gt;
-	这不是“成者王侯败者寇”的叙事，而是技术组织进化的常态：开拓者完成从0到1的突破，守成者实现从1到100的规模化。两个阶段需要不同的能力，也成就了不同的人物。
-&lt;/p&gt;
-&lt;p&gt;
-	林俊旸的轨迹与此形成对照：同样是技术路线的开拓者，同样在技术验证后遭遇组织升级，但结局不同。王坚是在阿里云成功后转向新战场，林俊旸则是在变局前选择离开。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;理性的退出&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	林俊旸的离职决定，可以用人力资本理论来解释：当内部边际收益低于外部机会成本时，理性人选择退出。
-&lt;/p&gt;
-&lt;p&gt;
-	留在阿里的净现值是清晰的。竞业限制协议锁死他两年内无法加入竞品公司；P10到P11的晋升需要“符合投资人想象”的背景背书，而这正是他的短板；名义上是一号位，实际决策被“辅佐”稀释；期权价值封顶在千万级，且兑现周期长。
-&lt;/p&gt;
-&lt;p&gt;
-	选择创业的期望收益则高得多。阿里需要支付足额的竞业补偿，覆盖沉默成本。据前述前阿里P9高管透露，已有至少20家投资机构接触林俊旸，验证了他的市场价值。AI应用正处于爆发前夜，MiniMax创始人闫俊杰的路径可供参考——从百度实习生到3000亿港元市值，只用了三年。
-&lt;/p&gt;
-&lt;p&gt;
-	“他的身价肯定不只几千万，但公司不能给他实现这个价值。”上述前高管评价：“在阿里干了这么多年，一路升上来，也实现了自己的技术理想，钱也拿到了，财务自由了。现在正好是出来进入AI的创业时代，然后随便哪个大投资人给钱，自己开一家公司，两三年起来，做不起来就卖掉，几个亿就到手。”
-&lt;/p&gt;
-&lt;p&gt;
-	市场猜测，林俊旸的创业方向很可能是B端AI应用。他在阿里最后负责的“悟空”事业部，定位就是AI原生工作平台。后训练负责人郁博文、Code负责人惠彬原（已确认加入Meta）、核心贡献者李凯新的同步离职，暗示这可能是一次带团队创业。
-&lt;/p&gt;
-&lt;p&gt;
-	谷歌DeepMind的反应耐人寻味。林俊旸发文当天，DeepMind研究员在X平台上公开喊话：“如果您想找个新地方来构建优秀的模型，并为开放模型生态系统做出贡献，请联系我们！” 这条推文获得了大量转发，被解读为海外大厂对中国开源人才的收割。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2026/03/17/20260317174733968.webp" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;ATH的“成人礼”&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	ATH事业群的成立，标志着阿里AI从“项目制”走向“事业群制”的质变。
-&lt;/p&gt;
-&lt;p&gt;
-	过去两年，阿里的AI业务分散在多个板块：达摩院做基础研究，阿里云做模型服务，钉钉做场景应用，淘宝做电商AI。这种分布式架构适合探索期，但造成了资源重复建设和品牌混乱。
-&lt;/p&gt;
-&lt;p&gt;
-	ATH的架构设计直指这些问题。五大事业部形成完整链条：通义实验室造模型（创造Token），MaaS业务线搭平台（输送Token），千问、悟空、AI创新三个应用部门分别攻C端、B端和新场景（应用Token）。所有业务向吴泳铭直接汇报，打破部门墙，统一调度。
-&lt;/p&gt;
-&lt;p&gt;
-	阿里内部人士向观察者网透露，ATH的成立更多是“将AI捋顺”的组织梳理。“汇报关系没有变，各个事业部依旧是独立单元，更多是概念上的整合。就像淘宝闪购和饿了么一样，希望调整后能有新的化学反应，效率更高。”
-&lt;/p&gt;
-&lt;p&gt;
-	此外，这次调整意味着商业模式的转变：从“卖模型”（一次性授权）转向“卖Token”（按量计费的服务）。这与OpenAI的演进路径一致——GPT-3是模型，ChatGPT是产品，GPTs商店是生态，最终的货币单位都是Token。阿里希望调整后，整体投入产出比能有所提升。
-&lt;/p&gt;
-&lt;p&gt;
-	ATH的成立还是阿里组织文化的自我修正。过去两年，阿里在AI领域的投入不可谓不大，但一位前阿里人士反思：“我们很早就投入AI，花了很多钱，但一直不温不火、不声不响。”
-&lt;/p&gt;
-&lt;p&gt;
-	引入外部“大牛”、提升人才密度的可视化指标，是ATH的隐含任务。前Google DeepMind研究员周浩等人的加入，将改变千问团队的基因——从“本土实战派”转向“国际工程派”。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;行业的阶段转换&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	阿里AI变阵不是孤立事件。它标志着中国大模型行业整体从“技术浪漫期”进入“商业兑现期”。
-&lt;/p&gt;
-&lt;p&gt;
-	2022年至2025年，行业的核心叙事是开源竞赛、参数规模、论文引用。这个阶段需要个人英雄主义，林俊旸、王小川、杨植麟等本土培养的技术明星，都是这个阶段的产物。
-&lt;/p&gt;
-&lt;p&gt;
-	2026年开始，叙事切换为用户规模、收入、生态闭环。MiniMax的估值飙升、DeepSeek的低成本突破、阿里ATH的成立，都指向同一个方向：大模型不再是实验室的玩具，而是基础设施的生意。
-&lt;/p&gt;
-&lt;p&gt;
-	只不过这种切换必然伴随阵痛，没有对错之分，而是阶段适配：当行业进入工程化阶段，组织需要可预期的流程，而非个人的灵光乍现。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/17/20260317175158318.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	前述前阿里P9高管对此总结：“上班这件事情是没有啥意义的，上班的唯一的用处就是用来壮大我自身。你在公司工作了10年，你感觉老板对你有恩，你感觉高管们都是很愿意培养新人。可是当你对公司心寒的时候，一秒钟你就突然发现，我过去的十年就是繁花泡影，我以为的意义烟消云散。本质上来讲，公司并不重要。我的人生是我自己的，我的价值是我自己的，我走的时候留下来的只有我自己沉淀下来的东西。”
-&lt;/p&gt;
-&lt;p&gt;
-	“所以你就明白一件事情：利用一切身边的东西，信息、资源、客户、专利等来壮大自己。你必须在这个阶段里面非常自私，然后壮大自身，把自己的价值无限拔高。”
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;结语：&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	3月4日凌晨，林俊旸发文告别时，杭州正是春寒料峭。他的办公室在未来科技城，与阿里总部西溪园区隔了一条文一西路。这条路见证了太多技术人的来来去去，有人在这里坚持，有人在这里转身，有人离开后又归来。
-&lt;/p&gt;
-&lt;p&gt;
-	十二天后，ATH事业群正式成立。研发同学的故事，或许正在另一条时间线上展开。
-&lt;/p&gt;
-&lt;p&gt;
-	这不是一个人的故事。当资本需要可估值的叙事，当组织需要工业化的效率，技术理想主义必须让位于商业现实主义。
-&lt;/p&gt;
-&lt;p&gt;
-	中国大模型行业的“成人礼”，以一场体面的告别完成。林俊旸带走了他的团队、他的开源理想、以及一个关于“技术能否改变世界”的未竟之问。ATH留下的，是一个更庞大、更标准的机器。
-&lt;/p&gt;
-&lt;p&gt;
-	这台机器能否运转良好，将决定下一个阶段的叙事。而那个关于理想主义的问题，或许要等到下一个技术周期的开启，才能找到答案。
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Tue, 17 Mar 2026 12:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1KUzQ0cXlTSzBlMGRMaE00eW1NRjRCOVRRX3BKcXl5TEZ1NjFLaDRiRkNwUUxfT1NBX0lCZEdnTVBMeGUwbm1BYktGaE81d0hlVzBueUVVbU50NGM0Zm5CZ3lxSUY</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 17 Mar 2026 14:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9vdGRkeHRFUUY0NW1MUEQyeFB4Tk1HblZXZzB2SEQ1VnNJMVNmYVk3dmF3bDZ2MkZqQ1JxSXFvMXNjTWR0RWFvemlzZzN0Vnlrb1dzdWlxVDE</guid></item></channel></rss>
