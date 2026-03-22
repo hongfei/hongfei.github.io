@@ -273,46 +273,4 @@
                 
                 
                 
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>手机网易网</author><pubDate>Sat, 21 Mar 2026 22:00:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE91UkRZOGtmbVZVaDRxdTRMZUtlR3dPc28zckpRdGY3NG1ac0tDNkJFZlRGMEg4NnBWVkw2amNoMjlGS1J5eXBZYlZ5Q1FPSkN1ZkdtN0czR1VaZDJ4b2FLM3VCbmhBLUdWcWZnOE90OEJYZlVJMnJqZXlWZkc</guid></item><item><title>基于群体智能优化算法与随机森林分类器的早期糖尿病风险预测及特征降维研究 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260322035803225.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
-                    &lt;p&gt;在全球范围内，糖尿病，尤其是2型糖尿病，作为一种长期的代谢紊乱疾病，严重威胁着人类的健康。它不仅源于体内胰岛素抵抗或分泌不足导致的高血糖水平，更会逐步对心、肾、眼等多种器官造成不可逆的损害。因此，对糖尿病进行早期识别和风险预测，是有效干预、延缓并发症、减轻社会医疗负担的关键。传统的预测方法或依赖大量临床检查，给患者带来不便与负担；或使用复杂的机器学习模型，虽力求精准，却在特征冗余与模型“黑箱”之间左右为难。许多研究尝试利用数据驱动方法进行预测，但往往难以在“高效精简”与“精准可靠”之间找到平衡点——要么为了高精度而使用全部特征，牺牲了模型的简洁性与计算效率；要么在削减特征后，模型性能大幅下滑。更关键的是，这些模型决策过程缺乏透明解释，医生难以理解其判断依据，限制了其在严肃临床场景中的应用价值。为了破解这些难题，一项发表于《Scientific Reports》的研究应运而生，它巧妙地将自然界的智慧与强大的学习算法相结合，旨在构建一个既精准、高效又“敞开心扉”的早期糖尿病风险预测系统。&lt;/p&gt;
-&lt;p&gt;为开展此项研究，作者主要运用了以下几个关键技术方法：首先，研究基于公开的“早期糖尿病风险预测数据集”进行，该数据集包含了520个个体的16项预测特征及1项目标类别。其次，研究核心采用了三种群体智能（Swarm-based）元启发式优化算法——狐狸优化器（Fox Optimizer, FOX）、蜜獾算法（Honey Badger Algorithm, HBA）和金枪鱼群优化算法（Tuna Swarm Optimization, TSO），将它们分别与随机森林（Random Forest, RF）分类器进行封装结合，形成了FOX_RF、HBA_RRF和TSO_RF三种混合模型，以实现特征选择与分类的联合优化。最后，研究引入了SHAP（SHapley Additive exPlanations）这一可解释人工智能（Explainable AI, XAI）框架，用于全局及局部层面解析模型的决策逻辑与特征重要性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;研究结果&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;模型性能比较&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本研究提出的三种混合模型在测试集上均展现出卓越的性能。在不使用交叉验证的情况下，FOX_RF和HBA_RF模型取得了99.36%的准确率（Accuracy），而TSO_RF模型更是达到了100%的准确率。这初步证明了混合模型的有效性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;交叉验证下的稳健性能&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;为了更严谨地评估模型，研究进行了10折交叉验证。在此设置下，TSO_RF模型取得了最高的平均交叉验证准确率（98.14%）、F1分数（F-score, 98.47%）和精确率（Precision, 98.54%）。值得一提的是，FOX_RF模型在平均精确率上达到了最高的98.43%，而HBA_RF模型则表现出中等的性能水平。这些结果表明，TSO_RF模型在保持高精度的同时，具有良好的泛化能力和稳健性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;高效的特征降维&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;特征降维是本研究的另一大核心目标。结果显示，HBA_RF模型实现了最激进的特征削减，从原始的16个特征中仅选择了10个，在维持中等性能的前提下最大程度地简化了模型。TSO_RF模型则选择了14个特征，在特征精简与性能卓越之间取得了最佳平衡。FOX_RF模型的特征选择数量介于两者之间。这种降维直接减轻了未来临床数据收集的负担。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;模型可解释性与关键特征分析&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;通过SHAP框架的分析，研究从全局角度揭示了对糖尿病预测影响最大的三个特征分别是：多尿症（Polyuria）、多饮症（Polydipsia）和性别（Gender）。这为临床医生提供了清晰的风险因子聚焦方向。更重要的是，SHAP的个体预测分析（Individual prediction analysis）表明，即使是这些关键特征的微小变化，也会显著影响模型对特定个体的风险判定。这极大地增强了模型决策的透明度，使医生能够理解每一个预测结果的由来，从而更有效地进行临床判断。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;研究结论与意义&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;该研究成功地解决了早期糖尿病风险预测领域长期存在的两难困境。通过将狐狸优化器、蜜獾算法和金枪鱼群优化算法这三种元启发式优化算法与随机森林分类器相结合，所构建的混合模型不仅实现了极高的预测准确率（TSO_RF最高达100%），而且通过智能特征选择显著降低了模型复杂度（HBA_RF将特征数从16个降至10个）。尤为突出的是，金枪鱼群优化算法与随机森林结合的TSO_RF模型，在10折交叉验证中取得了最佳的稳健性能（准确率98.14%），证明了该方案在避免过拟合、确保泛化能力方面的优势。&lt;/p&gt;
-&lt;p&gt;本研究的结论强调了特征降维与模型可解释性在医疗人工智能应用中的核心价值。利用SHAP框架，研究不仅从全局确认了多尿、多饮和性别是糖尿病风险的关键指标，与临床认知相互印证，还从局部层面揭示了模型对个体病例的决策细节，使“黑箱”模型变得可理解、可信任。这项工作的意义在于，它不仅仅是提出了一种性能更优的算法，更是提供了一套从“数据精简”到“精准预测”再到“决策解释”的完整解决方案。它为开发可用于真实世界临床环境的、医生愿意采纳且能够理解的辅助诊断工具奠定了方法论基础，推动了可解释人工智能在慢性病早期筛查领域的实际应用。&lt;/p&gt;
-
-                    &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 21 Mar 2026 20:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9CdmpzX3lzWE1wbmV4dTZsOWxCVzhHX01QYUNGcmJuamVCX3BiWk5MLTJnVTZCVWVYVnp0LUc3Yy03SllFOF9pVDVSYWhWTHBJQ0lVSWc5b2xwSlUtRTlNMmxnMjdvY1NMWEE</guid></item><item><title>综述：委内瑞拉马脑炎病毒：诱导完全保护性免疫的新型减毒活疫苗 - 生物通</title><link>https://m.ebiotrade.com/newsf/2026-3/20260322035813078.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="col-xs-12 col-sm-12" id="Zoom"&gt;
-                    &lt;p&gt;&lt;strong&gt;引言&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;委内瑞拉马脑炎病毒(Venezuelan equine encephalitis virus, VEEV)是一种由蚊媒传播的甲病毒(&lt;i&gt;Alphavirus&lt;/i&gt;)，可导致人类和动物（尤其是马、驴、骡）患上严重的神经系统疾病，并可能引发致命感染。在过去的一个世纪里，拉丁美洲已报告了多起VEEV疫情。尽管主要通过蚊虫叮咬传播，但研究证明，经气溶胶感染的VEEV在动物模型中会导致显著更高的死亡率，表明其具有潜在的生物威胁风险。目前，美国食品药品监督管理局(FDA)尚未批准任何针对VEEV的疫苗。减毒活疫苗株TC-83作为一种研究性新药，曾在实验室人员和风险较高的卫生工作者中进行过测试，但其使用与严重不良事件和免疫原性不均一有关。为了克服TC-83疫苗的局限性，一系列新型减毒活疫苗，如V4020、V3526、VRC-WEVVLP073-00-VP（即WEVEE疫苗）、68U201/IRES1等，正在开发中。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;流行病学&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;VEEV属于披膜病毒科(&lt;i&gt;Togaviridae&lt;/i&gt;)的甲病毒属，该属还包括基孔肯雅病毒、西方马脑炎病毒(WEEV)和东方马脑炎病毒(EEEV)。VEEV抗原复合体包含6个抗原亚型（I-VI），其中IAB和IC亚型是导致人和马疫情暴发的主要元凶。VEEV的传播包括地方性循环和流行性循环。地方性循环主要在库蚊(&lt;i&gt;Culex&lt;/i&gt;spp.)和小型啮齿动物（如棘鼠、棉鼠、稻鼠）之间维持。当病毒发生突变获得感染伊蚊(&lt;i&gt;Aedes&lt;/i&gt;spp.)的能力后，便会溢出到流行循环，在伊蚊、人类和马匹之间传播。马是VEEV IAB和IC亚型的扩增宿主，可产生高滴度病毒血症，从而促进病毒在流行周期中的进一步传播，而人则是终端宿主。历史上，VEEV在1930年代至1990年代在美洲多次暴发大规模疫情，造成大量人畜感染和死亡。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;结构与复制&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;VEEV是一种有包膜的正链单股RNA病毒，基因组约11.5 kb，编码4个非结构蛋白（nsP1-nsP4）和5个结构蛋白（C、E3、E2、6K、E1）。病毒感染始于其表面糖蛋白E2与宿主细胞上的受体LDLRAD3结合。进入细胞后，病毒基因组作为信使RNA直接翻译出非结构蛋白多聚体，经自身蛋白酶nsP2切割后形成复制复合体，负责合成基因组RNA和亚基因组RNA。亚基因组RNA翻译出结构蛋白多聚体，经加工和切割后，衣壳蛋白在细胞质中组装成核衣壳并与基因组RNA结合，而糖蛋白E1和E2在内质网中合成、修饰，形成异源二聚体，最终转运至细胞膜。病毒通过出芽方式释放成熟病毒颗粒。其中，E3蛋白作为E2的前体PE2的一部分，在高尔基体中被弗林蛋白酶切割，对稳定E1-E2二聚体有作用；6K蛋白则是一种病毒孔蛋白，在病毒组装和出芽中起关键作用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;致病机制&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;人类感染VEEV后，通常经历2-4天的潜伏期，随后出现发热、肌痛、寒战、咽痛、呕吐、腹泻和白细胞减少等流感样症状，通常在一周内缓解。然而，在儿童和老年人中，感染可能发展为严重的神经系统疾病，表现为意识模糊、幻觉、步态异常、急性惊厥、局灶性癫痫发作、昏迷甚至死亡。病毒在感染初期可在髓系细胞（如树突状细胞和巨噬细胞）中复制，扩散至局部淋巴组织，导致病毒血症，随后通过血脑屏障或逆向神经元运输（如经嗅神经或三叉神经）侵入中枢神经系统，引发脑炎、脑膜炎等病理变化。在马中，感染可导致高热、失明、异常行为、严重病毒血症，并在6-9天内死亡，死亡率很高。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;宿主免疫&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;宿主适应性免疫反应，特别是中和抗体和T细胞反应，在防御VEEV感染中扮演着关键角色。尽管中和抗体被认为是重要的保护性相关因素，但临床前研究表明，仅有中和抗体可能不足以防止神经侵袭和中枢神经系统病理损伤，有效的T细胞反应，特别是CD4&lt;sup&gt;+&lt;/sup&gt;T细胞反应，对于清除中枢神经系统的病毒和防止致命性脑炎至关重要。研究显示，缺乏αβ T细胞受体的小鼠即使接种了疫苗，仍可能出现持续性中枢神经系统感染和炎症。因此，理想的VEEV疫苗应能同时诱导强大且持久的中和抗体反应和细胞免疫反应。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;疫苗开发与保护性免疫&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;目前尚无FDA批准用于人类的VEEV疫苗。TC-83疫苗是唯一获批有限使用的减毒活疫苗（用于高风险实验室人员），它由VEEV特立尼达驴株在豚鼠心脏细胞中连续传代致弱得到，其主要致弱位点是5‘非翻译区的一个点突变和E2糖蛋白第120位点（苏氨酸→精氨酸）的突变。虽然TC-83能诱导免疫反应，但存在免疫原性不均一（高达20%的接种者无血清转化）、不良反应（发热、肌痛、头痛等）以及潜在的毒力回复风险，限制了其广泛应用。&lt;/p&gt;
-&lt;p&gt;为了克服这些缺点，多种新型疫苗策略正在探索中：&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;V4020&lt;/strong&gt;：一种基于TC-83进一步改造的减毒活疫苗。它在E2蛋白中引入了第二个点突变以极大降低回复突变风险，并重组了基因组结构，将衣壳蛋白基因移至3‘端，由其自身的26S启动子控制。这些改造在提高遗传稳定性的同时，显著降低了神经侵袭性和在小鼠脑内的复制能力，临床前研究表明其安全性优于TC-83，并能诱导高水平的中和抗体，保护非人灵长类动物免受气溶胶攻击。&lt;/p&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;V3526&lt;/strong&gt;：另一种通过分子生物学方法设计的减毒活疫苗，针对弗林蛋白酶切割位点和E1蛋白进行了突变。该疫苗在动物模型中显示出对VEEV IA/B和IE株气溶胶攻击的保护作用，且环境风险评估表明其传播风险较低。&lt;/p&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;WEVEE (VRC-WEVVLP073-00-VP)&lt;/strong&gt;：一种三价病毒样颗粒疫苗，同时包含针对EEEV、WEEV和VEEV结构蛋白的VLPs。I期临床试验显示其安全性良好，并能诱导针对三种病毒的中和抗体。&lt;/p&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;pWRG/VEE&lt;/strong&gt;：一种DNA疫苗，编码VEEV的结构蛋白（E3, E2, 6K, E1）。通过电穿孔方式递送，已在动物模型中证明有效，并能诱导中和抗体反应，I期临床试验显示了其安全性。&lt;/p&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;p&gt;&lt;strong&gt;68U201/IRES1&lt;/strong&gt;：一种基于VEEV IE地方性毒株的疫苗，通过在结构蛋白开放阅读框上游插入内部核糖体进入位点(IRES)来致弱。它能保护动物模型，且研究表明其无法在蚊虫中有效复制，降低了环境传播风险。&lt;/p&gt;
-&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;VEEV因其引发大规模疫情及潜在的生物威胁特性而持续受到关注。尽管TC-83疫苗提供了有限的使用经验，但其缺陷促使了新一代疫苗的研发。V4020、V3526等新型减毒活疫苗通过理性的基因改造，在安全性、免疫原性和遗传稳定性方面展现出改进潜力。同时，WEVEE VLP疫苗和pWRG/VEE DNA疫苗等非复制性疫苗平台也提供了有前景的替代策略。这些候选疫苗旨在诱导均衡的中和抗体与T细胞免疫，为最终开发出安全有效、能够提供完全保护性免疫的VEEV人类疫苗带来了希望。&lt;/p&gt;
-
-                    &lt;p&gt;&lt;button class="rewardBtn"&gt;打赏&lt;/button&gt;&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>生物通</author><pubDate>Sat, 21 Mar 2026 20:16:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE04QWNkOWRjd3Y3ZWQ2OFFycGxPZllFYVRESjg2cDV6MzJxS3JoUDQ4bE5ZSlVrR0dYTDlPMU9fOXZvMnhFamxOUzh4ZF9OR0xZd1J5Y3pjZjhpekVOVGY2Y3hTTWstSkd1dEE</guid></item></channel></rss>
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>手机网易网</author><pubDate>Sat, 21 Mar 2026 22:00:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE91UkRZOGtmbVZVaDRxdTRMZUtlR3dPc28zckpRdGY3NG1ac0tDNkJFZlRGMEg4NnBWVkw2amNoMjlGS1J5eXBZYlZ5Q1FPSkN1ZkdtN0czR1VaZDJ4b2FLM3VCbmhBLUdWcWZnOE90OEJYZlVJMnJqZXlWZkc</guid></item></channel></rss>
