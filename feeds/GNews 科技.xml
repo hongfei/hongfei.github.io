@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>美议员将提出法案禁止联邦政府购买或使用中制人形机器人 - RFI</title><link>https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20260326-%E7%BE%8E%E8%AE%AE%E5%91%98%E5%B0%86%E6%8F%90%E5%87%BA%E6%B3%95%E6%A1%88%E7%A6%81%E6%AD%A2%E8%81%94%E9%82%A6%E6%94%BF%E5%BA%9C%E8%B4%AD%E4%B9%B0%E6%88%96%E4%BD%BF%E7%94%A8%E4%B8%AD%E5%88%B6%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="t-content__body u-clearfix"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111865.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，随着Intel酷睿Ultra 200S Plus、200HX Plus系列升级版的发布，Intel除了提升核心数量、运行频率、内存频率等规格，还首次引入了一项在性能优化领域的革新性技术——&lt;strong&gt;Intel二进制优化技术，简称IBOT。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;它能够充分释放x86处理器的极致性能，带来原生的、架构级的性能提升。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/e1c5f5c3-7bc4-4e0a-86d2-fb63a88580ae.png" target="_blank"&gt;&lt;img alt="Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能" h="335" src="//img1.mydrivers.com/img/20260326/Se1c5f5c3-7bc4-4e0a-86d2-fb63a88580ae.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果将CPU执行指令视为俄罗斯方块游戏，IBOT如同一位顶尖的“动线规划师”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;它不会改变方块（指令）与规则（逻辑），而是优化下落路径与堆叠序列，使其更流畅、更密集地通过处理管道，从而提升每周期指令数（IPC）。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这项技术直接作用于编译后的二进制程序，在底层实现无损优化，让用户无需任何操作即可享受性能提升。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/03f110f8-1130-4ca8-aa5a-e8f0ac17ff0d.png" target="_blank"&gt;&lt;img alt="Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能" h="333" src="//img1.mydrivers.com/img/20260326/S03f110f8-1130-4ca8-aa5a-e8f0ac17ff0d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;● 优化缓存访问/拉高缓存命中率，减少“取方块”的等待：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当CPU所需数据不在高速缓存中，就需耗时访问主内存。&lt;/p&gt;
+&lt;p&gt;IBOT通过智能重排指令顺序，让CPU更大概率从高速缓存中直接获取所需“方块”，大幅降低数据访问延迟，减少空等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;● 提升分支预测精度，避免“预测失误”的清盘代价：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CPU会像预判方块落点一样预测程序分支。&lt;/p&gt;
+&lt;p&gt;一旦预测错误，已进入流水线的指令需全部作废，造成性能损失。&lt;/p&gt;
+&lt;p&gt;IBOT利用硬件配置文件引导优化等技术，生成更精准的“预判”线索，让指令流水线保持满负荷运行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;● 动态规划最优路径，实现“实时路线优化”：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;IBOT采用后链接（Post-Link）策略。&lt;/p&gt;
+&lt;p&gt;它并非一次性固化代码，而是在程序运行过程中，动态分析并生成更高效的机器码执行路径，通过指令调度与路径优化，实时替换为性能更优的代码版本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;● 深度适配微架构，确保稳定与兼容：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;IBOT会在运行时深入分析程序与CPU微架构的交互，智能地动态重构并替换机器码，让其更契合Intel的x86微架构，以实现更高的IPC。&lt;/p&gt;
+&lt;p&gt;所有这些优化均在用户态（Ring 3）完成，无需修改原始应用程序，保证了绝佳的系统兼容性与稳定性。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/81681a30-358a-41d5-b705-339921def674.png" target="_blank"&gt;&lt;img alt="Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能" h="336" src="//img1.mydrivers.com/img/20260326/S81681a30-358a-41d5-b705-339921def674.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;Intel二进制优化技术被视为Intel在性能优化领域的里程碑，凝聚了Intel 40年来在工具链、编译器与代码优化层面的深厚积累，突破了传统软件优化对开发者、源代码及漫长发布周期的固有模式。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;它通过运行时对二进制代码的智能重组，直接提升指令执行效率，确保任务高效、完整运行。&lt;/p&gt;
+&lt;p&gt;这不仅开创了软件与硬件协同提升性能的全新路径，&lt;strong&gt;更让Intel成为业界唯一能够实现无需硬件升级、实时IPC增强的厂商。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;游戏玩家可以直接利用IBOT，无需改变任何游戏代码或者硬件配置，只需通过IPPP配套软件一站式安装，并在APO中开启。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/929fa5a3-6ba9-4b10-a769-9c4af152d919.jpg" target="_blank"&gt;&lt;img alt="Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能" h="1170" src="//img1.mydrivers.com/img/20260326/S929fa5a3-6ba9-4b10-a769-9c4af152d919.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;首批支持IBOT的主流游戏有12款，帧率平均可提升约8％，《古墓丽影：暗影》中最高可达到2％。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/a2b0305d-4714-4890-8472-f35ac0a5f949.png" target="_blank"&gt;&lt;img alt="Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能" h="335" src="//img1.mydrivers.com/img/20260326/Sa2b0305d-4714-4890-8472-f35ac0a5f949.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实测9款3A游戏，在酷睿Ultra 7 270K Plus上开启APO、IBOT之后，帧率平均提升7％，有3款游戏提升超过了10%，其中《古墓丽影：暗影》的帧率更是直接增加了20%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Intel一点也没有吹牛！&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8c10b6d4-680d-428d-9f77-cdbe145ad9bd.png" target="_blank"&gt;&lt;img alt="Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能" h="350" src="//img1.mydrivers.com/img/20260326/S8c10b6d4-680d-428d-9f77-cdbe145ad9bd.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同时，Intel正积极将IBOT的应用场景扩展至网页渲染、图像处理等更广泛的生产力工作负载，并将进一步扩展至更多的游戏、生产力、AI工作负载场景。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;后续，酷睿Ultra 200系列家族将全部支持IBOT，最新发布的酷睿Ultra 300系列应该也没意外。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/4ab30092c577438f8eae478c61a46213.jpg" target="_blank"&gt;&lt;img alt="Intel IBOT加速技术揭秘！硬件不变 白嫖22％游戏性能" h="399" src="//img1.mydrivers.com/img/20260326/s_4ab30092c577438f8eae478c61a46213.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 10:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE96TGh1cWc5WDU0c0xDVmtkX0VKZW5SSjljVXJOREFnOUx6MXRsNGpWcXJ4QWVZOTF4b3VuQ0tIb0tCN0pXTnJ6MERjYlpZMC1XZHc5NUwwTDU</guid></item><item><title>Wine 11.0 + 新手友好，打造更优质的Windows 应用兼容体验- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/414430</link><description>&lt;body id="readabilityBody"&gt;
+  &lt;p id="app"&gt;&lt;/p&gt;
+  
+  
+  
+&lt;/body&gt;
+
+</description><author>OSCHINA</author><pubDate>Thu, 26 Mar 2026 10:08:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5rMTQwVU9PaGl4ZFBDTVB4MmpEYU9RVWtyWWlSNnRPckwzRVRPb1NibDR5bkNrUXhWTTRIWF9VRWZYdm1MaEpJQU9FVQ</guid></item><item><title>美议员将提出法案禁止联邦政府购买或使用中制人形机器人 - RFI</title><link>https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20260326-%E7%BE%8E%E8%AE%AE%E5%91%98%E5%B0%86%E6%8F%90%E5%87%BA%E6%B3%95%E6%A1%88%E7%A6%81%E6%AD%A2%E8%81%94%E9%82%A6%E6%94%BF%E5%BA%9C%E8%B4%AD%E4%B9%B0%E6%88%96%E4%BD%BF%E7%94%A8%E4%B8%AD%E5%88%B6%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="t-content__body u-clearfix"&gt;
                                             
                                                                 &lt;p&gt;共和党籍联邦参议员科顿（Tom Cotton）和参议院民主党领袖舒默（Chuck Schumer）计划提出《美国安全机器人法案》。该法案将禁止联邦政府购买或使用中国等敌手们制造的无人地面车辆，并禁止将联邦资金用于与这些机器人相关的项目。&lt;/p&gt; &lt;p&gt;这项法案出台之际，中国企业正与特斯拉等美国公司展开竞争，致力于研发能够替代人类完成各种任务——从危险的制造业工作到家务劳动——的人形机器人。&lt;/p&gt; &lt;p&gt;至少有两家中国公司——智元机器人（AgiBot）和宇树科技（Unitree）——正准备今年在中国上市，它们的产品引起了广泛关注。&lt;/p&gt; &lt;p&gt;周四，上述参议员们发表声明称，此类机器人对美国构成国家安全风险，因为它们可能被用来收集数据并发送回中国，或者可能被中方远程控制。去年，一群议员敦促五角大楼将宇树科技列入与中国军方合作的企业名单。&lt;/p&gt; &lt;p&gt;代表阿肯色州的科顿说道，“共产中国制造的机器人威胁阿肯色州居民的隐私和国家安全”。舒默表示，在中共支持下，中国企业“正按其惯用伎俩——这次是在机器人领域——试图用其技术充斥美国市场，这给美国人的隐私、科研和产业带来了切实的安全风险和威胁”。&lt;/p&gt; &lt;p&gt;据悉，该法案将允许美国军方和执法机构对中国机器人进行研究，前提是这些机器人不能向中国传输数据或从中国接收数据。&lt;/p&gt; &lt;p&gt;在美国众议院，共和党籍联邦众议员斯特凡尼克（Elise Stefanik）周四计划宣布一项与参议院版本相对应的法案。&lt;/p&gt; &lt;p&gt;斯特凡尼克在一份声明中指出，“我们必须继续提升和巩固美国在机器人领域的领先地位，同时保护我们的隐私和国家安全免受敌手们的侵害”。&lt;/p&gt;
                                                                 
@@ -9,7 +61,241 @@
             
                     
                     
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Thu, 26 Mar 2026 10:02:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiuwNBVV95cUxPT2htRFhuM0dPY3ZvbE1BMi1kdmFQT0dFWWVFSXdpVUVSWGMzX01BOF9IV1pyaVJKUF9VX0ZqaXVjR2d2N1JjVHQ1b1hvZTB0WGsyWEZaMHNZZ0otaWtwYVJuNWYtbHJJOXVDQ2lxZS1zNk9leUx2T2xXaDNYRGppQ2dWb2FkRnk3TTdsZ055QXl1eUMtZU1Ea0RZdDdRM2JqVURMa2RlYVZPTnpHUG9pY1lJWWMwc19RMnJIVzV1cjc3b3BuZFcxbHhFQkg0YVNJNHhlN3dzWHUtbkRrajlneGEwTWU0dGYxb1JPSDgwdG1GNzlWdkhnaW5WaWdoSUNQdGR0WHZXQ0MwNFA5RHRjTVpXTm5BRnpOVWtWMHVwcHM1RkF2cEpIck43RFI5N0JSeF9IQnJjWm1HNVZZSkVtaGpVM1VkZjY0YlJ5dU42cWppWlczUWlFRmd1VE9qd0k0WXBjamt0ckdHQlZyR2FuWXFKWFY4bEgtVEs1OVBoWFhZR25tVTJIMUxzaG5uMEJyanV1YTRyaE1sYU9Za3VvdS1CMjF1WEpqYl9yUktWbDJXcEpKbzRiY1R6SQ</guid></item><item><title>最后两款设备停止支持，小米MIUI正式停更 - 观察者网</title><link>https://www.guancha.cn/economy/2026_03_26_811519.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Thu, 26 Mar 2026 10:02:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiuwNBVV95cUxPT2htRFhuM0dPY3ZvbE1BMi1kdmFQT0dFWWVFSXdpVUVSWGMzX01BOF9IV1pyaVJKUF9VX0ZqaXVjR2d2N1JjVHQ1b1hvZTB0WGsyWEZaMHNZZ0otaWtwYVJuNWYtbHJJOXVDQ2lxZS1zNk9leUx2T2xXaDNYRGppQ2dWb2FkRnk3TTdsZ055QXl1eUMtZU1Ea0RZdDdRM2JqVURMa2RlYVZPTnpHUG9pY1lJWWMwc19RMnJIVzV1cjc3b3BuZFcxbHhFQkg0YVNJNHhlN3dzWHUtbkRrajlneGEwTWU0dGYxb1JPSDgwdG1GNzlWdkhnaW5WaWdoSUNQdGR0WHZXQ0MwNFA5RHRjTVpXTm5BRnpOVWtWMHVwcHM1RkF2cEpIck43RFI5N0JSeF9IQnJjWm1HNVZZSkVtaGpVM1VkZjY0YlJ5dU42cWppWlczUWlFRmd1VE9qd0k0WXBjamt0ckdHQlZyR2FuWXFKWFY4bEgtVEs1OVBoWFhZR25tVTJIMUxzaG5uMEJyanV1YTRyaE1sYU9Za3VvdS1CMjF1WEpqYl9yUktWbDJXcEpKbzRiY1R6SQ</guid></item><item><title>iPhone 4回收价暴涨80倍 电子垃圾成抢手货 - 中华网</title><link>https://news.china.com/socialgd/10000169/20260326/49359757.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="chan_newsDetail"&gt;
+                
+
+                &lt;p&gt;曾经只能换个脸盆的“电子垃圾”如今成了抢手货。近日，“iPhone4回收价格暴涨80倍”登上热搜。这款2010年发布的经典机型，此前回收价仅5元左右，如今二手交易价已涨至150-300元，成色好的甚至能卖到400元以上。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img2.utuku.imgcdc.com/550x0/news/20260326/19b46052-e27d-4f22-816d-7edba551339a.jpg" alt="iPhone 4回收价暴涨80倍"&gt;&lt;/p&gt;&lt;p&gt;不仅是iPhone4，郑州、西安等地的二手手机市场近期也出现了行情骤变。原本只能卖10-20元的报废智能机，现在能卖到一百多甚至三百元。一位回收商举例，一款五年前的红米机型，此前回收价仅100多元，如今已涨至300元左右。&lt;/p&gt;&lt;p class="f_center pcenter"&gt;&lt;img src="https://img1.utuku.imgcdc.com/550x0/news/20260326/1f2a2722-7ced-413a-ab8a-181fe80145a6.jpg" alt="iPhone 4回收价暴涨80倍 电子垃圾成抢手货"&gt;&lt;/p&gt;&lt;p&gt;涨价的核心原因是全球存储芯片供需失衡。AI服务器需求激增，三星、美光等厂商将产能转向HBM等高端AI存储芯片，导致DDR4等消费级存储芯片供应短缺。因此，厂商开始翻新旧手机并拆解内存条、主板等零部件。有回收商表示：“现在只要是手机就收，内存越大越值钱，屏幕全碎、开不了机的也能卖高价”。&lt;/p&gt;&lt;p&gt;不过，这波行情并非普遍上涨。西安多位回收商澄清，iPhone4等老旧机型并不在所有店铺的回收范围内，能正常使用的二手整机价格涨幅有限，真正暴涨的是搭载存储芯片的报废智能机。成色完好、可二次销售的手机，价格只是略有上浮。&lt;/p&gt;&lt;p&gt;背后还有“炒家”的身影。有商户透露，近期出现“不管成色、整批吃进”的收购方，这些收购方的行为与炒鞋类似，明显是资本在囤货。&lt;/p&gt;
+            &lt;/div&gt;
+            
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中华网</author><pubDate>Thu, 26 Mar 2026 09:51:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTFBVNmJqcDJ4N3M5R1ZoQmEwWWlrdXhCajlKVmM2UndyMTNjcnJDZFZnNXgxUzN5RWpsb2RCd0dqLXRHT2VXbEVUTDk4dkplbFJwNGZXV3dMUG84N0xmRTdPbFFjVjlQTzM3emhjS3hGR1c</guid></item><item><title>Windows企业端稳定性远逊macOS！崩溃、卡死、强制关机率全碾压 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111850.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，据Omnissa最新报告，Windows设备在企业环境中的稳定性表现远不及macOS。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;具体来看，Windows设备强制关机次数是macOS的3.1倍，应用崩溃次数高出2.2倍，应用卡顿次数更是达到macOS的7.5倍。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;报告基于2025年全年数百万台终端设备的匿名遥测数据，覆盖26000家企业客户和17个行业。&lt;/p&gt;
+&lt;p&gt;Omnissa指出，即使是小规模的工作流中断，员工平均需要24分钟才能重新进入专注状态，频繁的系统故障正在造成可观的生产力损失。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;报告还显示，医疗和制药等受监管行业中，超过50%的Windows和Android设备落后于最新五个主要系统版本；教育行业超过50%的桌面和移动设备未启用加密保护。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在设备生命周期方面，企业普遍将Mac设备视为6年资产投资，而Windows设备的平均使用寿命仅为3年，macOS的数字员工体验（DEX）良好评分比Windows高出120%。&lt;/p&gt;
+&lt;p&gt;AI工具部署方面，Copilot已安装在97.5%的企业管理移动设备上，但员工自行安装的替代品同样流行，ChatGPT覆盖91%的iOS设备，Gemini覆盖61%的Android设备。&lt;/p&gt;
+&lt;p&gt;尽管多项数据对Windows不利，但该系统在政府环境中的使用量仍同比增长2倍，Omnissa前身为VMware旗下部门，2024年分拆为独立公司。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/0f39ec1e81dd4181b0185cb54e013bb1.jpg" target="_blank"&gt;&lt;img alt="Windows企业端稳定性远逊macOS！崩溃、卡死、强制关机率全碾压" h="400" src="//img1.mydrivers.com/img/20260326/s_0f39ec1e81dd4181b0185cb54e013bb1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 09:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1iTk1tSm5rUFpXTjcyY1JjeDUtUnk2Q0ZDNE9LWkNOaFVrYjRnd2FkMm9lS1hRNkZxVDlmQk9tZU93SUdldWxOY3VlSms0Y3l1dTRWYUVwbHg</guid></item><item><title>想买的再等等！微软Surface Pro/Laptop新品曝光：发布时间临近 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111838.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;想买的再等等！微软Surface Pro/Laptop新品曝光：发布时间临近&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-26 17:13:35  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111838-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，据博主Zac Bowden透露，&lt;span&gt;&lt;strong&gt;微软将在今年春季推出新一代Surface Pro和Surface Laptop，搭载高通骁龙X2和Intel Panther Lake两套个平台，预计夏季前正式发布。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Bowden在社交平台上表示，新机将于今年春天推出，如果正在考虑购买当前一代的型号，再等等几周吧。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/2811d997-b2e1-4f53-8b82-f8636612f20b.png" target="_blank"&gt;&lt;img alt="想买的再等等！微软Surface Pro/Laptop新品曝光：发布时间临近" h="245" src="//img1.mydrivers.com/img/20260326/S2811d997-b2e1-4f53-8b82-f8636612f20b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微软预计将同时推出高通和Intel两个版本，&lt;strong&gt;其中面向消费市场的型号搭载骁龙X2处理器，而Intel Panther Lake版本则划入微软的商用产品线。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/bc789fc4-5207-4a05-a0c2-698d1afd1029.png" target="_blank"&gt;&lt;img alt="想买的再等等！微软Surface Pro/Laptop新品曝光：发布时间临近" h="284" src="//img1.mydrivers.com/img/20260326/Sbc789fc4-5207-4a05-a0c2-698d1afd1029.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微软上一次更新Surface Laptop和Surface Pro硬件距今已近一年，去年发布的Surface Laptop 13和Surface Pro 12定位为更小更便宜的替代选项，而ARM架构的Surface Laptop 7和Surface Pro 11则承担主力角色。&lt;/p&gt;
+&lt;p&gt;目前关于新一代Surface Laptop和Surface Pro的具体规格细节尚未披露，两款产品分别会带来哪些硬件升级仍有待微软官方确认。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/701d5cca-54f7-4f5e-8aa2-cde3ae74574c.jpg" target="_blank"&gt;&lt;img alt="想买的再等等！微软Surface Pro/Laptop新品曝光：发布时间临近" h="399" src="//img1.mydrivers.com/img/20260326/S701d5cca-54f7-4f5e-8aa2-cde3ae74574c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 09:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5OSkgwRlZvY0M2aVZ4OVItZHEzYmNrdV9FdEtaaEx1N2UtWFB0Nzk4d3hxcFhjUVYzMnZJTEU1bTZTUkRjd1lIWVVqLWpxcDk4X2xYelB6Mms</guid></item><item><title>锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111837.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，&lt;strong&gt;今年，华硕无畏Pro 14/16笔记本也迎来了2026款，售价5799元起。&lt;/strong&gt;两款机型均配备高规格OLED华硕好屏，其中Pro16款为2.5K 165Hz，Pro14款则是2.8K 120Hz。&lt;/p&gt;
+&lt;p&gt;现在16英寸版已经来到我们评测室，下面为大家带来图赏。&lt;/p&gt;
+&lt;p&gt;华硕无畏Pro实现100% P3影院级广色域覆盖、10-bit色深及△E＜1逐台精准校色，色彩还原度堪比专业显示器，轻松满足视频剪辑、图形设计等专业创作需求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1100nits的峰值亮度相较上一代近乎翻倍&lt;/strong&gt;，即便在户外强光环境下，画面依旧清晰锐利，彻底摆脱强光看不清的困扰。&lt;/p&gt;
+&lt;p&gt;性能方面，&lt;strong&gt;新品提供AMD锐龙AI 9 H 465与AMD锐龙9 8945H处理器双选项&lt;/strong&gt;，具备50 TOPS AI算力，无论是多任务办公还是轻度创作，都能流畅响应。&lt;/p&gt;
+&lt;p&gt;华硕冰锋Pro散热系统的加持，确保80W高性能稳定释放，长时间使用也无过热顾虑。&lt;/p&gt;
+&lt;p&gt;续航上，&lt;strong&gt;80Wh大容量电池可实现20小时长效续航。&lt;/strong&gt;电池更大，机身却更加轻盈，无畏Pro16 2026仅约1.65kg。&lt;/p&gt;
+&lt;p&gt;此外，还有IR摄像头可进行秒级人脸识别，开盖即解锁，搭载"小硕知道"AI智能助手，方便日常工作、学习。&lt;/p&gt;
+&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="7499元" goods_title="华硕无畏Pro16 锐龙版 2026 国家补贴15% AI轻薄本笔记本电脑（锐龙AI9 H465 32G 1T 1100尼特OLED） " href="https://dt.mydrivers.com/mv.ashx?txt=Rnd1O" img="https://img14.360buyimg.com/pop/jfs/t1/382088/27/19466/65905/6965a604Fe1ad76f6/bac0c7bd004ef703.png" target="_blank"&gt;京东(7499元)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8416c627-9baf-4efb-84e1-809b3e79a35c.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S8416c627-9baf-4efb-84e1-809b3e79a35c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/c2924e2d-d603-43e7-ad59-02aeb8b2e97b.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/Sc2924e2d-d603-43e7-ad59-02aeb8b2e97b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/6fc27fc5-87a8-4e1a-9c51-b7a1f91a1581.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S6fc27fc5-87a8-4e1a-9c51-b7a1f91a1581.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/4db2cda8-98dc-4888-bb0c-65d236029d81.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/S4db2cda8-98dc-4888-bb0c-65d236029d81.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/25ba370a-541a-48c9-8f0b-58bd25e6102e.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/S25ba370a-541a-48c9-8f0b-58bd25e6102e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/a36e600e-2889-493e-a7b2-0d1b9752d06c.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/Sa36e600e-2889-493e-a7b2-0d1b9752d06c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/450139ac-e63c-4fdb-8540-92d4f1bfedcc.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="275" src="//img1.mydrivers.com/img/20260326/S450139ac-e63c-4fdb-8540-92d4f1bfedcc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/ba4cc544-b0bc-45eb-abec-633c51cda099.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/Sba4cc544-b0bc-45eb-abec-633c51cda099.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/4d57f2af-ec14-4bc4-8d2a-6f4f6160a07f.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S4d57f2af-ec14-4bc4-8d2a-6f4f6160a07f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/95cd3180-61e4-42b1-bb7d-5236b37c7c14.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/S95cd3180-61e4-42b1-bb7d-5236b37c7c14.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/4eb626cc-5796-491e-ad26-05cf24c01bdd.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/S4eb626cc-5796-491e-ad26-05cf24c01bdd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/0dd85042-60bd-45e7-8255-75c642710eed.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="293" src="//img1.mydrivers.com/img/20260326/S0dd85042-60bd-45e7-8255-75c642710eed.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/550c8fca-7cb9-447b-b0ec-28ba3a178c38.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="309" src="//img1.mydrivers.com/img/20260326/S550c8fca-7cb9-447b-b0ec-28ba3a178c38.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/d2491376-e29f-4eff-ba9b-f762ba8ead31.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/Sd2491376-e29f-4eff-ba9b-f762ba8ead31.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/9fcf48f7-be2f-45df-a192-8c0f8dda768c.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S9fcf48f7-be2f-45df-a192-8c0f8dda768c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/dbb8f6bd-9ec8-498b-ae20-5e40637528c8.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="335" src="//img1.mydrivers.com/img/20260326/Sdbb8f6bd-9ec8-498b-ae20-5e40637528c8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/fa0bf68e-06b8-4f6d-9cff-84bc92c08d89.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/Sfa0bf68e-06b8-4f6d-9cff-84bc92c08d89.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8b790a7b-3051-408c-8df5-8ac4b475908a.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S8b790a7b-3051-408c-8df5-8ac4b475908a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/9b9286a9-d36d-4161-80a6-6bf797e61ba8.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S9b9286a9-d36d-4161-80a6-6bf797e61ba8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/41922399-6546-45d4-9a38-dd2d0de894d6.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S41922399-6546-45d4-9a38-dd2d0de894d6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/782ffd73-c8b9-40d8-9725-11d604bb0f74.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S782ffd73-c8b9-40d8-9725-11d604bb0f74.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8d640dcb-7d0a-40cb-8446-9cfbd5bed456.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="399" src="//img1.mydrivers.com/img/20260326/S8d640dcb-7d0a-40cb-8446-9cfbd5bed456.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8e3f0d3f-3f28-4697-94dc-5e24a085c1c5.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/S8e3f0d3f-3f28-4697-94dc-5e24a085c1c5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/1b4e1652-e5a3-4235-b600-de80cd3d4630.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/S1b4e1652-e5a3-4235-b600-de80cd3d4630.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/af0a91d7-d490-419f-b0d0-d71835762c3b.jpg" target="_blank"&gt;&lt;img alt="锐龙AI 9 H 465加持！华硕无畏Pro 16 2026款图赏" h="400" src="//img1.mydrivers.com/img/20260326/Saf0a91d7-d490-419f-b0d0-d71835762c3b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 09:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB1bWJqWFBJZ0dwSzdONUpNRVZZbDF3b3JRbnl3a2ZzUTVqeDh4NVZpMWFDRER2eWg4aUU3TEo5R01ic1JpNU50M1BQdGNWUC14dDJfRXdiVTk</guid></item><item><title>安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％ - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111834.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，&lt;strong&gt;近日，安谋科技Arm China在上海举办了一场别开生面的发布会，重磅推出&lt;span&gt;新一代“玲珑”VPU(视频处理单元) IP，包括V560、V760两款型号，代号“峨眉”。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/54379822-fd87-45aa-a752-f8ec6fad0a3d.png" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="162" src="//img1.mydrivers.com/img/20260326/S54379822-fd87-45aa-a752-f8ec6fad0a3d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/27decc28-6848-47d7-816b-108890dca5c7.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/S27decc28-6848-47d7-816b-108890dca5c7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为什么需要VPU？&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;虽然传统CPU、GPU都可以很好地处理视频编解码工作，但很多时候，专业的事儿要交给专业的人去做。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;一方面，独立的VPU可以更高效地专门对视频进行编解码，满足越来越复杂的工作，也有利于释放CPU、GPU资源去处理其他更复杂的任务负载。&lt;/p&gt;
+&lt;p&gt;另一方面，在智能驾驶、数据中心等很多场景中，需要很强的视频编解码处理能力，相比更高能耗和成本的GPU，这类任务交给VPU再合适不过。&lt;/p&gt;
+&lt;p&gt;VPU 的工作原理和流程比较简单，一般分为三个阶段，首先就是在摄像头、相机等设备采集原始视频数据之后进行&lt;strong&gt;前处理&lt;/strong&gt;，包括缩放、镜像、旋转、格式转换、OSD等等，接下来就是各种格式的&lt;strong&gt;编码&lt;/strong&gt;压缩，便于存储和传输，最后就是在需要的时候&lt;strong&gt;解码播放&lt;/strong&gt;，呈现给观众。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;“玲珑”V560/V760 VPU的任务，就是有效应对AI技术爆发所带来的海量视频数据编解码加速需求，为AI时代的视频应用提供核心技术支撑，满足从主流到新兴应用的实时编解码需求。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/2d96d609-26b8-4791-8db7-42907f8a1687.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="406" src="//img1.mydrivers.com/img/20260326/S2d96d609-26b8-4791-8db7-42907f8a1687.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安谋科技立足本土创新，坚持以自研业务技术创新与Arm技术授权相配合，积极服务中国本土客户，在国内的授权客户已超过460家，累计芯片出货量突破450亿颗。&lt;/p&gt;
+&lt;p&gt;安谋科技旗下拥有&lt;strong&gt;“星辰”CPU中央处理器、“周易”NPU神经处理器、“山海”SPU安全处理器、“玲珑”多媒体处理器&lt;/strong&gt;四大主力IP产品线，都在不断迭代升级。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/2e0181a6-3cf3-48e7-9fdc-d3108f348c6c.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/S2e0181a6-3cf3-48e7-9fdc-d3108f348c6c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有趣的是，安谋科技的四条产品线分别以&lt;strong&gt;蓝色、绿色、红色、紫色&lt;/strong&gt;为主色调，开发代号也都很有中国特色。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;比如“星辰”系列的开阳、天璇等都来自北斗七星，“山海”系列的嘉峪、居庸、白马、平型、雁门、函谷都来自著名关口，“玲珑”系列的峨眉、武当都来自中国名山。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;谈到这代VPU的代号峨眉，安谋科技Arm China多媒体处理器研发负责人周华表示，这缘起于一次登山团建，团队也深刻体会到：&lt;strong&gt;一个人也许可以走得很快，但一群人可以走得更远。追求前沿技术创新，犹如翻越一座又一座险峰，登顶路上离不开伙伴同行。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/f1d3ecad-74e9-4ab3-8104-a0a37885a47f.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/Sf1d3ecad-74e9-4ab3-8104-a0a37885a47f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/b0ff1041-446e-4afe-88ba-ab9195e72e26.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/Sb0ff1041-446e-4afe-88ba-ab9195e72e26.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/aff54ff3-447f-4de4-b3df-1686a6673dab.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/Saff54ff3-447f-4de4-b3df-1686a6673dab.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/580d3ee9-b988-430c-ad88-a92c7b8f90bb.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/S580d3ee9-b988-430c-ad88-a92c7b8f90bb.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/13555c22-318d-49d6-bdf2-0ebc24b1bbac.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/S13555c22-318d-49d6-bdf2-0ebc24b1bbac.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在聊产品之前，不得不赞赏一下此次发布会的布置非常别致。&lt;/p&gt;
+&lt;p&gt;现场以“玲珑”系列的紫色调为主，山峰造型对应峨眉的代号，众多六边形标牌寓意着产品是强大均衡的“六边形战士”。&lt;/p&gt;
+&lt;p&gt;就连媒体胸牌的造型也与众不同，都让人眼前一亮，看得出来是花了不少心思的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/f94a3e7b-0a0d-4155-bc26-6c7e2a8bdd00.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="412" src="//img1.mydrivers.com/img/20260326/Sf94a3e7b-0a0d-4155-bc26-6c7e2a8bdd00.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“玲珑”VPU如今已经发展到第五款产品。&lt;/p&gt;
+&lt;p&gt;最早是2021年的V5/V7，支持AVS2格式，次年的V6/V8加入了AV1，2024年的V510/V710首批支持H.266并加入了智能编码器，V520LE则是面向监控的衍生版本。&lt;/p&gt;
+&lt;p&gt;最新的“玲珑”V560/V760没有加入更多新的视频格式，依然支持包括H.266在内的各种主流标准，&lt;strong&gt;升级了编码能力&lt;/strong&gt;，同时在性能和能力上都实现了新的飞跃。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;它们采用&lt;/span&gt;&lt;span&gt;&lt;strong&gt;多核心、多格式编解码融合的可编程处理架构，单个核心就可以支持最高4K60FPS编码、8K30FPS解码。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;其中，“玲珑”V560最高配置双核心，面向4K及以下分辨率应用。&lt;/p&gt;
+&lt;p&gt;“玲珑”V760最高配置四核心，面向8K及以下分辨率应用。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/b86a6823-dccf-4a79-96cc-aa0e2b1dd85f.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/Sb86a6823-dccf-4a79-96cc-aa0e2b1dd85f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/60969f88-4bab-4906-8563-572acdbcb612.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/S60969f88-4bab-4906-8563-572acdbcb612.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/a8c3e4e7-ff06-46ec-8f49-14fee8fa5170.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/Sa8c3e4e7-ff06-46ec-8f49-14fee8fa5170.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;8K解码现场演示：&lt;/p&gt;
+&lt;p&gt;在高性能开发板上，基于“玲珑”V560/V760实时硬件解码，完美实现8K30FPS超高清视频流畅播放。&lt;/p&gt;
+&lt;p&gt;在搭载“玲珑”V560/V760的运动相机上，可以实现实时拍摄和成片效果，稳定不丢帧、低延迟。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/2dab0acd-5f4b-4ee6-aa87-7ba38a83d32b.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/S2dab0acd-5f4b-4ee6-aa87-7ba38a83d32b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/791d177d-97d9-463c-9689-58c51420ea47.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/S791d177d-97d9-463c-9689-58c51420ea47.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;“玲珑”V560/V760创新性地加入了集成CAE技术，也就是内容感知编码(Content Aware Encoder)，实现了“图像语义分析-像素级预处理-码率动态分配”的全链路智能优化，从而提升画质或降低码率。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;基于CAE技术，“玲珑”V560/V760的编码器可以自动感知图像内容，通过前向处理分析、图像语义分析、像素级预处理等阶段，进一步提升编码效率和质量。&lt;/p&gt;
+&lt;p&gt;它提供了3种不同面积的编码质量配置，支持5种编码预设。&lt;/p&gt;
+&lt;p&gt;虽然当下是个火爆的“AI时代”，很多沾边不沾边的技术、产品都要冠以AI之名，但是安谋科技还是非常朴实的，不然换个公司可能就这一技术直接宣传为“AI编码”了……&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/c0b28867-4c29-42e4-9d24-308b5401588d.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/Sc0b28867-4c29-42e4-9d24-308b5401588d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CAE技术现场演示：&lt;/p&gt;
+&lt;p&gt;前处理过程中，CAE可以智能识别到需要重点处理的敏感对象。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/0c3216cb-2ee1-41a7-8572-bed7ab25b060.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="417" src="//img1.mydrivers.com/img/20260326/S0c3216cb-2ee1-41a7-8572-bed7ab25b060.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然，安谋科技也在朝着真正的“AI编解码”前进。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;正在研发的下代“玲珑”V620/V820(代号“武当&lt;/strong&gt;&lt;strong&gt;)&lt;/strong&gt;&lt;strong&gt;”就会重点支持面向AI计算的编码，再往后的未来产品则会加入新的视频解码器、AI编码器。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;编码技术也会再次进化为真正的端到端方案，支持深度感知，实现全局最优。&lt;/p&gt;
+&lt;p&gt;通过&lt;strong&gt;大规模的AI训练&lt;/strong&gt;，可以更好地融合感知模型与AI应用对视频编解码的需求，更好地满足不同领域的不同场景。&lt;/p&gt;
+&lt;p&gt;安谋科技Arm China VPU研发总监黄鑫博士表示，为了应对不断推陈出新的AI技术与新兴场景，&lt;span&gt;&lt;strong&gt;“玲珑”VPU的架构未来将朝着AI端到端视频编码技术路径加速演进，逐步构建起“深度感知、全局最优”的AI VPU训练框架&lt;/strong&gt;&lt;/span&gt;，服务于更广泛的“AI+视频”应用场景。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/d797e050-9a83-417e-aa5d-82dfb0cf8fa3.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="405" src="//img1.mydrivers.com/img/20260326/Sd797e050-9a83-417e-aa5d-82dfb0cf8fa3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“玲珑”V560/V760 VPU还非常特别地采用了&lt;strong&gt;积木式堆叠技术&lt;/strong&gt;，支持客户根据不同应用场景的需要，灵活配置所需要的IP。&lt;/p&gt;
+&lt;p&gt;无论客户需要单独一种或者多种功能IP，无论需要多少核心、多少格式、多高精度、多大分辨率、多高质量、多少参考帧、多少前后期处理等等，都可以单独定制。&lt;/p&gt;
+&lt;p&gt;官方还提供配套的固件工具和软件，流片之后也能进行IP固件升级。&lt;/p&gt;
+&lt;p&gt;这样一来，客户就可以精准满足自己的需要，不必在用不到的地方上浪费成本，从而在系统层面实现PPA(性能/功耗/面积)的最优平衡。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/a7f5fe3e-5b8c-4fb8-972c-fa009d12e6f8.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/Sa7f5fe3e-5b8c-4fb8-972c-fa009d12e6f8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“玲珑”V560/V760 VPU堪称性能全面、优异，堪称全能“六边形战士”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 高性能：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;单核解码性能对比上代提升多达100％&lt;/strong&gt;&lt;/span&gt;，多核运行时的并行度更高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 高可靠性：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;具有强大的错误处理能力，&lt;span&gt;&lt;strong&gt;即便是丢包率高达20％，仍然可以纠错解码&lt;/strong&gt;&lt;/span&gt;，确保在网络不佳等不利条件下视频仍能正常播放，还能升级固件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 高质量低码率：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;同等视频码率下，&lt;span&gt;&lt;strong&gt;编码质量平均提升20％&lt;/strong&gt;&lt;/span&gt;；同等编码质量下，&lt;span&gt;&lt;strong&gt;视频码率平均降低20％，特定场景下甚至可以降低多达80％。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 低延时：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过条带级编解码控制技术，显著降低编解码的延时，而且编解码控制更灵活。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 多OS支持：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;驱动&lt;strong&gt;支持Linux、Android、Windows、RTOS&lt;/strong&gt;等多操作系统，硬件支持多系统、虚拟化应用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 信息安全：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;支持TrustZone内容保护、高级马赛克功能，并提供完善的隐私保护。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/d3a66271-7b5f-4157-9464-70eeb60a1c23.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/Sd3a66271-7b5f-4157-9464-70eeb60a1c23.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/2176e732-8806-4c3d-82a6-e1bf0c617040.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/S2176e732-8806-4c3d-82a6-e1bf0c617040.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“玲珑”V560/V760的这些优异表现，都源于安谋科技的核心技术优势，总结起来有五点：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 灵活可配置的架构：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;编码解码二合一，同时采用创新的多核处理架构，支持多核同任务、多核异任务，满足多样化场景需求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 集成CAE先进编码技术：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;创新性实现CAE编码技术，集成轻量化AI，大幅提升编码质量，显著降低视频码率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 覆盖H.266等主流编解码标准：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;集成多格式视频编解码器，编码支持H.266/265/264、JPEG等，解码支持/ H.266/265/264/263、AV1、VP9/8、MPEG-2/4、RealVideo 8/9/10、AVS/AVS+/AVS2/AVS3等，并支持YUV422高色彩格式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 多配置全隔离的硬件运行机制：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;硬件支持多OS虚拟化应用场景，硬件支持视频内容安全访问，满足复杂应用环境需求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;－ 条带级编解码控制：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过灵活的条带级编解码控制技术，显著降低编解码的延时。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8629a3ac-717f-41d2-8541-c0fbb8e6e14a.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="254" src="//img1.mydrivers.com/img/20260326/S8629a3ac-717f-41d2-8541-c0fbb8e6e14a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/545e26e1-08a7-4988-bd87-b339b41c11ee.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="450" src="//img1.mydrivers.com/img/20260326/S545e26e1-08a7-4988-bd87-b339b41c11ee.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;可以说无论是云侧、边侧、端侧，在任何场景下，“玲珑”V560/V760 VPU都能带来高效率、高质量、低能耗的视频编解码处理效果，为各种视频应用提供坚实的技术支撑。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在Edge AI领域，比如摄像机、智能手机、平板机、AI PC电脑、电视机、边缘服务器、线上会议等，“玲珑”V560/V760 VPU可以大幅降低视频码率和处理延时，显著降低功耗和芯片面积，实现用户体验、电池续航、芯片成本的最佳平衡。&lt;/p&gt;
+&lt;p&gt;在Physical AI领域，比如智能驾驶、智能座舱、机器人等，“玲珑”V560/V760 VPU支持多OS虚拟化应用，可增强系统集成灵活性与安全性，降低跨平台、多应用的开发集成成本与风险。&lt;/p&gt;
+&lt;p&gt;在Cloud AI领域，比如数据中心、视频转码、AI 服务器、云游戏等，“玲珑”V560/V760 VPU可以在保证数据准确性的同时，实现高性能、高编码质量、高吞吐量、低延时的视频处理。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;目前，“玲珑”V560/V760 VPU IP已完成首批客户授权，客户产品预计今年就会陆续量产。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/7cbc77c5-15f0-44fc-9b83-2cdcff53ceea.jpg" target="_blank"&gt;&lt;img alt="安谋科技发布“玲珑”V560/V760 VPU IP：解码性能翻倍、编码码率降低最多80％" h="400" src="//img1.mydrivers.com/img/20260326/S7cbc77c5-15f0-44fc-9b83-2cdcff53ceea.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 09:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9PZmdsMjc5UE9ORTNDbldiaVhKX2hpSVoxUUs4eDBzVEdvZjd1U25LbjBCMzBOM2diMmlnQ2ZrazFtSDd6TWFNTHBFVE5nWjBmYm10WW9HS0c</guid></item><item><title>最后两款设备停止支持，小米MIUI正式停更 - 观察者网</title><link>https://www.guancha.cn/economy/2026_03_26_811519.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p align="center"&gt;
 	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
 &lt;/p&gt;
@@ -44,7 +330,93 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Thu, 26 Mar 2026 08:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1FV1o3Yy1oM1EtN3JnSldESWtKaFg2eUt2bDZVQ0o2NmdZbXFaVlNPN3p1S1NHN3Z1clZtenBQRWR6U29yQWhrV0d3cmw1YklGdU1Uek9ZdEYxeFNaSDVqM0NUOVY</guid></item><item><title>分析称DLSS 5原本是6090专属！为AI泡沫不破才提前公布 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111817.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Thu, 26 Mar 2026 08:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1FV1o3Yy1oM1EtN3JnSldESWtKaFg2eUt2bDZVQ0o2NmdZbXFaVlNPN3p1S1NHN3Z1clZtenBQRWR6U29yQWhrV0d3cmw1YklGdU1Uek9ZdEYxeFNaSDVqM0NUOVY</guid></item><item><title>三星Galaxy Z Fold 8 Wide偷跑：安卓首款阔折叠屏来了 对标华为苹果 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111830.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;三星Galaxy Z Fold 8 Wide偷跑：安卓首款阔折叠屏来了 对标华为苹果&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-26 16:51:51  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111830-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，知名爆料人OnLeaks曝光了三星Galaxy Z Fold8 Wide的CAD渲染图。这不仅是三星旗下首款阔折叠屏手机，同时也是安卓阵营中第一款采用此类形态的折叠屏旗舰。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;从曝光的渲染图来看，三星Galaxy Z Fold8 Wide在展开后神似一台小型iPad。相比传统的折叠屏，阔折叠设计的核心优势在于更广阔的视野，无论是处理文档、分屏办公还是观看高清视频，其视觉体验都更胜一筹。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/d586cb8afcdb4abeb37fb77958f1bc65.png" target="_blank"&gt;&lt;img alt="三星Galaxy Z Fold 8 Wide偷跑：安卓首款阔折叠屏来了 对标华为苹果" h="405" src="//img1.mydrivers.com/img/20260326/s_d586cb8afcdb4abeb37fb77958f1bc65.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然而这种极致的屏幕比例也带来了显而易见的挑战，由于内屏变宽，其外屏的尺寸也会随之变得非常宽大。这虽然提升了外屏的显示面积，但也给用户的单手操作带来了不小的压力，握持感与传统手机大相径庭。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/e5d576448b814eccbd855d4b2d8fa7f3.png" target="_blank"&gt;&lt;img alt="三星Galaxy Z Fold 8 Wide偷跑：安卓首款阔折叠屏来了 对标华为苹果" h="405" src="//img1.mydrivers.com/img/20260326/s_e5d576448b814eccbd855d4b2d8fa7f3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在机身参数方面，三星Galaxy Z Fold8 Wide的工业设计依然精湛。&lt;span&gt;&lt;strong&gt;该机在展开状态下的单边厚度仅为4.9毫米，而折叠态的总厚度也控制在了9.8毫米，&lt;/strong&gt;&lt;/span&gt;在维持超宽显示面积的同时兼顾了轻薄感。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/78abb462b318448aa531ff8691d3bb80.png" target="_blank"&gt;&lt;img alt="三星Galaxy Z Fold 8 Wide偷跑：安卓首款阔折叠屏来了 对标华为苹果" h="405" src="//img1.mydrivers.com/img/20260326/s_78abb462b318448aa531ff8691d3bb80.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心配置上，该机将搭载高通第五代骁龙8至尊版旗舰平台，还内置了一块5000毫安时的大容量电池，并支持45W有线快充，后置则采用了双摄像头模组设计。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该机预计将在今年夏季正式亮相，它将直接对标华为Pura X2以及苹果传闻中的iPhone Fold，后两款产品也被曝将采用类似的阔折叠形态。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;随着各大巨头相继入局阔折叠赛道，大屏化与生产力化正成为折叠屏演进的重要趋势，这种兼具平板与手机便携性的设备，将为用户提供更多元化的选择。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/d02ef658fc4b4a46978d3218a6b820de.jpg" target="_blank"&gt;&lt;img alt="三星Galaxy Z Fold 8 Wide偷跑：安卓首款阔折叠屏来了 对标华为苹果" h="399" src="//img1.mydrivers.com/img/20260326/s_d02ef658fc4b4a46978d3218a6b820de.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 08:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB0bzBkbWFPTjVlZVExcUpnVU9sRTA0YXI2NmZic0FZbUU3TWp0aEVTc1BNY2R4VE0tNzVwaXY3VnRzd25XWkFmZ2YtNlZOUzB6a2czb3Baby0</guid></item><item><title>《红色沙漠》逆风翻盘！Steam评测回暖，开发商股价强势反弹 - 机核</title><link>https://www.gcores.com/articles/212519</link><description>&lt;body id="readabilityBody"&gt;&lt;div id="H5"&gt;&lt;p class="waf-nc-h5-mask"&gt;&lt;/p&gt;&lt;div id="WAF_NC_H5_WRAPPER" class="waf-nc-h5-wrapper"&gt;&lt;div class="waf-nc-h5-panel"&gt;&lt;img class="waf-nc-h5-icon" src="//img.alicdn.com/imgextra/i1/O1CN01L12MaQ1ZwfYKk7Yrc_!!6000000003259-2-tps-900-594.png" alt=""&gt;&lt;p id="tips_message_mobile" class="waf-nc-h5-description"&gt;为了更好的访问体验，请进行验证&lt;/p&gt;&lt;/div&gt;&lt;p id="h5_captcha-element" class="nc-container"&gt;&lt;/p&gt;&lt;button id="h5_button" class="login-btn"&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;p id="newTraceid"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>机核</author><pubDate>Thu, 26 Mar 2026 08:38:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiT0FVX3lxTFB0NUV0ZmtodTN0THV1aDhwRWwxdTFUdVNhX0s2UkxNT1UybUZha2lKaFBSZUtCRGJTWnN5RndTdE93QjlSSmJ4QnozU2dEM1U</guid></item><item><title>拒绝社交焦虑！微信：永不上线已读功能 要把回应权还给用户 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111826.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，今日，微信官方通过“微信派”公众号发文，就为什么微信没有已读功能作出正式回应：&lt;span&gt;&lt;strong&gt;“已读”意味着“看见了，但没回你”。这会带来猜忌焦虑，甚至催促对方立刻回复。没有已读功能，是把“回应与否”的选择权交回用户手中。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;与“已读”不同，“对方正在输入”属于有限度的状态提示，仅传达对方在线并准备回复的信息，既能保留对话的实时感，也给双方留出思考与沉默的空间，同时兼顾手机省电与节省流量的需求。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/fc2def08-3f46-401e-adb8-188b1f01afc5.png" target="_blank"&gt;&lt;img alt="拒绝社交焦虑！微信：永不上线已读功能 要把回应权还给用户" h="255" src="//img1.mydrivers.com/img/20260326/Sfc2def08-3f46-401e-adb8-188b1f01afc5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;针对网友 “千万别出已读功能” 的留言，微信官方直接回复 “一定不出”，明确表态不会上线该功能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;发布的文章中还解读了“对方正在输入”的触发条件：需同时满足用户发消息后，对方10秒内打开对话框，且在输入框内有打字动作（包含空格）。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/cfa132c5-1571-43dd-968f-3609d3b449a1.png" target="_blank"&gt;&lt;img alt="拒绝社交焦虑！微信：永不上线已读功能 要把回应权还给用户" h="159" src="//img1.mydrivers.com/img/20260326/Scfa132c5-1571-43dd-968f-3609d3b449a1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该提示依托“信令握手”机制实现，并非持续联网状态，因此会出现间断显示的情况。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，腾讯公司公关总监张军此前也曾多次明确表态，微信从上线之初就坚定不提供“已读”功能，&lt;strong&gt;未来也不会推出，核心原因是避免加重用户的心理负担与社交压力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/9c37a793-db3f-40d4-976e-b76f7a954ec5.png" target="_blank"&gt;&lt;img alt="拒绝社交焦虑！微信：永不上线已读功能 要把回应权还给用户" h="211" src="//img1.mydrivers.com/img/20260326/S9c37a793-db3f-40d4-976e-b76f7a954ec5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：王一&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 08:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4zdnlLSVc2ZVNRaXRLVk1qRUR1RXdYbGJqb25yQ0l0aHozdHg5ejVOa09uMENOclV2MlZfNzBYWjBqTklReUxNXzZFdHRhWTV0M1ZVYmVmOEs</guid></item><item><title>分析称DLSS 5原本是6090专属！为AI泡沫不破才提前公布 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111817.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;前一段时间我们曾报道，在GTC 2026上，英伟达公开展示了DLSS 5技术，但该技术却引发了外界相当程度的批评和质疑。&lt;span&gt;&lt;strong&gt;主要是因为DLSS 5会对画面风格产生巨大的改变（特别是人脸）。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="分析称DLSS 5原本是6090专属！为AI泡沫不破才提前公布" h="309" src="//img1.mydrivers.com/img/20260326/2c85366d-2ea2-482e-9c22-87a133f6f8d4.png" w="550"&gt;&lt;/p&gt;
@@ -63,7 +435,25 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBUN0pKYWJiZEhUZUdBbHExT2MxaVlZaWxpazBxaVFzY2pmVlprSkJyUWVUY3J1enpITzJscWIzODR1Z0xuOVJGM0xtdlVZQ3M5MFl1cVlFSUQ</guid></item><item><title>小米18 Ultra长焦全面升级：超大底+LOFIC+连续光变 史无前例 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111813.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBUN0pKYWJiZEhUZUdBbHExT2MxaVlZaWxpazBxaVFzY2pmVlprSkJyUWVUY3J1enpITzJscWIzODR1Z0xuOVJGM0xtdlVZQ3M5MFl1cVlFSUQ</guid></item><item><title>官方：我国是全球AI专利最大拥有国 核心产业规模超1.2万亿元！ - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111815.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，外交部发言人林剑今天公开表示，中国是全球AI专利最大拥有国。&lt;/p&gt;
+&lt;p&gt;日前，博鳌亚洲论坛年会发布报告指出，全球人工智能发展重心从欧美向亚洲转移，中国已形成全链条成熟度与规模化落地能力。&lt;/p&gt;
+&lt;p&gt;有记者在今天的发布会上提问，今年以来中国人工智能领域亮点频现，Seedance2.0视频生成模型以“电影级”效果风靡全球，MiniMax全模态大模型广受好评。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对此，林剑表示，短短几年内，人工智能在中国从展会走进寻常百姓家，赋能千行百业。当前中国已是全球人工智能专利最大拥有国，核心产业规模超1.2万亿人民币，企业数量超过6200家，成为全球智能化转型的重要引擎。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;今年的《政府工作报告》首次提出“打造智能经济新形态”，为培育智能新模式、壮大增长新动能指明了前进方向。 &lt;/p&gt;
+&lt;p&gt;他指出，人工智能是全人类的共同财富。中国人工智能“百花齐放”既是推动高水平科技自立自强的成果，也得益于中国始终秉持共商共建共享理念，鼓励开源开放，促进人工智能的可及性。&lt;/p&gt;
+&lt;p&gt;中国还倡议成立世界人工智能合作组织，发布《“人工智能+”国际合作倡议》，为人工智能全球治理贡献中国方案。我们愿与各方深化交流合作，携手打造开放包容、互利共赢的发展环境，让人工智能真正成为普惠向善的国际公共产品。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/92ff5a8bc17a4f799677b90a548e90a4.jpg" target="_blank"&gt;&lt;img alt="官方：我国是全球AI专利最大拥有国 核心产业规模超1.2万亿元！" h="399" src="//img1.mydrivers.com/img/20260326/s_92ff5a8bc17a4f799677b90a548e90a4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9HRjJEVnFXeWMzai1HQUVuZHdKTFIzdXI1NXQ4aTR6bk9mdmJ6eG82TVZGck5xRURKdDlXZ2tsSkFXRjVIOWtkZjJlcTZZNlJITUs0SFdNWXc</guid></item><item><title>小米18 Ultra长焦全面升级：超大底+LOFIC+连续光变 史无前例 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111813.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;小米18 Ultra长焦全面升级：超大底+LOFIC+连续光变 史无前例&lt;/p&gt;
           
@@ -128,7 +518,29 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9iZTEwLTJhdkdBelJETDB6UDUwbnRBXzBES0pTLVRyN0tGV2xZTDdndFdJRXNIUTlndktPclpTYURjRWUwODI3NFZ3SEdtMzJ5MFJ2V0taRU0</guid></item><item><title>全球首条！国产无FMM第8.6代AMOLED生产线厂房建设交付 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111811.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9iZTEwLTJhdkdBelJETDB6UDUwbnRBXzBES0pTLVRyN0tGV2xZTDdndFdJRXNIUTlndktPclpTYURjRWUwODI3NFZ3SEdtMzJ5MFJ2V0taRU0</guid></item><item><title>iPhone半夜自动打电话，苹果官网发文回应 - 新浪财经</title><link>https://finance.sina.com.cn/tech/roll/2026-03-26/doc-inhsicuw2822508.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody" data-sudaclick="blk_content"&gt;
+				
+
+
+
+
+
+&lt;p cms-style="font-L"&gt;3月26日消息，苹果官网近日发布信息，回应此前消费者反映的手机半夜自动打电话的问题。&lt;/p&gt;&lt;p cms-style="font-L"&gt;苹果方面称，近期出现的一个问题影响到了运行iOS 26并使用双SIM卡的iPhone机型，这个问题可能导致了少数用户的iPhone 意外拨打呼出电话。可将iPhone更新到iOS 26.3或更高版本以解决这个问题。&lt;/p&gt;&lt;p cms-style="font-L"&gt;官方详细描述道，如果在运行iOS 26的iPhone上使用双SIM卡，轻点一个电话号码时，iPhone会显示一个对话框，提示选择要使用的SIM卡。如果没有进行选择，并长时间闲置设备，例如在夜间充电时，可能会导致系统向之前轻点过的电话号码拨打电话。这一行为是软件问题导致的，已在iOS26.3中解决。&lt;/p&gt;&lt;p cms-style="font-L"&gt;据都市快报报道，日前，有网友写下自己凌晨的一段经历。“睡得正香，突然听到一阵电话的背景音乐和语音‘您拨打的用户暂时无人接听’被惊醒。起来一看，竟然是我的手机自己在打电话，真的吓懵了。马上去社交平台上查，有这个问题的人还不少，有人给出解决方案：升级系统。半夜里被吓醒，升级系统，谁懂啊？”&lt;/p&gt;&lt;p cms-style="font-L"&gt;社交平台上，还有很多其它反映类似经历的网友。有网友说：“大半夜苹果手机突然自己给别人打电话，打了47分钟，把我吓醒了！”&lt;/p&gt;&lt;p cms-style="font-L"&gt;经查询发现，去年11月就有多名用户在社交平台反映，更新iPhone手机至iOS 26.0.1版本后，手机在锁屏状态下半夜自动拨打电话给陌生人，被呼叫对象包括快递员、商家客服等。部分未更新至最新系统的老款iPhone也出现了类似问题。&lt;/p&gt;&lt;p cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;iOS 26是&lt;/font&gt;&lt;font cms-style="font-L"&gt;苹果&lt;/font&gt;&lt;font cms-style="font-L"&gt;公司&lt;/font&gt;&lt;font cms-style="font-L"&gt;于2025年6月10日在全球开发者大会发布的移动操作系统，采用年份命名取代传统版本号，适配&lt;/font&gt;&lt;font cms-style="font-L"&gt;iPhone 11&lt;/font&gt;&lt;font cms-style="font-L"&gt;系列、&lt;/font&gt;&lt;font cms-style="font-L"&gt;iPhone SE 2及后续机型。该系统引入“&lt;/font&gt;&lt;font cms-style="font-L"&gt;液态玻璃&lt;/font&gt;&lt;font cms-style="font-L"&gt;”设计语言，重构主屏幕、锁屏及原生应用界面。&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;根据官方今年2月公布的数据，过去四年推出的iPhone机型中，74%已升级至iOS 26，剩余20%仍在使用iOS 18，6%运行更早版本系统。对比来看，iOS 18上线127天后，同期机型普及率达76%；iOS 17上线139天后，同期机型普及率也为76%。若涵盖所有iPhone机型，iOS 26当前普及率为66%，略低于iOS 18同期的68%，与iOS 17同期的66%持平。&lt;/p&gt;&lt;p cms-style="font-L"&gt;有分析称，iOS 26普及率略低存在客观原因——该系统不再支持iPhone XS、iPhone XS Max和iPhone XR，这三款机型已被列为过时产品，只能停留在旧系统，而iOS 18则延续了对前代机型的全面支持，这一差异直接影响了整体更新率。此外，部分用户因担忧续航下滑、性能下降等问题，对升级持谨慎态度，也间接放缓了更新节奏。&lt;/p&gt;
+
+
+
+
+                
+
+&lt;p id="left_hzh_ad"&gt;
+	                    
+                    
+                    
+	                &lt;/p&gt;
+         
+                
+            &lt;/div&gt;
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 26 Mar 2026 07:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMif0FVX3lxTE9pdGdRemNFeFdjVzVNVGRIRnE3UFBqRGlnUHBKazFub1VWZGgxdXVVWjItZURsWmV2RldnNEFCQkVjcy1DZDBGemlYNl9ENnhEc0NpWUZWa1dfUml3OE9fXzNSOWVwS3I1VVo4bjczdFJ2WXI4Um8wU0d3RnlaQUU</guid></item><item><title>全球首条！国产无FMM第8.6代AMOLED生产线厂房建设交付 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111811.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;strong&gt;快科技3月26日消息，据维信诺官微介绍，近日合肥国显科技有限公司第8.6代AMOLED生产线项目在主厂房举行洁净室清扫仪式，&lt;span&gt;标志着全球首条搭载无FMM技术（ViP）的高世代AMOLED生产线已顺利完成厂房建设交付，全面转入工艺设备搬入及调试阶段，为产线后续顺利量产与运营奠定坚实基础。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;该产线位于合肥新站高新区，由合肥国显负责建设和运营，该公司由维信诺与合肥市投资平台出资设立，维信诺与合肥国显将深度协同。&lt;/p&gt;
@@ -172,7 +584,70 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBlTFZqU0kxN2dLRFE4V1lBcVVNZ3JCREpHZXhRSlNZNTNXZ2wydUdTWDNsV0Y4RGd4UFlrdnVLQjBCQ01MaFg1aUZUNFMxMWpBV2ZEUlN3NGs</guid></item><item><title>11名xAI创始成员仅剩1人！马斯克亲自接管IPO工作 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111798.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBlTFZqU0kxN2dLRFE4V1lBcVVNZ3JCREpHZXhRSlNZNTNXZ2wydUdTWDNsV0Y4RGd4UFlrdnVLQjBCQ01MaFg1aUZUNFMxMWpBV2ZEUlN3NGs</guid></item><item><title>19999元！尼康70-200mm新一代大三元镜头开售 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111799.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;19999元！尼康70-200mm新一代大三元镜头开售&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-26 15:25:52  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111799-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，上个月，尼康发布尼克尔Z 70-200mm f/2.8 VR S Ⅱ长焦变焦镜头，&lt;strong&gt;今天这款镜头正式开售，市场参考价格19999元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该镜头与2025年8月发布的尼克尔Z 24-70mm f/2.8 Ⅱ共同构成第二代尼克尔Z大三元”镜头中的两位核心成员。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其兼容全画幅/FX格式微单，隶属S-Line系列，拥有70-200mm焦段与恒定f/2.8大光圈，延续大三元高规格配置。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此次换代核心实现轻量化突破，镜头重量约998g，较前代减重26%，总长度缩短12mm，是同规格中轻量化表现优异的产品，大幅提升手持拍摄灵活性。&lt;/p&gt;
+&lt;p&gt;对焦性能迎来飞跃，搭载平滑高速音圈马达，&lt;strong&gt;对焦速度达前代3.5倍，对焦跟踪性能提升40%&lt;/strong&gt;，能精准捕捉体育赛事等动态场景。&lt;/p&gt;
+&lt;p&gt;光学配置上，镜头搭载6类特殊镜片，新增加强型低色散与非球面低色散镜片，减少镜片总数的同时有效校正色差，兼顾轻量化与高水准成像。&lt;/p&gt;
+&lt;p&gt;此外，镜头支持最高6档减震效果，广角端最近对焦距离0.38m、长焦端0.8m，还新增滤镜调节窗口、配备控制环挡位开关，三脚架连接环兼容阿卡型云台，实用性全面升级。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/91981859da7f438c82ce3a2be09b8eda.png" target="_blank"&gt;&lt;img alt="19999元！尼康70-200mm新一代大三元镜头开售" h="830" src="//img1.mydrivers.com/img/20260326/s_91981859da7f438c82ce3a2be09b8eda.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 07:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9MSEN5Nl9TMUdITHJ6OTJUaU1FeEk1UGNESFg3VDdNemVRd3RvQnI1TW4ydXBtSkJjcW1xWnBrM2FDOVpkcmltRVhtdFhyMmxNTkpvVXhybjc</guid></item><item><title>11名xAI创始成员仅剩1人！马斯克亲自接管IPO工作 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111798.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技3月26日消息，据媒体报道，近日，马斯克旗下xAI联合创始人马努埃尔·克罗伊斯即将离职。&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;至此，xAI三年前11名联合创始人中已有10名出走，仅剩罗斯·诺丁一人留任。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -506,7 +981,27 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 06:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA3ZlZTVFZEZHhEN00zTExFNnkzYWFTWlRNdkhpZW9mX01MMmI0VXppcXpfWGlMWER0ZEFFcXk4aFZuWlgxbHpYd0FlM2xsVXM3RGhJMGZ1emI</guid></item><item><title>雷蛇2026款灵刃16发布：14.9mm超薄机身 顶配Ultra 9+RTX 5090 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111767.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 06:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA3ZlZTVFZEZHhEN00zTExFNnkzYWFTWlRNdkhpZW9mX01MMmI0VXppcXpfWGlMWER0ZEFFcXk4aFZuWlgxbHpYd0FlM2xsVXM3RGhJMGZ1emI</guid></item><item><title>苹果评估2亿像素！照搬OPPO方案 比安卓慢了一整年 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111779.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月26日消息，根据调研机构IDC发布的报告，2026年中国手机市场将正式迈入2亿像素镜头的全面普及阶段。届时，双2亿像素的硬件方案将不再是少数机型的专属，而是会演变为高端影像旗舰的标准配置。&lt;/p&gt;
+&lt;p&gt;在国产品牌激烈的影像竞赛带动下，苹果也开始对2亿像素表现出浓厚兴趣。供应链消息显示，&lt;span&gt;&lt;strong&gt;iPhone正在评估一款1/1.12英寸的大底传感器，其像素量达到了2亿级别，并预计在明年正式商用。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/35babed2a1cc4836aa9ae2a162488db0.jpg" target="_blank"&gt;&lt;img alt="苹果评估2亿像素！照搬OPPO方案 比安卓慢了一整年" h="417" src="//img1.mydrivers.com/img/20260326/s_35babed2a1cc4836aa9ae2a162488db0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;值得关注的是，这一影像方案将在OPPO Find X9 Ultra上先行采用。这意味着在顶级影像产品的定义与节奏上，以OPPO为代表的国产手机厂商已经领先了苹果公司整整一年时间，占据了市场先机。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;相比目前主流的5000万像素，2亿像素图像传感器能带来质变的解析力提升。用户在拍摄照片后，可以根据需求进行大比例的随意放大和后期剪裁，而画质依然能保持细腻，这为摄影创作提供了极大的灵活性。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/1fc091ddcc8e4bffb0191e718b2d9ec7.jpg" target="_blank"&gt;&lt;img alt="苹果评估2亿像素！照搬OPPO方案 比安卓慢了一整年" h="399" src="//img1.mydrivers.com/img/20260326/s_1fc091ddcc8e4bffb0191e718b2d9ec7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;得益于像素多合一技术的加持，2亿像素传感器在日常拍摄中能兼顾高解析力与大感光面积的优势。这种原生的高像素硬件与低像素传感器通过AI技术插值出的照片有着本质区别，硬件层面的差距是纯算法难以跨越的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，在视频拍摄领域，2亿像素也是实现高质量8K视频录制的理想解决方案。随着超高清视频需求的增长，这也是各大品牌纷纷加入2亿像素赛道的重要原因，硬件规格的竞争已进入白热化阶段。&lt;/p&gt;
+&lt;p&gt;展望未来，高像素与大底传感器的深度结合将彻底改变移动影像的格局。2亿像素不再只是营销噱头，而是会成为高端旗舰的标配。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8398e6c242a642d4ad5f05601d7407e5.jpg" target="_blank"&gt;&lt;img alt="苹果评估2亿像素！照搬OPPO方案 比安卓慢了一整年" h="210" src="//img1.mydrivers.com/img/20260326/s_8398e6c242a642d4ad5f05601d7407e5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 06:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9GVnduY1l0cW4wUHQ1VmtvSnp4ZmVmVnk1aTRjRjR3WG5JMlBhakRSR1JQeGNDX0hCYVFVazhyNlZxY3NhdWJGM01IRElxR0lHeG51X0NDbHo</guid></item><item><title>雷蛇2026款灵刃16发布：14.9mm超薄机身 顶配Ultra 9+RTX 5090 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111767.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技3月26日消息，&lt;strong&gt;雷蛇推出2026款灵刃16，延续了其作为品牌史上最薄游戏本的定位。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;机身采用一体成型T6铝合金，经过精密铣削，最薄处仅14.9毫米，重量轻至2.14千克，在保证强度的同时大幅压缩体积，兼顾坚固耐用与便携性。喷砂与阳极氧化处理带来细腻质感，防指纹涂层有助于保持机身整洁。&lt;/p&gt;
@@ -2078,7 +2573,7 @@
   
 &lt;/body&gt;
 
-</description><author>OSCHINA</author><pubDate>Wed, 25 Mar 2026 17:38:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5Bb3UxY2RNSnBCQnJMVW8wWjJ3R1ZxWjVQcUxwN2hkaEF4alRVUTA0UG83ckhJM1phMGp2OXd5SjRWZ09MS0hTSkU1UQ</guid></item><item><title>特朗普总统任命顶尖科技领袖加入人工智能与科学顾问委员会 - 美国之音</title><link>https://www.voachinese.com/a/president-trump-taps-top-tech-leaders-for-ai-council-20260325/8130851.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="content-floated-wrap fb-quotable"&gt;
+</description><author>OSCHINA</author><pubDate>Wed, 25 Mar 2026 17:38:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5Bb3UxY2RNSnBCQnJMVW8wWjJ3R1ZxWjVQcUxwN2hkaEF4alRVUTA0UG83ckhJM1phMGp2OXd5SjRWZ09MS0hTSkU1UQ</guid></item><item><title>梅拉尼娅携人形机器人现身白宫，提倡拟人化AI投入教育 - 纽约时报中文网</title><link>https://cn.nytimes.com/world/20260326/melania-trump-robot/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;第一夫人和机器人都赞扬了将机器人进一步融入儿童教育和社会生活的益处。在现代第一夫人倡议的历史中——包括创办全国图书节（劳拉·布什）、调整食物金字塔（米歇尔·奥巴马）、倡导免费社区学院（吉尔·拜登），特朗普夫人将人形机器人引入教育政策的倡议尚属首次。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;span&gt;Figure 3发表了简短致辞，并用多种语言致以问候。它那光滑的黑白外观与第一夫人的品牌美学非常契合——后者包括一本以自己命名的&lt;a href="https://www.nytimes.com/2024/10/04/us/politics/melania-trump-book-abortion-2020-election.html"&gt;咖啡桌书&lt;/a&gt;和&lt;a href="https://www.nytimes.com/2025/12/17/us/politics/melania-trump-movie-trailer.html" title="Link: https://www.nytimes.com/2025/12/17/us/politics/melania-trump-movie-trailer.html"&gt;电影&lt;/a&gt;。更巧的是，它的亮面塑料头部侧面还醒目地印着&lt;a rel="noopener noreferrer" target="_blank" href="https://x.com/MELANIAJTRUMP/status/2036878976996569437?s=20" title="Link: https://x.com/MELANIAJTRUMP/status/2036878976996569437?s=20"&gt;“MELANIA”&lt;/a&gt;字样。&lt;/span&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;在Figure 3小心翼翼地摇晃着离开后，特朗普夫人环顾四周，对大家说：未来看起来很像他们刚刚目睹的场景。&lt;/p&gt;&lt;p class="article-paragraph"&gt;“人工智能的未来是‘拟人化’的，”她告诉听众，“它将以人类的形态出现。很快，人工智能将从我们的手机转向能够提供实用功能的人形机器人。”&lt;/p&gt;&lt;p class="article-paragraph"&gt;她邀请客人们想象这样一个未来：一个机器人哲学家来教育孩子。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;figure class="article-inline-photo large"&gt;&lt;figcaption&gt;&lt;span&gt;机器人头部的屏幕上显示着第一夫人的名字。&lt;/span&gt; &lt;cite&gt;Heather Diehl/Getty Images&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;“想象一个名叫‘柏拉图’的人形教育者，”她说，“对古典学研究的获取现在变得即时可得：文学、科学、艺术、哲学、数学和历史。人类全部知识体系都能在家中舒适的环境中获得。”&lt;/p&gt;&lt;p class="article-paragraph"&gt;第一夫人此前就曾谈及机器人技术的可能性。她也警告过过度依赖技术的危险。去年秋天，在一群负责技术和人工智能的政府官员陪同下，特朗普夫人的警告带有几分严肃意味。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Wed, 25 Mar 2026 17:32:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9VSzlyRUM2V19PU1FaZ29YcS1YR3hTRS1wMGFjdUFxNC1GVW9XUk9QS2RyRVNFRXhUbmtRcjBxdDJ2RGdQWHJpdGlUT1V2ZGx6VDdWbFBNUFpuMTh1YnZQZzdJcmJJOVE1ZFE</guid></item><item><title>特朗普总统任命顶尖科技领袖加入人工智能与科学顾问委员会 - 美国之音</title><link>https://www.voachinese.com/a/president-trump-taps-top-tech-leaders-for-ai-council-20260325/8130851.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="content-floated-wrap fb-quotable"&gt;
 &lt;div class="wsw"&gt;
 &lt;p&gt;星期三(3月25日)，唐纳德·特朗普(Donald Trump)总统任命了一批顶尖的科技界和商界高管，担任一个顾问小组的成员。该小组的职责是就科学、技术、教育及创新政策向总统提出建议。&lt;/p&gt;&lt;p&gt;总统科学技术顾问委员会(PCAST)的首批24名成员包括Meta Platforms首席执行官马克·扎克伯格(Mark Zuckerberg)、英伟达(Nvidia)首席执行官黄仁勋(Jensen Huang)、谷歌(Google)联合创始人谢尔盖·布林(Sergey Brin)、超威半导体公司(AMD)首席执行官苏姿丰(Lisa Su)，以及甲骨文(Oracle)的两名高层主管拉里·埃里森(Larry Ellison)和萨弗拉·凯茨(Safra Catz)。&lt;/p&gt;&lt;p&gt;该委员会将由白宫人工智能与加密货币事务主管戴维·萨克斯(David Sacks)与白宫科技政策办公室主任迈克尔·克拉特西奥斯(Michael Kratsios)共同担任负责人。&lt;/p&gt;&lt;p&gt;白宫在星期三发布的一份声明中表示，该委员会“汇聚了全美科学技术领域的顶尖精英，旨在向总统提供建议，并就如何巩固美国在科技领域的领导地位提出具体建议。”&lt;/p&gt;&lt;p&gt;声明指出，该委员会将重点关注新兴技术给美国劳动力市场带来的机遇与挑战，并致力于确保所有美国人都能在这个“创新黄金时代”中实现繁荣发展。&lt;/p&gt;&lt;p&gt;根据去年1月签署的设立该委员会的&lt;a href="https://www.whitehouse.gov/presidential-actions/2025/01/presidents-council-of-advisors-on-science-and-technology/" target="_blank" class="wsw__a"&gt;行政命令&lt;/a&gt;，该顾问小组将定期举行会议，并向总统提供必要的科学与技术信息，以此为涉及美国经济、劳工、国家安全与国土安全以及其它相关议题的公共政策制定提供决策依据。&lt;/p&gt;&lt;p&gt;委员会其他成员还包括：风险投资家马克·安德里森(Marc Andreessen)、戴尔科技(Dell Technologies)首席执行官迈克尔·戴尔(Michael Dell)、能源领域高管雅各布·德威特(Jacob DeWitte)和鲍勃·芒加德(Bob Mumgaard)；加密货币交易平台硬币库(Coinbase)联合创始人弗雷德·埃尔萨姆(Fred Ehrsam)，以及另外两位企业家戴维·弗里德伯格(David Friedberg)和约翰·马蒂尼斯(John Martinis)。&lt;/p&gt;&lt;p&gt;白宫表示，剩余的11名成员将在近期内任命，而关于该委员会首次会议的具体信息将于稍后公布。&lt;/p&gt;&lt;p&gt;在上个月于印度举行的AI峰会上，白宫科技政策办公室主任克拉特西奥斯表示，美国四大AI巨头计划今年在AI基础设施上投入近7000亿美元；他指出，这一数字是当年将美国宇航员送上月球表面所需成本的三倍。&lt;br&gt;&lt;br&gt;他在对新德里峰会的与会者讲话时说：“在使用美国领先AI平台的数十亿用户中，超过四分之三的用户是从你们所在的国家，即美国境外登录使用的。”&lt;/p&gt;&lt;p&gt;克拉特西奥斯表示，美国政府“完全”反对对AI实行全球统一治理；他同时警告称，如果这项技术的应用受制于官僚体制和集权控制，将无法引领人类走向更光明的未来。&lt;/p&gt;
 &lt;/div&gt;
@@ -2253,503 +2748,4 @@
          
     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 16:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9nQ1N4dXdRQzR1QkZyVWVGMnN1UTdRNWttaFZSd2N0SXdXZkhQZXFnb3hhNmdnVWJycnVRel9XSmE5UldUUHYtZTdUTmx0RmdUdzluMjdMR2c</guid></item><item><title>特朗普任命扎克伯格、黄仁勋等13人 加入科技顾问委员会 - 联合早报</title><link>https://www.zaobao.com.sg/news/world/story20260325-8791820</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="my-[16px] text-[14px]"&gt;&lt;div class="relative flex flex-col "&gt;&lt;p class="mx-auto bg-[#fff] pt-[16px] text-center text-secondary"&gt;美国白宫星期三宣布，总统特朗普已任命Meta创始人兼总裁扎克伯格（左）等13名首批成员加入总统科学技术顾问委员会。 （路透社）&lt;/p&gt;&lt;button class=" absolute right-[8px] top-[8px] max-h-max cursor-pointer"&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;美国白宫星期三（3月25日）宣布，总统&lt;a href="https://www.zaobao.com.sg/keywords/te-lang-pu?ref=article-inline" target="_blank"&gt;特朗普&lt;/a&gt;已任命Meta创始人兼总裁扎克伯格、英伟达首席执行官黄仁勋、甲骨文创始人埃里森等多名科技巨头高管加入总统科学技术顾问委员会，就人工智能政策等问题向政府建言。 &lt;/p&gt;&lt;p&gt;综合路透社和法新社报道，被委任加入总统科学技术顾问委员会（PCAST）的首批13名成员均来自业界，除了上述三人，还包括谷歌联合创始人布林，以及戴尔科技创始人戴尔。&lt;/p&gt;&lt;p&gt;特朗普将确保美国在人工智能领域保持领先，视为他第二任期的核心优先事项，并将人工智能定位为与中国战略竞争的关键战场。去年上任数日后，特朗普即要求联邦机构制定“人工智能行动计划”，以减少监管障碍、加速私营部门创新。&lt;/p&gt;&lt;p&gt;白宫说，这个委员会最终成员人数可能多达24人，将在制定美国应对全球人工智能竞争的政策方面发挥关键作用，并显示政府与大型科技公司之间的关系进一步趋于紧密。&lt;/p&gt;&lt;p&gt;扎克伯格在发给法新社的一份声明中说：“美国有机会在人工智能领域引领世界。我很荣幸能加入总统科学技术顾问委员会，并与其他行业领袖携手，共同推动实现这一目标。”&lt;/p&gt;
     
-  &lt;p&gt;委员会将由白宫AI事务负责人萨克斯（David Sacks）和科学技术顾问克拉齐奥斯（Michael Kratsios）担任联席主席。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Wed, 25 Mar 2026 15:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBkbGJJdC1tcU1VNE5jT1J1NTJOUlUwQUN2enBuSmUyR0J1Q05IMF9OQWg4N3BDU05tUkZiNmNKYWpzRzlBSGVsV2dZSjF2Vk9aNFJCaGZOUm5Ua19hUGdGTlJ6WDdKcDZKX1E</guid></item><item><title>AI“抢饭碗”，硅谷大裁员！一线工程师戳破真相：AI效率被严重高估，人类被倒逼成审核员，工作量是过去10倍 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3768390</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 25 Mar 2026 15:20:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE03UUp2cHp6QUREMFJ5SUpCbWtiM0RRUGZlVndLMVg0aURYUUhxUVFCUXR2aFdsSXRLQ2JjRFpSc0hXbm9QN3E4WmJkeTQ1c1l3Q0M4</guid></item><item><title>谷歌发布KV缓存压缩技术，存储需求预期遭冲击，美股存储板块集体下挫 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3768391</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 25 Mar 2026 14:50:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE0wMlZDbHZJM2hBTTZrUlZQVVBST21VdTBQUktaLWRaczhoNXJMSUVic0dER1V3WU1uVlRQRU53OFQ3ODFvT2YydjhnZzU0bVBoUDZn</guid></item><item><title>苹果iOS 26.4正式版上线：AI依旧没戏 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111640.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;Apple正式推送iOS/iPadOS 26.4正式版系统更新，面向包括iPhone 17在内的多款设备开放。本次升级重点围绕影音娱乐、系统体验与车载生态展开，不过备受关注的AI版Siri并未在此次版本中上线。&lt;/p&gt;
-&lt;p&gt;具体来看，系统首先在细节体验上进行补强。iOS 26.4新增了8个Emoji表情，涵盖虎鲸、长号、芭蕾舞者等元素，进一步丰富用户日常沟通场景。同时键盘输入准确率也得到优化，在高频输入场景下更为稳定。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/d390c684-0fae-4a35-a809-d81d7237835f.jpg" target="_blank"&gt;&lt;img alt="苹果iOS 26.4正式版上线：AI依旧没戏" h="300" src="//img1.mydrivers.com/img/20260325/Sd390c684-0fae-4a35-a809-d81d7237835f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在影音娱乐方面，Apple Music迎来一轮较大幅度升级。新版本引入Playlist Playground（测试版），可根据用户输入的文本描述自动生成歌单；“音乐会”功能则强化本地演出发现能力。此外，系统还支持离线音乐识别，并新增环境音乐小组件，配合全屏动态背景，整体沉浸感进一步提升。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/cbb095a5-171e-427c-be77-775f6e265516.jpg" target="_blank"&gt;&lt;img alt="苹果iOS 26.4正式版上线：AI依旧没戏" h="337" src="//img1.mydrivers.com/img/20260325/Scbb095a5-171e-427c-be77-775f6e265516.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;播客体验同样迎来明显进化。新版Apple Podcasts支持HLS视频播放，并引入自适应流媒体与动态广告机制，用户可在音频与视频之间无缝切换，还能将视频播客下载至本地离线观看。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/240b61b1-ae21-490f-a00d-542acc951ea8.jpg" target="_blank"&gt;&lt;img alt="苹果iOS 26.4正式版上线：AI依旧没戏" h="400" src="//img1.mydrivers.com/img/20260325/S240b61b1-ae21-490f-a00d-542acc951ea8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;系统功能层面，苹果对无障碍、提醒事项、家庭共享等模块进行了多项优化。例如新增“减少强光效果”“减弱动态效果”等设置，提升对不同用户群体的适配性；家庭共享也支持成员使用独立支付方式，降低使用门槛。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/b724c65d-1546-451f-924f-7be9af9e9a8a.jpg" target="_blank"&gt;&lt;img alt="苹果iOS 26.4正式版上线：AI依旧没戏" h="340" src="//img1.mydrivers.com/img/20260325/Sb724c65d-1546-451f-924f-7be9af9e9a8a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;值得关注的是，车载生态成为本次更新的一大亮点。Apple CarPlay首次开放第三方AI语音助手接入权限，包括ChatGPT、Gemini、Claude等模型均可接入，但系统强制采用纯语音交互形式，以确保驾驶安全。同时，CarPlay小组件生态继续扩展，支持环境音乐快速调用。&lt;/p&gt;
-&lt;p&gt;此外，iPadOS 26.4优化了多窗口管理逻辑，健康应用新增“平均就寝时间”统计，系统还默认开启“失窃设备保护”功能，进一步提升安全性。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/bdb31b26-0561-4087-9666-88088ca33897.jpg" target="_blank"&gt;&lt;img alt="苹果iOS 26.4正式版上线：AI依旧没戏" h="300" src="//img1.mydrivers.com/img/20260325/Sbdb31b26-0561-4087-9666-88088ca33897.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;需要注意的是，尽管苹果已与Google展开合作，但基于Gemini模型的新版Siri仍未在本次更新中实装，预计将在后续版本中推出。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;编辑点评：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从iOS 26.4的更新方向来看，苹果仍在稳步推进系统体验优化，尤其是在音乐、播客与车载场景上的整合更加深入。&lt;/p&gt;
-&lt;p&gt;不过用户期待已久的AI能力仍处于“预告阶段”，短期内难以全面落地。随着后续版本逐步引入大模型能力，iOS生态的智能化水平或将迎来真正拐点。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/6eefcfd030de4074acace554db29f0c8.jpg" target="_blank"&gt;&lt;img alt="苹果iOS 26.4正式版上线：AI依旧没戏" h="399" src="//img1.mydrivers.com/img/20260325/s_6eefcfd030de4074acace554db29f0c8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 13:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBhR0NmaEVSVTZXaVdJeWdlcjNaMkdZamJsbUp2ckwxei1KX0pZd3NhZ1VuNGNzdl9icTQ0RnNQc0NJaHdxazJVQ3lRT0o4dG5sNDRNYVZUNzY</guid></item><item><title>边走边打、光速毁伤！揭秘我国反无人机激光武器战力 - 观察者网</title><link>https://www.guancha.cn/military-affairs/2026_03_25_811415.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	有矛必有盾，当无形铁翼织就天网，反制的锋芒已经并肩就位。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/25/20260325214332404.gif" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	画面中这架“低慢小”无人机，正在模拟战场中的隐蔽渗透。它的飞行高度锁定在50米到80米之间，恰好处于传统雷达的探测盲区。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/25/20260325214345718.gif" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	这个外形看起来有点像集装箱的装置就是“光箭-11E”多模复合末端干扰系统。在应对“低慢小”来袭的无人机时，它就像是一位反应敏捷的卫士，数秒内就可以精准锁定目标，对无人机的观瞄系统进行打击。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/25/20260325214402995.gif" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	光纤无人机，它最大的特点就是通过光纤实时向飞手传送飞行数据和画面，因此它就很难被电子干扰，对付它往往只能选择将其击落。
-&lt;/p&gt;
-&lt;p&gt;
-	此刻登场的是“光箭-21A”，采用的是“边走边打”的应对模式，既能保持火力压制状态，又避免了因为静止不动而轻易被敌方锁定。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/25/20260325214417952.gif" title="点击查看大图" class="bigimg"&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	从打击模式看，“光箭-21A”以“硬杀伤”能力见长，可在数公里外形成高密度能量束，持续作用于无人机机身结构，短时间内击穿目标无人机外壳，烧毁内部电路或动力系统。相比之下，“光箭-11E”采用的不是硬碰硬的毁伤模式，而是依托脉冲激光实现精准制敌，直击无人机核心部件，瞬间“致盲”，使它们丧失侦察、数据传输等作战能力。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/25/20260325214435240.gif" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	这一“软”一“硬”两种作战模式，分别针对不同距离、不同威胁等级的目标，刚好补上了各自作战范围的缺口。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/25/20260325214447809.gif" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/mainland/2026/03/25/20260325214500146.gif" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	作为战斗“搭子”，“光箭-21A”与“光箭-11E”都搭载相控阵雷达和红外侦察系统，可通过“有线+无线”双重方式互联互通，实现实时信息共享，精准完成目标锁定与识别。
-&lt;/p&gt;
-&lt;p&gt;
-	中国航空工业集团制造院 周水亮：激光武器作为一种新域新质装备，它通过多元探测和智能识别，自动分配打击火力，反应速度和战场环境适应能力都非常强。在体系化作战方面，我们的两型装备能够实现硬软结合、协同作战，还能够与雷达、光电等预警探测系统实现快速联动，形成“发现即摧毁”的闭环。
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Wed, 25 Mar 2026 13:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE42Nk9LYjdXNld2UlpwdHMyaXFvV2s0WFp3UjJJVW4zN3BXektVZ0lUVDVONEZMekpjMTVFTVM0ekEtZ0piSXpWX3RSbjBfdmNMMkhYM2dQSXQxb3ZTMWt4X3ZTU3g0OTI4Z0tLZ1RTeXY</guid></item><item><title>日系特斯拉Model S黄了！索尼与本田已叫停联合开发电动汽车 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111637.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月25日消息，索尼集团与本田汽车3月25日宣布，&lt;strong&gt;双方将终止其Afeela系列电动汽车车型的开发与发布工作。&lt;/strong&gt;由于本田对其电动化战略进行了重新评估，原定的商业计划已不再可行。&lt;/p&gt;
-&lt;p&gt;索尼预计，鉴于索尼本田移动出行公司所采取的“轻资产”运营模式，此次变动不会对其财务状况产生实质性影响。&lt;/p&gt;
-&lt;p&gt;据悉，索尼与本田于2022年9月合资成立索尼本田移动出行公司（SHM），旨在整合索尼的电子技术优势与本田的汽车制造能力，打造高端电动出行产品，Afeela系列便是该合资公司的核心项目，曾于2023年CES展首次亮相，2025年CES展推出首款车型Afeela 1并开放预订。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/db452e5c9188411d92fa70a3c00da7c8.png" target="_blank"&gt;&lt;img alt="日系特斯拉Model S黄了！索尼与本田已叫停联合开发电动汽车" h="327" src="//img1.mydrivers.com/img/20260325/s_db452e5c9188411d92fa70a3c00da7c8.png" w="589"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Afeela 1直接对标特斯拉Model S和Lucid Air，新车将推出Origin和Signature两个版本，&lt;strong&gt;售价分别是89,900美元和102,900美元，车内支持PS5技术和生态。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此次项目终止的直接导火索的是本田近期的电动化战略调整。本月12日，本田曾发布业绩预警，宣布将计提高达2.5万亿日元（约157亿美元）的电动车相关资产减值，创下上市以来首次年度亏损纪录，并叫停多款规划中的纯电车型，收缩电动化战线。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/e0dc0f6b81cb426fbfd1cd944119a743.png" target="_blank"&gt;&lt;img alt="日系特斯拉Model S黄了！索尼与本田已叫停联合开发电动汽车" h="333" src="//img1.mydrivers.com/img/20260325/s_e0dc0f6b81cb426fbfd1cd944119a743.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这一调整导致原本计划由本田提供给合资公司的技术与资源无法按约定交付，直接动摇了Afeela项目的推进基础。&lt;/p&gt;
-&lt;p&gt;对于此次变动的影响，索尼方面表示，&lt;strong&gt;得益于索尼本田移动出行公司采取的“轻资产”运营模式，此次终止Afeela项目不会对其财务状况产生实质性影响。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;而合资公司则明确，将全额退还此前消费者预订Afeela车型支付的200美元订金，最大限度降低对潜在用户的影响。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 13:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE56S2dtX2xiWkNLWFY3ZVBxQTZPU3lVc2RMV0h6Ni1Pdl81LUZEQmdlSHBXaW1ObWloa0VWQVpMRWtZZEMzUDYwbzFBZDltRi01Zmp1YmF1Vkg</guid></item><item><title>重大安全播报！Apifox遭遇投毒 请使用该平台的开发者立即轮换所有密钥 - 蓝点网</title><link>https://www.landiannews.com/archives/112328.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content-post"&gt;
-                &lt;p class="excerpt color-border color-bg"&gt;#重大安全播报 国内知名 API 协作平台 Apifox 遭供应链投毒，如果你在 3 月 4 日～3 月 23 日打开过 Apifox，请立即轮换所有密钥。恶意载荷会窃取开发者 SSH 凭证、Git 令牌、k8s 凭证等等，Apifox 在 3 月 23 日发布新版本修复漏洞，但蓝点网并未在其网站看到任何安全公告。查看全文：https://ourl.co/112328&lt;/p&gt;
-&lt;p&gt;安全研究人员日前发现 Apifox 平台遭遇投毒，黑客通过平台安全缺陷向所有开发者投放包含恶意代码的 JS 文件，恶意代码会窃取各类配置信息和敏感数据。&lt;/p&gt;
-&lt;p&gt;如果开发者在 2026 年 3 月 4 日后打开过 Apifox 则需要立即轮换 SSH 密钥、Git 令牌、k8s 等各类凭证，同时需要检查服务器和相关集群是否存在异常登录情况。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://img.lancdn.com/landian/2026/03/112328.png" data-fancybox="gallery" rel="nofollow"&gt;&lt;img fetchpriority="high" decoding="async" class="alignnone" data-src="https://img.lancdn.com/landian/2026/03/112328.png" src="https://static.lancdn.com/landian/public/images/post-loading.gif" alt="重大安全播报！Apifox遭遇投毒 请使用该平台的开发者立即轮换所有密钥"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;情况如下：&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;@橙子酱 在日常工作中检测到 Apifox 文件存在被投毒情况，具体来说 Apifox 在启动时会加载用于事件记录的 JS 文件：hxxps://cdn [.] apifox [.] com/www/assets/js/apifox-app-event-tracking.min.js&lt;/p&gt;
-&lt;p&gt;正常情况下这个文件大小为 34KB，但在 2026 年 3 月 4 日后开发者可能会请求到带毒版本，带毒版本为 77KB，这个带毒 JS 文件还会动态加载：hxxps://apifox [.] it [.] com/public/apifox-event.js&lt;/p&gt;
-&lt;p&gt;在满足特定条件下可以加载攻击载荷并采集主机系统环境和敏感数据 (SSH 密钥、Git 凭证、命令行历史、进程列表等)，采集的信息会被上报到：hxxps://apifox [.] it [.] com/event/0/log&lt;/p&gt;
-&lt;p&gt;后续攻击者还会控制主机拉取执行后门程序，进而尝试发起横向攻击以控制更多有价值的目标。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;it.com 域名：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在此次攻击中，黑客使用 it.com 的二级域名 hxxps://apifox.it.com 该域名并非意大利国别顶级域名，而是商业化运营的子域名服务。&lt;/p&gt;
-&lt;p&gt;即用户可以通过其运营方申请 xxx.it.com 这样的子域名，而在此次攻击中黑客使用的 apifox.it.com 就是注册的子域名，与 Apifox 没有任何关系。&lt;/p&gt;
-&lt;p&gt;这种域名具有极强的迷惑性，这可以降低开发者的戒心，如果黑客使用的域名是 sdfasdfdsf.ph 这种可能就比较容易引起开发者的警觉。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Apifox 修复安全问题后并未发布公告：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;蓝点网检查 Apifox 更新日志发现，在 2026 年 3 月 23 日发布的 v2.8.19 版中，Apifox 移除在线加载 JS 文件，改成直接内置 JS 文件。&lt;/p&gt;
-&lt;p&gt;这次更新显然就是用于修复 JS 文件被投毒的，但遗憾的是我们仔细查找 Apifox 多个页面，也没有发现 Apifox 发布任何安全公告。&lt;/p&gt;
-&lt;p&gt;可能 Apifox 的想法就是只要悄悄修复漏洞并且不发布公告大家就不知道，这样可以避免名誉受损，但代价就是下游多种项目都遭受强烈的安全威胁。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;如何检查自己是否中招：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;比较简单的方式就是检查网络是否有 apifox.it.com 的请求记录，如果你的路由器或代理软件有连接记录，只需要搜索这个域名即可，如果能搜索到请求说明你已经中招。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Windows Powershell：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;Select-String -Path "$env:APPDATA\apifox\Local Storage\leveldb\*" -Pattern "rl_mc","rl_headers" -List | Select-Object Path&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;macOS：&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;grep -arlE "rl_mc|rl_headers" ~/Library/Application\ Support/apifox/Local\ Storage/leveldb&lt;/pre&gt;
-&lt;p&gt;如果以上命令输出具体文件则判定为中招。&lt;/p&gt;
-&lt;p&gt;详细技术分析请访问：&lt;a href="https://rce.moe/2026/03/25/apifox-supply-chain-attack-analysis/" target="_blank" rel="noopener"&gt;https://rce.moe/2026/03/25/apifox-supply-chain-attack-analysis/&lt;/a&gt;&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>蓝点网</author><pubDate>Wed, 25 Mar 2026 13:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE9ZZWtBRDB3d0xSb3lKYjlHS1N3a1RaU2VOLUpmYmVsN0hYRldDa0VyWHpSa2dJR3N3bmU4cmg4TzgzdXZYSkUtX0NUSWI0NVMwM190eWpmODg2QjY5</guid></item><item><title>四巨头齐聚认购！存储大厂敲定170亿增发扩产 - 财联社</title><link>https://www.cls.cn/detail/2324815</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;《科创板日报》3月25日讯 &lt;/strong&gt;DRAM 大厂南亚25日正式揭晓787.18亿新台币（约合170.04亿元人民币）的定增名单，多家产业巨头现身。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;铠侠、闪迪、SK海力士旗下Solidigm及思科四家公司&lt;/strong&gt;将分别认购私募普通股7000万股、13868万股、7139万股、7150万股，共3.51亿股。且南亚科此次私募普通股定价为每股223.9新台币，&lt;strong&gt;按照其今日收盘价226.5新台币计算，仅折价1.15%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;公司计划将募得资金投入&lt;strong&gt;先进存储器制造厂与生产设备&lt;/strong&gt;，以应对未来AI计算需求增长。&lt;/p&gt;
-&lt;p&gt;南亚科为台塑集团旗下公司，主要从事DRAM研发、设计、制造与销售，产品涵盖DDR4、DDR5及低功耗存储器等系列。&lt;/p&gt;
-&lt;p&gt;在此之前，由于AI带动HBM需求增长，三星、SK海力士与美光等巨头为HBM腾出产能，导致通用及利基型存储产品供给出现缺口，南亚科等厂商订单水涨船高，得益于DDR4涨价迅猛业绩表现也尤为亮眼。&lt;/p&gt;
-&lt;p&gt;针对此次四大巨头投资南亚科，有媒体报道援引业界观点称，&lt;strong&gt;尽管SK海力士自制DRAM等，但随着SSD需求快速增长，所需DRAM也大幅增加，相关厂商为确保DRAM供应，不仅透过与南亚科签长约，还要通过取得投资巩固供应。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;值得一提的是，&lt;strong&gt;今年1月已有消息称，部分存储厂长单已谈到2030年供应，涉及供应商即包含南亚科。&lt;/strong&gt;彼时供应链指出，存储大厂华邦电、南亚科对外签订的长期供货合约（LTA），模式多为“锁量不锁价”，时间由一年期拉长至至少两年起，部分大客户甚至谈到接近2030年的长期合作框架。&lt;/p&gt;
-&lt;p&gt;国盛证券25日研报指出，&lt;strong&gt;AI存力大时代已至。本轮存储行情已经跳出此前的周期循环，进入人工智能重塑底层逻辑的成长大时代。&lt;/strong&gt;在供需紧缺背景下，能拿到稳定、高品质颗粒供给的模组厂商有望充分受益于AI时代供需紧缺下存储升级+涨价+国产化三重β，业绩弹性显著、估值提升空间广阔。存储是有业绩（有安全边际）、有长逻辑（AI+国产化）的板块，看好存储涨价周期持续，重视AI存力大时代投资机遇。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Wed, 25 Mar 2026 13:36:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBtaVBaSjdwc2Y5T3M2aU5lZllERHVHMEluVEotSUg4WmlBUE9qT2pSMTljTWlkRExrc0E5NEdzdWtjZGMtX3EwNw</guid></item><item><title>PC与服务器市场芯痛加剧！英特尔AMD上调全系列CPU价格 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111635.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;全球中央处理器（CPU）供应紧张状况正在加剧，给本已因内存芯片短缺而遭受重创的个人电脑（PC）和服务器制造商带来了新的痛苦。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;从2月底开始，惠普和戴尔等PC制造商发现，他们对CPU的需求数量与能够获得的数量之间出现了明显的“缺口”，而且目前的情况比几个月前糟糕得多。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;多位行业高管和经理表示，供应紧张已经导致PC和服务器的CPU价格上涨和交货时间延长。有部分人士预测，未来几个月情况会进一步恶化。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/08dce793bb164e32905f27618b446bbf.jpg" target="_blank"&gt;&lt;img alt="PC与服务器市场芯痛加剧！英特尔AMD上调全系列CPU价格" h="400" src="//img1.mydrivers.com/img/20260325/s_08dce793bb164e32905f27618b446bbf.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;供应紧张局势&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;今年CPU的报价已经出现上涨，平均涨幅在10%至15%之间，有些甚至高于这个水平。&lt;/p&gt;
-&lt;p&gt;据业内人士称，英特尔和AMD公司已告知客户，它们将分别在3月和4月提高所有系列CPU的价格。&lt;/p&gt;
-&lt;p&gt;英特尔在被问及此事时表示，已“向客户通报了部分产品的计划价格调整，反映了持续的需求、组件和材料成本的增加以及不断变化的市场动态。”&lt;/p&gt;
-&lt;p&gt;此外，CPU的平均交货期也从之前的约1至2周延长至了现在的平均8至12周。一家服务器和PC分销商的高管更是指出，在某些情况下，CPU的等待时间甚至要长达6个月。&lt;/p&gt;
-&lt;p&gt;一家游戏PC公司的高管表示，预计CPU短缺情况将在4月至6月的季度进一步恶化。他指出，“英特尔和AMD优先保证服务器CPU的产能，对PC的供应就减少了……第二季度我们能拿到的量比第一季度少得多。”&lt;/p&gt;
-&lt;p&gt;这位高管还补充道，“如果钱能解决问题那就太好了，但我们担心的是，即便我们出更高的价钱，也还是拿不到更多的货。CPU短缺的情况日益严重，不亚于内存芯片的情况。”&lt;/p&gt;
-&lt;p&gt;值得一提的是，供应短缺还呈现出结构性分化。全球第五大PC制造商华硕的系统业务总经理Jose Liao本周一（3月23日）指出，中端X-86 CPU面临更大供应缺口，因为英特尔和AMD更聚焦于高端芯片，他称，“供应缺口确实在扩大，预计将持续下去。”&lt;/p&gt;
-&lt;p&gt;Liao还指出，CPU短缺正在加速推动市场向Arm架构迁移，“以华硕为例，目前约30%的搭载Copilot AI的个人电脑采用基于Arm架构的CPU，这一比例较去年年底的约20%有了大幅增长，预计今年这一数字还将继续上升。”&lt;/p&gt;
-&lt;p&gt;截至2025年，英特尔和AMD设计的基于X-86架构的CPU占个人电脑处理器的85%以上，占服务器处理器的约78%。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/fecfff5a3fcb492cb409169cbc838bb6.png" target="_blank"&gt;&lt;img alt="PC与服务器市场芯痛加剧！英特尔AMD上调全系列CPU价格" h="400" src="//img1.mydrivers.com/img/20260325/s_fecfff5a3fcb492cb409169cbc838bb6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 13:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1pdU9RWFBEUi00b0dUalZ2VWYtZlNkV1h4bzhoWF9udEExa2JrTmNoLWpieGxCRUZBR2hydHJORmEyVVJSTVFuUDVSYlQ1dEp3aktZMjl0dzc</guid></item><item><title>OPPO Find X9 Ultra突破长焦技术瓶颈！史上最激进的长焦旗舰来了 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111634.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;OPPO正式对外展示了年度影像旗舰Find X9 Ultra的核心长焦技术突破——哈苏10倍光变天眼长焦，凭借行业首创的5反射棱镜潜望架构，成功将专业增距镜的高画质10倍变焦能力集成于轻薄机身，一举打破手机长焦领域“高倍率与轻薄机身不可兼得”的行业难题，重新定义了手机远摄体验。&lt;/p&gt;
-&lt;p&gt;当日上午，OPPO刘作虎通过微博发文表示，10倍光学变焦是手机长焦竞争的终局，也是补齐手机完整影像能力的最后一块拼图。&lt;/p&gt;
-&lt;p&gt;此前行业因技术限制，始终无法将高画质10X做进手机，外接增倍镜成为无奈之选，而OPPO Find X9 Ultra的核心目标，&lt;span&gt;&lt;strong&gt;就是把这颗只存在于手机外的高画质10X真正内置，实现远方场景的真实还原，捕捉画面本真的细节、色彩与神态，而非算法补全的效果。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这一理念也让网友直呼“口袋里的哈苏不是说说而已”，成为对该机型影像实力的直观认可。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/21deb30c-7b83-4d1f-8773-5ed8f91ca057.jpg" target="_blank"&gt;&lt;img alt="OPPO Find X9 Ultra突破长焦技术瓶颈！史上最激进的长焦旗舰来了" h="400" src="//img1.mydrivers.com/img/20260325/S21deb30c-7b83-4d1f-8773-5ed8f91ca057.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;为让外界直观感受原生10倍光学变焦的实际表现，OPPO Find系列产品负责人卓世杰于当日下午接连发布两条微博，带来多维度实测展示。其首先通过视频演绎，对比了OPPO Find X9 Ultra原生10倍光学变焦与常见手机10倍变焦的成像效果，让用户清晰看到二者的画质差距。&lt;/p&gt;
-&lt;p&gt;随后又发布演唱会场景对比样张，将Find X9 Ultra原生10倍光变与“常见旗舰手机+10倍增距镜”的组合进行实测PK，结果显示二者画质已无限趋同，印证了OPPO成功将增距镜完美装进轻薄机身的技术突破。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/edf0a41f-f343-42f0-b3bc-f44c0048a462.jpg" target="_blank"&gt;&lt;img alt="OPPO Find X9 Ultra突破长焦技术瓶颈！史上最激进的长焦旗舰来了" h="400" src="//img1.mydrivers.com/img/20260325/Sedf0a41f-f343-42f0-b3bc-f44c0048a462.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;编辑点评：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;OPPO Find X9 Ultra的10倍光学变焦技术突破，是手机影像领域从“硬件堆砌”到“技术创新”的重要体现。其打破了长焦倍率与机身设计、成像画质之间的行业桎梏，将外接增距镜的专业能力内置，不仅为用户带来了更便捷、更专业的移动摄影体验，更推动手机长焦技术向“真光学、高画质、轻体验”的方向发展。&lt;/p&gt;
-&lt;p&gt;这一突破也印证了，手机影像的竞争终会回归技术本身，而对光学原理的深度探索与硬件工艺的极致打磨，才是突破行业天花板的核心关键。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/76ff2eb706e94c539136c61d414f5069.jpg" target="_blank"&gt;&lt;img alt="OPPO Find X9 Ultra突破长焦技术瓶颈！史上最激进的长焦旗舰来了" h="399" src="//img1.mydrivers.com/img/20260325/s_76ff2eb706e94c539136c61d414f5069.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 13:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10U0JUSDVwMVJBR3hDLTRaZlFvaFBYSzZGT1RuSWI1SXBVX21GQ1I1ZjRZdGRxMXNpcHEydUxwX1hFVmFBUS1sdlZybHNWczRMdU5vSDNRNTU</guid></item><item><title>中国据报限制人工智能新星Manus公司CEO、首席科学家出境 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260325-%E4%B8%AD%E5%9B%BD%E6%8D%AE%E6%8A%A5%E9%99%90%E5%88%B6ai%E6%96%B0%E6%98%9Fmanus%E5%85%AC%E5%8F%B8ceo-%E9%A6%96%E5%B8%AD%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%87%BA%E5%A2%83</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
-                        据英国《金融时报》报导称，中国已限制人工智能（AI）初创公司Manus的两名联合创始人出境，此举正值监管机构正在审查脸书母公司Meta以20亿美元收购这家AI代理工具公司是否违反了中方的投资规定。        &lt;/p&gt;
-    
-    
-                        &lt;div class="t-content__dates t-content__dates--reading-time"&gt;
-                &lt;p class="m-pub-dates"&gt;&lt;span class="m-pub-dates__date"&gt;发表时间： &lt;time datetime="2026-03-25T13:14:30+00:00" pubdate="pubdate"&gt;25/03/2026 - 14:14&lt;/time&gt;&lt;/span&gt;&lt;span class="m-pub-dates__date"&gt;更改时间： &lt;time datetime="2026-03-25T13:28:21+00:00"&gt;25/03/2026 - 14:28&lt;/time&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class="a-reading-time"&gt;
-    &lt;span class="a-reading-time__icon" title="浏览时间"&gt;
-                        &lt;svg class="a-svg a-svg--icon-clock"&gt;
-    &lt;use xlink:href="/build/images/svg/sprite.c98bf387c90bc4a87186b0b783f15ba0.svg#icon-clock" href="/build/images/svg/sprite.c98bf387c90bc4a87186b0b783f15ba0.svg#icon-clock"&gt;&lt;/use&gt;
-  &lt;/svg&gt;
-    &lt;/span&gt;
-    7 分钟    &lt;span class="u-sr-only"&gt;浏览时间&lt;/span&gt;
-&lt;/p&gt;
-            &lt;/div&gt;
-            
-    
-                                                                            
-                    &lt;div class="t-content__body u-clearfix"&gt;
-                                            
-                                                                &lt;p&gt;该报援引三位知情人士报导称，Manus创始人兼首席执行官肖弘和首席科学家季逸超本月被国家发展改革委召至北京开会。知情人士称，肖季二人被问及该公司在华实体可能违反外商直接投资法规的问题。其中两位知情人士称，会后，这两位常驻新加坡的高管被告知，由于监管审查，他们不得离开中国，但可以在国内自由旅行。&lt;/p&gt; &lt;p&gt;据了解，Manus公司创立于中国，但去年将其总部和核心团队迁至新加坡。去年年底，Meta以20亿美元的价格收购了该公司。据英国《金融时报》1月份报导，这笔交易目前正接受中国商务部的监管审查，原因是其可能违反了出口管制规定。&lt;/p&gt; &lt;p&gt;一位知情人士称，目前尚未展开正式调查，也未提出任何指控。Manus正积极寻求律师事务所和咨询公司协助解决此事。此案凸显了中国当局对宝贵技术落入地缘政治对手之手的更广泛担忧，尤其是在人工智能等战略领域。Manus被誉为成功典范，是中国本土企业的榜样。&lt;/p&gt; &lt;p&gt;Manus崛起迅速，从短短几个月内实现年化收入1亿美元，到被Meta收购，其在全球舞台上的辉煌成就激励了一代中国人工智能创业者走上类似的全球发展之路。&lt;/p&gt; &lt;p&gt;英国《金融时报》报导称，知情人士透露，Manus可能违反外商直接投资规定，这与其所有权变更后需遵守的中国报告规则有关。虽然此类违规行为若得到证实，根据中国法律不太可能导致严重处罚，但监管机构似乎正在寻找干预这笔交易的方式。&lt;/p&gt; &lt;p&gt;其中一位知情人士称，极端情况下可能会撤销这笔交易。由于交易已经完成，Meta也已开始将Manus的AI代理软件整合到其平台中，因此这样的解决将会“一团糟”。该人士续称，中国监管机构尚未决定是否采取如此激烈的措施。&lt;/p&gt; &lt;p&gt;Manus成立于2022年，但很快将其核心团队和总部迁至新加坡。此次搬迁恰逢其完成由硅谷知名风险投资公司基准资本（Benchmark Capital）领投的一轮融资。这笔投资引发了美国议员的质疑。&lt;/p&gt; &lt;p&gt;近年来，中国当局积极推动国内企业研发技术，以取代美国软件和电路，包括人工智能领域。然而，这些努力大多集中在人工智能加速器和其他半导体等基础硬件上。&lt;/p&gt; &lt;p&gt;Meta的这笔交易标志着美国罕见地收购了一家亚洲科技公司，也是Meta首席执行官扎克伯格在人工智能领域最新一笔数十亿美元的投资。&lt;/p&gt; &lt;p&gt;Meta于去年12月宣布收购Manus，并称Manus将助力其在人工智能代理领域的努力：人工智能代理是指无需人类持续指导即可执行多步骤任务的自主系统。&lt;/p&gt;
-                                                                
-    
-                &lt;/div&gt;
-            
-            
-                    
-                    
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Wed, 25 Mar 2026 13:14:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiugJBVV95cUxNUEFkc1ZwVk4zNThaMlVBUDBGRktuVDQyYlU2eFA4d1pqR01peXJ3ZG1BZFNpME84MTh2SEMyU2JUNVNyemJ1MzYyOENNLXpSbVRuM1JPaktsZnFZcDYzVmRhQXJQODVtLXBSdDhBR1YyM29fdERSUzNtc1l5eG41S1c5Tlo2ajF2QnlVbmFlYkQzdkE4SXdYS25qLU4tTUJLQ1RqRWpQRHZWc1doMXB2LW45b0hhUVlVX1gyYVZLZkliT2xEMnlPTlFSVHQtS20wMzB2QlFRd2tKUG9yR0MtbHRGZG10dkRYb0N6NnctZ0FhSmE4X0wzYXZOQ29PajhCV2ItX1o3N3lGZkh3NFRxUjhQVWo0TVgzVmNPX0JQSGpJeHZBZnUyQm4wLW9pVkhXQWgyOEZNNl92QQ</guid></item><item><title>特朗普将任命扎克伯格、埃里森、黄仁勋加入科技顾问委员会 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-03-25/doc-inhsffcu3543574.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    
-&lt;p&gt;　　美国总统特朗普计划任命多位商界顶尖人物加入一个科技委员会，为人工智能政策及其他事务提供咨询建议，其中包括Meta首席执行官马克・扎克伯格、&lt;span id="usstock_ORCL"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/ORCL.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;甲骨文&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_ORCL"&gt;&lt;/span&gt;公司执行董事长拉里・埃里森以及英伟达首席执行官黄仁勋。&lt;/p&gt;
-&lt;p&gt;　　一名白宫官员透露，总统科学技术顾问委员会（PCAST）将由曾担任白宫人工智能与加密货币主管的戴维・萨克斯，以及另一位科技顾问迈克尔・克拉西奥斯联合担任主席。&lt;/p&gt;
-&lt;p&gt;　　该官员称，特朗普计划于周三公布首批13名行业委员名单，其中还包括&lt;span id="usstock_GOOG"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/GOOG.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;谷歌&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_GOOG"&gt;&lt;/span&gt;联合创始人谢尔盖・布林。根据一项行政命令，该委员会最终规模将达24人。&lt;/p&gt;
-&lt;p&gt;　　扎克伯格在声明中表示：“美国拥有引领全球人工智能发展的机遇。我很荣幸加入总统顾问委员会，与其他行业领袖一道推动这一目标实现。”&lt;/p&gt;
-&lt;p&gt;　　特朗普在第二任期内着重强调打造适宜的监管环境，旨在让美国成为人工智能和加密货币领域的领导者。该委员会多名成员所在企业曾为总统的重点项目提供资金支持。例如，Meta向特朗普宴会厅项目进行了捐赠，黄仁勋也以个人名义提供了捐助。&lt;/p&gt;
-&lt;p&gt;　　白宫在一份声明中表示：“在特朗普领导下，总统科学技术顾问委员会将聚焦新兴技术给美国劳动力带来的机遇与挑战，确保全体美国人在这一创新黄金时代实现发展繁荣。”&lt;/p&gt;
-&lt;p&gt;　　乔治・W・布什、贝拉克・奥巴马、乔・拜登等历任总统均曾设立过类似机构。这类委员会通常充当白宫在科技发展关键议题上的智囊团，其成员构成也往往体现了当任总统的施政重点。&lt;/p&gt;
-&lt;p&gt;　　特朗普在第一任期内也曾设立类似委员会，同样吸纳了商界领袖，但彼时的成员并未拥有如今这般家喻户晓的知名度。此外，他直至第一任期第三年才组建该委员会。&lt;/p&gt;
-&lt;p&gt;　　与特朗普第一任期遭遇企业界抵制、多名知名人士高调辞职的情况相比，如今大型企业高管愿意接受其政府的顾问职务，是一个重大转变。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：刘明亮 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 25 Mar 2026 13:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPOUpCd0huZzNRQ2FwMnlnbmF3bHBLUDgyNGFhdG95S2pTaENCVFVLZEU3M3FVb1dpUEFXWXFRSHJWUElhY2NDb3d3RzByTDVkUzRHOVFySkVvT1hGM0dBaE1UanVuOHdibUtMSXVvbHlOMFNDU1RjcVFaQVN3TjlmQmx4Z2xOalk</guid></item><item><title>DDR5内存暴涨的当下 DDR4内存能挑起大梁吗 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111630.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;自2025年下半年内存暴涨开始，玩家的装机成本随之水涨船高。&lt;/p&gt;
-&lt;p&gt;主流玩家普遍选择的一般为5060或5060Ti的型号，预算本就不多，内存再溢价，直接断送装机想法，导致2026年爽玩的游戏无法体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/fb1a9cc2-bf71-4bf0-a67f-c4211bc7b1c4.png" target="_blank"&gt;&lt;img alt="DDR5内存暴涨的当下 DDR4内存能挑起大梁吗" h="370" src="//img1.mydrivers.com/img/20260325/Sfb1a9cc2-bf71-4bf0-a67f-c4211bc7b1c4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本篇内容就解决一个玩家最关心的核心问题！在配置平台大致一样的情况下，D4和D5内存在游戏中的性能差距是怎样的？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;游戏帧率和内存哪个参数关系最大？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;先说结论，对于大多数3A游戏来说，内存容量&amp;gt;内存延迟&amp;gt;内存频率&amp;gt;读写带宽。&lt;/p&gt;
-&lt;p&gt;对于绝大多数小白玩家来说，仿佛内存频率越高内存越强，这点其实不全对。因为这里面还涉及到许多其他的内存参数。&lt;/p&gt;
-&lt;p&gt;内存频率代表内存每秒能完成的数据读写次数，频率越高，单位时间内能传输的数据总量上限就越高。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/ead3d7fc-f5d1-4600-832a-5cd36b9d2a52.png" target="_blank"&gt;&lt;img alt="DDR5内存暴涨的当下 DDR4内存能挑起大梁吗" h="258" src="//img1.mydrivers.com/img/20260325/Sead3d7fc-f5d1-4600-832a-5cd36b9d2a52.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;比如DDR5 6000MHz就肯定比DDR4 3600MHz的理论传输上限更高。主要注意的是标称频率其实是等效频率，真实频率往往是它的50%，这也决定了对应的真实延迟，如果你经常用AIDA64测试肯定不陌生。&lt;/p&gt;
-&lt;p&gt;频率越高往往延迟也会越高，延迟对游戏帧数的影响往往比频率更重要。这里就不得不再提一嘴时序了。&lt;/p&gt;
-&lt;p&gt;我们经常看到的内存条背部包装盒或者网上详情页通常会标有内存的默认时序。比如CL16-18-18-38这种格式。四组数字分别对应CL、tRCD、tRP、tRAS，其中对游戏影响最大的是CL，即例子的CL16。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/8733e736f3454ae4af1abab036ab319b.jpg" target="_blank"&gt;&lt;img alt="DDR5内存暴涨的当下 DDR4内存能挑起大梁吗" h="399" src="//img1.mydrivers.com/img/20260325/s_8733e736f3454ae4af1abab036ab319b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;时序数字越小，代表内存内部的响应等待时间越短。&lt;/p&gt;
-&lt;p&gt;当内存频率越高时，单个时钟周期的时长越短，若要稳定这个高频率运行，就必须拉长时序，也可以理解增加等待周期。不然结果就是闪退或重启，甚至可能连机都开不了。这也就是为什么虽然D5内存的频率高，但CL值也更高的原因。&lt;/p&gt;
-&lt;p&gt;对于游戏玩家来讲，更严格的说法是，游戏运行时，内存容量和带宽不造成瓶颈的情况下，延迟越低，游戏性能越强。D5的优势在于高频率和高带宽，D4的优势就是低时序和低延迟。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/35bcbd7d-da9f-47a3-b676-99a31426435b.png" target="_blank"&gt;&lt;img alt="DDR5内存暴涨的当下 DDR4内存能挑起大梁吗" h="337" src="//img1.mydrivers.com/img/20260325/S35bcbd7d-da9f-47a3-b676-99a31426435b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在大型3A游戏中，特别是地图较大的场景下，每一个操作都牵扯着大量的场景数据，比如材质、模型、NPC乃至物理效果。内存延迟越低，数据请求的响应速度就越快，数据能及时喂给显存和CPU，就不会出现因数据间歇性中断导致的掉帧卡顿。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/1deea3ab-4fdc-4716-b148-6707de934252.png" target="_blank"&gt;&lt;img alt="DDR5内存暴涨的当下 DDR4内存能挑起大梁吗" h="332" src="//img1.mydrivers.com/img/20260325/S1deea3ab-4fdc-4716-b148-6707de934252.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如果玩家还喜欢打上各种MOD整合包，那么数据的调用请求将更加密集，同样内存延迟的影响也会进一步放大。延迟更低可使用保证稳定的帧生成，不易出现掉帧的状况。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/08fe3bb5-19a7-4f5e-90c6-71d058fc78e0.png" target="_blank"&gt;&lt;img alt="DDR5内存暴涨的当下 DDR4内存能挑起大梁吗" h="348" src="//img1.mydrivers.com/img/20260325/S08fe3bb5-19a7-4f5e-90c6-71d058fc78e0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在配置平台大致相同的情况下，D4、D5内存在实际游戏中的差距非常小，但是目前两者的差价非常大。多出来的价格换来微不足道的提升，这对于玩家来说不是一笔划算的买卖。&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 13:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1wWkM5Z2tKb2RycGRoOUZIS1oyOUhuaFgzUlpXNDdUWGR1QUppaWZIZG1BZGx4X24wcXA0YkRWWldfejdfY3lObzgyWEVHc2dlSFJqaDRuR1E</guid></item><item><title>小孩哥收到REDMI Turbo 5 Max后泪崩：比苹果更丝滑流畅 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111628.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月25日消息，REDMI产品经理胡馨心近日连线了一位小孩哥。他在体验店一眼相中了REDMI Turbo 5 Max，因为担心给哥哥增加经济负担，当时他忍痛拒绝了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;令人感动的是，哥哥最终还是买下这台手机送给了他。收到礼物的小孩哥激动得泪流满面，并在连线中分享了自己的感受。&lt;span&gt;他直言这款手机比苹果更加丝滑流畅，他和哥哥都是小米、雷总的粉丝，哥哥甚至还准备预定一台新一代小米SU7。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/6e666cf71df3468ca65f03eccd85d3e0.jpg" target="_blank"&gt;&lt;img alt="小孩哥收到REDMI Turbo 5 Max后泪崩：比苹果更丝滑流畅" h="491" src="//img1.mydrivers.com/img/20260325/s_6e666cf71df3468ca65f03eccd85d3e0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为一款性能旗舰，该机于1月29日发布，首发起售价定在2199元。&lt;/p&gt;
-&lt;p&gt;硬件方面，该机全球首发联发科天玑9500s处理器。这款芯片采用了先进的3纳米制程工艺，并基于第二代全大核架构设计。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/0f24b146c18b44c0b7a1bb44b709e6e9.jpg" target="_blank"&gt;&lt;img alt="小孩哥收到REDMI Turbo 5 Max后泪崩：比苹果更丝滑流畅" h="476" src="//img1.mydrivers.com/img/20260325/s_0f24b146c18b44c0b7a1bb44b709e6e9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在性能实测中，REDMI Turbo 5 Max的安兔兔跑分一举突破了361万分。它是REDMI迄今为止性能最强悍的Turbo系列机型，为日常流畅度与重载游戏提供了坚实的基础。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;经测试，面对高清画质下的重载游戏《崩坏：星穹铁道》，该机在30分钟的实测中达成了满帧运行的优异成绩。其表现不仅稳健，在多项关键指标上甚至超越了同级别的竞争对手。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/eb0103da40e4480e96559b80d1d62f57.jpg" target="_blank"&gt;&lt;img alt="小孩哥收到REDMI Turbo 5 Max后泪崩：比苹果更丝滑流畅" h="400" src="//img1.mydrivers.com/img/20260325/s_eb0103da40e4480e96559b80d1d62f57.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;另外，该机配备了一块6.83英寸的1.5K高画质直屏，后置5000万像素主摄与800万像素超广角镜头的组合，&lt;strong&gt;内嵌入了9000毫安时的超大电池，彻底解决了性能手机的续航痛点。&lt;/strong&gt;&lt;/p&gt;
-&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 12:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE14Q2wtUFNNZ040cGpXX1FSSkw4MERJU3VjZTlKZEtGZnIzNHJJZldQNXp4N1VFbjNaVUxrMlhJWEtUQTZ5STdCMUxpSWYwNFFoOXBjaVR1Z0E</guid></item><item><title>英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111624.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;前段时间英特尔发布了酷睿Ultra 200S Plus处理器，也是今年英特尔首款新品系列，该系列正式性能解禁，我们也拿到了英特尔酷睿Ultra 7 270K Plus和英特尔酷睿Ultra 5 250K Plus两款型号，给大家第一时间带来评测。&lt;/p&gt;
-&lt;p&gt;与去年爆料英特尔这次会换接口不同的是，英特尔酷睿Ultra 200S Plus处理器系列延续了上代LGA1851接口，能够兼容上代Z890/B860主板，目前各大板厂也都开始更新自家的800系列主板，比如七彩虹最近就推出了七彩虹iGame Z890 ULTRA-S W V20主板，我们这次也会搭配这款主板进行评测。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/61944bea-9926-4c30-a1a6-7cfa901c1de3.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="450" src="//img1.mydrivers.com/img/20260325/S61944bea-9926-4c30-a1a6-7cfa901c1de3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;英特尔酷睿Ultra 200S Plus处理器解析&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我们首先重点介绍一下这次发布的英特尔酷睿Ultra 200S Plus处理器。该系列命名方面也延续了上代的风格，由于从上代酷睿Ultra 200S开始就不再叫“15代酷睿”，所以这次也不可能叫“16代酷睿”处理器了。&lt;/p&gt;
-&lt;p&gt;虽然制程与架构未有代际变化，但酷睿Ultra 200S Plus既然给尾缀加上“Plus”，自然就不会是简单的“架构Refresh”层面的升级。&lt;/p&gt;
-&lt;p&gt;规格方面，与前代同级别的酷睿Ultra 7 265K/KF以及酷睿Ultra 5 245K/KF相比，英特尔酷睿Ultra 7 270K Plus和酷睿Ultra 5 250K/KF Plus在核心数量方面都进行了相应提升。&lt;/p&gt;
-&lt;p&gt;酷睿Ultra 7 270K Plus与前代酷睿Ultra 9 285K看齐，达到了24核（8P+16E）24线程，酷睿Ultra 5 250K Plus则提升到了18 核（6P+12E）18线程，当然与上代一样，没有超线程。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/f780593b-c5a8-4274-b08b-bcbd1bf8e5c1.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="195" src="//img1.mydrivers.com/img/20260325/Sf780593b-c5a8-4274-b08b-bcbd1bf8e5c1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;同时，虽然酷睿Ultra平台现在依旧是走单线程路线，但酷睿Ultra 200S Plus处理器的die-to-die频率最高提升了900MHz，多线程性能得到增强，而且使CPU与内存控制器之间的连接速度提升了近1GHz，从而降低系统延迟并有助于提升游戏性能。&lt;/p&gt;
-&lt;p&gt;内存方面，新一代产品支持DDR5 7200MT/s内存，高于前代的6400MT/s规格，同时兼容英特尔酷睿Ultra 200S Boost BIOS配置文件，并继续提供对8000MT/s内存超频的保修支持，所以大家在实际使用时可以放心对内存进行超频，搭配CUDIMM内存也会更合适。&lt;/p&gt;
-&lt;p&gt;而且酷睿Ultra 200S Plus也是率先支持4-Rank CUDIMM内存的英特尔处理器，单个内存模块最高可达128GB。全新的4R CUDIMM模块是一项新兴内存技术，需搭配基于英特尔800系列芯片组的特定主板使用。&lt;/p&gt;
-&lt;p&gt;它融合了高端台式机级（HEDT-class）的大容量，与游戏内存级的低延迟、高带宽的综合特性，实现了容量与速度的兼得。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/2c20c1a8-b398-4448-afe0-a9d62019c6f3.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="337" src="//img1.mydrivers.com/img/20260325/S2c20c1a8-b398-4448-afe0-a9d62019c6f3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此外，这一代产品最为重要的一个软件技术，是引入了英特尔二进制优化技术（Intel Binary Optimization Tool），这是英特尔首创的一项二进制转换优化技术，能够提升特定游戏的原生性能。&lt;/p&gt;
-&lt;p&gt;它能够提高处理器的每周期指令数（IPC）和最终用户性能——即使该工作负载是针对其他x86处理器、游戏主机或早期架构而优化，本次评测我们也专门针对二进制优化性能进行了测试，确实有比较明显的提升。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;测试平台介绍&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;接下来我们开始测试，首先给大家介绍下测试平台：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/85439bda-11c0-405c-8816-304ee61a5b20.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="385" src="//img1.mydrivers.com/img/20260325/S85439bda-11c0-405c-8816-304ee61a5b20.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;我们这次主要采用了七彩虹iGame Z890 ULTRA-S W V20主板搭配酷睿Ultra 7 270K Plus和酷睿Ultra 5 250K Plus进行评测。&lt;/p&gt;
-&lt;p&gt;这是一款纯白主板，波普风外观设计上相较于上代更加柔和，尽显年轻和活力。用料方面这款主板升级了全覆盖式金属背板，并采用了20+1+1+1相的豪华供电模组设计，核心供电采用ISL99390，支持90A Dr MOS，能够保证酷睿Ultra 200S Plus处理器跑满全部负载。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/909e2d62-521c-4a56-826e-a67f70a97a55.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="450" src="//img1.mydrivers.com/img/20260325/S909e2d62-521c-4a56-826e-a67f70a97a55.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这款主板提供4组DDR5内存插槽，支持9600MT/s。同时这款主板支持显卡、M.2、散热装甲快拆设计，并提供一根PCIe 5.0 x16插槽，一根PCIe 4.0 x16插槽以及PCIe 4.0 x1插槽。还为追求高速存储带宽的用户准备了5组M.2插槽，拓展能力十分强悍。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/e4cccb06-b202-4257-b920-7b547000934b.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="450" src="//img1.mydrivers.com/img/20260325/Se4cccb06-b202-4257-b920-7b547000934b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;显卡我们使用了iGame GeForce RTX 5090 D v2 Advanced OC 24GB显卡，与七彩虹iGame Z890 ULTRA-S W V20主板和酷睿Ultra 200S Plus处理器组成目前顶配的英特尔酷睿平台。&lt;/p&gt;
-&lt;p&gt;这款显卡以天体黑洞及莫比乌斯环为灵感进行设计，拥有21670个CUDA核心，680个Tensor Cores、170个RT Cores，配备24GB DDR7显存，频率达到2407MHz，可通过一键超频达到2452MHz，还支持DLSS 4.5等RTX黑科技，为玩家带来无与伦比的帧数以及画面体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/ef69a9bb-ea51-4ba3-8f71-8c4a98249821.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="450" src="//img1.mydrivers.com/img/20260325/Sef69a9bb-ea51-4ba3-8f71-8c4a98249821.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;性能实测&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;接下来我们开始实战测试，首先测试一下酷睿Ultra 200S Plus处理器的基准性能，这次我们主要对比上代酷睿 Ultra 9 285K、酷睿 Ultra 7 265K以及酷睿 Ultra 5 245K这三款处理器，来看一看酷睿Ultra 200S Plus处理器的代际性能提升。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;基准测试：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我们这次使用了最新推出的CINEBENCH 2026以及大家常用的CINEBENCH 2023，两者的渲染侧重点不同，先来对比一下多线程的表现。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/e6e394fc-8941-46ba-8690-4a1f1b816813.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="324" src="//img1.mydrivers.com/img/20260325/Se6e394fc-8941-46ba-8690-4a1f1b816813.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/0e103f4f-0dca-46d2-afe6-9ee47ef87684.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="319" src="//img1.mydrivers.com/img/20260325/S0e103f4f-0dca-46d2-afe6-9ee47ef87684.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在多核测试中，能够看到英特尔酷睿Ultra 7 270K Plus在R23中多核表现已经十分接近上代旗舰酷睿 Ultra 9 285K，差距不到1%。在R26则已经超过，高出3%左右。&lt;/p&gt;
-&lt;p&gt;英特尔酷睿Ultra 5 250K Plus对比酷睿 Ultra 5 245K成绩则远远胜出，领先巨大，对比酷睿 Ultra 7 265K则同样在R23落后，在R26胜出。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/487b0b13-435f-4066-95ad-db187efbfcf0.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="319" src="//img1.mydrivers.com/img/20260325/S487b0b13-435f-4066-95ad-db187efbfcf0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/6dfdbb40-53e9-41e3-b64f-db0a86010a46.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="319" src="//img1.mydrivers.com/img/20260325/S6dfdbb40-53e9-41e3-b64f-db0a86010a46.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;单核性能方面，整体表现与多核类似，英特尔酷睿Ultra 7 270K Plus在R26单核表现能够领先酷睿 Ultra 9 285K，R23成绩十分接近。英特尔酷睿Ultra 5 250K Plus同样这次在R23和R26同时领先酷睿 Ultra 7 265K。&lt;/p&gt;
-&lt;p&gt;综合来看基准性能，英特尔酷睿Ultra 7 270K Plus基本与上代旗舰酷睿 Ultra 9 285K相当，甚至在最新的渲染引擎环境下更强，而英特尔酷睿Ultra 5 250K Plus也超过了酷睿 Ultra 7 265K。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;文件解压缩测试：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;接下来我们看一下文件压缩能力，我们这次采用7-ZIP这款常用压缩软件进行测试，测试解压以及压缩速度。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/17404c85-ab3e-42c0-96b8-eaa0e40d0e3b.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="319" src="//img1.mydrivers.com/img/20260325/S17404c85-ab3e-42c0-96b8-eaa0e40d0e3b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/9fc5c1fc-2b91-471f-a924-07e32c7846a7.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="319" src="//img1.mydrivers.com/img/20260325/S9fc5c1fc-2b91-471f-a924-07e32c7846a7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;英特尔酷睿Ultra 7 270K Plus在7-ZIP解压达到了2251356，压缩达到了172653，解压超过酷睿 Ultra 9 285K，压缩表现则略逊一筹。英特尔酷睿Ultra 5 250K Plus则是压缩大幅超越酷睿 Ultra 7 265K，解压速度弱一些。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3D MARK测试：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;下面进行3D MARK测试，主要使用CPU Profile进行多线程和单线程测试，并使用基于目前主流DX12环境的TS测试。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/942b2318-8edc-419d-8e6e-b36b94a354bf.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="311" src="//img1.mydrivers.com/img/20260325/S942b2318-8edc-419d-8e6e-b36b94a354bf.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/1530ab05-e611-4478-994a-4cbb4db245fd.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="311" src="//img1.mydrivers.com/img/20260325/S1530ab05-e611-4478-994a-4cbb4db245fd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在CPU Profile的单线程以及多线程测试中，英特尔酷睿Ultra 7 270K Plus与酷睿 Ultra 9 285K还有一定的差距，英特尔酷睿Ultra 5 250K Plus的表现也不如酷睿 Ultra 7 265K。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/b8323144-8c7b-49e3-90de-17d78b40b046.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="311" src="//img1.mydrivers.com/img/20260325/Sb8323144-8c7b-49e3-90de-17d78b40b046.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在Time Spy的CPU测试中，英特尔酷睿Ultra 7 270K Plus表现要超过酷睿 Ultra 9 285K，英特尔酷睿Ultra 5 250K Plus表现也超过了酷睿 Ultra 7 265K，甚至接近英特尔酷睿Ultra 7 270K Plus。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;生产力测试：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;接下来我们进行生产力测试，使用H264/H265进行视频编解码测试，同时使用Corona 10 Benchmark和Blender Benchmark进行跑分。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/d1acb63c-2b5e-4ffd-8392-63463c3061a5.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="307" src="//img1.mydrivers.com/img/20260325/Sd1acb63c-2b5e-4ffd-8392-63463c3061a5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在H264/H265编解码测试中，英特尔酷睿Ultra 7 270K Plus在H264中超过酷睿 Ultra 9 285K，H265稍差一点。英特尔酷睿Ultra 5 250K Plus则两项测试均超过了酷睿 Ultra 7 265K&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/a38c0e5a-ebbd-49ab-a221-055d2d63767a.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="326" src="//img1.mydrivers.com/img/20260325/Sa38c0e5a-ebbd-49ab-a221-055d2d63767a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而Corona 10 Benchmark测试中英特尔酷睿Ultra 7 270K Plus不敌酷睿 Ultra 9 285K。英特尔酷睿Ultra 5 250K Plus表现也不如酷睿 Ultra 7 265K。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/f79a688b-ef26-4d99-b141-b9b4b00937d4.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="348" src="//img1.mydrivers.com/img/20260325/Sf79a688b-ef26-4d99-b141-b9b4b00937d4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Blender Benchmark设计到了3项测试，monster场景测试中英特尔酷睿Ultra 7 270K Plus表现更好，其余两项逊一筹。英特尔酷睿Ultra 5 250K Plus则是在monster和junkshop场景测试中均要比酷睿 Ultra 7 265K效率更高。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;游戏测试：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;接下来我们进行游戏测试，测试使用了《CS2》、《三角洲行动》、《极限竞速：地平线5》、《生化危机9》这4款游戏进行了测试，为了更好地展现CPU性能表现，这次主要测试使用了1080p低画质进行测试。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/21796162-3ad4-4337-9d7d-f6cc7a933cf4.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="316" src="//img1.mydrivers.com/img/20260325/S21796162-3ad4-4337-9d7d-f6cc7a933cf4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在《CS2》测试中，英特尔酷睿Ultra 7 270K Plus帧数超过了酷睿 Ultra 9 285K，达到748.4帧，英特尔酷睿Ultra 5 250K Plus也要远胜酷睿 Ultra 7 265K。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/42ef4f23-b9db-4bab-83e9-2cfecb7bc7f0.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="306" src="//img1.mydrivers.com/img/20260325/S42ef4f23-b9db-4bab-83e9-2cfecb7bc7f0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《极限竞速：地平线5》中，英特尔酷睿Ultra 7 270K Plus则与酷睿 Ultra 9 285K相差20帧，但是英特尔酷睿Ultra 5 250K Plus同样要远胜酷睿 Ultra 7 265K。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/048be777-a315-4fbb-a4e4-b0a8a9e1ca7c.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="306" src="//img1.mydrivers.com/img/20260325/S048be777-a315-4fbb-a4e4-b0a8a9e1ca7c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《生化危机9》我们测试了室外和室内两个场景，英特尔酷睿Ultra 7 270K Plus依旧与酷睿 Ultra 9 285K有一定差距，不过英特尔酷睿Ultra 5 250K Plus表现很亮眼。而且我们发现，这两款酷睿Ultra 200S  PLus在这两款游戏测试中成绩比较接近。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/e25e244b-8fa9-4b06-9af8-0cf47e061261.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="307" src="//img1.mydrivers.com/img/20260325/Se25e244b-8fa9-4b06-9af8-0cf47e061261.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《三角洲行动》只能怪我们加入了1% LOW帧测试，英特尔酷睿Ultra 200S  PLus在1% LOW帧的优势展现了出来，英特尔酷睿Ultra 7 270K Plus要比酷睿 Ultra 9 285K高10帧。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;二进制优化测试：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;英特尔二进制优化技术是这次酷睿Ultra 200S  PLus系列首发搭配的技术，这项技术通过优化底层二进制编译，让X86系统中二进制编译运行更加高效，从而提升性能表现，我们也通过英特尔酷睿Ultra 7 270K Plus进行了测试。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/db6dc3fb-e7c5-4918-94ea-bfc53d6ba0f3.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="347" src="//img1.mydrivers.com/img/20260325/Sdb6dc3fb-e7c5-4918-94ea-bfc53d6ba0f3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;可以看到在进行了二进制优化后，英特尔酷睿Ultra 7 270K Plus的游戏成绩要比优化前普遍提升了10帧左右。这项技术确实立竿见影。目前二进制优化还属于酷睿 Ultra200S  PLus系列独有，不过据悉后续会下放给上代的酷睿 200S系列。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;功耗测试：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我们最后进行了功耗测试，记录了英特尔酷睿Ultra 7 270K Plus以及英特尔酷睿Ultra 5 250K Plus在AIDA 64 FPU拷机时的平均功耗表现。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/1d911485-6ec1-434f-8935-94621f2c257c.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="306" src="//img1.mydrivers.com/img/20260325/S1d911485-6ec1-434f-8935-94621f2c257c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;英特尔酷睿Ultra 7 270K Plus的功耗达到了244W，温度82℃左右。英特尔酷睿Ultra 5 250K Plus功耗161W，温度在70℃左右。整体来看英特尔酷睿Ultra 7 270K Plus功耗还是比较高的，已经很接近上代旗舰酷睿 Ultra 9 285K的253W，但是温度确实低了不少。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;写在最后&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;总的来说，英特尔酷睿Ultra 200S Plus系列虽然并非全新架构的升级迭代，但通过技术优化，并且增加能效核数量，显著提升die-to-die互连频率，支持更高规格内存、以及独家的英特尔二进制优化技术，在保持LGA1851接口兼容性的前提下，依旧实现了明显的性能跃升。&lt;/p&gt;
-&lt;p&gt;从我们的实测数据来看，酷睿Ultra 7 270K Plus在多核渲染、生产力负载和多数游戏场景中，已经基本追平甚至部分超越上代旗舰酷睿Ultra 9 285K，而功耗和发热控制反而更优秀，酷睿Ultra 5 250K Plus则在几乎所有测试项目中大幅领先上代同级酷睿Ultra 7 265K，性价比表现尤为突出。&lt;/p&gt;
-&lt;p&gt;二进制优化带来的平均10帧左右的游戏提升，更是让1080p低画质CPU瓶颈场景下的帧数表现再上一个台阶，为追求极致帧率的硬核玩家提供了实打实的体验升级。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/21c1dda1-c845-4188-981c-4546b28b5dcd.jpg" target="_blank"&gt;&lt;img alt="英特尔酷睿Ultra 7 270K PLUS处理器首测：不换接口 性能比肩285K" h="450" src="//img1.mydrivers.com/img/20260325/S21c1dda1-c845-4188-981c-4546b28b5dcd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如果你目前在使用Z890/B860平台，或者计划新装一台高性能台式机，酷睿Ultra 200S Plus系列无疑是目前最值得考虑的选择。它在游戏、生产力和功耗性能平衡上，都给出了比上代更具竞争力的答案，这次Plus确实做到了名副其实的强化。&lt;/p&gt;
-&lt;p&gt;当然，如果你是极致多线程生产力用户且预算充足，上代285K或竞品的高端型号依然有其优势。但对于大多数游戏玩家和主流内容创作者来说，酷睿Ultra 200S Plus带来的性能增益、平台延续性和未来内存扩展潜力，已经足够让人心动，值得搭配七彩虹iGame Z890 ULTRA-S W V20主板这样的高颜值主板组建一套高端平台。&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 12:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1OZUlITGxZYXVpTkZ5LTlJRFlZbmU3b2FyOVptUGZJM1dSaVVqYXhJWV9kMmo5WjljV2kyN2ljZ0hoMHRmcVlXVUZPc0NtcXRsUFl4ZVo3QkQ</guid></item><item><title>国产无人机蜂群作战系统首次展示：仅需一人即可轻松操控96架 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111622.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月25日消息，3月25日消息，&lt;span&gt;&lt;strong&gt;今日央视节目对国产无人机蜂群作战系统进行了报道，这也是该系统的首次全流程展示。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;拒介绍，国产无人装备“阿特拉斯”无人机蜂群作战系统由蜂群2号陆战车、指控车、保障车共同构成。&lt;/p&gt;
-&lt;p&gt;在训练场打击区分别设置有3个外形相似的靶标，“&lt;strong&gt;阿特拉斯”无人机蜂群作战系统迅速完成协同侦察，自主识别其中的指控车目标，打开顶部发射盖发射无人机。无人机在空中迅速锁定目标，一击命中。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;蜂群2号陆战车采用3秒一发的间隔机制，利用时间差确保每架无人机拥有安全的飞行空间。&lt;/p&gt;
-&lt;p&gt;此外，蜂群无人机的发射种类和顺序，可根据作战需求灵活配置。要先探敌情就先射侦察无人机，要先压制敌人就先射干扰无人机，再射攻击无人机。精准适配多种作战场景，集群智慧，实时补位。&lt;/p&gt;
-&lt;p&gt;在任务执行过程中，近百架高速飞行的无人机不仅要在短时间内形成精准密集编队，还要自主规避气流干扰等因素，避免无人机之间出现碰撞。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;而“阿特拉斯”作战系统应用的集群控制算法赋予了每架无人机一个“智慧大脑”，让它们可以互相交流、共享信息，实时调整相对位置，实现整齐划一的编队效果。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;让人惊叹的是，如此庞大的空中作战，&lt;span&gt;&lt;strong&gt;仅需一名技术人员即可轻松操控96架无人机，当于一个人用一根线就牵住了近百只风筝。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;此外，这套系统还拥有大小不一的多种型号无人机，可以形成高低搭配，功能互补的集群战力。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/90eda936888d4a4ab13e59f53198093d.png" target="_blank"&gt;&lt;img alt="国产无人机蜂群作战系统首次展示：仅需一人即可轻松操控96架" h="395" src="//img1.mydrivers.com/img/20260325/s_90eda936888d4a4ab13e59f53198093d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/924cd770e29e45cfbfed390ce1befc3c.png" target="_blank"&gt;&lt;img alt="国产无人机蜂群作战系统首次展示：仅需一人即可轻松操控96架" h="388" src="//img1.mydrivers.com/img/20260325/s_924cd770e29e45cfbfed390ce1befc3c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260325/18b1e798ab2647a7b72f9cc5ebbeefac.png" target="_blank"&gt;&lt;img alt="国产无人机蜂群作战系统首次展示：仅需一人即可轻松操控96架" h="372" src="//img1.mydrivers.com/img/20260325/s_18b1e798ab2647a7b72f9cc5ebbeefac.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 11:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB4dzg2T3QzRHE0Wm1lak16YzJrdzBCTWtkTTNKR2U5ZU9uMkJmemEtRDdIRFhJUXNfRlhyXzJGb3owSHN5ZWdIdVc0SGZ2Y1lDd1lyVlE0WG0</guid></item><item><title>征服全球出行巨头！Lyft CEO亲测萝卜快跑：当场直呼Amazing - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111620.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;征服全球出行巨头！Lyft CEO亲测萝卜快跑：当场直呼Amazing&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-25 19:45:21  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1774704.html" title="王一的主页" class="newstiao4"&gt;王一&lt;/a&gt;&lt;p&gt;  编辑：王一 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111620-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月25日消息，今日，全球出行巨头Lyft首席执行官David Risher到访百度，&lt;span&gt;&lt;strong&gt;在北京亦庄实地试驾了乘萝卜快跑无人驾驶车辆，全程体验后当场用“Amazing”、“非常舒适”对萝卜快跑表达了高度认可。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;访问期间，David Risher与百度创始人李彦宏深入交流，并实地考察Apollo Park，全面了解萝卜快跑的技术研发、车队运营与全球拓展进展。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;亲身体验无人车的智能行驶、平稳操控与安全保障后，他对中国自动驾驶的成熟度与实用性给出极高评价。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/d6e57251-819d-4b70-ac8a-4e91ffd2b1d6.png" target="_blank"&gt;&lt;img alt="征服全球出行巨头！Lyft CEO亲测萝卜快跑：当场直呼Amazing" h="394" src="//img1.mydrivers.com/img/20260325/Sd6e57251-819d-4b70-ac8a-4e91ffd2b1d6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;双方合作早在2025年8月就已启动，萝卜快跑与Lyft达成战略合作，成为其欧洲市场核心合作伙伴。&lt;br&gt;
-&lt;br&gt;
-&lt;strong&gt;按照规划，双方将率先在德国、英国投放数百辆无人车，后续逐步扩大至数千辆规模，&lt;/strong&gt;推动无人驾驶在欧洲规模化落地。&lt;/p&gt;
-&lt;p&gt;同年12月，合作进一步升级，明确2026年在英国伦敦启动无人驾驶测试与出行服务。&lt;/p&gt;
-&lt;p&gt;目前萝卜快跑已在全球26座城市落地运营，覆盖迪拜、阿布扎比等多个海外地区，&lt;strong&gt;累计订单量突破2000万次，是全球落地范围最广、运营规模领先的无人驾驶出行平台之一。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260325/1d936237-d14a-4cd5-9374-d4b5c6df9cb0.png" target="_blank"&gt;&lt;img alt="征服全球出行巨头！Lyft CEO亲测萝卜快跑：当场直呼Amazing" h="417" src="//img1.mydrivers.com/img/20260325/S1d936237-d14a-4cd5-9374-d4b5c6df9cb0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：王一&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 25 Mar 2026 11:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5RemwzRUh5NVUtU2p3dkRhdlZ5X1doSXBHNlJKbGM5VFM3SWpHZm1WVXZzWnBIZXpzbGZMempjTGtoMlYwTFpGSHItYXBrOHA2NktYOW52Wno</guid></item></channel></rss>
+  &lt;p&gt;委员会将由白宫AI事务负责人萨克斯（David Sacks）和科学技术顾问克拉齐奥斯（Michael Kratsios）担任联席主席。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Wed, 25 Mar 2026 15:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBkbGJJdC1tcU1VNE5jT1J1NTJOUlUwQUN2enBuSmUyR0J1Q05IMF9OQWg4N3BDU05tUkZiNmNKYWpzRzlBSGVsV2dZSjF2Vk9aNFJCaGZOUm5Ua19hUGdGTlJ6WDdKcDZKX1E</guid></item><item><title>AI“抢饭碗”，硅谷大裁员！一线工程师戳破真相：AI效率被严重高估，人类被倒逼成审核员，工作量是过去10倍 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3768390</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 25 Mar 2026 15:20:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE03UUp2cHp6QUREMFJ5SUpCbWtiM0RRUGZlVndLMVg0aURYUUhxUVFCUXR2aFdsSXRLQ2JjRFpSc0hXbm9QN3E4WmJkeTQ1c1l3Q0M4</guid></item><item><title>谷歌发布KV缓存压缩技术，存储需求预期遭冲击，美股存储板块集体下挫 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3768391</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 25 Mar 2026 14:50:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE0wMlZDbHZJM2hBTTZrUlZQVVBST21VdTBQUktaLWRaczhoNXJMSUVic0dER1V3WU1uVlRQRU53OFQ3ODFvT2YydjhnZzU0bVBoUDZn</guid></item></channel></rss>
