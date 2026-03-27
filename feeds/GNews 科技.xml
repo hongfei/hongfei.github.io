@@ -1,5 +1,418 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>欧洲担忧俄罗斯准备向伊朗提供先进无人机 - 纽约时报中文网</title><link>https://cn.nytimes.com/world/20260327/iran-russia-europe-drones/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;俄罗斯对伊朗的军事支持对特朗普来说是一个棘手问题——他在乌克兰问题上多次站在俄罗斯一边，并且一直不愿对莫斯科施加更多压力。&lt;/p&gt;&lt;p class="article-paragraph"&gt;更棘手的是，伊朗战争导致油价飙升，而为了压低油价，特朗普最近放松了对俄罗斯石油的部分经济制裁。此举激怒了欧洲各国和泽连斯基，因为这为俄罗斯的战争机器提供了资金支持。&lt;/p&gt;&lt;p class="article-paragraph"&gt;而在莫斯科看来，对伊朗的援助某种程度上是对美国援助乌克兰的对等回应。&lt;/p&gt;&lt;p class="article-paragraph"&gt;在俄罗斯向伊朗提供援助之前，伊朗曾在2022年9月俄军处于低谷时向其提供了重要的军事援助，特别是提供了数百架伊朗的“见证者-136”无人机。&lt;/p&gt;&lt;p class="article-paragraph"&gt;此后，俄罗斯在距莫斯科约1000公里的鞑靼斯坦叶拉布加建立了自己的无人机生产基地。虽然俄罗斯专家最初是用伊朗的套件组装无人机，但如今该工厂的生产规模已大幅扩大。&lt;/p&gt;&lt;p class="article-paragraph"&gt;2023年初，该工厂每月产量约为100架无人机，现在月产量可达数千架。设计也发生了变化。俄罗斯工程师在原型基础上进行了改造，形成了具有明显俄罗斯特色的产品，采用本土机体、战斗部和导航系统。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Fri, 27 Mar 2026 02:07:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMickFVX3lxTE5aYmFyZllmNjlYNXpYM1hXb2NKREF4T0xmN3lUSERfRGF0WjJ3eEg1Rm9zcVlwai15d1pUR21jSHBNYm9LVFZidW84LVlVMW1vMjREYi1JTVUtZFpGMTNRNGhFT2p2eThyMFR0ckRQa1NGQQ</guid></item><item><title>208MB缓存怪兽降临！AMD锐龙9 9950X3D2正式发布：双堆叠史无前例 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111964.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>谷歌突破性算法震惊硅谷 华尔街激辩：内存需求要降温了？ - 财联社</title><link>https://www.cls.cn/detail/2325322</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社3月26日讯（编辑 刘蕊）&lt;/strong&gt;美东时间周二，谷歌发布了一个炸裂硅谷科技圈的最新算法：&lt;strong&gt;超高效AI内存压缩算法TurboQuant。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260326/2k3O3S1XhD_1569x738.png" alt="image"&gt;
+谷歌声称，这项算法可以在在不损失准确性的前提下，将大型语言模型运行时的缓存内存占用至少减少6倍、性能提升8倍，本质上，可以让人工智能在占用更少内存空间的同时记住更多信息。&lt;/p&gt;
+&lt;p&gt;这一算法一经发布，美股芯片股应声下挫。谷歌和华尔街也掀起了一场热烈讨论：&lt;strong&gt;当前困扰众多科技巨头的内存芯片短缺灾难是否可以就此终结了？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TurboQuant是什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;先来说说这项TurboQuant算法具体是什么。&lt;/p&gt;
+&lt;p&gt;根据谷歌在官方网站的介绍，TurboQuant是一种压缩方法，它能够在不损失任何精度的前提下大幅减小模型大小，因此非常适合支持键值缓存（KV Cache）压缩和向量搜索。它通过两个关键步骤实现这一点：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1、高质量压缩（PolarQuant method）：TurboQuant 首先随机旋转数据向量。这一巧妙的步骤简化了数据的几何结构，使得可以轻松地将标准的高质量量化器分别应用于向量的每个部分。第一阶段利用了大部分压缩能力（大部分比特）来保留原始向量的主要概念和特征。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2、消除隐藏误差：TurboQuant 使用少量剩余的压缩能力（仅1比特）将QJL算法应用于第一阶段遗留的微小误差。QJL 阶段充当数学误差检查器，消除偏差，从而获得更准确的注意力评分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;简单来说，&lt;strong&gt;TurboQuant本质上就是在保持AI模型核心结构不变的情况下压缩AI模型，而且无需预处理或特定的校准数据。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;谷歌声称，他们使用开源的长上下文模型（Gemma和Mistral ），在包括LongBench、Needle In A Haystack、ZeroSCROLLS、RULER和L-Eval在内的多项基准测试中，对 TurboQuant、PolarQuant 和KIVI这三种算法进行了严格评估。&lt;/p&gt;
+&lt;p&gt;实验数据表明，TurboQuant在点积失真和召回率方面均达到了最优评分性能，同时最大限度地减少了键值（KV）内存占用。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260326/GQ604R208h_1302x624.png" alt="image"&gt;&lt;/p&gt;
+&lt;h3&gt;上图展示了TurboQuant、PolarQuant 和KIVI基线算法在问答、代码生成和摘要等不同任务中的综合性能得分。&lt;/h3&gt;
+&lt;p&gt;谷歌称，TurboQuant在所有基准测试中均取得了完美的下游结果，同时将键值内存大小至少减少了6倍。&lt;/p&gt;
+&lt;p&gt;他们计划在下个月的ICLR 2026会议上展示他们的研究成果，以及展示实现这种压缩的两种方法：量化方法PolarQuant和名为QJL的训练和优化方法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;谷歌迎来DeepSeek时刻？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;谷歌的这一算法，令不少人联想到了HBO电视剧《硅谷》（2014年至2019年播出）中虚构的创业公司Pied Piper。在电视剧中，Pied Piper同样开发出一种突破性的压缩算法，能在近乎无损压缩的情况下大幅减小文件大小。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260326/fTbxaXG67U_789x927.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;而现实中的谷歌研究院发布的TurboQuant技术，同样致力于在不损失质量的前提下实现极致压缩，但它应用于人工智能系统的核心瓶颈。&lt;/p&gt;
+&lt;p&gt;Cloudflare首席执行官Matthew Prince等人甚至称之为&lt;strong&gt;谷歌的DeepSeek时刻&lt;/strong&gt;，认为其有望像DeepSeek一样，通过极高的效率收益大幅拉低AI的运行成本，同时在结果上保持竞争力。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260326/zE1f20IiY3_789x528.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;他在X上的一篇文章中写道：“在速度、内存使用、功耗和利用率方面，AI推理还有很大的优化空间。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内存芯片需求将会降温？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;谷歌的这一算法发布之际，正值全球存储芯片短缺问题日趋严峻的时刻。&lt;/p&gt;
+&lt;p&gt;由于全球各大巨头全力兴建AI基础设施，内存需求不断攀升，供不应求的现象短期内难以缓解。各大科技公司开发人员已经想出各种创新方法来克服或至少应对内存短缺，而谷歌的TurboQuant，目前被科技界人士认为，很可能成为一种给内存需求降温的可持续方案。&lt;/p&gt;
+&lt;p&gt;这一预期对于致力于建设AI基础设施的科技巨头们来说，自然是一件好事。但对于内存芯片厂商们来说，可能结果就不同了。&lt;/p&gt;
+&lt;p&gt;受到内存需求可能降温预期的影响，美东时间周三，美股存储芯片板块在开盘后不久就集体跳水：闪迪一度跌6.5%，美光科技跌4%，西部数据跌超4%，希捷科技跌超5%。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260326/6nhFK87oDj_825x656.png" alt="image"&gt;&lt;/p&gt;
+&lt;h3&gt;闪迪周三早盘一度大跌&lt;/h3&gt;
+&lt;p&gt;周四亚洲时段，截至发稿时SK海力士下跌4.42%，三星跌3.02%。&lt;/p&gt;
+&lt;p&gt;Futurum股票研究部门的Shay Boloor声称：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“市场认为这对内存类股票来说是一个潜在的不利因素，因为长上下文AI推理每个工作负载可能需要的内存现在可能大幅减少。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;大摩提出相反观点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不过，也有华尔街巨头提出了相反的看法。&lt;/p&gt;
+&lt;p&gt;比如，Lynx Equity Strategies分析师KC Rajkumar就提出，TurboQuant的技术“颠覆性”可能并没有媒体描述的那么夸张。&lt;/p&gt;
+&lt;p&gt;他表示，谷歌所谓的“8倍性能提升”是建立在与老旧的32-bit模型对比之上的，然而当前的推理模型早已广泛采用4-bit量化数据，因此性能提升幅度并没有那么夸张。&lt;/p&gt;
+&lt;p&gt;此外，摩根士丹利还指出，谷歌TurboQuant技术&lt;strong&gt;仅作用于推理阶段的键值缓存&lt;/strong&gt;，不影响模型权重所占用的HBM，也与训练任务无关。&lt;/p&gt;
+&lt;p&gt;因此，&lt;strong&gt;这并非存储总需求或硬件总量减少6倍，而是通过效率提升增加单GPU吞吐量&lt;/strong&gt;——相同硬件可支持4至8倍更长的上下文，或在不触发内存溢出的前提下显著提升批处理规模。&lt;/p&gt;
+&lt;p&gt;更重要的是，摩根士丹利进一步援引了&lt;strong&gt;“杰文斯悖论”&lt;/strong&gt;（Jevons Paradox），来解释内存需求不会降温的判断。&lt;/p&gt;
+&lt;p&gt;杰文斯悖论是经济学中的一个重要概念，指的是技术进步与资源消耗之间的一种反直觉关系。其定义是：&lt;strong&gt;当技术进步提高了效率，资源消耗不仅没有减少，反而激增。&lt;/strong&gt;例如，瓦特改良的蒸汽机让煤炭燃烧更加高效，但结果却是煤炭需求飙升。&lt;/p&gt;
+&lt;p&gt;摩根士丹利认为，通过大幅降低单次查询的服务成本，TurboQuant能够让原本只能在云端昂贵集群上运行的模型迁移至本地，有效降低AI规模化部署的门槛，这可能反而能进一步提振整体需求。&lt;/p&gt;
+&lt;p&gt;实际上，Cloudflare首席执行官Matthew Prince等人提到的DeepSeek，就是杰文斯悖论的最鲜明例子：在DeepSeek去年年初刚刚发布时，市场也一度担忧AI硬件需求将会降温，但事实是，效率的提升带来了AI应用的进一步普及，AI硬件需求也再次升温。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Fri, 27 Mar 2026 05:39:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE9DTXdkS0FtcGk2alZVaGwxcGIyOEZYYjlESFluTXhnYm52YnNxT1lYMU51b253VWs3OGh3RmlHc0psUDJQRUNHUw</guid></item><item><title>Arm CEO自信：AGI CPU是Intel/AMD的麻烦、不会得罪NVIDIA - 驱动之家</title><link>https://news.mydrivers.com/1/1112/1112000.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;Arm CEO自信：AGI CPU是Intel/AMD的麻烦、不会得罪NVIDIA&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 11:32:01  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1112000-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，Arm日前正式推出了首款自研数据中心CPU AGI CPU，Arm CEO Rene Haas预测，到2031年，该芯片通过机架级配置每年将为公司创造约150亿美元的收入。&lt;/p&gt;
+&lt;p&gt;对于外界最关心的既当裁判又当选手的质疑，&lt;span&gt;&lt;strong&gt;Haas以微软Surface和谷歌Pixel手机为例进行辩解，称这种转型是为了扩大Arm架构的生态影响力，而非抢夺合作伙伴的生意。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;他甚至戏称，推出AGI CPU可能会让Intel和AMD感到麻烦，但绝不会惹恼NVIDIA CEO黄仁勋，因为Arm生态的壮大对所有人都有利。&lt;/p&gt;
+&lt;p&gt;他表示：“我使用‘惹恼’是开玩笑的说法，我们构建芯片对Arm生态系统有利，对黄仁勋也有利。&lt;strong&gt;如果你有Vera芯片，这是一个伟大的产品，你有Arm AGI CPU，这也是一个伟大的产品，这对Intel和AMD来说不是好事，这就是我所知道的。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前，Meta已确认成为该产品的首批客户，计划将其集成到基于MTIA ASIC的机架方案中，此外，SK海力士、思科、SAP和Cloudflare等巨头也出现在潜在大客户名单中。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/0189c787-c4a4-4bd2-a1c7-9289f7f56909.jpg" target="_blank"&gt;&lt;img alt="Arm CEO自信：AGI CPU是Intel/AMD的麻烦、不会得罪NVIDIA" h="337" src="//img1.mydrivers.com/img/20260327/S0189c787-c4a4-4bd2-a1c7-9289f7f56909.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 03:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE01NVdSMGhiWlFnSmJGMzd2cW5CRzJCTi1NWDVPWDVIY05hck5VSTFZdV90MHF1RlhUNHpBUzJYR2gxR283YWtUV1gtZG44WHJtSWp0S1ZEdlE</guid></item><item><title>11.4GB/s！三星全新QLC硬盘亮相：为个人AI计算打造 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111996.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;11.4GB/s！三星全新QLC硬盘亮相：为个人AI计算打造&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 11:24:29  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111996-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，&lt;strong&gt;今天三星展出了型号为BM9K1的新一代QLC固态硬盘，采用单面单颗封装设计。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/2f867e11-5f27-4db7-b8c9-d2d0df7938a8.jpg" target="_blank"&gt;&lt;img alt="11.4GB/s！三星全新QLC硬盘亮相：为个人AI计算打造" h="450" src="//img1.mydrivers.com/img/20260327/S2f867e11-5f27-4db7-b8c9-d2d0df7938a8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该产品定位超值型QLC SSD，通过PCIe Gen5协议实现了性能跨越，旨在解决个人AI计算对高带宽与低能耗的双重需求。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/4eefb6b9-5854-4cbf-830b-66d177482c3f.jpg" target="_blank"&gt;&lt;img alt="11.4GB/s！三星全新QLC硬盘亮相：为个人AI计算打造" h="450" src="//img1.mydrivers.com/img/20260327/S4eefb6b9-5854-4cbf-830b-66d177482c3f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心性能上，得益于PCIe 5.0的加持，BM9K1顺序读取速度最高可达11.4GB/s，达到了前代产品BM9C1的1.6倍。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;三星在该硬盘上采用了基于RISC-V架构的自研控制器，灵活性极高，能够更好地支持定制化计算任务，同时将能效比相比BM9C1提升了23%。&lt;/p&gt;
+&lt;p&gt;根据产品规划，BM9K1预计将于2027年正式上市，初期提供512GB、1TB及2TB容量版本。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/77956388-fb87-4887-9073-807f2d218077.jpg" target="_blank"&gt;&lt;img alt="11.4GB/s！三星全新QLC硬盘亮相：为个人AI计算打造" h="450" src="//img1.mydrivers.com/img/20260327/S77956388-fb87-4887-9073-807f2d218077.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/aedd09b6-bbc4-4b05-8cad-fd679eef274f.jpg" target="_blank"&gt;&lt;img alt="11.4GB/s！三星全新QLC硬盘亮相：为个人AI计算打造" h="449" src="//img1.mydrivers.com/img/20260327/Saedd09b6-bbc4-4b05-8cad-fd679eef274f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 03:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1rVHdrYVBoSXZDaTljVTVzV1lob1A3aUNLLUpUT3FsQl9TcWE0dHlUSUo1aElRbW1rVFNmUTFPT0ZLc2phOUNIYzBLTmVpbnpRcm00MmFReVM</guid></item><item><title>口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111987.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，雷鸟Air 4 Pro是全球首款支持HDR10显示的智能眼镜，&lt;strong&gt;今天，其蝙蝠侠限定版正式发布，售价1899元，国补到手价1572元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;现在这款新品已经来到我们评测室，下面为大家带来图赏。&lt;/p&gt;
+&lt;p&gt;雷鸟Air 4 Pro蝙蝠侠限定版将蝙蝠侠视觉语言及角色调性融入眼镜本身的材质肌理、光影变化与结构秩序之中，&lt;strong&gt;配备Air 4 Pro智能眼镜、蝙蝠侠角色专属遮光罩、专属蝙蝠侠标志支架及多个彩蛋，共有“正义限定版”和“混沌限定版”两个版本。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这款产品仅76g，采用黄金前后配重比例，搭配9档镜腿与3档鼻托调节，适配多数人脸型，同时支持近视配镜，兼顾舒适与实用性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心亮点是Pixelworks定制Vision 4000画质芯片，搭配TCL孔雀光引擎2.0与5.5代Micro-OLED双层屏，实现1200nits峰值亮度、200000:1超高对比度&lt;/strong&gt;，覆盖98% DCI-P3广色域，色准ΔE&amp;lt;2，可呈现10.7亿色彩，画质较传统眼镜大幅提升。&lt;/p&gt;
+&lt;p&gt;音质方面，雷鸟与丹麦B&amp;amp;O实验室联调四扬声器，首创导音鳍技术，减少80%声音损耗，带来耳机级听感。轻语与环绕双模式，兼顾私密与沉浸，满足不同场景需求。&lt;/p&gt;
+&lt;p&gt;兼容性上，&lt;strong&gt;雷鸟Air 4 Pro支持手机、电脑、Switch 2、PS5等全设备连接，搭配专属转接器可实现边充边用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其AI算法支持普通照片转3D、SDR实时转HDR，让普通内容也能享受HDR质感，135英寸巨幕效果随时随地呈现。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/e2bde602-6269-45ec-8da9-237ffa4eea44.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/Se2bde602-6269-45ec-8da9-237ffa4eea44.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/d75c7a5d-64e7-471e-b20c-c40fb79429ac.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/Sd75c7a5d-64e7-471e-b20c-c40fb79429ac.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/8e0ee363-eba2-4c97-ac49-197f66bc4b20.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S8e0ee363-eba2-4c97-ac49-197f66bc4b20.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/7ac97409-a07b-4824-9749-51619f174c2f.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S7ac97409-a07b-4824-9749-51619f174c2f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/ecc86109-f22d-4a88-8d58-5d0351658401.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="1140" src="//img1.mydrivers.com/img/20260327/Secc86109-f22d-4a88-8d58-5d0351658401.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/368ff27a-d809-4473-85bb-abf5e4c362aa.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="800" src="//img1.mydrivers.com/img/20260327/S368ff27a-d809-4473-85bb-abf5e4c362aa.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/c399003d-0e46-4910-b79b-acb4b150de5b.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="450" src="//img1.mydrivers.com/img/20260327/Sc399003d-0e46-4910-b79b-acb4b150de5b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/c377166a-ca46-4f51-9c91-833e4c90f9db.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="450" src="//img1.mydrivers.com/img/20260327/Sc377166a-ca46-4f51-9c91-833e4c90f9db.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/193cdd36-e648-43ae-a4dc-716a992b5004.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="450" src="//img1.mydrivers.com/img/20260327/S193cdd36-e648-43ae-a4dc-716a992b5004.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/f53d9696-dda7-4580-b803-0c9235108d74.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/Sf53d9696-dda7-4580-b803-0c9235108d74.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/cb4706ab-8609-492a-a6eb-5abd0b62b4bc.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/Scb4706ab-8609-492a-a6eb-5abd0b62b4bc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/ea230d21-7530-468d-9ade-38c3eea96a10.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/Sea230d21-7530-468d-9ade-38c3eea96a10.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/c7e9755e-1356-4310-aebe-4983942f4245.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/Sc7e9755e-1356-4310-aebe-4983942f4245.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/dbf2c443-b5a5-4cec-91c0-daa99e841ff1.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/Sdbf2c443-b5a5-4cec-91c0-daa99e841ff1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/46999bd7-b1b0-41de-9b01-6c8b30811f2c.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S46999bd7-b1b0-41de-9b01-6c8b30811f2c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/6fbc4720-3d16-4625-a376-96f859f8540d.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S6fbc4720-3d16-4625-a376-96f859f8540d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/c85709f9-4777-4c28-ac16-8c545a025a42.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/Sc85709f9-4777-4c28-ac16-8c545a025a42.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/ff78ef51-62c4-4626-b1e2-89c6e9cd9d10.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/Sff78ef51-62c4-4626-b1e2-89c6e9cd9d10.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/4795652d-b772-491b-8075-c7f05d79a22d.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S4795652d-b772-491b-8075-c7f05d79a22d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/0e577f0f-d478-45ab-bc5f-872f40cc0125.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S0e577f0f-d478-45ab-bc5f-872f40cc0125.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/71a381ad-9bf2-45fb-849f-277bad800344.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/S71a381ad-9bf2-45fb-849f-277bad800344.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/cd52014e-c5ad-422a-bb5c-91e21406becd.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/Scd52014e-c5ad-422a-bb5c-91e21406becd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/2ff575fc-4c98-4b12-a985-e944b270e88d.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S2ff575fc-4c98-4b12-a985-e944b270e88d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/5f7ac158-ca34-462d-9243-9b109f05108d.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S5f7ac158-ca34-462d-9243-9b109f05108d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/177e8c52-d311-475d-b857-3218b363a9dc.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/S177e8c52-d311-475d-b857-3218b363a9dc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/2007e2a0-6943-4fa8-96e6-9b958877be0f.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/S2007e2a0-6943-4fa8-96e6-9b958877be0f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/8e00f2e4-894f-4e94-ac6e-1cf5637c3b83.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="399" src="//img1.mydrivers.com/img/20260327/S8e00f2e4-894f-4e94-ac6e-1cf5637c3b83.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/7c3e107c-f36f-4dc8-a3c8-c5763c680553.jpg" target="_blank"&gt;&lt;img alt="口袋里的135英寸HDR巨幕！雷鸟Air 4 Pro蝙蝠侠图赏" h="400" src="//img1.mydrivers.com/img/20260327/S7c3e107c-f36f-4dc8-a3c8-c5763c680553.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 03:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBDV0NBU05OdUp3STF6YXF5eFRqVTBnTUdBLU1ucXptRllSLUZ5ZkM3dmJDSm5fUEZlNUJRTzAxaU5fQm9wTDhCZmtObWhsQXlfendMSy1jSVE</guid></item><item><title>国产旗舰CMOS来了！思特威SC5A6XS发布：5000万像素、1英寸大底 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111986.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;国产旗舰手机CMOS来了！思特威SC5A6XS发布：5000万像素、1英寸大底&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 10:55:37  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1391597.html" title="拾柒的主页" class="newstiao4"&gt;拾柒&lt;/a&gt;&lt;p&gt;  编辑：拾柒 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111986-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，今日，&lt;strong&gt;国产CMOS图像传感器厂商思特威发布旗舰级手机CMOS图像传感器——SC5A6XS，&lt;/strong&gt;目前该传感器已接受送样，预计2026年第二季度实现量产。&lt;/p&gt;
+&lt;p&gt;该传感器具备超高动态范围、超高感度、100%全像素对焦、超低功耗等多项优势。&lt;/p&gt;
+&lt;p&gt;具体来看，&lt;span&gt;&lt;strong&gt;SC5A6XS拥有5000万像素，采用1英寸大底与1.6μm超大像素尺寸，首发搭载思特威全新一代Lofic HDR 3.0技术，&lt;/strong&gt;&lt;/span&gt;大幅优化Lofic HDR模式成像质量，实现无惧昼夜的全场景超高动态范围拍摄能力。&lt;/p&gt;
+&lt;p&gt;在动态范围表现上，该传感器最高支持115dB，相比前代提升约5dB，在强光与暗部对比明显的环境中，可有效保留高光细节、抑制过曝，同时减少暗部信息丢失，画面层次更加丰富。&lt;/p&gt;
+&lt;p&gt;思特威表示，Lofic HDR 3.0技术由单次曝光下的三帧融合实现，在实现超高动态范围的同时还能有效抑制运动伪影的产生，保障清晰无拖影的高动态范围视频拍摄效果。&lt;/p&gt;
+&lt;p&gt;此外，&lt;strong&gt;SC5A6XS支持4K 120fps高帧率视频，并可在Lofic HDR 3.0模式下实现4K 60fps高动态范围视频输出，&lt;/strong&gt;兼顾流畅性与画质表现。&lt;/p&gt;
+&lt;p&gt;功耗控制同样是本次升级重点。SC5A6XS采用全新低功耗方案，在Lofic HDR 3.0模式下功耗较前代降低约11%，有助于降低拍摄发热、延长高规格视频录制时长，同时提升整机续航表现。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260327/eb4528cacd7f40639fe33f935ab7c687.png" target="_blank"&gt;&lt;img alt="国产旗舰CMOS来了！思特威SC5A6XS发布：5000万像素、1英寸大底" h="386" src="//img1.mydrivers.com/img/20260327/s_eb4528cacd7f40639fe33f935ab7c687.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 02:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1YX3RHdzBKbkNBZUdtTzkxYUZlYlo5NElyV2RLQzhMT0k0aGp4d09ZcW5LaW5ydHcwdUx5SDV1LWNBVWt1c20ySTdoOG9tTmlEb1V1MjgxZnA</guid></item><item><title>折叠屏再无折痕顾虑！OPPO Find N6手机评测：超平展内屏开创历史 哈苏XPAN模式体验胶卷荣光 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111983.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           
+&lt;p&gt;&lt;strong&gt;一、前言：折叠屏最大痛点解决了？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2026年，折叠屏手机进入大众视野已满八载。即使技术经历了长足的发展，折痕问题依然是用户对该类产品最大的顾虑，而且坊间传闻苹果一直没有推出折叠屏产品，就是因为无法解决折痕问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这次OPPO最新的折叠屏旗舰：Find N6的推出，标志着行业在折痕控制领域取得了实质性突破。这种技术方案的成熟度不仅在Find N6上得到了验证，更有消息指出苹果可能会借鉴类似的思路来打磨其首款折叠屏产品。这一动向充分证明了OPPO Find N6在内屏平整度以及折痕优化方面的表现已达到行业领先水平。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/2f8d6710-066f-4e94-8fa5-fff2235e1f19.jpg" target="_blank"&gt;&lt;img alt="折叠屏再无折痕顾虑！OPPO Find N6手机评测：超平展内屏开创历史 哈苏XPAN模式体验胶卷荣光" h="532" src="//img1.mydrivers.com/img/20260327/S2f8d6710-066f-4e94-8fa5-fff2235e1f19.jpg" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OPPO Find N6为了解决折痕，让屏幕更加平展，从铰链结构到屏幕材料全面进化，使用了大量的新技术、新结构和新材料，才让折叠屏的平展度上了一个新的台阶。&lt;/p&gt;
+&lt;p&gt;新一代的&lt;strong&gt;钛合金天穹铰链&lt;/strong&gt;，在行业内首次使用&lt;strong&gt;仿生对称四轴结构&lt;/strong&gt;，结构上更加平整，扭力模组从三轴提升到对称四轴，扭力提升20%，折叠手感更加丝滑平顺，对屏幕的支撑面积更大，受力也更均匀。&lt;/p&gt;
+&lt;p&gt;OPPO Find N6的铰链本体采用&lt;strong&gt;芯片级高分子3D打印技术&lt;/strong&gt;，对每一根转轴进行单独扫描，精准控制5pL级高分子材料填充，辅以毫秒级紫外光固化，经过40余轮的扫描打印，最终将中板平整度提升75%，为屏幕折痕处提供一个超平整的支撑。&lt;/p&gt;
+&lt;p&gt;铰链翼板更采用了&lt;strong&gt;航天级钛合金3D打印工艺&lt;/strong&gt;制造，实现最薄处仅0.15mm的超精密结构，同时结构强度也比铝合金翻倍，让铰链的耐用性也无需担心。&lt;/p&gt;
+&lt;p&gt;除了铰链更耐用更平整之外，折叠屏的另一个痛点，就是新机折痕很浅，但经过反复折叠之后，折痕逐渐加深，无法修复。为了解决这个问题，OPPO Find N6的屏幕升级全新天穹记忆玻璃，采用全新玻璃基材加深度化学强化，有效减轻反复折叠中产生的不可逆蠕变，极大地改善了折痕越用越深的现象。&lt;/p&gt;
+&lt;p&gt;而且全新的&lt;strong&gt;天穹记忆玻璃也拥有类似记忆合金一般的强大自我恢复能力&lt;/strong&gt;，展开之后折痕会在一两个小时内自行减轻，悄然淡化，用户使用内屏的时间越久，内屏就越平展。&lt;/p&gt;
+&lt;p&gt;OPPO Find N6通过了德国莱茵TÜV无感折痕“连续60万次折叠测试 久用平整”认证，更是德国莱茵实验室测试过的最平整折手机。&lt;/p&gt;
+&lt;p&gt;这样一台突破折叠屏最大痛点的旗舰，自然不会在其他方面留下遗憾。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OPPO Find N6搭载了第五代骁龙8至尊版处理器，最高16GB+1TB的存储配置，IP56/58/59防水，内外屏均支持最低1nits低亮度显示、1—120Hz动态刷新、2160Hz高频PWM调光、类DC调光，1800nits全局峰值亮度，6000mAh冰川电池，支持80W超级闪充和50W无线闪充，最高配还支持卫星通讯，各方面都毫无短板。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OPPO Find N6在影像方面也是旗舰级的，哈苏2亿像素超清4摄的硬件配置，哈苏大师模式和大师级哈苏人像模式，无论是摄影爱好者还是普通用户，都能拍出满意的照片，传奇的哈苏XPAN宽幅相机也在OPPO Find N6获得了数字新生，在手机上复刻了胶卷相机沉浸式拍摄的仪式感。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OPPO Find N6的核心参数规格如下：&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/77ba338e-81a3-4b19-8b3b-1be2b9e0d118.png" target="_blank"&gt;&lt;img alt="折叠屏再无折痕顾虑！OPPO Find N6手机评测：超平展内屏开创历史 哈苏XPAN模式体验胶卷荣光" h="581" src="//img1.mydrivers.com/img/20260327/S77ba338e-81a3-4b19-8b3b-1be2b9e0d118.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 02:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE85Y1JEZVRfLWNKWmlqM2dZdk80OU9PLUk5M29xS0ZUcTZSelVnN200aHVlektGZXBscm9sX1JlSmlDSWxOY1VwdUpyTlVaNU9zbVZLVmJ2d0s</guid></item><item><title>OpenClaw之父：在美国用了被开除，在中国正好相反 - guancha.cn</title><link>https://www.guancha.cn/internation/2026_03_27_811585.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	【文/观察者网 王一】“在美国，你用了OpenClaw可能会被有些公司开除；而在中国，你不用反而会被很多公司开除。”OpenClaw之父彼得·斯坦伯格（Peter Steinberger）在3月27日刊发的美国彭博社采访中，用一句话道出了中美两国在人工智能（AI）应用上的显著差异。
+&lt;/p&gt;
+&lt;p&gt;
+	而在美媒看来，这种中美两国民众在接受尖端AI产品上的巨大鸿沟，可能会对两国之间的技术竞争产生影响。
+&lt;/p&gt;
+&lt;p&gt;
+	OpenClaw原本只是奥地利程序员斯坦伯格的一个“周末项目”，它就像一个“AI代理人”，获得本地操作权限后能帮人完成订机票、管理日程等多种任务。去年11月推出后，这款工具迅速风靡科技圈，英伟达首席执行官黄仁勋评价其为“人类历史上最成功的开源项目”。
+&lt;/p&gt;
+&lt;p&gt;
+	就在前不久，中国也掀起了一股“养龙虾”热潮，因OpenClaw的标识是一只红色龙虾，网友们戏称其为“养龙虾”。
+&lt;/p&gt;
+&lt;p&gt;
+	彭博社注意到，从学生、职场人士到老年群体，大量中国用户主动尝试该工具，部分企业甚至要求员工必须使用OpenClaw。尽管监管部门出于安全考量已限制其在国有企业和政府机构中的应用，中国仍在一定程度上成为AI系统深度介入个人生活的“试验场”。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/03/27/20260327092606223.jpg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	在中国北京，人们排队等待安装OpenClaw。&lt;span&gt; 视频截图&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	中国的“OpenClaw热”也引起了其创始人、上月刚加入OpenAI参与AI代理相关研发的斯坦伯格的注意。
+&lt;/p&gt;
+&lt;p&gt;
+	“我能理解现在这种疯狂的局面，因为我也经历过类似的阶段。”斯坦伯格在采访中透露，他近期在英伟达年度GTC大会期间，与包括MiniMax、Kimi、腾讯在内的多家中国企业交流过，切身感受到了中国这一轮AI热潮的强度。
+&lt;/p&gt;
+&lt;p&gt;
+	他认为，这种热情源于人们意识到，“这玩意儿可以读取我的所有邮件，访问我的日历，还能帮我整理文档。它还可以连接到我家，查看我的消息，处理我的客服请求”，“这些人现在经历的，正是许多工程师在过去一年里经历的那种顿悟时刻”。
+&lt;/p&gt;
+&lt;p&gt;
+	“那段时间我彻夜难眠。那真是一个意义非凡的时刻，我很高兴能够让不同背景的人更深入地了解AI。”斯坦伯格说。
+&lt;/p&gt;
+&lt;p&gt;
+	与中国积极拥抱OpenClaw不同，美国市场反应相对谨慎。尽管该工具在开发者和早期用户中引发关注，但尚未形成类似的全民热潮。一些美国企业出于对AI代理安全风险的担忧，甚至已开始限制员工使用相关工具。
+&lt;/p&gt;
+&lt;p&gt;
+	“在美国，你用了OpenClaw可能会被有些公司开除；而在中国，你不用反而会被很多公司开除。”斯坦伯格称，有人在交流中甚至给他看了一份表格，上面列着每个员工的名字，每个单元格都写着“他们今天进行了哪些自动化”，中国“真的在积极地引导员工思考如何才能实现10倍效率”。
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Fri, 27 Mar 2026 02:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFA2T0dxXzNtOElGS1E3UTRINDBJR1pTU2c0VTNHeW8zdnZxVmFDeFBVWV9CR2Q5SmwzS2otQ1ZPTmZQVjZacS0wX20xeHoyeDB6RURfMElvOHJhY0F2RTd0VTJ3TnFELUEzTmc</guid></item><item><title>一个时代落幕！卢伟冰回应小米MIUI停更：向全生态AIOS加速前进 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111968.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;一个时代落幕！卢伟冰回应小米MIUI停更：向全生态AIOS加速前进&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 10:17:09  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111968-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，一个时代的落幕正式到来。小米已经终止了全球范围内所有MIUI设备的系统更新，这意味着运行长达15年的经典安卓定制系统MIUI，自此彻底退出了历史舞台。&lt;/p&gt;
+&lt;p&gt;最后告别更新序列的是REDMI A2与REDMI A2+。这两款机型在2024年12月接收了最后一次版本更新，此后仅维持基础的安全补丁推送。直至今年3月24日，所有的支持工作宣告全面停止。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260327/16d4919eb7404edf81d1827c187d6757.png" target="_blank"&gt;&lt;img alt="一个时代落幕！卢伟冰回应小米MIUI停更：向全生态AIOS加速前进" h="455" src="//img1.mydrivers.com/img/20260327/s_16d4919eb7404edf81d1827c187d6757.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;回望过去，MIUI的传奇始于2010年8月。彼时小米手机尚未问世，首个MIUI版本基于Android 2.2系统开发，以第三方ROM的形式惊艳亮相。它凭借人性化的交互设计，迅速成为了早期安卓发烧友的装机首选。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从最初的草根社区起步，到如今拥有数亿用户，MIUI见证了中国智能手机行业的黄金十年。它的每一个版本迭代，都承载着广大米粉对手机系统个性化与流畅度的极致追求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;针对MIUI正式谢幕的消息，小米集团合伙人、总裁卢伟冰今日公开发声。他不仅表达了对米粉老朋友们的感谢，更明确了未来的战略方向。小米澎湃OS将作为接棒者，全面开启AI与操作系统的深度融合。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;未来的小米将向着全生态AIOS加速前进。澎湃OS不再仅仅是一个手机系统，而是连接人、车、家全场景的底层架构。随着AI大模型能力的持续注入，用户将迎来更具智慧感的自然交互体验。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260327/e0ceb19829154d14867cc4a0603ad796.png" target="_blank"&gt;&lt;img alt="一个时代落幕！卢伟冰回应小米MIUI停更：向全生态AIOS加速前进" h="286" src="//img1.mydrivers.com/img/20260327/s_e0ceb19829154d14867cc4a0603ad796.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 02:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9lNDFhUE1jVlY3RS1tQXZ4UjI0cHVzdXFLeldzOUQyT1RmbkFtalRTd2RfVEUyWklneW1XM3pEQlIzR2UwTFB5YmZPa1BJMlg0WXpjcHNhaHM</guid></item><item><title>欧洲担忧俄罗斯准备向伊朗提供先进无人机 - 纽约时报中文网</title><link>https://cn.nytimes.com/world/20260327/iran-russia-europe-drones/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;俄罗斯对伊朗的军事支持对特朗普来说是一个棘手问题——他在乌克兰问题上多次站在俄罗斯一边，并且一直不愿对莫斯科施加更多压力。&lt;/p&gt;&lt;p class="article-paragraph"&gt;更棘手的是，伊朗战争导致油价飙升，而为了压低油价，特朗普最近放松了对俄罗斯石油的部分经济制裁。此举激怒了欧洲各国和泽连斯基，因为这为俄罗斯的战争机器提供了资金支持。&lt;/p&gt;&lt;p class="article-paragraph"&gt;而在莫斯科看来，对伊朗的援助某种程度上是对美国援助乌克兰的对等回应。&lt;/p&gt;&lt;p class="article-paragraph"&gt;在俄罗斯向伊朗提供援助之前，伊朗曾在2022年9月俄军处于低谷时向其提供了重要的军事援助，特别是提供了数百架伊朗的“见证者-136”无人机。&lt;/p&gt;&lt;p class="article-paragraph"&gt;此后，俄罗斯在距莫斯科约1000公里的鞑靼斯坦叶拉布加建立了自己的无人机生产基地。虽然俄罗斯专家最初是用伊朗的套件组装无人机，但如今该工厂的生产规模已大幅扩大。&lt;/p&gt;&lt;p class="article-paragraph"&gt;2023年初，该工厂每月产量约为100架无人机，现在月产量可达数千架。设计也发生了变化。俄罗斯工程师在原型基础上进行了改造，形成了具有明显俄罗斯特色的产品，采用本土机体、战斗部和导航系统。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Fri, 27 Mar 2026 02:07:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMickFVX3lxTE5aYmFyZllmNjlYNXpYM1hXb2NKREF4T0xmN3lUSERfRGF0WjJ3eEg1Rm9zcVlwai15d1pUR21jSHBNYm9LVFZidW84LVlVMW1vMjREYi1JTVUtZFpGMTNRNGhFT2p2eThyMFR0ckRQa1NGQQ</guid></item><item><title>208MB缓存怪兽降临！AMD锐龙9 9950X3D2正式发布：双堆叠史无前例 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111964.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;208MB缓存怪兽降临！AMD锐龙9 9950X3D2正式发布：双堆叠史无前例&lt;/p&gt;
           
@@ -110,7 +523,9 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 01:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5WLWU2M1dYUjFyQzFWY1YyQ090bUI0MmlWeW9RcWk4S2VfbF85TnZFcUFPTEhZOEFGNjgwN1NIOFhIdVIwYlRGVVRmRXZOenZtWjdQMnllWS0</guid></item><item><title>游客因拍照设备太专业被景区驱赶：给老婆拍照也不行？景区是否有权以设备规格划线？ - 风闻</title><link>https://user.guancha.cn/main/content?id=1623554</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 01:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5WLWU2M1dYUjFyQzFWY1YyQ090bUI0MmlWeW9RcWk4S2VfbF85TnZFcUFPTEhZOEFGNjgwN1NIOFhIdVIwYlRGVVRmRXZOenZtWjdQMnllWS0</guid></item><item><title>追觅发布严正声明 - 财联社</title><link>https://www.cls.cn/detail/2326387</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;财联社3月27日讯，据廉洁追觅微信公众号消息，3月26日，追觅科技监察部发布声明称：&lt;/p&gt;
+&lt;p&gt;近期，多个网络平台频繁出现针对我司创始人俞浩先生的不实谣言，我司在第一时间固定证据，并进行报警处理，目前查获袁某等多人冒充俞浩先生网络身份，编造、散播不实、虚假信息，现均已被依法处理。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260327/3zERPmpMCO_1080x1535.png" alt="image"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Fri, 27 Mar 2026 01:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBlTGM5YUpaekZQX3pzX0gwSnZ1NE9EQkl0ZHQ4d2RabktkRlBmelRzRlctYmJuMEwzWjRCSWlIdXNFLXc4QXFQbw</guid></item><item><title>游客因拍照设备太专业被景区驱赶：给老婆拍照也不行？景区是否有权以设备规格划线？ - 风闻</title><link>https://user.guancha.cn/main/content?id=1623554</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
 							&lt;p&gt;3月26日，河南游客沙先生向媒体反映，他在开封万岁山景区游玩时，用专业设备帮妻子拍照，3次被工作人员阻拦、驱赶。“他们说是景区禁止外来商业拍摄。我现场打开微信聊天，证明我们是夫妻关系还是不行，说禁止携带专业道具设备。”他一气之下举起手机拍摄了对话视频。&lt;/p&gt;&lt;p&gt;视频中，沙先生一再质问“这是我老婆，我给我自己的老婆拍照也不行？”对方则表示，景区规定不可以拍，有什么疑问可以去服务台询问相关规定。对此，万岁山景区工作人员回应，景区从2月份开始禁止商业拍摄，普通游客可使用手机、相机拍摄，但不能使用支架、闪光灯等设备，目的是保障所有游客的游览体验。&lt;/p&gt;&lt;p&gt;记者询问如果自己携带专业设备进入拍照，是否可行。对方说：“里边的摄影师需要办理工作证，穿统一的马甲，否则会被驱离。”记者在指定直播间看到，服务项目中，19.9元拍6选1，69元20选4，159元50选8，99元30选6。&lt;/p&gt;&lt;p&gt;记者询问上述服务的具体内容，主播介绍，景区内摄影师都是穿马甲的官方摄影师，“50选8，就是拍50张，给你精修8张，剩余42张给你原片，不精修。”据公开报道，万岁山近些年爆火出圈后游客数量不断攀升，2025年游客量超过2452万人次，景区内NPC演员就有2000余名。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/03/27/20260327082735903.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;													&lt;/div&gt;
 						
 						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Fri, 27 Mar 2026 00:54:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE0tUWVHR0JjWEQ3UnhrWXpfMlhCUGN2cWJTY05tQmlPR0REek8wYU02SWlKLXBJTkVBUVZrNHBkZFFLZ3F5VExLM3hSMXZjVkNsUF9LNmlwLU1IdzA</guid></item><item><title>林俊旸离职后首次发声！复盘千问的弯路，指出AI的新路 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3768529</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 27 Mar 2026 00:23:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFAtZHFPRmkySEtQWUJTdjRZUmxfSUFNTjg3Q2VWMGx5V0Iza2FfeXEwRl9iSFBHNnVlejVVaXd6Qi1DdFhCc3J2SUxSVTU0cGdJejNn</guid></item><item><title>换AI不用从零开始了 谷歌Gemini支持一键记忆导入 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111946.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
@@ -199,7 +614,91 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 00:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1VOUNaeHppZHBxeTExUHVERWR1SnpEd1VnRnM5dHZ0YTdhandNeEJ5SWc4MUdQeEtUaGVJWS1JRFMtQ3lBTDRWN2l0ZW02eTFocHlZSEpjdlY</guid></item><item><title>一个时代结束！苹果5.5万元的Mac Pro停售停产：Mac Studio才是未来 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111940.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 00:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1VOUNaeHppZHBxeTExUHVERWR1SnpEd1VnRnM5dHZ0YTdhandNeEJ5SWc4MUdQeEtUaGVJWS1JRFMtQ3lBTDRWN2l0ZW02eTFocHlZSEpjdlY</guid></item><item><title>苹果为应对AI企业挖角 向iPhone设计师发放罕见奖金 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111944.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;苹果为应对AI企业挖角 向iPhone设计师发放罕见奖金&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 08:14:02  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111944-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，据媒体报道，&lt;strong&gt;苹果公司本周向iPhone硬件设计师发放了罕见的特别奖金，以防他们流向OpenAI等正在开发自有设备的AI公司。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据知情人士透露，&lt;span&gt;&lt;strong&gt;苹果为iPhone产品设计团队的许多成员发放了额外奖金，金额高达数十万美元，以股票形式发放，将在四年内逐步归属。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这意味着员工必须继续留在苹果才能获得全部价值，这也是苹果股票薪酬方案中的典型结构。这些奖金是在常规奖金之外发放的，在许多情况下，整个归属期内价值约为20万至40万美元，具体回报将取决于苹果股票的后续表现。&lt;/p&gt;
+&lt;p&gt;目前，苹果管理层对工程师被潜在竞争对手挖走的情况日益担忧。OpenAI尤其被视为一大威胁，该公司已邀请前苹果设计主管乔尼·艾维（Jony Ive）协助设计新一代AI产品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;虽然此次发放奖金不同寻常，但这并非苹果首次采取此类举措，三年前面对人才被挖角的担忧时，该公司也曾发放过类似的奖金。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260327/f7bca5975c1f49ecbc32396c2ccc115d.png" target="_blank"&gt;&lt;img alt="苹果为应对AI企业挖角 向iPhone设计师发放罕见奖金" h="393" src="//img1.mydrivers.com/img/20260327/s_f7bca5975c1f49ecbc32396c2ccc115d.png" w="584"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 00:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9wOGowdV8zSFMya0U0X0UzdERfYU9XODFaMXgxQVJHY0JPV2l3cnB4Y2RJazdtYTlFLWU4dzhiUFFMNkxaZGlibXV4ZUNYUERHYnJfZ3h6R3A</guid></item><item><title>中国耳机市场6年来首次下滑：销量跌回2亿 2026还要降 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111942.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，&lt;span&gt;&lt;strong&gt;洛图科技发布报告显示，2025年中国耳机耳麦全渠道销量2.03亿副，同比下降6.9%，为2019年以来首次下滑&lt;/strong&gt;&lt;/span&gt;，标志着市场从高速增长进入存量调整阶段。&lt;/p&gt;
+&lt;p&gt;尽管销量回落，市场销售额仍达到452亿元，同比增长5.6%，呈现量降价升的特点。&lt;strong&gt;全年市场均价升至223元，同比上涨13.3%，消费升级趋势明显。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;img alt="中国耳机市场6年来首次下滑：销量跌回2亿 2026还要降" h="365" src="//img1.mydrivers.com/img/20260327/Sc18c0e77-bb6e-41ab-92bc-301de41d7d91.png" w="600"&gt;&lt;/span&gt;&lt;br&gt;
+2019-2025年 中国耳机耳麦全渠道市场销量及变化&lt;/p&gt;
+&lt;p&gt;200元以上中高端价位段全面增长，其中1000-1500元价位销量增幅超40%，500-1000元价位增长33%，低端产品需求持续萎缩。&lt;/p&gt;
+&lt;p&gt;线上渠道依旧是主力，占总销量91.4%，但下半年出现明显下滑，第四季度销量同比下降13.8%，成为拖累整体市场的主要因素。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;品牌格局向头部集中，苹果、华为、小米等手机厂商凭借生态优势占据主导。&lt;/strong&gt;华为在开放式耳机赛道表现突出，销额份额稳步提升；小米覆盖全价位段，销量稳居前列。&lt;/p&gt;
+&lt;p&gt;AI耳机成为新增长点，2025年全渠道销量358万副，技术快速下沉，百元级产品加速普及，华为在中高端AI耳机市场占据领先位置。&lt;/p&gt;
+&lt;p&gt;报告预测，&lt;strong&gt;2026年中国耳机耳麦市场销量将进一步降至1.98亿副，同比下降2.2%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="中国耳机市场6年来首次下滑：销量跌回2亿 2026还要降" h="433" src="//img1.mydrivers.com/img/20260327/ef58fcb8-7587-4f5a-acbe-8ee2431c6bbe.png" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 27 Mar 2026 00:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4taEZmWlJ2RmNyejNURUF3bGFmd1o5UFVXaDg0bTVlZVJFZTR4SUlKYUNfU3J3RUpwdFE2eVRmWi05RndLaVZiTmdIbmI0R0Q0N3JpN0Y5Zm8</guid></item><item><title>“一降价还不是像狗一样跑过来”，如何看待罗技鼠标推广视频引争议一事？ - 风闻</title><link>https://user.guancha.cn/main/content?id=1623513</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+							&lt;p&gt;据界面新闻报道，3月26日，罗技在短视频平台的官方账号发布鼠标推广视频，配文“我一降价，还不是像狗一样跑过来”，引发网友强烈声讨。&lt;/p&gt;&lt;p&gt;记者查询发现，目前该视频已下架，而在26日晚该账号的直播间和会员群中，仍有众多网友留言表达不满。&lt;/p&gt;&lt;p&gt;罗技旗舰店客服向记者表示，后续将严格加强内容审核，接受所有批评，目前已经给予短视频组同事严厉警告，扣除全部绩效处罚。 &lt;/p&gt;&lt;p&gt;3月26日晚间，罗技中国发布声明，就“罗技G官方旗舰店”违规内容致歉。&lt;/p&gt;&lt;p&gt;声明全文如下：&lt;/p&gt;&lt;p&gt;对于今日平台“罗技G官方旗舰店”发布的极其不当内容，罗技中国感到由衷的震惊与痛心。我们完全理解并感同身受每一位玩家的失望与愤怒，对此我们向广大用户致以最诚挚的道歉。“罗技G官方旗舰店”由罗技中国授权上海百事得电子有限公司运营，负责罗技产品在抖音渠道的销售。&lt;/p&gt;&lt;p&gt;经调查，此次违规内容系上海百事得电子有限公司员工个人跳过了罗技中国的营销材料审核流程擅自发布，严重违反了罗技中国的品牌准则。罗技中国将深刻检讨对授权店铺营销行为的管理力度，坚决杜绝此类事件再次发生。罗技中国始终尊重每一位玩家。罗技中国将以此为戒，聚焦产品体验与服务，用最严苛的标准捍卫品牌信誉与玩家信任。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/03/27/20260327073450729.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;													&lt;/div&gt;
+						
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Thu, 26 Mar 2026 23:49:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTFBOa2MzTnlZeFR0Y2wtTmNQUmxaa3BCU25nQ0hjNHRiUy1jU044TmVMTGpRR0dUcHpfb0JIeXhYWE9iRFhzTGw5a3JCUndwWUtyREdGajhjRC1jckk</guid></item><item><title>一个时代结束！苹果5.5万元的Mac Pro停售停产：Mac Studio才是未来 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111940.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技3月27日消息，据9to5mac报道，&lt;span&gt;&lt;strong&gt;苹果确认旗下专业台式机Mac Pro正式停产，目前该产品已从苹果官网下架，且未来暂无迭代计划。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;在苹果中国官网中，点击Mac Pro（M2 Ultra）页面已自动跳转至Mac选购页。&lt;/p&gt;
@@ -220,7 +719,70 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 23:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE01WUU5OUNTWVRnTUQ4N1JNM2hUWlN4d1dwMHJDa3NQOWx0aTd0d0pkNFhOQUh1YzRxSC1iUnc4ZjMycVBpTjlGNTdzZDU5d1RYV19DbmxOdXE</guid></item><item><title>微信聊天到底为什么会出现“对方正在输入”？ - guancha.cn</title><link>https://www.guancha.cn/industry-science/2026_03_27_811562.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 23:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE01WUU5OUNTWVRnTUQ4N1JNM2hUWlN4d1dwMHJDa3NQOWx0aTd0d0pkNFhOQUh1YzRxSC1iUnc4ZjMycVBpTjlGNTdzZDU5d1RYV19DbmxOdXE</guid></item><item><title>钱包扛不住 Netflix一年两连涨：4K追剧一个月超180元 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111938.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;钱包扛不住 Netflix一年两连涨：4K追剧一个月超180元&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 07:32:28  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111938-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，&lt;strong&gt;全球流媒体平台Netflix（网飞）再次上调订阅价格，这是平台在一年内第二次涨价。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于高频观影、多人共用账号的用户来说，一年两次涨价带来的长期支出增长明显，追剧压力持续加大。&lt;/p&gt;
+&lt;p&gt;本次涨价覆盖全部三档订阅套餐：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;含广告的标准版套餐&lt;/strong&gt;，由原来每月7.99美元上调1美元，变为每月8.99美元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;无广告标准版&lt;/strong&gt;支持两台设备同时观看，价格上调2美元，从17.99美元涨至19.99美元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;高级版无广告&lt;/strong&gt;，支持四设备同步观看并提供4K与HDR画质，由24.99美元涨至26.99美元。按当前汇率换算，单月费用已超过180元人民币。&lt;/p&gt;
+&lt;p&gt;连续涨价背后，是Netflix对自身内容与用户粘性的信心。平台认为自身具备较强定价权，即便部分用户因费用上升取消订阅，单用户收入提升带来的收益，也能抵消用户数量减少带来的影响。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260327/5847efae28144fad9c4c08fc33ec6085.jpg" target="_blank"&gt;&lt;img alt="钱包扛不住 Netflix一年两连涨：4K追剧一个月超180元" h="389" src="//img1.mydrivers.com/img/20260327/s_5847efae28144fad9c4c08fc33ec6085.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 23:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10d3pWUlZvVlZ4NHZXanZoVTZlZmxHeUhucjZtM1FpY1M2dGl2cFN1R1l1LWY2UUpqOVltZnowQ3hmTlF3enp6bXBGY0xXVW11WlB1SU4xTWI</guid></item><item><title>微信聊天到底为什么会出现“对方正在输入”？ - guancha.cn</title><link>https://www.guancha.cn/industry-science/2026_03_27_811562.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	据微信公众号“微信派”3月26日消息，在微信里，最让人心跳加速的 6 个字，不是“我好喜欢你啊”，也不是“你的奖金发了”。
 &lt;/p&gt;
@@ -342,7 +904,70 @@
 	&lt;img src="https://i.guancha.cn/news/official/2026/03/27/20260327065238392.png" alt=""&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Thu, 26 Mar 2026 22:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE5acjd5OW1xWEdiU2tpbUZBbnNHcWE0Z0JCQ3BDTWhYMUtLUmZWQUpOcFFfcF9LbDFBV3I4cnVmV01SNlhoUGdsb2RYX01ncnUxR2luaC1TNWRZeFAxRTVMVGlxX0xnbVdqTHFBcjJ5RVc</guid></item><item><title>苹果AI战略转向：开放Siri打破ChatGPT独家，重金留人对抗挖角潮 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3768519</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vd0tuRU1mbkJxeGpWLWFtVTF1c2FSOUY0aTRBbW93R0lzSXZDR2kzMUdKWWZiNWc2TjlzYVhZNWdzZHNpOV9SdjZfUzNDc0tvUzV3?oc=5" target="_blank"&gt;苹果AI战略转向：开放Siri打破ChatGPT独家，重金留人对抗挖角潮&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;华尔街见闻&lt;/font&gt;</description><author>华尔街见闻</author><pubDate>Thu, 26 Mar 2026 22:53:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9vd0tuRU1mbkJxeGpWLWFtVTF1c2FSOUY0aTRBbW93R0lzSXZDR2kzMUdKWWZiNWc2TjlzYVhZNWdzZHNpOV9SdjZfUzNDc0tvUzV3</guid></item><item><title>人民日报刊文：事前预防、事中阻断、事后铲根，斩断酒店偷拍黑手 - 凤凰网</title><link>https://news.ifeng.com/c/8rpBf0vTAu0</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p class="textAlignCenter"&gt;公安机关开展打击整治窃听窃照违法犯罪专项工作&lt;/p&gt;&lt;p class="textAlignCenter"&gt;斩断酒店偷拍黑手 保护个人隐私安全（法治聚焦）&lt;/p&gt;&lt;p class="textAlignCenter"&gt;本报记者 倪 弋《人民日报》（2026年03月27日 第 10 版）&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_13/DE8CA9568883A148656B98D47C00DD73C7D8DFA1_size26_w400_h274.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;洪 琥绘（《讽刺与幽默》供图）&lt;/p&gt;&lt;p&gt;2025年7月某天，陈某超拖着一个小型行李箱，来到某市一家酒店前台办理入住。他特意要求：“请给我安排一间大床房，最好是靠走廊尽头的，安静些。”&lt;/p&gt;&lt;p&gt;进入房间后，陈某超立刻观察房间内布局，寻找一般住客容易忽视的角落。选定位置后，他随即打开行李箱，取出一些装置、一卷细线、一把微型螺丝刀等，熟练地安装起来。&lt;/p&gt;&lt;p&gt;安装完成后，陈某超通过某境外通信软件发送信息，随即收到回复：“收到。核验通过后即结算费用。”&lt;/p&gt;&lt;p&gt;陈某超安装的是什么装置？他通过境外通信软件联系的又是什么人？这些人究竟意欲何为？&lt;/p&gt;&lt;p&gt;“神秘”房客落网，揭开一条隐蔽的“偷拍—敲诈”灰色产业链&lt;/p&gt;&lt;p&gt;办案民警收到陈某超涉酒店偷拍的线索后，上报至公安部打击整治窃听窃照违法犯罪专项工作机制办公室。在公安部的统一部署下，各地公安机关循线深挖、缜密侦查，真相渐渐浮出水面。&lt;/p&gt;&lt;p&gt;原来，陈某超只是犯罪链条中一个负责现场操作的“安装工”。专案组民警介绍，在他背后，隐藏着一个由境外犯罪分子遥控、境内多环节分工协作，专门在酒店房间非法安装窃听窃照设备、窃取公民隐私信息进而实施敲诈勒索的“技术改装—酒店安装—信息窃取—境外敲诈”犯罪链条。&lt;/p&gt;&lt;p&gt;在这一犯罪链条中，崔某江等人是“技术改装”人员，其利用在某电商平台销售普通电子产品作掩护，将正常的小型摄像模组，非法改装为偷拍设备。&lt;/p&gt;&lt;p&gt;张某达等人是负责“酒店安装”的“包工头”。他们通过某境外通信软件“接单”，领取安装任务及经费后，指派同乡、熟人等作为“安装工”入住指定的酒店——即陈某超负责环节，非法安装窃听窃照设备。&lt;/p&gt;&lt;p&gt;罗某豪等人负责“信息窃取”。他们同样通过某境外通信软件“接单”，应聘成为目标酒店的工作人员，利用工作权限查询入住客人个人登记信息。&lt;/p&gt;&lt;p&gt;藏身境外的朱某平等人，则是最终的“收割者”。他们通过上述人员获取偷拍信息和个人信息后，向受害人发送敲诈信息，附上从视频中截取的隐私画面截图，以向受害人亲友同事公开为要挟，进行勒索。&lt;/p&gt;&lt;p&gt;在精准掌握该犯罪网络的层级关系、人员身份、活动规律和犯罪证据后，公安部坚持“打源头、摧网络、缴设备、断链条”，于2025年8月指挥多地公安机关发起集中抓捕行动，一举抓获包括该案各环节骨干在内的犯罪嫌疑人124名，查获并全部拆除安装在酒店房间的偷拍设备。专案组循线追踪，对所有涉案酒店进行了全面排查，及时阻断了可能带来的进一步侵害。&lt;/p&gt;&lt;p&gt;遏制窃听窃照多发高发态势，“事后打击”转向“事前预防、事中阻断、事后铲根”&lt;/p&gt;&lt;p&gt;专案组民警表示，该犯罪模式极具隐蔽性，形成了一条“看不见”的犯罪链条，呈现出以下四大特点。&lt;/p&gt;&lt;p&gt;跨境遥控。团伙核心组织者和敲诈实施者均藏身境外，利用境外通信软件建立群组进行远程指挥。境内各环节的“包工头”（如张某达、崔某江、罗某豪）各自领取具体任务、报销费用、结算“报酬”。各环节之间不横向联系。&lt;/p&gt;&lt;p&gt;链条分包。犯罪流程实行“专业化”分包。境外上线是“总包方”，各环节“包工头”是“分包方”。“分包方”再各自招募、培训具体执行人员（如“安装工”陈某超）。&lt;/p&gt;&lt;p&gt;网络售卖。非法改装设备通过正规电商平台以“电子产品”“改装模组”等名义线上交易，具有较强隐蔽性。犯罪过程中的资金结算也精心设计，意图消除资金链踪迹。&lt;/p&gt;&lt;p&gt;精准勒索。该犯罪模式通过酒店“内应”非法获取住客身份信息，对受害人造成巨大的精神压力和现实威胁，社会危害性大。&lt;/p&gt;&lt;p&gt;“近年来，酒店窃听窃照事件多发高发，折射出新业态背景下犯罪形态的进化与治理能力面临的挑战。犯罪组织利用跨境隔离、加密通信、虚拟货币、酒店管理漏洞等多重屏障，构建起一条隐秘的灰色产业链。”中国人民大学法学院副院长程雷说，公安机关及时精准分析此类犯罪的形成原因、作案手法，坚持“全链条、打源头、摧网络”的打击策略，精准应对犯罪跨境化、链条化、网络化的新特点，是从“事后打击”转向“事前预防、事中阻断、事后铲根”系统治理的有效实践。&lt;/p&gt;&lt;p&gt;打通线上与线下、商品销售与犯罪应用之间的监管壁垒，多方合力共筑防护屏障&lt;/p&gt;&lt;p&gt;要从根本上铲除窃听窃照的生存土壤，应坚持源头治理、推动共建共治，凝聚法治、监管、行业、社会合力，构建起让窃听窃照无处遁形的坚固防护网。&lt;/p&gt;&lt;p&gt;“安全是酒店的生命线，隐私安全是其中不可或缺的一环。”某连锁酒店总经理李先生坦言，案件敲响了警钟。该酒店已升级“隐私守护”计划，从制度、技防、人防三方面系统提升：将反偷拍检查纳入客房清洁标准作业流程（SOP），对重点部位强制检查记录；配备专业探测设备，由安保部定期巡检并引入第三方专业检测；全员每年接受隐私保护培训，关键岗位需通过专项考核。“要让员工成为‘前哨’，让专业工具成为‘眼睛’。”李先生说。&lt;/p&gt;&lt;p&gt;“行业不能‘各扫门前雪’，必须联防联治。”某市旅游饭店行业协会秘书长高先生指出，应通过制定行业防护操作指南，为成员单位提供规范参考；在合法前提下建立风险信息共享机制，内部预警新型设备与作案手法；同时可集中对接优质安防资源，争取团体采购优惠，降低单体酒店成本。“通过行业自律与协同，形成‘群防群治’合力，努力保障安全入住。”&lt;/p&gt;&lt;p&gt;“当前在窃听窃照设备的非法流通与改装领域，存在‘发现难、认定难、追溯难’的现实困境。非法设备及其改装配件，在部分电商平台中半公开地销售，导致违法成本低。”法律专家建议，平台不能仅依赖关键词屏蔽，应想方设法加强监管。工信、网信、市场监管等部门可研究制定具有可操作性的“窃听窃照专用器材”认定标准或指导目录，同时建立涉窃听窃照违法信息的常态化共享与协查通道，打通线上与线下、商品销售与犯罪应用之间的监管壁垒。&lt;/p&gt;&lt;p&gt;■延伸阅读&lt;/p&gt;&lt;p&gt;深圳华强北——&lt;/p&gt;&lt;p&gt;多部门联手整治非法生产销售窃照设备&lt;/p&gt;&lt;p&gt;本报深圳3月26日电 （记者姜晓丹）近日，广东深圳华强北街道针对华强北电子市场非法销售窃照设备问题，持续深入推进多部门联合专项整治行动。&lt;/p&gt;&lt;p&gt;为强化商户经营守法意识，守住合规底线，华强北街道督促市场管理方在赛格电子市场、华强电子世界等多个市场出入口、电梯间等明显位置悬挂警示标语。&lt;/p&gt;&lt;p&gt;同时，针对个别人员流窜街面、隐蔽兜售等行为，华强北街道会同市场监管、公安等部门持续开展整治行动。一支专项巡查力量采取公开巡查与便衣蹲守相结合的方式，对重点区域、重点时段实施动态布控。“一旦发现相关违法兜售行为，第一时间进行制止、带离处置，并依法固定相关线索，对涉嫌违法违规的及时移交有关部门依法查处。”一名参与联合执法的工作人员说。今年以来已累计劝离持卡片推销违法产品人员291人次，查处相关案件2宗，对违法行为形成持续震慑。&lt;/p&gt;&lt;p&gt;此外，华强北街道已通过公示栏、新媒体平台等渠道向社会公布举报方式，鼓励消费者及商户提供线索，共同参与监督治理。&lt;/p&gt;&lt;p&gt;华强北街道将持续会同相关部门保持高压态势，对非法生产、销售窃照设备等行为发现一起、查处一起，坚决维护规范有序、安全放心的市场环境。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Thu, 26 Mar 2026 22:45:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE5mZWdWUHpBZkZ3SHQ1aTZBaXU5RWdHWkZrdDVBVGROTWc3TUVHY1hLUmswaUE0T0RmMU5OWjBkRjVEdWJfVkJDeTFOZkU</guid></item><item><title>3月27日外盘头条：特朗普再次推迟打击伊朗能源设施至4月6日苹果公司向外部人工智能助手开放Siri - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-03-27/doc-inhskmqh2312115.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Thu, 26 Mar 2026 22:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMicEFVX3lxTE5acjd5OW1xWEdiU2tpbUZBbnNHcWE0Z0JCQ3BDTWhYMUtLUmZWQUpOcFFfcF9LbDFBV3I4cnVmV01SNlhoUGdsb2RYX01ncnUxR2luaC1TNWRZeFAxRTVMVGlxX0xnbVdqTHFBcjJ5RVc</guid></item><item><title>Sora退场 马斯克加码押注AI视频：新版Grok将十分震撼 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111932.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;Sora退场 马斯克加码押注AI视频：新版Grok将十分震撼&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 06:55:26  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111932-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，据媒体报道，埃隆·马斯克（Elon Musk）周三表示，&lt;strong&gt;其人工智能公司xAI计划升级AI视频生成器，以抓住竞争对手OpenAI本周停用Sora产品所留下的市场空白。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;马斯克当天在X上发文称：“下一版Grok Imagine的发布将会非常震撼，我们正在加倍投入。”&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260327/517ea75496a24aa795fdec8aaed0d044.png" target="_blank"&gt;&lt;img alt="Sora退场 马斯克加码押注AI视频：新版Grok将十分震撼" h="354" src="//img1.mydrivers.com/img/20260327/s_517ea75496a24aa795fdec8aaed0d044.png" w="496"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;马斯克还分享了一系列由Grok聊天机器人生成的AI视频，试图通过帮助用户快速创建逼真的图像和视频等功能，与ChatGPT及其他聊天机器人展开竞争。&lt;/p&gt;
+&lt;p&gt;在今年2月的一场员工会议上，Grok Imagine视频产品已被列为xAI的四大核心领域之一。&lt;/p&gt;
+&lt;p&gt;OpenAI于周二宣布关闭其Sora视频应用，&lt;strong&gt;这一决定可能为xAI、Runway AI Inc.及谷歌等竞争对手创造机会，同时也引发了外界对AI视频服务成本与回报的质疑。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sora应用在去年年底发布后曾凭借免费模式迅速登顶苹果App Store排行榜，但此后排名有所下滑。与其他AI视频生成器一样，Sora的运行需要消耗大量计算资源，OpenAI选择停用该服务以精简其庞杂的产品线。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260327/e5cd7de3f791482b9b5fa7949e086a0d.png" target="_blank"&gt;&lt;img alt="Sora退场 马斯克加码押注AI视频：新版Grok将十分震撼" h="276" src="//img1.mydrivers.com/img/20260327/s_e5cd7de3f791482b9b5fa7949e086a0d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 22:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBOQ1Y1Z25LQ29PUlVOTmQwRmZPZXc0MUlnQ2l6ekhxeDVMT2R2VGU5SDFTWEsxc2ZuMHhVaWtKbWpDTnMwWGRMOGpzYklCQUhWSUlHcVZkaV8</guid></item><item><title>苹果AI战略转向：开放Siri打破ChatGPT独家，重金留人对抗挖角潮 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3768519</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vd0tuRU1mbkJxeGpWLWFtVTF1c2FSOUY0aTRBbW93R0lzSXZDR2kzMUdKWWZiNWc2TjlzYVhZNWdzZHNpOV9SdjZfUzNDc0tvUzV3?oc=5" target="_blank"&gt;苹果AI战略转向：开放Siri打破ChatGPT独家，重金留人对抗挖角潮&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;华尔街见闻&lt;/font&gt;</description><author>华尔街见闻</author><pubDate>Thu, 26 Mar 2026 22:53:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9vd0tuRU1mbkJxeGpWLWFtVTF1c2FSOUY0aTRBbW93R0lzSXZDR2kzMUdKWWZiNWc2TjlzYVhZNWdzZHNpOV9SdjZfUzNDc0tvUzV3</guid></item><item><title>人民日报刊文：事前预防、事中阻断、事后铲根，斩断酒店偷拍黑手 - 凤凰网</title><link>https://news.ifeng.com/c/8rpBf0vTAu0</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p class="textAlignCenter"&gt;公安机关开展打击整治窃听窃照违法犯罪专项工作&lt;/p&gt;&lt;p class="textAlignCenter"&gt;斩断酒店偷拍黑手 保护个人隐私安全（法治聚焦）&lt;/p&gt;&lt;p class="textAlignCenter"&gt;本报记者 倪 弋《人民日报》（2026年03月27日 第 10 版）&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_13/DE8CA9568883A148656B98D47C00DD73C7D8DFA1_size26_w400_h274.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;洪 琥绘（《讽刺与幽默》供图）&lt;/p&gt;&lt;p&gt;2025年7月某天，陈某超拖着一个小型行李箱，来到某市一家酒店前台办理入住。他特意要求：“请给我安排一间大床房，最好是靠走廊尽头的，安静些。”&lt;/p&gt;&lt;p&gt;进入房间后，陈某超立刻观察房间内布局，寻找一般住客容易忽视的角落。选定位置后，他随即打开行李箱，取出一些装置、一卷细线、一把微型螺丝刀等，熟练地安装起来。&lt;/p&gt;&lt;p&gt;安装完成后，陈某超通过某境外通信软件发送信息，随即收到回复：“收到。核验通过后即结算费用。”&lt;/p&gt;&lt;p&gt;陈某超安装的是什么装置？他通过境外通信软件联系的又是什么人？这些人究竟意欲何为？&lt;/p&gt;&lt;p&gt;“神秘”房客落网，揭开一条隐蔽的“偷拍—敲诈”灰色产业链&lt;/p&gt;&lt;p&gt;办案民警收到陈某超涉酒店偷拍的线索后，上报至公安部打击整治窃听窃照违法犯罪专项工作机制办公室。在公安部的统一部署下，各地公安机关循线深挖、缜密侦查，真相渐渐浮出水面。&lt;/p&gt;&lt;p&gt;原来，陈某超只是犯罪链条中一个负责现场操作的“安装工”。专案组民警介绍，在他背后，隐藏着一个由境外犯罪分子遥控、境内多环节分工协作，专门在酒店房间非法安装窃听窃照设备、窃取公民隐私信息进而实施敲诈勒索的“技术改装—酒店安装—信息窃取—境外敲诈”犯罪链条。&lt;/p&gt;&lt;p&gt;在这一犯罪链条中，崔某江等人是“技术改装”人员，其利用在某电商平台销售普通电子产品作掩护，将正常的小型摄像模组，非法改装为偷拍设备。&lt;/p&gt;&lt;p&gt;张某达等人是负责“酒店安装”的“包工头”。他们通过某境外通信软件“接单”，领取安装任务及经费后，指派同乡、熟人等作为“安装工”入住指定的酒店——即陈某超负责环节，非法安装窃听窃照设备。&lt;/p&gt;&lt;p&gt;罗某豪等人负责“信息窃取”。他们同样通过某境外通信软件“接单”，应聘成为目标酒店的工作人员，利用工作权限查询入住客人个人登记信息。&lt;/p&gt;&lt;p&gt;藏身境外的朱某平等人，则是最终的“收割者”。他们通过上述人员获取偷拍信息和个人信息后，向受害人发送敲诈信息，附上从视频中截取的隐私画面截图，以向受害人亲友同事公开为要挟，进行勒索。&lt;/p&gt;&lt;p&gt;在精准掌握该犯罪网络的层级关系、人员身份、活动规律和犯罪证据后，公安部坚持“打源头、摧网络、缴设备、断链条”，于2025年8月指挥多地公安机关发起集中抓捕行动，一举抓获包括该案各环节骨干在内的犯罪嫌疑人124名，查获并全部拆除安装在酒店房间的偷拍设备。专案组循线追踪，对所有涉案酒店进行了全面排查，及时阻断了可能带来的进一步侵害。&lt;/p&gt;&lt;p&gt;遏制窃听窃照多发高发态势，“事后打击”转向“事前预防、事中阻断、事后铲根”&lt;/p&gt;&lt;p&gt;专案组民警表示，该犯罪模式极具隐蔽性，形成了一条“看不见”的犯罪链条，呈现出以下四大特点。&lt;/p&gt;&lt;p&gt;跨境遥控。团伙核心组织者和敲诈实施者均藏身境外，利用境外通信软件建立群组进行远程指挥。境内各环节的“包工头”（如张某达、崔某江、罗某豪）各自领取具体任务、报销费用、结算“报酬”。各环节之间不横向联系。&lt;/p&gt;&lt;p&gt;链条分包。犯罪流程实行“专业化”分包。境外上线是“总包方”，各环节“包工头”是“分包方”。“分包方”再各自招募、培训具体执行人员（如“安装工”陈某超）。&lt;/p&gt;&lt;p&gt;网络售卖。非法改装设备通过正规电商平台以“电子产品”“改装模组”等名义线上交易，具有较强隐蔽性。犯罪过程中的资金结算也精心设计，意图消除资金链踪迹。&lt;/p&gt;&lt;p&gt;精准勒索。该犯罪模式通过酒店“内应”非法获取住客身份信息，对受害人造成巨大的精神压力和现实威胁，社会危害性大。&lt;/p&gt;&lt;p&gt;“近年来，酒店窃听窃照事件多发高发，折射出新业态背景下犯罪形态的进化与治理能力面临的挑战。犯罪组织利用跨境隔离、加密通信、虚拟货币、酒店管理漏洞等多重屏障，构建起一条隐秘的灰色产业链。”中国人民大学法学院副院长程雷说，公安机关及时精准分析此类犯罪的形成原因、作案手法，坚持“全链条、打源头、摧网络”的打击策略，精准应对犯罪跨境化、链条化、网络化的新特点，是从“事后打击”转向“事前预防、事中阻断、事后铲根”系统治理的有效实践。&lt;/p&gt;&lt;p&gt;打通线上与线下、商品销售与犯罪应用之间的监管壁垒，多方合力共筑防护屏障&lt;/p&gt;&lt;p&gt;要从根本上铲除窃听窃照的生存土壤，应坚持源头治理、推动共建共治，凝聚法治、监管、行业、社会合力，构建起让窃听窃照无处遁形的坚固防护网。&lt;/p&gt;&lt;p&gt;“安全是酒店的生命线，隐私安全是其中不可或缺的一环。”某连锁酒店总经理李先生坦言，案件敲响了警钟。该酒店已升级“隐私守护”计划，从制度、技防、人防三方面系统提升：将反偷拍检查纳入客房清洁标准作业流程（SOP），对重点部位强制检查记录；配备专业探测设备，由安保部定期巡检并引入第三方专业检测；全员每年接受隐私保护培训，关键岗位需通过专项考核。“要让员工成为‘前哨’，让专业工具成为‘眼睛’。”李先生说。&lt;/p&gt;&lt;p&gt;“行业不能‘各扫门前雪’，必须联防联治。”某市旅游饭店行业协会秘书长高先生指出，应通过制定行业防护操作指南，为成员单位提供规范参考；在合法前提下建立风险信息共享机制，内部预警新型设备与作案手法；同时可集中对接优质安防资源，争取团体采购优惠，降低单体酒店成本。“通过行业自律与协同，形成‘群防群治’合力，努力保障安全入住。”&lt;/p&gt;&lt;p&gt;“当前在窃听窃照设备的非法流通与改装领域，存在‘发现难、认定难、追溯难’的现实困境。非法设备及其改装配件，在部分电商平台中半公开地销售，导致违法成本低。”法律专家建议，平台不能仅依赖关键词屏蔽，应想方设法加强监管。工信、网信、市场监管等部门可研究制定具有可操作性的“窃听窃照专用器材”认定标准或指导目录，同时建立涉窃听窃照违法信息的常态化共享与协查通道，打通线上与线下、商品销售与犯罪应用之间的监管壁垒。&lt;/p&gt;&lt;p&gt;■延伸阅读&lt;/p&gt;&lt;p&gt;深圳华强北——&lt;/p&gt;&lt;p&gt;多部门联手整治非法生产销售窃照设备&lt;/p&gt;&lt;p&gt;本报深圳3月26日电 （记者姜晓丹）近日，广东深圳华强北街道针对华强北电子市场非法销售窃照设备问题，持续深入推进多部门联合专项整治行动。&lt;/p&gt;&lt;p&gt;为强化商户经营守法意识，守住合规底线，华强北街道督促市场管理方在赛格电子市场、华强电子世界等多个市场出入口、电梯间等明显位置悬挂警示标语。&lt;/p&gt;&lt;p&gt;同时，针对个别人员流窜街面、隐蔽兜售等行为，华强北街道会同市场监管、公安等部门持续开展整治行动。一支专项巡查力量采取公开巡查与便衣蹲守相结合的方式，对重点区域、重点时段实施动态布控。“一旦发现相关违法兜售行为，第一时间进行制止、带离处置，并依法固定相关线索，对涉嫌违法违规的及时移交有关部门依法查处。”一名参与联合执法的工作人员说。今年以来已累计劝离持卡片推销违法产品人员291人次，查处相关案件2宗，对违法行为形成持续震慑。&lt;/p&gt;&lt;p&gt;此外，华强北街道已通过公示栏、新媒体平台等渠道向社会公布举报方式，鼓励消费者及商户提供线索，共同参与监督治理。&lt;/p&gt;&lt;p&gt;华强北街道将持续会同相关部门保持高压态势，对非法生产、销售窃照设备等行为发现一起、查处一起，坚决维护规范有序、安全放心的市场环境。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Thu, 26 Mar 2026 22:45:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE5mZWdWUHpBZkZ3SHQ1aTZBaXU5RWdHWkZrdDVBVGROTWc3TUVHY1hLUmswaUE0T0RmMU5OWjBkRjVEdWJfVkJDeTFOZkU</guid></item><item><title>3月27日外盘头条：特朗普再次推迟打击伊朗能源设施至4月6日苹果公司向外部人工智能助手开放Siri - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-03-27/doc-inhskmqh2312115.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					&lt;p&gt;	&lt;a href="https://finance.sina.com.cn/zt_d/subject-1774572614" target="_blank"&gt;专题：中国资产安全属性凸显 A股长牛慢牛可期&lt;/a&gt;&lt;/p&gt;
 					
@@ -888,7 +1513,78 @@
 
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>美国之音</author><pubDate>Thu, 26 Mar 2026 16:08:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi0wFBVV95cUxQMEhwUUZ3Qi1kZ2MwbzBWQWRSVFZJZzEwZFd4Q2ZRZFhRQkZtYWNGajctblFiM2xRRERRNk10eEtkSU9tZS1VMHJLZGxIUVNuWjZaaG5WOUZjcklHdWgyekV3NGh4N2x2NktSOGRpV043Mm5QRFBkWldKaklIX3VCMzRacDVRZE1aUUVHdGl2WkE4TzR4WnJWdmRiZVdZNXhpVng0UkkyVGtsUUJJNG42ZFBucEN3SDZDeUxZMmlKUkFyRmE5and1RGNwZ1FTOVQ4RjlR0gHWAUFVX3lxTE94ZWNhbWtncGVPTE44YkhocHRpeVUzUjNHLTQyclJtVHZxcGVRODRHR1F6LXRhM3BXV0FUUEpvUkFaTUJaVm5hcFphMzhPMzZNYmxyWTZ6TlVLR01QcV82THNaazFCY2wweEd3S1plZmszbU5lWVFyNHBKZVFvd1JLX1JSRHFWTGppc0FYclVneGNUVE43Q21JaGFRa1ljdGx3bGM2RGd3MThTY3RvRVJsend1TF9Nc2lNejRkcnUwRm5YYnZ4ek5jdThaMk92UDNqZFRGWEE</guid></item><item><title>“一降价，你还不是像狗一样跑过来”，罗技鼠标广告引众怒 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_03_26_811551.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>美国之音</author><pubDate>Thu, 26 Mar 2026 16:08:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi0wFBVV95cUxQMEhwUUZ3Qi1kZ2MwbzBWQWRSVFZJZzEwZFd4Q2ZRZFhRQkZtYWNGajctblFiM2xRRERRNk10eEtkSU9tZS1VMHJLZGxIUVNuWjZaaG5WOUZjcklHdWgyekV3NGh4N2x2NktSOGRpV043Mm5QRFBkWldKaklIX3VCMzRacDVRZE1aUUVHdGl2WkE4TzR4WnJWdmRiZVdZNXhpVng0UkkyVGtsUUJJNG42ZFBucEN3SDZDeUxZMmlKUkFyRmE5and1RGNwZ1FTOVQ4RjlR0gHWAUFVX3lxTE94ZWNhbWtncGVPTE44YkhocHRpeVUzUjNHLTQyclJtVHZxcGVRODRHR1F6LXRhM3BXV0FUUEpvUkFaTUJaVm5hcFphMzhPMzZNYmxyWTZ6TlVLR01QcV82THNaazFCY2wweEd3S1plZmszbU5lWVFyNHBKZVFvd1JLX1JSRHFWTGppc0FYclVneGNUVE43Q21JaGFRa1ljdGx3bGM2RGd3MThTY3RvRVJsend1TF9Nc2lNejRkcnUwRm5YYnZ4ek5jdThaMk92UDNqZFRGWEE</guid></item><item><title>底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111915.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-03-27 00:01:33  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297417.html" title="若风的主页" class="newstiao4"&gt;若风&lt;/a&gt;&lt;p&gt;  编辑：若风 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1111915-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技3月27日消息，智己LS8已开启预售，&lt;strong&gt;新车共计推出大五座和大六座4款车型，预售价为27.18-32.18万元，预售权益价为25.98-30.98万元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;官方海报显示，&lt;span&gt;&lt;strong&gt;智己LS8预售45分钟小订突破10000台。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/fcae0e0984b64604ba0494fe7a119954.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="1066" src="//img1.mydrivers.com/img/20260326/s_fcae0e0984b64604ba0494fe7a119954.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作为全新车型，智己LS8的配置优势极为鲜明，将百万级的底盘配置，下放至30万价格段。&lt;/p&gt;
+&lt;p&gt;车辆全系标配灵蜥数字底盘3.0、双电机矢量四驱系统、同级唯一双向24°智慧后轮转向系统、全线控四轮转向系统同级首发等。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/43e3b8bc839c4a5389f4b7b6b4c4501f.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="333" src="//img1.mydrivers.com/img/20260326/s_43e3b8bc839c4a5389f4b7b6b4c4501f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/648b5726cc704e4e971fadc5a48f38dd.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="308" src="//img1.mydrivers.com/img/20260326/s_648b5726cc704e4e971fadc5a48f38dd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;车内副驾提供零重力座椅，支持加热/通风/气袋按摩，5座车型二排专属132度躺角沙发椅；6座车型二排提供两个独立的宽适座椅，支持机械按摩功能，后排有21.5英寸后排娱乐屏。车内还配备了12.3L的车载冰箱、地暖系统和25扬声器的7.1.4声道B&amp;amp;O音响。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8aafc21066c548638cc2d8ec8c5b8c31.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="308" src="//img1.mydrivers.com/img/20260326/s_8aafc21066c548638cc2d8ec8c5b8c31.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8edc3f4e97244ca3933c9cd2e9b03808.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="308" src="//img1.mydrivers.com/img/20260326/s_8edc3f4e97244ca3933c9cd2e9b03808.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;采用灵蜥数字底盘3.0，配备前双叉臂+后多连杆悬架，闭式空气悬架+CDC阻尼减振器，全系标配双向24°四轮转向，最小转弯半径4.85米。全线控四轮转向，半圈即可打满，方向盘行程多档可调。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/bf733d36aa8b4928aa273127e3cd902c.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="308" src="//img1.mydrivers.com/img/20260326/s_bf733d36aa8b4928aa273127e3cd902c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;动力上，车辆搭载1.5T“恒星”超级增程动力系统，最大功率390kW，峰值扭矩670Nm，&lt;strong&gt;CLTC最大纯电续航为430km，综合续航1605km，800V超快充平台，30%-80%充电12分钟，新车0-100km/h加速4秒级。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/7f6935fb85854b2c880d6a1e94822c74.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="308" src="//img1.mydrivers.com/img/20260326/s_7f6935fb85854b2c880d6a1e94822c74.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/b362664e3f334266b93cb2765648d9be.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="308" src="//img1.mydrivers.com/img/20260326/s_b362664e3f334266b93cb2765648d9be.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/4c6d90603cc04bbcb39b3ae0ca35695e.jpg" target="_blank"&gt;&lt;img alt="底盘硬件百万级、全线控四轮转向上车！智己LS8预售45分钟小订破万台" h="308" src="//img1.mydrivers.com/img/20260326/s_4c6d90603cc04bbcb39b3ae0ca35695e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 16:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5jWlA0aWRURmZveHpOLXpfdXJ2OURjS3RhU1lSbU9oTGZwMFZXTVpBMjZzOHFhQkx2SExPTGJ3dndfV1JsdDNwVDdKZG9YbkxHcFRtcFl4RU4</guid></item><item><title>“一降价，你还不是像狗一样跑过来”，罗技鼠标广告引众怒 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_03_26_811551.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	26日晚， “罗技侮辱消费者”话题冲上热搜第一。
 &lt;/p&gt;
@@ -2200,211 +2896,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 06:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5PcVVPVkI1SC01WnlsY1RZckVENVVKRFQyeDBIX3FIUkV3VU9zc3NwV3FLV2Vqc0pJRmhmeVJiNkRhMkFHbzRpYzItdF9QeGZfdVFiUGtqWks</guid></item><item><title>伊朗正借鉴俄罗斯无人机作战经验对付美国 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/iran-drone-warfare-russia-ukraine-cefce592</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Thu, 26 Mar 2026 06:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTFA5Sjd3RTZHNEJKUEQwS0wxRzR4dmd2YmFEX3ZlSzFLZ0M0T3BFdGN3X0YzcXN6TkJrc3AxQll4Y2lXWnpGTU9EVWMtWVdJbEZ1TWdaQ1gzOFJ1Ujl6TDFZX2VBN2g3X2huNVdXYkwxSGxxVGhNN1BIRHBn</guid></item><item><title>微信龙虾只活 2 天：一次更新干崩全生态，OpenClaw 撞上 Vibe Coding 天花板 - InfoQ 官网</title><link>https://www.infoq.cn/news/tMy3gaCUrUBemME0wWaV</link><description>&lt;body id="readabilityBody"&gt;
-&lt;p id="app"&gt;&lt;/p&gt;
-&lt;img src="https://static001.infoq.cn/static/infoq/img/logo-121-75.yuij86g.png" alt="微信龙虾只活2天：一次更新干崩全生态，OpenClaw 撞上 Vibe Coding 天花板_AI&amp;amp;大模型_褚杏娟_InfoQ精选文章"&gt;
-
-
-
-
-
-
-
-    
-
-&lt;/body&gt;
-</description><author>InfoQ 官网</author><pubDate>Thu, 26 Mar 2026 05:11:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWkFVX3lxTE1YODBiQXBNX3BKcTlxcGhNRTZuU3lDSllDNWNiZW1LaDl0QnFhTnV0Um1TUUNYc0FRaUZYeXNQZVFwSmJYY0lfZjNtVFRjXzdxYXFkSUNTNVM0QQ</guid></item><item><title>雷军晒成绩：小米SU7、YU7双双第一！ - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111762.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月26日消息，小米集团创始人雷军今日通过社交平台发文宣布，小米汽车旗下的两款核心车型小米SU7与小米YU7，在最新的行业权威评选中双双夺魁。&lt;/p&gt;
-&lt;p&gt;这一成绩源自全球领先的市场研究机构J.D. Power发布的2026中国新能源汽车产品魅力指数研究报告。该研究在汽车行业内具有极高的影响力，是衡量产品市场竞争力与用户满意度的重要风向标。&lt;/p&gt;
-&lt;p&gt;该项研究主要针对购车2至6个月内的车主进行深度调研，全面衡量用户在实际拥车过程中的全方位体验。调研维度涵盖了驾驶操控、补能便利性以及智能交互等多个核心场景，真实反映了车主对产品魅力的直观满意度。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/2cce1c57f50a41968085d252a1c130ff.png" target="_blank"&gt;&lt;img alt="雷军晒成绩：小米SU7、YU7双双第一！" h="324" src="//img1.mydrivers.com/img/20260326/s_2cce1c57f50a41968085d252a1c130ff.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;根据雷军分享的调研结果显示，小米SU7在大型纯电动轿车类别中脱颖而出，成功摘得魅力指数第一名的桂冠。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这标志着小米汽车的首款作品在驾控体验和产品定义上，已经得到了首批用户的深度认可。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;与此同时，小米汽车的另一款重磅车型小米YU7也表现强劲。在大型纯电动SUV这一竞争激烈的细分市场中，小米YU7同样获得了第一名的好成绩。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;两款车型同时登顶，充分展示了小米汽车在不同产品形态下的研发实力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在雷军看来，两款车型双双获得第一，是小米汽车坚持技术投入与品质至上的阶段性成果。这一数据反馈也将进一步增强市场对小米汽车持续创新能力的信心。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/b79e65af438f4c879f0b14673c5aa48f.jpg" target="_blank"&gt;&lt;img alt="雷军晒成绩：小米SU7、YU7双双第一！" h="780" src="//img1.mydrivers.com/img/20260326/s_b79e65af438f4c879f0b14673c5aa48f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 04:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBsV2FmWE9DclFnbHUtTGd4anVOMGFobVgtbFNldm9xVF9EX0dIMUlVNDZtNFo4YWRMa3NhbDVpSlFnMFZQZjVudS14SXpXNV9NWjZ6OVZFVXA</guid></item><item><title>氢能车将会和电动车一样便宜？氢能时代要来了吗？ - 风闻</title><link>https://user.guancha.cn/main/content?id=1623076</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
-							&lt;p&gt;&lt;/p&gt;&lt;p&gt;最近几年，说起新能源汽车，相信大多数人的第一反应就是电动汽车，的确电动汽车是新能源汽车中非常关键的一个类型，不过不仅是电动汽车，氢能源汽车也是同样的市场参与者，伴随着国家对氢能源的日益加速布局，氢能汽车似乎也与我们不远了，甚至有预计氢能车将会和电动车一样便宜，氢能时代真的要来了吗？&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/03/26/20260326124014374.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;一、氢能车会和电动车一样便宜？&lt;/p&gt;&lt;p&gt;据第一财经的报道，未来几年，氢能汽车的加氢成本将与电动汽车充电成本基本持平。&lt;/p&gt;&lt;p&gt;工信部、财政部、国家发改委三部门联合发布的《关于开展氢能综合应用试点工作的通知》（下称《通知》）提出，到2030年，城市群氢能在多元领域实现规模化应用，终端用氢平均价格降至25元/千克（公斤）以下，力争在部分优势地区降至15元/千克左右。&lt;/p&gt;&lt;p&gt;当前，氢能产业发展的一大痛点是氢气价格高企。曾担任广东一加氢站站长的李参成等多名氢能行业人士向第一财经记者表示，若15元/公斤的目标达成，氢能汽车加氢成本将与电动汽车充电成本基本持平，有望打破氢能规模化应用的价格瓶颈，为产业发展注入动力。&lt;/p&gt;&lt;p&gt;第一财经记者在采访中了解到，目前国内氢能汽车的氢气价格普遍维持在35元/公斤以上，即便在佛山等全国重点氢能产业地区，加氢价格也处于35元/公斤至50元/公斤的区间。而只有当加氢价格降至35元/公斤时，氢能汽车的使用成本才能与燃油车大致相当，而15元/公斤的目标，将让其在成本上直接对标电动汽车。&lt;/p&gt;&lt;p&gt;业内人士向记者分析称，若加氢价格能降至15元/公斤，氢能汽车在使用成本上与电动车基本持平，再结合其续航、补能速度的优势，市场接受度将进一步提升。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/03/26/20260326124014982.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;二、氢能时代要来了吗？&lt;/p&gt;&lt;p&gt;氢能车究竟能否像电动车一样走向普及，甚至实现价格上的亲民化？氢能时代是否真的已经悄然临近？&lt;/p&gt;&lt;p&gt;首先，我们必须重新审视氢能源汽车在产业版图中的历史定位与战略价值。氢能源汽车并非近年来才兴起的新概念，作为新能源汽车的重要组成部分，它长期以来都是全球顶尖车企战略布局的核心方向。特别是以丰田为代表的日系汽车巨头，早在上世纪末便开始了前瞻性的技术储备与产业化布局，其执着程度甚至超过了对纯电路线的投入。这种长期的战略坚守，并非出于对某种技术路线的盲目崇拜，而是基于对能源多样性与终极清洁化的深刻洞察。&lt;/p&gt;&lt;p&gt;在经济学的视角下，丰田等巨头的行为实际上是在构建一种“技术期权”，即在锂电路线尚未完全确立统治地位之前，保留另一种可能颠覆现有能源格局的替代方案。这种布局逻辑表明，氢能汽车从未真正离开过主流视野，它只是在等待一个成本曲线与基础设施网络能够产生“临界点效应”的历史时刻。&lt;/p&gt;&lt;p&gt;当前，随着全球碳中和目标的刚性约束日益增强，氢能作为一种二次能源载体，其战略地位正在从“备胎”迅速转向“主力”，这不仅是技术路线的回归，更是全球能源安全与产业结构重塑的必然要求。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/03/26/20260326124014320.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;其次，电动汽车之所以能够快速普及，核心在于特斯拉率先跑通了商业化模式，搭建起成熟的技术逻辑与产业生态，这是氢能汽车目前尚未实现的突破。从经济学的角度来看，任何一种新产品的规模化普及，核心在于解决“成本可接受、使用便捷化、生态可持续”三大核心问题，而电动汽车的快速崛起，正是特斯拉通过精准的市场定位、技术创新与商业模式创新，率先破解了这三大难题。特斯拉的核心贡献，不在于单纯的技术突破，而在于将电动汽车从“小众尝鲜”的产品，转变为“可规模化、可商业化”的大众产品，通过标准化生产降低制造成本，通过超级充电网络解决补能痛点，通过智能化体验提升产品竞争力，最终搭建起“整车制造-充电服务-售后保障”的完整产业生态，带动了全球电动汽车产业的爆发式增长。&lt;/p&gt;&lt;p&gt;反观氢能汽车，目前尚未有任何一家企业能够像特斯拉那样，跑通完整的商业化闭环，技术逻辑虽有突破，但始终未能形成成熟的产业化应用模式。更为关键的是，电动汽车的发展恰逢全球能源转型与消费升级的叠加期，政策支持、资本涌入、市场需求三者形成合力，进一步加速了其普及进程；而氢能汽车的发展，不仅面临技术瓶颈，还受到基础设施、成本控制、产业协同等多重因素的制约，未能形成推动其快速普及的合力，这也是二者发展差距的核心所在。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/03/26/20260326124017643.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;第三，相比于电动汽车，氢能汽车具有不可替代的核心优势，这些优势决定了其在长期发展中具有广阔的市场空间，也是其能够与电动汽车形成互补的关键所在。&lt;/p&gt;&lt;p&gt;一是补能效率的绝对优势，这是氢能汽车最直观、最核心的竞争力之一。对于消费者而言，补能便捷性是影响其购车决策的关键因素，电动汽车的最大痛点之一就是充电耗时过长，即便快充技术不断升级，也难以达到燃油车的补能效率。而氢能汽车的加氢时间仅需数分钟，与燃油车加油时间基本相当，完全解决了补能耗时的痛点，这对于长途出行、商用运输等场景而言，具有不可替代的优势。&lt;/p&gt;&lt;p&gt;二是续航里程的稳定性优势，彻底破解了电动汽车的续航焦虑与低温衰减难题。电动汽车的续航里程受温度、路况、驾驶习惯等多种因素影响，尤其是在冬季低温环境下，续航衰减问题尤为突出，这极大地限制了其在北方地区与长途出行场景的应用。而氢能汽车的续航里程普遍较长，且不受低温环境影响，冬季续航不衰减，能够实现稳定的长距离行驶，这不仅解决了消费者的续航焦虑，也拓宽了其应用场景。从产业应用的角度来看，这种续航稳定性优势，使得氢能汽车更适合北方地区、高原地区等特殊环境，也为其在商用领域的应用奠定了基础。&lt;/p&gt;&lt;p&gt;三是能量密度的核心优势，决定了其在大功率、长续航交通场景的不可替代性。氢气的质量能量密度远高于锂电池，这意味着在相同的重量或体积下，氢能能够提供更强的动力与更长的续航，这种优势在重型卡车、船舶、航空等需要大功率、长续航的交通领域尤为明显。电动汽车受限于锂电池的能量密度，难以满足重型商用车辆的动力需求，而氢能汽车则能够很好地适配这类场景，成为推动商用交通领域脱碳的核心解决方案。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/03/26/20260326124017200.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;四是全生命周期的环保优势，真正实现了“零碳出行”的核心目标。电动汽车的“环保性”并非绝对的，其碳排放主要集中在发电端与锂电池的生产、回收环节，如果发电端以火电为主，那么电动汽车的全生命周期碳排放甚至高于部分燃油车。而氢能汽车若使用绿电制氢，其全生命周期碳排放为零，真正实现了清洁、低碳的出行目标，这与全球“双碳”目标的核心需求高度契合。&lt;/p&gt;&lt;p&gt;第四，尽管前景广阔，但我们必须清醒地认识到，氢能汽车当前的发展仍面临着普遍且严峻的结构性难点，这些难点构成了制约其大规模商业落地的主要瓶颈。&lt;/p&gt;&lt;p&gt;一是储能与运输技术的成熟度尚显不足。氢气具有密度低、易泄漏、易燃易爆等物理特性，导致其储存和运输的技术难度大、成本高。无论是高压气态储氢还是液态储氢，亦或是管道输氢，目前都尚未形成像电网那样高效、低成本的输送网络，整体商业落地距离规模化应用仍有相当的距离。&lt;/p&gt;&lt;p&gt;二是基础设施网络的极度匮乏。加氢站的建设成本高昂，往往是传统加油站的3-5倍，且涉及复杂的安监审批流程。目前国内加氢站数量稀少，分布零散，未能形成连点成线的网络效应，这种“鸡生蛋、蛋生鸡”的困境严重阻碍了消费者的购买意愿。&lt;/p&gt;&lt;p&gt;三是制备成本的居高不下。目前主流的灰氢虽然成本较低但碳排放高，而真正绿色的绿氢成本依然昂贵，尚未能与电动汽车低廉的充电成本进行直接竞争。在没有大规模廉价绿电支撑的情况下，氢能的经济性难以凸显。&lt;/p&gt;&lt;p&gt;从长期来看，氢能汽车的发展前景依然巨大，其爆发只是时间问题而非可能性问题。经济学告诉我们，任何新兴技术的普及都遵循着“S型曲线”，在经历了漫长的导入期后，一旦关键限制因素被突破，将迎来指数级的增长。对于氢能而言，一旦制氢成本随着可再生能源电价的下行而大幅降低，一旦储运技术取得突破性进展使得物流成本可控，一旦加氢站网络形成规模效应，氢能汽车的性价比将迅速反超电动汽车，特别是在商用车和重载领域。&lt;/p&gt;&lt;p&gt;届时，氢能车将会和电动车一样便宜，甚至在特定场景下更具竞争力。这不仅仅是成本的比拼，更是能源结构的优化。未来的交通能源格局，极有可能是“纯电主导轻型乘用车，氢能主导重型商用车及长续航场景”的双轨并行模式。限制问题的解决过程，本身就是产业升级和价值重构的过程。&lt;/p&gt;&lt;p&gt;我们有理由相信，氢能时代的大门正在缓缓打开，一个更加清洁、高效、多元的交通能源新纪元即将到来。在这个进程中，谁能率先攻克成本与基建的难关，谁就能掌握下一个时代的能源话语权。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;													&lt;/div&gt;
-						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Thu, 26 Mar 2026 04:41:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE1FdjFpeGNyTWlZWFJQTG5XVFduZFVZaWd6WFB5Q3BmVkVfamVHWGtKUFltU3hmRVhHS2gtRG85aUFnNV9IemYtTEs3QWhmdUZ5WVFMamVJTE9NX3c</guid></item><item><title>RTX 4090黑屏、崩溃申请售后：厂商竟让用户自己拆卡换硅脂！ - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111761.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月26日消息，&lt;span&gt;&lt;strong&gt;一位Inno3D GeForce RTX 4090 iChill显卡用户在申请售后时，遇到了令人意外的处理方式，厂商竟建议他自行拆开显卡更换硅脂，而非直接受理RMA。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;该用户表示，这张RTX 4090此前正常使用了两年，但近两周开始出现黑屏花屏、满载时意外崩溃等问题，严重时需要强制重启才能恢复。&lt;/p&gt;
-&lt;p&gt;用户已排查线缆和电源供应，确认未进行任何超频操作且驱动为最新版本，但故障依然频繁发生。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/6fe92ae1-7d2f-439a-ab2c-d91d10252b8b.png" target="_blank"&gt;&lt;img alt="RTX 4090黑屏、崩溃申请售后：厂商竟让用户自己拆卡换硅脂！" h="312" src="//img1.mydrivers.com/img/20260326/S6fe92ae1-7d2f-439a-ab2c-d91d10252b8b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;用户随后联系Inno3D申请售后，但厂商要求其通过购买渠道（零售商）提交申请，用户表示零售商端的两年保修已过期，但Inno3D方面仍有一年保修剩余。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Inno3D坚持要求走零售商渠道，随后给出了一个令人意外的建议，让用户自行拆开显卡，更换GPU上的硅脂。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这一建议意味着用户需要撕毁保修贴纸，而拆卡操作本身极有可能导致保修失效，用户拒绝了这一方案，理由是拆卡风险高且无法保证效果。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/8c9650e1-a022-423b-a584-f50bc076ebf2.png" target="_blank"&gt;&lt;img alt="RTX 4090黑屏、崩溃申请售后：厂商竟让用户自己拆卡换硅脂！" h="325" src="//img1.mydrivers.com/img/20260326/S8c9650e1-a022-423b-a584-f50bc076ebf2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此外，该用户的OCCT测试报告显示，显卡在温度尚未达到临界值时就已经在数分钟内出现大量错误，指向硬件层面的问题而非散热不足。&lt;/p&gt;
-&lt;p&gt;经过一番交涉后，Inno3D最终接受了该用户的售后申请。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260326/4e5c2cc3-cd91-4522-8591-78dc3cc17989.jpg" target="_blank"&gt;&lt;img alt="RTX 4090黑屏、崩溃申请售后：厂商竟让用户自己拆卡换硅脂！" h="339" src="//img1.mydrivers.com/img/20260326/S4e5c2cc3-cd91-4522-8591-78dc3cc17989.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 04:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE02TEE4d1dtSUNJVm1sZXNEVEdyNHh0bE1qNzVMLXBtSHJUTmpVZWtqYTg0dUVUNkFtMGR2TDZtNHpXMW8yXzB0aFhQeGhHR3EtWS1fZ2lwYjM</guid></item><item><title>周鸿祎对话耶鲁学者：AI花5分钟写完代码 我要看一个小时 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111760.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技3月26日消息，近日，由百余位知名企业家组成的耶鲁学者校友团实地走访360集团。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/5c477bc7e1a24d68a4fa72abe3161fbc.png" target="_blank"&gt;&lt;img alt="周鸿祎对话耶鲁学者：AI花5分钟写完代码 我要看一个小时" h="270" src="//img1.mydrivers.com/img/20260326/s_5c477bc7e1a24d68a4fa72abe3161fbc.png" w="380"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在内部分享中，360集团创始人周鸿祎进行主题分享，聚焦OpenClaw（龙虾）时代的技术演进与企业落地，与学者们展开了深度交流。&lt;/p&gt;
-&lt;p&gt;在交流现场，周鸿祎分享了自己的近期实践：“我最近几乎每天都在跟AI一起编程，有时甚至十几个小时连轴转，顾不上休息和查看微信，不断通过手机给AI下指令，让它开发各类智能体。”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;他介绍称，AI聪明时，几千行代码瞬间生成，水平甚至超过他自己，但犯起错来也让人头疼，会莫名其妙删掉代码，效率越高，人反而越累。“它五分钟写完的东西，我得看一个小时”周鸿祎这样总结。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;他透露，当前硅谷的许多CEO和投资人也在亲自带着AI写代码，有人甚至同时开启十几个智能体协同工作。&lt;/p&gt;
-&lt;p&gt;“这些企业管理者并不缺程序员，之所以亲自下场干活，是因为大家意识到，如果不亲自深度使用AI，就无法真正理解这一轮技术会将行业带向何方。”&lt;/p&gt;
-&lt;p&gt;周鸿祎表示，“缺乏一线的切身体验，面临关键节点时的很多战略决策是无法做出的。”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;值得一提的是，在周鸿祎看来，未来的软件将被拆解为原子化的技能包，供智能体根据需求灵活调用；当现有工具不足时，智能体甚至能自主编写代码解决问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;随着技术门槛降低，工程师的核心工作将从基础的代码编写，转向对海量智能体的编排与指挥，管理者也需要构建适应数字时代的“硅基领导力”。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 04:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5oWnJzbl9oOWRRMktqc0ZWVjNlTjZ0V3NSYlFiV1AySFRWRDh4QU5qMVB4YWtFTkgtZHFmdm1Ic0tnMjRQNGlTQUZRNzBnWGFMUWt3Y1FYdEc</guid></item><item><title>机器人“不够聪明”？王晓刚：泛化能力不足，两大关键原因 - 观察者网</title><link>https://www.guancha.cn/politics/2026_03_26_811477.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	当前的人形机器人，普遍停留在"看似能用，实则不够聪明"的阶段，其中泛化能力不足是核心挑战。
-&lt;/p&gt;
-&lt;p&gt;
-	谈及这一问题，商汤联合创始人、执行董事、大晓机器人董事长王晓刚在博鳌亚洲论坛2026年年会现场向观察者网表示，主要原因有两个：一个是数据，一个是模型。
-&lt;/p&gt;
-&lt;p&gt;
-	“之前是由人来操控真机，靠真机采集数据。这种采集数据的方式不对，”王晓刚说，这样的数据不仅不是在人类真实生产生活当中采集的，而且效率低。“过去几年总共积累10万小时的数据，和我们要达到千万小时的目标，差距非常大。”
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/dfic/2026/03/26/20260326115731997.jpg" title="点击查看大图" class="bigimg"&gt;&lt;span font-size:14px&gt;&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	王晓刚在博鳌亚洲论坛2026年年会发言&lt;span&gt;博鳌亚洲论坛&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	为此，2025年，大晓机器人提出“环境式数据采集”，利用第一视角的眼镜、穿戴式设备，以及第三视角的传感器，在人真实的生产生活环境中去记录人的行为。
-&lt;/p&gt;
-&lt;p&gt;
-	这样一来，“像保洁阿姨等工人就可以在工作过程当中自然地把这些数据采集下来，从而快速实现数据积累。如果有1000人携带这样的采集设备，一天就有1万小时的数据积累。”
-&lt;/p&gt;
-&lt;p&gt;
-	王晓刚还提到，用机器采集的数据只限于机器本身，一旦换了个机器型号，又要重新进行数据采集。而“环境式采集”到的人的数据，能做到“一脑多形”，数据可以用在不同类型机器人的本体上。
-&lt;/p&gt;
-&lt;p&gt;
-	至于模型，“以前的VLA模型与本体强相关，机器人收到命令之后，直接输出本体的参数。现在VLA只能完成像分拣货物、拿放水杯这样的简单任务。”王晓刚说，现在要用“世界模型”。
-&lt;/p&gt;
-&lt;p&gt;
-	他解释道，世界模型可以让机器人在和世界交互的时候，更本质地理解物理规律是什么，人的行为逻辑是什么，更具通用性且能完成复杂任务。
-&lt;/p&gt;
-&lt;p&gt;
-	他认为，未来，世界模型和VLA模型不一定非此即彼，二者可以协同。
-&lt;/p&gt;
-&lt;p&gt;
-	“比如在机器人的‘大脑’上有两块GPU，一块是世界模型，当给到它复杂任务时，它会像生成剧本一样，规划出接下来怎么一步一步走。当到了某一个比较简单的具体任务时，VLA可以帮它执行。执行过程中如果发现眼前看到的情景和‘脑子’里想象的不一样，这时候它的世界模型又会重新启动，重新去规划和预测未来的剧本。”王晓刚说。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Thu, 26 Mar 2026 04:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE5xdVA0aUxQUTJ2Njc4eHZhOHFTcFduUXBzcWhlR3V6UExwYVRHekxDbENCQ0h3RC1nMUE2YWFwLXZrcVhIUUJ5OWI2OU83TjhSTEJFYktZYTVJbHFieHJySEg1Rlc0Zw</guid></item><item><title>英国发癫：中国风力涡轮机危险，不能用 - 观察者网</title><link>https://www.guancha.cn/internation/2026_03_26_811476.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	【文/观察者网 王恺雯】美西方对国家安全概念的滥用，已经到了草木皆兵的地步，中国企业正常的商业投资行为，也能被其视为洪水猛兽。
-&lt;/p&gt;
-&lt;p&gt;
-	据英国《金融时报》报道，英国政府当地时间3月25日称，中国风力涡轮机制造商明阳智能的产品“构成国家安全风险”，因此“无法支持”将其用于英国的海上风电项目。
-&lt;/p&gt;
-&lt;p&gt;
-	去年10月，明阳智能发布公告称，拟投资15亿英镑（约合138亿元人民币），在苏格兰建设英国首个全产业链一体化风电机组制造基地，为英国、欧洲及其他市场生产涡轮叶片和其他部件。
-&lt;/p&gt;
-&lt;p&gt;
-	报道称，英国政府反对将明阳产品用于英国的海上风电项目，预计会导致明阳在苏格兰建厂的计划落空。此前，苏格兰境内多个选址已进入最终候选名单，目前最优选址为因弗内斯附近的阿德西尔港。
-&lt;/p&gt;
-&lt;p&gt;
-	《金融时报》去年6月披露，美国特朗普政府曾警告英国，允许明阳建厂可能带来所谓的“国家安全风险”。一些英国议员也对该计划提出批评。
-&lt;/p&gt;
-&lt;p&gt;
-	据报道，这些反对人士一方面以所谓“担忧中国政府干预私企”为借口，一方面又担心来自中国的竞争会进一步削弱欧洲工业。
-&lt;/p&gt;
-&lt;p&gt;
-	英国政府称，经过"慎重考虑"，其不支持将明阳的涡轮机"用于英国的海上风电项目"，并声称，“我们始终将采取行动保护国家安全，并致力于加强和优先发展具有韧性和可持续性的海上风电供应链。”
-&lt;/p&gt;
-&lt;p&gt;
-	一名知情人士表示，英国政府已经认定明阳存在“国家安全风险”。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2026/03/26/20260326103032307.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	中国已建成的离岸距离最远、水深最深的近海深水区海上风电项目&lt;span&gt; 明阳集团&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	明阳智能回应称，对英国政府不允许其世界领先技术用于英国海上风电场感到失望，并补充说，公司将继续与英国政府沟通，如政策发生变化，不排除恢复相关计划。
-&lt;/p&gt;
-&lt;p&gt;
-	明阳智能是全球最大的风力涡轮机制造商之一，在全球拥有超过2.5万名员工。除了在上交所上市，该公司还在伦敦发行全球存托凭证（GDR）。
-&lt;/p&gt;
-&lt;p&gt;
-	苏格兰地方政府支持明阳对阿德西尔港的潜在投资，认为这不但有助于发展当地海上风电行业的供应链，还能帮助这个因北海石油衰落受到冲击的地区创造就业机会。
-&lt;/p&gt;
-&lt;p&gt;
-	“国家安全固然十分重要，必须得到尊重，但遗憾的是，英国政府未能清楚说明明阳究竟存在什么问题。”苏格兰政府副首席大臣凯特·福布斯表示。
-&lt;/p&gt;
-&lt;p&gt;
-	她补充说：“显而易见，工党已经在打击苏格兰的石油和天然气行业，扼杀投资，减少就业岗位。”
-&lt;/p&gt;
-&lt;p&gt;
-	根据丹麦风力涡轮机制造商维斯塔斯（Vestas）25日发布的公告，英国及苏格兰政府已和该公司就在苏格兰合作投资建厂一事进行了谈判。
-&lt;/p&gt;
-&lt;p&gt;
-	维斯塔斯表示，如果能获得足够多的英国风电项目订单，将推进该工厂建设，并预计最早可能于2029年投产，创造多达500个技术岗位。
-&lt;/p&gt;
-&lt;p&gt;
-	英国最大的家庭能源供应商章鱼能源曾呼吁英国拥抱中国的能源技术，该公司于去年9月宣布与明阳智能建立合作关系，包括计划在确保“最高水平的数据保护和网络安全”的前提下，在英国部署明阳的涡轮机。
-&lt;/p&gt;
-&lt;p&gt;
-	“看看中国，我们看到的是他们在风电部署上的巨大创新能力和速度，以及在创新上的持续投入——这一点不容忽视。”章鱼能源发电业务负责人、首席执行官佐伊莎·诺斯-邦德今年1月表示。她补充说，与中国硬件制造商接触后发现，若能在英国引入中国风机，风电项目的开发成本实际上可以降低30%。
-&lt;/p&gt;
-&lt;p&gt;
-	去年10月，中国外交部发言人郭嘉昆在回应明阳智能拟在苏格兰投资建厂一事时表示，中国政府支持中国企业在坚持互惠互利、遵循市场化原则的基础上依法依规开展国际合作。同时，中方投资安全是否有保障也是重要考量因素。
-&lt;/p&gt;
-&lt;p&gt;
-	“近年来正常经贸项目在英国被泛政治化、泛安全化冲击的例子屡见不鲜。”郭嘉昆表示，中方一贯反对泛化国家安全概念、将经贸问题政治化的做法。不幸的是，目前英国国内一些人不断翻炒荒唐可笑、缺乏基本常识的“中国威胁”谬论。如果任由此风泛滥，势将严重影响中国企业对英国投资环境的评估并慎重决策。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Thu, 26 Mar 2026 03:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBiNmYzNjJVcTBZN3JkYkJaZ1AzdHlEVENhQTJVUGZKNTkxLUNhMzQ3ZDJTU0FBYTNuaHA3WUlqMk1zdEpxRGwyOENWSDZTTXpXeENIZjNoeGUzVUVELXY3WXdLS0xqUU1qWHc</guid></item><item><title>机器人搞量子理疗！涉事公司：可磁化人体能量场排出不好的东西 - 驱动之家</title><link>https://news.mydrivers.com/1/1111/1111751.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;3月26日消息，近日有博主在社交平台爆料，3月11日至13日杭州国际博览中心举办的一场智能展会上，一款名为 “人形理疗量子机器人” 的产品现身，其宣传内容引发网友对科学性的强烈质疑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;据了解，该产品声称可借助 “量子技术”“中微子”“磁化细胞” 等手段，实现理疗乃至身体修复功效，相关表述因违背基本科学常识，遭到网友普遍质疑。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;针对这款 “人形理疗量子机器人” 的产品资质问题，3月25日，该公司一名工作人员回应表示，目前产品仍在进行医疗器械申报流程，因此对外只能称作 “理疗”，不能提及 “治疗”，原因是尚未取得医疗器械相关证件。&lt;/p&gt;
-&lt;p&gt;该工作人员还声称，产品拥有专利支持，同时具备检测报告及相关证明材料。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在被问及产品具体工作原理时，该工作人员给出了令人匪夷所思的解释：机器人内部搭载中微子母盘，通过与人握手，就能磁化人体能量场，进而排出体内有害物质。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;至于更详细的技术原理，其则表示可关注公司公众号内讲师的科普视频，不少客户都是观看视频后认可产品才主动联系合作。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;面对外界的广泛质疑，该工作人员显得不以为然，称存在争议属于正常现象，还宣称这款 “量子理疗” 技术在全球独一无二。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;其还表示，公司创始人是颇具传奇色彩的人物，若没有争议，这项技术也无法走到世界前列，并称经核查，全球范围内没有与该发明相同的技术成果。&lt;/p&gt;
-&lt;p&gt;工商信息显示，推出该产品的企业为永生时空人工智能科技（北京）有限公司，创始人及实际控制人为郑奎飞。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;值得注意的是，该公司此前就曾因在非医疗器械广告中宣称疾病治疗功能、违规使用医疗用语，被监管部门处以15万元罚款。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260326/9f5874f9538449ea9e41da436d0d19dc.jpg" target="_blank"&gt;&lt;img alt="机器人搞量子理疗！涉事公司：可磁化人体能量场排出不好的东西" h="731" src="//img1.mydrivers.com/img/20260326/s_9f5874f9538449ea9e41da436d0d19dc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 03:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1SVDFVd0FNUFJGRWdqMV9Mbmx1TkxzODdaQUVhUldpQUsyZm9uQVVueVNqSnpsZzBjcERiLVZyTk9wRGRESkJYTkctYnRybnJCdEVrRldkekU</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 26 Mar 2026 06:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5PcVVPVkI1SC01WnlsY1RZckVENVVKRFQyeDBIX3FIUkV3VU9zc3NwV3FLV2Vqc0pJRmhmeVJiNkRhMkFHbzRpYzItdF9QeGZfdVFiUGtqWks</guid></item><item><title>伊朗正借鉴俄罗斯无人机作战经验对付美国 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/iran-drone-warfare-russia-ukraine-cefce592</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Thu, 26 Mar 2026 06:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTFA5Sjd3RTZHNEJKUEQwS0wxRzR4dmd2YmFEX3ZlSzFLZ0M0T3BFdGN3X0YzcXN6TkJrc3AxQll4Y2lXWnpGTU9EVWMtWVdJbEZ1TWdaQ1gzOFJ1Ujl6TDFZX2VBN2g3X2huNVdXYkwxSGxxVGhNN1BIRHBn</guid></item></channel></rss>
