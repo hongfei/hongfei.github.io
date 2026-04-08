@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Claude Code史诗级负优化！大厂AI主管批思考深度暴跌，官方回应被开发者怼爆：菜成AI“玩具” - Infoq.cn</title><link>https://www.infoq.cn/article/mqW0bszWH0fC8oBDcsax</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;整理 | 华卫&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“Claude Code 在 2 月份更新后无法用于复杂的工程任务。”近日，一条这样的帖子在热门开发者论坛上引发热议，甚至让 Anthropic 的 Claude Code 负责人 Boris Cherny 亲自“出现”来做回应。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/71/71a8033fc37258f340a7de043b0e218f.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;溯源之后我们发现，这一言论最早是在一位开发者在 Claude Code 的 Github 主页上提交的 issue，且附上的分析报告基于挖掘了三个月的 Claude 会话日志数据得出，包含的角度及内容都十分详尽。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/21/211e3d1fd9eff1ef9b0ae80d346c4075.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;而根据这位开发者在 Github 主页上的名字 Stella Laurenzo 及相关的 Linedln 帖子，该开发者还是 AMD 的 AI 团队主管。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e6/e611b27449bbb59a6bfcda4d11cdffe0.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/1a/1ad5da56617d906008fd52d6aa4977a1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;h1 data-type="heading" data-id="heading0"&gt;思考深度下降 67%，算力消耗增加几个数量级&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;先来看看 Laurenzo 发布的分析报告。该报告由 Claude Opus 4.6 基于其 2026 年 1 月 30 日至 4 月 1 日的会话日志数据生成，对 6852 份 Claude Code 会话文件中的 17871 个思考模块与 234760 次工具调用进行量化了分析后给出结论：redact-thinking-2026-02-12 的上线，与复杂、长会话工程工作流中可观测到的质量下降呈现精准关联。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;并且，数据表明，扩展思考 token 并非 “锦上添花” 的功能，而是模型完成多步骤研究、遵循规范、审慎修改代码所必需的结构性要素。当思考深度被削减时，模型的工具使用模式会出现可测量的转变，从 “优先研究” 转向 “优先编辑”，进而引发用户反馈的各类质量问题。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;在展开分析前，报告中表示，“分析通过数据帮助 Anthropic 明确受影响最显著的工作流及其成因，旨在为高权限用户的思考 token 分配决策提供依据。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;一是思考内容屏蔽时间线与质量下降高度吻合，这基于会话 JSONL 文件中的思考模块分析。此次质量下降问题于 3 月 8 日被独立上报，而这一天恰好是 redacted thinking 占比突破 50%的日期，其上线节奏（一周内从 1.5%逐步升至 25%→58%→100%）与分阶段灰度发布的特征完全吻合。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e3/e311742acb64cb8e14a1c16a1675ee8d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;二是思考深度在 redacted thinking 前已呈下降趋势，思考模块中的特征字段与思考内容长度的皮尔逊相关系数达 0.971（基于 7146 组同时包含二者的配对样本测算）。即便在 redacted thinking 后，仍可据此估算思考深度。截至 2 月下旬，在 redacted thinking 启动之前，思考深度就已下降约 67%。3 月初上线的 redacted thinking 处理，让这一变化对用户变得不可见。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/3c/3c178dd9e1b381d00138dcdc5978c5bd.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;三是行为影响，这些可量化的质量指标均在开展思考分析之前，基于 18000+条用户提示词独立计算得出。其专门编写了拦截脚本（stop-phrase-guard.sh），用于自动检测模型回避责任、过早终止任务、反复请求授权确认等行为。该脚本在 3 月 8 日之后的 17 天内触发了 173 次，而在此之前触发次数为零。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/6e/6ec968e5cbe5ec2c0cd2704403dab23d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;四是工具使用模式转变：优先查阅 → 优先编辑，对 234760 次工具调用的分析显示，模型不再先阅读代码再进行修改。模型从每次编辑对应 6.6 次查阅降至 2.0 次，修改前的调研行为减少了 70%。在表现良好的阶段，模型工作流为：读取目标文件 → 查阅相关文件 → 在代码库中检索调用关系 → 阅读头文件与测试代码 → 再进行精准修改。而在性能退化阶段，模型仅读取当前文件便直接编辑，常常不检查上下文环境。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/de/defb220bc17633d04bcfb080b523cbca.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;报告称，研究力度的下滑始于 2 月中旬，与估算思考深度下降 67%的时间段完全吻合。同时，整文件写入的使用量翻倍，模型越来越倾向于重写整个文件，而非进行精准的局部修改；这种方式速度更快，但会丧失精确性与上下文感知能力。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e2/e2a8d62270cf32fdd93fde2c91917c85.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/17/173d320e682fc1429c758cbcdf4f0969.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;并且，“减少思考次数看似能节省每次请求的算力。但一旦思考不足导致输出质量下降时，模型就会崩溃：生成错误结果、被中断、不断重试，并在后续修正中消耗大量 token。而这些修正原本在第一次就正确思考的情况下是不需要的，最终结果却是，整体算力消耗增加了几个&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;数量级。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;据悉，受影响的工作流包含多个场景：50 余个并发智能体会话，从事系统编程（C、MLIR、GPU 驱动）；30 分钟以上自主运行，执行复杂的多文件修改；大量项目专属规范（长达 5000 余词的 CLAUDE.md）；代码评审、需求 / 工单管理与迭代调试；表现良好阶段，曾在一个周末内通过两个合并请求合入 19.1 万行代码。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;Laurenzo 强调，“扩展思考是高级工程师工作流程的支柱”。她表示，扩展思考是模型实现以下能力的核心机制：行动前规划多步方案（读取哪些文件、按什么顺序）、从 CLAUDE.md 中调取并应用项目规范、在输出前自行发现错误、判断继续执行还是终止（会话管理）、在数百次工具调用中保持连贯推理。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“当思考深度不足时，模型会倾向于选择成本最低的行为：不阅读就编辑、未完成就终止、为失败推诿责任、采用最简单而非正确的修复方案。这些正是实际观测到的问题表现。”这是该开发者最终给出的判断。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;为此，她提出以下四点改进建议。&lt;/span&gt;&lt;/p&gt;&lt;ul data-type="bulletedlist"&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;思考资源分配透明化：若思考 token 被削减或设限，依赖深度推理的用户应知情。当前的思考内容脱敏头部导致外部无法验证。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“最大思考量” 付费档位：运行复杂工程工作流的用户愿意支付更高费用，以获得稳定的深度思考能力。现有订阅模式未区分单次需 200 思考 token 与需 20,000 思考 token 的用户。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;在 API 响应中返回思考 token 指标：即便思考内容被脱敏，在用量响应中暴露 thinking_tokens 字段，可让用户监控请求是否获得所需推理深度。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;来自重度用户的预警指标：拦截脚本触发率（从 0 升至日均 10 次）可作为机器可读信号，在全用户群中监测，作为质量下降的先行指标。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1 data-type="heading" data-id="heading1"&gt;开发者骂疯了：退化为一个 AI“玩具”&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对于这份分析报告，不少开发者表示了强烈的认同。“分析得太棒了。作为用户，我过去几周也遇到了这个问题，但一直找不到原因。”“完全证实了我们一直以来所说的！”“这与我使用 Claude 的经历非常吻合，尤其是在过去的几个月里。”“原来不止我一个人这样。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;甚至有几位个人开发者认为，Claude Code 的水平已经下降到一年以前。“过去一个月我对 Claude Code 越来越失望，它经常胡说八道，还信誓旦旦地解释一些我知道是错的原理。感觉就像在用去年的 Claude Code 一样。”“我使用 Claude Code 已经 8 个月了，但现在模型质量的下降程度让我非常惊讶。不仅 token 使用量激增，而且最新 Opus 和 Sonnet 模型生成的代码质量也远低于我去年 12 月的水平。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;还有开发者称，“不止复杂工程任务，Claude 已经退化到无法信任其执行任何工程任务的地步了。它从来不会第一次就把事情做对，代码中充满了错误和重复代码，必须时刻监视它，否则它就会搞砸一切。Claude 已经沦为又一个人工智能‘玩具’了，真可惜。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;值得关注的是，某位采用 Claude 的企业技术团队负责人，就此给出了更为尖锐的评价。&lt;/span&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;我对此并无异议，而且我其实还有更复杂的内部分析。但我也在尽量谨慎发言，只谈论我本人能够证实的事情。我曾多次告诉我的团队，“挫折在所难免，供应商发布糟糕版本也不是第一次了”。然而，这次的退步非常严重，我想我们都在观察 Anthropic 会如何处理。归根结底，我需要一个值得信赖的工程工具合作伙伴，这一点对智能体本身和智能体的开发者同样适用。如果他们能从现在的状况中把产品拉回正轨，我会密切关注，并在看到他们的实际行动之前保留意见。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;我受多项保密协议约束，只能透露我能说的有限信息。我只想再补充一点：六个月前，Claude 在推理质量和执行能力上还是独一档的存在但其他竞品现在也需要被密切关注和仔细评估。在 Opus 此前所处的能力梯队中，Anthropic 早已不再是唯一的玩家。&lt;/p&gt;&lt;/blockquote&gt;&lt;h1 data-type="heading" data-id="heading2"&gt;Claude Code 负责人回应被驳，反给 Codex“送人”？&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;事态不断发酵，加入这场讨论的开发者越来越多，Claude Code 负责人 Boris Cherny 也注意到了，并于几个小时前亲自在 Github 和论坛都发帖回应了情况。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;您好，感谢这份详尽的分析。在继续沟通之前，我想先表达对其中展现的深度思考与严谨态度的认可。这份报告内容丰富，我将尝试逐一拆解说明。核心问题主要集中在两点：&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;关于 redact-thinking-2026-02-12&lt;/p&gt;&lt;p data-type="paragraph"&gt;该测试版头部配置仅在界面中隐藏思考过程，因为绝大多数用户并不会查看这部分内容。它不会影响模型实际的思考行为，也不会改变思考配额或底层扩展推理机制，属于纯界面层面的改动。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;在底层实现中，启用该头部可以省去生成思考摘要的步骤，从而降低延迟。你可以在 settings.json 中设置 showThinkingSummaries: true 退出该模式（详见文档）。&lt;/p&gt;&lt;p data-type="paragraph"&gt;如果你分析的是本地存储的会话记录，在该头部启用的情况下将不会保存原始思考内容，这很可能对分析结果产生了影响。Claude 在本次分析中观察到会话记录缺少思考内容，可能并未意识到思考过程实际仍在进行，只是未对用户展示而已。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;关于 “截至 2 月下旬思考深度已下降约 67%”&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们在 2 月份确实落地了两项可能对此产生影响的改动，且均经过审慎评估：&lt;/p&gt;&lt;p data-type="paragraph"&gt;2 月 9 日：Opus 4.6 版本发布 → 默认启用自适应思考机制 Opus 4.6 支持自适应思考，这与此前采用的固定思考配额机制不同。在该模式下，由模型自主决定思考时长，整体效果普遍优于固定配额方案。可通过 CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING 退出该机制。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;3 月 3 日：Opus 4.6 默认思考强度设为中等（85）我们发现，强度值 85 在智能水平、延迟与成本之间达到了对大多数用户而言的最优平衡点，能够在提升 token 效率的同时降低延迟。我们的产品原则之一是避免擅自更改用户设置，理想情况下本应从一开始就将默认值设为 85。由于我们认为这是一项关键调整，因此采取了以下方案：&lt;/p&gt;&lt;p data-type="paragraph"&gt;1. 上线时伴随弹窗提示，让用户知晓变更并可选择退出&lt;/p&gt;&lt;p data-type="paragraph"&gt;2. 在用户首次打开 Claude Code 时显示当前强度值，避免产生困惑&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;部分用户希望模型进行更长时间的思考，即便这意味着更高的耗时与 token 消耗。若想进一步提升智能表现，可通过 /effort 指令或在 settings.json 中将强度设为 high。该设置会在会话间保留，也可在团队内共享。你也可以使用 ULTRATHINK 关键字为单轮对话启用高强度思考，或设置 /effort max 让本轮对话后续内容使用更高思考强度。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;后续我们将测试为团队版与企业版用户默认启用高思考强度，使其直接受益于扩展思考能力，即便会带来额外 token 消耗与延迟。该默认设置同样可通过 /effort 指令与 settings.json 进行调整。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;但大部分开发者似乎并不“买账”他的解释，还纷纷反驳了其论述的几个方面。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/03/03bd0e2df2eeb40b76573cc3f8091ea1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;首先是 Laurenzo，她对此回复道，“需要明确的是，针对这一问题，我们已经尝试了思考强度与自适应思考的所有参数组合，并通常基于连续数天的日志进行验证。最终我们得出结论：Claude 的质量退化已经严重到无法再作为可靠协作伙伴正常使用。我们拥有足够多思考过程未被屏蔽的日志数据，可以证明：在思考过程被隐藏之前，模型性能就已经出现劣化。无论如何，你们可以按照自己的方式处理问题生命周期，但我们目前没有看到任何证据表明该问题已被修复，或可通过现有参数设置进行有效控制。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;一部分开发者表态称，“关于此事，如果 Anthropic 官方回应称一切运行正常、并无问题，那我们最终大概率将迁移至 Codex。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;也有开发者表示，“直到输出质量急剧下滑，我才意识到默认思考强度已被改为中等。为此我耗费了将近一天时间来修正问题。现在我都会把思考强度设为最高，之后就再没出现过糟糕的会话情况。恳请加入一个‘始终全力思考’的模式可以吗？”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对此，有几位开发者持有不同的看法。一位开发者说道，“我感觉最高思考强度模式反倒有点像是用力过猛，结果变得急功近利、敷衍了事，甚至出现反向效果，反而和低强度模式或劣质提示词的表现差不多了。”还有开发者指出，“问题远不止是默认思考强度被设为中等这么简单，我也认同其他人的说法，即便调至高强度模式，模型急于草草收尾的倾向也明显大幅加剧。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;Cherny 专门回复了这个问题，态度也很诚恳。他表示，“感谢反馈。为方便我们实际定位问题，麻烦您下次遇到此类情况时执行 `/bug` 指令，并在此处提交反馈编号。这样我们就能进行调试，判断是出现了异常问题，还是仍在正常波动范围内。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;就这一情况，Laurenzo 在回复 Cherny 的评论中发表了最新观点及其之后的计划。“这次引发的反响远超我的预期，之后我已删除了部分被断章取义的表述，这些内容偏离了我撰写报告时只想呈现‘客观观测结果’的初衷。正如该讨论主题开头所说，Claude 在过去数月里一直表现出色，我们也希望评估如何继续从它身上获得我们早已习惯的高质量输出。在我们此前的测试中，并未发现调整任何思考强度参数能够改变模型触发拦截规则、倾向走最简路径的问题。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;她表示，“由于这类评估必须基于真实开发场景，我们会在相关工作推进时重新试用这些设置，并提交 `/bug` 反馈记录（我们同时保留了完整会话日志，可私下共享；本次分析仅基于开源代码库上的工作内容）。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;参考链接：&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://news.ycombinator.com/item?id=47660925" title data-type="link"&gt;https://news.ycombinator.com/item?id=47660925&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/42796#issuecomment-4194703741" title data-type="link"&gt;https://github.com/anthropics/claude-code/issues/42796#issuecomment-4194703741&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Infoq.cn</author><pubDate>Wed, 08 Apr 2026 13:29:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE9NTnhCdEp6cXkzTzlpQUNZVlFHTERZTG5GaG1tRXpYamw5XzJRbjA4NFQzX2NrLVNMSUZ2TnRzWGJMZ2tkdkI3Q1k4ek5RangtVE5QYVpHLWItRWtsS3c</guid></item><item><title>全系华为896线最强激光雷达 新款阿维塔12上市：29.39万起 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114512.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>特斯拉车主吐槽比亚迪闪充桩引热议 网友：蹭饭还骂不合口味 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114522.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;特斯拉车主吐槽比亚迪闪充桩引热议 网友：蹭饭还骂不合口味&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-08 22:48:28  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1114522-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月8日消息，近日，有特斯拉车主实测比亚迪闪充桩后吐槽体验不佳，相关话题迅速引发网友热议。不少人直言去别家桩充电还挑毛病，实在不太合理。&lt;/p&gt;
+&lt;p&gt;该特斯拉车主分享使用经历，称&lt;strong&gt;比亚迪闪充桩的充电枪握持姿势别扭，单手不好操作，插枪时容易碰到特斯拉的充电盖板，存在损坏充电盖板的风险。&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
+&lt;p&gt;此事发酵后，网友表示，比亚迪闪充桩主打自家高电压平台，本就不是为特斯拉量身打造，能开放充电已经很包容，吐槽不断显得有些挑剔。&lt;/p&gt;
+&lt;p&gt;有网友直言：“有种去朋友家做客然后满屋子找茬，最后拖鞋穿反了还问主人家为什么你家拖鞋不合我脚的即视感。”&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/315fdb6250f74f48830764bf6224ba89.png" target="_blank"&gt;&lt;img alt="特斯拉车主吐槽比亚迪闪充桩引热议 网友：蹭饭还骂不合口味" h="907" src="//img1.mydrivers.com/img/20260408/s_315fdb6250f74f48830764bf6224ba89.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;对此，&lt;strong&gt;汽车博主“向北不断电”透露，比亚迪闪充桩最初设计时，并未考虑特斯拉车型，因为400V平台车辆会影响闪充场站的周转效率。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但考虑到特斯拉保有量较大，&lt;strong&gt;比亚迪后续专门进行了调整，让特斯拉车型可以正常插枪充电&lt;/strong&gt;，现在能充上电并非巧合。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/e858196014324a63ad89c89aee22225e.png" target="_blank"&gt;&lt;img alt="特斯拉车主吐槽比亚迪闪充桩引热议 网友：蹭饭还骂不合口味" h="446" src="//img1.mydrivers.com/img/20260408/s_e858196014324a63ad89c89aee22225e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 14:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5hTEVwVmU5U1piWHNXVHBEZFYtV2dod3RuZWRTcFVPWFVCT2FGQ0RZVk9TNktkc1Z6cjJISVBKU2JQcU1vX1BRNkpJNElGTThQd2x3VVlNZEM</guid></item><item><title>Claude Code史诗级负优化！大厂AI主管批思考深度暴跌，官方回应被开发者怼爆：菜成AI“玩具” - Infoq.cn</title><link>https://www.infoq.cn/article/mqW0bszWH0fC8oBDcsax</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;整理 | 华卫&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“Claude Code 在 2 月份更新后无法用于复杂的工程任务。”近日，一条这样的帖子在热门开发者论坛上引发热议，甚至让 Anthropic 的 Claude Code 负责人 Boris Cherny 亲自“出现”来做回应。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/71/71a8033fc37258f340a7de043b0e218f.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;溯源之后我们发现，这一言论最早是在一位开发者在 Claude Code 的 Github 主页上提交的 issue，且附上的分析报告基于挖掘了三个月的 Claude 会话日志数据得出，包含的角度及内容都十分详尽。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/21/211e3d1fd9eff1ef9b0ae80d346c4075.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;而根据这位开发者在 Github 主页上的名字 Stella Laurenzo 及相关的 Linedln 帖子，该开发者还是 AMD 的 AI 团队主管。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e6/e611b27449bbb59a6bfcda4d11cdffe0.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/1a/1ad5da56617d906008fd52d6aa4977a1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;h1 data-type="heading" data-id="heading0"&gt;思考深度下降 67%，算力消耗增加几个数量级&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;先来看看 Laurenzo 发布的分析报告。该报告由 Claude Opus 4.6 基于其 2026 年 1 月 30 日至 4 月 1 日的会话日志数据生成，对 6852 份 Claude Code 会话文件中的 17871 个思考模块与 234760 次工具调用进行量化了分析后给出结论：redact-thinking-2026-02-12 的上线，与复杂、长会话工程工作流中可观测到的质量下降呈现精准关联。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;并且，数据表明，扩展思考 token 并非 “锦上添花” 的功能，而是模型完成多步骤研究、遵循规范、审慎修改代码所必需的结构性要素。当思考深度被削减时，模型的工具使用模式会出现可测量的转变，从 “优先研究” 转向 “优先编辑”，进而引发用户反馈的各类质量问题。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;在展开分析前，报告中表示，“分析通过数据帮助 Anthropic 明确受影响最显著的工作流及其成因，旨在为高权限用户的思考 token 分配决策提供依据。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;一是思考内容屏蔽时间线与质量下降高度吻合，这基于会话 JSONL 文件中的思考模块分析。此次质量下降问题于 3 月 8 日被独立上报，而这一天恰好是 redacted thinking 占比突破 50%的日期，其上线节奏（一周内从 1.5%逐步升至 25%→58%→100%）与分阶段灰度发布的特征完全吻合。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e3/e311742acb64cb8e14a1c16a1675ee8d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;二是思考深度在 redacted thinking 前已呈下降趋势，思考模块中的特征字段与思考内容长度的皮尔逊相关系数达 0.971（基于 7146 组同时包含二者的配对样本测算）。即便在 redacted thinking 后，仍可据此估算思考深度。截至 2 月下旬，在 redacted thinking 启动之前，思考深度就已下降约 67%。3 月初上线的 redacted thinking 处理，让这一变化对用户变得不可见。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/3c/3c178dd9e1b381d00138dcdc5978c5bd.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;三是行为影响，这些可量化的质量指标均在开展思考分析之前，基于 18000+条用户提示词独立计算得出。其专门编写了拦截脚本（stop-phrase-guard.sh），用于自动检测模型回避责任、过早终止任务、反复请求授权确认等行为。该脚本在 3 月 8 日之后的 17 天内触发了 173 次，而在此之前触发次数为零。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/6e/6ec968e5cbe5ec2c0cd2704403dab23d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;四是工具使用模式转变：优先查阅 → 优先编辑，对 234760 次工具调用的分析显示，模型不再先阅读代码再进行修改。模型从每次编辑对应 6.6 次查阅降至 2.0 次，修改前的调研行为减少了 70%。在表现良好的阶段，模型工作流为：读取目标文件 → 查阅相关文件 → 在代码库中检索调用关系 → 阅读头文件与测试代码 → 再进行精准修改。而在性能退化阶段，模型仅读取当前文件便直接编辑，常常不检查上下文环境。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/de/defb220bc17633d04bcfb080b523cbca.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;报告称，研究力度的下滑始于 2 月中旬，与估算思考深度下降 67%的时间段完全吻合。同时，整文件写入的使用量翻倍，模型越来越倾向于重写整个文件，而非进行精准的局部修改；这种方式速度更快，但会丧失精确性与上下文感知能力。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e2/e2a8d62270cf32fdd93fde2c91917c85.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/17/173d320e682fc1429c758cbcdf4f0969.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;并且，“减少思考次数看似能节省每次请求的算力。但一旦思考不足导致输出质量下降时，模型就会崩溃：生成错误结果、被中断、不断重试，并在后续修正中消耗大量 token。而这些修正原本在第一次就正确思考的情况下是不需要的，最终结果却是，整体算力消耗增加了几个&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;数量级。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;据悉，受影响的工作流包含多个场景：50 余个并发智能体会话，从事系统编程（C、MLIR、GPU 驱动）；30 分钟以上自主运行，执行复杂的多文件修改；大量项目专属规范（长达 5000 余词的 CLAUDE.md）；代码评审、需求 / 工单管理与迭代调试；表现良好阶段，曾在一个周末内通过两个合并请求合入 19.1 万行代码。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;Laurenzo 强调，“扩展思考是高级工程师工作流程的支柱”。她表示，扩展思考是模型实现以下能力的核心机制：行动前规划多步方案（读取哪些文件、按什么顺序）、从 CLAUDE.md 中调取并应用项目规范、在输出前自行发现错误、判断继续执行还是终止（会话管理）、在数百次工具调用中保持连贯推理。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“当思考深度不足时，模型会倾向于选择成本最低的行为：不阅读就编辑、未完成就终止、为失败推诿责任、采用最简单而非正确的修复方案。这些正是实际观测到的问题表现。”这是该开发者最终给出的判断。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;为此，她提出以下四点改进建议。&lt;/span&gt;&lt;/p&gt;&lt;ul data-type="bulletedlist"&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;思考资源分配透明化：若思考 token 被削减或设限，依赖深度推理的用户应知情。当前的思考内容脱敏头部导致外部无法验证。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“最大思考量” 付费档位：运行复杂工程工作流的用户愿意支付更高费用，以获得稳定的深度思考能力。现有订阅模式未区分单次需 200 思考 token 与需 20,000 思考 token 的用户。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;在 API 响应中返回思考 token 指标：即便思考内容被脱敏，在用量响应中暴露 thinking_tokens 字段，可让用户监控请求是否获得所需推理深度。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;来自重度用户的预警指标：拦截脚本触发率（从 0 升至日均 10 次）可作为机器可读信号，在全用户群中监测，作为质量下降的先行指标。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1 data-type="heading" data-id="heading1"&gt;开发者骂疯了：退化为一个 AI“玩具”&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对于这份分析报告，不少开发者表示了强烈的认同。“分析得太棒了。作为用户，我过去几周也遇到了这个问题，但一直找不到原因。”“完全证实了我们一直以来所说的！”“这与我使用 Claude 的经历非常吻合，尤其是在过去的几个月里。”“原来不止我一个人这样。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;甚至有几位个人开发者认为，Claude Code 的水平已经下降到一年以前。“过去一个月我对 Claude Code 越来越失望，它经常胡说八道，还信誓旦旦地解释一些我知道是错的原理。感觉就像在用去年的 Claude Code 一样。”“我使用 Claude Code 已经 8 个月了，但现在模型质量的下降程度让我非常惊讶。不仅 token 使用量激增，而且最新 Opus 和 Sonnet 模型生成的代码质量也远低于我去年 12 月的水平。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;还有开发者称，“不止复杂工程任务，Claude 已经退化到无法信任其执行任何工程任务的地步了。它从来不会第一次就把事情做对，代码中充满了错误和重复代码，必须时刻监视它，否则它就会搞砸一切。Claude 已经沦为又一个人工智能‘玩具’了，真可惜。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;值得关注的是，某位采用 Claude 的企业技术团队负责人，就此给出了更为尖锐的评价。&lt;/span&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;我对此并无异议，而且我其实还有更复杂的内部分析。但我也在尽量谨慎发言，只谈论我本人能够证实的事情。我曾多次告诉我的团队，“挫折在所难免，供应商发布糟糕版本也不是第一次了”。然而，这次的退步非常严重，我想我们都在观察 Anthropic 会如何处理。归根结底，我需要一个值得信赖的工程工具合作伙伴，这一点对智能体本身和智能体的开发者同样适用。如果他们能从现在的状况中把产品拉回正轨，我会密切关注，并在看到他们的实际行动之前保留意见。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;我受多项保密协议约束，只能透露我能说的有限信息。我只想再补充一点：六个月前，Claude 在推理质量和执行能力上还是独一档的存在但其他竞品现在也需要被密切关注和仔细评估。在 Opus 此前所处的能力梯队中，Anthropic 早已不再是唯一的玩家。&lt;/p&gt;&lt;/blockquote&gt;&lt;h1 data-type="heading" data-id="heading2"&gt;Claude Code 负责人回应被驳，反给 Codex“送人”？&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;事态不断发酵，加入这场讨论的开发者越来越多，Claude Code 负责人 Boris Cherny 也注意到了，并于几个小时前亲自在 Github 和论坛都发帖回应了情况。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;您好，感谢这份详尽的分析。在继续沟通之前，我想先表达对其中展现的深度思考与严谨态度的认可。这份报告内容丰富，我将尝试逐一拆解说明。核心问题主要集中在两点：&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;关于 redact-thinking-2026-02-12&lt;/p&gt;&lt;p data-type="paragraph"&gt;该测试版头部配置仅在界面中隐藏思考过程，因为绝大多数用户并不会查看这部分内容。它不会影响模型实际的思考行为，也不会改变思考配额或底层扩展推理机制，属于纯界面层面的改动。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;在底层实现中，启用该头部可以省去生成思考摘要的步骤，从而降低延迟。你可以在 settings.json 中设置 showThinkingSummaries: true 退出该模式（详见文档）。&lt;/p&gt;&lt;p data-type="paragraph"&gt;如果你分析的是本地存储的会话记录，在该头部启用的情况下将不会保存原始思考内容，这很可能对分析结果产生了影响。Claude 在本次分析中观察到会话记录缺少思考内容，可能并未意识到思考过程实际仍在进行，只是未对用户展示而已。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;关于 “截至 2 月下旬思考深度已下降约 67%”&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们在 2 月份确实落地了两项可能对此产生影响的改动，且均经过审慎评估：&lt;/p&gt;&lt;p data-type="paragraph"&gt;2 月 9 日：Opus 4.6 版本发布 → 默认启用自适应思考机制 Opus 4.6 支持自适应思考，这与此前采用的固定思考配额机制不同。在该模式下，由模型自主决定思考时长，整体效果普遍优于固定配额方案。可通过 CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING 退出该机制。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;3 月 3 日：Opus 4.6 默认思考强度设为中等（85）我们发现，强度值 85 在智能水平、延迟与成本之间达到了对大多数用户而言的最优平衡点，能够在提升 token 效率的同时降低延迟。我们的产品原则之一是避免擅自更改用户设置，理想情况下本应从一开始就将默认值设为 85。由于我们认为这是一项关键调整，因此采取了以下方案：&lt;/p&gt;&lt;p data-type="paragraph"&gt;1. 上线时伴随弹窗提示，让用户知晓变更并可选择退出&lt;/p&gt;&lt;p data-type="paragraph"&gt;2. 在用户首次打开 Claude Code 时显示当前强度值，避免产生困惑&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;部分用户希望模型进行更长时间的思考，即便这意味着更高的耗时与 token 消耗。若想进一步提升智能表现，可通过 /effort 指令或在 settings.json 中将强度设为 high。该设置会在会话间保留，也可在团队内共享。你也可以使用 ULTRATHINK 关键字为单轮对话启用高强度思考，或设置 /effort max 让本轮对话后续内容使用更高思考强度。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;后续我们将测试为团队版与企业版用户默认启用高思考强度，使其直接受益于扩展思考能力，即便会带来额外 token 消耗与延迟。该默认设置同样可通过 /effort 指令与 settings.json 进行调整。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;但大部分开发者似乎并不“买账”他的解释，还纷纷反驳了其论述的几个方面。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/03/03bd0e2df2eeb40b76573cc3f8091ea1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;首先是 Laurenzo，她对此回复道，“需要明确的是，针对这一问题，我们已经尝试了思考强度与自适应思考的所有参数组合，并通常基于连续数天的日志进行验证。最终我们得出结论：Claude 的质量退化已经严重到无法再作为可靠协作伙伴正常使用。我们拥有足够多思考过程未被屏蔽的日志数据，可以证明：在思考过程被隐藏之前，模型性能就已经出现劣化。无论如何，你们可以按照自己的方式处理问题生命周期，但我们目前没有看到任何证据表明该问题已被修复，或可通过现有参数设置进行有效控制。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;一部分开发者表态称，“关于此事，如果 Anthropic 官方回应称一切运行正常、并无问题，那我们最终大概率将迁移至 Codex。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;也有开发者表示，“直到输出质量急剧下滑，我才意识到默认思考强度已被改为中等。为此我耗费了将近一天时间来修正问题。现在我都会把思考强度设为最高，之后就再没出现过糟糕的会话情况。恳请加入一个‘始终全力思考’的模式可以吗？”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对此，有几位开发者持有不同的看法。一位开发者说道，“我感觉最高思考强度模式反倒有点像是用力过猛，结果变得急功近利、敷衍了事，甚至出现反向效果，反而和低强度模式或劣质提示词的表现差不多了。”还有开发者指出，“问题远不止是默认思考强度被设为中等这么简单，我也认同其他人的说法，即便调至高强度模式，模型急于草草收尾的倾向也明显大幅加剧。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;Cherny 专门回复了这个问题，态度也很诚恳。他表示，“感谢反馈。为方便我们实际定位问题，麻烦您下次遇到此类情况时执行 `/bug` 指令，并在此处提交反馈编号。这样我们就能进行调试，判断是出现了异常问题，还是仍在正常波动范围内。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;就这一情况，Laurenzo 在回复 Cherny 的评论中发表了最新观点及其之后的计划。“这次引发的反响远超我的预期，之后我已删除了部分被断章取义的表述，这些内容偏离了我撰写报告时只想呈现‘客观观测结果’的初衷。正如该讨论主题开头所说，Claude 在过去数月里一直表现出色，我们也希望评估如何继续从它身上获得我们早已习惯的高质量输出。在我们此前的测试中，并未发现调整任何思考强度参数能够改变模型触发拦截规则、倾向走最简路径的问题。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;她表示，“由于这类评估必须基于真实开发场景，我们会在相关工作推进时重新试用这些设置，并提交 `/bug` 反馈记录（我们同时保留了完整会话日志，可私下共享；本次分析仅基于开源代码库上的工作内容）。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;参考链接：&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://news.ycombinator.com/item?id=47660925" title data-type="link"&gt;https://news.ycombinator.com/item?id=47660925&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/42796#issuecomment-4194703741" title data-type="link"&gt;https://github.com/anthropics/claude-code/issues/42796#issuecomment-4194703741&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Infoq.cn</author><pubDate>Wed, 08 Apr 2026 13:29:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE9NTnhCdEp6cXkzTzlpQUNZVlFHTERZTG5GaG1tRXpYamw5XzJRbjA4NFQzX2NrLVNMSUZ2TnRzWGJMZ2tkdkI3Q1k4ek5RangtVE5QYVpHLWItRWtsS3c</guid></item><item><title>全系华为896线最强激光雷达 新款阿维塔12上市：29.39万起 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114512.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月8日消息，刚刚，新款阿维塔12上市，共推出增程和纯电两种动力版本，&lt;span&gt;&lt;strong&gt;前者两款车型，售价29.39-31.39万元，后者五款车型，售价30.39-43.39万元&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="全系华为896线最强激光雷达 新款阿维塔12上市：29.39万起" h="400" src="//img1.mydrivers.com/img/20260408/b675f22d-da3b-4445-8d70-cb45a8d9bb64.png" w="600"&gt;&lt;/p&gt;
@@ -331,7 +395,26 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 10:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BSDFvcDJYOEhGTnI2WUdGU1gtaDdsQjY4ZzBkbHIzM3R3OUl1b2dVTFFncGJObmVINlRldVJfbUN3Q2N3MnhVNDFZbDlWR1hxSEJmVXlTTlg</guid></item><item><title>三星拿下苹果折叠屏独家三年合同：首批供货300万片 京东方暂未入围 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114488.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 10:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BSDFvcDJYOEhGTnI2WUdGU1gtaDdsQjY4ZzBkbHIzM3R3OUl1b2dVTFFncGJObmVINlRldVJfbUN3Q2N3MnhVNDFZbDlWR1hxSEJmVXlTTlg</guid></item><item><title>中国AI大模型Token调用领跑全球！算力产业链大爆发 - 东方财富</title><link>https://wap.eastmoney.com/a/202604083698169344.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
+        
+        &lt;p class="related"&gt;
+
+        &lt;/p&gt;
+
+        
+
+        
+        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
+        &lt;p class="layer"&gt;&lt;/p&gt;
+        
+        
+        
+
+        
+
+        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Wed, 08 Apr 2026 10:28:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1KdmFvcmhaM0tpM0c0M0dNSXl0Y1lQM0dEc1VzdnFoV0R6dVJDd3hSbnlOSTl6ajRkNmFfZm5OekNzTkJVb1RRNWlvWHBzRHNUOGVkRUFsLWpDNlNqNHZsTQ</guid></item><item><title>三星拿下苹果折叠屏独家三年合同：首批供货300万片 京东方暂未入围 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114488.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月8日消息，据媒体报道，&lt;span&gt;&lt;strong&gt;苹果公司已与三星显示签署为期三年的独家可折叠OLED供应协议。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;在此期间，苹果将不会使用其他任何显示器制造商生产的可折叠面板。&lt;/p&gt;
@@ -1148,7 +1231,60 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 07:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9COUpra2RNSGlLSGFCRTE4QlkzMmFmYzRoRE9JNTZ1ZHZfQTZpTXFRTUlNUFNQeTNYc2ptMTZ2QVdLSjFIS0hlLVNsbm90dkR0UkdtLU0wMEI</guid></item><item><title>90秒下线一个机器人关节，成本降至百元级 - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/2026-04-08/detail-inhtthnr6843442.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 07:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9COUpra2RNSGlLSGFCRTE4QlkzMmFmYzRoRE9JNTZ1ZHZfQTZpTXFRTUlNUFNQeTNYc2ptMTZ2QVdLSjFIS0hlLVNsbm90dkR0UkdtLU0wMEI</guid></item><item><title>高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114410.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月8日消息，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1114/1114350.htm" target="_blank"&gt;高通的骁龙X2 Elite系列笔记本终于开始上市了&lt;/a&gt;，华硕、惠普首发，价格不便宜，那性能如何呢？&lt;/p&gt;
+&lt;p&gt;不少外媒已经提前进行了体验，这里重点看看游戏表现。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/8e68e1636b6840579eb8824bf44ce10e.png" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="445" src="//img1.mydrivers.com/img/20260408/s_8e68e1636b6840579eb8824bf44ce10e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;首先解释一下，骁龙X2 Elite系列有多达七个不同版本，编号均为X2E-xx-100：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骁龙X2 Elite Extreme X2E-96-100：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;满血旗舰版，12+6 18核心，Prime超级核心多核加速4.4GHz、单双核加速5.0GHz，Performance性能核心单双核加速3.6GHz，总缓存53MB，GPU频率1.85GHz，NPU算力80 TOPS，内存带宽228GB/s。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骁龙X2 Elite Extreme X2E-94-100：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单双核加速降至4.7GHz。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骁龙X2 Elite X2E-90-100：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Prime多核加速4.0GHz、单双核加速5.0GHz，Performance单双核加速3.4GHz(下同)，GPU频率1.7GHz，NPU算力85 TOPS，内存带宽152GB/s，下同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骁龙X2 Elite X2E-88-100：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Prime单双核加速4.7GHz，NPU算力80 TOPS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骁龙X2 Elite X2E-84-100：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;6+6 12核心，总缓存34MB，NPU算力又提高到85 TOPS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骁龙X2 Elite X2E-80-100：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Prime双核加速4.4GHz，NPU算力再次回到80 TOPS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骁龙X2 Elite X2E-78-100：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Prime单双核加速4.0GHz，GPU频率1.35GHz。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/6d283ef86aab4431a964dc1a74e92dba.png" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="402" src="//img1.mydrivers.com/img/20260408/s_6d283ef86aab4431a964dc1a74e92dba.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;Hardware Canucks很惊喜地发现，骁龙X2 Elite系列可玩的游戏更多了，12款中有9款能玩，而上代只有一半能玩。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;可以玩的有《心灵杀手2》《CS2》《赛博朋克2077》《DOTA2》《堡垒之夜》《漫威争锋》《彩虹六号：围攻》《战锤40K：星际战士2》《全面战争：战锤3》。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不能玩的则有《ARC突袭者》《绝地求生》《战地6》。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/4c9d157bc7504548aa4a757bc8e04a44.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="300" src="//img1.mydrivers.com/img/20260408/s_4c9d157bc7504548aa4a757bc8e04a44.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/68c9fa05d2054bd08071d694c402f1ce.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="300" src="//img1.mydrivers.com/img/20260408/s_68c9fa05d2054bd08071d694c402f1ce.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;单就平均帧率而言，&lt;strong&gt;在同样30W左右的性能释放下，骁龙X2 Elite Extreme 96/94版本、骁龙X2 Elite 88版本的性能差异不大，在3A大作中都能取得比较满意的表现。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;对比来看，骁龙X2 Elite系列的游戏性能已经超过AMD锐龙AI 9 HX 370，但是二者差距并不太大，Intel方面则相当于酷睿Ultra 9 288V的水平，酷睿Ultra 300H系列自然要强大得多，不是一个层级。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/4d2a5e36f9de4e0dafc2e2a2807bc076.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="300" src="//img1.mydrivers.com/img/20260408/s_4d2a5e36f9de4e0dafc2e2a2807bc076.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/881d7fbc5b2343069e6f24ab8f18ec97.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="300" src="//img1.mydrivers.com/img/20260408/s_881d7fbc5b2343069e6f24ab8f18ec97.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/ef2b5cd2bad84dd29371c3110bbe689b.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="300" src="//img1.mydrivers.com/img/20260408/s_ef2b5cd2bad84dd29371c3110bbe689b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Phawx认为，&lt;strong&gt;骁龙X2 Elite Extreme上《堡垒之夜》运行流畅，《战锤40K：星际战士2》也可以正常游玩，这说明Easy Anti-Cheat反作弊机制已经适配了，可以顺利运行更多游戏。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但是，&lt;strong&gt;《毁灭战士：黑暗时代》无法加载，《蔚蓝》启动后闪退，RTSS等帧率显示工具也存在故障。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;总的来说就是，新骁龙平台游戏兼容性大幅提升，但“仍存在不少粗糙的短板”。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/105d7ae6454047f6861a89dca5890442.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="337" src="//img1.mydrivers.com/img/20260408/s_105d7ae6454047f6861a89dca5890442.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/ae2dc3acd02841efa4175506764d93a4.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="337" src="//img1.mydrivers.com/img/20260408/s_ae2dc3acd02841efa4175506764d93a4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/7c9d415b207b42bda0fa2394948e47e3.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="337" src="//img1.mydrivers.com/img/20260408/s_7c9d415b207b42bda0fa2394948e47e3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/cc9b85007c82425e9a04cfda8d1b4e90.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="337" src="//img1.mydrivers.com/img/20260408/s_cc9b85007c82425e9a04cfda8d1b4e90.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/d5184e683b594ca7ba055c55dfbc36ae.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="337" src="//img1.mydrivers.com/img/20260408/s_d5184e683b594ca7ba055c55dfbc36ae.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NotebookCheck对轻度游戏场景持更乐观的态度，认为&lt;strong&gt;骁龙X2 Elite完全可以正常玩游戏&lt;/strong&gt;，其中《堡垒之夜》在性能模式最高画质下能稳定60帧，《哈迪斯》《空洞骑士》等也没问题。&lt;/p&gt;
+&lt;p&gt;这说明，在优化完善的轻负载游戏中，骁龙X2 Elite的体验更为稳定。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/0ee04ec0e325453790ccd669b7392cc0.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="337" src="//img1.mydrivers.com/img/20260408/s_0ee04ec0e325453790ccd669b7392cc0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;功耗方面，&lt;strong&gt;实测游戏中大约为45W左右。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;经过骁龙X Elite/Plus的磨炼之后，高通笔记本的游戏体验大大改善，可玩的更多，性能更好，但是在帧生成节奏、兼容性哦、驱动适配方面，仍然是高通亟待解决的核心短板，尤其是驱动更新频率实在太慢。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/9d9a30121767489e8e95b46bf129ab67.jpg" target="_blank"&gt;&lt;img alt="高通骁龙X2 Elite笔记本真能玩游戏了！小胜AMD、远不及Intel" h="337" src="//img1.mydrivers.com/img/20260408/s_9d9a30121767489e8e95b46bf129ab67.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：上方文Q&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 07:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE42SDU5UV9yeG1CSlktemlBNklYQXg0OXA5UjBsNXQybHVVNmNSdmZHMUw4NWFxUVV4VW9nelNsNW5vN1Nuc2tpZURNRkktc3hscUk1M1hveno</guid></item><item><title>90秒下线一个机器人关节，成本降至百元级 - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/2026-04-08/detail-inhtthnr6843442.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
 	
 
 
@@ -2496,156 +2632,4 @@
 &lt;/section&gt;
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Tue, 07 Apr 2026 20:04:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilAFBVV95cUxNd2M5TGJhYkFRc0ZoTUJWbU9VMlE3T2NfRWQzZU1sN2RDY0MzS1p4TFNOUVBSUzZoOEdsbDZ2OG10X3lBa25Da3oySkUyZk9RcGVnRGc1cDU5VFl3ZVZncGltb3ExRlJwT3NGZ2pBaTc5VklDVVpCMXc2VUFYazJqU1o4ellfQjVOMWxhOUw0cFpfNmd1</guid></item><item><title>苹果折叠屏iPhone仍有望于9月发布 - 新浪财经</title><link>https://finance.sina.com.cn/world/2026-04-08/doc-inhttaeq3285344.shtml?vt=4&amp;pos=108</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    
-&lt;p&gt;　　知情人士透露，苹果公司首款折叠屏手机有望在今年晚些时候公司常规iPhone发布期面世，这缓解了对制造方面遇阻的担忧。&lt;/p&gt;
-&lt;p&gt;　　因相关计划尚未公布而要求匿名的知情人士称，该公司计划在9月与iPhone 18 Pro和Pro Max一同发布这款折叠屏机型。苹果的手机通常会在发布后一周上架销售。&lt;/p&gt;
-&lt;p&gt;　　《日经亚洲》周二报道曾引发对延迟的担忧。该媒体称，苹果在该手机的工程测试阶段面临挑战，可能推迟生产和出货计划。&lt;/p&gt;
-&lt;p&gt;　　知情人士表示，尽管新型显示屏和材料的复杂性可能在最初几周制约供应，但苹果目前仍计划让该设备与新款非折叠机型在大约同一时间 —— 或稍后不久 —— 上市销售。&lt;/p&gt;
-&lt;p&gt;　　报道苹果上述计划后，苹果股价跌幅收窄。周二纽约时间下午1：04，苹果股价下跌约2.7%，至251.88美元。&lt;/p&gt;
-&lt;p&gt;　　尽管如此，距离发布还有六个月，产能尚待爬坡。这意味着时间安排尚未最终确定。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 07 Apr 2026 17:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiiwFBVV95cUxPbUprQVdLUm5veTVBeW5YR2Z4SnRyUW43eXVWcWg2bHpIamIxVVRPa04xWlJzRXJYZzZUN1lENFQ3TVNxQ3RCNEc3ODQ1UjJ3QnR0LURfN1JwWm9VM0RUOU1HMkl3TFZ4aF9pUGZjVnBKQll1LVZ5OFk5eEswV2ZCT19Mek5fRThKb0JF</guid></item><item><title>苹果折叠屏iPhone仍有望于9月发布 - 新浪财经</title><link>https://finance.sina.com.cn/world/2026-04-08/doc-inhttaeq3285344.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    
-&lt;p&gt;　　知情人士透露，苹果公司首款折叠屏手机有望在今年晚些时候公司常规iPhone发布期面世，这缓解了对制造方面遇阻的担忧。&lt;/p&gt;
-&lt;p&gt;　　因相关计划尚未公布而要求匿名的知情人士称，该公司计划在9月与iPhone 18 Pro和Pro Max一同发布这款折叠屏机型。苹果的手机通常会在发布后一周上架销售。&lt;/p&gt;
-&lt;p&gt;　　《日经亚洲》周二报道曾引发对延迟的担忧。该媒体称，苹果在该手机的工程测试阶段面临挑战，可能推迟生产和出货计划。&lt;/p&gt;
-&lt;p&gt;　　知情人士表示，尽管新型显示屏和材料的复杂性可能在最初几周制约供应，但苹果目前仍计划让该设备与新款非折叠机型在大约同一时间 —— 或稍后不久 —— 上市销售。&lt;/p&gt;
-&lt;p&gt;　　报道苹果上述计划后，苹果股价跌幅收窄。周二纽约时间下午1：04，苹果股价下跌约2.7%，至251.88美元。&lt;/p&gt;
-&lt;p&gt;　　尽管如此，距离发布还有六个月，产能尚待爬坡。这意味着时间安排尚未最终确定。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 07 Apr 2026 17:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE9wakJVSDdTQ3FJaXA3MFFmenNfekktZEh2RzZIdVFYQ196bDJPbmZoN04wYWdzUDhzeV9sR0gtREdFUTRmZXFpMG9rcU8weGgzalhyTzlIWTl5cVdhM1p6LU82MGpJazIycmNwR3ZZRm91VlYxZUQ2ZEt3</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Tue, 07 Apr 2026 20:04:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilAFBVV95cUxNd2M5TGJhYkFRc0ZoTUJWbU9VMlE3T2NfRWQzZU1sN2RDY0MzS1p4TFNOUVBSUzZoOEdsbDZ2OG10X3lBa25Da3oySkUyZk9RcGVnRGc1cDU5VFl3ZVZncGltb3ExRlJwT3NGZ2pBaTc5VklDVVpCMXc2VUFYazJqU1o4ellfQjVOMWxhOUw0cFpfNmd1</guid></item></channel></rss>
