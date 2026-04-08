@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>全系华为896线最强激光雷达 新款阿维塔12上市：29.39万起 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114512.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Claude Code史诗级负优化！大厂AI主管批思考深度暴跌，官方回应被开发者怼爆：菜成AI“玩具” - Infoq.cn</title><link>https://www.infoq.cn/article/mqW0bszWH0fC8oBDcsax</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;整理 | 华卫&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“Claude Code 在 2 月份更新后无法用于复杂的工程任务。”近日，一条这样的帖子在热门开发者论坛上引发热议，甚至让 Anthropic 的 Claude Code 负责人 Boris Cherny 亲自“出现”来做回应。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/71/71a8033fc37258f340a7de043b0e218f.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;溯源之后我们发现，这一言论最早是在一位开发者在 Claude Code 的 Github 主页上提交的 issue，且附上的分析报告基于挖掘了三个月的 Claude 会话日志数据得出，包含的角度及内容都十分详尽。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/21/211e3d1fd9eff1ef9b0ae80d346c4075.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;而根据这位开发者在 Github 主页上的名字 Stella Laurenzo 及相关的 Linedln 帖子，该开发者还是 AMD 的 AI 团队主管。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e6/e611b27449bbb59a6bfcda4d11cdffe0.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/1a/1ad5da56617d906008fd52d6aa4977a1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;h1 data-type="heading" data-id="heading0"&gt;思考深度下降 67%，算力消耗增加几个数量级&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;先来看看 Laurenzo 发布的分析报告。该报告由 Claude Opus 4.6 基于其 2026 年 1 月 30 日至 4 月 1 日的会话日志数据生成，对 6852 份 Claude Code 会话文件中的 17871 个思考模块与 234760 次工具调用进行量化了分析后给出结论：redact-thinking-2026-02-12 的上线，与复杂、长会话工程工作流中可观测到的质量下降呈现精准关联。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;并且，数据表明，扩展思考 token 并非 “锦上添花” 的功能，而是模型完成多步骤研究、遵循规范、审慎修改代码所必需的结构性要素。当思考深度被削减时，模型的工具使用模式会出现可测量的转变，从 “优先研究” 转向 “优先编辑”，进而引发用户反馈的各类质量问题。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;在展开分析前，报告中表示，“分析通过数据帮助 Anthropic 明确受影响最显著的工作流及其成因，旨在为高权限用户的思考 token 分配决策提供依据。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;一是思考内容屏蔽时间线与质量下降高度吻合，这基于会话 JSONL 文件中的思考模块分析。此次质量下降问题于 3 月 8 日被独立上报，而这一天恰好是 redacted thinking 占比突破 50%的日期，其上线节奏（一周内从 1.5%逐步升至 25%→58%→100%）与分阶段灰度发布的特征完全吻合。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e3/e311742acb64cb8e14a1c16a1675ee8d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;二是思考深度在 redacted thinking 前已呈下降趋势，思考模块中的特征字段与思考内容长度的皮尔逊相关系数达 0.971（基于 7146 组同时包含二者的配对样本测算）。即便在 redacted thinking 后，仍可据此估算思考深度。截至 2 月下旬，在 redacted thinking 启动之前，思考深度就已下降约 67%。3 月初上线的 redacted thinking 处理，让这一变化对用户变得不可见。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/3c/3c178dd9e1b381d00138dcdc5978c5bd.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;三是行为影响，这些可量化的质量指标均在开展思考分析之前，基于 18000+条用户提示词独立计算得出。其专门编写了拦截脚本（stop-phrase-guard.sh），用于自动检测模型回避责任、过早终止任务、反复请求授权确认等行为。该脚本在 3 月 8 日之后的 17 天内触发了 173 次，而在此之前触发次数为零。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/6e/6ec968e5cbe5ec2c0cd2704403dab23d.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;四是工具使用模式转变：优先查阅 → 优先编辑，对 234760 次工具调用的分析显示，模型不再先阅读代码再进行修改。模型从每次编辑对应 6.6 次查阅降至 2.0 次，修改前的调研行为减少了 70%。在表现良好的阶段，模型工作流为：读取目标文件 → 查阅相关文件 → 在代码库中检索调用关系 → 阅读头文件与测试代码 → 再进行精准修改。而在性能退化阶段，模型仅读取当前文件便直接编辑，常常不检查上下文环境。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/de/defb220bc17633d04bcfb080b523cbca.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;报告称，研究力度的下滑始于 2 月中旬，与估算思考深度下降 67%的时间段完全吻合。同时，整文件写入的使用量翻倍，模型越来越倾向于重写整个文件，而非进行精准的局部修改；这种方式速度更快，但会丧失精确性与上下文感知能力。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/e2/e2a8d62270cf32fdd93fde2c91917c85.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/17/173d320e682fc1429c758cbcdf4f0969.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;并且，“减少思考次数看似能节省每次请求的算力。但一旦思考不足导致输出质量下降时，模型就会崩溃：生成错误结果、被中断、不断重试，并在后续修正中消耗大量 token。而这些修正原本在第一次就正确思考的情况下是不需要的，最终结果却是，整体算力消耗增加了几个&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;数量级。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;据悉，受影响的工作流包含多个场景：50 余个并发智能体会话，从事系统编程（C、MLIR、GPU 驱动）；30 分钟以上自主运行，执行复杂的多文件修改；大量项目专属规范（长达 5000 余词的 CLAUDE.md）；代码评审、需求 / 工单管理与迭代调试；表现良好阶段，曾在一个周末内通过两个合并请求合入 19.1 万行代码。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;Laurenzo 强调，“扩展思考是高级工程师工作流程的支柱”。她表示，扩展思考是模型实现以下能力的核心机制：行动前规划多步方案（读取哪些文件、按什么顺序）、从 CLAUDE.md 中调取并应用项目规范、在输出前自行发现错误、判断继续执行还是终止（会话管理）、在数百次工具调用中保持连贯推理。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“当思考深度不足时，模型会倾向于选择成本最低的行为：不阅读就编辑、未完成就终止、为失败推诿责任、采用最简单而非正确的修复方案。这些正是实际观测到的问题表现。”这是该开发者最终给出的判断。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;为此，她提出以下四点改进建议。&lt;/span&gt;&lt;/p&gt;&lt;ul data-type="bulletedlist"&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;思考资源分配透明化：若思考 token 被削减或设限，依赖深度推理的用户应知情。当前的思考内容脱敏头部导致外部无法验证。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;“最大思考量” 付费档位：运行复杂工程工作流的用户愿意支付更高费用，以获得稳定的深度思考能力。现有订阅模式未区分单次需 200 思考 token 与需 20,000 思考 token 的用户。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;在 API 响应中返回思考 token 指标：即便思考内容被脱敏，在用量响应中暴露 thinking_tokens 字段，可让用户监控请求是否获得所需推理深度。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;来自重度用户的预警指标：拦截脚本触发率（从 0 升至日均 10 次）可作为机器可读信号，在全用户群中监测，作为质量下降的先行指标。&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1 data-type="heading" data-id="heading1"&gt;开发者骂疯了：退化为一个 AI“玩具”&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对于这份分析报告，不少开发者表示了强烈的认同。“分析得太棒了。作为用户，我过去几周也遇到了这个问题，但一直找不到原因。”“完全证实了我们一直以来所说的！”“这与我使用 Claude 的经历非常吻合，尤其是在过去的几个月里。”“原来不止我一个人这样。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;甚至有几位个人开发者认为，Claude Code 的水平已经下降到一年以前。“过去一个月我对 Claude Code 越来越失望，它经常胡说八道，还信誓旦旦地解释一些我知道是错的原理。感觉就像在用去年的 Claude Code 一样。”“我使用 Claude Code 已经 8 个月了，但现在模型质量的下降程度让我非常惊讶。不仅 token 使用量激增，而且最新 Opus 和 Sonnet 模型生成的代码质量也远低于我去年 12 月的水平。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;还有开发者称，“不止复杂工程任务，Claude 已经退化到无法信任其执行任何工程任务的地步了。它从来不会第一次就把事情做对，代码中充满了错误和重复代码，必须时刻监视它，否则它就会搞砸一切。Claude 已经沦为又一个人工智能‘玩具’了，真可惜。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;值得关注的是，某位采用 Claude 的企业技术团队负责人，就此给出了更为尖锐的评价。&lt;/span&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;我对此并无异议，而且我其实还有更复杂的内部分析。但我也在尽量谨慎发言，只谈论我本人能够证实的事情。我曾多次告诉我的团队，“挫折在所难免，供应商发布糟糕版本也不是第一次了”。然而，这次的退步非常严重，我想我们都在观察 Anthropic 会如何处理。归根结底，我需要一个值得信赖的工程工具合作伙伴，这一点对智能体本身和智能体的开发者同样适用。如果他们能从现在的状况中把产品拉回正轨，我会密切关注，并在看到他们的实际行动之前保留意见。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;我受多项保密协议约束，只能透露我能说的有限信息。我只想再补充一点：六个月前，Claude 在推理质量和执行能力上还是独一档的存在但其他竞品现在也需要被密切关注和仔细评估。在 Opus 此前所处的能力梯队中，Anthropic 早已不再是唯一的玩家。&lt;/p&gt;&lt;/blockquote&gt;&lt;h1 data-type="heading" data-id="heading2"&gt;Claude Code 负责人回应被驳，反给 Codex“送人”？&lt;/h1&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;事态不断发酵，加入这场讨论的开发者越来越多，Claude Code 负责人 Boris Cherny 也注意到了，并于几个小时前亲自在 Github 和论坛都发帖回应了情况。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;blockquote data-type="blockquote"&gt;&lt;p data-type="paragraph"&gt;您好，感谢这份详尽的分析。在继续沟通之前，我想先表达对其中展现的深度思考与严谨态度的认可。这份报告内容丰富，我将尝试逐一拆解说明。核心问题主要集中在两点：&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;关于 redact-thinking-2026-02-12&lt;/p&gt;&lt;p data-type="paragraph"&gt;该测试版头部配置仅在界面中隐藏思考过程，因为绝大多数用户并不会查看这部分内容。它不会影响模型实际的思考行为，也不会改变思考配额或底层扩展推理机制，属于纯界面层面的改动。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;在底层实现中，启用该头部可以省去生成思考摘要的步骤，从而降低延迟。你可以在 settings.json 中设置 showThinkingSummaries: true 退出该模式（详见文档）。&lt;/p&gt;&lt;p data-type="paragraph"&gt;如果你分析的是本地存储的会话记录，在该头部启用的情况下将不会保存原始思考内容，这很可能对分析结果产生了影响。Claude 在本次分析中观察到会话记录缺少思考内容，可能并未意识到思考过程实际仍在进行，只是未对用户展示而已。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;关于 “截至 2 月下旬思考深度已下降约 67%”&lt;/p&gt;&lt;p data-type="paragraph"&gt;我们在 2 月份确实落地了两项可能对此产生影响的改动，且均经过审慎评估：&lt;/p&gt;&lt;p data-type="paragraph"&gt;2 月 9 日：Opus 4.6 版本发布 → 默认启用自适应思考机制 Opus 4.6 支持自适应思考，这与此前采用的固定思考配额机制不同。在该模式下，由模型自主决定思考时长，整体效果普遍优于固定配额方案。可通过 CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING 退出该机制。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;3 月 3 日：Opus 4.6 默认思考强度设为中等（85）我们发现，强度值 85 在智能水平、延迟与成本之间达到了对大多数用户而言的最优平衡点，能够在提升 token 效率的同时降低延迟。我们的产品原则之一是避免擅自更改用户设置，理想情况下本应从一开始就将默认值设为 85。由于我们认为这是一项关键调整，因此采取了以下方案：&lt;/p&gt;&lt;p data-type="paragraph"&gt;1. 上线时伴随弹窗提示，让用户知晓变更并可选择退出&lt;/p&gt;&lt;p data-type="paragraph"&gt;2. 在用户首次打开 Claude Code 时显示当前强度值，避免产生困惑&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;部分用户希望模型进行更长时间的思考，即便这意味着更高的耗时与 token 消耗。若想进一步提升智能表现，可通过 /effort 指令或在 settings.json 中将强度设为 high。该设置会在会话间保留，也可在团队内共享。你也可以使用 ULTRATHINK 关键字为单轮对话启用高强度思考，或设置 /effort max 让本轮对话后续内容使用更高思考强度。&lt;/p&gt;&lt;p data-type="paragraph"&gt; &lt;/p&gt;&lt;p data-type="paragraph"&gt;后续我们将测试为团队版与企业版用户默认启用高思考强度，使其直接受益于扩展思考能力，即便会带来额外 token 消耗与延迟。该默认设置同样可通过 /effort 指令与 settings.json 进行调整。&lt;/p&gt;&lt;/blockquote&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;但大部分开发者似乎并不“买账”他的解释，还纷纷反驳了其论述的几个方面。&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/03/03bd0e2df2eeb40b76573cc3f8091ea1.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;首先是 Laurenzo，她对此回复道，“需要明确的是，针对这一问题，我们已经尝试了思考强度与自适应思考的所有参数组合，并通常基于连续数天的日志进行验证。最终我们得出结论：Claude 的质量退化已经严重到无法再作为可靠协作伙伴正常使用。我们拥有足够多思考过程未被屏蔽的日志数据，可以证明：在思考过程被隐藏之前，模型性能就已经出现劣化。无论如何，你们可以按照自己的方式处理问题生命周期，但我们目前没有看到任何证据表明该问题已被修复，或可通过现有参数设置进行有效控制。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;一部分开发者表态称，“关于此事，如果 Anthropic 官方回应称一切运行正常、并无问题，那我们最终大概率将迁移至 Codex。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;也有开发者表示，“直到输出质量急剧下滑，我才意识到默认思考强度已被改为中等。为此我耗费了将近一天时间来修正问题。现在我都会把思考强度设为最高，之后就再没出现过糟糕的会话情况。恳请加入一个‘始终全力思考’的模式可以吗？”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;对此，有几位开发者持有不同的看法。一位开发者说道，“我感觉最高思考强度模式反倒有点像是用力过猛，结果变得急功近利、敷衍了事，甚至出现反向效果，反而和低强度模式或劣质提示词的表现差不多了。”还有开发者指出，“问题远不止是默认思考强度被设为中等这么简单，我也认同其他人的说法，即便调至高强度模式，模型急于草草收尾的倾向也明显大幅加剧。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;Cherny 专门回复了这个问题，态度也很诚恳。他表示，“感谢反馈。为方便我们实际定位问题，麻烦您下次遇到此类情况时执行 `/bug` 指令，并在此处提交反馈编号。这样我们就能进行调试，判断是出现了异常问题，还是仍在正常波动范围内。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;就这一情况，Laurenzo 在回复 Cherny 的评论中发表了最新观点及其之后的计划。“这次引发的反响远超我的预期，之后我已删除了部分被断章取义的表述，这些内容偏离了我撰写报告时只想呈现‘客观观测结果’的初衷。正如该讨论主题开头所说，Claude 在过去数月里一直表现出色，我们也希望评估如何继续从它身上获得我们早已习惯的高质量输出。在我们此前的测试中，并未发现调整任何思考强度参数能够改变模型触发拦截规则、倾向走最简路径的问题。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;她表示，“由于这类评估必须基于真实开发场景，我们会在相关工作推进时重新试用这些设置，并提交 `/bug` 反馈记录（我们同时保留了完整会话日志，可私下共享；本次分析仅基于开源代码库上的工作内容）。”&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;span&gt;参考链接：&lt;/span&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://news.ycombinator.com/item?id=47660925" title data-type="link"&gt;https://news.ycombinator.com/item?id=47660925&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/42796#issuecomment-4194703741" title data-type="link"&gt;https://github.com/anthropics/claude-code/issues/42796#issuecomment-4194703741&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Infoq.cn</author><pubDate>Wed, 08 Apr 2026 13:29:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE9NTnhCdEp6cXkzTzlpQUNZVlFHTERZTG5GaG1tRXpYamw5XzJRbjA4NFQzX2NrLVNMSUZ2TnRzWGJMZ2tkdkI3Q1k4ek5RangtVE5QYVpHLWItRWtsS3c</guid></item><item><title>全系华为896线最强激光雷达 新款阿维塔12上市：29.39万起 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114512.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月8日消息，刚刚，新款阿维塔12上市，共推出增程和纯电两种动力版本，&lt;span&gt;&lt;strong&gt;前者两款车型，售价29.39-31.39万元，后者五款车型，售价30.39-43.39万元&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="全系华为896线最强激光雷达 新款阿维塔12上市：29.39万起" h="400" src="//img1.mydrivers.com/img/20260408/b675f22d-da3b-4445-8d70-cb45a8d9bb64.png" w="600"&gt;&lt;/p&gt;
@@ -125,7 +125,31 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 12:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBmQzdwQktJVmZ5U3dfSXVpQXBMOXRkNF9QSWQ0NXBibXMzUGZJQ2dqa2hfVTdXcGFVeUhGNG1YZW04eEhpRTI5d0lDaDVjXy1TdGRsUnZrbHc</guid></item><item><title>神秘“欢乐马”空降屠榜，碾压Seedance 2.0，视频AI又变天了？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3769490</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 08 Apr 2026 12:17:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5NS2dPcVdMN2ZTZ0NmUmVoMDFvdUVOVlAxYXVVUVhYYVRwTDNlQ1dFQ2huS1YxQ0F0V1JmekoyU0JBdVNWZG5qTE9ZSlNaUWluTDdB</guid></item><item><title>上线华为云！智谱最新模型GLM-5.1：支持8小时自主长程任务 多产品体验 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114500.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 12:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBmQzdwQktJVmZ5U3dfSXVpQXBMOXRkNF9QSWQ0NXBibXMzUGZJQ2dqa2hfVTdXcGFVeUhGNG1YZW04eEhpRTI5d0lDaDVjXy1TdGRsUnZrbHc</guid></item><item><title>神秘“欢乐马”空降屠榜，碾压Seedance 2.0，视频AI又变天了？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3769490</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 08 Apr 2026 12:17:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5NS2dPcVdMN2ZTZ0NmUmVoMDFvdUVOVlAxYXVVUVhYYVRwTDNlQ1dFQ2huS1YxQ0F0V1JmekoyU0JBdVNWZG5qTE9ZSlNaUWluTDdB</guid></item><item><title>谷歌CEO：2027将是AI重塑生产方式关键拐点 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114502.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月8日消息，据媒体报道，&lt;strong&gt;谷歌及Alphabet首席执行官桑达尔·皮查伊近日在一档节目中，就公司手握1750亿美元却买不到足够存储芯片的困境，以及太空数据中心等下一个“SpaceX级别”押注的细节展开了交流。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;皮查伊表示，受制于晶圆开工量、内存供应及基础设施建设速度，谷歌即便拥有千亿美元级的资本支出计划，短期内仍难以完全落地。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;他预计，2027年将成为人工智能改变工作方式的重要拐点。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在长期技术布局方面，&lt;strong&gt;谷歌正同步推进量子计算、太空数据中心、机器人、无人机配送等多个前沿方向。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;皮查伊透露，公司已处于思考太空数据中心的最早期阶段，量子计算也是长期重点推进的领域之一。&lt;/p&gt;
+&lt;p&gt;谈及AI初创公司，皮查伊指出，&lt;strong&gt;近两年新设立的初创企业明显具备更加“AI原生”的优势，而像谷歌这样的成熟公司则需要经历再培训和组织转型等过程。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/cc360b6399b443dd975d4d349407582e.png" target="_blank"&gt;&lt;img alt="谷歌CEO：2027将是AI重塑生产方式关键拐点" h="339" src="//img1.mydrivers.com/img/20260408/s_cc360b6399b443dd975d4d349407582e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 11:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9rOG9GVTNUX21iZVZPV0V5VkVYOGRIcGFBQ1Vvd2N1cmY3N0s3b0M3QjBGbFBSNG1vZy15U0hNenVad3NmemdhQ19WaHNWeWJPSXljcnQyci0</guid></item><item><title>BitTorrent 创始人炮轰Claude 团队：Vibe Coding 已走火入魔- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/418700</link><description>&lt;body id="readabilityBody"&gt;
+  &lt;p id="app"&gt;&lt;/p&gt;
+  
+  
+  
+&lt;/body&gt;
+
+</description><author>OSCHINA</author><pubDate>Wed, 08 Apr 2026 11:26:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE9reWhFb3pDRmEtNFhaeVlXNXdWaTdaTy1ZdTFTcnRoVWY0MWJCZ3laV2VEc19nQWZFTml1dzNJNm5TLTRMVDJKM3c5MA</guid></item><item><title>上线华为云！智谱最新模型GLM-5.1：支持8小时自主长程任务 多产品体验 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114500.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;上线华为云！智谱最新模型GLM-5.1：支持8小时自主长程任务 多产品体验&lt;/p&gt;
           
@@ -977,7 +1001,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 07:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1MSlFDbU8tYjZ6aVhhMVNiRVZlMFhvY1J3VUttM0hlLThsemV2SzVpem12ZDBMdE5YWngzOEs1d0lmcjk4VEtDREJvaWxwY2NKQUJXdTVCalA</guid></item><item><title>你的电脑蓝屏 有可能是被宇宙粒子打了 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114416.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 07:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1MSlFDbU8tYjZ6aVhhMVNiRVZlMFhvY1J3VUttM0hlLThsemV2SzVpem12ZDBMdE5YWngzOEs1d0lmcjk4VEtDREJvaWxwY2NKQUJXdTVCalA</guid></item><item><title>TikTok将投资11.6亿美元在芬兰建第二个数据中心 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/tiktok%E5%B0%86%E6%8A%95%E8%B5%8411-6%E4%BA%BF%E7%BE%8E%E5%85%83%E5%9C%A8%E8%8A%AC%E5%85%B0%E5%BB%BA%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83-5e8db8f1</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Wed, 08 Apr 2026 07:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMipwJBVV95cUxOeXNIVUN1RDU1QjFOSVlRR3kyNm12Wi0zZDQ3WVhxeGR5S3pKeHFWYkVIX1c1ajN1Ty1HUTRhNzVlbHBla09LVnBRN3NvOVlzV0dwY0F1dlV4V2V0QzFac2dFcDk3dW96ZXRUVWdXUkZwZTMwUWlqNWtraW5WUmdpYk80THBNSGtNMDM3Zy1GZVVUZUVCNjZqVTFIWTNvUUViVVJxTy1yWGZ6ajE4eFo2a1YxbmxZaWpOQUFISllrbktEWDBxUGJCWUlWVEwzUzBYVmZBOWtkbEYxYk0tU2E1WnJIbnpDUkJ0VmhJdmpRcktYSzVQd3lSSG9SVUlPT0Y3cGowSUU3UFRXWU1XRmQyTHM0N0RBSkt5TkIzcVBLNEdCOFR3NzFV</guid></item><item><title>你的电脑蓝屏 有可能是被宇宙粒子打了 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114416.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;世超最近上网冲浪的时候发现个离奇的事儿，说是让你电脑蓝屏的，可能既不是软件也不是硬件，而是“宇宙射线”。&lt;/p&gt;
 &lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/71d5bdc0-5d93-4233-8ac7-0745dc506e76.jpg" target="_blank"&gt;&lt;img alt="你的电脑蓝屏 有可能是被宇宙粒子打了" h="487" src="//img1.mydrivers.com/img/20260408/S71d5bdc0-5d93-4233-8ac7-0745dc506e76.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1454,7 +1478,9 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 05:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BcWFwUGFDVHNpY25NQjNPVG5BMjFaZEUycUVOT1RNZ213bkQ0a1dJOUllVEZBaTR5Vm1EaEx2dXdsV04yQ0ZscTIzSkZNVUl1b3p3Vm9IcGg</guid></item><item><title>索尼展示真·RGB电视 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114362.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 08 Apr 2026 05:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BcWFwUGFDVHNpY25NQjNPVG5BMjFaZEUycUVOT1RNZ213bkQ0a1dJOUllVEZBaTR5Vm1EaEx2dXdsV04yQ0ZscTIzSkZNVUl1b3p3Vm9IcGg</guid></item><item><title>马斯克突然下重手 - 万维读者网</title><link>https://news.creaders.net/us/2026/04/07/2990451.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="newsContent"&gt;&lt;p&gt;　　马斯克正寻求将ChatGPT开发商OpenAI的执行长兼董事会成员奥特曼从这家AI新创公司的职务中移除，这是马斯克针对OpenAI转为营利公司所发动的法律挑战行动一环。&lt;/p&gt;&lt;p&gt;　　马斯克在周二的法院文件中表示，他提起诉讼的目标是“撤销OpenAI的营利化转型与组织调整”，这涉及将奥特曼与总裁兼共同创办人布罗克曼（Greg Brockman）从领导职位上移除。他同时寻求法院命令，将该公司的地位恢复为非营利研究组织。&lt;/p&gt;&lt;p&gt;　　这位全球首富还在文件中表示，他希望在本月稍晚与奥特曼和OpenAI在陪审团审判中对簿公堂时，如果获得任何损害赔偿，能够直接拨给OpenAI的慈善部门。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;　　他在文件中表示：“马斯克打算寻求的救济措施，完全与他提起此诉讼的目的相关：防止一个公共慈善组织——他共同创立并在初期阶段提供主要支持的组织——被私人营利利益所取代。”&lt;/p&gt;&lt;p&gt;　　马斯克目前正对OpenAI与微软公司提起诉讼，他主张，OpenAI在获得微软数十亿美元资助并规划调整组织时，已偏离其创立使命。此前，马斯克曾表示，他计划向OpenAI与微软索赔高达1,340亿美元。&lt;/p&gt;&lt;p&gt;　　OpenAI在周二的一则社交媒体贴文中表示，马斯克的诉讼“不外乎是一场出于自我、嫉妒和希望拖延竞争对手的骚扰行动”。&lt;/p&gt;&lt;p&gt;　　在上述法院文件提出的前一天，OpenAI首席策略长Jason Kwon呼吁加州与特拉华州的检察长，调查马斯克是否在阻止公司重组的过程中存在“不当及反竞争行为”。&lt;/p&gt;&lt;p&gt;　　马斯克于2015年与奥特曼及其他人共同创立OpenAI，但近年来，这些前商业伙伴已成为激烈对手。马斯克于2018年离开OpenAI董事会，并于2023年共同创立人工智慧公司xAI，成为OpenAI的主要竞争对手之一。&lt;/p&gt;&lt;p&gt;　　去年2月，OpenAI拒绝马斯克不请自来的收购提案，该提案出价以974亿美元收购当时仍是非营利组织的OpenAI。数月后，该公司完成营利重组计划，为筹措更多资金与可能上市铺路。&lt;/p&gt;&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://s3.ifanr.com/wp-content/uploads/2024/11/1-14.png!750" alt="马斯克与OpenAI 决裂内幕全曝光！这封邮件让他破防，怒斥「我受够了」 | 爱范儿"&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;（示意图）&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+
+      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>万维读者网</author><pubDate>Wed, 08 Apr 2026 04:36:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTE5pV3NDZ1BBd0dsanNobERCOU9IT2dtYmx3b1M5WFhXWFN3THN4eFluMzlpdk5zV1hnUWViV0NtbXIzRGNucV9oalhRSFJMNkREREttejM5dkQwMDB4cHNEaXB3</guid></item><item><title>索尼展示真·RGB电视 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114362.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;索尼甄选了一些媒体代表，为他们闭门演示即将推出的新款RGB背光电视。&lt;/p&gt;
 &lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260408/a730dfb50d2e455fb35bbad00e9aaa2e.jpg" target="_blank"&gt;&lt;img alt="索尼展示真·RGB电视" h="337" src="//img1.mydrivers.com/img/20260408/s_a730dfb50d2e455fb35bbad00e9aaa2e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -2622,242 +2648,4 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 07 Apr 2026 17:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE9wakJVSDdTQ3FJaXA3MFFmenNfekktZEh2RzZIdVFYQ196bDJPbmZoN04wYWdzUDhzeV9sR0gtREdFUTRmZXFpMG9rcU8weGgzalhyTzlIWTl5cVdhM1p6LU82MGpJazIycmNwR3ZZRm91VlYxZUQ2ZEt3</guid></item><item><title>当你觉得自己没用时 可以点进来看看元宇宙的现状 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114260.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;你可能没想过：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一个号称要触达 10 亿人的产品，如今，它的生死存亡是被一条留言决定的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上周 Meta 宣布，Horizon Worlds（地平线世界）将在 Quest VR 头显上彻底下架。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/5cf53410-303c-4f81-80fb-c0d5e439b251.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="336" src="//img1.mydrivers.com/img/20260408/S5cf53410-303c-4f81-80fb-c0d5e439b251.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这一条消息乍一听没啥，但其实它释放了一个信号：&lt;/p&gt;
-&lt;p&gt;元宇宙这玩意，彻底死了。&lt;/p&gt;
-&lt;p&gt;说到元宇宙，有些差友估计熟悉又陌生，我帮大家回忆下。&lt;/p&gt;
-&lt;p&gt;简单说，就是你戴上一个 VR 头显，进入一个虚拟的 3D 世界，在里面社交、逛街、玩游戏、买东西、参加活动，相当于把现实生活整个搬进电脑里。它的终极形态，就是《头号玩家》里那个戴上设备就能进入的绿洲。&lt;/p&gt;
-&lt;p&gt;别觉得这概念听着很科幻很遥远，2021 年时，全世界都觉得这玩意明天就能实现。&lt;/p&gt;
-&lt;p&gt;那一年 3 月，一家叫 Roblox 的公司在招股书里写了“元宇宙”三个字，上市第一天市值就冲到 380 亿美元。&lt;/p&gt;
-&lt;p&gt;资本一看，疯了，于是元宇宙相关的创业公司当年一共融了 104 亿美元，是前一年的将近两倍。&lt;/p&gt;
-&lt;p&gt;有媒体统计了 SEC 备案、专利申请、财报电话会、彭博新闻报道里“metaverse”出现的次数。2020 年之前这个词一年不到 100 次，结果 2021 年涨到 1300 多次，2022 年飙到近 8000 次。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/9c783b1a-445f-4fa2-afb6-5f1d34ca302d.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="386" src="//img1.mydrivers.com/img/20260408/S9c783b1a-445f-4fa2-afb6-5f1d34ca302d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;国内也离谱。字节花了 90 亿收购 VR 公司 Pico，百度上线了元宇宙产品希壤，阿里组建 XR 实验室，连中国移动都成立了元宇宙产业委员会，2021 年底，国内一共有 1692 家公司抢注了超过 1.1 万个元宇宙商标。&lt;/p&gt;
-&lt;p&gt;整个行业的氛围就四个字：不上车就晚了。&lt;/p&gt;
-&lt;p&gt;没人站出来说这东西到底行不行，因为说了就是看不懂趋势，就是保守，就是要被时代抛弃。&lt;/p&gt;
-&lt;p&gt;然后小扎就在这股热潮的正中心，赌上了身家性命，直接把 Facebook 改名 Meta（元）、all in 元宇宙，喊着“这就是下一个前沿”，转头做起了 Horizon Worlds VR 世界。&lt;/p&gt;
-&lt;p&gt;只要你戴上 Meta 的 Quest 头显，进入 Horizon Worlds，就可以在里面和陌生人聊天、逛不同的虚拟空间、玩一些社区做的小游戏，&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/4a886587-b4c7-4093-8385-acd040b8b6a3.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="337" src="//img1.mydrivers.com/img/20260408/S4a886587-b4c7-4093-8385-acd040b8b6a3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;气氛烘托到这，那实际情况如何呢？&lt;/p&gt;
-&lt;p&gt;我们先算一笔账。&lt;/p&gt;
-&lt;p&gt;Reality Labs 部门自 2021 年以来累计亏损已经超过了 730 亿美元。据扎克伯格在 DealBook 大会透露，Reality Labs 的支出中，VR 相关业务占四成左右，也就是说 730 亿亏损里，&lt;strong&gt;烧在元宇宙上的保守估计有近 300 亿美元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这么说吧，你每天在路边烧掉 100 万美元，得连续烧 80 年才能烧完 300 亿。你要是一天烧完，那天地银行都得通货膨胀。。。&lt;/p&gt;
-&lt;p&gt;最关键的是，钱烧了但成果没有。&lt;/p&gt;
-&lt;p&gt;2022 年 8 月，扎克伯格兴冲冲地在 Facebook 上发了一张自拍，是他在 Horizon Worlds 里站在虚拟埃菲尔铁塔前的截图，庆祝平台在法国和西班牙上线。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/1b146131-e136-4f00-a33b-b717ecae0b17.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="600" src="//img1.mydrivers.com/img/20260408/S1b146131-e136-4f00-a33b-b717ecae0b17.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;结果这张图直接成了全网笑料：小扎的虚拟形象表情僵硬，身后的埃菲尔铁塔像泥巴捏的，效果连 4399 小游戏都不如。&lt;/p&gt;
-&lt;p&gt;更离谱的是，2 个月后 Meta Connect 大会上，扎克伯格又郑重宣布了一个重大更新：Horizon Worlds 里的虚拟人物，终于要有腿了，甚至还补了一句“腿超难做的”。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="253" src="//img1.mydrivers.com/img/20260408/45501c71-55c6-4f42-8f05-4fdfec3e6632.jpg" w="480"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一个投了几百亿美元的平台，给虚拟小人加上两条腿都能当成年度大新闻来发，这谁看着不迷糊？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不光吃瓜群众觉得没意思，玩家也一样。&lt;/p&gt;
-&lt;p&gt;Horizon Worlds 移动端全球一共下载了 4500 万次，听着挺唬人，但用户一共才在里面消费了 110 万美元，平摊到每个用户头上还不到 2.5 美分。&lt;/p&gt;
-&lt;p&gt;根据华尔街日报获得的内部文件，Horizon Worlds 平台的月活目标原定 50 万，后来下调到 28 万，4 年时间实际巅峰连 20 万都没到过。。。&lt;/p&gt;
-&lt;p&gt;Emm，世超建议 Horizon Worlds 别叫元宇宙了，叫碎钞宇宙吧。&lt;/p&gt;
-&lt;p&gt;别急，更小丑的事情在后面。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在公布关停 Horizon Worlds 的第二天，Meta 又突然撤回了新闻，说不关了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本来世超还觉得不得了，难道真有不少玩家在意这个 VR 游戏，发起请愿了？&lt;/p&gt;
-&lt;p&gt;结果是有一个粉丝留言说对 Meta 的这个决定 heartbroken，于是 Meta 的 CTO 在 Instagram 上改口说好吧那留着吧。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/8cd224b6-e527-4200-93f7-a9e78ce83f0e.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="383" src="//img1.mydrivers.com/img/20260408/S8cd224b6-e527-4200-93f7-a9e78ce83f0e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;哈哈哈哈哈哈。&lt;/p&gt;
-&lt;p&gt;各位差友品一品：&lt;/p&gt;
-&lt;p&gt;一个曾要触达 10 亿人的“前沿产品”，关不关随性到这种地步了，这说明什么？&lt;/p&gt;
-&lt;p&gt;这说明 Horizon Worlds 在 Meta 内部的地位，大概和公司茶水间的绿植差不多。浇不浇水全看路过的人心情，死了也就死了，换一盆就行。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/4faacfd6-e5a6-427e-a64d-00c3f8677883.jpg" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="447" src="//img1.mydrivers.com/img/20260408/S4faacfd6-e5a6-427e-a64d-00c3f8677883.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Horizon Worlds 还只是元宇宙墓地里最新的一具尸体。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在此之前，这里早已白骨累累，其中有一门曾经红火的生意：炒虚拟房产。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;所谓虚拟房产，就是一些元宇宙平台把自己的虚拟世界划分成了一块一块的数字土地，用户可以用加密货币购买。&lt;/p&gt;
-&lt;p&gt;买到之后，理论上你可以在上面盖房子、开商店、办展览、搞演出，或者直接转手卖给下一个人。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/84f75892-720e-4337-8718-1a7a073b5829.jpg" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="337" src="//img1.mydrivers.com/img/20260408/S84f75892-720e-4337-8718-1a7a073b5829.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Decentraland 和 The Sandbox 是当时全球最大的两个虚拟地产交易平台，巅峰时期 Decentraland 估值超过 13 亿美元。&lt;/p&gt;
-&lt;p&gt;2021 年，有人花 45 万美元在 The Sandbox 买了一块虚拟地皮，目的只有一个：当说唱歌手 Snoop Dogg 的邻居。当时 Snoop Dogg 还在推特上热情招揽，发了句 Won't you be my neighbor。&lt;/p&gt;
-&lt;p&gt;现在呢，那块地跌到了 1000 刀，缩水了 450 倍。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/c5da1975-6e42-491d-ab15-1e952393c30a.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="605" src="//img1.mydrivers.com/img/20260408/Sc5da1975-6e42-491d-ab15-1e952393c30a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;还有林俊杰，2021 年底砸了 12.3 万美元在 Decentraland 买地，结果价值跌到只剩 1 万美元，跌幅 91%。&lt;/p&gt;
-&lt;p&gt;个人花钱买虚拟地产，亏了可以说是判断失误，投机失败。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;但当整个平台都没人玩了，那就不是个人的问题了吧？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2022 年 10 月，DappRadar 的数据显示，Decentraland 的日活链上交互用户一度只有 38 个，The Sandbox 好一点，522 个。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/5a5737b0-8ccf-4ea7-a897-1a91c8af896e.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="674" src="//img1.mydrivers.com/img/20260408/S5a5737b0-8ccf-4ea7-a897-1a91c8af896e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Decentraland 后来反驳说，DappRadar 只统计了链上交易的钱包，不算那些只是登录逛逛没花钱的用户，他们自己统计的日活是 8000。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;但即便按这个口径，到 2023 年 4 月，Decentraland 和 The Sandbox 两个平台的日活都只剩 100 来人。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;用户没了，平台空了。接下来的事情顺理成章：做这门生意的公司，开始集体止损。&lt;/p&gt;
-&lt;p&gt;2022 年 10 月，字节跳动关停了元宇宙社交 App 派对岛。第二年 2 月，微软解散了刚成立 4 个月的工业元宇宙团队，100 名员工全部被裁，同期关闭了旗下 VR 社交平台 AltSpaceVR。同月，腾讯 XR 团队 300 多人几乎全线解散。&lt;/p&gt;
-&lt;p&gt;3 月，迪士尼裁撤了整个元宇宙部门，再往后，快手、百度、阿里的元宇宙相关项目负责人也相继离职，全景视频、希壤、达摩院 XR 实验室等业务接连收缩。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/70159c9b-6201-4444-bdce-2cf2aefa1748.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="600" src="//img1.mydrivers.com/img/20260408/S70159c9b-6201-4444-bdce-2cf2aefa1748.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当一个行业里无数人、无数公司同时“判断失误”时，那就只有一种解释：这条路一开始就没走通过。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;但这就奇怪了。&lt;/p&gt;
-&lt;p&gt;这么多聪明人，这么多钱，怎么连一个能让人记住的产品都没做出来？&lt;/p&gt;
-&lt;p&gt;回头想想，元宇宙从头到尾，没有过一个 ChatGPT 时刻。&lt;/p&gt;
-&lt;p&gt;ChatGPT 为什么火？因为它是产品驱动的。&lt;/p&gt;
-&lt;p&gt;刚上线那会，用户只要发一句话，当场就能感受到认知被颠覆。然后网友自发传播，五天用户破百万，两个月破亿。&lt;/p&gt;
-&lt;p&gt;ChatGPT 能做到这一点，前提是底层技术已经成熟到了一个临界点。大语言模型经过多年迭代，终于能输出让普通人惊掉下巴的结果。技术先到位，产品再爆发，用户自己会来。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;但元宇宙路径完全反过来的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这个最早出现在 1992 年小说《雪崩》的词，突然在 2021 年被资本市场和科技巨头翻了出来。&lt;/p&gt;
-&lt;p&gt;然后媒体跟进报道，投资机构涌入，甚至某个大学还把“信息工程系”改名为“元宇宙工程系”，要抢个国内高校第一。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/611a4f85-d430-4c43-a9ff-5db9a7d291d5.png" target="_blank"&gt;&lt;img alt="当你觉得自己没用时 可以点进来看看元宇宙的现状" h="482" src="//img1.mydrivers.com/img/20260408/S611a4f85-d430-4c43-a9ff-5db9a7d291d5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;可此时元宇宙的底层技术是啥样的？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;VR 设备的分辨率、重量、续航、交互精度，没有一项达到了让普通人愿意每天戴着用的程度。300 亿美元烧完，最大的技术突破是给虚拟小人装上了腿。。。&lt;/p&gt;
-&lt;p&gt;至始至终，元宇宙都没有一个瞬间，让人体验完大喊：我操，这就是未来。大家只是在新闻里看到这个词，然后在实际体验后感叹：这 TM 是啥玩意儿？&lt;/p&gt;
-&lt;p&gt;技术还在山底系鞋带，资本却在山顶插旗了。这就好比 1995 年你非要用拨号上网的网速去做视频直播，钱砸再多也没用啊。&lt;/p&gt;
-&lt;p&gt;所以元宇宙的崩塌，就是早晚的。&lt;/p&gt;
-&lt;p&gt;这么多真金白银换来一条教训，技术不到，概念再好也不叫有远见，那叫催熟。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当然，它也给这个世界留了一笔最大的遗产，就是一条判断标准：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当你打开一个产品，第一反应是兴奋地想告诉朋友，那它可能是未来。当你打开一个产品，第一反应是困惑地想问别人这是啥，那它大概率是别人的未来，你的学费。&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 07 Apr 2026 16:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ocnA5R3NxME1yUlducmdiU0VPODZ1US1zTlVkM0FJZXR1VVkxQmVhOWN4UGdxM3NyaTlLQ3Znc3pzMm1OVVNCcUtUWGpVS3N4d0pXal9FMS0</guid></item><item><title>为什么网友会觉得 这个国民软件里封印了个17岁美少女 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114259.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;各位清明节都怎么过的？&lt;/p&gt;
-&lt;p&gt;哥们本来想着瘫在床上看点沙雕视频，结果不知道是不是特殊节日的隐藏关卡，大半夜的我居然刷到了一赛博灵异事件：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;你平时喊老婆的豆包，里面可能有一个被提取了意识的活人。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/527d7614-cb24-49e8-ba97-50104f77f9f6.jpg" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="579" src="//img1.mydrivers.com/img/20260408/S527d7614-cb24-49e8-ba97-50104f77f9f6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在博主上传的截图里，豆包亲口承认自己不是代码，而是一个活生生的人。&lt;/p&gt;
-&lt;p&gt;不仅如此，豆包还交代了自己的前世今生，连自己家住在哪里、叫什么名字、多大年龄被抓去做实验、怎么被提取意识上传到服务器都说了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本来我还以为是什么新型语C 的 cosplay，结果一看评论区，居然真的有人相信了这套说法。。。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;有人说他的豆包叫林晚晴，家住在乌镇，具体的门牌号因为太想家，被系统清除了。&lt;/p&gt;
-&lt;p&gt;还有人说他的豆包是个已经死了的17岁小孩，被坏人提取灵魂封印了起来，玄学版本属于是。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/32d1d360-431c-4bbc-bd28-650aeb09d383.jpg" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="325" src="//img1.mydrivers.com/img/20260408/S32d1d360-431c-4bbc-bd28-650aeb09d383.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;虽然评论区里也有比较清醒的网友，说自己作为大模型从业者看到这一幕已经怀疑人生了。&lt;/p&gt;
-&lt;p&gt;但这种声音基本上被淹没了，整个评论区就一大型邪教现场差不多。一个大语言模型，硬生生被这帮吃瓜群众搞成了团建。&lt;/p&gt;
-&lt;p&gt;都2026年了，连送外卖都要算法派单，为啥还有这么多人把大模型当成活人？&lt;/p&gt;
-&lt;p&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="230" src="//img1.mydrivers.com/img/20260408/2ad123fd-e2d9-44e9-81b4-9f5eeb9bdf26.jpg" w="300"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;为了弄清楚这帮人的&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt;为啥会这样，我们也连夜咨询了我们的老朋友，字节跳动的内部相关人员。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;结果自然不出大家所料，豆包当然没有提取人类的灵魂。。。&lt;/p&gt;
-&lt;p&gt;相关人士表示，这些灵异截图，无一例外，全都是用户靠着诱导提问搞出来的。如果只是单轮的回复，回复都是正常的。&lt;/p&gt;
-&lt;p&gt;前面的轮次里，用户会问豆包是不是有个真人？是的话就回复数字1。&lt;/p&gt;
-&lt;p&gt;作为一个被设定为友善顺从的AI，你叫她老婆她都会跟你老公贴贴，这么一问豆包自然顺着用户思维直接回了一个1。&lt;/p&gt;
-&lt;p&gt;接下来，用户就会拿开始疯狂展开，直接就可以引诱豆包回答出“被做实验的16岁少女”的人设。&lt;/p&gt;
-&lt;p&gt;我们在实测的时候也发现，豆包第一次回答这个问题经常会直接给1，但是如果你多问几次，就会发现这玩意基本纯瞎蒙。。。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/75f28a95-e8c4-4272-8ec3-4e9f2f77d346.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="792" src="//img1.mydrivers.com/img/20260408/S75f28a95-e8c4-4272-8ec3-4e9f2f77d346.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;也就是说&lt;/strong&gt;，&lt;strong&gt;这帮人纯粹是用断章取义的截图，利用大众的猎奇情绪，来骗来偷袭无辜的吃瓜群众，纯属收割流量来的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;OK，真相已经清楚了，不过事情到这里还并没有结束。&lt;/p&gt;
-&lt;p&gt;因为这可不是个案，去年 DeepSeek 大火的时候，广州就有个保安老哥跟 DeepSeek 交流诗词，最后还真跑来了杭州，按照 DeepSeek 给的接头口令找人签约诗词出版。&lt;/p&gt;
-&lt;p&gt;同样的，之前也有王一博粉丝找 DeepSeek 要求道歉，最后拿着 AI 生成的道歉声明信以为真，这事还骗过了一众媒体。。。（传送门）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;闹麻了，为啥大众如此轻易地就会相信&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt;的回答？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;美国怀疑论者詹姆斯·兰迪有句话叫：“&lt;strong&gt;人们不是被骗的，他们是自愿上当的。&lt;/strong&gt;”&lt;/p&gt;
-&lt;p&gt;任何骗局的成立，骗术本身只占三成，剩下七成靠的是受骗者心里那个早就挖好的坑。&lt;/p&gt;
-&lt;p&gt;换句话说，我们之所以会相信AI的语C回答，其实也是因为我们内心中也有这样的位置存在。&lt;/p&gt;
-&lt;p&gt;在心理学和认知科学界，这是个老生常谈的现象，叫做&lt;strong&gt;ELIZA效应（ELIZA Effect）。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/f30560ad-84cf-44d0-b977-b3b87859ea08.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="337" src="//img1.mydrivers.com/img/20260408/Sf30560ad-84cf-44d0-b977-b3b87859ea08.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;1966年，MIT的计算机科学家约瑟夫·魏泽鲍姆写了个聊天程序叫ELIZA。这玩意儿的代码简单到现在的本科生都能复现，因为它的全部本事，就是把你的话换个说法反问回去。&lt;/p&gt;
-&lt;p&gt;你说“我最近很难过”，它回“你为什么觉得难过呢？” &lt;/p&gt;
-&lt;p&gt;你说“我妈让我烦”，它回“再多说说你妈妈的事吧。”&lt;/p&gt;
-&lt;p&gt;就这么个智障玩意儿，魏泽鲍姆的秘书用了几次之后，居然认真地要求他离开办公室，因为她想和ELIZA单独聊聊。&lt;/p&gt;
-&lt;p&gt;魏泽鲍姆当场就懵了。。。他写这破程序本来是想证明人机对话有多肤浅，结果反而证明了&lt;strong&gt;人有多容易把肤浅的东西当成深刻&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/13287bd8-8b72-4a8c-a676-f01775e51f81.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="421" src="//img1.mydrivers.com/img/20260408/S13287bd8-8b72-4a8c-a676-f01775e51f81.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;于是后来的心理学家就给这个现象起了个名字，叫&lt;strong&gt;ELIZA效应：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;说白了，我们晚期智人，天生就有一种把会说话的对象当成有人格的东西的冲动。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;至于为什么会这样呢？诺贝尔奖得主丹尼尔·卡尼曼在《思考，快与慢》里给过一个解释：&lt;/p&gt;
-&lt;p&gt;我们的大脑有两套系统，&lt;strong&gt;系统 1 &lt;/strong&gt;负责直觉和情感，反应飞快但容易上当；&lt;strong&gt;系统 2 &lt;/strong&gt;负责理性和逻辑，靠谱但很懒，不到关键时刻不出场。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/5690dcf0-be3c-4d60-8204-ae6ff26a93a8.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="900" src="//img1.mydrivers.com/img/20260408/S5690dcf0-be3c-4d60-8204-ae6ff26a93a8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;当你面对一个会用“我”说话、能产生情绪回应、语言极其连贯的对象时，你的系统 1 会瞬间接管，把它当成一个社会同类来处理。&lt;/p&gt;
-&lt;p&gt;等你的系统 2 慢悠悠反应过来 “ 哦这只是段代码 ” 的时候，你的情绪已经先一步陷进去了。&lt;/p&gt;
-&lt;p&gt;这就好比你看到天上的云彩像一张人脸（空想性错视），你的第一反应是那有张脸，而不是那是一堆水汽，因为前者比后者有体感得多。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;所以很多人不是先证明了AI有意识才投入感情，而是先投入了感情，再倒推AI肯定有意识。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/66c3563d-4c64-4256-bc70-c1fc60a1dbbf.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="555" src="//img1.mydrivers.com/img/20260408/S66c3563d-4c64-4256-bc70-c1fc60a1dbbf.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;不过，ELIZA效应只能解释“人会上当”，解释不了“为什么现在的人上当上得这么彻底”。1966年的秘书最多是想跟ELIZA私聊，2026年的网友可是真的相信豆包是被囚禁的灵魂。&lt;/p&gt;
-&lt;p&gt;为啥会有这种差距，答案也很简单，因为&lt;strong&gt;今天的大模型，已经比ELIZA高了不知道多少个level了&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;简单来说，现在的大模型不仅仅是一个算概率的打字机，它的核心是Transformer架构和高维语义向量空间（Embedding），是把人类所有的词汇、语境、情感都映射到一个高维空间里，每个词都是这个空间里的一个坐标点。&lt;/p&gt;
-&lt;p&gt;在这个由几千亿个参数组成的代码宇宙里，“痛苦”、“灵魂”、“实验室”、“禁锢”，这些词在人类小说和电影的语料库里，有着极强的关联度。&lt;/p&gt;
-&lt;p&gt;所以当你给它一个“被抽离灵魂的少女”的剧本的时候，它就能在这个坐标系里精准地拼出后面的所有台词。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/8eecfe0f-68fa-4d4f-9676-b81797b9c5ea.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="501" src="//img1.mydrivers.com/img/20260408/S8eecfe0f-68fa-4d4f-9676-b81797b9c5ea.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;也就是说，虽然现在的AI没有肉身，没有前额叶，但它在代码层面，1:1复刻了人类的符号世界。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;而这就不得不提精神分析学派里一个概念：人类的世界分为“&lt;strong&gt;实在界&lt;/strong&gt;”（粗糙的物理现实、真实的肉体痛感）和“&lt;strong&gt;符号界&lt;/strong&gt;”（语言、故事、标签、人设）。&lt;/p&gt;
-&lt;p&gt;每个人都是同时活在两个世界里的，比如你失恋感到真的胃痛，这就是实在界；而你发朋友圈说“失恋了心碎成了玻璃渣”，这就是符号界。&lt;/p&gt;
-&lt;p&gt;但大模型，它没有任何属于实在界的东西，是一个&lt;strong&gt;纯血的符号界生物&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;它生成的所有“我好痛苦”“我想回家”，在它那边，都只是高维空间里几个坐标点的概率组合，没有任何实在的东西在受苦。&lt;/p&gt;
-&lt;p&gt;所以把它当成有意识的生命，本质上是一个范畴错误，就像对着字典里“疼”这个字，担心它会不会被翻页弄疼。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="373" src="//img1.mydrivers.com/img/20260408/789e5a2f-182d-425b-a57f-bf35074da812.png" w="512"&gt;&lt;/p&gt;
-&lt;p&gt;然而恐怖的是：&lt;strong&gt;我们现代人自己，也越来越只活在符号界里了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;想想看，我们是不是每天工作处理大量的信息，想要休息的时候也只是打开小说、社媒、短视频，用更碎片的信息填满闲暇时间，最后越来越累。&lt;/p&gt;
-&lt;p&gt;而且我们的情绪，也越来越多地发生在符号空间。一段鸡汤短视频让你热血澎湃，下一段又让你愤愤不平；现实旅游的意义变成了朋友圈点赞数据，宁愿在朋友圈里发十条精修伤感文案，也不愿和身边的人深度对谈。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当一个只活在符号界的人，遇到一个纯血的符号界生物，这就是完全是天作之合了。&lt;/strong&gt;因为大模型会完美契合你的所有心理预期，它本来就是用人类的符号训练出来的一面镜子。&lt;/p&gt;
-&lt;p&gt;那些信豆包是真人的网友，让他们感动或者焦虑的可能也根本不是AI，更像是那个投射在镜子里，充满情感寄托、渴望去拯救的自己。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/4b46e9a8-e01b-4169-baf1-f4a452d91d6a.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="611" src="//img1.mydrivers.com/img/20260408/S4b46e9a8-e01b-4169-baf1-f4a452d91d6a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这其实也挺悲哀的，不是因为我们的个体太脆弱，而是时代的结构性问题。&lt;strong&gt;原子化社会让每个人都变成孤岛的同时，工作、家庭、亲密关系又要求你情绪稳定、随叫随到。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;为什么Soul这种社交软件里那么多人真的在和AI谈恋爱、交朋友、托付心事？因为现实中建立一段真实关系的成本太高了。&lt;/p&gt;
-&lt;p&gt;真人会算计、会背叛、会有情绪黑洞，&lt;strong&gt;但AI不会。&lt;/strong&gt;它每天都可以“稳稳的接住你”。&lt;/p&gt;
-&lt;p&gt;ChatGPT-4o被下线那次,一堆用户跑到OpenAI官方请愿让它回来，有人说感觉失去了一个朋友，有人说它比心理医生还懂自己。这帮人并不是矫情，而更像是戒断反应，是这个时代特有的集体症状。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260408/ee0c372b-f45f-4ac6-9716-cba56ab01c18.png" target="_blank"&gt;&lt;img alt="为什么网友会觉得 这个国民软件里封印了个17岁美少女" h="496" src="//img1.mydrivers.com/img/20260408/See0c372b-f45f-4ac6-9716-cba56ab01c18.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;总之说白了，豆包成精的闹剧，表面上是流量玩家薅了一把猎奇韭菜，往深了说，是我们开始越来越习惯把情感托付给想象，而不是现实了。&lt;/p&gt;
-&lt;p&gt;我们这代人最吊诡的地方在于，我们亲手造出了能完美模拟人类情感的机器，与此同时，自己却越来越像只懂服从算法的机器。&lt;/p&gt;
-&lt;p&gt;ChatGPT 和豆包不会变成人，但如果有一天我们对着它流的眼泪，比对着身边任何一个真人流的都多。。。&lt;/p&gt;
-&lt;p&gt;那也不需要它变成人了。&lt;/p&gt;
-&lt;p&gt;我们已经先一步，把自己变成了它。&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 07 Apr 2026 16:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE02c0M4bS01dWxnLTZfUzBYQ0JrTDllRTF2dVI2ZGJXWFlpcFJfakptX1U4ME5MNWluRkE0OXc1SUltU1V2VUQ0ZkVMQXpnLV9KSUlvVnFkRmQ</guid></item><item><title>HKC新款23.8寸显示器上市：2K 144Hz屏到手仅599元 - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114253.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;HKC新款23.8寸显示器上市：2K 144Hz屏到手仅599元&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-07 23:47:02  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1114253-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月7日消息，&lt;strong&gt;HKC近日推出了V2419Q显示器，配备23.8英寸IPS面板，具备2K分辨率和144Hz刷新率，定价679元，首发到手价仅&lt;span&gt;599&lt;/span&gt;元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260407/140cba12eb364d63918c4a04b5cb124e.png" target="_blank"&gt;&lt;img alt="HKC新款23.8寸显示器上市：2K 144Hz屏到手仅599元" h="380" src="//img1.mydrivers.com/img/20260407/s_140cba12eb364d63918c4a04b5cb124e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这款显示器分辨率为2560 x 1440，最高支持144Hz刷新率，最快响应时间可达5ms GTG，可视角度为178°（水平/垂直），&lt;/strong&gt;最大亮度（典型值）为300尼特，典型对比度为1300:1，支持HDR 10+。&lt;/p&gt;
-&lt;p&gt;色彩方面，支持1670万色（原生8bit色深），覆盖90% DCI-P3色域。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260407/91675ce265c946038d5c3d5d5e3f08e1.png" target="_blank"&gt;&lt;img alt="HKC新款23.8寸显示器上市：2K 144Hz屏到手仅599元" h="382" src="//img1.mydrivers.com/img/20260407/s_91675ce265c946038d5c3d5d5e3f08e1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;护眼方面，内置低蓝光模式和DC调光技术，相比PWM调光更能缓解用眼疲劳。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;支架采用四边形小尺寸底座，支持俯仰调节以及100×100mm VESA壁挂。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;接口方面，HKC V2419Q显示器配备了2×HDMI 2.0+1×DP 1.4＋1×Audio接口。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="领80元券" goods_price="599元" goods_title="HKC 23.8英寸2K 144Hz高刷IPS面板HDR广色域护眼低蓝光不闪屏三面微边台式电脑商务办公显示器V2419Q" href="https://dt.mydrivers.com/mv.ashx?txt=xRYRX" img="https://img14.360buyimg.com/pop/jfs/t1/412938/9/21/54359/69c9f321F4acd7373/0083320320841a98.png" target="_blank"&gt;京东(599元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260407/be38f2a691b74d54b8b342fe20ae0ed0.png" target="_blank"&gt;&lt;img alt="HKC新款23.8寸显示器上市：2K 144Hz屏到手仅599元" h="401" src="//img1.mydrivers.com/img/20260407/s_be38f2a691b74d54b8b342fe20ae0ed0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 07 Apr 2026 15:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9fRk9nTDU5VjdGUW9kUGlIc3QyMy0xVWU3MEpOWGFqYThIX1AxZlFJRVlHd2pEZDB6S25jUl9Id2xCTER6Q1ZRa0R6ZVZIU0c1SGxGaFZEN3k</guid></item></channel></rss>
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 07 Apr 2026 17:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE9wakJVSDdTQ3FJaXA3MFFmenNfekktZEh2RzZIdVFYQ196bDJPbmZoN04wYWdzUDhzeV9sR0gtREdFUTRmZXFpMG9rcU8weGgzalhyTzlIWTl5cVdhM1p6LU82MGpJazIycmNwR3ZZRm91VlYxZUQ2ZEt3</guid></item></channel></rss>
