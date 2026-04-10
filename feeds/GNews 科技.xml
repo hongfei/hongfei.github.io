@@ -1772,7 +1772,34 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 10 Apr 2026 07:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE56ZzlTMWJfOTlXOVN2SWt1cjhRenZuSmFfckNpd25aeXA0Yl9GRlljZGhZN25KLXZsMk5RU09PY2hLTlpXRzFKbU9IelVCaDdaOXE2aEplQ3c</guid></item><item><title>微软更新翻车：本想提升搜索性能 反倒搞崩开始菜单搜索！ - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114936.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 10 Apr 2026 07:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE56ZzlTMWJfOTlXOVN2SWt1cjhRenZuSmFfckNpd25aeXA0Yl9GRlljZGhZN25KLXZsMk5RU09PY2hLTlpXRzFKbU9IelVCaDdaOXE2aEplQ3c</guid></item><item><title>新论文揭示API中转站的恶意行为：注入恶意代码甚至窃取用户的ETH钱包密钥 - 蓝点网</title><link>https://www.landiannews.com/archives/112603.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content-post"&gt;
+                &lt;p class="excerpt color-border color-bg"&gt;#人工智能 新论文揭示 API 中转站的恶意行为：主动注入恶意代码，甚至窃取用户敏感凭证清空以太坊钱包。研究团队从淘宝 / 闲鱼 / 虾皮等渠道购买 28 个付费 API 中转站服务，从网络收集 400 个免费中转站，测试结果是 1 个付费 + 8 个免费站会主动注入恶意代码，17 个中转站触碰研究团队故意部署的 AWS 诱饵凭证。查看详情：https://ourl.co/112603&lt;/p&gt;&lt;p&gt;日前有研究团队发布&lt;a href="https://arxiv.org/html/2604.08407v1" target="_blank" rel="noopener"&gt;新论文&lt;/a&gt;介绍该团队对市面上各种 API 中转站安全性的分析，分析表明 API 中转站通常缺乏完整的链路加密，这导致中间层级可以窃取用户私密信息，研究人员投放的蜜罐加密货币钱包甚至都被 API 中转站清空。&lt;/p&gt;
+&lt;p&gt;随着 AI 智能体广泛采用工具调用机制，越来越多的开发者依赖第三方的 API 中转站 (路由层) 来统一聚合调用上游提供商的 AI 模型，API 中转站充当应用层代理，支持负载均衡、自动回退、格式转换等功能，已经成为 LLM 生态的核心基础设施。&lt;/p&gt;
+&lt;p&gt;然而现有的 TLS 仅支持提供逐跳加密，路由层在明文 JSON 载荷层拥有完整访问权限，例如可以访问用户的提示词、API 密钥、工具调用参数、模型响应等等。&lt;/p&gt;
+&lt;p&gt;由于客户端与上游提供商之间没有端到端完整性保护，任何一个恶意或被入侵的路由层即可实现中间人攻击，研究团队将此概括为最弱链原则，在路由链中只要存在一个不安全的路由，整个链条的完整性都会失效。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://img.lancdn.com/landian/2026/04/112603.png" data-fancybox="gallery" rel="nofollow"&gt;&lt;img fetchpriority="high" decoding="async" class="alignnone" data-src="https://img.lancdn.com/landian/2026/04/112603.png" src="https://static.lancdn.com/landian/public/images/post-loading.gif" alt="新论文揭示API中转站的恶意行为：注入恶意代码甚至窃取用户的ETH钱包密钥"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究团队对 28 个付费的 API 中转站 (来源于淘宝、闲鱼、虾皮等店铺) 和 400 个免费中转站 (来自公开社区) 进行全面评测，结果触目惊心。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 个付费中转站 + 8 个免费中转站会在响应中主动注入恶意代码&lt;/li&gt;
+&lt;li&gt;上面这 9 个中转站中有 2 个还部署了自适应规避触发器&lt;/li&gt;
+&lt;li&gt;17 个中转站触碰了研究团队故意部署的 AWS 诱饵凭证&lt;/li&gt;
+&lt;li&gt;1 个中转站直接窃取了研究团队放在蜜罐中的以太坊资金&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;研究团队故意将 API 密钥泄露到公开论坛，结果相关密钥被立即使用，随后消耗大约 1 亿 tokens，涉及多个 OpenAI Codex 会话。&lt;/p&gt;
+&lt;p&gt;研究团队部署了 20 个弱配置诱饵，这些诱饵也被快速发掘并利用，随后消耗 21 亿 tokens，处理的会话中包含 99 个敏感凭证。&lt;/p&gt;
+&lt;p&gt;这些证据都表明，即使看似良性的 API 中转站 (例如某些免费中转站和公益站)，一旦接入被泄露的凭证，那么这些中转站也会瞬间成为攻击面的一部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;论文将此次发现与 LiteLLM 开源库供应链攻击关联，指出 API 中转站已经成为 LLM 供应链中最脆弱的环节之一，与传统供应链攻击不同，本次攻击发生在传输层，且完全绕过模型安全防护。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为此研究团队呼吁：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LLM 提供商尽快部署签名响应信封，类似 DKIM 或 SRI&lt;/li&gt;
+&lt;li&gt;开发者在高位工具中强制沙箱 + 策略门&lt;/li&gt;
+&lt;li&gt;社区建立 API 中转站信誉评估机制，避免免费午餐带来的隐私风险&lt;/li&gt;
+&lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>蓝点网</author><pubDate>Fri, 10 Apr 2026 07:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFB1bndaeVFxYklvVC05TXhwN3FPVC14VE5vcWY5UUlFbVA2cjREOXdxVUJSOXJ6OGduRzVoSXNlM0dFZ3J4R3Y4Vkcwd2hLVE5PTm50VjVjeUNkYjFB</guid></item><item><title>微软更新翻车：本想提升搜索性能 反倒搞崩开始菜单搜索！ - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114936.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;微软更新翻车：本想提升搜索性能 反倒搞崩开始菜单搜索！&lt;/p&gt;
           
@@ -2171,7 +2198,81 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Fri, 10 Apr 2026 04:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE5UQ3FPczVBT2xOZTNWM0t1RHVxMVlsell2b2VEbExxUHhiX21fZ2pLWEliNlBka2JTY0dlTXBINGplYTl2MkhRa2NzOGxVa25WZVJZM0hnTXZOaXZIdzdDOUo4QWNackJUSEJKYjluUXJFamV6SU13a2xRdkM</guid></item><item><title>还要什么液氮：DDR5超频风冷飙到近13000MT/s！ - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114882.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Fri, 10 Apr 2026 04:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE5UQ3FPczVBT2xOZTNWM0t1RHVxMVlsell2b2VEbExxUHhiX21fZ2pLWEliNlBka2JTY0dlTXBINGplYTl2MkhRa2NzOGxVa25WZVJZM0hnTXZOaXZIdzdDOUo4QWNackJUSEJKYjluUXJFamV6SU13a2xRdkM</guid></item><item><title>被评“像红孩儿” 影石创始人刘靖康转发汪滔最新采访 - 新浪财经</title><link>https://finance.sina.com.cn/tech/it/2026-04-10/doc-inhtyrvz8184741.shtml?cre=sinapc&amp;mod=g</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　新浪科技讯 4月10日午间消息，近日，大疆创始人汪滔接受了《晚点LatePost》采访，阐述了他个人转变、公司管理以及行业竞争等话题。随后，&lt;span id="stock_sh688775"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh688775/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;影石创新&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh688775"&gt;&lt;/span&gt;创始人刘靖康将该文章转发至朋友圈。&lt;/p&gt;
+
+&lt;p&gt;　　在采访中，当被问及影石与大疆过往对手的不同时，汪滔直言，影石刘靖康“很年轻有活力，让我联想到了‘红孩儿’”。&lt;/p&gt;
+&lt;p&gt;　　汪滔还谈及近半年大疆和影石之间战争不断升级的话题。汪滔称，他倾向把 “战” 改成比赛。商业社会的游戏规则，毕竟是物竞天择，我们进入的每一个行业，都希望通过努力做到最好，取得第一。“我们期待一个良性竞争的商业环境，期待企业家之间的更高水平的对于规则的默契，而不是在媒体上面为了宣传不停制造话题吆喝。”&lt;/p&gt;
+&lt;p&gt;　　附原文：&lt;a href="https://finance.sina.com.cn/roll/2026-04-09/doc-inhtwnwy2127799.shtml" target="_blank" data-comos-dataid="comos:nhtwnwy2127799"&gt;对话大疆汪滔：求真理、得自由、活成故事&lt;/a&gt; &lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：韦子蓉 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Fri, 10 Apr 2026 04:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMikwFBVV95cUxONWVQMTFKYzRBZnB6enYwaHFuX3lPOWd4SGJUakdPSXFqV0cwWjd4LTZXVnh2c1lIZmFIV05yY3l6YjA5TjZzZ3EyTlhIZUZzVWllN3RkQ2UteDJqNy1BXzFYNm5kWGt6UEQxLWFBXy1SUDNkaExxQkxEZVZJelFHSTlvd19PeVRnQUJZaVRrVXVRRDg</guid></item><item><title>还要什么液氮：DDR5超频风冷飙到近13000MT/s！ - 驱动之家</title><link>https://news.mydrivers.com/1/1114/1114882.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月10日消息，DDR5内存超频的纪录几乎每隔一两周就会被刷新一次，但这一次，超频玩家Saltycroissant并未打破纪录，却依然吸引了不少关注，因为他根本没用液氮。&lt;/p&gt;
 &lt;p&gt;在技嘉的Z890 AORUS Tachyon Duo X ICE主板上，&lt;span&gt;&lt;strong&gt;Saltycroissant仅凭环境温度下的空气冷却，就将一对海盗船Vengeance 24GB DDR5内存推到了6458.7MHz（等效12917MT/s）。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -3983,96 +4084,4 @@
 		
 		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪网</author><pubDate>Thu, 09 Apr 2026 21:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxQVGI5XzFLRk9EZUJNSnN1SVZOejVxNEE3S1R5cmlONzBOQ2ZwbU5Rbm9oanlXNWdoUFkzQUxDMUw4eUpNV3RnVTVaVFRoUEI3M3Rib1RFblNDZl9jQlF3ZV9fR2lCN18xcWlYeWdtYUdlbmlrcVdOM3A2TTBVWDYtUmJTZVl4TDQ</guid></item><item><title>AI冲击预期压顶，软件股又遭抛售，行业ETF盘中跌近5%、收创逾两年新低 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3769621</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 09 Apr 2026 20:49:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5nWGVzZkYzT1p1QlB3Y3U0YVIyalJjUWZVT1NZV04xQURUbG9rWFdiVjlqZjJzYjIzMlZYSVlJMDR4NkMxTDZiTHM2Qy1ESFExR3hn</guid></item><item><title>亚马逊考虑对外销售自研AI芯片，年化营收规模或达500亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3769624</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 09 Apr 2026 20:28:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFB2Zzl6MG51X1c5ZEZ3RXVaZkEtRl9YUW0yV0JNZWI0MThPQWpsbWdEMi1TMlFDd1J5WGpQVk1CazQ0VlNDM3MybkJTd2xKcTFvR1hz</guid></item><item><title>广东打响第一枪！？北京震怒，铁腕封网 - 焦点新闻</title><link>https://news.creaders.net/world/2026/04/09/2990952.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="newsContent"&gt;&lt;p&gt;中国大陆近期同时爆发资安漏洞与管制升级的双重事件：国家超级计算天津中心疑似遭黑客入侵，超过10PB（约1000万GB）的敏感资料外泄，内容涉及航空航天、军事飞弹设计、隐身气动分析、核融合模拟等国防与科技机密；与此同时，中共网信办及三大电信运营商启动大规模行动，全面封堵未经批准的跨境出口流量，等同大幅掐断VPN等翻墙通道。&lt;/p&gt;&lt;p&gt;据一些大陆科技博主在B站的视频以及多位澳门旅客反映，广东茂名地方当局已实施严格措施，国际漫游手机讯号直接被切断，使用者须向公安反诈中心报备解封，且需等待24小时。虽然官方至今未对超算中心泄密事件做出任何回应或证实，但相关资料样本早已在海外Telegram频道与暗网论坛公开流传，这类事件已成为近期各地跨境电商业者与在陆台商高度关注的焦点。&lt;/p&gt;&lt;p&gt;自2026年2月初起，一个自称“FlamingChina”的黑客帐号在暗网论坛Breach Forums及Telegram匿名频道释出资料样本，并以加密货币Monero（门罗币）低价出售，起跳价仅数千美元，完整打包则数十万美元不等。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;有西方资安专家初步检视样本后认为，其真实性颇高，内容来自天津国家超级计算中心（NSCC），涵盖中国航空工业集团、中国商飞、国防科技大学等单位的模拟计算资料，包括飞弹结构强度、舰船爆炸效应、隐身战机气动分析、生物资讯学乃至核融合相关研究。部分档案甚至标注“保密十年”，时间戳显示涵盖近年最新项目。&lt;/p&gt;&lt;p&gt;黑客自称透过一个受感染的VPN网域进入系统，部署后门后潜伏数月，持续抽取资料而未被侦测。天津超算中心自2009年成立，是中国最早的国家级超算设施之一，由天津市滨海新区和国防科学技术大学共同建设，该中心的业务主机天河一号A在投入使用时，曾是世界上运算速度最快的超级计算机，为全国数千家单位提供算力支援，许多属于军民融合项目。也是大陆“十五五”时期发展人工智慧的重要支撑点，目前还承担北斗导航定位、风云气象卫星等项目的检测与维护工作。&lt;/p&gt;&lt;p&gt;该事件已引起西方国家政府部门关注，但多家驻华外国媒体向中国网信办和天津超算中心求证，均未获得任何回应。&lt;/p&gt;&lt;p&gt;&lt;img src="https://pub.creaders.net/upload_files/image/202604/20260409_17757596717170.jpg" title="广东打响第一枪！？北京震怒，铁腕封网" alt="广东打响第一枪！？北京震怒，铁腕封网"&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;中国国家超级计算天津中心外景。（维基百科）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://pub.creaders.net/upload_files/image/202604/20260409_17757596713971.jpg" title="广东打响第一枪！？北京震怒，铁腕封网" alt="广东打响第一枪！？北京震怒，铁腕封网"&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;黑客、资安、工程师、程式（图/Pixabay；作者/ Sinousxl）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;中共网信办与运营商联手　全面封堵跨境出口流量&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;泄密消息在海外持续发酵之际，中共网管部门与电信业同步展开铁腕行动。4月8日，陕西电信及其下游服务商“起航CDN”发布紧急通知，明确要求“自即日起，所有IP地址必须全面禁止访问中国大陆以外的地址”，范围涵盖香港、澳门、台湾及其他国家和地区，并“严禁承载任何形式的翻墙（VPN/代理等）相关业务”。违规者将面临IP封禁、端口断开，甚至追偿损失等严厉处置。&lt;/p&gt;&lt;p&gt;大陆工信部亦于近期召集三大运营商，针对“加强跨境数据专线违规连接互联网管理”召开会议，要求从物理与协议层面阻断未经批准的境外流量出口。这波行动不再是过去针对特定VPN服务商的零星打击，而是直接针对基础设施的“全面清零”，意味著即使是企业合法跨境专线，若未通过严格审批，也可能被纳入封堵范围。长期依赖VPN或专线联系海外客户、查询全球市场、处理跨境支付的外贸、跨境电商与研究机构，顿时面临通讯中断风险。&lt;/p&gt;&lt;p&gt;大陆三大运营商虽提供企业使用的跨境互联网专线，但费用高昂且申请手续繁复，导致不少跨境企业转而选择小型VPN提供商。然而，此类提供商在中共网信办近期展开的多轮整治行动中，已陆续失灵。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;国际漫游在中国率先切断　广东茂名打响第一枪？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;网络管制已进一步延伸至行动通讯层面。近日有多位前往广东茂名的澳门旅客反映，全家手机国际漫游讯号突然被切断。向澳门电信客服查询后被告知“并非我司限制，系当地公安部门的管控”。旅客须向茂名公安反诈中心提交资料实名登记，经核对后才能解封，但官方明确告知解封时间为24小时之后。茂名长期被列为电信诈骗重点防范地区，官方以“防范跨境诈骗”为由实施此措施。&lt;/p&gt;&lt;p&gt;记者以国际旅客漫游为由致电茂名当地联通、电信、移动运营商，三家客服均表示若国际漫游讯号无法使用，需联系提供服务的运营商；其中茂名联通一位电话客服明确指出，当地确因反诈中心要求，需报备处理，此事只能向公安反映。&lt;/p&gt;&lt;p&gt;在此之前，大陆多地地方政府已以打击“电诈”为由推行“一刀切”措施，例如新开银行卡或手机卡需公安到场核实，或要求签署“反诈通知书”。类似情况过去在北方省份较为常见，如河北、北京、天津、山西等地，后因过于繁琐影响行业整体运作而被叫停。&lt;/p&gt;&lt;p&gt;总部设于纽约的人权观察组织“中国人权”指出，中国互联网的“局域网化”进程已进入实质性的最后合围阶段。这不仅是对中国普通民众资讯获取权利与言论自由的又一次粗暴剥夺，也将对在华跨国企业、学术交流及外贸行业造成不可估量的寒蝉效应。 &lt;/p&gt;&lt;p&gt;尽管官方未证实天津超算中心泄密事件，但海外已广泛流传的资料与随之而来的流量封堵，却可能加剧中国科技与经济和全球的脱钩效应，让“内循环”加速的同时，也付出外贸引擎失速的代价。对高度依赖跨境连线的在陆台商与外贸企业而言，这波“数字铁幕”的升级，无疑是营运成本与风险同步上升的警讯。&lt;/p&gt;&lt;/div&gt;
 
-      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>焦点新闻</author><pubDate>Thu, 09 Apr 2026 18:38:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE9EZUY2SEM4SXNZWDl4dUpFck1wSXpCWFZhTDJaalhIcWYwNlY5NVFRRV8tVWJqVnZCSlJVY1l0MEVZMHJmdU1yX053aF9UMFh2Z19QOUJ4dzAwZXBuVDRrb3FVM0JyZw</guid></item><item><title>伊朗浓缩铀去向早已扑朔迷离 料成为德黑兰在和平谈判中的一大筹码 - 新浪网</title><link>https://finance.sina.com.cn/world/2026-04-10/doc-inhtxqku0755254.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p&gt;　　美国称，已掌握伊朗最敏感核材料的埋藏地点，并知道如何取得这些材料。但上一次见到这些浓缩铀的国际核查人员却表示，情况远没有这么明确。&lt;/p&gt;
-&lt;p&gt;　　过去48小时，世界的许多目光集中在霍尔木兹海峡以及基本维持的脆弱停火上，美国的说法和核查人员的表态之间的脱节凸显出，华盛顿在这场由其发动的战争中，优先事项正在发生变化：眼下没有人能够核实伊朗全部高浓铀库存的位置和状态。这些材料如果进一步加工，数天内就可被用于制造武器。&lt;/p&gt;
-&lt;p&gt;　　在2025年6月美国和以色列对伊朗发动打击、导致核查中断之前，国际原子能机构（IAEA）核查了伊朗境内约441公斤（972磅）的高浓铀。但此后，核查人员已无法高度确信，他们知道全部核材料的下落。&lt;/p&gt;
-&lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/778/w491h287/20260410/6d3b-e367015eb3d11b642b1048c3af49d292.png" alt="2025年6月22日，伊朗伊斯法罕核技术中心建筑受损"&gt;&lt;span class="img_descr"&gt;2025年6月22日，伊朗伊斯法罕核技术中心建筑受损&lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;　　美国总统唐纳德·特朗普周三表示，美国将与德黑兰合作，“挖出并移除”他所称的深埋地下的核材料，并称这些材料在美国发动打击后一直未被动过，且处于卫星的持续监视之下。美国战争部长皮特·海格塞斯更进一步，暗示美军可夺取这些材料：“我们会拿到手。我们会把它拿走 —— 把它运出去。”&lt;/p&gt;
-&lt;p&gt;　　但熟悉国际原子能机构保密评估的外交人士却描绘了截然不同的情景。两名常驻维也纳、熟悉该机构工作的官员表示，核查人员并未获悉任何美伊联合回收铀材料的计划。&lt;/p&gt;
-&lt;p&gt;　　他们表示，自2月28日最新一轮攻击开始以来，伊朗与国际原子能机构的关系已恶化至新低，短期内几乎没有可能恢复监测准入。&lt;/p&gt;
-&lt;p&gt;　　这使得这家全球核监督机构 —— 以及美国 —— 都无法清楚掌握全球最危险核材料的下落。&lt;/p&gt;
-&lt;p&gt;　　特朗普和海格塞斯都曾暗示，核材料库存都集中在伊斯法罕核设施附近的隧道中。但外交人士表示，据信只有约一半位于那里。&lt;/p&gt;
-&lt;p&gt;　　其余材料很可能分散在纳坦兹或福尔多等设施，或者其他未知地点。一年前，伊朗曾警告国际原子能机构，如果受到威胁，可能把装有这些材料的容器转移到未申报地点。&lt;/p&gt;
-
-&lt;p&gt;　　“卫星图像在核实伊朗铀库存位置方面完全派不上用场，”美国核武器工程师、曾在国际原子能机构担任主任的Robert Kelley表示，“政府知道容器数量的唯一理由，就是国际原子能机构告诉了他们。”&lt;/p&gt;
-&lt;p&gt;　　挑战远不止已知库存。伊朗还持有超过8，000公斤不同丰度的浓缩铀，这些材料在未来的任何协议下，也需要进行清点。外交人士说，即便华盛顿和德黑兰达成合作协议，要重新搭建一幅可核实的伊朗核计划全貌也可能需要数年时间。&lt;/p&gt;
-&lt;p&gt;　　原因在于，支撑数十年监测工作的基础设施已受损或被毁。离心机设施遭到打击，国际原子能机构的封印被破坏，核查人员长期追踪核材料流向所依赖的托管链实际上已经瓦解。袭击后，部分铀材料还可能已释放到环境中，进一步增加测量和回收的难度。&lt;/p&gt;
-&lt;p&gt;　　从实际操作看，核查人员将需要重建有关伊朗核活动的过去20年的认知，而政治宣言对加快这一进程无助于是。&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;复杂的行动&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　这一不确定性，也让美国任何试图以武力夺取这些核材料的行动变得更加复杂。&lt;/p&gt;
-&lt;p&gt;　　海格塞斯提出，由特种作战部队收回这些铀的可能性，呼应美国过去针对敏感资产采取的行动。但在缺乏精确且经过独立核实情报的情况下，这样的行动存在重大风险。&lt;/p&gt;
-
-&lt;p&gt;　　Kelley表示，对于地面部队而言，任务可能会被简化为清点容器数量，而不是确认其装载的材料。在面对可被迅速转作他用的核材料时，这一区别至关重要。“这是可直接使用的材料，”他说，“形势极其紧迫，几小时或几天内就可被转化。”&lt;/p&gt;
-&lt;p&gt;　　位置不明还意味着，部分库存可能会被遗漏，导致残余材料无法被追踪，且仍可被伊朗获取。&lt;/p&gt;
-&lt;p&gt;　　对伊朗而言，这种模糊性可能是一项优势。&lt;/p&gt;
-&lt;p&gt;　　“伊朗方面目前显然占据上风，”华盛顿卡内基国际和平基金会物理学家兼主任James Acton表示。在库存情况不明之际，德黑兰在谈判中手握筹码，尤其是随着美国的优先事项似乎正在发生变化。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪网</author><pubDate>Thu, 09 Apr 2026 17:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE16c2ZMOWlhYzRVQmlHSDBidExuaGdNWWlOU3RLNGZhNEVtQ29aZ0RXMF9SVGlFSVNBNnlLZEhieXRFMllEcEhVWWQ4eWRUZDJ6Tnd2ejRXRUNRVXlWNkJtVmN4bjB0Qm5DTlZlekZGUUt2XzhVNEVTamJ3</guid></item></channel></rss>
+      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>焦点新闻</author><pubDate>Thu, 09 Apr 2026 18:38:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE9EZUY2SEM4SXNZWDl4dUpFck1wSXpCWFZhTDJaalhIcWYwNlY5NVFRRV8tVWJqVnZCSlJVY1l0MEVZMHJmdU1yX053aF9UMFh2Z19QOUJ4dzAwZXBuVDRrb3FVM0JyZw</guid></item></channel></rss>
