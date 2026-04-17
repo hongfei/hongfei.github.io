@@ -609,7 +609,58 @@
 	其三，推动行业从“移动端轻量化”转向桌面能力下移+AI原生，加速全场景移动办公普及。亦有行业人士理性分析，认为iPad能否全面替代笔记本，不只取决于单一应用，还依赖生态协同、用户习惯与长期性能稳定。WPS for Pad迈出关键一步，最终能否让iPad成为“真正的生产力工具”，仍待市场与时间检验。
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察</author><pubDate>Fri, 17 Apr 2026 09:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1mT0xLRXdRRUZXcVZIck1XWXJnbl9vQ01ZSmdxM21pYTZlZGV2WnJBNUEwSFhtNEtPdmJMSDYyd2dVazBJRGl6bzBBRU1uU1RiTUNKMDVRRlYwaU4zMkt0QWRLXzE</guid></item><item><title>AMD锐龙9 9950X3D2跑分泄露：逼近100℃！风冷伺候不动 - 驱动之家</title><link>https://news.mydrivers.com/1/1116/1116531.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察</author><pubDate>Fri, 17 Apr 2026 09:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1mT0xLRXdRRUZXcVZIck1XWXJnbl9vQ01ZSmdxM21pYTZlZGV2WnJBNUEwSFhtNEtPdmJMSDYyd2dVazBJRGl6bzBBRU1uU1RiTUNKMDVRRlYwaU4zMkt0QWRLXzE</guid></item><item><title>微软补丁翻车！Win11/10触发BitLocker：没密钥进不去 - 3DM</title><link>https://www.3dmgame.com/news/202604/3942266.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;微软补丁翻车！Win11/10触发BitLocker：没密钥进不去&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2026-04-17 17:08:08&lt;/span&gt;&lt;/p&gt;
+            
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images2/thumbnews/20260417/1776416837_576832.png" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	微软确认本月更新存在问题，安装后可能导致系统触发BitLocker恢复密钥提示，用户若未保存恢复密钥将无法进入系统。
+&lt;/p&gt;
+&lt;p&gt;
+	受影响的更新包括Windows 11的KB5083769和KB5082052、Windows 10的KB5082200，以及Windows Server 2022和2025。
+&lt;/p&gt;
+&lt;p&gt;
+	微软解释称，问题根源在于不推荐的BitLocker组策略配置与本次更新产生冲突，具体而言，当设备同时满足以下条件时会被触发：
+&lt;/p&gt;
+&lt;p&gt;
+	系统盘启用了BitLocker；组策略“配置TPM平台验证配置文件”已设置且包含PCR7验证；系统信息显示安全启动状态PCR7绑定为不可用；设备固件中存在Windows UEFI CA 2023证书，但尚未运行2023签名的Windows启动管理器。
+&lt;/p&gt;
+&lt;p&gt;
+	微软强调该问题仅影响满足上述全部条件的有限设备，且恢复密钥只需输入一次，但即便如此，对于没有备份恢复密钥的用户来说，这意味着电脑直接无法使用。
+&lt;/p&gt;
+&lt;p&gt;
+	微软目前推荐方案是在安装更新前修改组策略：通过gpedit.msc将"配置TPM平台验证配置文件"设为未配置，执行gpupdate /force更新策略，随后依次执行manage-bde -protectors -disable C:和manage-bde -protectors -enable C:重新绑定BitLocker。
+&lt;/p&gt;
+&lt;p&gt;
+	此外，管理员也可在安装补丁前应用已知问题回滚（KIR）来预防该问题。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;a href="https://img1.mydrivers.com/img/20260417/58590361249b4c8681594c2d87022b25.png" target="_self"&gt;&lt;img alt="微软补丁翻车！Win11/10触发BitLocker：没密钥进不去" src="https://img1.mydrivers.com/img/20260417/s_58590361249b4c8681594c2d87022b25.png"&gt;&lt;/a&gt;
+&lt;/p&gt;                                &lt;/div&gt;
+                                                        &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Fri, 17 Apr 2026 09:08:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTFBRNm9FR1pZbFhNbmcxUms3dXkyZGFicTVUOGs3ZnZfck12S29uWURDOEJkS0lCLUR6cUkwcmxHNmdDSDFLNnAzQ0dlMVV1N1I4YzFDenFCVTZMdzd1</guid></item><item><title>AMD锐龙9 9950X3D2跑分泄露：逼近100℃！风冷伺候不动 - 驱动之家</title><link>https://news.mydrivers.com/1/1116/1116531.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月17日消息，AMD顶级旗舰锐龙9 9950X3D2即将正式解禁上市，而作为首款配备双X3D缓存、总容量高达208MB的怪物，性能到底如何呢？&lt;/p&gt;
 &lt;p&gt;权威超频网站HWBoT上已经出现了锐龙9 9950X3D2的部分成绩，还有温度表现，非常惊人。&lt;/p&gt;
@@ -3786,66 +3837,4 @@ iPhone 17e&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 16 Apr 2026 20:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPTWM3QTRGQ0JrblIxZWFIV0dPTThCQWhEMEZFM0VrUG5VOHlxSVRSUV9mN2cydjFhaHhvMW8welY0alltVHVtM0Qwb1dKTFI3N0xuMWlreHI2Yy1vQ3QxcjByQlF0RTU0eEhXUHFvTzhjRlZvSzd6X0FLb29iMXpyWGxKd0RaQ3c</guid></item><item><title>刚刚，Claude Opus 4.7突然发布：不是最强，但奥特曼又得失眠 - 爱范儿</title><link>https://www.ifanr.com/1662528</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
-            &lt;p class="o-single-normal-content"&gt;
-              &lt;h1 class="c-single-normal__title"&gt;刚刚，Claude Opus 4.7突然发布：不是最强，但奥特曼又得失眠&lt;/h1&gt;
-            &lt;/p&gt;
-          &lt;/div&gt;
-          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
-  
-&lt;p&gt;今年 Anthropic 的势头异常凶猛。&lt;/p&gt;
-&lt;p&gt;不仅热度居高不下，口碑也持续攀升，稳坐 AI 圈「顶流」的交椅。现在几乎每天醒来，都能看到他们准点推送的新产品或新功能。久而久之，大家也从兴奋变成了「是你，果然又是你」的默契感。&lt;/p&gt;
-&lt;p&gt;而就在刚刚，万众期待的 Claude Opus 4.7 也正式发布，依旧是熟悉的配方，熟悉的高分选手。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662623" src="https://s3.ifanr.com/wp-content/uploads/2026/04/992-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/992-1.png!720 1186w, https://s3.ifanr.com/wp-content/uploads/2026/04/992-1-360x142.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/992-1-768x304.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/992-1-1024x405.png 1024w" sizes="(max-width: 1186px) 100vw, 1186px"&gt;&lt;/p&gt;
-&lt;p&gt;有趣的是，Anthropic 在公告里非常坦诚，甚至带着点骄傲：「这并非我们最强大的模型。」那个传说强得可怕的 Claude Mythos Preview 依然还在藏。&lt;/p&gt;
-&lt;p&gt;但就是这个并非最强的 Opus 4.7，却依旧引发了极大的关注。因为它解决了一个比聪明更重要的痛点：靠谱。不是那种你说什么它就做什么的靠谱，而是当你提出一个愚蠢的方案时，它敢于反驳你，并自己把坑填上的靠谱。&lt;/p&gt;
-&lt;h3&gt;当靠谱成为比聪明更稀缺的品质&lt;/h3&gt;
-&lt;p&gt;基准测试结果显示，在业界公认最硬核的 SWE-bench Pro 上，4.7 从前代的 53.4% 直接拉到 64.3%，单代升级涨了近 11 个百分点，把 GPT-5.4（57.7%）和 Gemini 3.1 Pro（54.2%）都甩在了身后。&lt;/p&gt;
-&lt;p&gt;视觉推理的 CharXiv 基准从 69.1% 跳到 82.1%，对应的是它新获得的 2576 像素长边识别能力——清晰度是前代的 3 倍以上。&lt;/p&gt;
-&lt;p&gt;这不只是「看得更清楚」这么简单。更高的分辨率直接带动了输出质量的连锁提升：生成界面、制作幻灯片、排版文档，细节精度也全面提升。&lt;/p&gt;
-&lt;p&gt;工具调用规模化评测 MCP-Atlas 上，4.7 跑出 77.3%，超过 GPT-5.4 的 68.1% 和 Gemini 的 73.9%。法律 AI 平台 Harvey 测试中，4.7 在 BigLaw 基准上拿下 90.9%，正确区分了历来是前沿模型死穴的「转让条款」与「控制权变更条款」。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662618" src="https://s3.ifanr.com/wp-content/uploads/2026/04/4443.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/4443.png!720 1282w, https://s3.ifanr.com/wp-content/uploads/2026/04/4443-360x373.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/4443-768x797.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/4443-987x1024.png 987w" sizes="(max-width: 1282px) 100vw, 1282px"&gt;&lt;/p&gt;
-&lt;p&gt;不过，4.7 也并非全然遥遥领先，在 Agentic search 评测 BrowseComp 上，4.7 反而从前代的 83.7% 下降到了 79.3%，被 GPT-5.4（89.3%）和 Gemini（85.9%）超越。&lt;/p&gt;
-&lt;p&gt;这个退步并非偶然。一个遇到缺失信息会直接报错、不肯乱编答案的 Agent，在以「是否给出答案」为评判标准的基准上，天然会吃亏。&lt;/p&gt;
-&lt;p&gt;而数据之外，更值得关注的问题是：这种「靠谱」，在真实工作里到底意味着什么？&lt;/p&gt;
-&lt;p&gt;过去一年，业界对代码大模型的期待，普遍还停留在「写个函数、找个 Bug」的层面，但 Claude 4.7 在早期测试里，展现出了一种截然不同的气质。&lt;/p&gt;
-&lt;p&gt;知名云端开发平台 Replit 的负责人这样描述：「它在技术讨论中会反驳我，帮我做出更好的决定。它真的感觉像一个更好的同事。」&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662620" src="https://s3.ifanr.com/wp-content/uploads/2026/04/4445.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/4445.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2026/04/4445-360x192.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/4445-768x409.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/4445-1024x545.png 1024w" sizes="(max-width: 1278px) 100vw, 1278px"&gt;&lt;/p&gt;
-&lt;p&gt;它不再一味地「唯命是从」，也不再为了交差而胡编乱造。在数据科学平台 Hex 的测试里，4.7 遇到缺失数据时会直接报错，而不是像前代那样塞一个「看似合理但完全错误」的备选值。Hex 团队甚至直言：「低消耗状态下的 4.7，等同于中等消耗状态下的 4.6。」&lt;/p&gt;
-&lt;p&gt;这种「拒绝顺从」的特质，恰恰是高级软件工程里最稀缺的东西。&lt;/p&gt;
-&lt;p&gt;当然，凡事有两面。为旧模型写的 prompt，到了 4.7 手里可能会产生意想不到的结果。那些过去被模型「意会」掉的模糊指令，4.7 会一字一字地字面执行。这也意味着越懂得清楚表达需求的人，越能从 4.7 这里拿到好结果。&lt;/p&gt;
-&lt;p&gt;光会「顶嘴」还不够，遇到挫折就罢工的 AI 同样不是好同事。4.7 的另一个大的变化，是任务韧性。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662622" src="https://s3.ifanr.com/wp-content/uploads/2026/04/22210.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/22210.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2026/04/22210-360x269.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/22210-768x573.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/22210-1024x764.png 1024w" sizes="(max-width: 1278px) 100vw, 1278px"&gt;&lt;/p&gt;
-&lt;p&gt;以往大模型在多步任务中遇到工具调用失败，往往直接停机报错。Notion 团队测试发现，4.7 的工具错误率降到了原来的三分之一，更关键的是，它能在工具链崩溃时自己绕过障碍，继续把任务跑完。&lt;/p&gt;
-&lt;p&gt;当 AI 停止谄媚，真正的生产力才开始爆发。&lt;/p&gt;
-&lt;p&gt;Anthropic 公布的一个极端案例里，4.7 在没有任何人类干预的情况下，从零构建了一个完整的 Rust 文本转语音引擎——写神经网络模型、SIMD 内核和浏览器演示，还自己把输出喂给语音识别器做验证，连测试都一并完成了。&lt;/p&gt;
-&lt;p&gt;前端框架巨头 Vercel 还发现了一个过去从未有过的行为：4.7 会在开始写系统级代码之前，先自己进行数学证明。这已经超出了写代码的范畴，进入了严谨工程设计的领域。&lt;/p&gt;
-&lt;h3&gt;雇佣 AI「资深专家」的代价&lt;/h3&gt;
-&lt;p&gt;为了验证它在细节上的处理能力，我设定了三个前端交互场景，评判标准只有一个：细节是否敷衍，一眼便知。&lt;/p&gt;
-&lt;p&gt;第一个场景，是让它做一个俯视视角的黑胶唱片机界面，其难点在于「金属光泽」与「呼吸光晕」的呈现。4.7 并没有用廉价的色彩渐变敷衍了事，而是通过复杂的 CSS 样式叠加，逼真地还原了金属质感。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662603" src="https://s3.ifanr.com/wp-content/uploads/2026/04/3-2.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/3-2.gif 640w, https://s3.ifanr.com/wp-content/uploads/2026/04/3-2-360x315.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
-&lt;p&gt;第二个场景是只用 CSS，不用 JavaScript 做一个老式电风扇。 面对这个限制严格的题目，一些模型会悄悄违规使用 JS，但 4.7 遵守了规则。它用纯 CSS 做出了风扇的立体结构，低中高三档过渡流畅，底座透视和阴影的处理也真有一点实物感，它在规则允许的范围内找到了很好的解决办法。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662601" src="https://s3.ifanr.com/wp-content/uploads/2026/04/1-5.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/1-5.gif 640w, https://s3.ifanr.com/wp-content/uploads/2026/04/1-5-360x315.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
-&lt;p&gt;第三个场景是做一个复古磁带随身听，带有录像带那种老旧的噪点效果。磁带转动的细节也是有的。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662602" src="https://s3.ifanr.com/wp-content/uploads/2026/04/2-3.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/2-3.gif 640w, https://s3.ifanr.com/wp-content/uploads/2026/04/2-3-360x315.gif 360w" sizes="(max-width: 640px) 100vw, 640px"&gt;&lt;/p&gt;
-&lt;p&gt;当然，变聪明是有代价的。Opus 4.7 现已在所有 Claude 产品和 API、Amazon Bedrock、Google Cloud 的 Vertex AI 以及 Microsoft Foundry 平台上推出。&lt;/p&gt;
-&lt;p&gt;基础定价维持在每百万输入 5 美元、输出 25 美元不变。但 4.7 引入了全新分词器，同样的文本会拆分出比原来多 1.0 到 1.35 倍的 Token。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662607" src="https://s3.ifanr.com/wp-content/uploads/2026/04/2221-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/2221-1.png!720 1272w, https://s3.ifanr.com/wp-content/uploads/2026/04/2221-1-360x188.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/2221-1-768x402.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/2221-1-1024x536.png 1024w" sizes="(max-width: 1272px) 100vw, 1272px"&gt;&lt;/p&gt;
-&lt;p&gt;叠加上它在高强度任务中本身就倾向于「多想一会儿」，实际消耗几乎必然上升。&lt;/p&gt;
-&lt;p&gt;此外，Anthropic 在原有的难度选项之上，加入了全新的 xhigh（超高）级别。在这个级别下，面对复杂难题，Claude 4.7 会消耗更多的 Token，花更多的时间去「思考」。Claude Code 已经把所有套餐的默认 effort level 直接拉到了 xhigh。&lt;/p&gt;
-&lt;p&gt;Anthropic 用行动告诉所有人，对于真正的编码任务，省着用不如想清楚。&lt;/p&gt;
-&lt;p&gt;为了匹配这种工作流，Claude Code 顺势推出了两个杀手级功能：&lt;/p&gt;
-&lt;p&gt;/ultrareview（深度审查）：开启一个专门的审查会话，像一个极其挑剔的资深 Reviewer 一样，通读所有代码更改，精准标记出深层的架构设计缺陷和 Bug。Pro 和 Max 用户可以免费试用三次。&lt;/p&gt;
-&lt;p&gt;Auto Mode（自动模式）扩展到 Max 用户：一种介于「逐项授权」和「跳过所有权限」之间的新权限模式。Claude 会在你授权的范围内自主做决策，既能跑完漫长无聊的任务，又比完全放权更安全。&lt;/p&gt;
-&lt;p&gt;为了防止这个「太能思考」的 AI 把账户余额刷爆，API 端还推出了「任务预算」（Task Budgets）功能公测版，让开发者可以显式规划 Claude 在长任务中的 Token 支出优先级。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1662609" src="https://s3.ifanr.com/wp-content/uploads/2026/04/2223-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/2223-1.png!720 1276w, https://s3.ifanr.com/wp-content/uploads/2026/04/2223-1-360x200.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/2223-1-768x427.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/2223-1-1024x570.png 1024w" sizes="(max-width: 1276px) 100vw, 1276px"&gt;&lt;/p&gt;
-&lt;p&gt;当然，4.7 并不是 Anthropic 手里最强的牌。&lt;/p&gt;
-&lt;p&gt;那个更强的 Claude Mythos Preview，本月刚以「Project Glasswing」的名义，小范围开放给了一批企业用于网络安全研究。Mythos 没有公开发布，原因则是因为它的网络攻防能力太强，Anthropic 觉得还没想清楚怎么安全地推给所有人。&lt;/p&gt;
-&lt;p&gt;4.7 本身也做了主动取舍，训练阶段就压低了网络攻防能力，内置自动拦截机制，碰到高风险请求直接挡掉。有合规需求的安全研究人员，可以通过官方渠道单独申请。&lt;/p&gt;
-&lt;p&gt;不急着把最强的牌打出去，和不停地往桌上加新牌，背后是同一套逻辑。实际上，Anthropic 真正的护城河，是交付节奏本身。&lt;/p&gt;
-&lt;p&gt;在今年 2 月 1 日至 3 月 24 日，短短 52 天里，Anthropic 一共更新了 74 款产品，平均不到两天一个。Cowork、插件……这些动作扎扎实实地击中了职场办公的痛点。&lt;/p&gt;
-&lt;p&gt;如今的 Claude 生态，早就超越了单纯的「聊天机器人」。对于那些渴望将 AI 深度嵌入实际工作流的团队而言，这种稳定、高频且可预期的更新节奏，才是最让人感到踏实的定心丸。&lt;/p&gt;
-&lt;p&gt;今天发布的 Claude 4.7，是这条链条上最新的一块压舱石。而那个 Mythos Preview，迟早也会来。到那时候，我们现在觉得已经很能打的 4.7，可能只是个开端。&lt;/p&gt;
-
-  &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Thu, 16 Apr 2026 18:36:23 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTFAwM3lJV2pseUdSX1VHSER3V2Q5UjlXX2N2V2E4RmxSdUh0REt5ZW5YTFQ5ZjJ2ZUFTOHFvRnExb3FjOFU</guid></item></channel></rss>
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 16 Apr 2026 20:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxPTWM3QTRGQ0JrblIxZWFIV0dPTThCQWhEMEZFM0VrUG5VOHlxSVRSUV9mN2cydjFhaHhvMW8welY0alltVHVtM0Qwb1dKTFI3N0xuMWlreHI2Yy1vQ3QxcjByQlF0RTU0eEhXUHFvTzhjRlZvSzd6X0FLb29iMXpyWGxKd0RaQ3c</guid></item></channel></rss>
