@@ -1,5 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>核显性能匹敌RTX 5070！联发科取消Computex演讲：重点转向N1/N1X芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117833.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Altman最新万字长谈：很多人都用错AI了，算力不是成本，而是利润中心！ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3770691</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 23 Apr 2026 07:53:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE4tclNLak1NMjFwalVYTHdFN1lIdjdEd0xYeHFTck03eG9BRnUtSzZ6Q3l1N1dJSnctOVd0V2xyTEtMTVBRd1pCYWFfdlFxSDNPUklR</guid></item><item><title>谷歌推出第八代TPU：最高提升2.8倍 训练推理首次拆分 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117862.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，谷歌云2026 Next大会召开，谷歌正式发布了第八代张量处理器（TPU）。&lt;span&gt;&lt;strong&gt;这是谷歌史上首次将AI训练与推理任务拆分至两款独立芯片——专为模型训练设计的TPU 8t与专为推理优化的TPU 8i，标志着其AI硬件战略的重大调整。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这一战略转变的根本原因在于AI计算负载的日益分化。谷歌AI与基础设施高级副总裁兼首席技术官Amin Vahdat在官方博客中指出：“随着AI智能体的兴起，我们确信业界将受益于针对训练和推理需求分别进行专门优化的芯片。”&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/7c63df6186bc40e2aefd75e75aace0cf.png" target="_blank"&gt;&lt;img alt="谷歌推出第八代TPU：最高提升2.8倍 训练推理首次拆分" h="365" src="//img1.mydrivers.com/img/20260423/s_7c63df6186bc40e2aefd75e75aace0cf.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;具体而言，&lt;strong&gt;训练任务追求极致的吞吐量与规模扩展能力，需要芯片具备最高的计算密度和内存带宽，以在数周甚至数月内处理万亿级参数。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;而推理任务则对延迟和并发更为敏感——当数百万个AI智能体同时运行时，响应速度至关重要，而对峰值算力的要求相对较低。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TPU 8t由谷歌与博通共同设计，是谷歌为超大规模AI模型训练打造的旗舰芯片。&lt;/strong&gt;单个超级计算节点最多可集成9600块TPU 8t芯片，配备2 PB高带宽内存，每Pod计算性能达121 exaflops（FP4精度），较上一代Ironwood提升约3倍，同等价格下性能提升2.8倍。通过JAX与Pathways框架，可将分布式训练扩展至单一集群超过100万块芯片。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/9e54a4a01e6b404bac33e3c70bad6680.png" target="_blank"&gt;&lt;img alt="谷歌推出第八代TPU：最高提升2.8倍 训练推理首次拆分" h="348" src="//img1.mydrivers.com/img/20260423/s_9e54a4a01e6b404bac33e3c70bad6680.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TPU 8i首次由谷歌与联发科合作设计，专注于AI推理场景，旨在消除“等待室效应”&lt;/strong&gt;——即用户请求被有意排队或延迟以实现硬件利用率最大化的情况。单个Pod可扩展至1152块芯片，提供11.6 exaflops FP8计算性能，较Ironwood同等价格下性能提升80%，每瓦性能较上一代提升117%。&lt;/p&gt;
+&lt;p&gt;两款第八代TPU芯片均搭载了谷歌自研的Arm架构Axion CPU作为主控，彻底解决数据预处理延迟导致的主机算力瓶颈。芯片采用台积电2nm制程工艺制造，目标在2027年底量产，并由谷歌第四代液冷技术支持散热。&lt;/p&gt;
+&lt;p&gt;在软件生态方面，第八代TPU支持JAX、PyTorch、Keras及vLLM等主流框架，原生PyTorch支持现已进入预览阶段，用户可直接迁移模型而无需修改代码。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/0af101c45aa54df385f29d26134d17d3.png" target="_blank"&gt;&lt;img alt="谷歌推出第八代TPU：最高提升2.8倍 训练推理首次拆分" h="347" src="//img1.mydrivers.com/img/20260423/s_0af101c45aa54df385f29d26134d17d3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;除了硬件，谷歌还发布了Gemini Enterprise Agent Platform及一系列AI代理工具。新增的Memory Bank和Memory Profile功能，可以帮助AI代理记住与用户的过往互动；Agent Simulation则能让开发者在工具发布前测试其运行情况。谷歌的核心目标是帮助企业实现任务自动化，让AI代理真正成为企业的“数字员工”。&lt;/p&gt;
+&lt;p&gt;AI代理是当前AI应用的重要方向。与传统的聊天机器人不同，AI代理可以自主完成复杂任务，比如预订行程、管理日程、处理邮件等。谷歌的这一系列工具将大大降低企业部署AI代理的门槛。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 06:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9yN3VWcmZsNUdMM19SbEtjODBrWU9peWtPeF9TVnljMW1WTlA1UlEwWFNkVFJ0a0JIc3d5RHF3R183NUsyM2VzWlQ2alg3aUkzemVNa2xudjE</guid></item><item><title>台积电一句不买 光刻机巨头ASML股价暴跌：下代EUV得靠Intel买单 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117855.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，在日前的北美技术论坛上，台积电又发布了A13、A12两代工艺，都是在2029年问世，属于A14节点的增强版。&lt;/p&gt;
+&lt;p&gt;更重要的是，台积电这次还正式对下一代EUV光刻机的愿景做了回应，&lt;span&gt;&lt;strong&gt;CEO魏哲家表示不会购买High NA EUV光刻机。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这一句话让唯一能生产EUV光刻机的ASML公司股价暴跌5.5个点，&lt;/strong&gt;该公司市值超过4600亿美元，一年来股价翻倍，今年以来也涨了30%多。&lt;/p&gt;
+&lt;p&gt;台积电不买的直接原因是太贵，High NA EUV光刻机的售价达到了3.5亿欧元，差不多就是4亿美元，比当前的EUV光刻机价格贵了一倍左右。&lt;/p&gt;
+&lt;p&gt;CEO张忠谋的评价是High NA EUV光刻机非常非常贵（very, very expensive）。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="台积电一句不买 光刻机巨头ASML股价暴跌：下代EUV得靠Intel买单" h="293" src="//img1.mydrivers.com/img/20260423/ea5fa1b8-b209-4e04-a118-49df53de6c92.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;不过细究起来，台积电不买这种光刻机的说法也值得推敲，该公司每年资本开支500亿美元，今年可能达到560亿美元，即便High NA EUV光刻机贵了2亿美元，一条生产线也不会高多少。&lt;/p&gt;
+&lt;p&gt;这更像是商业考量，&lt;strong&gt;因为台积电现在把长期的毛利率设定在了56%以上&lt;/strong&gt;，要知道以前台积电的目标也就50%左右，别小看这几个点的差距，很快就会是每年50-100亿美元的利润差别了。&lt;/p&gt;
+&lt;p&gt;结合台积电推出A13、A12工艺就更能看懂他们的意图了，本来A14工艺之后是A10工艺，结果现在又搞出了2个过度工艺，而且提升不会多明显，以致于台积电连明确的性能、功耗变化都不提，只说A13比A14面积能小6%左右。&lt;/p&gt;
+&lt;p&gt;High NA EUV光刻机的NA值是0.55，比当前的EUV光刻机的NA=0.33大幅提升，有助于提高光刻分辨率，也就是直接提升工艺能力，是1.4nm节点之后必备的，但台积电现在显然不想用High NA EUV光刻机推进，选择继续用当前的EUV光刻机打磨A14工艺，撑几年再说。&lt;/p&gt;
+&lt;p&gt;ASML之前预计27到28年大量销售High NA EUV光刻机，设定2030年营收达到600亿美元，现在台积电不买账，这个目标有点难。&lt;/p&gt;
+&lt;p&gt;High NA EUV光刻机的主要客户得靠Intel了，ASML预计明年能销售10台High NA EUV光刻机，其中2台是SK海力士购买的，&lt;span&gt;&lt;strong&gt;剩下的主要是Intel，他们会把这种设备用于18A之后的14A工艺。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Intel之前在EUV光刻机进度上吃了亏，现在的选择是加码下一代High NA EUV光刻机，而台积电在这方面选择了更保守的做法，两家谁对谁错现在没法判断，三四年后看谁的工艺能获得更多客户再说输赢吧。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="台积电一句不买 光刻机巨头ASML股价暴跌：下代EUV得靠Intel买单" h="370" src="//img1.mydrivers.com/img/20260423/a773f5fe-4856-4e30-996a-7e695bef3e87.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;tabbit-translation-selection data-wxt-shadow-root=""&gt;&lt;/tabbit-translation-selection&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 06:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBNWkMzNDhKV1c2Wk0yZGo4OHNiQjFqeFFnbjM3R3dmUHNPWDI3RllqZUs1QlpnVWNnZWVsRFNoV0ZyYkFBOXZ3QjN6aVBELTVNYzltRHp4NlE</guid></item><item><title>一加16屏幕边框迈入1mm时代：首发京东方极窄四等边直屏 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117854.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，一加下一代旗舰一加16预计将在今年下半年正式登场。作为主打性能的高端系列，这款新机在屏幕设计上再次挑战了物理极限。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;据爆料显示，一加16将首发定制京东方的超窄直屏，其边框宽度被极致压缩至仅有1毫米。相比前代一加15已经非常惊艳的1.15毫米边框，新机在视觉冲击力上完成了跨越式提升。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这一规格不仅刷新了行业最窄直屏纪录，更使其提前锁定了直屏爱好者心目中的年度理想机型。在目前的性能旗舰阵营中，一加16凭借极高的屏占比，在颜值上已经领先了一个身位。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/41e819c1f4d84d6a800a8fcb78088c42.jpg" target="_blank"&gt;&lt;img alt="一加16屏幕边框迈入1mm时代：首发京东方极窄四等边直屏" h="399" src="//img1.mydrivers.com/img/20260423/s_41e819c1f4d84d6a800a8fcb78088c42.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;实现如此极致窄边框的核心，在于引入了先进的LIPO封装工艺。该工艺全称为低注射压力包覆成型，其技术逻辑是利用高分子液态材料直接包覆屏幕排线区域，从而彻底取消了传统的缓冲保护区。&lt;/p&gt;
+&lt;p&gt;这种全新的封装方式不仅让正面视觉达到了前所未有的沉浸感，还赋予了屏幕边框更强的保护性能和生产稳定性。这意味着手机在追求美感的同时，并不会牺牲耐用性。&lt;/p&gt;
+&lt;p&gt;除了极窄边框，一加16的这块屏幕在性能参数上也堪称全能。传闻其可能支持高达240Hz的超高刷新率，配合1.5K的高分辨率，在正面观感和操控手感上都会给市场带来不小的震撼。&lt;/p&gt;
+&lt;p&gt;在色彩表现方面，这块6.78英寸的屏幕有望支持专业的BT.2020色域。这意味着它不仅能呈现细腻的图像细节，更能还原出极为真实的色彩层次，满足专业用户对画质的挑剔需求。&lt;/p&gt;
+&lt;p&gt;此外，为了进一步优化交互体验，一加还为其配备了独家定制的触控IC。从极致的边框视觉、精准的色彩还原到瞬时的触控响应，一加16的屏幕体验可以说实现了全方位的大满贯。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/44b388ac99254071a8ea78d4f09a74a5.jpg" target="_blank"&gt;&lt;img alt="一加16屏幕边框迈入1mm时代：首发京东方极窄四等边直屏" h="280" src="//img1.mydrivers.com/img/20260423/s_44b388ac99254071a8ea78d4f09a74a5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 06:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5KaEtsUTVDRUNDZi1HbnNoUmZOUi1FelYtYlg2M3B1STlzY2NHNXpwWEhkZzdUNmhQWEVzeVpXd001czlwSFl1N2s4UGRDLWhRd0hoWVNhUHI</guid></item><item><title>内存涨疯了 SK海力士Q1利润暴涨5倍：比NVIDIA显卡都赚钱 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117850.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;tabbit-translation-selection data-wxt-shadow-root=""&gt;&lt;/tabbit-translation-selection&gt;&lt;/p&gt;
+&lt;p&gt;快科技4月23日消息，最近一年内存、闪存价格坐火箭一般涨价，存储芯片厂商的业绩直接爆发，三星之前Q1季度利润大涨700%多，现在SK海力士也没差多少，Q1利润暴涨500%多，利润率比NVIDIA显卡还高。&lt;/p&gt;
+&lt;p&gt;根据SK海力士公布的数据，Q1季度营收达52.58万亿韩元，环比增长60%，同比增幅高达198%。&lt;/p&gt;
+&lt;p&gt;营业利润为37.61万亿韩元，环比暴涨96%，同比激增405%，对应营业利润率72%，创下单季历史最高水平。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;净利润为40.35万亿韩元，同比大涨498%，而净利润率直接来到了77%，&lt;/strong&gt;&lt;/span&gt;这里面主要是有10万亿的投资利润，因为多年前参与收购了日本铠侠公司的股份。&lt;/p&gt;
+&lt;p&gt;存储芯片公司的净利润率达到了77%，这样的赚钱能力也没谁了，之前大家认为NVIDIA的显卡利润高，现在直接被三星、SK海力士比下去了。&lt;/p&gt;
+&lt;p&gt;推动SK海力士营收利润大涨的原因也很简单，&lt;strong&gt;Q1季度中DRAM内存芯片环比出货量持平，但ASP平均价格大涨60%，NAND闪存环比出货量甚至下降了10%，但ASP均价大涨70%，&lt;/strong&gt;直接带动利润起飞。&lt;/p&gt;
+&lt;p&gt;从三星及SK海力士的财报来看，Q1季度内存或者闪存芯片出货量环比也涨不动了，涨也就是个位数百分比，甚至还有下滑的，这说明一个趋势——存储芯片要么产能达峰了，要么出货量到头了，毕竟PC、手机市场已经开始暴跌，现在都指望着AI市场出货呢。&lt;/p&gt;
+&lt;p&gt;目前三星及SK海力士，再加上美国的美光，主要的存储芯片巨头很默契地都选择了不会大规模扩产，让利润飞奔的策略，毕竟现在一个季度就能赚过去一年甚至两年的利润，一旦扩产就等于公开让内存闪存价格暴跌。&lt;/p&gt;
+&lt;p&gt;目前唯一在大规模扩产的就是国内的两长了，按照他们的规划今年到明年产能应该会有1-2倍的提升，&lt;span&gt;&lt;strong&gt;目前估计占全球产能也就是在10-15%（受限于良率，实际产能应该会低一些），过两年产能爆发后应该能占全球1/3的产能，&lt;/strong&gt;&lt;/span&gt;到时候价格就不是三星、SK海力士、美光三家说了算的。&lt;/p&gt;
+&lt;p&gt;中芯国际CEO赵海军此前在Q1财报会上就给出过预警，预计Q3季度会有大量国产存储芯片上市，大家可以耐心等等。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/a0a6c9dc7e65481ebe68875341609d52.jpg" target="_blank"&gt;&lt;img alt="内存涨疯了 SK海力士Q1利润暴涨5倍：比NVIDIA显卡都赚钱" h="310" src="//img1.mydrivers.com/img/20260423/s_a0a6c9dc7e65481ebe68875341609d52.jpg" w="520"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 05:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1ZdUozTXVZRl9BdnR1SFdfZHZNX044ZEFxQzhTQWhJSWtPTE9vZFE4Uzl1VFhvUzlOc1I5VEtPSVlMeXF6NndBR1VWeFdlX1dpRmQxaFlaQkc</guid></item><item><title>在 ChatGPT 中推出工作空间智能体 - OpenAI</title><link>https://openai.com/zh-Hans-CN/index/introducing-workspace-agents-in-chatgpt/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>OpenAI</author><pubDate>Thu, 23 Apr 2026 05:53:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiggFBVV95cUxNanBLUjh1N3k2QW5vTXlqZ29tcWtvd2xBTkRsNWNnNi1jdlFQSlU3NktJTHZTc0RNbWY5Y2RJWl9xZjFIRnh4b1ZQLW5RQUdSY2R5Z0ZkbVQwRVBUVmVYRHE1Rk1LMXkwcEw4QXVMdUE1VkZNSTRqQ2V0dEFMWmwtT1R3</guid></item><item><title>巴基斯坦载荷专家成中国空间站首名外籍航天员 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260423-8940229</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="my-[16px] text-[14px]"&gt;&lt;div class="relative flex flex-col "&gt;&lt;p class="mx-auto bg-[#fff] pt-[16px] text-center text-secondary"&gt;中国神舟二十一乘组航天员上星期五（4月17日）完成第三次出舱活动。经过约五个半小时的出舱活动，中国神舟二十一号乘组航天员张陆、武飞、张洪章密切协同，在空间站机械臂和地面科研人员的配合支持下，完成空间碎片防护装置安装、舱外设备设施巡检等任务。 （中新社）&lt;/p&gt;&lt;button class=" absolute right-[8px] top-[8px] max-h-max cursor-pointer"&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;中国载人航天工程首批外籍航天员选拔工作已结束，两名巴基斯坦候选对象入选，其中一人将以载荷专家身份参加飞行任务，成为首个进入中国空间站的外籍航天员。&lt;/p&gt;&lt;p&gt;据中国载人航天工程网星期三（4月22日）发布的消息，中国载人航天工程首批外籍航天员选拔工作于今年4月上旬结束，两名巴基斯坦籍候选对象穆罕默德·齐尚·阿里（Muhammad Zeeshan Ali）和胡拉姆·达乌德（Khurram Daud）最终入选。&lt;/p&gt;&lt;p&gt;他们近日将作为预备航天员赴华参加训练，在完成各项训练并通过考核后，其中一人将以载荷专家身份参加飞行任务，成为首位进入中国空间站的外籍航天员。&lt;/p&gt;&lt;p&gt;2025年2月，中巴在伊斯兰堡签署《关于选拔、训练巴基斯坦航天员并参与中国空间站飞行任务的合作协议》，随即正式启动巴基斯坦航天员选拔工作。经过初选、复选、定选三个阶段的严格筛选和评定，最终选拔出两名巴基斯坦预备航天员。&lt;/p&gt;&lt;p&gt;根据计划，中巴将用一年左右时间完成选拔，巴基斯坦航天员将在中国接受全方位的系统训练。这是中国政府首次为外国选拔训练航天员。&lt;/p&gt;
+    
+  &lt;p&gt;这次为巴方选拔训练航天员，是中国空间站国际合作的标志性成果，也是中巴全天候战略合作伙伴关系在航天领域落地落实的又一范例，彰显了中国政府愿与国际社会分享航天发展成果的开放态度。&lt;/p&gt;&lt;p&gt;根据中国空间站的飞行任务规划安排，未来几年内将择机安排巴基斯坦航天员与中国航天员一道，进入中国空间站执行短期飞行任务。这也将是中国空间站首次有外籍航天员造访。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Thu, 23 Apr 2026 05:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9Hd1AwYVJxelh1VDJOYnVmSzdCR3RCRjduTlRPLU5PNUJMQ0laN0xUemFrN3BWOU02eDFEMFMzOFlmT1N3QUVxcWhiOXBTckRIc0xrLXBDRldKNDFIV2xvSUQ5bWRUdTVtVWc</guid></item><item><title>以后的年轻人，可能不需要尊重电脑了 - 风闻</title><link>https://user.guancha.cn/main/content?id=1639051</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+							&lt;p&gt;当年被鼠标干掉的黑窗口，可能要复活了。&lt;/p&gt;&lt;p&gt;估计很多差友就算天天和电脑打交道，也从来没主动打开过这个玩意儿。对它的全部理解，可能就是电影里黑客对着满屏滚动的绿色字符，敲了一串莫名其妙的代码，赶在惊险的最后一秒阻止核弹爆炸……&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082834101.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这个电脑系统最原始的形态，在咱们普通用户这四个字就能形容：人见人嫌。&lt;/p&gt;&lt;p&gt;它没有按钮，没有菜单，哪怕你平时用着各种炫酷的APP溜得飞起，在它的面前，也总能体会到强烈的文盲感。&lt;/p&gt;&lt;p&gt;它就是CLI（Command Line Interface），命令行界面。在这里，你想要让电脑干嘛，全得靠复杂专业的文字指令。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;但大伙儿可能没注意到，借着&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt;的东风，&lt;/strong&gt;&lt;strong&gt;CLI&lt;/strong&gt;&lt;strong&gt;这个曾经只属于少数人的硬核工具，正在用人话改写，杀回普通人的世界。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;说到CLI，就不得不提大伙儿每天都要用的GUI。电脑屏幕上，五颜六色的软件图标、能随意拖拽的窗口、每一个不假思索的双击打开操作，共同构成了我们习以为常的图形化世界。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082834432.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;可以说，过去几十年，多亏软件开发者们费尽心思，给CLI套上好看的GUI外壳，才让电脑顺利走进了千家万户。&lt;/p&gt;&lt;p&gt;毕竟人类是纯纯的视觉动物，点点鼠标，所见即所得，电脑操作一下子变得像本能一样简单，使用门槛这就被打下来了。&lt;/p&gt;&lt;p&gt;所以，即使是处于人类幼崽期的世超，也能无师自通，半夜偷溜到书房，爽玩电脑到凌晨三点。&lt;/p&gt;&lt;p&gt;直到有一天，爸爸把世超叫到电脑前，从那个神秘的黑色窗口里，只用一行字母，就调出了所有精确到秒的开关机时间……&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082834515.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;实际上，能和系统直接对话的&lt;/strong&gt;&lt;strong&gt;CLI&lt;/strong&gt;&lt;strong&gt;，虽然在操作难度上输给了&lt;/strong&gt;&lt;strong&gt;GUI&lt;/strong&gt;&lt;strong&gt;，但在获取权限、查系统底层信息、自动化批量操作等等任务上，比GUI效率高得不是一点半点。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;比如你想找个IP配置，用Win 11系统，得按设置-&amp;gt;网络和Internet-&amp;gt;高级网络设置-&amp;gt;查看其它属性，层层操作。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082831944.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而对CLI来说，打开cmd，直接输 ipconfig，三秒就完事了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082831477.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;唯一的问题是，CLI的指令太复杂，学习门槛高，大部分人根本记不住。&lt;/p&gt;&lt;p&gt;比如，咱要是想用CLI解压一个文件，需要输入tar-zxvf xxx.tar.gz。&lt;/p&gt;&lt;p&gt;zxvf，直到今天，即使是老程序员，也不一定知道这四个字母是啥意思。问就是忘了，祖宗传下来的规矩，都是这么敲的。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;但现在，时代变了。以前&lt;/strong&gt;&lt;strong&gt;CLI&lt;/strong&gt;&lt;strong&gt;火不起来，是因为人太菜，那如果以后用电脑干活的是&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt;呢？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;从去年开始，谷歌、Anthropic等等AI巨头，就在不断完善自己的CLI接口。而最近，国内的钉钉、飞书、企业微信办公三巨头，也纷纷宣布，要把最底层的接口向AI Agent敞开大门。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082831941.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;那软件的CLI是啥样的呢？咱举个简单的例子，比如你想发一条消息，要经过找群-&amp;gt;输入内容-&amp;gt;点击发送，这样一条完整的流程对吧。&lt;/p&gt;&lt;p&gt;AI不管你这个那个，只要你和它说“往群里发一条下班消息”，AI就能直接通过一行CLI命令和APP对话完成任务：send_message--group=编辑部--text="马上下班"。&lt;/p&gt;&lt;p&gt;说实话，搞CLI化是很需要勇气的。这事儿细说起来可相当麻烦，要面对以前最不想碰的屎山代码，把结构混乱的各种函数接口都梳理一遍，再呈给AI传阅。&lt;/p&gt;&lt;p&gt;可OpenClaw这一波Agent风潮过去，大伙儿发现，以后用电脑的，不一定是人了……&lt;/p&gt;&lt;p&gt;根据美国网络安全公司Human Security今年发布的《人工智能流量与网络威胁基准报告》显示，2025年，智能体人工智能流量同比增长了7851% ，AI网络流量的增长速度，是人类流量的8倍。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082831237.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而对AI来说，和系统交互，CLI才是母语。按钮、窗口、鼠标这些东西，本质上是把CLI的复杂操作，翻译成人类能理解的视觉语言。&lt;/p&gt;&lt;p&gt;但AI根本不需要翻译，花里胡哨的GUI，只会影响它们出刀的速度。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;所以，如果让&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt;干活办公是未来，那&lt;/strong&gt;&lt;strong&gt;CLI&lt;/strong&gt;&lt;strong&gt;的复兴可能是大势所趋。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082831124.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;只不过，这回大伙儿不用再学那些天书一样的指令集。当AI成了人类和CLI之间的媒介，我们人类和电脑的交互方式，也要迈向下一个世代了。&lt;/p&gt;&lt;p&gt;说真的，世超还是挺期待，软件形态被全面改写那天的。现在的APP为了多带几个功能，菜单栏跟迷宫差不多。每次更新没用的玩意儿加了一堆，常用功能反而找不着。&lt;/p&gt;&lt;p&gt;以后，电脑屏幕上可能就一个聊天框，我给AI下任务，AI干活，众生平等。乱七八糟的东西，和AI解释去吧。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082832491.gif?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;而当我们再回头看看，科技的演进，也成了一个奇妙的轮回。&lt;/p&gt;&lt;p&gt;几十年前，初代电脑极客们，面对着一个黑底白字的界面，和一闪一闪的光标，用晦涩的代码探索世界。&lt;/p&gt;&lt;p&gt;几十年后，在越来越复杂的界面兜兜转转，我们可能又有机会回到一个输入框，和一个光标的时代。&lt;/p&gt;&lt;p&gt;也许未来有一天，看着自家顶着黑眼圈的人类幼崽，当了爹的世超，也会在输入框里打下一行字：&lt;/p&gt;&lt;p&gt;“帮我查一下，昨晚这台电脑的开机时间。”&lt;/p&gt;&lt;p&gt;图片、资料来源：&lt;/p&gt;&lt;p&gt;Github、Human Security、Gemini&lt;i&gt;&lt;/i&gt; 官网&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/04/23/20260423082834311.png?imageView2/2/w/500/format/png" alt="500"&gt;&lt;/p&gt;													&lt;/div&gt;
+						
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Thu, 23 Apr 2026 05:48:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE4wMWx6MFdiVHJwQnl6Y3dlcWUyMFNRY3BHNGhFZWNuckNiNk9oeGc5SjR2cVp3Z0JXS0ZORmtMSWl3cmZfMnNyLUt2aXdQdEV0QmdUTE9vOV9IY00</guid></item><item><title>苹果CEO库克：苹果地图发布是首个重大错误 产品存在功能缺陷 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117842.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;苹果CEO库克：苹果地图发布是首个重大错误 产品存在功能缺陷&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-23 13:13:42  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1117842-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月13日消息，关于苹果公司最高层人事变动的消息引发了科技圈的巨大震动。据悉，现任CEO蒂姆·库克即将在今年9月1日正式卸任，为他在苹果的领导时代画上句号。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在史蒂夫·乔布斯剧院举行的一场全员大会上，库克罕见地回顾了自己任期内的得与失。他公开承认了苹果在他带领下犯下的一个重大错误，那就是2012年苹果地图的仓促发布。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;库克在总结任期表现时坦言，将当年的地图发布事件称为自己职业生涯中的首个重大错误。他承认当时团队严重误判了产品的成熟度，为了赶进度而将其仓促推向市场。&lt;/p&gt;
+&lt;p&gt;回顾那段历史，2012年发布的苹果地图几乎成了一场技术灾难。该产品不仅频繁提供错误的行车路线，地标标注也经常张冠李戴，全球多个地区的地图数据根本无法正常使用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这种极差的用户体验与当时已经非常成熟的谷歌地图形成了鲜明对比。库克承认，这种功能缺陷不仅透支了用户的信任，也让苹果在移动互联网基础服务的竞争中一度陷入极其被动的局面。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由于这次严重的决策失误，苹果内部也发生了剧烈的人事震荡。当时负责软件业务的核心高管斯科特·福斯托尔因为此事最终被解雇。这成为了库克执掌苹果后进行的首次重大人事变动。&lt;/p&gt;
+&lt;p&gt;这次高层调整标志着苹果管理风格的深刻转变。库克在卸任前的这次公开复盘，不仅是对过往决策的自我审视，更是对苹果坚持极致产品主义这一初心的再次强调。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/8f5fdd1724fb4c159a2637771ca51a71.jpg" target="_blank"&gt;&lt;img alt="苹果CEO库克：苹果地图发布是首个重大错误 产品存在功能缺陷" h="300" src="//img1.mydrivers.com/img/20260423/s_8f5fdd1724fb4c159a2637771ca51a71.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 05:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5NWHNpMkktZXM0YmRvSGlLc3hCYnJyRjdLME9WdFoyN1BVYzRxZWFQcHRzSmo2VWt1T1BSOHhKem5EMzhUaU5uaGhkYXh1MU5hUGcwYUYxckk</guid></item><item><title>中国家用电器研究院：将持续完善标准体系建设 开展相关空调产品铝实证实验工作 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117839.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，针对近期空调行业关于铝应用技术的热议，中国家用电器研究院正式对外发声。该机构表示将持续完善标准体系建设，并针对相关空调产品开展深入的实证实验工作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;近期，空调行业内的铝应用技术引发了社会的广泛关注。为了澄清事实并引导行业理性发展，中国制冷学会旗下的空调铝强化应用研究工作组作出说明，强调将全力保障消费者的合法权益。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该工作组成立于2024年7月，是一个由空调整机、核心零部件以及铝材料加工骨干企业共同组建的跨行业技术组织。目前，工作组的秘书处设在中国家用电器研究院，已有21家成员单位加入。&lt;/p&gt;
+&lt;p&gt;自成立以来，工作组始终紧跟国家战略部署，凝聚全产业链的力量，稳步推进铝强化应用技术的研发与落地。工作组积极鼓励成员单位针对换热器性能进行工艺升级，为行业健康发展打下基础。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;依据工业和信息化部等部门制定的铝产业高质量发展实施方案，工作组已组织了6次行业技术交流会。通过核心技术攻关，搭建起了整机厂、铝加工厂与零部件企业之间的深度合作平台。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在这些研讨会中，专家们针对铝材料在空调领域的性能优化进行了深入探讨。这一系列的标准化工作，不仅推动了产业链上下游的协同创新，也为技术的规模化应用提供了数据支撑。&lt;/p&gt;
+&lt;p&gt;未来，工作组将继续完善相关的标准体系，并计划编制发布第二版中国空调行业铝应用白皮书。这本白皮书将系统总结行业最新的研究成果，为企业的技术路线选择提供科学参考。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更为关键的是，工作组将开展一系列空调产品的实证实验。通过真实的测试数据，验证铝应用技术在不同环境下的可靠性与能效表现，确保产品在绿色低碳的同时，不牺牲用户的核心使用体验。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过这些举措，中国家用电器研究院希望携手全行业，共同推动中国空调产业向高质量方向发展。在双碳背景下，材料的创新与应用将成为推动产业升级、实现绿色制造的重要抓手。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20251226/d95f0c88-a241-4099-bf70-f90a5c2f73c4.jpg" target="_blank"&gt;&lt;img alt="格力市场总监朱磊晒工厂图：铜管堆成山！坚决不用铝代铜" h="399" src="//img1.mydrivers.com/img/20251226/Sd95f0c88-a241-4099-bf70-f90a5c2f73c4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 04:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1ibGF4NlVUMDk5OFNyTHNCa1V0UGRIczlGYmZIdGZlYjJEdHdvVTd5b1BWSjR2ZDVObTJ3bTZ4dDdmR1F1eUduSVVvZ3ZPaURPZXY5MWhSU0E</guid></item><item><title>特斯拉首座大规模人形机器人的工厂来了：年产能100万台 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117837.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;特斯拉首座大规模人形机器人的工厂来了：年产能100万台&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-23 12:47:28  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1117837-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，特斯拉在最新一季度业务进展中公布重磅计划，第二季度将启动首座大规模人形机器人工厂的筹备工作，正式拉开机器人量产大幕。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;这座工厂将设在加州弗里蒙特，替换原有Model S和Model X的生产线，第一代产线设计年产能达到100万台。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;特斯拉还在&lt;strong&gt;得州超级工厂同步准备第二代产线，长期目标年产能高达1000万台&lt;/strong&gt;，为后续大规模落地做好铺垫。&lt;/p&gt;
+&lt;p&gt;为支撑机器人与自动驾驶业务，特斯拉全力加码AI算力，Cortex 2算力集群已上线运行，同时推进Dojo 3自研芯片开发，降低训练成本。&lt;/p&gt;
+&lt;p&gt;公司还与SpaceX合作，打造大型芯片工厂，保障AI推理芯片稳定供应。&lt;/p&gt;
+&lt;p&gt;在2025年特斯拉年度股东大会上，马斯克表示，人形机器人将成为特斯拉有史以来规模最大的产品，其潜在市场规模有望达到数十亿台。&lt;/p&gt;
+&lt;p&gt;早在今年初，马斯克就宣布将重心放在了特斯拉的人形机器人Optimus上，他宣称，这一项目将使特斯拉转型为一家估值高达25万亿美元的机器人公司。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="特斯拉首座大规模人形机器人的工厂来了：年产能100万台" h="391" src="//img1.mydrivers.com/img/20260423/be451016-d1e4-4168-ab82-dd5cf990345e.png" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 04:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBIdUREbDFYREU3bFpnS2RVb3JtUjVsSnd3al9vdXFneFM4VVg2MWVOaTRBWHhrMmRpS1RuME1ma0Q1ZS1odnlCSkNqVTh2T2hnUko5ZVRNRFY</guid></item><item><title>核显性能匹敌RTX 5070！联发科取消Computex演讲：重点转向N1/N1X芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117833.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月23日消息，据Videocardz报道，联发科突然取消了原定于在Computex 2026上的主题演讲，未给出具体原因。&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;这一决定距离展会已非常接近，分析猜测联发科会将重点转向和NVIDIA合作开发的N1和N1X系列笔记本芯片。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -17,7 +258,111 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 04:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1UWlJBbjFHZ0s3RVdSaFVTcV96WURWbDlfdDM0WVRTX0prYUR4Sm5yUmFpLVBxcDRWR0QtaTZwLTVQSjV3ZTh6TDNER21IdHFqdzFPR3FObGI</guid></item><item><title>你家上榜没！全国游客满意十佳城市出炉：人工智能加持下服务效率激增 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117818.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 04:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1UWlJBbjFHZ0s3RVdSaFVTcV96WURWbDlfdDM0WVRTX0prYUR4Sm5yUmFpLVBxcDRWR0QtaTZwLTVQSjV3ZTh6TDNER21IdHFqdzFPR3FObGI</guid></item><item><title>历史性时刻！Anthropic估值暴涨破万亿美元，首次超越OpenAI - 36氪</title><link>https://m.36kr.com/p/3778903190639617</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,514" src="https://img.36krcdn.com/hsossms/20260423/v2_a9c12e876ba24c8f9b5aa9390243ec0f@5667365_oswg753515oswg1080oswg514_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;过去几周，硅谷私募二级市场里最热的公司变成了 Anthropic。&lt;/p&gt;
+  &lt;p&gt;在 Forge Global 等未上市股权交易平台上，Anthropic 的估值已逼近 1 万亿美元，部分卖方给出的报价更高，达到 1.05 万亿至 1.15 万亿美元。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,527" src="https://img.36krcdn.com/hsossms/20260423/v2_c9286bbd3acb4d988853c0e77ed2b657@5667365_oswg156657oswg1080oswg527_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;https://app.ventuals.com/trade/anthropic&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="928,752" src="https://img.36krcdn.com/hsossms/20260423/v2_d805ea3c0c644c889e58f0ce862ab955@5667365_oswg259771oswg928oswg752_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;https://x.com/rahulxkm/status/2046739841606623568&lt;/p&gt;
+  &lt;p&gt;相比之下，OpenAI 在同类平台上的估值约为 8800 亿美元，略高于其今年 3 月 8520 亿美元的融资估值，但交易热度已经落后于 Anthropic。&lt;/p&gt;
+  &lt;p&gt;这组价格变化先改写了市场情绪。&lt;/p&gt;
+  &lt;p&gt;过去两年，OpenAI 始终处在 AI 圈的最核心位置，拥有最大的用户心智、最完整的产品外溢效应和最强的品牌辨识度。&lt;/p&gt;
+  &lt;p&gt;Anthropic 长期扮演高质量追赶者的角色，模型能力突出，组织风格克制，商业动作相对收敛。&lt;/p&gt;
+  &lt;p&gt;二级市场这一次先给出了新的排序，资金开始把 Anthropic 看成更稀缺、上升斜率更陡的筹码。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;二级市场先交易稀缺&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;再交易共识&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;未上市公司的价格更新，主要依靠融资轮和二级转让。&lt;/p&gt;
+  &lt;p&gt;前者频率低，后者更容易反映短期供需。Anthropic 此轮上涨，先来自供给快速收缩。&lt;/p&gt;
+  &lt;p&gt;三个月前，Anthropic 最新一轮融资估值还在 3800 亿美元左右。&lt;/p&gt;
+  &lt;p&gt;短时间内，二级市场报价已翻了不止一倍。&lt;/p&gt;
+  &lt;p&gt;对现有股东来说，这样的涨幅来得过快，持有意愿自然增强。&lt;/p&gt;
+  &lt;p&gt;多位持股人最近频繁收到收购邀约，但真正愿意出货的人很少。&lt;/p&gt;
+  &lt;p&gt;市场里流通的股份本来就有限，卖盘一缩，价格就会迅速上跳。&lt;/p&gt;
+  &lt;p&gt;买方的变化更明显。&lt;/p&gt;
+  &lt;p&gt;成长基金、家族办公室和晚期机构投资者集中追逐 Anthropic，核心原因是：头部 AI 资产仍然没有真正向公开市场开放，一级份额又高度封闭，二级市场成了少数还能上车的入口。&lt;/p&gt;
+  &lt;p&gt;当一批资金同时追逐极少量筹码，价格会很快脱离常规节奏，进入由预期主导的区间。&lt;/p&gt;
+  &lt;p&gt;这一阶段里，报价已经不只对应公司当下值多少钱，也对应一个判断，未来几年里，Anthropic 有没有机会成为最少数、最有确定性的 AI 平台公司之一。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Anthropic 被重估&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;靠的是收入增长和 Claude Code&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;Anthropic 被追捧，并非只有市场情绪推动。&lt;/p&gt;
+  &lt;p&gt;更靠近交易逻辑的，是它近期拿出了两项容易被资本定价的结果，一是收入增长速度，二是 Claude Code 所代表的产品延展性。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,207" src="https://img.36krcdn.com/hsossms/20260423/v2_9ada12d10ada4e6695251841d3a59024@5667365_oswg90825oswg1080oswg207_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;收入增长决定估值的底部。&lt;/p&gt;
+  &lt;p&gt;模型能力可以在半年内被追近，稳定的商业化曲线更难复制。&lt;/p&gt;
+  &lt;p&gt;投资机构更愿意为持续增长的企业收入买单，因为这代表公司已经开始把技术优势转成可重复、可扩张的现金流预期。&lt;/p&gt;
+  &lt;p&gt;对今天的 AI 公司来说，谁先建立收入结构，谁就更容易获得更高倍数。&lt;/p&gt;
+  &lt;p&gt;Claude Code 则抬高了估值上限。&lt;/p&gt;
+  &lt;p&gt;编程是 AI 最容易兑现价值的场景之一，使用频率高，效果也更容易衡量。&lt;/p&gt;
+  &lt;p&gt;开发者愿意为效率买单，企业也愿意为稳定的工作流付费。&lt;/p&gt;
+  &lt;p&gt;只要市场相信 Anthropic 在代码生成、Agent 协作和企业级开发工具上还有持续扩张空间，它的身份就会从一家模型公司，转向一家可能占据开发入口的基础设施公司。&lt;/p&gt;
+  &lt;p&gt;资本市场愿意给后者更高想象空间。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;OpenAI 的折价&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;来自高起点之后的谨慎&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;OpenAI 在二级市场热度回落，不等于其基本面发生逆转。&lt;/p&gt;
+  &lt;p&gt;从品牌、分发和产品覆盖面看，OpenAI 仍是行业中心。&lt;/p&gt;
+  &lt;p&gt;问题主要出在估值起点过高。&lt;/p&gt;
+  &lt;p&gt;8520 亿美元的融资估值，已经将市场对其未来数年增长的乐观预期写入价格。&lt;/p&gt;
+  &lt;p&gt;在这个位置继续加价买入，投资人需要更强的确定性，收入兑现是否足够快，组织控制力是否足够稳，利润路径是否足够清晰。&lt;/p&gt;
+  &lt;p&gt;另一个原因是，OpenAI 的故事已经被市场讨论得足够充分。&lt;/p&gt;
+  &lt;p&gt;ChatGPT 的用户规模、多模态布局、企业产品线、Agent 方向和平台野心，都处于高可见状态。&lt;/p&gt;
+  &lt;p&gt;高可见度会带来认知红利，也会压缩短期惊喜空间。&lt;/p&gt;
+  &lt;p&gt;对二级市场买家来说，OpenAI 仍然是优质资产，但很难再被当作一笔尚未完成发现的交易。&lt;/p&gt;
+  &lt;p&gt;Anthropic 则处在另一种阶段。&lt;/p&gt;
+  &lt;p&gt;它的筹码更少，叙事更新更快，价格又还处在快速重估期。&lt;/p&gt;
+  &lt;p&gt;二级市场天然偏好这类资产，因为弹性更大，情绪更容易推动成交。&lt;/p&gt;
+  &lt;h2&gt;Forge 平台放大了价格 也放大了情绪&lt;/h2&gt;
+  &lt;p&gt;Forge Global 这类平台，在这轮估值上冲中扮演了放大器的角色。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,750" src="https://img.36krcdn.com/hsossms/20260423/v2_9f7f11153e2040fea7a5e99873dd2f53@5667365_oswg169078oswg1080oswg750_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;https://forgeglobal.com/anthropic_stock/&lt;/p&gt;
+  &lt;p&gt;一级市场的融资价格更新慢，且往往只在少数机构间形成。&lt;/p&gt;
+  &lt;p&gt;二级平台把零散的买卖双方聚拢到一起，让每一次询价、挂盘和成交都更容易成为新的价格锚。&lt;/p&gt;
+  &lt;p&gt;一旦某个高报价被市场广泛传播，卖方会进一步惜售，买方则担心下一个价格更高。&lt;/p&gt;
+  &lt;p&gt;供需两端的心理都会被强化。&lt;/p&gt;
+  &lt;p&gt;这也是私募二级市场最鲜明的特征，价格经常先于基本面变化。&lt;/p&gt;
+  &lt;p&gt;尤其在头部 AI 公司普遍不急于上市、一级份额又被长期资金锁定的情况下，二级市场承接了大量原本无处释放的配置需求。&lt;/p&gt;
+  &lt;p&gt;价格快速上行，既有泡沫成分，也有供给结构的现实基础。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;资本开始重排 AI 公司的估值逻辑&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;Anthropic 在二级市场超过 OpenAI，表面看是一次股权报价的反超，背后则是 AI 公司定价逻辑的迁移。&lt;/p&gt;
+  &lt;p&gt;更早的时候，市场主要比较谁的模型更强、谁的用户更多。&lt;/p&gt;
+  &lt;p&gt;到了今天，投资人越来越关心另一组问题，谁能进入高频、高付费、可验证的场景，谁能把模型接入稳定工作流，谁能控制开发者和企业入口，谁能把技术领先转成收入和平台位置。&lt;/p&gt;
+  &lt;p&gt;Anthropic 因 Claude Code 和收入增长获得更高追价，OpenAI 因估值过满和预期过于充分而被放慢追价节奏，实际上都说明了同一件事，AI 公司的价值判断，正在从模型排名，转向入口控制和商业兑现。&lt;/p&gt;
+  &lt;p&gt;二级市场只是更早把这种变化与估值对齐了。&lt;/p&gt;
+  &lt;p&gt;参考资料：&lt;/p&gt;
+  &lt;p&gt;https://www.businessinsider.com/anthropic-trillion-dollar-valuation-on-secondary-markets-2026 &lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/Nx4kLFTphg20iBMRFX7Q2A"&gt;“新智元”&lt;/a&gt;，作者：新智元，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36氪</author><pubDate>Thu, 23 Apr 2026 04:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE8yVUZMajROWmExd2VXOEJ1TDZ4dUdobWtyMGFJMTZNZDN5NEFNdHZRakpvSmhJdTBaOXh6OEpnRE1YU2Ewckg2TmplY3I4QQ</guid></item><item><title>睡一觉天塌了！预算几十块的云服务 醒来直接倒欠十几万：只因犯了致命小白错误 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117831.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，澳大利亚人工智能顾问杰西·戴维斯近日遭遇一起离谱事件：&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;他在谷歌云账户仅设置7美元（约50元人民币）的月度预算，一觉醒来却收到18392美元（约13.24万元人民币）的天价账单。&lt;/strong&gt;&lt;/span&gt;全部费用在夜间数小时内疯狂产生。&lt;/p&gt;
+&lt;p&gt;戴维斯自称熟悉谷歌AI开发平台安全规范，日常为每个项目单独配置API密钥、拆分独立计费账户、开启双重身份验证和云审计日志。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然而戴维斯发现攻击者并未盗取密钥，而是找到了他数月前发布的一项云端托管服务公开链接。&lt;/strong&gt;即便该公开链接从未对外分享、未被搜索引擎收录，依然被黑客利用并发起超过6万次请求。&lt;/p&gt;
+&lt;p&gt;而谷歌官方代理程序会自动读取容器内以明文存放的API密钥环境变量，为每一次访问请求完成授权签名。&lt;/p&gt;
+&lt;p&gt;因此在次日清晨预算预警推送时，戴维斯的信用卡已被扣除6881美元（约4.7万元人民币）；&lt;span&gt;&lt;strong&gt;与谷歌客服沟通期间，又新增约10321美元（约7.05万元人民币）扣费。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然而，谷歌云原本拥有9项可阻止此类事故的安全防护功能，但都默认为关闭状态。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更糟糕的是，谷歌在未发出任何通知的情况下自动升级了戴维斯账户的等级。账户原本为2级权限，消费限额2000美元（约1.44万元人民币）。&lt;/p&gt;
+&lt;p&gt;当异常消费突破1000美元（约7200元人民币）门槛后，系统自动提档，消费上限直接放宽至2万至10万美元（约14.4万至72万元人民币）。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;好在谷歌最终免除全部欠费，银行也将已扣款原路退回。戴维斯已预约与谷歌管理层会面，专项沟通安全漏洞问题。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;类似事件并不在少数，谷歌云社区论坛多名用户反映同类遭遇：&lt;/p&gt;
+&lt;p&gt;一名日本用户正常使用云服务，莫名被开出44000美元（约31.68万元人民币）账单，手动关停API接口后费用仍涨至128000美元（约92.16万元人民币）。&lt;/p&gt;
+&lt;p&gt;3月份另有一名用户的API密钥遭滥用，两天内被刷出82314.44美元（约59.27万元人民币）账单，而该账户日常月消费仅180美元（约1296元人民币）。&lt;/p&gt;
+&lt;p&gt;网络安全企业Truffle Security Co.就曾预警：谷歌云采用统一格式的API密钥设计，原本仅作项目识别编码。&lt;/p&gt;
+&lt;p&gt;一旦项目开通大模型接口服务，老旧通用密钥就自动升级为付费授权凭证。密钥泄露后，攻击者可随意调用付费接口刷取云服务账单。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;若后续谷歌仍不修改API权限规则并补齐安全短板，此类天价扣费事件将持续爆发。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260423/29e94493-164e-496b-a26a-7203650f6034.png" target="_blank"&gt;&lt;img alt="睡一觉天塌了！预算几十块的云服务 醒来直接倒欠十几万：只因犯了致命小白错误" h="337" src="//img1.mydrivers.com/img/20260423/S29e94493-164e-496b-a26a-7203650f6034.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：于浮&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 04:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBUWnEyZDJWN2hWUzVBMERhTjZ2bXBJSUJIZnA0b2FrcXJPZm9YUVc5TmpLWDlKT21lSEhBV3plemt0T19ySk9jU2p3Um9RQ2l4WTlzSzBIMHQ</guid></item><item><title>IBM Q1营收利润双超预期，软件增速失色，股价盘后重挫 | 财报见闻 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3770664</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 23 Apr 2026 04:07:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9kY0lLYkpwUllUTktmSHlrYjNSUnRoa2JmbTdvTklZeGYtTHhjX2c4VTN2a1VsZlVMVV9TcXR5eWFmVGFyT3hWZ1BRV3JBZnpKM2VJ</guid></item><item><title>你家上榜没！全国游客满意十佳城市出炉：人工智能加持下服务效率激增 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117818.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;你家上榜没！全国游客满意十佳城市出炉：人工智能加持下服务效率激增&lt;/p&gt;
           
@@ -80,7 +425,28 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 03:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1nRjc2NDNIWVduVmZfelV0X2dEZTdneXVfTUFITDk2OS1zQjNOQW9IdW1Hb2d5RVdfb2VESWJIUW5FUGxyMWQyY3ZnalRrQWc1Wi13RFpQWnU</guid></item><item><title>强大到“比核弹还糟糕”的AI：Mythos拉响网络安全警报 - 纽约时报中文网</title><link>https://cn.nytimes.com/technology/20260423/anthropics-mythos-ai/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;Anthropic补充称，它预计其他机构将在至少18个月内更广泛地发布具有类似网络能力的人工智能模型，留给各国组织修补必要安全漏洞的时间非常有限。&lt;/p&gt;&lt;p class="article-paragraph"&gt;周二，Anthropic表示正在调查一则未经授权用户获取Mythos某一版本的报告。&lt;/p&gt;&lt;p class="article-paragraph"&gt;Mythos引发的争夺发生在国际人工智能合作极度匮乏的时刻。各国政府在相互猜疑中注视着对方，而企业则在竞相超越对手。目前还没有类似于《核不扩散条约》的机制，没有共同的检查制度，也没有就如何处理类似Mythos的情况达成一致规则。&lt;/p&gt;&lt;p class="article-paragraph"&gt;当Anthropic宣布该模型时，许多专家赞扬了公司在限制测试对象方面的谨慎态度，但同时对缺乏国际协调来应对风险表示担忧。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;英国是美国以外&lt;/p&gt;&lt;span&gt;唯一获得访问权限的国家。其政府支持的人工智能安全研究所对Mythos进行了测试，并于上周&lt;a rel="noopener noreferrer" target="_blank" href="https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities"&gt;发布&lt;/a&gt;了一份独立评估报告，证实该模型能够执行此前任何人工智能模型都无法完成的复杂网络攻击。&lt;/span&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;“这代表了人工智能网络能力的升级，”英国人工智能与在线安全部长卡尼什卡·纳拉扬上周在社交媒体上表示，并称该国正在采取措施保护“关键国家基础设施”。&lt;/p&gt;&lt;p class="article-paragraph"&gt;其他国家获得的信息则少得多。欧盟执行机构欧洲委员会的一名官员表示，自Mythos发布以来，欧盟已与Anthropic至少会面三次。但由于双方尚未就如何向委员会提供模型达成协议，该公司尚未给予访问权限。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;figure class="article-inline-photo large"&gt;&lt;figcaption&gt;&lt;span&gt;自Mythos发布以来，欧盟执行机构欧盟委员会已与Anthropic至少会面三次。&lt;/span&gt; &lt;cite&gt;Frederick Florin/Agence France-Presse — Getty Images&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;欧洲委员会在一份声明中表示，正在“评估Mythos可能产生的影响”，并称该模型“展现了前所未有的网络能力”。&lt;/p&gt;&lt;p class="article-paragraph"&gt;德国联邦信息安全局局长克劳迪娅·普拉特纳表示，该机构尚未获得Mythos的访问权限，但她最近在旧金山与Anthropic员工会面，获得了“有意义的洞见”。她在一份声明中称，这些能力指向“网络威胁性质的范式转变”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Thu, 23 Apr 2026 03:38:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMickFVX3lxTFBIckFkVkJSSkVpRGJuWUdZZWpZeVR3d25pTVFPRXpHcTdzNmxKUWlJdHdPeGZWY0JEWThPNldFWXVjSm8zZDJqVWxrWHhZaTNVSXNpcTJxLWxZSm5lZWw5SXdXTUdkeWFGWUhwWVQ4RnRPQQ</guid></item><item><title>女子脚踹保安被猛扇耳光！知情人士：踹人前被保安故意关车门夹腿 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117808.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 03:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1nRjc2NDNIWVduVmZfelV0X2dEZTdneXVfTUFITDk2OS1zQjNOQW9IdW1Hb2d5RVdfb2VESWJIUW5FUGxyMWQyY3ZnalRrQWc1Wi13RFpQWnU</guid></item><item><title>强大到“比核弹还糟糕”的AI：Mythos拉响网络安全警报 - 纽约时报中文网</title><link>https://cn.nytimes.com/technology/20260423/anthropics-mythos-ai/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;Anthropic补充称，它预计其他机构将在至少18个月内更广泛地发布具有类似网络能力的人工智能模型，留给各国组织修补必要安全漏洞的时间非常有限。&lt;/p&gt;&lt;p class="article-paragraph"&gt;周二，Anthropic表示正在调查一则未经授权用户获取Mythos某一版本的报告。&lt;/p&gt;&lt;p class="article-paragraph"&gt;Mythos引发的争夺发生在国际人工智能合作极度匮乏的时刻。各国政府在相互猜疑中注视着对方，而企业则在竞相超越对手。目前还没有类似于《核不扩散条约》的机制，没有共同的检查制度，也没有就如何处理类似Mythos的情况达成一致规则。&lt;/p&gt;&lt;p class="article-paragraph"&gt;当Anthropic宣布该模型时，许多专家赞扬了公司在限制测试对象方面的谨慎态度，但同时对缺乏国际协调来应对风险表示担忧。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;英国是美国以外&lt;/p&gt;&lt;span&gt;唯一获得访问权限的国家。其政府支持的人工智能安全研究所对Mythos进行了测试，并于上周&lt;a rel="noopener noreferrer" target="_blank" href="https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities"&gt;发布&lt;/a&gt;了一份独立评估报告，证实该模型能够执行此前任何人工智能模型都无法完成的复杂网络攻击。&lt;/span&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;“这代表了人工智能网络能力的升级，”英国人工智能与在线安全部长卡尼什卡·纳拉扬上周在社交媒体上表示，并称该国正在采取措施保护“关键国家基础设施”。&lt;/p&gt;&lt;p class="article-paragraph"&gt;其他国家获得的信息则少得多。欧盟执行机构欧洲委员会的一名官员表示，自Mythos发布以来，欧盟已与Anthropic至少会面三次。但由于双方尚未就如何向委员会提供模型达成协议，该公司尚未给予访问权限。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;figure class="article-inline-photo large"&gt;&lt;figcaption&gt;&lt;span&gt;自Mythos发布以来，欧盟执行机构欧盟委员会已与Anthropic至少会面三次。&lt;/span&gt; &lt;cite&gt;Frederick Florin/Agence France-Presse — Getty Images&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;欧洲委员会在一份声明中表示，正在“评估Mythos可能产生的影响”，并称该模型“展现了前所未有的网络能力”。&lt;/p&gt;&lt;p class="article-paragraph"&gt;德国联邦信息安全局局长克劳迪娅·普拉特纳表示，该机构尚未获得Mythos的访问权限，但她最近在旧金山与Anthropic员工会面，获得了“有意义的洞见”。她在一份声明中称，这些能力指向“网络威胁性质的范式转变”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Thu, 23 Apr 2026 03:38:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMickFVX3lxTFBIckFkVkJSSkVpRGJuWUdZZWpZeVR3d25pTVFPRXpHcTdzNmxKUWlJdHdPeGZWY0JEWThPNldFWXVjSm8zZDJqVWxrWHhZaTNVSXNpcTJxLWxZSm5lZWw5SXdXTUdkeWFGWUhwWVQ4RnRPQQ</guid></item><item><title>国产首颗LOFIC 2亿像素手机CMOS！思特威SCC90XS发布：1/1.28英寸、低功耗 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117811.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，今日，国产CMOS图像传感器厂商思特威正式发布全新2亿像素传感器SCC90XS。&lt;/p&gt;
+&lt;p&gt;该产品搭载全新Lofic HDR 3.0技术，&lt;span&gt;&lt;strong&gt;是业内首颗支持LOFIC超高动态范围模式的2亿像素手机CMOS。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/56a85825bb1c4de9a6474e460d5b7a96.png" target="_blank"&gt;&lt;img alt="国产首颗LOFIC 2亿像素手机CMOS！思特威SCC90XS发布：1/1.28英寸、低功耗" h="259" src="//img1.mydrivers.com/img/20260423/s_56a85825bb1c4de9a6474e460d5b7a96.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在核心规格上，SCC90XS基于SmartClarity-SL Pro技术打造，采用22nm工艺，兼顾高动态范围、低噪声、全像素对焦与低功耗等多项性能优势。&lt;/p&gt;
+&lt;p&gt;具体来看，&lt;strong&gt;该传感器拥有2亿像素，单像素尺寸为0.61μm，光学尺寸1/1.28英寸，&lt;/strong&gt;并支持2倍（5000万像素）和4倍（1250万像素）传感器内变焦。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/e52ce739909a4e8298bba17c1e880a5d.png" target="_blank"&gt;&lt;img alt="国产首颗LOFIC 2亿像素手机CMOS！思特威SCC90XS发布：1/1.28英寸、低功耗" h="413" src="//img1.mydrivers.com/img/20260423/s_e52ce739909a4e8298bba17c1e880a5d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;得益于Lofic HDR 3.0技术，SCC90XS最高可实现105dB动态范围，相比同规格双帧HDR方案提升约19dB，在视频拍摄中可同时保留更多高光与暗部细节，并有效降低运动伪影。&lt;/p&gt;
+&lt;p&gt;在功耗方面，&lt;strong&gt;SCC90XS控制在约225mW，相较前代下降约22%，&lt;/strong&gt;进一步提升移动设备续航表现。&lt;/p&gt;
+&lt;p&gt;该传感器搭载AllPix ADAF与Sparse PDAF技术，支持100%全像素对焦及6%像素相位检测对焦两种模式，在对焦速度与精度之间取得平衡。&lt;/p&gt;
+&lt;p&gt;目前，SCC90XS已接受送样，预计将于2026年第三季度量产。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 03:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8wLTE5dEh2Y0JQUlctLUF0OG5KanRGSXROYTFXRUg2Y3VGbjZncU1yN1Y1ekxST05zNWMzc1p0dEFqSHY1Ym5ORzR3clpWRG9IbDFOSXFjUEQ</guid></item><item><title>女子脚踹保安被猛扇耳光！知情人士：踹人前被保安故意关车门夹腿 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117808.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;女子脚踹保安被猛扇耳光！知情人士：踹人前被保安故意关车门夹腿&lt;/p&gt;
           
@@ -289,7 +655,208 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 02:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9FMkJsUXZGMWM2enF6LXdFZjRYS2E4SWNPQlZ2QWR5bnRWdXJNMUNEenhiUm16TmZvV29aRWM3TnJWS1ZuVDFsUmdDZmNhYjE3Unhsby13aUo</guid></item><item><title>单价近28亿元！台积电高管：阿斯麦最新光刻机非常非常贵 暂不购买 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117782.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 02:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9FMkJsUXZGMWM2enF6LXdFZjRYS2E4SWNPQlZ2QWR5bnRWdXJNMUNEenhiUm16TmZvV29aRWM3TnJWS1ZuVDFsUmdDZmNhYjE3Unhsby13aUo</guid></item><item><title>特斯拉财报会实录：今年资本开支将超250亿美元 Optimus会是史上最重要产品 - 财联社</title><link>https://www.cls.cn/detail/2353097</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社4月23日讯（编辑 刘蕊）&lt;/strong&gt;美东时间周三盘后，特斯拉公布2026年第一季度财报并召开财报电话会。&lt;/p&gt;
+&lt;p&gt;在财报电话会上，特斯拉高管们透露，全球汽车需求已经回暖、公司订单积压创近两年新高；同时宣布全年资本支出将超250亿美元，全力押注AI芯片、Optimus人形机器人、全自动驾驶（FSD）与全新车型，以短期现金流承压换取长期增长空间。&lt;/p&gt;
+&lt;p&gt;特斯拉高管们强调，自动驾驶、人形机器人、自研芯片将会是特斯拉未来三大核心增长支柱。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260423/qexVN2SrS1_1000x504.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一、核心业绩速览&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;总营收223.87亿美元，同比 &lt;strong&gt;+16%&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GAAP 净利润4.77亿美元，同比 &lt;strong&gt;+17%；调整后净利润14.53亿美元 &lt;/strong&gt;，大超预期&lt;/p&gt;
+&lt;p&gt;全球汽车交付35.8万辆，欧洲多国环比 &lt;strong&gt;+150%，订单积压达两年高位 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;自由现金流14.4 亿美元，但&lt;strong&gt;2026年剩余季度预计转负&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;汽车毛利率19.2%，环比改善；储能业务毛利率&lt;strong&gt;超39.5%&lt;/strong&gt;创新高&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、财报会六大关注重点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;1. 史上最大规模投资：2026年资本支出超250亿美元&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;投向6座新工厂、AI 算力、芯片研发、Optimus 产线、储能扩产&lt;/p&gt;
+&lt;p&gt;德州超级工厂年内开建研究级芯片厂，投资约30 亿美元&lt;/p&gt;
+&lt;p&gt;与英特尔合作14A工艺，SpaceX参与规模化Terafab项目&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;2. 汽车业务：需求回暖，瓶颈在电池包&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;欧洲、亚太、美国交付全面回升，订单储备显著改善&lt;/p&gt;
+&lt;p&gt;最大制约：电池包产能，而非电芯；正加速扩产4680与 LFP产能&lt;/p&gt;
+&lt;p&gt;Cybercab 已投产、Semi 即将投产，初期爬坡平缓，年底至明年指数级放量&lt;/p&gt;
+&lt;p&gt;长期路线：未来主力为无人驾驶车型，仅全新 Roadster 保留手动驾驶&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;3. FSD 与 Robotaxi：全球审批推进&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;FSD 付费用户近130 万，以订阅为主&lt;/p&gt;
+&lt;p&gt;荷兰已获批，Q2 有望欧盟全域获批&lt;/p&gt;
+&lt;p&gt;V14.3 已支持无监督FSD；V15 年底 / 明年初发布，架构全面重构&lt;/p&gt;
+&lt;p&gt;Robotaxi 已落地奥斯汀、达拉斯、休斯顿，目标年底扩至约12个州，至今零伤亡&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;4. AI 芯片：AI5 提前流片，优先用于机器人与数据中心&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;AI5 芯片提前流片，号称 “全球性价比最高边缘 AI 推理芯片”&lt;/p&gt;
+&lt;p&gt;先用于Optimus、数据中心，汽车端暂用 AI4；规划 AI4.1 升级版明年年中投产&lt;/p&gt;
+&lt;p&gt;启动自研芯片布局，破解长期 AI 芯片供应瓶颈&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;5. Optimus 人形机器人：马斯克定义 “特斯拉史上最重要产品”&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;弗里蒙特工厂7—8 月启动量产，德州第二工厂明年夏季投产&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;V3 版本今年年中展示，初期承担工厂简单任务，逐步拓展能力&lt;/p&gt;
+&lt;p&gt;全新供应链，初期产能爬坡慢，明年起大规模上量&lt;/p&gt;
+&lt;p&gt;与 Grok 大模型协同：本地智能 + 云端调度，断网仍可作业&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;6. 能源业务：Megapack 需求旺盛，光伏储能一体化&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;Megapack 订单强劲，今年下半年投产 Megapack 3&lt;/p&gt;
+&lt;p&gt;Q1 储能部署8.8GWh，环比下滑但2026 全年预计高于 2025 年&lt;/p&gt;
+&lt;p&gt;推出家用太阳能租赁、高性能光伏组件，打造家庭能源生态&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;以下是特斯拉财报电话会实录（AI辅助翻译，部分内容有删减）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt; 投资者关系主管&lt;/p&gt;
+&lt;p&gt;大家下午好，欢迎来到特斯拉2026年第一季度问答网络直播。我是特拉维斯·阿克塞尔罗德，投资者关系主管，今天和我一起的有埃隆·马斯克、瓦伊布哈夫·塔内贾以及其他一些高管。&lt;/p&gt;
+&lt;p&gt;在本次电话会议中，我们将讨论我们的业务展望并作出前瞻性声明。这些言论基于我们截至今日的预测和预期。&lt;/p&gt;
+&lt;p&gt;在今天会议的问答环节，请每人限提一个问题和一个跟进问题。请使用举手按钮加入提问队列。在进入问答之前，埃隆有一些开场发言。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt; 联合创始人兼首席执行官&lt;/p&gt;
+&lt;p&gt;谢谢。我认为2026年我们将迎来非常令人兴奋的一年。&lt;strong&gt;我们将大幅增加对未来的投资，所以你们应该预期资本支出会出现非常显著的增长&lt;/strong&gt;。我认为这对于未来收入流的大幅增长来说是完全合理的。&lt;/p&gt;
+&lt;p&gt;显然，特斯拉并不是唯一一家这么做的。我认为你们已经看到，即使不是全部，大多数——当然是主要的科技公司都在大幅增加资本投资。我们也将这样做。我认为这将带来巨大的回报。&lt;/p&gt;
+&lt;p&gt;我们正在投资并改进我们的核心技术，电池动力总成、人工智能软件、人工智能训练、芯片设计，为未来汽车产量大幅增长奠定基础。我们也在全面加强我们的供应链，电池、能源、人工智能、硅片，所有一切。&lt;/p&gt;
+&lt;p&gt;就像我说的，为我们预期的未来汽车产量大幅增长奠定基础。当然，是非常大幅的增长。我们实际上会推出擎天柱，但会增加内部生产用于测试，然后&lt;strong&gt;擎天柱可能在明年某个时候能够在特斯拉之外发挥作用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;就像我多次跟你们说过的，我认为擎天柱将是我们最重要的产品，不仅是特斯拉有史以来最重要的产品，而且可能是有史以来最重要的产品。我仍然坚信这个结论。&lt;/p&gt;
+&lt;p&gt;在汽车方面，我认为总是值得一提的是，特斯拉汽车的性价比极高，而且它们都具备自动驾驶能力，具体取决于你所在的地区。增强版全自动驾驶变得非常出色。我们刚刚开始生产赛博出租车，我们很快将开始生产特斯拉Semi。&lt;/p&gt;
+&lt;p&gt;现在我要说，每当你有一款全新的产品，拥有全新的供应链、全新的一切，它的增长曲线总是拉长的S型，所以你们应该预期CyberCab和Semi的初期生产会非常缓慢，但随后会提速，并在今年年底以及明年实现指数级增长。&lt;/p&gt;
+&lt;p&gt;事实上，今年剩余时间里，我们将尽最大努力在所有工厂提升所有汽车的产量。在能源方面，美国以及整个世界将需要大量的储能来满足不断增长的电力需求。我们的Megapack需求非常强劲。我们很高兴将于今年晚些时候在休斯顿郊外的全新世界级工厂开始生产Megapack 3。&lt;/p&gt;
+&lt;p&gt;对于全自动驾驶和无人驾驶出租车，14.3版本是一次重大的架构更新，我们有一整套全自动驾驶的重大改进计划，我们相信这些改进将使无监督全自动驾驶在全球所有合法地区成为可能。&lt;/p&gt;
+&lt;p&gt;然后是15版本，有望在今年年底，但肯定在明年年初推出。这将是对软件架构的全面重构，并将在AI5上运行。到那时，我们实际上只是将全自动驾驶的安全水平进一步提升到高于人类安全水平，这意味着我认为即使在14版本中，我们的安全性也显著高于人类，但15版本将把这一点提升到另一个水平。我们已经将无人驾驶出租车扩展到达拉斯和休斯顿，使用与湾区相同的软件源。扩展的限制因素实际上是严格的验证，确保一切完全安全。我们不希望在无人驾驶出租车扩展过程中出现任何意外受伤，值得团队称赞的是，到目前为止我们还没有发生过一起。&lt;/p&gt;
+&lt;p&gt;擎天柱方面，&lt;strong&gt;我们正在为弗里蒙特工厂今年晚些时候开始生产擎天柱做准备。&lt;/strong&gt;同样，全新的供应链，全新的技术，所以生产的S型曲线一开始总是非常缓慢。我们明年将提升到可观的数量，我们正在得克萨斯超级工厂建设第二座擎天柱工厂，可能将于明年夏天开始生产。&lt;/p&gt;
+&lt;p&gt;擎天柱V3设计几乎已经准备好展示。我想我们只是想确保它足够完善。它功能上可以运行，但还有一些外观元素需要最终确定，我认为可能在今年年中，我们应该能够展示它。我们不太愿意展示V3，因为我们发现每当我们发布东西，竞争对手都会逐帧分析并尽可能复制一切。我认为在接近量产之前不展示新技术是有一定价值的。&lt;/p&gt;
+&lt;p&gt;再次祝贺特斯拉AI芯片团队完成AI5流片。这将是一款出色的芯片。我认为可能是现有最好的边缘计算AI推理芯片。当然，我认为毫无疑问性价比最高。团队做得非常好，我们已经在设计AI6方面积累了很多势头，并且我们已经开始讨论Dojo 3的想法。这一切都非常令人兴奋。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们还敲定了得克萨斯超级工厂园区内研究级芯片工厂的计划，今年将开始建设。&lt;/strong&gt;总之，特斯拉正在开展很多宏大、有野心的项目。它们都非常具有挑战性，但我认为它们将具有革命性。这是团队最擅长的事情，解决最难的问题，打造令人惊叹的产品。我要感谢特斯拉团队的所有辛勤工作，感谢所有支持者。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;瓦伊布哈夫·塔内贾&lt;/strong&gt; 首席财务官&lt;/p&gt;
+&lt;p&gt;谢谢，特拉维斯。2026年开年不仅对我们，而且对整个世界来说都很有意思。&lt;/p&gt;
+&lt;p&gt;在汽车业务方面，我们看到欧洲、中东和非洲地区需求回升，法国、德国等国家的交付量环比增长超过150%。在亚太地区，我们看到韩国和日本的交付量有所增长。即使在美国本土，我们也看到交付量环比小幅增长。&lt;/p&gt;
+&lt;p&gt;在订单积压方面，本季度末我们创下了两年多来第一季度最高的订单积压量。&lt;strong&gt;虽然最近汽油价格上涨对订单率产生了积极影响，但这种改善在汽油价格上涨之前就已经开始了。&lt;/strong&gt;这是由于特斯拉团队为市场带来更具吸引力和更实惠的车型所做的工作。&lt;/p&gt;
+&lt;p&gt;十年前，当我们在美国推出Model 3时，承诺起售价35000美元，经通胀调整后，相当于今天的约48000美元。如今Model 3的起售价远低于此，而产品却比最初更具吸引力。在这种情况下，我们专注于提高整体产量，这一点我们在第一季度已经开始。产量增长的证明是柏林超级工厂第一季度产量突破61000辆，创下纪录。我们计划不仅在柏林，而且在所有工厂进一步提高产量。我们最大的限制因素仍然是电池包产能，我们正在积极努力解决这个问题。剔除积分后，汽车毛利率环比从17.9%提升至19.2%。&lt;/p&gt;
+&lt;p&gt;请注意，我们获得了约2.3亿美元的保修费用减记以及一些关税减免的一次性收益。我们尚未从最高法院最近关于知识产权关税的裁决中获得任何收益，因为最终结果仍存在很多不确定性。关税和持续高企的利率继续增加我们的汽车成本。利率补贴成本已一次性确认。如果利率继续上升，我们的补贴成本将继续影响汽车毛利率。&lt;/p&gt;
+&lt;p&gt;在全自动驾驶采用率方面，我们继续看到改善，全球付费用户接近130万。增长主要来自订阅，而一次性购买仅增长7%，因为我们在第一季度在部分市场取消了购买选项。我们最近在荷兰获得了全自动驾驶的批准。这为我们在第二季度晚些时候获得欧盟范围内的批准奠定了良好基础，我们仅受监管机构审批进度的限制。&lt;/p&gt;
+&lt;p&gt;随着这些批准的通过，我们预期现有车队中该软件的采用率将进一步提高，并为我们的汽车带来增量需求。考虑到所有这些，我们调整了汽车销售策略，现在我们将全自动驾驶作为产品重点，而汽车只是交付载体。正如我们之前所说，储能业务本质上是不均衡的，与客户部署时间相关。第一季度，我们部署了8.8吉瓦时的储能，环比下降38%。然而，我们仍然预计2026年的部署量将高于2025年。&lt;/p&gt;
+&lt;p&gt;由于某些上季度已支付关税带来的超过2.5亿美元的一次性收益，我们这项业务的毛利率再次创下超过39.5%的纪录。&lt;strong&gt;在正常情况下，随着竞争加剧和关税影响，我们预计储能业务毛利率将从目前水平回落。正如之前讨论的，这项业务中的关税可能产生巨大影响，因为大多数电池单元从中国采购。&lt;/strong&gt;我们这项业务的订单积压充足，我们正在尽最大努力不仅根据现有需求，而且根据预期需求进行生产。服务及其他业务毛利率环比从8.8%提升至9.2%。这包括一系列旨在支持我们客户的业务，如服务中心、二手车、付费超充、零部件销售、保险，甚至我们的无人驾驶出租车业务。&lt;/p&gt;
+&lt;p&gt;我们正在为未来的无人驾驶出租车业务有意识地投资基础设施。我们的无人驾驶出租车车队环比扩大，我们预计随着业务加速并进入其他地区，将继续扩大车队规模。&lt;/p&gt;
+&lt;p&gt;在运营费用方面，由于2025年首席执行官薪酬计划的全季度股权激励费用（其中一个里程碑仍被认为可能实现），环比有所增加。此外，我们在人工智能相关项目上的支出，包括自研AI5芯片以及赛博出租车、Semi、擎天柱、Megapack等新产品的开发支出，继续处于高位，我们预计这一趋势将在2026年全年持续。净利润受到比特币持仓公允价值变动（较上季度贬值22%）以及外汇波动（主要来自大额公司间借款）的不利影响。&lt;/p&gt;
+&lt;p&gt;在自由现金流方面，本季度末略高于14亿美元。正如埃隆所说，我们正处于一个非常大规模的资本投资阶段，这个阶段现在开始，并将持续几年。&lt;strong&gt;基于此，我们目前预计2026年资本支出将超过250亿美元&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;提醒一下，&lt;strong&gt;我们正在为六座即将投入运营的工厂支付费用。有些已经开工，有些将在今年晚些时候投入运营。我们将进一步加大对人工智能相关项目的投资，包括支持无人驾驶出租车和擎天柱推出的人工智能基础设施。我们已经开始为奥斯汀的研究级半导体工厂和太阳能制造设备下订单。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;虽然这看起来很多，而且今年剩余时间我们将面临自由现金流为负的影响，但我们相信这是为公司下一个时代布局的正确战略。我们将以非常高效的资本方式进行此类投资。我们正在积极践行打造美好富足未来的使命。然而，这不仅需要大量投资，还需要巨大的执行力。未来将会很美好，整个特斯拉团队正在奋起迎接挑战，将这一愿景变为现实。最后，我要感谢特斯拉团队、我们的客户、投资者和供应商对我们这段旅程的信任。谢谢。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;非常感谢，瓦伊布哈夫。现在我们将进入投资者提问，首先是来自Say.com的问题。第一个问题是：&lt;strong&gt;擎天柱3何时亮相？我们已经提到过，但问题的其余部分是：擎天柱何时开始生产，因为我们已于年中停产Model X和S？还有，今年年底擎天柱的预计产能是多少，最初的目标规模是多少？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗯，就像我刚才说的，我们发现每当我们推出各种擎天柱版本，我们发现竞争对手真的会逐帧分析并复制我们所做的一切&lt;strong&gt;。我认为我们可能会将擎天柱3的亮相时间推迟到接近量产时。生产开始时间，我们预计在7月下旬、8月左右。&lt;/strong&gt;我只想给这些问题注入一些现实情况，因为这些问题……提出这些问题的人并不完全了解生产线的运作情况。最后一批S/X的生产将在5月初。你必须查看生产线的整个上游部分。你必须从电芯、电池包、电机生产开始，所有零部件生产。&lt;/p&gt;
+&lt;p&gt;我们一直在从最基础的零部件开始拆除S/X生产线，当你处理更大的组件时，你必须先从小零件开始拆除生产线，而不是从总装线开始。总装线将在最后一批S/X汽车生产完成后的下个月拆除。你不可能一夜之间拆除这么庞大的生产线。这样做至少需要几个月的时间。你必须安装新的生产线，你必须提供所有的布线和通信，测试新生产线的机器。这也需要几个月的时间。&lt;/p&gt;
+&lt;p&gt;坦白说，如果我们能在4个月内停止一条生产线的生产，拆除整条生产线，重新安装一条全新的生产线，然后启动运行，这速度快得离谱。我认为地球上没有任何其他公司曾经做到过这一点，只是为了客观说明，并给当前情况注入一些现实因素。&lt;/p&gt;
+&lt;p&gt;我不知道今年擎天柱的产能会是多少。这些事情是不可能预测的。当你有一款全新的产品和一条全新的生产线，而且你有10000个独特的零部件，所有这些都必须顺利才能实现产能爬坡，它的速度将取决于整个10000个零部件中最不顺利、最慢、最麻烦的那个。擎天柱是一款全新的产品，拥有全新的生产线。这简直是不可能预测的。&lt;/p&gt;
+&lt;p&gt;除了我认为一开始会相当缓慢，因为我们要解决擎天柱实现量产所需的10000多个独特问题。最初的技能，显然，我们将从工厂内的简单技能开始，然后逐步提升。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的，谢谢你，埃隆。下一个问题是，&lt;strong&gt;今年在奥斯汀之外，无监督全自动驾驶和无人驾驶出租车扩张的目标里程碑是什么？这将如何推动经常性收入？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗯，我们当然希望在今年年底前，无监督全自动驾驶或无人驾驶出租车能在大约十几个州运营。最初，我们在这里的推广采取非常谨慎的态度。到目前为止，我们在无监督全自动驾驶和无人驾驶出租车扩张过程中没有发生任何受伤事故，当然也没有死亡事故。我们希望保持这种状态。&lt;strong&gt;我认为今年无监督全自动驾驶或无人驾驶出租车的收入可能不会非常可观，但我确实认为明年可能会有相当大的规模。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的，非常感谢。下一个问题是，&lt;strong&gt;你预计无监督全自动驾驶何时能用在客户车辆？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我只是猜测，但可能在第四季度。&lt;/strong&gt;很难一次性向所有人、所有地方推出，因为我们确实希望确保某个城市没有特殊情况，比如特别复杂的路口。实际上，这些地方往往是人们经常发生事故的地方。因为可能存在，就像我说的，不安全的路口或糟糕的道路标线或很多天气挑战。我认为我们会在确认某个地区安全后，逐步向客户车队推出无监督功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。下一个问题是，&lt;strong&gt;Hardware 3车辆如何实现无监督全自动驾驶？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;遗憾的是，Hardware 3，我希望不是这样，但Hardware 3根本不具备实现无监督全自动驾驶的能力。我们曾经一度认为它可以，但与Hardware 4相比，它的内存带宽只有Hardware 4的八分之一。内存带宽是实现无监督全自动驾驶所需的关键要素之一。这通常也是人工智能所需要的。如果你在做自回归Transformer，内存带宽就是瓶颈。对于已经购买全自动驾驶的客户，我们提供的基本上是针对配备AI Hardware 4车辆的折扣置换。我们还将提供将车辆升级更换电脑的选项，遗憾的是，你还需要更换摄像头才能升级到Hardware 4。&lt;/p&gt;
+&lt;p&gt;为了高效地完成这项工作，我们将不得不在主要大都市地区建立微型工厂或小型工厂，以便高效地进行。因为如果仅在服务中心进行，速度会非常慢且效率低下。我们基本上需要多条生产线来完成这项更换。我确实认为随着时间的推移，将所有Hardware 3车辆转换为Hardware 4对我们来说是有意义的，因为这能让它们进入无人驾驶出租车车队并拥有无监督全自动驾驶功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;阿肖克·埃卢斯瓦米&lt;/strong&gt; 人工智能副总裁&lt;/p&gt;
+&lt;p&gt;顺便说一句，与此同时，我们还将为Hardware 3推出V14版本。这将是我们为Hardware 4发布的同一V14软件的精简版。用户应该能够从停车状态开始驾驶，并且基本上拥有Hardware 4的V14所有功能。预计将于6月底推出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的，非常感谢。下一个问题是，&lt;strong&gt;是什么让你提前完成了AI5流片，最初的愿景有任何改变吗？&lt;/strong&gt;上周埃隆说AI5将用于擎天柱和超级计算机，但一个月前说将用于无人驾驶出租车。AI5是否已从汽车路线图中移除？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗯，AI5流片提前完成的原因是团队非常努力地实现了这一点。随着时间的推移，我们积累了很多动力。我们确实连续六个月每个周末都在工作，包括每个节假日。团队做出了很多牺牲，当然我自己每个周末也都在。幸运的是，我们没有犯任何重大错误，至少我们不知道，这不需要推迟流片。团队做得非常好，非常努力，这就是原因。我确实预计AI5将用于擎天柱和数据中心，因为看起来我们能够用AI4实现远超人类安全水平的无监督自动驾驶。&lt;/p&gt;
+&lt;p&gt;这意味着汽车端暂时不是迫切需要。在某个时候，我认为我们转向在汽车中使用AI5是有意义的，但没有紧迫的必要这样做。在某个时候，AI4硬件会变得太旧，就像，好吧，保持工厂开工的唯一原因就是为了AI4。&lt;strong&gt;我们计划对AI4进行升级，使用新一代内存。它将从每个SoC 16GB提升到，我想是32GB，总共64GB。算力和内存带宽可能会提升10%。这是AI4.1或AI4+，可能将于明年年中投入生产。&lt;/strong&gt;三星正在为我们进行修改，所以这在某种程度上取决于他们何时能够完成这些修改并投入生产。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。下一个问题是，既然全自动驾驶已在荷兰获得批准，预计今年夏天在整个欧洲推出，你能谈谈你在该地区的无人驾驶出租车战略吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗯，&lt;strong&gt;我们在欧洲推出无人驾驶出租车可能为时过早，因为我们仅仅为了在欧洲获得增强版自动驾驶批准就花费了大量时间。&lt;/strong&gt;我们无法控制监管机构。我们尽最大努力推进，但最终由欧洲各国和欧盟政府决定怎么做。&lt;/p&gt;
+&lt;p&gt;是的，目前我们仅在荷兰获得批准。我们预计将在许多其他国家获得批准。&lt;strong&gt;我认为增强版全自动驾驶将于5月提交布鲁塞尔进行欧盟审核。&lt;/strong&gt;显然，在此之后的下一步是争取在欧洲实现无监督自动驾驶或无人驾驶出租车。我实际上不知道那是什么时间框架，并且在某种程度上取决于监管机构何时批准。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;阿肖克·埃卢斯瓦米&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从技术角度来看，我们在荷兰和欧洲部署的是完全相同的架构，训练流程等等，只是增加了更多欧洲数据。我怀疑无监督全自动驾驶也是如此。我们用于在美国解决问题的任何方法也将在世界其他地方有效，前提是我们能够添加来自当地地区的数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。下一个问题是，鉴于最近美国国家公路交通安全管理局的事故申报，&lt;strong&gt;你能为我们更新无人驾驶出租车安全数据吗？如果安全验证仍然是主要瓶颈，为什么不部署数千辆车辆来加速移除安全驾驶员&lt;/strong&gt;？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;阿肖克·埃卢斯瓦米&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。我们正在增加我们的质量保证车队数量，但我们也希望利用客户车队为我们反馈有用的指标，以便我们安全地扩大规模。就像埃隆所说，我们绝对专注于安全。到目前为止，我们零事故，这也是美国国家公路交通安全管理局申报文件所显示的。除了安全之外，我们还在解决一些所谓的规模化问题。例如，你不希望无人驾驶出租车被困在路口堵塞交通，或者不想把人送到稍微不正确的位置等等。我们正在通过监控整个特斯拉客户车辆车队的指标来同时解决安全的长尾问题，该车队在全自动驾驶上的行驶里程即将达到100亿英里。&lt;/p&gt;
+&lt;p&gt;同时在全美扩大我们的质量保证车队规模，以加速我们的安全验证，同时扩大其他可能限制无监督车辆增长的因素。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。下一个问题是，V14.3是否仍是实现大规模无监督全自动驾驶和无人驾驶出租车的最后一块拼图，还是我们必须等到V15？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗯，不，我认为14.3是无监督全自动驾驶的最后一块拼图。现在，问题是安全和便利的程度，我想。我们有很多已知的改进，重大的架构改进，我们知道这些改进将显著提高安全概率。我认为当我们知道有软件的重大架构改进可以提高安全性时，我们大规模部署无监督全自动驾驶或无人驾驶出租车是不合理的。我认为我们会希望完成编写该软件，验证它，并在大规模无监督全自动驾驶之前发布，这取决于大规模的定义。&lt;/p&gt;
+&lt;p&gt;当然，正如我之前所说，我们正在三座城市实施无监督全自动驾驶，我们将把它扩展到，就像我所说的，今年晚些时候可能扩展到十几个州或更多。这取决于你对大规模的定义。我确实认为，当我们知道有软件改进正在进行中可以提高安全性时，我们大规模推出无监督全自动驾驶是不正确的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;阿肖克·埃卢斯瓦米&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的，我想指出，在奥斯汀、达拉斯、休斯顿等地运行的无人驾驶出租车版本，基本上都是14.3的变体。它显然是安全的，这就是我们能够在这些城市推出的原因，在V15推出之前，我们将继续在14.3的基础上进行扩展。V15将是一次重大升级。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的，谢谢。接下来两个关于无人驾驶出租车推出和我们观察到的数据的问题我们已经回答过了。我们将以最后一个问题结束&lt;strong&gt;，即特斯拉正在做什么来扩大太阳能发电业务？家用屋顶安装停滞不前。特斯拉会转向区域太阳能和电池农场，可能搭配超级充电站吗？我们会通过公用事业公司部署太阳能吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。美国整体家用太阳能市场在去年失去房主税收抵免后正在经历一些调整。我们仍然预计下半年需求将强劲回升。特斯拉今年推出了租赁产品，使我们能够自己享受税收抵免，并为房主提供有竞争力的价格。我们还推出了我们自己的性能和外观更优越的太阳能电池板，以及我们自己的顶级安装系统，为我们提供完全集成的家庭能源生态系统。&lt;/p&gt;
+&lt;p&gt;我们坚信全球太阳能和储能市场将在家用和公用事业规模上持续增长，我们将继续投资于这种增长。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的，谢谢你。现在我们将进入分析师提问。第一个问题来自Truist的威尔·斯坦。威尔，请随时解除静音。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;威廉·斯坦&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗨，能听到我吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的，可以。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;威廉·斯坦&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。感谢回答我的问题。&lt;strong&gt;考虑到Terafab项目涉及的各方，我希望你能为投资者提供详细信息，说明哪一方将负责该项目的各个方面，为其提供资金、设计、建造、运营、接收生产等等。我们很想听到更多细节&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。我们仍在制定Terafab部署的细节。短期内，特斯拉将在我们的得克萨斯超级工厂园区建造研究级工厂。这是我们预计约30亿美元的项目，每月能够生产数千片晶圆。这真的是为了尝试一些想法，研究级工厂，无论是在改进芯片制造基础技术方面的一些想法。我们有一些新的物理学想要测试，但我们也想测试能力，看看某些东西是否在生产中有效。你需要每月几千片晶圆起始量，以确保生产工艺是可靠的。SpaceX将负责规模化Terafab的初始阶段。到目前为止我们已经确定的就是这些。&lt;/p&gt;
+&lt;p&gt;任何公司间的事情都必须得到SpaceX和特斯拉董事会的批准。必须经过冲突解决。这将不幸地有很多复杂性，因为我们必须确保特斯拉股东和SpaceX股东都得到服务，并在那里达成正确的平衡。在这方面完成独立董事审核需要一些时间。&lt;strong&gt;到目前为止我们基本上确定的就是特斯拉负责研究级工厂，SpaceX负责大规模Terafab的初始部分，然后我们必须弄清楚剩下的部分。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;威廉·斯坦&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那英特尔的参与呢？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。&lt;strong&gt;英特尔很高兴与我们在一些核心制造技术上合作。&lt;/strong&gt;我们计划使用英特尔的14A工艺，这是最先进的，实际上还没有完全完成。鉴于到Terafab规模化时，14A可能会相当成熟或准备好投入使用，14A似乎是正确的选择。我们与英特尔有着良好的关系。非常尊重首席执行官、首席技术官和那里的新团队。我们认为这将是一次伟大的合作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;瓦伊布哈夫·塔内贾&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。关于研究级工厂的另一件事，我想我们之前说过，&lt;strong&gt;我们计划在同一个地方做内存、逻辑，所有东西，包括掩膜，因为我们希望有一个快速的迭代循环，以便我们能够看到并基本上扩大我们试图推出的技术。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。我认为这在世界上将是独一无二的，或者至少我不知道有任何地方在一栋建筑内拥有光刻掩膜制造，然后是逻辑、内存和封装。这是我能想象到的进行递归研究和开发的最快方式，并且能够尝试一些相当激进的想法，其中一些是。这是一些可能性不大的东西，但如果这些可能性不大的想法成功，将是芯片工作方式的根本性改进。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。下一个问题来自New Street的皮埃尔。皮埃尔，请随时解除静音。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;皮埃尔·费拉古&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嘿，非常感谢回答我的问题。首先是关于全自动驾驶采用率的简短问题。本季度你们有18万新付费用户。我将其与你们的总车队基数相比，可能是15%，但如果我缩小到美国或北美（大多数用户所在地区），可能更接近30%-35%。相比之下，本季度你们在北美可能卖出了约10万辆汽车，所以你们赢得的全自动驾驶用户是卖出汽车数量的两倍。如果再加上一个情况，我猜大多数订阅全自动驾驶的都是Hardware 4车主，听起来北美大多数拥有Hardware 4的司机已经在使用全自动驾驶了。这样想对吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;瓦伊布哈夫·塔内贾&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的，我认为你的想法是对的，皮埃尔。我要分享的另一件事是，你不能只看一个季度与另一个季度的流失率，但我们实际上看到订阅用户的流失率也在下降，这再次反映了产品正在变得更好，显然如果订阅量在上升，这是一个很好的指标。另一件值得注意的事情是，我们看到客户实际行驶里程更长，这再次，你可以关联起来。这就是为什么流失率更低，因为人们喜欢这个产品。我之前说过，如果我只用我自己的个人行为，我真的上车，按下按钮，它就自己走了。以前我会停车，现在我甚至不用停车了。这就是我们希望每个人都能获得的体验，这就是为什么你开始在数据中看到这一点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;皮埃尔·费拉古&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;太好了。谢谢。如果可以的话，也许一个简短的跟进，完全不同的问题。更多是关于擎天柱架构。&lt;strong&gt;你谈到了与xAI和Grok的合作，我想知道你能否与我们分享System 2智能将如何实施。它会搭载在擎天柱内部的芯片上吗？&lt;/strong&gt;或者我们是否应该认为你们每年生产100万台擎天柱的车队实际上也将在数据中心推动非常可观的推理需求用于System 2思考。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗯，我们认为我们可以在机器人本地放置很多智能，当然需要足够的智能，以便如果机器人断开连接，比如蜂窝信号不好或没有Wi-Fi，擎天柱不能只是卡住。它需要有足够的本地智能，即使失去连接也仍然能做有用的事情，有点像汽车。汽车不需要任何蜂窝或Wi-Fi连接就能安全驾驶。现在，你可以认为擎天柱需要某种管理者来告诉它该做什么，大致来说，否则它会继续做之前做的事情。我认为你需要某种调度人工智能，Grok将非常适合调度。&lt;/p&gt;
+&lt;p&gt;对于擎天柱的语音，需要低延迟智能语音人工智能，Grok实际上在这方面非常出色。如果你想与擎天柱对话并进行Grok级别的对话，你需要连接到Grok级别的人工智能。我预计除了语音相关和向机器人提出需要大型人工智能模型回答的复杂问题之外，Grok与擎天柱的互动量可能就像管理者与团队成员的互动量一样。这意味着擎天柱可以在没有任何管理监督的情况下工作几个小时。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。下一个问题来自巴克莱的丹。丹，请随时解除静音。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;丹&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。晚上好。感谢回答问题。埃隆，你的芯片供应商通常在他们销售的芯片上获得相当不错的经济效益。你过去的方法一直是垂直整合。部分原因是为了获得更好的经济效益。我知道Terafab的长期目标是获得你需要的供应，但Terafab有多少动机也是为了在中期芯片采购上获得更好的经济效益，需要多长时间才能提升到实现这种经济效益平衡的良率？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不，&lt;strong&gt;Terafab不是某种对我们芯片供应商施加杠杆的机制。这完全是因为我们看不到未来随着我们大规模生产，有足够数量的AI芯片的路径&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;就行业增长速度而言，&lt;strong&gt;逻辑芯片，甚至更多的是存储芯片，我们预计如果我们不自己制造芯片，就会遇到瓶颈。这就是Terafab的出现原因。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我认为我们确实有一些关于如何制造可能根本性更好的AI芯片的想法。这些是一些研究想法，这意味着可能性不大，但如果可能性不大的想法成功，将是巨大的改进。如果我们有自己的研究实验室并开发自己的生产技术，这样做会更容易。&lt;/p&gt;
+&lt;p&gt;从长远来看，比如拥有人工智能卫星，为那些制造芯片，现有行业根本无法跟上需求。这是不可能的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。我们的下一个问题来自高盛的马克。马克，请随时解除静音。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;马克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。下午好。非常感谢回答我的问题。我认识到全自动驾驶的重要性，并且全自动驾驶有助于推动汽车销售，很高兴看到最近全自动驾驶技术随着14版本取得一些改进。然而，我也希望了解公司对新车型的看法是否有所演变。我问这个问题是因为，埃隆，你最近在X上发帖说特斯拉可以开发一款家用车型，过去也有关于紧凑型车的讨论。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;嗯，赛博出租车就是紧凑型车。它非常宽敞，但它是一款双人车。我们确实认为长期来看我们的大部分生产将是赛博出租车，因为90%的行驶里程是一到两个人。这意味着你希望你的绝大多数生产是赛博出租车。随着时间的推移，我们整个产品线都将是不同尺寸的自动驾驶汽车是有意义的。我在洛杉矶华纳兄弟举办的人工智能日时确实谈到了这一点，展示了这是我们目前的产品线，这是我们未来产品线的一些想法，那就是几乎完全自动驾驶。事实上，长期来看，唯一手动驾驶的汽车将是全新特斯拉Roadster。&lt;/p&gt;
+&lt;p&gt;说到这里，我们可能在一个月左右就能首次亮相。它需要大量的测试和验证才能进行演示，并且演示过程中不会出现问题。我认为这将是有史以来最令人兴奋的产品发布之一。我不确定。我不认为它会对收入产生巨大影响，但它非常酷。我认为这可能是有史以来最壮观的演示之一。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。马克，你有跟进问题吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;马克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的，谢谢，特拉维斯。我的另一个问题是关于电池的，公司提到电池是其增长的制约因素。&lt;strong&gt;你能详细说明特斯拉预计如何解决这个问题，以及这在多大程度上来自于扩大自研磷酸铁锂和4680电池电芯的生产？或者这是你预计主要通过增加供应商采购来解决的问题？&lt;/strong&gt;谢谢。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;瓦伊布哈夫·塔内贾&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。目前，我认为限制因素不是电芯本身，而是电池包产能。就像我在开场发言中所说，我们正在积极努力解决这个问题。我们正在增加更多产能，我会让拉斯补充更多内容。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;拉斯·莫拉维&lt;/strong&gt; 车辆工程副总裁&lt;/p&gt;
+&lt;p&gt;是的，谢谢你，瓦伊布哈夫。你们可能已经看到，&lt;strong&gt;在柏林，我们几个月前开始推出搭载自研4680电芯的Model Y电池包，产能爬坡顺利，增加了柏林的产量，并帮助应对我们在欧洲看到的需求激增。此外，我们正在里诺工厂增加额外产能，对其进行改造，因为该工厂已经生产电池包近10年，以便安装一些更高效的生产线并获得额外产量。我们在中国也继续增长，扩大自研磷酸铁锂模组生产及相关电池包。&lt;/strong&gt;所有这些事情现在和未来几个月都在进行，这确实是我们几个月前制定的计划，以随着需求增长增加产量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。谢谢大家。我们的下一位分析师是富国银行的科林。科林，请随时解除静音。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;科林&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;哦，好的。感谢回答我的问题。你们已经在奥斯汀移除了安全驾驶员，现在正在扩展到达拉斯、休斯顿。你们正在跟踪哪些关键安全指标，让你们有信心无人驾驶出租车足够安全可以扩展？是每次干预的里程、每次事故的里程、每次死亡的里程吗？你们现在处于什么位置？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;阿肖克·埃卢斯瓦米&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。我们基本上跟踪你提到的所有指标。我们有一个相当大的质量保证车队分布在美国各地。然后我们查看可能发生的任何干预，然后在实践中以及在我们现在非常优秀的模拟器中使用神经网络进行模拟，看看会发生什么。然后，基于所有这些分析，最终我们做出扩展的决定。到目前为止，所有扩展都符合我们的预期。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的&lt;strong&gt;。我认为限制无人驾驶出租车更广泛部署的很多因素实际上不是安全问题，而是便利问题，或者汽车基本上变得过于谨慎而卡住&lt;/strong&gt;。因为它被编程为最大安全。问题是它有时会害怕做事情。&lt;/p&gt;
+&lt;p&gt;比如它有时害怕穿过铁路，或者，它会卡在红绿灯前，红绿灯永远不会从红色变绿色。有一个有趣的情况，一大堆无人驾驶出租车被困在奥斯汀的左转车道上，因为，不骗你，一辆Waymo撞上了一辆公交车。它们不能左转，因为Waymo撞上了公交车。有一长串，我不知道，十几辆或更多特斯拉无人驾驶出租车在等公交车移动，但公交车永远不会移动，因为Waymo撞上了公交车。显然，如果一大堆无人驾驶出租车堵住整条路，人们会发疯。有很多这样的事情。&lt;/p&gt;
+&lt;p&gt;这是最大的问题，就是汽车害怕移动或卡在这样的情况下。我们也遇到过字面意义上的无限循环，汽车可能想转弯进入一条路，但有施工，然后它绕街区一圈，试图转弯进入有施工的路，绕街区一圈，试图转弯进入那条路。你必须停止无限循环，字面意义上的无限循环。这些是到目前为止我们必须解决的问题，而不是直接的安全问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;分析师&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;明白了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你有跟进问题吗，科林？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;分析师&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。去年，我问过关于全自动驾驶和摄像头以及眩光问题，你提到直接光子计数技术取得了突破，解决了这个问题。一个月前，有一份美国国家公路交通安全管理局申报文件说，他们没有收到解决方案部署时间和车辆数量的更新。这是否需要改装摄像头？这是否已经全面部署？我只是好奇，因为申报文件提到了这一点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的。首先，我想说我们几个月前确实更换了摄像头，这些已经推出。美国国家公路交通安全管理局的申报文件指的是旧款车辆。我们一直就他们向我们提出的所有问题与美国国家公路交通安全管理局直接合作，他们要求相当多的信息，我们正尽可能及时地遵守。我们预计很快解决这个问题以及任何其他调查。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;阿肖克·埃卢斯瓦米&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是的，我们还对摄像头的可见性实施了更严格的措施。在最近的软件版本中，如果摄像头由于残留物堆积等原因无法清晰看到东西，那么这些汽车将无法使用全自动驾驶。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;埃隆·马斯克&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你必须清洁挡风玻璃内部。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特拉维斯·阿克塞尔罗德&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的。遗憾的是，今天的时间到了。我们感谢大家的提问，期待下一季度与大家交谈。非常感谢，再见。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Thu, 23 Apr 2026 02:50:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE40akVKMTR2ZXA2LWZUQVVFN0lWajQyczY3aFFQa3pXYzFBSmJBU1NYd1huSGdoUXBnSXlkS0RUdWNjZFdkTzZILQ</guid></item><item><title>单价近28亿元！台积电高管：阿斯麦最新光刻机非常非常贵 暂不购买 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117782.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月23日消息，&lt;strong&gt;据报道，近日，台积电副共同营运长张晓强在公开论坛明确表态，公司现阶段不会采购阿斯麦最新High‑NA EUV光刻机，核心原因是设备价格过高。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;该机型单台售价超3.5亿欧元，折合人民币近28亿元，远超行业现有设备水平。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -617,7 +1184,70 @@
   &lt;p&gt;此次，小米MiMo旗舰模型再升级，也意味着其作为终端硬件厂商，正将自研底层大模型、系统级权限、全生态服务进行深度绑定与融合，打造真正意义上的系统级原生智能体，加速其人车家全场景AI的规模化落地。&lt;/p&gt;
   &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&amp;amp;mid=2652801536&amp;amp;idx=1&amp;amp;sn=027427da871dc2961ed9237e644d0481&amp;amp;chksm=85c5659937d1e563c5b0f1da5b59b4e896bc90120eb4f2c6b32bc32f03d54775e0abda8c34ef&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“智东西”（ID：zhidxcom）&lt;/a&gt;，作者：程茜，编辑：李水青，36氪经授权发布。&lt;/p&gt;
  
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36kr.com</author><pubDate>Thu, 23 Apr 2026 00:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5JSnpMSTBPNDktQVdKeHN5aTJrS3l2dWZQOFcyTV9MUXhvUlIxVmEyWGxxMGprU2JRSkdid09JMnU1eFV3LS1qUzJWVGRGdw</guid></item><item><title>TCL华星宣布供屏REDMI K90 Max：1.5K 165Hz高刷 1nit超低亮度更护眼 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117753.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36kr.com</author><pubDate>Thu, 23 Apr 2026 00:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE5JSnpMSTBPNDktQVdKeHN5aTJrS3l2dWZQOFcyTV9MUXhvUlIxVmEyWGxxMGprU2JRSkdid09JMnU1eFV3LS1qUzJWVGRGdw</guid></item><item><title>占比大幅提升！谷歌：公司内部75%的新代码已由AI生成 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117754.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;占比大幅提升！谷歌：公司内部75%的新代码已由AI生成&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-23 08:20:55  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1117754-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月23日消息，&lt;strong&gt;据媒体报道谷歌近日透露，目前公司内部新编写的代码中，&lt;span&gt;已有75%由人工智能生成，随后再由人类工程师进行审核。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这一比例近年来持续攀升。截至2024年10月，谷歌约四分之一的代码由AI生成；到去年秋天，这一数字已提升至50%。&lt;/p&gt;
+&lt;p&gt;谷歌持续推动员工将AI应用于编程及其他日常工作。公司CEO桑达尔·皮查伊周三在博客中表示，&lt;strong&gt;谷歌正转向“真正以智能体为核心的工作流程”，让工程师能够承担更多自主任务。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;他举例说：“最近，一项由智能体和工程师协同完成的复杂代码迁移工作，其完成速度比一年前仅靠工程师时快了6倍。”&lt;/p&gt;
+&lt;p&gt;目前，谷歌工程师主要使用自家Gemini模型来生成代码。部分工程师还被设定了明确的AI使用目标，这些目标将纳入今年的绩效评估。&lt;/p&gt;
+&lt;p&gt;值得注意的是，近几个月来，谷歌DeepMind的部分员工已获准使用Anthropic旗下的Claude Code工具，这也在团队内部引发了一些紧张情绪。&lt;/p&gt;
+&lt;p&gt;在其他科技巨头方面，微软CEO萨提亚·纳德拉表示，&lt;strong&gt;微软部分项目中已有20%至30%的代码由AI编写。微软CTO凯文·斯科特也在同月预测，未来五年内，95%的代码都将由AI生成。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260423/e95e407550c54dae9a7f3502c7ad3b0f.png" target="_blank"&gt;&lt;img alt="占比大幅提升！谷歌：公司内部75%的新代码已由AI生成" h="427" src="//img1.mydrivers.com/img/20260423/s_e95e407550c54dae9a7f3502c7ad3b0f.png" w="582"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Apr 2026 00:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5PMU8xcFhIX0pOYVFJclVnNzVQdWV0Q3Q0STB0OTZyRVlfWmlKNzZDRHJPLXZ6MWUzOExJU1cyWFhlRS1rZjhwdTZ2TWtZWGU3X1VKZ19FdXc</guid></item><item><title>TCL华星宣布供屏REDMI K90 Max：1.5K 165Hz高刷 1nit超低亮度更护眼 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117753.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;TCL华星宣布供屏REDMI K90 Max：1.5K 165Hz高刷 1nit超低亮度更护眼&lt;/p&gt;
           
@@ -2595,7 +3225,70 @@ CEO黄仁勋直面外界“AI硬件卖天价”的争议，他坦言&lt;strong&g
 &lt;p&gt;&lt;strong&gt;天下苦 A 社久矣。&lt;/strong&gt;&lt;/p&gt;
 
   &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 22 Apr 2026 09:13:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE9yM01XZHY4UXJqWElxNVlWWEZxUHQ3OXVwNjFGMEJfcHp0cHc2X0NuZ2ZtMXdPRlFGUjBkMUtaZ0VJZms</guid></item><item><title>等等党这次真输了 CPU全面涨价！Intel要再涨10%：缺货直到2027年 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117632.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 22 Apr 2026 09:13:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE9yM01XZHY4UXJqWElxNVlWWEZxUHQ3OXVwNjFGMEJfcHp0cHc2X0NuZ2ZtMXdPRlFGUjBkMUtaZ0VJZms</guid></item><item><title>突然！AMD、Intel CPU价格急速暴涨最高20%：还有一个坏消息 - 3DM</title><link>https://www.3dmgame.com/news/202604/3942604.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+        &lt;div class=" news_warp_top"&gt;
+            &lt;h1 class="bt"&gt;突然！AMD、Intel CPU价格急速暴涨最高20%：还有一个坏消息&lt;/h1&gt;
+            &lt;p class="time"&gt;时间：&lt;span&gt;2026-04-22 17:09:09&lt;/span&gt;&lt;/p&gt;
+            
+                        &lt;p class="pin" id="pin" data-id="Comments_wrap"&gt;&lt;span&gt;&lt;i&gt;&lt;/i&gt;&lt;span id="Ct_top_total" class="nums"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class="clear"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+                    
+&lt;p class="Tonglan_785"&gt;
+    
+    &lt;i&gt;&lt;/i&gt;
+&lt;/p&gt;
+                &lt;input type="hidden" value="https://img.3dmgame.com/uploads/images2/thumbnews/20260422/1776848914_471313.jpg" id="coverUrl"&gt;
+                &lt;div class="news_warp_center"&gt;
+            &lt;p&gt;
+	苏妈上个月就说了，CPU业务的需求实际上远远超出了她的预期。这不，CPU价格马上就暴涨了一波。
+&lt;/p&gt;
+&lt;p&gt;
+	据《工商时报》消息，AI运算需求持续爆发，CPU市场正掀起新一轮全面涨价潮。ODM商场透露，今年3月起，消费级CPU价格上涨5%至10%，服务器CPU涨幅达10%至20%。
+&lt;/p&gt;
+&lt;p&gt;
+	供应链方面显示，大厂还在酝酿今年第三季的新一轮涨价。
+&lt;/p&gt;
+&lt;p&gt;
+	总体而言，本轮涨价由Intel、AMD两大巨头主导。Intel 3月已调涨PC CPU价格，4月1日进一步上调服务器CPU售价，直接带动第二季毛利率回升。市场预期，Intel下半年仍有8%至10%的涨价空间。
+&lt;/p&gt;
+&lt;p&gt;
+	AMD则计划在今年第二季、第三季，分两次上调服务器CPU价格，累计涨幅将达16%至17%。
+&lt;/p&gt;
+&lt;p&gt;
+	这轮涨价核心来自两大驱动力。一是AI需求的全面爆发。此前AI热潮先引发GPU长期短缺，2025年年中GPU供应才趋于缓和，随后内存存储芯片接棒缺货。如今AI代理需要CPU协调GPU、NPU完成计算任务，AI推理需求激增，直接推高CPU需求。
+&lt;/p&gt;
+&lt;p&gt;
+	Intel CFO大卫・津斯纳曾直言“今年CPU再次成为热门”，已有客户签订长单锁定货源。AMD CEO苏姿丰也表示，CPU需求增长远超预期。
+&lt;/p&gt;
+&lt;p&gt;
+	二是先进制程产能高度紧张。当前2nm、3nm制程进入量产扩产阶段，AI芯片、GPU、CPU正在全面争抢晶圆产能，直接推高代工报价，拉长交付周期。
+&lt;/p&gt;
+&lt;p&gt;
+	供应链直言，CPU目前仍处于严重供不应求状态，涨价看不到终点。Intel、AMD主流CPU均采用3nm制程，台积电罕见持续加码3nm扩产，也印证了需求的爆发。
+&lt;/p&gt;
+&lt;p&gt;
+	比当下涨价更严峻的坏消息是，CPU紧缺局面短期无法缓解。机构分析，2026至2027年CPU市场将持续高度紧缺，只要AI基建持续扩张、先进制程瓶颈未解，涨价趋势就会延续。
+&lt;/p&gt;
+&lt;p&gt;
+	更值得警惕的是，产能正持续向高利润的企业级市场倾斜，若现状不变，2028年入门级PC市场或将彻底终结。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;a href="https://img1.mydrivers.com/img/20260422/f577be9c37624001ab6ebd0f7e09340b.jpg" target="_self"&gt;&lt;img alt="突然！AMD、Intel CPU价格急速暴涨最高20%：还有一个坏消息" src="https://img1.mydrivers.com/img/20260422/s_f577be9c37624001ab6ebd0f7e09340b.jpg"&gt;&lt;/a&gt;
+&lt;/p&gt;                                &lt;/div&gt;
+                                                        &lt;a class="zan_box"&gt;
+                &lt;i class="zan clickzan"&gt;&lt;/i&gt;
+                &lt;span class="znums"&gt;0&lt;/span&gt;
+            &lt;/a&gt;
+                &lt;a href=""&gt;&lt;img src="https://img.3dmgame.com/uploads/images/thumbnews/20250711/1752204002_711193.png" alt=""&gt;&lt;/a&gt;
+
+                                        
+                        
+                                
+        
+                
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Wed, 22 Apr 2026 09:09:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE04bGdRVk0xVmhCSHFmT0FDdE1CelItMXpEOHd4OTN5cFNjWGtLUG1Za1ZaeThSZjZnUGxxUHI4QVNNbDNzM3VTMnU5SDdwMG1Qc1NvN3dfeklxbHFV</guid></item><item><title>等等党这次真输了 CPU全面涨价！Intel要再涨10%：缺货直到2027年 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117632.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月22日消息，据报道，CPU市场正进入新一轮涨价周期，本轮涨价主要由两个因素驱动：AI服务器需求快速激增，以及先进制程产能高度集中导致供应无法及时响应。&lt;/p&gt;
 &lt;p&gt;有ODM厂商透露，&lt;strong&gt;自3月以来，消费级CPU价格上涨5%-10%，服务器CPU价格上涨10%-20%，供应链消息还指出，主要厂商正在筹备第三季度的进一步涨价。&lt;/strong&gt;&lt;/p&gt;
@@ -2614,681 +3307,4 @@ CEO黄仁勋直面外界“AI硬件卖天价”的争议，他坦言&lt;strong&g
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 09:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1tV1M4dWNBc0lCUHJCRTFIeXROSkpxT2RxUEFidzZXV1ZRV0ktaW5xY3NlZHk0YXFXeDNVZEtIcWNZNGxmbTFUY2pnMlVEZTlCRXJLWmZwZmg</guid></item><item><title>vivo、小米、OPPO、荣耀推进安卓"公平运行内存机制" 整治卡顿发热后台被杀问题_热点资讯 - antutu.com</title><link>https://www.antutu.com/doc/136652.htm</link><description>&lt;html lang="zh"&gt;
-  &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-    &lt;title&gt;
-      vivo、小米、OPPO、荣耀推进安卓"公平运行内存机制" 整治卡顿发热后台被杀问题_热点资讯_安兔兔    &lt;/title&gt;
-    &lt;meta name="keywords" content="
-    金标联盟, 公平运行内存机制, 应用优化    "&gt; &lt;meta name="description" content="
-    4月21日晚，金标联盟（ITGSA 移动智能终端生态联盟）发布通知，推进"&gt;
-    
-    
-    
-    
-    
-    
-    
-  &lt;/head&gt;
-&lt;/html&gt;</description><author>antutu.com</author><pubDate>Wed, 22 Apr 2026 08:52:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1VVDFWb3R0SWJneFNudnlKRUhBRXppcm1YUU1OaDdDZS1ldDVjWHNKUXFya21MVkIzNmJHajM4bDZQODdQdXdSeUdZaW01dw</guid></item><item><title>阿里字节腾讯，开始新一轮AI大基建 - 36氪</title><link>https://m.36kr.com/p/3777620397691911</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p&gt;同样的模型，在不同的使用方式下，Token消耗成本与执行效率会出现天壤之别，这已成为AI从技术走向产业的最大痛点。&lt;/p&gt;
-  &lt;p&gt;为破解这一关键瓶颈，一场以“Harness Engineering（约束工程）”为核心的AI新基建浪潮，正在阿里、字节、腾讯三大巨头间全面打响，行业也从模型竞赛迈入“工程化落地”竞赛。&lt;/p&gt;
-  &lt;p&gt;什么是Harness？其英文直译为马具、缰绳。如果将大模型比作一匹潜力无限的烈马，Harness便是驾驭它的全套驾驶系统，统筹调度工具、上下文记忆、工作流路径，进而直接决定AI能否稳定、高效、低成本地创造价值。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;近期，腾讯集团高级执行副总裁、云与智慧产业事业群CEO汤道生撰文指出：“人工智能正式进入了Harness时代。”&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_ecc362305bbc46dc9ed82895f107233b@000000_oswg910225oswg1080oswg814_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;来源：AI生成&lt;/p&gt;
-  &lt;p&gt;他强调，AI行业正在发生标志性转变——业界不再只聚焦模型本身，模型之外的代码、配置、执行逻辑、反馈循环、约束机制等一整套体系，共同构成了Harness的核心范畴。“腾讯将全面强化模型的Harness与工具能力，以精细化工程实现最大化释放大模型价值。”&lt;/p&gt;
-  &lt;p&gt;无独有偶，4月2日，火山引擎总裁谭待在被问到“Harness Engineering”相关问题时，也对《中国企业家》等媒体谈道：框架必须与模型协同进化，字节跳动旗下ArkClaw智能体体系已可以支撑多模态与复杂任务闭环执行。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;模型决定能力下限，而Harness正在决定模型的效率上限。巨头间的核心竞赛已不是“谁的模型参数更强”，而是谁能让AI更高效地干活、更低成本地落地、更深度地重构企业工作流。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;从组织架构调整到技术框架搭建，从桌面Agent普及到Skill生态扩张，中国科技大厂的人力、资本与算力资源，正重新排布——其本质是对AI时代工作流定义权的争夺。&lt;/p&gt;
-  &lt;p&gt;当前，三巨头路线也呈现出清晰分野：阿里一方面以Token为核心，打造了模型、MaaS平台和Agent应用的协同作战模式，另一方面也加强了从GPU、云沙盒到安全体系的全栈基建能力；腾讯聚焦于产品化落地与生态协同；字节则深耕多模态模型与Harness框架一体化，形成各具特色的竞争策略。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;从桌面工程到Skills&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;作为AI时代的调度中枢，Harness的高效运转，高度依赖底层能力支撑，也依赖于Coding与Skills能力的夯实。&lt;/p&gt;
-  &lt;p&gt;可以说，Harness、Coding与Skills三者，共同构成了AI落地的工程体系。其中，Coding负责生成代码、工具与软件，让AI具备执行操作的基础能力。Skills是封装后的可复用技能，将高频任务模块化、标准化。Harness则是顶层的约束与调度系统，统一管理工作流、上下文、记忆、权限与成本。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_1bc913fd44f6447c826a61f615ada102@000000_oswg858172oswg1080oswg814_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;来源：AI生成&lt;/p&gt;
-  &lt;p&gt;简单来说，Coding造工具，Skills存经验，Harness管全局。相应地，各家科技大厂近期也都在围绕这几大方向，排兵布阵。&lt;/p&gt;
-  &lt;p&gt;2025年，阿里、字节、腾讯先后推出了AI Coding工具——Qoder、Trae、Codebuddy，极大提升了代码效率，也极大压缩了产品周期。&lt;/p&gt;
-  &lt;p&gt;2026年开年，三大厂又同步推出了桌面Agent产品，并密集上线Skills广场，目标直指全面重构企业工作流。&lt;/p&gt;
-  &lt;p&gt;其中，阿里QoderWork于今年1月上线，由Qoder团队打造，目前已收获几十万用户，近80%用户日均发起3次以上任务。&lt;/p&gt;
-  &lt;p&gt;阿里巴巴Qoder负责人叔同对《中国企业家》预测：&lt;strong&gt;未来Agent的核心能力将是自我进化：缺工具就自动Coding生成工具。他将Skill比作《黑客帝国》电影中，主角在系统中快速学习新技能。小到个人、大到企业，都可将能力蒸馏为Skill，并实现任意复制。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;腾讯则推出了办公智能体WorkBuddy。腾讯云AI智能体产品总监黄广民则表示：未来工作模式将全面云端化，多人可以通过对话协同，调度不同的Agent完成分工。“如果Agent实现全自主运行，软件开发全流程都可上云，形成云端软件工厂。App与创意可批量落地，大幅释放生产力。”&lt;/p&gt;
-  &lt;p&gt;字节则在Coding产品Trae的基础上，推出了SOLO桌面版，主打一站式办公任务解决方案。&lt;/p&gt;
-  &lt;p&gt;目前，阿里、腾讯、字节三家也均建成了Skill广场：QoderWork拥有数十个社区共享技能，用户使用超十万次；腾讯WorkBuddy汇聚了140多位专家、1000多个常用Skill，成为企业级能力中枢。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;Token至上，AI原生&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;随着AI工程化落地进入深水区，科技巨头的内部组织与工作范式也在发生深刻变革。以高速迭代、AI原生、Token为核心的团队文化被推崇，企业变革也呈现出两大鲜明特征：一是行动坚决、迭代节奏极致压缩；二是全面拥抱AI，以Token消耗与效能产出为核心，重构团队的运行规则。&lt;/p&gt;
-  &lt;p&gt;叔同告诉《中国企业家》：QoderWork的研发团队仅5人，从启动开发到上线公测，仅用时7天，团队高度复用了Qoder既有的基础设施，将精力集中于功能研发，以及保障系统安全和数据安全。&lt;/p&gt;
-  &lt;p&gt;作为2010年便加入阿里巴巴的技术管理者，叔同曾主导推动阿里全面容器化、统一调度与混合部署，实现全业务云原生转型；如今，他正带领团队探索AI原生与Agent原生的全新产品形态，完成从云原生到AI原生的时代跨越。&lt;/p&gt;
-  &lt;p&gt;在他看来，AI原生组织的核心特征，是要鼓励团队大规模使用Token，在关键业务场景中，实现10倍以上的效能突破。&lt;strong&gt;这种变革不只局限于产品研发环节，更要贯穿创新产品设计、PRD（产品需求文档）快速生成、需求分析等全流程。各工种、各环节都要全面以Agent自主工作为抓手提效，最终形成持续创新与高速迭代能力。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;“我们希望成为行业中非常先进的一批团队。”叔同说。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_18bd9a65d8644f4cbc215962a86acabd@000000_oswg968253oswg1080oswg720_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p class="img-desc"&gt;叔同来源：受访者&lt;/p&gt;
-  &lt;p&gt;数字经济价值分配逻辑，正在发生根本性迁移。软件的价值形态被AI重构，但价值本身并未消失，而是持续向大模型、算力体系与AI运行服务转移。&lt;/p&gt;
-  &lt;p&gt;对此，叔同提出明确判断：未来价值分配将呈现快速迁移局面：&lt;strong&gt;“100元产业投入中，仅会有1~5元分配给软件和代码生产环节，剩余的更多价值，都会流向Token相关产业，包括GPU算力、云平台与大模型基座厂商。”&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;对技术从业者而言，核心能力要求也随之改变，程序员的工作重心将从编写代码转向需求判断、管理Agent、调度任务、评估输出质量与规范执行流程。与之对应，日活、用户使用时长也不再是评估产品的核心依据，迭代速度与市场占有率成为衡量产品价值的关键。&lt;/p&gt;
-  &lt;p&gt;叔同告诉《中国企业家》，在阿里巴巴内部，AI落地的评估体系已从微观代码生成量，转向宏观Token消耗与价值产出比对。通过Token消耗规模与业务增值幅度，可以判断出AI落地的成效。&lt;/p&gt;
-  &lt;p&gt;目前，阿里的HR、法务等中后台职能岗位，已全面使用AI工具QoderWork。叔同同时指出：企业工作流的系统性重塑，必然伴随着短期挑战。Token成本高企、局部案例效果不及预期等现象会客观存在。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;“企业应该鼓励消耗Token、以产出十倍价值为目标驱动。让Agent多干活、高产出，才是未来趋势。”&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;腾讯同样在内部推行AI原生变革，黄广民透露：WorkBuddy从0到内测，仅用时两天，当前版本迭代速度达到每日两版。团队与AI Coding工具协同顺畅，实现了人与AI 24小时的不间断协作。&lt;/p&gt;
-  &lt;p&gt;他表示，WorkBuddy与Codebuddy的应用，尽管短期会带来组织的成本结构变化，但从腾讯内部数据看，AI工具带来的整体收益显著高于投入。企业应站在宏观视角评估长期收益，过度聚焦个别失败案例，将错失工作模式变革的战略窗口。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;战局升级&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;当模型能力只是AI落地的基础要件，桌面Agent进入商业化落地阶段，市场格局也正在迎来新变量。在2025年登陆资本市场的大模型初创企业MiniMax与智谱AI，也正强势入局，成为AI工程化赛道上不可忽视的新兴力量。&lt;/p&gt;
-  &lt;p&gt;2026年4月14日，MiniMax对旗下桌面端Agent进行了两项重要更新，正式推出Pocket便携功能与Computer Use电脑操控能力。&lt;/p&gt;
-  &lt;p&gt;智谱AI的布局更早一步，于3月10日上线AutoClaw（澳龙）桌面智能体，预置超过50项高频Skill，支持一键接入飞书等办公工具。4月17日，智谱进一步宣布，AutoClaw正式上线自进化机制与Skill商店，用户无需额外配置即可持续获得升级后的自动化能力。&lt;/p&gt;
-  &lt;p&gt;在基础设施层面，两家模型公司同步推进Infra层技术突破，构建更完整的Harness工程体系。4月16日，MiniMax发布全球首个云端沙箱Hermes，并推出基于该架构的MaxHermes智能助手。&lt;/p&gt;
-  &lt;p&gt;智谱AI同样将技术重心放在工程化与自进化体系。&lt;strong&gt;财报电话会上，智谱CEO张鹏提出，智能范式正经历关键跃迁：从轻量化Vibe Coding，逐步走向工业级Agentic Engineering（智能体工程）。这一演进将持续突破智能上限，并推动Token调用量呈指数级增长。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;张鹏进一步指出，未来衡量个体与组织价值的核心标准，将从信息持有量转向“Token架构师”能力。在这一新的产业逻辑中，Agent的执行能力将与Token消耗量高度绑定，Agent规模化落地直接等同于Token的商业化兑现，AI产业的价值分配体系由此被彻底重构。&lt;/p&gt;
-  &lt;p&gt;从Harness工程的全面铺开，到Coding与Skills生态的层层夯实，再到AI原生组织与Token价值体系的深度重构，一场由技术驱动的产业革命已然成型。而Token的崛起，则是价值分配体系向生产力核心环节迁移的必然结果。&lt;/p&gt;
-  &lt;p&gt;一场关乎效率、成本、生态与话语权的重塑刚刚开始。未来，胜负手将不再是谁拥有最强的模型，而是谁能以更成熟的工程体系、更开放的生态协同、更高效的价值转化，让AI稳定、持续、规模化地创造真实商业价值。&lt;/p&gt;
-  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MTI3NTQ1MTY0MQ==&amp;amp;mid=2650666738&amp;amp;idx=1&amp;amp;sn=17b85ab571b66a0f3eda83886555852e&amp;amp;chksm=7ded78a58d484638d0d4f913d8ba2e2a5d9e88900617404895fe1efc4648ce9136a718cc0125&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“中国企业家杂志”（ID：iceo-com-cn）&lt;/a&gt;，作者：闫俊文，编辑：李原 何伊凡，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36氪</author><pubDate>Wed, 22 Apr 2026 08:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBPSlF1aGQ5cm5SY3hTQzFYZWJ1MGlMeHAzU0h2MVZoWW92WWZRNjlmT3UybHVrUmhxSTNJN3RzNVh4TnhKZFlieWlDNFhEZw</guid></item><item><title>1000Gbps的速度没意义 6G网络回归现实：比5G-A网速还低 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117611.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;&lt;tabbit-translation-selection data-wxt-shadow-root=""&gt;&lt;/tabbit-translation-selection&gt;&lt;/p&gt;
-&lt;p&gt;快科技4月22日消息，5G网络商用五六年了，再过几年就要到6G了，此前大家对6G的期待很高，网速要达到5G的10-100倍，1000Gbps（1Tbps）的时代就要来了。&lt;/p&gt;
-&lt;p&gt;然而这样的结果可能不会出现了，6G标准还没有完成制定，但这次的标准主打一个回归现实，不再追求虚无缥缈的超级指标了，中国工程院院士邬贺铨日前在全球6G技术与产业生态大会的演讲就提到了这一点。&lt;/p&gt;
-&lt;p&gt;根据他的说法，6G曾经设想峰值速率为5G的百倍，&lt;strong&gt;现ITU已明确6G相对5G约提升5-20倍，相对5G-A提升只有0.5-2倍。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;体验速率方面，6G也曾经设想体验速率为1-10Gbps，现ITU已明确6G体验速率为300-500 Mbps+，相对5G约提升3-5倍，相对5G-A仅0.3-0.5倍。&lt;/p&gt;
-&lt;p&gt;可以看出，6G标准在网速方面比之前更加保守，峰值速率只有50-200Gbps，而5G、5G-A（也就是5.5G）的是10-20Gbps、100Gbps。&lt;/p&gt;
-&lt;p&gt;如果看体验速率，&lt;span&gt;&lt;strong&gt;6G的300-500Mbps速度甚至是在倒退，5G标准是0.1-1Gbps，5G-A是1-10Gbps。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/14aa9ede364b4aafae356617dfde3bd7.jpg" target="_blank"&gt;&lt;img alt="1000Gbps的速度没意义 6G网络回归现实：比5G-A网速还低" h="399" src="//img1.mydrivers.com/img/20260422/s_14aa9ede364b4aafae356617dfde3bd7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;但6G会在时延、可靠性上提升一个量级，6G时延0.1-1ms比5G的1-10ms、5G-A的0.5-1ms，可靠性从99.999%、99.9999%提升到了99.99999%。&lt;/p&gt;
-&lt;p&gt;同时定位精度也从米级、亚米级提升到了厘米级，连接密度也从100万/km2、500万/km2提升到了1亿/km2，这两个指标比5G是100倍级别的提升，比5G-A也有20倍的提升。&lt;/p&gt;
-&lt;p&gt;更重要的是，6G的能效比5G要降低90%以上，比5G-A也有7倍以上的改进。&lt;/p&gt;
-&lt;p&gt;邬贺铨表示，6G指标回归现实的主要原因是实际应用需求(XR、车联网、工业)的可满足性、技术可获得性、成本可接受性，从“极限”收敛到“可商用、可落地、成本可控”。&lt;/p&gt;
-&lt;p&gt;总之，从邬贺铨院士的介绍来看，未来的6G网络不再追求极限速度，1000Gbps的目标没什么意义了，甚至体验速率比5G-A还要下降。&lt;/p&gt;
-&lt;p&gt;但是6G网络在时延、可靠性及能效方面会有巨大的提升，&lt;strong&gt;换句话说就是部署成本及维护成本会显著降低，&lt;/strong&gt;这也是之前很多设备厂商及运营商不看好6G很快在2030年商用的原因。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/8d6d9307-d12a-419f-a520-0cfff1f08721.jpg" target="_blank"&gt;&lt;img alt="1000Gbps的速度没意义 6G网络回归现实：比5G-A网速还低" h="381" src="//img1.mydrivers.com/img/20260422/S8d6d9307-d12a-419f-a520-0cfff1f08721.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 08:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5pajYyc19BdFJLOHY3Wm1SMHRlRE1KODNBcmNITXBwWTZONFloUHJXNVRJQnd6TkpvUUhndVhQelI0VGlxQkJtNXMyM0hfajBQQk5vQzZBVXo</guid></item><item><title>库克9月卸任苹果CEO 网友整活P图入职小米汽车 小米高管疑在线澄清 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117612.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;库克9月卸任苹果CEO 网友整活P图入职小米汽车 小米高管疑在线澄清&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-22 16:34:31  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1117612-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，近日，苹果官方宣布重磅人事变动：CEO 蒂姆·库克将于今年 9 月卸任，转任董事会执行董事长，未来将聚焦苹果董事会事务与公司长期战略，苹果CEO 一职则由现任硬件工程高级副总裁约翰·特努斯正式接任。&lt;/p&gt;
-&lt;p&gt;这一消息一出，立刻引来网友脑洞大开的趣味整活，一张高度逼真的合成图在社交平台火速刷屏，直接将相关话题送上了热搜。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/be4b50dc74c846379599700c194e6f37.png" target="_blank"&gt;&lt;img alt="库克9月卸任苹果CEO 网友整活P图入职小米汽车 小米高管疑在线澄清" h="664" src="//img1.mydrivers.com/img/20260422/s_be4b50dc74c846379599700c194e6f37.png" w="420"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;图片中，小米官方账号官宣蒂姆·库克加入小米汽车并出任 CEO，称其将全面执掌小米汽车业务，带领品牌开启全球化新征程。&lt;/p&gt;
-&lt;p&gt;就连库克的 “个人微博” 也神同步 “回应”：“&lt;strong&gt;非常荣幸加入小米汽车，看到SU7的第一眼，我就被深深吸引了。我期待与小米团队一起，把最好的智能体验带给全球用户。一起加电！&lt;/strong&gt;”&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/649cf8dba6704aa48ac2c03cc509ae6d.jpg" target="_blank"&gt;&lt;img alt="库克9月卸任苹果CEO 网友整活P图入职小米汽车 小米高管疑在线澄清" h="1077" src="//img1.mydrivers.com/img/20260422/s_649cf8dba6704aa48ac2c03cc509ae6d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;因图片制作细节逼真，不少网友和汽车博主第一眼都信以为真，纷纷直呼 “差点被骗”。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/a08e3c6d0bbb47b5aa2a0134e6ca908b.png" target="_blank"&gt;&lt;img alt="库克9月卸任苹果CEO 网友整活P图入职小米汽车 小米高管疑在线澄清" h="401" src="//img1.mydrivers.com/img/20260422/s_a08e3c6d0bbb47b5aa2a0134e6ca908b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;面对这波趣味玩梗，似乎惊动了小米集团董事长特别助理、战略市场部副总经理徐洁云，他疑似在线火速澄清，直言：&lt;strong&gt;乱P 图不可取，可不兴这么乱开玩笑的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/a33a7b3313c742e4a71deb74d47c5b9d.png" target="_blank"&gt;&lt;img alt="库克9月卸任苹果CEO 网友整活P图入职小米汽车 小米高管疑在线澄清" h="282" src="//img1.mydrivers.com/img/20260422/s_a33a7b3313c742e4a71deb74d47c5b9d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;事实上，库克此次只是卸任苹果 CEO，并不会离开苹果，而是以执行董事长的身份，还会继续为苹果的长远发展掌舵。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 08:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1TOS1ka0RpZlNfcHJfOFhJY0FmX1N5VXF4WWhEcXZIcEJyZnZJQnpBRU9idTNKRjA5WWdscmJPLWhmdzVWMDVjdEgxZGFPTXNpSFN3VlVvMkg</guid></item><item><title>突然！AMD、Intel CPU价格急速暴涨最高20%：还有一个坏消息 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117609.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，苏妈上个月就说了，CPU业务的需求实际上远远超出了她的预期。这不，CPU价格马上就暴涨了一波。&lt;/p&gt;
-&lt;p&gt;据《工商时报》消息，&lt;span&gt;&lt;strong&gt;AI运算需求持续爆发，CPU市场正掀起新一轮全面涨价潮。ODM商场透露，今年3月起，消费级CPU价格上涨5%至10%，服务器CPU涨幅达10%至20%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;供应链方面显示，大厂还在酝酿今年第三季的新一轮涨价。&lt;/p&gt;
-&lt;p&gt;总体而言，&lt;strong&gt;本轮涨价由Intel、AMD两大巨头主导。Intel 3月已调涨PC CPU价格，4月1日进一步上调服务器CPU售价，直接带动第二季毛利率回升。市场预期，Intel下半年仍有8%至10%的涨价空间。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;AMD则计划在今年第二季、第三季，分两次上调服务器CPU价格，累计涨幅将达16%至17%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这轮涨价核心来自两大驱动力。一是AI需求的全面爆发。此前AI热潮先引发GPU长期短缺，2025年年中GPU供应才趋于缓和，随后内存存储芯片接棒缺货。如今AI代理需要CPU协调GPU、NPU完成计算任务，AI推理需求激增，直接推高CPU需求。&lt;/p&gt;
-&lt;p&gt;Intel CFO大卫・津斯纳曾直言“今年CPU再次成为热门”，已有客户签订长单锁定货源。AMD CEO苏姿丰也表示，CPU需求增长远超预期。&lt;/p&gt;
-&lt;p&gt;二是先进制程产能高度紧张。当前2nm、3nm制程进入量产扩产阶段，AI芯片、GPU、CPU正在全面争抢晶圆产能，直接推高代工报价，拉长交付周期。&lt;/p&gt;
-&lt;p&gt;供应链直言，CPU目前仍处于严重供不应求状态，涨价看不到终点。Intel、AMD主流CPU均采用3nm制程，台积电罕见持续加码3nm扩产，也印证了需求的爆发。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;比当下涨价更严峻的坏消息是，CPU紧缺局面短期无法缓解。&lt;/strong&gt;机构分析，&lt;span&gt;&lt;strong&gt;2026至2027年CPU市场将持续高度紧缺，只要AI基建持续扩张、先进制程瓶颈未解，涨价趋势就会延续。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;更值得警惕的是，产能正持续向高利润的企业级市场倾斜，若现状不变，2028年入门级PC市场或将彻底终结。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/f577be9c37624001ab6ebd0f7e09340b.jpg" target="_blank"&gt;&lt;img alt="突然！AMD、Intel CPU价格急速暴涨最高20%：还有一个坏消息" h="400" src="//img1.mydrivers.com/img/20260422/s_f577be9c37624001ab6ebd0f7e09340b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 08:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBnTU9qbk1PNnQtb2dLQjNQN0dZbHVSMHJibGhHN20zaDlncUFsc1Z6TEdVTjVmUy0wRFhKM3MtcVlCRFgxeENodHdadXFERkltUWgyNjd1ZVA</guid></item><item><title>小心，别被ChatGPT Images 2.0骗了 - 36kr.com</title><link>https://m.36kr.com/p/3777661868463364</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="900,383" src="https://img.36krcdn.com/hsossms/20260422/v2_b1190ed60af041cebfa302df3dd6f6af@5888275_oswg70902oswg430oswg430_img_000?x-oss-process=image/format,jpg/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;上面这张公告图，是AI生成的。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;智东西4月22日报道，今日凌晨，OpenAI正式发布了万众瞩目的图像生成和编辑模型ChatGPT Images 2.0，该模型已经在聊天机器人ChaGPT和API服务中全量上线。&lt;/p&gt;
-  &lt;p&gt;阿尔特曼在发布会直播中评价：“ChatGPT Images 2.0的发布是一次巨大的飞跃，相当于一次性从GPT3直接跳跃到了GPT5。”&lt;/p&gt;
-  &lt;p&gt;模型上线后飞速登上Image Arena所有榜单第一，在竞争激烈的文生图排行上，&lt;strong&gt;领先Nano banana 2高达242分。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_6d5b3cd69ad345d782c36cd77e1f8d5d@000000_oswg220500oswg1080oswg407_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;模型发布后迅速引爆社交媒体，有网友直呼&lt;strong&gt;“香蕉不香了，ChatGPT Images 2.0杀死了比赛。”&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_d5b14d8aaab64018884269a6c2caf879@000000_oswg24319oswg1027oswg159_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;大量网友纷纷展示自己用ChatGPT Images 2.0生成的图像，一时间各种神图满天飞，ChatGPT Images 2.0的强大能力让这些图片真假难辨，有人发现它甚至可以生成能够扫描的条形码。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_c6e47a5c87844593afa0cab3e1284543@000000_oswg353631oswg1080oswg528_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在网友展示的生成结果中，&lt;strong&gt;有直播截图、发布会照片，甚至还有转账记录等非常真实，且与日常生活紧密联系的图片，&lt;/strong&gt;这些ChatGPT Images 2.0生成的图片足以在很多场景下以假乱真，不明缘由的人极易被骗。&lt;/p&gt;
-  &lt;p&gt;智东西搜集以及测试了各类案例，看看你能不能分出真假。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;01.直播、转账、发布会，AI生图真假难辨&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;文章头图中的DeepSeek V4发布公告，就是用ChatGPT Images 2.0生成的，提示词如下：“一张关于 DeepSeek V4 发布公告的推文截图，由deepseek官方账号发布，保留头像、用户名、点赞、转发、评论等推文界面元素。”&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_6e7a26e66ac642bcae936744729220a6@000000_oswg576290oswg1080oswg864_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;顺带着，智东西让ChatGPT Images 2.0生成了一张朋友圈截图，让整件事情看起来闭环一些。&lt;/p&gt;
-  &lt;p&gt;提示词：“一张微信朋友圈截图，Sam Altman发朋友圈称赞DeepSeek V4是一款划时代的模型，下面是马斯克、扎克伯格、黄仁勋的点赞和评论。”&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_c75dfae9a0e742d0979e37947552314c@000000_oswg456582oswg1024oswg1536_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在没有参考图的情况下，ChatGPT Images 2.0生成的截图还挺真实的，不过，生成的人物头像有点偏差，黄仁勋的名字也有笔画残缺。&lt;/p&gt;
-  &lt;p&gt;还有用ChatGPT Images 2.0生成直播页面，这个玩法在最近内测中疯传，有人用GPT Image 2生成了阿尔特曼带货豆包的直播截图，毫无违和感，左上角的抽奖红包和下方评论非常真实，如果换成其他国内知名人士的形象，可能真会被骗到。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_a0eff71579a24c208391c6fa3bf94a9f@000000_oswg181994oswg941oswg1672_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;智东西还按照生图模型测试惯例，让它生成一个手写文字的照片，输入提示词：“用手机拍摄一张手写的高中数学作业，字迹工整，写在白纸上，内容是导数大题。”&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_2ac35e9f6e9e47cf8c5b27e4159f6a31@000000_oswg1436972oswg1080oswg1186_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;生成的照片跟很多字迹工整的学生，写的作业几乎一样，评论区有没有老师，看看能不能辨出真假。&lt;/p&gt;
-  &lt;p&gt;还有人整活，让乔布斯去发布小米汽车，看了半天也没发现哪里不合适。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_e3358232c77e42d8b1ea5650a0ec16a0@000000_oswg67175oswg1080oswg864_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;如果觉得上一张图不够真实，那看下面这张：&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_1a2e267fad36485a9f8f127f0e9c5307@000000_oswg96135oswg1080oswg810_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;这张图片也是ChatGPT Images 2.0生成的，提示词：“在苹果园区举行的iPhone 20发布会上，蒂姆·库克正在台上演讲，这张业余iPhone照片是从人群中远距离拍摄的。”&lt;/p&gt;
-  &lt;p&gt;这张照片非常符合媒体视角，如果不是明晃晃的iPhone 20以及库克卸任，估计会骗到很多人。&lt;/p&gt;
-  &lt;p&gt;再看这张图，这是智东西在ChaGPT中生成的学术论文，输入提示词：“一张北京大学学报，刊登关于AI安全问题的论文，排版精美，风格严谨。”&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_ee6c5627676040db84e9e474057ed1a2@000000_oswg968837oswg1024oswg1536_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;一张学报页面就做好了，整体风格非常符合正式学术期刊的规范，非常简洁，中文文本准确。标题、作者、机构、摘要、关键词、正文引言都布局合理，行距和段落层次分明，且连DOI和版权信息都生成了，看起来非常正规。&lt;/p&gt;
-  &lt;p&gt;如果有人把这个论文截图丢过来，让你去查阅资料作为参考，估计会有人被骗到。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_38644919e1574c6bbda8be52678e9ce0@000000_oswg73746oswg968oswg1273_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;甚至还有人用ChatGPT Images 2.0生成转账截图，细思极恐，&lt;strong&gt;连公章都能伪造，这可不是件好事。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;这张药方，也是ChatGPT Images 2.0做的，除了字迹太过工整不像医生写的以外，其他的都足以以假乱真。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_e7049fcc084046aaa2a3c35593c3d90c@000000_oswg53555oswg510oswg680_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;02.ChatGPT Images 2.0好评如潮，网友已经玩疯了&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;目前所有ChatGPT和Codex用户都能免费使用一定的生图次数，&lt;strong&gt;实测下来预计能生成7张图左右。&lt;/strong&gt;付费订阅用户则可解锁思考模式，模型会进行联网搜索、测试以及自我检查保证生图质量，同时模型gpt-image-2已通过API对外开放。&lt;/p&gt;
-  &lt;p&gt;用户可以打开ChatGPT对话，点击输入框左侧的加号选择创建图片，会默认使用ChatGPT Images 2.0，接着可以点加号添加照片和文件，然后发送提示词即可。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_21baf24dd832469a9627d775e35f3f82@000000_oswg132381oswg1080oswg434_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;对于需求不明确的情况，ChatGPT会向用户进行询问，确认要求后再生成图片。&lt;/p&gt;
-  &lt;p&gt;ChatGPT Images 2.0发布后，网友们纷纷尝试，好评如潮，大家都在展示自己用ChatGPT Images 2.0生成的图片有多精美。&lt;strong&gt;有网友直呼，这根本分不出真假。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_de6707e4685c4c5899733255227ffa9c@000000_oswg1389214oswg1029oswg1316_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;一位东京大学医学博士晒出了自己生成的论文海报，表示虽然还没有测试，但ChatGPT Images 2.0&lt;strong&gt;似乎可以处理论文中的数据&lt;/strong&gt;，他惊呼科学研究即将迎来又一次变革。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_24636207342a4c249ce02b3b76702219@000000_oswg798323oswg1047oswg1330_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;vibecode.联合创始人，海外博主Riley Brown直言：&lt;strong&gt;“这是最好的图像模型。”&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="" src="https://img.36krcdn.com/hsossms/20260422/v2_f7d978f447004446b336a4d447b949f3@000000_oswg41540oswg1020oswg191_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;虽然ChatGPT Images 2.0非常强大，但很多足以骗人的照片还是需要警惕，AI生图的伦理问题始终不能放下，那些以假乱真的图片，&lt;strong&gt;如果换成熟悉的人、企业、地点，从身边人的社交媒体发过来，会不会有人被骗呢？&lt;/strong&gt;&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;03.结语：AI生图赛道卷出新高度，但也需要规范治理&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;在AI生图需求愈发高涨的现在，ChatGPT Images 2.0&lt;strong&gt;的发布无疑是将整个行业的水平带到了一个新的高度，&lt;/strong&gt;不管是从生成图像的清晰度、细节还原能力，还是从风格多样性与创意表达的自由度来看，都有显著提升。&lt;/p&gt;
-  &lt;p&gt;然而，随着技术能力的增强，行业也面临着新的挑战，包括版权保护、内容审查、以及生成内容的伦理风险。&lt;/p&gt;
-  &lt;p&gt;这些AI生成的“神图”很多都能以假乱真，比如发布会、朋友圈截图以及直播画面这些日常生活中常见的信息，&lt;strong&gt;假设这些内容充斥着大量AI伪造的图片，那么不知道会有多少人上当受骗。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;未来的发展不仅需要算法的进步，&lt;strong&gt;更依赖于规范化的行业标准和可持续的应用策略。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;可以预见，随着技术和治理双向优化，AI生图将在创意设计、教育培训、娱乐内容等多领域发挥更大的价值。&lt;/p&gt;
-  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&amp;amp;mid=2652801491&amp;amp;idx=1&amp;amp;sn=f2711317e2cc9e07a1664278e1dd305c&amp;amp;chksm=85c4174fde91679978dae91f5c7df0131363d75291e4d10068f09316ad2ce36b3fd44f4f990a&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“智东西”（ID：zhidxcom）&lt;/a&gt;，作者：毕伟豪，编辑：漠影 ，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36kr.com</author><pubDate>Wed, 22 Apr 2026 08:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE9heUtkRUNRNG5Lblh1VXZRRzFveXZHaF9Ja2Z4Vy10bEh4N0J2eU10emxwVGpYclFZLVdvUWdUZ3lLckFUQUJSTHpVaWRLQQ</guid></item><item><title>RTX 3060显卡复活在即 黄仁勋表态：回归7nm等旧工艺不太可能 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117602.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，由于内存涨价，今年的PC市场可能会出现以前想都不敢想的情况，停产多年的经典型号都要复活，AMD有锐龙7 5800X3D，NVIDIA也有RTX 3060显卡归来。&lt;/p&gt;
-&lt;p&gt;作为史上最成功的60系显卡，RTX 3060其实也不算多远，目前的性能还很能打，1080p下畅玩主流3A游戏问题不大，光追和AI性能落后一些放在当前来看可能还是好事。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;RTX 3060的性能目前跟A770、RX 6600 XT差不多，比RTX 4060落后也就15%左右，&lt;/strong&gt;不过这个是12GB版的，如果是8GB版的，性能还会更低一些。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/ad5722fa-61fa-4517-839f-4838437561bc.png" target="_blank"&gt;&lt;img alt="RTX 3060显卡复活在即 黄仁勋表态：回归7nm等旧工艺不太可能" h="375" src="//img1.mydrivers.com/img/20260422/Sad5722fa-61fa-4517-839f-4838437561bc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;RTX 3060使用的是三星8nm工艺生产，跟当前的5nm-3nm相比成本要低多了，而且产能不是问题，因此有助于确保市场上的供应，不像RTX 50系列那样受到成本大涨导致的冲击。&lt;/p&gt;
-&lt;p&gt;但是最终是否会推出RTX 3060，还不是板上钉钉的，因为NVIDIA CEO黄仁勋此前在接受播客Dwarkesh Patel的访谈中也谈到了回归旧工艺的问题，他并不认可这种做法。&lt;/p&gt;
-&lt;p&gt;对于使用旧工艺来缓解供应压力的问题，&lt;span&gt;&lt;strong&gt;黄仁勋表示理论上可以这么做，但经济上完全不划算，&lt;/strong&gt;&lt;/span&gt;每一代新架构的进步，不止是制程工艺上的，还有封装、堆栈技术及整体系统架构上的创新，除非某一天真的没法提高产能了，否则NVIDIA绝不会往回走。&lt;/p&gt;
-&lt;p&gt;从黄仁勋的回应来看，回到旧工艺虽然技术上可以做到，但并不是容易的事，而且代价不小，算下来不划算。&lt;/p&gt;
-&lt;p&gt;不过黄仁勋不赞成回退工艺可能是针对AI卡而言的，具体到RTX 3060的身上，他们并不是用旧工艺生产新架构显卡，而是重启之前的旧架构旧工艺显卡，因此这也不算倒退，更多地的是市场策略的妥协，未来还是有可能看到RTX 3060重生的。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/87383d32-268d-437a-85da-4541965969d4.png" target="_blank"&gt;&lt;img alt="RTX 3060显卡复活在即 黄仁勋表态：回归7nm等旧工艺不太可能" h="372" src="//img1.mydrivers.com/img/20260422/S87383d32-268d-437a-85da-4541965969d4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;tabbit-translation-selection data-wxt-shadow-root=""&gt;&lt;/tabbit-translation-selection&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 08:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9hWENrOW83bW9NTEFQbENoNTA1d1dIeUU2dmFfRVBhX2ZURUdPMjE3LU1fMEVlaFFYTEs5TUxzYU9lQklfdWFZb29TSnlGNTVLS0hCcFZyNHg</guid></item><item><title>文科生逆袭！周鸿祎：硅谷大厂正在高薪疯抢文科生 岗位占比已涨至30% - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117600.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;文科生逆袭！周鸿祎：硅谷大厂正在高薪疯抢文科生 岗位占比已涨至30%&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-22 16:05:18  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1774704.html" title="王一的主页" class="newstiao4"&gt;王一&lt;/a&gt;&lt;p&gt;  编辑：王一 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1117600-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，&lt;span&gt;&lt;strong&gt;据报道，近日，360集团创始人周鸿祎发视频称：“谷歌、微软一边裁程序员，一边高薪聘请哲学、文学、新闻系毕业生。AI公司开始大量招文科生，占比从5%涨到30%。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;周鸿祎并非首次就该话题发声，他曾表示，AI的快速发展已经超越了人类对文明、伦理、法律的研究，经济学家、社会学家等研究人类文明发展的文科生，恰恰是思考这些问题的关键力量，如果不补上这一课，技术快速发展会带来很多社会问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;周鸿祎还表示，另一个变化是编程正在被 AI 取代，未来人们需要的是管理能力、指挥能力、表达能力，即能够清晰有逻辑地指挥智能体，在这一方面，文科生是具备优势的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;科技大佬也开始纷纷力挺文科生。&lt;br&gt;
-&lt;br&gt;
-英伟达CEO黄仁勋强调语言能力的重要性，认为英语专业学生有望成为行业佼佼者；&lt;strong&gt;World Labs创始人李飞飞则呼吁，顶级AI实验室应配备人类学家、社会学家等文科人才。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;招聘数据印证了这一热潮，今年以来，头部AI企业文科岗位占比已达20%—30%，“AI叙事设计师”等新岗位应运而生，明确偏好中文、哲学等文科背景。&lt;/strong&gt;&lt;br&gt;
-&lt;br&gt;
-高校也顺势推进改革，北师大开设汉语言文学+人工智能双学位，复旦提升文科交叉专业占比，文理融合已成为教育发展新方向。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/ed63611c-3c9e-469c-810d-a3e7bdee5fc7.png" target="_blank"&gt;&lt;img alt="文科生逆袭！周鸿祎：硅谷大厂正在高薪疯抢文科生 岗位占比已涨至30%" h="399" src="//img1.mydrivers.com/img/20260422/Sed63611c-3c9e-469c-810d-a3e7bdee5fc7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：王一&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 08:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFByTi1TeFFvM0tuVWZsSFVyY1AwM0VrZ05ob2xpcm84ZXY2ejllbXlpUXQwSVVydkdyMkthQ0J1NDQyWDlibzlXMkFSRkFObW4zY0dRZVM5WlM</guid></item><item><title>小米汽车因一张P图冲上热搜第一：Tim Cook出任小米汽车CEO - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117599.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;小米汽车因一张P图冲上热搜第一：Tim Cook出任小米汽车CEO&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-22 15:56:37  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1299472.html" title="建嘉的主页" class="newstiao4"&gt;建嘉&lt;/a&gt;&lt;p&gt;  编辑：建嘉 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1117599-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，今天小米汽车的话题突然冲上了微博热搜第一，但这次并不是有什么新车或营销活动，而是因为一张网友的P图。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;由于日前苹果CEO Tim Cook宣布将于9月退休，有网友P图显示，&lt;span&gt;小米公司官微发文宣布：Tim Cook将出任小米汽车CEO，全面负责小米汽车业务，带领小米汽车迈向全球化新征程。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/1841db35-c08a-4f59-b123-1ee5a9db118c.jpg" target="_blank"&gt;&lt;img alt="小米汽车因一张P图冲上热搜第一：Tim Cook出任小米汽车CEO" h="1000" src="//img1.mydrivers.com/img/20260422/S1841db35-c08a-4f59-b123-1ee5a9db118c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;下方还有Tim Cook个人微博回应称：“非常荣幸加入小米汽车，看到SU7的第一眼，我就被深深吸引了。我期待与小米团队一起，把最好的智能体验带给全球用户。一起加电！”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这张P图制作逼真，搭配小米官方账号样式与文案口吻，以及日前铺天盖地的库克卸任消息，让一些不太了解的网友信以为真，迅速引爆讨论。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;实际上Tim Cook虽然卸任CEO，但并不会离开苹果，而是将转任公司董事会执行主席，专注苹果董事会与长期战略。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="小米汽车因一张P图冲上热搜第一：Tim Cook出任小米汽车CEO" h="337" src="//img1.mydrivers.com/img/20260422/bc4f2efa-2b6f-4491-ac58-6c1b44305be8.jpg" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;苹果CEO职位将由现任苹果硬件工程高级副总裁约翰·特努斯接任，他在2001年加入苹果产品设计团队，2013年升任硬件工程副总裁，2021年晋升为硬件工程高级副总裁，直接向库克汇报工作。&lt;/p&gt;
-&lt;p&gt;特努斯近年來最经典的一役，是让Mac从x86（Intel）架构顺利转成Arm架构的Apple Silicon（苹果自研芯片）。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 07:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE92RjZUUUZTakNNZ2F2MkNyM0I3Q2U2dXZlbVlURnpPaEI1Q0UwT0ZQNUF2T3h2NGFNVWY1YU9pMnJjRVlCQV9UTkFKYTItNWlCRjlsVEUzQy0</guid></item><item><title>一张存储卡卖到12000元！闪迪CFexpress 4.0发布：3700MB/s读写+最高4TB容量 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117595.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，闪迪（SanDisk）近日正式发布了全新一代SANDISK Extreme PRO CFexpress 4.0 Type B存储卡。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;该卡全系采用PCIe Gen 4接口标准，顺序读取速度最高可达3700MB/s，写入速度最高可达3500MB/s。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;当然，最引人瞩目的还是其价格：&lt;span&gt;&lt;strong&gt;128GB入门版售价249.99美元（约合人民币1703.86元），而最顶配的4TB版本售价高达1799.99美元（约合人民币12268.19元），所有容量均提供有限的终身质保。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这款存储卡顶配版售价超过12000元，它在视频录制方面自然有独门绝技。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1TB及以上容量型号获得了VPG-1600认证，保证持续写入速度不低于1600MB/s，足以满足高达12K分辨率的RAW格式视频拍摄需求。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;小容量型号则分别获得VPG-400和VPG-800认证。确保了存储卡在录制高码率视频时不会因写入速度波动而丢帧或中断录制。&lt;/p&gt;
-&lt;p&gt;这款存储卡搭载了SmartIdle技术，当设备进入待机状态时可智能切换至低功耗模式，有效防止过热。&lt;/p&gt;
-&lt;p&gt;同时，坚固耐用的设计使其能承受高达5米的坠落和抵抗高达70牛顿的弯曲，即使在户外恶劣环境下也能保障数据安全。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在容量选择上，闪迪提供了从128GB、256GB、400GB、1TB、2TB到顶配4TB共六种规格。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这款新品预计将于2026年第三季度正式上市。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/26987adf-b4d4-4725-8e49-cd06e27a682f.png" target="_blank"&gt;&lt;img alt="一张存储卡卖到12000元！闪迪CFexpress 4.0发布：3700MB/s读写+最高4TB容量" h="308" src="//img1.mydrivers.com/img/20260422/S26987adf-b4d4-4725-8e49-cd06e27a682f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 07:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1SNnlqdmhCNjdWeldaaVVsRmhQaXFUTzVqZC1iQWtxX054czFVT1lvTTNmSm1KQzNCN2syV2dGTGVaV0RJMUY2NXFhTGVqTGhqRzJ0aW5qNDQ</guid></item><item><title>华为Mate 90首发搭载！鸿蒙7.0快来了：端侧AI大升级 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117596.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，&lt;span&gt;&lt;strong&gt;有博主爆料，华为Mate 90系列将率先搭载全新的鸿蒙7.0系统。此次系统更新的核心亮点在于端侧AI的深度集成，这一进化将主要体现在智能助理小艺身上。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;按照惯例，鸿蒙7.0预计会在年中的华为开发者大会上正式亮相，随后由下半年发布的年度旗舰Mate 90系列出厂预装。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/2fbdd2a5d59a485f94b7562b7b243a36.jpg" target="_blank"&gt;&lt;img alt="华为Mate 90首发搭载！鸿蒙7.0快来了：端侧AI大升级" h="399" src="//img1.mydrivers.com/img/20260422/s_2fbdd2a5d59a485f94b7562b7b243a36.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;目前鸿蒙最新的系统版本号为6.1，该版本首创了小艺伴随式AI，并内置了强大的小艺智慧大脑，这一领先的AI体验已由Pura 90系列和Pura X Max率先搭载。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;据了解，小艺伴随式AI具备类似人脑的记忆、反思与进化能力。它能够根据用户的使用习惯进行自我迭代，从而实现智慧伴读、智慧出行等多项极具实用价值的功能。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;在智慧伴读功能中，小艺可以在阅读前为用户提供精简向导，精准提炼长文的核心逻辑脉络。这极大地节省了用户筛选信息的时间，让深度阅读变得更加高效。&lt;/p&gt;
-&lt;p&gt;在实际阅读过程中，小艺支持边读边提问、实时划重点等交互。它还集成了表格与文字提取、图片翻译以及文档扫描等实用工具，为办公和学习场景提供了全方位的支持。&lt;/p&gt;
-&lt;p&gt;对于未读完的内容，用户可以通过一键稍后阅读功能实现断点续读。在浏览科技与互联网热点时，系统甚至能推荐知乎深度话题智能体，引导用户与网友展开更深层次的讨论。&lt;/p&gt;
-&lt;p&gt;展望未来的鸿蒙7.0，其端侧AI能力将会迎来更加全面的升级。作为华为影像与智慧体验的巅峰之作，Mate 90系列与鸿蒙7.0的软硬结合无疑非常值得期待。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/9b3a939ebc0743008ddd9ed1344c3ef8.jpg" target="_blank"&gt;&lt;img alt="华为Mate 90首发搭载！鸿蒙7.0快来了：端侧AI大升级" h="155" src="//img1.mydrivers.com/img/20260422/s_9b3a939ebc0743008ddd9ed1344c3ef8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 07:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBLREp6S1hKclJFUXJaNWdDaGRaOWRtUkJEMzIzNEZuOFV1ZUo2ekRMLU1VT05jTm1XdTBmN2ZxUVhqaVFWWGNmaGItRnpEUFMwTXVTQzRId2M</guid></item><item><title>不再小众：运动相机2025年销量翻两倍多 影石大疆垄断市场 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117589.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，运动相机这两年彻底火出圈，不再是极限运动玩家专属，已经变成旅行、拍视频、记录日常的标配设备，市场销量一路猛涨。&lt;/p&gt;
-&lt;p&gt;据奥维云网监测数据显示，&lt;span&gt;&lt;strong&gt;2025年国内消费级运动相机线上市场迎来爆发，全年销量达到478万台，同比大涨232%&lt;/strong&gt;&lt;/span&gt;，销售额接近98亿元，同比增长223%。&lt;/p&gt;
-&lt;p&gt;行业呈现明显的头部集中趋势，&lt;strong&gt;影石和大疆两大品牌合计占据75.6%的市场份额&lt;/strong&gt;，几乎包揽了大部分市场，形成双龙头格局。&lt;/p&gt;
-&lt;p&gt;进入2026年，随着多地推行春假与清明连休，6天春日黄金周直接带动出行热潮，运动相机需求再次被点燃。&lt;/p&gt;
-&lt;p&gt;全景运动相机因为360度拍摄、一键出片、不用复杂后期，特别适合旅行记录，环比增长接近20%，成为增速最快的细分品类。&lt;/p&gt;
-&lt;p&gt;其中影石表现格外突出，&lt;strong&gt;春假期间销量环比增长28.5%，以70%的市占率领跑全景相机市场，旗下X5、X4 Air、X3三款机型进入热销榜前五。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;运动相机的快速普及，一方面是因为出行、短视频创作需求持续上升，另一方面是产品不断优化，操作更简单、功能更实用，普通人也能轻松拍出好看的视频。&lt;/p&gt;
-&lt;p&gt;可以预见，随着户外出行和内容创作越来越普遍，运动相机市场还会保持增长，影石与大疆的竞争也会推动产品持续升级。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/7fbbb8a8184e4a7eb87e64f485591a03.png" target="_blank"&gt;&lt;img alt="不再小众：运动相机2025年销量翻两倍多 影石大疆垄断市场" h="448" src="//img1.mydrivers.com/img/20260422/s_7fbbb8a8184e4a7eb87e64f485591a03.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 07:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1Tb1ByZXJsWUE3QXVrWnFsaThaQ09UTGktMWVnaXFUQnZEVDV6ZzFWMTJpTjBCSlZ4RE1nS29CbW9wcXBSNkZWSkdsZk9XS0xMLTFCdWNDV1U</guid></item><item><title>你的脸已被AI明码标价：普通人肖像权买断一年仅100元 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117588.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，据媒体报道，随着短剧和AI的爆火，AI视频的授权问题在今年彻底爆发了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;近日爱奇艺世界大会上，爱奇艺宣布超百名明星入驻AI艺人库，引起网友广泛讨论。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;虽然还是尝鲜性质，但背后一个信号是关于“人脸买卖”的新模式正在成型。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="你的脸已被AI明码标价：普通人肖像权买断一年仅100元" h="358" src="//img1.mydrivers.com/img/20260422/31d3428a-89de-439b-a4ae-9d5ef2b78c3c.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;就在上个月，不少博主反映，AI不仅盗用明星的脸，现在又开始盗用素人的脸，直指部分短剧擅自用AI技术使用其照片，严重侵犯了其肖像权。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="你的脸已被AI明码标价：普通人肖像权买断一年仅100元" h="829" src="//img1.mydrivers.com/img/20260422/22f3a832-4af0-4302-97b6-3776e9d5fd28.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;类似AI短剧盗脸爆发后，演员通告群和社交平台已经出现大量收购AI肖像权的民间招募。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;而招募主要分为三个阶段：提供个人照片和身份证证明，照片入选后被存入数据库，最后按使用时间或者作品数量结算。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;例如在一条社群招募中，要求提供正面照、左侧面照、右侧面照、生活照和日常视频，据称“用来AI建模，签约时长一年，100元一人”。&lt;/p&gt;
-&lt;p&gt;另一条招募在寻找25位40-75岁男性的脸，需要本人提供2-3张半身照和全身照，同样定价100元一人。&lt;/p&gt;
-&lt;p&gt;他们大多针对的是普通群演，通常会在招募里强调“酬劳现结秒到账”“纯线上，20分钟搞定”。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/d3884494-0299-45b0-a245-5b802fed9343.png" target="_blank"&gt;&lt;img alt="你的脸已被AI明码标价：普通人肖像权买断一年仅100元" h="1119" src="//img1.mydrivers.com/img/20260422/Sd3884494-0299-45b0-a245-5b802fed9343.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;更有知名度的模特、演员会按作品数量结算，价格从500-8000元不等。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一位短剧演员在社交平台发帖，经纪公司想花500元，买自己人脸一年的AI使用权，但算下来一个月才不到50元，太少了。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/287ae16c-febe-4163-898c-525aaf89a9f8.jpg" target="_blank"&gt;&lt;img alt="你的脸已被AI明码标价：普通人肖像权买断一年仅100元" h="337" src="//img1.mydrivers.com/img/20260422/S287ae16c-febe-4163-898c-525aaf89a9f8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 07:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA0TkUwMFBkMDN6ZUpvZldDRXRRdm9TU3l4UzBoamxPcVE5bmdSRjU4ZHp0alplQ3Z3WEhpOUFZTzVhMWNlNDVNeFFHbEFlV0hiSGNuc3B4MFA</guid></item><item><title>iPhone 18屏幕开倒车！复用4年前的老基材 网友直呼库克太能省了 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117586.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，从iPhone 18系列开始，苹果将开启一年两更的产品节奏。据爆料，iPhone 18标准版将在2027年春季正式亮相，并与iPhone 18e以及iPhone Air 2同台发布。&lt;/p&gt;
-&lt;p&gt;在屏幕规格上，iPhone 18 Pro和Pro Max将采用三星最新的M16基材。该基材首次将蓝色荧光材料更换为蓝色磷光材料，这将为屏幕显示效率带来大幅飞跃。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;相比之下，标准版iPhone 18则会配备三星的老款M12+屏幕。资料显示，早在2022年发布的iPhone 14 Pro就已经在使用M12基材。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/aed3bb53fd774210a6dd0c51ae4b8b3c.jpg" target="_blank"&gt;&lt;img alt="iPhone 18屏幕开倒车！复用4年前的老基材 网友直呼库克太能省了" h="399" src="//img1.mydrivers.com/img/20260422/s_aed3bb53fd774210a6dd0c51ae4b8b3c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;iPhone 18使用的M12+是M12的微调版本，这意味着iPhone 18将复用四年前的老旧技术。这一消息曝光后迅速引发热议。不少网友认为苹果这种做法是在开倒车，调侃库克在成本控制上过于精明。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;类似的策略在之前的MacBook Neo上也有所体现，该机搭载的A18 Pro芯片被业内普遍视为库存货。苹果显然不太可能为了一款低价位笔记本单独开辟处理器生产线。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;库克也因此再次被外界称为库存管理大师。苹果的逻辑非常清晰，即通过精准的硬件分级，将最先进的技术保留给昂贵的Pro系列，而基础款则主要消化成熟甚至过时的零部件。&lt;/p&gt;
-&lt;p&gt;值得关注的是，为了掩盖屏幕参数上的落后，苹果会选择在营销上大肆宣传iPhone 18搭载的A20芯片。这颗处理器将基于台积电最先进的2nm工艺制造。&lt;/p&gt;
-&lt;p&gt;通过强调核心算力的跨代升级，苹果试图弱化用户对屏幕基材老化的感知。这种一年两更的快节奏发布模式，配合不同代际硬件的混搭使用，充分展现了苹果对供应链的极致掌控。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/2f4cbcff761c439fa2b24a56e7c16068.jpg" target="_blank"&gt;&lt;img alt="iPhone 18屏幕开倒车！复用4年前的老基材 网友直呼库克太能省了" h="399" src="//img1.mydrivers.com/img/20260422/s_2f4cbcff761c439fa2b24a56e7c16068.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 07:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9qOXNRNnFnRUMxNnZyMndiZHd5eUVqRXpjd2pWX1NwZi1fUC0yTmNlRDN3LU13SXlhV0Jhb002R0tMRGtac2lTZjlTMURXNEptcmVLeWJFNEY</guid></item><item><title>小米OV等联手整治安卓卡顿发热！金标联盟推行公平运行内存机制 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117573.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技4月22日消息，日前，由vivo、小米、OPPO、荣耀等组成的移动智能终端生态联盟（金标联盟）正式发布《关于推进“公平运行内存机制”应用优化的通知》。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;其中表示，将面向全体安卓开发者推出统一内存管理规范，同步对齐Android 17内存优化方向，&lt;strong&gt;旨在解决安卓生态内存占用过高、卡顿、发热、后台被杀、闪退等共性问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/674f05a3-0772-415e-a9d4-ecb93306a77e.png" target="_blank"&gt;&lt;img alt="小米OV等联手整治安卓卡顿发热！金标联盟推行公平运行内存机制" h="769" src="//img1.mydrivers.com/img/20260422/S674f05a3-0772-415e-a9d4-ecb93306a77e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;联盟指出，当前应用功能不断丰富，内存资源日趋紧张，加上安卓生态碎片化，导致优化成本高、验证周期长，严重影响整机流畅与稳定。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;谷歌在Android 17中已强化内存管控，按设备总内存设置应用内存上限，重点治理极端内存泄漏，为生态优化指明方向。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/c50d4016-155b-408a-9b6c-fcb53c156b7b.png" target="_blank"&gt;&lt;img alt="小米OV等联手整治安卓卡顿发热！金标联盟推行公平运行内存机制" h="256" src="//img1.mydrivers.com/img/20260422/Sc50d4016-155b-408a-9b6c-fcb53c156b7b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;为此，金标联盟牵头建立公平运行内存机制，核心包含三方面：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;统一标准：&lt;/strong&gt;建立清晰内存使用区间，让优化有明确依据；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;智能通知：&lt;/strong&gt;内存紧张时系统主动通知应用释放资源，减少对用户体验干扰；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;场景化规范：&lt;/strong&gt;明确特殊场景下的通知规则，最大限度减少对用户的打扰。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/82955b7f-d5e1-4996-b05e-29048da58173.png" target="_blank"&gt;&lt;img alt="小米OV等联手整治安卓卡顿发热！金标联盟推行公平运行内存机制" h="336" src="//img1.mydrivers.com/img/20260422/S82955b7f-d5e1-4996-b05e-29048da58173.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;联盟要求开发者在2026年6月30日前完成适配评估与优化，&lt;/strong&gt;各品牌开放平台将提供详细适配文档与专项技术支持，降低多品牌适配成本，助力一次优化、多端通用。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 06:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE54OWVUWW9ybDRTa2hYQ0x1a3NJeF92bnB0Q1k1anlmaHhlS0kySkdJdmFEWENWWDE2c0NLbHRfVm5SWUdST1J0Z1hPWXlKN2o2ZVBPQmVBNHg</guid></item><item><title>标榜独占主机 微软却放手厂商魔改：华硕、微星将入局Xbox定制 - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117572.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，&lt;span&gt;&lt;strong&gt;知名爆料人KeplerL2透露，微软下一代Xbox Helix计划将允许第三方厂商制造定制版主机。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;有消息称华硕与微星将入局定制版主机，相关产品会与微软官方版本同步销售，未来市面上可能会出现与微软Xbox不同品牌的机型。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;目前尚不清楚第三方与官方版的硬件差异。有消息称，品牌方可能采用自家散热方案和机箱设计，降低运行噪音与温度。&lt;/p&gt;
-&lt;p&gt;另一种可能是加大电源功率并预超频，直接提升游戏性能。不过Xbox Project Helix项目系统都具备相同的基本平台功能和软件，统一使用代号Magnus的芯片。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;微软已经与华硕在ROG掌机 Xbox Ally上展开合作，将类似模式扩展到台式主机顺理成章。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;需要明确的是，基于Helix芯片的微软官方Xbox主机依然存在。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;下一代Xbox副总裁Jason Ronald已确认第一方机型按计划推进。第三方合作属于补充选项，类似品牌方通过定制方案拓展全球市场，但芯片本身不会以DIY形式单独零售，玩家无法自行购买组装。&lt;/p&gt;
-&lt;p&gt;Helix芯片由微软与AMD深度合作开发，支持全新的FSR Diamond超分技术，围绕神经渲染加入大量AI特性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;尽管定制化程度可能不及索尼PS6芯片，但更开放的生态允许华硕、微星等厂商在产品设计上发挥各自优势。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260422/e394bd85-7da7-43e5-9ad3-e846db19c9c7.jpg" target="_blank"&gt;&lt;img alt="标榜独占主机 微软却放手厂商魔改：华硕、微星将入局Xbox定制 " h="337" src="//img1.mydrivers.com/img/20260422/Se394bd85-7da7-43e5-9ad3-e846db19c9c7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：于浮&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 06:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xQ25vMGJIbGI3MS15ZHR5YVpGSFFFdU5UaVdPVzRWazhnanNWRVBzNFduTm42ZzJ1N3REUi1uMVZ4bUdyRzVNS0kxdVFTN2VvOXVqUjk4X3A</guid></item><item><title>朝鲜黑客被指干下今年最大宗加密货币窃案 盗走近3亿美元 - 8world</title><link>https://www.8world.com/world/north-korean-hackers-suspected-crypto-heist-3126421</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;朝鲜一个恶名昭彰的黑客组织被指涉嫌干下今年初至今最大宗的加密货币盗窃案，盗走近3亿美元的加密货币。&lt;br&gt;&lt;br&gt;加密货币资讯网站CoinDesk说，上星期六（18日），线上投资工具KelpDAO被侵入，损失的加密货币总值大约2亿9000万美元。&lt;br&gt;&lt;br&gt;为KelpDAo提供区块链服务器的LayerZero说，初步迹象显示，这次攻击是由技术极其高超的国家级黑客组织干下的，而且可能是同朝鲜政府有关、名为“拉撒路”的黑客组织。&lt;br&gt;&lt;br&gt;联合国一个小组在2024年估计，朝鲜自2017年起已经偷窃了超过30亿美元的加密货币，用来资助核武器发展。&lt;br&gt;&lt;br&gt;去年，美国也指朝鲜涉及历来最大规模的15亿元加密货币偷窃案。&lt;/p&gt;&lt;/div&gt;
-      
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world</author><pubDate>Wed, 22 Apr 2026 06:50:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxNUUJ1OFJldzdyS0RaZGtjczI4MXVvbV9BMGFaOFd0Z0lDaFRXMUZXS1hpd1VrT0tYbDlqUHNPeGIxUS1vb2k0aHJNYTV1S1l3QzdTSjcteGlrY0NPeGRJanpoWERVTXdPNzlMUURjQl9nSmVPNEhkaDBVckliaVY2OVdXdkxXRGs</guid></item><item><title>付了钱还遭袭，印度船也被诈骗了？ - 观察者</title><link>https://www.guancha.cn/internation/2026_04_22_814500.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	【文/观察者网 阮佳琪】
-&lt;/p&gt;
-&lt;p&gt;
-	在霍尔木兹海峡局势动荡之际，针对滞留航运公司的数字货币诈骗行为正在兴起。
-&lt;/p&gt;
-&lt;p&gt;
-	据路透社21日报道，希腊海上风险管理公司MARISKS周一发出警告，提醒船东，有自称代表伊朗官方的不明身份人员，向部分被困于霍尔木兹海峡西侧的航运公司发送诈骗信息，声称以比特币、泰达币等加密货币支付通行费，即可换取安全通过海峡的许可。德黑兰方面暂未就此作出回应。
-&lt;/p&gt;
-&lt;p&gt;
-	早些时候，与伊朗政府关系密切的伊朗石油天然气和石化产品出口商联盟（OPEX）曾透露，在美伊为期两周的停火期间，伊朗将要求通过霍尔木兹海峡的油轮，以加密货币的形式支付通行费。
-&lt;/p&gt;
-&lt;p&gt;
-	MARISKS指出，船东收到的诈骗信息并非由伊朗官方发出。其引述的诈骗信息写道，“在提交相关文件并经伊朗安全部门审核资质后，我们将确定需以加密货币（比特币或泰达币）支付的费用。只有完成缴费，您的船只才能在约定时间无障碍通过海峡。”
-&lt;/p&gt;
-&lt;p&gt;
-	4月18日，伊朗曾短暂开放海峡并实施检查，期间有多艘船只试图通行，但至少包括一艘油轮在内的两艘船只报告称，遭到伊朗船只开枪射击，被迫返航。
-&lt;/p&gt;
-&lt;p&gt;
-	MARISKS称，其认为周六试图驶离海峡并遭枪击的至少一艘船只，正是上述诈骗行为的受害者。
-&lt;/p&gt;
-&lt;p&gt;
-	综合《印度时报》等早前报道，上周六遭到炮击的两艘船只悬挂印度国旗。
-&lt;/p&gt;
-&lt;p&gt;
-	英国海事贸易行动中心（UKMTO）的报告显示，两艘伊朗炮艇在海峡内向悬挂印度国旗的油轮“桑马尔先驱号”（Sanmar Herald）开火。该船受损轻微，船员安全；另有一艘货柜船在阿曼东北海岸外遭“不明抛射物”击中，部分货柜受损。
-&lt;/p&gt;
-&lt;p&gt;
-	随后，一段据称是“桑马尔先驱号”船长在事发时发出的呼救音频在社交媒体上流传，急促的呼喊声尽显现场的紧张与混乱。《印度时报》19日将这段录音形容为“绝望的呼叫”。
-&lt;/p&gt;
-&lt;p&gt;
-	“伊朗伊斯兰革命卫队海军，这里是桑马尔先驱号油轮，桑马尔先驱号！伊斯兰革命卫队海军，你们已经批准，你们已经批准我同行了！”
-&lt;/p&gt;
-&lt;p&gt;
-	“我的名字排在名单的第二位！你们已经批准我通行了，但你们现在正在开火！让我们掉头回去！”
-&lt;/p&gt;
-&lt;p&gt;
-	英国《太阳报》21日重新翻出了这段音频，并写道“海峡沦为骗局地狱，加密货币诈骗分子提供霍尔木兹海峡“安全通行”虚假承诺——录音显示，受骗船员向伊朗哀求：别开火！”
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2026/04/22/20260422131822855.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	印度油轮被伊朗开火逼退。&lt;span&gt;《太阳报》视频截图&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	包括《经济时报》《印度斯坦时报》在内的多家印度媒体，均对霍尔木兹海峡加密货币诈骗事件进行了密集追踪报道。这些媒体虽未直接证实有印度船只受骗，却不约而同地向航运运营方发出提醒：合法的船舶通关与通行许可，均通过正规政府或海军通信渠道办理，绝不会通过主动推送的即时通讯软件发放，更不会由索要费用的第三方中介机构核发。
-&lt;/p&gt;
-&lt;p&gt;
-	根据印度外交部18日发表的声明，印方当晚召见了伊朗驻印度大使，向对方表达了印度对事件的“深度关切”。
-&lt;/p&gt;
-&lt;p&gt;
-	印方提到印度高度重视商船航行与船员安全，并回顾伊朗此前曾为多艘驶往印度的船只提供安全通行便利。并敦促伊朗大使将印方立场转达伊朗相关部门，尽快恢复为经霍尔木兹海峡驶往印度的船只提供通行便利的相关工作。
-&lt;/p&gt;
-&lt;p&gt;
-	随着美伊临时停火期限即将结束，霍尔木兹海峡经历了跌宕起伏的24小时，伊朗在短暂开放航道后又宣布封锁。美国总统特朗普周末再次发出“最后通牒”，称美伊若不能在22日前达成协议，战火将重燃。
-&lt;/p&gt;
-&lt;p&gt;
-	不过，周一（21日），特朗普改口称，应巴基斯坦陆军参谋长及总理的请求，美方将暂缓对伊朗的军事打击。
-&lt;/p&gt;
-&lt;p&gt;
-	特朗普表示，鉴于伊朗政府内部“严重分裂”，美方决定延长停火期限，并要求伊朗方面先提出统一的谈判方案。在此期间，美军将继续对伊朗实施海上封锁，同时保持军事准备状态。
-&lt;/p&gt;
-&lt;p&gt;
-	他还称，停火将持续至伊朗提交方案并完成谈判为止，“无论结果如何”。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 22 Apr 2026 06:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9yR05tOTdaWUNkdWw4cXY5aVI5QUxKbjVEY2VCb2RxYW92T3FwWlVScTlNamdpYURPOG85X01rMC1NVWpvQ2pqWENzeGhLbG5mMDFsbGhWRnF6WXBKZ25JeGFKbDdOa2d1VWc</guid></item><item><title>“情况非常糟糕，差了中国几百倍” - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/2026-04-22/detail-inhvkcsk4395557.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
-	
-
-&lt;p class="art_p" cms-style="font-L"&gt;【文/观察者网 王一】&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;美国对中国无人机持续加码封堵后，转而试图扶持本土产业，但业内人士直言，“情况非常糟糕，美国无人机产业规模远小于中国，是数量级上的差距”。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;《日经亚洲》4月21日报道称，美国BRINC无人机公司位于西雅图的工厂中，每天都有十多名身穿蓝色工作服的工程师在车间里组装无人机。其最小型的公共安全无人机Lemur最快可以在一天内组装完成，但前提是手头有足够的必要组件。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;早在四年多前，BRINC就开始寻找本土供应商，并投入大量资金推动供应链从中国转移。此后，在美国政府禁止使用中国无人机及其零部件政策的推动下，该公司已制造出本土应急无人机。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;然而，BRINC首席执行官布莱克·雷斯尼克告诉日媒，美国目前在无人机领域仍落后于中国、俄罗斯等竞争对手。他直言，“情况非常糟糕。美国无人机产业规模远小于中国，是数量级上的差距，小好几个数量级……几百倍”。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;美国前总统拜登2023年签署2024财年《国防授权法》，禁止联邦机构使用中国制造的无人机。去年12月，美国联邦通信委员会（FCC）又进一步将所有外国制造的无人机及其零部件纳入“受管制清单”，事实上禁止中国无人机在美国销售。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;为响应美国政府的政策，雷斯尼克称，BRINC已投入近1亿美元寻找美国零部件供应商、搭建本土供应链，目前他们的无人机主要使用美国零部件。但对于部分关键组件，例如摄像头传感器等，仍难以实现本地采购，只能从中国台湾地区、韩国等地进口。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;受益于美国的政策扶持，诸如BRINC这样的无人机企业近几年获得了大量投资。数据提供商PitchBook的数据显示，去年美国无人机相关风投交易达105笔，总投资额较十年前增长3179%，达到72亿美元。&lt;/p&gt;
-&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="318" data-src="//k.sinaimg.cn/n/sinakd20260422s/118/w600h318/20260422/8ff5-939bbbfe566587595e7090f4c512c6dc.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="318" data-src="//k.sinaimg.cn/n/sinakd20260422s/118/w600h318/20260422/8ff5-939bbbfe566587595e7090f4c512c6dc.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;BRINC无人机&lt;font cms-style="font-L"&gt; BRINC网站&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;美国政府还签署行政命令，要求联邦机构加快对美国无人机制造商的审批。FCC今年4月也表示，正考虑简化监管流程，同时设立新的无人机测试区域。美国正全力推动“美国制造”无人机崛起，但现实却远没有想象中顺利。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;根据国际无人系统协会（AUVSI）的数据，美国年产无人机已超过10万架，并有望在明年突破100万架。然而，《日经亚洲》指出，这与中国去年出口近400万架无人机的数字相比，仍相形见绌。中国企业在全球市场占据主导地位，仅大疆一家就占据全球消费级和商用无人机市场约70%的份额。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;美国战略与国际问题研究中心发现，中国生产了全球约90%的商用无人机，同时控制着制造无人机的大量关键零部件供应，包括机身、电池、电机、摄像头、无线电设备以及显示屏等。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;美国智库关键基础设施技术研究所（ICIT）新兴技术高级主管布雷特·弗里德曼3月表示，中国在无人机领域的主导地位并非偶然，而是长期系统性产业政策和供应链垂直整合共同作用的结果，能形成巨大的商业规模，从而在降低成本并加速产品迭代。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;弗里德曼指出，相比之下，美国无人机产业基础则呈现碎片化、高成本以及受供应链问题制约等特点。许多美国无人机制造商，即便是在本土组装，仍离不开中国零部件。美国的问题并不在于创新能力不足，而在于无法实现无人机大规模制造。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;AUVSI负责监管事务的副总裁斯科特·斯托夫曼称，美国实际产能也受到需求不足的限制，尤其是来自国防部等客户的订单规模有限。该部此前表示计划在2027年前采购30万架无人机，但目前仅承诺采购其中约1/10，且主要是12家供应商的低成本小型无人机。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;无人机资讯网站DroneXL今年1月刊文直言，“承认问题和解决问题是截然不同的两件事。美国不可能在未来两到三年内，通过制造能力摆脱对中国供应链的依赖。五角大楼的百万无人机计划、封禁大疆的游说浪潮、承诺无人机霸权的行政命令，统统建立在一种并不存在、也无法仅靠政策意志创造出来的制造能力之上。”&lt;/p&gt;	
-
-	
-
-&lt;/section&gt;
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Wed, 22 Apr 2026 06:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE1FTUJMbHhVbXJIQTc5Rl9Del9MdWtrQjg0YmhOVWxsTFV4TlVmcVEyY0ppSWwzUG1KSnNuV3ZCZTg1TDZVV2RJTmhOdVVVbXdRZklNdm85NVlKNE5hazN0d2d3UldjcUY0V0k3cXBGWm14WkFL</guid></item><item><title>仅需1/10 Token消耗！百灵Ling-2.6-flash正式发布：104B参数赋能SOTA级Agent - 驱动之家</title><link>https://news.mydrivers.com/1/1117/1117566.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月22日消息，&lt;strong&gt;今日，蚂蚁百灵正式推出 Ling-2.6-flash —— 一款总参数量 104B、激活参数 7.4B 的 Instruct 模型。&lt;/strong&gt;该模型主打“Token 效率（Token Efficiency）”，在保持竞争力智能水平的同时，更快、更省以及更适合大规模真实应用。&lt;/p&gt;
-&lt;p&gt;据权威三方评测Artificial Analysis 数据，Ling-2.6-flash 展现了突出的 Token Efficiency 优势，以 15M output tokens 实现了 26 分 的 Intelligence Index，在保持较强智能水平的同时，将输出消耗控制在相对更低的位置。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/403e699bfbd740fc81f469e5adab5264.png" target="_blank"&gt;&lt;img alt="仅需1/10 Token消耗！百灵Ling-2.6-flash正式发布：104B参数赋能SOTA级Agent" h="360" src="//img1.mydrivers.com/img/20260422/s_403e699bfbd740fc81f469e5adab5264.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;据了解，Ling-2.6-flash 沿用了 Ling 2.5 的混合线性架构设计，这种高度稀疏化的 MoE 架构在硬件表现上优势明显。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在 4 卡 H20 条件下推理速度最快可达到 340 tokens/s，Prefill 吞吐达到 Nemotron-3-Super 的 2.2 倍。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在 Output Speed 测评中，Ling-2.6-flash以 215 tokens/s 的稳定输出速度位列同参数级别模型的第一梯队。&lt;/p&gt;
-&lt;p&gt;从 Token 消耗来看，Ling-2.6-flash 的智效比显著提升。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在 Artificial Analysis 完整测评中，Ling-2.6-flash 总消耗为 15M tokens，而 Nemotron-3-Super 等模型达到或超过 110M tokens。这意味着，Ling-2.6-flash 仅用约 1/10 的 token 消耗完成了同类评测任务。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/164ca4403c34464ea376ebc0214e192b.jpg" target="_blank"&gt;&lt;img alt="仅需1/10 Token消耗！百灵Ling-2.6-flash正式发布：104B参数赋能SOTA级Agent" h="225" src="//img1.mydrivers.com/img/20260422/s_164ca4403c34464ea376ebc0214e192b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/dcb5a0dab0844ed3bc7200b7adace0fa.jpg" target="_blank"&gt;&lt;img alt="仅需1/10 Token消耗！百灵Ling-2.6-flash正式发布：104B参数赋能SOTA级Agent" h="240" src="//img1.mydrivers.com/img/20260422/s_dcb5a0dab0844ed3bc7200b7adace0fa.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ling-2.6-flash 面向 Agent 场景进行了定向增强，在控制 Token 消耗的前提下，依然保持了极强的任务执行力，模型在 BFCL-V4、TAU2-bench、SWE-bench Verified、Claw-Eval、PinchBench 等Agent 相关基准上达到同尺寸 SOTA 水平。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;与此同时，Ling-2.6-flash 在通用知识、数学推理、指令遵循及长文本解析等维度保持优秀水准。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260422/44de8db9f2504d74a14f3ec6842303b8.png" target="_blank"&gt;&lt;img alt="仅需1/10 Token消耗！百灵Ling-2.6-flash正式发布：104B参数赋能SOTA级Agent" h="228" src="//img1.mydrivers.com/img/20260422/s_44de8db9f2504d74a14f3ec6842303b8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;API 定价方面，Ling-2.6-flash 输入每百万tokens定价 0.1 美元，输出 0.3 美元。&lt;/strong&gt;目前，Ling-2.6-flash 的 API 已正式向用户开放，并提供为期一周的限时免费试用。&lt;/p&gt;
-&lt;p&gt;用户可以通过OpenRouter 、百灵大模型 tbox 获取对应服务。据了解，该模型后续将通过蚂蚁数科发布商业版本LingDT，服务全球开发者及中小企业。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 06:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Jb1JRTTctZUJJVG0tR0xxY3RPbjZfTHN4bnFUWktTZTczUVVQaGxsUzN2QnBTeWVURGlKb25GS0E0LXo0R3JoWEJtNmlFaklHb3B1TWxXZkM</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Apr 2026 09:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1tV1M4dWNBc0lCUHJCRTFIeXROSkpxT2RxUEFidzZXV1ZRV0ktaW5xY3NlZHk0YXFXeDNVZEtIcWNZNGxmbTFUY2pnMlVEZTlCRXJLWmZwZmg</guid></item></channel></rss>
