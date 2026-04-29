@@ -1,5 +1,316 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>狂飙12000MB/s！长江存储致态TiPlus9100 2TB SSD图赏 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119333.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>DeepSeek内测识图模式，中国头部模型公司全员“睁眼” - 观察者</title><link>https://www.guancha.cn/economy/2026_04_29_815410.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	（文/陈济深   编辑/张广凯）
+&lt;/p&gt;
+&lt;p&gt;
+	"Soon, we see you. 👀"
+&lt;/p&gt;
+&lt;p&gt;
+	4月28日上午，DeepSeek多模态团队研究员陈小康（X账号@PKUCXK）发出了这条推文。配图是两只蓝色的小鲸鱼——左边那只戴着画有"XX"的黑色眼罩，右边那只没戴眼罩、正常露出眼睛。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/04/29/20260429175519315.png" alt="图片"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	陈小康（@PKUCXK）4月28日发布的推文，配图为两只鲸鱼对照
+&lt;/p&gt;
+&lt;p&gt;
+	尽管这条推文很快被陈小康自己删除了。但这条推文或在暗示DeepSeek的多模态功能或将近期上线。
+&lt;/p&gt;
+&lt;p&gt;
+	除了该推文外，有用户截图显示，chat.deepseek.com输入框上方曾经出现过三个并列的标签——除了原有的「快速模式」「专家模式」，多出了一个「识图模式」，鼠标悬停后弹出的提示语是"图片理解功能内测中"。这是DeepSeek出圈以来第一次在主线产品里把视觉理解作为独立模式呈现。但需要说明的是，这个标签并不是所有用户都能看到，目前也无法确认它是常态化的灰度内测，还是短暂开放后又被回收——DeepSeek官方至此没有任何对外说明。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/04/29/20260429175520105.png" alt="图片"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek网页端出现的"识图模式"tab，标注"图片理解功能内测中"
+&lt;/p&gt;
+&lt;p&gt;
+	根据该用户测试信息显示，在试图模式里，用户上传了一张人物照片并提问"这是什么动作姿势"。DeepSeek思考8秒后，先按位置、手臂、头部、头发、着装、光影逐项拆解了画面——"躯干呈一定角度，但面部明显朝向镜头""发丝散落在脸上和肩膀周围""高对比度，肤色苍白，深色衣服和阴影"——再给出最终判断：这是摄影和社交媒体语境里的"慵懒风躺姿"或"清冷氛围感姿势"，常出现在小红书、抖音的"宅家""慵懒风""清冷感"等标签下。
+&lt;/p&gt;
+&lt;p&gt;
+	值得记下的是这段思考过程里有一步明确的"自我修正考虑"。模型先列出了其他可能的解读——"手放在胸/肩处的『淑女』姿势"、"忧郁的自拍姿势"——再判断"慵懒氛围感姿势"才是最能涵盖所有细节的描述，最后才输出。这种结构化拆解、自我复核加文化语境识别的组合，已经超出DeepSeek过去主线产品上"图片识文字"的能力层次。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/04/29/20260429175519558.png" alt="图片"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	图3：沃垠AI流出的DeepSeek识图功能对话截图，显示了完整的拆解和自我修正过程
+&lt;/p&gt;
+&lt;p&gt;
+	对话链接：https://chat.deepseek.com/share/ablc57vmv2ompm3vy6
+&lt;/p&gt;
+&lt;p&gt;
+	值得注意的是，V2EX网友MichaelBitzo 4月29日下午发帖称DeepSeek API已经返回"识图模式"字段，跟帖的其他用户实测反馈"还是不可用状态"——意味着接口侧的字段已经存在，但调用尚未对外开放。
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek-V4预览版4月24日上线，陈小康那条推文发布于4月28日，距离V4只隔了四天。多模态团队负责人发出预告，主线产品冒出新tab，对话分享链接生效，API字段返回——指向都比较一致：DeepSeek正在为主线产品装上视觉理解能力。但具体什么时候正式开闸、是否还会在五一假期前后落地，截至发稿尚没有官方时间表。
+&lt;/p&gt;
+&lt;p&gt;
+	V4本身没有原生多模态。4月24日发布当天，DeepSeek官方对V4的定义集中在三件事上——百万级长上下文、Agent能力、推理性能。媒体复盘的判断也大致一致：V4在长上下文成本、Coding和Agent任务上达到了开源模型的第一梯队，但缺乏原生多模态是明显的短板。钛媒体的实测稿直言"V4目前并没有原生多模态功能，这会限制它在一些场景的发挥"。36氪的复盘稿则透露，DeepSeek暂缓多模态生成的训练策略，主要源于算力和现金的掣肘。
+&lt;/p&gt;
+&lt;p&gt;
+	但DeepSeek的研究侧，并没有在多模态上停下来。
+&lt;/p&gt;
+&lt;p&gt;
+	陈小康博士毕业于北京大学，2024年加入DeepSeek，主导多模态预训练和后训练工作。从他的Google学术页里能数出一长串相关成果——2024年12月开源的DeepSeek-VL2（基于MoE架构，激活参数最大4.5B）、2025年发布并被CVPR收录的Janus和JanusFlow，再到春节前后开源的Janus-Pro。其中Janus-Pro在GenEval图像生成基准上超过了DALLE-3和Stable Diffusion 3，是当时开源多模态阵营里最受关注的成果之一。
+&lt;/p&gt;
+&lt;p&gt;
+	也就是说，DeepSeek多模态团队的论文和开源模型一直在出，缺的只是把这套能力接到主线产品上。
+&lt;/p&gt;
+&lt;p&gt;
+	V4之前，DeepSeek主线产品里和"看图"有关的功能只有一项：chat.deepseek.com的"快速模式"支持识别图片中的文字，但本质是OCR调用，不是真正意义上的视觉理解。这一次冒出来的"识图模式"，从沃垠那段对话case看，已经超出文字识别的层次，进入到画面语义、空间结构、氛围审美和文化语境的判断这一层。
+&lt;/p&gt;
+&lt;p&gt;
+	事实上，铺垫4月初就开始了。4月8日，DeepSeek网页端在输入框上方第一次新增了「快速模式」和「专家模式」两个图标——这是DeepSeek出圈以来第一次在产品界面里做能力分层。爱范儿当时的实测稿援引技术KOL Teortaxes的判断：把Vision单独列为一个类是很不寻常的设计，DeepSeek此前拒绝在网页端部署DS-VL系列，原因是"尚未成熟"。如果Vision模式真的上线，背后支撑它的很可能已经是一个完全功能化的VLM，甚至是Janus系列的下一步演化。
+&lt;/p&gt;
+&lt;p&gt;
+	也就是说，从4月8日的分层入口，到4月24日V4纯文本发布，再到4月28日陈小康那条已被删除的预告，到4月29日"识图模式"在网页端、对话分享和API三个层面同时冒头——这是一条连续的产品节奏，只是DeepSeek自己暂时还没把它说出来。
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek多模态团队近年也并非没有人员变动。据《京报网》援引的公开消息，DeepSeek多模态核心贡献者阮翀今年4月加盟自动驾驶公司元戎启行任首席科学家，DeepSeek-OCR系列核心作者魏浩然也在春节前后离职。在这些变动之后，多模态团队的产品化进度依然推进到当前节点，本身也是一个值得记录的信息。
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek把识图能力送上主线产品的时间点，落在一个比较特殊的行业拐点上。
+&lt;/p&gt;
+&lt;p&gt;
+	按目前公开信息盘点，国内主要模型公司的多模态布局已经基本铺齐。阿里巴巴的Qwen系列推出了多代Qwen-VL视觉语言模型；智谱的GLM-V贯穿GLM-4和GLM-5两代；字节跳动和阶跃星辰把"全模态"作为核心定位，阶跃年初的Step 3.5 Flash把全模态能力首次开源；月之暗面的Kimi同步在视觉理解和Coding两条线并行；MiniMax在保持语言模型能力的同时把视频生成模型作为差异化优势。腾讯混元4月23日发布的Hy3 preview则把对标目标定为DeepSeek和阿里。换句话说，国内头部模型公司里，主线产品上没有视觉理解能力的，目前只剩DeepSeek一家。
+&lt;/p&gt;
+&lt;p&gt;
+	DeepSeek这次一旦正式开闸，意味着这条尾巴也合上了。中国头部模型公司全员"睁眼"，这是2026年模型层一个比较结构性的变化。
+&lt;/p&gt;
+&lt;p&gt;
+	让这件事变得更紧迫的是Agent。
+&lt;/p&gt;
+&lt;p&gt;
+	V4发布稿里，DeepSeek官方明确提到针对Claude Code、OpenClaw、OpenCode、CodeBuddy等主流Agent产品做了适配优化，Agent能力是V4三个核心卖点之一。但纯文本Agent的能力上限是有限的——当Agent需要操作浏览器、读截图、看仪表盘、识别UI元素、处理图表和PDF的时候，没有视觉理解就没办法完成闭环。这也是过去半年Computer Use、屏幕操作Agent这一类产品集中冒出来的原因。
+&lt;/p&gt;
+&lt;p&gt;
+	智谱的AutoClaw、阿里云的Coding Plan、Anthropic的Computer Use，在底层逻辑上共享一个判断：Agent要真正进入生产力场景，视觉能力是基础设施而不是锦上添花。从这个角度看，DeepSeek这次给主线产品装上识图能力，更接近补一张入场券，而不是单纯补短板。
+&lt;/p&gt;
+&lt;p&gt;
+	不过具体效果还得等正式开闸之后看。沃垠流出的那个case里，DeepSeek识图模型表现出了画面拆解、自我复核和文化语境识别的能力，但单点case不能替代系统性测评。和Qwen-VL、GLM-V、Step的多模态版本相比能拉开多少差距，能不能接住开源社区对DeepSeek一贯的"打榜"期待，目前都没有可对比的数据。
+&lt;/p&gt;
+&lt;p&gt;
+	另一个待观察的悬念是开源策略。DeepSeek过去把所有大版本模型都做了开源——包括VL、VL2、Janus系列。如果这次的识图能力最终也走开源路线，开源多模态阵营会再增加一个旗舰玩家；如果走闭源或半开源路线，则意味着DeepSeek在多模态商业化路径上做了一次和过去不同的选择。考虑到DeepSeek正在以超过200亿美元估值寻求融资，路径选择的信号意义不会小。
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 29 Apr 2026 10:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE1YaG0yaHdLYmpid1IxQkxWY0JwQUZoNlJXZHF0NWF0dUhyX3hHWkhkX29EeWFEWkloZ20wYnAzMUdYZnFEejd4QUFnNzhNM3FOSGR3bUgxZm5GYXZMZHVPakc5VGc</guid></item><item><title>“AI次贷危机”初现端倪：GitHub Copilot转向按量计费，撕开了"补贴换增长"的遮羞布 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771219</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 29 Apr 2026 09:13:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5NNUR2eU5jUGJfdVFyLTlrM25kdklTR3JRa3Q0MWxFWk5sa1dkMEx1eUp2VGZnUnZoMG5pLUNhMmlfOEVZODZkNHJxaGp2N1kwOVJB</guid></item><item><title>DeepSeek V4发布后引爆需求！中国科技巨头纷抢华为昇腾950芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119376.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，据知情人士消息，&lt;strong&gt;DeepSeekV4正式发布后，华为昇腾950系列AI芯片的市场需求大幅飙升。国内多家头部科技企业正紧急锁定芯片供货订单。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;消息人士透露，&lt;span&gt;&lt;strong&gt;字节跳动、腾讯、阿里巴巴三大国内头部互联网企业，已就新增芯片订单与华为展开接洽。&lt;/strong&gt;&lt;/span&gt;另有两位知情人士补充，主营云计算与GPU租赁服务的企业，也在积极推进订单落地事宜。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此次引发市场抢购的昇腾950PR芯片，是华为的重要技术突破&lt;/strong&gt;。此前多年，华为在争取国内科技行业大规模订单方面，持续面临挑战。&lt;/p&gt;
+&lt;p&gt;今年1月，华为向字节跳动、阿里巴巴等企业发放了芯片样品。客户测试反馈表现良好，相关企业随即启动了下单计划。&lt;strong&gt;性能层面，昇腾950PR的表现优于NVIDIA中国特规版H20芯片。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在国内芯片厂商中，华为昇腾950系列尤其是950PR型号，是唯一支持压缩数值格式AI运算技术的国产芯片。这项技术能让芯片以更低成本，实现每秒更多的计算处理量。&lt;/p&gt;
+&lt;p&gt;美国对NVIDIA高端芯片的出口管制，是此次国产芯片需求暴涨的核心背景。华为此前已宣布，基于昇腾950系列芯片打造的昇腾超级节点基础架构，将全面支持DeepSeek V4模型。全产品线也已针对该模型的推理环节，完成了专项适配。&lt;/p&gt;
+&lt;p&gt;模型发布当日，阿里云、腾讯云便快速上线了DeepSeekV4相关服务。海量用户与开发者的接入，进一步推高了对底层算力芯片的需求。&lt;/p&gt;
+&lt;p&gt;供需缺口仍将持续存在。&lt;strong&gt;知情人士透露，华为2026年计划生产约75万颗昇腾950PR芯片。芯片4月已启动量产，下半年将开启全面出货。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但受美国先进芯片制造设备出口管制影响，国内无法获取顶尖制程设备。芯片产能预计仍无法满足爆发式增长的市场需求。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/be281f39129f4bfbaaf9b4a61c3cea28.jpg" target="_blank"&gt;&lt;img alt="DeepSeek V4发布后引爆需求！中国科技巨头纷抢华为昇腾950芯片" h="450" src="//img1.mydrivers.com/img/20260429/s_be281f39129f4bfbaaf9b4a61c3cea28.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 08:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE55ZEJfSHBFbVBNM1FhNWJmRnBpdUw4YkxpdThGbUMtN1F1SFVBQndVWk9UYWRrTE1uSXc4ak1rY3RaajYtd3FMMkhtVmNNU2lTRzQ3NWlzZUg</guid></item><item><title>去年中国数据生产总量达52.26ZB 同比增27.28% - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260429-8972130</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;2025年，中国数据生产总量达到52.26ZB（泽字节，1ZB相当于10亿TB），同比增长27.28%。&lt;/p&gt;&lt;p&gt;据中新社报道，第九届数字中国建设峰会星期三（4月29日）在福州开幕。中国国家发改委中共党组成员、国家数据局局长刘烈宏在开幕式上披露上述数据。&lt;/p&gt;&lt;p&gt;刘烈宏介绍，2025年，中国系统软件、人工智能产生的数据量达26.92ZB，首次超过传统占主体地位的物联感知数据量。&lt;/p&gt;&lt;p&gt;其中，用于人工智能训练和推理的数据总量为199.48EB（艾字节，1ZB相当于1024EB），同比增长42.86%，推理数据量首次超过训练数据量，达到101.34EB。&lt;/p&gt;&lt;p&gt;刘烈宏介绍，2025年全国日均词元（Token）调用量从年初的超1万亿增长到年末的100万亿，今年3月又进一步提升至140万亿，这表明数据要素价值正在加速释放，智能经济新形态正加快塑造。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Wed, 29 Apr 2026 08:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5UNjFfQUQ0cXZRd2o3cFh3Y2cyRlBmek51anJXVm5qd016UXFLTWlFX2J5NTRpYk9MZGNQaks0MEZLYjZnNERkb1BLWldncHZVWHAtc05lQmxKcUdtSG9OYTlQNHlZZ3hQQnc</guid></item><item><title>英伟达不跟HBF：HBM仍是主力 暂无切换计划 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119365.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，据媒体报道，今年2月，&lt;strong&gt;SK海力士与闪迪联合举办“HBF规格标准化联盟启动会”，正式发布面向AI推理时代的下一代存储器解决方案——HBF（High Bandwidth Flash），并宣布其全球标准化战略。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;尽管业界普遍看好HBF前景，厂商推进意愿积极，但推广节奏似乎并不如预期迅速。据传，&lt;span&gt;&lt;strong&gt;英伟达短期内仍不打算引入HBF，一方面继续采用HBM，另一方面认为通过企业级SSD（eSSD）也能有效解决容量与速度受限的问题。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此前有消息称，英伟达正与铠侠及SK海力士合作，开发支持PCIe 7.0标准的高性能AI SSD，旨在部分替代HBM，作为GPU显存的扩展器。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为此，英伟达还在开发名为“SCADA”（SCaled Accelerated Data Access）的软件平台，通过绕过传统CPU读取SSD再传递给GPU的架构，大幅缩短数据路径，提升训练与推理的效率。&lt;/p&gt;
+&lt;p&gt;SCADA方案对SSD性能提出了极高要求，推动了AI SSD的开发，目标锁定IOPS达到1亿（100M）。&lt;/p&gt;
+&lt;p&gt;与英伟达的谨慎态度不同，谷歌或将成为HBF的重要客户。&lt;strong&gt;当前，谷歌TPU生态系统正加速增长，为进一步扩展计算能力，谷歌正规划下一代TPU解决方案。HBF不仅能部分取代HBM的作用，还可替代标准DDR内存，对谷歌具有较大吸引力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从技术上看，HBF通过垂直堆叠NAND闪存（类似HBM的堆叠方式）实现容量的大幅提升。随着AI智能体服务的扩展，作为长期记忆的“键-值”（KV）缓存内存的作用愈发重要。过去由HBM承担的这一角色，正逐步转向由NAND闪存来担当。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/3c8ae95a72524fbdac28f6a88ff85d3c.png" target="_blank"&gt;&lt;img alt="英伟达不跟HBF：HBM仍是主力 暂无切换计划" h="438" src="//img1.mydrivers.com/img/20260429/s_3c8ae95a72524fbdac28f6a88ff85d3c.png" w="584"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 08:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8xWGdmOW9ZM05yV3B0RFN1UmRZU2gyc0w1NEVqamRXd1RaWFcyWHFoWHVPbHNkc2pMcTJubzBsa1RfUWpabHBBcU5lcC05WjJfTVdVQmxsdmw</guid></item><item><title>史上最贵iPhone！苹果阔折叠iPhone Fold定价14999元：比华为贵 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119363.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;史上最贵iPhone！苹果阔折叠iPhone Fold定价14999元：比华为贵&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-29 16:15:15  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119363-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，iPhone Fold将成为苹果历史上意义最为重大的改款机型。&lt;/p&gt;
+&lt;p&gt;其重要性被认为超越了当年的iPhone 4以及开启全面屏时代的iPhone X，标志着苹果移动设备形态的巨大跨越。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260429/98d4c445a139438f9832b33db89c3292.jpg" target="_blank"&gt;&lt;img alt="史上最贵iPhone！苹果阔折叠iPhone Fold定价14999元：比华为贵" h="400" src="//img1.mydrivers.com/img/20260429/s_98d4c445a139438f9832b33db89c3292.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;据博主爆料，iPhone Fold的起售价预计高达14999元，这将是苹果史上最贵的iPhone。作为一款高端阔折叠机型，其定价甚至比竞品华为Pura X Max还要贵出不少。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;该博主还指出，iPhone Fold的成像表现可能稍逊于国产折叠屏手机，但其在软件创新和性能表现上会有极大的惊喜，体现出苹果对折叠屏交互的独特理解。&lt;/p&gt;
+&lt;p&gt;新机将首发A20 Pro芯片，该芯片基于尖端的2nm工艺制造。同时它将预装全新的iOS 27系统，该系统专门针对折叠屏进行了优化，支持更高效的分屏多任务显示。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/ecea887cf1cc4580b7a61d9901443ca3.jpg" target="_blank"&gt;&lt;img alt="史上最贵iPhone！苹果阔折叠iPhone Fold定价14999元：比华为贵" h="450" src="//img1.mydrivers.com/img/20260429/s_ecea887cf1cc4580b7a61d9901443ca3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在硬件参数方面，iPhone Fold将配备约5.3英寸的外屏和7.7英寸的内屏，后置搭载双4800万像素镜头，没有配备长焦镜头，支持侧边指纹识别。&lt;/p&gt;
+&lt;p&gt;按照目前的计划，苹果依旧会在9月份的秋季发布会上发布iPhone Fold。但由于生产端有所推迟，正式开售的时间大概率会比iPhone 18 Pro系列晚一到两个月。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/dc2877e5d1954e4c917fa279a85e71a3.jpg" target="_blank"&gt;&lt;img alt="史上最贵iPhone！苹果阔折叠iPhone Fold定价14999元：比华为贵" h="325" src="//img1.mydrivers.com/img/20260429/s_dc2877e5d1954e4c917fa279a85e71a3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 08:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE90ekFzbFZpOWtGMTltN0NLYXZNWkZqWmZXVVBkTDNmTE5iQW9LYWpmdnVSNk5HYzVoVmVjTUFQNTFwT2lKYnhrc3VwS2RvVm93TGJ6MGhPZzk</guid></item><item><title>腾讯《怪猎》新作角色超美！老外：西方做不出来 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119343.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;由腾讯与卡普空联合研发的中国大陆首款怪猎正版动作手游《怪物猎人：旅人》，于4月29日开启第二次封闭测试。&lt;/p&gt;
+&lt;p&gt;本次测试不开放任何内购功能，测试结束后所有游戏数据将被清除。&lt;/p&gt;
+&lt;p&gt;随着测试开启，游戏的美术风格再次在海外社区引发讨论。知名游戏推主@Pirat_Nation在社交平台晒出了多张女性角色截图，并评价道：&lt;span&gt;&lt;strong&gt;“看看这些角色设计，西方开发者根本做不出来。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯《怪猎》新作角色超美！老外：西方做不出来" h="228" src="//img1.mydrivers.com/img/20260429/4cadf9e3-c3b4-4d44-ac0c-3ad89740780c.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;这一观点也引发不少玩家共鸣，近年来以中国、日本为代表的东方游戏开发商，在角色设计上更强调审美表现力与个性化塑造，往往具备鲜明的风格与吸引力；相比之下&lt;strong&gt;，一些西方厂商在设计中更倾向于迎合多元化与所谓“觉醒文化”趋势，导致角色外观逐渐趋同甚至失去辨识度，这一现象也在玩家群体中饱受争议。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯《怪猎》新作角色超美！老外：西方做不出来" h="309" src="//img1.mydrivers.com/img/20260429/cc028595-4516-4d40-a1b4-16ac7003a343.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯《怪猎》新作角色超美！老外：西方做不出来" h="310" src="//img1.mydrivers.com/img/20260429/45cee6b4-380e-4355-92e1-069862c0b807.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯《怪猎》新作角色超美！老外：西方做不出来" h="310" src="//img1.mydrivers.com/img/20260429/b63166c9-e1f0-41dd-850a-3b46bf38a60e.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯《怪猎》新作角色超美！老外：西方做不出来" h="309" src="//img1.mydrivers.com/img/20260429/f6eaf581-ae98-4fa5-93db-af25cb9a4204.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;当然，也有玩家将关注点放回游戏本身。有评论表示：“至少从视觉表现来看相当不错，至于玩法和商业化还不好说，希望整体质量也能跟上。”另有玩家指出：“虽然我不太喜欢手游，但如果它能提供不错的《怪物猎人》体验，尤其是免费模式的话，还是值得一试。”&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯《怪猎》新作角色超美！老外：西方做不出来" h="186" src="//img1.mydrivers.com/img/20260429/4315906c-b57f-4046-b19d-404f8e996b3a.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;封测推荐系统要求&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;iOS：iPhone XR或更高版本 / 操作系统版本：iOS 17或更高版本&lt;/p&gt;
+&lt;p&gt;Android：骁龙845或更高版本 / 操作系统版本：Android 12.0或更高版本&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 07:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1oaWtvNUYxak9NeS1kTkFGVmpxZlJkdU5INEpzck0wTi1DYV9LRUQ1VnBRVzlkODBsenVNLThmRThkSnVqc2RLYUJPTDY2VUJnUTdCM2szRmo</guid></item><item><title>小米Civi 6来了：史上首次双剑齐发 全系标配天玑Soc - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119342.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;小米Civi 6来了：史上首次双剑齐发 全系标配天玑Soc&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-29 15:41:51  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119342-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，据爆料，小米Civi 6系列即将正式亮相。&lt;/p&gt;
+&lt;p&gt;博主数码闲聊站暗示，该系列此次将打破常规，同时推出标准版与Pro版两款产品，以满足不同用户对屏幕尺寸和性能的需求。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260429/ae2365c846264b91bbe6a5baa20835d0.jpg" target="_blank"&gt;&lt;img alt="小米Civi 6来了：史上首次双剑齐发 全系标配天玑Soc" h="400" src="//img1.mydrivers.com/img/20260429/s_ae2365c846264b91bbe6a5baa20835d0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;在核心配置上，小米Civi 6标准版将采用6.59英寸的1.5K屏幕，并搭载天玑8500处理器。而Civi 6 Pro则会配备6.83英寸的1.5K大屏，升级至天玑9500旗舰处理器。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;更令人惊喜的是，这两款新品都将标配5000万像素的5倍潜望式长焦镜头。这一硬件规格的下放，意味着该系列在远距离拍摄能力上将迎来质的飞跃，弥补了以往轻薄机型在长焦方面的短板。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260429/3aa370f053c747cebb6a04b25607a557.jpg" target="_blank"&gt;&lt;img alt="小米Civi 6来了：史上首次双剑齐发 全系标配天玑Soc" h="399" src="//img1.mydrivers.com/img/20260429/s_3aa370f053c747cebb6a04b25607a557.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小米Civi 6系列还将继续深化与徕卡的合作，自Civi 4 Pro产品引入徕卡Summilux光学系统以来，Civi系列已成为同档位中唯一拥有徕卡认证专业影像实力的手机，在色彩表达与光学素质上表现出众。&lt;/p&gt;
+&lt;p&gt;从目前披露的信息来看，小米Civi 6系列正从以往单纯的美颜自拍手机，向全能型影像旗舰转型。这种在保持轻薄手感的同时，大幅堆高长焦与芯片规格的做法，极大地提升了该系列的产品力。&lt;/p&gt;
+&lt;p&gt;这款高颜值的专业影像新作预计将在今年上半年正式登场，凭借徕卡影像的加持与旗舰级处理器的保障，小米Civi 6系列有望在竞争激烈的上半年手机市场中脱颖而出。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/3fb0bfd7e4b945ab97a4c95c3a1f8b8e.jpg" target="_blank"&gt;&lt;img alt="小米Civi 6来了：史上首次双剑齐发 全系标配天玑Soc" h="275" src="//img1.mydrivers.com/img/20260429/s_3fb0bfd7e4b945ab97a4c95c3a1f8b8e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 07:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4taGZTdlp0anJtZF94TURLM1o0R1dYemtuWWdYRnAzZkZSbXNVWFFPWnUwbnVXSmh6VVphZUlnSEk3a3FHUnN0ZWtYWFZEaE8xUmtOeHJBQUg</guid></item><item><title>小米自研SoC玄戒O3参数曝光：超大核冲到4.05GHz！折叠屏首发 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119337.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，多方消息证实，小米新一代自研SoC将命名为玄戒O3，预计Q3登场。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;博主“熊猫很禿然”今天曝光了玄戒O3的参数信息，采用超大核+性能大核+小核设计，超大核4.05Ghz、大核3.42Ghz、小核3.02Ghz；GPU也来到1.49Ghz，带宽9600MT/s。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;博主称，玄戒O3将由新一代大折叠首发，也就是传闻中的MIX Fold 5。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/7dc0bdd1e8664e9fafbb2e4985299dc9.png" target="_blank"&gt;&lt;img alt="小米自研SoC玄戒O3参数曝光：超大核冲到4.05GHz！折叠屏首发" h="316" src="//img1.mydrivers.com/img/20260429/s_7dc0bdd1e8664e9fafbb2e4985299dc9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该机此前已经在数据库现身，型号为“2608BPX34C”，代号为“lhasa”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;除了MIX Fold 5折叠屏手机之外，MIX今年还规划了一款直板机，预计会带来模块化的磁吸镜头量产方案，两款机型都在Q3发布，最快7月亮相。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="小米自研SoC玄戒O3参数曝光：超大核冲到4.05GHz！折叠屏首发" h="400" src="//img1.mydrivers.com/img/20260429/cd7454e9-867b-42b2-aa1f-29ec019bcdec.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;值得注意的是，前两天小米创始人类雷军刚刚宣布，玄戒O1出货量已突破100万颗。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;玄戒O1于2025年5月正式发布，是小米首款高端旗舰SoC，&lt;strong&gt;也是中国大陆首颗3nm先进制程的自研SoC，并且规格和性能表现看齐第一梯队。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="小米自研SoC玄戒O3参数曝光：超大核冲到4.05GHz！折叠屏首发" h="432" src="//img1.mydrivers.com/img/20260429/746478ed-f971-45dd-8221-aa48c0d76d19.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;根据极客湾评测，玄戒O1在CPU性能与功耗表现上，已达到与苹果A18 Pro等当前3nm旗舰手机SoC同一梯队水平，尤其在中低负载场景下表现突出，整体表现远超预期。&lt;/p&gt;
+&lt;p&gt;目前来说，玄戒O1的性能、销量、口碑都表现不错，也将进一步坚定小米自研SoC的投入力度，期待早日能正面硬刚国际巨头。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 07:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE12NmpDSm5VMzFnbkktVXU0NlJGckstYnRaakNoNk8tTkEtUXFqR2MwY2JKbkt4TXhGNW5vZkx5bEFBRU9zcEtNcTZnTGFUR1BvWkhvMVVXcGI</guid></item><item><title>狂飙12000MB/s！长江存储致态TiPlus9100 2TB SSD图赏 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119333.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;狂飙12000MB/s！长江存储致态TiPlus9100 2TB SSD图赏&lt;/p&gt;
           
@@ -201,7 +512,175 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 06:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBiUEVoZ1o3SmNyOFc5SWJqMzZyemRibW5nLVVsV29TWnA5MHY3VUF6NWxSOGJicWRfRGxZNzFwRDVXdVNLRExuVFN3NVVHSzgybmFReVMyR2M</guid></item><item><title>GPT Image 2文生图封神 超谷歌Nano Banana2成全球第一 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119314.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 06:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBiUEVoZ1o3SmNyOFc5SWJqMzZyemRibW5nLVVsV29TWnA5MHY3VUF6NWxSOGJicWRfRGxZNzFwRDVXdVNLRExuVFN3NVVHSzgybmFReVMyR2M</guid></item><item><title>腾讯ima发布知识Agent“copilot”：可记住用户的背景、习惯与推进事项 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119319.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，&lt;strong&gt;据媒体报道，腾讯ima推出知识Agent——copilot，支持用户创建专属Agent。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据了解，Copilot内置深度个性化的记忆系统，包含四大模块：Copilot设定 (Soul)、用户档案 (User)、长期记忆 (Memory)、经验技巧 (Agent)。它能记住你的背景、习惯和任务推进方式，实现跨场景连续调用，减少重复输入。你可以在设置卡片中查看并对话式编辑记忆内容，系统会根据你的使用变化不断自我迭代，让Copilot真正“认识”你。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/8eed2d08a5664272ad7c76474410c20e.png" target="_blank"&gt;&lt;img alt="腾讯ima发布知识Agent“copilot”：可记住用户的背景、习惯与推进事项" h="419" src="//img1.mydrivers.com/img/20260429/s_8eed2d08a5664272ad7c76474410c20e.png" w="580"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当你在浏览网页、打开文件、翻阅知识库或笔记时，Copilot会以浮窗形式悬停于ima应用内，自动感知当前内容，无需额外上传文件。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例如，直接问“这个网页讲了什么”，它就能立即基于当前页面给出回答；在知识库或笔记页面，你还可以直接指挥它：“帮我把这个网页的内容整理成笔记，并加入到我的知识库里。”&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/2909f815f149499ebb59a4430946f551.png" target="_blank"&gt;&lt;img alt="腾讯ima发布知识Agent“copilot”：可记住用户的背景、习惯与推进事项" h="444" src="//img1.mydrivers.com/img/20260429/s_2909f815f149499ebb59a4430946f551.png" w="596"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copilot内置官方技能包（Skills），首期包括：知识库操作、笔记操作、创建 Skill、生成报告等，且均与ima产品深度结合。相比之前版本，知识库 Skill 已支持读取文件正文，能完成更复杂的跨文件信息读取与汇总。&lt;/p&gt;
+&lt;p&gt;你还可以用自然语言指挥它，比如“帮我把这个知识库按学科分类”。除了官方技能，用户也可自由添加自定义Skills。&lt;strong&gt;此外，Copilot支持配置各大模型的API Key，为高阶玩家提供强大扩展能力（使用自己的API不消耗平台算力）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Copilot已上线Mac、Windows、iOS、安卓、鸿蒙全平台。为保证使用体验，功能采用 申请制，将按申请顺序陆续开放。新用户可获赠一笔算力福利，每日登录还可领取额外算力。&lt;/p&gt;
+&lt;p&gt;ima Copilot通过个性化记忆、场景感知、技能生态与拟人化交互，致力于成为真正理解你、伴随你、协助你处理各类事务的个人知识伙伴。无论你是学生、研究者还是内容创作者，都能从中找到提升效率与创造力的全新可能。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/656717e9b4194546a40960710df2882e.png" target="_blank"&gt;&lt;img alt="腾讯ima发布知识Agent“copilot”：可记住用户的背景、习惯与推进事项" h="395" src="//img1.mydrivers.com/img/20260429/s_656717e9b4194546a40960710df2882e.png" w="596"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 06:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9scF9RMXBsdGxvNkhMbmo5OVEtRUM1QTJWZVNUc1h1aGEtWkJneENSNkQzOExTVVAtQjNPbXhLc2tOdGJEQW1IN2xEcnR1N0dfVHhrSVZXOVE</guid></item><item><title>价值5亿美元 俄罗斯富翁名下超级游艇成功穿越霍尔木兹海峡 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119318.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;价值5亿美元 俄罗斯富翁名下超级游艇成功穿越霍尔木兹海峡&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-29 14:41:33  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1461185.html" title="落木的主页" class="newstiao4"&gt;落木&lt;/a&gt;&lt;p&gt;  编辑：落木 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119318-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，据美国媒体近日报道，&lt;span&gt;&lt;strong&gt;当前中东局势持续紧张，霍尔木兹海峡航运通行风险陡增，然而一艘价值达5亿美元的俄罗斯富豪超级游艇成功穿越这一关键水道，成为近几个月来少数通过该海峡的私人船只之一&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;船舶追踪平台MarineTraffic的数据表明，该游艇上周五（24日）从迪拜启程，上周六（25日）穿越霍尔木兹海峡，上周日（26日）抵达阿曼马斯喀特。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这艘名为“诺德号”的超级游艇总长142米，配置双直升机停机坪、泳池、影院等高端设施，可容纳多名乘客与船员，是全球顶级私人豪华游艇之一，位列全球体量最大的20艘超级游艇之中。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;游艇归属俄罗斯钢铁巨头、知名富豪莫尔达绍夫，值得一提的是，俄乌冲突后，其个人及名下资产长期遭到欧美多国制裁。&lt;/p&gt;
+&lt;p&gt;近期霍尔木兹海峡地缘冲突加剧，作为全球能源运输咽喉要道，过往商船通行受到明显限制，不少船舶选择绕道避开这片敏感海域。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在此背景下，诺德号从迪拜港口出发，沿规范安全航道平稳航行，全程遵守国际海事规则，未停靠沿线敏感港口，顺利穿越霍尔木兹海峡，最终驶入阿曼马斯喀特海域停泊。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/21d1d09c94ff48de8a5a59bd427fdf13.jpg" target="_blank"&gt;&lt;img alt="价值5亿美元 俄罗斯富翁名下超级游艇成功穿越霍尔木兹海峡" h="314" src="//img1.mydrivers.com/img/20260429/s_21d1d09c94ff48de8a5a59bd427fdf13.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 06:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB6VVJmaUlCcnRTd2o0S0NsaS1MMmN4b3ZSTERnanJKTzl2RmlybUFMVFFlaVJqeFcySXVXOU1heVFhWWtsZS1EM2FCMEhRSTlyVk5BVnNVQkQ</guid></item><item><title>ChatGPT 拎包入住云计算一哥，你的下一任好同事可能是 AI - 爱范儿</title><link>https://www.ifanr.com/1664406</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;p&gt;「SaaS 末日」这个词，最近在科技圈的流传速度不亚于任何一条爆款新闻。&lt;/p&gt;
+&lt;p&gt;不少硅谷分析师都在疯狂输出焦虑，大意是说 AI Agent 这么猛，现有的企业软件如果不推倒重来，马上就要被拍死在沙滩上。这股风声甚至直接「吹绿」了几家老牌 SaaS 公司的股价。&lt;/p&gt;
+&lt;p&gt;说实话，每次听到「颠覆」、「末日」这种词，大家可能都会下意识觉得是炒作。&lt;/p&gt;
+&lt;p&gt;但在今天凌晨召开的 「What’s Next 」新品发布会上，亚马逊云科技 CEO Matt Garman 给出了一个挺中肯的定调：末日论确实夸张了点，但如果你指望靠着原来那个老旧系统，随便加个 AI 聊天框就能应付差事，那才是真的危险。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664407" src="https://s3.ifanr.com/wp-content/uploads/2026/04/20-2.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/20-2.png!720 2756w, https://s3.ifanr.com/wp-content/uploads/2026/04/20-2-360x199.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/20-2-768x425.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/20-2-1024x567.png 1024w" sizes="(max-width: 2756px) 100vw, 2756px"&gt;&lt;/p&gt;
+
+&lt;p&gt;真正的转型发生在更深处。当工作流、数据结构、应用架构和交互界面都跟着 Agent 的能力重新设计，企业软件才算完成了这次重建。这是亚马逊云科技（云计算一哥）这次所有新产品的底层逻辑。&lt;/p&gt;
+&lt;p&gt;有趣的是，在官宣与微软「分手」之后，OpenAI CEO Sam Altman 也通过视频的方式给亚马逊云科技站了台，官宣 ChatGPT 最强模型拎包入住亚马逊云科技，并达成深度战略协作。&lt;/p&gt;
+&lt;p&gt;而无论是面向个人和团队的 Amazon Quick，还是供应链、招聘、医疗三个垂直场景的 Connect 新家族，再到与 OpenAI 的深度合作，指向的都是同一个问题的答案：以 AI Agent 为起点，SaaS 未来应该长什么样。&lt;/p&gt;
+&lt;h3&gt;告别「肉身搬运工」，你的工作流迎来大一统&lt;/h3&gt;
+&lt;p&gt;来，咱们做个深呼吸，回想一下你今天极其崩溃的上午：&lt;/p&gt;
+&lt;p&gt;领导在企业聊天工具上吼了一嗓子模糊不清的需求，你虎躯一震，赶紧切到公司的 CRM 系统里疯狂扒拉客户数据；接着打开邮箱，在一堆垃圾邮件里翻找上周的进度；最后在本地新建一个文档，把这些零碎的信息一点点拼凑、复制、粘贴。&lt;/p&gt;
+&lt;p&gt;发现问题了吗？（此处应有黑人问号脸.jpg）&lt;/p&gt;
+&lt;p&gt;我们的办公软件越装越多，但它们之间是互相割裂的、老死不相往来的。而你，就是那个在各个信息孤岛之间来回奔波的「肉身搬运工」。&lt;/p&gt;
+&lt;p&gt;为了解决这个痛点，亚马逊云科技推出了全新升级的 Amazon Quick 桌面版（目前处于预览阶段）。它的核心设计逻辑是将分散的信息网收拢，在系统后台构建一张关于人员、项目、决策和事务动态的知识图谱，让上下文主动跟着人走。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664408" src="https://s3.ifanr.com/wp-content/uploads/2026/04/21.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/21.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/21-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/21-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/21-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;每一次使用，Amazon Quick 都在默默积累你处理的文档、项目的 Deadline、频繁沟通的同事以及升级处理的紧急邮件。基于这些沉淀，它可以主动提示你当天的优先事项。&lt;/p&gt;
+&lt;p&gt;打个比方，你准备下午跟一个重要客户开会。如果是以前，你得花两小时找资料。现在，你只需要给 Quick 甩一句：「帮我准备一下下午见王总的材料。」&lt;/p&gt;
+&lt;p&gt;接下来就是见证奇迹的时刻。&lt;/p&gt;
+&lt;p&gt;Amazon Quick 会迅速认出「王总」是哪个项目的，然后去系统里把王总团队之前的历史案例扒出来，接着去你的本地 D 盘里偷窥……哦不，读取最新的产品路线图，再结合 Slack 里同事昨天的吐槽记录。几分钟后，一份逻辑严密、排版精美的 PPT 就糊在了你脸上。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664409" src="https://s3.ifanr.com/wp-content/uploads/2026/04/22-3.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/22-3.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/22-3-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/22-3-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/22-3-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;这还没完。同样是这堆信息，你让它变身，它就能立刻吐出一份摘要邮件，或者一份 Excel 营收表。如果王总说「改天聊」，Amazon Quick 甚至能自动查对你们俩的日历，算好时差，把新的会议邀请发过去。全过程，你只需要在一个对话框里当个无情的监工。&lt;/p&gt;
+&lt;p&gt;美国最大的互助人寿保险公司 New York Life 的机构寿险业务 CTO David Gregorat 的评价一语中的：「Quick 让我们重新想象了整个运营方式。原来需要拉多份报告、等分析师处理的答案，现在团队里任何人都能通过对话式 Agent 直接获取。」&lt;/p&gt;
+&lt;p&gt;至于这效率有多夸张？亚马逊云科技 Agentic AI 商业化副总裁 Jigar Thakkar 透露了一组极其夸张的数据：宝马、3M、亿滋这些大厂内测后，部分流程的处理时间直接被一刀砍了 80%。3M 的销售代表每周甚至能凭空多出 5 个小时的摸鱼……啊不，思考时间。&lt;/p&gt;
+&lt;p&gt;呐呐，这才是 AI 科技赋予我们的顶级松弛感。&lt;/p&gt;
+&lt;h3&gt;你的下一个好同事，是个 AI Agent&lt;/h3&gt;
+&lt;p&gt;如果说 Amazon Quick 是给你个人加了个三头六臂的效率外挂，那 Amazon Connect 家族的扩编，就是亚马逊云科技尝试重塑企业核心流程的重头戏。&lt;/p&gt;
+&lt;p&gt;亚马逊云科技提出了一套叫「Humorphism（人态设计）」的理念。听起来有点玄乎，说白了就是：AI 不能只是个冷冰冰的执行机器，它得像个人类好队友一样，懂轻重缓急，能顺畅沟通。&lt;/p&gt;
+&lt;p&gt;基于此，Amazon Connect 家族不仅将原有的客服产品升级更名为 Amazon Connect Customer，还针对垂直场景发布了三款 Agentic AI 解决方案。&lt;/p&gt;
+&lt;p&gt;Connect Decisions：让供应链规划师从救火转向决策&lt;/p&gt;
+&lt;p&gt;供应链出现中断后，企业通常需要超两周时间处理，期间伴随大量资金损耗和违约风险。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664410" src="https://s3.ifanr.com/wp-content/uploads/2026/04/23.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/23.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/23-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/23-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/23-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;Connect Decisions 针对这一痛点，为规划师配备了全天候在线的 AI 队友。它的底层并非空中楼阁，深度集成了亚马逊 SCOT 团队（负责管理亚马逊全球 4 亿 SKU 需求的核心部门）所研发的预测模型。&lt;/p&gt;
+&lt;p&gt;面对没有历史数据的新品，它能自动关联相似品类生成需求计划。&lt;/p&gt;
+&lt;p&gt;当监控到关键供应商交货落后（例如预计 10 天内导致两个配送中心断货）时，它会将传统软件每天产生的数千条警报收敛为几条最高优先级的例外事项，并直接给出两套附带预期影响、成本和置信度评分的处置方案。规划师手动选择并说明原因后，系统会吸收这条判断逻辑，供未来参考。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664411" src="https://s3.ifanr.com/wp-content/uploads/2026/04/24-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/24-1.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/24-1-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/24-1-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/24-1-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;Connect Talent：25 万人招聘经验化身「赛博面试官」&lt;/p&gt;
+&lt;p&gt;亚马逊云科技在 2025 年旺季期间单季招募了 25 万名季节性员工，Connect Talent 便是这套庞大招聘经验的产品化。系统能根据职位描述自动解析能力需求，生成面试题和评分标准（需人工审核）。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664412" src="https://s3.ifanr.com/wp-content/uploads/2026/04/25.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/25.png!720 1920w, https://s3.ifanr.com/wp-content/uploads/2026/04/25-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/25-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/25-1024x576.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px"&gt;&lt;/p&gt;
+&lt;p&gt;候选人可以在任何方便的时间完成 AI 电话面试。&lt;/p&gt;
+&lt;p&gt;系统最大的特点是能对模糊回答进行追问，确保评估的结构一致性。原本需要数周完成的 80 场初筛面试，现在几天即可完成。系统最终向招聘方展示的是隐去个人身份信息的标准化能力评分，用数据支撑最终的录用决定。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664413" src="https://s3.ifanr.com/wp-content/uploads/2026/04/26.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/26.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/26-360x202.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/26-768x431.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/26-1024x575.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;Connect Health：把医生从文书工作里解放出来&lt;/p&gt;
+&lt;p&gt;行业数据显示，医生与患者面诊 1 小时，往往需要额外花 2 小时处理行政记录。&lt;/p&gt;
+&lt;p&gt;亚马逊应用人工智能解决方案高级副总裁 Colleen Aubrey 指出，大量精力消耗在管理事务而非直接诊疗上，是亟待解决的痛点。Connect Health 可以在诊疗过程中自动记录临床内容、生成就诊摘要和推荐账单编码，并能在就诊后发送患者易于理解的随访说明。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664414" src="https://s3.ifanr.com/wp-content/uploads/2026/04/27-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/27-1.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/27-1-360x202.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/27-1-768x431.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/27-1-1024x575.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;系统的每条输出均可追溯到原始的检验结果和上次就诊记录，以满足严格的医疗合规要求。这背后，其实也是亚马逊拿自家兄弟 Amazon Pharmacy（亚马逊药房）和 One Medical（初级医疗服务）常年趟坑积累下的实战经验。&lt;/p&gt;
+&lt;h3&gt;Agent 时代来了，SaaS 迎来下半场&lt;/h3&gt;
+&lt;p&gt;整场发布活动的另一大焦点是亚马逊云科技与 OpenAI 的合作。&lt;/p&gt;
+&lt;p&gt;OpenAI CEO Sam Altman 顶着他标志性的微笑通过视频露了个脸，他表示亚马逊云科技和 OpenAI 正在从底层共同研发一套面向企业的 Agent 平台，深度集成亚马逊云科技服务。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664415" src="https://s3.ifanr.com/wp-content/uploads/2026/04/28.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/28.png!720 2598w, https://s3.ifanr.com/wp-content/uploads/2026/04/28-360x202.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/28-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/28-1024x575.png 1024w" sizes="(max-width: 2598px) 100vw, 2598px"&gt;&lt;/p&gt;
+&lt;p&gt;是的，OpenAI 的 GPT-5.4 现已有限预览上线 Amazon Bedrock，而当前最强的前沿模型 GPT-5.5 也将在数周内正式上线。这意味着企业客户无需离开亚马逊云科技环境就能使用 OpenAI 的模型，数据和应用可以留在同一套权限体系下运行。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664416" src="https://s3.ifanr.com/wp-content/uploads/2026/04/29.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/29.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/29-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/29-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/29-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;企业无需配置新的安全体系，直接通过原有的 IAM 访问控制、PrivateLink 私有连接、CloudTrail 完整日志和合规框架即可统一管理，甚至模型用量也能计入亚马逊云科技的云承诺消费中。&lt;/p&gt;
+&lt;p&gt;在基础设施层面，亚马逊云科技的核心逻辑是为 OpenAI 的前沿模型提供一个极其安稳、合规的『家』。企业不仅能直接调用顶尖模型，更能在底层依托亚马逊云科技强大的全球基础设施网络进行推理和部署。说白了，就是让你在跑复杂、高并发的企业级应用时，完全不用操心底层的承载力。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664417" src="https://s3.ifanr.com/wp-content/uploads/2026/04/30-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/30-1.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/30-1-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/30-1-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/30-1-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;在此基础上，双方联合推出了 Bedrock Managed Agents 预览版。这套服务以 OpenAI Agent Harness 为核心构建，Harness 就像是一本专门为模型定制的战术手册。经过协同训练后，Agent 可以在长时间运行的复杂任务中实现更快的执行速度和更稳定的行为控制。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664418" src="https://s3.ifanr.com/wp-content/uploads/2026/04/31-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/31-1.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/31-1-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/31-1-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/31-1-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;Agent 能够部署在 EC2 实例、Fargate 容器或任何其他亚马逊云科技计算资源，具备跨会话的持久化记忆，且所有推理过程均不离开亚马逊云科技环境。&lt;/p&gt;
+&lt;p&gt;这套服务与亚马逊云科技现有的开放平台 Bedrock AgentCore 形成互补。参与合作的亚马逊云科技杰出工程师副总裁 Anthony Liguori 透露，双方团队在八周内从零开始完成了这项工作。开发者终于能将 OpenAI 的最新模型与亚马逊云科技的规模、安全和基础设施完美结合，构建出满足企业治理和审计要求的智能体。&lt;/p&gt;
+&lt;p&gt;此外，每周活跃用户在两周内从 300 万激增到 400 万的 OpenAI 代码智能体产品 Codex 也将在亚马逊云科技上线。它支持 Codex CLI、桌面应用和 Visual Studio Code 插件，应用场景已从基础代码生成延伸至系统解释、测试生成、遗留代码现代化以及研究分析等知识工作环节。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664419" src="https://s3.ifanr.com/wp-content/uploads/2026/04/32-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/32-1.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/32-1-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/32-1-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/32-1-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;一大波硬核的产品发布看下来，估计不少朋友已经在屏幕前战术后仰，甚至可能觉得这些不就是加了 AI 滤镜的高级办公软件吗？&lt;/p&gt;
+&lt;p&gt;如果你真这么以为，那可就草率了。&lt;/p&gt;
+&lt;p&gt;Matt Garman 在发布会上讲了一段很通透的话。他说 20 年前大家搞云计算，很多公司就是把机房里的服务器原封不动地搬到了云上。钱没少花，效率一点没涨，那叫搬家，不叫转型。&lt;/p&gt;
+&lt;p&gt;现在的 AI 也是一样。如果你只是拿 AI 来替换现有的某一个按钮、某一个操作，那你永远摸不到那传说中「5 到 10 倍」的效率提升。&lt;/p&gt;
+&lt;p&gt;亚马逊云科技这一套组合拳打下来，意思再清晰不过了：软件的存在形式，已经被彻底推翻了。&lt;/p&gt;
+&lt;p&gt;未来的工作流里，不再是人去使用软件，而是人给 Agent 定目标，Agent 去调用软件。以前我们去上班，是去启动软件；也许再过两三年，我们去上班的唯一动作，就是点开电脑，看着满屏的「赛博同事」，然后深情地说一句：「诸位，今天的 KPI 也拜托大家了。」&lt;/p&gt;
+&lt;p&gt;然后，你安详地端起泡着枸杞的保温杯，静静地看着它们疯狂打工。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664421" src="https://s3.ifanr.com/wp-content/uploads/2026/04/33-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/33-1.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/33-1-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/33-1-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/33-1-1024x576.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;那么问题来了，现有的那些 SaaS 巨头，真的会迎来「末日」吗？&lt;/p&gt;
+&lt;p&gt;没那么严重，但处境确实微妙。SaaS 过去靠席位收费、靠功能壁垒锁用户，这两件事在 Agent 时代都开始松动。一个 Agent 能同时处理过去多名员工的工作，「按人头收费」越来越站不住脚；通用 Agent 加上开放 API，又在慢慢拆解功能壁垒。&lt;/p&gt;
+&lt;p&gt;真正能活好的，是两类公司：&lt;/p&gt;
+&lt;p&gt;一类有足够深的领域积累，正如这场发布会传递出的核心信息：当大模型本身变得像水电煤一样普及且廉价时，真正稀缺的，反而变成了能够被编码进 Agent 里的「领域知识」（Know-how）。&lt;/p&gt;
+&lt;p&gt;Salesforce 对销售工作流的深刻理解，Workday 对人力资源合规的经验，或者是亚马逊自己积累了 30 年的供应链判断标准等等——这些沉淀下来的行业 Know-how，才是构建下一代企业软件真正的护城河。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1664420" src="https://s3.ifanr.com/wp-content/uploads/2026/04/34-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/04/34-1.png!720 1280w, https://s3.ifanr.com/wp-content/uploads/2026/04/34-1-360x127.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/04/34-1-768x272.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/04/34-1-1024x362.png 1024w" sizes="(max-width: 1280px) 100vw, 1280px"&gt;&lt;/p&gt;
+&lt;p&gt;另一类是掌握数据入口的——Agent 的能力上限，取决于它能读到什么数据。谁控制着企业最核心的业务数据流，谁就决定着 Agent 能做多少事。夹在中间、既没有深度积累又没有数据优势的中型 SaaS，压力才是实实在在的。&lt;/p&gt;
+&lt;p&gt;所谓的「SaaS 末日」或许只是贩卖焦虑，但这场转型的烈度，绝不亚于当年的企业上云。唯一的区别是：这一次技术的狂飙，没给我们留出慢慢摸索的时间。&lt;/p&gt;
+&lt;p&gt;但时间紧，不代表就要慌。&lt;/p&gt;
+&lt;p&gt;因为亚马逊云科技已经把最难啃的底层基建做好了。SaaS 公司大可直接踩在亚马逊云科技巨人的肩膀上，把精力全砸在服务客户上；打工人更无需焦虑，复杂的系统运行全被保留在后台，留给你的，只有一句轻飘飘的「帮我搞定」。&lt;/p&gt;
+&lt;p&gt;时代的推背感确实让人头晕目眩，但与其在未来的站台上焦虑它会不会撞翻「旧马车」，不如干脆点，检票上车，看看新世界的风景到底有多壮阔。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 29 Apr 2026 06:32:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE9BVU5sYklsU0UzSG1CZ2tPaVJHNU9HUFFjVEJHSi1LSnN4NGhNWnQ1akdzdHUtRU9BdEhaTlBWbkZMTW8</guid></item><item><title>GPT Image 2文生图封神 超谷歌Nano Banana2成全球第一 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119314.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;GPT Image 2文生图封神 超谷歌Nano Banana2成全球第一&lt;/p&gt;
           
@@ -272,7 +751,32 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 06:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1scnFBR1F4TzU2ZFBGbElHWWlSbU9KS3R1Z0dWUjBUYi1NSkF1YW9qaml6emRWV2x3eDFfaGthUEtLMDVHNk1VU2ZFeGVZX050Si1EdVhTME0</guid></item><item><title>突然！30年DIY老牌GALAX退出海外PC市场：和国内影驰没关系 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119310.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 06:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1scnFBR1F4TzU2ZFBGbElHWWlSbU9KS3R1Z0dWUjBUYi1NSkF1YW9qaml6emRWV2x3eDFfaGthUEtLMDVHNk1VU2ZFeGVZX050Si1EdVhTME0</guid></item><item><title>大疆北京门店今日16点后停售无人机！天猫官旗已无法下单 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119313.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，&lt;strong&gt;《北京市无人驾驶航空器管理规定》将于2026年5月1日起实施，北京无人机管理进入全面升级阶段。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;根据《规定》，北京市行政区域全域为无人机管制空域，所有室外飞行活动均需提出申请。&lt;/p&gt;
+&lt;p&gt;与此同时，新规还明确，&lt;span&gt;禁止向北京的单位和个人销售、出租无人机，禁止运输无人机及核心部件进入北京。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;随着新规落地进入倒计时，大疆在北京的销售渠道已开始调整。&lt;/p&gt;
+&lt;p&gt;据界面新闻报道，大疆国贸旗舰店工作人员表示，&lt;span&gt;&lt;strong&gt;今天16:00以后，全北京将不再销售大疆无人机产品，16:00前，全市仅国贸旗舰店仍有少量现货在售，且仅限部分机型，售价与官网一致，暂无优惠。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="大疆北京门店今日16点后停售无人机！天猫官旗已无法下单" h="596" src="//img1.mydrivers.com/img/20260429/50d464cd-ea6f-4dc8-8cc2-efb1203bd6cf.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;电商平台显示，&lt;strong&gt;目前天猫大疆官方旗舰店的无人机产品已无法选择北京地址下单，页面提示“此商品不支持在当前地区销售”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/6d3eb888d43741d7a648edd4027a98ec.png" target="_blank"&gt;&lt;img alt="大疆北京门店今日16点后停售无人机！天猫官旗已无法下单" h="415" src="//img1.mydrivers.com/img/20260429/s_6d3eb888d43741d7a648edd4027a98ec.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/74b27a8d8a9b4daea5ac1a64ca1ab9a8.png" target="_blank"&gt;&lt;img alt="大疆北京门店今日16点后停售无人机！天猫官旗已无法下单" h="410" src="//img1.mydrivers.com/img/20260429/s_74b27a8d8a9b4daea5ac1a64ca1ab9a8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不过，大疆京东自营旗舰店在选择北京地址后，部分无人机产品暂时仍可购买，并显示4月30日送达，也就是新规实施前最后一天。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/b3ebbd7eb1d443b9bb0641c30c59e3e4.png" target="_blank"&gt;&lt;img alt="大疆北京门店今日16点后停售无人机！天猫官旗已无法下单" h="491" src="//img1.mydrivers.com/img/20260429/s_b3ebbd7eb1d443b9bb0641c30c59e3e4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/a13281f8b6c04bf88a0631874e3e6a9e.png" target="_blank"&gt;&lt;img alt="大疆北京门店今日16点后停售无人机！天猫官旗已无法下单" h="499" src="//img1.mydrivers.com/img/20260429/s_a13281f8b6c04bf88a0631874e3e6a9e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;值得注意的是，《规定》并非“一刀切”全面禁止，而是为特殊需求预留了合规使用空间。&lt;/p&gt;
+&lt;p&gt;针对抢险救灾、重大活动，以及教学、技术研发、生产、农林业作业、体育训练赛事等需要，经公安机关等部门安全评估后可以购买、运输和存储无人机。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/350a76df680e4f618efd6b05e4400fab.png" target="_blank"&gt;&lt;img alt="大疆北京门店今日16点后停售无人机！天猫官旗已无法下单" h="189" src="//img1.mydrivers.com/img/20260429/s_350a76df680e4f618efd6b05e4400fab.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 06:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5BZ2U0TlBKMnBEWmhjYV8xenh6Y2FFX1VEb3FfRkk4Yl9fY20ybk5zMm8waDVjem95NWZQQmNzLUNXTm1icWs1TEZIT2JUcWZOcnY3WWptVDI</guid></item><item><title>突然！30年DIY老牌GALAX退出海外PC市场：和国内影驰没关系 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119310.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月29消息，今天，国外垂媒wccftech的一条报道让不少DIYer心里 “咯噔” 一下，&lt;strong&gt;什么？GALAX退出PC市场了？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260429/12029ae6-17aa-4862-885b-9587fb0cf083.jpg" target="_blank"&gt;&lt;img alt="突然！30年DIY老牌GALAX退出海外PC市场：和国内影驰没关系" h="400" src="//img1.mydrivers.com/img/20260429/S12029ae6-17aa-4862-885b-9587fb0cf083.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
@@ -377,7 +881,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 04:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1FVXBnV18yVEU1VjRLdXVYd24xdW9URnBCM0M5blRMLWFzYWp2LVQ0Ul8xaEFuSk8tQ1RqcDJlWXpmZzhrMGdISFZJd3dCVFBRblh6THprRms</guid></item><item><title>腾讯Hy3 preview 登顶OpenRouter的 API 调用量排行榜 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771202</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 29 Apr 2026 04:10:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5oSFk4U3gtdTItd0hFRk5kRGVkS2NhTDkyMHk0enNRc3c2RGV1c2YwVEJwVnhhYmtIeXBkOGFCZWNFYU0wd0dQbUFYLUJPUjI4SFJ3</guid></item><item><title>4K帧率暴涨650%！NVIDIA DLSS 4.5适配《暗黑破坏神4》：RTX 50系解锁6倍帧生成神技 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119294.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 04:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1FVXBnV18yVEU1VjRLdXVYd24xdW9URnBCM0M5blRMLWFzYWp2LVQ0Ul8xaEFuSk8tQ1RqcDJlWXpmZzhrMGdISFZJd3dCVFBRblh6THprRms</guid></item><item><title>借鉴车市经验，未来“修机器人"可能比"造机器人"更赚钱 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771189</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 29 Apr 2026 04:21:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9lNWtPRmJUTDIxYVozTUV6bFFjT1AxbVRqYXFyVktiS1h3RTd4QkZpSElMNlZBRGg0NExTZ1l4YVQxNGtoLVFNc29sclI5cVpJTTc0</guid></item><item><title>腾讯Hy3 preview 登顶OpenRouter的 API 调用量排行榜 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771202</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 29 Apr 2026 04:10:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5oSFk4U3gtdTItd0hFRk5kRGVkS2NhTDkyMHk0enNRc3c2RGV1c2YwVEJwVnhhYmtIeXBkOGFCZWNFYU0wd0dQbUFYLUJPUjI4SFJ3</guid></item><item><title>4K帧率暴涨650%！NVIDIA DLSS 4.5适配《暗黑破坏神4》：RTX 50系解锁6倍帧生成神技 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119294.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月29日消息，&lt;span&gt;&lt;strong&gt;本周堪称GeForce RTX玩家的“超级技术周”。《暗黑破坏神4：憎恨之王》、《异环》、《ARC突袭者》和《巴士之旅》四款游戏集中实装NVIDIA DLSS 4.5最新技术，从路径追踪到动态多帧生成6倍模式，性能与画质双双拉满。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;《暗黑破坏神IV：憎恨之王》已于4月28日率先推出，游戏原生支持DLSS超分辨率与DLSS帧生成，&lt;strong&gt;在4K分辨率下同时开启光线追踪反射和阴影后，RTX 50系列玩家的帧率可平均提升650%。&lt;/strong&gt;&lt;/p&gt;
@@ -511,7 +1015,24 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 03:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBzejNBT200Y3o5OGVjYWxNT0VWSS1qVGtQTHAtMHZjamwyR2FfRzBZTHhSX3pCcjVqb29sa1I1YU13T09faWNHN3RHT2ltQmo3bDZMQmN0Q2k</guid></item><item><title>我一点也不想要 OpenAI 手机｜AI 器物志 - 爱范儿</title><link>https://www.ifanr.com/1664344</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 03:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBzejNBT200Y3o5OGVjYWxNT0VWSS1qVGtQTHAtMHZjamwyR2FfRzBZTHhSX3pCcjVqb29sa1I1YU13T09faWNHN3RHT2ltQmo3bDZMQmN0Q2k</guid></item><item><title>微软松绑独家协议！OpenAI正式上线亚马逊云 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119287.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，据媒体报道，&lt;strong&gt;OpenAI正式宣布扩大与亚马逊云科技（AWS）的合作，其AI模型将登陆亚马逊Bedrock平台。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;这一重大突破源于微软放宽了双方原有的独家合作条款，标志着OpenAI正式跳出微软的生态束缚。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;根据协议，OpenAI将把GPT-5.5、Codex等核心模型接入AWS。同时，亚马逊将推出“OpenAI支持的Bedrock托管智能体”，以帮助企业客户规模化部署自主AI智能体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OpenAI首席营收官德雷瑟表示，当前企业已从试验阶段进入规模化部署阶段，对在可信环境下运行的前沿模型需求极为强烈。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此次合作得以落地，关键在于OpenAI与微软完成了协议修订。微软放弃了部分排他性限制，允许OpenAI入驻竞品云平台，以换取更优的收益分成，并移除了争议性的AGI条款。&lt;/p&gt;
+&lt;p&gt;值得注意的是，微软此前曾以违约为由，试图阻止亚马逊与OpenAI展开合作。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/a052ec6f6e1345eb8916986147921069.png" target="_blank"&gt;&lt;img alt="微软松绑独家协议！OpenAI正式上线亚马逊云" h="369" src="//img1.mydrivers.com/img/20260429/s_a052ec6f6e1345eb8916986147921069.png" w="578"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 03:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1xQjZIbWs4dENwOXJYNkxmSHZJSHBJTHZacmkwQ1FNYWpWVlhFWWRPVWtka2lxNHhrMTdoU0FNR2c2TDUxWW1XOXNZSllnSWZwVUlXYlVLRzE</guid></item><item><title>我一点也不想要 OpenAI 手机｜AI 器物志 - 爱范儿</title><link>https://www.ifanr.com/1664344</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
   
 &lt;blockquote&gt;&lt;p&gt;智能手机统治了过去十几年的数字生态，它是注意力的黑洞，是我们最私密的随身之物。但手机从设计之初就是为「人盯着它」而生的——它的全部逻辑，都止于屏幕。&lt;/p&gt;
 &lt;p&gt;AI 的需求却恰恰相反：它需要持续感知物理世界——见你所见，听你所闻，随时在场，而非等你解锁屏幕才醒来。&lt;/p&gt;
@@ -683,7 +1204,23 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 03:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5IS2stMW5uWjVCMW12ZnI5OEcxQld0YTVOU0FYUDh4cjhnbDVLWkVGOEE5X0YxY1lPUGlzSTgxVGpTMnBwNmI5bDN6Szh0M256X2ZLNkR6WkI</guid></item><item><title>超频三DV360幻翼水冷首发1399元：配6.67寸2K曲面屏幕 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119282.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 03:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5IS2stMW5uWjVCMW12ZnI5OEcxQld0YTVOU0FYUDh4cjhnbDVLWkVGOEE5X0YxY1lPUGlzSTgxVGpTMnBwNmI5bDN6Szh0M256X2ZLNkR6WkI</guid></item><item><title>与火星殖民和太空数据中心挂钩！SpaceX IPO前夕 马斯克天价薪酬方案曝光 - 财联社</title><link>https://www.cls.cn/detail/2359146</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社4月29日讯（编辑 卞纯）&lt;/strong&gt;据报道，&lt;strong&gt;SpaceX董事会已经批准了一项前所未有的薪酬方案，将其首席执行官埃隆·马斯克的薪酬与实现未来目标挂钩，包括火星殖民以及太空数据中心建设&lt;/strong&gt;。这些野心勃勃的目标充满未来感与星际色彩，与SpaceX的企业文化相符。&lt;/p&gt;
+&lt;p&gt;据悉，SpaceX在最近向美国证券交易委员会（SEC）提交的保密注册文件中披露了这一薪酬方案，相关细节此前鲜有报道。该文件是SpaceX为其即将进行的首次公开募股（IPO）做准备的一部分。&lt;/p&gt;
+&lt;p&gt;根据媒体查阅的注册文件节选内容，SpaceX 董事会批准的薪酬方案包括：&lt;strong&gt;若公司市值达到7.5万亿美元，且在火星建立常住人口至少100万人的永久人类定居点，马斯克将获授2亿股超级投票权限制性股票&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果SpaceX达成另一项估值目标，并在太空建成可提供至少100太瓦算力的数据中心，他将再获得6040万股限制性股票。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;100太瓦是什么概念？上个月，特斯拉宣布将与SpaceX、xAI合作建设芯片项目TeraFab，目标是实现年产能1太瓦AI算力，打造全球规模最大的芯片制造工厂。&lt;/p&gt;
+&lt;p&gt;马斯克曾多次表示，他认为轨道数据中心是为人工智能革命提供所需算力的最佳途径。&lt;/p&gt;
+&lt;p&gt;上述两项激励均为B类超级投票权限制性股票，每股B类股票拥有相当于1股A类股票10倍的投票权，且将随着公司市值攀升分批解禁。&lt;/p&gt;
+&lt;p&gt;不过，SpaceX在其提交的文件中也承认，技术上的挑战可能会阻碍其实现目标。在IPO文件中列出此类风险是常见做法。&lt;/p&gt;
+&lt;p&gt;若SpaceX未能达成董事会设定的超高估值目标，马斯克将无法获得任何股票。该目标没有设定具体完成时限，仅以他持续任职为前提。自2019年以来，马斯克每年从SpaceX领取的名义薪水仅为54080美元。&lt;/p&gt;
+&lt;p&gt;由于SpaceX目前是私有公司，这份薪酬方案的实际价值暂无法估算。据报道，该公司计划在马斯克6月28日生日前后启动IPO，届时公司估值或达约1.75万亿美元。&lt;/p&gt;
+&lt;p&gt;马斯克独特的薪酬结构一直饱受争议，也是他巨额财富的重要来源。2018年，特斯拉批准了一项薪酬方案，规定如果公司达到特定市值和销售额里程碑，马斯克将获得巨额股票。他最终实现了这些目标。&lt;/p&gt;
+&lt;p&gt;当地时间4月24日，特斯拉向SEC提交文件，登记注册了与马斯克2018年薪酬方案相关的约3.04亿股普通股。&lt;/p&gt;
+&lt;p&gt;去年11月，特斯拉股东批准了一项新的薪酬方案，马斯克的薪酬最高可达1万亿美元。该方案要求特斯拉在12个阶段内完成一系列更具挑战性的目标，包括将市值从1.4万亿美元提升至8.5万亿美元，同时实现年交付2000万辆汽车、生产100万台人形机器人等关键指标。&lt;/p&gt;
+&lt;p&gt;据福布斯估算，马斯克当前身家已达7760亿美元（约合5.3万亿元人民币）。&lt;/p&gt;
+&lt;p&gt;尽管实现特斯拉和SpaceX设定的这些宏伟目标极具难度，但若能实现，马斯克的财富很可能较当前水平再翻数倍。&lt;/p&gt;
+&lt;p&gt;与此同时，SpaceX的天价激励也凸显出，该公司希望身兼数职的马斯克将更多精力投入到其身上。眼下这家火箭制造企业正紧锣密鼓地筹备上市。&lt;/p&gt;
+&lt;p&gt;公司治理领域专家表示，这可能让SpaceX的投资者，与马斯克担任CEO的特斯拉股东之间产生矛盾。如今SpaceX和特斯拉实际上是在争夺马斯克的精力分配。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Wed, 29 Apr 2026 03:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE5HVEZQUGY0ZFNOMmtZNDN2aFg4SUs4RlUzMjRUckdTa3BUNnpwQW9zSno1WkxKSkhXSGVnUnVST0RfTS1kOHdubQ</guid></item><item><title>超频三DV360幻翼水冷首发1399元：配6.67寸2K曲面屏幕 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119282.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技4月29日消息，据媒体报道，&lt;strong&gt;超频三正式推出旗下首款曲面屏一体式水冷产品——DV360幻翼，首发售价&lt;span&gt;1399&lt;/span&gt;元。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;新款散热器搭载一块6.67英寸、2K分辨率（2400 x 1080）的AMOLED曲面屏幕，并配备了此前推出的光翼F7 X120B性能级风扇。&lt;/p&gt;
@@ -947,7 +1484,88 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 02:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1FRFJtbnVtb19WOFdyZEJ0bUhPdTFYSlBMMnNaRGduUDZBVWJIWGxmRGdIYWd0bFRWQmMtQzhQZHBFRmdmR2VpaHoyTkVsYlVmdU1CTUFLeVg</guid></item><item><title>直接停摆！苹果iPhone印度扩产遇阻 没有中国团队根本玩不转 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119231.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 29 Apr 2026 02:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1FRFJtbnVtb19WOFdyZEJ0bUhPdTFYSlBMMnNaRGduUDZBVWJIWGxmRGdIYWd0bFRWQmMtQzhQZHBFRmdmR2VpaHoyTkVsYlVmdU1CTUFLeVg</guid></item><item><title>当许冉化身“数字人”，京东给产业带商家配了14个AI工具 - 观察者</title><link>https://www.guancha.cn/economy/2026_04_29_815331.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	（文/观察者网 张志峰）
+&lt;/p&gt;
+&lt;p&gt;
+	在电商行业历经数年的流量红利消退、价格内卷持续以及存量竞争加剧之后，2026年的市场格局正迎来一场深刻的范式转移。
+&lt;/p&gt;
+&lt;p&gt;
+	4月28日，在江苏宿迁举行的“2026京东京喜产业带发展大会”上，一个极具象征意义的场景揭示了这一变革：京东集团SEC副主席、京东集团CEO许冉并未亲临现场，而是以数字人的形象完成了开场致辞。
+&lt;/p&gt;
+&lt;p&gt;
+	这一形式并非单纯的技术展示，而是京喜战略转向的具象化表达：平台竞争核心已从人力、流量驱动，转向AI技术与数字化供应链驱动的高质量增长路径。
+&lt;/p&gt;
+&lt;p&gt;
+	数字人致辞的背后，是京喜对产业带商家核心痛点的精准回应，也是对下沉市场与产业带电商竞争规则的重新定义。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;数字人背后：从“拼流量”到“拼效率”&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	当前电商行业已进入深度存量竞争阶段，传统增长模式面临系统性瓶颈，产业带源头工厂与中小商家陷入双重困境。
+&lt;/p&gt;
+&lt;p&gt;
+	一方面，流量分配机制高度依赖付费投放，商家获客成本持续攀升，流量转化与复购稳定性不足，多数中小商家缺乏专业运营能力，难以实现可持续增长；另一方面，极致低价竞争导致行业利润被持续压缩，劣币驱逐良币现象凸显，源头工厂被迫削减研发、品质投入，长期发展能力被削弱。
+&lt;/p&gt;
+&lt;p&gt;
+	此类模式下，商家陷入“有量无利、有流量无留存”的循环，产业带整体发展趋于低效。
+&lt;/p&gt;
+&lt;p&gt;
+	数据显示，大量中小电商商家运营成本中，广告投放、达人佣金、售后退货等非生产性支出占比超过30%，部分平台综合费率接近50%，源头工厂利润空间被严重挤压。
+&lt;/p&gt;
+&lt;p&gt;
+	同时，中小商家普遍存在人才短缺、数据能力不足、产品迭代滞后等问题，生产与市场需求脱节，库存风险高企，难以形成稳定的经营体系。
+&lt;/p&gt;
+&lt;p&gt;
+	在此背景下，京喜选择了一条差异化路径：跳出价格与流量内卷，构建以效率、技术、供应链为核心的新型增长模式。
+&lt;/p&gt;
+&lt;p&gt;
+	京喜的核心定位是成为产业带商家最稳定的营销平台、高效的品牌建设平台与商品全生命周期回报率最优的服务平台，其底层支撑来自京东长期积累的用户体系、超级供应链能力与数字化基建，以及平台深耕产业带的生态协同逻辑。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;核心壁垒：AI如何重构下沉市场竞争力&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	京喜的变革，是将平台能力从销售渠道延伸至全链路运营支撑，通过模式设计降低商家非生产性成本，提升经营效率。
+&lt;/p&gt;
+&lt;p&gt;
+	其核心逻辑是将京东的物流体系、AI 能力、流量机制、采销资源进行整合，形成标准化、可复制的赋能体系，推动产业带从“被动接单”转向“主动适配”，从“价格竞争”转向“价值竞争”。
+&lt;/p&gt;
+&lt;p&gt;
+	这一转向契合中国制造业升级与电商行业规范化的长期趋势，也为下沉市场竞争提供了新的参照框架。
+&lt;/p&gt;
+&lt;p&gt;
+	AI技术是京喜重构产业带效率的工具，其应用并非停留在营销层面，而是渗透至运营提效、需求洞察、产品优化、产销协同全链条，实现中小商家能力的普惠式升级，成为商家的“超级外脑”。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/04/29/20260429023024812.jpg" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;1. AI普惠：让小店具备大厂运营力&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	对于广大的中小商家而言，最稀缺的资源不是资金，而是专业的人才。
+&lt;/p&gt;
+&lt;p&gt;
+	京喜在2026年战略中，将“AI提效”作为核心扶持手段，直接击穿了这一痛点。
+&lt;/p&gt;
+&lt;p&gt;
+	例如14款AI免费工具。对于一个只有“一人一桌”的个体户而言，这意味着他们无需雇佣昂贵的美工和运营，即可利用AI生成高质量的商品图、文案和营销方案。
+&lt;/p&gt;
+&lt;p&gt;
+	其背后商业价值呼之欲出：对于多数中小商家而言，优先考虑的并非把生意做的多大，而是如何活下去。这种“普惠型AI”极大地降低了开店门槛，自然也极大提升了商家开店积极性与进取心。
+&lt;/p&gt;
+&lt;p&gt;
+	正如安国药食同源商家在大会上的分享：该商家仅以1名运营人员配置，借助京喜AI工具与平台扶持，实现年销售额超1300万元，经营规模从简易作坊扩展为标准化经营主体。AI工具的普及直接降低商家固定成本与操作门槛，推动京喜小店实现轻资产、高效率运转，其综合费用率显著低于行业平均水平。
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 29 Apr 2026 02:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTFB4RXVYRFgzWDJjZi1rYVRLRVhNX1QyREFldEQyMGVFajNGYzMxSGtYTGdXRGNaQXBUaTdXaDl0NzBab18yMmFZMks2OFZEQjlDVzVjVTRMWmZlWkhVN25DV2RBSFU</guid></item><item><title>直接停摆！苹果iPhone印度扩产遇阻 没有中国团队根本玩不转 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119231.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;直接停摆！苹果iPhone印度扩产遇阻 没有中国团队根本玩不转&lt;/p&gt;
           
@@ -1351,7 +1969,29 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 23:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81NDRadTVGc1VSbE9sSnVJdjF0NGM5S0VFQi12Z09qY1NHaFNsdTU0bVR0NnB6d01rVi11UzRWY0dTNDRRWVRWb1NOem82b0VBU1dKbkhNa04</guid></item><item><title>美伊悬而未决，OpenAI“鬼故事”扰动，美股美债齐跌，半导体回调，WTI破百，金银大跌 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771095</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Apr 2026 23:18:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1FbkNhb3BURTFVTnhpM3dnYThPZC1GeXFobTFpQ3Y4d001N01wbE5kWUdZYk1PNkdtSU9YRThYOE42N2t5Y243Tk9mSHFnZ3RuTzRv</guid></item><item><title>基于安卓17 Beta 2 小米澎湃OS开发者预览版发布：支持小米17等三款机型 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119183.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 23:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81NDRadTVGc1VSbE9sSnVJdjF0NGM5S0VFQi12Z09qY1NHaFNsdTU0bVR0NnB6d01rVi11UzRWY0dTNDRRWVRWb1NOem82b0VBU1dKbkhNa04</guid></item><item><title>美伊悬而未决，OpenAI“鬼故事”扰动，美股美债齐跌，半导体回调，WTI破百，金银大跌 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771095</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Apr 2026 23:18:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1FbkNhb3BURTFVTnhpM3dnYThPZC1GeXFobTFpQ3Y4d001N01wbE5kWUdZYk1PNkdtSU9YRThYOE42N2t5Y243Tk9mSHFnZ3RuTzRv</guid></item><item><title>国产软件越来越好用！工信部：基于开源的鸿蒙系统手机突破5500万台 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119188.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技4月29日消息，据“工信微报”公众号消息，日前，国新办举行国务院政策例行吹风会，介绍《关于推进服务业扩能提质的意见》有关情况。&lt;/p&gt;
+&lt;p&gt;会上，工业和信息化部副部长柯吉欣表示，2025年，软件和信息技术服务业整体行业营收达到15.48万亿元，是2012年的6.2倍，年均复合增长率达到15.1%。&lt;/p&gt;
+&lt;p&gt;“在软件方面，国产操作系统、数据库等基础软件水平稳定提高，&lt;strong&gt;现在国产软件在运用方面跟前几年完全不一样，现在越来越丝滑，越来越好用。”&lt;/strong&gt;柯吉欣说道。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/e5c92bc95c5347b8a89fa05a5ec02e75.png" target="_blank"&gt;&lt;img alt="国产软件越来越好用！工信部：基于开源的鸿蒙系统手机突破5500万台" h="525" src="//img1.mydrivers.com/img/20260429/s_e5c92bc95c5347b8a89fa05a5ec02e75.png" w="572"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/abddab8bddb54684a44cfacaf562937d.png" target="_blank"&gt;&lt;img alt="国产软件越来越好用！工信部：基于开源的鸿蒙系统手机突破5500万台" h="525" src="//img1.mydrivers.com/img/20260429/s_abddab8bddb54684a44cfacaf562937d.png" w="569"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此外，柯吉欣还提到，&lt;span&gt;&lt;strong&gt;3月底，搭载基于开源的鸿蒙操作系统的手机总量已经突破5500万台。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260429/59c4cef5a3d14284bd245b15b72d02bf.png" target="_blank"&gt;&lt;img alt="国产软件越来越好用！工信部：基于开源的鸿蒙系统手机突破5500万台" h="724" src="//img1.mydrivers.com/img/20260429/s_59c4cef5a3d14284bd245b15b72d02bf.png" w="575"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据了解，今年3月，华为曾宣布鸿蒙5与鸿蒙6的终端设备数已突破5000万大关。&lt;/p&gt;
+&lt;p&gt;进入4月后，华为常务董事、产品投资评审委员会主任、终端BG董事长余承东进一步表示，鸿蒙6终端设备数量已超过5500万台。&lt;/p&gt;
+&lt;p&gt;值得注意的是，此次余承东公布的数据口径，&lt;strong&gt;已不再包含鸿蒙5设备数量，意味着鸿蒙生态正全面迈入6.0/6.1新阶段。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这对鸿蒙系统而言，是一次具有里程碑意义的阶段性突破；而放在国产操作系统的发展进程中，也意味着这一新生态正在跨越起步阶段，加速走向规模化增长。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260429/010698b7eda84fcda7de90cb4bb94476.jpg" target="_blank"&gt;&lt;img alt="国产软件越来越好用！工信部：基于开源的鸿蒙系统手机突破5500万台" h="400" src="//img1.mydrivers.com/img/20260429/s_010698b7eda84fcda7de90cb4bb94476.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 22:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBDM0JXMXVzZjJfUkRzVUg5eUZLS1h6NnU4ZlI1V2syTWU2enh2bUtYa1dFRVlhR1NaQ3B3TDk5RWpoZXRmU3RvMmNRTlFDZU1hZzlKZGRndkg</guid></item><item><title>基于安卓17 Beta 2 小米澎湃OS开发者预览版发布：支持小米17等三款机型 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119183.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;基于安卓17 Beta 2 小米澎湃OS开发者预览版发布：支持小米17等三款机型&lt;/p&gt;
           
@@ -1415,7 +2055,101 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 22:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE95dUcxZVBtYVpieVhRLXFBSkhtcHJQU3dwaWlWSklFVEtZMXpEdVJBZzdzM191V282UlU3RXpnUnVUTlo4N2E3VXdYd1NVWmFjUEtrdXppbS0</guid></item><item><title>亚马逊已在 AWS 上架多款全新 OpenAI 产品 - 新浪网</title><link>https://finance.sina.com.cn/world/2026-04-29/doc-inhwceiq7967460.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 22:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE95dUcxZVBtYVpieVhRLXFBSkhtcHJQU3dwaWlWSklFVEtZMXpEdVJBZzdzM191V282UlU3RXpnUnVUTlo4N2E3VXdYd1NVWmFjUEtrdXppbS0</guid></item><item><title>AI 世纪对决开庭，马斯克在OpenAI审判中出庭作证 - 新浪财经</title><link>https://finance.sina.com.cn/world/2026-04-29/doc-inhwceiq7973181.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    
+&lt;p&gt;　　本周二，埃隆・马斯克出庭作证表示，他起诉 OpenAI 及其高管的诉讼，早已超越单一企业纠纷，直指人工智能这项&lt;strong&gt;足以毁灭全人类&lt;/strong&gt;的技术未来。&lt;/p&gt;
+&lt;p&gt;　　马斯克指控，OpenAI 首席执行官山姆・奥尔特曼、总裁格雷格・布罗克曼联手欺骗自己，背弃了 OpenAI 最初的非营利使命。目前，马斯克向美国加州北区联邦地区法院提起诉讼，要求 OpenAI 赔偿&lt;strong&gt;1300 亿美元&lt;/strong&gt;损失，强制公司恢复非营利架构，并罢免奥尔特曼与布罗克曼的董事职务。&lt;/p&gt;
+&lt;p&gt;　　自身拥有人工智能企业的马斯克在奥克兰法庭的证人席上坦言：“我对人工智能抱有极度担忧。” 他表示，人工智能既能让全人类走向繁荣，也可能给人类带来毁灭性后果。“我们绝不希望迎来《终结者》式的悲剧结局。” 马斯克说道。&lt;/p&gt;
+&lt;p&gt;　　OpenAI 计划最早于今年上市，而本次诉讼或将重创这家全球顶尖 AI 企业，同时也是马斯克旗下 AI 业务最大的竞争对手。长期以来，OpenAI 一直驳斥马斯克的各项指控，称其诉讼纯粹源于嫉妒与不甘。&lt;/p&gt;
+&lt;p&gt;　　OpenAI 首席辩护律师比尔・萨维特在周二开庭陈述中表示：“我们之所以对簿公堂，只因马斯克当初对 OpenAI 的判断全盘错误。如今他起诉，本质是因为双方已成行业竞品。身为竞争对手，马斯克会不择手段打压 OpenAI。”&lt;/p&gt;
+&lt;p&gt;　　陪审团的裁决，将作为法官伊冯娜・冈萨雷斯・罗杰斯的重要参考，最终裁定是否满足马斯克的全部诉求：&lt;strong&gt;强制 OpenAI 回归非营利模式、罢免两位创始人董事席位、划拨约 1300 亿美元赔偿金回流至 OpenAI 非营利基金会。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　除马斯克提出的各项整改与赔偿要求外，这场官司极有可能打乱 OpenAI 的上市进程，阻碍其行业扩张步伐。作为 AI 赛道两大先驱，马斯克与奥尔特曼的博弈，或将深刻重塑这项新兴、却已极具影响力的核心技术格局。市场普遍预计，OpenAI 上市将成为史上重磅 IPO 之一，募资所得将巩固其早期建立的行业领先地位；反之，若马斯克胜诉，其旗下 xAI 公司将一举削弱头号对手，实现弯道超车。&lt;/p&gt;
+&lt;div class="img_wrapper"&gt;&lt;img src="https://n.sinaimg.cn/finance/transform/59/w550h309/20260429/12bf-31d5b373e167a522df319f3e19c1d1d0.png" alt="山姆・奥尔特曼" data-link=""&gt;&lt;span class="img_descr"&gt;山姆・奥尔特曼&lt;/span&gt;&lt;/div&gt;
+&lt;p&gt;　　早在开庭质证前，本案就已矛盾激烈、争议不断。&lt;/p&gt;
+&lt;p&gt;　　本周一，马斯克持续在自家社交平台 X 上发文，抨击 OpenAI、奥尔特曼与布罗克曼，重申这家 ChatGPT 开发商欺骗创始人、违背初心的指控。&lt;/p&gt;
+&lt;p&gt;　　他发文直言：“骗子奥尔特曼与格雷格・布罗克曼窃取公益机构，事实确凿、无可辩驳。”&lt;/p&gt;
+&lt;p&gt;　　周二晨间，法官罗杰斯因马斯克持续在社交媒体评论案件，对其提出严厉警告，并威胁下达&lt;strong&gt;言论禁令&lt;/strong&gt;。最终，马斯克承诺限制相关发帖，奥尔特曼与布罗克曼也同步达成相同约定。&lt;/p&gt;
+&lt;p&gt;　　此外，马斯克的维权之路还面临多重阻碍。周一庭审甄选陪审员阶段，其律师团队剔除了多名对马斯克抱有强烈负面评价的候选陪审员：有人在问卷中直言马斯克 “贪婪卑劣”，还有陪审员表示，特朗普政府时期马斯克主导的政府效率部（DOGE）削减开支政策，严重损害了其伴侣的工作与生计。&lt;/p&gt;
+&lt;p&gt;　　罗杰斯法官对马斯克律师团队表示：“现实就是，很多民众对马斯克观感不佳，但这不影响司法程序应当坚守公正与底线。”全程出庭参与陪审员筛选的奥尔特曼，公众负面评价较少。最终入选的陪审团成员，大多对马斯克及人工智能行业持中立态度。&lt;/p&gt;
+&lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/59/w550h309/20260429/abef-eb2c3b2dc9074f5142853fea31505efe.png" alt="马斯克代理律所 MoloLamken 的案件资料箱运送至法院"&gt;&lt;span class="img_descr"&gt;马斯克代理律所 MoloLamken 的案件资料箱运送至法院&lt;/span&gt;&lt;/div&gt;
+&lt;p&gt;　　&lt;strong&gt;海量证据：邮件、短信与通话记录曝光&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　2015 年，马斯克联合创立并出资创办非营利机构 OpenAI，自述创办初期累计出资至少 4400 万美元。但 2018 年，双方爆发激烈权力斗争，马斯克正式退出公司董事会，后续创立自家 AI 企业 xAI。&lt;/p&gt;
+&lt;p&gt;　　马斯克退出一年后，OpenAI 成立盈利性子公司以筹措资金；2025 年，进一步改制为公益营利企业，隶属于 OpenAI 基金会。马斯克在诉状中指出，这一系列改制彻底背弃机构初衷 —— 原本旨在研发安全、开源、造福公众的人工智能技术；奥尔特曼、布罗克曼等核心高管，利用自己的公益捐款非法牟利。本案中，微软被列为共同被告，被控协助、纵容 OpenAI 违背公益信托初心。&lt;/p&gt;
+&lt;p&gt;　　马斯克的代理律师史蒂文・莫洛在开庭陈述中指控：“OpenAI、高管奥尔特曼与布罗克曼，以及投资方微软，借机敛财、扩张权势，彻底践踏了这家公益机构成立的核心宗旨。”莫洛补充，创办初期马斯克曾参与讨论企业架构，坚决反对商业化盈利模式；后续 OpenAI 与微软达成深度合作，彻底背离全人类公共利益，加之自身其他业务事务繁忙，因此选择退出董事会。&lt;/p&gt;
+&lt;p&gt;　　在庭审前的驳回诉讼动议中，微软反驳称，马斯克的指控&lt;strong&gt;缺乏事实依据与实质证据&lt;/strong&gt;，通篇都是毫无根据的主观揣测。&lt;/p&gt;
+&lt;p&gt;　　而 OpenAI 方面则给出完全相反的说辞：正是马斯克本人当初极力推动公司商业化；其离职的真实原因，是妄图全盘掌控 OpenAI 却遭到拒绝。这场诉讼，本质是出于嫉妒、悔恨错失事业、恶意打压竞品的私人目的。&lt;/p&gt;
+&lt;p&gt;　　OpenAI 首席律师萨维特表示，当年企业算力资金缺口扩大，计划设立盈利子公司，马斯克要求独占绝对控制权，遭到其他创始团队反对后愤然离职。“对簿公堂，只因为马斯克没能如愿掌控 OpenAI。我的当事人脱离他之后，依旧蓬勃发展、取得成功。马斯克即便心生不满，也无权发起恶意诉讼。” 萨维特强调。&lt;/p&gt;
+&lt;p&gt;　　本次庭审提交了数百页邮件、短信、通话记录及内部文件作为核心证据，完整还原马斯克离职前后的内部纷争。大量私密沟通记录显示，各方私下立场与公开社交言论截然不同。&lt;/p&gt;
+&lt;p&gt;　　一份 2023 年的邮件证据显示，奥尔特曼曾向马斯克示好，称他是自己的 “偶像”，同时坦言马斯克接连抨击 OpenAI 的言论令自己深受伤害。马斯克回信表示：“我理解你的感受，无意刻意伤人，对此我深表歉意。但当下，人类文明的存亡正悬于一线。”&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 28 Apr 2026 21:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5VeW9HZkVSX0FYdHB6a1dWbEotZHBnS3dDMU40aXVCZThvUmo1dHlYMWxxcllVRUxXVUt2VHVJYXhEdk5hQkNERHNlV3ZOOXppMEhfSVdrUHJ1VTU0RC02VldsWW1xaTJCUmItN1RmZXJpUVNrTDNOdmRn</guid></item><item><title>亚马逊已在 AWS 上架多款全新 OpenAI 产品 - 新浪网</title><link>https://finance.sina.com.cn/world/2026-04-29/doc-inhwceiq7967460.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -2247,559 +2981,4 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 12:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ycWVhc2RIRHRpbkxYdWRzcmJycFFSX0lITUNuQXpTM3dPbmJQUkJ5eS1wd2pEVG15d2ZsMDM0ZGl2YWpQbG1zMWtEZU53TWoyZUVJVjlEMDI</guid></item><item><title>2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119143.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，一加Ace 6至尊版于今日晚间正式发布。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;售价方面，12GB+256GB售价3499元；16GB+256GB售价3799元，12GB+512GB售价4099元；16GB+512GB售价4399元；16GB+1TB售价5099元，国补后的价格是2999元起。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260428/04cfcaee73264031aa7f2de3b8993a70.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="367" src="//img1.mydrivers.com/img/20260428/s_04cfcaee73264031aa7f2de3b8993a70.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为一款主打性能的旗舰新作，它的核心实力足以看齐专业级游戏主机，该机首发搭载了联发科天玑9500旗舰芯片。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/04f634f5effb42029c1f9210226a7ec9.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="400" src="//img1.mydrivers.com/img/20260428/s_04f634f5effb42029c1f9210226a7ec9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;这款芯片采用台积电第三代3nm工艺与全大核架构，相比上代产品CPU性能提升了32%，功耗则大幅降低了55%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/bf74171bf5184aa194da10d655858daf.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="375" src="//img1.mydrivers.com/img/20260428/s_bf74171bf5184aa194da10d655858daf.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其内置的G1-Ultra也是目前移动端极强的GPU芯片，峰值性能提升33%，光线追踪渲染性能更是惊人地提升了119%。在大型3D射击游戏的极端测试中，即便同时抛出10个烟雾弹，手机依然能保持满帧稳定运行。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/cb6a34bf4095409c829d685378c163f9.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="375" src="//img1.mydrivers.com/img/20260428/s_cb6a34bf4095409c829d685378c163f9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一加首次将独家自研的新一代风驰游戏内核深度写入芯片底层。这让一加Ace 6至尊版的GPU潜能得到了彻底释放，其性能算力甚至超越了Xbox的一款主机，实现了手机端对主机级光追效果的首次对标。&lt;/p&gt;
-&lt;p&gt;在工业设计上，该机承袭了家族旗舰的设计语言。标志性的金属魔方Deco配合黄金大R角与金属中框，共同构建出极具质感的整机轮廓，视觉效果规整且统一。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/633ae78a9a0a41c0ab63e8817cd300cb.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="399" src="//img1.mydrivers.com/img/20260428/s_633ae78a9a0a41c0ab63e8817cd300cb.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;为了应对各类复杂的使用环境，该机配备了IP66、IP68、IP69以及IP69K的全满贯防尘抗水等级。这种硬核的防护配置，确保了机身从内到外都能抵御各种意外侵袭，让日常使用更加从容。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/b24fdbf93b3447de80939c480c5d765b.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="399" src="//img1.mydrivers.com/img/20260428/s_b24fdbf93b3447de80939c480c5d765b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一加Ace 6至尊版推出了王牌觉醒与金属风暴两款全新配色，正面搭载了一块6.78英寸的1.5K直屏，支持最高165Hz的刷新率，无论是日常刷屏还是高强度的电竞游戏，都能提供丝滑的操作体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/bb8973a8b6434a6b9726ff0c2522dfbe.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="399" src="//img1.mydrivers.com/img/20260428/s_bb8973a8b6434a6b9726ff0c2522dfbe.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;硬件配置上，该机内置了8600mAh的超大电池，并支持120W超级闪充。影像方面则由5000万像素主摄与800万像素超广角镜头组成，配合1600万像素前置镜头，全方位满足了用户的多元化需求。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260428/0961a591ea264fd2afc19631b19f55a7.jpg" target="_blank"&gt;&lt;img alt="2999元起 一加Ace 6至尊版发布：搭载机圈最强GPU 性能无敌" h="314" src="//img1.mydrivers.com/img/20260428/s_0961a591ea264fd2afc19631b19f55a7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 11:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE05VjItZGlPLWVVZ3M5OEpIS0dvamFmSWJFZmVueS1CUFhGV2pFQXpISkpHTHF4bmFQVVgzZjh4dUE5dGNCTzI2V0RkcTg0U19tcmRxTjlDOXc</guid></item><item><title>折叠屏iPhone真机首曝：博主晒3张照片冲上热搜 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119141.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;折叠屏iPhone真机首曝：博主晒3张照片冲上热搜&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-28 19:41:35  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1774704.html" title="王一的主页" class="newstiao4"&gt;王一&lt;/a&gt;&lt;p&gt;  编辑：王一 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119141-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，&lt;span&gt;&lt;strong&gt;今日，博主“数码闲聊站”发文分享了三张图片，并配文称：iPhone Ultra真机超前瞻，屏幕比例基本一致，苹果第一代折叠屏你们会冲吗？&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;
-&lt;br&gt;
-该条博文，下午还一度冲上了微博热搜。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/7b6486b4-44ea-4cbb-8a68-cb1600795118.png" target="_blank"&gt;&lt;img alt="折叠屏iPhone真机首曝：博主晒3张照片冲上热搜" h="295" src="//img1.mydrivers.com/img/20260428/S7b6486b4-44ea-4cbb-8a68-cb1600795118.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/ac1c1465-ad7a-4a7a-81d5-fea723d06313.jpg" target="_blank"&gt;&lt;img alt="折叠屏iPhone真机首曝：博主晒3张照片冲上热搜" h="396" src="//img1.mydrivers.com/img/20260428/Sac1c1465-ad7a-4a7a-81d5-fea723d06313.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;从图片可见，这款折叠屏采用书本式横向内折形态，闭合状态为常规直板手机造型，展开后呈现接近方形的大屏，屏幕显示类似iOS的系统界面。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/9648d39e-74e3-4906-9118-cd3823eafb01.jpg" target="_blank"&gt;&lt;img alt="折叠屏iPhone真机首曝：博主晒3张照片冲上热搜" h="450" src="//img1.mydrivers.com/img/20260428/S9648d39e-74e3-4906-9118-cd3823eafb01.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该动态发布后，网友纷纷发表了自己的看法。&lt;/p&gt;
-&lt;p&gt;有网友表示 ：“必须冲”“买买买”，也有网友直言 ：“起码2万起步，不然亏本卖”。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/23e36e52-d9ee-476a-84a8-041772fd74ba.jpg" target="_blank"&gt;&lt;img alt="折叠屏iPhone真机首曝：博主晒3张照片冲上热搜" h="450" src="//img1.mydrivers.com/img/20260428/S23e36e52-d9ee-476a-84a8-041772fd74ba.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此前，已有博主分享过苹果首款折叠屏iPhone Fold的外观信息。&lt;br&gt;
-&lt;br&gt;
-该机采用主流书本式折叠方案，背部相机模组为横置双摄排列，设计语言与传统iPhone有明显区别。&lt;br&gt;
-&lt;br&gt;
-&lt;strong&gt;配置方面，iPhone Fold搭载4800万像素主摄+4800万像素超广角镜头，核心为A20 Pro芯片。&lt;/strong&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;strong&gt;屏幕规格上，外屏尺寸约5.3英寸，展开后内屏约7.7英寸，展开状态显示面积接近iPad mini。&lt;/strong&gt;&lt;br&gt;
-&lt;br&gt;
-为应对大屏高功耗，其电池容量预计将超过5000毫安时。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/e093ff2e-e0d6-432d-b3e2-2b6320f93e6c.png" target="_blank"&gt;&lt;img alt="折叠屏iPhone真机首曝：博主晒3张照片冲上热搜" h="450" src="//img1.mydrivers.com/img/20260428/Se093ff2e-e0d6-432d-b3e2-2b6320f93e6c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：王一&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 11:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBwS3FyQ3NqeFEyVHkxSldSdVhYMjRsSGhKRFJubVp5MlhlOHpHY0p2bGdjU1d3OHVSMTdrdDR2ZHdYTUt0TUQ1YTAya2FTZ1NfTnlkaW9QZ1k</guid></item><item><title>一份专利，暴露OpenAI自研芯片 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771138</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Apr 2026 11:30:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1xVzdvLTRCS3dSMC1iTm1DM3pENFRmaUc2ZUR2d2k3cXpPOThiNlJoUUVseFYtSFh6RXRiV19jU0lnbXdnVk9NNnBoLUl0bGtwY2Rn</guid></item><item><title>起猛了！成都鱼塘惊现机器人钓鱼 公司回应：鱼是提前挂上的 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119136.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;起猛了！成都鱼塘惊现机器人钓鱼 公司回应：鱼是提前挂上的&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-28 19:10:33  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1774704.html" title="王一的主页" class="newstiao4"&gt;王一&lt;/a&gt;&lt;p&gt;  编辑：王一 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119136-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，近日，一段人形机器人在成都某鱼塘钓鱼的视频在网络走红，引发大量网友围观与讨论。&lt;br&gt;
-&lt;br&gt;
-&lt;span&gt;&lt;strong&gt;视频里，机器人端坐钓箱、装备齐全，抬竿动作流畅，还成功“钓”起一条鱼，不少人惊叹人形机器人已能完成垂钓这类精细操作。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;今日，相关科技公司公开回应，澄清机器人并非自主钓鱼，鱼是提前挂在鱼钩上的，现场只是一场功能测试。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;据了解，该视频由成都一家专注机器人软件二次开发的科技公司员工拍摄。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/e209f343-3aef-4822-8be8-929647e0970a.png" target="_blank"&gt;&lt;img alt="起猛了！成都鱼塘惊现机器人钓鱼 公司回应：鱼是提前挂上的" h="510" src="//img1.mydrivers.com/img/20260428/Se209f343-3aef-4822-8be8-929647e0970a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;公司工作人员表示，此次钓鱼演示并非真的让机器人独立完成垂钓，而是通过编程让机器人执行抬竿动作，核心目的是测试新研发的“灵巧手”操控精度与动作协调性。&lt;br&gt;
-&lt;br&gt;
-之所以选在鱼塘测试，一方面是公司老板喜爱钓鱼，就近测试更方便，另一方面户外场景也能更好检验机器人在真实环境下的动作稳定性。&lt;/strong&gt;&lt;br&gt;
-&lt;br&gt;
-该公司此前就曾展示过机器人倒茶、跳舞、洗车、弹琴等多种技能，均是通过程序设计实现拟人化动作。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/ff587ad6-44bf-44d0-bcb3-97025092986c.png" target="_blank"&gt;&lt;img alt="起猛了！成都鱼塘惊现机器人钓鱼 公司回应：鱼是提前挂上的" h="369" src="//img1.mydrivers.com/img/20260428/Sff587ad6-44bf-44d0-bcb3-97025092986c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此次钓鱼演示，同样是动作复刻与手部功能验证，并非机器人具备自主钓鱼能力。&lt;br&gt;
-&lt;br&gt;
-&lt;strong&gt;工作人员补充，目前机器人无法自主判断鱼情，若有客户需求，后续可开发鱼情识别、远程APP操控抬竿等功能，让机器人真正学会钓鱼。&lt;/strong&gt;&lt;br&gt;
-&lt;br&gt;
-视频走红后，钓友们纷纷调侃，有人笑称要“扣机器人电池”，有人希望机器人帮忙打窝，还有人建议加装太阳能板让机器人“长期守钓”。&lt;/p&gt;
-&lt;p&gt;这场趣味测试虽有“摆拍”成分，但也直观展现了人形机器人在精细动作控制上的进步。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/69fb6026-7ee3-41d0-865c-8573c1d6a83c.png" target="_blank"&gt;&lt;img alt="起猛了！成都鱼塘惊现机器人钓鱼 公司回应：鱼是提前挂上的" h="447" src="//img1.mydrivers.com/img/20260428/S69fb6026-7ee3-41d0-865c-8573c1d6a83c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：王一&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 11:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5wTndkYXRVSzYyWWdkSDVJcEcxOHZoOTZ2NHl2R3dFNDYyZEZLaEZzUU9taVRKRVNzMHZVd0ZLbXNoay1Xb21XMjhZQ3E0ekxaVTduUmxDMXk</guid></item><item><title>对话朱克力：别老想着摘果子，资本要有“打捞张雪”的能力 - 观察者</title><link>https://www.guancha.cn/politics/2026_04_28_815270.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	张雪夺冠是“神来之笔”，还是中国产业土壤的必然产物？怎样才能让更多的“张雪”出现？中国创新到底需要什么？
-&lt;/p&gt;
-&lt;p&gt;
-	本期《思路打开》对话国研新经济研究院创始院长朱克力，探讨产业与资本的底层痛点。朱克力认为，中国创新缺的从来不是“摘果子”的热钱，而是发现黑马的眼光。资本与其大局已定才去锦上添花，不如建立一套“星探级”的发现机制，让初创期的“张雪”们不被埋没，成为驱动中国智造的确定性力量。
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	
-&lt;/p&gt;
-
-
-&lt;p&gt;
-	&lt;span&gt;【对话/朱克力&amp;amp;王慧】&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;王慧：朱老师您好，欢迎做客我们的节目。今天我们就围绕您的两本新书——《中国经济2026》和《读懂“十五五”》，再结合现在大家比较关心的一些热点话题来跟您聊一聊。首先是最近很受关注的一件事，张雪机车在世界超级摩托车锦标赛上夺冠，非常振奋人心。他在赛后说，当时选择在重庆创业，就是看中了重庆当地有很完善的产业链和供应链。我们都知道，像重庆摩托车这样的特色产业集群在中国有很多，它们对相关产业的发展有怎样的带动作用？&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;朱克力：&lt;/strong&gt;张雪机车让我们对中国非常广泛的产业门类，以及它背后深厚巨大的产业集群有了更宏大的理解。中国制造不是一个虚幻的概念，它是由一个个具体门类当中的制造环节以及制造品背后的产业集群组成的。
-&lt;/p&gt;
-&lt;p&gt;
-	摩托车这个细分赛道里就有非常多的产业集群，比如重庆，还有广东江门。江门的配件可以说是琳琅满目，由点到面形成一个产业环，拥有非常广泛的配件体系，所以江门也被称为摩界的华强北。重庆就更不用说了，它本身就是一个摩托车重镇。所以，在这样一个生态里，张雪比其他地方创业做摩托车的人更加拥有一片天然的、肥沃的土壤，这是无法替代的。
-&lt;/p&gt;
-&lt;p&gt;
-	所以，张雪能够一跃而起，很重要的一个因素就是中国的产业，特别是区域产业中丰富的产业链条，这和它们的支撑是分不开的。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;王慧：我们看到的是张雪，但是张雪背后还有很多细分产业。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;朱克力：&lt;/strong&gt;很多个“张雪”在支撑。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;王慧：您认为政府应该怎么做，才能让更多的“张雪”出现呢？&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;朱克力：&lt;/strong&gt;张雪在接受采访的时候说，重庆其实“一个子都没给”，这句话看似在对一个地方政府有没有扶持企业进行评论，其实恰恰相反。
-&lt;/p&gt;
-&lt;p&gt;
-	在张雪的身上，我们看到的是政府对企业这一市场主体的普惠式的对待。当张雪还处于创业阶段的时候，政府并没有给予特殊扶持。我们事后诸葛亮地看，张雪这么牛，好像理应得到多少资金的支持，但重庆政府并没有去刻意太多作为，而是营造了一个让创业者能够真正发挥创新创业能力的土壤，一个市场化、法治化的营商环境。
-&lt;/p&gt;
-&lt;p&gt;
-	我认为，作为政府来说，这是第一位的，是千千万万个市场主体和企业最需要的一种有为。在重庆所勃发的产业生态中，在一个个细分领域的制造生态当中，其实都能够体现这种有为。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;王慧：您接触过这么多的企业，您觉得企业现在最需要什么？它们最希望各级政府做好哪些事？&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;朱克力：&lt;/strong&gt;企业希望政府提供一个很好的营商环境，创新创业的土壤。这是最稀缺的。但同时也要有一些有竞争力的人才政策，相关的法治化保障等等。企业希望在一个可预期、能够真正有安全感、摩擦系数比较小的营商环境中进行生产经营和创新创业活动。
-&lt;/p&gt;
-&lt;p&gt;
-	张雪能够在今天脱颖而出，恰恰印证了这一点：他不需要政府打扰或者刻意干预他的时候，政府要少干预，少打扰企业；但需要政府的时候，政府也能帮他去主张，去处理一些纠纷，提供一些必要保障。
-&lt;/p&gt;
-&lt;p&gt;
-	这不是说要给他提供多少资金，如果产业政策明确支持，符合条件的当然要给，但不是一定要以资金支持和补贴作为前提。从市场经济逻辑来看，资金补贴政策是容易被扭曲的，因为它容易导致寻租，扭曲和干扰其他有创新能力的活动。
-&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 28 Apr 2026 11:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTFBxM1FPak1pdEhrLVM3V2w2WDFydUlvQUF0R25aS2hkek53MlNpV3lJSkJtTERDSXZQazFnY3czLV9Uek15RGpwOTZyZkJoVzN2VWFhRkJCTmZDUFpSMUxCMHpLTU5FZw</guid></item><item><title>跟日本人抢工作！宇树G1将部署羽田机场：协助地勤搬运行李货物 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119134.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，据媒体报道，&lt;span&gt;&lt;strong&gt;自今年5月起，日本航空将在日本羽田机场试验部署宇树科技G1人形机器人。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;据了解，G1将协助人类地勤员工搬运行李、货物，应对游客增长和劳动力短缺问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;据日本国家旅游局统计，2026年1-2月已有超过700万名游客抵达日本。&lt;/p&gt;
-&lt;p&gt;但该国社会老龄化趋势仍在加剧，到2040年，日本可能需要超650万外国劳动力维持经济增长。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在演示中，该机器人可将货物搬运到飞机传送带，并朝着附近的工作人员做出手势动作，展示机器人在真实生产环境的初步协作能力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/e4be50fa-3a9f-48ec-9ebd-ab9b302acc3a.png" target="_blank"&gt;&lt;img alt="跟日本人抢工作！宇树G1将部署羽田机场：协助地勤搬运行李货物" h="302" src="//img1.mydrivers.com/img/20260428/Se4be50fa-3a9f-48ec-9ebd-ab9b302acc3a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;日本航空介绍，将机器人应用在体力劳动可以显著减轻员工压力，改善整体工作条件，但安全管理等关键责任仍将由人类控制。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;同时，本次试点计划由GMO Internet Group公司协助实施，他们首先在虚拟环境使用英伟达Isaac Simulator训练机器人完成工作。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;通过动作捕捉、视频数据创建机器人的数字孪生，在电脑虚拟场景模拟人类学习过程，在调优后将孪生的数据迁移到真实机器人，实现现实环境的顺畅操作。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 10:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE56R2N5T2huLV9ZbldoNmduNGN6bVJtTlhqZUpNTl95bVlmR1VTWkYxZFR2TGlEa1M3a1RaVGVxSGQ5RVNxWmJhWlNPNloxa3JPM2x2MWxQazI</guid></item><item><title>胡锡进：中国AI“双子星”杀出重围，西方封锁者的如意算盘彻底碎了！ - 凤凰网</title><link>https://news.ifeng.com/c/8shDxahugXV</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;国内AI圈近期传出一个令人振奋的消息，两家领军级AI创业公司DeepSeek（深度求索）和Kimi（月之暗面），在底层技术的突破上打出了一套漂亮的“组合拳”，在一周内相继发布各自万亿参数级别的开源大模型。老胡看到，有人把这比作中国AI界的“两弹一星”时刻，当“人工智能+”上升为国家战略，两家技术路径各异却节奏同频的公司，确实正在共同揭示科技社会的一次深刻演进。&lt;/p&gt;&lt;p&gt;两家公司展现了一种难得的开源协作精神：Kimi模型参考了DeepSeek架构，而DeepSeek新模型则采用了Kimi大规模验证的关键优化器技术，直接挑战了西方垄断十年的技术标准。这种“你中有我，我中有你”的超越零和博弈的协作关系，在高度竞争的科技圈并不多见。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/30FCC63ABFE103AFFCBBE6DB431479E8399F6310_size187_w1080_h621.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="▲权威机构Artificial Analysis公布的全球大模型“智能指数”"&gt;&lt;/p&gt;&lt;p class="textAlignCenter picIntro"&gt;▲权威机构Artificial Analysis公布的全球大模型“智能指数”&lt;/p&gt;&lt;p&gt;老胡想说的是，这不仅仅是两家公司的胜利。一方面，我们要看到，西方对华的技术封锁紧锣密鼓，试图在算力和底层算法上把中国困在“石器时代”；但另一方面，中国人的韧性和创新能力，往往也在压力最大的时候爆发。这两家公司把万亿量级的开源模型做到了逼近美国顶尖闭源模型的效果，而且价格只有人家的不到十分之一，这说明什么？说明中国AI正在形成一种基于成本优势和技术迭代的“非对称作战”能力。&lt;/p&gt;&lt;p&gt;Deepseek和Kimi的创始人梁文锋和杨植麟，时隔一年先后参加了总理座谈会。这释放出的信号非常明确：国家不仅支持创新，更支持那种能解决“卡脖子”问题的实战派。他们不是在实验室里空谈，而是实实在在地与国产芯片“共生”。DeepSeek研究在华为昇腾芯片上做推理，Kimi搞混合式推理架构，让国产芯片和西方芯片能“同台竞技”。这种现实主义的突围路径，正是中国科技产业最需要的底气。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/F9B372A8937B59230A70BD828EF2EE58C97CF52D_size362_w733_h412.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="胡锡进：中国AI“双子星”杀出重围，西方封锁者的如意算盘彻底碎了！"&gt;&lt;/p&gt;&lt;p&gt;同时，我们离全球最顶级的生态位还有一段路要走，美国人的先发优势依然客观存在。但老胡相信，只要不乱阵脚，坚持开源共享，坚持底层自研，那些试图通过封锁来迟滞中国进步的企图，终将在历史的洪流面前撞得头破血流。英伟达的黄仁勋在GTC演讲中，用这两个中国模型来给自家下一代芯片“验货”，美国的Cursor、日本的乐天都在套壳使用中国模型。那些希望技术封锁者的“如意算盘”，恐怕要落空了。&lt;/p&gt;&lt;p&gt;老胡最后想说，中国太大了，这种充满活力的民间创新与国家意志的同频共振，是任何力量都难以遏制的。让我们给这些年轻人一点时间，给中国AI一点耐心。中国人的“AI核弹”已经造出来了，接下来的戏，一定会越唱越精彩。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 28 Apr 2026 10:40:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1ISllvc2tvUm1tS3ZOT1RKamRDbWZiNzNKYmd4aHYyTWR3d0Y3WW14SlhHZXpsV0NIWEpLZzBlYzJGMjlnb0FuQTBqQWw</guid></item><item><title>胡锡进：中国AI“双子星”杀出重围，西方封锁者的如意算盘彻底碎了！ - 凤凰网</title><link>https://i.ifeng.com/c/8shDxahugXV</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;国内AI圈近期传出一个令人振奋的消息，两家领军级AI创业公司DeepSeek（深度求索）和Kimi（月之暗面），在底层技术的突破上打出了一套漂亮的“组合拳”，在一周内相继发布各自万亿参数级别的开源大模型。老胡看到，有人把这比作中国AI界的“两弹一星”时刻，当“人工智能+”上升为国家战略，两家技术路径各异却节奏同频的公司，确实正在共同揭示科技社会的一次深刻演进。&lt;/p&gt;&lt;p&gt;两家公司展现了一种难得的开源协作精神：Kimi模型参考了DeepSeek架构，而DeepSeek新模型则采用了Kimi大规模验证的关键优化器技术，直接挑战了西方垄断十年的技术标准。这种“你中有我，我中有你”的超越零和博弈的协作关系，在高度竞争的科技圈并不多见。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/30FCC63ABFE103AFFCBBE6DB431479E8399F6310_size187_w1080_h621.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="▲权威机构Artificial Analysis公布的全球大模型“智能指数”"&gt;&lt;/p&gt;&lt;p class="textAlignCenter picIntro"&gt;▲权威机构Artificial Analysis公布的全球大模型“智能指数”&lt;/p&gt;&lt;p&gt;老胡想说的是，这不仅仅是两家公司的胜利。一方面，我们要看到，西方对华的技术封锁紧锣密鼓，试图在算力和底层算法上把中国困在“石器时代”；但另一方面，中国人的韧性和创新能力，往往也在压力最大的时候爆发。这两家公司把万亿量级的开源模型做到了逼近美国顶尖闭源模型的效果，而且价格只有人家的不到十分之一，这说明什么？说明中国AI正在形成一种基于成本优势和技术迭代的“非对称作战”能力。&lt;/p&gt;&lt;p&gt;Deepseek和Kimi的创始人梁文锋和杨植麟，时隔一年先后参加了总理座谈会。这释放出的信号非常明确：国家不仅支持创新，更支持那种能解决“卡脖子”问题的实战派。他们不是在实验室里空谈，而是实实在在地与国产芯片“共生”。DeepSeek研究在华为昇腾芯片上做推理，Kimi搞混合式推理架构，让国产芯片和西方芯片能“同台竞技”。这种现实主义的突围路径，正是中国科技产业最需要的底气。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/F9B372A8937B59230A70BD828EF2EE58C97CF52D_size362_w733_h412.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="胡锡进：中国AI“双子星”杀出重围，西方封锁者的如意算盘彻底碎了！"&gt;&lt;/p&gt;&lt;p&gt;同时，我们离全球最顶级的生态位还有一段路要走，美国人的先发优势依然客观存在。但老胡相信，只要不乱阵脚，坚持开源共享，坚持底层自研，那些试图通过封锁来迟滞中国进步的企图，终将在历史的洪流面前撞得头破血流。英伟达的黄仁勋在GTC演讲中，用这两个中国模型来给自家下一代芯片“验货”，美国的Cursor、日本的乐天都在套壳使用中国模型。那些希望技术封锁者的“如意算盘”，恐怕要落空了。&lt;/p&gt;&lt;p&gt;老胡最后想说，中国太大了，这种充满活力的民间创新与国家意志的同频共振，是任何力量都难以遏制的。让我们给这些年轻人一点时间，给中国AI一点耐心。中国人的“AI核弹”已经造出来了，接下来的戏，一定会越唱越精彩。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 28 Apr 2026 10:39:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFB1emlDVEY0SlhlYV9BRUI0cE9qdHNCV0V5Z0F1bHdwRXlpaVluZXQ3Q2pJdVdaMWpiQWxXLWlkRXllRnVvN2EzVw</guid></item><item><title>(影) 战场变天！机器人接管 乌军战力暴增 波兰合作急造“无人机舰队” - aboluowang.com</title><link>https://www.aboluowang.com/2026/0428/2377493.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;p class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/p&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>aboluowang.com</author><pubDate>Tue, 28 Apr 2026 10:32:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTE5aQ1FOVl9PVkM3Y1ZIUUlBMGtGVUlHZGx1TW0zSjQ1TmRGX1ptSFpWRWsyWWlWVkl2MVlHUTBYV1A4clZjanlfdmpOY3MyVDEtU2JObHc3T1JXY254N1HSAWNBVV95cUxPNFhhU1I1d2h1MWgwS3BqMzRoYmVPWTZ5SUI4VHp0U2k0TEIwQXRoQl9QMVRuVGdVWHFRWTYtN05IRkF2ZFVYdXNQbWFHaWEzR0hPc1FmNld3dmF5QjViUXM2SFk</guid></item><item><title>AI算力需求持续爆发，工业富联Q1营收同比增长57%，净利润增长103%｜财报见闻 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771123</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Apr 2026 10:32:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1uZGZJZDA5eXJhcE9idTdRWlowTkdxQVNBZ0lhR0VrSGk1NHBJckRIbERFeHJCRnZMZVFvUjJnTTlwcG1Ob0ViR0NzVGgtTUp4aE5F</guid></item><item><title>主机历史重演！索尼推行30天强制联网核验 PS离线游玩迎来限制 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119124.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，索尼PlayStation近日被曝新增数字版权验证机制，引发玩家群体广泛关注。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;多名用户反馈，在PS4和PS5主机上近期购买的数字游戏出现了30天授权时效限制，必须定期联网完成核验，否则无法正常启动。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/d1426dec-88d6-4aca-b947-6bf2b6843278.jpg" target="_blank"&gt;&lt;img alt="主机历史重演！索尼推行30天强制联网核验 PS离线游玩迎来限制" h="312" src="//img1.mydrivers.com/img/20260428/Sd1426dec-88d6-4aca-b947-6bf2b6843278.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这一现象最早由部分在PS商店购买游戏的玩家发现。反馈信息显示，自2026年3月索尼推送主机系统更新后，在此之后购入的数字游戏都会附带30天授权有效期。如果主机长期保持离线状态，超过时限后游戏会被锁定，只有重新联网完成授权校验才能再次游玩。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;目前玩家反馈有所不同，部分账号已确认受到该限制，也有用户表示暂未遭遇异常。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;针对玩家的疑问，PS官方客服作出回应：&lt;span&gt;&lt;strong&gt;该限制并非系统漏洞或程序错误，而是版本更新刻意加入的官方规则。&lt;/strong&gt;&lt;/span&gt;这项条款仅适用于2026年3月之后的数字游戏订单，并且即便将主机设置为常用设备，也无法绕过强制在线验证要求。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="主机历史重演！索尼推行30天强制联网核验 PS离线游玩迎来限制" h="513" src="//img1.mydrivers.com/img/20260428/c53d760c-e042-440d-84bd-0bfa003ed59c.png" w="429"&gt;&lt;/p&gt;
-&lt;p&gt;与此同时，有游戏博主通过实测视频证实了该机制的真实性。测试人员将主机断网，并拆除CMOS电池强制重置设备时间，模拟长期离线场景。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;结果显示，受新规约束的新款数字游戏直接禁止启动；而3月之前购买的老款数字游戏以及实体光盘游戏均不受影响。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="主机历史重演！索尼推行30天强制联网核验 PS离线游玩迎来限制" h="342" src="//img1.mydrivers.com/img/20260428/100d151e-a925-4e15-98c5-508080c7a77d.png" w="512"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;索尼在用户协议中写明，玩家购买的数字游戏仅为使用许可，并非所有权。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这项新政策曝光后，招致了大量玩家负面评价，这是因为30天强制联网核验的落地，影响了用户购买的数字内容的长期使用性。&lt;strong&gt;而对于习惯离线游玩、经常携带主机外出或长期收藏游戏库的玩家而言，使用价值大幅缩水。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此番操作也让业界想起一段主机圈往事。2013年，微软为Xbox One制定政策，要求主机每24小时必须联网签到，同时限制二手游戏交易、游戏租借与分享功能。&lt;/p&gt;
-&lt;p&gt;这套严苛的数字版权方案当时遭到全球玩家抵制，最终微软只能仓促撤回全部限制。而在当年的E3游戏展上，索尼曾专门对标嘲讽微软，如今索尼反向推出定期联网验证机制，两者形成强烈反差。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;目前索尼官方尚未发布任何公开公告。&lt;/strong&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：于浮&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 10:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBHc0FzSTFxaGt2QWpxdVNjTHlJaTJGbF9tRmFWMjZqdVQ1ZTRuQTU3TTRMSVdLUG1iTkxXZUNaRjVpVzRvMHE2TGZfU2VzMWdya21GM3BISjM</guid></item><item><title>0费率免费使用！支付宝 AI 收正式上线 三步接入即时收款 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119121.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;0费率免费使用！支付宝 AI 收正式上线 三步接入即时收款&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-28 18:12:00  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119121-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，&lt;strong&gt;今日，支付宝正式上线“支付宝AI收”，帮助商家和个人开发者通过OpenClaw（俗称“龙虾”）这类AI Agent提供商业化服务，实现按调用即时收款。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;值得一提的是，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1117/1117537.htm" target="_blank"&gt;这是继推出“AI付”之后&lt;/a&gt;，支付宝在智能体支付领域的进一步布局。&lt;/p&gt;
-&lt;p&gt;具体举例来说，当用户安装某Skill后，对“龙虾”说，“帮我整理最新AI行业的分析报告”，“龙虾”向服务端发起资源请求、询价，并为用户反馈“需支付0.02元才能获取结果”，用户下载安装“支付宝AI付”Skill后授权并完成支付，即可获取资源服务。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260428/01f5781f1c404cd895241745c35d2cc5.png" target="_blank"&gt;&lt;img alt="0费率免费使用！支付宝 AI 收正式上线 三步接入即时收款" h="640" src="//img1.mydrivers.com/img/20260428/s_01f5781f1c404cd895241745c35d2cc5.png" w="493"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;该产品已在支付宝官网A2A交易专区上架（https://aipay.alipay.com/)，接入流程也压缩至三步：入驻签约、创建应用、安装SDK，即可实现每次被AI Agent调用时触发询价、结算。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;值得一提的是，截至12月31日，个人开发者使用还可享受0费率。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;此外，已使用支付宝收单的商家可直接将其服务Skill接入“龙虾”等AI Agent，在用户发出指令、下单购买后自动完成收款，无需重新搭建收单工具。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260428/4497ebece7114a63a1da71211959e496.jpg" target="_blank"&gt;&lt;img alt="0费率免费使用！支付宝 AI 收正式上线 三步接入即时收款" h="399" src="//img1.mydrivers.com/img/20260428/s_4497ebece7114a63a1da71211959e496.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 10:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1pU1lmVHRjWXdXa2V3S0dQX05SNjNIdmdnVUk4MzJNSVlISEN0S0FPZzd0cXZPcmczdnJlT3Q3RHRBN3J2VkFfZ3o5aTZIVTExU0x4cktzRXA</guid></item><item><title>霍尔木兹扼住的不止油路，还有网路 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771120</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Apr 2026 10:08:56 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1GaVBzb1M5Qzg2WGhYUEJFdXBpb1dRbmNOZ1N4Z3VYYncyMUdadmV6cnNqSTVQNDRhcFBib1pEWWUyN3hHVWtvOGdXZGFvOGd3X1Zj</guid></item><item><title>14年了！微软终于动手清理Win8遗留UI：老式加载动画已被替换 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119118.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;14年了！微软终于动手清理Win8遗留UI：老式加载动画已被替换&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-28 18:06:22  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119118-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，&lt;span&gt;&lt;strong&gt;微软在最新的Windows 11 Dev频道预览版build 26300.8289中，替换了自Windows 8沿用至今的登录/注销/重启加载动画。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;新动画与Win11开机时出现的加载指示器风格统一，取代了那个已服役14年的旧式旋转圈。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260428/8f94bd31-586b-4010-8091-676161ce1c55.gif" target="_blank"&gt;&lt;img alt="14年了！微软终于动手清理Win8遗留UI：老式加载动画已被替换" h="365" src="//img1.mydrivers.com/img/20260428/S8f94bd31-586b-4010-8091-676161ce1c55.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该变更目前未正式官宣，需要通过ViVeTool工具手动启用，操作步骤如下：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;从GitHub下载ViVeTool并解压，以管理员身份打开命令提示符并导航至ViVeTool所在目录，输入vivetool /enable /id:59728252后重启电脑即可体验。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="14年了！微软终于动手清理Win8遗留UI：老式加载动画已被替换" h="337" src="//img1.mydrivers.com/img/20260428/S58d44e80-d6fa-43c7-b1e2-7c8ff105d63e.png" w="600"&gt;&lt;br&gt;
-旧版动画&lt;/p&gt;
-&lt;p&gt;Windows 8于2012年发布时对系统UI进行了大幅重构，但部分遗留元素至今仍残留在Win11中。&lt;/p&gt;
-&lt;p&gt;微软近年来一直在推进Win11的界面现代化，此次替换加载动画是系统UI一致性改进的一小步。&lt;/p&gt;
-&lt;p&gt;目前微软的Win11修复清单还包括Windows Update改进、新任务栏功能、更快的文件管理器、更清晰的Insider计划以及更稳定的更新推送等优先级更高的项目。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260428/919ccc69c7be490584a75a4483a83638.jpg" target="_blank"&gt;&lt;img alt="14年了！微软终于动手清理Win8遗留UI：老式加载动画已被替换" h="400" src="//img1.mydrivers.com/img/20260428/s_919ccc69c7be490584a75a4483a83638.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 10:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBMVF9BVEluczFOcXljX1BDZFA0OUJoMHFqTVRUeTl1R0JWNXJfWU9lUVJUVmJLSkRxZm5kMXZZR3ZBUXZDS3FnNzNVWTgzOGNPS2kzTXZKUks</guid></item><item><title>老板裁员省钱幻想破灭！NVIDIA高层揭秘：AI算力成本远超过员工薪资 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119114.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月28日消息，一边大举裁员压缩人力成本，一边砸重金押注AI，全球科技行业这股并行浪潮，正在被残酷的成本现实打破幻想。&lt;span&gt;&lt;strong&gt;多位行业高管与权威研究证实，当前阶段的AI非但没能帮企业省下人力开支，反而带来了远超员工薪资的算力成本。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;NVIDIA深度学习应用副总裁Bryan Catanzaro近日直言，&lt;strong&gt;在他的团队中，算力相关开销已经远远超过员工薪资总额。&lt;/strong&gt;无独有偶，Uber首席技术官Praveen Neppalli Naga也坦言，&lt;strong&gt;公司转向AI编码工具后，原定年度预算很快宣告超支，不得不重新全盘规划投入方案&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;摩根士丹利数据显示，2026年至今，大型科技公司已宣布的AI相关资本支出达7400亿美元，较2025年同期大涨69%。&lt;/p&gt;
-&lt;p&gt;与之相伴的是加速升温的裁员潮，Layoffs.fyi统计显示，&lt;strong&gt;今年以来科技行业已有近百家公司累计裁员超9.2万人，裁员速度远超2025年全年12万人的规模。&lt;/strong&gt;其中Meta宣布裁减10%员工约8000人，同时取消6000个开放岗位。微软也推出了公司史上最大规模的员工自愿离职方案。&lt;/p&gt;
-&lt;p&gt;高额投入背后，AI的成本效益仍饱受质疑。MIT的研究显示，在以视觉能力为核心的工作中，仅有23%的场景用AI自动化具备经济效益，剩余77%的情况雇佣人类完成成本更低。&lt;/p&gt;
-&lt;p&gt;同时AI的可靠性风险不容忽视，有工程师反馈，AI代理因过度操作直接损毁了数据库与网络系统。耶鲁预算实验室也明确指出，&lt;strong&gt;目前尚无广泛数据能支撑AI可大规模取代人类工作的结论。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;瑞士人工智能学院KeithLee教授表示，&lt;strong&gt;当前行业正处于AI与人力的成本短期错配期。AI高成本主要来自硬件、能源与云端运算开支，固定订阅制还进一步放大了亏损。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;目前不少企业已重新评估AI定位，不再将其视作替代人力的省钱方案，而是先作为人力辅助工具使用。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;行业预测显示，未来四年大模型推理成本有望暴跌超90%。但行业共识是，AI要真正实现规模化经济价值，不仅要做到成本低于人力，更要实现稳定可控、可规模化的落地。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260428/6d15a7b89f534f4fa3e8c2ee2f0da85b.jpg" target="_blank"&gt;&lt;img alt="老板裁员省钱幻想破灭！NVIDIA高层揭秘：AI算力成本远超过员工薪资" h="450" src="//img1.mydrivers.com/img/20260428/s_6d15a7b89f534f4fa3e8c2ee2f0da85b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：朝晖&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 09:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5lcm5SaGF5TG1FTEtPSWpBaEFqOV9fNWZGc1NCNTBLd0VxMGJlaEpaR3RYSVlXNW1TSkxiNUs2YzAwdExrQ1FST2g5OTI3UFFwdEVfX2lzV0Y</guid></item><item><title>两部门发布！刚刚，利好来了 - 新浪财经</title><link>https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhwaawa8368536.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p cms-style="font-L"&gt;　　来源：中国基金报&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L color210"&gt;【&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L color210"&gt;导读&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L color210"&gt;】&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L color210"&gt;工业和信息化部办公厅、国家数据局综合司：到2026&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L color210"&gt;年底，基本形成“数据-模型-场景应用”良性互促的循环，推动人工智能高水平赋能新型工业化。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;中国基金报记者 &lt;/font&gt;&lt;font cms-style="font-L"&gt;张舟&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;事关&lt;/font&gt;&lt;font cms-style="font-L"&gt;人工智能模型与数据资源协同互促&lt;/font&gt;&lt;font cms-style="font-L"&gt;发展，最新文件来了！&lt;/font&gt;&lt;/p&gt;
-
-&lt;p cms-style="font-L align-Center"&gt;　　&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L strong-Bold align-Center color210"&gt;两部门&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L strong-Bold align-Center color210"&gt;发布关于联合实施2026年“模数共振”行动的通知&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;4月28日，工业和信息化部办公厅、国家数据局综合司对外发布了关于联合实施2026年“模数共振”行动的通知&lt;/font&gt;&lt;font cms-style="font-L"&gt;（&lt;/font&gt;&lt;font cms-style="font-L"&gt;以下简称《通知》）。&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　工业和信息化部、国家数据局表示，为深入贯彻党中央、国务院关于人工智能发展的决策部署，落实《国务院关于深入实施“人工智能+”行动的意见》《“人工智能+制造”专项行动实施意见》要求，推动人工智能模型与数据资源协同互促、同频共振，两部门联合开展2026年“模数共振”行动。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;《通知》提到，工作目标是&lt;/font&gt;&lt;font cms-style="font-L"&gt;重点面向&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color210"&gt;钢铁、石化化工、有色金属、建材、工业母机、汽车、医疗装备、电力装备、船舶、航空航天、家居、医药、生物制造、历史经典、电子元器件、消费电子、新型显示、软件、信息通信、网络安全等行业或领域&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color210"&gt;，&lt;/font&gt;通过行动牵引，推动产出一批推广价值高、技术可行性强的人工智能应用场景，攻关一批蕴含工业和信息化领域技术机理的行业模型、专用模型和特色智能体，构建一批行业通识和行业专识高质量数据集，培育一批攻关联合体，优化人才、标准等产业配套生态。&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color210"&gt;《通知》明确，&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color210"&gt;到2026年底，基本形成“数据-模型-场景应用”良性互促的循环，推动人工智能高水平赋能新型工业化。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L strong-Bold"&gt;核心内容如下：&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　1．引导算力企业、模型企业、数据企业和应用开发企业组建“模数共振”创新联合体。支持联合体与“模数共振”空间协作联动，共同开展模型研制、软硬适配、数据处理、应用方案设计与开发。组织联合体强化行业级、全栈式解决方案研发和应用，打造人工智能赋能行业“样板间”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　2．选择人工智能产业基础较好、数据资源丰富的城市作为“模数共振”行动实施的重点城市。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　其中，国家数据要素综合试验区、下辖国家人工智能创新应用先导区或制造业领域国家人工智能应用中试基地的省级政府，可选取的总量不超过3个（优先选择先导区城市、中试基地所在城市），其他省级政府可选取总量不超过2个。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　3．鼓励“模数共振”空间与国家数据基础设施互联互通，实现多主体数据高效可信流通，赋能模型训练、智能体研发和应用，逐步打造为“智能体工厂”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　4．针对各高价值场景实现规模化应用的需要，逐个构建蕴含场景特殊知识的行业专识高质量数据集，并打造能够符合场景特殊应用需要的专用模型或特色智能体。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　5．构建行业通识数据集，打造行业模型。行动结束时汇总形成《重点行业模型清单》，为行业智能化转型提供共性底座。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　以下为全文：&lt;/p&gt;
-&lt;p cms-style="font-L align-Center"&gt;　　&lt;font cms-style="font-L strong-Bold align-Center"&gt;工业和信息化部办公厅 国家数据局综合司关于联合实施2026年“模数共振”行动的通知&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L align-Center"&gt;　　&lt;font cms-style="font-L strong-Bold align-Center"&gt;工信厅联科函〔2026〕193号&lt;/font&gt;&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　各省、自治区、直辖市工业和信息化主管部门、通信管理局、数据管理部门，各有关中央企业：&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　为深入贯彻党中央、国务院关于人工智能发展的决策部署，落实《国务院关于深入实施“人工智能+”行动的意见》《“人工智能+制造”专项行动实施意见》要求，推动人工智能模型与数据资源协同互促、同频共振，工业和信息化部、国家数据局联合开展2026年“模数共振”行动。有关事项通知如下：&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　一、工作目标&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　重点面向钢铁、石化化工、有色金属、建材、工业母机、汽车、医疗装备、电力装备、船舶、航空航天、家居、医药、生物制造、历史经典、电子元器件、消费电子、新型显示、软件、信息通信、网络安全等行业或领域（以下统称“行业”），通过行动牵引，推动产出一批推广价值高、技术可行性强的人工智能应用场景，攻关一批蕴含工业和信息化领域技术机理的行业模型、专用模型和特色智能体，构建一批行业通识和行业专识高质量数据集，培育一批攻关联合体，优化人才、标准等产业配套生态。到2026年底，基本形成“数据-模型-场景应用”良性互促的循环，推动人工智能高水平赋能新型工业化。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　二、重点任务&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（一）构建行业通识数据集，打造行业模型&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　结合各省级地区/各央企特色优势，在“工作目标”列出的行业范围内，选取若干重点行业确定行动范围（每个省级地区至少选择3个，每家央企至少选择1个）。分行业梳理行业内数据资源，明确产数主体、数据类型、资源规模等信息，并通过数据标注、知识工程等手段，提炼形成行业通识高质量数据集（每行业梳理不少于5个），形成《重点行业通识高质量数据集清单》。基于行业通识数据集，聚焦行业内人工智能应用的痛点，研发能够掌握行业技术机理、服务行业共性应用场景的行业模型（每行业研发不少于1个），并在符合法律政策、保障安全要求的前提下，稳妥有序开展应用（每个行业模型应用案例不少于5个）。行动结束时汇总形成《重点行业模型清单》，为行业智能化转型提供共性底座。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（二）梳理高价值场景，构建行业专识数据集，打造特色智能体&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　围绕所选择的重点行业，梳理、培育一批应用潜力大、推广范围广、可复制性强、适合通过人工智能技术改造的细分人工智能应用场景，凝练形成《重点行业人工智能高价值场景档案》（每个行业凝练不少于30个）。针对各高价值场景实现规模化应用的需要，逐个构建蕴含场景特殊知识的行业专识高质量数据集（每个场景构建不少于1个），并打造能够符合场景特殊应用需要的专用模型或特色智能体（若场景应用需具备自主规划、执行能力，则打造智能体，其他情况打造专用模型，每个场景打造不少于1个）。在符合法律政策、保障安全要求的前提下，稳妥有序开展专用模型/特色智能体的实践落地（每个专用模型/特色智能体落地案例不少于3个）。行动结束时汇总形成《重点行业专识高质量数据集清单》和《专用模型/特色智能体清单》。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（三）建立健全评测数据集，完善模型评测机制&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　依托有条件的专业机构，面向行业模型、特色智能体等能力评估需要，构建特色化、定制化的评测数据集，发挥评测数据集在模型能力诊断中的基准作用，构建面向行业应用、面向特殊场景的模型能力评测体系，并将模型评测结果作为行业高质量数据集建设和优化的重要依据，形成“评测诊断-数据集定向优化-模型能力提升”的良性循环。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（四）创建“模数共振”空间，探索协同机制&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　各地区选择第三方中立机构或龙头企业、各央企选择集团内专业单位作为建设运营主体，打造“模数共振”空间，包括研发一套能够承载跨主体数据汇聚和模型训练的软硬件基础设施，以及制定一套能够实现跨主体数据协同、模型共建、责任划分、安全保障的管理机制，具备跨主体数据可信贯通、模型协同训练与安全合规应用的能力（每省级地区打造不少于3个，每央企打造不少于1个）。鼓励“模数共振”空间与国家数据基础设施互联互通，实现多主体数据高效可信流通，赋能模型训练、智能体研发和应用，逐步打造为“智能体工厂”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（五）打造“模数共振”创新联合体，构建全栈方案&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　围绕所选择的重点行业，引导算力企业、模型企业、数据企业和应用开发企业组建“模数共振”创新联合体（对于所选择的重点行业，每行业打造不少于1个），支持联合体与“模数共振”空间协作联动，共同开展模型研制、软硬适配、数据处理、应用方案设计与开发。组织联合体强化行业级、全栈式解决方案研发和应用，打造人工智能赋能行业“样板间”。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（六）完善生态配套，加强关键要素保障&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　通过组织重点行业人工智能赋能新型工业化“深度行”活动、建设实训基地等形式，推动各类主体加强交流、项目合作与成果推广。系统培养精通行业应用、数据科学、模型机理的多元复合型人才。通过“揭榜挂帅”等形式，强化人工智能、数据技术创新和工具研发。通过开展“标准行”活动等形式，加大人工智能数据工程等重点标准宣贯力度，鼓励企业参与人工智能相关标准研制和推广应用。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（七）确定“重点城市”打造标杆&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　选择人工智能产业基础较好、数据资源丰富的城市（含直辖市下属区县）作为“模数共振”行动实施的重点城市。其中，国家数据要素综合试验区、下辖国家人工智能创新应用先导区（以下简称“先导区”）或制造业领域国家人工智能应用中试基地（以下简称“中试基地”）的省级政府，可选取的总量不超过3个（优先选择先导区城市、中试基地所在城市），其他省级政府可选取总量不超过2个。重点城市应在所在省级地区选取的重点行业范围内，结合本地区特色优势，选择若干重点行业，确定工作思路并编制实施方案，推进前述任务落实。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　三、工作要求&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（一）编制实施方案。各省级工业和信息化主管部门会同数据管理部门（本地区行动范围涉及“信息通信”“网络安全”行业的，还需会同本地区通信管理局）、各有关中央企业，围绕七项重点任务（任务七仅需各省级政府部门执行），统筹组织相关力量，编制“模数共振”行动实施方案（模板见附件1），并于2026年5月30日前函送工业和信息化部（科技司）、国家数据局（数字科技和基础设施建设司）。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（二）做好跟踪与中期评估。2026年8月30日前，各行动实施区域和实施主体梳理行动进展，形成阶段性总结报告（模板见附件2），报送工业和信息化部（科技司）、国家数据局（数字科技和基础设施建设司）。两部门将组织相关专家，组建服务团，通过技术评测、实地辅导等方式组织开展中期评估，根据评估情况优化调整实施过程。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　（三）开展成效总结。2026年11月30日前，各行动实施区域和实施主体总结各项任务完成情况，报送行动总结报告（模板同为附件2）。工业和信息化部会同国家数据局组织对整体实施情况进行评估，发布行动完成名单和城市，梳理总结高价值场景、行业模型、专用智能体、高质量数据集、“模数共振”空间、“模数共振”创新联合体等系列工作成果。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　四、组织保障&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　工业和信息化部、国家数据局发挥统筹指导作用，对各实施区域和有关中央企业加强政策支持，对行动中形成的各项成果，建立统一平台进行承载、展示，对于先进经验和成功做法，开展宣传推广，强化示范引领效应。对于行动实施效果好的区域和企业，在有关政策、项目中予以倾斜支持。地方工业和信息化主管部门、通信管理局和数据管理部门要会同行动城市强化组织保障，充分调动人工智能应用企业、数据服务企业、模型技术企业、人工智能应用服务商等各类主体积极性，对行动给予政策、资金支持。各中央企业做好组织保障和资源投入，加强场景开放和技术攻关力度。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　联系方式：&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　工业和信息化部  010-68205250&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　国家数据局         010-89062370  &lt;/p&gt;
-
-&lt;p cms-style="font-L"&gt;　　2．《“模数共振”行动情况总结报告》模板&lt;/p&gt;
-&lt;p cms-style="font-L align-right"&gt;　　工业和信息化部办公厅&lt;/p&gt;
-&lt;p cms-style="font-L align-right"&gt;　　国家数据局综合司&lt;/p&gt;
-&lt;p cms-style="font-L align-right"&gt;　　2026年4月24日&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：刘万里 SF014&lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 28 Apr 2026 09:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE9jTDViaEsyZ0U1SGs2RVBoZjU3RVFSZU1hUGxIbVl2U3lCa2JnQmhWMmM2Z05HR3NKamYyVGVncEJ6VFJXbDZvcVJXMm0yczlsY1pTSW9zdEpXY0hvSTFDZF91Y3JGM2NhWVozUGk5N0RlMTdqdDN6Rw</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Apr 2026 12:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ycWVhc2RIRHRpbkxYdWRzcmJycFFSX0lITUNuQXpTM3dPbmJQUkJ5eS1wd2pEVG15d2ZsMDM0ZGl2YWpQbG1zMWtEZU53TWoyZUVJVjlEMDI</guid></item></channel></rss>
