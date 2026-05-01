@@ -1,5 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>微软K2计划开始落地！Win11 KB5083631更新推送：响应更快、内存占用更低 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119718.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>每小时写入108GB！这波是海盗在抢掠你的固态硬盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119728.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;每小时写入108GB！这波是海盗在抢掠你的固态硬盘&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-05-01 16:38:01  出处：快科技 作者：于浮  编辑：于浮 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119728-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月1日消息，据Tom's Hardware报道，&lt;span&gt;&lt;strong&gt;近期一款名为《风启之旅》（Windrose）的PC游戏存在严重的磁盘读写异常问题，其极高的硬盘写入频率被形象地称为“谋杀”固态硬盘。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;实测数据显示，当玩家在游戏内的基地中奔跑或驾驶船只移动时，系统的磁盘占用率会瞬间飙升至100%，此时的实时写入速度持续维持在30MB/s左右。&lt;strong&gt;折算下来，每运行该游戏一小时，就会产生约108GB的物理写入量。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260501/c5587836-5721-4951-a2a3-b7faff0d5833.jpg" target="_blank"&gt;&lt;img alt="每小时写入108GB！这波是海盗在抢掠你的固态硬盘" h="337" src="//img1.mydrivers.com/img/20260501/Sc5587836-5721-4951-a2a3-b7faff0d5833.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为了验证数据的异常程度，测试人员将其与同类游戏进行了横向对比：在相同的60至90秒测试周期内，《风启之旅》产生了32GB读取和1.3GB写入；热门游戏《雾锁王国》的同期读写量分别为7GB和695MB；而《英灵神殿》仅为1GB读取和5MB写入。&lt;/p&gt;
+&lt;p&gt;技术专家通过对底层架构分析找到了“幕后黑手”：该游戏内部采用了RocksDB数据库来管理数据，由于开发人员设置的预写日志（WAL）空间过小（仅为 1MB），系统被迫频繁地将内存表中的数据刷新并压缩至物理磁盘。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;虽然现代TLC颗粒的硬盘耐用性较强，但对于使用QLC颗粒 或是旧款、高磨损状态的硬盘来说，这种强度的写入无疑会加速硬件的“报废”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260501/d99740bc-da82-474d-8526-5b153c996a45.png" target="_blank"&gt;&lt;img alt="每小时写入108GB！这波是海盗在抢掠你的固态硬盘" h="535" src="//img1.mydrivers.com/img/20260501/Sd99740bc-da82-474d-8526-5b153c996a45.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;针对这一严重的优化事故，开发商反应迅速，目前已经正式发布了0.10.0.4版本补丁。&lt;/strong&gt;据更新后的实测反馈，游戏运行时的写入速度已经回落至10-16MB/s；在角色处于静止状态下，写入速度更是成功降至1MB/s以下。&lt;span&gt;&lt;strong&gt;官方表示，新版补丁相比旧版本已经为固态硬盘减轻了约60%至75%的写入负担。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="每小时写入108GB！这波是海盗在抢掠你的固态硬盘" h="308" src="//img1.mydrivers.com/img/20260501/56654047-def4-48e6-9e6c-44196e1aec76.png" w="550"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：于浮&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 01 May 2026 08:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE92WjVFWURZSExNbktwbEpYdFFNdHNTXy1SWFA2RFFrblYzT3lfS3daek0yalFGSVZiTXZyUk5GbWoxeHFxOVZRRVpmRDhZazgyWE9QdExrVkg</guid></item><item><title>小红书重大调整，入局AI“战场” - 观察者</title><link>https://www.guancha.cn/economy/2026_05_01_815635.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	一向以“慢公司”示人的小红书，终于也要开启硬核竞速了。
+&lt;/p&gt;
+&lt;p&gt;
+	4月30日，一纸全员内部信拉开新一轮大规模组织升级大幕：全面整合社区、电商、商业化三大业务及公司技术体系；同时重磅成立AI一级部门Dots、企业智能部，从产品技术和组织两方面加大对AI（人工智能）的投入。
+&lt;/p&gt;
+&lt;p&gt;
+	与此同时，《每日经济新闻》记者（以下简称“每经记者”）了解到，柯南将作为总裁整合三大业务及公司技术体系，全面负责公司核心业务经营，向CEO（首席执行官）星矢汇报。
+&lt;/p&gt;
+&lt;p&gt;
+	在此之前，小红书仅将AI作为内容、搜索交互层面的工具微创新，如今升格为一级战略赛道，标志着其从后台技术应用转向前台自研、产品化与生态化全面竞速。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;“灵活的小船先锋探索”&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	本次组织升级中，各大核心业务的负责人也均有任命。
+&lt;/p&gt;
+&lt;p&gt;
+	CMO（首席营销官）之恒作为大商业负责人，负责广告商业化和电商交易业务，为公司商业板块的健康发展和营收全面负责。帕鲁作为社区负责人，对小红书社区用户体验、规模与健康生态负责。夏侯作为算法负责人，整体负责公司核心业务算法。
+&lt;/p&gt;
+&lt;p&gt;
+	关键的AI布局方面，内部信提及，将成立以AI为核心的一级部门Dots，建设从模型研发、基础设施、工程到产品的完整技术体系，整合顶尖AI人才与资源。Dots向柯南汇报。
+&lt;/p&gt;
+&lt;p&gt;
+	与此同时，在组织层面成立“企业智能部”，整合原企业效率部、数据科学部，协同战略部、组织人事部，从智能、人才、数据和资源四个维度为AI时代的组织打下基础。
+&lt;/p&gt;
+&lt;p&gt;
+	内部信还宣布正式成立海外业务部门Rednote，开启国际化业务“从0到1”，向星矢汇报。同时，设立Lab 1327，由产品设计负责人樱木负责，探索新产品孵化机制，为早期创新项目提供空间与资源。
+&lt;/p&gt;
+&lt;p&gt;
+	对于此次调整，小红书在信中以“一支扬帆远航的船队”作喻，对公司未来的想象是：每一艘大船都能独立远航，灵活的小船先锋探索，合在一起指向更宽广的海域。
+&lt;/p&gt;
+&lt;p&gt;
+	信中提到，星矢作为CEO，将聚焦公司战略和组织设计，与管理团队一起，确保公司持续向前。木兰作为董事会主席，将聚焦公司责任和使命，持续为公司发展校准方向，保驾护航。
+&lt;/p&gt;
+&lt;p&gt;
+	根据内部信，柯南将作为总裁整合三大业务及公司技术体系，全面负责公司核心业务经营，向CEO星矢汇报，是当之无愧的核心高管。
+&lt;/p&gt;
+&lt;p&gt;
+	2024年7月，小红书发布时任COO（首席运营官）柯南与经济学者薛兆丰的对谈视频。对谈中柯南首次对外定义，小红书电商是“生活方式电商”。柯南表示，生活方式电商是让用户在小红书买到的，不仅是好产品，也是一种向往的生活。
+&lt;/p&gt;
+&lt;p&gt;
+	2023年12月，柯南公开表示，社区和商业不是对立的，也不矛盾。柯南提到，社区有自己的原生性和生长性，沿着原生的用户需求和商业生态链路去构建商业系统，是最适合小红书的路径。此时，柯南已经从负责小红书社区转为负责小红书电商及商业化产品。
+&lt;/p&gt;
+&lt;p&gt;
+	时至今日，随着出任总裁一职，柯南正式执掌小红书整体业务版图。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;小红书入局AI“战场”&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	本次内部信中，小红书公布的AI相关布局引发了外界的广泛关注。事实上，在此之前，小红书在AI领域已经有所布局。
+&lt;/p&gt;
+&lt;p&gt;
+	2月10日，每经记者了解到，小红书技术团队正在研发一款视频剪辑类AI产品OpenStoryline，版本号为1.0.0。目前，这一产品尚在测试阶段，后续或会开源。
+&lt;/p&gt;
+&lt;p&gt;
+	早在2023年，就传出小红书筹备独立大模型团队的消息；2024年还有消息称，小红书大模型有两个落地方向——多模态技术及AI内容创作工具。2024年，小红书推出了AI搜索产品“点点”。
+&lt;/p&gt;
+&lt;p&gt;
+	只是，在这场如火如荼的AI大战中，小红书的动作显得低调而克制。
+&lt;/p&gt;
+&lt;p&gt;
+	就小红书内部信中透露的AI相关布局，艾媒咨询CEO（首席执行官）兼首席分析师张毅在接受每经记者采访时表示，随着AI从后台工具升级为前台增长引擎，加之Dots成为一级部门，标志着小红书的AI战略已从技术应用转向自研、产品化与生态化的全方位竞争。这也意味着，小红书正式全面入局大模型与生成式AI赛道。
+&lt;/p&gt;
+&lt;p&gt;
+	张毅认为，小红书发力AI的核心诉求，首先是突破自身增长瓶颈。AI既能丰富内容供给、拓宽内容品类，也能有效提升整体商业化效率。而AI赋能下的精准种草，能够缩短用户消费决策链路，进一步拉动电商与广告收入增长。
+&lt;/p&gt;
+&lt;p&gt;
+	在他看来，小红书还希望借助AI构筑差异化竞争壁垒：依托自身垂类大模型，对标抗衡抖音、美团的通用AI布局；同时借助AI做好内容风险治理，维系平台长期建立的信任生态。
+&lt;/p&gt;
+&lt;p&gt;
+	百联咨询创始人庄帅对每经记者表示，小红书此举意在推进自研大模型战略，“小红书的内容和用户规模在建立AI大模型方面是有优势的，另外也可以通过这个推动小红书尽快上市”。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;当“慢公司”不得不快起来&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	一直以来，小红书都是一家“慢公司”，是什么，让这家“慢公司”开始试图快起来？
+&lt;/p&gt;
+&lt;p&gt;
+	近两年，小红书始终想方设法寻觅用户及业务增量。
+&lt;/p&gt;
+&lt;p&gt;
+	去年，小红书在线下举办了RED LAND冒险岛活动，开抢二次元生意。今年4月举办的“黑客松巅峰赛”，无疑也有着用户增长和生态布局意图，一方面挖掘AI新锐开发者、聚拢技术创作人群，拓宽平台用户圈层；另一方面打通创作者、创业者与投资人的连接，进一步夯实社区生态壁垒。
+&lt;/p&gt;
+&lt;p&gt;
+	张毅指出，布局AI已是小红书发展到当下阶段的必然选择。
+&lt;/p&gt;
+&lt;p&gt;
+	他表示，小红书已从1.0内容社区时代，演进至2.0内容生态阶段，如今正迈向生活方式超级平台3.0新阶段。当前平台用户与广告增长已逐步见顶，必须依托AI、视频化、电商闭环，再叠加海外市场布局，实现多维度突破。
+&lt;/p&gt;
+&lt;p&gt;
+	“尤其在用户规模与传统营销增长触及天花板、面临抖音、淘天、美团等平台多方挤压的背景下，小红书亟需从传统种草社区，升级为技术驱动的生活服务入口。唯有如此，才能筑牢自身业务基本盘，打造更稳健的现金流，实现营收持续增长。”张毅说。
+&lt;/p&gt;
+&lt;p&gt;
+	不过，挤入AI赛道，便意味着小红书不得不进行巨额的投入。
+&lt;/p&gt;
+&lt;p&gt;
+	从2013年成立至今，发展出社区、电商和商业化三大核心业务，App（应用程序）月活用户已超过4亿。面对屡传的IPO动向，小红书始终保持审慎态度，但资本市场对其估值与盈利前景的预期持续走高。
+&lt;/p&gt;
+&lt;p&gt;
+	随着新一轮组织升级的落地，小红书不再游离于互联网主赛道竞争之外，这对小红书的未来将带来何等影响？一切还待市场竞争检验与后续战略落地成效来揭晓。
+&lt;/p&gt;
+&lt;p&gt;
+	（记者 陈婷）
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Fri, 01 May 2026 07:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9EWVJZYjA0Si14U2cxZUhDSGRqQUEwTFFVYVZ0SUo3ZnJsaUo1TW1ycVVNZFlYbWNSWVRNYmlzNUEtWXdDRkJ5eG9fbmx3THh5SEF2UkRsR016OXRqTFJiV0JDTk4</guid></item><item><title>微软K2计划开始落地！Win11 KB5083631更新推送：响应更快、内存占用更低 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119718.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;微软K2计划开始落地！Win11 KB5083631更新推送：响应更快、内存占用更低&lt;/p&gt;
           
@@ -61,7 +235,54 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 01 May 2026 07:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0xM3d4dl90NlkydU8zcUg4UFpic1d6cVNEYWZ1bmQwcFY1MWZHUmRiQ0tBdndXNm5SYndENmQyYlJqNm12N0FOZWpLcUJuZkFXVHJhWElKcFk</guid></item><item><title>DLSS有对手了 微软神助攻AMD掌机：Auto SR游戏性能暴涨50% - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119698.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 01 May 2026 07:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0xM3d4dl90NlkydU8zcUg4UFpic1d6cVNEYWZ1bmQwcFY1MWZHUmRiQ0tBdndXNm5SYndENmQyYlJqNm12N0FOZWpLcUJuZkFXVHJhWElKcFk</guid></item><item><title>黄仁勋最担忧的事发生 - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/gj/2026-05-01/detail-inhwkpti6642408.d.html?oid=Google%20extrapoler%20l'%C3%A9cran(TG:e10838).mwk&amp;vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+	
+
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;“这标志着重大战略转变，其重心正从依赖美国半导体，转向中国本土人工智能（&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;）基础设施。”&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;据路透社&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;4&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;月&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;29&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;日报道，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;DeepSeek-V4&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;发布后，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;字节跳动、腾讯和阿里巴巴&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;正在抢购华为国产芯片。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;a href=""&gt;
+										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
+											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="550" h="310" data-src="//k.sinaimg.cn/n/news/crawl/60/w550h310/20260501/747b-3cdb826c101269f7b5c85e0640793941.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt=""&gt;
+										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="550" h="310" data-src="//k.sinaimg.cn/n/news/crawl/60/w550h310/20260501/747b-3cdb826c101269f7b5c85e0640793941.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="" disabeld-show="true"&gt;
+											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
+										&lt;/figure&gt;
+									&lt;/a&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;这是一场低调但不可逆的集体转身，国产芯片加速落地，依托本土硬件搭建的算力底座，正在加速&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;成型。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;日前，美国科技企业&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;英伟达创始人兼首席执行官&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;黄仁勋，已发出预警。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;他在访谈中直言：&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;若&lt;/font&gt;&lt;/font&gt;&lt;font&gt;DeepSeek&lt;/font&gt;&lt;font&gt;&lt;font&gt;的最新一代大模型，率先选择在华为先进芯片平台上发布并全面适配，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;“&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;那么这对美国在全球&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;人工智能领域&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;的战略地位而言，无疑将是一个灾难性的打击。&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;”&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;黄仁勋真正担忧的是：当中国顶尖大模型与国产算力基座完成绑定，美国长期推行的芯片封锁，就会失去关键抓手。&lt;/p&gt;
+&lt;p class="art_p"&gt;现在，这条链路的关键一环得到落地。&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;4&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;月&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;24&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;日上线的&lt;/font&gt;&lt;/font&gt;&lt;font&gt;DeepSeek-V4&lt;/font&gt;&lt;font&gt;&lt;font&gt;新款大模型，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;首次把华为昇腾芯片和英伟达芯片并列写进硬件验证清单&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;适配的华为昇腾新款推理芯片，采购价格仅为英伟达的四分之一，单卡算力却比英伟达对华特供版提升了&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;2.87&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;倍，性价比优势十分突出。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;这是一套经过检验的、高性能的&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;“国模&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;+&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;国芯”方案，其成本账和安全账极具诱惑力。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;曾几何时，缺芯一直是核心瓶颈。特别是在模型训练这一关键领域，国产芯片长期缺席，或者只能参与边缘性任务。&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;如今拐点已至。中国多款大模型密集完成国产芯片适配，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;2026&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;年也被业界称为“国产&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;芯片训练落地元年”。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;外界难免疑问：大模型能否在国产硬件上稳定高效运行？&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;DeepSeek&lt;/font&gt;&lt;font&gt;&lt;font&gt;坦承&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;：&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;新款模型&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;的能力水平仍落后于&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;同期主要对手&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;，发展轨迹大约滞后前沿闭源模型&lt;/font&gt;&lt;/font&gt;&lt;font&gt;3&lt;/font&gt;&lt;font&gt;&lt;font&gt;至&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;6&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;个月。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;不等外界质疑、没有刻意美化，而是主动揭短、正视差距，背后藏着务实的逻辑：在技术代差客观存在的竞争里，虚心追赶远比假装领先更有价值。&lt;/p&gt;
+&lt;p class="art_p"&gt;从核心参数和实测表现来看，新模型的局部突破十分亮眼。&lt;/p&gt;
+&lt;p sax-type="proxy" class="j_native_stu260501 box" data-inserttype="0" data-id="201711dingdingeb"&gt;&lt;/p&gt;&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;如，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;1.6&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;万亿总参数、百万词元（&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;Token&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;）超长上下文全系标配；在数学、硬核科创、竞赛代码领域，新款模型高性能版已超越所有已公开评测的开源模型，比肩主流闭源模型。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;尤其在智能体编程上，它拿下了&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;开源&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;榜单&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;第一&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;被&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;誉&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;为&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;“&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;编程神器&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;”&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;一边理性承认整体代差，一边在细分领域实现突围，更在成本层面拉开碾压式差距。&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;DeepSeek-V4-Pro&lt;/font&gt;&lt;font&gt;&lt;font&gt;模型&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;API&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;已&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;开启&lt;/font&gt;&lt;/font&gt;&lt;font&gt;2.5&lt;/font&gt;&lt;font&gt;&lt;font&gt;折&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;限时&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;价格特惠&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;，输入价格低至&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;0.25&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;元&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;/&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;百万词元。&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;而&lt;/font&gt;&lt;/font&gt;&lt;font&gt;GPT-5.5 Pro&lt;/font&gt;&lt;font&gt;&lt;font&gt;加权平均输入价格为&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;30&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;美元&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;/&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;百万&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;词元，折算后价格与&lt;/font&gt;&lt;/font&gt;&lt;font&gt;DeepSeek-V4-Pro&lt;/font&gt;&lt;font&gt;&lt;font&gt;相差&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;超过&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;700&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;倍&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;细数国际上的主流大模型，如&lt;/font&gt;&lt;/font&gt;&lt;font&gt;Anthropic Claude Opus&lt;/font&gt;&lt;font&gt;&lt;font&gt;系列、&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;OpenAI GPT-5.4&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;以及谷歌&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;Gemini 3.1 Pro&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;系列大模型&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;，其&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;价格&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;同样居高不下&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;性能追到只差&lt;/font&gt;&lt;/font&gt;&lt;font&gt;3&lt;/font&gt;&lt;font&gt;&lt;font&gt;至&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;6&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;个月&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;成本却拉开量级鸿沟&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;一场&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;不对称&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;竞争已然开启&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;这不是单颗芯片的胜利，而是整套国产算力的成熟。实测数据显示，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;脱离英伟达生态&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;后&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;新款模型&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;端到端延迟比&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;原有&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;集群低&lt;/font&gt;&lt;/font&gt;&lt;font&gt;35%&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;这意味着，国产算力迈入稳定高效的&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;“好用”阶段&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;高盛&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;最新&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;研报&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;称，随着华为昇腾&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;950&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;今年下半年大规模供货，新款模型的定价将迎来大幅下降。此举不仅强化了&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;DeepSeek&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;的成本竞争力，更为中国顶尖大模型向国产算力迁移提供强有力的背书。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;更关键的是，&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;DeepSeek&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;的选择，不是孤例。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;放眼国内头部玩家，阿里通义千问、智谱清言、百川智能、字节豆包等，都在同步推进极致性价比、先进性能追赶和开源生态构建。&lt;/p&gt;
+&lt;p class="art_p"&gt;各家路径虽有差异，但方向高度一致：摆脱外部依赖，筑牢本土产业链。&lt;/p&gt;
+&lt;p class="art_p"&gt;中国科技企业采购华为芯片，不是单纯的情怀选择，而是兼顾成本核算、供应链安全、产业自主的理性决策。&lt;/p&gt;
+&lt;p class="art_p"&gt;&lt;font&gt;&lt;font&gt;以国产芯片为基石，自主可控的算力底座持续完善，中国&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;人工智能产业&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;的长期底气，正在一步步夯实。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p"&gt;“三里河”工作室&lt;/p&gt;&lt;p class="article-editor"&gt;责任编辑：陈琰 SN225&lt;/p&gt;	
+
+	
+
+&lt;/section&gt;
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Fri, 01 May 2026 05:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiwAFBVV95cUxQWmVwalhUZ1g5YmpmOHZjY3l0d19mVGxxQkpPbzVEdWpjcTA4RHRiU3lPRF9SOHVDVVNqR3E0ME9QRURpbzRiYXpLOE14dGxBWUVpQ2lob1RtSFVleGxORnUyajR3RVJJY0ZEeFFDdUY4bkY0aEZjeFlCNGpSN1VLd1J0OHBrWW9Wb1piS3ZIaHlQZDc2UGVSOUJ4T0MwZTY3a2gtTWw2VkZjMk9BNG51bUk1YlJpYjZGd0p3bG4tdms</guid></item><item><title>DLSS有对手了 微软神助攻AMD掌机：Auto SR游戏性能暴涨50% - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119698.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;DLSS有对手了 微软神助攻AMD掌机：Auto SR游戏性能暴涨50%&lt;/p&gt;
           
@@ -1437,369 +1658,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 11:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBoUkRaNzJWSF9hNEtzTzYyLS1nSG5PWndqaG1TOE5uY3FucDR3b1FqLW9VYjZpUUJZaVVVa1lIRnpMSExHQy1uQnRxM1ZoWlpfZEdoOGhFdm8</guid></item><item><title>Windows口碑翻车 微软终于低头：回归基础、专注质量、赢回用户 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119639.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月30日消息，微软CEO萨提亚·纳德拉在2026财年第三季度财报电话会议上，&lt;span&gt;&lt;strong&gt;罕见地多次提及Windows业务，并明确表示微软需要“赢回”消费者，将工作重心回归基础体验。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;纳德拉表示：“在消费者业务方面，我们正在推进赢回粉丝所需的基础性工作，加强Windows、Xbox、Bing和Edge的用户参与度。短期内，我们专注于基本面，优先提升质量，更好地服务核心用户。”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;具体到Windows层面，纳德拉提到了三项正在推进的改进，包括低内存设备的性能优化、Windows更新体验的精简，以及对核心功能的重新聚焦。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这三项恰好对应了近期用户反馈最集中的痛点：Windows 11对硬件资源占用过高、更新流程繁琐且偶发问题、以及功能臃肿偏离使用需求。&lt;/p&gt;
-&lt;p&gt;纳德拉还透露，Windows月活跃设备数已超过16亿台，他同时表示，Windows的长期价值将延伸至“边缘端无限智能”的交付。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Windows业务在微软财报电话会中通常很少被单独提及，纳德拉此次在消费者语境下多次谈到Windows，&lt;/strong&gt;本身就是一个信号，微软高层已经意识到Windows在用户端的口碑问题需要正视。&lt;/p&gt;
-&lt;p&gt;结合近期微软密集推送的Windows 11功能更新和性能补丁，回归基本面并非空话，但能否真正挽回流失的用户信任，仍需时间验证。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260430/7c36ee5519cf456bb47aeb529a47ef2f.jpg" target="_blank"&gt;&lt;img alt="Windows口碑翻车 微软终于低头：回归基础、专注质量、赢回用户" h="400" src="//img1.mydrivers.com/img/20260430/s_7c36ee5519cf456bb47aeb529a47ef2f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 11:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE53V2hGbFYtcERkbXNjeWxyZWtJcDFOczJaemlFbXVIOVBEMzVfRXd3SFJtZGVoSVNGWWNEczZRdzVlOWRTQ1YtWWR4bzFWbVg5bHRMV3lkNzc</guid></item><item><title>V社总算懂玩家了！Steam Deck重磅更新：手柄没电不再盲猜 快捷聊天彻底解放双手 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119638.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;V社总算懂玩家了！Steam Deck重磅更新：手柄没电不再盲猜 快捷聊天彻底解放双手&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-30 19:06:50  出处：快科技 作者：于浮  编辑：于浮 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119638-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月30日消息，&lt;span&gt;&lt;strong&gt;Valve近日为Steam Deck推送了系统更新，针对Steam Deck掌机带来多项人性化实用优化，同时也为Valve旗下其他硬件设备做好适配铺垫。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;以往用Steam Deck打字回复消息十分麻烦，即便借助触控板加快输入体验依旧糟糕。&lt;strong&gt;本次更新新增快捷预设消息功能，玩家只需按下按键并拨动摇杆，就能快速发送预设短句。&lt;/strong&gt;系统总共提供八条快捷聊天语句，分别对应摇杆的八个方向。默认话术中包含多种趣味短句，用户也可以进入系统设置，自由修改所有快捷话术。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/03cf0796-7401-429f-9614-b4906a832c11.jpg" target="_blank"&gt;&lt;img alt="V社总算懂玩家了！Steam Deck重磅更新：手柄没电不再盲猜 快捷聊天彻底解放双手" h="375" src="//img1.mydrivers.com/img/20260430/S03cf0796-7401-429f-9614-b4906a832c11.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此次更新还推出了一项名为“远程下载管理”的功能。借助新工具，玩家可以在不同Steam设备之间统一管理下载任务。无论是电脑端操控掌机，还是掌机控制电脑，都能远程暂停游戏下载或调整下载排队顺序。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;本次更新还优化了Steam手柄及第三方游戏手柄的使用体验，Steam Deck顶部状态栏新增手柄电量图标，当手柄电量过低时，系统自动弹出提醒通知。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/0947d1af-2b3e-4ed2-80a5-1a71104400f2.jpg" target="_blank"&gt;&lt;img alt="V社总算懂玩家了！Steam Deck重磅更新：手柄没电不再盲猜 快捷聊天彻底解放双手" h="375" src="//img1.mydrivers.com/img/20260430/S0947d1af-2b3e-4ed2-80a5-1a71104400f2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此外还包括多项轻量化细节优化：&lt;strong&gt;商店快捷键能直接跳转到主页；手柄输入设置界面焕然一新，布局更加简洁清晰；登录页面可直接一键切换桌面模式。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/b850f972-8384-43da-90c7-7037d08cf6e6.jpg" target="_blank"&gt;&lt;img alt="V社总算懂玩家了！Steam Deck重磅更新：手柄没电不再盲猜 快捷聊天彻底解放双手" h="375" src="//img1.mydrivers.com/img/20260430/Sb850f972-8384-43da-90c7-7037d08cf6e6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：于浮&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 11:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9pUzRLcnFZNlpITzhVclBBcnZ1NTZZV3JZUkxBM09VZjU3S05XQ2JLMEFiZlA0eTJYcE1ienhBUGVuOEdFaFBRUGQ1MnpwTzNadWNoeW1EYVg</guid></item><item><title>中国创新药对外授权创纪录，“外国药企纷至沓来：求合作” - 观察者</title><link>https://www.guancha.cn/internation/2026_04_30_815549.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	【文/观察者网 齐倩】
-&lt;/p&gt;
-&lt;p&gt;
-	2025年是中国生物制药行业的突破之年，今年仍未降温。
-&lt;/p&gt;
-&lt;p&gt;
-	据国家药监局数据，2025年，我国创新药对外授权交易总金额超过1300亿美元，授权交易数量超过150笔，创历史新高。今年第一季度，对外授权交易额超过600亿美元，接近2025年全年的一半。
-&lt;/p&gt;
-&lt;p&gt;
-	据日媒《日经亚洲》4月20日报道，全球制药企业高管正渴望与中国生物技术公司达成更多交易。有分析指出，在授权谈判中，中国药企处于更有利位置，“部分反映了中企和外企之间权力平衡的转变”。
-&lt;/p&gt;
-&lt;p&gt;
-	“在此时此刻，很难不考虑在这里扩大资源投入，”本周，美国医药巨头强生公司全球外部科学创新负责人斯泰西·费尔德在上海一场论坛上表示。
-&lt;/p&gt;
-&lt;p&gt;
-	德国默克公司全球业务开发和联盟管理负责人马蒂亚斯·穆伦贝克表示，除了从中国生物技术公司获得药物授权外，该公司还在寻找投资在中国以外成立的新公司，以开发候选药物，即所谓的“新公司”模式。他说：“我们希望参与其中。”
-&lt;/p&gt;
-&lt;p&gt;
-	报道称，中国已成为全球制药公司寻找新重磅药物的首选目的地，这得益于中国生物技术公司以低成本实现快速开发。对于中国生物制药而言，对外授权交易有助于快速筹集资金，并通过宣布与全球巨头建立合作关系来提高声望。
-&lt;/p&gt;
-&lt;p&gt;
-	今年1月，阿斯利康公司同意向中国石药集团支付12亿美元首付款，以获得一系列肥胖症和糖尿病药物的开发权。石药集团表示，根据额外的研发和销售里程碑，它有资格获得高达173亿美元的付款。
-&lt;/p&gt;
-&lt;p&gt;
-	上个月，法国赛诺菲获得中国生物制药首创新药罗伐昔替尼的全球独家授权，交易价值高达15亿美元。　罗伐昔替尼作为一种双靶点抑制剂，通过双通路协同实现抗炎与抗纤维化。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2026/04/30/20260430180108889.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	技术人员在石药集团实验室工作&lt;span&gt; 石药官网&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	美富律师事务所香港和上海办公室管理合伙人孙川表示，平均授权交易价值的增长，部分反映了中国授权方与全球被授权方之间权力平衡的转变。
-&lt;/p&gt;
-&lt;p&gt;
-	“相当多的中国生物技术公司可能不再缺钱，这意味着他们在谈判中处于更有利的位置，”孙川告诉《日经亚洲》，并回忆起自己2021年、2025年代表一家中国生物技术公司进行交易的经历。
-&lt;/p&gt;
-&lt;p&gt;
-	他说：“我们在去年的交易中获得了更好的条款。”
-&lt;/p&gt;
-&lt;p&gt;
-	投资者表示，中国生物技术行业的关键趋势包括：企业不再专注于开发少量候选药物，而是致力于开发用于药物发现的平台技术；以及人工智能（AI）的深度融合。
-&lt;/p&gt;
-&lt;p&gt;
-	“以前，我们认为AI是一种非常好的辅助工具，”风险投资公司博远资本创始合伙人陈凯文（Kevin Chen，音译）说，“如今，通过与新一代AI创业者的互动，我们开始意识到AI将发挥更重要的作用。”
-&lt;/p&gt;
-&lt;p&gt;
-	据国家药监局消息，2025年我国已批准上市的创新药达76个，大幅超过2024年全年48个，创历史新高；我国创新药对外授权交易总金额超过1300亿美元，授权交易数量超过150笔，远超2024年全年519亿美元和94笔，同样创历史新高。
-&lt;/p&gt;
-&lt;p&gt;
-	国家药监局药品注册管理司副司长蓝恭涛表示，2025年我国创新药对外授权交易总额较上一年翻了大约一倍，创新药审批数量也创新高，这是我国持续深化药品审评审批制度改革，一系列鼓励创新政策落地实施的重大成果。在创新药数量增长的同时，我们坚持标准不降低、标准国际化，对外授权的大幅增长也反映出国际社会对我国创新药价值的认可。
-&lt;/p&gt;
-&lt;p&gt;
-	中国生物医药产业蓬勃发展，已引起西方媒体注意。
-&lt;/p&gt;
-&lt;p&gt;
-	去年12月，英国《金融时报》&lt;a href="https://www.guancha.cn/internation/2025_12_02_799129.shtml" target="_blank"&gt;发文称&lt;/a&gt;，全球制药业正经历一场权力交接，西方药企可能在他们曾引以为傲的新药创新领域失去领先地位，而中国凭借惊人的研发速度、庞大的人才体系与产业链效率，正在快速逼近甚至反超。近年来，外国药企涌入中国，试图补充其日益萎缩的研发线。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Thu, 30 Apr 2026 11:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFB0X2VMeGZERG9zVjZaWEFiMGIwOEhET3lfbDh2UHFGZkNVYkU4ZnVCT1Vwd1NsRnh1QlFnS2pyeHJQX2lBd3VQSXJaWThnUnhGSWtOc2c4VGRHRWptMHNHQTJyQkZZdGQ3WVE</guid></item><item><title>中国创新药对外授权创纪录，“外国药企纷至沓来：求合作” - 观察者</title><link>https://m.guancha.cn/internation/2026_04_30_815549.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="g_content"&gt;
-	&lt;p class="g_title"&gt;中国创新药对外授权创纪录，“外国药企纷至沓来：求合作”&lt;/p&gt;
-	
-	
-	&lt;/div&gt;
-&lt;div class="gc_content"&gt;
-   	   	   	&lt;p&gt;
-	【文/观察者网 齐倩】
-&lt;/p&gt;
-&lt;p&gt;
-	2025年是中国生物制药行业的突破之年，今年仍未降温。
-&lt;/p&gt;
-&lt;p&gt;
-	据国家药监局数据，2025年，我国创新药对外授权交易总金额超过1300亿美元，授权交易数量超过150笔，创历史新高。今年第一季度，对外授权交易额超过600亿美元，接近2025年全年的一半。
-&lt;/p&gt;
-&lt;p&gt;
-	据日媒《日经亚洲》4月20日报道，全球制药企业高管正渴望与中国生物技术公司达成更多交易。有分析指出，在授权谈判中，中国药企处于更有利位置，“部分反映了中企和外企之间权力平衡的转变”。
-&lt;/p&gt;
-&lt;p&gt;
-	“在此时此刻，很难不考虑在这里扩大资源投入，”本周，美国医药巨头强生公司全球外部科学创新负责人斯泰西·费尔德在上海一场论坛上表示。
-&lt;/p&gt;
-&lt;p&gt;
-	德国默克公司全球业务开发和联盟管理负责人马蒂亚斯·穆伦贝克表示，除了从中国生物技术公司获得药物授权外，该公司还在寻找投资在中国以外成立的新公司，以开发候选药物，即所谓的“新公司”模式。他说：“我们希望参与其中。”
-&lt;/p&gt;
-&lt;p&gt;
-	报道称，中国已成为全球制药公司寻找新重磅药物的首选目的地，这得益于中国生物技术公司以低成本实现快速开发。对于中国生物制药而言，对外授权交易有助于快速筹集资金，并通过宣布与全球巨头建立合作关系来提高声望。
-&lt;/p&gt;
-&lt;p&gt;
-	今年1月，阿斯利康公司同意向中国石药集团支付12亿美元首付款，以获得一系列肥胖症和糖尿病药物的开发权。石药集团表示，根据额外的研发和销售里程碑，它有资格获得高达173亿美元的付款。
-&lt;/p&gt;
-&lt;p&gt;
-	上个月，法国赛诺菲获得中国生物制药首创新药罗伐昔替尼的全球独家授权，交易价值高达15亿美元。　罗伐昔替尼作为一种双靶点抑制剂，通过双通路协同实现抗炎与抗纤维化。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/official/2026/04/30/20260430180108889.jpg!wap.jpg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	技术人员在石药集团实验室工作&lt;span&gt; 石药官网&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	美富律师事务所香港和上海办公室管理合伙人孙川表示，平均授权交易价值的增长，部分反映了中国授权方与全球被授权方之间权力平衡的转变。
-&lt;/p&gt;
-&lt;p&gt;
-	“相当多的中国生物技术公司可能不再缺钱，这意味着他们在谈判中处于更有利的位置，”孙川告诉《日经亚洲》，并回忆起自己2021年、2025年代表一家中国生物技术公司进行交易的经历。
-&lt;/p&gt;
-&lt;p&gt;
-	他说：“我们在去年的交易中获得了更好的条款。”
-&lt;/p&gt;
-&lt;p&gt;
-	投资者表示，中国生物技术行业的关键趋势包括：企业不再专注于开发少量候选药物，而是致力于开发用于药物发现的平台技术；以及人工智能（AI）的深度融合。
-&lt;/p&gt;
-&lt;p&gt;
-	“以前，我们认为AI是一种非常好的辅助工具，”风险投资公司博远资本创始合伙人陈凯文（Kevin Chen，音译）说，“如今，通过与新一代AI创业者的互动，我们开始意识到AI将发挥更重要的作用。”
-&lt;/p&gt;
-&lt;p&gt;
-	据国家药监局消息，2025年我国已批准上市的创新药达76个，大幅超过2024年全年48个，创历史新高；我国创新药对外授权交易总金额超过1300亿美元，授权交易数量超过150笔，远超2024年全年519亿美元和94笔，同样创历史新高。
-&lt;/p&gt;
-&lt;p&gt;
-	国家药监局药品注册管理司副司长蓝恭涛表示，2025年我国创新药对外授权交易总额较上一年翻了大约一倍，创新药审批数量也创新高，这是我国持续深化药品审评审批制度改革，一系列鼓励创新政策落地实施的重大成果。在创新药数量增长的同时，我们坚持标准不降低、标准国际化，对外授权的大幅增长也反映出国际社会对我国创新药价值的认可。
-&lt;/p&gt;
-&lt;p&gt;
-	中国生物医药产业蓬勃发展，已引起西方媒体注意。
-&lt;/p&gt;
-&lt;p&gt;
-	去年12月，英国《金融时报》&lt;a href="https://www.guancha.cn/internation/2025_12_02_799129.shtml" target="_blank"&gt;发文称&lt;/a&gt;，全球制药业正经历一场权力交接，西方药企可能在他们曾引以为傲的新药创新领域失去领先地位，而中国凭借惊人的研发速度、庞大的人才体系与产业链效率，正在快速逼近甚至反超。近年来，外国药企涌入中国，试图补充其日益萎缩的研发线。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Thu, 30 Apr 2026 11:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZ0FVX3lxTE0wMDJsOFN1UEc2YlRQeGpmV1JfbndMUjNUelJIbXRINXg4YkZPVThVc0hncWpKVy1URWRVb3JZYnlFMFpDSTVrNVJrY01CRFRIWVM3Zm01anVBRUpFY1VjcGdiUmdVdUU</guid></item><item><title>无立柱设计！九州风神发布CG380U 3F曲面海景房机箱 售价557元 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119637.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月30日消息，&lt;span&gt;&lt;strong&gt;九州风神发布了新款mini塔式机箱CG380U 3F。该机箱已在日本市场上市，乐天市场售价12980日元，约合人民币557元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;CG380U 3F是一款兼容microATX（含背插主板）与Mini-ITX主板的迷你塔式机箱，最大特色在于采用了无立柱设计，正面搭载一整块一体成型的曲面钢化玻璃面板，从前面板一直延伸至左侧面。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/32a2c54b-9c23-4264-a106-599a3ef53d89.jpg" target="_blank"&gt;&lt;img alt=" 无立柱设计！九州风神发布CG380U 3F曲面海景房机箱 售价557元" h="400" src="//img1.mydrivers.com/img/20260430/S32a2c54b-9c23-4264-a106-599a3ef53d89.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;散热系统方面，机箱出厂即预装三颗120mm PWM ARGB风扇——侧面两颗为反向扇叶设计，后方一颗为标准扇叶。灯光可通过机箱LED按钮或主板灯光同步功能切换颜色与模式。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/20f742e6-f0c9-449d-a75b-75bf3686f11c.jpg" target="_blank"&gt;&lt;img alt=" 无立柱设计！九州风神发布CG380U 3F曲面海景房机箱 售价557元" h="399" src="//img1.mydrivers.com/img/20260430/S20f742e6-f0c9-449d-a75b-75bf3686f11c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;机箱顶部最多可装3颗120mm或2颗140mm风扇，侧面2颗120mm，电源仓下方3颗120mm，后部1颗120mm或140mm。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;水冷支持方面，顶部与电源仓位最大兼容360mm冷排，侧面兼容240mm冷排，后部兼容140mm冷排。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;硬件兼容方面，显卡限长410mm，CPU散热器限高176mm，电源限深250mm（支持ATX规格）。存储仓位配备2个3.5英寸硬盘位或3个2.5英寸硬盘位，扩展插槽共5个。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/57a0b124-9631-4a3d-bbc9-350b1d032a37.jpg" target="_blank"&gt;&lt;img alt=" 无立柱设计！九州风神发布CG380U 3F曲面海景房机箱 售价557元" h="400" src="//img1.mydrivers.com/img/20260430/S57a0b124-9631-4a3d-bbc9-350b1d032a37.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;机箱四面侧板均采用快拆设计，无需工具即可拆装。顶部与底部内置磁吸式防尘滤网。前置I/O面板提供2个USB 3.0接口与1个Gen2 Type-C接口。&lt;/p&gt;
-&lt;p&gt;主机尺寸为437×235×451mm，重量约6.8kg。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/050a4b37-4ade-47dc-8ce9-b8da79377749.jpg" target="_blank"&gt;&lt;img alt=" 无立柱设计！九州风神发布CG380U 3F曲面海景房机箱 售价557元" h="400" src="//img1.mydrivers.com/img/20260430/S050a4b37-4ade-47dc-8ce9-b8da79377749.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 10:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1vOU1KNHhTeV92OXRjc1N4cmZkcnhnc3FHVEpuYTBCQ3M2VEpfOTdSSFNvVzV3clNhb0ZPNzAtWXR6bHdtNXlkX3cwQUJMTHN0ZnhENXlqSXk</guid></item><item><title>165帧满帧+双形态掌机！一加 Ace6 至尊版全面评测：一台真正懂FPS玩家的性能猛兽 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119635.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           
-&lt;p&gt;&lt;strong&gt;一、前言：不止性能拉满 更有双形态的突破&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在各类手机使用场景里，射击手游绝对是对综合体验要求最高的那一类。画面流畅度、触控跟手手感、网络延迟，还有长时间玩机的散热和续航，只要有一处短板，在激烈对局里都会被无限放大。&lt;/p&gt;
-&lt;p&gt;也正因如此，射击游戏一直是检验手机性能调校、交互优化的硬核试金石，各大厂商也都会借着这类场景，集中展示自家的技术实力。&lt;/p&gt;
-&lt;p&gt;熟悉一加产品线的玩家都知道，Ace系列自诞生以来，就是为电竞游戏而生。前几代机型凭借稳定的性能释放、扎实的游戏优化，在手游玩家圈子里积累了实打实的口碑，是很多人心中的电竞神机。&lt;/p&gt;
-&lt;p&gt;而全新的&lt;strong&gt;一加 Ace 6 至尊版&lt;/strong&gt;，彻底跳出了传统旗舰“全能均衡、面面平庸”的固化思路。&lt;strong&gt;这一次，一加不再追求泛用的全面适配，而是精准锚定射击手游玩家的核心痛点，把核心研发资源全部倾斜到游戏实战体验上，做了一次精准且极致的专项升级。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这款机型最亮眼的突破，就是独创的双形态体验设计。&lt;span&gt;&lt;strong&gt;日常使用时，它是硬件拉满、质感在线的直板旗舰，兼顾轻薄手感与日常使用体验；搭配专属游戏手柄后，便能一键切换电竞模式，解锁媲美专业掌机的操控体验，完美适配长时间手游鏖战。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/699efbcb-61fe-4557-865c-93d32cfe27ff.jpg" target="_blank"&gt;&lt;img alt="165帧满帧+双形态掌机！一加 Ace6 至尊版全面评测：一台真正懂FPS玩家的性能猛兽" h="533" src="//img1.mydrivers.com/img/20260430/S699efbcb-61fe-4557-865c-93d32cfe27ff.jpg" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;性能层面，一加 Ace 6 至尊版搭载了天玑9500旗舰芯片，依托3nm台积电工艺，天生拥有出色的能效比底子，兼顾强劲性能与低功耗表现。&lt;/p&gt;
-&lt;p&gt;不仅如此，一加将自研风驰游戏内核植入芯片底层，从架构层级对CPU、GPU、内存、读写调度等核心模块进行深度优化，彻底解决了传统旗舰“满帧就发烫、省电就降频”的通病，在极致性能输出与稳定功耗控制之间，找到了最优平衡。&lt;/p&gt;
-&lt;p&gt;为了拉满实战稳定性，一加还配备了三芯协同电竞系统：&lt;strong&gt;天玑 9500+全新一代风驰游戏内核稳定性能基础&lt;/strong&gt;、&lt;strong&gt;电竞网络芯G2 Pro稳住全程网络、灵犀触控芯专项优化触控跟手性。三颗芯片分工明确、各司其职，分别兜底帧率稳定性、网络流畅度、操控精准度，哪怕是长时间连续刚枪、多小时高强度排位，也能全程满帧稳跑、不卡顿、不掉链。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;屏幕方面一加 Ace 6 至尊版采用了一块6.78英寸1.5K东方屏，支持最高165Hz刷新率，远超主流120Hz规格。再加上3840Hz超高频PWM调光与“明眸护眼”技术，既保证了电竞级流畅度，又有效减缓了长时间游戏带来的视觉疲劳。&lt;/p&gt;
-&lt;p&gt;续航与防护配置也很实在，&lt;strong&gt;8600mAh超大冰川电池搭配120W超级闪充&lt;/strong&gt;，这个组合在同档位基本找不到第二家。同时整机给到了&lt;strong&gt;IP66/IP68/IP69/IP69K的满级防尘抗水&lt;/strong&gt;，耐用性远超常规游戏手机，日常通勤和户外使用随便折腾。&lt;/p&gt;
-&lt;p&gt;影像方面满足日常完全够用，配备&lt;strong&gt;5000万像素大底主摄+ 800万像素超广角&lt;/strong&gt;，不管是日常拍照，还是风景、建筑这类广角场景，都能轻松应对。&lt;/p&gt;
-&lt;p&gt;那么一加 Ace 6 至尊版实际体验究竟如何？接下来的评测，我们就从外观，性能、操控、续航、影像等多个维度，全方位实测一下。&lt;/p&gt;
-&lt;p&gt;先来了解一下一加 Ace 6 至尊版的产品参数：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/8647b0f2-fb9b-45ec-adea-21d8793cf3a9.jpg" target="_blank"&gt;&lt;img alt="165帧满帧+双形态掌机！一加 Ace6 至尊版全面评测：一台真正懂FPS玩家的性能猛兽" h="875" src="//img1.mydrivers.com/img/20260430/S8647b0f2-fb9b-45ec-adea-21d8793cf3a9.jpg" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 10:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE52THVzSVMwVkxpanRhLVowN1RWZl9mc3Fwb1RDamZsZ0pwcWF4a1Zhc21nVkw0d05uYWxUYUpCakU0M1c3WTcyWVRTV0dqMGFIcjdMTmJ0b2E</guid></item><item><title>谷歌开源“Agent Skill 超级工具箱”，云、库、引擎、AI 全线打通，开发者狂喜 - Infoq.cn</title><link>https://www.infoq.cn/article/ihRlIjt3N5seuQN27OQe</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="ProseMirror"&gt;&lt;p data-type="paragraph"&gt;上周五，OpenAI 发布 GPT-5.5 与 DeepSeek 推出 V4 模型几乎同时上演，大模型市场的竞争正进入白热化阶段。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;面对竞争对手的快速迭代，谷歌生态的技术从业者正在积极寻找应对之道——越来越多的人开始借助智能体 Agent 来构建和优化基于谷歌云平台的应用，从 Firebase、Gemini API 到 BigQuery 和 Google Kubernetes Engine（GKE）。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;但值得注意的是，在竞争日益激烈、技术快速演进的背景下，一个关键问题变得尤为突出：如何确保模型掌握关于这些技术准确、最新的信息？&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;在实际开发中，这个问题的棘手程度远超想象。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;开发者往往需要为每个云服务编写适配器，将 API 调用封装为智能体可调用的工具函数，然后反复调试模型是否正确调用了工具、传入了正确参数。更麻烦的是，一旦底层服务 API 发生变化，所有适配器都需要手动更新。这不仅是重复劳动，更是一种隐性的技术债。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;为了解决这个问题，谷歌为开发者文档提供了 Model Context Protocol（MCP）服务器，让智能体能够连接到可靠的实时信息源。但随之而来的，是一个被称为 “上下文膨胀”（Context Inflation）的新挑战。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;MCP 服务器的核心价值在于为模型提供即时的外部信息。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;但它自身也有局限性：当智能体大规模使用 MCP 服务器时，大量上下文信息会被不加区分地加载到模型的上下文窗口中。这种做法带来两个严重后果：其一，过多的信息会使模型混乱，降低推理质量——这一问题在企业实践中已被反复验证，有团队发现智能体在每次调用时加载 1.5 万 个 tokens 的指令，几乎不给实际需要处理的内容留下任何上下文空间；其二，上下文窗口的每一次填充都会转化为实实在在的 Token 成本，随着调用量增长，开销曲线会变得难以忽视。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;面对这一困境，业界迫切需要一种更精细的信息供给方式——既能让智能体获得所需的专业知识，又不至于被冗余信息淹没。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这正是 Agent Skills 应运而生的背景。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;谷歌官方 Skill 仓库正式上线&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;那么，究竟什么是 Agent 的 Skills？&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;根据官方定义，Skill 是一种 “简单开放的格式，用于赋予智能体新的能力和专业知识” 。我们可以将其理解为针对特定技术或任务的精简的、以智能体为中心的文档。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;Skills 的设计哲学可以用两句话概括：用 Markdown 编写，保持轻量；按需加载，避免冗余。每一份 Skill 文件可以包含参考文档、代码片段和其他资源，智能体仅在需要时才加载相关信息，从而大大降低了上下文信息过载的风险。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;从技术定位来看，Skills 占据了一个独特的位置。它在传统提示 Prompt 之上——因为 Skills 是可复用的、持久的；比微调（Fine-tuning）更轻——因为它能以业务逻辑的速度迭代；比 RAG（检索增强生成）更主动——它不是被动的信息检索，而是主动的专业知识注入；比普通工具（Tools）更丰富——因为它不仅编码了“做什么”，还编码了“怎么做”和“为什么这么做”。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;在 Google Cloud Next 2026 大会的第一天，谷歌正式宣布推出 Google 官方 Agent Skills 仓库。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这一消息被认为是本届大会最具实用价值的发布之一。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;项目地址为：github.com/google/skills 。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/dd/dd54943e56dddfb03537152bb39e3538.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;该代码库包含十三项技能，涵盖谷歌云最核心的服务：AlloyDB、BigQuery、Cloud Run、Cloud SQL、Firebase、Gemini API 和 Google Kubernetes Engine（GKE）。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这些技能帮助智能体理解如何创建、查询和管理云资源，是 Agent 操作谷歌云基础设施的能力基础。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;还包括三大架构支柱技能。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;ul data-type="bulletedlist"&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;安全性（Security）：让智能体理解云安全最佳实践，包括身份与访问管理、数据加密和威胁防护&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;可靠性（Reliability）：涵盖高可用架构设计、容错机制和灾难恢复策略&lt;/p&gt;&lt;/li&gt;&lt;li data-type="listitem"&gt;&lt;p data-type="paragraph"&gt;成本优化（Cost Optimization）：指导智能体在架构决策中考虑资源效率与成本控制&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这三大支柱技能的重点不在于教会智能体调用某个具体 API，而是让它理解云系统设计的原则与决策逻辑，从而在更高层面提升应用质量。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;此外，仓库还提供了三项面向常见任务的流程指南：Google Cloud 入门（Onboarding to Google Cloud）、身份验证（Authenticating to Google Cloud）和网络可观测性（Google Cloud Network Observability） 。这些“秘诀”将日常操作拆解为可执行的步骤，让智能体能够按照既定流程完成特定工作。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/7f/7f70534978cae1354cc8ea7a4bdd61d7.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;Agent Skill 到底有什么用？&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;要理解 Agent Skills 的真正价值，不妨回到真实开发场景。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;在 2026 年的今天，构建 Agent 的实际情况与演示截然不同：开发者花费大量时间编写和维护工具适配器——一位构建文档处理智能体的开发者透露，她用于维护适配器的时间已经超过了构建智能体逻辑本身的时间。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;Skills 仓库正是为了解决这一痛点而生。官方 Skills 经过针对实际模型的测试和优化，谷歌已验证其能在 Gemini 上可靠运行；同时，Skills 兼容 MCP 标准，可以跨平台使用，不限于 Vertex AI；当底层云 API 发生变化时，谷歌会负责更新相应技能，开发者无需自行维护；此外，Skills 直接使用开发者已有的 GCP 凭证，无需编写额外的认证代码。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;在兼容性方面，Skills 展示出极强的跨平台能力。通过 npx skills install github.com/google/skills 命令，开发者可以将这些技能安装到多种智能体平台中，包括 Antigravity、Gemini CLI，以及 Claude Code、Cursor 等第三方智能体工具。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;近期发布的 Antigravity 平台已经深度整合了 Skills 体系，支持通过规则（Rules）、技能（Skills）和工作流（Workflows）三个层级，将通用智能体转变为专业、稳健且高效的工作伙伴。同时，Gemini CLI 也通过更新内置了对 Skills 的原生支持，让开发者可以在命令行环境中直接调用专业化技能。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/f1/f136b29ba3a15628660bfb1d555d38df.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;再来看个具体的例子，每个 Skill 都包含：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;经过实际模型测试——不仅仅是“这里有一个函数”，而是经过优化的描述，这些描述已由谷歌验证，可与 Gemini 稳定兼容。兼容 MCP——符合模型上下文协议 (MCP) 标准，因此可跨平台运行，而不仅限于 Vertex AI。版本控制和维护——当底层云 API 发生变更时，谷歌会更新技能，无需用户亲自动手了。预认证——使用现有的 GCP 凭据，无需自定义授权码。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;例如，BigQuery 技能在实践中看起来是这样的：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;div data-type="codeblock"&gt;&lt;div data-codeblock-wrap&gt;&lt;div data-codeblock-codes&gt;&lt;pre lang="text" data-origin="pm_code_preview"&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-keyword"&gt;from&lt;/span&gt; google.adk.agents &lt;span class="hljs-keyword"&gt;import&lt;/span&gt; LlmAgent&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-keyword"&gt;from&lt;/span&gt; google.skills.gcp &lt;span class="hljs-keyword"&gt;import&lt;/span&gt; BigQuerySkill, CloudStorageSkill, PubSubSkill&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;agent = LlmAgent(&lt;/code&gt;&lt;code data-type="codeline"&gt;    name=&lt;span class="hljs-string"&gt;"data_pipeline_agent"&lt;/span&gt;,&lt;/code&gt;&lt;code data-type="codeline"&gt;    model=&lt;span class="hljs-string"&gt;"gemini-2.5-pro"&lt;/span&gt;,&lt;/code&gt;&lt;code data-type="codeline"&gt;    tools=[&lt;/code&gt;&lt;code data-type="codeline"&gt;        BigQuerySkill(project_id=&lt;span class="hljs-string"&gt;"my-project"&lt;/span&gt;, dataset_id=&lt;span class="hljs-string"&gt;"analytics"&lt;/span&gt;),&lt;/code&gt;&lt;code data-type="codeline"&gt;        CloudStorageSkill(bucket=&lt;span class="hljs-string"&gt;"my-output-bucket"&lt;/span&gt;),&lt;/code&gt;&lt;code data-type="codeline"&gt;        PubSubSkill(topic=&lt;span class="hljs-string"&gt;"pipeline-results"&lt;/span&gt;),&lt;/code&gt;&lt;code data-type="codeline"&gt;    ]&lt;/code&gt;&lt;code data-type="codeline"&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p data-codeblock-copy&gt;复制代码&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;对比一下没使用该技能时要写的东西：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;div data-type="codeblock"&gt;&lt;div data-codeblock-wrap&gt;&lt;div data-codeblock-codes&gt;&lt;pre lang="text" data-origin="pm_code_preview"&gt;&lt;code data-type="codeline"&gt;Today&lt;span class="hljs-symbol"&gt;'s&lt;/span&gt; reality&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-keyword"&gt;from&lt;/span&gt; google.cloud &lt;span class="hljs-keyword"&gt;import&lt;/span&gt; bigqueryfrom google.cloud &lt;span class="hljs-keyword"&gt;import&lt;/span&gt; storagefrom google.cloud &lt;span class="hljs-keyword"&gt;import&lt;/span&gt; pubsub_v1import json&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;client = bigquery.Client()storage_client = storage.Client()publisher = pubsub_v1.PublisherClient()&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;def&lt;/span&gt; &lt;span class="hljs-title"&gt;run_bigquery_query&lt;/span&gt;(&lt;span class="hljs-params"&gt;query: &lt;span class="hljs-built_in"&gt;str&lt;/span&gt;, max_rows: &lt;span class="hljs-built_in"&gt;int&lt;/span&gt; = &lt;span class="hljs-number"&gt;1000&lt;/span&gt;&lt;/span&gt;) -&amp;gt; &lt;span class="hljs-built_in"&gt;dict&lt;/span&gt;:&lt;/span&gt;&lt;span class="hljs-string"&gt;"""Runs a SQL query against BigQuery and returns results.&lt;/span&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;Use &lt;span class="hljs-keyword"&gt;this&lt;/span&gt; tool &lt;span class="hljs-keyword"&gt;when&lt;/span&gt; you need to query structured &lt;span class="hljs-keyword"&gt;data&lt;/span&gt; from the &lt;span class="hljs-keyword"&gt;data&lt;/span&gt; warehouse.&lt;/code&gt;&lt;code data-type="codeline"&gt;The query should be standard SQL. Results &lt;span class="hljs-keyword"&gt;are&lt;/span&gt; limited &lt;span class="hljs-keyword"&gt;to&lt;/span&gt; max_rows rows.&lt;/code&gt;&lt;code data-type="codeline"&gt;Returns a &lt;span class="hljs-built_in"&gt;dict&lt;/span&gt; &lt;span class="hljs-keyword"&gt;with&lt;/span&gt; &lt;span class="hljs-string"&gt;'rows'&lt;/span&gt; (&lt;span class="hljs-built_in"&gt;list&lt;/span&gt; of dicts) &lt;span class="hljs-keyword"&gt;and&lt;/span&gt; &lt;span class="hljs-string"&gt;'schema'&lt;/span&gt; (&lt;span class="hljs-built_in"&gt;list&lt;/span&gt; of field names).&lt;/code&gt;&lt;code data-type="codeline"&gt;If the query fails, returns a &lt;span class="hljs-built_in"&gt;dict&lt;/span&gt; &lt;span class="hljs-keyword"&gt;with&lt;/span&gt; &lt;span class="hljs-string"&gt;'error'&lt;/span&gt; key explaining what went wrong.&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-string"&gt;""&lt;/span&gt;&lt;span class="hljs-string"&gt;"&lt;/span&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-keyword"&gt;try&lt;/span&gt;:&lt;/code&gt;&lt;code data-type="codeline"&gt;    query_job = client.query(query)&lt;/code&gt;&lt;code data-type="codeline"&gt;    results = query_job.result()&lt;/code&gt;&lt;code data-type="codeline"&gt;    &lt;span class="hljs-keyword"&gt;rows&lt;/span&gt; &lt;span class="hljs-operator"&gt;=&lt;/span&gt; [dict(&lt;span class="hljs-type"&gt;row&lt;/span&gt;) &lt;span class="hljs-keyword"&gt;for&lt;/span&gt; &lt;span class="hljs-type"&gt;row&lt;/span&gt; &lt;span class="hljs-keyword"&gt;in&lt;/span&gt; results][:max_rows]&lt;/code&gt;&lt;code data-type="codeline"&gt;    schema = [field.name for field in results.schema]&lt;/code&gt;&lt;code data-type="codeline"&gt;    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; {&lt;span class="hljs-string"&gt;"rows"&lt;/span&gt;: rows, &lt;span class="hljs-string"&gt;"schema"&lt;/span&gt;: schema, &lt;span class="hljs-string"&gt;"total_rows"&lt;/span&gt;: len(rows)}&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-keyword"&gt;except&lt;/span&gt; Exception &lt;span class="hljs-keyword"&gt;as&lt;/span&gt; e:&lt;/code&gt;&lt;code data-type="codeline"&gt;    &lt;span class="hljs-keyword"&gt;return&lt;/span&gt; {&lt;span class="hljs-string"&gt;"error"&lt;/span&gt;: str(e)}&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;def&lt;/span&gt; &lt;span class="hljs-title"&gt;upload_to_storage&lt;/span&gt;(&lt;span class="hljs-params"&gt;filename: &lt;span class="hljs-built_in"&gt;str&lt;/span&gt;, content: &lt;span class="hljs-built_in"&gt;str&lt;/span&gt;, content_type: &lt;span class="hljs-built_in"&gt;str&lt;/span&gt; = &lt;span class="hljs-string"&gt;"text/plain"&lt;/span&gt;&lt;/span&gt;) -&amp;gt; &lt;span class="hljs-built_in"&gt;dict&lt;/span&gt;:&lt;/span&gt;&lt;span class="hljs-string"&gt;"""Uploads a file to Cloud Storage.&lt;/span&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;Use &lt;span class="hljs-keyword"&gt;this&lt;/span&gt; &lt;span class="hljs-keyword"&gt;when&lt;/span&gt; you need to save output &lt;span class="hljs-keyword"&gt;data&lt;/span&gt; or results to persistent storage.&lt;/code&gt;&lt;code data-type="codeline"&gt;filename &lt;span class="hljs-keyword"&gt;is&lt;/span&gt; the destination path within the bucket. content &lt;span class="hljs-keyword"&gt;is&lt;/span&gt; the &lt;span class="hljs-built_in"&gt;string&lt;/span&gt; content.&lt;/code&gt;&lt;code data-type="codeline"&gt;Returns dict &lt;span class="hljs-keyword"&gt;with&lt;/span&gt; &lt;span class="hljs-string"&gt;'url'&lt;/span&gt; &lt;span class="hljs-keyword"&gt;on&lt;/span&gt; success &lt;span class="hljs-keyword"&gt;or&lt;/span&gt; &lt;span class="hljs-string"&gt;'error'&lt;/span&gt; &lt;span class="hljs-keyword"&gt;on&lt;/span&gt; failure.&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;span class="hljs-string"&gt;""&lt;/span&gt;&lt;span class="hljs-string"&gt;"&lt;/span&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;/code&gt;&lt;code data-type="codeline"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p data-codeblock-copy&gt;复制代码&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;每个项目可能大概要写四到十个这样的工具代码。而技能库可以帮你省去所有这些代码。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/ad/adc05f8446dfdbca8237a6e7081a22a5.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;事实上，早在谷歌发布这款官方 Agent Skill 库之前， 谷歌云 AI 总监、Gemini 工程负责人 Addy Osmani 在领英上宣布开源了一款 Agent Skills 库：为 AI 编码智能体打造的 19 项工程技能 + 7 条命令，灵感源自 Google 最佳实践。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;项目地址：&lt;a href="https://github.com/addyosmani/agent-skills" title data-type="link"&gt;https://github.com/addyosmani/agent-skills&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;img src="https://static001.geekbang.org/infoq/64/6402872b778da3803c781be657cb5583.png" alt data-type="image"&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;他在文章中写道：“我们知道 AI 编码智能体很强大。但如果任由它们自由发挥，它们就会走捷径——跳过规格说明、跳过测试、跳过安全审查。它们会更倾向于追求‘完成’而非‘正确’。这就是我构建 Agent Skills 的原因。每一项技能都编码了资深工程师实际使用的工作流、质量关卡和最佳实践：编码前先制定规格、合并前先进行测试、优化前先进行测量。这些内容被打包好，让你的智能体能够始终如一地遵循。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;完整的生命周期覆盖：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;→ Define（定义）——在写第一行代码之前，先打磨想法、撰写规格说明&lt;/p&gt;&lt;p data-type="paragraph"&gt;→ Plan（规划）——分解为小而可验证的任务&lt;/p&gt;&lt;p data-type="paragraph"&gt;→ Build（构建）——增量式实现、上下文工程、清晰的 API 设计、测试驱动开发（TDD）&lt;/p&gt;&lt;p data-type="paragraph"&gt;→ Verify（验证）——使用 DevTools 进行浏览器测试、系统化调试&lt;/p&gt;&lt;p data-type="paragraph"&gt;→ Review（审查）——代码质量、安全加固、性能优化&lt;/p&gt;&lt;p data-type="paragraph"&gt;→ Ship（交付）——Git 工作流、CI/CD、架构决策记录（ADR）、发布前检查清单&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这些技能兼容 Claude Code、Cursor、Antigravity，以及任何接受 Markdown 指令的智能体。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;Addy Osmani 的这款 Agent Skills 代码库把谷歌资深工程师的工作习惯，拆成 20 个可组合的 Skill，约束 AI 每一步都按工程规范干活。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;目前，Addy Osmani 的开源项目已经在 Github 上获得近 2.4 万 star。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;那么，这两款都出自谷歌的 Agent Skills 代码库有何不同，分别解决什么问题？&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;Osmani 的项目解决的是“如何正确地构建”的问题——它是一套确保智能体编码行为符合专业标准的通用工程纪律框架。无论你使用哪个云平台、开发什么类型的软件，这套技能都能指导你的智能体遵循规格驱动开发、增量式实现、测试优先等专业实践。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;谷歌官方开源的 Agent Skills 仓库解决的则是“构建什么以及如何操作”的问题——它提供的是针对特定技术栈（Google Cloud）的具体操作知识。当智能体需要创建 BigQuery 数据集、配置 GKE 集群或设计 Cloud Run 服务时，官方技能将提供准确的、经过验证的指令。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;在实际使用中，两者可以并存于同一个智能体环境中：Osmani 的技能包用于规范智能体的整体开发行为，而 Google 官方技能库则在智能体需要与 Google Cloud 服务交互时提供精准的操作知识。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;这两个项目的先后出现，印证了 Google 在 Skills 领域的独特布局策略：既拥抱个人驱动的开源创新，又通过官方仓库为整个生态提供标准化的知识基础设施。这种“个人-官方”的双轨模式，或许正是技能成为“智能体工作流公认抽象层”的关键一步。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;对于开发者而言，这意味着你既可以借助 Osmani 的技能包让智能体像资深工程师一样严谨工作，又可以借助官方技能仓库让智能体准确无误地操作 Google Cloud 服务——两者协同，构成了一个既遵守工程纪律又掌握专业知识的人工智能“超级员工”。&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;参考链接：&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://dev.to/pooja_bhavani/googles-most-important-next-26-announcement-wasnt-gemini-25-ultra-27ff#comments" title data-type="link"&gt;https://dev.to/pooja_bhavani/googles-most-important-next-26-announcement-wasnt-gemini-25-ultra-27ff#comments&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://cloud.google.com/blog/topics/developers-practitioners/level-up-your-agents-announcing-googles-official-skills-repository" title data-type="link"&gt;https://cloud.google.com/blog/topics/developers-practitioners/level-up-your-agents-announcing-googles-official-skills-repository&lt;/a&gt;&lt;/p&gt;&lt;p data-type="paragraph"&gt;&lt;a href="https://www.linkedin.com/posts/addyosmani_ai-softwareengineering-programming-activity-7446081634577309696-iT-5/" title data-type="link"&gt;https://www.linkedin.com/posts/addyosmani_ai-softwareengineering-programming-activity-7446081634577309696-iT-5/&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Infoq.cn</author><pubDate>Thu, 30 Apr 2026 10:44:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXkFVX3lxTFBlSUFJUlUyX1J6bm5uZ2dCVXJLX3hTZlI1cnNwSnEtdHlKMmI3MHZjS1hwTXNUekFfMjRYNG9TcmlUclRXNzJqRFN5M3pjVkttWmh1SmpHOEhNT3diMHc</guid></item><item><title>A4 黄金屏+满血性能！OPPO Pad 5 Pro全面评测：告别爱奇艺 这款平板才是真生产力 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119632.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           
-&lt;p&gt;&lt;strong&gt;一、前言：A4 级大屏 + 满血性能 这款平板才是真生产力&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;平板诞生之初，本是为打造全新形态的便携电脑。但受限于早期孱弱的硬件性能与适配匮乏的生态应用，理想终究没能落地，“买前生产力，买后爱奇艺” 也成了大众调侃，让平板长期局限于影音娱乐工具的定位。&lt;/p&gt;
-&lt;p&gt;时至今日，平板的硬件与生态早已全面革新。苹果平板与笔记本共用 M5 系列核心，微软 Surface 产品线也换装高通定制处理器，平板性能全面对标主流轻薄本。再加上各类大屏专属优化应用持续落地，如今的平板，早已具备完整的电脑级生产力，完全能胜任办公创作等专业场景。&lt;/p&gt;
-&lt;p&gt;OPPO Pad 5 Pro &lt;strong&gt;正是这样一款打破边界的旗舰安卓平板，兼顾平板便携属性与电脑完整能力。搭配悬浮键盘后，形态、操作、功能全面看齐轻薄本，办公创作、创意设计、影音娱乐一机兼顾，综合体验甚至优于传统轻薄笔记本。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/283bc54c-5cb5-4dde-b6d3-e64586c855c6.jpg" target="_blank"&gt;&lt;img alt="A4 黄金屏+满血性能！OPPO Pad 5 Pro全面评测：告别爱奇艺 这款平板才是真生产力" h="531" src="//img1.mydrivers.com/img/20260430/S283bc54c-5cb5-4dde-b6d3-e64586c855c6.jpg" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为OPPO顶配大屏平板，OPPO Pad 5 Pro搭载13.2英寸大屏，延续品牌标志性7:5黄金屏幕比例。对比主流平板的3:2比例，这款屏幕纵向显示空间更充裕，编辑文档、处理表格、浏览文字内容时视野更广，办公效率大幅提升。&lt;/p&gt;
-&lt;p&gt;而在超大尺寸机身加持下，这个比例的优势进一步放大。&lt;strong&gt;整机尺寸为289.7×209.7mm，无限接近标准A4 纸规格（297×210mm），横竖握持手感均衡，收纳进公文包、档案袋等办公配件也十分适配。&lt;/strong&gt;屏幕拥有3392×2400高清分辨率、315ppi 超高像素密度，画面显示细腻清晰，同一份PDF文件，在设备上查看与A4纸质打印效果高度一致，阅读、批注文件更贴合办公习惯。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/1a299361-e266-45aa-b917-b84655bb8c0f.jpg" target="_blank"&gt;&lt;img alt="A4 黄金屏+满血性能！OPPO Pad 5 Pro全面评测：告别爱奇艺 这款平板才是真生产力" h="533" src="//img1.mydrivers.com/img/20260430/S1a299361-e266-45aa-b917-b84655bb8c0f.jpg" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;核心性能上，&lt;strong&gt;OPPO Pad 5 Pro搭载第五代高通骁龙8至尊版旗舰芯片，搭配潮汐引擎底层深度调校，释放满血性能。&lt;/strong&gt;内置天工散热系统，依托VC均热板与多层石墨导热结构快速导温，整机散热总面积可达40760mm²，高性能运行时控温出色，长时间办公、剪辑、游戏都不会因发热降频。&lt;/p&gt;
-&lt;p&gt;宽大机身也带来了续航的越级提升，内置13380mAh超大容量电池，创下平板行业电池容量新纪录。搭配长效保电技术，设备长期待机也不易亏电，持久续航告别电量焦虑，日常通勤、外出办公、长途出行都能无忧使用。&lt;/p&gt;
-&lt;p&gt;OPPO Pad 5 Pro的 核心参数配置如下：&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/72630af5-c3d7-4e85-85df-b4dc48535cc9.png" target="_blank"&gt;&lt;img alt="A4 黄金屏+满血性能！OPPO Pad 5 Pro全面评测：告别爱奇艺 这款平板才是真生产力" h="515" src="//img1.mydrivers.com/img/20260430/S72630af5-c3d7-4e85-85df-b4dc48535cc9.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 10:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1mSjhaYW1ESFRrUDBCcUdrUG1kUkVZd0YyOHl6cGxXaDJHRWNBV0hDS1NuS2Q1ZGZhaUxkWDJCeHhsMWR4NWlNZVdFcmFtSW5lenRiYzJrOVA</guid></item><item><title>官方下场辟谣！索尼澄清联网限制：30天计时器作废 一次验证终身畅玩 - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119631.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;官方下场辟谣！索尼澄清联网限制：30天计时器作废 一次验证终身畅玩&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-04-30 18:27:42  出处：快科技 作者：于浮  编辑：于浮 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1119631-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月30日消息，近期PS平台&lt;a class="f14_link" href="https://news.mydrivers.com/1/1119/1119124.htm" target="_blank"&gt;新增授权到期时限的消息引发玩家恐慌&lt;/a&gt;，不少人担心已购数字游戏需定期联网验证，断网即被锁权限。&lt;span&gt;&lt;strong&gt;索尼官方现已正式澄清：新款PS的数字版权管理仅需一次在线许可证验证。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;索尼互动娱乐向游戏媒体GameSpot明确表示，PS4和PS5玩家不需要定期联网核验授权，就能正常游玩已经购买的数字版游戏，无需每隔一段时间上线打卡。&lt;strong&gt;玩家仅需完成一次性在线授权检测，用来确认游戏正版权限，只要完成这一次验证，后续离线游玩时，不会再有任何重复联网检查的要求。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;这项全新的版权规则仅针对2026年3月之后在PlayStation商店购买的PS4、PS5数字游戏。在此之前购买的旧款数字游戏，不会受到该机制的任何影响。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;设备表现方面，PS4 主机将会直接显示30天授权计时提示，而PS5则会在后台静默运行相关检测，用户无法直接查看。&lt;/p&gt;
-&lt;p&gt;此前有分析称，索尼新增这一层DRM验证机制，&lt;a class="f14_link" href="https://news.mydrivers.com/1/1119/1119323.htm" target="_blank"&gt;核心目的是整治平台违规行为，针对14天退款窗口期的欺诈漏洞&lt;/a&gt;，而非长期限制离线游玩。&lt;span&gt;&lt;strong&gt;目前索尼官方未就变更原因给出正式说明。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/c8c14aa3-a5b7-4f16-9c53-30a70599e996.jpg" target="_blank"&gt;&lt;img alt="官方下场辟谣！索尼澄清联网限制：30天计时器作废 一次验证终身畅玩" h="337" src="//img1.mydrivers.com/img/20260430/Sc8c14aa3-a5b7-4f16-9c53-30a70599e996.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：于浮&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 10:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBIOVFfa3N5TlJkMlVmbDBoLWFLNkJqYjA0YkxDS3lCN1hqRHBhUjg3V3IzclRpbjBxT055QWFGVTNkclRieEZ3TG1VZDNkcU9CeC1adXoxYWU</guid></item><item><title>法国人给Windows 10办了一场葬礼：抬着棺材上街抗议微软！ - 驱动之家</title><link>https://news.mydrivers.com/1/1119/1119630.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技4月30日消息，据报道，&lt;span&gt;&lt;strong&gt;法国环保组织近日在街头为Windows 10举行了一场“葬礼”，抗议者抬着棺材游行，象征性地宣告这款操作系统的死亡，&lt;/strong&gt;&lt;/span&gt;并要求微软将支持期限延长至2030年。&lt;/p&gt;
-&lt;p&gt;参与此次抗议的组织包括Non-Violent Action COP21、Alternatiba、April、Stop Planned Obsolescence、Que Choisir Ensemble和Zero Waste France。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/ce844f4b-73c2-420f-b293-22278b898cfe.png" target="_blank"&gt;&lt;img alt="法国人给Windows 10办了一场葬礼：抬着棺材上街抗议微软！" h="332" src="//img1.mydrivers.com/img/20260430/Sce844f4b-73c2-420f-b293-22278b898cfe.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;他们表示，&lt;strong&gt;微软在赚取数十亿美元利润的同时，通过“计划性淘汰策略”强行终止对一款仍被广泛使用的操作系统的支持，&lt;/strong&gt;将导致数百万台正常运行的设备沦为电子垃圾。&lt;/p&gt;
-&lt;p&gt;抗议者指出，制造一台新笔记本电脑需要消耗约800公斤原材料，而大量用户因Windows 11的硬件要求被迫更换设备，将进一步加剧环境负担。&lt;/p&gt;
-&lt;p&gt;目前已有5万人签署请愿书，呼吁微软将Windows 10的支持期限从当前的ESU一年延至2030年。&lt;/p&gt;
-&lt;p&gt;微软于2025年10月终止了Windows 10的主流支持，用户可通过付费或满足特定条件加入扩展安全更新（ESU）计划继续获取安全补丁。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260430/bab16e03-fff8-4056-bde0-b796c2d16cd0.png" target="_blank"&gt;&lt;img alt="法国人给Windows 10办了一场葬礼：抬着棺材上街抗议微软！" h="328" src="//img1.mydrivers.com/img/20260430/Sbab16e03-fff8-4056-bde0-b796c2d16cd0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;但抗议者认为这远远不够，部分参与者甚至直接呼吁消费者放弃Windows，在现有电脑上安装Linux。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;值得注意的是，法国政府本月初已决定弃用Windows转向Linux，以减少对美国技术的依赖，不过历史经验表明，这类迁移并非一帆风顺，德国慕尼黑曾使用Linux十年后最终回归Windows。&lt;/p&gt;
-&lt;p&gt;微软对此类抗议做出让步的可能性极低，公司已提前数年反复提醒用户Windows 10的终止支持时间表，大概不会因为法国街头的棺材游行而改变计划。&lt;/p&gt;
-&lt;p&gt;不过这一幕确实让人回想起2010年的往事，当时微软员工曾为iPhone举办过一场葬礼游行，庆祝Windows Phone 7的发布，当然最后结果如何我们已经知道了。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 10:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9HTmlJd01VODRNc2dVcmRucVYtRGcwTDFrVUpCeGZVQXlXbGR0NkFOMVVfa0RaaHZkT2NnaG0zQjJtakpiZGtFa3RsNkFHVnY2RDhNTC1VWTk</guid></item><item><title>刚刚，GPT-5.6曝光了！GPT-5.5疯狂迷恋哥布林，OpenAI连夜封禁 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771394</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 30 Apr 2026 10:08:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBSZFNNdjN5c3ZpZ3RCc052OUs3QlZaMmg4U29pcUNzaFQ0M29QUEU2MHFKaGdLMEtlX0RjS1Nvb3o0czRkS0EzTVJuWnhfcllkeFZj</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 30 Apr 2026 11:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBoUkRaNzJWSF9hNEtzTzYyLS1nSG5PWndqaG1TOE5uY3FucDR3b1FqLW9VYjZpUUJZaVVVa1lIRnpMSExHQy1uQnRxM1ZoWlpfZEdoOGhFdm8</guid></item></channel></rss>
