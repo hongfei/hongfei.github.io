@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>酷冷至尊elite 461系列机箱首发199元起：M-ATX海景房设计 - 驱动之家</title><link>https://news.mydrivers.com/1/1120/1120743.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>2026年了 老黄还是没修好N卡这个bug - 驱动之家</title><link>https://news.mydrivers.com/1/1120/1120752.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;不知道大家有没有在网上刷到过这种视频，说 “ N 卡用户必调设置 ” 、 “ N 卡连 HDMI 线画面容易发灰 ” 什么的，本来托尼我以为都是危言耸听，还想给大家写一篇文章打假的，毕竟这都哪年的老黄历了，现在还能有这事儿？&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/e4ad45ff-e826-4601-af9c-9b7b64ca6671.png" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="338" src="//img1.mydrivers.com/img/20260508/Se4ad45ff-e826-4601-af9c-9b7b64ca6671.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;结果我实际一测。。。没错，2026 年了，英伟达竟然还没有修复这个 bug ！&lt;/p&gt;
+&lt;p&gt;也就是说，我花重金配的电脑，显卡是上万块的 5090，结果就因为用了一根 HDMI 线 —— 翻车了！？&lt;/p&gt;
+&lt;p&gt;你上网随便一搜就能看到很多教你怎么解决的，年年都有，播放量还不低，办法也很简单，打开英伟达控制面板改个设置，就能让画面满血复活。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/32656d40-9454-4e07-aa59-f1c3f04daae3.png" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="410" src="//img1.mydrivers.com/img/20260508/S32656d40-9454-4e07-aa59-f1c3f04daae3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;出现这个情况的原因其实很简单，&lt;strong&gt;就是 N 卡在连 HDMI 线的时候，把显示器误认成了一台电视&lt;/strong&gt;，然后主动把工作模式切换成了 “ 电视兼容模式 ” ，降低了画面色彩输出范围，显示器收到的数据和实际的色彩数据 “ 颗粒度 ” 对不齐，于是画面对比度就低了，看上去灰蒙蒙的，黑色部分泛白特明显。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/d43d7a66-036a-4016-8fef-8ff88b9004ee.png" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="327" src="//img1.mydrivers.com/img/20260508/Sd43d7a66-036a-4016-8fef-8ff88b9004ee.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;所以只要手动告诉显卡 “ 这是一台PC显示器，不是电视 ” ，问题就解决了。&lt;/p&gt;
+&lt;p&gt; 那为啥电视就需要色彩兼容模式呢？又为什么只有英伟达的显卡会出现这种兼容模式，AMD 和英特尔就不会呢？&lt;/p&gt;
+&lt;p&gt;这就属于历史遗留问题了，2002 年 HDMI 1.0 标准刚出来的时候，就是为了占领客厅的，所以很多那个年代的电视行业还在从模拟信号向全数字转变的过程中。&lt;/p&gt;
+&lt;p&gt;而模拟信号这东西挺不稳的，经常出现波动，要是信号刚好落在范围的边缘比如 0 和 255，一个波动就会掉到范围外，导致数据溢出，造成画面撕裂。&lt;/p&gt;
+&lt;p&gt;于是大伙把动态范围规定在 16-235，就等于在两头分别加了段缓冲区，就算信号没在范围里，画面也不至于太崩。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/3520d1c8-f778-4c02-b6f6-00eb1221cad4.png" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="282" src="//img1.mydrivers.com/img/20260508/S3520d1c8-f778-4c02-b6f6-00eb1221cad4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而且模拟电视广播的视频信号里还有个低压水平很低的同步信号，用来告诉电子束什么时候换行和换场，正好就能塞在了 16 以下这段，这样数字化的视频数据也不会干扰到电视机的同步工作，一石二鸟了属于是。&lt;/p&gt;
+&lt;p&gt;就算新的 OLED 、 Mini LED 电视早已没了模拟信过冲问题，但整个广播电视行业的后期制作、传输协议、压缩算法啥的，还是基于这个有限范围去构建的，就连流媒体平台，为了向下兼容也是如此。&lt;/p&gt;
+&lt;p&gt;反正一句话就是，&lt;strong&gt;这标准用久了，覆盖的设备范围相当多，不太好动。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;而 N 卡在 HDMI 连接下的识别逻辑和同样有点区别，它是先看显示设备的 EDID，大家可以理解为设备的身份证，假如里面声明了支持电视标准分辨率比如 1080P、4K UHD 等等，或者说支持 YCbCr 颜色空间、写了扬声器布局啥的，那 N 卡就会把它当成是一台电视机，默认输出 16-235 的有限色彩范围。&lt;/p&gt;
+&lt;p&gt;对于电视来说这完全没毛病，因为电视上 16 和 235 本来就是纯黑和纯白，只是色阶分得没那么细罢了。&lt;/p&gt;
+&lt;p&gt;但 PC 显示器就不一样了，它按照 0-255 的完全范围去解码，收到的画面数据却是有限范围，于是画面就可想而知地拉了。&lt;/p&gt;
+&lt;p&gt;DP 连接倒是没这问题，因为 DP 协议天然就是给 PC 设计的，用不着考虑电视的事儿，默认就是完全范围，所以很多人说打游戏用 DP 更好，其实就是在这方面会比较省事。&lt;/p&gt;
+&lt;p&gt;那这么多年下来，英伟达这老毛病就一点没改吗？&lt;/p&gt;
+&lt;p&gt;托尼从公司仓库里随机掏了几台积灰的显示器，用 HDMI 线帮大家实测了一下，显卡为 5070Ti 移动版，显卡驱动更新到了最新。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;得到的结果就是 —— 改了，但没完全改。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有的显示器默认识别出来就是 PC 显示器，也有另一些更古早的型号被识别成了电视机，两种情况都有。后面这种咱们从 NVIDIA 控制面板就能看出来，默认就是电视机的那套设置，切换成显示器模式并使用 NVIDIA 颜色设置，输出动态范围改成 “ 完全 ” 后，画面鲜艳度也会明显会变好。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/633fe164-cc8e-425e-9fe2-2e36cc3ebb16.gif" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="336" src="//img1.mydrivers.com/img/20260508/S633fe164-cc8e-425e-9fe2-2e36cc3ebb16.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;其实这么多年下来英伟达也有改进过驱动，一开始你在 NVIDIA 控制面板甚至找不到地方改这个，只能用第三方工具或者修改注册表来开启完整范围色彩。后来在某个版本的驱动里，控制面板才加了官方的切换选项。&lt;/p&gt;
+&lt;p&gt;尽管如此，英伟达的判断逻辑一直没变，除非你在用 G-Sync 这种在白名单内的显示器，否则只要你的显示器有一点“电视嫌疑”，依旧会被 NVDIA 的显卡驱动默认判定成电视，也就逃不过手动修改设置这一步。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/8ff70b2a-8b76-4f75-bdba-7a194f24a86d.png" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="252" src="//img1.mydrivers.com/img/20260508/S8ff70b2a-8b76-4f75-bdba-7a194f24a86d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;特别是老旧的显示器型号，一是他们通常包含我之前说的那些信息，二是英伟达显然不太在乎这些型号在不在白名单里。&lt;/p&gt;
+&lt;p&gt;老黄想的应该是，万一有小白用户真拿 N 卡去接电视，如果是默认完全范围的话，只要低于 16 的黑就全变纯黑了，画面大概率会炸，那用户要是一个投诉电话想退货了咋整？&lt;/p&gt;
+&lt;p&gt;不如就保守一点，画面发灰总好过彻底不能看吧，反正懂电脑的也会自己翻设置。&lt;/p&gt;
+&lt;p&gt;讲道理老黄这波确实是犯懒了。因为与此同时，隔壁 AMD 早就实现了更智能的 EDID 探测，对于 PC 显示器对应特性的判断权重更高，以至于很多不明真相的用户从 N 卡换 A 卡甚至会以为 AMD 显卡色彩本来就更鲜艳一点。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/cc919f09-a89f-43c4-917d-286f48aeeb1d.png" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="364" src="//img1.mydrivers.com/img/20260508/Scc919f09-a89f-43c4-917d-286f48aeeb1d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而且 AMD 驱动默认就偏向于输出完全范围，要我说这才是更符合用户习惯的设置吧，毕竟就算是 HDMI，显卡连 PC 显示器的情况也明显更多，谁一天天的老拿显卡去接电视呢？&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260508/d8b9219f-eb8a-4cee-8b32-8596d4071168.jpg" target="_blank"&gt;&lt;img alt="2026年了 老黄还是没修好N卡这个bug" h="307" src="//img1.mydrivers.com/img/20260508/Sd8b9219f-eb8a-4cee-8b32-8596d4071168.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但要是从厂商角度说的话，英伟达和 AMD 的做法都有各自的道理，一个是为了兼容性和售后成本，采取保守策略；一个是考虑到多数用户的需求，直接不管那些可能存在的小众需求了，相对激进一点。&lt;/p&gt;
+&lt;p&gt;不知道大家觉得那种路子更好？我感觉多数人肯定是用脚投票更方便的一边，英伟达这驱动确实该好好改改了，哪怕弹个窗让用户确认下当前显示设备到底是啥，也比现在这种直观多了。&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 07 May 2026 16:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1qX19vdktoRldaODRvMHpqMFlpNk1tTlZ3TExrbVRuMlI3Z3dxVDBQNF9WanhRMjNlY3ZnWHlWWmZLNmY5blBtUWNIX1QzNnNsY3ZkWHVyTmc</guid></item><item><title>酷冷至尊elite 461系列机箱首发199元起：M-ATX海景房设计 - 驱动之家</title><link>https://news.mydrivers.com/1/1120/1120743.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技5月7日消息，&lt;strong&gt;酷冷至尊近日推出了新款Elite 461系列机箱，售价&lt;span&gt;199&lt;/span&gt;元起。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;该机箱采用双仓分区结构，将硬件区与布线区独立分隔，既保障了高效的气流通道，也实现了整洁的内部布局。&lt;/p&gt;
@@ -18,7 +62,69 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 07 May 2026 15:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE82Mm9sN18xajZUdm9nRXQ0ek04UmdmaTUyRUduR3NvVjVVVk9odHpheXlxVElGNHE5TUJCVTVfX1lKT2dTc2ZkMmRsaGhuY2k2X0J6MTd4LUw</guid></item><item><title>欧媒没证据恶意炒作，“中国逆变器能让全欧大停电” - 观察者</title><link>https://www.guancha.cn/internation/2026_05_07_816194.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 07 May 2026 15:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE82Mm9sN18xajZUdm9nRXQ0ek04UmdmaTUyRUduR3NvVjVVVk9odHpheXlxVElGNHE5TUJCVTVfX1lKT2dTc2ZkMmRsaGhuY2k2X0J6MTd4LUw</guid></item><item><title>AI新王诞生！Anthropic估值冲爆1.2万亿 首次反超OpenAI - 驱动之家</title><link>https://news.mydrivers.com/1/1120/1120740.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;AI新王诞生！Anthropic估值冲爆1.2万亿 首次反超OpenAI&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-05-07 23:09:31  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1120740-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技5月7日消息，据媒体报道，长期笼罩在OpenAI阴影下的“二号选手”Anthropic，&lt;strong&gt;近期在链上Pre-IPO市场的隐含估值骤然飙升至1.2万亿美元（约合人民币8.7万亿元）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;若Anthropic以这一估值顺利完成首次公开募股，它将直接跃升为全球第11大上市公司，缔造商业史上的新神话。&lt;/p&gt;
+&lt;p&gt;最新链上Pre-IPO交易数据显示，短短七天内，Anthropic估值暴涨20%，单周涨幅已相当于一家头部上市公司的体量。而自2025年10月以来，其估值曲线近乎垂直上升，累计实现了惊人的900%增长。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;尤为值得关注的是，Anthropic的估值已正式超越OpenAI，目前IPO前估值较后者高出约20%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;若按此估值上市，它将直接跻身全球市值第11大上市公司之列，&lt;strong&gt;仅次于苹果、微软、英伟达、亚马逊、Alphabet、Meta、台积电、博通、特斯拉与沙特阿美。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;就在三周前，这一数字还是9000亿美元。在AI霸主地位的激烈争夺中，Anthropic正迎来一次标志性的胜利。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260507/b187a29806cf4efb938d3c54a0500e81.png" target="_blank"&gt;&lt;img alt="AI新王诞生！Anthropic估值冲爆1.2万亿 首次反超OpenAI" h="305" src="//img1.mydrivers.com/img/20260507/s_b187a29806cf4efb938d3c54a0500e81.png" w="545"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 07 May 2026 15:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8tSzg4c1ItTTRaWVVVd202U3BrTEpqWW1TRW0zNUR0OUhlbm56Ulo2WHl4SDA2dXF1Nk9qTjQ5Zlk1N015bHpMMml1WmliVkZYV1JicDlOZzA</guid></item><item><title>欧媒没证据恶意炒作，“中国逆变器能让全欧大停电” - 观察者</title><link>https://www.guancha.cn/internation/2026_05_07_816194.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	【文/观察者网 熊超然】
 &lt;/p&gt;
@@ -482,7 +588,9 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 07 May 2026 10:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB4N0JtMkhzNGxVLW9ydXZoLUxlcTdOdlh2Z184eXVPaW94dUxFVXAzeXBPSjBjdHluQWhaZy0wb1dHWXh1c3Z3UWd1d1c2eVF1N3A5VFlpRjY</guid></item><item><title>雷军直呼不可思议：造车这五年自己做了很多无法想象的事情 - 驱动之家</title><link>https://news.mydrivers.com/1/1120/1120705.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 07 May 2026 10:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB4N0JtMkhzNGxVLW9ydXZoLUxlcTdOdlh2Z184eXVPaW94dUxFVXAzeXBPSjBjdHluQWhaZy0wb1dHWXh1c3Z3UWd1d1c2eVF1N3A5VFlpRjY</guid></item><item><title>欧盟若禁用中国电信设备 未来五年恐损3678亿欧元 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260507-9012886</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（巴黎/布鲁塞尔综合讯）中国欧盟商会一项研究称，如果欧盟按照布鲁塞尔提出的方案，将中国电信设备供应商排除出欧洲市场，欧盟27国到2030年可能面临高达3678亿欧元（5481亿新元）的累计经济损失。&lt;/p&gt;&lt;p&gt;综合法国国际广播电台中文网与路透社报道，上述星期三（5月6日）公布的研究，由国际咨询机构毕马威受中国欧盟商会委托完成，研究显示，欧盟相关措施一旦实施，德国将成为损失最严重的国家，预计损失超过1700亿欧元，占总额近一半；法国和意大利的损失分别约为463亿欧元和365亿欧元。&lt;/p&gt;&lt;p&gt;报告所估算的损失不仅涉及电信运营商，还涵盖整个经济体系，包括更换现有设备所产生的额外支出、转向价格更高且可能效率较低替代方案的成本，以及行政、法律费用和因强制过渡带来的延误。&lt;/p&gt;&lt;p&gt;能源和电信将是受影响最严重的两个行业，而这两个行业恰恰是欧盟数字化和绿色转型计划的支柱。&lt;/p&gt;&lt;p&gt;&lt;a href="/news/china/story20260427-8962003?ref=article-inline" target="_blank"&gt;欧盟委员会今年1月提议&lt;/a&gt;，在修订《欧盟网络安全法》过程中，允许欧盟范围内禁用被认定对网络安全构成风险的外国电信设备供应商，包括中国企业华为与中兴通讯。 &lt;/p&gt;
+    
+  &lt;p&gt;中国驻欧盟使团4月29日在布鲁塞尔一场会议上警告，如果欧盟坚持推进这一提案，“中方将不得不采取对等反制措施，对欧盟及企业作出回应”。&lt;/p&gt;&lt;p&gt;欧盟委员会一名发言人星期一（5月4日）称，已建议成员国将华为和中兴的设备排除在当地电信运营商的连接基础设施之外。 &lt;/p&gt;&lt;p&gt;欧洲多个国家及英国目前已限制在电信网络关键环节使用华为设备，理由是华为与中国政府的关系可能构成安全风险。 &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Thu, 07 May 2026 10:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1Vanh2RlBqX0Q2bHJPX1BJTXFldndFMXZwNkNxd0lEUGlJeUN1VlBpT1dJMHRVdmttYm1LcEhjaDhvVWo0TzBGR2dJTXNKV0FaaE13ZDI2UEpfaFhXR0xJZHNpekZOblE5ZWc</guid></item><item><title>雷军直呼不可思议：造车这五年自己做了很多无法想象的事情 - 驱动之家</title><link>https://news.mydrivers.com/1/1120/1120705.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;雷军直呼不可思议：造车这五年自己做了很多无法想象的事情&lt;/p&gt;
           
@@ -4113,227 +4221,4 @@ https://www.qianwen.com/&lt;/p&gt;
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 06 May 2026 22:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE91QjJ6ZmtwZWJYWTZFQ0RrZHRNYUM1R1REWXhrdU5sbFhZd3VvVkVMSGRJSUVvMmpuUmI5enJaYVJ4VVJNX0hZd1k1NkxNTXVFdjRfaGUtV08</guid></item><item><title>三星：停止在中国大陆销售所有家电产品-观察者网 - guancha.cn</title><link>https://www.guancha.cn/GongSi/2026_05_07_816078.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	5月6日，三星电子官网发布通知称，为应对急剧变化的市场环境，经慎重研究，三星电子决定在中国大陆市场停止销售含电视、显示器在内的所有家电产品。
-&lt;/p&gt;
-&lt;p&gt;
-	针对已购买三星家电产品的用户，公司仍将严格按照《消费者权益保护法》、国家三包规定等相关法律法规，继续为用户提供规范的售后服务，保障用户合法权益不受影响。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/dfic/2026/05/07/20260507060937277.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	&lt;span&gt; 三星电子官网截图&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	三星电子表示，停止销售的产品包括电视、显示器、大型商用显示器、空调、冰箱、洗衣机、干衣机、洗衣干衣一体机、衣物护理机、音响、投影仪、吸尘器、空气净化器等所有家用电器。
-&lt;/p&gt;
-&lt;p&gt;
-	针对手机业务是否也会退出中国，三星表示，手机产品正常销售。
-&lt;/p&gt;
-&lt;p&gt;
-	关于最近购买的产品是否可以退机，三星电子称，即使停止销售，仍将继续提供售后服务，若使用中出现性能故障，可通过授权服务中心检测排查，会严格按照三包规定给予相应处理。
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Wed, 06 May 2026 22:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiY0FVX3lxTE9LMkRVMmRRYU5vczZKRXFwMkhSZEVKa0VyZ0o0aHo5NlZsLXAxQU44UEJqVWFORmhiUmxwQUFXdTJXb1ZlQnJVTlpTdDlRaENZRGxIUlFiZkdYRGtvSEFWYTNkWQ</guid></item><item><title>Anthropic CEO：第一季度实现80倍增长，解释了“算力困难” - 新浪财经</title><link>https://finance.sina.com.cn/world/2026-05-07/doc-inhwzfct3019838.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    
-&lt;p&gt;　　Anthropic CEO Dario Amodei 表示，他的公司本计划应对10倍的增长。但在第一季度，按年化计算，收入和实际使用量增长了80倍。他说，这正是公司为什么一直难以满足需求的原因。&lt;/p&gt;
-&lt;p&gt;　　“这就是我们在算力方面遇到困难的原因，”Amodei周三在旧金山举行的公司开发者大会上表示。他补充说，公司“正在尽快地提供更多”容量，并“将尽快把这些算力传递给你们”。&lt;/p&gt;
-&lt;p&gt;　　Amodei发表上述言论的几小时前，Anthropic刚刚宣布与埃隆·马斯克的SpaceX达成协议，将使用后者位于田纳西州孟菲斯市的Colossus 1数据中心的全部算力。作为协议的一部分，Anthropic将获得超过300兆瓦的算力。SpaceX拥有竞争对手AI实验室xAI（现称为SpaceXAI）。&lt;/p&gt;
-&lt;p&gt;　　Anthropic的历史性增长得益于其Claude AI模型的受欢迎程度，并且自去年推出Claude Code以来，增长尤为显著——该产品在软件开发领域引起了轰动。此前报道，该公司目前正与投资者洽谈，寻求以9000亿美元的估值融资，这将使其估值超过OpenAI。&lt;/p&gt;
-&lt;p&gt;　　“软件工程师是最快采用新技术的人群，”Amodei在台上说。“这预示着整个经济将如何运转，以及经济将如何被人工智能所改变。”&lt;/p&gt;
-&lt;p&gt;　　上个月，Anthropic表示，对Claude的需求已导致“我们的基础设施面临不可避免的压力”，影响了用户（尤其是在高峰时段）的“可靠性和性能”。该公司最近几周已签署多项算力协议，包括与亚马逊达成的数十亿美元协议。&lt;/p&gt;
-&lt;p&gt;　　与此同时，Anthropic一直在应对与美国政府和五角大楼之间充满争议的关系。五角大楼于今年3月宣布该公司为供应链风险企业，将其列入黑名单，禁止其与军方合作。随着这场纠纷进入法律程序，Anthropic反而变得越来越受欢迎。&lt;/p&gt;
-&lt;p&gt;　　Amodei表示，目前的增长水平“简直疯狂”，“难以应对”，他对听众表示，希望未来的扩张能“更正常一些”。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 06 May 2026 22:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE9tVXpzWV8zWEFQQXN4X3FLZERyNERzNVFOWlNUU0drQU5JTnRidmRVMmFUbzZKSnhOaTZpQlJ2Mm1HcVlma0dhUVVESVJwa21JMzM5NXV2T2NLNVVHa043bVhnem5MSl8wcWw4NUEzR3JXVzRmaE0zeUl3</guid></item><item><title>中国的势力范围，在这张图上小得可怜！ - 文学城</title><link>https://www.wenxuecity.com/news/2026/05/06/126641019.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="small-font"&gt;
-            &lt;img src="/data/news/202605/06/dfacc8ac97c2c0c87d20cf324455c94a.webp" alt="中国的势力范围，在这张图上小得可怜！"&gt;
-&lt;img src="/data/news/202605/06/7a1aeb46f6cac9f0ffe51dd44462a30d.webp"&gt;
-&lt;strong&gt;地球知识局&lt;/strong&gt;&lt;p&gt;
-文字 | 绯红之猪&lt;/p&gt;&lt;p&gt;
-校对 | 朝乾   编辑 | 桐
-&lt;/p&gt;&lt;img src="/data/news/202605/06/4fdc0aa642bd11c0cd2cb1b7ebe2b732.webp"&gt;&lt;p&gt;
-最近，我们详细研究了一下全球海底光缆分布，一大感受便是在如此重要的领域，&lt;/p&gt;&lt;strong&gt;中国的存在感小得可怜。&lt;/strong&gt;&lt;p&gt;
-国内舆论关心海底光缆，很大程度是因为前段时间中东，特别是霍尔木兹海峡那一块打成了一锅粥。&lt;/p&gt;&lt;p&gt;
-过去往来畅通无阻的霍尔木兹海峡遭到封锁，多艘油轮被袭击。&lt;/p&gt;&lt;p&gt;
-除了石油与天然气，&lt;/p&gt;&lt;strong&gt;霍尔木兹海峡还攥着另一个可以控制全球的“命根子”——海底光缆&lt;/strong&gt;&lt;p&gt;，而现在也跟油轮一样受到威胁。&lt;/p&gt;&lt;p&gt;
-一个霍尔木兹，关系着许多重要资源&lt;/p&gt;&lt;p&gt;
-（图：genevasolutions.news）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/0e7a4797a994fd439e2aa79acf4123b3.webp"&gt;&lt;p&gt;
-海底光缆可以看做连接全球加长加粗网线Pro Max版，大家之所以能访问全球的网站，主要靠的就是海底光缆这张大网。&lt;/p&gt;&lt;p&gt;
-海底光缆到底有多重要？&lt;/p&gt;&lt;p&gt;
-全世界近99%的国际通信数据、每天超过10万亿美元的交易额，基本全靠这玩意儿来传输。也就是说，“国际互联网”实际上是靠海底光缆连起来的。&lt;/p&gt;&lt;p&gt;
-海底光缆在通讯品质和速度方面有着明显的优势&lt;/p&gt;&lt;p&gt;
-（光缆截面，图：壹图网）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/67a2a2444e5b73c1dd6c74081d7eb09f.webp"&gt;&lt;p&gt;
-不少人这才意识到，国际互联网、全球金融与数字贸易、数据通信其实是靠海底光缆为基础，而中国在这个领域占比又极小。
-&lt;/p&gt;&lt;img src="/data/news/202605/06/41dec43b159754ecc12231632426d365.webp"&gt;
-&lt;strong&gt;五大主干廊道&lt;/strong&gt;&lt;p&gt;
-这是全球海底光缆的分布图，目前正在用的有&lt;/p&gt;&lt;strong&gt;570多条，总长度超过150万公里&lt;/strong&gt;&lt;p&gt;，抻直了，足够绕赤道三十多圈。&lt;/p&gt;&lt;p&gt;
-全球海底光缆分布情况&lt;/p&gt;&lt;p&gt;
-（图：subtelforum.com，竖屏查看）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/66545210c524a3ab69689969ee5d9281.webp"&gt;&lt;p&gt;
-其中最密集的五大主干廊道是：
-&lt;/p&gt;&lt;strong&gt;马六甲海峡—新加坡海峡—中国南海—中国东海—菲律宾海北部；&lt;/strong&gt;
-&lt;strong&gt;阿拉伯海—亚丁湾—红海—苏伊士湾—地中海；&lt;/strong&gt;&lt;p&gt;
-还有&lt;/p&gt;&lt;strong&gt;跨北太平洋、北大西洋和印度洋&lt;/strong&gt;&lt;p&gt;的三条跨洋廊道。&lt;/p&gt;&lt;p&gt;
-这五条廊道，共同组成了连接全球的信息主动脉。&lt;/p&gt;&lt;p&gt;
-这些廊道上，存在一系列&lt;/p&gt;&lt;strong&gt;关键节点&lt;/strong&gt;&lt;p&gt;，如新加坡、香港、关岛、夏威夷、吉布提等地，一旦遭受攻击，就会威胁到全球网络安全。&lt;/p&gt;&lt;p&gt;
-看似不起眼的小国吉布提&lt;/p&gt;&lt;p&gt;
-却是连接着众多海底光缆的重要节点所在&lt;/p&gt;&lt;p&gt;
-（图：subtelforum.com）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/e484a03209b0ead286e149b6a5409b0b.webp"&gt;&lt;p&gt;
-尤其是岛国，&lt;/p&gt;&lt;strong&gt;海底光缆甚至是命根子&lt;/strong&gt;&lt;p&gt;。只要一断，它们就会在国际互联网中消失——内部局域网或许还能运转，但外面发生什么就完全不知道了。&lt;/p&gt;&lt;p&gt;
-2022年，南太平洋岛国汤加的海底火山爆发，破坏了该国唯一一条国际海底光缆，&lt;/p&gt;&lt;strong&gt;全国因此断网38天&lt;/strong&gt;&lt;p&gt;。实际上，都不需要火山爆发、地震海啸这种小概率事件，船锚和拖网都有可能把海底光缆弄断。&lt;/p&gt;&lt;p&gt;
-这次强烈的火山喷发引发了全世界的关注&lt;/p&gt;&lt;p&gt;
-（卫星记录下的喷发影像，图：Wiki）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/d4ca851255cf980a4d814dd51bd2f900.gif"&gt;&lt;p&gt;
-海底光缆一旦断裂，&lt;/p&gt;&lt;strong&gt;维修起来就非常麻烦&lt;/strong&gt;&lt;p&gt;。要先找到断点到底在哪儿，把海缆维修船开过去、捞起断裂的海缆，接上以后再重新沉入海底。&lt;/p&gt;&lt;p&gt;
-海底光缆是岛国的命根子，那对于中国这种大陆国家呢？我国目前已经在俄罗斯/蒙古、东盟、中亚、南亚、东北亚&lt;/p&gt;&lt;strong&gt;五个方向上建成了跨境陆地光缆系统&lt;/strong&gt;&lt;p&gt;，不完全依赖海底光缆。&lt;/p&gt;&lt;p&gt;
-但地球毕竟是个“水球”，再广阔的大陆本质上也是“岛”，&lt;/p&gt;&lt;strong&gt;80亿人口是分散在大大小小的“岛”上的&lt;/strong&gt;&lt;p&gt;，控制海底光缆的重要性不言而喻。&lt;/p&gt;&lt;p&gt;
-位于关岛附近的跨太平洋海底通信电缆&lt;/p&gt;&lt;p&gt;
-（图：壹图网）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/f983a5ab729b57edf573464d7b50ba0f.webp"&gt;
-&lt;img src="/data/news/202605/06/41dec43b159754ecc12231632426d365.webp"&gt;
-&lt;strong&gt;牌桌上的新玩家&lt;/strong&gt;&lt;p&gt;
-海底光缆不仅具有极高的战略价值，也是一项技术密集型的高端产业。产业链环节多、链条长、门槛高，从光缆制造到海底勘测、从海洋施工到维护，多条技术线同时拉满。&lt;/p&gt;&lt;p&gt;
-因为这玩意儿要在深海的严酷环境下服役至少25年，还必须兼顾数据传输能力，就必须&lt;/p&gt;&lt;strong&gt;高带宽、低损耗&lt;/strong&gt;&lt;p&gt;。&lt;/p&gt;&lt;p&gt;
-海缆的铺设及后期维护需要投入不少人力、物力、财力&lt;/p&gt;&lt;p&gt;
-（铺设用的履带式切割机，图：壹图网）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/5b543693323db71f68e002535dc5994e.webp"&gt;&lt;p&gt;
-正因如此，目前全球有能力“一条龙”解决海底光缆的企业只有四家——&lt;/p&gt;&lt;strong&gt;美国的SubCom、法国的ASN、日本的NEC和我国的华海通信。&lt;/strong&gt;&lt;p&gt;
-华海通信的前身是华为海洋网络，成立于2008年，到2020年已经成长为&lt;/p&gt;&lt;strong&gt;全球第四大海底光缆工程商&lt;/strong&gt;&lt;p&gt;，市场份额超10%，接下了不少重要订单。&lt;/p&gt;&lt;p&gt;
-然而，2019年美国政府将华为列入出口管制的实体清单，华为被迫将大部分股权&lt;/p&gt;&lt;strong&gt;出售给了另一家中企亨通光电&lt;/strong&gt;&lt;p&gt;。股权变更后，换成了现在的名字。&lt;/p&gt;&lt;p&gt;
-华海通信承建的马尔代夫国内骨干海缆系统施工现场&lt;/p&gt;&lt;p&gt;
-（图：hmntech.com）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/b8ab0d585977431077aec452e847804a.webp"&gt;&lt;p&gt;
-截至2025年，华海通信累计&lt;/p&gt;&lt;strong&gt;新建海底光缆超13万公里&lt;/strong&gt;&lt;p&gt;，在这个玩家如凤毛麟角的领域，争得了上桌叫牌的资格。&lt;/p&gt;&lt;p&gt;
-虽然上了桌，却并不安稳，&lt;/p&gt;&lt;strong&gt;因为美国总想把我们踢出去。&lt;/strong&gt;&lt;p&gt;
-究其原因，无非是想把这块蛋糕牢牢抓在自家与盟友手里。在美国看来，海底光缆是一种掌控地缘政治与“数字主权”的重要工具。&lt;/p&gt;&lt;p&gt;
-2012~2014年间，美国国家安全局与丹麦合作，发起了一项“邓哈默行动”，监控德国、法国、挪威和瑞典等国&lt;/p&gt;&lt;strong&gt;高级官员的电子邮件、电话与短信&lt;/strong&gt;&lt;p&gt;，甚至连德国总理默克尔也被监听了。&lt;/p&gt;&lt;p&gt;
-美国政府的监控行为曝光后，引发了国内外民众的抗议&lt;/p&gt;&lt;p&gt;
-（图：壹图网）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/15c024a6a64003dbe48619b5a1cf270b.webp"&gt;&lt;p&gt;
-这项行动成功的关键，是&lt;/p&gt;&lt;strong&gt;丹麦拥有连接上述国家海底光缆的登陆站点。&lt;/strong&gt;&lt;p&gt;
-“邓哈默行动”还只是冰山一角，美国还利用北大西洋、北太平洋海底光缆的重要站点，建立了7个监听站，&lt;/p&gt;&lt;strong&gt;对全球互联网实行无差别监听&lt;/strong&gt;&lt;p&gt;。&lt;/p&gt;&lt;p&gt;
-这就是为啥美国要不惜任何代价把中国企业踢出去。海底光缆要是让老中建了，还怎么搞监听？&lt;/p&gt;&lt;p&gt;
-早在特朗普的第一任期内，美国政府就提出了“清洁网络”计划，联合多个国家与电信运营商，&lt;/p&gt;&lt;strong&gt;限制中企参与海底光缆项目。&lt;/strong&gt;&lt;p&gt;
-2023~2025年间，美国国会先后通过了《海底光缆管制法案》和《海底光缆安全与保护法案》，把一大摞中国相关企业列入“实体清单”，&lt;/p&gt;&lt;strong&gt;禁止中国企业参与的海底光缆项目登陆美国&lt;/strong&gt;&lt;p&gt;，并对其他国家施压，要求它们&lt;/p&gt;&lt;strong&gt;不得与中企合作。&lt;/strong&gt;&lt;p&gt;
-《海底光缆管制法案》旨在从技术 、设备等方面下手&lt;/p&gt;&lt;p&gt;
-全方位限制“敌对势力”在海底光缆领域的发展及合作&lt;/p&gt;&lt;p&gt;
-（图：congress.gov）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/f1e71041bfb31e202df308f665fe2b34.webp"&gt;&lt;p&gt;
-可以说，老美对中国织起了天罗地网。而中国的破局思路，可以总结为&lt;/p&gt;&lt;strong&gt;“向北防御、向南发展”&lt;/strong&gt;&lt;p&gt;，目标就是南方的穷哥们儿。
-&lt;/p&gt;&lt;img src="/data/news/202605/06/41dec43b159754ecc12231632426d365.webp"&gt;
-&lt;strong&gt;向北防御、向南发展&lt;/strong&gt;&lt;p&gt;
-全球200多个国家和地区中，内陆国仅有44个，除此之外的150多个沿海国家，原则上都可以通过海底光缆接入国际互联网。&lt;/p&gt;&lt;p&gt;
-然而，海底光缆的分布极不平衡，发达国家与发展中国家 “旱的旱死、涝的涝死”。&lt;/p&gt;&lt;p&gt;
-非洲和拉美国家网速慢、上网贵的一个重要原因正是接入海底光缆的&lt;/p&gt;&lt;strong&gt;登陆节点太少&lt;/strong&gt;&lt;p&gt;，国际带宽供给长期不足。&lt;/p&gt;&lt;p&gt;
-对非洲人来说，家庭网络的费用是难以负担的&lt;/p&gt;&lt;p&gt;
-他们往往会去网吧解决自己的用网需求&lt;/p&gt;&lt;p&gt;
-（一家肯尼亚网吧，图：壹图网）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/6bb6b49618513289a227ad88f46314e9.webp"&gt;&lt;p&gt;
-为缓解这一瓶颈，环绕非洲的2Africa项目东段——南非—肯尼亚—吉布提段，以及马赛—埃及段，已开通运行。&lt;/p&gt;&lt;p&gt;
-未来，这条全长4.5万公里的海底光缆，&lt;/p&gt;&lt;strong&gt;将非洲与欧亚33个国家和地区紧密连接，覆盖人口超过30亿&lt;/strong&gt;&lt;p&gt;。中国移动作为联合发起者之一，深度参与项目建设。&lt;/p&gt;&lt;p&gt;
-2Africa海底光缆几乎环绕了整个非洲&lt;/p&gt;&lt;p&gt;
-并且也连接到了欧洲和亚洲&lt;/p&gt;&lt;p&gt;
-（图：subtelforum.com）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/166d062635d78ae47a8c3116aa995dce.webp"&gt;&lt;p&gt;
-很多人以为，主导全球海底光缆建设的主角仍是传统电信运营商或各国政府。但实际情况早已发生转变——Meta、谷歌、微软、亚马逊等互联网巨头，已成为最主要的投资方。&lt;/p&gt;&lt;p&gt;
-巨头们正在全球布局数据中心、训练AI大模型，海量数据传输完全依赖海底光缆。而现有光缆，在传输速度、带宽和延迟上，早已捉襟见肘，这迫使&lt;/p&gt;&lt;strong&gt;巨头们疯狂砸钱铺设新缆&lt;/strong&gt;&lt;p&gt;。&lt;/p&gt;&lt;p&gt;
-但它们通常不会亲自施工，而是&lt;/p&gt;&lt;strong&gt;将项目分包给专业海缆企业&lt;/strong&gt;&lt;p&gt;，这造就了一个巨大的增量市场。&lt;/p&gt;&lt;p&gt;
-例如南美洲的Malbec海底光缆&lt;/p&gt;&lt;p&gt;
-就是由Meta与数字化基础设施平台V.tal合作建设的&lt;/p&gt;&lt;p&gt;
-（Malbec铺设现场，图：engineering.fb.com）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/a060857a4ada5c9230fdd0cca4b4a0ef.webp"&gt;&lt;p&gt;
-更重要的是，海底光缆设计寿命一般为25年左右。1998年以前建成的老光缆，已有82条达到或超过服役年限，&lt;/p&gt;&lt;strong&gt;全部需要更新&lt;/strong&gt;&lt;p&gt;；未来10年内，1999-2008年建设的&lt;/p&gt;&lt;strong&gt;148条光缆也将陆续退役&lt;/strong&gt;&lt;p&gt;。&lt;/p&gt;&lt;p&gt;
-一方面是带宽需求暴增；另一方面，中国企业在交付能力、技术成熟度和成本竞争力上也有全面提升。&lt;/p&gt;&lt;p&gt;
-中国企业顶着美国的制裁，&lt;/p&gt;&lt;strong&gt;跑通了海底光缆铺设的全链路&lt;/strong&gt;&lt;p&gt;，就连海缆施工船和水下机器人，未来也将实现国产化替代。&lt;/p&gt;&lt;p&gt;
-如果单从商业角度看，中国企业在这轮海缆建设热潮中的前景无疑是光明的。&lt;/p&gt;&lt;p&gt;
-中国自主研发的国内最大载缆量海缆施工船“启帆19号”&lt;/p&gt;&lt;p&gt;
-（图：sasac.gov.cn）▼
-&lt;/p&gt;&lt;img src="/data/news/202605/06/2b5a288601e5d8d4aa0d6a85f70421ab.webp"&gt;&lt;p&gt;
-但隐忧在于地缘政治风险：部分西方国家动辄以“安全”为由，通过技术封锁和小圈子联盟，&lt;/p&gt;&lt;strong&gt;试图将中国企业排除在关键项目之外。&lt;/strong&gt;&lt;p&gt;
-目前海底光缆的争夺早已超出商业范畴，成为了大国数字主权的博弈场。谁能以更开放、更包容的方式提供高性价比的连接，谁就更能&lt;/p&gt;&lt;strong&gt;赢得发展中国家的信任与市场。&lt;/strong&gt;
-&lt;img src="/data/news/202605/06/cc3d651d940ebb1d8ee211f328e6da98.webp"&gt;&lt;p&gt;
-1、《智利谴责美国对智利官员实施签证制裁》&lt;/p&gt;&lt;p&gt;
-2、《揭秘互联网的维修工：那些修复海底光缆的人》&lt;/p&gt;&lt;p&gt;
-3、《一文读懂海底光缆的损坏与修复》&lt;/p&gt;&lt;p&gt;
-4、《“美国的监听令人感到震惊和气愤”》&lt;/p&gt;&lt;p&gt;
-5、《海底的大国博弈》&lt;/p&gt;&lt;p&gt;
-6、《大国博弈背景下，我国通信海缆产业发展机遇和挑战》&lt;/p&gt;&lt;p&gt;
-7、《跨洋海底光缆项目东段取得阶段性进展——非洲加快推动数字化转型》&lt;/p&gt;&lt;p&gt;
-8、《谷歌、亚马逊掀起“海底暗战”，中国企业不应缺席》&lt;/p&gt;&lt;p&gt;
-9、《“一带一路”新算力基建需求爆发 在沪央企启动跨洋海缆项目 | 上海加速跑》&lt;/p&gt;&lt;p&gt;
-*本文内容为作者提供，不代表地球知识局立场
-
-        &lt;/p&gt;&lt;/div&gt;
-            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>文学城</author><pubDate>Wed, 06 May 2026 21:39:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiaEFVX3lxTFBpeE10SXJHajF4dnVLLVlXTmNwbTF1anNCcU9Id2RxdDZlXzhXRWlyNHFOSGp1U0taU29rbS1Vb3FjNmZ4OUVCQkFubDNOLWVrRDV3OC00Sk5ZV3FuMmp3VW5ZNVJuZFpH</guid></item><item><title>Arm Q4财季营收同比增长20.2%，AGI CPU的需求超20亿美元｜财报见闻 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3771695</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 06 May 2026 21:11:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE44Rm1KeXY5VFZ6Q29YODVsb0RwZE9va3k3TF9ZZGN5bHpMM3Q5bDZuOWFlbDRsTFY4RjFNUGEtVnd2X3QzYTB0SHROX25mc2t6Ym9j</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 06 May 2026 22:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE91QjJ6ZmtwZWJYWTZFQ0RrZHRNYUM1R1REWXhrdU5sbFhZd3VvVkVMSGRJSUVvMmpuUmI5enJaYVJ4VVJNX0hZd1k1NkxNTXVFdjRfaGUtV08</guid></item></channel></rss>
