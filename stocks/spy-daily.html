@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPY Daily Explorer</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <style>
+    /* Design Tokens & Theme Setup */
+    :root {
+      color-scheme: light;
+      --bg-color: #fafafa;
+      --card-bg: #ffffff;
+      --text-primary: #18181b;     /* Zinc 900 */
+      --text-secondary: #4b5563;   /* Gray 600 */
+      --text-muted: #8e98a5;       /* Gray 400 */
+      --border-light: #e4e4e7;     /* Zinc 200 */
+      --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --transition-smooth: all 0.2s ease;
+      
+      /* Colors */
+      --red-soft: rgba(169, 58, 50, 0.14); /* Low saturated red background */
+      --red-text: #a93a32;
+      --green-soft: rgba(35, 123, 83, 0.14); /* Low saturated green background */
+      --green-text: #237b53;
+      --line: #18181b;
+      --grid: #e4e9ed;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-secondary);
+      font-family: var(--font-stack);
+      line-height: 1.6;
+      padding: 2rem 1.5rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Actions Toolbar */
+    .actions-wrapper {
+      max-width: min(1500px, calc(100vw - 48px));
+      margin: 0 auto 1.25rem auto;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .btn-back:hover {
+      color: var(--text-primary);
+      border-color: #a1a1aa;
+      background-color: #f4f4f5;
+    }
+    .btn-back svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* Original Page Layout Width */
+    main {
+      max-width: min(1500px, calc(100vw - 48px));
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 5px;
+    }
+    .header-info {
+      flex-grow: 1;
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .header-source {
+      text-align: right;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      line-height: 1.45;
+      white-space: nowrap;
+    }
+
+    /* Robust Flexbox Layout for height alignment */
+    .top-grid {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    /* Individual Card Layout (Contiguous base) */
+    .pe-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-light);
+      border-radius: 0;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.01);
+      transition: var(--transition-smooth);
+    }
+    .pe-card:hover {
+      position: relative;
+      z-index: 1;
+      border-color: #a1a1aa;
+      box-shadow: 0 4px 12px rgba(24, 24, 26, 0.04);
+    }
+
+    /* Left Sidebar Panel */
+    .controls {
+      width: 390px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Left Stack Contiguous Overlaps */
+    .top-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+    }
+    .top-stack .pe-card {
+      margin-bottom: -1px;
+    }
+    .top-stack .pe-card:first-child {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .top-stack .pe-card:last-child {
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      margin-bottom: 0;
+    }
+
+    /* Title card specifics */
+    .info-card h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* Loading / Error Alerts */
+    .status {
+      font-size: 0.85rem;
+      padding: 10px 12px;
+      border-radius: 6px;
+      background-color: #f4f4f5;
+      border: 1px solid var(--border-light);
+      color: var(--text-primary);
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+    .status.error {
+      background-color: #fef2f2;
+      border-color: #fca5a5;
+      color: #991b1b;
+    }
+
+    /* Input Styling */
+    .field {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    .field label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .field label output {
+      font-weight: 700;
+    }
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--text-primary);
+      margin: 8px 0;
+      cursor: pointer;
+    }
+    .help-text {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.35;
+    }
+
+    /* Stats Grid inside Left Panel */
+    .stats-card h3 {
+      margin: 0 0 12px 0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-primary);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      border-bottom: 1px solid #f4f4f5;
+      font-size: 0.85rem;
+    }
+    .stat-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .stat-label {
+      color: var(--text-secondary);
+    }
+    .stat-value {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* Right Column Dashboard */
+    .dashboard {
+      flex-grow: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .dashboard .pe-card {
+      margin-bottom: -1px;
+    }
+    .dashboard .pe-card:first-child {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .dashboard .pe-card:last-child {
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      margin-bottom: 0;
+    }
+
+    .chart-panel h2,
+    .table-panel h2 {
+      margin: 0 0 12px 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chart-panel {
+      position: relative;
+    }
+    .canvas-container {
+      width: 100%;
+      height: 380px;
+      position: relative;
+      background: #ffffff;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Table Panel Specifics */
+    .table-panel {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 320px;
+    }
+    .table-scroll-wrapper {
+      max-height: 280px;
+      overflow-y: auto;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.85rem;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background-color: #f8f9fa;
+      color: var(--text-primary);
+      font-weight: 600;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-light);
+      z-index: 2;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f4f4f5;
+      color: var(--text-secondary);
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+    tr:hover td {
+      background-color: #fafafa;
+    }
+
+    /* Colored badge styling for table cells */
+    .change-badge {
+      display: inline-block;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+    .change-badge.up {
+      color: var(--green-text);
+      background-color: var(--green-soft);
+    }
+    .change-badge.down {
+      color: var(--red-text);
+      background-color: var(--red-soft);
+    }
+    .change-badge.flat {
+      color: var(--text-secondary);
+      background-color: #f4f4f5;
+    }
+
+    /* Custom scrollbars */
+    .table-scroll-wrapper::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .table-scroll-wrapper::-webkit-scrollbar-track {
+      background: #f8f9fa;
+    }
+    .table-scroll-wrapper::-webkit-scrollbar-thumb {
+      background: #ccd5dc;
+      border-radius: 3px;
+    }
+    .table-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+      background: #a1a1aa;
+    }
+
+    /* Tooltip styling */
+    .chart-tooltip {
+      position: absolute;
+      z-index: 5;
+      min-width: 190px;
+      max-width: min(280px, calc(100vw - 48px));
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      color: var(--text-primary);
+      font-size: 0.75rem;
+      line-height: 1.35;
+      padding: 10px 12px;
+      pointer-events: none;
+      transform: translateY(-50%);
+      font-family: var(--font-stack);
+    }
+    .chart-tooltip[hidden] {
+      display: none;
+    }
+    .chart-tooltip strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.8rem;
+      color: var(--text-primary);
+    }
+    .chart-tooltip dl {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 14px;
+      margin: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .chart-tooltip dt {
+      color: var(--text-secondary);
+    }
+    .chart-tooltip dd {
+      margin: 0;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    /* Responsive Breakpoint */
+    @media (max-width: 992px) {
+      body {
+        padding: 1rem 0.75rem;
+      }
+      .actions-wrapper {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      main {
+        max-width: 100%;
+        gap: 16px;
+      }
+      header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+      }
+      .header-source {
+        text-align: left;
+      }
+      .top-grid {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+      }
+      .controls {
+        width: 100%;
+      }
+      .top-stack .pe-card,
+      .dashboard .pe-card {
+        border-radius: 12px !important;
+        margin-bottom: 16px !important;
+      }
+      .top-stack .pe-card:last-child,
+      .dashboard .pe-card:last-child {
+        margin-bottom: 0 !important;
+      }
+      .table-scroll-wrapper {
+        max-height: none;
+        overflow-y: visible;
+      }
+      .canvas-container {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Action Toolbar -->
+  <div class="actions-wrapper">
+    <a href="../index.html" class="btn-back">
+      <svg viewBox="0 0 24 24">
+        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+      </svg>
+      Back to Home
+    </a>
+  </div>
+
+  <main>
+    <!-- Header Summary Block -->
+    <header class="header-panel">
+      <div class="header-info">
+        <h1>SPY Daily Explorer</h1>
+        <p class="subtitle">Analyze daily SPY movements and inspect historical volatility relative to a customized return threshold.</p>
+      </div>
+      <div class="header-source">
+        Refreshed via Yahoo Finance<br/>
+        Asset Class: US Large Cap Equity
+      </div>
+    </header>
+
+    <!-- Top Grid Section -->
+    <div class="top-grid">
+      <!-- Left Controls Stack -->
+      <aside class="controls">
+        <div class="top-stack">
+          <!-- Info / Loading status -->
+          <section class="pe-card info-card">
+            <h2>Instrument: SPY</h2>
+            <p class="subtitle" style="font-size: 0.8rem; margin-bottom: 10px;">SPDR S&P 500 ETF Trust</p>
+            <div id="dataStatus" class="status">Initializing daily close prices...</div>
+          </section>
+
+          <!-- Slider 1: Return Threshold -->
+          <section class="pe-card">
+            <div class="field">
+              <label for="thresholdSlider">
+                <span>Daily Return Threshold</span>
+                <output id="thresholdOutput">+0.0%</output>
+              </label>
+              <input type="range" id="thresholdSlider" min="-2.0" max="2.0" step="0.1" value="0.0" />
+              <p class="help-text">Color trading days red if close return is &lt; threshold, or green if return is &ge; threshold.</p>
+            </div>
+          </section>
+
+          <!-- Slider 2: Chart History Length -->
+          <section class="pe-card">
+            <div class="field">
+              <label for="historySlider">
+                <span>Chart History Length</span>
+                <output id="historyOutput">5 years</output>
+              </label>
+              <input type="range" id="historySlider" min="1" max="30" step="1" value="5" />
+              <p class="help-text">Tune the trailing window size of historical daily trading sessions shown (in years).</p>
+            </div>
+          </section>
+
+          <!-- Section 3: Summary Statistics -->
+          <section class="pe-card stats-card">
+            <h3>Summary (Selected History)</h3>
+            <div class="stats-grid">
+              <div class="stat-row">
+                <span class="stat-label">Total Trading Days</span>
+                <span class="stat-value" id="statTotalDays">-</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">Days &ge; Threshold (Green)</span>
+                <span class="stat-value" id="statGreenDays">-</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">Days &lt; Threshold (Red)</span>
+                <span class="stat-value" id="statRedDays">-</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">Green Day Ratio</span>
+                <span class="stat-value" id="statGreenRatio">-</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <!-- Right Dashboard Stack -->
+      <section class="dashboard">
+        <!-- Card 1: Interactive Chart -->
+        <article class="pe-card chart-panel">
+          <h2>
+            <span>Historical SPY Close Price Chart</span>
+            <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);" id="chartDateRange"></span>
+          </h2>
+          <div class="canvas-container" id="canvasContainer">
+            <canvas id="priceChart"></canvas>
+            <div class="chart-tooltip" id="chartTooltip" hidden></div>
+          </div>
+        </article>
+
+        <!-- Card 2: Interactive Table -->
+        <article class="pe-card table-panel">
+          <h2 id="tableTitle">Daily Prices &amp; Returns Detail</h2>
+          <div class="table-scroll-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th style="text-align: right;">SPY Close Price</th>
+                  <th style="text-align: right;">Daily Change</th>
+                  <th style="text-align: center;">Threshold Match</th>
+                </tr>
+              </thead>
+              <tbody id="priceTableBody">
+                <tr>
+                  <td colspan="4" style="text-align: center; color: var(--text-muted); padding: 40px 0;">
+                    Waiting for SPY price historical data...
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // State and Configuration
+    const CACHE_VERSION = 'v2';
+    const CACHE_TTL_MS = 4 * 60 * 60 * 1000; // 4 hours
+    const CACHE_KEY = `spy-daily:yahoo-close:${CACHE_VERSION}:SPY`;
+    const ticker = 'SPY';
+
+    let allPrices = []; // Array of { date, time, price, pctChange } sorted oldest to newest
+    let chartHoverPoint = null;
+    let chartState = null;
+
+    // DOM Elements
+    const els = {
+      thresholdSlider: document.getElementById('thresholdSlider'),
+      thresholdOutput: document.getElementById('thresholdOutput'),
+      historySlider: document.getElementById('historySlider'),
+      historyOutput: document.getElementById('historyOutput'),
+      dataStatus: document.getElementById('dataStatus'),
+      statTotalDays: document.getElementById('statTotalDays'),
+      statGreenDays: document.getElementById('statGreenDays'),
+      statRedDays: document.getElementById('statRedDays'),
+      statGreenRatio: document.getElementById('statGreenRatio'),
+      chartDateRange: document.getElementById('chartDateRange'),
+      priceTableBody: document.getElementById('priceTableBody'),
+      tableTitle: document.getElementById('tableTitle'),
+      chart: document.getElementById('priceChart'),
+      chartTooltip: document.getElementById('chartTooltip'),
+      canvasContainer: document.getElementById('canvasContainer')
+    };
+
+    // Helper functions
+    function formatDate(time) {
+      return new Date(time).toISOString().slice(0, 10);
+    }
+
+    function parseDate(dateText) {
+      const [year, month, day] = dateText.split('-').map(Number);
+      return Date.UTC(year, month - 1, day, 12);
+    }
+
+    function addYears(time, years) {
+      const date = new Date(time);
+      date.setUTCFullYear(date.getUTCFullYear() + years);
+      return date.getTime();
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    // Caching
+    function readCachedHistory() {
+      try {
+        const raw = localStorage.getItem(CACHE_KEY);
+        if (!raw) return null;
+        const cached = JSON.parse(raw);
+        if (!cached || !Array.isArray(cached.prices) || cached.prices.length < 2) return null;
+        if (Date.now() - cached.fetchedAt > CACHE_TTL_MS) return null; // Stale cache
+        
+        cached.prices = cached.prices.map(point => ({
+          date: point.date,
+          time: parseDate(point.date),
+          price: Number(point.price)
+        }));
+        return cached;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function writeCachedHistory(prices, source) {
+      const compact = {
+        fetchedAt: Date.now(),
+        source: source,
+        prices: prices.map(point => ({ date: point.date, price: point.price }))
+      };
+      try {
+        localStorage.setItem(CACHE_KEY, JSON.stringify(compact));
+      } catch (error) {
+        // LocalStorage quota error
+      }
+      return {
+        ...compact,
+        prices: prices.map(point => ({ ...point, time: parseDate(point.date) }))
+      };
+    }
+
+    // Yahoo Finance URL generator
+    function yahooUrl() {
+      const params = 'range=max&interval=1d&events=history&includeAdjustedClose=true';
+      return `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?${params}`;
+    }
+
+    function yahooProxyUrl() {
+      return `https://r.jina.ai/http://r.jina.ai/http://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=max&interval=1d&events=history&includeAdjustedClose=true`;
+    }
+
+    async function fetchText(url) {
+      const response = await fetch(url, { cache: 'no-store' });
+      const text = await response.text();
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${text.slice(0, 80)}`);
+      }
+      return text;
+    }
+
+    function parseYahooPayload(text) {
+      const jsonStart = text.indexOf('{"chart"');
+      const jsonText = jsonStart >= 0 ? text.slice(jsonStart).trim() : text.trim();
+      const payload = JSON.parse(jsonText);
+      const result = payload.chart?.result?.[0];
+      const error = payload.chart?.error;
+      if (error) throw new Error(error.description || error.code || 'Yahoo returned an error');
+      if (!result?.timestamp?.length) throw new Error(`No Yahoo history found for ${ticker}`);
+
+      const timestamps = result.timestamp;
+      const adjclose = result.indicators?.adjclose?.[0]?.adjclose;
+      const close = result.indicators?.quote?.[0]?.close;
+      const series = adjclose || close;
+      if (!series?.length) throw new Error(`No adjusted close history found for ${ticker}`);
+
+      const prices = timestamps.map((timestamp, index) => ({
+        date: formatDate(timestamp * 1000),
+        time: parseDate(formatDate(timestamp * 1000)),
+        price: Number(series[index])
+      })).filter(point => Number.isFinite(point.price) && point.price > 0);
+
+      if (prices.length < 2) throw new Error(`Not enough Yahoo history found for ${ticker}`);
+      prices.sort((a, b) => a.time - b.time);
+      return prices;
+    }
+
+    async function fetchYahooHistory() {
+      const attempts = [
+        { source: 'Yahoo', url: yahooUrl() },
+        { source: 'Yahoo via cache proxy', url: yahooProxyUrl() }
+      ];
+
+      let lastError = null;
+      for (const attempt of attempts) {
+        try {
+          const text = await fetchText(attempt.url);
+          const prices = parseYahooPayload(text);
+          return writeCachedHistory(prices, attempt.source);
+        } catch (error) {
+          lastError = error;
+        }
+      }
+      throw lastError || new Error(`Could not fetch ${ticker}`);
+    }
+
+    async function getHistory() {
+      const cached = readCachedHistory();
+      if (cached) {
+        return { ...cached, fromCache: true };
+      }
+      return await fetchYahooHistory();
+    }
+
+    // Process daily percentage changes
+    function processPrices(prices) {
+      // Calculate daily percentage change compared to the previous trading day
+      const processed = [];
+      for (let i = 0; i < prices.length; i++) {
+        let pctChange = 0;
+        if (i > 0) {
+          pctChange = ((prices[i].price - prices[i - 1].price) / prices[i - 1].price) * 100;
+        }
+        processed.push({
+          ...prices[i],
+          pctChange
+        });
+      }
+      return processed;
+    }
+
+    // Update statistics, table, and redraw chart
+    function updateView() {
+      if (!allPrices.length) return;
+
+      const threshold = parseFloat(els.thresholdSlider.value);
+      const historyYears = parseInt(els.historySlider.value);
+
+      // Update Slider Outputs
+      els.thresholdOutput.textContent = (threshold >= 0 ? '+' : '') + threshold.toFixed(1) + '%';
+      els.historyOutput.textContent = historyYears + (historyYears === 1 ? ' year' : ' years');
+
+      // Filter active history range (take trailing years)
+      const endTime = allPrices[allPrices.length - 1].time;
+      const startTime = addYears(endTime, -historyYears);
+      const activeData = allPrices.filter(p => p.time >= startTime);
+      if (!activeData.length) return;
+
+      // Date range label
+      const startDate = activeData[0].date;
+      const endDate = activeData[activeData.length - 1].date;
+      els.chartDateRange.textContent = `${startDate} to ${endDate}`;
+
+      // Calculate Stats
+      const totalDays = activeData.length;
+      let greenDays = 0;
+      activeData.forEach(p => {
+        if (p.pctChange >= threshold) greenDays++;
+      });
+      const redDays = totalDays - greenDays;
+      const greenRatio = (greenDays / totalDays) * 100;
+
+      els.statTotalDays.textContent = totalDays;
+      els.statGreenDays.textContent = `${greenDays} (${((greenDays / totalDays) * 100).toFixed(1)}%)`;
+      els.statRedDays.textContent = `${redDays} (${((redDays / totalDays) * 100).toFixed(1)}%)`;
+      els.statGreenRatio.textContent = `${greenRatio.toFixed(1)}%`;
+
+      // Update Table Title dynamically capped to 1000 items
+      const limit = 1000;
+      if (totalDays > limit) {
+        els.tableTitle.innerHTML = `Daily Prices &amp; Returns Detail <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);">(Showing latest ${limit} days)</span>`;
+      } else {
+        els.tableTitle.innerHTML = 'Daily Prices &amp; Returns Detail';
+      }
+
+      // Render Historical Table (newest first, limited to limit items)
+      const tableRows = [];
+      const displayData = [...activeData].reverse().slice(0, limit);
+      displayData.forEach(p => {
+        const changeText = (p.pctChange >= 0 ? '+' : '') + p.pctChange.toFixed(2) + '%';
+        const changeClass = p.pctChange > 0.005 ? 'up' : (p.pctChange < -0.005 ? 'down' : 'flat');
+        const match = p.pctChange >= threshold;
+        
+        tableRows.push(`
+          <tr>
+            <td>${p.date}</td>
+            <td style="text-align: right; font-weight: 600; color: var(--text-primary);">$${p.price.toFixed(2)}</td>
+            <td style="text-align: right;">
+              <span class="change-badge ${changeClass}">${changeText}</span>
+            </td>
+            <td style="text-align: center;">
+              <span class="change-badge ${match ? 'up' : 'down'}" style="font-size: 0.75rem; padding: 1px 4px;">
+                ${match ? 'Match' : 'Miss'}
+              </span>
+            </td>
+          </tr>
+        `);
+      });
+      els.priceTableBody.innerHTML = tableRows.join('');
+
+      // Draw Chart
+      drawChart(activeData, threshold);
+    }
+
+    // Chart Drawing Function
+    function drawChart(data, threshold) {
+      const canvas = els.chart;
+      const ctx = canvas.getContext('2d');
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+
+      // Adjust canvas resolution for high-DPI screens
+      canvas.width = Math.round(rect.width * dpr);
+      canvas.height = Math.round(rect.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, rect.width, rect.height);
+
+      const pad = { top: 30, right: 20, bottom: 40, left: 55 };
+      const plotW = rect.width - pad.left - pad.right;
+      const plotH = rect.height - pad.top - pad.bottom;
+
+      if (data.length < 2 || plotW <= 0 || plotH <= 0) return;
+
+      const prices = data.map(d => d.price);
+      const minPrice = Math.min(...prices) * 0.98;
+      const maxPrice = Math.max(...prices) * 1.02;
+      const priceSpan = maxPrice - minPrice;
+
+      // Coordinate helper functions
+      const xForIndex = (index) => pad.left + (index / (data.length - 1)) * plotW;
+      const yForPrice = (price) => pad.top + plotH - ((price - minPrice) / priceSpan) * plotH;
+
+      // Save drawing configuration in state for hover events
+      chartState = {
+        pad,
+        plotW,
+        plotH,
+        rect,
+        data,
+        minPrice,
+        maxPrice,
+        priceSpan,
+        xForIndex,
+        yForPrice
+      };
+
+      // 1. Draw Day-bar Background strips (using exact boundaries to prevent subpixel gaps)
+      const barW = plotW / data.length;
+      for (let i = 0; i < data.length; i++) {
+        const p = data[i];
+        const isGreen = p.pctChange >= threshold;
+        ctx.fillStyle = isGreen ? 'rgba(35, 123, 83, 0.14)' : 'rgba(169, 58, 50, 0.14)';
+
+        const leftX = pad.left + i * barW;
+        const nextX = pad.left + (i + 1) * barW;
+        const width = nextX - leftX;
+        ctx.fillRect(leftX, pad.top, width, plotH);
+      }
+
+      // 2. Draw Grid Lines
+      ctx.strokeStyle = '#e4e9ed';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = '#8e98a5';
+      ctx.font = '10px sans-serif';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+
+      // Horizontal grid lines & Y labels
+      const yTicksCount = 5;
+      for (let i = 0; i <= yTicksCount; i++) {
+        const val = minPrice + (i / yTicksCount) * priceSpan;
+        const y = yForPrice(val);
+        ctx.beginPath();
+        ctx.moveTo(pad.left, y);
+        ctx.lineTo(pad.left + plotW, y);
+        ctx.stroke();
+        ctx.fillText(`$${val.toFixed(0)}`, pad.left - 8, y);
+      }
+
+      // Vertical grid lines & X labels
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      const xTicksCount = Math.min(data.length, 6);
+      for (let i = 0; i < xTicksCount; i++) {
+        const index = Math.round((i / (xTicksCount - 1)) * (data.length - 1));
+        const x = xForIndex(index);
+        ctx.beginPath();
+        ctx.moveTo(x, pad.top);
+        ctx.lineTo(x, pad.top + plotH);
+        ctx.stroke();
+        
+        // Show date label (YYYY-MM if long history, MM-DD if short range)
+        const dateStr = data[index].date;
+        const displayDate = data.length > 500 ? dateStr.slice(0, 7) : dateStr.slice(5);
+        ctx.fillText(displayDate, x, pad.top + plotH + 8);
+      }
+
+      // 3. Draw Price Path
+      ctx.strokeStyle = '#18181b'; // Charcoal
+      ctx.lineWidth = 1.75;
+      ctx.beginPath();
+      ctx.moveTo(xForIndex(0), yForPrice(data[0].price));
+      for (let i = 1; i < data.length; i++) {
+        ctx.lineTo(xForIndex(i), yForPrice(data[i].price));
+      }
+      ctx.stroke();
+
+      // 4. Draw hovered marker if mouse is active
+      if (chartHoverPoint) {
+        const hIndex = data.indexOf(chartHoverPoint);
+        if (hIndex !== -1) {
+          const hX = xForIndex(hIndex);
+          const hY = yForPrice(chartHoverPoint.price);
+
+          // Draw vertical crosshair dashed line
+          ctx.strokeStyle = 'rgba(24, 24, 26, 0.4)';
+          ctx.setLineDash([4, 4]);
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(hX, pad.top);
+          ctx.lineTo(hX, pad.top + plotH);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          // Draw marker circle
+          ctx.fillStyle = '#ffffff';
+          ctx.strokeStyle = '#18181b';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.arc(hX, hY, 4.5, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Hover tooltip interaction
+    function handlePointerMove(e) {
+      if (!chartState || !allPrices.length) return;
+      const rect = els.chart.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      // Check if mouse is inside plot bounds
+      if (mouseX < chartState.pad.left || mouseX > rect.width - chartState.pad.right) {
+        hideTooltip();
+        return;
+      }
+
+      // Find nearest data index based on X
+      const relativeX = mouseX - chartState.pad.left;
+      const indexFloat = (relativeX / chartState.plotW) * (chartState.data.length - 1);
+      const index = Math.min(chartState.data.length - 1, Math.max(0, Math.round(indexFloat)));
+
+      const point = chartState.data[index];
+      if (!point) return;
+
+      chartHoverPoint = point;
+      drawChart(chartState.data, parseFloat(els.thresholdSlider.value));
+
+      // Show HTML tooltip
+      const changeText = (point.pctChange >= 0 ? '+' : '') + point.pctChange.toFixed(2) + '%';
+      const changeClass = point.pctChange > 0.005 ? 'up' : (point.pctChange < -0.005 ? 'down' : 'flat');
+
+      els.chartTooltip.innerHTML = `
+        <strong>${point.date}</strong>
+        <dl>
+          <dt>Close Price</dt>
+          <dd>$${point.price.toFixed(2)}</dd>
+          <dt>Daily Return</dt>
+          <dd><span class="change-badge ${changeClass}" style="padding: 1px 4px;">${changeText}</span></dd>
+        </dl>
+      `;
+      els.chartTooltip.hidden = false;
+
+      // Calculate position of tooltip
+      const tooltipRect = els.chartTooltip.getBoundingClientRect();
+      const panelRect = els.chart.closest('.chart-panel').getBoundingClientRect();
+      const canvasRect = els.chart.getBoundingClientRect();
+
+      // Place tooltip near the cursor, keeping it inside bounds
+      const snapX = chartState.xForIndex(index);
+      let left = snapX + 15;
+      if (left + tooltipRect.width > panelRect.width - 15) {
+        left = snapX - tooltipRect.width - 15;
+      }
+      
+      const rawTop = canvasRect.top - panelRect.top + mouseY;
+      const top = Math.max(tooltipRect.height / 2 + 10, Math.min(rawTop, panelRect.height - tooltipRect.height / 2 - 10));
+
+      els.chartTooltip.style.left = `${left}px`;
+      els.chartTooltip.style.top = `${top}px`;
+    }
+
+    function hideTooltip() {
+      if (chartHoverPoint) {
+        chartHoverPoint = null;
+        if (chartState) {
+          drawChart(chartState.data, parseFloat(els.thresholdSlider.value));
+        }
+      }
+      els.chartTooltip.hidden = true;
+    }
+
+    // Initialization
+    async function init() {
+      // Connect listeners
+      els.thresholdSlider.addEventListener('input', updateView);
+      els.historySlider.addEventListener('input', updateView);
+
+      els.chart.addEventListener('mousemove', handlePointerMove);
+      els.chart.addEventListener('mouseleave', hideTooltip);
+
+      // Handle window resize dynamically
+      window.addEventListener('resize', () => {
+        if (allPrices.length) {
+          updateView();
+        }
+      });
+
+      // Load Stock Data
+      try {
+        els.dataStatus.innerHTML = `<strong>Loading SPY historical close...</strong>`;
+        const result = await getHistory();
+        
+        allPrices = processPrices(result.prices);
+        
+        // Clear loader and set status
+        els.dataStatus.className = 'status';
+        els.dataStatus.innerHTML = `<strong>SPY close history loaded.</strong> Source: ${escapeHtml(result.source)}${result.fromCache ? ' (cached)' : ''}`;
+        
+        // Initial draw
+        updateView();
+      } catch (err) {
+        console.error(err);
+        els.dataStatus.className = 'status error';
+        els.dataStatus.innerHTML = `<strong>Failed to load data:</strong> ${escapeHtml(err.message)}`;
+      }
+    }
+
+    // Run init on DOM load
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
