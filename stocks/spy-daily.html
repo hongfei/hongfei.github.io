@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SPY Daily Explorer</title>
+  <title>SPY Return Explorer</title>
   <link rel="icon" href="data:," />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
   <style>
@@ -226,6 +226,38 @@
       color: var(--text-muted);
       margin-top: 4px;
       line-height: 1.35;
+    }
+
+    .segmented-control {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      padding: 4px;
+      background: #f4f4f5;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+    }
+    .segmented-control button {
+      appearance: none;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-family: var(--font-stack);
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 1;
+      padding: 9px 8px;
+      transition: var(--transition-smooth);
+    }
+    .segmented-control button:hover {
+      color: var(--text-primary);
+      background: #ffffff;
+    }
+    .segmented-control button[aria-pressed="true"] {
+      background: var(--text-primary);
+      color: #ffffff;
     }
 
     /* Stats Grid inside Left Panel */
@@ -494,8 +526,8 @@
     <!-- Header Summary Block -->
     <header class="header-panel">
       <div class="header-info">
-        <h1>SPY Daily Explorer</h1>
-        <p class="subtitle">Analyze daily SPY movements and inspect historical volatility relative to a customized return threshold.</p>
+        <h1>SPY Return Explorer</h1>
+        <p class="subtitle">Analyze SPY movements by daily, weekly, or monthly return periods relative to a customized threshold.</p>
       </div>
       <div class="header-source">
         Refreshed via Yahoo Finance<br/>
@@ -515,15 +547,30 @@
             <div id="dataStatus" class="status">Initializing daily close prices...</div>
           </section>
 
+          <!-- Period Selector -->
+          <section class="pe-card">
+            <div class="field">
+              <label>
+                <span>Return Period</span>
+              </label>
+              <div class="segmented-control" aria-label="Return period">
+                <button type="button" data-period="daily" aria-pressed="true">Daily</button>
+                <button type="button" data-period="weekly" aria-pressed="false">Weekly</button>
+                <button type="button" data-period="monthly" aria-pressed="false">Monthly</button>
+              </div>
+              <p class="help-text">Switch the return basis used by the chart coloring, table, and above/below-threshold ratios.</p>
+            </div>
+          </section>
+
           <!-- Slider 1: Return Threshold -->
           <section class="pe-card">
             <div class="field">
               <label for="thresholdSlider">
-                <span>Daily Return Threshold</span>
+                <span id="thresholdLabel">Daily Return Threshold</span>
                 <output id="thresholdOutput">+0.0%</output>
               </label>
               <input type="range" id="thresholdSlider" min="-2.0" max="2.0" step="0.1" value="0.0" />
-              <p class="help-text">Color trading days red if close return is &lt; threshold, or green if return is &ge; threshold.</p>
+              <p class="help-text" id="thresholdHelp">Color daily periods red if return is &lt; threshold, or green if return is &ge; threshold.</p>
             </div>
           </section>
 
@@ -544,19 +591,19 @@
             <h3>Summary (Selected History)</h3>
             <div class="stats-grid">
               <div class="stat-row">
-                <span class="stat-label">Total Trading Days</span>
+                <span class="stat-label" id="statTotalLabel">Total Trading Days</span>
                 <span class="stat-value" id="statTotalDays">-</span>
               </div>
               <div class="stat-row">
-                <span class="stat-label">Days &ge; Threshold (Green)</span>
+                <span class="stat-label" id="statGreenLabel">Days &ge; Threshold (Green)</span>
                 <span class="stat-value" id="statGreenDays">-</span>
               </div>
               <div class="stat-row">
-                <span class="stat-label">Days &lt; Threshold (Red)</span>
+                <span class="stat-label" id="statRedLabel">Days &lt; Threshold (Red)</span>
                 <span class="stat-value" id="statRedDays">-</span>
               </div>
               <div class="stat-row">
-                <span class="stat-label">Green Day Ratio</span>
+                <span class="stat-label" id="statRatioLabel">Green Day Ratio</span>
                 <span class="stat-value" id="statGreenRatio">-</span>
               </div>
             </div>
@@ -585,9 +632,9 @@
             <table>
               <thead>
                 <tr>
-                  <th>Date</th>
+                  <th id="tableDateHeader">Date</th>
                   <th style="text-align: right;">SPY Close Price</th>
-                  <th style="text-align: right;">Daily Change</th>
+                  <th style="text-align: right;" id="tableChangeHeader">Daily Change</th>
                   <th style="text-align: center;">Threshold Match</th>
                 </tr>
               </thead>
@@ -616,20 +663,59 @@
     let chartHoverPoint = null;
     let chartState = null;
 
+    const periodConfig = {
+      daily: {
+        label: 'Daily',
+        singular: 'Day',
+        plural: 'Days',
+        totalLabel: 'Total Trading Days',
+        tableTitle: 'Daily Prices &amp; Returns Detail',
+        tableDateHeader: 'Date',
+        tableChangeHeader: 'Daily Change'
+      },
+      weekly: {
+        label: 'Weekly',
+        singular: 'Week',
+        plural: 'Weeks',
+        totalLabel: 'Total Weeks',
+        tableTitle: 'Weekly Prices &amp; Returns Detail',
+        tableDateHeader: 'Week',
+        tableChangeHeader: 'Weekly Change'
+      },
+      monthly: {
+        label: 'Monthly',
+        singular: 'Month',
+        plural: 'Months',
+        totalLabel: 'Total Months',
+        tableTitle: 'Monthly Prices &amp; Returns Detail',
+        tableDateHeader: 'Month',
+        tableChangeHeader: 'Monthly Change'
+      }
+    };
+
     // DOM Elements
     const els = {
       thresholdSlider: document.getElementById('thresholdSlider'),
+      thresholdLabel: document.getElementById('thresholdLabel'),
       thresholdOutput: document.getElementById('thresholdOutput'),
+      thresholdHelp: document.getElementById('thresholdHelp'),
       historySlider: document.getElementById('historySlider'),
       historyOutput: document.getElementById('historyOutput'),
+      periodButtons: document.querySelectorAll('[data-period]'),
       dataStatus: document.getElementById('dataStatus'),
+      statTotalLabel: document.getElementById('statTotalLabel'),
       statTotalDays: document.getElementById('statTotalDays'),
+      statGreenLabel: document.getElementById('statGreenLabel'),
       statGreenDays: document.getElementById('statGreenDays'),
+      statRedLabel: document.getElementById('statRedLabel'),
       statRedDays: document.getElementById('statRedDays'),
+      statRatioLabel: document.getElementById('statRatioLabel'),
       statGreenRatio: document.getElementById('statGreenRatio'),
       chartDateRange: document.getElementById('chartDateRange'),
       priceTableBody: document.getElementById('priceTableBody'),
       tableTitle: document.getElementById('tableTitle'),
+      tableDateHeader: document.getElementById('tableDateHeader'),
+      tableChangeHeader: document.getElementById('tableChangeHeader'),
       chart: document.getElementById('priceChart'),
       chartTooltip: document.getElementById('chartTooltip'),
       canvasContainer: document.getElementById('canvasContainer')
@@ -649,6 +735,39 @@
       const date = new Date(time);
       date.setUTCFullYear(date.getUTCFullYear() + years);
       return date.getTime();
+    }
+
+    function getSelectedReturnPeriod() {
+      const activeButton = [...els.periodButtons].find(button => button.getAttribute('aria-pressed') === 'true');
+      return activeButton?.dataset.period || 'daily';
+    }
+
+    function getIsoWeekParts(time) {
+      const date = new Date(time);
+      date.setUTCHours(0, 0, 0, 0);
+      date.setUTCDate(date.getUTCDate() + 3 - ((date.getUTCDay() + 6) % 7));
+      const weekYear = date.getUTCFullYear();
+      const firstThursday = new Date(Date.UTC(weekYear, 0, 4));
+      const week = 1 + Math.round(((date - firstThursday) / 86400000 - 3 + ((firstThursday.getUTCDay() + 6) % 7)) / 7);
+      return { year: weekYear, week };
+    }
+
+    function getPeriodKey(point, period) {
+      if (period === 'weekly') {
+        const { year, week } = getIsoWeekParts(point.time);
+        return `${year}-W${String(week).padStart(2, '0')}`;
+      }
+      if (period === 'monthly') {
+        return point.date.slice(0, 7);
+      }
+      return point.date;
+    }
+
+    function getPeriodLabel(period, firstPoint, lastPoint) {
+      if (period === 'daily') return lastPoint.date;
+      if (period === 'monthly') return lastPoint.date.slice(0, 7);
+      const { year, week } = getIsoWeekParts(lastPoint.time);
+      return `${year} W${String(week).padStart(2, '0')} (${firstPoint.date} to ${lastPoint.date})`;
     }
 
     function escapeHtml(value) {
@@ -787,22 +906,79 @@
       return processed;
     }
 
+    function buildReturnSeries(prices, period) {
+      if (period === 'daily') {
+        return prices.map(point => ({
+          ...point,
+          startDate: point.date,
+          endDate: point.date,
+          periodLabel: point.date
+        }));
+      }
+
+      const periods = [];
+      let bucket = [];
+      let activeKey = null;
+
+      prices.forEach(point => {
+        const key = getPeriodKey(point, period);
+        if (activeKey !== null && key !== activeKey && bucket.length) {
+          periods.push(bucket);
+          bucket = [];
+        }
+        activeKey = key;
+        bucket.push(point);
+      });
+
+      if (bucket.length) periods.push(bucket);
+
+      return periods.map((periodPoints, index) => {
+        const firstPoint = periodPoints[0];
+        const lastPoint = periodPoints[periodPoints.length - 1];
+        const previousPeriod = periods[index - 1];
+        const previousClose = previousPeriod ? previousPeriod[previousPeriod.length - 1].price : firstPoint.price;
+        return {
+          date: lastPoint.date,
+          time: lastPoint.time,
+          price: lastPoint.price,
+          startDate: firstPoint.date,
+          endDate: lastPoint.date,
+          periodLabel: getPeriodLabel(period, firstPoint, lastPoint),
+          pctChange: ((lastPoint.price - previousClose) / previousClose) * 100
+        };
+      });
+    }
+
     // Update statistics, table, and redraw chart
     function updateView() {
       if (!allPrices.length) return;
 
       const threshold = parseFloat(els.thresholdSlider.value);
       const historyYears = parseInt(els.historySlider.value);
+      const period = getSelectedReturnPeriod();
+      const config = periodConfig[period];
+      chartHoverPoint = null;
+      els.chartTooltip.hidden = true;
 
       // Update Slider Outputs
       els.thresholdOutput.textContent = (threshold >= 0 ? '+' : '') + threshold.toFixed(1) + '%';
       els.historyOutput.textContent = historyYears + (historyYears === 1 ? ' year' : ' years');
+      els.thresholdLabel.textContent = `${config.label} Return Threshold`;
+      els.thresholdHelp.textContent = `Color ${config.plural.toLowerCase()} red if return is < threshold, or green if return is >= threshold.`;
+      els.statTotalLabel.textContent = config.totalLabel;
+      els.statGreenLabel.textContent = `${config.plural} >= Threshold (Green)`;
+      els.statRedLabel.textContent = `${config.plural} < Threshold (Red)`;
+      els.statRatioLabel.textContent = `Green ${config.singular} Ratio`;
+      els.tableDateHeader.textContent = config.tableDateHeader;
+      els.tableChangeHeader.textContent = config.tableChangeHeader;
 
       // Filter active history range (take trailing years)
       const endTime = allPrices[allPrices.length - 1].time;
       const startTime = addYears(endTime, -historyYears);
       const activeData = allPrices.filter(p => p.time >= startTime);
       if (!activeData.length) return;
+      const periodData = buildReturnSeries(allPrices, period).filter(p => p.time >= startTime);
+      if (!periodData.length) return;
 
       // Date range label
       const startDate = activeData[0].date;
@@ -810,30 +986,30 @@
       els.chartDateRange.textContent = `${startDate} to ${endDate}`;
 
       // Calculate Stats
-      const totalDays = activeData.length;
-      let greenDays = 0;
-      activeData.forEach(p => {
-        if (p.pctChange >= threshold) greenDays++;
+      const totalPeriods = periodData.length;
+      let greenPeriods = 0;
+      periodData.forEach(p => {
+        if (p.pctChange >= threshold) greenPeriods++;
       });
-      const redDays = totalDays - greenDays;
-      const greenRatio = (greenDays / totalDays) * 100;
+      const redPeriods = totalPeriods - greenPeriods;
+      const greenRatio = (greenPeriods / totalPeriods) * 100;
 
-      els.statTotalDays.textContent = totalDays;
-      els.statGreenDays.textContent = `${greenDays} (${((greenDays / totalDays) * 100).toFixed(1)}%)`;
-      els.statRedDays.textContent = `${redDays} (${((redDays / totalDays) * 100).toFixed(1)}%)`;
+      els.statTotalDays.textContent = totalPeriods;
+      els.statGreenDays.textContent = `${greenPeriods} (${((greenPeriods / totalPeriods) * 100).toFixed(1)}%)`;
+      els.statRedDays.textContent = `${redPeriods} (${((redPeriods / totalPeriods) * 100).toFixed(1)}%)`;
       els.statGreenRatio.textContent = `${greenRatio.toFixed(1)}%`;
 
       // Update Table Title dynamically capped to 1000 items
       const limit = 1000;
-      if (totalDays > limit) {
-        els.tableTitle.innerHTML = `Daily Prices &amp; Returns Detail <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);">(Showing latest ${limit} days)</span>`;
+      if (totalPeriods > limit) {
+        els.tableTitle.innerHTML = `${config.tableTitle} <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);">(Showing latest ${limit} ${config.plural.toLowerCase()})</span>`;
       } else {
-        els.tableTitle.innerHTML = 'Daily Prices &amp; Returns Detail';
+        els.tableTitle.innerHTML = config.tableTitle;
       }
 
       // Render Historical Table (newest first, limited to limit items)
       const tableRows = [];
-      const displayData = [...activeData].reverse().slice(0, limit);
+      const displayData = [...periodData].reverse().slice(0, limit);
       displayData.forEach(p => {
         const changeText = (p.pctChange >= 0 ? '+' : '') + p.pctChange.toFixed(2) + '%';
         const changeClass = p.pctChange > 0.005 ? 'up' : (p.pctChange < -0.005 ? 'down' : 'flat');
@@ -841,7 +1017,7 @@
         
         tableRows.push(`
           <tr>
-            <td>${p.date}</td>
+            <td>${escapeHtml(p.periodLabel)}</td>
             <td style="text-align: right; font-weight: 600; color: var(--text-primary);">$${p.price.toFixed(2)}</td>
             <td style="text-align: right;">
               <span class="change-badge ${changeClass}">${changeText}</span>
@@ -857,7 +1033,7 @@
       els.priceTableBody.innerHTML = tableRows.join('');
 
       // Draw Chart
-      drawChart(activeData, threshold);
+      drawChart(periodData, threshold);
     }
 
     // Chart Drawing Function
@@ -902,7 +1078,7 @@
         yForPrice
       };
 
-      // 1. Draw Day-bar Background strips (using exact boundaries to prevent subpixel gaps)
+      // 1. Draw period background strips (using exact boundaries to prevent subpixel gaps)
       const barW = plotW / data.length;
       for (let i = 0; i < data.length; i++) {
         const p = data[i];
@@ -995,6 +1171,8 @@
     // Hover tooltip interaction
     function handlePointerMove(e) {
       if (!chartState || !allPrices.length) return;
+      const period = getSelectedReturnPeriod();
+      const config = periodConfig[period];
       const rect = els.chart.getBoundingClientRect();
       const mouseX = e.clientX - rect.left;
       const mouseY = e.clientY - rect.top;
@@ -1021,11 +1199,11 @@
       const changeClass = point.pctChange > 0.005 ? 'up' : (point.pctChange < -0.005 ? 'down' : 'flat');
 
       els.chartTooltip.innerHTML = `
-        <strong>${point.date}</strong>
+        <strong>${escapeHtml(point.periodLabel)}</strong>
         <dl>
-          <dt>Close Price</dt>
+          <dt>End Close</dt>
           <dd>$${point.price.toFixed(2)}</dd>
-          <dt>Daily Return</dt>
+          <dt>${config.label} Return</dt>
           <dd><span class="change-badge ${changeClass}" style="padding: 1px 4px;">${changeText}</span></dd>
         </dl>
       `;
@@ -1065,6 +1243,14 @@
       // Connect listeners
       els.thresholdSlider.addEventListener('input', updateView);
       els.historySlider.addEventListener('input', updateView);
+      els.periodButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          els.periodButtons.forEach(periodButton => {
+            periodButton.setAttribute('aria-pressed', String(periodButton === button));
+          });
+          updateView();
+        });
+      });
 
       els.chart.addEventListener('mousemove', handlePointerMove);
       els.chart.addEventListener('mouseleave', hideTooltip);
