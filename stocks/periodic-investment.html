@@ -452,6 +452,8 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 12px;
       padding: 18px;
+      display: flex;
+      flex-direction: column;
     }
 
     /* Headings & Legends inside Panels */
@@ -583,8 +585,10 @@
     }
     .table-scroll {
       overflow-x: auto;
-      max-height: 340px;
       overflow-y: auto;
+      flex-grow: 1;
+      height: 0;
+      min-height: 0;
     }
     th, td {
       padding: 8px 6px;
@@ -664,9 +668,11 @@
       }
       .visual-grid .table-panel {
         margin-bottom: 0 !important;
+        display: block !important;
       }
       .table-scroll {
         max-height: none !important;
+        height: auto !important;
       }
       body:not(.single-sleeve) .sleeves {
         grid-template-columns: 1fr;
