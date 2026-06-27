@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongfei Zhou - Project Portal</title>
+    <!-- Preload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <style>
+        /* Design Tokens & Theme Setup */
+        :root {
+            --bg-color: #fafafa;
+            --card-bg: #ffffff;
+            --text-primary: #18181b;     /* Zinc 900 */
+            --text-secondary: #4b5563;   /* Gray 600 */
+            --text-muted: #8e98a5;       /* Gray 400 */
+            --border-light: #e4e4e7;     /* Zinc 200 */
+            --accent-color: #157878;     /* Keep the branding color for icons */
+            --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --transition-smooth: all 0.2s ease;
+        }
+
+        /* Base Resets */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: var(--font-stack);
+            color: var(--text-secondary);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+            padding: 3rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Portal Wrapper - Contiguous vertical card stack */
+        .portal-wrapper {
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        /* Individual Card styling - Overlapping borders */
+        .portal-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem 2rem;
+            border-radius: 0;
+            border: 1px solid var(--border-light);
+            margin-bottom: -1px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.01);
+            transition: var(--transition-smooth);
+        }
+        .portal-card:hover {
+            position: relative;
+            z-index: 1;
+            border-color: #a1a1aa;
+            box-shadow: 0 4px 12px rgba(24, 24, 26, 0.04);
+        }
+
+        /* Header Card Top Rounded Corners */
+        .portal-card.header-card {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            padding: 2rem;
+        }
+        
+        /* Footer Card Bottom Rounded Corners */
+        .portal-card.footer-card {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            margin-bottom: 0;
+            padding: 1.25rem 2rem;
+        }
+
+        /* Left-aligned Header Panel */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            width: 100%;
+        }
+        .header-info h1 {
+            font-size: 2.25rem;
+            color: var(--text-primary);
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin-bottom: 0.25rem;
+            line-height: 1.1;
+        }
+        .header-info .tagline {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        
+        /* Mini Profile Badge */
+        .profile-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-light);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+        }
+        .profile-badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #22c55e;
+            box-shadow: 0 0 6px #22c55e;
+        }
+        .profile-badge-text {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Section Headings */
+        .section-header-card {
+            background-color: #fafafa;
+            border-bottom: none;
+            padding: 0.75rem 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        /* Streamlined Row Layout inside Cards */
+        .project-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        /* Left Column: Identifiers */
+        .col-identity {
+            flex: 0 0 240px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .col-identity-top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .project-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            background-color: #f4f4f5;
+            color: var(--text-secondary);
+            transition: var(--transition-smooth);
+        }
+        .portal-card:hover .project-icon {
+            background-color: var(--text-primary);
+            color: white;
+        }
+        .project-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+        .project-title {
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .badge {
+            align-self: flex-start;
+            padding: 0.15rem 0.4rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 4px;
+            letter-spacing: 0.02em;
+        }
+        .badge-cv {
+            background-color: #f1f5f9;
+            color: #475569;
+            border: 1px solid var(--border-light);
+        }
+        .badge-tool {
+            background-color: #f0fdf4;
+            color: #166534;
+            border: 1px solid #dcfce7;
+        }
+
+        /* Middle Column: Wide Descriptions */
+        .col-desc {
+            flex: 1 1 auto;
+            font-size: 0.925rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* Right Column: Actions */
+        .col-actions {
+            flex: 0 0 160px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* Interactive Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border-radius: 6px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            width: 100%;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: var(--text-primary);
+            color: white;
+            border: 1px solid var(--text-primary);
+        }
+        .btn-primary:hover {
+            background-color: #27272a;
+            border-color: #27272a;
+        }
+        .btn svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+
+        /* Footer */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            width: 100%;
+        }
+
+        /* Responsive Layout Fold */
+        @media (max-width: 992px) {
+            .project-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .col-identity, .col-desc, .col-actions {
+                flex: none;
+                width: 100%;
+            }
+            .col-actions {
+                justify-content: flex-start;
+            }
+            .btn {
+                width: auto;
+            }
+            .portal-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+        @media (max-width: 640px) {
+            body {
+                padding: 1.5rem 0.5rem;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .profile-badge {
+                align-self: flex-start;
+            }
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portal-wrapper">
+        <!-- Card 1: Header -->
+        <div class="portal-card header-card">
+            <header>
+                <div class="header-info">
+                    <h1>Hongfei Zhou</h1>
+                    <div class="tagline">Personal project portal, portfolio collections, and references</div>
+                </div>
+                <div class="profile-badge">
+                    <div class="profile-badge-dot"></div>
+                    <div class="profile-badge-text">Static Hosting Active</div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Directory Section Label -->
+        <div class="portal-card section-header-card">
+            Directory
+        </div>
+
+        <!-- Card 2: Resume Entry -->
+        <div class="portal-card">
+            <div class="project-row">
+                <div class="col-identity">
+                    <div class="col-identity-top">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <h2 class="project-title">Online Resume</h2>
+                    </div>
+                    <span class="badge badge-cv">Curriculum Vitae</span>
+                </div>
+                <div class="col-desc">
+                    Comprehensive CV highlighting 11+ years of backend engineering expertise in Java, Kotlin, GCP Cloud solutions, Kubernetes setups, and automated testing architectures.
+                </div>
+                <div class="col-actions">
+                    <a href="resume/hongfei.html" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                        Open Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: PE Threshold Explorer Entry -->
+        <div class="portal-card">
+            <div class="project-row">
+                <div class="col-identity">
+                    <div class="col-identity-top">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm0 8H7v-2h10v2z"/>
+                            </svg>
+                        </div>
+                        <h2 class="project-title">PE Threshold Explorer</h2>
+                    </div>
+                    <span class="badge badge-tool">Interactive Tool</span>
+                </div>
+                <div class="col-desc">
+                    An interactive S&P 500 investment analysis dashboard. Run backtests and evaluate potential entry targets using customized price/earnings valuation bounds.
+                </div>
+                <div class="col-actions">
+                    <a href="stocks/pe-threshold.html" class="btn btn-primary">
+                        Launch Tool
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21 12l-8.15-8.15-1.42 1.42L16.86 11H5v2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Periodic Backtester Entry -->
+        <div class="portal-card">
+            <div class="project-row">
+                <div class="col-identity">
+                    <div class="col-identity-top">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"/>
+                            </svg>
+                        </div>
+                        <h2 class="project-title">Periodic Backtester</h2>
+                    </div>
+                    <span class="badge badge-tool">Interactive Tool</span>
+                </div>
+                <div class="col-desc">
+                    Simulate recurring investments (Dollar Cost Averaging) on arbitrary stock tickers, leveraging real historical adjusted close prices directly in your browser.
+                </div>
+                <div class="col-actions">
+                    <a href="stocks/periodic-investment.html" class="btn btn-primary">
+                        Launch Tool
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21 12l-8.15-8.15-1.42 1.42L16.86 11H5v2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Footer -->
+        <div class="portal-card footer-card">
+            <div class="footer-content">
+                <p>&copy; 2026 Hongfei Zhou. All rights reserved.</p>
+                <p>Bypassed with pure static hosting.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

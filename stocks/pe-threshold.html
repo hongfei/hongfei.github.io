@@ -6,173 +6,292 @@
   <title>S&P 500 PE Threshold Explorer</title>
   <link rel="icon" href="data:," />
   <style>
+    /* Design Tokens & Theme Setup */
     :root {
       color-scheme: light;
-      --bg: #f5f7f8;
-      --panel: #ffffff;
-      --ink: #16212b;
-      --muted: #536371;
-      --line: #ccd5dc;
-      --grid: #e4e9ed;
+      --bg-color: #fafafa;
+      --card-bg: #ffffff;
+      --text-primary: #18181b;     /* Zinc 900 */
+      --text-secondary: #4b5563;   /* Gray 600 */
+      --text-muted: #8e98a5;       /* Gray 400 */
+      --border-light: #e4e4e7;     /* Zinc 200 */
+      --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --transition-smooth: all 0.2s ease;
+      
+      /* Chart Color Tokens */
       --blue: #1f6692;
       --red: #a93a32;
       --green: #237b53;
       --green-soft: #dceee4;
-      --gold: #c48a26;
-      --warm: #f5e8ce;
-      --bad: #c85a47;
-      font-family: Arial, Helvetica, sans-serif;
+      --line: #ccd5dc;
+      --grid: #e4e9ed;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: var(--bg);
-      color: var(--ink);
+      background: var(--bg-color);
+      color: var(--text-secondary);
+      font-family: var(--font-stack);
+      line-height: 1.6;
+      padding: 2rem 1.5rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
+    /* Actions Toolbar */
+    .actions-wrapper {
+      max-width: min(1500px, calc(100vw - 48px));
+      margin: 0 auto 1.25rem auto;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .btn-back:hover {
+      color: var(--text-primary);
+      border-color: #a1a1aa;
+      background-color: #f4f4f5;
+    }
+    .btn-back svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* Original Page Layout Width */
     main {
-      width: min(1500px, calc(100vw - 48px));
+      max-width: min(1500px, calc(100vw - 48px));
+      width: 100%;
       margin: 0 auto;
-      padding: 32px 0 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    header {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: end;
-      margin-bottom: 18px;
+    /* Individual Card Layout (Contiguous base) */
+    .pe-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-light);
+      border-radius: 0;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.01);
+      transition: var(--transition-smooth);
+    }
+    .pe-card:hover {
+      position: relative;
+      z-index: 1;
+      border-color: #a1a1aa;
+      box-shadow: 0 4px 12px rgba(24, 24, 26, 0.04);
     }
 
+    /* Top Stack Contiguous Overlaps */
+    .top-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+    }
+    .top-stack .pe-card {
+      margin-bottom: -1px;
+    }
+    .top-stack .pe-card:first-child {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .top-stack .pe-card:last-child {
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      margin-bottom: 0;
+    }
+
+    /* Header Specific */
+    header.header-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+    }
     h1 {
-      margin: 0 0 8px;
-      font-size: clamp(30px, 4vw, 52px);
-      line-height: 1.05;
-      letter-spacing: 0;
+      margin: 0 0 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
     }
-
     .subtitle {
       margin: 0;
-      max-width: 980px;
-      color: var(--muted);
-      font-size: 18px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
       line-height: 1.45;
     }
-
     .source {
       text-align: right;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.5;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      line-height: 1.45;
       white-space: nowrap;
     }
+    .source a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+      transition: var(--transition-smooth);
+    }
+    .source a:hover {
+      color: var(--text-primary);
+      border-bottom-color: var(--text-primary);
+    }
 
-    a { color: #175e8a; }
-
+    /* Original Controls Row (Horizontal Grid inside card) */
     .controls {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      margin: 22px 0 16px;
+      gap: 1.5rem;
     }
-
     .control {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
       min-width: 0;
     }
-
     .control label {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 12px;
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 10px;
+      gap: 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
     }
-
     .control output {
-      color: var(--ink);
-      font-size: 20px;
+      color: var(--text-primary);
+      font-size: 1.05rem;
       font-weight: 700;
       font-variant-numeric: tabular-nums;
     }
-
     input[type="range"] {
       width: 100%;
-      accent-color: var(--green);
+      accent-color: var(--text-primary);
+      cursor: pointer;
     }
-
+    input:focus {
+      border-color: var(--text-primary);
+      box-shadow: 0 0 0 3px rgba(24, 24, 26, 0.08);
+      outline: none;
+    }
     .toggle-row {
       display: flex;
       align-items: center;
-      gap: 10px;
-      min-height: 34px;
-      margin-top: 6px;
-      color: var(--ink);
-      font-size: 15px;
+      gap: 8px;
+      min-height: 30px;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      line-height: 1.35;
     }
-
     .toggle-row input {
-      width: 18px;
-      height: 18px;
-      accent-color: var(--green);
+      width: 15px;
+      height: 15px;
+      accent-color: var(--text-primary);
+      cursor: pointer;
+      flex-shrink: 0;
     }
 
+    /* Original Stats Row (Horizontal Grid inside card) */
     .stats {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 12px;
-      margin: 0 0 16px;
+      gap: 1rem;
     }
-
     .stat {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 13px 16px;
-      min-height: 84px;
+      display: flex;
+      flex-direction: column;
+      border-left: 2px solid var(--border-light);
+      padding-left: 0.75rem;
     }
-
+    .stat:first-child {
+      border-left: 0;
+      padding-left: 0;
+    }
     .stat span {
       display: block;
-      color: var(--muted);
-      font-size: 13px;
-      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
-
     .stat strong {
       display: block;
-      font-size: clamp(22px, 2.6vw, 34px);
-      line-height: 1;
+      color: var(--text-primary);
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 1.1;
       font-variant-numeric: tabular-nums;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+    /* Section Headings */
+    .pe-card h2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Modern 2x2 Dashboard Grid */
+    .dashboard-grid {
+      display: flex;
+      flex-direction: column;
       gap: 16px;
-      align-items: start;
+      width: 100%;
+    }
+    .dashboard-row {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: stretch;
+      width: 100%;
     }
 
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px;
+    /* 2x2 Card Width Splits */
+    .chart-card-large {
+      flex: 1.1;
       min-width: 0;
+      border-radius: 12px;
     }
-
-    .panel h2 {
-      margin: 0 0 12px;
-      font-size: 21px;
-      line-height: 1.2;
-      letter-spacing: 0;
+    .chart-card-small {
+      flex: 0.9;
+      min-width: 0;
+      border-radius: 12px;
+    }
+    .table-card {
+      flex: 1.0;
+      min-width: 0;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
     }
 
     canvas {
@@ -180,153 +299,247 @@
       display: block;
     }
 
-    #timeChart { height: 620px; }
-    #bucketChart { height: 290px; }
-    #scatterChart { height: 300px; }
+    #timeChart { height: 300px; }
+    #bucketChart { height: 300px; }
+    #scatterChart { height: 260px; }
+
+    /* Scrollable Episodes Table Wrapper */
+    .table-scroll-wrapper {
+      max-height: 260px;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
 
     .legend {
       display: flex;
-      gap: 18px;
+      gap: 14px;
       align-items: center;
       flex-wrap: wrap;
-      color: var(--muted);
-      font-size: 14px;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
       margin: 2px 0 10px;
     }
-
     .key {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
+      gap: 6px;
     }
-
     .swatch {
-      width: 22px;
-      height: 10px;
+      width: 18px;
+      height: 8px;
       border-radius: 2px;
-      background: var(--line);
     }
-
     .readout {
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px solid var(--grid);
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.45;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-light);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      line-height: 1.4;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 14px;
+      font-size: 0.85rem;
       font-variant-numeric: tabular-nums;
     }
-
     th, td {
-      border-bottom: 1px solid var(--grid);
-      padding: 9px 6px;
+      border-bottom: 1px solid var(--border-light);
+      padding: 10px 8px;
       text-align: right;
     }
-
     th:first-child,
     td:first-child { text-align: left; }
-
     th {
-      color: var(--muted);
-      font-weight: 700;
+      color: var(--text-primary);
+      font-weight: 600;
+      background: var(--card-bg);
+      position: sticky;
+      top: 0;
+      z-index: 1;
     }
-
     .empty {
-      color: var(--muted);
+      color: var(--text-muted);
       padding: 24px;
       text-align: center;
+      font-size: 0.85rem;
     }
 
-    @media (max-width: 980px) {
-      main { width: min(100vw - 24px, 760px); padding-top: 20px; }
-      header, .grid { grid-template-columns: 1fr; }
-      .source { text-align: left; white-space: normal; }
-      .controls { grid-template-columns: 1fr 1fr; }
-      .stats { grid-template-columns: 1fr 1fr; }
-      #timeChart { height: 540px; }
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      body {
+        padding: 1.5rem 0.5rem;
+      }
+      main {
+        max-width: 100%;
+        gap: 16px;
+      }
+      .actions-wrapper {
+        margin-bottom: 1rem;
+      }
+      header.header-panel {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .source {
+        text-align: left;
+        white-space: normal;
+      }
+      .controls {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      .stat {
+        border-left: 0;
+        padding-left: 0;
+      }
+      
+      /* Mobile layout collapses rows to vertical scroll flow */
+      .dashboard-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+      }
+      .chart-card-large,
+      .chart-card-small,
+      .table-card {
+        flex: none !important;
+        width: 100% !important;
+        border-radius: 12px !important;
+      }
+      .table-scroll-wrapper {
+        max-height: none; /* Expand fully on mobile */
+      }
+      
+      /* Restore roundings on mobile since top stacks detach */
+      .top-stack .pe-card {
+        border-radius: 12px !important;
+        margin-bottom: 16px !important;
+      }
+      .top-stack .pe-card:last-child {
+        margin-bottom: 0 !important;
+      }
+      
+      #timeChart { height: 320px; }
+      #bucketChart { height: 260px; }
+      #scatterChart { height: 260px; }
     }
 
-    @media (max-width: 620px) {
-      .controls, .stats { grid-template-columns: 1fr; }
+    @media (max-width: 600px) {
+      .controls {
+        grid-template-columns: 1fr;
+      }
+      .stats {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- Actions Toolbar -->
+  <div class="actions-wrapper">
+    <a href="../index.html" class="btn-back">
+      <svg viewBox="0 0 24 24">
+        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+      </svg>
+      Back to Dashboard
+    </a>
+  </div>
+
   <main>
-    <header>
-      <div>
-        <h1>S&P 500 PE Threshold Explorer</h1>
-        <p class="subtitle">Test whether low PE levels historically lined up with better future S&P 500 price returns. Green spans show months selected by the current PE threshold.</p>
-      </div>
-      <div class="source">
-        Data: <a href="https://www.multpl.com/s-p-500-pe-ratio/table/by-month">Multpl PE</a><br />
-        Price: <a href="https://www.multpl.com/s-p-500-historical-prices/table/by-month">Multpl S&amp;P 500</a>
-      </div>
-    </header>
-
-    <section class="controls" aria-label="Chart controls">
-      <div class="control">
-        <label for="peThreshold">PE threshold <output id="peOut">10</output></label>
-        <input id="peThreshold" type="range" min="6" max="35" step="0.5" value="10" />
-      </div>
-      <div class="control">
-        <label for="horizon">Forward return horizon <output id="horizonOut">10y</output></label>
-        <input id="horizon" type="range" min="1" max="10" step="1" value="10" />
-      </div>
-      <div class="control">
-        <label for="drawdown">Prior 12-month drawdown filter <output id="drawdownOut">off</output></label>
-        <input id="drawdown" type="range" min="0" max="40" step="5" value="0" />
-      </div>
-      <div class="control">
-        <label>Mode <output id="modeOut">All months</output></label>
-        <div class="toggle-row">
-          <input id="episodeMode" type="checkbox" />
-          <span>Count only first month of each selected episode</span>
+    <div class="top-stack">
+      <!-- Card 1: Header -->
+      <header class="pe-card header-panel">
+        <div>
+          <h1>S&P 500 PE Threshold Explorer</h1>
+          <p class="subtitle">Test whether low PE levels historically lined up with better future S&P 500 price returns. Green spans show months selected by the current PE threshold.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="stats" aria-label="Selection summary">
-      <div class="stat"><span>Selected observations</span><strong id="statN">-</strong></div>
-      <div class="stat"><span>Positive forward returns</span><strong id="statPositive">-</strong></div>
-      <div class="stat"><span>Median annualized return</span><strong id="statMedian">-</strong></div>
-      <div class="stat"><span>Average annualized return</span><strong id="statMean">-</strong></div>
-      <div class="stat"><span>Best comparable threshold</span><strong id="statBest">-</strong></div>
-    </section>
-
-    <section class="grid">
-      <article class="panel">
-        <h2>Price, PE, and Selected Low-PE Windows</h2>
-        <div class="legend">
-          <span class="key"><span class="swatch" style="background: var(--green-soft)"></span>selected PE window</span>
-          <span class="key"><span class="swatch" style="background: var(--blue)"></span>S&amp;P 500 price, log scale</span>
-          <span class="key"><span class="swatch" style="background: var(--red)"></span>PE ratio</span>
+        <div class="source">
+          Data: <a href="https://www.multpl.com/s-p-500-pe-ratio/table/by-month" target="_blank" rel="noopener">Multpl PE</a><br />
+          Price: <a href="https://www.multpl.com/s-p-500-historical-prices/table/by-month" target="_blank" rel="noopener">Multpl S&amp;P 500</a>
         </div>
-        <canvas id="timeChart"></canvas>
-        <div class="readout" id="mainReadout"></div>
-      </article>
+      </header>
 
-      <div>
-        <article class="panel">
+      <!-- Card 2: Controls -->
+      <section class="pe-card controls" aria-label="Chart controls">
+        <div class="control">
+          <label for="peThreshold">PE threshold <output id="peOut">10</output></label>
+          <input id="peThreshold" type="range" min="6" max="35" step="0.5" value="10" />
+        </div>
+        <div class="control">
+          <label for="horizon">Forward return horizon <output id="horizonOut">10y</output></label>
+          <input id="horizon" type="range" min="1" max="10" step="1" value="10" />
+        </div>
+        <div class="control">
+          <label for="drawdown">Prior 12-month drawdown filter <output id="drawdownOut">off</output></label>
+          <input id="drawdown" type="range" min="0" max="40" step="5" value="0" />
+        </div>
+        <div class="control">
+          <label>Mode <output id="modeOut">All months</output></label>
+          <div class="toggle-row">
+            <input id="episodeMode" type="checkbox" />
+            <span>Count only first month of each selected episode</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card 3: Summary stats -->
+      <section class="pe-card stats" aria-label="Selection summary">
+        <div class="stat"><span>Selected observations</span><strong id="statN">-</strong></div>
+        <div class="stat"><span>Positive forward returns</span><strong id="statPositive">-</strong></div>
+        <div class="stat"><span>Median annualized return</span><strong id="statMedian">-</strong></div>
+        <div class="stat"><span>Average annualized return</span><strong id="statMean">-</strong></div>
+        <div class="stat"><span>Best comparable threshold</span><strong id="statBest">-</strong></div>
+      </section>
+    </div>
+
+    <!-- 2x2 Dashboard Row Grid -->
+    <div class="dashboard-grid">
+      <!-- Row 1 -->
+      <div class="dashboard-row">
+        <!-- Card 4: Time Series Chart -->
+        <article class="pe-card panel chart-card-large">
+          <h2>Price, PE, and Selected Low-PE Windows</h2>
+          <div class="legend">
+            <span class="key"><span class="swatch" style="background: var(--green-soft)"></span>selected PE window</span>
+            <span class="key"><span class="swatch" style="background: var(--blue)"></span>S&amp;P 500 price</span>
+            <span class="key"><span class="swatch" style="background: var(--red)"></span>PE ratio</span>
+          </div>
+          <canvas id="timeChart"></canvas>
+          <div class="readout" id="mainReadout"></div>
+        </article>
+
+        <!-- Card 5: Returns by starting PE -->
+        <article class="pe-card panel chart-card-small">
           <h2>Forward Returns by Starting PE</h2>
           <canvas id="bucketChart"></canvas>
         </article>
-        <article class="panel" style="margin-top: 16px;">
+      </div>
+
+      <!-- Row 2 -->
+      <div class="dashboard-row">
+        <!-- Card 6: Scatter Chart -->
+        <article class="pe-card panel chart-card-small">
           <h2>Selected Months: PE vs Forward Return</h2>
           <canvas id="scatterChart"></canvas>
         </article>
-        <article class="panel" style="margin-top: 16px;">
+
+        <!-- Card 7: Episodes Table -->
+        <article class="pe-card panel table-card">
           <h2>Selected Episodes</h2>
-          <div id="episodeTable"></div>
+          <div class="table-scroll-wrapper">
+            <div id="episodeTable"></div>
+          </div>
         </article>
       </div>
-    </section>
+    </div>
   </main>
 
   <script>
@@ -2596,8 +2809,43 @@
       `;
     }
 
+    const STORAGE_KEYS = {
+      pe: "pe_threshold_val",
+      horizon: "pe_horizon_val",
+      drawdown: "pe_drawdown_val",
+      episodeMode: "pe_episode_mode_val"
+    };
+
+    function saveSettings() {
+      try {
+        localStorage.setItem(STORAGE_KEYS.pe, els.pe.value);
+        localStorage.setItem(STORAGE_KEYS.horizon, els.horizon.value);
+        localStorage.setItem(STORAGE_KEYS.drawdown, els.drawdown.value);
+        localStorage.setItem(STORAGE_KEYS.episodeMode, els.episodeMode.checked);
+      } catch (e) {
+        console.warn("Failed to save settings to localStorage:", e);
+      }
+    }
+
+    function loadSettings() {
+      try {
+        const peVal = localStorage.getItem(STORAGE_KEYS.pe);
+        const horizonVal = localStorage.getItem(STORAGE_KEYS.horizon);
+        const drawdownVal = localStorage.getItem(STORAGE_KEYS.drawdown);
+        const modeVal = localStorage.getItem(STORAGE_KEYS.episodeMode);
+
+        if (peVal !== null) els.pe.value = peVal;
+        if (horizonVal !== null) els.horizon.value = horizonVal;
+        if (drawdownVal !== null) els.drawdown.value = drawdownVal;
+        if (modeVal !== null) els.episodeMode.checked = (modeVal === "true");
+      } catch (e) {
+        console.warn("Failed to load settings from localStorage:", e);
+      }
+    }
+
     function render() {
       if (!rows.length) return;
+      saveSettings();
       const settings = getSettings();
       els.peOut.textContent = settings.threshold.toFixed(settings.threshold % 1 ? 1 : 0);
       els.horizonOut.textContent = `${settings.horizon}y`;
@@ -2613,6 +2861,7 @@
 
     function init() {
       rows = parseCsv(EMBEDDED_CSV);
+      loadSettings();
       for (const el of [els.pe, els.horizon, els.drawdown, els.episodeMode]) {
         el.addEventListener("input", render);
         el.addEventListener("change", render);
