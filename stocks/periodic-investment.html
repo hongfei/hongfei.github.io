@@ -1,0 +1,1602 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Historical Periodic Investment Backtester</title>
+  <link rel="icon" href="data:," />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f7;
+      --panel: #ffffff;
+      --ink: #18232d;
+      --muted: #586977;
+      --line: #ccd5dc;
+      --grid: #e5eaee;
+      --blue: #1c6f9e;
+      --blue-soft: #e6f1f8;
+      --green: #247a57;
+      --green-soft: #dfeee6;
+      --gold: #b77b24;
+      --red: #a94339;
+      --shadow: 0 10px 26px rgba(28, 43, 55, 0.08);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    main {
+      width: min(1420px, calc(100vw - 40px));
+      margin: 0 auto;
+      padding: 30px 0 46px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 0;
+      max-width: 900px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .header-note {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+      max-width: 260px;
+      text-align: right;
+    }
+
+    .top-grid {
+      display: grid;
+      grid-template-columns: 390px minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      min-width: 0;
+    }
+
+    .controls {
+      padding: 18px;
+    }
+
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .field label,
+    .field legend {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 7px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 15px;
+      padding: 9px 11px;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus-visible {
+      outline: 3px solid rgba(28, 111, 158, 0.22);
+      outline-offset: 1px;
+      border-color: var(--blue);
+    }
+
+    input[type="range"] {
+      min-height: auto;
+      padding: 0;
+      border: 0;
+      accent-color: var(--green);
+    }
+
+    .segmented {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      padding: 5px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafb;
+    }
+
+    .segmented.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .segmented button {
+      min-height: 34px;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .segmented button[aria-pressed="true"] {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .inline-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .sleeves {
+      display: grid;
+      gap: 10px;
+      margin-top: 2px;
+    }
+
+    body:not(.single-sleeve) .sleeves {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sleeve {
+      border: 1px solid var(--grid);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfd;
+    }
+
+    .sleeve-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .sleeve-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .sleeve:nth-child(2) .dot { background: var(--gold); }
+
+    .allocation-pill {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .single-sleeve .allocation-pill {
+      display: none;
+    }
+
+    .sleeve-fields {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 8px;
+      align-items: end;
+    }
+
+    .single-sleeve .allocation-slider {
+      display: none;
+    }
+
+    .sleeve-fields label {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .allocation-slider {
+      grid-column: 1 / -1;
+      border: 1px solid var(--grid);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfd;
+    }
+
+    .allocation-slider label {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 9px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .allocation-slider output {
+      color: var(--ink);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .action-button {
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--green);
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      padding: 9px 13px;
+      cursor: pointer;
+    }
+
+    .action-button.secondary {
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .status {
+      min-height: 42px;
+      border: 1px solid var(--grid);
+      border-radius: 7px;
+      background: #fbfcfd;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      padding: 8px 10px;
+      overflow-wrap: anywhere;
+    }
+
+    .status strong {
+      color: var(--ink);
+    }
+
+    .status.error {
+      border-color: rgba(169, 67, 57, 0.38);
+      background: #fff6f4;
+      color: var(--red);
+    }
+
+    .dashboard {
+      display: grid;
+      gap: 16px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .stat {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      min-height: 96px;
+      box-shadow: var(--shadow);
+    }
+
+    .stat span {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: clamp(22px, 2.5vw, 34px);
+      line-height: 1.05;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+    }
+
+    .stat small {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .visual-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.55fr);
+      gap: 16px;
+    }
+
+    .chart-panel,
+    .table-panel {
+      padding: 18px;
+    }
+
+    .chart-panel {
+      position: relative;
+    }
+
+    .chart-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 14px;
+      margin-bottom: 6px;
+    }
+
+    .legend {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .key {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      white-space: nowrap;
+    }
+
+    .swatch {
+      width: 20px;
+      height: 9px;
+      border-radius: 2px;
+      background: var(--line);
+    }
+
+    .swatch.balance { background: var(--green); }
+    .swatch.invested { background: var(--blue); }
+    .swatch.sleeve-a { background: var(--blue); }
+    .swatch.sleeve-b { background: var(--gold); }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 390px;
+    }
+
+    .chart-tooltip {
+      position: absolute;
+      z-index: 5;
+      min-width: 190px;
+      max-width: min(280px, calc(100vw - 48px));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: var(--shadow);
+      color: var(--ink);
+      font-size: 12px;
+      line-height: 1.35;
+      padding: 10px 11px;
+      pointer-events: none;
+      transform: translateY(-50%);
+    }
+
+    .chart-tooltip[hidden] {
+      display: none;
+    }
+
+    .chart-tooltip strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    .chart-tooltip dl {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 14px;
+      margin: 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .chart-tooltip dt {
+      color: var(--muted);
+    }
+
+    .chart-tooltip dd {
+      margin: 0;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .breakdown {
+      margin-top: 14px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 76px minmax(0, 1fr) 90px;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .track {
+      height: 12px;
+      border-radius: 99px;
+      background: var(--grid);
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      border-radius: 99px;
+      background: var(--blue);
+    }
+
+    .bar-row:nth-child(2) .fill { background: var(--gold); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+    }
+
+    th,
+    td {
+      padding: 9px 6px;
+      border-bottom: 1px solid var(--grid);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .note {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 1120px) {
+      .top-grid,
+      .visual-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100vw - 24px, 680px);
+        padding-top: 20px;
+      }
+
+      header {
+        grid-template-columns: 1fr;
+      }
+
+      .header-note {
+        max-width: none;
+        text-align: left;
+      }
+
+      .stats,
+      .inline-fields,
+      .sleeves,
+      .sleeve-fields {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        grid-template-columns: 1fr;
+      }
+
+      body:not(.single-sleeve) .sleeves {
+        grid-template-columns: 1fr;
+      }
+
+      .chart-head {
+        display: block;
+      }
+
+      .legend {
+        margin-top: 10px;
+      }
+
+      canvas {
+        height: 300px;
+      }
+
+      .table-scroll {
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body class="single-sleeve">
+  <main>
+    <header>
+      <div>
+        <h1>Historical Periodic Investment Backtester</h1>
+        <p class="subtitle">Simulate what your total return would be if you started investing years ago and held through the latest Yahoo adjusted close.</p>
+      </div>
+      <div class="header-note">Adjusted close data is cached locally in this browser to reduce repeat requests.</div>
+    </header>
+
+    <div class="top-grid">
+      <section class="panel controls" aria-labelledby="inputs-title">
+        <h2 id="inputs-title">Inputs</h2>
+        <div class="form-grid">
+          <fieldset class="field">
+            <legend>Investment frequency</legend>
+            <div class="segmented" id="frequencyGroup">
+              <button type="button" data-frequency="52" aria-pressed="true">Weekly</button>
+              <button type="button" data-frequency="26" aria-pressed="false">Biweekly</button>
+              <button type="button" data-frequency="12" aria-pressed="false">Monthly</button>
+            </div>
+          </fieldset>
+
+          <div class="inline-fields">
+            <div class="field">
+              <label for="amount">Periodic amount</label>
+              <input id="amount" type="number" min="0" step="25" value="500" inputmode="decimal" />
+            </div>
+            <div class="field">
+              <label for="timing">Contribution timing</label>
+              <select id="timing">
+                <option value="end" selected>End of period</option>
+                <option value="beginning">Beginning</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="years"><span>Started</span><output id="yearsValue">10 years ago</output></label>
+            <input id="years" type="range" min="1" max="50" step="1" value="10" />
+          </div>
+
+          <fieldset class="field">
+            <legend>Sleeves</legend>
+            <div class="segmented two" id="sleeveMode">
+              <button type="button" data-sleeves="1" aria-pressed="true">One</button>
+              <button type="button" data-sleeves="2" aria-pressed="false">Two</button>
+            </div>
+          </fieldset>
+
+          <div class="sleeves">
+            <section class="sleeve" data-sleeve="a">
+              <div class="sleeve-head">
+                <span class="sleeve-title"><span class="dot" aria-hidden="true"></span>Sleeve A</span>
+                <span class="allocation-pill" id="allocationAReadout">100.0%</span>
+              </div>
+              <div class="sleeve-fields">
+                <div>
+                  <label for="tickerA">Ticker</label>
+                  <input id="tickerA" list="tickerList" value="VOO" maxlength="12" autocomplete="off" />
+                </div>
+              </div>
+            </section>
+
+            <section class="sleeve" data-sleeve="b" id="sleeveB">
+              <div class="sleeve-head">
+                <span class="sleeve-title"><span class="dot" aria-hidden="true"></span>Sleeve B</span>
+                <span class="allocation-pill" id="allocationBReadout">40.0%</span>
+              </div>
+              <div class="sleeve-fields">
+                <div>
+                  <label for="tickerB">Ticker</label>
+                  <input id="tickerB" list="tickerList" value="QQQ" maxlength="12" autocomplete="off" />
+                </div>
+              </div>
+            </section>
+
+            <div class="allocation-slider" id="allocationSlider">
+              <label for="allocationA">
+                <span>Sleeve split</span>
+                <output id="allocationSplitReadout">VOO 60% / QQQ 40%</output>
+              </label>
+              <input id="allocationA" type="range" min="0" max="100" step="1" value="60" />
+            </div>
+          </div>
+
+          <div class="actions">
+            <div class="status" id="dataStatus">Loading Yahoo adjusted close history...</div>
+            <button class="action-button secondary" id="refreshData" type="button">Refresh Data</button>
+          </div>
+
+          <datalist id="tickerList">
+            <option value="VOO"></option>
+            <option value="VTI"></option>
+            <option value="SPY"></option>
+            <option value="QQQ"></option>
+            <option value="SCHD"></option>
+            <option value="VXUS"></option>
+            <option value="BND"></option>
+            <option value="AAPL"></option>
+            <option value="MSFT"></option>
+            <option value="NVDA"></option>
+          </datalist>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Investment results">
+        <div class="stats">
+          <div class="stat">
+            <span>Ending value</span>
+            <strong id="endingValue">$0</strong>
+            <small id="periodCount">0 contributions</small>
+          </div>
+          <div class="stat">
+            <span>Total invested</span>
+            <strong id="totalInvested">$0</strong>
+            <small id="annualContribution">$0 per year</small>
+          </div>
+          <div class="stat">
+            <span>Total gain</span>
+            <strong id="totalGain">$0</strong>
+            <small id="gainMultiple">0.0x invested</small>
+          </div>
+          <div class="stat">
+            <span>Total return</span>
+            <strong id="totalReturn">0.0%</strong>
+            <small id="blendedReturn">Adjusted close backtest</small>
+          </div>
+        </div>
+
+        <div class="visual-grid">
+          <section class="panel chart-panel" aria-labelledby="chart-title">
+            <div class="chart-head">
+              <h2 id="chart-title">Growth Path</h2>
+              <div class="legend" aria-hidden="true">
+                <span class="key"><span class="swatch balance"></span>Balance</span>
+                <span class="key"><span class="swatch invested"></span>Invested</span>
+              </div>
+            </div>
+            <canvas id="growthChart" width="900" height="430" aria-label="Investment balance chart"></canvas>
+            <div class="chart-tooltip" id="chartTooltip" hidden></div>
+            <div class="breakdown" id="breakdown"></div>
+            <p class="note" id="calcNote"></p>
+          </section>
+
+          <section class="panel table-panel" aria-labelledby="table-title">
+            <h2 id="table-title">Annual Detail</h2>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Date</th>
+                    <th>Invested</th>
+                    <th>Balance</th>
+                    <th>Gain</th>
+                  </tr>
+                </thead>
+                <tbody id="annualRows"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const els = {
+      amount: document.getElementById('amount'),
+      timing: document.getElementById('timing'),
+      years: document.getElementById('years'),
+      yearsValue: document.getElementById('yearsValue'),
+      frequencyGroup: document.getElementById('frequencyGroup'),
+      sleeveMode: document.getElementById('sleeveMode'),
+      sleeveB: document.getElementById('sleeveB'),
+      tickerA: document.getElementById('tickerA'),
+      tickerB: document.getElementById('tickerB'),
+      allocationA: document.getElementById('allocationA'),
+      allocationAReadout: document.getElementById('allocationAReadout'),
+      allocationBReadout: document.getElementById('allocationBReadout'),
+      allocationSplitReadout: document.getElementById('allocationSplitReadout'),
+      refreshData: document.getElementById('refreshData'),
+      dataStatus: document.getElementById('dataStatus'),
+      endingValue: document.getElementById('endingValue'),
+      totalInvested: document.getElementById('totalInvested'),
+      totalGain: document.getElementById('totalGain'),
+      totalReturn: document.getElementById('totalReturn'),
+      periodCount: document.getElementById('periodCount'),
+      annualContribution: document.getElementById('annualContribution'),
+      gainMultiple: document.getElementById('gainMultiple'),
+      blendedReturn: document.getElementById('blendedReturn'),
+      annualRows: document.getElementById('annualRows'),
+      breakdown: document.getElementById('breakdown'),
+      calcNote: document.getElementById('calcNote'),
+      chart: document.getElementById('growthChart'),
+      chartTooltip: document.getElementById('chartTooltip')
+    };
+
+    const money = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      maximumFractionDigits: 0
+    });
+
+    const CACHE_VERSION = 'v2';
+    const INPUT_CACHE_KEY = 'periodic-investment:input-state:v1';
+    const CACHE_TTL_MS = 12 * 60 * 60 * 1000;
+    const DAY_MS = 24 * 60 * 60 * 1000;
+    const YEAR_MS = 365.25 * DAY_MS;
+    const historyMemory = new Map();
+
+    let frequency = 52;
+    let sleeveCount = 1;
+    let renderToken = 0;
+    let renderTimer = 0;
+    let lastResult = null;
+    let chartState = null;
+    let chartHoverPoint = null;
+
+    function readNumber(input, fallback = 0) {
+      const value = Number(input.value);
+      return Number.isFinite(value) ? value : fallback;
+    }
+
+    function pct(value) {
+      return `${value.toFixed(1)}%`;
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    function formatDate(time) {
+      return new Date(time).toISOString().slice(0, 10);
+    }
+
+    function parseDate(dateText) {
+      const [year, month, day] = dateText.split('-').map(Number);
+      return Date.UTC(year, month - 1, day, 12);
+    }
+
+    function addYears(time, years) {
+      const date = new Date(time);
+      date.setUTCFullYear(date.getUTCFullYear() + years);
+      return date.getTime();
+    }
+
+    function addMonths(time, months) {
+      const date = new Date(time);
+      const day = date.getUTCDate();
+      date.setUTCDate(1);
+      date.setUTCMonth(date.getUTCMonth() + months);
+      const lastDay = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + 1, 0)).getUTCDate();
+      date.setUTCDate(Math.min(day, lastDay));
+      return date.getTime();
+    }
+
+    function addPeriod(time) {
+      if (frequency === 12) return addMonths(time, 1);
+      return time + (frequency === 26 ? 14 : 7) * DAY_MS;
+    }
+
+    function setPressed(group, attr, value) {
+      group.querySelectorAll('button').forEach((button) => {
+        button.setAttribute('aria-pressed', String(button.dataset[attr] === String(value)));
+      });
+    }
+
+    function clampNumber(value, min, max, fallback) {
+      const number = Number(value);
+      if (!Number.isFinite(number)) return fallback;
+      return Math.min(max, Math.max(min, number));
+    }
+
+    function loadInputState() {
+      try {
+        const raw = localStorage.getItem(INPUT_CACHE_KEY);
+        if (!raw) return;
+        const state = JSON.parse(raw);
+        if (!state || typeof state !== 'object') return;
+
+        frequency = [12, 26, 52].includes(Number(state.frequency)) ? Number(state.frequency) : frequency;
+        sleeveCount = [1, 2].includes(Number(state.sleeveCount)) ? Number(state.sleeveCount) : sleeveCount;
+        els.amount.value = String(clampNumber(state.amount, 0, 100000000, readNumber(els.amount, 500)));
+        els.years.value = String(clampNumber(state.years, 1, 50, readNumber(els.years, 10)));
+        els.allocationA.value = String(clampNumber(state.allocationA, 0, 100, readNumber(els.allocationA, 60)));
+
+        if (state.timing === 'beginning' || state.timing === 'end') {
+          els.timing.value = state.timing;
+        }
+        if (typeof state.tickerA === 'string' && state.tickerA.trim()) {
+          els.tickerA.value = state.tickerA.trim().toUpperCase().slice(0, 12);
+        }
+        if (typeof state.tickerB === 'string' && state.tickerB.trim()) {
+          els.tickerB.value = state.tickerB.trim().toUpperCase().slice(0, 12);
+        }
+
+        setPressed(els.frequencyGroup, 'frequency', frequency);
+        setPressed(els.sleeveMode, 'sleeves', sleeveCount);
+      } catch (error) {
+        // Corrupt or unavailable localStorage should not block the calculator.
+      }
+    }
+
+    function saveInputState() {
+      const state = {
+        amount: readNumber(els.amount, 0),
+        timing: els.timing.value,
+        years: readNumber(els.years, 10),
+        frequency,
+        sleeveCount,
+        tickerA: els.tickerA.value.trim().toUpperCase(),
+        tickerB: els.tickerB.value.trim().toUpperCase(),
+        allocationA: readNumber(els.allocationA, 60)
+      };
+      try {
+        localStorage.setItem(INPUT_CACHE_KEY, JSON.stringify(state));
+      } catch (error) {
+        // Ignore private-browsing or quota failures; calculations still work.
+      }
+    }
+
+    function getSleeves() {
+      const tickerA = els.tickerA.value.trim().toUpperCase() || 'VOO';
+      if (sleeveCount === 1) {
+        return [{ ticker: tickerA, allocation: 1, color: '#1c6f9e' }];
+      }
+
+      const rawA = Math.min(100, Math.max(0, readNumber(els.allocationA, 60)));
+      const rawB = 100 - rawA;
+      return [{
+        ticker: tickerA,
+        allocation: rawA / 100,
+        color: '#1c6f9e'
+      }, {
+        ticker: els.tickerB.value.trim().toUpperCase() || 'QQQ',
+        allocation: rawB / 100,
+        color: '#b77b24'
+      }];
+    }
+
+    function cacheKey(ticker) {
+      return `periodic-investment:yahoo-adjusted:${CACHE_VERSION}:${ticker}`;
+    }
+
+    function readCachedHistory(ticker) {
+      const memory = historyMemory.get(ticker);
+      if (memory) return memory;
+      try {
+        const raw = localStorage.getItem(cacheKey(ticker));
+        if (!raw) return null;
+        const cached = JSON.parse(raw);
+        if (!cached || !Array.isArray(cached.prices) || cached.prices.length < 2) return null;
+        cached.prices = cached.prices.map((point) => ({
+          date: point.date,
+          time: parseDate(point.date),
+          price: Number(point.price)
+        })).filter((point) => Number.isFinite(point.price) && point.price > 0);
+        historyMemory.set(ticker, cached);
+        return cached;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function writeCachedHistory(ticker, payload) {
+      const compact = {
+        ticker,
+        fetchedAt: Date.now(),
+        source: payload.source,
+        prices: payload.prices.map((point) => ({ date: point.date, price: point.price }))
+      };
+      historyMemory.set(ticker, {
+        ...compact,
+        prices: payload.prices
+      });
+      try {
+        localStorage.setItem(cacheKey(ticker), JSON.stringify(compact));
+      } catch (error) {
+        // Cache quota or privacy settings can block writes; the live result still works.
+      }
+      return historyMemory.get(ticker);
+    }
+
+    function yahooUrl(ticker) {
+      const params = 'range=max&interval=1d&events=history&includeAdjustedClose=true';
+      return `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?${params}`;
+    }
+
+    function yahooProxyUrl(ticker) {
+      return `https://r.jina.ai/http://r.jina.ai/http://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=max&interval=1d&events=history&includeAdjustedClose=true`;
+    }
+
+    async function fetchText(url) {
+      const response = await fetch(url, { cache: 'no-store' });
+      const text = await response.text();
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${text.slice(0, 80)}`);
+      }
+      return text;
+    }
+
+    function parseYahooPayload(text, ticker) {
+      const jsonStart = text.indexOf('{"chart"');
+      const jsonText = jsonStart >= 0 ? text.slice(jsonStart).trim() : text.trim();
+      const payload = JSON.parse(jsonText);
+      const result = payload.chart?.result?.[0];
+      const error = payload.chart?.error;
+      if (error) throw new Error(error.description || error.code || 'Yahoo returned an error');
+      if (!result?.timestamp?.length) throw new Error(`No Yahoo history found for ${ticker}`);
+
+      const timestamps = result.timestamp;
+      const adjclose = result.indicators?.adjclose?.[0]?.adjclose;
+      const close = result.indicators?.quote?.[0]?.close;
+      const series = adjclose || close;
+      if (!series?.length) throw new Error(`No adjusted close history found for ${ticker}`);
+
+      const prices = timestamps.map((timestamp, index) => ({
+        date: formatDate(timestamp * 1000),
+        time: parseDate(formatDate(timestamp * 1000)),
+        price: Number(series[index])
+      })).filter((point) => Number.isFinite(point.price) && point.price > 0);
+
+      if (prices.length < 2) throw new Error(`Not enough Yahoo history found for ${ticker}`);
+      prices.sort((a, b) => a.time - b.time);
+      return prices;
+    }
+
+    async function fetchYahooHistory(ticker) {
+      const attempts = [{
+        source: 'Yahoo',
+        url: yahooUrl(ticker)
+      }, {
+        source: 'Yahoo via cache proxy',
+        url: yahooProxyUrl(ticker)
+      }];
+
+      let lastError = null;
+      for (const attempt of attempts) {
+        try {
+          const text = await fetchText(attempt.url);
+          const prices = parseYahooPayload(text, ticker);
+          return writeCachedHistory(ticker, { source: attempt.source, prices });
+        } catch (error) {
+          lastError = error;
+        }
+      }
+      throw lastError || new Error(`Could not fetch ${ticker}`);
+    }
+
+    async function getHistory(ticker, forceRefresh) {
+      const cached = readCachedHistory(ticker);
+      const isFresh = cached && Date.now() - cached.fetchedAt < CACHE_TTL_MS;
+      if (cached && isFresh && !forceRefresh) {
+        return { ...cached, fromCache: true, stale: false };
+      }
+
+      try {
+        const fetched = await fetchYahooHistory(ticker);
+        return { ...fetched, fromCache: false, stale: false };
+      } catch (error) {
+        if (cached) {
+          return { ...cached, fromCache: true, stale: true, warning: error.message };
+        }
+        throw error;
+      }
+    }
+
+    function findOnOrAfter(prices, time) {
+      let low = 0;
+      let high = prices.length - 1;
+      let answer = null;
+      while (low <= high) {
+        const mid = Math.floor((low + high) / 2);
+        if (prices[mid].time >= time) {
+          answer = prices[mid];
+          high = mid - 1;
+        } else {
+          low = mid + 1;
+        }
+      }
+      return answer;
+    }
+
+    function findOnOrBefore(prices, time) {
+      let low = 0;
+      let high = prices.length - 1;
+      let answer = null;
+      while (low <= high) {
+        const mid = Math.floor((low + high) / 2);
+        if (prices[mid].time <= time) {
+          answer = prices[mid];
+          low = mid + 1;
+        } else {
+          high = mid - 1;
+        }
+      }
+      return answer;
+    }
+
+    function buildCheckpoints(startTime, endTime) {
+      const checkpoints = [];
+      let year = 1;
+      while (true) {
+        const time = addYears(startTime, year);
+        if (time >= endTime) break;
+        checkpoints.push({ label: String(year), time, year });
+        year += 1;
+      }
+      checkpoints.push({
+        label: String(year),
+        time: endTime,
+        year: (endTime - startTime) / YEAR_MS
+      });
+      return checkpoints;
+    }
+
+    function calculateWithHistory(sleeves, histories) {
+      const amount = Math.max(0, readNumber(els.amount, 0));
+      const selectedYears = Math.max(1, readNumber(els.years, 1));
+      const commonStart = Math.max(...histories.map((history) => history.prices[0].time));
+      const commonEnd = Math.min(...histories.map((history) => history.prices[history.prices.length - 1].time));
+      const requestedStart = addYears(commonEnd, -selectedYears);
+      if (requestedStart < commonStart) {
+        throw new Error(`Not enough overlapping Yahoo history to start ${selectedYears} years ago. Earliest common adjusted close date is ${formatDate(commonStart)}.`);
+      }
+      const startTime = requestedStart;
+      const endTime = commonEnd;
+      const actualYears = (endTime - startTime) / YEAR_MS;
+      if (actualYears < 0.05) {
+        throw new Error('Selected tickers do not have enough overlapping Yahoo adjusted close history.');
+      }
+
+      const contributionLabel = frequency === 52 ? 'weekly' : frequency === 26 ? 'biweekly' : 'monthly';
+      const contributionEvents = [];
+      let scheduledTime = els.timing.value === 'beginning' ? startTime : addPeriod(startTime);
+      while (scheduledTime <= endTime) {
+        sleeves.forEach((sleeve, index) => {
+          const point = findOnOrAfter(histories[index].prices, scheduledTime);
+          if (point && point.time <= endTime) {
+            const contribution = amount * sleeve.allocation;
+            contributionEvents.push({
+              time: point.time,
+              date: point.date,
+              sleeveIndex: index,
+              contribution,
+              price: point.price
+            });
+          }
+        });
+        scheduledTime = addPeriod(scheduledTime);
+      }
+      contributionEvents.sort((a, b) => a.time - b.time);
+
+      const positions = sleeves.map((sleeve, index) => ({
+        ...sleeve,
+        shares: 0,
+        invested: 0,
+        balance: 0,
+        latestPrice: findOnOrBefore(histories[index].prices, endTime)
+      }));
+      const points = [{ year: 0, time: startTime, date: formatDate(startTime), invested: 0, balance: 0, sleeves: positions.map(() => 0) }];
+      const rows = [];
+      const checkpoints = buildCheckpoints(startTime, endTime);
+      let totalInvested = 0;
+      let eventIndex = 0;
+
+      checkpoints.forEach((checkpoint) => {
+        while (eventIndex < contributionEvents.length && contributionEvents[eventIndex].time <= checkpoint.time) {
+          const event = contributionEvents[eventIndex];
+          const position = positions[event.sleeveIndex];
+          position.shares += event.contribution / event.price;
+          position.invested += event.contribution;
+          totalInvested += event.contribution;
+          eventIndex += 1;
+        }
+
+        let balance = 0;
+        const sleeveBalances = positions.map((position, index) => {
+          const pricePoint = findOnOrBefore(histories[index].prices, checkpoint.time);
+          const value = pricePoint ? position.shares * pricePoint.price : 0;
+          balance += value;
+          return value;
+        });
+
+        const point = {
+          year: checkpoint.year,
+          time: checkpoint.time,
+          label: checkpoint.label,
+          date: formatDate(checkpoint.time),
+          invested: totalInvested,
+          balance,
+          sleeves: sleeveBalances
+        };
+        points.push(point);
+        rows.push(point);
+      });
+
+      positions.forEach((position) => {
+        position.balance = position.latestPrice ? position.shares * position.latestPrice.price : 0;
+      });
+
+      const balance = positions.reduce((sum, position) => sum + position.balance, 0);
+      const gain = balance - totalInvested;
+      const totalReturn = totalInvested > 0 ? (gain / totalInvested) * 100 : 0;
+
+      return {
+        amount,
+        selectedYears,
+        actualYears,
+        contributionLabel,
+        totalPeriods: Math.round(contributionEvents.length / sleeves.length),
+        startDate: formatDate(startTime),
+        endDate: formatDate(endTime),
+        sleeves: positions,
+        histories,
+        points,
+        rows,
+        totalInvested,
+        balance,
+        gain,
+        totalReturn
+      };
+    }
+
+    function drawEmptyChart(message) {
+      const canvas = els.chart;
+      const ctx = canvas.getContext('2d');
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      chartState = null;
+      hideChartTooltip();
+      canvas.width = Math.round(rect.width * dpr);
+      canvas.height = Math.round(rect.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, rect.width, rect.height);
+      ctx.fillStyle = '#586977';
+      ctx.font = '14px Arial, Helvetica, sans-serif';
+      ctx.fillText(message, 18, 36);
+    }
+
+    function hideChartTooltip() {
+      chartHoverPoint = null;
+      els.chartTooltip.hidden = true;
+    }
+
+    function drawHoverMarker(ctx, point, xFor, yFor, pad, height) {
+      const x = xFor(point);
+      const y = yFor(point.balance);
+      ctx.save();
+      ctx.setLineDash([4, 4]);
+      ctx.strokeStyle = '#8fa1ad';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x, pad.top);
+      ctx.lineTo(x, height - pad.bottom);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = '#ffffff';
+      ctx.strokeStyle = '#247a57';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(x, y, 5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function nearestChartPoint(time) {
+      if (!chartState?.points?.length) return null;
+      return chartState.points.reduce((best, point) => {
+        if (!best) return point;
+        return Math.abs(point.time - time) < Math.abs(best.time - time) ? point : best;
+      }, null);
+    }
+
+    function showChartTooltip(point, x, y) {
+      if (!lastResult) return;
+      const gain = point.balance - point.invested;
+      const sleeveRows = lastResult.sleeves.map((sleeve, index) => `
+        <dt>${escapeHtml(sleeve.ticker)}</dt>
+        <dd>${money.format(point.sleeves[index] || 0)}</dd>
+      `).join('');
+      els.chartTooltip.innerHTML = `
+        <strong>${escapeHtml(point.date)}</strong>
+        <dl>
+          <dt>Balance</dt><dd>${money.format(point.balance)}</dd>
+          <dt>Invested</dt><dd>${money.format(point.invested)}</dd>
+          <dt>Gain</dt><dd>${money.format(gain)}</dd>
+          ${sleeveRows}
+        </dl>
+      `;
+      els.chartTooltip.hidden = false;
+
+      const panelRect = els.chart.closest('.chart-panel').getBoundingClientRect();
+      const canvasRect = els.chart.getBoundingClientRect();
+      const tooltipRect = els.chartTooltip.getBoundingClientRect();
+      const rawLeft = canvasRect.left - panelRect.left + x + 14;
+      const rawTop = canvasRect.top - panelRect.top + y;
+      const maxLeft = panelRect.width - tooltipRect.width - 8;
+      const left = Math.max(8, Math.min(rawLeft, maxLeft));
+      const top = Math.max(tooltipRect.height / 2 + 8, Math.min(rawTop, panelRect.height - tooltipRect.height / 2 - 8));
+      els.chartTooltip.style.left = `${left}px`;
+      els.chartTooltip.style.top = `${top}px`;
+    }
+
+    function handleChartPointerMove(event) {
+      if (!chartState || !lastResult) return;
+      const rect = els.chart.getBoundingClientRect();
+      const x = Math.max(chartState.pad.left, Math.min(event.clientX - rect.left, rect.width - chartState.pad.right));
+      const y = Math.max(chartState.pad.top, Math.min(event.clientY - rect.top, rect.height - chartState.pad.bottom));
+      const time = chartState.minTime + ((x - chartState.pad.left) / chartState.plotW) * chartState.timeSpan;
+      const point = nearestChartPoint(time);
+      if (!point) return;
+      chartHoverPoint = point;
+      drawChart(lastResult.points);
+      const snappedX = chartState.xFor(point);
+      const snappedY = chartState.yFor(point.balance);
+      showChartTooltip(point, snappedX, y || snappedY);
+    }
+
+    function handleChartPointerLeave() {
+      if (!lastResult) return;
+      hideChartTooltip();
+      drawChart(lastResult.points);
+    }
+
+    function handleDocumentPointerMove(event) {
+      if (!lastResult || els.chartTooltip.hidden || event.target === els.chart) return;
+      handleChartPointerLeave();
+    }
+
+    function drawChart(points) {
+      if (!points || points.length < 2) {
+        drawEmptyChart('Waiting for Yahoo adjusted close history...');
+        return;
+      }
+
+      const canvas = els.chart;
+      const ctx = canvas.getContext('2d');
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.round(rect.width * dpr);
+      canvas.height = Math.round(rect.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      const width = rect.width;
+      const height = rect.height;
+      const pad = { top: 22, right: 24, bottom: 42, left: 76 };
+      const plotW = width - pad.left - pad.right;
+      const plotH = height - pad.top - pad.bottom;
+      const maxValue = Math.max(1, ...points.map((p) => Math.max(p.balance, p.invested))) * 1.08;
+      const minTime = points[0].time;
+      const maxTime = points[points.length - 1].time;
+      const timeSpan = Math.max(DAY_MS, maxTime - minTime);
+
+      ctx.clearRect(0, 0, width, height);
+      ctx.font = '12px Arial, Helvetica, sans-serif';
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = '#e5eaee';
+      ctx.fillStyle = '#586977';
+
+      for (let i = 0; i <= 4; i += 1) {
+        const y = pad.top + (plotH * i) / 4;
+        const value = maxValue * (1 - i / 4);
+        ctx.beginPath();
+        ctx.moveTo(pad.left, y);
+        ctx.lineTo(width - pad.right, y);
+        ctx.stroke();
+        ctx.fillText(money.format(value), 8, y + 4);
+      }
+
+      const startYear = new Date(minTime).getUTCFullYear();
+      const endYear = new Date(maxTime).getUTCFullYear();
+      const yearSpan = Math.max(1, endYear - startYear);
+      const tickStep = Math.max(1, Math.ceil(yearSpan / 5));
+      const yearTicks = [{ year: startYear, time: minTime, align: -4 }];
+      for (let year = startYear + tickStep; year < endYear; year += tickStep) {
+        const tickTime = Date.UTC(year, 0, 1, 12);
+        if (tickTime < minTime || tickTime > maxTime) continue;
+        yearTicks.push({ year, time: tickTime, align: -12 });
+      }
+      if (endYear !== startYear) yearTicks.push({ year: endYear, time: maxTime, align: -24 });
+      yearTicks.forEach((tick) => {
+        const x = pad.left + ((tick.time - minTime) / timeSpan) * plotW;
+        ctx.fillText(String(tick.year), x + tick.align, height - 14);
+      });
+
+      function xFor(point) {
+        return pad.left + ((point.time - minTime) / timeSpan) * plotW;
+      }
+
+      function yFor(value) {
+        return pad.top + plotH - (value / maxValue) * plotH;
+      }
+
+      chartState = {
+        points,
+        minTime,
+        maxTime,
+        timeSpan,
+        pad,
+        plotW,
+        plotH,
+        xFor,
+        yFor
+      };
+
+      function line(accessor, color, widthPx) {
+        ctx.beginPath();
+        points.forEach((point, index) => {
+          const x = xFor(point);
+          const y = yFor(accessor(point));
+          if (index === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        });
+        ctx.strokeStyle = color;
+        ctx.lineWidth = widthPx;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.stroke();
+      }
+
+      line((p) => p.invested, '#1c6f9e', 2);
+      line((p) => p.balance, '#247a57', 3);
+
+      const last = points[points.length - 1];
+      ctx.fillStyle = '#247a57';
+      ctx.beginPath();
+      ctx.arc(xFor(last), yFor(last.balance), 4, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (chartHoverPoint && points.includes(chartHoverPoint)) {
+        drawHoverMarker(ctx, chartHoverPoint, xFor, yFor, pad, height);
+      }
+    }
+
+    function renderTable(rows) {
+      els.annualRows.innerHTML = rows.map((point) => {
+        const gain = point.balance - point.invested;
+        return `<tr>
+          <td>${escapeHtml(point.label)}</td>
+          <td>${escapeHtml(point.date)}</td>
+          <td>${money.format(point.invested)}</td>
+          <td>${money.format(point.balance)}</td>
+          <td>${money.format(gain)}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    function renderBreakdown(result) {
+      const total = Math.max(1, result.balance);
+      els.breakdown.innerHTML = result.sleeves.map((sleeve) => {
+        const share = (sleeve.balance / total) * 100;
+        return `<div class="bar-row">
+          <strong>${escapeHtml(sleeve.ticker)}</strong>
+          <div class="track"><div class="fill" style="width:${Math.max(0, share)}%"></div></div>
+          <span>${money.format(sleeve.balance)}</span>
+        </div>`;
+      }).join('');
+    }
+
+    function renderShell(sleeves) {
+      const normalizedA = sleeves[0]?.allocation ?? 1;
+      const normalizedB = sleeves[1]?.allocation ?? 0;
+      const selectedYears = Math.max(1, readNumber(els.years, 1));
+      els.yearsValue.textContent = `${selectedYears} ${selectedYears === 1 ? 'year' : 'years'} ago`;
+      els.sleeveB.hidden = sleeveCount === 1;
+      document.body.classList.toggle('single-sleeve', sleeveCount === 1);
+      els.allocationA.disabled = sleeveCount === 1;
+      els.allocationAReadout.textContent = pct(normalizedA * 100);
+      els.allocationBReadout.textContent = pct(normalizedB * 100);
+      els.allocationSplitReadout.textContent = `${sleeves[0]?.ticker || 'Sleeve A'} ${pct(normalizedA * 100)} / ${sleeves[1]?.ticker || 'Sleeve B'} ${pct(normalizedB * 100)}`;
+    }
+
+    function setStatus(message, isError = false) {
+      els.dataStatus.innerHTML = message;
+      els.dataStatus.classList.toggle('error', isError);
+    }
+
+    function renderResult(result) {
+      lastResult = result;
+      els.endingValue.textContent = money.format(result.balance);
+      els.totalInvested.textContent = money.format(result.totalInvested);
+      els.totalGain.textContent = money.format(result.gain);
+      els.totalReturn.textContent = pct(result.totalReturn);
+      els.periodCount.textContent = `${result.totalPeriods.toLocaleString()} ${result.contributionLabel} contributions`;
+      els.annualContribution.textContent = `${money.format(result.amount * frequency)} per year`;
+      els.gainMultiple.textContent = result.totalInvested > 0 ? `${(result.balance / result.totalInvested).toFixed(2)}x invested` : '0.00x invested';
+      els.blendedReturn.textContent = `Data through ${result.endDate}`;
+
+      const sleeveNames = result.sleeves.map((sleeve) => `${sleeve.ticker} ${pct(sleeve.allocation * 100)}`).join(' / ');
+      els.calcNote.textContent = `Started ${result.selectedYears} ${result.selectedYears === 1 ? 'year' : 'years'} ago: ${money.format(result.amount)} invested ${result.contributionLabel} from ${result.startDate} through ${result.endDate}, allocated to ${sleeveNames}. Values use Yahoo adjusted close.`;
+
+      hideChartTooltip();
+      drawChart(result.points);
+      renderTable(result.rows);
+      renderBreakdown(result);
+    }
+
+    function renderError(error) {
+      const message = String(error.message || error);
+      const historyRangeError = message.startsWith('Not enough overlapping Yahoo history');
+      if (historyRangeError) {
+        setStatus(`<strong>Not enough history.</strong> ${escapeHtml(message)}`, true);
+      } else {
+        setStatus(`<strong>Yahoo data unavailable.</strong> ${escapeHtml(message)}. Try Refresh Data later, or keep using any browser-cached ticker history.`, true);
+      }
+      els.endingValue.textContent = '$0';
+      els.totalInvested.textContent = '$0';
+      els.totalGain.textContent = '$0';
+      els.totalReturn.textContent = '0.0%';
+      els.periodCount.textContent = '0 contributions';
+      els.annualContribution.textContent = `${money.format(Math.max(0, readNumber(els.amount, 0)) * frequency)} per year`;
+      els.gainMultiple.textContent = '0.00x invested';
+      els.blendedReturn.textContent = 'No adjusted close data';
+      els.annualRows.innerHTML = '';
+      els.breakdown.innerHTML = '';
+      els.calcNote.textContent = historyRangeError
+        ? 'Choose a shorter Started window or use tickers with longer overlapping adjusted close history.'
+        : 'The calculator needs Yahoo adjusted close history for each selected ticker before it can run the backtest.';
+      drawEmptyChart('No adjusted close history loaded.');
+    }
+
+    async function render(forceRefresh = false) {
+      const token = ++renderToken;
+      const sleeves = getSleeves();
+      renderShell(sleeves);
+      setStatus(`<strong>Loading Yahoo adjusted close history...</strong> ${sleeves.map((sleeve) => escapeHtml(sleeve.ticker)).join(', ')}`);
+
+      try {
+        const histories = await Promise.all(sleeves.map((sleeve) => getHistory(sleeve.ticker, forceRefresh)));
+        if (token !== renderToken) return;
+        const result = calculateWithHistory(sleeves, histories);
+        renderResult(result);
+
+        const statusParts = histories.map((history) => {
+          const first = history.prices[0].date;
+          const last = history.prices[history.prices.length - 1].date;
+          const source = history.fromCache ? (history.stale ? 'stale cache' : 'cache') : history.source;
+          return `${escapeHtml(history.ticker)}: ${first} to ${last} (${source})`;
+        });
+        const warning = histories.find((history) => history.warning);
+        setStatus(`<strong>Yahoo adjusted close loaded.</strong> ${statusParts.join(' | ')}${warning ? ` | Cache fallback: ${escapeHtml(warning.warning)}` : ''}`);
+      } catch (error) {
+        if (token !== renderToken) return;
+        renderError(error);
+      }
+    }
+
+    function scheduleRender(forceRefresh = false) {
+      renderShell(getSleeves());
+      saveInputState();
+      clearTimeout(renderTimer);
+      renderTimer = setTimeout(() => render(forceRefresh), forceRefresh ? 0 : 180);
+    }
+
+    els.frequencyGroup.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-frequency]');
+      if (!button) return;
+      frequency = Number(button.dataset.frequency);
+      setPressed(els.frequencyGroup, 'frequency', frequency);
+      scheduleRender(false);
+    });
+
+    els.sleeveMode.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-sleeves]');
+      if (!button) return;
+      sleeveCount = Number(button.dataset.sleeves);
+      setPressed(els.sleeveMode, 'sleeves', sleeveCount);
+      scheduleRender(false);
+    });
+
+    els.refreshData.addEventListener('click', () => {
+      scheduleRender(true);
+    });
+
+    document.querySelectorAll('input, select').forEach((input) => {
+      input.addEventListener('input', () => scheduleRender(false));
+      input.addEventListener('change', () => scheduleRender(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (lastResult) drawChart(lastResult.points);
+    });
+    els.chart.addEventListener('pointermove', handleChartPointerMove);
+    els.chart.addEventListener('pointerleave', handleChartPointerLeave);
+    els.chart.addEventListener('pointercancel', handleChartPointerLeave);
+    document.addEventListener('pointermove', handleDocumentPointerMove);
+    loadInputState();
+    render();
+  </script>
+</body>
+</html>
