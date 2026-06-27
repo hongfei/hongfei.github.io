@@ -215,6 +215,9 @@
     .segmented.two {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .segmented.four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
     .segmented button {
       min-height: 34px;
       border: 0;
@@ -580,6 +583,8 @@
     }
     .table-scroll {
       overflow-x: auto;
+      max-height: 340px;
+      overflow-y: auto;
     }
     th, td {
       padding: 8px 6px;
@@ -594,6 +599,10 @@
     th {
       color: var(--text-primary);
       font-weight: 600;
+      background: var(--card-bg);
+      position: sticky;
+      top: 0;
+      z-index: 1;
     }
     tbody tr:last-child td {
       border-bottom: 0;
@@ -656,6 +665,9 @@
       .visual-grid .table-panel {
         margin-bottom: 0 !important;
       }
+      .table-scroll {
+        max-height: none !important;
+      }
       body:not(.single-sleeve) .sleeves {
         grid-template-columns: 1fr;
       }
@@ -709,10 +721,11 @@
         <div class="form-grid">
           <fieldset class="field">
             <legend>Investment frequency</legend>
-            <div class="segmented" id="frequencyGroup">
+            <div class="segmented four" id="frequencyGroup">
               <button type="button" data-frequency="52" aria-pressed="true">Weekly</button>
               <button type="button" data-frequency="26" aria-pressed="false">Biweekly</button>
               <button type="button" data-frequency="12" aria-pressed="false">Monthly</button>
+              <button type="button" data-frequency="4" aria-pressed="false">Quarterly</button>
             </div>
           </fieldset>
 
@@ -964,6 +977,7 @@
     }
 
     function addPeriod(time) {
+      if (frequency === 4) return addMonths(time, 3);
       if (frequency === 12) return addMonths(time, 1);
       return time + (frequency === 26 ? 14 : 7) * DAY_MS;
     }
@@ -987,7 +1001,7 @@
         const state = JSON.parse(raw);
         if (!state || typeof state !== 'object') return;
 
-        frequency = [12, 26, 52].includes(Number(state.frequency)) ? Number(state.frequency) : frequency;
+        frequency = [4, 12, 26, 52].includes(Number(state.frequency)) ? Number(state.frequency) : frequency;
         sleeveCount = [1, 2].includes(Number(state.sleeveCount)) ? Number(state.sleeveCount) : sleeveCount;
         els.amount.value = String(clampNumber(state.amount, 0, 100000000, readNumber(els.amount, 500)));
         els.years.value = String(clampNumber(state.years, 1, 50, readNumber(els.years, 10)));
@@ -1240,7 +1254,7 @@
         throw new Error('Selected tickers do not have enough overlapping Yahoo adjusted close history.');
       }
 
-      const contributionLabel = frequency === 52 ? 'weekly' : frequency === 26 ? 'biweekly' : 'monthly';
+      const contributionLabel = frequency === 52 ? 'weekly' : frequency === 26 ? 'biweekly' : frequency === 12 ? 'monthly' : 'quarterly';
       const contributionEvents = [];
       let scheduledTime = timing === 'beginning' ? startTime : addPeriod(startTime);
       while (scheduledTime <= endTime) {
