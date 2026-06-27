@@ -721,9 +721,10 @@
         <div class="form-grid">
           <fieldset class="field">
             <legend>Investment frequency</legend>
-            <div class="segmented two" id="frequencyGroup">
-              <button type="button" data-frequency="4" aria-pressed="true">Quarterly</button>
-              <button type="button" data-frequency="1" aria-pressed="false">Annually</button>
+            <div class="segmented" id="frequencyGroup">
+              <button type="button" data-frequency="52" aria-pressed="true">Weekly</button>
+              <button type="button" data-frequency="26" aria-pressed="false">Biweekly</button>
+              <button type="button" data-frequency="12" aria-pressed="false">Monthly</button>
             </div>
           </fieldset>
 
@@ -855,7 +856,7 @@
 
           <!-- Annual Detail Table -->
           <section class="backtest-card table-panel" aria-labelledby="table-title">
-            <h2 id="table-title">Annual Detail</h2>
+            <h2 id="table-title">Quarterly Detail</h2>
             <div class="table-scroll">
               <table>
                 <thead>
@@ -921,7 +922,7 @@
     const YEAR_MS = 365.25 * DAY_MS;
     const historyMemory = new Map();
 
-    let frequency = 4;
+    let frequency = 52;
     let sleeveCount = 1;
     let timing = 'end';
     let renderToken = 0;
@@ -975,8 +976,6 @@
     }
 
     function addPeriod(time) {
-      if (frequency === 1) return addMonths(time, 12);
-      if (frequency === 4) return addMonths(time, 3);
       if (frequency === 12) return addMonths(time, 1);
       return time + (frequency === 26 ? 14 : 7) * DAY_MS;
     }
@@ -1000,7 +999,7 @@
         const state = JSON.parse(raw);
         if (!state || typeof state !== 'object') return;
 
-        frequency = [1, 4].includes(Number(state.frequency)) ? Number(state.frequency) : 4;
+        frequency = [12, 26, 52].includes(Number(state.frequency)) ? Number(state.frequency) : 52;
         sleeveCount = [1, 2].includes(Number(state.sleeveCount)) ? Number(state.sleeveCount) : sleeveCount;
         els.amount.value = String(clampNumber(state.amount, 0, 100000000, readNumber(els.amount, 500)));
         els.years.value = String(clampNumber(state.years, 1, 50, readNumber(els.years, 10)));
@@ -1105,12 +1104,12 @@
     }
 
     function yahooUrl(ticker) {
-      const params = 'range=max&interval=3mo&events=history&includeAdjustedClose=true';
+      const params = 'range=max&interval=1d&events=history&includeAdjustedClose=true';
       return `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?${params}`;
     }
 
     function yahooProxyUrl(ticker) {
-      return `https://r.jina.ai/http://r.jina.ai/http://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=max&interval=3mo&events=history&includeAdjustedClose=true`;
+      return `https://r.jina.ai/http://r.jina.ai/http://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=max&interval=1d&events=history&includeAdjustedClose=true`;
     }
 
     async function fetchText(url) {
@@ -1222,15 +1221,23 @@
 
     function buildCheckpoints(startTime, endTime) {
       const checkpoints = [];
-      let year = 1;
+      let quarterCount = 1;
       while (true) {
-        const time = addYears(startTime, year);
+        const time = addMonths(startTime, quarterCount * 3);
         if (time >= endTime) break;
-        checkpoints.push({ label: String(year), time, year });
-        year += 1;
+        const yearNum = Math.floor((quarterCount - 1) / 4) + 1;
+        const quarterNum = ((quarterCount - 1) % 4) + 1;
+        checkpoints.push({
+          label: `Y${yearNum} Q${quarterNum}`,
+          time,
+          year: quarterCount / 4
+        });
+        quarterCount += 1;
       }
+      const finalYearNum = Math.floor((quarterCount - 1) / 4) + 1;
+      const finalQuarterNum = ((quarterCount - 1) % 4) + 1;
       checkpoints.push({
-        label: String(year),
+        label: `Y${finalYearNum} Q${finalQuarterNum}`,
         time: endTime,
         year: (endTime - startTime) / YEAR_MS
       });
@@ -1253,7 +1260,7 @@
         throw new Error('Selected tickers do not have enough overlapping Yahoo adjusted close history.');
       }
 
-      const contributionLabel = frequency === 4 ? 'quarterly' : 'annually';
+      const contributionLabel = frequency === 52 ? 'weekly' : frequency === 26 ? 'biweekly' : 'monthly';
       const contributionEvents = [];
       let scheduledTime = timing === 'beginning' ? startTime : addPeriod(startTime);
       while (scheduledTime <= endTime) {
