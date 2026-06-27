@@ -20,10 +20,10 @@
       --transition-smooth: all 0.2s ease;
       
       /* Colors */
-      --red-soft: rgba(169, 58, 50, 0.14); /* Low saturated red background */
-      --red-text: #a93a32;
-      --green-soft: rgba(35, 123, 83, 0.14); /* Low saturated green background */
-      --green-text: #237b53;
+      --red-soft: rgba(223, 43, 32, 0.18); /* More saturated red background */
+      --red-text: #df2b20;
+      --green-soft: rgba(14, 158, 92, 0.18); /* More saturated green background */
+      --green-text: #0e9e5c;
       --line: #18181b;
       --grid: #e4e9ed;
     }
@@ -907,7 +907,7 @@
       for (let i = 0; i < data.length; i++) {
         const p = data[i];
         const isGreen = p.pctChange >= threshold;
-        ctx.fillStyle = isGreen ? 'rgba(35, 123, 83, 0.14)' : 'rgba(169, 58, 50, 0.14)';
+        ctx.fillStyle = isGreen ? 'rgba(14, 158, 92, 0.18)' : 'rgba(223, 43, 32, 0.18)';
 
         const leftX = pad.left + i * barW;
         const nextX = pad.left + (i + 1) * barW;
