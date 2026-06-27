@@ -614,7 +614,40 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 27 Jun 2026 10:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE16ZVVPTEFUVXBCMVplRUg1d3dMWmJUMmp1OUZBY29iZkRMWHFpZ0tQdnV4ZVJ6RUU3SlhCTml0LTNvN2xSbUxBQy1BSDdCNU1OQktRc3NTRnk</guid></item><item><title>美光高管怒怼苹果：芯片涨45美元 你终端加价250美元 压力加倍转给消费者 - 驱动之家</title><link>https://news.mydrivers.com/1/1132/1132532.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 27 Jun 2026 10:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE16ZVVPTEFUVXBCMVplRUg1d3dMWmJUMmp1OUZBY29iZkRMWHFpZ0tQdnV4ZVJ6RUU3SlhCTml0LTNvN2xSbUxBQy1BSDdCNU1OQktRc3NTRnk</guid></item><item><title>刚刚，DeepSeek V4更新DSpark，推理速度提升80% - 36 Kr</title><link>https://m.36kr.com/p/3871135542416645</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;刚刚，DeepSeek V4 进行了一次更新。&lt;/p&gt;
+  &lt;p&gt;新推出了投机解码（Speculative Decoding）框架 &lt;strong&gt;DSpark&lt;/strong&gt;，并同步开源了支撑该版本的全栈推测性解码框架&lt;strong&gt; DeepSpec&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;DeepSeek-V4-Pro-DSpark 并非全新架构模型，而是在 DeepSeek-V4-Pro 基础上引入了推测性解码模块。此次更新的重点在于工程落地，而非模型能力本身的迭代。&lt;/p&gt;
+  &lt;p&gt;DSpark 已被部署在 DeepSeek-V4（Flash 和 Pro）的真实线上流量中，大幅加速了大语言模型（LLM）的推理速度。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1182" src="https://img.36krcdn.com/hsossms/20260627/v2_41fc8f54f4f145629f0f3e0af50b405b@000000_oswg215421oswg1080oswg1182_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;技术报告：《DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation》&lt;/p&gt;
+  &lt;p&gt;技术报告链接：https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf&lt;/p&gt;
+  &lt;p&gt;DSpark 的核心初衷是解决在生产环境中（尤其是高并发场景下）LLM 推理面临的延迟和吞吐量瓶颈。简而言之，DSpark 成功地将高吞吐量的「并行生成」与自适应的「负载感知验证」结合在了一起。&lt;/p&gt;
+  &lt;p&gt;推测性解码是一种在不改变模型输出分布的前提下加速大语言模型推理的技术。其核心思路是引入一个轻量级的「草稿模型」（draft model），预先生成若干候选 token，再由目标模型（target model）对这批候选进行批量验证和接受，从而将串行逐 token 生成转变为并行批量校验，大幅降低端到端延迟。&lt;/p&gt;
+  &lt;p&gt;在此基础上，DSpark 的创新在于引入&lt;strong&gt;半自回归生成架构（Semi-Autoregressive Generation）&lt;/strong&gt;：它保留并行草稿模型的高吞吐优势，同时加入轻量级串行模块，对 block 内 token 之间的依赖关系进行建模，以缓解并行草稿模型在后续位置上容易出现的接受率衰减问题。&lt;/p&gt;
+  &lt;p&gt;除此之外还有&lt;strong&gt;硬件感知的置信度调度验证（Confidence-Scheduled Verification）&lt;/strong&gt;：以往的投机解码通常会盲目地把生成的草稿 Token 全部送去验证，在系统高负载时，这些极大概率会被拒绝的尾部 Token 会严重浪费宝贵的批处理算力。DSpark 引入了一个置信度头（Confidence Head）来评估每个 Token 的存活概率。结合硬件感知前缀调度器，系统能够根据实时的引擎吞吐量特征，动态为每个请求量身定制最优的验证长度，将算力只分配给预期回报最高的 Token。&lt;/p&gt;
+  &lt;p&gt;为了在真实的线上基础设施中落地，DSpark 的调度器采用了异步机制，以兼容零开销调度（ZOS）和连续的 CUDA 图回放。它利用前两步的历史预测来决定当前的动态截断长度，从而隐藏了调度延迟，避免了 GPU 流水线停顿，同时保证了目标模型输出分布的完全无损还原。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,975" src="https://img.36krcdn.com/hsossms/20260627/v2_0717702298294185bfedd346adb488cb@000000_oswg426739oswg1080oswg975_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;在涵盖数学推理、代码生成和日常对话等多个领域的测试中，DSpark 大幅超越了目前最先进的自回归模型（Eagle3）和并行草稿模型（DFlash）。例如，在 Qwen3 系列（4B、8B、14B）目标模型上，其平均接受长度比 Eagle3 提升了 26.7% 到 30.9%，比 DFlash 提升了 16.3% 到 18.4%。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,504" src="https://img.36krcdn.com/hsossms/20260627/v2_a9592512843449c48c9b1488457b4267@000000_oswg291954oswg1080oswg504_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;相比于前一代部署的单 Token 生产基准（MTP-1），在维持相同总体吞吐量的情况下，&lt;strong&gt;DSpark 将用户的生成速度分别提升了 60%-85%（Flash 模型）和 57%-78%（Pro 模型）&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,730" src="https://img.36krcdn.com/hsossms/20260627/v2_d0af2415661147d5a3ae078f08e2a55a@000000_oswg376425oswg1080oswg730_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;随 DSpark 一同开源的还有 DeepSpec，这是一个用于训练和评估推测性解码草稿模型的全栈代码库。是承载这个方案以及其他前沿算法实现的「开源基础设施」，包含数据准备工具、草稿模型实现、训练代码和评估脚本。&lt;/p&gt;
+  &lt;p&gt;DeepSpec 将整体流程拆分为三个阶段：数据准备、训练和评估。三个阶段需要按顺序运行，前一阶段的输出会作为后一阶段的输入。&lt;/p&gt;
+  &lt;p&gt;数据准备阶段，需下载提示词数据、使用推理引擎对目标模型重新生成答案，并构建目标缓存（target cache）。值得注意的是，以默认的 Qwen/Qwen3-4B 配置为例，目标缓存体积可达约 38 TB，使用前需充分评估存储资源。&lt;/p&gt;
+  &lt;p&gt;训练阶段可通过 bash scripts/train/train.sh 启动。该脚本会调用 train.py，并为每张可见 GPU 启动一个 worker。用户可以通过指定 config_path，在 config/ 目录下选择不同算法和目标模型配置。项目也支持通过覆盖 config_path、target_cache_dir，以及使用 --opts 修改单个配置字段来调整训练设置。&lt;/p&gt;
+  &lt;p&gt;硬件方面，DeepSpec 默认配置和脚本面向单节点 8 卡环境。如果 GPU 数量较少，用户需要相应减少 CUDA_VISIBLE_DEVICES 中的可见 GPU 数量。&lt;/p&gt;
+  &lt;p&gt;评估阶段则通过 bash scripts/eval/eval.sh 启动。评估脚本会使用训练好的草稿模型 checkpoint，在多个 speculative decoding 基准任务上衡量接受情况。项目当前列出的评估数据集包括 GSM8K、MATH500、AIME25、HumanEval、MBPP、LiveCodeBench、MT-Bench、Alpaca 和 Arena-Hard-v2，覆盖数学推理、代码生成、对话能力和综合问答等不同任务类型。&lt;/p&gt;
+  &lt;p&gt;算法方面，DeepSpec 目前内置三种草稿模型：DSpark、DFlash 和 Eagle3。目标模型系列方面，项目当前支持 Qwen3 和 Gemma。&lt;/p&gt;
+  &lt;p&gt;DeepSpec 的开源，将推测性解码这一此前多散落于各研究团队内部的工程实践，整合为一套可复现、可扩展的标准化工具链。对于希望为自有大模型加速推理的研究者和工程师而言，这意味着可以直接在成熟框架上训练定制草稿模型，跳过大量重复的基础设施搭建工作。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;参考链接：&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf&lt;/p&gt;
+  &lt;p&gt;https://github.com/deepseek-ai/DeepSpec&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号 &lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;amp;mid=2651041475&amp;amp;idx=1&amp;amp;sn=6056c7c9ec620b7302d01e3b1593efcc&amp;amp;chksm=85112d789eb69ffa2c69a9ecbc933c05a8b6c6b3a7e46fd9a5e1270ea360cb9cba0ae6d6a4bf&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“机器之心”（ID：almosthuman2014）&lt;/a&gt;，作者：泽南、杨文 ，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Sat, 27 Jun 2026 10:29:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1RbnBsUjBOWFlGUUVTZWJDZ2VrSC1uUHdZVVZOcFlUYXRBUzk1Nm9oUHBlaVliZEpQeENFMDJrYmJXUUNiblVxUU1sRVBYUQ</guid></item><item><title>美光高管怒怼苹果：芯片涨45美元 你终端加价250美元 压力加倍转给消费者 - 驱动之家</title><link>https://news.mydrivers.com/1/1132/1132532.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技6月27日消息，近日海外财经投资博主爆料，美光科技高管公开吐槽苹果的定价策略。&lt;/p&gt;
 &lt;p&gt;十多年来，苹果长期以5美元采购存储芯片，简单封装后，以99美元的存储升级价卖给消费者，甚至还嘲笑美光想把单价涨到7美元。&lt;/p&gt;
@@ -2416,18 +2449,4 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Fri, 26 Jun 2026 22:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE04VnloNjlEanZmYjE1a3RUUmVMbmtZTTR5MUQyS3QzTklyczBDMWg0TUdPai1wQXdSVGY0eWhvNWE4OEdBVnZLa0k1RTRlYUVnTkd6QW9xdGFGaGFIMDN6SUpGQlU</guid></item><item><title>苹果再失大将！报道：Vision Pro与智能眼镜掌舵人转投OpenAI - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775657</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 26 Jun 2026 22:43:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBCRWRaUWRPNklZTHc0dHRLMEYtU0xlVUx3T0ZkZ0Z2eUd1ajhIRmdhVGNzUkdNcVZJbjBhRzlfWUJtdnBmaWJ2QXM2WDVOck1TdkhR</guid></item><item><title>AI交易退潮席卷科技股：安森美暴跌24%，甲骨文创2001年来最大周跌，七巨头全线周跌 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775658</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 26 Jun 2026 22:40:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBCNnNhaUxZbVNVYTFQS08zdnZuTFI4dGRGTWRJbGExeDNUM3VGNmE5NHcwYlpBWUJPSmlEZlRKMVFyeGVBSzdNM2Jnc1lXUEdiRThr</guid></item><item><title>应美国政府要求OpenAI推迟GPT-5.6全面公开发布 - RFI</title><link>https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20260626-%E5%BA%94%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A6%81%E6%B1%82openai%E6%8E%A8%E8%BF%9Fgpt-5-6%E5%85%A8%E9%9D%A2%E5%85%AC%E5%BC%80%E5%8F%91%E5%B8%83</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
-                        美国顶尖人工智能公司OpenAI周五（6月26日）表示，应美国政府要求，推迟GPT-5.6的全面公开发布，从而限制人工智能模型最初只能向一小部分经过审查的合作伙伴开放。        &lt;/p&gt;
-    
-    
-                        &lt;div class="t-content__body u-clearfix"&gt;
-                                            
-                                                                &lt;p&gt;这一决定凸显特朗普政府日益关注强大AI系统可能带来的国家安全风险，政策制定者正敦促企业为这些系统设立安全护栏。&lt;/p&gt; &lt;p&gt;通过获取前沿模型的早期访问权限，美国官员旨在识别各种潜在威胁，从网络攻击到军事用途滥用，以便在这些工具广泛部署之前采取应对措施。&lt;/p&gt; &lt;p&gt;OpenAI表示，名为“GPT-5.6 Sol”的新款人工智能产品目前仅向获政府批准的“一小部分受信任合作伙伴”开放。&lt;/p&gt; &lt;p&gt;该公司在一份声明中表示：“我们认为，这种政府介入的准入流程不应成为长期的默认模式。”但将这一测试期视为通往“未来几周内更广泛发布”之路的一个临时步骤。&lt;/p&gt; &lt;p&gt;OpenAI采取分阶段发布强大新型人工智能系统的举措，是在美国政府本月早些时候针对另一家顶级人工智能公司Anthropic（Claude聊天机器人开发商）采取行动之后进行的。该公司在公开推出其两款新人工智能模型（Fable 5和Mythos 5）仅几天后，便将其下线，以遵守美国政府禁止外国公民使用这些模型的指令。&lt;/p&gt; &lt;p&gt;美国总统6月初签署一项关于人工智能监管的行政命令，确立框架，允许联邦政府在最先进人工智能系统公开发布前，对其国家安全风险进行长达30天的审查。该命令将人工智能开发商的参与定性为自愿性质，但相关框架尚未完全制定完成。&lt;/p&gt;
-                                                                
-    
-                &lt;/div&gt;
-            
-            
-                    
-                    
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Fri, 26 Jun 2026 21:20:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiyAJBVV95cUxPY0xraTV0ZUlIN00xdlZDUXNfOVZsVVl5OW9LaE81SUZzVmFpdDdqNkVKN2xRZVd2bE5QNk9EblhWRDgtNVN3aTJDb2NDVjdMX25NOXZwU0Z2a1JwOGsxSkZOcnZjRW5XdDIyYmotQ2xxbVBpZlRkWVQ1aWdSenBMSGUtSTY2QnlqeHpremlHcWlvUENPM2FHQnV3Rm1vckNrcUdvOTRMd01qSTZsYllpRTJIN0RfdGt6aWVka19EdU5CMU5kV0R2MTViR1RfUmRXdHF3NWV5TXV0Ymphc0lnRlc4VTVTVGFFYjFPMTM2bnBsRWFsRUJhcGVuV2hGTk5yRTNVVlplZkRtV0l0bjNNSzVacVV3Ql9lbjlqZXM0dXlCdFN0VHRnSDFmS2dnSkdPbEtlNHBMXzJkdTdpeXVsd3Jmb0tIRlZz</guid></item></channel></rss>
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Fri, 26 Jun 2026 22:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE04VnloNjlEanZmYjE1a3RUUmVMbmtZTTR5MUQyS3QzTklyczBDMWg0TUdPai1wQXdSVGY0eWhvNWE4OEdBVnZLa0k1RTRlYUVnTkd6QW9xdGFGaGFIMDN6SUpGQlU</guid></item><item><title>苹果再失大将！报道：Vision Pro与智能眼镜掌舵人转投OpenAI - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775657</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 26 Jun 2026 22:43:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBCRWRaUWRPNklZTHc0dHRLMEYtU0xlVUx3T0ZkZ0Z2eUd1ajhIRmdhVGNzUkdNcVZJbjBhRzlfWUJtdnBmaWJ2QXM2WDVOck1TdkhR</guid></item><item><title>AI交易退潮席卷科技股：安森美暴跌24%，甲骨文创2001年来最大周跌，七巨头全线周跌 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775658</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 26 Jun 2026 22:40:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBCNnNhaUxZbVNVYTFQS08zdnZuTFI4dGRGTWRJbGExeDNUM3VGNmE5NHcwYlpBWUJPSmlEZlRKMVFyeGVBSzdNM2Jnc1lXUEdiRThr</guid></item></channel></rss>
