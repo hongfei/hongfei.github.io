@@ -202,6 +202,9 @@
       accent-color: var(--text-primary);
       cursor: pointer;
     }
+    .ticker-input {
+      text-transform: uppercase;
+    }
 
     .segmented {
       display: grid;
@@ -770,7 +773,7 @@
               <div class="sleeve-fields">
                 <div>
                   <label for="tickerA">Ticker</label>
-                  <input id="tickerA" list="tickerList" value="VOO" maxlength="12" autocomplete="off" />
+                  <input id="tickerA" class="ticker-input" type="text" value="VOO" maxlength="12" autocomplete="off" autocapitalize="characters" spellcheck="false" />
                 </div>
               </div>
             </section>
@@ -783,7 +786,7 @@
               <div class="sleeve-fields">
                 <div>
                   <label for="tickerB">Ticker</label>
-                  <input id="tickerB" list="tickerList" value="QQQ" maxlength="12" autocomplete="off" />
+                  <input id="tickerB" class="ticker-input" type="text" value="QQQ" maxlength="12" autocomplete="off" autocapitalize="characters" spellcheck="false" />
                 </div>
               </div>
             </section>
@@ -802,18 +805,6 @@
             <button class="action-button secondary" id="refreshData" type="button">Refresh Data</button>
           </div>
 
-          <datalist id="tickerList">
-            <option value="VOO"></option>
-            <option value="VTI"></option>
-            <option value="SPY"></option>
-            <option value="QQQ"></option>
-            <option value="SCHD"></option>
-            <option value="VXUS"></option>
-            <option value="BND"></option>
-            <option value="AAPL"></option>
-            <option value="MSFT"></option>
-            <option value="NVDA"></option>
-          </datalist>
         </div>
       </section>
 
