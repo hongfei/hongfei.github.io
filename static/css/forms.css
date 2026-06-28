@@ -1,0 +1,111 @@
+input,
+select {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  transition: var(--transition-smooth);
+}
+
+input:focus,
+select:focus {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 3px rgba(24, 24, 26, 0.08);
+  outline: none;
+}
+
+input[type="range"] {
+  width: 100%;
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  accent-color: var(--text-primary);
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--text-primary);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.field label,
+.field legend {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 0 7px;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.field label output {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.segmented,
+.segmented-control {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background: #f4f4f5;
+}
+
+.segmented.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.segmented.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.segmented button,
+.segmented-control button {
+  min-height: 34px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.segmented button:hover,
+.segmented-control button:hover {
+  color: var(--text-primary);
+  background: #ffffff;
+}
+
+.segmented button[aria-pressed="true"],
+.segmented-control button[aria-pressed="true"] {
+  background: var(--text-primary);
+  color: #ffffff;
+}
+
+.help-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.35;
+}

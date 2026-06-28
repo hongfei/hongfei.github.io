@@ -4,82 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hongfei Zhou - Project Portal</title>
-    <!-- Preload Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/cards.css">
     <style>
-        /* Design Tokens & Theme Setup */
-        :root {
-            --bg-color: #fafafa;
-            --card-bg: #ffffff;
-            --text-primary: #18181b;     /* Zinc 900 */
-            --text-secondary: #4b5563;   /* Gray 600 */
-            --text-muted: #8e98a5;       /* Gray 400 */
-            --border-light: #e4e4e7;     /* Zinc 200 */
-            --accent-color: #157878;     /* Keep the branding color for icons */
-            --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --transition-smooth: all 0.2s ease;
-        }
-
-        /* Base Resets */
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
         body {
-            font-family: var(--font-stack);
-            color: var(--text-secondary);
-            background-color: var(--bg-color);
-            line-height: 1.6;
             padding: 3rem 1.5rem;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Portal Wrapper - Contiguous vertical card stack */
-        .portal-wrapper {
-            max-width: 1000px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-        }
-
-        /* Individual Card styling - Overlapping borders */
-        .portal-card {
-            background-color: var(--card-bg);
-            padding: 1.5rem 2rem;
-            border-radius: 0;
-            border: 1px solid var(--border-light);
-            margin-bottom: -1px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.01);
-            transition: var(--transition-smooth);
-        }
-        .portal-card:hover {
-            position: relative;
-            z-index: 1;
-            border-color: #a1a1aa;
-            box-shadow: 0 4px 12px rgba(24, 24, 26, 0.04);
-        }
-
-        /* Header Card Top Rounded Corners */
         .portal-card.header-card {
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
             padding: 2rem;
         }
         
-        /* Footer Card Bottom Rounded Corners */
         .portal-card.footer-card {
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-            margin-bottom: 0;
             padding: 1.25rem 2rem;
         }
 
@@ -223,35 +167,11 @@
             justify-content: flex-end;
         }
 
-        /* Interactive Buttons */
         .btn {
-            display: inline-flex;
-            align-items: center;
             justify-content: center;
             gap: 6px;
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border-radius: 6px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: var(--transition-smooth);
             width: 100%;
             text-align: center;
-        }
-        .btn-primary {
-            background-color: var(--text-primary);
-            color: white;
-            border: 1px solid var(--text-primary);
-        }
-        .btn-primary:hover {
-            background-color: #27272a;
-            border-color: #27272a;
-        }
-        .btn svg {
-            width: 14px;
-            height: 14px;
-            fill: currentColor;
         }
 
         /* Footer */

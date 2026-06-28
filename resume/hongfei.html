@@ -4,125 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hongfei Zhou - Resume</title>
-    <!-- Preload Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/cards.css">
     <style>
-        /* Design Tokens & Minimalist Configuration */
-        :root {
-            --bg-color: #fafafa;
-            --card-bg: #ffffff;
-            --text-primary: #18181b;     /* Zinc 900 */
-            --text-secondary: #4b5563;   /* Gray 600 */
-            --text-muted: #8e98a5;       /* Gray 400 */
-            --border-light: #e4e4e7;     /* Zinc 200 */
-            --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --transition-smooth: all 0.2s ease;
-        }
-
-        /* Base Resets */
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
         body {
-            font-family: var(--font-stack);
-            color: var(--text-secondary);
-            background-color: var(--bg-color);
-            line-height: 1.6;
             padding: 2rem 1rem;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         /* Sticky Control Toolbar */
         .actions-wrapper {
             max-width: 1000px;
             margin: 0 auto 1.5rem auto;
-            display: flex;
             justify-content: space-between;
-            align-items: center;
         }
         .actions {
             display: flex;
             gap: 10px;
         }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-light);
-            border-radius: 6px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: var(--transition-smooth);
-        }
-        .btn:hover {
-            color: var(--text-primary);
-            border-color: #a1a1aa;
-            background-color: #f4f4f5;
-        }
-        .btn-primary {
-            background-color: var(--text-primary);
-            color: white;
-            border-color: var(--text-primary);
-        }
-        .btn-primary:hover {
-            background-color: #27272a;
-            border-color: #27272a;
-            color: white;
-        }
-        .btn svg {
-            width: 14px;
-            height: 14px;
-            fill: currentColor;
-        }
 
-        /* Resume Wrapper - Stacks the cards vertically with NO gap */
-        .resume-wrapper {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-        }
-
-        /* Individual Card styling - Overlapping borders */
-        .resume-card {
-            background-color: var(--card-bg);
-            padding: 1.5rem 2rem;
-            border-radius: 0;
-            border: 1px solid var(--border-light);
-            margin-bottom: -1px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.01);
-            transition: var(--transition-smooth);
-        }
-        .resume-card:hover {
-            position: relative;
-            z-index: 1;
-            border-color: #a1a1aa;
-            box-shadow: 0 4px 12px rgba(24, 24, 26, 0.04);
-        }
-
-        /* Header Card Top Rounded Corners */
         .resume-card.header-card {
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
             padding: 1.25rem 2rem;
-        }
-        
-        /* Education Card Bottom Rounded Corners */
-        .resume-card.education-card {
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-            margin-bottom: 0;
         }
 
         /* Header Elements */
@@ -161,6 +66,20 @@
         .contact-info a:hover {
             color: var(--text-primary);
             border-bottom-color: var(--text-primary);
+        }
+        .contact-line {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .contact-icon {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .bottom-actions {
+            margin-top: 1.5rem;
+            margin-bottom: 0;
         }
 
         /* Section Headings inside Cards */
@@ -440,8 +359,8 @@
                 <h1>Hongfei Zhou</h1>
                 <div class="subtitle">Senior Software Engineer</div>
                 <div class="contact-info">
-                    <div style="display:flex; align-items:center; gap:4px;">
-                        <svg style="width:14px; height:14px; fill:currentColor;" viewBox="0 0 24 24">
+                    <div class="contact-line">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                         <a href="mailto:mich.zhou1989@gmail.com">mich.zhou1989@gmail.com</a>
@@ -584,7 +503,7 @@
     </div>
 
     <!-- Actions Control Panel (Bottom) -->
-    <div class="actions-wrapper" style="margin-top: 1.5rem; margin-bottom: 0;">
+    <div class="actions-wrapper bottom-actions">
         <a href="../index.html" class="btn" title="Back to Dashboard">
             <svg viewBox="0 0 24 24">
                 <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>

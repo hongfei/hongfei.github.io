@@ -4,6 +4,76 @@ This style guide documents the layout system, color tokens, form components, and
 
 ---
 
+## 0. Shared Static Resource Contract
+Common CSS and low-coupling stock-tool helpers live under `static/`. New pages **MUST** reuse these files instead of copying design tokens, card rules, form styles, table styles, or Yahoo helper functions into page-local `<style>` / `<script>` blocks.
+
+### CSS Files and Load Order
+Load shared CSS before page-specific inline CSS, from general to specific:
+
+```html
+<link rel="stylesheet" href="static/css/base.css">
+<link rel="stylesheet" href="static/css/cards.css">
+```
+
+For pages inside subdirectories, prefix shared assets with `../`:
+
+```html
+<link rel="stylesheet" href="../static/css/base.css">
+<link rel="stylesheet" href="../static/css/cards.css">
+<link rel="stylesheet" href="../static/css/forms.css">
+<link rel="stylesheet" href="../static/css/stock-tools.css">
+```
+
+Use the files as follows:
+
+| File | Required For | Contents |
+| :--- | :--- | :--- |
+| `static/css/base.css` | All HTML pages | Inter font import, design tokens, body defaults, action toolbar, `.btn`, `.btn-primary`, `.btn-back` |
+| `static/css/cards.css` | Card-based pages | Portal/resume cards, `.pe-card`, `.backtest-card`, contiguous `.top-stack`, hover lift, mobile card rounding |
+| `static/css/forms.css` | Pages with controls | Inputs, selects, range sliders, checkboxes, `.field`, `.segmented`, `.segmented-control`, help text |
+| `static/css/stock-tools.css` | Interactive stock tools | Stock page `main`, `.top-grid`, `.controls`, `.dashboard`, chart tooltip, table wrappers, table defaults, stock-tool mobile layout |
+
+Page-local CSS should contain only page-specific layout and visual details, such as homepage project rows, resume content/print rules, chart heights, stats panels, custom legends, or tool-specific card splits. Do **not** redefine shared tokens, button styles, card hover behavior, generic input styling, or generic table styling unless a page has a documented reason.
+
+### Static Data
+Reusable datasets belong under `static/data/`, not inside long page-local JavaScript strings. Pages in subdirectories should load them with `../static/data/...` and provide a visible loading/error state.
+
+Current datasets:
+
+| File | Used By | Purpose |
+| :--- | :--- | :--- |
+| `static/data/sp500-pe-history.csv` | `stocks/pe-threshold.html` | Monthly S&P 500 price and PE history used by the PE Threshold Explorer |
+
+### Shared JavaScript
+Stock utilities live in `static/js/stock-utils.js` and are exposed as `window.StockTools`. Yahoo-backed stock tools should load it before their page-local script:
+
+```html
+<script src="../static/js/stock-utils.js"></script>
+<script>
+  const {
+    addYears,
+    escapeHtml,
+    fetchText,
+    formatDate,
+    parseDate,
+    parseYahooPayload,
+    yahooChartUrl,
+    yahooProxyChartUrl
+  } = window.StockTools;
+</script>
+```
+
+Use `StockTools` for shared, stateless helpers:
+- `formatDate`, `parseDate`, `addYears`
+- `escapeHtml`
+- `yahooChartUrl`, `yahooProxyChartUrl`
+- `fetchText`, `parseYahooPayload`
+- `findOnOrAfter`, `findOnOrBefore`
+
+Keep page-specific behavior in the page: cache keys, localStorage policy, DOM bindings, chart rendering, table rendering, input state, embedded datasets, and business calculations. `stocks/pe-threshold.html` currently uses embedded CSV and independent calculations, so it should not depend on `stock-utils.js` unless it gains Yahoo-backed data loading.
+
+---
+
 ## 1. Design Tokens & Core Theme
 All elements utilize a clean, minimal zinc and charcoal color palette:
 
