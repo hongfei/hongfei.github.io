@@ -1,5 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>RTX 50里程碑！频率终于首破4GHz：用的还是中国特供卡 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133305.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>沪指冲高回落涨0.4%，券商爆发，创业板跌近2%，算力硬件午后集体调整，阳光电源一度跌停 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775921</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 01 Jul 2026 08:19:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5LV0lYZFdpNThCZTlISUtHeHR2dWVjMW1GV1JGdGlmZVd5alRhUllGTlBRS1FYM0V4U3BOY0F5amRlbTFLMTVmckwxelNZdXBtRTNr</guid></item><item><title>都在说缺算力 90%的AI芯片却被“浪费”了 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133371.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;当你正Vibe Coding嗨到不行，或者跑着的项目突然停摆，打开CLI工具一看，“你的额度已用完”字样出现时，心态不崩是不可能的。&lt;/p&gt;
+&lt;p&gt;你还别问，问AI公司就是“缺算力”。&lt;/p&gt;
+&lt;p&gt;但事情真的如此吗？&lt;/p&gt;
+&lt;p&gt;Epoch AI的分析师估算，到2025年底，OpenAI等效拥有的算力约相当于170万块H100。这个数字在2023年是10万块，2024年是40万块——两年暴增17倍。英伟达市值突破3万亿美元，全球科技巨头每个季度砸下数百亿美元抢购芯片。一切看起来都指向同一个叙事：算力就是AI的石油，谁囤得多，谁就赢。&lt;/p&gt;
+&lt;p&gt;每家AI公司都在砸重金囤卡囤算力，怎么可能差我那点额度？！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在播客Latent Space的一期节目里，AI基础设施公司AMP的创始人Anjney Midha说：“像xAI这样的前沿实验室，GPU利用率可能不到10%——这只是真正问题的冰山一角。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我做了一次简单的换算。MFU（Model Flops Utilization，模型浮点运算利用率）是衡量GPU算力真正用于模型计算的指标。如果你花5亿美元买了一个GPU集群，MFU只有10%，意味着你实际获得的有效算力相当于只花了5000万美元。剩下4.5亿美元的算力，在空转。&lt;/p&gt;
+&lt;p&gt;说不通的地方在于，这些是全世界最聪明的工程团队，花着全世界最昂贵的预算，建造全世界最先进的计算集群——然后让90%的算力闲着。&lt;/p&gt;
+&lt;p&gt;这不是某家小公司的管理失误，这是一个结构性的行业秘密。&lt;/p&gt;
+&lt;p&gt;一、巨量采购，巨量浪费&lt;/p&gt;
+&lt;p&gt;让我把这个反差拆解得更具体一些。&lt;/p&gt;
+&lt;p&gt;Epoch AI的分析师Josh You在一份被广泛引用的报告中写道：“前沿实验室尚未使用大部分AI算力。”他追踪了主要实验室的算力增长曲线，发现一个令人不安的模式——算力的采购速度远远超过了算力的消耗速度。大量计算资源处于“储备”或“闲置”状态，像是被囤积的战略物资，而非正在燃烧的燃料。&lt;/p&gt;
+&lt;p&gt;这不是前沿实验室独有的问题。&lt;/p&gt;
+&lt;p&gt;Fujitsu在其2024年发布的《AI基础设施状态报告》中引用了一组更刺眼的数据：超过75%的企业在峰值负载下，GPU利用率仍低于70%。注意，这是“峰值”——也就是说，在最忙的时候，四分之三的企业连七成算力都用不满。&lt;/p&gt;
+&lt;p&gt;VentureBeat基于类似数据做了一个更激进的判断：“95%的AI基础设施开支被浪费了。”&lt;/p&gt;
+&lt;p&gt;我试着把这些数字转化为具体的金钱损失。一块H100的云实例每小时收费30到50美元。&lt;span&gt;&lt;strong&gt;假设一个企业运行着20块GPU的小型集群，利用率只有20%——这在行业中已经算不错了——那么每年因闲置而浪费的计算成本约为20万美元。&lt;/strong&gt;&lt;/span&gt;对于拥有数万块GPU的前沿实验室来说，这个数字要乘以几个数量级。&lt;/p&gt;
+&lt;p&gt;这让我想起了一段被遗忘的历史。&lt;/p&gt;
+&lt;p&gt;1990年代末，美国电信行业经历了一场疯狂的光纤铺设热潮。WorldCom、Global Crossing、Level 3等公司在地下埋设了数百万英里的光纤电缆，投入了超过千亿美元。但到了2001年泡沫破裂时，行业发现一个惊人的事实：铺设的光纤中，超过95%是所谓的“暗光纤”（dark fiber）——从未被点亮，从未承载过任何数据。它们安静地躺在地下，像是埋葬了一个时代的雄心。&lt;/p&gt;
+&lt;p&gt;这和今天AI行业买了GPU却让它们空转，是不是同一个故事的不同版本？&lt;/p&gt;
+&lt;p&gt;但这里有一个关键的区别。暗光纤的问题主要是需求侧的——当时根本没有那么多数据需要传输。而GPU闲置的问题更复杂，因为算力需求明明就在那里。每家实验室都在抱怨算力不够用，每个研究者都在排队等GPU。&lt;/p&gt;
+&lt;p&gt;供给和需求都存在，中间到底卡在了哪里？&lt;/p&gt;
+&lt;p&gt;二、GPU 65%的时间在等待&lt;/p&gt;
+&lt;p&gt;我曾经天真地以为，GPU利用率低是因为工作负载不够。后来我去读了一些基础设施层面的技术分析，才意识到问题完全不是这样。&lt;/p&gt;
+&lt;p&gt;GPU不是一头只要喂食就会干活的野兽。它更像一位挑剔的米其林大厨——食材的品质、上菜的节奏、厨房的动线，任何一个环节出问题，它都会停下来等。&lt;/p&gt;
+&lt;p&gt;aixenergy的一项研究揭示了一个令我吃惊的数字：在AI训练过程中，GPU有30%到65%的时间处于闲置状态。不是因为没有任务分配给它，而是因为数据还没准备好。&lt;/p&gt;
+&lt;p&gt;这就是所谓的“数据饥饿”问题。&lt;/p&gt;
+&lt;p&gt;训练一个大模型需要海量数据，这些数据需要经过清洗、标注、分词、打包等一系列预处理步骤，然后从存储系统加载到GPU的显存中。GPU的计算速度是以每秒万亿次浮点运算（TFLOPS）来衡量的，但存储系统的IO速度远远跟不上这个节奏。结果就像一条高速公路上，收费站的吞吐量决定了实际车流量——不管你把公路修到几十车道宽，收费站一次只能过两辆车，后面全在堵。&lt;/p&gt;
+&lt;p&gt;但故事还没完。我在arXiv上找到一篇关于GPU能耗的论文，&lt;strong&gt;它揭示了一个更隐蔽的问题：即使GPU进入了所谓的“深层空闲状态”（deep idle），它仍然在大量耗电。Epoch AI的数据显示，GPU数据中心的总功耗中，约40%直接来自GPU本身。这意味着那些等待数据的GPU不仅没在干活，还在烧电，而且烧的是不小的量。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这就像一辆法拉利堵在早高峰的环路上：引擎空转，油在烧，但车没动。而你还在为这辆车支付每小时50美元的租金。&lt;/p&gt;
+&lt;p&gt;还有一个更微妙的陷阱。那篇arXiv论文指出，目前行业通用的监控指标“集群级SM利用率”，其实并不能有效反映真实能效。SM（Streaming Multiprocessor，流式多处理器）是GPU内部的计算单元。即便监控面板显示SM利用率看起来正常，实际上很多计算周期在做“假工作”——数据搬运、内存同步、等待通信，而非真正的模型计算。&lt;/p&gt;
+&lt;p&gt;这解释了一个我之前困惑的现象：为什么有些团队报告“GPU利用率70%”，但训练速度却远低于预期。因为那70%里面，可能只有一半在做有效计算，剩下的在做后勤。峰值负载利用率就像公司的“最佳季度营收”——它是真的，但它不代表常态。用它来衡量效率，就像用你跑得最快的那一次百米成绩，来评估你的日常通勤速度。&lt;/p&gt;
+&lt;p&gt;当问题出在结构而非规模上时，堆量不仅不能解决问题，反而会让浪费等比放大。&lt;/p&gt;
+&lt;p&gt;三、当“用好算力”变成一门新学科&lt;/p&gt;
+&lt;p&gt;如果问题是结构性的，那解法也必须是结构性的。这正是Anjney Midha在那期播客中提出的核心命题。他用了一个词：“outputmaxxing”——产出最大化。&lt;/p&gt;
+&lt;p&gt;这个词初听像硅谷的又一个流行语，但Midha给出的基准线让我意识到，它指向的是一个严肃的工程问题。他说：“我认为目前最佳实践者的MFU，大概在60%到70%之间。”&lt;/p&gt;
+&lt;p&gt;60%到70%。这是全世界最顶尖的团队、最优化的代码、最精心调校的基础设施所能达到的上限。而行业均值连这个数字的零头都不到。&lt;/p&gt;
+&lt;p&gt;这个差距意味着什么？意味着对于大多数AI公司来说，如果能把利用率从10%提升到60%，等同于在不多花一分钱的情况下，把有效算力扩大了6倍。不需要抢购更多GPU，不需要建更多数据中心，不需要和英伟达打价格战——只需要把已经买来的东西真正用起来。&lt;/p&gt;
+&lt;p&gt;这和云计算行业走过的一条几乎一模一样的路。2000年代初期，企业的物理服务器平均利用率只有10%到15%。每台服务器运行一个应用，剩余的算力全部闲置。然后VMware带来了虚拟化技术，把多个虚拟机塞进同一台物理服务器里。再后来Docker带来了容器化，进一步压缩了资源开销。&lt;/p&gt;
+&lt;p&gt;到今天，云服务器的利用率普遍达到60%到70%。&lt;/p&gt;
+&lt;p&gt;从10-15%到60-70%。这个跃迁花了大约15年，催生了一个万亿美元的云计算产业，彻底改变了软件的构建和部署方式。AI算力现在站在的位置，看起来就是2005年的服务器市场——知道问题在哪里，但系统性的解决方案还在酝酿中。&lt;/p&gt;
+&lt;p&gt;商业模式的变迁，正在加速这个转型。早期的AI基础设施市场流行“固定费用许可”和“捆绑Token”模式——企业预付一大笔钱，买下一定量的算力配额，用不完也不退。这种模式天然鼓励浪费，因为边际成本为零，没有人有动力去优化利用率。&lt;/p&gt;
+&lt;p&gt;VentureBeat的分析指出，随着行业逐渐转向按使用量计费，闲置基础设施的成本压力，正在从“被忽略的背景噪音”变成“生产阶段的紧急事项”。&lt;/p&gt;
+&lt;p&gt;当每一个空转的GPU周期，都直接对应着账单上的一个数字时，“产出最大化”就不再是一个技术理想，而是一个财务命令。&lt;/p&gt;
+&lt;p&gt;与此同时，环境成本也在倒逼效率革命。&lt;/p&gt;
+&lt;p&gt;Towards Data Science的分析指出，多数GPU的闲置意味着全球AI计算的碳排放中，有相当一部分是“无效排放”——它们没有产出任何智能，只是把电变成了热。GPU数据中心40%的功耗来自GPU本身，而其中大量消耗在空转和深层空闲状态上。这不仅仅是钱的问题，更是资源和环境的问题。&lt;/p&gt;
+&lt;p&gt;Fujitsu在2024年发布了一份技术白皮书，标题直截了当：“最大化GPU利用率”。DevZero、Prodia、Mirantis等一批基础设施公司也纷纷发文探讨“为何80%的GPU闲置”以及各自的优化策略。这种行业范围内的集体焦虑，本身就是一个信号——问题已经大到没人能继续假装看不见了。&lt;/p&gt;
+&lt;p&gt;人们忽略了一件重要的事，在AI竞赛的叙事中，“规模”一直是唯一的主角。&lt;strong&gt;谁拥有最多的GPU、谁训练了最大的模型、谁花了最多的钱——这些是头条新闻的素材。但效率从来不是头条。没有人会写“某公司把GPU利用率从15%提升到50%”的新闻，尽管从实际产出来看，这可能比多买10万块GPU更有价值。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Midha的“产出最大化”之所以值得认真对待，是因为它暗示了一个范式转移：&lt;/p&gt;
+&lt;p&gt;AI竞赛的护城河正在从“谁能买到更多算力”转向“谁能从同样的算力中榨取更多智能”。前者是一场资本的消耗战，后者是一场工程的精密战。前者的上限取决于你的银行账户和英伟达的产能，后者的上限取决于你对计算物理学、分布式系统和数据工程的理解深度。&lt;/p&gt;
+&lt;p&gt;这不是一个渐进式的优化问题，也是一门新学科的诞生。&lt;/p&gt;
+&lt;p&gt;每一次基础设施革命似乎都遵循相同的剧本：先是疯狂建设，然后发现大部分产能在浪费，接着一批新的公司和技术出现，专门解决“如何用好已经建好的东西”。铁路时代如此，电力时代如此，互联网时代如此，云计算时代如此。AI算力走到了这条弧线的拐点上。&lt;/p&gt;
+&lt;p&gt;但这一次有一个有意思的不同。之前每一次效率革命，优化的对象都是相对“笨”的资源——蒸汽、电力、带宽、服务器周期。而这一次，我们试图优化的资源本身，正在被用来创造某种形式的智能。当你把一块GPU从空转状态“唤醒”，让它真正参与模型训练时，你增加的不仅仅是利用率百分比——你增加的是这个世界上正在思考的硅基大脑的数量。&lt;/p&gt;
+&lt;p&gt;也许，AI时代最重要的问题从来不是“我们能制造多少算力”，而是“我们已经拥有的算力中，有多少真正在思考”。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/49981c3f-769c-4990-8447-5d99184ba899.png" target="_blank"&gt;&lt;img alt="都在说缺算力 90%的AI芯片却被“浪费”了" h="379" src="//img1.mydrivers.com/img/20260701/S49981c3f-769c-4990-8447-5d99184ba899.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 07:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA4OHA4ZGZCZDRQOEx3WnktbUIwYkw0c1BrTGpzVGhTLVNJM283Nmhnand5UWlTaV82TU9TcjlZa0JMeW5UMU1CT2Q3dFVhNm5rcU9SMWwyams</guid></item><item><title>连零件都不准卖！美新规表决封杀华为：含海思芯片的产品将全面禁售 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133366.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;连零件都不准卖！美新规表决封杀华为：含海思芯片的产品将全面禁售&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-01 15:28:34  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1133366-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，&lt;span&gt;&lt;strong&gt;美国联邦通信委员会（FCC）近日宣布，计划在7月就一项新措施进行表决。该措施拟禁止在美国境内销售任何含有黑名单企业零组件的电子装置。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;现行禁令仅针对通讯装置成品，华为旗下海思设计的芯片若被其他品牌采购用于智能手机或平板电脑，再销往美国并未被明确禁止。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/9ded30d863d74772a330f5e8bd867616.jpg" target="_blank"&gt;&lt;img alt="连零件都不准卖！美新规表决封杀华为：含海思芯片的产品将全面禁售" h="400" src="//img1.mydrivers.com/img/20260701/s_9ded30d863d74772a330f5e8bd867616.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这正是FCC此次要堵上的关键漏洞。FCC在声明中强调，&lt;strong&gt;新规旨在切断构成安全风险的电子设备进入美国的渠道。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;新规若获批准，在美国市场销售各类电子装置的制造商，将被迫对内部零组件的采购来源进行更严格审查。&lt;span&gt;&lt;strong&gt;搭载海思芯片的产品对美出口或在美国境内销售将成为不可能。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;近几个月来，FCC已逐步加强管制，并在2022年禁令基础上持续扩大范围。&lt;/p&gt;
+&lt;p&gt;2026年3月禁止外国制造消费级路由器进入美国市场。6月又收紧海底通信光缆监管规则。此次新规将管制从整机延伸至零部件层级，美国的限制措施进一步升级。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;需要指出的是，新规在实务操作层面仍面临执行难题。现代电子装置由无数零部件构成，完全追溯所有料件的采购来源并非易事。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/2438f998-81d5-4461-be90-225b8a4193bd.jpg" target="_blank"&gt;&lt;img alt="连零件都不准卖！美新规表决封杀华为：含海思芯片的产品将全面禁售" h="337" src="//img1.mydrivers.com/img/20260701/S2438f998-81d5-4461-be90-225b8a4193bd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 07:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB4aFRRNGFYenRlZ2U1MC1QRTVIdm8zWmFrVEpIMFczQy01bV9DWHVOcVVKYWdIOF85dXBfQy1hVmhDWlZKRDE1RExDYUJPT2EzODJvdFBUY00</guid></item><item><title>史上最大翻车事故！英伟达最强AI芯片竟被台积电一块基板毁了 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133338.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，半导体研究机构SemiAnalysis近日在X平台披露，英伟达已在GTC 2026发布约三个月后取消原版四芯片Rubin Ultra设计。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该方案原计划2027年推出，采用四颗计算芯粒搭配16组HBM4E高带宽内存，单封装内存容量高达1TB。新版Rubin Ultra将转向双芯片设计。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/1fd62dd7-70ef-4e43-aeba-a2d46ab15767.jpg" target="_blank"&gt;&lt;img alt="史上最大翻车事故！英伟达最强AI芯片竟被台积电一块基板毁了" h="337" src="//img1.mydrivers.com/img/20260701/S1fd62dd7-70ef-4e43-aeba-a2d46ab15767.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;取消四芯片方案的核心原因是先进封装遭遇无法克服的技术障碍。英伟达与台积电原计划采用CoWoS-L封装将四颗接近光罩尺寸上限的大芯片集成在单一封装内。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;但在4芯片2加2排列的配置下，封装基板出现严重翘曲问题。基板向多个方向弯曲导致计算芯片无法与底层基板完全接触，信号传输因此失效。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;台积电曾探索CoPoS面板级封装作为替代方案，但量产时间最快也要到2028年底。这显然赶不上Rubin Ultra原定的2027年发布节点。&lt;/p&gt;
+&lt;p&gt;面对制造执行层面的严峻挑战，&lt;span&gt;&lt;strong&gt;英伟达最终决定放弃四芯片方案。转向双芯片设计后，单个封装内的HBM模块数量从16组缩减至8组。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;SemiAnalysis评估指出，新版双芯片Rubin Ultra的尺寸规模约为原版的一半，实际性能也将随之减半。&lt;/p&gt;
+&lt;p&gt;不过该机构强调，这一减半估算基于计算单元与内存接口的等比例缩减，并非英伟达官方确认的性能数据。英伟达仍可能通过架构优化在双芯片方案中尽可能获得更多性能。&lt;/p&gt;
+&lt;p&gt;截至目前，英伟达尚未对此消息作出官方回应。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/baa7993f1ad94dd689faaf523a6501bc.jpg" target="_blank"&gt;&lt;img alt="史上最大翻车事故！英伟达最强AI芯片竟被台积电一块基板毁了" h="337" src="//img1.mydrivers.com/img/20260701/s_baa7993f1ad94dd689faaf523a6501bc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 06:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5lVDB6TXVvam1lUXhYaUdZZ0hITlRZUFFuLTBLZ1h2SW5VQ080OURzd0U5VXp2R3RfU3RPVVozNDBDNXFvcVEwUEpSLTVFS1RtbG5oa3hxZUk</guid></item><item><title>三大内存巨头在美被诉以AI为由操纵存储价格 - 财新</title><link>https://international.caixin.com/2026-07-01/102459617.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
+       &lt;p&gt;　　&lt;b&gt;【财新网】&lt;/b&gt;全球内存巨头三星电子、SK海力士和美光科技因涉嫌操纵DRAM价格而在美国卷入一起集体诉讼。一些美国消费者和中小企业声称，这三家公司以扩大人工智能（AI）专用高带宽内存（HBM）产能为借口，故意减少通用DRAM芯片的供应，从而推高价格。&lt;/p&gt;
+&lt;p&gt;　　据美国科技媒体“WccF Tech”当地时间6月29日报道，14名个人和三家中小电脑组装及分销公司在美国加利福尼亚州北区地方法院对三星电子、SK海力士和美光提起损害赔偿诉讼。&lt;/p&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新</author><pubDate>Wed, 01 Jul 2026 05:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5TYkhQZ2NIRDUtQXlBdFVBbzNBN0Q5R3hETU9jcTRudXlqU2hZTzBwblhwNzkzdUhpU1U1Slp4c2FMUGVfNnYwbGJNbm1NNWd4OFRZNERld2JPdVBUdzVSOGhiLXk0bW9jeHc</guid></item><item><title>山姆砍单多个苹果涨价前已付款订单 转头加价600元新上架遭质疑 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133314.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，6月25日晚间，苹果公司上调Mac、iPad等产品售价，涨幅在16%至25%之间，这是苹果近年来规模较大的一次价格调整。&lt;/p&gt;
+&lt;p&gt;消息刚传开没多久，社交平台上就有不少网友反馈，全国多地的山姆会员超市里，iPad及Mac系列产品出现抢购、代购的情况。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/f94a9d04933342b58af38329e75b49b3.png" target="_blank"&gt;&lt;img alt="山姆砍单多个苹果涨价前已付款订单 转头加价600元新上架遭质疑" h="630" src="//img1.mydrivers.com/img/20260701/s_f94a9d04933342b58af38329e75b49b3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原因在于，苹果宣布上调iPad及Mac系列产品价格后，山姆超市并未进行价格调整。&lt;/p&gt;
+&lt;p&gt;据山姆APP显示，Apple iPad Air 11英寸128GB目前售价4499元，256GB售价4999元。Apple MacBook Air 13英寸M5 16GB+512GB售价8029元。&lt;/p&gt;
+&lt;p&gt;而据苹果中国官网，Macbook Air上调价格后，起售价已从8499元上调至9999元，iPad Air起售价从4799元上调至5999元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算下来山姆在售的苹果产品比官方新售价便宜了上千元，想入手的消费者特别多。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当时，多家山姆超市门店也确认，苹果系列产品尚未调价，但因大量抢购，部分门店已卖断货。&lt;/p&gt;
+&lt;p&gt;不过此次抢购热潮曝出消费争议。&lt;strong&gt;近日，多位消费者投诉反馈，山姆超市以“商品缺货”为由，单方面取消普通会员的苹果产品订单，但出现了会员等级区别对待的情况：同款商品、同等订单，高级会员卡用户的订单均正常发货，普通会员订单却被无故取消。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有消费者分享了自己的详细遭遇：6月25日调价当晚，她以5198元的价格下单一台MacBook Neo电脑，系统原定6月27日（周六）上午8点送达。&lt;/p&gt;
+&lt;p&gt;但在配送当日清晨，她突然收到山姆的订单取消通知，平台以“商品缺货”为由单方面终止订单。&lt;/p&gt;
+&lt;p&gt;该消费者透露她曾同时下单两笔同款电脑订单，最终高级会员卡对应的订单正常发货，普通会员卡的订单却被以缺货为由取消。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更令人质疑的是，被标注“缺货”并取消订单的这款机型，很快便在山姆平台重新上架，页面显示“商品正在补货中”，但售价直接涨到5799元，较消费者此前的下单价格高出600元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;针对此次单方面取消订单的售后补偿问题，消费者表示山姆的处理方案十分敷衍。事件初期，山姆仅提出赔付30元优惠券作为补偿，且后续未主动跟进沟通、解决问题。&lt;/p&gt;
+&lt;p&gt;在等待数日无果后，该消费者于6月29日主动致电客服交涉维权。但客服称自身最高权限仅能为每台取消订单的设备，提供50元优惠券补偿。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/80c43df6fc6d4d9695fbf8ad8cf593dd.jpg" target="_blank"&gt;&lt;img alt="山姆砍单多个苹果涨价前已付款订单 转头加价600元新上架遭质疑" h="400" src="//img1.mydrivers.com/img/20260701/s_80c43df6fc6d4d9695fbf8ad8cf593dd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 05:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE42VGY3M0s0cGNUNmxEQmwyS0U2dm5IQTZCajZLRWVtOXFnT2w0MGNDdnEyVHZ0QUQ2SWtSS1NjWWp4YzhMaTc2blZ4cHJmdEdPOTBkbGdVNkU</guid></item><item><title>我在B站和“野生”UP主学AI - 36Kr</title><link>https://www.36kr.com/p/3876525664956678</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;blockquote&gt;
+   &lt;p&gt;焦虑、好奇和真实问题把普通人带向了新的临时课堂。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;焦虑是一团火。&lt;/p&gt;
+  &lt;p&gt;6月22日晚九点左右，花叔v关于女娲skill的视频，有126个人正在观看。&lt;/p&gt;
+  &lt;p&gt;花叔v（下称花叔）是B站上AI相关的内容创作者，俗称“UP主”。4月上旬，他在github上开源了项目“女娲.skill”，4天就收获了6000+ Star。在他看来，与其蒸馏身边普通的同事，不如蒸馏更大佬级别的人物，乔布斯、马斯克、罗永浩等名人都在名单之上。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,788" src="https://img.36krcdn.com/hsossms/20260701/v2_13acb99af3ce4f30af7eb12922bed26c@000000_oswg285250oswg1080oswg788_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;花叔“女娲.skill”相关视频截图&lt;/p&gt;
+  &lt;p&gt;而这个发布于4月11日的视频，两个多月后，依旧还有观众陆续观看。&lt;/p&gt;
+  &lt;p&gt;花叔也关注到了流量的起伏和变化：“&lt;strong&gt;从我自己的感受和数据来说，工作日是上下班的时间节点，周末偏晚一些观众更多一些。&lt;/strong&gt;”&lt;/p&gt;
+  &lt;p&gt;这不是他一人的感受。同时间段，UP主“秋芝2046”也有同样的情况。发布于5月16日关于Codex的视频里，1000+人同时正在观看；发布于5月5日关于Claude Code的视频里，1000+人同时正在观看。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,809" src="https://img.36krcdn.com/hsossms/20260701/v2_8d77269e68e24d66b2ec5761298651e5@000000_oswg645310oswg1080oswg809_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;“秋芝2046”视频截图&lt;/p&gt;
+  &lt;p&gt;UP主“五道口纳什”对数据的观察更为细致，他告诉盒饭财经：“晚上10点是一个小高峰，中午12:30左右是个小高峰，就是大家休息的时候。”&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;流量中的每一个数字，便是一个真实的个体，数据的变化，承载的是他们在焦虑和需求中的摸索。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;2024年，王小川在接受媒体采访时表示：“去年焦虑买不到卡，今年焦虑有卡不知道该干吗。”这种FOMO情绪中诞生的焦虑，如同一团火，随着AI行业的发展，也在逐渐破圈蔓延。ChatGPT、DeepSeek、Claude Code、Gemini、Seedance，新的产品带来新的震撼后，原本习惯了的工作土壤就松动一分。&lt;/p&gt;
+  &lt;p&gt;旧秩序开始崩塌，新的城池还未确定，行动是这片混沌中少有缓解焦虑的办法。&lt;/p&gt;
+  &lt;p&gt;CNNIC第57次《中国互联网络发展状况统计报告》显示，截至2025年12月，生成式人工智能用户规模达6.02亿人，较2024年底增长141.7%；普及率达42.8%，大幅提高25.2个百分点。生成式人工智能正加速融入日常生活与生产领域，成为推动社会数字化、智能化转型的重要引擎。&lt;/p&gt;
+  &lt;p&gt;AI浪潮太快，但传统“货架”模式的课程追不上更新迭代速度。焦虑需要一个出口，现实工作中的应用需要方法。&lt;strong&gt;于是，一批内容创作者成了普通人和年轻技术学习者的“临时老师”：他们不提供完整课表，却提供路径、经验和正在发生的试错。&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;困境&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;B站相关的AI学习内容里，“五道口纳什”不是那种提供速成感的UP主。&lt;/p&gt;
+  &lt;p&gt;他的视频更接近一间开放的实验室：问题被拆开，概念被重新排列，工具背后的原理被反复追问。相比告诉观众“怎么立刻用起来”，他更关心另一件事：建立对Agent黑盒背后的基本概念与原理的认知，也就是所谓的知其然知其所以然。&lt;/p&gt;
+  &lt;p&gt;2017年，“五道口纳什”还在西安读研究生。当时的他，一直想去北上广，尤其是北京，原因很简单，因为北京距离技术更近。后来辗转在华为、杭州工作后，他终于来到北京。那时，还没确定工作，就把住所定在了清华斜对面。而清华所在地，便是五道口。&lt;/p&gt;
+  &lt;p&gt;而“纳什”来自一种熟人间的联想。因痴迷数学算法，有朋友想到了《美丽心灵》里的纳什，于是这个名字后来被保留下来。早期做视频时，数学也贯彻视频。他像是把自己的学习笔记公开：推公式、读论文、学模型，再把这些过程整理成内容。&lt;/p&gt;
+  &lt;p&gt;2019年10月19日，“五道口纳什”在B站上更新了他的第一条视频。他会在视频标题的最前面加上一个分类，比如《BERT、T5与GPT》《分布式训练》《RL4LLM》《LLM Architect》《Agentic RL》《探索智能的边界》等，试图在覆盖，Modern AI从原理到应用的诸多方面。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,563" src="https://img.36krcdn.com/hsossms/20260701/v2_a7602d844b1b481599d0ef1c6cf03b1c@000000_oswg294189oswg1080oswg563_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;“五道口纳什”页面截图&lt;/p&gt;
+  &lt;p&gt;他告诉盒饭财经，早期在B站当UP主主要有两个原因：&lt;strong&gt;一是遵循费曼学习法，通过讲而学，二是，可以将自己的学习笔记和学习过程数字化沉淀下来。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;“自学的，倒不是学AI，只是在学用AI工具。”今年年初，刚换了工作的刘盛因工作需要，开始进一步学习AI相关的内容。&lt;/p&gt;
+  &lt;p&gt;刘盛（化名）是国内某互联网企业的后端程序员，之前入行看的是慕课网，现在却找不到这类系统的学习平台。比较幸运的是，公司内部会提供学习资源，也会有相关的讲座和指导群。于是，他要做的就是结合公司提供的技术文档，在各大平台寻找一些补充，比如看B站上有没有能白嫖token的方法。&lt;/p&gt;
+  &lt;p&gt;学习是方法，也是解药，同时也会因此带来新的问题。&lt;/p&gt;
+  &lt;p&gt;2026年3月，一个国内某知名大学刚进组的研究生，给“五道口纳什”写了一封千余字的信。信中主要表达了两个观点：&lt;strong&gt;第一，学不过来，AI的东西太多了，且每天都有新的进展，乱花渐欲迷人眼，其中的学习路线和全貌是什么？第二，不知道学的东西有没有意义。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;这封信让“五道口纳什”印象深刻。&lt;/p&gt;
+  &lt;p&gt;“他说，他即使花了很长时间学完后，发现问了AI，AI可以5分钟就帮他去写完一个非常完备的‌PPO 的算法。”更深层的迷茫来自价值感，“五道口纳什”转述，“&lt;strong&gt;如果保持着那种纯手工或者古法编程的方式，效率非常低。周围的人也已经开始用AI写代码了，他在一段时间的适应后，发现自己特别容易被取代。&lt;/strong&gt;”&lt;/p&gt;
+  &lt;p&gt;在广州从事食品饮料行业的乔真（化名）也有同样的感受，他告诉盒饭财经：“偶尔会想，这段话如果让我来写，是不是写得没有他好。AI做得很好，有时会忍不住去用，但去用的时候，又很担心。那我以后怎么办？我会不会就一直flop？如果都用AI来生成，那我的价值在哪里？”&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;乔真缓解这种情绪的办法，也是行动。&lt;/strong&gt;让AI制定学习方案告诉他该怎么学，没事就跑跑步，学一些不需要脑力的技能，让他感到踏实，“行动起来是真的可以缓解焦虑。”&lt;/p&gt;
+  &lt;p&gt;于是，或学习需要，或工作需要，或情绪需要，工作时间、上下班的间隙都成了他们“补课”的时间。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;先用起来，解决真实问题&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;花叔的账号轨迹，几乎踩在这两年普通人学习AI的情绪节点上。&lt;/p&gt;
+  &lt;p&gt;2022年11月30日，ChatGPT发布，OpenAI这个曾经更偏研究气质的机构，一跃走到舞台中央。它掀起的人工智能、AGI之火，一路从硅谷烧到了国内。2023年2月初，ChatGPT的月活用户两个月突破一亿。&lt;/p&gt;
+  &lt;p&gt;瑞士银行巨头瑞银集团的一份报告显示，在ChatGPT推出仅两个月后，它在2023年1月末的月活用户已经突破了1亿，成为史上用户增长速度最快的消费级应用程序。根据Sensor Tower的数据，TikTok达到1亿用户用了9个月，Instagram则花了2年半的时间。&lt;/p&gt;
+  &lt;p&gt;此时，较为敏感的那批人突然意识到，AI不是一个只供围观的新技术，而是一套可能立刻进入工作的工具。2016年，AlphaGo战胜韩国传奇棋手李世石，那时讨论的便是“人工智能是否会战胜人类”。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,608" src="https://img.36krcdn.com/hsossms/20260701/v2_6aeb2706e9b0411d8ef08742d96520f8@000000_oswg578654oswg1080oswg608_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;AlphaGo与李世石直播画面截图&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;相比7年前，此时的焦虑更具体：看得懂热闹，却不知道第一步该怎么做。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;花叔给出的路径不是报一个班或者买一套课程，用传统学习的方式补齐一整套理论。&lt;strong&gt;他通常把AI拉进一个具体任务里，让结果暴露问题，再回头补知识、改提问、调方法。&lt;/strong&gt;对许多被AI信息流裹挟的人来说，这比“从零系统学习”更容易启动。&lt;/p&gt;
+  &lt;p&gt;2023年4月9日，花叔更新了第一条视频，名为《AI基础课01：ChatGPT prompt Engineering实战，中文提示词工程学教程，从入门到精通》。&lt;/p&gt;
+  &lt;p&gt;因看到AI出现，觉得有趣和好奇，成为他做这件事的原点。这条视频里，他分享了自己的使用经验，也明确表示想用这种输出的方式倒逼自己的输入，“在疯狂学的过程中也会有很多想法感想，感觉通过这种方式输出还蛮好的，然后也获得了一些正反馈，所以让过程能够继续。”&lt;/p&gt;
+  &lt;p&gt;好奇是最好的老师，也是优秀选题的来源。&lt;/p&gt;
+  &lt;p&gt;“2024年8月29日。”时隔近两年，花叔依然能准确快速报出准确的日期。这是他第一次接触AI编程。&lt;/p&gt;
+  &lt;p&gt;“那会应该是Cursor再加claude 3.5 Sonnet，因为产品形态和AI模型两个因素的发展，让AI编程，让我这类不懂技术的人，真的能靠它去开发产品。”花叔回忆那天他非常兴奋，在接触AI编程后的第三天，他就在B站发布了一条相关视频，“名字好像叫‘人人都都是P8工程师’，那条视频应该也有十几万的播放量，也成为很多人接触AI编程的一个起点。”&lt;/p&gt;
+  &lt;p&gt;这个节点，大众因AI产生的焦虑已发生变化：2023年，人们担心自己不会用ChatGPT；到2024年，焦虑变成了更直接的问题，AI已经进入写代码、做产品、搭工具的环节，普通人还能不能跟上这种生产方式的变化？&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;如果说早期AI学习者的焦虑来自“我不知道怎么学”，那么后来它逐渐转向“我学了以后能做什么”。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;2026年开年，因OpenClaw这只“龙虾”，焦虑来的更猛、影响范围更广。AGI不再满足于停留在对话框内，能帮你点奶茶，能帮你回消息，它们似乎开始“长出手脚”。不久后，“同事.skill”在社交媒体引起关注和讨论。&lt;strong&gt;此时的焦虑更加直观——我会不会被蒸馏，会不会被取代。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;花叔注意到了一个现象：“同事.skill”爆火后，github上冒出了一整个蒸馏宇宙：前任.skill、反蒸馏.skill、老板.skill等等。花了一个晚上，他把这些全刷了一遍，越刷越觉得荒诞、有意思。&lt;/p&gt;
+  &lt;p&gt;于是，他决定做一个“女娲skill”。&lt;/p&gt;
+  &lt;p&gt;github上“女娲skill”开篇的介绍就是“同事.skill证明了蒸馏一个人是可行的。那何必蒸馏同事？去蒸馏芒格、费曼、马斯克。只需要输入一个名字，女娲自动完成调研、提炼、验证全流程。”&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,541" src="https://img.36krcdn.com/hsossms/20260701/v2_493ca081bdfa4c00acf3571b46c81740@000000_oswg166817oswg1080oswg541_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;“女娲.skill”在github上的星标已超26.4k&lt;/p&gt;
+  &lt;p&gt;2026年4月初，花叔在github上开源了“女娲.skill”。4月11日，在B站发布了相关的视频《我蒸馏了17个大佬给我打工（开源免费）》。&lt;/p&gt;
+  &lt;p&gt;“录视频时大概的六千多，随着内容的传播，它更出圈了，这是我原本没意识到的。”花叔并不是技术出身，没想到能在GitHub这种技术圈里产生影响，是他意料之外的事。&lt;/p&gt;
+  &lt;p&gt;花叔并没有把自己放在“老师”的位置上。他认为，自己更像一个把新工具试过一遍后，回到人群中展示路径的人。他的视频并非只是在解释概念，而是在展示一种学习姿态：先承认自己也在摸索，再把摸索过程拆开给别人看。&lt;/p&gt;
+  &lt;p&gt;对用户而言，这种身份感比“权威教学”更接近他们面对AI时的真实状态。他们也曾和自己一样，原来别人也是这样试错的，原来不懂并不意味着被淘汰，原来一个真实问题可以成为学习的入口——这样的叙事，更容易让点进视频的人放下情绪关注问题本身。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;被切碎的课本，把黑盒变白&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;如果说花叔代表的是“先用起来”的路径，“五道口纳什”代表的则是另一条路：把黑盒尽量变白。&lt;/p&gt;
+  &lt;p&gt;“五道口纳什”是幸运的，这一轮AI周期里，他几乎都经历了。&lt;/p&gt;
+  &lt;p&gt;读研时，就对深度学习有很大的好奇，加上自2022年以来ChatGPT的崭露头角后的持续密切关注和探索，他几乎亲历整个Modern AI 4年来所有大的进展。这也解释了为什么他的内容更加前沿和底层。&lt;/p&gt;
+  &lt;p&gt;2025年年底，“五道口纳什”意识到周围清华、北大相关专业的学生已经不手写代码了，“这是一个巨大的、时代的变化。”&lt;/p&gt;
+  &lt;p&gt;作为经历过正经软件工程训练的他当时就在琢磨，如果大家都不手写了，那可能会遇到两个问题：&lt;strong&gt;第一，如何保证你的代码是对的；第二，如何保证你写的代码是可维护的。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;“当时我就抛出了这两个问题，还找到了一个特别好用的skill。”为此，他特别做了一期视频介绍这个skill，“这个视频播放量最开始不行，现在也不算高，4万多。”&lt;/p&gt;
+  &lt;p&gt;因为内容的难度和连续性，天然就会成为一部分学习的壁垒。&lt;/p&gt;
+  &lt;p&gt;这也是五道口纳什内容里的一个隐含分界：他并不把AI学习简化成和模型多聊几轮。相反，他反复强调，重要知识本身就有学习曲线。微积分、数学基础、系统原理，这些东西不会因为大模型出现就自动消失，也很难靠几次轻松对话直接获得。&lt;/p&gt;
+  &lt;p&gt;他给出的解法，不是追逐更多点，而是把点连成线。AI学习者最容易拥有的是碎片：一个论文概念、一个框架名词、一个模型更新、一个实践案例。&lt;strong&gt;但真正能缓解焦虑的，往往不是更多碎片，而是知道这些碎片彼此如何连接，自己又应该从哪里进入。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;AI降低了很多入口门槛，但没有取消深度理解所需的时间。&lt;/p&gt;
+  &lt;p&gt;上一代如慕课网这样的在线教育平台成立的前提，是知识相对稳定，课程可以被提前规划、录制、上架，再由用户按章节消费。&lt;/p&gt;
+  &lt;p&gt;但AI学习的入口，已经被切得更碎。一个人可能在B站看完提示词教程，在GitHub复制一个项目，在阿里云或火山引擎文档里查接口，在Hugging Face或魔搭社区下载模型，最后又回到微信群里问报错。学习不再发生在单一平台内，而是在一串跳转、搜索、试错和求助之间完成。&lt;/p&gt;
+  &lt;p&gt;这也改变了课程的生产逻辑。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;AI内容的半衰期太短了。一个模型发布、一个框架更新、一个产品改版，都可能让几个月前还完整的课程迅速过时。传统课程货架讲究体系化、完整度和可售卖周期，但AI学习者往往等不到一门“从入门到精通”的大课。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;他们要先解决眼前的问题：这个工作流怎么跑通，这个插件为什么报错，这个API怎么调用，这个提示词为什么在新模型上失效。&lt;/p&gt;
+  &lt;p&gt;B站等内容平台，是这一路径被看见、被修正的场域。也是花叔、“五道口纳什”这类UP存在的价值。&lt;/p&gt;
+  &lt;p&gt;“五道口纳什”试图将内容“串起来”，希望未来能做更清晰的导览。比如，本科生怎么学、研究生怎么学、需要什么基础、对应哪些内容。导览意味着不替观众走完全程，也不承诺捷径，而是在知识密林里标出路径、坡度和方向。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,714" src="https://img.36krcdn.com/hsossms/20260701/v2_f0197e360bad4f5c9c820ee9f04ab9f6@000000_oswg403555oswg1080oswg714_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;“五道口纳什”合集页面截图&lt;/p&gt;
+  &lt;p&gt;就像“五道口纳什”这个名字一样，虽然讲的是极为理性的数学、逻辑，但他在分享时，会给自己定位，给视频前未见面的观众一个轮廓。&lt;/p&gt;
+  &lt;p&gt;他觉得自己像是“实验室的大师兄”，面对缺少导师路径、资源没那么好、不知道该怎么学、不知道学什么的师弟师妹，分享他的学习笔记。这个定位下，他做的不是站在讲台上给出标准答案，而是站在更靠前一点的位置，把路线、判断和笔记给后来者参考。&lt;/p&gt;
+  &lt;p&gt;这种内容之所以吸引一批观众，恰恰是因为AI学习者的焦虑已经从“不会用工具”转向“看不懂系统”。“因为我早期可能还是偏底层原理，我后来看了一下，粉丝里可能有百分之六七十是博士或博士生。”他告诉《盒饭财经》。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;和这件事在一起&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;他们看上去一快一慢，却共同指向同一件事：&lt;strong&gt;焦虑不能只靠观看被消解，它需要被转化成行动。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;花叔希望大家用最好的工具，解决自己实际工作中的问题：&lt;strong&gt;一是，尽早用上现在最好的AI工具和AI模型&lt;/strong&gt;，比如OpenAI的codex和anthropic的claude code。这些最好的模型再加上那些产品的agent实际的执行能力，会让你看到现在的AI会非常得不一样。&lt;strong&gt;二是，也不要特意为了学而学，找到工作中那些让你烦躁、让你痛苦、让你不想做的东西，然后让AI来帮你解决。&lt;/strong&gt;总结下来，就是用最好的工具，解决自己实际工作中的问题。&lt;/p&gt;
+  &lt;p&gt;“五道口纳什”希望大家拥抱AI，和AI一起进化，以追求一种极致的人机协作，“&lt;strong&gt;知道AI擅长什么，AI的缺陷和不足是什么，以及自己应该提升什么。然后尊重知识，尊重学习曲线&lt;/strong&gt;，不是所有的课程、不是所有的知识都是通过和AI的对话能学得的，比如微积分、高等数学，这些不可能仅仅通过AI就学会的。”&lt;/p&gt;
+  &lt;p&gt;这或许是普通人进入AI更稳妥的方式。不要先问自己有没有错过所有东西，而是先问眼前有没有一个问题值得被解决。&lt;/p&gt;
+  &lt;h3&gt;参考资料&lt;/h3&gt;
+  &lt;p&gt;1.《史上增速最快消费级应用，ChatGPT月活用户突破1亿》，机器之心&lt;/p&gt;
+  &lt;p&gt;2.《都让让！赛博女娲蒸馏一切，让乔布斯马斯克集体给你打工》，量子位&lt;/p&gt;
+  &lt;p&gt;3.《爆火的“同事.skill”，焦虑的职场》，剥洋葱people&lt;/p&gt;
+  &lt;p&gt;4.《第57次中国互联网络发展状况统计报告》，&lt;/p&gt;
+  &lt;p&gt;https://www.cnnic.net.cn/n4/2026/0304/c88-11549.html&lt;/p&gt;
+  &lt;p&gt;5.https://openai.com/zh-Hans-CN/index/chatgpt/&lt;/p&gt;
+  &lt;p&gt;6.《How ChatGPT Managed to Grow Faster Than TikTok or Instagram》，time&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzkyODE4ODYxMA==&amp;amp;mid=2247531281&amp;amp;idx=1&amp;amp;sn=5749f5a5f37efc8c2f7427f8ae2f40c8&amp;amp;chksm=c3eddea4a2a25c1b3d05cb7e204344a4ff36b34e28114873133f6919a76f614cb49c7d7851f5&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“盒饭财经”（ID：daxiongfan）&lt;/a&gt;，作者：许有阳，编辑：姚赟，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Wed, 01 Jul 2026 05:26:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE9uLS1wbTdfclh5WXpsaEIzRnRxSDdpVjZiY0JCNFRHWXcyeXhDWTFtd3RnbExFY0tGdFNIR05HSDNwRWxoYmc5U1I3bVZTWFdI</guid></item><item><title>RTX 50里程碑！频率终于首破4GHz：用的还是中国特供卡 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133305.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月1日消息，&lt;span&gt;&lt;strong&gt;希腊超频团队Team OGS使用影驰HOF OC LAB版RTX 5090D显卡，在液氮散热下将核心频率超频至4002MHz，成为首个突破4GHz大关的Blackwell架构GPU。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;此次使用的是RTX 5090D而非最新的V2版本，5090D与RTX 5090拥有相同的GB202核心和21760个CUDA核心完整规格。V2版本则削减了核心和显存配置，降至24GB GDDR7，超频潜力不如初代。&lt;/p&gt;
@@ -27,7 +307,31 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 04:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE52ek1YTE9wVjJDTVBhZ0FZaFlQRjBxNFFSTnVhWjNhTzRoaGVUNThMOU95ZmpLOUFlbmxZc0hGNV93RlBMNFVKVXdzdTFfOFAzbnp3UWtUZFc</guid></item><item><title>美国云厂商关停中国大陆CDN节点，互联网基建进一步本土化-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_07_01_822191.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 04:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE52ek1YTE9wVjJDTVBhZ0FZaFlQRjBxNFFSTnVhWjNhTzRoaGVUNThMOU95ZmpLOUFlbmxZc0hGNV93RlBMNFVKVXdzdTFfOFAzbnp3UWtUZFc</guid></item><item><title>骑手外勤长辈都适用 vivo Y600 Turbo手机全面评测：一台搞定全场景耐用需求的户外神机 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133299.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           
+&lt;p&gt;&lt;strong&gt;一、前言：耐用底子再提性能&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;之前测完vivo Y600 Pro，10200mAh超大电池+IP68/IP69满级防护的组合，着实刷新了我对耐用型手机的认知——原来长续航和硬核抗造真的不用二选一。&lt;/p&gt;
+&lt;p&gt;这次的Y600 Turbo属于针对性精准升级：&lt;span&gt;&lt;strong&gt;如果说Pro是纯工具属性的耐用机，那Turbo就是在抗造的底子上，把性能和日常流畅度拉了上来，适用人群直接宽了一截。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/d9634acf-7521-4119-8cff-d70e8d30a8cc.jpg" target="_blank"&gt;&lt;img alt="骑手外勤长辈都适用 vivo Y600 Turbo手机全面评测：一台搞定全场景耐用需求的户外神机" h="399" src="//img1.mydrivers.com/img/20260701/Sd9634acf-7521-4119-8cff-d70e8d30a8cc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;看家的防护能力一点没缩水：8项严苛环境测试全过，摔落、淋水、沙尘、高低温、盐雾、积冰这些极端工况全扛得住；IP68+IP69双防水认证，清水泡半小时、热水直冲都没问题。&lt;/p&gt;
+&lt;p&gt;机身从屏幕到内部做了四重防护结构，日常摔碰耐造度拉满，扬声器排水、一键除尘这些户外刚需功能也都保留，都是实打实能用得上的设计。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/f0a11202-708a-42b1-bef3-b4a941ebc79f.jpg" target="_blank"&gt;&lt;img alt="骑手外勤长辈都适用 vivo Y600 Turbo手机全面评测：一台搞定全场景耐用需求的户外神机" h="399" src="//img1.mydrivers.com/img/20260701/Sf0a11202-708a-42b1-bef3-b4a941ebc79f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;电池从10200mAh调整到9000mAh，看似略有缩减，但放在整个手机圈依旧是罕见的大容量，重度使用一天半绰绰有余。&lt;/p&gt;
+&lt;p&gt;更关键的是寿命升级：1200次充放循环后剩余容量仍超80%，正常使用能扛6年，比普通手机耐用不少。90W远航闪充、低温不掉电、反向充电这些实用配置也都完整保留。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;核心升级是换上了高通骁龙7sGen4，日常刷应用、切后台明显更跟手&lt;/strong&gt;，&lt;strong&gt;游戏提升最直观——《王者荣耀》直接能稳跑120帧，这是Pro版做不到的。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;搭配7000mm² VC液冷散热，长时间导航、玩游戏也不会因发烫降频卡顿，配合内存融合技术，后台能挂住不少APP。&lt;/p&gt;
+&lt;p&gt;功能上也补了不少场景化配置：&lt;strong&gt;针对外卖、快递从业者的职业模式，自带网络加速、免提增强、屏幕提亮；长辈友好的简易模式一键大字大图标；还有AI家庭教师拍照搜题，辅导作业省心不少。&lt;/strong&gt;寰宇增强通信3.0也没落下，360°穿墙天线，电梯地库弱网场景信号依然稳定。&lt;/p&gt;
+&lt;p&gt;价格也很实在，12+512GB顶配叠完国补才2300元左右，比Pro性价比还高，配置反而更均衡。&lt;/p&gt;
+&lt;p&gt;接下来我们就通过实际体验来聊聊这台机子的实际使用感受。&lt;/p&gt;
+&lt;p&gt;vivo Y600系列手机的产品参数：&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/3ff81964-751c-4d8b-a3ff-1fe098c90f47.jpg" target="_blank"&gt;&lt;img alt="骑手外勤长辈都适用 vivo Y600 Turbo手机全面评测：一台搞定全场景耐用需求的户外神机" h="539" src="//img1.mydrivers.com/img/20260701/S3ff81964-751c-4d8b-a3ff-1fe098c90f47.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 04:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5mRzZwNDFxb2RONU1tRHNPdjhNYmZ4RHhwejNCM2NvVVVJbjhiTE1BdzF0bFotcWRrcXhfYUg1UkRZazFQYzhWbTdDVmg0LUdTcGpjb3Q3OUo</guid></item><item><title>美国云厂商关停中国大陆CDN节点，互联网基建进一步本土化-观察者网 - guancha.cn</title><link>https://www.guancha.cn/economy/2026_07_01_822191.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
 &lt;/p&gt;
@@ -119,7 +423,87 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Wed, 01 Jul 2026 04:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9nbjl6WE5saURITnVaUnJzd3VMSHROTjRUa1RyUW53MDRjTjBReEJkbDZfRDcycENNd3B5UlN6Qk5BaWF3WWlvWVI1R1JNaF85SVpvZ0VEcDYzWjhveVB6VnB0ejA</guid></item><item><title>SemiAnalysis创始人：推理或超越石油成全球最大市场，2040年太空数据中心将主导全球算力 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775923</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 01 Jul 2026 03:48:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBYRE51MzEtMmtXOGwyRmhfR05KMDVBN2dLbl9udEZHTmloMjVacFdsUV9yTFIxcnd4cGFYdGNiSjJ2NU1IcXdEbGk5WUNBbERwa1pR</guid></item><item><title>苹果扛不住了！iPhone 17系列也要涨价：生产计划已下调15% - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133271.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Wed, 01 Jul 2026 04:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9nbjl6WE5saURITnVaUnJzd3VMSHROTjRUa1RyUW53MDRjTjBReEJkbDZfRDcycENNd3B5UlN6Qk5BaWF3WWlvWVI1R1JNaF85SVpvZ0VEcDYzWjhveVB6VnB0ejA</guid></item><item><title>AI泡沫若破裂，将如何波及全球经济？ - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/how-an-ai-bust-could-ripple-through-the-global-economy-0d843b69</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Wed, 01 Jul 2026 03:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMilgFBVV95cUxPbzFRaFNOUHMzOWp4M3FZczhTOFlqNUFFMHRLTlp4VUpjZDBlVkhsQVhHTHJoUGFOQTZyajVVN21qMDVLRzNuZTYtLVo4WkZLUlZQNUpxczNXLXFxWUx4VEtNSjk5RWE0Mms1YkpCb28yOF9XUDc2Ymp5RmhMdGN0OTl6aWo1cDVtN0ZFTEVSd2otR3hEb3c</guid></item><item><title>SemiAnalysis创始人：推理或超越石油成全球最大市场，2040年太空数据中心将主导全球算力 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775923</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 01 Jul 2026 03:48:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBYRE51MzEtMmtXOGwyRmhfR05KMDVBN2dLbl9udEZHTmloMjVacFdsUV9yTFIxcnd4cGFYdGNiSjJ2NU1IcXdEbGk5WUNBbERwa1pR</guid></item><item><title>国产Ultra总销量打不过iPhone 17 Pro Max：多家品牌放弃迭代 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133277.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，博主i冰宇宙发布了一组手机市场销量数据：截至今年6月21日，iPhone 17系列在中国市场的总销量约为3539万台，其中仅iPhone 17 Pro Max一款机型，销量便已达到约1269万台。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;作为对比，国产品牌所有Ultra旗舰机型的累计销量约为77.65万台，与苹果单款Pro Max机型的差距高达16倍之多。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这一悬殊的数据对比，直观反映出Ultra旗舰在当前市场中的尴尬处境。由于销量持续不及预期，多家国产手机品牌已相继放弃推出Ultra版本的计划。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/df08fcb6975a4e528d0b0d8ece7117f2.jpg" target="_blank"&gt;&lt;img alt="国产Ultra总销量打不过iPhone 17 Pro Max：多家品牌放弃迭代" h="348" src="//img1.mydrivers.com/img/20260701/s_df08fcb6975a4e528d0b0d8ece7117f2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该博主分析指出，Ultra机型往往承载了企业最顶尖的工程技术成果，是品牌技术实力的集中展示。然而市场反馈却一再证明，过于激进的硬件堆料并不一定能够转化为实际的销量增长。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;除销量因素外，内存价格的持续飙升也是迫使部分品牌放弃Ultra旗舰的重要原因。据SigmaIntel发布的最新研究报告显示，LPDDR系列内存的涨幅已高达89%，全球消费者正面临一场严峻的“内存荒”挑战。&lt;/p&gt;
+&lt;p&gt;受此影响，手机厂商的硬件成本大幅攀升，尤其是主打极致堆料的Ultra机型，成本压力更为突出。&lt;/p&gt;
+&lt;p&gt;小米总裁卢伟冰此前在直播中也曾表示，受内存成本大幅上涨影响，今年下半年国产直板旗舰手机的定价很可能会突破万元大关。截至目前，包括苹果在内的主流手机品牌均已完成了新一轮价格上调，进一步压缩了Ultra机型的市场空间。&lt;/p&gt;
+&lt;p&gt;综合销量表现持续低迷、内存价格暴涨带来成本压力等多重因素，业内普遍预计，明年将有多款Ultra旗舰不再上市，这一细分品类的未来走向正面临前所未有的不确定性。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/e38f20254f104bb8b1d9e3b079656973.jpg" target="_blank"&gt;&lt;img alt="国产Ultra总销量打不过iPhone 17 Pro Max：多家品牌放弃迭代" h="399" src="//img1.mydrivers.com/img/20260701/s_e38f20254f104bb8b1d9e3b079656973.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 03:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE43VGw2SmhNOWFmMnpJaFItUVZSQWpSODh5enBEUDRFbGgtU2FmQzRTc01TdWcxQkFIVFEtMkh4dlRuVWw1YnZsZWY0QUNjQWJhd0o2RWdtOEM</guid></item><item><title>日本支援国产AI联盟1万亿日元，欲摆脱对美依赖 - 日经中文网</title><link>https://cn.nikkei.com/industry/itelectric-appliance/63081-2026-07-01-11-17-59.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOaE00dGtlTktkWHM0LWxoTGVVQmlqSVViOFZTVHc4bVpMWmtDNkdIZXRuMEdmcTkyamVuRlhfVm9qd3F4Qkg0cTBPeG9sTnV6VlVnSHV2d0tkNHVvWmwwcTJNZVVpd1F0TUYwaEZqVmZBdmFCVzBwREJZakhBbTlmOU51bFFPQWNieVE?oc=5" target="_blank"&gt;日本支援国产AI联盟1万亿日元，欲摆脱对美依赖&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;日经中文网&lt;/font&gt;</description><author>日经中文网</author><pubDate>Wed, 01 Jul 2026 03:31:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiigFBVV95cUxOaE00dGtlTktkWHM0LWxoTGVVQmlqSVViOFZTVHc4bVpMWmtDNkdIZXRuMEdmcTkyamVuRlhfVm9qd3F4Qkg0cTBPeG9sTnV6VlVnSHV2d0tkNHVvWmwwcTJNZVVpd1F0TUYwaEZqVmZBdmFCVzBwREJZakhBbTlmOU51bFFPQWNieVE</guid></item><item><title>僵局打开！美国解除对Anthropic两大AI旗舰模型的出口管控 - 财联社</title><link>https://www.cls.cn/detail/2413870</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社7月1日讯（实习编辑 李莹/编辑 齐灵）&lt;/strong&gt;美国政府正式撤销对Anthropic旗下两大顶尖模型的出口管控，结束了这场特朗普政府与估值达万亿美元的AI企业长达数周的对峙。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;业内人士透露，美国商务部于美东时间6月30日晚间通知Anthropic，撤销对Anthropic两款旗舰大模型Claude Fable 5、Claude Mythos 5的全球出口管制。Anthropic官方称两款模型将于7月1日起分批次恢复全球访问。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此前一周，监管部门已先行放宽部分限制，准许Anthropic向约100家经过严格资质审核的合作企业，重新发布Mythos 5模型。该版本模型安全防护机制配置更少，主要面向企业级商用客户。&lt;/p&gt;
+&lt;p&gt;有媒体指出，商务部长卢特尼克在对Anthropic联合创始人Tom Brown出具的官方信函中表示，解除管制的核心前提是Anthropic承诺主动识别、应对旗下模型相关的各类安全风险。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;管制缘起&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;本次出口禁令始于6月12日，由卢特尼克签署落地。此前，美国监管机构发现，外界掌握了一套可绕过模型内置安全防护机制的 “越狱” 手段，存在严重安全隐患。在管控落地后，Anthropic被迫在全球范围内撤回全部高性能大模型产品。&lt;/p&gt;
+&lt;p&gt;上述禁令仅针对Fable 5和Mythos 5两款最新旗舰，Claude Opus 4.8、Sonnet系列等中低端模型全程未受任何限制，正常面向全球开放访问。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这一事件大幅激化了白宫与硅谷科技行业之间的矛盾。&lt;/strong&gt;硅谷业界批评美国政府针对前沿AI采取临时、无统一标准的管控模式。同时多国政府公开表达不满，指责美国单方面出台禁令，变相损害盟友权益。&lt;/p&gt;
+&lt;p&gt;此次出口管制出台的背景颇具矛盾性：特朗普政府此前在AI行业游说团体施压下，推出一套前沿大模型自愿监管框架，并公开承诺不会对头部AI企业设立强制性常态化监管制度。&lt;/p&gt;
+&lt;p&gt;但美国多名政府高层始终保持警示态度：若未充分评估模型被用于挖掘关键行业网络安全漏洞的风险，就向全社会开放高性能大模型，将带来难以预估的安全威胁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;行业首例&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Anthropic凭借自研系列模型实现业务赶超，行业地位超越OpenAI等竞争对手，也是首家因模型存在被恶意势力滥用的安全隐患，遭到白宫出口禁令管制的AI企业。&lt;/p&gt;
+&lt;p&gt;同为头部AI厂商的OpenAI，其全新模型GPT-5.6同样受到监管约束。特朗普政府要求该企业初期仅对二十余家官方审核通过的合作方开放模型使用权限。&lt;strong&gt;据知情人士透露，GPT-5.6最快将于下周实现更大范围的对外开放。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;业内人士报道，在美国放宽头部企业模型管制的同时，&lt;strong&gt;美欧双方已展开磋商，计划搭建前沿AI模型 “可信合作伙伴” 计划。根据该计划，美国的核心盟友将获得最新AI模型的优先访问权。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;针对本次出口管制解除一事，Anthropic官方表示不予置评。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Wed, 01 Jul 2026 03:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE5mTUVkODZXWWt4OGc4d1NKdVJJcDhBSGtUakZ1QmJDWVA0Sk1DcjFKNEJBTUVtSE5MT2xPOUZ4MFpRaXdyaEhtdA</guid></item><item><title>存储疯涨下 vivo加量不加价杀疯！折叠旗舰X Fold6首销：7999元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133276.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，眼下全行业存储芯片价格持续上涨，不少数码产品都在悄悄调价对冲成本压力，刚刚正式发布的vivo全新折叠旗舰X Fold6却直接拿出了加量不加价的诚意策略，这款新机今天也正式迎来全渠道首销。&lt;/p&gt;
+&lt;p&gt;vivo X Fold6首发搭载了采用三星M14发光材料的旗舰屏幕，内置容量达到7000mAh的蓝海大电池，整机同时覆盖IPX8/IPX9防水以及IP5X防尘等级，核心性能芯片也首次搭载了天玑9500超能版。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/6860fd013922435aa858864211705e05.jpg" target="_blank"&gt;&lt;img alt="首发天玑9500超能版！vivo X Fold6明天首销：7999元起" h="313" src="//img1.mydrivers.com/img/20260630/s_6860fd013922435aa858864211705e05.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在实际性能释放层面，天玑9500超能版的NPU峰值性能相比上一代芯片提升了111%，日常处理大文档摘要、多模态内容生成这类重负载AI任务时都能做到秒级响应，没有卡顿等待。&lt;/p&gt;
+&lt;p&gt;同时CPU与GPU性能也同步迎来了大幅升级，完全可以支撑折叠屏多窗口同开、大文件高速操作的流畅性需求，不会出现常见的拖影掉帧问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这代新机在硬件配置全面迭代的同时，系统层面的体验升级感知度极强，尤其是全新上线的原子台功能，把大折叠屏的屏幕尺寸优势完全释放了出来。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;vivo公司副总裁、产品副总裁黄韬在接受采访时直接表示，自己上手试用了一段时间X Fold6之后，已经完全不想换回其他普通直板手机，现在日常工作生活全程只把这台X Fold6作为唯一的主力机使用。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;大家最关心的定价也维持了足够高的性价比，这台新机的起步版本售价仅7999元，顶配版本的定价为12299元，同档位产品里的配置优势相当突出。&lt;/p&gt;
+&lt;p&gt;之前就有行业消息传出，上一代X Fold5的市场表现非常亮眼，整体销量摸到了大几十万台的量级，直接助力vivo跻身国内大折叠手机销量排名前二的厂商，站稳了折叠屏赛道第一梯队的位置。&lt;/p&gt;
+&lt;p&gt;黄韬在本次采访中也明确谈到，整个研发团队对X Fold6的市场表现抱有极高信心，所有到场体验新机的用户都能直观感受到，这代产品不管是外观做工、影像能力、续航表现、屏幕素质，还是全新升级的原子工作台交互逻辑，相比上一代都有跨越式的提升。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class="f14_link" href="https://news.mydrivers.com/1/1132/1132562.htm" target="_blank"&gt;他判断这代新品的整体销量，相比X Fold5至少能实现30%以上的同比增长&lt;/a&gt;。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/df3106a69fde465b925cc9893e61fdfd.jpg" target="_blank"&gt;&lt;img alt="首发天玑9500超能版！vivo X Fold6明天首销：7999元起" h="366" src="//img1.mydrivers.com/img/20260630/s_df3106a69fde465b925cc9893e61fdfd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 03:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9mWEhwejNIS3l1S3pJYUdKRGlNWG1HYkVQNEREMFhLcW9JTjFmWnZGOWtCQU8zaGpqOFJSOGl6aEpIR2Q4MktiM2dqZWFwZTI2YzIxWXM5WjI</guid></item><item><title>性能仅提升4%就敢加价79%！EXPO ULL内存首发溢价惊人 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133274.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，AMD在Computex 2026上推出的EXPO Ultra Low Latency（ULL）超低延迟内存规范首批零售产品已上架，&lt;span&gt;&lt;strong&gt;定价与AMD高管此前表示的“和现有EXPO基本持平”相去甚远，部分型号溢价高达79%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;EXPO ULL是AMD对现有EXPO内存超频技术的升级版，通过进一步收紧内存子时序来降低延迟。AMD官方数据显示，EXPO ULL实测在30多款游戏中，平均帧率比JEDEC标准、EXPO分别高13%、4%，1%低帧则分别高15%、4%。&lt;/p&gt;
+&lt;p&gt;在Computex 2026上，AMD Ryzen与Radeon副总裁David McAfee曾表示，从合作伙伴的反馈来看，ULL内存的定价将与现有EXPO产品“基本持平”。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/057471ad-1ecb-4d94-8457-d35d4b732f3c.jpg" target="_blank"&gt;&lt;img alt="性能仅提升4%就敢加价79%！EXPO ULL内存首发溢价惊人" h="282" src="//img1.mydrivers.com/img/20260701/S057471ad-1ecb-4d94-8457-d35d4b732f3c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;现实却给出了完全不同的答案，芝奇首批支持EXPO ULL的Trident Z5 NeoX RGB系列已在Newegg上架，&lt;strong&gt;涵盖DDR5-6000频率下C26、C28、C30、C36四款时序规格，均为32GB套条，与同频率同时序的Trident Z5 Neo标准版相比，溢价幅度从10%到79%不等。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;溢价最夸张的是C28型号，NeoX版定价999.99美元，标准Neo版仅559.99美元，差价440美元，溢价79%；C26型号同样离谱，NeoX版1099.99美元对比Neo版699.99美元，溢价57%。这两款也是时序低的型号，对内存颗粒的筛选要求最高。&lt;/p&gt;
+&lt;p&gt;相比之下，时序较松的C30和C36型号溢价分别收窄至14%和10%，C36 NeoX版549.99美元对比标准版499.99美元，差价仅50美元。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/e6d2c233-fcce-412e-a33b-09ab9c23780f.png" target="_blank"&gt;&lt;img alt="性能仅提升4%就敢加价79%！EXPO ULL内存首发溢价惊人" h="798" src="//img1.mydrivers.com/img/20260701/Se6d2c233-fcce-412e-a33b-09ab9c23780f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;从技术参数看，NeoX系列确实带来了实质性的时序优化，C26、C28和C30三款将tRAS从标准版的96周期大幅压缩至32周期，C36版也从96降至76，&lt;/strong&gt;但是否值得多花这么多钱，就是另一个问题了。&lt;/p&gt;
+&lt;p&gt;这一溢价时机尤为尴尬，当前DDR5内存市场正处于价格暴涨周期，在基础内存价格已经高企的背景下，厂商将ULL定位为高端溢价产品而非AMD期望的平价升级选项，直接将AMD的同价承诺架空。&lt;/p&gt;
+&lt;p&gt;Tom's Hardware在报道中直言，AMD的EXPO ULL是一个好想法，但出现在最糟糕的时间点。&lt;strong&gt;内存厂商和零售商没有把它当作普及型技术来推广，而是借DDR5涨价潮将其变成了又一个高端利润层级。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于消费者来说，4%的性能提升是否值得多付近一倍的价格，答案恐怕不言自明。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/4dadb198-ebca-4cf6-8024-e7e7c5780cb6.png" target="_blank"&gt;&lt;img alt="性能仅提升4%就敢加价79%！EXPO ULL内存首发溢价惊人" h="297" src="//img1.mydrivers.com/img/20260701/S4dadb198-ebca-4cf6-8024-e7e7c5780cb6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 03:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5KQ1VRaFJILXZid3hVTVpoa3JOMWlaYmJhNjNlb2RkalU4X3YwOG5mQ09ZTWpJa05DYWpIQTZWLUs2RXZoQWdrOWt6SnllNnJlVDVEak03RXY</guid></item><item><title>苹果扛不住了！iPhone 17系列也要涨价：生产计划已下调15% - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133271.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;strong&gt;快科技7月1日消息，上周多款iPad、Mac系列产品价格上涨，但最主流的iPhone并未调整，苹果选择硬扛压力。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;现在看来，苹果应该也扛不了如此巨大的成本压力，即将传导给消费者。&lt;/p&gt;
@@ -252,7 +636,19 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 02:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBNVHZFSk1yV0VYcGpYV1dmaFFTaWNRV0JCbUJVSkdkeWxzYk80LXAyS0ExNUppc3pWX1ZweVFMcGQtaVN4ZXlKN1JBREkzZ2E2bGJlX3lzLTE</guid></item><item><title>“AI马克思主义”：中国如何应对人工智能革命 - 纽约时报中文网</title><link>https://cn.nytimes.com/china/20260701/china-ai-jobs-birthright-hormuz/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;当官方想要表达其对某件事动了真格时，通常会将其写入五年规划。在当前的五年规划中，中国承诺要“积极应对”人工智能对就业带来的冲击。&lt;/p&gt;&lt;p class="article-paragraph"&gt;我采访了布鲁金斯学会研究中国人工智能政策的专家陈凯欣(Kyle Chan)。他告诉我，中国希望人工智能能够增强人类的能力——也就是说，提高人类在传统和新兴行业中的生产力，而不是取代人类。他表示，在向这种人工智能经济过渡的过程中，官方希望能够缓冲其带来的冲击，以避免引发社会问题。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;span&gt;我的同事&lt;a href="https://cn.nytimes.com/business/20260520/china-ai-unemployment/"&gt;凯蒂·埃德蒙森(Catie Edmondson)最近撰文&lt;/a&gt;描述了这一现状。人力资源和社会保障部承诺将为“重点行业提供定向就业支持”。一位全国人大代表&lt;a rel="noopener noreferrer" target="_blank" href="https://finance.sina.com.cn/stock/roll/2025-03-03/doc-inenkfeh9232082.shtml"&gt;则呼吁建立&lt;/a&gt;一项“&lt;/span&gt;&lt;p&gt;AI失业保险”制度，以此作为被转岗工人的安全网。官方也一直在推动职业培训，以帮助劳动者适应以人工智能为中心的工作市场。&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;中国学者甚至一直在拓展一个他们称为“AI马克思主义”的领域——试图用马克思主义的视角来剖析诸如“在人工智能革命之后，究竟是谁或什么创造了价值？”（是机器？是发明机器的人？还是操作机器的人？）等问题。&lt;/p&gt;&lt;p class="article-paragraph"&gt;或许最引人注目的是，政府正在给企业施加巨大的压力以避免裁员。而那些未能严格执行的企业可能会发现自己被告上法庭。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;figure class="article-inline-photo"&gt;&lt;figcaption&gt;&lt;span&gt;去年上海人工智能大会上展出的华为计算系统，该系统专为训练和运行大规模人工智能模型而打造。&lt;/span&gt; &lt;cite&gt;Qilai Shen for The New York Times&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;目前已经出现了几起偏向被辞退员工的受热议判决。今年4月，一家法院裁定，某科技公司在用人工智能软件取代一名员工后将其解雇属于违法行为。这一判决向其他雇主发出了含蓄的警告。&lt;/p&gt;&lt;p class="article-paragraph"&gt;杭州市中级人民法院在一份判词中写道：“人工智能技术的发展本应用于解放劳动、促进就业、造福民生，劳动法允许用人单位承接技术变革进行更新转型，但亦应顾及保障劳动者的合法权益。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Wed, 01 Jul 2026 02:26:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5OSkt5a2ltTnhwVjVUWlRyV3RfZURVbnlsajhfXzgwdjZSS1pXRFpIWEsxYkN2RkJnX0pGbWUyYkkxX0J4d1VRUEdoaHRQR3VRbEt4VHotam5xOGhzT0R4VGcwdUNIVjR2ZFY2TFFiMXVqbHVNekZ2aFBB</guid></item><item><title>Anthropic与特朗普政府达成协议，将恢复Fable模型访问权限 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/anthropic%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE-%E5%B0%86%E6%81%A2%E5%A4%8Dfable%E6%A8%A1%E5%9E%8B%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90-8ac19f93</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Wed, 01 Jul 2026 02:13:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMixgJBVV95cUxPVlo2amc1RXZVVFdfT1ROaWgyLVE2bzNJWmZ0S2dUQmJ3dTZ6Tnh4eGYzNm5kVTZzdkRvb2NTZVhMbk1ONThvTVdYM0Z2cXFSLWhfaExEamxpbFZHRUtlQjZIbVNKODBvdUxyTWVxNFEza3F0LUh3TWtMN2U5T3RQUWQ5Q3VMb0J1cXBpMUphckZrMDk2c0toaFg5X1BDLXFBTWE4LVluT19MLTZhNkRLMVJQTXNGMU0yc0syY0JiM2lYRGt5NTZGalZpTjNnWVo5NFJMRkJZeEdwaVlNTHNGdGNOQ1gwZ0hpY1JVdFc1Wkx3MmxleUM4VW5heXlRV0xUTmVfandrc0JjQV9nQlhTM3lveTlRQ3hNWFpIeE4tbWY2cl9MVkxsT1RFYzIyX1JQenE0anFDeUNEWEUtMW5vTTZoVk5DUQ</guid></item><item><title>2299元起！小米智能存储正式开启众筹：自带西数红盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133257.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 02:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBNVHZFSk1yV0VYcGpYV1dmaFFTaWNRV0JCbUJVSkdkeWxzYk80LXAyS0ExNUppc3pWX1ZweVFMcGQtaVN4ZXlKN1JBREkzZ2E2bGJlX3lzLTE</guid></item><item><title>“AI马克思主义”：中国如何应对人工智能革命 - 纽约时报中文网</title><link>https://cn.nytimes.com/china/20260701/china-ai-jobs-birthright-hormuz/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;当官方想要表达其对某件事动了真格时，通常会将其写入五年规划。在当前的五年规划中，中国承诺要“积极应对”人工智能对就业带来的冲击。&lt;/p&gt;&lt;p class="article-paragraph"&gt;我采访了布鲁金斯学会研究中国人工智能政策的专家陈凯欣(Kyle Chan)。他告诉我，中国希望人工智能能够增强人类的能力——也就是说，提高人类在传统和新兴行业中的生产力，而不是取代人类。他表示，在向这种人工智能经济过渡的过程中，官方希望能够缓冲其带来的冲击，以避免引发社会问题。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;span&gt;我的同事&lt;a href="https://cn.nytimes.com/business/20260520/china-ai-unemployment/"&gt;凯蒂·埃德蒙森(Catie Edmondson)最近撰文&lt;/a&gt;描述了这一现状。人力资源和社会保障部承诺将为“重点行业提供定向就业支持”。一位全国人大代表&lt;a rel="noopener noreferrer" target="_blank" href="https://finance.sina.com.cn/stock/roll/2025-03-03/doc-inenkfeh9232082.shtml"&gt;则呼吁建立&lt;/a&gt;一项“&lt;/span&gt;&lt;p&gt;AI失业保险”制度，以此作为被转岗工人的安全网。官方也一直在推动职业培训，以帮助劳动者适应以人工智能为中心的工作市场。&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;中国学者甚至一直在拓展一个他们称为“AI马克思主义”的领域——试图用马克思主义的视角来剖析诸如“在人工智能革命之后，究竟是谁或什么创造了价值？”（是机器？是发明机器的人？还是操作机器的人？）等问题。&lt;/p&gt;&lt;p class="article-paragraph"&gt;或许最引人注目的是，政府正在给企业施加巨大的压力以避免裁员。而那些未能严格执行的企业可能会发现自己被告上法庭。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;figure class="article-inline-photo"&gt;&lt;figcaption&gt;&lt;span&gt;去年上海人工智能大会上展出的华为计算系统，该系统专为训练和运行大规模人工智能模型而打造。&lt;/span&gt; &lt;cite&gt;Qilai Shen for The New York Times&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;目前已经出现了几起偏向被辞退员工的受热议判决。今年4月，一家法院裁定，某科技公司在用人工智能软件取代一名员工后将其解雇属于违法行为。这一判决向其他雇主发出了含蓄的警告。&lt;/p&gt;&lt;p class="article-paragraph"&gt;杭州市中级人民法院在一份判词中写道：“人工智能技术的发展本应用于解放劳动、促进就业、造福民生，劳动法允许用人单位承接技术变革进行更新转型，但亦应顾及保障劳动者的合法权益。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Wed, 01 Jul 2026 02:26:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5OSkt5a2ltTnhwVjVUWlRyV3RfZURVbnlsajhfXzgwdjZSS1pXRFpIWEsxYkN2RkJnX0pGbWUyYkkxX0J4d1VRUEdoaHRQR3VRbEt4VHotam5xOGhzT0R4VGcwdUNIVjR2ZFY2TFFiMXVqbHVNekZ2aFBB</guid></item><item><title>Token狂欢退潮后的企业现实：预算管控成新常态，但AI列车未减速 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775916</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 01 Jul 2026 02:16:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1nczRFNG1aRFRjcTJuZktzU2hsdlMxQUo4XzNiN3RIZ29yTG1sRzNhYkswMXFTR1ZraW1sMzVNaHc1NzM0eFA5NXhWdE1rdy0wWXdJ</guid></item><item><title>AI驱动半导体制造升级 巨头抢购电子级氢氟酸 部分供货商年内已涨价三成 - 财联社</title><link>https://www.cls.cn/detail/2413771</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;《科创板日报》7月1日讯（编辑 宋子乔）&lt;/strong&gt; 据中国台湾经济日报1日报道，业内传出，&lt;strong&gt;台积电、三星、SK海力士都在抢购电子级氢氟酸&lt;/strong&gt;（HF）。&lt;/p&gt;
+&lt;p&gt;报道称，今年以来中东地缘政治紧张推升硫磺、硫酸及无水氢氟酸价格，带动电子级氢氟酸成本垫高，&lt;strong&gt;部分供货商已陆续调涨售价，涨幅约二至三成&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前半导体最高规格的G5级电子级氢氟酸因技术门坎高，全球供给相对有限&lt;/strong&gt;。台塑大金（小K注：台塑大金为中国台湾地区台塑工业与日本大金工业各持股 50%的合营企业，主营G5级电子氢氟酸）目前正进行大发厂第二期、仁武厂2.5期扩建，新增氟化铵2800吨及氢氟酸6500吨产能，预期2027年完工；并同步进行仁武厂电子级氢氟酸与氟化铵去瓶颈工程。&lt;/p&gt;
+&lt;p&gt;台塑大金指出，若未来客户持续扩产，公司也拟持续跟进，目前氢氟酸单月获利，已与台塑旗下的电子级异丙醇（IPA）接近。&lt;/p&gt;
+&lt;p&gt;同时因为电子级氢氟酸对氟化钙（萤石）原料的精炼度要求极高，日本大金转移给台塑大金的超高纯度精制技术（达ppt等级，即万亿分之一杂质残留），是台厂能顺利跨入3nm、2nm先进制程的关键技术护城河。&lt;/p&gt;
+&lt;h1&gt;AI算力驱动半导体制造升级 带动高纯电子级氢氟酸需求增加&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;电子级氢氟酸作为高端氟化工材料且为半导体芯片用重要清洗剂和蚀刻剂，有“化学钥匙”之称&lt;/strong&gt;，是晶圆制造不可或缺的湿电子化学品，高纯电子级氢氟酸用于晶圆清洗与蚀刻环节，属于湿电子化学品的前三大使用规模品种，其纯度与稳定性决定芯片制造的良率上限。&lt;/p&gt;
+&lt;p&gt;据百川盈孚，6月29日国内UP/UPS级电子级氢氟酸价格7885/8750元/吨，较年初已上涨19%/17%，涨价原因除成本端硫酸、萤石价格有所上涨，需求端AI算力扩张和半导体制造升级也助推了此轮涨价。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;随着AI GPU、HBM高带宽内存及先进逻辑芯片持续扩产，每片晶圆对高纯度电子级氢氟酸的使用量同步增加，使其成为AI半导体供应链的重要战略物资&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;华泰证券表示，据SEMI，2026-2028年全球300mm晶圆厂设备支出合计约4390亿美元，AI需求驱动半导体制造升级。先进制程方面，伴随3nm/2nm先进制程推进，蚀刻层数增加，对超高纯G5级产品的需求显著提升。存储方面，据Yole Group预测，2023-2028年HBM供应量年均复合增长率达45%，同时单颗HBM堆栈容量从2025年约187GB增至2030年约464GB，叠加存储扩产进一步放大高端耗材需求弹性。该机构认为&lt;strong&gt;AI算力驱动下的半导体制造升级为高纯电子级氢氟酸需求支撑性较好&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;据韩媒TheElec此前报道，韩国半导体材料企业所用无水氢氟酸约90%来自中国进口，近期韩国企业被迫以较高价格大规模对华采购，进一步体现高端电子级产品的供应紧张。&lt;/p&gt;
+&lt;p&gt;当下，电子级氢氟酸的G5级产品（应用于晶圆清洗、湿法刻蚀等）紧缺程度和生产门槛最高。全球高端G5级电子级氢氟酸市场长期由日企主导，包括Stella Chemifa与森田化学等。日系垄断企业主力装置服役时间长、扩产意愿不足，全球高端供给增长受限。尽管多家国内企业已实现G5级产品量产，但高端产品产能仍难以满足快速增长的半导体需求。&lt;/p&gt;
+&lt;p&gt;华泰证券基于SEMI数据测算，2028年大陆境内晶圆厂12英寸晶圆产能有望超过350万片/月，以单片晶圆耗用2.5-3kg电子级氢氟酸计算，则28年大陆境内晶圆厂对氢氟酸需求有望达到10-12万吨/年，若按G5级占比40-50%计算则G5级产品需求量达5-6万吨/年，较25年增长30-50%。截至25年末国内G5级氢氟酸有效产能7-10万吨/年。基于此，&lt;strong&gt;该机构认为国产电子级氢氟酸在高端晶圆制造领域的规模化替代有望开启，建议关注国产G5级氢氟酸量价齐升下的盈利增长机遇。&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Wed, 01 Jul 2026 02:13:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBZcXVBYTFRU1VUQU5mb21pSy10XzhwSXUtalNkdmxONjVnQ3NyVXN0OHJqLU1mN2xzcElRdjh5MEVWUlZrUGpIWA</guid></item><item><title>Anthropic与特朗普政府达成协议，将恢复Fable模型访问权限 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/anthropic%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE-%E5%B0%86%E6%81%A2%E5%A4%8Dfable%E6%A8%A1%E5%9E%8B%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90-8ac19f93</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Wed, 01 Jul 2026 02:13:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMixgJBVV95cUxPVlo2amc1RXZVVFdfT1ROaWgyLVE2bzNJWmZ0S2dUQmJ3dTZ6Tnh4eGYzNm5kVTZzdkRvb2NTZVhMbk1ONThvTVdYM0Z2cXFSLWhfaExEamxpbFZHRUtlQjZIbVNKODBvdUxyTWVxNFEza3F0LUh3TWtMN2U5T3RQUWQ5Q3VMb0J1cXBpMUphckZrMDk2c0toaFg5X1BDLXFBTWE4LVluT19MLTZhNkRLMVJQTXNGMU0yc0syY0JiM2lYRGt5NTZGalZpTjNnWVo5NFJMRkJZeEdwaVlNTHNGdGNOQ1gwZ0hpY1JVdFc1Wkx3MmxleUM4VW5heXlRV0xUTmVfandrc0JjQV9nQlhTM3lveTlRQ3hNWFpIeE4tbWY2cl9MVkxsT1RFYzIyX1JQenE0anFDeUNEWEUtMW5vTTZoVk5DUQ</guid></item><item><title>2299元起！小米智能存储正式开启众筹：自带西数红盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133257.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月1日消息，小米首款NAS产品小米智能存储今天正式开启众筹，定价2299元起，有三档可选。&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;4TB（2TB×2）版本2299元，8TB（4TB×2）版本2899元，顶配16TB（8TB×2）版本4699元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -431,7 +827,61 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 00:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5uMHFFbWM3T0lqbEZ3UUlUOHZiM3pVQWRkOEtNYVdTZHgwNi1HNkJ2X21pWlRLV2I1dFdsNWJYZkR0QzkxaDJWNnV3YjR1WUdrQ3R3TmJVaW0</guid></item><item><title>对比鲜明！美国芯片股创“史上最佳季度”，而英伟达“相差甚远” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775904</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 01 Jul 2026 00:18:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9mT1IwemR3TkV3OENnd0pBWndSb3JaS1VETGQyd0wtOXdhMG5YMklpS1g5S1hHa3h2RXY5OVlZTm1HZHNNMmM0V29rNlRJcjU2X2hV</guid></item><item><title>数毛社放话：用PS5 PRO玩《GTA6》也稳不住60帧！ - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133231.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 00:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5uMHFFbWM3T0lqbEZ3UUlUOHZiM3pVQWRkOEtNYVdTZHgwNi1HNkJ2X21pWlRLV2I1dFdsNWJYZkR0QzkxaDJWNnV3YjR1WUdrQ3R3TmJVaW0</guid></item><item><title>全新培优AI家教加持！学而思发布旗舰学习机T6系列 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133236.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，昨天学而思正式召开了年度新品发布会，除了推出备受行业关注的旗舰学习机T6全系列产品之外，还同步带来了全新迭代的培优AI家教服务体系，整套面向AI时代的学习硬件解决方案正式和公众见面。&lt;/p&gt;
+&lt;p&gt;这次发布的T6旗舰系列包含T6标准版、T6国际版以及T6 Max三个不同定位的版本，全系的显示屏幕都由学而思和TCL华星联合深度定制设计，搭载了独家的APEX自然光护眼技术，拿到了学习机行业全球首个SGS高自然光相似度认证，护眼表现达到了行业新的标杆水准。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/d28070378c7047d88d9e396ea1e9b805.jpg" target="_blank"&gt;&lt;img alt="全新培优AI家教加持！学而思发布旗舰学习机T6系列" h="400" src="//img1.mydrivers.com/img/20260701/s_d28070378c7047d88d9e396ea1e9b805.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;定位最高的T6 Max额外配备了15英寸的超清巨幕护眼大屏，上一代产品内置的智慧岛AI助手功能也全面升级成了专属小思屏，能够通过丰富的动态表情回应用户的操作、引导孩子完成学习任务，让AI助手的陪伴感大幅提升。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;T6 Max还新增了落座唤醒的专属功能，当检测到孩子坐到设备前方，系统就会主动亮起屏幕启动服务。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;大家最关心的售价信息也在发布会上同步公开，其中T6标准版首发价为6899元，面向国际化学习需求的T6国际版定价8699元，顶配的T6 Max售价达到11999元。&lt;/p&gt;
+&lt;p&gt;目前所有新品已经同步开启预售通道，7月9日将在全平台正式开售。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/c8d192407ae44f20b6a1b30c990dfe89.jpg" target="_blank"&gt;&lt;img alt="全新培优AI家教加持！学而思发布旗舰学习机T6系列" h="449" src="//img1.mydrivers.com/img/20260701/s_c8d192407ae44f20b6a1b30c990dfe89.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;针对老用户的服务升级也同步公布，AI诊断规划功能将于今年9月起陆续向符合条件的老机型推送升级，AI新培优和AI家教屏功能也会在年末逐步覆盖T4系列、全旗舰系列的存量用户，学而思还同步向所有老用户开放了学习机以旧换新的专属优惠方案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本次新品发布最核心的变化，是学而思把自研的AI诊断能力、互动课堂体系和新旗舰硬件深度整合打通，彻底跳出了传统学习机纯硬件配置竞赛的思路，拿出了适配AI时代的全新家庭学习解决方案。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在学习诊断环节，孩子只需要用学习机拍下日常作业或者考试试卷，AI就能像拥有多年一线教学经验的资深老师一样完成精准问诊。它不再是简单地对错题做标记解析，而是通过自然对话交互打通用户的历史学习数据，最终出具完整的学情诊断报告，生成完全适配每个孩子学情的千人千面专属学习路径。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260701/8a5f588a08b540ddb497dbfd3acc5422.jpg" target="_blank"&gt;&lt;img alt="全新培优AI家教加持！学而思发布旗舰学习机T6系列" h="400" src="//img1.mydrivers.com/img/20260701/s_8a5f588a08b540ddb497dbfd3acc5422.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;系统还能根据孩子实时的学习反馈动态调整后续的学习计划，形成持续迭代的适配闭环。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在课堂内容端，全新录制的新培优课程完全依托学而思沉淀多年的十二级数学培优体系打造，邀请清北学霸教研团队全程参与内容研发，还引入了学而思独创的AI双师互动课堂模式，真人主讲老师负责高质量的核心内容录制.&lt;/p&gt;
+&lt;p&gt;AI老师则在课程全程负责实时督学、随时答疑，搭配影视级的课程制作水准和AI场景化动画特效，让整个课堂氛围更生动鲜活，帮助孩子长时间保持上课专注力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;针对有国际化英语学习需求的家庭，学而思这次还推出了独创的国际学院全新英语学习体系，仅搭载在T6国际版和T6 Max两款机型上，内容覆盖欧标体系与美标原版两条学习路径，能力培养路径从低龄启蒙一直延伸到KET/PET考证、后续留学语言准备的全周期。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;国际学院覆盖了听、说、读全维度的海量学习资源，所有内容都经过蓝思权威定级的国际阅读馆，收录了Reading A-Z、牛津阅读树等全球公认的顶尖少儿绘本资源。&lt;/p&gt;
+&lt;p&gt;配套的外教互动学功能和AI口语陪练功能可以全程引导孩子大胆开口表达，还有丰富的STEAM内容拓展素养学习，把传统的单纯学英语，升级成用英语获取知识的全新学习模式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;除此之外，发布会上还同步推出了能够随时捕捉记录学习内容、辅助孩子完成结构化反思和高效复习的全新AI笔记功能，还有全面焕新、深度融入AI智能管控体验的家长端App，方便家长远程掌握孩子的实时学情&lt;/strong&gt;。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/65ce31d8705240f78741fc606bc27afc.jpg" target="_blank"&gt;&lt;img alt="全新培优AI家教加持！学而思发布旗舰学习机T6系列" h="450" src="//img1.mydrivers.com/img/20260701/s_65ce31d8705240f78741fc606bc27afc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/b3a438f691e94150a978348c32277e55.jpg" target="_blank"&gt;&lt;img alt="全新培优AI家教加持！学而思发布旗舰学习机T6系列" h="450" src="//img1.mydrivers.com/img/20260701/s_b3a438f691e94150a978348c32277e55.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/e971e82261d1429890973cdffa18fe3c.jpg" target="_blank"&gt;&lt;img alt="全新培优AI家教加持！学而思发布旗舰学习机T6系列" h="450" src="//img1.mydrivers.com/img/20260701/s_e971e82261d1429890973cdffa18fe3c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 00:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5sZ1Mza0lHYllJZ0hJdEhvX3hBOXZpempsZUVXVTR0VXNaVGJzZE9wcUxsR2NwckdjVHc3d2F0Mm94aWlQU1VVVmk2bVpwdTdRWk90UWpIQWI</guid></item><item><title>iPhone 18 Pro爆料满天飞 苹果严厉追责：泄密内容被批量下架 - 新浪财经</title><link>https://finance.sina.com.cn/tech/roll/2026-07-01/doc-inifheyw4252102.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody" data-sudaclick="blk_content"&gt;
+				
+
+
+
+
+
+&lt;p cms-style="font-L"&gt;快科技7月1日消息，据媒体报道，&lt;font cms-style="font-L color0"&gt;&lt;font cms-style="font-L strong-Bold color0"&gt;苹果正全力追查泄露iPhone 18 Pro视频和图像信息的人员，并依据《数字千年版权法》（DMCA）发起投诉，批量删除社交媒体上的相关爆料帖子。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;此前，苹果印度供应商塔塔电子遭黑客组织“World Leaks”攻击，超过630GB的数据被窃，其中包括苹果的大量内部资料。这些数据自6月10日起便已在暗网公开传播。苹果目前正在追责，相关内容遭批量下架删除。&lt;/p&gt;&lt;p cms-style="font-L"&gt;例如，本周多位博主在社交平台上分享了iPhone 18 Pro Max的跌落测试视频。这款新机延续了上代的工业设计语言，但换了全新配色。然而不到24小时，这些视频便陆续被下架，相关账号遭到封禁。&lt;/p&gt;&lt;p cms-style="font-L"&gt;与以往的爆料内容不同，这些泄露的iPhone 18 Pro信息是从供应商那里盗取的原厂文件、实拍图与测试视频，内容全部真实可靠。&lt;/p&gt;&lt;p cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color0"&gt;其中甚至包含iPhone 18 Pro主板设计图纸、A20 Pro芯片规格数据表等核心资料。由于涉及商业机密而非普通传闻，苹果此次有充分理由积极撤下这些泄密内容。&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;硬件配置上，iPhone 18 Pro首发A20 Pro芯片。该芯片采用了全新的WMCM封装工艺，将处理器核心和内存芯片横向平铺在同一个晶圆级中介层上。&lt;/p&gt;&lt;p cms-style="font-L"&gt;这使得处理器可以直接接触VC散热板，热量不再被内存阻挡，能够直接传导出去，从而大幅提升散热效率。&lt;/p&gt;&lt;p cms-style="font-L"&gt;除此之外，iPhone 18 Pro还配备苹果自研基带芯片C2，标配12GB内存，后置4800万像素三摄，主摄支持可变光圈，灵动岛开孔宽度也大幅收窄至13.49mm。&lt;/p&gt;&lt;p cms-style="font-L"&gt;这次苹果除了发布iPhone 18 Pro系列之外，还将同步推出首款折叠屏旗舰iPhone Ultra，新品预计将在今年9月的秋季发布会上正式亮相。&lt;/p&gt;&lt;p cms-style="font-L align-Center"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;&lt;p cms-style="font-L"&gt;责任编辑：振亭&lt;/p&gt;
+
+
+
+
+                
+
+&lt;p id="left_hzh_ad"&gt;
+	                    
+                    
+                    
+	                &lt;/p&gt;
+         
+                
+            &lt;/div&gt;
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 01 Jul 2026 00:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMif0FVX3lxTE1DRzhFcVB4clZobDlpUkMxZVNOQTM2amtWMXN2S0R6aUNGXzJIQXdKNnJDN2xsZ1I5cGJIcUNITXNLand0NTlLcjBOdW1XOWcyLVJVY0w0bzFfbWstYXMxTmF6Q2daM2U3eVBrYmJQd2pNMU5XUUFyUDZJZ2JNV0U</guid></item><item><title>对比鲜明！美国芯片股创“史上最佳季度”，而英伟达“相差甚远” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775904</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 01 Jul 2026 00:18:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9mT1IwemR3TkV3OENnd0pBWndSb3JaS1VETGQyd0wtOXdhMG5YMklpS1g5S1hHa3h2RXY5OVlZTm1HZHNNMmM0V29rNlRJcjU2X2hV</guid></item><item><title>数毛社放话：用PS5 PRO玩《GTA6》也稳不住60帧！ - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133231.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;数毛社放话：用PS5 PRO玩《GTA6》也稳不住60帧！&lt;/p&gt;
           
@@ -490,7 +940,90 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 00:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4xcXhJeE9LU18xRDUwOEFEN2E0SjVKdV9jalFzSzdKMFhxNnVjUTUxR3llSFljdGtBbXRKcHIwT0Mwc091V3hoaC0ycU83ald4eHI5b25rTnU</guid></item><item><title>对比鲜明！美股创“六年来最佳一季”，黄金经历“十多年来最差一季” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775903</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 23:56:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5YVzN1QWd4bGtVNTVROC13ZEdJbGhUNWNrNlpMM2QwVGdQZE9tenB3SlM4WUdXa3FRV2huU0puWFpvRWJoZlp4V2pWUGZ2SGtnX3R3</guid></item><item><title>寒武纪，深夜公告！紧急提示风险 - 新浪财经</title><link>https://finance.sina.com.cn/wm/2026-07-01/doc-iniffytk3169359.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 00:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4xcXhJeE9LU18xRDUwOEFEN2E0SjVKdV9jalFzSzdKMFhxNnVjUTUxR3llSFljdGtBbXRKcHIwT0Mwc091V3hoaC0ycU83ald4eHI5b25rTnU</guid></item><item><title>字节跳动一季度80名员工被辞退 有前员工长期出借飞书账号致泄密 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133229.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月1日消息，&lt;strong&gt;6月30日，字节跳动企业纪律与职业道德委员会发布 2026年2号内部通报，公开一季度员工违规查处结果。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通报数据显示，2026 年第一季度，共计80名员工因触犯管理红线遭到辞退，其中45人存在信息安全类违规行为。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通报公布了一起典型泄密事件：前员工A长期将个人飞书账号出借至已入职竞品公司的前同事B，使得对方能够持续浏览并下载企业机密文件。二人屡次违规，且拒不配合内部调查，最终被从严处置。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;除实名公示、没收期权、列入行业黑名单之外，字节跳动已就此案提起民事诉讼，追究其法律责任。&lt;/p&gt;
+&lt;p&gt;社交媒体违规问题同样被重点整治。一名实习生私自向外传输涉密材料，违反社交信息管理规定；在合规调查期间还填报虚假信息，持续泄露内部内容。企业最终解除其实习合同，并予以实名通报、加重处罚。&lt;/p&gt;
+&lt;p&gt;另有一名离职员工冒充管理人员，编造给大龄下属评定最低绩效的谣言，蓄意制造舆论对立。经公司核查追责，该人员承认造谣事实，本次被实名曝光。&lt;/p&gt;
+&lt;p&gt;此外，本次查处的违规行为还包括：对外泄露内部重大政策、在社交平台散播保密内容、接受付费访谈擅自披露核心业务数据等。&lt;/p&gt;
+&lt;p&gt;公开信息显示，这是字节跳动继2025年9月、12月以及2026年3月之后，第四次对外集中通报信息安全违规案件。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260701/d49819bd2e5d4b82876fdcf3333ed402.png" target="_blank"&gt;&lt;img alt="字节跳动一季度80名员工被辞退 有前员工长期出借飞书账号致泄密 " h="400" src="//img1.mydrivers.com/img/20260701/s_d49819bd2e5d4b82876fdcf3333ed402.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 01 Jul 2026 00:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBDRjFjZl9JUEtLWW1MVXFuNllrZ292cmU1ZlRNR2VLS1NKeExMREl6QmdHUkZfYUpsRFZxaGpZUEw1OGo5ck9aTVBQZUdJZTMzdEE3dGZ6aUY</guid></item><item><title>《恋与深空》取消敖尹上线，承诺不再推出新男主；英伟达在华启动机器人人才招聘；中国大学停招众多语言专业｜极客早知道 - 极客公园</title><link>https://www.geekpark.net/news/366713</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content"&gt;&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/09/fe/09fe3adce72fbf7c8bb28b8c2e94a60b.png"&gt;&lt;/p&gt;
+&lt;h2&gt;叠纸游戏宣布《恋与深空》取消敖尹上线与开发安排，承诺未来不再推出新男主&lt;/h2&gt;
+&lt;p&gt; 6 月 30 日，叠纸游戏官方在微博发文道歉，宣布旗下游戏《恋与深空》将取消敖尹上线与开发安排。&lt;/p&gt;
+&lt;p&gt;据博文所述，叠纸游戏自项目筹备之初就希望《恋与深空》能够成为一个持续成长、不断丰富的恋爱世界，为玩家带来更多样的体验。近期各种问题接连发生，他们及时调整并处理相关内容，并于内部进行深刻反思。官方确实在没有准备好的情况下就将敖尹带到了大家面前，伤害了玩家感情也破坏了玩家信任。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/ac/99/ac99405ee4388c1c23e0263147fff11b.png"&gt;&lt;/p&gt;
+&lt;p&gt;因此，《恋与深空》制作组决定取消新男主的上线与开发安排，在未来的内容规划上承诺不再推出新男主。&lt;/p&gt;
+&lt;p&gt;同时，制作组还在博文中向玩家致歉：在这里，制作组全体想再次对猎人小姐们郑重说一声对不起。这段时间因为我们，让大家本该在临空市收获的快乐变成了困扰，伤害了大家最珍贵的情感，对此我们深感自责与愧疚。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/47/67/4767bb8250f3514383ded6b057710a39.png"&gt;&lt;/p&gt;
+&lt;h2&gt;消息称 OpenAI 研发出新方案，可将推理成本减半&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，据 The Information 报道，一位知情人士透露，本月早些时候，OpenAI 工程师向部分同事表示，依托几项全新研发的优化技术，他们找到了一套方案，能将模型推理成本削减一半以上。&lt;/p&gt;
+&lt;p&gt;工程师将这套新技术应用于没有免费或付费帐户的访客使用 ChatGPT 的场景后，一度把所需英伟达图形处理器（GPU）数量压至仅数百个。（来源：格隆汇）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;英伟达在华启动机器人人才招聘，聚焦具身智能等四大方向&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，据《每日经济新闻》从英伟达处获悉，全球 AI 芯片巨头英伟达（NVIDIA）近日在中国启动大规模机器人（核心股）人才招聘计划，围绕具身智能、仿真、部署及解决方案架构四大核心方向开放多个岗位，覆盖北京、上海、深圳三地。&lt;/p&gt;
+&lt;p&gt;据报道，本次招聘中，具身智能团队岗位数量最多，共开放 6 个职位。该团队发展方向为研发下一代通用机器人（核心股）系统，重点聚焦灵巧操作（Dexterous Manipulation）、配戴传感器的人体（Sensorized Human）、全身移动操作（Loco-manipulation）以及全身控制（Whole-Body Control）等前沿技术方向。（来源：金融界）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;苹果发起 DMCA 维权，全网清除 iPhone 18 Pro 泄露素材&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，苹果正追查所有泄露从塔塔集团窃取的 iPhone 18 Pro 实拍视频与图片的相关人员，并通过《数字千年版权法》（DMCA）投诉下架各大社交平台相关帖子。&lt;/p&gt;
+&lt;p&gt;此前，印度塔塔集团旗下一家 iPhone 组装工厂遭遇黑客入侵，超 630GB 数据被盗，其中包含苹果内部资料。随着这批数据在网络上大肆传播，苹果如今正全力清除全网相关泄露内容。&lt;/p&gt;
+&lt;p&gt;本周一，社交平台 X 上流出一段 iPhone 18 Pro 跌落测试视频。视频里这款银色机型摒弃了 iPhone 17 Pro 的双色拼接外观设计，但保留了三摄凸起模组与苹果 Logo 等经典元素。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/6a/b4/6ab429aff4b20c739db9ec4c6c9a139a.png"&gt;&lt;/p&gt;
+&lt;p&gt;然而短短不到 24 小时，平台 X 上的相关视频便开始批量消失。发布泄露视频的帖子页面替换为违规提示，显示账号「违反 X 平台社区规则」，部分账号甚至直接遭到封禁。&lt;/p&gt;
+&lt;p&gt;苹果此番举动十分反常，以往该公司向来对数码爆料圈的各类小道消息置之不理。此次大规模投诉下架操作十分显眼，也引发一众知名爆料博主纷纷发声讨论，包括知名爆料账号 @EVLeaks，他提到，苹果这次成功让平台封禁账号，这件事「三星从来没能做到」。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/ee/a0/eea0bb0b9750de976e1ffd38cf601b98.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Claude Mythos 让梁文锋决定融资&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，据 The Information 报道，梁文锋决定为 DeepSeek 启动融资的直接原因，是看到 Anthropic 的 Claude Mythos 通过海量算力和数据训练出超强能力，意识到若不储备资源将难以为继，时间线与今年 4 月 Anthropic 发布 Claude Mythos 预览版及 DeepSeek 首次传出融资消息基本吻合。本次融资总额 74 亿美元，梁文锋本人出资约 200 亿人民币（约 30 亿美元），占总额五分之二，为单笔最大出资。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/d9/22/d922504ab2f17ddc3d7c94fe1c02a597.png"&gt;&lt;/p&gt;
+&lt;p&gt;融资完成后，DeepSeek 宣布全公司（目前约 300 人）各部门招聘规模「至少翻倍」，并设立员工持股计划。公司同时在加速适配华为芯片，但因训练部署体系原本围绕英伟达 CUDA 搭建，重写底层软件导致其 15 个月未发布新一代模型，错过了 Claude Code 带动的编程工具热潮。梁文锋表示，编程工具与聊天机器人均为 AI 进化中的临时产物，公司战略仍将坚持开源、低价与专注 AGI，并称「AI 不应该被少数人控制」。（来源：量子位）&lt;/p&gt;
+&lt;h2&gt; &lt;/h2&gt;
+&lt;h2&gt;月之暗面估值增至 315 亿美元，ARR 破 3 亿美元&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，从相关人士处获悉，月之暗面 Kimi 上一轮 200 亿美元估值融资于近日完成交割，新一轮融资已经启动，投前估值涨至 315 亿美元。&lt;/p&gt;
+&lt;article&gt;
+&lt;p&gt;记者了解到，截至 6 月中旬，月之暗面 ARR（年度经常性收入）突破 3 亿美元，这是继今年 3 月 ARR 突破 1 亿美元、5 月突破 2 亿美元后，Kimi 商业化进程的又一重要节点。（来源：上证报）&lt;/p&gt;
+&lt;/article&gt;
+&lt;h2&gt; &lt;/h2&gt;
+&lt;h2&gt;Arena 公布 AI 模型评测榜变现成果，商业评测服务 AI Evaluations 收入突破 1 亿美元&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，AI 模型评测平台 Arena 宣布，其企业级模型评测服务 AI Evaluations 上线仅 8 个月，年度经常性收入（Annualized Run-Rate Revenue，即「每年通过客户订阅合同产生的可预测、重复性收入」）已突破 1 亿美元（现汇率约合 6.8 亿元人民币）。&lt;/p&gt;
+&lt;p&gt;据介绍，Arena 的前身是加州大学伯克利分校 2023 年启动的 AI 模型评测研究项目，最初名为 LMArena，主要以「免费」战略，让普通用户测试 AI 模型「比较输出结果优劣」以迅速积累起用户基数，项目研究者据此构建 AI 模型排行榜，该排行榜也随着时间逐渐成为业内观察大模型能力的重要风向标之一。&lt;/p&gt;
+&lt;p&gt;到了 2025 年 4 月，Arena 正式完成公司化运作，并于当年 9 月正式推出面向企业的商业产品「AI Evaluations」，核心是利用真人反馈数据帮助客户评估模型在真实业务环境中的表现。号称能够直观展示各大模型的优势、短板，还能提供可追溯的测试样本及服务等级协议（SLA），方便客户更高效地进行模型选型、优化和迭代。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;伯恩斯坦将闪迪目标价从 1700 美元上调至 3000 美元&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，伯恩斯坦将闪迪（SanDisk）目标价从 1700 美元上调至 3000 美元，认为新一代长期供货协议（LTA）正重塑存储行业商业模式。与传统 LTA 不同，新协议采用固定或区间定价、要求客户提供大额资金担保、期限延长至 3 至 5 年，形成供需双向约束。&lt;/p&gt;
+&lt;p&gt;压力测试显示，假设闪迪 60% 出货量受 LTA 覆盖，即便 NAND 价格较峰值暴跌 72% 至 0.11 美元/GB，2030 财年 EPS 仍可达 214 美元，而无 LTA 保护时仅约 81 美元。伯恩斯坦同时将闪迪 FY27、FY28 每股收益预测分别上调至 243 美元和 272 美元，并采用 11 倍 FY28 预期市盈率得出目标价。报告认为存储行业周期性不会消失，但波动幅度将显著收窄，市场需重新评估整个行业的估值逻辑。（来源：华尔街见闻）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/0d/d5/0dd54e73ba9cf051d57a82378f52a7a8.png"&gt;&lt;/p&gt;
+&lt;h2&gt;​OpenAI 首款硬件：Codex 联名键盘 7 月登场，助力 AI 开发&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，OpenAI 开发者官方账号在 X 平台发布推文，预告将和 Work Louder 公司合作，于 7 月 15 日上线 Codex 品牌的专用输入设备。&lt;/p&gt;
+&lt;p&gt;OpenAI 目前正携手前苹果设计官 Jony Ive 打造消费级 AI 硬件，代号为 Gumdrop，预估为笔形设备或可穿戴音频设备，最快 2026 年年底推出，而本次打造的 Codex 联名键盘将成为 OpenAI 首款硬件。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/5d/b7/5db7d0a5538361c3148a688b31c6c96f.png"&gt;&lt;/p&gt;
+&lt;p&gt;根据目前官方预热细节，这款专用输入设备可能基于 Work Louder 现有的 Creator Micro 2 键盘打造，针对 AI 开发场景提供专属优化，但目前尚不清楚按键数量、尺寸等硬件参数。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;第五代宝马 X5 发布，五种动力齐上阵，美国起售价 69800 美元&lt;/h2&gt;
+&lt;p&gt;7 月 1 日，第五代宝马 X5 于北京时间 6 月 30 日晚正式发布，宝马称其为 X5 历代中变化最大的一代。新车采用新世代设计语言，车头配备双 X 形大灯，取消传统门把手改为翼片式按键开门，车尾同时放弃沿用已久的上下对开「天地」尾门。车身较现款增长 5.6cm，轴距 3035mm，但重量明显上升，入门汽油版整备质量约 2365kg，纯电版 iX5 最重达约 2900kg。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/4f/03/4f035319e1d2e530ca8b803db891d320.png"&gt;&lt;/p&gt;
+&lt;p&gt;动力方面，新 X5 一次提供汽油、插混、纯电、柴油和氢能五种方案：入门 X5 40 搭载 3.0 升直六发动机输出 394 马力，插混 X5 M60e 最大输出 612 马力，纯电 iX5 60 配 141.0kWh 电池，最大输出 578 马力，美国市场续航约 700 公里。内饰采用 17.9 英寸中控屏，可选装 14.6 英寸副驾屏，并集成可回答日常问题的 AI 助手。美国市场 2027 款 X5 40 起售 69800 美元（约合 47.5 万元人民币），插混 X5 50e 起售 77500 美元，纯电 iX5 60 起售 79800 美元。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;微软全面推出 Anthropic Claude 模型 Azure 云服务，基于英伟达 GB300&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，NVIDIA（英伟达）宣布，在其 GB300 Blackwell Ultra 超级芯片的支持下，微软正式在 Microsoft Foundry 平台推出托管在 Azure 云服务上的 Anthropic Claude 模型。&lt;/p&gt;
+&lt;p&gt;这一服务硬件上基于 NVIDIA GB300 NVL72 机架，采用 NVIDIA Quantum-X800 InfiniBand 互联；首批提供 Claude Opus 4.8 和 Claude Haiku 4.5 模型，核心功能包括提示缓存和扩展思维，支持从编程、代理式工作到复杂推理的各种用例。&lt;/p&gt;
+&lt;p&gt;这一模式提供了原生的 Azure 云服务控制功能，将 Claude 模型连接到广泛的 Azure 生态系统中。NVIDIA 还为该服务提供了智能体技能、安全智能体工作区参考设计。（来源：IT 之家）&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://imgslim.geekpark.net/uploads/image/file/83/e7/83e72f856235e3d8c70c672bd0bfb08a.png"&gt;&lt;/p&gt;
+&lt;h2&gt;中国大学停招众多语言专业&lt;/h2&gt;
+&lt;p&gt;6 月 30 日，据麦可思研究上个月发表的一项调查发现，根据 70 所本科高校最新公布的停招专业名单，日语专业共有 8 所高校停招，德语专业 5 所，翻译研究专业 5 所。麦可思称，过去多年，外语类专业曾是高校扩招的重要方向，但随着国际交流环境变化以及人工智能翻译工具快速发展，传统语言类专业的人才培养模式也开始转型。&lt;/p&gt;
+&lt;p&gt;据报道，教育部批准下学年新增 38 个专业，其中大部分侧重于科技或数字化领域。新专业包括具身智能、商业 AI、数据智能等，以及低空经济与管理、半导体设备工程、稀土科学与工程等领域。（来源：Solidot）&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>极客公园</author><pubDate>Wed, 01 Jul 2026 00:04:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTFBqMkIxMTBBNE5ESGJPc1UxVEVkMmMyWG5oZVF1QUdRRjAwb1hDNXJaSEN6cDhrUS1QRGp6QWsxeF80Yms3T0hUYXNFNTU</guid></item><item><title>对比鲜明！美股创“六年来最佳一季”，黄金经历“十多年来最差一季” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775903</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 23:56:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5YVzN1QWd4bGtVNTVROC13ZEdJbGhUNWNrNlpMM2QwVGdQZE9tenB3SlM4WUdXa3FRV2huU0puWFpvRWJoZlp4V2pWUGZ2SGtnX3R3</guid></item><item><title>寒武纪，深夜公告！紧急提示风险 - 新浪财经</title><link>https://finance.sina.com.cn/wm/2026-07-01/doc-iniffytk3169359.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -560,7 +1093,29 @@
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 30 Jun 2026 23:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTE1hcnBkaDRUd0tRMTJ0XzBpbzBWLXgxN1BmVW1FdjhSbXViRzhlbEtiUEwzRF9zUGhWN0RiTjZSWWdHZkxfR1FheTlMcG1hdU01TnhSakx4czRZYl9qcGtzSTJhZWpsRF9sX0dTMWZUUEVJZHFULUE</guid></item><item><title>今日起 武汉电动车车主可在私人充电桩上“卖电”：一度电可赚5毛钱 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133223.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 30 Jun 2026 23:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTE1hcnBkaDRUd0tRMTJ0XzBpbzBWLXgxN1BmVW1FdjhSbXViRzhlbEtiUEwzRF9zUGhWN0RiTjZSWWdHZkxfR1FheTlMcG1hdU01TnhSakx4czRZYl9qcGtzSTJhZWpsRF9sX0dTMWZUUEVJZHFULUE</guid></item><item><title>系列最强智能体 AI 模型：Claude Sonnet 5 登场，部分性能逼近 Opus 4.8 - 新浪财经</title><link>https://finance.sina.com.cn/tech/digi/2026-07-01/doc-iniffyta1132506.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody" data-sudaclick="blk_content"&gt;
+				
+
+
+
+
+
+&lt;p cms-style="font-L"&gt;IT之家 7 月 1 日消息，Anthropic 今天（7 月 1 日）发布公告，宣布推出 Claude Sonnet 5，声称是其 Sonnet 系列中智能体 AI 表现最强的模型，&lt;font cms-style="font-L strong-Bold"&gt;能够制定计划、使用浏览器和终端等工具，并自主运行。&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;费用方面，Claude Sonnet 5 模型已上线，已接入 Claude Code 和 Claude Platform，开发者在调用 API 时可指定“claude-sonnet-5”模型调用，IT之家附上价格信息如下：&lt;/p&gt;&lt;p cms-style="font-L"&gt;优惠期（至 2026 年 8 月 31 日）&lt;/p&gt;&lt;p cms-style="font-L"&gt;优惠期后（8 月 31 日后）&lt;/p&gt;&lt;p cms-style="font-L"&gt;技能方面，Claude Sonnet 5 是 Anthropic“迄今最具智能体能力的 Sonnet 模型”，可以制定计划，调用浏览器和终端等工具，并以自主方式运行。&lt;/p&gt;&lt;p cms-style="font-L"&gt;性能方面，官方指出在智能体搜索评测 BrowseComp、计算机使用评测 OSWorld-Verified 等项目中，相比较 Sonnet 4.6 模型，Sonnet 5.0 有非常明显的改进，甚至在部分任务上接近 Opus 4.8。&lt;/p&gt;&lt;p cms-style="font-L"&gt;安全评测部分，Anthropic 表示，Sonnet 5 整体不良行为发生率低于 Sonnet 4.6，在恶意请求拒绝、提示注入攻击抵抗、幻觉率和迎合性方面均有改善。&lt;/p&gt;
+
+
+
+
+                
+
+&lt;p id="left_hzh_ad"&gt;
+	                    
+                    
+                    
+	                &lt;/p&gt;
+         
+                
+            &lt;/div&gt;
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 30 Jun 2026 23:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMif0FVX3lxTE5WZkN2anZ2NkVKY3I0VjdOQmNVYy1ES2tNLVdpWjdFTERqUVBjZkZRSGlkWDhfSm5mQ2lUeEtTdjQ5dWNlNVFZWVYwVUVsc1VqY2dFWm0zdDVwM0lRanpvUHhhRVUtb1BZRzFwOUFiTE1JOUtzU3dJUFVLTW1KNXc</guid></item><item><title>今日起 武汉电动车车主可在私人充电桩上“卖电”：一度电可赚5毛钱 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133223.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月1日消息，据央视财经报道，今日起湖北武汉正式实施车网互动价格机制改革，&lt;span&gt;&lt;strong&gt;新能源车主在自家私人充电桩上即可“卖电”赚钱，一度电净赚约0.5元，无需再前往公共充电站场操作。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;这也是华中地区首次将车网互动的参与门槛从专属公共试点站场，直接放宽至普通私人充电桩。&lt;/p&gt;
@@ -843,7 +1398,7 @@
                     &lt;/div&gt;
 
     
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>美国之音</author><pubDate>Tue, 30 Jun 2026 21:26:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiswFBVV95cUxNWjEzRW1sNXVBNXJDcE9tN0doYUN2dGRKWHB5N1FUX01SbFJrUEx2LVJZQVVhaEFXRUZPX1RIQjVrM2RGQTRGeFMzcHY4cEVqdU5RU0t1OTBOT2ZnTG10YXZjRmlMZFI5T0NndTNwejB4S3J6WjY4RzNMbVhDSmt4eUEtQ2VQRk1EdUUxckM4c3lFSDZxRi1CSjl4U2tSM3AtT3hMY3J5NXBScVFUc25GN3NBWdIBtgFBVV95cUxNTGYxc1N3bHJiNUt2NUlGeExob3BoY2k1cFlkYlBWcWJ1bkNFRGJnYzl3OXFSakpvZ1QxNGlyMklkNWZFT3RoT1V2dUtJZU05TWowQzZDc3NQWlJ6Ykhyb29JSUpQQUVDLW5keDBBY0I1YWNiUDZ2Nmt1aGJzcE45ZDdOM2N4T200MTNpNXZXQ2JLSXlNVy1DV1FVOUVLMzd6ak1yMG9VcmJnbUMwR1FlMjI3YXhSQQ</guid></item><item><title>Anthropic出性价比王牌Claude Sonnet 5，提升智能体能力，直指企业AI自动化市场 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775881</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 17:59:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE45UVpNTGdPVDRaVU1UN0tJZVRaa3RWRWg2U3NOZURhMlNxNkY3OXVFMEpLTE5qOHNyRXR3UUxxVVVXc0dHN2JNUXU2RXJpNFlLZGpv</guid></item><item><title>极速96km/h 全球首架固态电池载人飞机试飞成功 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133212.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>美国之音</author><pubDate>Tue, 30 Jun 2026 21:26:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiswFBVV95cUxNWjEzRW1sNXVBNXJDcE9tN0doYUN2dGRKWHB5N1FUX01SbFJrUEx2LVJZQVVhaEFXRUZPX1RIQjVrM2RGQTRGeFMzcHY4cEVqdU5RU0t1OTBOT2ZnTG10YXZjRmlMZFI5T0NndTNwejB4S3J6WjY4RzNMbVhDSmt4eUEtQ2VQRk1EdUUxckM4c3lFSDZxRi1CSjl4U2tSM3AtT3hMY3J5NXBScVFUc25GN3NBWdIBtgFBVV95cUxNTGYxc1N3bHJiNUt2NUlGeExob3BoY2k1cFlkYlBWcWJ1bkNFRGJnYzl3OXFSakpvZ1QxNGlyMklkNWZFT3RoT1V2dUtJZU05TWowQzZDc3NQWlJ6Ykhyb29JSUpQQUVDLW5keDBBY0I1YWNiUDZ2Nmt1aGJzcE45ZDdOM2N4T200MTNpNXZXQ2JLSXlNVy1DV1FVOUVLMzd6ak1yMG9VcmJnbUMwR1FlMjI3YXhSQQ</guid></item><item><title>苹果印度供应商塔塔电子遭黑客窃取iPhone 18 Pro机密数据 - 虎嗅</title><link>https://www.huxiu.com/article/4871715.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5lNGlpcTFhRGxQeGxhVXlnX21tb0RqcnpBME5rdnI1Q25sVlRxTDg1akFob3ZHaXRRSjdURDhXazRIenpMY3NtSUQ5S1I0QVYtYW5TRQ?oc=5" target="_blank"&gt;苹果印度供应商塔塔电子遭黑客窃取iPhone 18 Pro机密数据&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;虎嗅&lt;/font&gt;</description><author>虎嗅</author><pubDate>Tue, 30 Jun 2026 18:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE5lNGlpcTFhRGxQeGxhVXlnX21tb0RqcnpBME5rdnI1Q25sVlRxTDg1akFob3ZHaXRRSjdURDhXazRIenpMY3NtSUQ5S1I0QVYtYW5TRQ</guid></item><item><title>Anthropic出性价比王牌Claude Sonnet 5，提升智能体能力，直指企业AI自动化市场 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775881</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 17:59:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE45UVpNTGdPVDRaVU1UN0tJZVRaa3RWRWg2U3NOZURhMlNxNkY3OXVFMEpLTE5qOHNyRXR3UUxxVVVXc0dHN2JNUXU2RXJpNFlLZGpv</guid></item><item><title>极速96km/h 全球首架固态电池载人飞机试飞成功 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133212.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;极速96km/h 全球首架固态电池载人飞机试飞成功&lt;/p&gt;
           
@@ -1372,7 +1927,52 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 13:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBVZVFsWC15Q2hNbW1FdEYzcUI5SHl0aDI0Y3NzQjdqdzFyRGlBMkNDT2l6Zk4yeGhCZEtOYzFFVkt2bkFrSzBuVVl6QUtvQVNJYkszQVFldl8</guid></item><item><title>机器人女友来了！优必选重磅首发，最高售价99万元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775850</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 13:23:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE14TTBiVG1DSXFyVWhvVTlLZGt6SnhVaFZGSTNuX3hnLVNzVUw4YWRlbGxPTnFScXpEc3d3TjMzSVFvODdISkNGZ3A0N0Zxb0Y4d2Fr</guid></item><item><title>OpenAI Codex桌面端被曝月消耗150GB流量和5TB硬盘写入量 - 虎嗅</title><link>https://www.huxiu.com/article/4871638.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tTTIzWnJ1RC1lVGswbExXbXMxcnZxMWVKaDJBM3E5ZjZSVEFJeWtkbC1VLTRDOWxRU0JnSm9aS2g2TFktY3l6Qm0tcEJqeTl6NGl6Ug?oc=5" target="_blank"&gt;OpenAI Codex桌面端被曝月消耗150GB流量和5TB硬盘写入量&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;虎嗅&lt;/font&gt;</description><author>虎嗅</author><pubDate>Tue, 30 Jun 2026 13:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1tTTIzWnJ1RC1lVGswbExXbXMxcnZxMWVKaDJBM3E5ZjZSVEFJeWtkbC1VLTRDOWxRU0JnSm9aS2g2TFktY3l6Qm0tcEJqeTl6NGl6Ug</guid></item><item><title>研究报告：数据中心的碳排放比预想的严重 - DW.com</title><link>https://www.dw.com/zh/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E7%9A%84%E7%A2%B3%E6%8E%92%E6%94%BE%E6%AF%94%E9%A2%84%E6%83%B3%E7%9A%84%E4%B8%A5%E9%87%8D/a-77771437</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div data-tracking-skip="true" data-tracking-name="rich-text" class="c17j8gzx rc0m0op r1ebneao s198y7xq rich-text t1r94ulj lxoq797 blt0baw s16w0xvi r128axg5 w1mzytge b1fzgn0z"&gt;&lt;p&gt;（德国之声中文网）安联贸易（Allianz Trade）最新公布的一份调查结果显示，数据中心对&lt;a class="internal-link" href="/zh/%E7%8E%AF%E5%A2%83%E4%BF%9D%E6%8A%A4/t-17466052"&gt;气候&lt;/a&gt;构成的危害比此前预想的更为严重。报告指出，此前人们低估了数字基础设施对气候的影响。除非采取适当措施，否则随着人工智能应用的激增，由算力需求引发的碳排放量将急剧上升。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 13:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBVZVFsWC15Q2hNbW1FdEYzcUI5SHl0aDI0Y3NzQjdqdzFyRGlBMkNDT2l6Zk4yeGhCZEtOYzFFVkt2bkFrSzBuVVl6QUtvQVNJYkszQVFldl8</guid></item><item><title>机器人女友来了！优必选重磅首发，最高售价99万元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775850</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 13:23:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE14TTBiVG1DSXFyVWhvVTlLZGt6SnhVaFZGSTNuX3hnLVNzVUw4YWRlbGxPTnFScXpEc3d3TjMzSVFvODdISkNGZ3A0N0Zxb0Y4d2Fr</guid></item><item><title>OpenAI Codex桌面端被曝月消耗150GB流量和5TB硬盘写入量 - 虎嗅</title><link>https://www.huxiu.com/article/4871638.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tTTIzWnJ1RC1lVGswbExXbXMxcnZxMWVKaDJBM3E5ZjZSVEFJeWtkbC1VLTRDOWxRU0JnSm9aS2g2TFktY3l6Qm0tcEJqeTl6NGl6Ug?oc=5" target="_blank"&gt;OpenAI Codex桌面端被曝月消耗150GB流量和5TB硬盘写入量&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;虎嗅&lt;/font&gt;</description><author>虎嗅</author><pubDate>Tue, 30 Jun 2026 13:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1tTTIzWnJ1RC1lVGswbExXbXMxcnZxMWVKaDJBM3E5ZjZSVEFJeWtkbC1VLTRDOWxRU0JnSm9aS2g2TFktY3l6Qm0tcEJqeTl6NGl6Ug</guid></item><item><title>李在明把韩国未来二三十年都赌上了：800万亿韩元打造第二个半导体生产基地 - 观察者</title><link>https://www.guancha.cn/internation/2026_06_30_822123.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	【文/观察者网 张菁娟】
+&lt;/p&gt;
+&lt;p&gt;
+	在全球半导体与AI产业格局深度重构的背景下，韩国抛出一项跨度长达二三十年的国家级产业布局。
+&lt;/p&gt;
+&lt;p&gt;
+	6月29日，韩国总统李在明在总统府青瓦台主持“三大超级项目国民报告会”，把存储半导体、物理人工智能（AI）、AI数据中心列为三大核心支柱，计划分别在湖南、忠清、岭南等非首都地区进行大规模投资。有观测称，总投资规模或突破2000万亿韩元，企业相关长期投资总规模达4700万亿韩元。
+&lt;/p&gt;
+&lt;p&gt;
+	李在明表示，三大超级项目将承载韩国未来20至30年的发展，青瓦台则将该系列项目界定为李在明政府的“标志性项目”，并表示将倾注全国之力予以推进。
+&lt;/p&gt;
+&lt;p align="center"&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/06/30/20260630192051346.jpg" alt=""&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	当地时间2026年6月29日，韩国首尔，总统李在明主持“超级项目”发布活动。&lt;span&gt; IC photo&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	此次出台的“三大超级项目”，锚定全球科技竞争核心赛道，同时契合李在明一再强调的“五极三特”（五大跨区域都市圈和三大特别自治道）战略。
+&lt;/p&gt;
+&lt;p&gt;
+	半导体是韩国高端制造的核心支柱，此次规划将实现该国半导体产能的区域性扩容。由于现有龙仁、平泽半导体产业集群的电力和供水能力已接近极限，韩国需要开辟新的投资选址，目前拟将湖南地区打造成继首都圈之后的“第二生产基地”。
+&lt;/p&gt;
+&lt;p&gt;
+	根据当天政府与三星、SK等企业公布的投资计划，由三星电子、SK海力士合计投入800万亿韩元，新建4座半导体晶圆厂（Fab），两家企业各规划两期产线。
+&lt;/p&gt;
+&lt;p&gt;
+	与此同时，韩国政府决定提前完成首都圈半导体生产基地的建设。龙仁国家产业园区和一般产业园区的最后一座晶圆厂完工时间将分别提前7年和12年，力争在5年内将存储芯片产能扩大一倍。此外，韩国将在忠清地区打造总投资81万亿韩元的先进封装中心。
+&lt;/p&gt;
+&lt;p&gt;
+	在AI算力基础设施方面，SK、GS、Naver三家本土企业宣布未来投资550万亿韩元，第一阶段将建设总规模8.4GW的AI数据中心，项目分别落地蔚山、东海、世宗三地。到2035年，韩国将追加建设10吉瓦的算力设施，推进总规模达18.4吉瓦、投资额超1000万亿韩元的项目。
+&lt;/p&gt;
+&lt;p&gt;
+	在物理AI前沿领域，韩国制定了自主技术发展目标，计划三年内研发达到国际先进水平的本土物理AI模型，但未公布具体的投资时间和规模。
+&lt;/p&gt;
+&lt;p&gt;
+	韩国政府决定以新万金地区为中心，构建人形机器人量产体系。现代汽车集团将在新万金建设机器人代工厂及零部件产业集群，并协助大邱庆北地区的汽车及家电零部件企业向机器人零部件企业转型，为其提供相关技术开发与验证的支持。
+&lt;/p&gt;
+&lt;p&gt;
+	从整体投资规模来看，本次报告会上企业公布的三大项目投资总额约为1500万亿韩元，而三星、SK披露的长期独立投资计划总额达4700万亿韩元，其中三星单独投资2655万亿韩元、SK投资2100万亿韩元。
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 30 Jun 2026 12:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5rMy1hZlFkLVktOURFV3hjMkhjX2xEUDZkd0llVlNuelcxb19VRHhCU3hOaXBlVUVoeUhCMHVvRkpGVmd5RERHeEJneFdDNHQxbDZweW11X3ZmLWstcUZNaHlVWXN5NF9CZkE</guid></item><item><title>研究报告：数据中心的碳排放比预想的严重 - DW.com</title><link>https://www.dw.com/zh/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E7%9A%84%E7%A2%B3%E6%8E%92%E6%94%BE%E6%AF%94%E9%A2%84%E6%83%B3%E7%9A%84%E4%B8%A5%E9%87%8D/a-77771437</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div data-tracking-skip="true" data-tracking-name="rich-text" class="c17j8gzx rc0m0op r1ebneao s198y7xq rich-text t1r94ulj lxoq797 blt0baw s16w0xvi r128axg5 w1mzytge b1fzgn0z"&gt;&lt;p&gt;（德国之声中文网）安联贸易（Allianz Trade）最新公布的一份调查结果显示，数据中心对&lt;a class="internal-link" href="/zh/%E7%8E%AF%E5%A2%83%E4%BF%9D%E6%8A%A4/t-17466052"&gt;气候&lt;/a&gt;构成的危害比此前预想的更为严重。报告指出，此前人们低估了数字基础设施对气候的影响。除非采取适当措施，否则随着人工智能应用的激增，由算力需求引发的碳排放量将急剧上升。&lt;/p&gt;
 
 &lt;p&gt;该研究估算，2025年全球数据中心的二氧化碳排放总量达到2.86亿吨。这一数字比国际能源署此前研究得出的数据高出57%。安联贸易将此归因于其模型纳入了整个价值链中的间接排放（例如制造和施工环节产生的排放）以及电力传输过程中的损耗。&lt;/p&gt;
 
@@ -1661,959 +2261,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 10:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9NZlZkVllWUF9hOTM2WWltMHl2bjctRFlHYUZpdVNCMno5WC1lT0JXME5IM1Bkb3NBaUhxS0h0UmIwTzRvVWJOaEFSUkNxV3djRnBQa2o4T0U</guid></item><item><title>便宜又好用：美国科技巨头集体转向中国大模型 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133152.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，据报道，&lt;span&gt;&lt;strong&gt;美国科技巨头Coinbase首席执行官Brian Armstrong在社交平台发文披露，公司已将智谱GLM 5.2和月之暗面Kimi K2.7 Code设为全体工程师的默认大模型，&lt;/strong&gt;&lt;/span&gt;在Token使用量持续指数级增长的同时，将AI支出压缩近一半。&lt;/p&gt;
-&lt;p&gt;Armstrong表示，91%的工程师从未触及原有用量上限，因此本次成本优化没有下调员工Token额度，而是通过智能路由、强化缓存和更换默认模型三项手段，将代码审查、文档总结等常规任务从Anthropic和OpenAI的模型迁移到两款中国开源模型上。&lt;/p&gt;
-&lt;p&gt;同时Coinbase将开源权重下载到自有服务器自托管运行，代码和提问不会流向位于中国的API接口，以此应对数据安全和国家安全合规问题。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/d20c0a39ba814ffdad2fdf8b3aad3d99.png" target="_blank"&gt;&lt;img alt="便宜又好用：美国科技巨头集体转向中国大模型" h="461" src="//img1.mydrivers.com/img/20260630/s_d20c0a39ba814ffdad2fdf8b3aad3d99.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;GLM 5.2是智谱6月12日发布、以MIT协议开放权重的744亿参数旗舰模型，&lt;strong&gt;在第三方评测Artificial Analysis上，GLM 5.2取得51分，与Anthropic、OpenAI一起位居前三，为开源模型SOTA。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在SWE-bench Pro基准上超过OpenAI GPT-5.5，在FrontierSWE任务上以74.4%的成绩逼近Anthropic Opus 4.8的75.1%，差距仅1个百分点，而调用价格约为Opus 4.8的六分之一。&lt;/p&gt;
-&lt;p&gt;Kimi K2.7 Code是月之暗面6月12日发布的最新代码模型，也是Coinbase默认调用的另一款模型。&lt;/p&gt;
-&lt;p&gt;Coinbase并非孤例，此前Airbnb已将客服模型从GPT切换到阿里千问，AI公司Lindy把模型从Anthropic Claude迁到DeepSeek V4后推理成本降低90%，Snowflake首席执行官测算后认为GLM 5.2能以低得多的价格做到与Claude相当的性能。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;美中经济与安全审查委员会今年3月报告估计，约80%的美国AI初创公司在使用中国开源模型。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在OpenRouter平台上，中国模型的Token份额从一年前的不到2%升至今年4月的四成以上，5月进一步突破61%。&lt;/p&gt;
-&lt;p&gt;阿里千问系列累计下载量在今年1月突破7亿，在Hugging Face上超过Meta Llama成为全球下载量最高的开源模型家族之一。&lt;/p&gt;
-&lt;p&gt;背后原因也很简单，当性能进入第一梯队的中国模型以更低的价格摆上桌，企业面临的越来越是具体的成本和部署控制权问题，而非意识形态问题。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="便宜又好用：美国科技巨头集体转向中国大模型" h="461" src="//img1.mydrivers.com/img/20260630/087e33b7-e0fa-4c5d-ba0a-5ed31bb7044a.png" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 10:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5uMl9iZFlfOHoyLWcwcUYxVTgtMFVFclpIaVR4RG1BSjEySjIxWlJuQWNjeUZHNHhfRHh2SHpUODF0dFlqNE5NVF96ZERfR3ZnRDZDMFlBZEs</guid></item><item><title>苹果、奥迪前员工联手：把登月车改成能开上街的豪华电车 17万起 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133134.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，&lt;span&gt;&lt;strong&gt;欧洲初创公司Amble推出首款电动越野车Amble One，设计灵感源自NASA月球车，由前苹果和奥迪设计师团队打造，售价2.5万美元起，约合人民币17万元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Amble One是一款可合法上路的轻型电动越野车，定位L7e类别，可在欧洲公共道路行驶且不被视为常规汽车。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;续航超过60英里（约97公里），最高时速限制在40英里（约64公里），标准家用插座5小时充满，整备质量低于450公斤。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;为满足L7e法规的重量限制，车辆采用无门开放式设计，这并非单纯美学选择，而是减重策略的一部分。&lt;/p&gt;
-&lt;p&gt;设计负责人Julian Hoenig曾在奥迪参与RSQ、A4、R8和Q3项目，后加入苹果设计团队参与Apple Watch、Vision Pro和已取消的Project Titan汽车项目。&lt;/p&gt;
-&lt;p&gt;他表示Amble One直接受NASA月球车启发，电动平台本身刻意外露而非隐藏在车身外壳之下。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;车辆大量使用铝、皮革、棉和软木材质，平底挡风玻璃致敬奔驰G级，仪表台横杆直径与摩托车车把一致，可直接安装标准手机支架等配件。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;CEO Adrien Roose曾联合创立高端电动自行车品牌Cowboy。联合创始人Michael Tropper创立了创意机构Forpeople，客户包括洲际酒店。&lt;/p&gt;
-&lt;p&gt;董事长José António Uva曾修复葡萄牙1927英亩的豪华庄园São Lourenço do Barrocal。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Amble One支持多种配置，后排座椅可折叠放平，未来将推出防水帆布选装和可锁前储物箱。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第二款平台Amble Two已在设计中，计划2029年发布，配备可拆卸车门、更低车顶线和硬顶，定位更接近常规汽车，瞄准家庭第二辆车市场。&lt;/p&gt;
-&lt;p&gt;公司目前已签署12家客户，超过500辆订单承诺，签约收入超1000万欧元。&lt;/p&gt;
-&lt;p&gt;下单方包括犹他州Amangiri、Mustique岛、法国卢瓦尔河谷Six Senses Les Bordes等顶级酒店和度假村。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/f16f89d3-0ad8-4120-91ac-15223ff719d1.jpg" target="_blank"&gt;&lt;img alt="苹果、奥迪前员工联手：把登月车改成能开上街的豪华电车 17万起" h="480" src="//img1.mydrivers.com/img/20260630/Sf16f89d3-0ad8-4120-91ac-15223ff719d1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：霜月&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 09:52:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE83dmdGZE5CV1pXclBtdEVnUEV0UVVRdUF6Y05DQ1pSU2J1MkFlUVBlM2lpVDdybHU1QndTbVlhMWlxX1YwYWdZWjhGaTJZV1NMTWdublAyR2c</guid></item><item><title>八部门印发《关于推动工业互联网高质量发展的实施意见》 - 东方财富</title><link>https://wap.eastmoney.com/a/202606303788439449.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
-        
-        &lt;p class="related"&gt;
-
-        &lt;/p&gt;
-
-        
-
-        
-        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
-        &lt;p class="layer"&gt;&lt;/p&gt;
-        
-        
-        
-
-        
-
-        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 30 Jun 2026 09:42:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBWSnB4N09mNkxSandramQtR1k3UXByVm5FX1phNFNqcnRrc0xNMjdCc3BhamZnMGw3UDhwbWZTSThFM3RCa1N0RGdraldGZFB4TkpLaEc5ODJjSUZ3ZWVOZg</guid></item><item><title>涉以不实文件将英伟达芯片服务器销中港澳 台检方搜超微电脑等3公司声押3人 - RFI</title><link>https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20260630-%E6%B6%89%E4%BB%A5%E4%B8%8D%E5%AE%9E%E6%96%87%E4%BB%B6%E5%B0%86%E8%8B%B1%E4%BC%9F%E8%BE%BE%E8%8A%AF%E7%89%87%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%94%80%E4%B8%AD%E6%B8%AF%E6%BE%B3-%E5%8F%B0%E6%A3%80%E6%96%B9%E6%90%9C%E8%B6%85%E5%BE%AE%E7%94%B5%E8%84%91%E7%AD%893%E5%85%AC%E5%8F%B8%E5%A3%B0%E6%8A%BC3%E4%BA%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;p class="t-content__chapo"&gt;
-                        台湾基隆地检署侦办厂商涉嫌以不实文件，转卖搭载英伟达高阶芯片的服务器至中港澳，周一搜索超微电脑（Supermicro、台湾称美超微电脑）台湾亚太总部、青云科技、是方电讯，并约谈6人，经检察官复讯，周二凌晨声押3人。        &lt;/p&gt;
-    
-    
-                        &lt;div class="t-content__body u-clearfix"&gt;
-                                            
-                                                                &lt;p&gt;中央社报导指，检察官分析相关事证后，周一发动第2波行动，搜索超微电脑股份有限公司位于新北市中和区的台湾亚太总部、超微电脑经销商青云国际科技股份有限公司、资料中心业者是方电讯股份有限公司，及相关人住居所共12处。&lt;/p&gt; &lt;p&gt;检调并将4名超微电脑业务人员、1名青云科技主管和1名是方电讯人员带回调查，经检察官漏夜复讯后，依涉犯伪造文书、背信罪嫌，且有湮灭证据、勾串共犯及证人之虞，向基隆地方法院声请羁押禁见王男、吕男、林男，法院预计下午5时召开羁押庭，另名王男10万元交保、朱女5万元交保。&lt;/p&gt; &lt;p&gt;据悉，青云科技发布重讯指，公司全力配合检调单位调查，公司营运一切正常，对财务业务无重大影响。是方电讯发布重讯表示，公司为资料中心机房服务业者，对客户设备无权涉入，全力配合检调单位调查，且公司营运一切正常，对财务业务无重大影响。&lt;/p&gt; &lt;p&gt;据了解，检方认为，游男等3人明知由超微电脑生产的高阶人工智能服务器，因搭载英伟达特定高阶芯片被美国严格管制，禁止销往中港澳地区，仍意图牟利，以不实文件申报出口，转卖至中港澳地区。&lt;/p&gt; &lt;p&gt;检调5月20日发动首波搜索、约谈后，向法院声请羁押禁见公司负责人或实际负责人游男、王男及陈男获准，并扣得搭载英伟达高阶芯片的服务器50台，及新台币900余万元等证物。&lt;/p&gt; &lt;p&gt;彭博社报导指，目前，台湾并未将向中国出口人工智能芯片的行为定为犯罪。尽管当地有关部门警告潜在卖家，此类出口可能违反美国的规定，但若要通过岛内司法途径追究责任，只能指控涉嫌走私者违反了其他现行台湾法规。&lt;/p&gt; &lt;p&gt;消息指，台北方面目前正考虑将出口行为本身定为刑事犯罪，这将赋予当地检察官更多手段来打击此类非法贸易。&lt;/p&gt; &lt;p&gt;当局于5月首次拘留了涉嫌走私芯片的人员，指控他们伪造了与出口含有高价英伟达人工智能芯片的超微电脑服务器相关的文件。&lt;/p&gt; &lt;p&gt;据报道，这三人涉嫌成功经由日本向中国运送了至少一批英伟达人工智能芯片，并试图出口约50台服务器，但这批服务器在离岛前被台湾当局查扣。&lt;/p&gt; &lt;p&gt;今年，针对其全球领先的芯片制造业面临的技术外泄问题，台湾当局采取了更为强硬的立场。&lt;/p&gt; &lt;p&gt;本月初，彭博社援引知情人士报导称，台湾当局正考虑对向中国大陆销售人工智能芯片实施更为严格的出口管制，以进一步与美国的措施看齐。此举旨在打击半导体走私，但可能招致北京方面的报复。&lt;/p&gt; &lt;p&gt;此举将为台湾检方提供更多手段，以打击人工智能硬件的非法贸易；这些硬件大多在台湾进行大规模生产。英伟达和超威半导体均依赖台积电来制造其尖端芯片。&lt;/p&gt;
-                                                                
-    
-                &lt;/div&gt;
-            
-            
-                    
-                    
-                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 30 Jun 2026 09:39:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMikwRBVV95cUxPRzYwMmpyTFp6WThiVXpsSjcxWC02S3ItdE1ydjd4VlJkUWI1djU0SVVyWWZITjlZdkVrZHVmckFUdkluQUVDMWNPV3kxZVZpdVVtN1V1T3NINWc4SFVqcEZFNUdBemNHVDlVNWFtdVUtNGlZUF9zZlhHaXpMbHJFNklyclNfcEszcHhTYmtWek9GRFVOZGJuaE9keWJoN181SjFxMDFINmZ4eml6bHozVXpuUU5EZkVEdnBnRzZSWHRsdXI0b1NXYVh5OTBJYkxRal91V3hidVRUdzNlUnpBZW91Rjd0MXpQWU9uNmc1UlJVOUo0UEVpN0xseVpncGdqY0tEaUhManR0TjV0a3BhYkpvWGltbnR1dS1ySVpUazF6dVdpUjVWZGZlalhKd3hiR1hqRmZjRE94LTUydFA0aHcwSGxOMGpzYjdfLVlPeU5wWmdMUmVlNFh4RjRnamhNOVhwUVBXc1g0UzNsUFNhMUpXUklvWUJzU29vekxNbUVESjNENEhDNlFROTJaUzZqRlZ1NjJsUURfUU9EUmpRMk11RmRBeUYwQTN4T1h1MThaMFU1TEJubTNkVl9fUmN5Zk15ZXJ3VVVRVFpxOEk2bjBvLUUzVlpZLVhWcUZGUzFVQmtjUHF6UHozZG8zU3ZBNjdnX2M5OWFFc0E2aXFQMGhEakJscXBtUXhpODZsN0pkNkU</guid></item><item><title>SemiAnalysis：英伟达Rubin平台的冰与火 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775841</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 09:26:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1sTEp2N0phLXE0cmkyOE1rUVBpeVpIM1llR1BSWGlmMC1iQkt3TjZOYWtVOWxGWmZPd0Z3UU5TMmY0VlJWbzUzOWVMaHFLWGk1ZTFV</guid></item><item><title>老车主没被抛弃！特斯拉FSD V14 Lite推送 完美适配HW3芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133124.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，日前，有特斯拉北美车主发布照片显示，&lt;span&gt;&lt;strong&gt;特斯拉已于6月29日正式向搭载Hardware 3（HW3）硬件的车辆推送FSD V14 Lite版本（软件版本号2026.20.5.1），&lt;/strong&gt;&lt;/span&gt;覆盖北美地区约400万辆老款特斯拉，这是HW3车主自V13以来首次获得大版本功能更新。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/b56de417ab544d448e0294c6bdade4d2.jpg" target="_blank"&gt;&lt;img alt="老车主没被抛弃！特斯拉FSD V14 Lite推送 完美适配HW3芯片" h="1303" src="//img1.mydrivers.com/img/20260630/s_b56de417ab544d448e0294c6bdade4d2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;据介绍，FSD V14 Lite的核心技术路线是模型蒸馏，将HW4平台V14版本的驾驶智能浓缩后迁移到HW3上，&lt;strong&gt;让HW3车辆以HW4 V14为“”教师模型“”学习场景处理方式，间接获得强化学习和离线模型等最新成果。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这一方案绕过了HW3算力不足的瓶颈，压缩神经网络规模以适配老硬件计算上限，但由于HW3摄像头分辨率较低，远距离目标识别能力仍不及HW4原生版本。&lt;/p&gt;
-&lt;p&gt;功能层面，V14 Lite带来多项实质性升级。&lt;strong&gt;驾驶响应性在导航处理、合流分叉、行人交互、交通信号灯识别及车辆加塞等场景下均有改善，日常驾驶中误减速减少、转向更平顺、车道居中更稳定。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;新增泊车、取消泊车和倒车能力，HW3平台首次获得倒车控制权限。&lt;strong&gt;车主还可通过到达选项预设FSD在目的地选择停车场、路边、私人车道或街边停靠，速度配置功能也改为全时可用。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;需要指出的是，“Lite”之名暗示了差距。Electrek报道指出，V14 Lite仍是受监督的L2级辅助驾驶系统，并非车主购买FSD时承诺的无人驾驶。&lt;/p&gt;
-&lt;p&gt;特斯拉AI副总裁Ashok Elluswamy在X平台确认推送时也强调，驾驶员需始终保持注意力。&lt;/p&gt;
-&lt;p&gt;另有消息称，特斯拉正开发“AI4或AI4-plus”硬件升级方案，&lt;strong&gt;未来可为HW3老车主提供物理改装服务，V14 Lite更像是硬件升级落地前的过渡性方案。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;据Teslascope追踪数据，推送已于6月29日启动，首批覆盖北美HW3车辆，国际市场随后跟进。国内FSD入华仍在推进中，V14 Lite何时随中国版FSD落地尚无明确时间表。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/624c5ce795c54f969462f73cf91adb41.png" target="_blank"&gt;&lt;img alt="老车主没被抛弃！特斯拉FSD V14 Lite推送 完美适配HW3芯片" h="375" src="//img1.mydrivers.com/img/20260630/s_624c5ce795c54f969462f73cf91adb41.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 09:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBRZFVYVTFBbm16a2ROVjhUcU9JbVF0b2RRNjRtZnA0cHF6NXdMaVE2THFYejJKYVR0bGtva2w5elF6VGZtZkVmNzRidVlHVkFsbUI5RUpJQ0U</guid></item><item><title>不用再画高速内存走线了！AMD发布封装黑科技：单芯片内置32GB高速内存 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133122.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，AMD今日发布了Versal Premium Gen 2 Memory on Package（MoP）自适应SoC。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;将高达32GB的LPDDR5X内存直接集成到单颗芯片封装内，提供最高288GB/s的带宽，同时相比传统板载内存方案，减少高达60%的电路板面积。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/985c9faf-c379-40eb-81cd-0f55649146dc.png" target="_blank"&gt;&lt;img alt="不用再画高速内存走线了！AMD发布封装黑科技：单芯片内置32GB高速内存" h="337" src="//img1.mydrivers.com/img/20260630/S985c9faf-c379-40eb-81cd-0f55649146dc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;标准版Versal Premium Gen 2已开始出货，MoP版本将于2026年底提供样片，2027年下半年启动量产出货。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MoP架构将LPDDR5X内存通过有机基板封装工艺直接集成，互连间距仅0.4毫米，走线距离极短。传统方案需要工程师在电路板上进行高速内存布线，耗费大量时间进行仿真和验证。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;MoP采用预验证的片内LPDDR5X接口，直接省去这一环节，大幅缩短开发周期、降低设计风险。&lt;/p&gt;
-&lt;p&gt;与HBM方案相比，MoP的核心优势在于长生命周期支持。HBM锚定数据中心场景，无法提供10至15年的长期供货支持，也无法通过零下40摄氏度的低温工业级认证。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;Versal Premium Gen 2 MoP支持零下40至零上110摄氏度的工业级运行温度，并提供超过15年的生命周期支持，&lt;/strong&gt;&lt;/span&gt;特别适合航空航天、国防、工业控制等需要长期稳定部署的关键任务场景。&lt;/p&gt;
-&lt;p&gt;接口方面，MoP器件集成CXL 3.1和PCIe 6.0硬核IP，传输速度高达64Gb/s，与AMD EPYC CPU搭配时可实现高速数据搬运。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;LPDDR5X支持最高9000Mb/s速率，&lt;/strong&gt;&lt;/span&gt;并可通过CXL内存池化与扩展模块灵活扩展内存资源。&lt;/p&gt;
-&lt;p&gt;首批受益的应用场景包括测试测量设备、专业视频编辑系统，以及用于安全通信和国防加速的VPX系统。&lt;/p&gt;
-&lt;p&gt;MoP架构还打开了EDSFF和3U VPX等紧凑形态系统的设计空间，这些场景此前因外部内存的尺寸限制难以实现。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/8121557ab48540b48f35c8986e61fd2c.jpg" target="_blank"&gt;&lt;img alt="不用再画高速内存走线了！AMD发布封装黑科技：单芯片内置32GB高速内存" h="450" src="//img1.mydrivers.com/img/20260630/s_8121557ab48540b48f35c8986e61fd2c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 09:09:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8tVF8tbkRQUk5Za19Yb0YtQmtER05nel9lWEhHTkpNbktCaVNIQlk3bXltNlZvbjU1QmloZkJVaEgwS21XRS1DeG5CeDd4RHVNRzQ5SE5HWFU</guid></item><item><title>小米澎湃OS 3升级：超级岛支持世界杯比分常驻 相册AI修图更方便 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133115.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，今日，小米澎湃OS官微发布小米澎湃OS3升级公告，超级小爱、小米超级岛、小部件迎来看球实用工具更新，用户可更方便地掌握赛事信息。&lt;/p&gt;
-&lt;p&gt;据介绍，本次升级新增赛事预约、赛事问答功能，支持快速查询各类赛况，并可一键预约比赛，避免错过重点赛事。&lt;/p&gt;
-&lt;p&gt;同时，&lt;span&gt;&lt;strong&gt;小米超级岛适配小红书、直播吧赛事服务，比赛比分可在超级岛常驻显示，用户无需频繁打开App，也能随时查看赛况变化。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/731922e10c3049ce9f767c9b4d8a4b75.png" target="_blank"&gt;&lt;img alt="小米澎湃OS 3升级：超级岛支持世界杯比分常驻 相册AI修图更方便" h="496" src="//img1.mydrivers.com/img/20260630/s_731922e10c3049ce9f767c9b4d8a4b75.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;桌面小部件方面，澎湃OS 3新增2026世界杯赛程小部件，可实时同步最新赛况资讯，对于关注世界杯的用户来说更加实用。&lt;/p&gt;
-&lt;p&gt;除了赛事相关功能外，本次升级还对相册AI工具进行了整合。&lt;/p&gt;
-&lt;p&gt;全新AI修图专区置顶显示，聚合全部AI修图工具，用户查找和使用更方便。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/5ee8e7d3de5847078a970062e85b647a.png" target="_blank"&gt;&lt;img alt="小米澎湃OS 3升级：超级岛支持世界杯比分常驻 相册AI修图更方便" h="398" src="//img1.mydrivers.com/img/20260630/s_5ee8e7d3de5847078a970062e85b647a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;同时，&lt;strong&gt;系统增强了智能美化算法，可一键修复曝光失衡照片，还原更加自然的光影效果。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;其他体验优化方面，录音机新增自动续录功能，当麦克风被其他应用占用时，系统会自动暂停录音，占用结束后自动恢复录制。&lt;/p&gt;
-&lt;p&gt;此外，&lt;strong&gt;本次更新还优化了文件管理页面流畅度，文件分组展开、收起动画更顺滑；优化主题壁纸列表页流畅度，滑动手感更流畅。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;系统修复方面，包括部分场景下手机备份列表不显示微信、文件解压进度显示错误、无法自定义时钟铃声、日历显示异常、天气定位失败、AI壁纸无法生成等问题。&lt;/p&gt;
-&lt;p&gt;小米表示，为保障体验稳定，本次升级将采用“灰度到全量”的逐步推送机制，并非所有用户都会第一时间收到更新，用户可耐心等待后续推送。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/f346e03aa3ac40e5bed96a00bf65dd77.png" target="_blank"&gt;&lt;img alt="小米澎湃OS 3升级：超级岛支持世界杯比分常驻 相册AI修图更方便" h="552" src="//img1.mydrivers.com/img/20260630/s_f346e03aa3ac40e5bed96a00bf65dd77.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 08:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE55OG9TMzhIRUpnOW4wMmlhdmFtWldFU25jZ2FSLUFzWEF1VzZhZ2c5bVozWWdXNGVRbHE1Vi1sOHo5Y2F2a2JuWEtFMi1VUUpFSWhlbkg0V24</guid></item><item><title>80核ARM干不过6核锐龙！红帽工程师折腾11个月后弃Arm64重返x86 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133114.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，&lt;span&gt;&lt;strong&gt;红帽公司ARM团队高级软件工程师Marcin Juszkiewicz近日宣布，放弃已使用11个月的Ampere Altra AArch64 Linux桌面系统，正式回归AMD 锐龙平台。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;去年6月，Juszkiewicz用ASRockRack ALTRA8BUD-1L2T主板搭配Ampere Altra 80核CPU和AMD Radeon显卡，组装了一台原生AArch64 Linux开发机。&lt;/p&gt;
-&lt;p&gt;但在Fedora 42到44的使用过程中，Ampere Altra的PCI Express控制器每周都需要自行修补内核才能正常工作，&lt;strong&gt;即便拥有80个Arm64核心，单线程性能依然差强人意。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;更糟糕的是，Linux 7.0以上内核中AMDGPU驱动开始出现视频播放和游戏bug。&lt;/p&gt;
-&lt;p&gt;他尝试换用NVIDIA GeForce RTX显卡配合Nouveau驱动，又因AArch64缺少合适的NVIDIA Flatpak仓库导致部分软件无法正常工作。他最终决定放弃了这个实验。&lt;/p&gt;
-&lt;p&gt;他表示，从80核降到6核（12线程）数量少了很多，但一切运行正常。所有线程都能加载，Steam库所有游戏都能玩，FreeCAD运行正常，3D打印切片也能直接用。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;他最后得出结论，问题在于平台本身和AArch64 Linux桌面硬件特有的缺陷，而非架构问题。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;如今80核的Ampere Altra系统被他改作RISC-V交叉编译服务器，而他本人对再次尝试AArch64桌面已无兴趣，除非有全新的硬件平台。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/3b41e84ff3c54eafa09f9189864f7523.png" target="_blank"&gt;&lt;img alt="80核ARM干不过6核锐龙！红帽工程师折腾11个月后弃Arm64重返x86" h="432" src="//img1.mydrivers.com/img/20260630/s_3b41e84ff3c54eafa09f9189864f7523.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 08:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1PNThfVTZ6SWNwbjM5NUVDUi1EdS1OTWtkTXhPNkRybVVuRUJ0VHV4YVNQZmNvWTRQZ2E4czl0U3I3dEZ2b2dxeGlwdTA4c1pfcEY0ellId1k</guid></item><item><title>央视评寒武纪市值破万亿：里程碑前，更需一份清醒定力 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775845</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 08:31:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5UVmlTODdGQWxoajBKR0FkOE5nYWpJMGNvLU9iYlJPekJ6ejE5ZkF6LWdBSWdxNWRrNnYwUHcxazJRYmZLbmZrc2p0TVVKNHctUmFJ</guid></item><item><title>数学界著名世纪难题被AI破解 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/ai-math-solves-erdos-problem-openai-dacb0f86</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Tue, 30 Jun 2026 08:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMifEFVX3lxTE83QW44NWU5enNiSGYzZDFVTk1rM2FOeDhGYzAxNzUwa0JySXdya0ZQMjVqT1ZXT3hCRTh3RzNHMUE4SHU0MkowV2RjRzJBUXBvUl96SFFrbldSMU9kMWpUQlFBWjdjYk82VUNlSGFkdHpnOUg5S2ZQVVNWYUQ</guid></item><item><title>Windows 10续命到2027年背后：68%用户不愿升级Win11！ - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133097.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;Windows 10续命到2027年背后：68%用户不愿升级Win11！&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-06-30 16:21:30  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1133097-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，&lt;span&gt;&lt;strong&gt;微软近日悄然将Windows 10扩展安全更新（ESU）计划延长至2027年10月12日，比原定2026年10月的截止日期再多一年。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;延长决定背后是Windows 11升级进度严重不及微软预期，根据Windows Central发起的读者投票，&lt;strong&gt;68%的参与者仍计划继续使用Windows 10，仅19%已升级到Windows 11，硬件成本和Win11自身成为用户升级主要阻力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/32b41fb0-f49f-4730-9567-6afe41946c1d.png" target="_blank"&gt;&lt;img alt="Windows 10续命到2027年背后：68%用户不愿升级Win11！" h="337" src="//img1.mydrivers.com/img/20260630/S32b41fb0-f49f-4730-9567-6afe41946c1d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Windows 10于2025年10月14日正式停止支持，微软最初推出ESU计划时只承诺提供一年额外安全更新，覆盖到2026年10月。&lt;/p&gt;
-&lt;p&gt;此次悄然延长到2027年10月，意味着用户可以多获得一年的关键安全补丁。微软Q&amp;amp;A页面还显示，ESU计划存在第三年选项，理论上可延续到2028年10月10日。&lt;/p&gt;
-&lt;p&gt;在投票评论中，硬件价格是最集中的话题，&lt;strong&gt;AI对HBM产能的吞噬导致DDR5一货难求，新PC和内存条价格持续攀升。一位读者直言“人们没有钱按今天的价格升级”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Linux作为替代方案也在讨论中被频繁提及，有用户表示Linux已经大幅改善，配合安装辅助工具能满足普通用户的日常需求。还有人分析认为，微软之所以在意个人用户流失，是因为“如果人们在家用Linux，最终会开始问为什么工作中要用微软产品”。&lt;/p&gt;
-&lt;p&gt;此外批评组织The Restart Project将微软的延长决定比作“最后一刻的贪睡按钮”，认为只是给一个正在流血的系统贴了创可贴。该组织参与开发了End of 10工具包，帮助无法升级Win11的用户继续使用Windows 10设备。&lt;/p&gt;
-&lt;p id="diaocha_body"&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/1e9ba205d2da4d329fe8a2ea719964dd.jpg" target="_blank"&gt;&lt;img alt="Windows 10续命到2027年背后：68%用户不愿升级Win11！" h="320" src="//img1.mydrivers.com/img/20260630/s_1e9ba205d2da4d329fe8a2ea719964dd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 08:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1seFBzVG1CcnM3b2xBTlo0RDA4Y09hekllaEdmdTNQMzVSc3RfU3I2bElfc25sMEVfckplUFNoUm5sWjJfcjZid3J4dXVydU5sSVZHWkdDbHI</guid></item><item><title>内存涨价缺货逼出奇招：Meta魔改CXL芯片让旧DDR4继续打工 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133091.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，&lt;span&gt;&lt;strong&gt;近日，Meta在ISCA 2026大会上展示了自研Vistara定制芯片方案，让新服务器复用拆机DDR4内存。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Meta发现，自家服务器的预期使用寿命只有3到5年，但拆下来的DDR4内存条还能再用7到10年。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/cca20d2fdb18448a8cea409d82102cb0.png" target="_blank"&gt;&lt;img alt="内存涨价缺货逼出奇招：Meta魔改CXL芯片让旧DDR4继续打工" h="389" src="//img1.mydrivers.com/img/20260630/s_cca20d2fdb18448a8cea409d82102cb0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;问题在于，其约40%的服务器无法增加内存容量，数百万台机器因此无法处理部分工作负载。&lt;/p&gt;
-&lt;p&gt;市面上的CXL方案无法复用旧内存模块，且不支持DDR4。内存越来越贵，旧内存却闲着，Meta决定自己动手。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;Meta的方案很简单：从旧服务器里拆出DDR4内存条，装入依赖DDR5的新服务器，借助自研的Vistara ASIC芯片，把新老内存凑成一个共享内存池。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Vistara ASIC通过PCIe Gen5 x16接口把DDR4内存桥接到主机处理器，每个芯片集成了两个独立72-bit DDR4通道，&lt;strong&gt;支持3200 MT/s的速度，单芯片最大容量256GB。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这套硬件部署在名为MemServer的设备中，单台采用AMD Turin处理器（158核、316线程），配备768GB DDR5内存，再通过Vistara ASIC连上256GB的旧DDR4内存。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;软件层面将DDR4识别为一个独立的NUMA节点，系统优先使用本地DDR4，不够时再调用CXL扩展内存。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这套方案已经在Meta的数百万台服务器中跑起来了，用于机器学习推理、大数据处理等场景。&lt;/p&gt;
-&lt;p&gt;论文显示，该方案让分离式推理所需服务器数量最多减少了25%，分布式缓存平均延迟降低了29%，内存不足导致的作业失败率也下降了33%。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/6b0e42e800ae41cc8006ffe6f8d7f4fe.jpg" target="_blank"&gt;&lt;img alt="内存涨价缺货逼出奇招：Meta魔改CXL芯片让旧DDR4继续打工" h="450" src="//img1.mydrivers.com/img/20260630/s_6b0e42e800ae41cc8006ffe6f8d7f4fe.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 08:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BWDhfcHd1YnYxRFhmbDJjSTVjQjZkcnRSeTN6MWxVbkMtbU9DdHJoMlQ3TDVjNU5MTmY2MElwZlIwVm82SDhmVGFVaGNya0FQUjE1VkNvclA</guid></item><item><title>红魔游戏平板5 Pro发布：同档最强OLED小平板 4999元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133089.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，今天下午，红魔游戏平板5 Pro正式发布。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;售价方面，12+256GB版本首销价为4999元，国补后到手价4499元；16+512GB版本首销价为5999元，国补后到手价5499元；16GB+1TB顶配版本定价为6999元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/c5d7cb3e8eee44ef8bf1ed006f15c4cc.jpg" target="_blank"&gt;&lt;img alt="红魔游戏平板5 Pro发布：同档最强OLED小平板 4999元起" h="334" src="//img1.mydrivers.com/img/20260630/s_c5d7cb3e8eee44ef8bf1ed006f15c4cc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;先来看这款平板的详细配置：&lt;strong&gt;该机采用一块9.06英寸OLED屏幕，搭载高通第五代骁龙8至尊版移动平台，内置8300mAh大容量电池，前置900万像素摄像头，后置1300万像素摄像头，并支持80W快充。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/7468834ed03249b89225a781362f17e7.jpg" target="_blank"&gt;&lt;img alt="红魔游戏平板5 Pro发布：同档最强OLED小平板 4999元起" h="344" src="//img1.mydrivers.com/img/20260630/s_7468834ed03249b89225a781362f17e7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为安卓阵营中性能最强悍的小尺寸平板，红魔游戏平板5 Pro为了充分释放高通骁龙旗舰芯片的强劲性能，将自家标志性的水冷散热系统塞进了平板机身之中，配备与AI服务器同款的散热液，实现高效循环快速降温，能够迅速带走内部热量。&lt;/p&gt;
-&lt;p&gt;即便在长时间运行3A大作的重负载场景下，该机依然能保持稳定的性能输出。&lt;span&gt;&lt;strong&gt;实测数据显示，在《穿越火线：枪战王者》游戏中，60分钟185Hz+高清画质模式下，红魔游戏平板5 Pro能够做到全程满帧运行，游戏体验直接拉满。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/903e5c09c552466ea69f1d70576533e9.jpg" target="_blank"&gt;&lt;img alt="红魔游戏平板5 Pro发布：同档最强OLED小平板 4999元起" h="371" src="//img1.mydrivers.com/img/20260630/s_903e5c09c552466ea69f1d70576533e9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;不止于此，红魔游戏平板5 Pro还配备了红魔自研电竞芯片红芯R4，在超分超帧、触控优化、光效控制等方面发挥着显著作用，为整体游戏体验带来了全方位的提升。&lt;/p&gt;
-&lt;p&gt;更重要的是，这款新品还搭载了红魔CUBE擎天游戏引擎3.0，能够智能感知游戏进程，实现高效性能分配，在保持持久稳帧输出的同时，功耗更低、温控表现也更加出色。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/c955afbe22764a5b84bf1f86976df238.jpg" target="_blank"&gt;&lt;img alt="红魔游戏平板5 Pro发布：同档最强OLED小平板 4999元起" h="287" src="//img1.mydrivers.com/img/20260630/s_c955afbe22764a5b84bf1f86976df238.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在此基础上，红魔游戏平板5 Pro还内置了PC本地模拟器，凭借强悍性能打破了设备之间的边界。它不仅是平板电脑，还可以作为掌机、主机，甚至是一台PC来使用，玩家无需繁琐设置即可尽享端游级别的游戏体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/3dda862a3b9f4e37a53ea03debdc86d1.jpg" target="_blank"&gt;&lt;img alt="红魔游戏平板5 Pro发布：同档最强OLED小平板 4999元起" h="240" src="//img1.mydrivers.com/img/20260630/s_3dda862a3b9f4e37a53ea03debdc86d1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;屏幕方面，红魔游戏平板5 Pro采用了全新的X10发光材料，实现了舒适护眼、广色域显示、低功耗运行以及长使用寿命四大优势。该屏幕支持超高频PWM调光，配合动态AI护眼算法，有效减少蓝光与频闪，即使长时间游戏也能保持舒适的视觉体验。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此外，它还搭载了S3930新思触控芯片，配合MagicTouch触控技术，确保每一次触控都又快、又准、又稳，助力玩家在电竞赛场上抢占先机。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/bda30598ba324b9dbfe58e46a089e0e9.png" target="_blank"&gt;&lt;img alt="红魔游戏平板5 Pro发布：同档最强OLED小平板 4999元起" h="281" src="//img1.mydrivers.com/img/20260630/s_bda30598ba324b9dbfe58e46a089e0e9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 08:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE54MFdRV1JMdG44NUNjc2pYQ3l0alRKU1hxdThiWWphTlI1VVVpakRyRDJpSnJBU2tmdTdhc3NtelRsZy10d20ybnBjV2JMZTA5b2tGR1ZwMDE</guid></item><item><title>史上最先进的制程！苹果A22 Pro首发1.4nm工艺 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133080.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;据科技媒体爆料，全球AI芯片需求爆发引发先进制程产能挤兑，&lt;span&gt;&lt;strong&gt;苹果被迫调整芯片工艺规划，提前缩短2nm周期，将2028年推出的A22 Pro处理器定为首款搭载台积电1.4nm制程的产品。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当前台积电3nm工艺产能已接近饱和，即便厂商规划将月产能提升至17.5万片，依旧难以匹配市场需求，苹果作为台积电核心大客户，也无法获得产能倾斜。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;业内预判，后续大量AI企业将集中转向2nm工艺，届时苹果会重演如今3nm供货紧张的困境，为此苹果将加速落地1.4nm工艺定为核心战略。按照现有规划，苹果今年将落地台积电N2（2nm）制程，2027年升级改良版N2P工艺，两年后直接切换至1.4nm节点，由A22 Pro率先量产。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/f86a3d5f-717c-4230-a225-186cf315bf3c.jpg" target="_blank"&gt;&lt;img alt="史上最先进的制程！苹果A22 Pro首发1.4nm工艺" h="336" src="//img1.mydrivers.com/img/20260630/Sf86a3d5f-717c-4230-a225-186cf315bf3c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;先进制程生产成本居高不下，台积电2nm以下工艺单片晶圆造价达4.5万美元，折合人民币约30.7万元，苹果率先量产1.4nm芯片将承担巨额代工成本。&lt;/p&gt;
-&lt;p&gt;但苹果此举具备长远布局价值，抢先锁定1.4nm初期产能后，高通、联发科等竞品厂商只能争抢剩余有限产能，巩固自身高端芯片供给优势。&lt;/p&gt;
-&lt;p&gt;与行业竞品不同，苹果如今的芯片竞争逻辑已发生转变，不再单纯依靠制程迭代拉开差距。A19 Pro系列在芯片面积缩小10%的前提下，兼顾性能与能效；传闻A20 Pro封装尺寸与前代保持一致，反观竞争对手普遍依靠放大芯片规格提升硬件参数。硬件设计层面的优势，让苹果拥有从容调整工艺路线的底气。&lt;/p&gt;
-&lt;p&gt;2025年iPhone 17系列出货量突破2.4亿部且持续走高，但AI企业芯片采购规模远超手机市场。为规避2nm阶段产能争抢危机，苹果选择高成本提前布局下一代制程，即便投入巨大，也不会对整体营收形成明显冲击。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/42f112bd55894316878dccc35527751c.png" target="_blank"&gt;&lt;img alt="史上最先进的制程！苹果A22 Pro首发1.4nm工艺" h="337" src="//img1.mydrivers.com/img/20260630/s_42f112bd55894316878dccc35527751c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;编辑点评：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从单纯追逐制程领先到主动规划产能避险，苹果此次工艺路线调整，折射出AI浪潮下半导体行业供需格局的彻底重构。移动芯片厂商与AI算力企业同台争夺先进晶圆，消费电子品牌的供应链话语权持续弱化。&lt;/p&gt;
-&lt;p&gt;苹果依托自研芯片架构优势，以高额成本换取长期产能优先权，是典型的长线布局策略。后续1.4nm落地后，移动终端AI算力、续航表现将迎来大幅升级，但昂贵的制造成本最终或将传导至终端售价，高端手机市场或将迎来新一轮涨价周期。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/a79622515aa54df39a727c5d8796ac8a.jpg" target="_blank"&gt;&lt;img alt="史上最先进的制程！苹果A22 Pro首发1.4nm工艺" h="400" src="//img1.mydrivers.com/img/20260630/s_a79622515aa54df39a727c5d8796ac8a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 07:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9rNEM1QzZBdlFNMVhuTGEzWW9kOTVpRHRjUDJBUWs0Q3B2bkJ2aXZJRGEzMGo5Tl9Fd0p1aWxfd0N0OUx4WEc0VTBzQVdzNmZuajZ5MFFNZmQ</guid></item><item><title>优必选创始人谈1.24亿招首席科学家：要胸中有一团火 明知不可而为之 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133081.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;优必选创始人谈1.24亿招首席科学家：要胸中有一团火 明知不可而为之&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-06-30 15:45:44  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1133081-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，今日下午，在优必选2026年度全球发布会上，优必选科技创始人、CEO周剑回应了公司1.24亿元招首席科学家一事。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;周剑直言，我们不限年龄、不限学历，我们只需要一件事——胸中有一团火，明知不可而为之，愿意加入我们的平台和我们一起往前，把人类的进度条往前去拖动一些。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;他指出，“在一家真正的创新公司工作，不是每天都像科幻片一样，而是往往有非常多的冲突，非常多的矛盾，非常多的不开心，每天拍桌子骂在我们公司常见，大家互相怨怼甚至互相诟病，说你没做好我没做好，很枯燥，但突然有一天你会发现，突然间科幻就来临了。”&lt;/p&gt;
-&lt;p&gt;据他介绍，做机器人过程中其实是非常痛苦、非常焦虑的，但也会有感受到科幻片来临的那种兴奋与激动，结果往往也会超出预期。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此前，在今年4月，优必选公开发布了“具身智能首席科学家”招聘信息，“面向全球诚聘技术领军人物”，开出最低1500万元起步、最高可至1.24亿元的年薪待遇。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;除了前述具身智能首席科学家岗位外，当时也同步释放了强化学习算法工程师、资深硬件工程师、Ethercat主站开发工程师、机械工程师、Rust开发工程师等数十个高端岗位。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/e5ec062ab9a54da2ad0c3a5e7b031e65.jpg" target="_blank"&gt;&lt;img alt="优必选创始人谈1.24亿招首席科学家：要胸中有一团火 明知不可而为之" h="733" src="//img1.mydrivers.com/img/20260630/s_e5ec062ab9a54da2ad0c3a5e7b031e65.jpg" w="550"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 07:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5DT1l5SEVvdjJuYld6U3NiXzB3UWRwM3VfbDh3T2Y0VmN4UjVIYzc3SmZuYTRWSGd6VFd0cTZpNHBTNzF2MkVod01qaTJGTU1iX1BlRkw1MGg</guid></item><item><title>特斯拉加速量产，中国厂商集体抢跑，人形机器人的“电车时刻”要来了？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3775834</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 30 Jun 2026 07:44:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBwWTVlcVUxTVdvNGw4dVV1c0NIUy1SWlVqU3ZrZ2pqMXlfQi1ZUkc1dmhlR3BJSzJxTU1yd2Q2SHY4aU1xRldCRzVjb3BYRXNSUTQ0</guid></item><item><title>日本上线AI虚拟警务女局长防诈骗宣传 网友直呼太虚幻 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133076.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;日本上线AI虚拟警务女局长防诈骗宣传 网友直呼太虚幻&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-06-30 15:36:16  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1133076-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，据媒体报道，大阪府警本部近期上线AI虚拟警察局长 “爱子”，借助数字人短片开展反诈宣传，遏制持续高发的冒名电信诈骗案件。&lt;/p&gt;
-&lt;p&gt;这支反诈短片已发布在警方官方账号。视频结合真实警情案例，提醒民众：正规执法警员绝不会通过网络发送身份证件、电子逮捕令，凡是线上出示执法文书要求转账的，一律都是诈骗。&lt;/p&gt;
-&lt;p&gt;该虚拟人物由网络安全专家平野俊宪主导研发，主打年轻化科技画风，用来吸引青少年与中青年群体关注反诈知识。&lt;/p&gt;
-&lt;p&gt;官方披露的受害数据显示，大阪去年电信诈骗案件里，半数受害者年龄在 64岁及以下，中青年群体已经成为冒名诈骗的主要目标人群。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;长期以来，冒名假警察案件层出不穷，不法分子伪造证件恐吓受害者转入 “安全账户”，全地区此类案件累计造成的经济损失预估高达20亿美元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;大阪警方推出数字警官，意在覆盖全年龄段人群，用新潮宣传降低AI换脸、线上冒名诈骗带来的财产损失。&lt;/p&gt;
-&lt;p&gt;不过这一新举措在社交平台引发争议。不少网友留下调侃评论：出来做反诈宣传的警察本身都不是真人，说服力大打折扣，容易让普通民众更加难辨网络信息真伪。&lt;/p&gt;
-&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 07:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1MLTY4S050cFpDc0JRZldBLTVaUmVxcm9KcURldC1Ycml6bWlFbGVUYlNlazRnT01tT3gyV3A4YVRQUTFTTlV6ZnVGUWZZa1doaVkyc3c1b0I</guid></item><item><title>美团发布首个使用国产算力集群训练的AI模型 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260630-9288360</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（北京综合讯）中国科技公司美团发布一款万亿参数开源大模型“LongCat-2.0”，并称这是业内首个完全基于中国国产算力晶片集群进行训练的人工智能（AI）大模型。&lt;/p&gt;&lt;p&gt;综合法新社和《南华早报》报道，美团星期二（6月30日）在一份声明中称，这款从零开始预训练的模型支持100万token的上下文窗口，规模与&lt;a href="/news/china/story20260424-8945958?ref=article-inline" target="_blank"&gt;深度求索（DeepSeek）最新模型V4-pro&lt;/a&gt;相媲美。 &lt;/p&gt;&lt;p&gt;美团说，这款模型是业界首个在五万卡国产算力集群上完成从零预训练到推理全流程的万亿参数模型。&lt;/p&gt;&lt;p&gt;声明没有透露使用的中国硬件供应商，但美团星期二在微信公众号文章中透露，开发过程使用了华为集合通信库（HCCL）来提高训练稳定性。这是一种类似于英伟达集合通信库的晶片间通信系统。&lt;/p&gt;&lt;p&gt;美团介绍，这款新模型在代码编写和智能体任务方面表现卓越，并在多个基准测试中优于谷歌的Gemini 3.1 Pro，但仍落后于OpenAI的GPT-5.5和Anthropic的Claude 4.8 Opus等模型。&lt;/p&gt;
-    
-  &lt;p&gt;尽管中国AI晶片已被广泛应用于模型推理，但仍无法胜任极其消耗算力的预训练任务，导致中国模型高度依赖英伟达晶片。DeepSeek和智谱AI等模型虽已成功在华为等国产晶片上进行推理任务，但在大规模的模型训练领域仍面临挑战。 &lt;/p&gt;&lt;p&gt;美团在一份报告中坦言，与成熟的英伟达GPU生态系统相比，国产配套的软件生态仍欠发达；且国产晶片单片显存显著小于英伟达的H800，显存是一大瓶颈。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Tue, 30 Jun 2026 07:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5RYjZraTVpM3ZLMFhEcDI5TU1HSVhxM1k1YjJjRVgzcEwyX3RvYTRUS01PWDI1WUxOSGM3dG1kQXM5bkJOVzhENlFZaFNOOURabm1zQnU2ZGdJbXpGTnY3bWdJa0EwU2xiT2c</guid></item><item><title>PS6售价要上天！索尼明确不会亏本补贴卖 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133073.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，据报道，硬件爆料人KeplerL2最新估算显示，PlayStation 6的物料清单成本已从三个月前的约760美元飙升至约960美元，逼近1000美元大关。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;与此同时，索尼在近期投资者Q&amp;amp;A中明确表示“不打算以显著亏损出售硬件”，千美元主机的可能性正在快速升温。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="PS6售价要上天！索尼明确不会亏本补贴卖" h="341" src="//img1.mydrivers.com/img/20260630/11f0c0c7-99d9-48bb-a113-f757839c2cff.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;成本三个月暴涨200美元的根源是存储芯片价格飙升，DRAM和NAND是当代游戏主机成本结构中占比最大的组件之一，而AI对HBM和DDR5产能的吞噬导致DRAM价格持续攀升，NAND也因SSD需求激增而水涨船高。&lt;/p&gt;
-&lt;p&gt;在投资者Q&amp;amp;A中，索尼公司代表在回答硬件定价和盈利能力问题时表示，“吸收所有组件成本上涨是不现实的”，并确认已经在日本以外的市场实施了涨价。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;索尼强调“作为原则，不打算以显著亏损出售硬件”，同时表示正在密切关注市场并持续评估策略。&lt;/strong&gt;这番措辞虽然留有余地，但与过去主机行业以硬件亏损换取装机量、再通过软件和服务盈利的传统模式形成了明显反差。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/db1cfad11ef742aba1ce2fd59bf097c8.jpg" target="_blank"&gt;&lt;img alt="PS6售价要上天！索尼明确不会亏本补贴卖" h="400" src="//img1.mydrivers.com/img/20260630/s_db1cfad11ef742aba1ce2fd59bf097c8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;主机亏本销售在游戏行业有悠久历史，PS3发布时物料成本高达840美元，售价499至599美元，每台亏损超过200美元。PS4发布时同样以微亏出售，直到生命周期中后期才实现硬件盈利。&lt;/p&gt;
-&lt;p&gt;PS5在2020年发售时也是亏本销售，索尼财报确认硬件利润率为负，靠数字游戏销售和PS Plus订阅弥补。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这种亏本模式的前提是成本会随时间下降，硬件能在生命周期内转亏为盈，&lt;/strong&gt;但当前存储危机打破了这一假设，DRAM和NAND价格不降反升，越卖越亏的局面让索尼不得不重新考虑定价策略。&lt;/p&gt;
-&lt;p&gt;另外PS5 Pro的涨价经验可能给了索尼更多底气，2026年4月索尼将PS5 Pro价格上调至899美元，PS5标准版也涨至649美元。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;索尼在Q&amp;amp;A中确认，涨价后销售仍按计划进行，没有出现客户需求下降的情况，&lt;span&gt;这就意味着如果899美元的PS5 Pro能被市场接受，1000美元的PS6在心理门槛上并没有想象中那么高。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/8f5be47765954c04ae0de8e26b0a9f77.jpg" target="_blank"&gt;&lt;img alt="PS6售价要上天！索尼明确不会亏本补贴卖" h="444" src="//img1.mydrivers.com/img/20260630/s_8f5be47765954c04ae0de8e26b0a9f77.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;索尼还特意提到PlayStation Portal Remote Player，PlayStation Portal是一款远程掌机，最初只能通过Wi-Fi串流PS5游戏，后来更新了云游戏流功能，可以直接游玩PS5云游戏而无需本地主机。&lt;/p&gt;
-&lt;p&gt;在PS6可能定价过高的背景下，Portal的云游戏能力为索尼提供了一条绕开硬件补贴的替代路径：不买PS6主机的玩家可以通过Portal加云游戏订阅进入下一代生态，索尼不需要亏本卖硬件就能扩大用户基数。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 07:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BN04yRUJiLXBmWnhERzZGNE91emlvMVRFR3lkUERXTFBiRGFlVURUbnNyUHRDMEJrVUh2MnBPOGpDUDl4Wks2UV9uVUhOM0c4UTVYZzBFOGk</guid></item><item><title>349元！REDMI首款头戴降噪耳机发布：42dB降噪 72小时长续航 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133065.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，今日，&lt;span&gt;&lt;strong&gt;REDMI首款头戴降噪耳机正式发布，售价349元，国补后到手价296.65元，&lt;/strong&gt;&lt;/span&gt;目前已在小米商城等官方电商平台开售。&lt;/p&gt;
-&lt;p&gt;外观方面，REDMI头戴降噪耳机提供爵士蓝、交响白、摇滚黑三款配色，整机重约263g，支持折叠收纳，方便日常通勤和外出携带。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/66f777757d3741a1a204d2c6dfd5ec83.png" target="_blank"&gt;&lt;img alt="349元！REDMI首款头戴降噪耳机发布：42dB降噪 72小时长续航" h="336" src="//img1.mydrivers.com/img/20260630/s_66f777757d3741a1a204d2c6dfd5ec83.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/62056f98d1004f2daad7507c2a2162e0.png" target="_blank"&gt;&lt;img alt="349元！REDMI首款头戴降噪耳机发布：42dB降噪 72小时长续航" h="317" src="//img1.mydrivers.com/img/20260630/s_62056f98d1004f2daad7507c2a2162e0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;佩戴体验上，耳罩采用亲肤蛋白皮材质，耐脏污、易清洁，内部填充慢回弹海绵，长时间使用也不易软塌。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/c0210338ea0f4e5eb9c50b40c5974de8.png" target="_blank"&gt;&lt;img alt="349元！REDMI首款头戴降噪耳机发布：42dB降噪 72小时长续航" h="281" src="//img1.mydrivers.com/img/20260630/s_c0210338ea0f4e5eb9c50b40c5974de8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;同时，耳机配备实体多功能键、音量键和开关机键，盲操作更方便。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/d9bf18bdea124e86b6a39f368c87774e.png" target="_blank"&gt;&lt;img alt="349元！REDMI首款头戴降噪耳机发布：42dB降噪 72小时长续航" h="382" src="//img1.mydrivers.com/img/20260630/s_d9bf18bdea124e86b6a39f368c87774e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该耳机还配备多向转轴，旋转角度达110°，摆动角度达15°，可更好贴合不同用户的头部及面部曲线。&lt;/p&gt;
-&lt;p&gt;此外，REDMI头戴降噪耳机采用加宽金属头梁，支持多档调节，有效减轻久戴不适感。&lt;/p&gt;
-&lt;p&gt;音质方面，REDMI头戴降噪耳机搭载40mm超大镀钛动圈单元，并采用独立声学腔体设计，可更精准控制声音表现，隔离串音、减少漏音。&lt;/p&gt;
-&lt;p&gt;小米表示，基于大尺寸动圈与独立后腔结构，再结合小米声学团队调校，REDMI头戴降噪耳机在94dB@1kHz条件下，总谐波失真低至0.04%。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/4846fb44887640e49084d7732077cf0a.png" target="_blank"&gt;&lt;img alt="349元！REDMI首款头戴降噪耳机发布：42dB降噪 72小时长续航" h="339" src="//img1.mydrivers.com/img/20260630/s_4846fb44887640e49084d7732077cf0a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;值得一提的是，&lt;strong&gt;该耳机支持USBAudio有线音频传输，最高支持96kHz/24bit无损有线音频传输，并通过Hi-Res有线金标认证，&lt;/strong&gt;可满足用户对高品质音质的需求。&lt;/p&gt;
-&lt;p&gt;同时，耳机内置4档不同风格预置EQ音效，并支持10段自定义EQ调音，用户可根据听歌、观影、游戏等不同场景自行调整声音风格。&lt;/p&gt;
-&lt;p&gt;REDMI头戴降噪耳机支持最高42dB主动降噪，并提供深度、均衡、轻度三档模式调节。&lt;/p&gt;
-&lt;p&gt;同时支持三麦AI通话降噪，最高可实现5m/s通话抗风噪，在户外通话时也能降低环境噪声干扰。&lt;/p&gt;
-&lt;p&gt;智能体验方面，该耳机支持小米澎湃智联，可实现智能查找、通知播报、音频流转、音频共享、双设备连接、快捷连接等功能。&lt;/p&gt;
-&lt;p&gt;REDMI头戴降噪耳机内置600mAh电池，&lt;strong&gt;单次最长续航可达72小时，并支持快充，充电10分钟即可听歌5小时。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/3b0112fb0b0f4efea966260369878e49.png" target="_blank"&gt;&lt;img alt="349元！REDMI首款头戴降噪耳机发布：42dB降噪 72小时长续航" h="1206" src="//img1.mydrivers.com/img/20260630/s_3b0112fb0b0f4efea966260369878e49.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 07:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBPX2FfOGgyLUFxZFJWRWphRGx4cWpXQ3A2TXo4Y3VLSnBEcFljakR2emVZZXlVc3ZyX2RFSENJSzlYOXEzTkZIZDFCZkYtZi13aUxjZktxWG4</guid></item><item><title>REDMI K90至尊版塞进最大散热风扇：骁龙8E性能被彻底榨干 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133058.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;REDMI K90至尊版塞进最大散热风扇：骁龙8E性能被彻底榨干&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-06-30 14:42:47  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1133058-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，REDMI K90至尊版将于今天19点正式发布，这款主打极致性能的新机在硬件配置上可谓诚意满满。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;该机采用了一块6.83英寸1.5K分辨率、支持165Hz超高刷新率的直屏，核心搭载骁龙8E旗舰处理器，&lt;/strong&gt;&lt;/span&gt;并内置了独立的D2独显芯片和最大主动散热风扇，电池容量达到8550mAh，支持100W闪充。此外，该机还配备了Bose调音、3D超声波指纹以及IP68/IP69级别的防尘防水能力，整体配置相当全面。&lt;/p&gt;
-&lt;p&gt;从整体配置不难看出，K90至尊版最大看点在于内置的主动散热风扇，这也使其成为同价位段中散热性能最为强劲的机型。据官方介绍，&lt;span&gt;&lt;strong&gt;REDMI K90至尊版配备了一颗18.1mm大尺寸风扇，能够带来0.42CFM的单体最大风量，仅需100秒即可使核心温度直降10℃。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/754c27f4e5914a71b01dd444c29b174b.jpg" target="_blank"&gt;&lt;img alt="REDMI K90至尊版塞进最大散热风扇：骁龙8E性能被彻底榨干" h="399" src="//img1.mydrivers.com/img/20260630/s_754c27f4e5914a71b01dd444c29b174b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在实际测试中，该机在大型3D回合制手游中可实现60分钟持续满帧运行，游戏表现甚至超越了部分友商搭载骁龙8E5的旗舰机型，性能释放相当激进。&lt;/p&gt;
-&lt;p&gt;小米集团总裁卢伟冰表示，REDMI K90至尊版将K90 Max全套游戏基因直接搬了过来，包括游戏独显D2、电竞触控、游戏音效以及横屏网络优化等专项配置，同时平移了Max同款的超强主动风冷散热方案，能够实现同样的最高百秒降温10℃的极速降温表现，再次刷新了性能上限。&lt;/p&gt;
-&lt;p&gt;他强调，这款机型能够实现越级的性能输出，在重负载场景下甚至可以比肩行业顶级的游戏旗舰，无论是散热、续航还是游戏优化，都没有明显短板，战力十足。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260630/e0e4734cac8e49058ef8291821942b9f.jpg" target="_blank"&gt;&lt;img alt="REDMI K90至尊版塞进最大散热风扇：骁龙8E性能被彻底榨干" h="255" src="//img1.mydrivers.com/img/20260630/s_e0e4734cac8e49058ef8291821942b9f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 06:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE00a0p3X3hOeDVlREJlZmdtS1Jxbk9CSVNtM0tFZ19GWFFjWi1EaXFlNWcxTnItYjEwVmhSQkJ3cDlqM3Q3MFhoQnM2QWJOeURFTmk1cVJsSGg</guid></item><item><title>DXVK 3.0大版本更新：AMD老显卡惨遭抛弃！ - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133054.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技6月30日消息，Direct3D转Vulkan翻译层DXVK发布3.0大版本更新，引入全新着色器编译器、描述符堆支持和D3D9多项修复。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;但项目同时发出警告：AMD RDNA 1和RDNA 2架构显卡的Windows用户应避免升级到3.0版本，建议继续使用DXVK 2.x。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/3be9a022-d5a8-4809-bdc8-d10b690b7c1e.png" target="_blank"&gt;&lt;img alt="DXVK 3.0大版本更新：AMD老显卡惨遭抛弃！" h="187" src="//img1.mydrivers.com/img/20260630/S3be9a022-d5a8-4809-bdc8-d10b690b7c1e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;DXVK是让Direct3D 8/9/10/11游戏通过Vulkan API运行的开源翻译层，主要服务于Linux平台上的Wine和Proton，但也可以在Windows上使用。&lt;/p&gt;
-&lt;p&gt;部分Windows玩家用DXVK来解决老游戏的兼容性问题或改善帧率表现，尤其是那些原生Direct3D实现存在Bug的经典游戏。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.0版本的核心变化是着色器编译器全面切换到dxbc-spirv，替换了此前的遗留着色器翻译代码，覆盖所有受支持的着色器模型。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;新编译器修复了多款因游戏未定义行为或FXC无效输出导致的渲染问题，还能在《守望先锋》和《战神》等游戏中减少约1GB系统内存占用。同时着色器编译改为在工作线程上运行，有助于缩短启动时间和减少运行中卡顿。&lt;/p&gt;
-&lt;p&gt;描述符堆方面，DXVK 3.0默认启用VK_EXT_descriptor_heap扩展，取代DXVK 2.7引入的描述符缓冲路径，后者已被标记为弃用并将在后续版本移除。NVIDIA用户需要595.84或更新版本的驱动才能使用该功能，旧驱动上会自动禁用。&lt;/p&gt;
-&lt;p&gt;D3D9路径也获得多项改进，包括通过ubershader处理固定功能管线、调整缓冲区上传方式以匹配Windows原生行为，&lt;strong&gt;修复部分32位D3D9游戏的崩溃问题，并在《GTA IV》等游戏中改善无Resizable BAR环境下的性能。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;帧率限制器方面，DXVK 3.0移除了DXVK_FRAME_RATE环境变量，项目建议改用Gamescope或MangoHud等外部限制器以获得更平滑的帧间隔。仍想使用内置限制器的用户可以在配置文件中设置dxvk.maxFrameRate参数。&lt;/p&gt;
-&lt;p&gt;此外，DXVK不再对支持XeSS 2的游戏通过DXGI伪造Intel GPU的厂商ID，这个变通方案此前为旧版XeSS所需，但已在部分D3D12游戏中引发兼容性问题。&lt;/p&gt;
-&lt;p&gt;RDNA 1和RDNA 2的Windows用户面临的困境根源在于Vulkan 1.4，&lt;strong&gt;DXVK 3.0将Vulkan 1.4作为基线要求，而AMD的Windows驱动已停止为RX 5000和RX 6000系列推送功能更新。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;AMD在2025年10月正式将这两代显卡列入“维护模式”，承诺继续提供新游戏的首日支持和稳定性修复，但不再添加新的Vulkan扩展或API特性支持。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/9b6107ba-f744-40ff-878d-45bc4b6a9fdc.jpg" target="_blank"&gt;&lt;img alt="DXVK 3.0大版本更新：AMD老显卡惨遭抛弃！" h="399" src="//img1.mydrivers.com/img/20260630/S9b6107ba-f744-40ff-878d-45bc4b6a9fdc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;结果是这些显卡的Windows驱动无法提供Vulkan 1.4所需的完整功能，DXVK 3.0只能回退到速度较慢的模型，出现其他驱动上不会见到的严重性能问题。&lt;/p&gt;
-&lt;p&gt;因此项目在发布说明中直言，&lt;strong&gt;受影响用户应留在DXVK 2.x，或者考虑迁移到Linux平台，因为AMD的开源Linux驱动（RADV）仍然为这些GPU提供完整的Vulkan 1.4支持。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;相比之下，DXVK 3.0对NVIDIA的要求只是595.84以上驱动，覆盖了从Maxwell（GeForce 750/900系列）到Blackwell（RTX 50）的多代产品。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 06:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ZZmlZN0MyT3N0ZU8wM25JcThoQ1ctc2xZWjk4TXZOWTRWUkFxS2JDRW1iWUd2S1pyOTE3Q3A0cXdHLXJGY3V0SmJRMmFtMlhnWHhCQ2JQeXU</guid></item><item><title>腾讯加大股票回购力度，美媒：内地投资者也放弃腾讯 - 观察者</title><link>https://www.guancha.cn/politics/2026_06_30_822072.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	据彭博社6月30日消息，腾讯正在加大股票回购力度。这场抛售潮已使其市值蒸发约3090亿美元。
-&lt;/p&gt;
-&lt;p&gt;
-	自5月中旬公布六个季度以来最慢营收增速后，这家科技巨头几乎每个交易日都在回购股票。经统计，6月份，腾讯回购金额已超过11亿美元，有望成为今年单月回购金额最高的月份。
-&lt;/p&gt;
-&lt;p&gt;
-	报道称，腾讯股价自去年10月高点已下跌逾三分之一，主要原因是市场担忧腾讯如何将巨额人工智能（AI）投资变现。此外，投资者日益青睐中国纯AI模型开发商的股票，导致腾讯等互联网公司受到冷落。
-&lt;/p&gt;
-&lt;p&gt;
-	上周五，腾讯预期市盈率为11.2倍，创下历史最低估值水平。
-&lt;/p&gt;
-&lt;p&gt;
-	此前曾在腾讯股价下跌时提供支撑的中国内地投资者，也加入了卖出行列，进一步加大了腾讯压力。彭博社汇编的数据显示，预计6月份内地投资者将连续第三个月净卖出腾讯股票。
-&lt;/p&gt;
-&lt;p&gt;
-	“投资者持观望态度，他们需要证据证明投入的资金物有所值，”普信集团投资组合专家Agnes Ng回应腾讯等公司股票表现不佳时表示，“但到目前为止，还没有太多证据，市场仍在等待它们重新实现盈利。”
-&lt;/p&gt;
-&lt;p&gt;
-	彭博社称，回购可能在缓解抛售中起到了一定作用。本月，腾讯迄今股价下跌1.8%，而恒生科技指数则下跌了10%。但6月若收低，将是腾讯股价连续第五个月下跌，创下自2018年以来最长连跌纪录。
-&lt;/p&gt;
-&lt;p&gt;
-	今年3月，腾讯表示，计划到2026年将AI投资至少增加一倍，达到超过360亿元人民币。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/origin/2026/06/30/20260630104924513.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	观察者网获得了内测资格&lt;span&gt;&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	6月初，一则“微信AI要来了”的消息，引爆舆论和股市。近日，微信开启微信客户端内的AI助手“小微”灰度测试，获得内测资格的用户可以通过“发现”主界面左上角的绿色机器人图标入口使用。
-&lt;/p&gt;
-&lt;p&gt;
-	小微的出现经过了超过一年的酝酿与准备，腾讯内部至少从2025年上半年就已启动微信AI，并被列为“最高优先级的绝密项目”。2025年11月，刘炽平在三季度财报会上首次公开确认“微信最终会推出一个AI智能体”；直到今年6月2日，有报道称腾讯已完成原型测试、最快将在当月启动合规审批。
-&lt;/p&gt;
-&lt;p&gt;
-	据英国《金融时报》此前消息，腾讯已完成原型测试、最快将在当月启动合规审批。然而，这是否能帮助“已掉队”的腾讯弯道超车，赶超国内竞争对手，仍是未知数。
-&lt;/p&gt;
-&lt;p&gt;
-	至少，市场仍在观望中渐渐后撤。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 30 Jun 2026 06:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTFBlWGFRbEhCWDRjTHVmUXdITm1HZmlIM3dzUVlocEtBWGpQbWJ4S3lTY001MkZJam9pak12Z1NESWw4MnJ1Q1pHQnZrR3hBa0hObnd3aDhQZUNxUkQxX3ZLTjF6c0NBdw</guid></item><item><title>印度塔塔泄密丑闻：iPhone18 Pro供应商清单、照片遭偷跑-观察者网 - 观察者</title><link>https://www.guancha.cn/economy/2026_06_30_822070.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	（文/汤普济 编辑/吕栋）
-&lt;/p&gt;
-&lt;p&gt;
-	印度电子制造巨头塔塔电子此前被勒索黑客组织World Leaks泄露的相关文件中，疑似包含苹果尚未发布的iPhone 18 Pro机型资料。其中还涉及敏感组件清单、供应商对应关系以及部分测试照片。
-&lt;/p&gt;
-&lt;p&gt;
-	据路透社6月29日消息称，该批泄露文件显示，至少有六份文件把iPhone 18 Pro相关组件与供应商对应起来，包括主电路板芯片、电池、摄像头等部分零部件信息，整体涉及数百个零部件，而这些信息在苹果供应商数据库中尚未公开；还有部分泄露文件带有苹果“机密”水印，并出现与iPhone 18 Pro同系列的苹果内部代号。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;iPhone18 Pro&lt;/strong&gt;&lt;strong&gt;照片遭泄露&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	值得关注的是，在相关文件中还包含2026年初iPhone在塔塔工厂进行跌落测试的照片，显示为一款灰色直板手机，背部为三摄模组并带有苹果标志。对此，报道援引消息人士的说法称，照片中的手机正是iPhone 18 Pro。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/social/2026/06/30/20260630123744104.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	疑似被泄露的iPhone 18 Pro跌落测试泄露视频截图。
-&lt;/p&gt;
-&lt;p&gt;
-	此前，World Leaks在暗网上发布了204341份塔塔电子数据文件，总量超过630.4GB。World Leaks网站声称其中包括据称属于苹果、特斯拉的零部件设计文件。
-&lt;/p&gt;
-&lt;p&gt;
-	经媒体进一步比对发现，泄露内容中还包括至少16个据称是来自台积电的文件和文件夹，以及23个疑似来自高通的文件；而两家厂商均为iPhone供应链中的关键零部件企业。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;“印度造”之路困难加码&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	塔塔电子是苹果在印度最重要的组装商之一，在印度南部已拥有多处与iPhone生产相关的制造基地，与富士康一起成为苹果印度制造体系中的主要力量。根据市场研究公司Counterpoint预计，到2026年，印度有望生产全球26%的iPhone。
-&lt;/p&gt;
-&lt;p&gt;
-	然而泄密丑闻发生后，塔塔电子紧急收紧所有设施和办公室的内部安全协议，限制员工访问敏感内部系统，尤其收紧了远程访问敏感工具的权限。同时，塔塔电子聘请全球咨询公司开展法务审计，并向印度政府和客户报告了相关事件。
-&lt;/p&gt;
-&lt;p&gt;
-	路透社认为，此次泄密，最终将动摇塔塔与苹果之间合作的信任基础。
-&lt;/p&gt;
-&lt;p&gt;
-	需要注意的是，这也并非塔塔首次遭遇网络攻击，而其与苹果的合作过程也总是伴随着各种风险。去年，塔塔集团旗下的英国捷豹路虎（Jaguar Land Rover）集团就曾遭受网络攻击，导致生产线被迫停摆长达六周。
-&lt;/p&gt;
-&lt;p&gt;
-	2024年9月，塔塔位于印度泰米尔纳德邦霍苏尔的iPhone零部件工厂曾发生火灾，导致生产无限期暂停。就再上个月，该工厂还因涉嫌污染附近的农田而面临审查，污染机关机构警告该工厂或将强制停产。
-&lt;/p&gt;
-&lt;p&gt;
-	对苹果而言，一边则要消化内存和存储芯片成本上涨压力，另一边还要应对在印度面临的反垄断调查。
-&lt;/p&gt;
-&lt;p&gt;
-	据悉，印度竞争委员会（Competition Commission of India）正在指控苹果在iOS商店中存在“滥用市场支配地位”行为，限制第三方支付或外部购买链接，强制开发者使用苹果自有的应用内购系统。
-&lt;/p&gt;
-&lt;p&gt;
-	虽然目前苹果否认了ICC的指控，称公司在印度智能手机市场的份额不足6%，属于“微不足道的市场参与者”。但同时苹果还是打出了感情牌。
-&lt;/p&gt;
-&lt;p&gt;
-	苹果表示，如果CCI执意考虑实施处罚，则应将相关从轻情节纳入考量，其中包括苹果“完美无瑕的合规记录”，以及过去五年间该公司从印度出口了价值高达510亿美元iPhone的客观事实。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 30 Jun 2026 06:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTFBKalJybzUxTVIySTZkczFXNmdyRDdXeXRLWDBlVUFWS25nUFRYSGZSX2lLcXo2ZjNfRUgxTU53R0NWTkNmZzIzc2Y4dU5NR0hjY0oxZ2hDMzBXQ0xtdTkzcE9rUXQ</guid></item><item><title>2299元起明天开售！小米首款NAS由海康威视代工 - 驱动之家</title><link>https://news.mydrivers.com/1/1133/1133053.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;&lt;strong&gt;快科技6月30日消息，小米首款NAS命名为“小米智能存储”，将于明天正式开启众筹，定价2299元起。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;根据3C认证显示，这款产品的生产厂是杭州海康威视电子有限公司，也就是由海康代工。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/507f2d0c-bee7-4457-8520-2f39bccfcdff.png" target="_blank"&gt;&lt;img alt="2299元起明天开售！小米首款NAS由海康威视代工" h="163" src="//img1.mydrivers.com/img/20260630/S507f2d0c-bee7-4457-8520-2f39bccfcdff.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;根据爆料，其工程机搭载瑞昱RTD1619B处理器，拥有2GB内存+8GB闪存，双盘位最大支持40TB，接口包括USB3.0*1、HDMI1.4*1、1Gbps RJ45网口。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;结合来看，小米智能存储的配置与海康威视私有云Mage 20 Pro类似，后者同样是双盘位，但并没有HDMI接口，核心同样搭载RTD1619B，但拥有4+4GB存储组合。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;也就是说，小米智能存储很有可能是基于海康Mage 20 Pro定制而来，包括硬件和软件体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/df4571f7-f07b-4260-989f-e51cd3cd4e65.png" target="_blank"&gt;&lt;img alt="2299元起明天开售！小米首款NAS由海康威视代工" h="746" src="//img1.mydrivers.com/img/20260630/Sdf4571f7-f07b-4260-989f-e51cd3cd4e65.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;需要强调的一点是，海康Mage 20 Pro并不支持Docker，虽然ARM架构也有一些Docker能跑，但在海康固件上是锁死的，目前不确定小米是否开放。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;但其实从硬件上结合曝光的软件功能来看，其实小米智能存储的核心用户并不是对Docker有需求的极客玩家，而是面向以存储为主的入门用户。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;它的目标用户并不需要复杂的功能，只是需要能够存储日常的照片、视频，进行一些简单的手机、电脑数据备份，并且实现一些影视功能即可。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260630/dbcffc6b-cc09-46d7-b494-58dfa9abc69c.png" target="_blank"&gt;&lt;img alt="2299元起明天开售！小米首款NAS由海康威视代工" h="600" src="//img1.mydrivers.com/img/20260630/Sdbcffc6b-cc09-46d7-b494-58dfa9abc69c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;另外，小米的定价实际上也非常良心，本体甚至几乎是不赚钱的，这个价格本身想要太高的配置也不现实。&lt;/p&gt;
-&lt;p&gt;具体来说，该机共有三个版本可选4T版（2T×2）2299元、8T版（4T×2）2899元、16T版（8T×2）4699元，&lt;strong&gt;目前市场上对应的硬盘价值分别是1000元、2000元、3800元左右。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对于小米来说，NAS产品真正的考验是在软件，如果通过这款产品将软件跑通，实现稳定的体验，接下来再推出升级的高端版本，也会拉拢更多用户。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="2299元起明天开售！小米首款NAS由海康威视代工" h="1077" src="//img1.mydrivers.com/img/20260630/7af753a6-a9e6-4c69-a74a-261c3c4c5fd7.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="2299元起明天开售！小米首款NAS由海康威视代工" h="1076" src="//img1.mydrivers.com/img/20260630/45356ace-4ba0-44ae-a106-4ed5dc73fa92.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="2299元起明天开售！小米首款NAS由海康威视代工" h="1078" src="//img1.mydrivers.com/img/20260630/252d6bd8-ac5e-4731-bcc9-cb6eac63e008.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="2299元起明天开售！小米首款NAS由海康威视代工" h="1076" src="//img1.mydrivers.com/img/20260630/83abe110-858b-4b65-9db0-244f69085fc9.png" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 06:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1TTUtSUlEyaXVLdDJqdFpRVjBYajJBYWFXTGhDT01waEZoaGJCRnJGb3JsOUFjZENDWWVJYkRoUW9JYVExY3lZQkpoNlE4MW00bWQ3ZWZUQU0</guid></item><item><title>清华退学生造出650亿独角兽，自动驾驶离赚钱还有多远？-观察者网 - 观察者</title><link>https://www.guancha.cn/economy/2026_06_30_822065.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	(作者｜周琦 编辑｜张广凯)
-&lt;/p&gt;
-&lt;p&gt;
-	自动驾驶赛道终于等来一家“拿得出收入”的标的。
-&lt;/p&gt;
-&lt;p&gt;
-	6月29日，自动驾驶解决方案供应商Momenta正式启动港股招股，招股期至7月3日，预计7月8日在港交所主板挂牌，中金公司与德意志银行担任联席保荐人。
-&lt;/p&gt;
-&lt;p&gt;
-	这家成立十年的公司，正试图以“物理AI”的概念重新定义自身，这比“智能驾驶供应商”更宏大，但也更考验资本市场耐心的叙事。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;从清华退学生到智驾头部玩家&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	Momenta是一家自动驾驶解决方案供应商，它不卖车、不造车，而是向车企提供让车辆具备自动驾驶能力的软件方案。
-&lt;/p&gt;
-&lt;p&gt;
-	公司2016年成立于苏州，客户覆盖全球主要整车厂，当前收入几乎全部来自量产车搭载的辅助驾驶方案，未来计划延伸至Robotaxi业务。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/06/29/20260629181802953.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	创始人曹旭东的经历颇具传奇色彩。1986年，出生于甘肃庆阳。2004年考入清华大学航天航空学院工程力学专业，本科毕业后获得直博资格。
-&lt;/p&gt;
-&lt;p&gt;
-	但在博士一年级时，他对计算机视觉与深度学习产生浓厚兴趣，做出退学转投AI的决定。据公开报道，面对导师的三次挽留，他甚至没有动摇。
-&lt;/p&gt;
-&lt;p&gt;
-	退学后，曹旭东于2008年加入微软亚洲研究院计算机视觉组，在CVPR、ICCV等顶级会议发表论文十余篇，其研发的算法被应用于Xbox、Bing、How-old等微软产品。
-&lt;/p&gt;
-&lt;p&gt;
-	2015年，他受汤晓鸥招募加入商汤科技出任执行研发总监，在这里，完成了从研究员到管理者的转型。2016年9月，曹旭东与夏炎、孙刚、孙环等共同创立Momenta。
-&lt;/p&gt;
-&lt;p&gt;
-	创业之初，曹旭东确立了“一个飞轮，两条腿”的战略构想——一条腿做量产车的L2/L3级辅助驾驶方案，走量变现、积累真实路况数据；另一条腿保留L4级Robotaxi的长远布局，两条腿共用同一套算法架构。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/06/29/20260629181815994.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	但这个构想头两年并未真正落地。当小马智行、文远知行等同行在资本簇拥下比拼路测里程时，Momenta内部更像一个“松散的研究院”。2018年底，公司扩招到400人，投入大量资源却未能产出有意义的商业化产品。
-&lt;/p&gt;
-&lt;p&gt;
-	在2019至2020年的融资黄金期，Momenta几乎从公众视野中消失。
-&lt;/p&gt;
-&lt;p&gt;
-	转折点出现在2020年，特斯拉上海工厂后销量爆发，让更多车企将高阶智驾视为必然方向。同年，上汽投资Momenta；2021年，比亚迪与Momenta合资成立迪派智行，数据飞轮开始加速转动。
-&lt;/p&gt;
-&lt;p&gt;
-	目前，行业内有“地大华魔”的说法，将地平线、大疆、华为、Momenta并列为智能驾驶供应商中的头部玩家。
-&lt;/p&gt;
-&lt;p&gt;
-	此次上市采用港交所同股不同权架构（A股1票、B股10票）。曹旭东、夏炎、孙刚、孙环四人共同持有公司全部B类普通股，合计掌控绝大多数股东投票权。
-&lt;/p&gt;
-&lt;p&gt;
-	公司融资历程跨越20余轮，递交招股书前最后一轮投后估值约61.85亿美元。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;营收成色&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	说回生意本身，Momenta到底卖什么？
-&lt;/p&gt;
-&lt;p&gt;
-	据招股书披露，2025年公司营收24.13亿元，几乎全部来自量产车解决方案，Robotaxi贡献尚不重大。
-&lt;/p&gt;
-&lt;p&gt;
-	具体来看，量产车收入变现的方式有两种，量产前按项目收取技术开发服务费，帮整车厂把智驾方案适配到具体车型上；另一种是量产后按搭载量收费的许可服务费，即每卖出一辆装了Momenta方案的车，收一次钱。
-&lt;/p&gt;
-&lt;p&gt;
-	两种收入的占比在过去三年发生了根本性翻转。2023年，技术开发服务费占96.8%，许可服务费仅占3.1%，到2025年，许可服务收入占比已提升至40.1%。
-&lt;/p&gt;
-&lt;p&gt;
-	这意味着，Momenta正在从“一次性项目制”向“持续性许可收费”模式转型，后者更具规模效应。
-&lt;/p&gt;
-&lt;p&gt;
-	公司营收随之水涨船高，从2023年的7.43亿元增至2024年的13.25亿元，2025年进一步跃升至24.13亿元，同比增长82.1%。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/06/29/20260629181151114.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	收入结构的转变直接反映在毛利率上。当许可服务收入占比从3.1%提升至40.1%时，公司整体毛利率从2023年的17.5%猛增至2025年的71.6%，在汽车行业中属较高水平。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/06/29/20260629181212361.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	但需要注意的是，当前智驾方案的竞争格局尚未进入白热化阶段。曹旭东本人预判，域控成本将从8000元降至2000多元。在这一趋势下，高毛利率能否在价格战中长期维持，是投资者需要关注的问题。
-&lt;/p&gt;
-&lt;p&gt;
-	许可收入的爆发，根源在于量产车型的快速爬坡。2023年，公司仅有8款车型进入正式量产，2024年增至26款，2025年跃升至68款。
-&lt;/p&gt;
-&lt;p&gt;
-	伴随量产车型数量增长，许可服务收入从2023年的2318万元飙至2025年的9.68亿元，三年翻了超过40倍。
-&lt;/p&gt;
-&lt;p&gt;
-	技术路线上，公司目前主力交付的是基于强化学习的R6大模型，被寄予“物理AI”叙事厚望的下一代R7模型（融合世界模型）仍处于开发阶段，尚未量产交付。Momenta与华为则明确拒绝VLA（视觉-语言-行动），认为真正的技术突破在于让模型理解物体的物理属性与运动因果关系。
-&lt;/p&gt;
-&lt;p&gt;
-	业务规模上，截至2025年12月31日，公司量产车解决方案安装量已超过68万辆，其中城市NOA解决方案安装量超过65万辆；累计获得170款车型定点，68款已正式量产。截至2026年2月28日，定点进一步增至180款，安装量超过73.3万套。
-&lt;/p&gt;
-&lt;p&gt;
-	据灼识咨询资料，截至2026年2月末的过去12个月，Momenta在中国独立城市NOA解决方案提供商中市场份额64.5%，在全球独立智能驾驶解决方案提供商中（按采用车型数量计）市场份额57%，与华为合计占据该细分市场约八成。
-&lt;/p&gt;
-&lt;p&gt;
-	客户阵容是Momenta最核心的资产之一。截至2025年底，公司已与24家全球领先整车厂建立合作，覆盖《财富》全球前十大整车厂中的8家（丰田、通用、奔驰、宝马集团中国、现代汽车集团、大众、比亚迪、本田），2026年2月新增福特后增至9家。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/06/29/20260629181742978.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	中国自主品牌则包括上汽、广汽、奇瑞、一汽、吉利、长城、东风等，连同奔驰、宝马、奥迪，客户名单几乎涵盖全球汽车产业版图的核心玩家。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;90亿美元的市场检验&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	此次发行以每股295.6港元定价，计划全球发售1993.83万股（香港公开发售占10%，国际发售占90%），另设15%超额配股权。
-&lt;/p&gt;
-&lt;p&gt;
-	若不计超额配股权，预计募资总额约58.9亿港元，扣除费用后净额约56.15亿港元。募资净额约六成投入研发，两成用于加速Robotaxi商业化，一成巩固量产车业务，余下一成补充营运资金。
-&lt;/p&gt;
-&lt;p&gt;
-	最受市场关注的是基石投资者阵容，Momenta共引入14家机构，合计认购约3.76亿美元(约29.4亿港元)，占全球发售股份总数的49.95%。
-&lt;/p&gt;
-&lt;p&gt;
-	新加坡政府投资公司(GIC)与富达国际领投，各认购1亿美元；贝莱德、橡树资本、富兰克林邓普顿分别出资2500万、2000万、1000万美元；老股东梅赛德斯-奔驰、比亚迪分别加码2500万、1500万美元，兆易创新出资600万美元；高毅、博裕、华夏基金、广发基金、太平洋保险各出资1000万美元。
-&lt;/p&gt;
-&lt;p&gt;
-	市场对此估值的反应存在分歧。据媒体报道，部分港股长线基金经理认为90亿至100亿美元的预期定价已不算便宜，叠加港股近期解禁压力、自动驾驶商业化周期偏长等因素，选择观望。
-&lt;/p&gt;
-&lt;p&gt;
-	但也有资金看好其在独立城市NOA市场的领先地位和稀缺的“自动驾驶纯标的”属性。
-&lt;/p&gt;
-&lt;p&gt;
-	财务数据呈现一组需要仔细解读的反差。按国际财务报告准则口径，公司年内亏损逐年扩大，从2023年的25.70亿元增至2024年的32.06亿元、2025年的34.58亿元，主要受可转换优先股公允价值变动、股份支付等非现金项目影响。
-&lt;/p&gt;
-&lt;p&gt;
-	但剔除这些项目后的经调整亏损在快速收窄，从2023年的10.93亿元降至2024年的9.59亿元，2025年大幅缩减至3.03亿元，经调整净亏损率从147.2%降至12.6%。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/06/29/20260629181235968.png" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	此次IPO对应估值预期约90亿美元（约650亿元人民币），较半年前的私募估值上浮约45%。
-&lt;/p&gt;
-&lt;p&gt;
-	横向对比来看，港股智驾芯片龙头地平线2025年营收37.58亿元、市值约1000亿港元，市销率约25倍；全球ADAS龙头Mobileye2025年营收18.9亿美元、市值约300亿美元，市销率约16倍。
-&lt;/p&gt;
-&lt;p&gt;
-	但分析人士也指出，Momenta作为纯软件算法公司，与拥有自研芯片和数十年行业积淀的地平线、Mobileye在护城河上存在本质差异，直接对标需审慎看待。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;不可忽视的风险变量&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	客户集中度是市场关注的焦点之一。
-&lt;/p&gt;
-&lt;p&gt;
-	2023年至2025年，前五大客户收入占比从86.7%降至62.6%，虽在改善但仍偏高。更值得关注的是，多家大客户本身即是公司股东或股东关联方——上汽持股9.45%、通用持股9.37%、奔驰持股6.39%。
-&lt;/p&gt;
-&lt;p&gt;
-	招股书显示，往绩记录期间多家五大客户本身就是公司的股东、股东关联方或曾经/现在的被投资公司。
-&lt;/p&gt;
-&lt;p&gt;
-	这意味着车企既是出资人又是客户，一旦股东车企调整自研策略或转向竞品，既是订单流失也可能伴随股权层面的连带变化。
-&lt;/p&gt;
-&lt;p&gt;
-	从客户收入变化可见端倪。
-&lt;/p&gt;
-&lt;p&gt;
-	2023年第一大客户贡献收入从2.65亿元降至2025年已跌出前五大客户名单（份额低于7.6%）。与此同时，上汽、比亚迪、奔驰、大众等核心股东车企均同时布局自研智驾团队或与其他供应商合作，Momenta仅是外部伙伴之一。
-&lt;/p&gt;
-&lt;p&gt;
-	这一替代风险被行业普遍视为Momenta面临的长期挑战。
-&lt;/p&gt;
-&lt;p&gt;
-	与此呼应的是应收账款数据。
-&lt;/p&gt;
-&lt;p&gt;
-	截至2025年底，公司贸易应收款项达9.74亿元，较2024年末的4.56亿元几乎翻倍，其中来自关联方的应收款项2.86亿元，占比近三成；截至2026年4月30日，2025年末应收账款仅收回68.9%。
-&lt;/p&gt;
-&lt;p&gt;
-	更深层的挑战指向商业模式本身。当前超70%的高毛利率能否在价格战中持续，存在不确定性。公司方案目前高度依赖英伟达、高通等第三方芯片，自研芯片尚未大规模量产，在成本控制和议价能力上处于相对被动地位。
-&lt;/p&gt;
-&lt;p&gt;
-	此外，数据飞轮战略依赖的真实路况数据归属权、海外业务合规风险、L3/L4监管标准不统一等，都是悬在头顶的现实变量。
-&lt;/p&gt;
-&lt;p&gt;
-	曹旭东曾判断，“智驾领域中国最多3家、全球最多4家供应商会胜出”。
-&lt;/p&gt;
-&lt;p&gt;
-	对Momenta而言，登陆港股既是补充弹药、巩固交付能力的关键一步，也是将一级市场用20余轮融资堆出来的估值故事，正式交由二级市场重新定价的“惊险一跃”。
-&lt;/p&gt;
-&lt;p&gt;
-	这场由国际长线资本、产业车企和中资机构共同押注的商业样本能否站稳，最终要看R7世界模型能否在实际场景中证明足够的技术壁垒，以及量产规模能否持续扩大以支撑起当前估值的水平。
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 30 Jun 2026 06:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE10RzlFbkJKZ25qMk5fQWo1UEg5TFg3Y1Y2M3E3VFFaZjhjd1N5UVpUM1JnVkxRMlhqVHNWV0tmUWt5RF9ZZ1NweDJMcUFTNVctSkloMmUwMjdBa2RraDY1M3V1N1o</guid></item><item><title>AI数据采集员：月薪几千教机器人做家务，最后可能替代自己 - 虎嗅</title><link>https://www.huxiu.com/article/4871493.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" data-v-ac1ceb48&gt;&lt;p data-check-id="494050"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MjM5OTg4NTUwMw==&amp;amp;mid=2665118308&amp;amp;idx=1&amp;amp;sn=f46702b5d1bfcf5efa19a3d33b402114&amp;amp;chksm=bdbca1a1234a4ecadcc27ded2d1d3b8b5fa3edcc25df1f4dbac64a79e90348a6ba31c9e2b1f0#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-check-id="105775"&gt;&lt;/p&gt;&lt;p data-check-id="829246"&gt;&lt;/p&gt;&lt;p data-check-id="521805"&gt;我重生了，重生为一台家务机器人，开机的一瞬间，拖地扫地、叠衣服、刷碗等技能一个不落，甚至能单手打出一个完美结实的垃圾袋收口。机器人上得厅堂下得厨房的梦，终于被我实现了。&lt;/p&gt;&lt;p data-check-id="449344"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="731523"&gt;如果机器人会写科幻小说，大概会如此开头。&lt;/p&gt;&lt;p data-check-id="173910"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="767956"&gt;事实上，让机器人学会做家务，本质就像让猴子打出莎士比亚全集。&lt;/p&gt;&lt;p data-check-id="208071"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="319220"&gt;因为，无限猴子定律告诉我们：只要时间足够长，一只随机敲击键盘的猴子终能打出莎士比亚全集。在AI发展早期，这个思想实验曾经引发科学家们无穷的想象——只要采集足够多的随机数据，是否就能涌现出智能？&lt;/p&gt;&lt;p data-check-id="174759"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="996216"&gt;答案显然是否定的：纯随机的数据就像猴子的无序敲击，效率低到宇宙毁灭，也等不来一次有价值的灵感涌现。&lt;/p&gt;&lt;p data-check-id="328583"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="498810"&gt;但AI的发展，彻底改写了这个结果。科学家不再被动等待猴子们碰运气，而是主动采集数据，从每一次搜索到每一帧监控画面、每一段家务视频。来到2026年的楚门的世界，这里镜头无处不在，行为被持续记录，数据被源源不断地抽走、标注、喂养给正在学习如何替代你的模型。&lt;/p&gt;&lt;p data-check-id="812941"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="309583"&gt;&lt;img data-h="716" data-w="1080" src="https://img.huxiucdn.com/article/content/26-06-30/a797194c-ef76-41e6-b14c-2ffe9c5c7f34.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="951019" label="图片备注" class="text-img-note"&gt;线上居家视频采集工作越来越热门&lt;/p&gt;&lt;p data-check-id="481021"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="842368"&gt;算法把普通人做家务的逻辑理解之后，动作成了可复制的指令，批量部署是机器人公司最终的目标。&lt;/p&gt;&lt;p data-check-id="179326"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="855908"&gt;所以今天，每个人最基础的日常生活也开始变得耐人寻味，那些美好的愿景在实现过程中必然伴有牺牲。&lt;/p&gt;&lt;p data-check-id="200754"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="431773" label="大标题" class="text-big-title"&gt;一、当AI数据采集披上兼职外衣&lt;/h2&gt;&lt;p data-check-id="451813"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="222252"&gt;月薪四千，允许AI机器人采集你的一举一动，最终训练出一个完全替代你劳动职能的智能体。你愿意吗？不少人会本能地拒绝。但当这份工作被包装成“AI数据采集员”，隐瞒真实用途，又精准瞄准急需补贴家用、拥有大量空闲时间的宝妈群体时，自我蒸馏就被很多人接受了。&lt;/p&gt;&lt;p data-check-id="874480"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="247649"&gt;小敖就是在BOSS直聘上刷到这种岗位的，当时她刚刚从上一家公司离职，想躺平又怕存款告急，处在躺不了放不下的阶段，就想着在家找个自由点的赚钱活路。&lt;/p&gt;&lt;p data-check-id="633837"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="131585"&gt;HR的承诺很诱人，“只录手部就行，不用露脸，不用说话，时间自由，随时能做。”她以为自己找到了一份轻松的居家兼职，在家封垃圾袋、拖地板、整理衣物，本来每天就要做的家务，现在再动手拍下视频就能换钱。&lt;/p&gt;&lt;p data-check-id="290943"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="174927"&gt;&lt;img data-h="729" data-w="720" src="https://img.huxiucdn.com/article/content/26-06-30/63d047c6-6b8b-478c-8adc-be3b7828f7b9.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="186887" label="图片备注" class="text-img-note"&gt;HR的承诺让小敖心动&lt;/p&gt;&lt;p data-check-id="377435"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="974808"&gt;她接了单，第一次拍摄，她按培训要求把手机架在厨房台面上，录了一段叠衣服的视频。上传后三天，后台提示“审核不通过”，理由是“光线不均匀，左侧有阴影”。&lt;/p&gt;&lt;p data-check-id="990923"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="511569"&gt;小敖一开始觉得审核员完全是在强词夺理，辛辛苦苦叠了那么久却不给结算，后来研究明白视频用途之后她就明白了，这种有阴影的视频AI没法识别，也就很难成为训练素材。&lt;/p&gt;&lt;p data-check-id="280225"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="680081"&gt;&lt;img data-h="1074" data-w="720" src="https://img.huxiucdn.com/article/content/26-06-30/f422cd7a-f879-4341-81cb-c2d01899ee27.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="822127" label="图片备注" class="text-img-note"&gt;和小敖一样的采集员们发现工作并不轻松&lt;/p&gt;&lt;p data-check-id="523435"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="592172"&gt;“我换了盏灯重新拍，又被打回来，说动作起始位置不在画面中央。”来来回回重拍了四次才勉强合格。她算了算时间成本：第一条通过审核的20秒视频，她前后搭进去了将近两个小时。&lt;/p&gt;&lt;p data-check-id="421218"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="797545"&gt;正式开工后，合格率依然低得惊人，拍摄角度稍微偏一点，退回；手部动作超出画面边缘，退回；背景里有杂物入镜，退回；光线从左边打到右边而非正面，退回。“你觉得自己明明是在做家务，但AI平台告诉你，你做家务的姿势不对。”&lt;/p&gt;&lt;p data-check-id="934392"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="558441"&gt;做家务对她来说完全成了表演，有时候她感觉自己就是镜头背后的群演，一群机器人是最忠实的观众。&lt;/p&gt;&lt;p data-check-id="700341"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="777058"&gt;真正让她决定不干了的，是一次意外发现。&lt;/p&gt;&lt;p data-check-id="874397"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="719874"&gt;有一天系统派发的任务包里多了一条备注，说这周想要重点采集抓取垃圾袋收口的动作，要求包含5种以上收口方式，她突然意识到，自己在拍的这些东西，和网上家务机器人演示视频里的动作一模一样。“我当时全身发凉，我录了两个月叠衣服、封垃圾袋、捡玩具，原来全都是在教机器人怎么替代我。”而视频最终通过审核后，报酬是3.2元。&lt;/p&gt;&lt;p data-check-id="664207"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="748841"&gt;&lt;img data-h="1125" data-w="720" src="https://img.huxiucdn.com/article/content/26-06-30/7bbf4d69-e9ec-42ff-8e0a-a05ae72ed21f.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="874007" label="图片备注" class="text-img-note"&gt;录制蔬菜打包视频&lt;/p&gt;&lt;p data-check-id="558858"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="464654"&gt;“我以为我在赚外快，其实是在替AI打工，而且他们早晚会来顶替我。”&lt;/p&gt;&lt;p data-check-id="139520"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="894306"&gt;亚楠的选择则更彻底一些。几年前她还在跑外卖，如今在公司租下的房间里，她成了一名专职数据采集员。每天的工作很简单：戴上设备，拍自己叠衣服、擦拭桌面、做三明治。&lt;/p&gt;&lt;p data-check-id="198414"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="967451"&gt;以家居场景为例，一天下来能采集200多条视频，有效时长约2到3个小时，月薪6000到7000元，比居家采集员的3000到4000元高出不少，但依然算不上高薪。&lt;/p&gt;&lt;p data-check-id="479317"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="546182"&gt;她的工作流程已经被系统精确切割成一个个标准动作。前一天晚上在线上领取任务，第二天就在房间里反复执行，在杂乱环境中识别目标物，戴上夹爪抓取，换一个方位再来一遍。&lt;/p&gt;&lt;p data-check-id="960823"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="699344"&gt;一条视频只有20到30秒，公司规定的每天最低要求是1.5小时有效时长，也就是说她每天要产出至少180条合格视频。从穿戴上设备到脱下设备，她一天里大部分时间都在重复同一件事。&lt;/p&gt;&lt;p data-check-id="661895"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="247081"&gt;&lt;img data-h="1280" data-w="719" src="https://img.huxiucdn.com/article/content/26-06-30/f5874abd-9730-4bac-87f6-280ba77099db.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="943977" label="图片备注" class="text-img-note"&gt;家务数据采集细化到如何清理枕头&lt;/p&gt;&lt;p data-check-id="206171"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="762528"&gt;“你觉得自己在做一份正经工作，但心里清楚，这些东西早晚会让一部分人失去工作。只是没想到，失去工作的那些人里，可能包括我自己。”&lt;/p&gt;&lt;p data-check-id="947884"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="357270"&gt;具身智能数据采集员的时薪和他们创造的数据最终卖出的价格之间，隔着10倍以上的差价。一条高质量的真机操作数据，在数据市场上的售价可能高达数百甚至上千元，而采集它的人只拿到了十几二十块。&lt;/p&gt;&lt;p data-check-id="302046"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="835552"&gt;数据采集圈有着像印度种姓一样的严格划分。&lt;/p&gt;&lt;p data-check-id="425684"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="228085"&gt;最底层是采集员，常见的人群画像包括宝妈、失业者、兼职人员，他们是整个链条的燃料。&lt;/p&gt;&lt;p data-check-id="363237"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="715493"&gt;第二层是外包平台，从数据公司接单后分包给采集员，中间抽取30%到50%，第三层是数据公司，将原始数据清洗、标注、对齐后打包成可训练的数据产品，最上层是宇树、优必选、智元、特斯拉等机器人本体公司，花高价购买这些数据来训练模型。&lt;/p&gt;&lt;p data-check-id="402991"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="858757"&gt;劳动者在产业链的最底端，拿着最低的报酬，产出着最原始的数据，而这些数据最终可能训练出一个替代自己的机器人，这可能就是自我蒸馏的更高形态，不仅在出卖自己的劳动人格，还在以极低的价格，亲手为终将取代自我的机器添砖加瓦。&lt;/p&gt;&lt;p data-check-id="827120"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="195739" label="大标题" class="text-big-title"&gt;二、本科生们抢着干的dirty work&lt;/h2&gt;&lt;p data-check-id="455910"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="269575"&gt;AI数据采集早就不是新鲜事了，早几年，普通话录制、便利店货架标注、道路图像框选等等零散分布在众包平台上的微任务。&lt;/p&gt;&lt;p data-check-id="503251"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="959223"&gt;这是典型的互联网dirty work：重复、机械、低门槛、低回报。对着屏幕把红绿灯框出来，听一段语音转写成文字，给商品打上“饮料”“零食”“日用品”的分类标签，一单几毛钱，熟练的人一天能做个几百单。&lt;/p&gt;&lt;p data-check-id="374650"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="594188"&gt;&lt;img data-h="960" data-w="720" src="https://img.huxiucdn.com/article/content/26-06-30/ab2ad50d-8db5-4161-9913-08acd61603f6.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="952345" label="图片备注" class="text-img-note"&gt;便利店数据标注越来越考验细心度&lt;/p&gt;&lt;p data-check-id="354593"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="671456"&gt;虽然枯燥，但用工需求大、结算快，一度成为热门副业。大学生、全职妈妈、小镇青年、暂时找不到工作的人，都能靠它贴补家用。&lt;/p&gt;&lt;p data-check-id="559051"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="531512"&gt;大家心知肚明自己在为算法提供原料，语音数据用来训练语音识别，标注的图像喂给自动驾驶模型，商品分类服务于推荐系统。&lt;/p&gt;&lt;p data-check-id="163668"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="566824"&gt;只是那时候，这些数据离自己的核心技能很远，你标注的是路上的车，不是你开车的技术；你分类的是货架上的可乐，不是你的工作内容。没有威胁到饭碗，就选择睁一只眼闭一只眼。&lt;/p&gt;&lt;p data-check-id="460690"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="344159"&gt;但如今，事情开始质变了。&lt;/p&gt;&lt;p data-check-id="363646"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="407721"&gt;AI正从“坐在电脑里处理文本和图像”的软件形态，进化成“走进真实世界动手干活”的具身智能。数据采集也随之从语音、静态图像扩展到了全身动作、连续家务行为。Nydia就是在这个转折点上撞上了现实。&lt;/p&gt;&lt;p data-check-id="570961"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="242593"&gt;大龄失业的她本想找份过渡工作，看到招聘信息写着“数据采集员”，以为是普通的办公室文职。到了现场才知道是“给机器人当牛马”，在一间摆满机械臂和摄像头的房间里，试岗内容是用遥控器操作机械臂，把面前的积木按指定顺序码放整齐。&lt;/p&gt;&lt;p data-check-id="256170"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="525552"&gt;&lt;img data-h="1280" data-w="719" src="https://img.huxiucdn.com/article/content/26-06-30/ccd0cf0d-5728-4e5d-844b-5d0a6547d026.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="235490" label="图片备注" class="text-img-note"&gt;如何擦拭窗台也成了很有讲究的学问&lt;/p&gt;&lt;p data-check-id="252354"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="888062"&gt;她试了三次，机械臂要么抓歪了，要么放偏了，要么直接把积木碰倒了。旁边的面试官面无表情地记了几笔，然后告诉她：“今天到这里吧，回去等通知。”她心里清楚，等到的不会是录取通知。&lt;/p&gt;&lt;p data-check-id="888783"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="400058"&gt;真正让她震惊的，不是自己被淘汰，而是排队等面试的人里，有好几个看着二十出头的年轻人，穿着整齐，手里拿着简历，一看就是刚毕业没多久。“我以为这种活只有我们这种年纪大、找不到工作的人才会来，结果人家年轻、学历高，也在往这个行业挤。”&lt;/p&gt;&lt;p data-check-id="121398"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="650722"&gt;她后来在社交媒体上写道，“数据标注这种以前没人愿意干的dirty work，现在居然成了香饽饽。”&lt;/p&gt;&lt;p data-check-id="100342"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="828572"&gt;试岗结束后，工作人员带她们参观了一间展示厅。里面摆着正在测试的家务机器人，叠衣服的、擦桌子的、整理杂物的，甚至还有一台能打麻将的机器人。&lt;/p&gt;&lt;p data-check-id="211962"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="185495"&gt;麻将机前围了一圈人，有人开玩笑说“以后连打牌都不用自己动手了”，Nydia没笑出来。她站在叠衣服的机器人前面看了很久，机器人的夹爪正反复抓起一件T恤，折叠、压平、翻面、再折叠，动作比她想象中流畅得多。&lt;/p&gt;&lt;p data-check-id="402373"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="648629"&gt;“机器人真的要来和人类抢饭碗了。科技发展得越快，被取代的速度也越快。年轻人尽早规划找出路，而我们这些大龄失业者该何去何从？”这是她亲眼见到家务机器人、麻将机器人后最直白的心声。&lt;/p&gt;&lt;p data-check-id="615695"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="901152"&gt;她不是在抱怨招聘门槛高，也不是在后悔自己没抓住机会，她只是第一次意识到曾经在科幻片里才有的机器人替代人类的场景，正在走进她的生活。&lt;/p&gt;&lt;p data-check-id="200237"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="178712"&gt;听起来，危机似乎近在咫尺。但事实真的如此吗？&lt;/p&gt;&lt;p data-check-id="647558"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="160739" label="大标题" class="text-big-title"&gt;三、正在被异化的我们&lt;/h2&gt;&lt;p data-check-id="113962"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="477804"&gt;Nydia离开面试公司时，脑子里一直回荡着这个画面，叠衣服的机械臂反复抓起一件T恤，折叠、压平、翻面、再折叠，动作流畅得像一个做了十年家务的人。“如果它有天能叠得比我好，是不是就不再需要我了？”&lt;/p&gt;&lt;p data-check-id="274894"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="329805"&gt;但顺着这个问题往下想，答案往往是肯定的。&lt;/p&gt;&lt;p data-check-id="582440"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="663076"&gt;是的，那些数据正在被采集、被标注、被喂给模型；是的，你我现在的每一个动作都在为未来的机器人铺路；是的，这条产业链底端的剥削是真实存在的，劳动者在产业链最底层拿着最低的报酬，而产出的数据最终可能训练出一个替代自己的机器人。&lt;/p&gt;&lt;p data-check-id="179059"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="514762"&gt;马克思笔下所提到的异化，在数据采集员身上全部实现了，他们和劳动产品分离、和劳动本身分离、和人的创造性本质分离，甚至和其他劳动者之间也只剩下相互取代的关系。&lt;/p&gt;&lt;p data-check-id="589827"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="646086"&gt;但这不是明天就会发生的事。动作流畅的机械臂，绝大部分还没有大规模投产落地，号称走进家庭的机器人演示视频，大多是在严格控制光照、桌面材质和物体形状的环境下拍出来的，一旦换到真实的、杂乱的的客厅和厨房，它们就会迅速现出原形。&lt;/p&gt;&lt;p data-check-id="471914"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="238731"&gt;具身智能的真正难点，远不止学会叠衣服这么简单。&lt;/p&gt;&lt;p data-check-id="120673"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="139900"&gt;家务机器人能叠衣服，是因为有人反反复复在机器人面前展示了叠了三百遍，把每一个角度、每一次折叠都录下来喂给他们。家务机器人能区分垃圾和玩具，是因为有无数双手在不同的光照、不同的桌面上一次次地抓取、放下、再抓取，把每一个步骤拆解到足够机器人读懂的程度。&lt;/p&gt;&lt;p data-check-id="531106"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="473036"&gt;可是机器人们实际上并没有读懂任何事，他们不认识棉和麻的区别，只是匹配到了对应的像素特征，如果遇到了训练数据里从未出现过的布料就会立刻卡住，因为他们技能不是真正的技能，只是对已有数据的机械重复。&lt;/p&gt;&lt;p data-check-id="683288"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="435040"&gt;家务机器人真的很像一面回音壁，把人类的经验压缩、编码，然后变成一台不需要拿工资、不需要休息、不会抱怨的机器。但是更深刻本质的理解和关怀是不存在的，比如为什么我们要做家务、为什么要叠衣服、为什么要拖地？机器人理解不了复杂的家庭关系，和这个小小房间里的流动情感。&lt;/p&gt;&lt;p data-check-id="937837"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="156159"&gt;我们做家务，是为了拥有可以安心休憩的空间，可以更自在地拥抱明天，而机器人不懂，他们只明白被预设的程序。&lt;/p&gt;&lt;p data-check-id="215646"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="109478"&gt;这是机器人和人之间永远无法抹平的差距，虚拟世界里完美运行的算法，一进现实世界就失灵，这是具身智能领域公认的“最后一公里”难题。&lt;/p&gt;&lt;p data-check-id="962833"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="327681"&gt;目前，在非结构化家庭环境中，完成一套完整、可靠、低成本的家务劳动，至少还需要5-10年甚至更久。更合理的态度是既看到不公平，也看到距离；既不盲从恐慌，也不放弃批判。&lt;/p&gt;&lt;p data-check-id="273851"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="872784"&gt;不如保留一点空间给人类。我们的家务不只是动作数据，它需要我们倾注对家人的情感。比如同一道红烧肉，人人口味千变万化，温度的控制、成分的搭配、火候的拿捏，所有看起来可以被量化的东西，到了一定火候就变成了没法教的手感，它们藏在一个人多年观察、实践的经验里。&lt;/p&gt;&lt;p data-check-id="180574"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="505133"&gt;这些是当前的AI无法理解、也难以编码的东西。我们应当警惕的，不是技术本身，而是利用信息差、把数据采集包装成轻松兼职的招募话术。了解技术真实的边界，比贩卖焦虑或盲目拥抱都更重要。&lt;/p&gt;&lt;p data-check-id="643304"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="112505"&gt;AI的变化就像一列飞驰而过的地铁，窗外的风景正在飞速倒退，我们坐在车里，甚至都来不及看清窗外的风景，更没法让它慢一点、再慢一点。&lt;/p&gt;&lt;p data-check-id="111818"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="822221"&gt;但至少我们还可以做一件事，决定我们自己要在哪一站换乘，而不是就这样一路接受支配驶向终点。&lt;/p&gt;&lt;p class="img-center-box" data-check-id="385209"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Tue, 30 Jun 2026 06:08:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE4zdENsVmlzUHdIRFJRQVdaUi16U2RLdklJZEdXRnBVZVYydjFBNGhpVWcxRmV5TW91NWFQamxHMVN4d0tWa3Q5bDQzMGg2dmxDX3I5QQ</guid></item><item><title>读懂物理AI：AI产业的下半场，不止是概念狂欢 - 36Kr</title><link>https://www.36kr.com/p/3875124739570568</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p&gt;2026年，AI行业的叙事正在彻底迭代。前两年大火的生成式数字AI，如今已步入增速放缓、同质化内卷、利润收缩的存量阶段；而由英伟达黄仁勋持续押注、夏季达沃斯论坛列为年度头号技术趋势的&lt;strong&gt;物理AI&lt;/strong&gt;，正式接过行业接力棒，成为全球资本与科技巨头的核心布局方向。&lt;/p&gt;
-  &lt;p&gt;一时间，世界模型、具身智能、物理推演成为行业热词，各类科技企业纷纷绑定物理AI赛道，试图抢占估值红利。近期，冲刺港交所的Momenta被市场冠以“物理AI第一股”的头衔，引发广泛热议。但拨开资本市场的概念包装，我们需要先厘清最核心的问题：&lt;strong&gt;物理AI到底是什么？这场产业变革的核心逻辑和真实落地节奏是什么？&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;相较于纠结单一企业的标签归属，读懂物理AI的底层定义、发展脉络与商业化本质，才是看懂AI产业下半场的关键。而回归产业本源不难发现：自动驾驶的核心价值，始终锚定垂直场景的规模化落地与真实营收能力，而非泛化的物理AI概念叙事。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;物理AI，AI产业的终极进化方向&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;想要理解物理AI，最直观的方式是对比大众熟知的数字AI。过去三年爆火的ChatGPT、文生图、AI办公等技术，都属于&lt;strong&gt;数字AI&lt;/strong&gt;，核心局限于虚拟屏幕世界，处理文本、图像、代码等数字化信息，输出的是文字、画面等虚拟内容，解决的是信息交互、内容生产的效率问题。&lt;/p&gt;
-  &lt;p&gt;而&lt;strong&gt;物理AI（Physical AI）&lt;/strong&gt;，是彻底跳出数字虚拟场景、扎根真实物理世界的新一代人工智能。结合英伟达黄仁勋的定义与行业统一标准，其核心本质是：&lt;strong&gt;能够感知三维物理空间、理解重力、摩擦、碰撞、运动等真实物理规律，通过世界模型推演环境变化，自主完成感知、推理、决策、实体执行的全闭环AI体系&lt;/strong&gt;，最终实现AI对现实物理世界的改造与赋能。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,602" src="https://img.36krcdn.com/hsossms/20260630/v2_ff2c1c45e684455e82488df1080f781d@35930_oswg667808oswg1080oswg602_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;简单来说，数字AI让机器“会思考、会表达”，物理AI让机器“会观察、会行动、会适应真实世界”。二者的核心差异，决定了物理AI拥有远超数字AI的产业空间。数字AI服务于线上虚拟场景，市场天花板逐步显现；而物理AI覆盖自动驾驶、人形机器人、工业自动化、低空设备、智能终端等实体赛道，渗透工业生产、交通出行、家庭服务等实体经济核心场景，是真正能重构实体产业的万亿级赛道。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;从概念到落地：物理AI的崛起与一年产业迭代&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;物理AI的概念由英伟达CEO黄仁勋率先系统性提出，他多次公开表态：数字AI只是AI产业的上半场，&lt;strong&gt;物理AI才是未来数十年科技行业的核心增长浪潮&lt;/strong&gt;，也是人工智能从“智能交互”走向“智能造物”的关键拐点。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,596" src="https://img.36krcdn.com/hsossms/20260630/v2_37bf03e304004964a2eedca00a9c3d40@35930_oswg403269oswg1080oswg596_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;在行业早期，物理AI更多是前沿技术概念，受限于硬件成本、数据积累、模型能力，长期停留在实验室阶段。直到近一年，随着大模型技术迭代、算力成本下降、实体场景数据爆发，物理AI正式迎来规模化落地拐点，2026年也被业内公认为&lt;strong&gt;物理AI元年&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;从技术迭代来看，&lt;strong&gt;世界模型&lt;/strong&gt;的成熟是物理AI落地的核心基石。区别于传统大语言模型的文本预测逻辑，世界模型核心是预测物理世界的动态变化，推演物体运动轨迹、环境演变规律，解决了AI看不懂复杂现实场景、无法预判未知风险的核心痛点。目前，特斯拉、谷歌、英伟达、Momenta等国内外企业，均已完成世界模型的技术布局，推动物理AI从理论走向量产。&lt;/p&gt;
-  &lt;p&gt;从产业落地来看，近一年物理AI赛道呈现全方位爆发态势。资本端，2026年一季度全球物理AI初创企业融资超64亿美元，国内半年融资突破460亿元，资金高度向世界模型、通用仿真、具身智能等核心技术领域集中；应用端，物理AI开始多场景落地，自动驾驶城市NOA大规模普及、工业机器人智能化升级、人形机器人完成B端试水、AI眼镜等端侧智能终端快速渗透，产业生态持续完善。&lt;/p&gt;
-  &lt;p&gt;从行业共识来看，全球科技巨头已完成战略统一。英伟达搭建Omniverse仿真平台、Cosmos世界模型，打造物理AI底层算力与仿真底座；特斯拉以自动驾驶为入口，布局通用具身智能；国内企业也纷纷聚焦物理AI核心技术，推动AI技术与实体经济深度绑定，行业正式进入技术落地、商业化兑现的高速周期。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;物理AI的核心门槛：通用能力与跨场景价值&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;经过一年的产业迭代，市场对物理AI企业的判定标准已形成清晰共识，核心具备两大核心特质，这也是区分“真物理AI”与“概念蹭热度”的关键。&lt;/p&gt;
-  &lt;p&gt;第一，&lt;strong&gt;通用物理建模能力&lt;/strong&gt;。真正的物理AI技术，核心是掌握通用物理规律，一套底层模型可适配汽车、机器人、工业设备、低空飞行器等多类物理载体，实现跨行业、跨场景复用，具备极强的技术泛化能力，而非单一场景的定制化优化。&lt;/p&gt;
-  &lt;p&gt;第二，&lt;strong&gt;完整的实体交互闭环&lt;/strong&gt;。物理AI的核心是“可控、可执行”，AI可自主完成环境感知、风险推演、决策输出、硬件操控的全流程闭环，无需第三方主体二次干预、审核、标定，真正实现对物理实体的自主掌控。&lt;/p&gt;
-  &lt;p&gt;第三，&lt;strong&gt;多元化商业化场景&lt;/strong&gt;。依托通用底层技术，可横向拓展出行、工业、家居、物流等多赛道业务，形成跨行业、可持续的营收体系，摆脱单一行业的周期束缚。&lt;/p&gt;
-  &lt;p&gt;基于这套行业标准，当下很多企业的物理AI叙事，都存在一定的概念泛化问题，近期热度极高的Momenta便是典型。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;“物理AI第一股”是概念溢价，而非产业定位&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;凭借量产规模、市占率优势与R7世界模型技术，Momenta被市场冠以“物理AI第一股”，为其IPO赋予了更高的赛道估值。但客观来看，这一标签更多是资本市场的营销包装，并非严格意义上的产业定位，无需过度放大争议，仅需厘清边界即可。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,542" src="https://img.36krcdn.com/hsossms/20260630/v2_7ce60e7b2e73458984bf3e150f6f8a72@35930_oswg100121oswg1080oswg542_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;从技术层面，Momenta的R7世界模型是&lt;strong&gt;乘用车场景的专用优化模型&lt;/strong&gt;，聚焦城市、高速路面行驶场景，仅针对车辆、行人、路面障碍物做物理轨迹预判，技术无法迁移至工业机器人、低空设备、通用仿真等物理AI核心场景，不具备通用物理建模能力。同时，其算法方案需依托车企硬件载体，指令需主机厂二次标定，无法形成完整的物理自主交互闭环。&lt;/p&gt;
-  &lt;p&gt;从业务层面，Momenta的全部营收、业务布局均聚焦乘用车赛道，Robotaxi、无人卡车等远期规划也未跳出地面出行场景，始终是&lt;strong&gt;垂直出行赛道的技术服务商&lt;/strong&gt;，没有物理AI企业必备的跨场景、跨行业拓展能力。其亮眼的营收增长、高毛利许可收入，均来自车载软件量产交付，是自动驾驶垂直场景的商业化成果，而非通用物理AI的价值兑现。&lt;/p&gt;
-  &lt;p&gt;简言之，Momenta是优秀的智能驾驶解决方案厂商，掌握了部分物理AI的技术特征，但并不具备完整的物理AI产业属性，“第一股”的头衔更多是资本赋予的概念溢价，而非行业精准定位。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;自动驾驶的核心，永远是落地与营收&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;物理AI宏大的赛道叙事，本质是为自动驾驶行业提供了长期技术想象，但无法改变企业的短期估值逻辑。&lt;/p&gt;
-  &lt;p&gt;无论是Momenta、文远知行、小马智行等头部玩家，还是行业一众新晋厂商，&lt;strong&gt;自动驾驶企业的核心竞争力，从来不依附于前沿概念，而扎根于垂直场景的规模化落地能力与真实营收造血能力&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;物理AI的长期发展，目前行业仍处于早期布局阶段。&lt;strong&gt;通用世界模型、具身智能、跨场景仿真等&lt;/strong&gt;核心技术仍在迭代，&lt;strong&gt;多品类实体落地、跨行业商业化&lt;/strong&gt;还需长期沉淀。对自动驾驶企业而言，当下最务实的发展路径，不是绑定宏大的物理AI概念抬高估值，而是持续深耕出行垂直场景，扩大量产规模、优化收入结构，用真实的营收与盈利修复证明产业价值。&lt;/p&gt;
-  &lt;p&gt;物理AI是长远的产业终局，而自动驾驶是当下务实的垂直赛道。Momenta的案例也印证了一个朴素的产业真理：&lt;strong&gt;所有技术叙事最终都要服务于商业落地，资本市场的概念溢价转瞬即逝，唯有垂直场景的规模化应用、可持续的营收能力，才是科技企业的核心护城河&lt;/strong&gt;。未来，随着物理AI技术持续成熟，自动驾驶与通用物理AI的边界或将逐步打通，但当下，坚守商业化落地、维持造血能力，依旧是智驾行业的唯一标准答案。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Tue, 30 Jun 2026 06:04:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE15S2lmaDh6cTNHb3NQZlczQXJObkJrb3ZnM2tuaVNXQXdwbkIxZXNKTklkNjZoQlVyOVNvTWFoQUNqdTU1N1RaV3FkRGhDVkU5</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 30 Jun 2026 10:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9NZlZkVllWUF9hOTM2WWltMHl2bjctRFlHYUZpdVNCMno5WC1lT0JXME5IM1Bkb3NBaUhxS0h0UmIwTzRvVWJOaEFSUkNxV3djRnBQa2o4T0U</guid></item></channel></rss>
