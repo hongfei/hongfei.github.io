@@ -158,36 +158,46 @@
 
     .leg-list {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
+      gap: 8px;
+      overflow-x: auto;
     }
 
-    .leg-card {
+    .leg-table-head,
+    .leg-row {
+      display: grid;
+      grid-template-columns: 58px minmax(190px, 1.7fr) 92px 76px 86px 86px 58px 96px;
+      align-items: center;
+      gap: 8px;
+      min-width: 760px;
+    }
+
+    .leg-table-head {
+      padding: 0 10px;
+      color: var(--text-primary);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .leg-row {
       border: 1px solid var(--border-light);
       border-radius: 8px;
-      padding: 10px;
+      padding: 8px 10px;
       background: #f4f4f5;
     }
 
-    .leg-card.is-disabled {
+    .leg-row.is-disabled {
       display: none;
     }
 
-    .leg-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 8px;
-    }
-
-    .leg-title {
+    .leg-index {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
       color: var(--text-primary);
-      font-size: 0.85rem;
-      font-weight: 700;
+      font-size: 0.78rem;
+      font-weight: 800;
     }
 
     .leg-dot {
@@ -197,15 +207,15 @@
       background: var(--line);
     }
 
-    .leg-card:nth-child(2) .leg-dot {
+    .leg-row:nth-child(3) .leg-dot {
       background: #1c6f9e;
     }
 
-    .leg-card:nth-child(3) .leg-dot {
+    .leg-row:nth-child(4) .leg-dot {
       background: #b77b24;
     }
 
-    .leg-card:nth-child(4) .leg-dot {
+    .leg-row:nth-child(5) .leg-dot {
       background: #7c3aed;
     }
 
@@ -214,28 +224,23 @@
       font-size: 0.75rem;
       font-weight: 700;
       font-variant-numeric: tabular-nums;
+      text-align: right;
     }
 
-    .leg-fields {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 7px;
+    .leg-cell {
+      min-width: 0;
     }
 
-    .leg-fields .wide {
-      grid-column: 1 / -1;
-    }
-
-    .leg-fields label {
-      display: block;
-      margin-bottom: 4px;
+    .leg-cell-label {
+      display: none;
       color: var(--text-muted);
-      font-size: 0.74rem;
+      font-size: 0.68rem;
       font-weight: 600;
+      text-transform: uppercase;
     }
 
-    .leg-fields input,
-    .leg-fields select {
+    .leg-row input,
+    .leg-row select {
       min-height: 36px;
       padding: 6px 8px;
       font-size: 0.86rem;
@@ -297,8 +302,8 @@
       grid-column: 1 / -1;
     }
 
-    .leg-workbench .leg-list {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+    .leg-workbench {
+      overflow: hidden;
     }
 
     .panel-title {
@@ -435,84 +440,10 @@
       line-height: 1.35;
     }
 
-    .table-panel {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
-      gap: 16px;
-      align-items: start;
-    }
-
-    .table-panel > * {
-      min-width: 0;
-    }
-
-    .table-scroll-wrapper {
-      max-height: 320px;
-      overflow-x: auto;
-    }
-
-    .numeric {
-      text-align: right;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .side-pill {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 42px;
-      border-radius: 999px;
-      padding: 3px 8px;
-      font-size: 0.72rem;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .side-pill.buy {
-      background: rgba(14, 158, 92, 0.12);
-      color: var(--profit);
-    }
-
-    .side-pill.sell {
-      background: rgba(223, 43, 32, 0.12);
-      color: var(--loss);
-    }
-
-    .range-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .range-card {
-      border: 1px solid var(--border-light);
-      border-radius: 8px;
-      padding: 12px;
-      background: #f4f4f5;
-    }
-
-    .range-card strong {
-      display: block;
-      margin-bottom: 5px;
-      color: var(--text-primary);
-      font-size: 0.85rem;
-    }
-
-    .range-card p {
-      margin: 0;
-      color: var(--text-secondary);
-      font-size: 0.8rem;
-      line-height: 1.4;
-    }
-
     @media (max-width: 1180px) {
       .summary-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
-
-      .table-panel {
-        grid-template-columns: 1fr;
-      }
-
     }
 
     @media (max-width: 992px) {
@@ -540,11 +471,28 @@
 
     @media (max-width: 640px) {
       .inline-fields,
-      .leg-fields,
-      .leg-list,
       .controls .summary-grid,
       .summary-grid {
         grid-template-columns: 1fr;
+      }
+
+      .leg-table-head {
+        display: none;
+      }
+
+      .leg-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        min-width: 0;
+      }
+
+      .leg-cell-label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .leg-index,
+      .leg-notional {
+        align-self: end;
       }
 
       .preset-grid {
@@ -726,44 +674,6 @@
           </section>
         </div>
 
-        <div class="pe-card table-panel">
-          <div>
-            <div class="panel-title">
-              <h2>Active Legs</h2>
-              <div class="panel-kicker" id="legsKicker">Editable contracts</div>
-            </div>
-            <div class="table-scroll-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Leg</th>
-                    <th>Side</th>
-                    <th>Type</th>
-                    <th class="numeric">Strike</th>
-                    <th class="numeric">Premium</th>
-                    <th class="numeric">Qty</th>
-                    <th class="numeric">Cash</th>
-                  </tr>
-                </thead>
-                <tbody id="legsTableBody"></tbody>
-              </table>
-            </div>
-          </div>
-          <div class="range-list">
-            <div class="range-card">
-              <strong>Best shown scenario</strong>
-              <p id="profitZoneText">-</p>
-            </div>
-            <div class="range-card">
-              <strong>Worst shown scenario</strong>
-              <p id="lossZoneText">-</p>
-            </div>
-            <div class="range-card">
-              <strong>Heatmap scale</strong>
-              <p id="gradientZoneText">Green cells are profitable in the shown lifecycle range. Red cells lose money. Pale cells are near break-even.</p>
-            </div>
-          </div>
-        </div>
       </section>
     </section>
   </main>
@@ -826,11 +736,6 @@
       cashFlowDetail: document.getElementById('cashFlowDetail'),
       scenarioPnlValue: document.getElementById('scenarioPnlValue'),
       scenarioPnlDetail: document.getElementById('scenarioPnlDetail'),
-      legsTableBody: document.getElementById('legsTableBody'),
-      legsKicker: document.getElementById('legsKicker'),
-      profitZoneText: document.getElementById('profitZoneText'),
-      lossZoneText: document.getElementById('lossZoneText'),
-      gradientZoneText: document.getElementById('gradientZoneText'),
       summaryKicker: document.getElementById('summaryKicker'),
       chartTooltip: document.getElementById('chartTooltip')
     };
@@ -1289,51 +1194,68 @@
         return `<optgroup label="${type.toUpperCase()}">${options}</optgroup>`;
       }).join('');
 
-      dom.legList.innerHTML = Array.from({ length: 4 }, (_, index) => {
+      const header = `
+        <div class="leg-table-head" aria-hidden="true">
+          <span>Leg</span>
+          <span>Option</span>
+          <span>Side</span>
+          <span>Type</span>
+          <span>Strike</span>
+          <span>Premium</span>
+          <span>Qty</span>
+          <span>Cash</span>
+        </div>
+      `;
+
+      const rows = Array.from({ length: 4 }, (_, index) => {
         const leg = state.legs[index] || state.legs[0];
         const disabledClass = index >= state.legCount ? ' is-disabled' : '';
         const notional = leg ? (leg.side === 'buy' ? '-' : '+') + formatMoney(leg.premium * leg.quantity * CONTRACT_MULTIPLIER) : '$0';
         return `
-          <div class="leg-card${disabledClass}" data-leg-index="${index}">
-            <div class="leg-head">
-              <div class="leg-title"><span class="leg-dot"></span>Leg ${index + 1}</div>
-              <div class="leg-notional">${escapeHtml(notional)}</div>
+          <div class="leg-row${disabledClass}" data-leg-index="${index}">
+            <div class="leg-cell leg-index">
+              <span class="leg-dot"></span>
+              <span>Leg ${index + 1}</span>
             </div>
-            <div class="leg-fields">
-              <div class="wide">
-                <label for="option-${index}">Option</label>
-                <select id="option-${index}" class="option-select">${optionGroups}</select>
+            <div class="leg-cell">
+              <label class="leg-cell-label" for="option-${index}">Option</label>
+              <select id="option-${index}" class="option-select">${optionGroups}</select>
+            </div>
+            <div class="leg-cell">
+              <span class="leg-cell-label">Side</span>
+              <div class="segmented side-toggle" role="group" aria-label="Leg ${index + 1} side">
+                <button type="button" data-side="buy" aria-pressed="${leg.side === 'buy'}">Buy</button>
+                <button type="button" data-side="sell" aria-pressed="${leg.side === 'sell'}">Sell</button>
               </div>
-              <div>
-                <label>Side</label>
-                <div class="segmented side-toggle" role="group" aria-label="Leg ${index + 1} side">
-                  <button type="button" data-side="buy" aria-pressed="${leg.side === 'buy'}">Buy</button>
-                  <button type="button" data-side="sell" aria-pressed="${leg.side === 'sell'}">Sell</button>
-                </div>
-              </div>
-              <div>
-                <label for="type-${index}">Type</label>
-                <select id="type-${index}" class="type-input">
-                  <option value="call"${leg.type === 'call' ? ' selected' : ''}>Call</option>
-                  <option value="put"${leg.type === 'put' ? ' selected' : ''}>Put</option>
-                </select>
-              </div>
-              <div>
-                <label for="strike-${index}">Strike</label>
-                <input id="strike-${index}" class="strike-input" type="number" min="0.01" step="0.01" value="${leg.strike.toFixed(2)}" />
-              </div>
-              <div>
-                <label for="premium-${index}">Premium</label>
-                <input id="premium-${index}" class="premium-input" type="number" min="0" step="0.01" value="${leg.premium.toFixed(2)}" />
-              </div>
-              <div>
-                <label for="quantity-${index}">Qty</label>
-                <input id="quantity-${index}" class="quantity-input" type="number" min="1" step="1" value="${leg.quantity}" />
-              </div>
+            </div>
+            <div class="leg-cell">
+              <label class="leg-cell-label" for="type-${index}">Type</label>
+              <select id="type-${index}" class="type-input">
+                <option value="call"${leg.type === 'call' ? ' selected' : ''}>Call</option>
+                <option value="put"${leg.type === 'put' ? ' selected' : ''}>Put</option>
+              </select>
+            </div>
+            <div class="leg-cell">
+              <label class="leg-cell-label" for="strike-${index}">Strike</label>
+              <input id="strike-${index}" class="strike-input" type="number" min="0.01" step="0.01" value="${leg.strike.toFixed(2)}" />
+            </div>
+            <div class="leg-cell">
+              <label class="leg-cell-label" for="premium-${index}">Premium</label>
+              <input id="premium-${index}" class="premium-input" type="number" min="0" step="0.01" value="${leg.premium.toFixed(2)}" />
+            </div>
+            <div class="leg-cell">
+              <label class="leg-cell-label" for="quantity-${index}">Qty</label>
+              <input id="quantity-${index}" class="quantity-input" type="number" min="1" step="1" value="${leg.quantity}" />
+            </div>
+            <div class="leg-cell leg-notional">
+              <span class="leg-cell-label">Cash</span>
+              ${escapeHtml(notional)}
             </div>
           </div>
         `;
       }).join('');
+
+      dom.legList.innerHTML = header + rows;
 
       state.legs.forEach((leg, index) => {
         const select = dom.legList.querySelector(`[data-leg-index="${index}"] .option-select`);
@@ -1341,22 +1263,12 @@
       });
     }
 
-    function renderTable(analysis) {
-      dom.legsTableBody.innerHTML = analysis.legs.map((leg, index) => {
-        const cash = (leg.side === 'buy' ? -1 : 1) * leg.premium * leg.quantity * CONTRACT_MULTIPLIER;
-        return `
-          <tr>
-            <td>Leg ${index + 1}</td>
-            <td><span class="side-pill ${leg.side}">${leg.side}</span></td>
-            <td>${leg.type.toUpperCase()}</td>
-            <td class="numeric">${formatPrice(leg.strike)}</td>
-            <td class="numeric">${formatPrice(leg.premium)}</td>
-            <td class="numeric">${leg.quantity}</td>
-            <td class="numeric">${formatMoney(cash)}</td>
-          </tr>
-        `;
-      }).join('');
-      dom.legsKicker.textContent = `${analysis.legs.length} active ${analysis.legs.length === 1 ? 'leg' : 'legs'}`;
+    function updateLegCashDisplay(index) {
+      const leg = state.legs[index];
+      const target = dom.legList.querySelector(`[data-leg-index="${index}"] .leg-notional`);
+      if (!leg || !target) return;
+      const notional = (leg.side === 'buy' ? '-' : '+') + formatMoney(leg.premium * leg.quantity * CONTRACT_MULTIPLIER);
+      target.innerHTML = `<span class="leg-cell-label">Cash</span> ${escapeHtml(notional)}`;
     }
 
     function renderSummary(analysis) {
@@ -1365,8 +1277,6 @@
       dom.mapMaxGainDetail.textContent = formatMapScenarioDetail(mapRange.maxScenario);
       dom.mapMaxLossValue.textContent = formatMoney(mapRange.minScenario.pnl);
       dom.mapMaxLossDetail.textContent = formatMapScenarioDetail(mapRange.minScenario);
-      dom.profitZoneText.textContent = `${formatMoney(mapRange.maxScenario.pnl)} at ${formatMapScenarioDetail(mapRange.maxScenario)}`;
-      dom.lossZoneText.textContent = `${formatMoney(mapRange.minScenario.pnl)} at ${formatMapScenarioDetail(mapRange.minScenario)}`;
 
       dom.breakevenValue.textContent = `${formatPrice(mapRange.domain.minPrice)} - ${formatPrice(mapRange.domain.maxPrice)}`;
       dom.breakevenDetail.textContent = `${state.days}d ago to Today, based on current chart bounds.`;
@@ -1385,16 +1295,16 @@
         dom.scenarioPnlValue.textContent = formatMoney(pnl);
         dom.scenarioPnlValue.classList.toggle('profit', pnl >= 0);
         dom.scenarioPnlValue.classList.toggle('loss', pnl < 0);
-        dom.scenarioPnlDetail.textContent = `${timing.when}, held ${formatDays(timing.heldDays)}d, DTE ${formatDays(timing.daysRemaining)}d, ${formatPrice(scenario.price)}.`;
+        const dateText = scenario.date ? `${scenario.date}, ` : '';
+        dom.scenarioPnlDetail.textContent = `${dateText}${timing.when}, held ${formatDays(timing.heldDays)}d, DTE ${formatDays(timing.daysRemaining)}d, ${formatPrice(scenario.price)}.`;
       } else {
         dom.scenarioPnlValue.textContent = '-';
         dom.scenarioPnlValue.classList.remove('profit', 'loss');
-        dom.scenarioPnlDetail.textContent = 'Click a point to lock a lifecycle scenario.';
+        dom.scenarioPnlDetail.textContent = 'Click a date on the price line to lock a lifecycle scenario.';
       }
 
       dom.chartKicker.textContent = `${state.ticker}, ${state.days}d ago to Today, entry ${formatPrice(state.spot)}, today ${formatPrice(state.currentSpot)}`;
       dom.summaryKicker.textContent = `IV ${formatPercent(state.iv)}, rate ${formatPercent(state.rate)}`;
-      dom.gradientZoneText.textContent = 'Green cells are estimated profitable. Red cells are estimated losing. Pale cells are near break-even.';
     }
 
     function lifecyclePricePoints() {
@@ -1487,18 +1397,40 @@
       };
     }
 
+    function nearestHistoryPoint(elapsedDays) {
+      const points = lifecyclePricePoints();
+      if (!points.length) return null;
+      return points.reduce((nearest, point) => (
+        Math.abs(point.elapsedDays - elapsedDays) < Math.abs(nearest.elapsedDays - elapsedDays) ? point : nearest
+      ), points[0]);
+    }
+
     function scenarioFromCanvasEvent(event, analysis = analyzeStrategy()) {
       const canvasRect = dom.payoffCanvas.getBoundingClientRect();
       const metrics = chartMetrics(analysis);
       const localX = event.clientX - canvasRect.left;
       const localY = event.clientY - canvasRect.top;
       const plotX = clamp(localX - metrics.padding.left, 0, metrics.chartWidth);
-      const plotY = clamp(localY - metrics.padding.top, 0, metrics.chartHeight);
       const elapsedDays = (plotX / metrics.chartWidth) * state.days;
+      const historyPoint = nearestHistoryPoint(elapsedDays);
+      if (historyPoint) {
+        const daysRemaining = Math.max(state.days - historyPoint.elapsedDays, 0);
+        const pnl = scenarioPnlAt(historyPoint.price, daysRemaining, analysis.legs);
+        return {
+          elapsedDays: historyPoint.elapsedDays,
+          daysRemaining,
+          price: historyPoint.price,
+          pnl,
+          date: historyPoint.date,
+          source: 'history'
+        };
+      }
+
+      const plotY = clamp(localY - metrics.padding.top, 0, metrics.chartHeight);
       const daysRemaining = Math.max(state.days - elapsedDays, 0);
       const price = metrics.maxPrice - (plotY / metrics.chartHeight) * (metrics.maxPrice - metrics.minPrice);
       const pnl = scenarioPnlAt(price, daysRemaining, analysis.legs);
-      return { elapsedDays, daysRemaining, price, pnl };
+      return { elapsedDays, daysRemaining, price, pnl, source: 'free' };
     }
 
     function markerPosition(scenario, metrics) {
@@ -1748,12 +1680,18 @@
 
     function renderChartTooltip(event, scenario) {
       const containerRect = dom.payoffCanvas.parentElement.getBoundingClientRect();
-      const left = clamp(event.clientX - containerRect.left + 14, 8, containerRect.width - 210);
-      const top = clamp(event.clientY - containerRect.top, 36, containerRect.height - 36);
+      const metrics = chartMetrics(analyzeStrategy());
+      const marker = markerPosition(scenario, metrics);
+      const anchorX = scenario.source === 'history' ? marker.x : event.clientX - containerRect.left;
+      const anchorY = scenario.source === 'history' ? marker.y : event.clientY - containerRect.top;
+      const left = clamp(anchorX + 14, 8, containerRect.width - 210);
+      const top = clamp(anchorY, 36, containerRect.height - 36);
       const timing = formatScenarioTiming(scenario);
+      const dateRow = scenario.date ? `<dt>Date</dt><dd>${escapeHtml(scenario.date)}</dd>` : '';
       dom.chartTooltip.innerHTML = `
         <strong>${formatMoney(scenario.pnl)}</strong>
         <dl>
+          ${dateRow}
           <dt>When</dt><dd>${timing.when}</dd>
           <dt>Held</dt><dd>${formatDays(timing.heldDays)}d</dd>
           <dt>DTE</dt><dd>${formatDays(timing.daysRemaining)}d</dd>
@@ -1775,7 +1713,6 @@
       if (rerenderLegs) renderLegEditors();
       const analysis = analyzeStrategy();
       renderSummary(analysis);
-      renderTable(analysis);
       drawChart(analysis);
     }
 
@@ -1919,18 +1856,38 @@
     dom.legList.addEventListener('click', (event) => {
       const sideButton = event.target.closest('button[data-side]');
       if (!sideButton) return;
-      const card = sideButton.closest('.leg-card');
-      const index = Number(card.dataset.legIndex);
+      const row = sideButton.closest('[data-leg-index]');
+      if (!row) return;
+      const index = Number(row.dataset.legIndex);
       updateLegFromField(index, 'side', sideButton.dataset.side);
       markCustomStrategy();
       saveSettings();
       renderAll({ rerenderLegs: true });
     });
 
+    dom.legList.addEventListener('input', (event) => {
+      const row = event.target.closest('[data-leg-index]');
+      if (!row) return;
+      const index = Number(row.dataset.legIndex);
+      if (event.target.classList.contains('strike-input')) {
+        updateLegFromField(index, 'strike', event.target.value);
+      } else if (event.target.classList.contains('premium-input')) {
+        updateLegFromField(index, 'premium', event.target.value);
+      } else if (event.target.classList.contains('quantity-input')) {
+        updateLegFromField(index, 'quantity', event.target.value);
+      } else {
+        return;
+      }
+      markCustomStrategy();
+      saveSettings();
+      updateLegCashDisplay(index);
+      renderAll();
+    });
+
     dom.legList.addEventListener('change', (event) => {
-      const card = event.target.closest('.leg-card');
-      if (!card) return;
-      const index = Number(card.dataset.legIndex);
+      const row = event.target.closest('[data-leg-index]');
+      if (!row) return;
+      const index = Number(row.dataset.legIndex);
       if (event.target.classList.contains('option-select')) {
         updateLegFromOption(index, event.target.value);
       } else if (event.target.classList.contains('type-input')) {
