@@ -1,0 +1,1531 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Option Strategy Lab</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="../static/css/base.css" />
+  <link rel="stylesheet" href="../static/css/cards.css" />
+  <link rel="stylesheet" href="../static/css/forms.css" />
+  <link rel="stylesheet" href="../static/css/stock-tools.css" />
+  <style>
+    :root {
+      --profit: #0e9e5c;
+      --profit-soft: rgba(14, 158, 92, 0.16);
+      --loss: #df2b20;
+      --loss-soft: rgba(223, 43, 32, 0.16);
+      --neutral: #f4f4f5;
+      --grid: #e4e9ed;
+      --line: #18181b;
+    }
+
+    body {
+      padding: 2rem 1.5rem;
+    }
+
+    .actions-wrapper {
+      max-width: min(1500px, calc(100vw - 48px));
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: end;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .header-note {
+      text-align: right;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+      max-width: 310px;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      padding: 18px;
+    }
+
+    .form-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex-grow: 1;
+    }
+
+    .inline-fields {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .ticker-input {
+      text-transform: uppercase;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 10px;
+    }
+
+    .status {
+      min-height: 40px;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      background: #f4f4f5;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      line-height: 1.35;
+      padding: 8px 12px;
+      overflow-wrap: anywhere;
+      display: flex;
+      align-items: center;
+    }
+
+    .status strong {
+      color: var(--text-primary);
+    }
+
+    .status.error {
+      border-color: #fca5a5;
+      background: #fef2f2;
+      color: #b91c1c;
+    }
+
+    .btn.action-button {
+      min-height: 40px;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    .preset-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .preset-button {
+      min-height: 36px;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      background: #ffffff;
+      color: var(--text-secondary);
+      font: inherit;
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1.15;
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      text-align: center;
+    }
+
+    .preset-button:hover {
+      border-color: #a1a1aa;
+      color: var(--text-primary);
+      background: #ffffff;
+    }
+
+    .preset-button[aria-pressed="true"] {
+      border-color: var(--text-primary);
+      background: var(--text-primary);
+      color: #ffffff;
+    }
+
+    .leg-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .leg-card {
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 12px;
+      background: #f4f4f5;
+    }
+
+    .leg-card.is-disabled {
+      display: none;
+    }
+
+    .leg-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .leg-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .leg-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+    }
+
+    .leg-card:nth-child(2) .leg-dot {
+      background: #1c6f9e;
+    }
+
+    .leg-card:nth-child(3) .leg-dot {
+      background: #b77b24;
+    }
+
+    .leg-card:nth-child(4) .leg-dot {
+      background: #7c3aed;
+    }
+
+    .leg-notional {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .leg-fields {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .leg-fields .wide {
+      grid-column: 1 / -1;
+    }
+
+    .leg-fields label {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text-muted);
+      font-size: 0.74rem;
+      font-weight: 600;
+    }
+
+    .side-toggle {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding: 3px;
+      gap: 3px;
+    }
+
+    .dashboard .pe-card {
+      margin-bottom: -1px;
+    }
+
+    .panel-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 0 12px;
+    }
+
+    .panel-title h2 {
+      margin: 0;
+      color: var(--text-primary);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .panel-kicker {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .chart-panel {
+      position: relative;
+    }
+
+    .canvas-container {
+      position: relative;
+      width: 100%;
+      height: 430px;
+      background: #ffffff;
+    }
+
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin-top: 12px;
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-swatch {
+      width: 18px;
+      height: 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-light);
+    }
+
+    .legend-swatch.gradient {
+      background: linear-gradient(90deg, rgba(223, 43, 32, 0.55), #f4f4f5, rgba(14, 158, 92, 0.55));
+    }
+
+    .legend-swatch.max-profit {
+      background: var(--profit-soft);
+      border-color: rgba(14, 158, 92, 0.35);
+    }
+
+    .legend-swatch.max-loss {
+      background: var(--loss-soft);
+      border-color: rgba(223, 43, 32, 0.35);
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .stat-card {
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 12px;
+      background: #f4f4f5;
+      min-width: 0;
+    }
+
+    .stat-label {
+      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-size: 0.73rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .stat-value {
+      color: var(--text-primary);
+      font-size: 1.1rem;
+      font-weight: 800;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+    }
+
+    .stat-value.profit {
+      color: var(--profit);
+    }
+
+    .stat-value.loss {
+      color: var(--loss);
+    }
+
+    .stat-detail {
+      margin-top: 8px;
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .table-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .table-panel > * {
+      min-width: 0;
+    }
+
+    .table-scroll-wrapper {
+      max-height: 320px;
+      overflow-x: auto;
+    }
+
+    .numeric {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .side-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .side-pill.buy {
+      background: rgba(14, 158, 92, 0.12);
+      color: var(--profit);
+    }
+
+    .side-pill.sell {
+      background: rgba(223, 43, 32, 0.12);
+      color: var(--loss);
+    }
+
+    .range-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .range-card {
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 12px;
+      background: #f4f4f5;
+    }
+
+    .range-card strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--text-primary);
+      font-size: 0.85rem;
+    }
+
+    .range-card p {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 1180px) {
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .table-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 992px) {
+      body {
+        padding: 1rem;
+      }
+
+      header {
+        grid-template-columns: 1fr;
+      }
+
+      .header-note {
+        max-width: none;
+        text-align: left;
+      }
+
+      .canvas-container {
+        height: 360px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .inline-fields,
+      .leg-fields,
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .preset-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .actions {
+        grid-template-columns: 1fr;
+      }
+
+      .btn.action-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions-wrapper">
+    <a href="../index.html" class="btn-back">&larr; Back to portal</a>
+  </div>
+
+  <main>
+    <header>
+      <div>
+        <h1>Option Strategy Lab</h1>
+        <p class="subtitle">Build 1, 2, or 4 leg option strategies and inspect expiry payoff zones.</p>
+      </div>
+      <div class="header-note">
+        Educational model. Ticker price is loaded from Yahoo chart data when available; option premiums are estimated from spot, IV, rate, and days to expiry.
+      </div>
+    </header>
+
+    <section class="top-grid">
+      <aside class="controls backtest-card">
+        <div class="form-grid">
+          <div class="inline-fields">
+            <div class="field">
+              <label for="tickerInput">Ticker</label>
+              <input id="tickerInput" class="ticker-input" type="text" value="SPY" autocomplete="off" spellcheck="false" />
+            </div>
+            <div class="field">
+              <label for="spotInput">Spot Price</label>
+              <input id="spotInput" type="number" min="1" step="0.01" value="500" />
+            </div>
+          </div>
+
+          <div class="inline-fields">
+            <div class="field">
+              <label for="expirySelect">Expiry</label>
+              <select id="expirySelect">
+                <option value="30">30 days</option>
+                <option value="45" selected>45 days</option>
+                <option value="60">60 days</option>
+                <option value="90">90 days</option>
+                <option value="180">180 days</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="strikeStepSelect">Strike Step</label>
+              <select id="strikeStepSelect">
+                <option value="auto" selected>Auto</option>
+                <option value="1">$1</option>
+                <option value="2.5">$2.50</option>
+                <option value="5">$5</option>
+                <option value="10">$10</option>
+                <option value="25">$25</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="inline-fields">
+            <div class="field">
+              <label for="ivInput">Implied Vol <output id="ivOutput">28%</output></label>
+              <input id="ivInput" type="range" min="5" max="120" step="1" value="28" />
+            </div>
+            <div class="field">
+              <label for="rateInput">Risk Free <output id="rateOutput">4.5%</output></label>
+              <input id="rateInput" type="range" min="0" max="8" step="0.1" value="4.5" />
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>Popular Strategies</legend>
+            <div class="preset-grid" id="presetGrid" role="group" aria-label="Popular option strategy presets">
+              <button class="preset-button" type="button" data-preset="longCall" aria-pressed="false">Long Call</button>
+              <button class="preset-button" type="button" data-preset="longPut" aria-pressed="false">Long Put</button>
+              <button class="preset-button" type="button" data-preset="shortPut" aria-pressed="false">Short Put</button>
+              <button class="preset-button" type="button" data-preset="bullCallSpread" aria-pressed="true">Bull Call</button>
+              <button class="preset-button" type="button" data-preset="bullCallSpreadItm" aria-pressed="false">Bull Call ITM</button>
+              <button class="preset-button" type="button" data-preset="bullPutSpread" aria-pressed="false">Bull Put</button>
+              <button class="preset-button" type="button" data-preset="bullPutSpreadItm" aria-pressed="false">Bull Put ITM</button>
+              <button class="preset-button" type="button" data-preset="bearPutSpread" aria-pressed="false">Bear Put</button>
+              <button class="preset-button" type="button" data-preset="bearPutSpreadItm" aria-pressed="false">Bear Put ITM</button>
+              <button class="preset-button" type="button" data-preset="bearCallSpread" aria-pressed="false">Bear Call</button>
+              <button class="preset-button" type="button" data-preset="bearCallSpreadItm" aria-pressed="false">Bear Call ITM</button>
+              <button class="preset-button" type="button" data-preset="longStraddle" aria-pressed="false">Straddle</button>
+              <button class="preset-button" type="button" data-preset="shortStrangle" aria-pressed="false">Strangle</button>
+              <button class="preset-button" type="button" data-preset="ironCondor" aria-pressed="false">Iron Condor</button>
+              <button class="preset-button" type="button" data-preset="ironButterfly" aria-pressed="false">Iron Fly</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Strategy Legs</legend>
+            <div class="segmented" id="legCountControl" role="group" aria-label="Strategy leg count">
+              <button type="button" data-count="1" aria-pressed="false">1 Leg</button>
+              <button type="button" data-count="2" aria-pressed="true">2 Legs</button>
+              <button type="button" data-count="4" aria-pressed="false">4 Legs</button>
+            </div>
+          </fieldset>
+
+          <div class="leg-list" id="legList"></div>
+
+          <div class="actions">
+            <div class="status" id="statusBox">Ready with an estimated SPY option chain.</div>
+            <button class="btn btn-primary action-button" id="loadTickerButton" type="button">Load Ticker</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="dashboard">
+        <div class="pe-card chart-panel">
+          <div class="panel-title">
+            <h2>Expiry Payoff</h2>
+            <div class="panel-kicker" id="chartKicker">SPY, 45 days</div>
+          </div>
+          <div class="canvas-container">
+            <canvas id="payoffCanvas" aria-label="Option strategy expiry payoff chart"></canvas>
+          </div>
+          <div class="chart-legend" aria-label="Chart legend">
+            <span class="legend-item"><span class="legend-swatch gradient"></span>Loss to profit gradient</span>
+            <span class="legend-item"><span class="legend-swatch max-profit"></span>Maximum profit zone</span>
+            <span class="legend-item"><span class="legend-swatch max-loss"></span>Maximum loss zone</span>
+          </div>
+        </div>
+
+        <div class="pe-card">
+          <div class="panel-title">
+            <h2>Strategy Summary</h2>
+            <div class="panel-kicker" id="summaryKicker">1 contract = 100 shares</div>
+          </div>
+          <div class="summary-grid">
+            <div class="stat-card">
+              <div class="stat-label">Max Profit</div>
+              <div class="stat-value profit" id="maxProfitValue">$0</div>
+              <div class="stat-detail" id="maxProfitRange">-</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Max Loss</div>
+              <div class="stat-value loss" id="maxLossValue">$0</div>
+              <div class="stat-detail" id="maxLossRange">-</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Break Even</div>
+              <div class="stat-value" id="breakevenValue">-</div>
+              <div class="stat-detail" id="breakevenDetail">Where total P/L crosses $0.</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Entry Cash Flow</div>
+              <div class="stat-value" id="cashFlowValue">$0</div>
+              <div class="stat-detail" id="cashFlowDetail">Debit paid or credit received to open.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pe-card table-panel">
+          <div>
+            <div class="panel-title">
+              <h2>Active Legs</h2>
+              <div class="panel-kicker" id="legsKicker">Editable contracts</div>
+            </div>
+            <div class="table-scroll-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Leg</th>
+                    <th>Side</th>
+                    <th>Type</th>
+                    <th class="numeric">Strike</th>
+                    <th class="numeric">Premium</th>
+                    <th class="numeric">Qty</th>
+                    <th class="numeric">Cash</th>
+                  </tr>
+                </thead>
+                <tbody id="legsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="range-list">
+            <div class="range-card">
+              <strong>Profit zone</strong>
+              <p id="profitZoneText">-</p>
+            </div>
+            <div class="range-card">
+              <strong>Loss zone</strong>
+              <p id="lossZoneText">-</p>
+            </div>
+            <div class="range-card">
+              <strong>Gradient zone</strong>
+              <p id="gradientZoneText">Green areas are profitable at expiry. Red areas lose money. Pale bands are near break-even.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="../static/js/stock-utils.js"></script>
+  <script>
+    const {
+      escapeHtml,
+      fetchText,
+      parseYahooPayload,
+      yahooChartUrl,
+      yahooProxyChartUrl
+    } = window.StockTools;
+
+    const CONTRACT_MULTIPLIER = 100;
+    const EPSILON = 0.000001;
+    const PRESET_DEFINITIONS = {
+      longCall: { label: 'Long Call', count: 1 },
+      longPut: { label: 'Long Put', count: 1 },
+      shortPut: { label: 'Short Put', count: 1 },
+      bullCallSpread: { label: 'Bull Call Spread', count: 2 },
+      bullCallSpreadItm: { label: 'ITM Bull Call Spread', count: 2 },
+      bullPutSpread: { label: 'Bull Put Spread', count: 2 },
+      bullPutSpreadItm: { label: 'ITM Bull Put Spread', count: 2 },
+      bearPutSpread: { label: 'Bear Put Spread', count: 2 },
+      bearPutSpreadItm: { label: 'ITM Bear Put Spread', count: 2 },
+      bearCallSpread: { label: 'Bear Call Spread', count: 2 },
+      bearCallSpreadItm: { label: 'ITM Bear Call Spread', count: 2 },
+      longStraddle: { label: 'Long Straddle', count: 2 },
+      shortStrangle: { label: 'Short Strangle', count: 2 },
+      ironCondor: { label: 'Iron Condor', count: 4 },
+      ironButterfly: { label: 'Iron Butterfly', count: 4 }
+    };
+
+    const dom = {
+      tickerInput: document.getElementById('tickerInput'),
+      spotInput: document.getElementById('spotInput'),
+      expirySelect: document.getElementById('expirySelect'),
+      strikeStepSelect: document.getElementById('strikeStepSelect'),
+      ivInput: document.getElementById('ivInput'),
+      ivOutput: document.getElementById('ivOutput'),
+      rateInput: document.getElementById('rateInput'),
+      rateOutput: document.getElementById('rateOutput'),
+      presetGrid: document.getElementById('presetGrid'),
+      legCountControl: document.getElementById('legCountControl'),
+      legList: document.getElementById('legList'),
+      loadTickerButton: document.getElementById('loadTickerButton'),
+      statusBox: document.getElementById('statusBox'),
+      payoffCanvas: document.getElementById('payoffCanvas'),
+      chartKicker: document.getElementById('chartKicker'),
+      maxProfitValue: document.getElementById('maxProfitValue'),
+      maxProfitRange: document.getElementById('maxProfitRange'),
+      maxLossValue: document.getElementById('maxLossValue'),
+      maxLossRange: document.getElementById('maxLossRange'),
+      breakevenValue: document.getElementById('breakevenValue'),
+      breakevenDetail: document.getElementById('breakevenDetail'),
+      cashFlowValue: document.getElementById('cashFlowValue'),
+      cashFlowDetail: document.getElementById('cashFlowDetail'),
+      legsTableBody: document.getElementById('legsTableBody'),
+      legsKicker: document.getElementById('legsKicker'),
+      profitZoneText: document.getElementById('profitZoneText'),
+      lossZoneText: document.getElementById('lossZoneText'),
+      gradientZoneText: document.getElementById('gradientZoneText'),
+      summaryKicker: document.getElementById('summaryKicker')
+    };
+
+    const state = {
+      ticker: 'SPY',
+      spot: 500,
+      iv: 0.28,
+      rate: 0.045,
+      days: 45,
+      legCount: 2,
+      preset: 'bullCallSpread',
+      chain: [],
+      legs: []
+    };
+
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function formatMoney(value, options = {}) {
+      if (!Number.isFinite(value)) return 'Unlimited';
+      const absValue = Math.abs(value);
+      const decimals = absValue >= 1000 ? 0 : 2;
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: options.decimals ?? decimals,
+        minimumFractionDigits: options.decimals ?? decimals
+      }).format(value);
+    }
+
+    function formatPrice(value) {
+      if (!Number.isFinite(value)) return '-';
+      return `$${Number(value).toFixed(2)}`;
+    }
+
+    function formatPercent(value) {
+      return `${(value * 100).toFixed(1)}%`;
+    }
+
+    function setStatus(message, isError = false) {
+      dom.statusBox.innerHTML = message;
+      dom.statusBox.classList.toggle('error', isError);
+    }
+
+    function normalCdf(x) {
+      const sign = x < 0 ? -1 : 1;
+      const absX = Math.abs(x) / Math.sqrt(2);
+      const t = 1 / (1 + 0.3275911 * absX);
+      const erf = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-absX * absX);
+      return 0.5 * (1 + sign * erf);
+    }
+
+    function blackScholes(type, spot, strike, days, rate, volatility) {
+      const time = Math.max(days / 365, 1 / 365);
+      const sigma = Math.max(volatility, 0.01);
+      const sqrtTime = Math.sqrt(time);
+      const d1 = (Math.log(spot / strike) + (rate + 0.5 * sigma * sigma) * time) / (sigma * sqrtTime);
+      const d2 = d1 - sigma * sqrtTime;
+      const discount = Math.exp(-rate * time);
+      const call = spot * normalCdf(d1) - strike * discount * normalCdf(d2);
+      const put = strike * discount * normalCdf(-d2) - spot * normalCdf(-d1);
+      return Math.max(type === 'call' ? call : put, 0.05);
+    }
+
+    function chooseStrikeStep(spot) {
+      if (spot < 25) return 1;
+      if (spot < 75) return 2.5;
+      if (spot < 180) return 5;
+      if (spot < 500) return 10;
+      return 25;
+    }
+
+    function roundToStep(value, step) {
+      return Math.round(value / step) * step;
+    }
+
+    function selectedStrikeStep() {
+      if (dom.strikeStepSelect.value === 'auto') return chooseStrikeStep(state.spot);
+      return Number(dom.strikeStepSelect.value);
+    }
+
+    function generateOptionChain() {
+      const step = selectedStrikeStep();
+      const center = roundToStep(state.spot, step);
+      const strikes = [];
+      for (let offset = -6; offset <= 6; offset += 1) {
+        const strike = Number((center + offset * step).toFixed(2));
+        if (strike > 0) strikes.push(strike);
+      }
+
+      state.chain = [];
+      strikes.forEach((strike) => {
+        ['call', 'put'].forEach((type) => {
+          const premium = blackScholes(type, state.spot, strike, state.days, state.rate, state.iv);
+          state.chain.push({
+            id: `${type}-${strike.toFixed(2)}`,
+            type,
+            strike,
+            premium: Number(premium.toFixed(2))
+          });
+        });
+      });
+      state.chain.sort((a, b) => a.strike - b.strike || a.type.localeCompare(b.type));
+    }
+
+    function findOption(type, targetStrike) {
+      const options = state.chain.filter((option) => option.type === type);
+      return options.reduce((closest, option) => {
+        if (!closest) return option;
+        return Math.abs(option.strike - targetStrike) < Math.abs(closest.strike - targetStrike) ? option : closest;
+      }, null);
+    }
+
+    function optionById(id) {
+      return state.chain.find((option) => option.id === id) || null;
+    }
+
+    function buildLegFromOption(option, side = 'buy') {
+      return {
+        optionId: option.id,
+        side,
+        type: option.type,
+        strike: option.strike,
+        premium: option.premium,
+        quantity: 1
+      };
+    }
+
+    function defaultPresetForCount(count) {
+      if (count === 1) return 'longCall';
+      if (count === 4) return 'ironCondor';
+      return 'bullCallSpread';
+    }
+
+    function syncLegCountButtons() {
+      dom.legCountControl.querySelectorAll('button').forEach((button) => {
+        button.setAttribute('aria-pressed', String(Number(button.dataset.count) === state.legCount));
+      });
+    }
+
+    function syncPresetButtons() {
+      dom.presetGrid.querySelectorAll('button[data-preset]').forEach((button) => {
+        button.setAttribute('aria-pressed', String(button.dataset.preset === state.preset));
+      });
+    }
+
+    function buildPresetLegs(presetId) {
+      const step = selectedStrikeStep();
+      const atm = roundToStep(state.spot, step);
+      const makeLeg = (type, strike, side) => buildLegFromOption(findOption(type, strike), side);
+
+      const presetBuilders = {
+        longCall: () => [
+          makeLeg('call', atm, 'buy')
+        ],
+        longPut: () => [
+          makeLeg('put', atm, 'buy')
+        ],
+        shortPut: () => [
+          makeLeg('put', atm - step, 'sell')
+        ],
+        bullCallSpread: () => [
+          makeLeg('call', atm, 'buy'),
+          makeLeg('call', atm + step, 'sell')
+        ],
+        bullCallSpreadItm: () => [
+          makeLeg('call', atm - step, 'buy'),
+          makeLeg('call', atm, 'sell')
+        ],
+        bullPutSpread: () => [
+          makeLeg('put', atm - step, 'sell'),
+          makeLeg('put', atm - 2 * step, 'buy')
+        ],
+        bullPutSpreadItm: () => [
+          makeLeg('put', atm + step, 'sell'),
+          makeLeg('put', atm, 'buy')
+        ],
+        bearPutSpread: () => [
+          makeLeg('put', atm, 'buy'),
+          makeLeg('put', atm - step, 'sell')
+        ],
+        bearPutSpreadItm: () => [
+          makeLeg('put', atm + step, 'buy'),
+          makeLeg('put', atm, 'sell')
+        ],
+        bearCallSpread: () => [
+          makeLeg('call', atm + step, 'sell'),
+          makeLeg('call', atm + 2 * step, 'buy')
+        ],
+        bearCallSpreadItm: () => [
+          makeLeg('call', atm - step, 'sell'),
+          makeLeg('call', atm, 'buy')
+        ],
+        longStraddle: () => [
+          makeLeg('call', atm, 'buy'),
+          makeLeg('put', atm, 'buy')
+        ],
+        shortStrangle: () => [
+          makeLeg('put', atm - step, 'sell'),
+          makeLeg('call', atm + step, 'sell')
+        ],
+        ironCondor: () => [
+          makeLeg('put', atm - 3 * step, 'buy'),
+          makeLeg('put', atm - 2 * step, 'sell'),
+          makeLeg('call', atm + 2 * step, 'sell'),
+          makeLeg('call', atm + 3 * step, 'buy')
+        ],
+        ironButterfly: () => [
+          makeLeg('put', atm - step, 'buy'),
+          makeLeg('put', atm, 'sell'),
+          makeLeg('call', atm, 'sell'),
+          makeLeg('call', atm + step, 'buy')
+        ]
+      };
+
+      return (presetBuilders[presetId] || presetBuilders[defaultPresetForCount(state.legCount)])();
+    }
+
+    function setPresetLegs(presetId = state.preset || defaultPresetForCount(state.legCount)) {
+      const preset = PRESET_DEFINITIONS[presetId] || PRESET_DEFINITIONS[defaultPresetForCount(state.legCount)];
+      state.preset = presetId in PRESET_DEFINITIONS ? presetId : defaultPresetForCount(state.legCount);
+      state.legCount = preset.count;
+      state.legs = buildPresetLegs(state.preset);
+      syncLegCountButtons();
+      syncPresetButtons();
+    }
+
+    function markCustomStrategy() {
+      state.preset = null;
+      syncPresetButtons();
+    }
+
+    function applyPreset(presetId) {
+      setPresetLegs(presetId);
+      const label = PRESET_DEFINITIONS[state.preset]?.label || 'Strategy';
+      setStatus(`<strong>${escapeHtml(label)}</strong> preset applied with estimated premiums.`);
+      renderAll({ rerenderLegs: true });
+    }
+
+    function activeLegs() {
+      return state.legs.slice(0, state.legCount).filter((leg) => (
+        leg &&
+        Number.isFinite(leg.strike) &&
+        leg.strike > 0 &&
+        Number.isFinite(leg.premium) &&
+        leg.premium >= 0 &&
+        Number.isFinite(leg.quantity) &&
+        leg.quantity > 0
+      ));
+    }
+
+    function payoffAt(price, legs = activeLegs()) {
+      return legs.reduce((total, leg) => {
+        const intrinsic = leg.type === 'call'
+          ? Math.max(price - leg.strike, 0)
+          : Math.max(leg.strike - price, 0);
+        const unitPnl = leg.side === 'buy'
+          ? intrinsic - leg.premium
+          : leg.premium - intrinsic;
+        return total + unitPnl * leg.quantity * CONTRACT_MULTIPLIER;
+      }, 0);
+    }
+
+    function cashFlow(legs = activeLegs()) {
+      return legs.reduce((total, leg) => {
+        const signedPremium = leg.side === 'buy' ? -leg.premium : leg.premium;
+        return total + signedPremium * leg.quantity * CONTRACT_MULTIPLIER;
+      }, 0);
+    }
+
+    function segmentSlope(low, high, legs) {
+      const sampleA = Math.max(low + 0.01, 0.01);
+      const sampleB = Number.isFinite(high) ? Math.max(high - 0.01, sampleA + 1) : sampleA + 1;
+      return payoffAt(sampleB, legs) - payoffAt(sampleA, legs);
+    }
+
+    function uniqueSorted(values) {
+      return [...new Set(values.map((value) => Number(value.toFixed(4))))].sort((a, b) => a - b);
+    }
+
+    function sameMoney(a, b) {
+      return Math.abs(a - b) < 0.01;
+    }
+
+    function describeRegion(region) {
+      if (region.kind === 'point') return `At ${formatPrice(region.price)}`;
+      const start = formatPrice(region.start);
+      const end = Number.isFinite(region.end) ? formatPrice(region.end) : 'higher';
+      if (region.start <= 0 && Number.isFinite(region.end)) return `${start} to ${end}`;
+      if (!Number.isFinite(region.end)) return `${start} and higher`;
+      return `${start} to ${end}`;
+    }
+
+    function describeRegions(regions) {
+      if (!regions.length) return 'No stable interval; the extreme occurs at a boundary.';
+      return regions.slice(0, 3).map(describeRegion).join('; ');
+    }
+
+    function collectExtremeRegions(target, kind, legs, strikes, unlimitedSide) {
+      if (unlimitedSide) {
+        return [{ kind: 'range', start: strikes[strikes.length - 1] || 0, end: Infinity }];
+      }
+
+      const regions = [];
+      const bounds = [0, ...strikes, Infinity];
+      for (let index = 0; index < bounds.length - 1; index += 1) {
+        const start = bounds[index];
+        const end = bounds[index + 1];
+        const slope = segmentSlope(start, end, legs);
+        const value = payoffAt(Number.isFinite(end) ? (start + end) / 2 : start + 1, legs);
+        if (Math.abs(slope) < 0.01 && sameMoney(value, target)) {
+          regions.push({ kind: 'range', start, end });
+        }
+      }
+
+      const pointCandidates = [0, ...strikes];
+      pointCandidates.forEach((price) => {
+        const insideRange = regions.some((region) => (
+          region.kind === 'range' &&
+          price >= region.start - EPSILON &&
+          (Number.isFinite(region.end) ? price <= region.end + EPSILON : true)
+        ));
+        if (!insideRange && sameMoney(payoffAt(price, legs), target)) {
+          regions.push({ kind: 'point', price });
+        }
+      });
+
+      regions.sort((a, b) => (a.start ?? a.price) - (b.start ?? b.price));
+      return regions;
+    }
+
+    function breakevens(legs, strikes) {
+      const points = [];
+      const domainMax = Math.max(state.spot * 2, (strikes[strikes.length - 1] || state.spot) * 1.8);
+      const bounds = uniqueSorted([0, ...strikes, domainMax]);
+
+      for (let index = 0; index < bounds.length - 1; index += 1) {
+        const left = bounds[index];
+        const right = bounds[index + 1];
+        const yLeft = payoffAt(left, legs);
+        const yRight = payoffAt(right, legs);
+        if (sameMoney(yLeft, 0)) points.push(left);
+        if (yLeft === yRight && sameMoney(yLeft, 0)) {
+          points.push(left, right);
+        } else if ((yLeft < 0 && yRight > 0) || (yLeft > 0 && yRight < 0)) {
+          const ratio = Math.abs(yLeft) / (Math.abs(yLeft) + Math.abs(yRight));
+          points.push(left + (right - left) * ratio);
+        }
+      }
+      if (sameMoney(payoffAt(bounds[bounds.length - 1], legs), 0)) points.push(bounds[bounds.length - 1]);
+      return uniqueSorted(points).filter((point) => point >= 0);
+    }
+
+    function analyzeStrategy() {
+      const legs = activeLegs();
+      const strikes = uniqueSorted(legs.map((leg) => leg.strike));
+      const candidates = [0, ...strikes];
+      const values = candidates.map((price) => payoffAt(price, legs));
+      const lastStrike = strikes[strikes.length - 1] || state.spot;
+      const lastSlope = payoffAt(lastStrike + 2, legs) - payoffAt(lastStrike + 1, legs);
+      const maxUnlimited = lastSlope > 0.01;
+      const minUnlimited = lastSlope < -0.01;
+      const finiteMax = Math.max(...values);
+      const finiteMin = Math.min(...values);
+      const maxProfit = maxUnlimited ? Infinity : finiteMax;
+      const maxLoss = minUnlimited ? -Infinity : finiteMin;
+      const maxRegions = collectExtremeRegions(finiteMax, 'max', legs, strikes, maxUnlimited);
+      const minRegions = collectExtremeRegions(finiteMin, 'min', legs, strikes, minUnlimited);
+      const breakEvenPoints = breakevens(legs, strikes);
+
+      return {
+        legs,
+        strikes,
+        maxProfit,
+        maxLoss,
+        maxRegions,
+        minRegions,
+        breakEvenPoints,
+        netCashFlow: cashFlow(legs)
+      };
+    }
+
+    function renderLegEditors() {
+      const optionGroups = ['call', 'put'].map((type) => {
+        const options = state.chain
+          .filter((option) => option.type === type)
+          .map((option) => {
+            const label = `${option.type.toUpperCase()} ${formatPrice(option.strike)} | ${formatPrice(option.premium)}`;
+            return `<option value="${escapeHtml(option.id)}">${escapeHtml(label)}</option>`;
+          }).join('');
+        return `<optgroup label="${type.toUpperCase()}">${options}</optgroup>`;
+      }).join('');
+
+      dom.legList.innerHTML = Array.from({ length: 4 }, (_, index) => {
+        const leg = state.legs[index] || state.legs[0];
+        const disabledClass = index >= state.legCount ? ' is-disabled' : '';
+        const notional = leg ? (leg.side === 'buy' ? '-' : '+') + formatMoney(leg.premium * leg.quantity * CONTRACT_MULTIPLIER) : '$0';
+        return `
+          <div class="leg-card${disabledClass}" data-leg-index="${index}">
+            <div class="leg-head">
+              <div class="leg-title"><span class="leg-dot"></span>Leg ${index + 1}</div>
+              <div class="leg-notional">${escapeHtml(notional)}</div>
+            </div>
+            <div class="leg-fields">
+              <div class="wide">
+                <label for="option-${index}">Option</label>
+                <select id="option-${index}" class="option-select">${optionGroups}</select>
+              </div>
+              <div>
+                <label>Side</label>
+                <div class="segmented side-toggle" role="group" aria-label="Leg ${index + 1} side">
+                  <button type="button" data-side="buy" aria-pressed="${leg.side === 'buy'}">Buy</button>
+                  <button type="button" data-side="sell" aria-pressed="${leg.side === 'sell'}">Sell</button>
+                </div>
+              </div>
+              <div>
+                <label for="type-${index}">Type</label>
+                <select id="type-${index}" class="type-input">
+                  <option value="call"${leg.type === 'call' ? ' selected' : ''}>Call</option>
+                  <option value="put"${leg.type === 'put' ? ' selected' : ''}>Put</option>
+                </select>
+              </div>
+              <div>
+                <label for="strike-${index}">Strike</label>
+                <input id="strike-${index}" class="strike-input" type="number" min="0.01" step="0.01" value="${leg.strike.toFixed(2)}" />
+              </div>
+              <div>
+                <label for="premium-${index}">Premium</label>
+                <input id="premium-${index}" class="premium-input" type="number" min="0" step="0.01" value="${leg.premium.toFixed(2)}" />
+              </div>
+              <div>
+                <label for="quantity-${index}">Qty</label>
+                <input id="quantity-${index}" class="quantity-input" type="number" min="1" step="1" value="${leg.quantity}" />
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      state.legs.forEach((leg, index) => {
+        const select = dom.legList.querySelector(`[data-leg-index="${index}"] .option-select`);
+        if (select && optionById(leg.optionId)) select.value = leg.optionId;
+      });
+    }
+
+    function renderTable(analysis) {
+      dom.legsTableBody.innerHTML = analysis.legs.map((leg, index) => {
+        const cash = (leg.side === 'buy' ? -1 : 1) * leg.premium * leg.quantity * CONTRACT_MULTIPLIER;
+        return `
+          <tr>
+            <td>Leg ${index + 1}</td>
+            <td><span class="side-pill ${leg.side}">${leg.side}</span></td>
+            <td>${leg.type.toUpperCase()}</td>
+            <td class="numeric">${formatPrice(leg.strike)}</td>
+            <td class="numeric">${formatPrice(leg.premium)}</td>
+            <td class="numeric">${leg.quantity}</td>
+            <td class="numeric">${formatMoney(cash)}</td>
+          </tr>
+        `;
+      }).join('');
+      dom.legsKicker.textContent = `${analysis.legs.length} active ${analysis.legs.length === 1 ? 'leg' : 'legs'}`;
+    }
+
+    function renderSummary(analysis) {
+      dom.maxProfitValue.textContent = formatMoney(analysis.maxProfit);
+      dom.maxLossValue.textContent = formatMoney(analysis.maxLoss);
+      dom.maxProfitRange.textContent = describeRegions(analysis.maxRegions);
+      dom.maxLossRange.textContent = describeRegions(analysis.minRegions);
+      dom.profitZoneText.textContent = describeRegions(analysis.maxRegions);
+      dom.lossZoneText.textContent = describeRegions(analysis.minRegions);
+
+      if (analysis.breakEvenPoints.length) {
+        dom.breakevenValue.textContent = analysis.breakEvenPoints.map(formatPrice).join(', ');
+        dom.breakevenDetail.textContent = `${analysis.breakEvenPoints.length} crossing ${analysis.breakEvenPoints.length === 1 ? 'point' : 'points'} at expiry.`;
+      } else {
+        dom.breakevenValue.textContent = 'None';
+        dom.breakevenDetail.textContent = 'The configured legs do not cross $0 in the modeled range.';
+      }
+
+      dom.cashFlowValue.textContent = formatMoney(analysis.netCashFlow);
+      dom.cashFlowDetail.textContent = analysis.netCashFlow < 0
+        ? 'Net debit paid to open.'
+        : analysis.netCashFlow > 0
+          ? 'Net credit received to open.'
+          : 'No net premium at entry.';
+
+      dom.chartKicker.textContent = `${state.ticker}, ${state.days} days, spot ${formatPrice(state.spot)}`;
+      dom.summaryKicker.textContent = `IV ${formatPercent(state.iv)}, rate ${formatPercent(state.rate)}`;
+      dom.gradientZoneText.textContent = 'Green areas are profitable at expiry. Red areas lose money. Pale bands are near break-even.';
+    }
+
+    function regionToDomain(region, fallbackEnd) {
+      if (region.kind === 'point') return { start: region.price, end: region.price };
+      return { start: region.start, end: Number.isFinite(region.end) ? region.end : fallbackEnd };
+    }
+
+    function drawChart(analysis) {
+      const canvas = dom.payoffCanvas;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.max(1, Math.floor(rect.width * dpr));
+      canvas.height = Math.max(1, Math.floor(rect.height * dpr));
+      const ctx = canvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      const width = rect.width;
+      const height = rect.height;
+      const padding = { top: 22, right: 28, bottom: 42, left: 72 };
+      const chartWidth = width - padding.left - padding.right;
+      const chartHeight = height - padding.top - padding.bottom;
+      const strikes = analysis.strikes.length ? analysis.strikes : [state.spot];
+      const minStrike = strikes[0];
+      const maxStrike = strikes[strikes.length - 1];
+      const minX = Math.max(0, Math.min(minStrike * 0.75, state.spot * 0.65));
+      const maxX = Math.max(maxStrike * 1.28, state.spot * 1.45, minX + 10);
+      const pointCount = 420;
+      const points = Array.from({ length: pointCount }, (_, index) => {
+        const x = minX + (index / (pointCount - 1)) * (maxX - minX);
+        return { price: x, pnl: payoffAt(x, analysis.legs) };
+      });
+      const rawMinY = Math.min(0, ...points.map((point) => point.pnl));
+      const rawMaxY = Math.max(0, ...points.map((point) => point.pnl));
+      const yPad = Math.max((rawMaxY - rawMinY) * 0.14, 100);
+      const minY = rawMinY - yPad;
+      const maxY = rawMaxY + yPad;
+
+      const xToPx = (value) => padding.left + ((value - minX) / (maxX - minX)) * chartWidth;
+      const yToPx = (value) => padding.top + (1 - ((value - minY) / (maxY - minY))) * chartHeight;
+
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, width, height);
+
+      const maxAbs = Math.max(Math.abs(rawMinY), Math.abs(rawMaxY), 1);
+      for (let px = 0; px < chartWidth; px += 2) {
+        const price = minX + (px / chartWidth) * (maxX - minX);
+        const pnl = payoffAt(price, analysis.legs);
+        const intensity = clamp(Math.abs(pnl) / maxAbs, 0.08, 0.55);
+        if (pnl >= 0) {
+          ctx.fillStyle = `rgba(14, 158, 92, ${intensity})`;
+        } else {
+          ctx.fillStyle = `rgba(223, 43, 32, ${intensity})`;
+        }
+        ctx.fillRect(padding.left + px, padding.top, 2, chartHeight);
+      }
+
+      function fillRegions(regions, color) {
+        regions.forEach((region) => {
+          const domain = regionToDomain(region, maxX);
+          const start = clamp(domain.start, minX, maxX);
+          const end = clamp(domain.end, minX, maxX);
+          const startPx = xToPx(start);
+          const endPx = xToPx(end);
+          ctx.fillStyle = color;
+          if (Math.abs(endPx - startPx) < 3) {
+            ctx.fillRect(startPx - 2, padding.top, 4, chartHeight);
+          } else {
+            ctx.fillRect(startPx, padding.top, endPx - startPx, chartHeight);
+          }
+        });
+      }
+
+      fillRegions(analysis.minRegions, 'rgba(223, 43, 32, 0.18)');
+      fillRegions(analysis.maxRegions, 'rgba(14, 158, 92, 0.18)');
+
+      ctx.strokeStyle = '#e4e9ed';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = '#71717a';
+      ctx.font = '12px Inter, sans-serif';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+
+      const gridLines = 5;
+      for (let index = 0; index <= gridLines; index += 1) {
+        const value = minY + (index / gridLines) * (maxY - minY);
+        const y = yToPx(value);
+        ctx.beginPath();
+        ctx.moveTo(padding.left, y);
+        ctx.lineTo(width - padding.right, y);
+        ctx.stroke();
+        ctx.fillText(formatMoney(value, { decimals: 0 }), padding.left - 10, y);
+      }
+
+      const zeroY = yToPx(0);
+      ctx.strokeStyle = '#18181b';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(padding.left, zeroY);
+      ctx.lineTo(width - padding.right, zeroY);
+      ctx.stroke();
+
+      analysis.strikes.forEach((strike) => {
+        if (strike < minX || strike > maxX) return;
+        const x = xToPx(strike);
+        ctx.strokeStyle = 'rgba(24, 24, 27, 0.12)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(x, padding.top);
+        ctx.lineTo(x, height - padding.bottom);
+        ctx.stroke();
+      });
+
+      if (state.spot >= minX && state.spot <= maxX) {
+        const spotX = xToPx(state.spot);
+        ctx.strokeStyle = '#1c6f9e';
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([5, 5]);
+        ctx.beginPath();
+        ctx.moveTo(spotX, padding.top);
+        ctx.lineTo(spotX, height - padding.bottom);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = '#1c6f9e';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.fillText('Spot', spotX, height - padding.bottom + 8);
+      }
+
+      ctx.strokeStyle = '#18181b';
+      ctx.lineWidth = 2.4;
+      ctx.beginPath();
+      points.forEach((point, index) => {
+        const x = xToPx(point.price);
+        const y = yToPx(point.pnl);
+        if (index === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+
+      ctx.fillStyle = '#71717a';
+      ctx.font = '12px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      const xLabels = 5;
+      for (let index = 0; index <= xLabels; index += 1) {
+        const price = minX + (index / xLabels) * (maxX - minX);
+        ctx.fillText(formatPrice(price), xToPx(price), height - padding.bottom + 24);
+      }
+    }
+
+    function renderAll({ rerenderLegs = false } = {}) {
+      dom.ivOutput.textContent = `${Math.round(state.iv * 100)}%`;
+      dom.rateOutput.textContent = formatPercent(state.rate);
+      if (rerenderLegs) renderLegEditors();
+      const analysis = analyzeStrategy();
+      renderSummary(analysis);
+      renderTable(analysis);
+      drawChart(analysis);
+    }
+
+    function syncStateFromControls() {
+      state.ticker = dom.tickerInput.value.trim().toUpperCase() || 'SPY';
+      state.spot = Math.max(Number(dom.spotInput.value) || 1, 1);
+      state.days = Number(dom.expirySelect.value);
+      state.iv = Number(dom.ivInput.value) / 100;
+      state.rate = Number(dom.rateInput.value) / 100;
+    }
+
+    function updateLegFromOption(index, optionId) {
+      const option = optionById(optionId);
+      if (!option || !state.legs[index]) return;
+      state.legs[index] = {
+        ...state.legs[index],
+        optionId: option.id,
+        type: option.type,
+        strike: option.strike,
+        premium: option.premium
+      };
+    }
+
+    function updateLegFromField(index, field, value) {
+      const leg = state.legs[index];
+      if (!leg) return;
+      if (field === 'side') leg.side = value;
+      if (field === 'type') leg.type = value;
+      if (field === 'strike') leg.strike = Math.max(Number(value) || 0.01, 0.01);
+      if (field === 'premium') leg.premium = Math.max(Number(value) || 0, 0);
+      if (field === 'quantity') leg.quantity = Math.max(Math.round(Number(value) || 1), 1);
+      leg.optionId = `${leg.type}-${Number(leg.strike).toFixed(2)}`;
+    }
+
+    async function loadTickerPrice() {
+      syncStateFromControls();
+      setStatus(`Loading ${escapeHtml(state.ticker)} reference price...`);
+      dom.loadTickerButton.disabled = true;
+      const urls = [
+        yahooChartUrl(state.ticker, '1mo'),
+        yahooProxyChartUrl(state.ticker, '1mo')
+      ];
+
+      let lastError = null;
+      for (const url of urls) {
+        try {
+          const text = await fetchText(url);
+          const prices = parseYahooPayload(text, state.ticker);
+          const latest = prices[prices.length - 1];
+          state.spot = latest.price;
+          dom.spotInput.value = latest.price.toFixed(2);
+          generateOptionChain();
+          setPresetLegs();
+          setStatus(`<strong>${escapeHtml(state.ticker)}</strong> loaded at ${formatPrice(state.spot)} from ${escapeHtml(latest.date)}. Premiums are estimated for learning.`);
+          renderAll({ rerenderLegs: true });
+          dom.loadTickerButton.disabled = false;
+          return;
+        } catch (error) {
+          lastError = error;
+        }
+      }
+
+      generateOptionChain();
+      setPresetLegs();
+      setStatus(`Could not load live price for ${escapeHtml(state.ticker)}. Using manual spot ${formatPrice(state.spot)}. ${escapeHtml(lastError?.message || '')}`, true);
+      renderAll({ rerenderLegs: true });
+      dom.loadTickerButton.disabled = false;
+    }
+
+    dom.loadTickerButton.addEventListener('click', loadTickerPrice);
+
+    dom.presetGrid.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-preset]');
+      if (!button) return;
+      applyPreset(button.dataset.preset);
+    });
+
+    dom.tickerInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') loadTickerPrice();
+    });
+
+    dom.spotInput.addEventListener('change', () => {
+      syncStateFromControls();
+      generateOptionChain();
+      setPresetLegs();
+      setStatus(`Using manual ${escapeHtml(state.ticker)} spot ${formatPrice(state.spot)} with estimated premiums.`);
+      renderAll({ rerenderLegs: true });
+    });
+
+    [dom.expirySelect, dom.strikeStepSelect].forEach((element) => {
+      element.addEventListener('change', () => {
+        syncStateFromControls();
+        generateOptionChain();
+        setPresetLegs();
+        renderAll({ rerenderLegs: true });
+      });
+    });
+
+    [dom.ivInput, dom.rateInput].forEach((element) => {
+      element.addEventListener('input', () => {
+        syncStateFromControls();
+        generateOptionChain();
+        setPresetLegs();
+        renderAll({ rerenderLegs: true });
+      });
+    });
+
+    dom.legCountControl.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-count]');
+      if (!button) return;
+      const nextCount = Number(button.dataset.count);
+      setPresetLegs(defaultPresetForCount(nextCount));
+      renderAll({ rerenderLegs: true });
+    });
+
+    dom.legList.addEventListener('click', (event) => {
+      const sideButton = event.target.closest('button[data-side]');
+      if (!sideButton) return;
+      const card = sideButton.closest('.leg-card');
+      const index = Number(card.dataset.legIndex);
+      updateLegFromField(index, 'side', sideButton.dataset.side);
+      markCustomStrategy();
+      renderAll({ rerenderLegs: true });
+    });
+
+    dom.legList.addEventListener('change', (event) => {
+      const card = event.target.closest('.leg-card');
+      if (!card) return;
+      const index = Number(card.dataset.legIndex);
+      if (event.target.classList.contains('option-select')) {
+        updateLegFromOption(index, event.target.value);
+      } else if (event.target.classList.contains('type-input')) {
+        updateLegFromField(index, 'type', event.target.value);
+      } else if (event.target.classList.contains('strike-input')) {
+        updateLegFromField(index, 'strike', event.target.value);
+      } else if (event.target.classList.contains('premium-input')) {
+        updateLegFromField(index, 'premium', event.target.value);
+      } else if (event.target.classList.contains('quantity-input')) {
+        updateLegFromField(index, 'quantity', event.target.value);
+      }
+      markCustomStrategy();
+      renderAll({ rerenderLegs: true });
+    });
+
+    window.addEventListener('resize', () => {
+      drawChart(analyzeStrategy());
+    });
+
+    syncStateFromControls();
+    generateOptionChain();
+    setPresetLegs();
+    renderAll({ rerenderLegs: true });
+  </script>
+</body>
+</html>
