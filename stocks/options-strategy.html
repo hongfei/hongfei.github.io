@@ -311,6 +311,11 @@
       border-color: rgba(223, 43, 32, 0.35);
     }
 
+    .legend-swatch.selected {
+      background: #18181b;
+      border-color: #18181b;
+    }
+
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -478,7 +483,7 @@
 </head>
 <body>
   <div class="actions-wrapper">
-    <a href="../index.html" class="btn-back">&larr; Back to portal</a>
+    <a href="../index.html" class="btn-back">&larr; Back to Home</a>
   </div>
 
   <main>
@@ -583,16 +588,18 @@
       <section class="dashboard">
         <div class="pe-card chart-panel">
           <div class="panel-title">
-            <h2>Expiry Payoff</h2>
+            <h2>Option Lifecycle Map</h2>
             <div class="panel-kicker" id="chartKicker">SPY, 45 days</div>
           </div>
           <div class="canvas-container">
-            <canvas id="payoffCanvas" aria-label="Option strategy expiry payoff chart"></canvas>
+            <canvas id="payoffCanvas" aria-label="Option strategy time and price profit loss map"></canvas>
+            <div class="chart-tooltip" id="chartTooltip" hidden></div>
           </div>
           <div class="chart-legend" aria-label="Chart legend">
-            <span class="legend-item"><span class="legend-swatch gradient"></span>Loss to profit gradient</span>
-            <span class="legend-item"><span class="legend-swatch max-profit"></span>Maximum profit zone</span>
-            <span class="legend-item"><span class="legend-swatch max-loss"></span>Maximum loss zone</span>
+            <span class="legend-item"><span class="legend-swatch gradient"></span>Lifecycle P/L heatmap</span>
+            <span class="legend-item"><span class="legend-swatch max-profit"></span>Estimated profit</span>
+            <span class="legend-item"><span class="legend-swatch max-loss"></span>Estimated loss</span>
+            <span class="legend-item"><span class="legend-swatch selected"></span>Selected point</span>
           </div>
         </div>
 
@@ -621,6 +628,11 @@
               <div class="stat-label">Entry Cash Flow</div>
               <div class="stat-value" id="cashFlowValue">$0</div>
               <div class="stat-detail" id="cashFlowDetail">Debit paid or credit received to open.</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Selected Scenario</div>
+              <div class="stat-value" id="scenarioPnlValue">-</div>
+              <div class="stat-detail" id="scenarioPnlDetail">No scenario selected.</div>
             </div>
           </div>
         </div>
@@ -721,12 +733,15 @@
       breakevenDetail: document.getElementById('breakevenDetail'),
       cashFlowValue: document.getElementById('cashFlowValue'),
       cashFlowDetail: document.getElementById('cashFlowDetail'),
+      scenarioPnlValue: document.getElementById('scenarioPnlValue'),
+      scenarioPnlDetail: document.getElementById('scenarioPnlDetail'),
       legsTableBody: document.getElementById('legsTableBody'),
       legsKicker: document.getElementById('legsKicker'),
       profitZoneText: document.getElementById('profitZoneText'),
       lossZoneText: document.getElementById('lossZoneText'),
       gradientZoneText: document.getElementById('gradientZoneText'),
-      summaryKicker: document.getElementById('summaryKicker')
+      summaryKicker: document.getElementById('summaryKicker'),
+      chartTooltip: document.getElementById('chartTooltip')
     };
 
     const state = {
@@ -738,7 +753,9 @@
       legCount: 2,
       preset: 'bullCallSpread',
       chain: [],
-      legs: []
+      legs: [],
+      hoverScenario: null,
+      selectedScenario: null
     };
 
     function clamp(value, min, max) {
@@ -764,6 +781,30 @@
 
     function formatPercent(value) {
       return `${(value * 100).toFixed(1)}%`;
+    }
+
+    function formatDays(value) {
+      return Number(value).toFixed(Math.abs(value - Math.round(value)) < 0.05 ? 0 : 1);
+    }
+
+    function scenarioDaysAgo(scenario) {
+      return Math.max(state.days - scenario.elapsedDays, 0);
+    }
+
+    function formatLifecycleLabel(elapsedDays) {
+      const daysAgo = Math.max(state.days - elapsedDays, 0);
+      return daysAgo < 0.05 ? 'Today' : `${formatDays(daysAgo)}d ago`;
+    }
+
+    function formatScenarioTiming(scenario) {
+      const daysAgo = scenarioDaysAgo(scenario);
+      const when = daysAgo < 0.05 ? 'Today' : `${formatDays(daysAgo)} days ago`;
+      return {
+        when,
+        daysAgo,
+        heldDays: scenario.elapsedDays,
+        daysRemaining: scenario.daysRemaining
+      };
     }
 
     function setStatus(message, isError = false) {
@@ -986,6 +1027,26 @@
         const unitPnl = leg.side === 'buy'
           ? intrinsic - leg.premium
           : leg.premium - intrinsic;
+        return total + unitPnl * leg.quantity * CONTRACT_MULTIPLIER;
+      }, 0);
+    }
+
+    function optionValueAt(type, price, strike, daysRemaining) {
+      const safePrice = Math.max(price, 0.01);
+      if (daysRemaining <= EPSILON) {
+        return type === 'call'
+          ? Math.max(safePrice - strike, 0)
+          : Math.max(strike - safePrice, 0);
+      }
+      return blackScholes(type, safePrice, strike, daysRemaining, state.rate, state.iv);
+    }
+
+    function scenarioPnlAt(price, daysRemaining, legs = activeLegs()) {
+      return legs.reduce((total, leg) => {
+        const value = optionValueAt(leg.type, price, leg.strike, daysRemaining);
+        const unitPnl = leg.side === 'buy'
+          ? value - leg.premium
+          : leg.premium - value;
         return total + unitPnl * leg.quantity * CONTRACT_MULTIPLIER;
       }, 0);
     }
@@ -1213,14 +1274,93 @@
           ? 'Net credit received to open.'
           : 'No net premium at entry.';
 
-      dom.chartKicker.textContent = `${state.ticker}, ${state.days} days, spot ${formatPrice(state.spot)}`;
+      if (state.selectedScenario) {
+        const scenario = state.selectedScenario;
+        const timing = formatScenarioTiming(scenario);
+        const pnl = scenarioPnlAt(scenario.price, scenario.daysRemaining, analysis.legs);
+        dom.scenarioPnlValue.textContent = formatMoney(pnl);
+        dom.scenarioPnlValue.classList.toggle('profit', pnl >= 0);
+        dom.scenarioPnlValue.classList.toggle('loss', pnl < 0);
+        dom.scenarioPnlDetail.textContent = `${timing.when}, held ${formatDays(timing.heldDays)}d, DTE ${formatDays(timing.daysRemaining)}d, ${formatPrice(scenario.price)}.`;
+      } else {
+        dom.scenarioPnlValue.textContent = '-';
+        dom.scenarioPnlValue.classList.remove('profit', 'loss');
+        dom.scenarioPnlDetail.textContent = 'Click a point to lock a lifecycle scenario.';
+      }
+
+      dom.chartKicker.textContent = `${state.ticker}, ${state.days}d ago to Today, spot ${formatPrice(state.spot)}`;
       dom.summaryKicker.textContent = `IV ${formatPercent(state.iv)}, rate ${formatPercent(state.rate)}`;
-      dom.gradientZoneText.textContent = 'Green areas are profitable at expiry. Red areas lose money. Pale bands are near break-even.';
+      dom.gradientZoneText.textContent = 'Green cells are estimated profitable. Red cells are estimated losing. Pale cells are near break-even.';
     }
 
-    function regionToDomain(region, fallbackEnd) {
-      if (region.kind === 'point') return { start: region.price, end: region.price };
-      return { start: region.start, end: Number.isFinite(region.end) ? region.end : fallbackEnd };
+    function chartPriceDomain(analysis) {
+      const strikes = analysis.strikes.length ? analysis.strikes : [state.spot];
+      const minStrike = strikes[0];
+      const maxStrike = strikes[strikes.length - 1];
+      const minPrice = Math.max(0, Math.min(minStrike * 0.75, state.spot * 0.65));
+      const maxPrice = Math.max(maxStrike * 1.28, state.spot * 1.45, minPrice + 10);
+      return { minPrice, maxPrice };
+    }
+
+    function chartMetrics(analysis) {
+      const canvas = dom.payoffCanvas;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      const padding = { top: 22, right: 34, bottom: 48, left: 72 };
+      const domain = chartPriceDomain(analysis);
+      return {
+        width: rect.width,
+        height: rect.height,
+        padding,
+        chartWidth: rect.width - padding.left - padding.right,
+        chartHeight: rect.height - padding.top - padding.bottom,
+        ...domain
+      };
+    }
+
+    function scenarioFromCanvasEvent(event, analysis = analyzeStrategy()) {
+      const canvasRect = dom.payoffCanvas.getBoundingClientRect();
+      const metrics = chartMetrics(analysis);
+      const localX = event.clientX - canvasRect.left;
+      const localY = event.clientY - canvasRect.top;
+      const plotX = clamp(localX - metrics.padding.left, 0, metrics.chartWidth);
+      const plotY = clamp(localY - metrics.padding.top, 0, metrics.chartHeight);
+      const elapsedDays = (plotX / metrics.chartWidth) * state.days;
+      const daysRemaining = Math.max(state.days - elapsedDays, 0);
+      const price = metrics.maxPrice - (plotY / metrics.chartHeight) * (metrics.maxPrice - metrics.minPrice);
+      const pnl = scenarioPnlAt(price, daysRemaining, analysis.legs);
+      return { elapsedDays, daysRemaining, price, pnl };
+    }
+
+    function markerPosition(scenario, metrics) {
+      const elapsedDays = clamp(scenario.elapsedDays, 0, state.days);
+      const price = clamp(scenario.price, metrics.minPrice, metrics.maxPrice);
+      return {
+        x: metrics.padding.left + (elapsedDays / state.days) * metrics.chartWidth,
+        y: metrics.padding.top + (1 - ((price - metrics.minPrice) / (metrics.maxPrice - metrics.minPrice))) * metrics.chartHeight
+      };
+    }
+
+    function scenarioColor(pnl, maxAbs) {
+      const intensity = clamp(Math.abs(pnl) / maxAbs, 0.08, 0.78);
+      return pnl >= 0
+        ? `rgba(14, 158, 92, ${intensity})`
+        : `rgba(223, 43, 32, ${intensity})`;
+    }
+
+    function drawScenarioMarker(ctx, scenario, metrics, color) {
+      const point = markerPosition(scenario, metrics);
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(metrics.padding.left, point.y);
+      ctx.lineTo(metrics.width - metrics.padding.right, point.y);
+      ctx.moveTo(point.x, metrics.padding.top);
+      ctx.lineTo(point.x, metrics.height - metrics.padding.bottom);
+      ctx.stroke();
+      ctx.fillStyle = color;
+      ctx.fillRect(point.x - 4, point.y - 4, 8, 8);
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(point.x - 2, point.y - 2, 4, 4);
     }
 
     function drawChart(analysis) {
@@ -1232,65 +1372,41 @@
       const ctx = canvas.getContext('2d');
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      const width = rect.width;
-      const height = rect.height;
-      const padding = { top: 22, right: 28, bottom: 42, left: 72 };
-      const chartWidth = width - padding.left - padding.right;
-      const chartHeight = height - padding.top - padding.bottom;
-      const strikes = analysis.strikes.length ? analysis.strikes : [state.spot];
-      const minStrike = strikes[0];
-      const maxStrike = strikes[strikes.length - 1];
-      const minX = Math.max(0, Math.min(minStrike * 0.75, state.spot * 0.65));
-      const maxX = Math.max(maxStrike * 1.28, state.spot * 1.45, minX + 10);
-      const pointCount = 420;
-      const points = Array.from({ length: pointCount }, (_, index) => {
-        const x = minX + (index / (pointCount - 1)) * (maxX - minX);
-        return { price: x, pnl: payoffAt(x, analysis.legs) };
-      });
-      const rawMinY = Math.min(0, ...points.map((point) => point.pnl));
-      const rawMaxY = Math.max(0, ...points.map((point) => point.pnl));
-      const yPad = Math.max((rawMaxY - rawMinY) * 0.14, 100);
-      const minY = rawMinY - yPad;
-      const maxY = rawMaxY + yPad;
-
-      const xToPx = (value) => padding.left + ((value - minX) / (maxX - minX)) * chartWidth;
-      const yToPx = (value) => padding.top + (1 - ((value - minY) / (maxY - minY))) * chartHeight;
+      const metrics = chartMetrics(analysis);
+      const { width, height, padding, chartWidth, chartHeight, minPrice, maxPrice } = metrics;
+      const xToPx = (elapsedDays) => padding.left + (elapsedDays / state.days) * chartWidth;
+      const yToPx = (price) => padding.top + (1 - ((price - minPrice) / (maxPrice - minPrice))) * chartHeight;
 
       ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = '#ffffff';
       ctx.fillRect(0, 0, width, height);
 
-      const maxAbs = Math.max(Math.abs(rawMinY), Math.abs(rawMaxY), 1);
-      for (let px = 0; px < chartWidth; px += 2) {
-        const price = minX + (px / chartWidth) * (maxX - minX);
-        const pnl = payoffAt(price, analysis.legs);
-        const intensity = clamp(Math.abs(pnl) / maxAbs, 0.08, 0.55);
-        if (pnl >= 0) {
-          ctx.fillStyle = `rgba(14, 158, 92, ${intensity})`;
-        } else {
-          ctx.fillStyle = `rgba(223, 43, 32, ${intensity})`;
+      const columns = 120;
+      const rows = 92;
+      const cells = [];
+      let maxAbs = 1;
+      for (let column = 0; column < columns; column += 1) {
+        const elapsedDays = (column / (columns - 1)) * state.days;
+        const daysRemaining = Math.max(state.days - elapsedDays, 0);
+        for (let row = 0; row < rows; row += 1) {
+          const price = maxPrice - (row / (rows - 1)) * (maxPrice - minPrice);
+          const pnl = scenarioPnlAt(price, daysRemaining, analysis.legs);
+          maxAbs = Math.max(maxAbs, Math.abs(pnl));
+          cells.push({ column, row, pnl });
         }
-        ctx.fillRect(padding.left + px, padding.top, 2, chartHeight);
       }
 
-      function fillRegions(regions, color) {
-        regions.forEach((region) => {
-          const domain = regionToDomain(region, maxX);
-          const start = clamp(domain.start, minX, maxX);
-          const end = clamp(domain.end, minX, maxX);
-          const startPx = xToPx(start);
-          const endPx = xToPx(end);
-          ctx.fillStyle = color;
-          if (Math.abs(endPx - startPx) < 3) {
-            ctx.fillRect(startPx - 2, padding.top, 4, chartHeight);
-          } else {
-            ctx.fillRect(startPx, padding.top, endPx - startPx, chartHeight);
-          }
-        });
-      }
-
-      fillRegions(analysis.minRegions, 'rgba(223, 43, 32, 0.18)');
-      fillRegions(analysis.maxRegions, 'rgba(14, 158, 92, 0.18)');
+      const cellWidth = chartWidth / columns;
+      const cellHeight = chartHeight / rows;
+      cells.forEach((cell) => {
+        ctx.fillStyle = scenarioColor(cell.pnl, maxAbs);
+        ctx.fillRect(
+          padding.left + cell.column * cellWidth,
+          padding.top + cell.row * cellHeight,
+          Math.ceil(cellWidth) + 0.5,
+          Math.ceil(cellHeight) + 0.5
+        );
+      });
 
       ctx.strokeStyle = '#e4e9ed';
       ctx.lineWidth = 1;
@@ -1301,70 +1417,84 @@
 
       const gridLines = 5;
       for (let index = 0; index <= gridLines; index += 1) {
-        const value = minY + (index / gridLines) * (maxY - minY);
-        const y = yToPx(value);
+        const price = minPrice + (index / gridLines) * (maxPrice - minPrice);
+        const y = yToPx(price);
         ctx.beginPath();
         ctx.moveTo(padding.left, y);
         ctx.lineTo(width - padding.right, y);
         ctx.stroke();
-        ctx.fillText(formatMoney(value, { decimals: 0 }), padding.left - 10, y);
+        ctx.fillText(formatPrice(price), padding.left - 10, y);
       }
 
-      const zeroY = yToPx(0);
-      ctx.strokeStyle = '#18181b';
-      ctx.lineWidth = 1.5;
-      ctx.beginPath();
-      ctx.moveTo(padding.left, zeroY);
-      ctx.lineTo(width - padding.right, zeroY);
-      ctx.stroke();
-
-      analysis.strikes.forEach((strike) => {
-        if (strike < minX || strike > maxX) return;
-        const x = xToPx(strike);
-        ctx.strokeStyle = 'rgba(24, 24, 27, 0.12)';
-        ctx.lineWidth = 1;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      for (let index = 0; index <= gridLines; index += 1) {
+        const elapsedDays = (index / gridLines) * state.days;
+        const x = xToPx(elapsedDays);
+        ctx.strokeStyle = '#e4e9ed';
         ctx.beginPath();
         ctx.moveTo(x, padding.top);
         ctx.lineTo(x, height - padding.bottom);
         ctx.stroke();
-      });
+        ctx.fillStyle = '#71717a';
+        ctx.fillText(formatLifecycleLabel(elapsedDays), x, height - padding.bottom + 10);
+      }
 
-      if (state.spot >= minX && state.spot <= maxX) {
-        const spotX = xToPx(state.spot);
+      if (state.spot >= minPrice && state.spot <= maxPrice) {
+        const spotY = yToPx(state.spot);
         ctx.strokeStyle = '#1c6f9e';
         ctx.lineWidth = 1.5;
         ctx.setLineDash([5, 5]);
         ctx.beginPath();
-        ctx.moveTo(spotX, padding.top);
-        ctx.lineTo(spotX, height - padding.bottom);
+        ctx.moveTo(padding.left, spotY);
+        ctx.lineTo(width - padding.right, spotY);
         ctx.stroke();
         ctx.setLineDash([]);
         ctx.fillStyle = '#1c6f9e';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'top';
-        ctx.fillText('Spot', spotX, height - padding.bottom + 8);
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'bottom';
+        ctx.fillText('Spot', width - padding.right, spotY - 6);
       }
 
       ctx.strokeStyle = '#18181b';
-      ctx.lineWidth = 2.4;
+      ctx.lineWidth = 1.2;
       ctx.beginPath();
-      points.forEach((point, index) => {
-        const x = xToPx(point.price);
-        const y = yToPx(point.pnl);
-        if (index === 0) ctx.moveTo(x, y);
-        else ctx.lineTo(x, y);
-      });
+      ctx.moveTo(padding.left, padding.top);
+      ctx.lineTo(width - padding.right, padding.top);
+      ctx.lineTo(width - padding.right, height - padding.bottom);
+      ctx.lineTo(padding.left, height - padding.bottom);
+      ctx.lineTo(padding.left, padding.top);
       ctx.stroke();
 
-      ctx.fillStyle = '#71717a';
-      ctx.font = '12px Inter, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'top';
-      const xLabels = 5;
-      for (let index = 0; index <= xLabels; index += 1) {
-        const price = minX + (index / xLabels) * (maxX - minX);
-        ctx.fillText(formatPrice(price), xToPx(price), height - padding.bottom + 24);
+      if (state.selectedScenario) {
+        drawScenarioMarker(ctx, state.selectedScenario, metrics, '#18181b');
       }
+      if (state.hoverScenario) {
+        drawScenarioMarker(ctx, state.hoverScenario, metrics, '#1c6f9e');
+      }
+    }
+
+    function renderChartTooltip(event, scenario) {
+      const containerRect = dom.payoffCanvas.parentElement.getBoundingClientRect();
+      const left = clamp(event.clientX - containerRect.left + 14, 8, containerRect.width - 210);
+      const top = clamp(event.clientY - containerRect.top, 36, containerRect.height - 36);
+      const timing = formatScenarioTiming(scenario);
+      dom.chartTooltip.innerHTML = `
+        <strong>${formatMoney(scenario.pnl)}</strong>
+        <dl>
+          <dt>When</dt><dd>${timing.when}</dd>
+          <dt>Held</dt><dd>${formatDays(timing.heldDays)}d</dd>
+          <dt>DTE</dt><dd>${formatDays(timing.daysRemaining)}d</dd>
+          <dt>Price</dt><dd>${formatPrice(scenario.price)}</dd>
+        </dl>
+      `;
+      dom.chartTooltip.style.left = `${left}px`;
+      dom.chartTooltip.style.top = `${top}px`;
+      dom.chartTooltip.hidden = false;
+    }
+
+    function hideChartTooltip() {
+      dom.chartTooltip.hidden = true;
     }
 
     function renderAll({ rerenderLegs = false } = {}) {
@@ -1516,6 +1646,27 @@
       }
       markCustomStrategy();
       renderAll({ rerenderLegs: true });
+    });
+
+    dom.payoffCanvas.addEventListener('mousemove', (event) => {
+      const analysis = analyzeStrategy();
+      state.hoverScenario = scenarioFromCanvasEvent(event, analysis);
+      renderChartTooltip(event, state.hoverScenario);
+      drawChart(analysis);
+    });
+
+    dom.payoffCanvas.addEventListener('mouseleave', () => {
+      state.hoverScenario = null;
+      hideChartTooltip();
+      drawChart(analyzeStrategy());
+    });
+
+    dom.payoffCanvas.addEventListener('click', (event) => {
+      const analysis = analyzeStrategy();
+      state.selectedScenario = scenarioFromCanvasEvent(event, analysis);
+      state.hoverScenario = state.selectedScenario;
+      hideChartTooltip();
+      renderAll();
     });
 
     window.addEventListener('resize', () => {
