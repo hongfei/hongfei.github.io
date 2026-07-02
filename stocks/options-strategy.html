@@ -62,6 +62,7 @@
     .controls {
       display: flex;
       flex-direction: column;
+      align-self: flex-start;
       padding: 18px;
     }
 
@@ -157,13 +158,14 @@
 
     .leg-list {
       display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 10px;
     }
 
     .leg-card {
       border: 1px solid var(--border-light);
       border-radius: 8px;
-      padding: 12px;
+      padding: 10px;
       background: #f4f4f5;
     }
 
@@ -176,7 +178,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .leg-title {
@@ -217,7 +219,7 @@
     .leg-fields {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
+      gap: 7px;
     }
 
     .leg-fields .wide {
@@ -232,14 +234,71 @@
       font-weight: 600;
     }
 
+    .leg-fields input,
+    .leg-fields select {
+      min-height: 36px;
+      padding: 6px 8px;
+      font-size: 0.86rem;
+    }
+
     .side-toggle {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       padding: 3px;
       gap: 3px;
     }
 
+    .side-toggle button {
+      min-height: 30px;
+    }
+
     .dashboard .pe-card {
       margin-bottom: -1px;
+    }
+
+    .summary-panel,
+    .leg-editor-panel {
+      min-width: 0;
+    }
+
+    .controls .summary-panel {
+      border-top: 1px solid var(--border-light);
+      padding-top: 12px;
+    }
+
+    .leg-count-field {
+      margin-bottom: 12px;
+    }
+
+    .controls .summary-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .controls .stat-card {
+      padding: 10px;
+    }
+
+    .controls .stat-label {
+      margin-bottom: 6px;
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+    }
+
+    .controls .stat-value {
+      font-size: 0.98rem;
+    }
+
+    .controls .stat-detail {
+      margin-top: 6px;
+      font-size: 0.72rem;
+    }
+
+    .sidebar-wide-stat {
+      grid-column: 1 / -1;
+    }
+
+    .leg-workbench .leg-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .panel-title {
@@ -453,6 +512,7 @@
       .table-panel {
         grid-template-columns: 1fr;
       }
+
     }
 
     @media (max-width: 992px) {
@@ -472,11 +532,17 @@
       .canvas-container {
         height: 360px;
       }
+
+      .controls .summary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 640px) {
       .inline-fields,
       .leg-fields,
+      .leg-list,
+      .controls .summary-grid,
       .summary-grid {
         grid-template-columns: 1fr;
       }
@@ -581,16 +647,39 @@
             </div>
           </fieldset>
 
-          <fieldset class="field">
-            <legend>Strategy Legs</legend>
-            <div class="segmented" id="legCountControl" role="group" aria-label="Strategy leg count">
-              <button type="button" data-count="1" aria-pressed="false">1 Leg</button>
-              <button type="button" data-count="2" aria-pressed="true">2 Legs</button>
-              <button type="button" data-count="4" aria-pressed="false">4 Legs</button>
+          <section class="summary-panel" aria-label="Strategy summary">
+            <div class="panel-title">
+              <h2>Strategy Summary</h2>
+              <div class="panel-kicker" id="summaryKicker">1 contract = 100 shares</div>
             </div>
-          </fieldset>
-
-          <div class="leg-list" id="legList"></div>
+            <div class="summary-grid">
+              <div class="stat-card">
+                <div class="stat-label">Max Shown Gain</div>
+                <div class="stat-value profit" id="mapMaxGainValue">$0</div>
+                <div class="stat-detail" id="mapMaxGainDetail">Visible lifecycle range.</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Max Shown Loss</div>
+                <div class="stat-value loss" id="mapMaxLossValue">$0</div>
+                <div class="stat-detail" id="mapMaxLossDetail">Visible lifecycle range.</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Price Range</div>
+                <div class="stat-value" id="breakevenValue">-</div>
+                <div class="stat-detail" id="breakevenDetail">Visible lifecycle map range.</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Entry Cash Flow</div>
+                <div class="stat-value" id="cashFlowValue">$0</div>
+                <div class="stat-detail" id="cashFlowDetail">Debit paid or credit received to open.</div>
+              </div>
+              <div class="stat-card sidebar-wide-stat">
+                <div class="stat-label">Selected Scenario</div>
+                <div class="stat-value" id="scenarioPnlValue">-</div>
+                <div class="stat-detail" id="scenarioPnlDetail">No scenario selected.</div>
+              </div>
+            </div>
+          </section>
 
           <div class="actions">
             <div class="status" id="statusBox">Ready with an estimated SPY option chain.</div>
@@ -619,38 +708,22 @@
           </div>
         </div>
 
-        <div class="pe-card">
-          <div class="panel-title">
-            <h2>Strategy Summary</h2>
-            <div class="panel-kicker" id="summaryKicker">1 contract = 100 shares</div>
-          </div>
-          <div class="summary-grid">
-            <div class="stat-card">
-              <div class="stat-label">Max Shown Gain</div>
-              <div class="stat-value profit" id="mapMaxGainValue">$0</div>
-              <div class="stat-detail" id="mapMaxGainDetail">Visible lifecycle range.</div>
+        <div class="pe-card leg-workbench">
+          <section class="leg-editor-panel" aria-label="Strategy leg editor">
+            <div class="panel-title">
+              <h2>Strategy Legs</h2>
+              <div class="panel-kicker">Editable contracts</div>
             </div>
-            <div class="stat-card">
-              <div class="stat-label">Max Shown Loss</div>
-              <div class="stat-value loss" id="mapMaxLossValue">$0</div>
-              <div class="stat-detail" id="mapMaxLossDetail">Visible lifecycle range.</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Price Range</div>
-              <div class="stat-value" id="breakevenValue">-</div>
-              <div class="stat-detail" id="breakevenDetail">Visible lifecycle map range.</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Entry Cash Flow</div>
-              <div class="stat-value" id="cashFlowValue">$0</div>
-              <div class="stat-detail" id="cashFlowDetail">Debit paid or credit received to open.</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Selected Scenario</div>
-              <div class="stat-value" id="scenarioPnlValue">-</div>
-              <div class="stat-detail" id="scenarioPnlDetail">No scenario selected.</div>
-            </div>
-          </div>
+            <fieldset class="field leg-count-field">
+              <legend>Leg Count</legend>
+              <div class="segmented" id="legCountControl" role="group" aria-label="Strategy leg count">
+                <button type="button" data-count="1" aria-pressed="false">1 Leg</button>
+                <button type="button" data-count="2" aria-pressed="true">2 Legs</button>
+                <button type="button" data-count="4" aria-pressed="false">4 Legs</button>
+              </div>
+            </fieldset>
+            <div class="leg-list" id="legList"></div>
+          </section>
         </div>
 
         <div class="pe-card table-panel">
