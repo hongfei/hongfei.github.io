@@ -316,6 +316,11 @@
       border-color: #18181b;
     }
 
+    .legend-swatch.price-line {
+      background: #1c6f9e;
+      border-color: #1c6f9e;
+    }
+
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -599,6 +604,7 @@
             <span class="legend-item"><span class="legend-swatch gradient"></span>Lifecycle P/L heatmap</span>
             <span class="legend-item"><span class="legend-swatch max-profit"></span>Estimated profit</span>
             <span class="legend-item"><span class="legend-swatch max-loss"></span>Estimated loss</span>
+            <span class="legend-item"><span class="legend-swatch price-line"></span>Actual price line</span>
             <span class="legend-item"><span class="legend-swatch selected"></span>Selected point</span>
           </div>
         </div>
@@ -610,19 +616,19 @@
           </div>
           <div class="summary-grid">
             <div class="stat-card">
-              <div class="stat-label">Max Profit</div>
-              <div class="stat-value profit" id="maxProfitValue">$0</div>
-              <div class="stat-detail" id="maxProfitRange">-</div>
+              <div class="stat-label">Max Gain</div>
+              <div class="stat-value profit" id="mapMaxGainValue">$0</div>
+              <div class="stat-detail" id="mapMaxGainDetail">Visible lifecycle range.</div>
             </div>
             <div class="stat-card">
               <div class="stat-label">Max Loss</div>
-              <div class="stat-value loss" id="maxLossValue">$0</div>
-              <div class="stat-detail" id="maxLossRange">-</div>
+              <div class="stat-value loss" id="mapMaxLossValue">$0</div>
+              <div class="stat-detail" id="mapMaxLossDetail">Visible lifecycle range.</div>
             </div>
             <div class="stat-card">
-              <div class="stat-label">Break Even</div>
+              <div class="stat-label">Price Range</div>
               <div class="stat-value" id="breakevenValue">-</div>
-              <div class="stat-detail" id="breakevenDetail">Where total P/L crosses $0.</div>
+              <div class="stat-detail" id="breakevenDetail">Visible lifecycle map range.</div>
             </div>
             <div class="stat-card">
               <div class="stat-label">Entry Cash Flow</div>
@@ -662,15 +668,15 @@
           </div>
           <div class="range-list">
             <div class="range-card">
-              <strong>Profit zone</strong>
+              <strong>Best shown scenario</strong>
               <p id="profitZoneText">-</p>
             </div>
             <div class="range-card">
-              <strong>Loss zone</strong>
+              <strong>Worst shown scenario</strong>
               <p id="lossZoneText">-</p>
             </div>
             <div class="range-card">
-              <strong>Gradient zone</strong>
+              <strong>Heatmap scale</strong>
               <p id="gradientZoneText">Green areas are profitable at expiry. Red areas lose money. Pale bands are near break-even.</p>
             </div>
           </div>
@@ -691,6 +697,7 @@
 
     const CONTRACT_MULTIPLIER = 100;
     const EPSILON = 0.000001;
+    const STORAGE_KEY = 'optionStrategyLab.settings.v1';
     const PRESET_DEFINITIONS = {
       longCall: { label: 'Long Call', count: 1 },
       longPut: { label: 'Long Put', count: 1 },
@@ -725,10 +732,10 @@
       statusBox: document.getElementById('statusBox'),
       payoffCanvas: document.getElementById('payoffCanvas'),
       chartKicker: document.getElementById('chartKicker'),
-      maxProfitValue: document.getElementById('maxProfitValue'),
-      maxProfitRange: document.getElementById('maxProfitRange'),
-      maxLossValue: document.getElementById('maxLossValue'),
-      maxLossRange: document.getElementById('maxLossRange'),
+      mapMaxGainValue: document.getElementById('mapMaxGainValue'),
+      mapMaxGainDetail: document.getElementById('mapMaxGainDetail'),
+      mapMaxLossValue: document.getElementById('mapMaxLossValue'),
+      mapMaxLossDetail: document.getElementById('mapMaxLossDetail'),
       breakevenValue: document.getElementById('breakevenValue'),
       breakevenDetail: document.getElementById('breakevenDetail'),
       cashFlowValue: document.getElementById('cashFlowValue'),
@@ -754,6 +761,7 @@
       preset: 'bullCallSpread',
       chain: [],
       legs: [],
+      priceHistory: [],
       hoverScenario: null,
       selectedScenario: null
     };
@@ -763,7 +771,7 @@
     }
 
     function formatMoney(value, options = {}) {
-      if (!Number.isFinite(value)) return 'Unlimited';
+      if (!Number.isFinite(value)) return 'N/A';
       const absValue = Math.abs(value);
       const decimals = absValue >= 1000 ? 0 : 2;
       return new Intl.NumberFormat('en-US', {
@@ -805,6 +813,12 @@
         heldDays: scenario.elapsedDays,
         daysRemaining: scenario.daysRemaining
       };
+    }
+
+    function yahooRangeForDays(days) {
+      if (days <= 60) return '3mo';
+      if (days <= 180) return '1y';
+      return '2y';
     }
 
     function setStatus(message, isError = false) {
@@ -1004,7 +1018,116 @@
       setPresetLegs(presetId);
       const label = PRESET_DEFINITIONS[state.preset]?.label || 'Strategy';
       setStatus(`<strong>${escapeHtml(label)}</strong> preset applied with estimated premiums.`);
+      saveSettings();
       renderAll({ rerenderLegs: true });
+    }
+
+    function rebuildChainAndStrategy() {
+      generateOptionChain();
+      if (state.preset) {
+        setPresetLegs(state.preset);
+      } else {
+        syncLegCountButtons();
+        syncPresetButtons();
+      }
+    }
+
+    function serializableLeg(leg) {
+      return {
+        optionId: leg.optionId,
+        side: leg.side,
+        type: leg.type,
+        strike: Number(leg.strike),
+        premium: Number(leg.premium),
+        quantity: Number(leg.quantity)
+      };
+    }
+
+    function saveSettings() {
+      if (typeof localStorage === 'undefined') return;
+      const payload = {
+        ticker: state.ticker,
+        spot: state.spot,
+        days: state.days,
+        strikeStep: dom.strikeStepSelect.value,
+        iv: state.iv,
+        rate: state.rate,
+        legCount: state.legCount,
+        preset: state.preset,
+        legs: state.legs.slice(0, state.legCount).map(serializableLeg)
+      };
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      } catch (error) {
+        // Ignore storage quota or privacy-mode failures; the tool still works without caching.
+      }
+    }
+
+    function restoreSettings() {
+      if (typeof localStorage === 'undefined') return false;
+      let settings = null;
+      try {
+        settings = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+      } catch (error) {
+        settings = null;
+      }
+      if (!settings || typeof settings !== 'object') return false;
+
+      const ticker = String(settings.ticker || '').trim().toUpperCase();
+      if (ticker) {
+        state.ticker = ticker;
+        dom.tickerInput.value = ticker;
+      }
+
+      if (Number.isFinite(Number(settings.spot)) && Number(settings.spot) > 0) {
+        state.spot = Number(settings.spot);
+        dom.spotInput.value = state.spot.toFixed(2);
+      }
+
+      if ([30, 45, 60, 90, 180].includes(Number(settings.days))) {
+        state.days = Number(settings.days);
+        dom.expirySelect.value = String(state.days);
+      }
+
+      const validStrikeSteps = ['auto', '1', '2.5', '5', '10', '25'];
+      if (validStrikeSteps.includes(String(settings.strikeStep))) {
+        dom.strikeStepSelect.value = String(settings.strikeStep);
+      }
+
+      if (Number.isFinite(Number(settings.iv))) {
+        state.iv = clamp(Number(settings.iv), 0.05, 1.2);
+        dom.ivInput.value = String(Math.round(state.iv * 100));
+      }
+
+      if (Number.isFinite(Number(settings.rate))) {
+        state.rate = clamp(Number(settings.rate), 0, 0.08);
+        dom.rateInput.value = String(Number((state.rate * 100).toFixed(1)));
+      }
+
+      generateOptionChain();
+
+      const savedLegs = Array.isArray(settings.legs) ? settings.legs.slice(0, 4).map((leg) => ({
+        optionId: String(leg.optionId || ''),
+        side: leg.side === 'sell' ? 'sell' : 'buy',
+        type: leg.type === 'put' ? 'put' : 'call',
+        strike: Math.max(Number(leg.strike) || state.spot, 0.01),
+        premium: Math.max(Number(leg.premium) || 0, 0),
+        quantity: Math.max(Math.round(Number(leg.quantity) || 1), 1)
+      })) : [];
+      const savedPresetValid = typeof settings.preset === 'string' && settings.preset in PRESET_DEFINITIONS;
+
+      if (savedLegs.length) {
+        state.legCount = [1, 2, 4].includes(Number(settings.legCount)) ? Number(settings.legCount) : savedLegs.length;
+        state.legCount = [1, 2, 4].includes(state.legCount) ? state.legCount : 2;
+        state.preset = savedPresetValid ? settings.preset : null;
+        state.legs = savedLegs;
+        syncLegCountButtons();
+        syncPresetButtons();
+      } else {
+        setPresetLegs(savedPresetValid ? settings.preset : defaultPresetForCount(Number(settings.legCount) || state.legCount));
+      }
+
+      return true;
     }
 
     function activeLegs() {
@@ -1017,18 +1140,6 @@
         Number.isFinite(leg.quantity) &&
         leg.quantity > 0
       ));
-    }
-
-    function payoffAt(price, legs = activeLegs()) {
-      return legs.reduce((total, leg) => {
-        const intrinsic = leg.type === 'call'
-          ? Math.max(price - leg.strike, 0)
-          : Math.max(leg.strike - price, 0);
-        const unitPnl = leg.side === 'buy'
-          ? intrinsic - leg.premium
-          : leg.premium - intrinsic;
-        return total + unitPnl * leg.quantity * CONTRACT_MULTIPLIER;
-      }, 0);
     }
 
     function optionValueAt(type, price, strike, daysRemaining) {
@@ -1058,114 +1169,17 @@
       }, 0);
     }
 
-    function segmentSlope(low, high, legs) {
-      const sampleA = Math.max(low + 0.01, 0.01);
-      const sampleB = Number.isFinite(high) ? Math.max(high - 0.01, sampleA + 1) : sampleA + 1;
-      return payoffAt(sampleB, legs) - payoffAt(sampleA, legs);
-    }
-
     function uniqueSorted(values) {
       return [...new Set(values.map((value) => Number(value.toFixed(4))))].sort((a, b) => a - b);
-    }
-
-    function sameMoney(a, b) {
-      return Math.abs(a - b) < 0.01;
-    }
-
-    function describeRegion(region) {
-      if (region.kind === 'point') return `At ${formatPrice(region.price)}`;
-      const start = formatPrice(region.start);
-      const end = Number.isFinite(region.end) ? formatPrice(region.end) : 'higher';
-      if (region.start <= 0 && Number.isFinite(region.end)) return `${start} to ${end}`;
-      if (!Number.isFinite(region.end)) return `${start} and higher`;
-      return `${start} to ${end}`;
-    }
-
-    function describeRegions(regions) {
-      if (!regions.length) return 'No stable interval; the extreme occurs at a boundary.';
-      return regions.slice(0, 3).map(describeRegion).join('; ');
-    }
-
-    function collectExtremeRegions(target, kind, legs, strikes, unlimitedSide) {
-      if (unlimitedSide) {
-        return [{ kind: 'range', start: strikes[strikes.length - 1] || 0, end: Infinity }];
-      }
-
-      const regions = [];
-      const bounds = [0, ...strikes, Infinity];
-      for (let index = 0; index < bounds.length - 1; index += 1) {
-        const start = bounds[index];
-        const end = bounds[index + 1];
-        const slope = segmentSlope(start, end, legs);
-        const value = payoffAt(Number.isFinite(end) ? (start + end) / 2 : start + 1, legs);
-        if (Math.abs(slope) < 0.01 && sameMoney(value, target)) {
-          regions.push({ kind: 'range', start, end });
-        }
-      }
-
-      const pointCandidates = [0, ...strikes];
-      pointCandidates.forEach((price) => {
-        const insideRange = regions.some((region) => (
-          region.kind === 'range' &&
-          price >= region.start - EPSILON &&
-          (Number.isFinite(region.end) ? price <= region.end + EPSILON : true)
-        ));
-        if (!insideRange && sameMoney(payoffAt(price, legs), target)) {
-          regions.push({ kind: 'point', price });
-        }
-      });
-
-      regions.sort((a, b) => (a.start ?? a.price) - (b.start ?? b.price));
-      return regions;
-    }
-
-    function breakevens(legs, strikes) {
-      const points = [];
-      const domainMax = Math.max(state.spot * 2, (strikes[strikes.length - 1] || state.spot) * 1.8);
-      const bounds = uniqueSorted([0, ...strikes, domainMax]);
-
-      for (let index = 0; index < bounds.length - 1; index += 1) {
-        const left = bounds[index];
-        const right = bounds[index + 1];
-        const yLeft = payoffAt(left, legs);
-        const yRight = payoffAt(right, legs);
-        if (sameMoney(yLeft, 0)) points.push(left);
-        if (yLeft === yRight && sameMoney(yLeft, 0)) {
-          points.push(left, right);
-        } else if ((yLeft < 0 && yRight > 0) || (yLeft > 0 && yRight < 0)) {
-          const ratio = Math.abs(yLeft) / (Math.abs(yLeft) + Math.abs(yRight));
-          points.push(left + (right - left) * ratio);
-        }
-      }
-      if (sameMoney(payoffAt(bounds[bounds.length - 1], legs), 0)) points.push(bounds[bounds.length - 1]);
-      return uniqueSorted(points).filter((point) => point >= 0);
     }
 
     function analyzeStrategy() {
       const legs = activeLegs();
       const strikes = uniqueSorted(legs.map((leg) => leg.strike));
-      const candidates = [0, ...strikes];
-      const values = candidates.map((price) => payoffAt(price, legs));
-      const lastStrike = strikes[strikes.length - 1] || state.spot;
-      const lastSlope = payoffAt(lastStrike + 2, legs) - payoffAt(lastStrike + 1, legs);
-      const maxUnlimited = lastSlope > 0.01;
-      const minUnlimited = lastSlope < -0.01;
-      const finiteMax = Math.max(...values);
-      const finiteMin = Math.min(...values);
-      const maxProfit = maxUnlimited ? Infinity : finiteMax;
-      const maxLoss = minUnlimited ? -Infinity : finiteMin;
-      const maxRegions = collectExtremeRegions(finiteMax, 'max', legs, strikes, maxUnlimited);
-      const minRegions = collectExtremeRegions(finiteMin, 'min', legs, strikes, minUnlimited);
-      const breakEvenPoints = breakevens(legs, strikes);
 
       return {
         legs,
         strikes,
-        maxProfit,
-        maxLoss,
-        maxRegions,
-        minRegions,
-        breakEvenPoints,
         netCashFlow: cashFlow(legs)
       };
     }
@@ -1252,20 +1266,16 @@
     }
 
     function renderSummary(analysis) {
-      dom.maxProfitValue.textContent = formatMoney(analysis.maxProfit);
-      dom.maxLossValue.textContent = formatMoney(analysis.maxLoss);
-      dom.maxProfitRange.textContent = describeRegions(analysis.maxRegions);
-      dom.maxLossRange.textContent = describeRegions(analysis.minRegions);
-      dom.profitZoneText.textContent = describeRegions(analysis.maxRegions);
-      dom.lossZoneText.textContent = describeRegions(analysis.minRegions);
+      const mapRange = analyzeMapRange(analysis);
+      dom.mapMaxGainValue.textContent = formatMoney(mapRange.maxScenario.pnl);
+      dom.mapMaxGainDetail.textContent = formatMapScenarioDetail(mapRange.maxScenario);
+      dom.mapMaxLossValue.textContent = formatMoney(mapRange.minScenario.pnl);
+      dom.mapMaxLossDetail.textContent = formatMapScenarioDetail(mapRange.minScenario);
+      dom.profitZoneText.textContent = `${formatMoney(mapRange.maxScenario.pnl)} at ${formatMapScenarioDetail(mapRange.maxScenario)}`;
+      dom.lossZoneText.textContent = `${formatMoney(mapRange.minScenario.pnl)} at ${formatMapScenarioDetail(mapRange.minScenario)}`;
 
-      if (analysis.breakEvenPoints.length) {
-        dom.breakevenValue.textContent = analysis.breakEvenPoints.map(formatPrice).join(', ');
-        dom.breakevenDetail.textContent = `${analysis.breakEvenPoints.length} crossing ${analysis.breakEvenPoints.length === 1 ? 'point' : 'points'} at expiry.`;
-      } else {
-        dom.breakevenValue.textContent = 'None';
-        dom.breakevenDetail.textContent = 'The configured legs do not cross $0 in the modeled range.';
-      }
+      dom.breakevenValue.textContent = `${formatPrice(mapRange.domain.minPrice)} - ${formatPrice(mapRange.domain.maxPrice)}`;
+      dom.breakevenDetail.textContent = `${state.days}d ago to Today, based on current chart bounds.`;
 
       dom.cashFlowValue.textContent = formatMoney(analysis.netCashFlow);
       dom.cashFlowDetail.textContent = analysis.netCashFlow < 0
@@ -1293,12 +1303,63 @@
       dom.gradientZoneText.textContent = 'Green cells are estimated profitable. Red cells are estimated losing. Pale cells are near break-even.';
     }
 
+    function lifecyclePricePoints() {
+      if (!state.priceHistory.length) return [];
+      const latest = state.priceHistory[state.priceHistory.length - 1];
+      const startTime = latest.time - state.days * 24 * 60 * 60 * 1000;
+      return state.priceHistory
+        .filter((point) => point.time >= startTime && point.time <= latest.time)
+        .map((point) => ({
+          elapsedDays: clamp((point.time - startTime) / (24 * 60 * 60 * 1000), 0, state.days),
+          price: point.price,
+          date: point.date
+        }));
+    }
+
+    function analyzeMapRange(analysis) {
+      const domain = chartPriceDomain(analysis);
+      const columns = 72;
+      const rows = 64;
+      let maxScenario = { pnl: -Infinity, price: state.spot, elapsedDays: 0, daysRemaining: state.days };
+      let minScenario = { pnl: Infinity, price: state.spot, elapsedDays: 0, daysRemaining: state.days };
+
+      for (let column = 0; column < columns; column += 1) {
+        const elapsedDays = (column / (columns - 1)) * state.days;
+        const daysRemaining = Math.max(state.days - elapsedDays, 0);
+        for (let row = 0; row < rows; row += 1) {
+          const price = domain.maxPrice - (row / (rows - 1)) * (domain.maxPrice - domain.minPrice);
+          const pnl = scenarioPnlAt(price, daysRemaining, analysis.legs);
+          if (pnl > maxScenario.pnl) maxScenario = { pnl, price, elapsedDays, daysRemaining };
+          if (pnl < minScenario.pnl) minScenario = { pnl, price, elapsedDays, daysRemaining };
+        }
+      }
+
+      return { maxScenario, minScenario, domain };
+    }
+
+    function formatMapScenarioDetail(scenario) {
+      const timing = formatScenarioTiming(scenario);
+      return `${timing.when}, ${formatPrice(scenario.price)}, DTE ${formatDays(timing.daysRemaining)}d.`;
+    }
+
     function chartPriceDomain(analysis) {
       const strikes = analysis.strikes.length ? analysis.strikes : [state.spot];
-      const minStrike = strikes[0];
-      const maxStrike = strikes[strikes.length - 1];
-      const minPrice = Math.max(0, Math.min(minStrike * 0.75, state.spot * 0.65));
-      const maxPrice = Math.max(maxStrike * 1.28, state.spot * 1.45, minPrice + 10);
+      const historyPoints = lifecyclePricePoints();
+      const domainPrices = [state.spot, ...strikes, ...historyPoints.map((point) => point.price)]
+        .filter((price) => Number.isFinite(price) && price > 0);
+      const minBase = Math.min(...domainPrices);
+      const maxBase = Math.max(...domainPrices);
+      const strikeSpan = Math.max(strikes[strikes.length - 1] - strikes[0], 0);
+      const step = selectedStrikeStep();
+      const padding = Math.max(state.spot * 0.055, strikeSpan * 0.85, step * 2);
+      let minPrice = Math.max(0, minBase - padding);
+      let maxPrice = maxBase + padding;
+      const minWidth = Math.max(state.spot * 0.16, step * 5);
+      if (maxPrice - minPrice < minWidth) {
+        const center = (maxPrice + minPrice) / 2;
+        minPrice = Math.max(0, center - minWidth / 2);
+        maxPrice = center + minWidth / 2;
+      }
       return { minPrice, maxPrice };
     }
 
@@ -1347,6 +1408,54 @@
         : `rgba(223, 43, 32, ${intensity})`;
     }
 
+    function colorScaleFromCells(cells) {
+      const absValues = cells
+        .map((cell) => Math.abs(cell.pnl))
+        .filter((value) => Number.isFinite(value) && value > 1)
+        .sort((a, b) => a - b);
+      if (!absValues.length) return 1;
+      const percentileIndex = Math.floor((absValues.length - 1) * 0.78);
+      return Math.max(absValues[percentileIndex], 1);
+    }
+
+    function drawPriceHistoryLine(ctx, metrics, points) {
+      if (points.length < 2) return;
+      const visiblePoints = points.map((point) => ({
+        x: metrics.padding.left + (point.elapsedDays / state.days) * metrics.chartWidth,
+        y: metrics.padding.top + (1 - ((point.price - metrics.minPrice) / (metrics.maxPrice - metrics.minPrice))) * metrics.chartHeight
+      })).filter((point) => (
+        Number.isFinite(point.x) &&
+        Number.isFinite(point.y) &&
+        point.x >= metrics.padding.left &&
+        point.x <= metrics.width - metrics.padding.right &&
+        point.y >= metrics.padding.top &&
+        point.y <= metrics.height - metrics.padding.bottom
+      ));
+      if (visiblePoints.length < 2) return;
+
+      ctx.lineJoin = 'round';
+      ctx.lineCap = 'round';
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      visiblePoints.forEach((point, index) => {
+        if (index === 0) ctx.moveTo(point.x, point.y);
+        else ctx.lineTo(point.x, point.y);
+      });
+      ctx.stroke();
+
+      ctx.strokeStyle = '#1c6f9e';
+      ctx.lineWidth = 2.4;
+      ctx.beginPath();
+      visiblePoints.forEach((point, index) => {
+        if (index === 0) ctx.moveTo(point.x, point.y);
+        else ctx.lineTo(point.x, point.y);
+      });
+      ctx.stroke();
+      ctx.lineJoin = 'miter';
+      ctx.lineCap = 'butt';
+    }
+
     function drawScenarioMarker(ctx, scenario, metrics, color) {
       const point = markerPosition(scenario, metrics);
       ctx.strokeStyle = color;
@@ -1376,6 +1485,7 @@
       const { width, height, padding, chartWidth, chartHeight, minPrice, maxPrice } = metrics;
       const xToPx = (elapsedDays) => padding.left + (elapsedDays / state.days) * chartWidth;
       const yToPx = (price) => padding.top + (1 - ((price - minPrice) / (maxPrice - minPrice))) * chartHeight;
+      const historyPoints = lifecyclePricePoints();
 
       ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = '#ffffff';
@@ -1384,22 +1494,21 @@
       const columns = 120;
       const rows = 92;
       const cells = [];
-      let maxAbs = 1;
       for (let column = 0; column < columns; column += 1) {
         const elapsedDays = (column / (columns - 1)) * state.days;
         const daysRemaining = Math.max(state.days - elapsedDays, 0);
         for (let row = 0; row < rows; row += 1) {
           const price = maxPrice - (row / (rows - 1)) * (maxPrice - minPrice);
           const pnl = scenarioPnlAt(price, daysRemaining, analysis.legs);
-          maxAbs = Math.max(maxAbs, Math.abs(pnl));
           cells.push({ column, row, pnl });
         }
       }
 
+      const colorScale = colorScaleFromCells(cells);
       const cellWidth = chartWidth / columns;
       const cellHeight = chartHeight / rows;
       cells.forEach((cell) => {
-        ctx.fillStyle = scenarioColor(cell.pnl, maxAbs);
+        ctx.fillStyle = scenarioColor(cell.pnl, colorScale);
         ctx.fillRect(
           padding.left + cell.column * cellWidth,
           padding.top + cell.row * cellHeight,
@@ -1455,6 +1564,8 @@
         ctx.textBaseline = 'bottom';
         ctx.fillText('Spot', width - padding.right, spotY - 6);
       }
+
+      drawPriceHistoryLine(ctx, metrics, historyPoints);
 
       ctx.strokeStyle = '#18181b';
       ctx.lineWidth = 1.2;
@@ -1538,13 +1649,15 @@
       leg.optionId = `${leg.type}-${Number(leg.strike).toFixed(2)}`;
     }
 
-    async function loadTickerPrice() {
+    async function loadTickerPrice(options = {}) {
+      const preserveStrategy = options.preserveStrategy ?? state.preset === null;
       syncStateFromControls();
       setStatus(`Loading ${escapeHtml(state.ticker)} reference price...`);
       dom.loadTickerButton.disabled = true;
+      const historyRange = yahooRangeForDays(Math.max(state.days, 180));
       const urls = [
-        yahooChartUrl(state.ticker, '1mo'),
-        yahooProxyChartUrl(state.ticker, '1mo')
+        yahooChartUrl(state.ticker, historyRange),
+        yahooProxyChartUrl(state.ticker, historyRange)
       ];
 
       let lastError = null;
@@ -1553,11 +1666,17 @@
           const text = await fetchText(url);
           const prices = parseYahooPayload(text, state.ticker);
           const latest = prices[prices.length - 1];
+          state.priceHistory = prices;
           state.spot = latest.price;
           dom.spotInput.value = latest.price.toFixed(2);
-          generateOptionChain();
-          setPresetLegs();
-          setStatus(`<strong>${escapeHtml(state.ticker)}</strong> loaded at ${formatPrice(state.spot)} from ${escapeHtml(latest.date)}. Premiums are estimated for learning.`);
+          if (preserveStrategy) {
+            rebuildChainAndStrategy();
+          } else {
+            generateOptionChain();
+            setPresetLegs(state.preset || defaultPresetForCount(state.legCount));
+          }
+          setStatus(`<strong>${escapeHtml(state.ticker)}</strong> loaded at ${formatPrice(state.spot)} from ${escapeHtml(latest.date)} with ${prices.length} price points. Premiums are estimated for learning.`);
+          saveSettings();
           renderAll({ rerenderLegs: true });
           dom.loadTickerButton.disabled = false;
           return;
@@ -1566,9 +1685,15 @@
         }
       }
 
-      generateOptionChain();
-      setPresetLegs();
+      if (preserveStrategy) {
+        rebuildChainAndStrategy();
+      } else {
+        generateOptionChain();
+        setPresetLegs(state.preset || defaultPresetForCount(state.legCount));
+      }
+      state.priceHistory = [];
       setStatus(`Could not load live price for ${escapeHtml(state.ticker)}. Using manual spot ${formatPrice(state.spot)}. ${escapeHtml(lastError?.message || '')}`, true);
+      saveSettings();
       renderAll({ rerenderLegs: true });
       dom.loadTickerButton.disabled = false;
     }
@@ -1585,19 +1710,25 @@
       if (event.key === 'Enter') loadTickerPrice();
     });
 
+    dom.tickerInput.addEventListener('change', () => {
+      syncStateFromControls();
+      saveSettings();
+    });
+
     dom.spotInput.addEventListener('change', () => {
       syncStateFromControls();
-      generateOptionChain();
-      setPresetLegs();
+      state.priceHistory = [];
+      rebuildChainAndStrategy();
       setStatus(`Using manual ${escapeHtml(state.ticker)} spot ${formatPrice(state.spot)} with estimated premiums.`);
+      saveSettings();
       renderAll({ rerenderLegs: true });
     });
 
     [dom.expirySelect, dom.strikeStepSelect].forEach((element) => {
       element.addEventListener('change', () => {
         syncStateFromControls();
-        generateOptionChain();
-        setPresetLegs();
+        rebuildChainAndStrategy();
+        saveSettings();
         renderAll({ rerenderLegs: true });
       });
     });
@@ -1605,8 +1736,8 @@
     [dom.ivInput, dom.rateInput].forEach((element) => {
       element.addEventListener('input', () => {
         syncStateFromControls();
-        generateOptionChain();
-        setPresetLegs();
+        rebuildChainAndStrategy();
+        saveSettings();
         renderAll({ rerenderLegs: true });
       });
     });
@@ -1616,6 +1747,7 @@
       if (!button) return;
       const nextCount = Number(button.dataset.count);
       setPresetLegs(defaultPresetForCount(nextCount));
+      saveSettings();
       renderAll({ rerenderLegs: true });
     });
 
@@ -1626,6 +1758,7 @@
       const index = Number(card.dataset.legIndex);
       updateLegFromField(index, 'side', sideButton.dataset.side);
       markCustomStrategy();
+      saveSettings();
       renderAll({ rerenderLegs: true });
     });
 
@@ -1645,6 +1778,7 @@
         updateLegFromField(index, 'quantity', event.target.value);
       }
       markCustomStrategy();
+      saveSettings();
       renderAll({ rerenderLegs: true });
     });
 
@@ -1666,6 +1800,7 @@
       state.selectedScenario = scenarioFromCanvasEvent(event, analysis);
       state.hoverScenario = state.selectedScenario;
       hideChartTooltip();
+      saveSettings();
       renderAll();
     });
 
@@ -1673,10 +1808,14 @@
       drawChart(analyzeStrategy());
     });
 
-    syncStateFromControls();
-    generateOptionChain();
-    setPresetLegs();
+    const restoredSettings = restoreSettings();
+    if (!restoredSettings) {
+      syncStateFromControls();
+      generateOptionChain();
+      setPresetLegs();
+    }
     renderAll({ rerenderLegs: true });
+    loadTickerPrice({ preserveStrategy: restoredSettings });
   </script>
 </body>
 </html>
