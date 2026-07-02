@@ -836,11 +836,17 @@
       return Math.max(type === 'call' ? call : put, 0.05);
     }
 
-    function chooseStrikeStep(spot) {
+    function chooseStrikeStep(spot, ticker = '') {
+      const symbol = String(ticker || '').trim().toUpperCase();
+      const liquidEtfs = new Set(['SPY', 'QQQ', 'IWM', 'DIA']);
+      const broadIndexes = new Set(['SPX', '^SPX', 'NDX', '^NDX', 'RUT', '^RUT']);
+
+      if (liquidEtfs.has(symbol)) return 5;
+      if (broadIndexes.has(symbol)) return 10;
       if (spot < 25) return 1;
-      if (spot < 75) return 2.5;
-      if (spot < 180) return 5;
-      if (spot < 500) return 10;
+      if (spot < 100) return 2.5;
+      if (spot < 600) return 5;
+      if (spot < 1500) return 10;
       return 25;
     }
 
@@ -849,7 +855,7 @@
     }
 
     function selectedStrikeStep() {
-      if (dom.strikeStepSelect.value === 'auto') return chooseStrikeStep(state.spot);
+      if (dom.strikeStepSelect.value === 'auto') return chooseStrikeStep(state.spot, state.ticker);
       return Number(dom.strikeStepSelect.value);
     }
 
