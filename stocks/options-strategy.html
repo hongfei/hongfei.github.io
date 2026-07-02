@@ -602,12 +602,12 @@
             </div>
             <div class="summary-grid">
               <div class="stat-card">
-                <div class="stat-label">Max Shown Gain</div>
+                <div class="stat-label">Max Historical Gain</div>
                 <div class="stat-value profit" id="mapMaxGainValue">$0</div>
                 <div class="stat-detail" id="mapMaxGainDetail">Visible lifecycle range.</div>
               </div>
               <div class="stat-card">
-                <div class="stat-label">Max Shown Loss</div>
+                <div class="stat-label">Max Historical Loss</div>
                 <div class="stat-value loss" id="mapMaxLossValue">$0</div>
                 <div class="stat-detail" id="mapMaxLossDetail">Visible lifecycle range.</div>
               </div>
@@ -1278,13 +1278,13 @@
     }
 
     function renderSummary(analysis) {
-      const mapRange = analyzeMapRange(analysis);
-      dom.mapMaxGainValue.textContent = formatMoney(mapRange.maxScenario.pnl);
-      dom.mapMaxGainDetail.textContent = formatMapScenarioDetail(mapRange.maxScenario);
-      dom.mapMaxLossValue.textContent = formatMoney(mapRange.minScenario.pnl);
-      dom.mapMaxLossDetail.textContent = formatMapScenarioDetail(mapRange.minScenario);
+      const shownRange = analyzeHistoricalPathRange(analysis);
+      dom.mapMaxGainValue.textContent = formatMoney(shownRange.maxScenario.pnl);
+      dom.mapMaxGainDetail.textContent = formatMapScenarioDetail(shownRange.maxScenario);
+      dom.mapMaxLossValue.textContent = formatMoney(shownRange.minScenario.pnl);
+      dom.mapMaxLossDetail.textContent = formatMapScenarioDetail(shownRange.minScenario);
 
-      dom.breakevenValue.textContent = `${formatPrice(mapRange.domain.minPrice)} - ${formatPrice(mapRange.domain.maxPrice)}`;
+      dom.breakevenValue.textContent = `${formatPrice(shownRange.domain.minPrice)} - ${formatPrice(shownRange.domain.maxPrice)}`;
       dom.breakevenDetail.textContent = `${state.days}d ago to Today, based on current chart bounds.`;
 
       dom.cashFlowValue.textContent = formatMoney(analysis.netCashFlow);
@@ -1362,9 +1362,38 @@
       return { maxScenario, minScenario, domain };
     }
 
+    function scenarioFromHistoryPoint(point, legs) {
+      const daysRemaining = Math.max(state.days - point.elapsedDays, 0);
+      return {
+        elapsedDays: point.elapsedDays,
+        daysRemaining,
+        price: point.price,
+        pnl: scenarioPnlAt(point.price, daysRemaining, legs),
+        date: point.date,
+        source: 'history'
+      };
+    }
+
+    function analyzeHistoricalPathRange(analysis) {
+      const domain = chartPriceDomain(analysis);
+      const points = lifecyclePricePoints();
+      if (!points.length) return analyzeMapRange(analysis);
+
+      let maxScenario = null;
+      let minScenario = null;
+      points.forEach((point) => {
+        const scenario = scenarioFromHistoryPoint(point, analysis.legs);
+        if (!maxScenario || scenario.pnl > maxScenario.pnl) maxScenario = scenario;
+        if (!minScenario || scenario.pnl < minScenario.pnl) minScenario = scenario;
+      });
+
+      return { maxScenario, minScenario, domain, source: 'history' };
+    }
+
     function formatMapScenarioDetail(scenario) {
       const timing = formatScenarioTiming(scenario);
-      return `${timing.when}, ${formatPrice(scenario.price)}, DTE ${formatDays(timing.daysRemaining)}d.`;
+      const dateText = scenario.date ? `${scenario.date}, ` : '';
+      return `${dateText}${timing.when}, ${formatPrice(scenario.price)}, DTE ${formatDays(timing.daysRemaining)}d.`;
     }
 
     function chartPriceDomain(analysis) {
@@ -1420,16 +1449,7 @@
       const elapsedDays = (plotX / metrics.chartWidth) * state.days;
       const historyPoint = nearestHistoryPoint(elapsedDays);
       if (historyPoint) {
-        const daysRemaining = Math.max(state.days - historyPoint.elapsedDays, 0);
-        const pnl = scenarioPnlAt(historyPoint.price, daysRemaining, analysis.legs);
-        return {
-          elapsedDays: historyPoint.elapsedDays,
-          daysRemaining,
-          price: historyPoint.price,
-          pnl,
-          date: historyPoint.date,
-          source: 'history'
-        };
+        return scenarioFromHistoryPoint(historyPoint, analysis.legs);
       }
 
       const plotY = clamp(localY - metrics.padding.top, 0, metrics.chartHeight);
