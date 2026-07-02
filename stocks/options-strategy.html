@@ -321,6 +321,15 @@
       border-color: #1c6f9e;
     }
 
+    .legend-swatch.leg-strike {
+      background: repeating-linear-gradient(
+        90deg,
+        #b45309 0 5px,
+        transparent 5px 8px
+      );
+      border-color: rgba(180, 83, 9, 0.45);
+    }
+
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -495,10 +504,10 @@
     <header>
       <div>
         <h1>Option Strategy Lab</h1>
-        <p class="subtitle">Build 1, 2, or 4 leg option strategies and inspect expiry payoff zones.</p>
+        <p class="subtitle">Build 1, 2, or 4 leg option strategies and inspect historical lifecycle P/L zones.</p>
       </div>
       <div class="header-note">
-        Educational model. Ticker price is loaded from Yahoo chart data when available; option premiums are estimated from spot, IV, rate, and days to expiry.
+        Educational model. Historical prices are loaded when available; option premiums are estimated from entry spot, IV, rate, and initial DTE.
       </div>
     </header>
 
@@ -511,14 +520,14 @@
               <input id="tickerInput" class="ticker-input" type="text" value="SPY" autocomplete="off" spellcheck="false" />
             </div>
             <div class="field">
-              <label for="spotInput">Spot Price</label>
+              <label for="spotInput">Entry Spot</label>
               <input id="spotInput" type="number" min="1" step="0.01" value="500" />
             </div>
           </div>
 
           <div class="inline-fields">
             <div class="field">
-              <label for="expirySelect">Expiry</label>
+              <label for="expirySelect">Initial DTE</label>
               <select id="expirySelect">
                 <option value="30">30 days</option>
                 <option value="45" selected>45 days</option>
@@ -604,6 +613,7 @@
             <span class="legend-item"><span class="legend-swatch gradient"></span>Lifecycle P/L heatmap</span>
             <span class="legend-item"><span class="legend-swatch max-profit"></span>Estimated profit</span>
             <span class="legend-item"><span class="legend-swatch max-loss"></span>Estimated loss</span>
+            <span class="legend-item"><span class="legend-swatch leg-strike"></span>Leg strikes</span>
             <span class="legend-item"><span class="legend-swatch price-line"></span>Actual price line</span>
             <span class="legend-item"><span class="legend-swatch selected"></span>Selected point</span>
           </div>
@@ -616,12 +626,12 @@
           </div>
           <div class="summary-grid">
             <div class="stat-card">
-              <div class="stat-label">Max Gain</div>
+              <div class="stat-label">Max Shown Gain</div>
               <div class="stat-value profit" id="mapMaxGainValue">$0</div>
               <div class="stat-detail" id="mapMaxGainDetail">Visible lifecycle range.</div>
             </div>
             <div class="stat-card">
-              <div class="stat-label">Max Loss</div>
+              <div class="stat-label">Max Shown Loss</div>
               <div class="stat-value loss" id="mapMaxLossValue">$0</div>
               <div class="stat-detail" id="mapMaxLossDetail">Visible lifecycle range.</div>
             </div>
@@ -677,7 +687,7 @@
             </div>
             <div class="range-card">
               <strong>Heatmap scale</strong>
-              <p id="gradientZoneText">Green areas are profitable at expiry. Red areas lose money. Pale bands are near break-even.</p>
+              <p id="gradientZoneText">Green cells are profitable in the shown lifecycle range. Red cells lose money. Pale cells are near break-even.</p>
             </div>
           </div>
         </div>
@@ -698,6 +708,7 @@
     const CONTRACT_MULTIPLIER = 100;
     const EPSILON = 0.000001;
     const STORAGE_KEY = 'optionStrategyLab.settings.v1';
+    const STRIKE_LINE_COLORS = ['#b45309', '#7c3aed', '#0f766e', '#be123c', '#0369a1', '#4d7c0f'];
     const PRESET_DEFINITIONS = {
       longCall: { label: 'Long Call', count: 1 },
       longPut: { label: 'Long Put', count: 1 },
@@ -754,6 +765,7 @@
     const state = {
       ticker: 'SPY',
       spot: 500,
+      currentSpot: 500,
       iv: 0.28,
       rate: 0.045,
       days: 45,
@@ -1047,7 +1059,9 @@
       if (typeof localStorage === 'undefined') return;
       const payload = {
         ticker: state.ticker,
+        entrySpot: state.spot,
         spot: state.spot,
+        currentSpot: state.currentSpot,
         days: state.days,
         strikeStep: dom.strikeStepSelect.value,
         iv: state.iv,
@@ -1079,9 +1093,16 @@
         dom.tickerInput.value = ticker;
       }
 
-      if (Number.isFinite(Number(settings.spot)) && Number(settings.spot) > 0) {
-        state.spot = Number(settings.spot);
+      const cachedEntrySpot = Number(settings.entrySpot || settings.spot);
+      if (Number.isFinite(cachedEntrySpot) && cachedEntrySpot > 0) {
+        state.spot = cachedEntrySpot;
         dom.spotInput.value = state.spot.toFixed(2);
+      }
+
+      if (Number.isFinite(Number(settings.currentSpot)) && Number(settings.currentSpot) > 0) {
+        state.currentSpot = Number(settings.currentSpot);
+      } else {
+        state.currentSpot = state.spot;
       }
 
       if ([30, 45, 60, 90, 180].includes(Number(settings.days))) {
@@ -1298,7 +1319,7 @@
         dom.scenarioPnlDetail.textContent = 'Click a point to lock a lifecycle scenario.';
       }
 
-      dom.chartKicker.textContent = `${state.ticker}, ${state.days}d ago to Today, spot ${formatPrice(state.spot)}`;
+      dom.chartKicker.textContent = `${state.ticker}, ${state.days}d ago to Today, entry ${formatPrice(state.spot)}, today ${formatPrice(state.currentSpot)}`;
       dom.summaryKicker.textContent = `IV ${formatPercent(state.iv)}, rate ${formatPercent(state.rate)}`;
       dom.gradientZoneText.textContent = 'Green cells are estimated profitable. Red cells are estimated losing. Pale cells are near break-even.';
     }
@@ -1316,12 +1337,27 @@
         }));
     }
 
+    function lifecycleEntryPoint() {
+      const points = lifecyclePricePoints();
+      return points.length ? points[0] : null;
+    }
+
+    function applyEntrySpotFromHistory() {
+      const entryPoint = lifecycleEntryPoint();
+      const latest = state.priceHistory[state.priceHistory.length - 1];
+      if (latest) state.currentSpot = latest.price;
+      if (!entryPoint) return false;
+      state.spot = entryPoint.price;
+      dom.spotInput.value = state.spot.toFixed(2);
+      return true;
+    }
+
     function analyzeMapRange(analysis) {
       const domain = chartPriceDomain(analysis);
       const columns = 72;
       const rows = 64;
-      let maxScenario = { pnl: -Infinity, price: state.spot, elapsedDays: 0, daysRemaining: state.days };
-      let minScenario = { pnl: Infinity, price: state.spot, elapsedDays: 0, daysRemaining: state.days };
+      let maxScenario = { pnl: -Infinity, price: state.currentSpot || state.spot, elapsedDays: 0, daysRemaining: state.days };
+      let minScenario = { pnl: Infinity, price: state.currentSpot || state.spot, elapsedDays: 0, daysRemaining: state.days };
 
       for (let column = 0; column < columns; column += 1) {
         const elapsedDays = (column / (columns - 1)) * state.days;
@@ -1345,7 +1381,7 @@
     function chartPriceDomain(analysis) {
       const strikes = analysis.strikes.length ? analysis.strikes : [state.spot];
       const historyPoints = lifecyclePricePoints();
-      const domainPrices = [state.spot, ...strikes, ...historyPoints.map((point) => point.price)]
+      const domainPrices = [state.spot, state.currentSpot, ...strikes, ...historyPoints.map((point) => point.price)]
         .filter((price) => Number.isFinite(price) && price > 0);
       const minBase = Math.min(...domainPrices);
       const maxBase = Math.max(...domainPrices);
@@ -1456,6 +1492,57 @@
       ctx.lineCap = 'butt';
     }
 
+    function strikeLineItems(legs) {
+      return legs.reduce((items, leg, index) => {
+        if (!leg || !Number.isFinite(leg.strike) || leg.strike <= 0) return items;
+        const existing = items.find((item) => Math.abs(item.strike - leg.strike) < 0.005);
+        const label = `L${index + 1}`;
+        if (existing) {
+          existing.labels.push(label);
+        } else {
+          items.push({
+            strike: leg.strike,
+            labels: [label],
+            color: STRIKE_LINE_COLORS[items.length % STRIKE_LINE_COLORS.length]
+          });
+        }
+        return items;
+      }, []);
+    }
+
+    function drawStrikeLines(ctx, metrics, legs) {
+      const items = strikeLineItems(legs);
+      if (!items.length) return;
+      const yToPx = (price) => metrics.padding.top + (1 - ((price - metrics.minPrice) / (metrics.maxPrice - metrics.minPrice))) * metrics.chartHeight;
+
+      ctx.save();
+      ctx.font = '11px Inter, sans-serif';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      items.forEach((item) => {
+        if (item.strike < metrics.minPrice || item.strike > metrics.maxPrice) return;
+        const y = yToPx(item.strike);
+        const label = `${item.labels.join('/')} ${formatPrice(item.strike)}`;
+        const labelX = metrics.width - metrics.padding.right - 6;
+        const labelWidth = ctx.measureText(label).width + 10;
+
+        ctx.strokeStyle = item.color;
+        ctx.lineWidth = 1.4;
+        ctx.setLineDash([7, 5]);
+        ctx.beginPath();
+        ctx.moveTo(metrics.padding.left, y);
+        ctx.lineTo(metrics.width - metrics.padding.right, y);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.82)';
+        ctx.fillRect(labelX - labelWidth, y - 8, labelWidth, 16);
+        ctx.fillStyle = item.color;
+        ctx.fillText(label, labelX - 5, y);
+      });
+      ctx.restore();
+    }
+
     function drawScenarioMarker(ctx, scenario, metrics, color) {
       const point = markerPosition(scenario, metrics);
       ctx.strokeStyle = color;
@@ -1562,9 +1649,10 @@
         ctx.fillStyle = '#1c6f9e';
         ctx.textAlign = 'right';
         ctx.textBaseline = 'bottom';
-        ctx.fillText('Spot', width - padding.right, spotY - 6);
+        ctx.fillText('Entry', width - padding.right, spotY - 6);
       }
 
+      drawStrikeLines(ctx, metrics, analysis.legs);
       drawPriceHistoryLine(ctx, metrics, historyPoints);
 
       ctx.strokeStyle = '#18181b';
@@ -1621,6 +1709,7 @@
     function syncStateFromControls() {
       state.ticker = dom.tickerInput.value.trim().toUpperCase() || 'SPY';
       state.spot = Math.max(Number(dom.spotInput.value) || 1, 1);
+      if (!state.priceHistory.length) state.currentSpot = state.spot;
       state.days = Number(dom.expirySelect.value);
       state.iv = Number(dom.ivInput.value) / 100;
       state.rate = Number(dom.rateInput.value) / 100;
@@ -1652,7 +1741,7 @@
     async function loadTickerPrice(options = {}) {
       const preserveStrategy = options.preserveStrategy ?? state.preset === null;
       syncStateFromControls();
-      setStatus(`Loading ${escapeHtml(state.ticker)} reference price...`);
+      setStatus(`Loading ${escapeHtml(state.ticker)} historical prices...`);
       dom.loadTickerButton.disabled = true;
       const historyRange = yahooRangeForDays(Math.max(state.days, 180));
       const urls = [
@@ -1667,15 +1756,15 @@
           const prices = parseYahooPayload(text, state.ticker);
           const latest = prices[prices.length - 1];
           state.priceHistory = prices;
-          state.spot = latest.price;
-          dom.spotInput.value = latest.price.toFixed(2);
+          state.currentSpot = latest.price;
+          applyEntrySpotFromHistory();
           if (preserveStrategy) {
             rebuildChainAndStrategy();
           } else {
             generateOptionChain();
             setPresetLegs(state.preset || defaultPresetForCount(state.legCount));
           }
-          setStatus(`<strong>${escapeHtml(state.ticker)}</strong> loaded at ${formatPrice(state.spot)} from ${escapeHtml(latest.date)} with ${prices.length} price points. Premiums are estimated for learning.`);
+          setStatus(`<strong>${escapeHtml(state.ticker)}</strong> loaded. Entry ${formatPrice(state.spot)}, today ${formatPrice(state.currentSpot)} from ${escapeHtml(latest.date)}. Premiums are estimated from entry spot.`);
           saveSettings();
           renderAll({ rerenderLegs: true });
           dom.loadTickerButton.disabled = false;
@@ -1692,7 +1781,8 @@
         setPresetLegs(state.preset || defaultPresetForCount(state.legCount));
       }
       state.priceHistory = [];
-      setStatus(`Could not load live price for ${escapeHtml(state.ticker)}. Using manual spot ${formatPrice(state.spot)}. ${escapeHtml(lastError?.message || '')}`, true);
+      state.currentSpot = state.spot;
+      setStatus(`Could not load historical prices for ${escapeHtml(state.ticker)}. Using manual entry spot ${formatPrice(state.spot)}. ${escapeHtml(lastError?.message || '')}`, true);
       saveSettings();
       renderAll({ rerenderLegs: true });
       dom.loadTickerButton.disabled = false;
@@ -1718,8 +1808,9 @@
     dom.spotInput.addEventListener('change', () => {
       syncStateFromControls();
       state.priceHistory = [];
+      state.currentSpot = state.spot;
       rebuildChainAndStrategy();
-      setStatus(`Using manual ${escapeHtml(state.ticker)} spot ${formatPrice(state.spot)} with estimated premiums.`);
+      setStatus(`Using manual ${escapeHtml(state.ticker)} entry spot ${formatPrice(state.spot)} with estimated premiums.`);
       saveSettings();
       renderAll({ rerenderLegs: true });
     });
@@ -1727,6 +1818,7 @@
     [dom.expirySelect, dom.strikeStepSelect].forEach((element) => {
       element.addEventListener('change', () => {
         syncStateFromControls();
+        if (state.priceHistory.length) applyEntrySpotFromHistory();
         rebuildChainAndStrategy();
         saveSettings();
         renderAll({ rerenderLegs: true });
@@ -1815,7 +1907,7 @@
       setPresetLegs();
     }
     renderAll({ rerenderLegs: true });
-    loadTickerPrice({ preserveStrategy: restoredSettings });
+    loadTickerPrice({ preserveStrategy: state.preset === null });
   </script>
 </body>
 </html>
