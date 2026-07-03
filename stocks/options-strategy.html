@@ -116,28 +116,6 @@
       color: #b91c1c;
     }
 
-    .checkbox-field {
-      min-height: 40px;
-      justify-content: center;
-      gap: 8px;
-      padding: 8px 10px;
-      border: 1px solid var(--border-light);
-      border-radius: 6px;
-      background: #f4f4f5;
-    }
-
-    .checkbox-field input {
-      width: auto;
-      min-height: auto;
-      margin: 0;
-    }
-
-    .checkbox-field span {
-      color: var(--text-primary);
-      font-size: 0.8rem;
-      font-weight: 700;
-    }
-
     .btn.action-button {
       min-height: 40px;
       justify-content: center;
@@ -596,11 +574,6 @@
             </div>
           </div>
 
-          <label class="checkbox-field" for="useYahooIvInput">
-            <input id="useYahooIvInput" type="checkbox" />
-            <span>Use Yahoo option chain / IV</span>
-          </label>
-
           <fieldset class="field">
             <legend>Popular Strategies</legend>
             <div class="preset-grid" id="presetGrid" role="group" aria-label="Popular option strategy presets">
@@ -710,11 +683,8 @@
     const {
       escapeHtml,
       fetchText,
-      parseYahooOptionsPayload,
       parseYahooPayload,
       yahooChartUrl,
-      yahooOptionsUrl,
-      yahooProxyOptionsUrl,
       yahooProxyChartUrl
     } = window.StockTools;
 
@@ -747,7 +717,6 @@
       strikeStepSelect: document.getElementById('strikeStepSelect'),
       ivInput: document.getElementById('ivInput'),
       ivOutput: document.getElementById('ivOutput'),
-      useYahooIvInput: document.getElementById('useYahooIvInput'),
       rateInput: document.getElementById('rateInput'),
       rateOutput: document.getElementById('rateOutput'),
       presetGrid: document.getElementById('presetGrid'),
@@ -781,9 +750,6 @@
       legCount: 2,
       preset: 'bullCallSpread',
       chain: [],
-      chainSource: 'model',
-      yahooOptionMeta: null,
-      useYahooIv: false,
       legs: [],
       priceHistory: [],
       hoverScenario: null,
@@ -870,66 +836,6 @@
       return Math.max(type === 'call' ? call : put, 0.05);
     }
 
-    function optionPremium(option) {
-      const bid = Number(option.bid);
-      const ask = Number(option.ask);
-      const last = Number(option.lastPrice);
-      if (Number.isFinite(bid) && Number.isFinite(ask) && bid > 0 && ask > 0) return (bid + ask) / 2;
-      if (Number.isFinite(last) && last >= 0) return last;
-      return Number(option.premium);
-    }
-
-    function targetExpirationUnix() {
-      return Math.round((Date.now() + state.days * 24 * 60 * 60 * 1000) / 1000);
-    }
-
-    function chooseExpiration(expirationDates) {
-      if (!Array.isArray(expirationDates) || !expirationDates.length) return null;
-      const target = targetExpirationUnix();
-      return expirationDates.reduce((closest, expiration) => (
-        Math.abs(expiration - target) < Math.abs(closest - target) ? expiration : closest
-      ), expirationDates[0]);
-    }
-
-    async function fetchYahooOptions(expirationUnix = null) {
-      const urls = [
-        yahooOptionsUrl(state.ticker, expirationUnix),
-        yahooProxyOptionsUrl(state.ticker, expirationUnix)
-      ];
-      let lastError = null;
-      for (const url of urls) {
-        try {
-          const text = await fetchText(url);
-          return parseYahooOptionsPayload(text, state.ticker);
-        } catch (error) {
-          lastError = error;
-        }
-      }
-      throw lastError || new Error('Could not load Yahoo option chain');
-    }
-
-    async function loadYahooOptionChain() {
-      const initial = await fetchYahooOptions();
-      const expiration = chooseExpiration(initial.expirationDates) || initial.expiration;
-      const payload = expiration && expiration !== initial.expiration
-        ? await fetchYahooOptions(expiration)
-        : initial;
-      if (!payload.contracts.length) throw new Error(`No Yahoo contracts found for ${state.ticker}`);
-
-      state.chain = payload.contracts.map((option) => ({
-        ...option,
-        premium: Number(optionPremium(option).toFixed(2)),
-        impliedVolatility: Number.isFinite(option.impliedVolatility) && option.impliedVolatility > 0
-          ? option.impliedVolatility
-          : state.iv
-      }));
-      state.chainSource = 'yahoo';
-      state.yahooOptionMeta = {
-        expiration: payload.expiration || expiration,
-        contractCount: state.chain.length
-      };
-    }
-
     function chooseStrikeStep(spot, ticker = '') {
       const symbol = String(ticker || '').trim().toUpperCase();
       const liquidEtfs = new Set(['SPY', 'QQQ', 'IWM', 'DIA']);
@@ -970,14 +876,10 @@
             id: `${type}-${strike.toFixed(2)}`,
             type,
             strike,
-            premium: Number(premium.toFixed(2)),
-            impliedVolatility: state.iv,
-            source: 'model'
+            premium: Number(premium.toFixed(2))
           });
         });
       });
-      state.chainSource = 'model';
-      state.yahooOptionMeta = null;
       state.chain.sort((a, b) => a.strike - b.strike || a.type.localeCompare(b.type));
     }
 
@@ -996,13 +898,10 @@
     function buildLegFromOption(option, side = 'buy') {
       return {
         optionId: option.id,
-        contractSymbol: option.contractSymbol || '',
         side,
         type: option.type,
         strike: option.strike,
         premium: option.premium,
-        iv: Number.isFinite(option.impliedVolatility) && option.impliedVolatility > 0 ? option.impliedVolatility : state.iv,
-        source: option.source || state.chainSource,
         quantity: 1
       };
     }
@@ -1119,50 +1018,23 @@
       renderAll({ rerenderLegs: true });
     }
 
-    async function loadChainForCurrentMode() {
-      if (!state.useYahooIv) {
-        generateOptionChain();
-        return 'Model option chain.';
-      }
-
-      try {
-        await loadYahooOptionChain();
-        const expirationText = state.yahooOptionMeta?.expiration
-          ? new Date(state.yahooOptionMeta.expiration * 1000).toISOString().slice(0, 10)
-          : 'nearest expiry';
-        return `Yahoo option chain (${expirationText}, ${state.yahooOptionMeta?.contractCount || state.chain.length} contracts).`;
-      } catch (error) {
-        generateOptionChain();
-        return 'Yahoo option chain unavailable; using model chain.';
-      }
-    }
-
-    function applyStrategyAfterChain(preserveStrategy = state.preset === null) {
+    function rebuildChainAndStrategy() {
+      generateOptionChain();
       if (state.preset) {
-        if (!preserveStrategy) setPresetLegs(state.preset);
+        setPresetLegs(state.preset);
       } else {
         syncLegCountButtons();
         syncPresetButtons();
       }
     }
 
-    async function rebuildChainAndStrategy(options = {}) {
-      const preserveStrategy = options.preserveStrategy ?? state.preset === null;
-      const chainMessage = await loadChainForCurrentMode();
-      applyStrategyAfterChain(preserveStrategy);
-      return chainMessage;
-    }
-
     function serializableLeg(leg) {
       return {
         optionId: leg.optionId,
-        contractSymbol: leg.contractSymbol || '',
         side: leg.side,
         type: leg.type,
         strike: Number(leg.strike),
         premium: Number(leg.premium),
-        iv: Number(leg.iv),
-        source: leg.source || 'model',
         quantity: Number(leg.quantity)
       };
     }
@@ -1177,7 +1049,6 @@
         days: state.days,
         strikeStep: dom.strikeStepSelect.value,
         iv: state.iv,
-        useYahooIv: state.useYahooIv,
         rate: state.rate,
         legCount: state.legCount,
         preset: state.preset,
@@ -1233,9 +1104,6 @@
         dom.ivInput.value = String(Math.round(state.iv * 100));
       }
 
-      state.useYahooIv = Boolean(settings.useYahooIv);
-      dom.useYahooIvInput.checked = state.useYahooIv;
-
       if (Number.isFinite(Number(settings.rate))) {
         state.rate = clamp(Number(settings.rate), 0, 0.08);
         dom.rateInput.value = String(Number((state.rate * 100).toFixed(1)));
@@ -1245,13 +1113,10 @@
 
       const savedLegs = Array.isArray(settings.legs) ? settings.legs.slice(0, 4).map((leg) => ({
         optionId: String(leg.optionId || ''),
-        contractSymbol: String(leg.contractSymbol || ''),
         side: leg.side === 'sell' ? 'sell' : 'buy',
         type: leg.type === 'put' ? 'put' : 'call',
         strike: Math.max(Number(leg.strike) || state.spot, 0.01),
         premium: Math.max(Number(leg.premium) || 0, 0),
-        iv: Number.isFinite(Number(leg.iv)) && Number(leg.iv) > 0 ? Number(leg.iv) : state.iv,
-        source: leg.source === 'yahoo' ? 'yahoo' : 'model',
         quantity: Math.max(Math.round(Number(leg.quantity) || 1), 1)
       })) : [];
       const savedPresetValid = typeof settings.preset === 'string' && settings.preset in PRESET_DEFINITIONS;
@@ -1282,19 +1147,19 @@
       ));
     }
 
-    function optionValueAt(type, price, strike, daysRemaining, volatility = state.iv) {
+    function optionValueAt(type, price, strike, daysRemaining) {
       const safePrice = Math.max(price, 0.01);
       if (daysRemaining <= EPSILON) {
         return type === 'call'
           ? Math.max(safePrice - strike, 0)
           : Math.max(strike - safePrice, 0);
       }
-      return blackScholes(type, safePrice, strike, daysRemaining, state.rate, volatility);
+      return blackScholes(type, safePrice, strike, daysRemaining, state.rate, state.iv);
     }
 
     function scenarioPnlAt(price, daysRemaining, legs = activeLegs()) {
       return legs.reduce((total, leg) => {
-        const value = optionValueAt(leg.type, price, leg.strike, daysRemaining, leg.iv || state.iv);
+        const value = optionValueAt(leg.type, price, leg.strike, daysRemaining);
         const unitPnl = leg.side === 'buy'
           ? value - leg.premium
           : leg.premium - value;
@@ -1329,8 +1194,7 @@
         const options = state.chain
           .filter((option) => option.type === type)
           .map((option) => {
-            const ivText = option.source === 'yahoo' && Number.isFinite(option.impliedVolatility) ? ` | IV ${formatPercent(option.impliedVolatility)}` : '';
-            const label = `${option.type.toUpperCase()} ${formatPrice(option.strike)} | ${formatPrice(option.premium)}${ivText}`;
+            const label = `${option.type.toUpperCase()} ${formatPrice(option.strike)} | ${formatPrice(option.premium)}`;
             return `<option value="${escapeHtml(option.id)}">${escapeHtml(label)}</option>`;
           }).join('');
         return `<optgroup label="${type.toUpperCase()}">${options}</optgroup>`;
@@ -1446,9 +1310,7 @@
       }
 
       dom.chartKicker.textContent = `${state.ticker}, ${state.days}d ago to Today, entry ${formatPrice(state.spot)}, today ${formatPrice(state.currentSpot)}`;
-      dom.summaryKicker.textContent = state.chainSource === 'yahoo'
-        ? `Yahoo IV, rate ${formatPercent(state.rate)}`
-        : `IV ${formatPercent(state.iv)}, rate ${formatPercent(state.rate)}`;
+      dom.summaryKicker.textContent = `IV ${formatPercent(state.iv)}, rate ${formatPercent(state.rate)}`;
     }
 
     function lifecyclePricePoints() {
@@ -1872,8 +1734,7 @@
     }
 
     function renderAll({ rerenderLegs = false } = {}) {
-      dom.ivOutput.textContent = state.chainSource === 'yahoo' ? 'Yahoo' : `${Math.round(state.iv * 100)}%`;
-      dom.ivInput.disabled = state.chainSource === 'yahoo';
+      dom.ivOutput.textContent = `${Math.round(state.iv * 100)}%`;
       dom.rateOutput.textContent = formatPercent(state.rate);
       if (rerenderLegs) renderLegEditors();
       const analysis = analyzeStrategy();
@@ -1887,7 +1748,6 @@
       if (!state.priceHistory.length) state.currentSpot = state.spot;
       state.days = Number(dom.expirySelect.value);
       state.iv = Number(dom.ivInput.value) / 100;
-      state.useYahooIv = dom.useYahooIvInput.checked;
       state.rate = Number(dom.rateInput.value) / 100;
     }
 
@@ -1897,12 +1757,9 @@
       state.legs[index] = {
         ...state.legs[index],
         optionId: option.id,
-        contractSymbol: option.contractSymbol || '',
         type: option.type,
         strike: option.strike,
-        premium: option.premium,
-        iv: Number.isFinite(option.impliedVolatility) && option.impliedVolatility > 0 ? option.impliedVolatility : state.iv,
-        source: option.source || state.chainSource
+        premium: option.premium
       };
     }
 
@@ -1915,7 +1772,6 @@
       if (field === 'premium') leg.premium = Math.max(Number(value) || 0, 0);
       if (field === 'quantity') leg.quantity = Math.max(Math.round(Number(value) || 1), 1);
       leg.optionId = `${leg.type}-${Number(leg.strike).toFixed(2)}`;
-      leg.source = 'custom';
     }
 
     async function loadTickerPrice(options = {}) {
@@ -1938,8 +1794,13 @@
           state.priceHistory = prices;
           state.currentSpot = latest.price;
           applyEntrySpotFromHistory();
-          const chainMessage = await rebuildChainAndStrategy({ preserveStrategy });
-          setStatus(`<strong>${escapeHtml(state.ticker)}</strong> loaded. Entry ${formatPrice(state.spot)}, today ${formatPrice(state.currentSpot)} from ${escapeHtml(latest.date)}. ${escapeHtml(chainMessage)}`);
+          if (preserveStrategy) {
+            rebuildChainAndStrategy();
+          } else {
+            generateOptionChain();
+            setPresetLegs(state.preset || defaultPresetForCount(state.legCount));
+          }
+          setStatus(`<strong>${escapeHtml(state.ticker)}</strong> loaded. Entry ${formatPrice(state.spot)}, today ${formatPrice(state.currentSpot)} from ${escapeHtml(latest.date)}. Premiums are estimated from entry spot.`);
           saveSettings();
           renderAll({ rerenderLegs: true });
           dom.loadTickerButton.disabled = false;
@@ -1949,10 +1810,15 @@
         }
       }
 
-      const chainMessage = await rebuildChainAndStrategy({ preserveStrategy });
+      if (preserveStrategy) {
+        rebuildChainAndStrategy();
+      } else {
+        generateOptionChain();
+        setPresetLegs(state.preset || defaultPresetForCount(state.legCount));
+      }
       state.priceHistory = [];
       state.currentSpot = state.spot;
-      setStatus(`Could not load historical prices for ${escapeHtml(state.ticker)}. Using manual entry spot ${formatPrice(state.spot)}. ${escapeHtml(chainMessage)} ${escapeHtml(lastError?.message || '')}`, true);
+      setStatus(`Could not load historical prices for ${escapeHtml(state.ticker)}. Using manual entry spot ${formatPrice(state.spot)}. ${escapeHtml(lastError?.message || '')}`, true);
       saveSettings();
       renderAll({ rerenderLegs: true });
       dom.loadTickerButton.disabled = false;
@@ -1975,45 +1841,33 @@
       saveSettings();
     });
 
-    dom.spotInput.addEventListener('change', async () => {
+    dom.spotInput.addEventListener('change', () => {
       syncStateFromControls();
       state.priceHistory = [];
       state.currentSpot = state.spot;
-      const chainMessage = await rebuildChainAndStrategy();
+      rebuildChainAndStrategy();
       setStatus(`Using manual ${escapeHtml(state.ticker)} entry spot ${formatPrice(state.spot)} with estimated premiums.`);
-      if (state.useYahooIv) setStatus(`${escapeHtml(chainMessage)} Manual entry spot ${formatPrice(state.spot)}.`, state.chainSource !== 'yahoo');
       saveSettings();
       renderAll({ rerenderLegs: true });
     });
 
     [dom.expirySelect, dom.strikeStepSelect].forEach((element) => {
-      element.addEventListener('change', async () => {
+      element.addEventListener('change', () => {
         syncStateFromControls();
         if (state.priceHistory.length) applyEntrySpotFromHistory();
-        const chainMessage = await rebuildChainAndStrategy();
-        if (state.useYahooIv) setStatus(escapeHtml(chainMessage), state.chainSource !== 'yahoo');
+        rebuildChainAndStrategy();
         saveSettings();
         renderAll({ rerenderLegs: true });
       });
     });
 
     [dom.ivInput, dom.rateInput].forEach((element) => {
-      element.addEventListener('input', async () => {
+      element.addEventListener('input', () => {
         syncStateFromControls();
-        if (!state.useYahooIv) {
-          await rebuildChainAndStrategy();
-        }
+        rebuildChainAndStrategy();
         saveSettings();
         renderAll({ rerenderLegs: true });
       });
-    });
-
-    dom.useYahooIvInput.addEventListener('change', async () => {
-      syncStateFromControls();
-      const chainMessage = await rebuildChainAndStrategy();
-      setStatus(escapeHtml(chainMessage), state.useYahooIv && state.chainSource !== 'yahoo');
-      saveSettings();
-      renderAll({ rerenderLegs: true });
     });
 
     dom.legCountControl.addEventListener('click', (event) => {
