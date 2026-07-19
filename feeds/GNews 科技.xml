@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>俄罗斯为何“拦不住无人机”？ - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/gj/2026-07-19/detail-iniiimta1192741.d.html?vt=4&amp;pos=108</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>22岁老掌机重生！大神将CS完美移植到PSP：12MB内存稳定60帧 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137500.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月17日消息，&lt;span&gt;&lt;strong&gt;开发者Yifeng Wang近日将经典射击游戏CS移植到初代PSP掌机上，项目命名为OpenStrike，仅占用12MB内存即可稳定运行60帧。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Yifeng Wang为该项目搭建了双引擎架构：底层使用Rust语言自研的3D引擎Pocket3D，负责玩家移动、碰撞检测、AI机器人、武器、子弹和场景绘制等对帧率要求极高的任务。&lt;/p&gt;
+&lt;p&gt;上层使用自研JavaScript引擎PocketJS，通过内嵌的QuickJS执行JavaScript和TypeScript，处理游戏规则、武器参数和血量、弹药、准星、比分等界面逻辑。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这种分层设计让开发者只需修改rules.ts文件就能调整回合流程、机器人数量或武器设定，无需重新编译整个3D引擎。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260719/ded27e63-a444-46ce-aece-3472edeb9089.jpg" target="_blank"&gt;&lt;img alt="22岁老掌机重生！大神将CS完美移植到PSP：12MB内存稳定60帧" h="266" src="//img1.mydrivers.com/img/20260719/Sded27e63-a444-46ce-aece-3472edeb9089.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;初代PSP配备32MB内存，但实际留给用户程序的可用空间约24MB，根据Yifeng Wang公开的内存分析，Rust引擎、QuickJS、JavaScript程序和处理完成的地图执行文件约占6.2MB，QuickJS堆、引擎状态和每帧顶点缓存区使用峰值约4.4MB，整体占用约12MB，剩余约13MB可用空间。&lt;/p&gt;
+&lt;p&gt;OpenStrike能在PSP上维持60帧的关键在于尽可能减少不必要的运算，原版CS使用GoldSrc时代的BSP地图格式，BSP全称二元空间分割，会将整张地图切分为多个区域，地图文件中包含PVS（可能可见区域）数据。&lt;/p&gt;
+&lt;p&gt;引擎通过查表就能瞬间判断画面可视范围，墙后看不到的房间和通道直接跳过检测和绘制，不浪费GPU性能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;现代显卡有足够算力处理更复杂的遮蔽剔除算法，但PSP最缺的就是运算资源，直接沿用1990年代预计算好的结果反而更高效。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;光影处理采用同样思路，GoldSrc地图原本附带Lightmap记录墙面和物件的阴影明暗变化，OpenStrike没有让PSP在运行时重新计算光影，而是在电脑编译阶段将Lightmap结果放进模型顶点颜色。&lt;/p&gt;
+&lt;p&gt;PSP只需按顶点颜色绘制三角形，硬件自动完成颜色渐变，无需叠加实时光影层。代价是画面没有动态光源和华丽阴影，但对于4.3英寸、480×272分辨率的PSP屏幕来说，这个取舍完全合理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前OpenStrike为v0.1概念验证版本，已测试8张经典CS地图，包括de_dust、de_dust2、de_inferno和cs_office。&lt;/strong&gt;玩家可在地图中与AI机器人进行歼灭战，消灭所有机器人即获胜，玩家先死亡则判定失败，游戏自动开始下一回合并保留比分。&lt;/p&gt;
+&lt;p&gt;项目已以MIT授权在&lt;a class="f14_link" href="https://github.com/pocket-stack/open-strike" target="_blank"&gt;GitHub&lt;/a&gt;开源，支持桌面版和PSP的EBOOT执行文件，也可通过PPSSPP模拟器运行。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260719/6eb1fd2d-2864-42c3-b98c-be5afd860d29.jpg" target="_blank"&gt;&lt;img alt="22岁老掌机重生！大神将CS完美移植到PSP：12MB内存稳定60帧" h="340" src="//img1.mydrivers.com/img/20260719/S6eb1fd2d-2864-42c3-b98c-be5afd860d29.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 19 Jul 2026 13:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvTHppdVZnT2xhcTNPYWtlVmozZ3ZiSjJZd2UyUzRNaHRVSzBMazJCNzF2VWh2VlVoSnI5NlEzb2FzY01rWXBJaGwyMU1qblhGek1yWnJrVW8</guid></item><item><title>俄罗斯为何“拦不住无人机”？ - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/gj/2026-07-19/detail-iniiimta1192741.d.html?vt=4&amp;pos=108</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
 	
 
 
@@ -48,7 +73,74 @@
 &lt;/section&gt;
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sun, 19 Jul 2026 13:07:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMigwFBVV95cUxPTS1TQ3N5UWFqZllfQzM0R1dXU2VwdTVramdvRFV0SFJNT2NTZl9QaFFCdXVsTEQ4TDQ0d1Y4aW42U3FfVDVoTkFkeDJYZ0E3cXJlRlBXTHlwc1BLWnBkUDdDTFFLUjFIOFJqQVFIUVh5ZG00ZWhTU1BfV0JmUmNCRkpYdw</guid></item><item><title>中国AI初创先锋月之暗面据报拟最早六个月内赴港上市 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260719-%E4%B8%AD%E5%9B%BDai%E5%88%9D%E5%88%9B%E5%85%88%E9%94%8B%E6%9C%88%E4%B9%8B%E6%9A%97%E9%9D%A2%E6%8D%AE%E6%8A%A5%E6%8B%9F%E6%9C%80%E6%97%A9%E5%85%AD%E4%B8%AA%E6%9C%88%E5%86%85%E8%B5%B4%E6%B8%AF%E4%B8%8A%E5%B8%82</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 19 Jul 2026 12:48:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi9gJBVV95cUxQUUZwanY0NS1lWEVqTGxxUmx4NHNoa3hBNVBTVDFPUFpUWGVxTEF4cEpIbnQwbmlicXhmRlJxbEEwaTB2ZGxITE9VQUQwZUdiSDNJOG03NXFuY0c3TldwUHBmdzBVTTlGQkF6QXI2YTdXX0ZPeFhvX3I2dGx2SHJ0N2VHSExhRDVEM01iVGczVS1adWhvUUNFOHlndGRyazVQSV9hYUhIMkpQNTVha1RrZzhkMmp5QzhtR0s2WXpQcjM5UkJyMVhmYlJEd3hIa0tEMVh0NV8zN1oweXBGYWllQlBHejljQzBrTzR4Z3NheF9iWm9FNWJmQmRPdDZsRWFJTXJIN0l2bUxvd1BNeXI4VmFZMzRlNUlVakR0OG1sVjZvLTJKbkt0dTJEcU84bVJMQlY1Z1NySlg5RThWLWFRSTVQbTZSSUhNQVl2ZV9yaUxYNWFWLXFSdld4QVJPZExjdXBJaTF6T1N6cy1xS2t0X0s4eWtXdw</guid></item><item><title>戴尔XPS 13 2026上架京东：搭载酷睿5 320处理器售价8999元 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137499.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sun, 19 Jul 2026 13:07:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMigwFBVV95cUxPTS1TQ3N5UWFqZllfQzM0R1dXU2VwdTVramdvRFV0SFJNT2NTZl9QaFFCdXVsTEQ4TDQ0d1Y4aW42U3FfVDVoTkFkeDJYZ0E3cXJlRlBXTHlwc1BLWnBkUDdDTFFLUjFIOFJqQVFIUVh5ZG00ZWhTU1BfV0JmUmNCRkpYdw</guid></item><item><title>中国AI初创先锋月之暗面据报拟最早六个月内赴港上市 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260719-%E4%B8%AD%E5%9B%BDai%E5%88%9D%E5%88%9B%E5%85%88%E9%94%8B%E6%9C%88%E4%B9%8B%E6%9A%97%E9%9D%A2%E6%8D%AE%E6%8A%A5%E6%8B%9F%E6%9C%80%E6%97%A9%E5%85%AD%E4%B8%AA%E6%9C%88%E5%86%85%E8%B5%B4%E6%B8%AF%E4%B8%8A%E5%B8%82</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 19 Jul 2026 12:48:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi9gJBVV95cUxQUUZwanY0NS1lWEVqTGxxUmx4NHNoa3hBNVBTVDFPUFpUWGVxTEF4cEpIbnQwbmlicXhmRlJxbEEwaTB2ZGxITE9VQUQwZUdiSDNJOG03NXFuY0c3TldwUHBmdzBVTTlGQkF6QXI2YTdXX0ZPeFhvX3I2dGx2SHJ0N2VHSExhRDVEM01iVGczVS1adWhvUUNFOHlndGRyazVQSV9hYUhIMkpQNTVha1RrZzhkMmp5QzhtR0s2WXpQcjM5UkJyMVhmYlJEd3hIa0tEMVh0NV8zN1oweXBGYWllQlBHejljQzBrTzR4Z3NheF9iWm9FNWJmQmRPdDZsRWFJTXJIN0l2bUxvd1BNeXI4VmFZMzRlNUlVakR0OG1sVjZvLTJKbkt0dTJEcU84bVJMQlY1Z1NySlg5RThWLWFRSTVQbTZSSUhNQVl2ZV9yaUxYNWFWLXFSdld4QVJPZExjdXBJaTF6T1N6cy1xS2t0X0s4eWtXdw</guid></item><item><title>人工智能换了一种“打开方式”|WAIC观察 - 财联社</title><link>https://www.cls.cn/detail/2430557</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社7月19日讯（记者 付静 张校毓 实习记者 朱洺锐）&lt;/strong&gt;2026世界人工智能大会（WAIC）上，人工智能换了一种“打开方式”。&lt;/p&gt;
+&lt;p&gt;过去几年，AI更多展示的是模型参数与生成能力；而在今年的WAIC现场，越来越多企业开始回答另一个问题：AI如何真正进入生产生活，成为可被使用、可持续创造价值的新型生产力？&lt;/p&gt;
+&lt;p&gt;一家初创公司创始人告诉财联社记者，“今年WAIC的展品更加务实了。大家都在看怎样能让机器人和AI真正地干活，更关注落地的价值。”&lt;/p&gt;
+&lt;p&gt;财联社记者在现场观察到，AI正在深度嵌入行业生产和日常生活：“龙虾”热之后市面上涌现多款智能体，AI进化为生产生活“搭子”；智能体手机、AI耳机、AI眼镜等终端产品正带来新的交互体验。同时，人工智能在B端真实场景的落地也在加速。&lt;/p&gt;
+&lt;p&gt;据科技智库甲子光年统计，今年WAIC的千余家参展主体中，大模型与生成式AI赛道共130家参展主体，83家（约占63.8%）选择以AI Agent智能应用作为主要标签。站在WAIC大模型赛道中央的，已经从比拼参数规模的大模型，完全切换为直接面向场景的AI Agent；行业AI应用方面，132家参展主体覆盖17个细分方向，行业AI应用正全面铺开。&lt;/p&gt;
+&lt;p&gt;当AI从“能生成”迈向“能执行”，从“展示能力”迈向“创造价值”，一场围绕真实场景落地的竞争正加速展开。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C端生产生活有了AI“搭子”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“当下，AI正从工具变成伙伴，从‘能生成内容’变成‘能完成任务’，从单点能力变成系统生态。”腾讯集团副总裁、华东总部总经理李侃表示。&lt;/p&gt;
+&lt;p&gt;AI在各领域进化为生产生活的“搭子”，离不开今年“龙虾”热之后市面上涌现的多款注重工作流优化的AI智能体。&lt;/p&gt;
+&lt;p&gt;财联社记者在WAIC现场看到，网易有道的桌面级办公助手Agent产品LobsterAI此次重点展示了从“对话”走向“行动”的真实落地能力，现场“圈粉”开发者。作为国内大厂首个100%开源桌面级办公助手Agent，LobsterAI目前在GitHub已获得超5.6k Stars。&lt;/p&gt;
+&lt;p&gt;年内推出多只“龙虾”类产品的腾讯，则集中展示了面向个人用户的QClaw、ima、QQ浏览器等多款“开箱即用”产品，面向职场人士的WorkBuddy个人版、CodeBuddy等，以及面向企业的WorkBuddy企业版、办公智能体套件Agent Suite等，前不久推出的企业微信Agent“大圆”也迎来展会“首秀”。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/HU0HQ2WMN2_832x554.jpg"&gt;&lt;/p&gt;
+
+&lt;h3&gt;图片来源：受访者供图&lt;/h3&gt;
+
+&lt;p&gt;在西岸展馆，不少探索打造AI影视OPC（一人创作公司）模式的创作者，来到万兴科技（300624.SZ）的展台打卡。&lt;/p&gt;
+&lt;p&gt;据悉，创作平台万兴剧厂（Reelmate.cn）最新上线“无限画布+专属Agent助手”功能，首次面向公众开放体验。“无限画布”支持20余项精细化编辑能力，满足逐帧打磨与高质量内容输出的需求。专属Agent助手沉淀编剧、美术、导演三大领域专家知识，融合精品化剧本、资产与分镜创作工作流。万兴科技新品Filmora.AI与Virbo AI在现场亦颇为火爆。其中，Filmora.AI通过AI原生商业视频工作流，可帮助团队制作时间缩短最高90%，创作成本降低最高80%。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/XUchcE0BZ6_1386x966.jpg"&gt;&lt;/p&gt;
+
+&lt;h3&gt;图片来源：受访者供图&lt;/h3&gt;
+
+&lt;p&gt;今年WAIC展出的AI终端，“能干活”成了标配。&lt;/p&gt;
+&lt;p&gt;搭载豆包手机助手的全球首款AI智能体手机努比亚NaviX Ultra正式亮相，引发关注。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/o1WMY643Z5_1000x753.jpg"&gt;&lt;/p&gt;
+
+&lt;h3&gt;图片来源：受访者供图&lt;/h3&gt;
+
+&lt;p&gt;中兴通讯高级副总裁、努比亚总裁倪飞告诉财联社记者，“‘全球首款’的含金量不在于抢先发布一个概念，而在于率先把概念做成了用户可以每天使用的产品。”在他看来，AI的上半场，是回答问题；AI的下半场，是即刻把完成任务这个体验交到用户手里。&lt;/p&gt;
+&lt;p&gt;倪飞介绍，豆包拥有领先的大模型和智能体能力，努比亚则拥有系统、硬件、产品工程、质量管理、渠道和用户服务方面的长期积累。两种能力结合，才有机会让智能体从实验室走向每个人的生活。“从M153到现在的NaviX Ultra，双方的合作即将走过完整的技术验证和产品迭代周期。”&lt;/p&gt;
+&lt;p&gt;就在WAIC前夕，阶跃星辰发布全球首个大模型原生AI终端品牌STEPX，推出全球首个智能体原生操作系统Step AOS、阶跃新一代个人智能体阶跃Amoo。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/bjx4c5q5gM_1707x1280.jpg"&gt;&lt;/p&gt;
+
+&lt;h3&gt;STEPX Neo分步规划多人行程 图片来源：财联社记者/摄&lt;/h3&gt;
+
+&lt;p&gt;阶跃星辰方面告诉财联社记者，不同于传统语音助手，阶跃Amoo能够将零散的需求转化为连贯的行动，成为能够真正陪伴用户的个人智能体。&lt;/p&gt;
+&lt;p&gt;STEPX的大模型原生智能体手机STEPX Neo此次也在WAIC现场亮相，展示了多场景下的智能体新交互体验，包括联动携程自动规划机酒、调用支付宝完成操作等。目前，STEPX已与携程、支付宝、滴滴、美团等首批生态伙伴合作，旨在帮助用户从日常琐事中抽离，将精力投入更具创造性的工作中。&lt;/p&gt;
+&lt;p&gt;随着AI能力逐渐向终端迁移，智能硬件正成为AI进入个人生活的重要入口。此次WAIC上，智能眼镜厂商也集中展示了AI在多元场景中的落地探索。&lt;/p&gt;
+&lt;p&gt;其中，乐奇Rokid携全球首款智能眼镜原生操作系统YodaOS及新一代AR空间计算设备亮相WAIC。依托YodaOS原生系统，乐奇AI眼镜展示了消费、文旅、工业三大场景的成熟解决方案。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/1yq2PCZ92E_1000x767.jpg"&gt;&lt;/p&gt;
+
+&lt;h3&gt;乐奇AI眼镜展台 图片来源：财联社记者/摄&lt;/h3&gt;
+
+&lt;p&gt;乐奇AI眼镜目前已同时打通支付宝和微信支付，并已与高德、京东科技、京东健康等头部平台达成深度合作，落地一键打车、城市伴游、一眼购药、单车解锁、停车缴费等生活化功能。&lt;/p&gt;
+&lt;p&gt;李未可则在现场发布全球首款AI记忆眼镜——李未可X-AI记忆眼镜。据悉，该款眼镜整机主体为26g，独立磁吸摄像模组重约10g，可按需拆装；可智能识别关键场景，自动启停记录日常对话与商务场景信息，自动生成纪要与待办等。李未可在WAIC期间宣布，与腾讯云WorkBuddy生态合作正式落地。&lt;/p&gt;
+&lt;p&gt;此外，AI耳机也开始强调实用性。&lt;/p&gt;
+&lt;p&gt;财联社记者从网易有道方面获悉，首次对外亮相的AI会议耳机Youdao OpenPods为国内首款苹果MFi认证开放式AI耳机，定位为面向商务办公与跨语言沟通场景的智能耳机，能力覆盖录音、转写、总结、翻译全链路，首次将耳机盒打造为可独立运行的录音与翻译终端。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/9N1B1M3Jfr_1702x1276.jpg"&gt;&lt;/p&gt;
+
+&lt;h3&gt;图片来源：财联社记者/摄&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;千行百业含AI量提升&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“智能体讲了好几年，今年才真正进入大规模落地阶段，核心原因是模型能力的提升。另外在工程化上，Harness和工程化的框架越来越成熟。”中国电子云高级副总裁黄锋对财联社记者表示。&lt;/p&gt;
+&lt;p&gt;B端真实场景落地加速，成为今年人工智能领域的一大趋势。&lt;/p&gt;
+&lt;p&gt;面向国防、央企、科研等国家关键行业，中国电子云对“新星”全链路AI解决方案进行升级，在本届WAIC上亦推出了决策智能、无人智能两大AI应用。&lt;/p&gt;
+&lt;p&gt;黄锋介绍，“我们接触的各行各业企业级客户里，真正能把智能体落地且用得好的比较少，这也是行业共识。90%的项目可能都是做个DEMO可以，但真正要上生产、每天支撑大量的人去用，还是用不了。”尤其在精准任务、拒止环境及复杂决策三类场景下问题最为突出。&lt;/p&gt;
+&lt;p&gt;7月18日，企业大模型公司滴普科技开放DeepWorks企业智能体平台的第一批公开客户测试邀请试用，并同步升级核心产品矩阵，形成由DeepWorks企业智能体平台、Deepexi企业大模型、Deepology企业本体数据及Skills集共同构成的DeepexiOS AI级企业操作系统。&lt;/p&gt;
+&lt;p&gt;正是由于真实场景牵引，语料数据层面也愈发走向垂直。&lt;/p&gt;
+&lt;p&gt;此次WAIC期间，上海库帕思科技有限公司面向医疗、工业、交通、供应链和城市治理等真实场景，集中发布专病语料库、焊接老师傅语料库、城市轨道交通行业语料库、交通基础设施运维语料库、航运物流枢纽语料库、港口堆场老师傅经验语料库、国际物流供应链语料库、消防行业语料库等产品。&lt;/p&gt;
+&lt;p&gt;工业领域，黑湖科技联合创始人兼CMO肖哲告诉财联社记者，“我们观察到，中国制造正面临一个结构性机会，一端是拥有创意和多样化需求的新消费人群，另一端是具备产能但难以响应柔性化需求的中小工厂，两者之间存在明显的供需错位。”&lt;/p&gt;
+&lt;p&gt;肖哲介绍，新消费人群带来了订单形态的变化，呈小批量、多品类、定制化的趋势。这部分订单尽管附加值更高，但并非传统制造模式所能承接，对产线协同提出了更高要求，中小工厂在面对频繁切换任务时甚至会陷入亏损。对工厂来说，拆单、报价、工艺确认、备料、排产、质检、跟单等一系列环节高度依赖老师傅、工程师、采购、计划员和跟单员的经验判断，每一张非标订单都伴随着较高的沟通和决策成本。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/1H0Z6VWUdd_2560x1920.jpg"&gt;&lt;/p&gt;
+
+&lt;h3&gt;图片来源：财联社记者/摄&lt;/h3&gt;
+
+&lt;p&gt;此次，黑湖科技展示了“黑湖AI新质造平台”，覆盖拆单、报价、采购、排程、质检和跟单等环节的工业Agent。目前该平台将新品上市周期从3个月缩短到3周，最小起订量从10000件降至100件，实现“小单快返”的柔性履约模式。&lt;/p&gt;
+&lt;p&gt;黑湖科技创始人兼CEO周宇翔日前在接受媒体采访时表示，制造业客户采购工业Agent的决策周期正在缩短。他认为，未来3至4年，中国工厂的AI渗透率将大幅提升。&lt;/p&gt;
+&lt;p&gt;财联社记者还在现场注意到，一家依托吉利汽车制造基因的工业数智化企业广域铭岛，也展示了工业AI从技术验证到规模落地的完整路径。&lt;/p&gt;
+&lt;p&gt;据广域铭岛介绍，汽车、机械装备、电子电装是目前AI采用率较高的行业。如今AI早已不是简单的自动化工具，传统软件只能按预设逻辑执行指令，而智能体更像是懂业务的“数字行动者”，从工艺规划源头入手。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Sun, 19 Jul 2026 12:43:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE9saTZ3M0tXd3BITmNPM3Q4aTRUbl9fZjJPS1VfZ05ucm5ZUWJHT1owLXNGLTdkRHBOcUoxTzF1WUktT3J6Mm5YWA</guid></item><item><title>戴尔XPS 13 2026上架京东：搭载酷睿5 320处理器售价8999元 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137499.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月19日消息，&lt;span&gt;&lt;strong&gt;戴尔XPS 13 2026现已上架京东及天猫平台，搭载酷睿5 320处理器，售价8999元与官网持平，部分地区叠加国补后7649.15元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;核心配置上，该机搭载第三代英特尔酷睿5 320处理器，基于18A先进工艺，6核6线程，最高睿频4.6GHz，内置独立NPU单元，单处理器AI算力16TOPS，整机综合AI性能最高40TOPS，配合集成Xe核显足够应对日常办公以及轻度修图需求。&lt;/p&gt;
@@ -1249,7 +1341,92 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 18 Jul 2026 23:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBLRVBncDdyTHd5QnBNUHdDbTVsX2dCc3FIdnM2Qm9lOVdOZ0FBV1R6VVlCYXQ5Yzh5VXNISTFIRVUzN2NSc3BUM1dZcGJQZDNMc3BkTmEtMFk</guid></item><item><title>一周军评：未来空战最需要什么？-施洋 - 观察者</title><link>https://www.guancha.cn/ShiYang/2026_07_19_824264_2.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 18 Jul 2026 23:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBLRVBncDdyTHd5QnBNUHdDbTVsX2dCc3FIdnM2Qm9lOVdOZ0FBV1R6VVlCYXQ5Yzh5VXNISTFIRVUzN2NSc3BUM1dZcGJQZDNMc3BkTmEtMFk</guid></item><item><title>国际油价暗盘飙升，比特币大涨逼近65000美元，美军连续第八晚袭击伊朗 - 新浪财经</title><link>https://finance.sina.com.cn/wm/2026-07-19/doc-iniihuvr0427029.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　7月19日，截至7：09，国际油价暗盘飙升超2.23%，突破84美元/桶，此前美油、布油暗盘价格直线大涨超3%。&lt;/p&gt;
+
+&lt;p&gt;　　&lt;font&gt;由于美国和伊朗军事冲突升级，国际原油期货价格震荡走高，截至17日收盘时涨幅超4%，&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;布油和美油即月合约全周分别累涨约15.9%和15.5%，均本周第四日收创一个月新高。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;　　&lt;font&gt;加密货币主要币种全线上涨，&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;过去24小时内比特币大涨超2%，逼近65000美元关口&lt;/font&gt;&lt;/font&gt;&lt;font&gt;，以太币、狗狗币等跟涨。最近24小时，全球共有超5万人被爆仓。放长时间来看，2026年至今比特币跌幅仍高达26%。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;　　&lt;font&gt;据CCTV国际时讯报道，&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;美军连续第八晚袭击伊朗。&lt;/font&gt;&lt;/font&gt;&lt;font&gt;美军中央司令部在社交媒体平台发声明称，美国东部时间7月18日下午6点（伊朗时间7月19日凌晨1点30分，北京时间清晨6点），美军奉总统特朗普之命，开始对伊朗发动新一轮空袭，以“&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;进一步削弱伊朗威胁霍尔木兹海峡商业航运的能力&lt;/font&gt;&lt;/font&gt;&lt;font&gt;，并迅速惩戒伊朗伊斯兰革命卫队——该武装前一日对驻约旦美军人员发动了袭击。”&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;　　&lt;font&gt;据央视新闻报道，截至7月18日，美伊战火仍在继续。&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;包括伊朗、科威特等多国的海水淡化厂、石油设施以及桥梁、发电厂等民用设施遭受波及的消息层出不穷。伊朗方面，包括南部锡里克周边地区和拉雷斯坦地区、中部亚兹德和西南部胡齐斯坦省阿瓦士市周边等多地遭美军袭击。&lt;font&gt;伊朗霍尔木兹甘省在18日当天累计遭受到3轮次打击。该省副省长表示，美军对该省部分地区发动的袭击已造成多人伤亡。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p cms-style="align-Center"&gt;　　美军完成对伊朗新一轮空袭行动 伊朗多地传出爆炸声&lt;/p&gt;
+&lt;p&gt;　　&lt;font&gt;据央视新闻报道，伊朗伊斯兰革命卫队和伊朗军方发布的声明，&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;伊朗在17日和18日对中东地区多个美军基地及设施实施打击&lt;/font&gt;&lt;/font&gt;&lt;font&gt;。打击目标包括美军驻巴林的无人艇存放基地，美国用于定位敌方目标的巴林人工智能中心，位于科威特的美军基地弹药库、指挥部，约旦美军基地的燃料罐等。此外，&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;革命卫队称在伊朗布什尔上空击落了一架美军MQ-9无人机。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;　　&lt;font&gt;据新华社援引伊朗媒体18日报道，伊朗副外长加里巴巴迪表示，&lt;/font&gt;&lt;font cms-style="strong-Bold"&gt;&lt;font cms-style="strong-Bold"&gt;在美国违反承诺后，伊朗已停止履行伊美谅解备忘录。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;　　（声明：文章内容仅供参考，不构成投资建议。投资者据此操作，风险自担。） &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：杨赐 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Sat, 18 Jul 2026 23:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTE12M2xtVzA3YmdoSkdQUWEtdm1CWEJiQllVMFFfa3BGZ2xqcllfdWNnZTRyWXE4SEdYYmt3YkRHamdHTE9LSVNzTHY2Z0NuMF9sSnJOSnVEYlZ2Z3NDOHVUQ2VseXhTQzBqbVVmTFdDZUJtN0RIR1E</guid></item><item><title>一周军评：未来空战最需要什么？-施洋 - 观察者</title><link>https://www.guancha.cn/ShiYang/2026_07_19_824264_2.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 
 &lt;h3&gt;
 	从“以僚辅主”到“以僚盖主”
@@ -1354,96 +1531,4 @@
 &lt;/section&gt;
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sat, 18 Jul 2026 19:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE5laUNxYUNrSlhOb1REcmRjRmF4U3AwTW44bnUzNThkd0lRQmxOcFhiS2ZSZjB2M24wUHR0cDFFV1hnQkhXbjJHSTZkbTdBenhiZzRlSC03NF9WMHJfM2J5YkVqX1Vrc213Y3JiNzltaFN3RHFt</guid></item><item><title>环球下周看点：AI交易迎关键考验 财报季、央行决议与中东局势牵动市场 - 财联社</title><link>https://www.cls.cn/detail/2430318</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社7月19日讯（编辑 牛占林）&lt;/strong&gt;随着美股财报季进入高峰期，全球金融市场即将迎来又一个关键交易周。Alphabet(谷歌母公司)、英特尔、特斯拉等科技巨头将陆续公布业绩，美股AI投资逻辑将迎来新一轮检验；与此同时，欧洲央行将公布最新利率决议。&lt;/p&gt;
-&lt;p&gt;分析人士指出，在中东局势重新升级、国际油价再度走高、美联储议息会议临近的背景下，企业盈利、央行政策以及地缘政治三条主线，将共同决定未来一周全球资产价格的走势。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;AI交易迎来关键考验 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;过去两年，AI热潮一直是推动美股上涨的核心动力，而下周最受市场关注的，无疑是Alphabet将于周三盘后公布的最新季度业绩。&lt;/p&gt;
-&lt;p&gt;作为全球第三大上市公司，同时也是美国AI基础设施投资规模最大的"超级云服务商"之一，Alphabet不仅代表着互联网广告行业景气度，更被视为AI资本开支风向标。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260719/GZXlv69qAA_504x302.png" alt="image"&gt;&lt;/p&gt;
-&lt;p&gt;微软、谷歌、Meta、亚马逊等科技巨头持续投入数千亿美元建设数据中心、采购AI芯片，使得英伟达、博通、台积电、美光等AI产业链公司持续受益，也成为推动美股不断刷新历史高位的重要力量。&lt;/p&gt;
-&lt;p&gt;因此，相比盈利本身，市场更加关注Alphabet管理层对于未来AI资本支出的最新指引。&lt;/p&gt;
-&lt;p&gt;Hennion &amp;amp; Walsh Asset Management首席投资官Kevin Mahn表示，如果Alphabet释放任何削减AI投资预算的信号，都可能在整个AI产业链引发连锁反应，会对AI交易产生严重冲击。&lt;/p&gt;
-&lt;p&gt;不过，目前华尔街普遍认为，Alphabet短期内大幅削减AI投入的可能性并不高。随着OpenAI、Anthropic以及Meta持续加码竞争，谷歌仍需要保持高水平资本开支，以维持其在AI领域的竞争优势。&lt;/p&gt;
-&lt;p&gt;除谷歌外，英特尔和德州仪器也将在下周公布业绩。相比此前几个季度，本次芯片企业财报的重要性明显提升。&lt;/p&gt;
-&lt;p&gt;就在近期，AI概念股经历了今年以来最大一次调整。费城半导体指数较6月底历史高点累计跌幅已超过20%，技术上进入熊市区域，连续数日的大幅回调也拖累标普500指数和纳斯达克指数结束此前连续创新高走势。&lt;/p&gt;
-&lt;p&gt;此前三星电子、台积电公布了优于预期的财报，但市场反应较为平淡，显示投资者已经对半导体行业给予极高预期，单纯"超预期"已不足以推动股价继续上涨。&lt;/p&gt;
-&lt;p&gt;由于芯片板块目前在主要股指中的权重极高，其走势已成为影响整个美股的重要变量。同时，大量杠杆ETF资金聚集于半导体板块，也进一步放大了股价波动，使AI交易短期波动明显加剧。&lt;/p&gt;
-&lt;p&gt;除科技板块外，根据市场统计，下周将有超过80家标普500指数公司公布季度业绩。七巨头中的特斯拉也将公布最新财报。此外，美国运通、菲利普莫里斯、雷神技术等金融、防务龙头也将陆续交出成绩单。&lt;/p&gt;
-&lt;p&gt;LSEG数据显示，目前分析师预计标普500指数成份股二季度整体盈利同比增长约26%，有望创近年来最快增速之一。&lt;/p&gt;
-&lt;p&gt;State Street首席投资策略师Michael Arone表示，虽然市场不断受到地缘政治、关税政策等消息扰动，但真正支撑股市持续上涨的依然是企业盈利基本面，上市公司整体盈利能力仍表现出较强韧性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;欧洲央行料按兵不动 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;宏观层面，下周全球经济数据相对有限。其中，最受关注的是美国小非农、PMI、新屋销售、每周初请失业金人数等数据。&lt;/p&gt;
-&lt;p&gt;由于近期中东冲突再度升级推动国际油价上涨，市场希望通过美国PMI数据观察能源价格上涨是否已经开始影响企业经营活动，以及美国经济是否仍保持较强增长动能。&lt;/p&gt;
-&lt;p&gt;此前公布的美国6月CPI和PPI数据均低于市场预期，一度缓解了市场对于通胀重新升温的担忧，也使投资者下调了对美联储进一步加息的押注。&lt;/p&gt;
-&lt;p&gt;目前利率期货市场显示，交易员基本预计美联储将在7月底议息会议上按兵不动，而下一次25个基点加息更可能发生在今年12月，而非此前市场担忧的9月。&lt;/p&gt;
-&lt;p&gt;欧洲方面，欧洲央行将于周四公布最新利率决议，这也是全球市场关注的另一大焦点。市场普遍预计，欧洲央行将在6月完成25个基点加息之后，本次会议选择暂停行动。&lt;/p&gt;
-&lt;p&gt;近期欧元区通胀数据低于市场预期，同时中东局势仍存在较大不确定性，使多数机构认为欧洲央行更可能等待更多经济数据，再决定是否于9月再次加息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;中东局势仍是最大外部变量&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过，能源价格重新上涨依然是欧洲央行最大的担忧之一。如果中东局势持续恶化、国际油价重新逼近此前高点，能源成本可能重新推高欧洲通胀，并增加欧洲央行未来继续收紧政策的压力。&lt;/p&gt;
-&lt;p&gt;近期美国与伊朗之间紧张局势再度升级，国际油价重新反弹，投资者担心如果冲突进一步扩大，可能再次推高全球能源价格，并重新点燃通胀压力。&lt;/p&gt;
-&lt;p&gt;目前市场普遍预计，此轮冲突持续时间不会过长，因此风险资产整体仍保持相对稳定。但若未来油价进一步快速上涨，不仅可能削弱企业盈利预期，也可能迫使包括美联储、欧洲央行在内的主要央行维持更长时间的紧缩政策。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;下周重要事件概览：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;周一（7月20日）：&lt;/strong&gt;中国至7月20日一年期贷款市场报价利率、德国6月PPI月率、加拿大6月CPI月率、美国6月谘商会领先指标月率、东京证券交易所休市一日&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;周二（7月21日）：&lt;/strong&gt;英国6月失业率、德国7月ZEW经济景气指数、欧元区7月ZEW经济景气指数、美国至7月4日当周ADP就业人数周度变动&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;周三（7月22日）：&lt;/strong&gt;美国至7月17日当周API原油库存、英国6月CPI月率、美国至7月17日当周EIA原油库存、三星Galaxy全球新品发布会&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;周四（7月23日）： &lt;/strong&gt;中国6月Swift人民币在全球支付中占比、澳大利亚6月季调后失业率、美国至7月18日当周初请失业金人数、美国至7月17日当周EIA天然气库存、欧洲央行公布利率决议、欧洲央行行长拉加德召开货币政策新闻发布会&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;周五（7月24日）：&lt;/strong&gt; 日本6月核心CPI年率、欧元区7月制造业PMI初值、英国7月制造业PMI初值、美国7月标普全球制造业PMI初值、美国6月新屋销售总数年化、俄罗斯央行公布利率决议     &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Sat, 18 Jul 2026 17:10:23 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE1PNS01eUN6YXFqUEdDR0dwUTJSSC00dUgteV9ENTlxLUdYdWZaYjlFXzZjTm9zTmxpX0wtWUlvdzhUNEgyU0FFMw</guid></item><item><title>真人短剧，被AI逼上大银幕 - 风闻</title><link>https://user.guancha.cn/main/content?id=1694230</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
-							&lt;p&gt;&lt;strong&gt;作者 | 丁茜雯&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;编辑 | 先声编辑部‍‍‍‍‍‍&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;真人短剧，开始集体盯上电影院。&lt;/p&gt;&lt;p&gt;近日，现象级短剧《好一个乖乖女》的电影版传出组训，预计9月在三亚开机。这一早在5月通过立项的短国大IP，2025 年创下红果平台 40 亿播放成绩，并捧红柯淳、余茵两位短剧顶流。然而，热度过后，《好一个乖乖女》 的网剧版、韩版均相对水花较小。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095927688.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;此前，《一家三口在同班》《掀桌》等头部短剧IP也已通过国家电影局立项。从网剧到电影，从竖屏到大银幕，真人短剧正在尝试跨出熟悉的内容生态。&lt;/p&gt;&lt;p&gt;这一变化并非偶然。&lt;/p&gt;&lt;p&gt;过去两年，真人短剧依靠高频爆款、低成本制作和平台扶持迅速崛起，成为文娱行业增长最快的新赛道。但进入2026年，行业风向正在发生变化：爆款减少、项目缩减、平台政策调整、AI短剧高速扩张，真人短剧赖以成长的红利开始消退。&lt;/p&gt;&lt;p&gt;电影，正在成为真人短剧寻找第二增长曲线的一次全新尝试。但问题也随之而来：电影真能成为真人短剧的新出路吗？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;短国要开始拍电影了&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;过去几年，短剧与电影还是两条几乎没有交集的赛道，如今这种边界正在被打破。&lt;/p&gt;&lt;p&gt;包括《好一个乖乖女》在内，同样是近几年现象级短剧IP的《一家三口在同班》《掀桌》均在今年5月通过国家电影局立项，预计将推出电影版本。这意味着，真人短剧正在从竖屏内容向院线电影迈出第一步。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095924153.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;这些短剧虽然都选择了电影化，但路径并不相同。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;其中，《好一个乖乖女》更接近再创作。根据立项信息，电影版将保留原作的核心人物关系和情感内核，但不会照搬短剧剧情，而是重新构建故事结构，以适应电影叙事节奏。这种方式更强调IP价值的延伸，希望吸引的不只是原有短剧观众，而是更广泛的电影受众。&lt;/p&gt;&lt;p&gt;与之相反的是，《掀桌》《一家三口在同班》则更偏向IP续写，在保留原有故事设定和人物关系的基础上延续世界观，更接近粉丝向开发，希望借助已经积累的观众基础完成跨媒介转化。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095926655.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;除了内容开发方式不同，产业链上的动作也越来越明显。&lt;/p&gt;&lt;p&gt;近年来，番茄小说、红果短剧等平台开始陆续开放短剧 IP的电影改编授权，鼓励成熟短剧IP进入电影市场。过去，短剧IP的商业开发更多停留在续集、番外、长剧等内部循环，如今，电影开始成为新的开发方向，也意味着短剧IP正在向更完整的内容产业链延伸。&lt;/p&gt;&lt;p&gt;更值得关注的是，进入这条赛道的，不再只是短剧公司。&lt;/p&gt;&lt;p&gt;例如，《一家三口在同班》《掀桌》的电影版背后，是上海原来如是文化。这家公司虽然成立时间不长，但核心团队长期从事电影宣发和IP营销，参与包括《哪吒之魔童降世》《我不是药神》等多部热门电影营销；其上游关联公司为不空文化，负责了《你好，李焕英》《热辣滚烫》等电影项目，核心业务为IP开发和影视口碑营销。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095927240.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;这说明，短剧电影化已经开始吸引传统电影产业链参与，而不仅仅是短剧团队的一次跨界尝试。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;事实上，这也并非短剧第一次向电影靠近。&lt;/p&gt;&lt;p&gt;此前，小红书推出过短电影扶持计划，不少平台也曾尝试探索微电影、竖屏电影等内容形态；与此同时，柯淳、余茵等头部短剧演员，也陆续传出进军大银幕的消息。从演员到IP，再到制作公司，短剧产业正在以不同方式试探电影市场。&lt;/p&gt;&lt;p&gt;如果把这些动作放在一起观察，会发现一个共同趋势：真人短剧开始主动突破原有内容边界。&lt;/p&gt;&lt;p&gt;不过，这并不意味着电影已经成为真人短剧的标准答案。在AI内容快速崛起、真人短剧增长放缓的背景下，电影更像是行业寻找第二增长曲线的一次主动探索。它的出现，不只是因为电影市场仍有空间，更因为真人短剧原有的发展模式，已经走到了一个必须寻找新增量的阶段。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;电影化为何成为真人短剧的新选择？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;如果把越来越多短剧IP拍成电影，理解为一次主动升级，或许并不准确。&lt;/p&gt;&lt;p&gt;真人短剧闯入院线，本质上是一场不得已的实验——它的底色不是野心，而是焦虑。&lt;/p&gt;&lt;p&gt;过去两年，真人短剧几乎吃到了移动互联网最后一波内容红利。凭借制作周期短、投放效率高、商业模式成熟等优势，大量制作公司迅速涌入，爆款频出，“十天拍完、一周回本”一度成为行业神话。然而，当赛道从增量市场进入存量竞争，真人短剧原有的发展逻辑也开始失灵。&lt;/p&gt;&lt;p&gt;从上半年的现状来看，在AI剧的冲击下，真人短剧正在进入大洗牌阶段。根据中国网络视听协会数据，2026年一季度全行业上线微短剧约12.8万部，其中AI剧占比超95%。&lt;strong&gt;项目减产、演员事业、投资撤退等现象，接连打碎真人短剧行业的繁荣梦。&lt;/strong&gt;尤其是头部制作团队难出现象级爆款、精品类短剧稀缺，以及上档剧集普遍为去年积压剧，也令真人短剧衰退论甚嚣尘上。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095924157.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这种变化，同样体现在从业者身上。包括余茵、韩雨彤等头部短剧演员，都曾公开提到真人短剧开机数量减少，不少演员进入待业状态，演员许鹏更是选择回到老家卖菜谋生。&lt;/p&gt;&lt;p&gt;与此同时，平台策略也在发生变化。&lt;/p&gt;&lt;p&gt;今年以来，红果短剧调整保底政策，部分项目保底分成下降，不少制作团队不得不重新评估项目收益，一些已经筹备中的真人短剧甚至选择暂停开发。对于大量依靠项目滚动运转的制作公司来说，项目减少、降低保底意味着现金流承压、收益不确定性增大，也意味着过去依靠走量的发展模式行不通了。&lt;/p&gt;&lt;p&gt;过去平台承担更多风险、制作公司快速扩张的时代，正在逐渐结束。当平台红利减弱之后，真人短剧不得不寻找新的收入来源。电影化，便成为最容易想到的一种可能。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;其次，AI改变的不只是效率，而是整个竞争规则。如果说平台政策影响的是利润，那么AI改变的，则是整个真人短剧赖以生存的竞争环境。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;过去，真人短剧最大的优势，是比长剧更快、比电影更便宜。但AI出现之后，这种优势正在被迅速削弱。如今，一部AI短剧从剧本生成、角色设计到镜头制作，都可以借助模型快速完成。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095924541.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;这意味着，真人短剧面对的竞争，不再只是另一家制作公司，而是几乎无限增长的内容供给。而AI率先冲击的，并不是电影，也不是长剧，而恰恰是真人短剧最擅长、也最依赖的流水线内容。因为越标准化、越公式化的故事，就越容易被AI复制。&lt;/p&gt;&lt;p&gt;这也是为什么，越来越多真人短剧团队开始思考新的方向。&lt;/p&gt;&lt;p&gt;如果继续停留在“更快、更便宜、更高产”的竞争逻辑里，真人几乎不可能赢过AI；但如果转向更强调人物塑造、演员表演和情绪表达的内容形态，基于短剧IP开发电影，真人依然拥有AI难以替代的优势。&lt;/p&gt;&lt;p&gt;此外，IP生命周期过短，也是短剧行业一直存在的问题。&lt;/p&gt;&lt;p&gt;过去两年，真人短剧创造了一个又一个爆款神话，《好一个乖乖女》《无双》《我在八零年代当后妈》等作品，都曾在极短时间内收获惊人的播放量和讨论度。但这些热度往往来得快，去得也快。整个行业始终围绕着“生产爆款—消耗爆款—寻找下一部爆款”高速运转，很难像电视剧、电影那样，通过持续运营形成长期IP资产。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095927583.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;电影化，恰恰提供了这样一种可能。&lt;/p&gt;&lt;p&gt;对于已经完成市场验证的头部短剧来说，电影并不仅意味着多拍一部作品，更意味着把一次性爆款转化为长期资产。电影之后，还可以继续开发长剧、海外翻拍、衍生品、品牌联名、线下体验，形成更加完整的商业链条。&lt;/p&gt;&lt;p&gt;真人短剧选择电影化，本质上是拓展跨媒介IP的运营能力。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;电影会成为真人短剧的新出路吗？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;今年上海电影节，《一家三口在同班》的制作团队便坦言，电影化面临着资金、工业、团队跨越等挑战，“我们是真的喜欢，喜欢到愿意先不谈自己，先谈这个故事值不值得被做出来”。&lt;/p&gt;&lt;p&gt;短剧IP电影化能否跑通，并没有标准答案。但可以确定的是，它既不是一场毫无依据的冒险，也不是一剂能够解决所有问题的“万能药”，更像是一场产业升级实验。&lt;/p&gt;&lt;p&gt;客观来说，短剧IP“爆改”电影，最明显的优势在于降低了原创电影的试错成本。&lt;/p&gt;&lt;p&gt;这几年，电影市场最明显的变化，就是投资越来越谨慎。无论是平台还是影视公司，都更倾向于投资已经经过市场验证的成熟IP，而不是从零开始打造原创故事。从网络文学、动漫到热门剧集、神话故事，IP改编已经成为电影市场的重要来源。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095924189.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;真人短剧，同样具备这样的基础。像《好一个乖乖女》能够在红果平台获得超过42亿播放，不只是说明它拥有流量，更说明它已经完成了一轮市场验证。对于电影市场而言，这类IP最大的价值，不在于自带多少票房，而在于它已经证明了故事成立、人物成立、情绪成立。&lt;/p&gt;&lt;p&gt;其次，真人短剧最大的竞争力，本来就不是制作规模，而是情绪效率。过去，很多人认为短剧最大的特点是“爽”。但真正支撑用户持续付费的，并不是反转本身，而是短时间内完成情绪调动的能力。&lt;/p&gt;&lt;p&gt;无论是《好一个乖乖女》的情感拉扯，还是《一家三口在同班》的家庭关系，本质上都是精准击中了某一种大众情绪。而近几年，《你好，李焕英》《热辣滚烫》《给阿嬷的情书》等作品的成功，也说明观众愿意为真实情感和人物关系买单，而不仅仅是宏大的制作场面。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095924658.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;如果短剧IP能够摆脱简单的“爽点堆砌”，进一步丰富人物成长、完善故事结构，它未必不能成长为一部成立的电影。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;但不得不承认的是，短剧IP即便热度再高，在过去基本上都是一锤子买卖，缺乏长期价值的维护。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;毕竟，短剧和电影，看似都是影视内容，但消费逻辑完全不同。短剧依赖的是碎片化观看，用户可以免费解锁、单集付费，也可以随时退出，试错成本极低。&lt;/p&gt;&lt;p&gt;电影则完全不同，观众需要提前花费几十元购买电影票，并投入近两个小时完成一次完整消费。&lt;/p&gt;&lt;p&gt;这种消费门槛，决定了短剧积累的流量，并不能简单转换成电影票房。原来的短剧用户并不一定会成为你的电影观众。&lt;/p&gt;&lt;p&gt;过去，《奔跑吧！兄弟》《极限挑战》《爱情公寓》等不少热门综艺、电视剧都曾推出电影版，希望借助IP影响力吸引观众，但最终却因为内容质量不足，遭遇口碑和票房双双失利。这些案例已经证明，一个成熟IP可以帮助电影获得第一批观众，却无法决定最终票房。&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="https://i.guancha.cn/bbs/2026/07/18/20260718095927284.jpg?imageView2/2/w/500/format/jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;换句话说，如果只是把短剧拉长、把爽点堆得更多，最终很容易重蹈过去综艺电影、电视剧电影的覆辙。&lt;/p&gt;&lt;p&gt;更何况，今年以来，国内电影市场整体承压，观众越来越谨慎，影院排片更加依赖口碑驱动。对于短剧来说，电影不会因为IP火就降低标准，反而意味着要进入竞争更加激烈的内容市场。&lt;/p&gt;&lt;p&gt;真正能吸引观众走进电影院的，不一定是流量最高的短剧，而更可能是故事最完整、人物最扎实、情绪最持久的短剧。这或许也是电影化对于真人短剧最大的意义。&lt;/p&gt;&lt;p&gt;*本文图源网络，如侵权联系删改&lt;/p&gt;													&lt;/div&gt;
-						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Sat, 18 Jul 2026 16:01:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE5CZkp5VHBJT2MzTi1nVm40bDFHWFp3ZW9qV2ZsR0hwZWxyeEl0c2dYWW5LRndjT0Z1NlJYUXhrWHZ6MmMxLUVQWlZOQTdTZktxeE55SXhIU3ZiTWs</guid></item><item><title>为让手机等下游终端厂有货可用！长鑫存储产能激增 正逼近美光 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137407.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月18日消息，现阶段的长鑫存储，暂时还没法靠定价策略对国际头部存储巨头的市场格局形成明显扰动，目前它也确实没有足够的体量支撑直接发动价格战，不过靠着全力拉升产能抢占市场份额，是完全具备可行性的发展路径。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;根据Citrini Research发布的最新行业报告，过去几年间长鑫存储的DRAM产能实现了跨越式的增长，整体生产能力正在快速向美国内存巨头美光科技的现有规模靠拢。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;公开统计数据显示，长鑫存储在2020年的时候，DRAM月产能仅为4万片晶圆，产品线也基本聚焦在DDR4品类，整体体量在全球市场占比极低。到2025年底，它的季度总产能就已经冲到了72万片晶圆，产能扩张速度远超行业此前的普遍预期。&lt;/p&gt;
-&lt;p&gt;按照当前的产线落地进度推演，预计到2026年底，长鑫存储的月产能将进一步提升至35万到37.5万片晶圆的区间。如果这个产能目标能够顺利落地，它的整体生产规模将完全有资格和美光科技实现同台竞技，正式进入全球存储行业的第一梯队。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Citrini的研究人员明确指出，长鑫存储能实现如此夸张的产能扩张速度，核心的支撑动力来自近年AI产业爆发拉动的存储芯片价格上涨，源源不断的正向营收流，让资金不再是限制这家本土存储厂商爬坡的首要阻碍，有足够的资源持续投入新产线建设。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;目前长鑫存储发展路上最核心的掣肘点，在于获取先进半导体制造设备的难度持续提升，尤其是对应设备从欧盟面向中国出口被施加了严格限制的大背景下，产线迭代的进度多少会受到外部因素的干扰。&lt;/p&gt;
-&lt;p&gt;尽管现阶段长鑫存储尚不具备量产高带宽内存HBM，或是面向极端超频场景的顶级高端DDR5模块的能力，但是它的主流消费级产品在海外市场的渗透率，正在以远超预期的速度快速抬升。&lt;/p&gt;
-&lt;p&gt;包括美商海盗船Corsair在内的多家海外硬件品牌，都已经开始提升对长鑫存储芯片的采购占比，这也给常年受国际三巨头联合控价、频繁遭遇价格剧烈波动的消费级存储市场，提供了此前稀缺的稳定替代选项。&lt;/p&gt;
-&lt;p&gt;行业分析观点认为，AI驱动的存储芯片强劲需求，已经导致过去两年消费类电子产品的定价持续走高，长鑫存储的快速崛起，大概率能在一定程度上缓解当前行业的供需矛盾，也给追求高性价比存储产品的普通消费者带来了新的选择空间。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;从更长期的发展维度来看，Citrini机构预测长鑫存储的月产能有望在2030年进一步扩大到95万片晶圆。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;到那个时间节点，它不仅会成为国内规模最大的内存制造商，更大概率跻身全球顶级内存生产商行列，最终对现有的全球DRAM市场长期稳定的三足垄断格局，产生极为深远的颠覆性影响。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260718/e5cb50b3ddba408e8e24ef04af7864a9.jpg" target="_blank"&gt;&lt;img alt="为让手机等下游终端厂有货可用！长鑫存储产能激增 正逼近美光" h="327" src="//img1.mydrivers.com/img/20260718/s_e5cb50b3ddba408e8e24ef04af7864a9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 18 Jul 2026 15:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAxYlQ1THVSZjhMV1FMendyMWN5ekJtREMxVHRYaDFPUG5LT3N0bzZyWlZPaEFBazloeUlqa01BVTd3bmRPV1ZUeUZkX1pESDAwWHNYWDd4XzM</guid></item><item><title>知名院士，发出警醒 - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/gn/2026-07-18/detail-iniiftix8354432.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
-	
-
-&lt;p class="art_p" cms-style="font-L"&gt;来源：中国新闻周刊&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;“五年后的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;将与今天截然不同。”&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;7&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;月&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;18&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;日上午，在&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;2026&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;世界人工智能大会“实体世界智能科学论坛”上，图灵奖得主、中国科学院院士姚期智给出了这样的判断。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;这场论坛上，姚期智与&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;2025&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;年度图灵奖得主、量子信息科学奠基人&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;之一&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;吉尔&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;·布拉萨德展开深度对话。两位顶尖科学家的讨论从量子计算延伸到人工智能的未来，释放出一个清晰信号：&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;正从“辅助工具”蜕变为“主动发现者”，整个世界的运行规则正在被重写。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="720" data-src="//k.sinaimg.cn/n/spider20260718/200/w1080h720/20260718/cd61-4e5a624984e63b14a4d9ec2d72663593.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="图/王诗涵 摄"&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="720" data-src="//k.sinaimg.cn/n/spider20260718/200/w1080h720/20260718/cd61-4e5a624984e63b14a4d9ec2d72663593.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="图/王诗涵 摄" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;图/王诗涵 摄&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;
-&lt;p class="art_p" cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L strong-Bold align-Center color210"&gt;从&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L strong-Bold align-Center color210"&gt;“帮忙算”到“自己发现”&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;2026&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;年，&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;与科研的融合正经历质变。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;英伟达已将&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI4S&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;（&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI for Science&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;）列为与大语言模型、具身智能并列的三大&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;关键方向之一，远期市场规模预计达千亿美元。从&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AlphaFold&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;把蛋白质结构预测精度提到原子级，到&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;气象模型超越传统预报——&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;在科研中的角色已不再是简单的计算工具。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;智源研究院发布的《&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;2026&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;十大&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;技术趋势》指出，&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;正在升级为“&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;科学家”——能够自主完成“假设提出、实验设计、数据分析、结论推断”完整科研链路的智能体系统。这意味着，未来的科学发现可能不再由人类主导，而是由&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;主动提出假设、设计实验、验证结论，人类科学家转而扮演“提问者”和“评判者”的角色。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;姚期智对此既兴奋又警醒：&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;“把&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;应用到&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;几乎&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;任何领域，都可能产生令人惊讶的成果。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;”但他同时提醒，这样的“好日子”不会一直轻松持续——不是因为&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;会停止进步，而是因为&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;会不断抬高科研发表和成果评价的标准。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L strong-Bold align-Center color210"&gt;人机组队&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;当&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;开始“主动发现”，原有的游戏规则被彻底颠覆。姚期智在论坛上直言：真正关键的问题，是人类如何与&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;工具组成更好的团队。随着范式转换加速，原有秩序将不再那么重要。 &lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;这句话的分量，体现在他对顶尖机构的判断上&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;——“即便是麻省理工、清华这样的顶尖机构，未来能否继续站在前沿，也取决于师生能否快速适应新范式；而有雄心的创业公司如果抓住机会，也可能取得惊人结果”&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;在另一个&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;“人机共育 重塑大学”论坛上，姚期智进一步给出了时间表：未来&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;3&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;至&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;5&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;年内，教育领域将迎来重大突破。人类与&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;的关系不再是“使用者与工具”，而是“团队成员”。学生和科研人员需要把精力从机械记忆和重复训练中解放出来，转向批判性思维、情感共情、复杂协作等高阶能力的培养。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L strong-Bold align-Center color210"&gt;布拉萨德眼中的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L strong-Bold align-Center color210"&gt;“中国速度”&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;与姚期智对谈的吉尔&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;·布拉萨德，是量子信息科学的奠基人之一。他与查尔斯·本内特共同提出&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;BB84&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;量子密钥分发协议，开创了量子密码学。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;布拉萨德表示，量子技术的前景仍充满不确定性，但量子密码、量子计算和量子传感正在持续推进。其中，中国在量子密码部署方面走在世界前列；而量子计算一旦取得工程突破，未来有望在特定任务上展现经典计算难以达到的效率。&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;两位图灵奖得主的共识是：无论是量子技术还是人工智能，中国都在这场全球竞赛中占据了关键位置。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;姚期智创办的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;“姚班”已为中国&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;领域输送了大量顶尖人才，而他担任主席的&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;WAIC&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;学术会议（&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;WAICA&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;）今年首次设立，填补了国内自主运营的国际顶级&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;学术会议的空白。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;姚期智最后强调：&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;“身处创新浪潮之中，必须始终保持适应世界变化的精神。”这或许是对所有身处&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;时代的人最务实的忠告——旧秩序正在瓦解，快速适应新范式的能力，才是未来最稀缺的竞争力。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L align-Center italic"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;记者：王诗涵&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;&lt;font cms-style="font-L italic"&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;	
-
-	
-
-&lt;/section&gt;
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sat, 18 Jul 2026 15:51:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE9qb0Z5S1FsNVBNV2ZaeUhwalBaYnFtZVNRRHN1OEVwTVpXajNvWElUMzBGV1A4U1hwbkp4em02V2JDYmlkektCQnBvcjU3QjQ5TEVNVHpIek56RHVTMU9LSFNSVVBBOWpRVm5YNXlXOWtONHJNU1ExUw</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Sat, 18 Jul 2026 19:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE5laUNxYUNrSlhOb1REcmRjRmF4U3AwTW44bnUzNThkd0lRQmxOcFhiS2ZSZjB2M24wUHR0cDFFV1hnQkhXbjJHSTZkbTdBenhiZzRlSC03NF9WMHJfM2J5YkVqX1Vrc213Y3JiNzltaFN3RHFt</guid></item></channel></rss>
