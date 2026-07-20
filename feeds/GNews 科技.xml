@@ -1,5 +1,435 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>麒麟2026 9月杀到！华为Mate 80系列最新出货：累计销量快破千万台 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137629.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Windows真不差：实测AI性能3.4倍碾压Linux！ - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137729.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，据Phoronix实测，&lt;span&gt;&lt;strong&gt;Windows 11在本地AI推理处理中全面领先Linux发行版，部分测试最高快出3.43倍，打破了业界普遍认为Linux运行效率必然优于Windows的传统印象。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;测试平台为雷蛇Blade 18 RZ09-0582电竞笔记本，硬件配置包括Intel酷睿Ultra 9 290HX Plus处理器、NVIDIA RTX 5090移动版显卡和32GB DDR5-6400内存。&lt;/p&gt;
+&lt;p&gt;该设备也是雷蛇首款获得Ubuntu官方认证的机型，测试环境涵盖Windows 11、Ubuntu和CachyOS三个操作系统，总计进行99项涵盖多种工作负载的效能对比。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/c2941064-c1e2-4f17-8f3f-1cf738086d39.png" target="_blank"&gt;&lt;img alt="Windows真不差：实测AI性能3.4倍碾压Linux！" h="443" src="//img1.mydrivers.com/img/20260720/Sc2941064-c1e2-4f17-8f3f-1cf738086d39.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在99项测试中，强调高性能的Linux分支CachyOS赢得51%的项目，Windows 11拿下38%，Ubuntu仅在10%的项目中取得领先。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从99项测试的几何平均数来看，CachyOS以76.19排名第一，Windows 11以76.12紧随其后，两者差距仅为0.07，Ubuntu 26.04 LTS以73.38排名第三。考虑到CachyOS被公认为高性能Linux发行版，Windows 11能在总成绩上与之几乎打平，表现相当亮眼。&lt;/p&gt;
+&lt;p&gt;Linux阵营在3D渲染（如Blender）和视频编码（如OpenAPV、SVT-AV1）等传统强项中保持优势，无论编码设置如何调整，Ubuntu和CachyOS都轻松超越Windows 11。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但在涉及本地AI模型推理的测试中，Windows 11展现出惊人爆发力，比Linux最高快了3.43倍。&lt;/strong&gt;运行Mozilla推出的Whisperfile语音转文字模型时，Windows也快了1.78倍。考虑到当前AI和大语言模型处理的火热程度，Windows 11在本地AI领域有潜力占据主导地位。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/0c35daee-6730-4aa6-8219-d4fbe731227b.png" target="_blank"&gt;&lt;img alt="Windows真不差：实测AI性能3.4倍碾压Linux！" h="229" src="//img1.mydrivers.com/img/20260720/S0c35daee-6730-4aa6-8219-d4fbe731227b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/34d96788-d3c2-48c9-b6fc-3ad5ce923c8b.png" target="_blank"&gt;&lt;img alt="Windows真不差：实测AI性能3.4倍碾压Linux！" h="229" src="//img1.mydrivers.com/img/20260720/S34d96788-d3c2-48c9-b6fc-3ad5ce923c8b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/a843b7e0-9407-4be0-847a-3e1a7895a8f1.png" target="_blank"&gt;&lt;img alt="Windows真不差：实测AI性能3.4倍碾压Linux！" h="229" src="//img1.mydrivers.com/img/20260720/Sa843b7e0-9407-4be0-847a-3e1a7895a8f1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Phoronix分析了原因，虽然Windows和Linux都采用CPU BLAS运算，但Windows 11之所以取得如此显著的优势，主要因为微软与硬件厂商针对底层编译版本、线程调度和硬件架构指令集进行了深度整合与优化。相比之下，Linux发行版在该领域的特定编译配置未能完全释放该款Intel处理器的全部潜力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当运算切换至GPU加速（如使用Vulkan API进行图像与AI代码生成）时，Windows 11与Linux之间的性能差距明显缩小，双方几乎平分秋色。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Phoronix建议Linux必须在CPU路径的底层编译上做出改进，尤其是线程调度，否则在AI推理领域将持续落后Windows阵营。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/f369e918a1cf4abea2faa593e36988dc.jpg" target="_blank"&gt;&lt;img alt="Windows真不差：实测AI性能3.4倍碾压Linux！" h="374" src="//img1.mydrivers.com/img/20260720/s_f369e918a1cf4abea2faa593e36988dc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 09:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE41R25OanFINWI2VUEyVnpMYUtLRHkyNGxVd3BMZWlnckotLXB6aHNZXzBIemMtelFMd1V1UkRxUXBQcUV4bTJIYmdHRjBTZVJBTjFMTkdyU1I</guid></item><item><title>三名中国公民在莫斯科州无人机袭击中受伤 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260720-9392123</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;俄罗斯莫斯科州州长通报，有三名中国公民在乌克兰向莫斯科州发动的无人机袭击中受伤。&lt;/p&gt;&lt;p&gt;据俄罗斯卫星通讯社报道，莫斯科州州长沃罗比约夫星期一（7月20日）通报上述消息，并称俄罗斯防空系统当天夜间击退无人机对莫斯科州的袭击。&lt;/p&gt;&lt;p&gt;沃罗比约夫在社交平台MAX频道上写道：“据最新消息，无人机袭击莫斯科州造成10人受伤，其中包括一名儿童。包括三名中国公民在内的六名伤者，被送往多莫杰多沃医院接受治疗。”&lt;/p&gt;&lt;p&gt;塔斯社星期一（7月20日）根据莫斯科市长索比亚宁提供的数据预估，乌克兰星期天（19日）向莫斯科州发动的无人机袭击规模为近年来最大。&lt;/p&gt;&lt;p&gt;索比亚宁称，当局在星期天傍晚至星期一上午侦获超过400架无人航空载具飞向莫斯科州。总计85架无人机在飞向首都莫斯科时被击落。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Mon, 20 Jul 2026 09:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBMWnJ0d2M5ZGRWeGUzSEYxQ25XVmc0bzAxa1htUGhtc3ZtOEU0MVBjeEF0QXNxY0RBLVlkRHJMVEhKY3hPZ3MwUDMxbTFyLXUtc0lWd3RacDhmVzhDcV9EejQyTTQ5b2xTRkE</guid></item><item><title>内存有望不再短缺！报告示警OpenAI存严重财务黑洞：恐带动AI连锁崩盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137707.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，当前全球都在热火朝天的进行着AI投资，&lt;span&gt;&lt;strong&gt;但知名分析师Ed Zitron近日发出警告，直指AI龙头OpenAI存在着沉重的债务负担，一旦宣告倒闭将引发一系列的连锁反应，甚至成为引爆AI泡沫的导火索。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Ed Zitron与《金融时报》共同核实的OpenAI 2025年度审计财务报表显示，OpenAI在2025年总营收从前一年的37亿美元大幅增长至130.7亿美元，但同期总成本与费用支出高达340亿美元，单年营运亏损约210亿美元。&lt;/p&gt;
+&lt;p&gt;在计入从非营利组织转型为营利实体产生的一笔巨额一次性非现金费用后（各方数据估计约在300亿至416亿美元之间），OpenAI 2025年最终账面净损失高达385.3亿美元。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="内存有望不再短缺！报告示警OpenAI存严重财务黑洞：恐带动AI连锁崩盘" h="357" src="//img1.mydrivers.com/img/20260720/bbfb13ae-5da3-4422-a5a6-bd69ffc9ccf5.png" w="595"&gt;&lt;/p&gt;
+&lt;p&gt;相比之下，该公司2024年营收37亿美元，亏损50.9亿美元&lt;strong&gt;，一年之间，营收虽然增长了近百亿美元，但净亏损却从50.9亿飙升至385.3亿，扩大了近6.6倍。&lt;/strong&gt;即使不考虑转型带来的一次性费用，210亿美元的营运亏损本身也远超上一年度的全部亏损。&lt;/p&gt;
+&lt;p&gt;Ed Zitron将OpenAI比作“AI界的雷曼兄弟”，2008年雷曼兄弟倒闭前，其风险敞口已深度嵌入华尔街各大金融机构的资产负债表，一旦倒下便引发连锁反应。Zitron认为OpenAI目前处于类似位置，整个AI产业生态系统的财务结构都与其绑定。&lt;/p&gt;
+&lt;p&gt;OpenAI是NVIDIA数据中心GPU的最大买家之一，也是Oracle和CoreWeave等云服务商的核心客户，软银则向OpenAI承诺了高达数百亿美元的投资。如果OpenAI未来无法按时支付基础设施合作伙伴的费用，冲击将立刻波及这些企业。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="内存有望不再短缺！报告示警OpenAI存严重财务黑洞：恐带动AI连锁崩盘" h="337" src="//img1.mydrivers.com/img/20260720/ec957de3-008a-42b1-9bf5-6bdf6540662b.png" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;报告指出，少数AI概念龙头企业的资产负债表已形成互为连环锁扣的紧密联动，&lt;strong&gt;NVIDIA向CoreWeave和Oracle出售GPU，CoreWeave和Oracle用这些GPU为OpenAI提供算力，OpenAI用这些算力训练模型并向微软等合作伙伴提供服务，软银和微软又为OpenAI提供资金。&lt;/strong&gt;其中任何一环在现金流上出现缺口，都将对整体科技投资组合带来难以忽视的系统性冲击。&lt;/p&gt;
+&lt;p&gt;Zitron进一步指出，一旦AI投资热潮退却，内存需求将大幅减少，当前HBM的紧缺很大程度上由AI训练和推理的庞大需求驱动，三星、SK海力士、美光和SanDisk等内存巨头纷纷将产能向HBM倾斜，挤占了传统DRAM和NAND闪存的产能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果OpenAI缩减算力投入或停止扩张，GPU需求下滑将直接传导至HBM，内存芯片可能不再短缺，这些巨头将被打回原形，整个行业格局面临重新洗牌。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不过这项预警在市场上仍存在正反争论，但无论最终是否走向崩盘，这份报告至少厘清了当前科技股中极高浓度的财务风险。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/e02ccbbf301f4f09866e6b3b31470337.jpg" target="_blank"&gt;&lt;img alt="内存有望不再短缺！报告示警OpenAI存严重财务黑洞：恐带动AI连锁崩盘" h="400" src="//img1.mydrivers.com/img/20260720/s_e02ccbbf301f4f09866e6b3b31470337.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 08:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5sLTVGQWIxdGdtMFFxcUdvc196REU0dWNFVFJ1bEFvMXJUSklJWUsyY2VsbVJLQUN1UU1TMjRNdGsyUE1WOWU2bjNwZGhxUE94OWRMaU9Mei0</guid></item><item><title>大疆Osmo 360 II全景相机真机亮相：新增NFC、电池增大 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137695.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;大疆Osmo 360 II全景相机真机亮相：新增NFC、电池增大&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-20 16:19:29  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1299472.html" title="建嘉的主页" class="newstiao4"&gt;建嘉&lt;/a&gt;&lt;p&gt;  编辑：建嘉 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137695-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，近期，大疆新一代全景相机Osmo 360 II的外观与功能信息继续流出，疑似工程测试机已在线下场景中现身，并被拍到与初代Osmo 360同场测试。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;据TheNewCamera报道，大疆正在测试第二代Osmo 360，相机外观整体延续初代方正机身设计，镜头模组布局变化不大，辨识度和前代保持一致。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/dca7418d8b834f36a9f6c6bab64580b3.png" target="_blank"&gt;&lt;img alt="大疆Osmo 360 II全景相机真机亮相：新增NFC、电池增大" h="524" src="//img1.mydrivers.com/img/20260720/s_dca7418d8b834f36a9f6c6bab64580b3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此前FCC备案文件已公示该机型号OQ002，全套合规测试全部顺利通过，上市仅差最后一步。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;硬件续航迎来明显升级，设备电池容量由初代1950mAh提升至2150mAh，容量涨幅约10.26%，长时间户外拍摄的续航短板得到改善。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/9de7371d-b216-464f-ac31-f96b9fbf4c55.png" target="_blank"&gt;&lt;img alt="大疆Osmo 360 II全景相机真机亮相：新增NFC、电池增大" h="425" src="//img1.mydrivers.com/img/20260720/S9de7371d-b216-464f-ac31-f96b9fbf4c55.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span&gt;本次曝光的核心亮点是全新加入NFC功能，&lt;/span&gt;这在全景运动相机产品中十分少见，借助一碰互联特性，可实现手机快速配对、素材便捷传输，大幅简化设备联动操作，完善大疆智能设备生态交互体验。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/dc5520d268d341068469463f607ce4d2.png" target="_blank"&gt;&lt;img alt="大疆Osmo 360 II全景相机真机亮相：新增NFC、电池增大" h="383" src="//img1.mydrivers.com/img/20260720/s_dc5520d268d341068469463f607ce4d2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据悉，初代大疆Osmo 360于2025年7月正式发布，搭载1英寸全景方形传感器，支持8K 50fps全景视频拍摄、最高12000万像素全景照片，二代机型暂未流出影像硬件升级信息，迭代重点应该主要是优化续航与日常操作便捷度。&lt;/p&gt;
+&lt;p&gt;目前大疆官方还未公布Osmo 360 II确切发布时间，但FCC认证、线下真机实拍、NFC宣传物料接连流出，产品完成多轮实地测试，上市筹备工作基本就绪，新品亮相不会等待太久。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 08:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1GUjVXemEzck9aUll4RVkzOVdZOXZuLTE4VWdMQkZYQ3F3QkNWbDItU2U4SVBTMEQ0ZUdnTmJsWTZkWDVPblJGNGdzYjdJaEJyaG1FTDQ4X18</guid></item><item><title>GTX 1060问世整整十年了！曾霸榜Steam长达59个月 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137670.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，&lt;span&gt;&lt;strong&gt;NVIDIA GeForce GTX 1060迎来发布十周年，这款基于Pascal架构的主流显卡于2016年7月19日上市，&lt;/strong&gt;&lt;/span&gt;非公版起售价249美元，首次引入的FE公版售价299美元，国内分别为1999元和2399元。&lt;/p&gt;
+&lt;p&gt;NVIDIA当时宣称其性能达到上一代旗舰GTX 980的水平，而后者首发价为549美元，不到一半的价格。&lt;/p&gt;
+&lt;p&gt;凭借超高的性价比，GTX 1060后来成为Steam硬件调查中出现频率最高的显卡，&lt;strong&gt;2017年12月，GTX 1060登上Steam硬件调查榜首，此后连续霸榜59个月，直到2022年10月才被GTX 1650取代。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GTX 1060的版本数量在显卡史上也极为罕见，初版GTX 1060 6GB采用GP106-400核心，配备1280个CUDA核心、80个纹理单元和48个光栅单元，加速频率1708MHz，搭载6GB 8Gbps GDDR5显存，显存位宽192bit，TDP为120W，公版设计仅需一个6pin供电接口。&lt;/p&gt;
+&lt;p&gt;发布一个月后推出的199美元3GB版本显存减半，CUDA核心也削减至1152个，纹理单元降至72个。&lt;/p&gt;
+&lt;p&gt;2017年又推出了9Gbps GDDR5显存的6GB版本，基于GP106-410核心，显存带宽从192GB/s提升至216GB/s。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;针对中国网吧市场，NVIDIA还推出了GP106-350核心的5GB版本，保留1280个CUDA核心但光栅单元减至40个，显存位宽缩窄至160bit。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;产品线后期还出现了基于GP104核心（即GTX 1080同款大核心阉割版）的6GB GDDR5X版本，保留1280个CUDA核心配置。&lt;/p&gt;
+&lt;p&gt;此外还有面向挖矿的P106-100，采用同样的1280核心GP106方案和6GB GDDR5显存，但不提供标准视频输出接口。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="GTX 1060问世整整十年了！曾霸榜Steam长达59个月" h="399" src="//img1.mydrivers.com/img/20260720/0daf0245-aa49-41b0-a188-b2cfe887a387.jpg" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 07:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBtMTgwV2JsY25KdXI3LUFXWTRlcERoMlpvRFhTeko5UFg2NUtrNnRabGI0YjY1cWtNTEVtVm1RQjdrSWpTNWM2NmhvdUlYWFBrd2NWVXFiRlQ</guid></item><item><title>工信部：建设新一代通信网是推动信息通信业发展的重点 - 东方财富</title><link>https://wap.eastmoney.com/a/202607203812486546.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
+        
+        &lt;p class="related"&gt;
+
+        &lt;/p&gt;
+
+        
+
+        
+        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
+        &lt;p class="layer"&gt;&lt;/p&gt;
+        
+        
+        
+
+        
+
+        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Mon, 20 Jul 2026 07:41:15 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBxM0lIZE9YMlJ0VkU3bjJUU2RzMUVYbnVUNTFIcVZBZkhMREluUEEzUzk4WUVId0hYajMwY3lYUGVPVlRyM0hGSVZhaFVaaUQ0bnlVTGNpa0pieGU5d205UA</guid></item><item><title>实测千问 Qwen3.8 预览版，国产模型开始围攻 Fable 5 - 爱范儿</title><link>https://www.ifanr.com/1672515</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
+            &lt;p class="o-single-normal-content"&gt;
+              &lt;h1 class="c-single-normal__title"&gt;实测千问 Qwen3.8 预览版，国产模型开始围攻 Fable 5&lt;/h1&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;p&gt;Kimi K3 的发布引起了海内外网友的高度关注，2.8T 的万亿大参数模型，直接在某些测试项目上，把国外闭源模型给击败了。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672520" src="https://s3.ifanr.com/wp-content/uploads/2026/07/HNlEnZhaEAAZvuV.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/HNlEnZhaEAAZvuV.jpeg!720 3903w, https://s3.ifanr.com/wp-content/uploads/2026/07/HNlEnZhaEAAZvuV-360x196.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/HNlEnZhaEAAZvuV-768x418.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/HNlEnZhaEAAZvuV-1024x557.jpeg 1024w" sizes="(max-width: 3903px) 100vw, 3903px"&gt;&lt;/p&gt;
+&lt;p&gt;紧跟在 Kimi K3 之后，定位千问新一代旗舰基座模型的预览版 Qwen3.8-Max-Preview，也正式发布，开放给所有用户使用，接替 5 月发布的 Qwen3.7-Max。&lt;/p&gt;
+&lt;p&gt;两个月的时间，Qwen3.8-Max 的参数量从 3.7 时代的「超万亿的千问模型」到现在的 2.4T，&lt;strong&gt;千问团队表示 Qwen3.8-Max 是目前最强大的模型之一，兼容领先的前沿 AI 模型，仅次于 Fable 5。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672516" src="https://s3.ifanr.com/wp-content/uploads/2026/07/1-15.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/1-15.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/07/1-15-360x186.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/1-15-768x397.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/1-15-1024x529.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲目前在千问官网，已经能体验最新的 Qwen3.8-Max-Preview 预览版&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;虽然正式版还没上，Qwen3.8-Max-Preview 在 X 上的热度也并不比 Kimi K3 要低，将近 600 万次的浏览，但网友们讨论的内容都集中在&lt;strong&gt;「能聊 ≠ 能用，承诺 ≠ 交付」&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;大家都在等正式版/满血版的 Qwen3.8-Max，以及模型的 benchmark 表、激活参数量，和 Hugging Face 上带许可证的真实权重文件。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672521" src="https://s3.ifanr.com/wp-content/uploads/2026/07/image-4.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/image-4.png!720 1814w, https://s3.ifanr.com/wp-content/uploads/2026/07/image-4-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/image-4-768x433.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/image-4-1024x577.png 1024w" sizes="(max-width: 1814px) 100vw, 1814px"&gt;&lt;/p&gt;
+&lt;p&gt;对比之前 Hy3 的预览版和正式版，三个月的时间简直是两个模型。这次 Qwen3.8-Max 正式版估计不会要等三个月，所以我们还是简单测试了一下 Qwen3.8-Max 的预览版，看看是不是值得期待。&lt;/p&gt;
+&lt;h2&gt;实测 Qwen3.8-Max-Preview，速度很快但效果&lt;/h2&gt;
+&lt;p&gt;几乎所有的大模型公司都开始有自己的「Codex」应用，Qwen 用于编程和效率工作场景的应用是 Qoder/QoderWork。我们这次使用 Qoder 来对 Qwen3.8-Max-Preview 进行测试。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672527" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-17-09.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-17-09.jpg!720 2640w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-17-09-360x218.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-17-09-768x465.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-17-09-1024x621.jpg 1024w" sizes="(max-width: 2640px) 100vw, 2640px"&gt;&lt;/p&gt;
+&lt;p&gt;在 Qoder 内可以看到 Qwen3.8-Max-Preview 的定位是最新一代基座模型，深度推理办公的首选，而模型上下文窗口在模型设置中，最多可以拉到 1M，即支持百万字上下文。&lt;/p&gt;
+&lt;p&gt;我们先是让它设计一个个人作品集网站首页，这类工作对大模型来说基本上都是「洒洒水」，关键点在于怎么做得高级又好看，有创新点。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672528" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-20-15.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-20-15.jpg!720 2640w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-20-15-360x218.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-20-15-768x465.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-20-15-1024x621.jpg 1024w" sizes="(max-width: 2640px) 100vw, 2640px"&gt;&lt;/p&gt;
+&lt;p&gt;生成过程中，Qoder 会弹出问题要我们选择网页的样式和内容，但也可以直接让 AI 自行决定。&lt;/p&gt;
+&lt;p&gt;最终的生成的网页效果确实不赖，并且还添加了适当的缓入缓出的渐变效果，让网页的阅读体验更高级。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672530" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-30-20.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-30-20.jpg!720 2362w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-30-20-360x1533.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-30-20-768x3270.jpg 768w" sizes="(max-width: 2362px) 100vw, 2362px"&gt;&lt;/p&gt;
+&lt;p&gt;在 Qoder 应用内，我们发现它提供了 161 种风格参考，包括 Aribnb、Apple、Figma、GOV.UK 等不同网站，我们可以直接应用对应风格，来创作网页。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672529" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-25-35.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-25-35.jpg!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-25-35-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-25-35-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-25-35-1024x576.jpg 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;p&gt;此外，Qoder 非常好的一点是，我们可以直接对网页进行修改。通过应用内的「画布」功能，我们可以直接选择网页上的元素，进行排版、颜色、间距、文本内容、视觉编辑，以及描边等参数的修改。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672531" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-37-06.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-37-06.jpg!720 3326w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-37-06-360x213.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-37-06-768x454.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-37-06-1024x606.jpg 1024w" sizes="(max-width: 3326px) 100vw, 3326px"&gt;&lt;/p&gt;
+&lt;p&gt;接着测试「真才实学」的代码能力，自从 Fable 5 出来之后，有网友用它制作各式各样的 3D 网页，模拟真实的地理环境，创作不同的游戏场景。3D 测试也成了这段时间以来新发布大模型必测的项目之一。&lt;/p&gt;
+&lt;p&gt;我们从之前的 3D 测试提示词项目中随便找了一个，这次是在 Qoder，即代码场景下的应用内让它完成，完整的提示词是：&lt;/p&gt;
+&lt;p&gt;创建一款明亮的 Three.js 屋顶跑酷游戏，场景位于风格化的纽约街谷上方。玩家开局时已经在奔跑，朝着第一个发光的屋顶边缘冲去。&lt;/p&gt;
+&lt;p&gt;不要创建标题画面、菜单、关卡选择、新手引导浮层或按键开始状态。&lt;/p&gt;
+&lt;p&gt;核心玩法只有一个：在计时结束前，从一个屋顶边缘跳到另一个屋顶边缘，穿过屋顶检查点，最终抵达终点广告牌。打造一条充满活力但范围集中的天际线路，加入水塔、消防梯、屋顶通风口、广告牌、晾衣绳、远处车流、窗格阵列和清晰的落点标记。&lt;/p&gt;
+&lt;p&gt;加入计时器、检查点计数、重置功能、紧凑的操作提示和近距离第三人称镜头。整体要明亮、有动感、清晰易读，并且打开后即可游玩。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672534" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-48-45.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-48-45.png!720 2864w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-48-45-360x225.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-48-45-768x480.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_11-48-45-1024x640.png 1024w" sizes="(max-width: 2864px) 100vw, 2864px"&gt;&lt;/p&gt;
+&lt;p&gt;Qoder 的整个任务界面也很像 Codex，主页面显示当前任务的对话窗口，侧边栏显示项目概要，包括项目进展、产物和文件或 Skill 的引用，以及终端和文件信息等。&lt;/p&gt;
+&lt;p&gt;Qwen3.8-Max-Preview 的运行时间非常快，深度思考 29s、深度思考 1s、深度思考 1s，没用几分钟就把这个 3D 网页给做出来了。&lt;/p&gt;
+&lt;p id="idjGfOr"&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2026/07/img_6a5dc3a6a7f46.png!720" rel="lightbox[1672515]"&gt;&lt;img class="alignnone size-full wp-image-1672541 " src="https://s3.ifanr.com/wp-content/uploads/2026/07/img_6a5dc3a6a7f46.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/img_6a5dc3a6a7f46.png!720 1636w, https://s3.ifanr.com/wp-content/uploads/2026/07/img_6a5dc3a6a7f46-360x185.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/img_6a5dc3a6a7f46-768x394.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/img_6a5dc3a6a7f46-1024x526.png 1024w" sizes="(max-width: 1636px) 100vw, 1636px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;游戏确实是能玩的，而且整体的风格和 Fable 5 也确实类似，但是这是第二版的结果。第一版 Qwen3.8-Max-Preview 给的网页没有控制好玩家前进的速度，导致游戏体验极差，几乎每次都要掉下去重来。&lt;/p&gt;
+&lt;p&gt;我们在 Qoder Work 和网页版内输入同样的提示词，只有 Qoder 交付的结果是比较乐观的，其他的平台应该是没有针对编程项目做过专门的优化，以及单独的 HTML 文件没有顺利加载 Three.js 库文件等问题。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672536" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-31-19.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-31-19.png!720 3334w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-31-19-360x213.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-31-19-768x454.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-31-19-1024x606.png 1024w" sizes="(max-width: 3334px) 100vw, 3334px"&gt;&lt;/p&gt;
+
+&lt;p&gt;接着我们又让它生成一些 3D 的艺术世界，在莫奈位于吉维尼的睡莲世界中，打造一个极限的 Three.js 体验：一片辽阔的池塘，同时也是一幅画，整个水面与花园都由漂浮的纯色笔触构成，乘船穿行其中。&lt;/p&gt;
+&lt;p&gt;光是听着就很有难度，这次 Qwen3.8-Max-Preview 的执行时间也比纽约屋顶跑酷任务更久，但整体上依旧很快，尤其是侧边栏显示的进展，经常是一瞬间就全部 Checked 完成。&lt;/p&gt;
+&lt;p&gt;最后的结果就相当抽象了，完全不知道这个网页是什么。虽然它在结果里写着 118,500 个独立色彩笔触，有睡莲叶、花朵、日本桥等等元素，但是交付的网页就是一些碎片在旋转。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672535" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-28-23.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-28-23.png!720 3118w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-28-23-360x208.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-28-23-768x443.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-28-23-1024x591.png 1024w" sizes="(max-width: 3118px) 100vw, 3118px"&gt;&lt;/p&gt;
+&lt;p&gt;二次修改让它重新检查之后，新的结果依旧是有点一言难尽，但至少是比第一次能明显地看到这个桥的形状了。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672537" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-56-24.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-56-24.png!720 3102w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-56-24-360x207.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-56-24-768x442.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_12-56-24-1024x590.png 1024w" sizes="(max-width: 3102px) 100vw, 3102px"&gt;&lt;/p&gt;
+&lt;p&gt;而如果是复刻 App，我们也输入「帮我复刻一个 flighty 的 app，给我可以分享的网页预览链接先。」，看看它能否学到 Flighty 精美的交互和动效，以及简洁大方的 UI。&lt;/p&gt;
+&lt;p&gt;结果也是相当简陋，而且几乎没有任何功能，只是找了几个航班放在这里展示。我甚至授权了 Vercel（网页部署平台）给它，但是这个交付的网页很明显是不够格的。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672538" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_13-40-33.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_13-40-33.png!720 3118w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_13-40-33-360x208.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_13-40-33-768x443.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_13-40-33-1024x591.png 1024w" sizes="(max-width: 3118px) 100vw, 3118px"&gt;&lt;/p&gt;
+&lt;p&gt;除了在 Qoder 内能体验到 Qwen3.8-Max-Preview，我们在千问官网也测试了一下模型的深度研究能力。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672522" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-15-16.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-15-16.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-15-16-360x186.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-15-16-768x397.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-15-16-1024x529.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;p&gt;最后的结果，基本上和我们用 Qwen3.7-Max 测试是类似的，从核心摘要到市场格局，以及未来行业发展趋势，都没有太大的差别。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672523" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-27-03.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-27-03.jpg!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-27-03-360x2488.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-27-03-768x5307.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_10-27-03-148x1024.jpg 148w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;p&gt;目前预览版的能力或许无法代表最终 Qwen3.8-Max 的能力，但国产开源模型进击的势头确实让人招架不住。&lt;/p&gt;
+&lt;h2&gt;国产开源大模型首次超过闭源模型&lt;/h2&gt;
+&lt;p&gt;国外的网友说，现在的开源模型几乎都是来自中国。已经发布的 GLM-5.2 和 Kimi K3，一个是接近 Anthropic 的 Opus 水平，一个来到了可以跟 Fable 5 一桌的等级。&lt;/p&gt;
+&lt;p&gt;而本月还将迎来 Qwen3.8-Max、DeepSeek V4 正式版、GLM-5.5，以及 MiniMax-M3-Pro，几乎都把「对标 Fable 5」当成了模型的评价基准。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672517" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_47_11.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_47_11.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_47_11-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_47_11-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI 的战略未来主管 Dean W. Ball 在 X 上发文，提到 Kimi 是一个非常优秀的模型，它不认为 Kimi 的性能可以用蒸馏之类的技术来解释。&lt;/p&gt;
+&lt;p&gt;而在 Agent Coding 测试里，Kimi K3 的表现几乎可以与今年一季度最好的公开模型相媲美。&lt;/p&gt;
+&lt;p&gt;今年以来，主要公司的大模型发布情况显示累计有 39 次模型发布，其中国产模型有 21 个，而美国的大模型 18 个。&lt;/p&gt;
+&lt;p&gt;39 个大模型中开源模型有 17 个，其中 13 个来自国产开源模型，4 个美国模型分别是 Mira Murati 的 Thinking Machine Lab 最新发布的 Inkling 模型、英伟达发布的 Nemotron 3 Ultra、Google 的 Gemma 4 以及英伟达的 Nemotron 3 Super。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672518" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT13_46_33.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT13_46_33.png!720 841w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT13_46_33-360x800.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT13_46_33-768x1708.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT13_46_33-461x1024.png 461w" sizes="(max-width: 841px) 100vw, 841px"&gt;&lt;/p&gt;
+&lt;p&gt;或许现在谈要超过 Fable 5 为时尚早，但是当看到 X 上的网友一本正经的分析：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Mythos Preview 是 10T 参数模型；GPT-6、Fable 5.1 已经完成训练但尚未发布；美国实验室因为安全风险主动压低或隐藏能力；以及国产模型近期的进步有一部分仍然来自蒸馏等判断……&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这就很让人忍俊不禁，照他们的逻辑，中国模型成绩追上来，可以归因于蒸馏和刷榜；尚未追上的部分，又可以解释成美国把真正的强模型藏起来了；无论出现什么结果，都不会输。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1672539" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_14-30-26.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_14-30-26.png!720 1196w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_14-30-26-360x565.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_14-30-26-768x1206.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-20_14-30-26-652x1024.png 652w" sizes="(max-width: 1196px) 100vw, 1196px"&gt;&lt;/p&gt;
+&lt;p&gt;今天的榜单上，Kimi K3 可能超过了某个国外模型；明天 Qwen3.8-Max 可能又在另一个项目里拿到第一；再过几天，DeepSeek、智谱还会继续把新的模型推上来。&lt;/p&gt;
+&lt;p&gt;模型之间的差距，开源和闭源，国产和海外模型，都正在变得越来越短。&lt;/p&gt;
+&lt;p&gt;以前，想要最强的模型，可能只能选择少数几家海外闭源模型。现在，同样的能力开始出现在更多模型、更多产品，以及更多本地部署的方案里。&lt;/p&gt;
+&lt;p&gt;模型能力越接近，我们的选择就越多。最后决定我们能不能用上更强 AI 的，大概会是这些模型，谁先把价格打下来。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Mon, 20 Jul 2026 07:38:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE15STJuSnI2R1ctcXNTTUsydmpEWjdPOVBFNzRKaWFjaTQyQWszUHhFVTNCWnU5UVdicl9tbkloUjZEN1E</guid></item><item><title>韩国券商Meritz：中东主权AI资金入场采购韩国内存，Kimi K3是利好不是冲击 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777417</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 07:35:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1lVTBMUHhyVUVid05LWHJUMGgwQWpnblpLOGlwelhVSkQ2MXhULU1TUkFOZS1kQm1mRk4ySkRkbGNTbFZTTms2UUpJanc4NUZNazRr</guid></item><item><title>工信部：上半年中国研发四足机器人占全球销量近70% - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260720-9391135</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;中国官方数据显示，今年上半年，中国研发的四足机器人占全球销量份额接近70%。&lt;/p&gt;&lt;p&gt;新华社报道，中国工业和信息化部星期一（7月20日）发布上述数据。&lt;/p&gt;&lt;p&gt;数据也显示，在智能机器人领域，中国研发的人形机器人整机产品达400余款，已超全球半数。&lt;/p&gt;&lt;p&gt;报道称，今年上半年中国一批具有国际竞争优势的产业加快壮大。人工智能（AI）、半导体、新能源、生物医药等领域，涌现一批全球独角兽企业，在国际标准研制、产业治理等方面贡献“中国方案”。&lt;/p&gt;&lt;p&gt;此次数据发布正值规格超越往届的世界人工智能大会在上海举行。据报道，机器人是大会上最为热闹的板块之一，有超过200家企业参展，宇树科技展示可切换人形与四足双形态的GD01载人变形机甲，智元机器人展出人形机器人远征A3 Ultra、移动操作机器人精灵G2 Max等。&lt;/p&gt;
+    
+  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Mon, 20 Jul 2026 07:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5ZaGQtQ2F1dzNaUV9Wbnd0WFE3enQxcDJRZTV5ZlFFTWNoTkVmMDhBQ0pQeUtFc0VMZ2RqRjJUTVp3R2xVTmw5aDRHSjRtdzBBRkpTd29jVk9JTGZvdDZiZXZ6QlJyX0RSeEE</guid></item><item><title>4D云台全自研！荣耀Robot Phone成本极高：定价超15000 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137653.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，荣耀Robot Phone已经开启预约，将在下个月正式发布，量产上市。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;需要注意的是，博主定焦数码最新爆料称，该机定价非常高，按照成本来算会超过15000元，超过很多折叠屏旗舰的售价。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/d5e023a5-422e-4615-a4b3-f7c370673c05.png" target="_blank"&gt;&lt;img alt="4D云台全自研！荣耀Robot Phone成本极高：定价超15000" h="314" src="//img1.mydrivers.com/img/20260720/Sd5e023a5-422e-4615-a4b3-f7c370673c05.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这主要是因为手机成本太高，其核心4D云台机械结构为荣耀完全自研，并非行业成熟公模方案，整套云台精密程度极高，单模组物料成本大幅走高，整机综合堆料成本居高不下。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;荣耀Robot Phone主摄采用机械云台模组，闲置状态下镜头结构完全收纳机身内部，日常握持手感与常规旗舰手机没有明显差异。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/8a9cbeb9-41aa-49a6-9b4a-d11116dc4eb8.png" target="_blank"&gt;&lt;img alt="4D云台全自研！荣耀Robot Phone成本极高：定价超15000" h="541" src="//img1.mydrivers.com/img/20260720/S8a9cbeb9-41aa-49a6-9b4a-d11116dc4eb8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;支持360度全域旋转、多角度智能运镜与人像自动跟拍，机械物理防抖达到CIPA 5.5级专业标准，无需额外搭配手持稳定器就能完成流畅Vlog录制。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;影像硬件规格全面拉满，后置三摄组合以2亿像素F1.6大光圈4D云台主摄为核心，搭配5000万像素超广角镜头与2亿像素潜望长焦镜头，联合好莱坞影视品牌ARRI深度调校。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="4D云台全自研！荣耀Robot Phone成本极高：定价超15000" h="400" src="//img1.mydrivers.com/img/20260720/be1a9ecd-296e-4c89-af8f-abbc03cf7c30.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其他硬件方面，核心搭载第五代骁龙8至尊版旗舰处理器，搭配6.3-6.4英寸1.5K四等边高清直屏，支持120W有线超级快充。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;机身内置荣耀自研YOYO端侧大模型，区别于传统语音助手的被动应答模式，能够读懂复合式长语音指令，跨应用自动串联多步骤任务。&lt;/p&gt;
+&lt;p&gt;单条语音即可同步完成屏幕调节、日程设置、出行预约等多项操作，同时具备情绪感知能力，依托云台机械动作传递拟人化反馈，真正实现具备自主感知与行动能力的具身智能终端体验。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 07:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBicHFoaGZYSDdnTE1rREt6RWN2VjBZbnlIMFVXV1RfNVE0TElUeDQwdjdtTWtUMHp2NFBGaGpZUUNvdTUtZmdIclgzSFJMekpsQ2JWUjQ3cTY</guid></item><item><title>NVIDIA将详解DLSS5：AI生成逼真画面 但不会让游戏变质 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137648.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，3月份的GTC大会上NVIDIA宣布了新一代的DLSS5技术，AI可以重绘出游戏画面，而不是提升游戏性能，然而该技术引发了巨大争议，反对者非常多。&lt;/p&gt;
+&lt;p&gt;此前的DLSS技术用AI来提升游戏性能，玩家轻松获得100%、200%的性能提升，对这个技术自然很欢迎，但DLSS5不只是提升游戏帧数，而是会参与到游戏渲染过程中，GTC上展示的画面就是AI重新绘制了游戏中的人物角色。&lt;/p&gt;
+&lt;p&gt;即便这个AI脸比原始和我们的的更逼真，但这个举动不仅没有得到玩家赞誉，反而让玩家对DLSS5不满了，因为大家都怕一旦AI接管了渲染，那大家玩游戏就不是体验开发者、设计师精心创造的人物角色、游戏画面及各种元素，而是AI自己渲染出来的画面。&lt;/p&gt;
+&lt;p&gt;NVIDIA之后也多次表态安抚大家，甚至NVIDIA CEO黄仁勋都出面强调DLSS5不会扭曲游戏，只不过这事也没完全消除大家的担心。&lt;/p&gt;
+&lt;p&gt;马上又要到SIGGARPH 2026大会了，这是图形技术界的年度重磅会议，NVIDIA会派出三位技术高管，其中的重点内容就是详细介绍DLSS5技术，讲述该技术是怎么构建的，为何NVIDIA会对此这么兴奋。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/f10dee74-8cd8-44ac-91f7-56c8ee7e79cd.jpg" target="_blank"&gt;&lt;img alt="NVIDIA将详解DLSS5：AI生成逼真画面 但不会让游戏变质" h="239" src="//img1.mydrivers.com/img/20260720/Sf10dee74-8cd8-44ac-91f7-56c8ee7e79cd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NVIDIA也在博文中阐述了他们的态度——AI可以合成出极其逼真的画面，&lt;span&gt;&lt;strong&gt;但游戏需要的不只是美丽的图像，每一帧图片都应该与创作者的想法一致&lt;/strong&gt;&lt;/span&gt;，具有相同的结构、相同的角色及相同的叙事构图。&lt;/p&gt;
+&lt;p&gt;NVIDIA将其分成了三个层次——&lt;strong&gt;模拟定义世界、学习型图像生成丰富了外观、艺术家最终决定输出结果，&lt;/strong&gt;这个意思就非常明显了，NVIDIA是想再次强调DLSS5是用AI技术丰富游戏内容，但最终决定游戏的还是艺术家，也就是游戏公司的各种开发者、创造者的意图依然是准则。&lt;/p&gt;
+&lt;p&gt;总之，在DLSS5上NVIDIA现在面对的压力不是技术本身，而是要说服游戏玩家接受DLSS5，为此他们需要证明DLSS5只是打辅助，提高游戏质量/性能，不会取代游戏创造者的创意。&lt;/p&gt;
+&lt;p&gt;PS：话是这么说，但从以往DLSS能大幅提升性能之后，很多游戏公司显然也学会偷懒或者降低成本了，不再追求极致的优化，DLSS5问世之后必然也会有游戏公司用它来直接创作，毕竟可以降低成本，减少开发时间，总之AI泛滥这事是无法避免的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/7fde352d-5703-409c-8626-ce7b6c288fbc.png" target="_blank"&gt;&lt;img alt="NVIDIA将详解DLSS5：AI生成逼真画面 但不会让游戏变质" h="336" src="//img1.mydrivers.com/img/20260720/S7fde352d-5703-409c-8626-ce7b6c288fbc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class="KT-tranbtn"&gt;&lt;svg version="1.1" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M0 0 C10.56 0 21.12 0 32 0 C32 10.56 32 21.12 32 32 C21.44 32 10.88 32 0 32 C0 21.44 0 10.88 0 0 Z " fill="#209CEE" transform="translate(0,0)"&gt;&lt;/path&gt;&lt;path d="M0 0 C0.66 0 1.32 0 2 0 C2 2.97 2 5.94 2 9 C2.969375 8.2575 3.93875 7.515 4.9375 6.75 C5.48277344 6.33234375 6.02804688 5.9146875 6.58984375 5.484375 C8.39053593 3.83283924 8.39053593 3.83283924 9 0 C13.95 0 18.9 0 24 0 C24 0.99 24 1.98 24 3 C22.68 3 21.36 3 20 3 C20 9.27 20 15.54 20 22 C19.01 22 18.02 22 17 22 C17 15.73 17 9.46 17 3 C15.35 3 13.7 3 12 3 C11.731875 3.598125 11.46375 4.19625 11.1875 4.8125 C10.01506533 6.97224808 8.80630718 8.35790256 7 10 C8.01790655 12.27071461 8.77442829 13.80784632 10.6875 15.4375 C11.120625 15.953125 11.55375 16.46875 12 17 C11.6875 19.6875 11.6875 19.6875 11 22 C10.34 22 9.68 22 9 22 C8.773125 21.236875 8.54625 20.47375 8.3125 19.6875 C6.73268318 16.45263699 5.16717283 15.58358642 2 14 C2 16.64 2 19.28 2 22 C1.34 22 0.68 22 0 22 C0 14.74 0 7.48 0 0 Z " fill="#E9F5FD" transform="translate(4,5)"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 06:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBSNFRfWDFlSGFXNUdvYTFDZ2ZZamJTOFVFOTliTGV0bzNLRVRwVTNySE12Zkc0VUIzdGYwaElwMDNXelMyUTlBR2RMbzAycnJBSml5NG9SWjM</guid></item><item><title>我国AI开源大模型全球累计下载量破100亿次：开源鸿蒙设备总量超13.5亿台 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137646.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，据工信部最新发布的行业运行公告，2026年1到5月，我国软件业务总收入超过6.2万亿元，同比增长10.3%，全行业整体保持了十分稳健的增长态势。&lt;/p&gt;
+&lt;p&gt;今年以来，国内软件产业各细分赛道多点开花，整体发展质量持续抬升，多个长期处于追赶状态的核心领域都迎来了突破性进展。&lt;/p&gt;
+&lt;p&gt;基础软件赛道的商业化落地正在全面提速，操作系统、数据库等长期被海外产品主导的核心基础软件接连取得技术突破，各类本土创新成果持续涌现，&lt;strong&gt;开源鸿蒙操作系统已经全面覆盖手机、电脑、汽车、家电等各类消费和行业终端，累计接入的生态设备总量超过13.5亿台。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;基于开源鸿蒙二次开发的电鸿、仪鸿等各行业专属发行版数量已经超过100款。&lt;/p&gt;
+&lt;p&gt;工业软件领域也已经形成覆盖国内绝大多数重点制造行业的完整产品体系，相关方案正在各类工业场景中加速部署落地、持续迭代升级，为千行百业的数字化转型注入了源源不断的技术动力。&lt;/p&gt;
+&lt;p&gt;截至2026年6月底，国内重点工业企业的数字化研发设计工具普及率、关键工序数控化率两项核心指标，分别达到86.3%和69.5%，整体数字化基础已经十分扎实。&lt;/p&gt;
+&lt;p&gt;人工智能技术正在给整个软件行业带来全链条的全面赋能，主管部门正引导国内软件企业牢牢抓住人工智能带来的产业变革窗口。&lt;/p&gt;
+&lt;p&gt;加快普及使用代码大模型、智能编程工具等新型研发工具，从底层提升软件研发生产效率，推动最终产出的产品功能更加丰富、人机交互体验更加自然、各类内容创作效率大幅跃升，智能测试、智能运维等一批此前停留在概念阶段的创新应用正在各行业加速落地。&lt;/p&gt;
+&lt;p&gt;国内开源生态的建设进度正在以超出预期的速度发展壮大，全国性开源基金会目前已经吸纳超过50个优质开源项目进入官方孵化阶段。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;此外，国家级人工智能开源社区汇聚的注册用户总量达到1100余万，平台托管的各类开源模型数量超过7万个，覆盖基础软件、大模型以及上层应用的全栈开源解决方案正在加速搭建完成，我国自主研发的人工智能开源大模型，在全球范围内的累计下载量已经正式突破100亿次。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;工业和信息化部新闻发言人、运行监测协调局局长陶青表示，接下来工信部会严格按照国家软件发展战略的整体部署，持续增强关键核心软件的产品和服务供给能力，加快出台人工智能加软件专项行动方案，全方位推动软件开发全流程智能化转型、现有软件产品及服务的智能化升级，以及智能体软件这类全新业态的培育工作，进一步夯实国内软件产业的全球核心竞争力。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/07b10cae43574182ae6e5ff3cbf73d87.jpg" target="_blank"&gt;&lt;img alt="我国AI开源大模型全球累计下载量破100亿次：开源鸿蒙设备总量超13.5亿台" h="400" src="//img1.mydrivers.com/img/20260720/s_07b10cae43574182ae6e5ff3cbf73d87.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 06:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9YUGwtaU5OMVItNlE5SEFEVy1QR0ZIWUUxNkNad01XSllUOFI5UWgwcldZeGtSSGVsbk9QR0NGTGtVckozWlFhLVRHVk5yOGlwUVNNczE4RE0</guid></item><item><title>与协鑫、汇川、追觅十余位“智造人”，看清AI 落地的真瓶颈 - 虎嗅</title><link>https://www.huxiu.com/article/4876042.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" data-v-42acfa7d&gt;&lt;p data-check-id="354290"&gt;&lt;/p&gt;&lt;p data-check-id="612679"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="966209"&gt;过去一年，AI在制造与供应链业的话题热度涨得很快。但真正走进车间的人知道，事情没那么顺利。&lt;/p&gt;&lt;p data-check-id="735237"&gt; &lt;/p&gt;&lt;p data-check-id="606221"&gt;7月10日，虎嗅智库在苏州组织了一场闭门交流，十几位来自协鑫、派克新材、追觅科技、汇川技术、来伊份、万事利、圣奥、知微行易、上海家化等企业的一线实践者，聊了一下午。&lt;/p&gt;&lt;p data-check-id="890178"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="718517"&gt;这场会的规则很简单：各自讲具体的AI应用案例，但必须暴露卡点。&lt;/p&gt;&lt;p data-check-id="308993"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="684713"&gt;这不仅是一场经验交流，而是一次高密度的“判断共建”。&lt;/p&gt;&lt;p data-check-id="472043"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="918039"&gt;从供应链负责人到一线解决方案科学家，不同生态位的角色围坐而谈，共同拆解AI进入生产、研发、供应链与经营现场后的真实进展与真实卡点。并试图回答那个最核心的问题——&lt;/p&gt;&lt;p data-check-id="878387"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="871900"&gt;当多数企业已经突破单点试点、进入横向复制与平台化阶段后，真正的分水岭在哪里？&lt;/p&gt;&lt;p data-check-id="220149"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="569894" label="大标题" class="text-big-title"&gt;10+独家判断：外围很热，产线很冷&lt;/h2&gt;&lt;p data-check-id="871469"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="516623"&gt;会上，多位嘉宾的AI实践细节首次披露，涵盖从销量预测、智能排产到工艺控制、能源交易的全链路。但不同于案例展示，每位嘉宾的核心输出被收敛为一句判断：&lt;/p&gt;&lt;p data-check-id="384312"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="910261"&gt;方宁 | 汇川技术 智能制造开发及应用专家：&lt;strong&gt;工业AI的瓶颈不在算力在观测&lt;/strong&gt;，主张以因果推断替代纯仿真，从控制层切入工艺闭环。&lt;/p&gt;&lt;p data-check-id="957786"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="373769"&gt;李貌 | 追觅科技 个护事业群供应链端ITBP：端到端供应链AI已跑通外围环节，但&lt;strong&gt;制造核心仍受困于负样本不足与关键参数不可观测&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="497353"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="606332"&gt;侯齐 | 追觅科技 洗衣机事业群研发负责人：研发端AI Coding提效明显，但核心挑战在于用AI打通制造与研发的前后端规则。&lt;/p&gt;&lt;p data-check-id="448966"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="936479"&gt;赵宇乾 | 派克新材 副总经理：AI必须与组织重构挂钩。当下自动工艺设计覆盖七成产品，卡点是制造过程参数的可观测性（用于自动工艺模型优化），导致指导工艺与可执行工艺之间存在断层。&lt;/p&gt;&lt;p data-check-id="229559"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="204973"&gt;汤光先 | 协鑫能科晟能市场管理部总经理：电力市场化催生AI交易新基建，时序大模型预测电价趋势，但博弈论困境与突变预测仍是难点。&lt;/p&gt;&lt;p data-check-id="603744"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="619975"&gt;江军 | 来伊份 CTO：AI在门店巡店与Coding场景已见效，但“AI店长”&lt;strong&gt;经验复制受困于幻觉与组织知识不理解&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="549140"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="610528"&gt;刘蒙 | 追觅科技 个护事业群IT负责人：IT视角下Agent想法很多，但&lt;strong&gt;数据安全黑盒与权限壁垒让多数项目无法如期上线&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="258721"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="239192"&gt;高飞 | 上海家化 AI应用专家：与供应链关系密切的AI应用集中在巡店、测肤与需求预测，但快消SKU爆炸与渠道碎片化让预测准确率天花板明显。&lt;/p&gt;&lt;p data-check-id="912461"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="612126"&gt;吴方圆 | 万事利丝绸 AI生态负责人：从AI设计到无水印染一体机打通小单快反，但跨部门AI串联仍是硬骨头。&lt;/p&gt;&lt;p data-check-id="949226"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="773425"&gt;彭俊松 | 知微行易 首席科学家：企业软件黑盒化是AI进入执行层的最大障碍，主张以“代码即语义”白盒化重构工业系统。&lt;/p&gt;&lt;p data-check-id="133375"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="850271"&gt;某头部新能源智能制造负责人：以“做小事”方法论推进AI，但工艺质量模型与工控系统未打通、OT安全能力缺失是最大隐患。&lt;/p&gt;&lt;p data-check-id="942060"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="804056" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/17/112853959226.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="750"&gt;&lt;/p&gt;&lt;p data-check-id="875126" label="图片备注" class="text-img-note"&gt;汇川技术方宁博士正在分享AI落地案例&lt;/p&gt;&lt;p data-check-id="875678"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="803874" label="大标题" class="text-big-title"&gt;虎嗅智库观察：三座山挡住执行层&lt;/h2&gt;&lt;p data-check-id="343259"&gt; &lt;/p&gt;&lt;p data-check-id="930291"&gt;尽管制造业已被公认为AI落地的重要阵地，但大多数企业仍处于局部优化阶段。数据治理不统一、系统黑盒化、组织KPI与AI目标不对齐等基础设施问题，依然是阻碍AI从插件升级为行动力的深层羁绊。&lt;/p&gt;&lt;p data-check-id="405051"&gt; &lt;/p&gt;&lt;p data-check-id="950015"&gt;结合现场交锋与调研问卷交叉数据，我们将核心瓶颈抽象为三座山：&lt;/p&gt;&lt;p data-check-id="672023"&gt; &lt;/p&gt;&lt;p data-check-id="246899"&gt;第一座山：&lt;strong&gt;不可观测&lt;/strong&gt;。 &lt;/p&gt;&lt;p data-check-id="139413"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="222708"&gt;工业现场不是互联网场景，数据不是天然可采、可标注、可复用的。&lt;/p&gt;&lt;p data-check-id="507070"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="263850"&gt;工业现场的关键变量——热态工件变形量、催化剂真实活性、产品核心温度——往往无法直接测量。传感器只是把高维真实状态压缩成几个数值，“你看到的永远只是部分真相”。&lt;/p&gt;&lt;p data-check-id="657699"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="544049"&gt;当关键变量看不见，模型再聪明也是盲人摸象。&lt;/p&gt;&lt;p data-check-id="241106"&gt; &lt;/p&gt;&lt;p data-check-id="338169"&gt;第二座山：&lt;strong&gt;不可验证、不可担责&lt;/strong&gt;。 &lt;/p&gt;&lt;p data-check-id="534700"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="442882"&gt;AI能写代码、能做预测、能给建议，但企业无法证明它在生产系统里稳定正确。例如，ChatGPT写的代码仍需要人干预验证；垂域模型做了工艺质量闭环，但未与工控结合；预防性维护做了大量工作，但与质量不挂钩。&lt;/p&gt;&lt;p data-check-id="409877"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="413447"&gt;AI输出不是问题，问题是企业无法证明它在生产系统里稳定正确。代码能写、预测能做，但谁敢签字让它直接进产线？&lt;/p&gt;&lt;p data-check-id="919036"&gt; &lt;/p&gt;&lt;p data-check-id="624741"&gt;第三座山：&lt;strong&gt;不可执行、进不了核心&lt;/strong&gt;。 &lt;/p&gt;&lt;p data-check-id="856548"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="991866"&gt;几乎每个嘉宾都绕不开同一个问题：数据从哪来？怎么保证安全？&lt;/p&gt;&lt;p data-check-id="377039"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="962088"&gt;这导致很多想法无法落地——乙方大模型与内部系统真要结合的话，鸿沟太深，“不知AI后台如何处理数据，财务数据、研发图纸可能泄密”。进不了核心业务。&lt;/p&gt;&lt;p data-check-id="758626"&gt; &lt;/p&gt;&lt;h2 data-check-id="287178" label="大标题" class="text-big-title"&gt;从场景感知到共识导航：虎嗅智库闭门会的升级&lt;/h2&gt;&lt;p data-check-id="828724"&gt; &lt;/p&gt;&lt;p data-check-id="618793"&gt;市场对AI案例的需求正在变化。&lt;/p&gt;&lt;p data-check-id="601426"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="925501"&gt;过去，企业需要“成功案例”；现在，决策者更需要的是：哪些经验可复用，哪些路径不能照抄，AI在什么条件下才真正有效。&lt;/p&gt;&lt;p data-check-id="406639"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="441160"&gt;虎嗅智库也在持续迭代闭门会——本场会议正是全新升级的2.0版。会议有三个模块组成：&lt;/p&gt;&lt;p data-check-id="674153"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="357059"&gt;1、&lt;strong&gt;真实需求与痛点暴露&lt;/strong&gt;。由甲方企业直接讲清AI落地现状，以及最关心的ROI验证、OT融合、数据治理等问题。&lt;/p&gt;&lt;p data-check-id="796540"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="737065"&gt;2、&lt;strong&gt;路径探讨与解法对照&lt;/strong&gt;。结合制造业真实场景，讨论可迁移的实施路径、选型逻辑与落地方法。&lt;/p&gt;&lt;p data-check-id="423514"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="201953"&gt;3、&lt;strong&gt;边界判断与复盘&lt;/strong&gt;。共同复盘成功与受挫的关键节点，判断AI在什么条件下见效，什么情况下容易失灵。&lt;/p&gt;&lt;p data-check-id="707728"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="582189"&gt;这样的议程设计，让嘉宾不只是“听众”，而是共同参与判断的“评审人”。&lt;/p&gt;&lt;p data-check-id="636730"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="796951"&gt;在现场，追觅的供应链Agent困境，与汇川的因果推断路线形成对照；协鑫的电力交易博弈，与某头部新能源的OT安全焦虑相互映照；派克新材的组织重构思考，也与知微行易的白盒化解法彼此验证。多案例交叉讨论之下，闭门会完成了从痛点暴露、路径拆解到边界共识的闭环。&lt;/p&gt;&lt;p data-check-id="608651"&gt; &lt;/p&gt;&lt;p data-check-id="944944"&gt;为此，虎嗅智库将进一步升级探讨密度与深度。本季度将继续聚焦制造供应链，辅以营销服、运营自动化共三大核心主题，推出2场线下闭门会及3场线上圆桌，与行业一同拆解真实落地的分水岭：&lt;/p&gt;&lt;p data-check-id="481203"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="886994"&gt;8.07   线下判断型闭门会    &lt;/p&gt;&lt;p data-check-id="670734"&gt;8.13   502线上同行    &lt;/p&gt;&lt;p data-check-id="119666"&gt;8.27   502线上同行    &lt;/p&gt;&lt;p data-check-id="948837"&gt;9.10   线下判断型闭门会    &lt;/p&gt;&lt;p data-check-id="617039"&gt;9.21   502线上同行    &lt;/p&gt;&lt;p data-check-id="578609"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="386869" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/17/145101810592.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="396" data-h="396"&gt;&lt;/p&gt;&lt;p data-check-id="695179" label="图片备注" class="text-img-note"&gt;添加智库小虎提前获得活动信息&lt;/p&gt;&lt;p data-check-id="637384"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="523151"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="777639"&gt;同时&lt;strong&gt;本次闭门会的后续专题内容即将发布&lt;/strong&gt;，敬请关注：&lt;/p&gt;&lt;p data-check-id="723894"&gt; &lt;/p&gt;&lt;p data-check-id="716207"&gt;汇川技术：OT侧的因果推断与“实因智能体”技术路线&lt;/p&gt;&lt;p data-check-id="247184"&gt;上海家化：快消行业AI应用的边界与天花板&lt;/p&gt;&lt;p data-check-id="884817"&gt;追觅科技：从供应链到研发端的Agent落地实录&lt;/p&gt;&lt;p data-check-id="605732"&gt;知微行易：企业软件白盒化与工业AI底座重构&lt;/p&gt;&lt;p data-check-id="985791"&gt; ......&lt;/p&gt;
+          &lt;div class="article__canonical"&gt;
+            &lt;p&gt;文章标题：与协鑫、汇川、追觅十余位“智造人”，看清AI落地的真瓶颈&lt;/p&gt;
+            &lt;p&gt;文章链接：https://www.huxiu.com/article/4876042.html&lt;/p&gt;
+            &lt;a href="https://www.huxiu.com/article/4876042.html"&gt;阅读原文：与协鑫、汇川、追觅十余位“智造人”，看清AI落地的真瓶颈_虎嗅网&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Mon, 20 Jul 2026 06:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9Va3NhaU5GNE5xQ2NiTlFfUUtRMTJmRGFLTjl4X253UW9CRFZ3WjJmazkxZkZ0dmt5eGtPcTdEbnM5c2RueVV3NEtUNTNsS3FrN3ZCbw</guid></item><item><title>是故意的还是不小心！AMD高管代码泄密：Anthropic正测试其GPU - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137641.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;是故意的还是不小心！AMD高管代码泄密：Anthropic正测试其GPU&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-20 14:34:55  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137641-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，&lt;span&gt;&lt;strong&gt;芯片行业分析机构SemiAnalysis在X平台发文称，通过解读AMD AI业务高级总监公开发布的GitHub代码，发现Anthropic将成为AMD客户。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;此次信息的披露路径颇为特殊，并非来自官方公告或媒体报道，而是源于AMD内部高管在公开代码托管平台GitHub上发布的代码内容。SemiAnalysis对这批代码进行专业解读后公开发布分析结论。&lt;/p&gt;
+&lt;p&gt;AMD AI业务高级总监的公开GitHub仓库中，一份YAML配置文件将Anthropic列为客户。文件显示Anthropic获得最高级别的30个优先级积分，与Meta等现有超大规模客户处于同一等级。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前Anthropic正处于产品评估或测试阶段，AMD为Anthropic提供Instinct MI350X加速器进行测试，这是AMD新一代面向AI训练的GPU，配备288GB HBM3e显存，显存带宽达8TB/s。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;若上述信息属实，AMD将获得一个此前由英伟达和谷歌主导的高端AI训练市场的重要新客户。Anthropic此前已与谷歌TPU、三星等多家芯片供应商建立合作关系。&lt;/p&gt;
+&lt;p&gt;对AMD而言，拿下Anthropic这一客户具有重要的标杆意义。在英伟达占据约80%份额的AI芯片市场，Anthropic的采用将为AMD提供重要的行业验证。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/d894f5b360f546489502e58fd7b15de7.jpg" target="_blank"&gt;&lt;img alt="是故意的还是不小心！AMD高管代码泄密：Anthropic正测试其GPU" h="337" src="//img1.mydrivers.com/img/20260720/s_d894f5b360f546489502e58fd7b15de7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 06:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAyXzMtU0gxd3R1dFJjUVhoZHViWDdSUkV2M2syOWs3M0hxSHc4aXdETTJ0S1FkZVNXaFZuQURSVGJTQUNfaXZpdXAzYTNjMmlyWFRjOUFaNlg</guid></item><item><title>全球首发2nm骁龙8E6 Pro！小米18系列真要提前发布了 提前两个月登陆印度 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137639.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;全球首发2nm骁龙8E6 Pro！小米18系列真要提前发布了 提前两个月登陆印度&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-20 14:31:06  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137639-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，此前产业链供应链就曾传出小米18系列可能将打破以往发布节奏提前登场的消息，目前最新流出的多方信息证实，该爆料的可信度已经非常高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;按照之前曝光的产品节奏规划，小米18系列会在今年9月率先面向中国市场正式亮相发布，这款新机将作为首发机型，搭载高通下一代旗舰处理器骁龙8 Elite Gen6系列。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如今这个首发信息已经得到进一步佐证。&lt;/p&gt;
+&lt;p&gt;根据印度当地科技媒体的最新报道，小米18系列手机预计今年12月正式登陆印度市场，这个开卖节点比小米过往旗舰的印度上市时间提前了整整两个月，目的就是为了抢占当地年末冬季的换机市场红利。&lt;/p&gt;
+&lt;p&gt;值得注意的是，不少产业链内部消息显示，小米18系列这次首发阶段将只推出小米18 Pro和小米18 Pro Max两款高配机型，定位基础款的标准版机型会稍晚上市，这套发布节奏和苹果iPhone 18系列的规划十分相似，都选择优先推出定位更高的Pro系列型号投放市场。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心性能层面，小米18系列首发的骁龙8 Elite Gen6 Pro芯片，采用台积电N2P改良版2nm GAA工艺打造，晶体管密度相比上代旗舰搭载的3nm工艺芯片提升30%，整机的功耗控制表现、长时间高负载下的持续性能释放都得到了显著优化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这款全新旗舰芯片采用第三代Oryon架构的2+3+3三丛集八核CPU配置，搭配16MB超大二级缓存，同时整合Adreno 850 GPU以及18MB专属图形缓存，原生支持LPDDR6高速内存，端侧AI算力、光追游戏表现、本地运行大模型的能力都刷新了当前消费级手机芯片的历史纪录。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="小米18 Pro系列入网！全球首发2nm骁龙8E6 Pro：9月见" h="400" src="//img1.mydrivers.com/img/20260717/01a58504-6c4f-4a1b-9828-0ab703bbccdc.jpg" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 06:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE02Q2tGNWU2OVpYVllwWEcxdzNRWGh5TWpackhHT05ZMFNkYUROdGxoVGcyd2pfQ2M4TC00YXpydVdUVGFVVTdtNXl5RFNvRkRpMVVzbWJVaWg</guid></item><item><title>鸿海首度拿下SpaceX AI服务器代工订单，规模达520亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777408</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 06:20:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5KcmthX1VoU1VXWWlRcndpWFRkX2hJUEF0aEJaM2xMT1RJMnhhOFFfT3ZlSi1CM0xZYjB3UUJuRjh1ZUJocnBZMWw5NnFBR0NEd2FN</guid></item><item><title>麒麟2026 9月杀到！华为Mate 80系列最新出货：累计销量快破千万台 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137629.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月20日消息，2026年上半年华为手机凭借亮眼的市场表现力压苹果，稳稳坐住了中国手机市场出货量第一名的位置，其中上市已经颇有时日的Mate 80系列长期稳居高热度区间，为总销量贡献了不少份额。&lt;/p&gt;
 &lt;p&gt;数码行业博主给出的最新统计数据显示，截至2026年第28周也就是7月6日到7月12日，华为Mate 80系列的累计出货量已经达到775.97万台，距离累计销量突破千万台的门槛只剩最后一小段距离，破千万的节点已经近在眼前。&lt;/p&gt;
@@ -264,7 +694,92 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 04:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvWGJoRzBDN2l4c2hlYTVNMDNKczBreGNOVWMxNTc4THZ2ZWVROHdGRi1PcFN6WkNEcHJnWDVZc1JVeklyVnRSUzZWVTVkUTlybmxHMWx6T2s</guid></item><item><title>华为史上最贵最奢华！华为智能门锁X1卓雅岩灰开售：14999元 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137589.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 04:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvWGJoRzBDN2l4c2hlYTVNMDNKczBreGNOVWMxNTc4THZ2ZWVROHdGRi1PcFN6WkNEcHJnWDVZc1JVeklyVnRSUzZWVTVkUTlybmxHMWx6T2s</guid></item><item><title>349元起 利民推出Royal Pretor 130屏显版：顶配3.95寸屏幕 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137592.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，&lt;strong&gt;利民推出Royal Pretor 130屏显版双塔风冷散热器，在顶盖嵌入一块3.95英寸IPS大屏，售价&lt;span&gt;349&lt;/span&gt;元起。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该产品基于数显版升级而来，新增的3.95英寸IPS LCD面板分辨率为480 x 480，配合自家TRCC软件，支持个性化图片、动画、视频展示，并可实现自定义内容上传与屏幕投屏。屏幕顶盖采用磁吸快拆设计，方便用户拆卸与安装。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/fee12164f25e46fb8447de3446e1ac25.png" target="_blank"&gt;&lt;img alt="349元起 利民推出Royal Pretor 130屏显版：顶配3.95寸屏幕" h="422" src="//img1.mydrivers.com/img/20260720/s_fee12164f25e46fb8447de3446e1ac25.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;散热器本体尺寸为130mm（长）×140mm（宽）×165mm（高），搭载六根6mm AGHP 5.0次世代逆重力全电镀热管，鳍片模组采用全回流焊工艺，搭配精工微雕镀镍纯铜底座。&lt;strong&gt;AGHP GEN 5.0热管技术配合大规模散热鳍片，有效解决立式和卧式两种方向下的逆重力问题，提供出色的散热效率，官方标称DTPC（动态热管散热能力）为280W，可满足多数CPU散热需求。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;散热器采用内存避让设计，在保持158mm安装高度时，最高支持44mm高度内存模组；若需前置风扇上抬，则兼容高度会有所调整。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/75b8c47432d440e2b3486929eadf0476.png" target="_blank"&gt;&lt;img alt="349元起 利民推出Royal Pretor 130屏显版：顶配3.95寸屏幕" h="449" src="//img1.mydrivers.com/img/20260720/s_75b8c47432d440e2b3486929eadf0476.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;风扇配置方面，Royal Pretor 130屏显版采用两颗不同尺寸的风扇，分别为TL-H12-X28-R9（120mm×120mm×28mm）与TL-HD13-X28（130mm×130mm×28mm）。两者均采用LCP防颤平衡降噪圈设计，搭载S-FDB V2磁力流体动态轴承及三相六极马达，支持4Pin PWM智能调速。&lt;/p&gt;
+&lt;p&gt;其中TL-H12-X28-R9最高转速为2400 RPM±10%，最大风量98.2 CFM，最大风压2.48 mmH2O，噪音值32.7 dBA；TL-HD13-X28最高转速1750 RPM±10%，最大风量81.88 CFM，最大风压2.38 mmH2O，噪音值28.3 dBA。&lt;/p&gt;
+&lt;p&gt;配件方面，&lt;strong&gt;产品标配导热系数12.8 W/m·K的TF7硅脂，附赠SS2全金属扣具，兼容英特尔LGA 115x/1200/1700/1851及AMD AM4/AM5平台，覆盖当前主流桌面平台需求。&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="379元" goods_title="利民（thermalright）ROYAL PRETOR 130 VISION皇家执政官 CPU风冷散热器 3.95英寸屏显 全电镀回流焊 RP130DIGITAL RP130 VISION白色" href="https://dt.mydrivers.com/mv.ashx?txt=OEljR" img="https://img14.360buyimg.com/pop/jfs/t1/473196/14/18331/157920/6a59c90cFa4c2719d/00835dc5dcb902fc.jpg" target="_blank"&gt;京东(379元)&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/9709a52469084421a95998eba149ebca.png" target="_blank"&gt;&lt;img alt="349元起 利民推出Royal Pretor 130屏显版：顶配3.95寸屏幕" h="424" src="//img1.mydrivers.com/img/20260720/s_9709a52469084421a95998eba149ebca.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 03:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBROWdxUjVkaWhhR2U1T0xqRndIY19EOVc0UU41aGtodS0zWXhQbzdrb1B5MUtBQkUySDJPcGVzdDBfRDJheEtQSlZjTFBlaVB0Wmx2dFRpWXA</guid></item><item><title>雷军再回应小米澎程三年路测：只有自己放心了才敢交给用户 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137591.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;雷军再回应小米澎程三年路测：只有自己放心了才敢交给用户&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-20 11:46:11  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1774704.html" title="知敏的主页" class="newstiao4"&gt;知敏&lt;/a&gt;&lt;p&gt;  编辑：知敏 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137591-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，今日，小米创始人雷军在社交平台分享了对小米澎程三年路测工作的感悟：“今年，是小米澎程测试的第三年，566台车，跑到用户可能会去的每一个角落，一个工况一个工况地死磕。你可以说我们比别人更执着，那是因为我们深知每一个开车的人与他们的家人也要坐这台车。&lt;span&gt;&lt;strong&gt;只有自己真正放心了，才敢把它交给用户。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;此番发声，是小米汽车高管胡峥楠发布澎程路测详细数据长文后，雷军对新车测试工作的补充回应，文中披露了小米澎程完整的实测数据与覆盖范围，清晰展现了小米汽车严苛的产品验证标准。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/3fc1ccbb-eff0-494e-a813-273438ccc8be.png" target="_blank"&gt;&lt;img alt="雷军再回应小米澎程三年路测：只有自己放心了才敢交给用户" h="634" src="//img1.mydrivers.com/img/20260720/S3fc1ccbb-eff0-494e-a813-273438ccc8be.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据官方披露信息，仅小米澎程单一车型，就动用了566台测试车，累计完成428万公里实地行驶，测试足迹遍及全国31个省级行政区、194座城市。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;放眼小米汽车全线产品，从纯电SU7系列到增程澎程，四年间累计投放2684台测试车辆，总路测里程突破3551万公里，这样的测试规模在行业内都属于前列水平。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/8929e48e-d6f8-4b27-b09e-223cccf63764.jpg" target="_blank"&gt;&lt;img alt="雷军再回应小米澎程三年路测：只有自己放心了才敢交给用户" h="450" src="//img1.mydrivers.com/img/20260720/S8929e48e-d6f8-4b27-b09e-223cccf63764.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小米汽车始终遵循“十倍投入”的产品研发准则，测试环节也执行同等高标准。测试不局限于封闭试验场的标准化耐久测试，&lt;strong&gt;还把车辆投入真实多元路况：高温、严寒、高海拔、城市拥堵、高速、乡村土路、山路，还有雨雪冰雹等极端天气全部纳入验证范围。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;实验室只能测算标准工况数据，而全国路测可以叠加各类复杂、小众的长尾使用场景，还原普通人真实用车环境，全方位检验车辆可靠性。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260720/6045a7e4-2162-41d5-8c1e-573520cb890a.jpg" target="_blank"&gt;&lt;img alt="雷军再回应小米澎程三年路测：只有自己放心了才敢交给用户" h="337" src="//img1.mydrivers.com/img/20260720/S6045a7e4-2162-41d5-8c1e-573520cb890a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知敏&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 03:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1NZEctVUNJTU5zMVpwSzk5YjAxeURWVktSY21uYm8tUWY3ejhNMi1Nc3NJQjF3MGg5YVR4dFFkNVNEaEk0emt4aHNFdG4wcDY2TjU5VVJrQnY</guid></item><item><title>华为史上最贵最奢华！华为智能门锁X1卓雅岩灰开售：14999元 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137589.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月20日消息，今日，&lt;span&gt;&lt;strong&gt;华为智能门锁X1卓雅岩灰正式开售，售价14999元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;作为华为智能门锁系列中定位最高端、售价最高的产品，华为智能门锁X1于今年3月率先推出金玉满堂版本，此次上市的卓雅岩灰进一步丰富了产品配色。&lt;/p&gt;
@@ -290,7 +805,26 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 03:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE05RFJjbkFXcGJOa0xNRjF4bVhqdmFfWEdXeUxQMTBET09WWjNCSHJVenpHdWRzRDNJS2hQaURMSHRod3NYM2E5Z2JEY0RDakNPQjJoSEV5TEo</guid></item><item><title>一名涉嫌破坏计算机信息系统犯罪嫌疑人被押解回国 - 观察者</title><link>https://www.guancha.cn/internation/2026_07_20_824399.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 03:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE05RFJjbkFXcGJOa0xNRjF4bVhqdmFfWEdXeUxQMTBET09WWjNCSHJVenpHdWRzRDNJS2hQaURMSHRod3NYM2E5Z2JEY0RDakNPQjJoSEV5TEo</guid></item><item><title>传奇芯片Z80 50岁了：开源替代版已成功流片目标50MHz - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137586.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月20日消息，&lt;span&gt;&lt;strong&gt;Zilog Z80处理器在今年7月迎来问世50周年，这款传奇的8位处理器于1976年7月首次上市，持续生产48年，直到2024年6月Zilog停止接受最后订单。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Zilog Z80是一个8位的微处理器，最初是作为Intel 8080的一个项目开发的，最终成为游戏和通用计算设备中最受欢迎和广泛使用的8位CPU之一。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;原版Z80采用4μm工艺，集成8500个晶体管，运行频率2.5MHz，后期CMOS版本可达20MHz。&lt;/strong&gt;由于与Intel 8080二进制兼容，Z80直接吸收了当时已有的CP/M软件生态，片上DRAM刷新计数器还减少了系统所需的外围芯片数量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这颗芯片驱动了大量经典设备，包括ZX Spectrum、TRS-80、MSX、任天堂Game Boy、世嘉Master System、街机《吃豆人》以及德州仪器图形计算器。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在家用计算转向更强大芯片之后，Z80仍在工业控制器中服役了数十年，最终Zilog于2024年4月15日发布停产通知，告知客户其晶圆代工厂将停止支持Z84C00系列，最后订单于同年6月截止。&lt;/p&gt;
+&lt;p&gt;虽然原版芯片已经停产，爱好者们仍在不断发掘新用途，今年早些时候，一位开发者在仅有64KB内存的Z80上跑起了一个微型对话AI。&lt;/p&gt;
+&lt;p&gt;Renaldas Zioma在停产通知发布后不久便发起了开源替代项目，目前已有多版可工作的芯片，首版通过Tiny Tapeout 7在SkyWater 130nm节点流片，核心面积仅0.064mm²，已在GitHub上确认功能正常&lt;/p&gt;
+&lt;p&gt;当前批次目标是最经典的DIP40封装，采用芯片直装工艺在GlobalFoundries 180nm GF180MCU节点通过Wafer.Space制造，最终目标是成为ZX Spectrum和RC2014套件等设备的直接替换件，&lt;strong&gt;项目页面显示，130nm CMOS实现的频率可达50MHz。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260720/fe7fbfec59f04360bd6c6877c7ed39e5.png" target="_blank"&gt;&lt;img alt="传奇芯片Z80 50岁了：开源替代版已成功流片目标50MHz" h="270" src="//img1.mydrivers.com/img/20260720/s_fe7fbfec59f04360bd6c6877c7ed39e5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 03:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1kMjlXT3JZaEx2dWRsME44S2h4bWFmN0RlT0VqbjZQbDRKWkpfNzUyOEN0Y3hiVTBQdTlSNVZaa3FyT0ZuREZHWXJ1LTdiWFlYbVk4MVhrWXc</guid></item><item><title>一名涉嫌破坏计算机信息系统犯罪嫌疑人被押解回国 - 观察者</title><link>https://www.guancha.cn/internation/2026_07_20_824399.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	据微信公众号“公安部”7月20日消息，近日，按照公安部统一部署，在我驻越南使馆全力支持以及越南公安部门积极配合下，山东省公安机关派出工作组赴越南成功接收某破坏计算机信息系统案首犯潘某君并将其押解回国。
 &lt;/p&gt;
@@ -338,7 +872,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 03:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8yUzBsellaYUY3bzQtSHp6ZjdNVFNSYUFRcnp1VzBSNGVSUWFycFM1WEREcGpCbGZQS1pGejJFQUpERGdDTGxvOUJ3cFJZejFuS2dIamZFYUQ</guid></item><item><title>“美股七雄”魅力不再，普通投资者转入AI新贵战线 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/%E7%BE%8E%E8%82%A1%E4%B8%83%E9%9B%84-%E9%AD%85%E5%8A%9B%E4%B8%8D%E5%86%8D-%E6%99%AE%E9%80%9A%E6%8A%95%E8%B5%84%E8%80%85%E8%BD%AC%E5%85%A5ai%E6%96%B0%E8%B4%B5%E6%88%98%E7%BA%BF-5c8c9955</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Mon, 20 Jul 2026 03:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMitwJBVV95cUxPMTEwQTJfbUo5VU4zZ0RiRjNGNHpYZjhSMS1ld0hlN2dnaW95R0lXS2k1OGxpdm5zd0VIU0l0NDNLY09pcXlreXlmb0Q5ay16OXNta1JPVXlOXzhIUmhiRFQxR24zQmFyNzZReUJVUHc3U3Y5WHVMNWRuWERqTXg4bEZoR2xBa1YwNG9SUVUyNGRyaThVeTc3NkRrak9BYmxvWFFEMENxNnNRNWhrejlGb21EMG0xdENTcWxBZ3VxNF83dFFyajdMNVlhaGZYdFlpdkFsRUpTNGhKV3dxUnNvcnVCV2s2S3RlZEN5N3h2U2RuaUhhQmQtLUNyYUZGbS1ydTRjZFBJMkxTb2pnR05rdDNlQTh3SENBbXBKM0NzQ1F4RFVJa3BMQk1nRzU3MVVRRnpiX1JrRQ</guid></item><item><title>百度昆仑芯M100首次展出：全国产对标NVIDIA H20！ - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137577.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 03:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8yUzBsellaYUY3bzQtSHp6ZjdNVFNSYUFRcnp1VzBSNGVSUWFycFM1WEREcGpCbGZQS1pGejJFQUpERGdDTGxvOUJ3cFJZejFuS2dIamZFYUQ</guid></item><item><title>“美股七雄”魅力不再，普通投资者转入AI新贵战线 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/%E7%BE%8E%E8%82%A1%E4%B8%83%E9%9B%84-%E9%AD%85%E5%8A%9B%E4%B8%8D%E5%86%8D-%E6%99%AE%E9%80%9A%E6%8A%95%E8%B5%84%E8%80%85%E8%BD%AC%E5%85%A5ai%E6%96%B0%E8%B4%B5%E6%88%98%E7%BA%BF-5c8c9955</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Mon, 20 Jul 2026 03:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMitwJBVV95cUxPMTEwQTJfbUo5VU4zZ0RiRjNGNHpYZjhSMS1ld0hlN2dnaW95R0lXS2k1OGxpdm5zd0VIU0l0NDNLY09pcXlreXlmb0Q5ay16OXNta1JPVXlOXzhIUmhiRFQxR24zQmFyNzZReUJVUHc3U3Y5WHVMNWRuWERqTXg4bEZoR2xBa1YwNG9SUVUyNGRyaThVeTc3NkRrak9BYmxvWFFEMENxNnNRNWhrejlGb21EMG0xdENTcWxBZ3VxNF83dFFyajdMNVlhaGZYdFlpdkFsRUpTNGhKV3dxUnNvcnVCV2s2S3RlZEN5N3h2U2RuaUhhQmQtLUNyYUZGbS1ydTRjZFBJMkxTb2pnR05rdDNlQTh3SENBbXBKM0NzQ1F4RFVJa3BMQk1nRzU3MVVRRnpiX1JrRQ</guid></item><item><title>全球5月半导体销售额翻倍，连增31个月 - 日经中文网</title><link>https://cn.nikkei.com/industry/itelectric-appliance/63301-2026-07-20-10-50-01.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxObnV5M1hWZTY0MkJwOVpJUTVXa0tQcUxNWUNVTU5lN1ZUMldNeFhJTnZBaGNSRkdWR0p2dG9xSW5ma0JmWUJUMzlXWjZ0SHJtWnUwWGpHY3hMX0h6TnkwamhUVnVCMGh2U3VFUG1ZdGRFVXFsUnVvVml2aGdxWkU3Q2J2Q0U4a0MwdkE?oc=5" target="_blank"&gt;全球5月半导体销售额翻倍，连增31个月&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;日经中文网&lt;/font&gt;</description><author>日经中文网</author><pubDate>Mon, 20 Jul 2026 03:05:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiigFBVV95cUxObnV5M1hWZTY0MkJwOVpJUTVXa0tQcUxNWUNVTU5lN1ZUMldNeFhJTnZBaGNSRkdWR0p2dG9xSW5ma0JmWUJUMzlXWjZ0SHJtWnUwWGpHY3hMX0h6TnkwamhUVnVCMGh2U3VFUG1ZdGRFVXFsUnVvVml2aGdxWkU3Q2J2Q0U4a0MwdkE</guid></item><item><title>“最稀缺的，不是Token，而是1000个‘亨利·福特’” - 虎嗅</title><link>https://www.huxiu.com/article/4876284.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" data-v-42acfa7d&gt;&lt;p data-check-id="391684"&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p data-check-id="159996"&gt;&lt;span&gt;&lt;em&gt;&lt;br&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&lt;p data-check-id="180242"&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;&lt;p data-check-id="583827"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="568899"&gt;&lt;/p&gt;&lt;p data-check-id="939114"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="971374"&gt;&lt;/p&gt;&lt;p data-check-id="723189"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="127677"&gt;&lt;/p&gt;&lt;p data-check-id="641287"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="326634"&gt;&lt;/p&gt;&lt;p data-check-id="482340"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="226007"&gt;&lt;/p&gt;&lt;p data-check-id="818742"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="939482"&gt;&lt;/p&gt;&lt;p data-check-id="609437"&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;/blockquote&gt;&lt;p data-check-id="393807"&gt;&lt;/p&gt;&lt;p data-check-id="842281"&gt;&lt;/p&gt;&lt;p data-check-id="388364"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="733008" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/18/131820741967.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="667"&gt;&lt;/p&gt;&lt;p data-check-id="920612"&gt; &lt;/p&gt;&lt;h2 data-check-id="324118" label="大标题" class="text-big-title"&gt;产业要从AI的“消耗”转向“价值”&lt;/h2&gt;&lt;p data-check-id="313577"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="685927" label="Q" class="text-question"&gt;虎嗅｜四五月我们第一次聊Token经济时，你对此很兴奋。到了7月，你的判断发生了什么变化？&lt;/p&gt;&lt;p data-check-id="481780"&gt; &lt;/p&gt;&lt;p data-check-id="207748" label="A" class="text-answer"&gt;孙天澍：资本市场和产业竞争都有阶段性。过去两三个月，AI应用的增长速度、智能体产品形态和爆款应用的出现速度，都有一定放缓。企业端也开始重新计算投入产出。资本市场也开始出现波动和回调。&lt;/p&gt;&lt;p data-check-id="839058" label="正文" class="text-normal"&gt; &lt;/p&gt;&lt;p data-check-id="175523" label="正文" class="text-normal"&gt;但这不等于AI的长期趋势发生了逆转。供给端仍然在持续变好：模型会更聪明，推理成本会继续下降，芯片、能源、算力调度等基础设施也会继续进步。问题在于，需求端和商业化没有同步以同样的速度打开。&lt;/p&gt;&lt;p data-check-id="239393" label="正文" class="text-normal"&gt; &lt;/p&gt;&lt;p data-check-id="175366" label="正文" class="text-normal"&gt;我的判断是：对AI，短期需要更理性，中长期仍然乐观。问题不是AI模型不够好，也不是智能体进化不够快，&lt;strong&gt;而是卡在千行百业的吸收和重构上。&lt;/strong&gt;目前的应用扩散速度和商业化模式，能不能支撑资本市场已经给出的短期预期，是一个问号。&lt;/p&gt;&lt;p data-check-id="892187" label="正文" class="text-normal"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="404940" label="正文" class="text-normal"&gt;资本市场容易把供给端的指标——比如算力、Token消耗、模型参数和调用量——直接等同于价值端的增长。&lt;strong&gt;但这中间还隔着产品、场景、付费意愿和商业闭环&lt;/strong&gt;。供给端持续上行没有问题，真正需要验证的是，这些能力最终能不能转化成稳定的场景价值。&lt;/p&gt;&lt;p data-check-id="804619"&gt; &lt;/p&gt;&lt;p data-check-id="817532" label="Q" class="text-question"&gt;虎嗅｜确实，过去半年来，Token经济的说法很时髦，但近来越来越多的声音出现：Token消耗不能直接代表AI创造的价值。&lt;/p&gt;&lt;p data-check-id="401300"&gt; &lt;/p&gt;&lt;p data-check-id="604367" label="A" class="text-answer"&gt;孙天澍：Token是一个很好的供给端计量单位，但它不等于价值本身。它更像一种新的燃料：下面连接能源、芯片、存储、算力和前沿模型，上面连接智能体系统和应用场景。我自己在学术上提出一个“AI价值倒三角”模型（下图），最底层是能源、基础设施、芯片生态和算力调度，再往上是模型和技术能力，最上面是产品、场景和产业价值。&lt;/p&gt;&lt;p data-check-id="506767"&gt; &lt;/p&gt;&lt;p data-check-id="415736" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/18/123053355328.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="515"&gt;&lt;/p&gt;&lt;p data-check-id="255851" label="图片备注" class="text-img-note"&gt;“AI价值倒三角”模型&lt;/p&gt;&lt;p data-check-id="516913"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="459990"&gt;现在是&lt;strong&gt;下半部分火热，上半部分温吞，下半部分Token-per-Watt持续提升，上半部分Value-per-Token在求索，&lt;/strong&gt;芯片和模型把能源变成更聪明更高效的Token，而Token还没有在上半部分To C和To B场景中带来规模化的产业价值，而AI长期健康发展的终局是下面的持续投入放大成为上面千行百业的价值，最终在倒三角中形成一个自我实现的正循环。&lt;/p&gt;&lt;p data-check-id="841586"&gt; &lt;/p&gt;&lt;p data-check-id="789041"&gt;过去一段时间，资本市场和AI公司容易形成一种错觉：Token消耗得越多，价值就越大。但这个判断隐含了一个前提——更多调用一定会转化为更高的场景价值，现实并非如此。&lt;/p&gt;&lt;p data-check-id="841652"&gt; &lt;/p&gt;&lt;p data-check-id="483007"&gt;同样数量的Token，用在低价值内容生成，和用在新药研发、智能制造、患者管理、保险精算、物流决策等产业场景上，产生的价值完全不同。&lt;strong&gt;Token可以衡量“消耗了多少智能”，却不能单独回答“创造了多少价值”。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="276535"&gt; &lt;/p&gt;&lt;p data-check-id="613268" label="Q" class="text-question"&gt;虎嗅｜那什么更接近AI时代真正的价值单位？&lt;/p&gt;&lt;p data-check-id="328554"&gt; &lt;/p&gt;&lt;p data-check-id="664301" label="A" class="text-answer"&gt;孙天澍：可能是“场景任务”，也可能是完成场景任务所需的更基础的“认知单元”，或者更宏观层面一个智能体系统完成的“闭环结果”。高价值、高付费，最终是按照你完成了什么任务、改变了什么结果来定义的。&lt;/p&gt;&lt;p data-check-id="609514"&gt; &lt;/p&gt;&lt;p data-check-id="423326"&gt;企业CEO真正关心的，不是每天消耗一百亿还是一千亿Token，而是单位智能投入之后，如何在场景中通过智能体系统转化成“场景任务”的完成，带来某个“闭环结果”的改变；是否为企业在场景中收入、效率、研发、风险控制或客户价值带来了什么变化；以及一个系统有没有进入业务流程，有没有形成反馈和持续迭代，耗用Token和创造价值之间的ROI是多少，等等。&lt;/p&gt;&lt;p data-check-id="852198"&gt; &lt;/p&gt;&lt;p data-check-id="514621"&gt;&lt;strong&gt;Token的确便于计量，但随着价格持续下降 和单位任务耗用的上升，它作为度量衡的长期稳定性会变弱。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="406149"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="917221"&gt;总之，产业需要从“使用了多少AI”转向“AI在业务中完成了什么任务”。只有当智能能力被转化为可衡量的任务和结果，Token才有商业意义。&lt;/p&gt;&lt;p data-check-id="188728"&gt; &lt;/p&gt;&lt;p data-check-id="158432" label="Q" class="text-question"&gt;虎嗅｜你上面所说的“AI价值倒三角”，这个模型其实就是想说明，在AI经济里，商业价值的分配大头，最终还是要落到场景中。&lt;/p&gt;&lt;p data-check-id="989153"&gt; &lt;/p&gt;&lt;p data-check-id="477060" label="A" class="text-answer"&gt;孙天澍：如果一个企业在核心场景中通过智能体系统创造了100元的增量价值，在今天Token同一化定价下，基础设施和模型厂商可能只拿走了少量的价值，芯片生态拿走5元，能做出最好Token的前沿模型厂商和云厂商拿走15元（比如Seedance在多模态的应用），而剩下80元由应用企业拿走，比如医疗中的患者管理、智能制造中的工艺优化、科学研究中的新材料发现、保险中的销售和理赔、营收场景中的广告投放转化，这些场景价值会在产业链的不同环节重新分配。&lt;/p&gt;&lt;p data-check-id="834119"&gt; &lt;/p&gt;&lt;p data-check-id="704687"&gt;因此，模型公司一定会往上走，寻找更高价值的场景，并且形成端到端的服务；场景公司也会把模型和Token成本封装进自己的产品，按照原有产业能够接受的服务价格收费。&lt;/p&gt;&lt;p data-check-id="718222"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="620637" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/20/103452413186.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="563"&gt;&lt;/p&gt;&lt;p data-check-id="675232" label="图片备注" class="text-img-note"&gt;100元的增量商业价值，大头应该落在场景方&lt;/p&gt;&lt;p data-check-id="969162"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="379757"&gt;未来真正重要的是，谁能把同样的算力转化为更聪明、更高效、更有结果的系统。这就是我经常说的，未来企业的竞争是“智能体系统”的竞争。&lt;/p&gt;&lt;p data-check-id="868553"&gt; &lt;/p&gt;&lt;p data-check-id="600612" label="Q" class="text-question"&gt;虎嗅｜为什么价值最终会沉淀为“智能体系统”，而不是一款模型或一个单独的Agent？&lt;/p&gt;&lt;p data-check-id="192417"&gt; &lt;/p&gt;&lt;p data-check-id="297548" label="A" class="text-answer"&gt;孙天澍：底层模型能力会持续提升，但在垂直场景和行业场景本身还需要编排和架构智能体，并且通过后训练来持续迭代。感知、多模态、推理等基础能力越来越强，不代表它们会自动在一个具体岗位或业务中产生价值，也不代表可以在业务场景中持续迭代。&lt;/p&gt;&lt;p data-check-id="394855"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="482366"&gt;我曾经在研究中尝试把人的智能拆分成很多子能力。完成一个岗位或任务，并不是调用全部能力，而是重点调动其中一部分，再按照流程进行协同。AI也是一样，需要把模型能力、工具、数据、技能、流程和反馈编排起来，形成一个持续迭代的系统，才能释放场景价值。&lt;/p&gt;&lt;p data-check-id="181226"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="588436"&gt;所以未来企业的核心资产，不只是模型，也不是单一Agent，而是能够围绕业务场景 持续运转、反馈和迭代的智能体系统。&lt;/p&gt;&lt;p data-check-id="903280"&gt; &lt;/p&gt;&lt;p data-check-id="740805" label="Q" class="text-question"&gt;虎嗅｜这种智能体系统会成为一种新的生产资料吗？&lt;/p&gt;&lt;p data-check-id="169668"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="910591" label="A" class="text-answer"&gt;孙天澍：一定会。但它和传统劳动力不同，它会与资本、流程和企业资产更深地耦合。&lt;/p&gt;&lt;p data-check-id="319972"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="272397"&gt;过去企业的生产力来自劳动力 、资本投入 和科技的函数组合，三者相对独立，互为补充。未来，智能体系统会进入这个生产函数，并且可能与资本、劳动力、科技投入融为一体，固定资产是智能体系统，可变资产是Token，持续产生价值。&lt;/p&gt;&lt;p data-check-id="194463"&gt; &lt;/p&gt;&lt;p data-check-id="196606"&gt;我一直认为，具身智能的范围远远超过人形机器人，而智能体系统的涵义又远远大于具身。黑灯工厂里的智能流水线，本身就是一种具身智能资产。它不一定表现为五百个人形机器人站在生产线上，而可能是一条能够感知、决策、协同和自我优化的生产系统。&lt;/p&gt;&lt;p data-check-id="421648"&gt; &lt;/p&gt;&lt;p data-check-id="567693" label="Q" class="text-question"&gt;虎嗅｜这和五年前企业购买SaaS、或者今天给旧软件增加一个AI功能，有什么本质不同？&lt;/p&gt;&lt;p data-check-id="153257"&gt; &lt;/p&gt;&lt;p data-check-id="785213" label="A" class="text-answer"&gt;孙天澍：过去很多数字化产品是在原有流程上增加一个功能，或者把线下环节搬到线上。AI To B如果只停留在功能层，也很容易变成新一轮工具采购、红海竞争。&lt;/p&gt;&lt;p data-check-id="410942"&gt; &lt;/p&gt;&lt;p data-check-id="106087"&gt;真正的变化，是从以人为中心的流程，逐步变成以人和智能体共同协同、甚至以智能体为决策中心的流程。它会进入研发、生产、销售和服务的内部，而不是只在外面增加一个入口。&lt;/p&gt;&lt;p data-check-id="669361"&gt; &lt;/p&gt;&lt;p data-check-id="698938"&gt;我把它称为一种“内爆”：不是给旧系统打一个新功能补丁，而是重构内部生产和创新方式。&lt;strong&gt;只有走到这一步，AI才从工具变成资产，企业从+AI走向AI+，Token规模化变成价值。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="478004"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="394913" label="大标题" class="text-big-title"&gt;AI To B，可能是中国这一轮最大的机会&lt;/h2&gt;&lt;p data-check-id="214265"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="114838" label="Q" class="text-question"&gt;虎嗅｜你为什么更看好AI To B，而不是首先押注To C的爆发？&lt;/p&gt;&lt;p data-check-id="774564"&gt; &lt;/p&gt;&lt;p data-check-id="177423" label="A" class="text-answer"&gt;孙天澍：To C当然会出现新产品，但用户的注意力和消费力短期没有巨大的新增。移动互联网时代，人们从功能机迁移到智能手机，几十亿人的使用时长和消费入口发生了大规模转移；但今天用户每天在手机上已经花了很长时间，很难再从七小时变成十七小时，而手机上消费决策也与社零趋势一致。&lt;/p&gt;&lt;p data-check-id="803763"&gt; &lt;/p&gt;&lt;p data-check-id="450469"&gt;能看到，今天的AI内容产品，很多仍然是在提高生产供给效率，但没有创造出全新的消费物种。并不是因为小说、短剧或视频由AI生成，用户就愿意同比例多看。换句话说，&lt;strong&gt;AI内容供给增加五倍，并不意味着用户时长会增加五倍。&lt;/strong&gt;真正的产业增量突破需要出现一种比现有内容更强、让用户感到“从无到有”的体验。除非这种新体验出现，否则很多To C产品仍然是在争夺现有注意力。&lt;/p&gt;&lt;p data-check-id="668710"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="884539"&gt;相比To C，我更看好AI To B的产业重构。智能体在千行百业的场景中给To B带来的生产力增量，可能堪比移动互联网给To C带来的增量。&lt;/p&gt;&lt;p data-check-id="249353"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="539569"&gt;To B的价值更容易落到研发、生产、销售和服务结果上，不只是移动互联网带来供需关系的重新匹配，而是Agent带来对生产力和创新的增量。&lt;/p&gt;&lt;p data-check-id="937802"&gt; &lt;/p&gt;&lt;p data-check-id="856130" label="Q" class="text-question"&gt;虎嗅｜那你认为什么样的产业场景，最有可能率先跑出高价值AI？&lt;/p&gt;&lt;p data-check-id="897445"&gt; &lt;/p&gt;&lt;p data-check-id="141641" label="A" class="text-answer"&gt;孙天澍：我会看某个产业是否具备“增量智能体密度”，也就是说：新增智能能力能够创造多少过去不存在的增量价值。&lt;/p&gt;&lt;p data-check-id="783614"&gt; &lt;/p&gt;&lt;p data-check-id="169276"&gt;有些行业的需求非常明确，但过去受限于人的供给数量和智力能力。医生供给不足，科学家无法无限迭代，新药和新材料研发也受制于实验速度。AI如果能在这些环节形成新的发现、决策和闭环，它带来的不是简单提效，而是过去无法获得的能力。&lt;/p&gt;&lt;p data-check-id="838654"&gt; &lt;/p&gt;&lt;p data-check-id="386579"&gt;真正高价值的场景，通常同时具备几个特征——&lt;strong&gt;专业供给不足、单次决策价值高、结果可以衡量，而且业务模式有被重构的空间。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="862711"&gt; &lt;/p&gt;&lt;p data-check-id="540675" label="Q" class="text-question"&gt;虎嗅｜Claude Code已经证明了横向专业场景的价值。每一个纵向垂直产业，是否都会有自己的“Claude Code”？&lt;/p&gt;&lt;p data-check-id="415969"&gt; &lt;/p&gt;&lt;p data-check-id="990126" label="A" class="text-answer"&gt;孙天澍：垂直产业的Claude Code是AI下半场的最大机会。AI编程之所以先跑出来，是因为代码是很多专业任务中最通用、最容易客观衡量结果的场景。再往产业深处看，营销、物流、保险、工业研发等领域，也有类似特征。&lt;/p&gt;&lt;p data-check-id="677457"&gt; &lt;/p&gt;&lt;p data-check-id="911495"&gt;可以这样理解。未来很多行业都会出现自己的“产业大脑”或核心智能系统。它不是把通用模型包装一层，而是把行业的场景、数据、隐性知识、工具和经营反馈真正连接起来。&lt;/p&gt;&lt;p data-check-id="547011"&gt; &lt;/p&gt;&lt;p data-check-id="567942"&gt;比如养殖业可以把每头牛的传感器、养殖数据和经营结果连接起来；零售业可以把库存、销售、生产和补货连接起来；制造业可以把研发、工艺、生产和质量反馈连接起来。&lt;/p&gt;&lt;p data-check-id="440008"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="223169"&gt;横向工具解决的是相对通用的专业任务，纵向系统要进入产业的完整闭环。每个垂直行业都可能出现很大的公司，但前提是它真正理解产业场景，真正有垂直知识，有独特Harness，模型后训练和强化学习持续迭代，而不是只把通用模型包装一层。&lt;/p&gt;&lt;p data-check-id="102698"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="265909" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/20/102020929214.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="563"&gt;&lt;/p&gt;&lt;p data-check-id="199576" label="图片备注" class="text-img-note"&gt;孙天澍认为，每一个纵向产业，都会有自己的“claude code”&lt;/p&gt;&lt;p data-check-id="786211"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="890298" label="Q" class="text-question"&gt;虎嗅｜你好像特别偏爱医药医疗这个行业，看好它的AI高价值属性。&lt;/p&gt;&lt;p data-check-id="818409"&gt; &lt;/p&gt;&lt;p data-check-id="467946" label="A" class="text-answer"&gt;孙天澍：它的一个方向在研发侧。新药、新材料和科学发现需要更快、更全面的实验闭环，包括药物发现、干实验、湿实验、数据分析和持续迭代。AI可以把过去受限于科学家数量和实验速度的工作，变成更高频的发现过程。&lt;/p&gt;&lt;p data-check-id="641637"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="692254"&gt;另一个方向在服务侧，尤其是个性化患者服务。健康消费的弹性很大，随着老龄化和长寿需求增长，人们愿意为更好的健康结果和个性化陪伴付费。&lt;/p&gt;&lt;p data-check-id="165527"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="687803"&gt;研发与服务还可以耦合：理解患者、积累真实世界数据，再反过来帮助适应症开发和新药研发。医疗中存在大量分工和支付结构，也可能与保险等支付方式结合。&lt;/p&gt;&lt;p data-check-id="809549"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="209778"&gt;但是，跟所有行业一样，医药医疗真正的门槛不只是行业当下的知识和信息，&lt;strong&gt;而是对产业系统如何运作的第一性原理理解，并且用无限供给的智能体去架构下一代产业形态和组织形式&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="494537"&gt; &lt;/p&gt;&lt;p data-check-id="990599"&gt;医药医疗里有大量隐性知识，比如宏观上医药行业政策的演化和背后原因、医药企业如何配置资源、各个渠道销售和支付的底层逻辑、创新药的临床、批准、准入、微观上医生的职业发展诉求，医生怎样和患者、家属沟通，慢病如何长期管理，患者追求的是科学事实还是心理安慰，患者的多渠道购药行为；在创新上还要理解新药周期、熟悉集采、准入、渠道、医院、医生和药店之间的关系等。&lt;/p&gt;&lt;p data-check-id="948228"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="370592"&gt;这些东西外人很难只靠读资料学会。知识可以快速获取，但对行业如何运作的理解和架构能力形成得很慢。这也是为什么AI to B需要时间和积累的重要原因， Palantir的Ontology也是一点点积累出来的。而当下的AI to B跟5年前的SaaS也截然不同，不只是在原有产业价值链某个环节和功能性场景的修修补补，而是一次全产业从human-centric到agent-centric的内爆重构。&lt;/p&gt;&lt;p data-check-id="228603"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="112046"&gt;下一代伟大的垂直AI公司，&lt;strong&gt;必须把行业和场景的隐性知识变成可用的“智能体系统资产”&lt;/strong&gt;。微软纳德拉最近也撰文提到每个企业都必须沉淀“Token资产”，Palantir创始人Alex Karp最近抨击Anthropic也重点讲到企业和行业需要自主可控的垂直模型。&lt;/p&gt;&lt;p data-check-id="705227"&gt; &lt;/p&gt;&lt;p data-check-id="511051" label="Q" class="text-question"&gt;虎嗅｜中国为什么特别有机会在产业AI上形成领先？&lt;/p&gt;&lt;p data-check-id="198802"&gt; &lt;/p&gt;&lt;p data-check-id="734270" label="A" class="text-answer"&gt;孙天澍：中国是全球产业门类最齐全、产业生态最完整的国家之一。汽车、医药、精细化工、机械制造等行业，都有复杂而真实的场景，也积累了大量数据、流程、技术专家和隐性知识。&lt;/p&gt;&lt;p data-check-id="557862"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="630900"&gt;我在学术研究中提出，AI To B的三个核心资产是场景、数据和智能体。今天很多场景资产还没有被合理定价，数据资产也没有被沉淀和泛化，更没有一批真正懂产业和懂智能体架构的“AI产业架构师”。谁能把三者整合起来，谁就可能形成下一代产业资产。&lt;/p&gt;&lt;p data-check-id="851892"&gt; &lt;/p&gt;&lt;p data-check-id="726851"&gt;这不只是企业内部提效。如果AI重构了一个行业的生产函数、供需关系和价值分配，中国企业就可能借此改变在全球产业价值链中的贡献和相对位置，并结合中国的开源AI生态把我们的产业能力以“智能体产业大脑”赋能全球。&lt;/p&gt;&lt;p data-check-id="837972"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="269617" label="大标题" class="text-big-title"&gt;AI重构千行百业，需要一千个“亨利·福特”&lt;/h2&gt;&lt;p data-check-id="877318"&gt; &lt;/p&gt;&lt;p data-check-id="164360" label="Q" class="text-question"&gt;虎嗅｜你多次用“亨利·福特”来形容这是AI下半场最需要的人。&lt;/p&gt;&lt;p data-check-id="794710"&gt; &lt;/p&gt;&lt;p data-check-id="153410" label="A" class="text-answer"&gt;孙天澍：To C可能需要乔布斯式的天才人物，去重新定义智能硬件和新的交互，一战成名；产业端更需要一千个亨利·福特式的人物，在垂直产业中深耕，重构生产方式和商业模式。&lt;/p&gt;&lt;p data-check-id="586010"&gt; &lt;/p&gt;&lt;p data-check-id="621122"&gt;福特的伟大不只是把汽车做得更快，而是用“电力原生”的流水线模式加速生产和降低成本，让更多人买得起车，进而改变城市、交通和生活方式。产业革命的标志，不是每家工厂都装了一盏电灯，而是出现了新的生产函数、新的公司和新的产业秩序。&lt;/p&gt;&lt;p data-check-id="257677"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="828413" class="img-center-box"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/20/102141425605.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-w="1000" data-h="497"&gt;&lt;/p&gt;&lt;p data-check-id="194739" label="图片备注" class="text-img-note"&gt;亨利·福特因为首创汽车流水生产线而名垂工业史&lt;/p&gt;&lt;p data-check-id="864746"&gt; &lt;/p&gt;&lt;p data-check-id="853280"&gt;AI产业升级也需要这种级别的重构，而不是给旧流程增加一个功能。在能够被智能体“内爆重构”的行业里，企业的100次“+AI”，可能不如一次真正的“AI+”。 就像十五年前传统出租车公司再怎么在原有组织设计和运营逻辑上拥抱移动互联网也依然会被移动原生的滴滴平台重构&lt;/p&gt;&lt;p data-check-id="276673"&gt; &lt;/p&gt;&lt;p data-check-id="198811" label="Q" class="text-question"&gt;虎嗅｜这些“亨利·福特”更可能是AI技术创业者，还是来自产业内部？&lt;/p&gt;&lt;p data-check-id="449233"&gt; &lt;/p&gt;&lt;p data-check-id="975298" label="A" class="text-answer"&gt;孙天澍：真正的主导者很可能来自产业内部，或者由产业企业家与AI架构师组合而成。产业企业家知道行业是怎样运行的，深刻理解产业场景、价值链关系和隐性知识；AI团队掌握模型、工程和系统架构。&lt;/p&gt;&lt;p data-check-id="486216"&gt; &lt;/p&gt;&lt;p data-check-id="792692"&gt;只懂技术，往往很难理解一个复杂产业的资源配置和利益关系；只懂产业，又可能缺少把智能能力重新编排为系统的能力。&lt;strong&gt;下一代产业公司需要有人连接两个世界。也需要建立双向信任。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="660664"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="476715"&gt;中国的To B市场尤其重视信任。要成为客户的“AI商业伙伴”，而不只是功能伙伴或系统供应商，必须有综合能力和信任一起参与场景重构和资源配置，能够对业务结果负责，能真正架构下一代业务生态。&lt;/p&gt;&lt;p data-check-id="626895"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="908446"&gt;这件事很难，因为价值如何界定、如何分配、如何长期计价，都没有成熟答案。&lt;/p&gt;&lt;p data-check-id="469854"&gt; &lt;/p&gt;&lt;p data-check-id="408258"&gt;所以我所说的“AI架构师”，懂产业场景，懂智能体能力，也要懂跨界架构。他不仅要知道AI能做什么，还要理解产业价值链、组织机制、业务反馈和商业模式，能把通用能力变成一套可持续运行的产业系统。这些人当中最杰出的架构师是AI时代的亨利·福特。&lt;/p&gt;&lt;p data-check-id="651460"&gt; &lt;/p&gt;&lt;p data-check-id="570559" label="Q" class="text-question"&gt;虎嗅｜如何判断一个项目是在给旧流程“加AI”，还是在真正重构产业？&lt;/p&gt;&lt;p data-check-id="390023"&gt; &lt;/p&gt;&lt;p data-check-id="565584" label="A" class="text-answer"&gt;孙天澍：关键看它是否改变了生产方式和商业模式。如果只是把毛利率从20%提高到21%，这对企业当然很重要，但它不一定改变产业的相对秩序，更没有从底层改变产业的生产和创新模式。&lt;/p&gt;&lt;p data-check-id="473151"&gt; &lt;/p&gt;&lt;p data-check-id="928896"&gt;真正的重构会出现新的模式、新的领先者，改变行业的生产函数、供需关系和价值分配。滴滴并不是让出租车公司多装一个移动互联网工具，而是用移动手机的实时位置做出算法平台调度重构了出行。&lt;/p&gt;&lt;p data-check-id="290601"&gt; &lt;/p&gt;&lt;p data-check-id="380010"&gt;因此，企业不应该因为AI很热，就在所有地方强行投入AI，也不是每个企业都能享受到AI红利，都需要拥抱AI。AI对千行百业的冲击非常不均匀，像彗星雨撞地球，有的地方是陨石坑而有的地方沙漠变绿洲。高研发附加值制造和普通家具制造，智能增量密度完全不同。如果一个场景最后加上AI只带来2%的增量变化，投入再多AI也未必有意义。所以我认为，第一要选行业，第二要选场景，第三才是选择组织机制。选择大于努力。&lt;/p&gt;&lt;p data-check-id="673685"&gt; &lt;/p&gt;&lt;p data-check-id="865925" label="Q" class="text-question"&gt;虎嗅｜什么样的企业更容易完成AI转型？&lt;/p&gt;&lt;p data-check-id="422270"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="308008" label="A" class="text-answer"&gt;孙天澍：转型通常在两种情况下会比较快：一种是机会明显大于风险，新业务是清晰的增量，且与老业务解耦合；另一种是“危”大于机会，企业如果不变就会被淘汰。最难的是中间状态——旧业务还不错，但新业务又可能侵蚀旧业务，就会陷入创新者窘境。&lt;/p&gt;&lt;p data-check-id="530133"&gt; &lt;/p&gt;&lt;p data-check-id="826879"&gt;这一轮AI不只是渠道革命，而是智能革命。它会触碰研发、生产、销售和服务的核心流程，也会带来左右互搏。内部变革越快，既得利益部门可能下降得越快，所以组织阻力一定存在。&lt;/p&gt;&lt;p data-check-id="161793"&gt; &lt;/p&gt;&lt;p data-check-id="850744" label="Q" class="text-question"&gt;虎嗅｜对想进入AI“新世界”的产业企业家，你最具体的建议是什么？&lt;/p&gt;&lt;p data-check-id="955645"&gt; &lt;/p&gt;&lt;p data-check-id="402081" label="A" class="text-answer"&gt;孙天澍：第一，保持对智能体高频使用和对业务场景的反思。企业家对自己的业务体感最强，要持续寻找哪些场景和问题值得用AI重做。只有保持对智能体的直觉，才能不断有新的想法。&lt;/p&gt;&lt;p data-check-id="998992"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="443291"&gt;第二，想清楚参与方式。你可以投资、孵化，也可以做主业转型，并不是所有企业都必须亲自做AI原生公司。一般来说，孵化比主业内部转型容易，外部孵化又比内部孵化容易。有些企业与其在原有主业上强行加AI，不如通过投资或孵化进入更有增量的相邻领域。&lt;/p&gt;&lt;p data-check-id="832184"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="548006"&gt;第三，选择一个场景建立“特区”，有独立业务结果闭环。给它独立团队、资源、考核和试错空间，不要让它完全被旧组织方式束缚，如果企业能够建立“特区”，就先在特区里试；如果无法解耦，才需要推动主业的组织变革。&lt;/p&gt;&lt;p data-check-id="901316"&gt; &lt;/p&gt;&lt;p data-check-id="565736"&gt;&lt;strong&gt;AI时代最重要的仍然是企业家精神。做自己真正相信、愿意长期投入的事情，而不是因为AI流行就强行追逐一个方向。&lt;/strong&gt;如果今天AI与你的业务没有明显关系，硬把它绑在一起，最后可能只获得很小的变化。&lt;/p&gt;&lt;p data-check-id="986473"&gt; &lt;/p&gt;&lt;p data-check-id="378705" label="Q" class="text-question"&gt;虎嗅｜最后，AI下半场最稀缺的到底是什么？&lt;/p&gt;&lt;p data-check-id="908739"&gt; &lt;/p&gt;&lt;p data-check-id="773542" label="A" class="text-answer"&gt;孙天澍：最终还是“AI架构师”。AI下半场稀缺的不是更便宜的Token，甚至不是更好的智能体，而是千行百业的产业重构，真正能吸收智能的增量红利，完成从Token到价值的正循环。真正稀缺的是能够把场景、数据和智能体整合起来的“AI架构师”，把产业的隐性知识变成智能体系统，把模型能力变成业务闭环。&lt;/p&gt;&lt;p data-check-id="779803"&gt; &lt;/p&gt;&lt;p data-check-id="359075"&gt;横向的通用能力会越来越强，但纵向产业不会自动被改造。每个行业都需要自己的AI架构师，用无限供给的智能体去重新设计任务、流程、组织和商业模式。&lt;/p&gt;&lt;p data-check-id="600465"&gt; &lt;/p&gt;&lt;p data-check-id="422577"&gt;这就是为什么我说，AI下半场需要一千个亨利·福特。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Mon, 20 Jul 2026 03:05:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1tRU9VejJJeTdNQUl1ZER5anFUNlFwTlVzVzJoU01saHRhSUh6R0x3VGV4a3VxbnhSVGRxWlRGalk2dElHbVZuWXRvTC1wVkJ4cHJQZQ</guid></item><item><title>百度昆仑芯M100首次展出：全国产对标NVIDIA H20！ - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137577.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月20日消息，&lt;strong&gt;&lt;span&gt;在2026世界人工智能大会（WAIC 2026）上，百度旗下昆仑芯科技首次展示了面向大模型推理的第四代AI芯片M100实物，&lt;/span&gt;&lt;/strong&gt;昆仑芯CEO欧阳剑在做客央视新闻直播间时也亮出了这颗芯片。&lt;/p&gt;
 &lt;p&gt;据报道，M100基于全国产供应链打造，主要对标NVIDIA H20，HBM容量略低一些，主打高性价比推理应用。&lt;/p&gt;
@@ -595,7 +1129,15 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 02:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81MUozYnNBYlZEWmpOaDRNZ0J3T3VNQ25IWnZMRVE4RXlmT25XRDg1bXc1RFhZNWZkeDQ4TjVZWjIzdG1vV1lrb19CVHZyZEZmbWk5MGZRTEM</guid></item><item><title>AI基建的压力测试 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777382</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 02:21:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9TRlkybEtHZndRXzlYVGpnN2ROSjE5VWJqNnJKcENadU5zSzgtWkQwU1R2UzMzQ1FwNEhfLUJhRjdYREN4eGcxYVdnZkluc0d1T2RR</guid></item><item><title>当人人都有 AI，品味为什么更加重要？ - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/474841</link><description>&lt;body id="readabilityBody"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 02:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE81MUozYnNBYlZEWmpOaDRNZ0J3T3VNQ25IWnZMRVE4RXlmT25XRDg1bXc1RFhZNWZkeDQ4TjVZWjIzdG1vV1lrb19CVHZyZEZmbWk5MGZRTEM</guid></item><item><title>超节点集中亮相WAIC 国产算力进入系统级竞争时代 - 财联社</title><link>https://www.cls.cn/detail/2430847</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;《科创板日报》7月20日讯&lt;/strong&gt; 近日，2026世界人工智能大会顺利举办。会上，包括华为、阿里云、壁仞科技、摩尔线程、燧原科技、沐曦股份、曦智科技在内的多家科技大厂及算力产业链企业先后发布了各自的超节点产品，同时公布了对应的商业化进展。&lt;/p&gt;
+&lt;p&gt;在上述名单中，曦智科技超节点商业化走在前列：&lt;strong&gt;其拥有国内首个光互连光交换GPU超节点解决方案光跃LightSphereX，目前已实现了2000卡商业化落地，建成了国产第一个光互连光交换超节点集群。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其他厂商同样纷纷更新进展，如华为首次公开亮相昇腾950超节点（Atlas 950 SuperPoD）；阿里云首次通过公共云对外提供超节点形态的AI算力服务。壁仞科技分布式解耦架构超节点方案、摩尔线程MTT C256超节点、燧原科技云燧ESL64-O超节点、沐曦股份曦景S600亦接连亮相。&lt;/p&gt;
+&lt;p&gt;受上述消息影响，今日早盘AI服务器概念震荡走强。截至发稿，紫光股份、共进股份涨停，盛科通信涨超14%，浪潮信息、锐捷网络、中科曙光、神州数码、高新发展等纷纷上涨。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260720/EW9uxR674E_675x279.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;开源证券认为，产业共识层面来看，众多超节点集中亮相，表明当下国产芯片厂商已形成较为一致的战略判断——以“集团军”式系统级方案，来弥补单卡算力性能的相对短板。&lt;/p&gt;
+&lt;p&gt;该机构强调，&lt;strong&gt;这一趋势或将标志着国产算力正从单点性能追赶转向系统架构创新的新阶段&lt;/strong&gt;，超节点方案有望成为国内AI算力基础设施的重要演进方向。2025年下半年起，各CSP厂商、算力芯片厂商和ICT厂商等陆续推出超节点样品，随着国产芯片开始量产，2026年或成为国产超节点放量元年。&lt;/p&gt;
+&lt;p&gt;国盛证券进一步指出，多家厂商密集发布超节点产品，算力赛道竞争逻辑正在重塑。超节点厂商多采用无线缆正交互联架构，配置液冷方案，拓展超节点容量，有效降低互联成本，减少系统故障点，显著提升运维效率，并依靠资源池化、弹性扩容、高可靠运行的特性，实现计算、存储单元大带宽低时延互联。集群工程能力与软件生态正在成为核心壁垒，国产算力将进入系统级竞争时代。&lt;/p&gt;
+&lt;p&gt;国泰海通证券表示，超节点算力方案加速商用，成为智能体时代算力基础设施主流形态。算力网建设成为“十五五”开局之年的重要投资抓手，加快形成全国一张网建设，有望拉动算力相关基础设施投资，夯实新兴产业底座。建议关注：受益大规模智算集群建设的国产算力/交换芯片/交换机/液冷等；高速光模块与光互连；超节点整机与系统集成。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Mon, 20 Jul 2026 02:22:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBET01ldVRHSWNnSHBFU1JPSlJqUXFGSkkxWHZ4Mng3V2hQcEZudHVhRENvUWNtUE5OM0I1NHZxZVhEbGRHLUpBRw</guid></item><item><title>AI基建的压力测试 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777382</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 02:21:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9TRlkybEtHZndRXzlYVGpnN2ROSjE5VWJqNnJKcENadU5zSzgtWkQwU1R2UzMzQ1FwNEhfLUJhRjdYREN4eGcxYVdnZkluc0d1T2RR</guid></item><item><title>当人人都有 AI，品味为什么更加重要？ - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/474841</link><description>&lt;body id="readabilityBody"&gt;
   &lt;p id="app"&gt;&lt;/p&gt;
   
   
@@ -649,7 +1191,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 02:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE01enNJSkhWQXhBNzJla0cwUm9KaWNFZmpyZmhiejVQNFpqcjd2YTlLa3E0bGROemFaLU1ERVcwWnk2ckl5ZV9ERzF3djZDeVhWQnhHV1d6b2k</guid></item><item><title>接近六成，三倍于年初！中国模型在美企使用量激增 - 华尔街见闻</title><link>https://wallstreetcn.com/charts/41959429</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 02:05:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUkFVX3lxTE5IcGpCck91UC1oLUc3dmkwR1A5TVpLYy1RSlA4STlPRmIwRlgyblhiSDdpcWxTY0lEUVBjSG53bTdQcEtvdGlOUUZsczZiRWhGV2c</guid></item><item><title>vivo X300E开启预约：骁龙8 Gen5旗舰 7200mAh蓝海电池 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137560.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 02:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE01enNJSkhWQXhBNzJla0cwUm9KaWNFZmpyZmhiejVQNFpqcjd2YTlLa3E0bGROemFaLU1ERVcwWnk2ckl5ZV9ERzF3djZDeVhWQnhHV1d6b2k</guid></item><item><title>接近六成，三倍于年初！中国模型在美企使用量激增 - 华尔街见闻</title><link>https://wallstreetcn.com/charts/41959429</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 02:05:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUkFVX3lxTE5IcGpCck91UC1oLUc3dmkwR1A5TVpLYy1RSlA4STlPRmIwRlgyblhiSDdpcWxTY0lEUVBjSG53bTdQcEtvdGlOUUZsczZiRWhGV2c</guid></item><item><title>提前看到手机、芯片设计图没用：中国厂商无法造出真苹果iPhone 18 - 凤凰网科技</title><link>https://tech.ifeng.com/c/8uuH1qEHyyn</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;快科技7月20日消息，&lt;strong&gt;对于苹果这家科技巨头来说，真正支撑起整个商业帝国的核心护城河从来都不是单一的硬件参数，而是长期闭环迭代的iOS操作系统。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;近期iPhone 18 Pro的完整主板图纸、A20 Pro芯片手册及全链路供应商清单等核心原厂机密资料出现大规模泄露，不少深耕消费电子翻新、复刻生意的华强北商家都第一时间拿到了全套外泄资料。&lt;/p&gt;&lt;p&gt;但哪怕依托全球配套效率最高的中国手机全产业链资源，所有人都心知肚明根本不可能赶在苹果官方正式发售之前造出体验对标的复刻真机。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;业内资深从业者直接点出，想要1:1复刻出能媲美正版的iPhone18 Pro，面前横亘着两道至今无人可以逾越的技术壁垒。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;第一道壁垒就是苹果完全自研的A系列芯片，它的核心架构设计、配套的驱动逻辑以及当前最顶尖的2nm生产工艺全链路都对外严格封锁，公开或灰色流通市场没有任何渠道能获取完整的可落地产量方案。&lt;/p&gt;&lt;p&gt;第二道壁垒就是完全闭环的iOS操作系统，系统底层多层级的加密校验机制，和每台设备独有的硬件序列号深度绑定，这套运行了十几年的成熟体系至今没有出现过能完全绕过破解的公开方案。&lt;/p&gt;&lt;p&gt;目前华强北的厂商基于泄露资料最多只能产出外观高度还原的山寨机，这类设备大多搭载了深度修改UI界面的定制版安卓系统，实际性能、系统流畅度以及苹果全生态联动的使用体验，和正版iPhone存在天壤之别，而且这类产品完全无法接入苹果官方服务体系，自然也不可能享受任何官方售后保修权益。&lt;/p&gt;&lt;p&gt;&lt;img alt="提前看到手机、芯片设计图没用：中国厂商无法造出真苹果iPhone 18" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/1178162628ACD60CCCDFC6E35C747BA2FF81B17D_size94_w600_h337.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网科技</author><pubDate>Mon, 20 Jul 2026 01:58:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1haFd1MVlWWnZYanNkTkdDN0U4UXlha3ZqOFZrY3JFYXlObjRpMlVsLUVOTFFqdDVVR1JjdjNiQTlsMnhkTnBUTWE1b24</guid></item><item><title>vivo X300E开启预约：骁龙8 Gen5旗舰 7200mAh蓝海电池 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137560.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月20日消息，今日，&lt;span&gt;&lt;strong&gt;vivo宣布vivo X300E正式开启预约，新机将于7月27日9:00开启预售，价格暂未公布。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;据介绍，预约用户可锁定价值288元的一年延保和三年电池宝权益，并限量加赠价值299元的线条小狗定制移动电源。&lt;/p&gt;
@@ -690,7 +1232,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 01:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1kYTV4al9rc3dUNmF0Q3pZb1Q4RUJGWGtrd0Fiak95V1BaeWdyXzBETmRvMl9FNzNSUWVfTVV0STY4UkxEdzNBS2hMVHBkRXhqaFZ0V1p2NGc</guid></item><item><title>中国手机亮相世界杯决赛！西班牙队夺冠后拿荣耀Robot Phone庆祝 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137547.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 01:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1kYTV4al9rc3dUNmF0Q3pZb1Q4RUJGWGtrd0Fiak95V1BaeWdyXzBETmRvMl9FNzNSUWVfTVV0STY4UkxEdzNBS2hMVHBkRXhqaFZ0V1p2NGc</guid></item><item><title>中国AI Kimi的高性能再次冲击世界 - 日经中文网</title><link>https://cn.nikkei.com/china/ccompany/63296-2026-07-20-09-15-53.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFA2WGJaVEtIYnJXUkxCdHJRYm1XYk5XbGM2cUJmQWowd05HWjF4cWNCaDhSTTFUQ3dhNEpjU0VlQTJQYUwtTmdHVklWaWVyeU5yVWdTV0plQU8wN204STltbGhyUDI4WTBKUzBHQ3hEY0hXNDFaa2c?oc=5" target="_blank"&gt;中国AI Kimi的高性能再次冲击世界&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;日经中文网&lt;/font&gt;</description><author>日经中文网</author><pubDate>Mon, 20 Jul 2026 01:33:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTFA2WGJaVEtIYnJXUkxCdHJRYm1XYk5XbGM2cUJmQWowd05HWjF4cWNCaDhSTTFUQ3dhNEpjU0VlQTJQYUwtTmdHVklWaWVyeU5yVWdTV0plQU8wN204STltbGhyUDI4WTBKUzBHQ3hEY0hXNDFaa2c</guid></item><item><title>中国手机亮相世界杯决赛！西班牙队夺冠后拿荣耀Robot Phone庆祝 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137547.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月20日消息，今日，2026美加墨世界杯迎来终极对决，西班牙队凭借费兰·托雷斯在加时赛阶段打入的制胜球，&lt;strong&gt;最终以1-0击败卫冕冠军阿根廷，夺得本届世界杯冠军。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;现场视频显示，赛后庆祝环节，西班牙队球员手持中国品牌手机自拍、录像，记录与大力神杯合影的荣耀时刻。&lt;/p&gt;
@@ -713,7 +1255,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 01:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9GUWFLTngyZlV4TzNQbnlqVV9UbFZCeF84RVgyU2xJYnduR3JwaW4taHIyMnI2aEZqWkdfZTRUeGhUVjhEQzVwS09uLVlqSzhfSGtuck5DeW8</guid></item><item><title>习近平阐述AI发展愿景：倡导“开放共赢”，与美国竞争 - 纽约时报中文网</title><link>https://cn.nytimes.com/china/20260720/xi-jinping-china-ai/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;当然，习近平描绘的愿景同样服务于中国的国家利益。外界普遍认为，中国在人工智能领域仍落后于美国，但它正在迎头赶上。这一点在中国领先人工智能企业——如DeepSeek、月之暗面和智谱——开发的开源软件上体现得尤为明显。&lt;/p&gt;&lt;p class="article-paragraph"&gt;这些公司的人工智能系统正在缩小与美国领先的人工智能聊天机器人和问答程序间的差距，包括OpenAI的ChatGPT、Anthropic的Claude，以及谷歌的Gemini。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;周五，中国的月之暗面发布了一款新模型，声称其性能可与Anthropic和OpenAI的美国模型相媲美。这款名为Kimi K3的模型一经发布，便&lt;/p&gt;&lt;a href="https://www.nytimes.com/2026/07/17/business/stocks-ai-tech-wall-street.html"&gt;助推&lt;/a&gt;&lt;p&gt;了金融市场的波动。&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;这些美国公司为打造各自最先进的模型已投入数百亿美元，并不免费分享。它们还指责中国窃取技术。与此同时，中国在最先进的人工智能芯片领域仍远远落后——这一市场由英伟达主导。&lt;/p&gt;&lt;p class="article-paragraph"&gt;习近平在上海人工智能大会开幕式上的讲话正值中国为推动“世界人工智能合作组织”争取更多支持之际。该组织成立于一年前，中国表示，其目的之一是让发展中国家在人工智能治理中拥有更大的话语权。&lt;/p&gt;&lt;p class="article-paragraph"&gt;中国领导人在讲话中还表示，中国计划向对中国友好的发展中国家提供人工智能技术和相关培训。“坚持开放共赢，”他说道。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Mon, 20 Jul 2026 01:18:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1oYURLYTdNZl9wVW9VLXVmSDFpYjNHRHJRZHlpcE5ZM1p5bzlPZGhzTjl6cUZ0ZUg0bXRUNjlXRzY0dFBYT1VpTms4Z1NIeUItTW1mU2h1d2NxbmMwdVJNSFIzbjMtaGFWakE</guid></item><item><title>Kimi3引发“Moonshot时刻”：AI模型效率提升对芯片需求与资本开支的冲击 - 虎嗅</title><link>https://www.huxiu.com/article/4876546.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" data-v-42acfa7d&gt;&lt;p data-check-id="971651"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MzA3NTg4MDUzNQ==&amp;amp;mid=2657094990&amp;amp;idx=1&amp;amp;sn=78a2c1dc1ec65c0a1561f2a89feef5b2&amp;amp;chksm=8540548e9f906d4da2bf498611d1d1132bcd73eebffc5b62245de792421c0f241eddddf117d7&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=07195cAz0IZQYOJ4bOJ67dXa&amp;amp;sharer_shareinfo=8bc09517347eff0f90fb0bf8f3c81f70&amp;amp;sharer_shareinfo_first=5475dc93cca1b2aa1c9512dd7ca43853&amp;amp;version=4.1.27.70423&amp;amp;platform=mac#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-check-id="292588"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="489885" label="大标题" class="text-big-title"&gt;一&lt;/h2&gt;&lt;p data-check-id="680277"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="826344"&gt;一年半的时间，说长不长，说短就短。短到能让大家丝滑地把“Moonshot 时刻”联想到 2005 年初的 “DeepSeek 时刻”，并且应激反应开始抛售。&lt;/p&gt;&lt;p data-check-id="970201"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="461131"&gt;但它又很长，因为一年半的时间，以 AI 的时间尺度算，已经是很久很久以前了。很多事情已经发生了变化。&lt;/p&gt;&lt;p data-check-id="932503"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="212996"&gt;一年半前发生的深度求索时刻，是一个灵魂拷问：美国的前沿AI 领先优势是不是正在消失，或者其实早就没了？。&lt;/p&gt;&lt;p data-check-id="621605"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="865404"&gt;而一年半后的月之暗面时刻，灵魂拷问变成了两个：（1）O 社和 A 社这样的前沿模型实验室，估值能撑到 1 万亿美金的底气到底在哪里？（2）科技和云大厂轰轰烈烈的 CAPEX 基建，会不会只是在空中造楼阁？&lt;/p&gt;&lt;p data-check-id="658963"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="281269"&gt;现在想想，也许苹果才是最大赢家：Openclaw 爆火时躺赢的是Mac Mini；决定不上大模型战场，也就完美避开了算力、机房、训练这些烧钱大坑；更何况内卷卷一切的中国参赛选手，早晚会把模型卷趴。&lt;/p&gt;&lt;p data-check-id="825412"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="553277"&gt;记得一个朋友有分教：有时候要允许自己错过。苹果看起来错过了，但其实啥也没错过，现在历史新高，超过英伟达，又重回宇宙第一大公司宝座。完美演绎了什么叫做让子弹飞一会儿。&lt;/p&gt;&lt;p data-check-id="910642"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="545079"&gt;如今我也到了可以理直气壮说“这集我看过”的年龄，也就慢慢理解了前任老登们的心情。老登的投资古训只有一条：DYOR，do your own research。但这些年这条古训的内涵变化很大，从“我上知天文下知地理”，到“我懂得基本面和技术分析”，到“我知道名字和股价”，再到现在——“我知道怎么开盲盒”，或者“盲盒炒股”。&lt;/p&gt;&lt;p data-check-id="406307"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="357612"&gt;或者换成现在很火但被严重误读了的概念：“趋势跟踪”。&lt;/p&gt;&lt;p data-check-id="682847"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="892373"&gt;说回到DYOR，这并不是选修课，而是我们需要做的唯一一件事。&lt;/p&gt;&lt;p data-check-id="689095"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="897784"&gt;只不过在新的时代，我们要研究的东西，除了流动性、估值等最最最基本的东西之外，我觉得还应该加上一个“叙事感知”。&lt;/p&gt;&lt;p data-check-id="100982"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="923463"&gt;下面就拿周五的“大屠杀”来举个例子。抛开其他因素，如果我们仅从叙事这个角度来看，市场上究竟发生了什么？&lt;/p&gt;&lt;p data-check-id="988340"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="378196" label="大标题" class="text-big-title"&gt;二&lt;/h2&gt;&lt;p data-check-id="432799"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="908655"&gt;可以用一段话总结：&lt;/p&gt;&lt;p data-check-id="820950"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="698752"&gt;过去 7 个月来，市场上最赚钱的交易之一，叫做“Bottleneck Trade”。它的逻辑是：前沿大模型是一道人人都抢着吃的硬菜，而做这道菜的灶台、案板、传菜系统产能有限，卡住了整个厨房的脖子。供不应求，需求错配，这些灶台供应商的利润坐上了火箭。&lt;/p&gt;&lt;p data-check-id="951328"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="712731"&gt;有一天你突然发现，好像不用这么大的排场也能出菜。有人换了一套新菜谱，几个灶眼就能做出同样的味道。一旦这套菜谱普及开来，厨房老板们疯狂砸钱扩建厨房的狂潮，就可能退潮，也就不需要采购那么多灶台和案板了。&lt;/p&gt;&lt;p data-check-id="419751"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="440333"&gt;再精简一点，其实只有一个问题：To cut or not to cut，that's the question。&lt;/p&gt;&lt;p data-check-id="713530"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="906287"&gt;那么 Kimi 3 到底是不是又带来了一个 DeepSeek 时刻呢？&lt;/p&gt;&lt;p data-check-id="405637"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="985544"&gt;目前的叙事分歧很大，而当市场上正反两方还在掐架、难分胜负的时候，波动率就会变得极高。&lt;/p&gt;&lt;p data-check-id="309110"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="137068"&gt;&lt;/p&gt;&lt;p data-check-id="988951"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="196817"&gt;现在我们就来看看，此刻两边的故事各自是怎么讲的。&lt;/p&gt;&lt;p data-check-id="941626"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="789044"&gt;多方的第一个叙事：Kimi3 威胁的是前沿实验室的利润，不是对芯片的需求。&lt;/p&gt;&lt;p data-check-id="197866"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="220194"&gt;叙事代表是 Dan Robinson。他在推特上做了个投票，问 Kimi 这类开放权重模型对前沿能力到底是加速还是减速，86% 的人投了加速。&lt;/p&gt;&lt;p data-check-id="500647"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="851979"&gt;逻辑是：利润率垮掉会让前沿实验室做研究的动力变弱，这算是利空；但对硬件需求的杠杆会放大，所以净效应还是加速。所以结论是：这一次的抛售和当年 DeepSeek 一样，会迅速被证伪。&lt;/p&gt;&lt;p data-check-id="822309"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="998541"&gt;&lt;img data-h="642" data-w="1080" src="https://img.huxiucdn.com/article/content/26-07-20/e4407abe-7278-4b92-821b-bf520890238f.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="405183"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="570421"&gt;多方的第二个叙事：云厂商博弈。&lt;/p&gt;&lt;p data-check-id="851070"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="578119"&gt;就算企业都去跑开源模型，token 用量还是会涨，token 涨就是芯片涨。如果明知需求会涨，云厂商谁会先动手砍自己的 capex呢？就像掰手腕，一方先松懈，对手就赢了。所以结论是：谁都不敢砍，大基建还要继续。&lt;/p&gt;&lt;p data-check-id="651997"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="930431"&gt;多方的第三个叙事：不管哪个模型笑到最后，都离不开数据中心。&lt;/p&gt;&lt;p data-check-id="204744"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="395655"&gt;就像 Meta 把自己的算力租给 Anthropic，没准未来这些大厂的机房里跑的都是中国开源模型。而且企业普遍对“开源”这件事有误解：模型虽然是开源的，但运行模型一点都不免费。对大部分企业来说，自己部署一个 2.8 万亿参数的模型根本不现实，最后还是需要云平台。&lt;/p&gt;&lt;p data-check-id="444593"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="309145"&gt;多方还有一位重量级选手：SemiAnalysis。&lt;/p&gt;&lt;p data-check-id="366366"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="233019"&gt;&lt;/p&gt;&lt;p data-check-id="574602"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="456988"&gt;他们的观点是：K3 不但不利空英伟达，反而是利好。有人觉得 K3 的新注意力机制更省显存，所以芯片要卖不动了。但情况恰恰相反：K3 本身就是个吞卡怪兽，由于这个模型实在太大了，光权重就占掉 1.5 TB 以上的显存，必须用英伟达最贵的 NVL72 机架级系统才跑丝滑。Kimi 自己都说最优推理需要至少 64 块芯片。换句话说，它省下的网络带宽，又在另一头加倍吞了回去。&lt;/p&gt;&lt;p data-check-id="986669"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="362752"&gt;另一个“元叙事”权重高的代表性观点来自于 Gavin Baker：&lt;/p&gt;&lt;p data-check-id="161034"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="728592"&gt;K3 也许确实是个拐点，但利空的只有 OpenAI 和 Anthropic 两家，对世界上其他所有公司都是利好。&lt;/p&gt;&lt;p data-check-id="667123"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="335679"&gt;逻辑如下：如果全世界只剩这两家前沿lab，推理毛利 90%，那它们就会变成整条产业链的垄断买家，不管你是芯片、数据中心，还是电力，上下游全吞掉，完全掌握压价权。多一个有竞争力的开源，整条产业链就还有办法赚钱。这就是黄仁勋大力支持开源的原因。&lt;/p&gt;&lt;p data-check-id="459232"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="327937"&gt;而且 K3 其实并不省钱。真正的“斯普特尼克时刻”是真的出现了一个既开源又省 token 的模型。更何况 O 社和 A 社的护城河也许早就从模型转移到了产品上。&lt;/p&gt;&lt;p data-check-id="360486"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="485516"&gt;所以它到底是不是个大威胁，可能很快就会看到答案。&lt;/p&gt;&lt;p data-check-id="910659"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="899591" label="大标题" class="text-big-title"&gt;三&lt;/h2&gt;&lt;p data-check-id="430541"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="609699"&gt;现在看看空方叙事。&lt;/p&gt;&lt;p data-check-id="800644"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="958008"&gt;看来看去，其实空方的叙事只有一个：底层需求。&lt;/p&gt;&lt;p data-check-id="384246"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="724733"&gt;我们先回忆一下上一集 Deepseek 主演的剧情：&lt;/p&gt;&lt;p data-check-id="335958"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="564433"&gt;当年，叙事标的只有一个：英伟达，它的芯片还卖不卖得出去？&lt;/p&gt;&lt;p data-check-id="961973"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="677069"&gt;而事后的发展变化让大家迅速普及了一个古老的经济学概念：杰文斯悖论。市场迅速达成共识：就算模型变得更聪明，也不会少买英伟达的芯片。DeepSeek 时刻被证伪，一切恢复如常，继续涨涨涨。&lt;/p&gt;&lt;p data-check-id="778249"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="336081"&gt;一年半之后，到了 Moonshot 时刻，叙事标的已经变成了一整条产业链，不再只是英伟达。&lt;/p&gt;&lt;p data-check-id="888188"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="973443"&gt;我琢磨了很久，理解这条链最好的方法，就是把整个 AI 产业想象成一个大餐厅。餐厅的结构如下图：&lt;/p&gt;&lt;p data-check-id="117064"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="563012"&gt;&lt;img data-h="409" data-w="1080" src="https://img.huxiucdn.com/article/content/26-07-20/d3d09e20-e542-4970-b4ec-7cfee5dd5f21.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="725508"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="534322"&gt;如果最顶层的最终需求开始减少，需求就会像多米诺骨牌一样，在整整 7 层里面逐层传导。所以这一次杰文斯悖论要捍卫的东西，比上一次更多更复杂。&lt;/p&gt;&lt;p data-check-id="310451"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="295305"&gt;其实我们只要设身处地地想想终端用户——每一个企业，很容易就能想到：大部分正常的企业在 AI 世界里花钱的节奏和这些大 AI 公司是完全不同的。&lt;/p&gt;&lt;p data-check-id="638759"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="535033"&gt;任何一家普通企业都需要过日子，用多少买多少，要精打细算。更何况，所谓的“大规模企业 AI 应用”还早着呢；而且真到了“大规模普及”那一天，模型就会变得像上个时代的互联网一样，只是一个商品化的、便宜的日常用品而已。&lt;/p&gt;&lt;p data-check-id="110933"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="607277"&gt;再回头看看多方的叙事：要么是在重新定价模型公司护城河，要么就是用工程细节论证硬件只会越买越多。这些观点都没错，只是全都绕开了“终极需求”这个问题。&lt;/p&gt;&lt;p data-check-id="869426"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="851485" label="大标题" class="text-big-title"&gt;四&lt;/h2&gt;&lt;p data-check-id="831618"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="859020"&gt;最后发表一下我的浅薄观点：历史上其实已经有答案了。&lt;/p&gt;&lt;p data-check-id="855034"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="602198"&gt;答案就在杰文斯的煤炭故事里。杰文斯悖论的背景是煤炭行业，它带来了工业革命，煤也确实越用越多，悖论是成立的。可是这么多年的大量煤炭投资，英国工业革命时期收费公路、运河、铁路的资本回报率只有 4% 到 5% 左右，投资人的回报长期低于资本成本。&lt;/p&gt;&lt;p data-check-id="172656"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="329633"&gt;换句话说，煤用的更多，跟投资人赚不赚钱完全是两回事。&lt;/p&gt;&lt;p data-check-id="226597"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="708264"&gt;结果是社会飞速进步了，但大部分投资人买了单。&lt;/p&gt;&lt;p data-check-id="948394"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="416102" label="大标题" class="text-big-title"&gt;五&lt;/h2&gt;&lt;p data-check-id="938406"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="319298"&gt;最近一段时间，我一直在做数据标注和“蒸馏自己”的工作。在这个过程中，我对大模型有了更多感悟，其中最刻骨铭心的一点是：大模型要真的能替代分析师和专家，做出靠谱和优质的分析，必须经过“蒸馏专家”的过程。这个过程并不简单，而且后续必须进行长期的追踪和实时的调整。&lt;/p&gt;&lt;p data-check-id="175007"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="906106"&gt;我们在概念验证的过程中做了一些实时的分析，比如港股解禁前后，MiniMax 和智谱的叙事与价格的分歧；还有眼下正在发生的 Kimi 搅动市场。在这个过程中我也学到了很多，也给了我很多的启发。&lt;/p&gt;&lt;p data-check-id="722563"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="664331"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MzA3NTg4MDUzNQ==&amp;amp;mid=2657094990&amp;amp;idx=1&amp;amp;sn=78a2c1dc1ec65c0a1561f2a89feef5b2&amp;amp;chksm=8540548e9f906d4da2bf498611d1d1132bcd73eebffc5b62245de792421c0f241eddddf117d7&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=07195cAz0IZQYOJ4bOJ67dXa&amp;amp;sharer_shareinfo=8bc09517347eff0f90fb0bf8f3c81f70&amp;amp;sharer_shareinfo_first=5475dc93cca1b2aa1c9512dd7ca43853&amp;amp;version=4.1.27.70423&amp;amp;platform=mac#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Mon, 20 Jul 2026 00:43:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE5XNWVoaVJ4dHY3Tmw3endKZGNDeHotZWJIOXZyMEtDcDZpN0ZqUjg3MldsNUpiVU1nLWhTVHhoV0lqVU5ISzVnN3VyYVdGY1lra050Tg</guid></item><item><title>阿里新旗舰模型Qwen3.8预览：2.4万亿参数，直逼Fable 5和Kimi 3 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777381</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 00:41:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE96WkNOQVE0d0JzRDNxNVNnLWdTak9RQXg4VUU2WXB2RXpCTnB1SmtFcVZ6VjVjN0NjbmozZllNNGF0RjU1aWZmWFp2cEJsRGxHTlp3</guid></item><item><title>AI 发展了4年，把应用发展没了？ - 新浪财经</title><link>https://finance.sina.com.cn/wm/2026-07-20/doc-iniimeam3014815.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 20 Jul 2026 01:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9GUWFLTngyZlV4TzNQbnlqVV9UbFZCeF84RVgyU2xJYnduR3JwaW4taHIyMnI2aEZqWkdfZTRUeGhUVjhEQzVwS09uLVlqSzhfSGtuck5DeW8</guid></item><item><title>尾盘变盘！上证50大涨超3%，“煤电酒油”爆发，科技股再度下跌，恒指、恒科指均涨超2%，AI大模型股逆势下挫 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777388</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 01:22:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9ya3JWODlGclN3Zkk1eEFfWGpyZ29XM3dhbFhSbmhOVmtzSEtsTklneDFrTmNlalNmd3pUNEN6aEtsMlY5Zjg3Z2pNa0FjQWZta2E4</guid></item><item><title>习近平阐述AI发展愿景：倡导“开放共赢”，与美国竞争 - 纽约时报中文网</title><link>https://cn.nytimes.com/china/20260720/xi-jinping-china-ai/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;当然，习近平描绘的愿景同样服务于中国的国家利益。外界普遍认为，中国在人工智能领域仍落后于美国，但它正在迎头赶上。这一点在中国领先人工智能企业——如DeepSeek、月之暗面和智谱——开发的开源软件上体现得尤为明显。&lt;/p&gt;&lt;p class="article-paragraph"&gt;这些公司的人工智能系统正在缩小与美国领先的人工智能聊天机器人和问答程序间的差距，包括OpenAI的ChatGPT、Anthropic的Claude，以及谷歌的Gemini。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;周五，中国的月之暗面发布了一款新模型，声称其性能可与Anthropic和OpenAI的美国模型相媲美。这款名为Kimi K3的模型一经发布，便&lt;/p&gt;&lt;a href="https://www.nytimes.com/2026/07/17/business/stocks-ai-tech-wall-street.html"&gt;助推&lt;/a&gt;&lt;p&gt;了金融市场的波动。&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;这些美国公司为打造各自最先进的模型已投入数百亿美元，并不免费分享。它们还指责中国窃取技术。与此同时，中国在最先进的人工智能芯片领域仍远远落后——这一市场由英伟达主导。&lt;/p&gt;&lt;p class="article-paragraph"&gt;习近平在上海人工智能大会开幕式上的讲话正值中国为推动“世界人工智能合作组织”争取更多支持之际。该组织成立于一年前，中国表示，其目的之一是让发展中国家在人工智能治理中拥有更大的话语权。&lt;/p&gt;&lt;p class="article-paragraph"&gt;中国领导人在讲话中还表示，中国计划向对中国友好的发展中国家提供人工智能技术和相关培训。“坚持开放共赢，”他说道。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Mon, 20 Jul 2026 01:18:55 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1oYURLYTdNZl9wVW9VLXVmSDFpYjNHRHJRZHlpcE5ZM1p5bzlPZGhzTjl6cUZ0ZUg0bXRUNjlXRzY0dFBYT1VpTms4Z1NIeUItTW1mU2h1d2NxbmMwdVJNSFIzbjMtaGFWakE</guid></item><item><title>Kimi3引发“Moonshot时刻”：AI模型效率提升对芯片需求与资本开支的冲击 - 虎嗅</title><link>https://www.huxiu.com/article/4876546.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" data-v-42acfa7d&gt;&lt;p data-check-id="971651"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MzA3NTg4MDUzNQ==&amp;amp;mid=2657094990&amp;amp;idx=1&amp;amp;sn=78a2c1dc1ec65c0a1561f2a89feef5b2&amp;amp;chksm=8540548e9f906d4da2bf498611d1d1132bcd73eebffc5b62245de792421c0f241eddddf117d7&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=07195cAz0IZQYOJ4bOJ67dXa&amp;amp;sharer_shareinfo=8bc09517347eff0f90fb0bf8f3c81f70&amp;amp;sharer_shareinfo_first=5475dc93cca1b2aa1c9512dd7ca43853&amp;amp;version=4.1.27.70423&amp;amp;platform=mac#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-check-id="292588"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="489885" label="大标题" class="text-big-title"&gt;一&lt;/h2&gt;&lt;p data-check-id="680277"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="826344"&gt;一年半的时间，说长不长，说短就短。短到能让大家丝滑地把“Moonshot 时刻”联想到 2005 年初的 “DeepSeek 时刻”，并且应激反应开始抛售。&lt;/p&gt;&lt;p data-check-id="970201"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="461131"&gt;但它又很长，因为一年半的时间，以 AI 的时间尺度算，已经是很久很久以前了。很多事情已经发生了变化。&lt;/p&gt;&lt;p data-check-id="932503"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="212996"&gt;一年半前发生的深度求索时刻，是一个灵魂拷问：美国的前沿AI 领先优势是不是正在消失，或者其实早就没了？。&lt;/p&gt;&lt;p data-check-id="621605"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="865404"&gt;而一年半后的月之暗面时刻，灵魂拷问变成了两个：（1）O 社和 A 社这样的前沿模型实验室，估值能撑到 1 万亿美金的底气到底在哪里？（2）科技和云大厂轰轰烈烈的 CAPEX 基建，会不会只是在空中造楼阁？&lt;/p&gt;&lt;p data-check-id="658963"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="281269"&gt;现在想想，也许苹果才是最大赢家：Openclaw 爆火时躺赢的是Mac Mini；决定不上大模型战场，也就完美避开了算力、机房、训练这些烧钱大坑；更何况内卷卷一切的中国参赛选手，早晚会把模型卷趴。&lt;/p&gt;&lt;p data-check-id="825412"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="553277"&gt;记得一个朋友有分教：有时候要允许自己错过。苹果看起来错过了，但其实啥也没错过，现在历史新高，超过英伟达，又重回宇宙第一大公司宝座。完美演绎了什么叫做让子弹飞一会儿。&lt;/p&gt;&lt;p data-check-id="910642"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="545079"&gt;如今我也到了可以理直气壮说“这集我看过”的年龄，也就慢慢理解了前任老登们的心情。老登的投资古训只有一条：DYOR，do your own research。但这些年这条古训的内涵变化很大，从“我上知天文下知地理”，到“我懂得基本面和技术分析”，到“我知道名字和股价”，再到现在——“我知道怎么开盲盒”，或者“盲盒炒股”。&lt;/p&gt;&lt;p data-check-id="406307"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="357612"&gt;或者换成现在很火但被严重误读了的概念：“趋势跟踪”。&lt;/p&gt;&lt;p data-check-id="682847"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="892373"&gt;说回到DYOR，这并不是选修课，而是我们需要做的唯一一件事。&lt;/p&gt;&lt;p data-check-id="689095"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="897784"&gt;只不过在新的时代，我们要研究的东西，除了流动性、估值等最最最基本的东西之外，我觉得还应该加上一个“叙事感知”。&lt;/p&gt;&lt;p data-check-id="100982"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="923463"&gt;下面就拿周五的“大屠杀”来举个例子。抛开其他因素，如果我们仅从叙事这个角度来看，市场上究竟发生了什么？&lt;/p&gt;&lt;p data-check-id="988340"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="378196" label="大标题" class="text-big-title"&gt;二&lt;/h2&gt;&lt;p data-check-id="432799"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="908655"&gt;可以用一段话总结：&lt;/p&gt;&lt;p data-check-id="820950"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="698752"&gt;过去 7 个月来，市场上最赚钱的交易之一，叫做“Bottleneck Trade”。它的逻辑是：前沿大模型是一道人人都抢着吃的硬菜，而做这道菜的灶台、案板、传菜系统产能有限，卡住了整个厨房的脖子。供不应求，需求错配，这些灶台供应商的利润坐上了火箭。&lt;/p&gt;&lt;p data-check-id="951328"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="712731"&gt;有一天你突然发现，好像不用这么大的排场也能出菜。有人换了一套新菜谱，几个灶眼就能做出同样的味道。一旦这套菜谱普及开来，厨房老板们疯狂砸钱扩建厨房的狂潮，就可能退潮，也就不需要采购那么多灶台和案板了。&lt;/p&gt;&lt;p data-check-id="419751"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="440333"&gt;再精简一点，其实只有一个问题：To cut or not to cut，that's the question。&lt;/p&gt;&lt;p data-check-id="713530"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="906287"&gt;那么 Kimi 3 到底是不是又带来了一个 DeepSeek 时刻呢？&lt;/p&gt;&lt;p data-check-id="405637"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="985544"&gt;目前的叙事分歧很大，而当市场上正反两方还在掐架、难分胜负的时候，波动率就会变得极高。&lt;/p&gt;&lt;p data-check-id="309110"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="137068"&gt;&lt;/p&gt;&lt;p data-check-id="988951"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="196817"&gt;现在我们就来看看，此刻两边的故事各自是怎么讲的。&lt;/p&gt;&lt;p data-check-id="941626"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="789044"&gt;多方的第一个叙事：Kimi3 威胁的是前沿实验室的利润，不是对芯片的需求。&lt;/p&gt;&lt;p data-check-id="197866"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="220194"&gt;叙事代表是 Dan Robinson。他在推特上做了个投票，问 Kimi 这类开放权重模型对前沿能力到底是加速还是减速，86% 的人投了加速。&lt;/p&gt;&lt;p data-check-id="500647"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="851979"&gt;逻辑是：利润率垮掉会让前沿实验室做研究的动力变弱，这算是利空；但对硬件需求的杠杆会放大，所以净效应还是加速。所以结论是：这一次的抛售和当年 DeepSeek 一样，会迅速被证伪。&lt;/p&gt;&lt;p data-check-id="822309"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="998541"&gt;&lt;img data-h="642" data-w="1080" src="https://img.huxiucdn.com/article/content/26-07-20/e4407abe-7278-4b92-821b-bf520890238f.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="405183"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="570421"&gt;多方的第二个叙事：云厂商博弈。&lt;/p&gt;&lt;p data-check-id="851070"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="578119"&gt;就算企业都去跑开源模型，token 用量还是会涨，token 涨就是芯片涨。如果明知需求会涨，云厂商谁会先动手砍自己的 capex呢？就像掰手腕，一方先松懈，对手就赢了。所以结论是：谁都不敢砍，大基建还要继续。&lt;/p&gt;&lt;p data-check-id="651997"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="930431"&gt;多方的第三个叙事：不管哪个模型笑到最后，都离不开数据中心。&lt;/p&gt;&lt;p data-check-id="204744"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="395655"&gt;就像 Meta 把自己的算力租给 Anthropic，没准未来这些大厂的机房里跑的都是中国开源模型。而且企业普遍对“开源”这件事有误解：模型虽然是开源的，但运行模型一点都不免费。对大部分企业来说，自己部署一个 2.8 万亿参数的模型根本不现实，最后还是需要云平台。&lt;/p&gt;&lt;p data-check-id="444593"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="309145"&gt;多方还有一位重量级选手：SemiAnalysis。&lt;/p&gt;&lt;p data-check-id="366366"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="233019"&gt;&lt;/p&gt;&lt;p data-check-id="574602"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="456988"&gt;他们的观点是：K3 不但不利空英伟达，反而是利好。有人觉得 K3 的新注意力机制更省显存，所以芯片要卖不动了。但情况恰恰相反：K3 本身就是个吞卡怪兽，由于这个模型实在太大了，光权重就占掉 1.5 TB 以上的显存，必须用英伟达最贵的 NVL72 机架级系统才跑丝滑。Kimi 自己都说最优推理需要至少 64 块芯片。换句话说，它省下的网络带宽，又在另一头加倍吞了回去。&lt;/p&gt;&lt;p data-check-id="986669"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="362752"&gt;另一个“元叙事”权重高的代表性观点来自于 Gavin Baker：&lt;/p&gt;&lt;p data-check-id="161034"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="728592"&gt;K3 也许确实是个拐点，但利空的只有 OpenAI 和 Anthropic 两家，对世界上其他所有公司都是利好。&lt;/p&gt;&lt;p data-check-id="667123"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="335679"&gt;逻辑如下：如果全世界只剩这两家前沿lab，推理毛利 90%，那它们就会变成整条产业链的垄断买家，不管你是芯片、数据中心，还是电力，上下游全吞掉，完全掌握压价权。多一个有竞争力的开源，整条产业链就还有办法赚钱。这就是黄仁勋大力支持开源的原因。&lt;/p&gt;&lt;p data-check-id="459232"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="327937"&gt;而且 K3 其实并不省钱。真正的“斯普特尼克时刻”是真的出现了一个既开源又省 token 的模型。更何况 O 社和 A 社的护城河也许早就从模型转移到了产品上。&lt;/p&gt;&lt;p data-check-id="360486"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="485516"&gt;所以它到底是不是个大威胁，可能很快就会看到答案。&lt;/p&gt;&lt;p data-check-id="910659"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="899591" label="大标题" class="text-big-title"&gt;三&lt;/h2&gt;&lt;p data-check-id="430541"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="609699"&gt;现在看看空方叙事。&lt;/p&gt;&lt;p data-check-id="800644"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="958008"&gt;看来看去，其实空方的叙事只有一个：底层需求。&lt;/p&gt;&lt;p data-check-id="384246"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="724733"&gt;我们先回忆一下上一集 Deepseek 主演的剧情：&lt;/p&gt;&lt;p data-check-id="335958"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="564433"&gt;当年，叙事标的只有一个：英伟达，它的芯片还卖不卖得出去？&lt;/p&gt;&lt;p data-check-id="961973"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="677069"&gt;而事后的发展变化让大家迅速普及了一个古老的经济学概念：杰文斯悖论。市场迅速达成共识：就算模型变得更聪明，也不会少买英伟达的芯片。DeepSeek 时刻被证伪，一切恢复如常，继续涨涨涨。&lt;/p&gt;&lt;p data-check-id="778249"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="336081"&gt;一年半之后，到了 Moonshot 时刻，叙事标的已经变成了一整条产业链，不再只是英伟达。&lt;/p&gt;&lt;p data-check-id="888188"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="973443"&gt;我琢磨了很久，理解这条链最好的方法，就是把整个 AI 产业想象成一个大餐厅。餐厅的结构如下图：&lt;/p&gt;&lt;p data-check-id="117064"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="563012"&gt;&lt;img data-h="409" data-w="1080" src="https://img.huxiucdn.com/article/content/26-07-20/d3d09e20-e542-4970-b4ec-7cfee5dd5f21.png?imageView2/2/w/1000/format/png/interlace/1/q/85"&gt;&lt;/p&gt;&lt;p data-check-id="725508"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="534322"&gt;如果最顶层的最终需求开始减少，需求就会像多米诺骨牌一样，在整整 7 层里面逐层传导。所以这一次杰文斯悖论要捍卫的东西，比上一次更多更复杂。&lt;/p&gt;&lt;p data-check-id="310451"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="295305"&gt;其实我们只要设身处地地想想终端用户——每一个企业，很容易就能想到：大部分正常的企业在 AI 世界里花钱的节奏和这些大 AI 公司是完全不同的。&lt;/p&gt;&lt;p data-check-id="638759"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="535033"&gt;任何一家普通企业都需要过日子，用多少买多少，要精打细算。更何况，所谓的“大规模企业 AI 应用”还早着呢；而且真到了“大规模普及”那一天，模型就会变得像上个时代的互联网一样，只是一个商品化的、便宜的日常用品而已。&lt;/p&gt;&lt;p data-check-id="110933"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="607277"&gt;再回头看看多方的叙事：要么是在重新定价模型公司护城河，要么就是用工程细节论证硬件只会越买越多。这些观点都没错，只是全都绕开了“终极需求”这个问题。&lt;/p&gt;&lt;p data-check-id="869426"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="851485" label="大标题" class="text-big-title"&gt;四&lt;/h2&gt;&lt;p data-check-id="831618"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="859020"&gt;最后发表一下我的浅薄观点：历史上其实已经有答案了。&lt;/p&gt;&lt;p data-check-id="855034"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="602198"&gt;答案就在杰文斯的煤炭故事里。杰文斯悖论的背景是煤炭行业，它带来了工业革命，煤也确实越用越多，悖论是成立的。可是这么多年的大量煤炭投资，英国工业革命时期收费公路、运河、铁路的资本回报率只有 4% 到 5% 左右，投资人的回报长期低于资本成本。&lt;/p&gt;&lt;p data-check-id="172656"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="329633"&gt;换句话说，煤用的更多，跟投资人赚不赚钱完全是两回事。&lt;/p&gt;&lt;p data-check-id="226597"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="708264"&gt;结果是社会飞速进步了，但大部分投资人买了单。&lt;/p&gt;&lt;p data-check-id="948394"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="416102" label="大标题" class="text-big-title"&gt;五&lt;/h2&gt;&lt;p data-check-id="938406"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="319298"&gt;最近一段时间，我一直在做数据标注和“蒸馏自己”的工作。在这个过程中，我对大模型有了更多感悟，其中最刻骨铭心的一点是：大模型要真的能替代分析师和专家，做出靠谱和优质的分析，必须经过“蒸馏专家”的过程。这个过程并不简单，而且后续必须进行长期的追踪和实时的调整。&lt;/p&gt;&lt;p data-check-id="175007"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="906106"&gt;我们在概念验证的过程中做了一些实时的分析，比如港股解禁前后，MiniMax 和智谱的叙事与价格的分歧；还有眼下正在发生的 Kimi 搅动市场。在这个过程中我也学到了很多，也给了我很多的启发。&lt;/p&gt;&lt;p data-check-id="722563"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="664331"&gt;&lt;a href="https://mp.weixin.qq.com/s?__biz=MzA3NTg4MDUzNQ==&amp;amp;mid=2657094990&amp;amp;idx=1&amp;amp;sn=78a2c1dc1ec65c0a1561f2a89feef5b2&amp;amp;chksm=8540548e9f906d4da2bf498611d1d1132bcd73eebffc5b62245de792421c0f241eddddf117d7&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=07195cAz0IZQYOJ4bOJ67dXa&amp;amp;sharer_shareinfo=8bc09517347eff0f90fb0bf8f3c81f70&amp;amp;sharer_shareinfo_first=5475dc93cca1b2aa1c9512dd7ca43853&amp;amp;version=4.1.27.70423&amp;amp;platform=mac#rd" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Mon, 20 Jul 2026 00:43:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE5XNWVoaVJ4dHY3Tmw3endKZGNDeHotZWJIOXZyMEtDcDZpN0ZqUjg3MldsNUpiVU1nLWhTVHhoV0lqVU5ISzVnN3VyYVdGY1lra050Tg</guid></item><item><title>阿里新旗舰模型Qwen3.8预览：2.4万亿参数，直逼Fable 5和Kimi 3 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777381</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 20 Jul 2026 00:41:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE96WkNOQVE0d0JzRDNxNVNnLWdTak9RQXg4VUU2WXB2RXpCTnB1SmtFcVZ6VjVjN0NjbmozZllNNGF0RjU1aWZmWFp2cEJsRGxHTlp3</guid></item><item><title>AI 发展了4年，把应用发展没了？ - 新浪财经</title><link>https://finance.sina.com.cn/wm/2026-07-20/doc-iniimeam3014815.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -1622,308 +2164,4 @@
                 
 
 
-            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中国网</author><pubDate>Sun, 19 Jul 2026 11:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTE8tQjJfM3YtRHN1YUZ0dFZHM294ck5tQWllbWxpWkhfVTZ4eXhVN3FhaDQxTlJvWDVQeldwN3doVHNhUHFBakd5Sk5fZWVYMGhiTVpyVUI4eVBKRWRaaWkyYldqbVVqT3l3aGdIckNPVQ</guid></item><item><title>摩尔线程MTT C256 超节点亮相WAIC 2026：首创一层Scale-up网络 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137494.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月19日消息，据媒体报道，&lt;strong&gt;在2026世界人工智能大会（WAIC）现场，国产GPU厂商摩尔线程首次公开展出MTT C256超节点。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;该产品采用创新架构，首创单层Scale-up网络，实现标准单宽机柜内128卡全互联，&lt;/strong&gt;&lt;/span&gt;并柜扩展后可达256卡极速互联，有效解决传统多层网络架构中带宽损耗与高延迟的痛点。&lt;/p&gt;
-&lt;p&gt;MTT C256采用计算与交换一体化的高密设计，可显著提升智算中心GPU部署密度，为万卡乃至十万卡级超大规模长稳训练与推理集群打造坚实的算力底座。&lt;/p&gt;
-&lt;p&gt;该超节点具备三大核心优势：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;高密度部署：&lt;/strong&gt;单机柜GPU密度领先，两柜即可实现256卡一层Scale-up全互联，大幅节省机房空间；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;极致互联性能：&lt;/strong&gt;单层Scale-up网络支持256卡全互联，卡间通信延迟压至亚微秒级，带宽利用率更高，为并行策略优化提供更大空间；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;生态兼容性：&lt;/strong&gt;2U节点设计兼容现有智算软硬件生态，支持从万卡向十万卡集群平滑扩展。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;产品主要面向三大应用场景：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;训练（Model Factory）：&lt;/strong&gt;作为十万卡集群核心组件，支撑大模型预训练、后训练与强化学习；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;推理（Token Factory）：&lt;/strong&gt;原生支持大规模MoE架构与百万级超长上下文推理，具备低延迟、高吞吐能力；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;推理解码（Agent Factory）：&lt;/strong&gt;支持高并发场景，单用户输出速度可超100 token/s，适用于AI Coding等对实时性要求极高的应用。&lt;/p&gt;
-&lt;p&gt;MTT C256超节点的真正壁垒，在于背后经过验证的工程化体系。通过高效液冷散热、三盲插设计、完善的RAS机制与集群管理系统，产品在大规模部署下的稳定性与可维护性得到有效保障。这套能力源自摩尔线程在真实万卡级训练环境中沉淀的产品化经验，而非单纯的概念堆砌。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260719/43dee0a2b6fb4996b3b7c902596e5226.png" target="_blank"&gt;&lt;img alt="摩尔线程MTT C256 超节点亮相WAIC 2026：首创一层Scale-up网络" h="385" src="//img1.mydrivers.com/img/20260719/s_43dee0a2b6fb4996b3b7c902596e5226.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 19 Jul 2026 10:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4yNmtJNnVkQm92ck52aWwwODlnQTZvOGZFVGRheXhsV0hjSjZSRFlHejNyeURGTDF2bU1vMDd1M1N6LW13VmxKVzhyQVZqQjlDVHB3emt1UnQ</guid></item><item><title>零刻推出锐龙AI 9 HX 370版ME Pro：双/四盘位NAS 3999元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137481.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;零刻推出锐龙AI 9 HX 370版ME Pro：双/四盘位NAS 3999元起&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-19 18:09:50  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137481-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月19日消息，&lt;strong&gt;零刻推出搭载AMD Ryzen AI 9 HX 370处理器的ME Pro系列NAS迷你主机，提供双盘位与四盘位两种版本，采用DIY抽屉式设计，起售价&lt;span&gt;3999&lt;/span&gt;元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;外观方面，ME Pro采用一体成型金属机身，辅以包布工艺与磁吸散热网罩，配备便捷螺丝刀，兼顾质感与实用性。双盘位与四盘位版本尺寸分别为166 x 121×112mm和166×166×146mm，配色为曜石黑。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260719/ec6e09a4f5dd43658ca5610313964e5e.png" target="_blank"&gt;&lt;img alt="零刻推出锐龙AI 9 HX 370版ME Pro：双/四盘位NAS 3999元起" h="435" src="//img1.mydrivers.com/img/20260719/s_ec6e09a4f5dd43658ca5610313964e5e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;DIY抽屉式结构方便用户自行升级与清灰维护；导热硅胶配合铝支架优化硬盘散热，内置鼓风机风扇增强整机风道，实现高效冷热交换；附赠120W电源适配器。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260719/d9d101077bec468cbaf3d66de7aa74eb.png" target="_blank"&gt;&lt;img alt="零刻推出锐龙AI 9 HX 370版ME Pro：双/四盘位NAS 3999元起" h="354" src="//img1.mydrivers.com/img/20260719/s_d9d101077bec468cbaf3d66de7aa74eb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;核心配置方面，&lt;strong&gt;新品搭载AMD Ryzen AI 9 HX 370处理器，CPU采用Zen 5与Zen 5c混合架构，为4颗Zen 5核心与8颗Zen 5c核心的组合，共12核心24线程，&lt;/strong&gt;加速频率最高5.1GHz，L2+L3缓存总计36MB。集成Radeon 890M核显，基于RDNA 3.5架构，配备16个计算单元。内置XDNA 2架构NPU，AI算力达50 TOPS。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260719/6a19d3c948e0480ea8f6e0aade1c74f3.png" target="_blank"&gt;&lt;img alt="零刻推出锐龙AI 9 HX 370版ME Pro：双/四盘位NAS 3999元起" h="404" src="//img1.mydrivers.com/img/20260719/s_6a19d3c948e0480ea8f6e0aade1c74f3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;存储与扩展方面，主板提供双SO-DIMM插槽，支持DDR5-5600内存；配备三个M.2 2280插槽，其中两个为PCIe 4.0 x4通道，一个为PCIe 4.0 x1通道。&lt;/p&gt;
-&lt;p&gt;硬盘位方面，&lt;strong&gt;双盘位和四盘位版本分别提供2个和4个2.5/3.5英寸SATA硬盘位，单盘位机械硬盘最高支持30TB。无线连接支持Wi-Fi 6与蓝牙5.4。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;接口方面，前面板设有一个USB 10Gbps Type-A接口；后置接口包括一个USB 40Gbps Type-C、两个USB 10Gbps Type-A、双网口（10GbE + 2.5GbE）、一个HDMI 2.1 TMDS（支持4K@60Hz）以及一个3.5mm音频插孔。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="3999元" goods_title="零刻「AI时代 存储先行」ME Pro两盘位 AMD锐龙AI 9 HX370大存储电脑72TB静音AI PC万兆网口迷你主机 曜石黑 准系统(无内存硬盘系统)" href="https://dt.mydrivers.com/mv.ashx?txt=mXpaM" img="https://img14.360buyimg.com/pop/jfs/t1/483578/1/3296/56618/6a59daacFb3b605ba/0083320320c03886.jpg" target="_blank"&gt;京东(3999元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260719/e696fe9e72fb4b049e6609f629f336fe.png" target="_blank"&gt;&lt;img alt="零刻推出锐龙AI 9 HX 370版ME Pro：双/四盘位NAS 3999元起" h="426" src="//img1.mydrivers.com/img/20260719/s_e696fe9e72fb4b049e6609f629f336fe.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 19 Jul 2026 10:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8zMzk1MHN3NU9YcHp6WUxSbjY3cnFLWjZ0cFhsNDBTT0g5b3otVEEtNmhHUXd6WGhOVEpselpkYjJod254WHcwSnlyM0xqSU5FaGlScnI3d1A</guid></item><item><title>40枚弹道导弹，射向基辅 - 凤凰网</title><link>https://news.ifeng.com/c/8utHnLnhGdR</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;据央视军事，当地时间19日，乌克兰空军通报称，自18日18时起，俄军使用了无人机和多种类型导弹对乌克兰进行了大规模的联合打击，主要攻击方向是乌克兰首都基辅。乌克兰空军的雷达部队共记录了166个空中攻击目标，包括41枚导弹和125架各种类型的无人机。&lt;/p&gt;&lt;p&gt;&lt;img alt="图片" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/908D8990310258DB655163B9865A4954EB092FE2_size147_w963_h692.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;据乌克兰方面消息，当日凌晨，俄罗斯武装力量对基辅发动了双方冲突升级以来最密集的一次弹道导弹袭击，40分钟内向基辅发射了约40枚弹道导弹，包括“伊斯坎德尔-M”“锆石”等型号导弹。截至目前基辅市及基辅州已有1人死亡、16人受伤。&lt;/p&gt;&lt;p&gt;俄罗斯国防部19日发布通报称，当天凌晨，俄联邦武装力量使用空基、陆基高精度武器及攻击型无人机，对乌克兰基辅市及基辅州的军事工业企业和物流中心，以及敖德萨州南方港的基础设施目标发动了大规模打击。俄国防部称，这些目标被用于接收和储存军用货物，以及保障乌克兰武装部队所需的燃油润滑油料。&lt;/p&gt;&lt;p&gt;来源：央视军事（记者 王晋燕 王德禄）、中国新闻网&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sun, 19 Jul 2026 09:53:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9TNTVhLTVYYzBzQl9CblhHODhlRTh3Mk5yZjlrckpISlRDc2F0aFZmMDkxek8xMkp3NUJuQ2drNDRCMFFBQ0drYTVydEQ</guid></item><item><title>反对大举兴建数据中心 全美42州爆发百多场抗议活动 - 联合早报</title><link>https://www.zaobao.com.sg/news/world/story20260719-9387232</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（华盛顿综合电）面对人工智能（AI）需求增长，全美各地近来大举兴建数据中心。反对人士周六在全美42州发起142场抗议活动，表达对AI基础设施迅速扩张的不满。&lt;/p&gt;&lt;p&gt;发起这波全国性抗议的“人类优先”（Humans First）联合创办人、美国茶党运动前领袖克雷默主张，数据中心“不受问责”地在全美各地迅速扩建，对民众自由的侵犯“不可接受”。&lt;/p&gt;&lt;p&gt;路透社报道，反对建设数据中心是少数跨越意识形态分歧、让美国人达成共识的议题之一。但克雷默说，针对数据中心的愤怒情绪不带党派色彩。她还预测，这将成为11月中期选举及2028年总统大选中的关键议题。&lt;/p&gt;&lt;p&gt;虽然克雷默曾大力抨击共和党高层给了大型科技公司一张“免死金牌”，但她强调，不主张效法民主党执政的纽约州推动的“全面禁建令”，而是建议将决策权还给当地居民。&lt;/p&gt;&lt;p&gt;路透社与益普索（Ipsos）6月进行的民调显示，仅三分之一的美国人认可美国当前的数据中心建设速度；对于在自家社区建设数据中心以支持Meta、Alphabet、亚马逊、微软和马斯克旗下xAI等科技公司的AI项目，则仅14%的受访者表示支持。&lt;/p&gt;
-    
-  &lt;p&gt;民众普遍担忧的因素包括水资源过度消耗、电费飙涨、噪音污染以及农地与野生动物栖息地流失。&lt;/p&gt;&lt;p&gt;代表美国数据中心产业的行业协会“数据中心联盟”负责人莱维发表声明说：“数据中心行业正持续与政策制定者、利益相关方及当地居民合作，确保数据中心能为所在地区带来助益而非造成负担，同时减轻对居民家庭及企业可能产生的负面影响。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Sun, 19 Jul 2026 09:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBQN1diZkhMTXVRU0dRTzVxdzNnekpqbG9ZMXNUeExzRTlwaE5UdjlObDFSOF9nYk5NQzd6NWUtdWJoMWl3TFZXVWdPb0JHWHpLNnZJU2JJTWtjc3ladWlwczdYY05ZTGNhNWc</guid></item><item><title>中国科学院院士：三大需求倒逼算力从地面走向太空 - 观察者</title><link>https://www.guancha.cn/economy/2026_07_19_824321.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	7月18日，由世界人工智能大会组委会办公室指导，中国信息通信研究院（以下简称“中国信通院”）承办、中国信通院华东分院协办的“从大模型到智能体：迈向自主智能新纪元”论坛在上海西岸国际会展中心举办。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/07/18/20260718234731642.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	论坛以“智体融合 智启新元”为主题，汇聚政产学研用各界代表，围绕智能体技术演进、标准化建设与行业落地路径展开深度研讨，近50位海内外AI领域重磅嘉宾分享洞见，超800位行业同仁现场参会。
-&lt;/p&gt;
-&lt;p&gt;
-	工业和信息化部科技司副司长甘小斌致辞表示，智能体已成为培育新质生产力的核心变量。2025年我国人工智能核心产业规模已超1.2万亿元，企业数量超6200家，基本形成覆盖技术层、框架层、模型层和应用层的完整产业生态。下一步，工信部将围绕做实发展底座、做深行业应用、做强安全治理、深化国际合作四个方向，推动智能体在重点领域深度落地。
-&lt;/p&gt;
-&lt;p&gt;
-	上海市徐汇区委常委、副区长郑长林表示，徐汇2025年在全市率先出台智能体产业专项政策，目前已集聚人工智能企业超2000家，备案大模型98个、占全市六成，核心产业规模突破千亿元，下一步将聚焦核心技术协同、标准底座共建、全域场景开放与产业生态治理，做强智能体创新优势。
-&lt;/p&gt;
-&lt;p&gt;
-	中国信通院院长余晓晖提出，人工智能正由大模型驱动迈向智能体发展新阶段：从模型能力向系统能力演进，AI从“回答问题”走向“解决问题”；从静态学习向动态进化演进，智能体交互数据正反哺模型进化；从单点智能向协同智能演进，能力边界拓展至人机协同的智能网络。他表示，中国信通院将持续加强智能体标准体系与评测能力建设，推动智能体在真实场景规模化应用。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;五大成果集中发布 筑牢产业发展底座&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	论坛集中发布五项智能体领域标志性成果。《智能体互联互通协同发展与治理倡议》由中国信通院华东分院携手华为、蚂蚁集团、阿里巴巴、云天励飞、上海移动、上海电信、联通数智等十余家机构共同发起，围绕标准引领、权责清晰、开放包容、生态共建四方面，呼吁共建规范有序、安全可信的开放生态。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/07/18/20260718234751790.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	《2026智能经济新形态：智能体创新实践汇编》同期发布。该汇编今年4月启动全国征集，累计收到超300项实践，最终收录116个标杆案例，覆盖基础技术、行业应用、终端产品、互联网、创新生态五大方向；《互联网智能体发展研究报告》首发，首次构建可信互联网智能体评估体系。
-&lt;/p&gt;
-&lt;p&gt;
-	智能体安全可信互联协议（ASL）由中国信通院携手蚂蚁集团联合比亚迪、吉利、科大讯飞、小米、商汤科技等二十余家伙伴共同发布，为跨Agent协作建立可验证、可传递、可约束、可审计的端到端信任链。终端智能体评测平台全国首发暨生态共建计划同步启动，覆盖AI PC、AI手机等多类型终端，推动终端智能体规范可持续发展。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;顶尖学者齐聚 前瞻自主智能演进趋势&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	主旨演讲环节，中国科学院院士王建宇从太空视角切入，提出“计算上天”已是大势所趋：实时业务响应、超大规模星座管理与遥感数据爆炸三大需求，正倒逼算力从地面走向太空，“未来每一颗卫星都可能成为一个智能体”。
-&lt;/p&gt;
-&lt;p&gt;
-	加拿大工程院外籍院士、智象未来创始人梅涛分享了一组数据：Anthropic年收入半年增长6倍，智谱ARR仅用五个月从1亿美元增至10亿美元，OpenRouter平台日Token消耗量从2万亿跃升至7万亿。他判断，智能体已从工具进化为可交付任务的“数字员工”，原生全模态世界模型将推动AI从生成内容走向改变世界。
-&lt;/p&gt;
-&lt;p&gt;
-	中国人民大学高瓴人工智能学院教授曾毅从安全伦理角度警示：当前大模型“善恶兼修”，其负面行为均能在人类数据中找到源头。团队构建的“前瞻安全基准”评测显示，即便最安全的模型攻击成功率仍有7%左右，单智能体平均攻击成功率高达47%。他强调，绝对安全在数学上难以实现，但伦理安全本身就是AI稳健发展的核心能力。
-&lt;/p&gt;
-&lt;p&gt;
-	中国信通院云计算与数字化研究所副所长栗蔚系统阐释了“智能体互联网”图景：AI流量已占互联网总流量约六成，智能体已成为与网站、APP并列的第三类互联网信息服务，未来智能体将向群体智能演进。英国标准协会全球AI及数字化解决方案业务董事总经理Omkar Joshi也围绕构建全球数字信任体系发表了演讲。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;葛均波院士特别对话：智能体是助手，而非替代者&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	论坛特别增设“特别对话”环节，中国科学院院士、复旦大学附属中山医院心内科主任葛均波与魏凯所长展开对谈。葛均波表示，医疗是对容错率要求最严苛的领域，“沙发造错了可以校正，人多缝一毫米、少缝一毫米都不行”，智能体进入诊室后必须明确定位为医生的助手，而非未经监督的决策者。他认为，心电图、超声影像、冠状动脉造影等流程标准化程度高的环节将最先落地，并直言“未来不会使用人工智能的医生，一定会被会使用人工智能的医生取代”，但智能可以提供效率，不能取代医生的责任与担当。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/vcg/2026/07/18/20260718234812709.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;产业领袖同台 见证一线落地实践&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	产业实践环节，蚂蚁集团副总裁陈亮指出，决策黑盒、协作孤岛、治理真空正成为智能体进化的三大信任瓶颈，唯有以原生安全重塑运行基因、以可信协议实现互联，才能支撑规模化落地。中国联通首席科学家廉士国给出务实方法论：实体经济场景试点项目仅5%真正创造价值，联通以模型高性价比选用、全栈智能体开发工具和端到端方案三管齐下，模型选用性价比提升40%以上，技能开发效率提升两倍以上。
-&lt;/p&gt;
-&lt;p&gt;
-	阿里巴巴达摩院科学智能负责人荣钰展示了“专通融合”科研智能体平台：其细胞世界模型在全球虚拟细胞挑战赛综合排名第一，超导发现系统从240万种晶体中筛选出6.2万个候选，其中4个经实验验证具有超导性。云天励飞董事长陈宁提出“1001计划”——百万Token成本两年内从1元降至1分钱，2030年实现百亿Token1分钱，“只有Token像水和电一样存在，才是工业革命的拐点”。
-&lt;/p&gt;
-&lt;p&gt;
-	中数睿智创始人韩涵、网易有道高级副总裁刘韧磊、云知声CEO黄伟、奕行智能首席AI官石贤帅、阿里巴巴资深技术专家谢吉宝、迈富时AI首席科学家梁铮也分别从因果世界模型、办公智能体、医疗大模型、芯片研发智能体、数字员工“工位”与智能体基建等角度，呈现了智能体从实验室走向产业一线的蓬勃活力。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;跨界圆桌思辨 直面产业化真问题&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	压轴圆桌由魏凯主持，上海人工智能实验室领军科学家乔宇、清华大学教授聂再清、阿里巴巴达摩院院长助理季磊围绕“智能体：从科研突破到千行百业价值落地”展开对话。乔宇认为，过去一年智能体发展超出预期，但长程任务可靠性、评测标准与Token成本三大挑战不容忽视，基础模型与智能体工程协同演进将是下一阶段的关键趋势。聂再清透露，其团队研发的全原子抗体设计智能体实现21%的湿实验成功率，“未来每一个好药都将是老法师与AI共同完成的”。季磊介绍，达摩院与杭州某区级卫健合作三个月筛查十万例CT影像，确诊223例肿瘤，其中48例为早期胰腺癌患者，“轻量化、高价值地嵌入已有工作流，比炫技更重要”。
-&lt;/p&gt;
-&lt;p&gt;
-	今年是中国信通院深度支撑世界人工智能大会的第九年。从大模型创新到智能体产业化探索，中国信通院持续发挥智库优势，推动标准体系建设、评测能力升级与产业生态构建。未来，中国信通院将继续携手各界生态伙伴，以体系化研究与产业赋能为智能经济发展注入新动能，助力上海加快建成全球科创中心，共同构建开放共赢的智能体产业新生态。
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Sun, 19 Jul 2026 09:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE9kTVk1OW1aUHdwR2J3MHlkRDBtZElDTDI4STZMcFo3Z05ROFZyYXpuYnZ3ZnF6RmktY2RNYU9vSTZydnR5NlhOSl85T29pTW9TMGtpSFpybzg2c0tuZWFkR2dqXzM</guid></item><item><title>K3之后又一重磅国产大模型Qwen-3.8 Max：2.4万亿参数超越DSV4 Pro - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137460.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月19日消息，国产大模型最近像是过年一样，Kimi K3给美国AI行业一点小小的震撼还没结束，DeepSeek V4正式版这两天也应该发布了， 千问马上也要发力，Qwen-3.8 Max来了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;千问官网上已经有Qwen-3.8 Max的Token Plan了，目前也是Preview预览版。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260719/07354600-0393-453f-96ca-45857f0c5bef.png" target="_blank"&gt;&lt;img alt="K3之后又一重磅国产大模型Qwen-3.8 Max：2.4万亿参数超越DSV4 Pro" h="218" src="//img1.mydrivers.com/img/20260719/S07354600-0393-453f-96ca-45857f0c5bef.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Qwen-3.8 Max看介绍是最新一代基座模型，参数量达到了2.4T，&lt;span&gt;&lt;strong&gt;也就是2.4万亿，在代码工程、专业办公、深度推理等核心场景下全面领先。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;至于性能具体有多强，目前还没看到跑分或者实测，但2.4万亿的参数量是目前仅次于K3的存在，而且差距不大，理论上性能上限也非常高，只要后训练不掉链子，估计性能也能跟Fable 5掰掰手腕，总体达到Opus 4.8级别应该问题不大。&lt;/p&gt;
-&lt;p&gt;4月份DeepSeek V4发布时，Pro版的参数量达到了1.6万亿，考虑到之前大部分国产大模型还在几千亿参数量级别，当时以为国产大模型也就这个级别了，没想到不到3个月时间，V4 Pro目前是国产旗舰大模型中参数量最低的了。&lt;/p&gt;
-&lt;p&gt;目前Kimi K3做到了2.8万亿，Qwen-3.8 Max这次是2.4万亿，MiniMax还有个M3 Pro，参数量预计是2.7万亿，这三家成功进入了2-3万亿大模型俱乐部。&lt;/p&gt;
-&lt;p&gt;至于DS V4 Pro的1.6万亿，虽然规模变成了几家公司中最小的，但大家也不要盲目迷信参数量，后训练做的好的话，1.6万亿参数的大模型能力也一样很能打，别忘了智谱的GLM-5.2也就是7400多亿的参数量，编程能力上也是顶尖水平的。&lt;/p&gt;
-&lt;p&gt;智谱接下来还有GLM-5.3或者GLM-5.5大模型推出，参数量也会提升到万亿以上，值得期待。&lt;/p&gt;
-&lt;p&gt;国产几家大模型公司的参数量追到了3万亿级别，这也意味着他们的算力资源有明显提升，训练能追上来，目前的问题主要集中在后期部署的推理算力还不太够用，GLM-5.2及这两天大热的Kimi K3还有服务可用性的问题，后续依然要提升推理算力。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260719/028392d9-7765-4289-a051-9752b5983e3c.png" target="_blank"&gt;&lt;img alt="K3之后又一重磅国产大模型Qwen-3.8 Max：2.4万亿参数超越DSV4 Pro" h="373" src="//img1.mydrivers.com/img/20260719/S028392d9-7765-4289-a051-9752b5983e3c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 19 Jul 2026 09:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE10el93V2lrMWZQTEFVSkUzU0tjaVVuRWFjNkF2SkhUOFBldXZfNGg5cEpDclR0UDFDc0lkVHNRMXNZVnNaM0JucWVLMFNfMFhwdHBYaG5mNG4</guid></item><item><title>AI跑二十分钟就能汉化开发者都懒得做是不是不重视中国玩家_游戏大杂烩 - 游民圈子</title><link>https://club.gamersky.com/activity/1586725</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="qzcmt-content-txt GSContent"&gt;
-&lt;p class="GamerSkyEditor Section"&gt;最近看到一款比较冷门的独立游戏，本来还挺感兴趣，支持八九种语言，就是没有简体中文。&lt;/p&gt;&lt;p class="GamerSkyEditor Section"&gt;话说现在AI这么发达，直接把游戏文本丢给AI，让它帮忙翻译。前后也就二十来分钟，花了几块钱的Token，一份能正常玩的中文文本基本就出来了。&lt;/p&gt;&lt;p class="GamerSkyEditor Section ImageSection"&gt;&lt;a class="ImageBox" contenteditable="false" target="_blank"&gt;      &lt;img class="Image" src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" data-size="710x559" imagewidth="710" imageheight="559" sourceimageurl="//img1b.gamersky.com/users/clubcontent/2026/07/19/origin_6360286_2959992.jpg" data-origin="//img1b.gamersky.com/users/clubcontent/2026/07/19/origin_6360286_2959992.jpg" data-large="//img1b.gamersky.com/users/clubcontent/2026/07/19/origin_6360286_2959992.jpg" listimageurl="//img1b.gamersky.com/users/clubcontent/2026/07/19/tiny_6360286_2959992.jpg" contentimageurl="//img1b.gamersky.com/users/clubcontent/2026/07/19/small_6360286_2959992.jpg" data-pictype="jpg" data-src="//img1b.gamersky.com/users/clubcontent/2026/07/19/small_6360286_2959992.jpg"&gt;      &lt;/a&gt;&lt;span class="Caption"&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class="GamerSkyEditor Section"&gt;所以我就在想，现在AI工具已经这么成熟了，开发者哪怕只是做个基础汉化，成本和时间都不算高吧？尤其是连一些用户非常少的语言都做了，却唯独没有中文，多少会让人觉得并没有把国内玩家放在心上。&lt;/p&gt;&lt;p class="GamerSkyEditor Section"&gt;当然用AI这件事，玩家自己用没什么问题，但官方要把AI机翻直接塞进游戏里，出了问题难免还是要被吐槽。&lt;/p&gt;                            &lt;/div&gt;
-                            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>游民圈子</author><pubDate>Sun, 19 Jul 2026 08:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE9uUnJtb0lzZ1NpYWp1MVZMUjBjQzRpYWJLTmxGZExmOWkzSXhERWJLU3k5RS0wXzJLajVKUnJvdUVIOHpNM21Rd0JmbF9SQnpiMG1LRQ</guid></item><item><title>英伟达：从“一次性训练”的大模型到“后训练改进”的Agent，算力需求正在变化 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777356</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 19 Jul 2026 08:45:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9iRURCZF9HZFlvR1FtcWwwQUpvNzhUSDA2MW9FRFduT1hhcWh4eUVzdGJMNV9LOXo3SFlWV0xIS25SdHZxUkZXSDlWSFNqRC1SUzNn</guid></item><item><title>不再依赖微软Office 德国将办公文档标准定为ODF：开放的才安全 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137458.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;不再依赖微软Office 德国将办公文档标准定为ODF：开放的才安全&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-19 16:40:44  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137458-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月19日消息，微软手中除了Windows系统这个王牌之外，还有一个核心武器就是Office，几乎主导了办公软件市场，但是德国决定转向开放的ODF文档。&lt;/p&gt;
-&lt;p&gt;根据德国政府公布的信息，该国正式将政府办公文档的标准格式统一为ODF（OpenDocument Format，开放文档格式），&lt;span&gt;&lt;strong&gt;彻底将微软OOXML 格式（.docx、.xlsx、.pptx 等）排除在官方标准之外。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;文档标准转向开源开放的ODF是德国近年来加强数字主权的一部分，从基础的IT数据中心、云计算平台，再到各种应用软件、办公软件，德国及多个欧盟国家都在加快转向，减少对美国的技术依赖，转向更加开放的生态，比如用Linux取代Windows等。&lt;/p&gt;
-&lt;p&gt;这次ODF标准取代微软Office文档标准，&lt;strong&gt;将影响德国540万公务员的办公习惯，预计在2027年内实现迁移&lt;/strong&gt;，而德国的IT供应商、系统集成商也需要为ODF标准做深度适配。&lt;/p&gt;
-&lt;p&gt;不仅如此，德国还在开发名为OpenDesk 的主权开源办公套件（基于开源项目），目标就是彻底替代Microsoft 365办公生态。&lt;/p&gt;
-&lt;p&gt;虽然Office软件本身也能支持ODF文档标准，但微软跟开源行业的技术是不一样的，无法做到完美兼容，这次的标准更改不一定能对微软造成多大负面冲击，但Offfice以往无比顽固的生态肯定会有所松动。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260719/8d65d6ee0d5c4a808741652e24c2d0c7.jpg" target="_blank"&gt;&lt;img alt="不再依赖微软Office 德国将办公文档标准定为ODF：开放的才安全" h="359" src="//img1.mydrivers.com/img/20260719/s_8d65d6ee0d5c4a808741652e24c2d0c7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 19 Jul 2026 08:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBocnlaLU90cWZ1NHdkSlBTYUo1Z2F2NzRVWnpBYzh4V1dzMGVyTzZXQkwtdnBBQk0xSmNISkhFelUzUU5xeEtITWpNcDRhVWVMck9HQ0FWYlA</guid></item><item><title>16:30:58【新易盛：上半年净利同比预增78%-103% 受益于人工智能相关算力投资持续增长产品结构优化】 - 财联社</title><link>https://www.cls.cn/detail/2430489</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40"&gt;&lt;p class="m-b-15 f-s-40 f-w-b l-h-125"&gt;新易盛：上半年净利同比预增78%-103% 受益于人工智能相关算力投资持续增长产品结构优化&lt;/p&gt;&lt;p class="m-b-15 f-s-20 l-h-34p c-de0422"&gt;财联社7月19日电，新易盛(300502.SZ)公告称，预计2026年半年度归属于上市公司股东的净利润为70.00亿元-80.00亿元，同比增长77.56%-102.93%。业绩变动主要系受益于人工智能相关算力投资持续增长，产品结构优化，公司销售收入和净利润较上年同期大幅增加。小财注：公司Q2净利润预计42.2亿-52.2亿，Q1净利润27.8亿，据此计算，Q2净利润预计环比增长51%-87%。&lt;/p&gt;&lt;/div&gt;&lt;p class="m-b-30 f-s-14 l-h-142857 c-999"&gt;免责声明：本文内容与数据仅供参考，不构成投资建议，更不代表财联社观点，使用前请核实。稿件基于人工智能辅助处理，编辑人工审核亦不能保证绝对无差错。如有投资者据此操作，风险自担。&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Sun, 19 Jul 2026 08:36:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE9fakE0V1UxOUNiMzE1Z1cwelBiUEx3Sk03eTllSU5jTFRmaXRIc2d4RDJ2UTlhb1l1LU5HZWpDblhWV255dXN1Sg</guid></item><item><title>韩驻华科创机构建议韩企多赴华参加科技展会 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260719-9387137</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;韩国科学技术信息通信部旗下全球创新中心（KIC中国）建议韩企多赴华参加科技展会，实地了解中国技术和产业发展的最新动向。&lt;/p&gt;&lt;p&gt;据韩联社报道，KIC中国代表金钟文星期六（7月18日）在接受采访时表示，中国科创能力快速提升，市场竞争日趋激烈，韩国企业应主动参加世界人工智能大会等中国主要科技展会。&lt;/p&gt;&lt;p&gt;第八届世界人工智能大会于17日至20日在上海举行，展览面积超过10万平方米，吸引1100余家企业参展，展出3000余个产品。KIC中国组织八家韩国中小企业参展，这是韩国AI企业首次组团亮相世界人工智能大会。&lt;/p&gt;&lt;p&gt;金钟文指出，韩国企业亟须对标全球及中国市场，尽快摸清自身技术所处水平。参加此类展会是能对标优劣、盘点韩方优势技术与拳头产品的重要途径。&lt;/p&gt;&lt;p&gt;他说，韩国企业如果脱离中国产供链体系，很难维系市场竞争力。企业需要低成本快速打样、迭代测试产品，仅凭韩国现有的研发和生产速度，恐难适应当前市场竞争节奏。他强调，中国技术实力快速提升，相关企业数量众多，韩国业界必须正视中国市场的激烈竞争环境。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Sun, 19 Jul 2026 08:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE16U1U1N1d4MzB1eVZQNG9wMUhlNWJrX2VXV0podmZTelpRZ2EwMkpDLVdMMU9MOU5FcTNFUXFmMmFiWmxOYmlSNFJGdVpQVk9iRV9qNGFXWE1CNFU5cFFqY0hMalJiT28wb2c</guid></item><item><title>蔡磊荣获2026年度AI特别贡献人物：现场用眼控打出一段文字 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137454.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月19日消息，据央视新闻报道，昨日，《2026中国AI盛典》暨《全球智惠平台·AI语料场景合作清单》启动仪式在上海举行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本次盛典揭晓了“年度AI特别贡献人物”和10位“年度AI人物”，其中蔡磊荣获2026年度AI特别贡献人物。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;29岁渐冻症女孩小刘来到了AI盛典现场，作为蔡磊团队推动的新药RAG-17的受试者，她在主持人的搀扶下缓缓站了起来，而在两年前，她还只能靠轮椅出行。&lt;/p&gt;
-&lt;p&gt;随后，小刘邀请蔡磊现场连线与大家分享近况，蔡磊则用眼控打字与观众交流。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;他写道：“身体确实比较艰难，但心中却希望越来越大，因为在这个科技爆发、AI跃迁的伟大时代。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;蔡磊表示：“6年多来，我的决心和行动从未改变，哪怕最后穷尽一切办法，依然失败，我也要‘打光最后一颗子弹’……当人类向善的初心遇上科技的力量，必将燃起不可磨灭的火炬，凿穿渐冻症两百年的坚冰。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260719/255e6476-e8d4-4336-b56b-0a07307b8b53.png" target="_blank"&gt;&lt;img alt="蔡磊荣获2026年度AI特别贡献人物：现场用眼控打出一段文字" h="783" src="//img1.mydrivers.com/img/20260719/S255e6476-e8d4-4336-b56b-0a07307b8b53.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;2019年9月，蔡磊确诊渐冻症，当时的他还是京东副总裁，41岁，刚刚有了孩子；而大多数渐冻症患者的平均生存期为2-5年，一旦患病，无法逆转、无药可治。&lt;/p&gt;
-&lt;p&gt;2025年，蔡磊团队通过与全球60多个顶尖科研团队深入交流，与50多家生物科技公司以及十余家医院深度合作，推动了近百个渐冻症科研合作项目，助力15个药物管线及治疗技术实现临床转化突破。&lt;/p&gt;
-&lt;p&gt;此外，蔡磊团队还借助人工智能，首次发现并通过临床前实验合作重复验证，确认存在临床前动物模型上治愈渐冻症的可能路径，包括通过骨髓移植彻底免疫重建等办法。&lt;/p&gt;
-&lt;p&gt;本月稍早前，有媒体报道称，&lt;strong&gt;蔡磊牵线开展研发的一款国产渐冻症药物，已完成二期临床试验，明年有望上市，而这也是我国首款完全自主设计研发的SOD1基因突变型渐冻症药物。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;该药的治疗原理可以简单理解为，用药物“封印”住SOD1基因，从根源上掐断致病链条。&lt;/p&gt;
-&lt;p&gt;目前，该药物的首批临床数据已获得国际权威认可：首批6位试验患者用药240天后，脑脊液中的坏蛋白水平降低了56%到69%，血液中的神经损伤“警报信号”降低了一半多，病情被按下了“暂停键”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;新药在理论上有效期更长，半年甚至一年以上打一针即可，同时纯国产原研，未来在价格上也会更有优势。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过遗憾的是，蔡磊本人不属于SOD1基因突变型渐冻症，无法从这款药中直接受益。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 19 Jul 2026 08:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5tM1MzRGJkWGpfN2pBM0h5TmJQdktUdzdDd043c2lzTHdGT1RXRzcybXF2ek1sVklDRV9hQ3A5M1M2cG8xWGdWVndLeUxXVHk0MlB3Tl9aamQ</guid></item><item><title>一亿小时，通往物理AI的涌现时刻 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777354</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 19 Jul 2026 07:56:56 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9NS2ZXWlhTcjU0Rm1sNW1qRExpUHYzWDlCQkgydUJfWXVQN1R2Xy13bDJaV2hyQTRWU05XMGExbjRWbFJFZGNtU0pzVDlkQm9HUDU4</guid></item><item><title>影石首款M43微单完整信息曝光！专为视频博主打造的入门新机 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137452.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月19日消息，&lt;strong&gt;近日，多位科技博主曝光了影石首款M43画幅微单Insta360 Z-ONE的详细信息，新机预计秋季正式发布。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;而这标志着影石产品线再次拓展，从全景相机、云台相机延伸到可换镜头微单赛道，完整覆盖创作者全品类拍摄设备。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;据爆料，新机整机搭载了索尼IMX472传感器，标准M43画幅，拥有2000万像素，单像素尺寸达到3.3μm，大像素底子带来更出色的暗光拍摄能力。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;机身泽支持双增益HDR，同时兼容10bit、12bit高色深视频录制，后期调色空间充足，完全适配自媒体剪辑需求。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;此外，镜头卡口采用通用M43规格，市面上的松下、奥林巴斯全系列M43镜头都能直接适配，老玩家们的镜头群可无缝复用。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在视频拍摄规格方面，新机原生支持5K 121fps高规格录制，日常创作4K 120fps慢动作视频也能稳定输出，不管是日常vlog记录、户外旅拍，还是短视频剧情拍摄都能满足。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;而机身操作结构做了针对性优化，配备上翻式触控屏幕，取消电子取景器EVF，机身前后配备双操控拨轮，搭配顶部热靴接口，可以外接麦克风、补光灯各类外设。&lt;/p&gt;
-&lt;p&gt;在防抖方面，新机搭载影石成熟的FlowState防抖技术，行走、骑行、跑动拍摄画面都能保持平稳。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;值得注意的是，机身还内置了全套AI创作工具，自带专属色彩优化算法，省去大量后期调色步骤，直出成片氛围感更强，降低剪辑门槛。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;据了解，这款M43微单精准对标索尼ZV-E10二代、松下S9，是专为视频博主打造的入门级可换镜头机型。&lt;/p&gt;
-&lt;p&gt;而全新品类的落地意味着品牌需要重新打磨微单系统调校、镜头适配等细节，不过，整机的实际成像、操控体验还需要正式发售实测才能确认完整表现。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260719/8bebba75-ffb7-421d-8390-98f63c694105.png" target="_blank"&gt;&lt;img alt="影石首款M43微单完整信息曝光！专为视频博主打造的入门新机" h="800" src="//img1.mydrivers.com/img/20260719/S8bebba75-ffb7-421d-8390-98f63c694105.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 19 Jul 2026 07:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE54Qk9CS2l6TTFMRnNpNWxvckR1RTU3XzIxWXVLNGhsUXY1SGtWUWVtcDJrc1djZEtNTDhXdHRVLUozbkF0ZTJtZmhVQmR3Z0EyVjRsWmhzWWU</guid></item><item><title>俄罗斯为何“拦不住无人机”？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777350</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 19 Jul 2026 07:28:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5sLXBVNkwtOV9Ob3lDcjNCWlFpTnhHRG51WjJ0Vzl6amE2LVBPNlZmWHJybk8zOVFMUDd2QjJ1T2NTZFZ4dlV2SzNnRTdWbTZLUmk0</guid></item></channel></rss>
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>中国网</author><pubDate>Sun, 19 Jul 2026 11:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMib0FVX3lxTE8tQjJfM3YtRHN1YUZ0dFZHM294ck5tQWllbWxpWkhfVTZ4eXhVN3FhaDQxTlJvWDVQeldwN3doVHNhUHFBakd5Sk5fZWVYMGhiTVpyVUI4eVBKRWRaaWkyYldqbVVqT3l3aGdIckNPVQ</guid></item></channel></rss>
