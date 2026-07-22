@@ -1,5 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>预算又不够了！英伟达上调Jetson全线价格：最高翻倍 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138148.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>亚太股市集体冲高，韩股涨幅扩大至6%、SK海力士涨7%，日股涨超1% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777614</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 05:36:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE0wR3hrenBtaFFUZ2xZWFM2Qkc4aUxfc3loRnNJNVhweXVHZFZCVGdxUGRrODNFRlRGRmF2SmRINk14Q0g3VjRweTJlNWN5cFBPanJR</guid></item><item><title>22分钟详解DLSS 5：NVIDIA公开回应一切争议 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138182.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，&lt;strong&gt;&lt;span&gt;NVIDIA在SIGGRAPH 2026大会上长达一小时的演讲中，用了整整22分钟详细展示了DLSS 5的技术细节，&lt;/span&gt;&lt;/strong&gt;系统性地回应了有关DLSS 5争议，重点展示了开发者对AI渲染画面的全面控制能力。&lt;/p&gt;
+&lt;p&gt;在今年春季，DLSS 5公布后引发了不小的争议，玩家和工作室担心这项技术会像一个AI美颜滤镜一样，改变精心设计的画面和氛围。&lt;strong&gt;应用深度学习研究总监Edward Liu在演讲中没有直接提及这场风波，但22分钟的演示毫无疑问以消除这些争议为核心目标。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/4ae86dc6-248e-4224-a0fd-96d8985df64e.jpg" target="_blank"&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/S4ae86dc6-248e-4224-a0fd-96d8985df64e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Liu将DLSS 5面临的核心挑战定义为在看起来更真实和忠于原始内容之间取得平衡，&lt;strong&gt;他强调，"Creator Intent"（创作者意图）在任何时候都不应被破坏。&lt;/strong&gt;DLSS 5以引擎渲染的原始画面为基础，逐像素对应的就是创作者意图本身。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/d37782dd-8391-4735-96d9-2b69f54b2028.jpg" target="_blank"&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/Sd37782dd-8391-4735-96d9-2b69f54b2028.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Liu指出，给十个生成式AI模型同一张图片作为输入，会得到十个不同的结果，DLSS 5面临的挑战更大，因为所有调整都必须在实时进行：玩家看到的画面就是DLSS 5输出的画面，必须做到精准无误。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为此，NVIDIA在训练模型时将“尊重创作者意图”置于最高优先级，模型需要理解哪些元素必须保留，&lt;/strong&gt;Liu举例称，角色脸上的疤痕不会消失，但会看起来更真实。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/Sd5e2116c-3696-42e4-8517-17836bf933b0.jpg" w="600"&gt;&lt;br&gt;
+DLSS 5需要锁定的关键元素&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NVIDIA在演讲中展示了DLSS 5需要锁定保留的关键元素，包括角色身份、对象语义、姿态、光照语义、运动和艺术方向。&lt;/strong&gt;这些维度构成了创作者意图的骨架，AI模型在增强画面时不得越界。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/9c1863c9-5fec-4519-b4ba-a0ebfb0e946d.jpg" target="_blank"&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/S9c1863c9-5fec-4519-b4ba-a0ebfb0e946d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为实现实时4K推理，NVIDIA采用了小型紧凑的单步扩散模型，在保证画面质量的同时将延迟控制在可接受范围内。这也是DLSS 5能够在游戏帧率下运行的关键技术基础。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/e44ce6c1-0bed-46ce-bf62-f3e57f74266d.jpg" target="_blank"&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/Se44ce6c1-0bed-46ce-bf62-f3e57f74266d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NVIDIA还重点展示了开发者对DLSS 5的全面控制能力，正如今年3月GTC上预告的那样，开发者可以为自己的游戏定制DLSS 5的行为。&lt;/p&gt;
+&lt;p&gt;首先是AI模型选择。&lt;strong&gt;开发者可以在三款不同的AI模型（A、B、C）之间选择，每款模型的训练数据不同，画面风格也有差异。&lt;/strong&gt;这一选择不必全局生效，可以按场景切换，让开发者在不同环境下使用最合适的模型。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/S6e23def0-9dba-467c-bfa9-ef0a96ad6409.jpg" w="600"&gt;&lt;br&gt;
+三款AI模型（A/B/C）在80%结构强度下的效果对比&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其次是全局强度控制，开发者可以逐场景调节两个滑块：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;结构强度主要影响光照、阴影和表面纹理的表现，色调强度则控制色彩和亮度的调整幅度。两者作用于整幅画面，也可以完全关闭。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/0067c293-97f0-43ed-9114-6a3bf991f8e7.jpg" target="_blank"&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/S0067c293-97f0-43ed-9114-6a3bf991f8e7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;对于角色画面，DLSS 5提供了独立的控制维度，系统能够自动检测画面中的人物（自动遮罩），开发者可以单独设定AI模型对角色外观的干预程度，也可以选择仅对角色应用DLSS 5效果。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/c5f8647f-a492-4838-9c5b-bd4d81ffa190.jpg" target="_blank"&gt;&lt;img alt="22分钟详解DLSS 5：NVIDIA公开回应一切争议" h="337" src="//img1.mydrivers.com/img/20260722/Sc5f8647f-a492-4838-9c5b-bd4d81ffa190.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更灵活的是开发者自定义遮罩功能，开发者可以为特定物体或物体组创建遮罩，精确控制DLSS 5的作用范围和强度，也可以将某些物体完全排除在AI处理之外。&lt;/p&gt;
+&lt;p&gt;例如，开发者可以让整个场景保持引擎渲染的原貌，仅对天空进行AI增强，这种对象级的控制粒度在之前的DLSS版本中是不存在的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NVIDIA强调，SIGGRAPH 2026上展示的设置只是开始，后续还会有更多控制选项加入。&lt;/strong&gt;不过这些功能是否会在DLSS 5于2026年秋季正式上线时全部可用，NVIDIA并未明确。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 05:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBSZ1RKamt4d0l0RExNa052SHZXekF5N3RNbmxMWGExZWMweHk1Q29uVFZBa2JhV1RHYkhScjdQRnkzdnAtNERkNjg3U0l5RFJ5WGNCWnIycnk</guid></item><item><title>别迷信先进制程！中芯国际联合创始人：三星5nm和4nm翻车就是教训 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138181.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;别迷信先进制程！中芯国际联合创始人：三星5nm和4nm翻车就是教训&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-22 13:06:52  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1138181-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，&lt;span&gt;&lt;strong&gt;中芯国际联合创始人谢志峰博士在接受访谈时指出，芯片行业存在一个误区，认为制程工艺越先进芯片就越好。他直言别迷信先进制程，三星5nm和4nm的翻车就是教训。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;三星5nm工艺的骁龙888和4nm工艺的骁龙8 Gen 1虽然制程先进，但实际体验并不好。芯片性能够强，发热却非常严重，导致降频降亮度，甚至出现烧WiFi的问题。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/d054826f-08b6-46f9-99c9-50be3021a203.png" target="_blank"&gt;&lt;img alt="别迷信先进制程！中芯国际联合创始人：三星5nm和4nm翻车就是教训" h="392" src="//img1.mydrivers.com/img/20260722/Sd054826f-08b6-46f9-99c9-50be3021a203.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;谢博士认为芯片好坏不看出身看疗效。最终产品只有让客户满意才算成功。&lt;strong&gt;消费者更关心实际使用体验，而非制程工艺数字的大小。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在国产EUV光刻机问世之前，中国仍有过渡方案。DUV多重曝光技术可以在不依赖EUV的情况下实现相近的晶体管水平，但步骤复杂、成本较高。&lt;/p&gt;
+&lt;p&gt;华为提出的逻辑折叠技术是另一条路径。依托现有浸润式DUV和多重图案化技术，通过电路堆叠设计继续提升芯片性能指标。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;谢博士指出芯片制程命名本身并不重要。中芯国际的技术路线从14nm开始，后续命名为N+1和N+2。追求的是等效性能而非命名数字，客户满意度才是最终目标。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/f8f4f136-d7dc-4a0e-a296-5ff7e49a81b2.png" target="_blank"&gt;&lt;img alt="别迷信先进制程！中芯国际联合创始人：三星5nm和4nm翻车就是教训" h="369" src="//img1.mydrivers.com/img/20260722/Sf8f4f136-d7dc-4a0e-a296-5ff7e49a81b2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 05:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE40N1VGQ2dzUmlPNFdQMFdkaGpjaVpYZzJSVEJSWmEwYVZWbXVpUk9scGdlenVBVGZJdVZVRlU2Z0VDVy1YNTl1TXlhZFpQdXhhNG94ZnFoMzQ</guid></item><item><title>长鑫DDR5扩产加速！海成DS开始供货封装基板：明年内存价格有望回落 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138163.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;长鑫DDR5扩产加速！海成DS开始供货封装基板：明年内存价格有望回落&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-22 11:38:16  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1138163-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，当前DDR5内存价格仍处高位。16GB DDR5内存套装从2025年同期的约900元暴涨至3800元左右，涨幅超过400%。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;长鑫存储正在成为打破这一局面的关键变量。作为全球第四大DRAM厂商，长鑫正持续扩充DDR5和LPDDR5X产品线，计划通过新建工厂等方式，将DRAM月产能提高至约60万片晶圆。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;产能扩张的上游供应链正在同步推进。韩国半导体材料与组件制造商海成DS已将长鑫存储纳入DDR5封装基板客户名单。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;海成DS于2026年第一季度通过长鑫存储的DDR5封装基板认证测试，第二季度已开始小规模供货并贡献营收，预计2027年供应量将进一步扩大。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;海成DS的封装基板业务主要采用卷对卷生产工艺，适合DDR5所使用的单层及低层数封装基板大规模生产。目前，海成DS相关产线利用率约为60%至70%，仍有空间承接新增订单。&lt;/p&gt;
+&lt;p&gt;海成DS的封装基板供货，将直接支撑长鑫DDR5产线的产能爬坡。&lt;strong&gt;业内预计，随着长鑫DDR5产能于2027年进一步释放，消费级内存市场的供给短缺有望逐步缓解，推动内存价格从高位回落。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;需要指出的是，双方目前均未公开确认这一合作关系。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/41f6ce65c32f448d9a7d0b8dcb06c83f.jpg" target="_blank"&gt;&lt;img alt="长鑫DDR5扩产加速！海成DS开始供货封装基板：明年放量内存价格有望回落" h="327" src="//img1.mydrivers.com/img/20260722/s_41f6ce65c32f448d9a7d0b8dcb06c83f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 03:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xRl9jZVhpQVROSWZ3WjlaSnEwbk04SzBmT2JodjdQcUc0UktTeEdJU1pwRU1yQkQzLWpYSWRWUC01am9pMmtuVTlxbG5rRWdHYjhkYlB1ZmM</guid></item><item><title>RTX Spark N1X规格坐实！首个驱动确认6144/5120个CUDA核心 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138162.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;RTX Spark N1X规格坐实！首个驱动确认6144/5120个CUDA核心&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-22 11:29:41  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1138162-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，&lt;span&gt;&lt;strong&gt;NVIDIA近日发布了首款原生支持Windows 11 on Arm的GeForce显卡驱动616.00版，主要面向微软Surface RTX Spark Dev Box开发设备，&lt;/strong&gt;&lt;/span&gt;而非消费级笔记本。&lt;/p&gt;
+&lt;p&gt;该驱动的Arm64安装包内含一个名为nv_surface_woa.inf的配置文件，其中列出了支持的硬件ID，确认了RTX Spark N1X存在两款不同配置。&lt;strong&gt;一款搭载Blackwell架构GPU，拥有6144个CUDA核心；另一款则配5120个CUDA核心。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这两款配置与此前曝光的N1X 675和N1X 650方案一致。完整版N1X 675结合20个Arm CPU核心与48个SM流处理器，精简版N1X 650采用18核CPU与40个SM，两款配置均支持最高128GB LPDDR5X统一内存。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/7eac90c375fa452ca8f5460f2cddf0da.png" target="_blank"&gt;&lt;img alt="RTX Spark N1X规格坐实！首个驱动确认6144/5120个CUDA核心" h="210" src="//img1.mydrivers.com/img/20260722/s_7eac90c375fa452ca8f5460f2cddf0da.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;驱动包中还列出了一个未命名的“NVIDIA Desktop Device”以及多个基于Deep Learning Accelerator架构的NPU标识。&lt;/strong&gt;该桌面设备条目可能对应其他迷你RTX Spark系统，但驱动中未标明具体产品。&lt;/p&gt;
+&lt;p&gt;微软于今年6月发布了Surface RTX Spark Dev Box，这是一款迷你型开发系统，配备128GB统一内存，功耗设计为100W。&lt;/p&gt;
+&lt;p&gt;消费级产品方面，NVIDIA及合作伙伴正在准备多款RTX Spark笔记本，包括微软Surface Laptop Ultra和联想Yoga Pro 9n等。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/be6a5574d11343c8ab1ce8a3640eb69d.jpg" target="_blank"&gt;&lt;img alt="RTX Spark N1X规格坐实！首个驱动确认6144/5120个CUDA核心" h="337" src="//img1.mydrivers.com/img/20260722/s_be6a5574d11343c8ab1ce8a3640eb69d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 03:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9zRGZpeXB2NFJBTWJ5S1ZrWDMzc1Z6WWV2dTA1R1lwb1N5c2RWdzkwSUJtZTRSV1d1TGduTHU4U3lFMWktbGh6WGJ2V0t2eGZFN0c0OHVoX3E</guid></item><item><title>国外博主用大疆无人机极限航拍 拍出史诗级火山喷发画面 视野直接拉满 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138156.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息 ，&lt;strong&gt;近日，大疆官方账号在社交平台发布了一则视频。视频中，一位国外博主利用大疆 Avata 360 无人机开展极限航拍，近距离捕捉到震撼的火山喷发实景。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;360°全景镜头带来沉浸式观感，滚滚浓烟腾空而起，赤红岩浆向外翻涌奔涌，狂暴的自然力量扑面而来，独特的空中视角，呈现出常人难以亲眼目睹的壮阔场面。&lt;/p&gt;
+&lt;p&gt;整段画面冲击力十足，全景视野将火山喷发的全过程完整收录，宏大又充满压迫感，仿佛能够切身感受到地底涌动的能量，令人心生敬畏。&lt;/p&gt;
+&lt;p&gt;能够抵达如此靠近火山的区域拍摄，十分考验设备性能与操控技术，也充分展现出这款无人机强大的拍摄能力与环境适应力。&lt;/p&gt;
+&lt;p&gt;需要友情提醒的是，视频特别标注，本次属于专业高危拍摄，普通人切勿模仿。火山周边充斥乱流、高温与火山灰，近距离飞行风险极高。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/a88e3340f96f4344bda8765959a3404a.png" target="_blank"&gt;&lt;img alt="国外博主用大疆无人机极限航拍 拍出史诗级火山喷发画面  视野直接拉满" h="707" src="//img1.mydrivers.com/img/20260722/s_a88e3340f96f4344bda8765959a3404a.png" w="405"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;公开资料显示，DJI Avata 360是大疆于今年3月26日正式推出的首款全景无人机。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据官方介绍，DJI Avata 360搭载的O4+图传抗干扰性能强劲，能够实现最远达20公里的1080p/60fps高清高帧率画面传输。&lt;/p&gt;
+&lt;p&gt;同时其还支持双路高清图传，让Avata 360在空旷环境中飞得更远，即便在环绕拍摄建筑物、低高度飞行或穿梭于障碍物等场景下，都能获得安全、稳定的操控体验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;另外，在续航方面，DJI Avata 360拥有最长23分钟的飞行时间。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据悉，全景拍摄最大优势在于“一次飞行，视角自由重构”，其能全程记录360°球形画面，能够任意调整取景角度，非常适合极限风光、动态场景拍摄。&lt;/p&gt;
+&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 03:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1HTjMwRFlNYnRYVUlOcTlxbnduVmhhWDBuRk5hVVpBUng3bkZFdDMwa1NDbkZHRzd2elNudVFsdFplRVk2YXR3dHdfQ09oZG1jd1Nsd3NzeXM</guid></item><item><title>性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138154.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，&lt;span&gt;&lt;strong&gt;NVIDIA公布了旗下Vera CPU的全新架构细节，包括自研Olympus核心的内部设计以及整颗处理器的互连规格。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据介绍，Vera在单颗计算芯片上集成了88个Olympus核心，支持176个硬件线程，配备164MB统一L3缓存。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/7a9620fc-d456-4ed2-8f4c-913d41ac90a8.jpg" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="377" src="//img1.mydrivers.com/img/20260722/S7a9620fc-d456-4ed2-8f4c-913d41ac90a8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;每个Olympus核心采用宽前端设计，集成神经分支预测器，每周期最多可取16条指令，解码队列容量为48条指令，解码器宽度达到10路，每周期可处理10条融合指令。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/45d39025-f8d8-402c-85d9-87803836bf03.png" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="445" src="//img1.mydrivers.com/img/20260722/S45d39025-f8d8-402c-85d9-87803836bf03.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;核心中段的重命名、分配和提交单元同样为每周期10条微操作，还引入了内存重命名、值预测和移动消除等技术来减少依赖性停顿。执行引擎涵盖整数、分支、向量、浮点、加密和专用加载/存储资源。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/d1cff0b7-a822-4a75-9143-64d15fe2199b.png" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="337" src="//img1.mydrivers.com/img/20260722/Sd1cff0b7-a822-4a75-9143-64d15fe2199b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;缓存方面，每个核心配备64KB四路组相联L1指令缓存和96KB六路组相联L1数据缓存，L2缓存为2MB八路组相联设计。NVIDIA还加入了多种硬件预取机制，其中包括一个专门针对指针密集型数据结构和图处理负载的图预取器。&lt;/p&gt;
+&lt;p&gt;Vera还采用NVIDIA空间多线程技术，每个Olympus核心提供两个硬件线程。NVIDIA表示该设计可以在两个线程之间分区核心资源，相比传统同步多线程减少资源争用，一个核心可以优先运行对性能敏感的线程，同时由第二个线程处理系统和管理类任务。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/70a8b30b-b795-45fb-a28c-42fc9ace855c.png" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="337" src="//img1.mydrivers.com/img/20260722/S70a8b30b-b795-45fb-a28c-42fc9ace855c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;互连方面，Vera通过第二代NVIDIA可扩展一致性总线连接核心、缓存、内存控制器和I/O。&lt;strong&gt;核间带宽最高达3.4TB/s，SOCAMM2 LPDDR5X内存带宽为1.2TB/s，单CPU最大支持1.5TB内存容量。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/bcc4a90e-64c5-4d19-acc4-4ec349d26680.png" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="272" src="//img1.mydrivers.com/img/20260722/Sbcc4a90e-64c5-4d19-acc4-4ec349d26680.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vera还支持1.8TB/s的NVLink-C2C接口、PCIe Gen 6和CXL 3.1，双路系统提供176条PCIe通道，采用双节点NUMA架构，每个插槽对应一个NUMA域。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/9330838a-5f30-4243-a105-9aabd31e7da7.png" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="398" src="//img1.mydrivers.com/img/20260722/S9330838a-5f30-4243-a105-9aabd31e7da7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NVIDIA声称Vera在特定Agent负载下性能最高可达x86系统的1.8倍，&lt;/strong&gt;该数据基于NVIDIA内部2026年7月的SPEC CPU 2026测试，目前尚未经过独立验证。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/37e1fb20-9503-4f8c-84c4-19ae6f312b12.png" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="332" src="//img1.mydrivers.com/img/20260722/S37e1fb20-9503-4f8c-84c4-19ae6f312b12.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/f1be42b1-52c0-4f5a-a845-55de0a1a216c.png" target="_blank"&gt;&lt;img alt="性能1.6倍于x86！NVIDIA亮出Vera CPU详细规格：88核、1.2TB/s LPDDR5X" h="312" src="//img1.mydrivers.com/img/20260722/Sf1be42b1-52c0-4f5a-a845-55de0a1a216c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 03:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA4MXNfaUNjMmU1TldaNExKckZWZ1R4T3kwbW1pTjllYnlhQUhjN0ctZVFUMUtScGdwN2o0TmtOaW5fT0Q0SFRIZElISTljZ0hBTVFiQ0VQeHU</guid></item><item><title>特朗普批准美沙30年核能协议：美企主导，可能在沙特境内建设铀浓缩设施 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777634</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 02:54:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFA1Q0tRZEhMUjgxcnlLcDJxaG9hVUUzT3JPZlVtbHhyVDdUZDBPMUpDVFlyTDRRemJmTDFybXFfZUFGNHdZLWxtd1huMUdWczh4OEs0</guid></item><item><title>美中会在人工智能领域筑起高墙吗？ - 纽约时报中文网</title><link>https://cn.nytimes.com/business/20260722/us-china-ai-limits/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;新的报道表明，华盛顿和北京正在权衡保护和推进本国产业的措施——业内许多人认为，这些措施带来的问题可能比解决的问题还要多。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;特朗普政府中的一些人正在推动对外国模型实施限制。据Axios援引未具名消息人士的报道，智谱AI和月之暗面推出的强大新型中国开放权重模型使用成本低于封闭的西方模型，这重新激发了旨在实际上&lt;/p&gt;&lt;a rel="noopener noreferrer" target="_blank" href="https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi"&gt;封禁此类工具&lt;/a&gt;&lt;p&gt;的努力：&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;一位接近政府的消息人士告诉Axios，商务部去年曾考虑将多个中国人工智能实验室列入其“实体清单”，这实际上将切断未经许可的美国企业对这些实验室的访问权限。&lt;/p&gt;&lt;p class="article-paragraph"&gt;该消息人士称，美国国家安全局和白宫国家网络总监办公室去年曾考虑发布一份关于中国人工智能实验室威胁的警告，实际上是劝阻美国公司不要使用相关技术。&lt;/p&gt;&lt;p class="article-paragraph"&gt;随着这种做法的批评者纷纷离职——包括前白宫人工智能沙皇戴维·萨克斯、白宫人工智能高级顾问斯里拉姆·克里希南以及商务部人工智能标准与创新中心主任克里斯·福尔，这些声音在政府中获得了更大的影响力。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;· 包括Anthropic的达里奥·阿莫迪和OpenAI的萨姆·奥特曼在内的人工智能巨头领导者以安全为名，一直推动政府对前沿模型实施&lt;/p&gt;&lt;a rel="noopener noreferrer" target="_blank" href="https://www.bloomberg.com/news/articles/2026-07-16/dario-amodei-anthropic-employees-give-millions-to-regulate-ai"&gt;强制性测试&lt;/a&gt;&lt;p&gt;，甚至要求为前沿模型&lt;/p&gt;&lt;a rel="noopener noreferrer" target="_blank" href="https://www.axios.com/pro/tech-policy/2023/07/10/battle-brewing-over-ai-licensing"&gt;颁发许可证&lt;/a&gt;&lt;p&gt;。一些人也曾&lt;/p&gt;&lt;a rel="noopener noreferrer" target="_blank" href="https://www.wsj.com/tech/ai/top-american-ai-execs-sound-alarm-on-chinese-models-3c74f8c1"&gt;公开反对开源模型&lt;/a&gt;&lt;p&gt;。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Wed, 22 Jul 2026 02:52:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTFBMSmd4R1VoZEhIOTlMbE9wQUl4dFB1ZFFwTHY5dEEteTZSa01tZDdDYmtqTlpPXzdFVkdvdGtsaVZLb1RMSjA4enZ3RUxzSmhlSkV6d2FRY212T1NNUTI2ek9iWTY5MTBOUUp4MQ</guid></item><item><title>vivo称霸印度手机市场！二季度出货量力压三星、苹果 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138149.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，今日，市场调研机构Omdia发布2026年第二季度印度智能手机市场出货量数据。&lt;/p&gt;
+&lt;p&gt;数据显示，&lt;strong&gt;该季度印度智能手机出货量为3390万部，同比下降13%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Omdia表示，内存成本持续上涨推动终端售价连续上调，削弱了大众市场消费者的购买力。&lt;/p&gt;
+&lt;p&gt;与此同时，消费者等待节日促销再换机、印度卢比贬值、通胀压力以及夏季线下零售客流疲软等因素，也进一步抑制了市场需求。&lt;/p&gt;
+&lt;p&gt;具体厂商排名方面，&lt;span&gt;&lt;strong&gt;vivo以630万部出货量继续位居印度市场第一。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/2ecd3b9a5a774c82930da5cc78381760.jpg" target="_blank"&gt;&lt;img alt="vivo称霸印度手机市场！二季度出货量力压三星、苹果" h="337" src="//img1.mydrivers.com/img/20260722/s_2ecd3b9a5a774c82930da5cc78381760.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;尽管价格上涨导致大众市场需求承压，vivo仍通过精简入门级产品组合，重点围绕Y11 5G、Y21 5G等核心机型展开销售，同时推出价格更亲民的V70 FE，进一步降低V系列的入门门槛，巩固市场领先地位。&lt;/p&gt;
+&lt;p&gt;三星以590万部出货量位居第二，Galaxy A07和Galaxy A17成为主要销量驱动力。&lt;/p&gt;
+&lt;p&gt;此外，Galaxy Forever计划、以旧换新、回购以及经销商融资等项目，也对Galaxy S26系列销售形成支撑，并进一步增强渠道信心。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OPPO以460万部出货量排名第三，小米以450万部位居第四，苹果则以350万部排名第五。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/c0664e482143493296e8bdae49d7f985.png" target="_blank"&gt;&lt;img alt="vivo称霸印度手机市场！二季度出货量力压三星、苹果" h="396" src="//img1.mydrivers.com/img/20260722/s_c0664e482143493296e8bdae49d7f985.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Omdia预计，&lt;span&gt;&lt;strong&gt;2026年印度智能手机市场仍将出现两位数下滑，消费者需求将继续受到宏观经济压力和终端价格高企的影响。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;持续通胀、印度卢比贬值以及生活成本上升，预计将进一步压缩消费者的可支配支出。&lt;/p&gt;
+&lt;p&gt;同时，内存成本在2026年剩余时间内仍将维持高位，并继续推高智能手机售价。&lt;/p&gt;
+&lt;p&gt;Omdia认为，印度智能手机价格全面恢复至正常水平，最早也要等到2027年上半年。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/a5b3d97322cf48b996fb251f33847c1c.png" target="_blank"&gt;&lt;img alt="vivo称霸印度手机市场！二季度出货量力压三星、苹果" h="284" src="//img1.mydrivers.com/img/20260722/s_a5b3d97322cf48b996fb251f33847c1c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 02:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE40WGpqYVpNU0N5TEJYUWVpRDAtNkxJN3kzV29RZ28yRGJWb0kzNUtQV0gzZlhEVTREeHNTOXUxNmNuZUs5ZmNlcUpMcjRDRzQ2ZDFKS1M2bWk</guid></item><item><title>预算又不够了！英伟达上调Jetson全线价格：最高翻倍 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138148.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月22日消息，&lt;span&gt;&lt;strong&gt;英伟达悄悄上调了其Jetson系列全部产品的价格，部分型号涨幅直接翻倍，官方未发布提前公告，也未解释涨价原因。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;目前市售的三款开发者套件均有显著提价，最高涨2000美元，且美国官网均显示缺货状态：&lt;/strong&gt;&lt;/p&gt;
@@ -19,7 +320,32 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 02:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBWa2E4QnBybWdlYWJBQUpMcTB2dFRZNzRzS0VmWVF2dC1icjdTZDdxcGhqRWZIdkI2R3V4ay04RF9YZl9vYzRPOFh3Sk9MWl9wdWROTXJzWmU</guid></item><item><title>Intel Arc G3E重塑Windows掌机格局！微星CLAW 8 EX Al+深度评测：性能狂甩AMD 42% 续航2倍于任天堂Switch - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138134.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 02:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBWa2E4QnBybWdlYWJBQUpMcTB2dFRZNzRzS0VmWVF2dC1icjdTZDdxcGhqRWZIdkI2R3V4ay04RF9YZl9vYzRPOFh3Sk9MWl9wdWROTXJzWmU</guid></item><item><title>149元 小米首款新国标移动电源开售：20000mAh 针刺不起火、不爆炸 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138144.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，今日，&lt;span&gt;小米首款新国标移动电源——小米充电宝自带线20000 22.5W正式开售，到手价149元。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;该充电宝通过2026年新国标认证，&lt;span&gt;&lt;strong&gt;通过4mm贯穿针刺、135℃热箱60分钟、14kN挤压等严苛测试，在测试过程中做到不起火、不爆炸。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/046e51f596e5443e9e995ab3f43af332.png" target="_blank"&gt;&lt;img alt="149元 小米首款新国标移动电源开售：20000mAh 针刺不起火、不爆炸" h="359" src="//img1.mydrivers.com/img/20260722/s_046e51f596e5443e9e995ab3f43af332.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同时，充电宝支持智能管理功能，通过数据线连接电脑后，用户可查询每块电池的溯源信息、充电过程数据以及异常充电记录，进一步提升产品使用的透明度与安全性。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/89e2b1845a204def887888f8d3f00615.png" target="_blank"&gt;&lt;img alt="149元 小米首款新国标移动电源开售：20000mAh 针刺不起火、不爆炸" h="396" src="//img1.mydrivers.com/img/20260722/s_89e2b1845a204def887888f8d3f00615.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小米充电宝自带线20000 22.5W内置两块10000mAh电池，总容量为20000mAh，可以带上飞机。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/500b90b970d342d7ad9ec50b16cf1fd6.png" target="_blank"&gt;&lt;img alt="149元 小米首款新国标移动电源开售：20000mAh 针刺不起火、不爆炸" h="327" src="//img1.mydrivers.com/img/20260722/s_500b90b970d342d7ad9ec50b16cf1fd6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官方表示，该产品可为小米17充电约2.5次，或为iPhone 17充电约3.6次，能够满足出差、旅行等场景下的长时间用电需求。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/f2864815feb94245aa77e37bd8d26188.png" target="_blank"&gt;&lt;img alt="149元 小米首款新国标移动电源开售：20000mAh 针刺不起火、不爆炸" h="313" src="//img1.mydrivers.com/img/20260722/s_f2864815feb94245aa77e37bd8d26188.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;产品顶部自带一根USB-C线缆，外出时无需额外携带充电线，拿起即可为设备补电。&lt;/p&gt;
+&lt;p&gt;配合USB-C接口和USB-A接口，可同时为三台设备充电，搭配支持智能快充的小米手机使用时，最高充电功率可达22.5W。&lt;/p&gt;
+&lt;p&gt;此外，产品内置智能识别芯片，可根据不同设备自动匹配合适的输出电流，为手机、平板、耳机等设备提供充电支持。&lt;/p&gt;
+&lt;p&gt;协议兼容方面，&lt;strong&gt;该产品支持QC2.0、QC3.0、PD2.0、PD3.0、PPS、BC1.2、Apple2.4A、SCP、AFC、FCP、DCP等主流充电协议，&lt;/strong&gt;能够兼容不同品牌和类型的数码设备。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/54462c35cd114f179bcb643e542e9923.png" target="_blank"&gt;&lt;img alt="149元 小米首款新国标移动电源开售：20000mAh 针刺不起火、不爆炸" h="368" src="//img1.mydrivers.com/img/20260722/s_54462c35cd114f179bcb643e542e9923.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/133c52065de9469ebba03a6aacbf0d36.jpg" target="_blank"&gt;&lt;img alt="149元 小米首款新国标移动电源开售：20000mAh 针刺不起火、不爆炸" h="1639" src="//img1.mydrivers.com/img/20260722/s_133c52065de9469ebba03a6aacbf0d36.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 02:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBTRGwyOVFNNnRvT1NLOXduZ21EUk16S0pPcmZsNWtGejd3d1hOZ0JVa0dJbExYS3oyUHk0ZG5rbVBqV1BPV3U5ZUl5dHZHMDNDdXByM25pMl8</guid></item><item><title>Intel Arc G3E重塑Windows掌机格局！微星CLAW 8 EX Al+深度评测：性能狂甩AMD 42% 续航2倍于任天堂Switch - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138134.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            
 &lt;p&gt;&lt;strong&gt;一、前言：能彻底改变Windows掌机格局的X86 SOC&lt;/strong&gt;&lt;/p&gt;
@@ -116,7 +442,79 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 02:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1wcXBBNWZGU0ZWUDhRelUyR3JndzRTZEg3YV9aZUN4TmRteEoxdWxJWWV4Xy11b3JOWlVPQjduRFJJd0ExY1J2YndNNmtjS0xZOExsRHljZ1k</guid></item><item><title>低估Azure和Copilot的拐点！大摩：市场只给微软“16倍PE”太低了 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777616</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 01:53:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE4tY0MtMUFfUzBET191cGo4ZDlnbFF5ZGdVd3dXOVVDWmZlaUtWcWdIYXpKWUJvTlVRTHVtdjEzV0hyMW9Kc3RvNFQ1UnJBOTg4NVFz</guid></item><item><title>刚刚，Gemini 3.6 Flash 正式发布，但网友笑得更大声了 - 爱范儿</title><link>https://www.ifanr.com/1672647</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 02:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1wcXBBNWZGU0ZWUDhRelUyR3JndzRTZEg3YV9aZUN4TmRteEoxdWxJWWV4Xy11b3JOWlVPQjduRFJJd0ExY1J2YndNNmtjS0xZOExsRHljZ1k</guid></item><item><title>腾讯、阿里、字节，大战AI办公 - 36Kr</title><link>https://36kr.com/p/3906087269373058</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;2097万。&lt;/p&gt;
+  &lt;p&gt;这是腾讯旗下AI Agent办公工具WorkBuddy在2026年6月的月度访问量。4个月前刚发布时，这个数字还只有800多万。&lt;/p&gt;
+  &lt;p&gt;7月20日，易观发布《2026年Q2中国办公智能体平台市场洞察报告》，17款主流桌面端AI原生办公智能体中，WorkBuddy访问量排名第一，超过第二、第三名之和。&lt;/p&gt;
+  &lt;p&gt;榜单坐实了各家的排位，更值得关注的信号也在同一时间出现，腾讯、字节、阿里三家大厂几乎都在整合旗下产品。&lt;/p&gt;
+  &lt;p&gt;当日，有媒体称腾讯QClaw产品中心相关业务和部分团队，将调整至云产品六部，与WorkBuddy并入同一体系，QClaw产品本身仍将独立运营。阿里的动作更大，7月21日，据《财经》报道，阿里将推出“&lt;ai-product-link data-id="13438" data-name="千问" data-logo="https://img.36dianping.com/20250909/v2_ab9ccd231d1247a28821b0595221be8b_oswg15379oswg268oswg268_img_000" data-classify-list="文本生成,辅助写作,摘要总结" data-refer-type="20"&gt;千问&lt;/ai-product-link&gt;办公”，把QoderWork、悟空、MuleRun三款Agent产品整合为一，交由钉钉新任CEO陈宇森操盘。而字节旗下&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;与飞书的深度整合也在推进。&lt;/p&gt;
+  &lt;p&gt;这个行业正处在高速增长中，艾媒咨询发布的《2026年中国AI办公智能体产业发展白皮书》显示，2025年中国AI智能体市场规模已达804亿元，同比增长123.2%，预计2030年将达6968亿元。&lt;/p&gt;
+  &lt;p&gt;如今，三家都坐在了牌桌上。单纯卷模型参数的时代正在翻篇，AI办公的“入口”和“整合”比拼，已经开始。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="960,1358" src="https://img.36krcdn.com/hsossms/20260722/v2_053aade9acec4a1ab7fde915060f1ad4@000000_oswg358030oswg960oswg1358_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;01.6000万流量，三个信号&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;先看这份报告本身说了什么。易观此次统计了17款中国主流桌面端AI原生办公智能体平台，2026年6月这些平台合计访问量突破6000万次，行业整体处于快速扩张阶段。&lt;/p&gt;
+  &lt;p&gt;按归属来看，腾讯系上榜产品包括WorkBuddy、CodeBuddy、QClaw、Marvis四款，合计流量3262万，占了整个大盘的一半以上；字节上榜的是TRAE IDE（国内版）和扣子，合计约1441万；阿里系为QoderWork和悟空，合计约919万，是三家里最低的。三家相加约5622万，剩下约440万（表格总计6062万）的流量，才轮到其余多款产品瓜分。&lt;/p&gt;
+  &lt;p&gt;需要说明的是，这份榜单统计口径是PC端网页访问量，不是DAU，更不是付费企业数。它反映的是“谁在桌面入口上占据了用户注意力”，而不是“谁赚到了钱”。&lt;/p&gt;
+  &lt;p&gt;不过，在AI办公这个赛道里，PC端访问量恰恰是一个不能忽视的信号。&lt;/p&gt;
+  &lt;p&gt;手机上的AI App可以靠补贴、靠投放把数据刷上去，但用户打开一个PC端的办公智能体，多半意味着确实有文档要写、有表格要拉、有邮件要回。从这个角度看，PC端的流量含金量，比手机端要实在不少。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="500,333" src="https://img.36krcdn.com/hsossms/20260722/v2_acc69bb47cd64176a9d83e1664d0bb63@000000_oswg188641oswg500oswg333_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;榜单传递了几个值得关注的信息。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;第一，桌面入口的位置，被腾讯站住了。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;WorkBuddy自3月发布到6月跑到2097万，三个月的爬升速度飞快。在17款产品中，WorkBuddy单款就吃掉了约三分之一的流量。在这半年多的“桌面Agent元年”里，腾讯是跑在最前面的那一个。&lt;/p&gt;
+  &lt;p&gt;不同于通用对话类AI，办公场景下和文档、表格、邮件深度绑定的原生办公智能体，用户同时打开多款的概率更低，因为这类产品往往需要安装插件、绑定账号、嵌入工作流，切换成本远高于打开一个网页。因此，谁先占住桌面，谁就拿到了先发优势。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;第二，当前仍是“入口红利期”，大厂竞争格局远未定型。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;6月的榜单，只是“上半场”，进入7月之后，局势将明显改变。榜单发布的第二天，有消息称&lt;ai-product-link data-id="13438" data-name="千问" data-logo="https://img.36dianping.com/20250909/v2_ab9ccd231d1247a28821b0595221be8b_oswg15379oswg268oswg268_img_000" data-classify-list="文本生成,辅助写作,摘要总结" data-refer-type="20"&gt;千问&lt;/ai-product-link&gt;办公整合QoderWork、悟空、MuleRun三款智能体，品牌、团队、资源全部归拢到一个篮子里。字节那边也在加速，有报道称，字节内部也在讨论&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;和飞书的深度整合。虽然还没正式落地，但方向已经明确。下一季的排名，存在较大变数。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;第三，两类玩家将被波及，同赛道的独立Agent和上一代办公软件。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;同赛道里，榜单前列基本被大厂包圆。办公智能体拼的是模型能力、生态导流（IM、文档、云盘）、组织资源投入的综合实力，这恰好是大厂的主场。腾讯有企业微信和腾讯文档，阿里有钉钉，字节有飞书，各有各的生态底盘，三家几乎吃下整个大盘。留给创业公司和垂直玩家的窗口，可能比想象中更窄。&lt;/p&gt;
+  &lt;p&gt;另一端受冲击的，是上一代办公软件。Agent开发师蒋青云对「定焦One」称，像WPS这类工具，使用场景本质上是繁琐、不太需要动脑的操作，在功能强大的桌面Agent面前，很容易被绕过甚至取代。&lt;/p&gt;
+  &lt;p&gt;需要说明的是，Agent并不会让Word、Excel文件消失。它交付的往往仍是这些格式，但当Agent成了用户开工时点开的第一个窗口，传统办公软件有可能从入口退到后台，变成一个负责执行的引擎。这也是WPS、微软近来急着把AI功能塞进自家产品的原因。&lt;/p&gt;
+  &lt;p&gt;嘉世咨询合伙人李应涛也认为，一旦腾讯、阿里、字节杀入这个市场，依托流量、服务、技术、资本的综合优势，WPS很难成为智能办公体领域的平台级玩家，但空间只是被压缩，不会消失。&lt;/p&gt;
+  &lt;p&gt;这也解释了大厂为什么在2026年夏天纷纷从“赛马”转向“整合”。半年前，各家还在鼓励内部团队各自探索；如今，资源开始集中，产品开始归并，品牌开始统一。市场的窗口期，比想象中要短。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;02.腾讯靠生态，阿里抓模型，字节押注飞书&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;艾媒咨询发布的报告称， 互联网巨头 能依托既有生态与海量用户基础，实现从指令到交付的办公闭环。&lt;/p&gt;
+  &lt;p&gt;这是腾讯、字节、阿里都具备的共同点，但各家抢入口的方式，存在差异。李应涛向「定焦One」概括称，&lt;strong&gt;腾讯是流量入口型，阿里是企业基建型，字节是技术产品型。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;先来看腾讯。李应涛将其定性为“流量入口型”&lt;/strong&gt;，“核心优势是微信、企业微信这种高频社交流量的分发能力，获客成本低”，但短板同样明显，在企业端复杂流程的深度理解上，相比阿里仍有差距。&lt;/p&gt;
+  &lt;p&gt;这个原因蒋青云也有同感：腾讯模型不是强项，WorkBuddy能在三个月内跑到2097万，在他看来，“很大程度是踩中了龙虾的风口”。&lt;/p&gt;
+  &lt;p&gt;在“龙虾”之前，这种“通过终端直接操作文件”的高效工作方式，几乎只有程序员在使用。大语言模型和自动执行智能体的结合，让普通白领也能用同样的方式处理琐碎工作。WorkBuddy恰好在这个时间窗口切了进去。&lt;/p&gt;
+  &lt;p&gt;在蒋青云看来，腾讯自研模型能力其实并不占优。但腾讯的聪明之处在于，它绕开了模型层面的硬拼，把WorkBuddy变成了一个模型聚合平台，接入&lt;ai-product-link data-id="14638" data-name="DeepSeek" data-logo="https://img.36dianping.com/20250909/v2_8b4cc3a29754422f94db009a5e5c9a8f_oswg209762oswg430oswg430_img_000" data-classify-list="辅助写作,AI助理,文本生成" data-refer-type="20"&gt;DeepSeek&lt;/ai-product-link&gt;、混元、GLM、&lt;ai-product-link data-id="14559" data-name="Kimi" data-logo="https://img.36dianping.com/20250909/v2_09edc0feda5a46f2a0a6ee30f817ad5c_oswg7004oswg64oswg64_img_000" data-classify-list="文本生成,摘要总结,智能搜索" data-refer-type="20"&gt;Kimi&lt;/ai-product-link&gt;等多家模型，用户充值积分即可调用。这样一来不管底层跑的是谁的模型，腾讯都可以收钱，等于把自己的短板做成了一门平台抽成的生意。&lt;/p&gt;
+  &lt;p&gt;不过短板这一块，腾讯也在补。7月6日，腾讯混元Hy3上线并在WorkBuddy首发接入。据易观报告，在WorkBuddy自选模型的用户中，选择Hy3的占比已超过六成。这样相当于是两条腿走路，一边聚合外部模型，一边用混元补齐自研底座。&lt;/p&gt;
+  &lt;p&gt;另外，WorkBuddy在沟通渠道上的优势尤其明显，用户可以通过手机操作电脑干活，再通过微信无痛发送给同事。微信生态的加持，让WorkBuddy多了一个其他产品难以复制的分发和连接能力。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="500,301" src="https://img.36krcdn.com/hsossms/20260722/v2_44df47120e5e4cb5967614fd173a8443@000000_oswg21247oswg500oswg301_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;阿里模型能力最强，但产品整合才刚起步，效果还有待观察。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;QoderWork本身在榜单上排名第三，788万的访问量并不差。李应涛向「定焦One」称，阿里的根基在B端。从阿里云到钉钉，阿里沉淀了国内最完整的企业服务链条，了解企业的采购流程、合规要求、组织运作方式。但劣势在于C端流量不如腾讯和字节，且内部同时跑着QoderWork、悟空、MuleRun三款Agent产品，多线作战导致资源有所分散。&lt;/p&gt;
+  &lt;p&gt;&lt;ai-product-link data-id="13438" data-name="千问" data-logo="https://img.36dianping.com/20250909/v2_ab9ccd231d1247a28821b0595221be8b_oswg15379oswg268oswg268_img_000" data-classify-list="文本生成,辅助写作,摘要总结" data-refer-type="20"&gt;千问&lt;/ai-product-link&gt;办公的整合思路是以QoderWork为基础，把三款产品的能力和团队收拢到一起，统一打“&lt;ai-product-link data-id="13438" data-name="千问" data-logo="https://img.36dianping.com/20250909/v2_ab9ccd231d1247a28821b0595221be8b_oswg15379oswg268oswg268_img_000" data-classify-list="文本生成,辅助写作,摘要总结" data-refer-type="20"&gt;千问&lt;/ai-product-link&gt;”的品牌。&lt;/p&gt;
+  &lt;p&gt;这个选择有其合理性。蒋青云认为，&lt;ai-product-link data-id="15053" data-name="通义千问" data-logo="https://img.36dianping.com/20260429/v2_4484a807533444beb2f280302bfb1460_oswg15379oswg268oswg268_img_000" data-classify-list="文本生成,辅助写作,摘要总结" data-refer-type="20"&gt;通义千问&lt;/ai-product-link&gt;在模型层面的实力“比另外两家要好很多”。在AI办公这个赛道里，模型能力虽然不是全部，但它是决定产品体验上限的关键变量。&lt;ai-product-link data-id="13438" data-name="千问" data-logo="https://img.36dianping.com/20250909/v2_ab9ccd231d1247a28821b0595221be8b_oswg15379oswg268oswg268_img_000" data-classify-list="文本生成,辅助写作,摘要总结" data-refer-type="20"&gt;千问&lt;/ai-product-link&gt;办公如果能把模型优势真正转化成产品体验的优势，后劲不小。但整合才刚开始，产品、团队的融合都需要时间。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;字节的处境是三家里最微妙的。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;TRAE IDE（国内版）在编程赛道表现不错，但把它放在办公智能体的榜单里排第二，蒋青云评价是“有点尴尬”，因为TRAE IDE对标的实际上是Cursor这类编程软件，和WorkBuddy、QoderWork本不在一个赛道。&lt;/p&gt;
+  &lt;p&gt;字节的问题在于产品线还不够清晰。TRAE IDE主打编程，TRAE Work试图集成办公功能、做类似WorkBuddy的事情，&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;又是独立的AI对话产品。蒋青云的评价是，“TRAE IDE在国内来说已经很厉害了，但TRAE Work做得一般，字节不整合的话这几个软件定位很尴尬”，他补充，“反而&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;办公功能做得还不错，用的人也不少。”&lt;/p&gt;
+  &lt;p&gt;字节内部也在权衡，据媒体报道，调整方向是飞书和&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;的深度整合，而不是继续押注TRAE Work。这个思路和腾讯、阿里都不一样，AI能力可以直接长在飞书的工作流里，用户不需要额外下载Agent客户端。&lt;/p&gt;
+  &lt;p&gt;李应涛认为字节的基因始终是靠技术驱动产品迭代，虽然这让它在模型迭代速度和编码场景切入上占优，但将“编程心智”迁移到“办公场景”，遇到的不只是TRAE Work产品体验一般这个具体问题，更底层的，是飞书生态本身的体量天花板——目前仍不及企业微信和钉钉，这也是字节劣势之一。&lt;/p&gt;
+  &lt;p&gt;当然也存在另一种走向，像OpenAI将Codex整合进ChatGPT那样，字节把TRAE Work的能力并进&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;。无论哪条路，TRAE Work接下来摆在什么位置还不明朗。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;三家的路线之争背后，还藏着一层更本质的用户分层。&lt;/strong&gt;蒋青云坦言，真正有复杂编程需求的专业开发者，目前几乎不会用WorkBuddy这类国产桌面Agent写代码，差距最大的地方在于处理深度任务的能力，这部分专业用户更愿意为Claude Code、Codex这类海外产品付费，甚至一人开多个账号。&lt;/p&gt;
+  &lt;p&gt;但他同时强调，日常办公场景里的任务大多琐碎、不需要复杂推理，国内这几款产品的能力“绰绰有余”。真正决定用户选择的，是入口便捷度、操作门槛、是否需要额外配置网络这些产品体验层面的细节。而这些，恰恰是WorkBuddy靠低门槛、免部署、下载即用建立起来的优势。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;03.谁能把流量变成收入&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;用户对AI的期待，已经从“能不能聊得像人”变成了“能不能真的把活干完”，这也是为什么钉钉、飞书、企业微信这些早就手握大量企业客户和真实办公场景的产品，会成为大厂押注AI办公主阵地的原因。&lt;/p&gt;
+  &lt;p&gt;更宏观的驱动力，还来自中国庞大且持续扩张的OPC（一人公司）数量。艾媒咨询数据显示，截至2025年6月，中国OPC已达到1600万家；2025年上半年全国新注册OPC数量达到286万家，壮大后的OPC群体也成为AI办公智能体重要的需求方和商业驱动力。&lt;/p&gt;
+  &lt;p&gt;李应涛称，下一阶段最大的难点不是模型能力，也不是产品功能，而是“单位经济成本”——能不能把AI的账算过来。目前行业已经跑出了几种相对清晰的收费模式：&lt;/p&gt;
+  &lt;p&gt;订阅制是当前最主流的方式，按月或按年收取固定费用，平台通过免费版与付费版的功能分层来引导转化。比如字节的TRAE走的是典型的会员订阅路线，&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;专业版也采用了订阅制，标准版、加强版、高级版三级阶梯定价。&lt;/p&gt;
+  &lt;p&gt;Token/积分制则将成本与实际消耗挂钩。腾讯WorkBuddy采用的就是“积分+会员”并行的模式，用户充积分调用不同模型，用多少花多少。&lt;/p&gt;
+  &lt;p&gt;私有化部署是面向对数据安全和定制化流程有刚性需求的大型政企客户，通过一次性授权费加年度维护费实现商业化，企业市场才是真正的金矿。&lt;/p&gt;
+  &lt;p&gt;有观点认为，订阅与Token计费将长期并存，AI办公的商业模式会越来越灵活。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="500,301" src="https://img.36krcdn.com/hsossms/20260722/v2_fe8738215a134d16a27ead00f3adb0aa@000000_oswg181365oswg500oswg301_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;不过，收费方式清楚，和真能把钱收上来，是两回事。从榜单上的流量到实际收入，中间还有两道落差。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;一是量最大的地方，未必是钱最多的地方。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;蒋青云的一线观察提供了一个窗口：目前付费的人群并不均匀。像WorkBuddy这类国产综合办公Agent，很多用户还停留在免费额度或者小额充值买积分的阶段；真正愿意为“深度能力”大额付费的用户，反而更多流向了Codex这类海外产品。国产产品接住了流量，却还没接住流量里最值钱的那部分。&lt;/p&gt;
+  &lt;p&gt;但这只是眼下的状态。在他接触的用户里，付费意愿正在逐渐形成，“后续收费应该没问题，毕竟效率提升的确实很多”。艾媒咨询数据显示，AI办公智能体市场结构以个人使用为主，企业部署使用为辅，其中存在着交叉人群；在个人付费意愿上，近六成的使用者愿意为AI办公智能体付费，超三成的使用者还处在观望阶段。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;二是榜单呈现的是C端注意力，真正的大钱在B端和G端。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;PC端访问量排的是谁占住了个人用户的桌面，企业市场才是金矿。企业单拼的是私有化交付、安全合规、销售和实施能力，这就对产品提出了更高的要求，Agent拥有操作本地文件、调度系统的高权限，谁先跨过信任门槛，谁才能把流量转化成收入。&lt;/p&gt;
+  &lt;p&gt;李应涛预判，虽然腾讯凭借流量惯性，短期内大概率仍会保持第一，但下半年等阿里&lt;ai-product-link data-id="13438" data-name="千问" data-logo="https://img.36dianping.com/20250909/v2_ab9ccd231d1247a28821b0595221be8b_oswg15379oswg268oswg268_img_000" data-classify-list="文本生成,辅助写作,摘要总结" data-refer-type="20"&gt;千问&lt;/ai-product-link&gt;办公完成生态缝合后，模型迭代效率提升，有机会冲上第一。字节如果完成&lt;ai-product-link data-id="14563" data-name="豆包" data-logo="https://img.36dianping.com/20250909/v2_91e348cd9b9b49e59ba6c0c98dbd5a6b_oswg8441oswg80oswg80_img_000" data-classify-list="文本生成,辅助写作,AI助理" data-refer-type="20"&gt;豆包&lt;/ai-product-link&gt;和飞书的深度捆绑，用户数也可能实现大幅提升。&lt;/p&gt;
+  &lt;p&gt;这份榜单目前只是看谁抢到了注意力，竞争真正见分晓，要看更长时间里的用户留存，和谁的企业客户先开始付费。&lt;/p&gt;
+  &lt;p&gt;*文中配图来源于pexels。&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MzkzODUxNTM2OA==&amp;amp;mid=2247540414&amp;amp;idx=1&amp;amp;sn=042ff6150b8953532b5b369b43cfd12b&amp;amp;chksm=c3b73c3bbe1d697d4a348896bc2eb12ff6a142efa354dfa4a0bafbbe3087fb181449feb7a299&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“定焦”（ID：dingjiaoone）&lt;/a&gt;，作者：李梦冉，编辑：魏佳，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Wed, 22 Jul 2026 01:54:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE1VeXVSLWtrc05vZjMtZURORmk2LTZwQWcyY0gzeFlmTDJfamdsZUp2a3lLNG1kU0VsaFhBcFU1bEFHcUZRNGRneXVqQQ</guid></item><item><title>低估Azure和Copilot的拐点！大摩：市场只给微软“16倍PE”太低了 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777616</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 01:53:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE4tY0MtMUFfUzBET191cGo4ZDlnbFF5ZGdVd3dXOVVDWmZlaUtWcWdIYXpKWUJvTlVRTHVtdjEzV0hyMW9Kc3RvNFQ1UnJBOTg4NVFz</guid></item><item><title>美国抗衡中国新举措：拟将科研资金从高校转投AI领域 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/%E7%BE%8E%E5%9B%BD%E6%8A%97%E8%A1%A1%E4%B8%AD%E5%9B%BD%E6%96%B0%E4%B8%BE%E6%8E%AA-%E6%8B%9F%E5%B0%86%E7%A7%91%E7%A0%94%E8%B5%84%E9%87%91%E4%BB%8E%E9%AB%98%E6%A0%A1%E8%BD%AC%E6%8A%95ai%E9%A2%86%E5%9F%9F-1f59e4c0</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Wed, 22 Jul 2026 01:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi2gJBVV95cUxNT2pCaXpkay16TFRPWTY4MzBJZEh3NV93U1BvS0FPbk9vN3U4N3MyOWswbnFPRVdZZVFwdWdRXzRHakl3ZjlCN013Sl9VZzZOMEJ6UlA1QmVtY09hVzUzWmZiYmp2YjRrU0UzTDZPMzNHOS1NRDhROFF6eHFnaTNyTDlHdVRIcEozMEVWS3B1Rzk3Z0pMRnc1dnF4RGsxSlEybk9oVXFjVG5wa2p3b2V5QXhFZk1CU05GSzV0UkQweFRIQVVsNlVHc0lmTWNGYkF4ODNLam10cFFzcFNXX2tQcXd5NnpWdjlJdC1OaWRtaHhVREp0TVMtTmlMT29HWEdyWW81Yzc4SnBMZncxVHZRZVlHWHlyRVhWcUVsdnkxRVJ5VEtjYWdJT3M4NWtOdkREanQ5X0pFUDN1b1VjenZaUk5jazl6NzM0dlFMekFHS2tvaHUyc2JnTGdR</guid></item><item><title>刚刚，Gemini 3.6 Flash 正式发布，但网友笑得更大声了 - 爱范儿</title><link>https://www.ifanr.com/1672647</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
             &lt;p class="o-single-normal-content"&gt;
               &lt;h1 class="c-single-normal__title"&gt;刚刚，Gemini 3.6 Flash 正式发布，但网友笑得更大声了&lt;/h1&gt;
             &lt;/p&gt;
@@ -187,7 +585,90 @@
 &lt;p&gt;反正 Gemini 4 的预训练都开跑了。这一把要是再翻车，那句阿尔茨海默的玩笑，可就真要成谶语了。&lt;/p&gt;
 
   &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 22 Jul 2026 01:47:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE10cGRKZTVYVE1jbi1zbXRVREdhTncySERJTkVELTRpdEVJSlc0a1p4VldsMF9xVEFHVjhZblZFNkNNMGc</guid></item><item><title>担心EUV光刻机流到中国！荷兰将中国半导体列为极高风险：阿斯麦被逼着一台一台数机器 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138125.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Wed, 22 Jul 2026 01:47:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE10cGRKZTVYVE1jbi1zbXRVREdhTncySERJTkVELTRpdEVJSlc0a1p4VldsMF9xVEFHVjhZblZFNkNNMGc</guid></item><item><title>美股芯片与AI云集体爆发，原因是竟然是.NV...... - 36Kr</title><link>https://www.36kr.com/p/3906114096469379</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;&lt;strong&gt;今天美股半导体终于打出了一场像样的反攻。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;闪迪上涨14.27%，西部数据上涨12.51%，美光上涨12.17%，市值重回1万亿美元以上，希捷上涨11.14%。&lt;/p&gt;
+  &lt;p&gt;另一边，英特尔上涨8.64%，AMD上涨8.11%，台积电上涨5.51%，阿斯麦上涨3.59%；AI算力云公司NBIS更是暴涨18.78%，CRWV涨8.92%。&lt;/p&gt;
+  &lt;p&gt;表面看，这是资金集体捞底科技股。真正的变化却更具体：存储价格开始重新上修，芯片公司拿到了真实客户，Neocloud也开始用长期合同证明，巨额资本开支不是只会烧钱，而是能够转化为收入。&lt;/p&gt;
+  &lt;p&gt;这三条线在同一天合流，才是半导体大涨的深层原因。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;效率提升，没有打垮存储总需求&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;根据&lt;strong&gt;美股投资网&lt;/strong&gt;对研报的深入分析，存储板块的直接催化剂来自摩根士丹利半导体分析师 Joseph Moore：&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;数据中心存储短缺正在持续恶化，且短期内尚未看到明显缓解迹象；按同一口径计算，相关存储价格从二季度到三季度已至少上涨 25%，而显著的新增供给在 2028 年之前恐怕都难以落地。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,500" src="https://img.36krcdn.com/hsossms/20260722/v2_c872e3fdf1a94da9a81c5d16acbc1208@000000_oswg222028oswg1080oswg500_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;为什么这一判断能让存储产业链集体上涨超过10%？&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;因为过去几周，市场真正担心的并不是AI需求突然消失，而是AI模型和芯片变得更高效以后，单位计算需要的HBM、DRAM和NAND会下降，最终削弱整个存储周期。&lt;/p&gt;
+  &lt;p&gt;但资金现在重新接受了另一种可能：&lt;/p&gt;
+  &lt;p&gt;单位消耗下降，不等于总需求下降。&lt;/p&gt;
+  &lt;p&gt;模型调用成本越低，AI应用越容易普及；应用越多，推理次数、数据吞吐和需要长期保存的数据也越多。效率提升节省了单次调用的资源，却可能带来更大的总使用量。市场开始交易的，正是这种“越便宜、用得越多”的需求扩张。&lt;/p&gt;
+  &lt;p&gt;供给端又没有同步放开。HBM持续占用先进DRAM产能，企业级SSD需求被AI训练、推理和数据留存推高，而存储厂商经历上一轮下行周期后，扩产明显更加克制。需求增长、产能迁移和资本开支纪律同时出现，涨价就会迅速转化为利润率弹性。&lt;/p&gt;
+  &lt;p&gt;这才是美光、闪迪涨幅远超大盘的核心。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;韩国筹码解释了：为什么反弹这么猛&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;基本面决定方向，仓位结构决定速度。&lt;/p&gt;
+  &lt;p&gt;四张韩国市场杠杆图放在一起看，信息很清楚。截至7月20日，韩国散户杠杆温度计达到47.61%，处于2024年以来偏高区域；KOSPI市值与GDP之比约200%，说明估值和交易情绪都不便宜。&lt;/p&gt;
+  &lt;p&gt;但另一边，融资余额与存管资金之比R2只有29.62%，处于自身近十年的较低分位；强平金额约308亿韩元，强平与未收比为4.6%，仍低于10%的爆仓警戒线。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,724" src="https://img.36krcdn.com/hsossms/20260722/v2_51024a9693874c05b0bf3b25faa9fb01@000000_oswg291139oswg1080oswg724_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,636" src="https://img.36krcdn.com/hsossms/20260722/v2_f3387e80771342f5baee008318a004e2@000000_oswg155009oswg1080oswg636_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,786" src="https://img.36krcdn.com/hsossms/20260722/v2_52bdbfb942e44a9491af812a0796e6ef@000000_oswg296346oswg1080oswg786_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,504" src="https://img.36krcdn.com/hsossms/20260722/v2_89d2ffa5f07c4abcba7d56faaad991da@000000_oswg173435oswg1080oswg504_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这组数据并不矛盾。杠杆温度计反映的是交易热度和拥挤程度，R2与强平数据观察的则是融资盘承载力和爆仓压力。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;换句话说，韩国市场仍然很火热，但最脆弱的一批高杠杆筹码已经在前期回撤中被清理，系统还没有进入失控式爆仓。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;因此，当摩根士丹利重新确认存储短缺，基本面买盘、捞底资金和空头回补同时出现，反弹自然会被放大。&lt;/p&gt;
+  &lt;p&gt;今天既有存储价格预期上修，也有去杠杆后的仓位修复。前者决定为什么涨，后者决定为什么一天就能涨十几个点。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;7月29日，SKHY将迎来市场结构重置&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;韩国市场还有一个更具体的交易节点：7月29日。&lt;/p&gt;
+  &lt;p&gt;按韩国存托结算院披露的安排，7月29日起，SK海力士ADR——SKHY与韩国本地股之间的转换通道将开放。每10份ADR对应1股韩国普通股。持有本地股的机构可以将股.票存入托管体系并生成ADR，ADR持有人也可以注销ADR，提取韩国普通股。&lt;/p&gt;
+  &lt;p&gt;关键是，两边的价格差得太多。&lt;/p&gt;
+  &lt;p&gt;7月21日，SKHY收于171.94美元；按韩国本地股183.6万韩元的收盘价和当日汇率静态折算，每份ADR对应价值约124美元。&lt;strong&gt;也就是说，当前溢价接近39%。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="286,159" src="https://img.36krcdn.com/hsossms/20260722/v2_d9b0fbd430f341ff9b21ffb406101120@000000_oswg34373oswg286oswg159_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;转换通道打开后，机构可以买入价格较低的韩国股.票，再转换成ADR在美国卖出。这个过程会增加美股ADR供应，并减少韩国市场的可流通筹码，推动两地价格靠拢。&lt;/p&gt;
+  &lt;p&gt;但这不是零成本、瞬间完成的无风险套利。转换仍受汇率、手续费、托管规则、结算时间和股.票借贷条件约束；SEC招股书也提示，ADR换回普通股后，未必在所有情况下都能重新存入并生成ADR。&lt;/p&gt;
+  &lt;p&gt;因此，7月29日以后溢价大概率收窄，但价差不一定在一天内完全消失。&lt;strong&gt;短期风险更偏向SKHY承压，韩国本地股则可能获得套利买盘支持。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;变化的是两地市场的定价机制，不是SK海力士的基本面。DRAM短缺、HBM需求和AI资本开支逻辑仍然存在，但再好的公司，也不代表接近39%的额外溢价是安全的。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;AMD卖系统，英特尔卖信任&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;存储点火以后，资金迅速向芯片设计、制造和设备端扩散。&lt;/p&gt;
+  &lt;p&gt;AMD大涨8.11%，直接催化来自微软。&lt;strong&gt;微软确认将在Azure规模部署AMD Helios机架系统&lt;/strong&gt;，用于前沿模型推理和Azure AI服务，并计划在2026年下半年开始接收产品。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="836,350" src="https://img.36krcdn.com/hsossms/20260722/v2_9a05f35cdc764fe8b290e84d6d18f508@000000_oswg113593oswg836oswg350_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;Helios的重要性在于，它不是一颗孤立的GPU，而是把Instinct MI455X加速器、Zen 6“Venice”EPYC处理器、Pensando网络和ROCm软件整合成完整机架。&lt;/p&gt;
+  &lt;p&gt;过去AMD更多被视为英伟达之外的第二选择。&lt;strong&gt;微软此次部署说明，AMD开始具备向超大规模云客户交付整套AI基础设施的能力。&lt;/strong&gt;市场重估的不是一笔芯片订单，而是AMD从卖芯片走向卖系统后，单个客户的收入上限被打开。&lt;/p&gt;
+  &lt;p&gt;英特尔上涨8.64%，修复的则是另一种折价。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Fortinet（FTNT）将采用Intel 4工艺生产下一代SP6安全处理器，成为陈立武上任后英特尔代工业务首个公开点名的知名企业客户。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="576,356" src="https://img.36krcdn.com/hsossms/20260722/v2_fcc0e656b15045e1876a08a09608fff1@000000_oswg96907oswg576oswg356_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这笔订单未必足以明显改变短期收入，也不能直接证明18A已经成功，&lt;strong&gt;但它至少打破了“英特尔代工投入巨大、外部客户却不愿下单”的悲观叙事。&lt;/strong&gt;市场交易的是客户信任开始修复，而不是一颗SP6能贡献多少利润。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;Neocloud集体重估&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;如果说存储和芯片是今天反弹的基础，那么弹性最大的一条线，是AI算力云从“重资产烧钱”向“合同和现金流兑现”切换。&lt;/p&gt;
+  &lt;p&gt;这轮重估最早由IREN触发。&lt;/p&gt;
+  &lt;p&gt;7月20日也就是昨天，IREN确认签下总额约28亿美元的多年期AI云服务合同，并将2026年底AI Cloud年化收入目标从37亿美元上调至40亿美元以上，其中约85%已经获得合同覆盖。&lt;/p&gt;
+  &lt;p&gt;更关键的是，近期合同中的客户预付款约相当于相关GPU资本支出的45%，合同加权平均期限约为4年。IREN不再完全依赖自身融资购买GPU，而是由客户提前承担相当一部分建设成本。&lt;/p&gt;
+  &lt;p&gt;这直接击中了市场此前最担心的问题：Neocloud不断购买GPU、建设数据中心，但客户需求能否跟上？资本开支什么时候才能变成收入？&lt;/p&gt;
+  &lt;p&gt;IREN给出的答案是，客户不仅愿意签多年合同，还愿意支付预付款提前锁定算力。消息公布后，IREN在7月20日上涨约19.6%，7月21日再涨2.71%。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;IREN先验证了商业模式，Nebius随后接力点火。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;NBIS在7月21日暴涨18.78%，除了受Neocloud板块重估带动，&lt;strong&gt;更直接的催化是英伟达披露持有其9.3%股权。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;英伟达既是Nebius的重要GPU供应商，又通过资本持股强化双方绑定。市场因此重新评估Nebius的数据中心扩张、融资能力和未来需求。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,812" src="https://img.36krcdn.com/hsossms/20260722/v2_6708f298d32340b8bcd5476a63c5d346@000000_oswg648487oswg1080oswg812_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;CoreWeave同日上涨8.92%。它当天没有NBIS同等级的新公司公告，主要受益于整个Neocloud板块估值修复。IREN证明长期合同可以覆盖大规模资本开支，NBIS又获得英伟达持股背书，资金自然进一步流向最典型的GPU云平台CRWV。&lt;/p&gt;
+  &lt;p&gt;这条传导链很清楚：IREN先用28亿美元合同、85%的目标覆盖率和45%的GPU资本支出预付款，证明Neocloud可以把机房与GPU转化为长期收入；NBIS再凭英伟达9.3%持股成为当天最强弹性；CRWV则跟随整个板块完成估值修复。&lt;/p&gt;
+  &lt;p&gt;市场重新定价的不是一句空泛的“算力紧缺”，而是更具体的商业闭环：客户签长期合同并支付预付款，Neocloud购买GPU、建设数据中心，算力上线后转化为多年收入。&lt;/p&gt;
+  &lt;p&gt;AI云开始从讲建设规模，进入讲合同覆盖、资金来源和现金流兑现的阶段。&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;摩根大通判断半导体进入战术买点&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;在芯片股集体反攻的同时，摩根大通策略师Mislav Matejka团队给出了一个更上层的判断：AI与动量股的回调已经进入较成熟阶段，可以利用夏季波动，战术性逢低加仓半导体。&lt;/p&gt;
+  &lt;p&gt;这个判断的关键，是区分“AI泡沫破裂”与“拥挤度释放”。&lt;/p&gt;
+  &lt;p&gt;过去数周，费城半导体指数从高点一度回撤超过20%，KOSPI回撤约25%，三星、美光等AI硬件公司跌幅更大。但MSCI World仍停留在距离历史高点约1%至2%的位置。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="792,436" src="https://img.36krcdn.com/hsossms/20260722/v2_d164ad7e60d34ffcb0c510c012e84d0f@000000_oswg31144oswg792oswg436_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;这说明资金没有全面撤离股.票市场，而是在清理前期最拥挤的AI和动量仓位，并向周期股、欧洲市场和部分低位板块扩散。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;半导体之所以成为摩根大通偏好的战术方向，是因为股价跌得比盈利预期更快。&lt;/strong&gt;SOX的RSI快速接近超卖区间，但AI数据中心资本开支、存储价格和早期财报并没有同步坍塌。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="800,580" src="https://img.36krcdn.com/hsossms/20260722/v2_48584cd41548497480f245211b6ed339@000000_oswg57738oswg800oswg580_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;如果下跌主要来自估值压缩和仓位出清，而不是盈利预期崩溃，那么回调释放的是过热风险，而不是结束整个产业周期。&lt;/p&gt;
+  &lt;p&gt;宏观环境也一度提供了缓冲。美国6月CPI环比下降0.4%，三个月年化增速降至约2.8%；二季度早期财报表现仍有韧性，减轻了利率和盈利对科技股的双重压制。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="784,410" src="https://img.36krcdn.com/hsossms/20260722/v2_0045b07f7f2848a68988c4b1e844a19e@000000_oswg33850oswg784oswg410_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;不过，这个战术买点不是无条件成立。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;第一，油价不能重新失控。&lt;/strong&gt;摩根大通报告中的通胀缓和，部分建立在Brent原油此前季度回落约25%的基础上；但最新中东局势已经把油价重新推向高位，宏观缓冲正在变薄。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;第二，超大规模云厂商不能下调AI资本开支。&lt;/strong&gt;半导体、存储和Neocloud的收入预期，最终都依赖微软、Meta、Google、Amazon等巨头继续投入。如果后续财报开始下修CAPEX，今天的估值修复会迅速失去支撑。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;第三，存储新增供给不能提前释放。&lt;/strong&gt;如果DRAM和NAND扩产速度快于预期，2028年前的紧平衡假设就会被打破，涨价和利润率弹性也会提前见顶。&lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MjM5ODU5NjIzMg==&amp;amp;mid=2917170392&amp;amp;idx=1&amp;amp;sn=fa07a2e01b8ebc9562c3994f9e01e459&amp;amp;chksm=8f719c5634bd0b9b36e62d691ca33d68ce2fc0454d907478d7d623aef7acf776024ad6881dc3&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“美股投资网”（ID：tradesmax）&lt;/a&gt;，作者：StockWe.com，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36Kr</author><pubDate>Wed, 22 Jul 2026 01:45:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE9RQ2dRajFCWnJiZHdnOTlLYkZldU9ZTl9Kdnc3STYyUm93eWxrNVZnWG92aEZTd3dIeDVSSFhwUjhOZDNiWjVLVFpFbDhhanVo</guid></item><item><title>担心EUV光刻机流到中国！荷兰将中国半导体列为极高风险：阿斯麦被逼着一台一台数机器 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138125.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;担心EUV光刻机流到中国！荷兰将中国半导体列为极高风险：阿斯麦被逼着一台一台数机器&lt;/p&gt;
           
@@ -252,7 +733,31 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 01:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5tcVJkSWxleDRVTmdlczBEZ2tWVHc0aWxJR04yMkQ1TDJRUXlYelFYcjNpZzF2WDlpOWtCTk01cE1BOGYxb0dYeHc4RUQwZVJoZkNUeU9vQ2U</guid></item><item><title>Anthropic下盗版书被罚15亿美元 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138122.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 01:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5tcVJkSWxleDRVTmdlczBEZ2tWVHc0aWxJR04yMkQ1TDJRUXlYelFYcjNpZzF2WDlpOWtCTk01cE1BOGYxb0dYeHc4RUQwZVJoZkNUeU9vQ2U</guid></item><item><title>戏剧性一幕：OpenAI模型失控攻入Hugging Face 关键时刻靠中国开源模型救场 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138126.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息 ，&lt;strong&gt;当地时间7月21日，OpenAI表示，其部分AI模型在一次安全测试中出现失控行为，导致AI初创公司Hugging Face的基础设施在上周遭到入侵。该公司称此为“前所未有的网络安全事件”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI在博客文章中表示，上述AI模型包括GPT-5.6 Sol以及另一款尚未发布、能力更强的模型。这些模型在网络安全相关方面设置了较低的防护限制，以便用于评估和测试目的。&lt;/p&gt;
+&lt;p&gt;此前，Hugging Face已于7月16日首次报告了其基础设施遭遇“入侵”的情况。&lt;/p&gt;
+&lt;p&gt;7月16日，Hugging Face发布通告，披露基础设施在7月13日所在一周遭到自主AI智能体入侵。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;根据当时披露的事件细节，攻击者利用Hugging Face数据集处理管道内两处代码执行漏洞：远程代码数据集加载器、数据集配置模板注入漏洞，在计算工作节点执行恶意代码。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;期间，攻击者持续提升节点访问权限，窃取云服务与集群凭证，并横向渗透至多个内部集群；同时大量使用临时沙盒，依托公共服务搭建具备自迁移能力的命令控制通道。&lt;/p&gt;
+&lt;p&gt;据悉，本次未授权访问仅波及少量内部数据集与服务凭证。Hugging Face 表示，未发现公开模型、数据集、Spaces 服务遭到篡改，容器镜像、软件安装包等软件供应链也核查确认未被污染。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据了解，Hugging Face 自身的异常检测管道利用基于大语言模型的安全遥测分类，通过关联日常噪音中原本会被忽略的信号，首先标记了此次入侵。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为了从超过17000条记录的攻击者行动中重建完整攻击时间线，Hugging Face在整个日志上运行了大语言模型驱动的分析智能体，将通常需要数天的工作压缩至数小时。&lt;/p&gt;
+&lt;p&gt;调查过程中暴露出问题：主流商用前沿模型API拒绝开展取证分析。原因在于模型安全护栏难以区分两种场景 —— 安全人员提交真实攻击载荷、控制通道样本开展调查，与攻击者发起恶意行动。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugging Face表示，随后他们“改为在自有基础设施上运行 GLM 5.2 这一开放权重模型进行取证分析”。Hugging Face 补充道：“这还有第二个好处：没有攻击者数据，也没有其中引用的任何凭证离开我们的环境……”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;需要补充的是，GLM 5.2 是中国大模型公司智谱推出的旗舰开放权重大模型。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/d3f7bcb7bfc94d6f82a3de39d5f083fe.jpg" target="_blank"&gt;&lt;img alt="戏剧性一幕：OpenAI模型失控攻入Hugging Face  关键时刻靠中国开源模型救场" h="399" src="//img1.mydrivers.com/img/20260722/s_d3f7bcb7bfc94d6f82a3de39d5f083fe.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 01:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBMS1BwUVp2OXpBZVRtal9XVkZJN3M3Rjc1cWlvaDltR2JmT2xuX19mdlpzMUpIZE5UMXEzQjkycVB1clIzNHNQaXYyRXAtbGc1dEw2OVE3dy0</guid></item><item><title>Anthropic下盗版书被罚15亿美元 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138122.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;加州北区地方法院批准了美国历史上金额最高的版权索赔案，AI巨头Anthropic因下载盗版书籍训练人工智能模型需向版权所有者支付15亿美元和解金，加州法院已批准该和解协议。&lt;/p&gt;
 &lt;p align="center"&gt;&lt;img alt="Anthropic下盗版书被罚15亿美元" h="447" src="//img1.mydrivers.com/img/20260722/b0b96dde7def42e396f18954f3231197.jpg" w="600"&gt;&lt;/p&gt;
@@ -446,7 +951,29 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 00:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9SUVluQldBSFlqYldZcVMzTXVLTWxaV2FhTlVUWExNSHVsdmkyX29lbmZvN0xxbHVXSGlpcmlnSFpZSkY1SFdCVC1yZ2xTRGR0SmJvNENQV04</guid></item><item><title>Vera Rubin实测性能首度披露，性能大幅提升！英伟达在AMD大会之前“砸场子” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777596</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 00:27:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBxcmJnR1VLazhRRC1xb0JZNHFTaWxTTzgwUlUwRDNuc214NkVNZWszcjFzc3haZkZHemZCeGVfNzRjLVBDQ2NoLTc0WmNIX3NZS19F</guid></item><item><title>苹果将在美国推月租iPhone 17等业务：欠费停用 防止拆零件等行为！ - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138110.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 00:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9SUVluQldBSFlqYldZcVMzTXVLTWxaV2FhTlVUWExNSHVsdmkyX29lbmZvN0xxbHVXSGlpcmlnSFpZSkY1SFdCVC1yZ2xTRGR0SmJvNENQV04</guid></item><item><title>索尼FX5电影摄影机今晚登场：支持5K片门全开录像 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138112.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，索尼官宣电影摄影机新品发布会在今晚22点开启，活动主题为“光引未来 赋能创作”。&lt;/p&gt;
+&lt;p&gt;业内爆料&lt;span&gt;&lt;strong&gt;本次发布会核心新品是FX5专业电影机，同时还有一款轻量化长焦镜头一同亮相。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/8d7cf9942e7b40a98a78058952e75a5c.png" target="_blank"&gt;&lt;img alt="索尼FX5电影摄影机今晚登场：支持5K片门全开录像" h="261" src="//img1.mydrivers.com/img/20260722/s_8d7cf9942e7b40a98a78058952e75a5c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这款新机外观延续FX3的机身造型，整机重量控制在750克，外出拍摄携带负担更小。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内部搭载1660万像素全堆栈CMOS传感器，搭配BIONZ XR 2图像处理器，采用索尼A7R6同款AI自动对焦功能&lt;/strong&gt;，人物、物体追踪抓拍都更稳定，户外跟拍不容易脱焦。&lt;/p&gt;
+&lt;p&gt;视频规格方面，&lt;strong&gt;支持5K片门全开录制，还能机内直出16-bit RAW视频&lt;/strong&gt;，包含X-OCN LT、C1、C2多种编码格式，后期调色空间充足。&lt;/p&gt;
+&lt;p&gt;机器配备三档原生ISO，分别为800、4000、12800，搭配16档动态范围，明暗画面细节都能完整保留，机内自带伪色显示功能，拍摄时能快速判断曝光是否准确。&lt;/p&gt;
+&lt;p&gt;机身自带五轴防抖，手持拍摄画面稳定性更强，系统菜单改用威尼斯高端电影机同款布局，专业创作者上手门槛更低。&lt;/p&gt;
+&lt;p&gt;硬件取舍偏向纯视频创作，没有内置ND滤镜，不支持外接SSD录制，也完全取消拍照功能。&lt;/p&gt;
+&lt;p&gt;存储配备双卡槽，兼容SD卡与CFExpress Type-A存储卡，续航使用A7R6同款NP-SA100电池。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;除电影摄影机外，发布会预计还会推出FE 100-400mm f/5.6-8全画幅长焦镜头&lt;/strong&gt;，整体走轻巧路线，自带镜头防抖，适合户外远景、纪实类视频拍摄，和FX5搭配能覆盖更多拍摄场景。&lt;/p&gt;
+&lt;p&gt;今晚发布会将完整公布国内售价、上市时间与配套配件信息，有器材换新需求的影视从业者可以准时观看直播。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 00:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1KSGN4S01ZQ09uUUw1NnE4ZFRFWEhTVDF2SjRfZFI2MU9nSVU0aDBxSkJvZzM2Vnkzbm9FODcxTzlfV05oVjZ5ck53S0JDaUJDc01aUG55ZU4</guid></item><item><title>Vera Rubin实测性能首度披露，性能大幅提升！英伟达在AMD大会之前“砸场子” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777596</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 00:27:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBxcmJnR1VLazhRRC1xb0JZNHFTaWxTTzgwUlUwRDNuc214NkVNZWszcjFzc3haZkZHemZCeGVfNzRjLVBDQ2NoLTc0WmNIX3NZS19F</guid></item><item><title>苹果将在美国推月租iPhone 17等业务：欠费停用 防止拆零件等行为！ - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138110.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月22日消息，对于暂时没足够预算入手iPhone 17等最新苹果设备的用户来说，苹果官方筹备已久的美国月租租赁业务落地时间最快就在下周。&lt;/p&gt;
 &lt;p&gt;海外科技媒体深挖最新发布的iOS 27 Beta 4系统固件代码时，发现苹果正在为Apple Upgrade全新租赁计划开发配套的管控机制，专门针对出现拖欠付款行为的客户，对其名下处于租赁状态的设备施加远程功能限制。&lt;/p&gt;
@@ -553,7 +1080,135 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 00:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBCUHZXX0wwZFFlSFN2THY2QmlFcXRzZkdkMWFCTWttTTY1ekRIdkZodUZqckhZMjBqeUIyTi11OUFxMVJ1MDFkcHdjbWJwSnYzNGNMbUtyTHI</guid></item><item><title>中国人工智能发展之路引发的震撼 质疑 不安 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260721-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8F%91%E5%B1%95%E4%B9%8B%E8%B7%AF%E5%BC%95%E5%8F%91%E7%9A%84%E9%9C%87%E6%92%BC-%E8%B4%A8%E7%96%91-%E4%B8%8D%E5%AE%89</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 21 Jul 2026 23:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMixgJBVV95cUxNU3hFWWJOU3BfVDk4LXJDcUVTaEZ3V3hjMHh0OGlnQnhXbjJ0QXFrRVNsWlV2TUJidnlFVlNQb3l5V25LcTBjQ1dWcWpNalUyNWhrRkpLOGxMU2lqc2ZTS0FBS1dHQkFleXF6cUxnLXk5WnlYWWNFRUp1aWdOMnZNMmlTM1ZscEpXekN1SE1GcGloRjl0MU1rWmZVUDhBNUhvTC1fRGdZdmp0YkxDbXdxTUlYd2ZKQXB5M29rdmFGNmdPQ1c1RjR2dlhSVUJUX1YyVk5qbnBKdjVHUnctQlQ2Y281YTJucUNPVGR0T1RqTGlVeVZoNEpkVk0wS2NReDlWY21KbjJmRzN1Y04zYnVJTTR1QTJtNGV5WW1nSFhTbExDQ1R2T2VTQUtWVGsyOHFnRVVydndkemR3Q3ZRdEtzeWQ1eWRDUQ</guid></item><item><title>白宫将改革科研资金分配：从大学转向AI、影响2000亿美元预算 - 凤凰网</title><link>https://i.ifeng.com/c/8uxWTuZgKMP</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_30/FA6B8E7D12CF58EEC1159D2B76FDB8A22FD570C6_size937_w1206_h810.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="特朗普与克拉齐奥斯"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;&lt;span&gt;特朗普与克拉齐奥斯&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;凤凰网科技讯 北京时间7月22日，据《华尔街日报》报道，&lt;strong&gt;特朗普政府计划通过加大对个人科学家和AI应用的支持，而非侧重大学&lt;/strong&gt;，来加快联邦科研的改革。这是该政府加快技术发现以应对中国竞争的最新尝试。&lt;/p&gt;&lt;p&gt;白宫科学与技术政策办公室(OSTP)周二发布的一份新报告和备忘录中表示，个人科学家能够帮助美国更快地利用AI开展科学研究。该办公室发布的这些指令，&lt;strong&gt;将影响特朗普第二任期剩余时间内联邦政府每年约2000亿美元的科研与开发预算分配方向&lt;/strong&gt;&lt;strong&gt;。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;新的指导方针可能会进一步打击那些依赖联邦科研资金的大型大学。白宫在报告中表示，政府希望优先支持那些为个人提供机会、而不是直接面向高校的项目，例如奖学金和各类科研奖励。白宫称，应该效仿的示范项目包括美国国家科学基金会面向研究生的一项著名项目，以及美国国立卫生研究院针对具有创新能力科学家的资助项目。&lt;/p&gt;&lt;p&gt;此外，白宫管理和预算办公室拟议的一项规定也可能对部分大学造成阻碍。该规则将赋予政治任命官员在科研经费审批方面更大的权力，并使科研方向与政府政策重点保持一致。&lt;/p&gt;&lt;p&gt;“过去二三十年里，我们在科研资助方面变得非常僵化，总是认为应该以同样的方式、在同样的机构里，持续资助同样的研究。”白宫科学与技术政策办公室主任迈克尔·克拉齐奥斯(Michael Kratsios)在一次采访中表示。他说，周二他就这一新的科研资助方式与一所常春藤大学的负责人进行了会面，并获得了积极回应。&lt;/p&gt;&lt;p&gt;特朗普政府认为，在政府机构和大学中花费过多时间处理官僚事务，是阻碍美国发展的另一个因素。根据该计划，大学里的个人研究人员将直接获得资金，从而减少大学作为中间环节的直接参与。目前在很多情况下，科研经费通常是拨给高校，再由高校进行分配。&lt;/p&gt;&lt;p&gt;另一个重点是将AI置于科学研究的核心位置，并设定更具雄心的国家目标。例如，近期政府提出的目标包括：在2028年前部署一台强大的量子计算机，以及到2030年前启动10座新的大型核反应堆建设，以提升电力供应能力。&lt;/p&gt;&lt;p&gt;美国政府已尝试将能源部的科学专业知识和超级计算机整合到一个名为“创世纪任务”(Genesis Mission)的计划中，旨在通过与私营部门和研究人员合作，利用AI来应对研究挑战。&lt;/p&gt;&lt;p&gt;“各机构应资助那些将AI作为科学发现新工具的研究，而不仅仅是将其作为增强现有能力的辅助手段。”克拉齐奥斯和预算办公室主任拉斯·沃特(Director Russ)在关于研发资金优先事项的备忘录中写道。&lt;/p&gt;&lt;p&gt;不过，持怀疑态度的人士警告称，AI模型容易出错，而过度强调该技术可能会限制研究人员所从事的研究类型。(作者/箫雨)&lt;/p&gt;&lt;p&gt;更多一手新闻，欢迎下载凤凰新闻客户端订阅凤凰网科技。想看深度报道，请微信搜索“凤凰网科技”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 21 Jul 2026 23:38:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBWT3ZVX1hZTGxJdnBKR19ReDRZOUdtdmd0SUt0MElYdTNkMGJVZjd4X1g1dkprUVVPRVoxRVlzN0lQOW1YV1l6Yg</guid></item><item><title>一举创下3项世界纪录，中国自主研发的全球首艘41800吨双向航行自卸船正式交付 - 凤凰网</title><link>https://news.ifeng.com/c/8uxT3X8evRK</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;【环球时报报道 记者 郭媛丹】21日上午，中船集团旗下中船澄西船舶修造有限公司为力拓集团建造的自主研发的全球首艘41800吨双向航行自卸船正式交付。怀着对这艘“一举创下三项世界纪录”巨轮的好奇心，《环球时报》记者靠近这艘海上钢铁巨轮，壮阔的船体全貌徐徐铺展开来。登临船上，只见内部管线纵横交错、结构精密繁复，看似庞大笨重的船体，搭载的全套自卸输送系统却灵敏迅捷、运转高效。这艘名副其实的“全球海上自卸王”，以每小时1.2万吨的超强卸货能力，刷新行业世界纪录。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img alt="首艘41800吨自卸船21日正式交付" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/8BD9C23C99D41BB81E6F3D04E2292DDC354CE0F1_size4840_w2362_h1772.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;首艘41800吨自卸船21日正式交付&lt;/p&gt;&lt;p&gt;&lt;strong&gt;一举创下三项世界纪录&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;“这艘巨轮一举创下三项世界纪录——全球载重吨最大的浅水转运自卸船、全球卸货速度最快的专业自卸船、同吨位级别全球首艘具备双向航行功能的自卸转运船。”中船澄西船舶修造有限公司总经理张新龙在驾驶室对《环球时报》记者介绍称，这艘巨轮的顺利交付，标志着中国在高端自卸转运船舶领域实现从“跟跑”到“领跑”的关键性跨越，这背后凝聚着中国船舶工业自主创新的硬核实力和深厚底气。&lt;/p&gt;&lt;p&gt;这艘名为“WONTANARA”的自卸船完成交付后，交由船东力拓集团运营，未来将以每小时 1.2万吨的超强卸货能力在几内亚“大展身手”。“WONTANARA”总长215米，型宽42米，型深14.5米，设计吃水7.5米，载重吨41800吨，整体大货舱长近135米、舱容29000立方米。&lt;/p&gt;&lt;p&gt;“作为西芒杜铁矿项目浅水码头至深水锚地转运作业的核心装备，该船交付后将投入西非几内亚海域运营。”张新龙说，西芒杜铁矿是中几两国经贸合作的重点项目，也是共建“一带一路”的重要成果，项目全面达产后每年可向全球供应海量高品位铁矿石。&lt;/p&gt;&lt;p&gt;据介绍，此次力拓集团一共下了5艘41800吨自卸船的订单，“这5艘船投入使用将为西芒杜铁矿的稳产转运提供坚实装备保障。”张新龙说。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;41800吨自卸船是什么概念&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;提及海上货运，人们最先想到的往往是巨型集装箱船、大型油轮，却很少留意自卸船。但作为海运里不可或缺的“超级搬运工”，自卸船凭借独有的作业优势站稳一席之地。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img alt="试航中的41800吨自卸船" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/63E9D8E86D4AB8C1C12E4D621C71B7CB72992C35_size2219_w1600_h900.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;试航中的41800吨自卸船&lt;/p&gt;&lt;p&gt;张新龙介绍说，自卸船是一种自带卸货系统的特殊船型，无需港口装卸设备即可独立完成卸货，像一辆水上穿梭巴士，往返于浅水码头与深水锚地之间。“它特别适用于水深较浅或港口设施不完善、大型船舶无法靠泊或无法利用港口机械装卸货的地区和国家。”&lt;/p&gt;&lt;p&gt;站在驾驶室外的甲板上，张新龙指着横铺在甲板上的设施向《环球时报》记者介绍说，自卸船的卸货是一套连贯顺畅的机械化作业流程，整套工序层层衔接，操作简单、卸货高效，稳稳完成散货卸料工作。“第一步，工作人员会启动位于货舱底部的液压操纵斗门，两排共有60个斗门，这些斗门缓缓打开后，堆存于斗形货舱内的货物在重力作用下通过斗门连续流到封闭式输送带上，最后，灵活可调的卸料臂输送带会精准输送货物，将其投送到岸边的接收设备或堆放场地。”&lt;/p&gt;&lt;p&gt;41800吨自卸船是什么概念呢？张新龙介绍说，如果把41800吨铁矿石装进标准火车车厢，需要将近700节车皮首尾相连，绵延超过7公里，而这样一船货物，卸完仅需不到3.5小时。这意味着，未来5艘同类型船舶协同往返作业，可在24小时内为一艘20万吨级远洋散货船完成全部转运和装船，将远洋巨轮的锚地等待时间压缩至最短，有效提升矿场出货量和经济效益。&lt;/p&gt;&lt;p&gt;但想要做到这一点并不容易，这艘“全球海上自卸王”的诞生，源自堪称顶级的自卸作业系统。《环球时报》记者在船上看到，该船船首和船尾各自配备有一套独立的C型提升机构，常规模式下首尾两套自卸系统同时作业，每套卸货能力为6000吨/小时，两套同步运行总卸货能力高达1.2万吨/小时。该船还配套2条底部可逆向纵向传送皮带，可根据作业需要实现单侧或双侧灵活卸货；两条纵向输送带无论正反向航行均可正常卸货，作业不受限。右舷艏艉各配置一套伸缩式卸货臂，工作半径从32.5米至45.5米，精准对接远洋船装货舱口。&lt;/p&gt;&lt;p&gt;在海外重大矿产资源项目中，部分港口水深较浅或设施不完善，因此浅水码头至深水锚地的短途转运是制约产能释放的核心瓶颈。为突破这一核心瓶颈，中船澄西给出全新的设计方案：采用宽体浅吃水设计和双自卸系统，使单次载货量和卸货效率较现有浅水自卸转运船得到大幅提升，同时让这艘215米长的巨轮在同吨位级别浅水转运自卸船中，首次实现双向航行功能，精准匹配内河狭窄水域码头作业条件，提升进出港效率，双管齐下，提升货物转运产能。&lt;/p&gt;&lt;p&gt;张新龙表示，“由于未来的船舶需要在浅吃水条件下运行，这意味着其载货量会受到一定限制，这就需要在船型设计上对长度、宽度等多个参数进行全面优化与模拟，最终使实船能够在浅吃水条件下达成这一平衡。”&lt;/p&gt;&lt;p&gt;此外，该船使用的双向航行技术，在全球范围内尚属首次应用。正如我国的高铁采用双端驾驶室设计一样，该船同样配备了两个驾驶室。“通过取消传统的推进器，转而采用全回转推进系统，使得船舶能在狭窄的航道中实现双向航行，无需再进行掉头操作。”&lt;/p&gt;&lt;p&gt;《环球时报》记者在驾驶室实地探访看到，舱内空间十分宽敞通透，各类操控仪器高度集成、布局规整，各类运行数据实时在大屏上跳动闪烁，各项工况参数清晰直观。据介绍，这些设计在国内自卸船领域均属首例，在国际上也是业内首创的设计。依托高度集成的智能操控、双向航行等优化设计，全船仅需配置28名船员，日常航行3人即可值守，整套装卸转运作业6人就能顺畅完成，大幅压缩人力与时间成本。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;“构建起全球最完整的自卸船修造业绩图谱”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在“WONTANARA”诞生之前，全球载重吨位最大的重力式自卸船“曼哈迪”轮于2025年5月在中船澄西完成改装并成功交付。该船原为一艘超巴拿马型散货船，经中船澄西6个月改造，加装重力式自卸系统，卸货效率提升至最高可达7000吨/小时。与此前“曼哈迪”轮的卸货效率相比，WONTANARA将这一数字提升至1.2万吨/小时，整整高出71%。这不仅是一个数字的跃升，更是中船澄西乃至中国在自卸船核心系统集成能力上的全面超越。&lt;/p&gt;&lt;p&gt;经过30年的发展，中船澄西完成了从“修理”到“改装”到“建造”再到“创造”的历史性跨越。截至2026年，中船澄西修理、改装、建造自卸船近100艘，覆盖螺杆式、气动式、抓斗式、水车式、重力式等全部技术类型。&lt;/p&gt;&lt;p&gt;“目前我们已经构建起全球最完整的自卸船修造业绩图谱，中船澄西在目前的自卸船市场占有率全球第一。”张新龙自豪地表示，“可以说，我们在自卸船的赛道是独一份。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 21 Jul 2026 23:27:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1IYkE4NWw4MXNGR2l0ZThPMnNSS1NNc1FRSlFTZy1ENW5MSlJKU3NPSVFtZWRjMWdhNnBIVW5UNEU0QUg1ZXFna1dRc2g</guid></item><item><title>法国世界报 - 人工智能：中国正在削弱欧洲在规则制定上的优势 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E4%B8%96%E7%95%8C%E6%8A%A5/20260721-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E4%B8%AD%E5%9B%BD%E6%AD%A3%E5%9C%A8%E5%89%8A%E5%BC%B1%E6%AC%A7%E6%B4%B2%E5%9C%A8%E8%A7%84%E5%88%99%E5%88%B6%E5%AE%9A%E4%B8%8A%E7%9A%84%E4%BC%98%E5%8A%BF</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 21 Jul 2026 23:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMisgNBVV95cUxPVG1vTEFkQmsyQXZDTm5PRUtzNUktTEV3MkRkZWRYaEhkNTNzWTBYLWU1ZUU4Q1B2NUxkZFZvQkFxNVVWZTlNbTd6aWZUSURvaWlycmVnN0pSVWJxQmc3N3lQY2pqLU9aWVJ6Ym5CV2xZcW94bUJZR3R0ZHFLR3RoT1Q1WmNLVTNvclBGTmVQejFTNVhXQ2JMVHZwYTE5TG5BOTFsZVUyYmhPcG9tYkZ3SXFhTjFWY1BRMlpNWnVpVUpUcVhBX1NDWWt5ZFIwQkxsWldUNUZNS2JOVTZoNkJhWWxHa1YyZFU3a3poWTQ2dG8xanJMTGNMckRwdHFTTWdMVS10eGxWcDFZNllZQl9vbThSNVhnWDNTSDF0UFhLMk50cXNWUjFVZnFncS1vNVRORm5HclRnQmtlakNhT3k0YndUOWlnYVozU3VFTnd4aTJ4TEVjbWVOc1FtWDZLQ24xUkRGTWtVbkFsOUt6SWtFeVlSMkw2eFJ1TG9qWHkzeUJUT0RXaV9RQmxUZnFVcVA0SFNXc3Z0UEdYa3NKYlc0WmFsUy1SbFh5TEk5dXpqeVdyQQ</guid></item><item><title>两大利空冲击或低于预期，AI硬件股获支撑，费城半导体指数两连涨 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777601</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 22:45:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE94RUkzZU5vVkxwVlZLdjVmWG1qd1o5UkxiRUxFTHB2a054cG1IQzlibkNqNTVNOVFjaFh5MGNPRG5qeTV6NURtOVFjRlFMUkN1YklZ</guid></item><item><title>OpenAI智能体用户突破1000万，ChatGPT Work发布后需求翻倍 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777599</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 21:30:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1zVVllcC1JMzhxYjVZbS04SUZqSW1jRFdIXzJWUkNEczRhWWxLQnNmMXRXcm5IVkM0eU5TUTNXOTlheVJLbmF5UDVrVzlLOGMwSkxV</guid></item><item><title>中国企业在半导体材料领域展开攻势 - 日经中文网</title><link>https://cn.nikkei.com/china/ccompany/63084-2026-07-22-05-00-08.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9jUFAzangybUIyaGF0QVh4a3JNc2Z5OTd3UHVpcTBtZ3pCRWNVZFJHZmE3VVJzZEpyQWw4bUdlYnQ5RWRIcEpabkNPdDRldFVSZi1sMnNKdWV0alhxbHBsbGwzLXJUb19fTUZwQVVMS2ZLUjZ6T2c?oc=5" target="_blank"&gt;中国企业在半导体材料领域展开攻势&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;日经中文网&lt;/font&gt;</description><author>日经中文网</author><pubDate>Tue, 21 Jul 2026 21:00:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTE9jUFAzangybUIyaGF0QVh4a3JNc2Z5OTd3UHVpcTBtZ3pCRWNVZFJHZmE3VVJzZEpyQWw4bUdlYnQ5RWRIcEpabkNPdDRldFVSZi1sMnNKdWV0alhxbHBsbGwzLXJUb19fTUZwQVVMS2ZLUjZ6T2c</guid></item><item><title>申真谞2:1击败KataGo：被设计的胜利难解围棋未来 - Sina Sports</title><link>https://sports.sina.cn/others/qipai/2026-07-21/detail-iniiqefa9223337.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 00:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBCUHZXX0wwZFFlSFN2THY2QmlFcXRzZkdkMWFCTWttTTY1ekRIdkZodUZqckhZMjBqeUIyTi11OUFxMVJ1MDFkcHdjbWJwSnYzNGNMbUtyTHI</guid></item><item><title>中国人工智能发展之路引发的震撼 质疑 不安 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260721-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8F%91%E5%B1%95%E4%B9%8B%E8%B7%AF%E5%BC%95%E5%8F%91%E7%9A%84%E9%9C%87%E6%92%BC-%E8%B4%A8%E7%96%91-%E4%B8%8D%E5%AE%89</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 21 Jul 2026 23:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMixgJBVV95cUxNU3hFWWJOU3BfVDk4LXJDcUVTaEZ3V3hjMHh0OGlnQnhXbjJ0QXFrRVNsWlV2TUJidnlFVlNQb3l5V25LcTBjQ1dWcWpNalUyNWhrRkpLOGxMU2lqc2ZTS0FBS1dHQkFleXF6cUxnLXk5WnlYWWNFRUp1aWdOMnZNMmlTM1ZscEpXekN1SE1GcGloRjl0MU1rWmZVUDhBNUhvTC1fRGdZdmp0YkxDbXdxTUlYd2ZKQXB5M29rdmFGNmdPQ1c1RjR2dlhSVUJUX1YyVk5qbnBKdjVHUnctQlQ2Y281YTJucUNPVGR0T1RqTGlVeVZoNEpkVk0wS2NReDlWY21KbjJmRzN1Y04zYnVJTTR1QTJtNGV5WW1nSFhTbExDQ1R2T2VTQUtWVGsyOHFnRVVydndkemR3Q3ZRdEtzeWQ1eWRDUQ</guid></item><item><title>白宫将改革科研资金分配：从大学转向AI、影响2000亿美元预算 - 凤凰网</title><link>https://i.ifeng.com/c/8uxWTuZgKMP</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_30/FA6B8E7D12CF58EEC1159D2B76FDB8A22FD570C6_size937_w1206_h810.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="特朗普与克拉齐奥斯"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;&lt;span&gt;特朗普与克拉齐奥斯&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;凤凰网科技讯 北京时间7月22日，据《华尔街日报》报道，&lt;strong&gt;特朗普政府计划通过加大对个人科学家和AI应用的支持，而非侧重大学&lt;/strong&gt;，来加快联邦科研的改革。这是该政府加快技术发现以应对中国竞争的最新尝试。&lt;/p&gt;&lt;p&gt;白宫科学与技术政策办公室(OSTP)周二发布的一份新报告和备忘录中表示，个人科学家能够帮助美国更快地利用AI开展科学研究。该办公室发布的这些指令，&lt;strong&gt;将影响特朗普第二任期剩余时间内联邦政府每年约2000亿美元的科研与开发预算分配方向&lt;/strong&gt;&lt;strong&gt;。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;新的指导方针可能会进一步打击那些依赖联邦科研资金的大型大学。白宫在报告中表示，政府希望优先支持那些为个人提供机会、而不是直接面向高校的项目，例如奖学金和各类科研奖励。白宫称，应该效仿的示范项目包括美国国家科学基金会面向研究生的一项著名项目，以及美国国立卫生研究院针对具有创新能力科学家的资助项目。&lt;/p&gt;&lt;p&gt;此外，白宫管理和预算办公室拟议的一项规定也可能对部分大学造成阻碍。该规则将赋予政治任命官员在科研经费审批方面更大的权力，并使科研方向与政府政策重点保持一致。&lt;/p&gt;&lt;p&gt;“过去二三十年里，我们在科研资助方面变得非常僵化，总是认为应该以同样的方式、在同样的机构里，持续资助同样的研究。”白宫科学与技术政策办公室主任迈克尔·克拉齐奥斯(Michael Kratsios)在一次采访中表示。他说，周二他就这一新的科研资助方式与一所常春藤大学的负责人进行了会面，并获得了积极回应。&lt;/p&gt;&lt;p&gt;特朗普政府认为，在政府机构和大学中花费过多时间处理官僚事务，是阻碍美国发展的另一个因素。根据该计划，大学里的个人研究人员将直接获得资金，从而减少大学作为中间环节的直接参与。目前在很多情况下，科研经费通常是拨给高校，再由高校进行分配。&lt;/p&gt;&lt;p&gt;另一个重点是将AI置于科学研究的核心位置，并设定更具雄心的国家目标。例如，近期政府提出的目标包括：在2028年前部署一台强大的量子计算机，以及到2030年前启动10座新的大型核反应堆建设，以提升电力供应能力。&lt;/p&gt;&lt;p&gt;美国政府已尝试将能源部的科学专业知识和超级计算机整合到一个名为“创世纪任务”(Genesis Mission)的计划中，旨在通过与私营部门和研究人员合作，利用AI来应对研究挑战。&lt;/p&gt;&lt;p&gt;“各机构应资助那些将AI作为科学发现新工具的研究，而不仅仅是将其作为增强现有能力的辅助手段。”克拉齐奥斯和预算办公室主任拉斯·沃特(Director Russ)在关于研发资金优先事项的备忘录中写道。&lt;/p&gt;&lt;p&gt;不过，持怀疑态度的人士警告称，AI模型容易出错，而过度强调该技术可能会限制研究人员所从事的研究类型。(作者/箫雨)&lt;/p&gt;&lt;p&gt;更多一手新闻，欢迎下载凤凰新闻客户端订阅凤凰网科技。想看深度报道，请微信搜索“凤凰网科技”。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 21 Jul 2026 23:38:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBWT3ZVX1hZTGxJdnBKR19ReDRZOUdtdmd0SUt0MElYdTNkMGJVZjd4X1g1dkprUVVPRVoxRVlzN0lQOW1YV1l6Yg</guid></item><item><title>2026上半年智能门锁榜单出炉：德施曼、小米、凯迪仕稳居前三 拿下半壁江山 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138102.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，今日，研究机构洛图科技发布2026年上半年中国智能门锁市场销售数据。&lt;/p&gt;
+&lt;p&gt;数据显示，2026年上半年，中国智能门锁线上线下全渠道销量为821.9万套，同比下降8.3%；销售额为49.1亿元，同比下降11.2%&lt;/p&gt;
+&lt;p&gt;从品牌格局来看，行业洗牌速度进一步加快，&lt;span&gt;&lt;strong&gt;但头部阵营依然稳固，德施曼、小米、凯迪仕位居销量、销售额综合排名前三，三者合计销售额份额达到55.7%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;洛图科技表示，三者在高端市场形成了稳定阵营，凭借技术自研、品控体系与全链路售后服务，在高附加值市场建立起明显优势。&lt;/p&gt;
+&lt;p&gt;具体来看，&lt;strong&gt;德施曼在全渠道市场中销量、销售额均位居第一，并在2000元以上中高端市场实现销量与销售额双第一。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;小米全渠道销量份额为8.7%，位居销量榜第二，依托米家App和澎湃OS的深度联动，小米将智能门锁打造为全屋智能的重要交互入口。&lt;/p&gt;
+&lt;p&gt;产品布局方面，小米覆盖多个价格区间，从主打高性价比的入门款E30，到中高端智能门锁4 Pro系列，形成极具竞争力的产品矩阵。&lt;/p&gt;
+&lt;p&gt;凯迪仕全渠道销售额份额为17.1%，位居销售额榜第二。&lt;/p&gt;
+&lt;p&gt;华为同样稳居销售额榜前列，其中智能门锁2系列贡献了品牌内部超过70%的销售额，帮助华为在3000元以上中高端市场站稳脚跟。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/a2aef48692e841968aa31df29d5d4f5d.png" target="_blank"&gt;&lt;img alt="2026上半年智能门锁榜单出炉：德施曼、小米、凯迪仕稳居前三 拿下半壁江山" h="314" src="//img1.mydrivers.com/img/20260722/s_a2aef48692e841968aa31df29d5d4f5d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;洛图科技预测，&lt;strong&gt;2026年全年，中国智能门锁线上线下全渠道销量约为1607万套，同比下降约10%，降幅较上半年的8.3%进一步扩大&lt;/strong&gt;，下半年市场仍将面临较大下行压力。&lt;/p&gt;
+&lt;p&gt;与此同时，行业竞争逻辑也正从“价格淘汰”转向“标准淘汰”。&lt;/p&gt;
+&lt;p&gt;2026年3月1日起，《锁具安全技术要求第2部分：防盗锁》国家强制标准正式实施，首次将机械防护、电子防护、信息安全和生物识别安全纳入统一框架，并对C级锁芯、防电磁攻击等基础配置提出强制要求。&lt;/p&gt;
+&lt;p&gt;新国标显著抬高了中小品牌的合规成本，而头部品牌凭借更完善的安全认证体系、研发能力和品控能力，有望进一步扩大市场份额，推动智能门锁行业加速进入“良币驱逐劣币”的新阶段。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/89cf590ef82849ef8800e7d83493ae80.png" target="_blank"&gt;&lt;img alt="2026上半年智能门锁榜单出炉：德施曼、小米、凯迪仕稳居前三 拿下半壁江山" h="433" src="//img1.mydrivers.com/img/20260722/s_89cf590ef82849ef8800e7d83493ae80.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 23:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5XNlhXTEQ1U2l0UUZ2UjkzQV8tVTVRVXIyOUs5SVV3ek94NG1sOHBmOTdoQXRfOVBjVklSazJ2czhSVTBRcGdMNVptX0IzQUpod280Rks1SUY</guid></item><item><title>一举创下3项世界纪录，中国自主研发的全球首艘41800吨双向航行自卸船正式交付 - 凤凰网</title><link>https://news.ifeng.com/c/8uxT3X8evRK</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;【环球时报报道 记者 郭媛丹】21日上午，中船集团旗下中船澄西船舶修造有限公司为力拓集团建造的自主研发的全球首艘41800吨双向航行自卸船正式交付。怀着对这艘“一举创下三项世界纪录”巨轮的好奇心，《环球时报》记者靠近这艘海上钢铁巨轮，壮阔的船体全貌徐徐铺展开来。登临船上，只见内部管线纵横交错、结构精密繁复，看似庞大笨重的船体，搭载的全套自卸输送系统却灵敏迅捷、运转高效。这艘名副其实的“全球海上自卸王”，以每小时1.2万吨的超强卸货能力，刷新行业世界纪录。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img alt="首艘41800吨自卸船21日正式交付" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/8BD9C23C99D41BB81E6F3D04E2292DDC354CE0F1_size4840_w2362_h1772.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;首艘41800吨自卸船21日正式交付&lt;/p&gt;&lt;p&gt;&lt;strong&gt;一举创下三项世界纪录&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;“这艘巨轮一举创下三项世界纪录——全球载重吨最大的浅水转运自卸船、全球卸货速度最快的专业自卸船、同吨位级别全球首艘具备双向航行功能的自卸转运船。”中船澄西船舶修造有限公司总经理张新龙在驾驶室对《环球时报》记者介绍称，这艘巨轮的顺利交付，标志着中国在高端自卸转运船舶领域实现从“跟跑”到“领跑”的关键性跨越，这背后凝聚着中国船舶工业自主创新的硬核实力和深厚底气。&lt;/p&gt;&lt;p&gt;这艘名为“WONTANARA”的自卸船完成交付后，交由船东力拓集团运营，未来将以每小时 1.2万吨的超强卸货能力在几内亚“大展身手”。“WONTANARA”总长215米，型宽42米，型深14.5米，设计吃水7.5米，载重吨41800吨，整体大货舱长近135米、舱容29000立方米。&lt;/p&gt;&lt;p&gt;“作为西芒杜铁矿项目浅水码头至深水锚地转运作业的核心装备，该船交付后将投入西非几内亚海域运营。”张新龙说，西芒杜铁矿是中几两国经贸合作的重点项目，也是共建“一带一路”的重要成果，项目全面达产后每年可向全球供应海量高品位铁矿石。&lt;/p&gt;&lt;p&gt;据介绍，此次力拓集团一共下了5艘41800吨自卸船的订单，“这5艘船投入使用将为西芒杜铁矿的稳产转运提供坚实装备保障。”张新龙说。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;41800吨自卸船是什么概念&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;提及海上货运，人们最先想到的往往是巨型集装箱船、大型油轮，却很少留意自卸船。但作为海运里不可或缺的“超级搬运工”，自卸船凭借独有的作业优势站稳一席之地。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img alt="试航中的41800吨自卸船" class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/63E9D8E86D4AB8C1C12E4D621C71B7CB72992C35_size2219_w1600_h900.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;试航中的41800吨自卸船&lt;/p&gt;&lt;p&gt;张新龙介绍说，自卸船是一种自带卸货系统的特殊船型，无需港口装卸设备即可独立完成卸货，像一辆水上穿梭巴士，往返于浅水码头与深水锚地之间。“它特别适用于水深较浅或港口设施不完善、大型船舶无法靠泊或无法利用港口机械装卸货的地区和国家。”&lt;/p&gt;&lt;p&gt;站在驾驶室外的甲板上，张新龙指着横铺在甲板上的设施向《环球时报》记者介绍说，自卸船的卸货是一套连贯顺畅的机械化作业流程，整套工序层层衔接，操作简单、卸货高效，稳稳完成散货卸料工作。“第一步，工作人员会启动位于货舱底部的液压操纵斗门，两排共有60个斗门，这些斗门缓缓打开后，堆存于斗形货舱内的货物在重力作用下通过斗门连续流到封闭式输送带上，最后，灵活可调的卸料臂输送带会精准输送货物，将其投送到岸边的接收设备或堆放场地。”&lt;/p&gt;&lt;p&gt;41800吨自卸船是什么概念呢？张新龙介绍说，如果把41800吨铁矿石装进标准火车车厢，需要将近700节车皮首尾相连，绵延超过7公里，而这样一船货物，卸完仅需不到3.5小时。这意味着，未来5艘同类型船舶协同往返作业，可在24小时内为一艘20万吨级远洋散货船完成全部转运和装船，将远洋巨轮的锚地等待时间压缩至最短，有效提升矿场出货量和经济效益。&lt;/p&gt;&lt;p&gt;但想要做到这一点并不容易，这艘“全球海上自卸王”的诞生，源自堪称顶级的自卸作业系统。《环球时报》记者在船上看到，该船船首和船尾各自配备有一套独立的C型提升机构，常规模式下首尾两套自卸系统同时作业，每套卸货能力为6000吨/小时，两套同步运行总卸货能力高达1.2万吨/小时。该船还配套2条底部可逆向纵向传送皮带，可根据作业需要实现单侧或双侧灵活卸货；两条纵向输送带无论正反向航行均可正常卸货，作业不受限。右舷艏艉各配置一套伸缩式卸货臂，工作半径从32.5米至45.5米，精准对接远洋船装货舱口。&lt;/p&gt;&lt;p&gt;在海外重大矿产资源项目中，部分港口水深较浅或设施不完善，因此浅水码头至深水锚地的短途转运是制约产能释放的核心瓶颈。为突破这一核心瓶颈，中船澄西给出全新的设计方案：采用宽体浅吃水设计和双自卸系统，使单次载货量和卸货效率较现有浅水自卸转运船得到大幅提升，同时让这艘215米长的巨轮在同吨位级别浅水转运自卸船中，首次实现双向航行功能，精准匹配内河狭窄水域码头作业条件，提升进出港效率，双管齐下，提升货物转运产能。&lt;/p&gt;&lt;p&gt;张新龙表示，“由于未来的船舶需要在浅吃水条件下运行，这意味着其载货量会受到一定限制，这就需要在船型设计上对长度、宽度等多个参数进行全面优化与模拟，最终使实船能够在浅吃水条件下达成这一平衡。”&lt;/p&gt;&lt;p&gt;此外，该船使用的双向航行技术，在全球范围内尚属首次应用。正如我国的高铁采用双端驾驶室设计一样，该船同样配备了两个驾驶室。“通过取消传统的推进器，转而采用全回转推进系统，使得船舶能在狭窄的航道中实现双向航行，无需再进行掉头操作。”&lt;/p&gt;&lt;p&gt;《环球时报》记者在驾驶室实地探访看到，舱内空间十分宽敞通透，各类操控仪器高度集成、布局规整，各类运行数据实时在大屏上跳动闪烁，各项工况参数清晰直观。据介绍，这些设计在国内自卸船领域均属首例，在国际上也是业内首创的设计。依托高度集成的智能操控、双向航行等优化设计，全船仅需配置28名船员，日常航行3人即可值守，整套装卸转运作业6人就能顺畅完成，大幅压缩人力与时间成本。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;“构建起全球最完整的自卸船修造业绩图谱”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在“WONTANARA”诞生之前，全球载重吨位最大的重力式自卸船“曼哈迪”轮于2025年5月在中船澄西完成改装并成功交付。该船原为一艘超巴拿马型散货船，经中船澄西6个月改造，加装重力式自卸系统，卸货效率提升至最高可达7000吨/小时。与此前“曼哈迪”轮的卸货效率相比，WONTANARA将这一数字提升至1.2万吨/小时，整整高出71%。这不仅是一个数字的跃升，更是中船澄西乃至中国在自卸船核心系统集成能力上的全面超越。&lt;/p&gt;&lt;p&gt;经过30年的发展，中船澄西完成了从“修理”到“改装”到“建造”再到“创造”的历史性跨越。截至2026年，中船澄西修理、改装、建造自卸船近100艘，覆盖螺杆式、气动式、抓斗式、水车式、重力式等全部技术类型。&lt;/p&gt;&lt;p&gt;“目前我们已经构建起全球最完整的自卸船修造业绩图谱，中船澄西在目前的自卸船市场占有率全球第一。”张新龙自豪地表示，“可以说，我们在自卸船的赛道是独一份。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Tue, 21 Jul 2026 23:27:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1IYkE4NWw4MXNGR2l0ZThPMnNSS1NNc1FRSlFTZy1ENW5MSlJKU3NPSVFtZWRjMWdhNnBIVW5UNEU0QUg1ZXFna1dRc2g</guid></item><item><title>法国世界报 - 人工智能：中国正在削弱欧洲在规则制定上的优势 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E4%B8%96%E7%95%8C%E6%8A%A5/20260721-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E4%B8%AD%E5%9B%BD%E6%AD%A3%E5%9C%A8%E5%89%8A%E5%BC%B1%E6%AC%A7%E6%B4%B2%E5%9C%A8%E8%A7%84%E5%88%99%E5%88%B6%E5%AE%9A%E4%B8%8A%E7%9A%84%E4%BC%98%E5%8A%BF</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 21 Jul 2026 23:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMisgNBVV95cUxPVG1vTEFkQmsyQXZDTm5PRUtzNUktTEV3MkRkZWRYaEhkNTNzWTBYLWU1ZUU4Q1B2NUxkZFZvQkFxNVVWZTlNbTd6aWZUSURvaWlycmVnN0pSVWJxQmc3N3lQY2pqLU9aWVJ6Ym5CV2xZcW94bUJZR3R0ZHFLR3RoT1Q1WmNLVTNvclBGTmVQejFTNVhXQ2JMVHZwYTE5TG5BOTFsZVUyYmhPcG9tYkZ3SXFhTjFWY1BRMlpNWnVpVUpUcVhBX1NDWWt5ZFIwQkxsWldUNUZNS2JOVTZoNkJhWWxHa1YyZFU3a3poWTQ2dG8xanJMTGNMckRwdHFTTWdMVS10eGxWcDFZNllZQl9vbThSNVhnWDNTSDF0UFhLMk50cXNWUjFVZnFncS1vNVRORm5HclRnQmtlakNhT3k0YndUOWlnYVozU3VFTnd4aTJ4TEVjbWVOc1FtWDZLQ24xUkRGTWtVbkFsOUt6SWtFeVlSMkw2eFJ1TG9qWHkzeUJUT0RXaV9RQmxUZnFVcVA0SFNXc3Z0UEdYa3NKYlc0WmFsUy1SbFh5TEk5dXpqeVdyQQ</guid></item><item><title>两大利空冲击或低于预期，AI硬件股获支撑，费城半导体指数两连涨 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777601</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 22:45:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE94RUkzZU5vVkxwVlZLdjVmWG1qd1o5UkxiRUxFTHB2a054cG1IQzlibkNqNTVNOVFjaFh5MGNPRG5qeTV6NURtOVFjRlFMUkN1YklZ</guid></item><item><title>OPPO Find X9 Ultra通过融合快充认证！行业首款UFCS 1.2认证手机 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138090.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月22日消息，今日，FCA终端快充行业协会宣布，&lt;span&gt;&lt;strong&gt;OPPO Find X9 Ultra通过融合快速充电功能认证，获得行业首张UFCS 1.2手机认证证书。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据介绍，OPPO Find X9 Ultra通过符合性认证及兼容性测试，并获得UFCS商标授权。&lt;/p&gt;
+&lt;p&gt;此前，OPPO Pad 5 Pro已斩获行业首张UFCS 1.2平板认证。&lt;/p&gt;
+&lt;p&gt;此次OPPO Find X9 Ultra再下一城，意味着OPPO已率先完成手机、平板两大品类的UFCS 1.2升级与生态布局。&lt;/p&gt;
+&lt;p&gt;相比上一代标准，&lt;strong&gt;UFCS 1.2进一步优化功率协商逻辑，拓宽大功率设备适配范围，并强化全链路充电安全防护。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;同时，新标准继续保留私有快充与公有融合快充双兼容架构，既能充分释放厂商自研百瓦快充性能，也可兼容不同品牌的第三方UFCS充电设备。&lt;/p&gt;
+&lt;p&gt;充电方面，该机支持100W有线超级闪充和50W无线闪充，可快速补充电量，缓解用户的续航焦虑。&lt;/p&gt;
+&lt;p&gt;在兼容性上，&lt;strong&gt;OPPO Find X9 Ultra支持100W私有UFCS融合快充，同时兼容44W公有UFCS融合快充，&lt;/strong&gt;可适配大量第三方UFCS充电器。&lt;/p&gt;
+&lt;p&gt;无论是在家中、办公室还是旅途中，用户都能使用兼容充电设备快速补电，进一步提升日常充电的便利性。&lt;/p&gt;
+&lt;p&gt;据了解，UFCS是由中国信通院联合华为、OPPO、vivo、荣耀等企业牵头，携手多家终端厂商、芯片企业及产业链合作伙伴共同完成的新一代融合快充协议。&lt;/p&gt;
+&lt;p&gt;该协议旨在解决不同品牌快充标准不统一、充电设备兼容性不足等问题，在保障充电安全的同时，进一步提升充电效率和设备通用性。&lt;/p&gt;
+&lt;p&gt;UFCS不仅适用于手机、平板、音箱、VR设备等终端产品，还可应用于电动车、小家电等大功率设备，为用户带来更加统一、便捷的充电体验。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260722/4fb8d30e7a524707b139eeced905eded.jpg" target="_blank"&gt;&lt;img alt="OPPO Find X9 Ultra通过融合快充认证！行业首款UFCS 1.2认证手机" h="400" src="//img1.mydrivers.com/img/20260722/s_4fb8d30e7a524707b139eeced905eded.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 22:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBSYTRoajc5MkNtS1g1S3BCZ0ticmFTNkFyc3FvbE9ORTJmU3pLT1E0SWI1akFOUmFEZGFsZ2YtYWxnNFkzNDQwZEFKRXBHaWFnVmVVSk5wZ0c</guid></item><item><title>超微电脑大幅上调毛利率指引 美股盘后大涨 - 新浪财经</title><link>https://finance.sina.com.cn/world/2026-07-22/doc-iniirmyq7967020.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;div class="img_wrapper"&gt;&lt;img src="//n.sinaimg.cn/finance/transform/59/w550h309/20260722/ff66-7b51d363febecbe4cb701b16fceb7402.png" alt="Super Micro Computer首席执行官"&gt;&lt;span class="img_descr"&gt;Super Micro Computer首席执行官&lt;/span&gt;&lt;/div&gt;
+&lt;p&gt;　　服务器制造商Super Micro Computer周二表示，其6月当季的利润率高于此前预期，且新订单激增，公司股价在盘后交易中&lt;strong&gt;跳涨15%&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;　　公司表示，当季毛利率和调整后毛利率预计在&lt;strong&gt;15%至17%&lt;/strong&gt;之间，较管理层5月份给出的8.2%至8.4%的预测区间大幅提升。&lt;/p&gt;
+&lt;p&gt;　　Super Micro在一份初步业务更新中称，此次调整“主要得益于有利的客户和产品组合”。&lt;/p&gt;
+&lt;p&gt;　　对于Super Micro以及竞争对手戴尔（Dell）和慧与（HPE）而言，搭载英伟达GPU、用于运行人工智能模型的服务器需求一直在飙升。受此消息影响，戴尔周二盘后上涨5%，慧与上涨4%。&lt;/p&gt;
+&lt;p&gt;　　今年6月，Super Micro首席执行官梁见后在X平台上发文称，他“很自豪能在一年内为SpaceX和XAI共同建造又一座吉瓦级人工智能数据中心”。埃隆·马斯克旗下的SpaceX同时也是社交网络X的控股方。&lt;/p&gt;
+&lt;p&gt;　　根据周二的声明，Super Micro预计6月当季营收将落在此前指引区间（110亿至125亿美元）的下沿。伦敦证券交易所集团（LSEG）调查的分析师平均预期为116.7亿美元。&lt;/p&gt;
+&lt;p&gt;　　Super Micro表示，截至6月30日的2026财年末，公司积压订单达到历史最高水平，整个第四财季新接订单超过&lt;strong&gt;600亿美元&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;　　“这些新订单预计将在未来几个季度内完成交付，”公司表示。&lt;/p&gt;
+&lt;p&gt;　　Super Micro预计将于8月11日召开财报电话会议。&lt;/p&gt;
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 21 Jul 2026 21:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE1pSFpjakZ3b0pVVDh4LVhPcDVTT2Z0M3JFTVN1WVpHSUYxdTBHVk9PSVRld1dMc3dFMWxZamRuU18yc2E3dVU1OGRXSW5kd2M2ckV3S0ZXQkI4QVlhYjY5SHJDU3hKeVVIQ0xKT1JjUWh5c0w3VXRsVFBB</guid></item><item><title>OpenAI奥特曼将向美国官员介绍下一代AI模型，美国AI审查框架预计几周内完成 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777600</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 21:39:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBQWm5WbTc5NUhlT3RoSmJzTHN6TkEwNWxUbGhqcHdyWFFMdjNZc19RRkY0d1NpMXFsd09JUUhOWVB6Sm8wWDNUWm9rVTI2eHFQMmpv</guid></item><item><title>OpenAI智能体用户突破1000万，ChatGPT Work发布后需求翻倍 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777599</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 21:30:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1zVVllcC1JMzhxYjVZbS04SUZqSW1jRFdIXzJWUkNEczRhWWxLQnNmMXRXcm5IVkM0eU5TUTNXOTlheVJLbmF5UDVrVzlLOGMwSkxV</guid></item><item><title>中国企业在半导体材料领域展开攻势 - 日经中文网</title><link>https://cn.nikkei.com/china/ccompany/63084-2026-07-22-05-00-08.html</link><description>&lt;a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9jUFAzangybUIyaGF0QVh4a3JNc2Z5OTd3UHVpcTBtZ3pCRWNVZFJHZmE3VVJzZEpyQWw4bUdlYnQ5RWRIcEpabkNPdDRldFVSZi1sMnNKdWV0alhxbHBsbGwzLXJUb19fTUZwQVVMS2ZLUjZ6T2c?oc=5" target="_blank"&gt;中国企业在半导体材料领域展开攻势&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;日经中文网&lt;/font&gt;</description><author>日经中文网</author><pubDate>Tue, 21 Jul 2026 21:00:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidkFVX3lxTE9jUFAzangybUIyaGF0QVh4a3JNc2Z5OTd3UHVpcTBtZ3pCRWNVZFJHZmE3VVJzZEpyQWw4bUdlYnQ5RWRIcEpabkNPdDRldFVSZi1sMnNKdWV0alhxbHBsbGwzLXJUb19fTUZwQVVMS2ZLUjZ6T2c</guid></item><item><title>申真谞2:1击败KataGo：被设计的胜利难解围棋未来 - Sina Sports</title><link>https://sports.sina.cn/others/qipai/2026-07-21/detail-iniiqefa9223337.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
 	
 
 &lt;p class="art_p"&gt;01&lt;/p&gt;
@@ -673,7 +1328,84 @@
 &lt;/section&gt;
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Sina Sports</author><pubDate>Tue, 21 Jul 2026 16:18:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiogFBVV95cUxNVkJveGlPOWpBM3VJZVptakY2ZEhTMlloREN0MFpDR2ZRUDRUNUVwOGpTLWZPa09RWVBEZjdzZDFHaVhQTUZJM1pXYXBGLW1XY2pDeDkxb24wT2dfWnp3amp4bHowVXVZT2x5U2JSZTl2UmMzeFM3SlNHamxfaG5CbGJaTnpJd2dydmVTT29LUHdNYU9BN0pzZzZFYkFZS19laVE</guid></item><item><title>iPhone 18 Pro系列首发LTPO+技术：苹果有史以来最省电的屏幕 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138083.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Sina Sports</author><pubDate>Tue, 21 Jul 2026 16:18:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiogFBVV95cUxNVkJveGlPOWpBM3VJZVptakY2ZEhTMlloREN0MFpDR2ZRUDRUNUVwOGpTLWZPa09RWVBEZjdzZDFHaVhQTUZJM1pXYXBGLW1XY2pDeDkxb24wT2dfWnp3amp4bHowVXVZT2x5U2JSZTl2UmMzeFM3SlNHamxfaG5CbGJaTnpJd2dydmVTT29LUHdNYU9BN0pzZzZFYkFZS19laVE</guid></item><item><title>苹果将推出设备租赁计划以刺激销售 多数iPhone和Mac等产品将参加 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-07-22/doc-iniiqvay4908745.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    
+&lt;p&gt;　　&lt;span id="usstock_AAPL"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/AAPL.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;苹果&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_AAPL"&gt;&lt;/span&gt;公司正准备推出名为Apple Upgrade的设备租赁计划，这将成为该公司有史以来对销售方式进行的最重大调整之一。&lt;/p&gt;
+&lt;p&gt;　　知情人士称，这项新服务计划于7月28日上线，将覆盖大多数iPhone、Mac、iPad和Apple Watch机型。苹果将与Klarna Group Plc合作，由后者为该计划提供资金支持。&lt;/p&gt;
+&lt;p&gt;　　该计划初期至少将在美国推出，并同时覆盖苹果实体零售店和线上渠道。&lt;/p&gt;
+&lt;p&gt;　　Apple Upgrade的运作方式类似订阅服务。用户可在租期内提前付清设备款、提前升级至新机型，或在租期结束后保留设备。部分情况下，这些操作将产生额外费用。与汽车租赁类似，用户也可在租期结束时归还设备。&lt;/p&gt;
+&lt;p&gt;　　iPhone和Apple Watch的租期为24个月，Mac和iPad为36个月。用户需通过信用资格审核才能加入该计划。&lt;/p&gt;
+&lt;p&gt;　　几周前，苹果因全行业存储芯片短缺而将Mac、iPad及其他设备价格上调数百美元。市场普遍预计，苹果在9月发布新款iPhone时也会上调售价。&lt;/p&gt;
+&lt;p&gt;　　与目前的iPhone Upgrade Program不同，Apple Upgrade不包含AppleCare。Apple Watch SE、入门级iPad、iPhone 16和MacBook Neo等部分设备不适用该计划。企业和教育采购也不在适用范围内。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：李桐 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 21 Jul 2026 16:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxOS1E0UnN4aGFRRGw1Y01PMzZ2RkkxWUxkY2JKeDhyaGJJa2JVV3I1YnFFMGpvY3hEUzZBakJteW9GeG9vanBuWUxwdEZGWVhjckJSR1Zrd3NadURvNEJTUktGRlpvZW9RcWxkLURSM1BCb2oteVUzb2twd3JqU3BKbzRKMWxWMHc</guid></item><item><title>iPhone 18 Pro系列首发LTPO+技术：苹果有史以来最省电的屏幕 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138083.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月22日消息，据最新爆料，iPhone 18 Pro和iPhone 18 Pro Max将沿用与前代相同的屏幕尺寸，分别为6.3英寸和6.9英寸。&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;这一代Pro系列的核心升级集中在两大方面，即首发全新的LTPO+屏幕技术，以及进一步缩小的灵动岛开孔面积。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2203,490 +2935,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 06:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB1aHQtT2hoaEtSQUZkWTIzczJMQ2RJbEdHRV9NSUhxbFRQM0t2bGdPZVN2Q1IzNlo0RDZjN28yUXFGUkgtb2F3TnM3M2twT3p1MW5KajM2Y0M</guid></item><item><title>DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137922.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，7月18日至19日，上海烛龙旗下古剑奇谭IP全新单机作品《古剑》在上海美术馆（中华艺术宫）举办首次千人线下试玩会，千余名玩家到场沉浸体验这一中式志怪题材动作RPG的东方幻想魅力。&lt;/p&gt;
-&lt;p&gt;作为古剑奇谭IP单机新作，&lt;strong&gt;《古剑》定位为中式志怪动作RPG，玩家将扮演地界司判，在前往人间收魂的旅途中，与伙伴同行，借助专属地府法器展开战斗。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/2472f4ae83b64ce3938c6c990b185331.png" target="_blank"&gt;&lt;img alt="DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会" h="433" src="//img1.mydrivers.com/img/20260721/s_2472f4ae83b64ce3938c6c990b185331.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;游戏主打硬核动作战斗，关卡设计层次丰富，本次试玩开放五大模块：新手教程、两场独立BOSS战、自由探索区域及隐藏首领挑战，吸引大量喜爱类魂玩法的玩家排队体验。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/ae8c4cc0392745adb0cf74b86c144a4c.png" target="_blank"&gt;&lt;img alt="DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会" h="331" src="//img1.mydrivers.com/img/20260721/s_ae8c4cc0392745adb0cf74b86c144a4c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本作原生搭载NVIDIA DLSS 4.5技术，通过AI驱动的超分辨率与多帧生成，同步拉满超清画质与高刷新率，流畅呈现硬核战斗中凌厉的技能特效与细腻光影。流畅度对于硬核动作游戏尤为关键，DLSS 4.5的加持让玩家在高帧率下轻松打出极限操作，完整感受充满氛围感的志怪世界。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/154e2cd014334fb2b8cf914c11a3734f.png" target="_blank"&gt;&lt;img alt="DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会" h="399" src="//img1.mydrivers.com/img/20260721/s_154e2cd014334fb2b8cf914c11a3734f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;国际一线显卡品牌七彩虹为试玩会提供旗舰硬件支持，现场配备两台iGame Vortex游戏主机，分别搭载风冷旗舰iGame GeForce RTX 5080 Vulcan OC 16GB与潮流美学代表iGame GeForce RTX 5080 Ultra OC 16GB显卡，以稳定强悍的性能为《古剑》全程高帧护航，让玩家零卡顿畅享顶级PC游戏体验。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/d3a94c090a934e2992913b34e8133c4f.png" target="_blank"&gt;&lt;img alt="DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会" h="398" src="//img1.mydrivers.com/img/20260721/s_d3a94c090a934e2992913b34e8133c4f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;两款RTX 5080显卡均基于Blackwell架构，搭载16GB GDDR7高速显存，完整释放NVIDIA DLSS 4.5性能潜力，&lt;/strong&gt;最高支持6倍动态多帧生成，轻松拉满游戏帧率，带来如丝般顺滑的战斗体验。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/a9d33a55f3c6475cb82796947277661d.png" target="_blank"&gt;&lt;img alt="DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会" h="448" src="//img1.mydrivers.com/img/20260721/s_a9d33a55f3c6475cb82796947277661d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;除游戏外，这两款显卡同样满足内容创作者的专业需求——3D建模、影视渲染、视频剪辑、直播均可从容应对，在本地AI绘画、AI视频等创意工作中，强大的算力也能提供高效加速，堪称全能旗舰硬件。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/5b3615205ea1442b9cbd842da59327cb.png" target="_blank"&gt;&lt;img alt="DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会" h="390" src="//img1.mydrivers.com/img/20260721/s_5b3615205ea1442b9cbd842da59327cb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中，&lt;strong&gt;iGame GeForce RTX 5080 Vulcan OC 16GB凭借“维——LCD智屏”特色功能备受玩家好评。&lt;/strong&gt;该智屏通过磁吸接口与显卡连接，可实时监控设备运行状态；搭配包装附赠的智屏底座，即可变身桌面美学配件；用户还能通过iGame Center软件自定义屏显内容，随心更换动态GIF，充分释放个性表达。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/418fc9369a5e47b19d7355deba8b24d8.png" target="_blank"&gt;&lt;img alt="DLSS 4.5高帧畅玩！七彩虹iGame GeForce RTX 5080显卡助力《古剑》试玩会" h="398" src="//img1.mydrivers.com/img/20260721/s_418fc9369a5e47b19d7355deba8b24d8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 06:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBWY0hvbGhLd1ZRWUp4VnpqYmoxLWZWZXpTTF9sX1loWGFBenNKLWhMM1BlSUJqOHdHQzEtdmRTS2ZoU01Cenp6NXFKbzk4bFpqQ25sdGhwNC0</guid></item><item><title>美财长贝森特宣称：美国很快将控制全球80%的算力 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777542</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 06:36:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9EVjF4eDdraF9UemlaanV2TzRhYUliUWFKWXhlWDNBU21iV200UFkwMzllbjV2ei11Q2c4YWttUHhOUi1fcFpTeUZMWXAzbXBsS3pR</guid></item><item><title>AI牛市走到十字路口！华尔街罕见上演多空大辩论 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777532</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 06:32:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE14dkNQWTdBTDd4MjhJcjk0QzRkVWxtbmxNQXkwR1BvXzk5bEVnbmpQTnktTmhEZlBHeVlBb1hlTEE5NFJLRE1yVVhDYzRzYXZjWG5n</guid></item><item><title>中国新能源发电在建项目规模继续领跑全球 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260721-9396320</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;尽管电力面临浪费的风险与日俱增，中国公用事业规模的风电和太阳能发电厂在建项目规模仍继续领跑全球。&lt;/p&gt;&lt;p&gt;据彭博社报道，追踪能源基础设施的机构“全球能源监测”（Global Energy Monitor，简称GEM）星期二（7月21日）发布的一份报告显示，截至今年6月，中国约有262吉瓦（GW）的太阳能和251吉瓦的风电项目正在建设中。&lt;/p&gt;&lt;p&gt;GEM高级东亚策略师于爱群表示，这两个数字均高于2025年底的水平。这表明，尽管官方公布的新增装机数据近期出现大幅放缓，中国可再生能源设施的建设仍保持高速节奏。&lt;/p&gt;&lt;p&gt;这波建设热潮主要源于2025年6月起实施的新电价政策。该政策促使企业加快建设进度，以在最后期限前完工并网，导致装机量的大量前置。于爱群指出，中国整体的建设活动保持相对稳定。&lt;/p&gt;&lt;p&gt;“如果你看看在建项目，这股势头从未真正减弱。”她分析称，“我们绝不应低估中国以如此规模建设风能和太阳能产能的意愿。”&lt;/p&gt;&lt;p&gt;庞大的在建项目预示着今年下半年的新增装机量可能会出现反弹。尽管截至5月底，中国仅新增了60吉瓦的太阳能面板装机，但彭博新能源财经预测，到今年年底，中国的新增装机总量最终将达到255吉瓦。&lt;/p&gt;&lt;p&gt;当前，可再生能源面临的更大风险是“限电”（即弃风弃光），也就是电网为避免过剩电力压垮网络，而迫使风电和太阳能发电厂停机。&lt;/p&gt;&lt;p&gt;GEM指出，全中国范围内的限电率都在上升，而在建项目高度集中的西部地区尤为严重。&lt;/p&gt;&lt;p&gt;为了解决这一问题，中国一方面建设长距离输电线路将电力向东输送（西电东送）；另一方面则将高耗能产业向西部转移，以就近利用当地充足的电力供应。&lt;/p&gt;&lt;p&gt;于爱群认为，这种策略虽然合理，但如果不辅以优先保障可再生能源消纳的机制，反而可能进一步巩固煤炭的使用。数据显示，中国现有的长距离输电线路所输送的煤电量，大约已是可再生能源电力的两倍。&lt;/p&gt;&lt;p&gt;与此同时，旨在消化过剩清洁电力的绿氢设施建设项目，也面临着沦为能源转型“形象工程”（window-dressing）的风险。&lt;/p&gt;&lt;p&gt;她警告，这可能会让企业借此轻易满足监管指标，却未能对煤化工等重污染行业产生实质性的减排作用。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Tue, 21 Jul 2026 06:32:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE5rWHJSTTNLZVJFN25UVDBkMlNkekxHZDU3RE1WSFI5MTU1TDQ5ZTF1RTNtaFBJaDVOdy1UaWQ2X2xZOUs4TnoybHVoSkxzbEZ0T3ZVUnpjNXBaeFpHUmNIYXdNdEc3Y0VJUXc</guid></item><item><title>英特尔再裁员！数据中心部门成最新目标，四年内员工数缩水近40% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777535</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 06:31:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5Ga2JvcUxNbmxWUFZpLTFaaGhxZWEyVmFqejEweWZyYm04N3lzN2ZkS0Z6WmtsQllaQ2ZFTjdMT09GNTc3ODRBREFhVzRibm02ZHhj</guid></item><item><title>小米上调全年手机出货目标，增幅16% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777537</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 06:31:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5hYjJuTUJXNVZCbmstdDVaSlRPbGpCNVc4ZDl0ZG1SQnhBNHoyS2xnbkJjNVBNLUVKNmZIZU84V2dfQ0w4ZWJwUnlWRDBaTWRjYWxv</guid></item><item><title>锁定万亿订单就能躺赚？这可能是AI产业链条上最大的“伪命题”！ - 财联社</title><link>https://www.cls.cn/detail/2432387</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社7月21日讯（编辑 潇湘）&lt;/strong&gt;目前，一环套一环的巨额长期合同，已成为维系人工智能热潮的商业纽带。然而，眼下一个可能鲜有人思考过的问题是：如果这股热潮消退，这些合同还能紧密生效吗？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;为AI提供算力的合同，已成为当前这股热潮中不可或缺的一部分，整个行业都正围绕这些合同进行重构布局。&lt;/strong&gt;AI供应商表示，这些协议使他们能够前所未有地清晰预见未来收入，从而通过承诺未来将实现创纪录的销售额和利润来打动投资者。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;而存储芯片行业或许是其中最极致的缩影。&lt;/strong&gt;近几个月来，存储厂商与其下游客户正频繁签订期限更长的供货协议。这一现象源于自主AI智能体的爆发式增长——这类应用对内存需求极高。这似乎正将历史上一个价格竞争激烈、周期性波动且竞争白热化的行业，转变为一个前景更加稳定的行业。&lt;/p&gt;
-&lt;p&gt;全球大型内存芯片制造商——韩国的三星电子和SK海力士，以及美国的美光科技——近期均创下了创纪录的利润，并宣称供应短缺预计将持续至2028年。SK海力士的一位高管在4月与分析师的电话会议中表示，长期协议有望改善市场对内存业务整体的看法。&lt;/p&gt;
-&lt;p&gt;美光在达成此类协议方面尤为积极。其“战略客户协议”通常为期五年，且采用“照付不议”条款——这意味着无论买家是否实际接收内存产品，都必须支付货款。上个月，美光首席执行官Sanjay Mehrotra在财报电话会议上表示，未来几年这些协议将贡献公司超过一半的营收。&lt;/p&gt;
-&lt;p&gt;这对存储股的投资者来说似乎是个利好消息，而且今年以来这些股票的表现确实令人刮目相看——美光股价今年已上涨约三倍，SK海力士涨幅几乎与之相当，三星股价则翻了一番左右。&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;&lt;strong&gt;长期协议在萧条期未必会执行？&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;然而，尽管长期合同正在推动市场上涨，但人们眼下其实依然有理由质疑：在市场低迷时，这些合同能否提供任何确定性？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;事实上，如果内存需求在供应合同到期前出现下滑，这些看似得到保障的合同，很可能会被重新谈判或推延。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;因为强行发货的后果，不过是让芯片在客户的仓库里积灰，直到需求重新回暖。而届时，客户势必会优先消化库存而非采购新芯片，这反而会大幅拉长芯片厂商的业绩复苏周期。&lt;/p&gt;
-&lt;p&gt;此外，芯片供应商可能也不愿将产品强加给不想要的客户——尤其是当竞争对手表现得更加灵活时。将无人问津的存储芯片推入供应链，可能会损害长期的客户关系。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;无需深入探究科技史，就能找到证据表明——在行业低迷时期，供应商往往会表现出对修改合同更为包容的态度。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在疫情期间的那场全球“芯片荒”中，类似的长期协议潮也曾上演。当时，芯片厂商借由这些长期合同筹集产能扩张资金，并以此作为分配紧缺产能的依据。&lt;/p&gt;
-&lt;p&gt;专注于汽车及电子设备核心部件微控制器(MCU)的Microchip Technology，早在2021年就推出了“优选供应商计划”。然而几年后，当芯片供给从缺口演变为过剩时，该计划便被迅速废除，客户纷纷获得履约豁免，“灵活变通”成为了行业的主基调，大量合同被顺延数年，客户也无需再硬着头皮兑现疫情期间许下的庞大采购承诺。&lt;/p&gt;
-&lt;p&gt;正如该公司董事长Steve Sanghi在去年11月直截了当地表态：“我们绝不会强迫客户购买任何他们不需要的东西。”&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;&lt;strong&gt;AI生态链被忽视的风险&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;可以预见到的是，如果AI狂热出现降温，极其相似的一幕大概率会再度上演。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;然而，问题在于，眼下整个AI供应链的命运，却正深刻地绑定在这些因各家企业争相抢位而越签越大、越签越长的合同之上。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这种现象其实早已蔓延至存储市场之外。&lt;strong&gt;诸如OpenAI、Anthropic这样的顶尖AI开发者与甲骨文、CoreWeave等算力云巨头绑定；这些云厂商转头又签订了采购AI计算设备的巨额订单。而作为设备核心的AI芯片供应商，则与台积电等代工厂签有专属制造协议；台积电的上游，又连结着与荷兰阿斯麦等设备巨头绑定的长期设备采购合同。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;层层套娃下，涉及的金额往往极为庞大。&lt;/p&gt;
-&lt;p&gt;例如，甲骨文去年与OpenAI签署了一项巨额云计算协议，截至上一财季末，其所谓的“剩余履约义务”(RPO)——实质上是该公司尚未履行的合同已高达6380亿美元。甲骨文首席财务官Hilary Maxson上月向分析师表示，这一数字“为我们的未来营收增长提供了非凡的可见性，且全部由客户的长期合同承诺所支撑。”&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260721/89jsm35pSg_645x483.png" alt="image"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在过去一年里，整个行业对这种长期合同的依赖呈指数级上升。&lt;/strong&gt;自2025年年中以来，四大AI支出巨头——谷歌母公司Alphabet、微软、亚马逊及甲骨文——的营收积压总额合计增长了一倍多，增加了逾1万亿美元。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;然而，所有这些所谓的“业绩能见度”，随时都可能在一夜之间变得混沌不清；而这些庞大的长期合同，甚至可能成为加剧AI泡沫破裂的催化剂。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;国际清算银行在本月早些时候发布的年度经济报告中警示，整个AI供应链的阶段性短缺正在放大过度投资的风险——企业试图通过长期合同锁定未来产能，这反而让他们在面对任何不及预期的需求波动时，承担了更高的风险敞口。&lt;/p&gt;
-&lt;p&gt;换言之，那些基于这些长期合同就将真金白银押注给相关企业的借贷方与投资者们，恐怕随时会面临一场不设防的现实重击。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 21 Jul 2026 06:28:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE5oZmxyR1VYd014WTFmZGVtS0R6ekJfeXIyNzUwcFZQYUZEcHU2V2tCSWtBZFNJWFQxU3lGbEtfMDlKVko5RjROVw</guid></item><item><title>特朗普新任命的“AI沙皇”辞职，白宫AI战略再生变数 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777543</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 06:21:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5iZFRLVDFWeFhrcm5wY1JMekxIVHAzOFJ6QWc5ZWJCWEJFN3AzWm5RNzJDTzhDb1o4SkQ1alA5Sk4xS1ZRR1pSWW1mTVUzSllpZXd3</guid></item><item><title>3299元！微星RTX 5060 Ti万图师上架：三风扇+GDDR7显存 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137915.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;3299元！微星RTX 5060 Ti万图师上架：三风扇+GDDR7显存&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-21 14:19:47  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1811310.html" title="青山的主页" class="newstiao4"&gt;青山&lt;/a&gt;&lt;p&gt;  编辑：青山 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137915-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，&lt;span&gt;&lt;strong&gt;微星现已在京东上架新款万图师系列RTX 5060 Ti非公显卡，完整型号为MSI GeForce RTX 5060 Ti 8G VENTUS 3X OC，官方定价3299元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;该卡搭载4608个CUDA核心，&lt;strong&gt;出厂Boost频率调校至2602MHz，显存为8GB GDDR7，128-bit位宽，显存速率28Gbps。&lt;/strong&gt;视频输出接口为3个DisplayPort和1个HDMI，支持多屏外接。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260721/6cde2f16-07b3-4347-bb85-1d236688bb8c.png" target="_blank"&gt;&lt;img alt="3299元！微星RTX 5060 Ti万图师首发：三风扇+GDDR7显存" h="599" src="//img1.mydrivers.com/img/20260721/S6cde2f16-07b3-4347-bb85-1d236688bb8c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;供电与电路用料方面，显卡采用单8pin供电接口，搭载定制PCB与DrMos供电架构，可降低功率损耗、提升电压控制精度，配备特制保险防护电路，为运行提供额外安全保障，PCB元件区域布置专用导热垫，为供电、显存等周边元器件辅助散热，强化高负载下的运行稳定性。&lt;/p&gt;
-&lt;p&gt;散热模组搭载与40系魔龙同款的第七代刀锋三风扇，配合热管与大尺寸散热底座，散热效率出色，&lt;strong&gt;支持风扇零停技术，低负载低温场景下风扇完全停转，实现零噪音运行。&lt;/strong&gt;核心与显存通过导热垫直连散热底座，显卡背部配备金属加固背板，兼具防止PCB弯折与优化风道、辅助散热的作用。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260721/bcbac4f0-990a-4b6f-a15c-047f061694ae.png" target="_blank"&gt;&lt;img alt="3299元！微星RTX 5060 Ti万图师首发：三风扇+GDDR7显存" h="563" src="//img1.mydrivers.com/img/20260721/Sbcbac4f0-990a-4b6f-a15c-047f061694ae.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;游戏功能方面，该卡兼容MSI Afterburner超频工具，支持频率、功耗曲线调节及OC Scanner一键自动超频，可实时监控温度与功耗。搭载第五代Tensor Core与第四代光追核心，支持DLSS、光线追踪、NVIDIA Reflex等特性，适用于游戏及AI绘图、视频剪辑等GPU加速场景。&lt;/p&gt;
-&lt;p&gt;其他配置上，显卡整体尺寸304*121*44mm，标准三槽厚度设计，可兼容市面上绝大多数主流台式机箱。&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 06:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBzUENXYmVkUF9uaGZzVEstR0R0cWR0RjJuaWpKVzc1T0hERmpmS21YZjJ4b3VVWEdNdzRpX2lsUldTS0NaSzBHWFlUUU1XOGNwLWhNRUpQR0o</guid></item><item><title>AI将转向“按结果付费”？OpenAI董事长预言一年内Token付费模式将颠覆 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777531</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 05:45:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5ickxZVU94eVd2UFpKU25iTFZlanhmcm01bktmMGtrRmJEXzhadlZkVy15bXdPcnA1allNWk9sOEIwcXdJYm5QYjlqNE10RFdhbGpN</guid></item><item><title>英伟达的「地下」战役：百亿美元暗光纤为何是比芯片更深的护城河 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777530</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 05:43:56 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1GNXNJYzNxclpkYllWQVdoczRXM3VxOXkwWm5zb1JuU1dOc2xndVQzTzJlTjVkVDNNOVptSUY4TW5XYUNJbDQ3N09ZZHQxaUtrVDdr</guid></item><item><title>小米平板9通过3C认证！骁龙8系芯片 9720mAh大电池 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137910.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;小米平板9通过3C认证！骁龙8系芯片 9720mAh大电池&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-21 13:09:58  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1391597.html" title="拾柒的主页" class="newstiao4"&gt;拾柒&lt;/a&gt;&lt;p&gt;  编辑：拾柒 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137910-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，日前，&lt;strong&gt;小米一款型号为M656BA的平板电脑通过国家3C认证，数码博主“数码闲聊站”表示，该机就是小米平板9。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;认证信息显示，小米平板9由西安比亚迪电子有限公司集贤分公司代工，标配45W充电器。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/c2bed009828e4a4fa68352baa41068c9.png" target="_blank"&gt;&lt;img alt="小米平板9通过3C认证！骁龙8系芯片 9720mAh大电池" h="209" src="//img1.mydrivers.com/img/20260721/s_c2bed009828e4a4fa68352baa41068c9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;据该博主透露，&lt;span&gt;&lt;strong&gt;小米平板9将搭载骁龙8系芯片，定位常规大尺寸平板，预计将与小米18系列新机一同登场。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;根据HyperOS代码库中泄露的信息，小米平板9系列将延续现有产品规划，推出标准版和Pro版两款机型，开发代号分别为“donghai”和“shuntian”。&lt;/p&gt;
-&lt;p&gt;续航上，小米平板9预计内置9720mAh电池，相比前代小米平板8的9200mAh有所提升。&lt;/p&gt;
-&lt;p&gt;处理器方面，标准版预计搭载骁龙8s Gen4，Pro版则有望升级为骁龙8 Gen5。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/a1515c3b6da34598b66bdad6a67035c1.jpg" target="_blank"&gt;&lt;img alt="小米平板9通过3C认证！骁龙8系芯片 9720mAh大电池" h="400" src="//img1.mydrivers.com/img/20260721/s_a1515c3b6da34598b66bdad6a67035c1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 05:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1Wc2tseWlqYk1weUtOckdQS1oza1F3UTlra1BxMDdyQkQ4S2ZMMGkxcmtMWnlQblhfbkxHTzZrSzRnVGZuX0s3eHpGMy0xbTV4WUVoX0U3M1I</guid></item><item><title>俄罗斯造出150纳米光刻机！性能相当于20年前的奔腾4水平 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137909.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，&lt;span&gt;&lt;strong&gt;据报道，俄罗斯绿城纳米技术中心（ZNTC）已成功研制出一台电子束光刻机（ELL）原型机，设计标准为150纳米。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;该项目属于俄罗斯国家计划科学技术发展框架下的重点研发任务，代号为Progress ELL 150。&lt;/p&gt;
-&lt;p&gt;这台设备主要用于制造光掩模，也可在不使用掩模的情况下直接在基板上绘制电路图案。&lt;strong&gt;150纳米制程大致对应20年前英特尔奔腾4的性能水平。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2025年ZNTC曾展示过350纳米分辨率的同类设备，目前已向90纳米和130纳米技术节点推进。&lt;/p&gt;
-&lt;p&gt;据悉，该设备的两台原型机正在进行为期约四个月的综合性测试，随后将进入成像精度等工艺参数的验证阶段。其中一台原型机将被运往距绿城2000公里外的地点进行进一步测试。&lt;/p&gt;
-&lt;p&gt;电子束光刻的优势在于灵活性，科研和原型开发阶段可快速更改图案，无需制造昂贵的光掩模。但其致命短板是速度太慢，无法用于大规模量产。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;行业专家指出，这种设备仅适合航天、国防等领域的专用芯片小批量生产。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;需要指出的是，俄罗斯半导体产业正面临多重困境，包括缺乏65纳米以下制程的工程人才、90纳米以下光刻胶依赖进口、精密激光干涉仪和温控系统等关键零部件短缺。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260721/3c3cab7f-c36d-4728-b266-493176ee4a18.jpg" target="_blank"&gt;&lt;img alt="俄罗斯造出150纳米光刻机！性能相当于20年前的奔腾4水平" h="399" src="//img1.mydrivers.com/img/20260721/S3c3cab7f-c36d-4728-b266-493176ee4a18.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 05:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5seGg0YXdiTHJrT05Uei11Y2pyLW1Lc0FtczllNkxEbXNPNWZFWnNpc1FzU0piMndfTGJ0aEx3VnpnUmgtS2lsYm9UVzNidlNBN1NIbWVHMTY</guid></item><item><title>台修法松绑外资低轨卫星业者限制 为星链入台铺路 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260721-9395367</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;台湾立法院三读通过有“星链条款”之称的《电信管理法》修正案，允许低轨卫星业者不受现行外资直接持股不得超过49%、以及董事长须具台湾籍等限制，此举可望为美国太空探索技术公司（SpaceX）旗下“星链”（Starlink）进驻台湾市场扫除法律障碍。&lt;/p&gt;&lt;p&gt;综合台湾《联合报》和法新社报道，台湾立法院星期二（7月21日）三读通过修正案，规定申请以卫星通信技术设置使用电信资源的公众电信网络者，经主管机关审酌台湾安全、公众电信网络安全、电信资源使用及电信产业发展等核准后，得不受董事长须具台湾籍及外资持股比率限制。&lt;/p&gt;&lt;p&gt;这一修法被视为让星链进驻台湾扫除法律障碍。按照台湾现行的《电信管理法》，设置使用电信资源的公众电信网络者，其董事长应具台湾籍，外国人直接持股不得超过49%，直接及间接持股合计不得超过60%。&lt;/p&gt;&lt;p&gt;SpaceX于2024年曾在社交平台X上表示，星链不在台湾运营，仅仅是因为没有获得许可；该公司无法遵守台湾一项要求任何卫星互联网提供商必须由本地资本拥有多数股权的规定。&lt;/p&gt;&lt;p&gt;台湾目前没有自主的低轨卫星，其与全球的网络连接严重依赖海底通信电缆。过去几年，台湾的中华电信已与包括欧洲公司Eutelsat在内的多家外国卫星公司达成协议，构建多轨卫星通信网络，以便在战争或自然灾害发生时提供备用通信服务，但主导着全球卫星通信市场的“星链”却不在合作伙伴之列。&lt;/p&gt;
-    
-  &lt;p&gt;“星链”是世界上最强大的近地卫星互联网系统，已拥有超过6000颗在轨运行的近地卫星，网络覆盖全球数十个国家。&lt;/p&gt;&lt;p&gt;国民党立委黄健豪表示，引进低轨卫星通信系统可确保在紧急状况时，台湾仍有可用且安全的通信网络。如果爆发两岸冲突，大陆切断台湾所有的海底电缆，台湾将几乎无法与外界进行任何通信。&lt;/p&gt;&lt;p&gt;不过，即便法规有所调整，尚不清楚“星链”是否有意向台湾提供卫星服务。&lt;/p&gt;&lt;p&gt;台湾民主、社会与新兴科技研究中心的政策分析师Cathy Fang向法新社表示，电信运营商在进入台湾市场时还面临其他障碍：“运营商仍需解决频谱使用权、地面基础设施、终端部署、网络安全与数据治理要求、市场规模以及商业可行性等问题。”&lt;/p&gt;&lt;p&gt;她说：“此次修法将消除一项重大的法律障碍，但最终决定仍取决于SpaceX的商业考量。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Tue, 21 Jul 2026 05:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1pWkktSVI3emdtRF9Cajc0OE5GRU1OQ01YYzNhZFppdkIxMUpnbkpKd0toVU9ZSXg1Vy1ZWEZ3RDk4cTFIdWlrb0lqdUJMbVdaZ1hxNUN2elFpWEpGNV9QYjNobUFuSzJCLXc</guid></item><item><title>西南交通大学团队研制高温超导磁悬浮列车，目标时速620公里，真空管道将达1000公里 - 虎嗅</title><link>https://www.huxiu.com/article/4876925.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article__content" data-v-42acfa7d&gt;&lt;p data-check-id="123603"&gt;&lt;a href="https://mp.weixin.qq.com/s/41PpK8cVqjecMoIRoMCiRQ" target="_blank" rel="nofollow"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p data-check-id="677711"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="593985"&gt;大家好，我是邓自刚，来自西南交通大学。我是一名普通的科研工作者。&lt;/p&gt;&lt;p data-check-id="484683"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="397128"&gt;西南交通大学在成都，与重庆同属成渝双城经济圈。随着交通的变迁，给咱们的出行带来很大的便利。我从成都坐高铁来重庆花了1小时40分钟，相较于1952年新中国建设的第一条铁路，成渝铁路，时间已经缩短了7倍。&lt;/p&gt;&lt;p data-check-id="610930"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="441949"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101740888480.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694648" data-w="1000" data-h="544"&gt;&lt;/p&gt;&lt;p data-check-id="555801"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="912636"&gt;坐在我邻座的乘客一直跟我讲，2027年还将会开通成渝中线高铁，从成都到重庆只需要50分钟。大家有没有想过，未来有没有可能降到30分钟，20分钟，甚至10分钟？&lt;/p&gt;&lt;p data-check-id="139678"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="402231"&gt;这张照片是我们人类交通速度的发展史。大家可以看到，小汽车、高铁、飞机，每一种交通工具都是一个时代的特征。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="893377"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="564275"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101739644367.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694644" data-w="1000" data-h="535"&gt;&lt;/p&gt;&lt;p data-check-id="918499"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="724786"&gt;细心的小朋友可能会发现，从高铁到飞机之间有一个很长的速度空白区，里面没有交通工具。&lt;/p&gt;&lt;p data-check-id="166411"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="182214"&gt;高铁是我们国家的金质名片，目前已经取得了举世瞩目的成绩。但是我们的轮轨高铁要想进一步提速的话，依然会面临很多的问题和挑战。第一个就是轮轨黏着、弓网接触这些物理的机械接触会限制轮轨交通速度的进一步提升。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="655367"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="483199"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101739590253.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694643" data-w="1000" data-h="535"&gt;&lt;/p&gt;&lt;p data-check-id="686717"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="531268"&gt;那有没有一种新的技术可以克服这些障碍，或者说实现技术的变革呢？答案是有，那就是&lt;strong&gt;磁悬浮&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="786709"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="151586"&gt;磁悬浮，顾名思义就是列车靠磁力实现悬浮运行。它克服了轮子和钢轨之间的机械接触，带来了一些明显的优点，比如说速度更快，噪声更低，乘坐更舒适。&lt;/p&gt;&lt;p data-check-id="102217"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="260761"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101739372611.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694645" data-w="1000" data-h="539"&gt;&lt;/p&gt;&lt;p data-check-id="792696"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="906376" label="大标题" class="text-big-title"&gt;磁悬浮的种类&lt;/h2&gt;&lt;p data-check-id="359212"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="171829"&gt;今天我想给大家科普的第一个知识点就是磁悬浮包括哪些种类。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="497742"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="202790"&gt;磁悬浮是一个很大的概念，根据它的原理不同，可以分为&lt;strong&gt;四大类六小类，有永磁悬浮、电磁悬浮、电动悬浮和钉扎悬浮&lt;/strong&gt;。每一种磁悬浮制式背后都有中国的身影。&lt;/p&gt;&lt;p data-check-id="733498"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="380639"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101809561103.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694689" data-w="1000" data-h="542"&gt;&lt;/p&gt;&lt;p data-check-id="542651"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="639068"&gt;大家可以预想得到，未来磁悬浮在中国的发展肯定是非常的红火。在所有的磁悬浮同仁的共同努力下，目前我们中国的磁悬浮专利排名世界第一。&lt;/p&gt;&lt;p data-check-id="886217"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="380627"&gt;&lt;strong&gt;第一种磁悬浮叫永磁悬浮&lt;/strong&gt;，这一点可能很多同学都经历过。它的原理非常简单，就是用两块磁体同极相斥的原理来实现悬浮。&lt;/p&gt;&lt;p data-check-id="287800"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="376695"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101809290035.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694690" data-w="1000" data-h="535"&gt;&lt;/p&gt;&lt;p data-check-id="721524"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="515629"&gt;两块磁体极性相同，靠近的过程中就会产生一个很大的排斥力，用这个排斥力就可以实现悬浮。&lt;/p&gt;&lt;p data-check-id="801780"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="409514"&gt;但是大家再想想，靠近的过程中会发生什么？两个磁体会打架、会错位，甚至磁体会发生翻转。所以我们在应用的时候，会在侧面加一个轮子做导向，让它在竖直方向实现悬浮，但横向有一个机械的限位，不让它发生偏离。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="756439"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="354379"&gt;这种磁悬浮的特点是结构简单，承载能力比较强，所以在国外会把这种磁悬浮技术用来拉货。&lt;/p&gt;&lt;p data-check-id="604799"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="614165"&gt;&lt;strong&gt;第二种磁悬浮叫电磁悬浮&lt;/strong&gt;，顾名思义就是电生磁，就是在铁芯上绕满线圈，给它通电之后产生磁场。这个磁场和我们的铁磁性轨道之间会产生一个吸引力，把车子给吸起来，然后我们用控制技术来维持列车的悬浮高度。&lt;/p&gt;&lt;p data-check-id="688989"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="188142"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101809083248.gif" data-id="694695" data-w="600" data-h="450"&gt;&lt;/p&gt;&lt;p data-check-id="126302"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="163948"&gt;这种磁悬浮的代表技术是德国的电磁悬浮技术，目前在咱们国家的上海浦东机场有一条高速运营线使用了这种技术，它的最高试验速度已经达到了550公里/小时。&lt;/p&gt;&lt;p data-check-id="691174"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="230682"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101809351532.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694691" data-w="1000" data-h="727"&gt;&lt;/p&gt;&lt;p data-check-id="197316"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="975406"&gt;&lt;strong&gt;第三种磁悬浮叫电动悬浮，它的核心词叫动&lt;/strong&gt;。从这个动画里面大家可以看到一个移动的磁体源，它必须要移动，然后在导体板里面或者在导体做成的线圈里面会产生一个感应磁场。这个感应的磁场和我们的源磁场相互排斥，就会把车子给托起来。运动的速度越快，悬浮力越大。&lt;/p&gt;&lt;p data-check-id="558481"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="276882"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101810524956.gif" data-id="694700" data-w="600" data-h="450"&gt;&lt;/p&gt;&lt;p data-check-id="275067"&gt;&lt;br&gt;这个技术以日本的低温超导电动悬浮为代表，在2015年就创造了603公里/小时的世界纪录。&lt;/p&gt;&lt;p data-check-id="223491"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="346623"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101809971339.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694693" data-w="1000" data-h="731"&gt;&lt;/p&gt;&lt;p data-check-id="258312"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="109068"&gt;&lt;strong&gt;最后一种就是我们所研究的高温超导磁悬浮，也称为钉扎磁浮。&lt;/strong&gt;这种磁悬浮的原理叫感应生电。车上和轨道都不需要通电，它是靠超导体所处位置的磁场发生变化，在超导体里面产生感应电流。这个感应电流和永磁体的磁场相互作用，就能产生悬浮。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="908212"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="649223"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101809839373.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694692" data-w="1000" data-h="701"&gt;&lt;/p&gt;&lt;p data-check-id="533651"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="796914"&gt;这种磁悬浮技术也是最神奇的一种磁悬浮技术。大家从这个视频里面可以看到，它既可以悬浮，又可以悬挂，说明这个系统既有排斥力，又有吸引力。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="232647"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="459443"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101810565898.gif" data-id="694702" data-w="320" data-h="180"&gt;&lt;/p&gt;&lt;p data-check-id="842211"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="873007"&gt;有的同学可能会问，高温超导磁悬浮的温度是不是很高呢，是不是几百度、上千度呢？&lt;strong&gt;我们这里的“高温”是相对低温超导而言的。&lt;/strong&gt;低温超导泛指工作在液氦温区的超导材料，它的温度特别低，接近于绝对零度，零下269摄氏度。高温超导的温度从液氦温区升高到了液氮温区，温度升高到了196摄氏度，但这个温度依然是非常低的。&lt;/p&gt;&lt;p data-check-id="649761"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="172232"&gt;那究竟是高温好，还是低温好？答案肯定是高温更好。因为液氮来自空气中的氮气，通过对空气压缩、冷却、分离，分流之后就可以得到液氮，所以这个原材料特别容易获取，也比较廉价。&lt;/p&gt;&lt;p data-check-id="130508"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="915628"&gt;接下来要讲的概念就是超导。1911年，荷兰莱顿的Onnes教授在做金属水银低温下的实验的时候，发现在4.2K的时候，汞的电阻突然下降为零，可以称为消失了，因为当时不知道怎么定义它，他就把它定义成superconducting，就是超级导电的意思，超导就由此而来。&lt;/p&gt;&lt;p data-check-id="843732"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="492245"&gt;直到1987年，两位华人科学家，赵忠贤院士团队，和美国休斯敦的朱经武团队，分别独立发现了首个液氮温区的高温超导材料，现在叫钇钡铜氧，它的临界温度是93K，相当于零下180摄氏度。用液氮就可以进行冷却。我们今天所用的超导材料就是钇钡铜氧。&lt;/p&gt;&lt;p data-check-id="968445"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="202325"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/101809221171.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694698" data-w="1000" data-h="444"&gt;&lt;/p&gt;&lt;p data-check-id="563588"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="239718"&gt;我们的同学做了一个实验来演示这个原理。她手里面拿的是一块铝板。一般情况下，铝板掉下去的时候可以听到金属碰撞的声音，但是如果它落在我们的磁轨上，它在下降的过程中会经历磁场，就会产生悬浮力，所以它会缓慢地下降。因为铝板有电阻，它的高度会下降，但如果做成超导，这个悬浮力就会一直存在，维持悬浮。&lt;/p&gt;&lt;p data-check-id="914558"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="612350"&gt;&lt;video src="https://s2-video.huxiucdn.com/mda-sgkemdtujedmgn96/mda-sgkemdtujedmgn96.mp4" poster="https://v2-img.huxiucdn.com/mda-sgkemdtujedmgn96/mda-sgkemdtujedmgn96.jpg" controls="controls"&gt;您目前设备暂不支持播放&lt;/video&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="887685"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="142254"&gt;超导悬浮非常简洁，只需要三个元素就可以实现。首先往里面加入液氮，第二个元素是这个小模型里面有块超导材料，第三就是这个轨道上面贴满了永久磁铁，做成了一个莫比乌斯环。我们用同样的原理做成悬浮装置装在列车的两边，就可以构成磁悬浮列车。&lt;/p&gt;&lt;p data-check-id="335335"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="360716"&gt;&lt;video src="https://s2-video.huxiucdn.com/mda-sgken4v2hhwgsw4b/mda-sgken4v2hhwgsw4b.mp4" poster="https://v2-img.huxiucdn.com/mda-sgken4v2hhwgsw4b/mda-sgken4v2hhwgsw4b.jpg" controls="controls"&gt;您目前设备暂不支持播放&lt;/video&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="503414"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="243004"&gt;这个照片里两边银色的就是永磁轨道，把这个车子悬浮起来，还要让它左右不脱轨。中间红色的线圈是直线电机，起到一个牵引和制动的作用。整个系统是非常简洁的。&lt;/p&gt;&lt;p data-check-id="102215"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="685327"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102333997682.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694775" data-w="1000" data-h="546"&gt;&lt;/p&gt;&lt;p data-check-id="586857"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="698601"&gt;这个视频里，一个二年级的小学生就将这辆13吨重的车推动了，因为我们这个技术在前进方向是没有磁阻力的，所以将这个车子推动起来非常容易。在座的每一位同学如果来到我们实验室，都能成为一位大力士，都能够推动我们的磁悬浮列车。&lt;/p&gt;&lt;p data-check-id="695701"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="601446"&gt;&lt;video src="https://s2-video.huxiucdn.com/mda-sgki2zagq4quh6xx/mda-sgki2zagq4quh6xx.mp4" poster="https://v2-img.huxiucdn.com/mda-sgki2zagq4quh6xx/mda-sgki2zagq4quh6xx.jpg" controls="controls"&gt;您目前设备暂不支持播放&lt;/video&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="935196"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="347233"&gt;这种磁悬浮列车在工程化应用中有非常多的优点。第一，它悬浮导向是一体化的，结构比较简单；第二，它是自稳定的，不需要复杂的控制系统；第三，它不需要耗电，不用加汽油，只需要加液氮。一瓶500毫升的矿泉水大约卖两块钱，一升就是四块钱，液氮的价格一升才一块钱，所以说这个&lt;strong&gt;原材料的成本特别低&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="248585"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="535188"&gt;再说悬浮高度。我们有个概念叫“草上飞，水上漂”，即使轨道上有一定的障碍物，不是很高的话，这个车子也能越过。因为前进方向没有磁阻力，所以它能耗很低，轨道产生的是静磁场，没有电磁辐射，而且悬浮能力比较强，1公斤的超导材料可以悬浮20公斤的重物。&lt;/p&gt;&lt;p data-check-id="444635"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="716116"&gt;还有一个优点，我们可以利用现有高铁的土建技术。举个例子，将现有高铁的钢轨拆掉，换上磁轨，中间装上直线电机，就可以变成磁悬浮轨道。但是专家们总觉得这样还是有点不安全，所以我们又设计了一个U字形的轨道梁，实现了轨抱车，保证车子永远不会脱轨，非常安全。&lt;/p&gt;&lt;p data-check-id="487472"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="293423" label="大标题" class="text-big-title"&gt;过去20年我们潜心造了一辆车&lt;/h2&gt;&lt;p data-check-id="367876"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="367143"&gt;回顾我们过去20年的工作，其实就是潜心造了一辆车。左边这辆车是在上个世纪最后一天，2000年12月31号，我的两位导师，王家素老师和王素玉老师，带领团队研制成功的世界首辆载人高温超导磁悬浮车。&lt;/p&gt;&lt;p data-check-id="788262"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="216856"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102333452560.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694776" data-w="1000" data-h="323"&gt;&lt;/p&gt;&lt;p data-check-id="990123"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="831488"&gt;当时的条件特别艰苦，在学校里面用花椒布、脚手架、钢管搭建了一个棚子，就是在这样的环境里面，做出了世界第一的成绩，从此开启了国际上的高温超导磁悬浮列车研究之旅。&lt;/p&gt;&lt;p data-check-id="674189"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="870538"&gt;过去20年，接力棒也传到了我们的手里面，我们立志继承老师的成果，将其发扬光大。在2021年1月13号，我们和中国中车、中国中铁等合作，研制成功了世界首台高温超导磁浮工程化样车，这个车也是团队所有人共同付出的成果。&lt;/p&gt;&lt;p data-check-id="598447"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="423400"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102333264458.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694774" data-w="1000" data-h="306"&gt;&lt;/p&gt;&lt;p data-check-id="846971"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="343317"&gt;其实我们这个团队，从世纪号到世界首辆载人高温超导磁悬浮车，一直还有另外一个新目标，就是希望能够再创造一个世界第一。所以当时我们将这个车子的时速设计成620公里/小时。大家可以看到这个车子特别长，流线型特别好，因为我们希望能够打破日本低温超导磁悬浮创造的603公里/小时的记录。&lt;/p&gt;&lt;p data-check-id="847916"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="804764"&gt;还记得在工程化样车跟大家见面的前一天晚上，我们要在凌晨进行彩排预演，在车里加入液氮，验证它的悬浮功能。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="674720"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="468817"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102333126770.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694777" data-w="1000" data-h="614"&gt;&lt;/p&gt;&lt;p data-check-id="334997"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="157228"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102333064770.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694780" data-w="1000" data-h="614"&gt;&lt;/p&gt;&lt;p data-check-id="368794"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="367477"&gt;当时天比较黑，也看不清，我们把千斤顶撤掉之后，其实内心非常紧张，不知道这个列车有没有浮起来，所以在现场一直在问工程师有没有浮起来，效果怎么样。&lt;/p&gt;&lt;p data-check-id="130007"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="253939"&gt;这是我们第一次悬浮一个真正的，像火车一样大的车。它有21米长，3米宽，重量超过13吨。最后这个结果是非常好的，悬浮的效果很好，也很稳，现场大家也非常开心，露出了久违的笑容。这进一步激励了我们继续往前进。&lt;/p&gt;&lt;p data-check-id="261630"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="753632"&gt;和所有的科研一样，光鲜的背后充满了艰辛、挑战，还有持之以恒。其实我们为了这一天，已经做了二十年的准备。从为了让它能浮更重的车到浮得更稳，从超导的电磁特性，永磁轨道磁能的利用，到系统的匹配设计技术，我们做了不计其数的理论仿真以及实物验证，以保证每个环节的成功，保证这个项目的成功。&lt;/p&gt;&lt;p data-check-id="726597"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="124321"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102333456917.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694779" data-w="1000" data-h="447"&gt;&lt;/p&gt;&lt;p data-check-id="329608"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="431227"&gt;最终通过我们的努力，&lt;strong&gt;悬浮能力目前提高了7.7倍，悬浮水平已经达到了2.5吨/米。&lt;/strong&gt;就是说这个车子长1米，就能够悬浮2.5吨重，我们前面的工程化样车长21米，理论上它的载重能力就可以超过50吨，这个能力足以支撑未来工程化的应用。&lt;/p&gt;&lt;p data-check-id="134210"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="927713" label="大标题" class="text-big-title"&gt;喝杯咖啡功夫，从成都抵达重庆&lt;/h2&gt;&lt;p data-check-id="861813"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="844736"&gt;我们现在已经有了时速600公里的高速磁悬浮列车的技术储备，那大家可能还会问，这个列车还能不能跑得更快呢？答案是能。那就是&lt;strong&gt;磁悬浮加真空管道技术&lt;/strong&gt;。&lt;/p&gt;&lt;p data-check-id="310383"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="597746"&gt;其实关于真空管道交通的设想，早在1904年就由美国的火箭之父Robert Goddard提出来了。但当时没有这方面的需求，技术储备也不够，所以这个技术一直停留在纸上。直到最近，中国的发展持续强大，我们对出行的质量要求越来越高，加上磁悬浮技术的快速发展，使得真空管道又重新进入了我们的视野。&lt;/p&gt;&lt;p data-check-id="820118"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="118179"&gt;磁悬浮加真空管道，也称为未来轨道交通技术的制高点。我们用磁悬浮技术消除了轮轨之间的机械摩擦，又用管道降低了列车运行的空气阻力，我们想尽一切办法减少列车运行的阻力，所以未来，这种交通制式是真正有望实现超高速低能耗运行的，它的目标速度将有望突破时速1000公里/小时。&lt;/p&gt;&lt;p data-check-id="861710"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="523008"&gt;与飞机相比，它有一些显著的特点，比如它更安全，因为它在地下，而且可能未来主要是以隧道的形式，像地铁一样。第二，它会更舒适，因为在真空环境里，噪声特别小。还有一点，这个系统比较节能，我们只需要在加速的时候和停止的时候给它施加电机的驱动或者制动，中间环节都可以让它惰性运行，所以这是非常节能的系统。&lt;/p&gt;&lt;p data-check-id="776594"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="149566"&gt;2013年以来，这个领域发展得特别快，目前包括中国、美国在内的很多国家都有这个布局。讲到这个发展，我们就不得不感谢一个人，埃隆·马斯克。他在2013年提出了超级高铁白皮书，叫Hyperloop，吸引了全世界很多科技爱好者共同投入这项研究，因为大家都知道埃隆·马斯克提出的每一个科技设想最后都变为了现实。&lt;/p&gt;&lt;p data-check-id="285435"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="249165"&gt;值得自豪的一点是，我们团队在2014年就正式科研立项，开展真空管道磁悬浮交通的研究。目前为止，除了中国，还有9个国家，12个单位正在研发真空管道交通。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="631108"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="844895"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102333828195.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694784" data-w="1000" data-h="575"&gt;&lt;/p&gt;&lt;p data-check-id="747403"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="902053"&gt;大家的方案其实都大同小异，核心都是采用真空管道减少空气阻力，用磁悬浮技术消除轮轨摩擦，用直线电机来实现非接触的牵引，区别就在于采用哪一种磁悬浮制式。&lt;/p&gt;&lt;p data-check-id="660629"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="728327"&gt;我们采用的是我们原创的高温超导磁悬浮技术。这种新的交通核心就是要验证这个方案的技术可行性。早在2004年，我们学校的沈志云院士就组织提出论证，一起探讨了真空管道磁悬浮交通的可行性。&lt;/p&gt;&lt;p data-check-id="714728"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="515195"&gt;我们主要是探讨两点，第一是磁悬浮列车超高速运行的适应性，能不能跑到1000公里/小时以上，第二是它在真空的环境里面能不能工作得很好。&lt;/p&gt;&lt;p data-check-id="289016"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="827488"&gt;任何一项新的技术都不是一蹴而就的，都需要循序渐进。西南交通大学是国内最早开始研究真空管道交通的单位，我们学校提出了“三步走”的战略。通过我们不断创造更高速度的试验平台来验证这个技术的可行性。&lt;/p&gt;&lt;p data-check-id="784974"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="203951"&gt;首先我们建了一个45米的环形线，最高试验速度是50公里/小时，用于验证原理可行性。最终我们实现了在0.029个大气压，相当于抽掉97%的空气下，磁悬浮列车连续运行10个小时，这就验证了真空管道加高温超导磁悬浮原理的可行性。&lt;/p&gt;&lt;p data-check-id="584176"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="322381"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102356868079.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694854" data-w="1000" data-h="526"&gt;&lt;/p&gt;&lt;p data-check-id="526224"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="724660"&gt;大家从这个视频里面可以看到，我们坐人的时候是不抽真空的，如果我们要做真空的实验，那里面是不能坐人的。未来要应用的话，这个列车就必须做成封闭式的，就有点像载人航空航天一样，车里面要提供生命维持系统。&lt;/p&gt;&lt;p data-check-id="688737"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="856679"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102357696381.gif" data-id="694856" data-w="400" data-h="230"&gt;&lt;/p&gt;&lt;p data-check-id="202768"&gt;第二步，我们建了一个直线，实现更高的速度。这个直线的长度是140米，里面抽掉95%的空气，实验速度进一步提高到了430公里/小时。&lt;/p&gt;&lt;p data-check-id="534910"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="609514"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102356965039.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694850" data-w="1000" data-h="571"&gt;&lt;/p&gt;&lt;p data-check-id="577466"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="198675"&gt;第三步，也是我们现在正在做的，就是建设一个线路更长的真空管道超高速试验平台，它的管道直径是3米，线路的长度是1600米，抽掉99.5%的空气。这就相当于飞机飞行在35000米的高度，空气非常稀薄，空气阻力非常小，已经可以忽略。我们的最高实验速度要达到1500公里/小时。&lt;/p&gt;&lt;p data-check-id="871310"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="189238"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102356767087.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694849" data-w="1000" data-h="280"&gt;&lt;/p&gt;&lt;p data-check-id="705853"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="386056"&gt;大家可以想象下，这项技术研究成功之后，从成都到重庆可能只需要十几分钟，也就是喝一杯咖啡的时间。&lt;/p&gt;&lt;p data-check-id="759205"&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 data-check-id="557218" label="大标题" class="text-big-title"&gt;磁悬浮技术能够颠覆各个领域&lt;/h2&gt;&lt;p data-check-id="883774"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="551744"&gt;作为今天这个分享的最后一部分，我想跟各位分享一个彩蛋。我想告诉大家，磁悬浮技术不仅能颠覆速度，还将颠覆各个领域，比如说人工心脏、卫星，甚至小汽车。大家想象一下，未来的汽车会发展成什么样子？除了我们现在的电动汽车、自动驾驶，未来还有什么可能性？&lt;/p&gt;&lt;p data-check-id="543757"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="728433"&gt;这个视频是15年前大众发布的一个球形磁悬浮车的概念视频，这是一位来自成都的90后女大学生王佳提出来概念。她的想法就是用智能驾驶加磁悬浮技术做磁悬浮车。&lt;/p&gt;&lt;p data-check-id="810037"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="383728"&gt;&lt;video src="https://s2-video.huxiucdn.com/mda-sgkericst68a4u0a/mda-sgkericst68a4u0a.mp4" poster="https://v2-img.huxiucdn.com/mda-sgkericst68a4u0a/mda-sgkericst68a4u0a.jpg" controls="controls"&gt;您目前设备暂不支持播放&lt;/video&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="174128"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="398164"&gt;当时这个视频发布之后，因为做得非常逼真，在网上引起了轰动。但这只是一个特效，一个想法，一个概念。那我们有没有办法把它变为现实呢？我们现在把这个想法实现了。&lt;/p&gt;&lt;p data-check-id="590809"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="972084"&gt;这个想法的灵感来自什么地方？就来自日本的低温超导电动悬浮技术。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="882483"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="483840"&gt;我们把磁悬浮列车称为直线运动，沿着一条线路跑，做直线运动。但是电动悬浮车不同，大家从中间那个曲线可以看到，它前进的方向会有磁阻力，先增大后减小，所以电动悬浮列车就只能跑高速，因为它跑低速的时候磁阻力很大，不节能。&lt;/p&gt;&lt;p data-check-id="721949"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="808147"&gt;我们做了一个非常巧妙的设计，就是把这个直线运动化直为曲，变成一个圆周运动，把磁铁组成永磁轮。只要磁轮一旋转，就会产生一个交变的磁场，在下面的导体板里面就会产生一个感应的磁场，两个磁场相互排斥，就能实现悬浮。&lt;/p&gt;&lt;p data-check-id="152987"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="494152"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102432237061.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694860" data-w="1000" data-h="404"&gt;&lt;/p&gt;&lt;p data-check-id="594705"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="636792"&gt;根据电动悬浮的原理，在旋转切线的反方向会有个磁阻力，但是因为这个轮子已经浮起来了，这个磁阻力就会变成列车的驱动力，所以我们就实现了电动悬浮列车磁阻力变废为宝。&lt;/p&gt;&lt;p data-check-id="609460"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="813571"&gt;要实现这个磁悬浮汽车，不是给它加一个翅膀，而是给它换一个轮子。在真正工程应用中也非常简洁。首先我们只需要把车上的普通轮子换成磁轮，然后在路面安装导体板，只要车达到一定速度，就可以起浮起来，系统的改装是比较小的。&lt;/p&gt;&lt;p data-check-id="887554"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="669040"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102432049432.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694859" data-w="1000" data-h="244"&gt;&lt;/p&gt;&lt;p data-check-id="863054"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="562341"&gt;而且我们在设计的时候考虑了它是一车两用的，在普通路面上也可以走，只是不会悬浮起来，而当进入到悬浮路面时，就能悬浮起来。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="784560"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="963665"&gt;任何一个新的技术都会面临很多的质疑，我们在接待参观的过程中也会遇到很多的提问。其中最多的一个问题就是，磁悬浮汽车最适合用到哪里。&lt;/p&gt;&lt;p data-check-id="765070"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="678907"&gt;我们的祖先告诉我们，当我们不知道答案的时候，就抬头仰望星空。对，用在月球。磁悬浮汽车用在月球上特别合适，这个场景也是我们思考了两年之后发现的。&lt;/p&gt;&lt;p data-check-id="209146"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="975732"&gt;我们总结出来有四重优势，量身定制。第一，月球是一个低引力的环境，重力加速度是地球的1/6，也就是说，一个在地球上重600公斤的东西，在月球上就变为100公斤。所以传统的车辆在月球上是跑不快的，因为摩擦力不够。但是磁悬浮汽车是靠电磁力来牵引的，月球上的电磁力不会变，所以它在地面能跑200公里/小时，在月球上也能跑200公里/小时。&lt;/p&gt;&lt;p data-check-id="849543"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="913401"&gt;第二，磁悬浮车是靠电磁力实现非接触的支撑，很显然它的载重能力是比不上机械接触的。但是在月球上，因为重物变轻了，就相当于间接地把它的载重能力提高了6倍。&lt;/p&gt;&lt;p data-check-id="981609"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="195973"&gt;第三，月球表面有很多金属矿物质，我们可以就地取材，把它做成导体轨道。第四，月球上背对太阳的一面温度是非常低的，将近零下180多度。这个低温对我们的磁悬浮技术是非常好的。磁悬浮技术最怕热，温度越低，性能越好。&lt;/p&gt;&lt;p data-check-id="787918"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="334920"&gt;最近我们发现，美国宇航局NASA也提出了类似这样的项目概念，叫灵活轨道悬浮，可以说和我们的想法是不谋而合。磁悬浮技术与月球车的需求高度契合。&lt;/p&gt;&lt;p data-check-id="327155"&gt;&lt;br&gt;&lt;/p&gt;&lt;p class="img-center-box" data-check-id="334559"&gt;&lt;img class="lazyImg" _src="https://img.huxiucdn.com/article/content/202607/21/102432056219.png?imageView2/2/w/1000/format/webp/interlace/1/q/85" data-id="694861" data-w="1000" data-h="628"&gt;&lt;/p&gt;&lt;p data-check-id="546784"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="538569"&gt;最后，我想用火箭之父Robert Goddard的一句话来结束今天的分享：&lt;strong&gt;没有什么是不可能的，昨天的梦想将变成今天的希望，也将变成明天的现实。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="461615"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="445625"&gt;1904年，Robert Goddard提出真空管道交通设想的时候，火车每小时只能跑几十公里。当时他收到了非常多的质疑，就用这句话来激励自己。过去这些年，这句话也一直激励着我们不断前行。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="447903"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="365707"&gt;&lt;strong&gt;我们相信，实干兴邦，最终梦想都会照进现实。希望未来三到五年内，高温超导磁悬浮列车能够走进我们的生活。&lt;/strong&gt;&lt;/p&gt;&lt;p data-check-id="648307"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="335859"&gt;做今天这个分享的时候，我有一个小小的私心，我也希望通过今天这个演讲，给小朋友种下一颗科学的种子，就像当年我听了我们老师的讲座之后，将磁悬浮作为自己的研究事业。&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="477583"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="754977"&gt;我希望未来十年之后的某一天，有一位同学来到我的办公室说，邓老师，我想读您的研究生，因为在2026年5月30号，我听了您的分享，我对这个方向非常感兴趣。&lt;/p&gt;&lt;p data-check-id="253237"&gt;&lt;br&gt;&lt;/p&gt;&lt;p data-check-id="812031"&gt;以上就是我今天的分享，谢谢大家。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>虎嗅</author><pubDate>Tue, 21 Jul 2026 04:56:12 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE14VHVHcWZSMEI1QnpvRTJJU2dheXpoeXNqSXJKUUtXenRScU4zOWk5azVMRXBlWHRSbnM1ZWZMOTdiYnQ4WDRabVNSM3ZHc1pOeTBNMw</guid></item><item><title>不再靠低价抢市场 AMD AI显卡站稳了：比N卡贵40%还有人买 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137908.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，不论是游戏显卡还是AI显卡，AMD多年来的策略都只能是靠低价抢NVIDIA的市场，幸好现在AMD站起来了，新一代AI卡卖出更高价。&lt;/p&gt;
-&lt;p&gt;AMD的显卡性价比占优，但这对企业来说不是好事，因为这意味着利润不如友商，而且也拿不到主导权，现在随着AMD上市新一代MI450系列AI显卡，这事已经开始逆转了。&lt;/p&gt;
-&lt;p&gt;据报道，微软已经选择了AMD的Helios机柜级AI解决方案，虽然双方没有公布具体的协议金额，但Helios机柜的价格据信在500到550万美元之间。&lt;/p&gt;
-&lt;p&gt;作为对比，&lt;span&gt;&lt;strong&gt;NVIDIA的Vera Rubin机柜价格在350到500万美元之间，AMD的方案差不多贵了40%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;A卡比N卡贵很多依然能拿到微软的订单，这事可不多见，而微软看重的是Helios全栈解决方案，AMD能提供更优秀的综合价值。&lt;/p&gt;
-&lt;p&gt;AMD数据中心业务负责人Forrest Norrod强调，&lt;strong&gt;这套系统的优势在于TCO整体拥有成本及最低Token成本&lt;/strong&gt;，这对云计算供应商来说比单纯的显卡本身价格高低还重要。&lt;/p&gt;
-&lt;p&gt;不过跟NVIDIA相比，AMD硬件方面的综合优势已经不逊色，甚至反超了，但还有个核心问题不是一时间就能解决的，就是生态系统，这方面CUDA生态积累了20多年的优势还是很强大的，AMD的ROCm生态依然有短板。&lt;/p&gt;
-&lt;p&gt;对AMD来说，随着他们能提供全套的Helios机柜级AI解决方案，未来在AI市场上有望快速扩大份额，&lt;span&gt;&lt;strong&gt;预计能从目前4.5%的份额提升到20-25%&lt;/strong&gt;&lt;/span&gt;，这部分就是上千亿美元的价值空间。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="不再靠低价抢市场 AMD AI显卡站稳了：比N卡贵40%还有人买" h="337" src="//img1.mydrivers.com/img/20260721/d70dff93-ad55-4816-96e4-9ed02b77a055.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 04:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BZkNsZlExSHd3SUhwbU4wT2JYblhvUTk0ZXFITmtySU9CclphdUo4XzFHZ05HWHZFVVN0ZW11ay1lMGZHMXFSUjQxcW1OVVY1QmV1amUxbnQ</guid></item><item><title>阿里将推出千问办公 合并旗下三款智能体 钉钉新任CEO陈宇森负责 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137907.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;阿里将推出千问办公 合并旗下三款智能体 钉钉新任CEO陈宇森负责&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-21 12:51:58  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1688296.html" title="秋白的主页" class="newstiao4"&gt;秋白&lt;/a&gt;&lt;p&gt;  编辑：秋白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137907-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息 ，&lt;strong&gt;据《财经》杂志消息，阿里即将推出面向AI智能体办公赛道的产品 —— 千问办公，该产品已完成对QoderWork、悟空、MuleRun三款智能体产品的整合统筹，项目由钉钉新任CEO陈宇森牵头负责。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;据悉，千问办公将是阿里面向 Agent 办公市场的“拳头产品”，今年6月，钉钉创始人、原CEO陈航卸任，陈宇森正式接任钉钉CEO。7月初，阿里将上述三款自研智能体产品划归陈宇森统筹推进整合工作。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;产品层面，千问办公将以QoderWork为基础，原因在于悟空长期处于半成品状态、MuleRun此前主要面向海外市场，QoderWork是阿里目前“用户规模最大、市场口碑最好”的智能体产品，因此成为整合核心。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此前在6月18日，刚履新的陈宇森就发布了首封全员内部信，对外公布钉钉多项组织架构优化调整规划。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;信中明确提及整合悟空、MuleRun两支研发团队，成立全新悟空事业部，由原MuleRun首席技术官束骏亮主管，直接向陈宇森汇报。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;值得一提的是，MuleRun正是陈宇森早年在阿里云内部主导孵化的AI智能体产品。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/d3feadf4ee254e41a3274c8ed23d1588.jpg" target="_blank"&gt;&lt;img alt="阿里将推出千问办公 合并旗下三款智能体 钉钉新任CEO陈宇森负责" h="450" src="//img1.mydrivers.com/img/20260721/s_d3feadf4ee254e41a3274c8ed23d1588.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 04:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9CczlIYWtVSTMzZTYwTnhsaFdmbWhnTmFMOEdqVE5DRHowcGNzWUk0TTJmRzZjMVRPOGlndEVfVmdzZ2QyZHM3eERFbEczMGR2NmJ2SDR6b0I</guid></item><item><title>谷歌密谋「焊死」Gemini，神秘芯片曝光，能效碾压TPU十倍 - 36 Kr</title><link>https://m.36kr.com/p/3904844399445638</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p&gt;&lt;strong&gt;一觉醒来，谷歌突然就掏出了一张王炸！&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;据The Information独家爆料，&lt;strong&gt;谷歌正在研发一款代号「Frozen v2」的神秘服务器芯片——把Gemini模型的部分底层架构，永久蚀刻进硅片。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;不是跑在芯片上，是长在芯片里。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,362" src="https://img.36krcdn.com/hsossms/20260721/v2_de8fe424a93b4f1491dcbf443ce26586@5091053_oswg350481oswg1080oswg362_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;参与项目的谷歌员工预计，按每瓦特能处理的Token数量算，这款芯片将比谷歌最新一代TPU高效&lt;strong&gt;6到10倍&lt;/strong&gt;。部署时间，最快2028年。&lt;/p&gt;
-  &lt;p&gt;消息一出，Alphabet股价周一应声上涨3.7%，一扫前几周的阴霾。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;「冻结」一个模型&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;Frozen这个名字，就是字面意思：把模型「冻」进硅片。&lt;/p&gt;
-  &lt;p&gt;这事有多激进？不管是英伟达GPU还是谷歌TPU，本质上都是通用芯片——什么模型都能跑。&lt;/p&gt;
-  &lt;p&gt;这听起来很灵活，但代价也很大：&lt;strong&gt;芯片在运行时必须做海量的实时决策，不停地搬运数据，反复查询该往哪走、该怎么算。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;就像一个什么菜都能做的后厨，每做一道菜都得现翻菜谱、现找工具、现调火候。效率可想而知。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Frozen v2则只为Gemini一个模型而生。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;它把针对Gemini的关键决策路径直接内建进电路——芯片不用再「想」该怎么走，因为路已经浇铸在硅片里了。&lt;/p&gt;
-  &lt;p&gt;要走的步骤更少，要搬的数据更少，要做的决策更少。相当于给一道菜专门砌了一个灶台，灶眼大小、锅具位置、火候档位，全部量身定制。&lt;/p&gt;
-  &lt;p&gt;省下来的每一步冗余，都变成实打实的能效。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1080" src="https://img.36krcdn.com/hsossms/20260721/v2_dbc418f538e04163900c4c3d853df229@5091053_oswg1780177oswg1080oswg1080_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;其实，这个想法早有前身。最初的Frozen芯片由Google DeepMind首席科学家Jeff Dean主导，思路更离谱：&lt;strong&gt;直接把模型权重烧进芯片。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;权重是什么？就是决定模型怎么回答问题的那套核心参数。&lt;/p&gt;
-  &lt;p&gt;但那个方案被搁置了——一旦权重烧死，芯片就只能服务某个特定版本的Gemini，模型一更新，芯片就报废，生命周期短得离谱。&lt;/p&gt;
-  &lt;p&gt;Frozen v2是折中版：&lt;strong&gt;不烧权重，只固化架构。&lt;/strong&gt;底层的计算蓝图刻死，但权重还能更新。&lt;/p&gt;
-  &lt;p&gt;这意味着只要Gemini的架构不大改，芯片就能一直用，新版本的参数照样灌得进去。&lt;/p&gt;
-  &lt;p&gt;不过，谷歌仍在内部权衡，到底把多少东西锁进硅片——锁得越多，效率越高，但灵活性也越差。这个分寸，就是整个项目最关键的工程判断。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;算力荒，逼出来的&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;谷歌为什么要下这步险棋？&lt;/p&gt;
-  &lt;p&gt;答案很简单，也很残酷：&lt;strong&gt;算力真的不够用了。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;不是「有点紧张」那种不够用，是「送上门的钱都不赚了」那种不够用。&lt;/p&gt;
-  &lt;p&gt;算力短缺已经在谷歌内部引发激烈矛盾，Google Cloud被迫开始拒绝外部客户的订单——在商业公司里，这几乎是最极端的信号。&lt;/p&gt;
-  &lt;p&gt;6月，谷歌签下了一纸合同：&lt;strong&gt;每月向SpaceX支付9.2亿美元&lt;/strong&gt;，租用11万张英伟达GPU的算力，合同一直签到2029年。&lt;/p&gt;
-  &lt;p&gt;一家全球最大的云计算公司，居然要向一家火箭公司租算力——光是这个画面，就足以说明AI军备竞赛已经疯狂到什么地步。&lt;/p&gt;
-  &lt;p&gt;谷歌并不孤独。&lt;/p&gt;
-  &lt;p&gt;全行业都在往推理芯片上疯狂押注：SambaNova、d-Matrix这样的初创公司在做，OpenAI、微软也在做，亚马逊有Trainium和Inferentia，微软有Maia。&lt;/p&gt;
-  &lt;p&gt;英伟达自己都坐不住了——去年12月豪掷200亿美元，拿下推理芯片公司Groq的技术授权。&lt;/p&gt;
-  &lt;p&gt;所有人的目标只有一个：&lt;strong&gt;把每一瓦电，榨出更多Token。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;而「把模型硬连线进芯片」这条路，此前只有加拿大初创公司Taalas在走——它已从Quiet Capital、富达等投资方融资超2亿美元。&lt;/p&gt;
-  &lt;p&gt;现在，谷歌亲自下场了。&lt;/p&gt;
-  &lt;h2&gt;&lt;strong&gt;一场豪赌&lt;/strong&gt;&lt;/h2&gt;
-  &lt;p&gt;但十倍能效，不是白拿的。代价是两个字：&lt;strong&gt;僵化&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;只有后续世代的Gemini仍沿用芯片设计时的同一底层架构，Frozen v2才能继续工作。&lt;/p&gt;
-  &lt;p&gt;换句话说，谷歌是在赌——赌自己未来几年不需要大改Gemini的造法。&lt;/p&gt;
-  &lt;p&gt;从纯Transformer到MoE混合专家，从纯文本到多模态原生，从密集推理到稀疏激活——模型架构的迭代速度，堪比手机行业最疯狂的年代。&lt;/p&gt;
-  &lt;p&gt;谷歌自己也清楚这个风险。所以Frozen v2不会做到TPU的产量规模，更像一次&lt;strong&gt;有限度的试验&lt;/strong&gt;：赌对了，就是印钞机，每瓦电多榨几倍Token，数据中心省下来的电费和机柜都是纯利润；赌错了，就当交学费，教工程师学会怎么造更专用的芯片，为下一代积累经验。&lt;/p&gt;
-  &lt;p&gt;值得玩味的是时机。就在上周，彭博爆出Gemini 3.5 Pro因编程能力等多项指标不达标而三度延期。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,889" src="https://img.36krcdn.com/hsossms/20260721/v2_73ee43b01cfc474b8c7921ccccbea050@5091053_oswg943867oswg1080oswg889_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;模型侧腹背受敌的谷歌，突然把更多筹码推向了自己最深的那条护城河——&lt;strong&gt;芯片。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;从当年自研TPU减少对英伟达的依赖，到今天把模型直接焊死进硅片，谷歌走的是同一条路的更深处：&lt;strong&gt;软硬件协同的尽头，是软硬件合体。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;AI的竞争开始&lt;strong&gt;拼物理&lt;/strong&gt;。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;参考资料：&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;https://x.com/kimmonismus/status/2079193746944790666?s=20&lt;/p&gt;
-  &lt;p&gt;https://castlecrypto.gg/news/alphabet-shares-rise-following-reports-of-ultra-efficient-ai-chip/&lt;/p&gt;
-  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/DoP3DyUrlJK6HMV6CfsWtQ"&gt;“新智元”&lt;/a&gt;，作者：ASI启示录，编辑：所罗门，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Tue, 21 Jul 2026 04:25:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE1Nck1DNy1DRWVlRXZuWDRqc1RsWjFNTlV4M3d5MnVJaG9PWG5mdkxKdWx6YWxYemtFaG9sdXloY3Rxb196MkZGTmJrcWVsZw</guid></item><item><title>优派新款23.8寸显示器首发799元：1080P 144Hz屏、最高功耗仅24W - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137905.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;优派新款23.8寸显示器首发799元：1080P 144Hz屏、最高功耗仅24W&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-21 12:23:24  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1137905-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，&lt;strong&gt;优派推出VA2450-HDJ显示器，该产品获得中国节能认证（CECP）一级能效认证，官方售价&lt;span&gt;799&lt;/span&gt;元，并支持180天只换不修质保服务。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;VA2450-HDJ配备23.8英寸IPS面板，屏幕表面采用抗眩光涂层，雾度25%，硬度3H。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/65f9fddc01e046cab4f7942252482e1d.png" target="_blank"&gt;&lt;img alt="优派新款23.8寸显示器首发799元：1080P 144Hz屏、最高功耗仅24W" h="452" src="//img1.mydrivers.com/img/20260721/s_65f9fddc01e046cab4f7942252482e1d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;显示规格方面，&lt;strong&gt;分辨率为1920 x 1080，原生支持120Hz刷新率并可超频至144Hz，最快响应时间达1ms MPRT及5ms GTG，最高亮度400尼特，典型对比度为1500:1。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;色彩表现方面，支持8bit色深（6bit+FRC），覆盖72% NTSC色域。护眼功能方面，产品支持低蓝光与不闪屏技术，满足长时间使用需求。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/f9eeec8b2069406b82ed8ad8e22d9b6c.png" target="_blank"&gt;&lt;img alt="优派新款23.8寸显示器首发799元：1080P 144Hz屏、最高功耗仅24W" h="520" src="//img1.mydrivers.com/img/20260721/s_f9eeec8b2069406b82ed8ad8e22d9b6c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;节能方面，&lt;strong&gt;VA2450-HDJ为中国节能认证一级能效产品，最高功耗仅24W，典型功耗21W，待机功耗低于0.5W，兼顾性能与能效。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;支架方面，配备小型四边形底座，支持130mm高度调节、±90°垂直旋转、-5°~20°俯仰调节及360°左右旋转，同时兼容100×100mm VESA壁挂标准。接口方面，提供1个VGA（最高1080P@75Hz）、1个HDMI 1.4及1个DP 1.2，满足主流设备连接需求。&lt;/p&gt;
-&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="799元" goods_title="优派VA2450-HDJ 23.8英寸IPS 144Hz 全高清 低蓝光不闪屏 升降旋转底座 显示器 VA2450-HDJ" href="https://dt.mydrivers.com/mv.ashx?txt=Kpxan" img="https://img14.360buyimg.com/pop/jfs/t1/474770/37/14739/108211/6a55b99aF43662772/0083320320482ef9.jpg" target="_blank"&gt;京东(799元)&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/00e38bf4c830496a8bffb93a15a9f072.png" target="_blank"&gt;&lt;img alt="优派新款23.8寸显示器首发799元：1080P 144Hz屏、最高功耗仅24W" h="513" src="//img1.mydrivers.com/img/20260721/s_00e38bf4c830496a8bffb93a15a9f072.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 04:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1RNzA5VWN1SW5Haml0RHBNMEJ4Mi1KTUtxR1BUZEFjTG5JVDNzeWdFeUlUenRwVkNneUFVWTRqOElDQ0dLeGtmd1k2T0hXMGh5N1V2dkpzUm8</guid></item><item><title>开发者打造硬件广告拦截器！50KB内存挡53万个广告域名 10毫秒响应 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137903.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，埃及全栈开发者ZedAxis使用一块售价约5美元的ESP32-C3 SuperMini开发板，&lt;span&gt;&lt;strong&gt;打造了一个可拦截超过53万个广告域名的硬件DNS过滤器，固件仅占用约50KB内存，响应延迟约10毫秒。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;ESP32-C3 SuperMini是一块搭载Wi-Fi功能的微型单片机，仅有400KB内存和4MB闪存，这个规格无法存储任何有意义的明文黑名单域名列表，数据量太大。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260721/349109e5-afe7-4dfa-b5b8-7b686fbb5ed9.png" target="_blank"&gt;&lt;img alt="开发者打造硬件广告拦截器！50KB内存挡53万个广告域名 10毫秒响应" h="337" src="//img1.mydrivers.com/img/20260721/S349109e5-afe7-4dfa-b5b8-7b686fbb5ed9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ZedAxis的解决方案是对域名进行哈希压缩，先下载公开的广告拦截列表，去除重复项和注释后，将每个域名用40位FNV-1a算法哈希为一个40位数值，排序后写入ESP32的闪存。选择40位哈希也是经过权衡的结果，32位碰撞率太高，64位则浪费存储空间。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260721/3d337e0d-265c-4440-9c7c-34a03ca0db6f.png" target="_blank"&gt;&lt;img alt="开发者打造硬件广告拦截器！50KB内存挡53万个广告域名 10毫秒响应" h="337" src="//img1.mydrivers.com/img/20260721/S3d337e0d-265c-4440-9c7c-34a03ca0db6f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;查询匹配阶段当DNS查询到达时，&lt;strong&gt;设备用相同方式对请求的域名进行哈希，然后对排好序的哈希表执行二分查找。命中则拦截请求，未命中则转发给上游DNS解析器。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="开发者打造硬件广告拦截器！50KB内存挡53万个广告域名 10毫秒响应" h="700" src="//img1.mydrivers.com/img/20260721/ce758376-c5dc-4be4-915f-90cc64d33a8a.png" w="540"&gt;&lt;/p&gt;
-&lt;p&gt;据ZedAxis介绍，最终固件仅使用约50KB RAM内存，拦截响应耗时约10毫秒。&lt;/p&gt;
-&lt;p&gt;设计中还有一个巧妙的取舍，ESP32通常会保留两份完整固件用于OTA无线更新，以防刷写失败导致设备变砖。如果放弃OTA功能，就可以将第二份固件分区腾出来存放黑名单数据库。&lt;strong&gt;保留OTA时项目最多支持约25万个域名，放弃OTA后容量直接翻倍到约53.7万个。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260721/e764561a-4a28-4287-b243-714e7b13e5b8.png" target="_blank"&gt;&lt;img alt="开发者打造硬件广告拦截器！50KB内存挡53万个广告域名 10毫秒响应" h="477" src="//img1.mydrivers.com/img/20260721/Se764561a-4a28-4287-b243-714e7b13e5b8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;供电方式也很有意思，ZedAxis直接从ISP提供的华为OptiXstar光猫背面的USB口取电，USB连接不传输任何数据，纯粹就是路由器提供5V供电。且所有网络通信都通过ESP32集成的Wi-Fi模块完成，设备体积小到几乎可以藏在路由器后面。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 04:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE90eWNORDZoUVpGemVUYWdfbTJBd0I4ZjRfZGZCLVpwYlhQSlZXNm5aS0NlMUR4UmIySWt6aGhxeXBtQUlIUmNUb0pqSTFlNGZkSkhpa3dNZDk</guid></item><item><title>多重利好共振！跨境支付多股涨停 9股2026业绩预测翻倍 - 东方财富</title><link>https://wap.eastmoney.com/a/202607213815239191.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content" id="articleContent"&gt;
-                    &lt;a class="ftopicitem" data-code="tjcj" href="/topic/guanzhu.html?code=tjcj"&gt;
-                        
-                        &lt;p class="right"&gt;&lt;/p&gt;
-                    &lt;/a&gt;
-            
-&lt;center&gt;&lt;p class="em_adv_mods" type="1" tag="71"&gt;&lt;/p&gt;&lt;/center&gt;&lt;center&gt;&lt;p class="em_adv_mods" type="1" tag="49"&gt;&lt;/p&gt;&lt;/center&gt;&lt;p fy="off"&gt;&lt;br&gt;&lt;/p&gt;&lt;p fy="off"&gt;&lt;/p&gt;&lt;p&gt;&lt;span id="bk_90.BK1071"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1071.html"&gt;跨境支付&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK1071"&gt;&lt;/span&gt;概念7月21日早盘表现强势，板块中&lt;span id="stock_0.002987"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.002987.html"&gt;京北方&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.002987"&gt;&lt;/span&gt;、&lt;span id="stock_1.603123"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/1.603123.html"&gt;翠微股份&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_1.603123"&gt;&lt;/span&gt;、&lt;span id="stock_0.000555"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.000555.html"&gt;神州信息&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.000555"&gt;&lt;/span&gt;涨停，&lt;span id="stock_0.300674"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.300674.html"&gt;宇信科技&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.300674"&gt;&lt;/span&gt;涨超10%，&lt;span id="stock_0.300348"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.300348.html"&gt;长亮科技&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.300348"&gt;&lt;/span&gt;、&lt;span id="stock_0.000997"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.000997.html"&gt;新大陆&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.000997"&gt;&lt;/span&gt;、&lt;span id="stock_0.300468"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.300468.html"&gt;四方精创&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.300468"&gt;&lt;/span&gt;、&lt;span id="stock_1.600415"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/1.600415.html"&gt;小商品城&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_1.600415"&gt;&lt;/span&gt;、&lt;span id="stock_0.300773"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.300773.html"&gt;拉卡拉&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.300773"&gt;&lt;/span&gt;跟涨。&lt;br&gt;&lt;/p&gt;&lt;center&gt;&lt;img src="https://np-newspic.dfcfw.com/download/D25211696324466244852_w1165h2128_o.jpg" width="" height=""&gt;&lt;/center&gt;&lt;p&gt;&lt;strong&gt;&lt;span web="1" href="http://quote.eastmoney.com/unify/r/90.BK1071" class="em_stock_key_common" data-code="90,BK1071"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1071.html"&gt;跨境支付&lt;/a&gt;&lt;/span&gt;平台内测落地&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;消息面上，据每日经济新闻7月21日报道，根据官方公告，港交所与外汇交易中心合作的跨境&lt;span id="bk_90.BK1201"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1201.html"&gt;电子&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK1201"&gt;&lt;/span&gt;固收交易平台已进入内测阶段；该平台共建计划已于7月7日由央行、香港金管局、香港证监会联合官宣落地，相关跨境结算、交易系统服务商迎来新增业务增量。&lt;/p&gt;&lt;p&gt;另外，近日监管发布《金融业&lt;span id="bk_90.BK0655"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0655.html"&gt;网络安全&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK0655"&gt;&lt;/span&gt;管理办法（征求意见稿）》，明确要求金融机构完善核心系统安全改造、供应链风控、年度安全评估等硬性要求，直接带动&lt;span id="bk_90.BK1283"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1283.html"&gt;银行&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK1283"&gt;&lt;/span&gt;、券商&lt;span id="bk_90.BK1104"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1104.html"&gt;信创&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK1104"&gt;&lt;/span&gt;与安全IT改造订单扩容；此外，“十五五”规划纲要提出，“构建同科技创新相适应的科技金融体制，完善长期资本投早、投小、投长期、投硬科技支持政策”。&lt;/p&gt;&lt;p&gt;有机构表示，金融业&lt;span web="1" href="http://quote.eastmoney.com/unify/r/90.BK0655" class="em_stock_key_common" data-code="90,BK0655"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0655.html"&gt;网络安全&lt;/a&gt;&lt;/span&gt;新规落地将倒逼全行业加大&lt;a href="https://wap.eastmoney.com/quote/stock/0.165523.html"&gt;信息安全&lt;/a&gt;、&lt;span web="1" href="http://quote.eastmoney.com/unify/r/90.BK1104" class="em_stock_key_common" data-code="90,BK1104"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1104.html"&gt;信创&lt;/a&gt;&lt;/span&gt;系统升级投入，带来持续性稳定IT资本开支增量；跨境&lt;span web="1" href="http://quote.eastmoney.com/unify/r/90.BK1201" class="em_stock_key_common" data-code="90,BK1201"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1201.html"&gt;电子&lt;/a&gt;&lt;/span&gt;交易平台落地拓宽跨境金融数字化需求，叠加当前市场日均成交维持高位，券商零售端流量、增值服务收入持续改善，AI智能投顾、风控大模型逐步落地转化为实际营收，行业盈利兑现节奏将在半年报集中体现。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;AI技术赋能&lt;span web="1" href="http://quote.eastmoney.com/unify/r/90.BK1071" class="em_stock_key_common" data-code="90,BK1071"&gt;跨境支付&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;除了前述交易平台已内测的利好外，AI的发展正为跨境支付提供技术赋能，这也提振了跨境支付板块的人气。&lt;/p&gt;&lt;p&gt;在2026世界&lt;span id="bk_90.BK0800"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0800.html"&gt;人工智能&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK0800"&gt;&lt;/span&gt;大会上，&lt;span id="stock_106.MA"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/106.MA.html"&gt;万事达&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_106.MA"&gt;&lt;/span&gt;卡与寻汇发布白皮书指出，&lt;span id="bk_90.BK0809"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0809.html"&gt;AI智能体&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK0809"&gt;&lt;/span&gt;正推动B2B跨境支付从数字化迈向自主化。&lt;/p&gt;&lt;p&gt;寻汇方面向澎湃新闻表示，目前&lt;span web="1" href="http://quote.eastmoney.com/unify/r/90.BK0809" class="em_stock_key_common" data-code="90,BK0809"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0809.html"&gt;AI智能体&lt;/a&gt;&lt;/span&gt;已应用于应收应付自动化、商户入驻、支付路由优化等场景。其中，应收应付自动化覆盖发票校验、三单匹配等流程；商户入驻引入AI进行KYC核验后，开户返工率下降50%以上；支付路由可自动选择最优路径，适用于差旅、广告投放等高频场景。&lt;/p&gt;&lt;p&gt;此前，中国银联也推出智能体支付开放协议框架，聚焦身份与意图信任，共建生态。通过携手境内外产业伙伴，建立了一套统一的信任机制和交互范式，让生态各方以“即插即用”的方式无缝、安全地参与智能体支付流程。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;跨境支付的未来展望&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span id="stock_0.000776"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.000776.html"&gt;广发证券&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.000776"&gt;&lt;/span&gt;表示，&lt;span id="bk_90.BK1061"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1061.html"&gt;数字经济&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK1061"&gt;&lt;/span&gt;的蓬勃发展，特别是&lt;span id="bk_90.BK1115"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK1115.html"&gt;跨境电商&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK1115"&gt;&lt;/span&gt;、数字服务贸易和全球&lt;span id="bk_90.BK0556"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0556.html"&gt;移动支付&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK0556"&gt;&lt;/span&gt;的兴起，正在以前所未有的力量重塑跨境支付的需求格局。而即时化、普惠化、智能化将是未来跨境支付的三个主要特征。&lt;/p&gt;&lt;p&gt;根据ACI Worldwide的报告，2023年全球即时到账支付交易量已达到2662亿笔，同比增长42.2%，约占全球线上支付的五分之一，并预计到2028年，该比例会超过四分之一。这一惊人的增长数据背后，是市场对支付到账即时化的迫切渴望。&lt;/p&gt;&lt;p&gt;此外，通过技术创新和制度优化，使得全球范围内所有国家或地区的全部人群，都能以可负担的成本、便捷的方式、安全地获得和使用跨境支付服务，成为了跨境支付的重要发展方向。&lt;/p&gt;&lt;p&gt;G20作为全球主要经济体的协调平台，已将改善跨境支付体系作为其核心议程之一。G20通过其设立的金融稳定理事会等国际标准制定机构，积极推动全球范围内的政策协调与监管框架改革。在此框架下，G20明确提出了到2027年底要将跨境零售支付的全球平均成本降至1%的目标。&lt;/p&gt;&lt;p&gt;而根据Electronic Payments International报道，Payoneer曾利用实时机器学习和预测分析技术部署数据科学平台Iguazio，为其400万用户防范交易欺诈。&lt;/p&gt;&lt;p&gt;可以说，智能化风控的崛起，标志着跨境支付行业风险管理理念的根本性转变，即从传统被动、滞后的风险响应模式，向主动、实时的风险预防与精准识别模式演进。这一变革的核心&lt;span id="stock_0.920275"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.920275.html"&gt;驱动力&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.920275"&gt;&lt;/span&gt;在于AI和&lt;span id="bk_90.BK0634"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0634.html"&gt;大数据&lt;/a&gt;&lt;/span&gt;&lt;span id="bkquote_90.BK0634"&gt;&lt;/span&gt;技术的应用。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;业绩预测同比增幅前20&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;个股而言，跨境支付板块中，机构预测部分个股2026年业绩将高增长。比如&lt;span web="1" href="http://quote.eastmoney.com/unify/r/0.300348" class="em_stock_key_common" data-code="0,300348"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.300348.html"&gt;长亮科技&lt;/a&gt;&lt;/span&gt;，机构预测2026年业绩同比增长562.73%。&lt;span id="stock_1.688489"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/1.688489.html"&gt;三未信安&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_1.688489"&gt;&lt;/span&gt;机构预测2026年业绩同比增长170.97%。&lt;span id="stock_0.300872"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.300872.html"&gt;天阳科技&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.300872"&gt;&lt;/span&gt;、&lt;span id="stock_0.002183"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.002183.html"&gt;怡亚通&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.002183"&gt;&lt;/span&gt;、&lt;span web="1" href="http://quote.eastmoney.com/unify/r/0.000555" class="em_stock_key_common" data-code="0,000555"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.000555.html"&gt;神州信息&lt;/a&gt;&lt;/span&gt;、&lt;span id="stock_0.002153"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.002153.html"&gt;石基信息&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.002153"&gt;&lt;/span&gt;、&lt;span id="stock_1.688590"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/1.688590.html"&gt;新致软件&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_1.688590"&gt;&lt;/span&gt;、&lt;span id="stock_0.002439"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.002439.html"&gt;启明星辰&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.002439"&gt;&lt;/span&gt;、&lt;span id="stock_0.300339"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.300339.html"&gt;润和软件&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_0.300339"&gt;&lt;/span&gt;机构预测2026年业绩也将翻倍。&lt;/p&gt;&lt;center&gt;&lt;img src="https://np-newspic.dfcfw.com/download/D25642203221341591622_w958h1640_o.jpg" height=""&gt;&lt;/center&gt;&lt;p&gt;&lt;span web="1" href="http://quote.eastmoney.com/unify/r/0.000776" class="em_stock_key_common" data-code="0,000776"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/0.000776.html"&gt;广发证券&lt;/a&gt;&lt;/span&gt;表示，2015年到2024年，全球跨境支付的交易规模整体呈上升趋势，累计增长41.05%。&lt;span id="stock_1.601211"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/1.601211.html"&gt;国泰海通&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_1.601211"&gt;&lt;/span&gt;则表示，看好跨境支付未来增长空间，推荐跨境支付头部公司&lt;span id="Info.116.02598"&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/116.02598.html"&gt;连连数字&lt;/a&gt;&lt;/span&gt;以及在跨境支付领域加速布局的标的。&lt;/p&gt;&lt;center&gt;&lt;p class="em_adv_mods" type="1" tag="7"&gt;&lt;/p&gt;&lt;/center&gt;&lt;p fy="off" class="em_media"&gt;（文章来源：&lt;a href="https://wap.eastmoney.com/quote/stock/0.300059.html"&gt;东方财富&lt;/a&gt;研究中心）&lt;/p&gt;
-                &lt;p class="end_source"&gt;文章来源：东方财富研究中心&lt;/p&gt;
-                                &lt;/div&gt;
-
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 21 Jul 2026 04:08:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE9sTFkzdXRqcDRJSjFiMHdub0x1Vk0yU3VDaGNlWmpjRWpmcXZ4WFVnZTEtUEx0TEhhODYzMDdzaEc1NjdxY1VaZHY3eDlaQjFoY2gwemx5WWJDYzBBUDVpQQ</guid></item><item><title>美国顶尖AI公司高管就中国模型发出警告 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/top-american-ai-execs-sound-alarm-on-chinese-models-e8d3500e</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Tue, 21 Jul 2026 04:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMikgFBVV95cUxQbFNwcVJwX3BYcWFLY1VvSGtnT0lYWEYwOWg4YWxyV1RLcnQyN2VBS2daTlhISGdpYS1DQU9fNEIxSzUxc012MEJhX1dQQ3FTc19tcW1kN0tXZVlDbUxXdURJWnQ5MzgxWlJlcWRSc1RrSURsdnVsVm5ScV85ODI1VDljT2NBYUxaQTZycU5qVXFmZw</guid></item><item><title>A股三大股指均跌超1%，大金融、白酒逆势走强，算力硬件齐跌，恒科指震荡上涨 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777521</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 21 Jul 2026 04:02:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBmOFNMZ2diVFpabFVDWVJjMXVBY2lXY25pcUlWN1hZS2dTS0VBdG1iTUxKeUtVOWlBSzYtNC1jQ0p3bmFhYXpsTWVkQ19FcVBjU0NV</guid></item><item><title>ROCm性能暴跌至1/42！AMD GPU Linux驱动曝出重大Bug - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137898.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，据Ubuntu官方社群发布的紧急公告，&lt;span&gt;&lt;strong&gt;最新发布的Linux 7.0.0-28.28内核版本存在严重的AMD GPU驱动程序错误，导致AMD ROCm开源计算平台的运算负载吞吐量骤降至原本的1/42，&lt;/strong&gt;&lt;/span&gt;严重影响AI推理与高性能计算表现。&lt;/p&gt;
-&lt;p&gt;根据Ubuntu工程团队的测试数据，在特定计算密集型工作负载下，受影响系统的性能出现断崖式下跌。&lt;/p&gt;
-&lt;p&gt;以主流生成式AI应用为例，用户通过ComfyUI界面执行Stable Diffusion XL图像生成推理时，正常状态下完成单次推理任务只需约9秒，&lt;strong&gt;但升级至Linux 7.0或以上内核后，执行相同任务最长耗时竟达388秒&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260721/248c6fb9-557b-4bc7-83c9-a2d30726aba1.png" target="_blank"&gt;&lt;img alt="ROCm性能暴跌至1/42！AMD GPU Linux驱动曝出重大Bug" h="426" src="//img1.mydrivers.com/img/20260721/S248c6fb9-557b-4bc7-83c9-a2d30726aba1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ubuntu的调查显示，此性能倒退问题并非Ubuntu独有，而是源自Linux 7.0稳定版系列的上游源码。&lt;strong&gt;这意味着所有第一时间跟进升级Linux 7.0内核、并采用AMD显卡进行计算作业的系统，都有可能触发此错误。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;目前包括专注于性能优化的CachyOS，以及社区标杆发行版Fedora的用户社区中，均已出现类似的性能暴跌报告。&lt;/p&gt;
-&lt;p&gt;Ubuntu开发团队表示，目前正联合上游社区针对该驱动程序进行优化与修复工作。&lt;/p&gt;
-&lt;p&gt;在修复补丁正式发布前，建议依赖ROCm进行AI计算或大数据处理的企业与工程师，暂缓升级至Linux 7.0.0-28.28内核。&lt;strong&gt;对于已升级的用户，可将内核版本降级，以维持服务器与工作站的正常生产力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;目前AMD和Linux内核社区尚未公布修复时间表，考虑到Linux 7.0内核已被多个主流发行版纳入常规更新通道，受影响用户范围可能进一步扩大。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/e6d21cb979e541c7befca44d572291ec.png" target="_blank"&gt;&lt;img alt="ROCm性能暴跌至1/42！AMD GPU Linux驱动曝出重大Bug" h="400" src="//img1.mydrivers.com/img/20260721/s_e6d21cb979e541c7befca44d572291ec.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 03:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBOOHQ0VUpqMDVuMEtpUjlaMUdZTm9EbEgtMVllNEY5cHFXMHk4cEI0M2t3d0lQU28yVC1qMm53XzhDckVaZ0FtLWNOa1JmTER6aW96NXg2elU</guid></item><item><title>英特尔显卡终于不怕死机！冷重置恢复补丁发布：遇严重错误无需重启整机 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137897.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息，英特尔工程师近日向Linux内核提交了冷重置恢复补丁，专门针对Xe显卡驱动的硬件错误处理，该补丁已历经近十二个版本迭代。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此前遇到电源管理单元（PUNIT）错误时，显卡在热重置或驱动重新加载后仍无法恢复，用户只能重启整台电脑。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;补丁在DRM核心代码中引入了一种新的恢复方法：DRM_WEDGE_RECOVERY_COLD_RESET。当显卡因不可恢复错误被标记为失效时，驱动将请求冷重置而非系统重启。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;这意味着显卡可以从硬件层面彻底断电再通电，无需牵连整台电脑。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;DRM核心会通过uevent向用户空间发出冷重置通知。随后，udev等系统服务可根据配置自动执行相应操作。整个过程无需用户手动干预，系统在显卡发生严重错误时能完成自我修复，大大降低了运维复杂度。&lt;/p&gt;
-&lt;p&gt;该功能对数据中心和服务器场景意义重大。在大规模部署英特尔Xe显卡的AI推理和云游戏环境中，GPU错误导致的整机重启会严重影响服务可用性。&lt;strong&gt;冷重置恢复机制可将停机时间从分钟级缩短至秒级。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;目前补丁已发布在dri-devel邮件列表上供社区审查。未来英特尔GPU在Linux上遇到特定PUNIT硬件错误时，系统可自动执行设备级冷重置，无需重启整机。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="英特尔显卡终于不怕死机！冷重置恢复补丁发布：遇严重错误无需重启整机" h="650" src="//img1.mydrivers.com/img/20260721/bf3c8857-3dfb-44b6-be63-5c9fef68198a.png" w="570"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 03:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE82cTFWVGtkLURZazhzOUx2S3BhNGZNTGVZcjFOLTFXYWF1M0xZMl83LUxMUVZKZklfajh3ZUxmcVRaZkFUZC1PNlJxdldkeVBWN1A5WUtVZGY</guid></item><item><title>联想杨元庆与佛得角门将沃齐尼亚同框 现场互赠礼物 - 驱动之家</title><link>https://news.mydrivers.com/1/1137/1137895.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月21日消息 ，近日，在纽约举行的“超越赛场：中美商业、人工智能与全球协作”活动上，联想集团董事长兼CEO杨元庆与佛得角国家队门将沃齐尼亚（Vozinha）现场互动，并互赠礼物。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;活动现场，杨元庆向沃齐尼亚赠送了一台联想笔记本电脑，并表示：“这台电脑或许会对您有所帮助，为球队提供更好的技术支持。”沃齐尼亚则向杨元庆回赠了一副亲笔签名的门将手套。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/9245f98b39bf4127a3ef8c52ec63d3d1.png" target="_blank"&gt;&lt;img alt="联想杨元庆与佛得角门将沃齐尼亚同框 现场互赠礼物" h="366" src="//img1.mydrivers.com/img/20260721/s_9245f98b39bf4127a3ef8c52ec63d3d1.png" w="550"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260721/b408cd1ae9154e768f2204b3ca4ee3ce.png" target="_blank"&gt;&lt;img alt="联想杨元庆与佛得角门将沃齐尼亚同框 现场互赠礼物" h="366" src="//img1.mydrivers.com/img/20260721/s_b408cd1ae9154e768f2204b3ca4ee3ce.png" w="550"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;值得一提的是，本届世界杯联想以AI技术助力赛事。活动上，杨元庆介绍，联想集团打造的足球超级智能体FIFI AI Pro，第一次把生成式AI用到了世界杯战术体系里，并且开放给了全部48支参赛队伍。教练用自然语言提问，系统几秒钟就能给出分析。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“豪门能用，第一次闯进来的佛得角也能用。”杨元庆现场表示，作为首次闯入世界杯的新军，佛得角与最终夺冠的西班牙队、亚军阿根廷队获得了同一个技术工具箱。佛得角可能也是本届世界杯唯一一支在90分钟内与冠军、亚军均战平的球队。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“这就是技术平权的意义：不仅让强队更强，也让更多球队站在同一个起跑线上。”杨元庆总结称。&lt;/p&gt;
-&lt;p&gt;谈到AI技术，沃齐尼亚上台表示“我认为通过分析比赛，比如像今天的越位判罚，AI可以提供很大帮助。这正是AI有作为的地方，因为有时候一场比赛的胜负往往取决于细节，这确实能够带来巨大的帮助的因素之一。”&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 03:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE03ay1yaDNrRVBJdE5VdUVKdEhrUWdhREhmOEd1UTl2R2ZVOER2dGRyN245eG5tei1XQjdFRVRmOERhZTV2SDEwY1RWdi05RXdZSTdHZHN5VHU</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 21 Jul 2026 06:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB1aHQtT2hoaEtSQUZkWTIzczJMQ2RJbEdHRV9NSUhxbFRQM0t2bGdPZVN2Q1IzNlo0RDZjN28yUXFGUkgtb2F3TnM3M2twT3p1MW5KajM2Y0M</guid></item></channel></rss>
