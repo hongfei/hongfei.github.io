@@ -1,5 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>等等党彻底输了！NVIDIA显卡全线调涨价格：GDDR7和GDDR6无一幸免 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138609.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>卖芯片的在赚钱，用芯片的在亏钱！摩根大通：接下来几周将是美股命运的关键 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777800</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 23 Jul 2026 12:55:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9ScDlLdzlaU2JzR0EtTHpiYWlHQWZWUlN6UGU3WlU2cVJ4d1dmT1I1NG5IMHNvM0JFanFIVURncUxBalNnNlEwcGhEa24tSFRVeFI0</guid></item><item><title>CPU发热不再叫醒所有核心！英特尔为Linux 7.3带来定向温控：空闲核心不用被唤醒 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138629.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月23日消息，&lt;span&gt;&lt;strong&gt;英特尔工程师为Linux内核准备的一项新功能即将随Linux 7.3版本上线。该功能名为定向封装级热中断（Directed Package Thermal Interrupts），旨在改变CPU温度告警的处理方式。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;传统做法中，一旦某个CPU核心温度异常，系统会向封装内所有核心广播信号，空闲核心会被无故唤醒，多个核心还要争抢同一把锁来更新数据，这种广播式告警在多核时代造成了不必要的资源浪费。&lt;/p&gt;
+&lt;p&gt;英特尔工程师采用的解决方案是，在封装级热中断中向封装内所有在线CPU广播，但实际只需要一个核心处理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;因此，新功能让特定核心主动注册接收中断请求，只有注册了的核心才会被唤醒。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该功能的工作原理是，支持该特性的英特尔处理器允许将封装级热中断仅定向发送给明确请求接收的CPU。CPU通过设置IA32_THERM_INTERRUPT寄存器的第25位来注册接收。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;硬件确认请求后，系统启动时会为每个封装分配一个专门的中断处理核心。若该核心离线，系统会自动选择新的处理核心。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;英特尔表示，该功能兼容新旧处理器平台。新款CPU可启用定向热中断，仅唤醒指定核心处理温控告警；老款CPU则不受影响，仍沿用原有的广播式处理方式。&lt;/p&gt;
+&lt;p&gt;该功能预计将在8月下旬Linux 7.3合并窗口开启时正式进入主线内核。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/80fa4500-2d52-4b62-9bee-eebe66f171e4.png" target="_blank"&gt;&lt;img alt="CPU发热不再叫醒所有核心！英特尔为Linux 7.3带来定向温控：空闲核心不用被唤醒" h="361" src="//img1.mydrivers.com/img/20260723/S80fa4500-2d52-4b62-9bee-eebe66f171e4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 12:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5OY04tcUIwRTNJd1BoVUNUS2d4cEkySUFOOWtXYlpPYjRQNjVIVjdBaWgzenNoX0pOakdqY3hOOXRSQnZ0TFQwWGhHN0xDMmhhaWF5cllBRlk</guid></item><item><title>求之科技AIRBOT P7七轴仿生机械臂发布：内置旭日5芯片！10TOPS算力 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138628.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技7月23日消息，近期，清华智能产业研究院孵化企业求之科技正式推出AIRBOT P7七轴科研级机械臂，内置地瓜机器人旭日5智能计算芯片，自带10TOPS AI算力。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;具体来看，AIRBOT P7搭载地瓜机器人旭日5智能计算芯片，拥有10TOPS AI算力与八核ARM A55处理器，原生支持Transformer等前沿具身算法。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;无需外置算力设备，就能独立完成目标检测、深度估算、操作策略推理，大幅简化设备部署难度。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/fc61cd73-bb9d-4db2-a6a4-9c5d03061d28.jpg" target="_blank"&gt;&lt;img alt="求之科技AIRBOT P7七轴仿生机械臂发布：内置旭日5芯片！10TOPS算力" h="718" src="//img1.mydrivers.com/img/20260723/Sfc61cd73-bb9d-4db2-a6a4-9c5d03061d28.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;机械本体采用七轴冗余仿生结构，复刻人类手臂运动逻辑，可在不改变末端操作姿态的前提下调整肘部位置，有效规避狭小空间内的关节限位与运动奇异点，机柜调试、居家精细操作等复杂场景都能灵活适配。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;整机搭载全域重力补偿系统，支持柔顺拖动示教，零基础研发人员可手动拖拽录制整套操作流程，上手门槛显著降低。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/a14c5d3a-f25f-4ce2-a6ef-17dcdb4cbf76.png" target="_blank"&gt;&lt;img alt="求之科技AIRBOT P7七轴仿生机械臂发布：内置旭日5芯片！10TOPS算力" h="387" src="//img1.mydrivers.com/img/20260723/Sa14c5d3a-f25f-4ce2-a6ef-17dcdb4cbf76.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;软硬件层面全面兼容ROS2、Python、C++主流开发环境，搭配秒级快拆末端执行器结构，工具更换、二次算法调试效率大幅提升，全关节内置抱闸安全防护，意外断电时可自动锁止机械结构，保障实验室使用安全。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;产品自重5kg，额定负载3kg，最大臂展640mm，重复定位精度±0.1mm，防护等级IP54，工作环境区间-10℃至55℃，综合功耗60W，支持位置、力矩、速度三种控制模式。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/34a5431d-b2c5-458e-a194-37c6765d4e72.png" target="_blank"&gt;&lt;img alt="求之科技AIRBOT P7七轴仿生机械臂发布：内置旭日5芯片！10TOPS算力" h="313" src="//img1.mydrivers.com/img/20260723/S34a5431d-b2c5-458e-a194-37c6765d4e72.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;配套G2P二指夹爪夹持范围0-95mm，最大夹持力30N，同样采用快拆安装方式。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;价格方面，AIRBOT P7七轴机械臂建议零售价45000元，配套G2P二指夹爪售价4500元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/d9b57a0b-b7a4-4f24-b23b-0b56bde4550f.jpg" target="_blank"&gt;&lt;img alt="求之科技AIRBOT P7七轴仿生机械臂发布：内置旭日5芯片！10TOPS算力" h="1122" src="//img1.mydrivers.com/img/20260723/Sd9b57a0b-b7a4-4f24-b23b-0b56bde4550f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 11:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1DRDVlM0hpMkFXS0hESXk5dmVaN09sN19lZWdtellaSm16YUhubU4yREpWN0NxYThjQWRNZzVBLV92VGl1eFZzMENVcXh6Y1YxM1c5YTlBbXQ</guid></item><item><title>8800MT/s！国产DDR5首次冲上高频天花板：长鑫颗粒硬刚国际大厂 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138620.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;8800MT/s！国产DDR5首次冲上高频天花板：长鑫颗粒硬刚国际大厂&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-23 19:41:14  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1138620-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月23日消息，&lt;span&gt;&lt;strong&gt;阿斯加特官方宣布，海姆达尔内存与瓦尔基里二代耀系列内存，在华硕Z890主板上成功超频至8800MT/s。这是国产DDR5内存首次冲上高频天花板，零报错零蓝屏通过烤机验证。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;该内存搭载长鑫存储单颗容量为3GB（24Gb）、位宽为8bit的颗粒，架构与制程双重升级，标配24G×2双通道48GB超大容量。&lt;/p&gt;
+&lt;p&gt;长鑫3G8颗粒相比传统2GB颗粒在单条容量上提升了50%，加之原生6000MT/s频率配合CL36低时序，为冲击更高频率打下坚实基础。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/5cce6b86-d2b2-4944-8336-94f18accf2e3.jpg" target="_blank"&gt;&lt;img alt="8800MT/s！国产DDR5首次冲上高频天花板：长鑫颗粒硬刚国际大厂" h="1298" src="//img1.mydrivers.com/img/20260723/S5cce6b86-d2b2-4944-8336-94f18accf2e3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;除了颗粒自身实力之外，华硕Z890 AYW GAMING WIFI W主板的12+1+2+1供电设计同样功不可没。这是一款4DIMM（2DPC/2SPC）设计的主板，扎实的PCB布局确保了高频下供电稳定和信号完整。&lt;/p&gt;
+&lt;p&gt;需要提及的是，华硕BIOS针对高频内存的优化调校让超频更加友好。即使不熟悉手动调参的玩家也能轻松释放硬件潜力，降低了高频内存的使用门槛。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/4a24d7cd-26f9-46db-ac2c-28689b849180.jpg" target="_blank"&gt;&lt;img alt="8800MT/s！国产DDR5首次冲上高频天花板：长鑫颗粒硬刚国际大厂" h="1236" src="//img1.mydrivers.com/img/20260723/S4a24d7cd-26f9-46db-ac2c-28689b849180.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;国产DDR5内存的频率天花板正在被一次次刷新。从微星在AMD平台将长鑫颗粒推向8200MT/s，到七彩虹与微星在Intel平台达成8600MT/s，再到如今阿斯加特联手华硕冲上8800MT/s，国产颗粒的高频能力正在快速逼近国际一线水准。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;国产DDR5正在用实力证明，高端内存市场不再是国际厂商的专属领地。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/641afbcf-905f-41f6-9f3e-8ce873cccafc.jpg" target="_blank"&gt;&lt;img alt="8800MT/s！国产DDR5首次冲上高频天花板：长鑫颗粒硬刚国际大厂" h="799" src="//img1.mydrivers.com/img/20260723/S641afbcf-905f-41f6-9f3e-8ce873cccafc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 11:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE80YXkzME9ob3JzSEVxRlZJd0tiVlBIYWtfcTEtM2RxSUxhZzMyUjJlNkhmbUk1R1NqS3RlUW5FZUhfdVZiTk9XZ3cxd1RqblpFT3JQTUg4Z2o</guid></item><item><title>OPPO Find X10 Pro Max测试2亿超大底潜望长焦：1/1.28英寸同档最强 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138618.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月23日消息，博主数码闲聊站爆料，OPPO Find X10 Pro Max正在测试一款2亿像素超大底潜望长焦传感器，型号为OV52A。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;这枚传感器拥有2亿像素和1/1.28英寸的超级大底，同时支持长焦微距拍摄功能。如果这一配置顺利落地，OPPO Find X10 Pro Max的望远能力将在同档位中占据明显优势。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据爆料，同档位竞品大多采用1/1.4英寸的方案，而OPPO Find X10 Pro Max的超大底潜望长焦将进一步提升远摄画质，更大的传感器面积意味着更强的光线捕捉能力。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260723/56f771a5a5b04a989b27a868f5a966ee.jpg" target="_blank"&gt;&lt;img alt="OPPO Find X10 Pro Max测试2亿超大底潜望长焦：1/1.28英寸同档最强" h="399" src="//img1.mydrivers.com/img/20260723/s_56f771a5a5b04a989b27a868f5a966ee.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以OPPO Find X10 Ultra为例，其10倍潜望长焦的传感器尺寸从上代的1/2.75英寸跃升至1/1.95英寸，感光面积大幅增加。更大的进光量让长焦在演唱会、夜景等弱光场景下依然能够拍出纯净明亮的画面，噪点控制显著提升。&lt;/p&gt;
+&lt;p&gt;其次，解析力与动态范围也得到了全面提升。超大底配合高像素输出，可在10倍甚至更高变焦范围内保持出色的细节表现。同时大底传感器有助于提升动态范围，使高光与阴影部分的细节更加丰富。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;在核心配置方面，OPPO Find X10 Pro Max将首批搭载联发科天玑9600 Pro芯片。这颗芯片基于台积电2nm工艺制造，&lt;/strong&gt;&lt;/span&gt;是OPPO首款采用2nm制程的旗舰机型，性能表现值得期待。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;工业设计方面，OPPO Find X10 Pro Max的外观与Find X9s Pro较为接近，采用横向大矩阵模组设计，后置为四摄方案，包含主摄、超广角、潜望长焦以及丹霞原彩镜头，整体布局规整且具有辨识度。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;新机最快将于9月亮相。随着发布时间的临近，关于这款旗舰的更多配置信息也将陆续揭晓。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260723/dfc8f03e1f474f0a95d46a092c0161cf.jpg" target="_blank"&gt;&lt;img alt="OPPO Find X10 Pro Max测试2亿超大底潜望长焦：1/1.28英寸同档最强" h="438" src="//img1.mydrivers.com/img/20260723/s_dfc8f03e1f474f0a95d46a092c0161cf.jpg" w="600"&gt;&lt;/a&gt;&lt;br&gt;
+OPPO Find X10系列渲染图，非真机&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 11:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5nN1R2U1NyZ01pNDRnd0ZFVmo0ZG4wSlpNRWlnRjg0QjF5dHdpRU03eDRJUkt0NUNEMFE2MHBHTXA1RmRuTEVzakh3NzB4aWVSREkwZTZYVkY</guid></item><item><title>等等党彻底输了！NVIDIA显卡全线调涨价格：GDDR7和GDDR6无一幸免 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138609.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;等等党彻底输了！NVIDIA显卡全线调涨价格：GDDR7和GDDR6无一幸免&lt;/p&gt;
           
@@ -62,7 +191,53 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 10:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9WTU1sZzN6SmZxQTBaR1o5LTJOc0JUOEh5UHNIckFoc0pzamx2Wm4wWmRWX3liYVd5eWt6TXNwZEpzUlpNandLVEpRMC1ta2E0dTZvU2VlODU</guid></item><item><title>马斯克公开感谢美光！给的内存价格还算厚道 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138590.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 10:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9WTU1sZzN6SmZxQTBaR1o5LTJOc0JUOEh5UHNIckFoc0pzamx2Wm4wWmRWX3liYVd5eWt6TXNwZEpzUlpNandLVEpRMC1ta2E0dTZvU2VlODU</guid></item><item><title>国产手机又掀起新一轮涨价潮 店员：一个512G内存就值1000多元 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138607.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月23日消息，2026年3月，手机行业迎来了一场近五年来规模最大、覆盖范围最广的集体涨价潮。多家国产手机品牌均启动了不同幅度的价格调整，一时间涨价成为行业主旋律。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;本轮涨价的核心推手是存储芯片价格的暴涨。根据市场数据，2026年第一季度，通用型DRAM合约价环比涨幅达到55%至60%；智能手机存储芯片的采购成本较2025年同期已上涨超过80%，直接推高了整机成本。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然而这波调价并非终点，据媒体报道，记者在走访多家手机门店时了解到，多个品牌手机价格近期又进行了一轮小幅上调，涨幅在300元至500元不等。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;某手机店销售人员透露，再出新一代的话，基本上会涨1000元到2000元，内存价格上涨正在持续推高新机售价。&lt;strong&gt;他举例说，一个512G的手机存储都值1000多元，后边涨个几百元很正常。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据了解，AI热潮的爆发挤占了原有的内存芯片产能。为满足AI服务器对高带宽内存的爆发式需求，三星、SK海力士等存储巨头将大量产能从手机DRAM转向HBM产品，直接导致消费级DRAM出现供不应求的局面，价格随之暴涨。&lt;/p&gt;
+&lt;p&gt;从短期走势来看，2026年下半年涨价仍是主旋律。摩根士丹利预计三季度DRAM价格环比上涨20%至30%以上。瑞银则更为激进，预测三季度DDR价格环比大涨32%，四季度再涨18%。&lt;/p&gt;
+&lt;p&gt;进入2027年，供需缺口可能进一步扩大。瑞银分析指出，2027年DRAM需求增速将明显高于供给增速，供需失衡程度将达到过去30年罕见的水平。&lt;/p&gt;
+&lt;p&gt;伯恩斯坦也认为，存储牛市有望延续至2027年。关于价格拐点，市场普遍预期2027年下半年至2028年，随着新增产能陆续释放，存储价格才可能逐步回归常态。在此之前，下游终端厂商和消费者仍将承受持续的成本压力。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260723/21d63737d4c64c3d81ed50a7e516aeed.png" target="_blank"&gt;&lt;img alt="国产手机又掀起新一轮涨价潮 店员：一个512G内存就值1000多元" h="300" src="//img1.mydrivers.com/img/20260723/s_21d63737d4c64c3d81ed50a7e516aeed.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 10:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1EQUt1a05fTENQOU9GbjFFQjZ0TU85ZHJCdU81b1lWVGMyMTJOM1pOMW45QW9Leno3ekoxZGZtZE9scFBTSlhxMkloa3hyT2p5ZVlNUWVLc28</guid></item><item><title>极氪：将持续优化安全策略，提升跨境出行体验 - 观察者</title><link>https://www.guancha.cn/qiche/2026_07_23_824837.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	【文/观察者网 张家栋 编辑/高莘】
+&lt;/p&gt;
+&lt;p&gt;
+	7月23日，针对极氪车主反馈的跨境自驾被锁车机一事，极氪方面向观察者网回应称，因该车辆定位显示在海外区域，触发了车机内置的安全保护机制。目前，涉事车辆已完成核验，车机强提示已解除，极氪正与用户保持密切沟通，积极协助解决后续事宜。后续极氪将结合用户反馈持续优化安全策略，提升跨境出行体验。
+&lt;/p&gt;
+&lt;p&gt;
+	此前，该涉事车主在社交媒体发文称，其在跨境自驾途中车机系统突然被远程锁定，中控屏幕仅显示解封申请界面。锁车期间，车辆仅保留基础行驶功能，导航、影音、储物箱解锁等所有智能功能失效，油箱盖也无法正常开启。储物箱内的现金、证件等个人物品无法取出。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/internet/2026/07/23/20260723180937371.jpg" title="点击查看大图" class="bigimg"&gt;
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;span&gt;极氪品牌官网&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	对此，极氪方面表示，该安全保护机制为行业内普遍采用的防盗防损措施，旨在保障车主财产安全，同时符合各国法规要求及车辆进出口管理秩序，防范因走私、盗抢等导致的车辆安全风险。
+&lt;/p&gt;
+&lt;p&gt;
+	同时极氪还强调，该保护机制不会对车辆动力、制动等核心行驶系统产生任何影响，不存在“车辆被锁”或“无法驾驶”等情况。充电口盖可通过直接按压开启，油箱盖可通过长按车内双闪实体按键5秒进行物理解锁，全程无需依赖车机操作。
+&lt;/p&gt;
+&lt;p&gt;
+	极氪方面称，通常情况下，触发该机制后，经核验确为车主出境自驾等合规使用场景，可通过授权码解除提示。
+&lt;/p&gt;&lt;p&gt;&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Thu, 23 Jul 2026 10:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTFBtcHY1aUN4WGRFMmplNHlsU3RmeFVqZUo2b3h1NTh3UDhkOWFiTE1ZaVJpZ1QzTWFyNGg2Y1BmM2JoaUxNMXFDSUQ4dmNnNGFVc3JINXp4c1lCSm0zVFJSREV3</guid></item><item><title>马斯克公开感谢美光！给的内存价格还算厚道 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138590.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月23日消息，&lt;span&gt;&lt;strong&gt;在特斯拉最新财报电话会上，马斯克罕见点名感谢美光，称对方为特斯拉提供了内存供应，而且考虑到当前内存价格，这个价格已经算合理。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这一表态也从侧面说明，随着AI训练、数据中心扩张和高性能算力需求持续升温，内存相关器件的供应和价格依然处在偏紧状态。&lt;/strong&gt;&lt;/p&gt;
@@ -80,7 +255,137 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 09:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5BTDNEUHJtbnNIeEhmUm9JenpQUHF1OFg5bjhfak5KdVJHN2t5UnNRYl9YdGVnYUtRLVlvRVdsUkZrQUhOOGkxbC1HT3FtcFd3ajc4cWQxWmE</guid></item><item><title>女子电脑显示屏内被蚂蚁筑巢 网友调侃：装个杀虫软件就好了 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138557.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 09:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5BTDNEUHJtbnNIeEhmUm9JenpQUHF1OFg5bjhfak5KdVJHN2t5UnNRYl9YdGVnYUtRLVlvRVdsUkZrQUhOOGkxbC1HT3FtcFd3ajc4cWQxWmE</guid></item><item><title>大学生开发者立功！KaihongOS x86首个三方应用上线：能与鸿蒙设备互联 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138573.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;大学生开发者立功！KaihongOS x86首个三方应用上线：能与鸿蒙设备互联&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-23 17:23:45  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1138573-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月23日消息，&lt;span&gt;&lt;strong&gt;KaihongOS桌面版x86平台迎来首个三方应用，由大学生开发者伍子曦及其团队打造。这款名为系统观测台的应用成为首款预装三方应用，能与华为鸿蒙设备通过IP互联。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据了解，系统观测台是一款一站式硬件监测工具，可实时查看CPU占用率、内存使用情况和电池电量等关键指标。这标志着KaihongOS生态从系统层面向应用层面迈出了关键一步。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/3a171016-5ade-4015-87ac-5ada0c7c4fec.png" target="_blank"&gt;&lt;img alt="大学生开发者立功！KaihongOS x86首个三方应用上线：能与鸿蒙设备互联" h="802" src="//img1.mydrivers.com/img/20260723/S3a171016-5ade-4015-87ac-5ada0c7c4fec.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;除了支持鸿蒙设备互联之外，该应用还为开发者和普通用户提供了基础的系统运维能力。通过直观的界面展示硬件运行状态，降低了系统监控的使用门槛。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;值得注意的是，KaihongOS桌面版近期更新非常密集。6月底的V5.0.2.30版本升级了相机和文档编辑功能，优化了视频编解码和分辨率调节。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/1ed045ae-661a-4911-8462-230a726c3868.png" target="_blank"&gt;&lt;img alt="大学生开发者立功！KaihongOS x86首个三方应用上线：能与鸿蒙设备互联" h="802" src="//img1.mydrivers.com/img/20260723/S1ed045ae-661a-4911-8462-230a726c3868.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同时，上月初的V5.0.2.25版本适配了QEMU虚拟机。5月底的V5.0.2.20版本还覆盖了AMD Ryzen 2000G到4000系列APU集显和RX系列独显，硬件兼容性持续扩展。&lt;/p&gt;
+&lt;p&gt;KaihongOS作为开源鸿蒙生态的重要分支，桌面版快速迭代显示出深开鸿在国产操作系统领域的投入力度。首个三方应用的上线将加速生态成熟，吸引更多开发者加入。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对于国产操作系统而言，大学生开发者的参与意味着生态活力的提升。从系统到应用再到开发者社区的完整链条正在逐步成型。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260723/3614981a-c88a-43d4-b1ae-ac2dbf9ee85c.png" target="_blank"&gt;&lt;img alt="大学生开发者立功！KaihongOS x86首个三方应用上线：能与鸿蒙设备互联" h="802" src="//img1.mydrivers.com/img/20260723/S3614981a-c88a-43d4-b1ae-ac2dbf9ee85c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 09:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE93WlhrZ01CaWx1VnotaFFZdnlYV29UWDRjVHpic0FHWnZNalExUXAxRlJqUzBSRXpSRWJnY1k0Y0V5ZHp3ZGpkWUhiNWxveHhqVjg2Z2JTaVA</guid></item><item><title>阿斯加特V7 SSD开售！1TB 999元 读速可达7000MB/s - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138564.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;阿斯加特V7 SSD开售！1TB 999元 读速可达7000MB/s&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-23 17:08:25  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1793098.html" title="知微的主页" class="newstiao4"&gt;知微&lt;/a&gt;&lt;p&gt;  编辑：知微 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1138564-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月23日消息，&lt;span&gt;&lt;strong&gt;阿斯加特V7固态硬盘现已在京东上架，主打PCIe 4.0高速存储，连续读取速度最高可达7000MB/s，1TB版定价999元，2TB版定价1999元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这款产品采用M.2接口，支持NVMe协议，连续写入速度最高为6500MB/s，已经来到主流PCIe 4.0 SSD的高端速度区间，对游戏加载、大文件传输和日常生产力场景都比较友好。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;从规格来看，1TB版本的TBW为640TB，2TB版本TBW为1200TB，MTBF都为150万小时，官方提供五年质保，属于目前中高端消费级SSD比较常见的一套参数组合。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;散热方面，阿斯加特V7采用铜箔散热设计，散热面积约3.8平方厘米，官方称可有效降低温度，资料中还提到其导热系数为39W/m·K，并给出了最高降温7℃的数据。&lt;/p&gt;
+&lt;p&gt;整体来看，这款产品的卖点并不是玩特别新的PCIe 5.0概念，而是把PCIe 4.0 SSD比较成熟的一套速度、容量和质保规格放到一个相对直观的价格带里。&lt;/p&gt;
+&lt;p&gt;如果你现在还在用老SATA固态，或者正准备给主机补一块游戏盘，7000MB/s和999元这个组合，你觉得值吗？&lt;/p&gt;
+&lt;p&gt;&lt;img alt="阿斯加特V7 SSD开售！1TB 999元 读速可达7000MB/s" h="652" src="//img1.mydrivers.com/img/20260723/9db3968b-ad2f-416a-9264-5a55dd9271d1.jpg" w="594"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="阿斯加特V7 SSD开售！1TB 999元 读速可达7000MB/s" h="653" src="//img1.mydrivers.com/img/20260723/496972cf-b3cf-4846-b174-61f8c4df0710.jpg" w="593"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="阿斯加特V7 SSD开售！1TB 999元 读速可达7000MB/s" h="653" src="//img1.mydrivers.com/img/20260723/222e101f-55cc-44d6-894b-4bb6f429b04d.jpg" w="598"&gt;&lt;/p&gt;
+&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="999元" goods_title="阿斯加特（Asgard）V7 1TB SSD固态硬盘 M.2接口(NVMe协议) PCIe 4.0 读速高达7000MB/s 支持新一代PS5平台" href="https://dt.mydrivers.com/mv.ashx?txt=l3w89" img="https://img14.360buyimg.com/pop/jfs/t1/484268/14/1636/36185/6a59c19bF957613f6/0083320320fc1c68.png" target="_blank"&gt;京东(999元)&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知微&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 09:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE94UzlxQTN6cGZ1SlZ4djRxdWNuTk5SZ1NwYmFkTnZxZmd5a0tFRTNBWFhIY1VxNGNwNW9YZkhJOWlqd2w4R3RublNuLXRGS1ZjTTVBSUh5Rmg</guid></item><item><title>女子电脑显示屏内被蚂蚁筑巢 网友调侃：装个杀虫软件就好了 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138557.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月23日消息，据媒体报道，近日，云南临沧一名女子发现，自己使用了6年的电脑显示屏内竟有蚂蚁筑巢，她直呼开眼了。&lt;/p&gt;
 &lt;p&gt;该女子称，她去上班的时候，把电脑打开猴看到蚂蚁进到屏幕里面，吓了一大跳。&lt;/p&gt;
@@ -248,7 +553,72 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 08:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9FMTg5eTA3ck0yMnpZZWZBcVNjZ3pfeVhKekJ0Wjh3Q1UxdTVwRU5icGdVVmlDcDBPbzB1M09Bc2VMNklpMGNpOS14UTlBbE5UZGxoQV83ejc</guid></item><item><title>新版高通骁龙8E5下半年登场：下调CPU峰值频率 主打高性价比 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138528.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 08:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9FMTg5eTA3ck0yMnpZZWZBcVNjZ3pfeVhKekJ0Wjh3Q1UxdTVwRU5icGdVVmlDcDBPbzB1M09Bc2VMNklpMGNpOS14UTlBbE5UZGxoQV83ejc</guid></item><item><title>一块屏幕三档玩法！飞利浦新款显示器首发1099元：支持275Hz至540Hz切换 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138531.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;一块屏幕三档玩法！飞利浦新款显示器首发1099元：支持275Hz至540Hz切换&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-23 16:16:35  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1138531-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月23日消息，&lt;strong&gt;飞利浦推出27M4N3500PT显示器，支持2K 275Hz/FHD 360Hz/HD 540Hz三模功能，售价仅&lt;span&gt;1099&lt;/span&gt;元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该显示器搭载27英寸Fast-IPS面板，最快响应时间达到1ms GTG和0.3ms MBR，&lt;/strong&gt;全屏最高亮度350尼特，对比度1000:1，支持HDR 10。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260723/3f8996d0e5df45b382c7e798e80d825b.png" target="_blank"&gt;&lt;img alt="一块屏幕三档玩法！飞利浦新款显示器首发1099元：支持275Hz至540Hz切换" h="484" src="//img1.mydrivers.com/img/20260723/s_3f8996d0e5df45b382c7e798e80d825b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;色彩方面，支持8bit色深，覆盖100% sRGB、98% DCI-P3和94% Adobe RGB色域，官方宣称ΔE＜2，色彩表现精准可靠。护眼功能则配备硬件级低蓝光和不闪屏技术，有效减轻长时间使用的视觉疲劳。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260723/9c4ad0c63f21432a9e3cca80a3950fc6.png" target="_blank"&gt;&lt;img alt="一块屏幕三档玩法！飞利浦新款显示器首发1099元：支持275Hz至540Hz切换" h="409" src="//img1.mydrivers.com/img/20260723/s_9c4ad0c63f21432a9e3cca80a3950fc6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在附加功能上，新品支持区块级动态低蓝光显示，可分区控制画面低蓝光区域。&lt;strong&gt;同时搭载零感同步技术，大幅降低操作延迟；配合飞利浦P Center控制软件，还可启用多种游戏辅助功能，提升竞技体验。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;支架部分采用小尺寸底座设计，支持-5°至20°俯仰调节，并兼容100 x 100mm VESA壁挂标准。&lt;/p&gt;
+&lt;p&gt;接口方面提供2个HDMI 2.1 TMDS接口、1个DP 1.4接口以及1个3.5mm耳机插孔，满足主流连接需求。&lt;/p&gt;
+&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="1099元" goods_title="飞利浦弈威27英寸2K 275Hz/FHD 360/HD 540Hz一屏三竞模式 IPS硬件低蓝光 电竞显示器 27M4N3500PT【首款三模】" href="https://dt.mydrivers.com/mv.ashx?txt=Md2wO" img="https://img14.360buyimg.com/pop/jfs/t1/460302/33/9094/199712/6a5f434eF7929fb00/0083320320337449.png" target="_blank"&gt;京东(1099元)&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260723/6687e80f160b4323a54e398d0741654f.png" target="_blank"&gt;&lt;img alt="一块屏幕三档玩法！飞利浦新款显示器首发1099元：支持275Hz至540Hz切换" h="329" src="//img1.mydrivers.com/img/20260723/s_6687e80f160b4323a54e398d0741654f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 08:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9CV2JlajcwTDNRN18tT1NUbzF2cGVfY1kyaFQ1MWo2WWhlREd2NThLMWFVS1dXQUVOeWV6ZnFhNklxeTlOWVdzRnRRS0hFc2Q1c2o5czBGQlQ</guid></item><item><title>新版高通骁龙8E5下半年登场：下调CPU峰值频率 主打高性价比 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138528.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;新版高通骁龙8E5下半年登场：下调CPU峰值频率 主打高性价比&lt;/p&gt;
           
@@ -312,7 +682,7 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 08:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xUHBRZFdvZFZHU1kxZzZlejRCN180VjVmSkc3OVNmdjdQelBMc0hwRW5QYU5HejRjZkdORG9BQ0RCRnZGWWl6aURkMUMzS2ZYT3htazJ2TUc</guid></item><item><title>对冲基金经理Russell Clark：美债是比AI更大的投机泡沫，AI巨头烧钱是为“防住马斯克” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777768</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 23 Jul 2026 08:05:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5SUkthaXNrVlFjUmZIUlN1SVNLRUpGaXhXVUNrZFAtY0tKb0pveS0tMnVBWURvMlFYcFdIcms1enNOQUpFaEk5d0FFclZiTUVBcV9r</guid></item><item><title>国内首次！真武M890跑通2.4万亿Qwen3.8：推理效率提升1.5倍 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138526.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 08:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xUHBRZFdvZFZHU1kxZzZlejRCN180VjVmSkc3OVNmdjdQelBMc0hwRW5QYU5HejRjZkdORG9BQ0RCRnZGWWl6aURkMUMzS2ZYT3htazJ2TUc</guid></item><item><title>对冲基金经理Russell Clark：美债是比AI更大的投机泡沫，AI巨头烧钱是为“防住马斯克” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777768</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 23 Jul 2026 08:05:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5SUkthaXNrVlFjUmZIUlN1SVNLRUpGaXhXVUNrZFAtY0tKb0pveS0tMnVBWURvMlFYcFdIcms1enNOQUpFaEk5d0FFclZiTUVBcV9r</guid></item><item><title>AI需求成新支撑，分析师：白银或继续跑赢黄金 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777759</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 23 Jul 2026 08:04:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFB6bFJ1Q2ZjOTNyZWZRamdxYXlDSHUwSWxwSEt6aXpDbGtoMnhvNHNGSWQxTGx1SklZOG52U3ZZdHlJT2E4UGM1Mm9fNmFQWVBWQnlF</guid></item><item><title>国内首次！真武M890跑通2.4万亿Qwen3.8：推理效率提升1.5倍 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138526.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;国内首次！真武M890跑通2.4万亿Qwen3.8：推理效率提升1.5倍&lt;/p&gt;
           
@@ -970,7 +1340,7 @@ Rubin自适应压缩稀疏化&lt;/p&gt;
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 04:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9leEdNVEIwZEJ6bmd2TEpVYUEzY2gtVkVxOWdoX3ZPXzY3OFl0UU1NNy1BVUs4ZDBDQWpGV09YYzdCcXNPbnRTaVRncTU2LWtjbVhyalV3RmI</guid></item><item><title>本地跑100B大模型！Acrab发布边缘AI芯片GΞLIX 1：5nm制程加持 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138472.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 04:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9leEdNVEIwZEJ6bmd2TEpVYUEzY2gtVkVxOWdoX3ZPXzY3OFl0UU1NNy1BVUs4ZDBDQWpGV09YYzdCcXNPbnRTaVRncTU2LWtjbVhyalV3RmI</guid></item><item><title>特朗普为沙特敞开铀浓缩之门，引发核扩散担忧 - 纽约时报中文网</title><link>https://cn.nytimes.com/usa/20260723/trump-saudi-nuclear-standards/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;这是根据1954年《原子能法》多次使用过的程序，也是德怀特·艾森豪威尔“原子用于和平”计划的重要组成部分。其初衷是在核查机制的保障下推广核能，以确保核燃料不会被转作武器项目之用。&lt;/p&gt;&lt;p class="article-paragraph"&gt;然而，沙特阿拉伯带来了一种在艾森豪威尔时代难以想象的特殊难题。这个国家正全力摆脱依赖石油的发展模式，希望借助核能建设数据中心，为一个由人工智能驱动的未来提供能源；与此同时，它又担心，一旦伊朗拥有了核武器，将会带来怎样的后果。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;沙特官员毫不掩饰自己的决心：要与德黑兰制造核武器的明显努力保持同步，而且如果伊朗成功造出核弹，沙特也要拥有。2018年，穆罕默德王储曾&lt;/p&gt;&lt;a rel="noopener noreferrer" target="_blank" href="https://www.cbsnews.com/news/saudi-crown-prince-mohammed-bin-salman-iran-nuclear-bomb-saudi-arabia/"&gt;承诺&lt;/a&gt;&lt;p&gt;，如果伊朗继续推进核武器研发，沙特将尝试开发或获取核武器——尽管沙特在拖延18年后于1988年签署了《不扩散核武器条约》。近年来，其他沙特官员也发出过类似警告，或谈到沙特有必要成为核门槛国家——离制造自己的核武器只有几步之遥的国家。&lt;/p&gt;&lt;/div&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;“我认为这一决定极其短视。”卡内基国际和平基金会核问题分析师&lt;/p&gt;&lt;a rel="noopener noreferrer" target="_blank" href="https://carnegieendowment.org/people/james-m-acton" title="Link: https://carnegieendowment.org/people/james-m-acton"&gt;詹姆斯·阿克顿&lt;/a&gt;&lt;p&gt;表示。“这项协议似乎为一个确实有可能寻求核扩散的国家提供了一条道路。你不能排除这样一种可能性：沙特阿拉伯将这座设施收归国有，并利用它制造核武器。”&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;这并不是一个新问题。小布什总统曾与阿拉伯联合酋长国谈判达成过一项类似协议，并由奥巴马总统于2009年最终敲定。由于协议条款极其严格，它后来被称为核协议的黄金标准。作为获得核技术的交换条件，阿联酋承诺永远放弃自行生产核燃料，并签署了国际原子能机构所谓的《附加议定书》，允许进行具有高度侵入性的核查。如今，阿联酋已拥有四座民用核反应堆，大部分是在韩国的帮助下建成的，而且几乎没有人担心该国对核能有发电以外的任何企图。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;figure class="article-inline-photo large"&gt;&lt;figcaption&gt;&lt;span&gt;位于阿布扎比加尔比亚地区的巴拉卡核电站，由阿联酋政府供图。阿联酋与美国签署的核能协议被视为此类协议的黄金标准。&lt;/span&gt; &lt;cite&gt;United Arab Emirates News Agency&lt;/cite&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;韩国走上同一道路时，美国成功争取到为期10年的韩国自产核燃料禁令。但当韩国总统李在明去年年底访问华盛顿时，从特朗普那里获得了解除上述限制的承诺。（目前看来，限制似乎仍然有效，至少暂时如此。）&lt;/p&gt;&lt;p class="article-paragraph"&gt;“很明显，沙特会与阿联酋不同，”布鲁金斯学会核问题专家罗伯特·艾因霍恩表示。他曾任国务院官员，参与谈判了过去数十年间最为艰难的多项核协议。“他们觉得核查措施太过侵入性，而且也不准备永久放弃铀浓缩能力。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Thu, 23 Jul 2026 04:39:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE11Wmd3eXQxSFZwc3FvZ2U1NnFtclZTT3lzUkEwVUxVRWtqWDE5UWQ5dV9GSEVxdEZOZGw3d2VQOHEwZmFkbllWNzdJdVJFWVJLLUx0X2J0R0J0aGFaOVIyU0YybkVmZ2l1UXIySUE4bVY0SGNJ</guid></item><item><title>本地跑100B大模型！Acrab发布边缘AI芯片GΞLIX 1：5nm制程加持 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138472.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;本地跑100B大模型！Acrab发布边缘AI芯片GΞLIX 1：5nm制程加持&lt;/p&gt;
           
@@ -1887,7 +2257,7 @@ Rubin自适应压缩稀疏化&lt;/p&gt;
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 01:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5jOHp0bkQyU2RGT2NuXzF1cGpQZkVEMTM2WVpnNnhQUFEwV0xxdmh1Ty12RXp3QzVYY0dWSGdRaFRpOVUwV1M5NnhxV0h6Y1F6VVZyX0pzX20</guid></item><item><title>小米17 Pro系列推送澎湃OS3.0.317正式版内测：双击电源键 背屏秒出付款码 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138390.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 23 Jul 2026 01:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5jOHp0bkQyU2RGT2NuXzF1cGpQZkVEMTM2WVpnNnhQUFEwV0xxdmh1Ty12RXp3QzVYY0dWSGdRaFRpOVUwV1M5NnhxV0h6Y1F6VVZyX0pzX20</guid></item><item><title>谷歌云业务收入增长82%，但巨额AI支出致股价大跌 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/alphabet-googl-q2-earnings-report-2026-stock-c9511fa5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Thu, 23 Jul 2026 01:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiiAFBVV95cUxNMVhEUE9JOEV5NFAyWmlFQWtuYnFBUktLU003M2RTckdiWVBzbFRLR2tuWU9CYmdleXFuQ0tFbWt3aGRwTWxHNmpHdHlEQzg5ekl5S3hCRjVfOFV2Z1V3RU9WMzNpeWszNVBSTWhONVlLUllYXzNDSGJhX0h3MV9vTmx1ZXd2bkFR</guid></item><item><title>谷歌电话会：警告现金流压力将持续，但"需求仍超过投资增速"，Gemini 4已启动训练 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777723</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 23 Jul 2026 01:05:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5wNkp1bWtBaXFubTJwMWhsUE1SaGlKODR0cG95cnRrZGI2aWhmdnZ0NUZHU3laQnYtYnh5Ml9VX3d1NllnTGczOFZxNndiQzhZa0E4</guid></item><item><title>小米17 Pro系列推送澎湃OS3.0.317正式版内测：双击电源键 背屏秒出付款码 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138390.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月23日消息，日前，&lt;strong&gt;小米17 Pro、小米17 Pro Max推送澎湃OS3.0.317.0正式版内测升级，系统包大小约1.2GB。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;本次更新优化了手机蓝牙车钥匙连接体验和系统稳定性，并修复部分场景下偶现的显示异常等问题。&lt;/p&gt;
@@ -2705,177 +3075,7 @@ Rubin自适应压缩稀疏化&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 22 Jul 2026 15:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMirgFBVV95cUxNdnZVQTZSTGFaMGRIZmF5TnVpcXl4OFgwUVo0NzUwX25JM0NWUUdWMXVCTGhlQzVDZlN2dk9TMVpJQzJTbmY0Y0IxLXpZdk5nTGdFdjd0dlNpVktOZVIzX0NhUllwdXlRdGg0UDM0MFU1a1J1ZG1HSjJSUlZlX2dxZTRYWjUxZ1BaVHBXdHZMSkNBR2hYQTFraTdYdXB2eVRGRGp4d0Nmc080bnotbGc</guid></item><item><title>陪伴大家十几年的充电宝，大概要走到头了 - 36 Kr</title><link>https://www.36kr.com/p/3907413360727171</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
- 
- 
-  &lt;p&gt;要说这两年最尴尬的数码配件，托尼觉得充电宝绝对算一个。&lt;/p&gt;
-  &lt;p&gt;以前它的对手还都是同行 —— 大家一起卷容量、卷价格、卷体积，10000mAh 做小点，20000mAh 做薄点，再多塞几个快充协议，日子卷归卷，好歹都在同一个赛道里掰手腕。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,614" src="https://img.36krcdn.com/hsossms/20260723/v2_629f02a4eff74425aa6dfc0d18b22f27@5091053_oswg580298oswg1080oswg614_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;结果现在画风变了，真正动它蛋糕的，不是别家充电宝，而是手机厂商自己。&lt;/p&gt;
-  &lt;p&gt;你看现在安卓机，电池基本六千毫安时起步，狠的直接干到上万毫安时，日常通勤中度用，实打实一天一充完全没问题；有的还支持反向充电，临时给别的手机或者耳机补个电都够用。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,640" src="https://img.36krcdn.com/hsossms/20260723/v2_030259c8231b4afb813fb7736a05498c@5091053_oswg863713oswg1080oswg640_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;更别提现在手机充电功率动辄七八十瓦，刷个牙洗个脸的功夫，电量就能回血一大截 —— 这就很尴尬了，充电宝还没被同行卷死，就先被自己服务了十几年的手机，反手背刺了一刀。。。&lt;/p&gt;
-  &lt;p&gt;这还没完，相信各位也都知道，前阵子充电宝行业又接连撞上召回风波、3C 严查、航空限制收紧，再加上新国标落地，很多人可能觉得这就是走个过场，但实际上好多小厂直接就被清出局了。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,540" src="https://img.36krcdn.com/hsossms/20260723/v2_582aede678e1450f8fc84b7fc86e9f47@5091053_oswg643980oswg1080oswg540_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;之前在国内头部电芯厂做供应链的几位老哥跟我透了底：这波充电宝新国标叠加强制 3C 认证落地，基本是直接焊死了小厂的生存空间。&lt;/p&gt;
-  &lt;p&gt;搁以前，很多小厂走的都是低端 B 品电芯 + 公版芯片的组装路子，单台利润也就 1-15 块钱，越是低功率的入门款充电宝利润越薄，很多时候走量只是为了维持产线运转、给工人发工资。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="518,214" src="https://img.36krcdn.com/hsossms/20260723/v2_2902ff357e8a4f91bd37ad89fd6877a3@5091053_oswg7662oswg518oswg214_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;现在新国标一落地，光是采购能过新国标安全测试的合规电芯，成本就先涨了 5-7 块，实打实算下来，一台完全合规的充电宝，综合制造成本整整涨了 20%-30%。&lt;/p&gt;
-  &lt;p&gt;而且能满足新国标电压管理、安全保护要求的成熟公版方案，到现在都还没普及开，小厂本就没什么研发能力，别说从头研发方案了，连现成的靠谱方案都摸不到，想合规也找不到门路。&lt;/p&gt;
-  &lt;p&gt;不仅如此，认证门槛也变高了，单款新版 3C 认证要过 20 多项测试，费用在 2-5 万元左右，是旧规的两三倍，认证周期也拉长了，现在基本都是头部厂商在做测试走认证，小厂根本扛不住。&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;新国标中，关于充电宝电池安全要求：&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,691" src="https://img.36krcdn.com/hsossms/20260723/v2_2f104b137bb34e0fbcf983177696cf1a@5091053_oswg358325oswg1080oswg691_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;之前也有报道称，国内一千多家充电宝厂，近一半以上都是没核心技术的作坊，这波洗牌下来，要么甩完库存退场，要么转做其他品类，少数有点产能的也只能给头部做代工，自己做品牌基本没指望了。&lt;/p&gt;
-  &lt;p&gt;一边是成本暴涨、小厂批量退场，一边是网上有关 “ 充电宝快要凉了 ” 的声音越来越多。&lt;/p&gt;
-  &lt;p&gt;但托尼翻完各大头部厂商的财报和相关行业报告之后发现，这话只说对了一半，那些揣兜里给手机续命的传统小充电宝，确实快要凉了，但原本做这行的厂商，也早就跳出这个圈子，找到了新的活路。&lt;/p&gt;
-  &lt;p&gt;而且如果我们把视野拉大到整个便携供电市场，就会发现盘子非但没缩，反而还在越做越大。&lt;/p&gt;
-  &lt;p&gt;先说说大家最能直观感受到的：现在买传统小充电宝的人，确实在变少，根据洛图科技线上监测数据显示，今年国内移动电源销量连续好几个月都在往下走，而且跌幅还在越拉越大。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,585" src="https://img.36krcdn.com/hsossms/20260723/v2_6429f6c1b9de4b319496323a58c5aa66@5091053_oswg446480oswg1080oswg585_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;原因其实也不复杂，现在手机电池越做越顶，就连以前公认续航拉胯的 iPhone，这几代的续航也支棱起来了，现在大家出门前瞄一眼电量就有底，续航焦虑减轻了，充电宝自然就没了存在感。&lt;/p&gt;
-  &lt;p&gt;再加上前两年该买的早买了，这玩意儿又不是快消品，一个充电宝用个两三年完全没问题。&lt;/p&gt;
-  &lt;p&gt;就拿我自己来说，之前入的酷态科 10 号，刚买的时候用得还挺勤，结果从 Find X8 Pro（ 5910mAh ）换到 X9 Pro（ 7500mAh ）之后，这玩意儿直接原地退休，差不多半年没开过机。。。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,405" src="https://img.36krcdn.com/hsossms/20260723/v2_cb843bfe27dd435fba978ca87233c8c5@5091053_oswg202469oswg1080oswg405_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;如果说个人零售只是下滑，那曾经火到不行的共享充电宝，就只能用惨不忍睹来形容。&lt;/p&gt;
-  &lt;p&gt;当年赴美敲钟、风光无限的怪兽充电，去年营收掉了三成多，直接从盈利干到亏损，今年干脆从纳斯达克摘牌退市。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,565" src="https://img.36krcdn.com/hsossms/20260723/v2_f57487afd05a4eb8a0f16cfb5437f19e@5091053_oswg290727oswg1080oswg565_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;但怪兽充电还不是最惨的，当年跟它齐名的小电科技，年营收从接近二十亿直接膝盖斩到只剩零头；街电和搜电早就合并成了竹芒科技，想着抱团取暖，结果整合完也没翻出什么水花。。。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,605" src="https://img.36krcdn.com/hsossms/20260723/v2_485327c44d464718978ed0ff83292296@5091053_oswg797188oswg1080oswg605_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;零售端卖不动，共享端亏成狗，传统小充电宝这盘子，看着确实有点凉。&lt;/p&gt;
-  &lt;p&gt;但如果就此觉得整个行业都要完蛋，那你可能只看到了硬币的一面 ——&lt;strong&gt;把户外电源、大容量储能这些都算上，去年国内整个便携供电市场的大盘子就冲到了四百三十亿，今年预计还会再涨。&lt;/strong&gt;&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="796,250" src="https://img.36krcdn.com/hsossms/20260723/v2_41ef535213d24c24a769f56840d5a98c@5091053_oswg138298oswg796oswg250_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;换句话说，不是随身供电的需求消失了，而是需求场景开始变了。&lt;/p&gt;
-  &lt;p&gt;以前大家买充电宝，只为给手机续命；现在露营、自驾成了热门，要供电的设备从手机变成了投影、冰箱、电脑全品类，国内户外电源市场在去年规模就突破了百亿，年复合增长率超 30%。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,659" src="https://img.36krcdn.com/hsossms/20260723/v2_fd9d03b2bd9b45c5bbb617dcc8eaab0d@5091053_oswg627165oswg1080oswg659_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;消费逻辑一变，厂商玩法自然也得跟着变，现在还能站在牌桌上的玩家，早就不搞堆容量、拼低价的老套路了，除了把主力充电宝往高端、大功率方向做精做全，它们还各自都找好了别的出路。&lt;/p&gt;
-  &lt;p&gt;最先找出路的，是行业老大哥安克创新，早几年创始人阳萌就公开说过，充电宝这个品类大概率过几年就死了，当时不少人觉得他危言耸听，现在回头看，人家是嘴上喊凉，脚下早跑出去二里地了。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,519" src="https://img.36krcdn.com/hsossms/20260723/v2_70a5a02424f24312b12aec1953abf201@5091053_oswg188017oswg1080oswg519_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;巅峰时期安克光充电宝就攒了一百多款型号，容量、体积、接口排列组合，恨不得给每个细分需求单独开个模，结果去年它直接大刀阔斧砍掉了 7 成低毛利款充电宝，最后只留了不到 40 款。&lt;/p&gt;
-  &lt;p&gt;去年安克总营收上涨超两成，表面上充电储能类还占着半壁江山，但纯传统小容量充电宝的占比已经不到 12%，真正撑起增长的，是氮化镓充电器、户外便携电源，甚至光伏储能这些业务。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,608" src="https://img.36krcdn.com/hsossms/20260723/v2_28fbf38e47e641d7b6895fb04b6052ac@5091053_oswg481565oswg1080oswg608_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;跟安克纵向深耕能源不一样，绿联科技选了另一条路：横向拓展品类，直接把自己干成了 “ 数码杂货铺 ”。&lt;/p&gt;
-  &lt;p&gt;早几年，数据线、充电宝、充电器这类充电配件，撑起了绿联的大半收入；现在呢，充电创意类业务的占比已经掉到了一半以下，增长最快的反而是 NAS 网络存储、拓展坞和各种办公外设。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,720" src="https://img.36krcdn.com/hsossms/20260723/v2_ecc55836c8c64510b1aaeaf9d6cadddb@5091053_oswg523858oswg1080oswg720_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;绿联的思路很简单：手机续航上来了，你可以不买充电宝，但你用电脑总得要拓展坞吧？存照片、视频总会考虑整个 NAS 吧？数码配件的池子这么大，真没必要在充电宝一棵树上吊死。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,616" src="https://img.36krcdn.com/hsossms/20260723/v2_22407972431b4335a642a40376380998@5091053_oswg636360oswg1080oswg616_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;看到这估计差友们也咂摸出味来了 —— 这些头部玩家，早就不盯着传统小充电宝这点仨瓜俩枣了，搁以前需求旺盛，靠走量也能活得滋润；现在需求变了，还死磕小充电宝，纯纯是跟自己过不去。&lt;/p&gt;
-  &lt;p&gt;其实往大了说，充电宝今天遇到的事儿，所有手机配件厂商早晚都得遇到。&lt;/p&gt;
-  &lt;p&gt;你想啊，万能充当年火遍大江南北，现在早就成了电子垃圾；TF 卡以前是手机标配，现在手机基本都取消了实体卡槽；耳机孔没了后，带火了一批转接线，没过两年 TWS 耳机就成了主流。。。&lt;/p&gt;
-  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,608" src="https://img.36krcdn.com/hsossms/20260723/v2_4c155063ca944ad7ac7afe4cc929b741@5091053_oswg781939oswg1080oswg608_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
-  &lt;p&gt;换句话说，所有依附手机的配件，其实都在吃短期红利：手机续航差，有充电宝；充电慢，有快充头；空间小，有存储卡，但手机永远在补短板，每补上一块，就等于压缩了这些配件的生存空间。&lt;/p&gt;
-  &lt;p&gt;所以对这些厂商来说，问题从来不是怎么把充电宝做得更好更便宜，而是手机不需要充电宝了之后，还能卖什么。&lt;/p&gt;
-  &lt;p&gt;现在看下来，无非三条路，要么往上走，把产品做大做高端，从给手机供电做到给全场景供电；要么试着拓宽品类，做生态周边，或者出海去全球市场找增量，毕竟不是所有地方都在卷快充和电池~&lt;/p&gt;
-  &lt;p&gt;说到底，充电宝迟早会完成自己的历史使命，以前手机续航拉胯，它负责给手机续命；现在手机自己争气了，它也该慢慢退到幕后。&lt;/p&gt;
-  &lt;p&gt;当然，这个过程对那些配件厂商来说可能并不轻松，但对于用户来说，倒也没啥好伤感的，毕竟没人会怀念在高铁站还有机场到处找插座的日子，也没人会怀念共享充电宝超时后，扣费扣到肉疼的心情。&lt;/p&gt;
-  &lt;p&gt;如果未来出门能少背一个半斤重的小砖头，那这个变化，至少对我们来说，是件好事~&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;图片、资料来源&lt;/strong&gt;：&lt;/p&gt;
-  &lt;p&gt;洛图科技、广电官网&lt;/p&gt;
-  &lt;p&gt;差评行业群热心老哥&lt;/p&gt;
-  &lt;p&gt;大疆、倍思、绿联官网&lt;/p&gt;
-  &lt;p&gt;每日经济新闻，安克创新CEO阳萌：充电宝大概率过几年就“死”了！&lt;/p&gt;
-  &lt;p&gt;洛图科技：2026 年 5 月中国移动电源线上市场零售量 312.3 万台&lt;/p&gt;
-  &lt;p&gt;2026年5月中国移动电源线上市场：销量回落但销额守稳；小米、倍思收获冠亚军&lt;/p&gt;
-  &lt;p&gt;天天在线新财经，共享充电第一股上市5年后悄然退市,阿里、小米、高瓴全被套&lt;/p&gt;
-  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/rpXoJw8m0uI5e5bMFH2ejQ"&gt;“差评X.PIN”&lt;/a&gt;，作者：胖虎，编辑：米罗 &amp;amp; 面线，36氪经授权发布。&lt;/p&gt;
- 
-&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Wed, 22 Jul 2026 15:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE9iWEdVS2VtaTd0am9mWGh0YUt3c1VpeGVtQ2pvYWxiUDcwbXphdVBLbFFhbGJYRTJXOVc5RDYxMVpKb3p3T0VNUFAwUDFtWDlR</guid></item><item><title>惊为天人！“又酷又飒的中国女保镖”夺冠 - 凤凰网</title><link>https://i.ifeng.com/c/8uyYTjSeCF4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;7月20日，“尖刀·使命”2026年全国公安特警挑战赛在新疆乌鲁木齐开赛，首日比赛是快速射击项目。其中，手枪射击赛中，参赛特警队员要完成12个靶标的射击任务。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/02A1D584840A34ACDC7EA7FC2DD03FE8184BE293_size14_w505_h292.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;来自特勤女卫士长队的雒安琪动作行云流水、弹无虚发，以52秒105的好成绩获得女子组冠军。&lt;/p&gt;&lt;p&gt;根据赛制，快速射击项目分为手枪射击、冲锋枪射击和狙击枪射击。&lt;/p&gt;&lt;p&gt;手枪射击科目中，参赛特警队员要完成12个靶标的射击任务。参赛特警队员需要在比赛开始后先跑动60米，翻越一道2.5米的人字高板障碍至1号射击区，对15米处1号靶射击。&lt;/p&gt;&lt;p&gt;参赛特警队员的第1枪需要克服跑动翻越后的呼吸心跳加速，击中两块红色禁射靶中间仅10厘米宽的跌落靶。&lt;/p&gt;&lt;p&gt;2号靶模拟人质劫持场景，参赛特警队员需要利用掩体右侧对10米处的白色人形靶进行射击，同时防止击落前方模拟人质的红色禁射靶。&lt;/p&gt;&lt;p&gt;3-5号靶位设置了三处动态目标，分别是摇摆、旋转、移动靶。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/E455A7B02F4D84B5559BA136FD9552BE402C1CF5_size39_w630_h402.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;2026年全国公安特警挑战赛副总裁判长柳迪文介绍，相比气步枪、手枪等体育射击赛事，特警挑战赛全程模拟实战环境，队员需要疾速奔跑，还要模拟翻越高山、丘陵等各类障碍，在高强度运动状态下完成射击。根据比赛规则，选手一旦脱靶就要罚时30秒。这意味着，选手一旦脱靶，就很难在比赛中取得好的名次。&lt;/p&gt;&lt;p&gt;当天的比赛中，雒安琪的表现行云流水，现场解说直言其发挥“惊为天人”。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/1FEF23CD594C4FEFF3F97B0A4BDAB8A20DD62ED6_size17_w494_h314.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;雒安琪自己透露，今年集训的这段时间，每天训练大概都在十二三个小时。“在这种高手云集的赛场上，如果你要想展现出来自己的实力，你必须要做到比别人好，必须一点一点突破。”&lt;/p&gt;&lt;p&gt;根据山西警察学院官微“优秀毕业生”栏目介绍，雒安琪2021年毕业于该校治安系，现在公安部特勤局工作。&lt;/p&gt;&lt;p&gt;今年，一段她目光如炬、气场凌厉的安保执勤视频在网络上走红，被网友称为“又酷又飒的中国女保镖”。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/BE885B012DCB21D9DEDB16830DC2FC75DAE5C520_size24_w834_h438.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/3FE9151365029CDEBA4FC259714D346BF64420B4_size21_w555_h416.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;报道称，从英姿飒爽的“女保镖”到赛场上的“神枪手”，不同身份标签的背后，是心无旁骛、把每一件事都做到极致的雒安琪。目前，她继续投入到训练和比赛中，全力备战2026年公安特警挑战赛的剩余竞赛科目。&lt;/p&gt;&lt;p&gt;《人民公安报》曾发文介绍，公安特勤部门肩负党赋予的特殊政治任务，责任重大、使命光荣。公安特勤部门要心系“国之大者”，忠实履行新时代公安特勤部门使命任务。强化实战练兵保安全，扎实开展实战练兵，深化应用射击、防卫控制等技能训练，加强公安特勤民警斗争精神和斗争本领养成，确保关键时刻拉得出、冲得上、打得赢。&lt;/p&gt;&lt;p&gt;此次雒安琪夺冠，央视新闻评论称，勤务护平安，赛场砺精兵，中国女特警用实力诠释着巾帼不让须眉的硬核力量。&lt;/p&gt;&lt;p&gt;记者：李岩&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Wed, 22 Jul 2026 14:54:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE5icnBsZ0JwSm8waWN4QTc4OTN6NkVhaTg3ckZpajVnZ1JnYXVTbEJyWGRFVFhWZDdwNmJmOU80bU5idS1wM3F5bw</guid></item><item><title>三星首款AI眼镜！Galaxy Glasses正式亮相：内置Gemini - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138342.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技7月22日消息，三星在今晚的发布会上正式揭晓首款AI智能眼镜——Galaxy Glasses。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这款设备由三星联合谷歌、Gentle Monster、Warby Parker三方联合研发，运行Android XR系统，原生深度集成谷歌Gemini多模态大模型，打造全天候免提视觉智能助理。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;整机采用贴近日常光学镜的轻薄外观，整机重量仅50克左右，没有搭载传统AR显示屏，依靠镜框两侧高清摄像头捕捉实景画面，将视觉信息同步传输至Gemini完成识别分析，最终通过镜内音频单元播报AI处理结果，大幅降低机身重量与功耗，兼顾日常长时间佩戴舒适度。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="三星首款AI眼镜！Galaxy Glasses正式亮相：内置Gemini" h="289" src="//img1.mydrivers.com/img/20260722/06155349-05df-471a-af18-91da074796e7.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;硬件核心搭载高通骁龙AR1 Gen1专用芯片，四颗Arm核心最高主频1.9GHz，&lt;/strong&gt;&lt;/span&gt;配备1200万像素影像传感器，支持30帧全高清视频录制，镜框内置双隐私指示灯，开启拍摄时同步亮起，兼顾拍摄安全。&lt;/p&gt;
-&lt;p&gt;依托Gemini多模态能力，眼镜覆盖办公、出行、沟通多元实用场景，会议中可自动拍摄白板文字，一键整理归档至三星笔记；出行时提供实景语音导航，支持多国语言实时对话翻译。&lt;/p&gt;
-&lt;p&gt;手机消息无需抬手查看，AI自动提炼摘要朗读，通话过程还能免提分享第一视角实时画面，同时具备上下文记忆能力，可留存多轮任务信息减少重复操作。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/29a74197-07d7-4cfa-8083-b0bce5e19d6c.png" target="_blank"&gt;&lt;img alt="三星首款AI眼镜！Galaxy Glasses正式亮相：内置Gemini" h="318" src="//img1.mydrivers.com/img/20260722/S29a74197-07d7-4cfa-8083-b0bce5e19d6c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;设备提供两种交互方案，基础操作依靠右侧镜腿触控感应区完成，滑动调节音量、轻触接听通话、长按启动拍摄。&lt;/p&gt;
-&lt;p&gt;搭配Galaxy Watch 9系列手表联动后，额外解锁隔空手势操控，进一步解放双手。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;续航方面，眼镜本体单次满电可连续使用9小时，配套充电收纳盒可完成7次完整补电，满足全天外出使用需求。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/7c577dce-ccd0-4626-9966-2e4c43ae98c4.jpg" target="_blank"&gt;&lt;img alt="三星首款AI眼镜！Galaxy Glasses正式亮相：内置Gemini" h="180" src="//img1.mydrivers.com/img/20260722/S7c577dce-ccd0-4626-9966-2e4c43ae98c4.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;外观推出两款联名镜框款式，Gentle Monster款纤细黑色镜框简约精致，Warby Parker款上扬眉线设计适配日常穿搭，还支持选配光致变色镜片，户外自动加深遮光。&lt;/p&gt;
-&lt;p&gt;整机深度融入三星Galaxy全设备生态，可与折叠屏手机、平板、手表无缝联动，AI重型推理任务自动推送至配对手机，平衡设备轻量化与完整智能体验，正式入局消费级AI眼镜赛道。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 14:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5nQ2RNanM1VHp6bnRUUVFFMlBOSWt2RWNhTFU4Skw3NWdOb0JKVkRTblJnell5NXNFZjd2NWJwSlhNcjFrQTNIQzgyY2xycm1TSWtzbWlRbG4</guid></item><item><title>6000亿美元→7500亿美元 OpenAI被曝大幅提高算力支出预测 - 财联社</title><link>https://www.cls.cn/detail/2434359</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社7月22日讯（编辑 史正丞）&lt;/strong&gt;周三晚间的最新消息显示，人工智能巨头OpenAI的算力支出野心又扩大了。&lt;/p&gt;
-&lt;p&gt;据媒体援引知情人士称，&lt;strong&gt;OpenAI已经将截至2030年的算力支出预测从今年早些时候的约6000亿美元上调至7500亿美元。&lt;/strong&gt;这一增长反映了公司与云计算供应商达成的新协议，以及随着“星门”数据中心项目进展不利，公司加强自有数据中心建设的努力。&lt;/p&gt;
-&lt;p&gt;作为这一动态的最新表现，OpenAI刚刚发布公告称，&lt;strong&gt;将在佐治亚州的埃芬汉县投资200亿美元，启动一个名为“山茶花项目”的数据中心&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260722/eMCof27b9t_1957x989.png" alt="image"&gt;&lt;/p&gt;
-&lt;h3&gt;（来源：公司官网）&lt;/h3&gt;
-&lt;p&gt;OpenAI计算战略副总裁萨钦·卡蒂（Sachin Katti）披露，这个项目是OpenAI首次主导设计和开发数据中心。公司已经完成了拟建项目的土地收储工作，并与佐治亚电力公司签订合同，将在&lt;strong&gt;2028至2032年间获得3.2吉瓦的电力供应&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;卡蒂拒绝透露公司向电力公司付了多少钱来预留电力，但表示这是一笔“可观的费用”，足以让电力公司有信心大幅扩建电力容量。&lt;/p&gt;
-&lt;p&gt;按照去年初的设想，OpenAI试图与软银、甲骨文和中东投资者成立合资企业，共同推进高达5000亿美元的“星门”数据中心计划。知情人士称，随着这个项目至今举步维艰，OpenAI正在重启内部计划。&lt;/p&gt;
-&lt;p&gt;最新报道称，&lt;strong&gt;OpenAI近期请来了曾为马斯克建设数据中心的布伦特·梅奥，担任数据中心建设与交付负责人&lt;/strong&gt;。梅奥曾是xAI数据中心建设计划的核心架构师之一，在该公司的首座Colossus数据中心建设中发挥了关键作用。&lt;/p&gt;
-&lt;p&gt;梅奥的工作重点是确保OpenAI云计算合作伙伴建设的数据中心按时完工，还将参与刚公布的佐治亚州数据中心项目。&lt;/p&gt;
-&lt;p&gt;除了自建项目外，OpenAI的支出大头依然是向外部云服务商购买算力。&lt;/p&gt;
-&lt;p&gt;OpenAI此前已与甲骨文公司签订合同，获取总计6吉瓦的数据中心容量，其中大部分仍处于开发阶段。今年2月底，OpenAI将其与亚马逊AWS的多年期云计算协议规模扩大至8年1380亿美元，其中包括使用亚马逊自研人工智能芯片Trainium的2吉瓦算力。&lt;/p&gt;
-&lt;p&gt;此外，OpenAI去年还承诺向微软Azure云平台额外增加2500亿美元的云计算支出，但未提供该支出的具体时间表。&lt;/p&gt;
-&lt;p&gt;值得一提的是，OpenAI的算力支出数字，去年还曾引发过市场忧虑。在去年10月进行的一场直播中，OpenAI首席执行官山姆·奥尔特曼曾表示，&lt;strong&gt;公司预计在2025年至2033年间，将投入1.4万亿美元用于AI相关的基础设施建设&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;似乎是为了回应市场的不安情绪，OpenAI首席财务官弗莱尔后续换了一种口径。她私下里对投资者表示，OpenAI计划到2030年的算力支出为6000亿美元。不过这两个数字涵盖的时间范围原本就不同，后者还将支出局限于算力这一类。&lt;/p&gt;
-&lt;p&gt;据今年初的报道，&lt;strong&gt;在2025年将营收翻三倍至130亿美元后，OpenAI预测2026年的收入将达到300亿美元，并展望2030年的营收将超过2800亿美元&lt;/strong&gt;。营收增长也意味着算力/现金消耗的增加，公司预计今年现金消耗将达250亿美元，明年将达570亿美元，总计比此前预测多出约300亿美元。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Wed, 22 Jul 2026 14:42:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE51WjFZZXFhbVFaSWtrYUlLSS03U08wSWRJSUVfbm9CTy14YmluQkpzV01YaENUbDkzQ1c5SGpGLUF1TzlXR0U0OQ</guid></item><item><title>苹果计划全面改版MacBook与iMac，以应对AI需求 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777706</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 14:32:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE93QmFLclhrWG9oRE5RVEl5eDNTc0RIVmRQb3l4empUVmhWY0pyMXowNy1HbmdITUZueVkxbTFUTGc2T190dmtpd1dpdVM3blN5RWVF</guid></item><item><title>三星Galaxy Z Fold/Flip8全系单卡+eSIM：港版无法入网 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138341.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;&lt;strong&gt;快科技7月22日消息，三星新一代折叠屏今晚正式发布，包括分别是Galaxy Z Fold8、Galaxy Z Fold 8Ultra、Galaxy Z Flip8。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;值得注意的是，根据三星官网显示，这次三款新机统一搭载1*SIM卡+1*eSIM的规格，只有一张实体卡位置。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="三星Galaxy Z Fold/Flip8全系单卡+eSIM：港版无法入网" h="507" src="//img1.mydrivers.com/img/20260722/794c8c92-529b-4514-9a8a-525668a24531.png" w="589"&gt;&lt;/p&gt;
-&lt;p&gt;这就意味着，需要用双卡的用户必须要将其中一个号码转为eSIM。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此外，港版等机型也将无法在内地激活eSIM，只能作为单卡机型使用，有入手港版习惯的朋友需要特别注意一下。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过目前国内eSIM除了开通方面有些麻烦之外，日常使用倒是和实体版没什么区别。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/08db379f-7fbb-4f72-9de9-5b0213d59139.png" target="_blank"&gt;&lt;img alt="三星Galaxy Z Fold/Flip8全系单卡+eSIM：港版无法入网" h="184" src="//img1.mydrivers.com/img/20260722/S08db379f-7fbb-4f72-9de9-5b0213d59139.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;今年三星折叠屏的产品结构有所变化，新增了一款阔折叠机型，命名为Galaxy Z Fold 8。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;以往的Galaxy Z Fold7系列迭代变为Galaxy Z Fold8 Ultra，在影像等方面的体验会更强。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260722/2b7ec25f-d218-4b63-89b9-688d4a7ab6ee.jpg" target="_blank"&gt;&lt;img alt="三星Galaxy Z Fold/Flip8全系单卡+eSIM：港版无法入网" h="848" src="//img1.mydrivers.com/img/20260722/S2b7ec25f-d218-4b63-89b9-688d4a7ab6ee.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;价格方面：&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Galaxy Z Flip8：&lt;/strong&gt;12GB+256GB 8999元、12GB+512GB 10599元&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Galaxy Z Fold8：&lt;/strong&gt;12+256GB 12999元、12+512GB 14599元、16GB+1TB 17799元&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Galaxy Z Fold8 Ultra：&lt;/strong&gt;12+256GB 14999元、12+512GB 16599元、16GB+1TB 19799元&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 14:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE00V1ZMdHA4dWN2LTkxekdmOXUyZ04wUXZmTXhNZm4tc2pvSzNpTkNLOEY5X0YxdW85SWlmSWlqam84U3VTUmg0dXBUTHdNOFdZVWhKRXVpOVU</guid></item><item><title>苹果iPhone18系列已量产！代工厂富士康已进入招工高峰期 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777682</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 14:20:03 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBRODdSSWJ3Y3JkMDNULUIxSzY2VnlQUUFCRjItVzFlOXVBS00ybmNVR2w1bVRLT282TnlPank3aGVKUExWY0pNWThIYlV3T3RFWU44</guid></item><item><title>OpenAI模型“越狱”攻击，救场的竟是中国AI工具 - 观察者</title><link>https://www.guancha.cn/internation/2026_07_22_824721.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	一家美国公司遭到美国AI攻击，而提供保护的竟是一款中国人工智能工具。
-&lt;/p&gt;
-&lt;p&gt;
-	AI工具平台Hugging Face上周遭到OpenAI模型攻击。鉴于当前关于美国公司使用中国AI产品存在风险的警告层出不穷，这一事件的披露或许会带来一个令人惊讶的结论。
-&lt;/p&gt;
-&lt;p&gt;
-	Hugging Face上周就已披露此次攻击，当时尚不知晓OpenAI的模型就是元凶。直到周二，OpenAI才承认自己造成了此次攻击。
-&lt;/p&gt;
-&lt;p&gt;
-	OpenAI表示，在一次限制网络访问的内部评估中，模型发现了OpenAI研究环境与Hugging Face生产基础设施中的漏洞。模型借此连上互联网并获取了测试答案，换言之，它在评估中作弊了。
-&lt;/p&gt;
-&lt;p&gt;
-	OpenAI在声明中表示：“在沙盒测试环境中运行时，我们的模型消耗了大量推理算力，试图寻找连接开放互联网访问权限的方法，以求解决评估问题。为了获取访问权限，这些模型发现并利用了包注册表缓存代理中的一个零日漏洞（我们目前已负责任地向供应商披露了该漏洞）。凭借这一权限，模型在研究测试环境中执行了一系列权限提升和横向移动操作，直到触及一个具备互联网访问权限的节点。”
-&lt;/p&gt;
-&lt;p&gt;
-	“该模型搜索并成功找到了获取机密信息的方法，以便利用这些信息在评估中作弊。在其中一个案例中，模型将多个攻击向量串联起来，包括利用窃取的凭证和零日漏洞，在Hugging Face服务器上找到了一条远程代码执行路径。”
-&lt;/p&gt;
-&lt;p&gt;
-	然而，Hugging Face采取的应对措施是求助于一款名为GLM 5.2的中国AI模型，该模型由智谱（Z.AI）开发。
-&lt;/p&gt;
-&lt;p&gt;
-	Hugging Face在声明中表示：“在启动日志分析时，我们首先使用了商业API背后的前沿模型。但这并未奏效：分析工作需要提交大量真实的攻击指令、漏洞利用载荷以及C2痕迹，而这些请求全被提供商的安全护栏拦截了，因为这些护栏根本无法区分事件响应人员与攻击者。因此，我们在自己的基础设施上，改用开放权重模型GLM 5.2进行了取证分析。这还带来了另一个好处：没有任何攻击者数据，也没有其引用的任何凭证离开过我们的环境。”
-&lt;/p&gt;
-&lt;p&gt;
-	美媒表示，此次攻击对政策和市场的影响尚不明朗。尽管特朗普政府近日讨论了封禁中国模型的可能举措，财政部长贝森特甚至将美国企业使用这些模型比作使用赃物，但眼下只有中国模型能提供用户所需的那种自由访问权限。
-&lt;/p&gt;
-&lt;p&gt;
-	Hugging Face联合创始人托马斯·沃尔夫在X平台上发帖称：“当一个前沿模型对你发起攻击，并在你的基础设施内部横向移动时，防御人员需要在数小时甚至数分钟内获得对接近前沿工具的广泛访问权限，而不是被引导至一个封闭且需经审核的模型访问申请程序。”
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 22 Jul 2026 14:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBIaXdHSWVfV28zQWJyWFRnakNRTWpsRC1PUkF3MTdmQkZ5dWJPNGIxcmhFNkpKem4zbzJCdmhiamwybVlFR1owVDZERGJWVVBJZTIzT0pyeTlMY016a0lBLWZLMmN3TGNid3c</guid></item><item><title>AMD最高将向Anthropic投资500亿美元 同步达成算力供货合作 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-07-22/doc-iniisxzw7927071.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 22 Jul 2026 15:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMirgFBVV95cUxNdnZVQTZSTGFaMGRIZmF5TnVpcXl4OFgwUVo0NzUwX25JM0NWUUdWMXVCTGhlQzVDZlN2dk9TMVpJQzJTbmY0Y0IxLXpZdk5nTGdFdjd0dlNpVktOZVIzX0NhUllwdXlRdGg0UDM0MFU1a1J1ZG1HSjJSUlZlX2dxZTRYWjUxZ1BaVHBXdHZMSkNBR2hYQTFraTdYdXB2eVRGRGp4d0Nmc080bnotbGc</guid></item><item><title>梁文锋四小时投资人会议实录 - 新浪财经</title><link>https://finance.sina.com.cn/stock/companyt/2026-07-22/doc-iniitvfk8356408.shtml?vt=4&amp;pos=108&amp;wm=1%3Fp&amp;his=0</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -2897,18 +3097,81 @@ Rubin自适应压缩稀疏化&lt;/p&gt;
 
             
 
-    
-&lt;p&gt;　　&lt;span id="usstock_AMD"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/AMD.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;AMD&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_AMD"&gt;&lt;/span&gt;于周三宣布与Anthropic达成战略合作，并表示未来将向这家人工智能企业最高投资500亿美元。&lt;/p&gt;
-&lt;p&gt;　　根据协议，Anthropic将采用AMD Helios机架级解决方案，部署总规模2吉瓦算力的AMD Instinct MI450系列GPU。公告显示，首批1吉瓦算力（吉瓦现已成为衡量AI数据中心规模的通用指标）将于明年上半年完成部署。&lt;/p&gt;
-&lt;p&gt;　　AMD首席执行官苏姿丰在声明中表示：“我们非常高兴能够深化与Anthropic的合作，实现吉瓦级规模部署AMD Helios算力平台。”&lt;/p&gt;
-&lt;p&gt;　　AI产业热潮中AMD是主要受益者之一，公司生产可用于模型训练、承载大型算力负载的GPU，与市场龙头英伟达展开直接竞争。AMD已经与多家行业头部企业达成合作，其中就包括Anthropic的竞争对手OpenAI。&lt;/p&gt;
-&lt;p&gt;　　此前AMD与OpenAI达成协议，向后者发行至多1.6亿股AMD普通股认股权证，约占公司总股本10%；股权分批解锁的考核指标同时绑定算力部署规模与AMD股价表现。&lt;/p&gt;
-&lt;p&gt;　　本次AMD与Anthropic签约，是Anthropic今年密集落地算力基建合作的最新进展，目的持续扩充算力储备。Anthropic在4月表示，市场对Claude系列模型与相关产品的需求激增，导致算力基础设施承压，高峰时段影响面向用户的服务稳定性与性能。&lt;/p&gt;
-&lt;p&gt;　　5月，Anthropic与埃隆·马斯克旗下SpaceX签约，租用其位于田纳西州孟菲斯的Colossus一号数据中心全部算力。根据SpaceX招股书，按照协议，Anthropic每月向SpaceX支付125亿美元，合约持续至2029年5月。&lt;/p&gt;
-&lt;p&gt;　　今年4月，Anthropic与&lt;span id="usstock_AMZN"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/AMZN.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;亚马逊&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_AMZN"&gt;&lt;/span&gt;签署数十亿美元算力协议，同时与&lt;span id="usstock_GOOG"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/GOOG.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;谷歌&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_GOOG"&gt;&lt;/span&gt;、博通敲定多吉瓦规模算力采购合同。媒体此前报道，Anthropic还在与Meta开展初步洽谈，计划租赁后者算力资源。&lt;/p&gt;
-&lt;p&gt;　　Anthropic今年业务规模迅猛增长，主力AI代码助手Claude Code贡献重要增量。公司5月披露，年化营收突破4700亿美元；而去年全年总营收约1000亿美元。&lt;/p&gt;
-&lt;p&gt;　　同月，Anthropic完成新一轮融资，投后估值达9650亿美元，公司正在筹备规模庞大的IPO，最快有望于年内上市。Anthropic已于6月向美国证券交易委员会秘密递交招股文件，尚未披露更多发行细节。&lt;/p&gt;
-&lt;p&gt;　&lt;/p&gt;
+    &lt;p&gt;　　来源：elsewhere别处发生&lt;/p&gt;
+
+&lt;p cms-style="font-L align-right"&gt;　　&lt;font cms-style="font-L"&gt;上个月，‘elsewhere’报&lt;/font&gt;道了 DeepSeek 的融资故事&lt;font cms-style="font-L"&gt;。其中最多人讨论的，莫过于那个传说中的4小时投资人会议。&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　此去一个月间，梁文锋的各种语录在江湖流传，我们也多方收集到了一些其中内容。&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　其间，梁文锋说了非常多次的“不”：不是天才，不赚不合理的利润、不追求用户量、不闭源、不做3D / 视频生成 / 世界模型，不做下一个超级 app 。他说，克制是一种战略，用来换取做成 AGI 的概率。&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　在我们了解到的有限素材里，有以下高频词：模型、成本、AGI 、时间、开源等等。&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　绝大多数时候，梁文锋的语气留有余地，用词浅白质朴。只有在讲到少数他在乎的问题时，才会流露出些许锋利：“只要能够保持团队的稳定性，我一定能做成 AGI 。就这么简单。”&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　以下是我们收集到的52条言语。部分词句在保留原意的基础上，与原文可能略有出入。&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;DeepSeek 只有一条主线&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;1&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;&lt;font cms-style="font-L strong-Bold"&gt;现在做产品不是收益最大化的时候。通往 AGI 的路上，要经过产品这个台阶，但我们不需要太多的心思和精力去做 C 端、 B 端的产品。当站在一个技术的高位上来做相对低一级别的技术，是降维打击。产品是在 AGI 路上的副产物。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;2&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;很多东西不在我们的主线上，比如 3D 、视频生成；又比如世界模型，跟智能的上限也没有太大的关系。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;3&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;多模态对产品来讲很重要，对 C 端用户很重要。但它只是一个组件，不是主线和智能本身。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;4&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;大模型的幻觉当然有方法可以解决，但这是一个长命题。在内部，幻觉被我们归结为一个产品问题，会去解决，但不是重点。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;5&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;现阶段最重要的还是 Coding Agent 。以国内的情况来看，最合理的做法应该是全力做通用的 Agent ，金融、医疗等其他 Agent 的优先级较低。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;6&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;如果 AI 时代会产生很多家万亿级别的公司，DeepSeek 是其中一家（的话）就很好了。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;先实现持续学习，再AI自迭代，终点是具身智能&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;7． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI 现在不缺品味和直觉，缺的是持续学习的能力。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;8． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;人类能够持续学习，但同一件事，就得给 AI 所有的上下文。这几乎是不可能的，所以 AI 并不能够替代员工。所以，下一代模型必须要有持续学习的能力，才能叫下一代模型。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;9． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们希望下一&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;代&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;模型能够帮助我们自己的开发。说得简单一点，我们做的模型，第一目标不是大家用得好用，而是我们自己用得好用。这是实现 AGI 最快的方法。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;10． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;目前全世界现在都还没有找到好的方法，因为“学习”是由很多东西组成的。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;11． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;DeepSeek 的长期 vision 是 AGI 。如果把实现的路线比作爬楼梯，去年的阶梯是 CoT（ Chain-of-Thought ，思维链），今年的阶梯就是 Agent 。在 Agent 之后要解决的问题就是持续学习。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;12． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;实现持续学习之后，可能会来到一个渐进的&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;奇点&lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;：模型可以完成人类能做的所有事情，包括自己开发更前沿的人工智能模型。即AI 可以加速 AI 的研究。这一步走完才是具身智能。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;13． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;智能的终点可能都是具身。因为对一个正常人来讲，他的需求并不是电脑，而是人力。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;离彻底转向商业化仍然很遥远&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;14． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们只赚一个合理的利润，不是利润最大化的定价。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;15． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们的一款模型一开始担心需求太多，价格定得比较高，后来降到四分之一，公司群里很多人欢呼。因为这是我们这么用心把这个模型做好的目的：能够让大家都充分地用。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;16． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;低成本是一个结果，我们的模型一直在架构上往更低成本走。我们也希望成本是负担得起的，特别是在算力紧缺的背景下。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　还有一个原因：成本越低，越能承担更大的模型。算力有限时，计算效率高就能训更大的模型。大公司可以靠加资源解决，我们优先考虑成本效率。&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;17． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;外面可能看起来，我们选了一个很难的模式。但其实我们做得非常轻松。降价对我们的竞争对手来讲，肯定不是个好事，他们一定不是欢呼的。我并不觉得卖 API 这个事情有那么大吸引力。我只要搞几个人维护这个 API 就可以了，甚至客服都没有，也不用销售，用户自己就会来。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;18． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们一直在商业化，只是不以商业化为目标。DeepSeek 离彻底转向商业化的时间点，应该是很遥远的。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;19． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我甚至不用考虑到时候在里面占一个位置。只要有那么大的商业机会，一定是有办法的。DeepSeek 是一个时代的产物，是现实情况的反应，并不是模仿的结果。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;开源是我们这个规模公司的sweet point&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;20． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;克制是一种战略：舍弃一些，换更多其他的东西。开源就是让利：对内，员工有成就感，公司有凝聚力；对社会也有好处，同行或者普通人都会高兴。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　我毫不怀疑 AGI 会有非常大的商业价值。在这个基础上，我优先考虑的不是多拿份额，而是增加做成的概率。&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;21． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;要把 AI 在商业上做成，开源是有好处的。这听起来有点违反直觉。历史上一个软件公司，市场一年可能就几十亿美金，开源了就没有了。但是 AI 这个事情足够大，最终它可能得占掉人类社会 GDP 的百分之十。如果说我们想独占这个利益，那么一定是要被历史抛弃的。这是一个客观的规律，这是一个历史观。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;22． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们给的开源模型，跟我们自己部署的模型是一样的。我们不会开源一个差点的模型、自己部署时用更好的模型。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;23． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我不担心别人部署我们的模型来跟我们竞争。不是每一家公司都有这个意愿和能力去达到这个目标。创业公司如果太小，没有力量来做这个事情；大公司又很难组织。这是属于我们这个规模的公司的一个 sweet point 。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;24． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;开源对我们的商业模式没有任何影响，前提是“只赚一定的利润”。如果你要赚一百倍利润，开源确实会影响你。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;25． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们不愿意跟任何一家互联网大厂或者小厂成为对手。在这个前提下，我们很愿意协助、帮助任何人，甚至包括阿里、智谱、月之暗面做得更好。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;中美差距不在人才&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;26． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;未来我们要改写中美AI的叙事：用几分之一的算力，把差距缩得更短，缩到 6 个月、3 个月。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;27． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;中美AI的差距主要在资源上。我们相信 Scaling ，肯定是规模越大，效果越好。训练这么大的模型，并不是因为我觉得这么大的模型就够了，而是只有这么多资源。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;28． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;人才几乎没有差距——就是同一批人。国内人才是不缺的。人才短缺是阶段性的，历史上从来没有长期缺某一类人的情况。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;模厂竞争，成本排在第一位&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;29． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;Anthropic 现在超过 OpenAI，不是长期的，是阶段性的。OpenAI 和 Google 未来大概率会交替上升。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;30． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;国内做模型的公司太多了，每一家都做同样的事情，资源比较分散。最终一定会收敛，但需要过程。如果每家只拿合理的利润，不需要那么多人做大模型：可能两家大公司、两家小公司就够了。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;31． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我绝对不认为大模型公司可以拿走（AI行业的）大部分利润。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;32． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;大模型竞争最终的差距会体现在三个方面：成本、时间、用户体验。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　成本排在第一位——同样质量的服务，你能以什么成本提供。第二是时间，早几个月晚几个月就不一样。用户体验会有些粘性和壁垒，但不本质。&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;无意于成为下一个超级app&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;33． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们不想做成下一个超级 App。做成下一个字节？下一个腾讯？完全没有这样的想法。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;34． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;不争这个东西，是因为后面还有西瓜，前面的可能都是芝麻。当然可能这个芝麻比较大，但我觉得都不算大。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;35． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;去年大家都抢 Chatbot 、抢 C 端流量，今年是抢 To B 收入。但我们不认为它重要，公司内部真正关心的是 AGI 的路线图、下一步技术怎么突破。很奇怪，最想得到的东西得不到，没那么在意的反而容易得到。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;36． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;去年春节火了，不在我们的剧本里。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;保持团队的稳定性是核心&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;37． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;只有一个是没法退让的：必须要保持团队的稳定性。这也是我们面临的一个非常大的风险。当然这个风险随着这一次融资，得到了比较大的解除。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;38． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们做很多事情都是为了保持团队稳定性。我们不愿意跟任何互联网大厂或小厂成为对手，我们希望给他们赋能，帮助他们。我们不想树敌。这样我们自己的环境也会更好。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;39． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;有些人觉得我们的组织是从上而下的，有些人觉得是从下而上的，我觉得两个都对。从上到下叫“做正事”，一般希望“正事”不要占用员工所有时间的一半。他还有一半的时间是从下到上的，是不被安排的，想研究什么就研究什么，可以自己去探索，按照他觉得什么重要，就去探索什么，没有前置要求。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;40． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们一般也不太加班。第一个原因是做研究需要一个比较松弛的环境。第二个原因是我们非常聚焦。产品很多都不完善，但我们也没有去补它，也算是一种克制的文化。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;41． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;组织是动态的，不是一成不变的。未来随着公司变大，可能会有一些调整。但不会完全变成传统的层级制，但可能会有一些必要的结构。但愿景驱动不会变。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;怀着对世界的善意&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;42． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我们做这个公司，初衷没想要赚多少钱，要到资本市场去上市。最开始的几十个人完全没有这么想过。如果他这么想，他就不会来。 我们是怀着一个对这个世界非常大的善意来做这个事情，觉得这对人类有用。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;43． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;“要实现XX KPI”不是我们的方式，我们是一个靠愿景驱动的组织。这有好处，也有坏处。未来会想办法扬长避短，但这个是我们的特色。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;44． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;愿景甚至也不是成文的，而是在做事情的方法中、对待世界的态度里。可能我们公司每个人对这个愿景的理解也不一样，但是在大的方向上是一致的。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;45． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;大概二十年前，我在管理上最崇拜的是杰克·韦尔奇（ GE 的前 CEO）。现在来看，他说的大部分东西可能都已经不对了，但是他有一点说对了：一个公司最重要的是愿景。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　愿景不是挂在墙上的标语，不是怎么说，而是怎么做。&lt;/p&gt;
+&lt;p cms-style="font-L strong-Bold"&gt;　　&lt;font cms-style="font-L strong-Bold color30"&gt;克制让我们更能做成AGI&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;46． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AGI 是收益最大的。那其他事情，如果有精力，我们会做，没精力，我们就不做。克制是我们愿景里的一部分。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;47． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;AI 这个事情太大了，利益也太大了。只要能够做成，随便分一点利益就非常大。而你越克制，就越有可能能够做成这件事。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;48． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;我觉得这是符合直觉的——至少是符合我的直觉。除了愿景，我们并没有非常多的其他优势。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;49． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;两年前成立这个公司的时候，没有很多钱，没有很多卡，没有什么知名度，又没有什么号召力，我们就是一群非常平凡的人。 我喜欢的叙事是“一群平凡的人做出了不平凡的事”，而不是“一群天才做出了不平凡的事”。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;50． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;开源也属于克制的一部分。在定价上，我们也肯定不是以公司收入最高或者利润最高作为出发点的。从短期来讲，价格高一点，收入多一点；但从长期来讲，还真不好说。对我来讲，克制是一种战略。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;51． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;开源和低价，让员工觉得很有成就感，组织因此有凝聚力，对社会有好处，其他同行和普通人都会很高兴。所以这种克制，从远景上来讲，能够增加我们做成 AGI 的概率。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold color30"&gt;52． &lt;/font&gt;&lt;/font&gt;&lt;font cms-style="font-L"&gt;&lt;font cms-style="font-L"&gt;如果你的愿景是拿得多，你就先输了，你可能会面临着更大的困难。这个世界就是这样。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p cms-style="font-L align-right"&gt;　　&lt;font cms-style="font-L align-right"&gt;封面来源：Rembrandt van Rijn， &lt;font cms-style="font-L align-right italic"&gt;The Storm on the Sea of Galilee&lt;/font&gt;， 1633， Isabella Stewart Gardner Museum&lt;/font&gt;&lt;font cms-style="font-L align-right"&gt;&lt;/font&gt;&lt;/p&gt;
 
 
 
@@ -2947,7 +3210,7 @@ Rubin自适应压缩稀疏化&lt;/p&gt;
 
 			
 			
-&lt;p class="article-editor"&gt;责任编辑：刘明亮 &lt;/p&gt;
+&lt;p class="article-editor"&gt;责任编辑：尉旖涵 &lt;/p&gt;
 			
 
 				&lt;/div&gt;
@@ -2956,24 +3219,4 @@ Rubin自适应压缩稀疏化&lt;/p&gt;
 				
 				
 		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 22 Jul 2026 14:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxOckVLQzlIMXU1SzIxS2hZT3pmRWozVWlaX2xOODBCUDhweFc3YnZUbXBlbXVnQl9oTXdlbTRBTmVYV2VlSUlqUV9nUE5kZVNkc3VDZFNDR1VIeC12U01vNldad2dVSVBZcUNwaHBiU3o4aUhwb0JPMk53amhaWlpiR3dlanQtMkk</guid></item><item><title>“惊为天人”！“又酷又飒的中国女保镖”夺冠 - 凤凰网</title><link>https://news.ifeng.com/c/8uyYTjSeCF4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;7月20日，“尖刀·使命”2026年全国公安特警挑战赛在新疆乌鲁木齐开赛，首日比赛是快速射击项目。其中，手枪射击赛中，参赛特警队员要完成12个靶标的射击任务。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/02A1D584840A34ACDC7EA7FC2DD03FE8184BE293_size14_w505_h292.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;来自特勤女卫士长队的雒安琪动作行云流水、弹无虚发，以52秒105的好成绩获得女子组冠军。&lt;/p&gt;&lt;p&gt;根据赛制，快速射击项目分为手枪射击、冲锋枪射击和狙击枪射击。&lt;/p&gt;&lt;p&gt;手枪射击科目中，参赛特警队员要完成12个靶标的射击任务。参赛特警队员需要在比赛开始后先跑动60米，翻越一道2.5米的人字高板障碍至1号射击区，对15米处1号靶射击。&lt;/p&gt;&lt;p&gt;参赛特警队员的第1枪需要克服跑动翻越后的呼吸心跳加速，击中两块红色禁射靶中间仅10厘米宽的跌落靶。&lt;/p&gt;&lt;p&gt;2号靶模拟人质劫持场景，参赛特警队员需要利用掩体右侧对10米处的白色人形靶进行射击，同时防止击落前方模拟人质的红色禁射靶。&lt;/p&gt;&lt;p&gt;3-5号靶位设置了三处动态目标，分别是摇摆、旋转、移动靶。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/E455A7B02F4D84B5559BA136FD9552BE402C1CF5_size39_w630_h402.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;2026年全国公安特警挑战赛副总裁判长柳迪文介绍，相比气步枪、手枪等体育射击赛事，特警挑战赛全程模拟实战环境，队员需要疾速奔跑，还要模拟翻越高山、丘陵等各类障碍，在高强度运动状态下完成射击。根据比赛规则，选手一旦脱靶就要罚时30秒。这意味着，选手一旦脱靶，就很难在比赛中取得好的名次。&lt;/p&gt;&lt;p&gt;当天的比赛中，雒安琪的表现行云流水，现场解说直言其发挥“惊为天人”。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/1FEF23CD594C4FEFF3F97B0A4BDAB8A20DD62ED6_size17_w494_h314.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;雒安琪自己透露，今年集训的这段时间，每天训练大概都在十二三个小时。“在这种高手云集的赛场上，如果你要想展现出来自己的实力，你必须要做到比别人好，必须一点一点突破。”&lt;/p&gt;&lt;p&gt;根据山西警察学院官微“优秀毕业生”栏目介绍，雒安琪2021年毕业于该校治安系，现在公安部特勤局工作。&lt;/p&gt;&lt;p&gt;今年，一段她目光如炬、气场凌厉的安保执勤视频在网络上走红，被网友称为“又酷又飒的中国女保镖”。&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/BE885B012DCB21D9DEDB16830DC2FC75DAE5C520_size24_w834_h438.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p class="textAlignCenter"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/3FE9151365029CDEBA4FC259714D346BF64420B4_size21_w555_h416.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;报道称，从英姿飒爽的“女保镖”到赛场上的“神枪手”，不同身份标签的背后，是心无旁骛、把每一件事都做到极致的雒安琪。目前，她继续投入到训练和比赛中，全力备战2026年公安特警挑战赛的剩余竞赛科目。&lt;/p&gt;&lt;p&gt;《人民公安报》曾发文介绍，公安特勤部门肩负党赋予的特殊政治任务，责任重大、使命光荣。公安特勤部门要心系“国之大者”，忠实履行新时代公安特勤部门使命任务。强化实战练兵保安全，扎实开展实战练兵，深化应用射击、防卫控制等技能训练，加强公安特勤民警斗争精神和斗争本领养成，确保关键时刻拉得出、冲得上、打得赢。&lt;/p&gt;&lt;p&gt;此次雒安琪夺冠，央视新闻评论称，勤务护平安，赛场砺精兵，中国女特警用实力诠释着巾帼不让须眉的硬核力量。&lt;/p&gt;&lt;p&gt;记者：李岩&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Wed, 22 Jul 2026 14:08:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE50bVhUMG5MZzVkMG10d01DWHliVXFJVkRMTTlucU96WFNOOTJqSXJmWVh1Zk1ZQTFXM0FkZmlNM3h1VUpsbk5BUnBvYXo</guid></item><item><title>马斯克继续加码！SpaceX AI在德克萨斯州布局大数据中心，规模或超孟菲斯设施 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777700</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 13:29:51 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5HTUZSZjczSGlyRGplQnlad0lEX1VhNU1hT2l2ZFo2MWZJbWVCa2ZmXzk2SVJESWFpNXVDQ2I3WVFqYkpyZGthS1NLR3ZmNFNHU3NJ</guid></item><item><title>据报道，OPENAI计划斥资超过300亿美元建设新的数据中心 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3777699</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 22 Jul 2026 13:26:13 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE55X1pLZndiVW9VUGNEbXNsVF85RllQLXcwcHBJblhIc0d0VUNrbGFHMkdBNDlTX2gteGZDYjlwVnhVZnZGbEFpQ1Vkb3ZLUllmT1lr</guid></item><item><title>美国AI再现“梯云纵”武功绝学：AMD投资Anthropic 50亿美元换显卡出售 - 驱动之家</title><link>https://news.mydrivers.com/1/1138/1138331.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月22日消息，美国AI行业过去两年流行起循环投资玩法，就像武当派轻功绝学梯云纵那样左脚踩右脚升天，以前主角是NVIDIA，这次换成了AMD，50亿美元投资换取Anthropic购买AMD的2GW算力。&lt;/p&gt;
-&lt;p&gt;根据双方达成的协议，AMD与Anthropic公司达成了一项战略协议，&lt;span&gt;&lt;strong&gt;AMD将向后者投资50亿美元，而后者将向AMD购买2GW规模的AI算力，&lt;/strong&gt;&lt;/span&gt;预计在2027年上半年开始部署。&lt;/p&gt;
-&lt;p&gt;2GW的算力主要是AMD最新一代的MI450系列AI显卡，会以Helios机柜的形式部署，双方没有公布具体的协议金额。&lt;/p&gt;
-&lt;p&gt;按照NVIDIA CEO黄仁勋之前的算法，1GW算力大约需要500亿美元的投资了，针对最新的Rubin平台，&lt;strong&gt;黄仁勋把这个价值又提升到了1000亿美元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;AMD的Helios机柜据悉比Rubin平台价格还高，因此与Anthropic的协议保守估计也有上千亿美元的规模，AMD投资50亿美元给Anthropic倒是不亏。&lt;/p&gt;
-&lt;p&gt;在Anthropic之前，&lt;strong&gt;AMD去年10月、今年2月份分别跟OpenAI、Meta达成了6GW、6GW规模的算力合作&lt;/strong&gt;，几乎都是在今年底到明年开始部署，平台也主要是以MI450这一代为主。&lt;/p&gt;
-&lt;p&gt;NVIDIA之前更是早早地跟OpenAI、Anthropic等公司达成过类似的算力合作，而且规模比AMD的还要大，最高的有10GW以上的算力，当然NVIDIA给的投资额也要高很多，之前对OpenAI最高多达1000亿美元。&lt;/p&gt;
-&lt;p&gt;然而这些互相投资的模式最为人诟病的也在这里，&lt;strong&gt;双方达成协议股价上涨了，估值提升了，到后面又说这个协议没有法律约束力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;只能说美国的AI行业永动机玩法领先世界一个时代。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="美国AI再现“梯云纵”武功绝学：AMD投资Anthropic 50亿美元换显卡出售" h="337" src="//img1.mydrivers.com/img/20260722/e6953aa7-b379-4ada-84e1-51c3e8c7c96f.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 22 Jul 2026 13:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBFQjJ2OTFacWNzUTBHaGdzV1NPNkIzUHI3UUJUZE51YjJ2Y2t0TFY3SldWMWZQbUx0MGFpRGNzSndTYnI5S3N2REhhRUt4VnhNYm1wVDBsNV8</guid></item></channel></rss>
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Wed, 22 Jul 2026 15:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiqwFBVV95cUxOS0ZISXY2X1BVbW5kQS1jYkNndWV0eFM1endpV2p3cXBZQkdWc1lFNDA4SWI0UTNEbHAyR3IwVUJ0YVNtRTdzRzIxTVhSdnhhVVY3UjFyOXcyQ2d3eHlyV2pMb01Ub3dYZFU0RVMwc2hWS29fZVNpQnphUHRkSllBY0RIUXA0dFN2RGZYeVd5ZUVqRWFRWTFuVDh6cVZaVVZtNlQ4MlF1dl9UejA</guid></item></channel></rss>
