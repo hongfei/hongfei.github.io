@@ -1,5 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>AI幻觉最可怕的人类副作用出现了 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139604.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>AI泡沫的金丝雀，刚刚死去..... - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778131</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 11:01:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBoVWgtRGxEb3pUYU4weVY2NUxFUXcyaVN6Mnk4ODg0THFVYWhPRU4tZm1WaFhQMV9uRlJhVGNUT1NjU2RrblBTTXhJbVNtTk1tSTY0</guid></item><item><title>AI的免费午餐吃完了？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778120</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 10:00:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBSa2Z0YTlJOU1kT3NHcVVoWm02bXRZbU5vV19UbE1GNnNFZ0U2T3dWd012QmNjdXZYc1R6UVo5YXhmQnJLNVEwS2VmZ2s0bDF1UEJj</guid></item><item><title>Windows暗藏三十年老图标！从3.x到11从未删除：一个路径就能调出 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139656.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，&lt;span&gt;&lt;strong&gt;Windows 11虽然换用了现代图标，但Windows 3.x和9x时代的所有旧图标从未被删除，仍然埋藏在系统文件中，只需手动指定DLL路径即可调用。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;访问方法很简单：右键任意快捷方式或文件，选择属性，点击更改图标。如果弹出提示说当前文件没有图标，点确定继续。&lt;/p&gt;
+&lt;p&gt;随后在“查找此文件中的图标”一栏清空默认内容，&lt;strong&gt;粘贴moricons.dll或pifmgr.dll的完整路径C:\Windows\System32\，回车即可看到全套复古图标。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Windows暗藏三十年老图标！从3.x到11从未删除：一个路径就能调出" h="582" src="//img1.mydrivers.com/img/20260728/7a39d904-0a15-46b7-9857-621f9f32b740.png" w="436"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Windows暗藏三十年老图标！从3.x到11从未删除：一个路径就能调出" h="582" src="//img1.mydrivers.com/img/20260728/6d673c1c-3588-4f50-929e-1874c997fb43.png" w="436"&gt;&lt;/p&gt;
+&lt;p&gt;moricons.dll和pifmgr.dll都是Windows 3.x和9x时代的遗留文件，保留至今纯粹是为了让指向特定图标索引的旧快捷方式在现代Windows上不会失效。&lt;/p&gt;
+&lt;p&gt;这些图标从不主动显示，因为Windows删除某项功能时只会停止引用对应图标，不会从DLL文件中清除图标资源本身。这些文件保留了它们最初发布时的每一个图标，即便Windows 11中已经没有任何地方调用它们。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;除了这两个最经典的复古图标库，系统里还有不少值得翻一翻的DLL：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;shell32.dll是Windows至今默认调用的图标集，但里面仍藏着软盘图标和Windows 95时代的文件夹图标。&lt;/p&gt;
+&lt;p&gt;imageres.dll是Vista时代引入的现代化图标库，也是文件资源管理器目前实际调用的主要来源。&lt;/p&gt;
+&lt;p&gt;ieframe.dll是旧版IE的图标集，IE本身已经没了，图标还留着。&lt;/p&gt;
+&lt;p&gt;mmres.dll收录扬声器和麦克风等音频相关图标。&lt;/p&gt;
+&lt;p&gt;powercpl.dll是电池和电源计划图标。&lt;/p&gt;
+&lt;p&gt;pnidui.dll是Wi-Fi信号和网络状态图标。&lt;/p&gt;
+&lt;p&gt;wmploc.dll是Windows Media Player的图标集。&lt;/p&gt;
+&lt;p&gt;mstscax.dll是远程桌面连接图标。&lt;/p&gt;
+&lt;p&gt;对于不在乎复古图标的人来说，这些可能是系统垃圾，但对怀旧的用户来说，Windows 11里藏着一座从Windows 3.x到现在的图标博物馆，入口只需要一个DLL路径。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260728/e2663fdba36546639c133f7a491e70d8.jpg" target="_blank"&gt;&lt;img alt="Windows暗藏三十年老图标！从3.x到11从未删除：一个路径就能调出" h="400" src="//img1.mydrivers.com/img/20260728/s_e2663fdba36546639c133f7a491e70d8.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 09:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA3NDlOYkkwUk12aVZiZlN3VTlJUnQyVmNFV05zR1ZrVU1vX2toSW8xeDJ5dGFYcU1ZZmdmYUdfeXpaM3RRQ1d2UE9adExYZmdsODJuY2NYcXg</guid></item><item><title>算力资源有限，亚马逊砍掉多款自研AI，All in“旗舰大模型” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778123</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 09:32:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5odHFqM0lTQ1lhQWhta2RQWTEzOEozSzJLcjE0Yy0tcW1sQVAtR0VIT3hYMFBXWTczdDJsWnlhWm1aclFuYlFwQWdVZ0t5SGtWZTM4</guid></item><item><title>512KB内存跑千万级AI模型！开发者：未来咖啡机都能思考 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139648.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，乌克兰独立开发者Slava S近日发布开源项目"ESP32-AI"，&lt;span&gt;&lt;strong&gt;在售价仅约8美元（约54元人民币）的ESP32-S3微控制器上，本地运行了参数规模达2890万的语言模型，&lt;/strong&gt;&lt;/span&gt;打破了同级别芯片此前仅能运行数十万参数模型的纪录。&lt;/p&gt;
+&lt;p&gt;ESP32-S3是物联网领域常见的高性价比微控制器，硬件资源极为有限，仅配备512KB SRAM、8MB PSRAM和16MB闪存。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/b82f4ffc-7259-44a2-a3f5-a6a88ebb350b.gif" target="_blank"&gt;&lt;img alt="512KB内存跑千万级AI模型！开发者：未来咖啡机都能思考" h="175" src="//img1.mydrivers.com/img/20260728/Sb82f4ffc-7259-44a2-a3f5-a6a88ebb350b.gif" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;大型语言模型推理时需要将所有参数载入高速内存完成矩阵运算，此前在该类芯片上的模型纪录约为26万参数，强行载入千万级模型，内存会瞬间耗尽。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为突破硬件瓶颈，Slava参考Google Gemma的“逐层嵌入”架构，对2890万参数的语言模型进行4-bit量化处理，文件大小压缩至14.9MB，并采用分层内存配置。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/e5f6e7e8-e209-4660-a489-cf8639bd0624.png" target="_blank"&gt;&lt;img alt="512KB内存跑千万级AI模型！开发者：未来咖啡机都能思考" h="312" src="//img1.mydrivers.com/img/20260728/Se5f6e7e8-e209-4660-a489-cf8639bd0624.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;占用空间最大的嵌入表（约2500万参数）存放在读取速度较慢但容量更大的16MB闪存中，高速的512KB SRAM完全留给核心推理权重运算。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该模型在生成每个Token时只需从闪存调取少数几行数据，不会造成系统性能拥堵，由此达成了结构运算的最优化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前该项目仍属于概念验证阶段，只能生成简单短篇虚构故事，不具备通用问答、写代码或执行复杂指令的能力。&lt;/p&gt;
+&lt;p&gt;但开发者举例指出，微型AI未来可应用于特定领域的智能家电，比如一台无需联网却能精确掌握各类咖啡豆特性、研磨度和最佳冲煮水温的独立智能咖啡机。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/da1e6c3c-fa6e-48cf-ab78-c7fdf46f769d.jpg" target="_blank"&gt;&lt;img alt="512KB内存跑千万级AI模型！开发者：未来咖啡机都能思考" h="450" src="//img1.mydrivers.com/img/20260728/Sda1e6c3c-fa6e-48cf-ab78-c7fdf46f769d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 09:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB1cFVtYk1MWTUzUWpSbUMtNnZOc2REN3VXWDRKdGZtRnM3aVJvckd5UG8yUjFXS3JucGFPbU40VDVUMEk1eXRfOEx4SzQ5VFRjNmNEOHQ1eGo</guid></item><item><title>向中港澳走私高阶芯片案 台官员搜英伟达 逮捕一涉案业务经理 - RFI</title><link>https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20260728-%E5%90%91%E4%B8%AD%E6%B8%AF%E6%BE%B3%E8%B5%B0%E7%A7%81%E9%AB%98%E9%98%B6%E8%8A%AF%E7%89%87%E6%A1%88-%E5%8F%B0%E5%AE%98%E5%91%98%E6%90%9C%E8%8B%B1%E4%BC%9F%E8%BE%BE-%E9%80%AE%E6%8D%95%E4%B8%80%E6%B6%89%E6%A1%88%E4%B8%9A%E5%8A%A1%E7%BB%8F%E7%90%86</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 28 Jul 2026 09:07:59 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiygNBVV95cUxPejRja0Y2TlgxUm10cGxEQUJtM3ZFS3NSd2d0dHBkbjdodVZVdTdhZHVuUndqb3JWTTR3RjhOZzZhbTZmem1oU2IzQjF1R1Y0OGt2RzlnSWhqTWdEMFhuZFZ4encxZTFVb1l6UHQtU2hPRm5vQnF6X195cnRSRVppQ04zMGhvZTlpeGhObDBxTUxaV2U3WW5USzUwRXVIbXQ4S1h0SnlkSWh5bUExck1LanpXSl9CT2NBZHJsenlEc2hyZVhKSFJPX1p0dVkyWlo4ckNIWUV6WTNyUjg3TDZ5cmFzbG9VQkZJZy1pblNqcGRxN0ZGMFctb0hkVENYNUN4VEFwMjNKWm5yRGhWLWViajk2NDNBNFN2Rm9QMTBxQ0pSLXRDeEpJWHo4V3EyeTJSUGZCT2FIWGZFa1c1M0tnLUJUcl85VklhX3hQWWgyYTRoWjNJYXdEdVZhVk5Wb250VDIyTGpTV1FZbEFVY1BSVVc3NGNqd2xUTzllX3d2NzdXTTF0TFUzODNVZVU0MnRIUHM3YjVNWVJtT0VoUnZYb2JrU0VRV21MS1kzZkJsWmVMV1lBUmxtamZZNXZCVlhGMlZlckVEaDNCQQ</guid></item><item><title>索尼摊上事了！知名黑客组织"匿名者"发布讨伐檄文 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139633.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;索尼宣布将于2028年停产实体版PlayStation游戏光盘这一决定带来的后续影响还在持续扩大中，据Tweak Town报道，&lt;strong&gt;目前甚至就连知名国际黑客组织“匿名者（Anonymous）”都发布了一篇“檄文”性质的文章来讨伐索尼。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="索尼摊上事了！知名黑客组织" 匿名者"发布讨伐檄文" h="309" src="//img1.mydrivers.com/img/20260728/908ecd8c-7e82-4635-bf92-0fa6ab09cda5.jpg" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;匿名者是2003年起源于美国4chan论坛的松散型国际黑客组织，早期聚焦网络恶作剧，后开始参与社会运动。&lt;/p&gt;
+&lt;p&gt;匿名者主张网络自由与透明，成员包括计算机专家、记者及黑客活动分子，曾对政府机构、企业及国际组织发起多起网络攻击。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="索尼摊上事了！知名黑客组织" 匿名者"发布讨伐檄文" h="309" src="//img1.mydrivers.com/img/20260728/6eed77c7-821c-4795-8712-bc6e41a47fbf.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;据了解，匿名者官方在推特上发布了一则以“拥有游戏的时代即将结束”为主题的长文，详细解释了购买实体版游戏与数字版游戏之间的区别。&lt;/p&gt;
+&lt;p&gt;在许多情况下，&lt;strong&gt;购买实体版游戏意味着玩家无需连接互联网或登录有效账号即可游玩。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，实体版游戏还意味着，即使该游戏从PSN商店下架，它依然可以正常运行，同时玩家也可以将其交易、借给朋友，或者转卖。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="索尼摊上事了！知名黑客组织" 匿名者"发布讨伐檄文" h="479" src="//img1.mydrivers.com/img/20260728/c01bf335-1465-46f7-9923-d036e6d9bd77.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;匿名者继续写道，索尼通过移除游戏实体版本，意味着玩家访问PlayStation游戏的唯一方式将变成数字形式。&lt;/p&gt;
+&lt;p&gt;而数字版购买实际上是购买一份许可证，索尼永久拥有撤销该许可证的权利。&lt;strong&gt;这意味着，即使玩家已经“购买”或“买下”游戏，索尼仍然可以在任何时候关闭玩家对该游戏的访问权限。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该组织还指出，索尼甚至在其软件使用条款中明确说明，任何类似“拥有（own）”“购买（purchase）”“买入（buy）”以及“出售（sell）”这样的术语，“并不意味着所有权实际上转移给了你”。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="索尼摊上事了！知名黑客组织" 匿名者"发布讨伐檄文" h="365" src="//img1.mydrivers.com/img/20260728/5ac1f2a5-17f1-44f4-9e83-7f3bcead4fd5.jpg" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;此外，匿名者补充道：“另一部分条款进一步说明，一旦你的协议、账号或者许可证终止，你将被要求停止使用相关内容，并删除或销毁任何副本。”&lt;/p&gt;
+&lt;p&gt;考虑到匿名者本身的黑客身份，尚不清楚匿名者是否会对索尼展开攻击，事态的发展仍有待更进一步观察。&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 08:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5mNkY2WXJ3VWpJaFhUVWhvYWd3YlZPbHpEd2lRMlFhRUlZejBVeGJCcXhtd1lOZ2I3ZFhQLW92VXJTSlBpNUloLWh1NGFFTC1FVWNpTnZTVDU</guid></item><item><title>腾讯WeGame千万以内零分成！黑神话和谐印象太深刻 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139632.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;strong&gt;近日，动作游戏《影之刃零》在WeGame平台开启预约，而官方宣传页面上一句“千万不分成”的标语引发了大量玩家讨论。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该政策指的是游戏在平台获得收入1000万元以内时，平台不收取分成，以此降低国产游戏开发者的商业压力。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯WeGame千万以内零分成！黑神话和谐印象太深刻" h="177" src="//img1.mydrivers.com/img/20260728/72c91a41-5cbc-453e-90d0-5a8f95c81601.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;编辑观点：降低平台抽成、减轻开发者压力，对于游戏行业尤其是中小团队来说确实是一件好事。但平台生态的建立不仅依靠分成政策，还要看长期的服务能力和玩家信任的积累。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;首先，这项政策并非近期才推出，而是WeGame自2021年起便开始实施的开发者扶持措施。只是随着《影之刃零》等国产大作受到关注，这项曾经面向开发者的政策才重新进入玩家视野。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯WeGame千万以内零分成！黑神话和谐印象太深刻" h="367" src="//img1.mydrivers.com/img/20260728/3410943e-30f8-4078-952d-d01c73758fea.jpg" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;从开发者角度来看，WeGame的这一举措确实具有积极意义。对于大量独立游戏和中小团队而言，前期开发成本、宣发成本以及平台抽成压力都是需要面对的问题。&lt;/p&gt;
+&lt;p&gt;相比传统数字游戏平台普遍采用固定比例抽成的模式，收入达到一定规模前免除分成，可以让开发者保留更多资金用于后续更新、优化和新项目开发。尤其是许多独立游戏售价较低，销量达到数万甚至十几万份已经算是不错成绩，1000万元收入门槛对于不少团队而言已经能够覆盖相当长一段发展周期。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯WeGame千万以内零分成！黑神话和谐印象太深刻" h="309" src="//img1.mydrivers.com/img/20260728/c9b05ee2-0be3-49a0-9ed2-bacd12b4b70b.jpg" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;此外，这类政策也有助于完善国产游戏生态。近年来，《黑神话：悟空》《影之刃零》等作品让外界看到国产单机游戏的发展潜力，但行业中仍有大量规模有限的团队需要面对商业风险。&lt;/p&gt;
+&lt;p&gt;平台如果愿意通过降低抽成、提供发行支持等方式帮助开发者降低试错成本，长期来看也有机会吸引更多优秀作品进入市场。从这一点来看，WeGame的“千万不分成”并非只是一次宣传口号，而是对中小型开发团队货真价实的扶持。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯WeGame千万以内零分成！黑神话和谐印象太深刻" h="365" src="//img1.mydrivers.com/img/20260728/21af85b0-f855-49c5-abb5-692fb46c8baa.png" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不过，平台政策最终能否获得认可，并不只取决于开发者是否受益，而是要看玩家如何选择。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不可回避的是，WeGame的一些“黑历史”仍然影响着平台形象。例如《怪物猎人：世界》下架风波、《黑神话：悟空》和谐疑云、《星露谷物语》等游戏不兼容Mod等也让不少玩家产生顾虑。在这些事件影响下，即便平台推出更友好的开发者政策，玩家们依然会关注游戏购买体验、内容完整性以及长期服务能力。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯WeGame千万以内零分成！黑神话和谐印象太深刻" h="309" src="//img1.mydrivers.com/img/20260728/b53050c0-5d48-4382-8bdc-e72f942a9a01.jpg" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，平台分成只是游戏发行生态中的一个环节。Steam等平台虽然长期采用30%左右的基础抽成模式，但也拥有庞大的全球用户群、成熟的社区功能、创意工坊以及完善的销售体系，这些都是开发者选择平台时需要考虑的因素。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="腾讯WeGame千万以内零分成！黑神话和谐印象太深刻" h="309" src="//img1.mydrivers.com/img/20260728/07bfb9cf-1fa0-44e3-97ba-bf71e3b1d799.jpg" w="550"&gt;&lt;/p&gt;
+&lt;p&gt;对于玩家而言，最重要的还是能否方便购买喜欢的游戏、是否拥有稳定且优质的服务体验。WeGame想要改变过去积累的负面印象，除了推出优惠政策，也需要通过更多实际案例证明平台价值。&lt;/p&gt;
+&lt;p&gt;那么，你如何看待WeGame“千万不分成”的开发者扶持政策？你认为降低抽成能够成为国产游戏发展的助力，还是平台长期口碑更重要？&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 08:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvZS1oY0xaUjEyMmxUdnp5d0lUR2Z2anhkLUxHRUt1empoazc1RTJLTC1YaGJyenlrZ1B5SHExekpzaktFc0JqeXgyTnZiZVZ6OV9SQTR0aDI</guid></item><item><title>如何识别AI周期的泡沫化顶部？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778119</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 08:37:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9Zd0lqU0VjZmpucnlUWlA1Uk1jSHJfaUJBYWFUYWtib3JPeEFPZnpGckp4UW5VYWVKYkkzNjNXT3QyOVlfZ1RMR1pKdTdFZXlpUHhv</guid></item><item><title>DIY市场已疯！华擎首发AMD RX 9050：2026年了还在出4GB新卡 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139623.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，万万没想到，都到了2026年，竟然还有4GB显存的新卡上市。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;华擎在官网上架了AMD Radeon RX 9050显卡定制版RX 9050 Challenger，提供8GB和4GB两个显存版本，同时公布了这款入门级RDNA 4显卡的实际规格。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/fe508974-e081-4ead-949e-6c2d4d529e4b.png" target="_blank"&gt;&lt;img alt="DIY市场已疯！华擎首发AMD RX 9050：2026年了还在出4GB新卡" h="347" src="//img1.mydrivers.com/img/20260728/Sfe508974-e081-4ead-949e-6c2d4d529e4b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;早在去年三月份的时候，就有消息称AMD正在准备RX 9050显卡，用来填补入门市场的空白。随后有传闻称RX 9050拥有32个计算单元（CU）和2048个FP32运算单元，与RX 9060 XT完全相同。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/8b7e9ed4-c9fb-4ca7-92cf-14158e35367d.png" target="_blank"&gt;&lt;img alt="DIY市场已疯！华擎首发AMD RX 9050：2026年了还在出4GB新卡" h="414" src="//img1.mydrivers.com/img/20260728/S8b7e9ed4-c9fb-4ca7-92cf-14158e35367d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;华擎公布的实际规格只有一半：16个CU，1024个FP32运算单元，毕竟RX 9050作为入门型号，不可能与RX 9060 XT拥有同等算力，减半才合理。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;规格方面，RX 9050采用Navi 44核心，与RX 9060 XT相同，AMD直接屏蔽了一半的计算单元，让RX 9050的算力远低于RX 9060 XT和RX 9060。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/e873cea0-86b8-4e0b-8d35-c54bb0a70a8a.jpg" target="_blank"&gt;&lt;img alt="DIY市场已疯！华擎首发AMD RX 9050：2026年了还在出4GB新卡" h="234" src="//img1.mydrivers.com/img/20260728/Se873cea0-86b8-4e0b-8d35-c54bb0a70a8a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GPU加速频率2600MHz，游戏频率1920MHz，理论算力还不到RX 9060 XT的一半，屏蔽幅度确实很大，但Navi 44已经是底线，RDNA 4系列没有更小的核心可用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;两个版本GPU规格完全相同，区别只在显存，8GB版配备128-bit位宽，4GB版位宽砍半到64-bit，速率均为18Gbps。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/770dc17c-ed01-41a4-826f-6e52f017854e.jpg" target="_blank"&gt;&lt;img alt="DIY市场已疯！华擎首发AMD RX 9050：2026年了还在出4GB新卡" h="234" src="//img1.mydrivers.com/img/20260728/S770dc17c-ed01-41a4-826f-6e52f017854e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;两个版本都需要一个8针供电接口，输出接口为两个DisplayPort 2.1a和一个HDMI 2.1b。&lt;/p&gt;
+&lt;p&gt;目前华擎未公布价格，AMD官网也未上线RX 9050页面。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/57ddc523-3de9-4165-907c-8c0d94c4cdfa.jpg" target="_blank"&gt;&lt;img alt="DIY市场已疯！华擎首发AMD RX 9050：2026年了还在出4GB新卡" h="337" src="//img1.mydrivers.com/img/20260728/S57ddc523-3de9-4165-907c-8c0d94c4cdfa.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 08:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5tTE93RE4zNENycnZKYkZJVF9qLWZUTk1GVDRTUkU3RThfVUFKcDZYVVNzeWJoOFdHNTRqeGVEMmFfWkdKSm1relktS1RuRnZrNC1lVzJoV0I</guid></item><item><title>全球股王易主！英伟达市值被苹果反超 风向彻底变了 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139621.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;美股周一收盘，苹果市值超越英伟达，登顶全球市值最高公司。这是自2025年4月以来，这家iPhone制造商首次在收盘时市值领先于该AI芯片巨头。&lt;/p&gt;
+&lt;p&gt;周一，英伟达股价大跌5%，市值缩水至4.76万亿美元。由于投资者对AI基础设施建设的高昂成本感到担忧，AI芯片股整体下挫。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="全球股王易主！英伟达市值被苹果反超 风向彻底变了" h="433" src="//img1.mydrivers.com/img/20260728/60f7d11a-4c13-4ed1-934e-416d699120fa.png" w="554"&gt;&lt;/p&gt;
+&lt;p&gt;周一的下跌源于有报道称英伟达正在洽谈为OpenAI租用数据中心的项目提供最高2500亿美元的融资担保。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此外，英伟达正在推进新一轮人工智能基础设施交易，潜在规模可能超过7500亿美元。这再次引发了人们对循环融资和巨额资本支出的担忧，投资者对此正越来越警惕。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;英伟达股价周一的下跌延续了该股以及整个芯片板块近期的波动行情。近期的疲软使该股今年迄今的表现落后于标普500指数。今年以来，标普500指数累计上涨8%，而英伟达股价涨幅仅为4%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，苹果股价周一上涨1%，市值升至4.95万亿美元。该公司将于周四发布备受瞩目的财报。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="全球股王易主！英伟达市值被苹果反超 风向彻底变了" h="442" src="//img1.mydrivers.com/img/20260728/438553d0-c29d-4dfd-9a5d-ba276e361241.png" w="554"&gt;&lt;/p&gt;
+&lt;p&gt;英伟达2025 年 6 月从微软手中夺得全球市值第一的桂冠，此后一直稳居榜首，并曾在去年10月一度突破5万亿美元市值大关。&lt;/p&gt;
+&lt;p&gt;2026年年初迄今，英伟达股价仅上涨了4%，而苹果则大涨了24%。苹果之所以能跑赢大盘，是因为投资者赞赏其发展策略：不在人工智能领域盲目砸钱，更倾向于“租算力”而非自建算力基础设施。&lt;/p&gt;
+&lt;p&gt;相比之下，美股“科技七巨头”中另外几家企业的日子也不好过，特斯拉、微软和Meta今年迄今为止股价均录得下跌。&lt;/p&gt;
+&lt;p&gt;讽刺的是，苹果过去被诟病的短板，如今反而变成市场追捧的优势。该公司近年来由于缺乏以AI为中心的增长战略而饱受投资者和分析师批评。如今，随着市场风向转变，投资者转向不那么拥挤的、面向消费者的股票，苹果正从中受益。&lt;/p&gt;
+&lt;p&gt;苹果将在美股周四盘后公布其第三财季业绩报告。届时，这家iPhone制造商预计将首次披露AI驱动的全球内存芯片短缺带来的财务影响——这场短缺迫使苹果在6月份上调了Mac和iPad的售价。&lt;/p&gt;
+&lt;p&gt;此外，尽管英伟达销售额已经连续第三年迎来AI驱动的爆发式增长，但许多投资者的目光已经开始从AI芯片（GPU）转移到内存芯片及其它受益于AI热潮的数据中心基础设施相关企业上，比如美光科技、SK海力士和闪迪。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260728/ad7b784c6f1f4641bbdfa7c37fd6f06a.jpg" target="_blank"&gt;&lt;img alt="全球股王易主！英伟达市值被苹果反超 风向彻底变了" h="399" src="//img1.mydrivers.com/img/20260728/s_ad7b784c6f1f4641bbdfa7c37fd6f06a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 08:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5CLUJ1VTRYNEZveGktd2VJTDAxOUZjMXdQalNTUGdqeFpaRFVSNWJ2SmVmeEFhUFdISU94UlpZd0NKang1RC12UjM0emhmUGwzRUZjZmhDVW4</guid></item><item><title>177亿元！中国移动PC服务器集采落定：ARM占比超65%创纪录、X86份额跌破35% - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139614.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;177亿元！中国移动PC服务器集采落定：ARM占比超65%创纪录、X86份额跌破35%&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-28 16:04:45  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1139614-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，中国移动2026年至2027年PC服务器产品集中采购项目，全部11个标包的中标候选人已于近日全部公示完毕。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;该项目总投标金额约177亿元，采购PC服务器约6.29万台。本次集采最大亮点在于ARM架构服务器采购量达40896台，占比65.01%，创国内运营商单批次集采ARM架构占比最高纪录。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/e66fef3a-1161-406f-a10b-1b261291cb15.png" target="_blank"&gt;&lt;img alt="177亿元！中国移动PC服务器集采落定：ARM占比超65%创纪录、X86份额跌破35%" h="471" src="//img1.mydrivers.com/img/20260728/Se66fef3a-1161-406f-a10b-1b261291cb15.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;X86架构占比33.09%仍保有重要市场份额，其他架构综合类服务器1000台作为补充。ARM架构已成为运营商算力采购绝对主力，国产算力路线正从试点走向规模化落地。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/a1010373-a5ed-43cc-af14-a560e1e23925.png" target="_blank"&gt;&lt;img alt="177亿元！中国移动PC服务器集采落定：ARM占比超65%创纪录、X86份额跌破35%" h="757" src="//img1.mydrivers.com/img/20260728/Sa1010373-a5ed-43cc-af14-a560e1e23925.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四川华鲲振宇成为本次集采最大赢家，中标金额约22.76亿元。&lt;/strong&gt;中兴通讯约20.16亿元、浪潮计算机约19.20亿元紧随其后。武汉长江计算约19.03亿元、新华三约18.03亿元、河南昆仑技术约17.71亿元分列其后。&lt;/p&gt;
+&lt;p&gt;软通计算机约15.52亿元、宝德计算机约12.45亿元、神州鲲泰约11.87亿元、浙江华启智慧约9.28亿元、联想（北京）约8.84亿元依次中标。&lt;/p&gt;
+&lt;p&gt;中诚华隆约1.08亿元、中国长城约0.69亿元、紫光华山约0.40亿元、中科迪高约0.39亿元也入围部分标包。&lt;/p&gt;
+&lt;p&gt;本次集采全面服务于中国移动算力网络、移动云、智算中心及新型信息基础设施建设。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260728/02a1e18ac8464b0fbdf3cd63594ab90b.png" target="_blank"&gt;&lt;img alt="177亿元！中国移动PC服务器集采落定：ARM占比超65%创纪录、X86份额跌破35%" h="400" src="//img1.mydrivers.com/img/20260728/s_02a1e18ac8464b0fbdf3cd63594ab90b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 08:04:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5URWdLbGxSR1NPc3FQMTV2MGp2bUlPaGN5V25JTVZ3dlYwWkJMMkwtRjFRbDZ5dzlnaUVJSGw5LXhKMjR4UFRNZzNmUnhBZE9YX01BWnk2b0c</guid></item><item><title>小米全球首发！LPDDR6下半年正式落地 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139612.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，据报道，&lt;span&gt;&lt;strong&gt;SK海力士今日正式敲定LPDDR6内存的量产计划，预计将于2026年下半年开始出货。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;报道指出，&lt;strong&gt;SK海力士在2025年3月便完成了LPDDR6的整体研发，并在今年3月拿下了全球首个产品开发认证，目前该厂商正处于产线调试与工艺优化的最后阶段。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;小米有望成为全球首批在旗舰机型上搭载该全新内存的厂商，双方的高端供货合作已基本落地。虽然官方尚未公开确认首发合作细节，&lt;strong&gt;但考虑到双方自LPDDR3时代起长达13年的深度绑定关系，小米下一代数字旗舰首发该技术已是大概率事件。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/720c3d66-6ff1-46d1-9509-cf2283f99006.png" target="_blank"&gt;&lt;img alt="小米全球首发！LPDDR6下半年正式落地" h="323" src="//img1.mydrivers.com/img/20260728/S720c3d66-6ff1-46d1-9509-cf2283f99006.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在技术规格上，&lt;strong&gt;SK海力士LPDDR6采用了10纳米级第六代（1c）先进DRAM工艺，相比目前的LPDDR5X实现了速度与能效的代际跨越。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这种高带宽、低功耗的特性，主要为了适配旗舰手机日益沉重的端侧AI运算、大型手游以及多任务高频切换需求。&lt;/p&gt;
+&lt;p&gt;值得关注的是，LPDDR的应用边界正从消费端向服务器场景延伸。基于LPDDR架构的SOCAMM低功耗内存模块，已成为边缘AI服务器、智能体算力平台的补充存储方案；英伟达Vera CPU便采用了SOCAMM形态的LPDDR5X内存方案，主打能效优先的AI控制类负载，后续迭代的SOCAMM 2规格也将支持LPDDR6。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/f9e1e671-b8cf-4cae-a4c1-c63cc786bf45.png" target="_blank"&gt;&lt;img alt="小米全球首发！LPDDR6下半年正式落地" h="290" src="//img1.mydrivers.com/img/20260728/Sf9e1e671-b8cf-4cae-a4c1-c63cc786bf45.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;英伟达CEO黄仁勋此前在台北电脑展参观SK海力士展台时，曾在HBM4E晶圆上留言“请多生产一些”，同时也在SOCAMM模组上留下“Love SOCAMM”的评价，侧面体现出对两类AI存储方案的重视。&lt;/p&gt;
+&lt;p&gt;从行业大背景来看，移动DRAM市场目前仍由三星和SK海力士双寡头主导，但国产厂商长鑫存储的市场份额已逼近美光，开始在中低端机型中实现大规模国产化替代。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 08:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBKeVdsNHhHV2kyaDRRYUQ0aG56NHFaNzdFSXhaNzlxRzNmMmZhdzZhY05OWWRrczBFT2lQNmVBb04tS2stSzZzbjlEWlQwR2drNjJpaTNSR1M</guid></item><item><title>AI幻觉最可怕的人类副作用出现了 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139604.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;“难道我竟是个能改变世界的数学天才？”&lt;/p&gt;
 &lt;p&gt;2025 年 5 月，阿兰·布鲁克斯（Allan Brooks）脑子里肯定会蹦出这样的想法，然而等下个月再回想起这事儿，他只怕会哭笑不得。&lt;/p&gt;
@@ -104,7 +329,28 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xX1NBYm8wU2Z4SGQ2QXFmb2ZKY0lGeWpfTGp1NVNFSGFVV2c1ZDFyUEJ3TWd3dXZtdmhqSElEdHRadmlwWTE0cDBKeC1HNEJlbUdRaU94WHo</guid></item><item><title>日韩股市崩了！日经跌近4%、KOSPI暴跌11%，AI巨头财报周前市场先慌了-市场参考 - 金十数据</title><link>https://xnews.jin10.com/details/225878</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;周二，受英伟达(NVDA.O)重磅AI供应协议相关担忧以及市场竞争加剧的影响，投资者情绪受挫，日韩股市低开低走。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xX1NBYm8wU2Z4SGQ2QXFmb2ZKY0lGeWpfTGp1NVNFSGFVV2c1ZDFyUEJ3TWd3dXZtdmhqSElEdHRadmlwWTE0cDBKeC1HNEJlbUdRaU94WHo</guid></item><item><title>小米澎程还能再赢一次么？雷军信心十足：引以为豪的心血之作 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139603.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，雷军通过社交平台发文预热小米澎程技术发布会，直面网友关心的核心问题，坦言自己对这款全新SUV系列抱有充足信心。&lt;/p&gt;
+&lt;p&gt;时间回到&lt;strong&gt;2023年底，小米汽车第一场技术发布会举办，当时外界满是质疑，大家都不看好手机厂商跨界造车&lt;/strong&gt;，觉得入局时间太晚、纯电轿车路线存在风险。&lt;/p&gt;
+&lt;p&gt;靠着坚持底层核心技术、大额投入打磨产品的思路，团队顺利推出SU7、YU7两款纯电轿车，积累70多万车主，市场口碑与销量双双站稳脚跟。&lt;/p&gt;
+&lt;p&gt;时隔2年半，小米汽车第二个完整产品线澎程正式亮相，品牌第二次技术发布会7月30日开启。&lt;/p&gt;
+&lt;p&gt;不少身边朋友都向雷军提问，&lt;strong&gt;小米澎程，能取得像SU7、YU7那样的成功吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;雷军表示，&lt;span&gt;&lt;strong&gt;我很有信心，因为澎程和它们一样，都经历了3年多潜心的打磨，都是小米汽车团队引以为豪的心血之作。 &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;雷军补充道：当然，接下来，肯定还有很多很多的挑战。但经历五年风雨后，我们的团队更沉稳更从容了，更何况，我们还拥有了70多万车主的支持与认可。&lt;/p&gt;
+&lt;p&gt;无论前方是什么，我们只管自在向前，“也无风雨也无晴”。&lt;/p&gt;
+&lt;p&gt;雷军还表示，&lt;strong&gt;相比输赢，更在乎的是，我们有没有拿出了足够亮眼的作品，我们有没有做出让小米所有工程师骄傲的作品。&lt;/strong&gt;小米汽车团队不愿做平庸产品，每一款车型都追求做出行业少见的创新体验。&lt;/p&gt;
+&lt;p&gt;根据目前曝光的情况，澎程定位大五座、大七座家用SUV，乘员乘坐空间、后备箱收纳都十分宽裕，续航、驾驶质感、整车安全全部拉满基础水准，在此之上加入可变空间设计，带来和传统SUV完全不同的车内使用体验。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="小米澎程还能再赢一次么？雷军信心十足：引以为豪的心血之作" h="399" src="//img1.mydrivers.com/img/20260728/daf96481-927c-4f66-ab13-9c02c3d193b1.jpg" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA5VmRING5fMkl5SW5vbC1HbXNCZjBoRm83VkFsN1M0SmFmVEF3aThYUzJWN2UxRWgwUHlpQVZzaGlNQkZUSzJ2Sy05YXlrbV81VmJ4ZGFDaUk</guid></item><item><title>日韩股市崩了！日经跌近4%、KOSPI暴跌11%，AI巨头财报周前市场先慌了-市场参考 - 金十数据</title><link>https://xnews.jin10.com/details/225878</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;周二，受英伟达(NVDA.O)重磅AI供应协议相关担忧以及市场竞争加剧的影响，投资者情绪受挫，日韩股市低开低走。&lt;/p&gt;
 &lt;p&gt;日经225指数收盘下跌2566.27点，跌幅3.95%，报62364.92点，&lt;strong&gt;创5月21日以来最低收盘水平&lt;/strong&gt;。韩国KOSPI指数收盘下跌732.12点，跌幅10.84%，报6023.63点，&lt;strong&gt;创3月4日以来最大跌幅，盘中一度跌超11%至6000点下方，本月累跌近30%。&lt;/strong&gt;SK海力士跌超14%；三星电子跌超13%，&lt;strong&gt;创2008年10月24日以来最大单日跌幅&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;随着全球半导体股票的抛售加剧，投资者对人工智能繁荣的可持续性的情绪继续恶化。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在一波总值超过7500亿美元的人工智能相关交易浪潮中，英伟达的债务违约保险成本飙升，引发科技股走低。&lt;/strong&gt;野村资产管理公司首席策略师Hideyuki Ishiguro表示，在有关英伟达重大投资交易的报道后，其信用风险上升，这被投资者视为利空信号。&lt;/p&gt;
@@ -124,7 +370,7 @@
 &lt;p data-start="1351" data-end="1462"&gt;NH投资证券公司韩国现金股票业务主管Shawn Oh在研报中表示，考虑到当前估值吸引力以及韩国散户投资者持续去杠杆化，SK海力士仍是“极具吸引力的买入标的”。不过，他同时指出，在美国科技公司财报季到来前，市场正在降低股票仓位。&lt;/p&gt;
 &lt;p data-start="1586" data-end="1636"&gt;市场预计，SK海力士6月季度销售额将同比增长两倍以上，达到约570亿美元；营业利润预计同比增长六倍。但老虎证券（Tiger Brokers）市场策略师James Ooi表示，SK海力士财报的意义可能已经超越公司自身。&lt;/p&gt;
 &lt;p data-start="1586" data-end="1636"&gt;“SK海力士的业绩也可能成为全球AI硬件板块的情绪风向标，”他说，市场预期已经在很大程度上被提前反映，因此“即便是小幅不及预期，也可能引发剧烈反应”。&lt;/p&gt;
-&lt;p data-start="1586" data-end="1636"&gt;Vantage Global Prime高级市场分析师Hebe Chen表示：&lt;strong&gt;“芯片制造商最近的抛售表明，人们对支出、回报和估值的疑虑仍在加深，而不是消退。随着几个主要催化剂的临近，逢低买入的犹豫表明投资者在重建风险之前正在等待更强有力的证据。” &lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;  &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>金十数据</author><pubDate>Tue, 28 Jul 2026 07:44:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiT0FVX3lxTFBXRU03NW13cEZFQUIwQ2tyN0hIUVc0WVJicHhqdVJSajZ3RURUVS1xWjJ4Sk5XVmxQTjFfYkZYME1pbnJMb0ZxeXBDOFpHU2s</guid></item><item><title>从Zen 2直跳Zen 6：PS6性能达PS5两倍！120帧无压力 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139599.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+&lt;p data-start="1586" data-end="1636"&gt;Vantage Global Prime高级市场分析师Hebe Chen表示：&lt;strong&gt;“芯片制造商最近的抛售表明，人们对支出、回报和估值的疑虑仍在加深，而不是消退。随着几个主要催化剂的临近，逢低买入的犹豫表明投资者在重建风险之前正在等待更强有力的证据。” &lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;  &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>金十数据</author><pubDate>Tue, 28 Jul 2026 07:44:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiT0FVX3lxTFBXRU03NW13cEZFQUIwQ2tyN0hIUVc0WVJicHhqdVJSajZ3RURUVS1xWjJ4Sk5XVmxQTjFfYkZYME1pbnJMb0ZxeXBDOFpHU2s</guid></item><item><title>车企扎堆“造人”！比亚迪人形机器人8月发布、小鹏IRON量产在即，理想双路并进 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778114</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 07:39:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9rNjhYbUdfTGh2YUs1OUZ3ZlM0aGhTRlFpeERVdVlRcnJvTnJHUVFsZW9kUTc1eWsyRkRxTm5OWHFQZkhCSGhwdjhiVUNCWTN1VVVB</guid></item><item><title>从Zen 2直跳Zen 6：PS6性能达PS5两倍！120帧无压力 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139599.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;从Zen 2直跳Zen 6：PS6性能达PS5两倍！120帧无压力&lt;/p&gt;
           
@@ -187,7 +433,26 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBNdmI1OVlUeVRqNzBNN25RbHl5N2FMaW95SnBrUnVyWFBmSEtRRVFnZXpPWm1jN3hfN1JTdkNlLVZPOHhHUzAwTnNYQlYzckxGRzFUc2RvQ24</guid></item><item><title>小米有品众筹0耗材全效空气净化器：洗一下满血复活 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139593.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBNdmI1OVlUeVRqNzBNN25RbHl5N2FMaW95SnBrUnVyWFBmSEtRRVFnZXpPWm1jN3hfN1JTdkNlLVZPOHhHUzAwTnNYQlYzckxGRzFUc2RvQ24</guid></item><item><title>谷歌自研芯片大动作！不再依赖台积电封装 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139594.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，&lt;span&gt;&lt;strong&gt;据摩根士丹利报告，谷歌正在设计一款名为Frozen V2的新一代TPU芯片，目标是将SRAM直接集成到硅片上，从而摆脱对台积电CoWoS封装技术的依赖。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;SRAM是目前AI芯片中速度最快的缓存，负责存储AI模型运行时频繁调用的数据，传统做法是把SRAM做成独立芯片，再通过CoWoS封装技术与计算单元连接在一起，但CoWoS封装工艺复杂、成本高，而且封装环节会增加数据传输的延迟。&lt;/p&gt;
+&lt;p&gt;Frozen V2的思路是把SRAM直接做在计算单元的硅片上，省去封装环节。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/bb8bdad9-ec8b-4d9b-9f3f-97dc02a407fe.jpg" target="_blank"&gt;&lt;img alt="谷歌自研芯片大动作！不再依赖台积电封装" h="395" src="//img1.mydrivers.com/img/20260728/Sbb8bdad9-ec8b-4d9b-9f3f-97dc02a407fe.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这样一来，数据不需要在芯片之间传输，速度更快，延迟更低，谷歌希望通过这种方式为Gemini模型量身定制芯片，专门优化AI推理性能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不过这种方式也有代价，每次AI模型有重大升级时，都需要重新设计芯片，芯片制造商也要为每一轮生产调整设备。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI芯片制造商Taalas今年早些时候也采用了类似方法，将神经网络权重直接集成到硅片上。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;摩根士丹利预计，Frozen V2可在2027年进入早期生产，2028年量产，合作伙伴方面，Marvell可能是候选之一，但目前尚未确认。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260728/eed148aeb5ce4274b2806772b5d25d89.png" target="_blank"&gt;&lt;img alt="谷歌自研芯片大动作！不再依赖台积电封装" h="400" src="//img1.mydrivers.com/img/20260728/s_eed148aeb5ce4274b2806772b5d25d89.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知微&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE95dWFQYkhidzY5TjNBUTU5WXBLSVFvdWVZY1lFcjVhaGx6OHlBa2VtS042a1BvTkRvQm50TzJGeUJOOVFreEJGMzY1SUszNTY0UUNMRlE0LS0</guid></item><item><title>小米有品众筹0耗材全效空气净化器：洗一下满血复活 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139593.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月28日消息，&lt;span&gt;&lt;strong&gt;贝昂X7P (M) Pro无耗材空气净化器，现已登陆小米有品开启众筹，众筹定价3899元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;很多家庭在用传统空气净化器时都有困扰，滤芯使用几个月就要整套更换，长期下来耗材花费很高，而且滤芯饱和后容易堆积污染物，产生二次异味。&lt;/p&gt;
@@ -258,7 +523,42 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5iLVpnaldFTEpjTjNFYTJqeHVVRWFiUHhQOW5vLXNzckhBblJidVNmZVloWElra0VLRDNnRU85WGl5LUxJT1J5OWxpdnVGaGFhRDBjOEZuZG4</guid></item><item><title>仿冒钱包登上App Store骗千万资金 受害者抱团起诉苹果 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139559.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 07:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5iLVpnaldFTEpjTjNFYTJqeHVVRWFiUHhQOW5vLXNzckhBblJidVNmZVloWElra0VLRDNnRU85WGl5LUxJT1J5OWxpdnVGaGFhRDBjOEZuZG4</guid></item><item><title>脑机接口火热行情背后：头部公司估值飙升 侵入式产品商业化预期升温 - 财联社</title><link>https://www.cls.cn/detail/2438878</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;《科创板日报》7月28日讯&lt;/strong&gt; 本周以来，A股脑机接口概念走出独立行情：人脑工程指数（BK0706）近两日累计上涨6.86%；创新医疗、南京熊猫、海南海药走出2连板走势，带动板块中其余个股纷纷上涨。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260728/a4Ej1N88Kd_867x297.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，海外脑机接口在资本市场同样热度非凡：马斯克旗下Neuralink在近期私募股权二级市场交易中估值突破420亿美元，较该公司去年6月上一轮融资时的估值增长了近四倍。&lt;/p&gt;
+&lt;p&gt;热度持续升温背后，脑机接口近期产业化消息不断：&lt;/p&gt;
+&lt;p&gt;就在昨日（7月27日），在国务院新闻办公室举行的“开局起步‘十五五’”系列主题新闻发布会上，中国残联党组书记周长奎表示，“十五五”期间将强化场景牵引、加速技术验证推广，将以融合非侵入式脑机接口的智能康复设备帮助残疾人康复训练等应用场景培育作为抓手，为企业等创新主体提供技术迭代、产品验证、模式打磨的真实环境。&lt;/p&gt;
+&lt;p&gt;产业端，脑虎科技旗下全侵入式脑机接口进入“绿色通道”：7月21日，该公司自主研发的“植入式脑机接口手部运动功能代偿系统”通过公示，正式进入国家药品监督管理局医疗器械技术审评中心（CMDE）的创新医疗器械特别审查程序。&lt;/p&gt;
+&lt;p&gt;在此之前，&lt;strong&gt;我国部分半侵入式脑机接口产品已在今年进入到商业化阶段&lt;/strong&gt;。例如，博睿康NEO（植入式脑机接口手部运动功能代偿系统）于今年3月获国家药监局三类医疗器械注册证，并在7月13日于复旦大学附属华山医院完成全球首例商业化植入手术。&lt;/p&gt;
+&lt;p&gt;产品之外，国内技术层面正持续迎来突破：7月22日，科研团队发布一款新型脑电信号采集装置，在全球范围内首次实现跨地域上千人同步脑电信号采集，使得神经大模型训练与脑机接口通用技术研发迈出关键一步。&lt;/p&gt;
+&lt;p&gt;海外方面，马斯克称，Neuralink下一步将帮助盲人恢复视力。美国初创公司Science Corp.则于近日获批在欧盟地区销售一款可帮助“地图样萎缩”患者恢复部分视力的视网膜芯片。这是美国脑机接口（BCI）公司首次将相关设备大规模推向患者市场。&lt;/p&gt;
+&lt;p&gt;浙商证券预测，&lt;strong&gt;2026年是半侵入式产品的商业化元年，可能也是侵入式产品量产化元年。&lt;/strong&gt;目前脑机接口行业处于技术进步、商业化和产业化落地双向竞速的阶段。因此行业呈现出“头部企业一体化探索技术天花板、中小企业分工协作加速商业化”的态势。&lt;/p&gt;
+&lt;p&gt;该机构强调，脑机接口行业不同的技术路线本身没有优劣之分。核心还是产品性能及临床表现，商业化的产品定价是否有可及性。现阶段，半侵入式脑机接口产品将相继获得监管的批准，迎来市场化的检验。未来技术的延展性和天花板要看侵入式路线中的信号采集和解码技术进步，进而反哺半侵入式和非侵入式产品。&lt;/p&gt;
+&lt;p&gt;方正证券表示，今年上半年国内脑机接口融资总额就已突破44亿元，相较于去年全年总额实现翻倍以上增长，融资环境迎来空前热度，且今年内，博睿康IPO申请已获受理，强脑科技也有望年内上市，头部企业进场有望带来脑机接口赛道新一轮投资机遇。短中期来看，行业仍将迎来持续催化，Neuralink的关键临床节点也将持续掀起行业关注热度。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 28 Jul 2026 07:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE90TldPX2hKZUhScXBGY3c2OEI2TDJFSklNei1WTDJoczY0SFVkNVlZX0hPNkhHdGdUX2lLM29WamRNV2ViWXVLbA</guid></item><item><title>Intel最神秘的14代CPU！从未发布的纯大核i9-14901KE首测 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139576.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，B站UP主WestmereX丶冷月近日发布&lt;a class="f14_link" href="https://www.bilibili.com/video/BV1Np3j6QEQ5/?buvid=XXA96EEAF106967E09140A598D66CC338CAC1&amp;amp;vd_source=51fa8dfaa063bf6b6c9d16b05f5c7e94" target="_blank"&gt;视频&lt;/a&gt;，&lt;span&gt;&lt;strong&gt;对从未正式上市的Intel i9-14901KE的工程样品完成了极限超频测试。这颗芯片没有零售上架、没有评测、在Intel产品库中也没有页面。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;i9-14901KE属于Intel在2024年7月随14代Raptor Lake Refresh一同公布的一个特殊产品线：九款带E或T后缀的处理器，全部砍掉能效核，仅保留性能核，面向嵌入式和工业场景。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这些芯片全部锁倍频，唯独14901KE是例外，8个P核16线程，125W TDP，倍频解锁，但它也是整个家族中唯一一颗没能通过内部验证阶段的芯片，&lt;/strong&gt;出现在早期的新闻稿中之后就悄然消失，再没有下文。&lt;/p&gt;
+&lt;p&gt;虽然定位面向工业和嵌入式客户，但14901KE的几颗锁频兄弟型号在2024年底确实出现在闲鱼等二手平台上。14901KE则不同，没有任何确认的零售或交易记录。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/17f6a293-001b-4bb1-a92e-89f9340b9493.jpg" target="_blank"&gt;&lt;img alt="Intel最神秘的14代CPU！从未发布的纯大核i9-14901KE首测" h="393" src="//img1.mydrivers.com/img/20260728/S17f6a293-001b-4bb1-a92e-89f9340b9493.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;实测方面，这颗CPU默认5.5GHz，成绩几乎与手动关闭E核的i9-14900K完全一致，Cinebench R23测试中八核全核稳定在5.5GHz，电压1.225V，功耗190W，数据看不出任何特挑迹象。&lt;/p&gt;
+&lt;p&gt;手动超频到标称的5.8GHz全核频率需要约1.35V电压，表现同样与普通14900K一致，没有因为是嵌入式型号而经过特殊筛选。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/7ebb3e86-7e4a-43b5-97de-386785349542.jpg" target="_blank"&gt;&lt;img alt="Intel最神秘的14代CPU！从未发布的纯大核i9-14901KE首测" h="341" src="//img1.mydrivers.com/img/20260728/S7ebb3e86-7e4a-43b5-97de-386785349542.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;超频后CPU-Z单核提升约1%，多核和Cinebench提升不到6%，额外电压和Cinebench测试中269W的功耗换来的收益相当有限。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最亮眼的数据来自极限散热，用级联制冷将芯片压到零下100度，全核稳定上限达到7.4GHz，SuperPI 1M在6.9GHz完成，搭配DDR5-8120 CL30内存。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/87f2c17a-d2bc-48a3-915b-7242446f8e57.jpg" target="_blank"&gt;&lt;img alt="Intel最神秘的14代CPU！从未发布的纯大核i9-14901KE首测" h="316" src="//img1.mydrivers.com/img/20260728/S87f2c17a-d2bc-48a3-915b-7242446f8e57.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解锁倍频仍然是这颗芯片最令人费解的一项，嵌入式和工业部署很少需要超频余量，砍掉E核更像是为工业控制软件的调度器兼容性做的妥协，而非性能取向。&lt;/p&gt;
+&lt;p&gt;实测数据也印证了这一点，默认频率下没有体质优势，超频空间平庸，极限散热天花板与普通Raptor Lake核心并无二致。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/174740be-f991-4290-8afc-9c65882c4c05.jpg" target="_blank"&gt;&lt;img alt="Intel最神秘的14代CPU！从未发布的纯大核i9-14901KE首测" h="349" src="//img1.mydrivers.com/img/20260728/S174740be-f991-4290-8afc-9c65882c4c05.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 06:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5ia0FQOW02NE1JcHpTdUl6RWFxNm9Vb0h0aXVrc19wVkdRaGZaS0lsTko2MVZuYkRWejI4UUVxa2F5TmF4aXZPanhGMWNhSFd3dXlTUmRodFQ</guid></item><item><title>仿冒钱包登上App Store骗千万资金 受害者抱团起诉苹果 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139559.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月28日消息，据TechCrunch报道，&lt;strong&gt;近日三名美国用户联合向苹果公司提起集体诉讼，指控其App Store中上架的仿冒加密货币钱包导致三人累计损失约180万美元，案件直指苹果引以为傲的应用审核安全体系。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;据诉状披露，三名受害者在苹果官方应用商店下载了一款名为Sparrow Wallet的虚拟货币钱包，事后才得知正版比特币钱包从未登陆过iOS平台。&lt;/p&gt;
@@ -276,7 +576,16 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 06:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5JTXJDVUJHUFZqMGs0N0ZmUzJjMXBPck5Lckl6bmhiM281MG1VUlpBaDM0UzlMQ2kwY3RtYVVZZDRoZ2pHb2l5MlMtRmFvNmZnRU5qWFRQakk</guid></item><item><title>Kimi K3技术细节公开，用户需获商业授权 - 纽约时报中文网</title><link>https://cn.nytimes.com/technology/20260728/moonshot-kimi-k3-china-ai/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;在美国，企业高管、投资者和政府官员之间存在明显分歧——中国模型日益广泛的使用究竟只是威胁到美国人工智能企业的利润，还是已经对美国的国家安全构成了威胁？&lt;/p&gt;&lt;p class="article-paragraph"&gt;而在中国，争论的焦点则在于，如何让一项技术保持开放、易于获取并广受欢迎，又能找到从中盈利的方法。中国企业还必须在应对这些现实因素的同时适应政府不断调整的政策，中国政府已将人工智能发展列为最重要的经济战略之一。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;月之暗面周一发布了程序代码及其他相关信息，公开展示其模型的构建过程，这符合&lt;/p&gt;&lt;a href="https://cn.nytimes.com/china/20260720/xi-jinping-china-ai/"&gt;中国推崇开源的发展理念&lt;/a&gt;&lt;p&gt;。但该公司也开始利用模型的高人气实现商业化，宣布大型用户必须与公司签订商业许可协议。&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;该模型体量庞大，无法在普通计算机上下载和运行。尽管Kimi K3在技术层面属于开放模型，但大多数用户要么需要向月之暗面订阅付费服务，要么需要通过已与月之暗面签署授权协议的第三方渠道来访问该模型。&lt;/p&gt;&lt;p class="article-paragraph"&gt;为了支撑开发人工智能系统所需的巨大成本，中国企业一直在尝试各种商业模式。投资人工智能技术的对冲基金Interconnected Capital创始人凯文·徐（音）表示，月之暗面值得关注的一点在于，它是第一家如此明确提出商业许可要求的中国人工智能企业。&lt;/p&gt;&lt;p class="article-paragraph"&gt;以往，中国初创企业通常在发布新模型的同时分享技术细节。但月之暗面这次等待了将近两周。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Tue, 28 Jul 2026 04:44:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE1GNGxtNGdoeVozNDMzQ2E5SnZtY0hXdHAwMi1jbVFTRFVqdEl3MHZ5UW5mZkJSd0Z6dmotamlqaHNGb2Q3SWMyUUhoLWl1S1Y5Z2pxRFZpVklEUnV0Sm1jTGZtcFBkWFQ0R19IQTlXNzRzczlESUNlQQ</guid></item><item><title>OpenAI前研究与安全副总裁 北大才女翁荔因身体透支官宣离职 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139555.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 06:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5JTXJDVUJHUFZqMGs0N0ZmUzJjMXBPck5Lckl6bmhiM281MG1VUlpBaDM0UzlMQ2kwY3RtYVVZZDRoZ2pHb2l5MlMtRmFvNmZnRU5qWFRQakk</guid></item><item><title>谷歌 AI 概览出现率一年升至43%，AI 搜索成为主流入口- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA</title><link>https://www.oschina.net/news/481173</link><description>&lt;body id="readabilityBody"&gt;
+  &lt;p id="app"&gt;&lt;/p&gt;
+  
+  
+  
+  
+  
+&lt;/body&gt;
+
+</description><author>OSCHINA</author><pubDate>Tue, 28 Jul 2026 04:53:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiS0FVX3lxTE5OY2YtSnNlVzdLT0xseGUzMEZzZ3QybDM5SktjNGdKaVhKWnhMZ09NTjRSYXpIMXdtQlowVDhyb1NEWkdHYjBSbWE4RQ</guid></item><item><title>Kimi K3技术细节公开，用户需获商业授权 - 纽约时报中文网</title><link>https://cn.nytimes.com/technology/20260728/moonshot-kimi-k3-china-ai/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;在美国，企业高管、投资者和政府官员之间存在明显分歧——中国模型日益广泛的使用究竟只是威胁到美国人工智能企业的利润，还是已经对美国的国家安全构成了威胁？&lt;/p&gt;&lt;p class="article-paragraph"&gt;而在中国，争论的焦点则在于，如何让一项技术保持开放、易于获取并广受欢迎，又能找到从中盈利的方法。中国企业还必须在应对这些现实因素的同时适应政府不断调整的政策，中国政府已将人工智能发展列为最重要的经济战略之一。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;p&gt;月之暗面周一发布了程序代码及其他相关信息，公开展示其模型的构建过程，这符合&lt;/p&gt;&lt;a href="https://cn.nytimes.com/china/20260720/xi-jinping-china-ai/"&gt;中国推崇开源的发展理念&lt;/a&gt;&lt;p&gt;。但该公司也开始利用模型的高人气实现商业化，宣布大型用户必须与公司签订商业许可协议。&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;该模型体量庞大，无法在普通计算机上下载和运行。尽管Kimi K3在技术层面属于开放模型，但大多数用户要么需要向月之暗面订阅付费服务，要么需要通过已与月之暗面签署授权协议的第三方渠道来访问该模型。&lt;/p&gt;&lt;p class="article-paragraph"&gt;为了支撑开发人工智能系统所需的巨大成本，中国企业一直在尝试各种商业模式。投资人工智能技术的对冲基金Interconnected Capital创始人凯文·徐（音）表示，月之暗面值得关注的一点在于，它是第一家如此明确提出商业许可要求的中国人工智能企业。&lt;/p&gt;&lt;p class="article-paragraph"&gt;以往，中国初创企业通常在发布新模型的同时分享技术细节。但月之暗面这次等待了将近两周。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Tue, 28 Jul 2026 04:44:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE1GNGxtNGdoeVozNDMzQ2E5SnZtY0hXdHAwMi1jbVFTRFVqdEl3MHZ5UW5mZkJSd0Z6dmotamlqaHNGb2Q3SWMyUUhoLWl1S1Y5Z2pxRFZpVklEUnV0Sm1jTGZtcFBkWFQ0R19IQTlXNzRzczlESUNlQQ</guid></item><item><title>OpenAI前研究与安全副总裁 北大才女翁荔因身体透支官宣离职 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139555.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;OpenAI前研究与安全副总裁 北大才女翁荔因身体透支官宣离职&lt;/p&gt;
           
@@ -481,7 +790,191 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 04:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBGSWp1Q1UycUJVTExPUzExbk1YdUtyQThtbURrb21vYWhEQW8wZnlHeGM4QWVmdjVDZzFaWVdmeXUwNHBwZU9xN1lwVUhNbUVONFpFYXZZbFk</guid></item><item><title>六年老平台翻新！技嘉发布新品AM4主板：配上了Wi-Fi 7 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139547.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 04:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBGSWp1Q1UycUJVTExPUzExbk1YdUtyQThtbURrb21vYWhEQW8wZnlHeGM4QWVmdjVDZzFaWVdmeXUwNHBwZU9xN1lwVUhNbUVONFpFYXZZbFk</guid></item><item><title>斯坦福新研究：AI尚未冲击就业，但应届生得注意了 - 36 Kr</title><link>https://m.36kr.com/p/3914694649533576</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;AI到底有没有开始抢饭碗？&lt;/p&gt;
+  &lt;p&gt;斯坦福大学教授Neale Mahoney认为，&lt;strong&gt;从整体就业数据来看，答案可能是暂时还没有；&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;但对刚走出校门的应届生来说，他们可能已经提前体验到了。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="120,116" src="https://img.36krcdn.com/hsossms/20260728/v2_ef9170b05bb845eea8640be633424b7c@5888275_oswg19668oswg120oswg116_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;2026年初，美国应届毕业生失业率达到&lt;strong&gt;5.6%&lt;/strong&gt;，比三年前&lt;strong&gt;上升1.6个百分点&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;在软件开发、客户服务等容易受到AI影响的职业中，&lt;strong&gt;年轻员工的就业人数明显下降，资深员工却相对稳定。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;换句话说，&lt;strong&gt;AI或许还没有掀起席卷整个就业市场的海啸&lt;/strong&gt;，&lt;strong&gt;经验的有无却可能已经先冲走了一部分职场入口。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,846" src="https://img.36krcdn.com/hsossms/20260728/v2_8b1aed3d11e244a08d6d578de3d1eae1@5888275_oswg96950oswg1080oswg846_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这到底是AI抢走了年轻人的工作，还是加息、科技行业裁员和远程办公过度招聘共同留下的后遗症？&lt;/p&gt;
+  &lt;p&gt;最近，斯坦福经济政策研究所发布了一份政策简报，试图从真实的就业、招聘、生产率和企业调查数据中找到答案。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,875" src="https://img.36krcdn.com/hsossms/20260728/v2_e83fd0576a364a99ab955f41b8c51be5@5888275_oswg185502oswg1080oswg875_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;文章牵头作者&lt;strong&gt;Neale Mahoney&lt;/strong&gt;是斯坦福大学经济学教授、斯坦福经济政策研究所主任，曾担任白宫国家经济委员会特别政策顾问。&lt;/p&gt;
+  &lt;p&gt;研究团队给出的结论并不简单：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;&lt;strong&gt;AI暂时没有造成大规模失业&lt;/strong&gt;，但它对不同人群、岗位和企业的影响并不平均。&lt;strong&gt;应届生可能已经率先承压&lt;/strong&gt;，而真正深远的变化，或许才刚刚开始。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;国际劳工组织ILO在2026年的研究简报中也发出警示：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;&lt;strong&gt;现有证据尚不足以证明生成式AI正在造成大规模岗位替代&lt;/strong&gt;，但部分研究已经观察到，&lt;strong&gt;AI高暴露职业中的初级岗位和年轻劳动者就业机会正在减少，并可能进一步扩大就业机会上的不平等。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,810" src="https://img.36krcdn.com/hsossms/20260728/v2_e56b3792d1254b8e86fdba6204a8c6f4@5888275_oswg218367oswg1080oswg810_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;整体就业还没有被AI打崩&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;先说结论，&lt;strong&gt;至少目前，还没有足够证据表明AI正在造成大规模失业。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;从2022年至今，受AI影响程度最高的职业，失业率上升了&lt;strong&gt;0.77个百分点&lt;/strong&gt;；受AI影响最低的职业，失业率反而上升了&lt;strong&gt;0.85个百分点&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;也就是说，&lt;strong&gt;AI并未优先淘汰那些最容易被替代的岗位。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;这组数据更像是在说明，&lt;strong&gt;整个就业市场都在降温，而不是AI单独对某些职业发动了一场精准打击。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,888" src="https://img.36krcdn.com/hsossms/20260728/v2_ed01369520544b8f8662d063f40a1593@5888275_oswg341887oswg1080oswg888_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;一些被视为AI高危区的岗位，情况也没有想象中糟糕。&lt;/p&gt;
+  &lt;p&gt;虽然&lt;strong&gt;编程相关岗位&lt;/strong&gt;的就业增速有所放缓，但整体仍保持增长。&lt;/p&gt;
+  &lt;p&gt;过去一年，&lt;strong&gt;软件开发岗位&lt;/strong&gt;的线上招聘数量，甚至比其他职业增长得更快。&lt;/p&gt;
+  &lt;p&gt;还有研究发现，企业采用AI后的两年内，员工规模平均增长了&lt;strong&gt;10%&lt;/strong&gt;，其中AI投入越高的企业，增长越明显。&lt;/p&gt;
+  &lt;p&gt;至于那些把裁员原因写成AI的公司，也不能照单全收。&lt;/p&gt;
+  &lt;p&gt;这些裁员都与AI有关，背后的逻辑却不尽相同。&lt;/p&gt;
+  &lt;p&gt;比如&lt;strong&gt;Meta&lt;/strong&gt;裁员近8000名员工是&lt;strong&gt;为了给千亿美元AI投资腾挪资金&lt;/strong&gt;；&lt;strong&gt;HP&lt;/strong&gt;计划裁员6000人&lt;strong&gt;旨在借AI精简运营&lt;/strong&gt;；而&lt;strong&gt;Amazon&lt;/strong&gt;两轮裁减约3万个岗位，更多是在&lt;strong&gt;消化疫情期间过度招聘的包袱&lt;/strong&gt;，同时扩大AI工具应用。&lt;/p&gt;
+  &lt;p&gt;可见，部分岗位的消失虽与AI自动化直接相关，&lt;strong&gt;但不能把每一次裁员都简单等同于“AI代替了人”。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;AI既可能是真正的裁员原因，也可能只是企业调整成本与组织结构时，最显眼的解释。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="220,224" src="https://img.36krcdn.com/hsossms/20260728/v2_408fa2f622824ed283a6a3a1fd08a54c@5888275_oswg48315oswg220oswg224_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;而相比于直接裁员，AI目前更常见的影响可能是另一种：企业把原本分散给多个人的工作合并起来，或者干脆减少相关岗位的招聘。&lt;/p&gt;
+  &lt;p&gt;so，&lt;strong&gt;我们的饭碗未必会被当场端走，只是新的饭碗可能变少了。&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;应届毕业生先中招&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;不过，虽然整体就业数据看起来还算平稳，但&lt;strong&gt;把镜头拉近到年轻人身上，情况就没那么乐观了。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="236,208" src="https://img.36krcdn.com/hsossms/20260728/v2_7300454a180843c2b4000ec9d6ce129d@5888275_oswg49102oswg236oswg208_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;2026年初，&lt;strong&gt;美国应届毕业生的失业率达到5.6%&lt;/strong&gt;，比三年前上升了&lt;strong&gt;1.6个百分点&lt;/strong&gt;，正面临多年来最艰难的就业市场之一。&lt;/p&gt;
+  &lt;p&gt;这背后，&lt;strong&gt;AI可能确实推了一把。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;很多初级岗位承担的，恰恰是资料搜集、基础分析、内容整理和文字撰写等工作。这些任务过去通常交给新人练手，如今已经可以被AI快速完成。&lt;/p&gt;
+  &lt;p&gt;一项广受关注的研究发现，自ChatGPT在2022年发布以来，在软件开发、客户服务等容易受到AI影响的职业中，&lt;strong&gt;年轻员工的就业人数明显下降；同一职业中的资深员工，就业情况却基本稳定，甚至仍在增长。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;研究人员因此把年轻员工称为&lt;strong&gt;矿井里的金丝雀&lt;/strong&gt;，即他们可能是最早感受到AI冲击的一群人。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,902" src="https://img.36krcdn.com/hsossms/20260728/v2_33bf7b95cfab4c98a68cd221ea058f45@5888275_oswg307192oswg1080oswg902_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,703" src="https://img.36krcdn.com/hsossms/20260728/v2_930cfd3161e248478ac91bda371d8fc6@5888275_oswg263746oswg1080oswg703_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;不过，这里还不能直接给AI“定罪”。&lt;/p&gt;
+  &lt;p&gt;美联储从2022年3月开始加息，比ChatGPT发布早了几个月；科技公司还在消化过度招聘；远程办公的普及，也让“能独立干活”变成了比“愿意学习”更硬的衡量标准，所以&lt;strong&gt;企业会更倾向于招聘能即插即用、能够独立完成工作、且基本不需要为培养支付成本的资深员工。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;在排除部分干扰因素后，初级岗位的明显下降直到2024年才真正出现。&lt;/p&gt;
+  &lt;p&gt;这个时间点值得注意。到了2024年，AI能力和企业采用率都已经明显提升，AI直接影响新人招聘的解释，也因此变得更有说服力。&lt;/p&gt;
+  &lt;p&gt;所以，&lt;strong&gt;更准确的说法不是“AI已经抢走了年轻人的工作”，而是“原本就不景气的应届生就业市场，可能又被AI压低了一层。”&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;AI确实提效，但不是用了就赚&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;如果AI暂时没有导致大规模失业，它有没有让人干活更快？&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;答案总体偏向肯定&lt;/strong&gt;，&lt;strong&gt;但效果远没有“人人效率起飞”那么齐整和夸张。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="230,228" src="https://img.36krcdn.com/hsossms/20260728/v2_fb00276b331b4db78415f4a6b57d62b5@5888275_oswg57709oswg230oswg228_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;在一家大型呼叫中心，生成式AI助手让客服人员的整体生产率提高了&lt;strong&gt;15%&lt;/strong&gt;。其中，新手和技能较弱的员工提升最明显，每小时解决的问题数量增加了&lt;strong&gt;30%&lt;/strong&gt;。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;但经验丰富的客服几乎没有获得效率提升，回答质量甚至略有下降。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;类似的情况也出现在软件开发中。&lt;/p&gt;
+  &lt;p&gt;一项实验显示，GitHub Copilot能让程序员完成任务的速度提高56%，&lt;strong&gt;受益最大的依然是经验较少的开发者&lt;/strong&gt;。但另一项研究测得的提升只有10%至30%，而且不同企业之间差异很大。&lt;/p&gt;
+  &lt;p&gt;写作、合同起草和医疗记录等任务也呈现出类似规律：&lt;strong&gt;AI通常能够节省时间，但效果取决于任务本身、使用者水平，以及人能否判断AI的答案到底靠不靠谱。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,885" src="https://img.36krcdn.com/hsossms/20260728/v2_046144a5e96e47958afaeda175d22d26@5888275_oswg314665oswg1080oswg885_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;这正是问题所在。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;AI的能力并不平整。&lt;/strong&gt;同一个模型，可能刚刚还在某项任务中表现惊艳，换一道题就突然掉链子。&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="252,252" src="https://img.36krcdn.com/hsossms/20260728/v2_483829faaca6468d86860b2e88ffe809@5888275_oswg72320oswg252oswg252_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;在一项针对肯尼亚创业者的实验中，能力较弱的创业者使用AI后，收入和利润反而下降。原因是他们更容易照搬AI给出的通用建议，却没能判断这些建议是否适合自己的生意。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;AI还可能让创意变得越来越像。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;研究发现，AI能提高部分写作者的故事质量，但借助AI创作出来的故事，彼此之间也更加相似。科学家使用AI后发表的论文变多了，研究主题却有所收窄，与其他研究人员的交流也随之减少。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;所以，AI提高的是完成任务的速度，却不一定同步提高判断、创造和决策的质量。&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;企业都在上AI，但进度差得很远&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;AI对经济的影响究竟会在三年内集中爆发，还是花20年缓慢渗透，很大程度上取决于企业采用速度。&lt;/p&gt;
+  &lt;p&gt;现有调查给出的答案是，&lt;strong&gt;企业采用AI确实在加速，但远没有全面铺开。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,977" src="https://img.36krcdn.com/hsossms/20260728/v2_b89985dcf96448898ef63a9d0d19250a@5888275_oswg389356oswg1080oswg977_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;美国人口普查局的全国性调查显示，目前约有&lt;strong&gt;20%&lt;/strong&gt;的企业正在使用AI。&lt;/p&gt;
+  &lt;p&gt;其他调查给出的数字更高。超过40%的受访员工表示自己会在工作中使用AI；Ramp平台上，超过一半的企业客户已经开始为AI工具或服务付费；还有调查显示，超过80%的员工在工作中接触过AI。&lt;/p&gt;
+  &lt;p&gt;这些数字看起来差距巨大，主要是因为统计口径不同。&lt;/p&gt;
+  &lt;p&gt;大型企业比小企业更容易采用AI，科技公司也比传统行业走得更快。如果一项调查主要覆盖大公司或科技企业，得到的采用率自然会高得多。&lt;/p&gt;
+  &lt;p&gt;从行业来看，&lt;strong&gt;AI目前主要集中在科技、金融等信息密集型领域&lt;/strong&gt;，应用较多的环节则是销售、营销、IT、战略、财务和会计。&lt;/p&gt;
+  &lt;p&gt;即使已经采用AI，多数企业也只是把它放进一两个业务环节，或者偶尔用于部分任务。so&lt;strong&gt;真正把AI全面嵌入工作流程的企业，仍然是少数。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;更关键的是，&lt;strong&gt;上了AI不等于已经看到结果。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;美国人口普查局数据显示，&lt;strong&gt;只有5%的企业认为AI影响了员工数量，而且报告增员和减员的企业数量基本相当。&lt;/strong&gt;亚特兰大联储的调查中，80%的企业高管表示，AI投资尚未改变员工规模，也没有明显提高生产率。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;目前更普遍的状态，还是试用、试点和小范围部署。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;这也意味着，&lt;strong&gt;AI确实已经进了公司大门，但距离接管整套工作流程，还有很长一段路。&lt;/strong&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;现在看到的，只是第一帧&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;1987年，经济学家Robert Solow曾提出一个著名疑问：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;&lt;strong&gt;“计算机时代无处不在，唯独在生产率统计数据中看不见。”&lt;/strong&gt;&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;后来人们才发现，不是计算机没有价值，而是&lt;strong&gt;释放一项新技术的生产力，本就需要时间。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;企业需要同时升级软件、培训员工、重组流程，才能真正释放它的生产力。&lt;/p&gt;
+  &lt;p&gt;PC在20世纪80年代快速普及，但直到90年代末，它带来的经济回报才明显反映在宏观数据中。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;AI很可能也会经历类似的过程。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;现有研究只能告诉我们三点：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;&lt;strong&gt;1、&lt;/strong&gt;AI尚未引发整体就业崩塌，却已经给部分年轻白领岗位带来压力；&lt;strong&gt;2、&lt;/strong&gt;它能够提高一些任务的效率，却也可能让另一些任务质量下降；&lt;strong&gt;3、&lt;/strong&gt;企业采用AI的速度不断加快，但真正实现全面落地的仍是少数。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;至于这些变化最终会不会汇成一场真正的就业结构重组，现在下结论还太早。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="230,232" src="https://img.36krcdn.com/hsossms/20260728/v2_2d32bd498e754ef2bca43f5c953c92f4@5888275_oswg74724oswg230oswg232_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;但AI与过去的技术革命并不完全相同。它扩散得更快，既能直接进入认知劳动，还能同时影响大量白领职业。即使就业总人数最终没有明显减少，工作的内容、进入职场的门槛，以及企业需要什么样的人，都可能被重新改写。&lt;/p&gt;
+  &lt;p&gt;因此，&lt;strong&gt;真正值得警惕的，未必是某一天突然降临的“AI就业末日”，而是一些更加安静、也更难被宏观数据捕捉的变化&lt;/strong&gt;：&lt;/p&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;初级岗位不再招聘那么多人，一份工作开始由更少的人完成，企业越来越看重经验和AI协作能力，而年轻人赖以积累经验的第一段台阶，也在悄悄变窄。&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;如今，硅谷仍在争论AI究竟是一种缓慢渗透的常规技术，还是一场即将重塑大量白领工作的特殊革命。&lt;/p&gt;
+  &lt;p&gt;但无论哪一种判断最终成为现实，&lt;strong&gt;技术革命对个体造成的冲击都不会因为宏观就业数据暂时平稳而消失。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;因为，&lt;strong&gt;AI对工作的影响，不能只看它让多少人失业，还要看它改变了谁能进入职场、谁能借助工具放大能力，以及谁会最先被挡在门外。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;这也是为什么，我们不仅要追踪AI还能完成多少工作，更要尽快弄清它正在拿走哪些机会，并在年轻人的第一块职业台阶彻底消失之前，重新思考教育、培训与就业政策该如何接住他们。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p class="editor-note"&gt;本文来自微信公众号&lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s/-YMAQaUhgJ2umfb4SugPXA"&gt;“量子位”&lt;/a&gt;，作者：关注前沿科技，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Tue, 28 Jul 2026 04:07:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTFBnWExyYWtEbzFHN0RUcUF5SjdKYkZSN2xVS3dIV2xrcGlTNFBYTF9PTEItVkFxZ1NlSWpwZTd2d0VmcDE2bEdVX25QN1pJZw</guid></item><item><title>智能手表，困于“用户耐心”？ - 36 Kr</title><link>https://m.36kr.com/p/3914697002243457</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="common-width content articleDetailContent kr-rich-text-wrapper"&gt;
+ 
+ 
+  &lt;p&gt;“今年一定要坚持运动！” &lt;/p&gt;
+  &lt;p&gt;凌晨一点，林悦在手机备忘录里写下2026年的第13条Flag。 &lt;/p&gt;
+  &lt;p&gt;她放下手机，从床头抽屉翻出已经落灰几个月的智能手表，熟练地充电、开机、戴上手腕。上次佩戴时记录的最后一次运动数据还停留在几个月前，一次只跑了2.3公里的晨跑，心率却飙到了165。 &lt;/p&gt;
+  &lt;p&gt;这不是她第一次重启这块手表了。买来第一周，她每天都会盯着健身环的完成度，恨不得把每一个闭环都填满；第二周，出差忘带充电器，断更了两天；第三周，工作忙起来，手表的存在感逐渐消退；一个月后，它安静地躺进了抽屉…… &lt;/p&gt;
+  &lt;p&gt;直到上周，体检报告上多了一行“建议加强运动”的提醒，她又一次想起了它。 &lt;/p&gt;
+  &lt;p&gt;2026年，智能手表也在经历一场双面人生。 &lt;/p&gt;
+  &lt;p&gt;一方面，市场一片向好，行业已从导入期迈入普及期。据IDC数据显示，2025年中国智能手表出货量5061万台，同比增长17.2%；洛图科技预测，2026年，中国智能手表手环设备线上线下全渠道的销量有望突破7000万台，同比上涨约8.5%。 &lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1146" src="https://img.36krcdn.com/hsossms/20260728/v2_9d79873255ef4fb58b1efaccc4e9bdf6@000000_oswg77060oswg1080oswg1146_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;与此同时，国产手机厂商全员入局，华为在2025年第二季度以21%的全球市场份额首次超越苹果，登顶出货量第一。荣耀、小米、OPPO、vivo紧随其后，从高端医疗级到百元入门档，形成了全价位覆盖的产品矩阵。其中，荣耀手表6 Plus的脉搏波房颤和早搏提示功能通过国家二类医疗器械注册认证，血压风险评估无需校准，连续佩戴3天即可生成报告； 华为WATCH D2、WATCH D3同样获得NMPA二类医疗器械认证。智能手表的医疗级认证，不再是纸上谈兵。 &lt;/p&gt;
+  &lt;p&gt;看起来，智能手表迎来了最好的时代。但另一方面，一个心照不宣的用户现状，大量智能手表在购入后迅速进入“吃灰”状态，不同调研数据虽有所差异，但普遍指向同一趋势，相当比例的用户会在数月后停止佩戴。 &lt;/p&gt;
+  &lt;p&gt;最好的时代遭遇吃灰的宿命，这种繁荣与闲置并存的反差，透出了智能手表从科技潮品向生活必需品进化过程中最核心的问题：&lt;strong&gt;当新鲜感褪去，什么才能真正让消费者“持续佩戴”？&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;智能手表行业，正站在一个微妙的十字路口。 &lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;01 用户给智能手机的“耐心”并不多&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;林悦的手表躺在抽屉里吃灰时，它其实并不知道自己做错了什么。 &lt;/p&gt;
+  &lt;p&gt;这块表能做的事远不止看时间和测心率。它可以用来结账、控制手机拍照、监测压力指数、提醒喝水、甚至能帮找手机，但林悦并没有用过。不是功能不够多，是她根本没耐心一一解锁。 &lt;/p&gt;
+  &lt;p&gt;这大概是智能手表行业最尴尬的一个真相：&lt;strong&gt;厂商开发了一百个功能，用户只开发了十个；而大多数用户留给这十个功能的耐心，可能连五个都撑不到。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;比如，用户前两周会兴致勃勃地探索各项功能，第三周开始只保留最常用的两三个，而到第四周之后，&lt;strong&gt;手表的功能认知基本固化：它是什么，就是什么，不会再变了。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;头豹研究院《中国智能手表行业研究报告》数据显示，在全球智能手表用户使用偏好中，健康和健身追踪以82%的使用率高居榜首，通知与提醒79%，通讯与通话65%，而移动支付仅37%，导航34%，睡眠追踪则低至26%。 &lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1158" src="https://img.36krcdn.com/hsossms/20260728/v2_4d0ebf0730c94cccbfa251679bc0c9a3@000000_oswg78240oswg1080oswg1158_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;这组数据的另一面，是那些花了大量研发资源打磨的压力指数分析、睡眠分期解读、血氧趋势预警等差异化功能，在大多数用户手上，从激活到遗忘，或许往往只需要一次“找不到入口”“这数据是不是不太准”“看完好像作用也不大”…… &lt;/p&gt;
+  &lt;p&gt;消费者对手表的开发只有“20%”，但耐心只有“10%”，这个不等式是落灰故事的真正起点。 &lt;/p&gt;
+  &lt;p&gt;当然，不能否认确实也有人一直戴。智能手表作为手腕上的第二块屏幕,它不仅有工具功能，也能承载身份。Apple Watch早期靠科技潮人、中产标签，华为Watch GT靠商务精英气质，都成功过。 &lt;/p&gt;
+  &lt;p&gt;但问题是，这种社交货币是有时效性的，当人人都有了，稀缺性就没了。因此，当社交属性褪去，最终留住消费者佩戴的点，还要是功能价值。 &lt;/p&gt;
+  &lt;p&gt;那么，落灰的本质是什么？产品自身，也有局限性。 &lt;/p&gt;
+  &lt;p&gt;1.5英寸的屏幕塞进了堪比智能手机的功能量，界面层级深、路径长，每多按一下都会消耗用户稀薄的探索欲。功能越多，发现成本越高，用户选择的功能反而越少。 &lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,721" src="https://img.36krcdn.com/hsossms/20260728/v2_c8f65721dec647b8afee323d5d2fe703@000000_oswg69978oswg1080oswg721_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;其次，手表擅长告诉你“心率偏高了”“深睡只有45分钟”，却很少告诉你接下来该怎么办。当十条提醒没有一条能转化为当下行动建议时，数据就从关怀变成了噪音。用户学会了免疫，在震动时看都不看就划掉通知。落灰，本质上还有信息疲劳后的自我保护。 &lt;/p&gt;
+  &lt;p&gt;而作为工具，手表不够刚需，手机可以替代90%的功能；作为饰品，它不够独特，千篇一律的表盘很难承载身份认同。用户买它时，买的是更好的自己；戴它时，却发现既没被赋能，也没被装点。实用价值感弱，情绪价值感低，它的命运就只剩两种：落灰，或者被卖掉。而大多数人懒得卖，所以落灰。 &lt;/p&gt;
+  &lt;p&gt;智能手表在大多数用户的眼中，并未能建立起独立于“外部危机”的内在价值。 &lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;02 参数内卷到场景扎根，智能手表们“自救”&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;但落灰，从来不是智能手表故事的终点。 &lt;/p&gt;
+  &lt;p&gt;把时间拨回十年前，智能手表的代名词或许只有两个：苹果和华强北。前者定义了高端，后者填充了低价空白，中间地带几乎是一片荒漠。那时没人谈论用户留存，整个行业还在回答一个更基础的问题：这东西，到底能干什么？ &lt;/p&gt;
+  &lt;p&gt;如今，荒漠早已变成战场。华为、荣耀、小米、OPPO、vivo全员入局，全价位段的产品矩阵把不同预算、不同需求的用户悉数收入囊中，竞争的残酷倒逼出创新的密集。 &lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,1160" src="https://img.36krcdn.com/hsossms/20260728/v2_b870a454694347d5a3ef4cf56f9835be@000000_oswg114402oswg1080oswg1160_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;如果说过去的功能冗余是找不准自己的位置，那么&lt;strong&gt;现在的创新方向，则是帮手表在用户生活里找到一个不可替代的角色。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;小李是个羽毛球爱好者，每周打两场，但总觉得“打了半天，不知道自己在打什么”。以前的手表只能告诉他“消耗了300大卡”。 &lt;/p&gt;
+  &lt;p&gt;但如今智能手表的进步不再只局限于消耗数字，比如荣耀手表6 Plus的专业羽毛球模式已经能够记录挥拍类型、击球力度、跳跃次数、移动轨迹等20余项专项数据，赛后还能生成AI等级评级和复盘报告。华为TruSense玄玑系统同样能基于实时生理反馈生成个性化运动建议。 &lt;/p&gt;
+  &lt;p&gt;当用户发现这块表能让自己的球技进步、配速提升，它就不再是可有可无的配件，而是总想带着的装备。 &lt;/p&gt;
+  &lt;p&gt;与此同时，手表的角色也不再是提醒工具，而成为了守护者。如开头所讲，厂商们向医疗级认证纵深突破，让产品精度从参考级跃升至临床级，还支持一键绑定亲情号，家人可远程掌握健康状况。 &lt;/p&gt;
+  &lt;p&gt;64岁的老张，血压偏高，女儿给他买了块荣耀智能手表。起初他嫌麻烦“天天震，烦得很，我又不是病人”，戴了两天就摘了。直到上个月，手表在凌晨检测到心律异常，直接震醒了他，同时女儿的手机也收到了紧急提醒，第二天便去医院做了检查。老张现在每天戴着，不是因为变自律了，是因为这块表让他觉得有安全感。 &lt;/p&gt;
+  &lt;p&gt;一块手表能让家人间产生被连接的安全感，它落灰的概率，自然大大降低。此外，被众人诟病的续航问题已被击破，荣耀手表6 Plus续航可达35天，华为WATCH GT 6最高可实现21天续航，一天一充的焦虑正在消退。 &lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,726" src="https://img.36krcdn.com/hsossms/20260728/v2_2db0745d4ebb40f2a571cdd14cbe7477@000000_oswg672954oswg1080oswg726_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p class="img-desc"&gt;图/左荣耀手表6 Plus、右华为 WATCH GT6 &lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;显然，如今手表终于不再执着于干手机的活，而是手机外的场景延伸，比手机更顺手、更贴心。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;产品越来越厉害，但价格厂商们控制地始终友善。过去，一块能测血氧的智能手表动辄两三千，如今荣耀手表6 Plus国补后1019元起，华为WATCH GT 6起售价1488元，千元档就能摸到医疗级门槛。技术下放的速度，远比消费者预期的要快。 &lt;/p&gt;
+  &lt;p&gt;这些变化的背后，也意味着智能手表行业正在完成一次关键的认知跃迁：从能做什么转向对用户有何用。 &lt;/p&gt;
+  &lt;p&gt;过去厂商们比拼的是参数表的长度，恨不得把能塞的功能全塞进去；如今比拼的是用户真实场景里的不可替代性。你能不能在我打球时告诉我反手位是弱点，能不能在我父母心律异常时第一时间通知我，能不能在我徒步七天时依然电量充足。 &lt;/p&gt;
+  &lt;p&gt;智能手表的自救，从防弃用走向价值重建。 &lt;/p&gt;
+  &lt;h2&gt;&lt;strong&gt;03 困于“持续佩戴”，本就是伪命题&lt;/strong&gt;&lt;/h2&gt;
+  &lt;p&gt;写到这里，我们似乎又陷入了一个逻辑死胡同。 &lt;/p&gt;
+  &lt;p&gt;尽管厂商们将产品故事已延伸至生活各处场景，但似乎还是难跳出用户落灰的问题。 &lt;/p&gt;
+  &lt;p&gt;但话又说回来，我们为什么要避免落灰？“持续佩戴”是否本身就是一个被过度要求的指标？问题到底出在哪里？ &lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;智能手表之所以总被苛责落灰，离不开给自己设定地过于沉重的使命：成为用户的全天候健康管家。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;我们对待传统手表的角色定位是日常配饰，可以为了搭配服装而戴，也可以长时间不带，没人会因为这周没戴表而否定它的价值。但智能手表这个定位本身，就带有强绑定的色彩。人的行为习惯是波动的，有运动热情高涨的月份，也有只想躺平的季节，有关注体检指标的焦虑期，也有只爱咋咋地的佛系期。 &lt;/p&gt;
+  &lt;p&gt;要求一块电子设备去对抗人性的起伏，这本身就不公平，“落灰-重启”的循环才应该是智能手表在用户生活里合理且正常的存在形态。&lt;strong&gt;用户断断续续的使用，不是说明产品无用论，相反是产品价值的另一种验证。&lt;/strong&gt;它没有被彻底遗忘，在关键时刻仍然能被想起。 &lt;/p&gt;
+  &lt;p&gt;智能手表的真正意义也从来不在于绑在手腕上多久，而在于被需要时能否出现。老张凌晨被心律异常振醒的那一刻，小李看完羽毛球复盘报告发现反手弱点的那一刻，林悦在便利店抬手用手表结账的那一刻……这些关键时刻的价值，远比日均佩戴时长更有分量。 &lt;/p&gt;
+  &lt;p class="image-wrapper"&gt;&lt;img data-img-size-val="1080,695" src="https://img.36krcdn.com/hsossms/20260728/v2_ce92740033c84d40bb3bec45f6b67f30@000000_oswg44083oswg1080oswg695_img_000?x-oss-process=image/format,jpg/interlace,1"&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;这也并不意味着智能手表只能停留在关键时刻的配角位置。当技术足够成熟、场景足够丰富、价格足够亲民，它正在从间歇想起走向日常依赖。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;这种转变的底层逻辑很清晰，AI算法越精准，手表就越适配你。荣耀的灵瞳感知系统、华为TruSense玄玑系统，这些技术迭代的共同方向就是让手表从被动记录走向主动预判，在你还没意识到疲惫时建议你休息，在你还没感到焦虑时引导你呼吸。 &lt;/p&gt;
+  &lt;p&gt;当手表比你自己更早发现问题，戴不戴就不再是一个需要纠结的选择，而是一个无需思考的习惯。 &lt;/p&gt;
+  &lt;p&gt;需求的全面渗透也在加速这个进程。对老年人，它是防猝筛查的守护者；对中年人，它是慢病监测的管家；对年轻人，它是运动优化的教练；对孩子，它是安全定位的伙伴。从老人到小孩，接受度都在攀升，健康管理正在从个人选择变成社会基础设施。 &lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;而智能手表也一定会因为需求的真实蔓延走向“人传人”。&lt;/strong&gt;你未必需要说服父母戴手表，但当他们看到邻居老张因为预警及时就医，这个口碑比任何广告都有力。智能手表的终极传播路径，不是电商详情页，而是“老张的故事”“小李的复盘”，是人与人之间真实的使用体验，在日常对话中自然流淌。 &lt;/p&gt;
+  &lt;p&gt;所以，当新鲜感褪去，什么才能真正留住消费者？ &lt;/p&gt;
+  &lt;p&gt;我们不需要困住持续佩戴，而是让手表变成有用的刚需。&lt;strong&gt;智能手表行业，与其困于持续佩戴的伪命题，不如坦然接受间歇性热情的常态，把产品做得在需要时足够好用、足够可信、足够让人愿意再试一次。&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;毕竟，在这个人人都在立Flag又倒Flag的时代，一块能被人反复想起的手表，已经比大多数电子产品幸运多了。 &lt;/p&gt;
+  &lt;p&gt;本文来自微信公众号 &lt;a target="_blank" rel="noopener noreferrer nofollow" href="https://mp.weixin.qq.com/s?__biz=MjM5NTIyNzY3Mg==&amp;amp;mid=2651349251&amp;amp;idx=1&amp;amp;sn=7a8995c30b9af0608bc13c6d5cf59c09&amp;amp;chksm=bc73a569b3af62c955c745d8ffa7439fccc7f34ea23dfe33aa13dbdcdc110385c8aada5f49da&amp;amp;scene=0&amp;amp;xtrack=1#rd"&gt;“florayang01”（ID：daily-case）&lt;/a&gt;，作者：Camille，36氪经授权发布。&lt;/p&gt;
+ 
+&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>36 Kr</author><pubDate>Tue, 28 Jul 2026 04:07:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTkFVX3lxTE43NUpPWjFkZkctcWMzSkU5b0ppOUFpd2l6d2lvSGtiNk1MYWphNVVkWEh2WjhmQ3FCaUZUNW9FT1Rld04xVTFXODN5VFRxZw</guid></item><item><title>六年老平台翻新！技嘉发布新品AM4主板：配上了Wi-Fi 7 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139547.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月28日消息，&lt;span&gt;&lt;strong&gt;技嘉发布了一款全新的AM4接口主板B550 Aorus Elite WiFi7，最大亮点是引入了Wi-Fi 7无线连接，同时保留DDR4内存支持，不需要用户升级到DDR5。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;这款主板可以看作是B550 Aorus Elite AX V2的升级版，外观设计、扩展插槽布局几乎没变，主要区别是将Wi-Fi 6E换成了Wi-Fi 7，同时蓝牙也升级到5.4。&lt;/p&gt;
@@ -548,7 +1041,73 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 03:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8zWjJrWV9udFlFNXVvOHh5X1VlbU1EUmk0QjkyQnMyLXBfd29fVkdUN0tFT2E0aHAxODZENVFhOS1nR1VUWDYwXzJQMWkwN2ltUDdoZ1ZIRng</guid></item><item><title>美团推出全场景AI Agent平台CatPaw，内部已覆盖9万员工 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778095</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 03:41:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE50TDR3X3ZZRm9BeHRuMGlHYWFuQV9FZTNPTk41OTROVlF0VjllR0xwNkhjdmJoQTNidWNpVlJ5ODZNTkI4bmpleld3NXhtVXRXU3BF</guid></item><item><title>Arm中国前CEO带队！新加坡推出5nm芯片：7.5倍碾压M4 Pro - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139522.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 03:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8zWjJrWV9udFlFNXVvOHh5X1VlbU1EUmk0QjkyQnMyLXBfd29fVkdUN0tFT2E0aHAxODZENVFhOS1nR1VUWDYwXzJQMWkwN2ltUDdoZ1ZIRng</guid></item><item><title>荣耀Magic9系列提前预热：影像史诗级升级 荣耀阿莱联合调校 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139524.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;荣耀Magic9系列提前预热：影像史诗级升级 荣耀阿莱联合调校&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-28 11:46:17  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1139524-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，今天上午，荣耀在横店举办了影像技术发布会。&lt;/p&gt;
+&lt;p&gt;在发布会上，荣耀宣布荣耀和阿莱双方依托各自优势，以荣耀“芯端云”全域影像引擎，结合阿莱积累百年的电影审美和色彩科学，全面落地Robot Phone，实现从前期拍摄到后期调色的完整电影创作链路，推动移动影像从参数内卷迈入电影工业创作时代。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/26112f3e61c04d88803266dc21484f2c.jpg" target="_blank"&gt;&lt;img alt="荣耀Magic9系列提前预热：影像史诗级升级 荣耀阿莱联合调校" h="451" src="//img1.mydrivers.com/img/20260728/s_26112f3e61c04d88803266dc21484f2c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;与此同时，荣耀官宣该影像系统将延展至Magic9等产品，这也是荣耀第一次提前预热其年度旗舰Magic9系列。&lt;/strong&gt;&lt;/span&gt;据爆料，荣耀Magic9系列至少包含三款机型，分别是标准版、Pro版和Pro Max版，该机最快会在9月份发布，影像方面将迎来史诗级升级。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/2b73fa9d125f4f1798f810c7ba1634fb.jpg" target="_blank"&gt;&lt;img alt="荣耀Magic9系列提前预热：影像史诗级升级 荣耀阿莱联合调校" h="211" src="//img1.mydrivers.com/img/20260728/s_2b73fa9d125f4f1798f810c7ba1634fb.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;过去百年，阿莱以电影工业级影像标准定义了电影的视觉语言，而今天，智能手机已成为这个时代最敏锐的记录者。当阿莱的电影工业标准遇上荣耀的创新算力，专业影像有了新的答案，告别过度渲染的影像风格，回归真实的影像底色，呈现更宽广的动态范围、更精准的色彩控制与更自然的肤色表现。&lt;/p&gt;
+&lt;p&gt;全新的荣耀Magic9系列将搭载ARRI色彩科学，把电影工业的掌上表达带入新纪元，让每个人都能成为自己生活的导演。除此之外，荣耀Magic9系列还将首批搭载高通骁龙8E6系列旗舰平台。&lt;/p&gt;
+&lt;p&gt;该芯片采用台积电2nm工艺，搭载高通自研Oryon CPU，采用2超大核加3性能核加3中核的八核心三丛集架构，共享16MB L2缓存。其中骁龙8E6 Pro集成Adreno 850 GPU和18MB图形缓存，并率先支持LPDDR6内存，同时支持UFS 5.0闪存，这将是安卓阵营综合性能最强悍的手机芯片。&lt;/p&gt;
+&lt;p&gt;有了2nm旗舰SoC以及阿莱调校的影像系统，荣耀Magic9系列的综合实力值得期待，它将在下半年的高端旗舰市场中占据重要一席。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260728/e275ba2975ad4df0b692de9ead8a09d2.jpg" target="_blank"&gt;&lt;img alt="荣耀Magic9系列提前预热：影像史诗级升级 荣耀阿莱联合调校" h="399" src="//img1.mydrivers.com/img/20260728/s_e275ba2975ad4df0b692de9ead8a09d2.jpg" w="600"&gt;&lt;/a&gt;&lt;br&gt;
+荣耀Magic8系列&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 03:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE11MnFsZ0ZFM01lX0VGd0dkRjNGcl91dkZCcHRDOTV6ODV3UFJ5OFNmNXRrRHRVMm4yMDMyM3JRR0RhRjVvbzY3OFVvekExZExIcGJHdVpVM3o</guid></item><item><title>美团推出全场景AI Agent平台CatPaw，内部已覆盖9万员工 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778095</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 03:41:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE50TDR3X3ZZRm9BeHRuMGlHYWFuQV9FZTNPTk41OTROVlF0VjllR0xwNkhjdmJoQTNidWNpVlJ5ODZNTkI4bmpleld3NXhtVXRXU3BF</guid></item><item><title>Arm中国前CEO带队！新加坡推出5nm芯片：7.5倍碾压M4 Pro - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139522.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技7月28日消息，&lt;span&gt;&lt;strong&gt;Arm中国前CEO潘镇元带队创办的Acrab公司近日发布了5nm AI芯片Gelix 1。该芯片集成20核Arm CPU、3TFLOPS GPU、独立NPU及音视频处理引擎，AI总算力达700TOPS。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;配置方面，GELIX 1配备8MB大型L1缓存，共享L2缓存带宽达768GB/s，统一内存带宽为273GB/s。&lt;/p&gt;
@@ -568,7 +1127,30 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 03:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1uMk1TNE93TFB5TkR2N0NhaEVJaGxVNmlnVWV1em5sa0JPME5hMjB3b1FoTmQxN0U5YThsRndNT1U4RzIyRFpZcUUxS0FzTG9pei1xTUcxV20</guid></item><item><title>11:31:25【午评：创业板指半日跌超5% 算力硬件股集体调整】 - 财联社</title><link>https://www.cls.cn/detail/2438676</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40"&gt;&lt;p class="m-b-15 f-s-40 f-w-b l-h-125"&gt;午评：创业板指半日跌超5% 算力硬件股集体调整&lt;/p&gt;&lt;p class="m-b-15 f-s-20 l-h-34p c-de0422"&gt;财联社7月28日电，市场早盘震荡下挫，三大指数集体调整。黄白线分化明显，权重股走势较弱。沪深两市半日成交额1.33万亿，较上个交易日缩量217亿。盘面上热点较为杂乱，全市场超2800只个股上涨。从板块来看，脑机接口概念延续强势，创新医疗4天3板，南京熊猫2连板。光刻机概念早盘集体爆发，张江高科、波长光电、永新光学、海立股份一字涨停。大消费板块表现活跃，一鸣食品、华天酒店、东百集团、金种子酒涨停。下跌方面，CPO概念遭重挫，剑桥科技、东山精密跌停，新易盛、源杰科技、中际旭创均跌超10%。存储芯片概念集体调整，兆易创新跌停。截至收盘，沪指跌0.98%，深成指跌3.42%，创业板指跌5.37%。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 28 Jul 2026 03:31:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBtRTRTSkdUbmpGQXBSbUpObFRvTHVlaU5iemxvNDBTbjhKQy1oZGxZSTVOaG9iNEh4UThsOTEtRThkVjJlSmcwQg</guid></item><item><title>英伟达的AI账本：谁在为这轮烧钱兜底？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778089</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 03:08:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE13WnRndkNLS0JEZXRXT0YwNkN5TXU0S1NKSm9tOVRRalRnT184ZUNKRWRuWmNFTVBUYnpuUFdzRUlPODlvQTQwaTFQOVJQNlZlMUZZ</guid></item><item><title>电影《大空头》原型：任何一家科技巨头削减AI支出，股市将直线下跌！ - 财联社</title><link>https://www.cls.cn/detail/2438626</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社7月28日讯（编辑 黄君芝）&lt;/strong&gt;大空头史蒂夫•艾斯曼（Steve Eisman）最新警告说，如果任何一家超大规模科技巨头削减其人工智能（AI）资本支出，美国股市将“直线下跌”。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 03:35:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1uMk1TNE93TFB5TkR2N0NhaEVJaGxVNmlnVWV1em5sa0JPME5hMjB3b1FoTmQxN0U5YThsRndNT1U4RzIyRFpZcUUxS0FzTG9pei1xTUcxV20</guid></item><item><title>11:31:25【午评：创业板指半日跌超5% 算力硬件股集体调整】 - 财联社</title><link>https://www.cls.cn/detail/2438676</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40"&gt;&lt;p class="m-b-15 f-s-40 f-w-b l-h-125"&gt;午评：创业板指半日跌超5% 算力硬件股集体调整&lt;/p&gt;&lt;p class="m-b-15 f-s-20 l-h-34p c-de0422"&gt;财联社7月28日电，市场早盘震荡下挫，三大指数集体调整。黄白线分化明显，权重股走势较弱。沪深两市半日成交额1.33万亿，较上个交易日缩量217亿。盘面上热点较为杂乱，全市场超2800只个股上涨。从板块来看，脑机接口概念延续强势，创新医疗4天3板，南京熊猫2连板。光刻机概念早盘集体爆发，张江高科、波长光电、永新光学、海立股份一字涨停。大消费板块表现活跃，一鸣食品、华天酒店、东百集团、金种子酒涨停。下跌方面，CPO概念遭重挫，剑桥科技、东山精密跌停，新易盛、源杰科技、中际旭创均跌超10%。存储芯片概念集体调整，兆易创新跌停。截至收盘，沪指跌0.98%，深成指跌3.42%，创业板指跌5.37%。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 28 Jul 2026 03:31:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBtRTRTSkdUbmpGQXBSbUpObFRvTHVlaU5iemxvNDBTbjhKQy1oZGxZSTVOaG9iNEh4UThsOTEtRThkVjJlSmcwQg</guid></item><item><title>电池暴涨挤压车企 单车毛利仅赚1.3万！乘联分会：车企不造电池没话语权 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139516.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技7月28日消息，据乘联分会披露的数据，&lt;strong&gt;&lt;span&gt;2026年上半年中国汽车行业利润率为3.8%，利润总额1954亿元，同比下降20%，相对于下游工业企业利润率6.5%的平均水平仍然偏低。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;数据显示，今年上半年中国汽车生产1510万辆，同比下降4%；行业收入51893亿元，同比增长1.8%；成本46100亿元，同比增长2.8%。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260728/84d27fb8-e1a0-4bc8-98c6-c9e42f0ecf71.png" target="_blank"&gt;&lt;img alt="电池暴涨挤压车企 单车毛利仅赚1.3万！乘联分会：车企不造电池没话语权" h="425" src="//img1.mydrivers.com/img/20260728/S84d27fb8-e1a0-4bc8-98c6-c9e42f0ecf71.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;产业链单车收入34.4万元，同比增长5%，单车成本30.5万元，同比增长6%，单车税费2.5万元，同比增长7.1%，产业链单车毛利润1.3万元，同比下降17.7%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从历年走势来看，2024年汽车销售利润率仅4.3%，2025年进一步降至4.1%，今年上半年继续下滑至3.8%。&lt;/p&gt;
+&lt;p&gt;不过今年6月因高端车型冲刺异常迅猛，出口需求暴增，盈利拉动效果凸显，行业销售利润率达到5.2%，好于3至4月仅3.7%的表现。&lt;/p&gt;
+&lt;p&gt;乘联分会秘书长崔东树表示，近期随着车市生产规模扩大，工业生产者出厂价格指数（PPI）上行，上游碳酸锂成本上升，国内电池价格暴涨，导致车企利润持续下滑。&lt;/p&gt;
+&lt;p&gt;尽管各地大力度推动两新政策落地实施，逐步释放内需活力，但汽车行业效益改善明显落后于其他消费品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;崔东树指出，目前汽车行业受上游挤压严重，有色金属、半导体利润暴增，终端用户购车观望心态严重，车企运行压力持续加大。由于整车企业普遍不造电池，在当前的新能源汽车产业链中没有话语权，主流车企盈利压力仍将急剧增大。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以电池账款为例，根据《保障中小企业款项支付条例》要求，锂电上市公司的应付账期应为60天，但有些企业此前账期达到200天。&lt;/p&gt;
+&lt;p&gt;今年6月，中国汽车动力电池产业创新联盟、中关村储能产业技术联盟联合发布《动力和储能电池企业供应商账款支付规范倡议》，并得到工信部和主要电池供应商的响应与支持。&lt;/p&gt;
+&lt;p&gt;崔东树认为，随着国家反内卷工作持续推进，未来更多整车企业目标成为国际大企业，车企生产电池的进程必然加速，未来整车为王，车企效益会逐步改善。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260728/25c51b8bd2da4df9b387cde33a2c818f.jpg" target="_blank"&gt;&lt;img alt="电池暴涨挤压车企 单车毛利仅赚1.3万！乘联分会：车企不造电池没话语权" h="399" src="//img1.mydrivers.com/img/20260728/s_25c51b8bd2da4df9b387cde33a2c818f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：霜月&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 28 Jul 2026 03:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1DTWhSUDFBNUhOUG9QZ2lDU1dSMm9xaDNNaUhKeUVRZHM0bG5LQ2I3YkpUd2pfd2dWS2JnRWJzd2VuSGcxdWFJQ0RpRHRLQnhXU05sUVJOSlM</guid></item><item><title>英伟达的AI账本：谁在为这轮烧钱兜底？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778089</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 28 Jul 2026 03:08:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE13WnRndkNLS0JEZXRXT0YwNkN5TXU0S1NKSm9tOVRRalRnT184ZUNKRWRuWmNFTVBUYnpuUFdzRUlPODlvQTQwaTFQOVJQNlZlMUZZ</guid></item><item><title>电影《大空头》原型：任何一家科技巨头削减AI支出，股市将直线下跌！ - 财联社</title><link>https://www.cls.cn/detail/2438626</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社7月28日讯（编辑 黄君芝）&lt;/strong&gt;大空头史蒂夫•艾斯曼（Steve Eisman）最新警告说，如果任何一家超大规模科技巨头削减其人工智能（AI）资本支出，美国股市将“直线下跌”。&lt;/p&gt;
 &lt;p&gt;他在接受最新采访时指出，&lt;strong&gt;当前的市场已经变成了一个完全依赖于人工智能成败的单一交易环境。&lt;/strong&gt;他进一步警告称，市场对人工智能的看法与一年前相比发生了巨大变化，当时投资者对每一项资本支出增加都热情欢呼。&lt;/p&gt;
 &lt;p&gt;“现在情况复杂得多。这并不意味着全是坏事，但确实复杂得多，”他说。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2070,570 +2652,4 @@ AI竞赛还可能催生另一场新的竞争——围绕最成功AI企业上市�
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 12:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1TMm9ETFBsT2tBQ0kwQlcxSEhueGh3bE5GaHFEempHVllldUpZNVE1Y2dHbXJzNVpDc2ticWE2WDlKSlh3N2RhU2VoNU9TR21RQmJGcXNPeXI</guid></item><item><title>美国核心资本品订单超预期增长，AI支出热潮支撑上半年投资 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778045</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 27 Jul 2026 12:30:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9Kc3pHRUtucU9Yci1nYmhlMjgxeVlZUEFqOXZkME4tZElQMVNCZ3VGR2llanlGa0lSZ0JPY21PZjBFM3BtZjk1YlVWUFdlbHhkcG1B</guid></item><item><title>法国报纸摘要 - 人工智能竞争：中美收紧对AI模型监管 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20260727-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AB%9E%E4%BA%89-%E4%B8%AD%E7%BE%8E%E6%94%B6%E7%B4%A7%E5%AF%B9ai%E6%A8%A1%E5%9E%8B%E7%9B%91%E7%AE%A1</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Mon, 27 Jul 2026 12:25:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi-AJBVV95cUxQcUpsODFuTHpUQUpIRnpUY1NLNVp4QlpFTDdOa3N4R2JYZTRpTm83N1o5eXEwUHl5NGI3SnJwd1ctc2dsUzdYSlFNSWlIaEJON1NZNnBKbTc4WW1ZNW9zZmQ3cS10VkNHaVV1RFpwLTk5Yk5WSFFfOU1xVmNGQXlaR0tod3RtRVNNNDd6VVQ0Slk3NHg5bmQySHVEZEdyN1lsV1NTVENOR1c5cHJqblR4RTV6XzV4MjFjZkJnV1RsOVJJUzRGdkMtYXJJN3lCN19vMFdhYmlZaXRVZ24zTmoyZUpzNVp6UXpXT1VQcTI2Mm5IUXRPc2tqVU1VMGpBQm9LS1FRUzYtT1dmVTFjNWFFY3lDc295VlZmR3RGWU14dXpOTWlzcGRjVXhCWmM1WUdNNWhRZ0VCWlM4a3Bkb3JDNlhHR0s5RlE1TlZ3YWIzdFc4MGVBRTFHTnI3OEs0eWcxWmZHNldfVEI2VGk2NnNkRFNkdEZWX2Nk</guid></item><item><title>国产厂商打造Ultra X7 358H迷你机：64GB+2TB 首发价17999元 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139409.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月27日消息，&lt;span&gt;&lt;strong&gt;Khadas现已在国内电商平台上架Mind Pro迷你主机。此次贩售型号基于英特尔酷睿Ultra X7处理器358H，首发到手价17999元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;核心性能方面，Ultra X7 358H采用16核16线程架构，由4颗性能核、8颗能效核、4颗低功耗能效核组成，最高睿频4.8GHz，三级缓存容量18MB。处理器常规持续功耗PL1为45W，短时峰值功耗PL2最高可达70W。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;该机集成英特尔最强Arc B390核显，拥有12组Xe3图形运算单元，搭配NPU 5人工智能引擎，整机最高AI算力180 TOPS，&lt;/strong&gt;能够流畅支撑视频会议AI抠像、本地语音转写等各类轻量化AI办公需求。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/05d76ad9-b563-4d9c-ad8f-905a3a313622.png" target="_blank"&gt;&lt;img alt="国产厂商打造Ultra X7 358H迷你机：64GB+2TB 首发价17999元" h="365" src="//img1.mydrivers.com/img/20260727/S05d76ad9-b563-4d9c-ad8f-905a3a313622.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;内存采用板载不可更换设计，&lt;strong&gt;标配64GB LPDDR5X，内存速率8533MT/s，整机最高支持选配96GB LPDDR5X，内存速率提升至9600MT/s。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;存储方面标配2TB M.2 NVMe固态硬盘，机身磁吸盖板内部预留M.2 2230硬盘位，用户可自行加装第二块固态扩容存储空间。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;机身尺寸控制在146×105×28mm，整机重量562g，体积仅0.43L。&lt;/strong&gt;机身内置7.98Wh专用休眠待机电池，电脑睡眠状态下最长可维持48小时不断电，挪动办公场景时无需关机，重新接通电源即可唤醒继续工作。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/95388c47-89a1-476c-9122-33255595595a.png" target="_blank"&gt;&lt;img alt="国产厂商打造Ultra X7 358H迷你机：64GB+2TB 首发价17999元" h="325" src="//img1.mydrivers.com/img/20260727/S95388c47-89a1-476c-9122-33255595595a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;散热系统采用VC均热板搭配仿生风扇组合，45W均衡负载下运行噪音37.5dB (A)，整机依靠100W USB-C接口统一供电。&lt;/p&gt;
-&lt;p&gt;Mind Pro最核心的竞争力是机身底部的Mind Link磁吸拓展接口，接口依托PCIe 5.0 x4通道，信号速率128GT/s。依靠磁吸结构，主机可快速对接RTX 5060 Ti 16GB GDDR7独显底座或是便携显示模组，用户可以根据使用场景自由切换轻薄核显模式、高性能独显模式。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 11:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1tak5OOW9PY183MkdqT2tmUmhpcU1iWWRNeHZIMWY5UWQzMUlfQnFDRDA1ZjY4YV9jSTVXUGM0cEViVlFERXBXdzB5dE04YUpUczNQcVctTnQ</guid></item><item><title>三星手机要用长鑫内存！用中国芯片来抢占中国市场 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139407.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月27日消息，据报道，&lt;span&gt;&lt;strong&gt;三星电子正在探讨采用长鑫存储的DRAM等国产半导体，降低整机制造成本，趁机扩大Galaxy A系列等中低端产品供应，抢占中国市场份额。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;据IDC数据，三星在中国智能手机市场的份额仅约0.1%，与其最大竞争对手苹果的18.1%（仅次于华为排名第二）形成巨大落差。&lt;/p&gt;
-&lt;p&gt;目前苹果、小米、OPPO、vivo等手机厂商因存储涨价压力，在“越卖越亏”的判断下主动缩减产量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;三星正是看准了这一空档，当国产厂商成本压力犹豫不决时，三星通过战略性采用中国产DRAM压低整机成本，以此为基础扩大Galaxy A系列供应。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不过有分析指出，原始报道源自韩国媒体，不排除带有为三星营造有利舆论的宣传色彩。首先长鑫的DRAM芯片其实并不像外界想象的那么便宜，甚至有消息称比三星自己生产的DRAM还要高。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;加上三星在中国市场出货量本就不大，所需DRAM采购量也相应较小，反而可能因采购量小而支付额外溢价。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;更关键的是资金，AI客户向长鑫投入的资金规模远超三星手机所能提供的报价，几乎不可能通过量大价优获得折扣。&lt;/p&gt;
-&lt;p&gt;苹果同样在接洽长鑫寻求合作，但其目的并非获取更便宜的零部件，而是分散供应风险，因为当前DRAM产能大部分已被AI客户消化。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260727/cf4c994324334168a68735f2117a57dc.jpg" target="_blank"&gt;&lt;img alt="三星手机要用长鑫内存！用中国芯片来抢占中国市场" h="379" src="//img1.mydrivers.com/img/20260727/s_cf4c994324334168a68735f2117a57dc.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 11:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1FR29fRTE0dE5iUUhETm1WSFpvY21mMVNZaXdqVXpNbVZMNkRncDgtRGpaVl9PWHB4MG05UktSTGh5NFlKdmNsdG1aUFkwSXNaNE5UTmtES08</guid></item><item><title>发布不到48小时就出产品！研华率先推出EPYC 9006服务器：Zen 6架构+2nm工艺 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139402.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月27日消息，&lt;span&gt;&lt;strong&gt;AMD近日发布了第六代EPYC 9006系列处理器，然而发布后不到48小时，全球工业物联网厂商研华科技便宣布推出基于该系列处理器的全新服务器与网络平台。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;研华此次共推出六款产品，涵盖多种服务器形态。包括4U MGX GPU服务器SKY-642E5、2U DC-MHS模块化服务器SKY-722E5、1U高密度服务器SKY-712E5、2U短深模块化服务器SKY-822E5，以及2U4节点前端接入服务器SKY-924E5F。&lt;/p&gt;
-&lt;p&gt;需要说明的是，研华这6款产品全部都搭载了AMD最新的EPYC 9006系列处理器。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;AMD第六代EPYC 9006系列处理器代号Venice，基于Zen 6与Zen 6c架构，采用台积电2nm制程工艺。&lt;/strong&gt;旗舰配置最高支持256核心与512线程，标准配置最高96核心。支持16通道DDR5内存、最高12800MT/s的MRDIMM，以及PCIe 6.0。&lt;/p&gt;
-&lt;p&gt;研华边缘服务器事业群副总经理鲍志伟表示，通过完整服务器产品线与全球在地服务能力，研华协助企业降低AI基础设施引入风险，加速AI应用从概念验证迈向商业化部署。&lt;/p&gt;
-&lt;p&gt;研华还同步推出FWA-6084 2U网络设备，专为网络安全与边缘AI工作负载设计。该设备支持DDR5与MRDIMM内存、8个Gen6网络模块卡及1个PCIe Gen5 x16扩展槽，可满足线速多路200G网络负载需求。&lt;/p&gt;
-&lt;p&gt;作为AMD Advancing AI 2026大会上首批亮相的第三方系统方案，研华此次快速跟进体现了产业链对2nm服务器芯片的迫切需求。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/d864764e-0e08-442c-9f16-1f6f623e47f1.jpg" target="_blank"&gt;&lt;img alt="发布不到48小时就出产品！研华率先推出EPYC 9006服务器：Zen 6架构+2nm工艺" h="337" src="//img1.mydrivers.com/img/20260727/Sd864764e-0e08-442c-9f16-1f6f623e47f1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 11:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5iTDh2UG5ZSkZnWHRCaUlCVVV1d19pZ0dmalllZm5NdGRBX3NYdjFFZmVJTFJTXzVBazZ1QXN5RjZkbEIwbWpEYm9XeDd6NkpranowOWVNWDQ</guid></item><item><title>AI基础设施军备竞赛加速：英伟达推出Spectrum-6，算力竞争进入十亿瓦新纪元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778026</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 27 Jul 2026 11:09:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE0zV2JjRHFVOVRoOTc1ZGxrSXQ1WUNUMEdsSUl6T0NmWW1tQkFDUnNLclUyZlBEU3BueFhieGNHQ3pUcXB4TDdveF9USzV0Z3hpSkZn</guid></item><item><title>谭亮：未来只有两种就业状态——“无班可下”与“无班可上”-科工力量 - 观察者网</title><link>https://www.guancha.cn/kegongliliang/2026_07_27_825255.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/2026/07/27/20260727190011371.png"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	谭亮（香港大学经管学院助理院长（定制高管教育）、管理及商业策略实务教授，前通用电气〔GE〕大学中国校长、前阿里巴巴集团大学全球执行校长）
-&lt;/p&gt;
-&lt;p&gt;
-	2026年，商业模式不管有怎样的外在表现，本质上都将全面进入A2A——Agent to Agent。在谭亮看来，这不是一次迭代型变革，而是一次重构型变革：在算力层、模型层、平台工具层之上，正在长出一个全新的商业基础设施层“Agent Marketplace”；组织重构要抓三个主要矛盾——AI浓度、人才密度、组织态度“新三度”；而K型分化的尽头，是两种就业状态：老法师们“无班可下”，简单的信息搬运者“无班可上”。未来不是即将到来，未来正在发生。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/2026/07/27/20260727190012425.png"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	编者按：7月17日，2026世界人工智能大会暨人工智能全球治理高级别会议在上海开幕，国家主席习近平出席开幕式并发表主旨讲话，世界人工智能合作组织在上海成立。7月20日上午，由观察者网科工力量主办的WAIC 2026系列早餐会第三场（收官场）《AI、组织与人：当下潮头与历史韵脚》在上海举行。第一场《AI普惠：硅谷之外，全球南方》追问塔基，第二场《世界模型的天王山》仰望塔尖，本场回到金字塔承上启下的中段——企业、组织与人。香港大学经管学院助理院长谭亮、英诺基金驻场企业家张雷、TTC创始人肖玛峰、首都经济贸易大学副教授孙喜同台分享，观察者网CSO周宇舫主持。本文为谭亮的演讲及圆桌发言实录，由观察者网根据现场录音整理编辑，小标题为编辑所加。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;以下是全文实录：&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;时间终将奖励勇敢的人&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	今天我的分享主题是：A2A时代，组织如何被重构？
-&lt;/p&gt;
-&lt;p&gt;
-	首先给大家讲一个鲜明的观点：
-    2026年，商业模式不管有怎样的外在表现，本质上我们终将全面进入A2A模式。
-    A2A指的是Agent to Agent。以前谈到AI时代，总是抽象地谈；在2026年，我们需要把它具象化——AI时代具体是什么？具体就是A2A。
-&lt;/p&gt;
-&lt;p&gt;
-	之前很多朋友做B2B模式，也有偏to C的；现在，全面是to A。这背后我想分享两点感受。
-&lt;/p&gt;
-&lt;p&gt;
-	第一点，A2A对所有做商业的人意味着什么？这是认知层面的话题。我的观点是：它应该是一个全新的生产范式。它带来的冲击，我放在人类社会发明火、发明电之后来理解——火、电，再到现在的AI。火解放了人类的体能，我们的最小作战单元从个体走向了群体；电释放了产能，带来了现代工业；AI带来了智能，解放了整个人机协同的智能。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/2026/07/27/20260727190012575.png"&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;产业链上，正在长出一个新层：Agent Marketplace&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	把A2A放到整个产业链背后该怎么理解？大家知道，最下面一层是算力层，上面是模型层，再上面是平台工具层，按照以前的理解，平台工具层直接对着企业应用层。
-&lt;/p&gt;
-&lt;p&gt;
-	但是从去年到今年，在平台工具和企业应用之间，长出一个新的层域。按照我自己的理解，
-    我把它叫作Agent Marketplace。
-    在这一层上，会有很多企业做行业级的agent应用、agent的开发。我原本以为要三年后这一层才能长出来，没想到这次逛WAIC，已经看到很多企业在Agent Marketplace这一层有所作为——实际的速度比我预想的大大提前。
-&lt;/p&gt;
-&lt;p&gt;
-	所以A2A时代不是即将到来，它现在正在发生。
-&lt;/p&gt;
-&lt;p&gt;
-	A2A背后，大家要有一个画面感。原来我们做业务、做营销、做销售，面对的都是人；未来在A2A模式下，我们的营销、销售以及背后的一系列方式，对的全是agent。数一数有几层？算力层、模型层、平台工具层，往上是Agent Marketplace，再往上是企业应用。企业应用会发生什么改变？里面首先会有一个企业级的agent层，叫agent中台——你可以理解为agent OS system；在它的驱动下，每个部门都有自己部门的agent。所以企业应用分为两层：agent的大中台，和各个部门的agent应用。
-&lt;/p&gt;
-&lt;p&gt;
-	Agent Marketplace呢？上对企业的agent中台和部门的agent应用，下连着超级大平台的各种工具——阿里云的百炼、微软的Copilot，还有Meta、OpenAI、Anthropic、Palantir等等。超级大平台背后是模型和算力。
-    Agent Marketplace会成为A2A时代下一个全新的商业基础设施。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;高估一年，低估十年；三种企业形态&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	历来技术颠覆，我们都有一个倾向：高估一年内的影响，低估十年后的影响。这是第一个观点。
-&lt;/p&gt;
-&lt;p&gt;
-	第二个观点：技术大变革带来大颠覆的过程中，市场上会快速分化成三种企业形态。
-&lt;/p&gt;
-&lt;p&gt;
-	第一种叫原生态，占1%。第二种叫进化态，进化型组织是Make for human with AI，占20%。第三种叫试点观望态，占80%。
-&lt;/p&gt;
-&lt;p&gt;
-	我有一个学生跟我讲：教授，你这个逻辑有点问题，加起来怎么会101？对，没错，就是101。因为那1%不是生在旧时代的，它就是生在当下的，是新时代的新物种，所以是纯原生。而那100%都是从旧时代过来的，二八开：20%进化得非常快，迭代进化；80%在试点观望。
-&lt;/p&gt;
-&lt;p&gt;
-	所以，技术大颠覆之下，企业形态分为三类：纯原生的、快速进化的、试点观望的。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;工业求稳定，互联网求敏捷，AI时代呢？&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	先交代一下我的经历：10年GE，7年阿里，现在来港大第三年。我非常感恩有这样一个机缘，跟上时代，亲身经历三段：工业、互联网、AI。所以在组织侧，我一直有很深的体感。
-&lt;/p&gt;
-&lt;p&gt;
-	工业时代的组织，核心主打的就是体系背后的稳定（stability）：通过科层的金字塔架构保持稳定。组织里的基本要素是岗位，上面是部门，部门上面是整个业务。核心关键词是定目标，分解，对齐，协同。
-&lt;/p&gt;
-&lt;p&gt;
-	到了互联网时代，最核心的关键词是从体系背后的稳定进入到速度背后的敏捷——一定要快，没有固定形态，变化非常快。于是出现新的组织形态，包括以阿里为代表的大中台、小前端的探索，也包括其他公司讲的“context over control”——给上下文，不要过多控制。
-&lt;/p&gt;
-&lt;p&gt;
-	问题来了：AI时代，特别是今年全面进入A2A时代，组织如何被重构？
-&lt;/p&gt;
-&lt;p&gt;
-	这里先讲一个概念：
-    重构之外是改造，改造和重构是不一样的。
-    什么叫改造？在旧时代的旧思想框架下引入新要素，这是改造。什么叫重构？范式被打破，才叫重构。
-&lt;/p&gt;
-&lt;p&gt;
-	组织重构有很多视角和维度，我个人希望和大家一起抓主要矛盾。我最近提出组织重构背后有一个“新三度”的思路：第一度AI浓度，第二度人才密度，第三度组织态度。这三个维度会把组织重塑，长出两种组织来。
-&lt;/p&gt;
-&lt;p&gt;
-	什么叫AI浓度？这里有两种方向：一种叫AI in all，一种叫All in AI，代表的浓度非常不一样。
-&lt;/p&gt;
-&lt;p&gt;
-	AI in all是初级阶段：看上去图了个热闹。
-    每个部门现在都有AI，都在做试点。没有解决问题，而是在创造新问题。貌似每个公司的每个部门都有AI，但最终你的财务报表上、你的指标没有发生改变。
-&lt;/p&gt;
-&lt;p&gt;
-	All in AI是什么？是重构。
-    AI in all，是你把业务、把公司“make for human with AI”——公司还是以人为主，附带增加AI。All in AI，是“make for AI”——你这个公司就是为AI建的，就是建在AI上的，基于AI重塑整个业务流和商业模式。
-&lt;/p&gt;
-&lt;p&gt;
-	所以，AI in all是初级阶段，上系统、上工具、大家学用；All in AI绝对是一号位工程，自上而下，基于认知，重塑企业形态，把企业建在AI上。这是第一度，AI浓度。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;新三度之二：人才密度——老法师与Fresh Builder&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	第二度叫人才密度。我有一个鲜明的观点：在A2A时代，人才密度终将成为重构组织的一极。
-&lt;/p&gt;
-&lt;p&gt;
-	未来主要由两类核心角色构成：一类叫行业老法师，一类叫Fresh AI Builder——原生的AI builder。这两类共同组建一个哑铃型的架构：一两个行业老法师，带着一群Fresh Builder，背后是千千万万的“龙虾军团”，组建成一个AI原生团队。
-&lt;/p&gt;
-&lt;p&gt;
-	人才密度里值得思考的第一个问题：我们企业里有没有老法师？假设有，在哪里？是谁？怎么定义？绝对不是以工作年限、以业绩、以目标来定义。
-    老法师，一定是他对行业、对产业有深度的理解，有那种电光火石的深度洞察。
-&lt;/p&gt;
-&lt;p&gt;
-	我自己的工作，从GE到阿里再到港大，一直不变的就是培养有企业家精神的一号位。我的观察是，成为老法师的路上有三个阶段：
-&lt;/p&gt;
-&lt;p&gt;
-	第一，始于直觉。直觉就是你对这个行业有一份热爱，有一份passion。第二，大量的理性训练。工业时代要讲干10年；AI时代有了人机协同，可能三五年你就可以取得以前10年的效果——但这三五年，是起于passion的大量训练。第三，回归直觉。回归直觉之后，看山还是山，看水还是水。如果他缺乏中间大量理性训练的阶段，他的直觉和一开始的直觉一模一样，没有任何变化。
-&lt;/p&gt;
-&lt;p&gt;
-	老法师背后还有一个角色：Fresh AI Builder。年轻的、会手搓的、学习速度非常快的。今年有几个大厂校招已经全面改革，叫“不面试，只测试”：给你开一个OpenClaw账号，48小时之后，带着你手搓出来的东西到现场，工程师现场测试。这就是全新的、面向年轻人的形态。
-&lt;/p&gt;
-&lt;p&gt;
-	怎么寻找这些Fresh Builder？我有一个自我总结：AI时代，人能够不断成长，靠三大特质。
-    第一，一定要有自我的要性（inner drive，内驱力）—不是被企业要，而是自己要。
-    工业时代，人不断被企业要、被部门要，去完成外界给你的目标；在AI时代，面对“无中生有的创新”和“无所不能的趋势”，人要回归自己的要性，借助AI问自己：我要什么？我要创造什么？第二，在创造的背后，把自己的ego控制住，保持开放度，兼容世界，打开自我，不断倾听、看见、学习。第三，持续不断的学习能力。我简称：AI时代，要开学。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;新三度之三：组织态度——从固态到液态&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	第三度，组织态度。
-&lt;/p&gt;
-&lt;p&gt;
-	工业时代，组织是固态的。因为要解决稳定：外面的环境是稳定的，组织就用固态的方式，做到行动一致、架构稳定。固态组织是有假设的：环境是稳定的，逻辑是清晰的，工作能做一年定战略、花三年稳定执行。固态组织核心的是稳定背后的执行。
-&lt;/p&gt;
-&lt;p&gt;
-	AI时代，特别是A2A时代，组织要走向液态。什么叫液态组织？Be water，my friend。这是李小龙70年代接受西方采访时提到的水的哲学。
-&lt;/p&gt;
-&lt;p&gt;
-	水的哲学代表什么？我总结了16个字，就是AI时代的组织形态：
-    召之即来，来之即战，战之即胜，胜之即散。
-&lt;/p&gt;
-&lt;p&gt;
-	原来每个人都有固定的岗、固定的编——工业时代的固态组织叫“三定”：定编、定岗、定headcount。AI时代的液态组织，没有什么部门和岗位之说。我个人极端的观点是：岗位会越来越淡化，什么会变得非常重要？“新三样”：第一，项目为驱动；第二，项目对着场景；第三，场景里面套着任务流。所以新三定是：定场景、定项目、定任务。老三定，新三定。组织态度，也从固态走向液态。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;新三度之下，长出两类组织&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	简单总结：AI浓度两大方向，人才密度两大角色，组织态度两种状态。这三大视角、三极，最终会新生出两类组织。
-&lt;/p&gt;
-&lt;p&gt;
-	第一类，进化型组织
-    。咱们从旧时代过来的，要快速进化。它的新三度长什么样？AI浓度上，它可以始于现状，快速经过AI in all，奔跑走向All in AI。人才密度上，它有老法师，但Fresh Builder不多，面对大量一线员工要转型——所以它要去营造氛围，让大量一线员工被激发、有自驱，走向自己心目中的老法师。组织态度上，它大部分还是固态的，但一定要快速在局部尝试液态型组织的试点。
-&lt;/p&gt;
-&lt;p&gt;
-	第二类，AI原生组织
-    。AI浓度上，它绝对是All in AI——它本身就是make for AI。人才密度上，第一，它有非常solid的老法师：行业老法师配首席科学家；第二，是20%的老法师乘以80%的Fresh AI Builder，再乘以agent团队。
-&lt;/p&gt;
-&lt;p&gt;
-	agent团队是什么？它是一个放大器（amplifier）。配上agent团队，能让你这个企业在人才密度上乘十、乘百、乘千——终将取决于三者要素的乘数效应。乘十，是agent团队刚开始试点，还没有深度改造工作流；乘百，是agent团队改造了工作流，商业模式正在重塑；乘千，是跑通了，快速复制。组织态度上，AI原生组织是纯液态的，按照新三定，不断走向召之即来，来之即战、战之即胜、胜之即散。
-&lt;/p&gt;
-&lt;p&gt;
-	今天开场的分享，就是三个观点：什么叫A2A；什么叫新三度；新三度之下，进化型组织和原生组织长什么样。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;圆桌发言&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;无班可下，与无班可上&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	听完另外三位的分享，我有一个强烈的感受：这真是一次范式重构的大变革。日常我们看到的很多是迭代型变革，这次是重构型变革。刚才几位嘉宾若干次提到一个字母——K，K型分化。我前段时间想到这个K型分化的时候，觉得也许有一种残酷：在未来A2A时代的商业模式中，有一个非常关键的词，叫“需不需要”。
-&lt;/p&gt;
-&lt;p&gt;
-	很多时候，你是不被需要的——不是你努不努力的问题，是你不被需要。在这个情况下，K型向上、向下，会延展出两种就业状态。
-&lt;/p&gt;
-&lt;p&gt;
-	一种叫无班可下。
-    比如刚才提到的老法师，用孙老师的话讲，他决定“屁股”应该坐在哪——这个能力特别差异化，特别值钱。这种人真的无班可下：
-    不是说他7×24小时坐在工位上，而是他脑子里的判断力，被agent复制成7×24小时不间断运转的能力资产。
-&lt;/p&gt;
-&lt;p&gt;
-	另一种叫无班可上。如果我们只是纯简单的搬运、纯简单的信息加工，这种能力未来100%被AI agent取代——那就不被需要。
-&lt;/p&gt;
-&lt;p&gt;
-	我举个例子。A2A时代不是有新的一层长出来，叫Agent Marketplace吗？听完这个话，反应最快的是我一个朋友，原来在投资公司做投资，基本上一个月之后就出来创业了——做agent，做agent的生产和企业部署。他带了一批小团队，谈的第一个客户，是一家做ISO 9000认证的企业：50人，搞了几十年，流程非常标准化。他们用两个星期，就把这家公司给“蒸馏”了。跟创始人谈，创始人一开始没怎么听懂；直到他们把产品功能一上，创始人立刻看懂了，当天就说了一句话：“我觉得我今年做得最英明的决策，就是下半年我会退休。”
-&lt;/p&gt;
-&lt;p&gt;
-	因为按照这个模式，两周之内，这家公司所有的标准化流程、能力、skill都被蒸馏了——以后，一个agent公司、一个小团队，就能全面接管一个标准化的、流程驱动的业务。所以背后不是简单的“有人无班可下、有人无班可上”，而是：
-    有些能力无法下马，有些能力将不被需要。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;A2A不是即将到来，是已经在发生&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	主持人问有没有实际的例子。有，都是人家已经实现的。
-&lt;/p&gt;
-&lt;p&gt;
-	第一个例子，阿里巴巴国际站（Alibaba.com）。这是阿里1999年就有的老业务，最早做信息匹配，有点类似线上黄页，后来不断打补丁，解决支付、信任、供应链的问题。做外贸，跟美国联系非常紧密，硅谷最新的变化能及时被捕捉到。他们从2024年就开始做内部的agent研发，第一把做了四个agent：风控的、营销的、合规的、客服的。
-&lt;/p&gt;
-&lt;p&gt;
-	去年他们有一个重大预判：未来要从B2B走向Agent to Agent。基于这个方向做的第一个决策，是“四合一”——不要以后长出更多agent，就一个agent。他们做了一个新型的agent应用，叫Accio。Accio立刻改变了商业模式。
-&lt;/p&gt;
-&lt;p&gt;
-	大家知道，从工业时代到互联网时代，看企业还是看“肌肉”——营收、利润。但AI时代，一个企业最AI的指标是ARR（年度经常性收入）。
-    "因为AI原生的商业模式，本质上卖的不是产品，而是持续运转的智能；智能运转得越深度，ARR越高。
-    "阿里巴巴国际站原来的商业模式是membership based：每年入会有会员费，会员分档，到大促再额外交费。全面转到Accio之后，从会员走向订阅（subscription based）：分不同的档位，底层全部根据token消耗计费。你看这个模式变化有多大。
-&lt;/p&gt;
-&lt;p&gt;
-	原来你来到网站，是买家卖家交互；现在，Accio首先不再是一个APP，它是一个agent。你提出一个诉求，agent自动消化、自动处理、自动发订单、自动帮你落地。而且很快，他们已经发现：有一些买家卖家不再是人直接对着Accio——大型买家自己就有agent团队。所以我说，去年年底来找我的企业家，已经从“教授，指导我们做AI部署”变成“教授，我们要做agent部署。规模化的买家卖家都在自建agent团队，Accio是平台的agent，两边各自有各自的agent——现在是agent to agent 。原来是API对接，现在是协议对接。这个例子已经发生了，而且他们每个月在追踪ARR指标。
-&lt;/p&gt;
-&lt;p&gt;
-	第二个例子，在香港。香港的支柱产业是金融，金融背后有一大批产业链叫professional services——做税的、法务的、合规的、品牌的。现在这些professional services的中小公司，大量都在agent化。上次在EMBA课堂上谈这个模式，很多自己做professional services创业的同学非常认同，也在快速agent化。你想想，以后香港的金融产业链：前面有C端、B端，背后是银行的agent，银行的背后又是大量professional services的agent；中小客户和高净值客户，未来也都会有自己的agent——很多家办现在都在做自己的家办垂类模型，帮助高净值人群做更复杂场景的决策和专业化分析。
-&lt;/p&gt;
-&lt;p&gt;
-	所以对我的冲击是：这一切不是即将到来，是已经在发生。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;给年轻人：两个70年之后，回归人&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	这道题为什么要在2026年讨论？因为有两个“70年”的意义。
-&lt;/p&gt;
-&lt;p&gt;
-	一边，人工智能经过70年的发展，来到了全球每一个C端个体身边。
-    另一边，二战后这70年，人类经历了工业时代成熟、互联网时代爆发，再到AI时代的社会大分工。
-    这70年对人带来了什么影响？经过70年分工，通过流程实现大规模社会提效，每个人都被放进了流程中的一个环节。70年之后，它带来一个很重要的影响：我们先天地认为，人即岗，岗即人。
-&lt;/p&gt;
-&lt;p&gt;
-	你会发现，过往几年让大部分人做自我介绍，基本都是“我是什么公司的什么岗”——很少碰到有人说“我是谁、我叫什么名字、我为什么叫这个名字、我的祖上是什么”。这个我对外大规模场合不方便多讲，我觉得这70年是一种“异化”的过程：让人本身，慢慢缩到了岗上。
-&lt;/p&gt;
-&lt;p&gt;
-	70年之后，一个硬币的两面相遇了：一面是人工智能，解决机器人、具身的问题；另一面是生物技术，解决人类长寿、基因重组的问题。人工智能遇上了人类，首先取代的，就是我们最擅长的事——岗位里标准的、高频的工作。
-&lt;/p&gt;
-&lt;p&gt;
-	取代之后，对我们最大的影响是价值缺失：当我会做的工作都被AI做了，那我干嘛？“我干嘛”背后，是一个巨大巨大的焦虑真空——我们的心智是人即岗、岗即人，而AI到来了，它无中生有、无所不能。
-&lt;/p&gt;
-&lt;p&gt;
-	所以在这个时候讨论这个话题非常有意义。为什么大部分人面对AI的反应是焦虑、是恐惧？就是因为经过了这70年——如果放在70年前，也许会不一样。
-&lt;/p&gt;
-&lt;p&gt;
-	这个局面怎么破？第一，不要把AI视作对手。AI是我们的帮手，它帮助我们回归人。回归哪几个方面？第一是审美观，第二是人最宝贵的内心的好奇心，第三是判断力。
-&lt;/p&gt;
-&lt;p&gt;
-	很多学生问我：教授，我也认同，但怎么做？我现在带的一部分学生是2003年出生的，我给他们的建议是：
-&lt;/p&gt;
-&lt;p&gt;
-	第一，自我要性的内驱力。未来随着技术发展，我们可能是“百岁人生”——《百岁人生》那本书写的，我觉得不是梦。漫长的职业人生，不管周期多长，最终都经过三个阶段：先快速尝试；再在某个领域锚定，成为这个领域有话语权的人；最后用自己的成功去帮助新人。如果你刚进入职场，要去挖掘自己内心的内驱——不是接住别人对你的需求，而是问自己：我想做什么？
-&lt;/p&gt;
-&lt;p&gt;
-	上一次记者在决赛前采访梅西，问他怎么看待比赛过程中的激烈竞争，梅西说：我们其实没有太多关注分数，我们就是享受比赛，我们从小就享受踢球这件事情。这段话给我很大触动。我现在问我的学生，我感觉大家很少有一种享受感——因为70年的社会大分工，大家都被塞进流程、塞进大厂、塞进大型组织、塞进系统里面，很难找到那种享受的感觉。
-&lt;/p&gt;
-&lt;p&gt;
-	OpenClaw的发明者是Peter Steinberger，你问他当时为什么设计出OpenClaw，他就说了两个词：Have fun, don’t be bored。所以，先找到哪些事情能让自己享受其中、有激发——这是一个起点。
-&lt;/p&gt;
-&lt;p&gt;
-	第二，保持充分的开放度。技术大变革，我碰到的所有企业家、高管都有一个不变的感慨：AI进化太快了。C端产品每天2.5个版本，B端产品每90天就是一次迭代进化。人如果保持封闭，很快会落后。保持开放度，去看见最佳实践；在看见最佳实践的过程中，激发自己的好奇心。
-&lt;/p&gt;
-&lt;p&gt;
-	第三，向真学习。读一本书是不是学习？不一定是。
-    "学习最终一定要转化为可验证的决策——看到、听到任何东西，都要问自己：如果明天我必须按这个认知做决策，我会怎么选？选错了，我能不能在两周内迭代？"
-&lt;/p&gt;
-&lt;p&gt;
-	简称：AI时代，要开学。面向未来更长期的人生，是一场马拉松，不要因为某个阶段就把自己的能量耗光——要有一个长期主义的规划。"
-    所以，未来只有两种就业状态——'无班可下'与'无班可上'。你想成为哪一种？答案从你'要开学'的那一刻开始书写。"
-&lt;/p&gt;
-&lt;p align="center"&gt;
-	&lt;img src="https://i.guancha.cn/shiping-banner.jpg"&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，文章内容纯属作者个人观点，不代表平台观点，未经授权，不得转载，否则将追究法律责任。关注观察者网微信guanchacn，每日阅读趣味文章。&lt;/strong&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者网</author><pubDate>Mon, 27 Jul 2026 11:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE1mdlFCMjdES3Y0a0dIcHh1YUFhRF9vaDRxVjVsN1lFZ0VYemRnOXZEcHFvaVpNYWhPUHM5Q2QwYnA0S0s3VEkxNkNkWFN0Q1laZk1ObDdiejJQZ1hfR0I1ZXBPX21sMXlnQnNCSA</guid></item><item><title>最后上车机会！RTX 50系显卡涨幅定档：5060 Ti一夜暴涨近两千元 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139397.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;最后上车机会！RTX 50系显卡涨幅定档：5060 Ti一夜暴涨近两千元&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-07-27 18:52:38  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1811310.html" title="青山的主页" class="newstiao4"&gt;青山&lt;/a&gt;&lt;p&gt;  编辑：青山 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1139397-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月27日消息，据报道，英伟达在上周正式向各大AIC合作厂商下发调价通知，全面调整RTX 50系列显卡供货价格。&lt;/p&gt;
-&lt;p&gt;受此影响，&lt;span&gt;&lt;strong&gt;上周国内各大AIC厂商纷纷暂停对外报价，直到今日下午三点才正式恢复报价，全RTX 50系显卡将迎来15%至25%的区间涨价。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/e38bc8ba-b7ba-488d-8a85-9b0705e5f9b9.jpg" target="_blank"&gt;&lt;img alt="最后上车机会！RTX 50系显卡涨幅定档：5060 Ti一夜暴涨近两千元" h="450" src="//img1.mydrivers.com/img/20260727/Se38bc8ba-b7ba-488d-8a85-9b0705e5f9b9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从香港市场的具体调价表现来看，&lt;strong&gt;即便是定位入门的RTX 5050显卡，价格也上调了1000港币（约合人民币862元），而主流高端的RTX 5070 Ti涨幅更为突出，终端售价直接突破10000港币大关（约合人民币8628元），&lt;/strong&gt;中高端游戏显卡的入手成本提升明显。&lt;/p&gt;
-&lt;p&gt;再来看国内市场，线上零售受现货库存紧张、渠道调价节奏不一影响，不少型号溢价更高。京东平台多家品牌的RTX 5060 Ti出现单日大幅调价，&lt;strong&gt;部分非公型号一夜涨价近2000元，&lt;/strong&gt;远超官方给出的涨幅区间。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/58c6c2c6-8772-4aef-9175-c37ffb803d59.png" target="_blank"&gt;&lt;img alt="最后上车机会！RTX 50系显卡涨幅定档：5060 Ti一夜暴涨近两千元" h="298" src="//img1.mydrivers.com/img/20260727/S58c6c2c6-8772-4aef-9175-c37ffb803d59.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/74edb631-84ae-4eb9-af10-3f255e308f60.png" target="_blank"&gt;&lt;img alt="最后上车机会！RTX 50系显卡涨幅定档：5060 Ti一夜暴涨近两千元" h="341" src="//img1.mydrivers.com/img/20260727/S74edb631-84ae-4eb9-af10-3f255e308f60.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;更重要的是，本轮显卡涨价并非渠道短期炒作，主要原因是GDDR7显存颗粒成本持续走高。作为RTX 50系列显卡的核心硬件，GDDR7显存的采购价格大幅上涨，直接吞噬了显卡厂商的绝大部分利润空间，上下游供应链成本压力持续传导，最终促成了本次官方统一调价。&lt;/p&gt;
-&lt;p&gt;按照英伟达的官方规划，本次调价将在8月正式全面落地执行。目前市场上仍存留少量调价前的库存尾货，不少线下门店已经提前开启小幅涨价模式，但现阶段涨幅相对有限，是本轮涨价周期中性价比相对较高的入手窗口期。&lt;/p&gt;
-&lt;p&gt;但随着旧库存逐步清空，8月官方调价正式生效后，RTX 50系列显卡的终端售价将彻底稳定在涨价后的高位水平。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 10:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBzdFE4V3NyZWVBbjhOVTR5OENUQnFWVjFTVHMyQkFNTFBZOWZ4SExDSkl6dmxuVUd4aFhZUFdVaFJfZFdXd19iczQzVUdkdlFvbzNNY0Vrd1g</guid></item><item><title>华为高端旗舰再破百万！Pura 90系列销量达101.49万台：首发麒麟9030S - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139391.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月27日消息，今日，博主“RD观测”公布最新数据显示，&lt;span&gt;&lt;strong&gt;截至2026年第29周（7月13日至7月19日），华为Pura 90系列累计销量已达101.49万台，正式突破百万台。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;作为对比，第28周华为Pura 90系列累计销量约为96.31万台，第29周单周新增约5.18万台；第27周累计销量约为91万台，第28周单周新增约5.31万台。&lt;/p&gt;
-&lt;p&gt;从近期数据来看，华为Pura 90系列连续两周保持约5万台的销量增量。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260727/d5e5f560974644d7b4e2d62adb8e65ad.png" target="_blank"&gt;&lt;img alt="华为高端旗舰再破百万！Pura 90系列销量达101.49万台：首发麒麟9030S" h="300" src="//img1.mydrivers.com/img/20260727/s_d5e5f560974644d7b4e2d62adb8e65ad.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;据了解，华为Pura 90系列于今年4月发布，包括Pura 90、Pura 90 Pro和Pura 90 Pro Max三款机型，起售价为5499元。&lt;/p&gt;
-&lt;p&gt;其中，&lt;strong&gt;华为Pura 90 Pro和Pura 90 Pro Max首发搭载麒麟9030S处理器，通过软硬件与芯片协同优化，整机性能提升25%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;系统体验方面，新机配合方舟引擎，应用启动速度提升21%、页面打开速度提升21%、内容加载速度提升31%，任务切换效率提升43%，进一步改善日常使用的流畅度。&lt;/p&gt;
-&lt;p&gt;影像也是华为Pura 90系列的主要升级方向。&lt;/p&gt;
-&lt;p&gt;根据官方数据，&lt;strong&gt;麒麟9030S的NPU图像理解能力提升200%，AI ISP色彩引擎能力提升43%，长焦视频清晰度提升110%，长焦防抖精度提升30%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从销量走势来看，华为Pura 90系列在进入上市中后期后仍保持相对稳定的周度增量，反映出其在高端市场具备持续的产品吸引力。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260727/ef243a924ab946d2802427a73aa8f748.jpg" target="_blank"&gt;&lt;img alt="华为高端旗舰再破百万！Pura 90系列销量达101.49万台：首发麒麟9030S" h="400" src="//img1.mydrivers.com/img/20260727/s_ef243a924ab946d2802427a73aa8f748.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 10:34:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1ZRnFJdVJCRDhPVFd1Tkh1d2k4V29OWkg3d2dOanVzRF8yQUxRaTJDTkZKUU5OUXlPMVl6VlBkdXNqZm1VcWRfYzl3anY0ZHBnaXhnUDhrSGg</guid></item><item><title>全网厌恶AI脸,但这个被裁掉的女孩绕过了"恐怖谷" - 文学城</title><link>https://www.wenxuecity.com/news/2026/07/27/126722091.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article id="articleContent" class="article"&gt;
-                                &lt;p&gt;
-近日，“AI脸恐怖谷效应”“AI脸生理性厌恶”等词条频频冲上热搜，观众对社交媒体和短视频平台上出现的千篇一律的AI脸不满的社会情绪已溢出屏幕。与此同时，一部AI仿真人短剧《被裁掉的女孩》却异军突起，收获破2亿播放量，女主角方桃子、男主角周以衡建模写实感强，微表情表现自然，还拥有独立运营的社交账号，方桃子抖音粉丝超38万，周以衡（桃不掉衡）达12.6万。&lt;br&gt;&lt;br&gt;
-&lt;img border="0" src="/data/news/202607/27/36ac38501d9645f1e2c9c5ce0d2bfdbb.webp" alt='全网厌恶AI脸,但这个被裁掉的女孩绕过了"恐怖谷"'&gt;&lt;br&gt;&lt;br&gt;
-然而就在三个月前，耀客传媒高调推出的AI艺人林汐颜和秦凌岳，却因为“AI脸”遭到网友铺天盖地的抵制，至今抖音粉丝也仅有三位数。一边是AI脸陷入恐怖谷效应，被全网厌恶；一边是AI偶像持续更新日常生活Vlog，受全网追捧，不得不让人追问，观众厌恶的是AI脸吗？为什么有些AI脸却能够战胜这种厌恶？&lt;br&gt;&lt;br&gt;
-&lt;strong&gt;恐怖谷效应由来已久，“真人演员会不会被取代”25年前就曾引发讨论&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
-“恐怖谷”是一个心理学理论，由日本机器人专家森政弘于1970年提出。它描述的是这样一个诡异现象：当一个事物与活生生的人或动物非常相似、但又不完全相似时，会使人产生强烈的反感与不安。他假设，随着机器人与人类的相似度提升，人类对它的好感度会逐渐上升，但当相似度到达某个临界点，也就是“非常像人，但还存在细微瑕疵”时，好感度会突然急剧下坠至谷底，取而代之的是强烈的排斥与不适。直到机器人无限接近真人，好感度才重新回到正面。这条好感度随拟人化程度变化而起伏的曲线，因中间那个下坠的“低谷”而得名“恐怖谷”。&lt;br&gt;&lt;br&gt;
-在AI仿真人短剧出现之前，仿真人玩偶、仿真机器人、数字电影都曾撞上过恐怖谷。2001年上映的《最终幻想：灵魂深处》便是最著名的案例之一。作为首部全部以CG动画扮演真人的电影，它耗时4年，动用了1000台计算机，超过200名专业人员，累计投资达1.37亿美元，代表了当时最先进的CG技术。影片制作期间甚至引发了“真人演员会不会被电脑取代”的大讨论。然而上映后恶评如潮，亏损超过9400万美元，用惨败给真人演员们吃了一颗定心丸——翻不过恐怖谷，CG真人电影永无翻身之日。&lt;br&gt;&lt;br&gt;
-比起用技术的迭代跨越恐怖谷的笨方法，更多的影视制作人们有意识避开恐怖谷。皮克斯的《赛车总动员》《玩具总动员》《海底总动员》等系列，主角设置成非人类，而是把动物或玩具拟人化，绕开了“坠谷”的风险。或者对角色做非人化处理，例如詹姆斯·卡梅隆拍《阿凡达》时，特意把纳美人设计成长耳朵、蓝皮肤的异星物种，用视觉上的“非人”对冲了拟真带来的不安。这些“避谷”策略，后来也成了AI内容创作者们的参考坐标。&lt;br&gt;&lt;br&gt;
-&lt;strong&gt;《被裁掉的女孩》如何绕过恐怖谷&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
-在AI脸几乎成为劝退代名词的背景下，《被裁掉的女孩》的突围，更像一次精准的闪避，它绕着“恐怖谷”的边缘走，而不是尽其所能地尝试跨越恐怖谷。&lt;br&gt;&lt;br&gt;
-《被裁掉的女孩》给出了一个让人愿意忘记“这是AI”的故事。以往的AI短剧几乎被玄幻、逆袭、穿越等男频爽剧垄断，因为行业普遍认为AI虚拟形象无法承载细腻写实的现实情绪。但《被裁掉的女孩》恰恰选择现实题材，讲述小镇女孩方桃子在大城市追逐模特梦想，遭遇职场排挤、潜规则和裁员。编剧兼导演“菲菲飞”甚至将自己20岁至27岁的模特经历融入了剧本。于是观众为方桃子的遭遇揪心，为她的逆袭喝彩，注意力被牢牢钉在了情节上，AI脸的那一点点不自然，也就被接受了。数据也印证了这一点，该剧女性观众占比高达78%，18至35岁年轻女性是核心受众。&lt;br&gt;&lt;br&gt;
-与此前那些皮肤光滑得没有毛孔、五官完美到失真的网红模板脸不同，《被裁掉的女孩》在建模上刻意反其道而行。方桃子有着并不完美的棱角、清晰的皮肤纹理，甚至细微瑕疵，比如嘴角上下的两颗痣，更接近于真实人类的质感。这种高识别度的写实建模，让她成功模糊了虚拟与真实的边界，反而冲淡了“恐怖谷”效应带来的不适。&lt;br&gt;&lt;br&gt;
-而真正让这部剧与所有AI短剧拉开距离的，是它在剧外那一套“虚实结合”的运营手段。方桃子和周以衡在社交平台上各自拥有独立账号，完全参照真人艺人模式运营。方桃子分享自制早餐、通勤健身、和猫猫狗狗互动的日常碎片，周以衡则更新英区留子日常，评论区有网友评论“我竟然爱上了一个AI”。剧内负责故事，剧外负责陪伴，虚拟角色因此拥有了独立于剧情的人格化流量，极大地冲淡了AI的冰冷感。粉丝们甚至产生了怀疑周以衡的Vlog是前女友视角，为方桃子感到委屈，嗑起了CP。截至7月26日，方桃子个人账号粉丝已超38万，数据已跑赢大量真人创作者。&lt;br&gt;&lt;br&gt;
-&lt;img border="0" src="/data/news/202607/27/f6cb310b9cce9d0023f3e5154a2050be.webp"&gt;&lt;br&gt;&lt;br&gt;
-《被裁掉的女孩》的成功，与三个月前耀客传媒的翻车形成了一道鲜明的分水岭。今年3月，耀客传媒官宣签约AI艺人林汐颜和秦凌岳，本想以数字艺人开启新纪元，结果网友迅速扒出，秦凌岳撞脸演员翟子路，林汐颜则被指融合了赵今麦、张子枫、梁洁等多位女星的特征。网友嘲讽其为“人山人海脸”“赛博缝合怪”。这种粗暴的融脸行为，不仅涉嫌肖像权争议，更因为其形象与多位真人高度相似却又存在细微差异，精准地掉入了“恐怖谷”的核心区域，激发了大众的生理性厌恶与抵制。&lt;br&gt;&lt;br&gt;
-&lt;strong&gt;创作者们向“AI脸生理性厌恶”发起反击&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
-《被裁掉的女孩》并非孤例。B站UP主“最后讲述者”创作的AI微电影《星河外卖员》同样热度惊人，单部最高播放量近270万。有趣的是，这两部作品代表了两种截然不同的突围路径。&lt;br&gt;&lt;br&gt;
-《被裁掉的女孩》走的是扎根现实的路，用现实主义的温度和细腻的情感共鸣，让观众因为内容而忽略形式。而《星河外卖员》则完全是另一条路，设定硬核，想象力炸裂，融合了科幻、末日、武侠、江湖、喜剧等多种元素，能看到《流浪地球》《爱，死亡和机器人》《武林外传》的影子。它用极致的创意和脑洞对冲了AI技术本身的不足，让观众因为奇思妙想而爱上AI构建的世界。一个让人共情，一个让人惊叹，殊途同归。&lt;br&gt;&lt;br&gt;
-但两者共享着同一种创作自觉，创作者们都不把AI当成省事的捷径，而是当作需要用心喂养的工具。它们都在建模上追求辨识度而非完美度，在叙事上尊重观众的智商与情感，在整体气质上努力靠近人的温度，从而让观众忘却了机器的冰冷和技术的敷衍，AI脸也不再那么令人厌恶了。&lt;br&gt;&lt;br&gt;
-&lt;/p&gt;
-                            &lt;/article&gt;
-                        
-                        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>文学城</author><pubDate>Mon, 27 Jul 2026 10:13:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiaEFVX3lxTE9XUVpYZ0pYS21tQXdDbFJQa2taeUs2bVhUNFhZQW5KOHRTX1RWQTJRTUtiQnl6VGlWVi12WnE1NUlKMGVTZ2JKVkJsdDRJc0hhcGJfQUVqVExOUkdfU1JqZktIby1GcmM4</guid></item><item><title>Opus 5 砍掉超 80% 系统提示词，我们用 AI 的方式也该变了 ｜附指南 - 爱范儿</title><link>https://www.ifanr.com/1673165</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
-  
-&lt;p&gt;Opus 5 上线，Claude 工程师在 X 发文说，团队为 Claude Opus 5、Claude Fable 5 这类新模型删掉了 Claude Code 超过 80% 的系统提示词。&lt;/p&gt;
-&lt;p&gt;删完后，他们重新跑了内部编码评测，没有测到性能损失。&lt;/p&gt;
-&lt;p&gt;当大家还在研究怎么可以把规则写得更全，把提示词写得更好时，Claude Code 团队已经开始精简这些提示。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673175" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-57-36.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-57-36.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-57-36-360x202.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-57-36-768x431.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-57-36-1024x574.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
-&lt;p&gt;过去，我们热衷于提示词、Skill 这些概念，先是把 AI 用提示词工程进行引导，再用一个线束工程套起来，然后又用一个循环工程让它学会自动化工作。整个过程像是 AI 在用我们，而不是我们在使用 AI。&lt;/p&gt;
-&lt;p&gt;随着模型的能力越来越强，Claude 工程师说很多提示词其实是一种累赘。&lt;/p&gt;
-&lt;p&gt;他举例说，在 Claude Code 的系统提示词里面可能已经有「适当给代码补充注释」这样的信息，但是我们使用的某个省 Token Skill 可能又写着「不要添加注释」，最后我们发给 AI 的提示词又写着「照着原有的代码风格补充。」&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673173" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_45_59.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_45_59.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_45_59-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_45_59-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;AI 懵了，到底听系统提示词的，还是听 Skill 的，还是听用户指令。这些旧的指令继续常驻，不仅会占用模型的上下文，也会产生新的冲突，需要模型花更多的时间去做决策。&lt;/p&gt;
-&lt;p&gt;而这些问题，在 Claude 5 系列模型上，其实不用手写提示词，也不需要 Skill 和系统提示词，模型自己知道，什么情况下，代码需要注释，什么情况可以删除。&lt;/p&gt;
-&lt;p&gt;Claude 还提到所谓 80% 的提示词，只涉及 Claude Code 的 system prompt，不包括 CLAUDE.md、Skills 等其他上下文。&lt;/p&gt;
-&lt;p&gt;那么问题来了，我们自己的提示词还有 Skill 应该怎么删减，才能适配上更先进的模型。&lt;/p&gt;
-&lt;h2&gt;所有上下文都要优化&lt;/h2&gt;
-&lt;p&gt;我们之前在分享地图非疆域的文章里就曾提到，提示词应该以目的为导向，要暴露我们的未知。&lt;/p&gt;
-&lt;p&gt;现在的模型不再是像之前的「实习生」一样，应该把它当做一个高级员工；我们的角色也需要从一个使唤实习生的普通打工人，摇身一变吩咐资深工程师的总监。&lt;/p&gt;
-&lt;p&gt;Claude Code 工程师 Thariq 给出了六个新的思路，如何让自己说的话，给模型下的指令，更适配模型的聪明程度。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673174" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT10_09_22.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT10_09_22.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT10_09_22-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT10_09_22-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;六个转变里面提到&lt;strong&gt;以前是给 Claude 规则，现在是相信 Claude 自己的判断力&lt;/strong&gt;，意思就说不用说得太明白，AI 现在什么都懂。&lt;/p&gt;
-&lt;p&gt;Thariq 这里说的意思是过去我们给各种 Agent 工具保留强硬规则，像是「完成后必须验证」、「除非必要，不要添加注释」、「除非用户要求，不要创建分析文档」等等……这些规则是为了防止旧 Agent 出现最差的结果。&lt;/p&gt;
-&lt;p&gt;新模型的判断能力提高后，Claude Code 把它改成了一句更短的要求：按照周围代码的写法工作，匹配原有的注释密度、命名和习惯。&lt;/p&gt;
-&lt;p&gt;这个感觉像不像你问老板这个方案要做成什么样，老板说「就是跟咱们原来项目调性一样就可以。」&lt;/p&gt;
-&lt;p&gt;电影《年会不能停！》里讽刺的那句「这个问题的关键，是要找到关键的问题」，如今在 AI 时代实现了完美的逻辑闭环。以前是「打工人揣测领导心思」，现在是「我们给 AI 当领导、讲黑话」。哪怕我们自己啥都不会，只要学会说「按原样对齐」、「对齐颗粒度」，聪明的 AI 就能把剩下的活全部自动补全。&lt;/p&gt;
-&lt;p&gt;工具调用上也是如此，以前，为了让 Claude 学会使用工具，最常见的做法是提供几个调用示例。但 Anthropic 在新模型上发现，演示案例可能把 Claude 限定在演示过的操作范围内。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673167" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-10_13_12.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-10_13_12.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-10_13_12-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-10_13_12-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;Thariq 用 Todo 工具举例，过去需要展示几次完整操作，教 Claude 如何创建、开始和完成任务。现在只要在接口中规定三种任务状态 pending、in_progress 和 completed 并注明同一时间只能处理一项任务，Claude 就能根据这些字段自行判断该怎样调用工具。&lt;/p&gt;
-&lt;p&gt;因此我们可以把精力放在工具、脚本和文件的接口设计上，以及是否可以直接使用 Claude 的某些参数，这些参数能不能把任务表达清楚。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;例如过去几年，模型逐渐学会选工具、继续执行和自查；Claude Code 也陆续加入 Tool Search、自动记忆、Skills 和权限系统。原来写在 Prompt 里的不少提醒，现在由模型或工具直接完成。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第三条变化是「需要时再加载」，原文叫 progressive disclosure。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673170" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_22_32.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_22_32.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_22_32-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_22_32-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;Claude Code 过去把怎样检查代码、怎样确认任务真的做完都写进系统提示词。每次开始任务时，这两套说明都会一起交给 Claude，哪怕这次根本用不上。&lt;/p&gt;
-&lt;p&gt;后来，Anthropic 把两套说明分别做成 Skills。Claude 要检查代码时才打开代码审查（code review）Skill，要验收结果时才打开完成验证（verification）Skill。普通任务不用先读这两套无关说明。&lt;/p&gt;
-&lt;p&gt;工具说明也可以按需读取。有些工具开始时不把完整说明交给 Claude。Claude 要使用这个工具时，再通过 ToolSearch 找到完整说明，然后照着调用。ToolSearch 就是用来查找工具说明的搜索器。&lt;/p&gt;
-&lt;p&gt;Thariq 还提到 CLAUDE.md 和 Skill.md 也是采用同样的方式。CLAUDE.md 记录整个项目的说明，Skill.md 记录某一项 Skill 的说明。当它们的文件太长时可以按主题拆开，Claude 做相关工作时再读取对应内容。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673171" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_25_15.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_25_15.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_25_15-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_25_15-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;第四条变化更简单。旧模型有时需要重复提醒，也可能更重视上下文末尾出现的要求。Claude Code 过去会把同一条工具使用要求写在两个地方：系统提示词里写一次，工具自己的说明里再写一次。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;新模型通常不再需要这种重复。Anthropic 删除了系统提示词里重复的一份，只把使用方法留在工具说明中。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;记忆也不再全部依靠用户手动保存。Claude Code 过去鼓励用户按下 #，把以后还会用到的信息写入 CLAUDE.md，供后续任务继续使用。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673168" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Imag10_27_53.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Imag10_27_53.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Imag10_27_53-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Imag10_27_53-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;现在，Claude 会自动保存与当前工作和用户有关的信息，后续遇到相关任务时继续使用。&lt;/p&gt;
-&lt;p&gt;最后一项变化是参考材料。这份给模型的参考，需是写清最后要交付什么，以及结果必须满足哪些条件。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673172" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_32_04.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_32_04.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_32_04-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image10_32_04-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;Claude Code 过去主要把计划和规格写进 Markdown 文档。但新模型可以直接阅读更多类型的材料，例如可以在浏览器里直接打开的网页原型（HTML）、已经写好的代码、一组用来检查功能是否正常的测试、其他项目里可以拿来参考或移植的一段代码，以及一份列明评分项目和合格条件的评分表。&lt;/p&gt;
-&lt;p&gt;这份评分表还很有讲究，Claude 提到可以让另一个专门负责验收的 AI 按照评分表逐项检查。例如，评分表写明工具接口需要达到哪些要求，验收 AI 再检查结果是否符合用户偏好。&lt;/p&gt;
-&lt;p&gt;和之前 Thariq 放弃 Markdown，推荐 HTML 一样，他提到推荐代码形式的参考材料。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;比如让 Claude 制作网页时，直接给它一份能打开的 HTML 原型，通常比只给文字或截图更准确。Claude 不仅能看到页面长什么样，还能读到页面结构和代码。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;了解到这些变化之后，Thariq 还把 Claude 要读取的信息分成了多层。说明产品基本规则的系统提示词（system prompt）、记录项目特殊要求的 CLAUDE.md、按需打开的任务指南（Skills），以及当前任务可以查阅的参考材料（References）等。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673169" src="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image-10_43_37.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image-10_43_37.png!720 1086w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image-10_43_37-360x480.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/ChatGPT-Image-10_43_37-768x1024.png 768w" sizes="(max-width: 1086px) 100vw, 1086px"&gt;&lt;/p&gt;
-&lt;p&gt;System prompt 用来说明产品环境和 Claude 的基本任务。作为普通 Claude Code 用户一般不会修改它，但如果我们想要自己开发一套让 AI 自动完成任务的系统时，才需要认真设计这一层。&lt;/p&gt;
-&lt;p&gt;CLAUDE.md 是放在项目里的说明文件。Thariq 建议保持简短，重点记录 Claude 只看文件结构不容易发现的特殊规定。&lt;/p&gt;
-&lt;p&gt;举个例子，如果一个项目规定所有数据类型都只能在同一个文件里定义，就应该把这项要求写清楚。项目里一眼就能看见的目录和文件，不必再抄一遍。&lt;/p&gt;
-&lt;p&gt;Skills 是按需打开的任务指南。除非涉及必须严格遵守的重要事项，否则不要把规则写得太死。内容很长时可以拆成多个文件。个人、团队或产品特有的知识、观点和工作方法，最适合放在这里。&lt;/p&gt;
-&lt;p&gt;References 是 Claude 完成当前任务时可以查阅的参考文件，例如规格、页面原型和现有代码。用户可以输入 @，再选中要交给 Claude 的文件。&lt;/p&gt;
-&lt;h2&gt;AI 变聪明的时候，人要更「精明」&lt;/h2&gt;
-&lt;p&gt;有网友总结现在的 AI 模型变化，&lt;strong&gt;是从一开始的会写代码 → 会写 prompt → 会写 agent / workflow → 会写 skill → 有手/会说话就行。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;写了大半年的 Skill，现在 Skill 的能力似乎都被模型或 Agent 工具给内化了。&lt;/p&gt;
-&lt;p&gt;少写绝对规则；用清楚的工具说明代替成套示范；不常用的内容等需要时再打开；同一条要求只保留一份；让 Claude 自动保存部分记忆；规格除了文字，也可以直接用代码、测试和评分表表达。&lt;/p&gt;
-&lt;p&gt;把这六条变化放在一起看，Claude Code 删掉的 80% 提示词，都是那些原本为了弥补模型能力不足而存在的「中间层」。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1673176" src="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-59-06.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-59-06.png!720 1196w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-59-06-360x397.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-59-06-768x846.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/07/PixPin_2026-07-27_15-59-06-929x1024.png 929w" sizes="(max-width: 1196px) 100vw, 1196px"&gt;&lt;/p&gt;
-&lt;p&gt;以前，我们不断往 Prompt、Skill、Workflow 里面堆规则，希望 AI 少犯一点错。现在，越来越多规则开始交还给模型自己判断，我们真正需要做的，变成了提供上下文、设计工具接口，以及定义什么叫做好结果。&lt;/p&gt;
-&lt;p&gt;当模型越来越聪明之后，人真正要学习的，也不再是怎么把一句 Prompt 写到一百分，而是怎样把整个工作环境搭建好，让 AI 自己判断更多操作细节，完成剩下的 90%。&lt;/p&gt;
-&lt;p&gt;不过要直接进化到「有手、会说话就行」还不太可能，但这种状态能很好地形容现阶段 AI Agent 的入门门槛。如果要得到稳定的结果，仍然需要人类提供项目的特殊规定、团队知识和验收材料等。&lt;/p&gt;
-&lt;p&gt;过去半年写下的 Skills 不会全部白写，其中那些专门提醒旧模型「别忘了这一步」、「必须这样操作」的内容，确实该重新检查了。&lt;/p&gt;
-
-  &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Mon, 27 Jul 2026 10:08:54 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE9zNXlVWHgtQnJyWjZnNGhMYTVQaTZieTU0UzZGamxjN1lJc1RLLUotRTh5RFE1aldBa1ZaMW5vd0ZZUzQ</guid></item><item><title>宇树机器狗50斤身躯能扛300斤货物！网友评论：乱七八糟又四平八稳 - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139386.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月27日消息，&lt;span&gt;&lt;strong&gt;最近，宇树科技正式发布了全新的轮足机器人As2-W，独特的足轮一体造型引发广泛讨论，相关宣传视频全网浏览量突破600万，有网友评价它外形混搭却运行稳定，兼具“乱七八糟”的外观与“四平八稳”的行进表现。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这款机器狗整机重量仅25公斤，静态站立状态下最高可承载150公斤重物，机械结构强度十分突出。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/ff6a8fba-8f00-4209-af71-8542587b7b4e.png" target="_blank"&gt;&lt;img alt="宇树机器狗50斤身躯能扛300斤货物！网友评论：乱七八糟又四平八稳" h="300" src="//img1.mydrivers.com/img/20260727/Sff6a8fba-8f00-4209-af71-8542587b7b4e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/efd596f3-b53d-49b1-86ad-42ab3c90edfc.png" target="_blank"&gt;&lt;img alt="宇树机器狗50斤身躯能扛300斤货物！网友评论：乱七八糟又四平八稳" h="552" src="//img1.mydrivers.com/img/20260727/Sefd596f3-b53d-49b1-86ad-42ab3c90edfc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;它搭载了95N・m工业级关节模组与高速内转子电机，关节活动角度范围极大，机身俯仰、四肢翻转屈伸灵活度拉满，能够翻80厘米高台、通行45度陡坡，轻松跨过台阶、碎石等轮式小车无法通过的障碍。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;动态作业时可持续负重16公斤，可搭载激光雷达、检测仪器、小型机械臂或应急物资开展作业。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;足轮复合结构是它的核心设计，四条机械腿末端配备7寸轮毂，平坦路面可锁死腿部切换轮式模式，最快速度达6m/s；遇到复杂地形则自动切换足式步态，兼顾高速移动与强越障能力。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/206af5f5-e0b1-40fd-8280-7362746f2a70.png" target="_blank"&gt;&lt;img alt="宇树机器狗50斤身躯能扛300斤货物！网友评论：乱七八糟又四平八稳" h="349" src="//img1.mydrivers.com/img/20260727/S206af5f5-e0b1-40fd-8280-7362746f2a70.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/4d8c5980-1b25-49a3-9502-2321dcc583ba.png" target="_blank"&gt;&lt;img alt="宇树机器狗50斤身躯能扛300斤货物！网友评论：乱七八糟又四平八稳" h="377" src="//img1.mydrivers.com/img/20260727/S4d8c5980-1b25-49a3-9502-2321dcc583ba.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;设备搭载648Wh电池，空载连续运行3小时以上，续航里程突破33公里，相较纯足式机型大幅拓展长途作业范围，有效缓解传统四足机器人能耗高、续航短的痛点。&lt;/p&gt;
-&lt;p&gt;整机具备IP54防尘防水防护，可在- 20℃至55℃区间稳定工作，适配厂区巡检、山地勘探、灾害救援等户外场景。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;产品分为标准版与教育开发版，预留千兆网口、电源输出等拓展接口，可外接算力拓展坞，最高支持150TOPS端侧算力，本地运行视觉大模型，依托ISS 3.0定位系统实现厘米级自主导航，接收自然语言指令后可自主完成巡检、勘测等任务。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/8054eca5-a5c8-40cd-898b-f5b1e6bac922.jpg" target="_blank"&gt;&lt;img alt="宇树机器狗50斤身躯能扛300斤货物！网友评论：乱七八糟又四平八稳" h="317" src="//img1.mydrivers.com/img/20260727/S8054eca5-a5c8-40cd-898b-f5b1e6bac922.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知敏&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 10:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9veTFacEJLMzNjREpqRG9jUkVjLWxlbUd6WHhGb2tDTm9tMFhSNVEzM2V2LTFJNkdOQ3E3eTFPUDRTaEhWcm83V2dabHRncnl0cy1wcEhlU3I</guid></item><item><title>Xbox下载偷偷提速！实测跑满250Mbs - 驱动之家</title><link>https://news.mydrivers.com/1/1139/1139384.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技7月27日消息，&lt;span&gt;&lt;strong&gt;微软正在测试一款新的Xbox下载客户端，目标是让游戏安装和更新更快。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这个功能出现在主机预览版2608.260719-2200中，7月22日先推到Alpha测试渠道，一天后扩大到Beta和Delta渠道。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;它的思路不复杂，下载一开始，客户端会去查找这款游戏或更新可用的内容分发服务器，逐个测速，挑最快的那台来传数据，而且测速不是只跑一次，下载过程中会周期性复测，只要发现更快的服务器，就切换到最快连接上。&lt;/p&gt;
-&lt;p&gt;这能在大型下载途中、某台分发服务器变慢时帮上忙，但它不会让你的宽带上限变高，下载速度仍受硬盘写入速度和游戏数据解包耗时的限制。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260727/cc714871-89cd-47c7-bbf3-cacb16518c96.png" target="_blank"&gt;&lt;img alt="Xbox下载偷偷提速！实测跑满250Mbs" h="347" src="//img1.mydrivers.com/img/20260727/Scc714871-89cd-47c7-bbf3-cacb16518c96.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Windows Central报道，一台Xbox Ally X掌机在更新后下载游戏时跑满了250Mb/s的连接速度。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;微软把这项功能描述为一次主机系统更新，所以Windows上的Xbox应用是否用上同款客户端，目前还没确认。&lt;/p&gt;
-&lt;p&gt;同一预览版还顺手修了一个bug：部分游戏和应用更新无法完成安装的问题。&lt;/p&gt;
-&lt;p&gt;至于这个智能下载客户端什么时候进稳定版，微软还没公布。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260727/3f7e3322e64d41b291084c377c97980f.jpg" target="_blank"&gt;&lt;img alt="Xbox下载偷偷提速！实测跑满250Mbs" h="450" src="//img1.mydrivers.com/img/20260727/s_3f7e3322e64d41b291084c377c97980f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知微&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 09:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBoRWxrdEs1VHZhYXBxckR1eVdRZmMtVGVOU3N2eEVpLWNLcGJnUFhfN2dCV0tXZS1FYldJSXdXVFp4UDRRWWFwdV9XSkF4SEhBTjQ3QVFZLU4</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 27 Jul 2026 12:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1TMm9ETFBsT2tBQ0kwQlcxSEhueGh3bE5GaHFEempHVllldUpZNVE1Y2dHbXJzNVpDc2ticWE2WDlKSlh3N2RhU2VoNU9TR21RQmJGcXNPeXI</guid></item><item><title>美国核心资本品订单超预期增长，AI支出热潮支撑上半年投资 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778045</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 27 Jul 2026 12:30:21 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9Kc3pHRUtucU9Yci1nYmhlMjgxeVlZUEFqOXZkME4tZElQMVNCZ3VGR2llanlGa0lSZ0JPY21PZjBFM3BtZjk1YlVWUFdlbHhkcG1B</guid></item><item><title>法国报纸摘要 - 人工智能竞争：中美收紧对AI模型监管 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20260727-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AB%9E%E4%BA%89-%E4%B8%AD%E7%BE%8E%E6%94%B6%E7%B4%A7%E5%AF%B9ai%E6%A8%A1%E5%9E%8B%E7%9B%91%E7%AE%A1</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Mon, 27 Jul 2026 12:25:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi-AJBVV95cUxQcUpsODFuTHpUQUpIRnpUY1NLNVp4QlpFTDdOa3N4R2JYZTRpTm83N1o5eXEwUHl5NGI3SnJwd1ctc2dsUzdYSlFNSWlIaEJON1NZNnBKbTc4WW1ZNW9zZmQ3cS10VkNHaVV1RFpwLTk5Yk5WSFFfOU1xVmNGQXlaR0tod3RtRVNNNDd6VVQ0Slk3NHg5bmQySHVEZEdyN1lsV1NTVENOR1c5cHJqblR4RTV6XzV4MjFjZkJnV1RsOVJJUzRGdkMtYXJJN3lCN19vMFdhYmlZaXRVZ24zTmoyZUpzNVp6UXpXT1VQcTI2Mm5IUXRPc2tqVU1VMGpBQm9LS1FRUzYtT1dmVTFjNWFFY3lDc295VlZmR3RGWU14dXpOTWlzcGRjVXhCWmM1WUdNNWhRZ0VCWlM4a3Bkb3JDNlhHR0s5RlE1TlZ3YWIzdFc4MGVBRTFHTnI3OEs0eWcxWmZHNldfVEI2VGk2NnNkRFNkdEZWX2Nk</guid></item></channel></rss>
