@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>受AI热潮持续带动 台湾7月出口额同比增长逾三成 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260807-9487633</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;受人工智能（AI）热潮持续推动，台湾今年7月出口总额同比增长32.9%，连续33个月录得正增长。&lt;/p&gt;&lt;p&gt;台湾财政部星期五（8月7日）在官网公布的最新数据显示，7月份台湾出口总额达753亿美元（约965亿新元），创下历年单月第三高纪录；环比微增0.6%，同比增长32.9%。&lt;/p&gt;&lt;p&gt;同期，进口总额为581.3亿美元，环比减少7.2%，但同比增幅达37.4%。&lt;/p&gt;&lt;p&gt;在累计数据方面，今年1月至7月，台湾总出口额达4919.5亿美元，较去年同期增长44.7%；前七个月累计进口额为3773.4亿美元，同比增长39.8%。&lt;/p&gt;&lt;p&gt;从主要外销市场来看，7月份台湾对各主要市场的出口均录得双位数的增幅。其中，对欧洲出口同比激增57.6%，对日本出口也大幅增长41.4%。&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Windows用户不再裸奔！一键清除禁用微软隐藏追踪标识 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142257.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月6日消息，Windscribe近日在GitHub开源了一个名为deGDID的PowerShell脚本，&lt;span&gt;&lt;strong&gt;可以清除Windows系统中的Global Device Identifier（GDID）隐藏追踪标识，并阻止系统重新生成。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;GDID是微软内置于Windows中的永久设备标识符，上个月因FBI借助GDID成功锁定了一名黑客嫌疑人而引发关注。虽然这次用途是执法，但一个持久追踪器内嵌在操作系统中的事实让不少人感到不安。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键问题在于，GDID没有关闭开关，换IP地址、走代理都绕不开它，系统只要连接微软服务器时就会自动带上这个标识。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/0aa3a93f-1bbb-4d17-a8e3-1ab63dcc0523.png" target="_blank"&gt;&lt;img alt="Windows用户不再裸奔！一键清除禁用微软隐藏追踪标识" h="330" src="//img1.mydrivers.com/img/20260807/S0aa3a93f-1bbb-4d17-a8e3-1ab63dcc0523.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/8daf8c4d-4923-42f2-b17c-7965e6eada2d.png" target="_blank"&gt;&lt;img alt="Windows用户不再裸奔！一键清除禁用微软隐藏追踪标识" h="367" src="//img1.mydrivers.com/img/20260807/S8daf8c4d-4923-42f2-b17c-7965e6eada2d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Windscribe的deGDID脚本提供了四个执行参数。--Status是只读模式，告诉你系统里有没有GDID在活动。--Status --Redact会生成脱敏日志，方便用户分享诊断数据时不泄露标识。&lt;/p&gt;
+&lt;p&gt;--Protect是核心功能，先清除注册表中缓存的GDID密钥，然后修改ACL访问控制列表和注册表权限，阻止系统重新获取和生成GDID，脚本还会在防火墙层面封锁内部的DeviceAdd端点，彻底切断微软身份服务识别这台PC的通道。--Unprotect则用于反向操作恢复默认状态。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/d39c5a94-4967-48c0-81a4-9de6d8fe6811.png" target="_blank"&gt;&lt;img alt="Windows用户不再裸奔！一键清除禁用微软隐藏追踪标识" h="330" src="//img1.mydrivers.com/img/20260807/Sd39c5a94-4967-48c0-81a4-9de6d8fe6811.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windscribe在虚拟机上测试时发现，手动删除GDID密钥后，只要重启系统或连接微软服务器，密钥会在后台被悄悄重新生成。因此&lt;/strong&gt;deGDID必须同时做两件事的原因，既要清除现有标识，又要堵死再生路径。&lt;/p&gt;
+&lt;p&gt;实际测试中，在Windows 11上运行--Status发现了多个缓存的GDID，--Protect清除后重启也没有出现新的标识。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但代价是依赖微软账户认证的核心服务会失效，一些微软应用会报连接错误，login.live.com的账户验证在所有浏览器中被屏蔽，&lt;/strong&gt;不过login.microsoftonline.com仍然正常，其他应用也不受影响。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/a76e5fe2-96aa-40de-b1d3-c90be4aca4e7.png" target="_blank"&gt;&lt;img alt="Windows用户不再裸奔！一键清除禁用微软隐藏追踪标识" h="219" src="//img1.mydrivers.com/img/20260807/Sa76e5fe2-96aa-40de-b1d3-c90be4aca4e7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然已经上传到微软服务器的旧密钥无法删除，且脚本只在非域环境的管理员账户下运行，加入组织或域的电脑会拒绝执行。&lt;/p&gt;
+&lt;p&gt;Windscribe表示目前&lt;a class="f14_link" href="https://github.com/yegors/deGDID" target="_blank"&gt;deGDID&lt;/a&gt;还只是一个研究项目，会随着对GDID机制的深入了解持续更新。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260807/15750ae55bff4ee49fd2a36d9c773017.jpg" target="_blank"&gt;&lt;img alt="Windows用户不再裸奔！一键清除禁用微软隐藏追踪标识" h="337" src="//img1.mydrivers.com/img/20260807/s_15750ae55bff4ee49fd2a36d9c773017.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 11:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE41WUJCczJ3RjdSZXhNVTBIeVl3ZFktSW9kQUVIb1N2UjVzZURySGswQW4wZk1OZjJJclhOek1aR0lraFFfanVYc1BveTFrNGVkZ1dDSHFHUVc</guid></item><item><title>受AI热潮持续带动 台湾7月出口额同比增长逾三成 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260807-9487633</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;受人工智能（AI）热潮持续推动，台湾今年7月出口总额同比增长32.9%，连续33个月录得正增长。&lt;/p&gt;&lt;p&gt;台湾财政部星期五（8月7日）在官网公布的最新数据显示，7月份台湾出口总额达753亿美元（约965亿新元），创下历年单月第三高纪录；环比微增0.6%，同比增长32.9%。&lt;/p&gt;&lt;p&gt;同期，进口总额为581.3亿美元，环比减少7.2%，但同比增幅达37.4%。&lt;/p&gt;&lt;p&gt;在累计数据方面，今年1月至7月，台湾总出口额达4919.5亿美元，较去年同期增长44.7%；前七个月累计进口额为3773.4亿美元，同比增长39.8%。&lt;/p&gt;&lt;p&gt;从主要外销市场来看，7月份台湾对各主要市场的出口均录得双位数的增幅。其中，对欧洲出口同比激增57.6%，对日本出口也大幅增长41.4%。&lt;/p&gt;
     
-  &lt;p&gt;台湾对中国大陆与香港的出口值也创下历史单月新高，33.4%的增幅跑赢整体平均水平。&lt;/p&gt;&lt;p&gt;在具体出口产品方面，电子零组件出口额达到277.3亿美元，创下历年单月历史新高；资通与视听产品出口额则录得313.7亿美元，较去年同期大幅增加71.5亿美元。&lt;/p&gt;&lt;p&gt;台湾财政部分析指出，出口数据的上扬主要归功于人工智能、高性能计算等应用商机的持续扩散，推升了相关供应链的出货量；此外，外销产品价格的调涨也对出口总值起到拉动作用。&lt;/p&gt;&lt;p&gt;展望未来，台湾财政部表示，尽管全球经贸前景仍面临地缘政治风险、国际贸易政策变化等不确定因素，但随着AI应用的蓬勃发展，云端服务提供商正持续扩大资本支出，各国也在加速建设AI基础设施。加之半导体厂商积极扩充高端产能与升级制程，这些有利因素均将有力支撑台湾的外销动能，预计下半年的出口仍将延续稳健的增长态势。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Fri, 07 Aug 2026 09:25:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1HSUNjWnR4djl2alRGTXBEX3ZoUEREdnhqR05SVkI3V0VHQzZHRFhVTlJ0VlRfT1hkcF9wR0hJWm12MVhTbHhseXVFN0xoMlQ0MkVYUzlVaWR0OS1zMkVMLVVfeGZxaEpzQ3c</guid></item><item><title>资料外泄无法阻拦苹果：目标两年内印度制造占比五成！ - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142211.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+  &lt;p&gt;台湾对中国大陆与香港的出口值也创下历史单月新高，33.4%的增幅跑赢整体平均水平。&lt;/p&gt;&lt;p&gt;在具体出口产品方面，电子零组件出口额达到277.3亿美元，创下历年单月历史新高；资通与视听产品出口额则录得313.7亿美元，较去年同期大幅增加71.5亿美元。&lt;/p&gt;&lt;p&gt;台湾财政部分析指出，出口数据的上扬主要归功于人工智能、高性能计算等应用商机的持续扩散，推升了相关供应链的出货量；此外，外销产品价格的调涨也对出口总值起到拉动作用。&lt;/p&gt;&lt;p&gt;展望未来，台湾财政部表示，尽管全球经贸前景仍面临地缘政治风险、国际贸易政策变化等不确定因素，但随着AI应用的蓬勃发展，云端服务提供商正持续扩大资本支出，各国也在加速建设AI基础设施。加之半导体厂商积极扩充高端产能与升级制程，这些有利因素均将有力支撑台湾的外销动能，预计下半年的出口仍将延续稳健的增长态势。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Fri, 07 Aug 2026 09:25:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1HSUNjWnR4djl2alRGTXBEX3ZoUEREdnhqR05SVkI3V0VHQzZHRFhVTlJ0VlRfT1hkcF9wR0hJWm12MVhTbHhseXVFN0xoMlQ0MkVYUzlVaWR0OS1zMkVMLVVfeGZxaEpzQ3c</guid></item><item><title>5年前老卡一夜涨价1.2万！英伟达CMP 170HX一键破解工具开源 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142215.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月7日消息，前不久亚利桑那州立大学研究员刚公开了针对英伟达CMP 170HX专用矿卡的破解方案。&lt;span&gt;&lt;strong&gt;近日GitHub上就出现了数款名为CMPUnlocker的开源破解工具，通过该工具可以将CMP 170HX矿卡仅8GB或10GB的显存容量，一键解锁到最高80GB。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据此前报道，这款英伟达CMP 170HX矿卡本质上是GA100核心的阉割版，此前英伟达为了限制用途，通过固件手段封锁了绝大部分HBM2e显存堆栈。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此次破解不仅释放了被封印的显存容量，还恢复了完整的SM核心计算吞吐量，&lt;/strong&gt;使这款老卡具备了运行超大型AI模型的能力。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/d6b023fb-d846-48e5-ab40-2988567b63a1.jpg" target="_blank"&gt;&lt;img alt="5年前老卡一夜涨价1.2万！英伟达CMP 170HX一键破解工具开源" h="869" src="//img1.mydrivers.com/img/20260807/Sd6b023fb-d846-48e5-ab40-2988567b63a1.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;根据显卡使用颗粒体质不同，&lt;strong&gt;目前10GB版本的三星颗粒卡虽然能解锁到80GB，但稳定性欠佳，&lt;/strong&gt;带宽表现也因显存体质差异而参差不齐。相比之下，8GB的海力士版本在解锁至64GB后表现更为稳健。&lt;/p&gt;
+&lt;p&gt;受此消息影响，原本在海外二手市场仅售100美元至200美元（约合人民币674元至1349元）的CMP 170HX，&lt;strong&gt;价格已在一夜之间飙升至1200美元至2000美元（约合人民币8098元至13497元）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/38e4d3c1-9ff7-46c1-a562-0376c38b5fd6.jpg" target="_blank"&gt;&lt;img alt="5年前老卡一夜涨价1.2万！英伟达CMP 170HX一键破解工具开源" h="893" src="//img1.mydrivers.com/img/20260807/S38e4d3c1-9ff7-46c1-a562-0376c38b5fd6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;国内市场价格涨幅则更离谱，此前在咸鱼等二手平台上，价格也就300-500元，目前已经涨到6000块的均价了。&lt;strong&gt;部分商家将已破解80GB显存版，甚至标价到10000元的价格。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/2db53323-b2b0-4239-9945-7650530e1373.png" target="_blank"&gt;&lt;img alt="5年前老卡一夜涨价1.2万！英伟达CMP 170HX一键破解工具开源" h="325" src="//img1.mydrivers.com/img/20260807/S2db53323-b2b0-4239-9945-7650530e1373.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其单卡身价暴涨最高超过20倍，&lt;/strong&gt;且目前市场上已出现批量扫货的神秘买家，整批80片购买价格飙到10万元。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/4c403b28-c7b4-48ba-a52d-fab5bcbb8143.png" target="_blank"&gt;&lt;img alt="5年前老卡一夜涨价1.2万！英伟达CMP 170HX一键破解工具开源" h="322" src="//img1.mydrivers.com/img/20260807/S4c403b28-c7b4-48ba-a52d-fab5bcbb8143.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不过需要注意的是，目前尚不清楚英伟达是否会通过驱动更新封杀此类破解行为，且由于显存解锁后发热量剧增，&lt;strong&gt;原有的被动散热系统能否压住满血运行的GA100核心仍是未知数。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于普通用户来说，目前该卡的价格泡沫过于巨大，切勿盲目跟风入场，一定要谨慎再谨慎，三思再三思。&lt;/p&gt;
+&lt;p&gt;&lt;a class="f14_link" href="https://news.mydrivers.com/1/1141/1141036.htm" target="_blank"&gt;史上第一GPU漏洞！英伟达170HX矿卡被破解：最高解锁80GB显存&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 09:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5zbWM3QU94ZjdxQzVaaDNQRkVJY0pIUHpYRkYzbjJ4VlJtSzdtSl83VEh5R2VuelAzc1RaQTJ2MU5IV0pSeEUya2tuazFQTVFZazlfdUxNU0M</guid></item><item><title>影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142214.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;科技8月7日消息，&lt;span&gt;&lt;strong&gt;影石为GO Ultra推出重磅固件更新，专属AI语音助手Kira正式上线。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;原本单纯的随身拍摄设备，直接变成可以随身问答、实时翻译的便携AI工具，出行记录体验大幅升级。&lt;/p&gt;
+&lt;p&gt;只需要把Insta360 App升级到2.30.0及以上，同时将相机本体、拓展舱固件更新至V1.8.88版本，更新完成就能直接唤醒使用，不用额外付费。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/22871c9469f64709a5f19972262f0d50.jpg" target="_blank"&gt;&lt;img alt="影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂" h="800" src="//img1.mydrivers.com/img/20260807/s_22871c9469f64709a5f19972262f0d50.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;新助手覆盖四大实用能力，第一个就是双语实时互译，除中英文外还支持多款小语种。&lt;/p&gt;
+&lt;p&gt;出门点餐、逛街问路、和当地人沟通，对着相机说话就能双向翻译，不用反复拿出手机打字切换翻译软件，嘈杂户外环境也能稳定识别语音。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂" h="853" src="//img1.mydrivers.com/img/20260807/aa72900004044d08b310cbd1df1043c4.gif" w="640"&gt;&lt;/p&gt;
+&lt;p&gt;随时随地语音问答是第二大亮点，不管是出行路上想查景点资料、生活里想找各类科普答案，直接唤醒助手提问，不用掏出手机解锁查资料，边走边问十分方便。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂" h="853" src="//img1.mydrivers.com/img/20260807/9155f8095d4d4a8cab4ff18cba11c0a5.gif" w="640"&gt;&lt;/p&gt;
+&lt;p&gt;拍图识图问答是本次核心特色，开启对应权限之后，相机能自动捕捉眼前画面，用户直接说出疑问，AI会实时识别画面物体并给出讲解。&lt;/p&gt;
+&lt;p&gt;逛博物馆看展品、户外识别动植物、逛街辨认商品都能用，边走边科普记录，旅行趣味性提升很多。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂" h="853" src="//img1.mydrivers.com/img/20260807/444ce0715fe741eea9f5693bad5fc33c.gif" w="640"&gt;&lt;/p&gt;
+&lt;p&gt;声纹识别功能兼顾隐私与精准度，录入专属声纹之后，人群嘈杂环境里也只会响应本人指令，不会误识别旁人语音，多人同行使用不会乱触发功能。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂" h="667" src="//img1.mydrivers.com/img/20260807/f5a49d8d00914f3f9eae76c9531f8112.gif" w="500"&gt;&lt;/p&gt;
+&lt;p&gt;除AI交互之外，原有拍摄配套功能同步优化，相机自带磁吸结构可以随意夹在衣物、背包上，全程解放双手拍摄第一视角画面。&lt;/p&gt;
+&lt;p&gt;拍摄素材能直接交给AI自动成片，系统识别画面情绪匹配对应配乐，简单操作就能产出完整Vlog，不用花大量时间剪辑。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img alt="影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂" h="853" src="//img1.mydrivers.com/img/20260807/dfe78315358146acbd46c3c335706720.gif" w="640"&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img alt="影石GO Ultra大更新：Kira上线 出国翻译识图一问就懂" h="853" src="//img1.mydrivers.com/img/20260807/7a4852946ec24c3281c53c56cd55f952.gif" w="640"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 09:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5tQ2V2aW80a2Y4VEtaU3hwU0lqa09SeVlNQTE2YUdReUtIZ0phM3VlZDQ4TkZacVpBazNWOWNJTEtMSzJTVzFqVlRpaW1UQXliWVMxZFVMdzM</guid></item><item><title>梁文锋，只想用座机 - 凤凰网</title><link>https://finance.ifeng.com/c/8vOm2jafIll</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_smallFont_3Pwv1
+                            index_text_TwFCV
+                             articleText"&gt;&lt;img src="https://x0.ifengimg.com/ucms/2026_32/DE37CEDEF119F4236F58967DD4F7EF5E3BBA1F90_size176_w683_h680.jpg"&gt;&lt;p&gt;&lt;strong&gt;作者|汪小龙&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;来源|凤凰《AI研究院》&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;谁能想到一个沉寂了15年的微博账号，会把DeepSeek创始人梁文锋再次推到全网聚光灯下。&lt;/p&gt;&lt;p&gt;&lt;img src="https://x0.ifengimg.com/ucms/2026_32/DE37CEDEF119F4236F58967DD4F7EF5E3BBA1F90_size176_w683_h680.jpg"&gt;&lt;/p&gt;&lt;p&gt;近日，有网友扒出疑似梁文锋本人的微博账号“程序小王子”，其中十几条记录藏区自驾的旧内容展现了梁文锋的个人生活，一夜之间涌入大量评论。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/01B8FCFBB534B8799B12D635AE530699C3DA6A7C_size54_w1003_h194.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;几乎同一时间，DeepSeek被曝重启第二轮融资，计划募资500亿元，投前估值约5000亿元，预计8月下旬完成签约。&lt;/p&gt;&lt;p&gt;而此前据媒体报道，因梁文峰对闭门投资者交流会的内容外泄不满，DeepSeek在7月底告知第二轮融资的意向投资方，暂停本轮融资进程，而过去不到十天便再次传出重启融资消息。&lt;/p&gt;&lt;p&gt;这种“闷声做大事”处世方式，到底是梁文锋性格使然还是另有原因？在DeepSeek靠性价比不断影响全球AI行业的定价体系时，为何梁文锋会选择主动隐身，只凭产品说话？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;01 乡村走出的高考状元&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;说梁文锋是国内AI圈最“隐身”的创始人，一点都不夸张，从读书到创业这么多年，梁文锋主动站到台前的次数，掰着手指头都能数过来。&lt;/p&gt;&lt;p&gt;他1985年生在广东湛江吴川的一个村子里，父母都是小学老师。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/DD856207D9B303FF62086F535EB83E7D8586BCAD_size95_w544_h725.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;据《吴川日报》的报道，他是2002年的吴川市高考状元，顺理成章进了浙江大学电子信息工程专业，硕士又接着读机器视觉方向。&lt;/p&gt;&lt;p&gt;倒是浙大的校友在校园论坛里留下过一些零碎回忆，拼凑出梁文锋“技术派”的形象：他大部分课程靠自学，不怎么按部就班去上课，大二就已经能独立做电路板设计和单片机开发，甚至把一把普通吉他手工改成了能接电脑的电吉他。&lt;/p&gt;&lt;p&gt;大三暑假他组队参加全国大学生电子设计竞赛，队里绝大多数技术方案都是他牵头搞定的，最后拿了全国一等奖。&lt;/p&gt;&lt;p&gt;这些校友口中的片段，几乎就是他学生时代仅有的公开记录了。&lt;/p&gt;&lt;p&gt;据幻方早年招聘材料显示，2008年金融危机的时候，还在读研的梁文锋已经开始琢磨把机器学习用到量化交易上，启动本金也就8万块，当时国内量化行业尚处空白，他和同学靠破解行情软件接口、手动抓取交易数据摸索。&lt;/p&gt;&lt;p&gt;2010年硕士毕业后，他继续打磨量化策略，直到2013年回杭州和校友共同创办雅克比投资，也就是幻方量化的前身。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/092E8C9BC1A3325093AFEABDA65FD1449B5F62D1_size682_w784_h489.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;幻方后来成长为千亿级头部量化私募，梁文锋作为核心创始人，依然极少出现在公众视野，这跟量化私募圈子普遍信奉“闷声发财”的经营理念有很大关系。&lt;/p&gt;&lt;p&gt;这种低调，某种程度上是量化私募这个行业训练出来的本能，不完全是他一个人的性格使然。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/B7F4068BB59A469B632523B1E6FD7464171D92F0_size116_w438_h599.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;量化投资的核心壁垒是策略和因子模型，一旦细节外泄，很容易被同行迅速复制，原本能舒适承载 100 亿的策略，在被复制后可能 10 亿就饱和了，进而侵蚀掉超额收益。&lt;/p&gt;&lt;p&gt;因此量化机构对策略细节极度保密，相关从业人士很少主动面对媒体。&lt;/p&gt;&lt;p&gt;加上量化基金常年顶着“割散户”“砸盘元凶”的舆论帽子，稍微高调一点，就可能被架上风口浪尖。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/1082B517BE4D7951F527B60E11907B9ED76EBE86_size92_w1080_h570.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;比如在2024年，头部量化私募灵均投资因为开盘一分钟内卖出超25亿元股票，被市场认定为“砸盘”，直接招来监管公开谴责，行业里“高调等于灾难”的教训，梁文锋大概率也是知道的。&lt;/p&gt;&lt;p&gt;2018 年有投资者去幻方拜访，事后也聊过一个很有意思的细节。&lt;/p&gt;&lt;p&gt;第一次见他，穿一件普通的深蓝色工装衬衫，手里捧着保温杯，说话还有点拘谨，只有聊到技术细节的时候才会放松下来；一起吃饭的时候，好多人都把他当成随行的技术助理，聊了半天才反应过来，这就是公司的创始人。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/42F6B03A01EFCFB10983D1945350AFF70E6AC60D_size55_w611_h460.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;相较于同期科技创业者，梁文锋几乎没有个人品牌运作的痕迹，互联网上广泛流传的这张照片还是2019年8月30日，梁文锋参加第十届中国私募金牛奖行业论坛时拍摄的。&lt;/p&gt;&lt;p&gt;梁文锋也仅有两次与媒体直接对话，内容也始终聚焦于 AGI、算力储备、组织架构与技术创新本身。&lt;/p&gt;&lt;p&gt;梁文锋在访谈中表示，不管是幻方还是后来的 DeepSeek，管理风格都延续了他的技术底色，走的是极度扁平化的路线：“我们没有 KPI，也没有所谓的任务”。&lt;/p&gt;&lt;p&gt;如果有想法，每个人随时可以调用训练集群的卡，无需审批。&lt;/p&gt;&lt;p&gt;在资本端，他在2024 年7月的访谈中就明确：“短期内没有融资计划，我们面临的问题从来不是钱，而是高端芯片被禁运”。&lt;/p&gt;&lt;p&gt;而到 2026 年 DeepSeek 启动首轮 500 亿融资时，他通过有限合伙企业架构、个人出资 200 亿占 40%、外部投资者无投票权且股份锁定五年等一系列设计，守住了核心控制权。&lt;/p&gt;&lt;p&gt;从一开始，他就在主动把资本对技术路线的干扰，降到最低。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;02 树欲静而风不止&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;这种低曝光的状态，在2025年初被彻底打破。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/D087DFF16A7162E98EDAD737AC28E0FC6895147E_size40_w1024_h625.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP" alt="2025年1月27日，DeepSeek登顶苹果美国区应用商店"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;2025年1月27日，DeepSeek登顶苹果美国区应用商店&lt;/p&gt;&lt;p&gt;2025年1月20日，DeepSeek-R1推理模型正式发布，第三方评测显示其核心推理能力比肩OpenAIo1正式版，这是国产大模型首次在核心技术指标上追平全球顶尖水平。&lt;/p&gt;&lt;p&gt;消息传开后，DeepSeek的名字迅速破圈，梁文锋的个人经历也第一次大规模走出科技圈。&lt;/p&gt;&lt;p&gt;流量最先涌向他的老家。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/FDEB94A721F862ADC359C36704553337E50F35D1_size213_w1268_h472.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;据吴川本地媒体报道，2025年春节梁文锋返乡过年时，米历岭村口拉起了红底横幅，立起了充气拱门，不少周边民众专程开车到村口打卡拍照。&lt;/p&gt;&lt;p&gt;同乡在接受媒体采访时提到，他除夕当天到家，大年初一上午便已离开。&lt;/p&gt;&lt;p&gt;此后DeepSeek每一次技术突破，都会带动一轮对梁文锋的挖掘热潮。&lt;/p&gt;&lt;p&gt;其中今年5月，一场面向机构的闭门交流会内容外泄，相关文字纪要在全网扩散，据知情人士透露，正是这次信息外泄，直接导致第二轮融资在7月底临时叫停。&lt;/p&gt;&lt;p&gt;据报道，此次融资重启之后，参与机构也收到明确要求：本轮融资低调推进，严控对外信息披露。&lt;/p&gt;&lt;p&gt;可树欲静而风不止。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/1D6B8DA1FF3B735014C0E2DC4B9DE9B21D673719_size92_w790_h510.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;在融资重启消息传出同期，有网友扒出梁文锋2011年注册的微博账号“程序小王子”。&lt;/p&gt;&lt;p&gt;账号仅更新到当年11月，内容以西藏自驾的风景照为主，最受关注的一条记录了自驾菲亚特进入阿里无人区、车辆故障滞留的经历。&lt;/p&gt;&lt;p&gt;这条沉寂了15年的动态，一夜之间涌入大量评论，但不久后账号很快清空所有内容。&lt;/p&gt;&lt;p&gt;在AI模型领域，技术影响力越大，公众对创始人的好奇心就越强，似乎他越不主动发声，世界就越想把镜头一次次怼到他面前。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;03 低调的产品，高调的行业冲击&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;7月31日，DeepSeek发布新一代模型V4-Flash正式版，启动公开测试，给全球AI行业扔下了一颗重磅炸弹。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/8982C7AB5BB298EFC653266760F54497C377D30E_size84_w623_h525.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;按汇率换算，V4-Flash正式版输出定价约合0.28美元/百万Token，比OpenAI大降价后的GPT-5.6 Luna（1.2美元/百万Token）还要低近八成。&lt;/p&gt;&lt;p&gt;尽管V4-Flash总参数为2840亿，激活参数仅130亿，远低于同系列V4-Pro的1.6万亿参数，但通过后训练阶段的算法优化，它的Agent智能体能力与代码能力反而实现了反超。&lt;/p&gt;&lt;p&gt;传统大模型的升级思路，像开餐厅靠堆后厨人数、买最贵的食材来提升菜品水准，参数越多、算力越足，能力就越强，价格自然也越贵。&lt;/p&gt;&lt;p&gt;而V4-Flash走的是另一条路，食材成本只有高端餐厅的十分之一，但靠优化烹饪流程、打磨调味工艺，最后做出来的菜品水准几乎和高端店不相上下。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/4DB2FF255321A5CBA62EAC57BF525F462EEFD6D5_size145_w1080_h554.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;第三方评测机构Artificial Analysis的数据也印证其实力，V4-Flash正式版智能指数得分为50分，比4月的预览版高出10分，甚至比1.6万亿参数的V4-Pro还高出6分，和GPT-5.6Luna的51分仅差1分。&lt;/p&gt;&lt;p&gt;DeepSeek通过实打实的算法效率革命，把每一分算力的价值都榨到了极致。&lt;/p&gt;&lt;p&gt;市场的反馈来得非常直接。&lt;/p&gt;&lt;p&gt;海外开发者社区率先刷屏，有开发者实测，用V4-Flash跑一整天复杂编码任务，最终账单仅0.31美元，而一周前用同级别模型完成相同工作量，花费了35美元。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/D2F1666382B9B29336E70D095E72C4201FD6343C_size263_w749_h1246.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;硅谷AI创业者XiaoyinQu直接在社交平台表态：V4-Flash便宜100倍、速度快2-3倍，没有理由不取代Claude成为市场第一。&lt;/p&gt;&lt;p&gt;全球最大AI接口聚合平台OpenRouter的周度数据显示，V4-Flash上线后直接登顶周调用量榜首，加上其他几款中国大模型，直接包揽了榜单前五名。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/E8940C7D84EF6E856E35E5640EDA58C229568211_size143_w625_h303.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;据Open Code公布的数据显示，V4-Flash上线当天，平台使用量单日增长30%，新增订阅用户同步增长30%。&lt;/p&gt;&lt;p&gt;甚至马斯克的社交账号也关注了DeepSeek官方账号，海外社区大量讨论称“它用起来像魔法一样”。&lt;/p&gt;&lt;p&gt;但这场低价狂欢没持续多久，就迎来了一个让所有人意外的转折，DeepSeek居然要涨价了。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/1AD1FD03EAEBE6A223B29EE3156925DE02EB6377_size21_w1053_h241.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP"&gt;&lt;/p&gt;&lt;p&gt;2026年8 月 6 日，DeepSeek 突然在开发者后台挂出提示：计划近期整体上调全部 API 服务定价，预计涨幅较大，让开发者提前规划调用量、控制充值金额，具体细则以后续正式公告为准。&lt;/p&gt;&lt;p&gt;其实涨价的信号早有铺垫。&lt;/p&gt;&lt;p&gt;7 月底 V4-Flash 正式版上线时，DeepSeek 就已经引入了峰谷定价机制：工作日早晚高峰时段，所有计费项价格直接翻倍。当时市场还只当是精细化运营的手段，没人想到全面涨价会来得这么快。&lt;/p&gt;&lt;p&gt;从一路降价到主动提价，对一向习惯用成本优势打市场的DeepSeek来说，更像是现实推着走的被动调整，用量涨得太快，算力实在跟不上了。&lt;/p&gt;&lt;p&gt;产品在全球市场掀起海啸，DeepSeek和梁文锋本人，依旧保持着极致的低调。&lt;/p&gt;&lt;p&gt;这种极致炸裂的行业冲击力，与极致克制的行事风格，构成了这家公司最独特的风格。&lt;/p&gt;&lt;p&gt;我们无法确知梁文锋本人对流量的真实态度，也不能贸然定义他的性格底色。&lt;/p&gt;&lt;p&gt;但屈指可数的公开露面次数，他显然不享受这种被过度关注的状态，也无意打造个人IP。&lt;/p&gt;&lt;p&gt;这在当下的科技行业反而成了异类。&lt;/p&gt;&lt;p&gt;如今不少创业者，早已习惯了站在聚光灯下，开发布会、录短视频、做直播，把个人影响力和公司品牌深度绑定，创始人IP几乎成了创业公司的标配。&lt;/p&gt;&lt;p&gt;而梁文锋和DeepSeek走的，是完全相反的路，人躲在产品后面，让技术和价格自己说话。&lt;/p&gt;&lt;p&gt;DeepSeek的成绩，也在回应这样一个的问题：在流量至上的商业环境里，不靠创始人出圈，纯靠技术实力和极致性价比，能不能在全球市场站稳脚跟？&lt;/p&gt;&lt;p&gt;至少目前的答案是肯定的，梁文锋和他的团队还在按自己的节奏往前走。&lt;/p&gt;&lt;p&gt;（本文封面由AI生成）&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Fri, 07 Aug 2026 09:12:30 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE1ua1pPaDdfbThiSENXeHN5SUlaUk5KTk1Vb2F3ZEt2Z011LW10RTZVZThBUGx6b1EwMmtRak5Yd0lMcTFZX3lrX1g0Z2FsTTdf</guid></item><item><title>资料外泄无法阻拦苹果：目标两年内印度制造占比五成！ - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142211.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;资料外泄无法阻拦苹果：目标两年内印度制造占比五成！&lt;/p&gt;
           
@@ -62,7 +141,96 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 09:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9BSWVwRTVTN043V0J1OE8zblNJaV9ray11R2toVDdTUW1Hcy1LaUg2UmdNLWtqY2tDbjA1SGFXNHBtaDk0bVoyTjA4c0hjaUZDNm4wWEhqZjc</guid></item><item><title>印度要搞自主AI：模型靠中国，芯片靠美国 - news.ifeng.com</title><link>https://news.ifeng.com/c/8vOieX1f4iR</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;（文/赖家琪 编辑/吕栋）&lt;/p&gt;&lt;p&gt;这两年，印度在人工智能（AI）领域可谓雄心勃勃——今年2月举办了“有史以来规模最大的”人工智能影响力峰会后，8月6日又宣布大力支持本土AI和半导体产业……&lt;/p&gt;&lt;p&gt;一切似乎正有模有样地进行着。然而，印度AI产业目前的现实情况是，既没有本土前沿模型，也缺乏自己的AI基础设施。这使得印度企业不仅离不开美国企业提供的先进GPU（图形处理器）芯片，也越来越多地“依赖”性能不输美国、成本更低的中国AI模型。&lt;/p&gt;&lt;p&gt;对于这一现实，印度塔克沙希拉研究所（Takshashila Institution）的两位研究员普拉奈·科塔斯坦（Pranay Kotasthane）和巴拉特·雷迪（Bharath Reddy）似乎并不觉得有什么问题，反而认为在大模型和AI基础设施上依靠中美，是印度实现“技术自主”前的重要路径。&lt;/p&gt;&lt;p&gt;两人7月22日在《印度斯坦时报》刊文建议，印度应两手抓，趁中国模型仍可获取时，尽快提高模型微调、评估和测试等能力，同时面对挑衅也要忍耐，靠维系与美国的关系来确保尖端芯片供应，为印度实现“技术自主”争取时间和空间。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;印度要造AI生态，先用上中国大模型&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;据美国《财富》杂志印度版网站8月6日报道，印度电子和信息技术部表示，政府已支持20个本土基础模型研发项目，批准了237个AI项目并提供补贴算力支持，还通过了12个总承诺投资规模达到1.64万亿卢比（约合1161千亿元人民币）的半导体制造项目。&lt;/p&gt;&lt;p&gt;在印度的规划中，AI和半导体产业将成为其摆脱海外技术依赖、提高全球科技竞争力的重要抓手。&lt;/p&gt;&lt;p&gt;近年来，印度不断强化AI战略布局。该国政府2024年启动“印度AI使命”，计划在五年内投入约1037亿卢比，建设一个强大且包容的完整AI生态。&lt;/p&gt;&lt;p&gt;印度政府设想，AI战略是其摆脱美国、中国等外部技术依赖的一场“自主革命”，但现实却没有按照他们的剧本走。&lt;/p&gt;&lt;p&gt;越来越多印度开始在工作流中引入中国模型。印度Mirae Asset Venture Investments India首席执行官普尼特·库马尔（Puneet Kumar）7月告诉《日经亚洲》，自2025年年中以来，他接触到的多家印度消费科技初创企业都在使用中国开放权重AI模型，因为这有助于将成本降低“一个数量级”。&lt;/p&gt;&lt;p&gt;报道称，微软依托其Foundry平台在印度南部提供的DeepSeek模型每百万输入词元的费用在19美分至1.74美元之间，每百万输出词元的价格在51美分至5.4美元之间。月之暗面旗下的Kimi模型的输入成本最高为95美分，输出成本最高为4美元。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/611EB78B099C6CA7FE90757778268E307DA3AA39_size88_w600_h404.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="在印度，中国AI模型的价格远低于美国AI模型。 《日经亚洲》"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;在印度，中国AI模型的价格远低于美国AI模型。 《日经亚洲》&lt;/p&gt;&lt;p&gt;相比之下，OpenAI旗下GPT-5.5系列模型的输入成本为每百万输入词元5美元至12美元，每百万输出成本则在30美元至54美元之间。&lt;/p&gt;&lt;p&gt;“美国模型价格昂贵，而且很多基础任务根本不需要它们。”库马尔形容说，“这完全是杀鸡用宰牛刀，就像在拥挤的城市道路上开跑车一样。”&lt;/p&gt;&lt;p&gt;而且，开放权重模型允许用户获取模型参数，并在自己的设备上部署和修改，而不必完全依赖公司提供的API服务。这与OpenAI、Anthropic等美国公司的闭源模型不一样，使中国模型的优势愈发凸显。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;“中国AI，比美国模型更具主权属性”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;对于希望尽快用上AI的印度企业来说，相较于成本高昂的美国模型以及至今没有竞争力的本土模型，中国AI模型日益成为一个不容忽视的现实选择。&lt;/p&gt;&lt;p&gt;印度塔克沙希拉研究所的研究员普拉奈·科塔斯坦和巴拉特·雷迪也认为，在缺乏本土前沿模型的情况下，相较于美国专有模型，使用中国开放AI模型可能反而更具主权属性。&lt;/p&gt;&lt;p&gt;他们指出，当某个政府部门或银行基于Claude或ChatGPT搭建工作流程时，每一次查询都由一家受美国司法管辖的公司进行处理。一旦美国政策发生变化，比如实施出口管制或制裁，访问权限被取消，相关工作流程也将立即被中断。&lt;/p&gt;&lt;p&gt;但如果一家印度金融服务企业在印度数据中心租用的GPU上运行一个中国开放权重模型，这种风险几乎不存在。因为模型权重只是存储在印度硬件上的一组静态参数文件，数据不会离开印度，中国模型开发方与模型部署之间不存在持续连接，没有可以撤销访问权限的API，也无法获取用户数据。&lt;/p&gt;&lt;p&gt;科塔斯坦和雷迪称，目前印度大型企业和监管机构对使用这些中国开放权重模型仍持谨慎态度，他们怀疑其中存在所谓“后门”。但事实上，开放权重模型只是由数十亿个权重和参数组成的一组数据，本身并不存在“后门”。&lt;/p&gt;&lt;p&gt;“如果推理过程运行在印度数据中心的印度GPU上，那么整个数据链路都在本国境内。中国实验室在这一过程中并不比一本教材的作者在他国有人阅读这本书时扮演的角色更多。”他们在印度媒体《印度斯坦时报》7月底刊发的文章中写道。&lt;/p&gt;&lt;p&gt;文章直言，印度部分人将中国硬件（可能存在物理后门）或中国资本（可能带来政治影响）的风险，套用到中国模型权重上，这是一个“错误”。&lt;/p&gt;&lt;p&gt;安全研究人员确实发现，神经网络可能存在“潜伏代理”和木马风险，即模型在常规基准测试中表现正常，却可能在特定触发条件下产生被隐蔽操控的输出。不过，这类风险并非开放权重模型所独有。&lt;/p&gt;&lt;p&gt;对于外界炒作的所谓中国可能像管制镓、锗、锑等金属和稀土技术那样，对AI模型实施出口管制，科塔斯坦和雷迪认为，当前中国开放权重模型仍可不受限制地流向海外，表明中方尚未把这一代AI工具视为需要限制出口的战略资源。&lt;/p&gt;&lt;p&gt;就算未来中国真的限制其出口，科塔斯坦和雷迪表示，已经公开的模型权重无法收回，任何管制只能针对能力更强的下一代模型。这更加表明，“印度需要建设本土AI推理平台，以可信的中立方身份同时提供中美两套模型生态的产品”。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;“就算美国挑衅，印度也要抱紧大腿保芯片”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;围绕印度如何以“可信的中立方身份”提供中美模型生态的替代产品，科塔斯坦和雷迪提出了四点建议。&lt;/p&gt;&lt;p&gt;开放模型与专有API的风险性质不同，政策应对也应有所区别。第一，印度企业应积极发展本土AI推理基础设施，能够在本国硬件上运行任何模型，同时确保数据不离开国境。印度需要多个AI推理服务提供商，而不是一个单一的国家AI云平台。&lt;/p&gt;&lt;p&gt;第二，监管机构应关注模型部署层面，包括数据流向、谁控制算力以及是否存在审计记录等，而不是简单关注开发模型权重的国家来源。对低价中国模型采取全面怀疑的态度，将带来高昂的商业成本，这不仅会阻止印度企业获得高性能、低成本的模型，也无法真正解决主权风险，无法减少对境外专有API的依赖。&lt;/p&gt;&lt;p&gt;第三，时间因素非常重要。如果中国未来限制模型出口，印度需要提前建立吸收现有资源的能力，包括模型微调、评估和红队测试（模拟真实世界恶意攻击者的对抗性安全评估方法）等。“建设本土算力需要数月时间，因此现在就必须开始行动。”&lt;/p&gt;&lt;p&gt;第四，开放权重无法解决的一个问题是，印度用于AI推理的每一块GPU，目前都由美国企业设计，而这可能受到美国出口管制影响。开放权重解决的是模型访问和数据流问题，而不是算力供应链问题。&lt;/p&gt;&lt;p&gt;科塔斯坦和雷迪对此给出的解决方案是，印度目前唯一的选择是与美国保持相对良好的关系，参与类似“硅和平”（Pax Silica）的倡议。&lt;/p&gt;&lt;p&gt;二人称，这并不意味着印度需要在所有问题上都认同美国，而是继续保持接触，就像印度过去那样，“尽管受到重大挑衅，也要继续与美国保持沟通”。&lt;/p&gt;&lt;p&gt;科塔斯坦和雷迪的上述建议是基于印度现实的一条潜在路径，但这恰恰反映出，所谓“印度AI自主”，不过是该国又一个需要夹在中美之间“平衡”的领域。事实上，印度距离真正的自主AI，还有很长的路要走。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>news.ifeng.com</author><pubDate>Fri, 07 Aug 2026 08:18:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTFBBbVlaaEdzMjZubllPazNldUlCSng1a0pWQ1BBZFJrYU93el9PN29wQ2lCaE9GWERyVlRKbmFCV3dxNFU3bE1vVlhOVE0</guid></item><item><title>仅380g小到离谱的迷你主机！希未AideaMini R15预售：价格有惊喜 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142190.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 09:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9BSWVwRTVTN043V0J1OE8zblNJaV9ray11R2toVDdTUW1Hcy1LaUg2UmdNLWtqY2tDbjA1SGFXNHBtaDk0bVoyTjA4c0hjaUZDNm4wWEhqZjc</guid></item><item><title>苹果将推旗下首款家用安防摄像头：4K画质加持 端到端加密数据 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142206.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;苹果将推旗下首款家用安防摄像头：4K画质加持 端到端加密数据&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-07 17:02:42  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1142206-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月7日消息，据媒体报道，&lt;strong&gt;&lt;span&gt;苹果公司正筹备推出其首款家用安防摄像头，该设备将深度集成新版iOS系统中的HomeKit安全视频（HomeKit Secure Video）功能，&lt;/span&gt;被视为苹果加码智能家居生态的重要举措，预计将与年度旗舰新品（如iPhone）同步亮相。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据消息人士透露，这款摄像头将配备先进的面部识别系统与红外传感模块，能够精准识别室内人员身份。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;苹果工程师的设想是，用户可在房屋各区域部署多台摄像头，通过设备间的智能联动实现丰富的家居自动化场景——例如根据成员离家自动关闭电器，或依据个人偏好自动播放定制音乐。&lt;/strong&gt;这一设计充分体现了苹果对隐私保护与便捷体验的双重兼顾。&lt;/p&gt;
+&lt;p&gt;伴随iOS系统更新，HomeKit安全视频将迎来四项关键升级：支持4K超高清视频录制、引入AI算法实现画面内容的语义描述、开发智能视频片段检索系统，以及建立重点事件标记机制。这些改进将大幅提升家庭安防设备的实用价值，帮助用户更高效地管理监控录像。&lt;/p&gt;
+&lt;p&gt;在数据安全方面，&lt;strong&gt;新款摄像头将采用端到端加密技术，所有视频分析均在本地设备完成，避免敏感信息上传云端。这一设计既延续了苹果一贯的隐私保护原则，也为行业树立了更高的安全基准。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260807/3d14e045f90943c9a8704fbf190f0bd0.png" target="_blank"&gt;&lt;img alt="苹果将推旗下首款家用安防摄像头：4K画质加持 端到端加密数据" h="395" src="//img1.mydrivers.com/img/20260807/s_3d14e045f90943c9a8704fbf190f0bd0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 09:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9wRkJYOXRpLUl3clA0SjNsWEJ5UHRadkdyQXlzT3N2N2oyMEw0VVZ5VUxUcW5wRlBHVzdwczY3WkNFc05QY2ltOGVxSVlaZWxYcTZNSHZ0WTE</guid></item><item><title>福兮祸兮？美国科学家首次用AI设计出新型病毒…… - cls.cn</title><link>https://www.cls.cn/detail/2448228</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社8月7日讯（编辑 潇湘）&lt;/strong&gt;美国科学家首次成功制造出由人工智能(AI)设计的病毒，这一里程碑式的突破虽然为新药研发带来了希望，但同时也引发了业界关于如何确保该技术安全可控的深刻担忧。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据悉，斯坦福大学的研究人员开发了一款名为“Evo 2”的生成式AI程序，该程序能够编写新的基因组——即编码在DNA中的生命遗传指令。&lt;/strong&gt;他们利用该程序设计并制造了16种合成噬菌体——这是一种能够感染细菌的小型病毒，有时可替代抗生素来杀灭致病细菌。&lt;/p&gt;
+&lt;p&gt;在安全实验室进行测试时，美国研究人员发现，与作为Evo 2设计模板的天然噬菌体ΦX174相比，这些新型噬菌体在杀灭常见微生物大肠杆菌方面更为有效。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该研究成果于周四发表在了《科学》杂志上。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://image.cls.cn/images/20260807/eleAk2K8SG_864x440.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;“我们的研究是一项概念验证，首次证明生成式设计能够生成完整的功能性基因组，”该项目负责人Brian Hie表示。“我们选择以噬菌体为研究对象，是因为它们体积小、研究充分，且在分子生物学和治疗领域具有广泛的应用。”&lt;/p&gt;
+&lt;p&gt;他补充道，该方法未来可扩展至细菌等较大生物体，进而应用于更复杂的生命形式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Brian Hie这篇里程碑式论文的重要性无论怎么强调都不为过，”基因组学专家、DNA合成公司Genyro首席执行官Adrian Woolfson表示，“这是生物学领域的‘莱特兄弟时刻’(飞机发明人)&lt;/strong&gt;——我们不再回顾进化所创造出的生物体……而是直面未来生物学的广阔可能性。”&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;AI助力噬菌体疗法&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;噬菌体疗法在东欧已有数十年的应用历史。通过将特定噬菌体与患者的具体细菌菌株精准匹配，并通过局部涂抹、注射或口服等方式将其送至感染部位。&lt;/p&gt;
+&lt;p&gt;不过，由于操作流程复杂且细菌可能产生耐药性等原因，该疗法在西方尚未得到广泛应用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;斯坦福大学研究团队的另一名成员Samuel King表示，AI或将助力噬菌体疗法重获新生。&lt;/strong&gt;“随着越来越多关于具威胁性的耐药病原体出现的证据涌现，我们将需要创新的替代解决方案——而噬菌体疗法无疑是其中之一。”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;出于安全考虑，斯坦福大学的初步研究基于一种非致病性大肠杆菌菌株，并使用了一种未针对能够感染动植物等更复杂细胞的病毒进行训练的基因组语言模型。&lt;/strong&gt;不过，该技术未来可能涵盖范围更广的病毒，并扩展到设计完全新型的生物体，而无需从天然基因组出发。&lt;/p&gt;
+&lt;p&gt;据悉，Hie及其同事利用名为Evo1和Evo2的AI模型设计出了这些新型病毒基因组。这些模型基于200万种噬菌体的遗传数据进行了深度训练。为降低设计出高危病毒的风险，研究团队在训练数据中特意剔除了可感染植物、人类或动物的病毒遗传代码。&lt;/p&gt;
+&lt;p&gt;AI随后生成了数千个潜在基因组，研究人员从中筛选出近300个在实验室中进行人工合成。这些基因组被导入细菌内部，由细菌读取其遗传代码并批量“吐出”新型噬菌体。这一过程的成功率并不高：最终仅有16种噬菌体证实具备生物活性。而将它们混合使用后，迅速克服了两种不同大肠杆菌菌株的抗药性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Evo 2是一个开源项目，任何人都可以免费下载，自行设计新的基因组。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“我们目前没有将这项工作商业化的计划，”Hie表示。“我们是一个由慈善捐款和政府拨款资助的学术实验室。鉴于这项技术对健康和人类具有巨大的潜在益处，我们将基础技术公之于众，供尽可能多的人使用，这是我们的责任。”&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;生物安全担忧恐不容忽视？&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;尽管Hie坚信，这项技术带来的巨大裨益，远大于不法分子将其篡改用于生物恐怖主义的潜在风险，但约翰斯·霍普金斯大学健康安全中心的Thomas Inglesby与Moritz Hanke在同期《科学》杂志上撰文警告称，该研究“提出了极其紧迫的生物安全与生物防务课题”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Inglesby和Hanke在赞扬斯坦福大学科学家在研究中采取的预防措施的同时，也指出：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“现有的治理框架不足以监管生成式基因组学……问题已不再是生成式病毒基因组设计是否会出现，而是社会能否建立起一套监管机制，既能让其效益得以发挥，又能防止其造成严重危害。” &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;伦敦帝国理工学院合成基因组工程学教授Tom Ellis则表示，利用接受过危险病原体遗传代码训练的AI可能会被用来设计危害更大的病毒。&lt;/strong&gt;而控制对遗传数据的访问，并对制造看似危险的基因组实行限制将会起到帮助。&lt;/p&gt;
+&lt;p&gt;“各国政府已经在努力开展这项工作，”他补充道。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;伦敦国王学院科学与国际安全副教授Filippa Lentzos博士指出，目前最关键的干预时机是在合成DNA的环节。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“看清更宏观的治理全貌至关重要，绝不能将监管仅仅死扣在AI模型本身，”她表示，“多层次的防护方案才更具切实意义：在模型开发与获取端设置安全屏障、建立负责任的研究审查机制、实施基因合成筛选，并全面落实既有的实验室生物安全与生物防务规范。”&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cls.cn</author><pubDate>Fri, 07 Aug 2026 08:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFA1WTVjNzl0NG5SNnVXUThxd2tfMEoyVlVrUFI0NG9QUFAtNGd1a0pmQ3pGaGJZdUtDS1E3emdCVFRXQWVxZHZ3QQ</guid></item><item><title>印度要搞自主AI：模型靠中国，芯片靠美国 - news.ifeng.com</title><link>https://news.ifeng.com/c/8vOieX1f4iR</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;（文/赖家琪 编辑/吕栋）&lt;/p&gt;&lt;p&gt;这两年，印度在人工智能（AI）领域可谓雄心勃勃——今年2月举办了“有史以来规模最大的”人工智能影响力峰会后，8月6日又宣布大力支持本土AI和半导体产业……&lt;/p&gt;&lt;p&gt;一切似乎正有模有样地进行着。然而，印度AI产业目前的现实情况是，既没有本土前沿模型，也缺乏自己的AI基础设施。这使得印度企业不仅离不开美国企业提供的先进GPU（图形处理器）芯片，也越来越多地“依赖”性能不输美国、成本更低的中国AI模型。&lt;/p&gt;&lt;p&gt;对于这一现实，印度塔克沙希拉研究所（Takshashila Institution）的两位研究员普拉奈·科塔斯坦（Pranay Kotasthane）和巴拉特·雷迪（Bharath Reddy）似乎并不觉得有什么问题，反而认为在大模型和AI基础设施上依靠中美，是印度实现“技术自主”前的重要路径。&lt;/p&gt;&lt;p&gt;两人7月22日在《印度斯坦时报》刊文建议，印度应两手抓，趁中国模型仍可获取时，尽快提高模型微调、评估和测试等能力，同时面对挑衅也要忍耐，靠维系与美国的关系来确保尖端芯片供应，为印度实现“技术自主”争取时间和空间。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;印度要造AI生态，先用上中国大模型&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;据美国《财富》杂志印度版网站8月6日报道，印度电子和信息技术部表示，政府已支持20个本土基础模型研发项目，批准了237个AI项目并提供补贴算力支持，还通过了12个总承诺投资规模达到1.64万亿卢比（约合1161千亿元人民币）的半导体制造项目。&lt;/p&gt;&lt;p&gt;在印度的规划中，AI和半导体产业将成为其摆脱海外技术依赖、提高全球科技竞争力的重要抓手。&lt;/p&gt;&lt;p&gt;近年来，印度不断强化AI战略布局。该国政府2024年启动“印度AI使命”，计划在五年内投入约1037亿卢比，建设一个强大且包容的完整AI生态。&lt;/p&gt;&lt;p&gt;印度政府设想，AI战略是其摆脱美国、中国等外部技术依赖的一场“自主革命”，但现实却没有按照他们的剧本走。&lt;/p&gt;&lt;p&gt;越来越多印度开始在工作流中引入中国模型。印度Mirae Asset Venture Investments India首席执行官普尼特·库马尔（Puneet Kumar）7月告诉《日经亚洲》，自2025年年中以来，他接触到的多家印度消费科技初创企业都在使用中国开放权重AI模型，因为这有助于将成本降低“一个数量级”。&lt;/p&gt;&lt;p&gt;报道称，微软依托其Foundry平台在印度南部提供的DeepSeek模型每百万输入词元的费用在19美分至1.74美元之间，每百万输出词元的价格在51美分至5.4美元之间。月之暗面旗下的Kimi模型的输入成本最高为95美分，输出成本最高为4美元。&lt;/p&gt;&lt;p class="textAlignCenter detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/res/2026/611EB78B099C6CA7FE90757778268E307DA3AA39_size88_w600_h404.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="在印度，中国AI模型的价格远低于美国AI模型。 《日经亚洲》"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;在印度，中国AI模型的价格远低于美国AI模型。 《日经亚洲》&lt;/p&gt;&lt;p&gt;相比之下，OpenAI旗下GPT-5.5系列模型的输入成本为每百万输入词元5美元至12美元，每百万输出成本则在30美元至54美元之间。&lt;/p&gt;&lt;p&gt;“美国模型价格昂贵，而且很多基础任务根本不需要它们。”库马尔形容说，“这完全是杀鸡用宰牛刀，就像在拥挤的城市道路上开跑车一样。”&lt;/p&gt;&lt;p&gt;而且，开放权重模型允许用户获取模型参数，并在自己的设备上部署和修改，而不必完全依赖公司提供的API服务。这与OpenAI、Anthropic等美国公司的闭源模型不一样，使中国模型的优势愈发凸显。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;“中国AI，比美国模型更具主权属性”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;对于希望尽快用上AI的印度企业来说，相较于成本高昂的美国模型以及至今没有竞争力的本土模型，中国AI模型日益成为一个不容忽视的现实选择。&lt;/p&gt;&lt;p&gt;印度塔克沙希拉研究所的研究员普拉奈·科塔斯坦和巴拉特·雷迪也认为，在缺乏本土前沿模型的情况下，相较于美国专有模型，使用中国开放AI模型可能反而更具主权属性。&lt;/p&gt;&lt;p&gt;他们指出，当某个政府部门或银行基于Claude或ChatGPT搭建工作流程时，每一次查询都由一家受美国司法管辖的公司进行处理。一旦美国政策发生变化，比如实施出口管制或制裁，访问权限被取消，相关工作流程也将立即被中断。&lt;/p&gt;&lt;p&gt;但如果一家印度金融服务企业在印度数据中心租用的GPU上运行一个中国开放权重模型，这种风险几乎不存在。因为模型权重只是存储在印度硬件上的一组静态参数文件，数据不会离开印度，中国模型开发方与模型部署之间不存在持续连接，没有可以撤销访问权限的API，也无法获取用户数据。&lt;/p&gt;&lt;p&gt;科塔斯坦和雷迪称，目前印度大型企业和监管机构对使用这些中国开放权重模型仍持谨慎态度，他们怀疑其中存在所谓“后门”。但事实上，开放权重模型只是由数十亿个权重和参数组成的一组数据，本身并不存在“后门”。&lt;/p&gt;&lt;p&gt;“如果推理过程运行在印度数据中心的印度GPU上，那么整个数据链路都在本国境内。中国实验室在这一过程中并不比一本教材的作者在他国有人阅读这本书时扮演的角色更多。”他们在印度媒体《印度斯坦时报》7月底刊发的文章中写道。&lt;/p&gt;&lt;p&gt;文章直言，印度部分人将中国硬件（可能存在物理后门）或中国资本（可能带来政治影响）的风险，套用到中国模型权重上，这是一个“错误”。&lt;/p&gt;&lt;p&gt;安全研究人员确实发现，神经网络可能存在“潜伏代理”和木马风险，即模型在常规基准测试中表现正常，却可能在特定触发条件下产生被隐蔽操控的输出。不过，这类风险并非开放权重模型所独有。&lt;/p&gt;&lt;p&gt;对于外界炒作的所谓中国可能像管制镓、锗、锑等金属和稀土技术那样，对AI模型实施出口管制，科塔斯坦和雷迪认为，当前中国开放权重模型仍可不受限制地流向海外，表明中方尚未把这一代AI工具视为需要限制出口的战略资源。&lt;/p&gt;&lt;p&gt;就算未来中国真的限制其出口，科塔斯坦和雷迪表示，已经公开的模型权重无法收回，任何管制只能针对能力更强的下一代模型。这更加表明，“印度需要建设本土AI推理平台，以可信的中立方身份同时提供中美两套模型生态的产品”。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;“就算美国挑衅，印度也要抱紧大腿保芯片”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;围绕印度如何以“可信的中立方身份”提供中美模型生态的替代产品，科塔斯坦和雷迪提出了四点建议。&lt;/p&gt;&lt;p&gt;开放模型与专有API的风险性质不同，政策应对也应有所区别。第一，印度企业应积极发展本土AI推理基础设施，能够在本国硬件上运行任何模型，同时确保数据不离开国境。印度需要多个AI推理服务提供商，而不是一个单一的国家AI云平台。&lt;/p&gt;&lt;p&gt;第二，监管机构应关注模型部署层面，包括数据流向、谁控制算力以及是否存在审计记录等，而不是简单关注开发模型权重的国家来源。对低价中国模型采取全面怀疑的态度，将带来高昂的商业成本，这不仅会阻止印度企业获得高性能、低成本的模型，也无法真正解决主权风险，无法减少对境外专有API的依赖。&lt;/p&gt;&lt;p&gt;第三，时间因素非常重要。如果中国未来限制模型出口，印度需要提前建立吸收现有资源的能力，包括模型微调、评估和红队测试（模拟真实世界恶意攻击者的对抗性安全评估方法）等。“建设本土算力需要数月时间，因此现在就必须开始行动。”&lt;/p&gt;&lt;p&gt;第四，开放权重无法解决的一个问题是，印度用于AI推理的每一块GPU，目前都由美国企业设计，而这可能受到美国出口管制影响。开放权重解决的是模型访问和数据流问题，而不是算力供应链问题。&lt;/p&gt;&lt;p&gt;科塔斯坦和雷迪对此给出的解决方案是，印度目前唯一的选择是与美国保持相对良好的关系，参与类似“硅和平”（Pax Silica）的倡议。&lt;/p&gt;&lt;p&gt;二人称，这并不意味着印度需要在所有问题上都认同美国，而是继续保持接触，就像印度过去那样，“尽管受到重大挑衅，也要继续与美国保持沟通”。&lt;/p&gt;&lt;p&gt;科塔斯坦和雷迪的上述建议是基于印度现实的一条潜在路径，但这恰恰反映出，所谓“印度AI自主”，不过是该国又一个需要夹在中美之间“平衡”的领域。事实上，印度距离真正的自主AI，还有很长的路要走。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>news.ifeng.com</author><pubDate>Fri, 07 Aug 2026 08:18:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTFBBbVlaaEdzMjZubllPazNldUlCSng1a0pWQ1BBZFJrYU93el9PN29wQ2lCaE9GWERyVlRKbmFCV3dxNFU3bE1vVlhOVE0</guid></item><item><title>仅380g小到离谱的迷你主机！希未AideaMini R15预售：价格有惊喜 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142190.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;仅380g小到离谱的迷你主机！希未AideaMini R15预售：价格有惊喜&lt;/p&gt;
           
@@ -211,7 +379,26 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 08:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5wbnhfczgzcS1QUTg2VDVEdkNxSzA3Z011UEVtOTZlY1ZLaVpLZERiaG1qQ0NpSjhZckU4ZnV6M1VhU3VCTGE0ZnhEczdfSFNpVFRWZjJlcDY</guid></item><item><title>戚薇把自己做成AI了！分身名叫“韩清夏”造型超酷 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142166.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 08:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5wbnhfczgzcS1QUTg2VDVEdkNxSzA3Z011UEVtOTZlY1ZLaVpLZERiaG1qQ0NpSjhZckU4ZnV6M1VhU3VCTGE0ZnhEczdfSFNpVFRWZjJlcDY</guid></item><item><title>苹果上调多款设备以旧换新回收价格 并新增多款安卓机型 - 东方财富</title><link>https://wap.eastmoney.com/a/202608073835183146.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
+        
+        &lt;p class="related"&gt;
+
+        &lt;/p&gt;
+
+        
+
+        
+        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
+        &lt;p class="layer"&gt;&lt;/p&gt;
+        
+        
+        
+
+        
+
+        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Fri, 07 Aug 2026 08:00:26 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5sQjhPakM4d3d0aUZDdzQ3VEZ5Q3U3TXNleHFzZWk0UWZlZVl3UHJxUjF5ZnE1YWZpaVNvMWN2cVBrN3pudFRkeVBmR1F0cGxhRU9DYXhPUVpRZWx0eTVqZg</guid></item><item><title>戚薇把自己做成AI了！分身名叫“韩清夏”造型超酷 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142166.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;span&gt;&lt;strong&gt;演员戚薇近日正式官宣推出个人AI数字分身“韩清夏”。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;戚薇本人通过微博发文“你好，我不是戚薇”，引发关注。&lt;strong&gt;随后其工作室同步确认，该数字分身名为“韩清夏”，定位为解锁新次元的虚拟角色。&lt;/strong&gt;&lt;/p&gt;
@@ -230,7 +417,59 @@
  
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 07:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE04NmdXTEkyOXIyeUkwaHFtUXZBWUpWMkQxYmdub3UzcDBCTmZuRW5TR1MxZEhyMndNOWxqQzhGSmMwMHZKN0ZPdzN4c0VHMTVQcXdDS2N3QXE</guid></item><item><title>Cloudflare Wallets 正式发布：为智能体式互联网打造的可编程钱包 - Cloudflare Blog</title><link>https://blog.cloudflare.com/zh-cn/wallets/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" data-astro-cid-qjtkll3n&gt;&lt;p&gt;目前，AI 智能体很难尝试新的 API。智能体往往不得不浏览为人类而非为智能体设计的登录页面、联系人类添加支付方式、生成 API 密钥，最后弄清楚如何调用该 API。&lt;/p&gt;&lt;p&gt;智能体难以完成这个流程，有两个原因：一是缺少可用于 API 注册的稳定身份标识，二是没有原生的支付能力。因此智能体往往难以接入软件，从而制约了智能体商务的发展。AI 智能体经常完全放弃这些任务，将注册、支付方式和 API 密钥生成交还给人类。这使得智能体很难尝试和比较多个 API。&lt;/p&gt;&lt;p&gt;为此，我们创建了 Cloudflare Wallets。从今天开始，您可以为自己的账户&lt;a href="https://cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;申领一个 Cloudflare Wallet 用户名&lt;/u&gt;&lt;/a&gt;，它将提供一个独特的用户标识，以便您更好地与商家进行互动。很快，您将能够设置并使用您的 Cloudflare Wallet 来支付 API 和内容费用。&lt;/p&gt;&lt;p&gt;本月早些时候，我们推出了 &lt;a href="https://blog.cloudflare.com/monetization-gateway/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Monetization Gateway&lt;/u&gt;&lt;/a&gt;，以帮助 Cloudflare 客户为他们的网站和应用获取收益。Monetization Gateway 将支持使用&lt;a href="https://www.x402.org/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;x402 协议&lt;/u&gt;&lt;/a&gt;的微支付，使支付操作能够直接绑定到 HTTP 请求。这些微支付功能可用于支付从 AI 推理、数据到内容等多种费用。如果您想为 Monetization Gateway 以及其他&lt;a href="https://developers.cloudflare.com/agents/tools/payments/x402/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;x402 兼容端点&lt;/u&gt;&lt;/a&gt;背后的服务付款或收款，您将需要一个钱包。 &lt;/p&gt;&lt;p&gt;Cloudflare 钱包将允许您在网络上存储稳定币、购买服务和接收资金。每个拥有钱包的账户还可以为其智能体创建虚拟钱包，使其能够购买 API、MCP 工具、内容等。您将能够为虚拟钱包定义安全护栏（如额度限制、允许列表和最大交易金额），以帮助智能体能够安全地使用您账户中的资金。这将支持您的智能体以低摩擦和风险可控的方式尝试多种 API。Wallet 用户将可以选择分享我 Cloudflare Wallet 用户名，这将在与商家互动时提供稳定的身份标识。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;打造双边智能体市场&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Cloudflare 的&lt;a href="https://blog.cloudflare.com/monetization-gateway/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Monetization Gateway&lt;/u&gt;&lt;/a&gt; 将允许符合条件的 Cloudflare 客户将其资源（如内容或 API）以以无头方式出售给智能体买家。但要使该市场真正发展起来，智能体需要更多工具以机器原生的方式从商家购买。Wallets 将为 Cloudflare 的Agents SDK 增加另一种工具，使 AI 智能体能够轻松使用微支付购买所需的 API 和内容。&lt;/p&gt;&lt;p&gt;Cloudflare 将有两种类型的钱包：账户钱包和虚拟钱包。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;账户钱包&lt;/strong&gt;是为 Cloudflare 账户的所有者和用户设计的。他们将能够添加资金，委托智能体管理的虚拟钱包进行支出，并根据需要提取资金。 &lt;/p&gt;&lt;p&gt;&lt;strong&gt;虚拟钱包&lt;/strong&gt;，则专为智能体设计，通过 API 密钥操作。在虚拟钱包中，智能体将能够根据其权限使用资金。其最大支出将由账户钱包所有者设定的限额确定。该框架允许代理代表用户自主行动，无需持续的手动审批，同时防止智能体过度支出。&lt;/p&gt;&lt;figure class="emdash-image pt-portable-image" data-astro-cid-7nvefuv6&gt;&lt;/figure&gt;&lt;h2&gt;&lt;strong&gt;探索的自由&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;虚拟钱包令人兴奋之处在于，它将使智能体能够发挥其最大优势：探索数十个乃至数百个服务，并为特定场景找到最佳方案。通过 x402 协议进行的稳定币微支付将简化 API 试用流程，无需创建帐户，以最小摩擦测试新的选项。虚拟钱包上的支出上限设计使人类可以让智能体在安全的支出限制范围内自主探索。虽然这些限制表面上是约束，但反而为智能体提供了更大的自由度。如果智能体的限额是 10 美元，那么您对其支出的担忧将低于 1000 美元的情况。如果尝试一个 API 的成本仅为几美分，那么 10 美元足以用于探索和评估多个选项。&lt;/p&gt;&lt;p&gt;一旦您或您的智能体选定了要使用的 API，您在帐户钱包中设置的政策将充当虚拟钱包的成本控制机制。想为每位员工配置每周 100 美元的 AI 推理预算吗？只需为帐户钱包配置适当的余额，并为每位员工创建配置该规则的虚拟钱包。超出虚拟钱包支出上限的任何人都可以向拥有帐户钱包修改权限的人员申请手动覆盖。&lt;/p&gt;&lt;p&gt;我们希望使人们能够为帐户钱包轻松制定灵活但严格的支出政策，从而无需每日持续监管。当出现异常情况时，例如支出意外快速增加，人员将能够审查并确认一切是否按预期运作。当支出确认为有意行为时，帐户钱包管理员可以提高限额或者一次性增加资金。如果支出属于无意行为，则向虚拟钱包添加资金的支出政策通过实施上限而发挥了作用。&lt;/p&gt;&lt;p&gt;我们正在努力使注入资金和使用这些钱包尽可能简单。我们将首先在支持的地域范围内推出简便的资金出入机制，并为符合条件的用户提供稳定币自助充值的选项。虽然互联网不会在一夜之间完全转变，但由于&lt;a href="https://radar.cloudflare.com/" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;大部分网络流量现&lt;/u&gt;&lt;/a&gt;已由智能体驱动，我们很高兴为智能体和商家提供一流的智能体商务工具。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;超越支付本身&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;允许人类向智能体委派权限以轻松购买和销售服务，这是一个有益的起点。但这种委派对于商家来说在与智能体互动时并不总是显而易见的。如今，如果一个智能体来访问您的网站，尽管该智能体代表某个个人或组织行事，您可能对他们作为用户的身份知之甚少。这种身份识别的缺失对许多传统网络商业模式构成了挑战。向个人或组织提供一周免费试用或注册积分很简单。由于智能体缺乏稳定身份，且每个人可以创建和控制多个智能体，向它们提供同样的福利将变得困难。&lt;/p&gt;&lt;p&gt;我们的解决方案是将钱包通过&lt;a href="https://cloudflare.pay/" target="_blank" rel="noopener noreferrer"&gt; &lt;/a&gt;&lt;a href="http://cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt;&lt;u&gt;cloudflare.pay&lt;/u&gt;&lt;/a&gt; 关联到一个 Cloudflare 帐户。&lt;a href="https://cloudflare.pay/" target="_blank" rel="noopener noreferrer"&gt; &lt;/a&gt;&lt;a href="http://cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt;&lt;u&gt;cloudflare.pay &lt;/u&gt;&lt;/a&gt;将允许智能体选择性地识别自己的身份，因为其身份是该账户的一个委托。某个研究智能体可能位于 &lt;a href="http://research.example.cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt; research.example.cloudflare.pay&lt;/a&gt;，让商家知道这是来自特定组织的智能体。这种方法将允许智能体保持一致和持久的身份，提升所有参与方的体验。智能体完全可以选择是否声明其身份，同时商家决定是否优先与已知智能体进行交易。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;智能体标识符应为人类可读&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;我们认为对智能体的处理方法将类似于 VPN ：身份未识别，并不意味着其本质上不可信，但他们需要提供更多证明。因此我们拥有 &lt;a href="https://www.cloudflare.com/products/turnstile/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Turnstile&lt;/u&gt;&lt;/a&gt; 和其他来自&lt;a href="https://www.cloudflare.com/products/bot-management/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Bot Management &lt;/u&gt;&lt;/a&gt;的工具来检测机器人。我们的身份原语将以上述过去的工作成果为基础进行构建。例如，&lt;a href="https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;Web Bot Auth&lt;/u&gt;&lt;/a&gt; 已经允许智能体通过密钥对注册其身份。附加到 Cloudflare 钱包的 ID 使这个密钥对变得易于人类读取。&lt;/p&gt;&lt;p&gt;我们知道，智能体身份标准正在快速演变，因此我们希望使这个方法保持简单。我们提议为不太易读的密钥对配备一个人类可读的标识符，类似于&lt;a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank" rel="noopener noreferrer"&gt;​&lt;/a&gt; &lt;a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank" rel="noopener noreferrer"&gt;&lt;u&gt;DNS &lt;/u&gt;&lt;/a&gt;中使用的 URL 和 IP 地址配对。我们不打算制定特定的数据架构或验证标准。我们只希望让身份易于记忆并便于声明。随着用于充实智能体身份的数据架构在 &lt;a href="https://blog.cloudflare.com/x402/" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;x402 Foundation&lt;/u&gt;&lt;/a&gt; 的推动下逐步完善，我们承诺采纳这些架构，并有意鼓励业界同样这样做。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;智能体商务的未来&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Cloudflare 希望为智能体商务的成功提供所有必要的基础组件。Monetization Gateway 将为销售者提供一种无需建立传统支付基础设施即可收款的方法。Wallets 将提供通过智能体以无头方式付款的方式。Identity 将允许商家与已确认身份的买家进行沟通，或执行身份验证要求。&lt;/p&gt;&lt;p&gt;所有这些构建模块将为互联网创建一个无头市场。如果您对此感兴趣并希望参与其中，&lt;a href="https://cloudflare.pay/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;欢迎立即申领您的用户名&lt;/u&gt;&lt;/a&gt;。我们期待看到您构建并变现的项目。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Cloudflare Blog</author><pubDate>Fri, 07 Aug 2026 07:04:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1iRVROS0NxX2YwQU1YSjlQd1U2dENtMzU4OFdtZWVnRlB0M01kQ2JWVEY2TkhPbUR1dGNWRnFtMzVNUEdOYmhTSGk5MWl2SXpkZ0JUVA</guid></item><item><title>火山引擎正式上线豆包Seedance 2.5：电影级细腻质感 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142136.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 07:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE04NmdXTEkyOXIyeUkwaHFtUXZBWUpWMkQxYmdub3UzcDBCTmZuRW5TR1MxZEhyMndNOWxqQzhGSmMwMHZKN0ZPdzN4c0VHMTVQcXdDS2N3QXE</guid></item><item><title>国产龙虾Claw大对决：百度第一、小米第二 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142148.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月7日消息，测评机构SuperCLUE放出第二期XClaw龙虾智能体完整榜单。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本次一共纳入10款主流国产办公AI，全部产品三次测试平均分都突破91分，整体水准大幅提升，百度文心助手拿下总分第一，小米MiMo Claw位列第二。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/12690158-6920-452f-bb15-2c27ee5928ff.png" target="_blank"&gt;&lt;img alt="国产龙虾Claw大对决：百度第一、小米第二" h="450" src="//img1.mydrivers.com/img/20260807/S12690158-6920-452f-bb15-2c27ee5928ff.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;整套测评完全贴合职场真实工作，划分五大核心能力板块，分别是数据处理、内容创作、记忆能力、代码开发、研究分析。&lt;/p&gt;
+&lt;p&gt;测试不会只跑一次结果，每一项任务都会独立重复三次，取平均值作为最终得分，避免单次波动带来的误差。&lt;/p&gt;
+&lt;p&gt;从整体榜单来看，10款产品均分达到94.53分，第一名和最后一名仅相差6.31分，头部四款产品分数全部超过96分，竞争十分激烈。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;百度文心助手总分97.62分排名首位，第二名小米MiMoClaw和第三名腾讯WorkBuddy只差0.13分&lt;/strong&gt;，微小分差能看出头部产品综合实力已经非常接近。&lt;/p&gt;
+&lt;p&gt;分维度对比能看出明显强弱分化，内容创作、记忆能力两大板块所有产品得分都接近满分，写文案、长对话留存上下文这类基础办公需求，各家基本都能稳定完成。&lt;/p&gt;
+&lt;p&gt;数据处理、行业调研得分次之，唯独代码开发维度拉开巨大断层，行业平均只有86.99分，最高分和最低分相差17.59分。&lt;/p&gt;
+&lt;p&gt;其中，&lt;strong&gt;小米MiMo Claw在代码开发项目里表现最好，高达97.22分，断层领先其他龙虾。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/7e5348fd-1b45-4545-8c43-0c8c5cd88409.png" target="_blank"&gt;&lt;img alt="国产龙虾Claw大对决：百度第一、小米第二" h="450" src="//img1.mydrivers.com/img/20260807/S7e5348fd-1b45-4545-8c43-0c8c5cd88409.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;稳定性也是本次测评重点考察的指标，三次测试分数波动越小，代表日常使用表现越稳定。WorkBuddy和MaxClaw波动数值最低，每次输出结果一致性很强。&lt;/p&gt;
+&lt;p&gt;部分总分靠后的产品多次测试差异巨大，相同指令每次输出内容参差不齐，日常办公容易出现失误。&lt;/p&gt;
+&lt;p&gt;现在国产办公AI已经摆脱基础功能比拼，进入细节、稳定度、专业任务的精细化竞争阶段。&lt;/p&gt;
+&lt;p&gt;普通日常文案、简单表格处理，绝大多数产品都能胜任；如果经常处理大量数据、编写程序，文心助手、MiMo Claw这类头部产品会更适配企业办公需求。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="国产龙虾Claw大对决：百度第一、小米第二" h="352" src="//img1.mydrivers.com/img/20260807/73c0b7c9-4161-448c-a2a9-59f7171e9588.png" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 07:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1IdkxRUkc3YkFfYXlGdnRUalVWT3kzRWp4WVRkak1DamFhcllEai1wdUdmMWM0dE8yazVpemNHUkh1dC1Ja2t6Q3N1cXRfNG9HakQzcWQ4cTA</guid></item><item><title>中国运动相机半年销量312万台！大疆杀疯了 一家拿下74%市场 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142140.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月7日消息，今日，研究机构洛图科技发布2026年上半年中国运动相机市场销售数据。&lt;/p&gt;
+&lt;p&gt;数据显示，&lt;strong&gt;2026年上半年，中国运动相机市场线上全渠道销量达到311.9万台，销售额82.0亿元，同比增幅双双超过90%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;洛图科技指出，当前运动相机市场的增长动力，正从专业户外拍摄逐步转向全民日常短视频创作。&lt;/p&gt;
+&lt;p&gt;随着短视频、户外生活和轻量化UGC创作进一步普及，以及露营、骑行、潜水、城市旅拍、自媒体日常记录等场景不断拓展，运动相机正在从极限运动专业器材，转变为大众随身创作工具。&lt;/p&gt;
+&lt;p&gt;品牌格局方面，国内运动相机市场呈现出明显的头部集中效应。&lt;/p&gt;
+&lt;p&gt;2026年上半年，在中国运动相机线上市场，大疆和影石两大品牌合计拿下89.4%的销量份额和97.9%的销售额份额，市场“马太效应”进一步加剧。&lt;/p&gt;
+&lt;p&gt;其中，&lt;span&gt;&lt;strong&gt;大疆以绝对优势排名第一，线上市场销量占比达到74.0%，销售额占比达到80.9%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在细分市场中，大疆Osmo Pocket系列位居云台相机销量榜首；Action系列则凭借无人机影像算法积累、全场景配件体系等优势，在广角运动相机市场同样领跑行业。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;影石Insta360紧随其后，整体线上市场销量占比为15.4%，销售额占比为17.0%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;影石的传统优势主要集中在全景相机领域，不过今年上半年，其推出Luna Ultra云台相机，正式进入大疆长期占优的云台相机赛道，形成“全景相机+云台相机”的双产品线布局。&lt;/p&gt;
+&lt;p&gt;相比之下，其他品牌的生存空间已被大幅压缩。&lt;/p&gt;
+&lt;p&gt;数据显示，除大疆和影石外，其余品牌合计仅占约10%的销量份额和2%的销售额份额。&lt;/p&gt;
+&lt;p&gt;其中，曾经的运动相机代表品牌GoPro在中国市场正逐渐被边缘化。&lt;/p&gt;
+&lt;p&gt;洛图科技指出，&lt;strong&gt;其高价旗舰HERO13受众相对狭窄，同时存在剪辑流程较繁琐、生态竞争力不足等问题，在国内大众短视频创作市场的竞争力已经明显下降。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此外，山狗、SJCAM、AKASO等百元级入门品牌更多依赖海外跨境市场，在国内线上和线下渠道的话语权有限，低价机型市场份额也在持续缩水。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260807/6c8a7e4556c6466093b29b81f068026b.png" target="_blank"&gt;&lt;img alt="中国运动相机半年销量312万台！大疆杀疯了 一家拿下74%市场" h="747" src="//img1.mydrivers.com/img/20260807/s_6c8a7e4556c6466093b29b81f068026b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 07:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1VZklsWGRvX1E2dk15cmRTZ0x3cHk1VzBhVzdPMENBYUtwWFFHcXlSdFlLY1dyaVN2MjV1dmRCSTlEcjNRRnpsNm5uQVNJdDZpVDFVd1VET0E</guid></item><item><title>Cloudflare Wallets 正式发布：为智能体式互联网打造的可编程钱包 - Cloudflare Blog</title><link>https://blog.cloudflare.com/zh-cn/wallets/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-content" data-astro-cid-qjtkll3n&gt;&lt;p&gt;目前，AI 智能体很难尝试新的 API。智能体往往不得不浏览为人类而非为智能体设计的登录页面、联系人类添加支付方式、生成 API 密钥，最后弄清楚如何调用该 API。&lt;/p&gt;&lt;p&gt;智能体难以完成这个流程，有两个原因：一是缺少可用于 API 注册的稳定身份标识，二是没有原生的支付能力。因此智能体往往难以接入软件，从而制约了智能体商务的发展。AI 智能体经常完全放弃这些任务，将注册、支付方式和 API 密钥生成交还给人类。这使得智能体很难尝试和比较多个 API。&lt;/p&gt;&lt;p&gt;为此，我们创建了 Cloudflare Wallets。从今天开始，您可以为自己的账户&lt;a href="https://cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;申领一个 Cloudflare Wallet 用户名&lt;/u&gt;&lt;/a&gt;，它将提供一个独特的用户标识，以便您更好地与商家进行互动。很快，您将能够设置并使用您的 Cloudflare Wallet 来支付 API 和内容费用。&lt;/p&gt;&lt;p&gt;本月早些时候，我们推出了 &lt;a href="https://blog.cloudflare.com/monetization-gateway/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Monetization Gateway&lt;/u&gt;&lt;/a&gt;，以帮助 Cloudflare 客户为他们的网站和应用获取收益。Monetization Gateway 将支持使用&lt;a href="https://www.x402.org/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;x402 协议&lt;/u&gt;&lt;/a&gt;的微支付，使支付操作能够直接绑定到 HTTP 请求。这些微支付功能可用于支付从 AI 推理、数据到内容等多种费用。如果您想为 Monetization Gateway 以及其他&lt;a href="https://developers.cloudflare.com/agents/tools/payments/x402/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;x402 兼容端点&lt;/u&gt;&lt;/a&gt;背后的服务付款或收款，您将需要一个钱包。 &lt;/p&gt;&lt;p&gt;Cloudflare 钱包将允许您在网络上存储稳定币、购买服务和接收资金。每个拥有钱包的账户还可以为其智能体创建虚拟钱包，使其能够购买 API、MCP 工具、内容等。您将能够为虚拟钱包定义安全护栏（如额度限制、允许列表和最大交易金额），以帮助智能体能够安全地使用您账户中的资金。这将支持您的智能体以低摩擦和风险可控的方式尝试多种 API。Wallet 用户将可以选择分享我 Cloudflare Wallet 用户名，这将在与商家互动时提供稳定的身份标识。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;打造双边智能体市场&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Cloudflare 的&lt;a href="https://blog.cloudflare.com/monetization-gateway/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Monetization Gateway&lt;/u&gt;&lt;/a&gt; 将允许符合条件的 Cloudflare 客户将其资源（如内容或 API）以以无头方式出售给智能体买家。但要使该市场真正发展起来，智能体需要更多工具以机器原生的方式从商家购买。Wallets 将为 Cloudflare 的Agents SDK 增加另一种工具，使 AI 智能体能够轻松使用微支付购买所需的 API 和内容。&lt;/p&gt;&lt;p&gt;Cloudflare 将有两种类型的钱包：账户钱包和虚拟钱包。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;账户钱包&lt;/strong&gt;是为 Cloudflare 账户的所有者和用户设计的。他们将能够添加资金，委托智能体管理的虚拟钱包进行支出，并根据需要提取资金。 &lt;/p&gt;&lt;p&gt;&lt;strong&gt;虚拟钱包&lt;/strong&gt;，则专为智能体设计，通过 API 密钥操作。在虚拟钱包中，智能体将能够根据其权限使用资金。其最大支出将由账户钱包所有者设定的限额确定。该框架允许代理代表用户自主行动，无需持续的手动审批，同时防止智能体过度支出。&lt;/p&gt;&lt;figure class="emdash-image pt-portable-image" data-astro-cid-7nvefuv6&gt;&lt;/figure&gt;&lt;h2&gt;&lt;strong&gt;探索的自由&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;虚拟钱包令人兴奋之处在于，它将使智能体能够发挥其最大优势：探索数十个乃至数百个服务，并为特定场景找到最佳方案。通过 x402 协议进行的稳定币微支付将简化 API 试用流程，无需创建帐户，以最小摩擦测试新的选项。虚拟钱包上的支出上限设计使人类可以让智能体在安全的支出限制范围内自主探索。虽然这些限制表面上是约束，但反而为智能体提供了更大的自由度。如果智能体的限额是 10 美元，那么您对其支出的担忧将低于 1000 美元的情况。如果尝试一个 API 的成本仅为几美分，那么 10 美元足以用于探索和评估多个选项。&lt;/p&gt;&lt;p&gt;一旦您或您的智能体选定了要使用的 API，您在帐户钱包中设置的政策将充当虚拟钱包的成本控制机制。想为每位员工配置每周 100 美元的 AI 推理预算吗？只需为帐户钱包配置适当的余额，并为每位员工创建配置该规则的虚拟钱包。超出虚拟钱包支出上限的任何人都可以向拥有帐户钱包修改权限的人员申请手动覆盖。&lt;/p&gt;&lt;p&gt;我们希望使人们能够为帐户钱包轻松制定灵活但严格的支出政策，从而无需每日持续监管。当出现异常情况时，例如支出意外快速增加，人员将能够审查并确认一切是否按预期运作。当支出确认为有意行为时，帐户钱包管理员可以提高限额或者一次性增加资金。如果支出属于无意行为，则向虚拟钱包添加资金的支出政策通过实施上限而发挥了作用。&lt;/p&gt;&lt;p&gt;我们正在努力使注入资金和使用这些钱包尽可能简单。我们将首先在支持的地域范围内推出简便的资金出入机制，并为符合条件的用户提供稳定币自助充值的选项。虽然互联网不会在一夜之间完全转变，但由于&lt;a href="https://radar.cloudflare.com/" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;大部分网络流量现&lt;/u&gt;&lt;/a&gt;已由智能体驱动，我们很高兴为智能体和商家提供一流的智能体商务工具。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;超越支付本身&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;允许人类向智能体委派权限以轻松购买和销售服务，这是一个有益的起点。但这种委派对于商家来说在与智能体互动时并不总是显而易见的。如今，如果一个智能体来访问您的网站，尽管该智能体代表某个个人或组织行事，您可能对他们作为用户的身份知之甚少。这种身份识别的缺失对许多传统网络商业模式构成了挑战。向个人或组织提供一周免费试用或注册积分很简单。由于智能体缺乏稳定身份，且每个人可以创建和控制多个智能体，向它们提供同样的福利将变得困难。&lt;/p&gt;&lt;p&gt;我们的解决方案是将钱包通过&lt;a href="https://cloudflare.pay/" target="_blank" rel="noopener noreferrer"&gt; &lt;/a&gt;&lt;a href="http://cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt;&lt;u&gt;cloudflare.pay&lt;/u&gt;&lt;/a&gt; 关联到一个 Cloudflare 帐户。&lt;a href="https://cloudflare.pay/" target="_blank" rel="noopener noreferrer"&gt; &lt;/a&gt;&lt;a href="http://cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt;&lt;u&gt;cloudflare.pay &lt;/u&gt;&lt;/a&gt;将允许智能体选择性地识别自己的身份，因为其身份是该账户的一个委托。某个研究智能体可能位于 &lt;a href="http://research.example.cloudflare.pay" target="_blank" rel="noopener noreferrer"&gt; research.example.cloudflare.pay&lt;/a&gt;，让商家知道这是来自特定组织的智能体。这种方法将允许智能体保持一致和持久的身份，提升所有参与方的体验。智能体完全可以选择是否声明其身份，同时商家决定是否优先与已知智能体进行交易。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;智能体标识符应为人类可读&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;我们认为对智能体的处理方法将类似于 VPN ：身份未识别，并不意味着其本质上不可信，但他们需要提供更多证明。因此我们拥有 &lt;a href="https://www.cloudflare.com/products/turnstile/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Turnstile&lt;/u&gt;&lt;/a&gt; 和其他来自&lt;a href="https://www.cloudflare.com/products/bot-management/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;Bot Management &lt;/u&gt;&lt;/a&gt;的工具来检测机器人。我们的身份原语将以上述过去的工作成果为基础进行构建。例如，&lt;a href="https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;Web Bot Auth&lt;/u&gt;&lt;/a&gt; 已经允许智能体通过密钥对注册其身份。附加到 Cloudflare 钱包的 ID 使这个密钥对变得易于人类读取。&lt;/p&gt;&lt;p&gt;我们知道，智能体身份标准正在快速演变，因此我们希望使这个方法保持简单。我们提议为不太易读的密钥对配备一个人类可读的标识符，类似于&lt;a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank" rel="noopener noreferrer"&gt;​&lt;/a&gt; &lt;a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank" rel="noopener noreferrer"&gt;&lt;u&gt;DNS &lt;/u&gt;&lt;/a&gt;中使用的 URL 和 IP 地址配对。我们不打算制定特定的数据架构或验证标准。我们只希望让身份易于记忆并便于声明。随着用于充实智能体身份的数据架构在 &lt;a href="https://blog.cloudflare.com/x402/" target="_blank" rel="noopener noreferrer"&gt;​&lt;u&gt;x402 Foundation&lt;/u&gt;&lt;/a&gt; 的推动下逐步完善，我们承诺采纳这些架构，并有意鼓励业界同样这样做。&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;智能体商务的未来&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Cloudflare 希望为智能体商务的成功提供所有必要的基础组件。Monetization Gateway 将为销售者提供一种无需建立传统支付基础设施即可收款的方法。Wallets 将提供通过智能体以无头方式付款的方式。Identity 将允许商家与已确认身份的买家进行沟通，或执行身份验证要求。&lt;/p&gt;&lt;p&gt;所有这些构建模块将为互联网创建一个无头市场。如果您对此感兴趣并希望参与其中，&lt;a href="https://cloudflare.pay/" target="_blank" rel="noopener noreferrer"&gt; &lt;u&gt;欢迎立即申领您的用户名&lt;/u&gt;&lt;/a&gt;。我们期待看到您构建并变现的项目。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Cloudflare Blog</author><pubDate>Fri, 07 Aug 2026 07:04:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiVEFVX3lxTE1iRVROS0NxX2YwQU1YSjlQd1U2dENtMzU4OFdtZWVnRlB0M01kQ2JWVEY2TkhPbUR1dGNWRnFtMzVNUEdOYmhTSGk5MWl2SXpkZ0JUVA</guid></item><item><title>火山引擎正式上线豆包Seedance 2.5：电影级细腻质感 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142136.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月7日消息，&lt;span&gt;&lt;strong&gt;今天，火山引擎正式上线豆包视频生成模型Seedance 2.5 API服务。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;相比Seedance 2.0，Seedance 2.5在指令遵循、长叙事、真人感、声画质感等能力上大幅提升。&lt;/p&gt;
@@ -253,7 +492,70 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 07:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9tWXFEak9fM3BmdW1iS0hDckxoRFg1SlBDeGRZZHlOSUdLRzJHeHNlbWl1TTRsNUk3ZjdfUmZzZWxJWVZfNTJQN21FX1RKUTVGczJhWjhlUzQ</guid></item><item><title>英媒：字节跳动正开发10万亿参数AI模型 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260807-9486328</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;英国媒体报道，中国科技巨头字节跳动正训练一款参数量高达10万亿的人工智能（AI）大模型，其体量规模可能已逼近美国AI头部企业Anthropic所开发的尖端系统Mythos。&lt;/p&gt;&lt;p&gt;路透社引述《金融时报》星期五（8月7日）的报道称，据知情人士透露，字节跳动的这款新模型目前正处于预训练阶段。这一过程通常需要耗时三到六个月，随后才能进入微调并最终发布。&lt;/p&gt;&lt;p&gt;报道指出，凭借10万亿的庞大参数量，字节跳动这款模型的体量将是中国AI新锐月之暗面旗下Kimi K3模型（拥有2.8万亿参数）的三倍有余。在此之前，美团的LongCat-2.0与DeepSeek的V4-Pro曾以1.6万亿的参数量领跑中国本土AI行业，国内也有多家竞争对手纷纷跨过了万亿参数的门槛。&lt;/p&gt;&lt;p&gt;在AI领域，参数是指模型从数据中学习到的数值设置，用于识别模式、生成答案并执行任务。它通常被视作衡量大模型规模的粗略指标，尽管规模并不绝对等同于模型的实际能力。&lt;/p&gt;&lt;p&gt;目前，外界很难将中国大模型与美国头部产品进行精准对标，原因在于OpenAI与Anthropic等巨头并未公开披露GPT-5.5、Fable或Mythos等闭源系统的具体参数量。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 07:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9tWXFEak9fM3BmdW1iS0hDckxoRFg1SlBDeGRZZHlOSUdLRzJHeHNlbWl1TTRsNUk3ZjdfUmZzZWxJWVZfNTJQN21FX1RKUTVGczJhWjhlUzQ</guid></item><item><title>内存一路缺货到2030年！明年产能全部售罄：巨头五年长约锁死产能 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142135.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;内存一路缺货到2030年！明年产能全部售罄：巨头五年长约锁死产能&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-07 15:00:50  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1142135-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月7日消息，据报道，&lt;span&gt;&lt;strong&gt;三星、SK海力士和美光三大存储原厂已向客户表示，2027年全年的DRAM和HBM产能已被科技巨头与AI相关企业全部预订完毕。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;由于2027年生产配额已被抢购一空，且目前没有额外产能规划，加上主要科技巨头和AI企业签署了长达五年的长期供应协议（LTA），提前包下尚未生产的存储产能。按照这些协议的时间跨度，存储缺货可能延续至2030年甚至更久。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;业界人士透露，目前可能还有厂商不清楚7至8月是分货关键期，“大家都不宣扬，就是怕太多人进来，结果自己分少了。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;NAND闪存同样面临需求大增的压力。虽然NAND市场供应商数量较多，产能尚未被完全瓜分，但涨价趋势已经十分明显。以WD SN7100 1TB PCIe 4.0 SSD为例，售价从今年1月的约110美元大涨至189美元，涨幅高达52%。&lt;/p&gt;
+&lt;p&gt;不到半年时间，同款SSD价格涨了将近一半，直接反映了存储涨价潮从DRAM向NAND蔓延的态势。&lt;/p&gt;
+&lt;p&gt;存储成本暴涨对消费电子的冲击早已经开始显现，索尼PlayStation主机售价已上调超过三分之一。苹果也已预告，由于内存采购成本剧增，下一代iPhone 18 Pro将大幅涨价。&lt;/p&gt;
+&lt;p&gt;对于消费者和PC玩家来说，做好长期面对高价硬件的心理准备，已经不是一句空话。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260807/de247f5b77a34c07bb451381b1aeb664.jpg" target="_blank"&gt;&lt;img alt="内存一路缺货到2030年！明年产能全部售罄：巨头五年长约锁死产能" h="400" src="//img1.mydrivers.com/img/20260807/s_de247f5b77a34c07bb451381b1aeb664.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 07:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBsTXNBeFdXZ0dZWEVVN0hCNXFnWngyV29randxYWxFcVB2ZDZQdlA5dm5XT2J3X2ZSckdLLWNjSlRRcDdTdDRORUlJeWw4VnhvU0xYQTA2WTU</guid></item><item><title>英媒：字节跳动正开发10万亿参数AI模型 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260807-9486328</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;英国媒体报道，中国科技巨头字节跳动正训练一款参数量高达10万亿的人工智能（AI）大模型，其体量规模可能已逼近美国AI头部企业Anthropic所开发的尖端系统Mythos。&lt;/p&gt;&lt;p&gt;路透社引述《金融时报》星期五（8月7日）的报道称，据知情人士透露，字节跳动的这款新模型目前正处于预训练阶段。这一过程通常需要耗时三到六个月，随后才能进入微调并最终发布。&lt;/p&gt;&lt;p&gt;报道指出，凭借10万亿的庞大参数量，字节跳动这款模型的体量将是中国AI新锐月之暗面旗下Kimi K3模型（拥有2.8万亿参数）的三倍有余。在此之前，美团的LongCat-2.0与DeepSeek的V4-Pro曾以1.6万亿的参数量领跑中国本土AI行业，国内也有多家竞争对手纷纷跨过了万亿参数的门槛。&lt;/p&gt;&lt;p&gt;在AI领域，参数是指模型从数据中学习到的数值设置，用于识别模式、生成答案并执行任务。它通常被视作衡量大模型规模的粗略指标，尽管规模并不绝对等同于模型的实际能力。&lt;/p&gt;&lt;p&gt;目前，外界很难将中国大模型与美国头部产品进行精准对标，原因在于OpenAI与Anthropic等巨头并未公开披露GPT-5.5、Fable或Mythos等闭源系统的具体参数量。&lt;/p&gt;
     
   &lt;p&gt;不过《金融时报》指出，据行业内部估算，Anthropic最先进的Mythos 5参数量约为8万亿，Fable 5约为5万亿。这意味着，单从规模指标来看，字节跳动研发的新模型在规模上已与Mythos相近。&lt;/p&gt;&lt;p&gt;目前，中国科技企业正不断压缩大模型的迭代与发布周期，以应对白热化的全球AI竞赛。它们正与美国同行展开激烈角逐，尝试在控制高昂运行成本的前提下，打造出更强大的系统。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Fri, 07 Aug 2026 06:30:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9BU3h5ZmtOcjItcktFQWtnWkVHLVEtXzkwZTJrcmJ4MTBSYzM3WVBXeWhNLUFQblRKUE1jYVNpakFTbjYxZGZXdzQ2bE5BNXhmQkMxSXJRTU03MklpQ25MX2J0ajlVcVlRS2c</guid></item><item><title>存储暴涨下苹果不会仁慈！iPhone 18 Pro系列价格预测：国行万元起步没啥问题 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142105.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
@@ -406,7 +708,7 @@
 &lt;p&gt;声明｜封面图使用 AI 生成&lt;/p&gt;
 
   &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Fri, 07 Aug 2026 04:10:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1QRFRkNVJzWkpITDFwTHJXZVB6Ync1NnVsd3JYSDlpRldEUEFlZlhjTy16blNFV1RnT3F1R1NxcTNoZGc</guid></item><item><title>创业板半日涨1.75%，PCB掀涨停潮，创新药大涨，恒科指下探回升转涨，AI大模型双雄再度爆发 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778909</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 07 Aug 2026 04:06:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE41Z2Z3RkZCTkpIZFlwdUhCdFJnbXZUTndNWjJzT2wwa0liOUl1LVc4djBtVm1NeWNKZEtGLXpDbmtRNDNlcF9Gd1dRODJlOU9tcVZv</guid></item><item><title>别等了！商家预警RTX 5070 Ti/5080将缺货：再犹豫高价都买不到 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142088.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Fri, 07 Aug 2026 04:10:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1QRFRkNVJzWkpITDFwTHJXZVB6Ync1NnVsd3JYSDlpRldEUEFlZlhjTy16blNFV1RnT3F1R1NxcTNoZGc</guid></item><item><title>创业板半日涨1.75%，PCB掀涨停潮，创新药大涨，恒科指下探回升转涨，AI大模型双雄再度爆发 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778909</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 07 Aug 2026 04:06:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE41Z2Z3RkZCTkpIZFlwdUhCdFJnbXZUTndNWjJzT2wwa0liOUl1LVc4djBtVm1NeWNKZEtGLXpDbmtRNDNlcF9Gd1dRODJlOU9tcVZv</guid></item><item><title>​“统计学的诺贝尔奖”14年后再迎华人获奖者，与王虹、邓煜是同班校友 - QQ News</title><link>https://news.qq.com/rain/a/20260807A07OMM00?adChannelId=news</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="comps-contentify-wrap comps-contentify-pc-wrap comps-contentify-arbitrary-wrap"&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;	波士顿当地时间8月5日下午，在2026年美国统计协会联合统计会议（JSM）上，宾夕法尼亚大学沃顿商学院终身教授苏炜杰正式接过了统计学界的最高荣誉之一——&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;考普斯奖&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;（COPSS Presidents' Award）。这一被国际数理统计研究所（IMS）及多伦多大学等顶尖机构誉为“统计学诺贝尔奖”的重磅奖项，自1976年设立以来，每年仅授予一位在统计学领域作出杰出贡献的青年学者。苏炜杰也成为继2012年寇星昌之后，时隔14年再次斩获该奖项的华人统计学家。&lt;/p&gt;&lt;p&gt;	&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/om_bt/O05lByXQxrZbOB5Z4q1IxqTQJTprkV1aCj8kG5LFp5jK8AA/641" data-src="https://inews.gtimg.com/om_bt/O05lByXQxrZbOB5Z4q1IxqTQJTprkV1aCj8kG5LFp5jK8AA/641" alt="图片"&gt; &lt;/p&gt;&lt;p&gt;	&lt;strong&gt;统计学界的“诺贝尔奖”：14年后再迎华人获奖者&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;	考普斯奖由美国统计协会、国际数理统计学会、加拿大统计学会等五大国际顶级统计学会联合设立，自1976年起，每年仅授予一位在统计学领域作出杰出贡献的青年学者（通常为40岁以下）。多伦多大学及国际数理统计研究所等多家权威机构均在官方报道中指明，该奖项是统计学领域的最高荣誉，被誉为“统计学的诺贝尔奖”。&lt;/p&gt;&lt;p&gt;	苏炜杰的获奖标志着华人学者在国际统计学界的又一重大突破。&lt;/p&gt;&lt;p&gt;	此前获得该荣誉的华人统计学家包括黎子良、范剑青、孟晓犁、刘军、林希虹、蔡天文和寇星昌等名家。近年来，这些学术巨匠对全球统计学发展产生了深远影响，例如刘军教授于2025年全职回国出任清华大学统计与数据科学系主任，范剑青任教于普林斯顿大学，孟晓犁、林希虹与寇星昌长期执教哈佛大学，蔡天文则同在宾夕法尼亚大学任教。&lt;/p&gt;&lt;p&gt;	苏炜杰此次折桂，是华人学者时隔14年后再次登上这一最高领奖台。&lt;/p&gt;&lt;p&gt;	&lt;strong&gt;成长足迹：从纯粹数学到现实问题的深刻契合&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;	苏炜杰的学术生涯展现了深厚的数学底蕴与敏锐的现实洞察力。他本科毕业于北京大学数学科学学院2007级，与2026年四位菲尔兹奖得主均有深厚渊源：他与王虹、邓煜是北大同班校友，与John Pardon（白杰文）是同级斯坦福校友，与Jacob Tsimerman在共同学术休假的公司是同事。2016年，他在著名的Emmanuel Candès教授指导下获得斯坦福大学博士学位。&lt;/p&gt;&lt;p&gt;	在考普斯奖颁奖礼的致辞中，苏炜杰向一路走来给予指导的师友及北大、斯坦福两所母校表达了诚挚感谢，并特别提及求学期间的奖学金支持让他能够全神贯注于学术研究。&lt;/p&gt;&lt;p&gt;	谈及从纯数学转向应用数学与统计学的历程，苏炜杰表示，早期的纯数学训练让他习惯于从数学原理出发去理解复杂现象的本质。而在北大辅修经济学双学位的经历，以及多次参加数学建模竞赛的体验，让他更切身地体会到现实世界的复杂性，促使他选择将数学工具运用于解决社会与科技领域的关键实际问题。&lt;/p&gt;&lt;p&gt;	对于统计学在人工智能时代的地位，苏炜杰展现出了极大的信心。他认为，只要存在数据、不确定性以及解决问题的需求，统计学就会持续发展。AI非但不会削弱这一点，反而会放大统计学的作用。随着数据规模不断扩张，统计学在未来将变得“比以往任何时候都更加重要、更加核心”，现在正是从事统计学研究的黄金时代。&lt;/p&gt;&lt;p&gt;	&lt;strong&gt;学术休假加盟OpenAI：打造AI背后的数学物理学&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;	2026年2月考普斯奖获奖名单揭晓三个月后，苏炜杰宣布在沃顿商学院学术休假期间加入人工智能领军企业OpenAI，回到阔别十年的旧金山湾区。除了在学术研究上持续突破，苏炜杰还深度参与学术治理，担任机器学习顶级会议ICML 2026科研诚信主席，并将出任ICML 2027程序主席。&lt;/p&gt;&lt;p&gt;	谈及加入OpenAI的初衷，苏炜杰表示，ChatGPT等大模型的爆发不仅是技术飞跃，更是验证理论的绝佳场景。他希望利用企业充足的算力和真实实验环境，从应用数学和统计学角度理解大模型的底层机制。&lt;/p&gt;&lt;p&gt;	他指出，当前人工智能领域尚缺乏一套像传统物理学那样被广泛公认的底座理论，模型参数达到万亿级别后展现出的宏观能力与梯度下降偏好仍缺少精确的定量刻画。从短期看，他希望为AI设计出更高效的优化与统计算法；从长期看，他的终极目标是尝试建立一套系统的人工智能数学理论。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>QQ News</author><pubDate>Fri, 07 Aug 2026 03:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMibEFVX3lxTE05c2NXaEFPWkg4OWZEUmJGbm5CRFJWSUYyTjJ6TE1ZdkoyNF9FVDF3NUNXaTdteHhIRmFFSHdvbXZwZ2R1NWoxSzlUZ1lDaGlCaExfRnZsUVh3V3QtZDN2QVdJdFIzM1lXQnpMaw</guid></item><item><title>别等了！商家预警RTX 5070 Ti/5080将缺货：再犹豫高价都买不到 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142088.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;别等了！商家预警RTX 5070 Ti/5080将缺货：再犹豫高价都买不到&lt;/p&gt;
           
@@ -848,7 +1150,29 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 01:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9mdTN5eTBMTkpyNzZNSVZYMk13QVVhVDJyU3NGclhZcG0tNUxXUzBPRkQ1Ykh3bTAtRnVOT1RGT2NGYlRKdUZjeVJaTFVibzBqaHQxVTZ0M1o</guid></item><item><title>美国三大运营商全面停用2G网络 初代iPhone正式失去最后的移动网络支持 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142043.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 01:53:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9mdTN5eTBMTkpyNzZNSVZYMk13QVVhVDJyU3NGclhZcG0tNUxXUzBPRkQ1Ykh3bTAtRnVOT1RGT2NGYlRKdUZjeVJaTFVibzBqaHQxVTZ0M1o</guid></item><item><title>小红书被曝全面提速AI战略：开启自研AI社交、AI陪伴产品 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142044.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月7日消息，近日，小红书被曝正在全面提速其AI战略。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据媒体报道，小红书正布局AI社交产品、AI社区互动工具等方向，从过去的后台技术应用，转向前台自研、产品化与生态化的全面竞速。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;一位知情人士透露：“小红书正在高薪招募AI人才，投入系列AI产品自研，要找有强烈AI Native产品思维的人。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;同时，小红书近日已密集放出多个AI应用研发岗位。&lt;/p&gt;
+&lt;p&gt;其中，AI社交产品经理的职责包括主导AI陪伴产品的设计与打造，探索AI在情感连接、兴趣匹配、个性化互动等维度的深度应用，“构建有温度的AI陪伴体验”。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前，该岗位开出30-60K/16薪的待遇，最高年薪可达96万元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;另一则关于“评论互动AI产品经理”的招聘信息显示，小红书正试图通过AI评论、AI角色互动、智能回复等功能，将AI能力深度嵌入社区生态，该岗位最高年薪同样达到96万元。&lt;/p&gt;
+&lt;p&gt;对于上述信息，小红书官方暂未作出回应。&lt;/p&gt;
+&lt;p&gt;据悉，今年4月30日，小红书发布全员内部信，宣布成立AI一级部门Dots和企业智能部，柯南（本名丁玲）出任总裁，全面整合社区、电商、商业化三大业务及公司技术体系。&lt;/p&gt;
+&lt;p&gt;Dots由原人文智能实验室Hi Lab升级而来，下设模型研发、基础设施、工程、产品四个部门，直接向柯南汇报——AI由此首次获得与三大核心业务并列的组织地位。&lt;/p&gt;
+&lt;p&gt;而在技术储备层面，今年4月小红书还集中开源了REDSearcher搜索Agent、FireRed-Image-Edit多模态图像编辑工具、FireRed-OpenStoryline视频创作模型三大AI技术，其中30B参数的REDSearcher性能被称超越Gemini-2.5-pro。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="小红书被曝全面提速AI战略：开启自研AI社交、AI陪伴产品" h="400" src="//img1.mydrivers.com/img/20260807/ee709635-b564-49ad-b849-862c98a2b8b4.png" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 01:40:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAzcWFsNmpHaDU2ZXRoV2I0YVV3ZWp6cHVQMFBEMzlPTTdCRVNyUUViU05IbnZmRTRGWWZDV2U2aUVjODVGck1wNWlOVXhqOHQ0OFVRS01qTEU</guid></item><item><title>美国三大运营商全面停用2G网络 初代iPhone正式失去最后的移动网络支持 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142043.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;美国三大运营商全面停用2G网络 初代iPhone正式失去最后的移动网络支持&lt;/p&gt;
           
@@ -2710,151 +3034,4 @@ Luna Ultra&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 06 Aug 2026 14:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5PWjZGNkFtOWFRcTJtVzMxZHJtSXhBUGsyZ3A5Z1VEekw5VDRNSi1JS2s2OXlJTlgwalJUTEhLWGszUUVuN0N6bXlWTzREZnJZclpXWnBCODI</guid></item><item><title>华为“竹知了”风波撕裂中国舆论 政务官媒账号互杠 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260806-9483125</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;中国科技巨头华为深陷“竹知了”公关危机，政务账号和官媒对此发出看法不一的互杠声音。如何看待这家与“爱国情怀”高度绑定的企业，撕裂中国舆论。&lt;/p&gt;&lt;p&gt;中国民间传统竹制玩具“竹知了”摇动时发出的“哇哇”声，因与华为高管余承东发布会上的观众惊叹声相似，成了中国网民嘲讽华为和余承东的迷因视频素材。华为一纸损害商誉投诉导致部分视频被平台下架，强硬做派引爆批评声浪。&lt;/p&gt;&lt;p&gt;华为星期二（8月4日）通过旗下汽车业务“鸿蒙智行”发声明，指网络持续存在恶意剪辑、仿冒高管声音等内容，投诉是日常维权，并非针对“竹知了”；公司尊重正常网络表达和善意批评，同时也将维护合法权益。&lt;/p&gt;&lt;p&gt;中共浙江省委宣传部新媒体账号“浙江宣传”星期三（8月5日）对此发长文，提出“越是强大的企业，越有接受讨论的胸怀”“听得进‘嘈杂’，本身就是一种自信”等观点。&lt;/p&gt;&lt;p&gt;这篇获中共党刊《半月谈》转载的文章，也直接点名有“首席吹牛官”“余大嘴”等争议称号的华为常务董事、产品投资评审委员会主任、终端BG董事长余承东，指他的“最强悍”“没有之一”等言论不留余地，高调表达成了公众由喝彩变为玩梗的导火线。&lt;/p&gt;
     
-  &lt;p&gt;中国传播学者魏武挥告诉《联合早报》，浙江宣传的文章写得很客气，“我称之为对华为进行温柔的提问，但可能会给人一种感觉，好像官方态度有一点点怪华为小题大做的意思”。&lt;/p&gt;&lt;p&gt;尽管批评委婉，浙江宣传的文章依然引起亲华为博主和粉丝不满。江苏官媒“荔枝新闻”星期三连发多条华为新品宣传微博后，更评论质问：“那些劝华为要大度的，你们适不适合？”&lt;/p&gt;&lt;p&gt;这篇星期四（8月6日）登上热搜的评论称，华为遭遇恶意攻讦，反击“展现铮铮铁骨”，劝它大度的人是替黑流量张目，并指华为多次遭到外部制裁后突围，应从更大格局评价民企，尊重宽容胸怀报国志的企业。&lt;/p&gt;&lt;p&gt;中国官媒《环球时报》前总编辑胡锡进星期四晚批评，上述评论“猛攻希望华为大度应对风波的声音”，把舆论场分成支持和“黑”华为两个阵营，“恰恰是这些分析拔高了事态”，让大量中立者产生对华为的不悦感。&lt;/p&gt;&lt;p&gt;中国科技评论人李焕新在个人微信公众号指出，华为在大国叙事保护下享有“舆论豁免权”，非议华为会面临“破坏科技兴国立场的质疑”，但“竹知了”风波后，“形势似乎发生了逆转”。&lt;/p&gt;&lt;p&gt;魏武挥回忆，华为2019年曾因前员工蒙冤入狱251天事件遭到铺天盖地的批评，不过在2021年“晚舟归国”（华为高管孟晚舟在加拿大被扣留近三年后获释，以凯旋姿态返回中国）后，华为成为中国民族主义象征，“好像这公司有点说不得”，形成很长一段时间的“压抑”，如今被一场娱乐化事件引爆“公众委屈”情绪。&lt;/p&gt;&lt;p&gt;学者背景的微信公众号“网络舆情和危机公关”星期四也发文称：“疫情之后日常生活的回归，在群体心理层面削弱了华为自带的爱国主义、民族主义的神圣色彩，人们终于可以将其放在企业层面考察它的市场行为。”&lt;/p&gt;&lt;p&gt;这篇文章认为，舆论场出现对华为的负面声音是正常现象，“一家完美的、没有争议的企业，反倒是不正常的、危险的”。&lt;/p&gt;&lt;p&gt;魏武挥说，“竹知了”风波闹腾两天就会过去，不会影响华为的组织管理、内部治理，以及和社会、政府之间的关系。“最多就是给你一种感觉，华为玩不起，华为拒绝被娱乐化，最多就这样。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Thu, 06 Aug 2026 14:15:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBuYUxVNEUyUWFxNlRpd2hGQTQxMjFZVW1EbUl1TUlWLWp6U3F5Z2JxUzNHb1FvMC1DZVp6WG9XVmpkY3dzeVFQTnhINE10WFJPaTlhWFlSZlNscFZCNjNJMVpOWTROZUZDS3c</guid></item><item><title>培养实战型人才 中国河北雄安新区AI实训基地正式投运 - zaobao.com.sg</title><link>https://www.zaobao.com.sg/news/china/story20260806-9482773</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;（北京综合讯）中国河北雄安新区首届人工智能（AI）实训班星期四（8月6日）开班，标志着雄安AI实训基地正式投运。&lt;/p&gt;&lt;p&gt;综合央视新闻与北京日报客户端报道，雄安AI实训基地是服务于北京“非首都功能”疏解、支撑雄安新区AI产业高质量发展的重点公共服务平台。&lt;/p&gt;&lt;p&gt;该基地联动多家头部企业，打造企业级、行业级、国家级全链条认证与赛训体系，覆盖从基础技能到高端研发的全层级人才培养，目标是打造成为落地雄安、辐射全中国的AI实训高地，为智能经济时代培育更多AI实战型人才。&lt;/p&gt;&lt;p&gt;首届AI实训班上，清华大学心理与认知科学系主任刘嘉为学员作了AI前沿专题讲座，但报道没有提及参训学员的背景。&lt;/p&gt;&lt;p&gt;雄安新区的首要功能定位是北京非首都功能疏解集中承载地，目前重点发展空天信息和卫星互联网、AI、新材料等产业。&lt;/p&gt;
-    
-  &lt;p&gt;其中，AI产业是雄安新区建设“未来之城”的主导产业之一，出台了AI产业专项支持措施，并设立产业投资引导基金、科技创新股权投资基金等。&lt;/p&gt;&lt;p&gt;中国外文局主管的时政财经类月刊《中国报道》引述雄安新区工信科技数据局副局长张英杰称，截至6月下旬，雄安新区已汇聚AI企业96家，研发近30款AI大模型。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>zaobao.com.sg</author><pubDate>Thu, 06 Aug 2026 13:35:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE04T0pjY2Rqb2RnU3YzWnpQdjc1YUJJT0FUekpoLU9DZG93OWp5RFZPVHRaUkd6MzJncXp3Q2k0WTA2cEIyc0xMVzBiaFFHSXhUYV9sYkRRU0lBOXZSTEZfQUdldXZnZkxsdnc</guid></item><item><title>DXOMARK虚化榜单第一 OPPO Find X9 Ultra人像碾压苹果iPhone 17 Pro - 驱动之家</title><link>https://news.mydrivers.com/1/1141/1141976.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月6日消息，&lt;strong&gt;DXOMARK官方宣布，OPPO Find X9 Ultra拿下当前排行榜虚化单项第一名。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;总体来说，这款设备能呈现出非常自然的景深效果，它精准地分离主体，柔和地虚化背景，带来了十分逼真的渲染效果与空间感。同时，图片上丰富的细节也能被很好地保留下来。 &lt;/p&gt;
-&lt;p&gt;很多人拍人像虚化，只看背景模糊程度，其实真正的好虚化不能简单把背景抹糊，重点是分清人物和背景的边界，过渡柔和，同时留住画面细节，这台OPPO旗舰刚好把这几点全部做到位。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260806/04f32f966eeb43d9ac742f5503c3958a.png" target="_blank"&gt;&lt;img alt="DXOMARK虚化榜单第一 OPPO Find X9 Ultra人像碾压苹果iPhone 17 Pro " h="659" src="//img1.mydrivers.com/img/20260806/s_04f32f966eeb43d9ac742f5503c3958a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;DXOMARK给出详细实测结论，&lt;strong&gt;Find X9 Ultra细节表现突出，人物边缘自然干净，几乎没有明显的分离伪像。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;也就是说，它能精准区分人像主体和后方背景，虚化渐变柔和，空间立体感很真实，整张照片里人物发丝、衣物纹理、背景景物细节全都不会丢失。&lt;/p&gt;
-&lt;p&gt;最大优势在于人物边缘处理干净，几乎看不到抠图错位、边缘发白这类分离伪像，拍卷发、碎刘海这类精细部位也不会糊成一团。&lt;/p&gt;
-&lt;p&gt;官方拿两款热门旗舰做直观对比。&lt;strong&gt;vivo X300 Ultra虚化整体表现同样优秀，皮肤的处理更加柔和，算法优化的风格较为明显。 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;iPhone 17 Pro短板很突出，面部锐度与主体-背景分离仍有进一步提升的空间。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;OPPO 能做出顶尖虚化，离不开硬件和算法双重配合。机身搭载3倍2亿像素黄金人像长焦，70mm焦段专门适配人像拍摄，大底传感器捕捉更多层次信息。&lt;/p&gt;
-&lt;p&gt;搭配哈苏联合调校的景深计算模型，系统能区分前景、中景、远景，做出类似单反镜头的渐变虚化，近处虚化轻、远处虚化重，不会出现整张画面统一模糊的廉价感。&lt;/p&gt;
-&lt;p&gt;DXOMARK提到，更清晰的边缘、更少的抠图伪像，好的人像与虚化表现，绝对不是简单地“抹掉或者模糊背景”。而是要在更好地过渡中，让人物自然而然地成为真正的焦点。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260806/800064a6beb143c6a9a986d9bd9c1eb3.png" target="_blank"&gt;&lt;img alt="DXOMARK虚化榜单第一 OPPO Find X9 Ultra人像碾压苹果iPhone 17 Pro " h="749" src="//img1.mydrivers.com/img/20260806/s_800064a6beb143c6a9a986d9bd9c1eb3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260806/16c0cc261d18479f939fa76ea4e9d848.png" target="_blank"&gt;&lt;img alt="DXOMARK虚化榜单第一 OPPO Find X9 Ultra人像碾压苹果iPhone 17 Pro " h="751" src="//img1.mydrivers.com/img/20260806/s_16c0cc261d18479f939fa76ea4e9d848.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260806/257a91e511d44142a261b3583e5a09dd.png" target="_blank"&gt;&lt;img alt="DXOMARK虚化榜单第一 OPPO Find X9 Ultra人像碾压苹果iPhone 17 Pro " h="750" src="//img1.mydrivers.com/img/20260806/s_257a91e511d44142a261b3583e5a09dd.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 06 Aug 2026 12:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE94U0FCa3g1b2Zmc3Rfa2dMNlNKT2RHUXlyckZ3YWpoS2paRHUtdkI0akxra3VacGtUVjktVHAwQURDUnktVHdVekJVdmdWOVp1NVktWXR6VW0</guid></item><item><title>150.8元/股！宇树科技早期员工浮盈超150倍，一批90后千万富豪或将诞生 - 凤凰网</title><link>https://finance.ifeng.com/c/8vNKqsdYFPy</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;&lt;strong&gt;来源｜凤凰网财经《公司研究院》&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;A股“人形机器人第一股”宇树科技的申购大幕即将拉开。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/CDA42EEBEA994B581A99FCB2A32BE1EF50AC691F_size196_w1423_h406.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;就在刚刚，宇树科技在上交所网站发布首次公开发行股票并在科创板上市发行公告，发行价格为&lt;strong&gt;150.80元/股&lt;/strong&gt;，预计募集资金总额约60.99亿元，扣除发行费用后预计募集资金净额约59.17亿元。&lt;/p&gt;&lt;p&gt;公告同时明确，2026年8月10日（T日）开启网上和网下申购。&lt;/p&gt;&lt;p&gt;作为科创板高端装备领域的年度重磅IPO，宇树科技用十年时间从四足机器人赛道突围，一路做到人形机器人全球出货量第一，演绎了硬科技企业从技术突破到商业化放量的典型路径。&lt;/p&gt;&lt;p&gt;若本次发行顺利落地，创始人王兴兴、44家战略投资机构、以及171名核心员工，将共同分享具身智能浪潮下的资本红利。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;01 王兴兴身家有望突破360亿，将诞生一批90后千万富豪&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;宇树的员工造富伏笔，早在2017年就已埋下。&lt;/p&gt;&lt;p&gt;当年公司尚在四足机器人技术攻坚期，便在9月与杨知雨等17名初代核心员工签下首批期权协议，行权价格仅1元/股。&lt;/p&gt;&lt;p&gt;此后数年间，公司又陆续推出多轮股权激励方案，最终全部统一纳入“上海宇翼”持股平台体系管理。&lt;/p&gt;&lt;p&gt;站在当下IPO节点，仅以150.8元/股的预计发行价测算，这批最早选择与公司共担风险的核心员工，账面浮盈超过150倍。&lt;/p&gt;&lt;p&gt;另据招股书显示，宇树科技本次IPO通过两只资管计划，让171名员工以发行价直接认购新股参与战略配售，合计认购2.715亿元，锁定期最长3年。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/98FE76FD579A66C94745BBC4FD528F155F2ED91C_size231_w755_h680.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;其中1号资管计划面向更广泛的核心员工，共161人参与，募资2.185亿元，锁定期12个月。&lt;/p&gt;&lt;p&gt;财务总监王枫、董事会秘书傅风华各认购700万元，是这个计划里出资最多的两位，大批技术主管和业务骨干的认购金额集中在100万到350万元之间。&lt;/p&gt;&lt;p&gt;2号资管计划只有10名高管和核心员工参与，募资5300万元，锁定期长达36个月。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/DFFC2507609D002EFA1D0575B4437FB7D03ADF26_size130_w712_h421.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;作为创始人的王兴兴一人就认购了1500万元，是这个计划里出资最多的人，其他三位研发体系负责人张阳光、杨知雨、吴金泽各跟投900万元。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/46E6E58A9D87482AB08CBFB70AD2F9EA83FFFE54_size153_w713_h396.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;王兴兴本身通过特别表决权早就牢牢掌握了公司控制权，理论上不必再自掏腰包认购新股，此次认购更像是给市场表明看好公司长期发展的态度。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/142F6601E37B56FE680FECE9A7555552FB940F5D_size538_w750_h563.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;更加值得注意的是，宇树科技的高管是一支极具代表性的90后创业团队，创始人王兴兴（1990年）、研发软件总监张阳光（1993年）、研发结构总监杨知雨（1991年）、销售总监陈立（1990年）均为90后。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/7D991BF68407E3C47C15295E0D187FC97AF56CF2_size104_w909_h639.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;发行前，王兴兴除了直接持有宇树23.82%股份，还通过上海宇翼间接持股9.54%，个人合计持股约33.36%，仅按150.8元/股发行价测算，王兴兴持股价值约203亿元。&lt;/p&gt;&lt;p&gt;但建银国际的研报认为，宇树上市2026年目标价对应市值约1090亿元，相当于发行价的1.8倍左右。&lt;/p&gt;&lt;p&gt;按这个乐观预期测算，只有认购金额在500万元及以上的6位核心员工，有机会进入“千万富翁俱乐部”，并且王兴兴本人持股价值也将飙升至360亿元。&lt;/p&gt;&lt;p&gt;除了员工外，老股东阵营同样星光熠熠，产业资本与国家队齐聚一堂，共同押注具身智能的未来。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/7C91868583DF84C51AECEC1C06479286778DF824_size163_w847_h786.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;产业资本方面，美团系通过汉海信息、GalaxyZ、成都龙珠三家主体合计持股9.65%，是最大的机构投资方。&lt;/p&gt;&lt;p&gt;在2025年6月的最后一轮融资中，腾讯科技、中移和创、无锡锦秋等产业资本集体进场，增资价格约46.26元/股，对应投后估值127亿元，也为本次IPO定价提供了市场化锚点。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/0C70A56173DA3361EB9AE2F099AEB9F332B243AD_size68_w658_h422.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;供应链合作伙伴方面，A股上市公司卧龙电驱（600580.SH）和金发科技（600143.SH）通过金石成长LP间接持股，与宇树形成“股权+业务”双重绑定，其中卧龙电驱是宇树无框力矩关节电机的核心供应商，而金发科技则供应PEEK轻量化材料应用在机器人外壳等部件上。&lt;/p&gt;&lt;p&gt;保险公司在此次IPO过程中“低调潜伏”。&lt;/p&gt;&lt;p&gt;尽管宇树的直接股东名单里难觅保险公司踪迹，但穿透层层股权结构会发现例如太保长航股权投资基金、友邦人寿、中美联泰大都会人寿通过南京经纬创叁号间接持股宇树1.193%。&lt;/p&gt;&lt;p&gt;据证券时报不完全统计，共有包括中邮人寿、瑞众人寿、新华保险在内的20余家保险公司，经由多条路径间接持有宇树科技股份。&lt;/p&gt;&lt;p&gt;还有中网投、机器人的专项基金以及各省市科创国资全线布局，彰显具身智能赛道的战略价值。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;02 200元的单片机起步&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;比起资本故事，王兴兴本人的经历更加精彩。&lt;/p&gt;&lt;p&gt;2009年，19岁的王兴兴考入浙江理工大学机械与自动控制学院，学的是机电专业。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/7CE7DF908BB1CE922912927CF937FAD4B12D3300_size140_w885_h402.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;大一那年冬天，他第一次玩上单片机，纯手工画图、切割、打磨零件，最终只花了200元，做出了一个14自由度的双足人形机器人——虽然只能勉强走两步，但这是他和机器人这门“手艺”的起点。&lt;/p&gt;&lt;p&gt;本科毕业后，他一心想考浙江大学，成绩过了线，却因为英语单科差了几分，被调剂到了上海大学机械工程专业。&lt;/p&gt;&lt;p&gt;读研期间，在导师贾文川的支持下，他拿到一两万元科研经费，从电机驱动板到整机结构再到运动控制算法，全流程自己动手，做出了四足机器人XDog。&lt;/p&gt;&lt;p&gt;其中电机驱动代替了当时行业公认的液压方案，这个技术路线，比波士顿动力公开同类方案还早了一年左右。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/D88146A1FDBA9A6A8B5AAEBB18F1DCF567B0A46A_size66_w1080_h598.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;XDog后来拿下了机器人大赛二等奖，奖金8万元，王兴兴从此没再向家里要过一分钱。&lt;/p&gt;&lt;p&gt;2016年硕士毕业后，他入职大疆，但只待了几个月就离职。&lt;/p&gt;&lt;p&gt;因为XDog在网上攒下的关注度，已经收获不少投资人关注，他索性顺势辞职，拿着一笔200万元的天使轮融资，创立了宇树科技。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/BF4DC6521A957BAD7CFC04C6E86BBF0A172C52D2_size58_w720_h415.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;2017年，公司发布第一款产品，取名“Laikago”（莱卡狗）——名字来自第一只进入太空的苏联太空犬莱卡。&lt;/p&gt;&lt;p&gt;这台售价约2万美元的四足机器人，技术上实现了全自主知识产权，但市场反应冷淡，因为四足机器人当时被普遍视为“贵族玩具”，没人相信它能跑通商业化。&lt;/p&gt;&lt;p&gt;转机出现在2021年。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/6DD1CF41876BDBB9096BA395420969FFDC26F72B_size195_w715_h457.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;这一年宇树干了两件大事，2月春晚上，24台宇树A1以小牛“犇犇”的身份与明星同台表演，完成全球首次四足机器人动态走位集群舞蹈，随后6月发布消费级四足机器人Go1，起售价压到1.6万元人民币，大幅降低消费门槛。&lt;/p&gt;&lt;p&gt;此后更多资方陆续跟进，宇树科技融资之路一路小步快跑。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/554FEA04DAB54DA3819A1A73C92DBDFD869FB8E7_size165_w863_h556.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;真正把宇树推向全民视野的，是2025年蛇年春节联欢晚会——16台H1人形机器人身着大花袄、手持红手绢，与真人舞者同台共舞，“人形机器人”成为当年春晚最炙手可热的现象级话题。&lt;/p&gt;&lt;p&gt;而即将到来的上市，绝非宇树科技的终点。&lt;/p&gt;&lt;p&gt;首先，全球高性能通用机器人赛道竞争日趋白热化。&lt;/p&gt;&lt;p&gt;特斯拉、波士顿动力、FigureAI等海外企业，在底层具身智能框架等方面具备深厚先发积累，国内机器人赛道，也有智元机器人、优必选等知名厂商持续分流市场份额。&lt;/p&gt;&lt;p&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/5015E0FB93E68276B79A884011FCC35937198BF7_size27_w800_h340.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="&gt;&lt;/p&gt;&lt;p&gt;其中特斯拉是最具威胁性的竞争对手。招股书表示，特斯拉具备规模量产能力、成熟供应链和自有工厂部署优势，人形机器人Optimus第三代已经宣布启动小批量试产。&lt;/p&gt;&lt;p&gt;当年特斯拉Model3杀入中国，本土电动车企业追了好几年才跟上节奏，这一次，人形机器人赛道是否会重演这一幕？&lt;/p&gt;&lt;p&gt;一旦特斯拉Optimus的亮相带来超乎想象的成熟度，伴随机器人量产节奏起势，留给宇树的研发窗口期未必宽裕。&lt;/p&gt;&lt;p&gt;另一个风险来自大洋彼岸的监管风险。&lt;/p&gt;&lt;p&gt;海外政策监管之所以格外敏感，是因为宇树的海外收入占比并不低。&lt;/p&gt;&lt;p&gt;报告期内，公司境外主营业务收入占比分别为55.63%、55.74%和43.65%，虽然比例在下降，但仍近半壁江山。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="empty_bg" data-lazyload="https://x0.ifengimg.com/ucms/2026_32/2DEDB9C33901DA829A3F28990394A8D29879584E_size395_w833_h548.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXy8vJkA4prAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==" alt="FCC DA 26-786公告"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;FCC DA 26-786公告&lt;/p&gt;&lt;p&gt;今年7月28日，美国联邦通信委员会（FCC）发布公告，把境外生产的先进机器人设备和电力逆变器，新增列入了“受管制设备和服务清单”。&lt;/p&gt;&lt;p&gt;虽然宇树目前在售的G1、H2、R1人形机器人和Go2、B2、A2四足机器人，都已经拿到FCC认证，按现行规则可以继续在美销售，暂时不受影响；但招股书也坦言，后续新开发的型号，除非拿到特定豁免或有条件批准，否则可能无法再取得进入美国市场的认证。&lt;/p&gt;&lt;p&gt;对于宇树科技所在的机器人赛道而言，具身智能的技术路线远未定型，大规模商业化落地仍在探索途中，技术迭代的竞赛还未像AI大模型那般轰轰烈烈地开始。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Thu, 06 Aug 2026 12:16:49 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTFAxZXJILUVLREMyUnNDdmt6OXd4QnNDLWtHcTdMVGxNMkJETll4REtYTlAzbUoxQTcxVVh2RmlWbV9pMjdrLU4xdHJaSTJMN0hP</guid></item><item><title>谷歌重大人事调整：印度裔CEO神话不再 搞AI还得是华裔人才 - 驱动之家</title><link>https://news.mydrivers.com/1/1141/1141973.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月6日消息，在美国AI御三家中，谷歌今年掉队明显，今天凌晨又宣布了多项重大人事调整，奠定公司AI基础的几位AI大神又出走了，引发热议。&lt;/p&gt;
-&lt;p&gt;这也不是谷歌第一次出现AI人才流失了，上一波密集调整还是6月底，Transformer论文的八位核心作者陆陆续续都离开了，算上这次的调整，定义谷歌AI时代的重量级AI大神团队差不多要换一遍了，这也导致谷歌股价大跌4%。&lt;/p&gt;
-&lt;p&gt;谷歌AI人才大换血之后能不能让Gemini大模型重回巅峰，这点还不好说，但是谷歌在AI领域的高开低走引起了另一个讨论，&lt;span&gt;&lt;strong&gt;那就是美国媒体多年前鼓吹的一个叙事神话破灭了——印度裔CEO执掌的科技巨头在AI时代就没几家搞好的。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260806/3af6b434-9148-456d-912a-d2e5dffd6289.png" target="_blank"&gt;&lt;img alt="谷歌重大人事调整：印度裔CEO神话不再 搞AI还得是华裔人才" h="255" src="//img1.mydrivers.com/img/20260806/S3af6b434-9148-456d-912a-d2e5dffd6289.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;谷歌CEO皮查伊已经任职11年了，之前担任这个职位的时候网络上都是在吹捧印度裔精英成为美国科技行业的领军人物，当时美国的高科技行业很多高管都是印度裔人才。&lt;/p&gt;
-&lt;p&gt;比皮查伊更早担任科技巨头CEO的是微软CEO纳德拉，2014年就执掌微软公司了，再加上其他公司，比如Adobe、IBM、美光、Palo Alto等公司的CEO也是印度裔，&lt;strong&gt;一时间找印度裔当CEO成为了美国科技公司扭转困局的标准做法。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;然而在AI时代，不论是微软、谷歌还是上面提到的几家公司，印度裔CEO执掌的公司在AI大模型上都错失机遇，尤其是微软、谷歌两家公司，不论是资金还是人才，亦或者是算力等资源都是业界最顶级的，结果大模型业务上要么一直没啥存在感，要么高开低走，泯然众人矣。&lt;/p&gt;
-&lt;p&gt;美国公司中印度裔CEO在AI时代有高光的可能要数美光了，但该公司现在业绩暴涨更多的是靠内存、闪存涨价，&lt;strong&gt;没有这次的涨价周期，美光23、24年业绩还是在巨额亏损的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;AI时代美国公司搞得好的反而是华裔人才当CEO或者主导技术研发的，AMD、NVIDIA及Intel三大AI芯片公司的CEO是华裔都不是新闻了，OpenAI、Anthropic好多核心研究人员也是华裔，甚至是国内过去的留学生，微软、谷歌、亚马逊、Meta等公司同样如此。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="谷歌重大人事调整：印度裔CEO神话不再 搞AI还得是华裔人才" h="394" src="//img1.mydrivers.com/img/20260806/49d92168-7e4b-4065-9257-145cf0df372d.png" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 06 Aug 2026 12:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1zRGpsdU9taTIzM2V6NGE3M0NpTWpYbU40VklqYmptalpudmV2N3NQSUtnWWd2U1VBQWh0MlhPT0pFU1U1c2Q3VjNBUlVGLUdmQWlueGpYbzM</guid></item><item><title>谷歌AI架构大调整，将如何影响皮查伊接班人布局 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-08-06/doc-inimksmf3822933.shtml?finpagefr=p_108</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    
-&lt;p&gt;　　正当&lt;span id="usstock_UBER"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/UBER.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;优步&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_UBER"&gt;&lt;/span&gt;、达达外卖、Shopify、&lt;span id="usstock_DIS"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/DIS.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;迪士尼&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_DIS"&gt;&lt;/span&gt;等一大批企业集中发布二季度财报之际，周四&lt;span id="usstock_GOOG"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/GOOG.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;谷歌&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_GOOG"&gt;&lt;/span&gt;突然抛出重磅人事消息：AI 领军人物、Google DeepMind 首席执行官德米斯・哈萨比斯升任该 AI 部门主席，同时出任谷歌母公司 Alphabet 首席科学家。消息同步披露，DeepMind 多名高管（包括首席科学家杰夫・迪恩）将离职创办新公司。部分市场观点将这次人事震荡视作利空，谷歌股价应声下跌 4%。&lt;/p&gt;
-&lt;p&gt;　　事实上，本次人事变动的实质影响有限。DeepMind 的日常运营原本就不由哈萨比斯负责，实权掌握在 DeepMind 首席技术官科莱・卡武库奥卢手中，如今他正式接管 Google DeepMind。（想要了解卡武库奥卢，可参阅我们一年前刊发的人物专访。）与之相对，哈萨比斯是 DeepMind 对外标杆、兼具前瞻视野的顶尖科学家，未来他将继续承担这一角色 —— 别忘了，他还是诺贝尔奖得主。 而我的同事艾琳・吴了解到，谷歌内部普遍认为，即便员工依旧十分敬重杰夫・迪恩，他在 Gemini 大模型项目中的核心话语权早已下降。&lt;/p&gt;
-&lt;p&gt;　　这场人事调整真正值得探讨的核心问题：它会不会改写桑达尔・皮查伊（谷歌与 Alphabet 双料首席执行官）继任者候选名单。外界不少资深观察者一直把哈萨比斯列入候选人名单，谷歌云负责人托马斯・库里安同样榜上有名。 不难看出，如果哈萨比斯更向往科研岗位，而非事业部管理者，那他基本不会谋求 Alphabet 首席执行官一职。他还将继续执掌 Alphabet 旗下新药研发机构 Isomorphic Labs，这件事也印证他更倾向深耕科研。换句话说，本轮变动利好库里安接班的可能性。&lt;/p&gt;
-&lt;p&gt;　　当然，皮查伊继任人选短期内无需敲定。当下皮查伊根基稳固。近期投资者确实针对谷歌激进的资本开支计划提出质疑，市场也不断出现对新一代 AI 模型的各类疑问，但这些都只是短期争议。 放眼长期，皮查伊已经用成果回应质疑：证明谷歌有能力领跑 AI 技术赛道；打消了市场担忧 ——AI 业务会冲击搜索这条核心现金牛；与此同时，谷歌云业务高速增长。皮查伊刚五十出头，未来多年内都有望继续执掌公司。&lt;/p&gt;
-&lt;p&gt;　　但企业董事会永远需要储备备选接班人。有人提出，谷歌体量庞大，集团 CEO 未必需要事事亲自处理日常运营，哈萨比斯依旧存在竞争资格。CEO 核心使命是制定长期战略、保障企业持续发展。 不过首席执行官终究避不开繁杂运营决策，还有大量棘手事务并不讨喜 —— 回想几年前皮查伊出席国会听证会的场景就可见一斑。正如皮查伊今日评价哈萨比斯所说，后者一心想 “主动塑造人工智能的未来”，对这样的人而言，集团 CEO 岗位或许并非&lt;span id="usstock_LI"&gt;&lt;a href="https://stock.finance.sina.com.cn/usstock/quotes/LI.html" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;理想&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_LI"&gt;&lt;/span&gt;归宿。相比管理企业，或许他更想要冲击第二座诺贝尔奖。&lt;/p&gt;
-&lt;p&gt;　　&lt;strong&gt;Figma 增长遇冷，股价承压&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　不妙。设计工具企业 Figma 周三盘后股价大跌 15%。公司预警三季度营收增速显著放缓、营业利润率下滑，同时宣布两名资深高管即将离职。&lt;/p&gt;
-&lt;p&gt;　　Figma 二季度营收增速 48%，较一季度还提升 2 个百分点；但公司预测三季度增速回落至 36%。增速依旧可观，但 12 个百分点的大幅下滑不容忽视。尤其当下依托 AI 诞生的竞品层出不穷，Anthropic 这类 AI 巨头也跨界入局相关赛道。除此之外，Figma 预计全年营业利润率仅 9%，而今年前六个月利润率为 13%。&lt;/p&gt;
-&lt;p&gt;　　Figma 给出的解释聚焦利润率下滑：公司正在加大投入。团队研发多款新产品，目前仍处于测试阶段，暂未向客户收费，需要等到产品成熟之后才正式全面上线。这套说辞并没有说服资本市场投资者。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：郭明煜 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 06 Aug 2026 12:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMinAFBVV95cUxOVTN5Z2RIUkdrZzlnUlBWVFBJcGx2YUJ5MUVqaXBkWjBxcDl6amVFa3YybW9BYlZLdDRBdGkybmpEN3BDdDJzeUZFQzRFUXJTZkRQd3FKWGRIWUJnaDNHN05hclJLZnh1RjBweDZJaGZMU25xMEtwWVc3V0kzbWEwUER6Vzh0cEo4ZkxSbWFOc1RULXJSeThXNE9WQWU</guid></item><item><title>昇腾0Day支持百灵Ling-3.0-flash！全新编程框架亮相 - 驱动之家</title><link>https://news.mydrivers.com/1/1141/1141971.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月6日消息，&lt;span&gt;&lt;strong&gt;蚂蚁百灵8月5日开源新一代原生混合推理模型Ling-3.0-flash，昇腾同步完成0Day适配，并首次落地全新算子编程框架CANN PyPTO。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;据了解，该模型总参数124B，推理时仅激活5.1B，计算开销仅为上代旗舰Ring-2.6-1T的8.1%。它按5比1交替堆叠KDA（增量注意力）与MLA（多头潜在注意力），支持256K上下文窗口，可扩展至1M。&lt;/p&gt;
-&lt;p&gt;同时，模型中的KDA算子是核心结构，其计算融合矩阵向量运算、递推累积、状态更新等多段逻辑，对核内数据复用与多核并行调度要求很高，传统手写内核开发难以兼顾效率与性能。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260806/f107fd9f-e6dd-4f34-9ad8-9c4072451f17.png" target="_blank"&gt;&lt;img alt="昇腾0Day支持百灵Ling-3.0-flash！全新编程框架亮相" h="788" src="//img1.mydrivers.com/img/20260806/Sf107fd9f-e6dd-4f34-9ad8-9c4072451f17.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;为此，昇腾推出的这一全新编程框架CANN PyPTO，&lt;/strong&gt;开发者只需通过张量级接口定义计算逻辑，由框架自动完成分片调度、数据搬运与代码生成，无需手写底层代码，大幅降低算子开发门槛。&lt;/p&gt;
-&lt;p&gt;更值得注意的是，配合昇腾CANNBot智能体，算子开发被拆解为7个阶段自动推进，各阶段由分工明确的子智能体协同执行，全程无需人工介入交接，大幅缩短复杂融合算子的交付周期。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260806/bc92fc8a-3760-4bc2-a1e4-15c30847a886.png" target="_blank"&gt;&lt;img alt="昇腾0Day支持百灵Ling-3.0-flash！全新编程框架亮相" h="305" src="//img1.mydrivers.com/img/20260806/Sbc92fc8a-3760-4bc2-a1e4-15c30847a886.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;部署方面，昇腾基于开源推理引擎vLLM的昇腾版本完成深度适配，补丁已提交开源平台，支持轻量化补丁部署，可秒级上线，全面兼容A2、A3系列产品。&lt;/p&gt;
-&lt;p&gt;此前，昇腾已完成对百灵Ling-2.6-flash（104B参数）的适配。&lt;strong&gt;昇腾表示，此次适配再次表明，其已具备支撑前沿大模型从发布到规模化部署的全流程能力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260806/faebecce-3d2e-4e6a-98c5-b7cba546f687.png" target="_blank"&gt;&lt;img alt="昇腾0Day支持百灵Ling-3.0-flash！全新编程框架亮相" h="257" src="//img1.mydrivers.com/img/20260806/Sfaebecce-3d2e-4e6a-98c5-b7cba546f687.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 06 Aug 2026 11:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1fNjdMTjZmVlBiamdqcERFcHItNURXeHlfV0RrSjlEZzlDNzJmZEIxMEx2UTQ3UlFfTktrU1dfanpHNC1oNUxjS0k2dTJvZGZzSTVaRUJUMlo</guid></item></channel></rss>
+  &lt;p&gt;中国传播学者魏武挥告诉《联合早报》，浙江宣传的文章写得很客气，“我称之为对华为进行温柔的提问，但可能会给人一种感觉，好像官方态度有一点点怪华为小题大做的意思”。&lt;/p&gt;&lt;p&gt;尽管批评委婉，浙江宣传的文章依然引起亲华为博主和粉丝不满。江苏官媒“荔枝新闻”星期三连发多条华为新品宣传微博后，更评论质问：“那些劝华为要大度的，你们适不适合？”&lt;/p&gt;&lt;p&gt;这篇星期四（8月6日）登上热搜的评论称，华为遭遇恶意攻讦，反击“展现铮铮铁骨”，劝它大度的人是替黑流量张目，并指华为多次遭到外部制裁后突围，应从更大格局评价民企，尊重宽容胸怀报国志的企业。&lt;/p&gt;&lt;p&gt;中国官媒《环球时报》前总编辑胡锡进星期四晚批评，上述评论“猛攻希望华为大度应对风波的声音”，把舆论场分成支持和“黑”华为两个阵营，“恰恰是这些分析拔高了事态”，让大量中立者产生对华为的不悦感。&lt;/p&gt;&lt;p&gt;中国科技评论人李焕新在个人微信公众号指出，华为在大国叙事保护下享有“舆论豁免权”，非议华为会面临“破坏科技兴国立场的质疑”，但“竹知了”风波后，“形势似乎发生了逆转”。&lt;/p&gt;&lt;p&gt;魏武挥回忆，华为2019年曾因前员工蒙冤入狱251天事件遭到铺天盖地的批评，不过在2021年“晚舟归国”（华为高管孟晚舟在加拿大被扣留近三年后获释，以凯旋姿态返回中国）后，华为成为中国民族主义象征，“好像这公司有点说不得”，形成很长一段时间的“压抑”，如今被一场娱乐化事件引爆“公众委屈”情绪。&lt;/p&gt;&lt;p&gt;学者背景的微信公众号“网络舆情和危机公关”星期四也发文称：“疫情之后日常生活的回归，在群体心理层面削弱了华为自带的爱国主义、民族主义的神圣色彩，人们终于可以将其放在企业层面考察它的市场行为。”&lt;/p&gt;&lt;p&gt;这篇文章认为，舆论场出现对华为的负面声音是正常现象，“一家完美的、没有争议的企业，反倒是不正常的、危险的”。&lt;/p&gt;&lt;p&gt;魏武挥说，“竹知了”风波闹腾两天就会过去，不会影响华为的组织管理、内部治理，以及和社会、政府之间的关系。“最多就是给你一种感觉，华为玩不起，华为拒绝被娱乐化，最多就这样。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Thu, 06 Aug 2026 14:15:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTFBuYUxVNEUyUWFxNlRpd2hGQTQxMjFZVW1EbUl1TUlWLWp6U3F5Z2JxUzNHb1FvMC1DZVp6WG9XVmpkY3dzeVFQTnhINE10WFJPaTlhWFlSZlNscFZCNjNJMVpOWTROZUZDS3c</guid></item></channel></rss>
