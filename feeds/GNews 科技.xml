@@ -1,5 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>国内Apple智能接入千问大模型 Siri前所未有强大 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142353.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>一条指令跑了62秒！x86最慢指令耻辱榜出炉：CPU当场自闭 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142389.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月8日消息，&lt;span&gt;&lt;strong&gt;硬件研究人员Christopher Domas近日公布了一项名为CPU反优化的实验项目，目前登顶的最慢x86指令是fxrstor64，单次执行耗时约62秒，相当于1980亿个CPU周期。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;与传统优化思路相反，该项目专门寻找执行延迟最高的单条机器指令。指令延迟分析通常用于研究低级指令执行时间、改进处理器架构或优化应用程序，这次却反其道而行之。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/5c88e80a-94f9-42c6-9238-a0e200819d59.png" target="_blank"&gt;&lt;img alt="一条指令跑了62秒！x86最慢指令耻辱榜出炉：CPU当场自闭" h="360" src="//img1.mydrivers.com/img/20260808/S5c88e80a-94f9-42c6-9238-a0e200819d59.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;fxrstor64用于恢复SIMD（单指令多数据）计算相关的寄存器状态，正常情况下从内存加载512字节数据只需几十个周期。要让它慢下来，关键在于让CPU从哪里读取这批数据。&lt;/p&gt;
+&lt;p&gt;具体操作是先用自研工具mmiotic在处理器内部PCIe互连结构中寻找高延迟区域，再强制CPU直接从该区域读回512字节状态数据，&lt;strong&gt;仅此一步就耗时约740亿个CPU周期，超过23秒。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/73e941cf-2216-4613-9da8-033585d1c941.png" target="_blank"&gt;&lt;img alt="一条指令跑了62秒！x86最慢指令耻辱榜出炉：CPU当场自闭" h="324" src="//img1.mydrivers.com/img/20260808/S73e941cf-2216-4613-9da8-033585d1c941.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为继续压低速度，研究人员让多颗核心同时持续读取另一组高延迟的内存地址，占满CPU的PCIe根复合体通道，使fxrstor64的状态恢复操作被迫排队等待，最终把耗时推高到62秒。&lt;/p&gt;
+&lt;p&gt;后续实验还计划利用Sapphire Rapids处理器支持的AMX指令测试xrstor64，该指令的状态数据区域从512字节扩大到8KB，理论上单条指令执行时间可能超过1万亿个CPU周期。&lt;/p&gt;
+&lt;p&gt;排行榜规则严格：只计算单条指令自身执行时间，可被中断的指令不参与排名，处理程序中运行的模拟指令也不计入结果，所有时间按CPU基础频率标准化，且不允许硬件改装。&lt;/p&gt;
+&lt;p&gt;未来该项目还将建立ARM和RISC-V架构的同类榜单。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 08 Aug 2026 14:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBYRm1XTlVsT2VNcnJPVkljZ0dONTRvMENFOFA0SmQzRmcwcGUxcXBxX2lNMGdza01jd3drcmZKSkJGdlBDcndBSlBUUzNNY05OU0Y0MFUzYms</guid></item><item><title>小米定制2亿像素1英寸超级大底：小米19 Ultra有望首发搭载 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142374.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;小米定制2亿像素1英寸超级大底：小米19 Ultra有望首发搭载&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-08 20:01:53  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1142374-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月8日消息，&lt;span&gt;&lt;strong&gt;有博主透露，小米定制了一款2亿像素1英寸超大底传感器，而且这枚传感器的画幅比例并非传统的4:3。该博主还暗示，小米18 Ultra或将缺席，因此这枚传感器有可能会在小米19 Ultra上率先落地。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;回顾历史，小米是1英寸手机传感器赛道的真正引领者。2022年7月，小米12S Ultra全球首发索尼IMX989图像传感器，成为全球首款搭载1英寸手机图像传感器的量产机型。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/c73e8d30f8cb45979c5708bf03fb26bc.jpg" target="_blank"&gt;&lt;img alt="小米定制2亿像素1英寸超级大底：小米19 Ultra有望首发搭载" h="399" src="//img1.mydrivers.com/img/20260808/s_c73e8d30f8cb45979c5708bf03fb26bc.jpg" w="600"&gt;&lt;/a&gt;&lt;br&gt;
+小米17 Ultra&lt;/p&gt;
+&lt;p&gt;这颗传感器由小米与索尼联合研发，双方各自承担了一半的开发费用。小米创始人雷军当时表示，小米完成首发后，主动将这颗传感器开放给行业同行使用。正是这次突破，开启了手机1英寸大底的规模化商用浪潮。&lt;/p&gt;
+&lt;p&gt;1英寸传感器的核心优势，首先体现在进光量的跨越式提升上。传感器尺寸越大，单位时间内能捕捉的光线就越多。以索尼IMX989为例，其采用Quad-Bayer像素阵列，单像素尺寸达1.6微米，四合一融合后更可达3.2微米。&lt;/p&gt;
+&lt;p&gt;对比iPhone 13 Pro Max，其感光面积提升了193%，感光能力提升了76.8%。超大进光量使其在暗光环境下的拍摄效果尤为突出，画面纯净度远超小底传感器。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;去年小米推出的小米17 Ultra仍然延续了1英寸大底的传统，这也是安卓阵营中唯一一款配备1英寸大底的Ultra手机。后续亮相的同档位超大杯机型，均放弃了1英寸方案。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果小米能够将这枚2亿像素的1英寸大底传感器顺利实现商用，那么其影像能力将再度迈上一个全新的高度，在移动影像领域继续保持领先优势。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260808/ba8ace4a44444424ac019868fce9a5a3.jpg" target="_blank"&gt;&lt;img alt="小米定制2亿像素1英寸超级大底：小米19 Ultra有望首发搭载" h="385" src="//img1.mydrivers.com/img/20260808/s_ba8ace4a44444424ac019868fce9a5a3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 08 Aug 2026 12:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1YVXFaOXktbk9TWk00X0ExNjJ6czZZd21idm5KQ1JMcjRfNWYybjkyWk9BSjRMS1Zsa2RkQzJ1U0pQbkxoeHpfVU51Um1xUk1pZWRzSUE3TG8</guid></item><item><title>RTX Spark最新跑分出炉：20核CPU多核紧追M4 Max、单核仍差24.5% - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142371.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月8日消息，&lt;span&gt;&lt;strong&gt;英伟达ARM架构处理器RTX Spark最新跑分曝光，20核版本多核成绩为23126分，与苹果14核M4 Max的差距缩小到11%，表现较此前测试明显提升。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这款芯片研发代号为N1X，在此前的Geekbench 6测试中，其单核与多核成绩均不理想，甚至未能超越苹果M3 Max，最新结果可以说改观明显。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/c8c5fe3f-336d-45ed-8a2e-bc5597bfa167.jpg" target="_blank"&gt;&lt;img alt="RTX Spark最新跑分出炉：20核CPU多核紧追M4 Max、单核仍差24.5%" h="735" src="//img1.mydrivers.com/img/20260808/Sc8c5fe3f-336d-45ed-8a2e-bc5597bfa167.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最新数据来自Geekbench 7数据库，两台搭载RTX Spark的测试机均配备64GB统一内存，并在平衡功耗模式下运行。其中20核版本单核成绩2570分、多核成绩23126分。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/58b21c12-7d31-4875-8764-8a5f27c3627e.jpg" target="_blank"&gt;&lt;img alt="RTX Spark最新跑分出炉：20核CPU多核紧追M4 Max、单核仍差24.5%" h="730" src="//img1.mydrivers.com/img/20260808/S58b21c12-7d31-4875-8764-8a5f27c3627e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;18核版本单核2541分、多核21776分。作为对比，14核M4 Max单核3404分、多核25957分，&lt;strong&gt;单核差距扩大至24.5%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/1a8af845-387b-4ba7-9689-26b20c5d0165.jpg" target="_blank"&gt;&lt;img alt="RTX Spark最新跑分出炉：20核CPU多核紧追M4 Max、单核仍差24.5%" h="752" src="//img1.mydrivers.com/img/20260808/S1a8af845-387b-4ba7-9689-26b20c5d0165.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;两个版本横向比较，20核比18核单核快1.14%、多核快6.2%。从多核跑分来看，英伟达这款芯片已经弥补了此前明显弱于苹果的短板，但单核性能仍待加强。&lt;/p&gt;
+&lt;p&gt;GPU方面，英伟达为RTX Spark准备了两个规格，低配版配备5120个CUDA核心，高配版为6144个，数量与桌面级RTX 5070、RTX 3080相当，但两者实际性能是否同档还需等待后续测试验证。&lt;/p&gt;
+&lt;p&gt;值得注意的是，相关原型机的测试或许还不能完全代表终端表现，原因是驱动仍未完善。随着搭载新芯片的设备开始铺货，实际表现仍待市场检验。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/ac00cfac-0b1c-4e98-86fa-f2dca7ed1a4e.jpg" target="_blank"&gt;&lt;img alt="RTX Spark最新跑分出炉：20核CPU多核紧追M4 Max、单核仍差24.5%" h="337" src="//img1.mydrivers.com/img/20260808/Sac00cfac-0b1c-4e98-86fa-f2dca7ed1a4e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 08 Aug 2026 11:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5XSDY5bGg5OWNiQTZRMVljanhEdjMxV0Uya19Sa2lwNE5XMEh0R3EzRTEwSmhSRmUxc1FaWjAzbUZ2ZUtZQm1wbUhqNWVNRDNMVGZ4MmxxOFI</guid></item><item><title>DIY市场真的死了吗：存储价格翻三倍 硬件涨价太过离谱 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142362.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;如果把时间拨回到二、三十年前，"DIY"这个词的诞生，本质上是品牌机高溢价之后，消费者不得不去选择的一种“曲线救国”方式。&lt;/p&gt;
+&lt;p&gt;当年买一台品牌台式机，动辄要为品牌溢价、渠道费、服务费等隐性成本多付出三到五成的价格，而同样的配置，自己去中关村电脑城淘些散件找店家攒一台，就能剩下很多钱。在很长一段时间里，DIY成为电脑在中国用户群体中普及的最核心路径。&lt;/p&gt;
+&lt;p&gt;一直以来，其实DIY的核心逻辑非常直接，那就是用更少的钱，换取同等甚至超越品牌机更强的性能。这套逻辑支撑了整整几代攒机玩家，而这也是DIY市场持续繁荣和发展的底层根基，其本质就是"性价比"三个字撑起来的。&lt;/p&gt;
+&lt;p&gt;但2025年到2026年这一轮硬件涨价潮，正在把这套逻辑连根拔起。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/be1e9812b82a40919947aae015188f51.jpg" target="_blank"&gt;&lt;img alt="DIY市场真的死了吗：存储价格翻三倍 硬件涨价太过离谱" h="400" src="//img1.mydrivers.com/img/20260808/s_be1e9812b82a40919947aae015188f51.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;涨到离谱的内存、硬盘：数字不会说谎&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;过去大家吐槽显卡挖矿涨价、缺货加价，但那更多是显卡这一个品类溢价严重，而且显卡这东西不是每个人都必需高性能配置，只要自己常玩的游戏能跑得动，哪怕是老款型号也无妨。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;彼时像CPU、主板、内存、硬盘这些配件，都是DIY预算里不太需要纠结的部分。而这一次不一样——内存和存储，这两个原本相对便宜、且不可或缺的基础部件，成了这一轮涨价潮的重灾区。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;根据行业机构监测，2025年10月之后，DDR4与DDR5内存价格开始快速攀升，到2026年初的短短几个月内，平均价格较此前低点已经累计上涨超过三倍；固态硬盘紧随其后，也开启了一轮持续扩大的涨价通道。&lt;/p&gt;
+&lt;p&gt;进入2026年，情况并未好转，反而愈演愈烈。不少型号的内存涨幅达到了四倍、五倍甚至六倍，一条16GB DDR5内存条的市场价一度冲到近两千元人民币的水平，512GB固态硬盘也要卖到五百元左右，要知道就在两年前，五百元都可以买一根2TB固态硬盘了。&lt;/p&gt;
+&lt;p&gt;不过这轮涨价背后的原因并不复杂，因为AI服务器对存储芯片的需求正在疯狂挤压消费级市场的产能。原厂纷纷把先进制程和新增产能转向HBM等AI相关应用，留给普通PC市场的份额被大幅压缩，供给端的紧缩直接体现在了价格曲线上。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;结果就是，全球PC出货量在这样的压力下明显下滑，笔记本市场也被波及，甚至有消息称部分下一代游戏主机的发售计划都在因为存储成本上升而重新考量。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这已经不是某个品类的局部涨价，而是一整条产业链的系统性普涨，这导致DIY装机成本甚至已经改过了品牌机。一套64GB高频内存的套条甚至抵得上以往一套整机的钱。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DIY比品牌机还要贵？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以往，DIY市场存在的意义就是比品牌机便宜。可现在的情况则是内存、硬盘这类基础零部件的涨幅，导致整机价格暴增。就拿迷你主机来说，去年一台AMD锐龙AI Max+ 395主机的价格是万元出头，今年已经全部涨到了20000元附近。不过，整机涨价的幅度远远比不上内存与硬盘。&lt;/p&gt;
+&lt;p&gt;有分析指出，近几个月内存价格涨幅达到四到六倍，而整机总价的涨幅却远远追不上零件涨幅的脚步，这意味着那些提前囤了库存、拥有规模采购议价能力的品牌厂商，反而在这轮涨价中活得比散户攒机更从容。但随着低价存储库存告罄，整机厂商也不得不开启涨价潮。&lt;/p&gt;
+&lt;p&gt;此外，品牌整机厂可以用长期供货协议锁定相对稳定的芯片价格，可以通过供应链规模优势摊薄成本，甚至可以通过以旧配置卖新溢价的方式消化涨价压力。但是对于普通DIY玩家呢？只能在电商平台上眼睁睁看着内存条、硬盘的价格居高不下。&lt;/p&gt;
+&lt;p&gt;于是，本来为了省钱而生的DIY，如今攒一台同等配置的成本，可能比购买同规格的品牌预装机还要贵。当年那句"自己装电脑更划算"的信条，正在被现实无情地打脸。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/49a0b78dcc6c4cadb241fdfc4d6ac2d5.jpg" target="_blank"&gt;&lt;img alt="DIY市场真的死了吗：存储价格翻三倍 硬件涨价太过离谱" h="399" src="//img1.mydrivers.com/img/20260808/s_49a0b78dcc6c4cadb241fdfc4d6ac2d5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;·普通人买不起的不只是高端配置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更值得警惕的是，这轮涨价冲击的不是发烧友追求的旗舰级配置，而是基础配置门槛。&lt;/p&gt;
+&lt;p&gt;以前提到预算有限，大家想到的是在显卡、CPU、主板等成本上去做控制，例如用价格便宜的老型号显卡，或者选择上一代处理器。&lt;/p&gt;
+&lt;p&gt;但现在，当最基础的16GB内存、512GB硬盘这种入门标配价格都翻了至少一倍。对于学生党、初入职场的年轻人、需要一台工作机的自由职业者来说，就再也不是要不要上高端的选择题，而是能不能装得起一台能正常运行的电脑的基础问题。&lt;/p&gt;
+&lt;p&gt;有攒机老玩家在总结2026年装机行情时直言，由于内存硬盘价格普涨，大多数DIY玩家、旧电脑升级用户、乃至企业单位的集中采购都被迫按下了暂停键。不是不想买，而是有价无市买不起。DIY市场终于活成了以往整机市场的“劝退式”氛围，不去装机成为了当下大多数人的默认选择。&lt;/p&gt;
+&lt;p&gt;这轮涨价潮对于存储厂商来说，可以将产能移步至AI、商用领域，但是对于其它配件厂商，尤其是靠消费市场撑起主要销量的配件厂商来说，或许会遭遇致命打击。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DIY市场真的"死"了吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不过，DIY市场真的死了吗？其实这种表述存在明显的情绪化。但从当下的现实处境来看，这种说法并非全无道理。当人们不再愿意去花费高成本装机时，DIY这个市场就已经失去了它原有的意义。&lt;/p&gt;
+&lt;p&gt;一个市场是否还有生命力，很大程度上取决于它是否还能吸引新玩家进入。当涨价让性价比这个核心卖点彻底失效，当装机预算和品牌整机价格倒挂，当越来越多本该成为DIY新鲜血液的年轻用户被高门槛劝退，这个市场的根基就已经在动摇。&lt;/p&gt;
+&lt;p&gt;当然，也有相对乐观的声音认为，这轮涨价更多是供给端结构性紧张导致的周期性现象，随着存储厂商产能扩充、新一轮工艺和内存标准的普及，价格终会回落。&lt;/p&gt;
+&lt;p&gt;但也有行业人士警告，未来的供需缺口可能比眼下更严峻，价格短期内难言乐观。换句话说，即便DIY市场没有真正死去，它想要回到过去那个高性价比的黄金年代，恐怕也要经历一段相当漫长且痛苦的阵痛期。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260808/8bfa49f0a645491ba37d912479a21586.jpg" target="_blank"&gt;&lt;img alt="DIY市场真的死了吗：存储价格翻三倍 硬件涨价太过离谱" h="399" src="//img1.mydrivers.com/img/20260808/s_8bfa49f0a645491ba37d912479a21586.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 08 Aug 2026 10:29:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9idmx0UWJCejE3UkhIOHh1ZzQwR29fODAtOWZCdmFPZ05LRjYwRldjdHN4a3lRWkVOeXhXWllCUXA3TUpCX2h2Nm43cmR4RGg0RzlXb0dZbjg</guid></item><item><title>国内Apple智能接入千问大模型 Siri前所未有强大 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142353.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月8日消息，&lt;strong&gt;苹果官方更新Mac使用手册，明确国内版本Apple智能可接入阿里巴巴千问大模型。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;搭载macOS26.6及以上系统的Mac设备，开启对应权限后就能解锁全新AI能力，Siri的功能上限相比以往可谓史诗级进化。&lt;/p&gt;
@@ -224,7 +368,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 08 Aug 2026 05:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9aeFpVVTBRbXZ6U0hzcDg3aXViZzJWWmhfQnd0VzJfZEJ0R3Y1NDdoRVROUm5rZl92RnU1RDVINFhTb05UdHctelBpa2lxQkpfQTJGTHdBTjQ</guid></item><item><title>马斯克豪掷超百亿美元打造！全球最大芯片厂面积将超900万平 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142325.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 08 Aug 2026 05:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9aeFpVVTBRbXZ6U0hzcDg3aXViZzJWWmhfQnd0VzJfZEJ0R3Y1NDdoRVROUm5rZl92RnU1RDVINFhTb05UdHctelBpa2lxQkpfQTJGTHdBTjQ</guid></item><item><title>摆脱对华依赖？美国初创公司正押注钠电池 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/china-free-batteries-made-from-salt-are-finally-here-874796a3</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Sat, 08 Aug 2026 04:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMikwFBVV95cUxQZVJObHdaZkFBY0d2T0dfNkVEdWxwWG0wYWo4eEtQNEd3TTlFVkhJWEF4VWRQSkRrVlFUamdjR3NxYlF3TG9xb0drb2NZMjdJalhBU1NYYi1lWU9sZnJsMjF2Y2ljVGdXRHhETTFpNFBPc0JyNEs1endGVGpobTVwVE1jZzFxNkVOYmQ2OVpoMkxHQTg</guid></item><item><title>马斯克豪掷超百亿美元打造！全球最大芯片厂面积将超900万平 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142325.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月8日消息，近日，由马斯克旗下SpaceX与特斯拉联合推进的Terafab超级芯片工厂，曝出能源配套建设的关键新进展。&lt;/p&gt;
 &lt;p&gt;&lt;span&gt;&lt;strong&gt;这座规划制造面积超1亿平方英尺，折合930万平方米的半导体项目，将配套自建发电系统保障生产用电&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
@@ -783,197 +927,4 @@
 &lt;h3&gt;图源：Anthropic&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Fri, 07 Aug 2026 22:11:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE0wWTZjVmlxUHdSMDh6MkxXb1NkYWRtRHpfdUdJNWVYX0tJaTJrRjRqcVhBdHJvbW42NXNfQzN3bmVYUHlBTElBOA</guid></item><item><title>香港记协改选前夕遭保安局长公开威胁 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260807-%E9%A6%99%E6%B8%AF%E8%AE%B0%E5%8D%8F%E6%94%B9%E9%80%89%E5%89%8D%E5%A4%95%E9%81%AD%E4%BF%9D%E5%AE%89%E5%B1%80%E9%95%BF%E5%85%AC%E5%BC%80%E5%A8%81%E8%83%81</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Fri, 07 Aug 2026 21:51:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiqwJBVV95cUxONy1jVHZWNTRGUW5fSGFmNDhTSjhrdU55WTNTR3NYZUNtTVYzM2t0LVNSaDRZSnhubkszM1dKLTRRQWpYcWtremdxZkdMMFJtdTYyYnhheUpGRkIxQ25neWp3dkx4Z3BkRTAyUzdYTDZDUlZIVkRhT1NDaVhHWFhfMGFMT0NiWFNWTDNIWFA2ck15bi1EWlRVM05sdmNROWlYbUMwZndvY1pqNndBM1cwY3dsODRXVHNrX3dBUFJaUnkzMlk4Nm4xVTRjRDV5NHUyVnVhOVNVZ0o4R3BMVXZXRW8ydF9fTUswWHdtQlk4OTlyckpZNTg2enYzYXFDNmNqMC1VUjg4Qzcwak50OW9JeW14elpmSW1Rd2M0VS1zQXZIR0tzU2huNWFDMA</guid></item><item><title>OpenAI暂停部分Astra模型开发，Astra或具备发现并利用零日漏洞能力 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778972</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 07 Aug 2026 20:06:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE0zdDZGNEJoTFdXOGtiS0ViakxDNllLLXhsTkZ3djRNUHloemROT1pzYXpreGJtYzZiVXNIaWRfV0hxazBwUTJ4T1o5clhfT0lETDNF</guid></item><item><title>马斯克是不是疯了？要发射1000000颗 - 风闻</title><link>https://user.guancha.cn/main/content?id=1709553</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
 							&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200239396.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200240324.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;地球知识局&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　文字 | 林间草木声&lt;/p&gt;&lt;p&gt;　　校对 | 朝乾   编辑 | 巴拿拿&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200241875.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　最近，马斯克和黄仁勋联手有一个大动作：SpaceX将与英伟达合作，开发一套天基超算系统Starmind。&lt;/p&gt;&lt;p&gt;　　具体来说，就是发射100万颗卫星，在太空中造一套超级算力系统。每颗starmind AI1卫星都将配备英伟达的 Rubin和Vera CPU，从而实现数据中心级别的算力。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200242989.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　两位大佬这次也开启了商业互吹：马斯克刚说英伟达的GPU“是最优秀的”；英伟达马上回应：AI基础设施的下一章，将大胆走向以往无人涉足的地方。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200244803.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200244126.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　这到底是要开一条新的竞争赛道，还是老马日常口嗨画大饼？中国要不要跟这个东西？&lt;/p&gt;&lt;p&gt;　　我们研究了一下，有趣的点还不少。而且，咱们国家其实也在弄。&lt;/p&gt;&lt;p&gt;　　1.为啥要上天，地球不够用了？&lt;/p&gt;&lt;p&gt;　　当下AI突飞猛进，算力需求暴涨，把存储行业也带飞了，即使你没有长鑫科技的股票，买显卡的时候，涨价也是肉眼可见。&lt;/p&gt;&lt;p&gt;　　但对于各大巨头来说，光锁定存储产能还不够。大型数据中心不光要消耗大量电力，占地还巨大，还要海量散热介质，想建一个并不容易。光是散热需要的冷却水，就相当多。&lt;/p&gt;&lt;p&gt;　　比如谷歌在爱荷华州的一个数据中心，一年要消耗530万吨冷却水。而且，数据中心的冷却，还不是简单用冷水冰一下就行。有相当比例的水会在冷却中蒸发，相当于减少了当地水资源。而且不能用海水，会腐蚀设备。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200244277.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　在耗电方面，2025年，全中国的算力中心用掉了1700亿度电，已经占全国用电1.6%，接近两个三峡的发电量了。中国作为电力克苏鲁感觉不大，但美国那边缺电已经怨声载道。&lt;/p&gt;&lt;p&gt;　　占地+耗水+耗电，即使地大物博的美国也开始有反对声音。尤其是对水资源的侵占，引发很多人不满。7月14日，纽约州长就叫停了本州超大型数据中心的建设。&lt;/p&gt;&lt;p&gt;　　因此，大企业建数据中心愿意去各种偏远地区，就是跟着电力和散热条件跑。&lt;/p&gt;&lt;p&gt;　　比如腾讯把服务器塞进贵州的山洞，比如内蒙古乌兰察布，绿电充沛，土地供应充足，夏天不热、冬天很冷，靠自然散热就能基本解决，阿里、华为等都有投入。最近，DeepSeek也准备在这儿建数据中心了。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200245650.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　美国大厂也有很多招儿，有往北极圈搬的，还有建海底数据中心的。&lt;/p&gt;&lt;p&gt;　　但对于马斯克这样的狂人来说，与其继续在地球上四处找地方下脚，和各地地主来回掰扯，还不如把目光瞄向太空。&lt;/p&gt;&lt;p&gt;　　毕竟天上的条条框框比地上少得多。至于发射大量卫星，对老马来说岂不是自产自销？&lt;/p&gt;&lt;p&gt;　　目前，地球轨道上1.6万颗正在运行的人造卫星，星链就占了8000多颗。也就是说，中美俄欧几个大国的航天部门加在一起，才能和马斯克堪堪打平。&lt;/p&gt;&lt;p&gt;　　而这次的Starmind项目，按照老马的说法，要发射100万颗。第一批明年就上天。&lt;/p&gt;&lt;p&gt;　　因为和地面相比，把数据中心搬上天，确有过人之处。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200245674.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　2.上天，是好事儿么？&lt;/p&gt;&lt;p&gt;　　在太空建数据中心，最直观的好处就是无限的能源。毕竟这里不受地表天气影响，没有大气层的吸收，太阳光照强度远超地表。&lt;/p&gt;&lt;p&gt;　　综合下来，发电效率能有7-10倍的差距，天上一块板顶得上地上好几块。而且只要打开太阳能板就能发电，无穷无尽，还不用再掏钱。&lt;/p&gt;&lt;p&gt;　　在数据中心的运转中，电力成本是大头，这块吸引力足够大。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200246629.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　但散热问题，就没那么简单了。&lt;/p&gt;&lt;p&gt;　　太空中的温度可以低至零下200多度，但是基本真空，没法通过热传导和对流散热，只能靠自身的热辐射向外输送热量，也就是让热量自身以电磁波的形式发散出去。效率其实不如地面的冷却水。&lt;/p&gt;&lt;p&gt;　　但SpaceX已经在星链卫星上大量使用了液体散热板技术，同时配合特质涂层等手段，积累了相当多的经验。&lt;/p&gt;&lt;p&gt;　　所谓液体散热板技术，就是让流动的冷却液吸收一部分热量，这样就可以把热量均匀地“摊”在散热板上，增大散热面积。板中的液体，也可以循环使用。&lt;/p&gt;&lt;p&gt;　　每颗Starmind AI1卫星上，都有160平米的液体散热板。现在，常规卫星的散热能力大约是100-300W每平方米。而星链卫星的散热能力可以达到300-500W每平方米。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200246620.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　根据SpaceX的说法，他们进一步优化了冷却系统，散热能力最高可以达到1400w每平方米。&lt;/p&gt;&lt;p&gt;　　3.这个项目和星链是什么关系？&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;星链实际上是starmind的一部分。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　简单来说，星链相当于把大量通信基站和海底光纤一起发射上天，让信号覆盖全球。而Starmind这套搬上太空的数据中心，也有数据传输的需求，这些全部由星链来做。&lt;/p&gt;&lt;p&gt;　　Starmind AI1卫星只需要尽情开算。借此，太空数据中心也能解决许多地方通信不畅，无法使用算力的问题。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200247527.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　现在，SpaceX正在美国得州的巴斯特罗普建造超级工厂“Gigasat Factory”，专门用来造Starmind卫星。占地高达1100万平方英尺，和上海特斯拉超级工厂的占地面积相当。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200247383.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　4.100万颗，挤得下吗？&lt;/p&gt;&lt;p&gt;　　不好说。&lt;/p&gt;&lt;p&gt;　　今年1月，SpaceX已经向美国空间主管部门递交了100万颗卫星的发射份额申请，并获得批准。&lt;/p&gt;&lt;p&gt;　　按照学界的一般共识，地球低轨道的容量大约只有6万颗。目前在轨卫星已经达到1.6万颗，剩余空间其实并不宽裕。不过，既然信息传输是由低轨道的星链完成，算力卫星也可以使用距离地表更远的高轨道空间。&lt;/p&gt;&lt;p&gt;　　无独有偶，今年年初，我国也向国际组织提交了近20万颗卫星的发射申请。这几年，类似的大额申报并不少见。现实中未必真要发这么多，但轨道和频率资源有限，得先把坑占住。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200248607.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　无论怎样，地球轨道确实越来越挤。照这个趋势发展下去，马斯克过几年弄出一套“三体人算力体系”，也不是没可能。&lt;/p&gt;&lt;p&gt;　　这么多卫星上天，也导致了天文学界的抗议。毕竟，现在天上几千颗星链卫星的反光，已经干扰到了天文光学观测。再上去几万个甚至更多，还干不干了？&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200249653.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　今年年初，SpaceX还专门调整了上千颗星链卫星的轨道，以降低反光对天文观测的影响。&lt;/p&gt;&lt;p&gt;　　5.中国要搞吗？&lt;/p&gt;&lt;p&gt;　　已经在搞了，不但有，而且很多，有的已经上天了。&lt;/p&gt;&lt;p&gt;　　2025年5月14日，杭州之江实验室和成都国星宇航合作开发的12颗算力卫星，已经在酒泉发射升空。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200249191.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　有意思的是，这两家机构其实各有一套规划。之江实验室的项目叫“三体计算星座”，名字很有中国特色；成都国星宇航的项目则叫“星算计划”。&lt;/p&gt;&lt;p&gt;　　按照目前进度，三体计算星座将在2032年前发射1000颗计算卫星，初步建成太空算力网络。&lt;/p&gt;&lt;p&gt;　　其实，国内在天基算力领域的探索很早就开始了。2023年，北京邮电大学与长沙天仪空间合作的“天算星座”项目，就已经上了天。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200250116.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　在上个月的世界人工智能大会上，众多企业和高校又宣布了一大批太空算力计划，包括复旦大学的星枢、深空矩阵公司的星环计划等等。&lt;/p&gt;&lt;p&gt;　　去年北京中关村也宣布，将建设距地700-800公里集中式太空数据系统。太空算力竞争已经如火如荼。&lt;/p&gt;&lt;p&gt;　　但这一轮星际PK，大概率只有中美才玩得起。&lt;/p&gt;&lt;p&gt;　　6.下一代文明？&lt;/p&gt;&lt;p&gt;　　马斯克很喜欢苏联天文学家卡尔达肖夫提出的文明等级理论。其衡量文明水平的核心指标，就是利用能源的能力。&lt;/p&gt;&lt;p&gt;　　人类至今连地球上的能源都没有开发完，按照这一标准，大约还只是0.7型文明。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200251794.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　对于目前大火的可控核聚变，马斯克一直持否定态度：太阳那么大个，还不要钱的天然核聚变反应堆在那儿，为啥还要造个小的？还不如去研究一下戴森球。&lt;/p&gt;&lt;p&gt;　　当算力不再依赖地球的能源，人类的一只脚或许跨进了Ⅱ型文明。毕竟，我们不能指望星际航行时代，所有算力都还在地球上。&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/07/20260807200252351.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　从GPT 1.0发布至今不过几年，AI已经彻底改变了我们的生活。太空算力一旦实现近乎无限的供给，又会把人类变成什么样，没人说得准。&lt;/p&gt;&lt;p&gt;　　唯一能确定的是，我们的脚步，将不会止于地球。&lt;/p&gt;&lt;p&gt;　　今年4月，人类在时隔半个世纪后再次前往月球&lt;/p&gt;													&lt;/div&gt;
 						
-						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Fri, 07 Aug 2026 19:08:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE5pSzhNalRMVWhieFBjeEVHUUdleDVVd3daMGRRdWxucGJ5OUF3d0YwLWhhYzN0Rm41bjJjb05LRjh0SmpTaEdidXlUU1ZLc1hkY2loQTR3X2JYc2s</guid></item><item><title>上海大數據追蹤居民 離滬28天遭來電詢問 - 大纪元</title><link>https://www.epochtimes.com/gb/26/8/7/n14825524.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div data-post-content="true" class="post_content" id="post_content"&gt;&lt;p&gt;【大纪元2026年08月08日讯】（大纪元记者江菲采访报导）上海一名居民近日发文称，自己赴外省出差28天，返回上海后接到居委会来电。对方询问她是否“不回上海了”，并提到“大数据检测到不在上海”。不少上海居民随后分享类似经历，也有受访者表示，自己曾因跨市出行遭公安追踪。&lt;/p&gt;&lt;p&gt;她发布的截图显示，她离开上海近一个月，返回后接到居委会电话。对方询问她是否已不在上海居住，并表示系统显示她长期不在上海。她在网络发文说，自己只是正常出差，没有任何违法犯罪记录，也未受到过行政处罚，不理解为何离开一段时间便会接到社区来电。她还说，居委会工作人员提到“大数据检测到我不在上海”，令她疑惑居民离开上海是否需要报备，个人日常行踪是否已被纳入基层管理范围。&lt;/p&gt;&lt;p&gt;评论区还有网友留言说，小区门禁卡实行实名登记，一个月没有刷卡记录，社区网格员便能发现住户长期没有返回。不过，也有居民表示，自己居住的小区经常由保安人工开门，不会留下完整的门禁记录，因此未接到类似电话。还有居民分享说，自己曾接到派出所电话，对方核实身份后，还介绍附近警务站的位置，并表示有需要可以随时联系。&lt;/p&gt;&lt;h2&gt;大数据锁定居民行踪&lt;/h2&gt;&lt;p&gt;青岛公益人士黄山（化名）告诉记者，有一次他到杭州出差，刚入住酒店，就接到当地国保电话，询问他何时到达杭州、准备停留几天。&lt;/p&gt;&lt;p&gt;他说：“他们问我什么时候去的杭州，去了几天。我反问他们，公民难道没有行动自由吗？你们用大数据给我定位，这是侵犯公民合法权利。一个国保说这是为了我的安全，鬼才相信这种说法。”&lt;/p&gt;&lt;p&gt;黄山还说，当地公安一直盯着所谓“敏感人士”，有时甚至毫不避讳，令他十分生气。&lt;/p&gt;&lt;p&gt;他说：“我很愤怒，走到哪里他们都知道。我有一次把电话放在家里，去了潍坊，结果他们还是可以找到我。回来后，朋友说，大街上的摄像头都有生物识别功能，可以拿你的生物特征进行比对。我像是活在监狱里。”&lt;/p&gt;&lt;h2&gt;“敏感人士”跨市即遭追踪&lt;/h2&gt;&lt;p&gt;评论区还有不少网友说，自己也遇到过类似情况。其中有网友表示，社区会定期更新常住人口登记，居民长期外出，可能会被默认为已迁出常住人口，网格员随后会联系本人确认身份。也有网友联想到疫情期间的基层流调制度，例如2022年上海疫情期间曾建立人员流动排查机制，如今类似情况再次出现。&lt;/p&gt;&lt;p&gt;上海闵行访民叶先生告诉记者，他和妻子前往浙江宁波探亲时，刚离开上海便接到派出所电话追问去向。&lt;/p&gt;&lt;p&gt;他说：“5月，我和老婆去宁波回她娘家，一出上海，我在高速公路上就接到派出所打来的电话，问我要去哪里。我说跟老婆回老家，他们放心了，说不要去北京，还祝我旅途愉快。这帮人不做正经事，查一个人很用心。北戴河会议时间到了，前几天又提醒我说，最近北京很乱，叫我不要去北戴河凑热闹。我说我又不是领导人，要上访，凑什么热闹。”&lt;/p&gt;&lt;h2&gt;基层维稳渗入民事证明&lt;/h2&gt;&lt;p&gt;上海一位要求匿名的律师告诉记者，上海各区居委会、社区网格员、公安局等部门承担人口登记、信息更新及基层“维稳”任务。社区居民办理民事证明时，相关部门还会审核其近期活动，最后由街道办出具证明。如果有人留下“不良记录”，其出境及申请公证书等事项都会受到不同程度的影响。&lt;/p&gt;&lt;p&gt;责任编辑：高静#&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>大纪元</author><pubDate>Fri, 07 Aug 2026 19:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiX0FVX3lxTE1CNXl2ODdJQlFJNUJ5OHNMN1l6NG1HM0dfRU84UVBpMkdTUnFUc2o1OHNIRV9YSWdMdlNEZFJEdW9kQ2hGbEI0ZHRQQWpMejNLa0I4OWVOSXRBd2lJbFRN0gFkQVVfeXFMUEtQcFVfV25EX21qMWpHeUdQWEliWVNMUkJwbEtJRVd1blJjS1RUT1FQUDBsd0NqWlk5QUNkam1POWdwdnk4VFpodjE0Z1FINlpGaC1OZm9XTHVQcHpQWnB4UmFPLQ</guid></item><item><title>AI债务狂潮遭遇“消化不良”，华尔街开始重新审视科技巨头发债热潮 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778967</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 07 Aug 2026 16:49:58 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1IbHhKd3Y2cUJhZ3hBQzBpY0hhQndMVUwxSjZVTlQ0SkZsazdyNXRsX2hmVWRncEhXVFBEWW5taGE3dW5FRVZTUENFREZrVmszOV9F</guid></item><item><title>三星手机还没退出中国 门店先扛不住了 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142284.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;最近科技圈有个新闻，说出来可能很多差友都没什么感觉 —— 三星手机开始大规模收缩中国线下门店了。&lt;/p&gt;
-&lt;p&gt;目前深圳、福州、郑州、西安、昆明、合肥等地，都已经出现了三星门店陆续关闭的情况，而且根据网上流出来的消息，它这关店标准还挺简单粗暴：月销售额达不到 30 万的店，逐步清退。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/4a243b1a-b353-4371-a59d-cac4f110aaf3.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="390" src="//img1.mydrivers.com/img/20260808/S4a243b1a-b353-4371-a59d-cac4f110aaf3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;说实话，刚看到这新闻的时候，托尼还愣了一下 —— 你别看 30 万听着好像挺多，但往粗了算，按一台旗舰 6000 块均价，一家门店一个月只要卖够 50 台手机就能达标，平均每天不到两台。&lt;/p&gt;
-&lt;p&gt; 好家伙，一天卖不出两台手机，这店感觉确实没有继续开下去的必要了。。。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/423e9a40-08a3-448d-89e7-0ea3c2fb2c86.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="400" src="//img1.mydrivers.com/img/20260808/S423e9a40-08a3-448d-89e7-0ea3c2fb2c86.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;可要是把时间拨回十几年前，情况完全不是这样，巅峰时期，三星一度拿下中国智能手机市场第一，旗舰机更是无数人眼里的机皇标杆，那时候提到高端安卓机，很多人的第一反应就是三星。&lt;/p&gt;
-&lt;p&gt;结果现在呢？&lt;/p&gt;
-&lt;p&gt;打开 IDC 每季度的国内市场报告，前几名里早就看不到三星的影子了，最新二季度的榜单里，它以 0.1% 的份额排在第十位，差点跟其他小众品牌一起沦为了 “ Others ”，基本已经没什么存在感。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/a60e9d47-f8b4-4393-a816-c90af7911e97.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="365" src="//img1.mydrivers.com/img/20260808/Sa60e9d47-f8b4-4393-a816-c90af7911e97.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从一哥差点混到 Others，我估计很多差友会好奇：三星怎么就在国内混成这样了？&lt;/p&gt;
-&lt;p&gt;其实三星进入中国的时间，比大多数人想象的早得多，1992 年中韩建交，三星的反应堪称外企模范生，当年就扎进了国内市场，先后在惠州、天津、东莞等地建厂，属于最早一批落地的韩企。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/8d07232d-797a-4980-9964-9ed8bd7e7435.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="417" src="//img1.mydrivers.com/img/20260808/S8d07232d-797a-4980-9964-9ed8bd7e7435.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;只不过那时候的三星，可没什么光环，就是个勤快的韩国厂哥，而且它一开始卖的不是手机，而是电视、冰箱、洗衣机这类大家电，毕竟当时国内还是大哥大的天下，摩托罗拉几乎把市场包圆了。&lt;/p&gt;
-&lt;p&gt;三星真正在中国手机市场崭露头角，要等到功能机的黄金年代。&lt;/p&gt;
-&lt;p&gt;那时候摩托罗拉还在守着商务机的基本盘，诺基亚靠着直板机一统天下，国产品牌里波导喊着 “ 手机中的战斗机 ” 靠渠道下沉打价格战，TCL 捧着宝石手机啃女性市场，整个市场堪称百花齐放。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/3566712b-e55e-411e-b7a4-5d75044e1c1e.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="337" src="//img1.mydrivers.com/img/20260808/S3566712b-e55e-411e-b7a4-5d75044e1c1e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;三星瞅准了中间的缝隙，&lt;strong&gt;带着「Anycall」的招牌，走了条不一样的路 —— 主打设计和高端。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;现在回头看，三星当年的产品策略确实拿捏的挺准，别人都在做直板机，它把滑盖、双屏翻盖玩出花；别家还在用单色屏，它率先用上了 TFT 真彩屏，再配上和弦铃声，拿手里辨识度直接拉满。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/5e8d7c91-027d-4e24-bb9f-b02c9aaff0fe.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="337" src="//img1.mydrivers.com/img/20260808/S5e8d7c91-027d-4e24-bb9f-b02c9aaff0fe.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;经典款比如 2002 年的 SGH-T108 —— 对，就是《 流星花园 》里那台同款，当年行货上市价直接干到七千多。&lt;/p&gt;
-&lt;p&gt;什么概念？2003 年全国城镇职工月平均工资刚过一千，一台手机抵大半年工资，妥妥的高端货，当年要是有人拿着 Anycall 翻盖机啪一下翻开接电话，那回头率，可能比现在拿个折叠屏还要高。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/9ae83a0a-784b-413b-b9cc-27cfc84ab4f6.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="400" src="//img1.mydrivers.com/img/20260808/S9ae83a0a-784b-413b-b9cc-27cfc84ab4f6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;靠着 “ 设计+高端 ” 的路子，三星在功能机时代硬生生杀出了一片天，到 2008 年左右，它已经稳坐在国内市场第二的位子（ 份额约 16% ），仅次于诺基亚，把曾经的老大哥摩托罗拉甩在身后。&lt;/p&gt;
-&lt;p&gt;再加上当年北京奥运会全球赞助商的身份加持，三星的品牌声量更是上了一个台阶。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/0b613c2d-a202-4f82-b95d-f5cf0c67ce59.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="337" src="//img1.mydrivers.com/img/20260808/S0b613c2d-a202-4f82-b95d-f5cf0c67ce59.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;但真正让三星登上王座的，还是智能手机浪潮的到来：当年的三星，几乎同时掌握了智能手机时代最重要的几张牌，屏幕是自己的，内存是自己的，处理器能自己做，摄像头传感器也能自己供。&lt;/p&gt;
-&lt;p&gt;再加上当时安卓刚刚起飞，三星不需要像诺基亚那样背着旧系统艰难掉头，也不用像一些国产品牌那样，等上游有什么零件才能拼出什么产品，它想做一台什么手机，自己就能先把大半零件备齐。&lt;/p&gt;
-&lt;p&gt;2010 年，第一代 Galaxy S 发布，现在看这机子配置平平无奇，但在当年，它是第一个能跟 iPhone 4 掰手腕的选手，Super AMOLED 屏幕、1GHz 处理器、9.9mm 超薄机身，直接甩开友商一大截。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/bb1ae194-a372-4f7a-8f50-ec779f55c31f.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="450" src="//img1.mydrivers.com/img/20260808/Sbb1ae194-a372-4f7a-8f50-ec779f55c31f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;真正的爆发是 2011 年发布的 Galaxy S2。&lt;/p&gt;
-&lt;p&gt;这机子一出直接炸场，85 天全球卖出 500 万台，5 个月破千万，也正是靠着这代产品打出来的势头，三星当年全球出货量首次超过苹果，坐上了全球智能手机老大的位子，而且这一坐就是十几年。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/676b8f48-4f30-4488-8df6-aff1851d35de.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="299" src="//img1.mydrivers.com/img/20260808/S676b8f48-4f30-4488-8df6-aff1851d35de.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;后来三星凭借自家供应链优势，更是把「机海战术」玩到了极致。&lt;/p&gt;
-&lt;p&gt;高端线有 S 系列和 Note 系列，前者主打时尚轻薄，抓年轻用户；后者靠着大屏+S Pen，精准拿捏商务人群；中端有 Grand、Mega 系列，低端就更狠了，各种入门机型铺满了三大运营商的合约渠道。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/352b7a16-51bb-4f0a-bac9-4c0f43fba593.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="337" src="//img1.mydrivers.com/img/20260808/S352b7a16-51bb-4f0a-bac9-4c0f43fba593.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这套 “ 旗舰树高端、中低端走量、运营商铺渠道 ” 的组合拳，很快把三星送上了顶峰。&lt;/p&gt;
-&lt;p&gt;那几年三星在国内有多猛？说几个数字大家感受下：2012 年市场份额 17.7%，稳坐头把交椅；2013 年冲到巅峰，单季度份额一度接近 22%，也就是说，当年街上每五台智能手机，就有一台是三星。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/2f004da4-e3f3-4407-ad67-433343f34b3a.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="800" src="//img1.mydrivers.com/img/20260808/S2f004da4-e3f3-4407-ad67-433343f34b3a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;那会华为主要靠运营商定制机走量，高端步子还没迈开；小米刚成立没几年，刚靠互联网性价比模式起势，但线下基本没什么存在感；OPPO、vivo 还在闷头铺门店、打广告，在下沉市场慢慢攒家底。&lt;/p&gt;
-&lt;p&gt;换句话说，在三星这个庞然大物面前，同时期的国产品牌都还只是追赶者，没人会想到，这个看似不可撼动的安卓霸主，会在短短几年里摔得这么惨。&lt;/p&gt;
-&lt;p&gt;崩塌的起点在 2014 年。先是苹果扔出了 iPhone 6 和 6 Plus，这是 iPhone 首次用上大屏，精准戳中了三星此前靠大屏建立的高端优势，国内全渠道预约量一路暴涨，把安卓阵营高端用户抢走了一大半。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/b5e6d6d3-844e-4f26-90b8-ffbd86535b38.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="376" src="//img1.mydrivers.com/img/20260808/Sb5e6d6d3-844e-4f26-90b8-ffbd86535b38.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;到 2015 年第一季度，苹果以 14.7% 的份额直接登顶国内市场，三星苦心经营多年的高端基本盘，就这么被苹果撕开了大口子，雪上加霜的是，高端失守的同时，三星中低端市场也被国产厂商抄了底。&lt;/p&gt;
-&lt;p&gt;小米靠着极致性价比和互联网营销大杀四方，终于在 2014 年把三星从多年的第一宝座上掀了下去，紧跟着，华为、OPPO、vivo 全线发力，从千元机到中端机全方位围堵，把三星的生存空间越挤越窄。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/bc9bad3c-b190-4392-a43e-a273bb7c056c.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="693" src="//img1.mydrivers.com/img/20260808/Sbc9bad3c-b190-4392-a43e-a273bb7c056c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;数据最能说明问题：2014 年三星在国内还能卖出近 5850 万台手机，但榜首已经易主；到了 2015 年，销量直接缩水三分之一，份额跌到个位数，在国内销量榜直接滑到了第六位。。。&lt;/p&gt;
-&lt;p&gt;2016 年，三星发布了 Galaxy Note7，这款产品三星本来是憋着劲当翻盘王炸打的：骁龙 820 旗舰处理器（ 国行版 ）、2K 分辨率双曲面屏、虹膜识别，配置拉满。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/7522f73e-7541-47ff-97a7-cd829ec0d215.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="720" src="//img1.mydrivers.com/img/20260808/S7522f73e-7541-47ff-97a7-cd829ec0d215.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;结果上市没多久，Note7 因为电池缺陷引发的起火爆炸在全球接连出现，后来多家航空公司直接把它拉进了违禁品黑名单，9 月 2 日，三星宣布全球召回约 250 万台 Note7，但中国市场被排除在外。&lt;/p&gt;
-&lt;p&gt;三星给出的理由是：国行版电池供应商是 ATL ，国际版是 SDI，出问题的是 SDI 的电池，国行没问题，大家可以放心买，搁当时消费者心里虽然打鼓，但毕竟是国际大厂，很多人还是选择了相信。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/3a136c5d-45ea-40e6-9bf0-838d1ae83b89.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="1022" src="//img1.mydrivers.com/img/20260808/S3a136c5d-45ea-40e6-9bf0-838d1ae83b89.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;然后打脸来得飞快，9 月 18 日，国行版 Note 7 曝出首炸，紧接着第二炸、第三炸接踵而至，短短十天就爆出好几起自燃案例，有用户放兜里突然冒烟，有用户充电时连旁边的电脑都被烧了。。。&lt;/p&gt;
-&lt;p&gt;后面事态的每一步发展，都精准踩在消费者的怒点上。&lt;/p&gt;
-&lt;p&gt;三星先是否认产品有问题，委托检测后声称是外部加热导致损坏，暗指起火是人为造成；直到被国家质检总局约谈，才在 9 月 14 日宣布召回 1858 台国行测试体验机，而零售版依然不在召回范围内。&lt;/p&gt;
-&lt;p&gt;一直到 10 月 11 日，连美国主流运营商都已全面停售，更换了新电池的 “ 安全版 ” 也接连爆出自燃事故，三星才宣布全球停产停售 Note 7，同时启动中国市场的全面召回，共计 190984 台。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/aa5d02f2-79be-4a88-a96c-e0392ab14d00.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="307" src="//img1.mydrivers.com/img/20260808/Saa5d02f2-79be-4a88-a96c-e0392ab14d00.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这一天，距离全球首次召回，过去了整整 39 天，足够让中国消费者的信任彻底凉透。&lt;/p&gt;
-&lt;p&gt;很多人以为三星是被 Note 7 直接「炸死」的，其实不全是，事件闹得最凶的 2016 年，三星在国内还有将近 5% 的份额，虽说没了当年一哥的风光，但好歹还留在牌桌上，没彻底退出主流战场。&lt;/p&gt;
-&lt;p&gt;真正把三星按在地上摩擦的，是国产手机的全面崛起，咱们来看一组数据：&lt;/p&gt;
-&lt;p&gt;2016 年，三星在国内还有 4.9% 的份额；2017 年只剩 2% 出头；2018 年跌破 1% 大关，从此在各家调研机构的报告里，都被归进了 Others 阵营；到 2026 年第二季度，份额更是跌到了 0.1%。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/0f16aadf-037a-4a1d-91c9-a7d763224b74.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="221" src="//img1.mydrivers.com/img/20260808/S0f16aadf-037a-4a1d-91c9-a7d763224b74.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;0.1% 是什么概念？整个季度，全国只卖出约 7 万台三星手机，作为参考，华为、小米等头部手机厂商一个季度在国内能卖上千万台手机，某些单款爆品一个月的销量都比三星一个季度多。。。&lt;/p&gt;
-&lt;p&gt;为什么跌得这么快？因为它在每个价位段，都遇到了 “ 不讲武德 ” 的对手。&lt;/p&gt;
-&lt;p&gt;低端市场，小米带着红米杀了进来，同样的配置，三星卖一千五，红米卖九百，你三星品牌再响，也架不住几百块差价，更别说还有荣耀、魅蓝一堆品牌卷性价比，三星低端机根本没还手之力。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/d7e60e01-4812-4402-9585-21c6c809b6cf.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="337" src="//img1.mydrivers.com/img/20260808/Sd7e60e01-4812-4402-9585-21c6c809b6cf.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;中端市场，OPPO、vivo 靠着线下渠道疯狂开店，蓝绿大厂的门店直接开到了县城、开到了镇上，三星很多门店还停留在大城市的核心商圈，下沉市场根本触达不到。&lt;/p&gt;
-&lt;p&gt;高端市场，除了苹果，华为也带着 Mate、P 双旗舰一路杀了上来，以前买三星 S 和 Note 系列的那批商务、高端用户，后来有很大一部分转投到了苹果和华为阵营，市场上已经没几个位置留给它。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/3748cc52-ccd4-48e4-84b5-221fa0047cb8.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="452" src="//img1.mydrivers.com/img/20260808/S3748cc52-ccd4-48e4-84b5-221fa0047cb8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;2017 年，萨德事件又在下滑路上狠狠推了一把，那一年三星在中国只卖出约 1107 万台手机 —— 连 2016 年全年的一半都不到。&lt;/p&gt;
-&lt;p&gt;再往后，就是物理意义上的收缩了，2018 年底，三星关了天津手机工厂，2019 年 10 月惠州工厂关停，这是三星在中国的最后一座手机制造厂，它的关闭也意味着，三星手机彻底告别中国制造。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/b40de247-644d-4772-b7a9-a0a26b0f60ec.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="439" src="//img1.mydrivers.com/img/20260808/Sb40de247-644d-4772-b7a9-a0a26b0f60ec.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;当时不少人把这件事理解成 “ 三星退出中国 ”。&lt;/p&gt;
-&lt;p&gt;但严格来说，走的只是生产端，销售端并没有停止，三星依然会在国内发布 Galaxy S、Galaxy Note，以及后来的 Galaxy Fold 和 Z 折叠屏；商场里依然能看到体验店，电商平台照样可以买到国行机。&lt;/p&gt;
-&lt;p&gt;甚至这些年，三星也不是完全没想过重新杀回主流视野。&lt;/p&gt;
-&lt;p&gt;它做过更本地化的系统服务，重新梳理过渠道，靠折叠屏守住高端市场，还不断强调自己在屏幕、影像、AI 上的优势，后来它还专门跟百度、美图、WPS 等国内厂商合作，补齐国行版的 AI 体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/29382257-cec9-4d27-97ee-29292abfab4d.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="294" src="//img1.mydrivers.com/img/20260808/S29382257-cec9-4d27-97ee-29292abfab4d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;可手机市场最残酷的地方就在这：产品做好了，不代表用户就会回来，当一个品牌跌出主流视野之后，它失去的不只是销量，还有门店数量、导购积极性、渠道资源、媒体声量、甚至二手保值率。&lt;/p&gt;
-&lt;p&gt;折叠屏手机刚出来时，三星确实是老师傅，但华为、荣耀、OPPO、vivo、小米很快就把轻薄、续航、影像、快充和本地生态补了上来，人家配置比你高，价格还比你便宜，这还怎么打？&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/87328a5f-492f-4ea1-b835-421a3ac3e25e.png" target="_blank"&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="398" src="//img1.mydrivers.com/img/20260808/S87328a5f-492f-4ea1-b835-421a3ac3e25e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而直板旗舰这边，国产厂商更是把一英寸大底、潜望长焦、卫星通信轮番往上堆，各家旗舰你方唱罢我登场，半年一小更、一年一大更，三星再强，也很难靠一年两台旗舰，扛住这一波波的轰炸。&lt;/p&gt;
-&lt;p&gt;到了 2026 年，这种收缩终于从生产端，一路传到了零售端 —— 今年 5 月，三星宣布停止在国内销售电视、显示器、冰箱等家电产品，当时官方还特意强调，手机、存储和医疗器械业务正常运营。&lt;/p&gt;
-&lt;p&gt;结果没想到才过去三个月，手机业务也开始清理低效门店。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="三星手机还没退出中国 门店先扛不住了" h="653" src="//img1.mydrivers.com/img/20260808/9fb43fbc-838e-4e21-b837-ab8088274288.png" w="518"&gt;&lt;/p&gt;
-&lt;p&gt;开一家线下店，要交租金、装修、配导购、备样机，还要承担库存和运营成本，要是一个月连基本销售规模都撑不起来，继续开着的意义，可能只剩下给品牌保持一点存在感，让人知道这牌子还在。&lt;/p&gt;
-&lt;p&gt;不过各位也别因为三星在中国只剩 0.1%，就觉得它不行了，恰恰相反，在全球范围内，三星依然是安卓阵营的老大，2026 年第二季度三星仍排在全球智能手机市场第一，三星只是在中国输了而已。&lt;/p&gt;
-&lt;p&gt;三星还是那个三星，只是它面对的中国手机产业，已经不是十几年前那个中国手机产业了。&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 16:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBoRUlyUHdiZWpUODR0blJiWUx5cDNUZWw4amZqaXd2NUZlekhYcTFkZm83bmduLUxpeC03ckxLOWF5cnR1YmtNRDVwZkJRSTlJT29xNU5Ca3g</guid></item><item><title>年轻人不想生孩子 可能还真因为手机玩多了 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142283.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;“用iPhone能避孕？”  &lt;/p&gt;
-&lt;p&gt;我妈催生找茬都说不出来的话，竟然是美国那边正儿八经研究出来的学术论文。&lt;/p&gt;
-&lt;p&gt;今年 6月，美国国家经济研究局 NBER 发布了一篇工作论文，标题是《Is the iPhone Birth Control?》。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/dff1e42c-c197-45b4-b0b0-283b2e9145b9.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="165" src="//img1.mydrivers.com/img/20260808/Sdff1e42c-c197-45b4-b0b0-283b2e9145b9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;托尼心想，这美国论文还搞标题党呢？ iPhone 要是真能避孕，家族群里的七大姑八大姨，应该早早就给我发微信让我把手机扔了。&lt;/p&gt;
-&lt;p&gt;于是托尼就抱着看乐子的心态搜了下这篇论文，结果看到一半发现，这论文中提到的“iPhone避孕”跟大家想象中的可能不是一回事……&lt;/p&gt;
-&lt;p&gt;起初呢，是论文作者注意到了一个现象。美国生育率从 80 年代到 2007 年一直在缓慢下降，但 2007 年之后，曲线突然加速往下走。刚开始还觉得是经济危机影响的，毕竟经济差了，不敢生孩子，也很合理对吧。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/90eca970-7500-44f8-8a4a-06015ae90d24.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="338" src="//img1.mydrivers.com/img/20260808/S90eca970-7500-44f8-8a4a-06015ae90d24.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;但再往后看几年，美国经济逐渐恢复，失业率降了，收入涨了，但生育率还在走下坡路。那看来，金融危机或许只是原因之一，背后可能还有另一个更长期的变量。&lt;/p&gt;
-&lt;p&gt;那会是啥呢？&lt;/p&gt;
-&lt;p&gt;作者把2007年前后所有可能改变美国社会的大事件都重新翻了一遍。最后，他们把“嫌疑”锁定在2007 年发布的iPhone身上。&lt;/p&gt;
-&lt;p&gt;当然，光时间吻合这一点还不足以确定 iPhone 和生育率的相关性。&lt;/p&gt;
-&lt;p&gt;于是就到了这篇论文真正有意思的部分：苹果自己，在无意之间帮他们做了一场全国范围的实验，验证了这一切和 iPhone 相关。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/d7eeed21-cc3f-40a6-a792-6d433bfffa6f.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="337" src="//img1.mydrivers.com/img/20260808/Sd7eeed21-cc3f-40a6-a792-6d433bfffa6f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;2007年6月到 2011 年，苹果跟AT&amp;amp;T签了独家协议，想买 iPhone，就只能用 AT&amp;amp;T 一家运营商。&lt;/p&gt;
-&lt;p&gt;但是AT&amp;amp;T当时有个大问题：他们的 3G 网络基站建设进度，有着很大的地域差异。&lt;/p&gt;
-&lt;p&gt;于是在 3G 信号早早铺好的地方，居民为了完整的智能上网体验，早早就买了 iPhone。而信号差的地方，居民要过几年才能用上。&lt;/p&gt;
-&lt;p&gt;作者调查发现，在之前美国15-19岁这个年龄段因为缺乏相关知识，意外怀孕情况比较多。但在AT&amp;amp;T 3G覆盖好的地区，同样是15到19岁的女孩，怀孕生产率的相对降幅达到26%；那些覆盖差的地区，降幅只有14%。&lt;/p&gt;
-&lt;p&gt;在其他年龄段，AT&amp;amp;T 覆盖好的区域也出现了明显的生育率降幅。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/89ec03fe-90c7-4595-9e74-19b97f78a8b5.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="397" src="//img1.mydrivers.com/img/20260808/S89ec03fe-90c7-4595-9e74-19b97f78a8b5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;不过作者并没有凭这一点就锁定是 iPhone 的影响。&lt;/p&gt;
-&lt;p&gt;万一 AT&amp;amp;T 这些覆盖好的地方，可能原本就有各种因素影响生育率呢？&lt;/p&gt;
-&lt;p&gt;于是他们又找来了另外两家运营商——Verizon 和 Sprint。&lt;/p&gt;
-&lt;p&gt;在2008到2009年，这两家已经有3G网络，如果导致出生率下降的是“运营商网络覆盖好”或者“这些地区本来就特殊”，那么这两家运营商的覆盖地区，理论上也应该出现类似变化。&lt;/p&gt;
-&lt;p&gt;可结果恰恰相反，因为当时 Verizon 和 Sprint 根本卖不了 iPhone，所以它们的覆盖情况和出生率变化之间，并没有出现同样的情况。&lt;/p&gt;
-&lt;p&gt;直到 2009年底，Verizon推出Motorola Droid，Sprint推出HTC Hero，安卓手机终于进入了这些原本买不到iPhone的地区。&lt;/p&gt;
-&lt;p&gt;结果一年以后，Sprint覆盖地区15到19岁和20到24岁的出生率都额外下降了约8%；Verizon地区15到19岁也下降了约3.3%&lt;/p&gt;
-&lt;p&gt;作者就根据这些信息，反推出来生育率下降和 iPhone 的出现有关，或者更严谨的说——和智能手机有关。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/b1bcecbb-53e3-443d-99a5-f80e65e96e06.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="389" src="//img1.mydrivers.com/img/20260808/Sb1bcecbb-53e3-443d-99a5-f80e65e96e06.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作者用的这套验证模式在经济学里，叫做“自然实验”。&lt;/p&gt;
-&lt;p&gt;因为咱们现实生活中不可能随机给一半人发 iPhone，另一半人不发，然后观察三四年看他们的生育情况。但苹果当年的和 AT&amp;amp;T 签独家的商业决策，却阴差阳错的给他们创造了这个实验条件。&lt;/p&gt;
-&lt;p&gt;也就验证出了作者的论文题目，当年真正和出生率变化对应上的，不是运营商，而是 iPhone 以及之后的智能手机。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/84d63527-2e73-4a68-bae1-62b8e08f6638.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="285" src="//img1.mydrivers.com/img/20260808/S84d63527-2e73-4a68-bae1-62b8e08f6638.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;但问题是，如果智能手机真的改变了年轻人的行为，这种变化应该只出现在美国吗？&lt;/p&gt;
-&lt;p&gt;在今年 4 月，还有另一篇论文从完全不同的角度发现了类似的现象。&lt;/p&gt;
-&lt;p&gt;辛辛那提大学的两位研究者，把视角从美国拉到了约128个国家的青少年生育率上。他们给每个国家单独设定了一个“智能手机冲击年份”：&lt;/p&gt;
-&lt;p&gt;一个条件是iPhone什么时候正式进入这个国家，另一个条件则是当地移动通信普及率，这个数据则是以每100人80个移动号码为节点，两个条件取更晚的那个。&lt;/p&gt;
-&lt;p&gt;然后，他们把每个国家的这个时间点设为零，再观察前后生育率下降的速度。&lt;/p&gt;
-&lt;p&gt;结果真的发现各国智能手机进入普及阶段之后，青少年生育率会明显加速下降。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/c62ca7d4-7c14-4783-a410-8f129292c931.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="259" src="//img1.mydrivers.com/img/20260808/Sc62ca7d4-7c14-4783-a410-8f129292c931.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这个作者又用英国的数据做了一次复查。&lt;/p&gt;
-&lt;p&gt;为啥是英国呢？&lt;/p&gt;
-&lt;p&gt;因为英国的医疗和避孕体系与美国完全不同，官方统计的偏向“受孕率”而不是“出生率”，也就是说只要怀上了，无论最后是生产、流产还是合法终止妊娠，都会被计算进去。&lt;/p&gt;
-&lt;p&gt;因此更能反映智能手机是不是真的对“受孕”有影响。&lt;/p&gt;
-&lt;p&gt;结果从2007到2020年，英国未满18岁的受孕率从每千人41.4例，下降到了13例，降幅约69%；&lt;/p&gt;
-&lt;p&gt;同期美国15到19岁生育率下降约64%，两条曲线几乎都是在 iPhone 出现那段时间，突然开始快速下降。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/41d3305a-cbfa-4016-9cb1-5ec7759d3cc1.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="402" src="//img1.mydrivers.com/img/20260808/S41d3305a-cbfa-4016-9cb1-5ec7759d3cc1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这会估计有差友就好奇了，这些实验和调查虽然验证了和智能手机有关，但手机到底是咋让生育率降低的，总不能是什么老套的电磁辐射影响吧？&lt;/p&gt;
-&lt;p&gt;emmm，关于这个问题，论文作者虽然没给出确切答案，但他们提出几种最有可能的机制。&lt;/p&gt;
-&lt;p&gt;他们调研出，在智能手机出现之后，并非所有线下活动都受到冲击。像运动赛事这种有组织的活动就没有受到太大影响。&lt;/p&gt;
-&lt;p&gt;但是朋友之间的“即兴邀约”“无目的见面”等线下社交次数却大幅度下降。&lt;/p&gt;
-&lt;p&gt;大概就是，去看个演唱会、球赛啥的还能约着见个面。要是约出来闲聊，那躺家里用手机聊还更省事了。。。&lt;/p&gt;
-&lt;p&gt;同时，在智能手机出现之后，挤压了青少年的夜间睡眠时间。晚上熬夜玩手机，白天干啥都没精力，也就不想去社交了。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/80965219-2a6d-41ae-bc82-67b130b5f79a.jpg" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="393" src="//img1.mydrivers.com/img/20260808/S80965219-2a6d-41ae-bc82-67b130b5f79a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而且年轻人用手机更容易获取避孕知识，会减少意外怀孕；还有成人内容获取门槛降低，可能也改变了一部分人的行为模式。&lt;/p&gt;
-&lt;p&gt;虽然不能明确指出各个因素到底有多大影响，但不可否认的是——智能手机，确实改变了年轻人的生活方式。&lt;/p&gt;
-&lt;p&gt;就像当年电视出现之后，改变了人们下班后的生活方式一样。智能手机普及之后，年轻人的社交、娱乐，甚至恋爱方式，也开始越来越多地发生在线上。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/74ef223a-d51f-4aff-bdfb-20c83e049090.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="294" src="//img1.mydrivers.com/img/20260808/S74ef223a-d51f-4aff-bdfb-20c83e049090.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;看到这里，我反而觉得，这篇论文真正有意思的地方，并不在于 iPhone 会不会影响生育率，而是它提出了一个更大的问题：&lt;/p&gt;
-&lt;p&gt;这些不断迭代的消费电子产品，改变的好像已经不只是产品本身，而是人的行为。&lt;/p&gt;
-&lt;p&gt;可行为一旦改变得够久，它最终改变的，就不只是习惯，而是我们的能力了。&lt;/p&gt;
-&lt;p&gt;比如心理学里有一个很经典的现象，叫 Google 效应。&lt;/p&gt;
-&lt;p&gt;就是说，当人们知道一条信息随时都能在 Google 上搜到时，大脑会把更多资源用来记"去哪儿找"，而不是记内容本身。&lt;/p&gt;
-&lt;p&gt;好多人觉得自己的记忆力下降了，变得健忘了，其实是我们把一部分记忆能力，迁移给了搜索引擎。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/5ef7ef78-628d-46e6-94f5-bfbcab28a775.png" target="_blank"&gt;&lt;img alt="年轻人不想生孩子 可能还真因为手机玩多了" h="337" src="//img1.mydrivers.com/img/20260808/S5ef7ef78-628d-46e6-94f5-bfbcab28a775.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;类似的情况还有 GPS。一些研究发现，长期依赖导航的人，在行走过程中主动规划路线和记忆空间的次数会减少，大脑负责空间导航的海马体参与程度也会下降。&lt;/p&gt;
-&lt;p&gt;所以回到开头那篇论文，iPhone 能避孕吗——肯定不能。但当人类重新审视生育率下降这件事，向前追溯二十年，智能手机最终成了那个绕不开的变量。&lt;/p&gt;
-&lt;p&gt;人类总是在技术出现很多年之后，才意识到它真正改变了什么。&lt;/p&gt;
-&lt;p&gt;而今天， AI 故事的才刚开头，它对我们未来的改变，可能才刚刚开始。。。&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 16:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1lZkxCeVFMLWZkeHJYVjVOOXllWmpXcEk1S0t4Nk9VZzRuVXgzaGFkNHVydXZzTGE2RDk4N2cwbktXUFNkRUxxQjNQM3prZFMxODB3RWZtbEs</guid></item><item><title>AI电诈入侵华尔街，2000亿规模对冲基金遇袭！ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3778933</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 07 Aug 2026 16:21:34 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1samMxV3dldGk2dVZCRDBQUUh0Z0x5UFdvQ0dyMGt2czg2bENpbmNndUZzOHRwMW04VDZTTnlrOW5YYld6Si1ycWVINFFYdEtSRy00</guid></item><item><title>享界G9泥坑实测被质疑为AI合成 更多实拍视频流出终结流言 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142282.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月7日消息，&lt;strong&gt;日前开售的鸿蒙智行首款方盒子SUV享界G9热度不低，虽然起售价高达43.98万，但24小时预定已经超过了10000辆，已有爆款态势&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;然而这两天，又有不少人在社交平台上公开质疑发布会上享界G9过泥坑的视频为AI合成，而他们质疑的理由是，车子过了之后漆面上竟然没有沾染泥点。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;眼瞅着愈演愈烈，在这个档口，更多视频流出，从多个角度证实视频为实拍而非AI制作，终结了流言&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
-&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
-&lt;p&gt;这视频中可以清楚地看到，&lt;strong&gt;测试车辆有人驾驶，而且戴着头盔，另有一辆架设着摄影机的车辆在旁边跟拍，同时测试场地两侧也有不少摄影设备，就连车外车内都架设有运动相机&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;至于为何测试后享界G9的漆面没有沾染泥点，是因为汽车漆面最外层是一层透明清漆。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;刚下线的新车，清漆表面完整、微观孔隙少，表面能低，具备很强的疏水效果，泥水落在上面会形成水珠直接滚落，泥沙很难嵌进漆面微小缝隙，开过水坑甩上来的泥水大多直接滑掉，看上去就很干净，而轮拱内衬由于表面粗糙，则布满了脏污&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/beb69d76-641d-46ce-9f3d-2ea20f1b7360.png" target="_blank"&gt;&lt;img alt="享界G9泥坑实测被质疑为AI合成 更多实拍视频流出终结流言" h="426" src="//img1.mydrivers.com/img/20260807/Sbeb69d76-641d-46ce-9f3d-2ea20f1b7360.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/7fea2364-a70d-4c86-a0d3-cbb90df079d7.png" target="_blank"&gt;&lt;img alt="享界G9泥坑实测被质疑为AI合成 更多实拍视频流出终结流言" h="386" src="//img1.mydrivers.com/img/20260807/S7fea2364-a70d-4c86-a0d3-cbb90df079d7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260807/660afbdc-b084-44ce-8391-e4e71cd50c4d.png" target="_blank"&gt;&lt;img alt="享界G9泥坑实测被质疑为AI合成 更多实拍视频流出终结流言" h="332" src="//img1.mydrivers.com/img/20260807/S660afbdc-b084-44ce-8391-e4e71cd50c4d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/80d68568-00ea-47ee-b03f-54db1de167df.png" target="_blank"&gt;&lt;img alt="享界G9泥坑实测被质疑为AI合成 更多实拍视频流出终结流言" h="322" src="//img1.mydrivers.com/img/20260808/S80d68568-00ea-47ee-b03f-54db1de167df.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/bdafe72c-00e4-476c-8ddd-67e00921a8a1.png" target="_blank"&gt;&lt;img alt="享界G9泥坑实测被质疑为AI合成 更多实拍视频流出终结流言" h="454" src="//img1.mydrivers.com/img/20260808/Sbdafe72c-00e4-476c-8ddd-67e00921a8a1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260808/86c1ada4-d7e1-4e5a-bb5c-1caed273d161.png" target="_blank"&gt;&lt;img alt="享界G9泥坑实测被质疑为AI合成 更多实拍视频流出终结流言" h="402" src="//img1.mydrivers.com/img/20260808/S86c1ada4-d7e1-4e5a-bb5c-1caed273d161.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作为一款主打泛越野的方盒子SUV，&lt;strong&gt;享界G9首发华为全地形途灵平台，配前双叉臂+后五连杆独立悬架、闭式双腔空气悬架（调节行程130mm）、原厂最大涉水深度900mm，除入门版外，其他版本还首发800V全主动可断开稳定杆&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;首发华为智擎自适应差速锁电驱，内置牙嵌式机械差速锁，可实时感知路况，自动锁止脱困，&lt;/strong&gt;还具备全路况感知系统，能主动识别地形并自动调节底盘参数，配合新一代双光路图像级激光雷达，支持全地形驾驶辅助系统。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：落木&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 07 Aug 2026 16:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5xMTV4V0ZLdVZ4clFlLUtvRDBSZkxXNjlSQkVhd1hVZUhfQ1BHQTlVVVFyaWlMbXQ5YVUtWnY5U3EzRUZvZVM4TDRwRlN0SjBBa2RpQlFYUTg</guid></item></channel></rss>
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Fri, 07 Aug 2026 19:08:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE5pSzhNalRMVWhieFBjeEVHUUdleDVVd3daMGRRdWxucGJ5OUF3d0YwLWhhYzN0Rm41bjJjb05LRjh0SmpTaEdidXlUU1ZLc1hkY2loQTR3X2JYc2s</guid></item><item><title>上海大數據追蹤居民 離滬28天遭來電詢問 - 大纪元</title><link>https://www.epochtimes.com/gb/26/8/7/n14825524.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div data-post-content="true" class="post_content" id="post_content"&gt;&lt;p&gt;【大纪元2026年08月08日讯】（大纪元记者江菲采访报导）上海一名居民近日发文称，自己赴外省出差28天，返回上海后接到居委会来电。对方询问她是否“不回上海了”，并提到“大数据检测到不在上海”。不少上海居民随后分享类似经历，也有受访者表示，自己曾因跨市出行遭公安追踪。&lt;/p&gt;&lt;p&gt;她发布的截图显示，她离开上海近一个月，返回后接到居委会电话。对方询问她是否已不在上海居住，并表示系统显示她长期不在上海。她在网络发文说，自己只是正常出差，没有任何违法犯罪记录，也未受到过行政处罚，不理解为何离开一段时间便会接到社区来电。她还说，居委会工作人员提到“大数据检测到我不在上海”，令她疑惑居民离开上海是否需要报备，个人日常行踪是否已被纳入基层管理范围。&lt;/p&gt;&lt;p&gt;评论区还有网友留言说，小区门禁卡实行实名登记，一个月没有刷卡记录，社区网格员便能发现住户长期没有返回。不过，也有居民表示，自己居住的小区经常由保安人工开门，不会留下完整的门禁记录，因此未接到类似电话。还有居民分享说，自己曾接到派出所电话，对方核实身份后，还介绍附近警务站的位置，并表示有需要可以随时联系。&lt;/p&gt;&lt;h2&gt;大数据锁定居民行踪&lt;/h2&gt;&lt;p&gt;青岛公益人士黄山（化名）告诉记者，有一次他到杭州出差，刚入住酒店，就接到当地国保电话，询问他何时到达杭州、准备停留几天。&lt;/p&gt;&lt;p&gt;他说：“他们问我什么时候去的杭州，去了几天。我反问他们，公民难道没有行动自由吗？你们用大数据给我定位，这是侵犯公民合法权利。一个国保说这是为了我的安全，鬼才相信这种说法。”&lt;/p&gt;&lt;p&gt;黄山还说，当地公安一直盯着所谓“敏感人士”，有时甚至毫不避讳，令他十分生气。&lt;/p&gt;&lt;p&gt;他说：“我很愤怒，走到哪里他们都知道。我有一次把电话放在家里，去了潍坊，结果他们还是可以找到我。回来后，朋友说，大街上的摄像头都有生物识别功能，可以拿你的生物特征进行比对。我像是活在监狱里。”&lt;/p&gt;&lt;h2&gt;“敏感人士”跨市即遭追踪&lt;/h2&gt;&lt;p&gt;评论区还有不少网友说，自己也遇到过类似情况。其中有网友表示，社区会定期更新常住人口登记，居民长期外出，可能会被默认为已迁出常住人口，网格员随后会联系本人确认身份。也有网友联想到疫情期间的基层流调制度，例如2022年上海疫情期间曾建立人员流动排查机制，如今类似情况再次出现。&lt;/p&gt;&lt;p&gt;上海闵行访民叶先生告诉记者，他和妻子前往浙江宁波探亲时，刚离开上海便接到派出所电话追问去向。&lt;/p&gt;&lt;p&gt;他说：“5月，我和老婆去宁波回她娘家，一出上海，我在高速公路上就接到派出所打来的电话，问我要去哪里。我说跟老婆回老家，他们放心了，说不要去北京，还祝我旅途愉快。这帮人不做正经事，查一个人很用心。北戴河会议时间到了，前几天又提醒我说，最近北京很乱，叫我不要去北戴河凑热闹。我说我又不是领导人，要上访，凑什么热闹。”&lt;/p&gt;&lt;h2&gt;基层维稳渗入民事证明&lt;/h2&gt;&lt;p&gt;上海一位要求匿名的律师告诉记者，上海各区居委会、社区网格员、公安局等部门承担人口登记、信息更新及基层“维稳”任务。社区居民办理民事证明时，相关部门还会审核其近期活动，最后由街道办出具证明。如果有人留下“不良记录”，其出境及申请公证书等事项都会受到不同程度的影响。&lt;/p&gt;&lt;p&gt;责任编辑：高静#&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>大纪元</author><pubDate>Fri, 07 Aug 2026 19:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiX0FVX3lxTE1CNXl2ODdJQlFJNUJ5OHNMN1l6NG1HM0dfRU84UVBpMkdTUnFUc2o1OHNIRV9YSWdMdlNEZFJEdW9kQ2hGbEI0ZHRQQWpMejNLa0I4OWVOSXRBd2lJbFRN0gFkQVVfeXFMUEtQcFVfV25EX21qMWpHeUdQWEliWVNMUkJwbEtJRVd1blJjS1RUT1FQUDBsd0NqWlk5QUNkam1POWdwdnk4VFpodjE0Z1FINlpGaC1OZm9XTHVQcHpQWnB4UmFPLQ</guid></item></channel></rss>
