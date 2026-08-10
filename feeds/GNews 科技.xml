@@ -1,5 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Win11清理祖传代码困难重重 微软真有苦衷：不能破坏兼容性 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142725.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>我国发现多起“Sorry”勒索病毒攻击事件-观察者网 - 观察者</title><link>https://www.guancha.cn/politics/2026_08_10_826848.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	10日，国家计算机病毒应急处理中心发布《关于“Sorry”勒索病毒的预警报告 》：
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;一、相关病毒案例&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	近日，国家计算机病毒应急处理中心和计算机病毒防治技术国家工程实验室依托国家计算机病毒协同分析平台（https://virus.cverc.org.cn）在我国境内发现多起我国用户遭“Sorry”勒索病毒攻击事件。用户重要文件被加密后文件名被更改为原文件名+“.sorry”后缀字符串，同时，攻击者会在用户主机上留下勒索信，要求用户下载加密通信工具与其联系。如图1，图2所示。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/08/10/20260810214850721.webp" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	图1 用户文件被加密（以Ubuntu系统为例）&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/08/10/20260810214900330.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	图2 勒索信内容&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;二、病毒基本信息&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	该病毒归属于2026年新出现的勒索病毒家族“Sorry”，使用GO语言编写，主要针对在互联网暴露的Linux Web服务器。如图3所示，攻击者实施攻击的具体步骤如下：
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/08/10/20260810214913942.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	图3 Sorry勒索病毒攻击过程&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	1.网络入侵。攻击者利用WebPros cPanel授权问题漏洞（漏洞编号：CNNVD-202604-5641，CVE-2026-41940）获取服务器管理权限，随后在受害者无感知的情况下投放并运行“Sorry”勒索病毒实施攻击，并伪装成常见的sshd进程。
+&lt;/p&gt;
+&lt;p&gt;
+	2.环境探测。勒索病毒会生成一个唯一的受害者标识符，该标识符包含当前的用户名、主机名、CPU 数量、操作系统信息、活跃的网络接口等信息，并将相关信息回传给攻击者。
+&lt;/p&gt;
+&lt;p&gt;
+	3.扫清障碍。终止数据库、安全防护及备份等相关服务。
+&lt;/p&gt;
+&lt;p&gt;
+	4.数据窃取。批量窃取业务数据、配置文件及各类内部文件。
+&lt;/p&gt;
+&lt;p&gt;
+	5.数据加密。使用AES算法对用户文件进行加密，导致业务系统中断、重要数据无法访问。同时，使用RSA加密算法对AES解密密钥进行双重加密。
+&lt;/p&gt;
+&lt;p&gt;
+	6.内网扩散。扫描SSH端口22、2222、22222，通过弱密码尝试向其他Linux主机横向传播。
+&lt;/p&gt;
+&lt;p&gt;
+	具体病毒样本信息如图4所示，参见国家计算机病毒协同分析平台。
+&lt;/p&gt;
+&lt;p&gt;
+	https://virus.cverc.org.cn/#/entirety/file/searchResult?hash=2fc0a056fd4eff5d31d06c103af3298d711f33dbcd5d122cae30b571ac511e5a
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/mainland/2026/08/10/20260810214932666.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	图4 相关病毒样本信息&lt;span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;三、风险提示&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	1.该勒索病毒可在国内大部分主流Linux发行版操作系统（含信创操作系统）上运行并实施侵害。
+&lt;/p&gt;
+&lt;p&gt;
+	2.一旦感染该勒索病毒，可能对企业和个人造成严重的数据泄露、破坏和声誉损失。
+&lt;/p&gt;
+&lt;p&gt;
+	3.该勒索病毒具有主动传播能力，可能造成企业内网大面积感染。
+&lt;/p&gt;
+&lt;p&gt;
+	4.在没有解密密钥的条件下，被该勒索病毒加密的数据暂时没有可靠的恢复方法。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;四、防范措施&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	1.对暴露在互联网上的cPanel、WHM、WP Squraed服务及相关Linux服务器进行漏洞风险排查，核实软件版本和安全补丁安装情况，并及时升级至厂商发布的最新版本。
+&lt;/p&gt;
+&lt;p&gt;
+	2.避免服务器管理后台、远程运维接口和数据库管理端口直接暴露在互联网，如果确有远程管理需求，可通过虚拟专用网络、运维堡垒机或专用管理网络进行访问，并设置源地址白名单、多因素认证、异常访问告警等安全措施。
+&lt;/p&gt;
+&lt;p&gt;
+	3.应做好口令安全管理，避免使用弱口令，避免大量主机使用相同用户名和口令。
+&lt;/p&gt;
+&lt;p&gt;
+	4.应选择安装适配相关操作系统的杀毒软件，并保持防病毒软件实时监控功能开启，将操作系统和防病毒软件更新到最新版本。
+&lt;/p&gt;
+&lt;p&gt;
+	5.在日常工作中，建立独立、可靠的数据备份和恢复机制，对网站文件、数据库、业务配置、源代码及重要日志进行定期备份，并对重要备份数据以离线方式妥善保存。
+&lt;/p&gt;
+&lt;p&gt;
+	6.警惕在网络搜索引擎和网络购物平台上传播的“勒索病毒解密工具或代理服务”骗局，也不要下载安装攻击者提供的所谓“加密通信工具”，很可能存在二次感染木马病毒的风险。
+&lt;/p&gt;
+&lt;p&gt;
+	7.针对不明来源的可疑文件，应避免直接打开运行。用户可将相关文件先行上传至国家计算机病毒协同分析平台 （https://virus.cverc.org.cn）进行安全性检测。
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Mon, 10 Aug 2026 14:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE1rRDhBSmV2Zm9yU2Q5QnhRNzByVnJpUE9lejlmTEVLdkpDUm0zY3ozaWdfYkVEVy1TUEZFQkZXM2liU1Vvd2cwNUJXNjItUlRXeENVWUVCQ3E5ZDBhNEVrbmVDdmpGZw</guid></item><item><title>Win11清理祖传代码困难重重 微软真有苦衷：不能破坏兼容性 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142725.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月10日消息，微软今年对Win11系统是真的很上心，数月前承诺会进一步改进Win11功能及性能，降低资源占用率，尤其是重点优化8GB及以下内存的流畅度。&lt;/p&gt;
 &lt;p&gt;围绕这个核心目标，微软采取了一系列动作，&lt;span&gt;&lt;strong&gt;其中一个重要方向就是用WinUI 3框架全面替代Win11中遗留的祖传代码&lt;/strong&gt;&lt;/span&gt;——这里面的代码甚至有能追溯到Win95时代的。&lt;/p&gt;
@@ -39,7 +143,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 10 Aug 2026 13:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5XQ0Zad3A2TnVaV1BtN01pbF9ac1NPclJFVXlwZmxFQXJaNnQta1RJaHZaSEhzaVUxdkJ2SjhBazVrQ0tFZWlPcmEtQ09YZ2trVnZWQTJqWmU</guid></item><item><title>微软据悉拟“大幅”提高下一代AI芯片产量，正与台积电洽谈2027年交付逾30万枚 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779098</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 10 Aug 2026 13:02:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE11MkgwZGwxNlJWejdYUzhNM1BwYmhJME4xbmRrdlNFeUZDeDM5TXZUbFJSV1RXWUZaVWl1eUJ5VzdCUm9tY3hHUU9wLWdvWHQ0YnRV</guid></item><item><title>iPhone前景隐忧引发华尔街看空情绪升温：六家机构发出苹果卖出信号，创2012年以来之最 - wallstreetcn.com</title><link>https://wallstreetcn.com/articles/3779096</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>wallstreetcn.com</author><pubDate>Mon, 10 Aug 2026 12:49:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE92Q0Y1d045VnZfS09BZG43dzdUNEl4a3NleExRZlNqOUFweWh6VmhaQ29hZ2hiZ0FxX3ZKSDNhbzRfM3N0aGMwOGFjTTFOdHE3X09B</guid></item><item><title>存储成本狂飙！超8成网友呼吁手机厂商重启SD卡槽：不想再多花冤枉钱了 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142716.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 10 Aug 2026 13:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5XQ0Zad3A2TnVaV1BtN01pbF9ac1NPclJFVXlwZmxFQXJaNnQta1RJaHZaSEhzaVUxdkJ2SjhBazVrQ0tFZWlPcmEtQ09YZ2trVnZWQTJqWmU</guid></item><item><title>万亿AI资本开支的隐忧：标普500一半盈利增长建立在借贷之上，聪明钱已开始撤离 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779099</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 10 Aug 2026 13:23:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBVckJBVWl4b25TckJ2RUZIY29WNXZTVWFoSVNPbUZ0TVNFQkxMaUlyUjMwdjM4Um5nY19rT21wUXVvekYtVzlJeldoS0Z6OWh2Sl9z</guid></item><item><title>微软据悉拟“大幅”提高下一代AI芯片产量，正与台积电洽谈2027年交付逾30万枚 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779098</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Mon, 10 Aug 2026 13:02:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE11MkgwZGwxNlJWejdYUzhNM1BwYmhJME4xbmRrdlNFeUZDeDM5TXZUbFJSV1RXWUZaVWl1eUJ5VzdCUm9tY3hHUU9wLWdvWHQ0YnRV</guid></item><item><title>iPhone前景隐忧引发华尔街看空情绪升温：六家机构发出苹果卖出信号，创2012年以来之最 - wallstreetcn.com</title><link>https://wallstreetcn.com/articles/3779096</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>wallstreetcn.com</author><pubDate>Mon, 10 Aug 2026 12:49:22 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE92Q0Y1d045VnZfS09BZG43dzdUNEl4a3NleExRZlNqOUFweWh6VmhaQ29hZ2hiZ0FxX3ZKSDNhbzRfM3N0aGMwOGFjTTFOdHE3X09B</guid></item><item><title>存储成本狂飙！超8成网友呼吁手机厂商重启SD卡槽：不想再多花冤枉钱了 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142716.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月10日消息，曾几何时，支持microSD卡扩展几乎是每台手机的标配。&lt;strong&gt;但从2015年前后开始，主流厂商陆续取消了这一设计。三星自Galaxy S21系列起便不再提供microSD扩展卡槽，国产品牌也在2019年前后跟随了这一趋势。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;厂商砍掉microSD卡槽的原因主要有三点，首先是追求机身一体化与轻薄设计，取消卡槽可以为电池腾出更多的内部空间。其次是提升防水防尘性能，减少开孔有助于增强整机的密封性。&lt;/p&gt;
@@ -1945,7 +2049,142 @@ Ti被商家标注为A级成色，也就是说外观几乎无划痕且使用痕�
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 10 Aug 2026 03:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBlNXo0SzNJQ2hnWDRoYWNmekRSc0E5YTBEeE1yS0MxakQ2SHVCcE90c3JCcWdzYW5rSUpKSThFbnFoT1FoVkNPNFFfbjBFZHRIVnJSS0NUQi0</guid></item><item><title>GPU危机还没解决 CPU又缺了！申请服务器从几小时变成等好几天 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142552.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 10 Aug 2026 03:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBlNXo0SzNJQ2hnWDRoYWNmekRSc0E5YTBEeE1yS0MxakQ2SHVCcE90c3JCcWdzYW5rSUpKSThFbnFoT1FoVkNPNFFfbjBFZHRIVnJSS0NUQi0</guid></item><item><title>与美国AI竞争，中国遇到哪些困难？ - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/2026-08-10/detail-inimuzxt4960427.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+	
+
+&lt;p class="art_p" cms-style="font-L"&gt;[文/观察者网 冯雪]&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;随着中国人工智能（AI）大模型一次又一次震撼全球，美国政界和科技界越发警惕、乃至恐慌。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;事实上，早在&lt;a href="https://news.sina.cn/news_zt/keyword.d.html?vt=4&amp;amp;k=%E7%89%B9%E6%9C%97%E6%99%AE"&gt;特朗普&lt;/a&gt;第一任期，就已经开始对中国高科技产业围追堵截，典型如“拉黑”华为。随后近十年间，火力愈加猛烈：拜登政府建起“小院高墙”，特朗普第二任期被曝考虑封禁中国大模型……&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;复旦大学美国研究中心教授蔡翠红告诉观察者网：虽然这三届美国政府对华科技政策各有侧重，但都有一个共识，即“中国是美国最重要的人工智能方面的战略竞争者”。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;如果美国进一步打压中国大模型，蔡翠红认为，这会产生重要的反作用，也是美国最担心的一点，“就是把原本围绕美国闭源前沿模型展开的追赶模式，进一步转化为围绕全球开源模型生态的竞争。”&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;不得不承认，眼下的中国大模型仍然与美国目前最先进模型存在差距。蔡翠红指出，核心技术与创新要素、应用和产业化能力，以及生态和国际化能力，是中国人工智能谋求进一步突破时需要面对的挑战。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;以下为对话实录：&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：中美竞争此前更多围绕贸易、制造业和芯片。随着人工智能大模型发展，两国竞争又增加了一项。您能否谈谈十年来，这三届政府在对华人工智能政策方面有些异同？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;这三届政府在对华人工智能政策方面，存在比较明显的变化，也可以说是三个阶段。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;在特朗普第一任期，可以概括为“科技竞争的安全化”，人工智能只是若干性战略技术之一。到了拜登政府这里，升级到“关键技术限制的制度化”，半导体管制已经明确服务于前沿人工智能能力的形成。如今特朗普第二任期，将竞争进一步“生态化”、“全球化”，把人工智能统合进科技外交的整体框架。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;十年前，也就是特朗普首次当选。他于2019年提出美国人工智能倡议，主要是增加研发投入、开放联邦数据计算资源、推动技术标准和人才培养等等，旨在维护美国总体的技术领导地位。当时大模型还没有出来，所以政策没有专门针对中国的。在对华科技竞争方面，他的代表性做法包括把华为等企业列入实体清单，加强投资审查和出口许可，并逐步扩大美国出口管制的域外影响。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;特朗普第一任期主要是一种以企业和交易为对象的点状限制。哪一家企业构成了安全风险，哪一项交易可能向中国转移关键技术，就动用实体清单、投资审查、出口许可等行政手段。这体现了他认知上的转换，即中国科技发展不仅仅关乎贸易失衡或者市场竞争，而是要被纳入国家安全框架。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;到了拜登政府时期，美国把针对个别企业的限制升级到针对中国形成前沿人工智能能力的制度性安排。比如，2022年出台先进计算与半导体制造出口管制，此后2024年又把高带宽内存、更多半导体制造设备和软件工具纳入限制。&lt;/p&gt;
+&lt;a href=""&gt;
+										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
+											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="408" data-src="//k.sinaimg.cn/n/sinakd20260810s/208/w600h408/20260810/2916-9359691612acfa9fa699fbc4b95aea66.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt=""&gt;
+										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="408" data-src="//k.sinaimg.cn/n/sinakd20260810s/208/w600h408/20260810/2916-9359691612acfa9fa699fbc4b95aea66.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="" disabeld-show="true"&gt;
+											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
+										&lt;/figure&gt;
+									&lt;/a&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;与特朗普第一任期主要针对谁能获得这项技术不同，拜登政府更加重视什么决定了能力上限，因此沿着人工智能能力形成链进行识别，涉及到芯片设计、晶圆制造、软件工具、高带宽内存、模型训练等等，已经不是针对单个产品了，而是针对中国前沿人工智能能力的整个过程。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;拜登政府通常以所谓“小院高墙”概括这一思路，即控制制少量直接涉及国家安全的关键技术，对此设置非常高的管制壁垒。问题是，随着芯片、设备、软件、高带宽内存等不断被纳入，“小院”实际边界一直在扩大。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;到了特朗普第二任期，我认为又出现了一个变化，就是从限制中国获得关键技术进一步转向争夺全球人工智能生态主导权。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;虽然特朗普撤销了某些拜登政府人工智能行政令，但绝不是放松对华科技竞争。2025年的《美国AI行动计划》明确提出，要向盟友和伙伴输出包括硬件、模型、软件、应用和标准在内的完整美国人工智能技术栈。美国不仅仅要在国内建设人工智能能力，还要推动整个人工智能系统、算力硬件、标准，在全球范围内被采用。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;相较于拜登政府更强调制度化和规则化的政策方式，特朗普第二任期的行政裁量更大，政策也体现出更明显的商业和政治交易性。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;总之，特朗普第一任期想阻止中国特定企业获得美国技术。拜登政府琢磨如何控制中国形成前沿人工智能能力所依赖的关键节点。特朗普第二任期则进一步关注让全球市场采用美国主导的人工智能技术栈、标准和治理规则。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;不过，尽管三届政府存在诸多差异，还是要注意其明显的连续性。美国这几届政府都认为，中国是美国最重要的人工智能方面的战略竞争者；与人工智能相关的先进算力、半导体制造能力，具备高度国家安全意义和战略意义。同时，从拜登政府开始，盟友协调和第三国技术选择也成为对华人工智能竞争的重要组成部分。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：Kimi K3一经发布，便引起美国国内高度关注，甚至有报道称特朗普政府考虑限制甚至封禁中国人工智能大模型。如果白宫采取进一步限制措施，会不会倒逼中国人工智能产业越来越强？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;是否封禁中国人工智能大模型，虽然现在还处于政策讨论阶段，但也可能会形成一些事实性封禁方案。他们可能讨论，比如把大模型企业列入实体清单，或者限制美国企业托管中国模型等等。美国也不一定需要公开宣布全面封禁，但可能会通过采购限制、实体清单、合规责任、安全警告和舆论压力，提高美国企业使用中国大模型的风险和成本，从而形成事实上的市场排斥。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;Kimi K3之所以引起美国高度关注，这说明，中国大模型与美国前沿模型之间的差距正在缩小，中国可以把低成本、开放权重、复杂任务能力结合起来。同时，这也证明，美国过去几年推出的先进芯片和算力限制没能阻止中国模型接近世界前沿。不过，Kimi K3自己的技术报告也明确承认，综合能力仍然落后于目前最强的美国闭源模型。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;美国继续打压，并不必然导致中国人工智能能力越来越强，也许会产生倒逼效应，但不是自动发生的。在这个过程中，可能会有短期成本增加、中期推动替代、长期可能重塑技术生态；经过漫长的过程，最终可能实现能力的跃升。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;能不能把这种外部压力最终转化成能力跃升，还取决于能否在前沿技术、基础研究、产业应用和全球生态几个方面同时形成能力。如果只是重复建设或者低水平替代，外部压力也可能固化技术差距。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;我觉得美国最担心的，是其进一步限制中国模型还可能产生一个重要的反作用，就是把原本围绕美国闭源前沿模型展开的追赶模式，进一步转化为围绕全球开源模型生态的竞争。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;总体来讲，中美人工智能竞争，是一种范式的变化，从稀缺性主导变成扩散性主导，就是说，竞争正在从单纯争夺能力上限，扩展到同时争夺能力的扩散速度、应用规模和生态影响力。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：美国媒体经常描述美国社会对人工智能比较害怕，乃至拒绝。有不少报道一直在关注，许多州掀起抗议人工智能数据中心建设浪潮。据您的观察，真实情况果真如此吗？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;我觉得美国社会现在比较典型的状态，可以概括成三个词：使用、焦虑和不信任。不是拒绝人工智能，而是一边迅速增加使用，一边担心社会后果，同时对企业和政府缺乏足够信任。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;具体表现在担心人工智能使用范围不断扩大带来的三个层面问题：第一是就业和收入安全；第二是隐私、虚假内容和算法可靠性；第三是更深层的治理问题——数据由谁掌握、出了问题谁负责、政府和企业是否值得信任。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;这里还要注意，在美国当前政治环境中，“中国威胁”或“对华竞争”，一直是比较有动员力的政治语言。比如犹他州数据中心争议，曾有人把当地反对组织与中国联系起来，但后来承认没有证据。这背后是污蔑者利用国家安全叙事掩盖地方利益冲突。&lt;/p&gt;
+&lt;a href=""&gt;
+										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
+											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="380" data-src="//k.sinaimg.cn/n/sinakd20260810s/180/w600h380/20260810/6621-b26adcd67bdbd41e39b063351761237b.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt=""&gt;
+										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="380" data-src="//k.sinaimg.cn/n/sinakd20260810s/180/w600h380/20260810/6621-b26adcd67bdbd41e39b063351761237b.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="" disabeld-show="true"&gt;
+											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
+										&lt;/figure&gt;
+									&lt;/a&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;当地民众抗议数据中心建设，不代表反对人工智能。居民真正关心的是非常具体的问题：项目决策是否透明？社区能不能获得实际经济利益？&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;还有，他们担心与大型科技资本之间的成本分配。比如，是否挤占当地水电资源？是否推高水电费用？是否造成噪音、环境污染？是否导致大量失业？&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;所以，抗议数据中心建设不等于反对发展人工智能。当地居民可能支持美国发展人工智能，但这不意味着愿意无条件接受一个占用本地电力、水和土地、享受税收优惠，而收益主要由外部科技企业获得的数据中心。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：人工智能政策涉及到方方面面的利益方，所以分歧也就在所难免。您能谈谈美国两党之间、政府部门之间、政府与硅谷企业之间、企业与企业之间存在哪些分歧吗？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;上述四组关系，并不是边界清晰、立场固定的阵营。两党不是简单对立，财政部不必然温和，国防部也不一定强硬。还是要考察具体问题。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;先看两党。目前美国两党之间明显的共识是，中国是美国最主要的人工智能战略竞争者，美国必须保持对中国的人工智能竞争优势。区别在于如何赢得这场竞争，以及愿意为此承担什么样的监管和社会成本。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;共和党，特别是在特朗普第二任期，强调减少对美国人工智能企业的前置监管，加快数据中心、能源、电网和芯片基础设施建设，同时避免不同州形成相互冲突的监管规则。他们更担心的是监管过早、过重，拖慢美国企业创新速度。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;民主党则更关心另外一些问题：劳动者是否被替代？算法会不会造成歧视？消费者是不是可以追责？训练数据是不是侵犯版权？个人信息是不是被保护？大型公司是否获得过度市场权力？民主党更担心的是，如果人工智能机制缺乏透明度和相应保障，这些社会风险引发的公众抵制可能最终会影响美国长期竞争力。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;所以两党核心差异在于，共和党担心监管过早导致美国输给中国，民主党担心缺乏监管导致社会失控，终究反过来破坏创新。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;政府部门之间，同样不能简单划分成鹰派、鸽派。我觉得更准确的理解是各部门的优先关注点不同。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;国防部、情报部门关注低概率但高损失的国家安全风险，如最坏的情形和能力的上限。他们会担心相关技术是否提高中国军事现代化能力。所以即使一项技术具有很大的商业价值，也更倾向于提前考虑限制。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;财政部关注资本和金融工具，比如，美国资本金融服务投资网络是否会帮助中国发展敏感技术？如果实施金融制裁，能否在不误伤大量正常商业活动的前提下精准执行？&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;商务部，处在国家安全跟产业竞争力的交叉点。一方面要关注相关技术是否增强中国人工智能或军事能力，一方面又要考虑过度限制是否导致美国企业失去全球市场，并推动中国更快进行国产替代？&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;国务院以及外交系统，则会关注像荷兰、日本、韩国等盟友是否愿意跟随？美国能否向第三国提供具有吸引力的替代方案？&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;政府和硅谷之间，则是一种既相互依赖，又相互制约的关系。如今的政府越来越依赖私人企业提供技术，包括模型、芯片、云平台和技术人才。企业则依赖政府提供能源和基础设施审批、科研资金、政府采购，还有包括出口许可、国际市场保护等等。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;这两者之间是一种共生的关系，但冲突也很明显。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;政府关心中国会不会“蒸馏”美国大模型？芯片出口会不会增强中国能力？大模型会不会存在网络、安全、军事风险？&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;企业关心能否从政府获得足够的水电、土地？规则是否稳定？州与州之间会不会法律相互冲突？企业还会担心监管责任边界是否清晰，模型发生错误以后责任应当追溯到模型开发商、部署企业还是最终使用者。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;硅谷企业之间，分歧主要还是在于商业模式、市场位置。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;以英伟达为代表的芯片企业，会担心如果中国企业没办法买到美国芯片，中国就可能会加快国产替代，美国企业就会失去收入、市场和标准的影响力，所以他们更倾向于控制最尖端产品，同时允许性能比较相对低的芯片继续出口。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;像Anthropic这种更强调前沿模型安全的企业，会认为短期商业收入不能优先于维持美国在先进人工智能和算力上的战略优势。所以，他们公开支持对先进半导体实施严格的出口管制，并强调防止前沿模型能力通过蒸馏等方式向竞争对手扩散。。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;像Meta这种强调开源模型权重路线的平台企业，则更强调技术扩散和开放生态。扎克伯格最近就表示，封禁中国大模型并不是美国获得竞争优势的有效办法，认为美国更应该解决自身在基础设施等方面的系统性能力瓶颈。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;还有初创企业，涉及风险投资，他们担心，复杂的模型注册、安全评测和法律责任最终只有大型公司负担得起。因此他们往往主张把监管重点放在明确的高风险用途上，而不是对所有基础模型施加同样的前置要求。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;但话说回来，他们都有非常稳定的共识，就是中国是美国最重要的国家级人工智能竞争者。因此，美国内部争论的不是要不要竞争，而是如何竞争、边界在哪里，以及愿意为此付出多大成本。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：现在有一种说法，美国人工智能注重前沿开发，中国则注重场景应用。您如何看待这两种不同选择？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;我觉得这个观察有一定道理，但如果把它理解成美国只重技术、中国只重应用，就过于二元化了。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;更准确的表述应该是，美国人工智能发展模式是以突破能力上限、构建全球平台、获得高额资本回报为主要牵引。中国发展模式，更强调把技术突破与产业体系、应用场景和国家发展目标结合起来。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;有个区别很重要，就是创新驱动力。美国走的是大型科技企业、风险资本、顶尖研究机构共同驱动的前沿突破模式。美国拥有全球领先的科技企业、风险资本体系、大学科研机构和云计算平台，也就更容易把资源集中到前沿模型和通用技术突破上，再通过平台向全球扩散。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;美国在人工智能方面的私人投资非常高。根据斯坦福《2026年人工智能指数报告》统计， 2025年美国私人AI投资约为中国的23倍。当然，这个数字只统计私人投资，会低估中国政府引导基金、基础设施和其他公共投入，所以不能简单理解为两国全部人工智能投入差距。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;中国的特点则是，不仅希望把模型做出来，还特别强调如何让人工智能进入制造业、汽车、物流、医疗、教育和公共服务等现实场景。这背后有中国比较独特的条件，包括完整的产业体系、庞大的市场规模和丰富的应用场景。同时，中国政府在产业规划、基础设施建设和应用推广方面具有较强的组织协调能力，因此更容易通过大量现实场景推动技术快速迭代。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;但我觉得特别需要强调，重视应用不等于放弃前沿创新。事实上，中美两种道路现在呈现相互靠近的态势。美国在补数据中心、能源电网、制造业现实应用这一课。中国也在进一步加强前沿模型、基础研究、芯片、基础软件等等底层能力。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：中美两国未来在人工智能方面，竞争肯定是主旋律，但肯定也有合作的一面。您觉得两国可以在哪些方面展开合作？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;确实要合作，但也不能有过高期待。涉及核心模型能力、训练数据、先进芯片和军事用途的技术，短期内很难成为中美合作重点。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;我觉得，真正适合合作的领域一般有几个特点：风险具有跨境外溢性，单靠一个国家难以解决，同时合作又不需要双方开放最核心的技术。所以，可以考虑的合作面向，有战略安全的合作、风险治理的合作、公共产品的合作以及全球治理与能力建设的合作。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;最紧迫、最有必要的合作领域，就是防止人工智能加剧军事误判和战略失控。人工智能越来越多用于军事决策、情报分析、预警和目标识别等等环节。尤其是要明确核武使用必须人类做出最终决定。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;在前沿模型风险评估、安全测试方面，也可以展开有限合作。在不涉及商业机密和核心技术的前提下，寻找共同的测评方法，比如如何评估模型？是否有软件漏洞？有无恶意代码？是否降低生物化学武器门槛？智能体执行任务时是否偏离人类目标？&lt;/p&gt;
+&lt;a href=""&gt;
+										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
+											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="406" data-src="//k.sinaimg.cn/n/sinakd20260810s/206/w600h406/20260810/a20e-3a802ba47ef060e4cea9ddfece207e01.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt=""&gt;
+										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="406" data-src="//k.sinaimg.cn/n/sinakd20260810s/206/w600h406/20260810/a20e-3a802ba47ef060e4cea9ddfece207e01.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="" disabeld-show="true"&gt;
+											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
+										&lt;/figure&gt;
+									&lt;/a&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;网络安全和生物安全，也有必要建立事件通报和紧急沟通机制。比如，可以讨论一些基本行为边界，不利用人工智能攻击医院、电网、核设施等关键民用基础设施。敏感生物数据不适合共享，但可合作建立高风险生物能力的测评标准等。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;中美在模型事故、技术故障和重大安全事件通报方面也可建立机制。如果发现严重模型漏洞或重大技术故障事件，也应当有必要的联络和通报渠道。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;中美还可以在合成内容、深度伪造和内容来源认证方面开展技术合作。可以推动合成内容标识的技术兼容、数字水印和内容来源认证标准等。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;公共卫生、气候、灾害预警等领域，则是中美最容易向社会说明价值的合作项目。这些领域具有明显的全球公共产品属性，收益能够跨越国界，而且合作并不一定要求双方交换最敏感的模型权重和训练数据。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;此外，中美还应当在全球人工智能治理和发展中国家能力建设方面开展最低限度协调。可以在联合国等多边机制中合作推动支持发展中国家参与国际人工智能治理，并推动缩小算力和数据能力等数字鸿沟。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：美国知名人工智能学者加里·马库斯（Gary Marcus）近期发文称，中国人工智能模型已“几乎追平”美国最先进水平，美国不可能在这场人工智能竞赛中“获胜”，华盛顿应停止将人工智能视为零和博弈，转而探索国际合作与公共产品路径。您如何评价他的说法？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;他在美国是很知名的人工智能学者，也是当前大语言模型技术路线的长期批评者。但，他的观点不代表美国人工智能产业，也不代表美国政府和战略界的立场。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;他认为中国模型正在快速接近美国前沿水平，美国技术领先难以长期维持。所以，他判断，中美在大模型领域可能进入一种领先位置反复交替的接近状态，美国很难建立永久性的、压倒性的技术领先。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;最早在谈到DeepSeek时，他就讲过，这不意味着中国已经赢得人工智能竞赛，只是说明两国正在迅速接近。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;准确地说，他认为，美国采取的竞争模式本身存在问题，无法长期形成技术垄断。如果美国持续投入更多资源、资本、算力，只为争夺短暂的模型领先，随后竞争者迅速跟进，有可能最终形成高成本、低利润、高风险的军备竞赛模式。所以他认为，与其不断扩大这种零和竞争，不如把一部分竞争逻辑转向国际合作，让人工智能更多服务于医学、科学等全球公共产品。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;我认为他的判断有一个重要启示，就是不能把人工智能竞争简单理解为一场可以永久分出胜负的单项赛。同时，具有跨境风险和全球公共产品属性的领域，应该保留合作空间。但这并不意味着人工智能竞争可以由合作所取代，更不意味着核心技术可以无边界开放。原因也很简单，大模型能力具有较强的扩散性，但芯片、算力、数据、平台、产业生态以及军事用途人工智能仍然具有很强的稀缺性和战略属性。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;所以，Gary Marcus的观点更重要的意义，是提醒我们重新思考什么叫做“赢得人工智能竞争”，也就是从追求短期模型领先，转向关注持续创新能力和整体生态优势。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：美国在发展人工智能方面面临哪些制约因素呢？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;我觉得美国最突出的发展瓶颈，主要包括基础设施、关键供应链、人才以及商业回报等几个方面。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;首先是电力和电网等基础设施。美国虽然已经在尝试解决，但不是建几个厂子那么简单，过程非常复杂。而且模型和芯片更新很快，但大型能源基础设施建设往往需要多年，这种速度错配本身就是一个瓶颈。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;第二是供应链。美国在先进人工智能芯片设计上具有明显优势，但设计能力强并不意味着完整供应链都掌握在美国本土。比如英伟达能够设计全球领先的人工智能芯片，但最先进产品主要依赖台积电生产，同时还涉及高带宽内存、先进封装等跨国供应链。中国在稀土和部分关键矿产加工环节的优势，也是美国人工智能产业链的一个潜在约束。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;人才也是一个需要关注的问题。美国国内目前移民、签证制度的不确定性，会影响国际人才长期留美的预期。如果这种趋势持续，会削弱美国长期的人才更新能力。。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;最后还有商业回报。大量资金投入人工智能领域，能否转化为稳定的企业利润和广泛的生产率提升，还需要观察。如果资本投入持续高速增长，而实际应用和商业收益跟不上，也会成为美国人工智能发展的一个制约因素。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：与之相比，中国方面又遇到哪些困难？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红：&lt;/font&gt;中国面临的约束和美国不太一样。我觉得可以大致分成三个方面：核心技术与创新要素、应用和产业化能力，以及生态和国际化能力。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;首先，核心技术和创新要素方面存在一些短板。中国最突出的瓶颈当然是先进芯片。这不仅包括芯片设计，还包括先进制程制造、高带宽内存、先进封装，以及与之配套的基础软件和开发生态。。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;除了技术底座，数据和人才也是非常关键的创新要素。中国拥有海量数据和丰富的应用场景，但在工业、医疗、科研、具身智能等领域，仍然存在数据标准不统一、专业标注不足、跨机构流通困难等问题。人才方面，芯片架构、底层算法、基础研究以及人工智能与生物、材料、制造等领域交叉的高端人才，都需要长期积累，很难在短时间内形成。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;第二，是如何把应用优势真正转化成产业化优势。中国的一个明显优势是产业体系完整、场景丰富、部署速度快。但应用数量多不等于应用质量高，尤其在工业、医疗、金融等专业领域，还要解决从“能用”到“稳定可靠”的问题。真正的产业化还要看能不能持续提高生产率，形成可以复制推广的应用模式。同时，也要提高算力等资源的配置和利用效率，避免重复建设和供需错配。&lt;/p&gt;
+&lt;a href=""&gt;
+										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
+											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="292" data-src="//k.sinaimg.cn/n/sinakd20260810s/92/w600h292/20260810/e37e-a6e238fb3e89334685e49856637da164.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt=""&gt;
+										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="600" h="292" data-src="//k.sinaimg.cn/n/sinakd20260810s/92/w600h292/20260810/e37e-a6e238fb3e89334685e49856637da164.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="" disabeld-show="true"&gt;
+											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
+										&lt;/figure&gt;
+									&lt;/a&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;第三，是生态和国际化能力。中国现在已经能够做出具有全球竞争力的大模型，在开源模型方面有明显优势。但还要从发布模型、开源模型升级到建设整体生态，不仅要扩大模型使用，还要形成更强的开发者生态、产业应用和国际影响力。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;进入国际市场以后，还会面临信任问题。海外用户不仅看模型性能，也会关注数据安全、网络安全和知识产权。这些问题可能在地缘政治竞争中被进一步放大。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;同时，开源模型走向国际市场以后，也要处理好开放和保护的关系。比如，根据不同的技术进行分层开放，同时完善许可证、专利和技术来源记录，在扩大开源生态和保护核心成果之间形成更好的平衡。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;观察者网：中美在人工智能领域几乎两家独大，也引发了不少中等国家的担忧，特别是法国、日本，都希望能够有所突破，不被中美两家制约。从中国的角度来讲，应该如何与这些国家合作？&lt;/font&gt;&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;蔡翠红&lt;/font&gt;：虽然前沿大模型领域确实呈现比较明显的中美竞争格局，但是中美也没有完全垄断整个人工智能体系。除了法国、日本，还有德国、韩国、荷兰等等，他们在很多人工智能环节，比如工业软件、机器人、半导体材料、设备、监管、国际标准等等，都有自己的优势。这些国家真正担心的，是在模型、算力和平台越来越集中的情况下，自己的技术选择空间和产业自主性受到挤压。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;所以，中国的目标不是把这些国家拉到中国一边，而是帮他们获得更多技术选择权，增强议价能力，使中国成为他们降低单一依赖的一种选择，但不是说用对中国的依赖替代对美国的依赖。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;中国可以发挥供给侧优势。我们的开源模型使用和部署成本相对较低，也比较容易根据当地需求进行本地化。对不同的中等国家，可以根据各自的优势和需求确定合作重点。对技术和产业基础较强的国家，可以更多开展联合研发、技术标准、产业链和市场准入等对等合作；对市场规模较大、应用需求较强的国家，则可以更多围绕本地化模型、算力、人才和产业应用展开合作。此外，还可以依托世界人工智能合作组织等多边平台，让更多国家参与人工智能规则和标准的讨论，增强中等国家在全球人工智能治理中的参与度。无论采取哪种合作方式，都要尊重这些国家对数字主权和技术自主的诉求，在互利合作中推动形成更加多元的全球人工智能格局。&lt;/p&gt;
+&lt;p class="art_p" cms-style="font-L"&gt;&lt;/p&gt;	
+
+	
+
+&lt;/section&gt;
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Mon, 10 Aug 2026 03:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE5Wb25LUTJTTXJ0TW5Oa1pnRXZLRjByY2ExbHh2ZzJ6T2dMcWE0V0k4aHM4Mzh3eGdCdWoxYUUyYnNTclI0RFhiTVl4ang1aFl0YjR5YS1tMVpldU5FUE5sVlBZM01WY3VtZk5ySGNjc19EWnBn</guid></item><item><title>GPU危机还没解决 CPU又缺了！申请服务器从几小时变成等好几天 - 驱动之家</title><link>https://news.mydrivers.com/1/1142/1142552.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;GPU危机还没解决 CPU又缺了！申请服务器从几小时变成等好几天&lt;/p&gt;
           
