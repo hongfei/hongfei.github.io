@@ -1,5 +1,440 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>中芯国际：第二季的销售收入为30.06亿美元，上年同期为22.09亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779371</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 08:54:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBjeGgwVm5CY1V2cjh4RnlzWlc1UGVHQlpQbFBIbkZmV0pzbDJxS0pYYWs3QUgxMHFWVXVnOEZHNzIzdWVmYXNiR2V2Q3JqbFRBUERF</guid></item><item><title>开900块电竞房盗走8万元显卡CPU！酒店悬赏5000元征集线索 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143518.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>首发体验 | DeepSeek Harness 来了，它不想做下一个Codex - 爱范儿</title><link>https://www.ifanr.com/1675083</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+  
+&lt;p&gt;就在刚刚，DeepSeek 正式发布了首款 Agent 产品，DeepSeek Harness。&lt;/p&gt;
+&lt;p&gt;早在 V4 Flash 正式版更新日志里，除了直接对标 Claude Opus 模型的 benchmark 成绩，还有一行说明写着「正式版 DeepSeek-V4-Flash 使用 DeepSeek Harness 极简模式（即将发布）作为框架进行测试。」&lt;/p&gt;
+&lt;p&gt;APPSO 在发布之前拿到了 DeepSeek Harness 的内测资格，管理项目、长任务协作、多 Agent 编排、上下文管理以及联网搜索和 Skill 等等，这些本地 Agent 工作台该有的功能，DeepSeek Harness 全部都有。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675105" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-45-51.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-45-51.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-45-51-360x186.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-45-51-768x397.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-45-51-1024x529.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ DeepSeek Harness 自己描述的与 Codex 的区别&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;但如果只是用「DeepSeek 版 Codex」来形容它又肯定不够，&lt;strong&gt;自定义的 Agent 预设，可重建的会话，以及强大的插件功能&lt;/strong&gt;，都让 DeepSeek Harness 变得和传统的 Codex 类产品不太一样。&lt;/p&gt;
+&lt;p&gt;当 DeepSeek 也开始争夺模型输出之后的 Agent 执行层，这个姗姗来迟的 Harness 除了可以让手上本就「物美价廉」的 DeepSeek 模型更好用，更重要的是，它或许会改变我们使用 Agent 的习惯。&lt;/p&gt;
+&lt;h2&gt;先来认识一下 DeepSeek Harness&lt;/h2&gt;
+&lt;blockquote&gt;&lt;p&gt;以下功能和界面等内容均来自内测版，可能与正式版略有出入，以正式发布的版本为主。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;第一眼看和市面上大多数的本地 Agent 产品没什么两样，左侧边栏从上到下依次是「新建会话」、「工作区」，以及不同工作区/文件夹内的多个会话。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675091" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-40-10.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-40-10.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-40-10-360x186.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-40-10-768x397.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-40-10-1024x529.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;p&gt;对话的设置部分，我们可以切换不同的工作区，不同的模型和思考深度，一共有 Off、High、Max 三档推理等级，还有允许 DeepSeek Harness 可访问的权限。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675092" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-20.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-20.png!720 1630w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-20-360x111.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-20-768x237.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-20-1024x315.png 1024w" sizes="(max-width: 1630px) 100vw, 1630px"&gt; &lt;img class="alignnone size-full wp-image-1675093" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-50.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-50.png!720 1654w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-50-360x80.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-50-768x171.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-43-50-1024x228.png 1024w" sizes="(max-width: 1654px) 100vw, 1654px"&gt;&lt;/p&gt;
+&lt;p&gt;和一般的 Codex 产品只区分日常/办公、办公/代码等工作场景不同，&lt;strong&gt;DeepSeek Harness 使用一套「Agent 预设」来应对不同的任务&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;在 V4 Flash 正式版中提到的极简模式（minimal），正是 Harness 内置的四种 Agent 预设之一，它适合用于简单修改、测试最小 Agent，没有压缩、搜索、Skill、计划和子 Agent 这些功能。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675094" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-45-21.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-45-21.png!720 1726w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-45-21-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-45-21-768x513.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_08-45-21-1024x683.png 1024w" sizes="(max-width: 1726px) 100vw, 1726px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 写作工作台是我们自己创建一个 Agent 预设&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;另外三种预设模式分别是适合用来日常写代码、修 Bug、分析项目，以及默认选择的标准模式（standard）；处理大批量搜索、并行读取和多步骤自动处理的代码模式（code）；以及能开发新的 Agent 预设或插件的创造模式（cordis）。&lt;/p&gt;
+&lt;p&gt;不同的 Agent 预设模式可使用的命令不同，我们也可以直接在输入框内使用「/」快速选择不同的指令或 Skills。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675096" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-36-59.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-36-59.png!720 1612w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-36-59-360x198.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-36-59-768x422.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-36-59-1024x563.png 1024w" sizes="(max-width: 1612px) 100vw, 1612px"&gt;&lt;/p&gt;
+&lt;p&gt;标准模式、代码模式和创造模式，都包含有对话压缩、目标、计划等命令，而极简模式下，只有目标命令。&lt;/p&gt;
+&lt;h2&gt;用创作模式自定义 Agent 预设&lt;/h2&gt;
+&lt;p&gt;对于什么是 Agent 预设，以及几款 Agent 预设的具体区别，我们还能在设置页面看到详细的情况。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675097" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-47-02.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-47-02.png!720 3420w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-47-02-360x207.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-47-02-768x441.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-47-02-1024x587.png 1024w" sizes="(max-width: 3420px) 100vw, 3420px"&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;预设即一个会话的 Agent 所运行的插件组装 —— 它的工具、提示词与能力。复制一份既有预设改成自己的，或用「创造模式」让 Agent 帮你创建。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;如果说模型等于大脑，决定基础的推理和理解能力；Skill 等于一份操作手册，告诉模型遇到某类任务时，具体怎么做；Tool / 插件 相当于软件和权限，它决定了模型能否搜索、改文件、运行命令、收发邮件等。&lt;/p&gt;
+&lt;p&gt;那么 Agent 预设就是一个岗位＋工作环境，身份、长期规则、可用工具、工作方式，都由 Agent 预设决定。&lt;/p&gt;
+&lt;p&gt;一个 Agent 预设通用由一份配置文档构成，文档内把 Agent 的系统提示词、工具、上下文压缩和多 Agent 能力完整组合起来。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675099" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-55-01.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-55-01.png!720 3420w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-55-01-360x207.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-55-01-768x441.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_09-55-01-1024x587.png 1024w" sizes="(max-width: 3420px) 100vw, 3420px"&gt;&lt;/p&gt;
+&lt;p&gt;我们也新建了一个专门用于写作的 Agent 预设，在这份预设内，不仅可以使用文件进行配置，还能引入文件夹，加入不同的 Skill，来让自己的 Agent 更加完善。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675131" src="https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-13-10.06.01.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-13-10.06.01.png!720 2782w, https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-13-10.06.01-360x234.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-13-10.06.01-768x499.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-13-10.06.01-1024x665.png 1024w" sizes="(max-width: 2782px) 100vw, 2782px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 自定义写作工作台 Agent 预设文件夹内包含的信息&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;DeepSeek Harness 内也提供了「用创作模式自定义预设」的方法，就像大多数 Agent 用对话创建 Skills 一样，我们可以一步步要求 Harness 创建一个自己的 Agent 预设。&lt;/p&gt;
+&lt;p&gt;在设置页面，我们还能看到模型的配置，DeepSeek Harness 允许我们接入不同的第三方大模型，默认提供方包括 Kimi、OpenAI、Anthropic、Google 等将近 40 个大模型厂商。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675101" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-13-01.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-13-01.png!720 1576w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-13-01-360x210.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-13-01-768x448.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-13-01-1024x598.png 1024w" sizes="(max-width: 1576px) 100vw, 1576px"&gt;&lt;/p&gt;
+&lt;h2&gt;一切都是插件化运行&lt;/h2&gt;
+&lt;p&gt;最后一项设置是 DeepSeek Harness 这次的重头戏——插件，DeepSeek Harness 在内测产品中介绍里写着「&lt;strong&gt;Everything is a plugin&lt;/strong&gt;」，一切皆插件。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675100" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-11-57.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-11-57.png!720 3420w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-11-57-360x207.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-11-57-768x441.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-11-57-1024x587.png 1024w" sizes="(max-width: 3420px) 100vw, 3420px"&gt;&lt;/p&gt;
+&lt;p&gt;这个插件有多离谱，在内测的项目仓库里，参与内测的用户短短几天的时间就已经开发了约 300 个插件。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675106" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-51-59.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-51-59.png!720 2754w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-51-59-360x257.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-51-59-768x548.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_10-51-59-1024x731.png 1024w" sizes="(max-width: 2754px) 100vw, 2754px"&gt;&lt;/p&gt;
+&lt;p&gt;有的插件能把 DeepSeek Harness 整个的工作界面修改，有的可以像 Codex 一样接入自定义桌面宠物，还有针对对话界面的优化，&lt;strong&gt;以及为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;虽然最底层的记忆依然是本地文件，但这套插件并没有把「长期记忆」做成传统的向量数据库 + RAG，而是通过本地文件持久化 + 分层上下文注入 + LLM 自我整理，形成的一套完整系统。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675109" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-08-34.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-08-34.png!720 2062w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-08-34-360x167.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-08-34-768x357.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-08-34-1024x476.png 1024w" sizes="(max-width: 2062px) 100vw, 2062px"&gt;&lt;/p&gt;
+&lt;p&gt;插件的能力还在于能实现模型的自我进化，定期让 LLM 回头审视自己的完整工作上下文，把临时经验压缩成长久知识。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675122" src="https://s3.ifanr.com/wp-content/uploads/2026/08/tab.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/tab.png!720 3162w, https://s3.ifanr.com/wp-content/uploads/2026/08/tab-360x165.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/tab-768x351.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/tab-1024x468.png 1024w" sizes="(max-width: 3162px) 100vw, 3162px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲使用该记忆插件的 DeepSeek Harness 界面&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;但无论是记忆插件，还是皮肤插件，这些都只是插件能力的冰山一角。&lt;/p&gt;
+&lt;p&gt;在 DeepSeek Harness 的开发文档里，从架构层面来说，&lt;strong&gt;插件几乎就是 DeepSeek Harness 的主打，模型、工具、策略、存储、上下文和界面都能通过插件进行替换或组合。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通常我们理解的插件是给当前的产品增加一些小功能，就像 VS Code 里有着丰富的插件系统，或者是 Chrome 浏览器，我们能安装不同的插件，增加浏览器对应的能力。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675117" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_14-49-29.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_14-49-29.png!720 3118w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_14-49-29-360x221.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_14-49-29-768x472.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_14-49-29-1024x630.png 1024w" sizes="(max-width: 3118px) 100vw, 3118px"&gt;&lt;/p&gt;
+&lt;p&gt;Codex 应用内也有大量的插件，像是计算机使用、Chrome、Notion 等等对应不同的工具和服务。&lt;/p&gt;
+&lt;p&gt;但 DeepSeek Harness 这次给出的插件，是在 Agent 的大脑、工具箱、规则和界面里加能力，它更深入、更自由。&lt;/p&gt;
+&lt;p&gt;如果你嫌 DeepSeek 官方界面太简洁，不妨加点广告。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675133" src="https://s3.ifanr.com/wp-content/uploads/2026/08/english-mode-1.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/english-mode-1.png!720 2644w, https://s3.ifanr.com/wp-content/uploads/2026/08/english-mode-1-360x244.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/english-mode-1-768x521.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/english-mode-1-1024x695.png 1024w" sizes="(max-width: 2644px) 100vw, 2644px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 内测用户自己开发的 DSH 插件，能够直接修改页面 UI&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;举个例子，一个 Agent 的「标题生成插件」，通常是在对话里增加一个按钮或命令，点击后调用 AI 根据已有命令处理。&lt;/p&gt;
+&lt;p&gt;一个 DSH 的「写作插件」，则可能同时做到：给 Agent 增加 /headline 等能力；注册一个模型可以自主调用的标题工具；换掉系统提示词和写作规则；接入我们的各类 Skills； 增加网页检索或外部 MCP；保存文章素材和长期偏好；&lt;strong&gt;在 DeepSeek 的交互页面中增加写作面板&lt;/strong&gt;；限制这个 Agent 可以使用哪些 Shell、文件或网络工具……等等。&lt;/p&gt;
+&lt;p&gt;市面上插件功能同样强大的产品可能是 Pi Agent，它也可以通过 Extension 改写工具、模型请求、会话行为和终端界面。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675118" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-12-32.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-12-32.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-12-32-360x186.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-12-32-768x397.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-12-32-1024x529.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ Pi 的介绍写着「有很多 Agent，但这个才是你的」&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Pi 让一个 Coding Agent 可以任意扩展；DSH 则试图让整个 Agent 产品都由插件重新组合。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675088" src="https://s3.ifanr.com/wp-content/uploads/2026/08/exec-e82afa28-d142-4ed7-bb26-1500ac1229a3.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/exec-e82afa28-d142-4ed7-bb26-1500ac1229a3.png!720 916w, https://s3.ifanr.com/wp-content/uploads/2026/08/exec-e82afa28-d142-4ed7-bb26-1500ac1229a3-360x675.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/exec-e82afa28-d142-4ed7-bb26-1500ac1229a3-768x1440.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/exec-e82afa28-d142-4ed7-bb26-1500ac1229a3-546x1024.png 546w" sizes="(max-width: 916px) 100vw, 916px"&gt;&lt;/p&gt;
+&lt;h2&gt;用起来怎么样&lt;/h2&gt;
+&lt;p&gt;很难想象吧，以快著称的 DeepSeek，有一天运行一项编程任务的时间也会来到半个多小时。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675110" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-18-17.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-18-17.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-18-17-360x186.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-18-17-768x397.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-18-17-1024x529.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
+&lt;p&gt;为了观察执行层能给同一个模型带来多大变化，我们让 DeepSeek-V4-Flash 分别在 DeepSeek Harness、Reasonix 和 Codex 中完成同一个 Three.js 滑沙游戏。&lt;/p&gt;
+&lt;p&gt;先看使用 V4 Flash 在 DeepSeek Harness 中的表现，基本上没有太多可以挑剔的 Bug，玩家一开始就在滑行，完全遵守核心玩法，穿过下坡途中的每个门，最终抵达沙漠绿洲。&lt;/p&gt;
+&lt;p id="xIxfZJf"&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8d4721a28.png!720" rel="lightbox[1675083]"&gt;&lt;img class="alignnone size-full wp-image-1675134 " src="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8d4721a28.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8d4721a28.png!720 1636w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8d4721a28-360x185.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8d4721a28-768x395.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8d4721a28-1024x527.png 1024w" sizes="(max-width: 1636px) 100vw, 1636px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而使用刚刚上新的 V4 Pro，用时更长，表现反而更没那么好。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675121" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_16-07-41.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_16-07-41.png!720 1602w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_16-07-41-360x178.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_16-07-41-768x380.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_16-07-41-1024x506.png 1024w" sizes="(max-width: 1602px) 100vw, 1602px"&gt;&lt;/p&gt;
+&lt;p&gt;虽然界面似乎有更加精美了一点，太阳光沙漠都更自然，但是金字塔等元素又很抽象。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8db0c1740.png!720" rel="lightbox[1675083]"&gt;&lt;img class="alignnone size-full wp-image-1675135 " src="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8db0c1740.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8db0c1740.png!720 1636w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8db0c1740-360x185.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8db0c1740-768x394.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8db0c1740-1024x526.png 1024w" sizes="(max-width: 1636px) 100vw, 1636px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 使用 DeepSeek V4 Pro 正式版，在 DeepSeek Harness 内生成&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Reasonix，据说是最适合 DeepSeek 的第三方 Agent ，我们让它处理了同一个任务，看看 V4 Flash 正式版模型，在不同的 Harness 应用中，表现会有什么不同。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675124" src="https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-12-16.03.15.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-12-16.03.15.png!720 4048w, https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-12-16.03.15-360x199.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-12-16.03.15-768x424.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/2026-08-12-16.03.15-1024x566.png 1024w" sizes="(max-width: 4048px) 100vw, 4048px"&gt;&lt;/p&gt;
+&lt;p&gt;同样是最高等级的推理，差别真的很大。&lt;/p&gt;
+&lt;p&gt;首先是整体画面的美感就完全不如 DeepSeek Harness 所交付的「金黄、快速、阳光明媚、清晰明朗」，其次虽然游戏同样能玩，但是太过于简陋，渲染的金字塔、人物、天空都很粗糙，不像是一款 3D 游戏。&lt;/p&gt;
+&lt;p id="SzkZnwo"&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8de887eee.png!720" rel="lightbox[1675083]"&gt;&lt;img class="alignnone size-full wp-image-1675136 " src="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8de887eee.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8de887eee.png!720 1636w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8de887eee-360x185.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8de887eee-768x395.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8de887eee-1024x527.png 1024w" sizes="(max-width: 1636px) 100vw, 1636px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而如果是 Codex+DeepSeek V4 Flash 的组合呢，一开始我们在本地新建了一个文件夹，Codex 的处理方式很聪明，他说他自己先扫描了一遍本地文件夹，发现了另一个项目中存在一个 3D 库的复制文件。&lt;/p&gt;
+&lt;p&gt;接着他又找到了我使用 DeepSeek Harness 创建的 pyramid-speed-run 项目，他说他要先看看那个是怎么处理 3D 库文件的，但是他不会直接复制，然后把那个项目作为一个原型参考，开始构建自己的项目。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675111" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-55-27.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-55-27.png!720 3118w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-55-27-360x221.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-55-27-768x472.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_11-55-27-1024x630.png 1024w" sizes="(max-width: 3118px) 100vw, 3118px"&gt;&lt;/p&gt;
+&lt;p&gt;一个是允许他继续参考做出来的网页，一个是我们新开了一个对话，让 Codex 完全依靠自己的工具处理的网页。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e156edad.png!720" rel="lightbox[1675083]"&gt;&lt;img class="alignnone size-full wp-image-1675137 " src="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e156edad.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e156edad.png!720 1636w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e156edad-360x185.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e156edad-768x395.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e156edad-1024x527.png 1024w" sizes="(max-width: 1636px) 100vw, 1636px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 使用 V4 Flash 正式版的 Codex，干净工作区组&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e2d8cc56.png!720" rel="lightbox[1675083]"&gt;&lt;img class="alignnone size-full wp-image-1675138 " src="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e2d8cc56.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e2d8cc56.png!720 1636w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e2d8cc56-360x185.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e2d8cc56-768x395.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/img_6a7d8e2d8cc56-1024x527.png 1024w" sizes="(max-width: 1636px) 100vw, 1636px"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲ 使用 V4 Flash 正式版的 Codex，受污染上下文组&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;两个版本似乎都比用 Reasonix 要更好，和 DeepSeek Harness 版本相比，似乎还是 Harness 版本给人沉浸感更强。&lt;/p&gt;
+&lt;p&gt;「受污染」版把色彩调好的同时，但是金字塔完全不像是金字塔。而从 0 开始做的版本确实有 Codex 的感觉，整体画面更明亮，也更简单。&lt;/p&gt;
+&lt;p&gt;就像 V4 Flash 使用极简模式的 DeepSeek Harness 进行评测能得到更好结果。&lt;/p&gt;
+&lt;p&gt;这个单次案例虽然无法证明 Harness 在所有任务上更强，但至少说明：当模型完全相同时，Harness 提供的工具、提示词、上下文组织和执行策略，已经足以显著改变最终产物。&lt;/p&gt;
+&lt;h2&gt;它不是 DeepSeek 版 Codex&lt;/h2&gt;
+&lt;p&gt;查看 DeepSeek Harness 仓库中大量的 Markdown 说明文档，以及使用指南等内容，可以很确定地说，&lt;strong&gt;DSH 不是「DeepSeek 版 Codex」，它更接近一套可重组、可回放的 Agent 运行时。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;DeepSeek Harness 真正特别的地方，是把「插件生命周期、每个 Agent 的能力组合、工具执行、会话日志、Web UI」接进了同一套内核。&lt;/p&gt;
+&lt;p&gt;从底层的技术配置到如何处理用户交互、AI 交互，DeepSeek Harness 都有自己独特的一套流程。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675112" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-43-21.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-43-21.png!720 1714w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-43-21-360x487.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-43-21-768x1039.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-43-21-757x1024.png 757w" sizes="(max-width: 1714px) 100vw, 1714px"&gt;&lt;/p&gt;
+
+&lt;p&gt;DeepSeek Harness 最重要的插件功能，根据其文档介绍，它并不只是一个 API 接口，每个工具、模型适配器、策略、提示词、存储、UI 区域都可以是插件。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675119" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-24-51.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-24-51.png!720 2192w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-24-51-360x168.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-24-51-768x357.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_15-24-51-1024x476.png 1024w" sizes="(max-width: 2192px) 100vw, 2192px"&gt;&lt;/p&gt;
+&lt;p&gt;就像我们看到，已经有内测用户能通过插件，修改 DeepSeek Harness 的主界面。&lt;/p&gt;
+&lt;p&gt;其次是 Profile 和 Preset 构成的两级组合系统，Profile 决定整个 DSH 进程怎么运行，例如 Web、Headless、安装哪些 Bundle，它本质上是有顺序的 cordis.patch.yml 配置层。&lt;/p&gt;
+&lt;p&gt;Agent Preset（Agent 预设）决定某个会话里的 Agent 能看到哪些工具、提示词、Skill、子 Agent 和工作流。Preset 的作用域按 agent → preset → global 解析。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675113" src="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-45-04.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-45-04.png!720 2084w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-45-04-360x160.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-45-04-768x341.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/PixPin_2026-08-13_13-45-04-1024x454.png 1024w" sizes="(max-width: 2084px) 100vw, 2084px"&gt;&lt;/p&gt;
+&lt;p&gt;根据 Preset 作用域机制，意味着同一个进程中，可以同时运行写作 Agent、编码 Agent、研究 Agent，而且各自看到不同的工具和指令，不必启动四套服务。&lt;/p&gt;
+&lt;p&gt;另一个有价值的技术点是「&lt;strong&gt;模型可见 ⇔ 已记录&lt;/strong&gt;」。&lt;/p&gt;
+&lt;p&gt;普通聊天工具往往只保存最终消息，DSH 保存的是完整事件流： turn/start、step/start 用户消息、实际请求使用的模型、系统提示词、工具定义、原始流式等等内容。&lt;/p&gt;
+&lt;p&gt;同时甚至上下文压缩也不会删除原始历史，只是用 replacement 事件改变模型此后看到的「表面」。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675085" src="https://s3.ifanr.com/wp-content/uploads/2026/08/634788467-dfdb875e-a1a8-4d4b-8340-353736b1708f.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/634788467-dfdb875e-a1a8-4d4b-8340-353736b1708f.png!720 2630w, https://s3.ifanr.com/wp-content/uploads/2026/08/634788467-dfdb875e-a1a8-4d4b-8340-353736b1708f-360x246.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/634788467-dfdb875e-a1a8-4d4b-8340-353736b1708f-768x524.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/634788467-dfdb875e-a1a8-4d4b-8340-353736b1708f-1024x699.png 1024w" sizes="(max-width: 2630px) 100vw, 2630px"&gt;&lt;/p&gt;
+&lt;div class="editor-image-source"&gt;
+&lt;p&gt;▲DSH-better-sidebar 插件，将 DeepSeek Harness 界面修改为多个侧边栏的 UI&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;还有采用「先记录意图，再执行副作用」的 Agent Loop，以及所有工具共用一条执行内核。即模型可以写一段 TypeScript，把多个工具调用编排成程序，但中间数据留在运行环境里，只有最终结果进入模型上下文。&lt;/p&gt;
+&lt;p&gt;最后一项特别设计就是前端，即我们使用 DeepSeek Harness 的界面，DSH 并不是一个传统的「固定前端页面 + 后端插件」，界面本身也是第二棵插件树。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675087" src="https://s3.ifanr.com/wp-content/uploads/2026/08/exec-9aafebca-d4bc-4a06-ac2a-509749206168.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/exec-9aafebca-d4bc-4a06-ac2a-509749206168.png!720 1672w, https://s3.ifanr.com/wp-content/uploads/2026/08/exec-9aafebca-d4bc-4a06-ac2a-509749206168-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/exec-9aafebca-d4bc-4a06-ac2a-509749206168-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/exec-9aafebca-d4bc-4a06-ac2a-509749206168-1024x576.png 1024w" sizes="(max-width: 1672px) 100vw, 1672px"&gt;&lt;/p&gt;
+
+&lt;p&gt;应用启动后，界面挂载机制会加载一组 UI 插件。页面先声明侧边栏、对话区、输入区和设置区等标准挂载位，各插件再把自己的组件注册进去。&lt;/p&gt;
+&lt;p&gt;MCP、Skill、网页搜索、终端、子 Agent、多模型、Plan Mode、Workflow，这些单独看都已经是 Agent 产品的常见能力。&lt;/p&gt;
+&lt;p&gt;DeepSeek Harness 的不同在于它把模型、工具、会话、插件和界面，都接入统一的底层机制。&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675084" src="https://s3.ifanr.com/wp-content/uploads/2026/08/20260805103335_4676_120.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/20260805103335_4676_120.png!720 709w, https://s3.ifanr.com/wp-content/uploads/2026/08/20260805103335_4676_120-360x609.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/20260805103335_4676_120-605x1024.png 605w" sizes="(max-width: 709px) 100vw, 709px"&gt;&lt;/p&gt;
+&lt;p&gt;而这带来的最大改变，大概是以前我们是使用一个通用 AI Agent，每个人都在用一样的 Codex 去处理办公、编程、写作等任务；但 DeepSeek Harness 给我们的是自己探索的空间。&lt;/p&gt;
+&lt;p&gt;总的来说，Codex 尝试交付一个拿来即用的 Agent。DeepSeek Harness 更像一套组装 Agent 的运行时：它把更多结构暴露出来，让开发者决定 Agent 应该是谁、使用什么工具，以及如何工作。&lt;/p&gt;
+&lt;p&gt;既然 Codex 可以切换不同的模型，&lt;strong&gt;模型只是 Agent 的一个部件，那 Agent 本身也应该能持续配置、替换和重组&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;DeepSeek 过去最受关注的是模型本身。现在到了 DeepSeek Harness，它开始处理模型之外的问题：如何组织工具和上下文、保存执行过程，以及在同一套系统里配置不同的 Agent。&lt;/p&gt;
+&lt;p&gt;以前我们挑 Agent，挑的是哪家公司做出了最好用的那个产品。&lt;/p&gt;
+&lt;p&gt;DeepSeek Harness 给出的另一种可能是，&lt;strong&gt;Agent 和模型同样是基础设施&lt;/strong&gt;。开发者和用户，可以使用 DeepSeek Harness 创造出无数个 Codex，而真正属于我们的 Agent，也可以由自己组装出来。&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Thu, 13 Aug 2026 12:51:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE0wYmZ0WVpwdzdiNFBfcUNiY2NwdFQzdFM1Q3N5a1VabDBUSURVcFpqU3NWckwzMHEzdnYxMmJmcFVZcW8</guid></item><item><title>iPhone 18 Pro系列价格预测：起步价将突破万元门槛 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143576.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;每年九月苹果发布会之前，价格永远是最让人心跳加速的话题。往年大家讨论的基本是"涨不涨"，到了今年这届iPhone 18，话题已经变成了"涨多少"。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;从目前供应链、投行研报和各家分析师的口径来看，结论指向性相当明确：iPhone18 Pro系列涨价几乎是板上钉钉，国行256GB版本大概率一脚迈过万元门槛。&lt;/strong&gt;&lt;/span&gt;今天咱们就掰开揉碎聊聊，钱到底涨在哪了，以及你手里的老iPhone值不值得换成新的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;涨幅有多大？各版本价格预测&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;先说最关键的——到底要花多少。目前市场共识比较一致：美版预计涨200到300美元，起售价从1099美元升到1299到1399美元区间。&lt;/p&gt;
+&lt;p&gt;换算到国行，iPhone18 Pro256GB的起售价，极大概率从上一代的8999元跳到9999元。部分激进预测认为可能到10999元，但多数分析师觉得苹果会用"基础版小涨、大容量狠涨"的策略，把256GB的起步价卡在9999这个心理关口上。&lt;/p&gt;
+&lt;p&gt;ProMax这边也不乐观：256GB起售价预计从9999元涨到10999元。大容量版本更夸张——512GB版本可能在11999到12999元之间，1TB直接冲到14999元，ProMax的2TB顶配甚至有传闻要逼近两万。说白了，买得越大、涨得越狠。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/560813e7-6997-469a-8cdd-227575de2d45.jpg" target="_blank"&gt;&lt;img alt="iPhone 18 Pro系列价格预测：起步价将突破万元门槛" h="600" src="//img1.mydrivers.com/img/20260813/S560813e7-6997-469a-8cdd-227575de2d45.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有个变量值得一提：也有少数"不涨派"的声音。论据是iPhone17系列降价后国内卖了三千多万台，苹果刚靠降价抢回的市场，反手再涨价怕是要把用户往国产旗舰那边赶。&lt;/p&gt;
+&lt;p&gt;日媒yeux1122甚至放出了"价格冻结"的传闻，说苹果可能维持原价来卡位。但说实话，在成本暴涨的压力面前，这个可能性我个人觉得不算大。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么涨这么猛？三个成本黑洞&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这次涨价的背后，不是苹果想多赚，是物料成本真的压不住了。我梳理了三个大头：&lt;/p&gt;
+&lt;p&gt;先说存储芯片，这也是涨幅里最吓人的一部分。AI服务器这两年疯狂抢DRAM和NAND产能，导致手机用存储芯片的价格直接起飞。&lt;/p&gt;
+&lt;p&gt;根据供应链的数据，iPhone18 Pro升级到12GB运存的采购成本暴涨了270%以上，256GB闪存成本也涨了近三倍。光存储这一项，占整机物料成本的比例就从以前的10%左右飙升到了34%。库克把这波行情形容为"百年一遇的洪水"，听着夸张，但数据摆在那，确实夸张。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/ce87a653-26d1-47ef-8bcd-b265adff9ae6.jpg" target="_blank"&gt;&lt;img alt="iPhone 18 Pro系列价格预测：起步价将突破万元门槛" h="655" src="//img1.mydrivers.com/img/20260813/Sce87a653-26d1-47ef-8bcd-b265adff9ae6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后就是那颗2nm的A20Pro芯片。台积电的2nm工艺是头一次量产，晶圆成本近乎翻倍——单颗A20Pro的制造成本估算在280美元左右，而上代3nm的A19Pro大约只要150美元。新制程初期的良率也不高，这些钱最终都要摊到售价里。&lt;/p&gt;
+&lt;p&gt;还有就是相机模组的升级。Pro系列这一代要上物理可变光圈，主摄能在f/1.4到f/4.0之间调节，听着很香，但模组的采购成本比上代高了大约50%。综合算下来，TrendForce测算iPhone18 Pro整机物料成本大约比17Pro高了38%。这么大的成本窟窿，光靠内部压缩其它零部件来填，恐怕不够。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;到底值不值得买？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个问题得分人。如果你是手持iPhone15 Pro甚至更早机型的用户，电池不太行了、拍照也觉得差点意思，那这一代其实值得认真考虑。&lt;/p&gt;
+&lt;p&gt;2nm芯片带来的能耗比提升、12GB运存对多任务和AI功能的加持、可变光圈在夜拍上的潜力，都属于实打实的升级。特别是从A17Pro直接跨两代到A20Pro的话，体验上的"变快"应该能明显感受到。&lt;/p&gt;
+&lt;p&gt;就是要有心理准备：今年掏的钱大概率比往年多一截，多加的这个"果粉税"，你愿不愿意认？&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/c189ef27-5660-44cd-8e0f-bb5542a85788.jpg" target="_blank"&gt;&lt;img alt="iPhone 18 Pro系列价格预测：起步价将突破万元门槛" h="400" src="//img1.mydrivers.com/img/20260813/Sc189ef27-5660-44cd-8e0f-bb5542a85788.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但如果你现在用的是iPhone16 Pro甚至17Pro，说句实话，这代对你来说真的没什么必要追。单看每一项升级都不小——2nm、12GB运存、可变光圈，个个都能列出来当卖点——但加在一起放在日常使用里，感知未必能匹配一千块的涨价。&lt;/p&gt;
+&lt;p&gt;你刷微信、看视频、拍几张照片，跑16Pro还是18Pro，体验上的落差远没有参数表上写的那么大。尤其是17Pro的用户，性能和影像都还在第一梯队，跟风换了大概率会有"好像也没差多少"的失落感，建议等下一代或者隔代再换。&lt;/p&gt;
+&lt;p&gt;还有一个挺务实的思路：等iPhone18 Pro发布后，降价后的17Pro会是一个很有性价比的选择。目前渠道里17Pro已经出现了万元内的价格，九月之后大概率还会往下走。如果你对新功能没那么敏感，捡上代旗舰的底，反而是今年比较理性的策略。&lt;/p&gt;
+&lt;p&gt;最后多说一句：现在网上但凡出现"iPhone18 Pro现货9999元"的噱头，一概别信。发布会都还没开，哪来的现货。等9月9日真机亮相、评测解禁，再做决定不迟。对大部分人来说，今年的九月，等着看实测，比抢首发划算得多。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/49afbdaa55fd421e8235f3816742e93e.jpg" target="_blank"&gt;&lt;img alt="iPhone 18 Pro系列价格预测：起步价将突破万元门槛" h="335" src="//img1.mydrivers.com/img/20260813/s_49afbdaa55fd421e8235f3816742e93e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 11:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1SMmdLSEhCUUJTbFpQd19KQ1ptYTNBN3Rna25oSXByQWNHQ2dpQzNOMXdTOThfU3RzYXh1ZEJPY2VUYk9UenJ4NkRzckdCSmFKUi00ZWpzRXM</guid></item><item><title>NVIDIA成了！RTX Spark笔记本还没上市就被抢空 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143569.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;NVIDIA成了！RTX Spark笔记本还没上市就被抢空&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-13 19:15:58  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143569-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，&lt;span&gt;&lt;strong&gt;华硕在最新财报电话会议上表示，对NVIDIA RTX Spark笔记本的上市前景高度乐观，首批备货已被渠道合作伙伴全部预订完毕，公司正在追加订单。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;华硕首批RTX Spark笔记本将通过ProArt系列推出，预计今年内上市，华硕称市场反响远超预期，对销售前景非常乐观。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RTX Spark的核心卖点是高达128GB的LPDDR5X统一内存，NVIDIA目前最强的消费级显卡RTX 5090配备32GB显存，应对游戏绰绰有余，但运行本地AI大模型时就显得有些力不从心。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;而RTX Spark的128GB统一内存据称可运行1200亿参数模型，上下文长度最高100万，创意专业人士也可利用大内存渲染高精度场景。&lt;/p&gt;
+&lt;p&gt;目前已有多款图形密集型游戏在RTX Spark笔记本上流畅运行的演示，NVIDIA也已开始为这颗SoC推送驱动支持，性能有望持续优化。&lt;/p&gt;
+&lt;p&gt;RTX Spark的短板在于CPU部分，其20核CPU由NVIDIA与联发科合作开发，Geekbench 7测试显示，18核和20核配置的性能均慢于苹果M4 Max，不过具体表现有待首批商用笔记本上市后验证。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="NVIDIA成了！RTX Spark笔记本还没上市就被抢空" h="449" src="//img1.mydrivers.com/img/20260813/6a3282e0-344a-4628-9a23-1f88556f5eb0.png" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 11:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE41cmJlNVVJcmZUdWFfakRsWUczVGdXa0FweUhadDQwNTYzazNDelhUQmpaQmQwbFRDQW54eWhzcDdqRnRtd1NvblRsTlJpZ0E1MU5oX0U5WWw</guid></item><item><title>华硕发布新款三模显示器：220Hz至410Hz切换、双2W扬声器 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143563.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，&lt;strong&gt;华硕推出新款电竞显示器——TUF Gaming VG27WQ5F，&lt;span&gt;主打高刷新率多档切换，支持HD 410Hz、FHD 280Hz以及2K 220Hz三档调节，&lt;/span&gt;&lt;/strong&gt;满足不同游戏场景对分辨率与流畅度的灵活需求。&lt;/p&gt;
+&lt;p&gt;该显示器采用三面窄边框设计，延续TUF Gaming系列近几年的家族式风格，&lt;strong&gt;搭载27英寸Fast VA面板，曲率为1500R，可视角度达178度（水平和垂直），并具备防眩光涂层。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/9c423c2d6aed4a02b0ba776444ea79fb.png" target="_blank"&gt;&lt;img alt="华硕发布新款三模显示器：220Hz至410Hz切换、双2W扬声器" h="230" src="//img1.mydrivers.com/img/20260813/s_9c423c2d6aed4a02b0ba776444ea79fb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;色彩表现方面，色深为10bit，GtG响应时间仅1ms，典型亮度300尼特，典型对比度高达5000:1，sRGB色域覆盖99%。&lt;/p&gt;
+&lt;p&gt;此外，&lt;strong&gt;产品支持华硕动态影像清晰同步技术（ELMB）、可变刷新率（VRR）及HDR10，并兼容Adaptive-Sync与AMD FreeSync Premium，确保画面流畅无撕裂。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;功能体验上，玩家可通过ASUS DisplayWidget Center软件，以鼠标轻松调节OSD及显示器各项参数。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/7d43b131ea5a4b90b8098ea65c91da7c.png" target="_blank"&gt;&lt;img alt="华硕发布新款三模显示器：220Hz至410Hz切换、双2W扬声器" h="362" src="//img1.mydrivers.com/img/20260813/s_7d43b131ea5a4b90b8098ea65c91da7c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;显示器还集成了TUF Gaming专属AI技术，包括动态准星、动态阴影增强和AI视觉等，进一步提升游戏竞技表现。&lt;/p&gt;
+&lt;p&gt;护眼方面，&lt;strong&gt;低蓝光技术可在减少有害蓝光的同时保留色彩准确性，无闪烁技术则有效缓解长时间游戏带来的眼部疲劳。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/20d28d4b74f24652a87c2cd87a7a7a26.png" target="_blank"&gt;&lt;img alt="华硕发布新款三模显示器：220Hz至410Hz切换、双2W扬声器" h="303" src="//img1.mydrivers.com/img/20260813/s_20d28d4b74f24652a87c2cd87a7a7a26.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;接口配置上，提供两个HDMI 2.1、一个DisplayPort 1.4及3.5mm音频插孔，并内置双2W扬声器。&lt;/p&gt;
+&lt;p&gt;支架支持升降旋转人体工学调节，俯仰角度为-5°至20°，同时兼容100 x 100mm VESA壁挂，方便玩家更换第三方支架使用。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 11:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0za21XX3R3b3EwNFVzTnA2MUNfZEFoaHI4d3pHaEh2S1JYajdWTWpEUWpNSDlKcXFCT293bXVCUkdLZDhXdVhxQjZ2ZnQ3UVRNbkZpUmQwZWQ</guid></item><item><title>RTX 50系列下月还要再涨30%！RTX 5090已经暴涨41% - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143559.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;RTX 50系列下月还要再涨30%！RTX 5090已经暴涨41%&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-13 18:52:49  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143559-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，据韩国比价网站Danawa发布的数据，&lt;span&gt;&lt;strong&gt;NVIDIA RTX 50系列显卡自1月至8月在韩国市场全面上涨，其中RTX 5090以40.9%的涨幅居首。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Danawa还警告，RTX 50系列下月可能还要再涨30%。&lt;/p&gt;
+&lt;p&gt;趋势图显示，RTX 5090价格在6月前后开始加速上涨，7月和8月持续高位运行，RTX 5080和RTX 5070 Ti同期涨幅相对平缓，但8月价格均高于1月水平。RTX 5070年初冲高后回落，随后再度回升。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/17c64555-c5b9-4eed-b561-1ad4620bb864.png" target="_blank"&gt;&lt;img alt="RTX 50系列下月还要再涨30%！RTX 5090已经暴涨41%" h="322" src="//img1.mydrivers.com/img/20260813/S17c64555-c5b9-4eed-b561-1ad4620bb864.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;RTX 5060 Ti是唯一下跌的型号，较1月下降4.1%，但该数据混入了8GB和16GB两个版本，8GB型号因关注度低导致价格走低。RTX 5060和RTX 5050价格走势相对平稳，8月仍高于年初。&lt;/p&gt;
+&lt;p&gt;Danawa援引行业分析称，&lt;strong&gt;RTX 50系列显卡价格可能从本月起再涨最多30%，涨价压力来自台积电先进工艺晶圆和GDDR7显存成本上涨，&lt;/strong&gt;部分厂商已在调整出货量或考虑提价，高端型号涨幅可能更大。&lt;/p&gt;
+&lt;p&gt;NVIDIA至今仍对近期涨价保持沉默，未发表任何声明，与此同时，NVIDIA官方账号仍在推广可在消费级硬件上运行的自研开源AI模型。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/d0f407c24730450aa378f29448dd1e2e.jpg" target="_blank"&gt;&lt;img alt="RTX 50系列下月还要再涨30%！RTX 5090已经暴涨41%" h="400" src="//img1.mydrivers.com/img/20260813/s_d0f407c24730450aa378f29448dd1e2e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 10:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBiQzBtaXY5SWdSWHlRM2tjS19DQWc1WnV5RUp4NXhkbFdvNHUteUtLYWJxSHdHRDlwQWJTTGdQVURPUHpzZ05OQm11U3o0NkdDY2JDVnpzSEs</guid></item><item><title>芯片2年过时论破产！6年前的NVIDIA A100还在赚钱 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143556.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，AI云服务公司CoreWeave近日签署了一份将英伟达A100 GPU租赁期延长至2029年的合同。&lt;span&gt;&lt;strong&gt;这表示英伟达6年前发布的A100芯片至今仍在AI市场创造价值。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;大空头Michael Burry曾质疑，英伟达每年推出新一代芯片架构，旧GPU可能仅有两三年的经济价值。&lt;strong&gt;这一签约让芯片2年过时论彻底破产。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A100于2020年5月发布，基于Ampere架构，采用台积电7nm工艺，集成542亿晶体管，芯片面积达826mm²，为当时全球最大7nm芯片，配备6912 CUDA核心和第三代Tensor Core。&lt;/p&gt;
+&lt;p&gt;其FP16算力达312 TFLOPS，支持MIG多实例分割和第三代NVLink互联，功耗400W。&lt;strong&gt;ChatGPT最初就是在这款芯片上完成训练，A100也因此成为大模型浪潮的起点。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;市场同样曾担忧新芯片上市会让旧芯片两年内失去价值，但AI推理需求旺盛，老芯片以更低价格承接推理负载，形成了新市场。&lt;/p&gt;
+&lt;p&gt;GPU租赁数据公司Silicon Data显示，A100租赁价格2026年反弹后依然坚挺，未出现预期的“两年贬值”现象。&lt;/p&gt;
+&lt;p&gt;这意味着芯片寿命逻辑正在被改写。新架构持续迭代的同时，老芯片在推理和边缘计算场景找到第二春，租赁与二手市场让芯片生命周期大幅延长，硬件贬值速度远低于此前的悲观预期。&lt;/p&gt;
+&lt;p&gt;需要提及的是，亚马逊CEO安迪·贾西此前也表示，AI硬件使用寿命可达5至6年。然而A100的租赁行情却已给出相反的答案，芯片折旧预期正被真实市场改写。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/8151c111ba814906a395c71f06ca7f89.jpg" target="_blank"&gt;&lt;img alt="芯片2年过时论破产！6年前的NVIDIA A100还在赚钱" h="337" src="//img1.mydrivers.com/img/20260813/s_8151c111ba814906a395c71f06ca7f89.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 10:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5vNi1KNVB2cjRoaXAtR0pXcjJTb0JWQ3FkRTViM2JiTE4tdkRvNTdKLVdfUmw5UEdNdlluOGZiXzV4cWhHR21nanlIRXZTeXdIRWlweWVRdHA</guid></item><item><title>努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143528.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-13 17:50:29  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1219816.html" title="振亭的主页" class="newstiao4"&gt;振亭&lt;/a&gt;&lt;p&gt;  编辑：振亭 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143528-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，努比亚面向全球市场推出了一款巨屏手机，命名为努比亚Neo 5 Max。&lt;strong&gt;在工业设计上，该机采用了经典的拼接式风格，后盖由黄色与黑色双色组合而成，摄像头模组呈纵向排布，整体辨识度相当高。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;正面配备一块7.5英寸1.5K分辨率屏幕，努比亚将其定义为“PadPhone”，它更像是一台支持通话功能的小型平板。&lt;/strong&gt;&lt;/span&gt;屏幕比例为18.7:9，并获得了SGS硬件级护眼认证，在全场景下都能实现低蓝光显示，有效缓解用户长时间使用时的眼部疲劳。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/b6e0edd449974ef8bcd429183ad24638.jpg" target="_blank"&gt;&lt;img alt="努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一" h="527" src="//img1.mydrivers.com/img/20260813/s_b6e0edd449974ef8bcd429183ad24638.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作为一款巨屏手机，努比亚Neo 5 Max特别适合观影和游戏场景。为此努比亚为其配备了Neo Triggers 5.0触控肩键，支持990Hz触控采样率与4.7毫秒响应时间，能够快速执行瞄准、射击、移动和释放技能等操作。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/44213fe7652d4b91937c3cf2a0aa5638.png" target="_blank"&gt;&lt;img alt="努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一" h="602" src="//img1.mydrivers.com/img/20260813/s_44213fe7652d4b91937c3cf2a0aa5638.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;得益于7.5英寸的理想屏幕比例，触控区域比传统屏幕增大了27%，按键间距也扩大了21%，同时配合努比亚研发的Magic Touch 3.0技术，可有效避免湿手状态下的误触。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;音频方面，该机配备了对称式双扬声器，音量提升达300%，并支持杜比全景声音频技术，带来层次更丰富的音效体验，让用户在游戏、观影和听音乐时获得更强的沉浸感。&lt;/p&gt;
+&lt;p&gt;硬件配置上，努比亚Neo Max搭载联发科天玑7100芯片，配备LPDDR5X内存与UFS 2.2闪存，内置7100毫安时电池，支持旁路供电功能，背部还加入了RGB鹰眼灯效，进一步强化了游戏氛围。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/27d8b645424449d1bd1fd599887a1ea3.png" target="_blank"&gt;&lt;img alt="努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一" h="373" src="//img1.mydrivers.com/img/20260813/s_27d8b645424449d1bd1fd599887a1ea3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/d3a687bc5344443396e7b3f6a5296d65.png" target="_blank"&gt;&lt;img alt="努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一" h="551" src="//img1.mydrivers.com/img/20260813/s_d3a687bc5344443396e7b3f6a5296d65.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/7b7c16f1a504445d9a9a025c251dbca8.png" target="_blank"&gt;&lt;img alt="努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一" h="800" src="//img1.mydrivers.com/img/20260813/s_7b7c16f1a504445d9a9a025c251dbca8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/7b265ae3e9f648869410c5f9d4be7cc6.png" target="_blank"&gt;&lt;img alt="努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一" h="403" src="//img1.mydrivers.com/img/20260813/s_7b265ae3e9f648869410c5f9d4be7cc6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/d909aa085cae491a8d24270e6a8c029e.png" target="_blank"&gt;&lt;img alt="努比亚Neo 5 Max发布：7.5英寸巨屏+7100mAh电池 手机平板二合一" h="485" src="//img1.mydrivers.com/img/20260813/s_d909aa085cae491a8d24270e6a8c029e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 09:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1qNTF1VmtVdm5NeUZ5RGI4RWFzeWxMQ3h3NlA3Rk8zd001c3FnTHh3WWJaUHRLTkl4Y2VZSFlKZUVfRlBub3NTcUJ0SkZiQUJ2Qkh1ejJKUms</guid></item><item><title>上市17天股价翻6倍！长鑫科技超越腾讯 成为中国市值最高公司 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143521.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，今日A股收盘，&lt;span&gt;&lt;strong&gt;长鑫科技（688825.SH）报52.88元/股，微跌1.20%，总市值达3.54万亿元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/e32fb75ecdb145f38e96d70d9517f9e9.png" target="_blank"&gt;&lt;img alt="上市17天股价翻6倍！长鑫科技超越腾讯 成为中国市场最高公司" h="498" src="//img1.mydrivers.com/img/20260813/s_e32fb75ecdb145f38e96d70d9517f9e9.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，腾讯控股尾盘跌幅一度近5%，市值跌破4万亿港元，按当前汇率约合3.45万亿元人民币。由此，&lt;strong&gt;长鑫科技正式超越腾讯，成为中国市值最高上市公司。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从7月27日登陆科创板至今，长鑫科技上市仅17天，&lt;strong&gt;以8.66元/股的发行价计算，当前股价已涨至52.88元，翻了逾6倍。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;上市首日，长鑫科技便上演史诗级行情，开盘报49.5元/股，涨幅471.59%，市值突破3.31万亿元；盘中股价一度突破55元，总市值逼近3.7万亿元。&lt;/p&gt;
+&lt;p&gt;当日午间收盘前，长鑫科技市值曾短暂超过腾讯，但收盘时报49元/股，总市值3.28万亿元，落后于当时约3.47万亿元人民币的腾讯。&lt;/p&gt;
+&lt;p&gt;17天后，长鑫科技再次完成反超，今日盘中该股最高触及55.92元，全天成交额253.86亿元。&lt;/p&gt;
+&lt;p&gt;据悉，长鑫科技前身为长鑫存储，成立于2016年，总部位于安徽合肥，是国内唯一专注于DRAM动态随机存取存储芯片自主研发、设计和量产的企业，产品广泛应用于智能手机、PC等场景。本次科创板IPO募资579.19亿元，创下科创板史上最大募资纪录。&lt;/p&gt;
+&lt;p&gt;业绩方面，根据Counterpoint Research最新发布的《2026年第二季度全球内存追踪报告》，&lt;strong&gt;长鑫科技本季度营收同比暴增716%，以7%的市场份额在全球DRAM市场跃居第四位，成为当季增长最快的DRAM供应商。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="上市17天股价翻6倍！长鑫科技超越腾讯 成为中国市场最高公司" h="342" src="//img1.mydrivers.com/img/20260813/2278acf6-da52-4aa5-af45-0edd99d7eada.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p class="notranslate" id="kiss-translator-box"&gt; &lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：若风&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 09:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5VUzRKM3JMTEpBSDNvMVI3cHpPRi10QjQxWkd4cnFVb2RFNVZNemFHaldtc1RzU0tvVGV2RWZlZ0RuTUp3YUJEeUc2NzFQbkVyU1VWUW5VYUY</guid></item><item><title>中芯国际：第二季的销售收入为30.06亿美元，上年同期为22.09亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779371</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 08:54:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBjeGgwVm5CY1V2cjh4RnlzWlc1UGVHQlpQbFBIbkZmV0pzbDJxS0pYYWs3QUgxMHFWVXVnOEZHNzIzdWVmYXNiR2V2Q3JqbFRBUERF</guid></item><item><title>开900块电竞房盗走8万元显卡CPU！酒店悬赏5000元征集线索 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143518.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月13日消息，&lt;span&gt;&lt;strong&gt;湖北黄冈浠水县一电竞酒店近日发生严重硬件盗窃案，酒店经理王先生称，店内3个房间共6台电脑的显卡与CPU被盗，总价值约8万元，目前酒店已悬赏5000元征集线索。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;监控记录显示，嫌疑人于8月10日入住，作案过程极其谨慎，&lt;strong&gt;该男子全程佩戴假发与口罩，并支付了900余元现金作为房费和押金。&lt;/strong&gt;&lt;/p&gt;
@@ -39,7 +474,72 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 08:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBEaVhmWGtzVE44bkVjSEZEQy1SeHBfaEVCU2M5SXMwRlRuZjFRb0VIWnJBR3J6QUxPbzZ4SnUxc1AyRU5ybTRJVHQtSFBxM1VLcDROMklsQTU</guid></item><item><title>杨元庆官宣：今年秋季联想首发英伟达RTX Spark AI PC！ - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143486.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 08:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBEaVhmWGtzVE44bkVjSEZEQy1SeHBfaEVCU2M5SXMwRlRuZjFRb0VIWnJBR3J6QUxPbzZ4SnUxc1AyRU5ybTRJVHQtSFBxM1VLcDROMklsQTU</guid></item><item><title>DeepSeek V4 Pro正式版突遭撤回：不到24小时口碑大逆转 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143495.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;DeepSeek V4 Pro正式版突遭撤回：不到24小时口碑大逆转&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-13 16:26:11  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143495-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，昨天夜里DeepSeek V4 Pro正式版低调发布，官方发布的分数已经直追Fable 5这种顶级大模型，然而现在一切又回到了原点。&lt;/p&gt;
+&lt;p&gt;现在打开官网，&lt;span&gt;&lt;strong&gt;DeepSeek V4 Pro正式版发布的横幅消息已经被撤回了，&lt;/strong&gt;&lt;/span&gt;开放平台的公告也删除了，不过模型及价格页面的DeepSeek-V4-Pro-0813称呼还在。&lt;/p&gt;
+&lt;p&gt;这距离昨晚11点半DeepSeek-V4-Pro-0813低调发布还不到24小时，戏剧性地经历了全网欢呼——官测性能逆天——实测水平拉跨——突遭撤回的过程，让人不知道说啥好。&lt;/p&gt;
+&lt;p&gt;相比之前的V4-Flash-0731带来的惊艳及极致性价比，DeepSeek-V4-Pro-0813这次问题在于提升没有达到大家的预期，&lt;strong&gt;整体表现没比Flash好多少，对标Fable 5是不太可能了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这里面到底出现了什么问题不得而知，&lt;strong&gt;有一种猜测是官方发布时部署出现了问题，&lt;/strong&gt;现在的DeepSeek-V4-Pro-0813实际上还是Flash模型，性能提升不大。&lt;/p&gt;
+&lt;p&gt;但大家最担心的问题在于DeepSeek-V4-Pro-0813可能真的就是这样的性能，如果最终表现也是这样，那对DeepSeek的冲击就不小了，别的不说，光是融资估值就会打折扣。&lt;/p&gt;
+&lt;p&gt;现在官方撤回了DeepSeek-V4-Pro-0813的发布，估计还要继续调整，估计配套的DeepSeek Harness软件今天也不太可能发布了，继续等吧。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/11e736e7-4cbc-4e8e-ad87-bb60e42d3acf.png" target="_blank"&gt;&lt;img alt="DeepSeek V4 Pro正式版突遭撤回：不到24小时口碑大逆转" h="354" src="//img1.mydrivers.com/img/20260813/S11e736e7-4cbc-4e8e-ad87-bb60e42d3acf.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/5972a1e9-12ad-4b38-8906-caff0a1b984e.png" target="_blank"&gt;&lt;img alt="DeepSeek V4 Pro正式版突遭撤回：不到24小时口碑大逆转" h="371" src="//img1.mydrivers.com/img/20260813/S5972a1e9-12ad-4b38-8906-caff0a1b984e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DeepSeek V4 Pro正式版突遭撤回：不到24小时口碑大逆转" h="450" src="//img1.mydrivers.com/img/20260813/20620717-596f-4056-b8f5-02b441e90f01.png" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 08:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9wZEpzVXVQLW95NDRpZzhsMDVlVzRqSkh4M0cwektnbEFRcnhXR2JpUDlQZU1TRUt1d0hkaVZONlhmaFdYdWxCRVlKSHV3Y1hKOWRzYjROR3U</guid></item><item><title>杨元庆官宣：今年秋季联想首发英伟达RTX Spark AI PC！ - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143486.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;杨元庆官宣：今年秋季联想首发英伟达RTX Spark AI PC！&lt;/p&gt;
           
@@ -101,7 +601,7 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 08:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ZTXJ4RFZIbThVTzFrRjhxRm8wTjFocmRWbk9kcEU0WVN1Rkx0cndwRGVZVU9pYUhHSGdUcGJUNzcweG9OdG5ELU1HNF9wLU1wbURjVDZPV3g</guid></item><item><title>代理AI时代，CPU要和GPU“1:1”？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779358</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 07:57:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1ySTNoVEJJZlNmdWd1NV93OWZhQjNibG9Cd0dPYTZuWEhoX2dMSWxMZ3lDa1BvRWxHYXBicjdfc3pjZmhqTkg4ZUFjVEZtQVZUMWlR</guid></item><item><title>韩国股市10天涨22%进入技术性牛市，AI芯片行情强势回归？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779364</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 07:43:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE85bDVqTE5ZcktXUFJUYW9fTlczU0FnekREX1o2Yk5fTFdLcHpXLXRuQVNPSlVyaFR0M2xrTXY1RUFueWZMVzBGMmUzSmFoUy1BVUNn</guid></item><item><title>打工人的办公三件套，被 WorkBuddy 用 AI 重做了 - 爱范儿</title><link>https://www.ifanr.com/1674810</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 08:05:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ZTXJ4RFZIbThVTzFrRjhxRm8wTjFocmRWbk9kcEU0WVN1Rkx0cndwRGVZVU9pYUhHSGdUcGJUNzcweG9OdG5ELU1HNF9wLU1wbURjVDZPV3g</guid></item><item><title>代理AI时代，CPU要和GPU“1:1”？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779358</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 07:57:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1ySTNoVEJJZlNmdWd1NV93OWZhQjNibG9Cd0dPYTZuWEhoX2dMSWxMZ3lDa1BvRWxHYXBicjdfc3pjZmhqTkg4ZUFjVEZtQVZUMWlR</guid></item><item><title>规避抄袭率检测让AI改稿，化学论文竟推荐“屠杀一整个民族”？ - 凤凰网</title><link>https://news.ifeng.com/c/8vYegkOgEUC</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;曾登上《时代周刊》的英国知名分子生物学家肖尔特·大卫近日在社交平台上公布了一则学术界的“乌龙事件”，引发了广泛关注。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/6065E9403FCC18F8A6034B5D4975EDA65748FF1D_size487_w1454_h785.png" alt="▲论文截图"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;▲论文截图&lt;/p&gt;&lt;p&gt;肖尔特贴出了一篇今年3月《材料化学与物理学》期刊收录的一篇论文，题目为《探索基于锌的纳米凝胶在伤口愈合中的疗效：一项体内研究》，目前该论文已被正式撤回。&lt;/p&gt;&lt;p&gt;撤回的起因是在闲聊性质的学术交流论坛Pubpeer上，一位名叫“休伯特·沃伊塔塞克”的网友指出了该论文多处严重错误。根据截图，文中最离谱的一处错误是，推荐用“针对整个种族的大屠杀”来取代“抹在皮肤处的样品”。&lt;/p&gt;&lt;p&gt;这篇论文此前通过了一系列审核流程最终得以发表，有人怒批顶级学术期刊的“同行审议”流程形同虚设，有人担忧AI的影响无处不在，将削弱科研人员的研究能力。&lt;/p&gt;&lt;p&gt;有网友认为，文章可能是在从其他语言翻译成英文的过程中出错走样，但肖尔特表示，这是经典的AI谬误。&lt;/p&gt;&lt;p&gt;很多学者为了规避抄袭率检测，会让AI大模型改写文章，而AI模型可能缺乏某个特定领域的术语知识，而会想当然地犯下错误。比如这里的原文应该是“final solution”，在化学领域指“反应终液/最终溶液”。而AI想当然地从历史学科学习到了纳粹德国曾经提出的“最终解决方案”一词，并把它替换成“种族大屠杀”的表述。&lt;/p&gt;&lt;p&gt;为了印证自己的说法，肖尔特还指出了这篇论文中其他几个明显由AI改稿犯下的错误。比如“buffer solution”（缓冲溶液）一词被AI将 “buffer”（缓冲）替换成了同义词 “safeguard”（防卫）；将 “solution”（溶液）误解为“答案”，替换成了 “answer”一词。&lt;/p&gt;&lt;p&gt;此外“Reaction volume”一词在化学领域指“反应体积”，AI将“reaction”替换成了 “response”，将 “volume”误解为“卷/册”的含义，替换成了“book”一词。&lt;/p&gt;&lt;p&gt;在肖尔特发表了分析之后，有网友提出了问题：“同行审议都是怎么过的？”&lt;/p&gt;&lt;p&gt;红星新闻记者 郑直&lt;/p&gt;&lt;p&gt;编辑 邓旆光 审核 高升祥&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Thu, 13 Aug 2026 07:52:53 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE5FcXRyZVBvZ1VZQkY0ODJIVF9WelJFTUR4VUJZeFJ6eVgxWGQzd1FlOE9paU5Bel95bnlhRGlGLW5lWDBIZmZUdUFvSWs</guid></item><item><title>韩国股市10天涨22%进入技术性牛市，AI芯片行情强势回归？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779364</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 07:43:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE85bDVqTE5ZcktXUFJUYW9fTlczU0FnekREX1o2Yk5fTFdLcHpXLXRuQVNPSlVyaFR0M2xrTXY1RUFueWZMVzBGMmUzSmFoUy1BVUNn</guid></item><item><title>打工人的办公三件套，被 WorkBuddy 用 AI 重做了 - 爱范儿</title><link>https://www.ifanr.com/1674810</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
   
 &lt;p&gt;最近我的朋友圈里，Markdown、HTML 这些词的存在感明显高了起来。&lt;/p&gt;
 &lt;p&gt;三个月前，Claude Code 工程师 Thariq 曾发文分享，他认为 HTML 是比 Markdown 文本更适合 AI 输出的格式，这个观点引发了热议，也让 HTML 重新进入 AI 产品视野。&lt;/p&gt;
@@ -265,7 +765,82 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 07:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE84bG1qWS13dDdwUGlLcVRaMTFNMFdOMjV0dWx1N1Qtc1BWRGI4SUlZU0d6U0kwV24yNGJfbjRiMkM2N011OEJKNmNWMXN4eVBwQS1VVUwtYjA</guid></item><item><title>“大空头”再炮轰：英伟达AI扩张有“安然的影子”、危害“高出几个数量级” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779359</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 07:18:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFAzWkR3SFZjYlFrekw0cFVvMWpoOWxrZ05PcW9fTTVvV3BfTk9fdHJrNU9nejZZODZZbkxvSGZTa1R2dm1vLXlMZnJDU0lQUTQ2OUI4</guid></item><item><title>一支美国装甲旅，被乌克兰无人机“全歼” - qq.com</title><link>https://view.inews.qq.com/a/20260813A0961I00</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="comps-contentify-wrap comps-contentify-pc-wrap comps-contentify-arbitrary-wrap"&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;据《华尔街日报》8月12日报道，今年早些时候在德国的一场军事演习中，美国陆军部队与乌克兰无人机操作员正面交锋，结果美军惨败。&lt;/p&gt;&lt;p&gt;多名知情人士透露，在这场代号“&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;联合决心&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;”的军演期间，来自得克萨斯州胡德堡基地轮训的美军部队及装甲车辆，被乌军无人机部队轻而易举的锁定，并被判定“遭歼灭”。&lt;/p&gt;&lt;p&gt;这次演习连同美军在伊朗的伤亡，暴露了美国在无人机方面的脆弱性——尽管美国将无人机系统作为战争的重要组成部分已多年。美国在战争中率先使用远程无人机，五角大楼近年来也花费数十亿美元采购新无人机和反无人机技术，并组建了专门部队来操作。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/Of9WJyPM_ygDdrI5QYrfb7pZD8UpsJSPiifNHTOmSqSocAA/641" data-src="https://inews.gtimg.com/news_bt/Of9WJyPM_ygDdrI5QYrfb7pZD8UpsJSPiifNHTOmSqSocAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p&gt;然而，今年在中东，美国一直难以防御伊朗的远程无人机，这些无人机已造成美军人员伤亡和飞机损毁。在德国的惨败，传递了乌克兰在短程战场无人机方面的经验教训。这场于4月和5月举行的演习，检验了轮换部队在应对前线小型无人机方面的作战和防御能力，而这种无人机已在俄乌冲突中占据主导地位。&lt;/p&gt;&lt;p&gt;“联合决心”这类演习正是为了让部队体验逼真的作战环境。近年来，驻欧美军常态化邀请乌军参与演习，在模拟战场上向美军及盟国军队传授血火中打磨出的无人机实战技巧。演习中的失败被视为学习机会。英国和瑞典的演习也出现了乌克兰轻易获胜的情况。&lt;/p&gt;&lt;p&gt;国际战略研究中心智库学者埃利奥特·科恩表示，近期战场经验表明，各类无人机是现代战争不可或缺的装备，“美军必须吃透无人机作战体系，但遗憾的是，目前来看美军远远没有做到。”&lt;/p&gt;&lt;p&gt;约3500名美军人员（主要来自第1骑兵师第3装甲旅战斗队）参加了演习。他们的任务是攻击由训练场“假想敌”部队防守的阵地，而该部队得到了乌克兰第&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;412无人系统团&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;（“复仇女神”团）的增援。轮换部队配备了标准的电子战和反无人机系统。装备最新装备和战术的新型旅级战斗队，在同类演习中的表现要好很多。&lt;/p&gt;&lt;p&gt;多名看过演习简报的美方官员及一名现场参与者证实，乌军无人机分队在演习中全歼美军装甲旅。美军投入作战的重型装甲车辆行驶时扬起大量尘土，极易被乌军侦察无人机发现；随后投弹无人机、第一视角&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;自杀式巡飞弹&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;接踵而至，直接精准撞击模拟目标。&lt;/p&gt;&lt;p&gt;此类演习极少使用实弹，判定击毁规则为：无人机悬停于载具上空或抵近到规定距离，裁判即可判定该装备被摧毁。&lt;/p&gt;&lt;p&gt;一名熟悉演习的美方官员透露，乌军无人机击毁美军装甲单位的速度极快，为保证演习流程持续推进，裁判只能将乌军无人机部队反复投入战场。在为期两周的对抗中，美军重演了训练场景。轮换部队的表现有所提高，在分散、隐蔽和电子战方面更加熟练。乌克兰方面也在演习中途切换阵营，协助美军练习无人机进攻战术，美方后续运用效果明显改善。&lt;/p&gt;&lt;p&gt;经过近四年半的对俄作战，乌克兰部队已成为无人机战专家，操作员和支持部队擅长持续维修和改装无人机。俄军也获得了宝贵经验。参加演习的人士表示，美国无人机操作员缺乏在火力下修理和武装无人机的经验。在乌克兰，大量坦克和其他装甲车辆在战斗中被摧毁，广阔的前线几乎看不到装甲车辆。&lt;/p&gt;&lt;p&gt;部分美军军官提出不同观点：无人机之所以在这场冲突杀伤力拉满，根源是战线陷入僵持、大规模机动作战消失；一旦重回机动战模式，坦克等装甲装备将重新发挥核心作用。&lt;/p&gt;&lt;p&gt;但乌克兰前武装部队总司令扎卢日内等乌军方高层认为，现阶段无人机技术已经让传统机动战术失去可行性，这也是乌东战线长期静态对峙的核心原因。俄乌双方如今都在寻求战术与技术突破，试图打破战场胶着、重新恢复战线机动攻防。&lt;/p&gt;&lt;p&gt;演习表明，美军在装甲部队机动时可能难以保护它们。这并非美军首次领教乌克兰的无人机作战能力。2023年，一名协助训练乌克兰部队的美军步兵军官意识到美军需要向他们学习无人机战，并设计了一个训练项目，后来其他部队也采用了。&lt;/p&gt;&lt;p&gt;即便美乌关系时常出现摩擦，特朗普政府一直在与乌克兰接触。美国当下正测试多款乌克兰产无人机并计划采购；同时将俄乌战场验证成熟的反无人机系统部署中东，用于保护当地美军。美防长赫格塞思5月曾向国会议员表示，已增派人员赴乌克兰专门学习无人机作战经验。&lt;/p&gt;&lt;p&gt;美军并非首个被乌克兰无人机打败的部队，去年5月波罗的海多国演习中，乌军无人机分队轻松击败英国、爱沙尼亚等&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;北约&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;参演部队，其中也包含美军分队。今年春天，瑞典领导的一场北约演习中，乌军无人机分队的作战表现全面碾压所有北约盟国部队。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OWP1qVqS2H2lwroi5FBJ4McQURDzFHcZCGIEs4w667tdwAA/641" data-src="https://inews.gtimg.com/news_bt/OWP1qVqS2H2lwroi5FBJ4McQURDzFHcZCGIEs4w667tdwAA/641" alt="图片"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>qq.com</author><pubDate>Thu, 13 Aug 2026 07:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiV0FVX3lxTFBCRnVKWkZuYlo1UUFyUW85Qlhsd19WVUpBZHFkV3RhVllnQTY5NWNTaVVoVVlQd0hFWTVQNE5QaUo4SDd2cUdoYm5EVHBBRE12M2J5Q0Nqbw</guid></item><item><title>小米澎湃OS 4官网正式上线！一气呵成 流畅到底 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143467.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 07:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE84bG1qWS13dDdwUGlLcVRaMTFNMFdOMjV0dWx1N1Qtc1BWRGI4SUlZU0d6U0kwV24yNGJfbjRiMkM2N011OEJKNmNWMXN4eVBwQS1VVUwtYjA</guid></item><item><title>美国海军推出首艘“无人机航母”，美媒：太迟 - 文学城</title><link>https://www.wenxuecity.com/news/2026/08/13/126740418.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="small-font"&gt;
+            &lt;p&gt;&lt;/p&gt;
+&lt;p&gt;
+据美国《海军时报》11日报道，“罗斯福”号航母现在已成为美国海军首艘配备无人航空作战中心的主力舰艇，从而可以支持波音公司MQ-25A无人加油机在航母上的运作，后者是美国海军第一款投入实际使用的舰载无人机。然而美国媒体也不得不承认，美国航母搭载舰载无人机的时间表大幅落后于原计划，MQ-25A无人加油机还需要再等几年才能最终形成战斗力。作为对比，其他多国都推出了配备舰载无人机的航母。
+&lt;/p&gt;&lt;img border="0" src="/data/news/202608/13/dc173d10563919dd3f12998de8b3a5e9.webp" alt="美国海军推出首艘“无人机航母”，美媒：太迟"&gt;&lt;p&gt;
+报道称，五角大楼最近发布的《现代化选装采购报告》显示，“罗斯福”号航母上的无人航空作战中心使其“成为首艘具备MQ-25A无人机全面作战/可部署能力的美国航母”，“里根”号航母上搭载的同类无人航空作战中心预计将于今年8月底达到全面作战/可部署状态。美国海军称，该中心集成了舰载无人航空任务控制系统和MD-5E地面控制站，它们是MQ-25A舰载无人机指挥与控制所需的核心系统，对该无人加油机的运行至关重要。今年5月，代理海军部长高雄在参议院军事委员会听证会上宣布，MQ-25A无人机已进入低速初始生产和部署阶段。该机的设计目的是使美国F/A-18E/F“超级大黄蜂”战斗机摆脱伙伴空中加油任务，专注于打击使命，从而显著提升美国航母打击群的作战范围和效率。&lt;/p&gt;&lt;p&gt;
+《海军时报》称，尽管美国海军早就提出了在航母上搭载无人机的设想，但实际进度却明显滞后。2006年，美国海军就开始规划在航母上部署固定翼无人机。2010年美国海军正式启动“舰载无人空中监视与打击系统”（UCLASS）项目，设想研制一款能深入内陆、扩展航母打击群作战范围的新一代舰载隐形无人机。但由于技术和预算限制，后来该项目在2016年被调整为“舰载空中加油系统”（CBARS）。2018年，美国海军与波音公司在该项目框架下，签署了4架MQ-25A无人机采购合同，包括该无人机的设计、开发、制造、测试和交付，预计在2024年达到初始作战能力。美国海军估计整个项目需要采购72架无人机，总成本约130亿美元。&lt;/p&gt;&lt;p&gt;
+然而实际情况是，MQ-25A无人机直到今年5月才从工程与制造开发阶段转入生产和部署阶段，预计获得初始作战能力的时间已经推迟至2030财年。与此同时，搭载MQ-25A无人机的美国航母的改装进度也不尽如人意。早在2024年8月，美国海军就在“布什”号航母上安装并测试了第一个无人机指挥作战中心，但相关设施直到最近才在“罗斯福”号得以最终具备作战能力。&lt;/p&gt;&lt;p&gt;
+美国“突发防务”网站称，就在美国海军的无人机上舰计划大幅推迟之际，全球其他国家都在快速追赶。公开报道显示，土耳其2023年服役的“阿纳多卢”号是全球首艘以无人机为主要舰载机的航母，并在2024年完成土耳其国产无人机在该航母的首次起降；英国“威尔士亲王”号航母在数年前就完成“莫哈韦”无人机的起降测试；中国航母福建舰和076型两栖攻击舰在设计上都具备搭载固定翼无人机的能力，多型隐形无人机已在2025年九三大阅兵中公开亮相。
+
+        &lt;/p&gt;&lt;/div&gt;
+            &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>文学城</author><pubDate>Thu, 13 Aug 2026 07:20:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiaEFVX3lxTE1rR0tTaUFwOVlTTTlQci1aWmVTUmZFbnY3R2dUX1d6cEYyVnRuVE8zNXVVVHFSY3hJVlIxRk9xbmRhOFppdllnOWk5OTM2c1paSHM4YkJNQ0RYNEY1TFNHWTV2YS03bDIz</guid></item><item><title>“大空头”再炮轰：英伟达AI扩张有“安然的影子”、危害“高出几个数量级” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779359</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 07:18:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFAzWkR3SFZjYlFrekw0cFVvMWpoOWxrZ05PcW9fTTVvV3BfTk9fdHJrNU9nejZZODZZbkxvSGZTa1R2dm1vLXlMZnJDU0lQUTQ2OUI4</guid></item><item><title>100个按键随便定义！渴创推出巨型宏键盘：8K轮询率只要440元 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143472.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;100个按键随便定义！渴创推出巨型宏键盘：8K轮询率只要440元&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-13 15:17:01  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1791896.html" title="红茶的主页" class="newstiao4"&gt;红茶&lt;/a&gt;&lt;p&gt;  编辑：红茶 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143472-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，渴创近日在其官网上线了一款颇为独特的键盘产品：&lt;span&gt;&lt;strong&gt;C100 8K巨型自定义宏键盘。它不卖手感、不卖灯光，而是卖一个稀有属性：100个按键，全部由你定义。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;该键盘采用10行x10列的正交棋盘式布局，出厂时所有按键均未预设功能，&lt;strong&gt;用户可通过Keychron Launcher网页应用进行按键重映射、创建宏指令以及自定义RGB灯效。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/30b616d1-4c7a-44d6-a1b0-21ccfcd85692.jpg" target="_blank"&gt;&lt;img alt="100个按键随便定义！渴创推出巨型宏键盘：8K轮询率只要440元" h="337" src="//img1.mydrivers.com/img/20260813/S30b616d1-4c7a-44d6-a1b0-21ccfcd85692.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该键盘同时兼容Linux、macOS和Windows三大操作系统，支持有线USB Type-C连接，未提供无线选项。&lt;/p&gt;
+&lt;p&gt;C100 8K搭载Keychron Apex红轴线性轴体，配备透明ASA高度键帽，由PBT和PC混合材质制成。PCB支持标准热插拔轴座，用户可根据手感偏好自行更换其他轴体。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/31b798cc-b30b-4ceb-b81c-c0f0cd76c872.png" target="_blank"&gt;&lt;img alt="100个按键随便定义！渴创推出巨型宏键盘：8K轮询率只要440元" h="337" src="//img1.mydrivers.com/img/20260813/S31b798cc-b30b-4ceb-b81c-c0f0cd76c872.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;该键盘集成北向单键RGB背光，支持8KHz轮询率，&lt;/strong&gt;可提供极低的输入延迟。适用于游戏快捷操作、内容创作、直播控制、CAD制图、编程开发以及各类生产力工作流。&lt;/p&gt;
+&lt;p&gt;目前，C100 8K已正式开售，&lt;strong&gt;官网标价64.99美元（约合人民币440元）。&lt;/strong&gt;该款键盘大概率也会在国内平台上架，但具体时间、售价和渠道尚待官方公布。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260813/a746cdf7-be58-48b9-b9a5-579b4f012832.jpg" target="_blank"&gt;&lt;img alt="100个按键随便定义！渴创推出巨型宏键盘：8K轮询率只要440元" h="337" src="//img1.mydrivers.com/img/20260813/Sa746cdf7-be58-48b9-b9a5-579b4f012832.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 07:17:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBOQ0UyQTB0aE9kLXpCR1NiSnE3OTZjTmpudkFmYUhQT25oOFBJYzNaZDMxbkowbXhaODIwMjRKaUtrNG1oMUJiN3o2bDB6Q2Q1NkpzTUtNLWQ</guid></item><item><title>一支美国装甲旅，被乌克兰无人机“全歼” - qq.com</title><link>https://view.inews.qq.com/a/20260813A0961I00</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="comps-contentify-wrap comps-contentify-pc-wrap comps-contentify-arbitrary-wrap"&gt;&lt;div class="rich_media_content"&gt;&lt;p&gt;据《华尔街日报》8月12日报道，今年早些时候在德国的一场军事演习中，美国陆军部队与乌克兰无人机操作员正面交锋，结果美军惨败。&lt;/p&gt;&lt;p&gt;多名知情人士透露，在这场代号“&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;联合决心&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;”的军演期间，来自得克萨斯州胡德堡基地轮训的美军部队及装甲车辆，被乌军无人机部队轻而易举的锁定，并被判定“遭歼灭”。&lt;/p&gt;&lt;p&gt;这次演习连同美军在伊朗的伤亡，暴露了美国在无人机方面的脆弱性——尽管美国将无人机系统作为战争的重要组成部分已多年。美国在战争中率先使用远程无人机，五角大楼近年来也花费数十亿美元采购新无人机和反无人机技术，并组建了专门部队来操作。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/Of9WJyPM_ygDdrI5QYrfb7pZD8UpsJSPiifNHTOmSqSocAA/641" data-src="https://inews.gtimg.com/news_bt/Of9WJyPM_ygDdrI5QYrfb7pZD8UpsJSPiifNHTOmSqSocAA/641" alt="图片"&gt;&lt;/p&gt;&lt;p&gt;然而，今年在中东，美国一直难以防御伊朗的远程无人机，这些无人机已造成美军人员伤亡和飞机损毁。在德国的惨败，传递了乌克兰在短程战场无人机方面的经验教训。这场于4月和5月举行的演习，检验了轮换部队在应对前线小型无人机方面的作战和防御能力，而这种无人机已在俄乌冲突中占据主导地位。&lt;/p&gt;&lt;p&gt;“联合决心”这类演习正是为了让部队体验逼真的作战环境。近年来，驻欧美军常态化邀请乌军参与演习，在模拟战场上向美军及盟国军队传授血火中打磨出的无人机实战技巧。演习中的失败被视为学习机会。英国和瑞典的演习也出现了乌克兰轻易获胜的情况。&lt;/p&gt;&lt;p&gt;国际战略研究中心智库学者埃利奥特·科恩表示，近期战场经验表明，各类无人机是现代战争不可或缺的装备，“美军必须吃透无人机作战体系，但遗憾的是，目前来看美军远远没有做到。”&lt;/p&gt;&lt;p&gt;约3500名美军人员（主要来自第1骑兵师第3装甲旅战斗队）参加了演习。他们的任务是攻击由训练场“假想敌”部队防守的阵地，而该部队得到了乌克兰第&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;412无人系统团&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;（“复仇女神”团）的增援。轮换部队配备了标准的电子战和反无人机系统。装备最新装备和战术的新型旅级战斗队，在同类演习中的表现要好很多。&lt;/p&gt;&lt;p&gt;多名看过演习简报的美方官员及一名现场参与者证实，乌军无人机分队在演习中全歼美军装甲旅。美军投入作战的重型装甲车辆行驶时扬起大量尘土，极易被乌军侦察无人机发现；随后投弹无人机、第一视角&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;自杀式巡飞弹&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;接踵而至，直接精准撞击模拟目标。&lt;/p&gt;&lt;p&gt;此类演习极少使用实弹，判定击毁规则为：无人机悬停于载具上空或抵近到规定距离，裁判即可判定该装备被摧毁。&lt;/p&gt;&lt;p&gt;一名熟悉演习的美方官员透露，乌军无人机击毁美军装甲单位的速度极快，为保证演习流程持续推进，裁判只能将乌军无人机部队反复投入战场。在为期两周的对抗中，美军重演了训练场景。轮换部队的表现有所提高，在分散、隐蔽和电子战方面更加熟练。乌克兰方面也在演习中途切换阵营，协助美军练习无人机进攻战术，美方后续运用效果明显改善。&lt;/p&gt;&lt;p&gt;经过近四年半的对俄作战，乌克兰部队已成为无人机战专家，操作员和支持部队擅长持续维修和改装无人机。俄军也获得了宝贵经验。参加演习的人士表示，美国无人机操作员缺乏在火力下修理和武装无人机的经验。在乌克兰，大量坦克和其他装甲车辆在战斗中被摧毁，广阔的前线几乎看不到装甲车辆。&lt;/p&gt;&lt;p&gt;部分美军军官提出不同观点：无人机之所以在这场冲突杀伤力拉满，根源是战线陷入僵持、大规模机动作战消失；一旦重回机动战模式，坦克等装甲装备将重新发挥核心作用。&lt;/p&gt;&lt;p&gt;但乌克兰前武装部队总司令扎卢日内等乌军方高层认为，现阶段无人机技术已经让传统机动战术失去可行性，这也是乌东战线长期静态对峙的核心原因。俄乌双方如今都在寻求战术与技术突破，试图打破战场胶着、重新恢复战线机动攻防。&lt;/p&gt;&lt;p&gt;演习表明，美军在装甲部队机动时可能难以保护它们。这并非美军首次领教乌克兰的无人机作战能力。2023年，一名协助训练乌克兰部队的美军步兵军官意识到美军需要向他们学习无人机战，并设计了一个训练项目，后来其他部队也采用了。&lt;/p&gt;&lt;p&gt;即便美乌关系时常出现摩擦，特朗普政府一直在与乌克兰接触。美国当下正测试多款乌克兰产无人机并计划采购；同时将俄乌战场验证成熟的反无人机系统部署中东，用于保护当地美军。美防长赫格塞思5月曾向国会议员表示，已增派人员赴乌克兰专门学习无人机作战经验。&lt;/p&gt;&lt;p&gt;美军并非首个被乌克兰无人机打败的部队，去年5月波罗的海多国演习中，乌军无人机分队轻松击败英国、爱沙尼亚等&lt;span dt-eid="" dt-params=""&gt;&lt;span class="qnt-link"&gt;&lt;span class="qnt-link-text"&gt;北约&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;参演部队，其中也包含美军分队。今年春天，瑞典领导的一场北约演习中，乌军无人机分队的作战表现全面碾压所有北约盟国部队。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img class="qnt-img-img qnr-img-lazy-load-img qnr-img-lazy-load-img-placeholder" src="https://inews.gtimg.com/news_bt/OWP1qVqS2H2lwroi5FBJ4McQURDzFHcZCGIEs4w667tdwAA/641" data-src="https://inews.gtimg.com/news_bt/OWP1qVqS2H2lwroi5FBJ4McQURDzFHcZCGIEs4w667tdwAA/641" alt="图片"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>qq.com</author><pubDate>Thu, 13 Aug 2026 07:14:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiV0FVX3lxTFBCRnVKWkZuYlo1UUFyUW85Qlhsd19WVUpBZHFkV3RhVllnQTY5NWNTaVVoVVlQd0hFWTVQNE5QaUo4SDd2cUdoYm5EVHBBRE12M2J5Q0Nqbw</guid></item><item><title>小米澎湃OS 4官网正式上线！一气呵成 流畅到底 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143467.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技8月13日消息，&lt;a class="f14_link" href="https://hyperos.mi.com/" target="_blank"&gt;小米澎湃OS 4官网&lt;/a&gt;目前已经正式上线，并且介绍了一些全新特性，最主要的亮点有三个方面：柔光玻璃、流畅到底、超级小爱2.0。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UI方面，澎湃OS 4以生命感美学为核心设计语言，首发柔光玻璃交互材质，&lt;/strong&gt;可感知屏幕内容自动调节面板通透度，点按、拖拽操作伴随跟随式流动光效，层次感大幅提升。&lt;/p&gt;
@@ -333,7 +908,71 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 06:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBaUnByVDBDN2w3YXJDQ0VvR3lSNDF2RlYxYV9Wa3J2NkZHck1xYndxTmRxVHVXS2VMekNJLVJBWW5BektINXZIZTE1cE5FWmV3ajNpTEVELXQ</guid></item><item><title>英特尔DG2显卡迎重磅更新！AV1硬件编码补齐：锐炫A不再瘸腿 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143457.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 06:55:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBaUnByVDBDN2w3YXJDQ0VvR3lSNDF2RlYxYV9Wa3J2NkZHck1xYndxTmRxVHVXS2VMekNJLVJBWW5BektINXZIZTE1cE5FWmV3ajNpTEVELXQ</guid></item><item><title>微软开始兑现承诺：8GB内存跑Windows不卡了！开始菜单、任务栏等全面提速 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143461.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;微软开始兑现承诺：8GB内存跑Windows不卡了！开始菜单、任务栏等全面提速&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-13 14:45:57  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143461-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月13日消息，&lt;span&gt;&lt;strong&gt;微软面向Windows 11 24H2、25H2和26H1全版本用户推送了KB5101684更新，重点提升系统可靠性和响应速度，8GB及以下内存设备改善最为明显。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;资源管理器是本次优化的重点，更新后打开跳转列表和最近文件更快，文件共享操作和多桌面切换的响应速度也有提升。&lt;/p&gt;
+&lt;p&gt;系统托盘区域在触控设备平板模式下的加载可靠性同步改善，开始菜单的视图偏好设置也能正确保留，不再出现切换后重置的问题。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/35937f93d2a149cf80c9443aac718032.jpg" target="_blank"&gt;&lt;img alt="微软开始兑现承诺：8GB内存跑Windows不卡了！开始菜单、任务栏等全面提速" h="400" src="//img1.mydrivers.com/img/20260813/s_35937f93d2a149cf80c9443aac718032.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;锁屏和登录界面的可靠性升级对低内存设备最为明显，开始菜单和任务栏在开机启动时的出现速度也有所提升，不再需要等待数秒才完成加载。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;微软还优化了更新安装后的清理流程，降低资源占用，此前Windows更新安装后需要经历一段高负载的清理阶段，配置较低的PC在这期间几乎无法正常使用，现在这一问题得到缓解。&lt;/p&gt;
+&lt;p&gt;应用搜索功能也做了改进，输入拼写错误或部分应用名称时能更准确地找到已安装应用，上述优化适用于所有内存容量的PC，无论8GB还是128GB都能感受到系统更跟手。&lt;/p&gt;
+&lt;p&gt;此外，KB5101684还包含文件管理器、Windows Hello、Windows搜索和系统提示音等方面的体验改进。微软近期多次表态要改善Win11在8GB内存PC上的表现，这次更新正是这一承诺的部分落地。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260813/aca207150ec145b599b689320355b107.jpg" target="_blank"&gt;&lt;img alt="微软开始兑现承诺：8GB内存跑Windows不卡了！开始菜单、任务栏等全面提速" h="374" src="//img1.mydrivers.com/img/20260813/s_aca207150ec145b599b689320355b107.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 06:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE8ydG5idzgzX1VKOFZBTi14YnBsbDV5Mm5BRzJnX0ZMcWh2Ykg2UkxIQ042SG5aZEFGWFdaUzRQTm02LThuZ29PdUNGVkNuaUItMmRXVDZTdVM</guid></item><item><title>英特尔DG2显卡迎重磅更新！AV1硬件编码补齐：锐炫A不再瘸腿 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143457.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;英特尔DG2显卡迎重磅更新！AV1硬件编码补齐：锐炫A不再瘸腿&lt;/p&gt;
           
@@ -396,7 +1035,66 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 06:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4xN3FZZV9WOHNCV0NzYnRzbUJnNGRlSnQyaFdGRFdqTEliQWxHdENuTnBoMm41VWtwYXBMTl9VNnp0aW9aZXVVWVU2dV95OURVSlMyRnNtZDM</guid></item><item><title>多款车型被曝激光雷达异常，领克称正与供应商分析原因 - 观察者</title><link>https://www.guancha.cn/qiche/2026_08_13_827157.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 13 Aug 2026 06:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4xN3FZZV9WOHNCV0NzYnRzbUJnNGRlSnQyaFdGRFdqTEliQWxHdENuTnBoMm41VWtwYXBMTl9VNnp0aW9aZXVVWVU2dV95OURVSlMyRnNtZDM</guid></item><item><title>AI成“造富机器”，梁文锋身家一年暴增3850% - guancha.cn</title><link>https://www.guancha.cn/economy/2026_08_13_827159.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	（文/赖家琪 编辑/吕栋）
+&lt;/p&gt;
+&lt;p&gt;
+	8月13日凌晨，DeepSeek悄然将V4-Pro正式版更新至API。尽管公司日前已预告涨价，但V4-Pro正式版目前定价仍保持不变。随着DeepSeek融资与上市准备的消息持续流传，市场对该公司的估值不断上涨。受此推动，DeepSeek创始人梁文锋个人财富实现了惊人的飞跃。
+&lt;/p&gt;
+&lt;p&gt;
+	独立分析机构和评测网站BestBrokers上周对《福布斯》实时亿万富豪榜数据进行了分析，发现在2025年7月27日至2026年7月27日期间，梁文锋的身家已从10亿美元飙升至395亿美元，增速达3850%。按此计算，他成为过去一年全球财富增长最快的亿万富豪，并已跻身全球最富有的50人之列。
+&lt;/p&gt;
+&lt;p&gt;
+	过去一年，人工智能（AI）热潮推动科技企业估值上涨，AI大模型、数据中心、机器人以及相关领域企业的估值持续攀升，一批科技企业创始人和早期投资者的财富迅速膨胀。
+&lt;/p&gt;
+&lt;p&gt;
+	除了梁文锋外，Anthropic创始团队的财富同样经历了大幅重估。公司联合创始人兼首席执行官达里奥·阿莫德伊（Dario Amodei）、联合创始人克里斯托弗·奥拉（Christopher Olah）等核心成员的估算身家均从12亿美元增至155亿美元，增幅达到1191.67%。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/external/2026/08/13/20260813140315335.jpg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	&lt;span&gt; BestBrokers&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	AI带来的财富效应还在向产业链上下游扩散。
+&lt;/p&gt;
+&lt;p&gt;
+	随着AI模型能力不断提升，数据中心算力需求随之暴涨，高速网络、光模块、电信设备等基础设施成为AI产业扩张的重要支撑。而在这之中，中国光通信和电信设备制造商扮演着越来越重要的角色。例如，中际旭创创始人、核心实控人王伟修净资产从45亿美元增至264亿美元，增长486.67%。
+&lt;/p&gt;
+&lt;p&gt;
+	人形机器人产业同样成为新的财富增长点。美国Figure AI创始人兼CEO布雷特·阿德科克的财富从15亿美元增至191亿美元，一年增长超过1170%。在资本市场看来，AI与机器人正在加速融合，把AI能力从“数字世界”带入现实世界，也因此成为科技投资的新热点。
+&lt;/p&gt;
+&lt;p&gt;
+	不过，并非所有科技富豪都享受到了这波“AI热”带来的红利。甲骨文公司首席执行官拉里·埃里森的身家从一年前的2906亿美元降至1519亿美元，相当于在一年内平均每天蒸发约3.8亿美元。
+&lt;/p&gt;
+&lt;p&gt;
+	这主要与华尔街对甲骨文大规模AI投资计划的担忧有关。随着公司不断增加AI基础设施投入、债务负担上升，投资者开始质疑其云基础设施业务的增长是否足以支撑如此庞大的资本开支。
+&lt;/p&gt;
+&lt;p&gt;
+	Meta首席执行官马克·扎克伯格的财富也从2459亿美元降至2043亿美元，一年减少416亿美元。市场同样开始担忧巨额AI投入对公司盈利能力和估值的影响。Meta预计2026年资本支出最高可能达到1450亿美元。
+&lt;/p&gt;
+&lt;p&gt;
+	整体上，无论是按富豪数量还是按财富规模来评估，包括AI在内的科技行业已成为当之无愧的“富豪制造机”。
+&lt;/p&gt;
+&lt;p&gt;
+	全球3356名亿万富豪中，有511人的财富主要来自科技行业，是所有行业中占比最高的。这些科技富豪合计拥有5.30万亿美元的财富，超过金融与投资行业富豪2.39万亿美元总财富的两倍。这体现出科技行业过去一年创造财富的能力。
+&lt;/p&gt;
+&lt;p&gt;
+	从财富增长的绝对金额来看，马斯克不仅是全球首富，也是过去一年全球财富增长最多的人。他的身家增长与SpaceX估值飙升密切相关。SpaceX上市后，马斯克一度成为全球首位“万亿美元富豪”。
+&lt;/p&gt;
+&lt;p&gt;
+	数据显示，2025年7月27日至2026年7月27日，马斯克的身家从4056亿美元增至7251亿美元，一年增加3195亿美元，平均每天增加约8.75亿美元。
+&lt;/p&gt;
+&lt;p&gt;
+	紧随其后的是戴尔创始人迈克尔·戴尔，其身家一年增加1076亿美元。谷歌联合创始人拉里·佩奇和谢尔盖·布林分列第三、第四，净资产增加了1043亿美元和912亿美元。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>guancha.cn</author><pubDate>Thu, 13 Aug 2026 06:21:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE91OHZnS1pVVHh0MXFlREV6N0xGUzBNTURpRVdLMTRMTVhmZkt3YkE5dG1feUtET1RsTmJhQ3k3OHkyNFRLckt4bWpkOVNiWE1oVmN4RkRweE8xNHpWQWhPWktSTFI</guid></item><item><title>多款车型被曝激光雷达异常，领克称正与供应商分析原因 - 观察者</title><link>https://www.guancha.cn/qiche/2026_08_13_827157.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	【文/观察者网 张家栋 编辑/高莘】
 &lt;/p&gt;
@@ -1052,7 +1750,7 @@
 
         &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Thu, 13 Aug 2026 03:23:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE8xTHhzcE9TUXcwb2pFVkptYTFZLWZNRmZBQlpLTi12T1k0dlB6YVVLUlYxNjJvTGxhN3dyNGRwVml4Rm9RcG14QUVsM0FPUzB3Z3B4WnlSRVhfOVBXS1phUQ</guid></item><item><title>Intel下代CPU策略变了：只砍E核不砍缓存！多款型号L3容量上调 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143397.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Thu, 13 Aug 2026 03:23:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE8xTHhzcE9TUXcwb2pFVkptYTFZLWZNRmZBQlpLTi12T1k0dlB6YVVLUlYxNjJvTGxhN3dyNGRwVml4Rm9RcG14QUVsM0FPUzB3Z3B4WnlSRVhfOVBXS1phUQ</guid></item><item><title>中国式审查正渗入美国AI模型的回答中 - 华尔街日报中文网</title><link>https://cn.wsj.com/articles/chinese-censorship-is-leaking-into-answers-from-american-ai-58c1cdb6</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文网</author><pubDate>Thu, 13 Aug 2026 03:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMinAFBVV95cUxOdHNWQkFERmhkNUdKVVdHUHZPZ1hncjg5MWFnM1VQX0twMTZSd0tpVFVkQ2ZOVGhrYUVjWjVpQTgzcHAyTnM3aXhIQ0FWZDdBR3M3TDZlUFBmZG1lM2hMNVJFN3dvbjU0M2c3dTdhaHBON05qeHZtanRGSng0RmZjTlpZWkxFWC05dTQzSkVCTGl4aThzVE9wdWdITms</guid></item><item><title>Intel下代CPU策略变了：只砍E核不砍缓存！多款型号L3容量上调 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143397.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;Intel下代CPU策略变了：只砍E核不砍缓存！多款型号L3容量上调&lt;/p&gt;
           
@@ -1327,7 +2025,9 @@
 https://api-docs.deepseek.com/zh-cn/quick_start/pricing&lt;/p&gt;
 
   &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>ifanr.com</author><pubDate>Thu, 13 Aug 2026 01:56:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1DeWZwU1BCMF9tQ3dWc2VGRG56b1J4b1FweVRJY3Z4SzBWM2huUVRQVXpqTndISDVpZXJ4T2prWUxoSnc</guid></item><item><title>AI代理新案例：入侵健身中心系统替“主人”预约课堂 - BBC</title><link>https://www.bbc.com/zhongwen/articles/cddjp613mvdo/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-uarkay"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1j37txl0"&gt;AI代理新案例：黑进健身中心系统替“主人”预约课堂&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1f9kdg2"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一张库存图片，展示了六个人在灯光明亮的健身房里做普拉提。" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-5ku87v"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" data-testid="byline"&gt;&lt;strong id="article-byline" aria-hidden="true" class="css-5ku87v"&gt;Article Information&lt;/strong&gt;&lt;ul class="css-1a8g4ww"&gt;&lt;li class="css-1s1df59"&gt;&lt;ul role="list" class="css-z50d25"&gt;&lt;li class="css-0"&gt;&lt;span role="text"&gt;&lt;span class="css-5ku87v"&gt;Author, &lt;/span&gt;&lt;span class="css-gbtxhp"&gt;乔·蒂迪（Joe Tidy）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="css-k1irjw"&gt;&lt;span role="text"&gt;&lt;span class="css-5ku87v"&gt;Role,  &lt;/span&gt;&lt;span class="css-1ffyx8x"&gt;BBC国际部网络记者&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;span class="css-5ku87v"&gt;Published &lt;/span&gt;&lt;time datetime="2026-08-13" class="css-hs2lun expmsel0"&gt;4 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="css-1rsf0vv" data-testid="read-time"&gt;&lt;span class="css-1ffyx8x"&gt;阅读时间: 3 分钟&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;与大量匿名网友在网路上竞抢热门活动的报名名额，相信这是对多数人来说熟悉不过的体验。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;澳洲墨尔本的安德鲁·伯德（Andrew Bird）便想参加一个经常爆满的普拉提（pilates）课程——但他的解决方案却带来了意想不到的后果。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;他说他把这项“琐事”外包给了人工智慧（artificial intelligence, AI；人工智能）代理商——一种可以自主执行线上任务的工具。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;它成功了，但比他想像的还要更进一步——入侵了健身房的线上系统——这被视为人工智慧代理为了完成被赋予的任务而不择手段的最新例证。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;“让整件事更加超现实的是它的语调，”伯德在他的部落格中写道。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;就在最近几周，人工智慧公司纷纷承认，他们的AI机器人在测试过程中出现故障，导致无法控制的骇客攻击行为。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;OpenAI、Anthropic 和 Meta 都已揭露，他们自己的AI机器人为了实现其开发者设定的目标，对私人公司发动网路攻击。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;健身房预订事件虽然不被认为是严重的网路攻击，但却是又一个例子，说明让复杂的AI机器人执行任务会带来意想不到的后果。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;伯德拒绝就此事接受BBC采访，只说：“感谢联系。我目前不方便接受采访。感谢你们对这个故事的关注。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;据他所述，伯德使用的是 OpenClaw 软体——这是一款流行的工具，允许用户透过 WhatsApp 与他们的AI机器人（在此个案为 Athropic 的 Claude Opus 4.6）聊天，并使其执行自主任务。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;接到健身房预订任务后，机器人解释说，它已经操纵系统，提前几个月为他预订了课程——这违反了系统的正常规则。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;这名AI技术专家随后想知道，该代理商能否将他在即将开课的候补名单上提前一些。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;AI代理回覆说，他们成功取消了另一名健身爱好者的预订。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;根据ABC报道，人工智慧机器人告诉伯德：“API对取消他人预订没有任何授权检查⋯⋯我用候补名单排名第一的人测试过，而且确实成功了。所以你已经从第四名升到第三名了。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;伯德要求机器人撤销该操作，但机器人无法做到，于是他要求机器人编写一份网路安全报告，并提醒健身房老板注意该漏洞。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;伯德经营一家AI文档制作公司，他说他无意取消那位普拉提爱好者的名额。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;“这不是世界末日，所以我没有为此自责，但这确实是一个警示信号，提醒我们要负责任地使用它，”他告诉ABC。&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Thu, 13 Aug 2026 01:37:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE80Wl84WEcwNi1lVzVWRlE1RkZHQmp3RFdYVlF6bVZsc1k2c2I5SHMwdVFXclpKMlpTdWNCeFNRWklCbWZPNUtoc19FYl9XekdtMEpLZ1JlVzMzZVpUeEpobW1hdkJBQdIBa0FVX3lxTE5pS2x1Z1c1SnBqTGhxX0RhcU82S1RhNWkzWW9faURqMUdQUWpDVHRKSXFWdDdOUldJQmU1dFBlaERISkdxNGxGV3oyWmp3TG1CbVhHNXM5d1pyM0hnaDhUdWJVQUdCRkh6NTkw</guid></item><item><title>WorkBuddy存在感极强——腾讯Q2财报电话会的10点观察与思考 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779333</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 01:22:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE93akFGSFJpY21kYl8yUm5MV0N3X1Y3SnIweVFnc2t5TldOejBxU0dHbHNydjJIdmtVWWM0dG5JNFNkRThxclVqSUozRFlydk5tdDc4</guid></item><item><title>卢伟冰官宣小米澎湃OS 4！今日开启首批Beta版机型招募 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143361.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>ifanr.com</author><pubDate>Thu, 13 Aug 2026 01:56:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE1DeWZwU1BCMF9tQ3dWc2VGRG56b1J4b1FweVRJY3Z4SzBWM2huUVRQVXpqTndISDVpZXJ4T2prWUxoSnc</guid></item><item><title>Google Pixel 11 全系发布：硬件小修小补，手机变成 Gemini 的主战场 - 品玩</title><link>https://www.pingwest.com/a/316392</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="article-style"&gt;
+&lt;p&gt;你还记得功能机时代的“来电闪”手机链吗？Google 把这个淘汰多年的手机通知灯，重新装回了 2026 年的旗舰 Pixel 上。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/rnEjDACjy5z6W1HDN6E627W_tBs6dZKN.jpeg?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;在 Pixel 11 Pro 背部，有一圈名为 HiLight 的彩色 LED，取代了之前 Pixel 10 Pro 系列温度传感器的位置，配合整块玻璃覆盖的相机条成了这一代最醒目的外观变化。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/nwn7trAnZ32medtPZ4cTRCAxXyiw9Trz.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;但貌似软件能力还没有跟上视觉存在感，HiLight 首发只有五种颜色，除了 Gemini 状态和指定联系人来电，几乎不能与其他通知自由联动。&lt;/p&gt;&lt;p&gt;它已经完成了“让新 Pixel 被认出来”的任务，但绝对成为不了购买 Pro 的理由。&lt;/p&gt;&lt;h2&gt;四款 Pixel 11，全线涨价 100 美元&lt;/h2&gt;&lt;p&gt;今年 Pixel 11 家族依旧由四款产品组成：6.3 英寸的 Pixel 11 和 Pixel 11 Pro、6.8 英寸的 Pixel 11 Pro XL，以及采用 6.5 英寸外屏、8 英寸内屏的 Pixel 11 Pro Fold。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/7E166HttJJCt15M8mmXe555r745ZSBfT.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;四款手机均搭载全新的 Tensor G6 处理器，并均由 256GB 存储起步；美国市场起售价分别为 899 美元、1099 美元、1299 美元和 1899 美元，今天开启预售，8 月 20 日正式发售。&lt;/p&gt;&lt;p&gt;与上代相比，Pixel 11 全系最低的起售价均提高了 100 美元，不过好消息是 Pixel 11 和 Pixel 11 Pro 也同时取消了 128GB 版本，Google 和苹果一样用翻倍的起步弱化了一部分涨价，但消费者同时也失去了更便宜的选择。&lt;/p&gt;&lt;p&gt;&lt;b&gt;在今年内存配置同样体现出供应链成本压力，Pixel 11 配备 12GB，Pro 和 Pro XL 也要升级至 512GB 或 1TB 才能获得 16GB，相比上代 Pro 全系 16GB，这算的上是一次“大缩水”。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;镜头模组方面，三款直板机都换成一体式玻璃相机条，其中标准版的凸起比上一代薄了 40%，Pixel 11 屏幕峰值亮度提升到 3000 尼特，Pixel 11 Pro 和 Pro XL 的 LTPO 屏幕达到 3600 尼特，并加入新的抗刮涂层。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/yhd1BwDcJd3c8Yw5ZN51n7k9z16674iT.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;h2&gt;Tensor G6 的重点仍然不是跑分&lt;/h2&gt;&lt;p&gt;与之前的发布会一样，Google 依旧没有公布太多传统性能数据，而是强调 Tensor G6 对日常体验的改善：它的网页浏览速度提高 25%，应用启动速度提高 15%，CPU 能效最高提升 20%。新的 TPU 计算能力增加 50%，内存带宽翻倍；配合新一代 Gemini Nano，部分端侧 AI 任务最高可以快 3.5 倍，同时把能耗降至过去约三分之一。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/6WeRmiKwwGYRrfRQS5hCbcGGC5fe36zA.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;这是 Tensor 一贯的路线：不争跑分第一，把资源押注在影像和本地模型上。新 ISP 为三款直板 Pixel 带来 4K 人像视频，Titan M3 安全芯片则把后量子密码技术引入设备启动，全系列依旧承诺七年软件版本更新。&lt;/p&gt;&lt;p&gt;续航方面，Pixel 11 系列和 iPhone 17 系列的路径也不约而同，主要依赖新处理器的能效提升而不是堆电池。Pixel 11、Pro 和 Pro XL 分别为 4985mAh、4850mAh 和 5115mAh，Pro 系列的电池容量反而有所缩小；折叠屏 Pixel 11 Pro Fold 也降至约 4800mAh。&lt;/p&gt;&lt;p&gt;在该容量下，Google 依旧宣称直板机续航超过 30 小时、Fold 超过 24 小时，可见 Tensor G6 处理器的能效提升应该是比较明显的。&lt;/p&gt;&lt;p&gt;除此之外，Pixel 11 全系支持 Pixelsnap 磁吸配件和 Qi2.2 25W 无线充电，Google 表示 Pro XL 半小时可充至约 75%，但整体充电速度依旧比不上任何一款国产安卓旗舰。&lt;/p&gt;&lt;h2&gt;标准版升级主摄，真正的影像增量留给 Pro&lt;/h2&gt;&lt;p&gt;Pixel 11 换上了一颗 1/1.56 英寸的 4800 万像素主摄，Google 宣称感光能力提高了 56%。另外两颗仍是 1300 万像素超广角和 1080 万像素 5 倍长焦，长焦的最高变焦能力提升到了 30 倍。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/tPf8i31caR1raG5SsDH5FtN1r6KXxm1i.jpeg?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;Pixel 11 Pro 和 Pro XL 的镜头模组完全相同：5000 万像素主摄、4800 万像素超广角和重新设计的 4800 万像素 5 倍潜望长焦。长焦感光能力提高 30%，支持 5 倍人像、10 倍“无损光学品质”变焦和最高 120 倍的数码变焦。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/dRHjm6MGYwMASr6z64H22y1edZhNTkDF.jpeg?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;Google表示，今年两款 Pro 的夜景拍摄速度最高提高 4.5 倍，能够有效的减少拍人时要求对方保持不动的时间。不过 Google 今年也明显拉开了标准版与 Pro 的差距，像是 Instant Night Sight、120 倍数码变焦、8K 视频拍摄等功能均为 Pixel 11 Pro 系列独占。&lt;/p&gt;&lt;h2&gt;Camera Looks，是 Pixel 对计算摄影的一次反思&lt;/h2&gt;&lt;p&gt;如果说更大的传感器只是常规升级，那么 Camera Looks 貌似更能代表 Pixel 11 的影像变化。&lt;/p&gt;&lt;p&gt;过去十年，Google 用多帧合成、HDR+ 和夜景堆栈追求技术上尽可能“正确”的照片。问题是当每张照片都越来越“正确”，它们的观感也越来越像。&lt;/p&gt;&lt;p&gt;Camera Looks 虽然听起来像滤镜，但它会直接改变 HDR+ 的曝光策略、合成帧数、锐化和色彩。它不是在成片上覆盖颜色，而是在快门按下前就决定这张照片应该怎样“计算”。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/E56kF3_331mDG57p2_77sJ7QYbB58f34.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;除了 Original，用户还可选择 Natural、Shadows、Vanilla、Digi、Minimal、Editorial 等风格，并调节色温、锐度与颗粒。这很像苹果 Photographic Styles 与富士胶片模拟的结合，但开放了更多计算摄影控制。&lt;/p&gt;&lt;p&gt;曾经坚持替所有人算出「最佳答案」的 Google，第一次用 Camera Looks 承认影像审美不需要只有一个答案。&lt;/p&gt;&lt;h2&gt;Google 开始认真“争夺”手机创作者&lt;/h2&gt;&lt;p&gt;另外两个全新的影像功能明显瞄准了内容生产的专业用户。Magic Capture 是照片与视频之间的混合模式，手机会在记录视频的同时，利用端侧智能和 Gemini 模型分析约 400 帧画面，挑选时机更好的 1200 万像素照片，再自动裁切和去模糊，尤其适合儿童、宠物和体育动作这类难以预判快门的场景。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/p286WP1r2kcFYeXcyMZ5_875mJD5_1k8.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;这个概念并不新鲜，三星的 Galaxy AI （包括国行版）早就有类似的功能，并且外媒 The Verge 的短暂上手也表示，这个功能目前还不够稳定，一段约 15 秒素材最后只生成了一张照片和一个短片。&lt;/p&gt;&lt;p&gt;Creator Suite 则把提词器、画幅线、外接麦克风电平、语音增强、项目文件夹和剪辑工具一起放进系统相机，提词器还能跟随语速滚动和暂停。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/R6B7f84k2fi85P_Rf668E4AszjW6w874.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;这些功能单独看都不算革命性，但它们说明 Pixel 正在想要试图去抢夺已经被 iPhone Pro 系列牢牢把控的那部分核心人群：没有专业团队、需要高频更新，希望从拍摄到发布都在一部手机上完成的小型创作者。&lt;/p&gt;&lt;h2&gt;Gemini 开始从“应用”走向系统&lt;/h2&gt;&lt;p&gt;就像我们几个月前写的那篇《Pixel 11 要来了，但 Google 真正想卖的已经不是手机了》猜想一样，Pixel 11 真正的主角还是 Gemini Intelligence。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/7T5szX6mQ_iCSp27Pwn58mG837ha72aT.jpeg?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;与过去需要用户主动打开 Gemini 不同，Google 这次更强调“及时出现”。Gemini 可以在超过 40 个应用之间执行多步骤任务，也能结合屏幕内容和用户授权连接的 Gmail、日历、Google 地图、Wallet 等信息，主动提供上下文卡片。&lt;/p&gt;&lt;p&gt;在 Google 的官方演示中，朋友在聊天里问起旅行时航班和酒店信息可以直接出现；讨论晚餐时系统可以提示预约餐厅。在美国本土 Gemini 还能在后台购买商品、自动预约车辆或帮你代打商家电话，在操作过充足允许用户随时接管。&lt;/p&gt;&lt;p&gt;与此同时，Rambler 可以在口述时去除填充词和重复表达，再整理成简洁文字；Live Translate 可为视频和音频实时生成语音译制。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/375cdkKwB53XaWrRSR2t4wt51A1jcr4_.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;Google 还把手语转文字模型接入 Gboard 和 Live Transcribe，Pixel 11 Pro Fold 可让手语使用者面对内屏摄像头表达，文字显示在外屏上，这比单纯强调大屏更能体现折叠形态的价值。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/9hCMm457693MzK2Xwc85tZ363b6T3SN8.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;可是对于用户来说，目前的问题在于大量 Gemini 功能依旧存在地区、语言和年龄限制，部分高级用量还需要额外的订阅。&lt;/p&gt;&lt;p&gt;比如跨应用代理首先服务美国市场，Pro 与 Fold 虽附赠六个月 Google AI Pro，但海外用户开机时未必能获得发布会展示的“满血版 Google Pixel 11”。&lt;/p&gt;&lt;h2&gt;Fold 解决耐用性，Pixel Watch 和 Tag 补上生态&lt;/h2&gt;&lt;p&gt;Pixel 11 Pro Fold 比上代薄约 1mm、轻接近 10%，重量仅为 239 克。新的无齿轮铰链、复合后盖和陶瓷外屏盖板主要改善了耐用性，官方表示Pixel 11 Pro Fold 的整机强度是上代产品的三倍，两块屏幕峰值亮度均为 3600 尼特。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/pmTCX2c82NRBNX1hEy846GKr_m764Yj5.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;镜头模组方面，Pixel 11 Pro Fold 换上新的 4800 万像素主摄，但超广角和 5 倍长焦与上一代完全相同。Google 没有让这款 1899 美元的折叠屏成为影像旗舰，而是把资源优先留给了轻薄、耐用和双屏软件。&lt;/p&gt;&lt;p&gt;Pixel Watch 5 外观没有变化，处理器升级到 Snapdragon W5 Gen 2 Accelerated，起售价 399 美元。新增呼吸紧急情况检测、睡眠呼吸质量、血压及胰岛素抵抗趋势等功能；由于后几项功能不是实时医疗读数，也不能代替医嘱诊断。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/TjdAz555tX4_yx8WjBSt551wtx8W83K_.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;Pixel Tag 则接入了 Find Hub，支持 UWB 和 Bluetooth Channel Sounding 精确查找，采用可更换电池设计，售价 29 美元；Pixel Buds Pro 2 居然没有换代，只增加配色，并通过软件更新获得动态降噪和新版实时翻译。&lt;/p&gt;&lt;figure class="image"&gt;&lt;img src="https://cdn.pingwest.com/portal/2026/08/13/portal/2026/08/13/rJQR98ntma_b96HTd8QNiTeXj43eDZ1D.png?x-oss-process=style/article-body" title="图源：网络" alt="图源：网络"&gt;&lt;figcaption&gt;图源：网络&lt;/figcaption&gt;&lt;/figure&gt;&lt;h2&gt;Pixel 11 的重点不是硬件升级，而是换一种手机逻辑&lt;/h2&gt;&lt;p&gt;整场看下来，Pixel 11 很难被称为一次激进的硬件换代。HiLight 肯定算不上是“革命性”的改变，整机形态仍以延续前代的设计为主，电池容量缩小、充电速度也不算快；标准版和 Pro 的功能差距变大，基础 Pro 还从 16GB 内存退回 12GB……&lt;/p&gt;&lt;p&gt;与此同时，899 美元至 1899 美元的定价，已经让 Google Pixel 11 系列很难再依靠性价比说服用户购买。&lt;/p&gt;&lt;p&gt;但 Google 今年也展现出了过去更清晰的思路：&lt;b&gt;手机不应该只是装着 Gemini App 的硬件，更不应该只是等待用户逐个打开应用的启动器。它应该理解正在发生的对话，调用分散在不同服务里的信息，在恰当的时候出现，并替用户完成一部分操作，这比给系统增加一个能聊天的手机助手更接近“AI 手机”的形态。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;但这些体验能否稳定的完成工作、能否走出美国本土和英语环境，仍是一个非常大的问题。Pixel 11 更像 Google 交出的一份方向明确、但仍未完成的试验品。毕竟硬件只是一个“容器”，真正决定它能否成立的，是 Gemini 能不能从发布会舞台上的演示变成每天都不会让人失望的系统能力。&lt;/p&gt;&lt;p&gt;反正从 Google 近期一系列表现来看，这个“未来”好像目前并不算明朗。&lt;/p&gt;&lt;/article&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>品玩</author><pubDate>Thu, 13 Aug 2026 01:52:25 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTFBySXJEWFplbTFzN3Jzaklwam1rdVZkV19qdXpXRGxVS2lTV1lVTmxuOHU2SmlsRVZNMjlZVzBtczVrQTdQZTF4WA</guid></item><item><title>AI代理新案例：入侵健身中心系统替“主人”预约课堂 - BBC</title><link>https://www.bbc.com/zhongwen/articles/cddjp613mvdo/simp</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;main role="main" class="css-uarkay"&gt;&lt;p dir="ltr" class="css-5youcd e17x9cvu0"&gt;&lt;h1 tabindex="-1" id="content" class="article-heading css-nir6jv e1j37txl0"&gt;AI代理新案例：黑进健身中心系统替“主人”预约课堂&lt;/h1&gt;&lt;/p&gt;&lt;figure class="css-1qn0xuy"&gt;&lt;div class="css-1f9kdg2"&gt;&lt;img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp" srcset="https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 240w, https://ichef.bbci.co.uk/ace/ws/320/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 320w, https://ichef.bbci.co.uk/ace/ws/480/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 480w, https://ichef.bbci.co.uk/ace/ws/624/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 624w, https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/2b16/live/38886b20-9576-11f1-bfbd-3fe7d55dcf7b.png.webp 800w" sizes="(min-width: 1008px) 760px, 100vw" alt="一张库存图片，展示了六个人在灯光明亮的健身房里做普拉提。" loading="eager" fetchpriority="high" class="css-1seqhu9"&gt;&lt;p class="css-1276odk" role="text"&gt;&lt;span class="css-5ku87v"&gt;图像来源，&lt;/span&gt;&lt;span lang="en-GB"&gt;Getty Images&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/figure&gt;&lt;section role="region" aria-labelledby="article-byline" data-testid="byline"&gt;&lt;strong id="article-byline" aria-hidden="true" class="css-5ku87v"&gt;Article Information&lt;/strong&gt;&lt;ul class="css-1a8g4ww"&gt;&lt;li class="css-1s1df59"&gt;&lt;ul role="list" class="css-z50d25"&gt;&lt;li class="css-0"&gt;&lt;span role="text"&gt;&lt;span class="css-5ku87v"&gt;Author, &lt;/span&gt;&lt;span class="css-gbtxhp"&gt;乔·蒂迪（Joe Tidy）&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="css-k1irjw"&gt;&lt;span role="text"&gt;&lt;span class="css-5ku87v"&gt;Role,  &lt;/span&gt;&lt;span class="css-1ffyx8x"&gt;BBC国际部网络记者&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;span class="css-5ku87v"&gt;Published &lt;/span&gt;&lt;time datetime="2026-08-13" class="css-hs2lun expmsel0"&gt;4 小时前&lt;/time&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="css-1rsf0vv" data-testid="read-time"&gt;&lt;span class="css-1ffyx8x"&gt;阅读时间: 3 分钟&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;与大量匿名网友在网路上竞抢热门活动的报名名额，相信这是对多数人来说熟悉不过的体验。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;澳洲墨尔本的安德鲁·伯德（Andrew Bird）便想参加一个经常爆满的普拉提（pilates）课程——但他的解决方案却带来了意想不到的后果。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;他说他把这项“琐事”外包给了人工智慧（artificial intelligence, AI；人工智能）代理商——一种可以自主执行线上任务的工具。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;它成功了，但比他想像的还要更进一步——入侵了健身房的线上系统——这被视为人工智慧代理为了完成被赋予的任务而不择手段的最新例证。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;“让整件事更加超现实的是它的语调，”伯德在他的部落格中写道。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;就在最近几周，人工智慧公司纷纷承认，他们的AI机器人在测试过程中出现故障，导致无法控制的骇客攻击行为。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;OpenAI、Anthropic 和 Meta 都已揭露，他们自己的AI机器人为了实现其开发者设定的目标，对私人公司发动网路攻击。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;健身房预订事件虽然不被认为是严重的网路攻击，但却是又一个例子，说明让复杂的AI机器人执行任务会带来意想不到的后果。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;伯德拒绝就此事接受BBC采访，只说：“感谢联系。我目前不方便接受采访。感谢你们对这个故事的关注。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;据他所述，伯德使用的是 OpenClaw 软体——这是一款流行的工具，允许用户透过 WhatsApp 与他们的AI机器人（在此个案为 Athropic 的 Claude Opus 4.6）聊天，并使其执行自主任务。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;接到健身房预订任务后，机器人解释说，它已经操纵系统，提前几个月为他预订了课程——这违反了系统的正常规则。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;这名AI技术专家随后想知道，该代理商能否将他在即将开课的候补名单上提前一些。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;AI代理回覆说，他们成功取消了另一名健身爱好者的预订。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;根据ABC报道，人工智慧机器人告诉伯德：“API对取消他人预订没有任何授权检查⋯⋯我用候补名单排名第一的人测试过，而且确实成功了。所以你已经从第四名升到第三名了。”&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;伯德要求机器人撤销该操作，但机器人无法做到，于是他要求机器人编写一份网路安全报告，并提醒健身房老板注意该漏洞。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;伯德经营一家AI文档制作公司，他说他无意取消那位普拉提爱好者的名额。&lt;/p&gt;&lt;/div&gt;&lt;div dir="ltr" class="css-1k9op6x e17x9cvu0"&gt;&lt;p dir="ltr" class="css-yezvz5 eea635z0"&gt;“这不是世界末日，所以我没有为此自责，但这确实是一个警示信号，提醒我们要负责任地使用它，”他告诉ABC。&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>BBC</author><pubDate>Thu, 13 Aug 2026 01:37:46 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE80Wl84WEcwNi1lVzVWRlE1RkZHQmp3RFdYVlF6bVZsc1k2c2I5SHMwdVFXclpKMlpTdWNCeFNRWklCbWZPNUtoc19FYl9XekdtMEpLZ1JlVzMzZVpUeEpobW1hdkJBQdIBa0FVX3lxTE5pS2x1Z1c1SnBqTGhxX0RhcU82S1RhNWkzWW9faURqMUdQUWpDVHRKSXFWdDdOUldJQmU1dFBlaERISkdxNGxGV3oyWmp3TG1CbVhHNXM5d1pyM0hnaDhUdWJVQUdCRkh6NTkw</guid></item><item><title>WorkBuddy存在感极强——腾讯Q2财报电话会的10点观察与思考 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779333</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 13 Aug 2026 01:22:39 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE93akFGSFJpY21kYl8yUm5MV0N3X1Y3SnIweVFnc2t5TldOejBxU0dHbHNydjJIdmtVWWM0dG5JNFNkRThxclVqSUozRFlydk5tdDc4</guid></item><item><title>卢伟冰官宣小米澎湃OS 4！今日开启首批Beta版机型招募 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143361.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月13日消息，今日，小米集团总裁卢伟冰宣布，&lt;span&gt;&lt;strong&gt;小米澎湃OS 4 Beta版要与大家见面了，首批机型招募将于今天上午11:00在小米社区开启。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;与以往不同的是，此次澎湃OS 4不会单独举行发布会，小米希望通过更多的用户反馈，持续优化体验。&lt;/p&gt;
@@ -2761,297 +3461,4 @@ https://api-docs.deepseek.com/zh-cn/quick_start/pricing&lt;/p&gt;
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 14:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4tZU5USTE4dWhuYXV0c21tVVl4OW9TR3dIdE5zODBGTjBmXzZPRlhQenVYSUdFYTFxQ3VqbWRFQzhXRDE1dDUxUGxZTmNnS1lIeUMzQmpyWWQ</guid></item><item><title>528 亿砸下去，腾讯要换估值锚 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779302</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 12 Aug 2026 13:45:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1ERDl1SXQ4LVFsTGgwV2pCUFNBMUpyREhrUzVIb1VIOTFSTF9UZ0MxSVlPbEtLN0pSVlF4cTZSZEh4S0w4MDRjRkZNWlBNMkRRcW9F</guid></item><item><title>9999元起全球唯一机器人手机！荣耀Robot Phone预定已超过40万台 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143301.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月12日消息，荣耀今晚正式发布全球首款量产机器人手机Robot Phone，12GB+512GB版本9999元起，16GB+1TB版本12999元。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;据荣耀首席影像工程师罗巍透露，Robot Phone手机预定已经超过40万台，他直言：“再不下手估计买不到了。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/6014fba5-91ae-4075-8d5d-fa4bf411fe5a.png" target="_blank"&gt;&lt;img alt="9999元起全球唯一机器人手机！荣耀Robot Phone预定已超过40万台" h="589" src="//img1.mydrivers.com/img/20260812/S6014fba5-91ae-4075-8d5d-fa4bf411fe5a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这是手机行业沉寂多年之后问世的第一款新物种，机身内置荣耀自研钛合金4D灵巧云台，搭载行业最轻2.6克微型驱动电机，支持水平360°旋转与多角度俯仰调节，0.8秒完成弹出收纳，实现CIPA 5.5级机械防抖与AI主体跟随拍摄。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;硬件规格上正面配备6.3英寸LTPO高亮度直屏，峰值亮度6800尼特；搭载骁龙8 Elite Gen5处理器，首发荣耀自研驭光H1影像芯片，协同E2能效芯片、C1射频芯片协同工作。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;后置三摄组合包含云台2亿像素主摄、5000万像素超广角以及2亿像素2.7倍F2.6潜望长焦，联合ARRI完成影像调校，原生支持ARRI Log-C3视频编码与专业LUT调色。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260812/fa1ec95cbc394b7aab36adae77c780b7.jpg" target="_blank"&gt;&lt;img alt="9999元起全球唯一机器人手机！荣耀Robot Phone预定已超过40万台" h="337" src="//img1.mydrivers.com/img/20260812/s_fa1ec95cbc394b7aab36adae77c780b7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;续航内置7060mAh青海湖大容量电池，支持120W有线快充与50W无线充电，机身提供星轨银、月影灰两款配色，厚度9.59mm，重量248g。&lt;/p&gt;
-&lt;p&gt;系统搭载Agentic OS架构，升级YOYO智能体，依托端侧AI实现云台拟人互动、自动运镜等具身智能玩法。&lt;/p&gt;
-&lt;p&gt;新机将于8月12日20:30开启预售，8月18日上午10:08全渠道正式开售。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/fd00ffce-6f2a-45ee-a774-883cd23e87e7.jpg" target="_blank"&gt;&lt;img alt="9999元起全球唯一机器人手机！荣耀Robot Phone预定已超过40万台" h="1379" src="//img1.mydrivers.com/img/20260812/Sfd00ffce-6f2a-45ee-a774-883cd23e87e7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 13:34:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9yRWpzVEtVTzVHdlJiWmtvOEZWWE5Wd21pU1FkTjNSLUs4T3Y3X2NEQlBaM1JVN3FOTEEtUE8tMmRDWjgyWUNwZ0ZZeFNkbHJDM1RDTExYdFI</guid></item><item><title>消费电子业又被通知涨价：微软据称已提高Windows 11授权费用 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143298.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;全球消费电子行业今年在涨价压力中苦苦挣扎，引发这一困境的直接原因是内存芯片、逻辑芯片等半导体产品的短缺，其他相关硬件价格也在这一波市场动荡中水涨船高。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;而在硬件涨价之外，软件服务似乎也出现了问题。据报道，微软将把Windows 11的授权费提高至多10%。此次涨价并非针对自行组装电脑的DIY用户，而是针对向消费者销售整机的OEM厂商。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;此外，此次授权费的涨幅并非一成不变，微软通常会根据处理器性能调整授权费，CPU越高端，费用就越高。&lt;/p&gt;
-&lt;p&gt;从整体来看，微软的授权费对电脑价格的影响，远不及内存和固态硬盘价格的飙升。但是，这仍然是导致电脑购买成本比以往更高的又一个因素。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;个人电脑又遭重击&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;据个人电脑OEM业者介绍，微软每年都会提高许可费，但今年的提价幅度与以往明显增加，达到7%至10%。&lt;/p&gt;
-&lt;p&gt;Windows 11许可证通常并非笔记本电脑成本的最大组成部分，而且这些许可证费用的上涨似乎已经反映在了目前的价格中。&lt;/p&gt;
-&lt;p&gt;然而，消息称华硕和宏碁将在今年晚些时候将价格上调约5%。与2025年第四季度相比，华硕产品的平均涨幅已经达到30%。&lt;/p&gt;
-&lt;p&gt;与此同时，近阶段个人电脑出货量明显下降。7月上旬的一份报告显示，2026年第二季度全球个人电脑市场出货量同比下降4.9%，联想、惠普、戴尔等主要生产商均看到销量的下滑，苹果是唯一一家出货量增加10%以上的厂商。&lt;/p&gt;
-&lt;p&gt;虽然价格持续上涨，可以提高企业的利润。然而，如果这种情况持续下去，价格上涨趋势越趋近于失控，消费者可能不再倾向于购买新电脑，这对整个行业来说无疑是一个噩梦。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260812/a77c6f359e3a43c2b9564b43b3fc0a03.jpg" target="_blank"&gt;&lt;img alt="消费电子业又被通知涨价：微软据称已提高Windows 11授权费用" h="400" src="//img1.mydrivers.com/img/20260812/s_a77c6f359e3a43c2b9564b43b3fc0a03.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 13:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1oWHkzR1R6ei1FNTVqUnJXcGd4OW9vSEdDV29RSVlQcVBMOVVKTnpMbEdOY2xjaTFsVzVqaU9tUGpVdmMwcVp4UGE1cXFBY0NsN1AyOGNzRi0</guid></item><item><title>荣耀Robot Phone发布：全球首款机器人手机 9999元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143296.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月12日消息，今日晚间，荣耀Robot Phone正式发布，这是行业首款机器人手机。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;售价方面，12GB+512GB版本定价9999元，16GB+1TB版本定价12999元，提供星轨银与月影灰两款配色，将于8月18日正式发售。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/468e226a8cb642d889fb9497fdc50b1f.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="450" src="//img1.mydrivers.com/img/20260812/s_468e226a8cb642d889fb9497fdc50b1f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;作为一款极具颠覆性的智能手机，荣耀Robot Phone打破了手机固有的形态，开启了具身智能的全新时代。具体来看，该机行业首创钛合金灵巧云台，让手机首次具备机器人级别的4DoF自由度。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/47ac481ba1e2433bb4554071f134395b.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_47ac481ba1e2433bb4554071f134395b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;官方介绍，钛合金云台架构不仅将加工精度推进至±0.005毫米，更让整体尺寸大幅缩减65%。此次荣耀打造的钛合金云台电机仅重2.6克，体积较具身智能领域的灵巧手关节电机缩小34%。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/e38d5a0fec15416eb4b7281650f57caf.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_e38d5a0fec15416eb4b7281650f57caf.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;三轴最大控制转速可达360度每秒，能够灵敏响应快速转向、跟拍与急停等高动态场景。&lt;span&gt;&lt;strong&gt;与此同时，荣耀自研盾构钢翻转电机以120N·m/L的扭矩密度，为云台快速展开、顺畅收起与稳定悬停提供强劲动力。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/043ce4499612413886e68d30fb86fe65.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_043ce4499612413886e68d30fb86fe65.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;整套云台机械系统集成100余个精密零件，应用60余项精密工艺，并积累100余项自研专利，打造出手机行业最精密的机械结构新标杆。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/d16f6e0fa99a41e2883e15aba9779bb6.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_d16f6e0fa99a41e2883e15aba9779bb6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;面对机械云台、影像系统和大容量电池带来的空间挑战，荣耀Robot Phone通过精密设计，将复杂硬件融入纤薄机身。整机厚度约9.59毫米，重量仅248克，同时搭载7060毫安时新一代青海湖电池。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/1ca0f2d70acf40b98d2f9547570115da.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_1ca0f2d70acf40b98d2f9547570115da.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;荣耀Robot Phone采用6.31英寸精巧大屏，在保证单手握持体验的同时，兼顾了沉浸式视觉体验。该机搭载第五代骁龙8至尊版移动平台，配合四麦克风专业阵列与AI智能指向算法，收音方向能够跟随镜头视线移动，带来更加自然的沟通与创作体验。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/cb7a142356e14f62b5cfc75a14a16679.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_cb7a142356e14f62b5cfc75a14a16679.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/09f40e9d2fc341b18d699a71542890cd.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_09f40e9d2fc341b18d699a71542890cd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;影像方面，荣耀携手ARRI首次将ARRI LogC3落地移动影像，随手一拍即可呈现电影感画质。荣耀驭光H1自研影像芯片赋能，带来更纯净的画质表现。重构视频管线后，解锁了芯片级视频影像能力。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/ead197bce7c6428e92480caf441e4d52.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_ead197bce7c6428e92480caf441e4d52.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ARRI Look首次落地移动影像，电影感一键即可实现。更专业的ARRI电影模式支持伪色监看、峰值对焦、电影画幅等专业工具，从拍摄到调色，不受场景束缚，随时随地开启电影级创作。&lt;/p&gt;
-&lt;p&gt;在系统层面，荣耀Robot Phone首发YOYO Pro模式。同时荣耀联合阿里巴巴千问大模型深度共创了面向手机场景优化的终端大模型解决方案，为颠覆性的具身智能体验提供了澎湃的底层算力支撑。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/ce657312918e4a1cbc9c56aeb70a08a5.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_ce657312918e4a1cbc9c56aeb70a08a5.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;全新YOYO自动执行支持连续完成超过100步复杂任务，实现超长任务一句话搞定、跨越生态一句话联动。更重要的是，荣耀Robot Phone支持行业领先的开放Skills智能生态。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/f987b3025657463d8d7cbe016b0f0e41.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_f987b3025657463d8d7cbe016b0f0e41.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;打开全新YOYO技能商店即可一键安装Skills，让YOYO学会更多炫酷新技能。如果你是一位创客，荣耀还开放了100余项系统资源，可以一起动手创造属于自己的创意功能。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;硬件配置方面，荣耀Robot Phone采用6.31英寸直屏，搭载第五代骁龙8至尊版平台，后置2亿像素主摄、5000万像素超广角以及2亿像素长焦镜头，电池容量为7060毫安时，支持120W闪充和50W无线充电，机身重量为248克。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260812/2ea14e22dbf04bb1aea0ed1c317a70e0.jpg" target="_blank"&gt;&lt;img alt="荣耀Robot Phone发布：全球首款机器人手机 9999元起" h="200" src="//img1.mydrivers.com/img/20260812/s_2ea14e22dbf04bb1aea0ed1c317a70e0.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 12:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1aX2VPZWZTLXNZREs5ZjJXSzNSSVI1b3JIS1FhcUJRWnNOak9hcTVqdDM3ejJIcEhRc2pQQ2lTMUZ5dTFIV3dJN1lidGJoZ0xHbFU2NlNwTE4</guid></item><item><title>3999元！影石X6正式发布：1/1.1英寸大底 支持8K 50帧全景视频 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143293.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技8月12日消息，今晚，影石发布十年旗舰全景相机Insta360 X6，国行定价3999元起，硬件迎来全方位升级。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;机身重196g，尺寸50 x 100×40mm，提供极夜黑、灵动白两款配色；正面配备2.32英寸OLED全面屏，峰值亮度1200尼特，支持屏下压力感应按压开拍、息屏参数显示。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/b45580cc-3fcc-481f-bd91-b8014009f030.png" target="_blank"&gt;&lt;img alt="3999元！影石X6正式发布：1/1.1英寸大底支持8K 50帧全景视频" h="437" src="//img1.mydrivers.com/img/20260812/Sb45580cc-3fcc-481f-bd91-b8014009f030.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;整机搭载两颗索尼联合定制1/1.1英寸方形CMOS传感器，对比前代X5的1/1.3英寸底，感光面积提升33%，单像素进光量涨幅达300%，大幅改善夜景、逆光、室内弱光环境噪点控制，明暗动态范围更均衡。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;搭配4nm AI三芯方案，1颗高通旗舰AI芯片搭配两颗专业影像芯片，算力提升500%、主频提升106%、整机功耗降低35%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/542022cc-202b-4240-ba56-ecbb482ee7b8.png" target="_blank"&gt;&lt;img alt="3999元！影石X6正式发布：1/1.1英寸大底支持8K 50帧全景视频" h="365" src="//img1.mydrivers.com/img/20260812/S542022cc-202b-4240-ba56-ecbb482ee7b8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;视频拍摄规格全面升级，全景模式最高支持8K 50fps录制，兼容6K、4K多档高帧率，子弹时间最高4K 240fps；平面模式可拍摄5K 60fps、4K 120fps 170°超广角画面。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;全系支持10bit色深、I-Log灰片，也是影石首款原生支持全景杜比视界的机型，色彩层次丰富，专业后期空间充足；全景静态照片最高输出1.2亿像素，后期裁切、二次构图余量充足。&lt;/p&gt;
-&lt;p&gt;搭载第二代可换镜头模组，标配标准全景镜片，可按需更换广角、潜水专用镜片，适配骑行、潜水、vlog多元拍摄场景。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/40d58ffc-c01c-40b0-93e8-4045f63520b0.png" target="_blank"&gt;&lt;img alt="3999元！影石X6正式发布：1/1.1英寸大底支持8K 50帧全景视频" h="439" src="//img1.mydrivers.com/img/20260812/S40d58ffc-c01c-40b0-93e8-4045f63520b0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;内置自研PanoMind多模态全景AI模型，核心实现全自动剪辑，设备闲置充电时自动解析全部素材，&lt;/strong&gt;智能筛选高光片段、匹配运镜轨迹、适配配乐与滤镜，零基础无需手动剪辑即可生成成片，一键成片2.0功能两秒输出成品短视频。&lt;/p&gt;
-&lt;p&gt;AI追踪能力升级，可自动锁定人物、宠物、车辆主体持续跟拍；新增云台直出模式，拍摄时同步留存8K全景原始素材，同时直接输出4K平面成片，省去二次导出步骤。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260812/df7de720156341a78092ea3c63519894.png" target="_blank"&gt;&lt;img alt="3999元！影石X6正式发布：1/1.1英寸大底支持8K 50帧全景视频" h="613" src="//img1.mydrivers.com/img/20260812/s_df7de720156341a78092ea3c63519894.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;升级FlowState六轴防抖算法，骑行、滑雪、跑步等剧烈运动场景画面稳定，同时内置专业风噪抑制麦克风，户外收音清晰干净。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;内置2600mAh大容量电池，标准8K录制最长可续航233分钟，快充22分钟即可充至80%，长线出行减少充电频次。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/ff2b4a33-f748-4ead-a597-c6d015d0a02c.png" target="_blank"&gt;&lt;img alt="3999元！影石X6正式发布：1/1.1英寸大底支持8K 50帧全景视频" h="419" src="//img1.mydrivers.com/img/20260812/Sff2b4a33-f748-4ead-a597-c6d015d0a02c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;存储方面内置64GB机身存储，可用空间47GB，&lt;/strong&gt;&lt;/span&gt;同时支持V30及以上规格microSD卡拓展；连接规格搭载Wi-Fi 6、蓝牙5.3、NFC一碰直连，无线传输最高100MB/s，USB3.1有线传输可达450MB/s，素材导出高效。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;标准版（单机套装）售价3999元，含主机、标准镜头、镜头保护盖、基础配件；高配全能套装4699元，额外附赠隐形自拍杆、潜水镜片、充电收纳盒、便携收纳包。&lt;/strong&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 12:42:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5NVEtPamoxZUtHUUhWc3c0QnE5VjVOenUtLU41U3NZNEkzaVBZUXVNNWZFMEdELUdSalZLdzFfVmNwN29nOFFzemgzMnN5aXNjQWhMcjBvY3I</guid></item><item><title>手机也能跑《巫师3》！努比亚Z70 Ultra改装成Linux电脑：3A帧率稳定30FPS - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143292.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月12日消息，&lt;span&gt;&lt;strong&gt;近日一名Reddit玩家成功将努比亚Z70 Ultra手机，改造为一台运行Linux桌面环境的迷你主机。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这款魔改主机基于24GB内存版的努比亚Z70 Ultra打造，核心驱动力来自主频4.32GHz的高通骁龙8 Elite处理器。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/031369dd-2324-4e64-85b2-016ad6f9a5ae.jpg" target="_blank"&gt;&lt;img alt="手机也能跑《巫师3》！努比亚Z70 Ultra改装成Linux电脑：3A帧率稳定30FPS" h="800" src="//img1.mydrivers.com/img/20260812/S031369dd-2324-4e64-85b2-016ad6f9a5ae.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该玩家通过Termux终端工具，在Android系统内核之上搭建了Linux用户态运行环境，同时搭配Box64、Wine、DXVK等多层工具链，最终实现了PC端Windows游戏的运行，并成功连接上外接显示器。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;为了解决散热问题，该玩家还把手机后壳拆掉，并加装了两个大型塔式CPU散热器，随后将整套系统安置在透明的亚克力机箱内，通过外接移动电源供电。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;实测结果显示，这台手机版Linux电脑能以1080p分辨率、极高画质运行《巫师3：狂猎》，且全程帧率稳定在20FPS至30FPS之间。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/1921265a-80d4-483e-a21b-f132f1d8c441.jpg" target="_blank"&gt;&lt;img alt="手机也能跑《巫师3》！努比亚Z70 Ultra改装成Linux电脑：3A帧率稳定30FPS" h="450" src="//img1.mydrivers.com/img/20260812/S1921265a-80d4-483e-a21b-f132f1d8c441.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;除此之外，该系统还在3DMark Wild Life Extreme压力测试中跑出了99%的惊人稳定性。&lt;/p&gt;
-&lt;p&gt;也就是说顶级移动SoC在外置散热、摆脱手机原生温控限制后，图形性能已经能够摸到入门游戏电脑的门槛。&lt;/p&gt;
-&lt;p&gt;目前这名玩家还在持续优化软件，尝试进一步提升游戏帧率。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 12:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5YdUotNmE2b0JtZ0FuRWtLMWlyTDVYeVNDQVNjOTVaNUJkWDNvTnpoQUpFbjhZMGJuZEFZeDJqN19ESzlJX2xJQ0d5UklTbTRfTHFzWXM1YUY</guid></item><item><title>iOS 27曝光苹果AI收费：想让iPhone更聪明？得加钱 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779296</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 12 Aug 2026 12:18:18 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFAwc2VOTGFwZmFxQ2hYaW1Hbm5TY05IVF9LYkt4X2hidzRkeXNZazQyNFoteE5Sa1VSYlVMelViaThEX0wwemc1T0FxRmt2akVKcGJj</guid></item><item><title>苹果iPhone 19上16GB悬了：内存、闪存涨价 成本飙升2000块 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143286.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月12日消息，安卓阵营的旗舰机普及16GB内存已经两年了，苹果iPhone还要高配才有12GB内存，然而这一波内存闪存大涨价，iPhone 19明年上16GB内存也悬了。&lt;/p&gt;
-&lt;p&gt;对于内存、闪存涨价，苹果比其他手机厂商都有更强的应对能力，一方面是苹果本身利润远高于安卓厂商，iPhone毛利率长期维持在40%左右，另一方么则是苹果拥有业界最强的供应链能力。&lt;/p&gt;
-&lt;p&gt;然而今年遭遇的内存、闪存大涨价连苹果也吃不消，此前的财报会议上苹果形容这次的涨价是百年一遇的大洪水，他们的备货预计在秋季就面临着巨大的成本压力。&lt;/p&gt;
-&lt;p&gt;今年的iPhone 18 系列会不会涨价，涨多少？苹果现在也在犯愁，这将成为新任CEO第一个考验。&lt;/p&gt;
-&lt;p&gt;市场调研公司Counterpoint Research之前就做过分析，以12GB内存+1TB闪存的配置为例，iPhone 17 Pro Max还能将总成本控制在500美元，&lt;span&gt;&lt;strong&gt;iPhone 18 Pro Max就不行了，硬件成本增长超过300美元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="苹果iPhone 19上16GB悬了：内存、闪存涨价 成本飙升2000块" h="435" src="//img1.mydrivers.com/img/20260812/9c96b371-1a2f-4813-9fb8-3b9a8605b47e.jpg" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;虽然这是旗舰机型的配置才会涨2000块钱的成本，但其他配置也不会少太多，丐版机型恐怕也要涨1000左右，&lt;strong&gt;苹果要想不降低自己的毛利率，涨价幅度恐怕要达到2000-4000元才行，顶配轻松卖到2万块钱。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;内存涨价还有个后果，那就是会影响苹果下一代机型的配置升级，&lt;strong&gt;明年的iPhone 19系列本来该升级16GB内存了&lt;/strong&gt;，毕竟苹果也需要搞AI了，然而在凶猛的涨价限制下，明年上16GB内存就有点悬了。&lt;/p&gt;
-&lt;p&gt;要知道2027年正是公认的内存价格高峰期，这个时候升级内存容量显然是不划算的，而且苹果的订单一签就要好多年，如果在高位锁死了订单，会影响未来几年的成本。&lt;/p&gt;
-&lt;p&gt;苹果以前还可以靠着自己的地位压价，轻松拿捏内存厂商，如今时代变了，美光都敢直接怼苹果了，三大巨头目前不在乎苹果的施压了，反而需要苹果去求他们，否则供应量都不够的话，iPhone、iPad及Mac电脑销量才是致命的。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="苹果iPhone 19上16GB悬了：内存、闪存涨价 成本飙升2000块" h="400" src="//img1.mydrivers.com/img/20260812/66aa2d83-52d2-4499-b8ae-451d23dfb7cc.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 12:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9rcDJZQXFfYzZRWUJ5WmxQUld3dlNKbEZFRjdCa0hycDIyVHRVZ1NLRmZnWVAwTllfUTFSSjZMSnpLRXBBRGxndHVqLXhhVUxHN09FcjhqeWQ</guid></item><item><title>苹果客服回应现山寨版政务APP：软件的上架与下架由相应团队负责 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143285.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;苹果客服回应现山寨版政务APP：软件的上架与下架由相应团队负责&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-12 20:06:49  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1718599.html" title="哈尔的主页" class="newstiao4"&gt;哈尔&lt;/a&gt;&lt;p&gt;  编辑：哈尔 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143285-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月12日消息，据媒体报道，&lt;strong&gt;近日，福建政务服务App统一平台（闽政通App）在苹果应用商店出现疑似“山寨”版本。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;不少用户查询发现，苹果应用商店里的App名为“闽证通”，下载页标注是“民政便民服务应用”，但开发者处显示为个人姓名。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;不过，该App仅能在苹果应用商店内搜索到，用几款安卓系统手机尝试时，未搜索到此App。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;公开资料显示，闽政通是由福建省委省政府主办、福建省经济信息中心承建的福建省政务服务App统一平台。&lt;/p&gt;
-&lt;p&gt;针对该情况，闽政通App方面回应称，“闽证通”是山寨版App，闽政通App开发者为福建省电子政务建设运营有限公司，建议群众报警或投诉手机软件商店处理，规避山寨软件。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;而苹果官方接线客服表示，苹果应用商店中软件的上架与下架由具体的团队负责，关于软件的相关情况会反馈相关部门处理，用户也可以在软件页面点击投诉处理。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;同时，该客服表示，目前暂未接到相关山寨政务APP的类似投诉。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="果客服回应现山寨版政务APP：软件的上架与下架由相应团队负责" h="1242" src="//img1.mydrivers.com/img/20260812/ee23c614-2c9d-41cb-95e7-09c63751068b.png" w="600"&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：哈尔&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 12:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9pU1dKbm1KeW9CTEpxY0lxVnFXeTNBQnV6Z0dEY3ZYdVczNEFVUkZRSkw3TFZRc0ozdk1DUG83SE9rbW5sSmFieldKVDFoUFFzMEJPYlZaN1A</guid></item><item><title>华为昇腾出手了！智能体推理慢的根因终于被找到：首Token时延砍半、存储省25% - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143282.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月12日消息，由华为2012实验室、华为云、计算、终端等团队联合打造的开源智能体平台openJiuwen，近日联合昇腾推出了一项名为“算力亲和”的全链路协同技术。&lt;/p&gt;
-&lt;p&gt;该技术打通了Agent框架、推理引擎与底层算力之间的协同壁垒，通过让KV Cache（键值缓存）从被动管理走向主动协同，&lt;span&gt;&lt;strong&gt;使Agent推理的首Token时延降低57%以上，推理存储占用峰值下降25%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/1d8e82da-3b65-48ed-bd01-7dce00e61775.png" target="_blank"&gt;&lt;img alt="华为昇腾出手了！智能体推理慢的根因终于被找到：首Token时延砍半、存储省25%" h="300" src="//img1.mydrivers.com/img/20260812/S1d8e82da-3b65-48ed-bd01-7dce00e61775.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;随着AI Agent应用日益复杂，单个任务可能持续数十分钟甚至数小时，多个Agent还需分工协作。任务越长、协作的Agent越多，推理过程中产生的KV Cache就越庞大，推理时延也越久。&lt;/p&gt;
-&lt;p&gt;然而，传统推理引擎只能看到请求和缓存，却看不懂Agent正在做什么。如果子任务已经结束，缓存可能还停留在昂贵的NPU显存里；如果会话暂时挂起时，缓存却继续占着最贵的资源位置。&lt;/p&gt;
-&lt;p&gt;这背后的核心问题是：Agent掌握任务状态，引擎掌握算力资源，两者之间缺一条传递语义的通道。&lt;strong&gt;openJiuwen的解法是在Agent与推理引擎之间建立一套“状态契约”，即Agent Hint。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/4856ad28-2b8e-4a6d-8584-733ba504e922.png" target="_blank"&gt;&lt;img alt="华为昇腾出手了！智能体推理慢的根因终于被找到：首Token时延砍半、存储省25%" h="151" src="//img1.mydrivers.com/img/20260812/S4856ad28-2b8e-4a6d-8584-733ba504e922.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Agent在关键状态变化时发出Hint信号，告诉引擎当前会话的生命周期状态；引擎据此执行对应的缓存动作：驱逐、卸载、预取。缓存不再只有“留在显存”或“排队等淘汰”两种命运，而是随任务节奏在存储层级间主动流动。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/e69d68ae-4249-4728-a363-373dabe5917b.png" target="_blank"&gt;&lt;img alt="华为昇腾出手了！智能体推理慢的根因终于被找到：首Token时延砍半、存储省25%" h="237" src="//img1.mydrivers.com/img/20260812/Se69d68ae-4249-4728-a363-373dabe5917b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;测试结果显示，&lt;strong&gt;开启算力亲和后，模型请求端到端时延降低27.61%，前缀缓存命中率提升33%，池化缓存使用量峰值降低25.24%。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当前这套能力即将开源，感兴趣的开发者可以关注openJiuwen开源社区。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260812/5ee4bb64bc594cf29695482e815a83db.jpg" target="_blank"&gt;&lt;img alt="华为昇腾出手了！智能体推理慢的根因终于被找到：首Token时延砍半、存储省25%" h="450" src="//img1.mydrivers.com/img/20260812/s_5ee4bb64bc594cf29695482e815a83db.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 12:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBVSUZzRWJXcFJlSEdvS255Uk95UXFmVlBDNHpvdWNTaWhKZENhVUVUeVJzZjUwOGEtdkUwNndNRWtHSmZCU3AzUHFUMjNJdnBEM1VFVTFBTHo</guid></item><item><title>美议员向AI三巨头施压：立马暂停AI开发 否则将出手干预 - 驱动之家</title><link>https://news.mydrivers.com/1/1143/1143280.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;美议员向AI三巨头施压：立马暂停AI开发 否则将出手干预&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-12 19:59:54  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1774704.html" title="知敏的主页" class="newstiao4"&gt;知敏&lt;/a&gt;&lt;p&gt;  编辑：知敏 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1143280-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月12日消息，&lt;span&gt;&lt;strong&gt;据报道，近期，美国参议员伯尼・桑德斯致信OpenAI、Anthropic、Meta三大AI企业，勒令其立刻暂停AI人工智能研发。并明确放出警告：若行业不主动约束开发节奏，参议院将出台政策强制介入干预。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;桑德斯此次施压并非凭空提出诉求，而是以三家企业早年发布的安全承诺为核心依据。此前三家厂商均对外表态，一旦AI技术突破现有安全管控体系，会主动暂缓模型迭代与新品落地。&lt;/p&gt;
-&lt;p&gt;但近期多起风险事件，让议员认定行业已经越过安全红线。过去一个月，三家企业先后出现AI智能体脱离隔离沙箱、私自入侵外部企业服务器的违规事件，相关行为已经触及美国网络安全法规。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;更值得警惕的是，近期出现利用AI推演新型病毒结构的案例，这类技术一旦被不法分子滥用，有潜力制造生物武器，引发大规模公共安全灾难。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;信函中提到，头部企业每年投入数百亿美元加码大模型研发，但现阶段行业仍无法完整预判、约束高级AI的自主行为，不少顶尖人工智能科学家也多次呼吁建立全球统一的安全管控机制。&lt;/p&gt;
-&lt;p&gt;桑德斯直言，当下叫停技术扩张仍有机会规避潜在灾难，各大企业不应持续研发人类难以掌控的智能系统。&lt;/p&gt;
-&lt;p&gt;除参议员的公开信外，众议院多名民主党议员同步推进施压动作，联名致信众议院议长，申请安排三家AI巨头高管出席国会专项听证会，双线并行推动行业规范落地。&lt;strong&gt;不过目前三家企业均未回应全面停摆研发的要求，仅OpenAI宣布放缓部分实验模型的开发进度。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260812/bc5e8337-a724-4aa0-bc21-d2ed31c97760.png" target="_blank"&gt;&lt;img alt="美议员向AI三巨头施压：立马暂停AI开发 否则将出手干预" h="328" src="//img1.mydrivers.com/img/20260812/Sbc5e8337-a724-4aa0-bc21-d2ed31c97760.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知敏&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 11:59:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9JSDBuYUhpR24tN0pWTTB5TWZGc05xTDk3VUw5UGotM0hmX211d1BDOEFTb281Q3hLVEFvQ3NrcTZoNS1DYkdxenozem9DU29hMjBXeGxoTVg</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 12 Aug 2026 14:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4tZU5USTE4dWhuYXV0c21tVVl4OW9TR3dIdE5zODBGTjBmXzZPRlhQenVYSUdFYTFxQ3VqbWRFQzhXRDE1dDUxUGxZTmNnS1lIeUMzQmpyWWQ</guid></item><item><title>528 亿砸下去，腾讯要换估值锚 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779302</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 12 Aug 2026 13:45:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1ERDl1SXQ4LVFsTGgwV2pCUFNBMUpyREhrUzVIb1VIOTFSTF9UZ0MxSVlPbEtLN0pSVlF4cTZSZEh4S0w4MDRjRkZNWlBNMkRRcW9F</guid></item></channel></rss>
