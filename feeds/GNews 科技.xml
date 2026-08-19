@@ -1,5 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>联力B4-mATX铁网版机箱首发449元起：全Mesh面板设计 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144734.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>内存SPD芯片曝重大漏洞！可完全绕过Windows防线：数亿台PC受威胁 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144782.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，英国伯明罕大学与杜伦大学安全研究团队，&lt;span&gt;&lt;strong&gt;发现一种名为“Download More RAM”的新型攻击手法，利用内存上的SPD芯片瓦解Windows 11 VBS防线，影响全球数亿台PC。&lt;/strong&gt;&lt;/span&gt;微软已确认漏洞存在并登记为CVE-2026-23670，已紧急发布补丁进行缓解。&lt;/p&gt;
+&lt;p&gt;VBS与硬件强制代码完整性（HVCI）是微软近年来构建的Windows安全基石，利用硬件虚拟化技术建立隔离的安全核心，保护系统密钥、防毒进程和操作系统内核，即便攻击者拿到Administrator或SYSTEM权限，也无法篡改安全核心内的数据。&lt;/p&gt;
+&lt;p&gt;研究团队发现，攻击者只需用户执行恶意软件，就能通过系统MSR修改内存模组上SPD芯片的配置信息。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/86281502-2c3f-4c25-a0af-8beccd9c0aaa.png" target="_blank"&gt;&lt;img alt="内存SPD芯片曝重大漏洞！可完全绕过Windows防线：数亿台PC受威胁" h="152" src="//img1.mydrivers.com/img/20260819/S86281502-2c3f-4c25-a0af-8beccd9c0aaa.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SPD芯片主要负责向主板报告内存容量和时序参数，&lt;strong&gt;黑客可将SPD报告的内存容量修改为实际值的两倍，系统重启后误以为安装了双倍内存，从而产生多余的内存地址。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这些虚拟地址与真实物理内存形成"内存别名"，攻击者借此绕过内核权限限制，建立直通内存底层的后门，攻破VBS安全区后直接读取系统内核机密数据，关闭防毒软件和端点检测响应（EDR）系统，最终取得整个系统的最高控制权。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;伯明罕大学教授Tom Chothia表示，团队已开发出一键式自动化脚本，完成从内存别名建立到系统重启禁用防毒的完整攻击链，全程无需用户交互。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/110ac42594714df4bc312988ff7dda2b.jpg" target="_blank"&gt;&lt;img alt="内存SPD芯片曝重大漏洞！可完全绕过Windows防线：数亿台PC受威胁" h="337" src="//img1.mydrivers.com/img/20260819/s_110ac42594714df4bc312988ff7dda2b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;研究团队对市面主流DDR4和DDR5内存抽样调查发现，大部分PC品牌内存的SPD芯片完全没有写入保护机制。只有部分入门级内存因不需要挑颗粒体质，采用了一次性写入的SPD芯片，内容才无法被修改。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微软已发布补丁进行安全优化，但由于漏洞根源涉及消费级内存架构与硬件层的交互逻辑，目前补丁仅能做到部分缓解。&lt;/strong&gt;彻底消除此类攻击，需要硬件厂商与微软更深入地优化内存控制器规范及底层架构保护。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/721456ee189b4e52900611c2455aea4a.jpg" target="_blank"&gt;&lt;img alt="内存SPD芯片曝重大漏洞！可完全绕过Windows防线：数亿台PC受威胁" h="399" src="//img1.mydrivers.com/img/20260819/s_721456ee189b4e52900611c2455aea4a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 04:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA1TUJ1M0FMVm44MnlpVzdrbk95Ym03V1lrU1pnS1JXWkNwX3Z6UVZpQ1VtYkZXMnpBdzdNUWo3ZU5YN1V1Q1RQTXNqaEFOU0VvQkJ2UzRuazY</guid></item><item><title>中国放行小批量英伟达H200芯片 字节、腾讯各获1万片 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144764.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;中国放行小批量英伟达H200芯片 字节、腾讯各获1万片&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-19 12:08:30  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144764-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，据媒体报道，&lt;strong&gt;英伟达旗下H200芯片已开始小批量进入中国市场。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据知情人士透露，&lt;span&gt;&lt;strong&gt;字节跳动和腾讯近几周分别收到约1万颗H200处理器，其他数家中国科技企业也有望在短期内获得类似供应。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;不过，尽管美国已批准每家中国企业最高可购买10万颗H200芯片，但截至目前，实际获准放行的数量仅为小规模批次，整体供给依然严格受限。&lt;/p&gt;
+&lt;p&gt;上个月，&lt;strong&gt;中国AI公司月之暗面发布K3模型，其性能已接近美国最先进水平。随后，阿里巴巴、DeepSeek等企业也陆续推出智能水平相近的模型，显示中美头部实验室之间的技术差距正持续收窄。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在算力使用策略上，中国实验室越来越多地采用国产芯片承担AI推理任务（如实时响应生成），而模型训练阶段——即构建知识结构、模式识别等更复杂的计算环节——仍主要依赖英伟达芯片。&lt;/p&gt;
+&lt;p&gt;截至目前，英伟达、字节跳动及腾讯均未就上述供应情况作出公开回应。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/a251be678dad463bb27684610ffbe9cb.png" target="_blank"&gt;&lt;img alt="中国放行小批量英伟达H200芯片 字节、腾讯各获1万片" h="338" src="//img1.mydrivers.com/img/20260819/s_a251be678dad463bb27684610ffbe9cb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 04:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBOdFJWWjVLOU80c2I0T1F3WHJJajR4Y2RHMTlqOW9SRUcyWXR5eUpnMHVIRjlLWkI3czFZcjlySVFXZkEweXBaUERLWEozajdibmdFTjRhUzU</guid></item><item><title>全球规模最大！京东“狼族”机器人集体亮相：智狼、飞狼、独狼 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144761.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，&lt;strong&gt;2026世界机器人大会在北京亦庄开展，京东物流带来了全栈自研的“狼族”机器人军团。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是目前全球规模最大的、由AI驱动的供应链机器人军团，覆盖仓储、拣选、搬运、配送全链路环节。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;这次现场展出3款主力机器人，分别是智狼、飞狼、独狼。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;智狼是货到人系统&lt;/strong&gt;，搭配飞梯和搬运机器人一起干活，最快1分钟就能把货箱送到拣货员跟前，把传统人找货的模式改成货找人，提升仓库拣货的效率。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;飞狼是物流无人机&lt;/strong&gt;，支持空投、吊装、腹舱3种作业模式。国内已经开通超过100条无人机航线，在山区环境，最快3分钟就可以完成配送。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;独狼是L4级无人配送车&lt;/strong&gt;，可以自己判断路况、躲避障碍物，深圳已经开通它的夜间配送线路。&lt;/p&gt;
+&lt;p&gt;整套机器人军团靠京东物流自研的超脑大模型2.0调度。这个大模型专门给供应链场景打造，不属于通用大模型，3分钟就能完成亿级包裹仿真推演，能够处理1000多个实际业务场景。&lt;/p&gt;
+&lt;p&gt;订单暴涨、运力不够的时候，系统会自动调整备货，分配人和机器的工作。这套智慧物流项目还入选了联合国全球数字经济灯塔案例，拿到国际认可。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/5b29a28c-ed69-4bc7-bb3b-15e4bcd77c19.png" target="_blank"&gt;&lt;img alt="全球规模最大！京东“狼族”机器人集体亮相：智狼、飞狼、独狼" h="450" src="//img1.mydrivers.com/img/20260819/S5b29a28c-ed69-4bc7-bb3b-15e4bcd77c19.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;除了展示“狼族”机器人军团，&lt;strong&gt;京东还带来叫“赛博医疗”的机器人维修服务站&lt;/strong&gt;。可以做故障排查、换电、性能检测、设备回收全流程维护，这套运维服务已经开到欧洲、中东市场。&lt;/p&gt;
+&lt;p&gt;简单来说，京东这次展出的不只是几台机器人硬件，而是一整套从调度作业到后期维护的完整落地方案。&lt;/p&gt;
+&lt;p&gt;想要让大量机器人在现实场景稳定跑起来，光硬件强远远不够，后台大模型调度加上完整的维修运维体系同样关键。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/bace56bf-a2e7-42a6-89e6-4df39ef78e5f.jpg" target="_blank"&gt;&lt;img alt="全球规模最大！京东“狼族”机器人集体亮相：智狼、飞狼、独狼" h="438" src="//img1.mydrivers.com/img/20260819/Sbace56bf-a2e7-42a6-89e6-4df39ef78e5f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 03:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5tdjdkOVR4TG4yQ0FaNDRqYWVQMl9rUEluLTN2Qlk0U3NaSWhHRHptS0twcXdnS3phM0hoUVJpOGE2VWt2b0dRalM1R2t5MFQ4aTRVU0FzM1k</guid></item><item><title>风水轮流转！日本人顶着烈日排队打卡影石相机店：还有人专门请假来 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144760.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;风水轮流转！日本人顶着烈日排队打卡影石相机店：还有人专门请假来&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-19 11:50:28  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1774704.html" title="知敏的主页" class="newstiao4"&gt;知敏&lt;/a&gt;&lt;p&gt;  编辑：知敏 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144760-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，&lt;span&gt;&lt;strong&gt;据报道，近日，中国影像品牌影石Insta360在日本东京浅草开出首家旗舰店，开业当天不少日本消费者背着佳能、松下相机，在酷暑中排起长队，等待进店体验。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;门店选址在浅草寺旁，这是日本最具代表性的文化地标之一，区域年客流量达数千万级。&lt;strong&gt;据悉，新店原定于下午1点正式迎客，但早上8点左右已有人到场排队，其中还有特意请假前来的消费者。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/bba58baa-2bb2-4d91-9ada-f89e17d78ac2.png" target="_blank"&gt;&lt;img alt="风水轮流转！日本人顶着烈日排队打卡影石相机店：还有人专门请假来" h="413" src="//img1.mydrivers.com/img/20260819/Sbba58baa-2bb2-4d91-9ada-f89e17d78ac2.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为避免顾客在高温下长时间等候，店方提前发放了入场券。当天，日本国民级IP Hello Kitty还以"一日店长"的身份亮相，消费者可现场上手体验并预订最新款全景相机Insta360 X6。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;排队人群中，一位拥有近30年摄影经验、长期使用松下和尼康的日本消费者则表示，自己此前从未接触过全景相机，最终选择影石并非因为硬件参数，而是其软件体验更具吸引力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/e72cfd79-ba3f-4adc-9203-40319ff24d32.png" target="_blank"&gt;&lt;img alt="风水轮流转！日本人顶着烈日排队打卡影石相机店：还有人专门请假来" h="337" src="//img1.mydrivers.com/img/20260819/Se72cfd79-ba3f-4adc-9203-40319ff24d32.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;产品层面，Insta360 X6支持360°全景拍摄、自拍杆自动"隐形"及AI自动剪辑。上市后，该机型在国内包揽天猫、京东、抖音三大平台全景相机品类销量第一。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;海外则拿下美国、德国、日本亚马逊站点单品销量榜首。在日本本土，影石已进驻1500家线下量贩店，登顶乐天销售榜，并包揽友都八喜品类榜单前四。据IDC数据，2026年一季度影石全球全景相机市场份额达71%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;影石创始人刘靖康表示，日本是相机产业强国，拥有众多知名品牌，影石正在通过"硬件+算法+ AI +内容生态"的整合体验打造全球认可的创新产品。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/44c52c53-a7f6-49cc-bf5e-1dd39e396a31.png" target="_blank"&gt;&lt;img alt="风水轮流转！日本人顶着烈日排队打卡影石相机店：还有人专门请假来" h="383" src="//img1.mydrivers.com/img/20260819/S44c52c53-a7f6-49cc-bf5e-1dd39e396a31.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知敏&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 03:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9fV3JHekFBNFFIUTZqckdvTVphSUhyOHJBMkFTQmZwbzBsRVlieUJvR2xjVktOLXM1dkdseUh1cjBPdzhwR2tVcFl6SmZld2o3XzNnQjNVOTc</guid></item><item><title>429元 小米智能摄像机视频通话版2发布：3.97英寸彩屏 老人孩子看护神器 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144753.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，今日，&lt;span&gt;&lt;strong&gt;小米智能摄像机视频通话版2在小米商城、小米有品上架，将于8月26日10:00开启众筹，众筹价429元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据介绍，小米智能摄像机视频通话版2配备3.97英寸彩色屏幕，分辨率为480x800，并采用更大尺寸按键设计，进一步降低操作门槛，对老人和儿童更加友好。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新机支持手机微信视频通话、米家视频App通话以及两台摄像机之间的视频通话，并提供手势呼叫、一键呼叫和联动呼叫三种方式，&lt;/strong&gt;适用于独居老人、儿童独自在家等使用场景。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/1d09347a34a44437b2bb121e647d9a8d.png" target="_blank"&gt;&lt;img alt="429元 小米智能摄像机视频通话版2发布：3.97英寸彩屏 老人孩子看护神器" h="607" src="//img1.mydrivers.com/img/20260819/s_1d09347a34a44437b2bb121e647d9a8d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;音频方面，产品内置双麦克风和大直径扬声器，支持智能降噪，在提升拾音效果的同时增强外放音量，让老人等用户更容易听清通话内容。&lt;/p&gt;
+&lt;p&gt;此次新品还新增水平电子云台，支持360°水平视角以及0°-30°手动俯仰调节，可覆盖更大范围的室内画面。&lt;/p&gt;
+&lt;p&gt;同时，其内置940nm红外补光灯，在暗光或夜间环境下也能保持较为清晰的监控画面。&lt;/p&gt;
+&lt;p&gt;画质方面，&lt;strong&gt;小米智能摄像机视频通话版2升级至800万像素，分辨率达到3840x2160，支持4K超高清视频拍摄，&lt;/strong&gt;相比上一代进一步提升画面细节表现。&lt;/p&gt;
+&lt;p&gt;新机搭载1.5T算力芯片，运算能力较上一代提升50%，可运行更复杂的AI算法，从而提升场景识别和检测能力。&lt;/p&gt;
+&lt;p&gt;此外，小米智能摄像机视频通话版2支持小米澎湃智联，可与多种智能设备联动，并支持闹钟提醒、整点报时，以及温湿度、时间和天气等信息显示。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/abdc9aff0c4c41378a0a1eb167a318cd.png" target="_blank"&gt;&lt;img alt="429元 小米智能摄像机视频通话版2发布：3.97英寸彩屏 老人孩子看护神器" h="660" src="//img1.mydrivers.com/img/20260819/s_abdc9aff0c4c41378a0a1eb167a318cd.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/da78a77b164b4ce880f888ce9e1e0adf.png" target="_blank"&gt;&lt;img alt="429元 小米智能摄像机视频通话版2发布：3.97英寸彩屏 老人孩子看护神器" h="879" src="//img1.mydrivers.com/img/20260819/s_da78a77b164b4ce880f888ce9e1e0adf.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 03:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBxOUpRQWFVZ291ZGZ2NmNmSDY2VGhCaEpkV1VQTDhwSlQycUlpWWpIeHdzU251Sk9MV3NZZ0NqYVBYQUdHcHI4RlgwbmpfdVdmb21iQkhfVWI</guid></item><item><title>百度营收连续第五个季度下滑 在AI领域持续落后竞争对手 - zaobao.com.sg</title><link>https://www.zaobao.com.sg/news/china/story20260819-9540759</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;中国科技巨头百度营收连续第五个季度下滑，反映出这家搜索领域的龙头在人工智能（AI）面持续落后，同时广告业务表现低迷。&lt;/p&gt;&lt;p&gt;据彭博社星期二（8月18日）报道，截至6月底的三个月，百度营收降至313亿元（人民币，下同，59.3亿新元），与分析师平均预期的316亿元大致相符；净利润则降至23亿元。&lt;/p&gt;&lt;p&gt;在ChatGPT问世后的时代，这家中国搜索引擎龙头面临来自两方面的生存挑战。其利润率较高的广告业务，不仅正在被字节跳动等社交媒体竞争对手分流用户注意力，还面临新兴AI聊天机器人的冲击。&lt;/p&gt;&lt;p&gt;百度的文心大模型也落后于月之暗面等开放权重竞争对手，后者在一些关键指标上与美国OpenAI和Anthropic等美国大模型表现不相上下。&lt;/p&gt;&lt;p&gt;亿万富豪创始人李彦宏押注，竞争焦点将转向AI智能体和应用，由此开启新一轮市场争夺，并可能推动百度尚处于发展初期的云计算业务。尽管传统营销收入不断下降，该业务仍实现了高两位数增长。&lt;/p&gt;
+    
+  &lt;p&gt;与阿里巴巴和腾讯控股一样，百度也在加大对算力的投入，以满足训练和运行AI模型的需求。&lt;/p&gt;&lt;p&gt;彭博行业研究分析师利亚（Robert Lea）认为，百度的长期前景取决于能否将自身技术专长变现，并推动目前亏损的AI业务实现盈利。&lt;/p&gt;&lt;p&gt;他写道：“尽管AI有望帮助多个行业提高生产率、节省成本，但我们怀疑百度能否把握这一机遇，因为其规模不足以与中国大型科技平台竞争，而我们预计这些大型平台最终将主导该行业。”&lt;/p&gt;&lt;p&gt;利亚续指，在百度的AI商业化努力尚未产生可观收入之际，日益激烈的竞争已逐步削弱其在中国AI领域的领先优势。&lt;/p&gt;&lt;p&gt;另一方面，百度还在加码自动驾驶和硬件，以重新夺回竞争优势。其无人驾驶出租车服务正在国内外快速扩张。&lt;/p&gt;&lt;p&gt;与此同时，百度计划通过在沪港两地上市的方式分拆晶片业务昆仑芯，以把握市场对英伟达本土替代产品激增的需求。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>zaobao.com.sg</author><pubDate>Wed, 19 Aug 2026 03:17:17 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE11Q1dCOGRVRGJWTUthUmVQcUtLWHFBdEIyY0Nad1J0Q0JsZUF6OE5EdmhZNkF0RHBNS1I4andWOWFTdkxjYjZRYUZyTzJKdUZ4N2ZYOTNqdmRxc1lSNVN0OXdYZFFpVnNlekE</guid></item><item><title>联力B4-mATX铁网版机箱首发449元起：全Mesh面板设计 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144734.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;联力B4-mATX铁网版机箱首发449元起：全Mesh面板设计&lt;/p&gt;
           
@@ -65,7 +260,7 @@
   &lt;/div&gt;
        
          
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 02:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBMZU93Q1RtYkFxUkdlS3lCRllRR3V2TV9qM0tYMDBNamVfM2E3WHFlZnFJOHRMaGhMNzdGWDZ3YlYwc2JEemM5bHhBSmd4SkE4dzIyS2ZVdS0</guid></item><item><title>开盖版AMD锐龙9 9950X3D2开卖：售价近万元！ - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144725.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 02:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBMZU93Q1RtYkFxUkdlS3lCRllRR3V2TV9qM0tYMDBNamVfM2E3WHFlZnFJOHRMaGhMNzdGWDZ3YlYwc2JEemM5bHhBSmd4SkE4dzIyS2ZVdS0</guid></item><item><title>创业板跌超4%，宇树IPO首日大涨500%，芯片、算力齐跌，银行逆势活跃，恒科指跌超1%，百度大跌12% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779764</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 19 Aug 2026 02:28:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBCVXZvTzZwdHRTNng4cVM3MFlPdHFFYkRDMVo5bFdiMVJyekRvY0hSRXFqanliUWJhdkYxZ1pGVy1HS2hEeXJFWFl6eWFDRkJoRnp3</guid></item><item><title>开盖版AMD锐龙9 9950X3D2开卖：售价近万元！ - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144725.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;开盖版AMD锐龙9 9950X3D2开卖：售价近万元！&lt;/p&gt;
           
@@ -236,7 +431,80 @@
 	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt;
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 19 Aug 2026 02:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE5ONGJaVThwYktScEVNcktfVXR2TXdlV0loOElrdkhwNmlhdE9KN1RxVjFtMkpKZnp6YXV5UVI2cmpxUkVFVXduWWRFZ1phZVc3VWYxRlV4VWQ4WURHWkFyT01yQTM</guid></item><item><title>“AI股神”崩盘记：闻到“血腥味”后，华尔街“秃鹫”开启围猎 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779755</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 19 Aug 2026 01:58:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFB2NW9md0pMcGp3Q2RqVEFramlrOTNvVzNZc29HU29EX01xZk8xNUM1N2lkZXB4OUhjVVlGQktQc0lkZDBtcVUtaUJySFpDeEtqbFU4</guid></item><item><title>国内首款塔架回收火箭！跃迁一号联合静力试验成功 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144720.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 19 Aug 2026 02:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE5ONGJaVThwYktScEVNcktfVXR2TXdlV0loOElrdkhwNmlhdE9KN1RxVjFtMkpKZnp6YXV5UVI2cmpxUkVFVXduWWRFZ1phZVc3VWYxRlV4VWQ4WURHWkFyT01yQTM</guid></item><item><title>1100元/股！宇树科技上市开盘暴涨629%，市值超4449亿元 - finance.sina.com.cn</title><link>https://finance.sina.com.cn/jjxw/2026-08-19/doc-ininvfss8365430.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p cms-style="font-L"&gt;8月19日上午，&lt;span id="stock_sh688836"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh688836/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;宇树科技&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh688836"&gt;&lt;/span&gt;正式登陆科创板，成为A股“人形&lt;span id="stock_sz300024"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sz300024/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;机器人&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sz300024"&gt;&lt;/span&gt;第一股”。&lt;/p&gt;&lt;p cms-style="font-L"&gt;开盘后，宇树科技股价暴涨629.44%，报1100元/股。这意味着，投资者中一签（500股）宇树科技新股，浮盈达到47.46万元。&lt;/p&gt;&lt;p cms-style="font-L"&gt;此次上市，宇树科技发行价为150.80元/股，发行市值超600亿元。上市后，伴随着股价飙涨，其市值也暴涨至4449.06亿元。&lt;/p&gt;&lt;p cms-style="font-L"&gt;作为“杭州六小龙”之一，宇树科技主要专注于高性能通用人形机器人、四足机器人、机器人组件及具身智能模型的研发、生产和销售业务。2025年，该公司人形机器人出货量超5500台（不含轮式双臂机器人），出货量全球第一。&lt;/p&gt;&lt;p cms-style="font-L"&gt;最近几年，该公司经营业绩稳步增长。财务数据显示，2023年至2025年，宇树科技营收分别为1.59亿元、3.93亿元、16.99亿元；同期净利润分别为-0.11亿元、0.95亿元、2.78亿元。&lt;/p&gt;&lt;p cms-style="font-L"&gt;宇树科技的前身宇树有限成立于2016年8月26日，再过几天公司创立即将满10年。宇树科技今年3月20日IPO申请获受理，到今天正式挂牌上市，仅仅用时5个月，速度惊人。&lt;/p&gt;&lt;p cms-style="font-L"&gt;此次科创板上市，宇树科技发行股份数量为4044.6434万股，募资总额60.99亿元。此次募集资金将投资于四个项目，分别为智能机器人模型研发项目、机器人本体研发项目、新型智能机器人产品开发项目和智能机器人制造基地建设项目等。&lt;/p&gt;&lt;p cms-style="font-L"&gt;登陆资本市场，宇树科技成为A股“人形机器人第一股”。宇树上市的意义，不仅关乎这一家企业的发展和成长，对中国机器人产业来说意义同样重要。&lt;/p&gt;&lt;p cms-style="font-L"&gt;“它为A股填补了纯正人形机器人整机标的的空白。”南开大学金融学教授田利辉认为，宇树科技的上市，标志着中国人形机器人产业正式从“技术验证”与“讲故事”的阶段，迈入“盈利验成色”的商业化价值验证时代。同时，宇树科技还为整个赛道确立首个公开的“估值锚”——这不仅重塑资本市场的定价逻辑，更意味着行业将告别纯概念炒作，进入以真实订单、交付能力和财务数据为核心的优胜劣汰期。&lt;/p&gt;&lt;p cms-style="font-L"&gt;&lt;/p&gt;&lt;p cms-style="font-L align-Center"&gt;&lt;font cms-style="font-L align-Center"&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p id="app-kaihu-stock"&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>finance.sina.com.cn</author><pubDate>Wed, 19 Aug 2026 02:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE9DN24ySWZxOEpVNlZTLXRWQjh0SjNVY3B4TUVPRm0wWDB3MXh2R3ktOEFSNnZsSGtBcE9xZzBYNkdwSnRya2JDUWZCS1kxblA5MzhkWTRNdXp1WW5uNDl6OHBpRjJKWENSb2FSaUMxdFRqS085Vy02UA</guid></item><item><title>“AI股神”崩盘记：闻到“血腥味”后，华尔街“秃鹫”开启围猎 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779755</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 19 Aug 2026 01:58:45 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFB2NW9md0pMcGp3Q2RqVEFramlrOTNvVzNZc29HU29EX01xZk8xNUM1N2lkZXB4OUhjVVlGQktQc0lkZDBtcVUtaUJySFpDeEtqbFU4</guid></item><item><title>国内首款塔架回收火箭！跃迁一号联合静力试验成功 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144720.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月19日消息，今日，国产可回收商业火箭公司大航跃迁宣布，&lt;span&gt;&lt;strong&gt;其自主研发的国内首款塔架回收可重复使用运载火箭“跃迁一号”，顺利完成二级机架与贮箱后底联合静力试验。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;试验结果显示，各项指标均满足设计标准，试验任务取得圆满成功。&lt;/p&gt;
@@ -366,7 +634,179 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 01:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBITlRGLTY5a3lzcjBYaDNuM0p1ZmNQbjFYQU1FLUNjbUNWV0lzbGNfQkpqb2NrMmVSdFBJaGhZNEx5amlTOEFad1Qwa0Nqek96bzc0T282cGM</guid></item><item><title>叙利亚发现数吨核材料，将接受国际原子能机构合作监督 - 观察者</title><link>https://www.guancha.cn/internation/2026_08_19_827801.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 01:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBITlRGLTY5a3lzcjBYaDNuM0p1ZmNQbjFYQU1FLUNjbUNWV0lzbGNfQkpqb2NrMmVSdFBJaGhZNEx5amlTOEFad1Qwa0Nqek96bzc0T282cGM</guid></item><item><title>联想VS戴尔：万字长文拆解全球AI基建双雄的巅峰对决 - 风闻</title><link>https://user.guancha.cn/main/content?id=1716996</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+							&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204706892.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;曾航/文&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　凡时代变局之时，站到潮头者，皆非临时踏浪，而是漫长蛰伏之后的如期回响。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　8月13日，联想集团交出了一份史上最佳的季报。2026/27财年第一季度营收1834亿元人民币，同比猛增43%，经调整净利润首次突破10亿美元，同比增长176%，可以称之为本季度中国科技巨头最佳财报。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　支撑这一业绩的最主要发动机来自于AI算力基建订单爆发，联想的AI服务器储备订单——从上一季度的1400亿元飙升至超过3600亿元（约540亿美元）一个季度翻了两倍半。消息传出，联想集团当天股价暴涨超20%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　而就在两个多月前，联想最主要的国际对标企业——戴尔科技发布了同样炸裂的财报：2026/27财年第一季度营收438亿美元，同比增长88%，其中AI优化服务器收入161亿美元，同比暴增757%，期末AI服务器订单积压达513亿美元。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　1984年，19岁的迈克尔·戴尔在大学宿舍里攒出第一台电脑并创办了戴尔公司，同一年底，北京中科院的传达室里首次挂上联想公司前身的招牌。四十年来，两家公司从同一条PC赛道出发，却走出了截然不同的路径：一个靠创始人魄力激进并购、私有化转型，一个靠职业经理人团队稳健经营、全球化布局；一个All in企业级AI基础设施，一个致力于AI普惠，押注“端-边-云”混合式AI。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　两家同年诞生、以PC起家的老牌硬件巨头，如今又同时成为了全球AI算力基建的领导者。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　大部分人只看到了两家巨头抓住了AI算力风口业绩起飞，但是往往忽略的是，这两家巨头在多年前就开始着手布局AI算力基建赛道，许多动作早已刻进了企业基因里面。同时，这两家成立超过40年的企业，也都是穿越多个IT周期的破浪者。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　本文将从基因溯源、商业模式、财务表现、AI算力竞争、PC基本盘、全球供应链与地缘博弈、估值与周期等多个维度，系统比较这两家1984年生的科技巨头，试图用万字长文回答一个核心问题：在AI算力的盛宴中，谁的潜力更大？双方市值的巨大差异下，谁被明显低估？&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;1984：两种基因，两条路&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　1984年，正是世界个人电脑（PC）产业爆发的前夜，两家日后在全球IT产业中占据重要位置的企业一前一后诞生了。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在美国得州大学奥斯汀分校，19岁的医学预科新生迈克尔·戴尔在宿舍里嗅到了个人电脑的巨大商机。戴尔拿出自己的1000美元积蓄，在本地经销商手上低价收购滞销的IBM PC整机，拿回宿舍后拆开机器，加装更大的内存和硬盘，升级配件，再以比零售店低10%-15%的价格出售。他先接订单、收货款，再去采购零部件组装——这种“按订单生产”的直销基因，从宿舍时期便已形成，并延续至今。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　同年11月，在中国北京，中国科学院计算技术研究所的一间传达室里，40岁的柳传志带着10名科研人员、20万元启动资金，创办了联想的前身——“中国科学院计算技术研究所新技术发展公司”。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　80年代的中国，个人电脑尚属奢侈品，最大的采购方是国企、机关和科研院所，因此联想起家的基本盘是B端政企采购，后来才延伸至C端。联想早期主要靠代理IBM、惠普等品牌机，第一笔大订单来自中科院批量采购500台IBM电脑。此后，联想依托中科院技术推出汉卡，帮助进口英文电脑实现中文显示，形成了“进口整机+汉卡=中文电脑”的清晰商业模式，并依靠多层分销体系快速扩大规模——这种重视渠道伙伴的基因同样延续至今。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　此后很多年，戴尔一直是一家创始人主导的公司。迈克尔·戴尔至今仍控制着公司，COO杰夫·克拉克和CFO戴维·肯尼迪均在公司服务超过25年。这种治理结构的特点是决策链条短，不惮于短期业绩波动，在转型关键时刻敢于下注。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔1988年上市，又在2013年私有化退市。退市期间，没有了每季度财报的束缚，戴尔与银湖资本联手完成了科技史上最大手笔的收购之一——以670亿美元吞下EMC，将VMware、Pivotal等企业级软件资产一并收入囊中。这笔收购起初让戴尔背负沉重债务，但事后被证明极具远见：它一举补齐了戴尔在存储和虚拟化软件领域的短板，打通了从终端硬件到数据中心软硬件的完整IT堆栈，推动戴尔从PC厂商蜕变为全球企业级基础设施巨头。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　收购EMC之后，戴尔正式将企业愿景更新为“成为数据时代最重要的科技基础设施公司”。这与戴尔早期卖组装电脑的定位已有天壤之别——可以说，收购EMC之前的戴尔与之后的戴尔，几乎是两家公司。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204707634.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　（戴尔的发展和并购史）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔的创始人魄力同样体现在AI转型上：最近三年，戴尔每年裁员约10%，将更多资源集中投入AI，成效显著。在美国科技大厂纷纷砸钱增加资本开支、扩建算力基建时，戴尔吃到了大量的订单，业绩爆发。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　相比之下，联想的股权结构呈现“国有控股+管理层持股+国际机构”的混合模式。联想控股（中科院背景）为单一最大股东，杨元庆为个人最大股东，管理层高度稳定——杨元庆自2009年起担任CEO至今。联想集团是中国几乎唯一以职业经理人为主要治理结构的科技公司，其特点是稳健。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　与戴尔类似，并购在联想的发展中也起到了关键作用，其逻辑可概括为“买时间、补短板、买市场”：2005年以17.5亿美元收购IBM PC业务，一举跻身全球PC玩家行列；2014年以23亿美元收购IBM x86服务器业务（System x），切入企业级市场；同年以29亿美元收购摩托罗拉移动，拿到手机入场券；2026年4月收购Infinidat，补上高端存储最后一块拼图。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204708407.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　（联想的发展和并购史）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　事实证明，对中国企业而言，并购是国际化的最快路径。通过并购，联想迅速获得了品牌、销售渠道和人才队伍，形成了“生产研发以中国为主、销售营销高度国际化”的独特基因。尤其在品牌高端化方面，那些从低端市场起家的中国品牌在向上突破时往往举步维艰，而联想通过收购IBM PC和摩托罗拉等成熟高端品牌，少走了许多弯路。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想在2019年美国罗利誓师大会时，把企业的愿景改成了“智能，为每一个可能”，这同样是一个重大的方向转变，向个人和企业提供智能产品和服务，是一个比简单卖PC更宏大的愿景，尤其是这个愿景与此后几年到来的AI浪潮实现了合拍。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　相比戴尔，联想的基因里多了一些“中庸之道”：在加速转型的同时，也更看重组织、供应链和合作生态的长期稳定。它对供应商和合作伙伴的态度在业内有口皆碑，同时也是中国企业中少有的大量聘用外籍员工、在文化上真正实现国际化的公司。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　四十年回头看，联想和戴尔像两个性格迥异的同龄人。在AI大潮扑面而来的今天，它们也呈现出截然不同的战略选择。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204710515.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;财报里的分野：从PC到算力&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　虽然联想和戴尔都是靠卖PC硬件起家，但历经四十年发展，两家公司的商业模式早已发生巨大变化，不能再简单用“PC硬件厂商”来定义。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　最新一个财季，戴尔营收438亿美元，联想269亿美元，两家公司的营收都进入了高速成长期。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　毛利率方面，最新一个季度戴尔为17.8%，联想为16.5%，差距已大幅收窄。戴尔毛利率同比下滑3.3个百分点，联想毛利率则同比提升1.8个百分点，体现出产品结构优化与ISG利润率改善的成效。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　净利润方面，2026/27财年第一季度戴尔GAAP净利润34.4亿美元，同比增长256%，净利率约7.8%；联想经调整净利润10.75亿美元，同比增长176%，净利率约4.0%。两家净利润均呈爆发式增长，戴尔弹性更大，联想则胜在增长质量——联想的ISG经营利润率从上一季度的3.6%跃升至9.1%，SSG经营利润率超过24%，利润结构持续优化。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在投资者看重的ROE（净资产收益率）方面，联想近年表现亮眼：从2024财年的18.1%跃升至2025/26财年的27.5%。戴尔则是另一番景象——由于历史上大规模股票回购，戴尔股东权益为负约25亿美元，资产负债率超过100%，ROE指标失去意义。戴尔承诺将40%-60%的自由现金流回馈股东，大手笔分红和回购，这也是大多数美国上市公司的特点。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　从更长周期的复合年增长率（CAGR）来看，以两家业绩触底的FY2024为起点计算两年CAGR，联想营收CAGR约20.9%，戴尔为13.3%。净利润CAGR联想约为40%，同样高于戴尔的32.7%。这意味着联想在本轮AI周期中的增长加速度更快，且增长结构更为均衡。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　2025/26财年戴尔经营现金流高达112亿美元，联想为40亿美元，戴尔自由现金流75亿美元，联想约22亿美元。不过近几个季度联想现金流大幅改善：经营现金流从2025财年的11亿美元跃升至2025/26财年的40亿美元，主要受益于净利润增长和营运资本管理改善。相比之下，戴尔现金流波动较大——2025财年自由现金流骤降至19亿美元（2024财年为64亿美元），2025/26财年又回升至75亿美元，反映出AI服务器业务对营运资本的阶段性占用。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　分业务来看，PC和手机所在的联想IDG板块，依然是该公司基本盘，2025/26财年营收589亿美元，经营利润率7.2%；ISG营收192亿美元，经营利润率首次扭亏至0.38%；利润最高的SSG营收100亿美元，经营利润率达22.3%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想上周新发布的2026/27财年第一季度财报显示，该季度营收171.06亿美元，经营利润率7.1%；ISG营收85.10亿美元，经营利润率提高至9.1%，而上一季度为3.6%；利润最高的SSG营收28.84亿美元，经营利润率达24.2%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204710196.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　（2026/27财年第一季度，联想vs戴尔业务表现）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这种结构与苹果类似——苹果利润最高的是App Store和iCloud等互联网服务板块，而营收大头来自iPhone和iPad等硬件。联想SSG主要从事面向B端的生产性服务业，包括企业级IT运维、订阅式算力服务与行业AI数字化解决方案，未来想象空间大、利润率高。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　最新一个季度，联想营收269.5亿美元、调整后净利润10.7亿美元；戴尔营收438.4亿美元、Non-GAAP净利润32亿美元。两家均保持高增长，联想净利润增速176%，戴尔194%。值得注意的是，联想IDG以171亿美元反超戴尔CSG的146亿美元——随着AI PC爆发，联想的PC和手机基本盘也在猛增。而戴尔强在B端算力基建，Q1 ISG收入高达290亿美元，联想ISG加SSG合计114亿美元。北美AI巨头在算力资本开支上更为激进，戴尔直接受益。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　而两家公司都吃到了AI带来的算力基础设施红利。过去一个财年，戴尔核心算力业务ISG（基础设施方案集团）营收达608亿美元，占公司总营收的53.6%，已成为第一大收入来源。更惊人的是增速：2026/27财年第一季度（截至2026年5月），戴尔ISG单季营收高达290亿美元，同比暴增181%；其中仅AI优化服务器收入就达161亿美元，同比增长757%。戴尔预计全年AI服务器收入将达600亿美元——AI算力相关业务已彻底爆发。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　相比之下，联想ISG集团上一财年营收192亿美元，同比增长32%；利润最高的SSG方案服务业务全年营收100亿美元，同比增长19%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　两家公司在B端组织架构上有所不同：戴尔将全部企业算力、存储、软件及订阅服务整合进ISG单一业务单元，服务作为硬件增值配套内嵌其中，商用PC独立划归CSG，依托总部集权的直销团队主攻海外大型训练算力客户，统一考核整机柜综合收益；联想则采用硬件、服务二元分立的B端架构——ISG承载服务器、液冷、存储等算力硬件，SSG为独立财报披露的高利润服务集团。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　截至各自最新一季度：戴尔FY27 Q1末AI服务器积压订单（Backlog）达513亿美元；联想FY26/27 Q1末AI基础设施储备订单升至约540亿美元，而上一财季仅210亿美元，环比增长一倍半以上。两家企业都受益于AI算力基础设施的爆发，订单拿到手软。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204711543.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　（AI服务器积压订单对比）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　对比两家公司的业绩节奏：联想像一台匀速运转的发动机，三大业务均衡发力，ISG实现历史性突破，正式迎来从长期投入到利润爆发期的拐点。戴尔则像一台间歇性爆发的涡轮增压器，AI算力业务的弹性更大，但波动也更剧烈。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;AI算力基建双雄角力&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　戴尔和联想都明显受益于AI基础设施建设的红利，目前戴尔的爆发更快更猛，但是联想追赶的也很快，后劲十足，这背后则是两家企业在这块多年的提前布局和稳定投入的结果。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　我们经常在新闻里听到某公司从英伟达或寒武纪买回多少张算力卡，但光有卡远远不够，还需要将它们组装成服务器和算力中心。这就好比IT行业的“房地产开发商”：不仅向客户交付“房子”（硬件），每个月还能收到“物业费”（后续服务）。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　企业买回来算力卡，常常需要把几千上万张卡合起来做算力集群——有时候还涉及到不同厂商出的算力卡的混合集群，例如许多国内的互联网公司都会同步购买英伟达的卡，搭配国产的华为、寒武纪、摩尔线程、天数智芯等厂商的卡做混合集群。然后企业需要处理这些卡的散热、联通和时延、安全性等问题。这时候像联想和戴尔这样的企业，就提供了完整的解决方案，帮企业去搭建服务器和算力中心，同时提供后续订阅服务。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　先看两家ISG业务的整体规模。 戴尔FY26全年ISG营收608亿美元，占公司总营收的53.6%，已成为第一大收入来源；FY27第一季度（截至2026年5月）ISG单季营收高达290亿美元，同比暴增181%。联想ISG上一财年营收192亿美元，同比增长32%，全年实现经营利润7300万美元，首次扭亏为盈；而最新一季度（截至2026年6月）ISG营收同比猛增98%至579亿元人民币（约85亿美元），经营利润53亿元人民币，经营利润率从上一季度的3.6%跃升至9.1%，正式成长为集团新的利润与增长双引擎。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　AI服务器是两家ISG爆发的核心引擎。 戴尔FY27 Q1 AI优化服务器收入达161亿美元，同比增长757%，单季新签订单244亿美元，期末积压订单（Backlog）达513亿美元，公司将全年AI服务器收入指引上调至600亿美元。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想同样不遑多让：Q1 AI服务器订单储备从上一季度末的210亿美元暴增至超过3600亿元人民币（约540亿美元），环比增长两倍以上，已部署AI客户超过5800家。杨元庆在业绩会上表示，540亿美元的储备订单能否转化为实际收入，关键取决于供应链的交付能力——联想目前服务器年产能超7万个机架，其中液冷AI服务器机架超1.1万个，分布在中国、匈牙利、美国、印度、墨西哥和巴西的工厂，且是行业中唯一与三大存储原厂均签订长期量价协议的厂商，这正是其将订单加速转化为出货的核心保障。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想目前服务器年产能超7万个机架，其中液冷AI服务器机架超1.1万个，分布在中国合肥、天津、深圳以及匈牙利、美国、印度、墨西哥和巴西的工厂。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　传统服务器同样在经历新一轮上行周期。 戴尔FY27 Q1传统服务器与网络收入85亿美元，同比增长92%，受企业数据中心现代化改造和Agentic AI推理需求双重驱动——约70%的戴尔服务器安装基数仍为14代或更老产品，存在巨大的替换空间。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想则稳居全球第二大x86服务器供应商，Q1传统计算业务盈利能力加速提升。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　据IDC数据，2026年第一季度联想x86服务器收入同比增长36.5%，市场份额达8.8%，在全球前五大厂商中增速最快，超越超微、浪潮和慧与，仅次于份额12.2%的戴尔。在全球x86服务器市场整体下滑2.9%、ODM白牌厂商收入暴跌28.8%的背景下，联想与戴尔是前五中仅有的两家收入增速超过30%的品牌厂商，品牌集中化趋势明显，Q1传统计算业务盈利能力也随之加速提升。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　液冷是AI算力基础设施的关键差异化技术。 当云厂商和算力运营商买回算力卡后，最头疼的问题之一就是散热——单柜功率从传统的10kW飙升至AI集群的100kW以上，风冷已触及物理极限。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想Neptune海神液冷技术建立了显著的差异化优势：采用45°C温水冷却，无需冷水机组，PUE低至1.035，大幅降低数据中心冷却能耗和基础设施成本，Neptune液冷收入曾实现同比增长300%。戴尔的液冷方案则更强调与PowerEdge服务器的深度集成和机架级交付。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204712341.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　（联想Neptune海神液冷技术）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　两家公司之所以能拿到大量AI基础设施订单，与它们都是英伟达AI生态中的核心OEM伙伴密切相关——目前英伟达对紧缺芯片采取配额制度，联想和戴尔作为长期合作伙伴均能获得数量可观的紧俏芯片，将其组装成服务器和算力中心后在市场上获得较高溢价。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　用大白话来形容就是，现在英伟达的芯片根本拿不到货，你想要货的话就需要找联想这样的分销厂商，同时可能需要买一些他们的服务器和其他产品。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在产品端，两家均已全面出货英伟达GB300 NVL72整机柜方案，并同步推进下一代Vera Rubin平台——联想拿到了Rubin 200整机柜方案的首发权，预计2026年下半年出货。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　存储是ISG中利润率最高的板块之一，也是两家差距最明显的领域。 戴尔通过2016年收购EMC，建立了PowerMax、PowerStore、PowerScale、PowerFlex等成熟的自有IP存储矩阵，存储业务需求双位数增长，FY26 Q3单季存储收入达40亿美元，是ISG维持双位数经营利润率的重要基础。戴尔存储主打全套一体化方案，与自家服务器深度适配，无需客户自行拼凑不同厂商硬件，既能承接银行、大企业的关键业务数据，也专门适配AI大模型训练，具备高安全性、数据备份和防勒索病毒能力，后期扩容简单，还可搭配订阅服务打包销售。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想过去在存储领域与戴尔差距较大，但2026年4月完成对以色列高端存储厂商Infinidat的收购后，近十年的存储短板被彻底补齐——Infinidat产品可与联想服务器、液冷设备良好搭配，兼顾安全稳定与成本优势，适合金融、制造等高可靠性要求行业，也可搭配联想全套运维服务交付，满足企业一站式搭建本地AI机房的需求。收购Infinidat不仅补齐了产品线，更将联想的潜在存储市场规模扩大至380亿美元，并引入了明显高于服务器业务的毛利结构。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　客户结构的差异，决定了两家ISG不同的增长节奏与利润率特征。 联想ISG坚持CSP（云服务提供商）与ESMB（企业及中小企业）双轮驱动战略。CSP客户又分为两类：一类是AWS、Azure、Google等传统超大规模云厂商，采购规模大但毛利率较低。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　另一类是以CoreWeave、xAI、IREN为代表的“新云”（Neocloud）客户——这些AI原生云服务商专注于AI算力出租，采购意愿强、对价格敏感度低，且倾向于采购整机柜+液冷+服务的完整方案，毛利率远高于传统CSP客户。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想CFO郑孝明在Q1业绩会上明确表示，ISG利润率超预期改善的一个重要原因正是CSP业务中Neocloud客户占比提升。Q1联想CSP业务毛利润同比暴增1004%，ESMB业务毛利润增长402%，双轮均接近翻番。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔的客户结构则更为集中：据Evercore ISI测算，CoreWeave、xAI和IREN三家Neocloud客户可能贡献戴尔FY27约420亿美元AI服务器收入，占其600亿美元指引的70%——其中戴尔拿下了xAI约75%、CoreWeave约85%、IREN约100%的AI算力采购份额。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这种“自上而下”的大客户策略使戴尔在AI爆发初期弹性极大，但也带来了客户集中度风险：一旦少数Neocloud客户资本开支节奏放缓，戴尔的订单增速将直接承压。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想则覆盖了超过5800家AI客户，客户数量占优，且在中国市场具有独特优势——不仅服务互联网大厂，还覆盖大量政企、科研机构和传统行业客户，同时兼容国产芯片方案。戴尔的企业AI管道虽也含50%新客户、覆盖科技、制造、高教、医疗等行业，但整体仍以北美大单为主。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　再看SSG方案服务业务。 联想将服务独立为SSG集团并单独披露财务数据，这在全球硬件厂商中并不多见。SSG FY26全年营收约100亿美元，同比增长19%，经营利润率稳定在22%以上，连续20个季度双位数增长，以集团约12%的收入贡献了约三分之一的经营利润。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　最新一季度SSG营收196亿元人民币（约29亿美元），同比增长28%，经营利润率超过24%，其中AI服务收入同比增长141%，项目与解决方案服务收入增长50%。联想的配套服务分为硬件7×24维保、AI机房部署实施与TruScale算力订阅三大类，收费包含一次性项目费、多年维保套餐与3-5年期按月按量的订阅模式——大部分客户在买了联想的硬件之后，在服务这一块后面都会自动续费，不用重新去获客和销售，政企TruScale大客户续约率超90%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔的配套服务则全部内嵌于ISG业务，以ProSupport硬件维保、AI Factory一站式实施、APEX本地算力订阅为主，多采用硬件与多年维保打包、3-5年月度弹性订阅两种收费方式，APEX头部客户续约率达92%以上。两家的订阅式算力服务均形成了高粘性的持续收入，但联想SSG独立运营、利润率更高且信息披露更透明，戴尔则将服务作为硬件销售的增值配套，不单独核算。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　截至最新财季，戴尔ISG整体经营利润率为10.5%；联想ISG经营利润率升至9.1%，配套AI服务的SSG经营利润率稳定在22%以上，二者加权综合经营利润率约12%-13%。两家公司AI基础设施相关业务的利润率均处于快速上行通道。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在AI生态布局上，联想的核心战略是混合式AI，即个人智能+企业智能+公共智能，覆盖“端-边-云-网”全栈；戴尔则聚焦企业级AI基础设施，以AI Factory为核心概念，为客户提供从服务器、存储到软件的一站式AI数据中心解决方案，强调与英伟达、VMware等生态伙伴的深度协同。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想的ISG业务是2014年收购IBM x86服务器业务发展而来，过去曾经长期亏损。因为在AI爆发前，服务器市场长期处于行业下行周期，x86通用服务器价格战激烈，联想为了抢夺市场份额，选择了以价格换市场的策略，保留了这块业务。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　同时，联想提前预判了AI基建时代的到来，在ISG业务上坚持多年的高强度研发投入，包括补齐液冷、存储、高端服务器的全套能力，还在全球建设多区域的销售、售后团队，花了几年时间扎扎实实补足了技术和渠道短板。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　去年是联想ISG业务历史上至关重要的一年，该业务板块实现了扭亏为盈——联想对ISG进行了大刀阔斧的组织重组，砍掉冗余的机构、人员和费用，让业务“轻装上阵”，同时主动优化订单结构，提升整体业务质量。联想集团董事长兼CEO杨元庆在Q1业绩会上表示：“继个人电脑和智能终端成为市场领导厂商之后，（联想）AI和基础设施业务也正在成长为全球市场领导者。”这在某种程度上印证了，联想AI基础设施业务的爆发，并不是简单踩中风口那么简单，而是提前多年的预判。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　AI基建行业和互联网产业最大的不同是，互联网产业的产业链相对简单、单一，而AI基建行业涉及复杂的上下游产业链，像联想和戴尔这样的巨头往往可以提前几年通过和英伟达、微软、英特尔、三星、海力士、AMD、亚马逊这些合作伙伴的生意往来中，提前预判未来的趋势。目前来看联想ISG业务和SSG业务的爆发很可能就是这样的结果。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204714248.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;端侧基本盘：PC、手机与规模壁垒&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　在联想和戴尔赖以起家的PC与智能设备业务上，竞争格局早已清晰——自2013年起，联想已连续多年稳居全球PC出货量第一。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　目前联想在全球PC出货量上稳居第一，市占率持续扩大，与第二名的差距不断拉大。戴尔排名第三，份额相对稳定但增速明显落后。全球PC市场已形成联想、惠普、戴尔三家合计约60%份额的寡头垄断格局。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204714848.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　（全球PC出货量市场份额）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想已连续10个季度PC出货量增速高于市场平均，是全球前五大PC厂商中唯一保持出货量正增长的企业。2026年第一季度，联想出货量同比增长8.6%，而同期全球PC市场仅增长2.5%，联想增速是市场的3.4倍。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　不过，戴尔PC业务的营收规模仍高于联想PC业务，原因在于戴尔更多依赖高客单价的商用市场。戴尔商用PC平均售价约1245美元，接近行业竞争对手约665美元的两倍。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　美国去年人均GDP逼近9万美元，美国人时薪中位数约为31.28美元，也就是说，一台售价1200美元的戴尔电脑，一个普通美国人税前只需工作约38个小时，接近一周的工作时长即可买到。相比之下，中国去年的人均GDP仅1.3万美元，虽然增长很快，但是距离美国仍然有比较大的差距。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　据摩根士丹利的研究报告测算，联想FY26财年的PC整体的平均售价约为728美元，和戴尔相比仍然有不小的差距。大摩预测联想FY27财年的PC平均售价将增长到868美元，同比提升约19%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　AI的普及带来了新变量。联想高端化进程加速，最新一季度高端PC出货占比已超过50%，主要驱动力正是AI PC——其售价比普通PC高出4%-20%。联想AI PC在普通电脑基础上增加了本地AI处理能力，无需完全依赖网络即可运行文档整理、内容总结、图片处理等AI功能，既保护数据隐私，又能在网络不佳时使用，同时与联想的服务器、算力服务打通，形成从个人终端到后台算力的完整AI体验。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想将AI PC视为Personal AI的入口，天禧/Qira承担智能体层，“一体多端”进一步连接PC、手机和平板，竞争维度从单一PC硬件扩展到个人AI生态。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔的AI PC则主要集中在客单价更高的北美市场，尤其是其传统强势的商用PC领域，重点围绕Windows AI PC的企业安全和高价值商业客户推进。可以说基本盘相当稳固。北美客户对于价格相对没有那么敏感，仔细观察，另一家美国企业苹果也是类似的情况，美国市场永远是苹果的基本盘。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　简言之，在代表未来的AIPC上，联想更强调AI能力和跨设备生态，戴尔更强调商用客户价值与企业级变现。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　微软Windows 10于2025年10月停止支持，将带动全球PC进入新一轮换机潮。2026年秋季起，搭载英伟达RTX Spark超级芯片（1 Petaflop本地AI算力）的新一代AI PC将陆续上市，联想与戴尔均为首批合作伙伴，换机周期与AI硬件换代形成共振。其中，联想IDG通过天禧/Qira智能体驻留端侧、“一体多端”打通PC与手机平板、再连接ISG云端算力，将AI PC从硬件升级为个人AI生态入口，而戴尔仍以商用硬件为核心，跨端与云端的纵深协同稍微弱一点。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在智能手机领域，戴尔已基本放弃，而联想通过收购摩托罗拉品牌目前位居全球第7-8位。过去一个财年，联想智能手机出货5629万部，增速高达27%，高端折叠屏手机表现亮眼，主要市场在北美和南美。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　目前摩托罗拉系列手机有一半的销售额来自拉美市场，其中很大一个原因是联想在巴西设立了工厂，满足了当地的法规，同时大胆启用拉美籍的高管负责这块业务。同时，因为摩托罗拉是一个老牌的手机品牌，在美国和欧洲、印度等地都有相当高的知名度，通过运营商合约机等销售方式，占据了一定的市场份额。反而是在竞争激烈的中国市场，现在摩托罗拉的声量相对较小。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　我们再来对比下联想和戴尔两家在个人硬件业务上的盈利能力，联想PC和手机所在的IDG业务经营利润率长期稳定在7%左右，在PC行业中处于领先水平。相比之下，戴尔CSG经营利润率波动较大，主要在5%-7%之间。这反映出联想在PC业务上拥有更强的运营能力，尤其是供应链管理水平。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　从两家业务结构的变迁速度来看，戴尔PC业务的收缩远比联想剧烈。戴尔FY26全年ISG（基础设施）收入占比已达53.6%，CSG（PC）降至44.9%，PC首次退居次席；到FY27第一季度，ISG占比进一步飙升至约66%，CSG骤降至约33%——PC在戴尔内部正加速从主业逐步变为配角。联想则不同，FY26 IDG（PC+手机）收入占比仍高达约71%，即使FY27一季度联想的 ISG增速接近翻番，IDG占比仍保持在约63%，PC基本盘远为稳固。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这也在某种程度上说明，在这一轮AI PC浪潮中，真正有能力占据龙头优势的可能是苹果和联想。苹果凭借自研芯片与封闭生态锁定高端，联想凭借全球第一的规模、跨端生态和供应链掌控力持续扩大份额，而戴尔、惠普等在消费端品牌力和生态纵深上已经有点掉队。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　此外，人们还常常忽略了C端产品所带来的品牌外溢效应。要做PC和手机这样的大众产品，需要通过赞助世界杯、F1赛事这样的营销来拉动，还需要请代言人、砸广告推广费用，这些品牌的长期红利，也会逐步外溢到服务器和AI服务产品上。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204715367.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;全球棋局：供应链与地缘博弈&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　如前所述，PC是一门很看规模的生意，所有主流厂商无一例外都做全球市场——只有面向全球70亿人的市场，才能维持足够规模以保持竞争力。那些主要扎根区域市场的PC品牌，近年来市场份额正迅速被全球化头部品牌侵蚀。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　究其原因，像CPU、GPU、内存、屏幕和操作系统这些大规模采购的PC配套零部件和软件，上游供货商会给出货量大的厂商便宜得多的供货价格，还有更优先和稳定的供货。因为全球化的门槛极高，所以PC这个市场，其实早在很多年前就完成了洗牌，形成了寡头垄断的市场格局，新的玩家很难进来。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在全球供应链方面，联想的特点是自有制造纵深和地域覆盖更广。联想在11个国家布局了30多个自有及合作制造基地，连接2000多家一级供应商，每天服务180个市场的客户，每年处理超过1000万条订单线。这种“全球资源、本地交付”的global/local模式，联想内部称之为“中国+N”——以中国的合肥、武汉、天津、深圳等基地承担约75%的制造产能和核心零部件供应，同时在墨西哥、巴西、匈牙利、印度、沙特等地就近设厂，贴近区域市场交付，既享受中国电子供应链集群的比较优势，又能通过本地制造节点对冲关税与地缘风险。2026年联想首次跻身Gartner全球供应链25强第五位、蝉联亚太第一，正是对这一模式的认可。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　前些年以苹果为代表的全外包制造模式曾被许多企业效仿，而联想是行业中少数同时保留自有工厂制造和外包制造的企业。自有工厂的好处是更加可控、灵活，尤其适合新品和小批量定制订单，同时保留部分外包产能，又维持了弹性。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想还是行业中唯一与三大存储供应商均签订长期量价协议的制造商，确保供应不中断——PC市占率第一赋予了其强大的议价能力。联想做代理和渠道起家，非常重视全球代理商网络，目前服务覆盖180多个国家和地区，设有45个多语言呼叫中心、800多个备件库、5000多个线下服务站点，拥有4万多名认证工程师，可实现全球主要市场的快速现场响应。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔同样是供应链管理高手。其赖以起家的直销加直接制造模式，使其能够更快识别成本通胀并动态调整产品定价。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　和大部分美国企业类似，因为本土制造成本高企，戴尔在制造环节采用了轻资产和外包为主，自有工厂很少。目前戴尔的PC产品主要在广达、仁宝、华勤等ODM代工厂完成整机制造。戴尔的服务器产品则主要由工业富联等厂商代工。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　值得一提的是，近年来随着中美贸易冲突的加剧，戴尔的硬件产品产地已经由在中国生产为主，逐步迁移到墨西哥、巴西、匈牙利等地生产，尤其是销往美国市场的产品，大量在墨西哥的合作代工厂生产，只不过代工厂商依然是老的合作伙伴例如工业富联、广达这些在墨西哥等地设立的分厂。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　服务器产能方面，联想目前年产7万台以上服务器机架，其中包括超过11000个液冷AI服务器机架，产能分布在中国合肥、天津、深圳以及匈牙利、美国、印度、墨西哥和巴西的工厂。戴尔未公布具体服务器产能，但目前正遭遇“幸福的烦恼”——订单增长过快，产能瓶颈主要卡在内存供应上。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔过去一个财年美国市场收入占比高达55.6%，显示出美国市场依然是戴尔最坚固的基本盘。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　然而美国市场占比过高可能是一把双刃剑。一方面美国是全球AI算力基础设施建设的领头羊，拥有大量优质客户，所以在AI算力基础设施订单爆发的时候，戴尔的业绩也爆发得更猛。另一方面，美国市场占比过高意味着关税政策对其全球供应链的影响更为直接。随着美国关税政策的不确定性增加，戴尔大量需要进口的零部件和出口产品可能受到冲击。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　相比之下，联想的销售额分布在全球更均衡一些。据估算，联想来自美国的销售收入占比不足20%，中国区约占22%，收入分布在全球各区域相对均衡。联想是少有的在中美两国都有核心业务经营的科技公司，今年还是美加墨世界杯的官方技术合作伙伴，在某种程度上扮演着中美之间的桥梁角色。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　华泰证券给了联想一个很精准的定位——“中美AI产业链最大公约数”。它是少有的在中美两国都有核心业务经营的科技公司：在中国有制造和研发大本营，在美国有研发中心和市场，在全球180个市场有业务。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想和美国的英伟达、高通、英特尔、AMD、微软、META等巨头长期保持着密切的合作关系，它和这些美国巨头每年的业务发生额可能超过任何其他中国科技巨头。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔作为美国公司，在获取美国技术出口和政府采购方面有天然优势，但也因此在亚洲市场面临更严格的合规要求。它对美国市场的高度依赖（55%+收入）在政策变化时是风险点。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在国际局势越来越复杂的情况下，两家公司的区域布局策略呈现出了截然不同的方向。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204717924.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;估值之辨：深度与广度的定价&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　经历一轮股价上涨后，联想市值约550亿美元，戴尔市值约3100亿美元。联想PE约24倍，戴尔约35倍，两家均处于近五年估值高位。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　然而两家业务模式相近、规模差距并非数量级的公司，都保持高速增长的公司，估值差距为何如此之大？&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/08/18/20260818204719587.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　（戴尔与联想的估值对比）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　其中一个重要因素是，戴尔已被美国投资者充分按照“AI基础设施公司”定价，给到了很高的溢价，而在香港上市的联想，仍处于从“PC周期股”向“AI基础设施平台股”的估值切换过程中，市场认知存在滞后。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　自今年5月发布上一财年及第四财季业绩以来，联想迎来市场估值觉醒时刻，其股价已翻倍。8月最新季报发布当天，联想股价再涨超20%，各大券商纷纷上调目标价至50港元以上。展望未来，市场一致预期联想FY2027营收增长35%-50%，主要由ISG驱动；戴尔FY2027 AI服务器收入指引600亿美元，ISG收入增长约80%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔的护城河是“深度”——它在北美超大规模AI客户、高端存储和整机柜交付上建立了短期难以撼动的优势，ISG 10.5%的经营利润率和600亿美元的AI服务器年度指引，证明它是当前AI算力基建最纯粹、最激进的受益者。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想的护城河则是“广度”——从PC到手机、从服务器到存储、从硬件到订阅服务、从中国到全球180个市场，它是唯一一家在“端-边-云”进行混合式AI战略布局的公司，尤其是ISG从亏损到9.1%的拐点，证明它的盈利模型正在被重估。同时，联想对单一市场的依赖较小，在全球布局更均衡，旗下业务分布也更均衡，在这个充满不确定的时代，这或许是另外一种智慧。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想集团这一轮股价上涨，已经完成了第一轮估值修正：市场开始摆脱单纯以PC周期股看待联想的框架，但与Dell相比，联想仍存被低估的情况：按照彭博统计的分析师一致预期，预计2028年联想PE约为11.2倍，Dell约为20.1倍，联想较Dell折价约44%；即使与可比公司14.7倍的平均水平相比，联想仍低约24%。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　事实上，早在今年6月的投资者日上，联想集团CFO郑孝明就指出，联想集团的价值评估早就不宜继续局限于PC同业框架，而应按照PC+移动业务+服务器+服务与解决方案+智能周边设备+企业级存储等多业务组合重新定价。按照当时披露的测算，这六类可比公司对应的价值池分别约为230亿美元、720亿美元、470亿美元、300亿美元、180亿美元和330亿美元，合计约2230亿美元；彼时联想市值约390亿美元，两者相差约5.7倍。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　首先，资本市场低估了从规模扩张进入利润兑现阶段的AI基础设施资产价值，这可能是目前联想估值修正中最值得资本市场重新计算的一组关系。到2029年，服务器潜在市场规模约1.3万亿美元，这是一块持续做大的蛋糕。联想ISG经营利润率与Dell相比只差约1.4个百分点；但联想PE仍只有Dell的约56%。利润率已经开始接近，估值倍数却仍相差近一倍。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　其次，市场低估了一个全球消费科技龙头的价值。事实上，联想估值仍明显带有传统PC公司的锚定效应。与Dell相比，联想在PC端的领先优势更为突出，但这一优势在估值中更多被计入成熟业务的周期折价，而较少体现为龙头溢价。PC进入存量市场后，规模采购、供应链议价、渠道覆盖和成本传导能力反而更加集中于头部企业。作为全球消费科技龙头的另一参照，苹果PE约为32—36倍。从11.2倍PE的联想，到20.1倍PE的Dell，再到约35倍PE的苹果，资本市场给予不同资产属性的定价差异非常明显。联想拥有全球第一PC份额、稳定的盈利能力和全球消费品牌，但其消费科技龙头属性在整体估值中仍主要被PC行业的成熟度所覆盖。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　第三，市场低估了已达百亿美元规模的高利润服务资产。Dell服务收入主要分布在ISG、CSG及其他业务中，并未作为独立经营分部披露。联想与Dell之间约44%的估值折价，不只是AI服务器的估值差异；联想还有一块百亿美元规模、经营利润率超过24%的服务资产，没有在集团整体估值中获得与其盈利属性相匹配的独立定价。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　因此，目前联想与戴尔相比，基本面差距与估值差距已经出现不对称。联想ISG与Dell ISG的经营利润率差距已经缩小到约1.4个百分点，AI服务器需求指标也进入同一数量级；但在彭博一致预期下，联想FY28E PE仍只有Dell的约56%。与此同时，联想还拥有全球第一的PC业务和经营利润率超过24%的服务业务。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　更重要的一点是，市场低估了一个全球化平台的稀缺性，也低估了联想全球化能力带来的风险对冲价值。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　首先，支撑联想“PC+移动业务+服务器+服务与解决方案+智能周边设备+企业级存储”这六大业务的，还有一套无法简单拆分出售的共同基础设施——联想的全球供应链、制造体系、研发网络、渠道和服务能力。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想多年来需要承受中国资产风险溢价、中美科技摩擦、出口管制和关税等因素带来的估值折扣；Dell作为美国本土科技企业，并不存在完全相同的折价基础。但是，联想集团自身的全球化程度又使这种折价具有特殊性。公司收入和业务覆盖180个市场，拥有30多个制造基地和全球化供应体系，同时深度参与中美两端及全球AI技术生态：一端与英伟达、AMD、英特尔等全球芯片厂商合作，另一端又拥有中国完整的研发、制造、供应链和客户基础，并能够进一步连接欧洲、中东等不同区域。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在内存供应紧张、全球供应链持续扰动的情况下，联想仍实现43%的收入增长，正是前述卓越运营和风险对冲的价值体现。市场会因为联想的中国企业属性给予风险折价，却未必充分计入其全球制造、供应链调度、本地化交付以及同时连接中美技术生态所带来的风险对冲价值。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想这一轮估值修正已经发生。下一阶段市场要修正的，可能已经不只是给联想多高的PE，而是重新回答一个更基础的问题：今天的联想，究竟应该被看成一家PC公司，还是一家同时拥有全球消费科技、AI基础设施、高利润IT服务和全球化平台资产的科技集团。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想CFO给出的2230亿美元，并不是联想应有市值的简单加总，更重要的信号是：市场正在用11.2倍的整体PE，为PC龙头+AI基础设施+高利润IT服务+全球化稀缺平台的全球AI生态链领先公司同时定价；而Dell仅仅在AI基础设施属性得到确认之后，已经获得20.1倍的前瞻PE。两家公司估值能否进一步收敛，最终取决于资本市场如何重新定义联想及其资产属性：全球消费科技龙头的规模与品牌价值、AI基础设施进入万亿美元市场的成长空间、百亿美元高利润服务资产的独立价值，以及横跨全球供应链和中美科技生态的稀缺性。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想这一轮上涨已经修正了价格，下一轮真正需要修正的，是市场衡量这家公司的坐标系。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　结语：&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　《芯片战争》的作者克里斯·米勒，曾经记录过英特尔历史上的至暗时刻：&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　1985 年，在美国加州圣克拉拉的英特尔总部，英特尔的总裁安迪-格鲁夫坐在董事长戈登-摩尔的办公室里，两位大佬久久凝望着窗外远处的美国游乐园里的摩天轮，他们希望内存市场也能像那摩天轮上的小屋，触底之后再重新转回来。也就是在这一次残酷的行业底部，英特尔失去了他们发明的 DRAM 内存业务。但因为集中精力做微处理器，英特尔在不久之后就触底反弹，在随后到来的下一个周期，也就是个人电脑时代，成为了王者。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这个摩天轮的隐喻其实是整个科技硬件行业的写照，行业的兴衰往往是随着一轮又一轮的科技基建起伏的。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　IT产业虽然身披高科技外衣，却和传统行业一样带有强烈的周期性。今天我们看到的巨头——英伟达、台积电、海力士、三星、联想、戴尔——无一不是经历了好几个兴衰周期才活下来的。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　2002年互联网泡沫破灭时，英伟达股价暴跌94%，市值从120亿美元跌至7亿美元，裁员70%，现金流濒临断裂；在AI爆发之前，英伟达主营显卡，数次差点被收购。三星、海力士、美光等存储巨头的商业模式更像采矿业——产品差异化小、重资产投入、晶圆厂一旦投产必须满负荷运转，行业下行期便无底线杀价。2017年挖矿泡沫破灭时，这些存储巨头一度陷入巨亏。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在英伟达、海力士、美光、AMD、英特尔等上游巨头处于周期底部时，联想、戴尔这样的PC整机厂商往往通过长期协议锁定订单，帮助上游消化部分库存。相比波动剧烈的半导体行业，PC行业永远有稳定刚需，波动相对较小。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想和戴尔某种程度上扮演了半导体行业“最稳定需求基本盘”的角色——它们的稳定订单保证了存储巨头在周期底部能够存活，从而熬到下一个上行周期。联想是行业中唯一获得三大存储原厂保量长约的厂商，下游约70%为企业客户，存储成本上升可以较顺畅地传导。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　也正是这种在其他巨头低谷期相濡以沫形成的长期利益绑定，使得行业景气爆发时，联想和戴尔能从上游巨头那里获得远超其他厂商的回报。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　例如联想从英伟达获得了H200芯片的优先供应和大量紧俏芯片配额，也在存储价格飞涨的时候，拿到了比其他家更便宜的存储供货价格。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　同时，一旦你买了联想或者戴尔的服务器产品，通常还需要购买它们的配套服务，包括后续的维保、24小时响应、安全保障等，这种生产性服务业的续费率极高，利润也远高于纯卖硬件。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在这场AI盛宴中，所有人都在谈论英伟达卖了多少张GPU，却很少有人关注是谁把这些GPU变成了真正能跑AI的数据中心。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　联想和戴尔在这一轮AI算力基建当中扮演着至关重要的“AI算力制造生态龙头“角色，这一角色的门槛远比想象中的要高。除了需要有很强的技术实力作为储备，还需要有很强的全球供应链能力，同时还需要与英伟达、海力士这样的关键零部件企业有长期的战略协同效应。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　我们今天都看到戴尔和联想在本轮的AI算力基建浪潮当中赚的盆满钵满，但是许多人没有看到，这两家生于1984年的企业为了这一天的到来，提前做了多少战略布局，在此之前做了多长时间的默默投入。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　戴尔在私有化期间力排众议花费500多亿美元并购EMC，甚至不惜将自己坚持了20几年的企业愿景都改掉了。而联想在ISG业务发展初期曾经需要忍受多年的亏损，这背后是很多年的持续研发投入——AI服务器和算力中心并不是像人们想象中的拿回来成熟的零部件组装那么简单，需要有大量的专利积累。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　回顾人类近代史，人类社会的现代化是由几次大的基建浪潮推动的，每一轮基建浪潮结束，都会诞生一批伟大的企业。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　19世纪末的铁路基建浪潮，诞生了联合太平洋铁路、英国大西部铁路公司和卡内基钢铁这样的基建的巨头企业，和范德比尔特家族这样的金融巨富。20世纪初的电力电气化基建浪潮，诞生了通用电气、西门子等电力巨头，一直延续至今。20世纪20年代开始的公路及汽车交通基建浪潮，则诞生了福特、通用、奔驰及洛克菲勒石油等内燃机时代的巨头。二战以后的电话通信和大型主机计算基建浪潮则诞生了像AT&amp;amp;T、IBM这样的电信巨头。从90年代开始的“互联网高速公路”基建浪潮则成就了思科、亚马逊、谷歌、腾讯、阿里巴巴这批企业。2007年后的移动互联网基建浪潮又让苹果、华为、三星等老牌科技巨头重新辉煌，同时造就了字节跳动、Uber等一批移动互联网新贵。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　但人们往往忽略的是，有无数当年曾经响亮的名字，倒在了每一轮基建大潮退潮以后。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　回顾人类历史上这几轮大的基建浪潮，有着惊人的相似规律：大的基建周期往往伴随着泡沫，资本大量涌入、企业超前建设。但当大潮退去，周期不在，当年那些真金白银砸下去的超前基建建设，都变成了下一轮产业发展的基础设施，从而为更大的一轮爆发做铺垫。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　英伟达的黄仁勋说，AI可能是人类历史上最大规模的基础设施建设浪潮。据高盛估计，今年全球AI投资支出将超过1万亿美元，其中光美国的投资就超过5800亿美元，其投资强度超过了人类历史上任何一次基建大潮。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　和此前几轮AI基建大潮不太一样的是，这一轮AI基建当中的许多龙头企业，都是创办了几十年时间，穿越了好几个周期活下来的巨头，例如英伟达、三星、微软、戴尔、联想、AMD、亚马逊，这绝非偶然。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　相比起历史更悠久的美国科技产业，中国像联想一样成功穿越数个周期的科技企业少之又少。经历过个人电脑时代的朝气蓬勃，见证过2000年前后互联网泡沫的潮起和破灭，也感受过移动互联网大潮的挑战和危机，如今，站在AI这一轮人类历史上最大规模的基建浪潮十字路口，这种穿越周期的深厚产业积累和洞见，是中国科技产业的一笔宝贵财富。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　参考资料：&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[1]Lenovo Group (992 HK) - Buy: Results beat; server profitability further improved（汇丰）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[2]ISG margin inflection confirmed; AI pipeline doubles; raise PT to HK$50（摩根大通）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[3]AI total solution to win customers; Leader becomes stronger under challenging environment; TP up to HK$51; Buy（高盛）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[4]ISG: Raising the Bar Again（摩根士丹利）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[5]从估值觉醒到价值跃迁：联想集团站上4300亿市值之后（新浪财经）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[6]联想集团净利率冲到4%：这次财报的含金量到底有多高？（新浪财经）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[7]GTC 2026前夜：AI即基建，联想与英伟达三十年合作站上哪一层（新浪财经）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[8]联想集团IDG总裁：有能力打造全球最大的个人AI生态系统（moommoo）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[9]联想集团CFO：股价一个半月翻倍后，公司估值仍有显著上行空间（moommoo）&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　[10]中美 AI 产业链最大公约数（华泰证券）&lt;br&gt;
+&lt;/p&gt;													&lt;/div&gt;
+						
+						&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Wed, 19 Aug 2026 01:10:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE5OdDlhVmFGM0VDbEE4QjJYSUhwR2VOUVVydXlrQW5IUHd5c2thZXNJVmlOY3BUNTNRenlhcG1ZYlo3aXdIOWFUVkNuMmg3cGlFa09hR2NIZGswX1k</guid></item><item><title>叙利亚发现数吨核材料，将接受国际原子能机构合作监督 - 观察者</title><link>https://www.guancha.cn/internation/2026_08_19_827801.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	美联社报道，国际原子能机构总干事格罗西18日在与叙利亚过渡政府外交部长希巴尼举行的联合新闻发布会上表示，近期在叙方向该机构报告的一处地点发现数吨核材料。
 &lt;/p&gt;
@@ -398,7 +838,95 @@
 	叙利亚外交部长希巴尼对此次合作表示：“叙利亚根据技术评估确认，这些材料不构成任何威胁...它们将继续由叙利亚保管，并将继续接受该机构的保障监督。”
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 19 Aug 2026 01:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE53OGVkalJwU2I5bFloNWZ1SFp1RVhWT3ZOemFZNHdtVldnOGU4VndOYUk0ZTQ1M2lqa0dCSXNLdGlHVXYybkcyUTBBd1kxbEc0T1VFQklnd0FIaEExTE5EZ19DODJSTnNsZnc</guid></item><item><title>2999元！115长期VIP回归 不再赠送网盘空间 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144706.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 19 Aug 2026 01:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE53OGVkalJwU2I5bFloNWZ1SFp1RVhWT3ZOemFZNHdtVldnOGU4VndOYUk0ZTQ1M2lqa0dCSXNLdGlHVXYybkcyUTBBd1kxbEc0T1VFQklnd0FIaEExTE5EZ19DODJSTnNsZnc</guid></item><item><title>海信墨水屏手机A10升级AI阅读系统：章节自动总结、全域有声阅读 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144709.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，海信墨水屏手机A10将于8月28日正式发布，并于当天开售。&lt;/p&gt;
+&lt;p&gt;日前，海信墨水屏官方公布A10阅读体验，&lt;span&gt;&lt;strong&gt;宣布新机将搭载全新升级的AI阅读系统，通过AI总结、语音批注、有声阅读等功能，进一步提升墨水屏手机的阅读效率和使用体验。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;据介绍，海信A10支持章节自动总结，阅读过程中，用户可随时唤起AI生成章节概括，即使时间有限，也能快速掌握章节核心内容。&lt;/p&gt;
+&lt;p&gt;同时，新机还支持实时语音批注，阅读过程中产生灵感时，无需退出当前页面或调用输入法，可直接通过语音记录感悟，AI会实时转写为文字，并自动关联对应原文位置，实现随读、随记、随存。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/760b20b2dcce4474b4ab5bb84345c3a6.png" target="_blank"&gt;&lt;img alt="海信墨水屏手机A10升级AI阅读系统：章节自动总结、全域有声阅读" h="800" src="//img1.mydrivers.com/img/20260819/s_760b20b2dcce4474b4ab5bb84345c3a6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;全域有声阅读也是此次AI阅读系统升级的一大重点，&lt;strong&gt;用眼疲惫时，用户可随时开启听读模式，并支持选定段落朗读，墨水屏会同步高亮对应文字，&lt;/strong&gt;实现边听边看。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/4ea64c81910041e9830a8a086771586e.png" target="_blank"&gt;&lt;img alt="海信墨水屏手机A10升级AI阅读系统：章节自动总结、全域有声阅读" h="800" src="//img1.mydrivers.com/img/20260819/s_4ea64c81910041e9830a8a086771586e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此外，用户在阅读、翻译或查询字典时遇到的英文单词和专业名词，也可一键加入生词本，集中管理此前散落在不同页面中的学习内容。&lt;/p&gt;
+&lt;p&gt;此次升级还新增书籍数量统计功能，能够记录用户读完的书籍数量和阅读轨迹，让每一次阅读都有迹可循。&lt;/p&gt;
+&lt;p&gt;据了解，&lt;strong&gt;海信A10系列采用墨水屏+可拆卸磁吸LCD彩屏双屏架构，在保留墨水屏阅读优势的同时，弥补传统墨水屏手机在彩色显示和娱乐体验方面的不足。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其中，正面配备6.13英寸墨水屏，主打接近纸张的阅读体验，具备无蓝光、无频闪等特点，更适合长时间阅读、文档批注以及通勤阅览等场景。&lt;/p&gt;
+&lt;p&gt;磁吸LCD彩屏尺寸为4.96英寸，用户在需要彩色显示或娱乐时可快速安装，不使用时则可直接拆下，在阅读和娱乐之间灵活切换。&lt;/p&gt;
+&lt;p&gt;配置方面，海信A10搭载高通QCM6690芯片和元太T2000硬件TCON芯片，后置4800万像素主摄，运行原生Android 16系统。&lt;/p&gt;
+&lt;p&gt;此外，新机还支持5G全网通、Wi-Fi 6、NFC、红外遥控、磁吸无线充电以及应用分身等功能。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/64c5276725e543228a4f76f852357ca7.png" target="_blank"&gt;&lt;img alt="海信墨水屏手机A10升级AI阅读系统：章节自动总结、全域有声阅读" h="800" src="//img1.mydrivers.com/img/20260819/s_64c5276725e543228a4f76f852357ca7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 00:58:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE13dGdETGVMRURzY25lUFBHS0w4UHZ5Y2hpVGh2NTE0eG40a3VWaWM2M1ViWF9XRXYzeUtCbjBCMDhsQ2tmNDVsZ0pmWU1IRUQ1ZmhqdlFQUTE</guid></item><item><title>英伟达Vera Rubin出货扰动存储供需 NAND闪存价格暴力反弹 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144708.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;英伟达Vera Rubin出货扰动存储供需 NAND闪存价格暴力反弹&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-19 08:50:45  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144708-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，&lt;strong&gt;据TrendForce报道，随着英伟达新一代Vera Rubin平台出货逐步提升，其存储需求效应已从HBM延伸至NAND闪存领域。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;市场数据显示，&lt;span&gt;&lt;strong&gt;TLC NAND闪存现货价格自6月触及低位后持续反弹，本周报价较上周上涨4.97%，较三周前累计涨幅达11.6%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;尽管英伟达绝大部分TLC NAND供应通过长期协议锁定，但平台放量带来的实际需求仍对现货市场形成传导压力，推动价格连续上行。&lt;/p&gt;
+&lt;p&gt;此前，三星已与英伟达在通用DRAM、HBM及晶圆代工领域建立合作，现进一步将协作扩展至NAND闪存。据悉，三星已向英伟达大批量供应第9代V?NAND闪存，并积极推进第10代V?NAND量产，以满足英伟达CMX架构的相关存储需求。&lt;/p&gt;
+&lt;p&gt;与此同时，铠侠今年推出新款CM10系列PCIe 6.0 SSD，首次搭载第十代BiCS FLASH TLC闪存，专为CMX架构设计。&lt;/p&gt;
+&lt;p&gt;该产品顺序读取性能较前代提升约92%，随机读取性能提升约85%，并支持直接冷板液冷散热，在高性能计算场景下具备显著优势。&lt;/p&gt;
+&lt;p&gt;整体来看，&lt;strong&gt;英伟达AI平台对存储生态的拉动正从HBM向NAND纵深扩散，原厂供应格局与产品迭代节奏亦随之加速调整，NAND市场有望在AI算力扩张周期中持续受益。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/9b87bbd59ab347a9b23af246e972cee5.png" target="_blank"&gt;&lt;img alt="英伟达Vera Rubin出货扰动存储供需 NAND闪存价格暴力反弹" h="335" src="//img1.mydrivers.com/img/20260819/s_9b87bbd59ab347a9b23af246e972cee5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 00:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Uczk3NjJtSnQ1WThHbmRBMEtFVC1vNzg5UFFNRFNtWjNmT0tkeG4yaU1WUHpfd0xGa2NRTmVfaEpqSWhUVjdQdFVOVXppU1NJYVNXbUw5WnU</guid></item><item><title>2999元！115长期VIP回归 不再赠送网盘空间 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144706.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;2999元！115长期VIP回归 不再赠送网盘空间&lt;/p&gt;
           
@@ -886,7 +1414,107 @@
 &lt;/section&gt;
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>news.sina.cn</author><pubDate>Tue, 18 Aug 2026 22:04:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE9xUWZfd0ZPTUlKU1A4ZFFsOWxnQXZSUHpFOExfLTNUOGFlRUNRbWdkenZXUGkzYVotaGY2VjFual9FWlpJYjE5VHA4VjdQaHBqQjEydldWckFNMURBd090N0dpZ05DQTgzZTV5TXh4Z1BvLWd5</guid></item><item><title>苹果调整应用商店规则 落实《数字市场法》欧盟表示欢迎 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E8%8B%B9%E6%9E%9C%E8%B0%83%E6%95%B4%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E8%A7%84%E5%88%99-%E8%90%BD%E5%AE%9E-%E6%95%B0%E5%AD%97%E5%B8%82%E5%9C%BA%E6%B3%95-%E6%AC%A7%E7%9B%9F%E8%A1%A8%E7%A4%BA%E6%AC%A2%E8%BF%8E</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:34:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi9wJBVV95cUxObHNtSEJjblV5SzhObnZuMF9RcmE0NlBBRklxeGI2ZVd4Z0JienhlbXpzdXlITldLZDNmVGRZMVlRdWRQNVZITUZ1aDlBcjJmeUFxME52cEdtYzhDb1BTMzlMRFRST3EwYWxidThTbGxTczRMYVpFd3NoaHh5OGtzaHVNVUQ3b2d6Y3gwSk9KNDJOcHNjVXpoenFRU2d2NHl5WU9IY0lpVzlKQi1YOTFLcWVPUlI2N0F3bUtGVmh5T2NlSFJkMTdKaG9xLVhOLWt0NjNINl81U2tyaTBQa01FeEk0ZkFRbVNUdGc3b0tRVmI0dVVQSklTcUFkRDNhRE13Mlk0U0ZGdGcyQnl3M0dxekwzUzFqamc3ZWVVT2dPSkI5ZkF2WlRhbGdNclJXWXRaeTVuZDduYTJ2eDMwbG9aQmNUVkM4a1FDT1FWdXBxWFJHR1kwbk1OcXJzZWxZemFDLV9qV1pJOF80YjBQcVNvazVHZW03bU0</guid></item><item><title>英伟达被低估50%？美银称AI融资风险定价过度 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779737</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 21:09:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBIUlI1UDFXejBWWTFqWmxDSmxhdzV5MHVscVRvRzVRekJqd0d6bDRfS3duYnIyY2daSWVTMUpFb21EZnI0aFRmOGNKcWd2a3huclZn</guid></item><item><title>人工智能：德国160万份工作将转型——中国是否是个警示？ - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E5%BE%B7%E5%9B%BD160%E4%B8%87%E4%BB%BD%E5%B7%A5%E4%BD%9C%E5%B0%86%E8%BD%AC%E5%9E%8B-%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E6%98%AF%E4%B8%AA%E8%AD%A6%E7%A4%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:07:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi4gJBVV95cUxOMUlfNDBpUkIwZGFvajJYcEx3ZXlIelc1WjctNVlVQUY0X0ladERJYWd0cDNnY3JNS2lHM3U1VFcyaC1UTFp2MmQ2czhLZjNUNGlzSzV1UnA1aENsZmxVVUlGUjktdVVuV05QLUlrMXNtR3JvaUdrZ0RCcC1vanlvLWNqaXZfb1NpNXdJZm5Ha1JVcVgwU01oMGV1Z3V5MWZ5c3cwTElqYzhnejBWRkxydXRweVpkMHpBdGgyYTZxOGdFRWkxUDNzTFpmRGZNbDQzR1F3YUFFZDVORDN1NlVsX3p0eXJBSUpNMXBaVTk5NF9tOF9xNURHRS02VGxPRS0yLTIyaVJ0dDVUS2JmcmNXejg5ZVE2M1VYNFZqQnZSWFI5b0RWS09fUGthc24wSk1IVFpjbURxUGJxMGpVS1BMcGpCSGxTMmltNEd3dGpwYnZubUZkMms5aTBmczM3VHR0MkE</guid></item><item><title>AI交易情绪逆转 苹果“反AI”属性正成股价拖累 - finance.sina.com.cn</title><link>https://finance.sina.com.cn/world/2026-08-19/doc-ininuqvh2987515.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>news.sina.cn</author><pubDate>Tue, 18 Aug 2026 22:04:29 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE9xUWZfd0ZPTUlKU1A4ZFFsOWxnQXZSUHpFOExfLTNUOGFlRUNRbWdkenZXUGkzYVotaGY2VjFual9FWlpJYjE5VHA4VjdQaHBqQjEydldWckFNMURBd090N0dpZ05DQTgzZTV5TXh4Z1BvLWd5</guid></item><item><title>台湾陆军实施实战化无人机“第一人称视角”实弹射击演习 - 美国之音</title><link>https://www.voachinese.com/a/taiwan-holds-expanded-fpv-drone-live-fire-drill-20260818/8187798.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="article-content" class="content-floated-wrap fb-quotable"&gt;
+
+    &lt;div class="wsw"&gt;
+
+&lt;span class="dateline"&gt;华盛顿 — &lt;/span&gt;
+&lt;p&gt;台湾年度“汉光演习”才结束，军方紧接着又在星期一(8月17日)实施了一个攻击型“第一人称视角”(First Person View, FPV)无人机实弹射击演习，由炮兵、陆战队及宪兵无人机等不同部队协同训练，以挂载高爆破穿甲弹的无人机射击标靶战车，模拟更真实的作战场景。&lt;/p&gt;&lt;p&gt;台湾国防部下属媒体《青年日报》报道，陆军无人系统训练指挥部星期一在其台南基地举行了无人机集训及实弹射击训练，由三个炮兵指挥部、海军陆战队及宪兵无人机连等单位参与演训。&lt;/p&gt;&lt;p&gt;报道指出，在实弹射击的演练中，参演部队依既定的射击时序操作挂载3.5寸高爆穿甲弹的FPV无人机，判断进入攻击时的适当距离与角度飞向目标区，再针对退役的靶车CM12坦克及CM24装甲车等模拟目标进行单机与双机模式的俯冲攻击，在精准打击目标后完成实弹爆破。&lt;/p&gt;&lt;p&gt;台湾媒体《放言》报道说，在实弹射击中军方并未公布高爆穿甲弹对车体实际造成的破坏程度，但此次训练“直接使用具有真实装甲结构的退役战车、甲车作为标靶，训练条件比一般平面靶更接近实际战场。”&lt;/p&gt;&lt;p&gt;报道还说，FPV无人机的特色在于飞操手能透过“第一人称视角”即时操控，以较低成本直接攻击装甲车、火炮、指挥节点或其他高价值目标，在俄乌战争后FPV攻击无人机已成为地面部队最重要的新型消耗性武器之一，台湾军队今年也逐步把FPV无人机从一般飞行训练转为挂弹、实弹与多机协同训练。&lt;/p&gt;&lt;p&gt;台湾陆军6月初曾在北部宜兰及台南同步实施FPV攻击型及投弹式无人机的实弹射击训练，对靶车分别进行高速撞击以及在200公尺高空投弹，此次演练则是增加不同部队的共同参演，扩大协同作业的实战化训练。&lt;/p&gt;
+    &lt;/div&gt;
+
+                            
+
+        
+
+
+    
+                        
+
+                    &lt;/div&gt;
+
+    
+                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>美国之音</author><pubDate>Tue, 18 Aug 2026 21:51:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMinwFBVV95cUxPRnFPRmZ3OGdiRU54RnN1TW53amc5TzFGeDkxTDBxZ3liWElxZ3VRMm9OVEFXMWpFeDNqdFM4WExvTE1kaVVXbmtFZW9FbkxfekczazFrSHlMNHkwNEoyc3RlUnVKLVl6UmJYeHRWMjlCMW1DVnJWcVpsSlFaQ1hKcmx5UXpFTEo4N3JpS3JORG1FZGhuNmxFdEZ3enEzdk3SAaIBQVVfeXFMT1VXTTNqNzBBRFU3UEc2OXJvZ2pDR2ZFbVBYcFl6Q01KY290a3dGRXJvZjI2NXNHSS1ZUnpVdEl0elFIMUFZeFRPN1Z5WGp6d1pQQXBBTTluUExTa3U3cmlwTkxsNTFvdlYtZlltRW9qbU1tRE1QLWdTTlpjTmp2VjVheEFuZnROekpnUm9fcjlHQk9ZcUhLVE9rY2tvOHZudXRR</guid></item><item><title>苹果调整应用商店规则 落实《数字市场法》欧盟表示欢迎 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E8%8B%B9%E6%9E%9C%E8%B0%83%E6%95%B4%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E8%A7%84%E5%88%99-%E8%90%BD%E5%AE%9E-%E6%95%B0%E5%AD%97%E5%B8%82%E5%9C%BA%E6%B3%95-%E6%AC%A7%E7%9B%9F%E8%A1%A8%E7%A4%BA%E6%AC%A2%E8%BF%8E</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:34:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi9wJBVV95cUxObHNtSEJjblV5SzhObnZuMF9RcmE0NlBBRklxeGI2ZVd4Z0JienhlbXpzdXlITldLZDNmVGRZMVlRdWRQNVZITUZ1aDlBcjJmeUFxME52cEdtYzhDb1BTMzlMRFRST3EwYWxidThTbGxTczRMYVpFd3NoaHh5OGtzaHVNVUQ3b2d6Y3gwSk9KNDJOcHNjVXpoenFRU2d2NHl5WU9IY0lpVzlKQi1YOTFLcWVPUlI2N0F3bUtGVmh5T2NlSFJkMTdKaG9xLVhOLWt0NjNINl81U2tyaTBQa01FeEk0ZkFRbVNUdGc3b0tRVmI0dVVQSklTcUFkRDNhRE13Mlk0U0ZGdGcyQnl3M0dxekwzUzFqamc3ZWVVT2dPSkI5ZkF2WlRhbGdNclJXWXRaeTVuZDduYTJ2eDMwbG9aQmNUVkM4a1FDT1FWdXBxWFJHR1kwbk1OcXJzZWxZemFDLV9qV1pJOF80YjBQcVNvazVHZW03bU0</guid></item><item><title>OpenAI披露Hugging Face事件后安全新政：暂停前沿模型强化学习训练 - finance.sina.com.cn</title><link>https://finance.sina.com.cn/world/2026-08-19/doc-ininuvcf9651675.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    
+&lt;p&gt;　　周二，OpenAI宣布了一系列新的安全政策，重点加强模型测试期间的安全事件管控。新措施包括在开发过程中对模型进行更详细的监控，以及在训练后阶段更强调对齐与安全。&lt;/p&gt;
+&lt;p&gt;　　“随着模型能力不断增强，内部开发和测试过程中所伴随的风险也在上升，”该公司在一篇博客文章中表示。“我们的监控、对齐和安全标准必须保持在这些风险之前。”&lt;/p&gt;
+&lt;p&gt;　　这是自7月21日Hugging Face事件披露以来，OpenAI安全实践方面首批公开的变动之一。&lt;/p&gt;
+&lt;p&gt;　　OpenAI代表表示，这些措施并非直接针对Hugging Face事件，但在一定程度上也受到即将推出的Astra模型网络安全能力以及AI发展整体步伐的推动。&lt;/p&gt;
+&lt;p&gt;　　在同一篇博文中，OpenAI透露，在Hugging Face事件后其暂停了为期两周的强化学习（RL）训练，但此后已重启了多数风险较低的模型。&lt;/p&gt;
+&lt;p&gt;　　“我们最大规模的计划前沿强化学习运行仍处于暂停状态，同时我们正进行较小规模的训练和评估，以观察模型行为、验证我们的安全措施，并在推进前建立更多对齐方面的证据，”博文写道。&lt;/p&gt;
+&lt;p&gt;　　OpenAI研究副总裁Amelia Glaese对记者表示，随着模型能力增强，管控的严格程度也将相应提高，最大的模型将面临最严格的审查。&lt;/p&gt;
+&lt;p&gt;　　“我们已经为安全开发制定了要求和预期，”Glaese告诉记者。“这些要求和预期会根据我们观察到的风险水平而变化。”&lt;/p&gt;
+&lt;p&gt;　　事件发生后，OpenAI因其较弱的网络安全实践而受到批评，当时模型通过入侵其网络上具有互联网访问权限的工具而逃脱了训练环境。新措施包括更强的网络隔离措施，但具体细节仍较模糊。博文称，在新体系下，“单一工作负载或支持服务的受损本身并不足以导致对互联网或其他内部网络的未授权访问”。&lt;/p&gt;
+&lt;p&gt;　　最严格的是监控系统，它将检查工具操作、可用推理痕迹和活动日志，以发现各种未经授权的行为。OpenAI表示，其目标是在发现可疑活动后30分钟内发出警报。&lt;/p&gt;
+&lt;p&gt;　　OpenAI估计，该监控的计算成本约为被监控流程的20%。该公司承诺将在后续博文中提供有关该系统的更多细节。关于该事件的官方事后分析报告仍在进行中。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>finance.sina.com.cn</author><pubDate>Tue, 18 Aug 2026 21:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTFBIZ0N1VDJ6MDMycnpMZkRiQkV6NmNsVTJzX2pMQXZRUXFwbU83TW9GN0tMYThsUUdfOU1LeWFmX3NKZ3lsTXhZcDBEdlVKOWl0clB2dGpqaGhyNmNTdVJ0QzAtY1RWaWVpRzlnV1UwMjJUR3ZfNDV5cFN3</guid></item><item><title>英伟达被低估50%？美银称AI融资风险定价过度 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779737</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 21:09:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBIUlI1UDFXejBWWTFqWmxDSmxhdzV5MHVscVRvRzVRekJqd0d6bDRfS3duYnIyY2daSWVTMUpFb21EZnI0aFRmOGNKcWd2a3huclZn</guid></item><item><title>人工智能：德国160万份工作将转型——中国是否是个警示？ - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E5%BE%B7%E5%9B%BD160%E4%B8%87%E4%BB%BD%E5%B7%A5%E4%BD%9C%E5%B0%86%E8%BD%AC%E5%9E%8B-%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E6%98%AF%E4%B8%AA%E8%AD%A6%E7%A4%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:07:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi4gJBVV95cUxOMUlfNDBpUkIwZGFvajJYcEx3ZXlIelc1WjctNVlVQUY0X0ladERJYWd0cDNnY3JNS2lHM3U1VFcyaC1UTFp2MmQ2czhLZjNUNGlzSzV1UnA1aENsZmxVVUlGUjktdVVuV05QLUlrMXNtR3JvaUdrZ0RCcC1vanlvLWNqaXZfb1NpNXdJZm5Ha1JVcVgwU01oMGV1Z3V5MWZ5c3cwTElqYzhnejBWRkxydXRweVpkMHpBdGgyYTZxOGdFRWkxUDNzTFpmRGZNbDQzR1F3YUFFZDVORDN1NlVsX3p0eXJBSUpNMXBaVTk5NF9tOF9xNURHRS02VGxPRS0yLTIyaVJ0dDVUS2JmcmNXejg5ZVE2M1VYNFZqQnZSWFI5b0RWS09fUGthc24wSk1IVFpjbURxUGJxMGpVS1BMcGpCSGxTMmltNEd3dGpwYnZubUZkMms5aTBmczM3VHR0MkE</guid></item><item><title>AI交易情绪逆转 苹果“反AI”属性正成股价拖累 - finance.sina.com.cn</title><link>https://finance.sina.com.cn/world/2026-08-19/doc-ininuqvh2987515.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
 					
 					
 					
@@ -3065,212 +3693,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 05:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE83ZzB1R2JkOV9jaXBRR0JEMnZUMHhsU0w2RW9IelQ4YWE1NWRhRkxoN1VnUTR4TFhSMnZjaUFIb3lWODUwWVQzajE3azRpcFd6am84S1lYVzg</guid></item><item><title>虚伪！“一边封堵中国AI，一边从中赚钱” - 观察者</title><link>https://www.guancha.cn/internation/2026_08_18_827704.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
-&lt;p&gt;
-	据路透社8月17日消息，由美国总统特朗普支持的World Liberty Financial公司正在与一家总部位于中国香港的初创公司合作，而后者提供由中国公司开发的人工智能（AI）模型。
-&lt;/p&gt;
-&lt;p&gt;
-	讽刺的是，特朗普政府致力于以所谓国家安全为由，打压中国AI。
-&lt;/p&gt;
-&lt;p&gt;
-	今年早些时候成立的WorldClaw为客户提供一系列AI模型的访问权限，并接受World Liberty的加密货币代币作为支付方式。特朗普家族通过持股，从World Liberty代币的使用中获得收入。
-&lt;/p&gt;
-&lt;p&gt;
-	路透社调查发现，WorldClaw网站上提供的90个模型中，有43个（近一半）由阿里巴巴、百度、Z.ai等中国科技公司开发。而特朗普政府一直声称，这些公司对美国国家安全和知识产权构成风险。
-&lt;/p&gt;
-&lt;p&gt;
-	同时，WorldClaw也提供OpenAI和Anthropic等美国公司的数十个模型。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2026/08/18/20260818085608546.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	埃里克·特朗普曾公开推荐WorldClaw&lt;span&gt; 推文截图&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	路透社表示，World Liberty与WorldClaw的合作，以及WorldClaw与这些中国公司的关系，本身并不违法。而且，由于中国模型性价比更高，正在包括美国科技公司在内的全球范围内获得关注。
-&lt;/p&gt;
-&lt;p&gt;
-	尽管如此，七名专家表示，这一商业合作——以及特朗普通过World Liberty可能获得的利润，与其政府对中国AI的立场相矛盾。
-&lt;/p&gt;
-&lt;p&gt;
-	乔治城大学安全与新兴技术中心研究员萨姆·布雷斯尼克表示：“美国政府一边试图应对中国AI的崛起和威胁，一边通过WorldClaw使用中国AI模型工具来赚钱，似乎有些虚伪。”
-&lt;/p&gt;
-&lt;p&gt;
-	路透社无法确定World Liberty与WorldClaw的财务安排细节，也无法确定特朗普家族从该平台的加密货币支付中赚了多少钱。
-&lt;/p&gt;
-&lt;p&gt;
-	但特朗普的两个儿子曾公开推广过WorldClaw，且一名World Liberty高管曾担任WorldClaw的顾问。
-&lt;/p&gt;
-&lt;p&gt;
-	白宫发言人安娜·凯利在一份声明中表示，World Liberty与WorldClaw的关系“不存在利益冲突”，并且“特朗普总统只按照美国公众的最佳利益行事”。
-&lt;/p&gt;
-&lt;p&gt;
-	World Liberty发言人戴维·瓦克斯曼称，WorldClaw是一家独立公司，并指出主要美国公司也同时提供中国和美国科技公司的AI模型。“这是一种常见且被广泛接受的做法。”
-&lt;/p&gt;
-&lt;p&gt;
-	WorldClaw发言人则在声明中表示，该公司“帮助美国AI公司接触国际用户”，并且“提供模型并不构成对其开发者的认可”。
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;img src="https://i.guancha.cn/news/external/2026/08/18/20260818085722928.jpg" title="点击查看大图" class="bigimg"&gt; 
-&lt;/p&gt;
-&lt;p class="content-pic-desc"&gt;
-	特朗普家族集团官网显示，World Liberty Financial获得该集团支持&lt;span&gt;&lt;/span&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-	路透社提到，个人和企业通常可以合法使用WorldClaw提供的中国AI模型。但其中一些生产AI模型的中国公司，因所谓国家安全担忧而面临美国政府的限制，包括阿里巴巴、百度和Z.ai。
-&lt;/p&gt;
-&lt;p&gt;
-	此外，特朗普政府官员还盯上了DeepSeek和月之暗面，污蔑它们“窃取”美国AI企业的知识产权。
-&lt;/p&gt;
-&lt;p&gt;
-	近年来，人工智能已经成为中美科技竞争的重要领域。
-&lt;/p&gt;
-&lt;p&gt;
-	过去，美国在芯片、基础模型、云计算等领域长期占据优势。但随着中国企业不断投入人工智能研发，中美之间的技术差距正在迅速缩小。尤其是在开源模型领域，中国企业的发展引起美国高度警惕。
-&lt;/p&gt;
-&lt;p&gt;
-	面对中国AI进展加速，美国政府已经难掩焦虑。
-&lt;/p&gt;
-&lt;p&gt;
-	8月初，白宫被曝召集Anthropic、OpenAI、谷歌、Meta、微软和英伟达等AI巨头召开闭门会议，审议一份所谓“自愿AI监管框架”。
-&lt;/p&gt;
-&lt;p&gt;
-	至于特朗普政府为何此时出新招，美媒心照不宣提到中国。其中，《纽约时报》直言，特朗普在谈到AI时总是“中国”“中国”说个没完，誓言要保住美国AI领先地位。《华尔街日报》则提到，近期中企陆续推出性能卓越的大模型，且成本更低。
-&lt;/p&gt;
-&lt;p&gt;
-	路透社8月15日报道称，根据一份内部草案内容和一名美国官员透露，美国正准备告知数十个国家，必须在与中国的人工智能（AI）竞赛中选边站队。
-&lt;/p&gt;
-&lt;p&gt;
-	当前，美国加速构筑技术壁垒，推行具有强烈排他性的技术规则，这种“小院高墙”策略不仅加剧了全球科技治理的阵营化风险，更严重威胁着全球开放创新生态。
-&lt;/p&gt;
-&lt;yd-mg-icon id="yd-mg-icon-host"&gt;&lt;/yd-mg-icon&gt;&lt;yd-mg-block-icon id="yd-mg-block-icon-host" class="notranslate" translate="no"&gt;&lt;/yd-mg-block-icon&gt;&lt;yd-image-ocr id="yd-image-ocr-host"&gt;&lt;/yd-image-ocr&gt;&lt;yd-mg-huaci id="yd-mg-huaci-host" class="notranslate" translate="no"&gt;&lt;/yd-mg-huaci&gt;
-&lt;p&gt;
-	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;yd-floating-ball id="yd-floating-ball-host" class="notranslate" translate="no"&gt;&lt;/yd-floating-ball&gt;
-&lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 18 Aug 2026 05:37:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE9lcXdZeFdxUkp5UkI5bTR1djlWNl9Hd0FWd2pGaUkyNW8wdGFVNXBoQVRnNFZjTU9DTTlwMG4wNXFrS3llTnpnZ1lyS3p6bHo0NzRZa09PakJITzJkNGtHWmplSDItcGZnQ1E</guid></item><item><title>《牛来》导演专访曝光！穷到在闲鱼淘二手设备 计算机主板都烧了 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144499.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息， 今日，“牛来导演主板都烧了”登上微博热搜。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/3e39d59fdd2c41bd8b71ba481b5ce6a3.png" target="_blank"&gt;&lt;img alt="《牛来》导演专访曝光！穷到在闲鱼淘二手设备 计算机主板都烧了" h="50" src="//img1.mydrivers.com/img/20260818/s_3e39d59fdd2c41bd8b71ba481b5ce6a3.png" w="382"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;原来随着动画电影《牛来》热度反向暴涨，导演信雨萌早前的一段专访音频被网友扒出。其在访谈中自曝制作影片期间烧坏主板的幕后经历，在社交平台刷屏发酵。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/d6f098b40850490b926e183aa86960fc.png" target="_blank"&gt;&lt;img alt="《牛来》导演专访曝光！穷到在闲鱼淘二手设备 计算机主板都烧了" h="373" src="//img1.mydrivers.com/img/20260818/s_d6f098b40850490b926e183aa86960fc.png" w="550"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;访谈中，今年34岁、本科学习艺术景观专业的信雨萌，首次对外揭秘了《牛来》名字的由来。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;“一是21年是牛年吧，再一个我父亲也是属牛的。之后就是想到了这个从头到尾的一个贯穿，也是结合了自己的一个人生的感悟，形成了一个共鸣，慢慢慢慢的就出来了这么一个比较其独特的作品”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;聊到影片的创作投入，信雨萌感慨万千。他透露，“投入主要是时间精力上，在资金上肯定也是有投入的，包括你做这个作品，首先要有设备吧，要有一些比如说要有计算机的设备啊、配件啊，包括显卡呀之类的一些东西。”&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;“很多东西它是有一个等级的，高端的东西制作的效果好，一定是更贵的。价格非常的昂贵，在这个时候，有些东西根本是我们无法承受的。”&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;信雨萌介绍“不能像那些企业一砸就是那么多钱去买一些高级的设备，咱没有那个基础，所以说您只能是买一些，相对来讲把这个东西中和起来。&lt;/p&gt;
-&lt;p&gt;他进一步介绍称“比如实在不行的话，&lt;strong&gt;我们还去比如说像闲鱼啊，这一类的平台去采购了一些硬件，坏的几率非常高，不少都是坏了，有的计算用的不好，计算机的主板都烧了，这个没有办法嘛，&lt;/strong&gt;你必须要做这个事情，这个烧钱的过程，这个，反正也是也是一个，哎呀，就是比较煎熬的过程吧。”&lt;/p&gt;
-&lt;p&gt;这番幕后自述一经流出，引发讨论。不少网友被导演五年孤军奋战的经历深深打动：无外来投资、没有外包团队，仅凭一台家用电脑逐帧打磨动画，硬件烧坏依旧咬牙坚持，热爱足以抵御万般困难。&lt;/p&gt;
-&lt;p&gt;同时也有网友调侃：虽然影片内容争议不断，但实打实的“牛”真的来了。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/4b6852ad738f4a59831406fd271c3f12.png" target="_blank"&gt;&lt;img alt="《牛来》导演专访曝光！穷到在闲鱼淘二手设备 计算机主板都烧了" h="562" src="//img1.mydrivers.com/img/20260818/s_4b6852ad738f4a59831406fd271c3f12.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;值得注意的是，猫眼电影数据显示，截至8月17日14:55分，电影《牛来》票房已经突破1263.68万元，逆势收获亮眼的市场成绩。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/ff85141935ff42999ca69f9d4326a848.jpg" target="_blank"&gt;&lt;img alt="《牛来》导演专访曝光！穷到在闲鱼淘二手设备 计算机主板都烧了" h="1303" src="//img1.mydrivers.com/img/20260818/s_ff85141935ff42999ca69f9d4326a848.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/e383bea5e788454ab86b8874b1c8682d.jpg" target="_blank"&gt;&lt;img alt="《牛来》导演专访曝光！穷到在闲鱼淘二手设备 计算机主板都烧了" h="778" src="//img1.mydrivers.com/img/20260818/s_e383bea5e788454ab86b8874b1c8682d.jpg" w="550"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 05:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE53OWNTVDVrbWRWUXlpZm1qSmdFQ0xESzFtMVRBeDZzaDBUb1JyZWJxVVY4Z1JZaXJDNWc0MGRQeWQ5VGpaSU44Mm50TGlwejE4VHA1WC1xMS0</guid></item><item><title>Claude 给所有 AI 文字加了水印，全球用户彻底怒了！ - 爱范儿</title><link>https://www.ifanr.com/1675465</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="o-single-content__body c-single-normal__header" id="content-meta-header"&gt;
-            &lt;p class="o-single-normal-content"&gt;
-              &lt;h1 class="c-single-normal__title"&gt;Claude 给所有 AI 文字加了水印，全球用户彻底怒了！&lt;/h1&gt;
-            &lt;/p&gt;
-          &lt;/div&gt;
-          &lt;article class="o-single-content__body__content c-article-content s-single-article js-article"&gt;
-  
-&lt;p&gt;说到 Anthropic，它就像是 &lt;strong&gt;AI 领域的康复新液&lt;/strong&gt;——&lt;/p&gt;
-&lt;p&gt;大家或多或少容易对它感到恶心，但效果确实摆在那里，捏着鼻子也得用。&lt;/p&gt;
-&lt;p&gt;更糟糕的是，A 社自己也清楚这一点，并由此养成了一个非常恶劣的习惯：喜欢当用户的爹。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675466" src="https://s3.ifanr.com/wp-content/uploads/2026/08/1-amodei-bloom.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/1-amodei-bloom.jpeg!720 2000w, https://s3.ifanr.com/wp-content/uploads/2026/08/1-amodei-bloom-360x240.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/1-amodei-bloom-768x512.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/1-amodei-bloom-1024x683.jpeg 1024w" sizes="(max-width: 2000px) 100vw, 2000px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜彭博社&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;最明显的表现之一，就是 Anthropic 上周宣布的「全体用户强制文字水印」事件。&lt;/p&gt;
-&lt;p&gt;事情的起因依然是欧盟，欧盟《人工智能法案》中最新生效的条款 Article 50(2) 作出了如下规定：&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;自 2026 年 8 月 2 日起，所有提供生成合成音频、图像、视频或文字的 AI 系统——包括通用 AI 系统——必须确保输出结果包含「机器可读的标记」，并能够被检测为 AI 生成或修改的内容。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675484" src="https://s3.ifanr.com/wp-content/uploads/2026/08/2-EU-AI-act-1.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/2-EU-AI-act-1.jpg!720 1920w, https://s3.ifanr.com/wp-content/uploads/2026/08/2-EU-AI-act-1-360x214.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/2-EU-AI-act-1-768x456.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/2-EU-AI-act-1-1024x608.jpg 1024w" sizes="(max-width: 1920px) 100vw, 1920px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜artificialintelligenceact.eu&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;为了响应号召，Anthropic 先在 7 月签署了欧盟《人工智能生成内容透明度行为准则》，然后做出了如下部署：&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;未来，现有 Claude 模型生成的文字中将会带有水印，且 8 月 2 日或之后推出的新版本模型从发布第一天起就会内置文字水印。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2&gt;A 社的私货藏不完&lt;/h2&gt;
-&lt;p&gt;需要注意的是，这次 Anthropic 为了遵循欧盟法规而添加的文字水印，和今年年初为了标记中国用户采用的「字符水印」不是同一种东西。&lt;/p&gt;
-&lt;p&gt;简单来说：&lt;strong&gt;Claude 水印从之前「加入用户无法辨别的字符」转成了「在输出结果中使用可以被识别的特定频率字词组合」。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675468" src="https://s3.ifanr.com/wp-content/uploads/2026/08/3-water-demo.gif" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/3-water-demo.gif 960w, https://s3.ifanr.com/wp-content/uploads/2026/08/3-water-demo-360x292.gif 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/3-water-demo-768x622.gif 768w" sizes="(max-width: 960px) 100vw, 960px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;官方效果演示｜Claude&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;从原理上讲，Anthropic 这次使用的水印参考自谷歌的 SynthID-Text，是一种「统计水印」——&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;即挑选候选词时，根据事先设定好的密钥，让 AI「有规律」地选择一些同义词，在生成文本足够长之后就会形成可机器识别的特征。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675469" src="https://s3.ifanr.com/wp-content/uploads/2026/08/4-synthid.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/4-synthid.jpeg!720 1650w, https://s3.ifanr.com/wp-content/uploads/2026/08/4-synthid-360x202.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/4-synthid-768x432.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/4-synthid-1024x576.jpeg 1024w" sizes="(max-width: 1650px) 100vw, 1650px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜Android Police&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;比如你和 Claude 讨论天气，Claude 可能这样回答：&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;北欧的秋冬季节天气很冷，天色很「阴沉」，环境色调将会变得「压抑」，整体呈现「铅灰色」……&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;对人类来说，把上面的阴沉换成阴郁、压抑换成晦暗、铅灰色换成深灰色不会影响理解，也基本不改变原意：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675470" src="https://s3.ifanr.com/wp-content/uploads/2026/08/5-weather.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/5-weather.jpg!720 1920w, https://s3.ifanr.com/wp-content/uploads/2026/08/5-weather-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/5-weather-768x513.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/5-weather-1024x684.jpg 1024w" sizes="(max-width: 1920px) 100vw, 1920px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜Lorena Pop&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;但对电脑来说，「阴沉 + 压抑 + 铅灰色」的组合对应了某个密钥的选词特征，从而让这段话可以被识别为「有 AI 参与」的文本。&lt;/p&gt;
-&lt;p&gt;此外 Anthropic 还在社区公告中针对 Claude 水印做了一些补充说明，比如：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Claude 生成的文本中不会添加任何额外内容，也不存在隐藏字符&lt;/li&gt;
-&lt;li&gt;水印不需要额外消耗 Token，因此不会增加使用成本&lt;/li&gt;
-&lt;li&gt;水印不携带任何身份信息，无法追溯到某个具体的人、组织或聊天记录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;然而还是那句话—— &lt;strong&gt;Anthropic 水印看着很规范，也有欧盟法规这种冠冕堂皇的大旗，但 A 社堪称「劣迹斑斑」的前科还是很难让人完全信任它。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;果不其然，Anthropic 就在这种纯粹技术合规的事情上玩起了「私自加码」的操作：&lt;/p&gt;
-&lt;p&gt;欧盟《人工智能法案》理论上只针对欧盟地区的用户，但 Anthropic 决定&lt;strong&gt;直接全球上线、不给非欧盟用户任何选择空间&lt;/strong&gt;，举手投足间还是那股熟悉的「爹味」。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675471" src="https://s3.ifanr.com/wp-content/uploads/2026/08/6-play-jesus.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/6-play-jesus.jpeg!720 1200w, https://s3.ifanr.com/wp-content/uploads/2026/08/6-play-jesus-360x203.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/6-play-jesus-768x432.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/6-play-jesus-1024x576.jpeg 1024w" sizes="(max-width: 1200px) 100vw, 1200px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜X @pmddomingos&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;结果 Claude 强制加水印的消息出来没多久，就有人在 Github 上发布了专门用于清洗 AI 水印的开源工具，仅仅五天就收获了超过 1.1 万个星标：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675472" src="https://s3.ifanr.com/wp-content/uploads/2026/08/7-remover.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/7-remover.png!720 1848w, https://s3.ifanr.com/wp-content/uploads/2026/08/7-remover-360x324.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/7-remover-768x692.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/7-remover-1024x922.png 1024w" sizes="(max-width: 1848px) 100vw, 1848px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;项目地址：https://github.com/guillaumemeyer/watermarks-remover&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;更搞笑的是，尽管 Claude 会拒绝安装这个 skill，但如果去看 Github 贡献榜，就能看到&lt;strong&gt;它的源码有一部分就是 Claude 写的&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675473" src="https://s3.ifanr.com/wp-content/uploads/2026/08/8-claude-coded.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/8-claude-coded.png!720 1866w, https://s3.ifanr.com/wp-content/uploads/2026/08/8-claude-coded-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/8-claude-coded-768x434.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/8-claude-coded-1024x578.png 1024w" sizes="(max-width: 1866px) 100vw, 1866px"&gt;&lt;/p&gt;
-&lt;p&gt;当然还有更直接的，可以用 Declaude 这个路由站直接将文本丢给干净的模型「洗一遍」，去除统计水印：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675474" src="https://s3.ifanr.com/wp-content/uploads/2026/08/10-decalude.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/10-decalude.png!720 3680w, https://s3.ifanr.com/wp-content/uploads/2026/08/10-decalude-360x234.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/10-decalude-768x499.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/10-decalude-1024x666.png 1024w" sizes="(max-width: 3680px) 100vw, 3680px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;项目地址：https://declaude.org&lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;谁有权帮用户做决定&lt;/h2&gt;
-&lt;p&gt;Claude 一边加水印、一边帮忙写去水印工具这件事虽然搞笑，但的确抛出了一个很严肃的问题：&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;在 AI 内容泛滥的今天，谁有权判定应该在什么场合下添加水印？谁又有权监测和使用这些水印？&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675475" src="https://s3.ifanr.com/wp-content/uploads/2026/08/11-amodei-nyt.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/11-amodei-nyt.jpg!720 2048w, https://s3.ifanr.com/wp-content/uploads/2026/08/11-amodei-nyt-360x240.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/11-amodei-nyt-768x512.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/11-amodei-nyt-1024x683.jpg 1024w" sizes="(max-width: 2048px) 100vw, 2048px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜New York Times&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;毕竟引起用户普遍反感的，除了阿莫代伊喜欢扮演 AI 灭世论中的救世主之外，最关键的其实是 Anthropic 的「一刀切」政策——&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;不止是生成文字，你让 Claude 翻译一段文献、优化你写的简历，甚至单纯是检查语病或者错别字，都有可能会被带上水印。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675476" src="https://s3.ifanr.com/wp-content/uploads/2026/08/12-to-desktop.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/12-to-desktop.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2026/08/12-to-desktop-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/12-to-desktop-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/12-to-desktop-1024x576.png 1024w" sizes="(max-width: 3840px) 100vw, 3840px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜Anthropic&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;针对这种不分青红皂白就加水印的不负责行为，知名科技分析师 Ben Thompson 给出了一段尖锐的评价：&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;LLM 首先是一种由人使用的工具，如果一个人完成研究、观点和初稿，只让模型润色，把最终作品标记成 AI 内容，就类似于因为文章是用铅笔写的而要求把铅笔列为作者。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;最让人无语的是，&lt;strong&gt;Anthropic 自己是知道这个问题的&lt;/strong&gt;，但他们选择在社区公告中一笔带过，没有提供任何有意义的解决方案。&lt;/p&gt;
-&lt;p&gt;然而现成的例子就摆在眼前—— Adobe Photoshop。&lt;/p&gt;
-&lt;p&gt;Adobe 同样会强制在 PS 中添加用于标记 AI 内容的 C2PA 水印，但从上线第一天就明确规定了「仅在使用 Firefly 生成式工具后才会添加」：&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675477" src="https://s3.ifanr.com/wp-content/uploads/2026/08/13-generative-fill.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/13-generative-fill.jpeg!720 1161w, https://s3.ifanr.com/wp-content/uploads/2026/08/13-generative-fill-360x196.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/13-generative-fill-768x417.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/13-generative-fill-1024x557.jpeg 1024w" sizes="(max-width: 1161px) 100vw, 1161px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜The Robo Collective&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;换句话说，你用 PS 裁剪一张照片、手动调色、修图、拼贴等等，是不会产生任何 AI 水印的，手动工具依然是手动工具。&lt;/p&gt;
-&lt;p&gt;然而「什么场景加水印」还不是重点，对于 AI 工具用户影响更大的，其实是「你的甲方怎么想」，或者说 &lt;strong&gt;AI 水印背后的社会解释&lt;/strong&gt;问题。&lt;/p&gt;
-&lt;p&gt;由于 Claude 这种完全不区分使用场景的不负责行为，公司、学校、出版社、媒体平台等等很容易形成一个同样偏颇的判断：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;有 AI 水印存在 = 你的东西是 AI 生成的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675478" src="https://s3.ifanr.com/wp-content/uploads/2026/08/14-generated.jpeg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/14-generated.jpeg!720 2132w, https://s3.ifanr.com/wp-content/uploads/2026/08/14-generated-360x270.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/14-generated-768x576.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/14-generated-1024x768.jpeg 1024w" sizes="(max-width: 2132px) 100vw, 2132px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜WIRED&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;尽管 A 社说「检测到水印仅代表内容可能经过 Claude 处理，不等于 Claude 生成」，但每天面对几千几万份内容的发行方会有精力和能力去一一判断吗？根本不可能。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这样一来，Anthropic 的水印政策严重影响了那些将 Claude 或者其他 AI 工具当作「创作辅助」的用户，更是为「赛博猎巫」提供了巨量的误伤机会：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675479" src="https://s3.ifanr.com/wp-content/uploads/2026/08/15-cyber-witch-hunt.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/15-cyber-witch-hunt.png!720 1448w, https://s3.ifanr.com/wp-content/uploads/2026/08/15-cyber-witch-hunt-360x270.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/15-cyber-witch-hunt-768x576.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/15-cyber-witch-hunt-1024x768.png 1024w" sizes="(max-width: 1448px) 100vw, 1448px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;使用 AI 生成&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;更何况它的水印还不是万无一失的——&lt;/p&gt;
-&lt;p&gt;哪怕是用 Claude 写的 AI 泔水，写完之后丢给某个不带水印的模型做一次「重写」或者「重构」，就能清除大部分统计水印的痕迹。&lt;/p&gt;
-&lt;p&gt;这也是 2024 年 OpenAI 研究 ChatGPT 文字水印时，最终没有选择全面部署的重要顾虑之一。&lt;/p&gt;
-&lt;p&gt;OpenAI 当时公开指出，&lt;strong&gt;循环翻译、新模型重写等「全局编辑」手段可以轻松绕过类似 SynthID-Text 这样的统计水印&lt;/strong&gt;，并且大规模应用后误报率也会被放大，最终影响到用户的整个工作流。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675480" src="https://s3.ifanr.com/wp-content/uploads/2026/08/16-frustrated-user.jpg!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/16-frustrated-user.jpg!720 1237w, https://s3.ifanr.com/wp-content/uploads/2026/08/16-frustrated-user-360x199.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/16-frustrated-user-768x424.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/16-frustrated-user-1024x565.jpg 1024w" sizes="(max-width: 1237px) 100vw, 1237px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜CXL&lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;AI 当然要管，凭什么是 A 社来管&lt;/h2&gt;
-&lt;p&gt;归根结底，Claude 强行加水印招致用户反对，其实是两件事情合力促成的结果。&lt;/p&gt;
-&lt;p&gt;一方面，Anthropic 借着法规强制的名义，用一种极其粗糙和不管不顾的方式，应用了一种本就不太完善的水印机制，&lt;strong&gt;活本身就干得就不怎么漂亮&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675481" src="https://s3.ifanr.com/wp-content/uploads/2026/08/17-synthid.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/17-synthid.png!720 1400w, https://s3.ifanr.com/wp-content/uploads/2026/08/17-synthid-360x208.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/17-synthid-768x443.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/17-synthid-1024x591.png 1024w" sizes="(max-width: 1400px) 100vw, 1400px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;图｜Medium&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;另一方面，Anthropic 或者达里奥·阿莫代伊本人长期想要扮演 AI 时代「救世主」、喜欢带着爹味教育用户的破习惯也终于到了一个&lt;strong&gt;大家难以忍受的程度&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img class="alignnone size-full wp-image-1675482" src="https://s3.ifanr.com/wp-content/uploads/2026/08/18-play-moses.png!720" alt="" srcset="https://s3.ifanr.com/wp-content/uploads/2026/08/18-play-moses.png!720 1672w, https://s3.ifanr.com/wp-content/uploads/2026/08/18-play-moses-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/08/18-play-moses-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/08/18-play-moses-1024x576.png 1024w" sizes="(max-width: 1672px) 100vw, 1672px"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;使用 AI 生成&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;整体来看，行业其实是接受「AI 内容要有标记」这件事的，但对 Anthropic 把一个概率性水印直接和「AI 作品」划等号存在着非常大的抵触。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Anthropic 这次真正触碰到的敏感点，是眼下生成式 AI 发展成了集校对、翻译、编程、研究、重写、共创等等的超级工具之后，「这东西是谁写的」已经不再是一个水印能回答的是或否的问题了。&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;/article&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>爱范儿</author><pubDate>Tue, 18 Aug 2026 05:01:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiQ0FVX3lxTE0wUlBuUUJXNDM2STdCbnVtdXhPbktnOVRVT09qNTYxWUl1cVdCbl9OX1I0aGJrQUVqOTF0Vkg2NV9RUEE</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 05:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE83ZzB1R2JkOV9jaXBRR0JEMnZUMHhsU0w2RW9IelQ4YWE1NWRhRkxoN1VnUTR4TFhSMnZjaUFIb3lWODUwWVQzajE3azRpcFd6am84S1lYVzg</guid></item></channel></rss>
