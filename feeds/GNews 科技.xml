@@ -1,5 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>二季度收入仅增18%！OpenAI“暴雷”，远低于Anthropic - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779748</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 19 Aug 2026 00:07:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBRTFhRWVQ5dFBSSTdZTmpDUU1tc0F6eE5zWHBqWmFyZkxyV1V5eERKa25wUGcybUtKanJXdklpdzZqUWZ4WmxlcjJuaFBhYndXUVhF</guid></item><item><title>宇树科技今日上市 中一签能赚多少？ - 东方财富</title><link>https://wap.eastmoney.com/a/202608193845029990.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>龙芯回应处理器安全漏洞 - 观察者</title><link>https://www.guancha.cn/economy/2026_08_19_827811.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	日前，龙芯中科发布《关于USENIX Security 2026会议论文中龙芯相关安全漏洞的说明》，回应近期公开的处理器安全漏洞。
+&lt;/p&gt;
+&lt;p&gt;
+	龙芯确认称，部分版本的3A5000、3A6000、3C5000和3C6000系列处理器，在特定运行条件下存在侧信道数据泄露风险。当应用调用LSX、LASX向量指令集合或浮点加载指令集时，处理器内部不同程序之间的微结构资源隔离可能不够充分，导致同一物理核心上运行的程序读取到少量残留数据。
+&lt;/p&gt;
+&lt;p&gt;
+	龙芯认为漏洞整体风险较低，并非LoongArch指令集架构本身的设计缺陷，攻击者必须获得设备本地运行权限，无法直接实施无权限远程攻击，也无法像普通内存读取一样指定任意地址获取数据。
+&lt;/p&gt;
+&lt;p&gt;
+	龙芯称，已经在漏洞公开披露前向操作系统合作厂商推送安全修复补丁，并建议服务器等多用户环境及时升级。新版3A6000和3C6000及后续迭代芯片已经修改微结构设计并经过流片验证，从硬件层面彻底消除该漏洞风险。
+&lt;/p&gt;
+&lt;p&gt;
+	此次龙芯回应的研究来自德国CISPA亥姆霍兹信息安全中心的四名研究人员在USENIX Security （美国高级计算系统协会安全研讨会）2026上公布的论文。
+&lt;/p&gt;
+&lt;p&gt;
+	研究人员发现，普通程序在特定情况下也能读取本不属于自己的CPU内部残留数据，并将漏洞命名为“LoongLeak”。论文显示，研究人员通过实际演示，从处理器中获取了磁盘加密使用的AES密钥、部分root密码哈希等敏感信息，部分攻击可以在数秒内完成；漏洞可以从普通应用程序、容器甚至虚拟机内部发起，并跨越权限边界泄露操作系统内核等敏感数据。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src="https://i.guancha.cn/news/official/2026/08/18/20260818183236436.png" title="点击查看大图" class="bigimg"&gt; 
+&lt;/p&gt;
+&lt;p class="content-pic-desc"&gt;
+	示意图&lt;span&gt;loongleak&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	研究团队表示，他们早在2025年7月23日就将漏洞报告给龙芯，龙芯随后复现了问题，并希望研究团队将漏洞细节保密一年，为分析和修复预留时间。直至2026年8月，研究团队才在USENIX Security 2026上正式公开LoongLeak。
+&lt;/p&gt;
+&lt;p&gt;
+	2023年，英特尔部分酷睿、至强处理器和AMD采用Zen 2架构处理器都曾曝出微结构数据泄露漏洞。虽然具体原理不同，但都表现为CPU内部此前处理过的数据在特定情况下没有被正确隔离，从而导致可能被其他程序获取。英特尔随后通过微码和固件更新缓解漏洞，AMD也通过微码和BIOS更新修复漏洞。
+&lt;/p&gt;
+&lt;p&gt;
+	龙芯处理器已有较大规模应用：2026年5月，龙芯中科披露，龙芯3A6000桌面处理器在主流行业的累计出货量已经突破100万片，主要应用于党政办公、税务和教育等领域。
+&lt;/p&gt;
+&lt;p&gt;
+	北京市2025年终端设备集中带量采购则涉及21180台信创终端设备，预算约1.13亿元，其中LoongArch龙芯技术路线设备达到13336台，包括11787台台式机和1549台笔记本，占采购总量约63%。
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;strong&gt;本文系观察者网独家稿件，未经授权，不得转载。&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 19 Aug 2026 02:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZEFVX3lxTE5ONGJaVThwYktScEVNcktfVXR2TXdlV0loOElrdkhwNmlhdE9KN1RxVjFtMkpKZnp6YXV5UVI2cmpxUkVFVXduWWRFZ1phZVc3VWYxRlV4VWQ4WURHWkFyT01yQTM</guid></item><item><title>宇树科技暴涨629% 150.80元发行1100元开盘 - 财新</title><link>https://finance.caixin.com/2026-08-19/102475557.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
+       &lt;p&gt;&lt;b&gt;　　【财新网】&lt;/b&gt;8月19日，&lt;a href="https://stock.caixin.com/m/market?originReferrer=pcarticle" target="_blank"&gt;A股&lt;/a&gt;“人形机器人第一股”&lt;a href="https://s.ccxe.com.cn/entities/companies/20045267292?originReferrer=pcarticle" target="_blank"&gt;宇树科技&lt;/a&gt;（688836.SH）上市，开盘报价1100元/股，比发行价格150.80元/股涨629.44%，成为2026年以来新股发行首日开盘涨幅最高的个股。&lt;/p&gt;
+&lt;p&gt;　　这一股价也使得宇树科技的市值飙升至4449亿元。按发行后总股本40446.4340万股计算，发行定价对应的上市估值为609.93亿元。&lt;/p&gt;
+&lt;p&gt;　　本次发行定价150.80元/股，对应2025年扣非后摊薄市盈率219.23倍，远超科创板同行业平均静态市盈率。发行公告也直言不讳地提示了风险：这一估值水平存在未来股价下跌给投资者带来损失的可能。尽管如此，机构询价依然踊跃。最终，公司预计募资总额达60.99亿元，净额约59.17亿元，远超招股书中拟募集的42.02亿元，超募约18亿元。&lt;/p&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新</author><pubDate>Wed, 19 Aug 2026 01:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYkFVX3lxTE5TTEY4akpHS2xxU253RjdXdnRuMDdGWWQyQTRDVVRLc04xRS0wcUVRSk84YTNmRWxSWlE1YVZ4dHhYU1NLelh4OHBubW5WcEtDcDNSSVQ1dV9PcUo3ODBxTkFR</guid></item><item><title>诺基亚撤离中国！年底前裁减大部分员工 分阶段关闭各地工厂 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144712.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，&lt;span&gt;&lt;strong&gt;据南华早报8月18日报道，芬兰电信设备巨头诺基亚正启动在中国市场的大规模收缩计划 —— 预计今年年底前裁减大部分员工，并分阶段关闭各地工厂。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这意味着这家深耕中国四十余年的老牌通信巨头，在本土竞争对手的持续挤压下，正式步入退场通道。&lt;/p&gt;
+&lt;p&gt;消息人士透露，诺基亚在中国的移动网络和网络基础设施业务团队都将分批裁员，大部分裁员将在年底前完成。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一位消息人士表示，届时将只保留售后服务，这“基本上意味着逐步退出市场”。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据近期离职的诺基亚上海前员工透露，裁员补偿采用 "N+3" 方案 —— 即按服务年限N计算的经济补偿，外加三个月工资。&lt;/p&gt;
+&lt;p&gt;虽然具体受影响人数尚未公布，但诺基亚年报显示，截至2025年底，公司在中国大陆、香港及台湾地区共拥有约7,200 名员工，业务遍布北京、上海、杭州、成都、青岛等城市。&lt;/p&gt;
+&lt;p&gt;与中国市场收缩形成对比的是，诺基亚正全力向AI和云计算转型。&lt;/p&gt;
+&lt;p&gt;公司7月23日发布的Q2财报显示，受重组费用增加影响，当期利润仅500万欧元，远低于去年同期的9600万欧元；但营收同比增长8%至48亿欧元，符合市场预期。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其中，AI和云计算领域成为最大亮点 —— 第二季度该领域订单总额达28 亿欧元，营收较去年同期翻倍。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;诺基亚CEO贾斯汀·霍塔德表示，公司正围绕建设数据中心和强化云计算的科技巨头需求进行业务转型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;值得一提的是，此前曾有消息传出，诺基亚计划关闭其位于杭州的研发中心，并将裁员约1600人。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;据《Light Reading》获取的截图及内部邮件均证实了该关停计划，并显示受影响员工已开始内部交流。&lt;/p&gt;
+&lt;p&gt;此外，有迹象显示，作为最新重组方案的一部分，诺基亚位于北京、成都、青岛和上海的其他工厂也或将关闭。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/33ae220a7bc44cdfbc4b7773113176e1.png" target="_blank"&gt;&lt;img alt="诺基亚撤离中国！年底前裁减大部分员工 分阶段关闭各地工厂" h="400" src="//img1.mydrivers.com/img/20260819/s_33ae220a7bc44cdfbc4b7773113176e1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 01:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBITlRGLTY5a3lzcjBYaDNuM0p1ZmNQbjFYQU1FLUNjbUNWV0lzbGNfQkpqb2NrMmVSdFBJaGhZNEx5amlTOEFad1Qwa0Nqek96bzc0T282cGM</guid></item><item><title>叙利亚发现数吨核材料，将接受国际原子能机构合作监督 - 观察者</title><link>https://www.guancha.cn/internation/2026_08_19_827801.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+&lt;p&gt;
+	美联社报道，国际原子能机构总干事格罗西18日在与叙利亚过渡政府外交部长希巴尼举行的联合新闻发布会上表示，近期在叙方向该机构报告的一处地点发现数吨核材料。
+&lt;/p&gt;
+&lt;p&gt;
+	这一消息发布之际，叙利亚新政府已承诺与该机构合作。叙利亚最高外交官13日曾表示，叙利亚有意发展和平核计划，并打算将其保管下的任何核材料均置于国际保障监督之下。
+&lt;/p&gt;
+&lt;p&gt;
+	格罗西盛赞叙方“勇敢决定”报告这处未公开地点，叙利亚的合作具有“巨大的重要性”。
+&lt;/p&gt;
+&lt;p&gt;
+	格罗西表示：“我们谈论的是数吨核材料，这些材料可能被用于不良目的，而叙利亚已决定向国际原子能机构的核查人员开放这一场址。这些材料将被清点造册，并纳入国际保障监督体系。”
+&lt;/p&gt;
+&lt;p&gt;
+	此外，格罗西访问了东部代尔祖尔的一个已关闭18年的地点，国际原子能机构曾怀疑该处藏有核反应堆。
+&lt;/p&gt;
+&lt;p&gt;
+	2007年9月，叙利亚东部代尔祖尔省沙漠中的一处设施遭到空袭。国际原子能机构于2011年认定，该地点“极有可能”为未申报的核设施。
+&lt;/p&gt;
+&lt;p&gt;
+	叙利亚前政府则坚称，那仅是一处常规军事设施。直至2018年3月，以色列方面才正式承认发动了此次空袭，并宣称其摧毁了一座正处于建造最后阶段的核设施。
+&lt;/p&gt;
+&lt;p&gt;
+	格罗西在大马士革的新闻发布会上对此表示，“我和我的团队进入了代尔祖尔场址内部，目前那里正在进行非常全面的挖掘和勘探工作。”
+&lt;/p&gt;
+&lt;p&gt;
+	叙利亚的新领导层已表达了发展核能的意向。
+&lt;/p&gt;
+&lt;p&gt;
+	叙利亚外交部长希巴尼对此次合作表示：“叙利亚根据技术评估确认，这些材料不构成任何威胁...它们将继续由叙利亚保管，并将继续接受该机构的保障监督。”
+&lt;/p&gt;
+&lt;/div&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Wed, 19 Aug 2026 01:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE53OGVkalJwU2I5bFloNWZ1SFp1RVhWT3ZOemFZNHdtVldnOGU4VndOYUk0ZTQ1M2lqa0dCSXNLdGlHVXYybkcyUTBBd1kxbEc0T1VFQklnd0FIaEExTE5EZ19DODJSTnNsZnc</guid></item><item><title>2999元！115长期VIP回归 不再赠送网盘空间 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144706.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;2999元！115长期VIP回归 不再赠送网盘空间&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-19 08:39:32  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/994982.html" title="随心的主页" class="newstiao4"&gt;随心&lt;/a&gt;&lt;p&gt;  编辑：随心 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144706-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，&lt;span&gt;&lt;strong&gt;115网盘上线七夕限定活动，备受关注的长期VIP套餐正式回归，定价2999元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;早在2014年，115网盘就曾推出过永久VIP，全球仅限50000名，售价5000元，送5PB（5120TB）存储容量。&lt;/p&gt;
+&lt;p&gt;2022年，115网盘又推出永久VIP，售价8000元，同样有5PB超大存储空间。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本次开售的2999元长期VIP，最大变化是不再附赠存储空间。&lt;/strong&gt;用户购买之后，只能解锁长期VIP对应的会员权益，网盘容量需要用户自备，不会额外扩容。&lt;/p&gt;
+&lt;p&gt;经过多年的积累，很多人的115网盘已经积累了几十TB的空间，这次套餐重心完全放在会员功能权限上，适合打算长期使用115的人群。&lt;/p&gt;
+&lt;p&gt;不过这笔开销不算小，2999元属于一次性大额支出。&lt;strong&gt;如果按常规500元/年套餐换算，需要连续使用6年以上才能回本&lt;/strong&gt;；如果蹲低价大促年费，回本周期会更长。&lt;/p&gt;
+&lt;p&gt;这次长期VIP属于七夕限定活动，官方没有说明开放售卖的持续时长。按照以往规律，这类长期套餐不会常年上架，活动结束之后会再度下架。&lt;/p&gt;
+&lt;p&gt;在这里提醒大家理性选购，下单前理清自身需求。如果手上没有足够网盘空间，又需要大量存储资源，就要把扩容成本一并算进去。仅仅追求会员功能，并且准备长久使用115，再考虑入手。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/24ca72694a7a4794be3bd64eeaafcee3.jpg" target="_blank"&gt;&lt;img alt="2999元！115长期VIP回归 不再赠送网盘空间" h="800" src="//img1.mydrivers.com/img/20260819/s_24ca72694a7a4794be3bd64eeaafcee3.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 00:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBSYXUtWWRkdmxMZWNjN3hYRmZPWmxTeTRXT04yT2twSFk4bjhEM2N1WUhjMnNiVlpuX2psRER0d1VFeU1hQ0FyNU9LN1NMaHBObklPTkFtbEM</guid></item><item><title>联想AI平板拯救者Y700无极重负载游戏实测：164.8帧稳跑海岛 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144705.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，联想放出拯救者Y700无极AI平板的游戏实测数据，这款主打便携的小尺寸平板，在两款热门手游长时间高负载运行下，帧率表现十分稳定。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;首先是3D回合制手游《崩坏：星穹铁道》，画质设置开到非常高档位。实测平均帧率59.9帧，稳帧指数0.88，全程几乎接近满帧运行。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;整机平均功耗7W，手握区域温度维持在39℃，长时间游玩不会出现明显烫手的情况。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/774df004d0dc4bc683423e5ef8b6644e.jpg" target="_blank"&gt;&lt;img alt="联想AI平板拯救者Y700无极重负载游戏实测：164.8帧稳跑海岛" h="1023" src="//img1.mydrivers.com/img/20260819/s_774df004d0dc4bc683423e5ef8b6644e.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;另一项测试为大逃杀手游《和平精英》，选用海岛地图进行测试。游戏平均帧率达到164.8帧，将165Hz高刷屏运用到了极致。而且稳帧指数0.06，画面波动幅度很小。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;整机平均功耗8.7W，手握区域温度40℃，高帧率模式下温控依旧控制在合理水平。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/4b3793f413d4487dac93b7028212a1df.jpg" target="_blank"&gt;&lt;img alt="联想AI平板拯救者Y700无极重负载游戏实测：164.8帧稳跑海岛" h="1023" src="//img1.mydrivers.com/img/20260819/s_4b3793f413d4487dac93b7028212a1df.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;拯救者Y700无极定位小尺寸5G游戏平板，将于8月25日正式发布。它配备8.4英寸RGB OLED显示屏，分辨率2560*1600，支持165Hz超高刷新率。&lt;/p&gt;
+&lt;p&gt;核心性能搭载骁龙8 Elite Gen5领先版，是目前高通新一代旗舰移动芯片。存储版本提供12+256GB、16+512GB、24+1TB三种选择。&lt;/p&gt;
+&lt;p&gt;以往很多小平板长时间高负载游戏容易过热降频，影响对战操作，这款产品的实测数据，体现出硬件调度和散热优化的效果。&lt;/p&gt;
+&lt;p&gt;对于手游玩家来说，如果你想要一台方便携带、能长时间稳住高画质高帧率的平板，拯救者Y700无极可以纳入备选。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="联想AI平板拯救者Y700无极重负载游戏实测：164.8帧稳跑海岛" h="1203" src="//img1.mydrivers.com/img/20260819/973872c8-1793-4f45-9b7f-4405adf4ed03.jpg" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Wed, 19 Aug 2026 00:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5rOXJNYjY0NWV1OVJtTm5LSkQxTUVQcWI0cXdacGswLUpoTHZvXzFkc2dkZDdUSkdQa1dGZEFRcXhCbnlMb1JxeC1wbmdrS0dJV0hRSzFPVEI</guid></item><item><title>二季度收入仅增18%！OpenAI“暴雷”，远低于Anthropic - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779748</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Wed, 19 Aug 2026 00:07:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBRTFhRWVQ5dFBSSTdZTmpDUU1tc0F6eE5zWHBqWmFyZkxyV1V5eERKa25wUGcybUtKanJXdklpdzZqUWZ4WmxlcjJuaFBhYndXUVhF</guid></item><item><title>宇树科技今日上市 中一签能赚多少？ - 东方财富</title><link>https://wap.eastmoney.com/a/202608193845029990.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
         
         &lt;p class="related"&gt;
 
@@ -18,7 +208,31 @@
 
         &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 18 Aug 2026 23:44:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBHV3pXa0ZYZ1NLc3Z4NTRtRW5kWlZOTVF2VkY5UEFhNlBpa1loSVh1cUdyYkh5U2ViSV9DQlNnVjUzTi1oNFZVMmpMSzE1amd4cU1BZVk4dGhkUVExVGZNSQ</guid></item><item><title>中国据悉提前停用政府机构定制款Windows 10 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260819-9539834</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;中国据悉提前停用一款专为政府机构量身定制的Windows操作系统版本，进一步减少对美国技术的依赖。&lt;/p&gt;&lt;p&gt;据彭博社报道，知情人士表示，中国国家安全部最近要求部分政府相关机构卸载一款政府机构定制版本的Windows 10操作系统。这款操作系统由神州网信开发。&lt;/p&gt;&lt;p&gt;神州网信是微软和国有企业中国电子科技集团成立的合资企业，于2016年成立，旨在确保Windows 10操作系统符合中国政府的安全要求。Windows 10神州网信政府版操作系统是在原版软件基础上，集成了中国自主研发的网络安全模块。&lt;/p&gt;&lt;p&gt;随着中国逐步将海外技术产品从政府采购白名单中剔除，神州网信原计划2027年2月终止支持这款软件，新的指示将这项计划提早数月，且距离中美领导人计划将举行的峰会只有短短几周，此举令部分政府机构工作人员感到意外。&lt;/p&gt;&lt;p&gt;知情人士称，上述要求基于数据安全方面的担忧，但没有透露具体担心的潜在隐患。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 18 Aug 2026 23:44:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBHV3pXa0ZYZ1NLc3Z4NTRtRW5kWlZOTVF2VkY5UEFhNlBpa1loSVh1cUdyYkh5U2ViSV9DQlNnVjUzTi1oNFZVMmpMSzE1amd4cU1BZVk4dGhkUVExVGZNSQ</guid></item><item><title>最高70%！智能眼镜退货率远超手机：功能鸡肋、佩戴不适劝退用户 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144695.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，日前，研究机构洛图科技发布2026年上半年中国智能眼镜零售市场数据。&lt;/p&gt;
+&lt;p&gt;数据显示，今年上半年，中国智能眼镜市场全渠道销量达到90.9万台，同比增长85.5%；销售额达18.8亿元，同比增长98.7%。&lt;/p&gt;
+&lt;p&gt;不过，洛图科技今日指出，在销量快速增长的背后，智能眼镜行业仍存在明显隐忧。&lt;/p&gt;
+&lt;p&gt;当前，&lt;span&gt;&lt;strong&gt;智能眼镜退货率高达30%-70%，远超手机、平板电脑等成熟3C产品。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;洛图科技通过对近年来上市产品及用户进行持续跟踪调研发现，智能眼镜行业至少曾经历“重硬件、轻体验，重概念、轻落地”的发展阶段，产品实际使用体验与消费者预期之间仍存在较大差距。&lt;/p&gt;
+&lt;p&gt;不少用户在使用产品的时候，认为有四大槽点：&lt;/p&gt;
+&lt;p&gt;首先是整机重量偏高，早期AR眼镜普遍重量超过50g，长时间佩戴容易造成鼻梁压迫、酸胀和下坠感，难以满足全天候日常佩戴需求。&lt;/p&gt;
+&lt;p&gt;其次是结构设计不够合理，部分产品将电池、核心硬件集中布局在眼镜前部，容易出现头重脚轻的情况，导致眼镜前倾、下坠，影响佩戴稳定性和舒适度。&lt;/p&gt;
+&lt;p&gt;第三是功能冗余繁杂，部分产品集影音、拍摄、导航、翻译、游戏等多项功能于一身，但功能增加的同时也带来了更高功耗和更短续航，而其中不少功能实际使用频率并不高。&lt;/p&gt;
+&lt;p&gt;第四是软件适配卡顿，部分产品基于安卓系统二次改造，未针对眼镜轻量化终端做底层优化，后台冗余进程多、功耗高、交互不流畅。&lt;/p&gt;
+&lt;p&gt;洛图科技指出，在上述问题中，&lt;strong&gt;功能鸡肋和佩戴不适是目前用户选择退货的核心原因，也成为制约智能眼镜进一步规模化普及的重要因素。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在此背景下，智能眼镜厂商也开始重新思考产品突围方向，在场景化之外，轻量化已经成为当前行业的最大共识，减法设计成为产品的优先选择方向。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;尤其进入2026年后，智能眼镜减重趋势明显提速，洛图科技认为，行业减法时代正在全面开启。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/2ffa90f5e2b8415e83efd4059efcb8eb.png" target="_blank"&gt;&lt;img alt="最高70%！智能眼镜退货率远超手机：功能鸡肋、佩戴不适劝退用户" h="450" src="//img1.mydrivers.com/img/20260819/s_2ffa90f5e2b8415e83efd4059efcb8eb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 23:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9jMXBQc1kyVWdWUVJHd1JqbU82UFZFa2dVLVFkNGJJVnhaczl2S2tfTGRfcjJOVGdWQXN5S3RzRnVQaUhJY1lSSHI1eW9yMnVXZmF0MzJ2bU0</guid></item><item><title>中国据悉提前停用政府机构定制款Windows 10 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260819-9539834</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;中国据悉提前停用一款专为政府机构量身定制的Windows操作系统版本，进一步减少对美国技术的依赖。&lt;/p&gt;&lt;p&gt;据彭博社报道，知情人士表示，中国国家安全部最近要求部分政府相关机构卸载一款政府机构定制版本的Windows 10操作系统。这款操作系统由神州网信开发。&lt;/p&gt;&lt;p&gt;神州网信是微软和国有企业中国电子科技集团成立的合资企业，于2016年成立，旨在确保Windows 10操作系统符合中国政府的安全要求。Windows 10神州网信政府版操作系统是在原版软件基础上，集成了中国自主研发的网络安全模块。&lt;/p&gt;&lt;p&gt;随着中国逐步将海外技术产品从政府采购白名单中剔除，神州网信原计划2027年2月终止支持这款软件，新的指示将这项计划提早数月，且距离中美领导人计划将举行的峰会只有短短几周，此举令部分政府机构工作人员感到意外。&lt;/p&gt;&lt;p&gt;知情人士称，上述要求基于数据安全方面的担忧，但没有透露具体担心的潜在隐患。&lt;/p&gt;
     
   &lt;p&gt;中国一直在推动从军队到政府机构等敏感领域使用自主研发的技术。麒麟软件、统信软件等数家中国公司已推出替代Windows的本土电脑操作系统。&lt;/p&gt;&lt;p&gt;中国此前要求中央政府机关等将电脑更换为本国产品，一些较为敏感的国家部门单位也被禁止使用苹果的iPhone。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Tue, 18 Aug 2026 23:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1BOW9PNURhSEo2WGpmT3pmMVNaUEhwNUpaTkF6dGVReXdHM2kyelVubHd1bVZFYzF2YlRBWXdFX0pRUWwxeDdoZnJrSkFNT0NqN2tpMTM3UlpRSHNlak9ncVpGQ1hYUS1LQVE</guid></item><item><title>全球市场：美股收跌 存储、光通信等AI概念板块大幅回落 闪迪、SK海力士跌超9% - 东方财富</title><link>https://wap.eastmoney.com/a/202608193844981548.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
         
@@ -85,7 +299,215 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 22:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5TdV9ZNzRIbXg5a2dLdENjbUJnVDYtakJ1dTAyYnA4Snh2TVBYalBYYVBFUkZQc2hWMFhoRmFyUE14ZVhDOGlEZTlPQ0NWYnpySGtaUXI4ODE</guid></item><item><title>OpenAI持续暂停前沿模型训练：AI能力进展超预期，安全护栏亟待升级 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779744</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 22:42:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1ETjNCREljUDlmOEoxZnp0MFk5YzJNQTlYeV9LYklyWGNnUzN2M044SUJSZ0gxRW5iMmoxeExra01GMU5uZzBSUnQxWlowSzM0VFVR</guid></item><item><title>比特币巨鲸结束抛售，60天增持超27亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779743</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 22:31:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE81blUxcWxDbVJwZHNiVlg0QzdVSmpIYm5LZFRCODhGc25xRlczek5uaS15aFJhcVFsOTFKdnN3ZFRUemluUHo3UV81cHgzVGZCVXZR</guid></item><item><title>苹果调整应用商店规则 落实《数字市场法》欧盟表示欢迎 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E8%8B%B9%E6%9E%9C%E8%B0%83%E6%95%B4%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E8%A7%84%E5%88%99-%E8%90%BD%E5%AE%9E-%E6%95%B0%E5%AD%97%E5%B8%82%E5%9C%BA%E6%B3%95-%E6%AC%A7%E7%9B%9F%E8%A1%A8%E7%A4%BA%E6%AC%A2%E8%BF%8E</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:34:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi9wJBVV95cUxObHNtSEJjblV5SzhObnZuMF9RcmE0NlBBRklxeGI2ZVd4Z0JienhlbXpzdXlITldLZDNmVGRZMVlRdWRQNVZITUZ1aDlBcjJmeUFxME52cEdtYzhDb1BTMzlMRFRST3EwYWxidThTbGxTczRMYVpFd3NoaHh5OGtzaHVNVUQ3b2d6Y3gwSk9KNDJOcHNjVXpoenFRU2d2NHl5WU9IY0lpVzlKQi1YOTFLcWVPUlI2N0F3bUtGVmh5T2NlSFJkMTdKaG9xLVhOLWt0NjNINl81U2tyaTBQa01FeEk0ZkFRbVNUdGc3b0tRVmI0dVVQSklTcUFkRDNhRE13Mlk0U0ZGdGcyQnl3M0dxekwzUzFqamc3ZWVVT2dPSkI5ZkF2WlRhbGdNclJXWXRaeTVuZDduYTJ2eDMwbG9aQmNUVkM4a1FDT1FWdXBxWFJHR1kwbk1OcXJzZWxZemFDLV9qV1pJOF80YjBQcVNvazVHZW03bU0</guid></item><item><title>英伟达被低估50%？美银称AI融资风险定价过度 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779737</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 21:09:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBIUlI1UDFXejBWWTFqWmxDSmxhdzV5MHVscVRvRzVRekJqd0d6bDRfS3duYnIyY2daSWVTMUpFb21EZnI0aFRmOGNKcWd2a3huclZn</guid></item><item><title>人工智能：德国160万份工作将转型——中国是否是个警示？ - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E5%BE%B7%E5%9B%BD160%E4%B8%87%E4%BB%BD%E5%B7%A5%E4%BD%9C%E5%B0%86%E8%BD%AC%E5%9E%8B-%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E6%98%AF%E4%B8%AA%E8%AD%A6%E7%A4%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:07:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi4gJBVV95cUxOMUlfNDBpUkIwZGFvajJYcEx3ZXlIelc1WjctNVlVQUY0X0ladERJYWd0cDNnY3JNS2lHM3U1VFcyaC1UTFp2MmQ2czhLZjNUNGlzSzV1UnA1aENsZmxVVUlGUjktdVVuV05QLUlrMXNtR3JvaUdrZ0RCcC1vanlvLWNqaXZfb1NpNXdJZm5Ha1JVcVgwU01oMGV1Z3V5MWZ5c3cwTElqYzhnejBWRkxydXRweVpkMHpBdGgyYTZxOGdFRWkxUDNzTFpmRGZNbDQzR1F3YUFFZDVORDN1NlVsX3p0eXJBSUpNMXBaVTk5NF9tOF9xNURHRS02VGxPRS0yLTIyaVJ0dDVUS2JmcmNXejg5ZVE2M1VYNFZqQnZSWFI5b0RWS09fUGthc24wSk1IVFpjbURxUGJxMGpVS1BMcGpCSGxTMmltNEd3dGpwYnZubUZkMms5aTBmczM3VHR0MkE</guid></item><item><title>小米电话会：下半年内存涨势或将趋缓，经营压力转向“可控”，看好澎程放量与AI长期价值 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779717</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 18:22:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFAyWlhWckp5WVZkcGxLeFhuZmVnZXBzTzRCMGx4N2dVLV9NTkJpX2xfMmw2aTNnY01wNlVkWlpoU3FuWWxjQlE4TEZ2V2psTkhXMURV</guid></item><item><title>甲骨文“星际之门”关键AI数据中心配套天然气管道两度被拒，寻求改道 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779732</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 17:46:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9OSkZIMklSdUVEUGh6Um9FTVJjWDdlenRPZEdHNVEwRmhXNGtFc2ZZckhHbDlCYWtUS0FueWJzdUY4NVcyUFVqSDhMVU05aTVHUjdR</guid></item><item><title>2008年，82岁的江泽民发表了一篇极具前瞻性论文 - 文学城</title><link>https://www.wenxuecity.com/news/2026/08/18/126745930.html</link><description>&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</description><author>文学城</author><pubDate>Tue, 18 Aug 2026 16:23:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiaEFVX3lxTE1PSzZ6TElJdmRyVTRILVhHSTcxSVFIS0dIUWRJcDhXcGVyYmZDd0hSSHBhNGVoLTRxd1JGWlYycjRSaWk3VFNOaEhDd3B6R2R3YllqbDR4WjRhcmxNdGRnb2h1X25HeTZM</guid></item><item><title>1799元起！小米REDMI M100上市：骁龙4 Gen5+7900mAh电池 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144682.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 22:43:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5TdV9ZNzRIbXg5a2dLdENjbUJnVDYtakJ1dTAyYnA4Snh2TVBYalBYYVBFUkZQc2hWMFhoRmFyUE14ZVhDOGlEZTlPQ0NWYnpySGtaUXI4ODE</guid></item><item><title>OpenAI持续暂停前沿模型训练：AI能力进展超预期，安全护栏亟待升级 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779744</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 22:42:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1ETjNCREljUDlmOEoxZnp0MFk5YzJNQTlYeV9LYklyWGNnUzN2M044SUJSZ0gxRW5iMmoxeExra01GMU5uZzBSUnQxWlowSzM0VFVR</guid></item><item><title>比特币巨鲸结束抛售，60天增持超27亿美元 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779743</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 22:31:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE81blUxcWxDbVJwZHNiVlg0QzdVSmpIYm5LZFRCODhGc25xRlczek5uaS15aFJhcVFsOTFKdnN3ZFRUemluUHo3UV81cHgzVGZCVXZR</guid></item><item><title>折价深达50% 美银称英伟达“极具吸引力” - finance.sina.com.cn</title><link>https://finance.sina.com.cn/world/2026-08-19/doc-ininuvaz7146717.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　在美国银行看来，由于投资者夸大了英伟达公司所面临的风险，这家AI芯片龙头企业的股价可能被低估了多达50%。&lt;/p&gt;
+&lt;p&gt;　　分析师Vivek Arya在研报中写道，美银基于自由现金流用途的概念性分部估值法显示，即便考虑进融资风险，英伟达的股价仍有34%至50%的折让。&lt;/p&gt;
+&lt;p&gt;　　这位分析师强调，投资者“可能夸大了风险，同时也创造了一个极具吸引力的机会”。&lt;/p&gt;
+&lt;p&gt;　　英伟达周二下跌2.3%，收报219.74美元，与其它人工智能股齐跌。该股今年迄今上涨约18%，但仍比5月的峰值低了7%左右。&lt;/p&gt;
+
+&lt;p&gt;　　英伟达正在加大对人工智能生态系统的投资，最近同意以不超过1050亿美元支持俄亥俄州一座大型新数据中心园区。&lt;/p&gt;
+&lt;p&gt;　　美国银行还强调，缓解市场担忧“最有力反推”可能是，将更大比例的自由现金流用于股票回购来提高投资者的现金回报。&lt;/p&gt;
+&lt;p&gt;　　该行给予英伟达股票“买入”评级，目标价为350美元。&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>finance.sina.com.cn</author><pubDate>Tue, 18 Aug 2026 22:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE9oM01mRjZCd2lnNVpOcjdKa2NHU3dpd2w1VXNFdEJnNVJmUmJfR3FBVklQY0VZYWFNaHlVcnRCSWtUVkVmdXNWcUcwb3hpQ3RHZmNHTzJEOUJ2WEhzQ1VnOTlJc25udVQwcTRjOEFKRGxEZldfVzRrTWRn</guid></item><item><title>数据中心反对声浪成美国中期选举敏感议题，宾州出台全美“最严格”数据中心监管规则 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779739</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 22:04:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1vZldFY0FaekNSMVZ6Q2FEblloejhBRDBld0p3YnF6b1BmeVQ2ajcwLVJNZTFGZkJjcDU2N0FtMlB3YmxWeThpQ1dKSHU1aTBQUElv</guid></item><item><title>苹果调整应用商店规则 落实《数字市场法》欧盟表示欢迎 - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E8%8B%B9%E6%9E%9C%E8%B0%83%E6%95%B4%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E8%A7%84%E5%88%99-%E8%90%BD%E5%AE%9E-%E6%95%B0%E5%AD%97%E5%B8%82%E5%9C%BA%E6%B3%95-%E6%AC%A7%E7%9B%9F%E8%A1%A8%E7%A4%BA%E6%AC%A2%E8%BF%8E</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:34:47 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi9wJBVV95cUxObHNtSEJjblV5SzhObnZuMF9RcmE0NlBBRklxeGI2ZVd4Z0JienhlbXpzdXlITldLZDNmVGRZMVlRdWRQNVZITUZ1aDlBcjJmeUFxME52cEdtYzhDb1BTMzlMRFRST3EwYWxidThTbGxTczRMYVpFd3NoaHh5OGtzaHVNVUQ3b2d6Y3gwSk9KNDJOcHNjVXpoenFRU2d2NHl5WU9IY0lpVzlKQi1YOTFLcWVPUlI2N0F3bUtGVmh5T2NlSFJkMTdKaG9xLVhOLWt0NjNINl81U2tyaTBQa01FeEk0ZkFRbVNUdGc3b0tRVmI0dVVQSklTcUFkRDNhRE13Mlk0U0ZGdGcyQnl3M0dxekwzUzFqamc3ZWVVT2dPSkI5ZkF2WlRhbGdNclJXWXRaeTVuZDduYTJ2eDMwbG9aQmNUVkM4a1FDT1FWdXBxWFJHR1kwbk1OcXJzZWxZemFDLV9qV1pJOF80YjBQcVNvazVHZW03bU0</guid></item><item><title>英伟达被低估50%？美银称AI融资风险定价过度 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779737</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 21:09:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBIUlI1UDFXejBWWTFqWmxDSmxhdzV5MHVscVRvRzVRekJqd0d6bDRfS3duYnIyY2daSWVTMUpFb21EZnI0aFRmOGNKcWd2a3huclZn</guid></item><item><title>人工智能：德国160万份工作将转型——中国是否是个警示？ - RFI</title><link>https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260818-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E5%BE%B7%E5%9B%BD160%E4%B8%87%E4%BB%BD%E5%B7%A5%E4%BD%9C%E5%B0%86%E8%BD%AC%E5%9E%8B-%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E6%98%AF%E4%B8%AA%E8%AD%A6%E7%A4%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Tue, 18 Aug 2026 21:07:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi4gJBVV95cUxOMUlfNDBpUkIwZGFvajJYcEx3ZXlIelc1WjctNVlVQUY0X0ladERJYWd0cDNnY3JNS2lHM3U1VFcyaC1UTFp2MmQ2czhLZjNUNGlzSzV1UnA1aENsZmxVVUlGUjktdVVuV05QLUlrMXNtR3JvaUdrZ0RCcC1vanlvLWNqaXZfb1NpNXdJZm5Ha1JVcVgwU01oMGV1Z3V5MWZ5c3cwTElqYzhnejBWRkxydXRweVpkMHpBdGgyYTZxOGdFRWkxUDNzTFpmRGZNbDQzR1F3YUFFZDVORDN1NlVsX3p0eXJBSUpNMXBaVTk5NF9tOF9xNURHRS02VGxPRS0yLTIyaVJ0dDVUS2JmcmNXejg5ZVE2M1VYNFZqQnZSWFI5b0RWS09fUGthc24wSk1IVFpjbURxUGJxMGpVS1BMcGpCSGxTMmltNEd3dGpwYnZubUZkMms5aTBmczM3VHR0MkE</guid></item><item><title>AI交易情绪逆转 苹果“反AI”属性正成股价拖累 - finance.sina.com.cn</title><link>https://finance.sina.com.cn/world/2026-08-19/doc-ininuqvh2987515.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
+					
+					
+					
+								
+			
+			
+
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+
+            
+
+    &lt;p&gt;　　随着投资者对AI交易的疑虑日益加深，苹果公司的“反AI”交易属性曾在上半年助其股价大涨。但如今市场情绪已经逆转，苹果股价开始陷入困境。&lt;/p&gt;
+&lt;p&gt;　　自7月28日收于纪录高点以来，苹果股价已下跌约10%，此前这家iPhone制造商公布的业绩展望令人失望。与此同时，投资者重新转向被视为AI赢家的股票，微软、 亚马逊和Alphabet Inc．的业绩缓解了市场对AI技术投入过度的担忧，推动AI支出规模最大的公司、芯片制造商以及其他受益于相关投资的股票走高。&lt;/p&gt;
+&lt;p&gt;　　“今年以来，市场对资本支出的态度一直在担忧与乐观之间摇摆。7月市场几乎都在担忧资本支出问题，但最新财报显然缓解了部分焦虑，从而促成了这轮资金轮动，”在管理4，180亿美元资产的罗素投资担任高级投资组合经理Jordan McCall表示，“如今市场对资本支出更加放心，而苹果仍是押注AI资本周期的另一种方式，我预计这种跷跷板行情还会持续。”&lt;/p&gt;
+
+&lt;p&gt;　　苹果选择借助合作伙伴来支撑其AI服务，不参与代价高昂的算力基础设施军备竞赛。过去三周，苹果是标普500指数中表现最差的25只股票之一。与此同时，科技行业其他股票走势相反，纳斯达克100指数同期上涨6.6%，费城证券交易所半导体指数（SOX）上涨10%。&lt;/p&gt;
+&lt;p&gt;　　这与7月份的走势正好相反。当月苹果股价上涨6.8%，纳斯达克100指数下跌6.6%，半导体指数则暴跌21%，创2008年以来最大月度跌幅，当时投资者质疑巨额AI支出还能持续多久。&lt;/p&gt;
+&lt;p&gt;　　苹果股价的这种大幅波动再次显示其走势正日益脱离大盘。苹果与标普500指数的40日相关性目前基本为零，为2013年以来最低；与芯片指数的相关性则降至1994年有数据以来最低，并在近期转为负值，意味着苹果股价与半导体股走势相反。&lt;/p&gt;
+&lt;p&gt;　　这一趋势周二仍在延续。苹果上涨0.4%，而同期SOX指数下跌3.8%，纳斯达克100指数下跌1.4%。&lt;/p&gt;
+
+&lt;p&gt;　　“苹果股价不与AI基础设施供应链完全同步，这是合理的，有时负相关性会拖累苹果的表现，”Prime Capital Financial投资组合经理Clayton Allison表示。该公司管理约500亿美元资产，持有苹果股票。“但现在AI交易风头正劲，我们不能说苹果也像其他公司一样享受到这波红利。”&lt;/p&gt;
+&lt;p&gt;　　事实上，资金涌向算力基础设施正直接对苹果造成不利影响，因为这推高了苹果设备所用零部件的成本，并导致部分零部件供应趋紧。数据中心需求旺盛之际，存储芯片价格大幅上涨。据估算，存储芯片约占智能手机制造成本的10%至20%。&lt;/p&gt;
+&lt;p&gt;　　由于预计存储芯片成本将在较长时间内保持高位，投资者担心成本上升会侵蚀利润率或削弱需求，尤其是如果苹果提高iPhone售价。苹果已经上调包括iPad和Mac电脑在内的其他产品价格。鉴于苹果预计下月发布折叠屏iPhone，这一问题尤其受到关注。&lt;/p&gt;
+&lt;p&gt;　　上周，Jefferies在将苹果股票评级下调至“跑输大盘”时，就提到了iPhone涨价的风险。目前给予苹果相当于“卖出”评级的分析师人数正在增加。在彭博追踪的58位覆盖苹果的分析师中，目前有6人建议卖出，为近两年来最多。&lt;/p&gt;
+&lt;p&gt;　　更大的挑战在于，苹果估值已处高位，公司可能没有太多容错空间。目前苹果预期市盈率32倍，在美国市值最高的七家科技公司中估值最高，这一群体还包括英伟达、博通和Meta Platforms Inc．。&lt;/p&gt;
+&lt;p&gt;　　苹果公司本财年营收预计将增长15%，这将是2021年以来最快增速。不过，这仍明显低于市场对标普500科技板块的增长预期。彭博汇总的分析师平均预测显示，苹果营收增速预计将在随后两个财年逐年放缓。&lt;/p&gt;
+&lt;p&gt;　　尽管苹果估值偏高，而且市场对公司下一阶段营收增长动力来自哪里仍存疑问，Prime Capital的Allison依然认为这只股票具有吸引力。&lt;/p&gt;
+&lt;p&gt;　　“从稳健的资产负债表、生态系统和股票回购来看，苹果仍是最优秀的公司之一，”他表示，“如果AI交易再次逆转，就像今年已经发生过的那样，苹果与市场缺乏相关性的特点将对其有利，有助于减轻下行压力。”&lt;/p&gt;
+
+
+
+
+
+
+			
+			
+			
+
+			
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+
+            
+            
+            
+            
+
+            
+
+			
+			
+&lt;p class="article-editor"&gt;责任编辑：丁文武 &lt;/p&gt;
+			
+
+				&lt;/div&gt;
+				
+
+				
+				
+		
+		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>finance.sina.com.cn</author><pubDate>Tue, 18 Aug 2026 19:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiekFVX3lxTE5qeWxEYzAwVlIyMXBleE51QWpxTTdIdUV2UUhxZWowX3p6VHpQS1VfQVNNU0ctQjZjMnV6UmNoTllnWTBTR2dRY1UydURZWTgxS3duZW9VNTBaWkF2NW1KSm45Vzd2U3kzNmdxTjFhemNfY21NX0NlemN3</guid></item><item><title>132元 小米蓝牙音箱磁吸版今天正式众筹 吸附手机秒变支架 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144689.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，&lt;strong&gt;小米蓝牙音箱磁吸版今天开启全款众筹，众筹到手价132元，官方建议零售价199元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;小米有品8月27日开始发货，满69元包邮，同时支持7天无理由退换。&lt;/p&gt;
+&lt;p&gt;这款产品最大的看点就是二合一设计，它不只是蓝牙音箱，还自带支架功能。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/9e5b16523ea14f93ad8f291967926bb4.png" target="_blank"&gt;&lt;img alt="132元 小米蓝牙音箱磁吸版今天正式众筹 吸附手机秒变支架" h="300" src="//img1.mydrivers.com/img/20260819/s_9e5b16523ea14f93ad8f291967926bb4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;底部内置磁吸环，搭配霍尔感应，吸附手机背面就会自动开机，拿下来自动休眠，不用反复按按键。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;iPhone 12 及以上机型可以直接磁吸使用，安卓手机配附赠的引磁环，也能用上磁吸功能。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/7944d07e056f4da8adadcb39e43dcf59.png" target="_blank"&gt;&lt;img alt="132元 小米蓝牙音箱磁吸版今天正式众筹 吸附手机秒变支架" h="562" src="//img1.mydrivers.com/img/20260819/s_7944d07e056f4da8adadcb39e43dcf59.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;音箱上面带可弯折金属提手环，既能拎着出门，吸附手机之后直接变身支架，横屏追剧、竖屏刷短视频都放得稳。&lt;/p&gt;
+&lt;p&gt;硬件配置不算复杂，搭载1.5英寸 3W 全频喇叭，机身重量只有95g，体积很小，随身塞包里没有负担。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;底部配有RGB环形灯带，播放音乐的时候灯光会跟着节奏变化，氛围感直接拉满。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260819/7c45f673274041f4b62b0c78a29ff7bd.png" target="_blank"&gt;&lt;img alt="132元 小米蓝牙音箱磁吸版今天正式众筹 吸附手机秒变支架" h="300" src="//img1.mydrivers.com/img/20260819/s_7c45f673274041f4b62b0c78a29ff7bd.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;连接用的是蓝牙6.0，两台音箱可以配对组成立体声，最多能够串联10台机器，朋友聚会多台一起放歌效果更好。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;防护给到IP67防尘防水，出门露营、海边玩耍，不用太担心溅水进灰。&lt;/strong&gt;内置650mAh电池，日常听听播客、刷短视频够用。&lt;/p&gt;
+&lt;p&gt;外观有浅咖色、深灰色2种配色，外壳是编织网布加金属环拼接，颜值看着比较简约。&lt;/p&gt;
+&lt;p&gt;对于经常刷视频、外出露营的用户来说，132元的价格，同时拿到音箱加手机支架，实用性还是挺高。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/cc6a4418649742f7b6a98072055c3e54.png" target="_blank"&gt;&lt;img alt="132元 小米蓝牙音箱磁吸版今天正式众筹 吸附手机秒变支架" h="301" src="//img1.mydrivers.com/img/20260819/s_cc6a4418649742f7b6a98072055c3e54.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 19:05:04 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1mTDQtVUljMVZuMkRoRjNuVlJQYU1aRXc2cWVlSGJOc01yS2xSeFR6T09wRFAwNktuRG5WdTNEbDgxZzhReDRIYzluYW9uTno3SURXYUNzSGM</guid></item><item><title>小米电话会：下半年内存涨势或将趋缓，经营压力转向“可控”，看好澎程放量与AI长期价值 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779717</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 18:22:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFAyWlhWckp5WVZkcGxLeFhuZmVnZXBzTzRCMGx4N2dVLV9NTkJpX2xfMmw2aTNnY01wNlVkWlpoU3FuWWxjQlE4TEZ2V2psTkhXMURV</guid></item><item><title>甲骨文“星际之门”关键AI数据中心配套天然气管道两度被拒，寻求改道 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779732</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 17:46:09 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9OSkZIMklSdUVEUGh6Um9FTVJjWDdlenRPZEdHNVEwRmhXNGtFc2ZZckhHbDlCYWtUS0FueWJzdUY4NVcyUFVqSDhMVU05aTVHUjdR</guid></item><item><title>2008年，82岁的江泽民发表了一篇极具前瞻性论文 - 文学城</title><link>https://www.wenxuecity.com/news/2026/08/18/126745930.html</link><description>&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</description><author>文学城</author><pubDate>Tue, 18 Aug 2026 16:23:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiaEFVX3lxTE1PSzZ6TElJdmRyVTRILVhHSTcxSVFIS0dIUWRJcDhXcGVyYmZDd0hSSHBhNGVoLTRxd1JGWlYycjRSaWk3VFNOaEhDd3B6R2R3YllqbDR4WjRhcmxNdGRnb2h1X25HeTZM</guid></item><item><title>等等党失策！iPhone 17涨价开始倒计时：苹果连续多次削减产能 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144681.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月19日消息，博主定焦数码透露，iPhone 17很快将迎来价格上调，建议大家做好手机全线涨价的准备，有购机需求的话尽早入手。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;据产业链消息，618之后苹果已砍掉约15%的产能预期，7月底部分产线的产能削减幅度更是达到30%。&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;此轮涨价与减产的核心原因，在于存储芯片的供需严重失衡。早在6月份，苹果已对iPad和Mac产品线进行过一轮价格调整。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;苹果CEO库克此前在接受采访时，将本轮存储供需失衡形容为“百年一遇的洪水”，并明确表示苹果长期依靠自身消化成本上涨的策略已难以为继。&lt;/p&gt;
+&lt;p&gt;尽管当时iPhone 17并未同步调价，但随着存储芯片产能被数据中心大幅挤占，终端电子产品因成本传导而涨价已成为普遍现象，业界普遍认为iPhone 17很难独善其身。&lt;/p&gt;
+&lt;p&gt;值得一提的是，日版iPhone此前已完成一轮涨价，覆盖iPhone 17系列、iPhone 16系列和iPhone Air系列。以iPhone 17为例，iPhone 17 Pro Max最高存储版本售价由32.98万日元升至35.48万日元，上涨2.5万日元；iPhone 17起售价由12.98万日元升至14.28万日元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前国行版iPhone 17起售价是5999元，还能享受国补优惠。如果涨价的话，iPhone 17起售价将突破6000元，&lt;/strong&gt;且超过了国补优惠区间，消费者购机成本会明显上涨。&lt;/p&gt;
+&lt;p&gt;总而言之，当前消费者的低价购机的窗口正在收窄，未来旗舰机型的入手门槛大概率会进一步提高。如果确有换机需求，提前规划或许比观望等待更为实际。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260819/4357cf13a39149faa328f0aeee43c5ea.jpg" target="_blank"&gt;&lt;img alt="等等党失策！iPhone 17涨价开始倒计时：苹果连续多次削减产能" h="399" src="//img1.mydrivers.com/img/20260819/s_4357cf13a39149faa328f0aeee43c5ea.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：振亭&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 16:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5paXdyanRwNjVFTThlX0lySk5RM1ZpVDBnZzlIT2RJYS10d0ZmdURXbWJfUzdqYnlHVW1WSHVlRHYwSm9yLXhjZ1Uzd0RTT3JtV1FRWktaVWc</guid></item><item><title>1799元起！小米REDMI M100上市：骁龙4 Gen5+7900mAh电池 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144682.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技8月19日消息，小米商城最新上架了一款REDMI M100机型，定价1799元起。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;新机外观非常独特，采用四等深微曲背板，相机区域配备金属饰板与RGB动态灯效，提供旷野绿、星雨白、浩夜黑三款配色，其中星雨白背板上有烟花绽放效果。&lt;/p&gt;
@@ -112,7 +534,180 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 16:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5IQXgwVC1IZi1yR1UzTUxDZWNmUFd6cl9IWXNFUEdGN1BRUFZ5M0tzb3U0RGpEQWVBSDFFelFsbjhpQXNVUXNVMTUwRU1DakpLQS1wMXE0ZGM</guid></item><item><title>美股人力资源股强势反弹：AI简历泛滥，招聘公司反而更值钱了！ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779731</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 15:53:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE8tM3NtS19NTWlaT1Y3M1hVbTB6OUQ1c2txUnBzcDM3VkpabEh1a2pqWi1xQ254QUFXYjdKWFFRM3Rtd21WeC1uUFlxUUlZeTRoS244</guid></item><item><title>特斯拉Semi等来"榜一大哥" 斩获史上最大订单！瑞典货运公司豪购500辆Semi卡车 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144675.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 16:01:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5IQXgwVC1IZi1yR1UzTUxDZWNmUFd6cl9IWXNFUEdGN1BRUFZ5M0tzb3U0RGpEQWVBSDFFelFsbjhpQXNVUXNVMTUwRU1DakpLQS1wMXE0ZGM</guid></item><item><title>美股人力资源股强势反弹：AI简历泛滥，招聘公司反而更值钱了！ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779731</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 15:53:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE8tM3NtS19NTWlaT1Y3M1hVbTB6OUQ1c2txUnBzcDM3VkpabEh1a2pqWi1xQ254QUFXYjdKWFFRM3Rtd21WeC1uUFlxUUlZeTRoS244</guid></item><item><title>马斯克带火的太空算力领域 传一个800MB模型上天要四周 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144680.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;「所有劝我不要干太空算力的朋友，现在全在干太空算力。」&lt;/p&gt;
+&lt;p&gt;太空字节联合创始人秦贵军这样描述过去一年。这家公司 2024 年底成立，做的是太空数据中心；他本人参与过北斗导航重大专项，在卫星行业干了十几年。那些劝过他的朋友也大多是同一个画像：传统航天出身，两年前还觉得把算力送上天是个不着调的故事，如今已经用脚投票。&lt;/p&gt;
+&lt;p&gt;他画过一张国内太空算力的行业热力图，从长三角到北京亦庄、中关村，再到成都、西安、合肥，玩家已经超过三十家，正在往四十家走。&lt;/p&gt;
+&lt;p&gt;热度的源头在大洋彼岸。2026 年 6 月 12 日，SpaceX 以每股 135 美元、约 1.75 万亿美元的估值登陆纳斯达克，成为美股史上规模最大的 IPO。招股书里写着 2028 年启动部署轨道 AI 算力星座，以及一个天文数字般的 AI 板块市场预测。&lt;/p&gt;
+&lt;p&gt;5 月，星舰 V3 完成首飞，一次任务部署 22 颗模拟星，SpaceX 给它的目标是以完全可重复使用的构型向地球轨道运送百吨级载荷。上市后股价一度冲到 225 美元上方，到 8 月中旬回落至发行价附近。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/aeda528d-2213-4802-a4b8-f63642d3f17b.png" target="_blank"&gt;&lt;img alt="马斯克带火的太空算力领域 传一个800MB模型上天要四周" h="378" src="//img1.mydrivers.com/img/20260818/Saeda528d-2213-4802-a4b8-f63642d3f17b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SpaceX 上市后的股价变化 | 图片来源：Google Finance&lt;/p&gt;
+&lt;p&gt;这个回落未必是对方向的否定，更像是全球最严格的定价机制在做一件事——把「叙事」和「进度」重新分开来算。同样的问题也摆在国内三十多家公司面前：方向已经不缺共识，缺的是回答工程上的下一步究竟做什么。&lt;/p&gt;
+&lt;p&gt;要理解这些公司各自在做什么，先要分清行业里两个高频出现、含义却完全不同的词：「天数天算」和「地数天算」。&lt;/p&gt;
+&lt;p&gt;天数天算是老故事。现阶段，数据主要靠遥感卫星在太空产生，然后再把结果传回地面。比如一颗遥感星拍下整座城市，星上模型识别出真正需要的那一小块目标区域，切出来精准下传，原本要传二十分钟的数据，一次过境半分钟传完。这本质上是边缘计算，也是商业航天过去十年一直在做的事。&lt;/p&gt;
+&lt;p&gt;但它始终没有真正点燃资本——它算的还是遥感数据，服务的还是老客户。&lt;/p&gt;
+&lt;p&gt;真正把这一轮热度点着的是地数天算：数据在地面产生，送上天去算。太空字节创始人王玮认为，这个词需要补上两个定语，商业闭环才成立——以 AI 训练为应用，且天上的能源成本确实低于地面。少一个，故事就不完整。&lt;/p&gt;
+&lt;p&gt;这也是眼下海外几个大项目的共同底色：&lt;/p&gt;
+&lt;p&gt;英伟达支持的 Starcloud 于 2025 年 11 月把一颗搭载 H100 的卫星送入 350 公里轨道，在轨跑通了大语言模型，终极蓝图是 5GW、跨度约 4 公里的轨道数据中心谷歌的 Project Suncatcher 设计了一个由 81 颗卫星在百米间距上紧密编队的计算集群国内瞄准晨昏轨道 700 至 800 公里的轨道晨光，已完成顺灏股份、联想创投等参与的 1.4 亿元首轮融资，其公开表述是天数天算和地数天算两者都要做&lt;/p&gt;
+&lt;p&gt;问题就在这里。地数天算这四个字，第一个字是「地」。它预设了一个动作：数据要先从地面上去。而恰恰是这个动作，全球至今没有可运营的工程能力。&lt;/p&gt;
+&lt;p&gt;一个具体的量级可以说明现状：把一个 800MB 左右的小模型送上一颗已经在轨的计算卫星，实际耗时接近四周。&lt;/p&gt;
+&lt;p&gt;慢在两个地方。&lt;/p&gt;
+&lt;p&gt;一是速率。传统的星地上注走测控链路，量级在 1Mbps 上下——这条通道本来就是为发指令设计的，不是为传文件设计的。&lt;/p&gt;
+&lt;p&gt;二是窗口。低轨卫星约 90 分钟绕地球一圈，但并非每圈都经过同一个地面站，真正能通信的时间一次甚至八到十分钟。于是一个模型包必须切成许多小片，等一次窗口传一点，再等下一次。一年五十二周，四周意味着这样的实验一年做不了几次，而一颗低轨卫星的设计寿命通常只有三年左右。&lt;/p&gt;
+&lt;p&gt;自由空间光通信里有一个专门的说法叫上下行链路的不对称性：同一条链路，两个方向的难度完全不同。&lt;/p&gt;
+&lt;p&gt;卫星往地面传，光先穿过真空，最后才穿过大气。地面的大口径望远镜可以用自适应光学在收端把畸变的波前补回来。&lt;/p&gt;
+&lt;p&gt;相比激光下行，激光上行并非简单复用下行方案即可实现。&lt;/p&gt;
+&lt;p&gt;国际上的进度恰好落在这条分界线上。高轨或深空那边，美国、欧洲、日本都已经跑通过双向的激光链路；到了低轨，下行的纪录一再被刷新，上行却始终只是一条用来回传确认信息的低速通道。国内的成绩同样集中在下行侧。至于全球在轨规模最大的星链，星间激光终端已部署数万台，星地激光则尚未部署。&lt;/p&gt;
+&lt;p&gt;也就是说，低轨的高速上行，各国都还停在原理与试验阶段，还没有人把它变成可运营的能力。&lt;/p&gt;
+&lt;p&gt;2024 年，创业公司「太空字节」正式成立。创始人王玮是国内第一批提出「太空公有云」概念的创业者，上一段创业做的是航天存储硬盘；联合创始人秦贵军来自传统航天、通信领域，参与过北斗任务，在激光通信公司负责过产品系统架构设计。&lt;/p&gt;
+&lt;p&gt;太空字节给自己找的第一个落地场景，叫做「地数天存」——和地数天算同一条上行通道，但先不强调算，只做存。&lt;/p&gt;
+&lt;p&gt;当前，比起场景更亮眼的，是这个创业项目核心的技术抓手，是解决以前因为没有场景而被忽视的数据「上行」问题——无论如何，不能让一个 800MB 的数据传四周，要不然太空算力的故事根本讲不下去。&lt;/p&gt;
+&lt;p&gt;目前，太空字节种子轮已完成交割，天使轮正在进行中。按计划，今年底将有两个搭载节点入轨。&lt;/p&gt;
+&lt;p&gt;以下是极客公园与太空字节的对话，经编辑整理。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/a6793a4a-82d0-43c5-9975-cf59fd925cbf.jpg" target="_blank"&gt;&lt;img alt="马斯克带火的太空算力领域 传一个800MB模型上天要四周" h="400" src="//img1.mydrivers.com/img/20260818/Sa6793a4a-82d0-43c5-9975-cf59fd925cbf.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;太空字节创始人王玮（右）和联合创始人秦贵军（左）  | 图片来源：太空字节&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;01 卫星变聪明了，数据却还上不去&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;极客公园：卫星往地面传数据的能力这些年一直在涨，但反过来往天上传，速率几乎没怎么动过。为什么？&lt;/p&gt;
+&lt;p&gt;太空字节：因为过去没有大数据量上天的需求。当年做卫星，就是在天上海量数据往下扔，没想过还有数据要往天上扔的可能性。&lt;/p&gt;
+&lt;p&gt;传统航天里往上走的只有指令数据——你可以理解成手里操作一台大疆无人机，摁一下向左，那就是指令，数据量非常小。但你没有说我拍张照片传给无人机，这个需求从来没出现过。&lt;/p&gt;
+&lt;p&gt;所以不是技术上过不去，是应用场景没有让整个商业航天意识到，数据有向上的必要性。&lt;/p&gt;
+&lt;p&gt;极客公园：这些年在上行这个方向上，行业有没有留下一些可以直接拿来用的积累？&lt;/p&gt;
+&lt;p&gt;太空字节：几乎没有。我们刚出来的时候，第一反应也是找现成的，去找某个卫星公司帮我们做上行。对方的回应是：「谁做上行？谁往上放东西？我们没干过。」&lt;/p&gt;
+&lt;p&gt;极客公园：如果这个能力补上了，卫星会发生什么变化？&lt;/p&gt;
+&lt;p&gt;太空字节：打个比方，原来的卫星好比是功能机。功能机买完以后几乎没有更新系统的机会，贪吃蛇已经写在里面了。能玩就玩，也没有其他游戏。到了 iPhone 就不一样，iOS 得不停升级，还要下新的 APP。&lt;/p&gt;
+&lt;p&gt;要从「功能机」变成「智能机」，就必须让地面开发环境里的数据够得着天上的卫星。&lt;/p&gt;
+&lt;p&gt;极客公园：怎么判断一颗卫星走到 iPhone 这一步了？现在走到哪一步了？&lt;/p&gt;
+&lt;p&gt;太空字节：标准很简单，就看它有没有操作系统。原来卫星里的电子系统没有操作系统，数据 0101 地灌到存储区里，有个文件系统把它编成文件号，就完了。&lt;/p&gt;
+&lt;p&gt;现在卫星已经普遍带上操作系统了，而且行业收敛得很快，国内主流做星载服务器的几家公司，硬件计算架构几乎一模一样。&lt;/p&gt;
+&lt;p&gt;极客公园：光有操作系统还不够？&lt;/p&gt;
+&lt;p&gt;太空字节：不够。太空算力一热，很多人都说自己要做算力卫星，所谓的算力卫星，就是买一台带操作系统的服务器装进自己的卫星里。&lt;/p&gt;
+&lt;p&gt;这件事一完成，卫星本身确实有了本质变化，所有的数据它都能处理了。但由于网络不能把地面的数据喂给它，它能处理的还是单一的数据，就是它自己产生的那些遥感数据。所以它还不够开放——网络是提供开放性的最前提条件。&lt;/p&gt;
+&lt;p&gt;这个瓶颈其实已经发生了。星座做完他们就发现，所有想服务的对象都需要高速上行，把一些小模型送上去；而他们自己的 Linux 操作系统要基于这些模型和算法做改造迭代、加一些代码——都上不去。&lt;/p&gt;
+&lt;p&gt;极客公园：国内做激光通信的公司有三四十家，为什么星地上行这一段没人碰？&lt;/p&gt;
+&lt;p&gt;太空字节：因为供需严重不协调，现在的情况是这三四十家在抢同一个客户。&lt;/p&gt;
+&lt;p&gt;激光通信的下游需求高度集中，主要就是国家级的卫星互联网星座，而其中目前真正批量装备激光的只有一家。客户的要求也很明确：服务于自己网络的星间链路，要轻、要小、功耗要低、还要便宜；你还得自己证明自己赚钱，得供得起货、能批量生产，还要是合格供应商。三四十家全在卷这一件事，市场格局非常紧张。&lt;/p&gt;
+&lt;p&gt;「星地上行」不在这张需求清单上。&lt;/p&gt;
+&lt;p&gt;极客公园：所以问题的本质并不是技术壁垒？&lt;/p&gt;
+&lt;p&gt;太空字节：不是，还是商业层面的问题。&lt;/p&gt;
+&lt;p&gt;我们国家所有的激光载荷制造商，本质上都是制造业公司。制造业融资要讲营收，营收就是卖出去多少套终端。而这是一笔很好算的账：同一颗卫星，星间链路要配四个终端，星地只配一个。做星间通信，订单量天然是星地的四倍。&lt;/p&gt;
+&lt;p&gt;更麻烦的是，星地这门生意不止于卖终端。你把终端做出来，天上有了，地面没有，还得再花钱建地面站——一个地面站的成本大约是 1000-2000 万。建完你才发现真正的问题：你到底是卖终端的，还是运营基础设施的？这是两门完全不同的生意，成本结构、收入方式都不一样。&lt;/p&gt;
+&lt;p&gt;而且地面站建好之后服务谁？当时唯一的需求方是遥感，遥感数据运营商资金流也不充裕。&lt;/p&gt;
+&lt;p&gt;所以对一家制造业公司来说，做星地就是投入更大、订单更少、还要顺带变成另一种公司。这笔账在他自己的商业逻辑里是算不过来的。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/4bac9170-dbcc-4ba4-9e5c-f4149c2978f7.jpg" target="_blank"&gt;&lt;img alt="马斯克带火的太空算力领域 传一个800MB模型上天要四周" h="313" src="//img1.mydrivers.com/img/20260818/S4bac9170-dbcc-4ba4-9e5c-f4149c2978f7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;星地通信场景演示 | 图片来源：太空字节&lt;/p&gt;
+&lt;p&gt;02 星地通信：&lt;/p&gt;
+&lt;p&gt;上行不是把下行反过来做一遍&lt;/p&gt;
+&lt;p&gt;极客公园：下行已经能做到 100Gbps 了，上行为什么不是同一件事反过来做一遍？&lt;/p&gt;
+&lt;p&gt;太空字节：在地面，拉一根光纤，两边都通了，这是个常识。到了天地之间还真不是——物理上确实是通的，但由于数据的流向不同，介质对它干扰的先后顺序不同，以及一些其他的因素，技术难题就完全不一样。&lt;/p&gt;
+&lt;p&gt;卫星的数据从天到地，先过真空，最后才过大气层。大气层对它的干扰，你可以在地面通过补偿把影响恢复回来。但如果数据是先过大气层，等到了天上，已经干扰完并且放大了。&lt;/p&gt;
+&lt;p&gt;总结起来就是，上行链路在近地面强湍流区完成发射，湍流导致的光束漂移、扩展、闪烁和指向误差会在长距离传播中被放大。&lt;/p&gt;
+&lt;p&gt;极客公园：为什么不能在天上也做一次补偿？&lt;/p&gt;
+&lt;p&gt;太空字节：卫星设计及研发，是一个在发射成本约束下的系统求最优解的过程，能够携带的设备的重量、体积和功耗等是非常有限的。比较地面的大设备（光学天线口径达 1 米以上，整体体积和一个小房间大小差不多），卫星上的设备很难具备自适应补偿能力。&lt;/p&gt;
+&lt;p&gt;极客公园：所以就得换一种解决方案。&lt;/p&gt;
+&lt;p&gt;太空字节：是的，只能从其他方向着手。比如在算法上做预补偿——简单比方说判断这束光大概会往哪偏，先在偏的反方向给它偏回去。这个难度就不是一个数量级的了，毫秒级别的大气模型预测本身就是一个难题。&lt;/p&gt;
+&lt;p&gt;到这一步我们才意识到，这件事需要的是技术突破，而不是扶持几个供应商做几个产品。&lt;/p&gt;
+&lt;p&gt;极客公园：一开始你们也不打算自己做这件事？&lt;/p&gt;
+&lt;p&gt;太空字节：当然不想。我们本来只是想做一颗大容量的存储卫星，通信这一段能买就买。&lt;/p&gt;
+&lt;p&gt;做星间激光通信的人都号称能做星地激光。结果，我们委托做过几个实验，连功率都不够，数据完全上不去。&lt;/p&gt;
+&lt;p&gt;到那个时候才决定，得回到整个技术的源头去解决。&lt;/p&gt;
+&lt;p&gt;极客公园：源头指的是谁？&lt;/p&gt;
+&lt;p&gt;太空字节：哈尔滨工业大学的于思源老师。他是哈工大的二级教授、博导，也是国家「万人计划」的科技创新领军人才，国内星载激光通信这条线基本是从他那里起来的。&lt;/p&gt;
+&lt;p&gt;更重要的是，他给某国家任务型号做过高轨的双向 5Gbps 激光通信验证，是真的通信过的——双向，不是只有下行。这在国内是极少数。&lt;/p&gt;
+&lt;p&gt;极客公园：你们和哈工大是什么合作模式？&lt;/p&gt;
+&lt;p&gt;太空字节：我们成立了联合实验室，这也是哈工大激光方面的第一个联合实验室。太空字节完成算法部分，与哈工大在实验室中共同完成设备的改造、落地以及验证。&lt;/p&gt;
+&lt;p&gt;我们自己的第一个小目标是 100Gbps 下行和 100Gbps 上行，把星地数据的高通量激光通信打成对称的，目前已经在实验室内完成验证了核心算法，产品也马上交付了。&lt;/p&gt;
+&lt;p&gt;03 「冷数据」和「快通道」&lt;/p&gt;
+&lt;p&gt;极客公园：你们对外讲的应用是冷数据备份。什么样的数据算冷数据？&lt;/p&gt;
+&lt;p&gt;太空字节：按访问频次分的。数据跟应用强相关、现在就得看的，叫热数据；高频访问的是极热数据，低频访问的是普通热数据；而离线的、平时根本不动的，叫冷数据。&lt;/p&gt;
+&lt;p&gt;最有代表性的冷数据其实是文献数据。热数据必须挂在系统里，跟计算机一起工作；冷数据不用，它只要待着，需要的时候能找回来就行。&lt;/p&gt;
+&lt;p&gt;极客公园：为什么不做实时的数据服务？&lt;/p&gt;
+&lt;p&gt;太空字节：实时性在天上意味着连续覆盖，而连续覆盖是极贵的。星链要做到全球任何地点、任何时刻都有多颗星在头顶上接力，就得把上万颗星的星座先发上去。它今天在轨已经一万多颗了，这才撑起实时这张网。&lt;/p&gt;
+&lt;p&gt;所以实时的门槛不在单颗星的存储或计算能力，而在星座规模对应的资本开支。我们做的是延迟容忍的数据服务，不需要先去烧一个万星级星座的钱。&lt;/p&gt;
+&lt;p&gt;极客公园：那些确实需要实时性的用户怎么办？&lt;/p&gt;
+&lt;p&gt;太空字节：只能等（笑）。&lt;/p&gt;
+&lt;p&gt;有些用户是真的有实时性要求的，希望第一时间就能拿到结果。但卫星在低轨每 90 分钟绕一圈，你等不等得起？他说我等不起，我就想马上拿到。&lt;/p&gt;
+&lt;p&gt;然后有人给他报了一个天文数字的预算，说建一张全球的网络就能做到。他说那算了，我还是等等吧。&lt;/p&gt;
+&lt;p&gt;极客公园：冷数据这个场景，为什么就不受这个限制？&lt;/p&gt;
+&lt;p&gt;太空字节：因为冷数据备份没有实时性要求，也就不需要前期大量基建网络的支持，满足点对点传输即可。&lt;/p&gt;
+&lt;p&gt;我不需要覆盖，不需要你头顶随时有星。我只要能把你的数据点对点地传上去，就完成了对客户的承诺。但如果你说我要通过卫星接入互联网、我的手机要频繁地刷，那你就必须要覆盖，就必须要基建网络。&lt;/p&gt;
+&lt;p&gt;所以基建必须结合应用。先描述应用，再回来看基建到底有没有必要性，两者是强相关的。&lt;/p&gt;
+&lt;p&gt;极客公园：既然对时间不敏感，为什么还要追 100Gbps 这么高的速率？&lt;/p&gt;
+&lt;p&gt;太空字节：这是被成本逼出来的，跟快慢无关，跟单价有关。&lt;/p&gt;
+&lt;p&gt;开一次机传一次数据，就是一笔固定成本。只传 1GB 和一次能传 100GB，每 GB 分摊的成本相差 100 倍。所以带宽越快，我的单位传输成本越低。&lt;/p&gt;
+&lt;p&gt;极客公园：一次开机能传多久？&lt;/p&gt;
+&lt;p&gt;太空字节：卫星过地面站非常快，一次可传输的时间就只有 3-5 分钟。而且它不可能常开机，那东西挺费电的……&lt;/p&gt;
+&lt;p&gt;所以你要么在这几分钟里把数据吃完，要么就等下一次——那就算两次开机，成本翻倍。按 100Gbps 算，五分钟大概能传 3.75TB，那每 GB 的成本就非常低了。&lt;/p&gt;
+&lt;p&gt;极客公园：地面站的发射站，是不是也要重新建？&lt;/p&gt;
+&lt;p&gt;太空字节：中国的卫星激光地面站极其稀有。现有的基本是谁建的归谁所有，多在官方和科研机构手里。我们前期租用合作方的，后期必然会自建。&lt;/p&gt;
+&lt;p&gt;它不是技术制约，也不是政策制约——目前激光连频段都不用协调。它的制约因素就是钱。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/516b0f22-bc21-4068-9c18-d6cae3d0c361.png" target="_blank"&gt;&lt;img alt="马斯克带火的太空算力领域 传一个800MB模型上天要四周" h="450" src="//img1.mydrivers.com/img/20260818/S516b0f22-bc21-4068-9c18-d6cae3d0c361.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;卫星激光地面站 | 图片来源：太空字节&lt;/p&gt;
+&lt;p&gt;极客公园：技术层面上，地面站还有什么限制？&lt;/p&gt;
+&lt;p&gt;太空字节：天气。地面站的使用频率绝对没有微波高，因为它非常受天气影响。&lt;/p&gt;
+&lt;p&gt;所以激光一定要跟大容量存储配合——你传不下来的时候，先憋住，接着去产生新任务，再憋住。大容量存储和激光是绝配，这不是两件事。&lt;/p&gt;
+&lt;p&gt;04 「我想当卫星公司的甲方」&lt;/p&gt;
+&lt;p&gt;极客公园：从上行这个技术缺口，怎么推演到「数据备份」这个场景的？&lt;/p&gt;
+&lt;p&gt;太空字节：这跟我们过往的 IT 从业经验有关。冷数据存储备份这个场景有 3 个特点：对时效不敏感、数据市场足够大、可以复用早期已有的基建设备。所以，数据备份就成了我们选择的第一个商业化探索方向。&lt;/p&gt;
+&lt;p&gt;极客公园：太空作为一个存放数据的地方，特别在哪儿？&lt;/p&gt;
+&lt;p&gt;太空字节：最大的特点是环境不同。太空里面没有空气、没有水、没有普通环境里的化学交换。一个存储设备送上去之后，它进入的是一个完全不同的物理空间。&lt;/p&gt;
+&lt;p&gt;更重要的是，它和地面天然隔离。卫星运行在轨道上，平时没有人可以直接接触它，每次和地面的通信窗口也非常有限。&lt;/p&gt;
+&lt;p&gt;所以从物理隔离、访问路径，到数据生命周期管理，它天然提供了一种和地面不同的数据保存方式。&lt;/p&gt;
+&lt;p&gt;我们认为，未来有一类重要数字资产，会需要这样的保存环境。&lt;/p&gt;
+&lt;p&gt;极客公园：现阶段你们的存储载荷怎么上天？&lt;/p&gt;
+&lt;p&gt;太空字节：现在主要采用搭载的方式，也就是把我们的空间存储节点搭载到合作卫星上。我们把这一套设备叫做「太空云节点」，它的作用是让卫星具备两个能力：在轨保存更多数据、把需要的数据高效传输回地面。&lt;/p&gt;
+&lt;p&gt;未来我们计划建设自己的星座，把这套能力会逐渐独立出来。&lt;/p&gt;
+&lt;p&gt;极客公园：你们和卫星公司的关系是什么？&lt;/p&gt;
+&lt;p&gt;太空字节：我们和卫星公司既是太空信息基建的共建者，同时也是卫星平台公司的甲方。&lt;/p&gt;
+&lt;p&gt;极客公园：怎么理解「甲方」这个关系？&lt;/p&gt;
+&lt;p&gt;太空字节：传统逻辑是我做了一套设备卖给卫星公司，赚一笔硬件的钱，那我就是供应商，他是客户。&lt;/p&gt;
+&lt;p&gt;但我们不这么干——节点按成本价（BOM）给他，一分不赚。不光不赚，我还要再倒付他一笔搭载费，因为把这 10 公斤送上天，火箭那部分费用也是一笔钱，那笔钱我帮他出。&lt;/p&gt;
+&lt;p&gt;所以在这个环节上，我是净掏钱的一方，也就变成了甲方。&lt;/p&gt;
+&lt;p&gt;极客公园：也就是说，虽然你是供给关系上的「甲方」，但你并不打算靠卖硬件赚卫星公司的钱？&lt;/p&gt;
+&lt;p&gt;太空字节：我赠送的节点，不仅可以对卫星自己产生的数据服务，还可以通过网络传输服务于其他地方的数据，包括来自于太空中其他卫星的数据，甚至来自于地面传输上来的数据。&lt;/p&gt;
+&lt;p&gt;当我把我的节点能力从卫星内部释放出来服务于第三方，他就是事实意义上公有云的云节点，也就帮助卫星公司成为了太空信息基建的共建者。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/c3fff92f-f170-44fe-bb03-a26b8786f6f2.jpg" target="_blank"&gt;&lt;img alt="马斯克带火的太空算力领域 传一个800MB模型上天要四周" h="316" src="//img1.mydrivers.com/img/20260818/Sc3fff92f-f170-44fe-bb03-a26b8786f6f2.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;「云节点载荷」的产品形态展示 | 图片来源：太空字节&lt;/p&gt;
+&lt;p&gt;极客公园：怎么理解这个「共建」？&lt;/p&gt;
+&lt;p&gt;太空字节：我需要卫星公司配合一起改造：我的节点装进他的卫星，它不能是一个孤立的盒子——卫星上原来的数据、相机拍的东西，得能流进我的存储；处理完，还要能通过激光传下去。这就要求这颗卫星的数据接口按网络的方式来对接，而不是按它原来那套定制接口。这个改造得他自己动手。&lt;/p&gt;
+&lt;p&gt;如果我是收他钱的供应商，我就没有话语权。&lt;/p&gt;
+&lt;p&gt;极客公园：那你的收入模式是什么？&lt;/p&gt;
+&lt;p&gt;太空字节：靠数据服务挣钱。一部分是面向卫星自身产生的数据提供数据传输服务。有点像运营商送你一个「猫」，但以后每个月收你网费。&lt;/p&gt;
+&lt;p&gt;另一部分是全新的商业尝试。节点赠送的时候，我们就完成了冗余的在轨存储建设，这部分在太空中闲置的存储空间，就可以有效的支撑我们首发的应用产品——太空数舱。&lt;/p&gt;
+&lt;p&gt;太空数舱本质上是一项数据服务，面向高价值数字资产的太空存储与备份服务。&lt;/p&gt;
+&lt;p&gt;05 太空存储的第一批用户&lt;/p&gt;
+&lt;p&gt;极客公园：那你们的客户到底是谁？&lt;/p&gt;
+&lt;p&gt;太空字节：我的客户是拥有高价值数据的用户。&lt;/p&gt;
+&lt;p&gt;第一批客户，我们认为会是拥有高价值数字资产，同时又有品牌传播需求的组织，它在整个大数据市场里是很小的一部分，但这一小部分只面对我或者一两家竞争者。&lt;/p&gt;
+&lt;p&gt;另外还有一类是跨境传输的痛点，这已经是上市公司级别的问题了。&lt;/p&gt;
+&lt;p&gt;第三类，也是我们觉得最大的想象力，在 C 端。&lt;/p&gt;
+&lt;p&gt;极客公园：为什么是 C 端？&lt;/p&gt;
+&lt;p&gt;太空字节：因为数据的「价值」是用户自己定义的，每一个人都拥有一份被定义为「珍贵」的数据。&lt;/p&gt;
+&lt;p&gt;而我说的想象力指的是商业上的想象力，相比于我们的存储节点建设成本，C 端庞大的数据拥有者，哪怕只服务到非常小的一部分群体，也是个非常具有想象力空间的市场。&lt;/p&gt;
+&lt;p&gt;极客公园：可是一个普通人，为什么要花钱把自己的文件存到太空去？&lt;/p&gt;
+&lt;p&gt;太空字节：我们提供给 C 端用户的不是传统意义上的备份，因为每个人的手机、电脑、云盘，本来就可以保存。&lt;/p&gt;
+&lt;p&gt;但太空里的那一份，是额外的一份。它代表的是：「这份内容曾经存在过，并且被放到了一个特殊的位置。」&lt;/p&gt;
+&lt;p&gt;所以它更接近数字时代的纪念、收藏和认证。&lt;/p&gt;
+&lt;p&gt;极客公园：具体是什么样的场景？&lt;/p&gt;
+&lt;p&gt;太空字节：比如：一个音乐人，可以把自己的代表作品或者创作手稿送入太空，作为自己艺术生涯中的一个特殊纪念。或者一个游戏公司，可以把一个重要版本、玩家共同创造的数字记忆，或者一个 IP 发展的关键档案保存到太空。&lt;/p&gt;
+&lt;p&gt;一个品牌，在成立十周年、二十周年的时候，可以把这一阶段最重要的品牌资产送入轨道，形成一个属于自己的数字时代纪念碑。&lt;/p&gt;
+&lt;p&gt;极客公园：那你怎么收费？&lt;/p&gt;
+&lt;p&gt;太空字节：现在很贵，因为在轨存储容量非常有限，单个文件一个月要数千元的量级。&lt;/p&gt;
+&lt;p&gt;但这个价格是会往下走的。我们自己算的账是，等到一组三星、天上有了足够容量，成本能降到每 GB 每月几块钱左右，那时候可以给用户报到三十块钱一个月——差不多就是一个网盘会员的价钱，这才谈得上普惠。&lt;/p&gt;
+&lt;p&gt;极客公园：在价格降下来之前，这批用户从哪儿来？&lt;/p&gt;
+&lt;p&gt;太空字节：先借大 IP 把品牌带出去。目前可以披露的是三体宇宙，就是刘慈欣《三体》那个 IP 的运营方。我们配合《三体》20 周年的契机，提供 IP 一些数据发往太空的服务&lt;/p&gt;
+&lt;p&gt;极客公园：和《三体》合作是巧合吗？&lt;/p&gt;
+&lt;p&gt;太空字节：不是巧合。我们发现最适合最早使?太空数舱的，不?定是数据量最?的?，?是最理解「为什么值得留下」的?。《三体》讨论人类文明在宇宙尺度下的处境，原著中也写到文明如何在漫长时间里留下信息和痕迹。把《三体》相关档案送入太空，与这些主题形成了一次现实呼应。因此，这次合作不只是数据备份，也为三体 20 周年提供了一种与作品气质相契合的纪念方式。&lt;/p&gt;
+&lt;p&gt;极客公园：往后三年，你觉得这个行业会走到哪一步？&lt;/p&gt;
+&lt;p&gt;太空字节：坦率说，这个行业还非常早期。&lt;/p&gt;
+&lt;p&gt;现在每讲一次，大家都要冥思苦想：什么数据会上天？这事儿成不成立？但基建能力的价值，所有人聊完都是认可的。这个错位说明行业还在很早期——技术的必要性已经清楚了，应用的想象力还没跟上。&lt;/p&gt;
+&lt;p&gt;地面那套东西的顺序是：先有硬件标准化，再有操作系统，再有网络，然后软件生态才起来。天上现在刚走完前两步，卡在网络这一环。这一环通了，后面会长出什么，其实今天没人能准确预测，就像当年万维网出来之前，没人能说清它会带来什么。&lt;/p&gt;
+&lt;p&gt;三年之后，我希望大家讨论的不再是「太空算力成不成立」，把数据送上天这件事不需要再解释了，真正的问题是「天上到底能跑什么」——那就说明这个行业真的开始了。&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 15:51:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFA2NXBtQUgzVlNXbG9wRFRRM25WUUhqLVd3OXduenBLcFBuU09zWFR4S1RBdlpCUURPN2o5SF90TFhPNnBhTy1VMUhMUGJpN3JWNHliREc0aWM</guid></item><item><title>特斯拉Semi等来"榜一大哥" 斩获史上最大订单！瑞典货运公司豪购500辆Semi卡车 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144675.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月18日消息，据TechCrunch报道，&lt;span&gt;&lt;strong&gt;瑞典货运科技公司Einride今日宣布将在北美部署500辆特斯拉Semi电动重卡，这是迄今为止公开披露的最大一笔特斯拉Semi采购订单。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;据悉，Einride目前运营约2000辆电动卡车，500辆Semi全部到位后车队规模将扩大至约700辆，相当于现有规模的三倍。&lt;/p&gt;
@@ -2287,538 +2882,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 03:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1rRXFLZFliWXVBb0RHTzA0TWE0NEIybjhmNUd0MkpJWEkyNzZZNV9heDB2MVRYd3RWZTBXbHZpOUdaWDRISFJqSjBJOVZ2dVFYQW5vWmFlQ2s</guid></item><item><title>AI有多少收入才不是泡沫？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779656</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 03:10:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5SUEVWQXZqNTdqN3JNaVFSVVNvZlYtd3pweGFlNkJCWHhxVDR4LWZnQlpYTlFWR01wWGc4NjhYLW5NX3VGWTZIN3lDdnh6UGZxTE5V</guid></item><item><title>史上最长跨代期！索尼PS6发布日期仍未确定：活下去才是首要任务 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144472.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，&lt;span&gt;&lt;strong&gt;索尼CEO十时裕树近日在接受采访时透露，PS6的发布日期和价格尚未确定。&lt;/strong&gt;&lt;/span&gt;这一表态让此前普遍预期的2027年假期窗口变得愈发不确定，部分行业观察人士认为发售可能推迟到2028年。&lt;/p&gt;
-&lt;p&gt;十时裕树对PS6着墨不多，但对公司整体业务表态称，“传统业务很重要，我对这些业务充满敬意。但与此同时，我们必须改变。”&lt;/p&gt;
-&lt;p&gt;他表示索尼正从硬件和电子业务向娱乐业务转型，将游戏IP改编成影视作品是“必须打造的飞轮”，同时还在探索游戏与动漫的融合，因为两者天然契合。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;十时裕树直言：“CEO最重要的任务就是确保企业活下去。考虑到这一点，我们必须采取行动，否则无法在当前环境中生存。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/b098c23dfaf441268677a7981def5bbe.jpg" target="_blank"&gt;&lt;img alt="史上最长跨代期！索尼PS6发布日期仍未确定：活下去才是首要任务" h="337" src="//img1.mydrivers.com/img/20260818/s_b098c23dfaf441268677a7981def5bbe.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;索尼曾表示目前有足够RAM维持PS5生产到2027年3月，但明年全年的DRAM产能已经售罄，这让PS6的量产规划几乎无从下手。&lt;/p&gt;
-&lt;p&gt;售价方面，索尼已明确不会亏本卖PS6，分析师担忧最终定价可能落在900至1000美元以上，远超PS5首发499美元的起点。&lt;/p&gt;
-&lt;p&gt;为控制成本，索尼可能削减PS6规格而非无限期推迟，比如将GDDR7显存从30GB砍至24GB，或更多依赖文件压缩技术来降低对高速存储的容量需求。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在价格恢复正常之前，索尼预计将尽可能延长PS5的生命周期，利用庞大的玩家基数维持游戏业务运转，这大概率会催生游戏史上最长的跨代过渡期，&lt;/strong&gt;让玩家升级主机的难度进一步加大。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="史上最长跨代期！索尼PS6发布日期仍未确定：活下去才是首要任务" h="337" src="//img1.mydrivers.com/img/20260818/565312d0-a065-4bbc-a4d7-342e0a421f24.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 03:10:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5pOTdEZXhlMWs3NlhLWVg3dTgxY3duQk9wRWt3aldtUXNHNUdvNEw5UUl3MlhvQ2lpeFpBTVRSMkJXMXVzT3N2NE5Oc0d3LXo1Y1NZRklzc0w</guid></item><item><title>关注：美中AI开发竞争愈演愈烈 日本担心落后加紧追赶 - 共同网</title><link>https://china.kyodonews.net/articles/-/14369</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body__inner"&gt;
-    &lt;p&gt;　　【共同社8月18日电】围绕人工智能（AI）的军事利用，国际社会以美中两国为中心的开发竞争愈演愈烈。不仅是指挥统制和决策辅助，在无人机和网络等广泛领域的运用也在推进。美国国防部的分析认为，中国的目标可能是到2030年成为AI领域的全球领导者。日本则担心落后，将加快引进的步伐。&lt;/p&gt;
-
-&lt;p&gt;　　“我们将在所有领域成为‘AI优先’的战斗部队。”&lt;/p&gt;
-
-&lt;p&gt;　　美国国防部长赫格塞思今年1月在公布将AI用于美军任务的战略时在声明中如此强调。&lt;/p&gt;
-
-&lt;p&gt;　　据悉美军今年1月在抓捕委内瑞拉总统马杜罗的行动中使用了美国企业Anthropic的生成式AI“Claude”。赫格塞思还暗示，AI在击杀伊朗最高领袖哈梅内伊的行动中发挥了重要作用。&lt;/p&gt;
-
-&lt;p&gt;　　据2026年版日本《防卫白皮书》记载，以色列在袭击巴勒斯坦自治区加沙选择目标时运用了AI。白皮书中记载的观点指出，以方将加沙民众的智能手机中安装的通话APP数据交给AI解析，评估机主与伊斯兰组织哈马斯之间的关系。&lt;/p&gt;
-
-&lt;p&gt;　　防卫白皮书还详细阐述了中国军队的高科技化。中国在2018年成功实现了搭载AI的200架无人机的编队飞行，“传统的防空系统估计将很难应对”。白皮书分析称，最近中国正在将新兴企业“深度求索”（DeepSeek）的产品用于无人机。&lt;/p&gt;
-
-&lt;p&gt;　　另一方面，AI对金融机构和重要基础设施发起的网络攻击也越来越令人担忧。美国企业已连续发生多起自家模型擅自对外部组织发起网络攻击的事件。总统特朗普6月签署了总统令，规定在向大众公开前必须先由政府验证其安全性。&lt;/p&gt;
-
-&lt;p&gt;　　日本防卫省2024年7月制定的AI活用推进基本方针在提及可靠性担忧的同时指出“当前正处于是通过使用AI成为高效组织，还是成为低效且因循守旧的组织这一分岔口”，方针还列举了目标探测、指挥统制等7个重点领域。&lt;/p&gt;
-
-&lt;p&gt;　　基本方针出台约两年后的本月，防卫省公布了防卫力整备的课题，明确提出“与美国等相比AI的使用和引进尚不完善，必须从根本上加以强化”。该省官员强调“放任不管就会落后于人，虽然存在难题，但首先必须大量采用”。（完）&lt;/p&gt;
-
-  &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>共同网</author><pubDate>Tue, 18 Aug 2026 03:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiV0FVX3lxTE8xNk9jWG83UjF4bUE2ajZPRU4yQ04tMm1YRFIzVUN6SjZRSTFmR2tZY2treHZhVGk2VFRLUEdPSGZMckJwU1hxcDRyRVNPZUY3dlhSaU9hOA</guid></item><item><title>马斯克出手AI编程 微软股价应声大跌 发生了什么？ - 东方财富</title><link>https://wap.eastmoney.com/a/202608183844347357.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content" id="articleContent"&gt;
-                    &lt;a class="ftopicitem" data-code="qwjx" href="/topic/guanzhu.html?code=qwjx"&gt;
-                        
-                        &lt;p class="right"&gt;&lt;/p&gt;
-                    &lt;/a&gt;
-            
-&lt;center&gt;&lt;p class="em_adv_mods" type="1" tag="6"&gt;&lt;/p&gt;&lt;/center&gt;&lt;p&gt;就在并入马斯克旗下SpaceXAI后不久，AI编程初创公司Cursor正式推出了代码托管平台Origin。&lt;/p&gt;&lt;p&gt;代码托管平台（Code Hosting Platform）是用于存放、管理代码的云端服务器网站，相当于代码的云盘和协作仓库，全球最大开源项目聚集地GitHub亦属于此列。&lt;/p&gt;&lt;p&gt;与传统产品相比，Origin定位为专门给AI Agent时代设计的Git代码托管平台，深度集成Cursor编辑器。用户代码、堆叠式PR（拉取请求）、智能体均集中于一处，&lt;strong&gt;智能体可直接修改代码、读取审查状态，无需人工介入。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;此外，Origin可直接接入GitHub，与托管仓库并列显示，对于从GitHub同步的项目，Origin会实时更新代码，开发者可以直接在Cursor中浏览、搜索和拉取代码。&lt;/p&gt;&lt;p&gt;巧合的是，就在面向AI Agent的Origin推出之际，&lt;a href="https://wap.eastmoney.com/quote/stock/105.MSFT.html"&gt;微软&lt;/a&gt;旗下GitHub却突发大范围故障，大量用户报告无法正常访问网站、加载代码仓库或使用相关开发服务。&lt;/p&gt;&lt;p&gt;与此同时，社交平台X上的用户纷纷就Origin与GitHub的竞对关系展开了讨论。&lt;/p&gt;&lt;p&gt;受此影响，微软跌超3%，市值一夜蒸发千亿。&lt;/p&gt;&lt;center&gt;&lt;img src="https://np-newspic.dfcfw.com/download/D25076708831509042352_w1875h699.jpg" width="" height=""&gt;&lt;/center&gt;&lt;p&gt;需要注意的是，Cursor模型能力或深度依赖SpaceXAI算力。&lt;/p&gt;&lt;p&gt;8月14日，Cursor宣布正式被SpaceXAI收购，&lt;strong&gt;并声称将可使用全球最大的GPU集群，获得构建更强大且运行成本更低的模型所需的算力。&lt;/strong&gt;其表示，将致力于把Grok打造成世界上最有用的AI，并改进Grok Build、Grok Bot、Grok API、Cursor等功能。&lt;/p&gt;&lt;p&gt;对于马斯克来说，收购Cursor意味着进军AI编程这一利润丰厚的市场。&lt;/p&gt;&lt;p&gt;就在本月，马斯克在&lt;a href="https://wap.eastmoney.com/quote/stock/105.SPCX.html"&gt;SpaceX&lt;/a&gt;的一场员工会议上表示，公司“必须在软件领域取得成功”。其强调，&lt;a href="https://wap.eastmoney.com/quote/stock/90.BK0800.html"&gt;人工智能&lt;/a&gt;是SpaceX当下以及未来发展的核心，到9月份，AI收入将超过SpaceX的所有其他收入。&lt;/p&gt;&lt;p&gt;&lt;a href="https://wap.eastmoney.com/quote/stock/1.601688.html"&gt;华泰证券&lt;/a&gt;认为，Coding正在由代码辅助工具延伸至长时程任务执行平台，开发者在代码补全、调试、测试、重构和项目级开发中具有较高使用频率，单用户通常会持续产生输入、输出、长上下文及工具调用Token，模型能力提升更容易转化为开发者付费与企业采购。&lt;/p&gt;&lt;p&gt;该机构强调，相比通用聊天产品，Coding产品在代码库上下文、工具配置和团队协作流程中的嵌入程度相对更深，模型切换通常还涉及工作环境及协作流程调整。普通聊天更有利于建立用户入口和品牌认知，Coding则更容易形成高频调用、企业采购和较高价值的Token收入。&lt;/p&gt;&lt;center&gt;&lt;p class="em_adv_mods" type="1" tag="7"&gt;&lt;/p&gt;&lt;/center&gt;&lt;p fy="off" class="em_media"&gt;（文章来源：财联社）&lt;/p&gt;
-                &lt;p class="end_source"&gt;文章来源：财联社&lt;/p&gt;
-                            &lt;p class="end_author"&gt;文章作者：科创板日报 张真&lt;/p&gt;
-                            &lt;p class="end_title"&gt;原标题：马斯克出手AI编程 微软股价应声大跌 发生了什么？&lt;/p&gt;
-        &lt;/div&gt;
-
-        &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Tue, 18 Aug 2026 03:04:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTFBoUnc2ckQ3MFVOWGpmdG1uWkdvakRzMGtwTE5qUDNDZHR6ckFGbVl2NHZObFQzZU15ZGZEWnVRRjN5S0FqUGR2MUI1U2lPdGNMM2QxclBTcUtNOG9fd3VhVA</guid></item><item><title>随机写入较上代提升114%！长江存储致态Ti600s固态盘开卖：最高4TB、1189元起 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144470.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;随机写入较上代提升114%！长江存储致态Ti600s固态盘开卖：最高4TB、1189元起&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-18 10:54:56  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/944168.html" title="雪花的主页" class="newstiao4"&gt;雪花&lt;/a&gt;&lt;p&gt;  编辑：雪花 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144470-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，长江存储旗下致态今日正式推出新款消费级固态硬盘产品Ti600s，这款新品最大的升级点，就是将存储颗粒迭代到了全新的Xtacking 4.0 QLC架构。&lt;/p&gt;
-&lt;p&gt;从官方同步公布的参数细节来看，Ti600s依旧沿用了消费级市场普及率最高的PCIe Gen4 ×4接口，完全符合NVMe 2.0协议标准，不需要用户额外升级老旧主板就能直接兼容使用。&lt;/p&gt;
-&lt;p&gt;对比前一代产品，Ti600s的最高顺序读写速率从前代的7000MB/s和6000MB/s，分别提升到了7400MB/s和6900MB/s。&lt;/p&gt;
-&lt;p&gt;它的最高随机写入性能更是直接提升了至多114%，来到1500K IOPS，随机读取性能也实现了44%的大幅提升。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ti600s采用了DRAM-less无外置独立缓存的成熟方案，兼顾了性能释放和功耗控制，整个产品线提供512GB、1TB、2TB和4TB四个容量版本，目前后三款主流容量的首发售价分别为1189元、1889元和3899元。&lt;/strong&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/8d62361d1aad4a6d812036a8274646ac.png" target="_blank"&gt;&lt;img alt="随机写入较上代提升114%！长江存储致态Ti600s固态盘开卖：最高4TB、1189元起" h="717" src="//img1.mydrivers.com/img/20260818/s_8d62361d1aad4a6d812036a8274646ac.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：雪花&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 02:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9MbHJYQXVWZ2lQTzJlMm03dEIxdzFnVXdQWWVyX2VpNTlFNXUtSUI2cE92d2ZZYjhWM1hocXYwRmFDa1lHem5sblRLLU9nbkVhNEFIUXcwUHY</guid></item><item><title>费半重返牛市及存储股强势反弹 谁是背后推手？一文读懂 - 财联社</title><link>https://www.cls.cn/detail/2456773</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社8月18日讯（编辑 黄君芝）&lt;/strong&gt;本周，随着Anthropic和OpenAI相继传出亮眼财务数据、英伟达又作出千亿美元的数据中心建设担保，人工智能（AI）热潮又被注入了“新的活力”。美股存储板块强势反弹，并带动芯片指数“重返牛市”。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;周一，美光科技股价涨4.13%，连涨五个交易日，创今年1月以来最长连涨日，五日累涨17.5%。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;同日，闪迪股价狂飙8.88%，SK海力士涨3.04%，西部数据上涨5.4%，希捷科技上涨2.2%。在日股大涨带动下，铠侠ADR也在周一暴涨13.44%。泰瑞达和应用材料也涨超5%。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在存储板块的带动下，费城半导体指数（SOX）的熊市仅持续了21天，为2020年3月以来最短。周一当日，该指数收涨1.6%至12,621点，从7月29日底部反弹超过20%，重返技术性牛市。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;大模型龙头“领航”&lt;/h2&gt;
-&lt;p&gt;据知情人士周一透露，Anthropic公司的年化营收（通过短期收入反推一整年的收入，通常用于收入增长极快的AI企业）在7月底时已经达到650亿美元。&lt;/p&gt;
-&lt;p&gt;此外，媒体拿到的内部文件也显示，Anthropic今年二季度的实际营收超过115亿美元，而2025年同期仅为7.87亿美元。更加重要的是，Anthropic经调整的营业利润也在二季度转正。而据此前消息，该公司最快将在“9月或10月初”进行美股IPO。&lt;/p&gt;
-&lt;p&gt;另据媒体上周五报道，OpenAI首席财务官Sarah Friar向投资者表示，该公司企业业务收入占比已超过消费端，年化营收达400亿美元。OpenAI此前也秘密递交了IPO文件，但眼下并没有明确的上市日期传闻。&lt;/p&gt;
-&lt;p&gt;Anthropic和OpenAI收入的快速增长，显然表明他们算力租赁长单没问题，数据中心还能继续火。瑞穗交易部门分析师Jordan Klein则在客户报告中指出，这两家公司的“利好财务更新”，是芯片股当前最重要的近期催化剂，两家公司均在加速冲刺IPO。&lt;/p&gt;
-&lt;p&gt;Klein表示，市场对Anthropic今年全年经常性收入的一致预期在750亿至1000亿美元之间，并有报道指出这一数字到明年底或将攀升至1800亿至2000亿美元区间。这将转化为对AI芯片、存储元件、网络设备及其他数据中心硬件的"大量"采购需求。&lt;/p&gt;
-&lt;h2&gt;英伟达“保驾护航”&lt;/h2&gt;
-&lt;p&gt;上周一，英伟达正式与华尔街多家顶级金融机构达成协议，旨在筹集巨额资金，帮助其客户为购买算力提供融资。这些公司的目标是在未来几年部署超过5000亿美元的外部资本。&lt;/p&gt;
-&lt;p&gt;简单来说，就是大型企业利用自身较高的信用评级，帮助控制客户的融资成本。而英伟达将在其中扮演合作牵头方，而非出资方的角色。&lt;/p&gt;
-&lt;p&gt;本周一，据最新报道，OpenAI已与软银旗下SB Energy签署一项规模达10吉瓦的数据中心租赁协议，并获得英伟达的部分支持。该项目位于美国俄亥俄州，有望成为迄今规模最大的人工智能数据中心园区之一。&lt;/p&gt;
-&lt;p&gt;知情人士透露，英伟达将通过一项承诺为该项目提供支持，帮助SB Energy筹集债务融资，同时避免自身承担过大的风险敞口。&lt;/p&gt;
-&lt;p&gt;而英伟达四处帮人“兜底”的举动表明，数据中心建设热潮还将继续。英伟达首席执行官黄仁勋此前在社交媒体平台X上发帖称，他的公司可能为相关机会提供最高25%的残值支持机制，具体情况视个案而定。&lt;/p&gt;
-&lt;p&gt;他写道：“我们的职责是帮助释放大量独立资本，同时保持严格的风险敞口。”&lt;/p&gt;
-&lt;p&gt;有分析指出，英伟达之所以推动这一机制，与当前AI基础设施投资越来越重有关。大型GPU集群和数据中心动辄需要数十亿美元甚至更高投入，而投资机构最担心的就是设备更新速度过快。一旦新一代GPU快速普及，旧设备的二手价值下降，投资回报周期也可能被拉长。&lt;/p&gt;
-&lt;p&gt;因此，英伟达提供部分残值支持，相当于降低资本进入算力基础设施的顾虑，同时也能够进一步刺激GPU采购和数据中心建设。&lt;/p&gt;
-&lt;p&gt;而更值得注意的是，这并不只是一个简单的“兜底”方案。英伟达正在尝试把AI算力从硬件资源进一步包装成能够产生稳定现金流的资产，通过大型资管机构参与，打通股权、债权等融资渠道。&lt;/p&gt;
-&lt;h2&gt;闪迪“加码”&lt;/h2&gt;
-&lt;p&gt;闪迪在本轮反弹中也是“功臣”之一。&lt;/p&gt;
-&lt;p&gt;上周，闪迪举行了投资者日活动，并公布了令人鼓舞的长期业绩指引。该公司预计，在2028至2030财年（其财年于6月底或7月初结束）期间，营收增长率将达到15%至10%左右。&lt;/p&gt;
-&lt;p&gt;据首席财务官Luis Visoso称，闪迪预计同期调整后毛利率将保持在80%左右。该公司指出，这一数字主要得益于闪迪对客户的承诺和严格的供货控制。闪迪已与八家客户签署了新业务模式协议（NBM）。这些协议是多年期供货协议，包含承诺的供货量和结构化定价，使闪迪能够更好地将客户需求与产能相匹配。&lt;/p&gt;
-&lt;p&gt;而对美光来说，这也是个好消息，因为它表明整个内存市场需求强劲，而且短缺情况可能不会很快结束。闪迪专注于满足长期需求的闪存存储，而美光则销售高带宽内存和DRAM，这些产品短期需求旺盛，智能手机和电脑都需要它们才能流畅运行。&lt;/p&gt;
-&lt;p&gt;不过，从历史上看，存储器行业一直是一个周期性行业。强劲的需求和紧张的供应会推高价格和利润率，吸引更多产能，直到供应过剩最终导致价格回落。但闪迪这场投资者日活动，似乎带了一种新的可能。&lt;/p&gt;
-&lt;p&gt;8月17日，美国银行重申了对美光科技的“买入”评级，目标价为1550美元，并指出闪迪最近的投资者日活动可能表明存储器行业正在进入一个更加持久的阶段，有别于过去周期性明显的繁荣与萧条更替。&lt;/p&gt;
-&lt;p&gt;该行分析师Vivek Arya指出，闪迪提出的年销售额增长15%目标，以及在新客户协议和供应策略支撑下毛利率在2030年前维持80%以上的展望，提供了“投资者最终如何看待存储股”的估值参考框架。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 18 Aug 2026 02:52:24 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE1hckRLcW91ajdWTU5tRUlEOWxkZmNTZm9XRnpJQW4xTlcyQVRTNVBoOHRPNUZTcFVKYlJ6dDNtN3pXZ2t4Mjh0VQ</guid></item><item><title>功率半导体又酝酿涨价？AI用电拉动需求 部分企业或10月行动 - 财联社</title><link>https://www.cls.cn/detail/2457030</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;《科创板日报》8月18日讯（编辑 宋子乔）&lt;/strong&gt; 据台湾经济日报今日报道，&lt;strong&gt;台湾地区功率半导体厂商正酝酿第三波价格调整，最快10月起针对非合约产品，涨价幅度10%至15%&lt;/strong&gt;。业界看好台半、强茂、德微等厂商下半年营运量价齐升。&lt;/p&gt;
-&lt;p&gt;供应链分析，&lt;strong&gt;今年以来功率半导体已历经两波价格调整，上半年平均价格较去年同期涨15%至20%&lt;/strong&gt;，AI用电量增加，导致功率半导体缺货严重，促使台厂规划10月启动第三波调价。&lt;/p&gt;
-&lt;p&gt;业内人士指出，当前功率半导体市场出现缺货、价格大幅上涨的行情，核心主要有两大驱动因素。&lt;/p&gt;
-&lt;p&gt;首先是&lt;strong&gt;市场需求结构发生显著转变，随着AI数据中心功耗持续快速攀升，服务器机柜成为功率元器件全新的核心需求增长点&lt;/strong&gt;，MOS管、TVS二极管、功率二极管等各类功率器件的市场用量同步大幅增长。与此同时，&lt;strong&gt;AI数据中心普遍向800VDC高压直流架构升级迭代，对电源转换效率、器件耐压参数的要求大幅提升&lt;/strong&gt;，无论是传统的硅基功率器件，还是碳化硅（SiC）、氮化镓（GaN）等宽禁带半导体器件，都迎来了全新的技术迭代和市场发展空间。&lt;/p&gt;
-&lt;p&gt;其次是&lt;strong&gt;行业成本转嫁的刚需压力&lt;/strong&gt;。业内分析表示，今年以来，晶圆厂、引线框架及上下游供应链企业陆续上调产品价格，行业整体生产成本早已处于高位。此前终端市场需求尚未完全复苏，为稳固订单、保住市场份额，国内多数功率半导体企业选择自行消化上涨的成本。而现阶段行业需求持续回暖，供需格局大幅改善，企业开始向下游客户传导原材料与生产端的涨价成本。&lt;/p&gt;
-&lt;p&gt;台半正重点布局拓展数据中心专用MOS管及二极管产品线，目前650V高压TVS二极管已实现批量出货，同时持续研发推进1000V高压产品，精准对标AI机柜、高压电源等核心应用场景。&lt;/p&gt;
-&lt;p&gt;强茂电子表示，目前大型TVS二极管、功率二极管、功率MOSFET等产品，在AI服务器电源模块、散热系统、主板等应用领域的需求均迎来明显回暖、持续增长。不过行业内各家企业的定价策略存在差异化，强茂本轮涨价主要集中在小信号元器件领域，而功率MOSFET产品现阶段以抢占市场份额、拓展客户资源为核心发展目标，暂未大幅调价。&lt;/p&gt;
-&lt;p&gt;AI浪潮正推动数据中心电力架构革新，有望进一步带动整个功率半导体行业的产品规格全面升级，高压功率器件的市场重要性将持续凸显。&lt;/p&gt;
-&lt;p&gt;国信证券表示，根据YoleGroup的预测，2025-2031年全球电力电子市场规模将以7.1%的CAGR增长至413亿美元，AI基础设施/数据中心是增长的主要驱动力，国产超节点的落地也有望带动配套功率器件需求，同时功率器件其他市场需求也在复苏中。&lt;/p&gt;
-&lt;p&gt;中金公司研报认为，在AI算力走向高密度、连续满载、强瞬态冲击之后，高压架构是数据中心供电系统发展的确定方向。在硬件技术进步推动下，2026年数据中心高压架构迎来落地元年。SiC/GaN等核心第三代化合物半导体器件有望持续受益于数据中心电力相关系统升级，SiC有望统领机房侧（灰区）应用，而GaN有望在机柜内（白区）大规模渗透，从灰、白区分界线形成“SiC左，GaN向右”的市场格局，共同受益于数据中心电源方案迭代。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财联社</author><pubDate>Tue, 18 Aug 2026 02:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE9vTWhiVU1pRW9KUklfeGY5dDZKWGlmZUlwaGlQZnVIRjdzZkNXSW1fVklGZUUxNHN0U1JxTWpLb1NGa3ZpWGlVUA</guid></item><item><title>9999元起供不应求！荣耀Robot Phone首销全版本闪电售罄 - news.mydrivers.com</title><link>https://news.mydrivers.com/1/1144/1144463.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，今天10:08，行业首款机器人手机荣耀Robot Phone正式开启首销，售价9999元起。&lt;/p&gt;
-&lt;p&gt;截至发稿，&lt;span&gt;&lt;strong&gt;荣耀Robot Phone全版本在荣耀商城、荣耀京东自营旗舰店均已售罄，&lt;/strong&gt;&lt;/span&gt;首销十分火爆。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/4acf5f4df62e4f0f9d59e867d64288b4.png" target="_blank"&gt;&lt;img alt="9999元起供不应求！荣耀Robot Phone首销全版本闪电售罄" h="335" src="//img1.mydrivers.com/img/20260818/s_4acf5f4df62e4f0f9d59e867d64288b4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/11bbee664f3e4b4e8dab973f8642836a.png" target="_blank"&gt;&lt;img alt="9999元起供不应求！荣耀Robot Phone首销全版本闪电售罄" h="354" src="//img1.mydrivers.com/img/20260818/s_11bbee664f3e4b4e8dab973f8642836a.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;对于9999元起的定价，荣耀CEO李健此前表示，荣耀做这款产品有两个初心，一个是创新和探索，另一个是用户口碑和心智，希望让更多用户真正用到、体验到这款产品，而不是把价格定得过高。&lt;/p&gt;
-&lt;p&gt;他坦言，&lt;strong&gt;这个价格内部也经过了非常激烈的讨论，“如果只考虑成本和投入，根本做不到这个价格”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;配置方面，荣耀Robot Phone正面配备6.3英寸LTPO直屏，分辨率为2640x1216，搭载高通骁龙8 Elite Gen5处理器，内置7060mAh电池，支持120W有线快充。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/b2caf773ba2744cd94a0f93e49ea3095.png" target="_blank"&gt;&lt;img alt="9999元起供不应求！荣耀Robot Phone首销全版本闪电售罄" h="618" src="//img1.mydrivers.com/img/20260818/s_b2caf773ba2744cd94a0f93e49ea3095.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这款手机最大的亮点，&lt;strong&gt;是首创钛合金灵巧云台，首次在手机上带来机器人级机械自由度。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;其云台采用航空级钛合金架构，相比行业主流云台体积缩减65%；同时首发钛合金云台电机，最大转速可达360°/秒，可实现快速弹出、旋转追踪等动作。&lt;/p&gt;
-&lt;p&gt;影像方面，荣耀Robot Phone还首发自研影像芯片荣耀驭光H1，并提供大师电影拍摄模式，首次将阿莱Log-C编码和LUT调色文件引入移动端，进一步强化专业视频创作能力。&lt;/p&gt;
-&lt;p&gt;系统上，荣耀Robot Phone以Agentic OS为内核，采用系统级Agent架构，并首发YOYO Pro模式，支持复杂长指令以及百轮以上自动执行。&lt;/p&gt;
-&lt;p&gt;此外，&lt;span&gt;&lt;strong&gt;新机还具备情感表达能力，可主动识别用户情绪状态、使用习惯以及当前环境，并可通过Skill商店调用多种技能，进一步扩展机器人手机的交互能力。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/4c50f735423f4f94b978713e84ce2a16.png" target="_blank"&gt;&lt;img alt="9999元起供不应求！荣耀Robot Phone首销全版本闪电售罄" h="588" src="//img1.mydrivers.com/img/20260818/s_4c50f735423f4f94b978713e84ce2a16.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/056eaa1759644f3daf975ea648f857a0.png" target="_blank"&gt;&lt;img alt="9999元起供不应求！荣耀Robot Phone首销全版本闪电售罄" h="685" src="//img1.mydrivers.com/img/20260818/s_056eaa1759644f3daf975ea648f857a0.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>news.mydrivers.com</author><pubDate>Tue, 18 Aug 2026 02:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE4tVzJWVGNvSG9DRGpRcDlhSk1jMlBZWnIwQU5xYVAydWVYRGlOU2pfdElvSHVtbEJmeXJZOERhZ0t3elE2NzROU1VacGlTSFlRWlVqSkhfUGs</guid></item><item><title>入门级最惨！显卡疯狂涨价背后：涨幅远超成本 厂商借势抬利润 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144458.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;入门级最惨！显卡疯狂涨价背后：涨幅远超成本 厂商借势抬利润&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-18 10:36:15  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144458-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，&lt;strong&gt;旗下拥有索泰、映众、万丽、蓝宝石等品牌的全球第二大显卡制造商栢能集团公开在财报中预警，下半年显卡成本将继续上涨，入门级产品面临更严重的短缺和涨价。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;佰能在财报中表示，上半年AIB显卡出货量较去年下半年大幅下滑，下半年供应可能进一步收紧，入门级显卡将首当其冲，短缺程度比中高端更严重，从而进一步推高平均售价。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/948625c81c9f420590acecc6058b367a.jpg" target="_blank"&gt;&lt;img alt="入门级最惨！显卡疯狂涨价背后：涨幅远超成本 厂商借势抬利润" h="400" src="//img1.mydrivers.com/img/20260818/s_948625c81c9f420590acecc6058b367a.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;但追踪显卡行业25年的分析师Jon Peddie直言，显卡厂商正利用媒体对显存涨价的大规模报道，把显卡价格涨幅抬得比显存成本的实际涨幅更高。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Peddie给出的对比数据显示，2026年第一季度全球AIB销量从去年同期的925万块增至1182万块，增长28%。但同期销售额从61.8亿美元飙升至108.5亿美元，增幅高达76%。&lt;/p&gt;
-&lt;p&gt;销售额增速是销量增速的近三倍，说明涨价幅度远超显存成本传导的合理范围，Peddie认为，AIB供应商正在借这波显存涨价的舆论东风暗中抬高利润。&lt;/p&gt;
-&lt;p&gt;Peddie认为，戴尔、惠普等大客户对显存真实成本了如指掌，议价能力强，ODM厂商很难在这端虚高报价。&lt;strong&gt;真正有操作空间的，是直接面向消费者的零售AIB市场，信息不对称让厂商有充分余地把涨幅转嫁甚至加码。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2026年至今高端卡因搭载大容量显存，涨幅本就最大，如今入门级也开始追赶，对消费者而言，显存涨价是事实，但厂商借势多收的部分，才是真正无法用成本解释的溢价。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="入门级最惨！显卡疯狂涨价背后：涨幅远超成本 厂商借势抬利润" h="400" src="//img1.mydrivers.com/img/20260818/139099ed-debd-4233-a88e-f339af648482.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 02:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE91SUlXSUhyLW1nSF9aZ3hYT25rbU5xRnhCRUNJb2psSk04cFdLaWtoZmJhZlhOeWhGR1ctVXpWeEUzMEc2MlY2YXhiNHk4RVNfTkFULVR6YkM</guid></item><item><title>上半年亏损超6亿，芯原股份亟待百亿AI订单扭转局面 - 新浪财经</title><link>https://finance.sina.com.cn/jjxw/2026-08-18/doc-inintatv7365988.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;blockquote&gt;
-&lt;p cms-style="font-L"&gt;界面新闻记者 | 宋佳楠&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p cms-style="font-L"&gt;　　8月17日晚间，国内半导体IP龙头芯原微电子（上海）股份有限公司（下称“&lt;span id="stock_sh688521"&gt;&lt;a href="https://finance.sina.com.cn/realstock/company/sh688521/nc.shtml" class="keyword" target="_blank" data-sudaclick="content_marketkeywords_p"&gt;芯原股份&lt;/a&gt;&lt;/span&gt;&lt;span id="quote_sh688521"&gt;&lt;/span&gt;”）披露2026年半年度报告。报告期内，公司实现营收18.64亿元，较2025年同期的9.74亿元同比大增91.37%；归属于上市公司股东的净利润亏损6.12亿元，亏损同比扩大91%，扣非归母净利润同步亏损6.22亿元。&lt;/p&gt;
-
-&lt;p cms-style="font-L align-Center"&gt;　　2026年上半年芯原股份核心业绩数据&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　财报发布后，截至8月18日发稿，芯原股份报216元，跌4.55%，总市值1136亿元。对照年内高点375.67元，年内股价最大回撤超42%，近三个月较高点286.27元累计下跌约25%。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　从财报来看，亏损扩大主要是行业特性与战略投入双重叠加的结果。一方面，芯片定制行业存在投入与收入的时间错配，设计项目周期通常为9至12个月，量产交付周期长达6至18个月，当期研发、人力成本全额列支，订单收入只能分批次缓慢确认，大额AI订单的收益尚未体现在当期报表中。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　另一方面，该公司上半年研发投入合计9.41亿元，占营业收入比例高达50.49%。其研发团队达到1883人，硕士以上员工占比超87%，主要加码NPU、Chiplet、车规IP、端侧AI平台研发。&lt;/p&gt;
-&lt;div class="img_wrapper"&gt;&lt;img id="1" src="//n.sinaimg.cn/spider20260818/2/w1206h396/20260818/b5f6-adf0a6c9ece54c5b5cf25067feae030c.png" alt="上半年公司研发投入情况   图片来源：芯原股份财报"&gt;&lt;span class="img_descr"&gt;上半年公司研发投入情况   图片来源：芯原股份财报&lt;/span&gt;&lt;/div&gt;
-&lt;p cms-style="font-L"&gt;　　此外，股份支付、收购逐点半导体带来的无形资产摊销进一步抬升当期费用，扣除股份支付后亏损可收窄至4.79亿元，剔除并购相关费用后经调整EBITDA亏损2.22亿元。今年1月，芯原股份曾通过控股平台天遂芯愿全资持有逐点半导体，以强化端侧AI眼镜、手机显示相关定制能力。&lt;/p&gt;
-
-&lt;p cms-style="font-L"&gt;　　就各项具体业务而言，量产服务是拉动芯原股份营收的核心引擎，当期收入11.63亿元，同比暴涨185.29%；设计服务收入3.50亿元，同比增长50.73%；IP授权使用费2.93亿元，同比增4.32%，IP特许权使用费0.56亿元，同比增长10.85%。&lt;/p&gt;
-
-&lt;p cms-style="font-L"&gt;　　下游应用端，数据处理领域成为增长绝对主线，上半年该板块营收7.32亿元，同比暴涨292.17%，占总营收近四成，对应云厂商AIGC芯片定制需求爆发。物联网、消费电子业务分别实现4.43亿元、3.50亿元收入，汽车电子、工业领域稳步扩容。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　上半年该公司综合毛利率为31.34%，同比下滑11.98个百分点，根源在于收入结构重构，低毛利、重交付的量产服务营收占比大幅抬升，高毛利IP授权业务占比收缩。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　值得注意的是，截至6月末，该公司在手订单124.49亿元，较一季度末提升142.52%，量产订单超百亿，83%的订单来自AI数据处理赛道。2026年1月至8月17日，芯原股份新增签订单151.42亿元，达到2025年全年新签订单的254%，其中90%为AI算力相关订单。海量储备订单将在未来1至2年持续转化为营业收入。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　芯原股份于2001年创立，是国内为数不多跻身全球前列的半导体IP与全栈芯片定制服务商，主打SiPaaS芯片设计平台即服务模式，与全球云厂商、车企、消费电子巨头均有合作。公司2020年登陆上交所科创板，被称为“国内半导体IP第一股”。今年4月，芯原股份又向港交所递交H股上市申请，推进A+H双资本平台布局。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　该公司创始人、董事长兼总裁为戴伟民，他是美国加州大学伯克利分校博士，早年在美国高校、半导体企业任职，是国内半导体IP行业代表性人物。芯原股份本身没有控股股东，股权较为分散，主要股东包含国家集成电路产业投资基金、各类产业资本、员工持股平台等。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　公司两大核心业务板块分别是半导体IP授权服务和一站式芯片定制服务。其中，芯片定制又细分为设计服务、量产服务两大类。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　IP业务端，芯原股份自主掌握GPU、NPU、VPU、DSP、ISP、Display六大处理器IP，储备1700余款数模、射频、接口IP，客户可以付费获取IP授权、特许权使用费。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　芯片定制业务主要承接芯片从规格定义、前端后端设计、软件开发，直至晶圆代工、封测的全流程交付。设计服务侧重芯片研发阶段；量产服务承接流片之后的规模化供货管理，该业务营收弹性大，但毛利率偏低，是近年拉动营收的主力板块。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　根据灼识咨询的最新报告，截至2025年底，芯原股份拥有全球最多的半导体IP类别，IP总收入位列中国大陆第一、全球第八，IP授权收入排名全球第六，且在主要专注于数字IP的供应商中排名全球第二。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　对于盈利拐点，芯原股份在财报中表示，伴随量产订单持续转化、研发费用营收占比持续下行，预计2026下半年经调整EBITDA实现转正，2027年全年经调整后归母净利润扭亏为盈。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　公司判断，随着收入规模持续扩张，量产业务规模化优势将持续释放，研发投入增速会低于营收增速，费用率逐年下行，规模效应会逐步消化当期亏损压力。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　但风险依然存在，包括半导体行业周期波动、海外技术授权限制、大额应收账款回款压力、高端人才流失等潜在隐患，行业竞争加剧、下游AI需求不及预期也会延缓盈利兑现节奏。&lt;/p&gt;
-&lt;p cms-style="font-L"&gt;　　整体来看，芯原股份这份半年报是国内AI芯片设计服务业的缩影——AIGC浪潮带来海量定制需求，短期利润承压是赛道扩张必经阶段，但研发高企、收入确认滞后、行业周期等多重变量，仍会拉长盈利修复周期。市场需要持续跟踪订单转化速度与费用率变化，验证公司扭亏目标能否如期落地。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：宋雅芳 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Tue, 18 Aug 2026 02:33:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTE5WYWU0Wlp1SDdiQjRuNkdFTUF1Y1g2MkFSWEhINl9yWlFZWnRFNkNEYU0wT053OEllb1BaMzBaV21jY3NOb0VmZkYzV0ZjZml0bDVLV3RKX2YzSU9fR1EzZDkyeThsVUNhcmRueS1GNURHcERyazJCRg</guid></item><item><title>欧央行研究：即便AI达到预期，美国科技股也可能回调，威胁欧元区 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779647</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 02:27:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE41ZFEtUXlGZGJmWWx4akRPOF95SWZEcU1lNW5xYjRaUXhneTdUeEFSSmFOdmUxVEhZSVVtb0U1VnF4ZzM2NTNKNUJZNDg4UDZaUzFV</guid></item><item><title>6400元起！联想V15 Gen 6 AMN开售：锐龙5 40+数字小键盘 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144453.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，&lt;strong&gt;联想近日在欧洲市场悄然发布了新款15英寸笔记本V15 Gen 6 AMN，&lt;/strong&gt;该机型已在奥地利和德国率先开售，其他市场显示即将上市。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;V15 Gen 6 AMN笔记本搭载AMD锐龙5 40处理器，它采用较老的Zen 2架构和6nm工艺，拥有4核8线程，最高加速频率4.3GHz。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/6a481bc2-1516-4c66-a29b-e8ab71f394ce.png" target="_blank"&gt;&lt;img alt="6400元起！联想V15 Gen 6 AMN开售：锐龙5 40+数字小键盘" h="333" src="//img1.mydrivers.com/img/20260818/S6a481bc2-1516-4c66-a29b-e8ab71f394ce.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该处理器属于AMD Mendocino家族，集成Radeon 610M核显（基于RDNA 2架构，2个计算单元），仅能在720p低画质下运行老款游戏。&lt;/p&gt;
-&lt;p&gt;V15 Gen 6 AMN笔记本配备16GB LPDDR5-5500内存和256GB PCIe 4.0固态硬盘。&lt;/p&gt;
-&lt;p&gt;该机配备47Wh电池，在JEITA-BAT 3.0测试标准下（200尼特亮度）可提供超过18.5小时的续航时间。这一表现在同价位15英寸笔记本中相当突出，足以支撑全天候移动办公需求。&lt;/p&gt;
-&lt;p&gt;V15 Gen 6 AMN配备一块15.6英寸1080p IPS屏幕，采用16:9显示比例，300尼特亮度，60Hz刷新率，色域覆盖45% NTSC。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/fc77dd61-a209-4b78-8cfb-c9754a58388e.png" target="_blank"&gt;&lt;img alt="6400元起！联想V15 Gen 6 AMN开售：锐龙5 40+数字小键盘" h="460" src="//img1.mydrivers.com/img/20260818/Sfc77dd61-a209-4b78-8cfb-c9754a58388e.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;该机配备2个USB-C（5Gbps，均支持45-65W PD供电与DP 1.2视频输出）、2个USB-A（其中1个为Hi-Speed USB）、1个HDMI、1个RJ45有线网口、1个3.5mm音频接口以及1个Kensington Nano安全锁孔。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;值得一提的是，该机型保留了独立数字小键盘，&lt;/strong&gt;对于财务、数据录入等需要频繁输入数字的用户来说相当实用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;该机在欧洲的起售价是819欧元（约合人民币6400元）。&lt;/strong&gt;目前联想尚未公布V15 Gen 6 AMN在中国大陆市场的发售计划。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/8c15fd82-9db4-4986-a0e0-b9e364e46a81.jpg" target="_blank"&gt;&lt;img alt="6400元起！联想V15 Gen 6 AMN开售：锐龙5 40+数字小键盘" h="450" src="//img1.mydrivers.com/img/20260818/S8c15fd82-9db4-4986-a0e0-b9e364e46a81.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 02:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBvcXg0Q3RZdTBnUVNnUW5kX25MZVpvallNcGVVNktrZExRMmt4QlY3b3VJQmlOUVdNZkRrak5NM1hULU9rY1ZaS1h2ZTNGQjhtZUJENnJLeC0</guid></item><item><title>AI垃圾满天飞，科技公司开展人工智能废物大扫除 - 纽约时报中文网</title><link>https://cn.nytimes.com/technology/20260818/ai-slop/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-body-item col-lg-5"&gt;&lt;p class="article-paragraph"&gt;一些通讯作者抱怨说，该工具将人类撰写的帖子误判为AI生成，没有考虑到AI在创作过程中的潜在作用，并给作者带来了不必要的压力，要求他们根据一个不透明的标准来证明自己的清白。&lt;/p&gt;&lt;div class="article-paragraph"&gt;&lt;span&gt;今年春天，卡米尔·弗朗索瓦和二十多位AI专家在加利福尼亚州门洛帕克的一次“&lt;a rel="noopener noreferrer" target="_blank" href="https://igp.sipa.columbia.edu/news/ai-slop-and-information-ecosystem-insights-crosssector-convening" title="Link: https://igp.sipa.columbia.edu/news/ai-slop-and-information-ecosystem-insights-crosssector-convening"&gt;垃圾沙龙&lt;/a&gt;”活动中会面，讨论了分类&lt;/span&gt;&lt;p&gt;并藉此管理AI垃圾内容的困难。&lt;/p&gt;&lt;/div&gt;&lt;p class="article-paragraph"&gt;“这种策略大杂烩表明，我们面临的是信息环境中的一个系统性问题，而不仅仅是一类可以简单定义和移除的名为垃圾内容的坏内容，”在哥伦比亚大学研究有害数字技术的弗朗索瓦接受采访时说，“AI归根结底是一种创造工具，而且具有多面性，那些处理不当的平台将会看到用户流失并转向其他地方。”&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>纽约时报中文网</author><pubDate>Tue, 18 Aug 2026 02:22:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE1SQmZlTkdncEZvekstUkxpbmVDVWRJUGJiSFNaU04xblA3Sm94YW1mQmdmaVJNMkRtV2tyZXRYWDJ5TkQ4LU9acHM0MUxYZ2xyVEZjQnBMUkdOMmF1N0JxVQ</guid></item><item><title>阿里AI音乐模型快乐虾米 凭文字提示生成制作完整歌曲 - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260818-9534824</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;阿里巴巴集团推出人工智能（AI）音乐生成模型快乐虾米（HappyShrimp 1.0）测试版，可根据一条文字提示生成制作一首完整的歌曲。此举进一步扩大这家中国科技巨头在生成式AI领域的布局。&lt;/p&gt;&lt;p&gt;综合彭博社和新京报报道，阿里巴巴星期一（8月17日）在声明中说，快乐虾米可以根据描述情绪、故事或音乐类型的提示，生成旋律、编曲、歌词和人声。用户无需具备专业音乐知识，也可以生成完整的人声歌曲或纯音乐作品，还可以提供自己的歌词，由AI生成歌曲。&lt;/p&gt;&lt;p&gt;声明指出，快乐虾米不仅能听懂“Lo-fi R&amp;amp;B”等专业表达，也能理解情绪、场景与叙事，听懂生活语言。面对人声性别、唱法、调性、BPM、配器组合与情绪推进等多维复杂指令，快乐虾米不会简单照搬，而是能够结合整体创作意图进行推理，并将合适的元素自然融合到作品中，在保持音乐整体性与协调性的同时，准确呈现核心创作诉求。&lt;/p&gt;&lt;p&gt;在上线首日，快乐虾米宣布，将与中国太合音乐集团在艺人共创和内容开发方面展开合作，共同拓展AI音乐创作与产业发展。&lt;/p&gt;&lt;p&gt;在快乐虾米之前，阿里巴巴集团已在今年4月推出原生多模态AI视频大模型快乐小马（HappyHorse），基于150亿参数单流Transformer架构，支持文生视频、图生视频、视频编辑及多画幅适配，实现音画同步生成，精准匹配中英日韩等七语种唇形，广泛应用于电商、广告、知识付费与短剧创作。&lt;/p&gt;
-    
-  &lt;p&gt;阿里巴巴首席执行官吴泳铭正推动更广泛的企业重组。公司目标是在五年内将云计算和AI业务年收入扩大至1000亿美元（1277亿新元）。&lt;/p&gt;&lt;p&gt;阿里巴巴本月初发布最新AI大模型Qwen3.8-Max，并在多项基准测试中取得与美国&lt;a href="https://www.zaobao.com.sg/news/world/story20260731-9449440?ref=article-inline" target="_blank"&gt;&lt;u&gt;Anthropic&lt;/u&gt;&lt;/a&gt;尖端模型Fable 5相当的分数，成为中国在AI领域挑战美国竞争对手的最新突破。 &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Tue, 18 Aug 2026 02:20:05 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE1oZldXS3VCU2h0cDFCb3NTc2RzWDhack9PUk9JeVNWNEF5NXRJWnMwODh1dWxZMmVhbFNKdnNxUmI5VGJTeERQRkY0TmdfMUdRODVmMnR6SkRHUFR0YnR6dWxfTURYWWhoZ0E</guid></item><item><title>中国AI基础设施的价值洼地：占全球85%的算力流量，仅10%的市场收入 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779659</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 02:18:48 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9LUm05bkNtWmg5bHVZTFplaTZwRDlOcTh3Tmt0SmMxWW1XZDhnTUl3SUtLanpzQ3lLOU9VaDFHdVdDUzlaZWdtM1FFdVRiSldkUWdn</guid></item><item><title>欧皇附体！网友捡到RTX2080 SUPER 上机直接能用 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144452.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;欧皇附体！网友捡到RTX2080 SUPER 上机直接能用&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-18 10:18:02  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144452-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，据TweakTown报道，&lt;strong&gt;Reddit用户Total_Pirate7125近日发帖称，自己在当地“垃圾场”（local dump）捡到一块仍能正常运行的英伟达RTX 2080 SUPER显卡，意外实现了一次“免费硬件升级”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;虽然该用户并未明确说明“local dump”的具体所指——可能是垃圾填埋场、废品回收站或类似场所——但可以确认的是，这块显卡目前工作状态完好，这本身就足够令人意外。&lt;/p&gt;
-&lt;p&gt;据该用户分享，&lt;strong&gt;这块RTX 2080 SUPER的待机温度约为35℃。在重新上机使用前，他还特意拆开显卡，更换了导热硅脂与导热垫，以确保硬件性能得到充分释放。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;目前，这块显卡被搭配英特尔酷睿i7-4770K处理器使用——后者发布于2013年，基于Haswell架构。&lt;/p&gt;
-&lt;p&gt;有评论指出，这一组合在运行部分较新的CPU密集型游戏时，可能会因处理器性能不足而产生瓶颈，因此也有人在帖下建议Total_Pirate7125可以考虑同步升级CPU平台。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/a28852d1016049c2a78f3d43d8724b86.png" target="_blank"&gt;&lt;img alt="欧皇附体！网友捡到RTX2080 SUPER 上机直接能用" h="400" src="//img1.mydrivers.com/img/20260818/s_a28852d1016049c2a78f3d43d8724b86.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 02:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1QYWdOb0xuU0FzUmJUdEdJS0gwZ0lINjQxdlp4cHQydkZfQmltaG50WWFBRmd4NGZCdGNjcmJyREZJVW9LX3ZkOEZaS0o3eERpVklPVkdmdFE</guid></item><item><title>AMD反超英伟达！RX 9070 XT登顶7月显卡销量榜：大显存占比超7成 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144451.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，&lt;span&gt;&lt;strong&gt;德国零售商Mindfactory发布的7月显卡销售数据显示，其渠道内16GB显存显卡销量占比已高达72.58%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;具体数据方面，&lt;strong&gt;AMD Radeon RX 9070 XT单月出货量达到725块，以33.41%的市场占有率稳居第一，&lt;/strong&gt;紧随其后的是RX 9060 XT，销量为400块，市场占有率18.43%。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/f6fee9a3-74b7-4665-b3c4-121a54f0bf62.jpg" target="_blank"&gt;&lt;img alt="AMD反超英伟达！RX 9070 XT登顶7月显卡销量榜：大显存占比超7成" h="574" src="//img1.mydrivers.com/img/20260818/Sf6fee9a3-74b7-4665-b3c4-121a54f0bf62.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;相比之下，英伟达阵营表现最好的是RTX 5070，单月出货量210块，市场占有率9.68%。RTX 5070 Ti单月销量200块，市场占有率9.22%。&lt;/p&gt;
-&lt;p&gt;而RTX 5060 Ti 16GB版本即便在部分渠道售价冲破800美元（约合人民币5688元），依然进入了销量榜单前列，&lt;strong&gt;单月销量185块，市场占有率8.53%，排在榜单第五位。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从品牌来看，七月显卡销售总量2180块，其中AMD七月显卡出货总量1165块，稳居第一，其中仅RX 9070 XT便独占榜单三成销量。英伟达七月显卡出货总量945块，位于第二，英特尔七月显卡出货总量70块，排在第三。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/8577c445-e1c4-4e15-80b7-7beec7287c4d.jpg" target="_blank"&gt;&lt;img alt="AMD反超英伟达！RX 9070 XT登顶7月显卡销量榜：大显存占比超7成" h="319" src="//img1.mydrivers.com/img/20260818/S8577c445-e1c4-4e15-80b7-7beec7287c4d.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;单看显存容量，&lt;strong&gt;16GB显存规格的产品目前已拿下了Mindfactory约72.58%的销售份额，&lt;/strong&gt;而那些仅配备8GB显存的入门级显卡，如RTX 5050系列，单月出货量仅维持在20至25块左右。&lt;/p&gt;
-&lt;p&gt;简单来说，虽然近期RTX 50系列和RX 9000系列显卡的零售价经历了20%至40%的剧烈跳涨，显存供应短缺导致的价格危机正席卷全球硬件市场，&lt;/p&gt;
-&lt;p&gt;&lt;img alt="AMD反超英伟达！RX 9070 XT登顶7月显卡销量榜：大显存占比超7成" h="333" src="//img1.mydrivers.com/img/20260818/5380b0f8-7073-4ad7-85b9-1aade341aad2.jpg" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;但大部分玩家宁愿忍受高溢价，也不愿在显存容量上妥协，以求在未来的高性能游戏中获得更好的保值性。&lt;/p&gt;
-&lt;p&gt;另外索泰、映众等品牌背后的显卡制造巨头柏能集团近期也发出预警，称显卡供应可能在未来数月进一步恶化，入门级显卡将面临尤为严重的断供风险，如此一来更加剧了玩家们买高不买低的选购思路。&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 02:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBneGFSN29lN2JYa3dQMmdmMllEcHJqNzZ1VzNxV0xIcXNHX0JndUU5OVZPenZiT28xYkNSc1BiZ2g4YzY3TkltQmhvenNQWXNIMEEzaXVFUGc</guid></item><item><title>A股三大股指早盘齐跌，半导体硅片活跃，频准激光上市首日暴涨超500%，恒科指跌超1%，AI大模型双雄重挫 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779668</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 02:10:10 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFB6SmdXN1ZBTTNqcVQ0Ti1Ja2M5X09GZDlQT05nODhkU0RyUzZSZmZpN3VTMTM0RkptTXRySTlZUTJOZ0gzTFdFSGVUVWl5M3p1ek5Z</guid></item><item><title>173元每GB！RTX 2080 Ti显存翻倍至22GB：AI性能直逼A4000 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144450.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;173元每GB！RTX 2080 Ti显存翻倍至22GB：AI性能直逼A4000&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-18 10:07:13  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1144450-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，&lt;span&gt;&lt;strong&gt;日本埼玉县一家维修店开始提供RTX 2080 Ti显存升级服务，收费45000日元（约1902元人民币），将显存从11GB翻倍至22GB，&lt;/strong&gt;&lt;/span&gt;每GB新增显存成本约173元。&lt;/p&gt;
-&lt;p&gt;店铺还表示，最近刚收到一批200颗三星2GB GDDR6显存芯片，总计400GB，足够为36块RTX 2080 Ti完成升级，收货仅一小时后，第一块改装卡就已经完成。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/945fbff7-9dbf-4757-8df3-7af5f29bf55f.png" target="_blank"&gt;&lt;img alt="173元每GB！RTX 2080 Ti显存翻倍至22GB：AI性能直逼A4000" h="251" src="//img1.mydrivers.com/img/20260818/S945fbff7-9dbf-4757-8df3-7af5f29bf55f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这家店铺还在销售多种改装显卡，最便宜的预改装22GB RTX 2080 Ti是MSI Venus 2X型号，售价65000日元（约2747元人民币）。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/798bfe1d-0c57-4b78-b303-413f37ecc42b.png" target="_blank"&gt;&lt;img alt="173元每GB！RTX 2080 Ti显存翻倍至22GB：AI性能直逼A4000" h="669" src="//img1.mydrivers.com/img/20260818/S798bfe1d-0c57-4b78-b303-413f37ecc42b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;从这个价格来看，直接购买预改装版本更划算，但如果手头已有2080 Ti想提升AI性能，升级方案仍有吸引力。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/d7602afb-8580-420e-860d-a476a2c6a243.jpg" target="_blank"&gt;&lt;img alt="173元每GB！RTX 2080 Ti显存翻倍至22GB：AI性能直逼A4000" h="450" src="//img1.mydrivers.com/img/20260818/Sd7602afb-8580-420e-860d-a476a2c6a243.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;其实RTX 2080 Ti显存翻倍对游戏几乎没有帮助，TU102核心性能有限，即便在开启光追的3A大作中也吃不满22GB显存，GPU本身会先成为瓶颈。&lt;/strong&gt;且升级后显存带宽仍锁定在616GB/s不变，对带宽敏感的任务也不会有明显改善。&lt;/p&gt;
-&lt;p&gt;但AI推理和训练性能却提升不少，更大的显存能容纳更多模型参数，RTX 2080 Ti在AI工作负载中的表现接近RTX A4000，后者显存更少且价格更高。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260818/6d03646b-9a3c-4fb9-88ce-9a2837e7d1df.png" target="_blank"&gt;&lt;img alt="173元每GB！RTX 2080 Ti显存翻倍至22GB：AI性能直逼A4000" h="337" src="//img1.mydrivers.com/img/20260818/S6d03646b-9a3c-4fb9-88ce-9a2837e7d1df.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 02:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBlV1RYbzZrTU95MUNDQmRJejYtZVpFRk85S2htQUxYMW84LWdlQnhmdUZpbnYwM3F2TlFkYWl4SDJjcUE5c2ZidWZXNDhwOTBvTkM3bEM1eGs</guid></item><item><title>苹果AirPods摄像头版功能演示首曝：支持视觉感知 能看懂周围环境 - 驱动之家</title><link>https://news.mydrivers.com/1/1144/1144444.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月18日消息，据MacRumors报道，&lt;strong&gt;在苹果最新发布的macOS Tahoe 26.7 RC版本中，发现了一段带摄像头AirPods的功能演示视频，首次展示了这款新品配合“视觉智能”使用的实际效果。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从演示来看，用户佩戴AirPods后，耳机可以通过摄像头识别眼前的物体和文字。&lt;/p&gt;
-&lt;p&gt;视频中，&lt;span&gt;&lt;strong&gt;一名用户拿起一本书，AirPods识别到书名后，可通过视觉智能读取相关内容，并让Siri将信息保存下来。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;也就是说，AirPods上的摄像头并不是为了单纯拍照，而是用来感知周围环境，相当于给耳机增加了“视觉能力”。&lt;/p&gt;
-&lt;p&gt;摄像头获取到环境信息后，可以交给视觉智能和Siri进一步处理，比如用户看到某个物品、文字时，可以直接询问Siri，也可以让系统记录相关内容。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260818/732b6ae57e81466fb384633fe455c427.png" target="_blank"&gt;&lt;img alt="苹果AirPods摄像头版功能演示首曝：支持视觉感知 能看懂周围环境" h="1056" src="//img1.mydrivers.com/img/20260818/s_732b6ae57e81466fb384633fe455c427.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此外，系统中还加入了针对摄像头遮挡的提醒。&lt;/p&gt;
-&lt;p&gt;当用户头发挡住AirPods时，系统会弹出提示，提醒不要遮挡耳机，以免影响环境识别效果。&lt;/p&gt;
-&lt;p&gt;据了解，这款带摄像头AirPods的内部代号为B790，此前已经多次出现在苹果相关系统代码和爆料中。&lt;/p&gt;
-&lt;p&gt;MacRumors指出，该产品最快有望今年9月亮相，可能与iPhone 18 Pro系列一同发布。&lt;/p&gt;
-&lt;p&gt;从目前曝光的信息来看，苹果给AirPods加入摄像头，主要目的还是进一步增强Apple Intelligence和Siri对现实环境的感知能力，而不是把AirPods做成一款随身拍摄设备。&lt;/p&gt;
-&lt;p&gt;当视觉、语音和AI结合后，&lt;strong&gt;AirPods的定位也将不再只是听音乐、打电话的无线耳机，而有望成为苹果下一代AI穿戴设备的重要入口。&lt;/strong&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：拾柒&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 01:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE0xYmJVS2RaYzY5NmV5RHRNVU80UEpidy1IQmdfNHhYM3oxQ3JuajRSQlZUX3MzcGZ4WTFaTlJ2eVlKOWJvQnRNT3B2clU1UHdBQi1GbkVDZ08</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 18 Aug 2026 03:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1rRXFLZFliWXVBb0RHTzA0TWE0NEIybjhmNUd0MkpJWEkyNzZZNV9heDB2MVRYd3RWZTBXbHZpOUdaWDRISFJqSjBJOVZ2dVFYQW5vWmFlQ2s</guid></item><item><title>AI有多少收入才不是泡沫？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3779656</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Tue, 18 Aug 2026 03:10:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5SUEVWQXZqNTdqN3JNaVFSVVNvZlYtd3pweGFlNkJCWHhxVDR4LWZnQlpYTlFWR01wWGc4NjhYLW5NX3VGWTZIN3lDdnh6UGZxTE5V</guid></item></channel></rss>
