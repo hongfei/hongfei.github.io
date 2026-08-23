@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>周末集体跳水！伊朗最新警告！加密货币，17.92万人爆仓 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3780093</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 23 Aug 2026 11:38:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBjX2NNTWdIWm9ZY0NYUE56SGhXcWtDYi1fOUMwSnRhV2hveGhVcDFEZGZZLXZTZkd1LUZjSXlCNXBEVjdFTnNhZ3QwVkFwWEVJTXVv</guid></item><item><title>同比暴涨3倍！国产金属3D打印设备全球爆单：订单已排到年底 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145752.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Windows 11更新后频繁蓝屏、游戏卡死！微软确认原因：RGB灯惹的祸 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145757.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月23日消息，近日不少用户反馈在更新完Windows 11最新月度更新KB5121003后，&lt;span&gt;&lt;strong&gt;系统会频繁出现不稳定，游戏卡死、崩溃甚至蓝屏的情况，经过调查，微软将问题根源指向了RGB外设软件。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;受影响最严重的是几款在线多人游戏，包括《Arc Raiders》《漫威斗魂》和《The Finals》，这些游戏的崩溃模式高度一致：先是画面卡死无响应，接着弹出EXCEPTION_ACCESS_VIOLATION蓝屏错误，随后电脑自动重启。&lt;/p&gt;
+&lt;p&gt;对此微软发布说明称，问题与带有RGB灯效的外设或内部硬件有关，&lt;strong&gt;控制这些设备灯效的软件会安装名为inpoutx64之类的驱动程序，当用户启动特定游戏时，这个驱动就会触发崩溃。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260823/d613b086-b4a0-4cc2-971f-611dfc306fc8.png" target="_blank"&gt;&lt;img alt="Windows 11更新后频繁蓝屏、游戏卡死！微软确认原因：RGB灯惹的祸" h="172" src="//img1.mydrivers.com/img/20260823/Sd613b086-b4a0-4cc2-971f-611dfc306fc8.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微软没有详细解释底层原因，但大概率与反作弊系统的机制有关。&lt;/p&gt;
+&lt;p&gt;RGB软件本身应该在用户空间运行，但它用来与外设控制器通信的驱动却跑在内核空间，反作弊系统会将这种内核级驱动视为潜在漏洞利用工具，因此会尝试拦截，防止恶意代码注入。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果反作弊系统在启动时拦截了驱动，RGB软件仍试图推送灯光变化或读取温度传感器，就会触发EXCEPTION_ACCESS_VIOLATION错误。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更严重的情况是，反作弊系统在驱动执行Ring 0级汇编指令的过程中将其终止，这会引发内核错误，内核空间通常无法从这类未处理的错误中恢复，Windows只能触发蓝屏保护硬件。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260823/55629032-4701-4055-ab0a-8d49309901cb.png" target="_blank"&gt;&lt;img alt="Windows 11更新后频繁蓝屏、游戏卡死！微软确认原因：RGB灯惹的祸" h="288" src="//img1.mydrivers.com/img/20260823/S55629032-4701-4055-ab0a-8d49309901cb.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微软表示正在研究这些RGB组件与触发崩溃的游戏之间的关系，后续会提供更多信息。目前用户可以用注册表编辑器手动禁用该驱动，&lt;/strong&gt;Arc Raiders和The Finals的开发商Embark Studios也分享了这一修复方法。&lt;/p&gt;
+&lt;p&gt;禁用驱动后部分RGB软件的功能可能会失效，但可以改用SignalRGB或OpenRGB等通用程序控制设备，只要设备在支持列表内即可。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260823/416c783b66d0433bb2b06082b493ba80.jpg" target="_blank"&gt;&lt;img alt="Windows 11更新后频繁蓝屏、游戏卡死！微软确认原因：RGB灯惹的祸" h="337" src="//img1.mydrivers.com/img/20260823/s_416c783b66d0433bb2b06082b493ba80.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Aug 2026 11:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE04aUFJWFhONEdLdXJPNTZKclNBV0xYZFN5V3BrQ1FhT0hVOC13V3ZFaHQ1SG5jOXZxME5rTkZSZzQ0ZkptUnVnTU55aFJ0NFhkMjZpQXA5VlE</guid></item><item><title>周末集体跳水！伊朗最新警告！加密货币，17.92万人爆仓 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3780093</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 23 Aug 2026 11:38:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBjX2NNTWdIWm9ZY0NYUE56SGhXcWtDYi1fOUMwSnRhV2hveGhVcDFEZGZZLXZTZkd1LUZjSXlCNXBEVjdFTnNhZ3QwVkFwWEVJTXVv</guid></item><item><title>同比暴涨3倍！国产金属3D打印设备全球爆单：订单已排到年底 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145752.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月23日消息，&lt;span&gt;&lt;strong&gt;据报道，国产工业级金属3D打印设备正迎来产销爆发期，部分企业订单量同比暴涨3倍，且订单也已排至今年年底。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;工业级金属3D打印设备属于精密大型装备，依靠激光熔融金属粉末逐层成型零部件，无需模具，广泛服务航空航天、医疗、汽车等高端制造领域。&lt;/p&gt;
@@ -20,7 +42,71 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Aug 2026 10:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5BYVV1aWRBUVRwMDE2OU5RTXM2VkxnQmo4Q1d4Z0JlTXpSNHBTekVwMFhTY2dOUmRPeXhCVlhhSXh1VXhDem51emI1d1owR0JsOUVmcDFNemc</guid></item><item><title>中国机器人百米跑仅用时9秒39，超越博尔特世界纪录 - RFI</title><link>https://www.rfi.fr/cn/%E6%94%BF%E6%B2%BB/20260823-%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E7%B1%B3%E8%B7%91%E4%BB%85%E7%94%A8%E6%97%B69%E7%A7%9239%EF%BC%8C%E8%B6%85%E8%B6%8A%E5%8D%9A%E5%B0%94%E7%89%B9%E4%B8%96%E7%95%8C%E7%BA%AA%E5%BD%95</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 23 Aug 2026 09:28:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi6wJBVV95cUxOX0dxVldfc3NFLWN1VXZON18xcUxKbVozYnpPVW1KMUhZb00xSmdKaUZSZzhmbFAtWlhQNXZoZkhXcXQ5d2NkZXdEWUcyakE4NjFsMEZ3eFM3R1M3Q0F6cmp1TWtPRVVsbGN1R2tKMU1sNXJvRnRXQ1BuVVRwVXhTU0lRNUg0SGlGVFpmd0VQaE1qQXBsQVRtRGoxSGw2TWU0LTVORzJyQTJaSC14ZFdnQlFvYlZMMlVJR2hMMHpNUjFiVV9JdUxpLUJDYkVxY19USFBSNzVtMW5lR3VsRHF0M2RKa0M5cjJBWjViQ3FHS1B0X2lEUUlsZGlJaE5FNEtucFpyVzAwXzZkRWlvMG81c09YTFZKQURZb0s5U3NFelh6T1lkc01ZWFFWclBHc1laWV80S3h4SWRQSTUtTGhIaXA5RjNDZElKaExtR2g5SXBad2JFNFAwUnY2Qk01VXJBZjZxSTVIMW5pSFk</guid></item><item><title>免费、强大！神秘模型“牛来”引发网络热议，猜测是智谱还是另有其人？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3780081</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 23 Aug 2026 08:40:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9DLVI4d0xwZDZTQTBIakJfYmRHQ0tUT2tQQ2NUQ1pmcU9yR1d1Q1RqQWlzclQ0ZGFEMGZTWUczYU52NGpSdHpUVzdpLXpJRXNXTXhN</guid></item><item><title>壹号掌机X2 Mini Pro国行17599元起：锐龙AI Max+ 388、8.8寸OLED屏 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145734.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Aug 2026 10:57:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5BYVV1aWRBUVRwMDE2OU5RTXM2VkxnQmo4Q1d4Z0JlTXpSNHBTekVwMFhTY2dOUmRPeXhCVlhhSXh1VXhDem51emI1d1owR0JsOUVmcDFNemc</guid></item><item><title>中国机器人百米跑仅用时9秒39，超越博尔特世界纪录 - RFI</title><link>https://www.rfi.fr/cn/%E6%94%BF%E6%B2%BB/20260823-%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E7%B1%B3%E8%B7%91%E4%BB%85%E7%94%A8%E6%97%B69%E7%A7%9239%EF%BC%8C%E8%B6%85%E8%B6%8A%E5%8D%9A%E5%B0%94%E7%89%B9%E4%B8%96%E7%95%8C%E7%BA%AA%E5%BD%95</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Sun, 23 Aug 2026 09:28:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi6wJBVV95cUxOX0dxVldfc3NFLWN1VXZON18xcUxKbVozYnpPVW1KMUhZb00xSmdKaUZSZzhmbFAtWlhQNXZoZkhXcXQ5d2NkZXdEWUcyakE4NjFsMEZ3eFM3R1M3Q0F6cmp1TWtPRVVsbGN1R2tKMU1sNXJvRnRXQ1BuVVRwVXhTU0lRNUg0SGlGVFpmd0VQaE1qQXBsQVRtRGoxSGw2TWU0LTVORzJyQTJaSC14ZFdnQlFvYlZMMlVJR2hMMHpNUjFiVV9JdUxpLUJDYkVxY19USFBSNzVtMW5lR3VsRHF0M2RKa0M5cjJBWjViQ3FHS1B0X2lEUUlsZGlJaE5FNEtucFpyVzAwXzZkRWlvMG81c09YTFZKQURZb0s5U3NFelh6T1lkc01ZWFFWclBHc1laWV80S3h4SWRQSTUtTGhIaXA5RjNDZElKaExtR2g5SXBad2JFNFAwUnY2Qk01VXJBZjZxSTVIMW5pSFk</guid></item><item><title>7799元！微星暗黑骑士MAG新增配置：酷睿7 230H搭配RTX5060 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145739.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;7799元！微星暗黑骑士MAG新增配置：酷睿7 230H搭配RTX5060&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-23 16:46:14  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1145739-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月23日消息，&lt;strong&gt;微星近日为暗黑骑士MAG电脑主机新增配置版本，搭载英特尔酷睿7 230H处理器与英伟达GeForce RTX 5060显卡，首发到手价&lt;span&gt;7799&lt;/span&gt;元。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;外观方面，主机采用精锻磨砂面板搭配亮面装饰，内部则为高效风道结构，机箱材质选用SECC 0.6mm镀锌钢，具备优良的抗锈蚀能力。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260823/4f8308a560774d8caaf0338817c44787.png" target="_blank"&gt;&lt;img alt="7799元！微星暗黑骑士MAG新增配置：酷睿7 230H搭配RTX5060" h="458" src="//img1.mydrivers.com/img/20260823/s_4f8308a560774d8caaf0338817c44787.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同时引入卡扣式可拆卸防尘网设计，并对水冷与风冷散热方案进行针对性优化，能够满足不同配置的散热与性能需求。&lt;/p&gt;
+&lt;p&gt;核心硬件上，&lt;strong&gt;酷睿7 230H基于Raptor Lake芯片，采用6P+4E混合架构，共计10核心16线程，拥有24MB L3缓存，最高睿频达5.2GHz。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260823/d9d084db566f440e8e994e6ba24fe3d3.png" target="_blank"&gt;&lt;img alt="7799元！微星暗黑骑士MAG新增配置：酷睿7 230H搭配RTX5060" h="422" src="//img1.mydrivers.com/img/20260823/s_d9d084db566f440e8e994e6ba24fe3d3.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;搭配GeForce RTX 5060显卡（8GB显存）、16GB DDR4内存以及512GB NVMe M.2固态硬盘。电源部分为650W 80PLUS金牌认证产品，确保稳定供电。&lt;/p&gt;
+&lt;p&gt;此外，&lt;strong&gt;该主机支持Wi-Fi 6和蓝牙5.2，散热系统选用四热管塔式CPU散热器，并标配双ARGB机箱风扇，兼顾静音与灯效表现。整体配置均衡，适合主流游戏及日常创作使用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260823/0fa2624a225e45b0b8caacf39cd83c42.png" target="_blank"&gt;&lt;img alt="7799元！微星暗黑骑士MAG新增配置：酷睿7 230H搭配RTX5060" h="465" src="//img1.mydrivers.com/img/20260823/s_0fa2624a225e45b0b8caacf39cd83c42.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Aug 2026 08:46:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ld2UxblpMSVVSWFdOZzdjLUduV1pYNmhGRTI2MEZwLUlmQjRsd3FGQTl2dXoyeWpyREEyRkROUEt4Z003Y2FzckJQZktWVl9hblhPRnd6UkE</guid></item><item><title>免费、强大！神秘模型“牛来”引发网络热议，猜测是智谱还是另有其人？ - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3780081</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 23 Aug 2026 08:40:11 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9DLVI4d0xwZDZTQTBIakJfYmRHQ0tUT2tQQ2NUQ1pmcU9yR1d1Q1RqQWlzclQ0ZGFEMGZTWUczYU52NGpSdHpUVzdpLXpJRXNXTXhN</guid></item><item><title>壹号掌机X2 Mini Pro国行17599元起：锐龙AI Max+ 388、8.8寸OLED屏 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145734.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;壹号掌机X2 Mini Pro国行17599元起：锐龙AI Max+ 388、8.8寸OLED屏&lt;/p&gt;
           
@@ -252,7 +338,70 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Aug 2026 05:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9iWS05TWZoaXJPNzh2dmctNGpUMWdxUEZ6NkVkeE5mMGtRYWNVWEZvY1Y3QjB2R2hoSTg1QTF1Q1IyS0h1SlhwaWRWT0VWbGJuU1BEV0hfdFA</guid></item><item><title>马斯克转发中国机器人9秒32破纪录 - 凤凰网</title><link>https://news.ifeng.com/c/8vp5ULi1PsS</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;8月23日，北京。机器人运动会如火如荼，特斯拉CEO马斯克转发荣耀机器人“闪电”百米视频，博主配文写道：“中国智能手机制造商荣耀公司研发的人形机器人‘Lightning’以9.32秒跑完100米。Usain Bolt的纪录是9.58秒。”博文称，令人印象深刻的是“闪电”冲线后全速撞上安全墙，腰部既没散架，也没火花四溅。从破人类纪录到让全球科技大佬点赞，中国智造用实力说话。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/65493A8BD03F991595B814EB9BB7A9BACDA3A41A_size629_w1198_h1694.jpg"&gt;&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/EFF19BC23BC50EA3AB6BC2292B322111F8D5E574_size206_w1206_h2622.jpg"&gt;&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/F9C020E547635F03AC7F212CC97319ABC819F157_size1449_w1887_h2778.jpg"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sun, 23 Aug 2026 05:09:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE43UkRHREk5R0swb21SdEVQNnJRa0I5b3hmT0JHNV9pOFRvZ3JHTW55QTV3czJuUEt3M3ctLVpxdjhrdFdYSTZwMlZicjM</guid></item><item><title>吴恩达：构建和部署AI应用必须啃下这六块硬骨头 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3780074</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 23 Aug 2026 03:52:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1YTTdxQ0lGenh6N3JRNU9fSzljbzJHQUNZR3MwRm9veTJmTjNUZlpDSVc0cDBNSFRyQ2ZZX2RPX2U4Q2VPTnpXc2ozV3ZBM1NkT3Fr</guid></item><item><title>在中国，AI无处不在 - 观察者</title><link>https://www.guancha.cn/internation/2026_08_23_828294.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Aug 2026 05:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9iWS05TWZoaXJPNzh2dmctNGpUMWdxUEZ6NkVkeE5mMGtRYWNVWEZvY1Y3QjB2R2hoSTg1QTF1Q1IyS0h1SlhwaWRWT0VWbGJuU1BEV0hfdFA</guid></item><item><title>马斯克转发中国机器人9秒32破纪录 - 凤凰网</title><link>https://news.ifeng.com/c/8vp5ULi1PsS</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;8月23日，北京。机器人运动会如火如荼，特斯拉CEO马斯克转发荣耀机器人“闪电”百米视频，博主配文写道：“中国智能手机制造商荣耀公司研发的人形机器人‘Lightning’以9.32秒跑完100米。Usain Bolt的纪录是9.58秒。”博文称，令人印象深刻的是“闪电”冲线后全速撞上安全墙，腰部既没散架，也没火花四溅。从破人类纪录到让全球科技大佬点赞，中国智造用实力说话。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/65493A8BD03F991595B814EB9BB7A9BACDA3A41A_size629_w1198_h1694.jpg"&gt;&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/EFF19BC23BC50EA3AB6BC2292B322111F8D5E574_size206_w1206_h2622.jpg"&gt;&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/F9C020E547635F03AC7F212CC97319ABC819F157_size1449_w1887_h2778.jpg"&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sun, 23 Aug 2026 05:09:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE43UkRHREk5R0swb21SdEVQNnJRa0I5b3hmT0JHNV9pOFRvZ3JHTW55QTV3czJuUEt3M3ctLVpxdjhrdFdYSTZwMlZicjM</guid></item><item><title>微软程序员在搞什么：推出纯广告营销软件 一键替换Chrome/FF主页 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145712.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;微软程序员在搞什么：推出纯广告营销软件 一键替换Chrome/FF主页&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-23 13:02:42  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1145712-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月23日消息，微软最近对Win11系统的改进获得了不少网友的认可，然而没好几天，微软的程序员又开始搞事了，这次要推一个纯广告营销软件，就为了改用户的主页、搜索。&lt;/p&gt;
+&lt;p&gt;这个软件名为Microsoft Recommended Search Settings（微软推荐搜索设置），看名字就大体知道用途了，&lt;span&gt;&lt;strong&gt;它可以将用户的浏览器主页、搜索引擎、新标签等页面一键替换为必应。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;别以为这是在做好事，将用户的主页、搜索引擎都接管之后，必应页面上的各种广告、营销推广就多了点击机会，只能说还真是少见的纯广告软件，没有一点别的功能。&lt;/p&gt;
+&lt;p&gt;这个软件针对的主要是那些使用Chromium内核及FireFox浏览器，主要就是Chrome、FireFox了，因为这些软件之前为了防止主页、搜索引擎被Edge等竞争对手直接替换，会弹窗警示用户，很多人就会改回去。&lt;/p&gt;
+&lt;p&gt;现在微软开发的这个软件会给用户安装Microsoft Bing Homepage &amp;amp; Search for Chrome扩展，可以更方便地一键接管，&lt;strong&gt;用户可能都不知道就被改了浏览器主页、搜索引擎了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前Microsoft Recommended Search Settings这个软件还在测试，没有强制安装，不过这次微软的程序员为了抢夺用户的浏览器控制权，直接搞这种流氓性质的纯广告软件，后面肯定要被喷死了，等着看吧。&lt;/p&gt;
+&lt;p&gt;微软有可能会放弃强制推广，宣布这只是一个方便用户修改默认设置的软件等等，给自己辩解。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260823/d388ef4a-e815-4fa2-9d1e-2597720f0bf9.jpg" target="_blank"&gt;&lt;img alt="微软程序员在搞什么：推出纯广告营销软件 一键替换Chrome/FF主页" h="337" src="//img1.mydrivers.com/img/20260823/Sd388ef4a-e815-4fa2-9d1e-2597720f0bf9.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sun, 23 Aug 2026 05:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9sOXVJdFhpZk9TTUFOOHhzUC1UcWxObU51NVVYQlBfZHh2bUY5Z3pGOWNEYTJTYzczQXZqSzJnd0NEQUZ2LUNQSU5EcmNwQWp3TFVOTjJZaXY</guid></item><item><title>吴恩达：构建和部署AI应用必须啃下这六块硬骨头 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3780074</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Sun, 23 Aug 2026 03:52:02 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1YTTdxQ0lGenh6N3JRNU9fSzljbzJHQUNZR3MwRm9veTJmTjNUZlpDSVc0cDBNSFRyQ2ZZX2RPX2U4Q2VPTnpXc2ozV3ZBM1NkT3Fr</guid></item><item><title>在中国，AI无处不在 - 观察者</title><link>https://www.guancha.cn/internation/2026_08_23_828294.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="content all-txt"&gt;
 &lt;p&gt;
 	近日，美国《纽约时报》记者实地走访北京，沉浸式感受中国人工智能落地的真实生态。
 &lt;/p&gt;
@@ -766,62 +915,4 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 22 Aug 2026 13:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Vd0lOdmtHRzQ1YzRpSTFySHMxdmtOVVdHWjFoV0pUUUVIMWhCNEY1cm5iLUNHNFduVldmWDRZYTF0dnB4LTR6UHhIcm5GalI3aXFISC1Ic1E</guid></item><item><title>财新观察｜积极探寻AI时代个人信息保护良策 - 财新周刊</title><link>https://weekly.caixin.com/2026-08-22/102476749.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
-       &lt;p&gt;　　人工智能技术应用日益普及，在显著提高效率和提供巨大便利的同时，它也为个人信息保护带来前所未有的独特挑战。近日，国家网信部门发布《大型个人信息处理者个人信息保护规定（征求意见稿）》，向社会公开征求意见。《征求意见稿》提到，大型个人信息处理者应当采取加密、去标识化、访问控制、匿名化等措施保障所处理个人信息安全，可以应用国家网络身份认证公共服务，鼓励使用数据标签标识技术、通过个人信息保护认证等，提高个人信息保护水平。&lt;/p&gt;
-      &lt;/div&gt;
-     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>财新周刊</author><pubDate>Sat, 22 Aug 2026 13:35:35 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE01TUJrVjdHS0VpMVBDaFFUcFhmZExaQXdHdlF0ZUUyZzRUR2kxSUpmQ3g5RGRUUzZrcHExX3lLMDc4M1VyMEJMcHU4RUtyeTBYY3FxbW5TVTlYNEdzVXRfVg</guid></item><item><title>机器人运动会百米跑进9秒39，打破博尔特纪录 - 凤凰网</title><link>https://news.ifeng.com/c/8vnwlRjYjf5</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;极目新闻记者 曹雪娇&lt;/p&gt;&lt;p&gt;8月22日晚，第二届世界人形机器人运动会在国家速滑馆“冰丝带”开幕。本届赛事共吸引六大洲16个国家的666支队伍、2056台机器人同台竞技。&lt;/p&gt;&lt;p&gt;据了解，本届赛项总数从首届26个拓展至51个，新增跳远、举重、拔河、乒乓球等高强度对抗项目，对机器人大脑、小脑以及本体结构、核心零部件而言，都是极限考验。&lt;/p&gt;&lt;p&gt;开幕式当天，还同步举行了100米（大型组）第九组预赛，参赛选手分别来自天卓队、宇树科技队和烽火闪电队。记者在现场看到，发令枪一响，三台机器人应声而出，全力冲向终点，双腿一度跑出残影。机器人“闪电”率先领跑，不过快到终点时，被天卓队选手反超。最终，天卓队机器人以9秒39的成绩冲线，打破了“飞人”博尔特的9秒58的人类百米世界纪录。同场竞争的宇树科技队队员在冲线后摔倒躺下，位居第三。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/33898F5FDEC4216E89EB8ABF0D4FC6216E95C7D2_size151_w1200_h1821.jpg" alt="100米预赛现场（图源：记者拍摄）"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;100米预赛现场（图源：记者拍摄）&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Sat, 22 Aug 2026 13:16:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE1md1g0R290SUgyc2RfV1FvT0paZXBGZHJzYU4zWEExQmhrUEFUNXJLaVVuSkpkdDlZUnBjRWhWTEtOVm9CUkV3b0lwTWY</guid></item><item><title>AI芯片功耗破1000瓦！液冷渗透率飙到53%也压不住：散热已成最大瓶颈 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145673.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月22日消息，&lt;span&gt;&lt;strong&gt;韩国科学技术院教授金正浩近日发出警告，系统半导体与存储器同步采用3D堆叠技术，将使散热挑战日益严峻，进而可能限制AI算力的进一步扩张。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这一预警点出了当前AI产业最紧迫的矛盾：芯片性能在飙升，散热能力却跟不上。&lt;/p&gt;
-&lt;p&gt;TrendForce数据显示，&lt;strong&gt;英伟达、AMD、谷歌等厂商的单颗AI芯片TDP（热设计功耗）已普遍突破1000瓦，&lt;/strong&gt;整柜式AI服务器功率更高达数百千瓦。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此外，液冷在AI芯片中的渗透率预计将从2025年的约33%提升至2026年的53%，&lt;/strong&gt;2027年逼近60%。即便如此，散热压力仍未得到根本缓解。&lt;/p&gt;
-&lt;p&gt;液冷渗透率在提升，但芯片本身的发热源也在同步膨胀。传统散热手段只能被动应对，无法主动遏制发热源的增加。存储与逻辑芯片同步向三维堆叠演进，单位面积发热量仍在持续攀升。&lt;/p&gt;
-&lt;p&gt;以三星为例，其zHBM技术将存储芯片垂直堆叠于AI加速器之上，三星晶圆键合技术预计可实现HBM5十倍以上的存储密度和超过50%的热阻降低。芯片越堆越高，热却越来越难散出去。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;面对持续扩张的散热困境，传统风冷方案已触及物理天花板。CPO（共封装光学）和STCO（系统技术协同优化）被视为破局关键。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;CPO将电信号转换为光信号，相比传统铜互连，该技术可提升性能与能效，同时减少发热。STCO则从系统层面协同优化计算、存储、互连、供电与散热，避免局部优化造成热瓶颈转移。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260822/f95e2d31584146ec9a10302f9f4a79a1.png" target="_blank"&gt;&lt;img alt="AI芯片功耗破1000瓦！液冷渗透率飙到53%也压不住：散热已成最大瓶颈" h="376" src="//img1.mydrivers.com/img/20260822/s_f95e2d31584146ec9a10302f9f4a79a1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：红茶&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 22 Aug 2026 13:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1OdVpxVjFhaW1HMGFOaEthU1FMNHdzeWgwOHc2YVVrbG9SUm9OaVlWX09DQm1Rc3VIRlpIem16N3ZRWmVkczEyempENlVGMU5tenVZUDVLVmI</guid></item><item><title>“华系车”密集申领测试牌照 余承东：L3进入倒计时 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145674.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;2026成都车展开幕之时，华为智能化技术赋能的汽车品牌正在悄然迭代。&lt;/p&gt;
-&lt;p&gt;“智界正在申请国内多个城市的L3级自动驾驶道路测试牌照，包括智界V9等多款车型。”8月21日，有智界汽车高层在成都车展现场向财联社记者透露。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;此前一日，智界RX开启预订，共光路舱内激光雷达版预售29.98万元起，L3级自动驾驶架构版预售价格35.98万元起，后者配备38个融合感知传感器，包括896线双光路图像级激光雷达与3颗高精度固态激光雷达等。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;业界普遍认为，L3是“华系车”品牌当下最核心的迭代、升级方向。不久前，L3级、L4级自动驾驶强制性国标获批发布，拟于2027年7月1日起正式实施。“目前距离（L3级自动驾驶强制性国家标准）实施还剩下不到一年，进入了倒计时阶段，届时大家就可以体验到L3了。”华为常务董事、产品投资评审委员会主任、终端BG董事长余承东表示。&lt;/p&gt;
-&lt;p&gt;车展现场，于上月获批北京市时速120公里L3级自动驾驶道路测试牌照、首款L3级自动驾驶架构设计的豪华硬派SUV——享界G9出现在鸿蒙智行与北汽展台。最新数据显示，享界G9上市24小时大定突破5000台。同时，定位于家用MPV的享界V8完成首发亮相。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;江汽集团在本届车展现场设置了尊界专区，并带来尊界V800、尊界S800 Grand Design典藏大观等车型，其中尊界V800/V680已获批合肥市L3级自动驾驶测试牌照。8月19日，江淮汽车披露2026年半年报，实现二季度亏损大幅收窄，尊界品牌的助推效果开始初步显现，&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;除鸿蒙智行“五界”外，华为乾崑合作品牌亦在L3方面加速提前布局。&lt;/p&gt;
-&lt;p&gt;车展前夕，岚图追光S、奕境X9相继发布。其中岚图追光S的虎踞底盘拥有R-EPS助力转向系统，可适配L3级智驾方案，该车将华为乾崑四激光智驾带入到了20万级市场。&lt;/p&gt;
-&lt;p&gt;“关于L3，岚图一直在积极布局。去年已经有L3相关车型在道路上进行测试，泰山系列车型也具备L3级智能辅助驾驶架构能力。目前岚图已经具备了相应的技术储备，后续国家相关法规一旦实施，我们会根据政策节奏，适时推出对应产品。”岚图汽车董事长卢放表示。&lt;/p&gt;
-&lt;p&gt;L3规模商业化进入倒计时的当下，车企也在积极推进L4的发展。成都车展开幕当日，中国一汽董事长、党委书记邱现东在中国一汽2026年科技大会上表示，中国一汽将明确突破L4自动驾驶技术、新一代智能座舱与车载智能体技术、整车操作系统技术、全固态电池技术等十大重点技术任务。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260822/646c293fe6aa4bbaa8a6ceb5a786268f.jpg" target="_blank"&gt;&lt;img alt="“华系车”密集申领测试牌照 余承东：L3进入倒计时" h="400" src="//img1.mydrivers.com/img/20260822/s_646c293fe6aa4bbaa8a6ceb5a786268f.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 22 Aug 2026 13:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9IN2VQaUVSYmRjOGpRZ2ZhaDVnQ3d0X1hETkhqWW9PWmVtZndPbmNCb1VCZ0h3UmdTckRqNmMycnljOHk3OEpGNHRTMTA3V3I2NldoQkhONGQ</guid></item><item><title>PC玩家才是真爱、不跟AMD学：Intel确认下代CPU优先上桌面平台 - 驱动之家</title><link>https://news.mydrivers.com/1/1145/1145671.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月22日消息，AMD此前已经正式官宣了Zen6架构，但首发于EPYC平台，PC玩家还得再等等，在这一个问题上Intel对PC玩家显然更关爱，新一代CPU内核确认会率先用于桌面。&lt;/p&gt;
-&lt;p&gt;Intel高管Robert Hallock日前在接受TH网站采访时确认了这一点，&lt;span&gt;&lt;strong&gt;表示Intel有了新的核心，首先会登陆桌面版，爱好者们要好好算算，这就是他要说的全部。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;他没有提到Intel的所谓新核心是什么，不过大体上应该是在说Nova Lake这一代的处理器，这是Intel今年底明年初的重磅产品，最多52核CPU，bLLC缓存最多288MB，规格提升非常多，性能值得期待。&lt;/p&gt;
-&lt;p&gt;CPU架构上，P核升级Coyote Cove核心，E核升级Arctic Wolf，都会有明显的性能提升，&lt;strong&gt;再加上288MB bLLC缓存，预计能夺回游戏性能之王的位置。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Intel CEO陈立武及多位高管之前也确实反思过他们的桌面处理器在竞争中失去了优势，其中有放弃SMT超线程的原因，也有性能没达到预期的原因，尤其是Arrow Lake这一代，&lt;strong&gt;总之Intel是意识到了他们之前在CPU竞争上犯过错，需要做出全方位的改变。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Nova Lake这一代就是Intel应对x86桌面平台竞争的关键一战，规格是超预期提升的，CPU内核P、E也会有显著的IPC提升。&lt;/p&gt;
-&lt;p&gt;更重要的是Intel在新架构上会首发于桌面平台，不学AMD那样先给EPYC企业级平台使用，这也算是他们展示出来的诚意了。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260822/3cf34d3274cc4d66af4197ef01cb3ac6.jpg" target="_blank"&gt;&lt;img alt="PC玩家才是真爱、不跟AMD学：Intel确认下代CPU优先上桌面平台" h="399" src="//img1.mydrivers.com/img/20260822/s_3cf34d3274cc4d66af4197ef01cb3ac6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 22 Aug 2026 13:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5nUVJWOFlmRjRILVAtbkd3d0VQOTA4RjFmQi11eFdVak9NTWNpUy1WZGpubHZiYWtGZnBpNWhnS0Ffb3hMSktMcmJ3d3FybjBnOHJjOXJMb0Y</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Sat, 22 Aug 2026 13:56:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Vd0lOdmtHRzQ1YzRpSTFySHMxdmtOVVdHWjFoV0pUUUVIMWhCNEY1cm5iLUNHNFduVldmWDRZYTF0dnB4LTR6UHhIcm5GalI3aXFISC1Ic1E</guid></item></channel></rss>
