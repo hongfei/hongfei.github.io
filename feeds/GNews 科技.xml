@@ -21,7 +21,33 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 10:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5pU0lrRVppWUJJUnFHRy0wblRLT1pjYmpYYTF1NHBSM3NGRWhiOVcwY3RzelUxQ1ItQVNJX3Jkam9pak5hek1qX0F1VUxHaG42N2pFdkJuQUM</guid></item><item><title>苹果拟推出全新Mac mini：跳过M5 搭载M6芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146296.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 10:16:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5pU0lrRVppWUJJUnFHRy0wblRLT1pjYmpYYTF1NHBSM3NGRWhiOVcwY3RzelUxQ1ItQVNJX3Jkam9pak5hek1qX0F1VUxHaG42N2pFdkJuQUM</guid></item><item><title>Windows更新翻车致打印出问题！微软给出临时解决方案 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146297.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月25日消息，&lt;span&gt;&lt;strong&gt;微软确认8月推送的.NET Framework更新会导致部分Windows系统打印功能崩溃，涉及Windows 11、Windows 10和Windows Server。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;受影响的更新编号为KB5120708、KB5120705和KB5120710，安装这些更新后，部分基于WPF的应用程序在打印或生成使用某些字体的PDF、XPS内容时会报错崩溃。&lt;/p&gt;
+&lt;p&gt;这次更新原本旨在修补WPF中TrueType字体处理的安全漏洞CVE-2026-62871，强化了内存溢出防御机制与边界检查。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然而严格的验证机制却产生了副作用，WPF在执行字体子集化以生成XPS或打印文件时，会将合法字体误判为损坏档案，触发System.IO.FileFormatException异常。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;受影响的字体包括Calibri、Cambria、Constantia和Corbel，均为Windows系统内置字体，当应用或报表系统尝试打印或导出包含这些字体的PDF或XPS文件时，程序会立即中断。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微软给出的临时解决方案是在应用程序配置文件中添加一个AppContext开关，具体代码如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;configuration&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;runtime&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;AppContextSwitchOverrides&lt;/p&gt;
+&lt;p&gt;value="Switch.MS.Internal.TtfDelta.DisableCmapAndSbitOverflowProtection=true"/&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;/runtime&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;/configuration&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260825/77e49a1c-d375-47aa-a2ad-6126997432b5.png" target="_blank"&gt;&lt;img alt="Windows更新翻车致打印出问题！微软给出临时解决方案" h="248" src="//img1.mydrivers.com/img/20260825/S77e49a1c-d375-47aa-a2ad-6126997432b5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但这个临时方案有一个代价，该开关禁用的安全保护正是8月.NET更新引入的漏洞修复内容，启用后系统会重新暴露在这些安全风险下。&lt;/p&gt;
+&lt;p&gt;微软建议仅在确实遇到打印或文档生成问题时才使用该方案，并将其视为临时措施，目前微软尚未公布永久修复的时间表，问题仍在调查中。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/ff146c40967d41deba25257c0f2d3da6.png" target="_blank"&gt;&lt;img alt="Windows更新翻车致打印出问题！微软给出临时解决方案" h="399" src="//img1.mydrivers.com/img/20260825/s_ff146c40967d41deba25257c0f2d3da6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 10:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB3V0Q1ZVFLcHlkMTlBOTJDMG9GOWZGSmJFOTR5Skl5bW9GVmtaLTdxY0w3V05iZzF1dVdEWUl3bWtkeTdNNEtYb2FfTW5hczlpQ2xOclY4UEs</guid></item><item><title>苹果拟推出全新Mac mini：跳过M5 搭载M6芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146296.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;苹果拟推出全新Mac mini：跳过M5 搭载M6芯片&lt;/p&gt;
           
@@ -130,7 +156,31 @@
 	网友对微信说明的评论&lt;span&gt; 小红书&lt;/span&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
-                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 25 Aug 2026 09:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE1CUmxCLTFpYm9leFFLNjlXckZKd29hZG1MazA4cF8tb0FTRU1FV0oxS25DVlV2V0hHam1FVVJsYmEzTHAzYks4MUhPRTAwR2ZtX0VDbGVOT1BmaHY3ZmxVRjFHTHdrZw</guid></item><item><title>时隔近两年！苹果全新Mac mini即将发布 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146291.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+                                &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>观察者</author><pubDate>Tue, 25 Aug 2026 09:52:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiZkFVX3lxTE1CUmxCLTFpYm9leFFLNjlXckZKd29hZG1MazA4cF8tb0FTRU1FV0oxS25DVlV2V0hHam1FVVJsYmEzTHAzYks4MUhPRTAwR2ZtX0VDbGVOT1BmaHY3ZmxVRjFHTHdrZw</guid></item><item><title>鼠标手福音！Keychron垂直鼠标开售：249元 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146292.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月25日消息，&lt;span&gt;&lt;strong&gt;渴创（Keychron）推出BM27三模垂直鼠标，今晚20:00正式开售，售价249元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这款鼠标主打人体工学，采用55°倾斜设计，手腕可以自然躺平，不用像传统鼠标那样拧着前臂使用。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260825/72b3e3ff-94e2-4384-8a88-798e5846d5a7.jpg" target="_blank"&gt;&lt;img alt="鼠标手福音！Keychron垂直鼠标开售：249元" h="448" src="//img1.mydrivers.com/img/20260825/S72b3e3ff-94e2-4384-8a88-798e5846d5a7.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;握持部分做了专门优化：拇指位置有内凹侧翼贴合落点，虎口、掌根和小指三点自然承托，压力分散更均匀，长时间办公握着更省力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;硬件配置上，BM27搭载PAW3212光学传感器，支持五档DPI一键切换，范围覆盖100到2400，轮询率在有线和2.4G模式下为1000Hz。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260825/ce8f9909-5fc9-4d9d-b18e-6001dabc4b55.jpg" target="_blank"&gt;&lt;img alt="鼠标手福音！Keychron垂直鼠标开售：249元" h="797" src="//img1.mydrivers.com/img/20260825/Sce8f9909-5fc9-4d9d-b18e-6001dabc4b55.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微动采用凯华轻触开关，点击声音轻，在办公室使用不吵同事。&lt;/p&gt;
+&lt;p&gt;连接方面支持三模，有线、2.4G和双蓝牙可自由切换，方便在多台设备间流转。&lt;/p&gt;
+&lt;p&gt;内置500mAh电池，蓝牙模式续航约100小时，2.4G模式约76小时，充电接口为Type-C。&lt;/p&gt;
+&lt;p&gt;细节上，机身采用肤感UV涂层，重量约99±3g，脚垫为高纯度PTFE材质，滑动顺滑。&lt;/p&gt;
+&lt;p&gt;官方还提供AI网页驱动，一句话就能把DPI等设置调成个人习惯。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260825/d5aa8412-5d07-4833-a693-30adef310aac.jpg" target="_blank"&gt;&lt;img alt="鼠标手福音！Keychron垂直鼠标开售：249元" h="1239" src="//img1.mydrivers.com/img/20260825/Sd5aa8412-5d07-4833-a693-30adef310aac.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260825/30ddc779-1d3f-4e45-8636-d3ab3e50c951.jpg" target="_blank"&gt;&lt;img alt="鼠标手福音！Keychron垂直鼠标开售：249元" h="600" src="//img1.mydrivers.com/img/20260825/S30ddc779-1d3f-4e45-8636-d3ab3e50c951.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class="tgbaobei"&gt;&lt;b&gt;购买链接：&lt;/b&gt;&lt;a class="mydrivers_recommended_goods" from_platform="京东" goods_abstract="" goods_btn_title="直接购买" goods_price="249元" goods_title="keychron渴创BM27无线鼠标 人体工学鼠标 三模有线蓝牙鼠标 竖握设计 轻音 mac/win双系统兼容 BM27无线鼠标 灰色" href="https://dt.mydrivers.com/mv.ashx?txt=RnBa2" img="https://img14.360buyimg.com/pop/jfs/t1/507254/4/7426/177261/6a8bbc90F8733e9c2/00835a05a0b8fe93.jpg" target="_blank"&gt;京东(249元)&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：知微&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 09:44:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBpY21DajBZUURvaHA2bUR6S1YwWnNNUER3bUVjY1k5QVNrN01tLVBGYXdadXBvT2F3bWZlZ2RBQ0RISVIwVHIxMnNwaEVXcVZCVGZDcWdCQ3E</guid></item><item><title>时隔近两年！苹果全新Mac mini即将发布 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146291.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月25日消息，今日，知名苹果记者马克·古尔曼（Mark Gurman）透露，苹果正在准备推出新款Mac mini，这将是该产品自2024年以来首次迎来硬件更新。&lt;/p&gt;
 &lt;p&gt;据知情人士透露，&lt;span&gt;&lt;strong&gt;新款Mac mini最快可能在未来几天亮相，甚至有望赶在苹果9月秋季新品发布会之前登场。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
@@ -152,7 +202,101 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 09:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB2UzlrSkVETVVFLUxnWE1HWGluVFRSUTM2X2tBb3dRQ01ieTk0V1Z0Y1FIWExvWEp4RVpaM2dLX1ZUaFl4djUwOFZleTdyZHdoZ0Z6ckpIR1E</guid></item><item><title>马斯克母子再赞中国！上海棒极了 定居三年感到安全 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146267.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 09:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFB2UzlrSkVETVVFLUxnWE1HWGluVFRSUTM2X2tBb3dRQ01ieTk0V1Z0Y1FIWExvWEp4RVpaM2dLX1ZUaFl4djUwOFZleTdyZHdoZ0Z6ckpIR1E</guid></item><item><title>英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64% - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146283.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-08-25 17:18:22  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1487162.html" title="鹿角的主页" class="newstiao4"&gt;鹿角&lt;/a&gt;&lt;p&gt;  编辑：鹿角 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1146283-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月25日消息，据Wccftech报道，&lt;strong&gt;英特尔现已正式公布入门级处理器Wildcat Lake（酷睿Series 3） 的相关技术细节。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;该系列主要面向入门级PC市场，在保留Panther Lake基础架构的同时，通过优化封装工艺、缩减Die面积、精简 I/O 配置以及改进主板设计，有效降低平台整体成本。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/09dc38738efc4033825728575f370864.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="336" src="//img1.mydrivers.com/img/20260825/s_09dc38738efc4033825728575f370864.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在性能指标上，Wildcat Lake最高可提供40 TOPS的平台级AI算力，&lt;strong&gt;相较上一代Raptor Lake U Refresh（酷睿100系列）提升达2.7倍；创作与生产力性能最高可提升2.1倍，同时处理器功耗降低64%。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/5e080b0b264e4921bc957dfe01303885.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="336" src="//img1.mydrivers.com/img/20260825/s_5e080b0b264e4921bc957dfe01303885.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;封装方案方面，英特尔并未沿用Panther Lake（酷睿Ultra Series 3）所采用的Foveros三维堆叠技术，而是转向有机多芯片封装（Multi Chip Package，MCP）与UCIe（Universal Chiplet Interconnect Express）互连方案，以降低封装成本和良率损失。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其中，MCP是将多个功能各异的裸芯片（Die）垂直堆叠或水平排列，共同封装在同一块有机基质载板上。&lt;/strong&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/e9c297aa6fed4a4b902234864403f9e6.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="339" src="//img1.mydrivers.com/img/20260825/s_e9c297aa6fed4a4b902234864403f9e6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而UCIe作为半导体行业开放标准化的芯粒互连规范，定义了同一封装内不同芯片之间的通信协议，使来自不同厂商、采用不同制程节点的芯片能够像拼装积木一样灵活集成。&lt;/p&gt;
+&lt;p&gt;在制程选择上，Wildcat Lake的计算Die采用英特尔18A工艺，I/O Die则交由台积电N6工艺生产，且18A工艺原生支持双裸片方案的UCIe连接。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/d4dc03ead9f24e41b9bd69eefc2cbe93.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="337" src="//img1.mydrivers.com/img/20260825/s_d4dc03ead9f24e41b9bd69eefc2cbe93.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/0883aac3c8c241d492eea8805ef1d41b.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="315" src="//img1.mydrivers.com/img/20260825/s_0883aac3c8c241d492eea8805ef1d41b.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/2d25973c5e784624aec0332fce8a6da1.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="313" src="//img1.mydrivers.com/img/20260825/s_2d25973c5e784624aec0332fce8a6da1.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/50df135f6b18497ca38ee3ec4326fa54.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="314" src="//img1.mydrivers.com/img/20260825/s_50df135f6b18497ca38ee3ec4326fa54.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/338ece2ed55e4e16af5498431fcad115.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="313" src="//img1.mydrivers.com/img/20260825/s_338ece2ed55e4e16af5498431fcad115.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/08994ef918e941a5bb497f67093abdbe.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="315" src="//img1.mydrivers.com/img/20260825/s_08994ef918e941a5bb497f67093abdbe.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/1126df135f334048a8a7d1cecb1d5ac6.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="314" src="//img1.mydrivers.com/img/20260825/s_1126df135f334048a8a7d1cecb1d5ac6.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/acee70a131054502a695fddbdf9d7c9d.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="316" src="//img1.mydrivers.com/img/20260825/s_acee70a131054502a695fddbdf9d7c9d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/8467795b590a453bbd9917872a114415.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="313" src="//img1.mydrivers.com/img/20260825/s_8467795b590a453bbd9917872a114415.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/0dec9789c8f9488ea17b081fd7ea2308.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="313" src="//img1.mydrivers.com/img/20260825/s_0dec9789c8f9488ea17b081fd7ea2308.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/11134ad53d8b478e9d07aba1b570e2ff.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="310" src="//img1.mydrivers.com/img/20260825/s_11134ad53d8b478e9d07aba1b570e2ff.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/3b8234541f1a443b800e0662c6748bc7.png" target="_blank"&gt;&lt;img alt="英特尔披露Wildcat Lake芯片：算力最高40TOPS、功耗降低64%" h="313" src="//img1.mydrivers.com/img/20260825/s_3b8234541f1a443b800e0662c6748bc7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：鹿角&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 09:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9OTmJBZGZaQjk0endlRlBDUVJldW9zRGo0bS1Cc2phS0hlQ0JUMkQ3bmNJcF9uYjFlZzlRYlBMeWJ5YmIwM3VNX1Z2TmQ1Qm1JZHU2cjZ1RjU</guid></item><item><title>自动驾驶再迎利好！“道交法”修订草案设特别专章 厘清车企主体责任 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146268.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;自动驾驶商业化发展进程，再次迎来重大利好。&lt;/p&gt;
+&lt;p&gt;8月25日，据新华社消息，提请十四届全国人大常委会会议初次审议的《道路交通安全法修订草案》，设置了“自动驾驶汽车的特别规定”专章，明确了自动驾驶汽车和辅助驾驶功能的概念。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;并明确自动驾驶汽车在自动驾驶功能激活状态下发生道路交通安全违法行为的，由自动驾驶汽车生产企业、进口企业接受处理。未激活自动驾驶功能的自动驾驶汽车和驾驶仅具备辅助驾驶功能的汽车上道路行驶，按照非自动驾驶汽车的规定管理。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;“‘道交法修订草案’增设自动驾驶专章，是我国自动驾驶法治化里程碑。”中国汽车流通协会乘联分会负责人崔东树向财联社记者表示，过去辅助驾驶、自动驾驶违法责任界定模糊，驾驶员、车企责任边界容易产生纠纷。“‘草案’明确区分自动驾驶与辅助驾驶，将自动驾驶模式激活状态下违法责任落到车企、进口企业，从法律层面厘清主体责任，解决了长期的责任归属痛点，为高阶自动驾驶合法上路扫清法律障碍，利好L3及以上自动驾驶商业化落地。”&lt;/p&gt;
+&lt;p&gt;如果说8月初发布的《智能网联汽车 自动驾驶系统安全要求》（GB 44721-2026）强制性国家标准是解决“产品要达到什么样的安全技术才能上路”的技术准入强标，“道交法修订草案”新增自动驾驶专章则是解决“上路权责、通行规则、法律后果”的法律层面关键底座。&lt;/p&gt;
+&lt;p&gt;标准、法规的制定，亦离不开相关部门对于自动驾驶车辆的前置评估与考试工作。&lt;/p&gt;
+&lt;p&gt;财联社记者了解到，公安部自多年前便已启动保障智能网联汽车上路通行的探索研究，并持续进行了应用与迭代。在公安部道路交通安全研究中心有关专家看来，首先要固守安全底线，服务自动驾驶上路通行的安全保障需求，推进车辆检验与驾驶员考试；第二，配合工信部门开展各种试点工作；第三，持续开展道路通行规定符合性测试技术的应用。&lt;/p&gt;
+&lt;p&gt;“我们希望自动驾驶比人类开车更安全，且不能违反道路交通规定。交通事故虽然无法完全避免，但自动驾驶车辆不能主动造成事故。”前述专家在2025世界智能网联大会期间表示，公安部会针对功能安全、网络安全、数据安全等维度进行评估，目的是让自动驾驶车辆在复杂场景下可以有序同行，不影响交通秩序，不做出不合理的驾驶行为。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在企业端，华为、北汽、长安、比亚迪、地平线等多家车企、供应商已前置布局自动驾驶技术并加速测试，密集展开多个城市的L3级自动驾驶道路测试牌照申请工作。目前，工信部已发文许可两款L3级自动驾驶车型产品，分别为长安深蓝SL03和北汽极狐阿尔法S6。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“‘草案’做了清晰的切割，即，未开启自动驾驶、仅辅助驾驶的车辆，依旧由驾驶员承担全部责任。这一点非常关键，避免消费者混淆辅助驾驶和自动驾驶。法律把辅助驾驶仍归传统机动车管理，提醒用户不能脱管。”崔东树直言，该“草案”审议落地后，会倒逼车企完善算法安全、数据回溯机制，推动行业规范发展，对智能网联汽车产业长期发展意义重大。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260825/82e1e8f1fbc040f684295c21a03fb26c.jpg" target="_blank"&gt;&lt;img alt="自动驾驶再迎利好！“道交法”修订草案设特别专章 厘清车企主体责任" h="399" src="//img1.mydrivers.com/img/20260825/s_82e1e8f1fbc040f684295c21a03fb26c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ 
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 09:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE83aHRhdDFRNGdBaWdoeDk1Z0V3TnhDa181ZU9MblFwOTFiNzVkbmVPODJYUzBJdzZHb1otNjNQa0hHTThYRDROS3pVM0EyaEloUHZ1SEx4Mzg</guid></item><item><title>马斯克母子再赞中国！上海棒极了 定居三年感到安全 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146267.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月25日消息，近日，梅耶·马斯克在社交平台发布帖文，记录自己在上海购物、就餐与城市观光的日常。&lt;span&gt;&lt;strong&gt;随后其子埃隆·马斯克跟帖盛赞上海，称“上海是一座很棒的城市，强烈推荐前往游览”。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;这已是马斯克母子在两周内第二次在社交平台上点赞中国。8月11日，马斯克发文称“中国太棒了，我强烈推荐大家去看看”。&lt;/p&gt;
@@ -258,7 +402,21 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 08:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBodl9lRDYtaS1rN2FZYjJKUEFrS280WWZjdHFvOW1vT3VRa0JmMDdxZzZsXzNFVFhuYlBzdkt2LW1ETE11NjZ0c09IalBXNmZLUVdza3lRYXA</guid></item><item><title>千元捡漏昔日卡皇！玩家4000元拿下4块RTX 2080 Ti：2K游戏稳破百帧 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146248.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 08:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBodl9lRDYtaS1rN2FZYjJKUEFrS280WWZjdHFvOW1vT3VRa0JmMDdxZzZsXzNFVFhuYlBzdkt2LW1ETE11NjZ0c09IalBXNmZLUVdza3lRYXA</guid></item><item><title>马斯克母亲晒上海行照片，马斯克借机“安利”：上海很棒，强烈推荐 - 新浪新闻_手机新浪网</title><link>https://news.sina.cn/gn/2026-08-25/detail-inippmeq1644213.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
+	
+
+&lt;p class="art_p"&gt;[环球网报道 记者 李飒]北京时间8月25日，美国企业家马斯克的母亲梅耶·马斯克在社交媒体上晒出上海旅游的照片，并配文称“在上海的第二天，购物、吃饭、观景”。马斯克随即在这条帖子下评论并借机“安利”上海，“上海是一座很棒的城市，强烈推荐去看看”。&lt;/p&gt;
+
+&lt;p class="art_p"&gt;上周，78岁的梅耶·马斯克飞抵上海，开启不到五个月内的第二次中国之行。她在接受媒体采访时表示，中国的发展速度让她每次来都有新惊喜。&lt;/p&gt;
+&lt;p sax-type="proxy" class="j_native_uvw260825 box" data-inserttype="0" data-id="201711dingdingeb"&gt;&lt;/p&gt;&lt;p class="art_p"&gt;值得一提的是，这已经不是马斯克第一次“安利”中国了。就在本月11日，他在社交媒体上写道：“中国太棒了。我强烈推荐大家去看看。”梅耶·马斯克随后引用马斯克的这条帖文写道：“我同意。（中国的）每个城市都有其独特魅力，有不同的文化景点可以参观。建筑物和街道干净整洁，维护良好。同时，人们彬彬有礼、勤劳且尊重他人。我（在中国）感到安全，所以很享受去中国（旅行）。”&lt;/p&gt;
+&lt;p class="art_p"&gt;近期，美国皮尤研究中心等机构的调查显示，国际民众对中国的好感度不断上升。&lt;/p&gt;	
+
+	
+
+&lt;/section&gt;
+
+
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Tue, 25 Aug 2026 08:26:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMieEFVX3lxTFBzMWlsVHQ4VE9IcEZxOHRxdnRqRUxtYnpUMmpBdGhON0R1cEwtcGctRG9ySFFZY1VJY2xkNWc2NmltUnFLMXlQczFqTExCSFNLdDlKQVNsWGE4cmxUWnVPMW05UkV2UDJBZ1hPUFNrREFrS3pJcjRveA</guid></item><item><title>千元捡漏昔日卡皇！玩家4000元拿下4块RTX 2080 Ti：2K游戏稳破百帧 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146248.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技8月25日消息，&lt;span&gt;&lt;strong&gt;一名Reddit玩家近日发帖分享了自己的捡漏经历，他在二手交易平台以600美元（约4290元人民币）的总价购入4张RTX 2080 Ti显卡，折合单张成本仅为150美元（约1072元人民币）。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;RTX 2080 Ti作为2018年英伟达图灵时代的消费级卡皇，&lt;/strong&gt;非公首发定价999美元（约6716元人民币），原厂公版售价高达1199美元（约8213元人民币），当年属于万元级旗舰游戏显卡。&lt;/p&gt;
@@ -437,7 +595,27 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 07:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAzbzJBOTNSekJ0cTF1alZjQWwtRWNJczBPaHEtYWtOSENqNUdtRnZ1aUlocHdfX0lKRm1SSlk4WnhDZklZTUE2Njd0d0gxY1lDX0txaS01d3M</guid></item><item><title>英伟达拟打造开放权重AI 中国官媒称欢迎“抄作业” - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260825-9571537</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;针对美国晶片巨头英伟达计划开发开放权重人工智能（AI）模型，中国官媒发文称，欢迎英伟达“抄中国作业”，但如果只是把开源当作获取晶片订单的营销手段，那么“美国版DeepSeek”很可能只是一个昂贵的空壳。&lt;/p&gt;&lt;p&gt;美国《华尔街日报》上星期六（8月22日）报道，英伟达计划利用本周达成的一项60亿美元（约77亿新元）交易，打造全球最强大的开放权重AI模型之一，与深度求索（DeepSeek）和月之暗面Kimi K3等中国模型竞争。知情人士说，这也将使英伟达进一步挑战OpenAI和Anthropic等美国前沿AI公司。&lt;/p&gt;&lt;p&gt;对此，中国官媒《环球时报》星期一（24日）深夜发文称，美国多数AI巨头长期采取闭源模式，而中国开源模型的成功已在美国业界引发焦虑，“是否应该转向开源”也成为业内争论的焦点。&lt;/p&gt;&lt;p&gt;文章认为，英伟达布局开源赛道，一方面是希望在激烈竞争中支持更多初创企业，并带动晶片需求；“但客观而言，这是美国闭源神话被进一步打破的某种信号。”面对中国开源路线的发展，以及自主创新能力不断提升，越来越多美国业界人士意识到，技术封锁不仅难以遏制中国开源生态发展，也可能削弱自身优势。&lt;/p&gt;&lt;p&gt;文章指出，开源社区能否长期繁荣，关键在于广泛参与、透明协作和较低使用门槛，而非依赖某一家巨头垄断式投入。对英伟达而言，这笔投资是否值得，短期要看晶片销量，中期要看模型性能，长期则取决于能否真正建立开放协作的生态。&lt;/p&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 07:27:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFAzbzJBOTNSekJ0cTF1alZjQWwtRWNJczBPaHEtYWtOSENqNUdtRnZ1aUlocHdfX0lKRm1SSlk4WnhDZklZTUE2Njd0d0gxY1lDX0txaS01d3M</guid></item><item><title>10年前单槽洋垃圾翻身！AMD WX5100魔改BIOS：1080P 60帧畅玩3A - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146216.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技8月25日消息，&lt;span&gt;&lt;strong&gt;近日知名DIY博主Budget-Builds Official通过魔改BIOS，成功让一张2016年发布的单槽专业显卡Radeon Pro WX5100在1080P分辨率下流畅运行《赛博朋克 2077》等现代3A大作。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;从硬件规格来看，&lt;strong&gt;Radeon Pro WX5100本质上是RX 470D的低频专业版，它拥有1792个流处理器，并配备了8GB显存，该显卡的特色在于采用了极其紧凑的单槽位设计，厚度仅为标准的单插槽高度。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;外观与接口部分，WX5100采用了典型的专业卡蓝色导流罩设计，外观简洁且不设RGB灯效，&lt;strong&gt;其最大的技术亮点在于120W的功耗完全由PCIe插槽承载，无需额外接驳6-pin或8-pin电源线。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260825/a31d43ba-51c0-482c-9685-4ea38bd5d2d4.png" target="_blank"&gt;&lt;img alt="10年前单槽洋垃圾翻身！AMD WX5100魔改BIOS：1080P 60帧畅玩3A" h="451" src="//img1.mydrivers.com/img/20260825/Sa31d43ba-51c0-482c-9685-4ea38bd5d2d4.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这款被玩家戏称为洋垃圾的专业显卡，在原生状态下的游戏表现极为平庸，&lt;strong&gt;运行《赛博朋克 2077》基准测试时仅能勉强维持在30 FPS左右。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但该博主发现，&lt;strong&gt;通过魔改BIOS解锁功耗墙、拉高显存频率并收紧显存时序，该显卡的性能可以直接翻倍，&lt;/strong&gt;在1080P中画质下运行《赛博朋克 2077》达到了近60 FPS的表现。&lt;/p&gt;
+&lt;p&gt;而在《荒野大镖客：救赎2》中混合设置下则能跑出65 FPS的成绩，在《孤岛危机：重制版》普通画质下平均帧率为64 FPS，《骑马与砍杀：战旗》极高画质下为53FPS，即便是在对配置要求较高的《星际掠夺者》中，开启FSR后也能达到54 FPS。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260825/fd133be7-468d-4a64-876c-ed5e34464d9d.png" target="_blank"&gt;&lt;img alt="10年前单槽洋垃圾翻身！AMD WX5100魔改BIOS：1080P 60帧畅玩3A" h="368" src="//img1.mydrivers.com/img/20260825/Sfd133be7-468d-4a64-876c-ed5e34464d9d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不过受此魔改视频影响，&lt;strong&gt;该显卡在二手市场的价格已从40美元（约286元人民币）迅速涨至70美元（约500元人民币），性价比优势已不明显。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;同时Radeon Pro系列的官方驱动支持据称即将到期，这可能意味着未来在运行更新的游戏时会遇到兼容性问题。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：青山&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Tue, 25 Aug 2026 07:20:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1JNURNWU5yMVREU0pwOUpTbldSOGljNGJnMi1IVEh6SGtSN2JZcHpuUjZnclEwd1NyWUQ2ZXNzMGRyOWNaSlFVODNmRXJiUEx2eGg4a1JCTGM</guid></item><item><title>英伟达拟打造开放权重AI 中国官媒称欢迎“抄作业” - 联合早报</title><link>https://www.zaobao.com.sg/news/china/story20260825-9571537</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="articleBody text-[18px]"&gt;&lt;div&gt;&lt;p&gt;针对美国晶片巨头英伟达计划开发开放权重人工智能（AI）模型，中国官媒发文称，欢迎英伟达“抄中国作业”，但如果只是把开源当作获取晶片订单的营销手段，那么“美国版DeepSeek”很可能只是一个昂贵的空壳。&lt;/p&gt;&lt;p&gt;美国《华尔街日报》上星期六（8月22日）报道，英伟达计划利用本周达成的一项60亿美元（约77亿新元）交易，打造全球最强大的开放权重AI模型之一，与深度求索（DeepSeek）和月之暗面Kimi K3等中国模型竞争。知情人士说，这也将使英伟达进一步挑战OpenAI和Anthropic等美国前沿AI公司。&lt;/p&gt;&lt;p&gt;对此，中国官媒《环球时报》星期一（24日）深夜发文称，美国多数AI巨头长期采取闭源模式，而中国开源模型的成功已在美国业界引发焦虑，“是否应该转向开源”也成为业内争论的焦点。&lt;/p&gt;&lt;p&gt;文章认为，英伟达布局开源赛道，一方面是希望在激烈竞争中支持更多初创企业，并带动晶片需求；“但客观而言，这是美国闭源神话被进一步打破的某种信号。”面对中国开源路线的发展，以及自主创新能力不断提升，越来越多美国业界人士意识到，技术封锁不仅难以遏制中国开源生态发展，也可能削弱自身优势。&lt;/p&gt;&lt;p&gt;文章指出，开源社区能否长期繁荣，关键在于广泛参与、透明协作和较低使用门槛，而非依赖某一家巨头垄断式投入。对英伟达而言，这笔投资是否值得，短期要看晶片销量，中期要看模型性能，长期则取决于能否真正建立开放协作的生态。&lt;/p&gt;
     
   &lt;p&gt;“如果英伟达只是把开源当作获取芯片订单的营销手段，而不是真正致力于构建开放协作的社区生态，那么‘美国版DeepSeek’很可能只是一个昂贵的空壳。”&lt;/p&gt;&lt;p&gt;文章最后说，尽管如此，仍欢迎英伟达“抄作业”，并称AI技术的价值在于普及，而非“圈养”。文章认为，开放不仅不会削弱竞争力，反而会让技术的生命力更加旺盛。当越来越多国家选择加入开放生态，“小院高墙”终将被时代浪潮所淹没。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>联合早报</author><pubDate>Tue, 25 Aug 2026 07:08:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiakFVX3lxTE56bDc1cjZlU2hvNVB0c2ZFelIzTW9JR0psYk82R3RvT3RyT2JlX0xwMWxzSXNUOFdLaDJ4VTdiU1FjbUNZeFRRRjlCM1Bua19QQjNGcjdybGhqZ2FpU3NNOGFyZGZ5dWVLMUE</guid></item><item><title>399元！漫步者Comfo Clip Q2耳夹耳机发布：国产鸿蒙系统+海思芯片 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146210.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
@@ -3661,65 +3839,4 @@
 &lt;/section&gt;
 
 
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Mon, 24 Aug 2026 13:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE01SFNmYmkwUXhjb0tILU1VUWFHTzdnWWRSUUxSeWhZT282aDFKbElzZHVuT0dlNkhoTUd3WmZ6UFhuZ1lpTkFkM19BSjIwWlR4cS1ONENTdmFvYjdaMkktT0lQd0dIM29wUkNLai11X1NjSWtN</guid></item><item><title>凤凰风暴眼 | 4天消失2000亿，宇树为何遭遇抛售？ - 凤凰网财经</title><link>https://finance.ifeng.com/c/8vrG6lNMj2h</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/4D20D092BBA991BCED0A45729F0257657ED5C844_size104_w1200_h304.jpg" alt=""&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;来源|凤凰网《风暴眼》&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;8月19日敲钟上市那天，宇树科技以1100元开盘暴涨629%，市值冲上4449亿，不少人都在欢呼“人形机器人元年”。&lt;/p&gt;&lt;p&gt;仅仅四个交易日后，股价较开盘价回撤45.1%，约2000亿市值蒸发。&lt;/p&gt;&lt;p&gt;资本用真金白银为“具身智能”的未来投票，却也不得不面对一个尴尬的现实——宇树的收入还主要靠卖科研教具，真正能赚钱的商业化场景尚未跑通，行业心心念念的“ChatGPT 时刻”还没有到来。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;01 4 个交易日市值蒸发约2000亿，到底发生了什么？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;钟声敲响的瞬间，纸面财富达到了顶峰。&lt;/p&gt;&lt;p&gt;以此开盘价测算，创始人王兴兴合计持有约1.214亿股，对应个人持股市值超过1300亿元，一举成为“90 后”首富。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/F3D0BE18766F8751BF5B5EE9C7F9D9C946DABB51_size785_w1007_h759.png" alt="宇树科技王兴兴 图源：网络"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;宇树科技王兴兴 图源：网络&lt;/p&gt;&lt;p&gt;造富效应远不止于创始人。&lt;/p&gt;&lt;p&gt;宇树的部分员工也成了早期受益者，仅战略配售层面就有45位核心员工迈入千万富翁行列。&lt;/p&gt;&lt;p&gt;而在二级市场，中一签的投资者最高浮盈将近48万，刷新A股注册制以来的单签盈利纪录。&lt;/p&gt;&lt;p&gt;没有人想到，狂欢只持续了不到一天。&lt;/p&gt;&lt;p&gt;首日收盘，股价已从1100元的高点回落至845元，盘中追高的资金当天就被套住。&lt;/p&gt;&lt;p&gt;而8月20日一开盘，宇树科技直接低开6.51%，随后一路杀跌，盘中最低摸到685.01元，收盘暴跌18.70%。&lt;/p&gt;&lt;p&gt;前一天还在庆祝中签的投资者，突然发现账户里的浮盈正在以肉眼可见的速度缩水。&lt;/p&gt;&lt;p&gt;到8月24日，也就是上市后的第四个交易日，宇树科技盘中跌幅一度扩大至10%以上，收盘报价603.08元，下跌10.3%，单日市值蒸发超200亿元，总市值缩水至2439亿元，较开盘价已经跌去45.1%，近乎腰斩。&lt;/p&gt;&lt;p&gt;短短四个交易日，约2000亿市值没了。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/EBA446E7312AA4CBF7FD3840E2548AFACBCF0550_size31_w1149_h303.png" alt="宇树科技四个交易日股价与市值变化 凤凰网《风暴眼》制图"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;宇树科技四个交易日股价与市值变化 凤凰网《风暴眼》制图&lt;/p&gt;&lt;p&gt;股吧里哀嚎一片，有人称亏了近一半；有人直呼太坑人了。&lt;/p&gt;&lt;p&gt;经济学家付鹏在接受凤凰网《风暴眼》采访时表示，宇树上市前估值已经远超市场普遍共识，上市之后股价冲高波动十分夸张。机器人行业还处在非常早的早期阶段，虽然已经完成IPO，但在他看来，本质完全是一个一级市场的风险投资。在科技浪潮的狂热预期之下，现阶段它还不属于长期价值、成长类标的。&lt;/p&gt;&lt;p&gt;“普通投资者拿少量资金博弈未来可以，如果想要追求稳定投资回报，它并不是合适的投资标的”，付鹏提到。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;02 宇树科技的基本面撑得起数千亿市值吗？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;股价跌得这么狠，说到底还是估值和基本面之间隔了一道太深的沟。&lt;/p&gt;&lt;p&gt;2026年上半年，宇树营收11.52亿，同比增长48.54%，数字看着还行，但增速已经从2025年全年的332.64%掉了下来。&lt;/p&gt;&lt;p&gt;利润端更难看，扣非净利润2.44亿，同比下滑19.34%。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/BADEC9379FFF9FC5BCFA54B97A3ACC4DFC8B0053_size50_w865_h329.png" alt="凤凰网《风暴眼》制图"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;凤凰网《风暴眼》制图&lt;/p&gt;&lt;p&gt;野村证券上市首日给出的目标价只有370元，该目标价较8月24日603.08元的收盘价位低将近四成。&lt;/p&gt;&lt;p&gt;不是机构不看好人形机器人的未来，而是当下这个价格，把太多还没发生的事情都提前定价了。&lt;/p&gt;&lt;p&gt;付鹏向凤凰网《风暴眼》指出，翻看宇树科技财报可以看到几个现实问题：一是公司终端客户以科研院校、科研院所为主，采购大多来自科研经费，几乎不存在复购，经费落地采购完成之后就结束；二是深圳地区同类机器人组装已经变得十分普遍，作为行业标杆企业，宇树面临不小的竞争压力。&lt;/p&gt;&lt;p&gt;宇树科技在回复第二轮问询函时披露，2025年1—9月，公司人形机器人实现营收5.95亿元，其中73.6% 来自科研教育客户，包括高校、研究机构等。来自商业消费场景的营收占人形机器人营收的17.39%，以企业导览、智能制造、智能巡检等为主的行业应用贡献了人形机器人营收的9.01%，而在此之前科研教育客户所贡献的营收占比更高。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/96452D5C53BA0A49C26205659EAD34C670F84AEB_size64_w865_h492.png" alt="凤凰网《风暴眼》制图"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;凤凰网《风暴眼》制图&lt;/p&gt;&lt;p&gt;也就是说，现在人形机器人是靠科研教育、商场导览、舞台表演撑起的收入，是把技术消费品卖给了研究型买家，“卖教具”而不是“卖生产力”。&lt;/p&gt;&lt;p&gt;早在2025年，金沙江主管合伙人朱啸虎在接受采访时就透露，其天使基金过去几年投过一些早期具身智能项目，“最近几个月都在退出”。他问过这些公司的CEO同一个问题：你们商业化的客户到底在哪里？“我感觉他们说的都是自己想象出来的客户，” 朱啸虎说，“谁会花十几万买一个机器人去干这些活？”&lt;/p&gt;&lt;p&gt;财经评论员刘戈则对凤凰网《风暴眼》表示，宇树科技创始人王兴兴自己也公开讲过，具身智能距离ChatGPT时刻还非常遥远，按王兴兴给出的标准，机器人要能在80%的陌生场景完成80%的任务，目前还远远达不到。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_35/DE7C9FBD6D18BE19B79DE46107975E9D5B231980_size220_w1269_h642.jpg" alt="宇树科技机器人在春晚跳舞 图源：网络"&gt;&lt;/p&gt;&lt;p class="picIntro"&gt;宇树科技机器人在春晚跳舞 图源：网络&lt;/p&gt;&lt;p&gt;而当下人形机器人的高估值，照搬的是华尔街叙事逻辑——对标全球汽车市场，幻想人形机器人未来走进千家万户，只要拿下百分之几的市场份额，就是一个天量市场。&lt;/p&gt;&lt;p&gt;“这个估值模型的前提，是人形机器人能大规模进入家庭。但行业现状是：机器人躯体硬件进步神速，AI大脑却原地踏步。而大脑不突破，机器人就进不了家庭，只能局限在工业、科研、表演等专用场景，那就退化成普通装备制造业，和机床企业没有本质区别。” 刘戈提到。&lt;/p&gt;&lt;p&gt;在他看来，当下宇树科技的合理估值区间在600-1000亿，而在10年之内通用人形机器人不可能走进家庭。&lt;/p&gt;&lt;p&gt;王兴兴自己也承认人形机器人的“ChatGPT 时刻”快则2至3年，慢则5年甚至10年才能实现，产业才会真正迎来临界爆发点。&lt;/p&gt;&lt;p&gt;可资本市场等不了那么久。&lt;/p&gt;&lt;p&gt;宇树的股价震荡，不是对人形机器人这个方向的否定，更像是市场在狂热之后的一次深呼吸。&lt;/p&gt;&lt;p&gt;资本市场已经给足了溢价，接下来该宇树自己证明了，它不只是一个会上热搜的网红机器人，而是一台真正能创造经济价值的机器。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;03 宇树科技的合理估值区间在600-1000亿&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;以下为凤凰网《风暴眼》与财经评论员刘戈的对话实录，有删减&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt; 宇树科技上市开盘一度大涨，您觉得它为什么能涨到这么高？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;刘戈&lt;/strong&gt;：这是多重因素叠加的结果。&lt;/p&gt;&lt;p&gt;首先，宇树科技是几百家人形机器人企业当中，为数不多跑通商业闭环的公司，产品卖给科研院所、景区，有真实出货量、真实销售额，也实现盈利，这是它和同行最大的基本面区别。但说实话，这点利润对上市后的高股价支撑力度很弱，真正把市值推上去的是后面几层因素。&lt;/p&gt;&lt;p&gt;它是A股人形机器人第一股，自带稀缺性。如果同等质地放到港股、美股，估值可能要砍掉五到十倍。但A股需要一个具身智能的标杆，资本捕捉到这个信号后，也跟着纷纷入局，进一步强化了市场预期。最后上市之后，散户追高热情高涨，把股价从机构定价的基础上又炒了一截。几层因素叠加，就炒到了那个高度。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;从开盘高点至今，宇树科技市值已经下跌超45%，您认为是为什么？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;刘戈：&lt;/strong&gt;核心是应用场景有限。&lt;/p&gt;&lt;p&gt;宇树科技创始人王兴兴自己也公开讲过，具身智能距离ChatGPT时刻还非常遥远。他给出一个标准：机器人要能在80% 陌生场景完成80%的任务，目前远远达不到。&lt;/p&gt;&lt;p&gt;而当下人形机器人的高估值，照搬的是华尔街叙事逻辑——对标全球汽车市场，幻想人形机器人未来走进千家万户，只要拿下百分之几的市场份额，就是一个天量市场。&lt;/p&gt;&lt;p&gt;这个估值模型的前提，是人形机器人能大规模进入家庭。但行业现状是：机器人躯体硬件进步神速，AI大脑却原地踏步。而大脑不突破，机器人就进不了家庭，只能局限在工业、科研、表演等专用场景，那就退化成普通装备制造业，和机床企业没有本质区别——估值逻辑一塌，股价自然就下来了。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;您提到的“大脑突破”，和王兴兴所说的人形机器人ChatGPT时刻，是不是同一个概念？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;刘戈：&lt;/strong&gt; 是一回事，所谓ChatGPT时刻，指的就是机器人AI大脑实现范式突破。&lt;/p&gt;&lt;p&gt;回顾AI发展史就知道这种突破有多难。&lt;/p&gt;&lt;p&gt;早年深蓝下棋、后来AlphaGo，大家都以为找到了人工智能的终极路径，事后证明都不是；直到ChatGPT出现，才真正完成大模型范式跃迁。&lt;/p&gt;&lt;p&gt;人形机器人同理，只有大脑实现类似级别的突破，才有可能真正走进家庭。&lt;/p&gt;&lt;p&gt;为什么这么难？现在人形机器人所用模型，底层逻辑源自自动驾驶。做自动驾驶，需要的数据量级相当于一个小镇；要实现能在家庭里干各种活的通用人形机器人，需要的数据量级堪比太阳系。现有技术路线，从小镇走到县城是可以的，但要走到太阳系级别，差距是数量级的，不是靠堆钱堆人就能短期跨越的。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;那通用人形机器人这条路最终能走通吗？大概多久可以真正落地家庭？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;刘戈：&lt;/strong&gt;长期看技术上有可能走通，我的判断，10年之内通用人形机器人不可能走进家庭。&lt;/p&gt;&lt;p&gt;这个判断的依据，就是前面说的数据量级差距和大脑突破的不确定性，范式突破从来不是线性的，你没法按现在的进度条去推算哪天到终点。&lt;/p&gt;&lt;p&gt;但这不代表具身智能没有进步。恰恰相反，细分场景的落地可能比大家想象的更快。&lt;/p&gt;&lt;p&gt;就像送餐机器人，在所谓ChatGPT时刻之前就已经普及了；户外巡检、特定照护，例如帮失能老人洗澡的专用人形机器人，或许也会较快出现。中国在专用机器人的工程化和成本控制上有优势。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;市场有观点把宇树科技类比早期宁德时代、比亚迪，它有没有机会成长为赛道巨头？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;刘戈：&lt;/strong&gt;赛道存在诞生巨头的机会，但巨头未必会是宇树科技。&lt;/p&gt;&lt;p&gt;原因有几层：第一，宇树当前的优势在硬件和动态平衡，不在大脑，而决定人形机器人终局的恰恰是大脑；第二，大脑属于信息领域，技术一旦突破很容易被复制，先发优势不一定守得住；第三，整个赛道还处在非常早期的阶段，格局远未定型。&lt;/p&gt;&lt;p&gt;参考互联网发展史，很多当年万众瞩目的明星公司，最后都销声匿迹，反而是后来者弯道超车。人形机器人大概率也会走这条路——现在的龙头，不等于最后的赢家。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;当前宇树科技股价接近腰斩，您觉得还有下降的空间吗？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;刘戈：&lt;/strong&gt;我认为还会继续下跌。它合理估值区间大概在600-1000亿。这个估值对应的不是“通用人形机器人平台公司”，而是 “有稳定出货的专用机器人+零部件供应商”，本质上是装备制造业的估值逻辑，不是科技成长股的估值逻辑。&lt;/p&gt;&lt;p&gt;它有真实客户、稳定出货，包括机器狗、景区、高校科研采购，这些业务是扎实的，但天花板很低。全球高校每家采购几台，市场体量有限；景区、表演场景也撑不起一个万亿级公司。业务真实和有巨大想象空间，是两回事。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;宇树科技未来能不能继续保持赛道龙头地位，核心要看能不能突破“大脑”吗？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;刘戈：&lt;/strong&gt;对，核心变量就是大脑。但问题在于，大脑这个东西属于信息领域，技术很容易被复制，不是宇树一家能关起门来垄断的。&lt;/p&gt;&lt;p&gt;一旦行业实现大脑层面的重大突破，叠加宇树已经具备的优秀躯体、动态平衡硬件能力，它确实会如虎添翼。&lt;/p&gt;&lt;p&gt;打个比方，相当于已经造出一台硬件极好的个人电脑，等待Windows操作系统诞生。但 Windows不一定是你自己做出来的，而且一旦做出来，所有硬件厂商都能装。&lt;/p&gt;&lt;p&gt;所以目前市场还是一个充分竞争状态，宇树在硬件上有优势，但还没有形成绝对壁垒。它能不能从“现在的龙头”变成“最后的赢家”，取决于大脑突破来临时，它能不能第一时间接住、并且把硬件优势转化为生态优势。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;04 宇树科技本质还是一级市场风险投资，不属于长期价值、成长类标的&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;以下为凤凰网《风暴眼》与经济学家付鹏对话实录，有删减。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;宇树科技上市四个交易日，股价较开盘价回撤超过45%，约2000亿市值蒸发。您怎么看这轮剧烈震荡？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;付鹏：&lt;/strong&gt;其实不意外。宇树上市前估值就已经远超市场普遍共识，上市之后冲高波动十分夸张。机器人行业还处在非常早的早期阶段，虽然已经完成IPO，但本质完全是一个一级市场的风险投资。在科技浪潮的狂热预期之下，现阶段它还不属于长期价值、成长类标的。普通投资者拿少量资金博弈未来可以，如果想要追求稳定投资回报，它并不是合适的投资标的。&lt;/p&gt;&lt;p&gt;翻看财报能看到几个很现实的问题。一是终端客户以科研院校、科研院所为主，采购大多来自科研经费，经费落地、采购完成之后就结束了。二是深圳地区同类机器人组装已经变得十分普遍，作为行业标杆企业，宇树面临不小的竞争压力。还有一点，作为人形机器人行业标杆，上市融资的资金理应投向研发，但它的研发经费甚至低于牧原股份养猪业务的研发投入 —— 这本身就是行业尚处在早期的信号。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;凤凰网《风暴眼》：&lt;/strong&gt;您之前用 “吸星大法”来形容当下的市场行情，宇树上市是不是一个典型案例？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;付鹏：&lt;/strong&gt;对，宇树上市那一天就是典型的吸星大法，大量市场资金被它“吸”走了。这不是个例，比如放眼美股近半年行情也能看到相似特征：指数看似坚挺，但真正对指数形成有效支撑的股票数量在快速下降。等权波动率居高不下，指数波动率却被压得很低，这就是典型的资金缩圈结构——资金不断向少数核心标的集中，边缘资产的流动性被抽离。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网财经</author><pubDate>Mon, 24 Aug 2026 13:08:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE1PNDFtSGFORWVZRHE0d0Ywd2VHMkJ3Wkp0RTlmWVMyQ1BJc1FfMUlacmdIVUtEVzFKUDBwc0hqNDRqRTVLS1hmODJCeEl2Nmd5</guid></item><item><title>SSD价格太贵 Win11省点用吧：一个命令可节省大量C盘空间 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146029.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月24日消息，如今不仅是内存价格涨了5-10倍，SSD硬盘也比去年贵了好几倍，大家只能多找点节省空间的用法了，Win11就有技术就可以让C盘节约大量空间。&lt;/p&gt;
-&lt;p&gt;Neowin网站写了一篇文章，&lt;strong&gt;宣称有用户在翻阅Windows文档时发现了一个功能——Compact OS&lt;/strong&gt;，它允许用户在压缩的文件系统上运行系统。&lt;/p&gt;
-&lt;p&gt;微软也解释过Compact OS本质上是以压缩形态存储Windows系统文件，而不是将文件保存在未压缩的硬盘上，这将显著减少系统的磁盘占用，该功能对存储空间有限的设备非常有用。&lt;/p&gt;
-&lt;p&gt;那具体能减少多少空间呢？微软之前提供了例子，4GB内存上使用Win10 x64系统，C盘空间未压缩时需要15.06GB，启用Compact OS压缩后只要11.3GB，&lt;span&gt;&lt;strong&gt;单实例化之后更是只要10.09GB，差不多能减少5GB空间，相当于1/3空间减少了。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;原文把Compact OS写的好像很神秘，单这个功能其实大家都见过，打开系统盘C盘的属性就能看到压缩的选项，它确实可以节省磁盘空间，但压缩之后意味着需要的时候也要先解压，多了额外的操作，有可能会给某些地方带来负担。&lt;/p&gt;
-&lt;p&gt;还有一个图形化的&lt;a class="f14_link" href="https://github.com/IridiumIO/CompactGUI/releases" target="_blank"&gt;CompactGUI软件&lt;/a&gt;可以更直观地管理压缩的文件，不需要命令行操作处理了，感兴趣的可以试试。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260824/2d157a14-328a-43a0-9991-ba2d49826e8b.jpg" target="_blank"&gt;&lt;img alt="SSD价格太贵 Win11省点用吧：一个命令可节省大量C盘空间" h="337" src="//img1.mydrivers.com/img/20260824/S2d157a14-328a-43a0-9991-ba2d49826e8b.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这个功能默认是关闭的，微软自然有它的道理，所以只要不是C盘空间太小，一般也没必要开启这个功能，可以压缩的文件主要是一些系统文件及文本文件，图片视频游戏一般不行，压缩价值不大。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260824/7b37c726-dd45-4f78-93b0-2688c49f567f.png" target="_blank"&gt;&lt;img alt="SSD价格太贵 Win11省点用吧：一个命令可节省大量C盘空间" h="785" src="//img1.mydrivers.com/img/20260824/S7b37c726-dd45-4f78-93b0-2688c49f567f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 24 Aug 2026 13:02:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9Fa0FKZHJnTFRWejM3cEJaaUJndDRmaFBaWlVXWlZxeERMZjRyZTZOMlQ0dlh1VUtURThqNUtkRjg2cjNrQ2g4bXlwVUFXOGpWTkp1VHE0ZTM</guid></item><item><title>何小鹏放话：小鹏人形机器人要真正量产 和市面产品全都不一样 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146027.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月24日消息，小鹏机器人业务完成首轮超9亿美元融资之后，何小鹏在社交平台发声，对外透露人形机器人的发展目标。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;何小鹏表示，不远的将来，我们会努力将第一个高阶人形机器人带入到真正的现实，她会和市面上所有看到的机器人都不一样。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;更拟人，更安全，不用遥控器，可自然交互，有自己的记忆，真正创造价值，不是演示而是真正量产，走到现实。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260824/81633313b9ec437f9af2c02c8602b249.png" target="_blank"&gt;&lt;img alt="何小鹏放话：小鹏人形机器人要真正量产 和市面产品全都不一样" h="443" src="//img1.mydrivers.com/img/20260824/s_81633313b9ec437f9af2c02c8602b249.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;现在市面上不少人形机器人，大多还停留在演示阶段，很多动作都需要遥控器操控才能完成。小鹏这款机器人希望摆脱遥控器，依靠AI完成自主判断，实现和人自然沟通，还能记住过往交互信息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本次机器人业务拿到超9亿美元融资，投后估值超过63亿美元，刷新国内具身智能行业单轮私募融资纪录。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;小鹏集团依旧保持对机器人业务的控股。这笔资金主要投入软硬件研发、物理AI模型训练、量产基地建设还有海外商业化拓展。&lt;/p&gt;
-&lt;p&gt;按照规划，人形机器人IRON计划2026年底推进量产，最先会在小鹏门店、园区落地使用，2027年面向国内外市场交付。&lt;/p&gt;
-&lt;p&gt;这条动态发出之后，评论区网友讨论很热闹。一部分网友十分期待产品落地，也有网友提出疑问，认为现阶段不用遥控器实现完整运行难度不小。&lt;/p&gt;
-&lt;p&gt;人形机器人行业还处在早期，能不能顺利实现大规模量产，还要看后续实际落地表现。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260824/5189147023e74c01a598303ed7921586.jpg" target="_blank"&gt;&lt;img alt="何小鹏放话：小鹏人形机器人要真正量产 和市面产品全都不一样" h="800" src="//img1.mydrivers.com/img/20260824/s_5189147023e74c01a598303ed7921586.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 24 Aug 2026 12:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1BYmxIdDRORC1KaURBSFc3UnRnSDA0bE83SnNuWmQ5eFZHOTBDOThUdlFFNkRiYkxKaWUzVTR3eVVRbzBBYjNmOXZKSHlpNURwNllMMjBIaXo</guid></item><item><title>Intel SMT多线程回归或仅限服务器 酷睿不会有：核心数够多了 - 驱动之家</title><link>https://news.mydrivers.com/1/1146/1146025.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技8月24日消息，在12代酷睿处理器之后，Intel放弃了使用多年的SMT多线程技术HT（超线程），但现任CEO陈立武多次表示在这点上他们犯了错，会让SMT技术回归Intel处理器。&lt;/p&gt;
-&lt;p&gt;AMD之前就针对Intel不支持SMT多线程技术做过营销，认为他们会在企业级市场上占优势，所以Intel也确实需要回归SMT，不然至强处理器在可用的线程数量上就会有劣势。&lt;/p&gt;
-&lt;p&gt;但是SMT回归这事恐怕只会限于至强处理器，不会出现在客户端级处理器，也就是消费级的PC处理器，&lt;span&gt;&lt;strong&gt;桌面及移动版酷睿不会重新支持HT超线程技术。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;理由也很简单，那就是现在的PC处理器物理核心已经够多了，SMT已经没啥意义，它只会在物理核心饱和之后才启动，&lt;strong&gt;要知道现在的PC处理器动不动就是16-32核了，确实对SMT需求不大。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;此外，SMT技术也不是没有代价的，它不是单纯的软件多线程，也有额外的物理设计，&lt;strong&gt;Intel多年前提到过会多占5%左右的晶体管&lt;/strong&gt;，因此代价也不低的。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20260824/af8637e778184825af209c2922321052.jpg" target="_blank"&gt;&lt;img alt="Intel SMT多线程回归或仅限服务器 酷睿不会有：核心数够多了" h="359" src="//img1.mydrivers.com/img/20260824/s_af8637e778184825af209c2922321052.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;虽然PC处理器不会重新加入SMT技术，但未来的架构更值得期待，因为Intel在搞统一核心，不仅核心总数会很多，对单核性能也有好处，这才是大家真正需要的提升。&lt;/p&gt;
-&lt;p&gt;至于SMT回归的时间，&lt;strong&gt;至强处理器会在Coral Rapids这一代出现&lt;/strong&gt;，这是面向2028年的下下代至强处理器，这一点已经在7月份的财报会议上确认了。&lt;/p&gt;
-&lt;p&gt;这一代至强的CPU内核是Griffin Cove，虽然也会用于酷睿处理器，但它应该是有两个版本，至强版支持SMT，酷睿版不支持SMT。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;传闻的统一核心还要等到Hammer Lake这一代&lt;/strong&gt;&lt;/span&gt;，这个代号倒是非常有意思，20多年前AMD的K8架构就用过Hammer的代号，获得了空前的成功。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20260824/3fe69915-84c5-43b8-86f7-ec7cf36c3c00.png" target="_blank"&gt;&lt;img alt="Intel SMT多线程回归或仅限服务器 酷睿不会有：核心数够多了" h="503" src="//img1.mydrivers.com/img/20260824/S3fe69915-84c5-43b8-86f7-ec7cf36c3c00.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Mon, 24 Aug 2026 12:31:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9OaHJ6OWZWWmJKaC1aMklfZzhIWHY2WVpEZDlRXzE1NGYwOXUxcEo4emhKRDluSnpzR29OaC1JX3lNTk82OVRKMVpwb1lTUDY1b25NREtyemE</guid></item><item><title>利好，上海重大发布 - 凤凰网</title><link>https://finance.ifeng.com/c/8vr8Ss2I1We</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;上海发文，事关多个未来产业。&lt;/p&gt;&lt;p&gt;8月24日，上海市人民政府印发《上海市加快推进新型工业化构建现代化产业体系“十五五”规划》的通知（以下简称“通知”）。其中提到，发挥产业地图引导作用，因地制宜发展新质生产力。市级聚焦10条重点产业链，做强新一代电子信息、智能网联新能源汽车、高端装备、软件和信息服务等万亿级产业集群，新增打造集成电路、生物医药、人工智能三个万亿级产业集群。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/CC8039BFA07321504004D740EF72DAA5008B1FC8_size85_w755_h543.png"&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;强化三大先导产业战略引领&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;通知提出，强化三大先导产业战略引领，其中涉及集成电路、生物医药和人工智能（AI）产业。&lt;/p&gt;&lt;p&gt;对于集成电路产业，通知指出，坚持全链突围、集群进阶，全链条推动集成电路关键核心技术攻关，聚焦张江、临港、嘉定核心区域建设“一体两翼”世界级产业集群。&lt;/p&gt;&lt;p&gt;强化高端设计牵引，推动电子设计自动化（EDA）、知识产权核（IP）高端化发展，大力培育行业龙头企业，加快行业并购整合、产业链融合，推进高性能算力芯片、通用处理器芯片、存储芯片、互联芯片和智能传感器达到国际先进水平。提高制造水平和封装能力，加快重大产线项目建设，推动工艺加速迭代和产能跃升，建强特色工艺，加快先进封装技术产业化。提升装备材料零部件能级，加快体系化、平台化发展，提升技术水平。&lt;/p&gt;&lt;p&gt;生物医药产业方面，通知称，持续开展原创药物创制，大力推进化学药、生物药、中药等新药研制，强化新型高端制剂的研发、转化、上市、生产。支持大IP品种开发，推动创新药国际化。加快发展高端医疗器械，重点发展医疗装备、植入介入、脑机接口等高附加值产品，加快上市应用。&lt;/p&gt;&lt;p&gt;人工智能（AI）产业方面，通知指出，坚持底座支撑、融合赋能，强化全栈技术创新，聚焦浦东、徐汇等核心承载区，打造世界级产业集群。全面提升智能计算能力，攻关高性能、低功耗、高效率的智算芯片，提升集群组网和云服务能力，探索异构计算、光计算、量子人工智能等创新架构；优化智算基础设施，构建城市算力网络。持续发力大模型，聚焦下一代大模型研发，攻克架构设计、训练优化等关键技术，推动芯片、大模型、智算云协同发展，构建自主生态。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;全面打造新型智能终端&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;通知还提出，着力打造六大新兴支柱产业集群，包括新一代电子信息、智能网联新能源汽车、高端装备、先进材料、新能源及绿色低碳和时尚消费品。&lt;/p&gt;&lt;p&gt;通知指出，坚持终端创新、强链延链，加快培育新兴动能，重点布局浦东、松江、青浦、静安等区域。全面打造新型智能终端，大力发展AI手机、AI电脑、AI服务器、AI新终端等产品，支持“联合开发+核心零部件”代工新模式。以AI智能体为核心，完善“芯片器件+终端设备+软件设计+内容服务”全产业链生态，培育新物种、新品牌。加快布局新型通信设备。&lt;/p&gt;&lt;p&gt;支持第五代移动通信演进（5G-A）芯片、模组研发，加快第六代移动通信（6G）通信技术产品创新，推动卫星通信设备量产与终端研制。攻关高精度传感器、激光通信器件等关键装备。前瞻发展下一代显示及超高清视听。支持微型发光二极管（Micro LED）、硅基有机发光二极管（OLED）、柔性显示等技术发展，突破光波导、驱动芯片、核心装备、关键材料等环节，推动超高清视听技术和装备规模化应用。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;发展壮大民用航空装备&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;在智能网联新能源汽车产业方面，推动整车智造转型升级，强化整车龙头企业本地研发，聚焦自动驾驶、动力电池创新，深化全栈技术自主可控，丰富高端产品供给。加快智能网联创新应用，深化自动驾驶实训场建设，实现L2级组合辅助驾驶新车全覆盖，加速L3级有条件自动驾驶、L4级高度自动驾驶量产。&lt;/p&gt;&lt;p&gt;稳步推进智能公交、智能重卡、智能出租等自动驾驶创新应用示范，推进无人驾驶特种作业车应用。推动“三电”（电池、电驱、电控）领域协同突破，布局新一代动力电池研发和量产线，抢占转型新赛道。&lt;/p&gt;&lt;p&gt;此外，加强“三智”领域技术攻关，推进智能驾驶大模型研发应用，推动智能座舱人工智能系统、一体化智能底盘量产落地。提升“两核”（车规芯片、车载软件）自主可控水平，实现与整车联动发展、系统整合。加大交通出行多域融合前瞻布局。&lt;/p&gt;&lt;p&gt;高端装备产业方面，通知提出，发展壮大民用航空装备，推动C909系列化、C919量产、C929研制，突破航空发动机、机载系统、复合材料、航空制造装备等关键配套，加快培育本土大飞机和低空装备产业链。创新发展商业航天和卫星互联网，发展系列化重复使用商业火箭，突破星载相控阵天线、手机直连卫星等关键配套，提升卫星智能制造与批量化能力，加快“千帆星座”“智慧天网”等组网，拓展交通甚高频数据交换系统（VDES）应用。&lt;/p&gt;&lt;p&gt;相关阅读&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.shanghai.gov.cn/zhengce/detail?businessId=0c052ef0042c4a09bcae2adfe2babe62&amp;amp;siteId=0001" target="_self" ifengapp-data="%7B%22type%22%3A%22web%22%2C%22url%22%3A%22https%3A%2F%2Fwww.shanghai.gov.cn%2Fzhengce%2Fdetail%3FbusinessId%3D0c052ef0042c4a09bcae2adfe2babe62%26siteId%3D0001%22%7D"&gt;上海市加快推进新型工业化构建现代化产业体系“十五五”规划&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Mon, 24 Aug 2026 12:07:44 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE53V3JFakZjbTQ1T3czWURhUDlDMy1SMng5c2Y1ZmVWQlRGVU51eDQyUGRWXzBGZDQ0bzl4U0JQZTNPY0RQS19Ud1RXSzRkLTJ3</guid></item><item><title>台湾基隆地检署以涉嫌非法向中国出售高阶芯片伺服器罪名起诉九人 - RFI</title><link>https://www.rfi.fr/cn/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20260824-%E5%8F%B0%E6%B9%BE%E5%9F%BA%E9%9A%86%E5%9C%B0%E6%A3%80%E7%BD%B2%E4%BB%A5%E6%B6%89%E5%AB%8C%E9%9D%9E%E6%B3%95%E5%90%91%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%94%AE%E9%AB%98%E9%98%B6%E8%8A%AF%E7%89%87%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%BD%AA%E5%90%8D%E8%B5%B7%E8%AF%89%E4%B9%9D%E4%BA%BA</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Mon, 24 Aug 2026 12:02:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi0wNBVV95cUxPS3FPQ0JYaHJJMjZaOVN0REYyVXI1QUpYR056MEpnTFJNUjBkdGQ1Rnd1bUZXOUxtaEFjQjZGaFlUQklwc19PR1h6YVhvcEtWbDNhQkRNOEE3MF9sSldERWctekxza0JOTTYtSlVMVW9EWnNYTzZoU1l1NUIzUFdxVnF4NGViUGFkMmNGbnpycXk0SVBQX05WVWlhOVpCVjVCTTdQQlJ6Z0lWNXJJRVZzQjl6bTBJazBrLWV4aWlvNUp2R2x1ei1VMlU2QldfUzVjRnpUbHFBTXRrWmxDV1Vrbm00cldERHJPREhFQXNzNFM4T1Jld3dtSG1XZjBtemM0UnBBbnJLUUhWN1BLdnRYSHhkRU5Gak94Z3hka2Nrc3gtRlhjT3F4LUlxTno3OHFpa3I4cHpTR3U0czRHUExQX0w5dVFDYWdCcHFnRzJFMUVwTE5BUU9XbmhFQ1MwT0oyWldKdFJrRjFsaXlPQzFRSUlyUUdISktLWTJrUXBWc2dJQXVfWUUxTUJsZ18zWEtuWmZ0VFFWak5CTlkxeGphaUpYd1B5Q251WV95bUdaZk9GRVh4YmtlMlNxZE00amtCTDlFT0FIai1raUhmOU1jYnQwYw</guid></item></channel></rss>
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪新闻_手机新浪网</author><pubDate>Mon, 24 Aug 2026 13:19:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMidEFVX3lxTE01SFNmYmkwUXhjb0tILU1VUWFHTzdnWWRSUUxSeWhZT282aDFKbElzZHVuT0dlNkhoTUd3WmZ6UFhuZ1lpTkFkM19BSjIwWlR4cS1ONENTdmFvYjdaMkktT0lQd0dIM29wUkNLai11X1NjSWtN</guid></item></channel></rss>
