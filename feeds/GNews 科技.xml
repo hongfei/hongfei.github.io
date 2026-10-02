@@ -1,5 +1,407 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Windows 11 26H2内存占用优化！但优化只有高配才能享受 - 3DM</title><link>https://www.3dmgame.com/news/202610/3955174.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>GNews 科技</title><link>https://news.google.com/</link><description></description><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>特斯拉大涨！三季度全球交付量超预期，欧洲8月同比增长53% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782939</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 14:12:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5xYVdKb3ZvdV9OUFBEYU4wUlNjMjR6c01WSm0weHYyVVR6VDhfeWw0Q2JEd3FpOHhXV0FmMUF5LTJaVEVyREFyVkhqV01kRnJqWWhB</guid></item><item><title>当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155186.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;strong&gt;一、故事的起点：每个开发者桌上都该有一台AI超算&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;要理解 64GB 版本为什么会出现，得先回到DGX Spark诞生的原点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;将2台DGX Spark 64GB组网之后，带来了翻倍的算力、翻倍的内存容量与显存带宽。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;个月之后，NVIDIA做了一件在当时看来相当激进的事：把一颗Grace Blackwell芯片（GB10）塞进了一个1L大小的盒子里面，配上128GB统一内存。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/fa74e277-cd84-46b0-9498-85a9ea11865e.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="667" src="//img1.mydrivers.com/img/20261002/Sfa74e277-cd84-46b0-9498-85a9ea11865e.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这台机器叫DGX Spark，凭借&lt;strong&gt;大容量本地内存 + 完整的NVIDIA AI软件开发环境，将原本属于数据中心的AI算力，第一次以消费级价格摆上了个人桌面。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、Agent元年与Token海啸&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1、AI Agent 项目爆发式增长&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/2ccbeb41-4522-4f0b-a128-b5a6b12e3a25.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="393" src="//img1.mydrivers.com/img/20261002/S2ccbeb41-4522-4f0b-a128-b5a6b12e3a25.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Agent项目的增长速度，超过了Linux&lt;/p&gt;
+&lt;p&gt;在GitHub上，Agent类开源项目的受欢迎程度远超传统基础软件。比如OpenClaw项目只用一年时间就攒下373K Star，比Linux十四年时间积累的总数还多；PyTorch用了八年时间，Star数也才刚摸到100K的门槛。&lt;/p&gt;
+&lt;p&gt;更能说明问题的是Token消耗。&lt;/p&gt;
+&lt;p&gt;根据OpenRouter对 Top 50 热门应用的数据统计，&lt;strong&gt;Agent类应用每月消耗的 Token 达到了惊人的27万亿（Trillion），占据了平台总Token消耗量的80%&lt;/strong&gt;。相比之下，包括对话在内其他AI应用的总Token消耗量只有6万亿。&lt;/p&gt;
+&lt;p&gt;也就是说，2026年的AI计算负载，已经从&lt;strong&gt;人对着对话框聊天"变成了Agent自己读文件、写代码、调工具、跑长链路。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、本地模型能力追平前言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当然，Agent爆发的前提，是本地模型的能力能满足日常使用需求。随着AI模型的不断训练与发展，如今14B参数的模型便能轻松超越两年前的32B，而27B模型的能力足以媲美当年 70B甚至120B级模型。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/396b8617-f942-4f56-8ac8-1ef0bb30c6a6.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="405" src="//img1.mydrivers.com/img/20261002/S396b8617-f942-4f56-8ac8-1ef0bb30c6a6.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;根据Artificial Analysis提供权威基准数据，跑在桌面上的Qwen 3.8 27B模型得分为34，比起DeepSeek V4.1 Flash（40）只差了6分，和GLM-5.3 Flash（42）相比，只差 8 分。&lt;/p&gt;
+&lt;p&gt;也就是说，&lt;strong&gt;现在一个27B模型的实际表现，和云端前沿大模型的差距已经缩小到 10分以内，&lt;/strong&gt;这让在本地运行高性能Agent真正变成了现实。像写代码、跑 Agent、处理文档这类具体任务，27B 模型已完全能够轻松应对。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三、64GB DGX Spark能做什么&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;讲到这里，必须直面一个绕不开的问题：内存涨价。&lt;/p&gt;
+&lt;p&gt;2026年9月，DDR5内存的现货价格比起一年前上涨了480%，DGX Spark 128GB在2025年10月发售时，售价只有3999美元。2026年2月，小幅调整至4699美元。而到了现在，其官方售价已经飙升到了6950美元。&lt;/p&gt;
+&lt;p&gt;接近7000美元的天价，已经远超普通消费者所能承受的范围，如果不做点什么，“人人桌上都有超算”就只是一句空话。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/6c32267e-7135-48df-aee9-6e7d2a92f3c1.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="365" src="//img1.mydrivers.com/img/20261002/S6c32267e-7135-48df-aee9-6e7d2a92f3c1.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NVIDIA的解法，&lt;strong&gt;是推出64GB版本DGX Spark，&lt;/strong&gt;&lt;strong&gt;它砍的只有内存容量，其他规格原封不动：同样的GB10芯片，20核Arm处理器、1 PFLOP FP4算力以及273GB/s内存带宽。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那么&lt;strong&gt;DGX Spark &lt;/strong&gt;64GB到底能做什么呢！&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/595ca5dc-8164-492f-b286-adaf89f73ecf.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="423" src="//img1.mydrivers.com/img/20261002/S595ca5dc-8164-492f-b286-adaf89f73ecf.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;首先需要明白一点，&lt;/strong&gt;64GB是统一内存，其中DGX OS需要占用8GB，剩下的56GB就是模型权重 + KV Cache能用的容量。&lt;/p&gt;
+&lt;p&gt;在NVFP4（4-bit 浮点）量化加持下，DGX Spark 64GB运行26/27B模型时，权重仅需15~17GB空间；像Qwen3.6 35B-A3B这样的模型，权重占用也有21GB。&lt;/p&gt;
+&lt;p&gt;高达35GB-41GB的剩余容量给了KV Cache，这就意味着开发者可以在本地部署时可以将上下文长度拉得很长，轻松胜任多轮高并发的Agent链式推理，无需担心显存溢出。&lt;/p&gt;
+&lt;p&gt;而64GB版本有一个意想不到的好处：&lt;strong&gt;便宜的售价能刺激你再买一台。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2台DGX Spark 64GB组网后能获得远超单台DGX Spark 128GB的算力。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/3034082b-f8f3-4910-9820-91ac7d0e1efa.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="404" src="//img1.mydrivers.com/img/20261002/S3034082b-f8f3-4910-9820-91ac7d0e1efa.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在运行量化版 Qwen3.8-27B时，64GB与128GB版本的单机推理速度完全一致。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;将2台DGX Spark 64GB组网之后，带来了翻倍的算力、翻倍的内存容量与显存带宽。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在运行Qwen3.8-27B模型时，每台各贡献1 PFLOP算力、273GB/s带宽并行计算；模型权重也平分到两台，每台只装一半（约8GB）。结果就是换来了74%的性能提升。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个简单的算术，你多花了40%的成本，就能获得74%的额外性能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;预算充足的话，&lt;strong&gt;还可选择四台&lt;/strong&gt;&lt;strong&gt;DGX Spark 64GB方案，&lt;/strong&gt;无需复杂的交换机配置，仅通过设备直连即可组建高速算力集群&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四、NVIDIA Sync 集群管理套件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;多机组集群最大的门槛从来不是硬件，而是软件以及生态的支持，为此，NVIDIA专门推出了&lt;strong&gt;NVIDIA Sync&lt;/strong&gt; 软件工具。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/4ebc09c8-097a-4817-960a-0a3f13c3b9d3.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="442" src="//img1.mydrivers.com/img/20261002/S4ebc09c8-097a-4817-960a-0a3f13c3b9d3.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NVIDIA Sync能做的事情包括以下这些：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;远程控制台与 IDE 无缝接入&lt;/strong&gt;：从笔记本或台式机远程连接 DGX Spark，实时查看系统状态，并直接对接 Cursor、VS Code、NVIDIA AI Workbench 等主流开发环境。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cluster Assistant（集群助手）&lt;/strong&gt;：自动发现设备、配置ConnectX-7网络、验证连通性并部署 NCCL，无需手动编辑任何配置文件，最多支持4台组集群。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Model Launcher（模型启动器）&lt;/strong&gt;：支持一键向单机或多节点 Spark 集群分发并部署 vLLM 容器化模型。&lt;/p&gt;
+&lt;p&gt;说简单点，如果有多台DGX Spark需要组网，你不用去编辑任何配置文件，NVIDIA Sync能直接搞定一切，从组网到跑模型全程点按钮即可完成。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;五：价格以及其他&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;NVIDIA推出DGX Spark 64GB的目的很简单：在Agent爆发、内存价格堪比黄金的年代，用消费者能够承受的价格，守住"人人桌上有超算"的承诺。它砍的只有内存容量，其他规格原封不动。&lt;/p&gt;
+&lt;p&gt;30B 级模型推理、Agent 开发、长上下文与原型测试，DGX Spark 64GB都能胜任。&lt;/p&gt;
+&lt;p&gt;如果想跑120B以上的大模型，现在多了一个选择：&lt;strong&gt;单买一台 128GB，或用两台 64GB 组集群，后者以多出40%的成本，换来了比DGX Spark 128GB还强74%的性能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/fb29d463-28f0-4926-b907-48509ff32ab6.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="320" src="//img1.mydrivers.com/img/20261002/Sfb29d463-28f0-4926-b907-48509ff32ab6.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DGX Spark 64GB将于2026 年 10 月 23 日正式上市，起售价4999美元。&lt;/p&gt;
+&lt;p&gt;DGX Spark 128GB Founder's Edition将在10月2日也就是今天正式调整到6950美元。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/5b949103-58b2-47e6-9eeb-5e53786afe26.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="336" src="//img1.mydrivers.com/img/20261002/S5b949103-58b2-47e6-9eeb-5e53786afe26.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/c91e2dd2-8af5-404c-8329-15db224486d7.png" target="_blank"&gt;&lt;img alt="当内存比黄金还贵时、NVIDIA如何守住人人桌上有超算的承诺！DGX Spark 64GB深度解析" h="313" src="//img1.mydrivers.com/img/20261002/Sc91e2dd2-8af5-404c-8329-15db224486d7.png" w="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OEM阵容：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;包括宏碁、华硕、戴尔、技嘉、新华三(H3C)、惠普、联想、微星、超聚变 (xFusion)在内的9大硬件厂商都会推出基于GB10/DGX Spark架构的桌面AI计算机产品。&lt;/p&gt;
+&lt;p&gt;其中首批推出64GB版本的有宏碁、华硕、戴尔、技嘉、惠普、微星6家。&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：流云&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 13:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1qVm1UVVZrS3dXVmp4TGNvd29pcFA5SXc5b2RLY0h1a2JFd1ZMSnZLS3djMFhkMEFDOVVDc1FQN2NmajNrTFdVZlZJWi1PNEh6UGV5MzkySjc</guid></item><item><title>不再是A卡独占 微软ASD技术全面支持RTX显卡：游戏加载时间暴降95% - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155183.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;不再是A卡独占 微软ASD技术全面支持RTX显卡：游戏加载时间暴降95%&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-10-02 20:36:04  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1155183-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月2日消息，相比很多游戏技术向NVIDIA显卡倾斜不同，微软之前推出的ASD技术是偏向AMD平台的，NVIDIA显卡都不支持，现在才算是正式放开。&lt;/p&gt;
+&lt;p&gt;根据微软的说法，&lt;span&gt;&lt;strong&gt;本月起ASD技术将部署到NVIDIA显卡平台，支持RTX GPU及RTX Spark。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Intel这边也有显卡受益，同样开放了ASD技术，但只限于Intel ARC B系列独立显卡（ARC B570和ARC B580），还有Intel Core Ultra Series 2和Core Ultra Series 3处理器的GPU核显。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/ab4b025c-0197-4488-ad40-852bf3787ddd.jpg" target="_blank"&gt;&lt;img alt="不再是A卡独占 微软ASD技术全面支持RTX显卡：游戏加载时间暴降95%" h="375" src="//img1.mydrivers.com/img/20261002/Sab4b025c-0197-4488-ad40-852bf3787ddd.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《战争机器：E-Day》将是首款AMD、NVIDIA、Intel甚至高通全平台支持ASD技术的游戏，《现代战争4》及其他未来作品后续也会加入支持。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ASD技术全称Advanced Shader Delivery（高级着色器交付）&lt;/strong&gt;，是去年微软联合AMD、华硕等公司发布ROG Xbox Ally时正式引入的，6月份扩展了PC平台上，现在正式向主流的GPU厂商全面开放了。&lt;/p&gt;
+&lt;p&gt;ASD技术能大幅提升游戏的加载速度，减少着色器的卡顿，此前在《极限竞速：地平线6》中做了实测，R7 5800搭配RX 7600显卡时，之前的加载时间需要1.5分钟，支持ASD之后只要4秒钟，&lt;strong&gt;加载时间暴降了95%，而且还绕过了着色器编译，减少了卡顿。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="不再是A卡独占 微软ASD技术全面支持RTX显卡：游戏加载时间暴降95%" h="337" src="//img1.mydrivers.com/img/20261002/20ee9e8e-d779-4a64-bf32-ed736dfaf713.png" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 12:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1jODVZbTVjSmQtNHEtbkhIVDQ4bGVJcVVKRHJyQXVKXzlIcUVSN3JFQjJZSmtOMWJ1aWZEM1Q2MFl3RExKVVJ6OFljck54d3BZZzFmYXVmUjY</guid></item><item><title>美国专栏 - 一场不能输的AI竞赛 美中在安全与领先间拉锯 - rfi.fr</title><link>https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E7%BE%8E%E5%9B%BD%E4%B8%93%E6%A0%8F/20261002-%E4%B8%80%E5%9C%BA%E4%B8%8D%E8%83%BD%E8%BE%93%E7%9A%84ai%E7%AB%9E%E8%B5%9B-%E7%BE%8E%E4%B8%AD%E5%9C%A8%E5%AE%89%E5%85%A8%E4%B8%8E%E9%A2%86%E5%85%88%E9%97%B4%E6%8B%89%E9%94%AF</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>rfi.fr</author><pubDate>Fri, 02 Oct 2026 11:58:37 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMikANBVV95cUxQbmNLT195cTRTcURsdEY2T0x0Y3MwTWZuejVGRW16c3JjRXNTWEx6bjVfem12cFlvc3QtWDFCVVBxTEtYR3hxSkt1cGx6bEZSaDJ2cG04Y2NfNGl0NzA0TG1GbUlBdkttaFZqTVZ1eWM1WE9tcDBXbUgzcjV1X1lTbU1XcXhUX214S1pJQlVSWTVvTGMtRldSUnlDdllIZVE3SW5xMS03MjM2dVhaYXhlTjZYT1E5ZUJrS3FpRUtYZ0Q5OTJTbHFKMGx6eGFSQzJGc0lwM2d6bWw3aTREQ2dPV2FpVFp6dlJiVm9iOHNTSHBNWmpacGVVUHpoWHoyeWRkUjluSDFET01PMHR5bkt6eFE5b01MMk5RSjRVMTJZOFJnUGNjVjM1M3U5UnRMSFFYSWVRMFlweWVVUi1xVzFQbGFPRmM0c3dvTGRTTEtvSjFXd0RTTWhUTEJoNEVyMFBkaXRWS3JyWDhlVjFSRkp1QzZxTGtFRWp1NXBXQ0swSXE0cUlhOUNINDZFRncwdVJm</guid></item><item><title>东芝豪掷600亿日元扩产HDD、产能拟翻倍，希捷科技盘前跌超10% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782934</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 11:34:06 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFA3clRfMl9mRVZvNXdia1lPU090MzBabzlUN1NJaWhETGZpZ1pRTEpCUW9MTzh1NUItYVhJcGhreWp1S0ZEdW82aFFqeURaWVVFV0U4</guid></item><item><title>“从17升级到18毫无意义！” 古尔曼揭秘苹果下个“大杀器”：首款Siri AI家居中枢与触屏MacBook Pro最快10月问世 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782932</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 11:12:01 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5JRlZqMDNOaVhkU0tpZDZMWW16OURHc2ZncGhZX2xtNU4tYTNnWjVmVFg0ZTE3OXNoc25oZFhGajlzQWkwX05oLVBKWU5zZk1JVjI4</guid></item><item><title>我的五线老家成了“Token之都” - 风闻</title><link>https://user.guancha.cn/main/content?id=1746951</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article-txt-content"&gt;
+						&lt;p&gt;　　&lt;strong&gt;杰西卡 发自 凹非寺&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;量子位 | 公众号 QbitAI&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　做梦都没想到，我老家，一座五线城市，被华尔街点名了！&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这里是“草原云谷”——乌兰察布。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　今年8月，高盛专门对这个内蒙古城市进行了研究：&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　截至今年6月，当地已经拿到约12.5GW的数据中心容量承诺，其中超过七成集中在最近一年，甚至超过OpenAI在2025年启动Stargate时，提出的10GW美国AI基础设施初始承诺。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　12.5GW啊！&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　要知道，去年全国所有算力中心的总用电量大约是1700亿千瓦时。如果12.5GW全部落地，并全年满负荷运行，一年的理论用电量约1095亿千瓦时，相当于去年全国算力中心实际用电量的六成以上。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　乌兰察布由此被高盛列入中国及亚太地区规模最大、增长最快的AI算力集群之一。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　很快，美国科技媒体WIRED也把镜头对准了这里，标题更是惊人——“一个意想不到的地方，正在成为中国AI热潮的中心”。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235206133.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　可以说乌兰察布一时热度四起，连我爸妈都在给我分享有关乌兰察布算力布局的视频……说实话，超乎我的预料。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　毕竟以前跟外地朋友介绍老家，我最常提起的还是草原、火山、羊，还有一年四季不停呼啸的风。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235207732.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　但最近再搜乌兰察布，它的名字绑定了一些新的名词，比如DeepSeek、华为、火山引擎，比如GPU、GW和Token……&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　我再一搜，到目前为止，乌兰察布落地数据中心项目已经超过100个，投运算力达到17.2万P，其中超过95%都是智能算力。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　原来已经如此密集了吗？&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　带着这个疑问，我这次回家之后，准备沿着城东那些数据中心看一圈。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　走起！&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;火到华尔街的乌兰察布，有什么变化？&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　出发时，我对这趟走访充满期待，准备先去火到华尔街的算力中心看看。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　预想中的算力中心，应该是屋顶和墙边排满设备，一排排大方柜嗡嗡作响，就算还没建设完善，哪怕先看看工地也好。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　而到了大致区域后，我最先看到的是……一群羊。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235207851.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　大片草地上，大大小小的羊低头吃草，预想中的厂房和塔吊，在这一段路上都没有出现。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　现场打听之后我才知道，集宁（乌兰察布市主城区）这一轮新签约的项目，大多还在跑前期手续，暂时看不到新的厂房。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　在理想情况下，这些企业完成各类手续后，大约明年春天冻土期之后可以施工，最快2027年底可以投运。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　高盛也在报告中提到，这12.5GW，是截至今年6月已投运及规划项目的容量承诺合计，并不是当前实际运行规模。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235208427.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△AI生成&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　接着往集宁区外走，到了更远一些的智算项目，围挡内立着一排塔吊，下面的建筑还在施工。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　出发前想看的工地，总算在这里看到了。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235208292.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△智算项目施工现场，量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　到远景乌兰察布零碳人工智能算力产业园附近（就是刚建成全球最大的AI算力超级单体的远景），刚好赶上饭点。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　工地外围聚着不少戴安全帽的工人，盒饭摊摆在围挡前，旁边还有临时搭起的小商店。有工人站在摊前，也有人坐在棚子里，身后就是塔吊。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235208893.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　不远处就是远景8月初宣布投产的星河基地，据称一座AI算力建筑的面积达到12万平方米，园区按超过2GW的扩展容量设计。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235209808.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△图源：远景科技官网&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　当然，眼前还有施工也并不矛盾。这样的大园区分期建设，部分机房交付后，后续工程仍会继续，整体设计规模也需要逐步实现。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　而远景项目所在的察哈尔高新技术开发区，正是乌兰察布数据中心最密集的区域之一。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　可能有些朋友知道，内蒙古是国家“东数西算”工程八大枢纽节点之一。而乌兰察布作为内蒙古枢纽的重要承载地，早在十几年前就有数据中心。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　到目前为止，乌兰察布的数据中心产业，以察哈尔高新技术开发区和集宁区为核心，察右前旗、兴和县为支撑。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　其中察哈尔高新技术开发区是最大的集聚区，下辖益武堂、巴音两个产业园。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　益武堂片区是相对起步更早的一片，华为、阿里、苹果、优刻得、快手，还有刚刚提到的远景等都在这里。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　现场也能看到优刻得、中联数据等企业的园区，这里已经有完整的楼、围墙和大门。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235209877.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　公司名到这里也成了路名，沿路还能见到华为大道、苹果大道、阿里大道：&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235210670.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　另一个产业园巴音片区，面积比益武堂大得多，承接的是华为三期、快手二园区等扩容项目。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235210989.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　世纪互联零碳智算中心基地（整体规划占地约1100亩）、全国首个数据中心绿电直连源网荷储一体化项目，现在都在巴音片区，这里未来也会容纳更多新项目、大项目。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　继续穿行在这些园区之间，路边能看到输电线路和变电设施，也有玉米地。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这些地方离城区也确实较远，除了工人也鲜有人烟。一天下来，我看到的除了机房外围、塔吊，还有偶尔走在路边的牛羊马……&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235210180.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　这是我平常在核心城区里绝对见不到的，这下好了，刻板印象+1&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　不过，比路边的动物更让我新奇的，是这些园区的新旧交错。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　乌兰察布早就建起了数据中心，最早可以追溯2013年前后——华为是最早一批落地乌兰察布的大型科技企业，随后阿里、苹果、优刻得等项目也陆续进入。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　彼时云计算方兴未艾，西部机房更适合承接数据存储、备份和一部分离线计算；大量互联网用户和企业集中在东部，游戏、电商、实时交互都对网络时延敏感，距离始终划着一道业务边界。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　只是，为什么偏偏到了大模型时代，乌兰察布才再度风云际会？&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　而且从外面看，同样是楼、机房和输电线路，接下来要装进去的内容，和以前到底有什么不同？&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;AI一路卷到草原，最后卷的是电&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　当地知情人士回答了我的提问。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　乌兰察布的这些数据中心，早期项目以通用云计算和数据存储为主，而新一轮则转向对外提供智能算力，重点服务大模型训练等任务。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　二者的差异，在机房内部更加明显。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　过去的机房当然也做计算，但如今变化的其实是AI计算的规模、密度，以及为此需要配套的整套设施。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235211153.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△AI生成&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　比如华为云去年披露，其在内蒙古等地部署的全液冷AI数据中心，单机柜散热能力最高已达到80千瓦。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　越来越多的计算设备集中在一起，供电、冷却和机器之间的高速连接就要一起设计。即便楼里有空位，也未必能直接把新设备搬进去使用，原有机房还得看是否具备改造条件。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　也正因为单柜功率动辄几十上百千瓦、总功耗成了硬约束，近年来新项目开口先报的往往不是算力，而是“GW（吉瓦）”。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　对大规模集群而言，电力是先决条件。接入容量、长期供电的可靠性确定之后，算力规模才好规划。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　顺着这个问题往下看，就能明白为什么乌兰察布会成为这一波算力建设的重镇。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235211520.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△AI生成&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　乌兰察布先天具备的能源成本优势，最明显的就是电。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　乌兰察布执行的是蒙西电网电价标准，数据中心综合到户电价大约是0.35元/度（具体项目会随购电方式等条件变化），作为参考，北京数据中心的实际用电成本大约是其两倍。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　对于这些相当吞“电”的大型集群而言，电价每相差0.1元，可能对应的就是千万元级的年支出。而且机器一旦投入使用，这项支出就会长期存在。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　那么这些相对更实惠的电从哪来呢？这就涉及到乌兰察布硬核的资源禀赋——风、光、煤。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　其中，风能资源尤为丰富。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235211499.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　这里属于国家一类风能资源区，新能源并网装机规模达2100万千瓦（约等于一个三峡水电站的装机量）。我们当地人常自嘲，“一年两场风，一场刮半年”。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　就在远景园区附近，我还看到了一辆运送风机叶片的货车，叶片长长地伸出车尾。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235212316.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　乌兰察布的风我从小见惯，此前更多意味着冬天刺骨、出门难躲。如今风被风机变成电，再沿着输电线路进入一排排服务器，和AI有了有形、实在的连接。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　加上当地日照条件超出全国平均水平，地广人稀的特点也更方便铺设光伏板。这些风电、光伏都为数据中心提供了就近获取绿电的条件。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　当然，风和日照会变，计算任务需要可靠供电，所以还得让电网、储能和发电设施共同配合。能建设电源，也能把电稳定送到机房，才是对算力项目有用的供电条件。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　因此在供电之外，乌兰察布还提供了一些独特的区位配套优势：&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　其一是地质气候优势。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　乌兰察布年平均气温4.3℃，夏季平均气温18.8℃，一年有6个月时间供暖。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　冷凉气候减少了散热所需的能耗，数据中心一年有接近10个月可以利用自然冷源，能明显降低运维成本。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235212433.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　同时，乌兰察布虽然地处内蒙古高原，但地势比较平坦，并且位于玄武岩地质结构之上，地质活动稳定，处于地震少发地带，也鲜少有洪水灾害记录，很适合大型园区集中布局。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　其二，乌兰察布还有一大优势，在于距离。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　北京、天津等地是北方重要的算力需求市场。而乌兰察布到北京的直线距离大约是240公里。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这一条件也让数据传输几乎没有距离感。乌兰察布铺设了直通北京的144芯点对点双回路专用光缆，端到端时延控制在4.2毫秒以内。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　而且从北京乘坐高铁大约100分钟就能抵达乌兰察布，当日往返也没有问题，所以企业运维、对接沟通的交通成本相对较低。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235212787.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　做模型的、做云的、运营数据中心的、做新能源的，各有来路，却又殊途同归，都在为AI寻找土地、电力和足够大的机房。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　十几年前铺下的电网和光纤，如今也恰好赶上了大模型最缺算力的时候。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;12.5GW，一场提前数年的押注&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　高盛会关注到乌兰察布，12.5GW固然醒目，但更值得琢磨的是它和现实使用量之间的距离。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　报告估算，2025年，乌兰察布已经投运的数据中心容量约1.2GW，实际利用约800MW，整体利用率约66%；到今年6月，已经取得的容量承诺却迅速抬到12.5GW，规划尺度在一年左右被拉开到十倍以上。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这12.5GW里，既有已经运行的机房，也有在建和规划容量，距离全部转化成可用算力，还隔着不短的距离。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　从一纸签约到真正产出Token，中间要跨过审批、土建、接电、设备交付、客户迁入和利用率爬坡。即使机房亮灯，服务器也会按节奏一批批上架，很少一开场就满负荷运行。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　偏偏AI软件日新月异，模型架构和训练方法可能半年一换。但数据中心、电网和变电设施却是以十年计的重资产。所以前者疾驰，后者只能未雨绸缪，提前为几年后的需求备好粮草。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235213988.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△AI生成&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　这笔提前量自有依据。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　训练规模仍在扩张，推理侧的胃口也在水涨船高。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　Agent可能连续工作数小时，视频生成、多模态、AI搜索和代码智能体都在增加单次任务的计算量；模型调用价格不断下降，又会把更多原本用不起、用不着AI的场景拉进来，单位成本降低之后，总调用量反倒可能继续膨胀。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　比如最近凤凰网科技援引知情人士消息称，DeepSeek计划在内蒙古新数据中心部署至少16万颗昇腾950DT，主要用于运行模型，暂不用于训练。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　如果属实，项目按这一方向推进，一座GW级园区的大头负载将直接指向推理侧，说明算力扩张的逻辑，已经从预训练继续延伸到海量模型调用。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　对算力设施来说，服务这种需求，要面对一些与训练不同的问题。一个训练任务可以提前安排计算资源，面向大量用户的在线推理，则会遇到不断变化的请求。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　运营方希望同一批设备处理更多请求，用户希望自己的请求尽快完成，两者需要在调度中取得平衡。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235213757.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△AI生成&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　不过，供给跑得太快，新的考验也会接踵而至。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　高盛在报告中专门提示，乌兰察布规划容量增长很快，后续利用率、项目交付、绿电成本和水资源都要经受检验，大量容量同期上马还可能压住机柜租金……从抢地、抢电到真正把机器长期跑满，中间少不了一轮大浪淘沙。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　此外，算力建出来之后，谁来长期使用这些机器、有多少价值能够留在算力所在地，又成了新的问题。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　对数据中心运营商，这决定机柜利用率和收入；对地方，则决定一轮数百亿乃至更大规模的基础设施投资，最终留下的是机房和用电量，还是能继续带出制造、运维、模型服务和AI应用。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　高盛观察到，部分第三方运营商已经从传统机柜租赁延伸到绿电采购、能源资产管理以及算力服务分成。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　AI数据中心的成本越来越集中在芯片、电力和运营效率上，只守着机房面积远远不够，算电协同、算力调度和客户运营都会被推到台前。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235213325.png" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△AI生成&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　对乌兰察布而言，更长远的配套也在被考虑。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　数据中心放在产业链中游，机房和服务器投资固然庞大，自动化程度也高，对当地的直接带动可能不会像传统制造业那样密集。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　乌兰察布因此还在向两头延伸，上游对接服务器、机柜、运维等环节，下游则希望引入大模型训练、AI应用、视频渲染、可信数据空间。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　数据中心带来的城市效应，也会从轰轰烈烈的建设期，转向更细水长流的产业配套。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　由此，“Token之都”正在成为乌兰察布的新名片。当地2026～2028年的相关行动计划，也已经把算力服务、Token交易和智能应用列入方向。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;img src="https://i.guancha.cn/bbs/2026/10/01/20261001235214625.jpg" alt="500"&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;△量子位实拍&lt;br&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　这一天，我在几条路上来回穿行：一条通往核心城区，一条通往仍在长草的规划地，一条通往塔吊林立的施工现场，一条通往已经安静运行多年的老机房。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　这座城市原有的日常和AI基础设施，就这样在同一张画面里并肩出现。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　看得见的公路之外，两条更重要的线路已经接上乌兰察布。光纤把北京以及更远地方的计算任务送来，输电线路把草原上的风光电送进服务器。&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;　　模型一日千里，托住模型的世界，却总要一寸一寸建起来。&lt;br&gt;
+&lt;/p&gt;											&lt;/div&gt;
+
+					&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>风闻</author><pubDate>Fri, 02 Oct 2026 11:08:27 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiW0FVX3lxTE9uZ1lMRG1nZl9xcUllZ2o4cVZwZVhmRGgzeS02UndHYXk0cnBEUVI4MjF1Vk9WQ1ZMQXNLekpJWmo2WDA1U1NWRDFQVXpYaDh6Z0E2Y2dqYWtxb0k</guid></item><item><title>中国医药BD再下一城！艾博生物与诺华达成78亿美元mRNA授权协议 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782931</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 10:03:40 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE95Y1oxbm9kcVNMNnBjUlpzUW1hTjhaQ3lWWHhoejhSUWZWdmt0bzd5RzJCSFZWRVV4Q3pXWEd2aXd0UUkyVFpRaVVpQk9DWEd3YzBn</guid></item><item><title>博通联手黑石筹资600亿美元，为Anthropic等AI公司铺路算力 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782929</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 09:53:08 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE8wREZoczhueGFYM2ZwZkZaeUx5TllGb2NzZFFfYmRFODRGMFJKUWVkNlJUN283T1VMNFQ5a194b29BYmJhRjBVNklPNlBZZ25YS04w</guid></item><item><title>光芯片解决内存墙 美国公司研发全新内存架构：10TB容量能跑20万亿参数 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155169.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月2日消息，如今的大模型参数量已经突破5万亿规模，逼近10万亿，面临的挑战已经不是算力够不够，而是内存墙限制越来越多。&lt;/p&gt;
+&lt;p&gt;美国一家初创公司Volantis日前宣布获得了8800万美元的A轮融资，该公司正在构建一种全新的AI推理架构，旨在平衡内存容量与带宽，&lt;span&gt;&lt;strong&gt;其首个系统A-1被设计用于超过20万亿参数的大模型，每个用户可以跑到10000Token/s的速度&lt;/strong&gt;&lt;/span&gt;，同时还有更低的推理成本。&lt;/p&gt;
+&lt;p&gt;这个规模是什么概念呢？当前最强的Mythos/Fable大模型据说是5万亿参数级别的，但现在每个用户的速度不会超过100Token/s，A-1的规模是它的4倍，速度是100倍。&lt;/p&gt;
+&lt;p&gt;20万亿参数的大模型用FP16意味着40TB的内存，这样的需求即便是用上最强的Verra Rubin也很难满足，而且成本贵的要死，更别说提供10000Token/s的速度了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/8fcde964-da47-428a-aa7d-cac402fe6a8c.png" target="_blank"&gt;&lt;img alt="光芯片解决内存墙 美国公司研发全新内存架构：10TB容量能跑20万亿参数" h="397" src="//img1.mydrivers.com/img/20261002/S8fcde964-da47-428a-aa7d-cac402fe6a8c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A-1使用的方案是Volantis全新研发的架构，大量应用了光互连技术，将大量内存连接起来成为一个统一的内存池，单lane做到了24 Gb/s/lane，&lt;strong&gt;光互联带宽达到了250 TB/s以上(宣传材料数字，官网上是240TB/s）&lt;/strong&gt;，远高于内存的带宽，比HBM也要高10倍以上——公司的宣传材料说提升了两个量级，这有点夸张了。&lt;/p&gt;
+&lt;p&gt;除了带宽大幅提升，该公司的技术还可以做到体积小了2500倍，能效更高，单bit能耗远低于 1 pJ/bit（&amp;lt;&amp;lt;1 pJ/bit），&lt;strong&gt;而容量可以达到10TB&lt;/strong&gt;，反正各项参数都是远超当前光互联技术水平的。&lt;/p&gt;
+&lt;p&gt;是真是假到明年就可以验证了，Volantis公司计划在2027年交付首批集成推理引擎给客户，到时候就能检验他们的新架构有没有水分了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/38aeec19-656b-4ca6-baf5-ec5b38d6cfdc.png" target="_blank"&gt;&lt;img alt="光芯片解决内存墙 美国公司研发全新内存架构：10TB容量能跑20万亿参数" h="326" src="//img1.mydrivers.com/img/20261002/S38aeec19-656b-4ca6-baf5-ec5b38d6cfdc.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 09:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBLSzZTNDZJTjd1VTNmVURYa3FhalNWcmlSMGFZXzVUQnZVNVc4MXRYTVF4TzZKUm5yd043TF9QMTRONkJ2UjI3UGFPQkhsNUdXM3M0RFkxeEw</guid></item><item><title>恒指失守24000点创三月来最大跌幅，物理AI牛股暴跌近50%，权重科网股集体下跌，赛力斯盘中一度大涨15% - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782911</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 09:36:38 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1BQ3VkNk5XeFNkemswRzdRSGNMaWNaS2dIVEVNWmdqclhzdklEc0Uwanc5ZGpTb0F4WGNLc3FZRk9uQkhBaC1PVDRYWnU1MFdoRFR3</guid></item><item><title>17年果粉买到华为Mate 90激动到结巴：华为涅槃重生 自研芯片必须支持 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155165.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月2日消息，华为Mate 90系列已于10月1日正式发布并开启首销，全系搭载鸿蒙7系统与新一代自研韬系列芯片，凭借技术突破引发市场关注。&lt;/p&gt;
+&lt;p&gt;全国各地不少消费者专程到线下门店体验新机，一位17年苹果老用户的真情感慨更是刷屏网络。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;据媒体报道，近日在杭州某华为门店，有着17年苹果用户身份的康先生，在体验华为Mate 90系列新机后难掩激动，说话几度哽咽卡顿。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;他表示：“我等这个等了将近6年，终于等到他自己能做芯片、系统也成熟了，我就……我就……"&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;他评价华为"绝处逢生、凤凰涅槃"，一句"你不觉得非常激励人心吗"让网友感慨引发热议。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20261002/3282e24baa664ba59d276f15cc9e71de.png" target="_blank"&gt;&lt;img alt="17年果粉买到华为Mate 90激动到结巴：华为涅槃重生 自研芯片必须支持" h="551" src="//img1.mydrivers.com/img/20261002/s_3282e24baa664ba59d276f15cc9e71de.png" w="397"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;据了解，华为Mate 90系列全系涵盖Mate 90、Mate 90 Pro、Mate 90 Pro Max、Mate 90 Pro Max典藏版、Mate 90 RS非凡大师五款机型，出厂全系预装鸿蒙7操作系统。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;芯片方面，Mate 90系列全系搭载华为旗舰韬系列自研芯片：标准版Mate 90配备麒麟9030芯片，Mate 90 Pro搭载麒麟9035芯片，顶配Mate 90 Pro Max则搭载旗舰级麒麟9050 Pro芯片。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;回顾Mate系列的发展历程，芯片自研始一直是贯穿产品迭代的核心主线。&lt;/p&gt;
+&lt;p&gt;全新Mate 90系列韬定律自研芯片的落地，意味着华为在高端手机芯片领域走出了自主可控的自研道路，也是此次打动用户的主要原因。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不过，需要补充的是，苹果转华为换机，请务必提前做好3件事。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、旧手机切勿急于售卖：建议留存旧机、确认所有数据迁移完毕后再处理。&lt;/p&gt;
+&lt;p&gt;2、优先插线传输：有博主实测，500G以上的大容量手机数据，通过无线隔空传输耗时长达30小时，而使用数据线传输仅需2小时左右。&lt;/p&gt;
+&lt;p&gt;3、提前完成云端备份：换机前提前将手机相册、文件、聊天数据等重要内容进行云端双重备份。&lt;/p&gt;
+&lt;p class="newsinfo_vedio"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：秋白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 09:15:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ObFN5VjNiejFSdUZaMlJ0eE5sQlJhalZxZ2ZKVUJEWnRiWkgwdVRGRWdDck0yeTR4YU4xVUptWVo2dmhnN3JIVmtfQTZCSmZSUVV3anI2Xzk</guid></item><item><title>突发，38岁CEO 走私英伟达GPU被抓，涉案超20亿 - 凤凰网</title><link>https://finance.ifeng.com/c/8wtgk4pyzdO</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;又有一起英伟达GPU走私大案，被美国司法部披露出来。&lt;/p&gt;&lt;p&gt;涉案金额超3亿美元、约合人民币20亿，涉及Nvidia A100、H100、甚至还有消费级旗舰的 GeForce RTX 4090 和 GeForce RTX 5090。&lt;/p&gt;&lt;p&gt;而且，这些GPU并不是几张几张往外带，而是直接装进AI服务器，几十台、上百台地往外运。&lt;/p&gt;&lt;p&gt;1&lt;/p&gt;&lt;p&gt;&lt;strong&gt;38岁CEO被捕，3亿美元大案曝光&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2026 年 10 月 1 日，美国司法部公告，加州科技企业 Earthmade Computer 负责人 Greg Lui 被捕。&lt;/p&gt;&lt;p&gt;&lt;img alt="图片" loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/22B065E17BC6D3F1A2C1848FD3E8C6077BC96A1D_size548_w1080_h607.png"&gt;&lt;/p&gt;&lt;p&gt;美国联邦检察官指控，他与多名同伙通过马来西亚、新加坡等地中转，将价值超过 3 亿美元（20 亿元人民币）、搭载 Nvidia 高端 GPU 的服务器运往受禁国家，以规避美国针对先进计算芯片的出口限制。&lt;/p&gt;&lt;p&gt;Lui 现年 38 岁，又名 Yiu Kong Lui，居住在加州圣盖博。&lt;/p&gt;&lt;p&gt;美国加州中区联邦地区法院文件显示，本案案号为 2:26-cr-00618-ODW，联邦大陪审团于 9 月 29 日正式提交起诉书。&lt;/p&gt;&lt;p&gt;&lt;img alt="图片" loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/B6FF2EA6A65ECFFDA7A922D498FFB998FC43E68B_size112_w1080_h1402.png"&gt;&lt;/p&gt;&lt;p&gt;Lui 被控三项罪名，分别是共谋违反美国《出口管制改革法》和《出口管理条例》、向境外走私，以及共谋洗钱。&lt;/p&gt;&lt;p&gt;据外媒报道，前两项各最高20年，走私最高10年，合计法定上限50年（不是必然刑期）。也就是说，如果法庭最终裁定所有罪名成立，他将面临最高50年的刑期。&lt;/p&gt;&lt;p&gt;今年3月，全球最大的 AI 服务器制造商之一的Supermicro 联合创始人 Wally Liaw 在加州被捕。他被指控把价值 25 亿美元的英伟达 AI 芯片服务器，通过东南亚的空壳公司走私到中国，这起案件也被称为全球最大的英伟达GPU走私案。&lt;/p&gt;&lt;p&gt;但他面临的最高刑期为20年。&lt;/p&gt;&lt;p&gt;2&lt;/p&gt;&lt;p&gt;&lt;strong&gt;英伟达多款GPU被点名，甚至还有RTX5090&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;最引人注目的一点是，在起诉书中直接点名 Nvidia。&lt;/p&gt;&lt;p&gt;检方称，Lui 从多家美国制造商采购搭载 Nvidia GPU 的服务器，同时向供应商提供虚假的最终用户和目的地信息，而实际最终用户位于受禁国家。&lt;/p&gt;&lt;p&gt;文件列出的相关 GPU 包括 Nvidia A100、H100、PNY GeForce RTX 4090 和 GeForce RTX 5090。从AI训练卡到消费级旗舰显卡全方位覆盖。&lt;/p&gt;&lt;p&gt;3&lt;/p&gt;&lt;p&gt;&lt;strong&gt;以东南亚壳公司为中转，批量走私AI服务器&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;检方说，这不只是“卖几台服务器”，而是一套从2023年10月前后开始、至少持续到2026年8月的跨境绕管制作案。&lt;/p&gt;&lt;p&gt;芯片从英伟达出厂之后，经过分销商、系统集成商、服务器厂商，每一个环节都是潜在的走私入口。美国的出口管制主要卡在销售和发货这一步，靠的是买家自己申报最终用户。&lt;/p&gt;&lt;p&gt;这次的案件就是这样一起，买家向美国服务器制造商采购搭载Nvidia H100、A100、GeForce RTX 4090/5090 等受管制 GPU 的 AI 服务器，却把马来西亚、新加坡等地企业写成“最终用户”，在订单、出口申报、装箱单、转账和合规文件里隐瞒真实去向——中国。&lt;/p&gt;&lt;p&gt;起诉书称，Lui 曾向三家未具名的美国服务器制造商采购搭载上述 GPU 的设备，这三家企业均从事 AI 和云计算高性能服务器业务。&lt;/p&gt;&lt;p&gt;Earthmade 位于加州工业市，成立于 2023 年 11 月 10 日。另一家名为 Coindigger 的企业同样位于工业市，并以 Earthmade 名义经营。Lui 是两家企业的 CEO 和注册代理人。&lt;/p&gt;&lt;p&gt;起诉书还提到另一家公司 Topmost Corp，该公司于 2024 年 2 月 24 日成立，并在后续服务器采购中被使用。&lt;/p&gt;&lt;p&gt;案件还涉及两家未具名的马来西亚企业。&lt;/p&gt;&lt;p&gt;其中一家成立于 1999 年 10 月，主要业务原本是木材、胶合板、木制品和木板；另一家则被检方称为“前台公司”。起诉书中的买家也没有公开名称。&lt;/p&gt;&lt;p&gt;资金方面，2024 年 1 月至 10 月，Earthmade 从第一家马来西亚转运企业收到超过 8000 万美元，从第二家收到超过 9600 万美元，合计超过 1.76 亿美元。&lt;/p&gt;&lt;p&gt;起诉书称，Earthmade 同时将这两家企业介绍给美国服务器制造商，并参与促成价值接近 3 亿美元的受出口管制服务器交易。&lt;/p&gt;&lt;p&gt;检方指控，相关人员向美国制造商提交虚假材料，将马来西亚、新加坡等地企业列为最终用户，并在出口申报、财务、运输和最终用户文件中隐瞒设备真正目的地。部分电子出口信息申报还被指使用错误的出口分类代码。&lt;/p&gt;&lt;p&gt;起诉书披露的第一笔具体交易发生在 2024 年 1 月。&lt;/p&gt;&lt;p&gt;1 月 11 日，Lui 给一名同伙发送邮件，称一家马来西亚转运企业希望采购 70 台 H100 服务器。邮件还附有出口合规文件，显示对方知道美国对部分先进 Nvidia GPU 向受禁国家出售、转运和出口存在限制。&lt;/p&gt;&lt;p&gt;1 月 30 日，Lui 向一家美国制造商提交订单，购买其中 27 台搭载 Nvidia H100 GPU 的服务器，交易金额约 761.4 万美元。次日，这批服务器从洛杉矶运往马来西亚吉隆坡。装箱单显示，相关设备搭载 H100 GPU，在没有许可证的情况下不得运往受禁国家。&lt;/p&gt;&lt;p&gt;到 3 月 12 日，一名涉案人员在发给马来西亚政府官员的邮件中称，这 27 台服务器已经转运给上述买家。&lt;/p&gt;&lt;p&gt;另一笔交易发生在 2024 年春夏。4 月 30 日，一家美国制造商的销售经理向 Lui 发出 512 台受出口管制服务器的报价，Lui 次日下单。到 6 月，制造商通知其中 92 台服务器已经准备发货。&lt;/p&gt;&lt;p&gt;6 月 15 日，这 92 台服务器从旧金山国际机场出境，先搭乘新加坡航空 SQ0033 航班运往吉隆坡，随后搭乘国泰航空 CX722 航班从吉隆坡运往香港。&lt;/p&gt;&lt;p&gt;第二段运输中，发货方登记为第二家马来西亚转运企业，收货方则是上述买家。起诉书将这一批服务器对应的交易金额列为约 1300 万美元。&lt;/p&gt;&lt;p&gt;2024 年 7 月，检方称 Lui 又安排一家美国“前台公司”向第三家美国制造商采购 100 台搭载 Nvidia H100 GPU 的服务器，金额超过 2200 万美元。&lt;/p&gt;&lt;p&gt;在这笔交易中，Lui 被指要求相关人员声称买家是 Topmost，设备将运往第二家马来西亚转运企业。&lt;/p&gt;&lt;p&gt;检方还称，他提交了虚假文件，将一名叫 “Jackie Lui” 的人列为 Topmost CEO。&lt;/p&gt;&lt;p&gt;起诉书进一步指控，Lui 早在 2021 年就购买了另一名个人的身份证明文件，并使用这一身份处理后续商业交易。&lt;/p&gt;&lt;p&gt;除 Lui 外，起诉书还列出五名未被起诉的共谋者，包括一家美国服务器制造商的销售经理、一家马来西亚转运企业 CEO、Earthmade 办公室经理、一名国际服务器经纪人，以及一家美国货运企业高管。&lt;/p&gt;&lt;p&gt;检方称，这些人与 Lui 共同参与设备采购、资金安排和跨境运输。&lt;/p&gt;&lt;p&gt;洗钱指控部分还披露了两个美国银行账户。&lt;/p&gt;&lt;p&gt;检方称，Earthmade 使用了一个开设在 Bank of America、尾号 4441 的账户，以及一个开设在 JPMorgan Chase、尾号 3503 的账户，相关资金进入这些账户后，被用于向美国制造商采购受出口管制服务器。&lt;/p&gt;&lt;p&gt;美国政府还寻求没收与案件有关的违法所得、用于实施相关行为的资产，以及违法出口或计划违法出口的产品和技术。如果相关财产已经被转移、无法找到或超出法院管辖范围，检方还可寻求没收等值替代资产。&lt;/p&gt;&lt;p&gt;4&lt;/p&gt;&lt;p&gt;&lt;strong&gt;暴利吸引，芯片走私升级&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;包括今年3月的全球最大英伟达GPU走私案在内，不难发现，如今的英伟达高端GPU走私正在逐渐升级。&lt;/p&gt;&lt;p&gt;2022年左右，走私还以个体为主，主要靠留学生、游客、代购等，纯“人肉”，一张张的往外背，藏在个人行李里过海关，被拦下来就说自用。&lt;/p&gt;&lt;p&gt;到后面开始有注册公司，挂羊头卖狗肉。2025年，美国司法部端掉了一个代号「Operation Gatekeeper」的走私网络，主犯就是注册了家房地产公司，把买到的英伟达芯片标签撕掉，贴上一个虚构的公司名字，SANDKYAN，然后经马来西亚和泰国中转，最终进入中国。整个网络在八个月里出货超过 1.6 亿美元。&lt;/p&gt;&lt;p&gt;如今就是Supermicro 这样专业对口的，英伟达核心供应商的联合创始人亲自下场搞走私。&lt;/p&gt;&lt;p&gt;天下熙熙皆为利来。走私英伟达GPU屡禁不止，关键就是中间的利润太大了。&lt;/p&gt;&lt;p&gt;据海外多家媒体报道，英伟达的高端 GPU 在中国黑市上的售价，比美国正规渠道普遍溢价 50% 左右。禁令造出了价差，价差造出了利润，利润造出了走私者。&lt;/p&gt;&lt;p&gt;据2025年金融时报报道估计，仅 2025 年 4 月之后的三个月里，就有超过 10 亿美元的禁运芯片通过各种渠道流入中国。有行业人士估算，整个黑市的月流水可能在 10 亿美元量级。&lt;/p&gt;&lt;p&gt;*免责声明：本文内容仅代表作者看法。市场有风险，投资需谨慎。在任何情况下，本文中的信息或所表述的意见均不构成对任何人的投资建议。&lt;/p&gt;&lt;p&gt;深蓝财经新媒体集群发源于深蓝财经记者社区，已有16年历史，是国内知名财经新媒体，旗下账号关注中国最具价值公司、前沿行业发展、新兴区域经济，为投资者、上市公司高管、中产阶级提供价值内容，欢迎关注。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Fri, 02 Oct 2026 08:50:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE1vU3ZOR1BqZUtvVllWQjNDMHlVZkRhMlBJQVNXdFYtc2ZMT282dEN1dWNab1I5aWpybDRrMHdWci1LYmtuMHFtdGRQNTZTZUFV</guid></item><item><title>用AI生成一张图片：男子面临十年监禁！ - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155158.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月2日消息，据报道，&lt;span&gt;&lt;strong&gt;新加坡男子叶林（音译）今年8月疑似出于玩笑，用谷歌Gemini生成了一张咸水鳄出现在Pandan水库的AI图片并发送给同事。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这张图随后被上报至新加坡国家水务局PUB，PUB和国家公园局随即暂停该区域所有水上活动两天，展开搜寻一条根本不存在的鳄鱼，直到次日确认图片为伪造后才报警，叶林被逮捕。&lt;/p&gt;
+&lt;p&gt;叶林面临的指控远比他预想的严重，新加坡法律规定传播虚假信息罪最高可判三年监禁、罚款1万新元或两者并罚。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;而他在事发后删除了手机中的图片和Gemini应用试图掩盖，这一举动又被追加妨碍司法指控，最高可判七年监禁，若两项罪名叠加，最高刑期达十年。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前尚不清楚PUB是如何获得这张AI图片，可能是同事将图片转发给他人后，被当真上报，叶林本人似乎并非蓄意制造恐慌。&lt;/p&gt;
+&lt;p&gt;新加坡作为全球最安全国家之一，叶林已表示将认罪且不聘请律师，案件将于11月再次开庭。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/9a8e664c-a697-47e7-b635-c67d687846e5.png" target="_blank"&gt;&lt;img alt="用AI生成一张图片：男子面临十年监禁！" h="450" src="//img1.mydrivers.com/img/20261002/S9a8e664c-a697-47e7-b635-c67d687846e5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 08:28:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBrZ2s0WVZPOEFxSzhjYm5FVHhySmFubk1XZFNZaTdodmJOZEotQWk3YlZIVklmbkhITDlqTVdZalpSOEpMQXVuVUc2YXd4ejBlZF9HR1Bsc2I</guid></item><item><title>Win11 26H2的SSE4.2指令集要求又被破解：20年前的AMD CPU照样安装 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155157.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+    &lt;div class="news_n"&gt; 
+      &lt;p class="news_bt" id="thread_subject"&gt;Win11 26H2的SSE4.2指令集要求又被破解：20年前的AMD CPU照样安装&lt;/p&gt;
+          
+
+
+
+       
+      &lt;div class="news_bt1"&gt;
+        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-10-02 16:22:16  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1155157-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+          
+             
+
+         
+      
+
+      &lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月2日消息，这两天微软开始升级Win11 26H2系统了，很多人已经收到了推送，它对CPU及内存的要求没有变，但会把不支持SSE4.2指令集的CPU排除在外，老旧CPU是不支持的。&lt;/p&gt;
+&lt;p&gt;好消息是这个限制又被破解了，已经有网友在AMD 的Phenom X4 9600处理器上启动了，而它是2007年发布，&lt;strong&gt;是20年前的CPU了，并不支持SSE4.2指令集。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;绕过这个限制的过程说起来也不算复杂，微软从Win11 24H2开始不仅要求支持TPM 2.0，还要CPU支持SSE4.2指令集，这是Intel 2008年推出的x86指令集，如果不支持这个指令集的话，Win11可能会出现兼容性问题，甚至崩溃。&lt;/p&gt;
+&lt;p&gt;不过要求SSE4.2并不意味着微软Win11就一定需要SSE4.2指令集才能运行，这实际上只是一个门槛，&lt;span&gt;&lt;strong&gt;24H2发布之后就有开发者推出了POP4.2项目&lt;/strong&gt;&lt;/span&gt;，发现了Win11的检测机制就是简单的没有SSE4.2就拒绝启动而已，把这个条件改掉之后就能在没有SSE4.2的CPU上安装启动了。&lt;/p&gt;
+&lt;p&gt;这次的Win11 26H2依然是利用了POP4.2的这个破解方式，开发者也提到实际上99%的Win文件都用不到SSE4.2指令集，用4.1的就足够了，微软只是用这个来当门槛限制一些旧型号CPU支持罢了，&lt;strong&gt;现在的硬件要求是8代酷睿及之后的CPU，早把那些20年前的CPU卡死在支持之外了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不过话说回来，能在20年前的CPU上安装启动，不代表在这些CPU上就能好用流畅，这只是技术玩家的挑战，普通人没必要跟着做，20年前的CPU、内存、显卡就算装了Win11，也不会有像样的体验，别折腾。&lt;/p&gt;
+&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20261002/eddc2c4c385c462bbd7f501bf49fbbdb.jpg" target="_blank"&gt;&lt;img alt="Win11 26H2的SSE4.2指令集要求又被破解：20年前的AMD CPU照样安装" h="337" src="//img1.mydrivers.com/img/20261002/s_eddc2c4c385c462bbd7f501bf49fbbdb.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt; 
+       
+       
+  
+       
+        
+
+         
+
+    
+
+    
+
+
+   
+
+ &lt;div class="dashang_float dashang_float_2"&gt;
+        
+  &lt;div class="dashang_erwm"&gt;
+	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
+	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
+&lt;/div&gt; 
+
+         
+  &lt;/div&gt;
+       
+         
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 08:22:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1DdTJVbVV6MFZHZXpOTUdmWk95aXh0MTRaei0wZUZRVE85dG5WcXVEckw3eGxiSmlucXhMQUdhWlJWd0NmTnZ5SGwxWmtNRzYyVzhsM3NYRzg</guid></item><item><title>荣耀首款阔折叠明年1月发布：搭载骁龙2nm旗舰芯！同类最大电池 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155155.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技10月2日消息，据博主“智慧皮卡丘”透露，荣耀首款阔折叠将在明年1月发布，拥有丰富的配件生态。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;根据此前爆料，荣耀阔折叠采用14:10宽幅方案，搭载7.6英寸内屏+5.5英寸外屏组合，外屏已接近普通直板手机，日常回消息、刷导航无需展开。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;展开后接近A4纸的观感——看视频上下黑边基本消失，分屏办公时左侧开文档、右侧开微信两边都不挤，横屏游戏视野也比传统1:1大折叠宽出一截。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/ca332d54-c4f7-4800-85c8-f993909bf0f7.png" target="_blank"&gt;&lt;img alt="荣耀首款阔折叠明年1月发布：搭载骁龙2nm旗舰芯！同类最大电池" h="134" src="//img1.mydrivers.com/img/20261002/Sca332d54-c4f7-4800-85c8-f993909bf0f7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;相比传统大折叠和竖向小折叠，阔折叠通过更加宽大的屏幕比例，为折叠屏产品提供了新的设计思路。&lt;/p&gt;
+&lt;p&gt;尤其是在阅读、影音和办公等高频使用场景下，更宽的显示比例能够减少内容裁切和留白，在刷视频、看小说、看漫画等场景中获得更大的有效显示面积，进一步提升大屏使用体验。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;性能上，该机预计搭载高通骁龙8 Elite Gen6系列旗舰处理器，采用2nm工艺，将成为安卓阵营首款2nm工艺阔折叠产品。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="荣耀首款阔折叠明年1月发布：搭载骁龙2nm旗舰芯！同类最大电池" h="399" src="//img1.mydrivers.com/img/20261002/7976bd60-59d1-4c20-8bd6-71bd4ce5b5e3.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;电池配备约7000毫安时，为同级别阔折叠产品中最大容量，支持80瓦有线快充和66瓦无线充电，机身重量控制在220克左右。&lt;/p&gt;
+&lt;p&gt;相机Deco改为横向布局，内置2亿像素大底主摄，联合ARRI阿莱影像技术，支持LogC3电影曲线和10bit视频录制，并配备潜望长焦与5000万像素超广角。&lt;/p&gt;
+&lt;p&gt;内置荣耀驭光H1自研影像芯片，支持峰值对焦、伪色监看等专业拍摄功能。&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 08:18:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBtY0VnWlpnbnIyUjFtWjNkQk41UmxNQWs1alJvRWNlTzJETlYtN3NuV09wZXBWR3lQekJMbHVudktPWlE1TDhXMGlvMWtGa04zRW15RDVGZFE</guid></item><item><title>Windows 11 26H2内存占用优化！但优化只有高配才能享受 - 3DM</title><link>https://www.3dmgame.com/news/202610/3955174.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="Content_L dj_chinesemode"&gt;
         &lt;div class=" news_warp_top"&gt;
             &lt;h1 class="bt"&gt;Windows 11 26H2内存占用优化！但优化只有高配才能享受&lt;/h1&gt;
             &lt;p class="time"&gt;时间：&lt;span&gt;2026-10-02 15:19:52&lt;/span&gt;&lt;/p&gt;
@@ -57,7 +459,7 @@
         
                 
     &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Fri, 02 Oct 2026 07:19:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE5lUUR5ZzBWc0gtV2xtaVJyX3J5MHJ0UDkwdmZreHhrMjlMMncycWdJTkRGSXJJWFZBN2Mza0NsVm1paDNpUm41RWU1cFlPR3lKcnJKeEZXVHJVdXln</guid></item><item><title>278.8元！绿联推出iPhone 17/18 Pro系列彩色墨水屏手机壳：NFC无源传输 0耗电 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155145.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>3DM</author><pubDate>Fri, 02 Oct 2026 07:19:52 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiXEFVX3lxTE5lUUR5ZzBWc0gtV2xtaVJyX3J5MHJ0UDkwdmZreHhrMjlMMncycWdJTkRGSXJJWFZBN2Mza0NsVm1paDNpUm41RWU1cFlPR3lKcnJKeEZXVHJVdXln</guid></item><item><title>这九只股票或将引领AI主题交易的下一波行情 - 华尔街日报中文版</title><link>https://cn.wsj.com/articles/%E8%BF%99%E4%B9%9D%E5%8F%AA%E8%82%A1%E7%A5%A8%E6%88%96%E5%B0%86%E5%BC%95%E9%A2%86ai%E4%B8%BB%E9%A2%98%E4%BA%A4%E6%98%93%E7%9A%84%E4%B8%8B%E4%B8%80%E6%B3%A2%E8%A1%8C%E6%83%85-0787336f</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文版</author><pubDate>Fri, 02 Oct 2026 07:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMitAJBVV95cUxQSUM0RXZkVXF3YzloZ2QxYTJRd2VHVGRfTEJiMXlzaDhMdkwxZW9STmJNd3ZHZ243WEJoc2o0T09OYmNJcXFGNXFPb2R5dkRRR0VLZ0NyX2tjc0ZjQ2l6TDJFQ3JCZUpPcE1oeGdYWEl0OVlnYUx2Z3JIbDdVNk54YUlKRm85QlpYX3FQVlZHeHRaeGkwT3ZCTXNTc05KTVQzcElZMWFaQkhBR2Vsc25TbjFjcVY4eVlvRWR1akk5dmd3d3hpM0RKRmpZQWFVVGlfV1o4X3VIck56QndLNDdwb0R2b25PRkNsbE1TLWV5NjdlWlBaSkgycXhMYkItd2dTVFdVemVnTmxETXBZYUZkUFRqdmF5V3pFSlhPYXI3V1VySmFvdnExU09nMXhPbkw0X0N2RQ</guid></item><item><title>278.8元！绿联推出iPhone 17/18 Pro系列彩色墨水屏手机壳：NFC无源传输 0耗电 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155145.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技10月2日消息，绿联推出Magic墨水壳8.0，适配iPhone 17 Pro、iPhone 18 Pro系列，首发价格278.8元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;背部集成3.7英寸六色大墨水屏，采用E Ink Spectra 6彩色电子纸技术，首创六色多蓝色和绿色显示，较普通四色墨水屏多50%色彩层次，色彩更鲜艳、层次更丰富。&lt;/p&gt;
@@ -80,7 +482,95 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 07:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE02Y3cwekxKdkhaQ0dNZ0lveTlhNVg0M0s5U2pQNURYcWM1Xzk5MFBHUE00UDBuWkFMUkwyajN6dnJkZkhsQ3I3R0ZvM05Sb010N1A2MDg4NnI</guid></item><item><title>从拒绝到加码：马斯克如何将SpaceX的AI算力变成每月数十亿美元的“云生意” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782913</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 05:33:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE13VmZkRk9sQk9KblZIb1dySmpwLTEtWVNmY1VPWlRwQkRkMFdXZExJZ2hPMWMxaXFPYXRpdndHbDdvT2l3Tm1SUGVjMk1iTG9RSUhn</guid></item><item><title>何刚晒华为睿影Z10模块相机实拍：24-240mm一镜搞定全场景拍摄 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155131.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 07:12:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE02Y3cwekxKdkhaQ0dNZ0lveTlhNVg0M0s5U2pQNURYcWM1Xzk5MFBHUE00UDBuWkFMUkwyajN6dnJkZkhsQ3I3R0ZvM05Sb010N1A2MDg4NnI</guid></item><item><title>机器人也来“抢”芯片！特斯拉下调 AI5/AI6 存储规格，为 Optimus 量产让路 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782924</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 07:07:50 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1WdXRESUpWT0xoUnpTQk9TMnZ1Rm1jLW5WdURGRVZsVU1VS2FuamRnMFJLLUJobUw5QzNjV3dSWEFYVkJrRmlqZWhvRENaTmt1c2pn</guid></item><item><title>国庆高速服务区排队太折磨 雷军：开澎程不需要排队充电或加油 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155144.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;快科技10月2日消息，国庆长假高速出行高峰来临，不少车主吐槽服务区充电桩、加油站都排起长队，耗费大量等候时间。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;雷军也谈及这个痛点，表示小米澎程车型，长途出行不用在服务区排队充电或者加油。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;国庆跑高速，纯电车很容易遇上充电桩排队，油车也会碰到加油站大堵车。而澎程属于增程车型，满油满电之后，可以一口气跑很长距离，中途不用进服务区补能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其中澎程N90 Max官方CLTC综合续航1705公里，而且支持加92号汽油&lt;/strong&gt;，不用特意找高价油品，国内几乎所有加油站都能直接加注。&lt;/p&gt;
+&lt;p&gt;之前小米做过一次真实长途实测，澎程N90 Max满油满电从上海开到北京，全程1230公里。车上坐4个人，还携带50公斤拍摄设备，空调开到24度，高速平均时速104公里。&lt;/p&gt;
+&lt;p&gt;跑完全程之后，车子还剩下54公里续航。这次实测纯电部分跑了323公里，亏电状态百公里油耗6.7L，实打实验证长途续航能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;日常城市通勤，澎程可以直接当纯电车开，依靠电池供电，安静还省钱。跑长途的时候，增程器启动烧油发电，不用到处找充电桩。&lt;/strong&gt;就算中途需要补能，随便找普通加油站就能加油，不用专门抢高速服务区为数不多的充电车位。&lt;/p&gt;
+&lt;p&gt;当然也不是说澎程跑出去就永远不用补油补电。1230公里属于极限长途测试，如果行程比这个距离更远，依旧需要进站加油。&lt;/p&gt;
+&lt;p&gt;只是国庆大部分家庭自驾游，单程大多在一千公里以内，满油满电出发，一趟旅途中间不用停下来补给，避开服务区的拥堵队伍。&lt;/p&gt;
+&lt;p&gt;现在不少增程车亏电之后油耗偏高，高速跑起来能耗压力大。澎程搭载昆仑超级增程系统，增程器热效率高，高速亏电油耗控制得不错。对于经常节假日跑长途的家庭用户来说，这种模式能避开节假日补能排队的糟心体验。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="国庆高速服务区排队太折磨 雷军：开澎程不需要排队充电或加油" h="297" src="//img1.mydrivers.com/img/20261002/4c47590c-6389-4b0f-9690-bbbded36c7dc.jpg" w="600"&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 07:03:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE83T1ZtSmxJSXFXYy1CQ3c4ellIMWZUaE5NNEUtaXlHZmRHYkd6YmFTLW5VVWQ4eDg0SUpTWGZZazJjek1xcUc0dDh1VlAySEhwb3NzSnJ1ZzA</guid></item><item><title>苹果确认iPhone Duo内屏保护层可更换：AppleCare+用户19美元一次 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155140.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技10月2日消息，苹果硬件工程副总裁Kate Bergeron在采访中确认，iPhone Duo内屏上方的nano-texture纳米纹理盖板层可以剥离并更换，美国市场购买AppleCare+的用户更换费用为19美元。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这一盖板层主要用于隐藏折叠屏中间的折痕，Bergeron表示苹果做了大量工程工作确保该层持久耐用，但随着使用时间推移折痕可能变得更明显，用户可选择更换。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/a1fbc6bf-4969-4698-9530-245b25e696ca.jpg" target="_blank"&gt;&lt;img alt="苹果确认iPhone Duo内屏保护层可更换：AppleCare+用户19美元一次" h="337" src="//img1.mydrivers.com/img/20261002/Sa1fbc6bf-4969-4698-9530-245b25e696ca.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;iPhone Duo内屏为7.6英寸超视网膜XDR OLED可折叠全面屏，分辨率1878 x 2670，430ppi，采用纳米纹理表层减少眩光和反射，同时隐藏折叠中间的折痕，搭载屏下前摄。&lt;/p&gt;
+&lt;p&gt;外屏为5.4英寸超视网膜XDR OLED全面屏，分辨率1398×2034，460ppi。&lt;/p&gt;
+&lt;p&gt;双屏均支持ProMotion自适应刷新率最高120Hz、全天候显示、HDR、原彩显示和P3广色域，对比度2000000:1，典型亮度1000尼特，户外峰值亮度3000尼特。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/47a1d2de-b83d-4e77-999c-a968be0eb041.png" target="_blank"&gt;&lt;img alt="苹果确认iPhone Duo内屏保护层可更换：AppleCare+用户19美元一次" h="381" src="//img1.mydrivers.com/img/20261002/S47a1d2de-b83d-4e77-999c-a968be0eb041.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;机身采用钛金属可折叠设计，正面为超瓷晶面板2，背面为超瓷晶面板，展开厚度5.2毫米，闭合厚度11.3毫米，重量254克，提供夜空色和星光白色两种配色。&lt;/p&gt;
+&lt;p&gt;核心搭载A20 Pro芯片，6核CPU含2个超级核心和4个能效核心，7核GPU配备神经网络加速器，双16核神经网络引擎，支持硬件加速光线追踪。&lt;/p&gt;
+&lt;p&gt;影像配备4800万像素融合式双摄系统，主摄26毫米焦距f/1.6光圈，同时支持52毫米焦距f/1.6的2倍光学品质长焦，超广角13毫米f/2.2光圈。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/388ed5c9-317f-4ddd-a931-7580afca2d09.jpg" target="_blank"&gt;&lt;img alt="苹果确认iPhone Duo内屏保护层可更换：AppleCare+用户19美元一次" h="399" src="//img1.mydrivers.com/img/20261002/S388ed5c9-317f-4ddd-a931-7580afca2d09.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;存储提供256GB、512GB、1TB和2TB四个版本，IP68级防水支持6米水深30分钟，采用双eSIM设计不支持实体SIM卡。&lt;/p&gt;
+&lt;p&gt;网络方面搭载Apple C2基带和Apple N1 Wi-Fi芯片，支持802.11be Wi-Fi 7、蓝牙6和Thread，内置第二代超宽带芯片。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;国行起售价15999元，10月16日开启预购，10月23日正式发售。&lt;/strong&gt;&lt;/p&gt;
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 06:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5uLXlCc2VJYzktZVhaOWJtVUpUbXFGZm5hSW5rY1NldDhBX29QWFh0Szc3cjYxc195NGlsemhCbHkxdm92MDUtbFZUTG5vV0VmN2c5RHBYSEs</guid></item><item><title>一加16首次搭载三频GPS+四频北斗：定位更快 导航更精准 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155139.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+          
+           &lt;p&gt;&lt;span&gt;&lt;strong&gt;快科技10月2日消息，一加李杰今天官宣，一加16首次搭载三频GPS加四频北斗卫星定位系统，定位速度更快，导航更加精准。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这可以让手机在多频卫星信号可在城市峡谷、高架桥下和复杂道路环境中提供更稳定的定位，减少偏航和定位漂移。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/67505e09-9475-4b48-9783-75e89c0d2812.png" target="_blank"&gt;&lt;img alt="一加16首次搭载三频GPS+四频北斗：定位更快 导航更精准" h="211" src="//img1.mydrivers.com/img/20261002/S67505e09-9475-4b48-9783-75e89c0d2812.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前一加16已在全国OPPO门店提前上柜，用户可在国庆假期前往线下体验。&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;一加16已经定档10月12日发布，是首批搭载第六代骁龙8超级至尊版的旗舰手机，安兔兔综合成绩突破563万，是史上最高分，超越同平台其他竞品机型。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="一加16首次搭载三频GPS+四频北斗：定位更快 导航更精准" h="800" src="//img1.mydrivers.com/img/20261002/0597a5d5-7775-40ec-b301-02d96abdf559.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;第六代骁龙8超级至尊版采用台积电2nm工艺，CPU主频首次突破5.0GHz，全大核架构，CPU性能提升13%，GPU性能提升44%，CPU能效提升37%，GPU能效提升40%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;除了SoC的强劲性能之外，一加16还深度联合高通打造新一代风驰游戏内核，将芯片级游戏技术直接写入芯片底层，实现原生185FPS满帧运行，和平精英等游戏可长时间稳定跑满185帧。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="一加16首次搭载三频GPS+四频北斗：定位更快 导航更精准" h="800" src="//img1.mydrivers.com/img/20261002/19f4f974-1d28-4b37-b3e4-29d056d8fe72.jpg" w="600"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;strong&gt;同时配备自研电竞三芯：P4超级显示芯片、T3灵犀触控芯片、G3电竞网络芯片，从显示、触控和网络三方面补强游戏体验。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;屏幕为6.78英寸1.5K BOE OLED直屏，用1.15mm极窄四等边设计，并配合黄金大R角，进一步收窄正面边框，支持185Hz刷新率，机身内置9000mAh电池。&lt;/p&gt;
+&lt;p&gt;影像搭载2亿像素1/1.4英寸主摄（f/1.6光圈）+5000万像素3倍潜望长焦+5000万像素超广角三摄组合。&lt;/p&gt;
+&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261002/b115ebba-fa32-4101-88c8-c136a0179f22.jpg" target="_blank"&gt;&lt;img alt="一加16首次搭载三频GPS+四频北斗：定位更快 导航更精准" h="800" src="//img1.mydrivers.com/img/20261002/Sb115ebba-fa32-4101-88c8-c136a0179f22.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+
+            
+ &lt;div&gt;
+           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：建嘉&lt;/span&gt;&lt;/p&gt;
+&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+     
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 06:13:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9SbVRPQ19UOU1GQVpsbXBSeGdvdWp4SkZSM0hWRGk3UzNwU2l5dDVPbEo5S1pYVzQzVm1pRWkxa0Vka3ZXQzU5NHBGZWlYXzhONVVsVVFpeHg</guid></item><item><title>港股突发！上市第二日暴跌48%！物理AI牛股怎么了？ - 东方财富</title><link>https://wap.eastmoney.com/a/202610023888348564.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="info-info"&gt;
+        
+        &lt;p class="related"&gt;
+
+        &lt;/p&gt;
+
+        
+
+        
+        &lt;a href="" class="fold-btn" data-expose-adveid="zx-zwy.zxzdgg.xz-pg" tracker-eventcode="zx-zwy.zxzdgg.xz"&gt;点击阅读全文&lt;/a&gt;
+        &lt;p class="layer"&gt;&lt;/p&gt;
+        
+        
+        
+
+        
+
+        &lt;p class="shenming"&gt;&lt;strong&gt;郑重声明：&lt;/strong&gt;东方财富发布此内容旨在传播更多信息，与本站立场无关，不构成投资建议。据此操作，风险自担。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>东方财富</author><pubDate>Fri, 02 Oct 2026 06:00:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiYEFVX3lxTE5nc08wQ0pZUWpweFltbm42d2pTVFZWbVE5VTBzcVFRd1IzUjB0T3VmNWpYT3ZUd0VCMUEzeFo0QWw4NXpoZHRobXVVYk13ZW9EajBnY1JSOHM1TDZMTkFfZg</guid></item><item><title>从拒绝到加码：马斯克如何将SpaceX的AI算力变成每月数十亿美元的“云生意” - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782913</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 05:33:41 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE13VmZkRk9sQk9KblZIb1dySmpwLTEtWVNmY1VPWlRwQkRkMFdXZExJZ2hPMWMxaXFPYXRpdndHbDdvT2l3Tm1SUGVjMk1iTG9RSUhn</guid></item><item><title>特朗普提议人工智能改称SI，斯洛文尼亚域名注册量暴涨 - 凤凰网</title><link>https://news.ifeng.com/c/8wtPqcA1csW</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;欧洲新闻台报道，特朗普在联合国大会称，“人工智能”（AI）一词听起来很“假”，美国将在官方文件中改用“超级智能”（SI）。&lt;/p&gt;&lt;p&gt;巧的是，.si正是斯洛文尼亚互联网域名的主后缀，用来标识网站来自这个约210万人口的阿尔卑斯山小国。特朗普演讲过后，斯洛文尼亚域名管理机构Register.si日均注册3700个新域名，对比之下，8月整月注册量仅约3500个。截至9月29日，域名总量突破22万个。&lt;/p&gt;&lt;p&gt;Register.si发言人克拉拉・赫尔曼介绍：“自这场演讲之后，.si 域名的申请量出现明显且稳定的增长。”&lt;/p&gt;&lt;p&gt;该机构在官网发布公告，“强烈建议商标、宣传口号、企业名称等相关权益持有者，若尚未注册.si 域名，请尽快完成注册。”&lt;/p&gt;&lt;p&gt;这并非巴尔干地区的国家域名首次在全球走红。多年来，黑山的域名后缀.me 就被广泛用于个人网站或行动号召类站点，例如电报（Telegram）通讯应用的官方短域名t.me。&lt;/p&gt;&lt;p&gt;而人工智能浪潮之下，网络域名为“.ai”的加勒比海地区小岛安圭拉在2023年靠卖“.ai”域名赚得3200万美元（约合人民币2.28亿元），这笔钱大约占当地政府收入的两成。&lt;/p&gt;&lt;p&gt;安圭拉位于加勒比海地区，属于英国海外领土，占地面积约91平方公里，人口约为16000人，以珊瑚礁和沙滩景色闻名。当互联网域名分配机构发放国家和地区代码顶级域名时，安圭拉获得了“.ai”这个域名。随着人工智能浪潮来袭，不少人工智能公司纷纷在安圭拉注册了本公司以“.ai”结尾的网址。&lt;/p&gt;&lt;p class="detailPic"&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/ucms/2026_40/A9F73045F5F985B590C087B92E152D93031CDBBA_size138_w800_h309.jpg" alt="特朗普提议人工智能改称SI，斯洛文尼亚域名注册量暴涨"&gt;&lt;/p&gt;&lt;p&gt;不过，安圭拉并没有自己的人工智能产业。政府部门指出，这是一笔意外之财，不能完全依赖于此。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Fri, 02 Oct 2026 04:52:31 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTFBZSDNTdnAwSkN2ak1tQkp4d1hhQi1vVkE5TEVnMHBIUG90dks4RUV2UWNiQ2tYd2FJbUczeFpPREZoa2d0c2hQWFlCeFY</guid></item><item><title>玉渊谭天：中美11月人工智能对话谈什么 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782918</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 03:57:20 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTFBpQ0c5VUNrMkhGWEhHaUM1VGlpRWtNNkhjSTJsOFpfTUhBb1Y5cjEwd3ZxcGJaRE93aHpMdmtyakRyRDU3aGRtNnltSEJ1SnpoMmtN</guid></item><item><title>迪拜赴以航班空中事件暴露巨大安保漏洞 - 华尔街日报中文版</title><link>https://cn.wsj.com/articles/%E8%BF%AA%E6%8B%9C%E8%B5%B4%E4%BB%A5%E8%88%AA%E7%8F%AD%E7%A9%BA%E4%B8%AD%E4%BA%8B%E4%BB%B6%E6%9A%B4%E9%9C%B2%E5%B7%A8%E5%A4%A7%E5%AE%89%E4%BF%9D%E6%BC%8F%E6%B4%9E-7851c15e</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文版</author><pubDate>Fri, 02 Oct 2026 03:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMipgJBVV95cUxNbjNjTU9KbmZfNmJZTy1HT1o0czkydVdkY2xGZFg3allRbkFpSXVuUjZ2eWZFZjVwVVc4VWd5WC1RRk5XMzg0QlhQQUlZN00tY0E2UE4zQ0NkVnIzVGpzeEVEV0QyY19wdnphdGxDd3piZ0xoaGE1S0VldHJZTkRfazJDRER0YlJiZ1MySkZKZFFiR29LTkN2bDF5TE45bWsxZFFtTDIwT2JVcEZPeWRhdXFXUlV4NzhEYjNkbTJkdl9TUUczTmRhUVY5SVpGSGhMVDZsVTUtaGc0RDhRZ1VZa1JEdmFxVksySF94aFFjRnZOb1BKNk5yRFd4RUUxdFZOSTltOHdfb1BPX3N2cHZPY2FFZGw3WFdLS3Znc0xGRk10clNhdkE</guid></item><item><title>谷歌机器人战略：软件优先，复制安卓打法布局具身智能 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782916</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Fri, 02 Oct 2026 03:28:43 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE1BN2dvcFdrcmFvNUZjem43Z0FGeVhucE0zRGFDZ2JCakNjdFE0QUQ2S0czOE4yRmJPZF96UlBsbFFuam9CSlp4VkVzRXIxTkNBdFVB</guid></item><item><title>何刚晒华为睿影Z10模块相机实拍：24-240mm一镜搞定全场景拍摄 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155131.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
            &lt;p&gt;快科技10月2日消息，&lt;strong&gt;华为终端BG何刚假期外出，上手实测睿影Z10模块相机，并且在微博放出实拍样张，给大家展示这套外接影像设备的实际拍摄效果。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这套模块装在Mate 90 Pro Max典藏版上面，拧一下听到咔哒一声就安装完成，上手拿着很有专业相机的质感。&lt;/p&gt;
@@ -107,7 +597,7 @@
       &lt;/div&gt;
     &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 03:25:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE1ZeGNlNnVhajdHc3BqbS00X29HOXNLN0VCUk5zOUJUbFlxS1kyZURta0FxUWlEb2pYRmg5dTd6S0FGM2FQZEdrc3hTMGE1ZE9vZEYwQndXZEY</guid></item><item><title>非法转运3亿美元AI芯片服务器至中国 美国男子被捕 - 8world</title><link>https://www.8world.com/world/friendly-faced-california-tech-ceo-arrested-by-feds-3297156</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="text-long"&gt;&lt;p&gt;美国一名男子涉嫌把价值超过3亿美元、搭载受管制人工智能芯片的服务器非法转运到中国，被美国联邦执法人员逮捕。&lt;/p&gt;&lt;p&gt;《彭博社》报道，美国司法部说，38岁的Greg Lui是加利福尼亚州一家电脑公司的老板。控状指他和其他人合作，在2023年到2024年期间，购买搭载英伟达（Nvidia）先进人工智能芯片的高端服务器，并虚报货物的最终目的地和伪造文件。&lt;/p&gt;&lt;p&gt;检察官指，有关设备先被出口到新加坡和马来西亚，再转运到中国，以避开美国的出口限制。&lt;/p&gt;&lt;p&gt;在其中一笔交易中，他以约760万美元购入27台搭载英伟达H100芯片的服务器，并安排运往马来西亚后再转运中国。&lt;/p&gt;&lt;p&gt;法庭文件显示，被告的公司去年从两家马来西亚物流公司收到超过1亿7600万美元。&lt;/p&gt;&lt;p&gt;Greg Lui面对违反美国出口管制、走私和串谋洗钱等罪名。一旦罪成，可能面对超过20年监禁。&lt;/p&gt;&lt;/div&gt;
       
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world</author><pubDate>Fri, 02 Oct 2026 03:21:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMikgFBVV95cUxNdVVVV09aZmV1VGswa2lWOUtQNkRCb194emNobVZlT25oVFNEVG5FVUZMaFZjRVNhUWZadTlBbEZ6b2M0OUhNUUFOMHdKay1vXy1MNlpNX0VGbk9CV2R1SUhDMU9jR2prMW0tYWFwNC1JTUhNdjJUajZUTlNFbXA0Y3kzejk3MW1sNGdISzdFLXU1dw</guid></item><item><title>200元的废手机改成迷你主机！跑《我的世界》超400帧 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155129.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>8world</author><pubDate>Fri, 02 Oct 2026 03:21:16 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMikgFBVV95cUxNdVVVV09aZmV1VGswa2lWOUtQNkRCb194emNobVZlT25oVFNEVG5FVUZMaFZjRVNhUWZadTlBbEZ6b2M0OUhNUUFOMHdKay1vXy1MNlpNX0VGbk9CV2R1SUhDMU9jR2prMW0tYWFwNC1JTUhNdjJUajZUTlNFbXA0Y3kzejk3MW1sNGdISzdFLXU1dw</guid></item><item><title>徐直军：华为昇腾中国份额已超英伟达 - 凤凰网</title><link>https://finance.ifeng.com/c/8wtIQWZI5hM</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/584815789BAEF04AEBCEFD4261FE8FF740B2CF0F_size363_w833_h467.png"&gt;&lt;/p&gt;&lt;p&gt;在2026年9月17日举行的华为全连接大会期间，华为轮值董事长徐直军与海思首席科学家廖恒博士与多家媒体机构的记者进行了问答环节，讨论了华为面向人工智能时代的Peerium计算架构以及UnifiedBus（UB，灵衢总线）。&lt;/p&gt;&lt;p&gt;在去年的华为全连接大会上，徐直军发表了主题演讲，发布了昇腾芯片及其路线图（包括950、960、970，以及SuperPoD和SuperCluster）。他还宣布了UnifiedBus协议的开放发布。&lt;/p&gt;&lt;p&gt;在今年的华为全连接大会上，华为发布了昇腾950和Atlas 950 SuperPoD。当业界都在谈论SuperPoD或超级节点时，实现这些产品的方式却有着巨大差异。SuperPoD的关键在于让数千甚至数万个处理器像一台计算机一样工作。&lt;/p&gt;&lt;p&gt;Atlas 950 SuperPoD由华为首创的新计算架构驱动。这一架构如今可以让一百万个处理器像一台计算机一样工作。该架构被称为Peerium，它通过嵌套并行、统一内存寻址和对等互连，实现了百万处理器级别的强扩展。它通过引入嵌套BSP（嵌套批量同步并行）扩展了图灵的并行范式。&lt;/p&gt;&lt;p&gt;该架构还扩展了冯·诺依曼单机架构，超越了数十年来盛行的主从设计范式。鉴于业界现有技术无法支持这一架构，华为发明了一项关键互连技术——UnifiedBus。最终，一百万个处理器能够真正像一台更大的计算机一样工作。&lt;/p&gt;&lt;p&gt;UnifiedBus是一种高速总线，采用开放协议，可无限扩展，用于连接CPU、NPU、内存、SSD、接口卡和交换机。借助UnifiedBus，实现了跨计算、存储和网络的对等互连。这从根本上超越了传统的主从架构。&lt;/p&gt;&lt;p&gt;Atlas 950 SuperPoD是基于Peerium计算架构构建的产品。目前，一个拥有25.6万张计算卡的SuperCluster正在部署和测试中。&lt;/p&gt;&lt;p&gt;以下为采访实录：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：廖博士，您的论文提到了一款由25.6万张卡组成的SuperPoD。这是你们技术的上限吗？能否进一步谈谈市场对你们产品的需求？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;廖恒：25.6万，或者说大约20万，这个数字不是随意选择的。&lt;/p&gt;&lt;p&gt;首先，这些大型集群的目的是用于训练。它拥有能够支持基础模型训练的硬件基础设施，而如今的基础模型已经达到5万亿参数的规模。&lt;/p&gt;&lt;p&gt;未来两年，中国大约会有6到7家前沿AI实验室，它们都将致力于训练规模在10万亿到40万亿参数之间的基础语言模型。这些数字大致与内存容量和SuperPoD的规模相匹配。所以，你需要如此规模的 infrastructure 来训练这些模型。&lt;/p&gt;&lt;p&gt;第二，在中国，大多数数据中心在电网方面都有国家规划。因此，考虑到单个自治区域和单个数据中心园区的电力输送系统设计，20万是一个相对保守的数字。&lt;/p&gt;&lt;p&gt;正如我所说，大家肯定对全球正在发生的AI模型竞赛非常熟悉。在中国，至少有三到四家一线玩家已经得到广泛认可，并达到了一线地位。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：你们有什么计划鼓励中国的模型提供商使用昇腾芯片进行训练？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：对于昇腾950，我们首先向市场推出了950PR。它主要用于AI推理，目前市场上可供应的总量不是很大。基于昇腾950DT的SuperPoD主要用于AI训练。目前它们正在测试中，大规模供应将在今年年底或明年年初开始。我们正在与AI模型提供商进行广泛的对话和讨论。使用昇腾950DT进行训练的测试结果相当不错。我相信从明年开始，大量AI模型训练将基于使用昇腾950DT的SuperPoD。我认为归根结底，不在于我们要多努力去推动模型提供商，而在于我们有多少供应能力。我们只能根据生产多少来供应。我们希望价值链能更快地扩大产能，增加供应。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：华为对美国领先AI模型提供商近期呼吁放缓AI开发有何看法？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：我们需要看中国和美国AI发展的水平和节奏。中国的AI模型主要是开源模型，其进展相对透明。如果我们看美国的主流模型提供商，他们拥有更多算力，所以也许只有他们自己知道其模型的复杂程度处于什么水平。中国市场对AI风险的感觉可能比美国弱。中国的模型提供商需要加快步伐，达到他们也能感受到AI发展风险的水平。然后，也许他们会与美国领先的模型提供商有同样的感受。但我始终相信，我们需要在推动AI发展和管控AI风险之间取得平衡。至少，底线是我们需要确保AI向善，而不是AI作恶。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：华为是否有计划将Atlas 950 SuperPoD推向中国以外的其他市场？如果有，你们的目标市场是哪些？能否分享你们在中国市场份额的数据？你对中国推动芯片自给自足有何看法？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：由于我们甚至没有足够的产能满足中国国内的需求，我们没有计划全面拓展国际市场。但确实有几个国家有非常强劲的需求。我们正在进行一些测试，并向这些国家提供一些供应，但数量相当有限。&lt;/p&gt;&lt;p&gt;目前，很难收集英伟达在中国市场份额的数据。但根据我们收集的数据，昇腾已经超越了英伟达。&lt;/p&gt;&lt;p&gt;中国推动芯片自给自足是必然的前进道路。中国是一个拥有14亿人口的国家，是一个工业强国，人们的工作和生活方式与芯片紧密相连。中国人有强烈的紧迫感，不会接受由别人决定我们能否获得某些产品的未来。即使我们的芯片可能不那么先进，至少供应是有保障的，这样你就不必日复一日地担心芯片供应。我认为这肯定是前进的道路。对于中国政府、对于国内产业、对于华为来说，前进的道路无疑是推动芯片和整个半导体价值链的全面自给自足。我们也相信这迟早会成为现实。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：你们的UnifiedBus互连技术源自你们在计算和通信领域的长期优势。UnifiedBus有多少来自你们的网络部门？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：UnifiedBus不仅仅源自我们业务的网络部分。我们整合了不同的互连协议，开发出一个统一的协议。网络更多地与IP协议相关，其延迟要高得多。当我们看计算互连时，它与传统网络不同，它更多地与总线相关，总线应该提供低延迟和高速度。当我们决定做这个产品本身时，我们的想法是把它放在计算部门，而不是传统的网络部门。我们认为，如果我们想提供高速、低延迟和统一协议的UnifiedBus，这是更好的选择。&lt;/p&gt;&lt;p&gt;廖恒：如果你把UnifiedBus看作一群人的智慧结晶，它是由计算机架构师构思的，但是由网络团队养大的。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：UnifiedBus同时适用于横向扩展和纵向扩展，而英伟达分别用NVLink和InfiniBand应对这两种场景。那么华为将协议统一为一个UnifiedBus同时支持纵向和横向扩展，是出于什么考虑？与类似解决方案相比，UnifiedBus有哪些优势？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：这不是英伟达是否开发统一技术的问题。这是他们是否有能力开发这种技术的问题。他们最新的NVL72解决方案在机架内通信带宽高达1.8 TB/s。但一旦使用InfiniBand进行机架间通信，带宽就降至0.2 TB/s。如此低的机架间通信带宽，根本无法让一百万个处理器像一台计算机一样工作。我认为每个人都希望拥有超高速互连，用于机架内、机架间、数据中心间，甚至自治区域间的通信，因为这样我们才能将大量处理器变成一台计算机。这就是UnifiedBus的价值所在。我们可以使用一个统一的协议，在所有层级实现高速互连。从技术上讲，UnifiedBus的功能就像计算机的总线，它不仅仅支持链路。基于UnifiedBus，我们可以实现高达800 GB/s的机架间通信带宽。&lt;/p&gt;&lt;p&gt;去年我们将UnifiedBus协议开放后，下载量最多的地方是硅谷。最初，英伟达可能不想做NVL72解决方案；他们可能瞄准的是NVL256解决方案。但最终他们做出了NVL72解决方案，而不是NVL256解决方案。然而，华为开发了搭载384个910C处理器的SuperPoD解决方案，我们已经出货了1000多套。这很大程度上是因为我们有UnifiedBus用于这个解决方案。英伟达使用NVLink进行机架内通信，他们的机架间通信速度不够高，这使得他们很难按自己的意愿扩展。&lt;/p&gt;&lt;p&gt;廖恒：你问题的一部分是关于为什么单一协议是必要的，因为显然英伟达和大多数其他厂商至少使用了两个协议，在某些情况下可能更多。想象一下，如果你的旅程涉及飞机、高铁和汽车，中转相当耗时。超级节点内部需要大量的流量交换。如果你从NVLink转换到InfiniBand，至少需要微秒级的时间从一个协议转换到另一个协议。有了这两个独立的协议，很难满足延迟要求。&lt;/p&gt;&lt;p&gt;有了UnifiedBus，我们使用单一协议。这意味着如果你将一个数据包从纵向扩展网络移动到横向扩展网络，可能只需要150纳秒。协议转换开销至少节省了一个数量级。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：在采用UnifiedBus的Atlas 950 SuperPoD中，有多少纵向扩展是通过电信号实现的，有多少是通过光信号实现的？你认为光学最终会占据整个机架吗？最大的障碍是什么？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：华为今天上午发布的Hi-ONE模块是一个NPO模块，支持7.2T带宽，距离主芯片仅5厘米。我们使用铜线连接这两者，其余全部是光学。所以我们可以说这个SuperPoD几乎是一个全光SuperPoD。光源也集成在Hi-ONE模块中。我想说，在未来两到三年内，没有其他厂商能够生产类似的模块。华为能够开发和量产这个模块，是因为我们在光子学方面有多年的经验。&lt;/p&gt;&lt;p&gt;廖恒：在我职业生涯的早期，几乎可以追溯到20年前，我们就已经在谈论让芯片走向光学。因为我们都知道光学传输距离短、衰减很小，所以信号可以高速传输更长的距离。&lt;/p&gt;&lt;p&gt;但如果你看Hi-ONE内部的电路，组件并不多。但量产过去对我们来说非常困难。因为光学涉及很多物理问题。如果温度变化几度，就会影响二极管的物理特性、折射率和波导特性，导致无法工作。&lt;/p&gt;&lt;p&gt;我认为最大的采用障碍是对可靠性的担忧，因为东西会坏。大多数其他提供商几乎主要选择将激光器放在外部。想想如果你必须用单个光源馈送32路信号，光源的功率必须乘以32倍。这是很大的功率，会在耦合接口和其他所有地方导致问题。我们选择将光源集成到模块中。这纯粹是工程上的务实选择。Hi-ONE是经过一个又一个妥协后的绝佳方案，很快就会进入量产状态。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：你提到昇腾芯片在中国大陆的产能和供应有限。那么阻碍中国大陆产能提升的最大障碍是什么？到什么时候华为能够确保大规模稳定供应？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：中国大陆的瓶颈基本上与世界各地的瓶颈相同。全球产业没有为我们所看到的AI激增做好准备。当我们看光模块和存储产品的供应商时，他们以非常高的溢价销售，不一定是因为他们产品非常好，而是因为供应相比市场需求非常短缺。只有当中国大陆和全世界的供需达到平衡时，这个瓶颈才能完全解决。在我看来，全球范围内的供需平衡将在2029年左右实现。在中国大陆，可能还会更慢。当我们看这种供需平衡时，我们必须考虑到AI领域不断发展的技术，如NPO（近封装光学）和CPO（共封装光学）。&lt;/p&gt;&lt;p&gt;如果我们回顾华为的历史，无论是在通信业务还是IT业务，我们目前向市场供应的量已经可以称为“规模化供应”。但如果我们将供应量与AI基础设施的需求相比，我认为还非常少。如果我们要满足客户想要的供应量，这种平衡最终将依赖于整个中国行业的供需平衡。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：有报道称马来西亚正在考虑将华为昇腾910C加速器作为其主权AI计划的核心。你如何平衡国内和国外客户的需求？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：对于任何客户来说，他们部署华为解决方案的决定是基于地缘政治和多供应商策略的考虑。所有公司都必须着眼长远，努力确保供应安全。在这种背景下，昇腾当然是很多客户的选择之一，尽管可能与一些竞争对手存在一些差距。满足国内客户和国际客户需求之间的平衡其实很简单：我们优先考虑对算力有迫切需求的中国客户；在中国以外，我们只向非常有限的客户供应，这些客户要么无法获得替代解决方案，要么想要一个替代解决方案。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：当华为决定选择NPO而非CPO时，华为内部最重大的反对意见是什么？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：华为内部似乎没有就此进行辩论。华为从事光器件、光模块和昇腾芯片，所以我们知道哪个是我们的最佳选择。因此华为内部的共识很早就达成了。我们就选择了NPO，而不是CPO。除此之外，我们认为从工程实施、成本、可维护性和良率等多个角度来看，NPO将在很长一段时间内是最佳选择。&lt;/p&gt;&lt;p&gt;行业参与者随着时间的推移对NPO和CPO有了更清晰的认识。这在光互联论坛（OIF）最近的两次讨论中得到了完美体现。在第一次OIF讨论中，一些成员不支持NPO——他们决心做CPO。但在最近的OIF讨论中，只有非常有限的参与者仍然反对NPO，并且启动了一个新的NPO项目。NPO仍然有大约5厘米的铜互连，比CPO大约5毫米的铜互连要长。然而，与CPO相比，NPO将成本降低了近40%。NPO还有另一个好处：如果光引擎出问题，整个AI芯片不会随光引擎一起报废。当然，CPO和NPO不是谁取代谁的问题；而是在工程实施、成本、供应链和可维护性等因素之间的平衡选择。这里没有对错之分。&lt;/p&gt;&lt;p&gt;华为完全致力于NPO。我们正在推动标准化努力，也帮助发展整个产业生态，以便NPO有一条技术路径可以蓬勃发展。我们不是说CPO不好。OIF的40家厂商在看到NPO能带来的好处后，现在都支持NPO。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：关于使用950DT进行训练，你们从模型提供商那里收到了哪些关于需要改进的领域和问题的反馈？你们做了哪些改变来让昇腾上的预训练更好？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;廖恒：昇腾遇到的第一个障碍实际上不是硬件本身。主要是生态障碍，因为两年前昇腾仍然存在巨大的软件障碍，而CUDA显然具有主导优势，因为整个学术界是与CUDA一起成长起来的。所以所有算法开发者都习惯了PyTorch加CUDA的便利。&lt;/p&gt;&lt;p&gt;过去18个月发生了巨大变化。首先，模型数学的复杂程度发生了巨大变化，编程复杂度也相应增加。其次，模型变得非常细粒度，意味着你不能再只靠PyTorch写程序并保持效率。所以，即使对算法开发者来说，他们也必须转向这种大内核风格的编程，需要采用新的编程语言。这已经是前沿实验室的开发方式。&lt;/p&gt;&lt;p&gt;现在，随着新的编译器语言出现，这些新编译器正在取代并逐渐平衡CUDA的障碍，因为CUDA不再被前沿实验室视为重要，远不如两年前那么重要。这就是软件障碍的消解。我认为我们正在达到同等水平，甚至更接近 平衡。差距大大缩小了。&lt;/p&gt;&lt;p&gt;其次，芯片本身，我们有我们自己的优势，如我所说，UnifiedBus和嵌套BSP模型。这不仅仅是编程单个芯片，还涉及以便捷的方式编程大量芯片。我们正在提供这些。在芯片内部，我们吸取了教训，做了很多改进。&lt;/p&gt;&lt;p&gt;总的来说，我们正在缩小英伟达和昇腾之间的差距。我认为如今，主要差异已经小得多。当人们使用这些处理器进行开发时，不再感到那么陌生了。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：下周，中国领导人将会见美国总统，AI将是他们讨论的一部分。作为中国企业家，你对那次会晤有什么样的合作期待？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：所有中国企业可能都有一个共同的愿望，那就是在市场竞争中和平共处，不受政府干预。我们以前生活在全球化和充分竞争的时代，企业依靠创新和产品赢得客户。但随着地缘政治影响日益加剧，全球化正在离我们远去。企业希望进入全球市场，通过创新和产品赢得客户，而不是被困在无法买卖自己想要的东西的境地。&lt;/p&gt;&lt;p&gt;过去30多年，华为依靠创新在市场上赢得了一席之地。我们依靠持续、大量的研发投入来提高产品竞争力，从而赢得客户的信任。2007年至2025年间，我们的累计研发投入超过1.8万亿元人民币。我们还承诺将其中10%的研发支出用于基础研究。正是因为我们大量的研发投入和对创新的强烈关注，才转化为更具竞争力的产品。我们在竞争激烈的市场中以创新驱动的方式，解释了华为如何成为今天的华为。&lt;/p&gt;&lt;p&gt;关注通信行业的记者朋友们可能知道华为过去几十年走过的历程。AI也是一样。我们只是走一条我们擅长、能够引领我们建立面向未来竞争力的道路。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;问：考虑到中国大陆无法获得先进制程节点，UnifiedBus是中国大陆的独特路径吗？还是整个行业迟早都需要它？英伟达可能会朝你们的方向发展吗？&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;徐直军：UnifiedBus是一条创新之路，也是AI计算的未来之路。&lt;/p&gt;&lt;p&gt;因为只有借助UnifiedBus互连技术，你才有可能构建一台拥有百万处理器的巨型计算机。当一百万个处理器像一台计算机一样工作时，这为更好、更高效的AI训练和推理奠定了基础。因此，我将UnifiedBus视为未来AI时代的路径。我相信，在未来几年，其他参与者肯定会跟进。&lt;/p&gt;&lt;p&gt;这也是我们将UnifiedBus协议开放的原因。因为我们相信整个行业将朝着同一方向前进，我们期待全行业共同努力，迈向通用人工智能（AGI）。这也是廖博士发表论文介绍我们Peerium计算架构的原因，因为Peerium是AI时代的架构。对于960，它的规格与我去年介绍的基本相同，唯一的变化是市场供应的步伐更快了。HBM是960的一部分。没有HBM的改进，就不会有整个960的改进。&lt;/p&gt;&lt;p&gt;UnifiedBus互连技术是我们实施Peerium计算架构的基础。UnifiedBus互连技术和Peerium计算架构都是通往未来AI时代的路径。&lt;/p&gt;&lt;p&gt;我已经说过很多次，当我们看单个芯片时，华为面临的问题不是设计本身，而是中国大陆可用先进制程节点的限制。但如果我们互连大量芯片构建一台计算机，我认为我们在这方面已经取得了全球领先地位。这是建立在我们架构和互连技术创新基础上的。这些领域的努力始于美国限制之前，而不是之后。正是在2018年华为全连接大会上，我发布了华为的首款AI芯片以及我们的AI战略。2019年，我们发布了SuperPoD和集群。从那时起，我们就一直认为，为了支持AI训练和推理，行业需要新的架构和新的互连技术。也是从那时起，我们开始加大研发和创新投入。这为我们发布新的计算架构和UnifiedBus互连技术奠定了基础。&lt;/p&gt;&lt;p&gt;我相信整个行业都面临同样的问题。一旦你处于多计算卡或多加速器环境中，模型浮点运算利用率（MFU）就是一个非常关键的指标。当你进行大型AI模型训练时，一旦一张计算卡出现故障或性能下降，就会给整个AI训练带来重大损失。&lt;/p&gt;&lt;p&gt;基于UnifiedBus互连技术和Peerium计算架构，我们开发了SuperPoD和基于SuperPoD的SuperCluster。这些解决方案可以大幅提高MFU，这是已经得到验证的事实。这也是顶级模型提供商在使用昇腾950训练AI模型时最看重的。我们还可以提供原厂服务。这可以帮助进一步提高MFU，降低AI训练成本，并使AI训练迭代更快。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Fri, 02 Oct 2026 03:03:07 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiUEFVX3lxTE1ySVQyVktDNVhyQWNBY1hnNnVPdWE3M1U1anBfbG1sN1pPRURLZmN1TzFhd0NXWmwzdWxsSXRDUHZ5X3BvUnItSFU3NTFvVEF0</guid></item><item><title>200元的废手机改成迷你主机！跑《我的世界》超400帧 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155129.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
     &lt;div class="news_n"&gt; 
       &lt;p class="news_bt" id="thread_subject"&gt;200元的废手机改成迷你主机！跑《我的世界》超400帧&lt;/p&gt;
           
@@ -192,7 +682,7 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 02:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5vMG9fajVBQTlfU3N2OHh2MVVsTFFLdFhqVlRVLXVFMHQ3T2NsR2tHbDdWM2FpU2NhSmpQQWh6bkh4QjBOMHNCUVhKRzF3RzY0OE1XRHN3Mk8</guid></item><item><title>9月财新中国新经济指数降至34.1 主要受科技投入下降影响 - economy.caixin.com</title><link>https://economy.caixin.com/2026-10-02/102490301.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Fri, 02 Oct 2026 02:39:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5vMG9fajVBQTlfU3N2OHh2MVVsTFFLdFhqVlRVLXVFMHQ3T2NsR2tHbDdWM2FpU2NhSmpQQWh6bkh4QjBOMHNCUVhKRzF3RzY0OE1XRHN3Mk8</guid></item><item><title>扎克伯格正向苹果公司帝国发起挑战 - 华尔街日报中文版</title><link>https://cn.wsj.com/articles/%E6%89%8E%E5%85%8B%E4%BC%AF%E6%A0%BC%E6%AD%A3%E5%90%91%E8%8B%B9%E6%9E%9C%E5%85%AC%E5%8F%B8%E5%B8%9D%E5%9B%BD%E5%8F%91%E8%B5%B7%E6%8C%91%E6%88%98-337cdb10</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;body id="readabilityBody"&gt;&lt;p id="cmsg"&gt;Please enable JS and disable any ad blocker&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>华尔街日报中文版</author><pubDate>Fri, 02 Oct 2026 02:09:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMijgJBVV95cUxPNmxlTlRnWEQ1VkFIRGNUaF9JQVV3YTNwellBRXVZdGh0ZzY2ZWJlX2x2VGY1QjlKcUUyTVJWTXU5WVpFdFYyaGpMallza29nWEM3YndDSmplZTdvcTRnbmNZeXdfUHg2cHdNWmtfbzdCbl9hRkphVVp4aFVKbHcyMzh1R0t2dUNiUFEySjMtNGFSUDI5MUcwbThlczM0SHRNdjhBSkRkZ09jOGZfVVV6alNjaWd0aEVsU2hxbm16aXBfTW9BNVd6VlVpX0tUN1gwcGczRjZYVGdCdEh6OHlZSUt3ZGsyRnlfd0FXQk5iX0wzdm4tbDhYeENNM0RHRzZnV241d0RLQUZNTFZ0dEE</guid></item><item><title>9月财新中国新经济指数降至34.1 主要受科技投入下降影响 - economy.caixin.com</title><link>https://economy.caixin.com/2026-10-02/102490301.html</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="Main_Content_Val" class="text"&gt;
        &lt;p&gt;　　&lt;b&gt;【财新网】&lt;/b&gt;2026年9月，受三大投入指数均下降、尤其是科技投入下降的影响，财新中国新经济指数（NEI）从上月的历史最高值35回落至34.1。&lt;/p&gt;
 &lt;p&gt;　　财新智库10月2日发布的数据显示，2026年9月NEI录得34.1，即新经济投入占整个经济投入的比重为34.1%，比上月下降0.9个百分点。报告称，2021年至今，新经济指数呈波动上升趋势。&lt;/p&gt;
 &lt;p&gt;　　NEI包括劳动力、资本和科技三项一级指标，权重分别是40%、35%和25%。2026年9月，NEI的下降主要来自科技投入的下降：科技投入指数录得31.9，比上月下降1.4；资本投入指数录得47.4，环比下降0.8；劳动力投入指数环比下降0.7至23.8。与权重相乘后，劳动力、资本和科技投入的变化相对值分别约为-0.3个、-0.3个和-0.4个百分点。&lt;/p&gt;
@@ -439,568 +929,26 @@
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 23:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9IeXhqOEhqVmlIOTFMTHJaOWQ1V3d3MmFhN3FROGc5WHA5azhPdEJDUnVqSkF6cmJxU1BpMS13R0hGNU9wT1ZFMWdqN21mbUFkcmxfVnBoUTM</guid></item><item><title>法专家：中国在固定式电池市场占据着绝对主导地位 - RFI</title><link>https://www.rfi.fr/cn/%E6%AC%A7%E6%B4%B2/20261001-%E6%B3%95%E4%B8%93%E5%AE%B6-%E4%B8%AD%E5%9B%BD%E5%9C%A8%E5%9B%BA%E5%AE%9A%E5%BC%8F%E7%94%B5%E6%B1%A0%E5%B8%82%E5%9C%BA%E5%8D%A0%E6%8D%AE%E7%9D%80%E7%BB%9D%E5%AF%B9%E4%B8%BB%E5%AF%BC%E5%9C%B0%E4%BD%8D</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Thu, 01 Oct 2026 20:00:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi6AJBVV95cUxNT2dqNWxMeVhsYkFscmtUNjFDVm42VEQwVFJlc0hWZHVPbU0xWERabHhJWXNENlNELWtTeXdYUUtyNW1kdkxfaDY1aTI2bVd2MTk0NlB3cE5aR2RWUkRhZ0xaX05vWDJBcUJLRU1nbkVzd3FiLW5FWjU4dHVLVGJyX1NTWDU5S2FFUDg1X3pzMDZCRTJ4QXRTN0pxVE9mMkJ5cUk4b1E4ZDJVeC1NTjJXTkdvZ1F1cmd6TVRkQ08wcXFxOWVvNUpOLVN0Q0R1UlMwcTMtQm0yV01tVUNKRjJad0JSdkxXNkJzSWFwal9UbXlfMEliNUdLZjZ3V19hQ3V5UGg3ZDhSemNpNHNUS29SNzZIRjgwYnJIQzhyNlZHS3lPZDlkd2FrZFB5MWpfZDVBZEUwT3E2Y3VpNlVXQk1wRmJlVlJHTWswWHJua0g0bzBvWWhrempQenRnaE1GT0w1YXpQT0MtMVY</guid></item><item><title>微软上新三款语音AI模型：实时转文字准确率登测评榜首，MAI-Voice 2.1覆盖23种语言 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782897</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 01 Oct 2026 18:33:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9Id0ZGLUtMUV9rTlRTOF84TDV6b1NmWFZlbW9CU01jSXZ5OGVmQUU1OVhSajBiYzB1RTZRQjhnbDZCLU5TbjM1SVJGclNKc1dKNG13</guid></item><item><title>AI“砸饭碗”担忧暂缓！埃森哲845亿年订单创纪录、指引超预期，股价盘中暴涨超20%｜财报见闻 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782893</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 01 Oct 2026 17:08:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5BSjVLcUM0U2lId3dBS01jWktDNUMwcWQ0NGRQc2tKTjVsVGVaWHBHc1lzRkpoU2hVQUJxcWxKSFc1MVdpRGxiNEJKZ2drWkR3a3NF</guid></item><item><title>索尼思路回归PS4时 代！重视独占和主机玩家 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155099.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 23:49:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9IeXhqOEhqVmlIOTFMTHJaOWQ1V3d3MmFhN3FROGc5WHA5azhPdEJDUnVqSkF6cmJxU1BpMS13R0hGNU9wT1ZFMWdqN21mbUFkcmxfVnBoUTM</guid></item><item><title>8月扫地机器人均价创年内低点！石头科技线上销额登顶 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155109.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
           
-           &lt;p&gt;据GamesRadar+报道，前索尼互动娱乐全球工作室总裁吉田修平近日在接受采访时，&lt;strong&gt;谈及了目前索尼做出的一系列举措，并评价称索尼的思路似乎已经回到了“过去的时代”。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="索尼思路回归PS4时 代！重视独占和主机玩家" h="309" src="//img1.mydrivers.com/img/20261001/254c6ea7-dc8e-4a99-afa4-4c601f2f799f.jpg" w="550"&gt;&lt;/p&gt;
-&lt;p&gt;今年早些时候，有报道称，PlayStation工作室业务集团CEO赫尔曼·赫尔斯特（Hermen Hulst）曾告知员工，索尼旗下的剧情向单人游戏，例如《沙罗周期》和《羊蹄山之魂》，今后将继续作为PlayStation主机独占游戏推出。&lt;/p&gt;
-&lt;p&gt;吉田修平解释称，在PS4时代，他还在索尼任职时，“索尼没有选择将3A级游戏和第一方游戏发售到PC上，&lt;strong&gt;因为他们认为，让游戏真正成为PlayStation独占作品，对于吸引主机玩家非常重要。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="索尼思路回归PS4时 代！重视独占和主机玩家" h="309" src="//img1.mydrivers.com/img/20261001/da49ffb7-55d9-40ba-8643-c1b9204ab828.png" w="550"&gt;&lt;/p&gt;
-&lt;p&gt;而到了PS5时代，索尼采取的策略似乎开始兼顾不同玩家群体。一些在线游戏，例如《绝地潜兵2》，会在登陆索尼主机的同时登陆PC；但大型单人游戏则往往会在最初发售一段时间后才登陆PC，例如《地平线：西之绝境》和《漫威蜘蛛侠2》。&lt;/p&gt;
-&lt;p&gt;通过这种方式，索尼似乎试图以不同形式吸引所有玩家。限时主机独占让那些希望第一时间玩到游戏的PS5用户获得了优先体验的机会，而PC玩家也能在耐心等待后玩到这些作品。&lt;/p&gt;
-&lt;p&gt;吉田修平表示：“他们认为，这样就足以吸引PlayStation用户了。但与此同时，通过将第一方游戏和IP作品发售到PC上，并有可能触及新的用户群体……那些在PC上玩第一方游戏的玩家可能会成为相关IP的粉丝，未来也可能转而购买PlayStation主机。我认为，他们当时就是这么考虑的。”&lt;/p&gt;
-&lt;p&gt;&lt;img alt="索尼思路回归PS4时 代！重视独占和主机玩家" h="309" src="//img1.mydrivers.com/img/20261001/4fa1e115-c44d-4e4d-aeda-b8e785d8ed94.jpg" w="550"&gt;&lt;/p&gt;
-&lt;p&gt;不过，吉田修平认为，索尼如今的思路似乎已经回到了“过去的时代”。&lt;strong&gt;与单纯希望让尽可能多的玩家玩到第一方游戏相比，公司现在似乎更加重视通过独占作品推动自家平台的发展。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="索尼思路回归PS4时 代！重视独占和主机玩家" h="309" src="//img1.mydrivers.com/img/20261001/d5e4b599-36b7-4acc-9b89-47d83e3ef517.jpg" w="550"&gt;&lt;/p&gt;
-&lt;p&gt;吉田修平也承认，由于自己已经不在索尼任职，因此并不清楚公司内部的真实想法，但他推测：“第一方游戏业务与平台业务之间……现在似乎是平台业务一方占了上风，我想大概是这样吧。平台业务始终希望拥有一些独占内容，对吧？”&lt;/p&gt;
-            
- 
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 15:24:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE96RU9jeWRJb3d1ZkJzbW5UNlc2b2dLOHN6b2pObkY3QXBCbC1odEViOTF5aDRBVF91VWI5c3h3MzJGdEdIaXlzRkNtdFQ5S080cXo0R0NiY1M</guid></item><item><title>Linux 7.4新优化：AMD核显跑AI快23%！入门APU成大赢家 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155098.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，&lt;span&gt;&lt;strong&gt;Linux在7.4内核中引入了一项AMD PerfOpt优化，让Radeon核显在本地运行大语言模型时绕过IOMMU直接访问系统内存，Llama.cpp吞吐量最高提升23%。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;该补丁由IOMMU维护者Joerg Roedel于9月24日合入，AMDGPU驱动会在检测到APU核显工作在Identity Domain时自动启用，独立显卡不受影响。&lt;/p&gt;
-&lt;p&gt;Netflix开发者Boqun Feng在邮件列表中公布的测试数据显示，&lt;strong&gt;核显访问动态分配的系统内存（GTT区域）的速度只有固定预留显存的二分之一到三分之一，PerfOpt开启后，GTT访问延迟降至预留显存的10%以内。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;大语言模型无法完全装入入门笔记本的小容量预留显存时，大部分数据落在GTT区域，这正是PerfOpt在AI场景下效果明显的原因。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20261001/2d5640a0aab540d686ee9850289b1f8f.png" target="_blank"&gt;&lt;img alt="Linux 7.4新优化：AMD核显跑AI快23%！入门APU成大赢家" h="400" src="//img1.mydrivers.com/img/20261001/s_2d5640a0aab540d686ee9850289b1f8f.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Phoronix基于Linux 7.3补丁构建测试内核，对三款APU进行了实测，锐龙AI 9 365的AI性能提升最高23%，同时提升了吞吐量和首Token响应速度。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此外预留显存越少，PerfOpt收益越大，锐龙AI 5 340搭载Radeon 840M，各项测试均有提升，增幅从18%起。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;旗舰APU方面，锐龙AI Max+ 395在Framework Desktop上配备64GB LPDDR5-8000，典型提升仅2%至4%，个别测试中未开启PerfOpt反而更快。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;目前测试仅覆盖Zen 5架构搭配RDNA 3.5核显的APU，老芯片如锐龙7040或Steam Deck的Van Gogh定制芯片是否具备该特性位尚无定论。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;PerfOpt补丁共新增341行代码，涉及8个文件，最终以何种形式进入正式内核仍有待确认。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20261001/42f826be917749acad00e751dc0cc7c6.jpg" target="_blank"&gt;&lt;img alt="Linux 7.4新优化：AMD核显跑AI快23%！入门APU成大赢家" h="400" src="//img1.mydrivers.com/img/20261001/s_42f826be917749acad00e751dc0cc7c6.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
+           &lt;p&gt;快科技10月2日消息，8月国内扫地机器人线上市场数据出炉，&lt;span&gt;&lt;strong&gt;整个行业线上成交均价跌到今年以来最低水平，石头科技拿下线上零售额第一，成功登顶榜单。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;8月不属于大促节点，刚过完618大促，市场热度回落，不少用户会趁着品牌调价入手产品。行业整体行情不算火热，线上销量、零售额同比都出现下滑，不过市场份额进一步往头部品牌靠拢。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;石头科技8月线上零售额份额达到33.8%，超过科沃斯，拿到线上销额冠军。&lt;/strong&gt;石头P20系列是主力出货机型，单单这一个系列就占到石头品牌接近三分之二的销售额，P20 MAX上下水版也是8月全行业销量最高的单品。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="8月扫地机器人均价创年内低点！石头科技线上销额登顶" h="313" src="//img1.mydrivers.com/img/20261002/S4d2bc15c-3572-4e68-a6d2-27735bfa7d1b.png" w="600"&gt;&lt;br&gt;
+&lt;span&gt;2026年8月 中国扫地机器人线上市场品牌销售份额&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这次行业均价走低，并不是高端机型集体大降价。更多是市场成交结构发生变化，不少用户偏向选择性价比机型，中低价位产品成交占比变高，直接把整体平均价格拉了下来。但石头自家产品均价依旧保持稳定，没有靠大幅度降价来抢市场。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;现在市场基本就是石头和科沃斯两家主导，两家加起来拿走超六成线上销售额。&lt;/strong&gt;剩下的市场由追觅、云鲸、大疆等品牌瓜分，中小品牌生存空间被持续压缩，不少小品牌慢慢退出线上市场。&lt;/p&gt;
+&lt;p&gt;对普通消费者来说，8 月均价来到年内低点，算是入手扫地机器人的好时机。&lt;/p&gt;
+&lt;p&gt;市面上既有3000元以上带自动上下水的高端机型，也有两千出头的基础款，选择很多。大家不用盲目追最贵的型号，按照家里户型、预算挑选就够用。&lt;/p&gt;
+&lt;p&gt;不过也要分清，大盘均价下跌，不等于所有机型都在降价。部分热门旗舰机型价格依旧坚挺，降价的大多是老款和基础版本。买之前最好对比历史价格，别被宣传话术误导。&lt;/p&gt;
+&lt;p&gt;从行业趋势来看，扫地机器人市场已经告别高速扩张时代，很难再出现大规模爆发增长。接下来竞争会集中在产品功能、定价、新品迭代上面，头部品牌会继续挤压中小品牌的生存空间。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="8月扫地机器人均价创年内低点！石头科技线上销额登顶" h="400" src="//img1.mydrivers.com/img/20261002/343f77cb-300a-42b2-84d8-9aa42aa5ac42.jpg" w="600"&gt;&lt;/p&gt;
             
  &lt;div&gt;
            &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
+          &lt;p class="url"&gt;&lt;span&gt;责任编辑：随心&lt;/span&gt;&lt;/p&gt;
 &lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
      
       &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 15:07:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBUZEVrTUlRRWtqZDVHU2JpMG16RnlxS2RfeFR6X19zeXZXUUltUFlXNmkySFFKNklNZE4yTkxYb2tUMDQ2VVNZWjhJWDFnOHVZM2tBV3drM1M</guid></item><item><title>比特币迎来一位出人意料的新多头 - 新浪财经</title><link>https://finance.sina.com.cn/stock/usstock/c/2026-10-01/doc-inittvfv5091491.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="artibody"&gt;
-					
-					
-					
-								
-			
-			
-
-			
-			
-			
-	
-			
-			
-			
-	
-			
-			
-			
-
-            
-
-    &lt;p&gt;　　比特币领域迎来一位意外的看多机构：花旗集团。花旗分析师亚历克斯・桑德斯周四将比特币（BTC‑USD）基准情景目标价从 82000 美元上调至 113000 美元。&lt;/p&gt;
-&lt;p&gt;　　桑德斯表示：“本次上调综合考量我们分析框架的三大维度：链上活跃度、宏观环境以及 ETF 资金流向。颇具反差的是，《清晰法案》未能通过，反倒加剧市场对货币贬值的担忧，叠加美国证券交易委员会的监管规则制定工作，推动加密货币收复关键技术点位。当价格站上 200 日移动均线后，ETF 资金重新流入。受市场乐观情绪影响，我们目前预测未来 12 个月基准情景下将有 50 亿美元资金净流入，此前预期为资金持平。”&lt;/p&gt;
-&lt;p&gt;　　比特币刚刚录得 2024 年以来表现最强的一个季度。即便美债收益率走高、大宗商品市场波动，比特币的表现依旧甩开黄金等其他资产。&lt;/p&gt;
-
-&lt;p&gt;　　&lt;strong&gt;比特币兑美元&lt;/strong&gt; 报价：84054.09，上涨 299.63（+0.36%）&lt;/p&gt;
-&lt;p&gt;　　这份数字资产第三季度涨幅约 43%，不过年初至今仍累计下跌约 4%。&lt;/p&gt;
-&lt;p&gt;　　不少加密行业观察人士对比特币这一轮行情感到猝不及防。&lt;/p&gt;
-&lt;p&gt;　　《清晰法案》9 月在参议院程序性投票中受挫，未能拿到通过法案所需的 60 票。&lt;/p&gt;
-&lt;p&gt;　　参议院民主党人否决推进《清晰法案》，顾虑集中在法案中政府道德条款与总统利益冲突相关内容。特朗普及其家族长期深度涉足加密货币领域，相关持仓备受关注。&lt;/p&gt;
-&lt;p&gt;　　社区银行针对稳定币激励规则展开大规模游说，再加上部分共和党议员倒戈，进一步削弱该法案推进动力。&lt;/p&gt;
-&lt;p&gt;　　比特币多头、Strategy 公司首席执行官迈克尔・塞勒表示：“《清晰法案》遭否决，对数字资产而言是一个积极转折点。”&lt;/p&gt;
-&lt;p&gt;　　或许他是对的。&lt;/p&gt;
-
-
-
-
-
-
-			
-			
-			
-
-			
-
-			
-			
-
-
-
-
-
-
-
-
-
-
-			
-			
-			
-			
-
-            
-            
-            
-            
-
-            
-
-			
-			
-&lt;p class="article-editor"&gt;责任编辑：郭明煜 &lt;/p&gt;
-			
-
-				&lt;/div&gt;
-				
-
-				
-				
-		
-		&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪财经</author><pubDate>Thu, 01 Oct 2026 14:48:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihwFBVV95cUxOSjEzT1ZxS05xdGl1Y0dGZlBDNXRwUFJEUmU1MjJzVW1nOUtlZ0s2dXU4T1VzTmxHZmliWlNRbkRzZjZJLURVWXNselJmSlY2N3pOMlFLRjVaVWZXUlRuX09KZmVOaUNjeXVJX3U2a2RSMHRfcmR0cGtvWlZCaU1VZThQV25WLVU</guid></item><item><title>AMD下代锐龙Z3掌机芯片浮出水面！砍CPU换GPU：15W/25W双版本 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155097.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，据最新爆料信息，&lt;span&gt;&lt;strong&gt;AMD下一代锐龙Z3掌机处理器将基于半定制版Medusa Point架构打造，采用Zen 6和RDNA4m，CPU和GPU配置均针对掌机场景重新设计。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;CPU方面，锐龙Z3采用4个Zen 6大核加2个Zen 5 LP低功耗小核的混合架构，共6核12线程，GPU方面则配备12个RDNA4m计算单元。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="AMD下代锐龙Z3掌机芯片浮出水面！砍CPU换GPU：15W/25W双版本" h="215" src="//img1.mydrivers.com/img/20261001/65d694d3-f36d-4fed-ab54-20380a0ec53c.png" w="599"&gt;&lt;/p&gt;
-&lt;p&gt;作为对比，标准版Medusa Point是4个Zen 6加4个Zen 6c加2个低功耗核，也就是锐龙Z3砍掉了4个Zen 6c核心，将芯片面积和功耗预算让给GPU。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;AMD用多出的4个CPU核心换4个GPU计算单元，明显倾向于强化图形性能而非CPU多线程能力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/fded91ce-2e27-48a9-973b-a8585d6c6255.png" target="_blank"&gt;&lt;img alt="AMD下代锐龙Z3掌机芯片浮出水面！砍CPU换GPU：15W/25W双版本" h="186" src="//img1.mydrivers.com/img/20261001/Sfded91ce-2e27-48a9-973b-a8585d6c6255.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;功耗方面，锐龙Z3标准版优化目标15W，锐龙Z3 Extreme优化目标25W，目前尚不清楚两款处理器是否使用相同的12 CU配置，还是低功耗版会减少部分GPU单元。&lt;/p&gt;
-&lt;p&gt;封装方面，锐龙Z3采用AMD FF6封装，尺寸25×25毫米，比Strix Point使用的FP8封装更小，适配掌机对空间的高要求。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;RDNA4m并非全新架构，而是RDNA 3.5的衍生版本，加入了RDNA 4级别的矩阵运算ALU，可原生支持FSR 4及后续技术，目前只有传闻中的PS6掌机会采用RDNA 5架构。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;与前两代Z系列相比，Z3的定制程度明显更高，Z1和Z2本质上都是现有APU的功耗优化版，而Z3则从封装尺寸到CPU/GPU配比都重新设计。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="AMD下代锐龙Z3掌机芯片浮出水面！砍CPU换GPU：15W/25W双版本" h="360" src="//img1.mydrivers.com/img/20261001/35a79ff4-67b2-4806-aa72-2a3ce9b34b5f.png" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 14:41:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5NN2dibmFHNUtzZG5iZmR4OFVpOVg1UndUN0dVd1EzdXEyVGFTaGlfM1UtSVgwYzhCbTZkNUdQakZHQ0k3YXpNaERnUzE3M1hsNWJnRkdGOFo</guid></item><item><title>《巫师3：狂猎 重制版》开路径光追很吃CPU：RTX 5090显卡配i9也白费 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155096.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;《巫师3：狂猎 重制版》开路径光追很吃CPU：RTX 5090显卡配i9也白费&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-10-01 22:36:05  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1155096-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，CDPR昨天正式发了《巫师3：狂猎 重制版》，这个二次重制版的游戏很良心，老玩家免费升级不说，画质技术也能追赶到2026年的水平，包括光追及路径光追都有了。&lt;/p&gt;
-&lt;p&gt;相关的性能评测也看过不少了，大家关注的主要是GPU显卡的性能，但TechSpot及PCGH网站的测试还揭示了CPU性能瓶颈的问题，&lt;span&gt;&lt;strong&gt;这个跟游戏的光追有关，特别是路径光追开了之后性能损失很大。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/6b14e976-8c06-4e07-b165-1a42b4fe2967.jpg" target="_blank"&gt;&lt;img alt="《巫师3：狂猎 重制版》开路径光追很吃CPU：RTX 5090显卡配i9也白费" h="468" src="//img1.mydrivers.com/img/20261001/S6b14e976-8c06-4e07-b165-1a42b4fe2967.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;PCGH的测试中使用了酷睿i9-12900K，对比了不开光追、开RTX光追及路径光追三种情况，后两种情况下游戏性能都会大幅下降，开路径光追之后，12900K搭配RTX 5090显卡的平均帧也只有45.9fps了。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/7f6ba4eb-5879-49d4-9788-13467c91df71.png" target="_blank"&gt;&lt;img alt="《巫师3：狂猎 重制版》开路径光追很吃CPU：RTX 5090显卡配i9也白费" h="657" src="//img1.mydrivers.com/img/20261001/S7f6ba4eb-5879-49d4-9788-13467c91df71.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;在Techspot的测试中，哪怕是在1080p分辨率下，只要开了路径光追，&lt;strong&gt;显卡从RTX 5070 Ti开始都会进入瓶颈期&lt;/strong&gt;，性能就在60fps波动了，再顶级的显卡也跑不出更好看的数据。&lt;/p&gt;
-&lt;p&gt;考虑到这个表现，目前对《巫师3：狂猎 重制版》也没太好的办法，要么就开了路径光追别想多高的帧数，反正60fps也能流畅玩了，要么就干脆不开路径光追，毕竟那点画质提升意义也不是很大。&lt;/p&gt;
-&lt;p&gt;不过随着路径光追的普及，未来高性能CPU对游戏的影响也会愈发重要，AMD及Intel下一代的锐龙、酷睿在核心数、架构及缓存上都会有一波爆发，到时候倒是一个挺不错的卖点。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="《巫师3：狂猎 重制版》开路径光追很吃CPU：RTX 5090显卡配i9也白费" h="298" src="//img1.mydrivers.com/img/20261001/80603277-8177-42e9-9304-3a539b09fa7e.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 14:36:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBBN2FNbDFfdURBMXY3RVBqajNaRzNMdFpQakl0OUMyaWdrOFp3SUh5UjNhZFVRX2dQVXBaZ0tDOGxwdno4aE9ZdjJjNGRNTGJRbmdLNmFnVHE</guid></item><item><title>美网安公司指疑似中国黑客冒充美AI前高官及Anthropic高管以获信息 - RFI</title><link>https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20261001-%E7%BE%8E%E7%BD%91%E5%AE%89%E5%85%AC%E5%8F%B8%E6%8C%87%E7%96%91%E4%BC%BC%E4%B8%AD%E5%9B%BD%E9%BB%91%E5%AE%A2%E5%86%92%E5%85%85%E7%BE%8Eai%E9%AB%98%E5%AE%98%E5%8F%8Aanthropic%E9%AB%98%E7%AE%A1%E4%BB%A5%E8%8E%B7%E4%BF%A1%E6%81%AF</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Thu, 01 Oct 2026 14:24:33 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMisgNBVV95cUxQZEpiOXVEMF9WNnBobHNCNExqb1hHVEg5R3pNRk0ySEUxTndMMVVWcDRRbDhOVFQ3TGNPS09tMUx2SURvSm4zYkNxSUJ5QmZDMnhCNmhpNTRCLTZ4RVdFMHN4TWxYLWgtTW01b090cGN1T3ZjV3QxYzREMnRrMUxyMmV3YUlxOW8yRWpiYjl6SVhBWjllbUpfM2xoMHNZYkhZenFSZkxNLUxkSU9PZlRTeHZsZmZvcW9rYjVtdzBNb1doTGZhRmNucFBzeE5ERmNwUWFWWFVyR1BJdHFhY0czRzJ3YnZLa1VEYzJROERiOERRVThUTVFQaWJSSlI2aEg2VjhzSnpiZ3I5Y3pFV3FCTWxJYU1wZ3NWY2oxQVNFcTNiamNFRnlVeTBMWkx3WFpheUdiUjhPY3kwd3ozN1I3bF9SVXRfdlROYTBoT0xSaFowLWJ2NEY4S3NJV3Zhdl9pUk16eVFMLTRFOXFpM2ctSmdZb09sdDUtNklYRVV2VHZldUlZbDc2UTYya2lzMHBfSzZCaEVTTG5sY2NERThwSk5qeTZyNnN4V3VIbzd2M2tjQQ</guid></item><item><title>人权机构：无人机监控，遍及西藏牧区、寺院与边境– 普通话主页 - Radio Free Asia</title><link>https://www.rfa.org/mandarin/yataibaodao/2026/10/01/china-drone-monitor-tibet/</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;article class="b-article-body"&gt;&lt;p class="c-paragraph"&gt;中国各级安全机构近年来在西藏自治区及四川、云南藏区采购警用无人机、自动化无人机机巢和反无人机设备。&lt;/p&gt;&lt;p class="c-paragraph"&gt;总部位于英国的非营利人权机构“西藏观察”（Tibet Watch）运用中国政府公开文件调查后发现，这些无人机设备被部署在曾发生抗议、水坝争议、宗教集会及藏人跨境流亡的要道，使警方能够监控固定摄像头难以覆盖的牧场、高山隘口和边境路线。&lt;/p&gt;&lt;p class="c-paragraph"&gt;报告指出，尽管现有文件无法显示中国当局曾用无人机针对某个具名人士或特定抗议活动。但这些公开文件足以呈现设备部署的地理模式，以及中国如何把无人机纳入反恐、边境安全和“维稳”体系。&lt;/p&gt;&lt;p class="c-paragraph"&gt;西藏观察检视了2017年6月至2026年7月间公布的招标文件、决标公告、警方通报、禁飞令及训练报告。文件显示，采购单位从自治区反恐侦察部门延伸至县级公安局，并涵盖公安、人民武装警察和边境管理系统。&lt;/p&gt;&lt;h4 class="b-article-body__h4"&gt;“从空中俯瞰的视角”由国家专属“&lt;/h4&gt;&lt;p class="c-paragraph"&gt;西藏观察”负责研究、传播与倡议的Kate Saunders对本台表示，警用无人机带来的第一个改变，是把监控范围从街道和检查站延伸至高原腹地。&lt;/p&gt;&lt;p class="c-paragraph"&gt;她指出，在海拔4500米高原上往返牧场的牧民、绕冈仁波齐峰转山的朝圣者，以及行走在通往尼泊尔高山隘口的人，原本都不在街头摄像头的监控范围内，“但无人机可以移动到人所在的任何地方”。&lt;/p&gt;&lt;p class="c-paragraph"&gt;警方记录显示，日喀则市中心设有自动化无人机机巢，飞行器配备热成像仪、变焦镜头和扩音器。截至2025年12月，这些无人机沿预设路线累计飞行超过2.27万公里，一座机巢可以覆盖半径10至15公里的范围。&lt;/p&gt;&lt;p class="c-paragraph"&gt;Saunders说，无人机带来的第二个变化，是中国政府不仅可以从空中观察地面，也能限制其他人取得相同视角。一般民众可以用手机记录抗议，但水坝蓄水区、被淹村庄或宗教场所拆除的规模，往往需要空中影像才能完整呈现。&lt;/p&gt;&lt;p class="c-paragraph"&gt;“中国的党国体制正在把‘从空中俯瞰的视角’留给自己。”Saunders说。&lt;/p&gt;&lt;h4 class="b-article-body__h4"&gt;绑定身份的登记制度&lt;/h4&gt;&lt;p class="c-paragraph"&gt;中国政府对“空中俯瞰视角”的控制，也反映在北京近期收紧无人机管理的政策上。&lt;/p&gt;&lt;p class="c-paragraph"&gt;北京市9月13日宣布修改无人驾驶航空器管理规定，新规将于11月15日起实施。届时，除获得特别批准外，个人和单位不仅不得随意操控无人机，也不得在北京市内持有、存放无人机，或携带无人机进入北京。&lt;/p&gt;&lt;p class="c-paragraph"&gt;&lt;b&gt;相关报道：&lt;/b&gt;&lt;a href="https://www.rfa.org/mandarin/shehui/2026/09/21/beijing-drone-restrictions-dji-us-china/" target="_blank" rel=""&gt;&lt;b&gt;北京严控无人机：大疆在中美面临不同限制&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;p class="c-paragraph"&gt;不过，中国早已开始实施民用无人机的实名登记和飞行限制。“西藏观察”的报告指出，自2017年6月起，中国便要求重量达到或超过250克的民用无人机所有者进行实名登记。&lt;/p&gt;&lt;p class="c-paragraph"&gt;报告收集的资料还显示，西藏加查县2025年7月进一步实施地方规定，要求无人机飞行必须事先向当地警方登记和报备。&lt;/p&gt;&lt;p class="c-paragraph"&gt;中国随后把实名登记要求进一步嵌入无人机的技术系统。2025年10月31日发布、2026年5月1日起实施的新规规定，符合该标准的新民用无人机在完成实名登记前无法起飞；如果登记被注销，无人机也将停止飞行。&lt;/p&gt;&lt;p class="c-paragraph"&gt;另一项国家标准则要求无人机在飞行过程中对外发送识别信号，意味着对于符合相关标准的新生产无人机而言，未登记飞行不仅违反规定，也会受到设备本身的技术限制。&lt;/p&gt;&lt;h4 class="b-article-body__h4"&gt;不同层级的安全机构同步采购无人系统&lt;/h4&gt;&lt;p class="c-paragraph"&gt;报告指出，2020年12月至2026年1月间，西藏自治区及四川、云南藏区至少有12笔政府和安全机构采购案，公开金额合计约2479万元人民币。这个数字包括大疆产品及一并采购的相关设备，其中约四成来自一笔拉萨警方采购案。&lt;/p&gt;&lt;p class="c-paragraph"&gt;美国华府智库“高级国防研究中心”（C4ADS）资深分析师Mishel Kondi对本台表示，单一采购未必足以证明其用途，但相关采购涉及了各个行政层级，涵盖自治区、市、地级行政区、县及开发区，并横跨公安、武警和边境管理系统，“整个安全体系正在同时进行相关设备的采购”。&lt;/p&gt;&lt;p class="c-paragraph"&gt;除了设备采购，公开文件还显示，位于西藏的无人机飞手曾接受执行“维稳”任务的训练。西藏警察学院成立警用无人机培训学校，一些地区也设立常设的“低空警务单位”。Kondi认为，这些配套建设有助于判断无人机基础设施可能承担的任务。&lt;/p&gt;&lt;p class="c-paragraph"&gt;无人机部署在抗议现场、宗教活动和出走路线上尽管Kondi强调，现有证据也无法证明任何一笔特定采购，是因某一场具体抗议或事件而进行。但考察时间先后，仍然有值得留意之处。&lt;/p&gt;&lt;p class="c-paragraph"&gt;例如比如县公安拥有报告资料中规模最大的县级警用无人机机队，共有5种型号、18架飞行器执行每日巡逻任务。当地藏人2013年曾因当局要求居民悬挂中国国旗，以及在神山采矿等问题举行抗议，其后面对大规模逮捕和长期管控。&lt;/p&gt;&lt;p class="c-paragraph"&gt;在四川德格，僧侣和村民2024年曾抗议兴建岗托水坝。报告显示，在此事件后15个月，当地县的公安局开始采购空中监控设备：德格为四川到西藏自治区公路上的检查站购入4套大疆自动化机巢；河流另一岸的江达县公安，则招标采购兼具无人机侦察和反制能力的设备，达到既能监视，又能阻止他人监视的能力。&lt;/p&gt;&lt;p class="c-paragraph"&gt;&lt;b&gt;相关报道：&lt;/b&gt;&lt;a href="https://www.rfa.org/mandarin/zhuanlan/xizangzonglan/tibet-04052024154915.html" target="_blank" rel=""&gt;&lt;b&gt;西藏纵览：藏人抗议建坝修水电站遭当局打压&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;p class="c-paragraph"&gt;类似情况也出现在拉萨。报告说，2021年3月10日西藏抗暴纪念日前，藏人在大昭寺和八廓街一带行动受到限制；同年，拉萨警方取得一套反无人机系统及一支由15架飞行器组成的机队。&lt;/p&gt;&lt;p class="c-paragraph"&gt;边境地区的部署则包括珠穆朗玛峰地区的警用无人机站、定结县的低空警务单位，以及日喀则边境支队采用大疆设备的平台。Saunders说，这些通往尼泊尔的山口，过去不仅是藏人流亡的路线，也是当地情况传到外界的重要通道。&lt;/p&gt;&lt;p class="c-paragraph"&gt;宗教活动同样被列入无人机的日常任务。日喀则的扎什伦布寺举行大型节庆时，会吸引大量人群，当地公安管理的无人机机巢把“大型活动人流监测”列为常态用途之一。&lt;/p&gt;&lt;p class="c-paragraph"&gt;Saunders说，中国选择将这些飞行器部署在“藏人曾经抵抗的地方、他们进行宗教活动的地方，以及他们曾试图离开的地方”。&lt;/p&gt;&lt;figure class="c-media-item b-article-body__image"&gt;&lt;img data-chromatic="ignore" alt="在清明节（扫墓节）前夕，丽水警方人员操控无人机监控林区墓园。照片摄于2018年。" class="c-image" loading="lazy" src="https://www.rfa.org/resizer/v2/7NWRVFQGZVCZRF7S6YJ3GL77DI.JPG?auth=2c37b3088823559190eefc80d3fb3b7c915bcee8ddfa9ddb62625dbbb4e1e9ac&amp;amp;width=800&amp;amp;height=557" srcset="https://www.rfa.org/resizer/v2/7NWRVFQGZVCZRF7S6YJ3GL77DI.JPG?auth=2c37b3088823559190eefc80d3fb3b7c915bcee8ddfa9ddb62625dbbb4e1e9ac&amp;amp;width=274&amp;amp;height=190 274w, https://www.rfa.org/resizer/v2/7NWRVFQGZVCZRF7S6YJ3GL77DI.JPG?auth=2c37b3088823559190eefc80d3fb3b7c915bcee8ddfa9ddb62625dbbb4e1e9ac&amp;amp;width=400&amp;amp;height=278 400w, https://www.rfa.org/resizer/v2/7NWRVFQGZVCZRF7S6YJ3GL77DI.JPG?auth=2c37b3088823559190eefc80d3fb3b7c915bcee8ddfa9ddb62625dbbb4e1e9ac&amp;amp;width=768&amp;amp;height=534 768w, https://www.rfa.org/resizer/v2/7NWRVFQGZVCZRF7S6YJ3GL77DI.JPG?auth=2c37b3088823559190eefc80d3fb3b7c915bcee8ddfa9ddb62625dbbb4e1e9ac&amp;amp;width=1024&amp;amp;height=712 1024w, https://www.rfa.org/resizer/v2/7NWRVFQGZVCZRF7S6YJ3GL77DI.JPG?auth=2c37b3088823559190eefc80d3fb3b7c915bcee8ddfa9ddb62625dbbb4e1e9ac&amp;amp;width=1440&amp;amp;height=1002 1440w"&gt;&lt;figcaption class="c-media-item__fig-caption"&gt;&lt;span class="c-media-item__title"&gt;--- &lt;/span&gt;&lt;span class="c-media-item__caption"&gt;在清明节（扫墓节）前夕，丽水警方人员操控无人机监控林区墓园。照片摄于2018年。 &lt;/span&gt;&lt;span class="c-media-item__credit"&gt;(CHINA STRINGER NETWORK/Reuters) &lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;h4 class="b-article-body__h4"&gt;救援与“维稳”使用同一套系统&lt;/h4&gt;&lt;p class="c-paragraph"&gt;中国官方文件也将无人机用于救援、草原监测和寻找失踪人员或牲畜。报告没有否定这些公共服务用途。例如，阿里地区一名牧民曾走失67头犁牛，在徒步搜索无果后，由警方使用无人机找回。&lt;/p&gt;&lt;p class="c-paragraph"&gt;Saunders说，问题在于官方文件没有区分救援和监控的制度边界：“那名能够透过空中搜索找回犁牛的牧民，也正是那个如今可以从空中被追踪行踪的牧民。”&lt;/p&gt;&lt;p class="c-paragraph"&gt;2023年，西藏自治区在山南举办为期25天的警用无人机培训，共有52名学员。课程列出的任务包括巡逻、紧急救援、公共宣传及“维稳”。Saunders说：“救援与镇压，被放在同一套课程中，教给操作同一批无人机的人。”&lt;/p&gt;&lt;p class="c-paragraph"&gt;无人机也被用于救灾和边境安全。2025年定日发生地震后，中国人民解放军西部战区的无人机在地面部队抵达前先行勘察灾区；中国官方媒体在报道西藏大学2026年成立高原无人机研究中心时，也把边境巡逻列为用途之一。&lt;/p&gt;&lt;p class="c-paragraph"&gt;与此同时，当局也购买限制其他飞行器进入空域的设备。2021年7月，拉萨警方以863万余元人民币采购无人机侦测及反制系统。此后，从阿里特警到江达县公安，部分采购案开始同时配置无人机与反无人机能力。&lt;/p&gt;&lt;p class="c-paragraph"&gt;Kondi表示，监控技术具有军民两用性质，采购记录无法完全说明每一次飞行的实际目的。不过，官方文件已明确把反恐、边境安全、“维稳”及寺院大型活动人流监测列为用途。&lt;/p&gt;&lt;p class="c-paragraph"&gt;她说：“这并不是外界对中国政府行动的推测，而是国家自己对其自身行动与用途所作的描述。”&lt;/p&gt;&lt;/article&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>Radio Free Asia</author><pubDate>Thu, 01 Oct 2026 14:00:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMihAFBVV95cUxQMzNJMW9rNXJmaGs2ajBQZHR1UXZDTEdqNDdaZlVhSGhxMlEwam03bTUzUS1ZS0JMMXZGTWlzYkxEdFZWY1l4bWVqbjV3S3A0eC1nQWNiS1REXzhDRTZfWFBHRVlpb1VkNmhNekFwam5ZRlF6dkVQY0lyRTQxYlVDNEZ3Y2I</guid></item><item><title>RTX 3080硅脂、导热垫双管齐下：显存温度直降15°C - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155094.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;RTX 3080硅脂、导热垫双管齐下：显存温度直降15°C&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-10-01 21:54:08  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1155094-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，&lt;strong&gt;博主Blighted Agent近日实测在RTX 3080的GDDR6X显存模块上同时使用导热硅脂和导热垫，显存温度降低最多15°C。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;测试平台为一张EVGA RTX 3080，第一次测试仅重新涂抹GPU核心硅脂，显存模块上的原装导热垫不动。Furmark烤机中功耗拉满至450瓦，GPU核心温度接近70°C，显存温度则超过95°C。&lt;/p&gt;
-&lt;p&gt;第二次测试在GDDR6X显存模块上额外涂抹导热硅脂，同时保留原有导热垫，让硅脂夹在显存芯片和导热垫之间。&lt;span&gt;&lt;strong&gt;同样条件下烤机，显存温度大幅下降，最热模块最高仅80°C，相比第一次测试降低了约15°C。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;第三次测试换上全新导热垫替换掉硅脂和旧导热垫，代表常规的导热垫更换操作，结果温度与第二次测试基本一致。&lt;/p&gt;
-&lt;p&gt;该博主还注意到测试中混合了GD2和MX-4两种硅脂，如果仅用GD2单独涂抹GPU核心，核心和显存温度可降至70°C出头的水平。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/964a43a3-bcde-449a-be3e-3221dc022ab5.png" target="_blank"&gt;&lt;img alt="RTX 3080硅脂、导热垫双管齐下：显存温度直降15°C" h="334" src="//img1.mydrivers.com/img/20261001/S964a43a3-bcde-449a-be3e-3221dc022ab5.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 13:54:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTFBWblZzRVRkaVQtQjdPVk1JeFZuRGF2WkxXbmJwLUhmeGtUU2E1V05Md0Y0MUI2c3FSWk1UcmZzN2FSZzU0WlR0eVpPWnBxclNrTG9sSVp0dko</guid></item><item><title>尝到Intel模式甜头了 美国白宫可能获得两大AI巨头股权：白赚几百亿美元 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155092.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，美国白宫去年8月份获得了9.9%的Intel股权，这一模式也开创了美国政府入股私企的新模式，现在有可能在OpenAI、Anthropic两大AI巨头身上重演。&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;strong&gt;美国总统特朗普在采访中回应了对这两家公司采取Intel交易模式的问题，表示可能会这么干，或许会这么做&lt;/strong&gt;&lt;/span&gt;——这种模棱两可的回应倒一直是美国现任总统的风格。&lt;/p&gt;
-&lt;p&gt;这个表态还没变成现实，但有了Intel这样的模式，美国的科技巨头在上市之前给白宫分享一部分股权已经不是什么新鲜事了，OpenAI、Anthropic两家绝对乐意这么做。&lt;/p&gt;
-&lt;p&gt;只是具体的入股模式不会跟Intel一样，Intel能痛快答应给9.9%的股份，让白宫成为最大股东，是因为美国的芯片法案确实会给他们100多亿美元的补贴，陈立武帮Intel拿到补贴好处了，自然可以大方送个人情给白宫，毕竟去年8月份面见特朗普之前，陈立武还被特朗普点名不可靠，因为他的华裔身份及既往对华生意的问题。&lt;/p&gt;
-&lt;p&gt;OpenAI、Anthropic两家目前没上市就有1-2万亿的估值，&lt;strong&gt;两家合计至少3万亿美元的估值&lt;/strong&gt;，给白宫上供10%的股份不太可能，毕竟上市后随便炒作一下两家至少5万亿美元市值，10%意味着白宫获得了5000多亿美元的资产，这样的操作太过明显了，不利于营造美国企业是绝对自主私营的形象。&lt;/p&gt;
-&lt;p&gt;不过双方还是还能谈的，即便OpenAI、Anthropic两家没有芯片补贴法案给予的真金白银补贴，他们肯定乐意向白宫送上1-5%的股份，&lt;strong&gt;毕竟Intel去年送了10%股份之后，股价一年涨了5倍多&lt;/strong&gt;，特朗普多次在网上直接喊话买入Intel股票，吹票能力是华尔街都不能比的。&lt;/p&gt;
-&lt;p&gt;因此OpenAI、Anthropic两家只要送上一小部分股权，美国白宫在政策监管等方面自然也会有更多的配合，白宫能轻松赚几百亿美元的盈利，OpenAI、Anthropic两家也能获得金钱之外的好处，一举多得，双方的合作肯定能谈，就是具体的形式罢了。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20261001/7c741879b1b04644bc089627f9c38719.jpg" target="_blank"&gt;&lt;img alt="尝到Intel模式甜头了 美国白宫可能获得两大AI巨头股权：白赚几百亿美元" h="400" src="//img1.mydrivers.com/img/20261001/s_7c741879b1b04644bc089627f9c38719.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 13:45:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5KV1VIcmhITnlhNGRrNzRIV3kwM2x6Y1I2WERsaTMySHd2NjVjbFVGRmFpck1DZm9QbVJyN0t2cXhCWHlHN1g3bFpkSUVEMTRScFlmdVhucmo</guid></item><item><title>老显卡没被放弃：GTX 700至10系列集体获更新！修复114个漏洞 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155090.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，&lt;span&gt;&lt;strong&gt;NVIDIA面向Maxwell、Pascal和Volta架构显卡发布了582.78版GeForce安全更新驱动，覆盖GTX 700、900和10系列。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这些GPU已不再获得常规Game Ready驱动更新，但NVIDIA将继续提供安全修复至2028年10月，新驱动通过WHQL认证，支持Windows 10和Windows 11。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/2dd8e2a4-1053-43ed-bc17-d6399c2b3160.png" target="_blank"&gt;&lt;img alt="老显卡没被放弃：GTX 700至10系列集体获更新！修复114个漏洞" h="235" src="//img1.mydrivers.com/img/20261001/S2dd8e2a4-1053-43ed-bc17-d6399c2b3160.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;桌面端支持包括Maxwell架构的GTX 745、GTX 750、GTX 750 Ti，以及GTX 950至GTX 980 Ti系列。Pascal架构覆盖GTX 1050至GTX 1080 Ti、GT 1030和GT 1010。TITAN V、TITAN Xp、TITAN X和GTX TITAN X同样在列。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/ebe2bef7-99bc-4b61-bd57-d0665348db56.png" target="_blank"&gt;&lt;img alt="老显卡没被放弃：GTX 700至10系列集体获更新！修复114个漏洞" h="268" src="//img1.mydrivers.com/img/20261001/Sebe2bef7-99bc-4b61-bd57-d0665348db56.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;笔记本端支持GTX 900M系列、GTX 10系列以及MX110至MX350等多款型号，除消费级GeForce外，Quadro和Tesla系列专业卡也在受影响范围内。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/3c3bda43-3def-497c-a7e6-c3350aa29230.png" target="_blank"&gt;&lt;img alt="老显卡没被放弃：GTX 700至10系列集体获更新！修复114个漏洞" h="227" src="//img1.mydrivers.com/img/20261001/S3c3bda43-3def-497c-a7e6-c3350aa29230.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在安全公告中NVIDIA共列出114个漏洞，其中98个影响显示驱动，16个涉及vGPU软件，部分影响Windows，部分影响Linux。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;严重程度分布为1个严重、76个高危、37个中危，唯一被评为严重级别的CVE-2026-47574（CVSS 9.9分）针对Linux vGPU虚拟GPU管理器，不影响Windows消费级GeForce用户。&lt;/p&gt;
-&lt;p&gt;Windows端对应的更新分支包括R615（616.56版）、R610（610.88版）和R580（582.78版），均可通过官方下载页获取。Linux端根据vGPU分支不同，推荐升级至20.2或19.6版本，具体包括615.71.09、610.57.04、595.91.07和580.178.04。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="老显卡没被放弃：GTX 700至10系列集体获更新！修复114个漏洞" h="337" src="//img1.mydrivers.com/img/20261001/ff6da5dc-96db-49ef-82af-caa3f8b3ecce.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 13:23:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5CSjNXTDAyU0M1NDljbjBHaEF2N25lZnhlanoza1N1UUtKbzF6aWhyUTdNR2h1cWVlM2c0QzI2UGQwSnZKbG9DZ2xqTzFkbmZEMG5NWEpET0g</guid></item><item><title>腾讯据报已与甲骨文签署数据中心租赁协议 能使用10万枚尖端AI芯片算力 - RFI</title><link>https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20261001-%E8%85%BE%E8%AE%AF%E6%8D%AE%E6%8A%A5%E5%B7%B2%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E7%AD%BE%E7%BD%B2%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E7%A7%9F%E8%B5%81%E5%8D%8F%E8%AE%AE-%E8%83%BD%E4%BD%BF%E7%94%A810%E4%B8%87%E6%9E%9A%E5%B0%96%E7%AB%AFai%E8%8A%AF%E7%89%87%E7%AE%97%E5%8A%9B</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Thu, 01 Oct 2026 13:19:28 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi8gNBVV95cUxQT0tyaE1pYndwanJuNXp3ZGNkbU5KNGpwZnRPX29jZzhrMTRPZW9iQmkzRGFWR0ZTc1ZYTlpTbGxPTVJBdlBVd0diR0lyZGMtbkU3d19tOERXdEluSENITGJPVkZ3Tl8ybkVjdnBWekxVVFFra2lhRFdqZUpXbzlRY09Id2htanN2bU9MLU5LVWN3M0FIMThTOHdLbU5EVHo1VXpIX1BrRU52bkVKV1M1b1ZEQnlIaUJ0b1RUVUJzZDBKNEhJc2RTelQ1MDBsdm1XbVBXUE5TOWtBMXdBdDVQMklYbGpGMUFpcUpUZ05CQlVFeHVZS0NmNjFBY2VkZ1RIdTVnQzNaeHU1dVhCei1aT1BpUk1IZzZMUmh0WTBRTkFkRGZ5WGRpd3JvN09YNzgxNk0zOGR4MXlVb09FZl9LNTZ3YVI3Ti1TRUduMUdZNEVIc0hUOXk3SlcxTDQyLUpFNjRSbGM3Zi05T2pHOWloXzVtbWhrM3F3ekh5ZWlicWRWb0hnOURBajdvRWJ1bk1PeGVWa3J5UXAxMUhiM2tKZnZTZlkwREltMFpkTUppd0ZOUGdobGlIS1lIYy1mVlYzcmFtZE9WWDRMank1MTFfY2Q0VWtiRUM5dUVfck93N29KcHlVa0dBcWgwaklza293Rmc</guid></item><item><title>全新RDNA5架构 网友模拟RX 10700 XT显卡性能：可超RTX 5080 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155088.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;全新RDNA5架构 网友模拟RX 10700 XT显卡性能：可超RTX 5080&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-10-01 21:06:01  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1297794.html" title="宪瑞的主页" class="newstiao4"&gt;宪瑞&lt;/a&gt;&lt;p&gt;  编辑：宪瑞 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1155088-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，如果不是内存/显存涨价太狠，今年底或者明年1月应该能看到AMD发布RDNA5架构的新一代显卡了，但是现在新卡要到2027年甚至2028年，只能看看爆料解馋了。&lt;/p&gt;
-&lt;p&gt;AMD下一代的RDNA5架构GPU不会在此前的RNDA架构基础上打磨了，会是全面革新的一代，是2、3代以来最重大的改进，在CU单元、光追、AI等方面提升很大。&lt;/p&gt;
-&lt;p&gt;RDNA5架构会有AT0/AT2/AT3/AT4等多个核心，AT0是旗舰，最终命名是什么还不好说，&lt;span&gt;&lt;strong&gt;但AT2核心应该是RX 10700系列的命名，&lt;/strong&gt;&lt;/span&gt;之后是RX 10600 XT\RX 10500 XT级别的命名，每个核心可能不止1个型号。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="全新RDNA5架构 网友模拟RX 10700 XT显卡性能：可超RTX 5080" h="400" src="//img1.mydrivers.com/img/20261001/27043533-8fe4-4cf4-b963-b8dc2c0b66ca.png" w="600"&gt;&lt;/p&gt;
-&lt;p&gt;有网友根据最近泄露出来的RX 10700 XT显卡的规格做了一番性能模拟，&lt;strong&gt;它会有70组CU单元，频率3.2GHz，台积电N3P工艺，300W TBP功耗。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;用了5个项目综合得出来的性能分数是17432分，&lt;span&gt;&lt;strong&gt;这个性能比RTX 5080显卡高了6.5%，&lt;/strong&gt;&lt;/span&gt;比RTX 4080 Super显卡高了32.2%，比自家的RX 9070 XT也领先32.5%，只比RTX 4090显卡低了7.3%。&lt;/p&gt;
-&lt;p&gt;不过呢这个性能模拟也就是图一乐，大概能摸清RX 10700 XT显卡的定位级别，规格现在没有实锤，性能差距是非常大的，能战RTX 5080级别的显卡就很不错了，最终哪怕弱一点也不是问题。&lt;/p&gt;
-&lt;p&gt;问题是等RDNA5架构的显卡上市了，NVIDIA的RTX 60系列显卡也要上市了，Rubin这一代哪怕提升很保守，只有20-30%的性能提升也够AMD追的了，RDNA5架构的压力并不小。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/bfe96677-04a5-4721-8b1b-d347426a373c.jpg" target="_blank"&gt;&lt;img alt="全新RDNA5架构 网友模拟RX 10700 XT显卡性能：可超RTX 5080" h="744" src="//img1.mydrivers.com/img/20261001/Sbfe96677-04a5-4721-8b1b-d347426a373c.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 13:06:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9fOGFrR2N6cTJGYnhXeTNMSHJzOGRUMnJHTktLVnhqSjhzdmpSc21CVHZXSU5oaDd2a0xHdDhSMHp5a0tlRkZuTXdSOXhJbEdRWFRxVDNvdUQ</guid></item><item><title>Windows 11内存优化任重道远：一个雷蛇软件就占2GB！疯狂启动25个进程 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155087.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div id="main_contents"&gt;
-    &lt;div class="news_n"&gt; 
-      &lt;p class="news_bt" id="thread_subject"&gt;Windows 11内存优化任重道远：一个雷蛇软件就占2GB！疯狂启动25个进程&lt;/p&gt;
-          
-
-
-
-       
-      &lt;div class="news_bt1"&gt;
-        &lt;div class="news_bt1_left"&gt;&lt;p&gt; 2026-10-01 20:50:19  出处：快科技 作者：&lt;/p&gt;&lt;a href="//passport.mydrivers.com/author/1599980.html" title="黑白的主页" class="newstiao4"&gt;黑白&lt;/a&gt;&lt;p&gt;  编辑：黑白 &lt;/p&gt;&lt;span id="Hits"&gt;&lt;/span&gt;  &lt;span&gt;  评论&lt;a href="//comment8.mydrivers.com/review/1155087-1.htm"&gt;()&lt;/a&gt;&lt;/span&gt;&lt;a title="点击可以复制本篇文章的标题和链接" target="_self" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/copy_linkv2.png?id=1" alt="点击可以复制本篇文章的标题和链接"&gt;&lt;font&gt;复制&lt;/font&gt;&lt;/a&gt;&lt;a title="对文章内容进行纠错" target="_self" id="topjiucuo" href=""&gt;&lt;img src="//icons.mydrivers.com/news/2013/icon_jiucuo.png?id=1" alt="对文章内容进行纠错"&gt;&lt;font&gt;纠错&lt;/font&gt;&lt;/a&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-          
-             
-
-         
-      
-
-      &lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，微软一直在试图推动降低Windows 11的内存占用，但这一目标正面临第三方软件的拖累。&lt;/p&gt;
-&lt;p&gt;海外用户MrAmbiG分享的截图显示，&lt;span&gt;&lt;strong&gt;仅一个雷蛇Synapse软件，就在系统中疯狂运行了25个RazerAppEngine进程，合计占用约2044MB内存，接近2GB。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/ed630a4e-632e-431d-a345-7ad79e88c1f7.png" target="_blank"&gt;&lt;img alt="Windows 11内存优化任重道远：一个雷蛇软件就占2GB！疯狂启动25个进程" h="204" src="//img1.mydrivers.com/img/20261001/Sed630a4e-632e-431d-a345-7ad79e88c1f7.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这位用户本想用开源RGB控制工具OpenRGB替代雷蛇官方软件，但OpenRGB启动后会闪退，他不得不进入Windows任务管理器，逐一禁用25个RazerAppEngine进程，之后OpenRGB才成功运行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;不过OpenRGB本身仍不稳定，启动后依旧会闪退，最终用户选择了SignalRGB。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/d971ba67-4693-4fcc-9c5c-70b66e89f5fa.jpg" target="_blank"&gt;&lt;img alt="Windows 11内存优化任重道远：一个雷蛇软件就占2GB！疯狂启动25个进程" h="632" src="//img1.mydrivers.com/img/20261001/Sd971ba67-4693-4fcc-9c5c-70b66e89f5fa.jpg" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在内存价格高企的背景下，部分厂商已将笔记本内存配置降回8GB，2GB的灯效软件占用对低内存设备来说确实难以承受。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;而大多数普通用户并不知道如何进入Windows服务管理器禁用后台进程，只能任由这些软件吞噬系统资源。&lt;/p&gt;
-&lt;p align="center"&gt;&lt;a href="//img1.mydrivers.com/img/20261001/024aec1c44534b3288907f51a10bef13.png" target="_blank"&gt;&lt;img alt="Windows 11内存优化任重道远：一个雷蛇软件就占2GB！疯狂启动25个进程" h="399" src="//img1.mydrivers.com/img/20261001/s_024aec1c44534b3288907f51a10bef13.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt; 
-       
-       
-  
-       
-        
-
-         
-
-    
-
-    
-
-
-   
-
- &lt;div class="dashang_float dashang_float_2"&gt;
-        
-  &lt;div class="dashang_erwm"&gt;
-	&lt;span&gt;给作者大大一些小奖励&lt;/span&gt;  
-	  &lt;img src="https://icons.mydrivers.com/news/play.png" alt=""&gt; &lt;/div&gt;
-&lt;/div&gt; 
-
-         
-  &lt;/div&gt;
-       
-         
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 12:50:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5lTnJrUEY2WUh5NENnQTA1ZDZ5UG1tbEtUamhnTlplbGZpS3p1VVc2OHh4NGFqOWZBdVZLblROUThIN3hDRm9FOHd0NWVUTnZTSEhuUVNjWVY</guid></item><item><title>摘下中美AI合作“低垂的果实” - 新浪军事</title><link>https://mil.news.sina.com.cn/2026-10-01/doc-inittqyf8146276.shtml</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="article" id="article"&gt;
-    
-
-&lt;p&gt;　　原标题：摘下中美AI合作“低垂的果实”&lt;/p&gt;&lt;p&gt;　　来源：央视网&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　当你开车前往旧金山，一路上会看到，所有广告牌基本上都跟AI相关。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　其实在湾区，你会发现，这里几乎没有人闲着。一周之内，任何人都可以参加各种和AI相关的活动——圆桌、大型会议，什么都有。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　在美国的AI圈子里，有一个词来形容它：&lt;font cms-style="font-L strong-Bold"&gt;社群&lt;/font&gt;。要了解美国AI圈子在酝酿什么、什么在发生，关键就在他们。技术人员在讨论模型发展的方向，研究员在争论治理如何开展，投资人在判断哪个方向能跑出来......&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　还有不少人，在琢磨中美之间的事。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L strong-Bold"&gt;「&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;一&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;」&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;“&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;低垂的果实”&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　最近，谭主和他们聊了聊，包括OpenAI前工程师、美国加利福尼亚州参议员、中美二轨对话的核心参与人等，还有不少穿梭在中美之间的第三方机构。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　聊下来，谭主发现，中美之间共同关注的议题其实很多。推动这些议题的，不只是官方对官方，更是官方、半官方、民间多层交织。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　今年，围绕AI治理的对话渠道十分密集——联合国层面有高级别会议和独立科学小组，G20和APEC各有自己的AI议程，二轨对话又将诸多中美技术人员和政策研究员汇聚在一起。专业层面的共识，可以通过二轨对话形成，再传入政策圈层，最终在各国的决策层获得确认。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　一个具体的案例，是建立人工智能事件的沟通渠道。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　与联合国关系密切的AI安全机构&lt;font cms-style="font-L strong-Bold"&gt;AI Safety Connect的两位联合创始人&lt;/font&gt;告诉谭主，就AI治理（包括为危险人工智能事件做准备）在中美之间建立沟通渠道这件事，他们努力了很久，看到它登上全球舞台是“积极的一步”，但只是第一步。现在，他们正在与中国同行、美国同行讨论怎么建事件报告机制——让中美两国的AI实验室隔着太平洋对话，同时与各自政府协同。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　现在，有更多议题正在往成果方向转化。比如，防止最危险的能力被滥用，包括确保AI不被恐怖组织利用等。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　AI社群用了一个有意思的词来形容这些议题：“低垂的果实”。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　清华大学战略与安全研究中心副主任&lt;font cms-style="font-L strong-Bold"&gt;肖茜&lt;/font&gt;是中美二轨对话的核心人物之一，她和谭主确认，建立人工智能事件的沟通渠道和防范AI被滥用符合中国利益。多个美国AI安全机构的政策研究员也明确表示了对这两个议题的积极态度。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　这些确认，让“低垂的果实”这个说法有了具体所指。所谓“低垂的果实”，不是最宏大的目标，而是那些中美双方已经有专业层面的共识、相对成熟的合作点。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　随着一轨对话的建立，这些议题进一步有了顶层确认的基础。建立中美人工智能对话机制后，二轨积累的议题有了更明确的政策出口。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　中方谈判相关人士告诉谭主，这次由于时间十分紧张，中美两国主要表达了各自的态度、关心的问题等，并计划在下次11月的对话中推进具体问题。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L strong-Bold"&gt;「&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;二&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;」&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;“南橘北枳”&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　但同样的议题，放到不同的语境里，长出来的样子未必一样。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　首先是中美对安全本身的认知错位。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　在湾区对接过很多欧美AI安全机构的中国研究员&lt;font cms-style="font-L strong-Bold"&gt;朱燕&lt;/font&gt;告诉谭主，一个基础问题是用词：比如在英语语境里，“safety”和“security”是非常不一样的概念，而中文统一称之为“安全”。看似在用同样的词，指向的内涵可能并不一样。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　这一分歧也体现在对AI风险的理解上。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　国内有自成体系的分类框架，比如全国网络安全标准化技术委员会区分“技术内生安全风险”“技术应用安全风险”“应用衍生安全风险”三大类。而美国，以麻省理工学院为例，则把AI风险总结为七大类，包括歧视、隐私、滥用、AI系统安全、社会经济与环境影响等。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　分类方式不统一，导致了双方口中的“重大风险”不是同一回事。比如，美方关心AI是否会给人类社会带来毁灭性灾难，而中方关心AI在实际使用中产生的具体风险。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　OpenAI前工程师&lt;font cms-style="font-L strong-Bold"&gt;Katarina Slama&lt;/font&gt;就提到，早期训练AI时，靠人给AI的回答反馈，引导AI理解人的意图；后来这套流程被替换，改成让AI给AI反馈。这么一来，要让AI的想法和人类想要的目标保持一致，就难多了。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　美方也想知道中国企业、专家、老百姓是不是关注有一天AI可能失控、甚至反过来控制人类。谭主了解到，他们在二轨对话中问过很多这样的问题，但双方被解读出了不同的立场。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　这种认知隔阂背后有现实原因。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　谭主了解到，欧美AI安全社群是一个非常精英、比较西方中心的圈子，其他国家人员较少。即使中国大模型在世界上拥有一席之地，但这个圈子里中国人的参与严重不足，也很少谈到全球南方。但问题是，很多时候哪怕没有中方人员、中国企业在场，大家聊AI治理时，也绕不开和中国有关的议题。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　这就涉及一个更根本的问题：规则由谁来制定？&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　如果全球AI标准由美国主导制定，全程缺少中方参与，最终形成的治理规则，很难得到广泛认可，也难以在全球落地。中美是两个领先的人工智能大国，在规则、标准制定上理应有相应的话语权。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　中美推动合作的可能性，相比数月前已经更为乐观。政策窗口已经打开，双方都有意愿，关键是怎么去做。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　前面已经说得很清楚：同样的议题，放到不同语境里，长出来的样子未必一样。“南橘北枳”的问题不解决，“果实”就算摘下来，也可能不是双方以为的那一颗。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　所以，需要先把双方的理解校准到同一个坐标系里，再谈具体动作。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　具体来看，至少存在三个现实推进方向。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L strong-Bold"&gt;第一，共同探讨AI风险分类和分级标准。&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　双方需要先把底层问题谈清楚：什么样的情形才算重大风险？哪些模型行为属于严重失控？这些问题看起来基础，却是后续讨论更加复杂规则的前提。如果连“重大风险”的定义都不一致，后续的协同就无从谈起。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L strong-Bold"&gt;第二，敲定AI风险事件通报范围、流程与要求。&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　一旦出现模型失控、逃逸事件，中美双方都需要第一时间掌握事件情况、判断风险等级。中美同意建立人工智能事件的沟通渠道，是补上这个缺口的第一步。但这套机制不能停留在口头约定上。哪些事件需要上报、多久之内完成通报、哪些信息要共享，以及不落实通报要求如何处置，都要有相应约束。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　没有通报机制，就没法留存风险案例；而没有案例积累，就摸不清风险演变的规律，管控也就无从谈起。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　&lt;font cms-style="font-L strong-Bold"&gt;第三，将AI治理置于更广泛的中美交流框架中。&lt;/font&gt;&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　人工智能讨论应该让中方充分参与，让更多国家的声音被听到。模型可能影响公共安全，深度伪造可能冲击社会信任，这些后果最终将由全社会共同承担。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　这听起来很宏大，但不是没有抓手。谭主与美国加利福尼亚州参议员&lt;font cms-style="font-L strong-Bold"&gt;杰瑞·麦克内尼&lt;/font&gt;交流时，对方就提到，美国联邦层面推进合作可能较慢，但加州可以先行先试，建立互信与制度框架，再逐步向外推广。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　我们不否认人工智能竞争仍会继续。但确保人工智能向善、造福全人类，是中美两国在人工智能领域最大的共同利益。&lt;/p&gt;&lt;p cms-style="font-L"&gt;　　中美之间不可能一次性解决所有分歧，但可以先管住最急迫的风险，在这个基础上逐渐做实共识。&lt;/p&gt;
-
-
-
-	
-
-&lt;/div&gt;
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪军事</author><pubDate>Thu, 01 Oct 2026 12:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMic0FVX3lxTE9ROWJlak4xUHllenBpbVFpUXVEenFNRWpwUXlkZ21tMFBmc1BTMGhkdzdjMkN1OTJqQUpqRGFDWHdyWVBrZDg1VnhhdUZzZmRpYkxic0FoNlcza0RFancwSGVYclFMdUMyVndMRE5tWXJad2M</guid></item><item><title>摘下中美AI合作“低垂的果实” - 新浪军事</title><link>https://mil.sina.cn/2026-10-01/detail-inittqyf8146276.d.html?vt=4</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;section class="art_pic_card art_content"&gt;
-	
-
-&lt;p class="art_p"&gt;来源：央视网&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="123" data-src="//k.sinaimg.cn/n/spider20261001/403/w1080h123/20261001/ed42-d40efb265a41de61ad7233b6bc25b802.png/w700d1q75cms.jpg?by=cms_fixed_width" id="0" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="123" data-src="//k.sinaimg.cn/n/spider20261001/403/w1080h123/20261001/ed42-d40efb265a41de61ad7233b6bc25b802.png/w700d1q75cms.jpg?by=cms_fixed_width" id="0" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;当你开车前往旧金山，一路上会看到，所有广告牌基本上都跟AI相关。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;其实在湾区，你会发现，这里几乎没有人闲着。一周之内，任何人都可以参加各种和AI相关的活动——圆桌、大型会议，什么都有。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;在美国的AI圈子里，有一个词来形容它：&lt;font cms-style="font-L strong-Bold"&gt;社群&lt;/font&gt;。要了解美国AI圈子在酝酿什么、什么在发生，关键就在他们。技术人员在讨论模型发展的方向，研究员在争论治理如何开展，投资人在判断哪个方向能跑出来......&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;还有不少人，在琢磨中美之间的事。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="100" data-src="//n.sinaimg.cn/spider20261001/380/w1080h100/20261001/ce81-gif330c2f8a71483ea45e914d6316c738bd.gif" id="1" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="100" data-src="//n.sinaimg.cn/spider20261001/380/w1080h100/20261001/ce81-gif330c2f8a71483ea45e914d6316c738bd.gif" id="1" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;「&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;一&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;」&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;“&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;低垂的果实”&lt;/font&gt;&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;最近，谭主和他们聊了聊，包括OpenAI前工程师、美国加利福尼亚州参议员、中美二轨对话的核心参与人等，还有不少穿梭在中美之间的第三方机构。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;聊下来，谭主发现，中美之间共同关注的议题其实很多。推动这些议题的，不只是官方对官方，更是官方、半官方、民间多层交织。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;今年，围绕AI治理的对话渠道十分密集——联合国层面有高级别会议和独立科学小组，G20和APEC各有自己的AI议程，二轨对话又将诸多中美技术人员和政策研究员汇聚在一起。专业层面的共识，可以通过二轨对话形成，再传入政策圈层，最终在各国的决策层获得确认。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/dac3-20d5d32a7c3cfa86d848d1e1a91f31e7.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="2" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/dac3-20d5d32a7c3cfa86d848d1e1a91f31e7.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="2" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;一个具体的案例，是建立人工智能事件的沟通渠道。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;与联合国关系密切的AI安全机构&lt;font cms-style="font-L strong-Bold"&gt;AI Safety Connect的两位联合创始人&lt;/font&gt;告诉谭主，就AI治理（包括为危险人工智能事件做准备）在中美之间建立沟通渠道这件事，他们努力了很久，看到它登上全球舞台是“积极的一步”，但只是第一步。现在，他们正在与中国同行、美国同行讨论怎么建事件报告机制——让中美两国的AI实验室隔着太平洋对话，同时与各自政府协同。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/c6ee-6c4e934e7cf72f69d7350888c62ede84.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="3" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/c6ee-6c4e934e7cf72f69d7350888c62ede84.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="3" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;现在，有更多议题正在往成果方向转化。比如，防止最危险的能力被滥用，包括确保AI不被恐怖组织利用等。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;AI社群用了一个有意思的词来形容这些议题：“低垂的果实”。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;清华大学战略与安全研究中心副主任&lt;font cms-style="font-L strong-Bold"&gt;肖茜&lt;/font&gt;是中美二轨对话的核心人物之一，她和谭主确认，建立人工智能事件的沟通渠道和防范AI被滥用符合中国利益。多个美国AI安全机构的政策研究员也明确表示了对这两个议题的积极态度。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;这些确认，让“低垂的果实”这个说法有了具体所指。所谓“低垂的果实”，不是最宏大的目标，而是那些中美双方已经有专业层面的共识、相对成熟的合作点。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;随着一轨对话的建立，这些议题进一步有了顶层确认的基础。建立中美人工智能对话机制后，二轨积累的议题有了更明确的政策出口。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;中方谈判相关人士告诉谭主，这次由于时间十分紧张，中美两国主要表达了各自的态度、关心的问题等，并计划在下次11月的对话中推进具体问题。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="100" data-src="//n.sinaimg.cn/spider20261001/380/w1080h100/20261001/ce81-gif330c2f8a71483ea45e914d6316c738bd.gif" id="4" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="100" data-src="//n.sinaimg.cn/spider20261001/380/w1080h100/20261001/ce81-gif330c2f8a71483ea45e914d6316c738bd.gif" id="4" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;「&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;二&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;」&lt;/font&gt;&lt;font cms-style="font-L strong-Bold"&gt;“南橘北枳”&lt;/font&gt;&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;但同样的议题，放到不同的语境里，长出来的样子未必一样。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;首先是中美对安全本身的认知错位。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;在湾区对接过很多欧美AI安全机构的中国研究员&lt;font cms-style="font-L strong-Bold"&gt;朱燕&lt;/font&gt;告诉谭主，一个基础问题是用词：比如在英语语境里，“safety”和“security”是非常不一样的概念，而中文统一称之为“安全”。看似在用同样的词，指向的内涵可能并不一样。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/4fb4-74b4cf528c144ff30ab07bd492017de5.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="5" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/4fb4-74b4cf528c144ff30ab07bd492017de5.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="5" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;这一分歧也体现在对AI风险的理解上。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;国内有自成体系的分类框架，比如全国网络安全标准化技术委员会区分“技术内生安全风险”“技术应用安全风险”“应用衍生安全风险”三大类。而美国，以麻省理工学院为例，则把AI风险总结为七大类，包括歧视、隐私、滥用、AI系统安全、社会经济与环境影响等。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;分类方式不统一，导致了双方口中的“重大风险”不是同一回事。比如，美方关心AI是否会给人类社会带来毁灭性灾难，而中方关心AI在实际使用中产生的具体风险。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;OpenAI前工程师&lt;font cms-style="font-L strong-Bold"&gt;Katarina Slama&lt;/font&gt;就提到，早期训练AI时，靠人给AI的回答反馈，引导AI理解人的意图；后来这套流程被替换，改成让AI给AI反馈。这么一来，要让AI的想法和人类想要的目标保持一致，就难多了。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/479f-4ed2595654c0f9ed5a7acf4248e9919e.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="6" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/479f-4ed2595654c0f9ed5a7acf4248e9919e.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="6" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;美方也想知道中国企业、专家、老百姓是不是关注有一天AI可能失控、甚至反过来控制人类。谭主了解到，他们在二轨对话中问过很多这样的问题，但双方被解读出了不同的立场。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;这种认知隔阂背后有现实原因。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;谭主了解到，欧美AI安全社群是一个非常精英、比较西方中心的圈子，其他国家人员较少。即使中国大模型在世界上拥有一席之地，但这个圈子里中国人的参与严重不足，也很少谈到全球南方。但问题是，很多时候哪怕没有中方人员、中国企业在场，大家聊AI治理时，也绕不开和中国有关的议题。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;这就涉及一个更根本的问题：规则由谁来制定？&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;如果全球AI标准由美国主导制定，全程缺少中方参与，最终形成的治理规则，很难得到广泛认可，也难以在全球落地。中美是两个领先的人工智能大国，在规则、标准制定上理应有相应的话语权。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="100" data-src="//n.sinaimg.cn/spider20261001/380/w1080h100/20261001/ce81-gif330c2f8a71483ea45e914d6316c738bd.gif" id="7" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="100" data-src="//n.sinaimg.cn/spider20261001/380/w1080h100/20261001/ce81-gif330c2f8a71483ea45e914d6316c738bd.gif" id="7" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;中美推动合作的可能性，相比数月前已经更为乐观。政策窗口已经打开，双方都有意愿，关键是怎么去做。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;前面已经说得很清楚：同样的议题，放到不同语境里，长出来的样子未必一样。“南橘北枳”的问题不解决，“果实”就算摘下来，也可能不是双方以为的那一颗。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;所以，需要先把双方的理解校准到同一个坐标系里，再谈具体动作。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;具体来看，至少存在三个现实推进方向。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;第一，共同探讨AI风险分类和分级标准。&lt;/font&gt;&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;双方需要先把底层问题谈清楚：什么样的情形才算重大风险？哪些模型行为属于严重失控？这些问题看起来基础，却是后续讨论更加复杂规则的前提。如果连“重大风险”的定义都不一致，后续的协同就无从谈起。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;第二，敲定AI风险事件通报范围、流程与要求。&lt;/font&gt;&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;一旦出现模型失控、逃逸事件，中美双方都需要第一时间掌握事件情况、判断风险等级。中美同意建立人工智能事件的沟通渠道，是补上这个缺口的第一步。但这套机制不能停留在口头约定上。哪些事件需要上报、多久之内完成通报、哪些信息要共享，以及不落实通报要求如何处置，都要有相应约束。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;没有通报机制，就没法留存风险案例；而没有案例积累，就摸不清风险演变的规律，管控也就无从谈起。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;&lt;font cms-style="font-L strong-Bold"&gt;第三，将AI治理置于更广泛的中美交流框架中。&lt;/font&gt;&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;人工智能讨论应该让中方充分参与，让更多国家的声音被听到。模型可能影响公共安全，深度伪造可能冲击社会信任，这些后果最终将由全社会共同承担。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;这听起来很宏大，但不是没有抓手。谭主与美国加利福尼亚州参议员&lt;font cms-style="font-L strong-Bold"&gt;杰瑞·麦克内尼&lt;/font&gt;交流时，对方就提到，美国联邦层面推进合作可能较慢，但加州可以先行先试，建立互信与制度框架，再逐步向外推广。&lt;/p&gt;&lt;a href=""&gt;
-										&lt;figure class="art_img_mini j_p_gallery" data-type="simple"&gt;
-											&lt;img class="art_img_mini_img j_fullppt_cover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/82ec-228e88b09f03c7de8b2c7e2efc346ea3.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="8" alt=""&gt;
-										&lt;img class="j_fullppt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" w="1080" h="565" data-src="//k.sinaimg.cn/n/spider20261001/45/w1080h565/20261001/82ec-228e88b09f03c7de8b2c7e2efc346ea3.jpg/w700d1q75cms.jpg?by=cms_fixed_width" id="8" alt="" disabeld-show="true"&gt;
-											&lt;h2 class="art_img_tit"&gt;&lt;/h2&gt;
-										&lt;/figure&gt;
-									&lt;/a&gt;&lt;p class="art_p" cms-style="font-L"&gt;我们不否认人工智能竞争仍会继续。但确保人工智能向善、造福全人类，是中美两国在人工智能领域最大的共同利益。&lt;/p&gt;&lt;p class="art_p" cms-style="font-L"&gt;中美之间不可能一次性解决所有分歧，但可以先管住最急迫的风险，在这个基础上逐渐做实共识。&lt;/p&gt;	
-
-	
-
-&lt;/section&gt;
-
-
-&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>新浪军事</author><pubDate>Thu, 01 Oct 2026 12:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMic0FVX3lxTE1YZXVpTTRfX1dIOV8tdHhUOFhteFhSSzhDNDZKMDJ3VE1wRTZIbjNqcHM3WnFndHBYeFZFdnlIb3RON3Y1dkFNYV8wUUFyZ2x0b1FCUGtwZFhieGtsZmktbjFnN1Azd09ORVdGU2dhWUZiMXc</guid></item><item><title>内存还没炒作完又开始炒作CPU了：大佬放言需求将增长40倍 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155086.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，美光日前发布的财报中宣称内存需求依然强烈，到2028年也会很紧张，内存这波炒作是过不去了，然而现在又开始炒作CPU紧缺了，甚至有可能达到现在产能的40倍。&lt;/p&gt;
-&lt;p&gt;这个表态来自全球网络大善人Cloudflare的CEO Matthew Princ，他最近多次在采访中谈到了Agent时代的需求，指出美国有1亿知识工作者，每人配备1个Agent的话，而且采用传统的Container容器模式运行，需要的CPU差不多占全球CPU产量的50%。&lt;/p&gt;
-&lt;p&gt;这个设想还不算夸张，&lt;span&gt;&lt;strong&gt;但是未来的时代每个人不可能只有1个Agent，每人配2个的话，全球10亿人的需求量就是CPU产量的30-40倍。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;对于CPU需求高涨与供货紧缺的情况，AMD、Intel近期也是有差不多的表态，只是没有Cloudflare说的那么夸张，Intel CEO陈立武说他们只能满足CPU需求的50%，AMD这边没说具体的比例，但表示产能紧张，2027年的2nm处理器Venice产能已经售罄，&lt;strong&gt;开始卖2028年的产能了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;他们这些表态的背后有个近期的热点，&lt;strong&gt;就是Meta上线的那个Muse&lt;/strong&gt;，是一个永远在线的个人Agent，这东西最近炒作的很火热，背后就是大量的虚拟机需求，对CPU的销量会有明显的提振。&lt;/p&gt;
-&lt;p&gt;但是Muse这东西说起来也不是什么新鲜玩意了，就跟前几个月爆火的云端小龙虾一个性质，不明白为何Meta吃了一口冷饭又把这个事炒作火了，现在国内多家科技公司又在加班加点精准复刻Muse，刚宣布停止的云端小龙虾业务这下又要热闹了。&lt;/p&gt;
-&lt;p&gt;不过考虑到这东西的实际需求，过不了几个月恐怕又是一地鸡毛。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="内存还没炒作完又开始炒作CPU了：大佬放言需求将增长40倍" h="400" src="//img1.mydrivers.com/img/20261001/81329745-371e-4085-836e-323cda001671.jpg" w="600"&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：宪瑞&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 12:38:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE5Dc092czJkRnZ1MG5RS2VScFBvTXdGcUs4cGROelRkeTFma25GMUp1cnJxeUF5bWhpVFdrakNpeHdiN0d0QWpoRFotMW56S0dnc3JHWmp1eEM</guid></item><item><title>一张RTX 3080 Ti教会AI玩游戏！自己学会按A、B键 - 驱动之家</title><link>https://news.mydrivers.com/1/1155/1155085.htm</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="news_info"&gt;
-          
-           &lt;p&gt;快科技10月1日消息，&lt;span&gt;&lt;strong&gt;一位网名stmonty的开发者用一张RTX 3080 Ti游戏显卡，训练了一个1250万参数的小型AI模型，&lt;/strong&gt;&lt;/span&gt;让它学会在《宝可梦 红》中操作角色并成功选择初始宝可梦。&lt;/p&gt;
-&lt;p&gt;这个模型属于世界模型，核心思路是让AI通过观察屏幕画面来学习每个按键的效果，而非直接告诉它游戏规则。&lt;/p&gt;
-&lt;p&gt;简单来说就是，这个AI不知道A键是确认、B键是取消，也不知道游戏目标是什么，它只做一件事：盯着屏幕看，然后猜“如果我按某个键，画面会怎么变”，猜对了就记住，猜错了就修正。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/657432c2-b47e-4d6c-86c4-9401e1c8799c.png" target="_blank"&gt;&lt;img alt="一张RTX 3080 Ti教会AI玩游戏！自己学会按A、B键" h="187" src="//img1.mydrivers.com/img/20261001/S657432c2-b47e-4d6c-86c4-9401e1c8799c.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;和ChatGPT那种大模型不同，世界模型不靠海量文字训练，而是靠观察环境变化来理解世界，&lt;strong&gt;stmonty的模型只有1250万参数，在动辄几百亿参数的LLM面前属于微型，但好处是一张消费级显卡就能跑。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;学会按键效果后，AI开始规划下一步行动，每次生成14个按键操作的方案，但不是直接在游戏里试，而是先在模型脑子里模拟一遍，每轮模拟512个方案，筛选保留64个，再继续筛选，最终选出最优方案才送进游戏执行。&lt;/p&gt;
-&lt;p&gt;首次尝试以失败告终，玩家没有拿到宝可梦，stmonty推测原因是模型基于自身预测做进一步预测时，小误差会逐层放大。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;微调后第二次尝试成功选出了杰尼龟，100次同存档测试中，52次成功拿到初始宝可梦，随机按键为0次，未训练模型仅1次。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;stmonty表示，从存档点直接按A键本来就能选到宝可梦，但项目的目标不是这个，而是验证模型能否自己发现解决方案。&lt;/p&gt;
-&lt;p&gt;下一步计划是从实验室出发，走到博士面前，完成对话，再选择宝可梦，stmonty认为难度随规划长度呈指数级增长，单纯增大模型规模也无法通关游戏。&lt;/p&gt;
-&lt;p&gt;&lt;a href="//img1.mydrivers.com/img/20261001/1c8fc3e8-e237-4792-96ef-f50ef562011d.png" target="_blank"&gt;&lt;img alt="一张RTX 3080 Ti教会AI玩游戏！自己学会按A、B键" h="337" src="//img1.mydrivers.com/img/20261001/S1c8fc3e8-e237-4792-96ef-f50ef562011d.png" w="600"&gt;&lt;/a&gt;&lt;/p&gt;
-            
- &lt;div&gt;
-           &lt;p class="zhuanzai"&gt;【本文结束】如需转载请务必注明出处：快科技&lt;/p&gt;  
-          &lt;p class="url"&gt;&lt;span&gt;责任编辑：黑白&lt;/span&gt;&lt;/p&gt;
-&lt;p class="jubao_text"&gt;&lt;a id="leftjubao"&gt;文章内容举报&lt;/a&gt;&lt;/p&gt;
-        &lt;/div&gt;
-     
-      &lt;/div&gt;
-    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 12:30:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9ZeFBjRjEzODhsVEFyUDJ3NFdPQzVZcXBTSlVKdHI1cGdYRVU3TnpIZUFrTnBKSll6ek5LVk4tOVdkZlZnOXBrRFNEdVItNG5val93M19wVEE</guid></item><item><title>赛力斯和华为又绑定了五年 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782884</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 01 Oct 2026 11:28:14 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5IY2FOZGd5R01lMDJIQk12QUxSbksxVWZua0N4eWUzdDE3OEtBM2tydXIwa3ZodnpKVF9aSzJORUdwYWVlV2F6WFBGb0loZ1QwWWhF</guid></item><item><title>华为Mate90系列发布：芯片更强后，鸿蒙7让手机更好用 - 凤凰网</title><link>https://news.ifeng.com/c/8wsDuDZjwv0</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="index_text_D0U1y"&gt;&lt;p&gt;&lt;strong&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/27DAC3A4916D14D48174380ED4489B330F374085_size930_w1029_h1543.png"&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/822A96B7B2517323E61E82E8D703A54A8821A0DD_size1_w1080_h55.png"&gt;&lt;/p&gt;&lt;p&gt;当行业还在卷参数、堆配置时，华为Mate 90系列的更新，精准落在了一个个具体的场景里。&lt;/p&gt;&lt;p&gt;拍完照不用一张张慢慢修，AI修图能省不少事；在图书馆、会议室不方便接电话，小艺帮接能智能代接来电、自动回复，还能把通话内容一键生成摘要，既省心又不漏重点；直播“口红什么色号，观众看到的就是什么色号”，实现“2K真实、降噪清晰、久播不卡”，把直播体验推向新高度。&lt;/p&gt;&lt;p&gt;2026年10月1日，华为Mate 90系列搭载HarmonyOS 7正式发布，这些看似日常的功能变化，背后需要一整套技术共同支撑。既需要芯片提供算力，也需要系统和应用的配合。落到用户的具体体验上，就得依靠鸿蒙生态发挥关键作用。&lt;/p&gt;&lt;p&gt;华为Mate 90系列的变化正在于此。9月初刚亮相的麒麟9050 Pro芯片和HarmonyOS 7，在这一代Mate上和鸿蒙应用生态进一步结合。鸿蒙既要让芯片的能力得到发挥，也要让开发者能够把产品能力融入服务，使图形、AI和互联等技术，转化为更直观、更便捷的使用体验。&lt;/p&gt;&lt;p&gt;因此，理解华为这一代Mate，不能只看芯片提升了多少，更要看鸿蒙如何把性能转化为应用可以调用的能力，和开发者携手将其做进消费者的日常。&lt;/p&gt;&lt;p&gt;毕竟，消费者未必关心一次三维渲染经过了哪些环节，却会在意照片是不是好看、浏览是否顺畅、使用是否更省心。让底层技术抵达这些细小而具体的需求，正是这一代Mate系列要回答的问题。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/033B51F707DCF2EEDE79B9C12182B8ED17D31093_size16_w945_h354.png"&gt;&lt;/p&gt;&lt;p&gt;沿着日常使用体验来观察，华为Mate 90系列的变化，首先出现在看得见的画面上。&lt;/p&gt;&lt;p&gt;看视频时，人们不仅在意屏幕够不够亮、画质好不好，更在意画面能否自然还原。华为Mate 90 Pro Max与RS非凡大师搭载全彩灵珑屏，全彩显示技术让色彩过渡和画面层次更加细腻。据发布会披露的信息，爱奇艺、腾讯视频、优酷等超过60款头部应用，已经接入画质提升，让这项能力进入到用户的日常使用里。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/2EEC46CFFAB72CE004C3B5FC6EF1A86EB39F9E40_size265_w1080_h602.png"&gt;&lt;/p&gt;&lt;p&gt;如果说影像考验的是屏幕和渲染“看得清、看得细”的能力，那么需要“实时交互”的游戏，考验的就不只是显示，而是芯片和系统的实时调度能力。&lt;/p&gt;&lt;p&gt;以两款游戏为例。在开放世界动作游戏《鸣潮》中，玩家需要一边探索地图，一边进行快速、连续的战斗。在战术射击游戏《暗区突围》里，玩家则要搜集物资、辨认敌情。对玩家来说，光影是否真实，动作是否连贯，都会影响游戏体验。&lt;/p&gt;&lt;p&gt;华为新一代麒麟9050 Pro芯片，搭载华为自研图形处理器“马良GPU”，并配备了第二代光追硬加速，通过芯片中的专用硬件，加快光照、反射和阴影的计算，发布会提到，麒麟9050 Pro能支持每秒5500万条光线同时渲染。这为游戏模拟更真实的光影提供了条件：水面倒影、金属反光，或者阳光穿过树叶形成的阴影，都有机会呈现得更自然。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/06832D9CFCADABB90C24944EA230BBF20D7F2945_size318_w1080_h498.png"&gt;&lt;/p&gt;&lt;p&gt;但画面越复杂，对计算资源的要求也越高。进入激烈战斗或切换到新的场景时，手机需要及时调动算力，才能让动作持续连贯。&lt;/p&gt;&lt;p&gt;这也是HarmonyOS 7改善体验的地方。智能调度硬加速能随着场景变化，让算力更及时地用到需要的地方，减少复杂画面和激烈战斗中的卡顿。在这套芯片和系统的协同下，发布会提到《鸣潮》平均帧率能提升35%，让玩家在长时间操作、画面负载较高时，也能获得更稳定、连贯的体验。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/0E1F70A2F9FD255CBA60549D322B83749127A71A_size151_w1080_h329.png"&gt;&lt;/p&gt;&lt;p&gt;继续往华为Mate 90系列的日常使用体验里走，能看见HarmonyOS 7的作用更清晰了。&lt;/p&gt;&lt;p&gt;小艺在HarmonyOS 7里已经进一步升级为“系统级智能体”，能够在用户授权下理解需求、调用系统能力和应用服务，帮助用户完成具体任务。它的作用，也从回答问题延伸到协助操作。&lt;/p&gt;&lt;p&gt;比如，看到一篇旅游攻略，或者临时收到一个地址，需要随手记录信息，用户可以通过下滑、收藏、对话三种方式，将内容存入“小艺帮记”，快速记录的同时，还能智能提取小红书、知乎等日常应用的信息。&lt;/p&gt;&lt;p&gt;再往前一步，小艺还能把信息和操作衔接起来。比如，复制地址、航班号或者快递单号后，小艺导航条能够识别内容，提供相应的服务入口；填写一些表单时，也可以调用“小艺帮记”中已经保存的相关信息，来辅助填充。&lt;/p&gt;&lt;p&gt;在小红书、知乎、携程旅行等应用里，用户长按导航条，就能调用AI服务，获得智能填充、智能读屏和智能推荐服务。这意味着，用户在浏览攻略、阅读文章或者填写信息时，可以直接在当前页面唤起小艺，让它辅助理解页面内容、推荐相关信息，或者调用已经保存的信息来完成填充。&lt;/p&gt;&lt;p&gt;这些变化有一个共同方向，减少用户在不同页面和应用间搬运、调用信息的步骤。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/791B11F6AB45AEFC82FD1C28B0FCE6E480573E5D_size408_w1080_h446.png"&gt;&lt;/p&gt;&lt;p&gt;如果说小艺降低了手机内信息的协同壁垒，那么鸿蒙的互联能力，则进一步打通了手机和其他设备之间的分享与协作。&lt;/p&gt;&lt;p&gt;以HarmonyOS 7和大疆Osmo Pocket 4合作为例。人们用大疆Osmo Pocket 4拍摄一段视频后，接下来往往是把素材通过App导入手机，挑选、剪辑，再到分享。而在华为Mate90系列里，大疆的硬件能力深度融入鸿蒙生态，拍摄的素材可以通过华为分享，直接、无损地秒传到手机里，省去打开DJI Mimo应用中转的步骤。华为Mate 90系列也由此成为能连接拍摄、整理和分享的工具。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/D4FCDC6DA41C45AA37529439F389BDEA797CAE85_size40_w1080_h454.jpg"&gt;&lt;/p&gt;&lt;p&gt;这一系列升级背后，是华为Mate 90系列全系搭载旗舰τ芯片和HarmonyOS 7，通过软硬芯云垂直整合，和开发者共同改善着3D浏览、游戏等场景的表现。从画面的流畅度，到游戏体验，再到AI辅助和跨设备分享，鸿蒙承担着不同层面的连接工作。它通过系统调度，让芯片的计算和图形能力更好地支撑应用运行；通过小艺，将用户需求和系统能力、应用服务衔接起来；也通过设备互联，让素材传输和创作协作更顺畅。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/3C154A469370C955264612FDF567A1E373FD9528_size11_w945_h256.png"&gt;&lt;/p&gt;&lt;p&gt;这些体验为什么能在这一代华为Mate系列产品上集中出现，还要回到芯片、鸿蒙系统和生态多年来的发展里来。&lt;/p&gt;&lt;p&gt;外部限制下，华为必须在芯片制造、操作系统和生态建设上突围。它需要持续解决芯片如何持续生产、系统如何建立自主技术体系、开发者为什么愿意投入新生态这三大问题。&lt;/p&gt;&lt;p&gt;首先要跨过的，是芯片这一关。&lt;/p&gt;&lt;p&gt;过去，让芯片变强的一条主要路径，是把晶体管做得更小，在有限的面积里容纳更多计算单元。但这条路越来越难走，尺寸越小，制造难度和成本也随之上升，功耗、散热以及信号传递都可能成为新的瓶颈。对华为而言，先进芯片代工受限，又增加了一层约束。&lt;/p&gt;&lt;p&gt;从2020年先进芯片代工受限，到2023年自主研发、生产的麒麟9000S芯片随华为Mate 60系列回归，中间隔了约三年。&lt;/p&gt;&lt;p&gt;芯片回归之后，下一道题随之而来：性能如何继续提升？&lt;/p&gt;&lt;p&gt;2026年5月，华为公开提出韬（τ）定律，尝试把优化重点转向“时间缩微”。过去更多是在想办法把元件做小，这条新路径关注的，是如何让计算少花时间。通过逻辑折叠等技术，缩短信号在芯片内部传播的路径，减少等待，提高计算效率。&lt;/p&gt;&lt;p&gt;沿着这条思路，麒麟9050 Pro把新的芯片设计路径带入手机，也为系统和应用的进一步优化提供了基础。&lt;/p&gt;&lt;p&gt;不过，芯片有了新的能力，还需要把它用起来，这正是鸿蒙需要解决的问题。&lt;/p&gt;&lt;p&gt;建设一套操作系统，远不止设计界面和增加功能。计算资源怎么分配，开发者怎样编写应用，应用怎样稳定运行，都需要相应的底层技术和工具支撑。对用户来说，打开一个应用只是一瞬间，但对一套新系统来说，这是一整套技术体系的配合。&lt;/p&gt;&lt;p&gt;2024年HarmonyOS NEXT正式发布，是鸿蒙从“兼容安卓”到“独立于安卓”的重要节点。从内核、编译器到开发工具，华为逐步搭建自己的技术体系，同时把设备互联、原生智能、安全架构等能力纳入系统，并向开发者开放，开发者可以调用系统提供的能力，让应用更好地理解用户需求。&lt;/p&gt;&lt;p&gt;到了HarmonyOS 7，这些探索进一步深入。方舟引擎引入性能大模型，根据使用习惯、应用之间的关联，以及时间、地点等信息优化运行；鸿蒙智能体框架升级，让系统理解用户意图后，能够衔接相应的应用服务；互联架构则继续拓展跨设备协同，让手机上的操作能够更顺畅地延伸到其他设备。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/B1B82C1679A7D553E2E7583C23F01F71B0C2AA37_size58_w1080_h475.jpg"&gt;&lt;/p&gt;&lt;p&gt;这些技术变化，落到生活里，指向的都是具体的问题，比如常用应用能否响应得更及时，一句话交代的任务能否接着执行，手机和电脑之间能否少一些来回操作。&lt;/p&gt;&lt;p&gt;现在，鸿蒙已经从保障基本使用，走向了对下一代操作系统的探索。它需要保障人们熟悉的日常使用，同时为AI和多设备协作等越来越普遍的生活，寻找新的运行方式。&lt;/p&gt;&lt;p&gt;系统搭建起来，还需要开发者愿意在上面持续投入。&lt;/p&gt;&lt;p&gt;这是生态建设最难的一环。用户关心的是，自己常用的聊天、购物、出行等服务有没有，而开发者考虑的则是，投入人力和时间之后，能服务多少用户，能否获得持续的回报。用户在等应用，开发者也在看用户规模，两头都需要耐心推进。&lt;/p&gt;&lt;p&gt;因此，鸿蒙生态起步时，首先要补齐常用应用，让用户每天要做的事情能够顺利完成。同时，开发工具和支持体系也要逐步完善，降低伙伴开发、维护和迭代应用的成本。&lt;/p&gt;&lt;p&gt;当前，HarmonyOS 6和HarmonyOS 7终端设备数已经突破9000万，鸿蒙应用市场可以获取的应用和服务超过45万，已上线鸿蒙游戏超过3.5万款。元宝、蚂蚁财富、抖音商城、网易云音乐等应用持续上新，覆盖了AI、理财、音乐、购物和生活服务等场景。不断扩大的用户基础，为开发者持续投入提供了支撑，更丰富的应用和服务，也让用户留在生态中的理由更加充分。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/06195023C051F2F8152D6A79473DAAAC2D1E187E_size344_w1080_h400.png"&gt;&lt;/p&gt;&lt;p&gt;这种互相促进，推动生态建设进入新的阶段。开发者需要进一步思考的是，如何利用鸿蒙的AI、互联和图形等能力，把应用做得更好用。用户的关注点也由“有没有这个应用”，逐渐转向“这个应用能带来什么新体验”。&lt;/p&gt;&lt;p&gt;走到这里，芯片、系统和生态三条线，才逐步在用户的日常使用中汇合。&lt;/p&gt;&lt;p&gt;华为Mate 90系列成为这些积累的集中落点。而当计算能力、系统工具和开发者投入逐步具备基础，鸿蒙生态的任务也随之变化，从让常用应用运行起来，走向把日常服务做得更好用。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/2479FF31B32F822949A4810FCE1592D75E7035C4_size14_w945_h354.png"&gt;&lt;/p&gt;&lt;p&gt;系统好用是底座，应用好用才是关键。对用户而言，一部手机的价值，还是体现在每天反复发生的使用体验里。&lt;/p&gt;&lt;p&gt;最初，许多人把鸿蒙看作一个备选。但随着系统完善、应用丰富，人们或许才发现，这个生态一步一个脚印，早已行至远处。如今，鸿蒙已经将系统级AI、跨设备协同和安全能力融入应用，让性能提升进一步转化为日常便利。HarmonyOS 7如今已经升级到越来越多的手机型号，更多用户也在日常小事里感受到生态的成熟。&lt;/p&gt;&lt;p&gt;这些变化，就体现在用户日常的“吃、住、行”里。这可以从一场朋友间的聚餐说起。&lt;/p&gt;&lt;p&gt;聚餐，先从选餐厅开始。除了看好不好吃，还要看环境适不适合聊天。用户需要在商家图片、顾客照片和评价之间来回翻找，才能拼出店里的大致样子。而在HarmonyOS 7里，大众点评具有3D实景探店功能，让用户可以转动视角，查看座位和环境，在到店前先“逛”一遍。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/14B46A6D390F5B1F634D7063FB3C0A3F86562F5D_size137_w1080_h359.png"&gt;&lt;/p&gt;&lt;p&gt;应用的空间看得清，手机操作也能跟上。发布会披露，华为的旗舰τ芯片，均支持3DGS渲染加速，3DGS渲染加速能让3D建模平均帧率提升28%。&lt;/p&gt;&lt;p&gt;选好餐厅之后，下一步是怎样过去。&lt;/p&gt;&lt;p&gt;按照往常，用户的目的地可能已经记在日程里，或者就在和朋友的聊天记录里，真正叫车时，往往还要打开日历、找到地址，再在打车软件里输入目的地。&lt;/p&gt;&lt;p&gt;而在HarmonyOS 7发布的小艺调用滴滴的演示中，这几个分散的步骤都可以由小艺完成。用户只需要告诉小艺，查看今晚的聚会安排，希望提前20分钟到达，协助约车，设置提醒。小艺便会读取日程，给出目的地选项，用户确认后，它会随即打开滴滴，填入目的地，进入打车流程。整个过程不用手动打开滴滴，也不用重复输入目的地。&lt;/p&gt;&lt;p&gt;这时的鸿蒙，将日程信息、用户意图和应用服务衔接起来，让原本需要在几个应用之间完成的操作，沿着同一个需求继续推进。&lt;/p&gt;&lt;p&gt;进入打车服务后，这种连接还可以进一步延伸。&lt;/p&gt;&lt;p&gt;HarmonyOS 7里，滴滴支持通过远程华为分享，将打车实况窗分享给好友，实时同步行程信息。朋友想知道“你到哪儿了”，便有了比反复发消息、截图更直接的了解方式。这来自HarmonyOS 7鸿蒙星河互联架构的能力，可以打破系统和硬件之间的边界，不同系统、不同设备、不同场景都能轻松互联，能让用户和亲友之间的信息分享更加便捷。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/36EA4DD03A2D0B7E3DA3B2C591930F4FD5DDF5FA_size40_w1080_h423.jpg"&gt;&lt;/p&gt;&lt;p&gt;各类日常服务能紧密衔接，安全保障同样也备受重视。&lt;/p&gt;&lt;p&gt;比如用户接到一通电话，对方的声音像熟人，却突然提出转账要求。随着AI合成声音越来越逼真，仅凭“听着像”判断身份，可能带来风险。HarmonyOS 7的星盾安全，加入了AI变声检测，在支持的通话场景中，识别到伪造声音后，会及时弹窗提醒，为用户提供进一步核实身份的线索。&lt;/p&gt;&lt;p&gt;不仅如此，HarmonyOS 7星盾防诈平台，也和支付宝、抖音等开展风控协同，将系统侧的安全能力和应用侧的风险识别进行了衔接。&lt;/p&gt;&lt;p&gt;从选餐厅时看清空间，到打车时少做几次切换，再到通话中收到风险提示，鸿蒙生态的特点逐渐具体起来。&lt;/p&gt;&lt;p&gt;这正是软件、硬件和芯片的协同，进入用户日常体验的方式，芯片提供计算基础，系统把能力连接起来，生态伙伴再将其转化为具体服务。随着更多应用参与共创，华为的底层技术也有了更多抵达用户的路径。&lt;/p&gt;&lt;p&gt;这也让华为Mate 90系列的价值，进一步延伸到日常使用之中。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/99E588B5D40EE06E6AC8D3EB8B0AEB418BFE7195_size54_w1080_h608.jpg"&gt;&lt;/p&gt;&lt;p&gt;对消费者而言，手机是否好用，不在于高大上的参数，最终要看常用的服务能否方便、持续地解决实际问题。&lt;/p&gt;&lt;p&gt;当人们在选餐厅、叫车、分享行程时自然而然地体验到这些便捷，他们最直观地感受到了，鸿蒙生态究竟走到了哪里。而这种体验，还会在鸿蒙的升级和应用迭代里继续生长。&lt;/p&gt;&lt;p&gt;正如华为常务董事、终端BG董事长余承东所说：“Mate 90系列是中国半导体行业的时代答卷，也是中国操作系统产业的创新答卷。”当便利融入日常，鸿蒙也已然成为消费者购买手机的重要考量因素。&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/DACB533E6D5A1A3C3F7DAC27B141960DB1BFC8C2_size2_w945_h72.png"&gt;&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/57406B617C1471F277ED73FDB7B1719DFBD738B4_size1_w1029_h72.png"&gt;&lt;/p&gt;&lt;p&gt;&lt;img loading="lazy" decoding="async" src="https://x0.ifengimg.com/res/2026/1FEB0BDEA3C7243EF2FC507F87400E26456E7B52_size3_w945_h102.png"&gt;&lt;/p&gt;&lt;p&gt;作者 林溪 ｜ 排版 魏蔚&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>凤凰网</author><pubDate>Thu, 01 Oct 2026 11:14:57 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiTEFVX3lxTE9weTE2VUwzY1BuVkdFaTJHZGhTU01iSjhoOXJSU1pHY3JuQ3NvWG9YZndqTXpDMWNkYU5lY1ZhcE12ZEdBRXhub2Q1dng</guid></item><item><title>大空头“剑指”Anthropic和OpenAI：市场应狠狠下跌，阻止它们上市！ - cls.cn</title><link>https://www.cls.cn/detail/2496950</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="m-b-40 f-s-18 l-h-177778 t-a-j w-b-a detail-content  "&gt;&lt;div class="m-b-10"&gt;&lt;p&gt;&lt;strong&gt;财联社10月1日讯（编辑 黄君芝）&lt;/strong&gt;众所周知，知名做空投资人、素有“大空头”之称的迈克尔·伯里（Michael Burry）是人工智能（AI）领域最著名的怀疑论者之一。他周三再次将矛头对准AI热潮，并警告称Anthropic和OpenAI成功上市可能会使市场面临巨额资本损失。&lt;/p&gt;
-&lt;p&gt;伯里在社交媒体平台X上写道，&lt;strong&gt;“为了人类的利益，市场应当大幅下跌，阻止OpenAI和Anthropic的首次公开募股（IPO）。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://image.cls.cn/images/20261001/u2Ylc0U44f_685x287.png" alt="image"&gt;&lt;/p&gt;
-&lt;p&gt;他还在另一条评论中进一步解释称，两家公司会吸走数万亿美元资金，最终再把这些钱毁掉，而这还只是它们可能造成的最小损害。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://image.cls.cn/images/20261001/ou6zI6971a_673x393.png" alt="image"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;伯里因在2008年金融危机前精准做空抵押贷款支持证券而声名鹊起，迈克尔·刘易斯（Michael Lewis）的著作《大空头》和奥斯卡获奖影片《大空头》都记录了他的这一交易。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;去年10月底，伯里在沉寂数年后重返公众视野。自那以来，他多次预警股市泡沫风险，披露了做空英伟达等AI股的新仓位，并推出了Substack付费通讯专栏，以向外界自由输出其投资观点。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;X上另有一名用户调侃称：“把市场砸崩，这样天网就没法上市了”。“天网”指《终结者》系列电影中的毁灭性人工智能系统。&lt;/p&gt;
-&lt;p&gt;伯里回复：“差不多就是这个意思。”&lt;/p&gt;
-&lt;p&gt;近段时间以来，伯里多次质疑，巨额投入数据中心和人工智能基础设施是否能带来足够的回报。本月早些时候，他称OpenAI、Anthropic及其他AI领导者关于放缓AI开发的警告是“自私自利”的，认为这些警告有助于为他们计划中的首次公开募股制造炒作。&lt;/p&gt;
-&lt;p&gt;其最新言论正值人工智能基础设施投资持续激增之际，行业内两家最大的私营公司正朝着潜在上市迈进。开发先进AI模型、建设支撑模型运行的计算基础设施，都需要巨额资金。上市后，两家公司可以向更多投资者融资，获得更充足的资本来源。&lt;/p&gt;
-&lt;p&gt;Anthropic的IPO招股书显示，这家人工智能实验室计划在未来几年内斥资5180亿美元用于云计算、计算和基础设施建设，而该公司去年的净亏损近420亿美元。Anthropic计划上市的估值可能超过200万美元，其IPO预计将在11月美国中期选举后进行。&lt;/p&gt;
-&lt;p&gt;而OpenAI则将其IPO计划推迟到明年。OpenAI首席执行官Sam Altman周二表示，公司尚无具体上市时间表，并补充说，下一代AI模型的安全工作仍是更重要的优先事项。他本月早些时候还称，考虑到AI安全问题，2026 年上市并不明智。&lt;/p&gt;
-&lt;p&gt;伯里本周一还发出警告称，AI泡沫可能比他预想的要更早破裂，同时他正在做空一些关键的AI公司。他表示，他正在从主要人工智能股票的空头头寸转向看跌期权，这使他能够在更短的时间范围内获得更具成本效益的杠杆。&lt;/p&gt;
-&lt;p&gt;他表示，部分举措旨在减少纳税义务，但主要原因是他认为“人工智能泡沫可能很快就会破裂”。伯里新近持有的大量看跌期权表明，人工智能交易市场可能在明年夏天发生逆转。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>cls.cn</author><pubDate>Thu, 01 Oct 2026 09:45:13 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiSEFVX3lxTE0yeFozSzhOQmdvZVJubm1kMUlSYmF6ejVHYzNGTC1UNFlRYndfNG01VFZLelFlNzhwbFZWZUJxZVlqbEQ2VDFmWA</guid></item><item><title>一场改变AI格局的决裂！OpenAI与Anthropic的隐秘恩怨往事 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782876</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 01 Oct 2026 09:43:19 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5NRndhNUpneG55bEQzQ3UwZ2lDSUo3eWVyc3RQQ01TcTRBb09INEdMOGlJMHcxWExCRVo3M3gwejh5WHpFZXZETzJYN0NWRF95dGZ3</guid></item></channel></rss>
+    &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>驱动之家</author><pubDate>Thu, 01 Oct 2026 23:47:00 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiWEFVX3lxTE9EejRQZGIyT0JqU2VKV2taYXM0WkxGQm5pTW5YaHR2ajRnbXhDWXZrQkUtRlVBRmU1SkJKbndpN3N4d3Q0c1pCbzJ1bU8zeHN5bHo4ckRYcFo</guid></item><item><title>法专家：中国在固定式电池市场占据着绝对主导地位 - RFI</title><link>https://www.rfi.fr/cn/%E6%AC%A7%E6%B4%B2/20261001-%E6%B3%95%E4%B8%93%E5%AE%B6-%E4%B8%AD%E5%9B%BD%E5%9C%A8%E5%9B%BA%E5%AE%9A%E5%BC%8F%E7%94%B5%E6%B1%A0%E5%B8%82%E5%9C%BA%E5%8D%A0%E6%8D%AE%E7%9D%80%E7%BB%9D%E5%AF%B9%E4%B8%BB%E5%AF%BC%E5%9C%B0%E4%BD%8D</link><description>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;div class="error-content"&gt;&lt;p&gt;You don't have permission to access the page you requested.&lt;/p&gt;&lt;p class="extra-info"&gt;&lt;strong class="title"&gt;What is this page?&lt;/strong&gt;&lt;br&gt;The website you are visiting is protected.&lt;br&gt;For security reasons this page cannot be displayed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</description><author>RFI</author><pubDate>Thu, 01 Oct 2026 20:00:42 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMi6AJBVV95cUxNT2dqNWxMeVhsYkFscmtUNjFDVm42VEQwVFJlc0hWZHVPbU0xWERabHhJWXNENlNELWtTeXdYUUtyNW1kdkxfaDY1aTI2bVd2MTk0NlB3cE5aR2RWUkRhZ0xaX05vWDJBcUJLRU1nbkVzd3FiLW5FWjU4dHVLVGJyX1NTWDU5S2FFUDg1X3pzMDZCRTJ4QXRTN0pxVE9mMkJ5cUk4b1E4ZDJVeC1NTjJXTkdvZ1F1cmd6TVRkQ08wcXFxOWVvNUpOLVN0Q0R1UlMwcTMtQm0yV01tVUNKRjJad0JSdkxXNkJzSWFwal9UbXlfMEliNUdLZjZ3V19hQ3V5UGg3ZDhSemNpNHNUS29SNzZIRjgwYnJIQzhyNlZHS3lPZDlkd2FrZFB5MWpfZDVBZEUwT3E2Y3VpNlVXQk1wRmJlVlJHTWswWHJua0g0bzBvWWhrempQenRnaE1GT0w1YXpQT0MtMVY</guid></item><item><title>微软上新三款语音AI模型：实时转文字准确率登测评榜首，MAI-Voice 2.1覆盖23种语言 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782897</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 01 Oct 2026 18:33:32 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE9Id0ZGLUtMUV9rTlRTOF84TDV6b1NmWFZlbW9CU01jSXZ5OGVmQUU1OVhSajBiYzB1RTZRQjhnbDZCLU5TbjM1SVJGclNKc1dKNG13</guid></item><item><title>AI“砸饭碗”担忧暂缓！埃森哲845亿年订单创纪录、指引超预期，股价盘中暴涨超20%｜财报见闻 - 华尔街见闻</title><link>https://wallstreetcn.com/articles/3782893</link><description>&lt;body id="readabilityBody"&gt;&lt;p id="app"&gt;&lt;/p&gt;&lt;/body&gt;</description><author>华尔街见闻</author><pubDate>Thu, 01 Oct 2026 17:08:36 GMT</pubDate><enclosure url="" length="10000" type="image/png"></enclosure><guid isPermaLink="true">CBMiU0FVX3lxTE5BSjVLcUM0U2lId3dBS01jWktDNUMwcWQ0NGRQc2tKTjVsVGVaWHBHc1lzRkpoU2hVQUJxcWxKSFc1MVdpRGxiNEJKZ2drWkR3a3NF</guid></item></channel></rss>
