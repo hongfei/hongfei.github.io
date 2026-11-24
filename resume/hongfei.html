@@ -415,11 +415,27 @@
                             <span class="job-date">2023.11 &ndash; Present</span>
                         </div>
                         <ul class="bullets">
-                            <li><strong>Payments onboarding.</strong> Led the end-to-end build and shipped the first production pilot of an AI-assisted platform for onboarding payments integrations. Built a role-based review workspace, GraphQL APIs, and a workflow coordinator that resumes interrupted work.</li>
-                            <li><strong>AI-assisted incident triage.</strong> Co-founded an LLM-powered triage project and built the core agent, integrating logs, metrics, alert metadata, and code-change history. Helped take it from hackathon prototype to production and expand automated investigation and reporting across on-call teams.</li>
-                            <li><strong>Asynchronous processing.</strong> Led the design and core implementation of a task platform with persistent storage, idempotency, retries, and C++ scheduling APIs. Helped roll out recurring workloads and owned a shared publish/subscribe service, where configurable batching helped consumers clear backlogs faster.</li>
+                            <li>
+                                <strong>Payments onboarding.</strong> Wrote the technical plan and built an AI-assisted payments onboarding platform end to end, starting as the sole engineering owner.
+                                Shipped the first production pilot with a partner team. Built a workflow coordinator that resumes interrupted steps and a React agent interface also used for developer testing.
+                            </li>
+                            <li>
+                                <strong>Onboarding lead-time measurement.</strong> Defined how to measure onboarding lead time for active and completed projects and built an AI-assisted pipeline to infer project stages and elapsed time from workflow records.
+                                Specified a data contract for downstream analytics.
+                            </li>
+                            <li>
+                                <strong>AI-assisted incident triage.</strong> Co-founded an LLM-powered triage project and built the core agent, integrating logs, metrics, alert metadata, and code-change history.
+                                Helped bring the hackathon prototype into production and co-led its expansion to more on-call teams and alert types.
+                            </li>
+                            <li>
+                                <strong>Asynchronous task platform.</strong> Led design and core implementation, evaluated storage, queueing, and execution tradeoffs, and coordinated integration with a partner team.
+                                Implemented persistent task storage, idempotency, retries, and C++ scheduling APIs. Helped roll out recurring workloads to production.
+                            </li>
+                            <li>
+                                <strong>Publish/subscribe service.</strong> Owned a shared service, supported consumer teams in production, and expanded alert coverage with configurable thresholds.
+                                Added per-consumer batching to help subscribers clear processing backlogs faster.
+                            </li>
                             <li><strong>Payments data replication.</strong> Built automated reconciliation for payments tables and consolidated replication onboarding to reduce integration work. Improved backfill reliability by reducing errors caused by batching contention and cut redundant compute by retiring batch jobs.</li>
-                            <li><strong>Agent interfaces and orchestration.</strong> Built a shared entry point that routes conversations to domain-specific AI assistants. Developed a reusable React interface that lets agents render interactive controls and receive user actions, used by the onboarding platform and a developer testing tool.</li>
                         </ul>
                     </div>
                 </div>
