@@ -5,8 +5,7 @@ Personal GitHub Pages site with a project portal, online resume, RSS feed export
 ## Site Map
 
 - `index.html` - Project portal and navigation entry point.
-- `resume/hongfei.html` - Online resume.
-- `resume/hongfei.pdf` - Downloadable resume PDF.
+- `resume/hongfei.html` - Online resume with a **Print / Save PDF** button.
 - `stocks/pe-threshold.html` - S&P 500 PE threshold explorer.
 - `stocks/periodic-investment.html` - Historical periodic investment backtester.
 - `stocks/spy-daily.html` - SPY return explorer.
