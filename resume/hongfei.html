@@ -20,6 +20,27 @@
             max-width: 1000px;
             margin: 0 auto 1.5rem auto;
             justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .resume-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-left: auto;
+        }
+        .resume-actions .btn:hover {
+            filter: drop-shadow(0 3px 5px rgba(24, 24, 27, 0.28));
+        }
+        .btn-linkedin,
+        .btn-linkedin:hover {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+        }
+        .btn-linkedin img {
+            border-radius: inherit;
         }
 
         .resume-card.header-card {
@@ -28,6 +49,12 @@
 
         /* Header Elements */
         header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.5rem 1.25rem;
+        }
+        .resume-identity {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -43,7 +70,6 @@
             font-size: 1.1rem;
             font-weight: 400;
             color: var(--text-secondary);
-            margin-bottom: 0.5rem;
         }
         .contact-info {
             display: flex;
@@ -51,6 +77,7 @@
             gap: 1.25rem;
             font-size: 0.9rem;
             color: var(--text-muted);
+            margin-left: auto;
         }
         .contact-info a {
             color: var(--text-secondary);
@@ -262,7 +289,8 @@
             .resume-card.education-card {
                 margin-bottom: 0;
             }
-            header {
+            header,
+            .resume-identity {
                 gap: 3pt;
             }
             h1 {
@@ -270,7 +298,6 @@
             }
             .subtitle {
                 font-size: 11pt;
-                margin-bottom: 0;
             }
             .contact-info {
                 font-size: 9pt;
@@ -302,9 +329,6 @@
             .experience-item {
                 display: block;
             }
-            .experience-item {
-                break-inside: avoid;
-            }
             .job-header {
                 margin-bottom: 4pt;
                 break-after: avoid;
@@ -323,6 +347,7 @@
             }
             .job-summary {
                 margin-bottom: 5pt;
+                break-after: avoid;
             }
             .bullets,
             .sub-bullets {
@@ -404,12 +429,17 @@
             </svg>
             Back to Home
         </a>
-        <button type="button" onclick="window.print()" class="btn btn-primary">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
-            </svg>
-            Print / Save PDF
-        </button>
+        <div class="resume-actions">
+            <a href="https://www.linkedin.com/in/hongfei" class="btn btn-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="../static/images/linkedin-in.svg" width="36" height="36" alt="">
+            </a>
+            <button type="button" onclick="window.print()" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+                </svg>
+                Print / Save PDF
+            </button>
+        </div>
     </div>
 
     <!-- Resume Wrapper (Stacks sections) -->
@@ -418,8 +448,10 @@
         <!-- Card 1: Header / Contact Info -->
         <div class="resume-card header-card">
             <header>
-                <h1>Hongfei Zhou</h1>
-                <div class="subtitle">Senior Software Engineer</div>
+                <div class="resume-identity">
+                    <h1>Hongfei Zhou</h1>
+                    <div class="subtitle">Senior Software Engineer</div>
+                </div>
                 <div class="contact-info">
                     <div class="contact-line">
                         <svg class="contact-icon" viewBox="0 0 24 24">
@@ -447,12 +479,12 @@
                 <h2 class="section-header">Key Skills</h2>
                 <div class="skills-table">
                     <div class="skills-row">
-                        <div class="skills-category">Languages</div>
-                        <div class="skills-list">C++, Kotlin, Java, Python</div>
+                        <div class="skills-category">Backend</div>
+                        <div class="skills-list">C++, Kotlin, Java, Python, Spring Boot, JPA, Spring MVC, RESTful, GraphQL, gRPC</div>
                     </div>
                     <div class="skills-row">
-                        <div class="skills-category">Backend</div>
-                        <div class="skills-list">Spring Boot, JPA, Spring MVC, RESTful, GraphQL, gRPC</div>
+                        <div class="skills-category">Applied AI</div>
+                        <div class="skills-list">LLM agent development, tool integration, multi-agent orchestration, prompt engineering</div>
                     </div>
                     <div class="skills-row">
                         <div class="skills-category">Cloud & DevOps</div>
@@ -624,7 +656,7 @@
 
     </div>
 
-    <!-- Bottom navigation -->
+    <!-- Bottom action toolbar -->
     <div class="actions-wrapper bottom-actions">
         <a href="../index.html" class="btn" title="Back to Home">
             <svg viewBox="0 0 24 24">
@@ -632,6 +664,17 @@
             </svg>
             Back to Home
         </a>
+        <div class="resume-actions">
+            <a href="https://www.linkedin.com/in/hongfei" class="btn btn-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="../static/images/linkedin-in.svg" width="36" height="36" alt="">
+            </a>
+            <button type="button" onclick="window.print()" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+                </svg>
+                Print / Save PDF
+            </button>
+        </div>
     </div>
 
 </body>
