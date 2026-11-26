@@ -347,13 +347,6 @@
             .bullets > li + li {
                 margin-top: 3pt;
             }
-            .current-role .bullets > li + li {
-                margin-top: 5pt;
-            }
-            .current-role .bullets > li {
-                font-size: 10pt;
-                line-height: 1.38;
-            }
             .sub-bullets {
                 margin: 3pt 0 0;
                 border-left: 0;
@@ -474,7 +467,7 @@
         </div>
 
         <!-- Experience - Meta -->
-        <div class="resume-card current-role">
+        <div class="resume-card">
             <section>
                 <h2 class="section-header">Experience</h2>
                 <div class="experience-list">
@@ -485,26 +478,49 @@
                         </div>
                         <ul class="bullets">
                             <li>
-                                <strong>Payments onboarding.</strong> Wrote the technical plan and built an AI-assisted payments onboarding platform end to end, starting as the sole engineering owner.
-                                Shipped the first production pilot with a partner team. Built a workflow coordinator that resumes interrupted steps and a React agent interface also used for developer testing.
+                                <strong>Payments onboarding</strong>
+                                <ul class="sub-bullets">
+                                    <li>Built an AI-assisted payments onboarding platform end to end, starting as the sole engineering owner, and shipped its first production pilot with a partner team.</li>
+                                    <li>Designed the data model and <strong>GraphQL</strong> APIs for review sessions and per-section status, and built a workflow coordinator to resume interrupted steps.</li>
+                                    <li>Built a <strong>React</strong> plug-in interface with runtime action discovery, also used in developer testing.</li>
+                                </ul>
                             </li>
                             <li>
-                                <strong>Onboarding lead-time measurement.</strong> Defined how to measure onboarding lead time for active and completed projects and built an AI-assisted pipeline to infer project stages and elapsed time from workflow records.
-                                Specified a data contract for downstream analytics.
+                                <strong>Onboarding lead-time measurement</strong>
+                                <ul class="sub-bullets">
+                                    <li>Defined the lead-time methodology and built an AI-assisted pipeline to infer project stages and elapsed time from workflow records.</li>
+                                    <li>Extended tracking to in-progress projects, corrected active-time calculations, and specified the data contract for downstream analytics.</li>
+                                </ul>
                             </li>
                             <li>
-                                <strong>AI-assisted incident triage.</strong> Co-founded an LLM-powered triage project and built the core agent, integrating logs, metrics, alert metadata, and code-change history.
-                                Helped bring the hackathon prototype into production and co-led its expansion to more on-call teams and alert types.
+                                <strong>AI-assisted incident triage</strong>
+                                <ul class="sub-bullets">
+                                    <li>Co-founded an <strong>LLM</strong>-powered triage project and built the core agent to investigate alerts using diagnostic queries, logs, metrics, and code-change history.</li>
+                                    <li>Built a helper agent to draft triage procedures from alert docs and sample queries, reducing manual setup.</li>
+                                    <li>Helped launch the hackathon prototype in production and co-led expansion to more on-call teams and alert types.</li>
+                                </ul>
                             </li>
                             <li>
-                                <strong>Asynchronous task platform.</strong> Led design and core implementation, evaluated storage, queueing, and execution tradeoffs, and coordinated integration with a partner team.
-                                Implemented persistent task storage, idempotency, retries, and C++ scheduling APIs. Helped roll out recurring workloads to production.
+                                <strong>Asynchronous task platform</strong>
+                                <ul class="sub-bullets">
+                                    <li>Led system design and core implementation, weighing storage, queueing, and execution options. Implemented persistent task storage, idempotency, and retry handling for failed scheduling.</li>
+                                    <li>Built <strong>C++</strong> APIs to schedule, reschedule, and cancel tasks and helped roll out recurring workloads to production.</li>
+                                </ul>
                             </li>
                             <li>
-                                <strong>Publish/subscribe service.</strong> Owned a shared service, supported consumer teams in production, and expanded alert coverage with configurable thresholds.
-                                Added per-consumer batching to help subscribers clear processing backlogs faster.
+                                <strong>Publish/subscribe service</strong>
+                                <ul class="sub-bullets">
+                                    <li>Owned the shared service and added per-consumer batching to drain subscriber backlogs faster.</li>
+                                    <li>Expanded alert coverage, made thresholds configurable per consumer, and wrote a lint rule to catch missing subscriber configuration.</li>
+                                </ul>
                             </li>
-                            <li><strong>Payments data replication.</strong> Built automated reconciliation for payments tables and consolidated replication onboarding to reduce integration work. Improved backfill reliability by reducing errors caused by batching contention and cut redundant compute by retiring batch jobs.</li>
+                            <li>
+                                <strong>Payments data replication</strong>
+                                <ul class="sub-bullets">
+                                    <li>Extended the replication framework to backfill historical data from a new database source and reduced backfill errors by addressing contention in concurrent batch processing.</li>
+                                    <li>Built automated reconciliation for payments tables and migrated part of the replication and reconciliation code from <strong>PHP</strong> to <strong>C++</strong>, reducing code volume.</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
